@@ -233,3 +233,9 @@ feed `A/sqrt(12)`.
   singlet-leaky same-radial, and compensating-radial completions. Positive
   closure therefore still needs independent readout/sign/radial laws, or
   accepted strict top/W pole rows.
+- New in the thirty-second block: sharp same-source `B_x` response, or zero
+  response variance, does not certify zero-singlet readout or radial
+  factorization. The finite variance is `Var_s(B_x)=3s(1-s)/2`, so sharpness
+  allows both `s=0` (`P_nt`) and `s=1` (`P_0`). The singlet endpoint can be
+  target-size with `lambda_top=1/(2sqrt(2))`, so a physical endpoint law
+  excluding `P_0` and an independent radial theorem remain load-bearing.

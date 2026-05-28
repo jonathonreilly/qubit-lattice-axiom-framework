@@ -1,0 +1,88 @@
+{
+  "actual_current_surface_status": "no-go / open sharp-readout physical selection law",
+  "anchor_statuses": {
+    "c3_block_support": "exact-support / open nontrivial-block membership law",
+    "c3_radial_nogo": "no-go / open same-surface radial generator factorization",
+    "c3_source_orientation_nogo": "no-go / open source-orientation sign law",
+    "compensation_nogo": "no-go / open independent radial and top-readout laws",
+    "full_stack": "exact-support / open strict-response gate",
+    "strict_availability": "no-go"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_physical_sharp_endpoint_selector_derived": false,
+    "accepted_same_surface_radial_generator_factorization_derived": false,
+    "bare_retained_allowed": false,
+    "no_forbidden_imports": true,
+    "proposal_allowed": false,
+    "route_pruned": "sharp same-source B_x response certifies zero-singlet readout or radial factorization",
+    "signed_endpoint_requires_orientation_law": true,
+    "strict_top_w_response_certificate_present": false,
+    "zero_variance_allows_singlet_endpoint": true,
+    "zero_variance_forces_radial_factor": false,
+    "zero_variance_forces_zero_singlet": false,
+    "zero_variance_granted": true
+  },
+  "claim_id": "yt_c3_sharp_response_readout_underdetermination_no_go_note_2026-05-28",
+  "endpoint_orientation_boundary": {
+    "largest_absolute_endpoint": "P_0",
+    "minimum_absolute_endpoint": "P_nt",
+    "minimum_endpoint_selector_derived": false,
+    "sharp_endpoint_responses": {
+      "P_0": "2/sqrt(6)",
+      "P_nt": "-1/sqrt(6)"
+    },
+    "source_orientation_sign_law_load_bearing": true
+  },
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "accepted independent readout/sign/radial laws, or accepted strict same-source top/W pole rows with controls",
+  "generated_by": "scripts/frontier_yt_c3_sharp_response_readout_underdetermination_no_go.py",
+  "no_go_audit": {
+    "narrow_route_pruned": "sharp same-source B_x response certifies zero-singlet readout or radial factorization",
+    "reason": "The sharpness equation Var(B_x)=0 gives s=0 or s=1. The s=1 singlet endpoint is sharp and can be target-size if lambda_top is allowed to compensate. Sharpness is therefore not an accepted physical top-block or radial-factor theorem.",
+    "remaining_imports": [
+      "accepted physical endpoint/readout law excluding P_0",
+      "accepted same-surface radial generator factorization lambda_top=1/sqrt(2)",
+      "accepted physical source-orientation/sign law if signed C3 response is used",
+      "accepted W/top pole controls or direct strict pole rows"
+    ],
+    "route_still_live": [
+      "derive independent radial/readout/sign laws on the same surface",
+      "produce accepted strict same-source top/W pole rows with controls",
+      "derive accepted microscopic backend/projectors/source-generator matrix elements"
+    ]
+  },
+  "pass_count": 98,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Zero response variance selects both the nontrivial endpoint and the singlet endpoint. With radial coupling still open, both can be target-size. A physical readout/sign/radial theorem or strict pole-row certificate remains load-bearing.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "sharp same-source B_x response certifies zero-singlet readout or radial factorization",
+  "sharpness_family": {
+    "B_x": "(C+C^2)/sqrt(6)",
+    "B_x_mean": "(3*s - 1)/sqrt(6)",
+    "B_x_second_moment": "(1 + 3*s)/6",
+    "B_x_variance": "3*s*(1-s)/2",
+    "rho_s": "s*P_0 + (1-s)*P_nt/2",
+    "target_magnitude_with_zero_variance": [
+      {
+        "block": "P_nt",
+        "lambda_top": "1/sqrt(2)",
+        "singlet_weight_s": "0"
+      },
+      {
+        "block": "P_0",
+        "lambda_top": "1/(2*sqrt(2))",
+        "singlet_weight_s": "1"
+      }
+    ],
+    "zero_variance_allows_singlet_endpoint": true,
+    "zero_variance_forces_radial_factor": false,
+    "zero_variance_forces_zero_singlet": false,
+    "zero_variance_solutions": [
+      "0",
+      "1"
+    ]
+  },
+  "trace_class": "negative_route_pruning"
+}

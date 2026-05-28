@@ -7,23 +7,22 @@ target_blocker_text: "derive/certify the coefficient-bearing same-surface top se
 source_of_blocker_text: user_goal
 reachability_to_target: prunes
 artifact_role: no_go
-next_trace_action: "derive accepted independent same-surface radial generator factorization plus a physical zero-singlet top-readout/sign law, or produce accepted strict top/W pole rows with controls"
+next_trace_action: "derive accepted independent same-surface radial generator factorization plus a physical zero-singlet/sharp-endpoint top-readout/sign law excluding P_0, or produce accepted strict top/W pole rows with controls"
 ```
 
-Cycle 17 prunes the target-magnitude back-solving shortcut inside the
-same-surface matrix-element route. For singlet weight `s` and radial factor
-`lambda_top`, the finite C3 row is:
+Cycle 18 prunes the sharp-response readout shortcut inside the same-surface
+matrix-element route. For singlet weight `s`,
 
 ```text
-y_readout(lambda_top, s) = lambda_top |3s - 1|/sqrt(3).
+Var_s(B_x) = (3/2) s(1-s).
 ```
 
-The target value imposes only `lambda_top |3s - 1| = 1/sqrt(2)`, which has
-multiple finite completions. A target-size row therefore does not certify
-zero singlet weight, `lambda_top=1/sqrt(2)`, or physical source
-orientation/sign.
+Zero response variance selects both `s=0` and `s=1`. The `s=1` endpoint is
+the C3 singlet, and with a compensating radial factor it can be target-size.
+Sharpness therefore does not certify zero singlet weight, the physical
+endpoint, or `lambda_top=1/sqrt(2)`.
 
-This trace prunes only the shortcut from target magnitude to the missing
+This trace prunes only the shortcut from response sharpness to the missing
 physical laws. It does not close the target. Positive closure still requires
 accepted independent radial/readout/sign laws on the same surface, or
 accepted strict same-source top/W pole rows with contact, FV/IR, and

@@ -1,5 +1,43 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 32
+
+Scope:
+
+- C3 sharp-response readout underdetermination no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, finite C3 projectors, `B_x` mean/second moment/variance, sharp endpoint witnesses, endpoint response ordering, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open sharp-readout physical selection law; zero variance is not promoted into physical `P_nt` endpoint authority or radial factorization. |
+| Imports / support | DISCLOSED | The radial factor, physical endpoint/readout law excluding `P_0`, source-orientation law, and strict pole rows remain open; forbidden mass/target/fit inputs are absent. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=98 FAIL=0`
+- Full stack runner: `PASS=464 FAIL=0`
+- Adjacent runners passed: radial/readout compensation no-go `PASS=100`,
+  same-surface radial-factor no-go `PASS=94`, nontrivial-block support
+  `PASS=85`, source-orientation sign-selector no-go `PASS=89`,
+  trace-free centered-source no-go `PASS=89`, minimum-information readout
+  no-go `PASS=103`, strict sparse availability audit `PASS=74`, direct
+  sparse certificate `PASS=88`, first-principles transfer response `PASS=56`,
+  and same-surface matrix factorization `PASS=77`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 31
 
 Scope:

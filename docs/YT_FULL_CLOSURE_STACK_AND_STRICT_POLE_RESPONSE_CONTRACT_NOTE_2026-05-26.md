@@ -62,6 +62,9 @@ closed exactly:
   with different singlet weights and radial couplings, so target magnitude
   cannot back-solve zero singlet weight, radial factorization, or physical
   source orientation/sign
+  sharp-response readout underdetermination no-go: zero response variance
+  Var(B_x)=0 selects both P_nt and P_0 endpoints, and the singlet endpoint can
+  be target-size with a compensating radial factor
   zero-singlet top-block membership no-go: current real/reflection-even C3
   block algebra does not exclude P_0; P_nt is selected only after importing
   a sign/order law or minimum-response convention
@@ -194,6 +197,8 @@ still open:
   accepted independent physical readout/sign/radial laws, since target-size
   response magnitude itself cannot certify zero singlet weight or
   lambda_top=1/sqrt(2)
+  accepted sharp-readout endpoint law if a zero-variance premise is used,
+  since zero variance allows both P_nt and P_0 endpoints
   accepted zero-singlet physical top-block membership law; complex-line
   isolation is not required for the coefficient row once P_nt support is
   supplied, but the actual surface still must exclude P_0 through a new
@@ -535,6 +540,30 @@ That equation has multiple finite completions, including `s=0` with
 with a compensating `lambda_top=sqrt(2)`.  Therefore target-size response is
 not a substitute for an independent zero-singlet physical readout theorem,
 radial generator factorization theorem, or source-orientation/sign law.
+
+[`YT_C3_SHARP_RESPONSE_READOUT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`](YT_C3_SHARP_RESPONSE_READOUT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md)
+then tests whether a sharper response premise can remove that ambiguity.
+For the same family,
+
+```text
+E_s[B_x] = (3s - 1)/sqrt(6),
+Var_s(B_x) = (3/2) s(1-s).
+```
+
+Zero response variance selects only the two endpoints `s=0` and `s=1`.  The
+first is the desired nontrivial block endpoint, but the second is the singlet
+endpoint.  Since the radial factor is still open, both endpoints can be made
+target-size:
+
+```text
+s = 0, lambda_top = 1/sqrt(2)     -> A/sqrt(12)
+s = 1, lambda_top = 1/(2sqrt(2))  -> A/sqrt(12)
+```
+
+Thus sharp response is not an accepted physical top-block selection law on
+the current surface. It would still need a physical endpoint/readout theorem
+excluding `P_0`, plus independent radial generator factorization or strict
+pole rows.
 
 [`YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`](YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md)
 then tests that narrower blocker directly.  For every real reflection-even
@@ -932,6 +961,18 @@ radially compensated witnesses, and the signed branch still requires an
 accepted physical source-orientation/sign law.  The next C3 target is
 therefore independent readout/sign/radial dynamics, not target-magnitude
 back-solving.
+
+Adding zero response variance does not close it either.  The sharpness
+condition
+
+```text
+Var_s(B_x) = (3/2) s(1-s) = 0
+```
+
+selects `s=0` and `s=1`.  The `s=1` endpoint is the C3 singlet, and with
+`lambda_top=1/(2sqrt(2))` it is also target-size.  So sharpness still needs an
+accepted physical endpoint law excluding `P_0`, and it still does not fix the
+radial factor.
 
 The top-projector specialization makes the route boundary explicit:
 
@@ -1566,6 +1607,10 @@ proposal_allowed_reason: |
   lambda_top |3s - 1| = 1/sqrt(2) has multiple finite completions, so the
   target-size row itself cannot certify zero singlet weight, radial
   factorization, or signed source orientation.
+  The sharp-response readout no-go prunes the next refinement: Var(B_x)=0
+  selects both P_nt and P_0 endpoints, and the P_0 endpoint can be target-size
+  with a compensating radial factor. A physical endpoint law excluding P_0 and
+  an independent radial theorem remain load-bearing.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface

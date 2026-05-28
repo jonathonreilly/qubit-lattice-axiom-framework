@@ -17,6 +17,7 @@
 | Same-surface top generator factorization `(A/sqrt(2)) B_x` | Turns C3 response into `A/sqrt(12)` matrix element | unsupported import on actual surface | new factorization boundary | yes | yes | derive accepted transfer/action generator or strict pole rows | open blocker |
 | Same-surface radial factor `lambda_top=1/sqrt(2)` | Fixes the radial coupling in `V_top(lambda_top)=lambda_top A B_x` after zero-singlet `P_nt` support is supplied | unsupported import on actual surface; zero-singlet-plus-W-row shortcut pruned | `YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md` | yes | yes | derive accepted same-surface generator factorization or bypass with strict pole rows | no-go for radial-factor-free shortcut |
 | Target-size row as readout/radial certificate | Would infer zero singlet weight or `lambda_top=1/sqrt(2)` from `y_readout=1/sqrt(6)` | pruned on current surface | `YT_C3_RADIAL_READOUT_COMPENSATION_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md` | no as proof input; yes as forbidden shortcut | no | derive independent readout/sign/radial laws, or bypass with strict pole rows | no-go for target-magnitude back-solving shortcut |
+| Sharp-response readout law | Would infer physical `P_nt` support from zero `B_x` response variance | pruned on current surface | `YT_C3_SHARP_RESPONSE_READOUT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for sharpness shortcut | derive accepted physical endpoint law excluding `P_0` plus radial factorization, or bypass with strict pole rows | no-go for sharpness-only shortcut |
 | Physical top pole/projector | Identifies the sector whose matrix element is read | unsupported import on actual surface | top-sector projector obstruction stack | yes | yes | non-mass-ordering top-line theorem, dynamics, or pole certificate | open blocker |
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
 | Positive real C3 transfer/Perron top-line selection | Would use positivity to select the physical top line | pruned on current surface | `YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md` | yes | yes | add accepted orientation/phase/top-ordering dynamics or strict pole rows | no-go for positive real shortcut |
@@ -169,4 +170,9 @@ for singlet weight `s`, `y_readout(lambda_top,s)=lambda_top |3s-1|/sqrt(3)`,
 so the target value imposes only `lambda_top |3s-1|=1/sqrt(2)`. Multiple finite
 completions remain, including singlet-leaky and compensating-radial witnesses.
 Independent readout/sign/radial laws or accepted strict pole rows are still
+load-bearing.
+The sharp-response readout no-go now prunes a stronger endpoint shortcut:
+`Var_s(B_x)=3s(1-s)/2` allows both `P_nt` and `P_0`, and the singlet endpoint
+can be target-size with a compensating radial coupling. A physical endpoint
+law excluding `P_0`, radial factorization, or strict pole rows remains
 load-bearing.

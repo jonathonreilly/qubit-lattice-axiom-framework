@@ -69,6 +69,8 @@ the W row force the missing radial factor.
 The thirty-first route tested whether target-size response magnitude itself
 can back-solve zero singlet weight, radial factorization, or physical
 source-orientation/sign.
+The thirty-second route tested whether sharp same-source response, modeled by
+zero `B_x` variance, can supply the missing physical endpoint/readout law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -104,6 +106,7 @@ source-orientation/sign.
 | Primitive singular no-hidden-record boundary intervention | exact support / open readout-law boundary | 2 | Landed: least-KL singular support loss on the reflection-even C3 RN/Fisher curve selects `P_nt/2`, but the primitive singular physical top-readout law remains open and the full simplex has degenerate dropped-line faces |
 | Same-surface radial factor | no-go shortcut test | 3 | Pruned: `V_top(lambda_top)=lambda_top A B_x` preserves `P_nt`, `B_x`, and the W row while varying the top coefficient |
 | Radial/readout compensation | no-go shortcut test | 3 | Pruned: target magnitude imposes only `lambda_top |3s-1|=1/sqrt(2)` and cannot certify zero singlet weight, radial factorization, or source orientation/sign |
+| Sharp-response readout | no-go shortcut test | 3 | Pruned: zero `B_x` variance selects both `P_nt` and `P_0`, and `P_0` can be target-size with a compensating radial factor |
 
 ## Stuck Fan-Out
 
@@ -144,6 +147,7 @@ source-orientation/sign.
 | Primitive singular boundary intervention | Ask whether primitive no-hidden-record support loss chooses the top block more narrowly | Support only; reflection-even least-KL singular support loss selects `P_nt/2`, but accepting that singular readout as physical is a new law and full-simplex least-KL is degenerate |
 | Same-surface radial factor | Ask whether zero-singlet `P_nt` support plus `B_x` and W row force `lambda_top=1/sqrt(2)` | Fails; the same-source family `V_top(lambda_top)=lambda_top A B_x` varies the coefficient |
 | Radial/readout compensation | Ask whether the target-size row can infer zero singlet support or the radial factor | Fails; `lambda_top |3s-1|=1/sqrt(2)` has multiple finite completions and signed branches need a source-orientation law |
+| Sharp-response readout | Ask whether `Var(B_x)=0` selects the physical nontrivial endpoint | Fails; zero variance selects both `P_nt` and `P_0`, and radial compensation keeps the singlet endpoint target-size |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -209,3 +213,7 @@ shortcut: the target-size equation has multiple finite completions with
 different singlet weights and radial couplings. The next positive C3 move must
 derive independent readout/sign/radial laws, or the campaign must pivot to
 accepted strict pole-row data.
+The sharp-response readout no-go prunes the next refinement: zero `B_x`
+variance leaves both nontrivial and singlet endpoints. Sharpness is not a
+physical top-block law unless a new same-surface theorem excludes `P_0`; radial
+factorization remains independent.

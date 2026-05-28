@@ -71,6 +71,9 @@ Current block artifacts:
 - `docs/YT_C3_RADIAL_READOUT_COMPENSATION_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_radial_readout_compensation_underdetermination_no_go.py`
 - `outputs/yt_c3_radial_readout_compensation_underdetermination_no_go_2026-05-28.json`
+- `docs/YT_C3_SHARP_RESPONSE_READOUT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_sharp_response_readout_underdetermination_no_go.py`
+- `outputs/yt_c3_sharp_response_readout_underdetermination_no_go_2026-05-28.json`
 - `docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py`
 - `outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json`
@@ -111,4 +114,5 @@ Next artifact if continuing:
   singular-boundary law is now the narrowest support candidate, but still open
   as physical readout authority. Zero-singlet support alone does not fix the
   radial factor, and target-size response magnitude cannot back-solve either
-  the radial factor or zero-singlet readout law.
+  the radial factor or zero-singlet readout law. Zero response variance also
+  cannot close the gap because it leaves the sharp singlet endpoint available.

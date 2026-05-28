@@ -2,7 +2,7 @@
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Status |
 |---:|---|---:|---:|---|---|
-| 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout/hard-boundary law | medium | high | partial | factorization support landed; block support landed; radial-factor-free and target-magnitude back-solving shortcuts pruned; current real/reflection-even block-algebra, source-orientation sign-choice, trace-free centered-source, finite minimum-information readout, and current hard-boundary geometry-alone shortcuts pruned; primitive singular-boundary support isolates a conditional `P_nt` candidate but physical readout/sign and radial generator laws remain open |
+| 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout/hard-boundary law | medium | high | partial | factorization support landed; block support landed; radial-factor-free, target-magnitude back-solving, and sharp-response shortcuts pruned; current real/reflection-even block-algebra, source-orientation sign-choice, trace-free centered-source, finite minimum-information readout, and current hard-boundary geometry-alone shortcuts pruned; primitive singular-boundary support isolates a conditional `P_nt` candidate but physical readout/sign and radial generator laws remain open |
 | 2 | Non-mass-ordering C3 top-block law excluding `P_0` without target selection | low | high | present | pruned on current real/reflection-even C3 surface, including the weaker zero-singlet block-membership shortcut |
 | 3 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | low | high | present | pruned as source-derivative shortcut; base dynamics/order still open |
 | 4 | Strict sparse top/W pole-response evidence on accepted backend | medium | high | harness present | audited absent on current branch, including repository discovery scan |
@@ -257,3 +257,11 @@ radial witnesses. The next exact action remains rank 1 or rank 4, but rank 1
 must now derive independent readout/sign/radial laws rather than infer them
 from the target-size row; otherwise pivot to accepted strict same-source
 top/W pole-row data with contact, FV/IR, and model-class controls.
+
+Queue refresh after the thirty-second block: positive closure remains open.
+Sharp-response readout is now pruned as a shortcut: `Var_s(B_x)=0` selects
+both `s=0` and `s=1`, and the singlet endpoint can be target-size with a
+compensating radial factor. The next exact action remains rank 1 or rank 4,
+but rank 1 must derive a physical endpoint/readout law excluding `P_0` plus
+independent radial factorization; otherwise pivot to accepted strict
+same-source top/W pole-row data with contact, FV/IR, and model-class controls.

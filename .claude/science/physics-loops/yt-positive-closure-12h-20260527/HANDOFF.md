@@ -1,5 +1,69 @@
 # Handoff
 
+Cycle 18 adds a thirty-second science block, not positive retained-grade
+closure. The new block prunes the shortcut
+
+```text
+sharp same-source B_x response / Var(B_x)=0
+  -> zero-singlet top readout or radial factorization.
+```
+
+For singlet weight `s`,
+
+```text
+E_s[B_x] = (3s - 1)/sqrt(6)
+Var_s(B_x) = (3/2) s(1-s)
+```
+
+so zero response variance selects both endpoints:
+
+```text
+s=0 -> P_nt
+s=1 -> P_0
+```
+
+The singlet endpoint remains sharp and can be target-size with a compensating
+radial factor `lambda_top=1/(2sqrt(2))`. Therefore sharpness does not certify
+zero singlet weight, `lambda_top=1/sqrt(2)`, or physical
+source-orientation/sign.
+
+This is an exact negative boundary only. No `POSITIVE_CLOSURE` marker was
+written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 18 science commit:
+
+```text
+TBD_CYCLE18_SCIENCE_COMMIT
+```
+
+Cycle 18 artifacts:
+
+- `docs/YT_C3_SHARP_RESPONSE_READOUT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_sharp_response_readout_underdetermination_no_go.py`
+- `outputs/yt_c3_sharp_response_readout_underdetermination_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 18 verification:
+
+- `python3 scripts/frontier_yt_c3_sharp_response_readout_underdetermination_no_go.py` -> `SUMMARY: PASS=98 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=464 FAIL=0`
+- Adjacent runners passed: radial/readout compensation no-go `PASS=100`,
+  same-surface radial-factor no-go `PASS=94`, nontrivial-block support
+  `PASS=85`, source-orientation sign-selector no-go `PASS=89`,
+  trace-free centered-source no-go `PASS=89`, minimum-information readout
+  no-go `PASS=103`, strict sparse availability audit `PASS=74`, direct
+  sparse certificate `PASS=88`, first-principles transfer response `PASS=56`,
+  and same-surface matrix factorization `PASS=77`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+The next exact action is to derive accepted independent same-surface radial
+generator factorization plus a physical zero-singlet/sharp-endpoint
+top-readout/sign law excluding `P_0`, or produce accepted strict top/W pole
+rows with contact, FV/IR, and model-class controls.
+
 Cycle 17 adds a thirty-first science block, not positive retained-grade
 closure. The new block prunes the shortcut
 

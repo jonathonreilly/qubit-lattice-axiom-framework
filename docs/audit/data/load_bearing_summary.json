@@ -77,16 +77,16 @@
       "transitive_descendants": 556
     },
     {
+      "claim_id": "cl3_color_automorphism_theorem",
+      "criticality": "critical",
+      "load_bearing_score": 35.873,
+      "transitive_descendants": 937
+    },
+    {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
       "load_bearing_score": 35.52,
       "transitive_descendants": 1037
-    },
-    {
-      "claim_id": "cl3_color_automorphism_theorem",
-      "criticality": "critical",
-      "load_bearing_score": 34.873,
-      "transitive_descendants": 937
     },
     {
       "claim_id": "plaquette_self_consistency_note",

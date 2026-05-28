@@ -17580,6 +17580,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py"
     },
+    "planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 2,
+        "B": 2,
+        "C": 1,
+        "D": 6
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/planck_target3_coframe_response_accepted_premise_runner.py"
+    },
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25": {
       "assert_count": 0,
       "counts": {
@@ -55053,6 +55065,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/planck_target3_coframe_response_accepted_premise_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 2,
+        "C": 1,
+        "D": 6
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/plaquette_observable_uniqueness_runner.py": {
       "assert_count": 1,
       "claims": [
@@ -57448,11 +57475,11 @@
       "A": 263,
       "B": 294,
       "C": 767,
-      "D": 306,
+      "D": 307,
       "none": 441
     },
-    "runners_classified": 2071,
-    "runners_with_C": 1007,
-    "runners_with_D": 612
+    "runners_classified": 2072,
+    "runners_with_C": 1008,
+    "runners_with_D": 613
   }
 }

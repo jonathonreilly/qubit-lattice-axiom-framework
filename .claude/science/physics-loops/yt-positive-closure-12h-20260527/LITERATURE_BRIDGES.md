@@ -112,3 +112,9 @@ family. No external representation-theory reference is load-bearing. External
 context could only motivate accepting faithful/nontrivial C3 action as a
 physical Y_T top-block law; it does not derive that law on the current
 surface.
+
+The origin/main strict pole-row refresh no-go is a repository-state audit, not
+a literature bridge. It uses fetched git data and finite JSON/schema checks to
+ask whether a strict top/W pole-row packet already exists on mainline. No
+external physics or math reference is load-bearing; external context cannot
+make an absent branch-local or remote certificate present.

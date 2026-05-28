@@ -1,23 +1,22 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go / open real-irrep physical top-block law
+actual_current_surface_status: no-go / origin-main strict-row refresh
 trace_class: negative_route_pruning
-reachability_to_target: prunes the shortcut from finite real C3
-  irrep/dimension/faithfulness facts to accepted zero-singlet top-block
-  membership and the coefficient row
+reachability_to_target: prunes the shortcut that freshly fetched origin/main
+  already supplies accepted strict top/W pole-row evidence
 conditional_surface_status: exact top-row certificate if accepted same-surface
   radial generator dynamics derives lambda_top = 1/sqrt(2) and an accepted
-  top-block/readout law selects P_nt, or if accepted strict pole rows are
-  supplied
+  top-block/readout law selects P_nt, or if accepted strict top/W pole rows
+  with controls are supplied
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Finite real C3 representation theory exposes P_nt as the faithful two-dimensional real irrep, but selecting it as the physical Y_T top block is an extra physical top-readout law. Even with P_nt supplied, lambda_top remains free on the current surface."
+proposal_allowed_reason: "A post-fetch origin/main scan finds no accepted same-surface strict top/W pole-row packet. The named strict row outputs are absent, origin/main Y_T outputs keep strict rows blocked, and no scanned candidate output satisfies backend, W/top pole isolation, coefficient-row, contact/FV/IR, model-class, no-free-coefficient, and proposal gates."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass_for_no_go_route_pruning_only
-next_exact_action: "derive accepted same-surface radial generator dynamics plus a physical top-readout law excluding P_0, or produce accepted strict top/W pole-row data with contact/FV/IR/model-class controls"
+next_exact_action: "produce new accepted strict top/W pole rows with contact/FV/IR/model-class controls, derive accepted same-surface backend/projectors/matrix elements, or return to accepted radial/readout dynamics for P_nt"
 ```
 
 Retained or proposed-retained wording is not allowed for this block.

@@ -1,23 +1,23 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 22
+supervisor_cycle: 23
 runtime_budget_seconds: 43200
 remaining_campaign_seconds_at_cycle_start: 15217
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T02:36:39Z"
+last_checkpoint_utc: "2026-05-28T02:46:33Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_real_irrep_dimension_top_block_no_go
+active_route: origin_main_strict_pole_row_refresh_no_go
 hard_residual: "derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2), physical zero-singlet top-readout/sign law excluding P_0, or accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
-actual_current_surface_status: no-go / open real-irrep physical top-block law
+actual_current_surface_status: no-go / origin-main strict-row refresh
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Cycle 22 prunes the finite real-C3 irrep/dimension shortcut. The regular real representation splits as P_0 plus P_nt, with P_0 the trivial real irrep and P_nt the faithful two-dimensional real irrep, but selecting the faithful/nontrivial summand as the physical top block is an extra top-readout law rather than a consequence of representation theory alone. Even if P_nt is supplied, lambda_top remains free and the target row still requires accepted lambda_top=1/sqrt(2) radial generator factorization or strict pole rows. Positive closure remains open."
+claim_state_movement: "Cycle 23 prunes the origin/main strict-row refresh shortcut. A post-fetch origin/main scan finds the named strict top/W row outputs absent, confirms the origin/main FH response-ratio gate still has strict_top_w_rows_present=false, confirms the origin/main physical top-mass bridge still lacks a strict same-source response measurement, and finds no scanned origin/main Y_T output satisfying the positive strict packet fields. This is no-go route pruning only; future strict pole-row production remains live and positive closure remains open."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -106,6 +106,9 @@ files_touched:
   - docs/YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md
   - scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py
   - outputs/yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json
+  - docs/YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md
+  - scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py
+  - outputs/yt_origin_main_strict_pole_row_refresh_no_go_2026-05-28.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -180,7 +183,22 @@ no_go_routes:
   - block rank or root-rank averaging certifies lambda_top=1/sqrt(2)
   - C3 RN/Fisher line-simplex geometry, binary P_0/P_nt quotient coarse-graining, or Fisher-unit C3 score normalization certifies lambda_top=1/sqrt(2)
   - finite real C3 irrep/dimension/faithfulness facts derive accepted zero-singlet physical top-block membership or the coefficient row
+  - freshly fetched origin/main already supplies accepted strict top/W pole-row evidence
 commands_run:
+  - "python3 scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py -> PASS=59 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=507 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py -> PASS=79 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py -> PASS=110 FAIL=0"
+  - "python3 scripts/frontier_yt_fh_top_w_response_ratio_gate.py -> PASS=38 FAIL=0"
+  - "python3 scripts/frontier_yt_fh_top_mass_response_physical_intervention_bridge.py -> PASS=52 FAIL=0"
+  - "python3 scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS=88 FAIL=0"
+  - "python3 scripts/frontier_yt_native_same_surface_top_w_transfer_action_backend_candidate.py -> PASS=64 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py scripts/frontier_yt_fh_top_w_response_ratio_gate.py scripts/frontier_yt_fh_top_mass_response_physical_intervention_bridge.py scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py scripts/frontier_yt_native_same_surface_top_w_transfer_action_backend_candidate.py -> PASS"
+  - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
+  - "git diff --check -> PASS"
+  - "git commit -m 'Prune origin-main strict pole-row refresh' -> 59050961ac419e283c28fbd2f68128a478d6f834"
   - "python3 scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py -> PASS=76 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=499 FAIL=0"
   - "python3 scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py -> PASS=85 FAIL=0"
@@ -599,8 +617,8 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 22 science commit bff9f07ca1dbb03e19fd3ff522b50c3fc8a3016b and delivery commit aeeafd14f942cbb69addab6cc86a01aaa723ef59 are created locally; branch push and PR #1980 body update are the next delivery actions."
-latest_science_commit: bff9f07ca1dbb03e19fd3ff522b50c3fc8a3016b
-latest_delivery_commit: aeeafd14f942cbb69addab6cc86a01aaa723ef59
-next_exact_action: "Derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2) plus a physical top-readout law excluding P_0, or produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls."
+pr_status: "Cycle 23 science commit 59050961ac419e283c28fbd2f68128a478d6f834 is created locally; delivery commit, branch push, and PR #1980 body update are the next delivery actions."
+latest_science_commit: 59050961ac419e283c28fbd2f68128a478d6f834
+latest_delivery_commit: pending_cycle_23_delivery_commit
+next_exact_action: "Produce new accepted strict top/W pole rows with contact/FV/IR/model-class controls, derive accepted same-surface backend/projectors/matrix elements, or return to accepted radial/readout dynamics for P_nt."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

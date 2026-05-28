@@ -1,5 +1,42 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 37
+
+Scope:
+
+- origin/main strict pole-row refresh no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks the fetched `origin/main` ref, named strict row output absence, origin/main Y_T output candidate fields, known origin/main blocker outputs, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/origin-main strict-row refresh; the artifact prunes only the premise that mainline already supplies the strict packet. |
+| Imports / support | DISCLOSED | New strict pole-row production, accepted same-surface backend/projector/matrix-element dynamics, or accepted radial/readout dynamics remain open; forbidden mass/target/fit inputs are absent. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=59 FAIL=0`
+- Full stack runner: `PASS=507 FAIL=0`
+- Adjacent runners passed: strict repository discovery no-go `PASS=79`,
+  strict sparse availability audit `PASS=74`, strict same-source coefficient
+  obstruction `PASS=74`, strict W/Z plus C3 splice no-go `PASS=110`,
+  FH top/W response-ratio gate `PASS=38`, FH top-mass response bridge
+  `PASS=52`, direct sparse certificate `PASS=88`, and native backend
+  candidate `PASS=64`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 36
 
 Scope:

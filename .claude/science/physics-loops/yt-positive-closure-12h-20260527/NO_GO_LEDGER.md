@@ -1,5 +1,12 @@
 # No-Go Ledger
 
+- New in the thirty-seventh block: freshly fetched `origin/main` does not
+  supply accepted strict top/W pole-row evidence. The named strict row outputs
+  are absent on `origin/main` and the current branch, the origin/main FH
+  response-ratio gate still records `strict_top_w_rows_present: false`, the
+  origin/main physical top-mass response bridge still lacks a strict
+  same-source response measurement, and no scanned origin/main Y_T output
+  completes the positive strict-packet fields.
 - New in the thirty-sixth block: finite real C3 irrep/dimension/faithfulness
   facts do not derive accepted zero-singlet physical top-block membership or
   the coefficient row. `P_0` is the trivial real irrep and `P_nt` is the

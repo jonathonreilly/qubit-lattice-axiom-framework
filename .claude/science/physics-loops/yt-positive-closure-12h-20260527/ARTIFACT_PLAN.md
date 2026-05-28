@@ -86,6 +86,9 @@ Current block artifacts:
 - `docs/YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py`
 - `outputs/yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json`
+- `docs/YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py`
+- `outputs/yt_origin_main_strict_pole_row_refresh_no_go_2026-05-28.json`
 - `docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py`
 - `outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json`

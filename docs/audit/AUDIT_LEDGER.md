@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 25 |
-| unaudited | 1138 |
+| unaudited | 1137 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 69 |
+| ~~audited_conditional~~ | 70 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 891 |
-| `audited_conditional` | 69 |
+| `audited_conditional` | 70 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1368 |
+| `unaudited` | 1367 |
 
 | claim_type | count |
 |---|---:|
@@ -1063,6 +1063,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -8289,6 +8290,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The displayed generator T_m satisfies T_m^2 = I_3, so Tr(T_m^2)=3 and Tr(T_m^3)=Tr(T_m)=1, fixing the m^2 and m^3 coefficients in the stipulated scalar potential as g_2=3/2 and g_3=1/6.  _(class `A`)_
 - **chain closes:** True — The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.
 - **rationale:** The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector.
+- **auditor confidence:** high
+
+### `kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary_bounded_theorem_note_2026-05-28`
+
+- **Note:** [`KOLB_TURNER_FREEZEOUT_PREFACTOR_FROM_SUPPLIED_COSMOLOGY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-05-28.md`](../../docs/KOLB_TURNER_FREEZEOUT_PREFACTOR_FROM_SUPPLIED_COSMOLOGY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic Kolb-Turner prefactor identity K = s_0 * sqrt(45/pi)/(rho_c/h^2) and its leading-coefficient numerical evaluation, conditional on the supplied Friedmann, Stefan-Boltzmann/entropy-density, Boltzmann-tail, entropy-conservation, Tier-A scale, and cosmological-boundary inputs stated in the note.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-kolb-turner-2026-05-27`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** K is identified by substituting Y_infty into Omega_X h^2 and comparing with the Kolb-Turner form: K = s_0 * sqrt(45/pi) / (rho_c/h^2).  _(class `A`)_
+- **chain closes:** False — The symbolic algebra and runner checks close under the stated premise packet, but the retained audit chain does not close from the restricted inputs. The sole one-hop retained dependency certifies finite SM g_* arithmetic; it does not retain the Friedmann law, Stefan-Boltzmann/entropy-density authority, Kolb-Turner Boltzmann tail coefficient, entropy conservation, present-day g_*S(T0), T0/H100 boundary values, or the Tier-A S scale as one-hop retained support for this row.
+- **rationale:** Independent algebra confirms the formula family: substituting D1 and D2 into D3 gives the stated 16*pi^3 form, and the numerical evaluation yields 1.03855e9 GeV^-1, within the note's leading-tail convention gap. The no-go/admission gate does not expose a formula failure; its hidden-premise scan leaves explicit supplied cosmology, thermodynamics, Boltzmann-tail, boundary-value, and Tier-A scale inputs outside the retained one-hop packet. Because those inputs are not closed by the restricted audit context, the row is conditional rather than clean retained science.
+- **open / conditional deps cited:**
+  - `NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`
+  - `AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md`
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 - **auditor confidence:** high
 
 ### `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`

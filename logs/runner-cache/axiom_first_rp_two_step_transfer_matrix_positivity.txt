@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
+runner_sha256: b847d04c8088525cc3fd6639bd929cd069106e2f119671b9e1a35889cb38fe37
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+2-STEP BLOCKED STAGGERED-KS TRANSFER MATRIX POSITIVITY (free case, R1+R2)
+==============================================================================
+Free staggered fermions, 1+1d, m=0.5. eta_0=1, eta_1(t)=(-1)^t.
+Single-step transfer alternates T_even/T_odd; physical object T_hat^2 = T_odd T_even.
+
+------------------------------------------------------------------------------
+C1  DISPERSION ANCHOR (faithfulness): 2-step decaying eigenvalue == e^{-2E(p)}
+    E(p) = arcsinh( sqrt(m^2 + sin^2 p) ),  sinh^2 E = m^2 + sin^2 p
+------------------------------------------------------------------------------
+    p= 0.000: decay-mode=+0.38196601+2e-32j  e^-2E=0.38196601  |res|=1.11e-16
+    p= 0.393: decay-mode=+0.30478499+9e-17j  e^-2E=0.30478499  |res|=1.40e-16
+    p= 0.785: decay-mode=+0.20871215-8e-17j  e^-2E=0.20871215  |res|=1.18e-16
+    p= 1.178: decay-mode=+0.15988938-4e-17j  e^-2E=0.15988938  |res|=2.25e-16
+    p= 1.571: decay-mode=+0.14589803+6e-17j  e^-2E=0.14589803  |res|=3.38e-16
+    p= 1.963: decay-mode=+0.15988938-4e-17j  e^-2E=0.15988938  |res|=2.25e-16
+    p= 2.356: decay-mode=+0.20871215-4e-17j  e^-2E=0.20871215  |res|=6.96e-17
+    p= 2.749: decay-mode=+0.30478499-9e-17j  e^-2E=0.30478499  |res|=1.02e-16
+    p= 3.142: decay-mode=+0.38196601-2e-78j  e^-2E=0.38196601  |res|=1.11e-16
+    ... (16 momenta over the Brillouin zone)
+    max dispersion residual = 3.384e-16  (tol 1e-09)
+    max |Im(decay-mode)|    = 1.340e-16
+    C1 = PASS
+
+------------------------------------------------------------------------------
+C2  SINGLE-STEP NON-POSITIVITY: spec(T_even), spec(T_odd) genuinely complex
+    => single-step T_hat NOT a positive operator (consistent with the no-go)
+------------------------------------------------------------------------------
+    p= 0.393: eig(T_even) = [-1.5657-0.5622j, +0.5657-0.2031j]
+    p= 0.785: eig(T_even) = [-1.4436-1.0818j, +0.4436-0.3324j]
+    p= 1.178: eig(T_even) = [-1.3372-1.4756j, +0.3372-0.3721j]
+    max |Im eig(T_even/T_odd)| over p!=0 = 1.6248  (must exceed 1e-3)
+    C2 = PASS
+
+------------------------------------------------------------------------------
+C3  TWO-STEP POSITIVITY: T_hat^2 = Gamma(t1^(2)) positive Hermitian = B^dag B
+    t1^(2)(p) = e^{-2E(p)} (action-derived decaying eigenvalue, from C1)
+------------------------------------------------------------------------------
+    L_s=2 dim=  4: T_hat^2 min eig=1.458980e-01 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=1.9e-32
+    L_s=3 dim=  8: T_hat^2 min eig=1.124403e-02 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=9.5e-17
+    L_s=4 dim= 16: T_hat^2 min eig=3.105620e-03 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=6.0e-17
+    L_s=6 dim= 64: T_hat^2 min eig=1.264282e-04 max=1.000000  Herm-err=0.0e+00  ||T_hat^2 - B^dag B||=5.6e-17  max|Im(kernel)|=9.5e-17
+    C3 = PASS  (positive Hermitian, exact B^dag B, all L_s)
+
+------------------------------------------------------------------------------
+C4  R2 CROSS-CHECK: operator-picture 2-step OS Gram PSD
+    G(F_I,F_J) = <vac| F_I^dag T_hat^2 F_J |vac>, Hermitian and PSD iff T_hat^2>=0
+    (contrast: single-step naive Lagrangian Gram min eig = -0.80)
+------------------------------------------------------------------------------
+    L_s=3 dimFock=  8 #obs=16: ||G-G^dag||=0.0e+00  Gram min eig=+0.000000e+00 max=1.000000  PSD=YES
+    L_s=4 dimFock= 16 #obs=27: ||G-G^dag||=0.0e+00  Gram min eig=+0.000000e+00 max=1.000000  PSD=YES
+    C4 = PASS  (Hermitian PSD where single-step was -0.80)
+
+------------------------------------------------------------------------------
+GAUGE CASE REDUCTION TARGET (NOT re-derived here)
+------------------------------------------------------------------------------
+    intended SU(3)-gauged staggered 2-step RP closure target =
+      (fermion-sector 2-step transfer positivity -- THIS runner, C1-C4, NEW)
+    x (det(M_KS + m I) >= m^n > 0 config-by-config -- retained dep:
+       STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
+    x (gauge-half Cauchy-Schwarz norm-square -- retained_bounded dep:
+       REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)
+    Newly supplied in-repo: the free fermion-sector 2-step transfer positivity.
+    Interacting gauge closure is scoped to this reduction target.
+
+==============================================================================
+VERDICT
+==============================================================================
+  C1 dispersion anchor   : PASS  (max residual 3.38e-16)
+  C2 single-step non-PSD : PASS  (max |Im eig| 1.625)
+  C3 2-step positivity   : PASS  (T_hat^2 positive Hermitian = B^dag B)
+  C4 R2 OS Gram PSD      : PASS  (2-step OS Gram Hermitian PSD)
+
+PASS=4 FAIL=0
+
+  PASS -- the free staggered 2-step blocked transfer matrix T_hat^2 is
+  POSITIVE HERMITIAN (T_hat^2 = B^dag B, H_hat = -log(T_hat^2)/(2 a_tau) >= 0),
+  derived from the staggered action and anchored to the exact free staggered
+  dispersion sinh^2 E = m^2 + sin^2 p. The single-step T_hat is non-positive
+  (complex single-particle spectrum), consistent with the single-step no-go
+  runner. The interacting gauge case is only recorded as the named
+  reduction target; it is not re-derived by this free-case runner.
+
+----- stderr -----
+

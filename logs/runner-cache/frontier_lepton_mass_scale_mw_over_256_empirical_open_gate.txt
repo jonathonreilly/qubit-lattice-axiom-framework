@@ -1,0 +1,104 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lepton_mass_scale_mw_over_256_empirical_open_gate.py
+runner_sha256: a5b0055d6d66b50dfdd59a1bdc0909d7fe6dd862437b4f441c21f0494d70ea22
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+================================================================================
+LEPTON MASS SCALE m_W/256 EMPIRICAL OPEN-GATE VERIFIER
+================================================================================
+Note: docs/LEPTON_MASS_SCALE_MW_OVER_256_EMPIRICAL_OPEN_GATE_NOTE_2026-05-26.md
+Status: source-only open_gate proposal. No audit-lane verdict wiring.
+
+Comparator formula: Brannen-style square-root triplet with δ = 2/9.
+Empirical inputs: PDG m_W and charged-lepton masses.
+
+--------------------------------------------------------------------------------
+Framework setup
+--------------------------------------------------------------------------------
+  [PASS] one-qubit operator algebra M_2(C), dim_C = 4
+  [PASS] dim_factor = dim_C(M_2(C))^4 = 4^4 = 256
+  [PASS] comparator delta = 2/9 = 0.222222
+  [PASS] sqrt coefficient = √2 = 1.414214
+
+--------------------------------------------------------------------------------
+S1. Empirical comparator a²_lepton ~= m_W / dim_C(M_2(C))^4 = m_W / 256
+--------------------------------------------------------------------------------
+  m_W (PDG 2024) = 80369.2 ± 15.7 MeV
+  m_W / 256 = 313.9422 MeV
+  a² empirical (from PDG lepton masses) = 313.8411 MeV
+  Relative deviation: +0.0322%
+  PDG m_W relative precision: 0.0195%
+  [PASS] S1.a: empirical comparator offset is below 0.05%  (deviation +0.0322%, PDG precision 0.0195%)
+  [PASS] S1.b: bookkeeping form a / √m_W = 1/16 (= 1/16, dim_C²)  (a/√m_W = 0.062500, 1/16 = 0.062500)
+  [PASS] S1.c: open target is 1/256 = 1/(dim_C(M_2(C)))^4  (this runner records the target; it does not derive it)
+
+--------------------------------------------------------------------------------
+S2. m_W-anchored charged-lepton comparators are sharp
+--------------------------------------------------------------------------------
+
+  k | √m_k/a       | comparator m_k (MeV) | empirical m_k (MeV) | deviation
+  --|--------------|---------------------|---------------------|----------
+  1 | +0.040350    | 0.5111              | 0.5110              | +0.026% (m_e)
+  2 | +0.580212    | 105.6873             | 105.6584             | +0.027% (m_μ)
+  0 | +2.379438    | 1777.45            | 1776.86            | +0.033% (m_τ)
+  [PASS] S2.a: m_tau comparator from m_W/256 is within 0.05%  (deviation +0.0335% at the PDG m_W precision scale)
+  [PASS] S2.b: m_mu comparator from m_W/256 is within 0.05%  (deviation +0.0274% within the PDG precision scale)
+  [PASS] S2.c: m_e comparator from m_W/256 is within 0.05%  (deviation +0.0264% within the PDG precision scale)
+
+--------------------------------------------------------------------------------
+S3. Empirical offset is at the PDG m_W precision scale
+--------------------------------------------------------------------------------
+  [PASS] S3.a: comparator offset 0.0322% is within 2x PDG m_W precision 0.0195%  (near the PDG precision floor; tighter m_W measurements would test this directly)
+  [PASS] S3.b: m_tau comparator lies within the m_W uncertainty scale  (m_τ deviation +0.0335% vs ~3·PDG_m_W +0.0586%)
+
+--------------------------------------------------------------------------------
+S4. Open derivation target: factor 1/256 = 1/(dim_C(M_2(C)))^4
+--------------------------------------------------------------------------------
+  [PASS] S4.a: dim_C(M_2(C)) = 4 (per-site complex algebra dimension)
+  [PASS] S4.b: dim_C^4 = 4^4 = 256 (suppression factor)
+  [PASS] S4.c: no derivation of the 1/256 factor is performed here  (open target only)
+  [PASS] S4.d: future work is to derive 1/256 without empirical m_W or lepton masses  (potential paths include Dirac scaling, operator factors, or dimension-chain work)
+
+--------------------------------------------------------------------------------
+Open-gate structure
+--------------------------------------------------------------------------------
+  [PASS] S1/S3 use only PDG comparator values and dim_C(M_2(C))=4 bookkeeping
+  [PASS] S2 uses delta=2/9 as a comparator setting, not as a retained input
+  [PASS] all three comparators use empirical m_W plus the delta=2/9 setting  (sharp numerical agreement is not a derivation)
+
+--------------------------------------------------------------------------------
+Explicit non-claims (audit-discipline)
+--------------------------------------------------------------------------------
+  [PASS] Does NOT derive the 1/256 factor
+  [PASS] Does NOT derive m_mu from framework structure alone
+  [PASS] Does NOT derive m_e from framework structure alone
+  [PASS] Does NOT derive m_W
+  [PASS] Uses PDG m_W and charged-lepton masses only as empirical comparators
+  [PASS] Does NOT propose new axiom or theory-language extension
+  [PASS] Does NOT predict any audit verdict
+  [PASS] Does NOT promote/retire/re-classify any existing audit row
+  [PASS] Does NOT claim lepton-sector closure
+
+================================================================================
+Summary: PASS=28 FAIL=0
+================================================================================
+Empirical comparator a²_lepton ~= m_W / 256 = m_W / (dim_C(M_2(C)))^4
+  m_W / 256 = 313.9422 MeV
+  a² empirical = 313.8411 MeV
+  Offset 0.0322% (PDG m_W precision scale 0.0195%)
+
+charged-lepton comparators from m_W/256:
+  m_e comparator = 0.511134 MeV (PDG 0.510999, +0.0264%)
+  m_mu comparator = 105.6873 MeV (PDG 105.6584, +0.0274%)
+  m_tau comparator = 1777.45 MeV (PDG 1776.86, +0.033%)
+
+This is an empirical open gate, not a derivation from framework structure alone.
+
+Open target: derive the 1/256 factor without empirical m_W or lepton masses.
+Open target: derive m_W itself before any parameter-free lepton-scale claim.
+
+----- stderr -----
+

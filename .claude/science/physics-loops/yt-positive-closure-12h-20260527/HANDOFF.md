@@ -34,7 +34,7 @@ written. Retained/proposed-retained wording remains disallowed.
 Cycle 17 science commit:
 
 ```text
-TBD_CYCLE17_SCIENCE_COMMIT
+6a53fa0d8ca2b5056f9f608be4779c0f1133d7db
 ```
 
 Cycle 17 artifacts:

@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1103,
-    "decoration": 50,
+    "bounded_theorem": 1102,
+    "decoration": 51,
     "meta": 234,
     "no_go": 260,
     "open_gate": 111,
@@ -55,6 +55,7 @@
     "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 4,
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
+    "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 230,
     "open_gate": 20,
@@ -62,7 +63,7 @@
     "retained_bounded": 535,
     "retained_no_go": 167,
     "retained_pending_chain": 8,
-    "unaudited": 1237
+    "unaudited": 1236
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

@@ -128,6 +128,14 @@ Laplacian reference is load-bearing. External context could only motivate a
 new physical readout/radial law; it does not derive `P_0` exclusion,
 `lambda_top=1/sqrt(2)`, or strict pole rows on the current surface.
 
+The oriented Markov-current source-law no-go directly diagonalizes the finite
+nonreversible C3 generator `Q_{p,q}=p(C-I)+q(C^2-I)` and splits it into
+symmetric decay plus circulating current. No external Markov-chain reference
+is load-bearing: the runner derives the stationary `P_0` line, equal
+nontrivial real decay rates, conjugate phase signs, free current ratio, and
+free radial factor. External context could only motivate a new accepted
+phase/current readout law; it does not derive that law on the current surface.
+
 The origin/main strict pole-row refresh no-go is a repository-state audit, not
 a literature bridge. It uses fetched git data and finite JSON/schema checks to
 ask whether a strict top/W pole-row packet already exists on mainline. No

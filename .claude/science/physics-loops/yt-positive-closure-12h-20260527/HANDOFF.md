@@ -1,5 +1,50 @@
 # Handoff
 
+Cycle 31 adds a forty-fifth science block, not positive retained-grade
+closure. The block prunes the shortcut:
+
+```text
+nonreversible C3 Markov current Q_{p,q}=p(C-I)+q(C^2-I)
+  + connected/current normalization
+  -> accepted non-mass top-line law
+  -> dM_t/dell = A/sqrt(12).
+```
+
+The oriented current keeps `P_0` as the stationary/Perron line, keeps the
+nontrivial real decay rates degenerate, and splits only conjugate phase signs.
+Using that phase sign as the physical top pole is an additional same-surface
+readout law, the current ratio `(p-q)/(p+q)` is free, and the radial factor
+`lambda_top=1/sqrt(2)` remains open. This is a no-go/route-pruning boundary
+only. No `POSITIVE_CLOSURE` marker was written. Retained/proposed-retained
+wording remains disallowed.
+
+Cycle 31 artifacts:
+
+- `docs/YT_C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_oriented_markov_current_source_law_no_go.py`
+- `outputs/yt_c3_oriented_markov_current_source_law_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 31 verification:
+
+- `python3 scripts/frontier_yt_c3_oriented_markov_current_source_law_no_go.py`
+  -> `SUMMARY: PASS=109 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=576 FAIL=0`
+- Adjacent runners passed: reversible Markov/Laplacian no-go `PASS=108`,
+  orientation-phase strength no-go `PASS=68`, phase-ordering cone support
+  `PASS=70`, nontrivial-block support `PASS=85`, same-surface radial-factor
+  no-go `PASS=94`, and strict sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- `POSITIVE_CLOSURE` remains absent.
+
+The next exact action remains to derive allowed same-surface
+radial/readout/backend laws without forbidden anchors, or produce accepted
+strict top/W pole rows.
+
 Cycle 30 adds a forty-fourth science block, not positive retained-grade
 closure. The block prunes the shortcut:
 

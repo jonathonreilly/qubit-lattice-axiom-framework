@@ -1,5 +1,38 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 45
+
+Scope:
+
+- C3 oriented Markov-current source-law no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks the finite nonreversible C3 Markov generator, stationary/Perron line, nontrivial real-decay degeneracy, current decomposition, radial counterfamily, dependency outputs, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open oriented-current-to-top-row law; circulation supplies only conjugate phase signs until a physical readout law is added, and `lambda_top=1/sqrt(2)` remains open. |
+| Imports / support | DISCLOSED | No mass ordering, observed target, old Ward row, fitted selector, accepted phase-current readout, radial law, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=109 FAIL=0`
+- Full stack runner: `PASS=576 FAIL=0`
+- Adjacent runners passed: reversible Markov/Laplacian no-go `PASS=108`,
+  orientation-phase strength no-go `PASS=68`, phase-ordering cone support
+  `PASS=70`, nontrivial-block support `PASS=85`, same-surface radial-factor
+  no-go `PASS=94`, and strict sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- `POSITIVE_CLOSURE` remains absent.
+
 ## 2026-05-28 Local Review, Block 44
 
 Scope:

@@ -90,6 +90,10 @@ closed exactly:
   P_0 as the stationary/Perron line, keeps the nontrivial block degenerate,
   and connected normalization only recovers B_x up to sign; it does not
   derive the physical top readout or lambda_top=1/sqrt(2)
+  oriented Markov-current source-law no-go: nonreversible C3 circulation
+  keeps P_0 as the stationary/Perron line, leaves nontrivial real decay rates
+  degenerate, and splits only conjugate phase signs until a physical
+  phase/readout law is supplied; lambda_top remains free
   real-irrep dimension top-block no-go: finite real C3 representation theory
   exposes P_0 as the trivial real irrep and P_nt as the faithful
   two-dimensional real irrep, but selecting the faithful/nontrivial summand as
@@ -177,6 +181,10 @@ closed exactly:
   generator sharpens the stochastic dynamics shortcut but still selects P_0
   as stationary/Perron line, leaves the nontrivial modes degenerate, and
   after connected normalization supplies only B_x up to sign
+  C3 oriented Markov-current source-law no-go: the nonreversible
+  nearest-neighbor current adds a circulation phase but keeps P_0 stationary,
+  keeps the nontrivial real decay rates degenerate, and leaves the
+  current-sign/readout law plus lambda_top=1/sqrt(2) radial factor open
   the residual C3 phase-ordering cone is explicit support: nontrivial top-line
   ordering requires y_0 > sqrt(3) x_0 or -y_0 > sqrt(3) x_0, but that cone
   membership is not derived on the actual surface
@@ -252,6 +260,10 @@ still open:
   the target row from reversible Markov/Laplacian dynamics, since that
   dynamics only supplies the real B_x direction and a degenerate nontrivial
   block
+  accepted physical phase/current readout plus radial law if the C3 route
+  tries to derive the target row from nonreversible oriented Markov-current
+  dynamics, since the current supplies phase signs but not a physical
+  non-mass top law or lambda_top=1/sqrt(2)
   accepted real-irrep physical top-block law if the C3 route tries to select
   P_nt from faithful/nontrivial real C3 representation facts
   accepted independent physical readout/sign/radial laws, since target-size
@@ -1235,6 +1247,30 @@ up to sign.  Thus the reversible Markov/Laplacian shortcut still needs an
 accepted physical top-readout law excluding `P_0`, accepted
 `lambda_top=1/sqrt(2)` radial generator dynamics, or strict top/W pole rows.
 
+The oriented Markov-current no-go tests the nonreversible refinement
+
+```text
+Q_{p,q}=p(C-I)+q(C^2-I).
+```
+
+Its nontrivial eigenvalues have equal real part
+
+```text
+-3(p+q)/2
+```
+
+and opposite imaginary parts
+
+```text
+± sqrt(3)(p-q)/2.
+```
+
+So circulation supplies a phase sign, not an accepted non-mass physical top
+readout.  The stationary/Perron line remains `P_0`, the nontrivial real decay
+rate remains degenerate, the current ratio is free, and even a supplied
+nontrivial phase readout still needs `lambda_top=1/sqrt(2)` or strict pole
+rows.
+
 The strict sparse top/W pole-response availability audit then checks the
 remaining bypass route on the current branch.  It finds the sparse harness and
 native no-`kappa` candidate, but the strict positive evidence artifacts are
@@ -1815,6 +1851,11 @@ proposal_allowed_reason: |
   normalization only returns B_x up to sign. It does not derive a physical
   top-readout law excluding P_0 or the radial factor
   lambda_top=1/sqrt(2).
+  The oriented Markov-current source-law no-go prunes the nonreversible
+  circulation refinement: the current splits conjugate phase signs but leaves
+  P_0 stationary, keeps the nontrivial real decay rate degenerate, and still
+  requires an accepted phase/readout law plus lambda_top=1/sqrt(2) or strict
+  pole rows.
   The real-irrep dimension top-block no-go prunes the representation-dimension
   shortcut: finite real C3 representation theory exposes P_nt as the faithful
   two-dimensional summand, but selecting that summand as the physical top block

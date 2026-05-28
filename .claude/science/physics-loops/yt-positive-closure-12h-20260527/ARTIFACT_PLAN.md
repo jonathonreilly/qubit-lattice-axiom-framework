@@ -26,6 +26,9 @@ Current block artifacts:
 - `docs/YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_markov_laplacian_source_law_no_go.py`
 - `outputs/yt_c3_markov_laplacian_source_law_no_go_2026-05-28.json`
+- `docs/YT_C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_oriented_markov_current_source_law_no_go.py`
+- `outputs/yt_c3_oriented_markov_current_source_law_no_go_2026-05-28.json`
 - `docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py`
 - `outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json`

@@ -1,0 +1,85 @@
+{
+  "actual_current_surface_status": "no-go / open oriented-current-to-top-row law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_backend_projectors_matrix_elements_present": false,
+    "bare_retained_allowed": false,
+    "current_ratio_free_on_current_surface": true,
+    "current_splits_phase_sign_only": true,
+    "non_mass_top_readout_derived": false,
+    "nontrivial_real_decay_pair_degenerate": true,
+    "oriented_c3_markov_current_checked": true,
+    "positive_closure_marker_allowed": false,
+    "proposal_allowed": false,
+    "radial_generator_factorization_lambda_top_derived": false,
+    "stationary_perron_line_is_P0": true,
+    "strict_top_w_response_certificate_present": false,
+    "zero_singlet_top_readout_derived": false
+  },
+  "claim_id": "yt_c3_oriented_markov_current_source_law_no_go_note_2026-05-28",
+  "claim_type": "no_go",
+  "current_decomposition": {
+    "conclusion": "current sign/ratio is an extra dynamics/readout input, not a derived top law",
+    "free_ratio_witnesses": "p=q -> 0, q=0 -> 1, p=0 -> -1",
+    "hermitian_current_proxy": "(p-q)*sqrt(6)*B_y/2",
+    "orientation_ratio": "(p-q)/(p+q)",
+    "skew_current_part": "(p-q)*(C-C^2)/2",
+    "symmetric_part": "(p+q)*(C+C^2-2I)/2"
+  },
+  "dependency_fail_counts": {
+    "c3_block_support": 0,
+    "c3_markov": 0,
+    "c3_phase_cone": 0,
+    "c3_phase_strength": 0,
+    "c3_radial_nogo": 0,
+    "full_stack": 0,
+    "strict_availability": 0
+  },
+  "fail_count": 0,
+  "forbidden_inputs_used": false,
+  "next_exact_action": "derive accepted same-surface readout/radial/backend laws, or produce accepted strict same-source top/W pole rows",
+  "oriented_markov_spectrum": {
+    "Q_P0": "0",
+    "Q_Pomega": "-3*(p+q)/2 + I*sqrt(3)*(p-q)/2",
+    "Q_Pomega2": "-3*(p+q)/2 - I*sqrt(3)*(p-q)/2",
+    "Q_pq": "p*(C-I)+q*(C^2-I)",
+    "conclusion": "P_0 remains stationary/Perron; current splits phase signs only",
+    "semigroup_P0_modulus": "1",
+    "semigroup_nontrivial_modulus": "exp(-3*(p+q)*t/2)"
+  },
+  "pass_count": 109,
+  "positive_closure_marker_allowed": false,
+  "positive_closure_marker_written": false,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The oriented C3 Markov current keeps P_0 as stationary/Perron line, leaves the nontrivial real decay rate degenerate, and supplies only conjugate phase signs until a physical phase/readout law is added. It also does not derive lambda_top=1/sqrt(2), accepted backend/projectors, or strict top/W pole rows.",
+  "radial_readout_counterfamily": {
+    "family": "V_top(lambda_top)=lambda_top*A*B_x",
+    "nontrivial_line_row": "lambda_top*A/sqrt(6)",
+    "same_source_readout": "lambda_top/sqrt(3)",
+    "target_requires_lambda_top": "1/sqrt(2)",
+    "witnesses": [
+      {
+        "lambda_top": "1",
+        "phase_readout": "P_omega",
+        "target": false,
+        "top_row": "A/sqrt(6)"
+      },
+      {
+        "lambda_top": "sqrt(3)/2",
+        "phase_readout": "P_omega2",
+        "target": false,
+        "top_row": "A/2"
+      },
+      {
+        "lambda_top": "1/sqrt(2)",
+        "phase_readout": "P_omega",
+        "target": true,
+        "top_row": "A/sqrt(12)"
+      }
+    ]
+  },
+  "reachability_to_target": "prunes",
+  "route_pruned": "nonreversible C3 Markov current plus connected/current normalization derives accepted non-mass physical top-line law and the coefficient-bearing top row",
+  "trace_class": "negative_route_pruning"
+}

@@ -1,5 +1,14 @@
 # No-Go Ledger
 
+- New in the forty-fifth block: nonreversible oriented C3 Markov-current
+  dynamics does not derive the coefficient-bearing top row. For
+  `Q_{p,q}=p(C-I)+q(C^2-I)`, the stationary/Perron line remains `P_0`, the
+  nontrivial real decay rates are degenerate, and circulation only splits
+  conjugate phase signs until an accepted physical phase/readout law is added.
+  The current ratio `(p-q)/(p+q)` is free, and even a supplied nontrivial
+  phase readout still needs `lambda_top=1/sqrt(2)`, accepted
+  backend/projectors/source-generator matrix elements, or strict top/W pole
+  rows.
 - New in the forty-fourth block: existing strict W/Z denominator support and
   symbolic top-response row packets cannot be promoted into accepted strict
   top/W pole rows. The W/Z packet closes denominator support only; the

@@ -14,6 +14,8 @@ The sixth route tested positive real C3 transfer/Perron selection as a
 nontrivial top-line law.
 The forty-third route tested the reversible C3 Markov/Laplacian stochastic
 dynamics refinement of the C3 source-law route.
+The forty-fifth route tested the nonreversible oriented C3 Markov-current
+refinement of the same C3 source-law route.
 The seventh route characterized the residual C3 phase-ordering cone.
 The eighth route pruned reflection-even base dynamics as a derivation of that
 cone.
@@ -110,6 +112,7 @@ normalization conventions can supply the missing unit multiplier `eta=1`.
 | Non-mass-ordering C3 top-line law | no-go shortcut test | 3 | Pruned on current real/reflection-even C3 support |
 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | no-go shortcut test | 3 | Pruned as source-derivative shortcut; base dynamics/order still open |
 | Reversible C3 Markov/Laplacian source law | no-go shortcut test | 3 | Pruned: stationary/Perron line is `P_0`, nontrivial block is degenerate, and connected normalization only recovers `B_x` |
+| Nonreversible oriented C3 Markov-current source law | no-go shortcut test | 3 | Pruned: circulation splits conjugate phase signs only; `P_0` remains stationary, real decay is degenerate, current readout and `lambda_top` remain open |
 | Strict sparse top/W pole-response evidence | availability audit | 3 | Audited absent on current branch; harness/candidate only |
 | Strict support-packet audit-status firewall | no-go shortcut test | 3 | Pruned: W/Z denominator and symbolic top packets are support only; `y_33` remains free and packet claims are unaudited |
 | Microscopic backend/projector/matrix-element shortcut | no-go shortcut test | 3 | Pruned: current support does not derive accepted backend, top projector, or source-generator matrix element |

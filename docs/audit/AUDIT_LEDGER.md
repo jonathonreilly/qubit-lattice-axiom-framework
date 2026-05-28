@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 565 |
+| **retained_bounded** | 566 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1183 |
+| unaudited | 1182 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,22 +57,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 865 |
+| `audited_clean` | 866 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1413 |
+| `unaudited` | 1412 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1107 |
+| `bounded_theorem` | 1108 |
 | `decoration` | 51 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 701 |
+| `positive_theorem` | 700 |
 
 | criticality | count |
 |---|---:|
@@ -957,6 +957,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed1_control_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `wave_direct_dm_h025_seed1_crossfamily_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wave_equation_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_equation_self_field_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -14587,6 +14588,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The direct H = 0.25 historical low-band replay is a retained continuation of the seed-1 branch at the level of sign plus late-gain difference.  _(class `C`)_
 - **chain closes:** False — The one-hop retained-bounded control and synthesis notes support the Fam1 seed-1 H=0.25 value, but this row's primary SHA-pinned runner cache is the default seed-0 point, not the source note's seed-1 point. The coarse H=0.5/H=0.35 continuity comparison is also not provided as a retained one-hop authority in this packet.
 - **rationale:** Issue: the source note's load-bearing row is Fam1 seed 1 at H=0.25 with dM(early)=+0.004411, dM(late)=+0.006255, delta_hist=-0.001843, and R_hist=-29.47%, but the current cached output for its primary runner path reports the default seed 0 row with dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, and R_hist=-20.12%. Why this blocks: the audit packet does not SHA-pin the row's own seed-1 replay artifact, and the note also uses H=0.5/H=0.35 branch-continuity numbers that are not retained one-hop authorities here. Repair target: either retarget this row to the retained seed-1 control/synthesis notes or provide an auditable seed-1-specific command/cache and retained provenance for the coarse seed-1 reference values. Claim boundary until fixed: the retained-bounded seed-1 control ladder and Fam1 fine-pair synthesis remain available through their own audited rows, but this older one-strength branch-retention note should not promote independently.
+- **auditor confidence:** high
+
+### `wave_direct_dm_h025_seed1_crossfamily_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_SEED1_CROSSFAMILY_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_SEED1_CROSSFAMILY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite configured Fam1/Fam2 seed1 H=0.25 direct-dM control-ladder cross-family comparison over S=0,0.002,0.004,0.008: exact-null/sign/spread consistency and Fam2 deeper |R_hist| than Fam1 only. No portability, family-wide, stable-amplitude, Fam3, broader-seed, or physical-law claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `fresh-agent-Mill-019e6ce8-5c35-7d20-8997-77068054ada2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Seed 1 occupies the higher-magnitude side of the fine-H direct-dM story in both retained families, with Fam1 controlled near R_hist ~ -30% and Fam2 controlled near R_hist ~ -35%; this is same-seed cross-family compression, not a portability law.  _(class `B`)_
+- **chain closes:** True — The retained one-hop Fam1 and Fam2 seed1 control notes supply the exact nulls, negative sign patterns, weak-field spread values, and H=0.25 S=0.004 rows. Independent arithmetic confirms both deltas are negative, Fam1 R_hist is about -29.48%, Fam2 R_hist is about -35.04%, and Fam2 is the deeper same-seed branch; no primary runner is needed for this cross-note synthesis.
+- **rationale:** A restricted fresh-context auditor confirmed that the seeded positive_theorem label is too broad, but the bounded synthesis closes from retained one-hop inputs. The arithmetic matches the source table within rounding: Fam1 delta is approximately -0.001844 with R_hist -29.48%, while Fam2 delta is -0.002037 with R_hist -35.04%, so both signs remain negative and Fam2 is deeper. The note's explicit non-claims prevent promotion to a portability, stable-amplitude, family-wide, or physical-law statement.
 - **auditor confidence:** high
 
 ### `wave_direct_dm_h025_two_point_synthesis_note`

@@ -3,7 +3,7 @@
     "critical": 230,
     "high": 317,
     "leaf": 325,
-    "medium": 311
+    "medium": 310
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -16556,33 +16556,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wave_direct_dm_h025_seed1_crossfamily_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_fam1_seed1_control_note",
-        "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_two_point_synthesis_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.307,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_SEED1_CROSSFAMILY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 6
     },
     {
       "audit_independence_required": "any_non_self",
@@ -35841,6 +35814,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 50,
-  "total_pending": 1183
+  "ready_count": 49,
+  "total_pending": 1182
 }

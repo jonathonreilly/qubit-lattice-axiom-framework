@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 556 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1201 |
+| unaudited | 1200 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 856 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1431 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
@@ -1003,6 +1003,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
@@ -5297,6 +5298,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In temporal gauge each mixed plaquette holonomy reduces to U_(tau+1)(x,mu) U_tau(x,mu)^-1, giving K as a product over spatial links, and Schur orthogonality gives integral_G chi_mu(U' U^-1) lambda_ij(U) dU = delta_{mu,lambda} d_lambda^-1 lambda_ij(U').  _(class `A`)_
 - **chain closes:** True — The source note closes from compact-group Haar measure, the stated temporal-gauge Wilson mixed plaquette structure, Fubini factorization, and standard Schur orthogonality. No one-hop dependency, SU(3) specialization, beta=6 value, source-sector bridge, full transfer operator, reflection positivity, or physical identification is needed.
 - **rationale:** The theorem is a genuine algebraic closure: temporal gauge makes each mixed plaquette depend only on the same spatial link on adjacent slices, so the mixed kernel factorizes, and central convolution diagonalizes on Peter-Weyl matrix coefficients with eigenvalue c_lambda/d_lambda. The marked/non-marked compression then follows by tensoring these one-link identities and dividing by the trivial-channel scalar. The runner is not a proof of the compact-group theorem because it checks finite Z_N cases, but it is consistent structural verification plus a useful negative control; the proof itself supplies the compact-group step through Schur orthogonality.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional beta=6 plaquette PF seam reduction: if the full Wilson/Haar one-slab kernel theorem, full-slice rim-lift theorem, exact kernel/rim compression theorem, and exact compressed rim-evaluation theorem are supplied as retained premises, then the remaining seam reduces algebraically to matrix-element evaluation of the class-sector integral objects. This audit does not ratify those four authorities, explicit K_6^env or B_6(W) matrix elements, rho_(p,q)(6), plaquette PF data, analytic P(6), or an unconditional beta=6 evaluator closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-beta6-evaluation-seam-reduction-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source's reduction is algebraic once the four full-scope Wilson/Haar kernel, rim-lift, compression, and compressed rim-evaluation premises are granted. The cached runner supports only the finite structural witness surface: rank(F)=3, restriction error 4.777e-15, two admissible beta-side witnesses with rho_gap=0.060847050322, and different normalized triples with max gap 0.121575423874. It does not derive the four full-scope premise authorities.  _(class `A`)_
+- **chain closes:** False — The retained one-hop deps cover only the finite transfer witness packet and the finite structural-surface underdetermination no-go. The four authorities that make this an actual beta=6 matrix-element reduction remain required-but-unsupplied retained inputs, so the row cannot be retained as closed theorem authority.
+- **rationale:** The narrowed source is honest, but the audit verdict remains conditional. The bounded-wall discipline gate passes only for the conditional reduction: N1/N2 identify the four missing full-scope authorities, N3 names them as the hidden wall set rather than treating them as retained facts, and N7 concedes that retained-bounded transfer support plus the runner only support the conditional version. The runner is relevant evidence that the current finite structural surface still leaves a beta-side vector open; it is not a proof of the full Wilson/Haar one-slab kernel, full rim lift, untruncated compression, or compressed rim-evaluation identities. Therefore the correct handoff is missing_bridge_theorem, not audited_clean.
+- **open / conditional deps cited:**
+  - `full Wilson/Haar one-slab kernel theorem is not retained one-hop authority`
+  - `full-slice rim-lift theorem is not retained one-hop authority`
+  - `exact kernel/rim compression theorem is not retained one-hop authority`
+  - `exact compressed rim-evaluation theorem is not retained one-hop authority`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_bridge_support_note`

@@ -266,6 +266,9 @@ no_go_routes:
   - nonreversible oriented C3 Markov-current dynamics plus connected/current normalization derives an accepted non-mass physical top-line law or lambda_top=1/sqrt(2)
   - continuous C3 unitary character-flow dynamics plus branch/unit normalization derives an accepted non-mass physical top-line law or source matrix element
 commands_run:
+  - "git commit -m 'Prune C3 homogeneous radial normalization shortcut' -> 4f030e53910344846f8d4b099f545350ed834b03"
+  - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
+  - "gh pr edit 1980 --body-file - -> PR body updated"
   - "python3 scripts/frontier_yt_c3_homogeneous_radial_normalization_no_go.py -> PASS=77 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=602 FAIL=0"
   - "python3 scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py -> PASS=94 FAIL=0"
@@ -804,9 +807,9 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 34 homogeneous radial-normalization no-go block is verified locally; science commit, push, and PR #1980 body update are pending."
-latest_science_commit: pending_cycle34
-latest_delivery_commit: pending_cycle34
-latest_delivery_hash_record_commit: pending_cycle34
+pr_status: "Cycle 34 science commit 4f030e53910344846f8d4b099f545350ed834b03 is pushed; PR #1980 body is updated with the homogeneous radial-normalization no-go result and verification."
+latest_science_commit: 4f030e53910344846f8d4b099f545350ed834b03
+latest_delivery_commit: pending_cycle34_delivery_state_commit
+latest_delivery_hash_record_commit: pending_cycle34_delivery_state_commit
 next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

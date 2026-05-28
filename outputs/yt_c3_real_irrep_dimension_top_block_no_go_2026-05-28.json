@@ -1,0 +1,80 @@
+{
+  "actual_current_surface_status": "no-go / open real-irrep physical top-block law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_real_irrep_dimension_top_block_no_go_note_2026-05-28",
+  "conditional_surface_status": "exact top-row support if an accepted physical top-block law selects P_nt and accepted radial generator factorization fixes lambda_top = 1/sqrt(2)",
+  "dependency_statuses": {
+    "c3_nontrivial_block": {
+      "proposal_allowed": false,
+      "status": "exact-support / open nontrivial-block membership law",
+      "trace_class": "upstream_support"
+    },
+    "c3_radial_factor_nogo": {
+      "proposal_allowed": false,
+      "status": "no-go / open same-surface radial generator factorization",
+      "trace_class": "negative_route_pruning"
+    },
+    "c3_representation_phase_nogo": {
+      "proposal_allowed": false,
+      "status": "no-go / open same-surface phase-angle law",
+      "trace_class": "negative_route_pruning"
+    },
+    "c3_zero_singlet_nogo": {
+      "proposal_allowed": false,
+      "status": "no-go / open zero-singlet top-block membership law",
+      "trace_class": "negative_route_pruning"
+    },
+    "first_principles": {
+      "proposal_allowed": false,
+      "status": "exact-support / formal-transfer no-go",
+      "trace_class": "negative_route_pruning"
+    },
+    "full_stack": {
+      "proposal_allowed": false,
+      "status": "exact-support / open strict-response gate",
+      "trace_class": null
+    },
+    "strict_availability": {
+      "proposal_allowed": false,
+      "status": "no-go",
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "generated_by": "scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py",
+  "matrix_element_witness": {
+    "P0_response": "2/sqrt(6)",
+    "P0_row_after_target_lambda": "A/sqrt(3)",
+    "P0_row_with_lambda_top": "2*lambda_top*A/sqrt(6)",
+    "Pnt_block_density_response": "-1/sqrt(6)",
+    "Pnt_row_magnitude_with_lambda_top": "lambda_top*A/sqrt(6)",
+    "Pnt_target_row_after_target_lambda": "A/sqrt(12)",
+    "target_lambda_top": "1/sqrt(2)"
+  },
+  "next_action": "derive an accepted physical top-block/readout law plus lambda_top = 1/sqrt(2), or produce accepted strict same-source top/W pole rows",
+  "no_go_certificate": {
+    "dimension_two_selection_derived_from_current_surface": false,
+    "faithful_nontrivial_irrep_premise_accepted": false,
+    "faithful_nontrivial_irrep_selects_Pnt_conditionally": true,
+    "lambda_top_free_on_current_surface": true,
+    "proposal_allowed": false,
+    "real_irrep_excludes_P0": false,
+    "strict_top_w_response_certificate_present": false,
+    "zero_singlet_membership_derived": false
+  },
+  "pass_count": 76,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Real C3 representation theory exposes P_nt as the faithful two-dimensional real irrep, but selecting it as the physical top block requires an extra physical nontriviality/faithfulness law. Even with P_nt supplied, lambda_top remains free.",
+  "reachability_to_target": "prunes",
+  "representation_decomposition": {
+    "P0_real_irrep": true,
+    "Pnt_faithful_real_irrep": true,
+    "real_irrep_fact_excludes_P0": false,
+    "real_regular_decomposition": "R[C3] = P_0 + P_nt",
+    "trace_P0": "1",
+    "trace_Pnt": "2"
+  },
+  "route_pruned": "finite real C3 irrep/dimension/faithfulness facts derive the accepted zero-singlet physical top block and coefficient row",
+  "trace_class": "negative_route_pruning"
+}

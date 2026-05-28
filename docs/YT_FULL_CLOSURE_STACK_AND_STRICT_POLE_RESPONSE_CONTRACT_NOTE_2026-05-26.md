@@ -78,6 +78,11 @@ closed exactly:
   isometric, Fisher-unit score normalization is only a source-coordinate
   normalization, and B_x has no internal Fisher direction inside P_nt; none of
   these derive lambda_top=1/sqrt(2)
+  real-irrep dimension top-block no-go: finite real C3 representation theory
+  exposes P_0 as the trivial real irrep and P_nt as the faithful
+  two-dimensional real irrep, but selecting the faithful/nontrivial summand as
+  the physical top block is an extra top-readout law; even after that premise,
+  lambda_top remains free
   zero-singlet top-block membership no-go: current real/reflection-even C3
   block algebra does not exclude P_0; P_nt is selected only after importing
   a sign/order law or minimum-response convention
@@ -212,6 +217,8 @@ still open:
   accepted Fisher-quotient/source-geometry-to-radial-generator law if the C3
   route tries to derive lambda_top=1/sqrt(2) from RN/Fisher coarse-graining or
   Fisher-unit score normalization
+  accepted real-irrep physical top-block law if the C3 route tries to select
+  P_nt from faithful/nontrivial real C3 representation facts
   accepted independent physical readout/sign/radial laws, since target-size
   response magnitude itself cannot certify zero singlet weight or
   lambda_top=1/sqrt(2)
@@ -1664,6 +1671,10 @@ proposal_allowed_reason: |
   binary P_0/P_nt quotient have the same metric, Fisher-unit C3 score
   normalization is a coordinate unit rather than a top mass-generator law, and
   the internal P_nt Fisher direction for B_x is degenerate.
+  The real-irrep dimension top-block no-go prunes the representation-dimension
+  shortcut: finite real C3 representation theory exposes P_nt as the faithful
+  two-dimensional summand, but selecting that summand as the physical top block
+  is an extra top-readout law; even if supplied, lambda_top remains free.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface

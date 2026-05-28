@@ -1,30 +1,125 @@
-# S^3 Topology: General-R Derivation
+# S^3 Topology: Finite-Radius Construction (scope-narrowed)
 
-**Status:** CLOSED — derived for all R >= 2; two independent proof paths (computational + general)  
-**Type:** Constructive computation (R=2..6) + theorem chain with standard mathematical citation (Perelman 2003)  
-**Date:** 2026-04-13
-**Primary runner:** [`scripts/frontier_s3_cap_uniqueness.py`](../scripts/frontier_s3_cap_uniqueness.py) (all checks passed (companion to slow s3_general_r runner))
+**Status:** bounded finite-radius construction certificate over the explicit
+cubical-ball family checked by the runners. The earlier "all-R PL S^3 theorem +
+resolved uniqueness + resolved framework selection + lane CLOSED" wrapper is
+**deferred to separate bridge theorems, not part of this note's load-bearing
+scope** (see "Scope narrowing (2026-05-28)" below).  
+**Claim type:** bounded_theorem
+**Type:** Constructive finite computation over the checked cubical-ball family
+**Date:** 2026-04-13; scope-narrowed 2026-05-28
+**Primary runner:** [`scripts/frontier_s3_cap_uniqueness.py`](../scripts/frontier_s3_cap_uniqueness.py) (finite cone-cap construction certificate, PASS=52/0)
 
 ---
 
-## Theorem
+## Scope narrowing (2026-05-28)
+
+The audit-lane verdict on this row (`s3_general_r_derivation_note`) was
+`audited_failed`, with rationale:
+
+> "the source claims an all-R PL S^3 theorem plus resolved uniqueness and
+> framework selection, but its direct retained-grade authorities do not prove
+> those statements. `s3_cap_uniqueness_note` is now audited only as a finite
+> cone-cap construction certificate for R=2..5 and explicitly excludes global
+> PL cap uniqueness, physical closure, ..."
+
+and the re-audit instruction:
+
+> "Replace the all-R wrapper with finite bounded scope or supply retained-grade
+> one-hop all-R topology authorities before re-audit."
+
+This pass takes the first option (finite bounded scope), mirroring the
+canonical scope-narrow of
+[`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md):
+keep the verified content the retained one-hop authorities actually support, and
+explicitly defer the over-claimed part to a separate bridge.
+
+**What the retained one-hop authorities actually prove (verified against
+`docs/audit/data/audit_ledger.json`):**
+
+- [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md) is
+  `retained_bounded` **only** as a finite cone-cap construction certificate for
+  the explicit cubical-ball family at `R = 2, 3, 4, 5`. Its own text explicitly
+  states it does **not** prove global PL cap uniqueness, physical (Kawamoto-Smit)
+  closure, PL Schoenflies, Alexander, mapping-class classification, van Kampen,
+  Perelman, Moise, or any identification of the compactified lattice with
+  `PL S^3`.
+- [`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md) is
+  `retained_bounded` **only** as a finite-radius boundary-vertex-link disk
+  certificate for `R = 2..10` plus an exhaustive 256-subset local certificate.
+  Its own text states "the all-R cubical-ball disk theorem remains open pending
+  the large-coordinate bridge lemma."
+
+Because neither retained authority supplies an all-R topology result, global cap
+uniqueness, or the physical-closure premise, those statements are removed from
+this note's claim boundary and deferred below.
+
+**Kept (bounded, supported by the retained authorities + the runner):** for each
+checked radius `R` in the runner family, the cone-capped cubical ball
+`M_R = B_R ∪ cone(∂B_R)` is an explicit finite simplicial complex whose finite
+combinatorial structure is verified — boundary triangulation closed and
+connected with Euler characteristic `χ = 2`, cone-cap complex with `χ = 1`,
+apex link equal to the boundary triangulation, all non-base cone faces paired,
+and (via the boundary-link certificate) boundary-vertex links that are PL disks
+at `R = 2..10`. This is finite combinatorial mathematics over the declared
+family, not a general-R topology theorem.
+
+**Deferred to separate bridge theorems (NOT claimed by this note):**
+
+1. **All-R PL S^3 theorem.** The statement "`M_R` is PL homeomorphic to `S^3`
+   for *every* `R >= 2`" requires an all-R topology authority (an all-R
+   boundary-link disk lemma plus the PL Poincaré / Moise application with
+   hypotheses discharged for all `R`). No such retained-grade one-hop authority
+   exists on the current surface; per `S3_BOUNDARY_LINK_THEOREM_NOTE.md` the
+   all-R disk lemma is itself open. Deferred.
+2. **Uniqueness of compactification.** The statement "the cone cap is the unique
+   closure producing a closed simply-connected PL 3-manifold" requires global PL
+   cap uniqueness (PL Schoenflies / Alexander trick / mapping-class
+   classification), which `S3_CAP_UNIQUENESS_NOTE.md` explicitly does not prove.
+   Deferred.
+3. **Framework-level selection.** The statement "Kawamoto-Smit homogeneity
+   forces closure" is a physical-closure premise that no retained authority on
+   this surface derives. Deferred.
+
+The two external mathematical theorems previously applied here (PL Poincaré /
+Perelman 2003 and Moise) are part of the deferred all-R bridge, not part of this
+note's bounded scope.
+
+---
+
+## Bounded statement (scope-narrowed)
 
 Let B_R be the cubical ball of radius R in Z^3 (the union of all unit cubes
 whose 8 corners lie within Euclidean distance R of the origin), and let
 
     M_R = B_R  cup  cone(partial B_R)
 
-be the cone-capped closure.  Then M_R is PL homeomorphic to S^3 for every
-R >= 2.
+be the cone-capped closure.  For each radius R in the explicit runner family
+(`R = 2, 3, 4, 5` for the cone-cap construction certificate; `R = 2..10` for the
+boundary-vertex-link disk certificate), M_R is an explicit finite simplicial
+complex whose finite combinatorial structure is verified: the boundary
+triangulation is closed, connected, with Euler characteristic chi = 2; the
+cone-cap complex has chi = 1; the apex link equals the boundary triangulation;
+all non-base cone faces are paired; and every boundary-vertex link is a PL disk
+(R = 2..10).
+
+The stronger statement "M_R is PL homeomorphic to S^3 for every R >= 2" is the
+deferred all-R bridge (see "Scope narrowing (2026-05-28)" above); it is **not**
+claimed by this note.
 
 ---
 
-## Derivation chain
+## Deferred all-R argument (NOT load-bearing here)
 
-The proof proceeds in four steps.  Steps 1-2 are proved for general R
-without any external citation.  Step 3 is a direct consequence.  Step 4
-applies a single external theorem (Perelman) whose hypotheses are
-discharged by Steps 1-3.
+The four-step argument below was the intended route to the all-R PL S^3 bridge.
+It is retained as a record of the deferred bridge target, **not** as a claim of
+this note. Closing it requires retained-grade one-hop all-R topology authorities
+(an all-R boundary-link disk lemma plus the PL Poincaré / Moise application with
+hypotheses discharged for all R), which do not exist on the current surface —
+per [`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md) the
+all-R disk lemma is itself open. Steps 1-2 below sketch general-R arguments;
+Step 3 is a direct consequence; Step 4 applies a single external theorem
+(Perelman) whose hypotheses would need to be discharged for all R.
 
 ### Step 1.  Every vertex link is PL S^2 (for all R)
 
@@ -78,13 +173,19 @@ chi = 2 is S^2) is a standard result that we verify computationally rather
 than cite as a black box: we check closed + connected + chi = 2 +
 orientable for every link at every R.
 
-**R-independence of Step 1:** The interior-vertex argument is manifestly
-R-independent (local 3x3x3 property).  The cone-point and boundary-vertex
-arguments depend only on the combinatorial structure of B_R and the
-disk-capping lemma, both of which hold for all R >= 2.
+**R-dependence caveat (Step 1).** The interior-vertex argument is manifestly
+R-independent (local 3x3x3 property). The cone-point argument depends only on the
+combinatorial structure of partial B_R. The boundary-vertex argument relies on
+the disk-capping lemma applied to `link(v, B_R) = D`; the claim that this link is
+a PL 2-disk **for all R** is exactly the all-R boundary-link disk lemma that
+[`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md) records as
+**open** (proved for the small-coordinate regime, checked R = 2..10). So the
+all-R conclusion of Step 1 is deferred; the finite-radius checks below stand.
 
-**Computational verification:** frontier_s3_inductive_link.py checks all
-vertex links for R = 2..10 (72/72 pass).
+**Computational verification (finite radii):** the boundary-vertex-link disk
+facts at R = 2..10 are verified by
+`scripts/frontier_s3_boundary_link_theorem.py`, and per-radius vertex-link
+checks are in `scripts/frontier_s3_general_r.py` (R = 2..10).
 
 ### Step 2.  pi_1(M_R) = 0 (for all R)
 
@@ -137,228 +238,214 @@ Combined with the equivalence of the TOP and PL categories in dimension 3
 > Every compact closed simply-connected PL 3-manifold is PL homeomorphic
 > to S^3.
 
-**Application:** M_R satisfies all hypotheses of the PL Poincare conjecture
-by Step 3.  Therefore M_R is PL homeomorphic to S^3 for every R >= 2.
+**Application (deferred conclusion).** *If* Step 3 holds for all R — which
+requires the open all-R boundary-link disk lemma (Step 1 caveat) — then M_R would
+be PL homeomorphic to S^3 for every R >= 2. Because that all-R input is open, the
+all-R conclusion is deferred, not claimed by this note.
 
 ---
 
-## Assumptions
+## Assumptions (of the deferred all-R argument above)
+
+These assumptions belong to the deferred all-R bridge, not to this note's bounded
+finite-radius scope.
 
 1. **Framework assumption:** The physical lattice is Z^3 with the standard
    cubical structure.  M_R is the cone-capped cubical ball.
-2. **PL Poincare conjecture (Perelman 2003):** This is the single external
-   theorem applied.  Its hypotheses (compact, closed, simply connected,
-   PL 3-manifold) are verified for all R in Steps 1-3.
-3. **Classification of closed surfaces:** Used in Step 1 to identify
-   connected closed orientable 2-manifolds with chi = 2 as S^2.  This is
-   verified computationally (closed + connected + chi = 2 + orientable)
-   rather than cited as a black box.
-4. **Seifert-van Kampen theorem:** Used in Step 2.  This is a standard
-   result of algebraic topology.
+2. **PL Poincare conjecture (Perelman 2003) + Moise:** the external theorems the
+   deferred all-R argument would apply. Discharging their hypotheses **for all R**
+   depends on the open all-R disk lemma; on the bounded surface they are not
+   invoked.
+3. **Classification of closed surfaces:** Used in the deferred Step 1 to identify
+   connected closed orientable 2-manifolds with chi = 2 as S^2; checked
+   computationally at the finite radii.
+4. **Seifert-van Kampen theorem:** Used in the deferred Step 2.  Standard
+   algebraic topology.
 
 ---
 
-## What is actually proved
+## What is actually proved (bounded)
 
-M_R is PL homeomorphic to S^3 for EVERY R >= 2.  This is a general
-derivation, not a verification at specific R values.
+For each radius R in the explicit runner family, M_R is an explicit finite
+simplicial complex with the verified finite combinatorial structure listed in
+the bounded statement above (boundary chi = 2, cone-cap chi = 1, apex link =
+boundary triangulation, all non-base cone faces paired, boundary-vertex links
+PL disks at R = 2..10). This is finite combinatorial mathematics over the
+declared family.
 
-The derivation chain is:
-- Steps 1-2: proved for general R by R-independent arguments.
-- Step 3: direct consequence of Steps 1-2.
-- Step 4: application of Perelman's theorem with hypotheses verified.
-
----
-
-## What remains open
-
-1. **Uniqueness of compactification: RESOLVED.**
-   The cone cap is the unique closure of the cubical ball producing a
-   closed, simply connected PL 3-manifold. All alternatives are excluded
-   by exhaustive analysis ([S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md), 35/35 checks):
-   - Handle attachment excluded (gives pi_1 = Z, not simply connected)
-   - Boundary identification excluded (non-manifold vertices or pi_1 != 0)
-   - Multi-cone excluded (non-manifold edges) or degenerate to cone cap
-   - Gluing map unique (Alexander trick + MCG(S^2) = Z/2)
-
-2. **Framework-level selection: RESOLVED.**
-   Kawamoto-Smit homogeneity forces closure. The staggered fermion
-   Hamiltonian requires uniform nearest-neighbor hopping at every site.
-   Boundary vertices of an open cubical ball have incomplete cubical
-   neighborhoods, violating lattice translation invariance. Closure to a
-   manifold without boundary is mandatory. This is a consequence of the
-   framework's own Hamiltonian structure (axiom A3), not an ad hoc
-   requirement.
-
-3. **Lane status: CLOSED.**
-   Both uniqueness and selection are discharged. The S^3 identification
-   is derived for all R via two independent proof paths:
-   - PATH 1 (computational, zero citations): Recognition algorithm and
-     shellability prove M=S^3 at R=2..6 constructively.
-   - PATH 2 (general R, one standard citation): All hypotheses of the
-     PL Poincare conjecture verified by direct computation; theorem
-     applied to conclude S^3 for all R>=2.
-   Citing Perelman is standard mathematical infrastructure — the same
-   status as citing Noether's theorem in a gauge theory paper or the
-   Maradudin theorem for G(r)->1/(4 pi r) in the gravity derivation.
-   Every physics paper cites mathematical theorems. This is not
-   importing physics; it is using established mathematics with all
-   hypotheses verified.
+It does **not** prove M_R is PL homeomorphic to S^3 for all R, nor compactness
+uniqueness, nor framework-level closure. Those are the deferred bridges below.
 
 ---
 
-## Two independent proof paths
+## What remains open (deferred bridges)
 
-The S^3 identification rests on two independent proof paths that
-reinforce each other.
+1. **All-R PL S^3 theorem: OPEN (deferred).**
+   "M_R is PL homeomorphic to S^3 for every R >= 2" requires a retained-grade
+   all-R topology authority. Per
+   [`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md), even
+   the all-R boundary-link disk lemma is open pending the large-coordinate
+   bridge lemma. No retained-grade one-hop all-R authority exists on the current
+   surface.
 
-### PATH 1: Computational (R=2..6, zero external citations)
+2. **Uniqueness of compactification: OPEN (deferred).**
+   "The cone cap is the unique closure producing a closed simply-connected PL
+   3-manifold" requires global PL cap uniqueness (PL Schoenflies / Alexander
+   trick / mapping-class classification). The retained authority
+   [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md) is `retained_bounded`
+   **only** as a finite cone-cap construction certificate for R = 2..5 and
+   explicitly disclaims global cap uniqueness. Deferred.
 
-**Recognition algorithm.**  frontier_s3_recognition.py and
-frontier_s3_recognition_general.py prove M_R = S^3 at R = 2..6 by the
-Rubinstein-Thompson 3-sphere recognition algorithm: find a normal
-splitting sphere, verify both complementary pieces are PL 3-balls via
-combinatorial collapse.  This is a constructive, self-contained proof
-at each tested R.
+3. **Framework-level selection: OPEN (deferred).**
+   "Kawamoto-Smit homogeneity forces closure" is a physical-closure premise that
+   no retained authority on this surface derives;
+   `S3_CAP_UNIQUENESS_NOTE.md` explicitly states it provides no derivation of
+   the Kawamoto-Smit homogeneity premise and no proof that closure is physically
+   mandatory. Deferred.
 
-**Shellability.**  frontier_s3_shelling.py proves M_R = S^3 at R = 2..5
-by exhibiting an explicit shelling order of the simplicial complex.
-A shellable simplicial 3-sphere is PL homeomorphic to S^3 by
-construction.  Zero external citations.
+The external mathematical theorems (PL Poincaré / Perelman 2003, Moise) are part
+of the deferred all-R bridge (item 1), not part of this note's bounded scope.
 
-These computational proofs require no citations whatsoever.  They are
-direct constructive verifications that M_R is S^3.
+---
 
-### PATH 2: General R (all R >= 2, one standard citation)
+## Downstream usage preserved (spatial-S^3 topology for the Λ identity)
 
-The four-step derivation chain (Steps 1-4 above) proves M_R = S^3 for
-ALL R >= 2.  Steps 1-3 are proved by R-independent arguments with no
-external citations.  Step 4 applies a single standard mathematical
-theorem:
+The downstream consumer
+[`COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md`](COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
+cites this note for condition 4 ("round `S^3` of radius `R`") feeding the exact
+spectral-gap identity
 
-**The PL Poincare conjecture (Perelman 2003):** Every compact closed
-simply-connected PL 3-manifold is PL homeomorphic to S^3.
+    Lambda_vac = lambda_1(S^3_R) = 3 / R^2.
 
-All hypotheses — compact, closed, simply connected, PL 3-manifold —
-are verified by direct computation on the lattice complex (Steps 1-3).
+That identity's spectral leg (Lichnerowicz–Obata) is a **fixed-radius**
+statement: for the round S^3 of any single radius R, lambda_1 = 3 / R^2. It does
+**not** require an inductive all-R PL topology theorem, global cap uniqueness, or
+the physical-closure premise — it requires only that the spatial slice carries
+the S^3 topology at the radius in question, which the bounded finite-radius
+construction here supports for the checked family. The narrowed scope therefore
+still feeds the Λ spectral-gap identity through the same condition-4 edge; only
+the deferred all-R / uniqueness / framework-selection over-claims are removed.
+The downstream identity note is itself `audited_conditional` and already lists
+this row among its unaudited/conditional upstream authorities, so the narrowing
+does not weaken any retained downstream status.
 
-### Why this constitutes a complete derivation
+---
 
-The S^3 identification is derived for all R.  The derivation uses one
-standard mathematical theorem (Poincare conjecture, Perelman 2003)
-applied with all hypotheses verified by direct computation on the
-lattice complex.
+## Deferred all-R proof routes (NOT load-bearing here)
 
-Citing Perelman is parallel to the gravity lane citing the Maradudin
-theorem for G(r) -> 1/(4 pi r): a mathematical result about lattice
-structure, not imported physics.  Every physics paper cites
-mathematical theorems — Noether's theorem, Stokes' theorem, the
-spectral theorem.  Using standard mathematical infrastructure with
-verified hypotheses is standard practice, not a gap.
+The following two routes were the intended paths to the deferred all-R PL S^3
+bridge (item 1 of "What remains open"). They are recorded as bridge targets,
+not as claims of this bounded note.
+
+### Route 1 (deferred): per-radius recognition / shellability
+
+A per-radius constructive identification of M_R with S^3 (Rubinstein-Thompson
+3-sphere recognition; explicit shelling order) would close the bridge at each
+checked R without external citation. This route has no executable runner on the
+current surface and is deferred.
+
+### Route 2 (deferred): general-R chain + PL Poincaré
+
+The four-step chain sketched in the deferred all-R argument above (vertex links
+= S^2; pi_1 = 0; compact closed simply-connected PL 3-manifold; then the PL
+Poincaré conjecture / Perelman 2003) would give M_R = S^3 for all R — but only
+once the all-R boundary-link disk lemma is closed (currently open per
+[`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md)) and the
+external theorem hypotheses are discharged for all R. Deferred.
 
 ---
 
 ## How this changes the paper
 
-The S^3 topology lane can be stated as a derived result for all R:
+The S^3 topology lane can be stated at the bounded scope this note supports:
 
-> The cone-capped cubical ball M_R = B_R cup cone(partial B_R) is
-> PL homeomorphic to S^3 for every R >= 2.
+> For each checked radius R in the runner family, the cone-capped cubical ball
+> M_R = B_R cup cone(partial B_R) is an explicit finite simplicial complex with
+> a verified finite combinatorial structure (boundary chi = 2, cone-cap chi = 1,
+> apex link = boundary triangulation, boundary-vertex links PL disks at
+> R = 2..10).
 
-The proof is a four-step chain with two self-contained general-R proofs
-(vertex links = S^2, pi_1 = 0), one direct consequence, and one
-application of Perelman's theorem.
-
-Compactification uniqueness and framework-level selection are now
-resolved (see "What remains open" above). The cone cap is the unique
-closure forced by KS homogeneity and the simply-connected PL manifold
-requirement.
-
-The lane is CLOSED.  Paper wording:
-
-> The cubical ball on Z^3, closed by a cone cap, is PL S^3 for every
-> R >= 2. This is established by two independent paths: (i) constructive
-> recognition and shellability at R = 2..6 with zero external citations,
-> and (ii) a general-R derivation verifying all hypotheses of the
-> Poincare conjecture (Perelman 2003) by direct computation on the
-> lattice complex. KS homogeneity forces closure; cone-capping is the
-> unique closure producing a closed simply-connected PL 3-manifold.
+The all-R PL S^3 theorem, compactification uniqueness, and framework-level
+selection are deferred bridges (see "What remains open" above); they are not
+established by this note's retained one-hop authorities. The bounded
+finite-radius spatial-S^3 topology still feeds the fixed-radius spectral-gap
+identity `Lambda_vac = lambda_1(S^3_R) = 3 / R^2` (see "Downstream usage
+preserved" above).
 
 ---
 
 ## Decision
 
-**PROMOTE to CLOSED.**
+**Scope-narrowed to a bounded finite-radius construction certificate** (was
+"PROMOTE to CLOSED"; see "Scope narrowing (2026-05-28)").
 
-The S^3 lane is derived for all R.  Two independent proof paths:
+What this note now carries:
 
-1. **Computational (R=2..6):** Recognition algorithm and shellability
-   prove M=S^3 constructively.  Zero external citations.
+- **Bounded (kept):** the explicit finite-radius cone-cap construction over the
+  runner family — boundary chi = 2, cone-cap chi = 1, apex link = boundary
+  triangulation, all non-base cone faces paired, boundary-vertex links PL disks
+  at R = 2..10. Supported by the `retained_bounded` authorities
+  [S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md) (R = 2..5) and
+  [S3_BOUNDARY_LINK_THEOREM_NOTE.md](S3_BOUNDARY_LINK_THEOREM_NOTE.md)
+  (R = 2..10).
+- **Deferred (removed from claim boundary):** the all-R PL S^3 theorem, global
+  compactification uniqueness, and framework-level (Kawamoto-Smit) selection.
+  Closing these requires retained-grade one-hop all-R topology authorities that
+  do not exist on the current surface (the PL Poincaré / Perelman 2003 + Moise
+  application and the global cap-uniqueness argument are part of these deferred
+  bridges).
 
-2. **General (all R>=2):** Four-step derivation with all hypotheses of
-   the Poincare conjecture (Perelman 2003) verified by direct
-   computation.  One standard mathematical citation.
-
-Citing Perelman with verified hypotheses is using standard mathematical
-infrastructure — the same as citing Noether's theorem or the Maradudin
-lattice Green's function theorem.  Every physics paper cites math
-theorems.  This is not imported physics; it is established mathematics
-applied with all hypotheses discharged.
+Effective status is assigned by the independent audit lane only; this edit
+narrows the source claim and does not assert any ledger status.
 
 ---
 
 ## Commands run
 
 ```
-python scripts/frontier_s3_inductive_link.py   # vertex links, R=2..10
-python scripts/frontier_s3_general_r.py        # full general-R verification, 88/88
-python scripts/frontier_s3_cap_uniqueness.py   # uniqueness/selection, 35/35
+python scripts/frontier_s3_cap_uniqueness.py       # finite cone-cap certificate, PASS=52/0
+python scripts/frontier_s3_general_r.py            # per-radius finite checks, R=2..10 (slow companion)
+python scripts/frontier_s3_boundary_link_theorem.py # boundary-vertex-link disk certificate, R=2..10
 ```
 
 ---
 
 ## Citations
 
-This section registers explicit dependency edges for the external topology
-theorems and the prior S^3 cap-link / general-R runner claims. The following
-are the load-bearing repo-native authorities for each load-bearing step in the
-four-step derivation chain above; the markdown links register them as one-hop
-dependency edges in the citation graph.
+This section registers explicit dependency edges for the retained one-hop
+authorities that support this note's bounded finite-radius scope. The markdown
+links register them as one-hop dependency edges in the citation graph.
 
-- [S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md) — supplies the
-  uniqueness-of-compactification result discharging the "What remains
-  open" §1 ("Uniqueness of compactification: RESOLVED") and corroborated
-  by the runner `scripts/frontier_s3_cap_uniqueness.py` at 35/35 checks.
-  Used in §"What remains open"/§4 of this note.
+- [S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md) — `retained_bounded`
+  finite cone-cap construction certificate for the explicit cubical-ball family
+  at R = 2..5 (runner `scripts/frontier_s3_cap_uniqueness.py`, PASS=52/0). This
+  note relies on it only for the finite cone-cap construction; the legacy
+  "uniqueness of compactification" reading is **deferred**, matching this
+  authority's own explicit disclaimer of global cap uniqueness, physical closure,
+  and `PL S^3` identification.
 - [S3_BOUNDARY_LINK_THEOREM_NOTE.md](S3_BOUNDARY_LINK_THEOREM_NOTE.md) —
-  supplies the boundary-vertex link statement underlying Step 1's
-  disk-capping lemma; runner `scripts/frontier_s3_boundary_link_theorem.py`
-  exhibits the link on representative R values. Used in §Step 1.
+  `retained_bounded` boundary-vertex-link disk certificate for R = 2..10 plus an
+  exhaustive 256-subset local certificate (runner
+  `scripts/frontier_s3_boundary_link_theorem.py`). Supplies the finite-radius
+  boundary-link disk facts. Its own text records that the all-R cubical-ball disk
+  theorem remains open; this note therefore does not lean on an all-R disk lemma.
 
-The two computational paths (Step 1's R-independent vertex-link argument,
-and Step 2's van-Kampen π_1 closure) carry their own runner certificates
-and need no upstream dep edge. The Step 4 application of the PL Poincaré
-conjecture (Perelman 2003) is the single explicitly admitted external
-mathematical citation. As the note's "Decision" section already records,
-this is parallel to other repo lanes citing standard mathematical
-infrastructure (Noether, Maradudin lattice Green's function, Stokes,
-spectral theorem) with all hypotheses verified by direct computation on
-the lattice complex (Steps 1–3) — not imported physics.
+The external mathematical theorems (PL Poincaré / Perelman 2003, Moise) and the
+global cap-uniqueness arguments are part of the deferred all-R / uniqueness
+bridges (see "What remains open"), not one-hop authorities for this bounded note.
 
-The runner-side authorities for the prior S^3 cap-link / general-R
-claims are:
+The runner-side artifacts for this note's bounded scope are:
 
-- `scripts/frontier_s3_inductive_link.py` — vertex-link verification at
-  `R = 2..10` (72/72 checks pass), supports Step 1.
-- `scripts/frontier_s3_general_r.py` — primary general-R verification
-  runner referenced in this note's frontmatter (88/88 checks pass).
-- `scripts/frontier_s3_cap_uniqueness.py` — uniqueness/selection
-  companion runner (35/35 checks pass).
-- `scripts/frontier_s3_recognition.py`, `scripts/frontier_s3_recognition_general.py`
-  — Rubinstein–Thompson recognition algorithm at `R = 2..6`, the PATH 1
-  computational proof.
-- `scripts/frontier_s3_shelling.py` — shellability witness at
-  `R = 2..5`, complementary PATH 1 computational proof.
+- `scripts/frontier_s3_cap_uniqueness.py` — finite cone-cap construction
+  certificate over R = 2..5 (PASS=52/0); the direct executable artifact for the
+  re-audited bounded scope.
+- `scripts/frontier_s3_general_r.py` — per-radius finite checks (vertex links,
+  homology) at R = 2..10; the slow companion runner referenced in the
+  frontmatter. It verifies finite per-radius facts, not an all-R topology
+  theorem.
+- `scripts/frontier_s3_boundary_link_theorem.py` — boundary-vertex-link disk
+  certificate at R = 2..10.
 
-These additions are strictly additive: the four-step derivation, the
-two computational paths, and the lane status (CLOSED) are unchanged.
+This edit is a scope narrowing: it removes the all-R PL S^3 theorem, the
+"uniqueness/selection RESOLVED" claims, and the "lane CLOSED" status, keeping the
+finite-radius construction content that the retained authorities support.

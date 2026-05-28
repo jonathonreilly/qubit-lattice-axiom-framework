@@ -154,6 +154,9 @@ def part0_source_firewall() -> None:
         "does not compute or retain eta/eta_obs diagnostics",
         "does not import dm_leptogenesis_exact_common",
         "No new repo-wide axiom is introduced",
+        # 2026-05-28 audit repair: intrinsic-projector claim restricted to
+        # simple spectra; note must carry the degenerate-spectrum caveat.
+        "simple (non-degenerate) spectra",
         RUNNER_PATH,
     ]
     for phrase in required_note_phrases:
@@ -222,6 +225,68 @@ def part2_rephasing_invariance() -> None:
     )
 
 
+def part2b_degenerate_spectrum_noninvariance() -> None:
+    """Demonstrate that for a DEGENERATE Hermitian pair the projector is
+    NOT intrinsic: a non-diagonal unitary rotation within a degenerate
+    eigenspace yields a different |U_pair|^2.
+
+    This is the 2026-05-28 audit-repair exhibit. It bounds the scope of
+    the 'intrinsic to the pair' reading to SIMPLE (non-degenerate)
+    spectra, where the eigenbasis is unique up to column phases.
+    """
+    print("\n" + "=" * 88)
+    print("PART 2b: DEGENERATE-SPECTRUM NON-INVARIANCE (scope boundary)")
+    print("=" * 88)
+
+    # H_nu degenerate: eigenvalues (2, 2, 5). The 2-fold eigenspace admits
+    # a continuum of orthonormal bases related by U(2) rotations.
+    # Build H_nu = Q diag(2,2,5) Q^dagger for a fixed unitary Q.
+    rng = np.random.default_rng(seed=20260528)
+    a = rng.standard_normal((3, 3)) + 1j * rng.standard_normal((3, 3))
+    q, _ = np.linalg.qr(a)  # random unitary Q
+    d_deg = np.diag([2.0, 2.0, 5.0])
+    h_nu = q @ d_deg @ q.conj().T
+    h_nu = 0.5 * (h_nu + h_nu.conj().T)  # symmetrize against roundoff
+
+    # A non-degenerate H_e to pair with.
+    b = rng.standard_normal((3, 3)) + 1j * rng.standard_normal((3, 3))
+    h_e = b @ b.conj().T + 1e-3 * np.eye(3)
+
+    # Eigenbasis 1: the canonical diagonalizer's choice for h_nu.
+    _, u_nu_1 = canonical_left_diagonalizer(h_nu)
+    _, u_e = canonical_left_diagonalizer(h_e)
+    p1 = np.abs(u_e.conj().T @ u_nu_1) ** 2
+
+    # Eigenbasis 2: rotate the degenerate 2D eigenspace (columns 0,1 of
+    # u_nu_1, which share eigenvalue 2) by a non-diagonal U(2) rotation.
+    theta = 0.7
+    rot2 = np.array([[np.cos(theta), -np.sin(theta)],
+                     [np.sin(theta),  np.cos(theta)]], dtype=complex)
+    u_nu_2 = u_nu_1.copy()
+    u_nu_2[:, [0, 1]] = u_nu_1[:, [0, 1]] @ rot2
+    # u_nu_2 still diagonalizes h_nu (rotation within the degenerate eigenspace).
+    # Validity: u_nu_2 is unitary and still diagonalizes h_nu.
+    still_unitary = float(np.linalg.norm(u_nu_2 @ u_nu_2.conj().T - np.eye(3)))
+    off_diag = u_nu_2.conj().T @ h_nu @ u_nu_2
+    off_diag_mag = float(np.linalg.norm(off_diag - np.diag(np.diag(off_diag))))
+
+    p2 = np.abs(u_e.conj().T @ u_nu_2) ** 2
+    projector_changed = float(np.linalg.norm(p1 - p2))
+
+    check("rotated eigenbasis is still unitary", still_unitary < 1e-10,
+          f"||UU^dag - I|| = {still_unitary:.2e}")
+    check("rotated eigenbasis still diagonalizes the degenerate H_nu",
+          off_diag_mag < 1e-9, f"off-diag = {off_diag_mag:.2e}")
+    check(
+        "DEGENERATE pair: |U_pair|^2 CHANGES under eigenspace rotation "
+        "(projector is NOT intrinsic for degenerate spectra)",
+        projector_changed > 1e-3,
+        f"||P1 - P2|| = {projector_changed:.4f} (both are valid eigenbases of the same pair)",
+    )
+    print(f"  ||P1 - P2|| = {projector_changed:.6f} -- nonzero confirms the")
+    print("  intrinsic-projector claim is restricted to SIMPLE spectra.")
+
+
 def part3_result() -> None:
     print("\n" + "=" * 88)
     print("RESULT")
@@ -242,6 +307,7 @@ def main() -> int:
     part0_source_firewall()
     part1_unitary_and_doubly_stochastic()
     part2_rephasing_invariance()
+    part2b_degenerate_spectrum_noninvariance()
     part3_result()
 
     print("\n" + "=" * 88)

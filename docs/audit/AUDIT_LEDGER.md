@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 579 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1160 |
+| unaudited | 1159 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 880 |
-| `audited_conditional` | 61 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1390 |
+| `unaudited` | 1389 |
 
 | claim_type | count |
 |---|---:|
@@ -1058,6 +1058,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `su2_witten_z2_anomaly_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -13482,6 +13483,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the narrowed scope, the one-hop dependencies are retained-grade or retained_bounded and supply the SU(3) representation-theory and L_s=3 geometry inputs. The primary runner source visibly recomputes the coefficients and singlet basis rather than importing the disclaimed bridge constants or relying on the missing Block 5 runner.
 - **rationale:** The supplied runner is source-visible and does more than print cached constants: it evaluates the SU(3) Bessel-determinant coefficient sum, diagonalizes the 4096 x 4096 total Casimir to recover the rank-8 singlet basis, constructs the stated plaquette tensor, and reports the finite storage/intermediate arithmetic. The repaired note no longer load-bears on the L_s=2 Block 5 diagnostics or on the unaudited bridge/open-gate constants. The full L_s=3 contraction is expressly outside the audited claim, so its absence is not a blocker for this staging theorem.
 - **auditor confidence:** medium
+
+### `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04`
+
+- **Note:** [`SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md`](../../docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite N=5000 naive-Haar SU(3) L_s=3 PBC cube MC negative diagnostic only: the run gives no bridge-support signal and the reported P_cube is noise-dominated, not a derived value. Not clean as worded because the theorem text overstates exact one-standard-error containment and mixes raw versus dimension-normalized sample-complexity scaling.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `lovelace-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-su3-l3-haar-mc-negative`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Independent checks confirm 81 directed links, 81 Wilson plaquettes, character dimensions including dim(2,1)=15, d^81 normalization, and gap factor 1604x. But z-scores from the cached means are 1.081 for (1,0) and 1.191 for (1,1), so the theorem statement 'within +/-1 standard error' is false as written. If T_(1,1)~1e-100 is the dimension-normalized target and raw integrand variance is O(1), the adjoint estimator needs about 5e53 samples, not 1e200; 1e200 would apply only to a raw signal of 1e-100.  _(class `C`)_
+- **chain closes:** False — The finite runner-output negative diagnosis is substantially supported, but the source note needs quantitative repair before the bounded theorem closes cleanly.
+- **rationale:** Non-clean due to two quantitative overstatements in the load-bearing negative diagnosis. The cached runner itself is coherent: geometry gives L^3*3=81 directed links and L^3*C(3,2)=81 plaquettes; character dimensions pass including dim(2,1)=15; reported T_lambda values are consistent with mean/d^81; and the gap 0.485944446 divided by epsilon_witness=3.03e-4 gives 1603.78, i.e. 1604x. The no-go discipline gate blocks a clean verdict on current wording: exact tensor contraction, memory-aware tensor networks, variance-reduced Haar estimators, importance-sampled Wilson MC, and analytic/source-sector routes remain open, and the supported residual is only that this finite N=5000 naive-Haar estimator gives no bridge-support signal. The source correctly avoids global foreclosure, but its exact '+/-1 SE' and '1e200 samples' claims need repair before this can land clean.
+- **auditor confidence:** high
 
 ### `su3_wilson_closed_form_fanout_theorem_note_2026-05-04`
 

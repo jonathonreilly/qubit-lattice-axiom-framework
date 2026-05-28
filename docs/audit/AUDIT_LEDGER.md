@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 571 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1173 |
+| unaudited | 1172 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 871 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1403 |
+| `unaudited` | 1402 |
 
 | claim_type | count |
 |---|---:|
@@ -1058,6 +1058,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_retarded_gravity_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -15228,6 +15229,24 @@ Why this blocks: separate retained bounded status would duplicate a direct algeb
 Repair target: box this row under yt_ew_color_projection_theorem, or re-promote only if a future revision adds independent content beyond common-factor cancellation.
 Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero EW coupling rescaling is exact algebra, but it is decoration rather than an independent theorem.
 - **decoration parent:** `yt_ew_color_projection_theorem`
+- **auditor confidence:** high
+
+### `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25`
+
+- **Note:** [`YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md`](../../docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-volume RN/log-density algebra: if the physical top Yukawa deformation is accepted as the operational primitive RN/log-odds source intervention for normalized O_top, then the source action has S_h=S_0-h O_top+c(h)I, lambda=1, and y_33=1/sqrt(6). This does not derive the physical top source intervention from the qubit-on-Z3 baseline or close Y_T.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-yt-operational-source-action-bridge`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the operational primitive RN/log-odds source premise, RN density R_h proportional exp(hO) gives S_h=S_0-hO+c(h)I and the Fisher-unit condition selects lambda=1.  _(class `A`)_
+- **chain closes:** False — The RN-to-action and lambda=1 algebra closes under the stated operational premise, but the physical top-source intervention bridge is not retained or accepted by the restricted packet. The row also has deps=[] while the runner consumes source-action, RN, Fisher, LSP, and no-go/support boundary notes and ledger statuses.
+- **rationale:** Issue: the proof establishes exact finite RN/log-density algebra only after accepting the operational primitive source premise and the physical identification of the top Yukawa deformation with that source intervention. Why this blocks: the qubit-on-Z3 baseline does not by itself select that physical source knob, the source-action gate and LSP/Fisher support are not retained-grade direct dependencies, and deps=[] would make a clean verdict stale under later changes to those authorities. Repair target: derive or explicitly admit the physical top-source intervention bridge and wire the named one-hop dependencies. Claim boundary until fixed: the packet is valid conditional support for S_h=S_0-hO_top+cI, lambda=1, and y_33=1/sqrt(6) under the operational premise, but it is not retained Y_T closure.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md`
+  - `YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`
+  - `YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md`
+  - `YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md`
 - **auditor confidence:** high
 
 ### `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25`

@@ -22,7 +22,7 @@
       "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
     ]
   },
-  "origin_main_commit": "1bc92b75b5f7fef6dd0e78b90dc2548bc64d3864",
+  "origin_main_commit": "212d3f0f83344ad3249d77c73c935eed109abca1",
   "pass_count": 46,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The origin/main declared-anchor Y_T bounded subchain is explicitly retained-bounded only over declared plaquette/u0/alpha_LM, kappa_EW, and Ward-boundary/Clebsch inputs. Those are forbidden or open inputs for this campaign, so the remote packet cannot be imported as a positive-closure proof input.",

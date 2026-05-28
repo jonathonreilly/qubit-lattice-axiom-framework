@@ -1,0 +1,122 @@
+{
+  "accepted_backend_projector_matrix_element_theorem_derived": false,
+  "accepted_same_surface_radial_generator_factorization_derived": false,
+  "actual_current_surface_status": "no-go / legacy Hessian-bridge firewall",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "dependency_statuses": {
+    "c3_radial_nogo": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "no-go / open same-surface radial generator factorization",
+      "trace_class": "negative_route_pruning"
+    },
+    "fisher_lsz_radial_nogo": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "no-go / open Fisher-LSZ-to-radial-generator factorization",
+      "trace_class": "negative_route_pruning"
+    },
+    "full_stack": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "exact-support / open strict-response gate",
+      "trace_class": null
+    },
+    "origin_declared_firewall": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "no-go / forbidden declared-anchor remote subchain",
+      "trace_class": "negative_route_pruning"
+    },
+    "strict_availability": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "no-go",
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "fail_count": 0,
+  "finite_firewall_witness": {
+    "counterexample_lambda_top": "2/sqrt(2)",
+    "legacy_positive_hessian_can_be_independent_of_top_radial_factor": true,
+    "positive_hessian_selector_supplies_lambda_top": false,
+    "same_source_readout": "lambda_top/sqrt(3)",
+    "target_lambda_top": "1/sqrt(2)",
+    "top_row_magnitude": "lambda_top*A/sqrt(6)"
+  },
+  "legacy_import_scan": {
+    "forbidden_or_inadmissible_patterns": {
+      "Planck endpoint": [
+        "M_PL"
+      ],
+      "alpha_LM": [
+        "ALPHA_LM"
+      ],
+      "observed-scale endpoint": [
+        "M_Z",
+        "ALPHA_EM_MZ",
+        "SIN2_TW_MZ"
+      ],
+      "old Ward authority": [
+        "Ward"
+      ],
+      "plaquette/u0": [
+        "plaquette",
+        "u_0",
+        "U0",
+        "PLAQ"
+      ],
+      "proxy bridge family": [
+        "logistic",
+        "erf",
+        "smoothstep",
+        "chosen proxy bridge"
+      ],
+      "target-conditioned y_t": [
+        "TARGET_YT_PHYS",
+        "target `y_t`",
+        "target-`y_t`",
+        "y_t(v)"
+      ]
+    },
+    "legacy_surface_classes": {
+      "axiom_first_bridge": "supporting theorem / reduction, not final closure",
+      "exact_hessian_selector": "bounded direction uniqueness with shape drift",
+      "hessian_selector": "bounded support note",
+      "uv_class_uniqueness": "audited_conditional proxy-family scan"
+    }
+  },
+  "no_forbidden_inputs_used_as_proof": true,
+  "pass_count": 98,
+  "positive_closure_marker_allowed": false,
+  "proposal_allowed": false,
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md",
+    "scripts/frontier_yt_legacy_hessian_bridge_firewall_no_go.py",
+    "outputs/yt_legacy_hessian_bridge_firewall_no_go_2026-05-28.json",
+    "docs/YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md",
+    "docs/YT_AXIOM_FIRST_MICROSCOPIC_BRIDGE_THEOREM.md",
+    "docs/YT_BRIDGE_UV_CLASS_UNIQUENESS_NOTE.md",
+    "docs/YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md"
+  ],
+  "route_still_live": "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows",
+  "strict_certificate_firewall": {
+    "legacy_bridge_strict_positive_certificate_present": false,
+    "required_fields_closed_by_legacy_bridge": {
+      "coefficient_certified_dM_W_dell": false,
+      "coefficient_certified_dM_t_dell": false,
+      "contact_subtraction_done": false,
+      "fv_ir_controls_pass": false,
+      "isolated_w_top_poles": false,
+      "no_forbidden_imports": false,
+      "no_free_top_coefficient": false,
+      "same_accepted_backend": false,
+      "same_model_class": false
+    },
+    "route_pruned": "legacy Hessian/UV bridge selector surfaces -> accepted same-surface radial/backend law or strict top/W pole rows"
+  },
+  "strict_top_w_response_certificate_present": false,
+  "trace_class": "negative_route_pruning"
+}

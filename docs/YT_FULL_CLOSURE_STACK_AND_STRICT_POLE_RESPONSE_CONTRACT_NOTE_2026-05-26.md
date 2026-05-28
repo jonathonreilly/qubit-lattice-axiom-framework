@@ -143,6 +143,10 @@ closed exactly:
   strict pole-row repository discovery no-go: a broader current-branch scan of
   Y_T strict/response/backend/projector outputs finds no hidden accepted
   top/W pole-row certificate under another artifact name
+  legacy Hessian bridge firewall no-go / legacy Hessian/UV bridge firewall
+  no-go: older bounded bridge-selector
+  support depends on forbidden/open bridge inputs and lacks the same-surface
+  radial/backend or strict pole-row certificate required by this campaign
   microscopic backend/projector/matrix-element boundary: current source law,
   carrier amplitude, C3 algebra, W row, and no-kappa backend candidate do not
   derive the accepted physical top projector or its source-generator matrix
@@ -1218,6 +1222,15 @@ Ward-boundary/Clebsch anchors.  Those are forbidden or open inputs for this
 campaign, so the remote bounded subchain cannot serve as the positive-closure
 proof input.
 
+[`YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md`](YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md)
+checks the analogous local temptation from the older Hessian/UV bridge stack.
+Those legacy bridge-selector surfaces are bounded support over
+plaquette/u0, `alpha_LM`, old Ward-side boundaries, Planck-scale endpoints,
+target-conditioned `y_t(v)` filters, and proxy bridge families. They do not
+derive `lambda_top=1/sqrt(2)`, accepted backend/projectors/matrix elements,
+or strict top/W pole rows.  They therefore cannot be imported as
+positive-closure proof input for this campaign.
+
 [`YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md`](YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md)
 then tests whether the closed strict W/Z denominator support can be spliced
 with the conditional C3 target row to make the missing strict packet.  The
@@ -1713,6 +1726,12 @@ proposal_allowed_reason: |
   temptation: retained-bounded algebra over declared plaquette/u0,
   `alpha_LM`, `kappa_EW`, and Ward-boundary anchors is not admissible as proof
   input under this campaign's forbidden-input list.
+  The legacy Hessian/UV bridge firewall no-go prunes the analogous local
+  shortcut: older bounded bridge-selector support depends on plaquette/u0,
+  `alpha_LM`, old Ward-side boundaries, Planck-scale endpoints,
+  target-conditioned `y_t(v)` filters, and proxy families, and supplies neither
+  `lambda_top=1/sqrt(2)` same-surface radial dynamics nor strict top/W pole
+  rows.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

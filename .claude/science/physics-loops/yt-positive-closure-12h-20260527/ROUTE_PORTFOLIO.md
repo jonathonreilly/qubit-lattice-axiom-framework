@@ -127,6 +127,7 @@ law for the nontrivial block.
 | Source-response extremal readout | Use the derived `B_x` response itself as a non-scalar orbit-member/top-line readout | Fails; response maxima select `P_0 -> A/sqrt(3)`, while minima select the nontrivial pair only with an extra selector |
 | Strict W/Z plus C3 top-row splice | Combine strict W/Z denominator support with the conditional C3 target row | Fails; the target readout appears only after supplying same-surface splice authority and nontrivial top-line authority, while the same denominator/source scale allows a `P_0` singlet readout |
 | Nontrivial real block support | Ask whether the coefficient row needs a complex nontrivial line or only zero singlet weight | Succeeds as support; `B_x` is scalar on `P_nt`, but zero-singlet physical membership is still not derived |
+| Same-surface radial factor | Ask whether zero-singlet `P_nt` support plus `B_x` and the W row force the remaining `A/sqrt(2)` factor | Fails; `V_top(lambda_top)=lambda_top A B_x` preserves the same support and W row while varying the coefficient |
 | Zero-singlet block membership | Ask whether current real/reflection-even C3 block algebra excludes `P_0` | Fails; the same finite family selects `P_0` or `P_nt` depending on an undetermined sign/order premise |
 | Source-orientation sign selector | Ask whether choosing the source sign that makes `P_nt` largest supplies the missing physical law | Fails; the same-source ratio is invariant under `ell -> -ell`, largest absolute response selects `P_0`, and minimum response is an extra convention |
 | Trace-free centered-source selector | Ask whether connected/trace-free source semantics exclude `P_0` | Fails; trace-freeness is an operator/source statement, zero expectation gives `s=1/3`, and the target row requires `s=0` |
@@ -188,3 +189,9 @@ reflection-even curve selects `P_nt/2` by least KL, but that physical singular
 top-readout law is still exactly the missing premise. The next positive move
 must derive/accept that law with generator factorization or leave C3 for
 strict top/W pole-row data.
+The radial-factor no-go now prunes another tempting shortcut inside the same
+rank-1 route: even after granting zero-singlet `P_nt` support, the current
+surface does not force `V_top=(A/sqrt(2))B_x`. A same-source family with
+`V_top(lambda_top)=lambda_top A B_x` keeps the W row fixed and changes the
+top coefficient, so accepted radial generator factorization remains an open
+hard residual.

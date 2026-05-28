@@ -1,5 +1,56 @@
 # Handoff
 
+Cycle 16 adds a thirtieth science block, not positive retained-grade closure.
+The new block prunes the shortcut
+
+```text
+zero-singlet C3 top-block support + B_x source direction + W row
+  -> coefficient-certified top matrix element.
+```
+
+Even granting top support in `P_nt`, the current surface allows
+
+```text
+V_top(lambda_top) = lambda_top A B_x,
+|dM_t/dell| = lambda_top A/sqrt(6),
+y_readout = lambda_top/sqrt(3).
+```
+
+The target row requires `lambda_top=1/sqrt(2)`. Therefore zero-singlet
+support plus the W denominator row does not fix the coefficient-bearing top
+matrix element unless an accepted same-surface radial generator factorization
+theorem supplies that value, or accepted strict top/W pole rows bypass the
+C3 route.
+
+This is an exact negative boundary only. No `POSITIVE_CLOSURE` marker was
+written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 16 artifacts:
+
+- `docs/YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py`
+- `outputs/yt_c3_same_surface_radial_factor_underdetermination_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 16 verification:
+
+- `python3 scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py` -> `SUMMARY: PASS=94 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=447 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`,
+  same-surface matrix factorization `PASS=77`, first-principles transfer
+  response `PASS=56`, primitive singular-boundary support `PASS=96`, strict
+  sparse availability audit `PASS=74`, and direct sparse certificate
+  `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+The next exact action is to derive accepted same-surface radial generator
+factorization plus an accepted physical zero-singlet top-readout law, or
+produce accepted strict top/W pole rows with contact, FV/IR, and model-class
+controls.
+
 Cycle 15 adds a twenty-ninth science block, not positive retained-grade
 closure. The new block tests a sharper hard-boundary route:
 

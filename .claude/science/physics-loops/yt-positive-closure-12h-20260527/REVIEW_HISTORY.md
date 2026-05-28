@@ -1,5 +1,40 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 30
+
+Scope:
+
+- C3 same-surface radial-factor underdetermination no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, finite C3 projectors, the `V_top(lambda_top)=lambda_top A B_x` family, source reparameterization, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open same-surface radial generator factorization; the result grants `P_nt` support for the sake of argument but does not promote the coefficient row. |
+| Imports / support | DISCLOSED | The radial factor `lambda_top=1/sqrt(2)`, physical zero-singlet readout law, and strict pole rows remain open; forbidden mass/target/fit inputs are absent. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=94 FAIL=0`
+- Full stack runner: `PASS=447 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`, same-surface
+  matrix factorization `PASS=77`, first-principles transfer response
+  `PASS=56`, primitive singular-boundary support `PASS=96`, strict sparse
+  availability audit `PASS=74`, and direct sparse certificate `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 29
 
 Scope:

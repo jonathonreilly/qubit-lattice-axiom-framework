@@ -215,3 +215,13 @@ feed `A/sqrt(12)`.
   still needs an accepted primitive singular-boundary top-readout theorem plus
   generator factorization, another accepted zero-singlet top-block law, or
   strict top/W pole rows.
+- New in the thirtieth block: zero-singlet C3 top-block support plus the
+  derived `B_x` direction and the W row do not certify the coefficient-bearing
+  top matrix element without accepted same-surface radial generator
+  factorization. The finite family
+  `V_top(lambda_top)=lambda_top A B_x` preserves `P_nt` support and
+  `dM_W/dell=g_2 A/2` while giving
+  `|dM_t/dell|=lambda_top A/sqrt(6)` and
+  `y_readout=lambda_top/sqrt(3)`. The target requires
+  `lambda_top=1/sqrt(2)`, so radial generator factorization remains
+  load-bearing, or must be bypassed by accepted strict top/W pole rows.

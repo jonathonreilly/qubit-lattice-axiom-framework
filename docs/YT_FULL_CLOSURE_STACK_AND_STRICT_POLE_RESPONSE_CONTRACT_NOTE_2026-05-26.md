@@ -52,6 +52,11 @@ closed exactly:
   B_x is scalar on the real nontrivial block P_nt, so zero singlet weight
   is sufficient for A/sqrt(12) and complex-line isolation is not needed for
   the coefficient row; zero singlet weight is still an open physical law
+  same-surface radial-factor underdetermination no-go: even granting
+  zero-singlet P_nt support, the current surface permits
+  V_top(lambda_top)=lambda_top A B_x with the same W row and same C3
+  direction; the target row requires lambda_top=1/sqrt(2), so accepted
+  generator factorization remains load-bearing
   zero-singlet top-block membership no-go: current real/reflection-even C3
   block algebra does not exclude P_0; P_nt is selected only after importing
   a sign/order law or minimum-response convention
@@ -179,6 +184,8 @@ still open:
   coefficient-certified same-source top/W response evidence
   coefficient-certified same-surface top sector matrix element
   accepted same-surface generator factorization for the top block
+  accepted same-surface radial generator factorization fixing
+  lambda_top=1/sqrt(2) if the C3 route grants zero-singlet P_nt support
   accepted zero-singlet physical top-block membership law; complex-line
   isolation is not required for the coefficient row once P_nt support is
   supplied, but the actual surface still must exclude P_0 through a new
@@ -482,6 +489,22 @@ Thus the coefficient row does not require choosing between `P_omega` and
 same-surface generator factorization and pole controls.  The actual current
 surface still does not derive that zero-singlet physical top-block membership
 law.
+
+[`YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`](YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md)
+then isolates the other load-bearing factor in that same conditional row.
+Even if a future readout law grants `P_nt` support, the current surface still
+allows
+
+```text
+V_top(lambda_top) = lambda_top A B_x,
+|dM_t/dell| = lambda_top A/sqrt(6),
+y_readout = lambda_top/sqrt(3).
+```
+
+The target row follows only for `lambda_top=1/sqrt(2)`.  Therefore
+zero-singlet support plus the W denominator row does not by itself certify the
+coefficient; the accepted same-surface radial generator factorization remains
+open.
 
 [`YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`](YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md)
 then tests that narrower blocker directly.  For every real reflection-even
@@ -858,6 +881,14 @@ allows `top = P_0`, which gives `A/sqrt(3)`.  Thus the remaining target is not
 another normalization calculation.  It is accepted same-surface generator
 factorization plus nontrivial top-line authority, or strict pole rows that
 measure the coefficient directly.
+
+The radial-factor no-go further sharpens that sentence: if nontrivial block
+support is granted, the remaining factor is not determined by the W row or by
+source-coordinate normalization.  A same-source family
+`V_top(lambda_top)=lambda_top A B_x` keeps the C3 direction and W denominator
+fixed while changing the recovered top coefficient.  The current target
+requires `lambda_top=1/sqrt(2)` as an accepted generator theorem or direct
+strict pole-row result.
 
 The top-projector specialization makes the route boundary explicit:
 

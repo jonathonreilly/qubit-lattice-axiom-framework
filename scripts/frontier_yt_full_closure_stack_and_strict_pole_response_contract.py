@@ -102,6 +102,10 @@ This runner verifies the current burn-down state:
   target: B_x is scalar on the real nontrivial block P_nt, so zero singlet
   weight is enough for A/sqrt(12); complex-line isolation is not needed for
   the coefficient row, but zero singlet weight is still not derived.
+* The same-surface radial-factor underdetermination no-go grants P_nt support
+  and still shows the coefficient row is not certified: a same-source family
+  V_top(lambda_top)=lambda_top*A*B_x keeps the W row and C3 direction while
+  varying the top coefficient. The target requires lambda_top=1/sqrt(2).
 * The zero-singlet top-block membership shortcut is now pruned: real
   reflection-even C3 block algebra permits both P_0 and P_nt block selections
   depending on an undetermined sign/order or minimum-response premise.
@@ -165,6 +169,7 @@ STRICT_SAME_SOURCE_OBSTRUCTION = DOCS / "YT_STRICT_SAME_SOURCE_TOP_W_RESPONSE_CO
 FIRST_PRINCIPLES_TRANSFER_RESPONSE = DOCS / "YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md"
 SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION = DOCS / "YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md"
 C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT = DOCS / "YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md"
+C3_SAME_SURFACE_RADIAL_FACTOR_NOGO = DOCS / "YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md"
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO = DOCS / "YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md"
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO = DOCS / "YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md"
 C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO = DOCS / "YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md"
@@ -224,6 +229,9 @@ STRICT_SAME_SOURCE_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_strict_same_source_t
 FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT = ROOT / "outputs" / "yt_first_principles_transfer_response_boundary_2026-05-27.json"
 SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT = ROOT / "outputs" / "yt_same_surface_top_matrix_element_factorization_boundary_2026-05-27.json"
 C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_nontrivial_block_matrix_element_support_2026-05-27.json"
+C3_SAME_SURFACE_RADIAL_FACTOR_NOGO_OUT = (
+    ROOT / "outputs" / "yt_c3_same_surface_radial_factor_underdetermination_no_go_2026-05-28.json"
+)
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT = ROOT / "outputs" / "yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json"
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_orientation_sign_selector_no_go_2026-05-27.json"
 C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT = ROOT / "outputs" / "yt_c3_trace_free_centered_source_zero_singlet_no_go_2026-05-27.json"
@@ -328,6 +336,7 @@ def part1_anchors() -> dict[str, str]:
         FIRST_PRINCIPLES_TRANSFER_RESPONSE,
         SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION,
         C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT,
+        C3_SAME_SURFACE_RADIAL_FACTOR_NOGO,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO,
         C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO,
@@ -386,6 +395,7 @@ def part1_anchors() -> dict[str, str]:
         FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT,
         SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT,
         C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT,
+        C3_SAME_SURFACE_RADIAL_FACTOR_NOGO_OUT,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT,
         C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT,
@@ -525,6 +535,7 @@ def part2_support_outputs() -> dict[str, Any]:
     first_principles_transfer_response = load_json(FIRST_PRINCIPLES_TRANSFER_RESPONSE_OUT)
     same_surface_top_matrix_element_factorization = load_json(SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_OUT)
     c3_nontrivial_block_matrix_element_support = load_json(C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_OUT)
+    c3_same_surface_radial_factor_nogo = load_json(C3_SAME_SURFACE_RADIAL_FACTOR_NOGO_OUT)
     c3_zero_singlet_top_block_membership_nogo = load_json(C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT)
     c3_source_orientation_sign_selector_nogo = load_json(C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT)
     c3_trace_free_centered_source_zero_singlet_nogo = load_json(C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT)
@@ -653,6 +664,26 @@ def part2_support_outputs() -> dict[str, Any]:
         c3_nontrivial_block_matrix_element_support.get("certificate_boundary", {})
         .get("strict_top_w_response_certificate_present")
         is False,
+    )
+    check(
+        "C3 same-surface radial-factor no-go passed",
+        c3_same_surface_radial_factor_nogo.get("fail_count") == 0,
+        c3_same_surface_radial_factor_nogo.get("fail_count"),
+    )
+    check(
+        "C3 radial-factor no-go is route-pruning",
+        c3_same_surface_radial_factor_nogo.get("trace_class") == "negative_route_pruning",
+        c3_same_surface_radial_factor_nogo.get("trace_class"),
+    )
+    check(
+        "C3 radial-factor target requires lambda_top=1/sqrt(2)",
+        c3_same_surface_radial_factor_nogo.get("radial_factor_family", {}).get("target_lambda_top")
+        == "1/sqrt(2)",
+    )
+    check(
+        "C3 radial-factor remains free on current surface",
+        c3_same_surface_radial_factor_nogo.get("certificate_boundary", {}).get("lambda_top_free_on_current_surface")
+        is True,
     )
     check(
         "C3 zero-singlet top-block membership no-go passed",
@@ -1370,6 +1401,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "first_principles_transfer_response": first_principles_transfer_response,
         "same_surface_top_matrix_element_factorization": same_surface_top_matrix_element_factorization,
         "c3_nontrivial_block_matrix_element_support": c3_nontrivial_block_matrix_element_support,
+        "c3_same_surface_radial_factor_nogo": c3_same_surface_radial_factor_nogo,
         "c3_zero_singlet_top_block_membership_nogo": c3_zero_singlet_top_block_membership_nogo,
         "c3_source_orientation_sign_selector_nogo": c3_source_orientation_sign_selector_nogo,
         "c3_trace_free_centered_source_zero_singlet_nogo": c3_trace_free_centered_source_zero_singlet_nogo,
@@ -1609,14 +1641,14 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_radial_factor_no_go_shows_zero_singlet_support_still_needs_lambda_top_equal_1_over_sqrt2_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
             "closed": False,
             "next_action": "derive accepted same-surface generator factorization plus a new sign/order/readout law excluding P_0, or produce a new accepted strict pole-response packet because none is present under existing artifact names",
         },
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_real_block_algebra_sign_choice_trace_free_centering_and_finite_mininfo_readout_do_not_derive_that_membership_hard_boundary_mininfo_nearest_face_selects_pnt_conditionally_but_nearest_face_readout_law_is_open_and_not_derived_from_current_boundary_geometry_alone_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_radial_generator_factorization_remains_open_and_real_block_algebra_sign_choice_trace_free_centering_and_finite_mininfo_readout_do_not_derive_that_membership_hard_boundary_mininfo_nearest_face_selects_pnt_conditionally_but_nearest_face_readout_law_is_open_and_not_derived_from_current_boundary_geometry_alone_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface sign/order/readout law excluding P_0 with backend/projectors/matrix elements",
         },
@@ -1722,6 +1754,12 @@ def main() -> int:
             "needed for the coefficient row. This does not authorize "
             "proposal language because zero singlet weight and accepted pole "
             "controls are still open. "
+            "The radial-factor no-go now grants that P_nt support for the "
+            "sake of argument and still prunes the shortcut: "
+            "V_top(lambda_top)=lambda_top*A*B_x preserves the W row and C3 "
+            "direction while varying the top coefficient, so the target "
+            "requires accepted lambda_top=1/sqrt(2) generator factorization "
+            "or direct strict pole rows. "
             "The zero-singlet top-block membership shortcut from the current "
             "real/reflection-even C3 block data is now pruned too: the same "
             "finite block algebra permits P_0 or P_nt depending on an "
@@ -1769,7 +1807,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted strict same-source top/W pole rows, or accepted same-surface sign/order/readout/primitive-singular-boundary dynamics deriving zero-singlet physical top-block support with backend/projectors/matrix elements",
+        "first_open_gate": "accepted strict same-source top/W pole rows, or accepted same-surface radial generator factorization plus sign/order/readout/primitive-singular-boundary dynamics deriving zero-singlet physical top-block support with backend/projectors/matrix elements",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -1790,6 +1828,7 @@ def main() -> int:
             "first_principles_transfer_response_fail_count": support_outputs["first_principles_transfer_response"].get("fail_count"),
             "same_surface_top_matrix_element_factorization_fail_count": support_outputs["same_surface_top_matrix_element_factorization"].get("fail_count"),
             "c3_nontrivial_block_matrix_element_support_fail_count": support_outputs["c3_nontrivial_block_matrix_element_support"].get("fail_count"),
+            "c3_same_surface_radial_factor_nogo_fail_count": support_outputs["c3_same_surface_radial_factor_nogo"].get("fail_count"),
             "c3_zero_singlet_top_block_membership_nogo_fail_count": support_outputs["c3_zero_singlet_top_block_membership_nogo"].get("fail_count"),
             "c3_source_orientation_sign_selector_nogo_fail_count": support_outputs["c3_source_orientation_sign_selector_nogo"].get("fail_count"),
             "c3_trace_free_centered_source_zero_singlet_nogo_fail_count": support_outputs["c3_trace_free_centered_source_zero_singlet_nogo"].get("fail_count"),
@@ -1842,6 +1881,9 @@ def main() -> int:
             "docs/YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py",
             "outputs/yt_c3_nontrivial_block_matrix_element_support_2026-05-27.json",
+            "docs/YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py",
+            "outputs/yt_c3_same_surface_radial_factor_underdetermination_no_go_2026-05-28.json",
             "docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py",
             "outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json",

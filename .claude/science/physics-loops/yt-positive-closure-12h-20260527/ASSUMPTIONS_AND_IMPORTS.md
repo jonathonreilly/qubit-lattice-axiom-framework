@@ -15,6 +15,7 @@
 | Current hard-boundary information geometry alone | Would promote nearest-face support into the accepted physical top-readout law without a new physical premise | pruned on current surface | `YT_C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for hard-boundary shortcut | derive a new accepted physical nearest-face readout theorem from same-surface dynamics, or bypass with strict pole rows | no-go for geometry-alone promotion |
 | Primitive singular no-hidden-record boundary readout | Would identify the physical top block with the least-KL singular support-loss face on the reflection-even C3 RN/Fisher boundary curve | exact support/open import | `YT_C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_NOTE_2026-05-28.md` | yes if used as closure | yes | derive/accept physical primitive singular-boundary top-readout law plus generator factorization, or strict pole rows | support only; full-simplex least-KL degeneracy keeps the physical law open |
 | Same-surface top generator factorization `(A/sqrt(2)) B_x` | Turns C3 response into `A/sqrt(12)` matrix element | unsupported import on actual surface | new factorization boundary | yes | yes | derive accepted transfer/action generator or strict pole rows | open blocker |
+| Same-surface radial factor `lambda_top=1/sqrt(2)` | Fixes the radial coupling in `V_top(lambda_top)=lambda_top A B_x` after zero-singlet `P_nt` support is supplied | unsupported import on actual surface; zero-singlet-plus-W-row shortcut pruned | `YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md` | yes | yes | derive accepted same-surface generator factorization or bypass with strict pole rows | no-go for radial-factor-free shortcut |
 | Physical top pole/projector | Identifies the sector whose matrix element is read | unsupported import on actual surface | top-sector projector obstruction stack | yes | yes | non-mass-ordering top-line theorem, dynamics, or pole certificate | open blocker |
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
 | Positive real C3 transfer/Perron top-line selection | Would use positivity to select the physical top line | pruned on current surface | `YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md` | yes | yes | add accepted orientation/phase/top-ordering dynamics or strict pole rows | no-go for positive real shortcut |
@@ -156,3 +157,9 @@ reflection-even C3 RN/Fisher boundary curve selects `P_nt/2`, because
 still support only. The finite primitive intervention theorem does not itself
 derive an accepted singular physical top readout, and least-KL support loss on
 the full three-line simplex has three degenerate dropped-line faces.
+The radial-factor no-go now grants zero-singlet `P_nt` support for the sake of
+argument and still prunes closure: `V_top(lambda_top)=lambda_top A B_x`
+preserves the W row and C3 direction while changing the top coefficient. The
+target requires `lambda_top=1/sqrt(2)`, so same-surface radial generator
+factorization remains a separate open import even after any future
+zero-singlet readout theorem.

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 148 |
-| **retained_no_go** | 172 |
+| **retained_no_go** | 173 |
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1128 |
+| unaudited | 1127 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 893 |
+| `audited_clean` | 894 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1358 |
+| `unaudited` | 1357 |
 
 | claim_type | count |
 |---|---:|
@@ -946,6 +946,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `three_generation_rooting_undefined_narrow_theorem_note_2026-05-26` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14702,6 +14703,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The translation projectors P_i together with powers of the cyclic C3[111] map generate every matrix unit E_ij, so the retained algebra is M_3(C), whose irreducibility leaves no nontrivial invariant quotient kernel.  _(class `A`)_
 - **chain closes:** True — Given the specified operators, the projector construction, matrix-unit generation, observable-descent lemma, and irreducibility argument are standard finite-dimensional linear algebra. The cited retained inputs are sufficient for this narrowed operator-algebra surface, while physical-species and substrate claims are explicitly out of scope.
 - **rationale:** The load-bearing step is a genuine class-A algebraic closure over the supplied operator inputs, not a definition, renaming, numerical match, or external comparator check. The runner source hard-codes the specified finite matrices as inputs but then actually verifies the projector ranks, matrix-unit generation, commutant dimension, observable descent, and irreducibility checks. The negative no-proper-quotient boundary passes the restricted no-go gate because attack routes such as preserving only translations, dropping C3, approximate reduction, nonlinear quotienting, or physical reinterpretation all leave the stated exact full-algebra quotient scope.
+- **auditor confidence:** high
+
+### `three_generation_rooting_undefined_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/THREE_GENERATION_ROOTING_UNDEFINED_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Exact coordinate BZ-corner/taste projection no-go on the C^8 Cl(3) carrier for subsets with 2 <= |S| <= 7, with one-corner projections degenerate non-candidates; excludes arbitrary non-coordinate subspaces, path-integral/rooted-determinant formulations, and physical generation semantics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-context-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For any coordinate corner subset S with 2 <= |S| <= 7, the projected matrices P_S G_i P_S do not form a Cl(3) carrier on P_S H_taste.  _(class `A`)_
+- **chain closes:** True — Independent check: each G_i maps |s> to a signed |s xor e_i>, so (P_S G_i P_S)^2 = I on P_S H_taste requires S to be closed under every bit flip. The bit flips generate a transitive (Z_2)^3 action, leaving only empty and full closed coordinate subsets, so no subset of size 2..7 can carry the compressed Cl(3) action.
+- **rationale:** The N1-N8 no-go gate passes for the restricted coordinate-projector claim: alternatives are enumerated, non-coordinate and physical-semantics routes are explicitly out of scope, and the independent coordinate-Cl(3) and taste-flip obstructions are sufficient. The cached runner exits 0 with PASS=37 FAIL=0 and implements exact finite algebra/linear-algebra checks rather than hard-coded external comparators. The independent bit-flip closure proof confirms the load-bearing theorem without relying on runner PASS output.
 - **auditor confidence:** high
 
 ### `three_generation_structure_note`

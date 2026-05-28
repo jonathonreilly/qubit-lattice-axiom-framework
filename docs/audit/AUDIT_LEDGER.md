@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 542 |
+| **retained_bounded** | 543 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 21 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 838 |
+| `audited_clean` | 839 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1453 |
+| `unaudited` | 1452 |
 
 | claim_type | count |
 |---|---:|
@@ -598,6 +598,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -8671,6 +8672,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — Given the admitted tensor-product Hilbert space and Pauli multiplication relations, disjoint-site generators commute and each site contributes four cosets modulo the single global Z_4 phase. The order, center, quotient, and central-extension statements then follow by finite group algebra from the retained_bounded Cl(3)/Pauli local representation input.
 - **rationale:** The proof is an exact algebraic tensor-product extension of the upstream Pauli/Cl(3) local representation result, with no external comparator and no new physical readout. The runner genuinely enumerates finite Pauli groups for N = 1, 2, 3 and checks the center for N = 2, but the all-N claim is carried by the algebraic counting argument, not by an independent first-principles computation. Under the rubric, this is retained as decoration rather than an independent positive theorem because it reduces to one retained_bounded parent plus standard mathematics.
 - **decoration parent:** `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
+- **auditor confidence:** high
+
+### `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2`
+
+- **Note:** [`N_F_BOUNDED_Z2_REDUCTION_THEOREM_NOTE_2026-05-07_w2.md`](../../docs/N_F_BOUNDED_Z2_REDUCTION_THEOREM_NOTE_2026-05-07_w2.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Z2 trace-surface reduction for N_F: retained color-carrier/per-site Hilbert inputs and retained-bounded g_bare convention context reduce the normalization ambiguity to N_F=1/2 on V_3 or N_F=1 on V=C^8, with ratio 2; no unique selection of N_F=1/2 or absolute g_bare is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-n-f-z2-reduction-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given canonical Gell-Mann generators on V_3 and their full-framework embedding T_a^V = diag(T_a,0) ⊗ I_2 on V = C^8, Tr_{V_3}(T_aT_b)=1/2 delta_ab while Tr_V(T_a^V T_b^V)=1 delta_ab, so the two natural trace surfaces differ by the weak/taste fiber multiplicity 2.  _(class `A`)_
+- **chain closes:** True — The trace identity closes algebraically: for the embedded carrier, Tr((diag(T,0)⊗I_2)^2)=2 Tr(T^2), so canonical V_3 normalization 1/2 becomes full-space normalization 1. The no-go discipline gate is satisfied for the scoped negative boundary: seven attack routes are named, there is one residual binary trace-surface choice, and no new-axiom or universal no-route claim is recorded.
+- **rationale:** The bounded theorem closes as an exact trace-surface statement over retained-grade inputs. The runner and independent trace check agree that the full-framework trace is exactly twice the color-carrier trace, and the source explicitly does not overclaim a unique derivation of N_F=1/2. Residual risk is limited to future source edits that try to promote the V_3 choice from bounded convention to uniquely forced primitive.
 - **auditor confidence:** high
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`

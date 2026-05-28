@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 243,
+    "critical": 242,
     "high": 339,
     "leaf": 325,
     "medium": 335
@@ -68,30 +68,6 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "s3_cap_uniqueness_note",
-      "claim_scope": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: connected closed triangulated boundary checks, chi_boundary=2, cone boundary/base matching, paired non-base cone faces, apex link equal to the boundary triangulation, and chi_cap=1. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 21,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.964,
-      "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
-      "transitive_descendants": 705
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "three_generation_structure_note",
@@ -113,6 +89,31 @@
       "ready": true,
       "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
       "transitive_descendants": 701
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "s3_general_r_derivation_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "s3_cap_uniqueness_note",
+        "s3_boundary_link_theorem_note"
+      ],
+      "direct_in_degree": 18,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 18.451,
+      "note_path": "docs/S3_GENERAL_R_DERIVATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
+      "transitive_descendants": 699
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -637,31 +638,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_zero_import_chain.py",
       "transitive_descendants": 714
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "s3_general_r_derivation_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "s3_cap_uniqueness_note",
-        "s3_boundary_link_theorem_note"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.451,
-      "note_path": "docs/S3_GENERAL_R_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
-      "transitive_descendants": 699
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7078,6 +7054,31 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "s3_cap_uniqueness_note",
+        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.5,
+      "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
+      "transitive_descendants": 63
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "wave_direct_dm_h025_two_point_synthesis_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -13389,31 +13390,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_split2_boundary_band_transition_candidate.py",
-      "transitive_descendants": 63
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "s3_cap_uniqueness_note",
-        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.5,
-      "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
       "transitive_descendants": 63
     },
     {
@@ -37343,6 +37319,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 62,
-  "total_pending": 1242
+  "ready_count": 63,
+  "total_pending": 1241
 }

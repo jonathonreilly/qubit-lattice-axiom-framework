@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 532 |
+| **retained_bounded** | 533 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
 | unaudited | 1240 |
-| audit_in_progress | 1 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -56,8 +55,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 826 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 827 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
@@ -128,7 +127,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `s3_cap_uniqueness_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -732,6 +730,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `s3_cap_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `s3_taste_cube_decomposition_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `s3_time_constructed_support_tensor_primitive_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10613,6 +10612,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** None  _(class `C`)_
 - **chain closes:** True — The note explicitly scopes the cubical-ball disk theorem as bounded for R=2..10 and separately closes the 256-subset local K_simp(P) certificate. The runner source actually constructs the cubical balls, actual vertex links, integer and mod-2 homology checks, boundary-component checks, vertex-link manifoldness checks, and exhaustive subset enumeration rather than merely printing constants. The open large-coordinate bridge lemma affects the unrestricted all-R theorem, not the scoped bounded theorem under review.
 - **rationale:** The note explicitly scopes the cubical-ball disk theorem as bounded for R=2..10 and separately closes the 256-subset local K_simp(P) certificate. The runner source actually constructs the cubical balls, actual vertex links, integer and mod-2 homology checks, boundary-component checks, vertex-link manifoldness checks, and exhaustive subset enumeration rather than merely printing constants. The open large-coordinate bridge lemma affects the unrestricted all-R theorem, not the scoped bounded theorem under review.
+- **auditor confidence:** high
+
+### `s3_cap_uniqueness_note`
+
+- **Note:** [`S3_CAP_UNIQUENESS_NOTE.md`](../../docs/S3_CAP_UNIQUENESS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-context-s3-cap-20260527-r2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For the explicit cubical-ball family constructed by the runner at R=2,3,4,5, the checker constructs the boundary triangulation and cone complex and verifies the listed finite incidence, link, boundary, and Euler facts.  _(class `A`)_
+- **chain closes:** True — Fresh-context independent check confirmed this is finite combinatorics over the declared runner family: edge-degree two and vertex-link cycle checks make the boundary a closed triangulated 2-manifold in the checked cases; coning gives apex link equal to the base triangulation, paired non-base cone faces, and chi_cap=1. The source excludes global uniqueness and PL S^3 conclusions.
+- **rationale:** The second audit agrees that the narrowed bounded certificate closes only for the explicit finite construction. The runner directly constructs the cubical balls, boundary triangulations, and cone complexes for R=2,3,4,5, while the source explicitly removes global PL cap uniqueness, physical closure, Schoenflies/Alexander/Perelman/Moise imports, and PL S^3 identification.
 - **auditor confidence:** high
 
 ### `s3_mass_matrix_no_go_note`

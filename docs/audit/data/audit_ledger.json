@@ -201424,11 +201424,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.466,
+      "load_bearing_score": 13.466,
       "load_bearing_step": "For each checked radius R = 2, 3, 4, the runner constructs the declared cubical boundary triangulation and cone-cap complex and verifies the five listed finite combinatorial properties.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "72c1a61edf8d6220b4a61a69d0cf5aec0d86bd20d6fc1cbc878a6f540aef340e",
       "note_path": "docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "Re-check only if downstream text cites this row for arbitrary cap classification, PL-homeomorphism uniqueness, S^3 compactification, Kawamoto-Smit homogeneity, or physical closure rather than the finite R = 2, 3, 4 certificate.",
@@ -235216,24 +235216,42 @@
       "verdict_rationale": "The note explicitly scopes the cubical-ball disk theorem as bounded for R=2..10 and separately closes the 256-subset local K_simp(P) certificate. The runner source actually constructs the cubical balls, actual vertex links, integer and mod-2 homology checks, boundary-component checks, vertex-link manifoldness checks, and exhaustive subset enumeration rather than merely printing constants. The open large-coordinate bridge lemma affects the unrestricted all-R theorem, not the scoped bounded theorem under review."
     },
     "s3_cap_uniqueness_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T01:33:46.485182+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only; no arbitrary PL cap, S^3, homogeneity, or physical-closure claim is audited here."
+        },
+        "dep_claim_type": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 19.964,
+        "runner_hash": "a7d5e017199ff21ece96fe07aa0089c8904fbfa3551b6a70cf93ade785baa606",
+        "transitive_descendants": 705
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-context-s3-cap-20260527-r2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Fresh-context independent check confirmed this is finite combinatorics over the declared runner family: edge-degree two and vertex-link cycle checks make the boundary a closed triangulated 2-manifold in the checked cases; coning gives apex link equal to the base triangulation, paired non-base cone faces, and chi_cap=1. The source excludes global uniqueness and PL S^3 conclusions.",
       "claim_id": "s3_cap_uniqueness_note",
-      "claim_scope": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: connected closed triangulated boundary checks, chi_boundary=2, cone boundary/base matching, paired non-base cone faces, apex link equal to the boundary triangulation, and chi_cap=1. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited.",
+      "claim_scope": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-28T01:29:44.053948+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-28T01:33:46.485182+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -235248,27 +235266,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-28T01:33:46.484961+00:00",
+          "auditor": "codex-audit-loop-fresh-context-s3-cap-20260527-r2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 21,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 19.964,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For the explicit cubical-ball family constructed by the runner at R=2,3,4,5, the checker constructs the boundary triangulation and cone complex and verifies the listed finite incidence, link, boundary, and Euler facts.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "008c88c582022ab346a35846731bc2ac5f48bcb46ead6e1e35e2e5be7af88765",
       "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -235494,18 +235523,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 52,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 52
       },
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
       "title": "S^3 Cap Finite Cone-Cap Construction Certificate",
       "transitive_descendants": 705,
-      "verdict_rationale": null
+      "verdict_rationale": "The second audit agrees that the narrowed bounded certificate closes only for the explicit finite construction. The runner directly constructs the cubical balls, boundary triangulations, and cone complexes for R=2,3,4,5, while the source explicitly removes global PL cap uniqueness, physical closure, Schoenflies/Alexander/Perelman/Moise imports, and PL S^3 identification."
     },
     "s3_general_r_derivation_note": {
       "audit_date": null,

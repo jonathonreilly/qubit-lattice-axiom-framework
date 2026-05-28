@@ -31,6 +31,7 @@
 | Positive real C3 transfer/Perron top-line selection | Would use positivity to select the physical top line | pruned on current surface | `YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md` | yes | yes | add accepted orientation/phase/top-ordering dynamics or strict pole rows | no-go for positive real shortcut |
 | Reversible C3 Markov/Laplacian source law | Would use stochastic C3 random-walk dynamics plus connected normalization to supply the physical top row | pruned on current surface | `YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for Markov/Laplacian shortcut | derive accepted physical top readout excluding `P_0`, accepted radial generator dynamics, accepted backend/projectors, or strict pole rows | no-go for reversible stochastic dynamics shortcut |
 | Nonreversible oriented C3 Markov-current source law | Would use circulation in `Q_{p,q}=p(C-I)+q(C^2-I)` to supply the missing physical phase/top-line law | pruned on current surface | `YT_C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for oriented-current shortcut | derive accepted physical phase/current readout excluding `P_0`, accepted radial generator dynamics, accepted backend/projectors, or strict pole rows | no-go for circulation-to-top-row shortcut |
+| Continuous C3 unitary character-flow source law | Would use a logarithm/phase-flow generator for the C3 cycle to supply the physical character line and source matrix element | pruned on current surface | `YT_C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for character-flow shortcut | derive accepted physical character-flow readout tied to the `B_x` source row, accepted radial generator dynamics, accepted backend/projectors, or strict pole rows | no-go for logarithm/phase-flow-to-top-row shortcut |
 | Nontrivial C3 phase-ordering cone membership | Places the top line in `P_omega` or `P_omega2` instead of `P_0` | exact support/open import | `YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive `y_0 > sqrt(3) x_0` or `-y_0 > sqrt(3) x_0` from accepted microscopic dynamics | open blocker |
 | Orientation-odd same-surface C3 phase law | Supplies nonzero `y_0` strong enough to isolate a nontrivial complex line | unsupported import on actual surface; reflection-even route pruned | `YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | derive accepted orientation-odd base dynamics with `|y_0| > sqrt(3) x_0` and W/top matrix elements, or bypass with strict pole rows | open blocker |
 | Quantitative C3 phase-strength law | Upgrades orientation sign/nonzero `B_y` to strict nontrivial cone membership | unsupported import on actual surface; sign-only route pruned | `YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | derive accepted same-surface law proving `|y_0| > sqrt(3) x_0` on signed branch | open blocker |
@@ -73,6 +74,11 @@ The reversible C3 Markov/Laplacian refinement is now pruned as well: the
 stochastic generator has `P_0` as stationary/Perron line, keeps the
 nontrivial block degenerate, and connected normalization only returns `B_x`
 up to sign.
+The continuous C3 unitary character-flow refinement is now pruned too: C3
+logarithm branches and clock scale are not fixed by the finite C3 cycle, and
+the normalized trace-zero phase direction is `B_y`, not the derived `B_x`
+source tangent. A character sign remains a readout premise and does not fix
+`lambda_top=1/sqrt(2)`.
 The exact residual C3 phase-ordering cone is now characterized, but accepted
 base-operator cone membership remains open. Reflection-even base dynamics is
 now pruned as a route to that cone because it forces `y_0 = 0`, leaving either

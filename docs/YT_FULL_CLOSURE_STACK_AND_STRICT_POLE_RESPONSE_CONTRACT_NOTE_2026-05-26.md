@@ -94,6 +94,10 @@ closed exactly:
   keeps P_0 as the stationary/Perron line, leaves nontrivial real decay rates
   degenerate, and splits only conjugate phase signs until a physical
   phase/readout law is supplied; lambda_top remains free
+  unitary character-flow source-law no-go: continuous C3 logarithm/phase-flow
+  branches and clock scale are not fixed by the finite C3 cycle, and the
+  normalized trace-zero phase generator is B_y rather than the derived B_x
+  source tangent
   real-irrep dimension top-block no-go: finite real C3 representation theory
   exposes P_0 as the trivial real irrep and P_nt as the faithful
   two-dimensional real irrep, but selecting the faithful/nontrivial summand as
@@ -1271,6 +1275,31 @@ rate remains degenerate, the current ratio is free, and even a supplied
 nontrivial phase readout still needs `lambda_top=1/sqrt(2)` or strict pole
 rows.
 
+The unitary character-flow no-go tests the continuous C3 phase-flow
+refinement.  A logarithm of the C3 cycle has branch family
+
+```text
+H_{n,m} = (2*pi/3 + 2*pi*n) P_omega
+        + (-2*pi/3 + 2*pi*m) P_omega2.
+```
+
+Even after imposing trace zero, the clock scale remains free:
+
+```text
+H_n = (2*pi/3 + 2*pi*n)(P_omega - P_omega2).
+```
+
+The normalized trace-zero direction is
+
+```text
+J = (P_omega - P_omega2)/sqrt(2) = -B_y,
+```
+
+which is Frobenius-orthogonal to the derived `B_x` source tangent.  Thus the
+character flow can supply at most orientation/phase support; it does not
+derive the `B_x` source matrix element or the radial factor
+`lambda_top=1/sqrt(2)`.
+
 The strict sparse top/W pole-response availability audit then checks the
 remaining bypass route on the current branch.  It finds the sparse harness and
 native no-`kappa` candidate, but the strict positive evidence artifacts are
@@ -1856,6 +1885,11 @@ proposal_allowed_reason: |
   P_0 stationary, keeps the nontrivial real decay rate degenerate, and still
   requires an accepted phase/readout law plus lambda_top=1/sqrt(2) or strict
   pole rows.
+  The unitary character-flow source-law no-go prunes the continuous phase-flow
+  refinement: C3 logarithm branches and clock scale remain free, and the unit
+  phase generator is B_y, not the derived B_x source tangent. A supplied
+  character sign still needs a physical readout law plus
+  lambda_top=1/sqrt(2) or strict pole rows.
   The real-irrep dimension top-block no-go prunes the representation-dimension
   shortcut: finite real C3 representation theory exposes P_nt as the faithful
   two-dimensional summand, but selecting that summand as the physical top block

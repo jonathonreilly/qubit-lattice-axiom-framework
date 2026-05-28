@@ -4,7 +4,7 @@
 |---:|---|---:|---:|---|---|
 | 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout/hard-boundary law | medium | high | partial | factorization support landed; block support landed; radial-factor-free, target-magnitude back-solving, sharp-response, Fisher/LSZ source-normalization, block-rank/root-rank, Fisher-quotient/source-geometry, one-Higgs neutral-carrier radial, and one-Higgs generation-coefficient normalization shortcuts pruned; current real/reflection-even block-algebra, source-orientation sign-choice, trace-free centered-source, finite minimum-information readout, real-irrep/dimension/faithfulness, and current hard-boundary geometry-alone shortcuts pruned; primitive singular-boundary support isolates a conditional `P_nt` candidate but physical readout/sign and radial generator laws remain open |
 | 2 | Non-mass-ordering C3 top-block law excluding `P_0` without target selection | low | high | present | pruned on current real/reflection-even C3 surface, including the weaker zero-singlet block-membership shortcut |
-| 3 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | low | high | present | pruned as source-derivative shortcut; reversible Markov/Laplacian and nonreversible oriented-current refinements also pruned; base dynamics/order, physical readout, and radial factor still open |
+| 3 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | low | high | present | pruned as source-derivative shortcut; reversible Markov/Laplacian, nonreversible oriented-current, and unitary character-flow refinements also pruned; base dynamics/order, physical readout, and radial factor still open |
 | 4 | Strict sparse top/W pole-response evidence on accepted backend | medium | high | harness present | audited absent on current branch, including repository discovery scan; existing W/Z and symbolic top support packets fail the audit-status/coefficient firewall; freshly fetched origin/main refresh also finds no accepted strict packet |
 | 5 | Current microscopic source/backend/carrier/C3 shortcut | low | high | present | pruned; does not derive accepted backend/projector/matrix element |
 | 6 | Positive real C3 transfer/Perron top-line selection | low | high | present | pruned; selects `P_0` or leaves nontrivial block degenerate |
@@ -24,6 +24,16 @@
 | 20 | Source-response extremal readout from derived `B_x` | low | high | present | pruned; maxima select `P_0`, minima import a selector and leave the nontrivial pair degenerate |
 | 21 | Strict W/Z denominator plus conditional C3 target-row splice | low | high | present | pruned; formal target readout imports same-surface and physical nontrivial top-line authority |
 | 22 | C3 RN/Fisher quotient/source geometry as radial generator normalization | low | high | present | pruned; fine and binary Fisher metrics are isometric, Fisher-unit score is a source-coordinate normalization, and `B_x` has no internal Fisher direction in `P_nt` |
+
+Queue refresh after the forty-sixth block: positive closure remains open. The
+continuous C3 unitary character-flow refinement is pruned. A C3 logarithm has
+branch and clock-scale freedom, and its unit trace-zero generator is
+`J=(P_omega-P_omega2)/sqrt(2)=-B_y`, orthogonal to the derived `B_x` source
+tangent. A character sign is therefore not the source matrix element or an
+accepted physical top-readout law, and `lambda_top=1/sqrt(2)` remains open.
+The next exact action remains to derive allowed same-surface
+radial/readout/backend laws, or produce accepted coefficient-certified strict
+top/W pole rows with controls.
 
 Queue refresh after the forty-fifth block: positive closure remains open.
 The oriented C3 Markov-current refinement is pruned. Nonreversible

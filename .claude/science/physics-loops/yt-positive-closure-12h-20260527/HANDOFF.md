@@ -1,5 +1,60 @@
 # Handoff
 
+Cycle 32 adds a forty-sixth science block, not positive retained-grade
+closure. The block prunes the shortcut:
+
+```text
+continuous C3 unitary character flow
+  + branch/unit normalization
+  -> accepted physical nontrivial top line
+  -> dM_t/dell = A/sqrt(12).
+```
+
+The C3 logarithm has branch and clock-scale freedom. Even in the trace-zero
+subfamily, multiple generators exponentiate to the same C3 cycle. The unit
+phase-flow direction is
+
+```text
+J = (P_omega - P_omega2)/sqrt(2) = -B_y,
+```
+
+which is Frobenius-orthogonal to the derived `B_x` source tangent. Thus the
+character flow can supply only phase/orientation support; it does not supply
+the `B_x` source matrix element, the accepted physical top-readout law, or
+`lambda_top=1/sqrt(2)`. This is a no-go/route-pruning boundary only. No
+`POSITIVE_CLOSURE` marker was written. Retained/proposed-retained wording
+remains disallowed.
+
+Cycle 32 artifacts:
+
+- `docs/YT_C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py`
+- `outputs/yt_c3_unitary_character_flow_source_law_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 32 verification so far:
+
+- `python3 scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py`
+  -> `SUMMARY: PASS=102 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=586 FAIL=0`
+- Adjacent runners passed: C3 circulant dynamics boundary `PASS=95`,
+  representation phase-selection no-go `PASS=94`, primitive character
+  phase-angle candidate `PASS=71`, phase-ordering cone support `PASS=70`,
+  oriented Markov-current no-go `PASS=109`, same-surface radial-factor no-go
+  `PASS=94`, strict sparse availability audit `PASS=74`, and reversible
+  Markov/Laplacian no-go `PASS=108`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- Commit, push, and PR body update are pending for this block.
+- `POSITIVE_CLOSURE` remains absent.
+
+The next exact action remains to derive allowed same-surface
+radial/readout/backend laws without forbidden anchors, or produce accepted
+strict top/W pole rows.
+
 Cycle 31 adds a forty-fifth science block, not positive retained-grade
 closure. The block prunes the shortcut:
 

@@ -1,5 +1,14 @@
 # No-Go Ledger
 
+- New in the forty-sixth block: continuous C3 unitary character-flow dynamics
+  does not derive the coefficient-bearing top row. The C3 logarithm has
+  branch and clock-scale freedom; even the trace-zero branch family
+  `H_n=(2*pi/3+2*pi*n)(P_omega-P_omega2)` exponentiates to the same C3 cycle.
+  The normalized phase-flow generator is
+  `J=(P_omega-P_omega2)/sqrt(2)=-B_y`, Frobenius-orthogonal to the derived
+  `B_x` source tangent. A supplied character sign therefore remains a
+  readout premise, not the source matrix element, and the radial factor
+  `lambda_top=1/sqrt(2)` remains open.
 - New in the forty-fifth block: nonreversible oriented C3 Markov-current
   dynamics does not derive the coefficient-bearing top row. For
   `Q_{p,q}=p(C-I)+q(C^2-I)`, the stationary/Perron line remains `P_0`, the

@@ -1,24 +1,31 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 31
+supervisor_cycle: 32
 runtime_budget_seconds: 43200
 remaining_campaign_seconds_at_cycle_start: 5286
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T05:03:06Z"
+last_checkpoint_utc: "2026-05-28T05:10:54Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_oriented_markov_current_source_law_no_go
-hard_residual: "derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2), physical zero-singlet/phase-current top-readout law excluding P_0, or accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
-actual_current_surface_status: no-go / oriented Markov current is not a top-row law
+active_route: c3_unitary_character_flow_source_law_no_go
+hard_residual: "derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2), physical zero-singlet/phase-current/character-flow top-readout law excluding P_0, or accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
+actual_current_surface_status: no-go / unitary character flow is not a top-row source law
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Cycle 31 prunes the nonreversible/oriented C3 Markov-current shortcut. For Q_{p,q}=p(C-I)+q(C^2-I), P_0 remains the stationary/Perron line, the nontrivial real decay rates remain degenerate, circulation splits only conjugate phase signs until an accepted physical phase/readout law is supplied, the current ratio is free, and lambda_top=1/sqrt(2) remains open. Positive closure remains open."
+claim_state_movement: "Cycle 32 prunes the continuous C3 unitary character-flow shortcut. The C3 logarithm has branch and clock-scale freedom, its unit trace-zero phase generator is B_y rather than the derived B_x source tangent, and even a supplied character sign still leaves the physical readout law and lambda_top=1/sqrt(2) open. Positive closure remains open."
 files_touched:
+  - docs/YT_C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md
+  - scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py
+  - outputs/yt_c3_unitary_character_flow_source_law_no_go_2026-05-28.json
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+  - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
+  - .claude/science/physics-loops/yt-positive-closure-12h-20260527/
   - docs/YT_C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md
   - scripts/frontier_yt_c3_oriented_markov_current_source_law_no_go.py
   - outputs/yt_c3_oriented_markov_current_source_law_no_go_2026-05-28.json
@@ -176,6 +183,7 @@ open_imports:
   - accepted physical sharp-endpoint/readout law excluding P_0 if zero response variance is used
   - accepted microscopic dynamics deriving nontrivial C3 phase-ordering cone membership
   - accepted physical phase/current readout plus radial law if nonreversible oriented Markov-current dynamics is used to derive the target row
+  - accepted physical character-flow readout tied to the derived B_x source row plus radial law if unitary C3 character-flow dynamics is used to derive the target row
   - accepted zero-singlet physical top-block membership in P_nt
   - accepted physical theorem identifying the faithful/nontrivial real C3 irrep P_nt as the Y_T top block
   - accepted same-surface sign/order/readout law excluding P_0
@@ -240,7 +248,22 @@ no_go_routes:
   - one-Higgs neutral carrier normalization plus zero-singlet C3 response certifies lambda_top=1/sqrt(2) or dM_t/dell=A/sqrt(12)
   - ordinary one-Higgs generation-matrix normalization conventions certify eta=1 or lambda_top=1/sqrt(2)
   - nonreversible oriented C3 Markov-current dynamics plus connected/current normalization derives an accepted non-mass physical top-line law or lambda_top=1/sqrt(2)
+  - continuous C3 unitary character-flow dynamics plus branch/unit normalization derives an accepted non-mass physical top-line law or source matrix element
 commands_run:
+  - "python3 scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py -> PASS=102 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=586 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS=95 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_representation_phase_selection_no_go.py -> PASS=94 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py -> PASS=71 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py -> PASS=70 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_oriented_markov_current_source_law_no_go.py -> PASS=109 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py -> PASS=94 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_markov_laplacian_source_law_no_go.py -> PASS=108 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py scripts/frontier_yt_c3_representation_phase_selection_no_go.py scripts/frontier_yt_c3_primitive_character_phase_angle_candidate.py scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py scripts/frontier_yt_c3_oriented_markov_current_source_law_no_go.py scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_c3_markov_laplacian_source_law_no_go.py -> PASS"
+  - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
+  - "test ! -e .claude/science/physics-loops/yt-positive-closure-12h-20260527/POSITIVE_CLOSURE && echo POSITIVE_CLOSURE_ABSENT -> POSITIVE_CLOSURE_ABSENT"
+  - "git diff --check -> PASS"
   - "gh pr edit 1980 --body-file - -> PR body updated"
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "git commit -m 'Record C3 oriented Markov current delivery' -> 574f24dad18c63d91e82d6ac3dffb2f90d48908a"

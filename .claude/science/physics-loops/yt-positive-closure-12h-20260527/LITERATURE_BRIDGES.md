@@ -3,6 +3,12 @@
 No external literature value, observed target, fitted selector, or external
 physics theorem is load-bearing in this block.
 
+The unitary character-flow no-go is finite C3 spectral calculus only. It
+checks the branch family of logarithms of the C3 cycle, the trace-zero
+clock-scale freedom, and the identity
+`(P_omega-P_omega2)/sqrt(2)=-B_y`; no external representation-theory
+authority, phenomenological phase, or observed mass value is imported.
+
 The strict support-packet audit-status firewall is branch-local and
 schema-local. It reads the W/Z denominator packet, symbolic top-response
 packet, strict availability audit, audit queue, and audit ledger. The finite

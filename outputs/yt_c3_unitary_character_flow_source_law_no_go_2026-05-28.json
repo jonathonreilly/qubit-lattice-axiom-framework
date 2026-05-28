@@ -1,0 +1,69 @@
+{
+  "actual_current_surface_status": "no-go / open unitary-character-flow-to-top-row law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "branch_witness": {
+    "branch_shift_generator": "(8*pi/3)*(P_omega-P_omega2)",
+    "clock_scale_fixed_by_c3": "false",
+    "principal_trace_zero_generator": "(2*pi/3)*(P_omega-P_omega2)",
+    "same_c3_exponential": "true"
+  },
+  "claim_id": "yt_c3_unitary_character_flow_source_law_no_go_note_2026-05-28",
+  "claim_type": "no_go",
+  "dependency_fail_counts": {
+    "c3_block_support": 0,
+    "c3_circulant": 0,
+    "c3_markov": 0,
+    "c3_oriented_markov": 0,
+    "c3_phase_cone": 0,
+    "c3_primitive_phase": 0,
+    "c3_radial_nogo": 0,
+    "c3_representation": 0,
+    "full_stack": 0,
+    "strict_availability": 0
+  },
+  "fail_count": 0,
+  "no_go_certificate": {
+    "bare_retained_allowed": false,
+    "c3_log_branch_free": true,
+    "clock_scale_free_on_current_surface": true,
+    "forbidden_inputs_used": [],
+    "lambda_top_free_on_current_surface": true,
+    "phase_generator_orthogonal_to_Bx": true,
+    "phase_sign_not_physical_readout_law": true,
+    "proposal_allowed": false,
+    "strict_positive_certificate_present": false,
+    "unit_phase_generator_is_By_not_Bx": true
+  },
+  "pass_count": 102,
+  "phase_vs_source": {
+    "Bx_responses": {
+      "P_0": "sqrt(6)/3",
+      "P_omega": "-sqrt(6)/6",
+      "P_omega2": "-sqrt(6)/6"
+    },
+    "J_responses": {
+      "P_0": "0",
+      "P_omega": "sqrt(2)/2",
+      "P_omega2": "-sqrt(2)/2"
+    },
+    "frob_inner_J_Bx": "0",
+    "unit_phase_generator": "J=(P_omega-P_omega2)/sqrt(2)=-B_y"
+  },
+  "positive_closure": false,
+  "positive_closure_marker_allowed": false,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The unitary C3 character flow has branch/clock freedom, its unit phase direction is B_y rather than the derived B_x source tangent, and lambda_top=1/sqrt(2) remains open.",
+  "radial_counterfamily": {
+    "bare_retained_allowed": false,
+    "forbidden_inputs_used": [],
+    "lambda_top_derived": false,
+    "proposal_allowed": false,
+    "same_source_family": "V_top(lambda_top)=lambda_top*A*B_x",
+    "target_lambda": "1/sqrt(2)"
+  },
+  "reachability_to_target": "prunes",
+  "review_gate": "pass for narrow no-go route-pruning artifact only",
+  "route_pruned": "continuous C3 unitary character flow plus branch/unit normalization derives accepted physical top line and source matrix element",
+  "trace_class": "negative_route_pruning"
+}

@@ -16,6 +16,8 @@ The forty-third route tested the reversible C3 Markov/Laplacian stochastic
 dynamics refinement of the C3 source-law route.
 The forty-fifth route tested the nonreversible oriented C3 Markov-current
 refinement of the same C3 source-law route.
+The forty-sixth route tested the continuous unitary C3 character-flow
+refinement of the same C3 source-law route.
 The seventh route characterized the residual C3 phase-ordering cone.
 The eighth route pruned reflection-even base dynamics as a derivation of that
 cone.

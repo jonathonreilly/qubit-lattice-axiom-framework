@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 7600
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T04:22:37Z"
+last_checkpoint_utc: "2026-05-28T04:23:37Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_markov_laplacian_source_law_no_go
@@ -715,8 +715,8 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 29 science commit 398253f506486d82aba3b116badd08546296b9b2 is created locally; delivery commit, branch push, and PR #1980 body update are pending."
+pr_status: "Cycle 29 science commit 398253f506486d82aba3b116badd08546296b9b2 and delivery commit 9341d455af2e690a0ffd4f61807c16537e18b219 are recorded; branch push and PR #1980 body update are pending."
 latest_science_commit: 398253f506486d82aba3b116badd08546296b9b2
-latest_delivery_commit: pending
+latest_delivery_commit: 9341d455af2e690a0ffd4f61807c16537e18b219
 next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

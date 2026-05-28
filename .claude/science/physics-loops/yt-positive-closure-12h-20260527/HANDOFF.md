@@ -52,6 +52,12 @@ Cycle 29 science commit:
 398253f506486d82aba3b116badd08546296b9b2
 ```
 
+Cycle 29 delivery commit:
+
+```text
+9341d455af2e690a0ffd4f61807c16537e18b219
+```
+
 Cycle 28 adds a forty-second science block, not positive retained-grade
 closure. The block prunes the shortcut:
 

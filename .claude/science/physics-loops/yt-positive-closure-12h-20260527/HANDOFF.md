@@ -42,7 +42,7 @@ bff9f07ca1dbb03e19fd3ff522b50c3fc8a3016b
 Cycle 22 delivery commit:
 
 ```text
-pending_cycle_22_delivery_commit
+aeeafd14f942cbb69addab6cc86a01aaa723ef59
 ```
 
 Cycle 22 artifacts:

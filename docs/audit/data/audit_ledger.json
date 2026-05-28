@@ -239502,24 +239502,50 @@
       "verdict_rationale": "The runner genuinely computes the Pauli matrix identities, permutation signs, the explicit 3-cycle unitary, and the no-unitary contradiction for transpositions; it does not import fitted values, observational comparators, or hidden helper code. The load-bearing content is a class A algebraic closure over one retained upstream Cl(3,0) authority plus standard finite linear algebra. Because the packet has zero external comparator checks and reduces to a single retained parent claim with standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean."
     },
     "same_family_3d_closure_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T05:05:29.787852+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "valley_linear_action_note": "Bounded same-harness comparison of spent-delay versus valley-linear S=L(1-f) on the fixed 3D ordered dense lattice 1/L^2 family at h=0.25 with the stated slit geometry, detector readout, and field shape.",
+          "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12.",
+          "valley_linear_wide_tail_note": "Bounded W=12, h=0.25 3D ordered-lattice valley-linear replay: barrier sanity is clean, all z=2..10 no-barrier rows are TOWARD, and the reported peak-tail and far-tail fits are b^(-1.07), R^2=0.990 and b^(-1.17), R^2=0.997."
+        },
+        "dep_claim_type": {
+          "valley_linear_action_note": "bounded_theorem",
+          "valley_linear_asymptotic_bridge_note": "bounded_theorem",
+          "valley_linear_wide_tail_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "valley_linear_action_note": "retained_bounded",
+          "valley_linear_asymptotic_bridge_note": "retained_bounded",
+          "valley_linear_wide_tail_note": "retained_bounded"
+        },
+        "deps": [
+          "valley_linear_action_note",
+          "valley_linear_asymptotic_bridge_note",
+          "valley_linear_wide_tail_note"
+        ],
+        "load_bearing_score": 3.322,
+        "runner_hash": "6267ce79c15765bcb436b4abf180a022a6b9bfb2047ac5aa35d24e8a5d46b6c7",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "wegener-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-same-family-3d-closure",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-lattice runner recomputes the core rows and the W=10 tail, and the three direct dependencies are retained_bounded, which is retained-grade for this bounded theorem. The claim remains limited to the stated finite slices.",
       "claim_id": "same_family_3d_closure_note",
-      "claim_scope": null,
+      "claim_scope": "Fixed finite-lattice 3D valley-linear closure for h=0.25, W=10, L=12 core rows, same-h,W L=8,10,12 rows, and the W=10 tail, with the W=12 companion supplied only by retained-bounded dependency.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T05:05:29.787852+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -239529,16 +239555,16 @@
         "valley_linear_asymptotic_bridge_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/lattice_3d_valley_linear_card.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 3.322,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The primary runner recomputes the load-bearing h=0.25, W=10 finite-lattice closure rows.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5ebef719d5e3cba723e62a2ecb7602d04697057ff1dd95805132fab957e00078",
@@ -239715,18 +239741,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 2,
         "B": 0,
-        "C": 0,
+        "C": 9,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 11
       },
       "runner_path": "scripts/same_family_3d_closure.py",
       "title": "Same-Family 3D Closure: Valley-Linear",
       "transitive_descendants": 4,
-      "verdict_rationale": null
+      "verdict_rationale": "The repaired primary runner builds the lattice and propagates amplitudes for rows 1-7, recomputes the same-h,W L=8 and L=10 rows while reusing the live L=12 core row, and recomputes the W=10 distance tail. The expected constants are tolerance targets after computation, not substitutes for the load-bearing rows. Fresh-context independent check recomputed the row-10 post-peak log-log fit from emitted deltas as slope -0.931052 with R^2=0.983203, and checked that the k=0 zero follows from field-independent propagation at k=0. No continuum, universal Newtonian, all-refinement, or all-width claim is granted."
     },
     "scalar_3plus1_temporal_ratio_note": {
       "audit_date": "2026-05-23T13:54:19.575626+00:00",

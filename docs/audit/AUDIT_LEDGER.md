@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 567 |
+| **retained_bounded** | 568 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1179 |
+| unaudited | 1178 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 867 |
+| `audited_clean` | 868 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1409 |
+| `unaudited` | 1408 |
 
 | claim_type | count |
 |---|---:|
@@ -767,6 +767,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_constructed_support_tensor_primitive_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_time_tensor_build_memo` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_theta_to_slice_coupling_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `same_family_3d_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `scalar_3plus1_temporal_ratio_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_kg_rerun_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `schur_covariance_inheritance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11411,6 +11412,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows from the retained Cl(3,0) Pauli realization, omega = iI, permutation parity, and the elementary fact that complex-linear unitary conjugation fixes scalar iI. The note explicitly excludes the downstream physical premise that generation-sector symmetries must be unitary.
 - **rationale:** The runner genuinely computes the Pauli matrix identities, permutation signs, the explicit 3-cycle unitary, and the no-unitary contradiction for transpositions; it does not import fitted values, observational comparators, or hidden helper code. The load-bearing content is a class A algebraic closure over one retained upstream Cl(3,0) authority plus standard finite linear algebra. Because the packet has zero external comparator checks and reduces to a single retained parent claim with standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `same_family_3d_closure_note`
+
+- **Note:** [`SAME_FAMILY_3D_CLOSURE_NOTE.md`](../../docs/SAME_FAMILY_3D_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed finite-lattice 3D valley-linear closure for h=0.25, W=10, L=12 core rows, same-h,W L=8,10,12 rows, and the W=10 tail, with the W=12 companion supplied only by retained-bounded dependency.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `wegener-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-same-family-3d-closure`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The primary runner recomputes the load-bearing h=0.25, W=10 finite-lattice closure rows.  _(class `C`)_
+- **chain closes:** True — The finite-lattice runner recomputes the core rows and the W=10 tail, and the three direct dependencies are retained_bounded, which is retained-grade for this bounded theorem. The claim remains limited to the stated finite slices.
+- **rationale:** The repaired primary runner builds the lattice and propagates amplitudes for rows 1-7, recomputes the same-h,W L=8 and L=10 rows while reusing the live L=12 core row, and recomputes the W=10 distance tail. The expected constants are tolerance targets after computation, not substitutes for the load-bearing rows. Fresh-context independent check recomputed the row-10 post-peak log-log fit from emitted deltas as slope -0.931052 with R^2=0.983203, and checked that the k=0 zero follows from field-independent propagation at k=0. No continuum, universal Newtonian, all-refinement, or all-width claim is granted.
 - **auditor confidence:** high
 
 ### `scalar_3plus1_temporal_ratio_note`

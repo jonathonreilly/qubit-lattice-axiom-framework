@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1244 |
+| unaudited | 1243 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 826 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1474 |
+| `unaudited` | 1473 |
 
 | claim_type | count |
 |---|---:|
@@ -954,6 +954,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `assumption_derivation_ledger` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1500,6 +1501,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Within the finite primitive-edge class whose local data are only the 16-state primitive cell, source-free state, rank-four projector, locality/additivity, and standard von Neumann or binary measurement entropy, there is no derivation of an entanglement area coefficient equal to 1/4.  _(class `A`)_
 - **chain closes:** True — The chain closes because the canonical entropy values from the stated finite data are computed directly and none equals 1/4 in natural units, while the tuned gapped-edge value requires p_* not fixed by the primitive rank pair (16,4). With no dependencies, there is no unresolved upstream status blocking the scoped no-go.
 - **rationale:** The no-go is scoped to exact finite-cell entropy constructions and a gapped two-level edge example, not to all possible entropy-carrier theorems. The note explicitly distinguishes the primitive trace Tr((I_16/16)P_A)=1/4 from von Neumann and binary entropy values, and the runner reproduces those finite arithmetic checks with current PASS=26 FAIL=0. No hidden physical identification is used to claim a positive entropy coefficient; the conclusion is negative and leaves positive routes open only if they add a selector or operational entropy theorem.
+- **auditor confidence:** high
+
+### `assumption_derivation_ledger`
+
+- **Note:** [`ASSUMPTION_DERIVATION_LEDGER.md`](../../docs/ASSUMPTION_DERIVATION_LEDGER.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded ledger-level bookkeeping surface: the file may be used as a roadmap of ingredient labels and authority pointers, with the R_conn row narrowed to exact F_adj=8/9 plus conditional physical selector language. It does not independently certify the listed package-wide statuses until each ingredient row is wired to a retained-grade one-hop authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The ledger says every ingredient row is only a summary pointer to its named authority, while the only currently wired citation-graph edge is the R_conn/F_adj row to rconn_derived_note.  _(class `B`)_
+- **chain closes:** False — The exact R_conn repair closes only as F_adj=(3^2-1)/3^2=8/9 with the physical selector left conditional by the retained no-go dependency. The remaining ingredient status rows are not directly wired to retained-grade authorities in the restricted packet.
+- **rationale:** Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency.
 - **auditor confidence:** high
 
 ### `asymmetry_persistence_joint_card_note`

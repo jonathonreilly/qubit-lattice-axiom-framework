@@ -41774,10 +41774,10 @@
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6108e78fbbe7f1245bd79761183d316324919f4478d77eb15e3253777518148b",
+      "note_hash": "c0d5f6e293eb50dcd0ed2d1a43aa310ac3cda1d51b580d8d24e99129012a4748",
       "path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
-      "title": "Anomaly Cancellation Forces 3+1 Spacetime"
+      "title": "Anomaly-Cancellation Consistency Bridge for 3+1 Spacetime"
     },
     "anomaly_forces_time_theorem_note_2026-05-17": {
       "claim_id": "anomaly_forces_time_theorem_note_2026-05-17",

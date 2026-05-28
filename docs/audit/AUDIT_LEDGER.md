@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 580 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1154 |
+| unaudited | 1153 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 883 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 65 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1384 |
+| `unaudited` | 1383 |
 
 | claim_type | count |
 |---|---:|
@@ -1028,6 +1028,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3698,6 +3699,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "The weaker-coupling sweep does not show a strength-driven rescue of the remaining periodic Dirac gravity failures" because cross-strength sign-stability counts are unchanged and the signed delta-law fit never becomes available.  _(class `A`)_
 - **chain closes:** True — The note's numerical summaries match the supplied completed runner stdout, and the bounded negative conclusion follows directly from the unchanged 6/12 stable-row and 2/12 positive-stable counts across all strengths. The claim does not close as a general physics theorem beyond this scan grid, so the audited scope must remain bounded to the supplied harness and outputs.
 - **rationale:** The load-bearing claim is a bounded arithmetic summary of the completed runner output, not a first-principles derivation or external comparator. The stdout supports the stated cross-strength invariance, absence of signed delta-law fits, and lambda-dependent |bias| fit improvement. Clean status applies only to the reported scan-grid conclusion, not to any broader Dirac-gravity theorem or unsupplied v4 helper implementation.
+- **auditor confidence:** high
+
+### `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`
+
+- **Note:** [`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional admission-bridge arithmetic only: given retained framework authorities R1-R4 plus the explicit Q1 Cl(3,1) Lorentzian-signature extension and Q2 on-shell thermal-counting convention admissions, the parent P4 Dirac count 2 spin * 2 particle-antiparticle = 4 and Weyl count 4/2 = 2 are reconstructed by exact rational arithmetic and projector checks. This does not derive Q1, Q2, the Dirac equation/on-shell convention, Lorentzian signature, parent thermal inventory closure, or downstream cosmology/leptogenesis status.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-2026-05-28-dirac-weyl-dof-admission-bridge`  (codex-gpt-5.5; independence=strong)
+- **load-bearing step:** With R1 giving spin factor 2, R3 giving particle-antiparticle factor 2, and R2 giving chirality projectors at admitted n=4 from Q1, the bridge computes dof_Dirac=2*2=4 and dof_Weyl=4/2=2, with Q2 supplying the on-shell/off-shell counting convention.  _(class `B`)_
+- **chain closes:** False — The integer arithmetic and projector algebra close under the stated packet, and all ledger dependencies are retained-grade or retained_bounded. The row still depends load-bearingly on Q1 and Q2, which are explicit non-framework-retained admissions rather than accepted premises in the restricted packet.
+- **rationale:** The cache and local rerun both report PASS=82 FAIL=0, and independent checks agree that the retained R1/R3 factors give 4, R2 chirality halves to 2 at admitted n=4, and the runner's Cl(3,1) matrices/projectors satisfy the stated identities. However, Q1 supplies the Lorentzian Cl(3,1) extension and Q2 supplies the on-shell thermal-counting convention; neither is derived or registry-accepted here. No-go-discipline scope check: this verdict does not claim Q1/Q2 are irreducible walls or that alternative derivations are impossible; it only records that this bridge has not retired them.
+- **open / conditional deps cited:**
+  - `Q1 Cl(3,1) Lorentzian signature extension / Wick-rotation sign admission`
+  - `Q2 on-shell relativistic thermal-counting convention and Dirac-equation halving`
+  - `parent thermal-inventory remaining premises P1, P2, P3, P5`
 - **auditor confidence:** high
 
 ### `directional_b_density_stencil_note`

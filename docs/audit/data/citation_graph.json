@@ -43563,18 +43563,18 @@
     },
     "broad_gravity_derivation_note": {
       "claim_id": "broad_gravity_derivation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gravity_clean_derivation_note",
         "gravity_full_self_consistency_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7ceb196770437f8a9abf6f65aa3103f8ad0bfe344bad4689e7f74a5938fcb1ee",
+      "note_hash": "d085b6a8df224eb87a82cbd83d46f05cd628111503293ee5cdf3f3d3ef5e3cc5",
       "path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
       "runner_path": null,
-      "title": "Broad Gravity Bundle: Per-Signature Derivation Chains"
+      "title": "Broad Gravity Bundle: Per-Signature Derivation Chains (Conditional IF-Chain)"
     },
     "broad_surrogate_point_source_compare_note": {
       "claim_id": "broad_surrogate_point_source_compare_note",
@@ -86443,11 +86443,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 642,
+      "bounded_theorem": 643,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1440,
+      "none": 1439,
       "open_gate": 50,
       "positive_theorem": 169
     },

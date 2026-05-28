@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1130 |
+| unaudited | 1131 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
 | ~~audited_conditional~~ | 72 |
-| ~~audited_failed~~ | 6 |
+| ~~audited_failed~~ | 5 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,10 +63,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 891 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 50 |
+| `audited_failed` | 49 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1360 |
+| `unaudited` | 1361 |
 
 | claim_type | count |
 |---|---:|
@@ -1153,7 +1153,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `broad_gravity_derivation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `critical_exponents_topology_note_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2210,19 +2209,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Set the Wilson quadratic coefficient equal to the heat-kernel quadratic coefficient, (beta/(4 N_c))|X|^2 = |X|^2/(2t), hence t = 2 N_c / beta = g_bare^2 and t(6)=1.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded surface, the conclusion follows by ordinary algebra from the canonical trace/norm relation, the Wilson small-U quadratic coefficient, and the standard local heat-kernel Gaussian asymptotic on a compact Lie group. The standard Brownian-motion/heat-kernel facts are acceptable mathematical machinery here because they are used only for the local asymptotic matching, not to import a physical action-choice or thermodynamic bridge.
 - **rationale:** The source is explicit that this is only a leading-order bounded matching theorem and not a resolution of the bridge gap, action-form uniqueness, finite-beta corrections, or thermodynamic plaquette behavior. The load-bearing calculation is a class-A coefficient match, and the cited retained-bounded/decoration inputs supply the canonical normalization and N_c=3 surface needed for the scoped result. The runner corroborates the algebraic normalization, small-U expansion, t(beta)=2N_c/beta, and t(6)=1 checks; its heat-kernel plaquette preview is non-load-bearing and does not introduce an external comparator. No hidden fitted value or physical observable bridge is used inside the audited scope.
-- **auditor confidence:** high
-
-### `broad_gravity_derivation_note`
-
-- **Note:** [`BROAD_GRAVITY_DERIVATION_NOTE.md`](../../docs/BROAD_GRAVITY_DERIVATION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Broad weak-field gravity bundle assessment claiming that S = kL(1-phi) is derived from the retained weak-field core and that WEP and gravitational time dilation can be promoted while geodesics, light bending, and the conformal metric remain bounded.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-broad-gravity-derivation-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note's central load-bearing step is that S = kL(1-phi) is derived from the framework's self-consistency chain, so WEP and gravitational time dilation inherit derived status rather than merely following from an accepted action.  _(class `B`)_
-- **chain closes:** False — The one-hop retained-bounded dependencies do not supply the promoted premise. GRAVITY_CLEAN_DERIVATION_NOTE treats S=L(1-phi), rho=|psi|^2, and L^{-1}=G_0 as named inputs in a bounded IF-chain; GRAVITY_FULL_SELF_CONSISTENCY_NOTE treats L^{-1}=G_0 as stipulated, not derived from the Cl(3)-on-Z^3 baseline.
-- **rationale:** Issue: the source's promotion of WEP and time dilation rests on the assertion that the weak-field action S = kL(1-phi) is derived, but its one-hop dependencies have since been narrowed to conditional statements where that response, the source readout, and the closure identity are stipulated inputs. Why this blocks: the promoted signatures are algebraic consequences once S and the Poisson/readout premises are supplied; the restricted packet does not derive those premises, and one dependency explicitly says the stronger physical-gravity closure is out of scope. Repair target: rewrite this row as a bounded conditional bundle matching the current dependency scopes, or add retained bridge theorems deriving L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the clock/readout map. Claim boundary until fixed: conditional WEP/time-dilation algebra may be cited only under the explicitly supplied weak-field action/readout assumptions; no broad gravity-signature promotion is retained from this row.
 - **auditor confidence:** high
 
 ### `broad_surrogate_point_source_compare_note`

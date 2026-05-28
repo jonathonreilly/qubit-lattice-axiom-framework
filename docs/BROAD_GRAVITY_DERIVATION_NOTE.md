@@ -1,7 +1,59 @@
-# Broad Gravity Bundle: Per-Signature Derivation Chains
+# Broad Gravity Bundle: Per-Signature Derivation Chains (Conditional IF-Chain)
 
-**Date:** 2026-04-13
-**Status:** Per-signature honest assessment; some promotions, some kept bounded
+**Date:** 2026-04-13 (original); 2026-05-28 (binding scope narrowed to the
+conditional IF-chain per audit verdict).
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+**Status:** bounded conditional IF-chain assessment; the per-signature
+"PROMOTE" decisions below are **conditional on the named IF-chain inputs**,
+not unconditional retentions (see binding-scope header).
+
+## 2026-05-28 Binding-scope header (audit repair)
+
+The 2026-05-28 audit verdict was `audited_failed`:
+
+> *"The one-hop retained-bounded dependencies do not supply the promoted
+> premise. GRAVITY_CLEAN_DERIVATION_NOTE treats S=L(1-phi), rho=|psi|^2,
+> and L^{-1}=G_0 as named inputs in a bounded IF-chain;
+> GRAVITY_FULL_SELF_CONSISTENCY_NOTE treats L^{-1}=G_0 as stipulated, not
+> derived from the Cl(3)-on-Z^3 baseline."*
+
+Repair instruction: *"narrow the source to the conditional IF-chain now
+present in the one-hop deps, or supply retained bridge theorems for
+closure identity, source readout, weak-field action, and clock/readout."*
+
+Supplying those bridge theorems is substantive new derivation work
+(deriving `L^{-1} = G_0`, `rho = |psi|^2`, `S = L(1-phi)` from the
+Cl(3)-on-Z^3 baseline are each open targets). This repair takes the
+**conditional-IF-chain narrowing path**, matching the scope that the
+one-hop deps actually supply.
+
+**Binding claim of this note (2026-05-28).** This note is a bounded
+conditional assessment. Its binding content is the single implication:
+
+> **IF** the framework supplies, as named inputs (not derived here),
+> (a) the weak-field closure identity `L^{-1} = G_0`, (b) the source
+> readout `rho = |psi|^2`, (c) the weak-field action `S = kL(1-phi)`,
+> and (d) the standard `Z^3` lattice Green-function normalization,
+> **THEN** the per-signature chains below follow as stated.
+
+**Every "DERIVED" and "PROMOTE to retained" decision in the body below
+is to be read as conditional on (a)-(d).** None of (a)-(d) is derived
+from the Cl(3)-on-Z^3 baseline in this note or its one-hop deps:
+
+- [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md)
+  is itself a bounded IF-chain that treats `S=L(1-phi)`, `rho=|psi|^2`,
+  and `L^{-1}=G_0` as named inputs;
+- [`GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`](GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)
+  treats `L^{-1}=G_0` as a stipulated closure identity, not derived
+  from the baseline.
+
+Therefore the WEP and time-dilation "PROMOTE" decisions in the body are
+**conditional weak-field corollaries of the IF-chain**, NOT unconditional
+retained promotions. Downstream consumers must carry the IF-chain
+condition. The geodesic / light-bending / conformal-metric signatures
+remain conditional (as the body already states). No new axiom, import,
+or retained bridge is introduced by this repair.
 
 ---
 

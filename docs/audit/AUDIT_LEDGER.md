@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 541 |
+| **retained_bounded** | 542 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 21 |
-| unaudited | 1224 |
+| unaudited | 1223 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,22 +57,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 837 |
+| `audited_clean` | 838 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1454 |
+| `unaudited` | 1453 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1103 |
+| `bounded_theorem` | 1104 |
 | `decoration` | 51 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 111 |
-| `positive_theorem` | 706 |
+| `positive_theorem` | 705 |
 
 | criticality | count |
 |---|---:|
@@ -344,6 +344,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_status_correction_audit_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -4674,6 +4675,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The constraint-vs-convention status of g or beta is a function of the admission rank r: with r = 1 the remaining variables lie on a one-parameter convention curve, while with r = 2 the remaining variable is uniquely forced by beta*g^2 = K.  _(class `A`)_
 - **chain closes:** True — The proof is elementary algebra over R_{>0}: solve beta*g^2=K under each admission specialization and count the resulting free parameters. The runner verifies the symbolic identities and exact rational witnesses with PASS=52, FAIL=0, and the note has no load-bearing dependencies.
 - **rationale:** The scoped theorem closes because every claimed case follows directly from the single relation beta*g^2=K over positive reals: K alone leaves a one-parameter curve, fixed K and beta or fixed K and g gives a unique positive solution for the third variable, and no admissions leave a two-parameter surface. The runner checks the symbolic substitutions, exact rational samples, dimension count, round trips, and negative examples without importing any physical interpretation. Residual risk is scope drift only: this audit does not ratify any physical claim that g_bare=1 is forced in the lattice gauge setting.
+- **auditor confidence:** high
+
+### `g_bare_constraint_vs_convention_restatement_note_2026-05-07`
+
+- **Note:** [`G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded convention-layer stratification for the g_bare chain: on the admitted Wilson plaquette/kinetic-matching surface and with the explicit L3 convention N_F=1/2, the retained-bounded HS rigidity and structural-normalization inputs locate the scalar convention at N_F and derive g_bare=1 at L4; no derivation of N_F=1/2, Wilson action form, running/fixed-point selection, or absolute g_bare from A1+A2 is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-g-bare-convention-restatement-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Relative to the retained-bounded Wilson/canonical-normalization surface and the admitted N_F=1/2 Hilbert-Schmidt scalar, beta=2N_c=6 and beta=2N_c/g_bare^2 force g_bare^2=1, so g_bare is an L4 constraint rather than a second convention layer.  _(class `A`)_
+- **chain closes:** True — Given the bounded inputs, the algebra is direct: Schur/trace gives C_F=(8/3)N_F, canonical N_F=1/2 gives the usual C_F=4/3 surface, Wilson matching gives beta=2N_c/g_bare^2, and beta=2N_c=6 at N_c=3 forces g_bare^2=1. The retained-bounded dependencies bound the result; they do not make it an unbounded positive theorem.
+- **rationale:** The scoped bounded theorem closes: it correctly localizes the explicit scalar convention at L3 (N_F=1/2) and treats g_bare=1 as the L4 algebraic consequence on the admitted canonical Wilson matching surface. The runner verifies the Clifford representation, trace Gram, Casimir scaling, joint trace/Casimir rigidity, Wilson beta algebra, no-circularity checks, and the L1-L4 stratification. This is not an unbounded positive theorem because the Wilson surface and N_F scalar remain admitted/bounded premises, and the source itself excludes deriving N_F=1/2 or absolute g_bare from A1+A2.
 - **auditor confidence:** high
 
 ### `g_bare_constraint_vs_convention_theorem_note_2026-05-03`

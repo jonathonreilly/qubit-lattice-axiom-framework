@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 230,
-    "high": 334,
+    "high": 333,
     "leaf": 325,
     "medium": 335
   },
@@ -6552,26 +6552,29 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
+      "claim_id": "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
         "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-        "g_bare_structural_normalization_theorem_note_2026-04-18"
+        "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
+        "g_bare_structural_normalization_theorem_note_2026-04-18",
+        "cl3_color_automorphism_theorem",
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
       ],
-      "direct_in_degree": 14,
+      "direct_in_degree": 11,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.7,
-      "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md",
+      "load_bearing_score": 13.193,
+      "note_path": "docs/N_F_BOUNDED_Z2_REDUCTION_THEOREM_NOTE_2026-05-07_w2.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
-      "transitive_descendants": 207
+      "runner_path": "scripts/cl3_n_f_derivation_2026_05_07_w2_check.py",
+      "transitive_descendants": 206
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -8162,34 +8165,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_p3_msbar_to_pole_k2.py",
       "transitive_descendants": 208
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-        "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
-        "g_bare_structural_normalization_theorem_note_2026-04-18",
-        "cl3_color_automorphism_theorem",
-        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 11,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.193,
-      "note_path": "docs/N_F_BOUNDED_Z2_REDUCTION_THEOREM_NOTE_2026-05-07_w2.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/cl3_n_f_derivation_2026_05_07_w2_check.py",
-      "transitive_descendants": 206
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -36892,5 +36867,5 @@
     }
   ],
   "ready_count": 53,
-  "total_pending": 1224
+  "total_pending": 1223
 }

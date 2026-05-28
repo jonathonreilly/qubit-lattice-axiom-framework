@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 230,
-    "high": 331,
+    "high": 330,
     "leaf": 325,
     "medium": 335
   },
@@ -6552,26 +6552,27 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
+      "claim_id": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "graph_first_su3_integration_note",
-        "plaquette_self_consistency_note"
+        "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
+        "minimal_axioms_2026-04-11",
+        "graph_first_su3_integration_note"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.285,
-      "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md",
+      "load_bearing_score": 9.776,
+      "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop_static_certificate.py",
-      "transitive_descendants": 155
+      "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop.py",
+      "transitive_descendants": 154
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -10125,32 +10126,6 @@
       "ready": false,
       "runner_path": "scripts/cl3_a3_option_c_brannen_rivero_2026_05_08_optC.py",
       "transitive_descendants": 155
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
-        "minimal_axioms_2026-04-11",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.776,
-      "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop.py",
-      "transitive_descendants": 154
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -36809,5 +36784,5 @@
     }
   ],
   "ready_count": 52,
-  "total_pending": 1221
+  "total_pending": 1220
 }

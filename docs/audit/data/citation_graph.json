@@ -22650,11 +22650,15 @@
     },
     {
       "from": "s3_general_r_derivation_note",
+      "to": "s3_boundary_link_theorem_note"
+    },
+    {
+      "from": "s3_general_r_derivation_note",
       "to": "s3_cap_uniqueness_note"
     },
     {
       "from": "s3_general_r_derivation_note",
-      "to": "s3_boundary_link_theorem_note"
+      "to": "pl_topology_infrastructure_textbook_import_note_2026-05-17"
     },
     {
       "from": "s3_time_bilinear_tensor_action_note",
@@ -75131,18 +75135,19 @@
     },
     "s3_general_r_derivation_note": {
       "claim_id": "s3_general_r_derivation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "Constructive computation (R=2..6) + theorem chain with standard mathematical citation (Perelman 2003)",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "s3_boundary_link_theorem_note",
         "s3_cap_uniqueness_note",
-        "s3_boundary_link_theorem_note"
+        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ebc7974078c0f5dee37c16ada66efad06c628861ee9ffb9b206d5d54102c58aa",
+      "note_hash": "b1e03e3e7d25905204628934e9cc2f0f6f8fee99031f7e4cbecae2334eec8184",
       "path": "docs/S3_GENERAL_R_DERIVATION_NOTE.md",
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
-      "title": "S^3 Topology: General-R Derivation"
+      "title": "S^3 General-R \u2014 Finite-Radius Cap Certificate"
     },
     "s3_mass_matrix_no_go_note": {
       "claim_id": "s3_mass_matrix_no_go_note",
@@ -86443,24 +86448,24 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 643,
+      "bounded_theorem": 644,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1439,
+      "none": 1438,
       "open_gate": 50,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1058,
+      "bounded_theorem": 1059,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
       "none": 426,
       "open_gate": 127,
-      "positive_theorem": 587
+      "positive_theorem": 586
     },
-    "edge_count": 9866,
+    "edge_count": 9867,
     "leaf_count": 805,
     "node_count": 2579,
     "root_count": 854,

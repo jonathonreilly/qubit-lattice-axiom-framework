@@ -100666,22 +100666,42 @@
       "verdict_rationale": null
     },
     "gate_b_complex_action_falsifier_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T06:22:51.521314+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_grown_joint_package_note": "Bounded numerical certificate for the declared Gate-B grown-geometry joint comparison: on h=0.5, four seeds, exact grid versus drift=0.2/restore=0.7 plus drift=0.3/restore=0.5 stress row, the runner-computed Born, d_TV, MI, and decoherence values match the source/cache and support only the stated finite comparison, not Gate-B package transfer or physical-gravity closure."
+        },
+        "dep_claim_type": {
+          "gate_b_grown_joint_package_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_grown_joint_package_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_grown_joint_package_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "3c49055ec922510b7a90609e698c4cac910f6f94946c10ed617da746b54abbef",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "newton-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-gate-b-complex-action-falsifier",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes at the finite bounded scope because the one-hop Gate B grown joint-package dependency is retained_bounded, the runner deterministically constructs the named row and gamma sweep, and independent arithmetic reproduces the reported escape suppression. It does not close any broader complex-action branch or physical-probability interpretation.",
       "claim_id": "gate_b_complex_action_falsifier_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded finite numerical certificate for the runner-defined attenuation probe on the retained Gate B grown row only: h=0.5, W=8, NL=25, seeds 0..3, drift=0.2, restore=0.7, source_z=3.0, gamma sweep 0, 0.05, 0.10, 0.20, 0.50, and the unnormalized final-layer detector weight ratio escape(gamma)=P_det(gamma)/P_det(0). It supports only the local detector-attenuation effect and centroid direction on this named row, not a retained complex-action branch, package-transfer closure, or physical probability claim.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T06:22:51.521314+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -100689,19 +100709,19 @@
         "gate_b_grown_joint_package_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner fixes the grown row and detector, computes the same propagation at gamma=0 and gamma>0, forms P_det as sum |amp|^2 on the final layer, and reports escape ratios against P_det(0). With attenuation factor exp(i*K*act - gamma*act), gamma=0 removes the absorptive term exactly while positive gamma changes the propagation; independent arithmetic gives aggregate ratios 0.214998, 0.046613, 0.002245, and 3.01e-7 for gamma 0.05, 0.10, 0.20, and 0.50.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0397a859f53bea308b1a28f237f0f25a7552edcebaefbfe06b64df3804728074",
       "note_path": "docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the claim is widened beyond the runner-defined finite row, if P_det is described as a normalized physical probability, if gamma=0 is asserted to independently revalidate upstream Born/Gate-B guardrails, or if the row is used as authority for a retained complex-action branch.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -100798,18 +100818,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 4
       },
       "runner_path": "scripts/gate_b_complex_action_falsifier.py",
       "title": "Gate B Complex-Action Falsifier Note",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Clean only at the narrow bounded scope. The runner constants match the source: H=0.5, PW=8, NL=25, DRIFT=0.2, RESTORE=0.7, seeds 0..3, gammas 0 through 0.5, source_strength=5e-5, and source_z=3.0. The gamma=0 guardrail is definitional within the same deterministic row and propagation formula, not an independent Born revalidation. P_det is unnormalized, but the source relies on escape(gamma)=P_det(gamma)/P_det(0), so the large raw detector weights do not break the scoped claim. Independent arithmetic on the cached aggregate output reproduces the rounded escape ratios and sharp suppression; negative delta_z is consistent with the source at positive z and the note's away-from-mass-side read. The verdict does not ratify a complex-action theory, a generated-family bridge, package-transfer closure, or normalized physical probability."
     },
     "gate_b_connectivity_tolerance_note": {
       "audit_date": "2026-05-19T21:50:56.621112+00:00",

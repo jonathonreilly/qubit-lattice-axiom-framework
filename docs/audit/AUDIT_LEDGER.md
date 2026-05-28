@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 575 |
+| **retained_bounded** | 576 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1164 |
+| unaudited | 1163 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 876 |
+| `audited_clean` | 877 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1394 |
+| `unaudited` | 1393 |
 
 | claim_type | count |
 |---|---:|
@@ -374,6 +374,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gate_b_complex_action_falsifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5198,6 +5199,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under the explicit H_unit-residue admission, Representation B is allowed to be read as the same complete projected Gamma_S^(4) coefficient as Representation A, so equating coefficients gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c), and the retained Rep-B value F_Htt^(0)=1/sqrt(6) then gives g_bare=1 on the positive branch.  _(class `A`)_
 - **chain closes:** True — The chain closes only for the bounded conditional theorem: direct dependencies are retained_bounded, and the missing H_unit-residue-to-complete-1PI bridge is stated as a load-bearing admission rather than smuggled in as a derived fact. The packet does not close, and the note does not claim to close, the complete same-projected 1PI exhaustion theorem.
 - **rationale:** The source note is correctly scoped as conditional Path-2 support: it repeatedly states that off-surface g_bare=1 depends on the H_unit-residue admission and does not prove the missing same-projected 1PI exhaustion bridge. The runner passes 25 checks, but those checks are source-firewall and coefficient-algebra checks after the admitted premise, not a first-principles computation of the bridge. Under that bounded scope, the algebra from F_Htt^(0)^2=1/6 and F_Htt^(0)^2=g_bare^2/(2N_c) to g_bare=1 is exact, and the retained_bounded direct dependencies are sufficient for bounded chain closure.
+- **auditor confidence:** high
+
+### `gate_b_complex_action_falsifier_note`
+
+- **Note:** [`GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md`](../../docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite numerical certificate for the runner-defined attenuation probe on the retained Gate B grown row only: h=0.5, W=8, NL=25, seeds 0..3, drift=0.2, restore=0.7, source_z=3.0, gamma sweep 0, 0.05, 0.10, 0.20, 0.50, and the unnormalized final-layer detector weight ratio escape(gamma)=P_det(gamma)/P_det(0). It supports only the local detector-attenuation effect and centroid direction on this named row, not a retained complex-action branch, package-transfer closure, or physical probability claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `newton-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-gate-b-complex-action-falsifier`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The runner fixes the grown row and detector, computes the same propagation at gamma=0 and gamma>0, forms P_det as sum |amp|^2 on the final layer, and reports escape ratios against P_det(0). With attenuation factor exp(i*K*act - gamma*act), gamma=0 removes the absorptive term exactly while positive gamma changes the propagation; independent arithmetic gives aggregate ratios 0.214998, 0.046613, 0.002245, and 3.01e-7 for gamma 0.05, 0.10, 0.20, and 0.50.  _(class `C`)_
+- **chain closes:** True — The chain closes at the finite bounded scope because the one-hop Gate B grown joint-package dependency is retained_bounded, the runner deterministically constructs the named row and gamma sweep, and independent arithmetic reproduces the reported escape suppression. It does not close any broader complex-action branch or physical-probability interpretation.
+- **rationale:** Clean only at the narrow bounded scope. The runner constants match the source: H=0.5, PW=8, NL=25, DRIFT=0.2, RESTORE=0.7, seeds 0..3, gammas 0 through 0.5, source_strength=5e-5, and source_z=3.0. The gamma=0 guardrail is definitional within the same deterministic row and propagation formula, not an independent Born revalidation. P_det is unnormalized, but the source relies on escape(gamma)=P_det(gamma)/P_det(0), so the large raw detector weights do not break the scoped claim. Independent arithmetic on the cached aggregate output reproduces the rounded escape ratios and sharp suppression; negative delta_z is consistent with the source at positive z and the note's away-from-mass-side read. The verdict does not ratify a complex-action theory, a generated-family bridge, package-transfer closure, or normalized physical probability.
 - **auditor confidence:** high
 
 ### `gate_b_connectivity_tolerance_note`

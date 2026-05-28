@@ -31,6 +31,12 @@ Cycle 27 science commit:
 153b8ea3c8137be8c87ccf6ed5083e0b9cf902a9
 ```
 
+Cycle 27 delivery commit:
+
+```text
+92570cc5d57e54d0428b46c1dc3c5f2a3139f747
+```
+
 Cycle 27 artifacts:
 
 - `docs/YT_ONE_HIGGS_CARRIER_RADIAL_FACTOR_NO_GO_NOTE_2026-05-28.md`

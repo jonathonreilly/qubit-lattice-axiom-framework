@@ -64,6 +64,11 @@ physical top-readout law.
 The twenty-ninth route tested whether a primitive singular no-hidden-record
 boundary intervention supplies a sharper same-surface hard-boundary support
 law for the nontrivial block.
+The thirtieth route tested whether zero-singlet `P_nt` support plus `B_x` and
+the W row force the missing radial factor.
+The thirty-first route tested whether target-size response magnitude itself
+can back-solve zero singlet weight, radial factorization, or physical
+source-orientation/sign.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -97,6 +102,8 @@ law for the nontrivial block.
 | Hard-boundary minimum-information face selector | exact support / boundary test | 2 | Landed: boundary completion has both `P_nt` and `P_0` endpoints; nearest Fisher boundary face is `P_nt`, but the nearest-face top-readout law is open |
 | Hard-boundary readout law from current geometry alone | no-go shortcut test | 3 | Pruned: nearest-face and entropy rules select `P_nt`, but purity/rank, positive-source-asymptote, and response-maximum rules select `P_0` on the same endpoint data |
 | Primitive singular no-hidden-record boundary intervention | exact support / open readout-law boundary | 2 | Landed: least-KL singular support loss on the reflection-even C3 RN/Fisher curve selects `P_nt/2`, but the primitive singular physical top-readout law remains open and the full simplex has degenerate dropped-line faces |
+| Same-surface radial factor | no-go shortcut test | 3 | Pruned: `V_top(lambda_top)=lambda_top A B_x` preserves `P_nt`, `B_x`, and the W row while varying the top coefficient |
+| Radial/readout compensation | no-go shortcut test | 3 | Pruned: target magnitude imposes only `lambda_top |3s-1|=1/sqrt(2)` and cannot certify zero singlet weight, radial factorization, or source orientation/sign |
 
 ## Stuck Fan-Out
 
@@ -135,6 +142,8 @@ law for the nontrivial block.
 | Hard-boundary minimum-information face selector | Compactify the finite RN/Fisher C3 source family and choose a boundary face | Support only; the curve has both `P_nt` and `P_0` endpoints, and nearest Fisher boundary selects `P_nt`, but nearest-face readout is a new unaccepted physical law |
 | Hard-boundary readout law from geometry alone | Ask whether current endpoint geometry makes nearest-face selection physical | Fails; same-data hard-boundary rules include `P_0` selectors, so nearest-face readout still needs an accepted physical theorem |
 | Primitive singular boundary intervention | Ask whether primitive no-hidden-record support loss chooses the top block more narrowly | Support only; reflection-even least-KL singular support loss selects `P_nt/2`, but accepting that singular readout as physical is a new law and full-simplex least-KL is degenerate |
+| Same-surface radial factor | Ask whether zero-singlet `P_nt` support plus `B_x` and W row force `lambda_top=1/sqrt(2)` | Fails; the same-source family `V_top(lambda_top)=lambda_top A B_x` varies the coefficient |
+| Radial/readout compensation | Ask whether the target-size row can infer zero singlet support or the radial factor | Fails; `lambda_top |3s-1|=1/sqrt(2)` has multiple finite completions and signed branches need a source-orientation law |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -195,3 +204,8 @@ surface does not force `V_top=(A/sqrt(2))B_x`. A same-source family with
 `V_top(lambda_top)=lambda_top A B_x` keeps the W row fixed and changes the
 top coefficient, so accepted radial generator factorization remains an open
 hard residual.
+The radial/readout compensation no-go prunes the back-solving variant of that
+shortcut: the target-size equation has multiple finite completions with
+different singlet weights and radial couplings. The next positive C3 move must
+derive independent readout/sign/radial laws, or the campaign must pivot to
+accepted strict pole-row data.

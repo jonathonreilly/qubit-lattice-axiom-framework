@@ -1,5 +1,42 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 31
+
+Scope:
+
+- C3 radial/readout compensation underdetermination no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, finite C3 projectors, singlet-weight readout family, multiple target-magnitude witnesses, signed orientation boundary, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open independent radial and top-readout laws; target-size response is not promoted into a readout, radial, or orientation theorem. |
+| Imports / support | DISCLOSED | The radial factor, zero-singlet readout/sign law, source-orientation law, and strict pole rows remain open; forbidden mass/target/fit inputs are absent. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=100 FAIL=0`
+- Full stack runner: `PASS=456 FAIL=0`
+- Adjacent runners passed: radial-factor no-go `PASS=94`,
+  nontrivial-block support `PASS=85`, source-orientation sign-selector no-go
+  `PASS=89`, trace-free centered-source no-go `PASS=89`, minimum-information
+  readout no-go `PASS=103`, strict sparse availability audit `PASS=74`,
+  direct sparse certificate `PASS=88`, first-principles transfer response
+  `PASS=56`, and same-surface matrix factorization `PASS=77`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 30
 
 Scope:

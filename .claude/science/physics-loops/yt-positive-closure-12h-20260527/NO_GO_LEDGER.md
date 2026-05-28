@@ -225,3 +225,11 @@ feed `A/sqrt(12)`.
   `y_readout=lambda_top/sqrt(3)`. The target requires
   `lambda_top=1/sqrt(2)`, so radial generator factorization remains
   load-bearing, or must be bypassed by accepted strict top/W pole rows.
+- New in the thirty-first block: target-size same-source response magnitude
+  does not certify zero-singlet readout, radial factorization, or physical
+  source orientation/sign. With singlet weight `s` and radial factor
+  `lambda_top`, the target equation is only
+  `lambda_top |3s - 1| = 1/sqrt(2)`. It admits zero-singlet standard-radial,
+  singlet-leaky same-radial, and compensating-radial completions. Positive
+  closure therefore still needs independent readout/sign/radial laws, or
+  accepted strict top/W pole rows.

@@ -1,5 +1,69 @@
 # Handoff
 
+Cycle 17 adds a thirty-first science block, not positive retained-grade
+closure. The new block prunes the shortcut
+
+```text
+target-size same-source top/W row
+  -> zero-singlet top readout, radial factorization, or signed orientation.
+```
+
+For top singlet weight `s` and radial factor `lambda_top`, finite C3 algebra
+gives:
+
+```text
+Tr(rho(s) B_x) = (3s - 1)/sqrt(6)
+y_readout(lambda_top, s) = lambda_top |3s - 1| / sqrt(3)
+```
+
+The target magnitude imposes only:
+
+```text
+lambda_top |3s - 1| = 1/sqrt(2).
+```
+
+That equation has multiple finite completions: `s=0` with
+`lambda_top=1/sqrt(2)`, `s=2/3` with the same radial factor, and `s=1/2`
+with compensating `lambda_top=sqrt(2)`. Therefore the target-size row cannot
+back-solve the missing zero-singlet physical readout law, radial generator
+factorization, or source-orientation/sign law.
+
+This is an exact negative boundary only. No `POSITIVE_CLOSURE` marker was
+written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 17 science commit:
+
+```text
+TBD_CYCLE17_SCIENCE_COMMIT
+```
+
+Cycle 17 artifacts:
+
+- `docs/YT_C3_RADIAL_READOUT_COMPENSATION_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_radial_readout_compensation_underdetermination_no_go.py`
+- `outputs/yt_c3_radial_readout_compensation_underdetermination_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 17 verification:
+
+- `python3 scripts/frontier_yt_c3_radial_readout_compensation_underdetermination_no_go.py` -> `SUMMARY: PASS=100 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=456 FAIL=0`
+- Adjacent runners passed: radial-factor no-go `PASS=94`,
+  nontrivial-block support `PASS=85`, source-orientation sign-selector no-go
+  `PASS=89`, trace-free centered-source no-go `PASS=89`, minimum-information
+  readout no-go `PASS=103`, strict sparse availability audit `PASS=74`,
+  direct sparse certificate `PASS=88`, first-principles transfer response
+  `PASS=56`, and same-surface matrix factorization `PASS=77`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+The next exact action is to derive accepted independent same-surface radial
+generator factorization plus a physical zero-singlet top-readout/sign law, or
+produce accepted strict top/W pole rows with contact, FV/IR, and model-class
+controls.
+
 Cycle 16 adds a thirtieth science block, not positive retained-grade closure.
 The new block prunes the shortcut
 

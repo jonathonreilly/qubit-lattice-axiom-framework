@@ -1,0 +1,87 @@
+{
+  "actual_current_surface_status": "no-go / open independent radial and top-readout laws",
+  "anchor_statuses": {
+    "c3_block_support": "exact-support / open nontrivial-block membership law",
+    "c3_mininfo_nogo": "no-go / open minimum-information readout law",
+    "c3_radial_nogo": "no-go / open same-surface radial generator factorization",
+    "c3_source_orientation_nogo": "no-go / open source-orientation sign law",
+    "c3_trace_free_nogo": "no-go / open trace-free source-to-zero-singlet law",
+    "first_principles": "exact-support / formal-transfer no-go",
+    "full_stack": "exact-support / open strict-response gate",
+    "strict_availability": "no-go"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_physical_source_orientation_sign_law_derived": false,
+    "accepted_same_surface_radial_generator_factorization_derived": false,
+    "accepted_zero_singlet_top_readout_law_derived": false,
+    "bare_retained_allowed": false,
+    "no_forbidden_imports": true,
+    "proposal_allowed": false,
+    "route_pruned": "target-size same-source row certifies zero-singlet readout or radial factorization",
+    "signed_row_requires_orientation_law": true,
+    "strict_top_w_response_certificate_present": false,
+    "target_magnitude_forces_radial_factor": false,
+    "target_magnitude_forces_zero_singlet": false,
+    "target_magnitude_granted": true
+  },
+  "claim_id": "yt_c3_radial_readout_compensation_underdetermination_no_go_note_2026-05-28",
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "accepted independent readout/sign/radial laws, or accepted strict same-source top/W pole rows with controls",
+  "generated_by": "scripts/frontier_yt_c3_radial_readout_compensation_underdetermination_no_go.py",
+  "no_go_audit": {
+    "narrow_route_pruned": "target-size same-source row certifies zero-singlet readout or radial factorization",
+    "reason": "The target-size equation lambda_top*|3*s-1|=1/sqrt(2) has multiple finite C3 completions with different singlet weights and radial couplings. The target row cannot be used as a back-door proof of the missing physical laws.",
+    "remaining_imports": [
+      "accepted same-surface radial generator factorization lambda_top=1/sqrt(2)",
+      "accepted physical zero-singlet top-readout law",
+      "accepted physical source-orientation/sign law if signed C3 response is used",
+      "accepted W/top pole controls or direct strict pole rows"
+    ],
+    "route_still_live": [
+      "derive independent radial/readout/sign laws on the same surface",
+      "produce accepted strict same-source top/W pole rows with controls",
+      "derive accepted microscopic backend/projectors/source-generator matrix elements"
+    ]
+  },
+  "pass_count": 100,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The target-size row is compatible with compensating singlet weight and radial coupling unless the physical readout/sign/radial laws are independently derived, or strict same-source pole rows directly certify the coefficient.",
+  "radial_readout_family": {
+    "B_x": "(C+C^2)/sqrt(6)",
+    "B_x_response": "(3*s - 1)/sqrt(6)",
+    "rho_s": "s*P_0 + (1-s)*P_nt/2",
+    "signed_readout": "lambda_top*(3*s - 1)/sqrt(3)",
+    "signed_top_row": "lambda_top*A*(3*s - 1)/sqrt(6)",
+    "target_magnitude_condition": "lambda_top*|3*s - 1| = 1/sqrt(2)",
+    "target_magnitude_forces_radial_factor": false,
+    "target_magnitude_forces_zero_singlet": false,
+    "target_magnitude_witnesses": [
+      {
+        "lambda_top": "1/sqrt(2)",
+        "signed_response": "-1/sqrt(6)",
+        "singlet_weight_s": "0"
+      },
+      {
+        "lambda_top": "1/sqrt(2)",
+        "signed_response": "+1/sqrt(6)",
+        "singlet_weight_s": "2/3"
+      },
+      {
+        "lambda_top": "sqrt(2)",
+        "signed_response": "+1/(2*sqrt(6))",
+        "singlet_weight_s": "1/2"
+      }
+    ]
+  },
+  "reachability_to_target": "prunes",
+  "route_pruned": "target-size same-source row certifies zero-singlet readout or radial factorization",
+  "signed_orientation_boundary": {
+    "negative_signed_target_solution": "s=0",
+    "orientation_sign_law_load_bearing": true,
+    "positive_signed_target_solution": "s=2/3",
+    "standard_lambda_top": "1/sqrt(2)"
+  },
+  "trace_class": "negative_route_pruning"
+}

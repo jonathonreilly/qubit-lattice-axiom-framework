@@ -57,6 +57,11 @@ closed exactly:
   V_top(lambda_top)=lambda_top A B_x with the same W row and same C3
   direction; the target row requires lambda_top=1/sqrt(2), so accepted
   generator factorization remains load-bearing
+  radial/readout compensation underdetermination no-go: the target-size
+  equation lambda_top |3s - 1| = 1/sqrt(2) has multiple finite completions
+  with different singlet weights and radial couplings, so target magnitude
+  cannot back-solve zero singlet weight, radial factorization, or physical
+  source orientation/sign
   zero-singlet top-block membership no-go: current real/reflection-even C3
   block algebra does not exclude P_0; P_nt is selected only after importing
   a sign/order law or minimum-response convention
@@ -186,6 +191,9 @@ still open:
   accepted same-surface generator factorization for the top block
   accepted same-surface radial generator factorization fixing
   lambda_top=1/sqrt(2) if the C3 route grants zero-singlet P_nt support
+  accepted independent physical readout/sign/radial laws, since target-size
+  response magnitude itself cannot certify zero singlet weight or
+  lambda_top=1/sqrt(2)
   accepted zero-singlet physical top-block membership law; complex-line
   isolation is not required for the coefficient row once P_nt support is
   supplied, but the actual surface still must exclude P_0 through a new
@@ -505,6 +513,28 @@ The target row follows only for `lambda_top=1/sqrt(2)`.  Therefore
 zero-singlet support plus the W denominator row does not by itself certify the
 coefficient; the accepted same-surface radial generator factorization remains
 open.
+
+[`YT_C3_RADIAL_READOUT_COMPENSATION_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`](YT_C3_RADIAL_READOUT_COMPENSATION_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md)
+then prunes the back-solving shortcut from target magnitude to those missing
+laws.  For a normalized physical top readout with singlet weight `s` and
+radial factor `lambda_top`,
+
+```text
+Tr(rho(s) B_x) = (3s - 1)/sqrt(6),
+y_readout(lambda_top, s) = lambda_top |3s - 1|/sqrt(3).
+```
+
+The target magnitude `1/sqrt(6)` imposes only:
+
+```text
+lambda_top |3s - 1| = 1/sqrt(2).
+```
+
+That equation has multiple finite completions, including `s=0` with
+`lambda_top=1/sqrt(2)`, `s=2/3` with the same radial factor, and `s=1/2`
+with a compensating `lambda_top=sqrt(2)`.  Therefore target-size response is
+not a substitute for an independent zero-singlet physical readout theorem,
+radial generator factorization theorem, or source-orientation/sign law.
 
 [`YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`](YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md)
 then tests that narrower blocker directly.  For every real reflection-even
@@ -889,6 +919,19 @@ source-coordinate normalization.  A same-source family
 fixed while changing the recovered top coefficient.  The current target
 requires `lambda_top=1/sqrt(2)` as an accepted generator theorem or direct
 strict pole-row result.
+
+The radial/readout compensation no-go also rules out a back-door certificate:
+the target-size equation
+
+```text
+lambda_top |3s - 1| = 1/sqrt(2)
+```
+
+does not force `s=0` or `lambda_top=1/sqrt(2)`.  It admits singlet-leaky and
+radially compensated witnesses, and the signed branch still requires an
+accepted physical source-orientation/sign law.  The next C3 target is
+therefore independent readout/sign/radial dynamics, not target-magnitude
+back-solving.
 
 The top-projector specialization makes the route boundary explicit:
 
@@ -1519,6 +1562,10 @@ proposal_allowed_reason: |
   law on the reflection-even C3 RN/Fisher curve selects P_nt and would supply
   A/sqrt(12), but the actual current surface has not accepted that
   singular-boundary readout law as the physical top law.
+  The radial/readout compensation no-go prunes target-magnitude back-solving:
+  lambda_top |3s - 1| = 1/sqrt(2) has multiple finite completions, so the
+  target-size row itself cannot certify zero singlet weight, radial
+  factorization, or signed source orientation.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface
@@ -1536,9 +1583,9 @@ proposal_allowed_reason: |
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  same-surface source-orientation/sign/readout/primitive-singular-boundary dynamics theorem deriving
-  zero-singlet physical top-block support, with accepted backend, W/top
-  projectors, and source-generator matrix elements
+  independent same-surface radial/source-orientation/sign/readout/primitive-singular-boundary
+  dynamics theorem deriving zero-singlet physical top-block support, with
+  accepted backend, W/top projectors, and source-generator matrix elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix
   element through accepted pole rows or microscopic dynamics
 backup_route: audit accepts primitive top-source premise as physical source law

@@ -104093,22 +104093,46 @@
       "verdict_rationale": "The row closes as a bounded finite-harness companion. The runner constructs the exact and no-restore geometry-sector families, propagates amplitudes, reports positive TOWARD counts for all 12 tested geometry-sector cases, and fits the post-peak distance-law tails rather than merely printing constants. Independent arithmetic on the frozen mean deltas gives slope -0.559/R^2 0.720 for exact grid and slope -0.531/R^2 0.992 for the geometry-sector stencil, matching the rounded source values. The clean scope is only this declared replay; full Gate B closure, physical-gravity readout, and universal non-label transfer remain unaudited."
     },
     "gate_b_nonlabel_connectivity_v1_h025_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T07:43:57.161147+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_nonlabel_connectivity_v1_note": "Bounded non-label connectivity V1 numerical comparison on the declared Gate-B h=0.5, W=10, NL=25, four-seed, z={3,4,5}, drift=0.2 scenario: the geometry-sector forward stencil preserves the far-field signature where naive KNN+floor fails; no universal non-label connectivity theorem, generated-geometry family theorem, or physical Gate-B closure is audited."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_nonlabel_connectivity_v1_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_nonlabel_connectivity_v1_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_nonlabel_connectivity_v1_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ad2abb29f32f95e611bfd658206022e02b5a75e49625b71b545ae18ead2b853b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-gate-b-nonlabel-v1-h025-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the finite bounded scope, the cached runner output matches the source note and the direct h=0.5 non-label/far-field dependencies are retained-bounded for their own narrower scopes.",
       "claim_id": "gate_b_nonlabel_connectivity_v1_h025_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded h=0.25 runner-defined refinement check only: exact-grid control and no-restore grown geometry-sector stencil connectivity on H=0.25, W=6, NL=25, seeds [0,1], z masses [2,3,4,5,6], drift=0.2. The audited content is only the far-field TOWARD counts and rounded F~M=1.00 readout; no full Gate B closure, universal non-label connectivity theorem, continuum refinement theorem, or physical-gravity bridge is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T07:43:57.161147+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -104117,19 +104141,19 @@
         "gate_b_farfield_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner reports exact grid 5/5 TOWARD and geometry-sector stencil 10/10 TOWARD, with both F~M values rounded to 1.00, for the stated h=0.25 finite family.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "06c5b0322bde8e161e7a322cd1e5900efaf808a946b1aeba7b0107c0324bc09a",
       "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_H025_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the row is cited as h->0 continuum refinement, full Gate B closure, universal non-label connectivity, or a physical-gravity theorem; or if the runner geometry, seed/drift set, readout, or F~M fit changes.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -104173,18 +104197,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 2,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 3
       },
       "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
       "title": "Gate B Non-Label Connectivity V1 h=0.25 Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The row is correctly scoped as a one-step h=0.25 refinement replay. Independent count checking confirms the exact-grid row has 5 z-mass tests and the grown geometry-sector row has 2 seeds times 5 z-mass tests, matching 5/5 and 10/10 in stdout; both reported F~M values round to 1.00. The runner constructs the finite geometry and stencil and does not claim a continuum limit, broad seed/drift sweep, universal non-label rule, or physical-gravity bridge, so the clean verdict is retained only as a bounded finite-runner certificate."
     },
     "gate_b_nonlabel_connectivity_v1_joint_note": {
       "audit_date": "2026-05-28T03:26:32.746930+00:00",

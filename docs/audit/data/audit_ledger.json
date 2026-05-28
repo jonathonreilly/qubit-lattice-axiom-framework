@@ -4603,44 +4603,62 @@
       "verdict_rationale": null
     },
     "alpha_s_derived_narrow_theorem_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T06:05:58.695049+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "Standalone algebraic identities over abstract positive reals alpha_bare and u_0: the vertex-power/link-power identities, geometric-mean identity, constant-ratio chain, u_0=1 boundary, unique positive inverse map, and abstract P^(1/4) substitution; no plaquette value, gauge group, beta normalization, g_bare gate, running bridge, or numerical alpha_s prediction is audited."
+        },
+        "dep_claim_type": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "3a7a4853adedcaceaa74a0376cc4422e6a7276cf11665add3bf52d3ad7dff42a",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "leibniz-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-alpha-s-derived-narrow",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The identities close exactly by substitution from the retained tadpole-power parent, but add no independent comparator, compression, or physical content beyond that parent.",
       "claim_id": "alpha_s_derived_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Algebraic P1/P2 coupling-chain and ratio corollaries over abstract positive reals alpha_bare and u_0 from retained tadpole-power definitions D1/D2 only; no plaquette value, CMT bridge, running bridge, SM alpha_s identification, or numerical prediction is audited.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T06:05:58.695049+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
       "deps": [
         "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "From D1 alpha_LM := alpha_bare/u_0 and D2 alpha_s(v) := alpha_bare/u_0^2, alpha_LM^2 = alpha_bare * alpha_s(v) and alpha_s(v)/alpha_LM = 1/u_0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "3fa313f9919148b18845f4a872eb2198c2475657493136e5d681ab3cd83bc17b",
       "note_path": "docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit only if this row gains an independent comparator, compression role, or physical bridge beyond the retained abstract tadpole-power parent.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -4752,18 +4770,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 16,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 16
       },
       "runner_path": "scripts/audit_companion_alpha_s_tadpole_power_identity.py",
       "title": "alpha_s Derived Narrow Theorem (Tadpole-Power Coupling-Chain Identity)",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: P1/P2 and the listed corollaries are exact algebraic consequences of the retained tadpole-power parent over the same abstract alpha_bare,u_0 inputs. Why this blocks: the parent scope already covers the geometric-mean / constant-ratio tadpole-power identities, so this row is not an independent positive theorem surface even though the algebra is correct. Repair target: keep the identities boxed under alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10, or add a genuinely new retained-grade physical/comparator bridge in a separate source note. Claim boundary until fixed: safe as an algebraic corollary only; no plaquette value, CMT bridge, running bridge, SM alpha_s identification, or numerical prediction is ratified."
     },
     "alpha_s_derived_note": {
       "audit_date": null,

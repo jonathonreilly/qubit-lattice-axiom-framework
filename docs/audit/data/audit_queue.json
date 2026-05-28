@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 230,
     "high": 317,
-    "leaf": 320,
+    "leaf": 319,
     "medium": 300
   },
   "cycle_break_target_count": 4,
@@ -26089,30 +26089,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "alpha_s_derived_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_alpha_s_tadpole_power_identity.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35444,6 +35420,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 42,
-  "total_pending": 1167
+  "ready_count": 41,
+  "total_pending": 1166
 }

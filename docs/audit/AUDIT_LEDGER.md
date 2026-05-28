@@ -23,12 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 573 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1167 |
+| unaudited | 1166 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
 | ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 4 |
+| `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,20 +61,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 874 |
 | `audited_conditional` | 61 |
-| `audited_decoration` | 51 |
+| `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1397 |
+| `unaudited` | 1396 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1107 |
-| `decoration` | 52 |
+| `decoration` | 53 |
 | `meta` | 236 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 698 |
+| `positive_theorem` | 697 |
 
 | criticality | count |
 |---|---:|
@@ -1064,6 +1065,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -1410,6 +1412,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², α_LM² = (α_bare/u_0)² = α_bare·(α_bare/u_0²) = α_bare·α_s(v).  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and follows immediately from the two definitional equations plus positivity for the logarithm. No physical plaquette value, running bridge, PDG comparator, or retained dependency is needed for the theorem as stated.
 - **rationale:** The theorem closes inside its explicitly narrow scope: once α_LM and α_s(v) are defined as α_bare/u_0 and α_bare/u_0² over positive scalars, T1-T3 are forced by algebra. The runner's numeric retained-value checks are not load-bearing for the abstract theorem, and the source note explicitly excludes physical derivation or external comparator claims.
+- **auditor confidence:** high
+
+### `alpha_s_derived_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic P1/P2 coupling-chain and ratio corollaries over abstract positive reals alpha_bare and u_0 from retained tadpole-power definitions D1/D2 only; no plaquette value, CMT bridge, running bridge, SM alpha_s identification, or numerical prediction is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `leibniz-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-alpha-s-derived-narrow`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** From D1 alpha_LM := alpha_bare/u_0 and D2 alpha_s(v) := alpha_bare/u_0^2, alpha_LM^2 = alpha_bare * alpha_s(v) and alpha_s(v)/alpha_LM = 1/u_0.  _(class `A`)_
+- **chain closes:** True — The identities close exactly by substitution from the retained tadpole-power parent, but add no independent comparator, compression, or physical content beyond that parent.
+- **rationale:** Issue: P1/P2 and the listed corollaries are exact algebraic consequences of the retained tadpole-power parent over the same abstract alpha_bare,u_0 inputs. Why this blocks: the parent scope already covers the geometric-mean / constant-ratio tadpole-power identities, so this row is not an independent positive theorem surface even though the algebra is correct. Repair target: keep the identities boxed under alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10, or add a genuinely new retained-grade physical/comparator bridge in a separate source note. Claim boundary until fixed: safe as an algebraic corollary only; no plaquette value, CMT bridge, running bridge, SM alpha_s identification, or numerical prediction is ratified.
+- **decoration parent:** `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30`

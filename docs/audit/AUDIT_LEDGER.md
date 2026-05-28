@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 584 |
+| **retained_bounded** | 585 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 25 |
-| unaudited | 1140 |
+| unaudited | 1139 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 889 |
+| `audited_clean` | 890 |
 | `audited_conditional` | 69 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1370 |
+| `unaudited` | 1369 |
 
 | claim_type | count |
 |---|---:|
@@ -508,6 +508,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7542,6 +7543,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note imports the external theorem package that Q is integer by Atiyah-Singer, the Bogomolny bound gives S[A] >= (8*pi^2/g^2)|Q| with self-dual saturation, BPST realizes |Q|=1, and Luescher admissibility / Wilson flow preserves lattice topology in the continuum limit.  _(class `B`)_
 - **chain closes:** False — The retained one-hop dependency closes only the bounded finite algebra/arithmetic certificate, while the source's full external theorem package also relies on global Atiyah-Singer and Luescher lattice-topology inputs that the dependency explicitly leaves as parallel context.
 - **rationale:** Issue: the source's external theorem package is broader than the retained one-hop authority, which is only a bounded certificate for finite Hodge/Bogomolny algebra, BPST radial normalization, and twisted T4 arithmetic after stated conventions. Why this blocks: the source also load-bears on global Atiyah-Singer integrality, BPST existence as an external smooth-field theorem, and Luescher admissibility / Wilson-flow lattice topology, but the dependency explicitly says those remain parallel mathematical context unless separately audited. Repair target: either add and audit a retained external-theorem authority packet for the global and lattice ingredients, or narrow this source to the finite bounded algebra already certified. Claim boundary until fixed: safe to cite the bounded 8*pi^2 normalization/algebra certificate, not the full external instanton theorem package as retained positive theorem.
+- **auditor confidence:** high
+
+### `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded operator-level identification in the retained one-qubit Pauli realization H_x=C^2: with gamma_i=sigma_i, B_i=(1/2)gamma_j gamma_k for cyclic (i,j,k) satisfies B_i=i S_i and S_i=-i B_i for S_i=sigma_i/2; the B_i and S_i commutators close with the stated signs; the proper cubic row-vector Spin(3)->SO(3) lifts and infinitesimal generators use the same Hermitian S_i data. This does not retain lattice translations, physical scale, Coleman-Mandula/HLS, arbitrary Clifford-module classification, or improper rotations as complex-linear unitary lifts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-internal-external-su2-merger-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** In the Pauli realization, sigma_j sigma_k=i epsilon_jki sigma_i gives B_i=(1/2)gamma_j gamma_k=iS_i with S_i=sigma_i/2, so [B_i,B_j]=-epsilon_ijk B_k, [S_i,S_j]=i epsilon_ijk S_k, and the row-convention spin lift has infinitesimal Hermitian generators S_i.  _(class `A`)_
+- **chain closes:** True — The retained Pauli and per-site spin-half dependencies supply the carrier and S_i=sigma_i/2; exact Pauli multiplication and conjugation checks close the B_i=iS_i and row-convention Spin(3) generator identification within the stated bounded scope.
+- **rationale:** The signs and i factors close in the positive-chirality Pauli realization: the anti-Hermitian Clifford bivectors are B_i=iS_i, while the Hermitian quantum spin generators are S_i=-iB_i. The runner performs exact symbolic Pauli, proper-cubic lift, row-vector convention, and infinitesimal generator checks, and the fresh-context audit independently confirmed the same tuple. The clean result is bounded to this operator-data identification and does not add a new framework primitive or physical spacetime/lattice claim.
 - **auditor confidence:** high
 
 ### `inverse_problem_note`

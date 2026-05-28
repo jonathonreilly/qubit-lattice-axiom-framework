@@ -45,6 +45,7 @@ Cycle 36 verification so far:
 - YAML validation passed.
 - `git diff --check` passed.
 - Science commit `74b947a0aa93eb092faa1b726595a950c9fb1964` was pushed.
+- Delivery commit `64fca181e5564787f15764403de7cf171596c62d` was pushed.
 - PR #1980 body was updated with the cycle 36 result and verification.
 - `POSITIVE_CLOSURE` remains absent.
 

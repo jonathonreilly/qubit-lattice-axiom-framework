@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1125 |
+| unaudited | 1124 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 78 |
+| ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 895 |
-| `audited_conditional` | 78 |
+| `audited_conditional` | 79 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1355 |
+| `unaudited` | 1354 |
 
 | claim_type | count |
 |---|---:|
@@ -1102,6 +1102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
+| `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -15951,6 +15952,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** If the top coefficient is the component amplitude of the unique permutation-invariant unit source on the six Q_L color-isospin components, then every component amplitude is 1/sqrt(6).  _(class `A`)_
 - **chain closes:** False — The S_6-invariant unit-vector calculation closes exactly, and an independent symbolic check reproduces the 1/sqrt(6) component amplitude. The top-coefficient claim remains conditional because the physical response bridge equating the top coefficient with this democratic Q_L component amplitude is explicitly open.
 - **rationale:** Issue: the democratic C^6 amplitude calculation is exact, but the row's top-coefficient significance depends on the open premise that the strict top response coefficient equals this democratic Q_L source component. Why this blocks: the restricted packet proves a normalized invariant-vector amplitude, not a physical Yukawa/readout theorem or response bridge. Repair target: derive a retained response theorem identifying the strict top coefficient with the democratic Q_L component amplitude, or narrow this row to a pure exact support lemma with graph-visible carrier-dimension inputs. Claim boundary until fixed: 1/sqrt(6) is an exact democratic-source amplitude candidate, not an audited top-coefficient closure.
+- **auditor confidence:** high
+
+### `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-dimensional fork distinguishing projective probability 1/6 from signed-linear democratic source tangent 1/sqrt(6), audited only as a bridge candidate for Y_T.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-yt-signed-linear-bridge-2026-05-28`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** Projective readout of the democratic Q_L ray gives component weight 1/6, while a signed linear source/action tangent gives component amplitude 1/sqrt(6); identifying the physical top Yukawa coefficient with that tangent remains the candidate bridge.  _(class `A`)_
+- **chain closes:** False — The finite vector and tangent algebra closes exactly, including an independent check that the probability is 1/6 while the signed linear tangent is 1/sqrt(6). The physical identification of the top Yukawa coefficient with that tangent is explicitly not derived in the packet.
+- **rationale:** Issue: the runner and note correctly separate the projective probability readout from the signed-linear source tangent, but the candidate bridge from that tangent to the physical top Yukawa coefficient is still open. Why this blocks: exact finite-dimensional source algebra does not by itself derive the physical response/readout rule needed for Y_T closure. Repair target: prove a retained action/source response theorem identifying the strict top coefficient with the signed linear democratic Q_L source tangent, with graph-visible dependencies for the source-action and carrier inputs. Claim boundary until fixed: this row supports the 1/sqrt(6) tangent candidate and rules out the 1/6 projective readout as the desired coefficient, but it does not close y_33 or y_t.
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

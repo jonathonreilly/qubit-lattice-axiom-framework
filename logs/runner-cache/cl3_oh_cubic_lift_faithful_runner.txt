@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/cl3_oh_cubic_lift_faithful_runner.py
+runner_sha256: 5b574315a310f4ba4ecdaad3ad61ac965a8e3919e94125ec547b30ba3a470507
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+============================================================================
+CL3 FAITHFUL LIFT OF CUBIC POINT GROUP O_h — VERIFICATION
+============================================================================
+
+Sanity: Clifford algebra and pseudoscalar
+----------------------------------------------------------------------------
+  [PASS] σ_1² = I
+  [PASS] σ_2² = I
+  [PASS] σ_3² = I
+  [PASS] {σ_1, σ_2} = 0
+  [PASS] {σ_1, σ_3} = 0
+  [PASS] {σ_2, σ_3} = 0
+  [PASS] I² = -I (Cl(3,0) pseudoscalar)  (I = 1j·I₂)
+  [PASS] Pin double-cover sanity: u γ_1 u^{-1} = -γ_1 for u = γ_1γ_2
+
+O_h structure
+----------------------------------------------------------------------------
+  [PASS] |O_h| = 48  (|O_h| = 48)
+  [PASS] All 48 O_h elements are orthogonal
+  [PASS] 24 proper rotations (det = +1)  (got 24)
+  [PASS] 24 improper rotations (det = −1)  (got 24)
+
+T1: φ_R is an algebra automorphism (Clifford relations preserved)
+----------------------------------------------------------------------------
+  [PASS] T1: Clifford relations preserved for all 48 O_h elements
+  [PASS] T1: φ_R(γᵢγⱼ) = φ_R(γᵢ)φ_R(γⱼ) for all bivectors, all R
+
+T2: Pseudoscalar character φ_R(I) = det(R) · I
+----------------------------------------------------------------------------
+  [PASS] T2: φ_R(I) = det(R) · I for all 48 O_h elements
+
+T3: Z₂ sgn(det) grading on ℝ·I
+----------------------------------------------------------------------------
+  [PASS] T3: 24 elements fix I (det=+1)  (fixers=24)
+  [PASS] T3: 24 elements flip I (det=-1)  (flippers=24)
+
+T4: O_h average kills the pure pseudoscalar line
+----------------------------------------------------------------------------
+  [PASS] T4: O_h-averaged pseudoscalar = 0 (no invariant in ℝ·I)  (||avg||_F = 0.0000e+00)
+
+============================================================================
+TOTAL: PASS=18 FAIL=0
+VERDICT: Cl(3) faithful lift of O_h holds; pseudoscalar
+transforms as det character; all 48 elements verified.
+
+----- stderr -----
+

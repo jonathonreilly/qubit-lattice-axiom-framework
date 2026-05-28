@@ -1,8 +1,66 @@
 # Emergent Lorentz Invariance from the Cubic Z³ Lattice (Conditional)
 
-**Date:** 2026-04-15 (status line narrowed 2026-04-28 per audit-lane verdict)
-**Status:** bounded conditional structural-dispersion theorem on the cubic Z³ lattice — IF exact CPT, exact/tree-level parity protection against odd-dimension LV, and the hierarchy-scale identification `a ~ 1/M_Planck` are supplied as bridge premises, THEN the registered structural-dispersion / cubic-harmonic results imply Lorentz invariance to the reported precision. The IF-conditions are not registered as audit-clean dependencies. Not a tier-ratifiable Lorentz-invariance theorem on its own.
+**Date:** 2026-04-15 (status line narrowed 2026-04-28); 2026-05-28
+(structural-dispersion core split from the Planck-suppressed estimate per
+audit verdict).
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only.
+**Status:** bounded structural-dispersion theorem on the cubic Z³ lattice.
+The **load-bearing content is the structural-dispersion core only**
+(see binding-scope header); the Planck-suppressed physical estimate and
+broad SME interpretation are **non-load-bearing**, conditional on an
+upstream Planck-pin / unit-map authority not retained here.
 **Script:** `scripts/frontier_emergent_lorentz_invariance.py`
+
+## 2026-05-28 Audit Repair (structural core split from Planck estimate)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The local dispersion, parity, CPT-support, and angular math close;
+> the Planck-suppressed physical readout still imports the
+> Planck-pin/unit-map premise from an upstream package lane that is not
+> a retained one-hop dependency for this row."*
+
+Repair instruction offered two paths: (a) add a retained dependency edge
+to `planck_scale_lane_status_note_2026-04-23` and audit that Planck-pin
+lane to retained grade, or (b) split the structural dispersion core from
+the Planck-suppressed physical estimate.
+
+Path (a) is unavailable as a citation fix: `planck_scale_lane_status_note_2026-04-23`
+is currently `unaudited`, and the retained `planck_target3_*` notes are a
+different carrier-algebra / unit-edge surface, not the Planck-pin/unit-map
+authority the physical readout needs. Auditing the Planck-pin lane to
+retained is substantive new work, out of scope here.
+
+This repair therefore takes **path (b)**:
+
+**Load-bearing (the structural-dispersion core):** on the free cubic
+`Cl(3)/Z³` staggered lattice, the runner + math close
+
+- Step 1: low-momentum dispersion expansion (isotropic at leading order);
+- Step 2: CPT support (cited `cpt_exact_note` + Hermitian/SME bridge) and
+  tree-level parity support against odd-dimension LV;
+- Step 4: the first anisotropic correction is a CPT-even, parity-even
+  **dimension-6** operator with a unique cubic-harmonic angular signature
+  at `ℓ = 4`;
+- Step 5: verified isotropy at low momentum.
+
+These are exact finite-lattice structural facts and are the binding claim.
+
+**NON-load-bearing (split off):** Step 3's Planck-suppressed physical
+estimate `|δE²/E²| ≈ (1/5)(E/M_Planck)²` and the broad SME
+Lorentz-invariance interpretation. These **import the Planck-pin / unit-map
+premise** `a = ℓ_Planck = 1/M_Planck` from an upstream package lane
+(`planck_scale_lane_status_note_2026-04-23`, currently `unaudited`) that is
+**not a retained one-hop dependency** of this row. They are recorded as a
+conditional estimate only — valid IF that Planck-pin authority is later
+retained — and are explicitly not part of the load-bearing claim.
+
+No new axioms, imports, or retained bridges are introduced. Downstream
+consumers that need the Planck-suppressed numerical estimate or the broad
+SME interpretation must wait for the Planck-pin lane to reach retained
+grade; consumers that need only the structural dispersion / dimension-6 /
+cubic-harmonic facts can cite this row directly.
 
 ## Conditional Support Claim
 
@@ -65,7 +123,14 @@ Under those premises, the leading allowed LV operator is dimension-6
 (CPT-even, P-even). This is the weakest possible lattice-induced
 Lorentz-violating correction on the checked symmetry surface.
 
-### Step 3: Planck suppression
+### Step 3: Planck suppression (NON-load-bearing — see 2026-05-28 header)
+
+**This step is NOT part of the load-bearing claim.** It imports the
+Planck-pin / unit-map premise `a = ℓ_Planck = 1/M_Planck` from the
+upstream `planck_scale_lane_status_note_2026-04-23` lane (currently
+`unaudited`, not a retained one-hop dependency of this row). The numbers
+below are a conditional estimate, valid only IF that Planck-pin authority
+is later retained.
 
 Under the package-surface Planck-pin premise `a = ℓ_Planck = 1/M_Planck`:
 
@@ -173,6 +238,10 @@ invariance framing is more important: it addresses the concern
    which predict dimension-5 (linear in E/M_Planck) dispersion modifications
 
 ## How This Changes the Paper
+
+This section is interpretation guidance, not an added load-bearing theorem.
+Any numerical Planck-suppression statement below is conditional on the
+Planck-pin/unit-map authority split out in the 2026-05-28 repair header.
 
 This result addresses the conceptual objection "how can a cubic lattice
 produce relativistic physics?" The answer is:
@@ -347,4 +416,4 @@ decisions on the upstream notes themselves.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - `planck_scale_lane_status_note_2026-04-23` (see-also; converted from markdown link to backticked form 2026-05-22 to break citation cycle-0060/0070 — the Planck-pin identification `a ~ 1/M_Planck` is cited as upstream package-lane context per Part 6d, not as a load-bearing premise of the dispersion/parity/CPT bridges proved in Parts 6a-6c; the same hierarchy-scale citation already appears explicitly backticked at the Part 6d bridge table to keep this note's runner authority on the assumed surface)
-- [planck_target3_clifford_phase_bridge_theorem_note_2026-04-25](PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
+- `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` (see-also; non-load-bearing unit-map context for the conditional Planck readout, not a dependency of the structural dispersion theorem)

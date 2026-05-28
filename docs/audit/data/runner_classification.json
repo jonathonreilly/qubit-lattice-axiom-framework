@@ -10740,6 +10740,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py"
     },
+    "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 9,
+        "B": 0,
+        "C": 4,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge.py"
+    },
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -40378,6 +40390,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge.py": {
+      "assert_count": 1,
+      "claims": [
+        "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 0,
+        "C": 4,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -57256,14 +57283,14 @@
   "stats": {
     "decoration_candidates": 357,
     "dominant_class_distribution": {
-      "A": 260,
+      "A": 261,
       "B": 294,
       "C": 766,
       "D": 303,
       "none": 441
     },
-    "runners_classified": 2064,
-    "runners_with_C": 1002,
-    "runners_with_D": 605
+    "runners_classified": 2065,
+    "runners_with_C": 1003,
+    "runners_with_D": 606
   }
 }

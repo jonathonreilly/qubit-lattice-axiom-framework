@@ -12037,6 +12037,26 @@
       "to": "higgs_mass_from_axiom_note"
     },
     {
+      "from": "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26",
+      "to": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+    },
+    {
+      "from": "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26",
+      "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26",
+      "to": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26",
+      "to": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26",
+      "to": "hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
       "to": "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
     },
@@ -58346,6 +58366,24 @@
       "runner_path": "scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py",
       "title": "Hierarchy Meron Substrate Bridge `v = M_Pl * exp(-4 pi^2)` \u2014 SU(2)/SU(3) Substrate Mismatch Narrow No-Go"
     },
+    "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26": {
+      "claim_id": "hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge_bounded_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+        "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
+        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+        "hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c41a2f9b22ba6f8461713c78fb1af412d5e15d0999e22d545838b384a690ddbe",
+      "path": "docs/HIERARCHY_SEVEN_EIGHTHS_QUARTER_FERMION_BOSON_SCALE_CONVERSION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge.py",
+      "title": "(7/8)^(1/4) as Bounded Stefan-Boltzmann Scale-Conversion Support"
+    },
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
       "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -86664,7 +86702,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 656,
+      "bounded_theorem": 657,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86673,7 +86711,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1066,
+      "bounded_theorem": 1067,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86681,10 +86719,10 @@
       "open_gate": 129,
       "positive_theorem": 592
     },
-    "edge_count": 9871,
-    "leaf_count": 817,
-    "node_count": 2594,
+    "edge_count": 9876,
+    "leaf_count": 816,
+    "node_count": 2595,
     "root_count": 866,
-    "runners_with_path": 2169
+    "runners_with_path": 2170
   }
 }

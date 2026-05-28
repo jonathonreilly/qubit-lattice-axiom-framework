@@ -1,20 +1,70 @@
 # Staggered + Wilson Determinant-Positivity Bridge Theorem Note
 
-**Date:** 2026-05-05
+**Date:** 2026-05-05 (original); 2026-05-28 (reframed as supplied-surface
+algebra; superseded meta dep removed per audit verdict).
 **Type:** positive_theorem
-**Claim scope:** Under the symmetric-canonical surface consisting of the
-canonical conventions used by
-`docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
-(Wilson term `M_W` commutes with the staggered chirality `ε`, mass term
-`m · I` proportional to the identity, balanced sublattice block
-`Λ = (Z/L_τ Z) × (Z/L_s Z)^{d_s}` with even site count and
-`n_+ = n_- = n/2`) plus the explicit structural restriction
-`M_W = r · d · I`, the Dirac operator `M = M_KS + M_W + m · I` satisfies
-`det(M) > 0` configuration-by-configuration on every SU(3) gauge
-background for any `m > 0`. The proof is a structural two-sublattice
-block decomposition; no per-configuration numerical input is required.
+**Claim scope (supplied-surface algebra):** **GIVEN** the explicitly
+supplied symmetric-canonical matrix surface — balanced sublattice block
+with even site count and `n_+ = n_- = n/2`, anti-Hermitian staggered hop
+`M_KS` with `{ε, M_KS} = 0`, Wilson term restricted to `M_W = r · d · I`
+(so it commutes with `ε`), and real mass `m · I`, `m > 0` — the Dirac
+operator `M = M_KS + M_W + m · I` has `det(M) = ∏_i (α² + σ_i²) > 0`
+configuration-by-configuration on every SU(3) gauge background, where
+`α = m + r·d` and `σ_i` are the singular values of the off-diagonal block.
+The proof is a structural two-sublattice block decomposition (classical
+linear algebra; no per-configuration numerical input, no framework axiom
+needed). **This row makes no claim that the supplied matrix surface is
+the forced framework Wilson/staggered convention** — that identification
+is out of scope here (see 2026-05-28 repair header).
 **Status authority:** independent audit lane only.
 **Primary runner:** `scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py`
+
+## 2026-05-28 Audit Repair (supplied-surface reframe; superseded dep removed)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The determinant algebra and runner checks close on the supplied
+> symmetric-canonical matrix surface, but the row's only declared
+> dependency is the superseded minimal_axioms_2026-04-11 meta note and
+> the source still imports parent canonical-surface assertions not
+> retained in the restricted packet."*
+
+Repair instruction offered two paths: (a) replace the superseded
+`minimal_axioms_2026-04-11` dependency with a current retained /
+axiom-premise authority for the matrix surface, or (b) reframe the row
+as explicitly supplied-surface algebra with no framework-convention
+authority claim.
+
+Path (a) is unavailable as a citation fix: there is no retained
+authority certifying that the symmetric-canonical `M_W = r·d·I` surface
+IS the forced framework Wilson/staggered convention (the related
+retained `staggered_only_det_positivity_case_a_note_2026-05-17` covers
+the staggered-**only** `M_KS + m I` surface, not the Wilson-extended
+`M_W = r·d·I` surface). Establishing the convention is substantive new
+work, out of scope here.
+
+This repair therefore takes **path (b)**:
+
+- The theorem is reframed as **pure supplied-surface determinant
+  algebra**: GIVEN the symmetric-canonical matrix surface as an explicit
+  hypothesis, `det(M) = ∏_i(α² + σ_i²) > 0`. This is classical linear
+  algebra (SVD / BdG-block structure; Horn-Johnson) and needs **no
+  framework axiom or convention authority**.
+- The note makes **no claim** that the supplied surface is the framework
+  Wilson/staggered convention; that identification is explicitly out of
+  scope and is the remaining open question.
+- The superseded `minimal_axioms_2026-04-11` reference is **demoted to a
+  navigational, non-load-bearing convention-name reference** (backticked,
+  no graph edge). The row's load-bearing content carries no dependency
+  on it.
+- The parent `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29`
+  (itself retyped to `no_go` on 2026-05-28) is a downstream consumer of
+  this algebra, not an upstream dependency; it remains backticked.
+
+Downstream consumers that need the Wilson-convention identification must
+wait for a retained Wilson-surface authority; consumers that need only
+the supplied-surface determinant factorization can cite this row as
+classical linear algebra.
 
 ## Why this note exists
 
@@ -44,9 +94,11 @@ symmetric-canonical surface.
 
 Adopt the parent-note conventions verbatim:
 
-- **A1 / A2 / A3 / A4** as in
-  [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) and the
-  parent reflection-positivity note. The lattice block is
+- **A1 / A2 / A3 / A4** as named in `MINIMAL_AXIOMS_2026-04-11.md`
+  (navigational convention-name reference only, backticked to drop the
+  load-bearing graph edge to that superseded meta note per the 2026-05-28
+  repair; the theorem below is convention-free supplied-surface algebra)
+  and the parent reflection-positivity note. The lattice block is
   `Λ = (Z/L_τ Z) × (Z/L_s Z)^{d_s}` with **even** total site count `n`
   and balanced sublattice partition `n_+ = n_- = n/2` under the staggered
   chirality `ε(x) = (-1)^{x_1 + ... + x_d}` (the lattice block has even
@@ -352,8 +404,10 @@ proven theorem**, not the load-bearing input.
   `docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
   (not a load-bearing dependency of this bridge note; the dependency edge
   is parent-to-bridge)
-- A_min carrier:
-  [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
+- A_min carrier: `MINIMAL_AXIOMS_2026-04-11.md` (navigational
+  convention-name reference only; backticked to drop the load-bearing
+  graph edge to this superseded meta note per the 2026-05-28 repair —
+  the theorem is convention-free supplied-surface algebra)
 - Standard linear-algebra fact (SVD, BdG block structure): textbook
   matrix analysis (Horn-Johnson; not a numerical or fitted import).
 

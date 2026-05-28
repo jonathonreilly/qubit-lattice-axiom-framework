@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 553 |
+| **retained_bounded** | 554 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1206 |
+| unaudited | 1205 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 852 |
+| `audited_clean` | 853 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1436 |
+| `unaudited` | 1435 |
 
 | claim_type | count |
 |---|---:|
@@ -744,6 +744,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `retarded_field_delay_proxy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10915,6 +10916,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The registered runner cache is complete and matches the source note's two-family table and safe-read boundary. The audited result is only the finite smoke-probe noncollapse/partial-survival statement, not a universal retarded-gravity law or refinement-stability theorem.
 - **rationale:** The current cache supports the note's bounded table exactly: the retarded field differs from the instantaneous field on both compact and refined families, but the sign/direction is row-dependent. The source already confines the claim to a causality/scheduling smoke probe and disclaims a full wave theory or universal law. Residual risk is limited to the small two-family sample and lack of assertion gates, which does not block the audited finite readout.
 - **auditor confidence:** high
+
+### `retarded_field_delay_proxy_note`
+
+- **Note:** [`RETARDED_FIELD_DELAY_PROXY_NOTE.md`](../../docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded compact retarded-field blend replay on the generated 3D DAG family with seeds=6, layers=18, nodes/layer=32, probe_layer=9, mass_layer=12, mass_count=8, K=5.0, and mix in {0.0,0.25,0.5,1.0}: the runner computes the declared intermediate-layer phase-lag table, mix=0 returns the instantaneous baseline exactly, and nonzero mix values produce nonzero finite phase-lag proxies. No gravitational-wave theory, universal redshift/delay law, physical gravity derivation, or moonshot-branch closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-retarded-field-delay-proxy-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The SHA-pinned cached runner and direct rerun both report phase_lag/amp_ratio/seeds rows: mix=0.00 -> +0.000000 rad, 1.0000, 6; mix=0.25 -> +2.644361 rad, 1.0214, 6; mix=0.50 -> -0.022984 rad, 1.1361, 6; mix=1.00 -> -0.259181 rad, 0.7282, 6. The strongest absolute mean lag is at mix=0.25, and the mix=0 branch is the instantaneous baseline by construction.  _(class `C`)_
+- **chain closes:** True — Both one-hop dependencies are now retained-bounded, the runner cache is fresh for the current SHA and the direct runner output matches it, and the finite table supports the bounded phase-lag proxy scope. The result remains a configured replay of admitted DAG/field operators, not a derivation of physical delay, redshift, or wave dynamics.
+- **rationale:** This closes only at bounded-theorem grade. The source explicitly narrows the row to one retarded-blend parameter sweep, one fixed intermediate probe patch, and the mix=0 baseline check; it also denies broad gravitational-wave authority. The runner constructs the DAG, mass/probe patches, instantaneous Laplacian field, causal-sum blend, and propagated amplitudes rather than printing constants. Independent checks verified the table arithmetic: the base lag is zero, the base amplitude ratio is one, all rows use six seeds, nonzero mix rows have nonzero lag, and the largest absolute lag is the reported mix=0.25 value. The mix=0 recovery is exact by runner construction, so it is evidence for implementation consistency only, not an independent physical theorem.
+- **auditor confidence:** medium
 
 ### `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`
 

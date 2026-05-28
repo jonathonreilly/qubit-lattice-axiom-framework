@@ -177871,11 +177871,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.976,
+      "load_bearing_score": 9.976,
       "load_bearing_step": "The cached runner reports alpha=0 weak-field recovery with exact grid and sector stencil both 3/3 TOWARD and F~M=1.00, then escape fractions 1.0002, 0.4353, 0.0903, 0.0202, 0.0000, and 0.0000 at alpha=0, 0.10, 0.30, 0.50, 2.00, and 10.00, with branch verdict viable.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "2864a1a6b16610076dd193bd8e8eeab3c664e74b6a55e178a35183dff8c031ae",
       "note_path": "docs/MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if the source promotes alpha to a derived trapping/no-return law, broadens the claim to black-hole or horizon physics, changes the alpha grid or runner values, or cites this row as physical Gate-B closure rather than a bounded proxy observation.",
@@ -234751,22 +234751,46 @@
       "verdict_rationale": "The current cache supports the note's bounded table exactly: the retarded field differs from the instantaneous field on both compact and refined families, but the sign/direction is row-dependent. The source already confines the claim to a causality/scheduling smoke probe and disclaims a full wave theory or universal law. Residual risk is limited to the small two-family sample and lack of assertion gates, which does not block the audited finite readout."
     },
     "retarded_field_delay_proxy_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T03:34:07.003292+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_absorbing_horizon_probe_note": "Bounded runner-defined Gate-B no-restore grown-family absorption probe at h=0.5, W=10, NL=25, seeds 0..3, z={3,4,5}, drift=0.2: alpha=0 recovers the runner-defined weak-field readout, alpha>=0.10 gives escape fraction below 50%, and alpha>=0.5 gives escape fraction about 0.02 or lower; no derived absorbing-horizon law, black-hole observable, strong-field threshold, or physical Gate-B closure is audited.",
+          "minimal_bidirectional_trapping_probe_note": "Bounded runner-defined Gate-B no-restore grown-family trapping proxy at h=0.5, W=10, NL=25, seeds 0..3, z={3,4,5}, drift=0.2: alpha=0 recovers the runner-defined weak-field readout, alpha>=0.10 gives escape fraction below 50%, and alpha>=0.5 gives escape fraction about 0.02 or lower. No derived no-return law, black-hole observable, strong-field trapping law, or physical Gate-B closure is audited."
+        },
+        "dep_claim_type": {
+          "minimal_absorbing_horizon_probe_note": "bounded_theorem",
+          "minimal_bidirectional_trapping_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_absorbing_horizon_probe_note": "retained_bounded",
+          "minimal_bidirectional_trapping_probe_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_absorbing_horizon_probe_note",
+          "minimal_bidirectional_trapping_probe_note"
+        ],
+        "load_bearing_score": 7.959,
+        "runner_hash": "eb10b293e7d95c9d34ac1cd1ee94ab10dd52e43a8ea5e64468ee9d018f280efc",
+        "transitive_descendants": 87
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-retarded-field-delay-proxy-20260528-r1",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Both one-hop dependencies are now retained-bounded, the runner cache is fresh for the current SHA and the direct runner output matches it, and the finite table supports the bounded phase-lag proxy scope. The result remains a configured replay of admitted DAG/field operators, not a derivation of physical delay, redshift, or wave dynamics.",
       "claim_id": "retarded_field_delay_proxy_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded compact retarded-field blend replay on the generated 3D DAG family with seeds=6, layers=18, nodes/layer=32, probe_layer=9, mass_layer=12, mass_count=8, K=5.0, and mix in {0.0,0.25,0.5,1.0}: the runner computes the declared intermediate-layer phase-lag table, mix=0 returns the instantaneous baseline exactly, and nonzero mix values produce nonzero finite phase-lag proxies. No gravitational-wave theory, universal redshift/delay law, physical gravity derivation, or moonshot-branch closure is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T03:34:07.003292+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -234775,21 +234799,21 @@
         "minimal_bidirectional_trapping_probe_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/causal_field_gravity.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.959,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The SHA-pinned cached runner and direct rerun both report phase_lag/amp_ratio/seeds rows: mix=0.00 -> +0.000000 rad, 1.0000, 6; mix=0.25 -> +2.644361 rad, 1.0214, 6; mix=0.50 -> -0.022984 rad, 1.1361, 6; mix=1.00 -> -0.259181 rad, 0.7282, 6. The strongest absolute mean lag is at mix=0.25, and the mix=0 branch is the instantaneous baseline by construction.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "64874a2348e522631917f4dced9a3ab92ed1d8a9425d61a2f626e9ce7b0bf651",
       "note_path": "docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the note is used as a gravitational-wave, redshift, physical gravity, or universal delay law; if the DAG/field/probe configuration changes; if the retarded blend is claimed as derived from retained primitives rather than admitted runner machinery; or if the stale source-status prose is updated in a way that broadens the claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -234884,18 +234908,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 1
       },
       "runner_path": "scripts/retarded_field_delay_proxy_probe.py",
       "title": "Retarded Field Delay Proxy",
       "transitive_descendants": 87,
-      "verdict_rationale": null
+      "verdict_rationale": "This closes only at bounded-theorem grade. The source explicitly narrows the row to one retarded-blend parameter sweep, one fixed intermediate probe patch, and the mix=0 baseline check; it also denies broad gravitational-wave authority. The runner constructs the DAG, mass/probe patches, instantaneous Laplacian field, causal-sum blend, and propagated amplitudes rather than printing constants. Independent checks verified the table arithmetic: the base lag is zero, the base amplitude ratio is one, all rows use six seeds, nonzero mix rows have nonzero lag, and the largest absolute lag is the reported mix=0.25 value. The mix=0 recovery is exact by runner construction, so it is evidence for implementation consistency only, not an independent physical theorem."
     },
     "retarded_field_harness_note": {
       "audit_date": null,

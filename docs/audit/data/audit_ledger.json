@@ -53772,11 +53772,11 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 5.5,
+      "load_bearing_score": 8.5,
       "load_bearing_step": "The primary runner computes alpha, R^2, and TOWARD counts for four structured-family rows, then derives mean alpha -1.154, alpha span 1.847, boundary families alt-connectivity/third-family/fourth-family, and fifth-family as the only all-TOWARD row.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "3f24d0157daf3ca87c7d2890c120fd7ccb1edf2659a32529a2dcb42acea85134",
       "note_path": "docs/DISTANCE_LAW_PORTABILITY_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if the claim is expanded to causal mechanism diagnosis, physical source-law closure, grown-family universality, or broader structured-family coverage beyond the four runner rows.",
@@ -53905,22 +53905,42 @@
       "verdict_rationale": "A fresh restricted-input audit confirmed the finite table and safe-read boundary: alt-connectivity, third-family, and fourth-family are 0/5 TOWARD while fifth-family radial is 5/5 TOWARD, and the displayed alpha/R^2 values match the runner assertions within the stated tolerance. The helper builders construct the relevant structured connectivity families, and the primary runner recomputes deltas, directions, log-log exponents, R^2, mean alpha, span, boundary-family set, and all-TOWARD set rather than printing constants. Clean status is limited to this finite computational boundary and does not ratify the mechanism explanations, physical source-law closure, or any unbounded portability/no-portability theorem."
     },
     "distance_law_preserving_third_family_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T05:53:34.995235+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "distance_law_portability_note": "Bounded finite-runner table and partial-portability boundary for scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py: on the four tested structured-family rows with b=[5,6,7,8,10], field_strength=0.004, k=5.0, beta=0.8, the runner computes alpha/R^2/TOWARD counts showing no uniform distance-tail transfer across the tested rows. This excludes causal mechanism diagnosis, physical Gate B closure, geometry-independence claims, and broader family universality."
+        },
+        "dep_claim_type": {
+          "distance_law_portability_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "distance_law_portability_note": "retained_bounded"
+        },
+        "deps": [
+          "distance_law_portability_note"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "4ec9e317a69c116c085031000112936adb8b2bacc3b6dd80868034402496368d",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "helmholtz-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-distance-law-preserving-third-family",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the fixed finite-runner scope, the primary runner constructs the drift=0.50, restore=0.90 grown family with the helper grow function, computes source-centroid shifts for the specified charges and impact parameters, and applies explicit sign/scaling/tail gates. The direct dependency is already retained_bounded, so this row closes only as a bounded theorem.",
       "claim_id": "distance_law_preserving_third_family_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Fixed finite-runner result for grow(drift=0.50, restore=0.90) over seeds [0,1,2,3,4,5] and b=[5,6,7,8,10]: under the runner's signed-source and tail gates, zero and neutral controls vanish, sign orientation and weak charge scaling pass, and the sampled distance tail has alpha=-1.150, R^2=0.971, and 5/5 TOWARD. This does not assert family-wide, geometry-independent, slit-gated, or physical distance-law universality.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T05:53:34.995235+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -53928,21 +53948,21 @@
         "distance_law_portability_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/gate_b_grown_joint_package.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 2.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The family passes both gates on the direct test: zero/neutral controls, + versus - sign orientation, +2/+1 weak scaling, alpha=-1.150, R^2=0.971, and 5/5 TOWARD.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "025db648144417c06ba2e6b4bbd34c38f115f1cf53c1077343c9e9b88d2c9659",
       "note_path": "docs/DISTANCE_LAW_PRESERVING_THIRD_FAMILY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Recheck only if the row is broadened beyond the fixed finite-runner scope; in particular, _setup_slits is unused, so any slit/barrier-gated reading needs a separate runner/audit.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -54011,18 +54031,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 2,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 5
       },
       "runner_path": "scripts/DISTANCE_LAW_PRESERVING_THIRD_FAMILY.py",
       "title": "Distance Law Preserving Third Family Note",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "This is not an unbounded positive theorem: it is a finite seeded sweep with fixed parameters and coded gate thresholds. Under that bounded scope, the chain closes. Independent check: run([]) subtracts the same free centroid so the zero control is exact; +1 and -1 at the same source node cancel the field term-by-term so the neutral control is exact; the cached computed means have plus>0, minus<0, exponent=0.99998, and a log-log tail fit over positive seed-mean deltas with alpha=-1.150, R^2=0.971, 5/5 TOWARD, satisfying the runner thresholds. The helper grow function is deterministic for the declared seeds and does not hard-code the reported observables. Residual risk is scope: _setup_slits is computed but unused, so the audit does not ratify any slit-gated replay or broader physical distance-law claim."
     },
     "distracted_napier_reconciliation_note": {
       "audit_date": null,

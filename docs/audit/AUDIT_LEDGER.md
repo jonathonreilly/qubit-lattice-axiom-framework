@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 571 |
+| **retained_bounded** | 572 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1171 |
+| unaudited | 1170 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -58,22 +58,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 872 |
+| `audited_clean` | 873 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1401 |
+| `unaudited` | 1400 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1107 |
+| `bounded_theorem` | 1108 |
 | `decoration` | 52 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 700 |
+| `positive_theorem` | 699 |
 
 | criticality | count |
 |---|---:|
@@ -280,6 +280,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dispersion_relation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `distance_law_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `distance_law_preserving_third_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_abcc_assumptions_audit_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3680,6 +3681,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the bounded table scope, the retained one-hop dependencies supply the structured-family generators, the runner computes the table from those helper geometries, and the SHA-pinned cached run exits 0 with assertions matching the source note. The architecture-specific mechanism prose is not included in the audited closure.
 - **rationale:** A fresh restricted-input audit confirmed the finite table and safe-read boundary: alt-connectivity, third-family, and fourth-family are 0/5 TOWARD while fifth-family radial is 5/5 TOWARD, and the displayed alpha/R^2 values match the runner assertions within the stated tolerance. The helper builders construct the relevant structured connectivity families, and the primary runner recomputes deltas, directions, log-log exponents, R^2, mean alpha, span, boundary-family set, and all-TOWARD set rather than printing constants. Clean status is limited to this finite computational boundary and does not ratify the mechanism explanations, physical source-law closure, or any unbounded portability/no-portability theorem.
 - **auditor confidence:** medium
+
+### `distance_law_preserving_third_family_note`
+
+- **Note:** [`DISTANCE_LAW_PRESERVING_THIRD_FAMILY_NOTE.md`](../../docs/DISTANCE_LAW_PRESERVING_THIRD_FAMILY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed finite-runner result for grow(drift=0.50, restore=0.90) over seeds [0,1,2,3,4,5] and b=[5,6,7,8,10]: under the runner's signed-source and tail gates, zero and neutral controls vanish, sign orientation and weak charge scaling pass, and the sampled distance tail has alpha=-1.150, R^2=0.971, and 5/5 TOWARD. This does not assert family-wide, geometry-independent, slit-gated, or physical distance-law universality.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `helmholtz-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-distance-law-preserving-third-family`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The family passes both gates on the direct test: zero/neutral controls, + versus - sign orientation, +2/+1 weak scaling, alpha=-1.150, R^2=0.971, and 5/5 TOWARD.  _(class `C`)_
+- **chain closes:** True — Within the fixed finite-runner scope, the primary runner constructs the drift=0.50, restore=0.90 grown family with the helper grow function, computes source-centroid shifts for the specified charges and impact parameters, and applies explicit sign/scaling/tail gates. The direct dependency is already retained_bounded, so this row closes only as a bounded theorem.
+- **rationale:** This is not an unbounded positive theorem: it is a finite seeded sweep with fixed parameters and coded gate thresholds. Under that bounded scope, the chain closes. Independent check: run([]) subtracts the same free centroid so the zero control is exact; +1 and -1 at the same source node cancel the field term-by-term so the neutral control is exact; the cached computed means have plus>0, minus<0, exponent=0.99998, and a log-log tail fit over positive seed-mean deltas with alpha=-1.150, R^2=0.971, 5/5 TOWARD, satisfying the runner thresholds. The helper grow function is deterministic for the declared seeds and does not hard-code the reported observables. Residual risk is scope: _setup_slits is computed but unused, so the audit does not ratify any slit-gated replay or broader physical distance-law claim.
+- **auditor confidence:** high
 
 ### `dm_abcc_assumptions_audit_note_2026-04-19`
 

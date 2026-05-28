@@ -27,38 +27,56 @@ Latest bounded follow-up:
 - [logs/2026-04-04-evolving-network-prototype-v5.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v5.txt)
 - [docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md)
 
+These rows are the deterministic frozen replay from the current cached runner
+output, and they match the retained companion
+[docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
+table exactly:
+
 1. **Noisy NN lattice** (positions jittered, fixed connectivity):
-   100% TOWARD at all jitter levels 0.0-0.5, F∝M=1.00, Born 0.
-   Gravity degrades gracefully (~40% weaker at jitter=0.5).
+   fixed-connectivity jitter sweep runs `47.2%`-`75.0%` TOWARD across jitter
+   `0.0`-`0.5`, with local `F~M` in the `0.47`-`0.75` band (ordered baseline
+   `66.7%` TOWARD, `F~M = 0.66`). The response is mixed rather than uniformly
+   TOWARD, and it does not show a cliff at jitter `0.5` (jitter `0.5` itself is
+   `75.0%` TOWARD).
 
 2. **Templated growth** (copy prev layer + jitter, NN offsets):
-   50-67% TOWARD, F∝M=1.00. Position drift accumulates across layers.
+   `27.8%` TOWARD, `mean_delta = -0.000016`, `F~M = 0.27`. Position drift
+   accumulates across layers and the gain goes mildly negative on this row.
 
 3. **K-NN grown** (relaxed positions, 9-nearest connectivity):
-   25% TOWARD, F∝M=1.00. Asymmetric connectivity breaks coherence.
+   `55.6%` TOWARD, `F~M = 0.55`. Asymmetric connectivity keeps the response
+   mixed.
 
 4. **Grid-snapped grown** (relaxed positions, snapped NN connectivity):
-   50% TOWARD, F∝M=1.00. Inconsistent grid assignment.
+   `58.3%` TOWARD, `mean_delta = -0.000002`, `F~M = 0.58`.
 
 ## Key insight
 
-**Position noise is tolerated. Connectivity structure is critical.**
+**Position noise is tolerated on a fixed connectivity backbone.
+Connectivity structure is the bottleneck.**
 
-The valley-linear action gives TOWARD gravity on any graph with:
-- Forward-only edges (layer l → layer l+1)
-- NN-like connectivity (fixed offsets, not distance-based neighbors)
-- Approximately uniform node spacing (within 0.5h tolerance)
+On this connectivity-vs-noise replay, a fixed connectivity backbone keeps the
+mass-side gain in a bounded mixed band (`47.2%`-`75.0%` TOWARD) across the full
+jitter sweep, with no cliff at jitter `0.5`. The local `F~M` slope stays
+positive but well below `1.00` (`0.47`-`0.75`).
 
 The growth rule must produce **structured connectivity**, not just
-regular spacing. K-nearest-neighbor connectivity on relaxed positions
-does NOT suffice — the resulting edge structure is too asymmetric.
+regular spacing. K-nearest-neighbor connectivity on relaxed positions does
+not improve on the fixed backbone on this replay (`55.6%` TOWARD), and the
+templated/snapped rows are no better, so the recomputed-from-geometry edge
+structure is the first place the response degrades.
 
-## What F∝M tells us
+## What the local `F~M` slope tells us
 
-F∝M = 1.00 transfers to ALL tested architectures, including K-NN
-grown DAGs with only 25% TOWARD. The mass scaling is more robust
-than the gravity sign — it depends on the action formula (linear in f)
-but not on the connectivity structure.
+On the current cached runner, the local `F~M` response-slope probe is **not**
+a clean `1.00` on this connectivity-vs-noise replay: it sits in a bounded
+`0.27`-`0.75` band across the jitter sweep and the architecture comparison
+(ordered `0.66`, jittered `0.75`, templated `0.27`, K-NN `0.55`,
+snapped `0.58`). It tracks the TOWARD sign rows rather than staying pinned, so
+on this replay the mass-scaling slope is not more robust than the sign and is
+not a promoted universal constant. The clean `F~M = 1.00` rows belong to the
+separate retained far-field and `h = 0.25` lanes cited below, not to this
+fixed-connectivity / recomputed-geometry replay.
 
 ## Path forward
 
@@ -78,14 +96,20 @@ Options:
 
 ## Honest status for reviewers
 
-The model can produce Newtonian gravity (F∝M=1.0, ~1/b) on grown
-geometry IF the connectivity is approximately grid-structured. The
-tolerance for position noise is high (0.5h). The remaining challenge
-is producing the grid-like connectivity from a local rule.
+On this connectivity-vs-noise replay the result is bounded and mixed, not a
+clean closure: a fixed connectivity backbone keeps the mass-side gain in a
+`47.2%`-`75.0%` TOWARD band under position noise, while recomputing
+connectivity from geometry (templated / K-NN / snapped) keeps it mixed at
+`27.8%`-`58.3%`. The clean `F∝M = 1.00`, far-field-TOWARD rows are not in this
+replay; they live in the dedicated retained far-field and `h = 0.25` lanes
+recorded in the sections below. The remaining challenge is producing
+grid-like connectivity from a local rule.
 
-This is a genuine partial result, not a failure: the geometry
-tolerance is quantified, the mass scaling transfers universally,
-and the connectivity requirement is identified.
+This is a genuine partial result, not a failure: the position-noise tolerance
+of the fixed backbone is quantified on this replay, the connectivity
+requirement is identified as the bottleneck, and the clean mass-scaling /
+far-field closure is carried by the separate retained far-field rows rather
+than by this connectivity replay.
 
 The newest v4 crystal-like growth rule is the first explicit
 structured-connectivity prototype guided by that lesson. It remains mixed and

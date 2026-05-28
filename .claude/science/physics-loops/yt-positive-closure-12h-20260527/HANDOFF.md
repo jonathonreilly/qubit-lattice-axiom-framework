@@ -26,6 +26,12 @@ Cycle 25 science commit:
 49ef3ebaa4d71a3c804b0302705f7fdc0d67463f
 ```
 
+Cycle 25 delivery commit:
+
+```text
+aeee2b20fd68855d273bd2f9aac667f6ee233296
+```
+
 Cycle 25 artifacts:
 
 - `docs/YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md`

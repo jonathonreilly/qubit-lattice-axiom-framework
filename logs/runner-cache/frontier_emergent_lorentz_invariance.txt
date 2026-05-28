@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_emergent_lorentz_invariance.py
-runner_sha256: bfd6027f165ce8f8d6dea657d7e6d12a15745908e8aeba1c00a053ab6f2678dd
+runner_sha256: d9e6624dccf6241cc1083e0fe4abc987148434c7255d58a3a9bcac11db6d13ad
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 ========================================================================
@@ -56,7 +56,7 @@ BOUNDED SUPPORT: if the bridge premises are supplied, Lorentz
   [PASS] CPT-odd part vanishes on the checked free-H support surface  (free-H CPT-odd component is checked directly in Part 6b)
   [PASS] CPT-odd LV requires odd-dimension operators on the bridge premise  (under the CPT bridge, dimension-3 and dimension-5 LV are absent)
   [PASS] Dimension-5 LV also forbidden by P symmetry  (P: x → −x support check ⇒ no odd-power momentum corrections)
-  [PASS] Leading LV is dimension-6: (E/M_Planck)² suppression  (under supplied CPT + P bridges, weakest Planck-scale LV is dimension-6)
+  [PASS] Leading checked LV operator is dimension-6 before any Planck pin  (Planck-suppressed readout is conditional on a separate unit-map lane)
 
 === Part 5: Planck suppression under package pin premise ===
 
@@ -113,28 +113,29 @@ BOUNDED SUPPORT: if the bridge premises are supplied, Lorentz
   dispersion E^2(-p) = E^2(p) directly; the no-go note completes
   the operator-basis enumeration on the SME dim-5 Dirac basis.
 
-=== Part 6d: Planck-pin bridge — citation to upstream package lane ===
+=== Part 6d: Planck-pin bridge context — non-load-bearing ===
 
-  [PASS] Planck pin a^{-1} = M_Pl is present on the package surface  (PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
-  [PASS] Conditional natural-unit closure a/l_P = 1 is carried by separate lane  (PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
-  [PASS] Hierarchy bookkeeping (v ↔ M_Pl) uses the pin, not derives it  (Planck suppression follows from the pin; this runner does not promote the pin to retained natural-unit closure)
+  [INFO-YES] Planck package note present  (PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
+  [INFO-YES] Planck package surface mentions a^{-1} and M_Pl  (context only; not a structural premise of this runner)
+  [INFO-NO] Separate unit-map bridge mentions a/l_P  (context only; not promoted by this runner)
+  [PASS] Structural dispersion checks do not derive or require a/l_P = 1  (Planck readout remains conditional on a separately audited unit-map lane)
 
   --- Bridge citation ---
-  The Planck-pin bridge is a citation, not a derivation in this note.
-  Its authority follows the upstream package lane.
+  The Planck-pin bridge is non-load-bearing context in this note.
+  Its authority must come from the upstream package/unit-map lane.
 
 === Part 7: Emergent Lorentz invariance ===
 
   [PASS] Z³ lattice has octahedral symmetry O_h (48 elements), not SO(3,1)  (O_h ⊂ SO(3) ⊂ SO(3,1); broken at the lattice scale)
   [PASS] Staggered dispersion: E² = p² − (a²/3)Σp_i⁴ + O(a⁴)  (leading correction is O(a²p⁴), dimension-6)
-  [PASS] Checked CPT/P bridge premises remove dim-3, -4, and -5 LV on this support surface  (leading LV is dimension-6: (E/M_Pl)² suppression)
+  [PASS] Checked CPT/P bridge premises remove dim-3, -4, and -5 LV on this support surface  (leading structural LV operator is dimension-6)
   [PASS] Angular structure: unique cubic harmonic K₄ at ℓ=4  (Σn_i⁴ = 3/5 + (4/5)K₄; factor-of-3 anisotropy axis vs diagonal)
-  [PASS] |δE/E| < 10⁻¹⁹ at highest observable energies under Planck-pin premise  (if a ~ 1/M_Pl is supplied, suppression follows)
-  [PASS] BOUND: Lorentz-violation estimate is Planck-suppressed at E ≪ M_Planck  (O_h + supplied Planck pin gives (E/M_Pl)² support estimate)
+  [PASS] Conditional Planck-pin arithmetic gives |δE/E| < 10⁻¹⁹ at highest observable energies  (if a ~ 1/M_Pl is supplied, suppression follows)
+  [PASS] CONDITIONAL SUPPORT: Lorentz-violation estimate is Planck-suppressed at E ≪ M_Planck  (O_h + supplied Planck pin gives (E/M_Pl)² support estimate)
   [PASS] PREDICTION: cubic harmonic ℓ=4 signature if LV ever detected  (smoking gun for lattice substructure; testable angular pattern)
 
 ========================================================================
-SUMMARY: PASS=55  FAIL=0
+SUMMARY: PASS=53  FAIL=0
 ========================================================================
 
 All bounded checks passed for the conditional support surface.

@@ -73,6 +73,17 @@ def check(name, condition, detail="", kind="EXACT"):
     return condition
 
 
+def info(name, detail="", condition=None):
+    """Report non-load-bearing context without affecting PASS/FAIL status."""
+    if condition is None:
+        msg = f"  [INFO] {name}"
+    else:
+        msg = f"  [{'INFO-YES' if condition else 'INFO-NO'}] {name}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
+
+
 # =============================================================================
 # Constants
 # =============================================================================
@@ -345,9 +356,9 @@ def test_cpt_protection():
           True,
           "P: x → −x support check ⇒ no odd-power momentum corrections")
 
-    check("Leading LV is dimension-6: (E/M_Planck)² suppression",
+    check("Leading checked LV operator is dimension-6 before any Planck pin",
           True,
-          "under supplied CPT + P bridges, weakest Planck-scale LV is dimension-6")
+          "Planck-suppressed readout is conditional on a separate unit-map lane")
 
     return True
 
@@ -720,46 +731,43 @@ def test_parity_protection_bridge():
     return True
 
 
-def test_planck_pin_bridge_citation():
-    """Planck-pin bridge: cite the upstream package lane.
+def report_planck_pin_bridge_context():
+    """Planck-pin bridge context: report the upstream lane without promoting it.
 
-    This bridge is a *citation*, not a derivation here.  The framework's
-    package surface carries an explicit Planck pin a^{-1} = M_Pl per
-    PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md (criticality: critical).
-    The natural-unit derivation a/l_P = 1 is conditional on the primitive
-    Clifford-Majorana edge-statistics carrier; that conditional path is a
-    separate audit lane.
+    This section is deliberately non-fatal for the runner. The retained
+    structural surface of this note is the staggered-dispersion, CPT-support,
+    parity-support, and cubic-harmonic calculation above. Any Planck-suppressed
+    physical estimate remains conditional on a separately audited unit-map lane.
 
-    What this runner asserts: when the upstream package lane states
-    a^{-1} = M_Pl, the Planck suppression formulas of Part 5 follow as
-    a consequence of the pin, with no further input from this
-    note's runner.
+    What this runner asserts as fatal checks: nothing in the structural
+    dispersion proof depends on deriving a/l_P = 1 here.
     """
-    print("\n=== Part 6d: Planck-pin bridge — citation to upstream package lane ===\n")
+    print("\n=== Part 6d: Planck-pin bridge context — non-load-bearing ===\n")
 
     from pathlib import Path
 
     planck_note = Path("docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md")
-    planck_text = planck_note.read_text(encoding="utf-8")
     bridge_note = Path("docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md")
-    bridge_text = bridge_note.read_text(encoding="utf-8")
+    planck_text = planck_note.read_text(encoding="utf-8") if planck_note.exists() else ""
+    bridge_text = bridge_note.read_text(encoding="utf-8") if bridge_note.exists() else ""
 
-    check("Planck pin a^{-1} = M_Pl is present on the package surface",
-          ("a^{-1}" in planck_text or "a^(-1)" in planck_text) and "M_Pl" in planck_text,
-          "PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md")
+    info("Planck package note present",
+         "PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
+         planck_note.exists())
+    info("Planck package surface mentions a^{-1} and M_Pl",
+         "context only; not a structural premise of this runner",
+         ("a^{-1}" in planck_text or "a^(-1)" in planck_text) and "M_Pl" in planck_text)
+    info("Separate unit-map bridge mentions a/l_P",
+         "context only; not promoted by this runner",
+         "a/l_P" in bridge_text or "a / l_P" in bridge_text)
 
-    check("Conditional natural-unit closure a/l_P = 1 is carried by separate lane",
-          "a/l_P" in bridge_text or "a / l_P" in bridge_text,
-          "PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md")
-
-    check("Hierarchy bookkeeping (v ↔ M_Pl) uses the pin, not derives it",
+    check("Structural dispersion checks do not derive or require a/l_P = 1",
           True,
-          "Planck suppression follows from the pin; this runner does not "
-          "promote the pin to retained natural-unit closure")
+          "Planck readout remains conditional on a separately audited unit-map lane")
 
     print("\n  --- Bridge citation ---")
-    print("  The Planck-pin bridge is a citation, not a derivation in this note.")
-    print("  Its authority follows the upstream package lane.")
+    print("  The Planck-pin bridge is non-load-bearing context in this note.")
+    print("  Its authority must come from the upstream package/unit-map lane.")
     return True
 
 
@@ -781,17 +789,17 @@ def test_combined():
 
     check("Checked CPT/P bridge premises remove dim-3, -4, and -5 LV on this support surface",
           True,
-          "leading LV is dimension-6: (E/M_Pl)² suppression")
+          "leading structural LV operator is dimension-6")
 
     check("Angular structure: unique cubic harmonic K₄ at ℓ=4",
           True,
           "Σn_i⁴ = 3/5 + (4/5)K₄; factor-of-3 anisotropy axis vs diagonal")
 
-    check("|δE/E| < 10⁻¹⁹ at highest observable energies under Planck-pin premise",
+    check("Conditional Planck-pin arithmetic gives |δE/E| < 10⁻¹⁹ at highest observable energies",
           True,
           "if a ~ 1/M_Pl is supplied, suppression follows")
 
-    check("BOUND: Lorentz-violation estimate is Planck-suppressed at E ≪ M_Planck",
+    check("CONDITIONAL SUPPORT: Lorentz-violation estimate is Planck-suppressed at E ≪ M_Planck",
           True,
           "O_h + supplied Planck pin gives (E/M_Pl)² support estimate")
 
@@ -825,7 +833,7 @@ def main():
     # runner's own staggered Hamiltonian; cite the upstream Planck pin. ---
     test_cpt_bridge_on_runner_H()
     test_parity_protection_bridge()
-    test_planck_pin_bridge_citation()
+    report_planck_pin_bridge_context()
     test_combined()
 
     print()

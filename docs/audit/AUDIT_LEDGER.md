@@ -23,12 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1135 |
+| unaudited | 1136 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
 | ~~audited_conditional~~ | 72 |
-| ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,10 +62,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 891 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 45 |
+| `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1365 |
+| `unaudited` | 1366 |
 
 | claim_type | count |
 |---|---:|
@@ -91,7 +90,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 2049
 - runners with (C) first-principles compute hits: 998
-- runners with (D) external comparator hits: 602
+- runners with (D) external comparator hits: 603
 - decoration candidates (no C, no D): 352
 
 ## Top 25 by load-bearing score (topology only)
@@ -1167,7 +1166,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -7050,19 +7048,6 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The equality R_lat(d-1)=eta(d)/zeta(d) is equivalent to 1/(2d)=2^(1-d), hence to 2^(d-2)=d, whose unique integer solution for d>=2 is d=4.  _(class `A`)_
 - **chain closes:** True — The proof reduces to elementary algebra plus the standard eta-zeta identity eta(s)/zeta(s)=1-2^(1-s). The uniqueness of d=4 follows from the monotonicity argument for 2^(d-2)-d on integers d>=4 and direct checks at d=2,3.
 - **rationale:** The load-bearing step is a genuine class-A algebraic identity over explicitly stated functions of d, with no external observed comparator, tuned scale, framework axiom, or upstream retained claim needed. The runner source performs exact rational and symbolic checks rather than merely printing a pass summary, though several runner checks are relational context outside the narrow load-bearing theorem. The note's conclusion is limited enough to close: it establishes the d=4 triple coincidence, not the broader hierarchy formula, L_t selection, or outer exponent.
-- **auditor confidence:** high
-
-### `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26`
-
-- **Note:** [`HIERARCHY_SEVEN_EIGHTHS_TWISTED_THERMAL_ZETA_PERIOD_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/HIERARCHY_SEVEN_EIGHTHS_TWISTED_THERMAL_ZETA_PERIOD_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-26.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** The audited source claim is the stated APBC/PBC thermal-zeta route in which the dimensionless bosonic and fermionic single-circle traces are defined from Matsubara frequencies and then identified with zeta(s) and lambda(s), yielding Q(s)=(2 lambda(s)-zeta(s))/zeta(s)=1-2^(1-s), Q(4)=7/8, and no other integer d>=2 giving 7/8. The pure lambda/eta arithmetic identity is not disputed, but the source's frequency-rescaling definitions are part of the audited chain.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-xhigh-fresh-hierarchy-thermal-zeta-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The source asserts zeta_B(s)=sum (2*pi*n/beta)^(-s)*(beta/2*pi)^s = zeta(s) and zeta_F(s)=sum ((2n+1)*pi/beta)^(-s)*(beta/2*pi)^s*2^s = lambda(s), then forms Q(s)=(2 lambda(s)-zeta(s))/zeta(s).  _(class `A`)_
-- **chain closes:** False — The zeta/lambda/eta identity closes after zeta_B=zeta and zeta_F=lambda are assumed, but the quoted Matsubara rescalings use the reciprocal normalization and therefore do not produce those dimensionless sums as written.
-- **rationale:** Issue: the load-bearing APBC/PBC trace definitions use the reciprocal scale factor, so the source does not actually derive zeta_B(s)=zeta(s) or zeta_F(s)=lambda(s) from the stated Matsubara frequencies. Why this blocks: the runner verifies the downstream lambda/eta arithmetic after defining lambda(s) directly, but it does not check the frequency-rescaling bridge that makes this a thermal-zeta period quotient. Repair target: correct the dimensionless Matsubara normalization in the source and runner so the bosonic and fermionic traces reduce to zeta(s) and lambda(s), then re-run the quotient and negative-scan checks. Claim boundary until fixed: safe to cite the pure arithmetic identity Q(s)=(2lambda(s)-zeta(s))/zeta(s)=1-2^(1-s) and Q(4)=7/8, but not the thermal-zeta APBC/PBC derivation as written.
 - **auditor confidence:** high
 
 ### `hierarchy_spatial_bc_and_u0_scaling_note`

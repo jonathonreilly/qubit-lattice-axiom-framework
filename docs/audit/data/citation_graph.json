@@ -58264,7 +58264,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a86404e08b07bba00bfff47e7c6b382866547c1b1d3baa74a27437edd53a7a73",
+      "note_hash": "841f0aacc6e81a4793b7488cbe7b06f1d9fb0424a9e7ab64a219073753c0d4a2",
       "path": "docs/HIERARCHY_SEVEN_EIGHTHS_TWISTED_THERMAL_ZETA_PERIOD_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-26.md",
       "runner_path": "scripts/frontier_hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow.py",
       "title": "7/8 as APBC/PBC Thermal-Zeta Period Quotient on S\u00b9_\u03b2 \u2014 Narrow Theorem"

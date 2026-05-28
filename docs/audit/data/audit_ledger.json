@@ -130217,22 +130217,50 @@
       "verdict_rationale": null
     },
     "higgs_mass_from_axiom_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T02:04:19.658584+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_from_lattice_note": "The lattice Coleman-Weinberg runner provides bounded quantitative Higgs-sector support and consistency behavior, while exact m_H closure is outside this note's authority.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "The 16 BZ corners n in {0,1}^4 partition by Hamming weight with multiplicities (1,4,6,4,1), and W(n)=2r hw(n) for symbolic Wilson coefficient r.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "higgs_from_lattice_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "higgs_from_lattice_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "higgs_from_lattice_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 24.928,
+        "runner_hash": "6409b2c35163b6ecb0e9f365437f761635933ba1baf88a7183839a657da4fe07",
+        "transitive_descendants": 486
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra over the stated inputs closes: differentiating the log potential gives the claimed curvature, division by N_taste gives 1/(4u0^2), and sqrt times v gives v/(2u0), independent of N_c. The row does not close as a retained bounded theorem because the source's canonical numerical surface uses u0=0.8776 from the plaquette readout, v=246.22 from the hierarchy/VEV lane, the V_taste/eigenvalue-degeneracy surface, and uniform N_taste=16 while those inputs are not all wired as retained one-hop authorities and some are explicitly described as non-derived or unaudited boundary content.",
       "claim_id": "higgs_mass_from_axiom_note",
-      "claim_scope": null,
+      "claim_scope": "Tree-level mean-field per-channel symmetric-point curvature scale m_curv_tree = v/(2u0) from the stated V_taste(m)=-(N_taste/2)log(m^2+4u0^2) surface, with N_c cancellation and no Higgs-mass-pole claim.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T02:04:19.658584+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -130242,20 +130270,25 @@
         "yt_ew_color_projection_theorem"
       ],
       "direct_in_degree": 32,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 24.928,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given V_taste(m)=-(N_taste/2)log(m^2+4u0^2), the symmetric-point curvature is -N_taste/(4u0^2), the per-channel magnitude is 1/(4u0^2), and rescaling by v gives m_curv_tree=v/(2u0).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "05174760ff49a822338e4a28874a7994c4603615d4fcb10949c8b87c7ebd6d51",
       "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add and retain direct dependencies for the u0/plaquette readout, v/hierarchy readout, V_taste eigenvalue-degeneracy surface, and effective N_taste boundary, or rewrite this row as a declared-input bounded theorem over those premises.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/HIGGS_MASS_DERIVED_NOTE.md",
+        "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md",
+        "docs/HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-01T15:35:35.620575+00:00",
@@ -130367,18 +130400,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 29,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 29
       },
       "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
       "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking",
       "transitive_descendants": 486,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the exact curvature algebra is correct, but the current proof packet imports the canonical u0, VEV scale v, V_taste/eigenvalue-degeneracy surface, and uniform N_taste=16 channel assumption without a closed retained dependency chain in this row. Why this blocks: the direct plaquette authority withholds a derivation of the canonical 0.5934/u0 readout, HIGGS_MASS_DERIVED_NOTE and the effective-N_taste boundary notes remain unaudited, and this row's graph links only a broad Higgs support note plus the Wilson staircase and EW kappa no-go. Repair target: either split a declared-input theorem over explicit u0, v, V_taste, and N_taste premises, or add/audit direct retained authorities for the plaquette/u0 readout, hierarchy/VEV readout, V_taste eigenvalue surface, and effective channel count. Claim boundary until fixed: the formula m_curv_tree=v/(2u0) is valid algebra on the stated mean-field surface and is not a Higgs pole; it is not yet retained as an axiom-derived canonical quantitative result."
     },
     "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02": {
       "audit_date": null,

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 536 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 830 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1464 |
+| `unaudited` | 1463 |
 
 | claim_type | count |
 |---|---:|
@@ -981,6 +981,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6273,6 +6274,24 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current Higgs runner shows that the framework has nontrivial quantitative Higgs behavior once the lattice Coleman-Weinberg mechanism is active.  _(class `C`)_
 - **chain closes:** True — For this bounded scope, the note does not claim an exact Higgs-mass derivation; it claims only that the runner exhibits nontrivial CW Higgs behavior and supports bounded studies. The completed runner computes CW potential/SSB scans and ballpark mass-ratio behavior, while its failed exact-coupling/crossing checks are consistent with the note's explicit boundary.
 - **rationale:** The source note is narrowly scoped: it is a support note for bounded Higgs quantitative behavior and explicitly excludes standalone exact m_H authority. The runner is not clean for exact Higgs closure, but that is not the claim under audit; the two completed failures show missing exact coupling/crossing closure and reinforce the boundary. Within the bounded scope, the source note and completed runner evidence close without promoting an exact Higgs-mass derivation.
+- **auditor confidence:** high
+
+### `higgs_mass_from_axiom_note`
+
+- **Note:** [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Tree-level mean-field per-channel symmetric-point curvature scale m_curv_tree = v/(2u0) from the stated V_taste(m)=-(N_taste/2)log(m^2+4u0^2) surface, with N_c cancellation and no Higgs-mass-pole claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given V_taste(m)=-(N_taste/2)log(m^2+4u0^2), the symmetric-point curvature is -N_taste/(4u0^2), the per-channel magnitude is 1/(4u0^2), and rescaling by v gives m_curv_tree=v/(2u0).  _(class `A`)_
+- **chain closes:** False — The algebra over the stated inputs closes: differentiating the log potential gives the claimed curvature, division by N_taste gives 1/(4u0^2), and sqrt times v gives v/(2u0), independent of N_c. The row does not close as a retained bounded theorem because the source's canonical numerical surface uses u0=0.8776 from the plaquette readout, v=246.22 from the hierarchy/VEV lane, the V_taste/eigenvalue-degeneracy surface, and uniform N_taste=16 while those inputs are not all wired as retained one-hop authorities and some are explicitly described as non-derived or unaudited boundary content.
+- **rationale:** Issue: the exact curvature algebra is correct, but the current proof packet imports the canonical u0, VEV scale v, V_taste/eigenvalue-degeneracy surface, and uniform N_taste=16 channel assumption without a closed retained dependency chain in this row. Why this blocks: the direct plaquette authority withholds a derivation of the canonical 0.5934/u0 readout, HIGGS_MASS_DERIVED_NOTE and the effective-N_taste boundary notes remain unaudited, and this row's graph links only a broad Higgs support note plus the Wilson staircase and EW kappa no-go. Repair target: either split a declared-input theorem over explicit u0, v, V_taste, and N_taste premises, or add/audit direct retained authorities for the plaquette/u0 readout, hierarchy/VEV readout, V_taste eigenvalue surface, and effective channel count. Claim boundary until fixed: the formula m_curv_tree=v/(2u0) is valid algebra on the stated mean-field surface and is not a Higgs pole; it is not yet retained as an axiom-derived canonical quantitative result.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `HIGGS_MASS_DERIVED_NOTE.md`
+  - `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`
+  - `HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `higgs_mechanism_note`

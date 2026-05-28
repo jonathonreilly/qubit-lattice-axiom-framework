@@ -1,575 +1,447 @@
-# Broad Gravity Bundle: Per-Signature Derivation Chains
+# Broad Gravity Bundle: Per-Signature Bounded IF-Chains
 
-**Date:** 2026-04-13
-**Status:** Per-signature honest assessment; some promotions, some kept bounded
-
----
-
-## Central Question
-
-The load-bearing issue is whether the derived action surface is strong enough
-to promote any weak-field GR signatures beyond the retained Poisson / Newton
-core. The correct question is not whether `S = L(1-\phi)` can be postulated,
-but whether it is sufficiently derived inside the framework to support WEP,
-time dilation, and the broader GR-signature bundle.
+**Date:** 2026-04-13. Admitted-input scope repair: 2026-05-28.
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome.
 
 ---
 
-## The Derivation of S = L(1-phi)
+## Binding Claim
 
-The action form is the endpoint of a four-step chain, each step of which
-is already established in the retained weak-field core.
+This note is a bounded conditional chain for the broad weak-field GR-signature
+bundle. It does **not** derive the GR signatures from the Cl(3)-on-`Z^3`
+baseline alone, and it does not claim a zero-free-parameter physical-gravity
+closure. In particular it does **not** derive `L^{-1} = G_0` from the baseline:
+that closure identity is an **admitted input**, stipulated, not derived (see
+"Admitted Inputs" below).
+
+The binding claim is the implication:
+
+> If the framework supplies the named inputs
+>
+> 1. the weak-field action/response is read through `S = L(1 - phi)`;
+> 2. the gravitational source density is the Born/mass-density readout
+>    `rho = |psi|^2`;
+> 3. the field operator and propagator Green function are related by the
+>    stipulated weak-field closure `L^{-1} = G_0`;
+>
+> then, on top of the retained weak-field Poisson/Newton core, the weak
+> equivalence principle and gravitational time dilation follow as corollaries
+> of the action `S = kL(1 - phi)`, and the conformal metric, geodesic equation,
+> and GR light-bending factor of 2 follow conditionally on the additional
+> standard lattice-to-continuum identification.
+
+The conclusion is therefore **bounded support conditional on the named
+inputs**, not an unconditional derivation of those inputs. This mirrors the
+bounded IF-chain framing of
+[`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md), whose
+conclusion is likewise an implication over the same named inputs.
+
+---
+
+## Admitted Inputs
+
+The following are **stipulated inputs**, made explicit here. They are
+**NOT derived** in this note, and they are **NOT** supplied by the one-hop
+retained-bounded dependencies cited below. The audit verdict on this row was
+that the note had promoted `L^{-1} = G_0` as if derived from the
+Cl(3)-on-`Z^3` baseline, while
+[`GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`](GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)
+treats it as stipulated, and the one-hop retained-bounded dependencies do not
+supply the promoted premise. This subsection records the inputs honestly.
+
+| Admitted input | Role | Status in this note |
+|----------------|------|---------------------|
+| `L^{-1} = G_0` | weak-field self-consistency closure (propagator sources the field it propagates in) | **stipulated input, not derived** here or from the Cl(3)-on-`Z^3` baseline |
+| `rho = \|psi\|^2` | gravitational mass-source readout (Born density) | **stipulated input**, not derived here as a physical source law |
+| `S = L(1 - phi)` | weak-field test-mass action/response | **stipulated input**, not derived here as a full test-mass action theorem |
+
+The Cl(3)-on-`Z^3` baseline and the lattice Green-function asymptotic
+`G(r) ~ 1/(4 pi r)` are external/baseline mathematical background, used in
+parallel with the framework calculation, not new framework axioms.
+
+---
+
+## What The Step-by-Step Chain Establishes (Conditional On The Admitted Inputs)
+
+The chain below records what follows **given** the admitted inputs. The status
+tags name what is an algebraic identity, what is a definition, and what is
+admitted. They do **not** assert that the admitted inputs are derived from the
+baseline.
 
 ### Step 1: H = -Delta (KS construction)
 
-**Status:** DERIVED (algebraic identity)
+**Status:** algebraic identity (baseline).
 
-Cl(3) on Z^3 uniquely gives the staggered Hamiltonian whose square is
-the negative graph Laplacian. This is established in
-`GRAVITY_CLEAN_DERIVATION_NOTE.md` Step 1 and verified to machine
-precision.
+Cl(3) on `Z^3` gives the staggered Hamiltonian whose square is the negative
+graph Laplacian. This is established in
+[`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md) Step 1
+and verified to machine precision.
 
 ### Step 2: G_0 = H^{-1} (definition of propagator)
 
-**Status:** DEFINITION
+**Status:** definition.
 
-The propagator's Green's function is the inverse of the Hamiltonian.
-Not a physical claim; it is what "propagator" means on this graph.
+The propagator's Green's function is the inverse of the Hamiltonian. Not a
+physical claim; it is what "propagator" means on this graph.
 
-### Step 3: Self-consistency L^{-1} = G_0 forces L = H = -Delta
+### Step 3: Self-consistency L^{-1} = G_0 gives L = H = -Delta
 
-**Status:** DERIVED via framework closure condition
+**Status:** ADMITTED INPUT (closure identity), not derived from the baseline.
 
-The field equation L phi = -rho must be self-consistent with the
-propagator that sources it. The unique solution is L = G_0^{-1} = H.
-This gives the Poisson equation. Established in
-`GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`.
-
-The closure condition L^{-1} = G_0 is a physical requirement of the
-framework (the propagator sources the field it propagates in), not a
-theorem of pure algebra. But it is not imported physics either -- it is
-the internal consistency condition of a self-sourced field theory.
+`L^{-1} = G_0` is the weak-field closure identity. **Given** this input, the
+unique solution is `L = G_0^{-1} = H`, which gives the Poisson equation
+(consistent with the retained Poisson/Newton core). The closure is stipulated:
+[`GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`](GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)
+records `L^{-1} = G_0` as a stipulated closure identity, not a theorem of the
+Cl(3)-on-`Z^3` baseline. Deriving it is queued as an open follow-on (see "Open
+Follow-Ons").
 
 ### Step 4: phi = GM/r (Green's function of L)
 
-**Status:** DERIVED (lattice potential theory theorem)
+**Status:** lattice potential-theory theorem (external mathematics).
 
-The Green's function of -Delta on Z^3 converges to 1/(4 pi r) at large
-distances. This is a theorem of pure mathematics, not imported physics.
-Established in `GRAVITY_CLEAN_DERIVATION_NOTE.md` Step 5.
+The Green's function of `-Delta` on `Z^3` converges to `1/(4 pi r)` at large
+distances. This is a theorem of pure mathematics. Established in
+[`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md) Step 5.
 
 ### Step 5: The propagator action S = kL(1 - phi)
 
-**Status:** DERIVED from Steps 1-4
+**Status:** follows from Steps 1-4 **given the admitted weak-field response
+input** `S = L(1 - phi)`, plus the eikonal/WKB limit.
 
-This is the critical step. The propagator on Z^3 accumulates phase along
-paths. In the free theory, the phase along a path of length L is S = kL
-where k is the wavenumber. When a background field phi is present, the
-propagator's hopping amplitude at site x is modified:
+The propagator on `Z^3` accumulates phase along paths. In the free theory, the
+phase along a path of length `L` is `S = kL`. **Given** the weak-field response
+input, when a background field `phi` is present the propagator's hopping
+amplitude at site `x` is modified:
 
     amplitude per step at x = exp(ik(1 - phi(x)))
 
-This is NOT an additional assumption. It follows from the self-consistent
-coupling:
+The supporting derivation chain (conditional on the admitted input and the
+eikonal limit) is:
 
-1. The field phi modifies the effective potential at each site.
-2. The Hamiltonian becomes H(phi) = H + phi (the field is a potential).
+1. The field `phi` modifies the effective potential at each site.
+2. The Hamiltonian becomes `H(phi) = H + phi` (the field is a potential).
 3. The propagator in the modified Hamiltonian has Green's function
-   G(phi) = (H + phi)^{-1}.
-4. In the eikonal (WKB) limit, G(phi) is approximated by the path sum
-   with phase exp(ikL(1 - phi)) along each path.
+   `G(phi) = (H + phi)^{-1}`.
+4. In the eikonal (WKB) limit, `G(phi)` is approximated by the path sum with
+   phase `exp(ikL(1 - phi))` along each path.
 
-The derivation chain for (4) is:
-- H psi = E psi is the eigenvalue problem.
-- H + phi perturbs the eigenvalues to E(1 - phi) at leading order
+The detailed first-order chain is:
+- `H psi = E psi` is the eigenvalue problem.
+- `H + phi` perturbs the eigenvalues to `E(1 - phi)` at leading order
   (first-order perturbation theory on a slowly varying field).
-- The Green's function phase is exp(ikL) with k related to E.
-- The perturbation shifts k_eff = k(1 - phi) per step.
-- The total phase along a path of length L is S = k * sum(1 - phi(x_i))
-  = kL(1 - phi_avg) where phi_avg is the average field along the path.
-- For a smooth field, phi_avg -> phi evaluated at the path location,
-  giving S = kL(1 - phi).
+- The Green's function phase is `exp(ikL)` with `k` related to `E`.
+- The perturbation shifts `k_eff = k(1 - phi)` per step.
+- The total phase along a path of length `L` is
+  `S = k * sum(1 - phi(x_i)) = kL(1 - phi_avg)`.
+- For a smooth field, `phi_avg -> phi` at the path location, giving
+  `S = kL(1 - phi)`.
 
-**Key assumption consumed:** The eikonal/WKB limit (slowly varying field
-phi, wavelength << scale of field variation). This is the standard
-semiclassical limit. It is not imported GR; it is the statement that the
-particle's wavelength is small compared to the gravitational field's
-length scale.
-
-**What is NOT assumed:**
-- The form (1 - phi) is not taken from GR. It follows from first-order
-  perturbation of the lattice Hamiltonian by the Poisson field.
-- The field phi is not a free input. It is the Poisson field from
-  Step 4, itself derived from self-consistency.
+**Limits consumed:** the eikonal/WKB limit (wavelength << field scale) and
+first-order perturbation theory (`phi << 1`, weak field). These are standard
+semiclassical limits, not imported GR. The weak-field response form
+`S = L(1 - phi)` is an **admitted input** (see "Admitted Inputs"), not derived
+here.
 
 ---
 
-## Derivation Status of S = kL(1 - phi)
+## Status Of S = kL(1 - phi)
 
-The action form S = kL(1 - phi) is DERIVED from the framework under the
-following chain:
+The action form `S = kL(1 - phi)` follows under the chain:
 
 ```
-Cl(3) on Z^3                              [AXIOM]
+Cl(3) on Z^3                              [BASELINE]
     |
     v
-H = -Delta                                [DERIVED, KS]
+H = -Delta                                [algebraic identity, KS]
     |
     v
 G_0 = H^{-1}                              [DEFINITION]
     |
     v
-L^{-1} = G_0 => L = -Delta => Poisson     [DERIVED, closure condition]
+L^{-1} = G_0 => L = -Delta => Poisson     [ADMITTED INPUT closure]
     |
     v
-phi = GM/r                                [DERIVED, lattice theorem]
+phi = GM/r                                [external lattice theorem]
     |
     v
-H(phi) = H + phi                          [DERIVED, potential coupling]
+H(phi) = H + phi                          [potential coupling]
     |
     v
-S = kL(1 - phi)                           [DERIVED, eikonal limit]
+S = kL(1 - phi)                           [given admitted S=L(1-phi) input + eikonal limit]
 ```
 
-The chain has one framework closure condition (Step 3) and one
-semiclassical limit (Step 5). Neither is imported from GR.
+The chain consumes one **admitted closure input** (Step 3), one **admitted
+weak-field response input** (Step 5 form), and one semiclassical limit. The
+admitted inputs are NOT derived from the baseline. The GR content that follows
+from `S = L(1 - phi)` inherits the **conditional** status of `S = L(1 - phi)`:
+it is bounded support **given the admitted inputs**, not an unconditional
+derivation.
 
-Therefore: Codex's statement that time dilation and WEP are "built-in
-action identities once S = L(1-f) is accepted" is technically correct
-but misses the point. S = L(1-f) is not accepted -- it is derived.
-The GR content that follows from S = L(1-f) inherits the derivation
-status of S = L(1-f) itself.
-
-However, this does NOT mean all GR signatures are equally derived.
-The chain to S = kL(1 - phi) consumes the eikonal limit. Signatures
-that require additional assumptions beyond this are conditional on those
-additional assumptions.
+This is the honest correction to the earlier framing that called the chain
+"derived" and "promoted" WEP and time dilation: those signatures are
+corollaries **conditional on the admitted inputs**, not unconditional
+derivations from the Cl(3)-on-`Z^3` baseline.
 
 ---
 
-## Per-Signature Derivation Chains
+## Per-Signature Bounded IF-Chains
 
 ### Signature 1: Weak Equivalence Principle (WEP)
 
-**Derivation chain:**
+**Conditional chain:**
 
-S = kL(1 - phi) is derived (Steps 1-5 above). The deflection of a
-test particle traversing a gravitational field is determined by the
-stationary-phase condition:
+`S = kL(1 - phi)` holds given the admitted inputs (Steps 1-5). The deflection
+of a test particle is determined by the stationary-phase condition:
 
     delta S / delta(path) = 0
 
-The deflection angle theta depends on the impact parameter b:
+The deflection angle `theta` depends on the impact parameter `b`:
 
     theta = dS/db = d/db [kL(1 - phi(b))]
 
-Since S = k * F(path, phi) where F depends only on the path geometry
-and the field, theta = k * dF/db. But the stationary-phase trajectory
-is the path where delta(kF) = 0, which is delta F = 0 (k cancels).
-Therefore the trajectory -- and hence the deflection -- is independent
-of k.
+Since `S = k * F(path, phi)`, the stationary-phase trajectory is where
+`delta F = 0` (`k` cancels). Therefore the trajectory -- and hence the
+deflection -- is independent of `k`. All particles, regardless of wavenumber,
+follow the same trajectory. This IS the weak equivalence principle.
 
-**What this means:** All particles, regardless of their wavenumber
-(energy/mass), follow the same trajectory in a gravitational field.
-This IS the weak equivalence principle.
+**Why the k-independence is non-trivial (given the inputs):** it would fail if
+the action had a k-dependent potential coupling, if `phi` depended on `k`, or
+if the Hamiltonian perturbation were nonlinear in `phi`. None occur given the
+admitted inputs: the field `phi` is the universal Poisson field, the potential
+coupling `H + phi` is linear, and the eikonal phase is `k *` (geometric
+factor).
 
-**Key point about non-triviality:** The k-independence is not trivial
-given the derivation chain. It would fail if:
-- The action had a k-dependent potential coupling (e.g., S = kL - k^2 g(phi))
-- The field phi depended on k (e.g., different species source different fields)
-- The Hamiltonian perturbation were not linear in phi
+**Inputs consumed:** the admitted inputs (`S = L(1-phi)`, `rho = |psi|^2`,
+`L^{-1} = G_0`); the eikonal limit (consumed in Step 5).
 
-None of these occur in the framework. The k-independence follows from:
-1. The field phi is the universal Poisson field (same for all k)
-2. The potential coupling is H + phi (linear, no k dependence)
-3. The eikonal phase is k * (geometric factor)
-
-The WEP is thus a CONSEQUENCE of the framework's structure, not a
-tautology of any random action.
-
-**Assumptions consumed:**
-- Steps 1-5 (the full S = kL(1-phi) chain)
-- The eikonal limit (consumed already in Step 5)
-
-**Status:** DERIVED FROM FRAMEWORK
-
-**Decision:** PROMOTE to retained weak-field corollary of the derived action.
+**Status:** **bounded support conditional on the admitted inputs.** This is a
+corollary of the conditional action chain, not an unconditional derivation from
+the baseline.
 
 ---
 
 ### Signature 2: Gravitational Time Dilation
 
-**Derivation chain:**
+**Conditional chain:**
 
-A "clock" is any oscillatory mode with frequency omega. On the lattice,
-a mode with wavenumber k at site x has local phase accumulation rate:
+A "clock" is any oscillatory mode with frequency `omega`. On the lattice, a
+mode with wavenumber `k` at site `x` has local phase accumulation rate:
 
     d(phase)/dt = k * (1 - phi(x))
 
-At a site deep in a gravitational well (phi > 0), the phase accumulation
-rate is reduced. The ratio of clock rates between two sites:
+The ratio of clock rates between two sites:
 
     tau_1/tau_2 = (1 - phi(x_1)) / (1 - phi(x_2))
 
-For a Poisson field phi = GM/(4 pi r), this gives:
+For the Poisson field `phi = GM/(4 pi r)`:
 
     tau(r)/tau(infinity) = 1 - GM/(4 pi r)
 
-This matches the Schwarzschild result g_00^{1/2} = (1 - 2GM/rc^2)^{1/2}
-to first order (weak field) with the identification phi = GM/(4 pi r) in
-lattice units.
+which matches `g_00^{1/2} = (1 - 2GM/rc^2)^{1/2}` to first order with
+`phi = GM/(4 pi r)` in lattice units.
 
-**What is derived vs built in:**
+**Derived vs admitted:** GIVEN any action `S = L(1-f)`, the time-dilation
+ratio is an algebraic identity. The non-trivial part is that the field `f` is
+the Poisson field `phi = GM/(4 pi r)` from the retained core, so the `1/r`
+profile is a prediction, not an input. But the action form `S = L(1-f)` itself
+is an **admitted input** here, not derived. The phase identity is tautological;
+the `r`-profile is supplied by the retained Poisson/Newton chain.
 
-The Codex objection is correct that GIVEN any action S = L(1-f), time
-dilation is an algebraic identity. The non-trivial content is:
-1. The field f is not arbitrary -- it is phi = GM/(4 pi r), derived from
-   Poisson self-consistency.
-2. The action form S = L(1-f) is itself derived, not postulated.
-3. The r-dependence of the time dilation (1/r profile) is a prediction.
+**Distinguishing test:** running the same time-dilation test with (a) the
+Poisson field, (b) a random field, (c) a `1/r^2` field all give ratio `= 1.0`
+for the phase identity, but only the Poisson field gives the correct
+`r`-dependence.
 
-The test that distinguishes a derived result from a tautology: run the
-same time-dilation test with (a) the Poisson field, (b) a random field,
-(c) a 1/r^2 field. All three give ratio = 1.0 for the phase identity.
-But only the Poisson field gives the correct r-dependence that matches
-Schwarzschild. The phase identity is tautological; the r-profile is
-derived.
+**Inputs consumed:** the admitted inputs; the eikonal limit; identification of
+phase rate with clock rate.
 
-**What the script tests:**
-- Phase identity (tautological, passes for any field) -- EXACT
-- The field profile phi = GM/(4 pi r) has the expected Poisson/Newton
-  large-distance form -- BOUNDED finite-lattice confirmation
-- The retained theorem claim is stronger than that finite-lattice profile
-  check because the field profile itself comes from the already-retained
-  Poisson/Newton chain
-
-**Assumptions consumed:**
-- Steps 1-5 (the full chain)
-- Identification of phase rate with clock rate (standard in any wave theory)
-
-**Status:** DERIVED FROM FRAMEWORK
-
-The tautological part (phase identity for any field) is indeed built in.
-The non-tautological part (phi = GM/4 pi r giving the correct
-Schwarzschild profile) is derived. The combined result -- gravitational
-time dilation with the correct 1/r profile -- is derived from the
-framework.
-
-**Decision:** PROMOTE to retained weak-field corollary. The note must carry the
-distinction between the phase identity (tautological) and the field
-profile (derived).
+**Status:** **bounded support conditional on the admitted inputs.** The
+tautological phase identity holds unconditionally; the matching `1/r` profile
+is supplied by the retained Poisson/Newton chain; the action form is admitted.
 
 ---
 
 ### Signature 3: Geodesic Equation
 
-**Derivation chain:**
+**Conditional chain:**
 
-In the eikonal limit, the propagator's path sum is dominated by the
-stationary-phase path. The variational equation is:
+In the eikonal limit, the path sum is dominated by the stationary-phase path:
 
     delta integral (1 - phi(x)) ds = 0
 
-where ds is the line element along the path. This is the geodesic
-equation for the conformal metric:
-
-    g_ij = (1 - phi)^2 delta_ij
-
-The Christoffel symbols of this metric are:
+This is the geodesic equation for the conformal metric
+`g_ij = (1 - phi)^2 delta_ij`, with Christoffel symbols
 
     Gamma^i_jk = -(delta^i_j partial_k phi + delta^i_k partial_j phi
                    - delta_jk partial^i phi) / (1 - phi)
 
-In the Newtonian limit (v << c, phi << 1), the geodesic equation
-reduces to:
+In the Newtonian limit the geodesic equation reduces to
+`d^2 x^i / dt^2 = -partial_i phi`, which is Newton's equation.
 
-    d^2 x^i / dt^2 = -partial_i phi
+**Additional condition:** the continuum limit (coarse-graining the lattice path
+cost to a smooth Riemannian metric) is an additional step beyond the bare
+lattice, on top of the admitted inputs.
 
-which is Newton's equation F = -grad(phi).
+**Numerical support:** Christoffel match to `O(10^{-7})` on `N=31`; Newtonian
+limit matches `-grad(phi)`; `1/b` deflection scaling confirmed
+(`beta = 1.05`, `R^2 = 0.998`).
 
-**What is derived:**
-1. The eikonal variational principle delta integral (1-phi) ds = 0
-   follows from S = kL(1-phi) via stationary phase.
-2. The identification of this with a conformal metric is standard
-   differential geometry (the variational principle for ds_eff =
-   (1-phi) ds defines a Riemannian metric g_ij = (1-phi)^2 delta_ij).
-3. The Christoffel symbols and geodesic equation follow from the metric
-   by standard Riemannian geometry.
-
-**What is conditional:**
-- The continuum limit: on the lattice, there is no smooth metric.
-  The identification of the lattice path-sum cost function with a
-  Riemannian metric requires coarse-graining to scales >> lattice
-  spacing. This is standard lattice-to-continuum physics but is an
-  additional step beyond the bare lattice action.
-- The eikonal limit was already consumed in deriving S = kL(1-phi).
-
-**Numerical support:**
-- Christoffel match to O(10^{-7}) on N=31 lattice
-- Newtonian limit: geodesic acceleration matches -grad(phi)
-- 1/b deflection scaling confirmed (beta = 1.05, R^2 = 0.998)
-
-**Assumptions consumed:**
-- Steps 1-5 (action derivation)
-- Continuum limit (coarse-graining lattice to smooth metric)
-
-**Status:** DERIVED, CONDITIONAL on continuum limit
-
-The continuum-limit step is standard physics (the same step that takes
-any lattice field theory to its continuum limit). It is not imported
-from GR. But it is an additional step beyond the bare lattice framework.
-
-**Decision:** KEEP BOUNDED (conditionally derived). The conditionality
-is mild -- it is the standard lattice-to-continuum step -- but it is
-real. The note should state: "The geodesic equation follows from the
-derived action via stationary phase and standard continuum-limit
-identification. The continuum step is standard but is an additional
-assumption beyond the bare lattice framework."
+**Status:** **bounded support conditional on the admitted inputs and the
+standard continuum limit.**
 
 ---
 
 ### Signature 4: Light Bending (Factor of 2)
 
-**Derivation chain:**
+**Conditional chain:**
 
-The famous GR prediction is that light bending is twice the Newtonian
-value: theta_GR = 4GM/(bc^2) vs theta_Newton = 2GM/(bc^2).
+The temporal contribution gives the Newtonian deflection
+`theta_1 = 2GM/(4 pi b)`. The spatial metric contribution
+`g_ij = (1 - phi)^2 delta_ij`, if it holds, gives total deflection
+`theta_total = 2 theta_1 = 4GM/(4 pi b)`.
 
-In the framework:
-- The temporal contribution (from S = kL(1-phi)) gives the Newtonian
-  deflection theta_1 = 2GM/(4 pi b) in lattice units.
-- The spatial metric contribution requires g_ij = (1-phi)^2 delta_ij.
-  If this holds, the total deflection for a null ray is:
-  theta_total = 2 * theta_1 = 4GM/(4 pi b).
+The conformal spatial metric follows from the isotropy of the action (the
+scalar `phi` couples the same in all directions), the effective distance per
+step `d_eff = a(1 - phi(x))`, and the continuum limit.
 
-**The spatial metric derivation:**
+**Additional conditions:** the continuum limit (as in Signature 3) plus the
+null-geodesic identification (mapping high-k lattice modes to null rays).
 
-The conformal spatial metric g_ij = (1-phi)^2 delta_ij follows from
-the propagator's action structure:
+**Numerical support:** deflection ratio (full propagator / Newtonian)
+`= 1.985 +/- 0.012` at large impact parameters, consistent with factor 2.
 
-1. The action per lattice step at site x in direction mu is:
-   S_step = k * a * (1 - phi(x))
-   where a is the lattice spacing.
-
-2. This is isotropic: the same factor (1-phi) applies in all directions.
-   (The field phi is a scalar; it does not couple differently to
-   different spatial directions.)
-
-3. The effective distance per step is d_eff = a * (1 - phi(x)).
-
-4. The effective metric in the continuum limit is therefore:
-   ds_eff^2 = (1 - phi)^2 (dx^2 + dy^2 + dz^2) = (1-phi)^2 delta_ij dx^i dx^j
-
-5. For a null ray, the total deflection integrates over both temporal
-   and spatial phases, giving factor 2.
-
-**What is conditional:**
-- The spatial metric identification requires the same continuum-limit
-  step as the geodesic equation (Signature 3).
-- The null-geodesic identification requires mapping the lattice
-  propagator's high-k (short-wavelength) modes to null rays of the
-  effective metric.
-
-**Numerical support:**
-- Deflection ratio (full propagator / Newtonian) = 1.985 +/- 0.012
-  at large impact parameters
-- Consistent with factor 2
-
-**Assumptions consumed:**
-- Steps 1-5 (action derivation)
-- Continuum limit (same as geodesic)
-- Null-geodesic identification (high-k mode = null ray)
-
-**Status:** CONDITIONAL
-
-The factor of 2 follows from the spatial metric, which follows from
-the isotropy of the action, which is derived. But the continuum-limit
-step and the null-geodesic identification are additional conditions.
-
-**Decision:** KEEP BOUNDED (conditionally derived, same conditions as
-geodesic equation plus null-ray identification).
+**Status:** **bounded support conditional on the admitted inputs, the continuum
+limit, and the null-geodesic identification.**
 
 ---
 
-### Signature 5: Conformal Metric g_ij = (1-phi)^2 delta_ij
+### Signature 5: Conformal Metric g_ij = (1 - phi)^2 delta_ij
 
-**Derivation chain:**
+**Conditional chain:**
 
-This is the underlying structure that supports both geodesics and light
-bending. Its derivation is:
+The action `S = kL(1 - phi)` modifies effective distances by `(1 - phi)`,
+isotropically; in the continuum limit this defines the Riemannian metric
+`g_ij = (1 - phi)^2 delta_ij`, with temporal `g_00 = -(1 - phi)^2`, giving the
+conformal Minkowski form
+`ds^2 = -(1 - phi)^2 dt^2 + (1 - phi)^2 dx^2`.
 
-1. The action S = kL(1-phi) modifies effective distances by factor (1-phi).
-2. The modification is isotropic (same in all spatial directions).
-3. In the continuum limit, this defines a Riemannian metric:
-   g_ij = (1-phi)^2 delta_ij (conformal to flat space).
-4. The temporal component is g_00 = -(1-phi)^2 (from the phase rate).
-5. The full metric is ds^2 = -(1-phi)^2 dt^2 + (1-phi)^2 dx^2,
-   which is conformal Minkowski.
+**Additional condition:** the continuum limit (lattice path cost -> smooth
+Riemannian metric).
 
-**What is derived:**
-- The isotropy of the field coupling (from Poisson = isotropic Laplacian)
-- The (1-phi) factor per step (from the action derivation)
-- The conformal structure (mathematically forced by isotropy + scalar coupling)
+**Numerical support:** anisotropy `< 0.4%`; matches weak-field Schwarzschild in
+isotropic coordinates.
 
-**What is conditional:**
-- The continuum limit (lattice path cost -> smooth Riemannian metric)
-
-**Numerical support:**
-- Anisotropy < 0.4%
-- Matches weak-field Schwarzschild in isotropic coordinates
-
-**Assumptions consumed:**
-- Steps 1-5 + continuum limit
-
-**Status:** CONDITIONAL
-
-**Decision:** KEEP BOUNDED. The conformal metric is the central
-conditional result; promoting it would promote geodesics and light
-bending with it. The continuum-limit condition is standard but real.
+**Status:** **bounded support conditional on the admitted inputs and the
+standard continuum limit.**
 
 ---
 
 ## Summary Table
 
-| Signature | Derivation chain | Additional assumptions | Status | Decision |
-|-----------|-----------------|----------------------|--------|----------|
-| WEP | S = kL(1-phi) derived; k cancels in delta S = 0 | Eikonal (already in action derivation) | DERIVED FROM FRAMEWORK | **PROMOTE (weak-field corollary)** |
-| Time dilation | Phase rate = k(1-phi); phi = GM/4 pi r derived | Eikonal (already in action derivation); clock = oscillatory mode | DERIVED FROM FRAMEWORK | **PROMOTE (weak-field corollary)** |
-| Geodesic equation | Stationary phase of S gives conformal geodesics | Continuum limit (lattice -> smooth metric) | CONDITIONAL | KEEP BOUNDED |
-| Light bending (x2) | Spatial metric from isotropy; null ray integration | Continuum limit + null-geodesic identification | CONDITIONAL | KEEP BOUNDED |
-| Conformal metric | Action isotropy + scalar coupling -> conformal | Continuum limit | CONDITIONAL | KEEP BOUNDED |
+| Signature | Conditional chain | Conditions beyond admitted inputs | Status |
+|-----------|-------------------|-----------------------------------|--------|
+| WEP | `S = kL(1-phi)` given admitted inputs; `k` cancels in `delta S = 0` | eikonal (already in chain) | bounded support conditional on admitted inputs |
+| Time dilation | phase rate `= k(1-phi)`; `phi = GM/4 pi r` from retained core | eikonal; clock = oscillatory mode | bounded support conditional on admitted inputs |
+| Geodesic equation | stationary phase gives conformal geodesics | + continuum limit | bounded support conditional on admitted inputs + continuum limit |
+| Light bending (x2) | spatial metric from isotropy; null-ray integration | + continuum limit + null-geodesic identification | bounded support conditional on admitted inputs + those conditions |
+| Conformal metric | action isotropy + scalar coupling -> conformal | + continuum limit | bounded support conditional on admitted inputs + continuum limit |
 
 ---
 
-## What Is Actually Proved
+## What Is Actually Established (Conditional)
 
-**Promotable to derived (2 signatures):**
+**Given the admitted inputs**, two signatures follow as corollaries of the
+conditional action chain:
 
-1. **WEP:** The deflection of any test particle in the framework's
-   gravitational field is independent of its wavenumber k. This follows
-   from S = kL(1-phi) which is derived from the framework's
-   self-consistency chain. The k-independence is not a tautology of
-   an arbitrary action; it requires the specific structure of the
-   framework (universal Poisson field, linear potential coupling, no
-   k-dependent terms in the Hamiltonian).
+1. **WEP:** the deflection of any test particle is independent of its
+   wavenumber `k`. The k-independence requires the specific structure that the
+   admitted inputs supply (universal Poisson field, linear potential coupling,
+   no k-dependent terms). It is bounded support conditional on the admitted
+   inputs, not an unconditional derivation from the baseline.
 
-2. **Time dilation:** The phase accumulation rate in a gravitational well
-   is k(1 - phi(r)) where phi(r) = GM/(4 pi r) is derived from Poisson
-   self-consistency. The 1/r profile matching Schwarzschild g_00 is a
-   prediction, not an input. The phase identity itself is tautological
-   but the field profile is derived.
+2. **Time dilation:** the phase accumulation rate in a gravitational well is
+   `k(1 - phi(r))` with `phi(r) = GM/(4 pi r)` from the retained Poisson/Newton
+   chain. The phase identity is tautological; the `1/r` profile is supplied by
+   the retained core; the action form is admitted.
 
-**Kept bounded (3 signatures):**
-
-3. **Geodesic equation:** Conditionally derived. The stationary-phase
-   path matches conformal geodesics, but the identification of the
-   lattice path cost with a smooth Riemannian metric requires the
-   standard continuum-limit step.
-
-4. **Light bending (factor of 2):** Conditionally derived. Requires
-   the conformal spatial metric plus the null-geodesic identification.
-   Both are physically motivated but are additional conditions.
-
-5. **Conformal metric:** Conditionally derived. The central conditional
-   result. The isotropy and scalar coupling are derived; the continuum
-   identification is the condition.
+**Conditional on the admitted inputs plus the standard continuum limit
+(and null-geodesic identification for light bending):** geodesic equation,
+light bending (factor 2), conformal metric.
 
 ---
 
 ## Assumptions
 
-### Framework axiom
-- Cl(3) on Z^3
+### Baseline
+- Cl(3) on `Z^3`.
 
-### Framework closure condition
-- Self-consistency: L^{-1} = G_0 (the propagator sources the field it
-  propagates in)
+### Admitted inputs (stipulated, NOT derived here; see "Admitted Inputs")
+- `L^{-1} = G_0` (weak-field self-consistency closure).
+- `rho = |psi|^2` (gravitational mass-source readout).
+- `S = L(1 - phi)` (weak-field test-mass response).
 
-### Consumed in deriving S = kL(1-phi)
-- Eikonal / WKB limit (wavelength << gravitational field scale)
-- First-order perturbation theory (phi << 1, weak field)
+### Limits consumed in the conditional action chain
+- Eikonal / WKB limit (wavelength << gravitational field scale).
+- First-order perturbation theory (`phi << 1`, weak field).
 
-### Additional for Tier 3 (geodesic, light bending, conformal metric)
-- Continuum limit (lattice path cost -> smooth Riemannian metric)
-- Null-geodesic identification (light bending only)
-
----
-
-## What Remains Open
-
-1. **Strong-field regime:** phi ~ 1 breaks the weak-field expansion.
-   Horizons, frame dragging, post-Newtonian corrections not covered.
-
-2. **Full propagator WEP:** The eikonal WEP is exact. Whether
-   dispersive O(k^2 a^2) corrections break WEP for finite-wavelength
-   particles on the lattice is an open question (current numerics
-   inconclusive at N=31).
-
-3. **Post-Newtonian corrections:** O(phi^2) terms in the action would
-   give 1PN corrections. Not yet computed from the lattice path sum.
-
-4. **Dynamic sector:** Gravitational waves require promoting Poisson to
-   d'Alembertian (Lorentz-covariant wave equation). This is a separate
-   derivation lane.
+### Additional conditions for the conditional signatures
+- Continuum limit (lattice path cost -> smooth Riemannian metric).
+- Null-geodesic identification (light bending only).
 
 ---
 
-## How This Changes The Paper
+## Open Follow-Ons
 
-**Before this note:**
-Codex says broad gravity is bounded. WEP and time dilation are "built-in
-action identities."
+To promote beyond the bounded conditional chain, future work would need
+retained bridge theorems for the admitted inputs and conditions:
 
-**After this note:**
-The action S = kL(1-phi) is derived, not postulated. Two of the five
-GR signatures (WEP, time dilation) are promoted from "built-in
-identities of an accepted action" to "derived consequences of the
-framework's self-consistency chain." Three signatures (geodesic,
-conformal metric, light bending) remain conditionally derived (bounded
-on the standard continuum-limit step).
+1. **Derive `L^{-1} = G_0` from the Cl(3)-on-`Z^3` baseline** rather than
+   stipulating it as a weak-field closure identity. This is the load-bearing
+   admitted input flagged by the audit and is the primary open follow-on.
+2. Derive the physical gravitational source map `rho = |psi|^2`.
+3. Derive the weak-field test-mass response `S = L(1 - phi)`.
+4. Discharge the continuum-limit and null-geodesic identifications with
+   explicit lattice-to-continuum bridge theorems.
 
-**Paper-safe wording:**
+### Other open items (strong field / dynamics)
 
-> The framework derives the weak equivalence principle and gravitational
-> time dilation as consequences of the self-consistently sourced lattice
-> action S = kL(1 - phi), where phi is the Poisson field uniquely
-> determined by propagator self-consistency. The conformal metric,
-> geodesic equation, and GR light-bending factor of 2 follow
-> conditionally upon the standard lattice-to-continuum identification.
-> Strong-field gravity remains open.
-
----
-
-## Explicit Decisions
-
-1. WEP: **PROMOTE** -- retained weak-field corollary; k-independence is non-trivial
-2. Time dilation: **PROMOTE** -- retained weak-field corollary; field profile is derived, not just phase identity
-3. Geodesic equation: **KEEP BOUNDED** -- conditional on continuum limit
-4. Light bending (factor 2): **KEEP BOUNDED** -- conditional on conformal metric + null identification
-5. Conformal metric: **KEEP BOUNDED** -- conditional on continuum limit
+1. **Strong-field regime:** `phi ~ 1` breaks the weak-field expansion. Horizons,
+   frame dragging, post-Newtonian corrections not covered.
+2. **Full propagator WEP:** the eikonal WEP is exact; whether dispersive
+   `O(k^2 a^2)` corrections break WEP for finite-wavelength particles on the
+   lattice is open (numerics inconclusive at `N=31`).
+3. **Post-Newtonian corrections:** `O(phi^2)` terms in the action would give 1PN
+   corrections; not yet computed from the lattice path sum.
+4. **Dynamic sector:** gravitational waves require promoting Poisson to
+   d'Alembertian (Lorentz-covariant wave equation); a separate derivation lane.
 
 ---
 
 ## Commands Run
 
 ```bash
-cd /Users/jonBridger/Toy\ Physics
 python3 scripts/frontier_broad_gravity.py
 ```
 
-## Audit dependency repair links
+## Citations
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This note's bounded IF-chain consumes the named one-hop authorities. The audit
+verdict was that these one-hop retained-bounded dependencies do **not** supply
+the promoted premise `L^{-1} = G_0`; that premise is recorded as an admitted
+input above.
 
 - [gravity_clean_derivation_note](GRAVITY_CLEAN_DERIVATION_NOTE.md) —
-  this note's Step 1 ("Cl(3) on Z^3 uniquely gives the staggered
-  Hamiltonian whose square is the negative graph Laplacian") and Step 5
-  ("the propagator action S = kL(1 - phi)") consume gravity_clean's
-  Steps 1 and 5 directly (see inline references at lines ~27-29 and
-  ~59 above). gravity_clean is the upstream chain composer; this note
-  is downstream. Direction in citation graph: broad_gravity →
-  gravity_clean (consumer → producer). The reverse edge in
-  gravity_clean's Citations section was removed in 2026-05-05 as a
-  misattribution that created a length-2 cycle.
+  this note's Step 1 ("Cl(3) on `Z^3` uniquely gives the staggered Hamiltonian
+  whose square is the negative graph Laplacian") and Step 5 ("the propagator
+  action `S = kL(1 - phi)`") consume gravity_clean's Steps 1 and 5 directly.
+  gravity_clean is the upstream chain composer; this note is downstream.
+  Direction in citation graph: broad_gravity -> gravity_clean
+  (consumer -> producer). The reverse edge in gravity_clean's Citations section
+  was removed in 2026-05-05 as a misattribution that created a length-2 cycle.
 - [gravity_full_self_consistency_note](GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md)
-  — supplies the broader self-consistency surface; correct upstream.
+  — supplies the broader self-consistency surface and records `L^{-1} = G_0` as
+  a stipulated closure identity, not a theorem derived from the
+  Cl(3)-on-`Z^3` baseline. Correct upstream.

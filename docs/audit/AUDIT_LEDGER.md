@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 576 |
+| **retained_bounded** | 577 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1163 |
+| unaudited | 1162 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 877 |
+| `audited_clean` | 878 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1393 |
+| `unaudited` | 1392 |
 
 | claim_type | count |
 |---|---:|
@@ -390,6 +390,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_grown_trapping_transport_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_h025_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_h025_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_distance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5407,6 +5408,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The h=0.25 grown row keeps a positive declining tail on the compact retained family and is slightly steeper than the exact-grid row on this replay.  _(class `C`)_
 - **chain closes:** True — The SHA-pinned runner constructs the h=0.25 exact and grown geometries and computes propagation, deltas, peak, slope, and R^2. Direct dependencies are retained_bounded, which is retained-grade for this bounded replay.
 - **rationale:** The cached runner exits 0 and computes the replay rather than printing constants. Fresh-context independent math from emitted deltas confirmed exact-grid means are all positive with peak z=2, tail z=2..6 strictly declining, log-log slope -0.42185 and R^2=0.85467; grown means are all positive with peak z=3, tail z=3..6 strictly declining, slope -0.53704 and R^2=0.94809. This matches the source's b^(-0.42)/0.855 and b^(-0.54)/0.948 readings. No broader Gate B, generated-geometry universality, continuum, or physical-gravity closure is granted.
+- **auditor confidence:** high
+
+### `gate_b_h025_farfield_note`
+
+- **Note:** [`GATE_B_H025_FARFIELD_NOTE.md`](../../docs/GATE_B_H025_FARFIELD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** SHA-pinned bounded runner certificate for scripts/gate_b_h025_farfield.py at h=0.25, W=6, L=6, NL=25, four seeds, z_masses=[3,4,5], exact-grid and grown drift=0.2/restore=0.7 rows, reporting runner-defined 12/12 TOWARD and rounded F~M=1.00 for each row under this runner's geometry, source, propagation, and detector readout only. This does not establish full Gate B closure, continuum refinement, or physical-gravity transfer.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `hume-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-gate-b-h025-farfield`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For the finite runner-defined replay, the load-bearing facts are the 4 seeds x 3 z_masses = 12 sign tests per row and the z=3 small-strength log-log slope estimate. Independent checks: round([3,4,5]/0.25) = [12,16,20] lies inside the transverse grid [-24,24], gl=16 and detector layer 24 are valid, and the field enters through exp(i*K*L*(1 - averaged_field)), so a small-strength response is perturbatively linear at this bounded scope.  _(class `C`)_
+- **chain closes:** True — The chain closes only for the finite h=0.25 runner-defined replay: the one-hop dependencies are retained_bounded, the cached runner output is SHA-pinned and complete, the declared measurement count is internally consistent, and the source note scopes the result as a bounded scaling check rather than Gate B closure.
+- **rationale:** Clean only at the narrow bounded-runner level. The runner/cache pins H=0.25, W=6, NL=25, four seeds, z_masses=[3,4,5], exact-grid and grown drift=0.2/restore=0.7 rows, with exit_code=0 after a 710s cached run. Independent parameter checks confirm 12 sign tests per row and on-grid source indices; the small-field phase perturbation makes the rounded F~M=1.00 output plausible as a finite perturbative slope certificate, not an unsupported dimensional theorem. The source's broader survival language is accepted only as a finite h=0.25 replay and not as full Gate B closure, continuum refinement, or physical-gravity transfer.
 - **auditor confidence:** high
 
 ### `gate_b_no_restore_farfield_note`

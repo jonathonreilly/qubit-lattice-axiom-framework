@@ -1,5 +1,37 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 49
+
+Scope:
+
+- C3 same-source W-normalized radial-ratio no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, C3 `P_nt` response algebra, W-normalized and raw top/W ratios, homogeneous ratio powers, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open W-normalized-ratio-to-radial-generator law; the W row cancels common source scale but leaves `lambda_top` load-bearing. |
+| Imports / support | DISCLOSED | No observed target, old Ward row, fitted selector, accepted W-normalized radial law, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded so far with this review:
+
+- New runner: `PASS=60 FAIL=0`
+- Full stack runner: `PASS=609 FAIL=0`
+- Adjacent runners passed: homogeneous radial-normalization no-go `PASS=77`,
+  same-surface radial-factor no-go `PASS=94`, nontrivial-block support
+  `PASS=85`, and strict sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- `POSITIVE_CLOSURE` remains absent.
+
 ## 2026-05-28 Local Review, Block 48
 
 Scope:

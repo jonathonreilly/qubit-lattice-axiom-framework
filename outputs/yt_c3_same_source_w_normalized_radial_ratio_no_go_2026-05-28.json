@@ -1,0 +1,57 @@
+{
+  "accepted_radial_generator_law_present": false,
+  "actual_current_surface_status": "no-go / open W-normalized-ratio-to-radial-generator law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "claim_id": "yt_c3_same_source_w_normalized_radial_ratio_no_go_note_2026-05-28",
+  "dependency_statuses": {
+    "block_support": "exact-support / open nontrivial-block membership law",
+    "first_principles_transfer": "exact-support / formal-transfer no-go",
+    "full_stack": "exact-support / open strict-response gate",
+    "homogeneous_no_go": "no-go / open homogeneous-normalization-to-radial-generator law",
+    "radial_factor_no_go": "no-go / open same-surface radial generator factorization",
+    "strict_availability": "no-go"
+  },
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "accepted same-surface radial/readout/backend laws, or accepted strict top/W pole rows",
+  "forbidden_inputs_used": false,
+  "homogeneous_ratio_class": {
+    "degree_one_ratio_form": "2*lambda_top/sqrt(6)",
+    "degree_two_ratio_form": "2*lambda_top^2/3",
+    "target_constant_is_supplied_not_derived": true,
+    "target_degree_one_constant": "1/sqrt(3)",
+    "target_degree_two_constant": "1/3"
+  },
+  "pass_count": 60,
+  "proposal_allowed": false,
+  "reachability_to_target": "prunes",
+  "route_pruned": "same-source W-normalized top response ratio certifies lambda_top=1/sqrt(2)",
+  "same_source_ratio_witness": {
+    "lambda_top_still_load_bearing": true,
+    "ratio_witnesses": [
+      {
+        "lambda_top": "sqrt(2)/2",
+        "w_stripped_ratio": "sqrt(3)/3"
+      },
+      {
+        "lambda_top": "1",
+        "w_stripped_ratio": "sqrt(6)/3"
+      },
+      {
+        "lambda_top": "2",
+        "w_stripped_ratio": "2*sqrt(6)/3"
+      }
+    ],
+    "raw_top_w_ratio": "2*lambda_top/(sqrt(6)*g_2)",
+    "same_source_scale_cancels": true,
+    "target_lambda_top": "1/sqrt(2)",
+    "target_w_stripped_ratio": "1/sqrt(3)",
+    "top_row": "lambda_top*A/sqrt(6)",
+    "w_row": "g_2*A/2",
+    "w_stripped_ratio": "2*lambda_top/sqrt(6)"
+  },
+  "strict_top_w_response_certificate_present": false,
+  "trace_class": "negative_route_pruning",
+  "w_normalized_ratio_derives_lambda_top": false,
+  "w_row_cancels_common_source_scale": true
+}

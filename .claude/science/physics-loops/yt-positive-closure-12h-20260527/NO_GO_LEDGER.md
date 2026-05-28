@@ -1,5 +1,11 @@
 # No-Go Ledger
 
+- New in the forty-ninth block: same-source W-normalized top response ratio
+  does not derive the missing radial generator factor. The W denominator
+  cancels the common source scale, but
+  `|dM_t/dell|/(dM_W/dell/g_2)=2 lambda_top/sqrt(6)`. The target
+  `lambda_top=1/sqrt(2)` is therefore equivalent to imposing the new ratio
+  constant `1/sqrt(3)`, not deriving it from the current surface.
 - New in the forty-eighth block: intrinsic homogeneous top-only scalar
   normalization does not derive the missing radial generator factor. For any
   positive homogeneous scalar on the supplied C3 top-operator ray,

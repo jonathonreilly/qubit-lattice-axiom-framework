@@ -1,5 +1,60 @@
 # Handoff
 
+Cycle 35 adds a forty-ninth science block, not positive retained-grade
+closure. The block prunes the shortcut:
+
+```text
+same-source W row + W-normalized C3 top response ratio
+  -> lambda_top = 1/sqrt(2)
+  -> dM_t/dell = A/sqrt(12).
+```
+
+Granting zero-singlet `P_nt` support,
+
+```text
+|dM_t/dell| = lambda_top A / sqrt(6),
+dM_W/dell = g_2 A / 2.
+```
+
+The W-normalized ratio is
+
+```text
+|dM_t/dell| / (dM_W/dell / g_2) = 2 lambda_top / sqrt(6).
+```
+
+The W row cancels the common source scale but leaves `lambda_top`
+load-bearing. The target `lambda_top=1/sqrt(2)` is equivalent to imposing a
+new ratio constant `1/sqrt(3)`. This is a no-go/route-pruning boundary only.
+No `POSITIVE_CLOSURE` marker was written. Retained/proposed-retained wording
+remains disallowed.
+
+Cycle 35 artifacts:
+
+- `docs/YT_C3_SAME_SOURCE_W_NORMALIZED_RADIAL_RATIO_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_same_source_w_normalized_radial_ratio_no_go.py`
+- `outputs/yt_c3_same_source_w_normalized_radial_ratio_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 35 verification so far:
+
+- `python3 scripts/frontier_yt_c3_same_source_w_normalized_radial_ratio_no_go.py`
+  -> `SUMMARY: PASS=60 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=609 FAIL=0`
+- Adjacent runners passed: homogeneous radial-normalization no-go `PASS=77`,
+  same-surface radial-factor no-go `PASS=94`, nontrivial-block support
+  `PASS=85`, and strict sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- Commit, push, and PR body update are pending for this block.
+- `POSITIVE_CLOSURE` remains absent.
+
+The next exact action remains to derive allowed same-surface
+radial/readout/backend laws without forbidden anchors, or produce accepted
+strict top/W pole rows.
+
 Cycle 34 adds a forty-eighth science block, not positive retained-grade
 closure. The block prunes the broader shortcut:
 

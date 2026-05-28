@@ -10,6 +10,28 @@ artifact_role: no_go
 next_trace_action: "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows"
 ```
 
+Cycle 35 tests whether adding the same-source W denominator to the C3 top
+response normalization can supply the missing radial generator law.
+
+It cannot on the current surface. Granting zero-singlet `P_nt` support,
+
+```text
+|dM_t/dell| = lambda_top A / sqrt(6),
+dM_W/dell = g_2 A / 2.
+```
+
+The W-normalized ratio is
+
+```text
+|dM_t/dell| / (dM_W/dell / g_2) = 2 lambda_top / sqrt(6).
+```
+
+The W row cancels the common source scale but leaves `lambda_top`
+load-bearing. The target `lambda_top=1/sqrt(2)` is equivalent to imposing a
+new ratio constant `1/sqrt(3)`. This prunes only the same-source
+W-normalized ratio shortcut; it does not refute a future accepted physical
+radial/backend theorem or strict pole rows.
+
 Cycle 34 tests whether the broader class of intrinsic homogeneous top-only
 scalar normalizations can supply the missing radial generator law.
 

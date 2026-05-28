@@ -168,6 +168,9 @@ This runner verifies the current burn-down state:
   level: any top-only positive homogeneous scalar of the supplied C3 operator
   ray fixes lambda_top only after a normalization constant is supplied; common
   same-source reparameterization cancels from the top/W ratio.
+* The same-source W-normalized radial-ratio shortcut is now pruned: the W row
+  cancels the common source scale but leaves the relative radial factor
+  lambda_top; the target is an added ratio law.
 * The one-Higgs carrier radial-factor shortcut is now pruned: the neutral
   Higgs 1/sqrt(2) factor maps a supplied generation-matrix coefficient into a
   top mass response, but it does not identify that coefficient with the
@@ -225,6 +228,7 @@ C3_BLOCK_RANK_RADIAL_NORMALIZATION_NOGO = DOCS / "YT_C3_BLOCK_RANK_RADIAL_NORMAL
 C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NOGO = DOCS / "YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md"
 C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NOGO = DOCS / "YT_C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md"
 C3_HOMOGENEOUS_RADIAL_NORMALIZATION_NOGO = DOCS / "YT_C3_HOMOGENEOUS_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md"
+C3_SAME_SOURCE_W_NORMALIZED_RADIAL_RATIO_NOGO = DOCS / "YT_C3_SAME_SOURCE_W_NORMALIZED_RADIAL_RATIO_NO_GO_NOTE_2026-05-28.md"
 ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO = DOCS / "YT_ONE_HIGGS_CARRIER_RADIAL_FACTOR_NO_GO_NOTE_2026-05-28.md"
 ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO = DOCS / "YT_ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NO_GO_NOTE_2026-05-28.md"
 C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO = DOCS / "YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md"
@@ -318,6 +322,9 @@ C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NOGO_OUT = (
 )
 C3_HOMOGENEOUS_RADIAL_NORMALIZATION_NOGO_OUT = (
     ROOT / "outputs" / "yt_c3_homogeneous_radial_normalization_no_go_2026-05-28.json"
+)
+C3_SAME_SOURCE_W_NORMALIZED_RADIAL_RATIO_NOGO_OUT = (
+    ROOT / "outputs" / "yt_c3_same_source_w_normalized_radial_ratio_no_go_2026-05-28.json"
 )
 ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO_OUT = (
     ROOT / "outputs" / "yt_one_higgs_carrier_radial_factor_no_go_2026-05-28.json"
@@ -456,6 +463,7 @@ def part1_anchors() -> dict[str, str]:
         C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NOGO,
         C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NOGO,
         C3_HOMOGENEOUS_RADIAL_NORMALIZATION_NOGO,
+        C3_SAME_SOURCE_W_NORMALIZED_RADIAL_RATIO_NOGO,
         ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO,
         ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO,
         C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO,
@@ -533,6 +541,7 @@ def part1_anchors() -> dict[str, str]:
         C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NOGO_OUT,
         C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NOGO_OUT,
         C3_HOMOGENEOUS_RADIAL_NORMALIZATION_NOGO_OUT,
+        C3_SAME_SOURCE_W_NORMALIZED_RADIAL_RATIO_NOGO_OUT,
         ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO_OUT,
         ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO_OUT,
         C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO_OUT,
@@ -612,6 +621,7 @@ def part1_anchors() -> dict[str, str]:
         "Fisher quotient radial normalization no-go",
         "quadratic action radial normalization no-go",
         "homogeneous radial normalization no-go",
+        "same-source W-normalized radial ratio no-go",
         "one-Higgs carrier radial factor no-go",
         "one-Higgs generation-coefficient normalization no-go",
         "Markov-Laplacian source-law no-go",
@@ -709,6 +719,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_fisher_quotient_radial_normalization_nogo = load_json(C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NOGO_OUT)
     c3_quadratic_action_radial_normalization_nogo = load_json(C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NOGO_OUT)
     c3_homogeneous_radial_normalization_nogo = load_json(C3_HOMOGENEOUS_RADIAL_NORMALIZATION_NOGO_OUT)
+    c3_same_source_w_normalized_radial_ratio_nogo = load_json(C3_SAME_SOURCE_W_NORMALIZED_RADIAL_RATIO_NOGO_OUT)
     one_higgs_carrier_radial_factor_nogo = load_json(ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO_OUT)
     one_higgs_generation_coefficient_normalization_nogo = load_json(ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO_OUT)
     c3_markov_laplacian_source_law_nogo = load_json(C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO_OUT)
@@ -1072,6 +1083,28 @@ def part2_support_outputs() -> dict[str, Any]:
         "common source reparameterization still leaves lambda_top load-bearing",
         c3_homogeneous_radial_normalization_nogo.get("same_source_reparameterization", {})
         .get("lambda_top_still_load_bearing")
+        is True,
+    )
+    check(
+        "C3 same-source W-normalized radial ratio no-go passed",
+        c3_same_source_w_normalized_radial_ratio_nogo.get("fail_count") == 0,
+        c3_same_source_w_normalized_radial_ratio_nogo.get("fail_count"),
+    )
+    check(
+        "C3 same-source W-normalized radial ratio route is pruned",
+        c3_same_source_w_normalized_radial_ratio_nogo.get("trace_class") == "negative_route_pruning",
+        c3_same_source_w_normalized_radial_ratio_nogo.get("trace_class"),
+    )
+    check(
+        "W-normalized ratio leaves lambda_top load-bearing",
+        c3_same_source_w_normalized_radial_ratio_nogo.get("same_source_ratio_witness", {})
+        .get("lambda_top_still_load_bearing")
+        is True,
+    )
+    check(
+        "W-normalized target ratio constant is supplied",
+        c3_same_source_w_normalized_radial_ratio_nogo.get("homogeneous_ratio_class", {})
+        .get("target_constant_is_supplied_not_derived")
         is True,
     )
     check(
@@ -2131,6 +2164,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_fisher_quotient_radial_normalization_nogo": c3_fisher_quotient_radial_normalization_nogo,
         "c3_quadratic_action_radial_normalization_nogo": c3_quadratic_action_radial_normalization_nogo,
         "c3_homogeneous_radial_normalization_nogo": c3_homogeneous_radial_normalization_nogo,
+        "c3_same_source_w_normalized_radial_ratio_nogo": c3_same_source_w_normalized_radial_ratio_nogo,
         "one_higgs_carrier_radial_factor_nogo": one_higgs_carrier_radial_factor_nogo,
         "one_higgs_generation_coefficient_normalization_nogo": one_higgs_generation_coefficient_normalization_nogo,
         "c3_markov_laplacian_source_law_nogo": c3_markov_laplacian_source_law_nogo,
@@ -2381,7 +2415,7 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_radial_factor_no_go_shows_zero_singlet_support_still_needs_lambda_top_equal_1_over_sqrt2_radial_readout_compensation_no_go_shows_target_magnitude_does_not_back_solve_zero_singlet_or_radial_factor_sharp_response_readout_no_go_shows_zero_variance_still_allows_singlet_endpoint_fisher_lsz_radial_generator_no_go_shows_source_scale_normalization_does_not_fix_lambda_top_block_rank_radial_normalization_no_go_shows_rank_pnt_two_does_not_derive_root_rank_radial_law_fisher_quotient_radial_normalization_no_go_shows_c3_rn_fisher_coarse_graining_and_fisher_unit_score_normalization_do_not_derive_the_top_radial_generator_quadratic_action_radial_normalization_no_go_shows_action_norms_and_hilbert_schmidt_traces_fix_operator_size_not_lambda_top_homogeneous_radial_normalization_no_go_shows_top_only_scalar_normalizers_need_a_supplied_constant_and_common_source_reparameterization_cancels_one_higgs_carrier_radial_factor_no_go_shows_neutral_higgs_factor_does_not_set_eta_or_lambda_top_one_higgs_generation_coefficient_normalization_no_go_shows_matrix_norm_conventions_do_not_set_eta_equal_one_oriented_markov_current_no_go_shows_circulation_phase_does_not_set_non_mass_top_readout_or_lambda_top_unitary_character_flow_no_go_shows_c3_log_branch_clock_and_by_direction_do_not_set_bx_source_row_real_irrep_dimension_no_go_shows_faithful_nontrivial_pnt_selection_is_an_extra_top_block_law_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_radial_factor_no_go_shows_zero_singlet_support_still_needs_lambda_top_equal_1_over_sqrt2_radial_readout_compensation_no_go_shows_target_magnitude_does_not_back_solve_zero_singlet_or_radial_factor_sharp_response_readout_no_go_shows_zero_variance_still_allows_singlet_endpoint_fisher_lsz_radial_generator_no_go_shows_source_scale_normalization_does_not_fix_lambda_top_block_rank_radial_normalization_no_go_shows_rank_pnt_two_does_not_derive_root_rank_radial_law_fisher_quotient_radial_normalization_no_go_shows_c3_rn_fisher_coarse_graining_and_fisher_unit_score_normalization_do_not_derive_the_top_radial_generator_quadratic_action_radial_normalization_no_go_shows_action_norms_and_hilbert_schmidt_traces_fix_operator_size_not_lambda_top_homogeneous_radial_normalization_no_go_shows_top_only_scalar_normalizers_need_a_supplied_constant_and_common_source_reparameterization_cancels_same_source_w_normalized_radial_ratio_no_go_shows_w_row_cancels_common_scale_but_leaves_lambda_top_one_higgs_carrier_radial_factor_no_go_shows_neutral_higgs_factor_does_not_set_eta_or_lambda_top_one_higgs_generation_coefficient_normalization_no_go_shows_matrix_norm_conventions_do_not_set_eta_equal_one_oriented_markov_current_no_go_shows_circulation_phase_does_not_set_non_mass_top_readout_or_lambda_top_unitary_character_flow_no_go_shows_c3_log_branch_clock_and_by_direction_do_not_set_bx_source_row_real_irrep_dimension_no_go_shows_faithful_nontrivial_pnt_selection_is_an_extra_top_block_law_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
             "closed": False,
             "next_action": "derive accepted same-surface generator factorization plus a new sign/order/readout law excluding P_0, or produce a new accepted strict pole-response packet because none is present under existing artifact names",
         },
@@ -2559,6 +2593,10 @@ def main() -> int:
             "supplied C3 operator ray determines lambda_top only after a "
             "normalization constant is supplied, while common same-source "
             "reparameterization cancels from the top/W readout. "
+            "The same-source W-normalized radial-ratio shortcut is now "
+            "pruned too: the W row cancels the common source scale, but the "
+            "target is equivalent to imposing a new W-normalized ratio "
+            "constant 1/sqrt(3), so lambda_top remains load-bearing. "
             "The one-Higgs carrier radial-factor shortcut is now pruned: "
             "the neutral Higgs 1/sqrt(2) factor maps a supplied "
             "generation-matrix coefficient into a top mass response, but "
@@ -2671,6 +2709,9 @@ def main() -> int:
             "c3_homogeneous_radial_normalization_nogo_fail_count": support_outputs[
                 "c3_homogeneous_radial_normalization_nogo"
             ].get("fail_count"),
+            "c3_same_source_w_normalized_radial_ratio_nogo_fail_count": support_outputs[
+                "c3_same_source_w_normalized_radial_ratio_nogo"
+            ].get("fail_count"),
             "one_higgs_carrier_radial_factor_nogo_fail_count": support_outputs["one_higgs_carrier_radial_factor_nogo"].get("fail_count"),
             "one_higgs_generation_coefficient_normalization_nogo_fail_count": support_outputs["one_higgs_generation_coefficient_normalization_nogo"].get("fail_count"),
             "c3_markov_laplacian_source_law_nogo_fail_count": support_outputs["c3_markov_laplacian_source_law_nogo"].get("fail_count"),
@@ -2760,6 +2801,9 @@ def main() -> int:
             "docs/YT_C3_HOMOGENEOUS_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_c3_homogeneous_radial_normalization_no_go.py",
             "outputs/yt_c3_homogeneous_radial_normalization_no_go_2026-05-28.json",
+            "docs/YT_C3_SAME_SOURCE_W_NORMALIZED_RADIAL_RATIO_NO_GO_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_c3_same_source_w_normalized_radial_ratio_no_go.py",
+            "outputs/yt_c3_same_source_w_normalized_radial_ratio_no_go_2026-05-28.json",
             "docs/YT_ONE_HIGGS_CARRIER_RADIAL_FACTOR_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_one_higgs_carrier_radial_factor_no_go.py",
             "outputs/yt_one_higgs_carrier_radial_factor_no_go_2026-05-28.json",

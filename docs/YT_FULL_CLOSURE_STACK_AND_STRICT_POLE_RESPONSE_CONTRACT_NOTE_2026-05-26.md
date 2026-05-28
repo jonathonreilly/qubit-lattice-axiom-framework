@@ -87,6 +87,8 @@ closed exactly:
   scalar of the supplied C3 operator ray fixes lambda_top only after a
   normalization constant is supplied; common same-source reparameterization
   cancels from the top/W ratio
+  same-source W-normalized radial ratio no-go: the W row cancels the common
+  source scale but leaves lambda_top; the target is an added ratio law
   one-Higgs carrier radial factor no-go: the neutral Higgs 1/sqrt(2)
   kinematic factor maps a supplied generation-matrix coefficient into a top
   mass response, but it does not identify that coefficient with the normalized
@@ -1882,6 +1884,10 @@ proposal_allowed_reason: |
   `N(lambda_top A B_x) = lambda_top^p A^p N(B_x)`, `lambda_top` is fixed only
   after a normalization constant is supplied. Choosing that constant to make
   `lambda_top=1/sqrt(2)` is the missing radial law in another form.
+  The same-source W-normalized radial ratio no-go prunes the sharper
+  denominator-normalization shortcut: dividing by `dM_W/dell/g_2` cancels the
+  common source scale but leaves `2 lambda_top/sqrt(6)`. The target is
+  equivalent to imposing the new ratio constant `1/sqrt(3)`.
   The one-Higgs carrier radial factor no-go prunes the carrier-normalization
   shortcut: the neutral Higgs `1/sqrt(2)` factor maps an already supplied
   generation-matrix coefficient into a top mass response, but the multiplier

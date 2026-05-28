@@ -14,6 +14,9 @@ Current block artifacts:
 - `docs/YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py`
 - `outputs/yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json`
+- `docs/YT_STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_strict_support_packet_audit_status_firewall_no_go.py`
+- `outputs/yt_strict_support_packet_audit_status_firewall_no_go_2026-05-28.json`
 - `docs/YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_microscopic_backend_projector_matrix_element_boundary.py`
 - `outputs/yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json`

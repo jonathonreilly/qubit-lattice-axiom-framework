@@ -5,6 +5,7 @@
 | Transfer/Feynman-Hellmann response identity | Reduces pole response to sector matrix elements | retained support | `YT_FIRST_PRINCIPLES_TRANSFER_RESPONSE_BOUNDARY_THEOREM_NOTE_2026-05-27.md` | yes | yes | already exact support | available |
 | Physical source-law research panel synthesis | Older support/planning route for no-hidden-scale/minimum-information source-law primitive | stale support relative to current matrix-element gate | `YT_PHYSICAL_SOURCE_LAW_RESEARCH_PANEL_SYNTHESIS_NOTE_2026-05-26.md`; `YT_PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NO_GO_NOTE_2026-05-28.md` | no as current proof input | no | derive a new theorem coupling source-law primitive to current same-surface radial/readout/backend certificate, or bypass with strict pole rows | no-go for current-gate import shortcut |
 | Same-source W row `dM_W/dell = g_2 A/2` | Denominator for local ratio | retained/exact support conditional row | strict W/Z and FH support stack | yes | yes | strict same-source certificate | available as support, not full closure |
+| Existing strict W/Z and symbolic top support packets | Tempting splice into strict top/W pole rows | support only / unaudited for current closure; promotion shortcut pruned | `YT_STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NO_GO_NOTE_2026-05-28.md` | no as closure proof input | yes if promoted | derive accepted coefficient-certified strict top/W pole rows with backend/projectors/controls, or derive top coefficient law | no-go for support-packet promotion shortcut |
 | C3 source direction `B_x` | Supplies candidate top-source tangent | exact support | `YT_C3_REAL_RECORD_REFLECTION_EVEN_SOURCE_THEOREM_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | already exact support | available |
 | Nontrivial C3 top-line assignment | Selects response magnitude `1/sqrt(6)` rather than singlet `2/sqrt(6)` | unsupported import on actual surface; current real same-surface shortcut pruned | current branch C3 finite algebra | yes | yes | derive accepted C3 circulant dynamics/source law or strict pole rows | open blocker |
 | Zero-singlet nontrivial C3 block membership | Weakens the coefficient-row requirement from an individual complex line to support in `P_nt = P_omega + P_omega2` | exact support/open import | `YT_C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT_NOTE_2026-05-27.md` | yes | yes | derive accepted physical top-block law excluding `P_0`, or bypass with strict pole rows | open blocker |
@@ -50,6 +51,13 @@
 | Legacy Hessian/UV bridge selector stack | Would import older bounded bridge-selector support as the missing same-surface radial/backend law | inadmissible for this campaign because it is over forbidden/open bridge inputs and target-conditioned proxy families | `YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for shortcut | derive allowed same-surface laws without plaquette/u0/alpha_LM/Ward/Planck/target filters, or produce strict pole rows | no-go for legacy bridge import shortcut |
 | Microscopic backend/projector/matrix-element shortcut | Would derive the physical row from source law, carrier amplitude, C3 algebra, W row, and no-kappa candidate | pruned on current surface | `YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive accepted backend, W/top projectors, and source-generator matrix elements, or produce strict pole rows | no-go for current shortcut |
 | `H_unit`, old Ward authority, `yt_ward_identity`, `y_t_bare`, observed top/W/Z masses, PDG targets, `alpha_LM`, plaquette/u0, Planck, alpha_s, fitted selectors | Forbidden proof inputs | forbidden | user campaign instruction | no | no | must remain absent | not used |
+
+Current strict support-packet firewall block result: the W/Z packet is
+denominator support only, the symbolic top packet keeps `y_33` free, their
+same-source ratio is only `sqrt(2) y_33/g_2`, and the relevant support-packet
+claims are unaudited in the audit queue/ledger. The strict route still needs
+accepted coefficient-certified top/W pole rows with backend/projector/control
+fields, or an accepted same-surface backend/projector/source-generator theorem.
 
 Current block results: the exact finite algebra shows how `A/sqrt(12)` would
 follow if the same-surface generator factorization and nontrivial top-line

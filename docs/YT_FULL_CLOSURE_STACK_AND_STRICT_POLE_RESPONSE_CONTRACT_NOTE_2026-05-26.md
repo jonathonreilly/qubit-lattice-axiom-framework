@@ -152,6 +152,10 @@ closed exactly:
   strict sparse pole-response availability audit: the harness and no-kappa
   candidate are present, but no accepted backend or controlled W/top pole-row
   certificate is present
+  strict support-packet audit-status firewall no-go: the existing W/Z
+  denominator packet and symbolic top-response packet are support packets, not
+  accepted coefficient-bearing strict pole rows; the top coefficient remains
+  free and both packet claims are unaudited in the audit queue/ledger
   strict pole-row repository discovery no-go: a broader current-branch scan of
   Y_T strict/response/backend/projector outputs finds no hidden accepted
   top/W pole-row certificate under another artifact name
@@ -1255,6 +1259,35 @@ same_model_class: false
 So strict response remains the clean positive route, but it is not present on
 the current branch.
 
+The strict support-packet audit-status firewall then checks the tempting
+nearby packet splice:
+
+```text
+strict W/Z denominator packet
+  + symbolic top-response row packet
+  -> accepted coefficient-bearing strict top/W pole rows.
+```
+
+The W/Z packet supplies denominator support, while the symbolic top packet
+keeps
+
+```text
+dM_t/ds = (y_33/sqrt(2)) v'(s)
+```
+
+with `y_33` free.  Their same-source ratio is only
+
+```text
+sqrt(2) y_33/g_2.
+```
+
+The audit queue and audit ledger also mark the W/Z packet, symbolic top
+packet, neutral-ray bridge, and source-coordinate ratio gate as `unaudited`.
+Thus the existing support packets cannot be promoted into accepted strict pole
+rows without an additional accepted top-coefficient theorem, direct
+coefficient-certified pole-row measurement, or accepted backend/projector
+matrix-element theorem.
+
 [`YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md`](YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md)
 then checks the same bypass against the freshly fetched `origin/main` surface.
 The named strict row outputs remain absent there, and the origin/main FH
@@ -1662,6 +1695,11 @@ proposal_allowed_reason: |
   or spectral ordering.
   The strict sparse availability audit confirms that accepted backend and
   controlled W/top pole-row artifacts are absent on the current branch.
+  The strict support-packet audit-status firewall also prunes promotion of the
+  existing W/Z denominator and symbolic top-response support packets into the
+  accepted strict route: the top row still contains free `y_33`, the ratio is
+  only `sqrt(2) y_33/g_2`, and the relevant support-packet claims are
+  unaudited in the audit queue/ledger.
   The microscopic backend/projector/matrix-element boundary further prunes the
   shortcut from current source/backend/carrier/C3 support to the accepted top
   row: the accepted backend, physical top projector, and source-generator

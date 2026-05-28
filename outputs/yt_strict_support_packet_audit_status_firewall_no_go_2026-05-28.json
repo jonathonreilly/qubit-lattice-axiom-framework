@@ -1,0 +1,72 @@
+{
+  "actual_current_surface_status": "no-go / strict support packets are not accepted pole rows",
+  "audit_metadata_witness": {
+    "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": {
+      "ledger_audit_status": "unaudited",
+      "ledger_effective_status": "unaudited",
+      "queue_audit_status": "unaudited",
+      "queue_effective_status": "unaudited"
+    },
+    "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": {
+      "ledger_audit_status": "unaudited",
+      "ledger_effective_status": "unaudited",
+      "queue_audit_status": "unaudited",
+      "queue_effective_status": "unaudited"
+    },
+    "yt_strict_symbolic_top_response_row_packet_note_2026-05-25": {
+      "ledger_audit_status": "unaudited",
+      "ledger_effective_status": "unaudited",
+      "queue_audit_status": "unaudited",
+      "queue_effective_status": "unaudited"
+    },
+    "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25": {
+      "ledger_audit_status": "unaudited",
+      "ledger_effective_status": "unaudited",
+      "queue_audit_status": "unaudited",
+      "queue_effective_status": "unaudited"
+    }
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_same_surface_backend_present": false,
+    "bare_retained_allowed": false,
+    "contact_fv_ir_model_class_controls_present": false,
+    "positive_closure_marker_allowed": false,
+    "proposal_allowed": false,
+    "strict_positive_certificate_present": false,
+    "strict_top_packet_audited_or_retained": false,
+    "strict_wz_denominator_support_present": true,
+    "strict_wz_packet_audited_or_retained": false,
+    "symbolic_top_row_shape_present": true,
+    "top_coefficient_derived": false
+  },
+  "claim_id": "yt_strict_support_packet_audit_status_firewall_no_go_note_2026-05-28",
+  "claim_type": "no_go",
+  "dependency_fail_counts": {
+    "full_stack": 0,
+    "strict_availability": 0,
+    "strict_discovery": 0,
+    "strict_top": 0,
+    "strict_wz": 0
+  },
+  "fail_count": 0,
+  "forbidden_inputs_used": false,
+  "next_exact_action": "produce accepted strict top/W pole rows with controls, or derive accepted same-surface backend/projectors/source-generator matrix elements",
+  "pass_count": 108,
+  "positive_closure_marker_allowed": false,
+  "positive_closure_marker_written": false,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The W/Z packet is denominator support, the top packet keeps y_33 free, both packets are unaudited in the audit queue/ledger, and the strict availability schema still lacks accepted backend/projectors/controlled pole rows.",
+  "reachability_to_target": "prunes",
+  "route_pruned": "existing strict W/Z support packet plus symbolic top response packet certify accepted coefficient-bearing strict top/W pole rows",
+  "same_source_symbolic_witness": {
+    "dM_W_ds": "g_2*vprime/2",
+    "dM_t_ds": "y_33*vprime/sqrt(2)",
+    "ratio": "sqrt(2)*y_33/g_2",
+    "target_ratio_requires_y33": "g_2/sqrt(6)",
+    "witness_y33_g2_over_sqrt6_ratio": "1/sqrt(3)",
+    "witness_y33_g2_ratio": "sqrt(2)"
+  },
+  "trace_class": "negative_route_pruning"
+}

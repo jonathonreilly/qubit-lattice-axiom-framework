@@ -10,19 +10,19 @@ artifact_role: no_go
 next_trace_action: "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows"
 ```
 
-Cycle 29 tests whether a reversible C3 Markov/Laplacian source law can be
-promoted into the current campaign's same-surface top row.
+Cycle 30 tests whether existing strict support packets can be promoted into
+the accepted strict top/W pole-row route.
 
-It cannot. The finite witness uses
+They cannot. The W/Z packet is denominator support only, and the symbolic top
+packet keeps
 
 ```text
-Q_r = r(C+C^2-2I),        L_r = -Q_r.
+dM_t/ds = (y_33/sqrt(2)) v'(s)
 ```
 
-The Markov semigroup has `P_0` as the stationary/Perron line, while the
-nontrivial modes are exactly degenerate. Removing the identity part and
-normalizing the connected generator gives the already-derived `B_x` ray up to
-sign. The first open gate remains an accepted physical top-readout law
-excluding `P_0`, accepted `lambda_top=1/sqrt(2)` radial generator dynamics
-with backend/projectors/matrix elements, or strict top/W pole rows with
-controls.
+with `y_33` free. The same-source ratio is only
+`sqrt(2) y_33/g_2`, the W/Z and symbolic-top packet claims are unaudited in
+the audit queue/ledger, and the strict availability schema still lacks the
+accepted backend/projectors/coefficient rows and contact/FV/IR/model-class
+controls. The first open gate remains an accepted coefficient-certified strict
+top/W pole-row packet, or accepted same-surface radial/readout/backend laws.

@@ -6,6 +6,8 @@ Selected routes: same-surface top sector matrix-element factorization boundary,
 then non-mass-ordering real same-surface C3 top-line law obstruction.
 The third route tested the C3 circulant dynamics/source-law shortcut.
 The fourth route audited strict sparse pole-response evidence availability.
+The forty-fourth route tested whether existing strict W/Z and symbolic top
+support packets can be promoted into accepted strict pole rows.
 The fifth route tested the current microscopic source/backend/carrier/C3
 shortcut to the accepted matrix element.
 The sixth route tested positive real C3 transfer/Perron selection as a
@@ -109,6 +111,7 @@ normalization conventions can supply the missing unit multiplier `eta=1`.
 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | no-go shortcut test | 3 | Pruned as source-derivative shortcut; base dynamics/order still open |
 | Reversible C3 Markov/Laplacian source law | no-go shortcut test | 3 | Pruned: stationary/Perron line is `P_0`, nontrivial block is degenerate, and connected normalization only recovers `B_x` |
 | Strict sparse top/W pole-response evidence | availability audit | 3 | Audited absent on current branch; harness/candidate only |
+| Strict support-packet audit-status firewall | no-go shortcut test | 3 | Pruned: W/Z denominator and symbolic top packets are support only; `y_33` remains free and packet claims are unaudited |
 | Microscopic backend/projector/matrix-element shortcut | no-go shortcut test | 3 | Pruned: current support does not derive accepted backend, top projector, or source-generator matrix element |
 | Positive real C3 transfer/Perron selection | no-go shortcut test | 3 | Pruned: positivity selects `P_0`, not a nontrivial line |
 | C3 phase-ordering cone | exact support boundary | 2 | Landed: nontrivial top line iff `|y_0| > sqrt(3) x_0` with nonzero sign branch |
@@ -301,3 +304,9 @@ stationary/Perron line, leaves the nontrivial block degenerate, and connected
 normalization only returns `B_x` up to sign. Positive closure still needs a
 physical top-readout law excluding `P_0`, accepted radial generator dynamics,
 accepted backend/projectors, or strict top/W pole rows.
+The strict support-packet audit-status firewall prunes another strict-route
+shortcut. Existing W/Z denominator and symbolic top-response packets are
+support only; the top coefficient remains `y_33`, the ratio is
+`sqrt(2) y_33/g_2`, and the packet claims are unaudited. The strict route
+still requires accepted coefficient-certified pole rows with backend,
+projector, contact, FV/IR, and model-class controls.

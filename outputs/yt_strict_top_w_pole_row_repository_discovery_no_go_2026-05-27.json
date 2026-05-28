@@ -67,7 +67,7 @@
     }
   },
   "doc_status_scan": {
-    "doc_count": 28,
+    "doc_count": 29,
     "proposal_allowed_true_hits": [],
     "retained_status_hits": []
   },
@@ -83,7 +83,7 @@
   "reachability_to_target": "prunes hidden-existing-certificate shortcut",
   "repository_discovery": {
     "accepted_backend_packets": [],
-    "candidate_count": 28,
+    "candidate_count": 29,
     "candidate_paths": [
       "outputs/yt_c3_nontrivial_block_matrix_element_support_2026-05-27.json",
       "outputs/yt_c3_real_same_surface_top_line_law_obstruction_2026-05-27.json",
@@ -107,6 +107,7 @@
       "outputs/yt_source_coordinate_invariant_top_w_ratio_gate_2026-05-25.json",
       "outputs/yt_strict_same_source_top_w_response_coefficient_obstruction_2026-05-27.json",
       "outputs/yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json",
+      "outputs/yt_strict_support_packet_audit_status_firewall_no_go_2026-05-28.json",
       "outputs/yt_strict_symbolic_top_response_row_packet_2026-05-25.json",
       "outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json",
       "outputs/yt_strict_wz_c3_top_row_splice_no_go_2026-05-27.json",

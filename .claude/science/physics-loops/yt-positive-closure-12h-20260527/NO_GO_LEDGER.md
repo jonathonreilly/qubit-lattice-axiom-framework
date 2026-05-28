@@ -1,5 +1,13 @@
 # No-Go Ledger
 
+- New in the forty-fourth block: existing strict W/Z denominator support and
+  symbolic top-response row packets cannot be promoted into accepted strict
+  top/W pole rows. The W/Z packet closes denominator support only; the
+  symbolic top packet keeps `dM_t/ds=(y_33/sqrt(2))v'(s)` with `y_33` free, so
+  the same-source ratio is only `sqrt(2)y_33/g_2`. The relevant packet claims
+  are unaudited in the audit queue/ledger, and the strict availability schema
+  still lacks accepted backend/projectors, coefficient-certified rows, and
+  contact/FV/IR/model-class controls.
 - New in the forty-second block: ordinary one-Higgs generation-matrix
   normalization conventions do not certify `eta=1`. C3-unit, unit
   singular/Frobenius, and unit three-generation-average coefficient

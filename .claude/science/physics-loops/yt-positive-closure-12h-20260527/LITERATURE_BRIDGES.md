@@ -3,6 +3,13 @@
 No external literature value, observed target, fitted selector, or external
 physics theorem is load-bearing in this block.
 
+The strict support-packet audit-status firewall is branch-local and
+schema-local. It reads the W/Z denominator packet, symbolic top-response
+packet, strict availability audit, audit queue, and audit ledger. The finite
+algebra is only the same-source cancellation
+`(dM_t/ds)/(dM_W/ds)=sqrt(2) y_33/g_2`; no external pole-mass, phenomenology,
+or literature source supplies the missing coefficient.
+
 The math used in the runners is finite cyclic-group character-projector
 algebra for C3, reflection on the real three-dimensional carrier, explicit
 diagonalization of normalized C3 Hermitian circulants, and the branch-local

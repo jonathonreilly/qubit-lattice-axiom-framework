@@ -35,6 +35,10 @@ This runner verifies the current burn-down state:
 * The strict sparse pole-response availability audit confirms the harness and
   no-kappa candidate are present, but no accepted backend or strict W/top pole
   rows are present on the branch.
+* The strict support-packet audit-status firewall confirms that the existing
+  W/Z denominator packet and symbolic top-response packet are support packets,
+  not accepted coefficient-bearing strict pole rows: the top coefficient
+  remains free and both packet claims are unaudited in the audit queue/ledger.
 * The strict pole-row repository discovery no-go confirms that a broader scan
   of current Y_T strict/response/backend/projector outputs finds no hidden
   accepted top/W pole-row certificate under another artifact name.
@@ -237,6 +241,7 @@ C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION = DOCS / "YT_C3_TOP_LINE_MASS_ORDERING_OBS
 C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION = DOCS / "YT_C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_NOTE_2026-05-27.md"
 C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY = DOCS / "YT_C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_NOTE_2026-05-27.md"
 STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT = DOCS / "YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md"
+STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NOGO = DOCS / "YT_STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NO_GO_NOTE_2026-05-28.md"
 STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO = DOCS / "YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md"
 ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO = DOCS / "YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md"
 ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO = DOCS / "YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md"
@@ -330,6 +335,9 @@ C3_TOP_LINE_MASS_ORDERING_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_top_line_m
 C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT = ROOT / "outputs" / "yt_c3_real_same_surface_top_line_law_obstruction_2026-05-27.json"
 C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_circulant_dynamics_ordering_source_law_boundary_2026-05-27.json"
 STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT = ROOT / "outputs" / "yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json"
+STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NOGO_OUT = (
+    ROOT / "outputs" / "yt_strict_support_packet_audit_status_firewall_no_go_2026-05-28.json"
+)
 STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO_OUT = ROOT / "outputs" / "yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json"
 ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT = ROOT / "outputs" / "yt_origin_main_strict_pole_row_refresh_no_go_2026-05-28.json"
 ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT = ROOT / "outputs" / "yt_origin_main_declared_anchor_firewall_no_go_2026-05-28.json"
@@ -448,6 +456,7 @@ def part1_anchors() -> dict[str, str]:
         C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION,
         C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY,
         STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT,
+        STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NOGO,
         STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO,
         ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO,
         ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO,
@@ -520,6 +529,7 @@ def part1_anchors() -> dict[str, str]:
         C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT,
         C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT,
         STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT,
+        STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NOGO_OUT,
         STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO_OUT,
         ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT,
         ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT,
@@ -594,6 +604,7 @@ def part1_anchors() -> dict[str, str]:
         "real same-surface top-line law obstruction",
         "C3 circulant dynamics ordering source-law boundary",
         "strict sparse pole-response availability audit",
+        "strict support-packet audit-status firewall no-go",
         "strict pole-row repository discovery no-go",
         "origin/main strict pole-row refresh no-go",
         "origin/main declared-anchor firewall no-go",
@@ -686,6 +697,9 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_real_same_surface_top_line_law_obstruction = load_json(C3_REAL_SAME_SURFACE_TOP_LINE_LAW_OBSTRUCTION_OUT)
     c3_circulant_dynamics_ordering_source_law_boundary = load_json(C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT)
     strict_sparse_top_w_availability_audit = load_json(STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT)
+    strict_support_packet_audit_status_firewall_nogo = load_json(
+        STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NOGO_OUT
+    )
     strict_pole_row_repository_discovery_nogo = load_json(STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO_OUT)
     origin_main_strict_pole_refresh_nogo = load_json(ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT)
     origin_main_declared_anchor_firewall_nogo = load_json(ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT)
@@ -1384,6 +1398,39 @@ def part2_support_outputs() -> dict[str, Any]:
     check("strict sparse audit confirms accepted backend absent", strict_sparse_top_w_availability_audit.get("certificate_boundary", {}).get("accepted_same_surface_backend_present") is False)
     check("strict sparse audit confirms strict positive certificate absent", strict_sparse_top_w_availability_audit.get("certificate_boundary", {}).get("strict_positive_certificate_present") is False)
     check(
+        "strict support-packet audit-status firewall passed",
+        strict_support_packet_audit_status_firewall_nogo.get("fail_count") == 0,
+        strict_support_packet_audit_status_firewall_nogo.get("fail_count"),
+    )
+    check(
+        "strict support-packet firewall is route pruning",
+        strict_support_packet_audit_status_firewall_nogo.get("trace_class") == "negative_route_pruning",
+        strict_support_packet_audit_status_firewall_nogo.get("trace_class"),
+    )
+    check(
+        "strict support-packet firewall keeps top coefficient free",
+        strict_support_packet_audit_status_firewall_nogo.get("certificate_boundary", {}).get("top_coefficient_derived")
+        is False,
+    )
+    check(
+        "strict W/Z packet remains unaudited",
+        strict_support_packet_audit_status_firewall_nogo.get("certificate_boundary", {})
+        .get("strict_wz_packet_audited_or_retained")
+        is False,
+    )
+    check(
+        "strict symbolic top packet remains unaudited",
+        strict_support_packet_audit_status_firewall_nogo.get("certificate_boundary", {})
+        .get("strict_top_packet_audited_or_retained")
+        is False,
+    )
+    check(
+        "strict support-packet firewall keeps strict certificate absent",
+        strict_support_packet_audit_status_firewall_nogo.get("certificate_boundary", {})
+        .get("strict_positive_certificate_present")
+        is False,
+    )
+    check(
         "strict pole-row repository discovery no-go passed",
         strict_pole_row_repository_discovery_nogo.get("fail_count") == 0,
         strict_pole_row_repository_discovery_nogo.get("fail_count"),
@@ -1932,6 +1979,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_real_same_surface_top_line_law_obstruction": c3_real_same_surface_top_line_law_obstruction,
         "c3_circulant_dynamics_ordering_source_law_boundary": c3_circulant_dynamics_ordering_source_law_boundary,
         "strict_sparse_top_w_availability_audit": strict_sparse_top_w_availability_audit,
+        "strict_support_packet_audit_status_firewall_nogo": strict_support_packet_audit_status_firewall_nogo,
         "strict_pole_row_repository_discovery_nogo": strict_pole_row_repository_discovery_nogo,
         "origin_main_strict_pole_refresh_nogo": origin_main_strict_pole_refresh_nogo,
         "origin_main_declared_anchor_firewall_nogo": origin_main_declared_anchor_firewall_nogo,
@@ -2183,6 +2231,11 @@ def main() -> int:
             "The strict sparse route is unavailable on the current branch "
             "because accepted backend/projector/controlled pole-row artifacts "
             "are absent. "
+            "The strict support-packet audit-status firewall also prunes the "
+            "tempting W/Z denominator plus symbolic top-row shortcut: the "
+            "top coefficient y_33 remains free, both packet claims are "
+            "unaudited in the audit queue/ledger, and the same-source ratio "
+            "only gives sqrt(2)*y_33/g_2. "
             "A broader strict pole-row repository discovery scan also finds "
             "no hidden accepted same-surface top/W pole-row certificate under "
             "current Y_T response/backend/projector artifact names. "
@@ -2435,6 +2488,9 @@ def main() -> int:
             "c3_real_same_surface_top_line_law_obstruction_fail_count": support_outputs["c3_real_same_surface_top_line_law_obstruction"].get("fail_count"),
             "c3_circulant_dynamics_ordering_source_law_boundary_fail_count": support_outputs["c3_circulant_dynamics_ordering_source_law_boundary"].get("fail_count"),
             "strict_sparse_top_w_availability_audit_fail_count": support_outputs["strict_sparse_top_w_availability_audit"].get("fail_count"),
+            "strict_support_packet_audit_status_firewall_nogo_fail_count": support_outputs[
+                "strict_support_packet_audit_status_firewall_nogo"
+            ].get("fail_count"),
             "strict_pole_row_repository_discovery_nogo_fail_count": support_outputs["strict_pole_row_repository_discovery_nogo"].get("fail_count"),
             "origin_main_strict_pole_refresh_nogo_fail_count": support_outputs["origin_main_strict_pole_refresh_nogo"].get("fail_count"),
             "origin_main_declared_anchor_firewall_nogo_fail_count": support_outputs["origin_main_declared_anchor_firewall_nogo"].get("fail_count"),
@@ -2565,6 +2621,9 @@ def main() -> int:
             "docs/YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_strict_wz_c3_top_row_splice_no_go.py",
             "outputs/yt_strict_wz_c3_top_row_splice_no_go_2026-05-27.json",
+            "docs/YT_STRICT_SUPPORT_PACKET_AUDIT_STATUS_FIREWALL_NO_GO_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_strict_support_packet_audit_status_firewall_no_go.py",
+            "outputs/yt_strict_support_packet_audit_status_firewall_no_go_2026-05-28.json",
             "docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py",
             "outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json",

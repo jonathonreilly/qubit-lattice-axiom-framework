@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1243 |
+| unaudited | 1242 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,21 +57,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 826 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1473 |
+| `unaudited` | 1472 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1102 |
+| `bounded_theorem` | 1103 |
 | `decoration` | 50 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 111 |
-| `positive_theorem` | 708 |
+| `positive_theorem` | 707 |
 
 | criticality | count |
 |---|---:|
@@ -986,6 +986,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12135,6 +12136,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The wave-field hardening still closes the interaction, norm, and bounded-field story cleanly, but it does not close the full state-family battery and it does not give universal contraction on this operating point.  _(class `C`)_
 - **chain closes:** True — The runner directly computes the scalar wave field coupled to staggered matter and reproduces the note's hard scores of 4/5, 5/5, 4/5 plus width ratios 1.0047, 1.0019, and 0.9923. The note's bounded conclusion matches the current corrected output.
 - **rationale:** The claim is scoped to a bounded corrected wave-field prototype, not retained universal robustness. Current output confirms W1-W4 on all three families, W6 only on growing, and width response as a diagnostic rather than a gate. Residual risk is limited to the stated lack of universal contraction, full state-family robustness, larger-graph battery, and retarded-field closure.
+- **auditor confidence:** high
+
+### `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05`
+
+- **Note:** [`STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`](../../docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded determinant algebra on a supplied symmetric-canonical matrix surface: for balanced sublattices and M=[[alpha I,K],[-K^dag,alpha I]] with real nonzero alpha=m+r d, the determinant factorizes as prod_i(alpha^2+sigma_i^2)>0. Certification that this surface is the current framework Wilson/staggered convention remains conditional.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After epsilon-block ordering and SVD K=U Sigma V^dag, gamma5 M is unitarily equivalent to independent 2x2 blocks [[alpha,sigma_i],[sigma_i,-alpha]], so det(M)=det(epsilon)^-1 det(epsilon M)=prod_i(alpha^2+sigma_i^2)>0.  _(class `B`)_
+- **chain closes:** False — The determinant algebra and runner checks close on the supplied symmetric-canonical matrix surface, but the row's only declared dependency is the superseded minimal_axioms_2026-04-11 meta note and the source still imports parent canonical-surface assertions not retained in the restricted packet.
+- **rationale:** Issue: the algebraic bridge is valid on the supplied surface M_W=r d I, but the source cites the superseded minimal_axioms_2026-04-11 stack and parent canonical-surface assertions for why that surface is the framework Wilson/staggered convention. Why this blocks: the audit packet can certify the determinant factorization as bounded algebra, but not the authority that the current framework is on that symmetric-canonical Wilson surface. Independent math check: SVD of K reduces epsilon M to 2x2 blocks with determinant -(alpha^2+sigma_i^2); det(epsilon)=(-1)^(n/2), so the signs cancel and det(M)=prod_i(alpha^2+sigma_i^2), strictly positive for alpha=m+r d != 0. Repair target: replace the superseded minimal-axioms dependency with the current axiom premise or a retained surface-selection theorem, and wire/audit any parent convention needed for M_W=r d I. Claim boundary until fixed: the determinant positivity formula is sound as a bounded algebraic theorem on a supplied symmetric-canonical matrix surface, not yet as a current-framework Wilson-sector authority.
+- **open / conditional deps cited:**
+  - `minimal_axioms_2026-04-11`
 - **auditor confidence:** high
 
 ### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`

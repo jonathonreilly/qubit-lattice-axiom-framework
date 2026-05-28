@@ -26,6 +26,12 @@ Cycle 26 science commit:
 b238923391cd7c611d99b3a4bff180f486e3b086
 ```
 
+Cycle 26 delivery commit:
+
+```text
+8a2d801d5b9d12cb08ae8f5c1294c17dfc07b2c9
+```
+
 Cycle 26 artifacts:
 
 - `docs/YT_PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NO_GO_NOTE_2026-05-28.md`

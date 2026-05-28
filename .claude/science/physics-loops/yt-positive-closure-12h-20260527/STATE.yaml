@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 11363
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T03:29:10Z"
+last_checkpoint_utc: "2026-05-28T03:32:34Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: physical_source_panel_current_gate_firewall_no_go
@@ -208,6 +208,7 @@ commands_run:
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
   - "git commit -m 'Prune physical source panel current-gate shortcut' -> b238923391cd7c611d99b3a4bff180f486e3b086"
+  - "git commit -m 'Record physical source panel delivery' -> 8a2d801d5b9d12cb08ae8f5c1294c17dfc07b2c9"
   - "python3 scripts/frontier_yt_legacy_hessian_bridge_firewall_no_go.py -> PASS=98 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=522 FAIL=0"
   - "python3 scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py -> PASS=46 FAIL=0"
@@ -662,8 +663,8 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 26 science commit b238923391cd7c611d99b3a4bff180f486e3b086 is created locally; delivery commit, branch push, and PR #1980 body update are pending."
+pr_status: "Cycle 26 science commit b238923391cd7c611d99b3a4bff180f486e3b086 and delivery commit 8a2d801d5b9d12cb08ae8f5c1294c17dfc07b2c9 are created locally; branch push and PR #1980 body update are pending."
 latest_science_commit: b238923391cd7c611d99b3a4bff180f486e3b086
-latest_delivery_commit: pending
+latest_delivery_commit: 8a2d801d5b9d12cb08ae8f5c1294c17dfc07b2c9
 next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

@@ -1,17 +1,18 @@
 """
-APS eta = 2/9 block-by-block support verification for the ambient topological
-route behind the Brannen phase.
+APS eta = 2/9 block-by-block support verification for the conditional
+ambient topological route behind the Brannen phase.
 
 
 
-Verifies that each building block of the APS eta = 2/9 derivation
-of delta = 2/9 rad via APS topological robustness is forced by retained
-axioms, not chosen.
+Verifies that, given the stipulated topological inputs p=3, tangent weights
+(1,2), and ABSS fixed-point applicability on PL S^3 x R, the APS arithmetic
+closes to eta = 2/9. This runner does not prove the global Cl(3)/Z^3 -> PL
+S^3 x R bridge and does not prove the physical Brannen-phase identification.
 
 The derivation chain:
-  (a) Retained kinematics: Z^3 lattice, C_3[111] rotation by 2pi/3 about
+  (a) Stipulated C_3[111] route: rotation by 2pi/3 about
       (1,1,1)/sqrt(3) body-diagonal.
-  (b) Continuum limit: Z^3 -> PL S^3 x R via S3_CAP_UNIQUENESS_NOTE.
+  (b) Conditional topology input: PL S^3 x R route.
   (c) Fixed locus of C_3 action on R^3: the body-diagonal line.
   (d) Tangent representation at fixed locus: eigenvalues (omega, omega^2)
       on the transverse plane, giving weights (1, 2) mod 3.
@@ -22,9 +23,9 @@ The derivation chain:
   (g) Result: eta(p=3, a=1, b=2) = 2/9 exactly.
 
 For each step, verify:
-  - The piece is forced by retained axioms (not chosen).
-  - No alternative construction gives different value consistent with
-    retained axioms.
+  - The algebraic piece is fixed inside the stipulated route.
+  - Nearby alternatives give different eta values, so the stipulated
+    (p, a, b) data leave no internal arithmetic choice.
 """
 import sympy as sp
 import math
@@ -177,7 +178,7 @@ log.append("\n=== (d) Tangent weights (1, 2) ===")
 # acts as diag(omega^a, omega^b) on tangent. Here omega = primitive p-th root.
 # So (a, b) = (1, 2) mod 3. (Or equivalently (1, -1) mod 3, same thing.)
 
-# Verify this is forced:
+# Verify this is fixed inside the stipulated route:
 # - The non-fixed eigenvalues (omega, omega^2) are UNIQUELY determined by (b1).
 # - (omega^1, omega^2) corresponds to weights (1, 2) by definition.
 
@@ -219,8 +220,8 @@ ok("d2. Weights read off: omega -> 1, omega^2 -> 2",
    w_from_omega == 1 and w_from_omega_sq == 2,
    f"(a, b) = ({w_from_omega}, {w_from_omega_sq})")
 
-# Alternative weight choices are ruled out because the eigenvalues are
-# uniquely forced by b2. Executable: enumerate (a, b) pairs in {1, 2}x{1, 2}
+# Alternative weight choices are ruled out inside the stipulated route because
+# the eigenvalues are fixed by b2. Executable: enumerate (a, b) pairs in {1, 2}x{1, 2}
 # and check which ones produce transverse eigenvalues = {omega, omega^2}.
 candidate_weight_sets = [(1, 1), (1, 2), (2, 1), (2, 2)]
 consistent = []
@@ -344,8 +345,9 @@ ok("g1. eta(1,2,3) = eta(2,1,3) = 2/9 (by (a,b) swap symmetry)",
    "swap symmetry preserves eta")
 
 # Alternative p values: generalize abss_eta to p != 3 and show each gives
-# a different eta. p=3 is retained by C_3 order (cube body-diagonal rotation
-# has period 3; no other period is consistent with the cyclic permutation P).
+# a different eta. p=3 is the stipulated C_3 order (cube body-diagonal
+# rotation has period 3; no other period is consistent with the cyclic
+# permutation P).
 def abss_eta_general(a_weight, b_weight, p):
     zeta = sp.exp(2 * sp.pi * sp.I / p)
     total = sp.Rational(0)
@@ -370,16 +372,16 @@ log.append(f"  eta(p=7, a=1, b=6) = {eta_p7}")
 different_from_2_9 = all(
     sp.simplify(v - sp.Rational(2, 9)) != 0 for v in [eta_p2, eta_p5, eta_p7]
 )
-ok("g2. Alternative p in {2, 5, 7} give DIFFERENT eta; p=3 is the retained choice",
+ok("g2. Alternative p in {2, 5, 7} give DIFFERENT eta; p=3 is the stipulated choice",
    different_from_2_9,
    f"eta(2,1,1)={eta_p2}, eta(5,1,4)={eta_p5}, eta(7,1,6)={eta_p7}")
 
 # ==========================================================================
-# (h) ABSS theorem applicability: each prerequisite converted to an
-#     executable symbolic/numerical check rather than a literal True.
+# (h) ABSS prerequisite support inside the stipulated route: each prerequisite
+#     converted to an executable symbolic/numerical check rather than a literal True.
 # ==========================================================================
 
-log.append("\n=== (h) ABSS theorem applicability (executable prerequisites) ===")
+log.append("\n=== (h) ABSS prerequisite checks under stipulated route ===")
 
 # h1. Smoothability: PL smoothing obstruction for a PL n-manifold lives in
 #     H^{i+1}(M; pi_i(PL/O)). For dim(M) <= 6, all relevant pi_i(PL/O) vanish
@@ -467,8 +469,8 @@ ok("h4. SO(3) C_3 generator lifts to unit quaternion q in SU(2) with q^3 = -1",
    and sp.simplify(q_cube[1]) == sp.zeros(3, 1),
    f"|q|^2 = {q_norm_sq}, q^3 = ({q_cube[0]}, {list(q_cube[1])})")
 
-# h5. ABSS applies = (h1) smoothability ∧ (h2) spin ∧ (h3) Morse-Bott ∧
-#                    (h4) equivariant lift — all four verified above.
+# h5. ABSS prerequisite support = (h1) smoothability ∧ (h2) spin ∧
+#                                 (h3) Morse-Bott ∧ (h4) equivariant lift.
 h1_ok = all(g == 0 for g in relevant_groups)
 h2_ok = basis_at_e.rank() == 3 and H_S3[1] == "0"
 h3_ok = sp.simplify(det_normal_minus_I - 3) == 0
@@ -479,23 +481,23 @@ ok("h5. ABSS prerequisites (h1)∧(h2)∧(h3)∧(h4) all verified executively",
    f"h1={h1_ok}, h2={h2_ok}, h3={h3_ok}, h4={h4_ok}")
 
 # ==========================================================================
-# (i) Composite forcing: each piece has its own PASS above; here we verify
-#     the composite consistency — no alternative combination of these forced
+# (i) Composite conditional certificate: each piece has its own PASS above;
+#     here we verify the composite consistency — no alternative combination of these
 #     pieces gives a different eta than 2/9.
 # ==========================================================================
 
 log.append("\n=== (i) Composite uniqueness consistency ===")
 
 # The only degrees of freedom in the derivation chain are:
-#  - Z_p order p (forced = 3 by cube body-diagonal C_3)
-#  - Tangent weights (a, b) mod p (forced to {(1,2), (2,1)} by transverse
+#  - Z_p order p (stipulated = 3 by cube body-diagonal C_3)
+#  - Tangent weights (a, b) mod p (fixed to {(1,2), (2,1)} by transverse
 #    eigenvalues of R)
 # Enumerate the full cross product of (p in allowed) x ((a,b) allowed) and
 # verify the only consistent combination gives eta = 2/9.
-p_allowed = [3]  # forced by C_3
-ab_allowed = [(1, 2), (2, 1)]  # forced by transverse (omega, omega^2)
+p_allowed = [3]  # stipulated C_3 route
+ab_allowed = [(1, 2), (2, 1)]  # fixed by transverse (omega, omega^2)
 all_eta_values = [abss_eta_general(a, b, p) for p in p_allowed for (a, b) in ab_allowed]
-ok("i1. Every (p, a, b) combination consistent with retained kinematics gives eta = 2/9",
+ok("i1. Every (p, a, b) combination consistent with the stipulated C_3 route gives eta = 2/9",
    all(sp.simplify(v - sp.Rational(2, 9)) == 0 for v in all_eta_values),
    f"values = {all_eta_values}")
 
@@ -511,11 +513,11 @@ ok("i2. Among p in {2..7}, only p=3 with weights (1, 2) gives eta = 2/9",
    len(match_2_9) == 1 and match_2_9[0][0] == 3,
    f"matches = {match_2_9}")
 
-# Final composite: eta = 2/9 is forced, given the retained Z_3 kinematics,
-# the tangent-rep forcing, the ABSS applicability check (h-block above),
+# Final composite: eta = 2/9 is fixed, given the stipulated C_3 kinematics,
+# the tangent-rep weights, the ABSS applicability check (h-block above),
 # and the exact core algebraic identity (f-block above).
-composite_forcing_ok = (
-    # (a-b) Retained kinematics identified C_3 eigenvalues
+composite_certificate_ok = (
+    # (a-b) Stipulated C_3 route identified eigenvalues
     sp.simplify(char_poly - (1 - lam**3)) == 0
     # (c) Fixed locus structure
     and M_rank == 2
@@ -531,16 +533,16 @@ composite_forcing_ok = (
     # (i) All consistent combinations give 2/9
     and all(sp.simplify(v - sp.Rational(2, 9)) == 0 for v in all_eta_values)
 )
-ok("i3. COMPOSITE: ambient APS eta = 2/9 follows from the executable support chain",
-   composite_forcing_ok,
-   "chain (a)->(b)->(c)->(d)->(e)->(f)->(g)->(h)->(i) is gap-free and executable")
+ok("i3. COMPOSITE: ambient APS eta = 2/9 follows inside the stipulated support chain",
+   composite_certificate_ok,
+   "chain (a)->(b)->(c)->(d)->(e)->(f)->(g)->(h)->(i) is internally consistent and executable under the stipulations")
 
 # ==========================================================================
 # Summary
 # ==========================================================================
 
 print("=" * 72)
-print("APS ETA = 2/9 BLOCK-BY-BLOCK SUPPORT CHAIN")
+print("APS ETA = 2/9 BLOCK-BY-BLOCK CONDITIONAL SUPPORT CHAIN")
 print("=" * 72)
 for line in log:
     print(line)
@@ -549,24 +551,24 @@ print(f"Total: {PASS} PASS, {FAIL} FAIL")
 print()
 print("Verdict:")
 if FAIL == 0:
-    print("  Each building block of the ambient APS eta = 2/9 derivation is")
-    print("  executable and structurally fixed on the admitted topological route:")
+    print("  Given the stipulated p=3, weights (1,2), and ABSS applicability")
+    print("  on the PL S^3 x R route, each algebraic block of the ambient")
+    print("  APS eta = 2/9 derivation is executable and structurally fixed:")
     print()
-    print("    C_3[111] rotation    = 2pi/3 body-diagonal [retained kinematics]")
-    print("    eigenvalues          = (1, omega, omega^2) [forced by rotation order]")
+    print("    C_3[111] rotation    = 2pi/3 body-diagonal [stipulated route]")
+    print("    eigenvalues          = (1, omega, omega^2) [fixed by rotation order]")
     print("    fixed locus          = body-diagonal (codim-2 on S^3)")
     print("    tangent weights      = (1, 2) mod 3 [from eigenvalues]")
-    print("    ABSS theorem applies [spin + Morse-Bott + compact]")
+    print("    ABSS prerequisites   = spin + Morse-Bott + compact checks")
     print("    core identity        = (omega-1)(omega^2-1) = 3 [exact algebra]")
     print("    result eta           = 2/9 [unique computation]")
     print()
-    print("  No alternative construction gives a different ambient eta consistent")
-    print("  with the admitted topological data. This is the strongest current")
-    print("  executable support chain for the ambient APS value. What remains")
-    print("  open is the physical-observable bridge identifying the selected-line")
-    print("  Brannen phase with this ambient invariant.")
+    print("  No alternative construction gives a different ambient eta under")
+    print("  the stipulated topological data. What remains open is the global")
+    print("  topological/ABSS bridge and the physical-observable bridge")
+    print("  identifying the selected-line Brannen phase with this ambient invariant.")
     print()
-    print("  APS_ETA_2_9_SUPPORT_CHAIN=TRUE")
+    print("  APS_ETA_2_9_CONDITIONAL_SUPPORT_CHAIN=TRUE")
 else:
     print(f"  {FAIL} checks failed.")
-    print("  APS_ETA_2_9_SUPPORT_CHAIN=PARTIAL")
+    print("  APS_ETA_2_9_CONDITIONAL_SUPPORT_CHAIN=PARTIAL")

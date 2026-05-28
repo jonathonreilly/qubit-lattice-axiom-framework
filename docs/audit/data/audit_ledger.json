@@ -164149,57 +164149,78 @@
       "verdict_rationale": "The claim closes at bounded-theorem grade for the stated operator convention. Independently, expanding 6-2(cos kx+cos ky+cos kz) gives |k|^2-(kx^4+ky^4+kz^4)/12+O(|k|^6), so the singular Fourier part has the continuum Poisson normalization. The unit-flux check fixes the constant as 1/(4*pi*r), and applying the exact lattice stencil to 1/(4*pi*r) on axis gives a residual with r^5 scaling tending to 7/(8*pi), matching the runner values. The source does not use Maradudin/Spitzer/Lawler as a hidden accepted premise and explicitly excludes downstream Newton or gravity closure."
     },
     "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T05:38:40.343660+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited."
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "36ca7e249c56cbecdf77a183fe0fa4e2e9635094c2706abc5deb444dcd22fe07",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "euler-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-lattice-greens-maradudin-bridge",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The arithmetic closes, but only as an algebraic restatement of the retained parent Green-kernel normalization; it adds no independent comparator, compression, or new physical content.",
       "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Duplicative accepted-premise registration/restatement of the retained parent nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization G(r) ~ 1/(4*pi*|r|), with no downstream Newton-law, gravity, or physical-Poisson closure.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T05:38:40.343660+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
       "deps": [
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
       "load_bearing_score": 2.585,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Under P1, G(r) -> c / |r| with c = 1 / (4 pi); the constant is pinned by B1 + B2 + B3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "a38c01c50fe69bd5dd101a59e10e80673174a50d2474bbfefb3fc9cf97270164",
       "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Box under the parent row unless a future revision supplies explicit reviewed registry/premise-node approval for the Maradudin/Lawler/Spitzer P1 as a standalone accepted premise or adds independent non-duplicative physical/comparator content.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 30,
+        "B": 33,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 63
       },
       "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
       "title": "Cubic-Lattice Green's Function Asymptotic Accepted-Premise Bridge",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "The Tier-A registry does not approve this Maradudin asymptotic as a standalone premise, and the registry treats standard textbook theorems as needing retained-grade inline handling. The direct parent already has retained_bounded status for the same nearest-neighbor Z^3 stencil, small-k normalization, unit-flux convention, and 1/(4*pi*|r|) coefficient. Fresh-context independent checks agree with the arithmetic: lambda(k)=|k|^2-(kx^4+ky^4+kz^4)/12+..., the flux of 1/(4*pi*r) is 1, and n^5|(-Delta_lat)phi(n,0,0)| stabilizes near 0.27852 with doubling ratios near 32. This row should be boxed as decoration under the parent, not retained as a separate bounded theorem."
     },
     "lattice_keff_continuum_note": {
       "audit_date": "2026-05-24T18:06:56.796632+00:00",

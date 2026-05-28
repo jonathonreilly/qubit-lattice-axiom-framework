@@ -3,7 +3,7 @@
     "critical": 230,
     "high": 317,
     "leaf": 325,
-    "medium": 302
+    "medium": 301
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -16561,30 +16561,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -26410,6 +26386,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
+        "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/static_source_readout_i1_accepted_premise_runner.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -29559,32 +29561,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/signed_gravity_retained_boundary_source_principle_nogo.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-        "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
-        "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/static_source_readout_i1_accepted_premise_runner.py",
       "transitive_descendants": 1
     },
     {
@@ -35617,5 +35593,5 @@
     }
   ],
   "ready_count": 48,
-  "total_pending": 1174
+  "total_pending": 1173
 }

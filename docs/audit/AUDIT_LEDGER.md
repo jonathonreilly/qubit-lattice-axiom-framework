@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 571 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1174 |
+| unaudited | 1173 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -42,6 +42,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | 1 |
+| `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | 1 |
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
@@ -59,16 +60,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 871 |
 | `audited_conditional` | 60 |
-| `audited_decoration` | 50 |
+| `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1404 |
+| `unaudited` | 1403 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1108 |
-| `decoration` | 51 |
+| `bounded_theorem` | 1107 |
+| `decoration` | 52 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
@@ -1079,6 +1080,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | judicial_review | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
+| `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | fresh_context | codex-gpt-5.5 | A | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `lattice_total_momentum_conservation_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | cross_family | codex-gpt-5.5 | A | `axiom_first_lattice_noether_theorem_note_2026-04-29` |
 | `left_handed_charge_matching_note` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -8134,6 +8136,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The runner cache and direct rerun report lambda(k)/|k|^2 -> 1 on axis and diagonal small-k tests, continuum flux exactly 1.0 for 1/(4*pi*r), and axis residuals 2.658444e-07, 8.302321e-09, 2.594066e-10, 8.106139e-12 at r=16,32,64,128 with scaled r^5 coefficients tending to 0.27852, then prints CERTIFICATE PASS for the 1/(4*pi*r) normalization.  _(class `C`)_
 - **chain closes:** True — The row has no one-hop dependencies, the registered runner is fresh and passes, and the source proof plus independent checks close the framework-local normalization for the stated Z^3 stencil. Textbook references are parallel provenance only; the retained authority is bounded to this local operator convention and coefficient.
 - **rationale:** The claim closes at bounded-theorem grade for the stated operator convention. Independently, expanding 6-2(cos kx+cos ky+cos kz) gives |k|^2-(kx^4+ky^4+kz^4)/12+O(|k|^6), so the singular Fourier part has the continuum Poisson normalization. The unit-flux check fixes the constant as 1/(4*pi*r), and applying the exact lattice stencil to 1/(4*pi*r) on axis gives a residual with r^5 scaling tending to 7/(8*pi), matching the runner values. The source does not use Maradudin/Spitzer/Lawler as a hidden accepted premise and explicitly excludes downstream Newton or gravity closure.
+- **auditor confidence:** high
+
+### `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`
+
+- **Note:** [`LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Duplicative accepted-premise registration/restatement of the retained parent nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization G(r) ~ 1/(4*pi*|r|), with no downstream Newton-law, gravity, or physical-Poisson closure.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18`  (reason: `decoration_parent_retained`)
+- **auditor:** `euler-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-lattice-greens-maradudin-bridge`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Under P1, G(r) -> c / |r| with c = 1 / (4 pi); the constant is pinned by B1 + B2 + B3.  _(class `A`)_
+- **chain closes:** True — The arithmetic closes, but only as an algebraic restatement of the retained parent Green-kernel normalization; it adds no independent comparator, compression, or new physical content.
+- **rationale:** The Tier-A registry does not approve this Maradudin asymptotic as a standalone premise, and the registry treats standard textbook theorems as needing retained-grade inline handling. The direct parent already has retained_bounded status for the same nearest-neighbor Z^3 stencil, small-k normalization, unit-flux convention, and 1/(4*pi*|r|) coefficient. Fresh-context independent checks agree with the arithmetic: lambda(k)=|k|^2-(kx^4+ky^4+kz^4)/12+..., the flux of 1/(4*pi*r) is 1, and n^5|(-Delta_lat)phi(n,0,0)| stabilizes near 0.27852 with doubling ratios near 32. This row should be boxed as decoration under the parent, not retained as a separate bounded theorem.
+- **decoration parent:** `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
 - **auditor confidence:** high
 
 ### `lattice_keff_continuum_note`

@@ -514,11 +514,12 @@ not promote this note or change the audited claim scope.
 
 - [yt_ew_color_projection_theorem](YT_EW_COLOR_PROJECTION_THEOREM.md)
 - `HIGGS_MASS_DERIVED_NOTE.md` (file-pointer context reference, backticked
-  to avoid the known back-edge through the EW-coupling / `g_1(v)`-`g_2(v)`
-  input-authority cluster; that note already cites this one in its
-  Note↔runner reconciliation section)
+  to break the length-4 audit-graph cycle through the EW-coupling /
+  `g_1(v)`-`g_2(v)` input-authority cluster; per this note's scope statement
+  the downstream bounded Higgs route in that note is NOT load-bearing on
+  `m_curv_tree`, and that note already cites this one in its Note↔runner
+  reconciliation section, which is the load-bearing direction)
 - [higgs_from_lattice_note](HIGGS_FROM_LATTICE_NOTE.md)
 - [plaquette_self_consistency_note](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-- [higgs_mass_derived_note](HIGGS_MASS_DERIVED_NOTE.md)
-- [higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08](HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md)
-- [higgs_kappa_curv_from_vtaste_symmetric_point_narrow_theorem_note_2026-05-10](HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md` (file-pointer context reference, backticked to break the length-2 audit-graph cycle: that channel-boundary note is downstream — it bounds this note's formula [5] `N_taste` slot and cites this note as its load-bearing parent — so this back-reference is informational/sideways, not a load-bearing dependency edge)
+- `HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md` (file-pointer context reference, backticked to break the length-2 audit-graph cycle: that κ_curv note is downstream — it imports this note's V_taste form from Step 4 as its load-bearing parent — so this back-reference is informational/sideways, not a load-bearing dependency edge)

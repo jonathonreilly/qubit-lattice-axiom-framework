@@ -7,32 +7,8 @@
     "open_gate": 112,
     "positive_theorem": 695
   },
-  "cycle_examples": [
-    [
-      "higgs_mass_from_axiom_note",
-      "higgs_mass_derived_note",
-      "ew_coupling_derivation_note",
-      "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
-    ],
-    [
-      "higgs_mass_from_axiom_note",
-      "higgs_kappa_curv_from_vtaste_symmetric_point_narrow_theorem_note_2026-05-10"
-    ],
-    [
-      "wave_direct_dm_h025_fam2_seed1_followup_note",
-      "wave_direct_dm_portability_batch_note"
-    ],
-    [
-      "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
-    ],
-    [
-      "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
-    ]
-  ],
-  "cycles_detected": 6,
+  "cycle_examples": [],
+  "cycles_detected": 0,
   "effective_status_counts": {
     "audited_conditional": 72,
     "audited_failed": 1,

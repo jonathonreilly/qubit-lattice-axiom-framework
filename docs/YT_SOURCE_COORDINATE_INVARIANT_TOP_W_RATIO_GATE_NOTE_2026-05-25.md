@@ -66,10 +66,16 @@ The route does **not** need:
 - the old Ward identity.
 
 After the carrier-ray bridge in
-[`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md),
+`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md` (sibling-support
+file pointer, backticked to break the audit-graph cycle; this note's own
+v'(h)-cancellation theorem is self-contained and does not consume the
+carrier-ray identity, and that sibling already cites this gate as support),
 the signed-record source is aligned with the neutral `P_-` Higgs ray up to an
 affine source reparameterization.  After
-[`YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md`](YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md),
+`YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md` (downstream
+sibling-support file pointer, backticked to break the audit-graph cycle; that
+packet cites this gate as a load-bearing one-hop authority, which is the
+load-bearing direction),
 the W/Z denominator response is also support-closed.  The route still needs:
 
 1. an accepted same-surface top transfer-response theorem saying the neutral

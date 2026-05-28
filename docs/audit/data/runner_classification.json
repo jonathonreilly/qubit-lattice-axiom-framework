@@ -3132,6 +3132,18 @@
       "dominant_class": "A",
       "runner": "scripts/cl3_normalization_i3_accepted_premise_runner.py"
     },
+    "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/cl3_oh_cubic_lift_faithful_runner.py"
+    },
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -30853,6 +30865,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/cl3_oh_cubic_lift_faithful_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/cl3_per_site_hilbert_dim_two_check.py": {
       "assert_count": 0,
       "claims": [
@@ -57474,12 +57501,12 @@
     "dominant_class_distribution": {
       "A": 263,
       "B": 294,
-      "C": 767,
+      "C": 768,
       "D": 307,
       "none": 441
     },
-    "runners_classified": 2072,
-    "runners_with_C": 1008,
+    "runners_classified": 2073,
+    "runners_with_C": 1009,
     "runners_with_D": 613
   }
 }

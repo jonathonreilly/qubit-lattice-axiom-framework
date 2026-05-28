@@ -255355,24 +255355,42 @@
       "verdict_rationale": "The note is clean as a bounded negative for broadband attraction under the tested source-defined spectral controls. The current artifacts reproduce the stated pattern: raw broad/flat spectra are AWAY, source-coupled and source-equalized controls do not rescue broadband TOWARD, and detector-equalized TOWARD behavior is explicitly framed as an output-dependent diagnostic rather than a source model. Residual risk is that this does not rule out a later physical k-selection mechanism, but the note lists that as open work."
     },
     "spectral_symmetry_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T08:50:50.001588+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding."
+        },
+        "dep_claim_type": {
+          "higher_symmetry_joint_validation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higher_symmetry_joint_validation_note": "retained_bounded"
+        },
+        "deps": [
+          "higher_symmetry_joint_validation_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b127203f0c148119fcd06c20e20cfcfaeae42571c637e8cdccf5d0f30ffbd1ee",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-spectral-symmetry-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite runner table and the monotone Lindeberg-ratio decrease close as measurements, but the convergence-with-power-law and CLT-mechanism reading is stronger than the cached evidence proves. The d_TV/overlap/purity residuals are noisy across N and their fitted power laws have only R^2 about 0.35-0.42.",
       "claim_id": "spectral_symmetry_note",
-      "claim_scope": null,
+      "claim_scope": "Finite cached run of scripts/ceiling_formal_proof.py on random causal DAGs with npl=25, connect_radius=2.5, k=5.0, 16 seeds, N=12-80, reporting d_TV, overlap, 1-pur_min, Lyapunov gap, and Lindeberg ratio.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T08:50:50.001588+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -255380,21 +255398,21 @@
         "higher_symmetry_joint_validation_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/generative_causal_dag_interference.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "weak",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note claims that on the cached N=12-80 random-DAG configuration the detector distributions converge in d_TV with power-law decline and that the measurements support a CLT-style non-dominance mechanism rather than rank-1 spectral collapse.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "825a3de15d376ca03162a5a689666627d0e3ed6bd87d621879cc179b7cf16c04",
       "note_path": "docs/SPECTRAL_SYMMETRY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source claim to the exact cached measurements and monotone Lindeberg-ratio observation, or add a registered statistical/pass-fail criterion for the power-law convergence and CLT-style mechanism claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -255515,18 +255533,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 5,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/ceiling_formal_proof.py",
       "title": "Spectral Symmetry Note \u2014 CLT-Style Decoherence Evidence on Random Causal DAGs",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the runner computes the finite table, but the load-bearing claim promotes noisy finite measurements into a convergence/power-law and CLT-style mechanism statement. Why this blocks: d_TV is not monotone on the cached range, the overlap and purity residuals also have large finite-N excursions, and the reported power-law fits have low R^2, so the restricted packet does not establish the mechanism strength claimed. Repair target: narrow the theorem to the exact cached table plus monotone Lindeberg-ratio observation, or add an assertion runner/statistical criterion that proves the convergence and mechanism claim on the declared ensemble. Claim boundary until fixed: the cache supports the printed finite measurements and a plausible interpretation, not an audited bounded theorem of power-law convergence/mechanism closure."
     },
     "spectral_trajectory_theorem_2026-04-11": {
       "audit_date": null,

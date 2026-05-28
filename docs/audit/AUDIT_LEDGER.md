@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1130 |
+| unaudited | 1129 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 75 |
+| ~~audited_conditional~~ | 76 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 893 |
-| `audited_conditional` | 75 |
+| `audited_conditional` | 76 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1360 |
+| `unaudited` | 1359 |
 
 | claim_type | count |
 |---|---:|
@@ -1082,6 +1082,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `spectral_symmetry_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | C | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `su2_witten_z2_anomaly_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -12915,6 +12916,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The primary retained-lattice runner and the explicitly named spectral-control runners compute the raw, Lorentzian, detector-equalized, and source-side weighting cases. Their current outputs support the bounded conclusion that broad/flat source-defined spectra remain AWAY and only detector-output reweighting flips selected comparisons.
 - **rationale:** The note is clean as a bounded negative for broadband attraction under the tested source-defined spectral controls. The current artifacts reproduce the stated pattern: raw broad/flat spectra are AWAY, source-coupled and source-equalized controls do not rescue broadband TOWARD, and detector-equalized TOWARD behavior is explicitly framed as an output-dependent diagnostic rather than a source model. Residual risk is that this does not rule out a later physical k-selection mechanism, but the note lists that as open work.
 - **auditor confidence:** medium
+
+### `spectral_symmetry_note`
+
+- **Note:** [`SPECTRAL_SYMMETRY_NOTE.md`](../../docs/SPECTRAL_SYMMETRY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite cached run of scripts/ceiling_formal_proof.py on random causal DAGs with npl=25, connect_radius=2.5, k=5.0, 16 seeds, N=12-80, reporting d_TV, overlap, 1-pur_min, Lyapunov gap, and Lindeberg ratio.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-spectral-symmetry-2026-05-27`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** The note claims that on the cached N=12-80 random-DAG configuration the detector distributions converge in d_TV with power-law decline and that the measurements support a CLT-style non-dominance mechanism rather than rank-1 spectral collapse.  _(class `C`)_
+- **chain closes:** False — The finite runner table and the monotone Lindeberg-ratio decrease close as measurements, but the convergence-with-power-law and CLT-mechanism reading is stronger than the cached evidence proves. The d_TV/overlap/purity residuals are noisy across N and their fitted power laws have only R^2 about 0.35-0.42.
+- **rationale:** Issue: the runner computes the finite table, but the load-bearing claim promotes noisy finite measurements into a convergence/power-law and CLT-style mechanism statement. Why this blocks: d_TV is not monotone on the cached range, the overlap and purity residuals also have large finite-N excursions, and the reported power-law fits have low R^2, so the restricted packet does not establish the mechanism strength claimed. Repair target: narrow the theorem to the exact cached table plus monotone Lindeberg-ratio observation, or add an assertion runner/statistical criterion that proves the convergence and mechanism claim on the declared ensemble. Claim boundary until fixed: the cache supports the printed finite measurements and a plausible interpretation, not an audited bounded theorem of power-law convergence/mechanism closure.
+- **auditor confidence:** high
 
 ### `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`
 

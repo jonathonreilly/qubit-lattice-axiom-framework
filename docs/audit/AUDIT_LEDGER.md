@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 559 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1196 |
+| unaudited | 1195 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 51 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,19 +60,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 859 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 50 |
-| `audited_failed` | 47 |
+| `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1426 |
+| `unaudited` | 1425 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1105 |
+| `bounded_theorem` | 1106 |
 | `decoration` | 51 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 703 |
+| `positive_theorem` | 702 |
 
 | criticality | count |
 |---|---:|
@@ -1109,6 +1109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -6900,6 +6901,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The in-sample classifier rule (avg_deg >= 10.415 and reach_frac >= 0.859) is applied without refit to nine scripted independent generator families, yielding only 2/9 full-battery passes, 4/9 hard-coded prediction accuracy, and 6/9 no-refit rule accuracy.  _(class `C`)_
 - **chain closes:** True — The live runner rebuilds the nine named generator families, applies the same five-condition battery and frozen rule, and reproduces the negative table: only E1_er_p005 and E2_er_p020 pass, hard-coded predictions score 4/9, and the no-refit classifier rule scores 6/9.
 - **rationale:** The finite negative result closes on its own terms: the checked-in runner contains the nine generator constructors, the hard-coded prediction dictionary, the five-condition battery, and the frozen avg_deg/reach_frac rule, and live replay matches the source note's pass/fail and accuracy claims. The decisive rule failures R1, R3, and X1 all satisfy the frozen structural thresholds but fail the actual battery, while only the two Erdős-Rényi families pass the full package. This clean verdict is narrow: it certifies this deterministic nine-family held-out replay and the checked-in prediction table, not an exhaustive statistical theorem over all independent generator laws or independent timestamp proof beyond the artifact chain.
+- **auditor confidence:** high
+
+### `industrial_sdp_bootstrap_infrastructure_note_2026-05-03`
+
+- **Note:** [`INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite CVXPY moment-problem SDP infrastructure validation at beta=6 for SU(2)/SU(3) single-plaquette moment data, including support-only PSD brackets and fixed-higher-moment containment of m1. The full lattice plaquette value, loop-equation bootstrap, industrial precision, and external MC/Kazakov-Zheng comparators are not audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-industrial-sdp-bootstrap-block01-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-computed SU(2)/SU(3) single-plaquette reference moments are used as fixed higher moments in a Hankel/Hausdorff CVXPY moment problem whose m1 bracket is claimed to contain the known reference value.  _(class `C`)_
+- **chain closes:** False — The CVXPY feasibility/bracketing machinery runs, but the SU(2) reference surface is not the stated full SU(2) Haar/Bessel single-plaquette integral. The runner integrates theta in [0, pi] with P=cos(theta/2), restricting to P>=0; the full SU(2) class-angle integral gives I2(6)/I1(6)=0.76272608, not 0.76736480.
+- **rationale:** The cached runner exits successfully and reports PASS=13 FAIL=0, and its CVXPY bracket logic is internally consistent for the moments it computes. Independent math check of the SU(2) reference construction fails: for SU(2) with P=(1/2)tr U=cos(phi), Haar weight sin^2(phi) on phi in [0,pi] gives <P>=I2(beta)/I1(beta)=0.76272608 at beta=6, while the runner/note value 0.76736480 comes from integrating only phi in [0,pi/2]. Because the stated validation is against SU(2) single-plaquette Bessel/Haar reference data, the load-bearing validation does not close on its own terms even though the infrastructure itself is present. The SU(3) and pure PSD portions are not enough to ratify the combined source claim.
 - **auditor confidence:** high
 
 ### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`

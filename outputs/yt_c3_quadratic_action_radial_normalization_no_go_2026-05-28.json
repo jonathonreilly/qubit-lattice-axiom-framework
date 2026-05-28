@@ -1,0 +1,68 @@
+{
+  "actual_current_surface_status": "no-go / open quadratic-action-to-radial-generator law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "bare_retained_allowed": false,
+    "block_mean_square_is_rank_blind_response_square": true,
+    "block_quadratic_action_fixes_only_operator_size": true,
+    "forbidden_inputs_used": [],
+    "global_quadratic_action_fixes_only_operator_size": true,
+    "lambda_top_free_on_current_surface": true,
+    "proposal_allowed": false,
+    "root_rank_response_law_derived_on_current_surface": false,
+    "same_source_reparameterization_cancels_from_ratio": true,
+    "strict_positive_certificate_present": false,
+    "top_only_normalization_is_new_radial_law": true
+  },
+  "claim_id": "yt_c3_quadratic_action_radial_normalization_no_go_note_2026-05-28",
+  "claim_type": "no_go",
+  "dependency_fail_counts": {
+    "c3_block_rank_nogo": 0,
+    "c3_block_support": 0,
+    "c3_fisher_quotient_nogo": 0,
+    "c3_radial_factor_nogo": 0,
+    "first_principles": 0,
+    "fisher_lsz_radial_nogo": 0,
+    "full_stack": 0,
+    "strict_sparse_audit": 0
+  },
+  "fail_count": 0,
+  "pass_count": 78,
+  "positive_closure": false,
+  "positive_closure_marker_allowed": false,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Quadratic action and Hilbert-Schmidt traces fix operator-size or source-coordinate conventions only. They do not identify the C3 source tangent with the physical top radial mass generator, and the target factor appears only after adding a normalization constant or root-rank response law.",
+  "quadratic_witness": {
+    "B_x": "(C+C^2)/sqrt(6)",
+    "Pnt_line_response": "-1/sqrt(6)",
+    "Pnt_mean_square": "1/6",
+    "Pnt_quadratic_action": "1/3",
+    "global_quadratic_action": "1"
+  },
+  "radial_family": {
+    "Pnt_block_norm_sq": "lambda_top^2*A^2/3",
+    "Pnt_mean_square": "lambda_top^2*A^2/6",
+    "global_norm_sq": "lambda_top^2*A^2",
+    "lambda_top_derived_from_quadratic_action": "false",
+    "quadratic_constant_needed_for_target_block": "A^2/6",
+    "quadratic_constant_needed_for_target_global": "A^2/2",
+    "quadratic_constant_needed_for_target_mean": "A^2/12",
+    "radial_family": "V_top(lambda_top)=lambda_top*A*B_x",
+    "target_lambda": "1/sqrt(2)"
+  },
+  "reachability_to_target": "prunes",
+  "review_gate": "pass for narrow no-go route-pruning artifact only",
+  "route_pruned": "same-surface quadratic action or Hilbert-Schmidt normalization derives lambda_top=1/sqrt(2) after P_nt support is supplied",
+  "same_source_role_boundary": {
+    "bare_retained_allowed": "false",
+    "common_source_reparameterization_changes_ratio": "false",
+    "forbidden_inputs_used": [],
+    "proposal_allowed": "false",
+    "same_source_readout": "lambda_top/sqrt(3)",
+    "target_lambda": "1/sqrt(2)",
+    "target_readout": "1/sqrt(6)",
+    "top_only_normalization_is_new_radial_law": "true"
+  },
+  "trace_class": "negative_route_pruning"
+}

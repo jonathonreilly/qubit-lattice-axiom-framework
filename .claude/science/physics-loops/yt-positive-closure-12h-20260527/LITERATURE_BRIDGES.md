@@ -118,6 +118,12 @@ centered score. No external information-geometry theorem or literature
 normalization convention is load-bearing. External context could only motivate
 accepting a new physical source-geometry-to-radial-generator law; it does not
 derive `lambda_top=1/sqrt(2)` on the current surface.
+The quadratic action radial-normalization no-go directly computes global
+Hilbert-Schmidt action, `P_nt`-block trace, and block mean-square response for
+`V_top(lambda_top)=lambda_top A B_x`. No external operator-norm theorem or
+literature convention is load-bearing. External context could only motivate a
+new physical quadratic action-to-radial-generator law; it does not derive
+`lambda_top=1/sqrt(2)` on the current surface.
 The real-irrep dimension top-block no-go directly computes the finite real
 C3 regular-representation decomposition into `P_0` and `P_nt`, checks their
 dimensions and source matrix elements, and verifies the free `lambda_top`

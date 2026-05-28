@@ -18,6 +18,9 @@ The forty-fifth route tested the nonreversible oriented C3 Markov-current
 refinement of the same C3 source-law route.
 The forty-sixth route tested the continuous unitary C3 character-flow
 refinement of the same C3 source-law route.
+The forty-seventh route tested whether same-surface quadratic action,
+Hilbert-Schmidt norm, or block quadratic density can force the radial
+generator factor.
 The seventh route characterized the residual C3 phase-ordering cone.
 The eighth route pruned reflection-even base dynamics as a derivation of that
 cone.
@@ -149,6 +152,7 @@ normalization conventions can supply the missing unit multiplier `eta=1`.
 | Fisher/LSZ radial generator normalization | deep-work no-go shortcut test | 3 | Pruned: source normalization removes raw scale `beta`, but `lambda_top` remains a relative top response coefficient |
 | Block-rank radial normalization | no-go shortcut test | 3 | Pruned: `rank(P_nt)=2` makes the root-rank factor visible, but ordinary matrix elements and block-density expectations stay rank-blind unless the root-rank law is added |
 | Fisher-quotient radial normalization | no-go shortcut test | 3 | Pruned: fine and binary Fisher geometries are isometric, Fisher-unit score normalization is only a source-coordinate unit, and `B_x` has no internal Fisher direction in `P_nt` |
+| Quadratic action radial normalization | no-go shortcut test | 3 | Pruned: global, `P_nt`-block, and block-mean quadratic traces fix operator-size/source-coordinate conventions only; top-only normalization is a new radial law |
 | Real C3 irrep dimension top-block law | no-go shortcut test | 3 | Pruned: `P_nt` is the faithful two-dimensional real irrep, but selecting it as the physical top block imports an extra top-readout law, and `lambda_top` remains free |
 | Origin/main strict pole-row refresh | no-go remote-refresh audit | 3 | Pruned: fetched mainline has no named strict rows and no scanned Y_T output completing the strict positive packet |
 | Origin/main declared-anchor Y_T subchain | no-go forbidden-input firewall | 3 | Pruned: retained-bounded mainline algebra is over declared anchors forbidden or open in this campaign |
@@ -202,6 +206,7 @@ normalization conventions can supply the missing unit multiplier `eta=1`.
 | Fisher/LSZ radial generator normalization | Ask whether source arclength/LSZ raw-scale normalization fixes `lambda_top=1/sqrt(2)` | Fails; `O_beta/||O_beta||=B_x` removes `beta`, while `V_top(lambda_top)=lambda_top A B_x` leaves the target coefficient free |
 | Block-rank radial normalization | Ask whether `rank(P_nt)=2` or root-rank averaging fixes `lambda_top=1/sqrt(2)` | Fails; ordinary `P_nt` matrix elements and block-density expectations stay at `A/sqrt(6)`, Hilbert-Schmidt conventions give same-data alternatives, and root-rank averaging is the added law under test |
 | Fisher-quotient radial normalization | Ask whether C3 RN/Fisher quotient geometry or Fisher-unit C3 score normalization fixes `lambda_top=1/sqrt(2)` | Fails; the fine and binary quotient metrics are equal, source-unit normalization is not a top radial generator law, and `B_x` is scalar inside `P_nt` |
+| Quadratic action radial normalization | Ask whether same-surface action norm, Hilbert-Schmidt trace, or `P_nt` block quadratic density fixes `lambda_top=1/sqrt(2)` | Fails; quadratic traces produce only `lambda_top^2 A^2` times conventional constants, top-only normalization is a new radial law, and common same-source reparameterization cancels from the top/W readout |
 | One-Higgs carrier radial factor | Ask whether the one-Higgs neutral-carrier `1/sqrt(2)` factor supplies the missing C3 radial/source coefficient | Fails; `y_33(eta)=eta/sqrt(6)` gives `|dM_t/dell|=eta A/sqrt(12)` and `lambda_top=eta/sqrt(2)`, so `eta=1` remains an added coefficient-to-C3-source law |
 | One-Higgs generation coefficient normalization | Ask whether ordinary matrix-norm conventions force the unit C3 coefficient | Fails; unit singular/Frobenius and unit three-generation average give `eta=sqrt(6)` and `eta=sqrt(2)`, while the target `eta=1` is exactly the C3-unit law under test |
 
@@ -291,6 +296,11 @@ Fisher metric, Fisher-unit line-score normalization is not a top radial mass
 generator, and there is no internal `P_nt` Fisher direction for `B_x`. The
 next positive move is still accepted radial dynamics plus a physical
 `P_0`-excluding top-readout law, or accepted strict pole rows.
+The quadratic action radial-normalization no-go prunes the ordinary action
+norm/Hilbert-Schmidt refinement. The global, `P_nt`-block, and block-mean
+quadratic traces fix only operator-size or source-coordinate conventions; a
+top-only normalization is exactly a new physical radial law, while a common
+same-source reparameterization cancels from the top/W readout.
 The one-Higgs carrier radial-factor no-go prunes a separate normalization
 route. The neutral Higgs `1/sqrt(2)` factor maps an already supplied
 generation-matrix coefficient into the top mass row, but it does not identify

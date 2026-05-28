@@ -32,6 +32,9 @@ Current block artifacts:
 - `docs/YT_C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py`
 - `outputs/yt_c3_unitary_character_flow_source_law_no_go_2026-05-28.json`
+- `docs/YT_C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_quadratic_action_radial_normalization_no_go.py`
+- `outputs/yt_c3_quadratic_action_radial_normalization_no_go_2026-05-28.json`
 - `docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py`
 - `outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json`
@@ -161,6 +164,11 @@ Next artifact if continuing:
   cannot close it: the fine and binary Fisher metrics are isometric,
   Fisher-unit C3 score normalization is only a source-coordinate
   normalization, and `B_x` has no internal Fisher direction in `P_nt`.
+  Same-surface quadratic action/Hilbert-Schmidt normalization cannot close it:
+  global, `P_nt`-block, and block-mean quadratic traces fix only
+  operator-size or source-coordinate conventions, top-only normalization is a
+  new radial law, and common same-source reparameterization cancels from the
+  top/W readout.
   One-Higgs neutral-carrier normalization cannot close it either: the
   neutral Higgs `1/sqrt(2)` factor maps a supplied generation coefficient
   into the top mass row, but the multiplier `eta` tying that coefficient to

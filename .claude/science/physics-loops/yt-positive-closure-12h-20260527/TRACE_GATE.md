@@ -10,6 +10,31 @@ artifact_role: no_go
 next_trace_action: "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows"
 ```
 
+Cycle 33 tests whether same-surface quadratic action, Hilbert-Schmidt norm, or
+`P_nt` block quadratic density can supply the missing radial generator law.
+
+It cannot on the current surface. Granting the strongest C3 support used by
+this route,
+
+```text
+V_top(lambda_top) = lambda_top A B_x,
+P_nt = P_omega + P_omega2,
+```
+
+the quadratic traces are only
+
+```text
+||lambda_top A B_x||_F^2 = lambda_top^2 A^2,
+Tr(P_nt (lambda_top A B_x)^2) = lambda_top^2 A^2 / 3,
+block mean = lambda_top^2 A^2 / 6.
+```
+
+These fix operator-size or source-coordinate conventions only. A top-only
+normalization is exactly a new physical radial law, while common same-source
+reparameterization cancels from the top/W readout. This prunes only the
+quadratic-action shortcut; it does not refute a future accepted physical
+radial/backend theorem or strict pole rows.
+
 Cycle 32 tests whether continuous C3 unitary character-flow dynamics can
 supply the missing non-mass top-line law and source matrix element.
 
@@ -32,36 +57,3 @@ can provide phase/orientation support only; it does not supply the `B_x`
 source row, the physical top-readout law, or `lambda_top=1/sqrt(2)`. This
 prunes only the unitary character-flow shortcut; it does not refute a future
 accepted physical readout/radial/backend theorem or strict pole rows.
-
-Cycle 31 tests whether nonreversible oriented C3 Markov-current dynamics can
-supply the missing non-mass top-line law and source matrix element.
-
-It cannot. For
-
-```text
-Q_{p,q}=p(C-I)+q(C^2-I),
-```
-
-the stationary/Perron line remains `P_0`, the nontrivial real decay rates are
-degenerate, and circulation splits only conjugate phase signs. Turning that
-phase sign into the physical top pole is an additional readout law, the
-current ratio is free, and the radial factor `lambda_top=1/sqrt(2)` remains
-open. This prunes only the oriented-current shortcut; it does not close or
-refute future accepted phase/readout/radial/backend laws or strict pole rows.
-
-Cycle 30 tests whether existing strict support packets can be promoted into
-the accepted strict top/W pole-row route.
-
-They cannot. The W/Z packet is denominator support only, and the symbolic top
-packet keeps
-
-```text
-dM_t/ds = (y_33/sqrt(2)) v'(s)
-```
-
-with `y_33` free. The same-source ratio is only
-`sqrt(2) y_33/g_2`, the W/Z and symbolic-top packet claims are unaudited in
-the audit queue/ledger, and the strict availability schema still lacks the
-accepted backend/projectors/coefficient rows and contact/FV/IR/model-class
-controls. The first open gate remains an accepted coefficient-certified strict
-top/W pole-row packet, or accepted same-surface radial/readout/backend laws.

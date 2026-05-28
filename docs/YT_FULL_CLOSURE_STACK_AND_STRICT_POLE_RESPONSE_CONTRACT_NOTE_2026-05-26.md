@@ -78,6 +78,11 @@ closed exactly:
   isometric, Fisher-unit score normalization is only a source-coordinate
   normalization, and B_x has no internal Fisher direction inside P_nt; none of
   these derive lambda_top=1/sqrt(2)
+  quadratic action radial normalization no-go: same-surface action norms and
+  Hilbert-Schmidt traces fix only operator-size or source-coordinate
+  conventions; top-only normalization is a new physical radial law, and the
+  target factor appears only after adding a normalization constant or
+  root-rank response rule
   one-Higgs carrier radial factor no-go: the neutral Higgs 1/sqrt(2)
   kinematic factor maps a supplied generation-matrix coefficient into a top
   mass response, but it does not identify that coefficient with the normalized
@@ -1863,6 +1868,11 @@ proposal_allowed_reason: |
   binary P_0/P_nt quotient have the same metric, Fisher-unit C3 score
   normalization is a coordinate unit rather than a top mass-generator law, and
   the internal P_nt Fisher direction for B_x is degenerate.
+  The quadratic action radial normalization no-go prunes the ordinary action
+  norm/Hilbert-Schmidt shortcut: global and P_nt-block quadratic traces fix
+  operator-size or source-coordinate conventions only. Top-only normalization
+  is exactly a new radial law, while common same-source reparameterization
+  cancels from the top/W readout.
   The one-Higgs carrier radial factor no-go prunes the carrier-normalization
   shortcut: the neutral Higgs `1/sqrt(2)` factor maps an already supplied
   generation-matrix coefficient into a top mass response, but the multiplier

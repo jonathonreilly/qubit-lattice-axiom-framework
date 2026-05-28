@@ -1,5 +1,38 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 47
+
+Scope:
+
+- C3 quadratic action radial-normalization no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, C3 projectors, `B_x` quadratic traces, radial family constants, same-source reparameterization, top-only normalization boundary, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open quadratic-action-to-radial-generator law; quadratic traces fix operator-size/source-coordinate conventions only and do not derive `lambda_top=1/sqrt(2)`. |
+| Imports / support | DISCLOSED | No observed target, old Ward row, fitted selector, accepted quadratic radial law, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded so far with this review:
+
+- New runner: `PASS=78 FAIL=0`
+- Full stack runner: `PASS=594 FAIL=0`
+- Adjacent runners passed: same-surface radial-factor no-go `PASS=94`,
+  Fisher/LSZ radial-generator no-go `PASS=105`, block-rank radial no-go
+  `PASS=98`, Fisher-quotient radial no-go `PASS=91`, and nontrivial-block
+  support `PASS=85`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- `POSITIVE_CLOSURE` remains absent.
+
 ## 2026-05-28 Local Review, Block 46
 
 Scope:

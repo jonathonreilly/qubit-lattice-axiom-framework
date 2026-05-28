@@ -1,5 +1,15 @@
 # No-Go Ledger
 
+- New in the forty-seventh block: same-surface quadratic action or
+  Hilbert-Schmidt normalization does not derive the missing radial generator
+  factor. Granting `P_nt` support and the derived `B_x` source tangent,
+  quadratic traces give
+  `||lambda_top A B_x||_F^2=lambda_top^2 A^2`,
+  `Tr(P_nt (lambda_top A B_x)^2)=lambda_top^2 A^2/3`, and block mean
+  `lambda_top^2 A^2/6`. None contains a distinguished `1/2` without adding a
+  normalization constant or root-rank response law. A top-only normalization
+  is a new physical radial law; a common same-source reparameterization
+  cancels from the top/W readout.
 - New in the forty-sixth block: continuous C3 unitary character-flow dynamics
   does not derive the coefficient-bearing top row. The C3 logarithm has
   branch and clock-scale freedom; even the trace-zero branch family

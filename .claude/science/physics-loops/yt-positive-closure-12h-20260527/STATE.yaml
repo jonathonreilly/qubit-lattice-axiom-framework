@@ -1,24 +1,31 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 32
+supervisor_cycle: 33
 runtime_budget_seconds: 43200
-remaining_campaign_seconds_at_cycle_start: 5286
+remaining_campaign_seconds_at_cycle_start: 3260
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T05:16:12Z"
+last_checkpoint_utc: "2026-05-28T05:26:00Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_unitary_character_flow_source_law_no_go
+active_route: c3_quadratic_action_radial_normalization_no_go
 hard_residual: "derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2), physical zero-singlet/phase-current/character-flow top-readout law excluding P_0, or accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
-actual_current_surface_status: no-go / unitary character flow is not a top-row source law
+actual_current_surface_status: no-go / quadratic action normalization is not a radial generator law
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Cycle 32 prunes the continuous C3 unitary character-flow shortcut. The C3 logarithm has branch and clock-scale freedom, its unit trace-zero phase generator is B_y rather than the derived B_x source tangent, and even a supplied character sign still leaves the physical readout law and lambda_top=1/sqrt(2) open. Positive closure remains open."
+claim_state_movement: "Cycle 33 prunes the same-surface quadratic action/Hilbert-Schmidt normalization shortcut. Global, P_nt-block, and block-mean quadratic traces fix only operator-size or source-coordinate conventions; top-only normalization is a new physical radial law, and common same-source reparameterization cancels from the top/W readout. Positive closure remains open."
 files_touched:
+  - docs/YT_C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md
+  - scripts/frontier_yt_c3_quadratic_action_radial_normalization_no_go.py
+  - outputs/yt_c3_quadratic_action_radial_normalization_no_go_2026-05-28.json
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+  - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
+  - .claude/science/physics-loops/yt-positive-closure-12h-20260527/
   - docs/YT_C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md
   - scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py
   - outputs/yt_c3_unitary_character_flow_source_law_no_go_2026-05-28.json
@@ -238,6 +245,7 @@ no_go_routes:
   - target-size same-source top/W row certifies zero-singlet readout, radial factorization, or physical source orientation/sign
   - sharp same-source B_x response or zero response variance certifies zero-singlet readout or radial factorization
   - Fisher/LSZ source normalization certifies the relative top radial generator factor lambda_top=1/sqrt(2)
+  - same-surface quadratic action or Hilbert-Schmidt normalization certifies lambda_top=1/sqrt(2) after P_nt support is supplied
   - block rank or root-rank averaging certifies lambda_top=1/sqrt(2)
   - C3 RN/Fisher line-simplex geometry, binary P_0/P_nt quotient coarse-graining, or Fisher-unit C3 score normalization certifies lambda_top=1/sqrt(2)
   - finite real C3 irrep/dimension/faithfulness facts derive accepted zero-singlet physical top-block membership or the coefficient row

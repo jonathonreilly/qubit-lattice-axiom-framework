@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 376,
     "high": 511,
-    "leaf": 1072,
-    "medium": 641
+    "leaf": 1071,
+    "medium": 643
   },
   "flagship_signal_used": false,
-  "node_count": 2600,
+  "node_count": 2601,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,8 +19,8 @@
     {
       "claim_id": "observable_principle_from_axiom_note",
       "criticality": "critical",
-      "load_bearing_score": 54.029,
-      "transitive_descendants": 738
+      "load_bearing_score": 54.531,
+      "transitive_descendants": 739
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
@@ -49,8 +49,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 40.565,
-      "transitive_descendants": 1070
+      "load_bearing_score": 40.566,
+      "transitive_descendants": 1071
     },
     {
       "claim_id": "anomaly_forces_time_theorem",
@@ -119,6 +119,12 @@
       "transitive_descendants": 576
     },
     {
+      "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
+      "criticality": "critical",
+      "load_bearing_score": 31.367,
+      "transitive_descendants": 933
+    },
+    {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
       "load_bearing_score": 31.356,
@@ -129,12 +135,6 @@
       "criticality": "critical",
       "load_bearing_score": 31.167,
       "transitive_descendants": 574
-    },
-    {
-      "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
-      "criticality": "critical",
-      "load_bearing_score": 30.866,
-      "transitive_descendants": 932
     },
     {
       "claim_id": "left_handed_charge_matching_note",

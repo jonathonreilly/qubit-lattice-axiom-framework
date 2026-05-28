@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 147 |
+| **retained** | 148 |
 | **retained_no_go** | 169 |
 | **retained_bounded** | 571 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1172 |
+| unaudited | 1171 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 871 |
+| `audited_clean` | 872 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1402 |
+| `unaudited` | 1401 |
 
 | claim_type | count |
 |---|---:|
@@ -234,6 +234,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -2865,6 +2866,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within the algebraic carrier supplied by the cited retained authority, the decomposition and singlet multiplicity follow directly from standard SU(N) representation theory at N=3. The packet does not close the separate physical-color identification, but this audited scope is only the algebraic q-qbar color-structure decomposition on the admitted SU(3) carrier.
 - **rationale:** The proof is a standard algebraic corollary of one upstream retained color-structure theorem plus admitted SU(N) representation theory. The runner genuinely checks normalization, invariance under explicit Gell-Mann generators, projector idempotence/rank, and the 8-dimensional complement, but it does not derive a new framework number beyond the parent carrier and standard group theory. There are no external comparator checks or tuned numerical inputs. Because the chain reduces to a single upstream parent plus standard mathematics, the conservative rubric classifies it as decoration rather than an independent positive theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `averroes-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-cl3-to-cl31-spinor-extension`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The Cartan-Bott n=4 table has single real-matrix cells (3,1) and (2,2), but a one-generator extension of Cl(3,0) reaches only (4,0) or (3,1), so (2,2) is unreachable.  _(class `A`)_
+- **chain closes:** True — Under the stated convention that p counts positive-square generators, the two one-generator branches from fixed Cl(3,0) are exactly (4,0) and (3,1). Cartan-Bott classification then leaves only (3,1) as the reachable single real matrix algebra branch; the source note explicitly keeps this as finite Clifford algebra only.
+- **rationale:** The finite algebra closes without hidden physical imports. Independent check: starting from three fixed positive-square generators, adding one anticommuting generator changes only the fourth sign, so the reachable signatures are (4,0) and (3,1). The n=4 real Clifford table gives Cl(4,0) ~= M_2(H), Cl(3,1) ~= M_4(R), and Cl(2,2) ~= M_4(R); (2,2) is not reachable without changing the starting Cl(3,0). The runner checks exact real matrix representatives, monomial ranks, sign branches, and Cl(3,0) subalgebra preservation with PASS=63 FAIL=0. Residual risk is only convention scope: do not broaden this clean result into Wick rotation/P2, spacetime, gauge, or dynamics closure.
 - **auditor confidence:** high
 
 ### `cl4c_carrier_axiom_consequence_map_note_2026-04-28`

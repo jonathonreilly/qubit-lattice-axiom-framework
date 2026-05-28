@@ -293389,7 +293389,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 9.17,
+      "load_bearing_score": 9.087,
       "load_bearing_step": "The self-contained deterministic runner evaluates Fam1 seed0 at H=0.25 for S=0, 0.002, 0.004, and 0.008, producing an exact null at S=0, negative delta_hist for all nonzero strengths, R_hist near -20% to -21%, and |delta_hist/s| spread of 7.77%.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -293592,7 +293592,7 @@
       },
       "runner_path": "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam1 Seed0 Control Note",
-      "transitive_descendants": 17,
+      "transitive_descendants": 16,
       "verdict_rationale": "The scoped computational claim closes from the packet: the cached deterministic runner output directly supports the exact null, stable negative sign pattern, and approximate weak-field scaling asserted in the note. The note explicitly excludes broader family, seed, cross-family, and portability claims, so no unclosed dependency is needed for the retained bounded scope."
     },
     "wave_direct_dm_h025_fam1_seed0_control_note_2026-05-17": {
@@ -295304,70 +295304,48 @@
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_low_band_retention_note": {
-      "audit_date": "2026-05-28T04:37:57.348181+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%.",
-          "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited."
-        },
-        "dep_claim_type": {
-          "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem",
-          "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded",
-          "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded"
-        },
-        "deps": [
-          "wave_direct_dm_h025_fam1_seed1_control_note",
-          "wave_direct_dm_h025_two_point_synthesis_note"
-        ],
-        "load_bearing_score": 5.407,
-        "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
-        "transitive_descendants": 14
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-wave-direct-dm-h025-low-band",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The one-hop retained-bounded control and synthesis notes support the Fam1 seed-1 H=0.25 value, but this row's primary SHA-pinned runner cache is the default seed-0 point, not the source note's seed-1 point. The coarse H=0.5/H=0.35 continuity comparison is also not provided as a retained one-hop authority in this packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "wave_direct_dm_h025_low_band_retention_note",
-      "claim_scope": "Bounded audit of the Fam1 seed-1 H=0.25 one-strength direct-dM replay and its claimed continuity with the H=0.5/H=0.35 seed-1 branch. The audit does not cover a positive theorem, portability law, or refinement-stable amplitude package.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-28T04:37:57.348181+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "wave_direct_dm_h025_fam1_seed1_control_note",
-        "wave_direct_dm_h025_two_point_synthesis_note"
+        "wave_direct_dm_h025_fam1_seed1_control_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
+        "scripts/wave_direct_dm_h025_control_batch.py",
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 5.407,
-      "load_bearing_step": "The direct H = 0.25 historical low-band replay is a retained continuation of the seed-1 branch at the level of sign plus late-gain difference.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "470b2631c8ba049104e90846fe57ab10b87877cb533c1035e6a03665234a606f",
+      "note_hash": "edd85b76642a2dd6d0b0cfa235f97d16765576e377ea0644d6bc748519a86731",
       "note_path": "docs/WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue: primary cached runner output is the default seed-0 point rather than the source note's Fam1 seed-1 point; cheapest repair is to repoint/narrow the row to the retained seed-1 control artifact or add a SHA-pinned seed-1 command/cache plus retained coarse-reference provenance.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -295419,22 +295397,76 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-28T21:12:46.656942+00:00",
+          "archived_for_note_hash": "470b2631c8ba049104e90846fe57ab10b87877cb533c1035e6a03665234a606f",
+          "audit_date": "2026-05-28T04:37:57.348181+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%.",
+              "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited."
+            },
+            "dep_claim_type": {
+              "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem",
+              "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded",
+              "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded"
+            },
+            "deps": [
+              "wave_direct_dm_h025_fam1_seed1_control_note",
+              "wave_direct_dm_h025_two_point_synthesis_note"
+            ],
+            "load_bearing_score": 5.407,
+            "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+            "transitive_descendants": 14
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-wave-direct-dm-h025-low-band",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The one-hop retained-bounded control and synthesis notes support the Fam1 seed-1 H=0.25 value, but this row's primary SHA-pinned runner cache is the default seed-0 point, not the source note's seed-1 point. The coarse H=0.5/H=0.35 continuity comparison is also not provided as a retained one-hop authority in this packet.",
+          "claim_scope": "Bounded audit of the Fam1 seed-1 H=0.25 one-strength direct-dM replay and its claimed continuity with the H=0.5/H=0.35 seed-1 branch. The audit does not cover a positive theorem, portability law, or refinement-stable amplitude package.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T04:37:57.348181+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The direct H = 0.25 historical low-band replay is a retained continuation of the seed-1 branch at the level of sign plus late-gain difference.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "runner_artifact_issue: primary cached runner output is the default seed-0 point rather than the source note's Fam1 seed-1 point; cheapest repair is to repoint/narrow the row to the retained seed-1 control artifact or add a SHA-pinned seed-1 command/cache plus retained coarse-reference provenance.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_fail": 1,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the source note's load-bearing row is Fam1 seed 1 at H=0.25 with dM(early)=+0.004411, dM(late)=+0.006255, delta_hist=-0.001843, and R_hist=-29.47%, but the current cached output for its primary runner path reports the default seed 0 row with dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, and R_hist=-20.12%. Why this blocks: the audit packet does not SHA-pin the row's own seed-1 replay artifact, and the note also uses H=0.5/H=0.35 branch-continuity numbers that are not retained one-hop authorities here. Repair target: either retarget this row to the retained seed-1 control/synthesis notes or provide an auditable seed-1-specific command/cache and retained provenance for the coarse seed-1 reference values. Claim boundary until fixed: the retained-bounded seed-1 control ladder and Fam1 fine-pair synthesis remain available through their own audited rows, but this older one-strength branch-retention note should not promote independently."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_fail": 1,
         "total_pass": 0
       },
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+      "runner_path": "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Low-Band Retention Note",
       "transitive_descendants": 14,
-      "verdict_rationale": "Issue: the source note's load-bearing row is Fam1 seed 1 at H=0.25 with dM(early)=+0.004411, dM(late)=+0.006255, delta_hist=-0.001843, and R_hist=-29.47%, but the current cached output for its primary runner path reports the default seed 0 row with dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, and R_hist=-20.12%. Why this blocks: the audit packet does not SHA-pin the row's own seed-1 replay artifact, and the note also uses H=0.5/H=0.35 branch-continuity numbers that are not retained one-hop authorities here. Repair target: either retarget this row to the retained seed-1 control/synthesis notes or provide an auditable seed-1-specific command/cache and retained provenance for the coarse seed-1 reference values. Claim boundary until fixed: the retained-bounded seed-1 control ladder and Fam1 fine-pair synthesis remain available through their own audited rows, but this older one-strength branch-retention note should not promote independently."
+      "verdict_rationale": null
     },
     "wave_direct_dm_h025_seed0_crossfamily_note": {
       "audit_date": null,
@@ -295831,13 +295863,13 @@
         "wave_direct_dm_h025_fam1_seed0_control_note",
         "wave_direct_dm_h025_fam1_seed1_control_note"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 8,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.587,
+      "load_bearing_score": 11.0,
       "load_bearing_step": "The synthesis table combines the retained seed0 and seed1 control ladders at Fam1, H=0.25, S=0.004 and asserts common negative delta_hist with seed 1 having the larger-magnitude negative R_hist.",
       "load_bearing_step_class": "B",
       "max_descendant_status": "retained_bounded",
@@ -296051,7 +296083,7 @@
       },
       "runner_path": "scripts/wave_direct_dm_h025_fam1_fine_pair_synthesis_certificate.py",
       "title": "Wave Direct-dM H=0.25 Fam1 Fine-Pair Synthesis",
-      "transitive_descendants": 16,
+      "transitive_descendants": 15,
       "verdict_rationale": "The source has been narrowed to the retained-core fine-pair comparison and explicitly excludes the older coarse-band reversal/mechanism claims. The runner checks source boundaries, reads only the two Fam1 seed-control logs, verifies exact nulls/sign patterns/spread summaries, and matches the S=0.004 table values. A separate log arithmetic check reproduces the negative deltas and R_hist ordering within rounding. Residual risk is limited to the finite logged control-ladder setup; no family-wide, portability, mechanism, or coarse-band conclusion is retained."
     },
     "wave_direct_dm_matched_history_note": {

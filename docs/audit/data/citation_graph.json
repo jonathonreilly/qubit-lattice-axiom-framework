@@ -26785,10 +26785,6 @@
       "to": "wave_direct_dm_h025_fam1_seed1_control_note"
     },
     {
-      "from": "wave_direct_dm_h025_low_band_retention_note",
-      "to": "wave_direct_dm_h025_two_point_synthesis_note"
-    },
-    {
       "from": "wave_direct_dm_h025_seed0_crossfamily_note",
       "to": "wave_direct_dm_h025_fam1_seed0_control_note"
     },
@@ -82238,20 +82234,20 @@
     },
     "wave_direct_dm_h025_low_band_retention_note": {
       "claim_id": "wave_direct_dm_h025_low_band_retention_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "wave_direct_dm_h025_fam1_seed1_control_note",
-        "wave_direct_dm_h025_two_point_synthesis_note"
+        "wave_direct_dm_h025_fam1_seed1_control_note"
       ],
       "helper_runner_paths": [
+        "scripts/wave_direct_dm_h025_control_batch.py",
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "470b2631c8ba049104e90846fe57ab10b87877cb533c1035e6a03665234a606f",
+      "note_hash": "edd85b76642a2dd6d0b0cfa235f97d16765576e377ea0644d6bc748519a86731",
       "path": "docs/WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md",
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+      "runner_path": "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Low-Band Retention Note"
     },
     "wave_direct_dm_h025_seed0_crossfamily_note": {
@@ -86454,24 +86450,24 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 648,
+      "bounded_theorem": 649,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1435,
+      "none": 1434,
       "open_gate": 51,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1061,
+      "bounded_theorem": 1062,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
       "none": 426,
       "open_gate": 128,
-      "positive_theorem": 585
+      "positive_theorem": 584
     },
-    "edge_count": 9863,
+    "edge_count": 9862,
     "leaf_count": 807,
     "node_count": 2581,
     "root_count": 856,

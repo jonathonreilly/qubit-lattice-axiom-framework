@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/pmns_tm2_magnitudes_conditional_runner.py
+runner_sha256: 1303ee82698e1952d1afe55566c105569a3682c27899c3117c75923c725fc164
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.16
+status: ok
+----- stdout -----
+========================================================================
+PMNS TM2 MAGNITUDES CONDITIONAL MATRIX -- BOUNDED CHECK
+========================================================================
+  [PASS] row sums are 1 for s^2=0
+  [PASS] column sums are 1 for s^2=0
+  [PASS] second column trimaximal for s^2=0
+  [PASS] mu and tau rows equal for s^2=0
+  [PASS] entries nonnegative for s^2=0
+  [PASS] row sums are 1 for s^2=1/100
+  [PASS] column sums are 1 for s^2=1/100
+  [PASS] second column trimaximal for s^2=1/100
+  [PASS] mu and tau rows equal for s^2=1/100
+  [PASS] entries nonnegative for s^2=1/100
+  [PASS] row sums are 1 for s^2=1/45
+  [PASS] column sums are 1 for s^2=1/45
+  [PASS] second column trimaximal for s^2=1/45
+  [PASS] mu and tau rows equal for s^2=1/45
+  [PASS] entries nonnegative for s^2=1/45
+  [PASS] row sums are 1 for s^2=223/10000
+  [PASS] column sums are 1 for s^2=223/10000
+  [PASS] second column trimaximal for s^2=223/10000
+  [PASS] mu and tau rows equal for s^2=223/10000
+  [PASS] entries nonnegative for s^2=223/10000
+  [PASS] row sums are 1 for s^2=1/10
+  [PASS] column sums are 1 for s^2=1/10
+  [PASS] second column trimaximal for s^2=1/10
+  [PASS] mu and tau rows equal for s^2=1/10
+  [PASS] entries nonnegative for s^2=1/10
+  [PASS] row sums are 1 for s^2=2/3
+  [PASS] column sums are 1 for s^2=2/3
+  [PASS] second column trimaximal for s^2=2/3
+  [PASS] mu and tau rows equal for s^2=2/3
+  [PASS] entries nonnegative for s^2=2/3
+  [PASS] |U_e1|^2 formula at s^2=0  (value=2/3)
+  [PASS] |U_mu3|^2 formula at s^2=0  (value=1/2)
+  [PASS] |U_mu1|^2 formula at s^2=0  (value=1/6)
+  [PASS] |U_e1|^2 formula at s^2=1/45  (value=29/45)
+  [PASS] |U_mu3|^2 formula at s^2=1/45  (value=22/45)
+  [PASS] |U_mu1|^2 formula at s^2=1/45  (value=8/45)
+  [PASS] |U_e1|^2 formula at s^2=223/10000  (value=19331/30000)
+  [PASS] |U_mu3|^2 formula at s^2=223/10000  (value=9777/20000)
+  [PASS] |U_mu1|^2 formula at s^2=223/10000  (value=10669/60000)
+  [PASS] TBM-limit denominators divide 6  (max=6)
+  [PASS] s^2=1/45 denominators divide 90  (max=45)
+========================================================================
+TOTAL: PASS=41 FAIL=0
+VERDICT: conditional TM2 magnitudes matrix holds.
+
+----- stderr -----
+

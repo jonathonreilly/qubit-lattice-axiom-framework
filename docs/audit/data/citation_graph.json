@@ -70887,6 +70887,18 @@
       "runner_path": "scripts/frontier_pmns_three_identity_q_koide_from_v8_support_lift.py",
       "title": "PMNS Three-Identity Q_Koide-from-V8 Support Lift Theorem (V1)"
     },
+    "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26": {
+      "claim_id": "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "ae169d1d3ccf3e3814dd84dcce015222f6d911b6c84ec757abd2046f48655b8e",
+      "path": "docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/pmns_tm2_magnitudes_conditional_runner.py",
+      "title": "PMNS TM2 Magnitudes Conditional Matrix -- Bounded Note"
+    },
     "pmns_tm2_residual_consequence_bounded_note_2026-05-26": {
       "claim_id": "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
       "claim_type_author_hint": "bounded_theorem",
@@ -86732,6 +86744,7 @@
     "pmns_oriented_cycle_channel_value_law_note",
     "pmns_oriented_cycle_selection_structure_note",
     "pmns_selector_three_identity_support_note_2026-04-21_note_2026-05-17",
+    "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
     "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
     "pmns_uniform_scalar_deformation_boundary_note",
     "poisson_self_gravity_loop_v3_note",
@@ -87007,7 +87020,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 665,
+      "bounded_theorem": 666,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -87016,7 +87029,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1075,
+      "bounded_theorem": 1076,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -87025,9 +87038,9 @@
       "positive_theorem": 592
     },
     "edge_count": 9912,
-    "leaf_count": 823,
-    "node_count": 2605,
-    "root_count": 867,
-    "runners_with_path": 2180
+    "leaf_count": 824,
+    "node_count": 2606,
+    "root_count": 868,
+    "runners_with_path": 2181
   }
 }

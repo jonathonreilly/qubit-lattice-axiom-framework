@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 570 |
+| **retained_bounded** | 571 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1175 |
+| unaudited | 1174 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 870 |
+| `audited_clean` | 871 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1405 |
+| `unaudited` | 1404 |
 
 | claim_type | count |
 |---|---:|
@@ -382,6 +382,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_grown_trapping_frontier_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_trapping_transport_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `gate_b_h025_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_distance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5301,6 +5302,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The detector-line phase-ramp mechanism itself does not cleanly carry over on the retained grown row: the phase-ramp slopes are small and the R^2 values are low, while zero-source reduction is exact.  _(class `C`)_
 - **chain closes:** True — The live runner recomputes the fixed-field grown-row companion scan, reproducing exact zero-source same-site and wavefield spans and low-R2 phase-ramp fits for both source layers. The source note frames the result as a bounded no-go for phase-ramp transfer and does not claim a geometry-generic or self-consistent field mechanism.
 - **rationale:** The negative claim closes on its own terms: the current runner and frozen log agree that the zero-source guardrail is exactly zero for both same-site and wavefield updates, while the phase-ramp fits remain weak with R2 = 0.294 and 0.298 on the two tested source layers. The note's retained surface is the bounded no-go, not a transfer of the exact-lattice wavefield mechanism. The distinguishability comparator also reproduces as wave/same > 1 in both rows, but it is not promoted into a coherent phase-ramp law. Residual boundary: the result is limited to this fixed-field runner, its imported grown-row constructor, central detector-line readout, source layers, strengths, and two-seed scan.
+- **auditor confidence:** high
+
+### `gate_b_h025_distance_law_note`
+
+- **Note:** [`GATE_B_H025_DISTANCE_LAW_NOTE.md`](../../docs/GATE_B_H025_DISTANCE_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded h=0.25 distance-law replay for exact grid versus grown drift=0.2/restore=0.7, seeds=2, z=2..6, checking only positive declining far-field tail under the runner-defined geometry, source, propagation, and readout.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `kepler-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-gate-b-h025-distance-law`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The h=0.25 grown row keeps a positive declining tail on the compact retained family and is slightly steeper than the exact-grid row on this replay.  _(class `C`)_
+- **chain closes:** True — The SHA-pinned runner constructs the h=0.25 exact and grown geometries and computes propagation, deltas, peak, slope, and R^2. Direct dependencies are retained_bounded, which is retained-grade for this bounded replay.
+- **rationale:** The cached runner exits 0 and computes the replay rather than printing constants. Fresh-context independent math from emitted deltas confirmed exact-grid means are all positive with peak z=2, tail z=2..6 strictly declining, log-log slope -0.42185 and R^2=0.85467; grown means are all positive with peak z=3, tail z=3..6 strictly declining, slope -0.53704 and R^2=0.94809. This matches the source's b^(-0.42)/0.855 and b^(-0.54)/0.948 readings. No broader Gate B, generated-geometry universality, continuum, or physical-gravity closure is granted.
 - **auditor confidence:** high
 
 ### `gate_b_no_restore_farfield_note`

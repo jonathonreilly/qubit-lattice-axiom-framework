@@ -3,7 +3,7 @@
     "critical": 230,
     "high": 317,
     "leaf": 325,
-    "medium": 303
+    "medium": 302
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -16561,31 +16561,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_h025_distance_law_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_farfield_note",
-        "gate_b_grown_joint_package_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/GATE_B_H025_DISTANCE_LAW_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_h025_distance_law.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -26611,6 +26586,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "distance_law_frontier_audit_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_grown_distance_law_note",
+        "gate_b_h025_distance_law_note",
+        "wide_lattice_h2t_distance_law_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/DISTANCE_LAW_FRONTIER_AUDIT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30772,32 +30773,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/directional_b_geometry_normalized_overlap_map.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "distance_law_frontier_audit_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_grown_distance_law_note",
-        "gate_b_h025_distance_law_note",
-        "wide_lattice_h2t_distance_law_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DISTANCE_LAW_FRONTIER_AUDIT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
       "transitive_descendants": 0
     },
     {
@@ -35642,5 +35617,5 @@
     }
   ],
   "ready_count": 48,
-  "total_pending": 1175
+  "total_pending": 1174
 }

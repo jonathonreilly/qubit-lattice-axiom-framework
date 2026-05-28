@@ -102627,22 +102627,46 @@
       "verdict_rationale": "The negative claim closes on its own terms: the current runner and frozen log agree that the zero-source guardrail is exactly zero for both same-site and wavefield updates, while the phase-ramp fits remain weak with R2 = 0.294 and 0.298 on the two tested source layers. The note's retained surface is the bounded no-go, not a transfer of the exact-lattice wavefield mechanism. The distinguishability comparator also reproduces as wave/same > 1 in both rows, but it is not promoted into a coherent phase-ramp law. Residual boundary: the result is limited to this fixed-field runner, its imported grown-row constructor, central detector-line readout, source layers, strengths, and two-seed scan."
     },
     "gate_b_h025_distance_law_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T05:33:15.328750+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_grown_joint_package_note": "Bounded numerical certificate for the declared Gate-B grown-geometry joint comparison: on h=0.5, four seeds, exact grid versus drift=0.2/restore=0.7 plus drift=0.3/restore=0.5 stress row, the runner-computed Born, d_TV, MI, and decoherence values match the source/cache and support only the stated finite comparison, not Gate-B package transfer or physical-gravity closure."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_grown_joint_package_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_grown_joint_package_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_grown_joint_package_note"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "39c6a23b8e4e1c8e7f7b74ac5f3e7cb43fa8defc58c0a87aa1423bac9ef17d73",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "kepler-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-gate-b-h025-distance-law",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The SHA-pinned runner constructs the h=0.25 exact and grown geometries and computes propagation, deltas, peak, slope, and R^2. Direct dependencies are retained_bounded, which is retained-grade for this bounded replay.",
       "claim_id": "gate_b_h025_distance_law_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded h=0.25 distance-law replay for exact grid versus grown drift=0.2/restore=0.7, seeds=2, z=2..6, checking only positive declining far-field tail under the runner-defined geometry, source, propagation, and readout.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T05:33:15.328750+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -102651,19 +102675,19 @@
         "gate_b_grown_joint_package_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 2.585,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The h=0.25 grown row keeps a positive declining tail on the compact retained family and is slightly steeper than the exact-grid row on this replay.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "861423c686291061b9b0b70ccf3bf7d2717e3927766b2bc01783c1d381dfb668",
       "note_path": "docs/GATE_B_H025_DISTANCE_LAW_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Keep re-audit scoped to the bounded runner-defined replay; the emitted means verify tail sign/slope, while the individual 10/10 per-seed signs come from the runner's per-seed accumulation path.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -102735,18 +102759,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 2
       },
       "runner_path": "scripts/gate_b_h025_distance_law.py",
       "title": "Gate B h=0.25 Grown-Geometry Distance-Law Note",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "The cached runner exits 0 and computes the replay rather than printing constants. Fresh-context independent math from emitted deltas confirmed exact-grid means are all positive with peak z=2, tail z=2..6 strictly declining, log-log slope -0.42185 and R^2=0.85467; grown means are all positive with peak z=3, tail z=3..6 strictly declining, slope -0.53704 and R^2=0.94809. This matches the source's b^(-0.42)/0.855 and b^(-0.54)/0.948 readings. No broader Gate B, generated-geometry universality, continuum, or physical-gravity closure is granted."
     },
     "gate_b_h025_farfield_note": {
       "audit_date": null,

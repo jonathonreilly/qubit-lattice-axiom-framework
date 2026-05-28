@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1123 |
+| unaudited | 1122 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 79 |
+| ~~audited_conditional~~ | 80 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 896 |
-| `audited_conditional` | 79 |
+| `audited_conditional` | 80 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1353 |
+| `unaudited` | 1352 |
 
 | claim_type | count |
 |---|---:|
@@ -1104,6 +1104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
+| `yt_top_coefficient_full_court_press_note_2026-05-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -16031,6 +16032,27 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_top_coefficient_full_court_press_note_2026-05-25`
+
+- **Note:** [`YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md`](../../docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-decision no-go for deriving y_33 from the current carrier/WZ/one-Higgs gauge-selection stack alone, while leaving democratic-source, signed-linear tangent, direct measurement, and future dynamical-flavor routes live.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-yt-full-court-press-2026-05-28`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** The current carrier plus W/Z plus one-Higgs gauge-selection structural route determines operator/row shape but leaves the top coefficient y_33 as a free scalar or generation-matrix entry.  _(class `A`)_
+- **chain closes:** False — The symbolic underdetermination check is correct: varying y_33 changes the top numerator while the gauge/operator constraint does not contain y_33. The audit chain does not close because the row's route decision uses named Y_T authority/status rows and prior no-go/support surfaces that are not graph-visible direct dependencies.
+- **rationale:** Issue: the note and runner give a sensible route decision, and the algebraic toy check shows y_33 remains free, but the no-go is stated as a conclusion about the current structural stack while the ledger row has no direct dependencies on the symbolic top row, coefficient-underdetermination row, one-Higgs gauge-selection row, source-action packet, color-projection boundary, or related support candidates. Why this blocks: a clean no-go would make hidden cross-note/status imports load-bearing without graph-visible retained authorities, and the runner checks source/status prose rather than deriving the entire stack-level underdetermination from one formal packet. Repair target: either wire the named authority notes as direct dependencies and keep only retained-grade inputs, or split out a pure algebraic theorem proving that the specified representation/gauge constraints leave a free Y_u33 scalar. Claim boundary until fixed: this is useful planning evidence that the checked carrier/WZ/gauge-selection algebra does not determine y_33, but not retained no-go authority for the whole current Y_T route stack.
+- **open / conditional deps cited:**
+  - `YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md`
+  - `YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md`
+  - `SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md`
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
+  - `YT_COLOR_PROJECTION_CORRECTION_NOTE.md`
+  - `YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`
+  - `YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md`
 - **auditor confidence:** high
 
 ### `yt_ward_identity_derivation_theorem`

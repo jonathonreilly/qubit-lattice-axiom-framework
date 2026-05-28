@@ -1,12 +1,52 @@
 # Mermin-Wagner / Hohenberg Bogoliubov Infrared Certificate
 
-**Date:** 2026-05-18 (bounded-certificate repair: 2026-05-27)
+**Date:** 2026-05-18 (bounded-certificate repair: 2026-05-27); 2026-05-28
+(|m_L| extraction split off as conditional on an unsupplied Ward lemma).
 **Claim type:** bounded_theorem
 **Status:** bounded Bogoliubov/infrared certificate; external
 Mermin-Wagner, Hohenberg, and Coleman references are parallel literature
 citations, not load-bearing retained-grade imports.
 **Runner:** `scripts/mermin_wagner_bogoliubov_bounded_certificate.py`
 **Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (Bogoliubov+IR core split from |m_L| extraction)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The finite spectral Bogoliubov inequality and the IR sum behavior
+> check out, but the packet does not fully state and close the
+> order-operator/charge-mode Ward or commutator normalization needed to
+> extract |m_L| from the summed inequality with L-independent constants."*
+
+Repair instruction offered two paths: (a) add an explicit lemma
+specifying the finite-volume operators `A_k`, `q_k`, the Ward/commutator
+lower bound `|<[q_k, A_-k]>| >= c|m_L|` with L-independent constants, and
+the susceptibility normalization; or (b) narrow.
+
+Adding the fully-stated, L-independent-constant Ward/commutator lemma is
+substantive new work (it is the technical heart of a rigorous
+Mermin-Wagner proof). This repair takes the **split path**:
+
+- **Load-bearing (in scope):** the finite Gibbs-state Bogoliubov
+  inequality, the lattice Goldstone dispersion
+  `E_k = 2 Σ_μ(1 − cos k_μ)`, the IR sum `I_d(L) = L^{-d} Σ_{k≠0} 1/E_k`,
+  and its dimension threshold (`d=1` exact identity, `d=2` log
+  divergence, `d=3` finite-window). These are the finite-dimensional
+  Hilbert-space facts the runner verifies.
+- **Conditional / NON-load-bearing (split off):** the extraction of the
+  order parameter bound `|m_L|² ≤ C'/I_d` and the consequent
+  vanishing-order-parameter (no continuous-symmetry SSB) conclusion.
+  This step requires the **order-operator / charge-mode Ward (or
+  commutator) normalization lemma** — explicit `A_k`, `q_k`, the lower
+  bound `|<[q_k, A_-k]>| ≥ c|m_L|` with **L-independent** constants, and
+  the susceptibility normalization — which this packet does **not** fully
+  state or close. It is recorded as a conditional consequence, valid IF
+  that Ward-normalization lemma is supplied.
+
+Downstream consumers that need the finite Bogoliubov inequality + IR
+divergence behavior can cite this row directly; consumers that need the
+`|m_L| → 0` no-SSB conclusion must carry the conditional Ward-lemma
+dependency. No new axiom, import, or retained bridge is introduced.
 
 ## Purpose
 
@@ -19,9 +59,10 @@ the downstream repo notes actually use:
 - the infrared sum `I_d(L) = L^{-d} sum_{k != 0} 1/E_k`;
 - the dimension threshold `I_d -> infinity` for `d <= 2`, with the framework-
   relevant `d=3` finite-window behavior checked explicitly;
-- the conditional consequence that a finite Bogoliubov double-commutator
-  constant forces the continuous-symmetry order parameter to vanish when
-  `I_d` diverges.
+- the separate conditional consequence that, once a Ward/commutator
+  normalization lemma supplies the missing order-parameter lower bound, a
+  finite Bogoliubov double-commutator constant forces the continuous-symmetry
+  order parameter to vanish when `I_d` diverges.
 
 The packet does not add an axiom. It uses finite-dimensional Hilbert-space
 algebra, the standard `Z^d` lattice dispersion, and explicitly stated local
@@ -48,26 +89,32 @@ This is a finite matrix inequality: diagonalize `H_L`, write the thermal
 expectation in the energy basis, and apply Cauchy-Schwarz to the weighted
 matrix-element sum. No continuum theorem is imported.
 
-For a translation-invariant local Hamiltonian whose long-wavelength
-continuous-symmetry charge mode has a finite double-commutator bound
+The load-bearing certificate continues with the lattice dispersion and IR
+sum only. For a translation-invariant local Hamiltonian whose
+long-wavelength continuous-symmetry charge mode has a finite
+double-commutator bound
 
 ```text
 <[[q_k,H_L],q_k^dagger]>_beta <= C E_k
 ```
 
 with `C < infinity` independent of `L`, `E_k = 2 sum_mu(1 - cos k_mu)`,
-and a finite onsite anticommutator/susceptibility bound, the standard
-Bogoliubov summation gives
+and a finite onsite anticommutator/susceptibility bound, the runner checks
+the behavior of
 
 ```text
-|m_L|^2 <= C' / I_d(L),
 I_d(L) = L^{-d} sum_{k != 0} 1/E_k.                              (CMW)
 ```
 
-Thus the bounded implication is:
+The order-parameter extraction is not closed by this packet. If a separate
+Ward/commutator normalization lemma supplies explicit finite-volume
+operators `A_k`, `q_k`, a lower bound
+`|<[q_k,A_-k]>| >= c |m_L|` with `c` independent of `L`, and the required
+susceptibility normalization, then the standard Bogoliubov summation gives
+the conditional consequence
 
 ```text
-I_d(L) -> infinity  =>  m_L -> 0.
+|m_L|^2 <= C' / I_d(L),   so   I_d(L) -> infinity  =>  m_L -> 0.
 ```
 
 For the lattice dispersion above:
@@ -78,7 +125,10 @@ For the lattice dispersion above:
 - `d>=3`: the corresponding infrared integral is finite at `k=0`; the runner
   checks the framework-relevant `d=3` finite-window behavior.
 
-This is the bounded audit target in this packet.
+The bounded audit target in this packet is the finite Bogoliubov inequality
+plus the IR-sum dimension threshold. The displayed order-parameter
+consequence is a conditional downstream use that requires the missing Ward
+normalization lemma.
 
 ## Runner Certificate
 
@@ -89,7 +139,9 @@ checks the finite ingredients without using external theorem text:
 - the exact one-dimensional identity for `I_1(L)`;
 - monotone logarithmic growth of `I_2(L)` over a finite ladder;
 - bounded/converging behavior of `I_3(L)` over a finite ladder;
-- decreasing order-parameter upper bounds `sqrt(1/I_d(L))` for `d=1,2`.
+- decreasing `sqrt(1/I_d(L))` surrogate bounds for `d=1,2`, which become
+  order-parameter bounds only after the separate Ward-normalization input is
+  supplied.
 
 The cache reports `PASS=5 FAIL=0`.
 
@@ -126,6 +178,10 @@ conditions in (CMW):
 - finite onsite anticommutator/susceptibility bound;
 - local/short-range dynamics giving the double-commutator estimate
   `<[[q_k,H_L],q_k^dagger]> <= C E_k` with `C` independent of `L`.
+
+The further no-SSB consequence additionally needs the split-off
+Ward/commutator normalization lemma described in the 2026-05-28 repair
+section. This note does not supply that lemma.
 
 The packet does not claim:
 

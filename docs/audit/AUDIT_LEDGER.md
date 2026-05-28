@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 559 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1197 |
+| unaudited | 1196 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 859 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1427 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
@@ -1018,6 +1018,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -8560,6 +8561,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The registered runner exits 0 and reproduces the scaled-geometry decay and fixed-geometry survival/strengthening tables exactly, including the mu^2=0 and mu^2=0.22 anchor values quoted in the note.
 - **rationale:** The bounded diagnosis closes against scripts/frontier_memory_mu2_size_sweep.py. The current output matches the note's scaled-geometry rows, including N=61 mu2=0 memory +0.020854 vs mu2=0.22 +0.016780 and N=121 mu2=0 +0.001767 vs mu2=0.22 +0.000865, and it matches the fixed-geometry rows, including N=81 mu2=0 +0.231199 vs mu2=0.22 +0.244260 and N=121 mu2=0 +2.580905 vs mu2=0.22 +2.599619. The note does not promote a publication-grade memory claim; it only narrows the failure mode.
 - **auditor confidence:** high
+
+### `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18`
+
+- **Note:** [`MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional Gibbs-state Bogoliubov inequality and lattice infrared certificate for E_k = 2 sum_mu(1-cos k_mu): exact d=1 identity, d=2 logarithmic divergence mechanism, d=3 finite-window behavior, and the conditional |m_L|^2 <= C'/I_d(L) conclusion only when the required order-operator/charge-mode commutator normalization is supplied. This does not retain the full Mermin-Wagner, Hohenberg, or Coleman theorems.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `fresh_codex_bogoliubov_ir_auditor_20260528_copernicus`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The Bogoliubov summation step |m_L|^2 <= C'/I_d(L) from the finite inequality, the double-commutator estimate <= C E_k, and the infrared sum I_d(L).  _(class `A`)_
+- **chain closes:** False — The finite spectral Bogoliubov inequality and the IR sum behavior check out, but the packet does not fully state and close the order-operator/charge-mode Ward or commutator normalization needed to extract |m_L| from the summed inequality with L-independent constants.
+- **rationale:** A fresh restricted-input audit independently confirms the 1D identity I_1(L)=(L^2-1)/(12L), the d=2 logarithmic divergence by comparison with the lattice |k|^{-2} infrared singularity, and d>=3 boundedness by local integrability near k=0; the cached runner is consistent with those checks and reports PASS=5 FAIL=0. The finite Bogoliubov matrix inequality has the standard spectral/Cauchy-Schwarz proof. The clean bounded theorem still overreaches because the source names a continuous-symmetry order parameter but does not supply the explicit finite-volume operator identity or lower bound relating <[q_k,A_-k]> to |m_L| with constants independent of L. Therefore the row is conditional rather than clean.
+- **auditor confidence:** medium
 
 ### `mesoscopic_surrogate_annular_tapered_sweep_note`
 

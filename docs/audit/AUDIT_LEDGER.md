@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 560 |
+| **retained_bounded** | 561 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1190 |
+| unaudited | 1189 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 860 |
+| `audited_clean` | 861 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1420 |
+| `unaudited` | 1419 |
 
 | claim_type | count |
 |---|---:|
@@ -379,6 +379,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_grown_trapping_frontier_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_trapping_transport_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `gate_b_no_restore_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_distance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5217,6 +5218,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The detector-line phase-ramp mechanism itself does not cleanly carry over on the retained grown row: the phase-ramp slopes are small and the R^2 values are low, while zero-source reduction is exact.  _(class `C`)_
 - **chain closes:** True — The live runner recomputes the fixed-field grown-row companion scan, reproducing exact zero-source same-site and wavefield spans and low-R2 phase-ramp fits for both source layers. The source note frames the result as a bounded no-go for phase-ramp transfer and does not claim a geometry-generic or self-consistent field mechanism.
 - **rationale:** The negative claim closes on its own terms: the current runner and frozen log agree that the zero-source guardrail is exactly zero for both same-site and wavefield updates, while the phase-ramp fits remain weak with R2 = 0.294 and 0.298 on the two tested source layers. The note's retained surface is the bounded no-go, not a transfer of the exact-lattice wavefield mechanism. The distinguishability comparator also reproduces as wave/same > 1 in both rows, but it is not promoted into a coherent phase-ramp law. Residual boundary: the result is limited to this fixed-field runner, its imported grown-row constructor, central detector-line readout, source layers, strengths, and two-seed scan.
+- **auditor confidence:** high
+
+### `gate_b_no_restore_farfield_note`
+
+- **Note:** [`GATE_B_NO_RESTORE_FARFIELD_NOTE.md`](../../docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-runner replay for scripts/gate_b_no_restore_farfield.py at H=0.5, NL=25, PW=8, seeds [0,1], z masses [3,4,5], drift rows [0.0,0.1,0.2,0.3,0.5], RESTORE=0, asserting only the runner-defined TOWARD counts and F~M slopes. No physical Gate B closure, generated-geometry replacement theorem, or primitive-to-gravity bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-gate-b-no-restore-20260528-goodall`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The note's frozen rows match the SHA-pinned cached runner output for restore=0 across the declared drift rows, two seeds, three far-field z masses, and three-strength F~M probe.  _(class `C`)_
+- **chain closes:** True — The claim closes only at the bounded runner-defined level. The retained-bounded one-hop dependencies supply compatible finite-harness context, and the source does not claim physical Gate B closure or replacement of the restore>0 family.
+- **rationale:** A fresh restricted-input auditor confirmed that the source note is narrowly scoped and that its frozen rows exactly match the cached runner output: drift 0.0 through 0.3 give 6/6 TOWARD with F~M=1.00, and drift 0.5 gives 5/6 TOWARD with F~M=1.00. The runner source genuinely constructs the no-restore grown geometries, propagates the runner-defined field/readout, and computes the counts and slopes; it is not a print-only certificate. The note preserves the finite-row boundary and explicitly avoids treating the no-restore family as a full replacement for restore>0 or as physical Gate B closure.
 - **auditor confidence:** high
 
 ### `gate_b_no_restore_joint_package_note`

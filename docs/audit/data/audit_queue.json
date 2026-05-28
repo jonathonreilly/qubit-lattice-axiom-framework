@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 230,
     "high": 317,
-    "leaf": 305,
+    "leaf": 304,
     "medium": 300
   },
   "cycle_break_target_count": 4,
@@ -26089,33 +26089,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "r_base_group_theory_derivation_theorem_note_2026-04-24",
-        "eta_188_structural_origin_partial_note_2026-05-03"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "early_family_transfer_connectivity_diagnosis",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35067,6 +35040,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 30,
-  "total_pending": 1152
+  "ready_count": 29,
+  "total_pending": 1151
 }

@@ -57022,22 +57022,46 @@
       "verdict_rationale": null
     },
     "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T07:15:28.954075+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "eta_188_structural_origin_partial_note_2026-05-03": "Within the current framework transport implementation, eta/eta_obs decomposes algebraically into ABC = 516/53009, Y0^2, F_CP, kappa_axiom, and eta_obs, with the four cycle-09 near-fit candidates excluded as exact structural forms.",
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "Given retained SU(3)/SU(2) structural inputs and the admitted GUT hypercharge normalization factor 3/5, the exact algebraic identity R_base = (3/5) * [(4/3)*8 + (3/4)*3] / [(3/4)*3] = 31/9."
+        },
+        "dep_claim_type": {
+          "eta_188_structural_origin_partial_note_2026-05-03": "bounded_theorem",
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "eta_188_structural_origin_partial_note_2026-05-03": "retained_bounded",
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "retained_bounded"
+        },
+        "deps": [
+          "eta_188_structural_origin_partial_note_2026-05-03",
+          "r_base_group_theory_derivation_theorem_note_2026-04-24"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "03d7dc7ec15f12c0772000bff73caed916a521e598a8db2ac481c11bdc6735be",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-2026-05-28-dm-eta-bounded-prediction-supplied-nsites-v",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the numerical substitution under the supplied packet, and the two ledger dependencies are retained_bounded. The scientific chain does not close because P1-P7, including the freeze-out-bypass identity and m_DM=N_sites*v premise, are explicit non-retained local premises rather than derived or accepted framework inputs.",
       "claim_id": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
-      "claim_scope": null,
+      "claim_scope": "Conditional bounded prediction arithmetic only: given retained_bounded R_base and eta_188 support plus supplied local premises P1-P7, the row computes eta_pred in [5.25e-10, 8.11e-10], central eta_pred=6.38e-10, and the supplied m_DM=N_sites*v readout near 3.94 TeV. This does not derive P1-P7, close C2.eta, retire eta, derive m_DM=N_sites*v, establish the BBN/freeze-out/SM-DOF/Kolb-Turner/Sommerfeld/dark-coupling premises, or promote any downstream Hubble, cosmology, leptogenesis, or DM claim.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T07:15:28.954075+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -57046,36 +57070,45 @@
         "eta_188_structural_origin_partial_note_2026-05-03"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "strong",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Substitute the supplied freeze-out-bypass identity, supplied m_DM=N_sites*v, retained R_base=31/9, and supplied P3-P7 constants/bands into eta=C*m_DM^2, then evaluate the fixed-alpha rectangle to get [5.25e-10, 8.11e-10] with central 6.38e-10.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "7b1b4897add385984b182d0e8b4f38f93ffe191851a3a898646da0a176d8c879",
       "note_path": "docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: derive or explicitly accepted-premise-register P1-P7, especially the freeze-out-bypass identity and m_DM=N_sites*v route, then re-audit whether the prediction can promote beyond conditional bounded arithmetic.",
+      "open_dependency_paths": [
+        "P1 freeze-out-bypass identity eta = C*m_DM^2",
+        "P2 structural mass candidate m_DM = N_sites*v and its HIGGS/observable source chain",
+        "P3 BBN coefficient 3.6515e-3",
+        "P4 freeze-out coefficient band x_F in [22, 28]",
+        "P5 SM effective degrees of freedom g_* = 106.75",
+        "P6 Kolb-Turner prefactor K = 1.07e9 GeV^-1",
+        "P7 Sommerfeld continuation and alpha_X = alpha_LM route choice"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "B": 1,
+        "C": 5,
+        "D": 2,
+        "total_fail": 0,
+        "total_pass": 68
       },
       "runner_path": "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py",
       "title": "DM `eta` Bounded Prediction From Supplied `N_sites \u00b7 v` Premise Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The cache and local rerun both report PASS=68 FAIL=0, and independent arithmetic checks agree with the central value, band corners, R_base=31/9, and m_DM=16v readout. The row is nevertheless conditional: P1 is an unaudited freeze-out-bypass identity, P2 is a supplied composed-product dark-mass candidate, and P3-P7 import BBN, freeze-out, SM-DOF, Kolb-Turner, Sommerfeld, and dark-coupling premises. The eta_obs bracketing is an external comparator readout, not closure. No-go-discipline scope check: this verdict does not claim P1-P7 are irreducible walls or that alternative derivations are impossible; it only records that this bounded-prediction packet has not retired them."
     },
     "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25": {
       "audit_date": null,

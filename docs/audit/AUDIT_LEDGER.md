@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 580 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1152 |
+| unaudited | 1151 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 66 |
+| ~~audited_conditional~~ | 67 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 883 |
-| `audited_conditional` | 66 |
+| `audited_conditional` | 67 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1382 |
+| `unaudited` | 1381 |
 
 | claim_type | count |
 |---|---:|
@@ -1031,6 +1031,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `distance_law_frontier_audit_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
+| `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3960,6 +3961,27 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** theorem on the open DM gate; it cannot derive the A-BCC axiom  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 3 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28`
+
+- **Note:** [`DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded prediction arithmetic only: given retained_bounded R_base and eta_188 support plus supplied local premises P1-P7, the row computes eta_pred in [5.25e-10, 8.11e-10], central eta_pred=6.38e-10, and the supplied m_DM=N_sites*v readout near 3.94 TeV. This does not derive P1-P7, close C2.eta, retire eta, derive m_DM=N_sites*v, establish the BBN/freeze-out/SM-DOF/Kolb-Turner/Sommerfeld/dark-coupling premises, or promote any downstream Hubble, cosmology, leptogenesis, or DM claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-2026-05-28-dm-eta-bounded-prediction-supplied-nsites-v`  (codex-gpt-5.5; independence=strong)
+- **load-bearing step:** Substitute the supplied freeze-out-bypass identity, supplied m_DM=N_sites*v, retained R_base=31/9, and supplied P3-P7 constants/bands into eta=C*m_DM^2, then evaluate the fixed-alpha rectangle to get [5.25e-10, 8.11e-10] with central 6.38e-10.  _(class `B`)_
+- **chain closes:** False — The runner closes the numerical substitution under the supplied packet, and the two ledger dependencies are retained_bounded. The scientific chain does not close because P1-P7, including the freeze-out-bypass identity and m_DM=N_sites*v premise, are explicit non-retained local premises rather than derived or accepted framework inputs.
+- **rationale:** The cache and local rerun both report PASS=68 FAIL=0, and independent arithmetic checks agree with the central value, band corners, R_base=31/9, and m_DM=16v readout. The row is nevertheless conditional: P1 is an unaudited freeze-out-bypass identity, P2 is a supplied composed-product dark-mass candidate, and P3-P7 import BBN, freeze-out, SM-DOF, Kolb-Turner, Sommerfeld, and dark-coupling premises. The eta_obs bracketing is an external comparator readout, not closure. No-go-discipline scope check: this verdict does not claim P1-P7 are irreducible walls or that alternative derivations are impossible; it only records that this bounded-prediction packet has not retired them.
+- **open / conditional deps cited:**
+  - `P1 freeze-out-bypass identity eta = C*m_DM^2`
+  - `P2 structural mass candidate m_DM = N_sites*v and its HIGGS/observable source chain`
+  - `P3 BBN coefficient 3.6515e-3`
+  - `P4 freeze-out coefficient band x_F in [22, 28]`
+  - `P5 SM effective degrees of freedom g_* = 106.75`
+  - `P6 Kolb-Turner prefactor K = 1.07e9 GeV^-1`
+  - `P7 Sommerfeld continuation and alpha_X = alpha_LM route choice`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`

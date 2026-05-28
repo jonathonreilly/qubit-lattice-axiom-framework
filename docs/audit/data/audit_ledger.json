@@ -95081,24 +95081,42 @@
       "verdict_rationale": null
     },
     "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T07:29:07.779727+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "Finite Hodge/Bogomolny algebra, BPST radial 8pi^2 normalization integral, and twisted T4 k/N arithmetic after the stated conventions and standard inputs are fixed."
+        },
+        "dep_claim_type": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4fdb1b6aa5dc0b1dbd6c5ae9cf283308b79887e4041d83eb4c9d6c1e38879acc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-fractional-instanton-open-gate-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "As an open_gate, the row closes: the retained-bounded upstream authority supplies the finite 8pi^2 normalization and twisted-T4 k/N arithmetic, the runner verifies the symbolic/numeric action checks and boundary disclaimers, and no downstream hierarchy or condensate bridge is claimed.",
       "claim_id": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
+      "claim_scope": "External twisted-T4 SU(N) fractional-instanton gate: records Q=k/N and S_frac=(8 pi^2/g^2)|k/N| under the stated twisted-boundary conventions, plus the schematic dilute-gas ensemble/free-energy form only as an open modeling target. Determinant, phase-space, coupling scale, condensate formation, framework substrate/observable identification, alpha_LM^16, v/M_Pl, and hierarchy bridges remain unaudited and open.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T07:29:07.779727+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -95106,19 +95124,19 @@
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note restricts theorem-grade content to the external fractional charge/action formula under twisted-T4 conventions and records the dilute-gas/condensate material only as an open target with named missing determinant, phase-space, coupling-scale, convergence, substrate, observable, and hierarchy bridges.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1d91d9da453a5163d4a685d15b508037f601c97d8bac9939ed3adfa9cf65b532",
       "note_path": "docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if a downstream row cites this as a positive hierarchy bridge, supplies or fixes a determinant/measure/coupling-scale prescription, asserts dilute-gas condensate closure, or identifies the external twisted-T4 sector with a framework substrate/observable.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -95164,18 +95182,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 28,
         "B": 0,
-        "C": 0,
+        "C": 7,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 35
       },
       "runner_path": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py",
       "title": "Fractional Instanton Dilute-Gas Hierarchy Mechanism \u2014 External Narrow Gate",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Clean only as an open gate. The cited retained-bounded infrastructure supports the normalized external charge/action arithmetic after fixed Yang-Mills/T4 conventions, and independent arithmetic confirms the canonical raw factors: exp(-4 pi^2)=7.16e-18, exp(-8 pi^2/3)=3.71e-12, and exp(-2 pi^2)=2.68e-9. The runner's PASS lines are mostly symbolic/textual boundary guards, not a condensate computation, but that matches the source scope: determinant, measure, phase-space, coupling scale, convergence, framework substrate/observable identification, alpha_LM^16, v/M_Pl, and hierarchy substitution are explicitly left open."
     },
     "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25": {
       "audit_date": "2026-04-26",
@@ -279692,8 +279711,8 @@
       "load_bearing_score": 3.5,
       "load_bearing_step": "The runner checks the finite algebra and arithmetic after these conventions are fixed.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "open_gate",
+      "max_descendant_status_rank": 40,
       "note_hash": "c4e562fb2cd148ce8983d329e53836414a69616d8e161d0ae538702098898521",
       "note_path": "docs/TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the bounded after-fixed-conventions scope; retiring the admissions would require separate retained authority for the BPST density, Yang-Mills normalization, and twisted-T4 topology.",

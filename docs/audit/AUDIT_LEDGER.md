@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 171 |
 | **retained_bounded** | 581 |
 | _retained_pending_chain_ | 8 |
-| open_gate | 23 |
-| unaudited | 1149 |
+| open_gate | 24 |
+| unaudited | 1148 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 884 |
+| `audited_clean` | 885 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1379 |
+| `unaudited` | 1378 |
 
 | claim_type | count |
 |---|---:|
@@ -358,6 +358,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -5081,6 +5082,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached current runner completes and computes the quadrant-reflection connectivity, source propagation, detector centroid shifts, and row gate rather than printing preset outcomes. It confirms a nonempty narrow basin: the note's quick subset has 5/9 passing rows and the current full default sweep has 23/45 passing rows, so the bounded non-universal claim closes.
 - **rationale:** The load-bearing claim is bounded to existence of a narrow computational basin, not family-wide or geometry-generic closure. The runner constructs the quadrant-reflection adjacency rule, evaluates zero, plus, minus, neutral, and double-source responses, and counts passing rows under explicit gates; it does not hard-code the pass count or target response signs. The note overstates the representative drift=0.50 quick row as mostly passing, but that wording is not needed for the audited bounded conclusion and the current runner output still supports the stated safe read. Residual risk is limited to the unexpanded imported grown-slice generator, which was not a listed one-hop note in the restricted packet.
 - **auditor confidence:** medium
+
+### `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** External twisted-T4 SU(N) fractional-instanton gate: records Q=k/N and S_frac=(8 pi^2/g^2)|k/N| under the stated twisted-boundary conventions, plus the schematic dilute-gas ensemble/free-energy form only as an open modeling target. Determinant, phase-space, coupling scale, condensate formation, framework substrate/observable identification, alpha_LM^16, v/M_Pl, and hierarchy bridges remain unaudited and open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-fractional-instanton-open-gate-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The note restricts theorem-grade content to the external fractional charge/action formula under twisted-T4 conventions and records the dilute-gas/condensate material only as an open target with named missing determinant, phase-space, coupling-scale, convergence, substrate, observable, and hierarchy bridges.  _(class `C`)_
+- **chain closes:** True — As an open_gate, the row closes: the retained-bounded upstream authority supplies the finite 8pi^2 normalization and twisted-T4 k/N arithmetic, the runner verifies the symbolic/numeric action checks and boundary disclaimers, and no downstream hierarchy or condensate bridge is claimed.
+- **rationale:** Clean only as an open gate. The cited retained-bounded infrastructure supports the normalized external charge/action arithmetic after fixed Yang-Mills/T4 conventions, and independent arithmetic confirms the canonical raw factors: exp(-4 pi^2)=7.16e-18, exp(-8 pi^2/3)=3.71e-12, and exp(-2 pi^2)=2.68e-9. The runner's PASS lines are mostly symbolic/textual boundary guards, not a condensate computation, but that matches the source scope: determinant, measure, phase-space, coupling scale, convergence, framework substrate/observable identification, alpha_LM^16, v/M_Pl, and hierarchy substitution are explicitly left open.
+- **auditor confidence:** high
 
 ### `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25`
 

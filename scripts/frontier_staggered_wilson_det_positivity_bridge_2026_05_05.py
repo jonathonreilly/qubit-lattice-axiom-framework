@@ -1,29 +1,27 @@
 #!/usr/bin/env python3
-"""Staggered + Wilson determinant-positivity bridge runner.
+"""Supplied-surface staggered + Wilson determinant-positivity runner.
 
 Companion to
 `docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`.
 
-The bridge theorem proves that under the canonical-A_min conventions
-asserted by the parent reflection-positivity note (M_W commutes with
-the staggered chirality eps; mass = m * I; symmetric-canonical
-M_W = r * d * I; balanced sublattices) the canonical staggered + Wilson
-Dirac operator M = M_KS + M_W + m * I has
+The theorem proves that for a supplied finite matrix surface with balanced
+eps subspaces, anti-Hermitian staggered hop M_KS, and a supplied diagonal
+Wilson/mass surface M_W + m * I = alpha * I, the matrix
+M = M_KS + alpha * I has
 
     det(M) = prod_{i=1..n/2} (alpha**2 + sigma_i**2)
 
 where alpha = m + r * d and sigma_i are the singular values of the
 off-diagonal staggered-hop block K of the eps-block decomposition of M.
-Hence det(M) > 0 configuration-by-configuration on every SU(3) gauge
-background for any m > 0.
+Hence det(M) > 0 for the supplied finite surface and for the seeded SU(3)
+backgrounds used to build K.
 
-This runner is the load-bearing assertion runner for that bridge. It
-constructs the staggered + Wilson Dirac operator on small periodic 4D
-SU(3) gauge backgrounds, performs the eps-block decomposition explicitly,
-verifies the closed-form factorisation by comparing two independent
-computations of det(M), and asserts per-configuration positivity. It does
-NOT hard-code an L -> infinity value; it tests structural identities
-that are exact at finite volume.
+This runner constructs staggered-hop matrices on small periodic 4D SU(3)
+backgrounds, then supplies the diagonal Wilson/mass surface alpha * I. It
+performs the eps-block decomposition explicitly, verifies the closed-form
+factorisation by comparing two independent computations of det(M), and asserts
+positivity on that supplied surface. It does NOT prove that alpha * I is the
+framework-forced Wilson convention.
 
 Reproducibility: deterministic seeded SU(3) link configurations.
 """
@@ -157,14 +155,7 @@ def build_M_KS(L: int, links: np.ndarray) -> np.ndarray:
 
 
 def build_M_W_diagonal(dim: int, r: float, d: int) -> np.ndarray:
-    """Symmetric-canonical Wilson term: M_W = r * d * I.
-
-    This is the eps-commuting projection of a standard Wilson term and is
-    the canonical convention asserted by the parent reflection-positivity
-    note (eps M_W eps = M_W). The off-diagonal NN-hop part of a standard
-    Wilson Laplacian is excluded by this projection; that is the parent
-    note's own asserted convention, not a narrowing introduced here.
-    """
+    """Supplied diagonal Wilson surface: M_W = r * d * I."""
     return float(r * d) * np.eye(dim, dtype=complex)
 
 
@@ -298,10 +289,10 @@ def run_volume(L: int, scale: float, masses: list[float], rng: np.random.Generat
 
 def main() -> int:
     print("=" * 78)
-    print("STAGGERED + WILSON DET-POSITIVITY BRIDGE VERIFIER")
+    print("SUPPLIED-SURFACE STAGGERED + WILSON DET-POSITIVITY VERIFIER")
     print("=" * 78)
     print(f"seed={SEED}")
-    print(f"convention: M_W = r * d * I (eps-commuting); mass = m * I")
+    print(f"supplied surface: M_W = r * d * I (eps-commuting); mass = m * I")
     print(f"            r = 1, d = 4 (4D); alpha = m + r * d = m + 4")
     print()
     print("Block decomposition: eps reorders sites so eps = diag(+I, -I).")

@@ -4962,10 +4962,10 @@
         "A": 0,
         "B": 0,
         "C": 0,
-        "D": 1
+        "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": null,
       "runner": "scripts/frontier_dm_leptogenesis_hrad_theorem.py"
     },
     "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15": {
@@ -34859,10 +34859,10 @@
         "A": 0,
         "B": 0,
         "C": 0,
-        "D": 1
+        "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": null,
       "exists": true
     },
     "scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py": {
@@ -56881,11 +56881,11 @@
       "A": 256,
       "B": 293,
       "C": 763,
-      "D": 303,
-      "none": 435
+      "D": 302,
+      "none": 436
     },
     "runners_classified": 2050,
     "runners_with_C": 999,
-    "runners_with_D": 603
+    "runners_with_D": 602
   }
 }

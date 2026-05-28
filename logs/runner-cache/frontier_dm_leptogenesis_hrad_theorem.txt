@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_hrad_theorem.py
-runner_sha256: 405de6a546c5369e9e4e87211923a585b5baf9dd379349e3b6cf59776acfc464
+runner_sha256: 491ee10b326c8d87948c988d57b99c804878b47dd0e0cb42e32b2f3da630270a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================================
-DM LEPTOGENESIS H_rad(T) THEOREM
+DM LEPTOGENESIS H_rad(T) CONDITIONAL ARITHMETIC CHECKER
 ========================================================================================
 
 ========================================================================================
@@ -17,22 +17,22 @@ PART 1: Z^3 FIXES EXACT FLATNESS ON THE SPATIAL SLICE
   [PASS] So the homogeneous/isotropic spatial-curvature parameter is exactly k = 0 on Z^3  (k=0.000e+00)
 
 ========================================================================================
-PART 2: THE EXACT RADIATION LAW H_rad(T) = const * T^2
+PART 2: CONDITIONAL RADIATION LAW H_rad(T) = const * T^2
 ========================================================================================
-  [PASS] The exact flat Friedmann-plus-radiation coefficient is sqrt(4*pi^3*g_*/45)/M_Pl  (H/T^2=1.4049225908908326e-18)
-  [PASS] The theorem-native radiation branch therefore satisfies H_rad(T) proportional to T^2 exactly  (max profile error=0.000e+00)
+  [PASS] The supplied flat Friedmann-plus-radiation coefficient is sqrt(4*pi^3*g_*/45)/M_Pl  (H/T^2=1.4049225908908326e-18)
+  [PASS] The conditional radiation branch satisfies H_rad(T) proportional to T^2  (max profile error=0.000e+00)
 
 ========================================================================================
-PART 3: m_* AND K ARE NOW EXACT TRANSPORT INPUTS
+PART 3: CONDITIONAL m_* AND K TRANSPORT INPUTS
 ========================================================================================
-  [PASS] The old m_* comparator is now the exact radiation-branch m_*  (m_*=0.002141709115137324 eV)
-  [PASS] The old benchmark K value is now the exact radiation-branch K value  (K=47.235979629898)
+  [PASS] The conditional radiation-branch m_* matches the package value  (m_*=0.002141709115137324 eV)
+  [PASS] The conditional radiation-branch K value matches the package value  (K=47.235979629898)
 
 ========================================================================================
-PART 4: THE NORMALIZED TRANSPORT PROFILE IS EXACTLY E_H(z) = 1
+PART 4: CONDITIONAL NORMALIZED TRANSPORT PROFILE E_H(z) = 1
 ========================================================================================
-  [PASS] The exact radiation law gives E_H(z) = z^2 H(M1/z)/H(M1) = 1 identically  (max E_H error=4.441e-16)
-  [INFO] The current direct transport solver therefore sits on the exact theorem-native radiation branch.
+  [PASS] The conditional radiation law gives E_H(z) = z^2 H(M1/z)/H(M1) = 1  (max E_H error=4.441e-16)
+  [INFO] This is the conditional branch used by the current direct transport solver.
 
 ========================================================================================
 SUMMARY: PASS=7 FAIL=0

@@ -6586,10 +6586,6 @@
     },
     {
       "from": "dm_leptogenesis_hrad_theorem_note_2026-04-16",
-      "to": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
-    },
-    {
-      "from": "dm_leptogenesis_hrad_theorem_note_2026-04-16",
       "to": "sm_relativistic_dof_count_import_note_2026-05-17"
     },
     {
@@ -48612,22 +48608,21 @@
     },
     "dm_leptogenesis_hrad_theorem_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_hrad_theorem_note_2026-04-16",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
       "deps": [
         "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
-        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
         "sm_relativistic_dof_count_import_note_2026-05-17",
         "axiom_first_stefan_boltzmann_theorem_note_2026-05-01"
       ],
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "note_hash": "c74d4cbf8468d4b08f28287c41716dfd3e9b42726403e827c3ccf31fe571df77",
+      "note_hash": "673372ca1096861c5575505837dc4d7d69a5c787ee54048a7f8e0d114d15ecef",
       "path": "docs/DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_hrad_theorem.py",
-      "title": "DM Leptogenesis Exact `H_rad(T)` Theorem"
+      "title": "DM Leptogenesis `H_rad(T)` Radiation Branch Boundary"
     },
     "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15": {
       "claim_id": "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15",
@@ -67158,10 +67153,10 @@
         "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "73a992fb9359cfbc40c28f698db99ad02a1bee1113e8bc48df2afca793cbeb2c",
+      "note_hash": "389ca49db24ccd8949c919ac14481aeed9d255d80585d3f38629c034e6843b28",
       "path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
-      "title": "Newton-Poisson \u2192 Flat First Friedmann Law \u2014 Named Non-Derivation Import"
+      "title": "Newton-Poisson \u2192 Flat First Friedmann Law (Dust) \u2014 Named Non-Derivation Import"
     },
     "newtonian_distance_law_confirmed": {
       "claim_id": "newtonian_distance_law_confirmed",
@@ -86450,20 +86445,20 @@
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1437,
-      "open_gate": 50,
+      "none": 1436,
+      "open_gate": 51,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1061,
+      "bounded_theorem": 1060,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
       "none": 426,
-      "open_gate": 127,
+      "open_gate": 128,
       "positive_theorem": 585
     },
-    "edge_count": 9864,
+    "edge_count": 9863,
     "leaf_count": 807,
     "node_count": 2580,
     "root_count": 855,

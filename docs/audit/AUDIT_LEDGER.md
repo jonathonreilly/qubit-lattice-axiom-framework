@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 538 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1230 |
+| unaudited | 1229 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 45 |
+| ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 833 |
-| `audited_conditional` | 45 |
+| `audited_conditional` | 46 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1460 |
+| `unaudited` | 1459 |
 
 | claim_type | count |
 |---|---:|
@@ -997,6 +997,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `su2_witten_z2_anomaly_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12420,6 +12421,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substitute N_W = (N_color + 1) * N_gen, n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the stated one-loop beta formula to obtain b_2 = (11/3) N_pair - (1/3)(N_color + 1)N_gen - 1/6.  _(class `A`)_
 - **chain closes:** True — Given the scoped inputs, the closed form and framework value follow by direct rational arithmetic. The cited one-hop authorities in the packet are retained-grade or retained_bounded, and the runner confirms the algebra symbolically.
 - **rationale:** The load-bearing step is a genuine algebraic identity check over the stated inputs, not a renaming, numerical fit, or comparator match. The runner source actually constructs the symbolic expression from the stated beta formula and performs exact sympy simplifications plus rational framework substitution. No missing helper source or hard-coded-only pass path is present.
+- **auditor confidence:** high
+
+### `su2_witten_z2_anomaly_theorem_note_2026-04-24`
+
+- **Note:** [`SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md`](../../docs/SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Witten Z2 parity cancellation for the stated SU(2) fundamental Weyl doublet content: three Q_L color copies plus one L_L doublet per generation across three generations gives N_D=12, conditional on a retained chiral matter-content authority and retained Witten-anomaly lemma.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-su2-witten-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the stated SU(2) fundamental Weyl doublet content, N_D(total) = n_gen * (N_c + 1) = 3 * (3 + 1) = 12, so (-1)^N_D = +1.  _(class `A`)_
+- **chain closes:** False — The parity arithmetic closes, but the restricted retained dependencies do not establish the chiral Weyl matter-content premise to which the Witten anomaly applies, and the Witten sign rule is imported as standard QFT input rather than supplied by a retained one-hop authority.
+- **rationale:** Issue: the note counts Q_L and L_L as retained chiral SU(2) fundamental Weyl doublets and applies the Witten sign rule, but the retained one-hop packet only supplies native gauge structure, graph SU(3)/left-handed block algebra, and a bounded generation spectrum; it does not ratify full chiral matter content or a retained Witten-anomaly lemma. Why this blocks: the equation N_D=12 is enough only after the fermion representation content and the anomaly theorem are established, so the conclusion is presently conditional on imported matter/anomaly premises. Repair target: wire and audit a narrow retained-grade one-generation chiral SU(2) matter-content authority, plus a retained textbook Witten Z2 anomaly lemma or equivalent one-hop authority for pi_4(SU(2)) and the (-1)^N_D Pfaffian sign rule. Claim boundary until fixed: given those premises, the binary count is correct and the runner verifies the stated parity and extension arithmetic.
+- **open / conditional deps cited:**
+  - `ANOMALY_FORCES_TIME_THEOREM.md`
+  - `ONE_GENERATION_MATTER_CLOSURE_NOTE.md`
 - **auditor confidence:** high
 
 ### `su3_adjoint_casimir_theorem_note_2026-05-02`

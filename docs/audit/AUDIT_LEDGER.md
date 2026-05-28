@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 556 |
+| **retained_bounded** | 557 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1200 |
+| unaudited | 1199 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 856 |
+| `audited_clean` | 857 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1430 |
+| `unaudited` | 1429 |
 
 | claim_type | count |
 |---|---:|
@@ -304,6 +304,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `edge_deletion_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4035,6 +4036,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The runner source performs actual interval arithmetic over the implemented residual functions and interval Jacobians, checks strict Krawczyk containment for all eight boxes, pairwise disjointness within each branch, and strict chamber-margin signs. The source note explicitly excludes the parent completeness and all-permutation upper-bound claims from this certificate.
 - **rationale:** The bounded claim is a local interval certificate, not the parent theorem's global spectral completeness claim. The runner is not merely printing expected constants: it constructs the reduced residual functions, evaluates interval Jacobians by forward-mode differentiation, applies the Krawczyk operator, and obtains strict margins with PASS=18 FAIL=0. The hard-coded centers define the boxes being certified, while the interval inclusion supplies existence and local uniqueness inside those boxes. This clean verdict is limited to that bounded local certificate and the listed chamber signs.
 - **auditor confidence:** medium
+
+### `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17`
+
+- **Note:** [`DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Maxwell-Boltzmann/Sommerfeld normalization algebra at the explicit benchmark slice x_f=25, with a=x_f/4=25/4: verifies the normalized MB denominator, <1/v>=5/sqrt(pi), <1/v^2>=25/2, the substitution t=a v^2 giving alpha_eff/v=alpha_eff*sqrt(a/t), and the thermal-average t-measure prefactor 2/sqrt(pi). No framework derivation of the Maxwell-Boltzmann distribution, freeze-out value x_f=25, Sommerfeld enhancement law, relic-abundance dynamics, or downstream DM thermal closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-dm-thermal-average-sommerfeld-normalization-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cached runner and direct rerun pass the finite formulas: integral v^2 exp(-a v^2) dv = sqrt(pi)/(4 a^(3/2)); <1/v>=2 sqrt(a)/sqrt(pi)=5/sqrt(pi) at a=25/4; <1/v^2>=2a=25/2; alpha_eff/v transforms to alpha_eff sqrt(a/t); and 1/Gamma(3/2)=2/sqrt(pi).  _(class `A`)_
+- **chain closes:** True — The row has no one-hop dependencies, the registered runner is fresh and passes, and the independent symbolic integration verifies the same finite normalization identities. The declared physics inputs are explicitly outside the audited closure and are not promoted.
+- **rationale:** Clean bounded retention is appropriate because the claim is only finite normalization algebra over declared inputs. Independent symbolic checks give denom=sqrt(pi)/(4*a^(3/2)), <1/v>=2*sqrt(a)/sqrt(pi), <1/v^2>=2*a, x_f=25 values 5/sqrt(pi) and 25/2, alpha/v -> alpha*sqrt(a/t), and 1/Gamma(3/2)=2/sqrt(pi), matching the runner. The bounded-wall scan finds the MB distribution, x_f=25, and Sommerfeld factor are all explicit declared inputs and explicitly excluded from derivation, so there is no hidden textbook import in the audited scope.
+- **auditor confidence:** high
 
 ### `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19`
 

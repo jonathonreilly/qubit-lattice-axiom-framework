@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 580 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1151 |
+| unaudited | 1150 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,21 +60,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 883 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1381 |
+| `unaudited` | 1380 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1107 |
+| `bounded_theorem` | 1108 |
 | `decoration` | 53 |
 | `meta` | 237 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 696 |
+| `positive_theorem` | 695 |
 
 | criticality | count |
 |---|---:|
@@ -1038,6 +1038,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `early_family_transfer_connectivity_diagnosis` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `emergent_lorentz_invariance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4430,6 +4431,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact Schur factorization gives I_e^* D_-^(-1) I_e = L_e^(-1), and under D_- = D_-^* > 0 the completed-square identity gives u^* L_e u = min_v [u; v]^* D_- [u; v].  _(class `A`)_
 - **chain closes:** True — The note proves the scoped conclusions directly by finite-dimensional block factorization and positive-Hermitian quadratic completion. There are no one-hop dependencies and no imported physical bridge inside the audited finite-dimensional boundary theorem.
 - **rationale:** The finite-dimensional algebra closes under the note's explicit hypotheses: invertible F and L_e for the resolvent identity, and D_- = D_-^* > 0 for the variational and monotonicity statements. The runner is not a first-principles microscopic computation, but it consistently checks exact Schur/Feshbach/Dirichlet algebra and scope hygiene, with 46 PASS and 0 FAIL in the supplied live summary. Residual risk is limited to scope discipline: this clean verdict covers only the supplied-block theorem and does not certify any Wilson-native construction of D_-, charged support selection, or final DM closure.
+- **auditor confidence:** high
+
+### `early_family_transfer_connectivity_diagnosis`
+
+- **Note:** [`EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md`](../../docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded synthesis only: on the cited retained grown-row artifacts, the early family architecture survives as a position-based sector-matching/connectivity-design prior, while generic weak rewiring and broad geometry-generic transport claims remain unsupported. This does not ratify a universal transfer theorem, full transport closure, or a new positive theorem beyond the cited finite retained/bounded runs.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-2026-05-28-early-family-transfer-connectivity-diagnosis`  (codex-gpt-5.5; independence=strong)
+- **load-bearing step:** The note synthesizes retained/bounded Gate B grown-row transfer, complex-action, fixed-field, and weak/non-label connectivity artifacts into the diagnosis that structured sector matching transfers narrowly while generic weak rewiring does not.  _(class `B`)_
+- **chain closes:** False — The one-hop artifact rows mostly support the finite grown-row diagnosis, but the synthesis itself has no registered runner, one cited synthesis dependency is metadata-only, and the source still frames a proposed retained diagnosis rather than a runner-backed theorem.
+- **rationale:** The retained and retained_bounded dependencies support a narrow read: position-based sector matching survives on the retained grown row, and weak/generic rewiring is not supported by the cited bounded runs. The source has no registered runner and does not independently reproduce the table or define a formal synthesis criterion, so it cannot land as a positive theorem. Conditional bounded synthesis is the accurate status until the diagnosis is rebuilt as a current runner-backed bounded theorem or a metadata index.
+- **open / conditional deps cited:**
+  - `registered synthesis runner or artifact reproducing the retained grown-row comparison table and diagnosis criterion`
+  - `generated_geometry_synthesis_note is metadata-only rather than retained theorem support`
 - **auditor confidence:** high
 
 ### `edge_deletion_boundary_note`

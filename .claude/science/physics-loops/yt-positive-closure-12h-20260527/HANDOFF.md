@@ -36,6 +36,12 @@ Cycle 20 science commit:
 0f43b0a4a96feac232d0ec0cb127f67e68b97b1f
 ```
 
+Cycle 20 delivery commit:
+
+```text
+9893573f363b2b5f5cbbcb08669b46aeae23a9b4
+```
+
 Cycle 20 artifacts:
 
 - `docs/YT_C3_BLOCK_RANK_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
@@ -59,6 +65,8 @@ Cycle 20 verification so far:
 - `python3 -m py_compile ...` passed.
 - YAML validation passed.
 - `git diff --check` passed.
+- Branch pushed to origin and PR #1980 body updated with the exact no-go
+  result and verification.
 
 The next exact action is still rank 1 or rank 4: derive accepted
 same-surface radial generator dynamics plus a physical top-readout law

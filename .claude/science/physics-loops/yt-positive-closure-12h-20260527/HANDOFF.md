@@ -48,7 +48,8 @@ Cycle 35 verification so far:
 - `python3 -m py_compile ...` passed.
 - YAML validation passed.
 - `git diff --check` passed.
-- Commit, push, and PR body update are pending for this block.
+- Science commit `9ffa95c8c76da17c5e57ba98e227145c0f7656d6` was pushed.
+- PR #1980 body was updated with the cycle 35 result and verification.
 - `POSITIVE_CLOSURE` remains absent.
 
 The next exact action remains to derive allowed same-surface

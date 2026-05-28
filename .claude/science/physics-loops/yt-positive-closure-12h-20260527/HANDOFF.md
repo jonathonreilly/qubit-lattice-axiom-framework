@@ -45,12 +45,20 @@ Cycle 33 verification so far:
 - `python3 -m py_compile ...` passed.
 - YAML validation passed.
 - `git diff --check` passed.
-- Commit, push, and PR body update are pending for this block.
 - `POSITIVE_CLOSURE` remains absent.
 
 The next exact action remains to derive allowed same-surface
 radial/readout/backend laws without forbidden anchors, or produce accepted
 strict top/W pole rows.
+
+Cycle 33 science commit:
+
+```text
+c6b528658b72514a5690d83f8beb7859b07c96bd
+```
+
+Cycle 33 branch push is complete. PR #1980 body update is being applied from
+this handoff state.
 
 Cycle 32 adds a forty-sixth science block, not positive retained-grade
 closure. The block prunes the shortcut:

@@ -1,0 +1,57 @@
+loop_slug: conditional-backlog-batch2-20260528
+date: 2026-05-28
+mode: campaign_block
+branch: physics-loop/conditional-backlog-batch2-20260528
+started_from: origin/main@ea100a9602c03769b107266564b29f2f08f05bda
+rebased_to: origin/main@be771e4fe83bf990723acb3f4acf8668d3fcf177
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+current_goal: >
+  Repair the next uncovered audited-conditional backlog batch by narrowing
+  source claims and regenerating audit data so the independent auditor can
+  re-audit the changed rows.
+touched_claim_ids:
+  - audit_backlog_note_2026-05-02
+  - beyond_lattice_qcd_note
+  - born_rule_from_gleason_busch_derivation_note_2026-05-20
+  - cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17
+  - cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29
+  - dimension_selection_lower_bound_bridge_v2_2026-05-20
+files_touched:
+  - docs/AUDIT_BACKLOG_NOTE_2026-05-02.md
+  - docs/BEYOND_LATTICE_QCD_NOTE.md
+  - docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md
+  - docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md
+  - docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_PROMOTED_VIA_V8_THEOREM_NOTE_2026-04-29.md
+  - docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md
+  - scripts/frontier_audit_backlog_campaign_synthesis.py
+  - logs/runner-cache/frontier_audit_backlog_campaign_synthesis.txt
+active_route: source_narrowing_plus_reaudit_queue_reset
+hard_residual: >
+  No row in this batch has a complete one-hop retained bridge for the original
+  stronger reading. The repair is to make the live claim match the actually
+  supported source surface.
+open_imports:
+  - "Beyond-lattice-QCD: probability/readout and physical graph-gravity comparison bridge remain open."
+  - "Gleason-Busch Born route: POVM, Luders/update, pre-record, and record-as-Kraus premises remain imports."
+  - "Cluster decomposition slab: H1 positive Hermitian slab operator and H2 gap remain assumptions."
+  - "Cross-sector A^2-Koide-Vcb: cited upstream dependency rows still own their effective status."
+  - "Dimension lower-bound bridge: finite-k/discrete-to-eikonal proof remains open."
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_audit_backlog_campaign_synthesis.py: PASS=48 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_beyond_lattice_qcd.py: PASS"
+  - "PYTHONPATH=scripts python3 scripts/cluster_decomposition_spatial_slab_bridge_check.py: PASS=5 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8.py: FAIL count 0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_dimension_selection.py: PASS"
+  - "python3 scripts/vocab_lint.py --report-only target docs: PASS"
+  - "git diff --check: PASS"
+  - "bash docs/audit/scripts/run_pipeline.sh: PASS"
+generated_audit_projection:
+  changed_rows_reset_to_unaudited: 6
+  target_rows_with_open_dependency_paths: 0
+  manual_verdict_edits: false
+pr_status: "draft PR #2152"
+next_exact_action: "Rescan current origin/main for any remaining uncovered audited-conditional rows."
+stop_condition: "No uncovered audited-conditional rows remain after accounting for queued/open PRs."

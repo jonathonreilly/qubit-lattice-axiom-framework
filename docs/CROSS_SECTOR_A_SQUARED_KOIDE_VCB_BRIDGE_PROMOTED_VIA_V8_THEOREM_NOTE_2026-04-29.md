@@ -1,6 +1,7 @@
 # Cross-Sector A²-Q_l-|V_cb| Bridge Support via V8 Composition (V1)
 
 **Date:** 2026-04-29
+**Claim type:** bounded_theorem
 **Status:** support: cross-sector identity Q_l × α_s(v)² = 4|V_cb|² composition, conditional on V8 (Block 1) ratification.
 This note records the cross-sector A²-Q_l-|V_cb| bridge from
 "conditional support on Q_l = 2/3 charged-lepton target"
@@ -9,6 +10,14 @@ as a support-tier structural identity on the A_min surface, by composing
 V8 (Block 1, Koide Q closure attempt) with the retained CKM atlas.
 Stronger headline tier language is NOT used.
 **Primary runner:** `scripts/frontier_cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8.py`
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+Despite the historical filename, this row is only a conditional algebraic
+composition over the explicitly cited inputs. It does not promote V8, the
+Koide Q row, alpha_s, or the CKM atlas dependencies, and it should not be read
+as a positive cross-sector prediction unless those dependencies are separately
+effective.
 
 **Cited authorities (one-hop deps):**
 - [KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md](KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md)

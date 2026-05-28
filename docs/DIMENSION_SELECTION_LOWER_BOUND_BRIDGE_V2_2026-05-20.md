@@ -20,6 +20,13 @@ analytic bridge.
 classical force, inconsistent with the runner's action-based
 propagator observable.
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This row is narrowed to a runner-faithful eikonal sign model under the stated
+WKB/Fermat bridge, not a closed discrete finite-k theorem. The full
+dimension-selection row can use this only as bounded support unless a future
+finite-k proof or direct discrete-to-eikonal theorem is supplied.
+
 ## Claim
 
 For `scripts/frontier_dimension_selection.py`, which computes

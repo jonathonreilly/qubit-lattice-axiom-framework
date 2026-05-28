@@ -147,6 +147,9 @@ closed exactly:
   no-go: older bounded bridge-selector
   support depends on forbidden/open bridge inputs and lacks the same-surface
   radial/backend or strict pole-row certificate required by this campaign
+  physical source panel current-gate firewall no-go: the earlier source-law
+  research-panel synthesis targets a stale source-intervention gate and does
+  not supply the current radial/readout/backend or strict pole-row certificate
   microscopic backend/projector/matrix-element boundary: current source law,
   carrier amplitude, C3 algebra, W row, and no-kappa backend candidate do not
   derive the accepted physical top projector or its source-generator matrix
@@ -1231,6 +1234,15 @@ derive `lambda_top=1/sqrt(2)`, accepted backend/projectors/matrix elements,
 or strict top/W pole rows.  They therefore cannot be imported as
 positive-closure proof input for this campaign.
 
+[`YT_PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NO_GO_NOTE_2026-05-28.md`](YT_PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NO_GO_NOTE_2026-05-28.md)
+prunes another stale import: the earlier physical source-law research panel
+targets the former no-hidden-scale/minimum-information source-intervention
+gate.  The current first open gate is instead the same-surface coefficient
+row: accepted radial generator dynamics fixing `lambda_top=1/sqrt(2)`,
+accepted zero-singlet top-block/readout law, backend/projectors/matrix
+elements, or strict top/W pole rows with controls.  The panel remains
+historical support/planning, but it does not supply that current certificate.
+
 [`YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md`](YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md)
 then tests whether the closed strict W/Z denominator support can be spliced
 with the conditional C3 target row to make the missing strict packet.  The
@@ -1732,6 +1744,10 @@ proposal_allowed_reason: |
   target-conditioned `y_t(v)` filters, and proxy families, and supplies neither
   `lambda_top=1/sqrt(2)` same-surface radial dynamics nor strict top/W pole
   rows.
+  The physical source-law panel current-gate firewall prunes the stale-source
+  shortcut: the earlier no-hidden-scale/minimum-information research panel
+  does not provide the current same-surface radial/readout/backend certificate
+  or strict top/W pole rows.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

@@ -46,6 +46,9 @@ This runner verifies the current burn-down state:
 * The legacy Hessian/UV bridge firewall no-go confirms that older bounded
   bridge-selector support depends on forbidden/open bridge inputs and lacks
   the current same-surface radial/backend or strict pole-row certificate.
+* The physical source-law panel current-gate firewall no-go confirms that the
+  older research-panel source-intervention plan does not supply the current
+  radial/readout/backend or strict pole-row certificate.
 * The microscopic backend/projector/matrix-element boundary prunes the current
   non-compute shortcut: source law, carrier amplitude, C3 algebra, W row, and
   no-kappa candidate do not derive the accepted top projector or matrix
@@ -224,6 +227,7 @@ STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO = DOCS / "YT_STRICT_TOP_W_POLE_ROW_REP
 ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO = DOCS / "YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md"
 ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO = DOCS / "YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md"
 LEGACY_HESSIAN_BRIDGE_FIREWALL_NOGO = DOCS / "YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md"
+PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NOGO = DOCS / "YT_PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NO_GO_NOTE_2026-05-28.md"
 MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY = DOCS / "YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md"
 C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO = DOCS / "YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md"
 C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY = DOCS / "YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md"
@@ -307,6 +311,7 @@ STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO_OUT = ROOT / "outputs" / "yt_strict_to
 ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT = ROOT / "outputs" / "yt_origin_main_strict_pole_row_refresh_no_go_2026-05-28.json"
 ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT = ROOT / "outputs" / "yt_origin_main_declared_anchor_firewall_no_go_2026-05-28.json"
 LEGACY_HESSIAN_BRIDGE_FIREWALL_NOGO_OUT = ROOT / "outputs" / "yt_legacy_hessian_bridge_firewall_no_go_2026-05-28.json"
+PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NOGO_OUT = ROOT / "outputs" / "yt_physical_source_panel_current_gate_firewall_no_go_2026-05-28.json"
 MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT = ROOT / "outputs" / "yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json"
 C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT = ROOT / "outputs" / "yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json"
 C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json"
@@ -421,6 +426,7 @@ def part1_anchors() -> dict[str, str]:
         ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO,
         ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO,
         LEGACY_HESSIAN_BRIDGE_FIREWALL_NOGO,
+        PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NOGO,
         MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY,
         C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO,
         C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY,
@@ -489,6 +495,7 @@ def part1_anchors() -> dict[str, str]:
         ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT,
         ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT,
         LEGACY_HESSIAN_BRIDGE_FIREWALL_NOGO_OUT,
+        PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NOGO_OUT,
         MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT,
         C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT,
         C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT,
@@ -559,6 +566,7 @@ def part1_anchors() -> dict[str, str]:
         "origin/main strict pole-row refresh no-go",
         "origin/main declared-anchor firewall no-go",
         "legacy Hessian bridge firewall no-go",
+        "physical source panel current-gate firewall no-go",
         "microscopic backend/projector/matrix-element boundary",
         "positive real C3 transfer/Perron selection",
         "phase-ordering cone",
@@ -647,6 +655,7 @@ def part2_support_outputs() -> dict[str, Any]:
     origin_main_strict_pole_refresh_nogo = load_json(ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT)
     origin_main_declared_anchor_firewall_nogo = load_json(ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT)
     legacy_hessian_bridge_firewall_nogo = load_json(LEGACY_HESSIAN_BRIDGE_FIREWALL_NOGO_OUT)
+    physical_source_panel_current_gate_firewall_nogo = load_json(PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NOGO_OUT)
     microscopic_backend_projector_matrix_element_boundary = load_json(MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT)
     c3_positive_transfer_perron_top_line_nogo = load_json(C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT)
     c3_phase_ordering_cone_support_boundary = load_json(C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT)
@@ -1318,6 +1327,29 @@ def part2_support_outputs() -> dict[str, Any]:
         legacy_hessian_bridge_firewall_nogo.get("strict_top_w_response_certificate_present") is False,
     )
     check(
+        "physical source panel current-gate firewall no-go passed",
+        physical_source_panel_current_gate_firewall_nogo.get("fail_count") == 0,
+        physical_source_panel_current_gate_firewall_nogo.get("fail_count"),
+    )
+    check(
+        "physical source panel firewall is route pruning",
+        physical_source_panel_current_gate_firewall_nogo.get("trace_class") == "negative_route_pruning",
+        physical_source_panel_current_gate_firewall_nogo.get("trace_class"),
+    )
+    check(
+        "physical source panel firewall records current gate mismatch",
+        physical_source_panel_current_gate_firewall_nogo.get("gate_mismatch", {}).get("gate_mismatch") is True,
+    )
+    panel_cert = physical_source_panel_current_gate_firewall_nogo.get("certificate_boundary", {})
+    check(
+        "physical source panel firewall leaves radial factor unproved",
+        panel_cert.get("accepted_same_surface_radial_generator_factorization_derived") is False,
+    )
+    check(
+        "physical source panel firewall leaves strict rows absent",
+        panel_cert.get("strict_top_w_response_certificate_present") is False,
+    )
+    check(
         "microscopic backend/projector/matrix-element boundary passed",
         microscopic_backend_projector_matrix_element_boundary.get("fail_count") == 0,
         microscopic_backend_projector_matrix_element_boundary.get("fail_count"),
@@ -1763,6 +1795,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "origin_main_strict_pole_refresh_nogo": origin_main_strict_pole_refresh_nogo,
         "origin_main_declared_anchor_firewall_nogo": origin_main_declared_anchor_firewall_nogo,
         "legacy_hessian_bridge_firewall_nogo": legacy_hessian_bridge_firewall_nogo,
+        "physical_source_panel_current_gate_firewall_nogo": physical_source_panel_current_gate_firewall_nogo,
         "microscopic_backend_projector_matrix_element_boundary": microscopic_backend_projector_matrix_element_boundary,
         "c3_positive_transfer_perron_top_line_nogo": c3_positive_transfer_perron_top_line_nogo,
         "c3_phase_ordering_cone_support_boundary": c3_phase_ordering_cone_support_boundary,
@@ -2182,7 +2215,11 @@ def main() -> int:
             "over plaquette/u0, alpha_LM, old Ward-side boundaries, "
             "Planck-scale endpoints, target-conditioned y_t(v) filters, and "
             "proxy families, and it supplies neither lambda_top=1/sqrt(2) "
-            "same-surface radial dynamics nor strict top/W pole rows."
+            "same-surface radial dynamics nor strict top/W pole rows. "
+            "The physical source-law research panel is also not usable as "
+            "current closure proof: it targets an older source-intervention "
+            "gate and does not supply the present radial/readout/backend or "
+            "strict pole-row certificate."
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
@@ -2240,6 +2277,7 @@ def main() -> int:
             "origin_main_strict_pole_refresh_nogo_fail_count": support_outputs["origin_main_strict_pole_refresh_nogo"].get("fail_count"),
             "origin_main_declared_anchor_firewall_nogo_fail_count": support_outputs["origin_main_declared_anchor_firewall_nogo"].get("fail_count"),
             "legacy_hessian_bridge_firewall_nogo_fail_count": support_outputs["legacy_hessian_bridge_firewall_nogo"].get("fail_count"),
+            "physical_source_panel_current_gate_firewall_nogo_fail_count": support_outputs["physical_source_panel_current_gate_firewall_nogo"].get("fail_count"),
             "microscopic_backend_projector_matrix_element_boundary_fail_count": support_outputs["microscopic_backend_projector_matrix_element_boundary"].get("fail_count"),
             "c3_positive_transfer_perron_top_line_nogo_fail_count": support_outputs["c3_positive_transfer_perron_top_line_nogo"].get("fail_count"),
             "c3_phase_ordering_cone_support_boundary_fail_count": support_outputs["c3_phase_ordering_cone_support_boundary"].get("fail_count"),
@@ -2368,6 +2406,9 @@ def main() -> int:
             "docs/YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_legacy_hessian_bridge_firewall_no_go.py",
             "outputs/yt_legacy_hessian_bridge_firewall_no_go_2026-05-28.json",
+            "docs/YT_PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NO_GO_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_physical_source_panel_current_gate_firewall_no_go.py",
+            "outputs/yt_physical_source_panel_current_gate_firewall_no_go_2026-05-28.json",
         ],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

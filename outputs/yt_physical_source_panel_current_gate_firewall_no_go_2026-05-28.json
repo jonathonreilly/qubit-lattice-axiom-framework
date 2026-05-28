@@ -1,0 +1,50 @@
+{
+  "actual_current_surface_status": "no-go / stale physical-source panel gate firewall",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_backend_projector_matrix_element_theorem_derived": false,
+    "accepted_same_surface_radial_generator_factorization_derived": false,
+    "accepted_zero_singlet_top_readout_law_derived": false,
+    "bare_retained_allowed": false,
+    "current_gate_mismatch": true,
+    "no_forbidden_imports": true,
+    "panel_historical_support_granted": true,
+    "positive_closure_marker_allowed": false,
+    "proposal_allowed": false,
+    "remaining_imports": [
+      "accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2)",
+      "accepted physical zero-singlet top-block/readout law excluding P_0",
+      "accepted backend/projectors/source-generator matrix elements",
+      "accepted strict same-source top/W pole rows with contact/FV/IR/model-class controls"
+    ],
+    "route_pruned": "physical source-law research panel synthesis serves as current positive-closure same-surface matrix-element proof",
+    "strict_top_w_response_certificate_present": false
+  },
+  "fail_count": 0,
+  "finite_current_gate_witness": {
+    "c3_pnt_bx_matrix_element": "-1/sqrt(6)",
+    "counter_row_lambda_top_1": "sqrt(6)*A/6",
+    "current_top_row": "sqrt(6)*A*lambda_top/6",
+    "panel_normalized_component": "1/sqrt(6)",
+    "target_lambda_top": "1/sqrt(2)",
+    "target_row": "sqrt(3)*A/6"
+  },
+  "gate_mismatch": {
+    "current_first_open_gate": "accepted strict same-source top/W pole rows, or accepted independent same-surface radial generator factorization plus sign/order/readout/primitive-singular-boundary dynamics deriving zero-singlet physical top-block support with backend/projectors/matrix elements",
+    "gate_mismatch": true,
+    "panel_selected_primitive": "LSP-compatible primitive physical intervention law"
+  },
+  "pass_count": 94,
+  "positive_closure_marker_allowed": false,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The physical source-law panel is historical support for an older source-law primitive. It does not supply lambda_top=1/sqrt(2), zero-singlet physical top-block membership, accepted backend/projector matrix elements, or accepted strict top/W rows.",
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_PHYSICAL_SOURCE_PANEL_CURRENT_GATE_FIREWALL_NO_GO_NOTE_2026-05-28.md",
+    "scripts/frontier_yt_physical_source_panel_current_gate_firewall_no_go.py",
+    "outputs/yt_physical_source_panel_current_gate_firewall_no_go_2026-05-28.json"
+  ],
+  "route_pruned": "physical source-law research panel synthesis serves as current positive-closure same-surface matrix-element proof",
+  "trace_class": "negative_route_pruning"
+}

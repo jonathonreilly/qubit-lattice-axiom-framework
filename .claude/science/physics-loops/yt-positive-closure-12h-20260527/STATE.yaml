@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 5286
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T05:15:06Z"
+last_checkpoint_utc: "2026-05-28T05:16:12Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_unitary_character_flow_source_law_no_go
@@ -250,6 +250,9 @@ no_go_routes:
   - nonreversible oriented C3 Markov-current dynamics plus connected/current normalization derives an accepted non-mass physical top-line law or lambda_top=1/sqrt(2)
   - continuous C3 unitary character-flow dynamics plus branch/unit normalization derives an accepted non-mass physical top-line law or source matrix element
 commands_run:
+  - "gh pr edit 1980 --body-file - -> PR body updated"
+  - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
+  - "git commit -m 'Record C3 unitary character flow delivery' -> 433029fc2b9cc1a02a08a3317e17032fb27422d1"
   - "git commit -m 'Prune C3 unitary character flow shortcut' -> 2c43ffd7d8466bbaf5637cce810ec11e6d0633f9"
   - "python3 scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py -> PASS=102 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=586 FAIL=0"

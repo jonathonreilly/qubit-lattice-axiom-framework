@@ -1,5 +1,13 @@
 # No-Go Ledger
 
+- New in the fiftieth block: the broad local C3 coefficient-flow template for
+  `a(h), x(h), y(h)` does not derive the physical nontrivial top row or the
+  radial generator factor. Smooth polynomial local flows can select the
+  singlet fixed point `(1,0)` or the primitive nontrivial fixed point
+  `(-1/2, sqrt(3)/2)` with the same `B_x` source tangent and unit connected
+  norm. Choosing the nontrivial fixed point or orbit member is an additional
+  physical dynamics/readout law, and even after nontrivial support is granted
+  the factor `lambda_top=1/sqrt(2)` remains open.
 - New in the forty-ninth block: same-source W-normalized top response ratio
   does not derive the missing radial generator factor. The W denominator
   cancels the common source scale, but

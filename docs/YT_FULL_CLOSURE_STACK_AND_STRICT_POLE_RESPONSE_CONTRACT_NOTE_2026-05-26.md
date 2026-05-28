@@ -109,6 +109,11 @@ closed exactly:
   branches and clock scale are not fixed by the finite C3 cycle, and the
   normalized trace-zero phase generator is B_y rather than the derived B_x
   source tangent
+  local coefficient-flow selector no-go: the broad local
+  `a(h), x(h), y(h)` flow template admits smooth polynomial completions with
+  the same B_x source tangent but different top rows; choosing the
+  nontrivial fixed point or orbit member is a new physical dynamics/readout
+  law, and lambda_top remains free
   real-irrep dimension top-block no-go: finite real C3 representation theory
   exposes P_0 as the trivial real irrep and P_nt as the faithful
   two-dimensional real irrep, but selecting the faithful/nontrivial summand as
@@ -1311,6 +1316,22 @@ character flow can supply at most orientation/phase support; it does not
 derive the `B_x` source matrix element or the radial factor
 `lambda_top=1/sqrt(2)`.
 
+The local coefficient-flow selector no-go tests the broader fallback that an
+accepted local equation for `a(h), x(h), y(h)` might itself choose the
+physical row.  The finite witness keeps the same source tangent
+`dH/dell=B_x` while comparing two smooth polynomial local flows:
+
+```text
+F_s(x,y)  = (1 - x, -y),
+F_nt(x,y) = (-1/2 - x, sqrt(3)/2 - y).
+```
+
+The first fixes `(x,y)=(1,0)` and top-by-largest is `P_0`; the second fixes
+the primitive nontrivial angle `(-1/2, sqrt(3)/2)` and top-by-largest is
+`P_omega2`.  Both lie on the unit connected circle.  Thus the local-flow
+template does not select the physical nontrivial row, and even granting that
+row leaves the radial factor `lambda_top=1/sqrt(2)` as a separate open law.
+
 The strict sparse top/W pole-response availability audit then checks the
 remaining bypass route on the current branch.  It finds the sparse harness and
 native no-`kappa` candidate, but the strict positive evidence artifacts are
@@ -1915,6 +1936,11 @@ proposal_allowed_reason: |
   phase generator is B_y, not the derived B_x source tangent. A supplied
   character sign still needs a physical readout law plus
   lambda_top=1/sqrt(2) or strict pole rows.
+  The local coefficient-flow selector no-go prunes the broader local
+  dynamics-template shortcut: smooth polynomial flows can select a singlet
+  fixed point or a primitive nontrivial fixed point with the same B_x source
+  tangent. The template does not supply the physical basepoint/readout law,
+  and the radial factor remains open even after nontrivial support is granted.
   The real-irrep dimension top-block no-go prunes the representation-dimension
   shortcut: finite real C3 representation theory exposes P_nt as the faithful
   two-dimensional summand, but selecting that summand as the physical top block

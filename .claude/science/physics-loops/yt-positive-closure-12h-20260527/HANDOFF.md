@@ -1,5 +1,56 @@
 # Handoff
 
+Cycle 36 adds a fiftieth science block, not positive retained-grade closure.
+The block prunes the shortcut:
+
+```text
+local same-surface C3 coefficient-flow template for a(h), x(h), y(h)
+  -> physical nontrivial top row
+  -> lambda_top = 1/sqrt(2)
+  -> dM_t/dell = A/sqrt(12).
+```
+
+The finite witness keeps the same source tangent `dH/dell=B_x`. Smooth
+polynomial local flows can fix the singlet point `(1,0)` or the primitive
+nontrivial point `(-1/2, sqrt(3)/2)`, both on the unit connected circle. The
+first selects `P_0`; the second selects `P_omega2`. Thus local-flow form,
+smoothness, polynomiality, and unit connected normalization do not supply the
+physical basepoint/readout law. Even if the nontrivial point is granted, the
+top row remains `lambda_top A/sqrt(6)`, so `lambda_top=1/sqrt(2)` is still an
+independent radial law. This is a no-go/route-pruning boundary only. No
+`POSITIVE_CLOSURE` marker was written. Retained/proposed-retained wording
+remains disallowed.
+
+Cycle 36 artifacts:
+
+- `docs/YT_C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_local_coefficient_flow_selector_no_go.py`
+- `outputs/yt_c3_local_coefficient_flow_selector_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 36 verification so far:
+
+- `python3 scripts/frontier_yt_c3_local_coefficient_flow_selector_no_go.py`
+  -> `SUMMARY: PASS=82 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=619 FAIL=0`
+- Adjacent runners passed: C3 circulant dynamics boundary `PASS=95`,
+  Markov/Laplacian source-law no-go `PASS=108`, oriented Markov-current
+  no-go `PASS=109`, unitary character-flow no-go `PASS=102`, phase-orbit
+  selector no-go `PASS=79`, orbit-member covariance no-go `PASS=73`,
+  same-surface radial-factor no-go `PASS=94`, and strict sparse availability
+  audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- Commit, push, and PR body update are pending for this block.
+- `POSITIVE_CLOSURE` remains absent.
+
+The next exact action remains to derive accepted same-surface
+coefficient-flow/readout/radial laws without forbidden anchors, or produce
+accepted strict top/W pole rows.
+
 Cycle 35 adds a forty-ninth science block, not positive retained-grade
 closure. The block prunes the shortcut:
 

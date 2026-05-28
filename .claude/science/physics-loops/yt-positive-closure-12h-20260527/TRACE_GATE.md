@@ -10,6 +10,22 @@ artifact_role: no_go
 next_trace_action: "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows"
 ```
 
+Cycle 36 tests whether the broad local C3 coefficient-flow template for
+`a(h), x(h), y(h)` can itself supply the physical nontrivial top row or radial
+generator factor.
+
+It cannot on the current surface. The same derived source tangent
+`dH/dell=B_x` is compatible with smooth polynomial local flows fixed at the
+singlet point `(1,0)` and at the primitive nontrivial point
+`(-1/2, sqrt(3)/2)`. Both have unit connected norm, but the first selects
+`P_0` while the second selects `P_omega2`. Choosing the nontrivial fixed point
+or orbit member is therefore a new physical dynamics/readout law. Even after
+granting that nontrivial support, the coefficient remains
+`lambda_top A/sqrt(6)`, so `lambda_top=1/sqrt(2)` is still an independent
+radial law. This prunes only the local-flow-template shortcut; it does not
+refute a future accepted physical coefficient-flow/readout/radial theorem or
+strict pole rows.
+
 Cycle 35 tests whether adding the same-source W denominator to the C3 top
 response normalization can supply the missing radial generator law.
 

@@ -1,5 +1,40 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 50
+
+Scope:
+
+- C3 local coefficient-flow selector no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, C3 `B_x/B_y` basis algebra, local-flow fixed-point countermodels, radial counterfamily, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open local-flow-template-to-top-row/radial law; smooth local flows with the same source tangent can select singlet or primitive nontrivial fixed points. |
+| Imports / support | DISCLOSED | No observed target, old Ward row, fitted selector, accepted coefficient-flow readout law, accepted radial law, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded so far with this review:
+
+- New runner: `PASS=82 FAIL=0`
+- Full stack runner: `PASS=619 FAIL=0`
+- Adjacent runners passed: C3 circulant dynamics boundary `PASS=95`,
+  Markov/Laplacian source-law no-go `PASS=108`, oriented Markov-current
+  no-go `PASS=109`, unitary character-flow no-go `PASS=102`, phase-orbit
+  selector no-go `PASS=79`, orbit-member covariance no-go `PASS=73`,
+  same-surface radial-factor no-go `PASS=94`, and strict sparse availability
+  audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- `POSITIVE_CLOSURE` remains absent.
+
 ## 2026-05-28 Local Review, Block 49
 
 Scope:

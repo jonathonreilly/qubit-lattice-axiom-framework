@@ -1,0 +1,69 @@
+{
+  "actual_current_surface_status": "no-go / open local-flow-to-top-row law",
+  "anchors": {
+    "circulant_status": "no-go",
+    "first_principles_status": "exact-support / formal-transfer no-go",
+    "radial_status": "no-go / open same-surface radial generator factorization",
+    "strict_status": "no-go"
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_physical_readout_law_present": false,
+    "c3_orbit_invariance_selects_physical_member": false,
+    "local_flow_template_excludes_P0": false,
+    "local_flow_template_fixes_basepoint": false,
+    "no_forbidden_inputs_used": true,
+    "radial_generator_factorization_lambda_top_derived": false,
+    "source_tangent_Bx_selects_basepoint": false,
+    "strict_top_w_response_certificate_present": false,
+    "unit_connected_norm_selects_nontrivial_top": false
+  },
+  "claim_id": "yt_c3_local_coefficient_flow_selector_no_go_note_2026-05-28",
+  "claim_type": "no_go",
+  "fail_count": 0,
+  "local_flow_countermodels": {
+    "primitive_nontrivial_flow": {
+      "eigenvalues": {
+        "P_0": "-sqrt(6)/6",
+        "P_omega": "-sqrt(6)/6",
+        "P_omega2": "sqrt(6)/3"
+      },
+      "fixed_point": {
+        "x": "-1/2",
+        "y": "sqrt(3)/2"
+      },
+      "flow": "(-1/2 - x, sqrt(3)/2 - y)",
+      "top_by_largest": "P_omega2",
+      "top_source_response": "-sqrt(6)/6",
+      "unit_connected_norm": true
+    },
+    "singlet_flow": {
+      "eigenvalues": {
+        "P_0": "sqrt(6)/3",
+        "P_omega": "-sqrt(6)/6",
+        "P_omega2": "-sqrt(6)/6"
+      },
+      "fixed_point": {
+        "x": "1",
+        "y": "0"
+      },
+      "flow": "(1 - x, -y)",
+      "top_by_largest": "P_0",
+      "top_source_response": "sqrt(6)/3",
+      "unit_connected_norm": true
+    }
+  },
+  "next_action": "derive accepted physical coefficient-flow/readout/radial law, or produce strict same-source top/W pole rows",
+  "no_go_summary": "Local smooth coefficient-flow form, polynomiality, and unit connected normalization admit singlet and primitive nontrivial fixed-point witnesses with the same B_x source tangent. Selecting the nontrivial fixed point is a new physical readout/dynamics law, and lambda_top remains free even after nontrivial support is granted.",
+  "pass_count": 82,
+  "proposal_allowed": false,
+  "reachability_to_target": "prunes",
+  "route_pruned": "local C3 coefficient-flow template derives the physical nontrivial top row or radial generator factor",
+  "source_responses": {
+    "P_0": "sqrt(6)/3",
+    "P_omega": "-sqrt(6)/6",
+    "P_omega2": "-sqrt(6)/6"
+  },
+  "trace_class": "negative_route_pruning"
+}

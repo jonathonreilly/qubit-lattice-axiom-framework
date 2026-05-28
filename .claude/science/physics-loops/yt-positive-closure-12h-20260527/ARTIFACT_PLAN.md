@@ -2,6 +2,11 @@
 
 Current block artifacts:
 
+- `docs/YT_C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_local_coefficient_flow_selector_no_go.py`
+- `outputs/yt_c3_local_coefficient_flow_selector_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack for cycle 36
 - `docs/YT_SAME_SURFACE_TOP_MATRIX_ELEMENT_FACTORIZATION_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py`
 - `outputs/yt_same_surface_top_matrix_element_factorization_boundary_2026-05-27.json`

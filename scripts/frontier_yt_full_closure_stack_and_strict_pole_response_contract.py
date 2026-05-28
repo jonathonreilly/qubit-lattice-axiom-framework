@@ -185,6 +185,11 @@ This runner verifies the current burn-down state:
 * The C3 unitary character-flow shortcut is now pruned: C3 logarithm branch
   and clock scale remain free, and the normalized phase generator is the B_y
   direction rather than the derived B_x source tangent.
+* The C3 local coefficient-flow selector shortcut is now pruned: smooth
+  polynomial local flows can select a singlet fixed point or a primitive
+  nontrivial fixed point with the same B_x source tangent, so the local
+  a(h),x(h),y(h) template does not supply the missing physical readout or
+  radial law.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -234,6 +239,7 @@ ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO = DOCS / "YT_ONE_HIGGS_GENER
 C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO = DOCS / "YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md"
 C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NOGO = DOCS / "YT_C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md"
 C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NOGO = DOCS / "YT_C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md"
+C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NOGO = DOCS / "YT_C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NO_GO_NOTE_2026-05-28.md"
 C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO = DOCS / "YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md"
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO = DOCS / "YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md"
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO = DOCS / "YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md"
@@ -340,6 +346,9 @@ C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NOGO_OUT = (
 )
 C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NOGO_OUT = (
     ROOT / "outputs" / "yt_c3_unitary_character_flow_source_law_no_go_2026-05-28.json"
+)
+C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NOGO_OUT = (
+    ROOT / "outputs" / "yt_c3_local_coefficient_flow_selector_no_go_2026-05-28.json"
 )
 C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO_OUT = (
     ROOT / "outputs" / "yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json"
@@ -469,6 +478,7 @@ def part1_anchors() -> dict[str, str]:
         C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO,
         C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NOGO,
         C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NOGO,
+        C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NOGO,
         C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO,
@@ -547,6 +557,7 @@ def part1_anchors() -> dict[str, str]:
         C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO_OUT,
         C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NOGO_OUT,
         C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NOGO_OUT,
+        C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NOGO_OUT,
         C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO_OUT,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT,
@@ -627,6 +638,7 @@ def part1_anchors() -> dict[str, str]:
         "Markov-Laplacian source-law no-go",
         "oriented Markov-current source-law no-go",
         "unitary character-flow source-law no-go",
+        "local coefficient-flow selector no-go",
         "real-irrep dimension top-block no-go",
         "source-orientation sign-selector no-go",
         "trace-free centered-source no-go",
@@ -725,6 +737,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_markov_laplacian_source_law_nogo = load_json(C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO_OUT)
     c3_oriented_markov_current_source_law_nogo = load_json(C3_ORIENTED_MARKOV_CURRENT_SOURCE_LAW_NOGO_OUT)
     c3_unitary_character_flow_source_law_nogo = load_json(C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NOGO_OUT)
+    c3_local_coefficient_flow_selector_nogo = load_json(C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NOGO_OUT)
     c3_real_irrep_dimension_top_block_nogo = load_json(C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO_OUT)
     c3_zero_singlet_top_block_membership_nogo = load_json(C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT)
     c3_source_orientation_sign_selector_nogo = load_json(C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT)
@@ -1289,6 +1302,46 @@ def part2_support_outputs() -> dict[str, Any]:
         c3_unitary_character_flow_source_law_nogo.get("no_go_certificate", {})
         .get("lambda_top_free_on_current_surface")
         is True,
+    )
+    check(
+        "C3 local coefficient-flow selector no-go passed",
+        c3_local_coefficient_flow_selector_nogo.get("fail_count") == 0,
+        c3_local_coefficient_flow_selector_nogo.get("fail_count"),
+    )
+    check(
+        "C3 local coefficient-flow route is pruned",
+        c3_local_coefficient_flow_selector_nogo.get("trace_class") == "negative_route_pruning",
+        c3_local_coefficient_flow_selector_nogo.get("trace_class"),
+    )
+    check(
+        "local coefficient-flow template does not fix basepoint",
+        c3_local_coefficient_flow_selector_nogo.get("certificate_boundary", {})
+        .get("local_flow_template_fixes_basepoint")
+        is False,
+    )
+    check(
+        "local coefficient-flow template does not exclude P0",
+        c3_local_coefficient_flow_selector_nogo.get("certificate_boundary", {})
+        .get("local_flow_template_excludes_P0")
+        is False,
+    )
+    check(
+        "unit connected norm does not select nontrivial top",
+        c3_local_coefficient_flow_selector_nogo.get("certificate_boundary", {})
+        .get("unit_connected_norm_selects_nontrivial_top")
+        is False,
+    )
+    check(
+        "local coefficient-flow keeps radial factor open",
+        c3_local_coefficient_flow_selector_nogo.get("certificate_boundary", {})
+        .get("radial_generator_factorization_lambda_top_derived")
+        is False,
+    )
+    check(
+        "local coefficient-flow keeps strict rows absent",
+        c3_local_coefficient_flow_selector_nogo.get("certificate_boundary", {})
+        .get("strict_top_w_response_certificate_present")
+        is False,
     )
     check(
         "C3 real-irrep dimension top-block no-go passed",
@@ -2170,6 +2223,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_markov_laplacian_source_law_nogo": c3_markov_laplacian_source_law_nogo,
         "c3_oriented_markov_current_source_law_nogo": c3_oriented_markov_current_source_law_nogo,
         "c3_unitary_character_flow_source_law_nogo": c3_unitary_character_flow_source_law_nogo,
+        "c3_local_coefficient_flow_selector_nogo": c3_local_coefficient_flow_selector_nogo,
         "c3_real_irrep_dimension_top_block_nogo": c3_real_irrep_dimension_top_block_nogo,
         "c3_zero_singlet_top_block_membership_nogo": c3_zero_singlet_top_block_membership_nogo,
         "c3_source_orientation_sign_selector_nogo": c3_source_orientation_sign_selector_nogo,
@@ -2415,14 +2469,14 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_radial_factor_no_go_shows_zero_singlet_support_still_needs_lambda_top_equal_1_over_sqrt2_radial_readout_compensation_no_go_shows_target_magnitude_does_not_back_solve_zero_singlet_or_radial_factor_sharp_response_readout_no_go_shows_zero_variance_still_allows_singlet_endpoint_fisher_lsz_radial_generator_no_go_shows_source_scale_normalization_does_not_fix_lambda_top_block_rank_radial_normalization_no_go_shows_rank_pnt_two_does_not_derive_root_rank_radial_law_fisher_quotient_radial_normalization_no_go_shows_c3_rn_fisher_coarse_graining_and_fisher_unit_score_normalization_do_not_derive_the_top_radial_generator_quadratic_action_radial_normalization_no_go_shows_action_norms_and_hilbert_schmidt_traces_fix_operator_size_not_lambda_top_homogeneous_radial_normalization_no_go_shows_top_only_scalar_normalizers_need_a_supplied_constant_and_common_source_reparameterization_cancels_same_source_w_normalized_radial_ratio_no_go_shows_w_row_cancels_common_scale_but_leaves_lambda_top_one_higgs_carrier_radial_factor_no_go_shows_neutral_higgs_factor_does_not_set_eta_or_lambda_top_one_higgs_generation_coefficient_normalization_no_go_shows_matrix_norm_conventions_do_not_set_eta_equal_one_oriented_markov_current_no_go_shows_circulation_phase_does_not_set_non_mass_top_readout_or_lambda_top_unitary_character_flow_no_go_shows_c3_log_branch_clock_and_by_direction_do_not_set_bx_source_row_real_irrep_dimension_no_go_shows_faithful_nontrivial_pnt_selection_is_an_extra_top_block_law_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_radial_factor_no_go_shows_zero_singlet_support_still_needs_lambda_top_equal_1_over_sqrt2_radial_readout_compensation_no_go_shows_target_magnitude_does_not_back_solve_zero_singlet_or_radial_factor_sharp_response_readout_no_go_shows_zero_variance_still_allows_singlet_endpoint_fisher_lsz_radial_generator_no_go_shows_source_scale_normalization_does_not_fix_lambda_top_block_rank_radial_normalization_no_go_shows_rank_pnt_two_does_not_derive_root_rank_radial_law_fisher_quotient_radial_normalization_no_go_shows_c3_rn_fisher_coarse_graining_and_fisher_unit_score_normalization_do_not_derive_the_top_radial_generator_quadratic_action_radial_normalization_no_go_shows_action_norms_and_hilbert_schmidt_traces_fix_operator_size_not_lambda_top_homogeneous_radial_normalization_no_go_shows_top_only_scalar_normalizers_need_a_supplied_constant_and_common_source_reparameterization_cancels_same_source_w_normalized_radial_ratio_no_go_shows_w_row_cancels_common_scale_but_leaves_lambda_top_one_higgs_carrier_radial_factor_no_go_shows_neutral_higgs_factor_does_not_set_eta_or_lambda_top_one_higgs_generation_coefficient_normalization_no_go_shows_matrix_norm_conventions_do_not_set_eta_equal_one_oriented_markov_current_no_go_shows_circulation_phase_does_not_set_non_mass_top_readout_or_lambda_top_unitary_character_flow_no_go_shows_c3_log_branch_clock_and_by_direction_do_not_set_bx_source_row_local_coefficient_flow_no_go_shows_smooth_flows_do_not_choose_physical_readout_or_lambda_top_real_irrep_dimension_no_go_shows_faithful_nontrivial_pnt_selection_is_an_extra_top_block_law_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
             "closed": False,
             "next_action": "derive accepted same-surface generator factorization plus a new sign/order/readout law excluding P_0, or produce a new accepted strict pole-response packet because none is present under existing artifact names",
         },
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_radial_generator_factorization_remains_open_and_real_block_algebra_sign_choice_trace_free_centering_finite_mininfo_readout_and_real_irrep_dimension_faithfulness_do_not_derive_that_membership_hard_boundary_mininfo_nearest_face_selects_pnt_conditionally_but_nearest_face_readout_law_is_open_and_not_derived_from_current_boundary_geometry_alone_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_markov_laplacian_source_law_shortcut_pruned_oriented_markov_current_source_law_shortcut_pruned_unitary_character_flow_source_law_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_radial_generator_factorization_remains_open_and_real_block_algebra_sign_choice_trace_free_centering_finite_mininfo_readout_and_real_irrep_dimension_faithfulness_do_not_derive_that_membership_hard_boundary_mininfo_nearest_face_selects_pnt_conditionally_but_nearest_face_readout_law_is_open_and_not_derived_from_current_boundary_geometry_alone_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_markov_laplacian_source_law_shortcut_pruned_oriented_markov_current_source_law_shortcut_pruned_unitary_character_flow_source_law_shortcut_pruned_local_coefficient_flow_template_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface sign/order/readout law excluding P_0 with backend/projectors/matrix elements",
         },
@@ -2480,6 +2534,11 @@ def main() -> int:
             "generator is the B_y direction, Frobenius-orthogonal to the "
             "derived B_x source tangent; even a supplied character-line sign "
             "still leaves lambda_top=1/sqrt(2) open. "
+            "The local coefficient-flow template shortcut is now pruned too: "
+            "smooth polynomial flows can select either a singlet fixed point "
+            "or a primitive nontrivial fixed point with the same B_x source "
+            "tangent. The template does not supply the physical "
+            "basepoint/readout law, and lambda_top=1/sqrt(2) remains open. "
             "The residual C3 phase-ordering cone is now explicit: a "
             "nontrivial top line requires y_0 > sqrt(3) x_0 or "
             "-y_0 > sqrt(3) x_0, but the current surface does not derive "
@@ -2717,6 +2776,7 @@ def main() -> int:
             "c3_markov_laplacian_source_law_nogo_fail_count": support_outputs["c3_markov_laplacian_source_law_nogo"].get("fail_count"),
             "c3_oriented_markov_current_source_law_nogo_fail_count": support_outputs["c3_oriented_markov_current_source_law_nogo"].get("fail_count"),
             "c3_unitary_character_flow_source_law_nogo_fail_count": support_outputs["c3_unitary_character_flow_source_law_nogo"].get("fail_count"),
+            "c3_local_coefficient_flow_selector_nogo_fail_count": support_outputs["c3_local_coefficient_flow_selector_nogo"].get("fail_count"),
             "c3_real_irrep_dimension_top_block_nogo_fail_count": support_outputs["c3_real_irrep_dimension_top_block_nogo"].get("fail_count"),
             "c3_zero_singlet_top_block_membership_nogo_fail_count": support_outputs["c3_zero_singlet_top_block_membership_nogo"].get("fail_count"),
             "c3_source_orientation_sign_selector_nogo_fail_count": support_outputs["c3_source_orientation_sign_selector_nogo"].get("fail_count"),
@@ -2819,6 +2879,9 @@ def main() -> int:
             "docs/YT_C3_UNITARY_CHARACTER_FLOW_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_c3_unitary_character_flow_source_law_no_go.py",
             "outputs/yt_c3_unitary_character_flow_source_law_no_go_2026-05-28.json",
+            "docs/YT_C3_LOCAL_COEFFICIENT_FLOW_SELECTOR_NO_GO_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_c3_local_coefficient_flow_selector_no_go.py",
+            "outputs/yt_c3_local_coefficient_flow_selector_no_go_2026-05-28.json",
             "docs/YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py",
             "outputs/yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json",

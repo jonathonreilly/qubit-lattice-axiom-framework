@@ -1,7 +1,9 @@
 # Newton's Law Derived from the Physical Cl(3) Local Algebra on Z^3
 
-**Date:** 2026-04 (audit-narrowing refresh 2026-05-10)
-**Claim type:** bounded_theorem
+**Date:** 2026-04 (audit-narrowing refresh 2026-05-10); 2026-05-28
+(register the test-mass force coupling as a third named admission BA-3
+per audit verdict).
+**Type:** bounded_theorem
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane. The
 `bounded_theorem` label is a source-side claim-boundary declaration,
@@ -9,16 +11,50 @@ not an audit verdict. A prior independent audit of the unconditional
 framing found that the load-bearing Poisson equation was supported only
 by a cited authority itself conditional on a stipulated `L^{-1}=G_0`
 closure identity. This scope narrowing implements that audit's repair
-target: narrow the note to a bounded theorem conditional on the Poisson
-equation.
+target: narrow the note to a bounded theorem conditional on the named
+admissions below.
 **Primary runner:** [`scripts/frontier_distance_law_definitive.py`](./../scripts/frontier_distance_law_definitive.py)
+
+## 2026-05-28 Audit Repair (register the test-mass force coupling)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The BA-2 Green normalization dependency is now retained-bounded, but
+> BA-1 remains a stipulated closure/equation-of-motion input via
+> gravity_full_self_consistency_note rather than a retained derivation
+> from the framework axiom. The no-go/admission discipline hidden-wall
+> scan also exposes an unregistered force/test-mass coupling step,
+> F=-M_test grad(phi)."*
+
+Two things are addressed:
+
+1. **BA-1 stays an explicitly admitted premise**, not a retained
+   derivation. The note already records (BA-1) as conditional on the
+   `L^{-1}=G_0` closure supplied by `gravity_full_self_consistency_note`;
+   this revision reaffirms that BA-1 is an admitted input, not a
+   framework-axiom derivation. (Supplying a retained equation-of-motion
+   derivation for BA-1 is substantive new work, out of scope here.)
+2. **The previously-unregistered force/test-mass coupling step
+   `F = −M_test ∇φ` is now registered as a third named admission
+   (BA-3) below.** The auditor's hidden-wall scan correctly flagged that
+   the inverse-square *force* law (as opposed to the `1/r` potential)
+   consumes a test-mass response rule that was not in the BA-1/BA-2
+   admission list.
+
+The load-bearing claim is therefore the **conditional worked example**:
+GIVEN the three named admissions (BA-1) lattice Poisson EoM, (BA-2)
+retained `Z³` Green normalization, and (BA-3) test-mass force coupling,
+THEN the inverse-square force law follows as class-A algebra/calculus.
+None of BA-1 / BA-3 is derived from the framework axiom here. No new
+axiom, import, or retained bridge is introduced by this repair.
 
 ## Bounded admissions
 
-The load-bearing claim is **conditional on the two bounded admissions**
-below. Neither is derived in this note; each is admitted as a named
-input. The chain closes class-A algebraically from (BA-1) plus (BA-2)
-plus elementary calculus on `Z^3`.
+The load-bearing claim is **conditional on the three bounded admissions**
+below. None is derived in this note; each is admitted as a named input.
+The `1/r` potential closes class-A algebraically from (BA-1) plus (BA-2)
+plus elementary calculus on `Z^3`; the inverse-square *force* law
+additionally consumes (BA-3).
 
 (BA-1) **Lattice Poisson equation as equation of motion.** The
 staggered scalar field obeys
@@ -48,14 +84,30 @@ framework-applied `Z^3` graph-Laplacian normalization certificate via
 [LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md);
 the coefficient is not re-derived in this note.
 
-(BA-1) and (BA-2) are the only bounded admissions. Conditional on
-those admissions, the remaining calculation of Newton's inverse-square
-law is class-A algebra/calculus and needs no further import.
+(BA-3) **Test-mass force/source coupling.** A test mass `M_test` in the
+scalar potential `phi` experiences the force
 
-## Theorem / Claim (conditional on BA-1 and BA-2)
+```text
+F = -M_test grad(phi)                                                    (BA-3)
+```
 
-**Theorem.** Given (BA-1) and (BA-2), let `(-Delta_lat)` be the lattice
-Laplacian on `Z^3`. Then:
+This Newtonian test-mass response rule is the step that converts the
+`1/r` potential `phi(r) ~ M / (4 pi r)` (from BA-1 + BA-2) into the
+inverse-square *force* `|F| ~ M_test M / (4 pi r^2)`. It is a named
+admitted input, not derived from the framework axiom in this note.
+(Registered 2026-05-28 per the audit hidden-wall scan, which correctly
+flagged it as the previously-unregistered force/test-mass coupling
+step.)
+
+(BA-1), (BA-2), and (BA-3) are the only bounded admissions. Conditional
+on those three admissions, the remaining calculation of Newton's
+inverse-square law is class-A algebra/calculus and needs no further
+import.
+
+## Theorem / Claim (conditional on BA-1, BA-2, BA-3)
+
+**Theorem.** Given (BA-1), (BA-2), and (BA-3), let `(-Delta_lat)` be the
+lattice Laplacian on `Z^3`. Then:
 
 1. The Green's function G(r) of (-Delta_lat) satisfies
    G(r) -> 1 / (4 pi |r|) as |r| -> infinity, by (BA-2).
@@ -63,7 +115,8 @@ Laplacian on `Z^3`. Then:
 2. A point source of strength M produces potential
    phi(r) = M * G(r) -> M / (4 pi r), by linearity of (BA-1).
 
-3. The force on a test mass M_test is F = -M_test * grad(phi) = M * M_test / (4 pi r^2),
+3. The force on a test mass M_test is F = -M_test * grad(phi) = M * M_test / (4 pi r^2)
+   by the admitted test-mass coupling (BA-3),
    which is Newton's inverse-square law with G_N = 1/(4 pi) in lattice
    units.
 
@@ -85,9 +138,12 @@ Laplacian on `Z^3`. Then:
    §"Bounded admissions" above).
 3. **(BA-2):** Maradudin asymptotic theorem for the lattice Green's
    function (admitted as textbook math input; not derived here).
+4. **(BA-3):** Test-mass force coupling `F = -M_test grad(phi)`
+   (admitted Newtonian response rule; not derived here; registered
+   2026-05-28 per the audit hidden-wall scan).
 
-No additional physics is imported beyond (BA-1) and (BA-2). Under
-those admissions, the coupling constant G_N, the product law, the
+No additional physics is imported beyond (BA-1), (BA-2), and (BA-3).
+Under those admissions, the coupling constant G_N, the product law, the
 inverse-square exponent, and the distance dependence all follow as
 class-A consequences.
 

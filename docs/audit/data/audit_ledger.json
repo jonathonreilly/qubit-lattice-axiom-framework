@@ -192308,24 +192308,42 @@
       "verdict_rationale": null
     },
     "observable_principle_from_axiom_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T01:27:29.664900+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23"
+        ],
+        "load_bearing_score": 53.508,
+        "runner_hash": "5aff6ed06b57dfe74eadb42bf80357b8f90ff835c468443d6230dcc0ea15bc08",
+        "transitive_descendants": 727
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite log-det algebra closes, and P1 has Tier-A registry backing at the bounded tier. P2 remains an inline admitted scalar-generator selection premise with no retained theorem or reviewed Tier-A registry entry in the restricted packet.",
       "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": null,
+      "claim_scope": "Conditional finite-algebra result on the runner block: given P1 scalar additivity and P2 continuous phase-blind scalar-generator selection, the additive generator family is c log|det(D+J)| plus a constant, and the c=1 zero-baseline representative has the stated local source-derivative, Matsubara-kernel, and Lt=4 Klein-four orbit identities. The derivation of P1/P2 or physical v readout is outside this audit.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (finite-algebra `log|det(D+J)|` generator on",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T01:27:29.664900+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -192333,21 +192351,21 @@
         "admitted_input_registry_tier_a_note_2026-05-23"
       ],
       "direct_in_degree": 88,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 53.508,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Under P1 and P2, the multiplicative-to-additive equation W(r1 r2)=W(r1)+W(r2) for r=|det(D+J)| forces W=c log r+const; choosing c=1 and subtracting log|det D| gives the checked source-curvature and APBC orbit identities.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "7dabc0f172f9f77c5ecf4439417205e1f05815786ca4b423cb14628df64bfaff",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the P2 continuous phase-blind scalar-generator selection theorem, or route an explicit reviewed Tier-A registry update for P2 before relying on this row as clean bounded authority.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -192653,18 +192671,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "C": 24,
+        "D": 2,
+        "total_fail": 0,
+        "total_pass": 25
       },
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note",
       "transitive_descendants": 727,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the exact algebra after choosing the P1+P2 scalar-selection surface is valid, but P2 is still an unregistered admitted bridge: the note assumes scalar bosonic generators are continuous functions of |Z| alone. Why this blocks: the runner verifies that the selected log|det| candidate has additivity, source-evenness, finite-block regularity, Matsubara curvature, and Lt=4 orbit behavior; it does not prove the generator-classification premise that excludes other scalar-generator choices. Independent math check: continuity of W(r1 r2)=W(r1)+W(r2) gives W=c log r+const; differentiating log|det(D+J)| gives Re Tr((D+J)^-1 P_x) and the negative connected second derivative; the APBC Ls=2 kernel has spatial contribution 3+sin^2(omega), and the sign/conjugation orbits make Lt=4 the minimal resolved single orbit. Repair target: supply an audit-clean P2 scalar-generator selection theorem, or make a reviewed Tier-A registry decision for P2 before treating dependents as bounded clean. Claim boundary until fixed: the row is a correct conditional finite-algebra package given P1+P2, not an unconditional axiom-to-observable derivation."
     },
     "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
-runner_sha256: dc8e1a606bcbf382de3337d3eb550b145bc662095535265eaaaf2ba14c4ee04a
+runner_sha256: 5aff6ed06b57dfe74eadb42bf80357b8f90ff835c468443d6230dcc0ea15bc08
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 Hierarchy observable principle from the lattice axiom
@@ -77,17 +77,14 @@ PART 4: THE SOURCE-CURVATURE KERNEL FORCES THE LT=4 SELECTOR
          resolved single-orbit Lt values = [4]
 
 ==============================================================================
-PART 5: INTERNAL OBSERVABLE PRINCIPLE FIXES THE HIERARCHY CORRECTION
+PART 5: OUT-OF-SCOPE HIERARCHY COMPARATOR (INFORMATIONAL ONLY)
 ==============================================================================
   C_4 = 0.967168210134
   baseline = M_Pl * alpha_LM^16 = 254.643210673817 GeV
   v_pred = 246.282818290129 GeV
   v_meas = 246.220000000000 GeV
   relative error = 0.025513%
-  [PASS] the internally selected hierarchy correction is exactly (7/8)^(1/4)
-         absolute error = 0.00e+00
-  [PASS] the resulting electroweak scale stays within 0.5% of measurement
-         relative error = 0.025513%
+  INFO: comparator only; not counted as a theorem PASS check.
 
 ==============================================================================
 PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-05-25 P1+P2 NARROWING)
@@ -134,12 +131,12 @@ PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE
 
   Summary: the selected P1+P2 candidate passes source-evenness,
   finite-block regularity, and additive-baseline invariance checks.
-  The c=1 scale remains the canonical generator normalization, not a
-  derived theorem. These checks do not derive the P1+P2 scalar-selection
+  The c=1 scale is a representative normalization, not a derived
+  physical scale. These checks do not derive the P1+P2 scalar-selection
   surface or promote any cited upstream row.
 
 ==============================================================================
-SCORECARD: 27 pass, 0 fail out of 27
+SCORECARD: 25 pass, 0 fail out of 25
 ==============================================================================
 
 ----- stderr -----

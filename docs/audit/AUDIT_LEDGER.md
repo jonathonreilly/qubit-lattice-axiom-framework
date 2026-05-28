@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 557 |
+| **retained_bounded** | 558 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1199 |
+| unaudited | 1198 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 857 |
+| `audited_clean` | 858 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1429 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -283,6 +283,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_current_bank_quantitative_mapping_note_2026-04-21` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
+| `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3691,6 +3692,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Using the corrected high-precision continuum thermal evaluator on the admitted same-surface one-scalar DM family gives a unique interior closure crossing at sigma_conv = 0.145077095756643 and Omega_DM = 0.268.  _(class `D`)_
 - **chain closes:** True — The note states a bounded admitted-family convergence claim, and the runner recomputes the interior crossing, matches the quoted Omega_DM comparator, and verifies material drift away from the coarse and 9/62 values.
 - **rationale:** The bounded support claim closes on its own terms: the runner recomputes the converged same-surface selector, verifies the observed Omega_DM comparator on the admitted one-scalar family, and checks that the coarse grid and 9/62 clue are not stable. The source note explicitly keeps current-bank selector closure open, so this clean audit is limited to the convergence/sanity-check surface and does not ratify a theorem-grade DM selector law. Residual risk is downstream misuse of the admitted-family crossing as a first-principles current-bank closure.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-dm-thermal-integral-representation-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cached runner and direct rerun pass five checks: exact denominator, t-prefactor 2/sqrt(pi), <1/v>=5/sqrt(pi), <1/v^2>=25/2, and reduction of the former grid-average object to one continuum integral target. An independent symbolic substitution t=a v^2 gives normalized t-weight 2*sqrt(t)*exp(-t)/sqrt(pi) and sqrt(a)=5/2 at x_f=25.  _(class `A`)_
+- **chain closes:** True — The sole one-hop dependency is retained-bounded and supplies the normalization constants and Sommerfeld argument convention. The row's runner and independent symbolic check verify only the integral representation and moment identities; the open selector/integral-evaluation problem remains outside the audited closure.
+- **rationale:** Clean bounded retention is appropriate after strict scope narrowing. The title says full closure, but the body and runner only close an exact integral representation and low-order moments on the declared same-surface slice. The independent change-of-variables audit confirms the normalized MB measure transforms to (2/sqrt(pi))*sqrt(t)*exp(-t) dt and the Sommerfeld argument becomes alpha_eff*sqrt(a/t). The source explicitly states current-bank selector closure remains open, so no downstream DM closure or Sommerfeld physics is smuggled into the verdict.
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`

@@ -64,28 +64,31 @@ def contains(interval: Tuple[float, float], value: float, tol: float = 1e-6) -> 
 # ---------------------------------------------------------------------------
 
 def su2_single_plaquette_bessel_moments(beta: float, k_max: int = 4) -> List[float]:
-    """SU(2) single-plaquette moments ⟨P^k⟩ where P = (1/2) tr U = cos(θ/2),
-    via Bessel function ratios.
+    """SU(2) single-plaquette moments ⟨P^k⟩ where P = (1/2) tr U = cos θ,
+    on the full SU(2) Haar class-angle measure.
 
-    For SU(2), Haar measure: dU = (1/(2π²)) sin²θ dθ dφ_1 dφ_2 (Euler angles).
-    Single-link integral: Z(β) = ∫dU exp((β/2) tr U) = ∫dU exp(β·cos(θ/2)).
-    Reduces to: Z(β) ∝ I_1(β)/β (modified Bessel).
+    For SU(2), an element has eigenvalues e^{±iθ} with class angle θ ∈ [0, π].
+    The normalized Haar class measure is (2/π) sin²θ dθ. The fundamental
+    character is tr U = 2 cos θ, so the single-plaquette value is
+    P = (1/2) tr U = cos θ ∈ [-1, 1] (NOT cos(θ/2) restricted to P ≥ 0).
+    The single-link Boltzmann weight is exp((β/2) tr U) = exp(β cos θ).
 
-    ⟨(1/2 tr U)^k⟩ = ⟨cos^k(θ/2)⟩ — computable via Chebyshev / Bessel sums.
-    Standard result:
-      ⟨(1/2) tr U⟩ = I_2(β) / I_1(β)
-      ⟨((1/2) tr U)^k⟩ for k>1: more complex; can be computed numerically.
-
-    Use numerical integration on θ ∈ [0, π] with Haar weight sin²(θ/2).
+    Single-link integral:
+      Z(β) = ∫ (2/π) sin²θ · exp(β cos θ) dθ = I_1(β)/β  (modified Bessel),
+    and the first moment is the standard closed form
+      ⟨(1/2) tr U⟩ = I_2(β)/I_1(β).
+    Higher moments ⟨cos^k θ⟩ are obtained by numerical integration against the
+    same full class-angle measure, so the whole moment sequence is consistent
+    with the exact SU(2) Haar single-plaquette integral.
     """
     moments = []
-    Z, _ = quad(lambda theta: math.sin(theta/2)**2 * math.exp(beta * math.cos(theta/2)), 0, math.pi)
+    Z, _ = quad(lambda theta: math.sin(theta) ** 2 * math.exp(beta * math.cos(theta)), 0, math.pi)
     for k in range(k_max + 1):
         if k == 0:
             moments.append(1.0)
             continue
         num, _ = quad(
-            lambda theta: math.sin(theta/2)**2 * math.cos(theta/2)**k * math.exp(beta * math.cos(theta/2)),
+            lambda theta: math.sin(theta) ** 2 * math.cos(theta) ** k * math.exp(beta * math.cos(theta)),
             0, math.pi,
         )
         moments.append(num / Z)

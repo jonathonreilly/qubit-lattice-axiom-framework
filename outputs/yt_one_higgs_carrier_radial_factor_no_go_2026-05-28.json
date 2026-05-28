@@ -1,0 +1,112 @@
+{
+  "actual_current_surface_status": "no-go / open one-Higgs coefficient-to-C3-source law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_coefficient_to_c3_source_law_derived": false,
+    "bare_retained_allowed": false,
+    "eta_free_on_current_surface": true,
+    "generation_matrix_entry_selected": false,
+    "lambda_top_free_on_current_surface": true,
+    "neutral_higgs_radial_factor_granted": true,
+    "no_forbidden_imports": true,
+    "one_higgs_carrier_granted": true,
+    "proposal_allowed": false,
+    "remaining_imports": [
+      "accepted one-Higgs coefficient-to-C3-source law eta=1",
+      "accepted same-surface radial generator factorization lambda_top=1/sqrt(2)",
+      "accepted physical zero-singlet top readout law",
+      "accepted strict same-source top/W pole rows with contact/FV/IR/model-class controls"
+    ],
+    "route_pruned": "one-Higgs neutral carrier normalization plus zero-singlet C3 response certifies lambda_top=1/sqrt(2)",
+    "strict_top_w_response_certificate_present": false,
+    "w_denominator_row_granted": true,
+    "zero_singlet_c3_response_granted": true
+  },
+  "dependency_statuses": {
+    "c3_nontrivial_block": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "exact-support / open nontrivial-block membership law",
+      "trace_class": "upstream_support"
+    },
+    "c3_radial_factor_nogo": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "no-go / open same-surface radial generator factorization",
+      "trace_class": "negative_route_pruning"
+    },
+    "first_principles": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "exact-support / formal-transfer no-go",
+      "trace_class": "negative_route_pruning"
+    },
+    "full_stack": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "exact-support / open strict-response gate",
+      "trace_class": null
+    },
+    "higgs_intertwiner": {
+      "fail_count": 0,
+      "proposal_allowed": null,
+      "status": "bounded support: carrier algebra closes, source authority remains open",
+      "trace_class": null
+    },
+    "neutral_ray": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "exact support: signed-record source is the neutral Higgs carrier ray up to affine source reparameterization",
+      "trace_class": null
+    },
+    "strict_availability": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "no-go",
+      "trace_class": "negative_route_pruning"
+    },
+    "strict_top": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "conditional exact support: symbolic top-response row shape, free coefficient",
+      "trace_class": null
+    },
+    "strict_wz": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "exact support: strict W/Z denominator response rows on neutral carrier ray",
+      "trace_class": null
+    },
+    "top_carrier": {
+      "fail_count": 0,
+      "proposal_allowed": false,
+      "status": "exact-support for one-Higgs up-type top carrier skeleton",
+      "trace_class": "upstream_support"
+    }
+  },
+  "fail_count": 0,
+  "next_action": "derive accepted eta=1/lambda_top=1/sqrt(2) coefficient law plus physical zero-singlet top readout, or produce accepted strict same-source top/W pole rows with controls",
+  "one_higgs_family": {
+    "c3_response_magnitude": "1/sqrt(6)",
+    "counter_eta": "2",
+    "counter_top_row": "2*A/sqrt(12)",
+    "lambda_top_equivalent": "eta/sqrt(2)",
+    "one_higgs_top_row_magnitude": "eta*A/sqrt(12)",
+    "same_source_readout": "eta/sqrt(6)",
+    "target_eta": "1",
+    "target_lambda_top": "1/sqrt(2)",
+    "y33_family": "eta/sqrt(6)"
+  },
+  "pass_count": 117,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The one-Higgs neutral carrier supplies the standard Higgs 1/sqrt(2) radial factor, but the generation-matrix coefficient multiplying the normalized C3 nontrivial-block response remains free. The target requires eta=1, equivalently lambda_top=1/sqrt(2), which is still an open coefficient theorem or direct strict pole-row certificate.",
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_ONE_HIGGS_CARRIER_RADIAL_FACTOR_NO_GO_NOTE_2026-05-28.md",
+    "scripts/frontier_yt_one_higgs_carrier_radial_factor_no_go.py",
+    "outputs/yt_one_higgs_carrier_radial_factor_no_go_2026-05-28.json"
+  ],
+  "route_pruned": "one-Higgs neutral carrier normalization plus zero-singlet C3 response certifies lambda_top=1/sqrt(2)",
+  "trace_class": "negative_route_pruning"
+}

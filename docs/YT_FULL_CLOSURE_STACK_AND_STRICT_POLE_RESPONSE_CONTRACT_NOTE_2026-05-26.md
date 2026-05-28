@@ -78,6 +78,10 @@ closed exactly:
   isometric, Fisher-unit score normalization is only a source-coordinate
   normalization, and B_x has no internal Fisher direction inside P_nt; none of
   these derive lambda_top=1/sqrt(2)
+  one-Higgs carrier radial factor no-go: the neutral Higgs 1/sqrt(2)
+  kinematic factor maps a supplied generation-matrix coefficient into a top
+  mass response, but it does not identify that coefficient with the normalized
+  C3 nontrivial-block response with unit multiplier eta=1
   real-irrep dimension top-block no-go: finite real C3 representation theory
   exposes P_0 as the trivial real irrep and P_nt as the faithful
   two-dimensional real irrep, but selecting the faithful/nontrivial summand as
@@ -224,6 +228,8 @@ still open:
   accepted Fisher-quotient/source-geometry-to-radial-generator law if the C3
   route tries to derive lambda_top=1/sqrt(2) from RN/Fisher coarse-graining or
   Fisher-unit score normalization
+  accepted one-Higgs coefficient-to-C3-source law if the C3 route tries to
+  derive lambda_top=1/sqrt(2) from the neutral Higgs radial 1/sqrt(2) factor
   accepted real-irrep physical top-block law if the C3 route tries to select
   P_nt from faithful/nontrivial real C3 representation facts
   accepted independent physical readout/sign/radial laws, since target-size
@@ -1713,6 +1719,12 @@ proposal_allowed_reason: |
   binary P_0/P_nt quotient have the same metric, Fisher-unit C3 score
   normalization is a coordinate unit rather than a top mass-generator law, and
   the internal P_nt Fisher direction for B_x is degenerate.
+  The one-Higgs carrier radial factor no-go prunes the carrier-normalization
+  shortcut: the neutral Higgs `1/sqrt(2)` factor maps an already supplied
+  generation-matrix coefficient into a top mass response, but the multiplier
+  `eta` between that coefficient and the normalized C3 nontrivial-block
+  response remains free. The target requires `eta=1`, equivalently
+  `lambda_top=1/sqrt(2)`.
   The real-irrep dimension top-block no-go prunes the representation-dimension
   shortcut: finite real C3 representation theory exposes P_nt as the faithful
   two-dimensional summand, but selecting that summand as the physical top block

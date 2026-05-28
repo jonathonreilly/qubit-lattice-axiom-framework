@@ -57,8 +57,7 @@ Cycle 33 science commit:
 c6b528658b72514a5690d83f8beb7859b07c96bd
 ```
 
-Cycle 33 branch push is complete. PR #1980 body update is being applied from
-this handoff state.
+Cycle 33 branch push and PR #1980 body update are complete.
 
 Cycle 32 adds a forty-sixth science block, not positive retained-grade
 closure. The block prunes the shortcut:

@@ -33,7 +33,7 @@ Three primitives implemented:
 
 | # | Primitive | Description |
 |---|---|---|
-| BS1 | SU(2) single-plaquette moments via Bessel + numerical Haar | `⟨((1/2) tr U)^k⟩_single` for k ∈ {0,1,2,3,4} from numerical integration of `∫dθ sin²(θ/2) cos^k(θ/2) exp(β cos(θ/2)) dθ` over θ ∈ [0, π] |
+| BS1 | SU(2) single-plaquette moments via Bessel + numerical Haar | `⟨((1/2) tr U)^k⟩_single` for k ∈ {0,1,2,3,4} from numerical integration of `∫ sin²θ cos^k θ exp(β cos θ) dθ` over the FULL class-angle domain θ ∈ [0, π] (where `tr U = 2 cos θ`, so `P = cos θ ∈ [-1, 1]`), with reduced Haar weight `(2/π) sin²θ`. The first moment matches the Bessel closed form `⟨P⟩ = I₂(β)/I₁(β)`, and the pure-Haar (β=0) fundamental-character moments reproduce the Catalan numbers `⟨(tr U)^{2n}⟩ = Catalan(n)`. |
 | BS2 | SU(3) single-plaquette moments via Cartan-torus Haar integration | `⟨((1/3) Re tr U)^k⟩_single` from 2D grid integration over Weyl chamber with Vandermonde measure |
 | BS3 | CVXPY moment-problem bootstrap | Hankel-PSD + Hausdorff-shifted-PSD on `[a, b]`-supported moment sequences; max/min `m_1 = ⟨P⟩` subject to PSD constraints; supports fixing higher moments to known reference values |
 
@@ -43,16 +43,25 @@ At `β = 6`:
 
 ### SU(2) single-plaquette (Bessel/Haar reference)
 
+Full class-angle domain θ ∈ [0, π], `P = cos θ ∈ [-1, 1]`, reduced Haar
+weight `(2/π) sin²θ`:
+
 ```text
 ⟨P^0⟩_SU(2)_single = 1.00000000  (normalization)
-⟨P^1⟩_SU(2)_single = 0.76736480  (Bessel-style: I_2(β)/I_1(β) variant)
-⟨P^2⟩_SU(2)_single = 0.62153293
-⟨P^3⟩_SU(2)_single = 0.51967618
-⟨P^4⟩_SU(2)_single = 0.44425771
+⟨P^1⟩_SU(2)_single = 0.76272608  (Bessel closed form: I_2(β)/I_1(β))
+⟨P^2⟩_SU(2)_single = 0.61863696
+⟨P^3⟩_SU(2)_single = 0.51696810
+⟨P^4⟩_SU(2)_single = 0.44207224
 ```
 
+The first moment matches `I_2(6)/I_1(6) = 0.76272608` exactly, and the
+β=0 pure-Haar fundamental-character moments reproduce the Catalan
+numbers (`⟨χ^2⟩ = 1`, `⟨χ^4⟩ = 2`), both gated by explicit PASS/FAIL
+runner checks (non-zero exit on any FAIL).
+
 CVXPY bracket with `m_2, m_3, m_4` fixed to reference, `m_1` free:
-`m_1 ∈ [0.684871, 0.769227]` — width 0.084, contains reference 0.767.
+`m_1 ∈ [0.679959, 0.766941]` — width 0.087, contains reference 0.762726
+(non-endpoint: gaps 0.083 / 0.004 to the bracket ends).
 
 ### SU(3) single-plaquette (Haar reference, 80×80 grid)
 
@@ -79,7 +88,7 @@ or higher-moment constraints are required for non-trivial brackets.**
 ## 3. Connection to lattice ⟨P⟩(β=6)
 
 The single-plaquette reference values are:
-- SU(2)_single ≈ 0.767 (vs lattice MC ≈ 0.770 at the SU(2) Wilson convention)
+- SU(2)_single = 0.762726 = I₂(6)/I₁(6) (vs lattice MC ≈ 0.770 at the SU(2) Wilson convention)
 - SU(3)_single ≈ 0.422 (vs lattice MC = **0.5934** at the framework's β=6)
 
 The SU(3) single-plaquette gap to lattice MC (~30% relative) reflects the
@@ -98,8 +107,12 @@ above the single-plaquette mean-field value.
 
 - **CVXPY-based SDP infrastructure** for moment-problem bootstrap is
   validated and working on this framework.
-- SU(2) and SU(3) single-plaquette references computed analytically/numerically.
-- CVXPY brackets contain known reference values when higher moments are fixed.
+- SU(2) and SU(3) single-plaquette references computed analytically/numerically
+  over the FULL class-angle domain. The SU(2) reference is certified against
+  the Bessel closed form `I₂(β)/I₁(β)` and the β=0 Catalan character moments
+  by explicit PASS/FAIL runner checks.
+- CVXPY brackets contain known reference values (non-endpoint) when higher
+  moments are fixed.
 - Pure PSD brackets without loop equations are demonstrated to be trivial
   (just support endpoints).
 

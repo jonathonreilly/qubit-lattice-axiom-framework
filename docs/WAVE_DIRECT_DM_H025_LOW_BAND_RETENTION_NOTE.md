@@ -1,7 +1,50 @@
 # Wave Direct-dM H=0.25 Low-Band Retention Note
 
-**Date:** 2026-04-08
-**Status:** proposed_retained one-strength validation on the Fam1/seed1 branch replay, later hardened by control ladder
+**Date:** 2026-04-08 (2026-05-28: load-bearing runner repointed to the
+retained seed-1 control batch; coarse H=0.5/0.35 rows scoped as
+non-load-bearing continuity context per audit verdict).
+**Type:** bounded_theorem
+**Status:** retained seed-1 `H = 0.25` continuation, load-borne by the
+hardened control-ladder artifact (exact `S = 0` null + weak-field ladder).
+**Status authority:** independent audit lane only.
+**Primary runner:** [`scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py)
+
+## 2026-05-28 Audit Repair (repoint to retained seed-1 control artifact)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The one-hop retained-bounded control and synthesis notes support the
+> Fam1 seed-1 H=0.25 value, but this row's primary SHA-pinned runner
+> cache is the default seed-0 point, not the source note's seed-1 point.
+> The coarse H=0.5/H=0.35 continuity comparison is also not provided as a
+> retained one-hop authority in this packet."*
+
+The flagged mismatch was a **runner-artifact provenance** issue, not a
+science gap: the note's claim is the **seed-1** `H = 0.25` point
+(`R_hist = -29.47%`), but the row's primary runner was the single-point
+`wave_direct_dm_h025_point_runner.py`, whose SHA-pinned cache is the
+**default seed-0** invocation (`R_hist = -20.12%`). Repaired positively
+(no narrowing of the retained claim, no new import):
+
+- **Load-bearing runner repointed** to the retained
+  [`WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md)
+  batch `scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py`. Its
+  SHA-pinned cache **is the seed-1 `H = 0.25` point** and reproduces this
+  note's exact `S = 0.004` row
+  (`dM_early = +0.004411`, `dM_late = +0.006255`,
+  `delta_hist = -0.001843`, `R_hist = -29.47%`), hardened with the exact
+  `S = 0` null and the `S = 0.002/0.004/0.008` weak-field ladder. That
+  control note is already a `retained_bounded` one-hop dependency of this
+  row.
+- **Coarse `H = 0.5 / 0.35` rows scoped as non-load-bearing continuity
+  context.** The reference-comparison table below is retained as
+  refinement-continuity context for the seed-1 late-gain scale; it is not
+  the load-bearing certificate and does not need its own retained one-hop
+  authority. The load-bearing claim is exactly the seed-1 `H = 0.25`
+  controlled point.
+- The seed-0 single-point runner is demoted to a historical
+  cross-seed comparison artifact (it supplies the `R_hist = -20.12%`
+  seed-0 figure cited under "What this changes").
 
 This note records the complementary direct `H = 0.25` replay for the
 direct-`dM` amplitude-band story:
@@ -11,9 +54,12 @@ direct-`dM` amplitude-band story:
 > keeps the same branch identity when the matched-history lane is
 > refined from `H = 0.5` / `0.35` down to `H = 0.25`.
 
-## Reference comparison
+## Reference comparison (continuity context, non-load-bearing)
 
-All three rows use the same family, seed, and source strength.
+All three rows use the same family, seed, and source strength. The
+`H = 0.5 / 0.35` rows are retained here as refinement-continuity context
+for the seed-1 late-gain scale; the load-bearing certificate is the seed-1
+`H = 0.25` controlled point (see the 2026-05-28 repair header).
 
 | H | dM(early) | dM(late) | delta_hist | R_hist | late gain |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -81,8 +127,14 @@ Fam1/seed1 branch under the old naming, not the final control surface.
 
 ## Artifact chain
 
-- [`scripts/wave_direct_dm_h025_point_runner.py`](../scripts/wave_direct_dm_h025_point_runner.py)
+Load-bearing (seed-1 control ladder):
+
+- [`scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py) — primary runner; SHA-pinned cache is the seed-1 `H = 0.25` point.
+- [`docs/WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md) — `retained_bounded` one-hop control authority.
+
+Historical / context:
+
+- [`scripts/wave_direct_dm_h025_point_runner.py`](../scripts/wave_direct_dm_h025_point_runner.py) — original single-point replay; its default cache is the **seed-0** comparison point (`R_hist = -20.12%`), retained as the historical cross-seed figure cited under "What this changes", not the load-bearing seed-1 artifact.
 - [`logs/2026-04-08-wave-direct-dm-h025-low-band.txt`](../logs/2026-04-08-wave-direct-dm-h025-low-band.txt)
-- [`docs/WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md)
 - `docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md`
 - [`docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md`](./WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md)

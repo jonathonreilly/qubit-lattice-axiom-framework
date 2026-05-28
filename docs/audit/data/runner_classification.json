@@ -24082,7 +24082,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/wave_direct_dm_h025_point_runner.py"
+      "runner": "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py"
     },
     "wave_direct_dm_h025_seed0_crossfamily_note": {
       "assert_count": 1,
@@ -56437,7 +56437,8 @@
     "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py": {
       "assert_count": 0,
       "claims": [
-        "wave_direct_dm_h025_fam1_seed1_control_note"
+        "wave_direct_dm_h025_fam1_seed1_control_note",
+        "wave_direct_dm_h025_low_band_retention_note"
       ],
       "counts": {
         "A": 0,
@@ -56498,8 +56499,7 @@
       "assert_count": 0,
       "claims": [
         "wave_direct_dm_h025_fam2_seed1_followup_note",
-        "wave_direct_dm_h025_high_band_boundary_note",
-        "wave_direct_dm_h025_low_band_retention_note"
+        "wave_direct_dm_h025_high_band_boundary_note"
       ],
       "counts": {
         "A": 0,

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1145 |
+| unaudited | 1146 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 63 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 891 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1375 |
+| `unaudited` | 1376 |
 
 | claim_type | count |
 |---|---:|
@@ -1083,7 +1083,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
-| `wave_direct_dm_h025_low_band_retention_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_retarded_gravity_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -14991,19 +14990,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is now controlled rather than one-strength.  _(class `A`)_
 - **chain closes:** True — The two direct retained-grade control notes provide the exact nulls, common negative sign patterns, weak-field linearity spreads, and seed0/seed1 H=0.25 values needed for the pair synthesis. The conclusion is only the bounded conjunction/comparison of those inputs, with broader portability and family-widening claims explicitly excluded.
 - **rationale:** The row is retagged from positive_theorem to bounded_theorem because its support is finite to the configured Fam2 H=0.25 two-seed ladder and one upstream control input is itself bounded. The synthesis closes as an algebraic/logical aggregation over two retained-grade control-note inputs; no runner is present or needed for this aggregation row. It is not decoration because it aggregates two independent seed-control inputs into a bounded family-pair control/asymmetry surface, rather than restating a single parent by pure algebra. Clean status does not ratify Fam3, seed widening, lab-facing magnitude, Fam1 comparison, or a general H=0.25 portability law.
-
-### `wave_direct_dm_h025_low_band_retention_note`
-
-- **Note:** [`WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded audit of the Fam1 seed-1 H=0.25 one-strength direct-dM replay and its claimed continuity with the H=0.5/H=0.35 seed-1 branch. The audit does not cover a positive theorem, portability law, or refinement-stable amplitude package.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-wave-direct-dm-h025-low-band`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The direct H = 0.25 historical low-band replay is a retained continuation of the seed-1 branch at the level of sign plus late-gain difference.  _(class `C`)_
-- **chain closes:** False — The one-hop retained-bounded control and synthesis notes support the Fam1 seed-1 H=0.25 value, but this row's primary SHA-pinned runner cache is the default seed-0 point, not the source note's seed-1 point. The coarse H=0.5/H=0.35 continuity comparison is also not provided as a retained one-hop authority in this packet.
-- **rationale:** Issue: the source note's load-bearing row is Fam1 seed 1 at H=0.25 with dM(early)=+0.004411, dM(late)=+0.006255, delta_hist=-0.001843, and R_hist=-29.47%, but the current cached output for its primary runner path reports the default seed 0 row with dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, and R_hist=-20.12%. Why this blocks: the audit packet does not SHA-pin the row's own seed-1 replay artifact, and the note also uses H=0.5/H=0.35 branch-continuity numbers that are not retained one-hop authorities here. Repair target: either retarget this row to the retained seed-1 control/synthesis notes or provide an auditable seed-1-specific command/cache and retained provenance for the coarse seed-1 reference values. Claim boundary until fixed: the retained-bounded seed-1 control ladder and Fam1 fine-pair synthesis remain available through their own audited rows, but this older one-strength branch-retention note should not promote independently.
-- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_seed1_crossfamily_note`
 

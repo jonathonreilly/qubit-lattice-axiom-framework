@@ -1,13 +1,23 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1109,
+    "bounded_theorem": 1108,
     "decoration": 53,
     "meta": 237,
     "no_go": 260,
     "open_gate": 112,
-    "positive_theorem": 694
+    "positive_theorem": 695
   },
   "cycle_examples": [
+    [
+      "higgs_mass_from_axiom_note",
+      "higgs_mass_derived_note",
+      "ew_coupling_derivation_note",
+      "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+    ],
+    [
+      "higgs_mass_from_axiom_note",
+      "higgs_kappa_curv_from_vtaste_symmetric_point_narrow_theorem_note_2026-05-10"
+    ],
     [
       "wave_direct_dm_h025_fam2_seed1_followup_note",
       "wave_direct_dm_portability_batch_note"
@@ -20,15 +30,11 @@
       "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
       "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
       "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
-    ],
-    [
-      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
     ]
   ],
-  "cycles_detected": 4,
+  "cycles_detected": 6,
   "effective_status_counts": {
-    "audited_conditional": 80,
+    "audited_conditional": 72,
     "audited_failed": 6,
     "audited_numerical_match": 14,
     "audited_renaming": 21,
@@ -65,7 +71,7 @@
     "retained_bounded": 587,
     "retained_no_go": 174,
     "retained_pending_chain": 8,
-    "unaudited": 1122
+    "unaudited": 1130
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

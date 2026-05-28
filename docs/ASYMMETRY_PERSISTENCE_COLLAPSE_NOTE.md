@@ -139,3 +139,9 @@ quantitative row, and does not assert any narrow `N = 100`
 layernorm-assisted collapse pocket. Its bounded surface is the partial
 qualitative observations from the completed `N = 80` command above and the
 helper imports that row depends on.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [asymmetry_persistence_pilot_note](ASYMMETRY_PERSISTENCE_PILOT_NOTE.md)

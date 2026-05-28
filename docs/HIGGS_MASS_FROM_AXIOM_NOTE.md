@@ -518,3 +518,7 @@ not promote this note or change the audited claim scope.
   input-authority cluster; that note already cites this one in its
   Note↔runner reconciliation section)
 - [higgs_from_lattice_note](HIGGS_FROM_LATTICE_NOTE.md)
+- [plaquette_self_consistency_note](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+- [higgs_mass_derived_note](HIGGS_MASS_DERIVED_NOTE.md)
+- [higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08](HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md)
+- [higgs_kappa_curv_from_vtaste_symmetric_point_narrow_theorem_note_2026-05-10](HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md)

@@ -221,3 +221,12 @@ Expected result:
 ```text
 SUMMARY: PASS=... FAIL=0
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21](OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md)
+- [yt_lsp_signed_record_source_readout_support_note_2026-05-24](YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- [yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25](YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md)
+- [yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25](YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md)

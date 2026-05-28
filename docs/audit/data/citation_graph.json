@@ -1097,6 +1097,10 @@
       "to": "asymmetry_persistence_joint_card_note"
     },
     {
+      "from": "asymmetry_persistence_collapse_note",
+      "to": "asymmetry_persistence_pilot_note"
+    },
+    {
       "from": "asymmetry_persistence_mass_window_note",
       "to": "asymmetry_persistence_joint_card_note"
     },
@@ -12249,6 +12253,22 @@
       "to": "yt_ew_color_projection_theorem"
     },
     {
+      "from": "higgs_mass_from_axiom_note",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "higgs_mass_from_axiom_note",
+      "to": "higgs_mass_derived_note"
+    },
+    {
+      "from": "higgs_mass_from_axiom_note",
+      "to": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+    },
+    {
+      "from": "higgs_mass_from_axiom_note",
+      "to": "higgs_kappa_curv_from_vtaste_symmetric_point_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
       "to": "higgs_mass_from_axiom_note"
     },
@@ -16691,6 +16711,18 @@
     {
       "from": "kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary_bounded_theorem_note_2026-05-28",
       "to": "sm_relativistic_dof_count_import_note_2026-05-17"
+    },
+    {
+      "from": "kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary_bounded_theorem_note_2026-05-28",
+      "to": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
+    },
+    {
+      "from": "kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary_bounded_theorem_note_2026-05-28",
+      "to": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01"
+    },
+    {
+      "from": "kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary_bounded_theorem_note_2026-05-28",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
       "from": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
@@ -24693,6 +24725,14 @@
       "to": "three_generation_structure_note"
     },
     {
+      "from": "su2_witten_z2_anomaly_theorem_note_2026-04-24",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "su2_witten_z2_anomaly_theorem_note_2026-04-24",
+      "to": "one_generation_matter_closure_note"
+    },
+    {
       "from": "su3_adjoint_casimir_theorem_note_2026-05-02",
       "to": "cl3_color_automorphism_theorem"
     },
@@ -26433,6 +26473,10 @@
       "to": "plaquette_self_consistency_note"
     },
     {
+      "from": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "vacuum_critical_stability_note",
       "to": "composite_higgs_mechanism_note_2026-05-03"
     },
@@ -27957,6 +28001,22 @@
       "to": "yt_exact_schur_normal_form_uniqueness_note"
     },
     {
+      "from": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+      "to": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21"
+    },
+    {
+      "from": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+      "to": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25"
+    },
+    {
+      "from": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+      "to": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+    },
+    {
       "from": "yt_p1_bz_quadrature_2_loop_full_staggered_pt_note_2026-04-18",
       "to": "yt_p1_bz_quadrature_full_staggered_pt_note_2026-04-18"
     },
@@ -28477,6 +28537,22 @@
       "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
     },
     {
+      "from": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
+      "to": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21"
+    },
+    {
+      "from": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
+      "to": "yt_source_action_support_packet_note_2026-05-22"
+    },
+    {
+      "from": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "yt_qfp_insensitivity_support_note",
       "to": "yt_ward_identity_derivation_theorem"
     },
@@ -28607,6 +28683,34 @@
     {
       "from": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
       "to": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+    },
+    {
+      "from": "yt_top_coefficient_full_court_press_note_2026-05-25",
+      "to": "yt_strict_symbolic_top_response_row_packet_note_2026-05-25"
+    },
+    {
+      "from": "yt_top_coefficient_full_court_press_note_2026-05-25",
+      "to": "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25"
+    },
+    {
+      "from": "yt_top_coefficient_full_court_press_note_2026-05-25",
+      "to": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
+    },
+    {
+      "from": "yt_top_coefficient_full_court_press_note_2026-05-25",
+      "to": "yt_source_action_support_packet_note_2026-05-22"
+    },
+    {
+      "from": "yt_top_coefficient_full_court_press_note_2026-05-25",
+      "to": "yt_color_projection_correction_note"
+    },
+    {
+      "from": "yt_top_coefficient_full_court_press_note_2026-05-25",
+      "to": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25"
+    },
+    {
+      "from": "yt_top_coefficient_full_court_press_note_2026-05-25",
+      "to": "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25"
     },
     {
       "from": "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25",
@@ -41913,13 +42017,15 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "asymmetry_persistence_pilot_note"
+      ],
       "helper_runner_paths": [
         "scripts/asymmetry_persistence_pilot.py",
         "scripts/gap_topological_asymmetry.py",
         "scripts/gap_topological_asymmetry_layernorm_combo.py"
       ],
-      "note_hash": "50ef2ed98da1ff4ce438224b1871e2183b0186d2d2cd9071edcacd605fcfaa46",
+      "note_hash": "d3f72f53eddb7ab6ac4cb417028200ee717add8993b147b10e2cafb824086ab3",
       "path": "docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_collapse_pilot.py",
       "title": "Asymmetry Persistence + Collapse Note"
@@ -58372,10 +58478,14 @@
       "deps": [
         "higgs_from_lattice_note",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "yt_ew_color_projection_theorem"
+        "yt_ew_color_projection_theorem",
+        "plaquette_self_consistency_note",
+        "higgs_mass_derived_note",
+        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+        "higgs_kappa_curv_from_vtaste_symmetric_point_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "05174760ff49a822338e4a28874a7994c4603615d4fcb10949c8b87c7ebd6d51",
+      "note_hash": "0c90a8715f36d584fca8b56965331007c7ac00150c1301083861bdcf0df9c6c4",
       "path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
       "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking"
@@ -62733,10 +62843,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "sm_relativistic_dof_count_import_note_2026-05-17"
+        "sm_relativistic_dof_count_import_note_2026-05-17",
+        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
+        "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
+        "admitted_input_registry_tier_a_note_2026-05-23"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1bd6a3b1b14db54b8b3b621bd8b34b949ded7ef939c369a24bcefeeb8cbb7b19",
+      "note_hash": "1dfaa43475375292a9e1fec142b846a84f85cb001e03ffc52b69014304927a59",
       "path": "docs/KOLB_TURNER_FREEZEOUT_PREFACTOR_FROM_SUPPLIED_COSMOLOGY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-05-28.md",
       "runner_path": "scripts/frontier_kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary.py",
       "title": "Kolb-Turner Freeze-Out Prefactor from Supplied Cosmology Boundary \u2014 Bounded Narrow Theorem"
@@ -78612,10 +78725,12 @@
         "native_gauge_closure_note",
         "left_handed_charge_matching_note",
         "graph_first_su3_integration_note",
-        "three_generation_structure_note"
+        "three_generation_structure_note",
+        "anomaly_forces_time_theorem",
+        "one_generation_matter_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "12fd7ef6374d06440447bcab675a44b6736448e402a8e00dee78cf29bf24b429",
+      "note_hash": "12d40c00459a4a77a04f022e06dea97451d2dfc9f8440d4b1a695d4acdb47140",
       "path": "docs/SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md",
       "runner_path": null,
       "title": "SU(2) Witten Z_2 Global Anomaly Cancellation Theorem"
@@ -81507,12 +81622,13 @@
         "yt_ward_identity_derivation_theorem",
         "yt_ew_color_projection_theorem",
         "minimal_axioms_2026-04-11",
-        "plaquette_self_consistency_note"
+        "plaquette_self_consistency_note",
+        "minimal_axioms"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "d8e2d7f0a182335907e13c2e4e234f3988f855585e4c731c43c442bdba4fa9e6",
+      "note_hash": "5303f2e681e47f902e0fb66d41319ff8f39405a4d476ad917539b0fecbe9f688",
       "path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "UV Gauge-to-Yukawa Bridge: Subordinate Support Note"
@@ -84343,9 +84459,14 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
+        "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "637f223325cd3011b2a79847e09d21ba3cb469ed2a7dd4ada8ca3f55e8ecbfc7",
+      "note_hash": "66c4257990e0e6ef9581fe10bb3a138ba98dbad99f7007f6ac96f74d124477b4",
       "path": "docs/YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_operational_source_action_bridge_theorem_attempt.py",
       "title": "Y_T Operational Source/Action Bridge Theorem Attempt"
@@ -84883,9 +85004,14 @@
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
-      "deps": [],
+      "deps": [
+        "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "yt_source_action_support_packet_note_2026-05-22",
+        "minimal_axioms"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "fda623e3d0703d269ce1538dd759e79b0f35c61a600cf621a78ffd9517a16251",
+      "note_hash": "2c6f488a007b109ccd159dfcec439a68742ff2eea2be36ba5b343c1cdabf496f",
       "path": "docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_primitive_unit_source_action_physical_premise_no_go.py",
       "title": "Y_T Primitive-Unit Source/Action Physical-Premise No-Go"
@@ -85172,9 +85298,17 @@
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
-      "deps": [],
+      "deps": [
+        "yt_strict_symbolic_top_response_row_packet_note_2026-05-25",
+        "yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25",
+        "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26",
+        "yt_source_action_support_packet_note_2026-05-22",
+        "yt_color_projection_correction_note",
+        "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+        "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "0c70ff7181295c66d805df15d8d42e6edc2ad8adf12c649e6d1f61c07c4d87e8",
+      "note_hash": "4c91243750d2959fade12f82a4d2e37070865a706b7bc23bf1af374f10e7cc55",
       "path": "docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_top_coefficient_full_court_press.py",
       "title": "Y_T Top-Coefficient Full-Court-Press Note"
@@ -85558,7 +85692,6 @@
     "area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25",
     "area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09",
     "area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25",
-    "asymmetry_persistence_collapse_note",
     "asymmetry_persistence_joint_card_note",
     "asymmetry_persistence_mass_scaling_note",
     "asymmetry_persistence_pilot_note",
@@ -86297,8 +86430,6 @@
     "yt_ew_color_projection_theorem",
     "yt_ew_coupling_bridge_note_2026-05-17",
     "yt_lambda_normalization_attack_fanout_note_2026-05-25",
-    "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
-    "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
     "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
     "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25",
     "yt_retention_landing_readiness_2026-04-18",
@@ -86306,7 +86437,6 @@
     "yt_source_action_route_exhaustion_summary_note_2026-05-22",
     "yt_source_action_support_packet_note_2026-05-22",
     "yt_ssb_matching_gap_analysis_note_2026-04-18",
-    "yt_top_coefficient_full_court_press_note_2026-05-25",
     "z2_hw1_mass_matrix_parametrization_note",
     "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
   ],
@@ -86330,10 +86460,10 @@
       "open_gate": 127,
       "positive_theorem": 587
     },
-    "edge_count": 9840,
-    "leaf_count": 808,
+    "edge_count": 9866,
+    "leaf_count": 805,
     "node_count": 2579,
-    "root_count": 858,
+    "root_count": 854,
     "runners_with_path": 2154
   }
 }

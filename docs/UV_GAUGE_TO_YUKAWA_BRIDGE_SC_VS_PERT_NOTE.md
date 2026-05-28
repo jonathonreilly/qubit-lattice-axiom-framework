@@ -219,3 +219,4 @@ lane carries a quantitative systematic elsewhere.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [plaquette_self_consistency_note](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+- [minimal_axioms](MINIMAL_AXIOMS_2026-05-20.md)

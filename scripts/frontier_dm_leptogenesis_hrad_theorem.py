@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis exact radiation-expansion theorem.
+DM leptogenesis conditional radiation-expansion arithmetic checker.
 
 Framework convention:
   "axiom" means only the single framework axiom Cl(3) on Z^3.
 
 Question:
-  Can the remaining transport-side boundary H_rad(T) be derived from the
-  exact branch, instead of being left as a non-axiom ingredient?
+  Does the conditional radiation-branch arithmetic close once a retained
+  flat radiation Friedmann/pressure-source authority is supplied?
 
 Answer:
-  Yes.
+  The arithmetic checks yes, but the source row is an open gate until the
+  missing GR/pressure-source authority is supplied.
 
   1. The axiom geometry Z^3 is intrinsically flat. On the cubic Regge slice,
      each spatial edge has exact deficit
@@ -20,8 +21,8 @@ Answer:
      so the homogeneous/isotropic spatial-curvature parameter is exactly
      k = 0.
 
-  2. The already-retained Poisson/Newton chain then gives the first
-     Friedmann law on the exact flat branch:
+  2. A retained GR/pressure-source authority must supply the first
+     Friedmann law on the exact flat radiation branch:
 
          H^2 = (8*pi*G/3) rho.
 
@@ -29,16 +30,17 @@ Answer:
 
          rho_rad(T) = (pi^2/30) g_* T^4,
 
-     this closes as
+     the conditional arithmetic gives
 
          H_rad(T) = sqrt(4*pi^3*g_*/45) * T^2 / M_Pl.
 
-  4. Therefore the normalized transport profile is exactly
+  4. Therefore, conditionally on that missing authority, the normalized
+     transport profile is exactly
 
          E_H(z) = z^2 H(M1/z)/H(M1) = 1,
 
-     and the current direct transport branch is the exact theorem-native
-     radiation branch, not a diagnostic placeholder.
+     This runner does not close the missing authority and does not promote
+     the branch to theorem-native status.
 """
 
 from __future__ import annotations
@@ -100,7 +102,7 @@ def part1_z3_fixes_flat_spatial_curvature() -> None:
 
 def part2_hrad_is_exactly_t_squared() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE EXACT RADIATION LAW H_rad(T) = const * T^2")
+    print("PART 2: CONDITIONAL RADIATION LAW H_rad(T) = const * T^2")
     print("=" * 88)
 
     coef_from_friedmann = math.sqrt(4.0 * PI**3 * G_STAR_EXACT / 45.0) / M_PL
@@ -110,12 +112,12 @@ def part2_hrad_is_exactly_t_squared() -> None:
         max_profile_err = max(max_profile_err, abs(h_rad_exact(temp) / (coef_from_friedmann * temp * temp) - 1.0))
 
     check(
-        "The exact flat Friedmann-plus-radiation coefficient is sqrt(4*pi^3*g_*/45)/M_Pl",
+        "The supplied flat Friedmann-plus-radiation coefficient is sqrt(4*pi^3*g_*/45)/M_Pl",
         abs(H_RAD_COEFFICIENT_EXACT - coef_from_friedmann) < 1e-30,
         f"H/T^2={H_RAD_COEFFICIENT_EXACT:.16e}",
     )
     check(
-        "The theorem-native radiation branch therefore satisfies H_rad(T) proportional to T^2 exactly",
+        "The conditional radiation branch satisfies H_rad(T) proportional to T^2",
         max_profile_err < 1e-15,
         f"max profile error={max_profile_err:.3e}",
     )
@@ -123,7 +125,7 @@ def part2_hrad_is_exactly_t_squared() -> None:
 
 def part3_mstar_and_k_are_now_exact() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: m_* AND K ARE NOW EXACT TRANSPORT INPUTS")
+    print("PART 3: CONDITIONAL m_* AND K TRANSPORT INPUTS")
     print("=" * 88)
 
     pkg = exact_package()
@@ -131,12 +133,12 @@ def part3_mstar_and_k_are_now_exact() -> None:
     k_exact_from_hrad = pkg.m_tilde_exact_eV / m_star_from_hrad
 
     check(
-        "The old m_* comparator is now the exact radiation-branch m_*",
+        "The conditional radiation-branch m_* matches the package value",
         abs(pkg.m_star_exact_eV - m_star_from_hrad) < 1e-18,
         f"m_*={pkg.m_star_exact_eV:.18f} eV",
     )
     check(
-        "The old benchmark K value is now the exact radiation-branch K value",
+        "The conditional radiation-branch K value matches the package value",
         abs(pkg.k_decay_exact - k_exact_from_hrad) < 1e-12 and abs(pkg.k_decay_exact - pkg.k_decay_bench) < 1e-12,
         f"K={pkg.k_decay_exact:.12f}",
     )
@@ -144,7 +146,7 @@ def part3_mstar_and_k_are_now_exact() -> None:
 
 def part4_the_transport_profile_is_exactly_the_current_eh_equals_one_branch() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: THE NORMALIZED TRANSPORT PROFILE IS EXACTLY E_H(z) = 1")
+    print("PART 4: CONDITIONAL NORMALIZED TRANSPORT PROFILE E_H(z) = 1")
     print("=" * 88)
 
     pkg = exact_package()
@@ -154,16 +156,16 @@ def part4_the_transport_profile_is_exactly_the_current_eh_equals_one_branch() ->
     max_err = float(np.max(np.abs(e_vals - 1.0)))
 
     check(
-        "The exact radiation law gives E_H(z) = z^2 H(M1/z)/H(M1) = 1 identically",
+        "The conditional radiation law gives E_H(z) = z^2 H(M1/z)/H(M1) = 1",
         max_err < 1e-12,
         f"max E_H error={max_err:.3e}",
     )
-    print("  [INFO] The current direct transport solver therefore sits on the exact theorem-native radiation branch.")
+    print("  [INFO] This is the conditional branch used by the current direct transport solver.")
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS H_rad(T) THEOREM")
+    print("DM LEPTOGENESIS H_rad(T) CONDITIONAL ARITHMETIC CHECKER")
     print("=" * 88)
 
     part1_z3_fixes_flat_spatial_curvature()

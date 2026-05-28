@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 230,
-    "high": 328,
+    "high": 327,
     "leaf": 325,
     "medium": 335
   },
@@ -6552,7 +6552,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_grown_joint_package_note",
+      "claim_id": "gate_b_weak_connectivity_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -6561,17 +6561,18 @@
       "cross_confirmation_status": null,
       "deps": [
         "gate_b_farfield_note",
-        "gate_b_grown_distance_law_note"
+        "gate_b_grown_distance_law_note",
+        "gate_b_grown_joint_package_note"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.419,
-      "note_path": "docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md",
+      "load_bearing_score": 9.687,
+      "note_path": "docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/gate_b_grown_joint_package.py",
-      "transitive_descendants": 120
+      "runner_path": "scripts/gate_b_weak_connectivity_harness.py",
+      "transitive_descendants": 102
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -11406,32 +11407,6 @@
       "ready": false,
       "runner_path": "scripts/source_resolved_propagating_green_pocket.py",
       "transitive_descendants": 103
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_weak_connectivity_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_farfield_note",
-        "gate_b_grown_distance_law_note",
-        "gate_b_grown_joint_package_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.687,
-      "note_path": "docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_weak_connectivity_harness.py",
-      "transitive_descendants": 102
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16839,6 +16814,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "electrostatics_grown_sign_law_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_grown_joint_package_note"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/gate_b_grown_joint_package.py"
+      ],
+      "load_bearing_score": 7.67,
+      "note_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py",
+      "transitive_descendants": 71
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -16992,6 +16993,32 @@
       "ready": true,
       "runner_path": "scripts/frontier_g_bare_critical_feature_scan.py",
       "transitive_descendants": 49
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gate_b_no_restore_farfield_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_farfield_note",
+        "gate_b_grown_distance_law_note",
+        "gate_b_grown_joint_package_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.087,
+      "note_path": "docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_no_restore_farfield.py",
+      "transitive_descendants": 33
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17168,6 +17195,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/asymmetry_persistence_collapse_pilot.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gate_b_h025_distance_law_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_farfield_note",
+        "gate_b_grown_joint_package_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/GATE_B_H025_DISTANCE_LAW_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_h025_distance_law.py",
       "transitive_descendants": 2
     },
     {
@@ -17598,32 +17650,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_dark_energy_eos.py",
       "transitive_descendants": 72
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "electrostatics_grown_sign_law_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_grown_joint_package_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/gate_b_grown_joint_package.py"
-      ],
-      "load_bearing_score": 7.67,
-      "note_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py",
-      "transitive_descendants": 71
     },
     {
       "audit_independence_required": "any_non_self",
@@ -22800,32 +22826,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_no_restore_farfield_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_farfield_note",
-        "gate_b_grown_distance_law_note",
-        "gate_b_grown_joint_package_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.087,
-      "note_path": "docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_no_restore_farfield.py",
-      "transitive_descendants": 33
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "spinnetwork_full_ed_bounded_theorem_note_2026-05-07_w1full",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -26796,31 +26796,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_h025_distance_law_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_farfield_note",
-        "gate_b_grown_joint_package_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/GATE_B_H025_DISTANCE_LAW_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_h025_distance_law.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "impact_parameter_lensing_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -27273,6 +27248,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "lanes.generated-geometry.readme",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_grown_joint_package_note",
+        "source_resolved_generated_architecture_bridge_note",
+        "emergent_geometry_growth_note_2026-04-10"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.085,
+      "note_path": "docs/lanes/generated-geometry/README.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_grown_joint_package.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "alpha_s_derived_narrow_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -27341,6 +27342,56 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gate_b_complex_action_falsifier_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_grown_joint_package_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_complex_action_falsifier.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gate_b_h025_farfield_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_farfield_note",
+        "gate_b_grown_distance_law_note",
+        "gate_b_grown_joint_package_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/GATE_B_H025_FARFIELD_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_h025_farfield.py",
       "transitive_descendants": 1
     },
     {
@@ -28538,32 +28589,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lanes.generated-geometry.readme",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_grown_joint_package_note",
-        "source_resolved_generated_architecture_bridge_note",
-        "emergent_geometry_growth_note_2026-04-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/lanes/generated-geometry/README.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_grown_joint_package.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lanes.mirror.readme",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -29594,56 +29619,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_g_newton_weak_field_response_2026_05_10_gnewtonG3.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_complex_action_falsifier_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_grown_joint_package_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_complex_action_falsifier.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_h025_farfield_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_farfield_note",
-        "gate_b_grown_distance_law_note",
-        "gate_b_grown_joint_package_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GATE_B_H025_FARFIELD_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_h025_farfield.py",
       "transitive_descendants": 1
     },
     {
@@ -36732,6 +36707,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 50,
-  "total_pending": 1218
+  "ready_count": 56,
+  "total_pending": 1217
 }

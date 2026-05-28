@@ -100833,11 +100833,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.443,
+      "load_bearing_score": 17.443,
       "load_bearing_step": "In the SHA-pinned runner cache, the harness reports 36/36 TOWARD and F~M=1.00 for each declared drift/restore row.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "6e9733998c8a79e5a7f3be30d1c0fd3ad48a435448b06e6cfb40f2edd2392a49",
       "note_path": "docs/GATE_B_FARFIELD_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if later prose or downstream use treats this bounded cache certificate as a physical Gate B or gravity-closure theorem.",
@@ -101330,24 +101330,46 @@
       "verdict_rationale": "The source note makes a bounded numerical claim about a specific harness result, and the included runner code is not a constant-printing script or cross-note value import. It performs the geometry growth, propagation, field perturbation, delta aggregation, and log-log tail fit that its stdout reports. The conclusion is therefore clean only for the stated finite tested family, not for broader Gate B closure or all generated-geometry parameter space."
     },
     "gate_b_grown_joint_package_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T03:04:10.297091+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_grown_distance_law_note": "Bounded replay of the exact-grid versus moderate-drift grown-geometry distance-law tail on the runner-defined h=0.5, W=10, L=12, four-seed, z=3..7 family."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_grown_distance_law_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_grown_distance_law_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_grown_distance_law_note"
+        ],
+        "load_bearing_score": 11.419,
+        "runner_hash": "2d2ab7c6531c69165aba46309f5851b87bc069ed187edad4bd404814a097a239",
+        "transitive_descendants": 120
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gate-b-grown-joint-package-20260528-r1",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cached runner completes and the source/cache values agree: the moderate row differs from exact by about 3.3% in Born, 0.024 in d_TV, 0.001 in MI, and 0.0 percentage points in decoherence, while the stress row lowers MI by about 0.122. The bounded/admission discipline is satisfied because the source leaves the primitive-to-physical-gravity bridge and broad generated-geometry transfer outside this row.",
       "claim_id": "gate_b_grown_joint_package_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded numerical certificate for the declared Gate-B grown-geometry joint comparison: on h=0.5, four seeds, exact grid versus drift=0.2/restore=0.7 plus drift=0.3/restore=0.5 stress row, the runner-computed Born, d_TV, MI, and decoherence values match the source/cache and support only the stated finite comparison, not Gate-B package transfer or physical-gravity closure.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T03:04:10.297091+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -101356,19 +101378,19 @@
         "gate_b_grown_distance_law_note"
       ],
       "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 11.419,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner constructs the declared exact-grid and grown-geometry rows at h=0.5 over four seeds and computes Born, d_TV, MI, and decoherence, with the moderate drift=0.2/restore=0.7 row staying close to the exact grid while the drift=0.3 stress row degrades first in MI.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "5956aea8c9def237246326be84cae7f81c4b43bef048a7ddf3e021f2207997fe",
       "note_path": "docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source broadens beyond the declared four-seed rows, if runner constants or cache hash change, or if downstream work tries to cite this as physical Gate-B closure rather than a bounded numerical certificate.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -101513,18 +101535,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 3
       },
       "runner_path": "scripts/gate_b_grown_joint_package.py",
       "title": "Gate B Grown-Geometry Joint Package Note",
       "transitive_descendants": 120,
-      "verdict_rationale": null
+      "verdict_rationale": "The narrowed claim closes as a bounded finite-run certificate. The runner is not print-only: it constructs geometries, propagates amplitudes, computes the four observables, and then self-checks against the source/cache values; the hard-coded replay constants are used as a drift guard, not as the only computation. The verdict does not ratify arbitrary generated-geometry transfer, primitive-to-gravity readout, or full Gate-B closure."
     },
     "gate_b_grown_propagating_field_note": {
       "audit_date": "2026-04-27",

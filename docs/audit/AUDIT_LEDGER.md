@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 544 |
+| **retained_bounded** | 545 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1218 |
+| unaudited | 1217 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 843 |
+| `audited_clean` | 844 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1448 |
+| `unaudited` | 1447 |
 
 | claim_type | count |
 |---|---:|
@@ -364,6 +364,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_grown_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_grown_propagating_field_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_propagating_field_radical_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_grown_propagating_field_v2_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -4943,6 +4944,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The provided runner source directly constructs the exact and grown geometries, propagates amplitudes, computes mean detector shifts, fits the positive post-peak tail, and emits the numbers cited in the note. Within the narrow runner-defined family, no cited upstream authority is needed.
 - **rationale:** The source note makes a bounded numerical claim about a specific harness result, and the included runner code is not a constant-printing script or cross-note value import. It performs the geometry growth, propagation, field perturbation, delta aggregation, and log-log tail fit that its stdout reports. The conclusion is therefore clean only for the stated finite tested family, not for broader Gate B closure or all generated-geometry parameter space.
 - **auditor confidence:** high
+
+### `gate_b_grown_joint_package_note`
+
+- **Note:** [`GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical certificate for the declared Gate-B grown-geometry joint comparison: on h=0.5, four seeds, exact grid versus drift=0.2/restore=0.7 plus drift=0.3/restore=0.5 stress row, the runner-computed Born, d_TV, MI, and decoherence values match the source/cache and support only the stated finite comparison, not Gate-B package transfer or physical-gravity closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gate-b-grown-joint-package-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner constructs the declared exact-grid and grown-geometry rows at h=0.5 over four seeds and computes Born, d_TV, MI, and decoherence, with the moderate drift=0.2/restore=0.7 row staying close to the exact grid while the drift=0.3 stress row degrades first in MI.  _(class `C`)_
+- **chain closes:** True — The cached runner completes and the source/cache values agree: the moderate row differs from exact by about 3.3% in Born, 0.024 in d_TV, 0.001 in MI, and 0.0 percentage points in decoherence, while the stress row lowers MI by about 0.122. The bounded/admission discipline is satisfied because the source leaves the primitive-to-physical-gravity bridge and broad generated-geometry transfer outside this row.
+- **rationale:** The narrowed claim closes as a bounded finite-run certificate. The runner is not print-only: it constructs geometries, propagates amplitudes, computes the four observables, and then self-checks against the source/cache values; the hard-coded replay constants are used as a drift guard, not as the only computation. The verdict does not ratify arbitrary generated-geometry transfer, primitive-to-gravity readout, or full Gate-B closure.
+- **auditor confidence:** medium
 
 ### `gate_b_grown_propagating_field_note`
 

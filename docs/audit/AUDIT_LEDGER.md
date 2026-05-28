@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 567 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1180 |
+| unaudited | 1179 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 867 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1410 |
+| `unaudited` | 1409 |
 
 | claim_type | count |
 |---|---:|
@@ -1052,6 +1052,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_retarded_gravity_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -15137,6 +15138,24 @@ Why this blocks: separate retained bounded status would duplicate a direct algeb
 Repair target: box this row under yt_ew_color_projection_theorem, or re-promote only if a future revision adds independent content beyond common-factor cancellation.
 Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero EW coupling rescaling is exact algebra, but it is decoration rather than an independent theorem.
 - **decoration parent:** `yt_ew_color_projection_theorem`
+- **auditor confidence:** high
+
+### `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25`
+
+- **Note:** [`YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md`](../../docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow current-surface no-go: the qubit-on-Z3 baseline plus the current Y_T support surface does not force the primitive-unit physical source/action premise; the positive lambda family keeps the normalized democratic/projective structures while changing y_33(lambda)=lambda/sqrt(6). This is not a global Y_T no-go.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-yt-primitive-unit-source-action-no-go`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A lambda family preserves all current structural tests and changes y_33(lambda)=lambda/sqrt(6).  _(class `A`)_
+- **chain closes:** False — The exact lambda counterfamily algebra closes locally, and the source note's N1-N8 no-go discipline gate is scoped rather than global. The ledger row has deps=[], while the argument uses current source-action gate/support/LSP/axiom authority states as the surface being negated, so the audit graph would not re-open this no-go when those authorities change.
+- **rationale:** Issue: the source proves the narrow lambda-scale obstruction, but the row is not wired to the current support-surface authorities that make the obstruction a current-surface no-go. Why this blocks: with deps=[], a clean verdict would allow retained_no_go propagation and stale retention even if the source-action gate, LSP support, or axiom/support packet state later changes; the runner itself reads those statuses as load-bearing operational inputs. Repair target: add direct dependency edges/citations for the source-action gate, Y_T support packet, LSP source support, and accepted axiom premise or axiom node consumed by the runner. Claim boundary until fixed: the algebraic lambda family remains a valid local obstruction and the N1-N8 checklist supports the narrow no-go, but the row must remain conditional until dependency tracking matches the support surface it relies on.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md`
+  - `YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
+  - `MINIMAL_AXIOMS_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

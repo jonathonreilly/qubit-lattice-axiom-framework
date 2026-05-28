@@ -20,7 +20,7 @@
     "proposal_allowed": false,
     "proposal_allowed_reason": "The current surface has not derived the physical source/action unit. The source-action convention is an open gate and lambda remains free.",
     "upstream_statuses": {
-      "lsp_source": "retained_bounded",
+      "lsp_source": "unaudited",
       "source_action_gate": "unaudited",
       "yt_source_action_support": "retained_bounded"
     }

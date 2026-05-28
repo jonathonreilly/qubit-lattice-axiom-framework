@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1138 |
+| unaudited | 1139 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 70 |
+| ~~audited_conditional~~ | 69 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 891 |
-| `audited_conditional` | 70 |
+| `audited_conditional` | 69 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1368 |
+| `unaudited` | 1369 |
 
 | claim_type | count |
 |---|---:|
@@ -1069,7 +1069,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
-| `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9674,23 +9673,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md`
   - `MATTER_INERTIAL_CLOSURE_NOTE.md`
-- **auditor confidence:** high
-
-### `newton_law_derived_note`
-
-- **Note:** [`NEWTON_LAW_DERIVED_NOTE.md`](../../docs/NEWTON_LAW_DERIVED_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional inverse-square worked example: given a lattice Poisson equation/equation-of-motion input for the intended scalar field surface, the retained-bounded Z^3 lattice Green normalization, and a source-test force/coupling rule F=-M_test grad(phi), the class-A algebra gives phi=M/(4*pi*r) and force magnitude M*M_test/(4*pi*r^2). The audit does not ratify an unconditional Newton-law derivation from the framework, physical gravity closure, derivation of BA-1, or an independently retained test-mass force law.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-newton-law-derived-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The source's algebraic step phi=M*G -> M/(4*pi*r) is correct once BA-1 and BA-2 are granted, and differentiating with the extra force rule F=-M_test grad(phi) gives M*M_test/(4*pi*r^2). The cached runner supports a bounded finite-lattice deflection exponent check with weighted scaled-fit alpha=-1.00104 +/- 0.00416 and force exponent -2.0010 +/- 0.0042, but it does not derive BA-1 or the source-test force/cross-coupling rule.  _(class `A`)_
-- **chain closes:** False — The BA-2 Green normalization dependency is now retained-bounded, but BA-1 remains a stipulated closure/equation-of-motion input via gravity_full_self_consistency_note rather than a retained derivation from the framework axiom. The no-go/admission discipline hidden-wall scan also exposes an unregistered force/test-mass coupling step, F=-M_test grad(phi), plus cross-coupling/product-law language that is not supplied by a one-hop retained authority in this packet.
-- **rationale:** Non-clean is required. The conditional algebra is sound: from G(r)=1/(4*pi*r), Poisson linearity gives phi=M*G, and with a stipulated test-mass force law one obtains M*M_test/(4*pi*r^2). However the source says BA-1 and BA-2 are the only admissions. Under the no-go/admission gate, BA-2 is closed by the retained-bounded lattice Green row, while BA-1 is still only a stipulated closure identity in gravity_full_self_consistency_note. N3 hidden-wall scan also finds the force/cross-coupling rule: the line F=-M_test*grad(phi) is not a consequence of Poisson linearity alone and is not a registered retained dependency here. N5 rhetoric check therefore rejects the source's statement that no additional physics is imported beyond BA-1 and BA-2. The runner is useful numerical support for a deflection exponent in a valley-linear setup, but it is not authority for the missing equation-of-motion or source-test coupling derivations.
-- **open / conditional deps cited:**
-  - `BA-1 lattice Poisson equation/equation-of-motion derivation remains stipulated via gravity_full_self_consistency_note`
-  - `test-mass force law/source-test coupling F=-M_test grad(phi) is not a retained one-hop dependency`
-  - `product-law cross-coupling evidence is mentioned but not registered as a load-bearing runner/dependency in this packet`
 - **auditor confidence:** high
 
 ### `newton_persistent_pattern_control_note_2026-04-11`

@@ -67117,10 +67117,10 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5380c2ddd1d0870ad9b997b2f72fd46d29ca7bf60a70ca4e0640cc2b04cd3cfd",
+      "note_hash": "fae94c8edc985c93899c55a59631cb405bcb642a42ac00e91894d1127887f355",
       "path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_distance_law_definitive.py",
-      "title": "Newton's Law Derived from the Physical Cl(3) Local Algebra on Z^3"
+      "title": "Newton's Law Conditional Worked Example on the Z^3 Spatial Substrate"
     },
     "newton_persistent_pattern_control_note_2026-04-11": {
       "claim_id": "newton_persistent_pattern_control_note_2026-04-11",

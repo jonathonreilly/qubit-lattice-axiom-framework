@@ -5290,22 +5290,50 @@
       "verdict_rationale": "The narrowed finite certificate gate closes on its own terms. The runner does not use the historical alpha_LM/u0 plaquette chain as authority, and direct inspection confirms that the physical scale/running fields remain quarantined rather than load-bearing. This is retained only at the bounded certificate level; it is not evidence for a physical alpha_s(M_Z) theorem or any downstream publication promotion."
     },
     "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T02:59:37.157537+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30": "Bounded finite certificate gate for outputs/alpha_s_direct_wilson_loop_certificate_2026-04-30.json at sha256 b7188292c238a7cb95445ded8d11394852664fb79800075c1ac27a4ee436f54d: certificate predicates on the configured beta=6 Cl3Z3_SU3_Wilson surface pass; physical scale, running, threshold, full-QCD, PDG-window, and downstream alpha_s(M_Z) claims are excluded.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
+          "graph_first_su3_integration_note",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 9.776,
+        "runner_hash": "0bfcc76b4b64a087157b0644db297c2c1def1d2878c918c338d96b94d0affa0f",
+        "transitive_descendants": 154
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-alpha-s-honest-status-open-gate-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The broad runner passes on the current certificate, and independent inspection confirms alpha_s(M_Z)=0.11799627326949744 lies within the quoted PDG one-sigma window while the packet explicitly carries Sommer-scale and four-loop-running bridge metadata. The no-go/open-gate discipline is satisfied because this verdict records a concrete bridge backlog and path to retention rather than a universal no-go against the route.",
       "claim_id": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Open gate / status boundary for the historical broad direct Wilson-loop alpha_s(M_Z) route: the finite certificate and numerical PDG agreement are reproducible, but physical alpha_s(M_Z) retention remains open because Sommer scale, running, threshold, full-QCD, and current axiom-surface bridge inputs are not derived in the restricted packet. Historical prose about the parent row's old unaudited status is not audited as current authority.",
+      "claim_type": "open_gate",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_last_reviewed": "2026-05-28T02:59:37.157537+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -5315,20 +5343,22 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 9.776,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The status packet's load-bearing assessment is that the broad alpha_s(M_Z) route depends on admitted Sommer-scale setting and standard QCD-running/threshold bridges, so the broad physical result is not a zero-input retained theorem despite the runner's numerical PASS output.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "092dd1629d84ae3dd9b20b9232e9c7eb8f3dbc56eb63e3dc7e859d4779a84faa",
       "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "Re-audit after retained bridge theorems close Sommer scale setting, QCD running/threshold matching, pure-gauge-to-full-QCD sea-quark transfer, and current axiom-surface normalization for the broad physical alpha_s(M_Z) route.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T16:14:52.376248+00:00",
@@ -5362,18 +5392,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 16,
+        "B": 1,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "total_fail": 0,
+        "total_pass": 18
       },
       "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop.py",
       "title": "\u03b1_s Direct Wilson-Loop Honest-Status Audit",
       "transitive_descendants": 154,
-      "verdict_rationale": null
+      "verdict_rationale": "The source is clean only as an open-gate/status-boundary note, not as the positive theorem suggested by the seeded claim type. The runner verifies a broad physical alpha_s(M_Z) packet, but the load-bearing physical scale and QCD-running bridges are external/admitted context, and the old minimal-axioms dependency is superseded metadata rather than retained theorem authority. The already-narrowed finite certificate parent may remain retained_bounded; this historical broad alpha_s(M_Z) promotion lane remains open until the named bridges are supplied."
     },
     "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T16:09:58.717432+00:00",

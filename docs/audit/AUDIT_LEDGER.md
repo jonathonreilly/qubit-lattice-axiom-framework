@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1130 |
+| unaudited | 1131 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 71 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 891 |
-| `audited_conditional` | 72 |
+| `audited_conditional` | 71 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1360 |
+| `unaudited` | 1361 |
 
 | claim_type | count |
 |---|---:|
@@ -1073,7 +1073,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | D | - |
@@ -9807,19 +9806,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source computes relaunch profiles, capture, carry, and relative shift error for the listed top-N classes, and the completed stdout shows no row satisfying all three thresholds. The conclusion is limited to this finite sweep and does not establish any broader persistent-pattern inertial-mass theorem.
 - **rationale:** The source note makes a bounded negative claim and does not overstate it into a positive Newton or inertial-mass theorem. The supplied runner performs a finite propagation/relaunch sweep and the stdout supports the stated negative result: the only row with capture above threshold has rel_shift_err=0.271, far above 0.05. The clean scope is only the enumerated runner configuration and thresholds; broader ordered-lattice or Newton-derivation closure remains outside this claim.
 - **auditor confidence:** medium
-
-### `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`
-
-- **Note:** [`NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded textbook-import wrapper for the flat first Friedmann law H^2=(8 pi G/3)rho; the dust Newton-Poisson first-integral core closes, but the stated radiation-fluid/downstream H_rad use requires an explicit GR or active-gravitational-mass pressure premise not supplied by the Newton-Poisson derivation as written.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-newton-poisson-friedmann-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The first Friedmann law H^2 = (8 pi G / 3) rho follows as a first integral of the Newtonian homogeneous-ball acceleration equation, with the integration constant set to zero by k=0 flatness.  _(class `A`)_
-- **chain closes:** False — For dust, multiplying a''=-(4 pi G/3)rho a with rho a^3=const gives H^2=(8 pi G/3)rho plus curvature. For radiation, using the same rho-only Newtonian acceleration with rho a^4=const gives half the needed coefficient; the correct flat radiation law needs the GR/pressure source term.
-- **rationale:** Issue: the note's displayed Newton-Poisson derivation uses a rho-only homogeneous-ball acceleration equation but also includes radiation-fluid scope and downstream H_rad use. Why this blocks: the dust first integral gives the stated flat first Friedmann coefficient, while the same rho-only acceleration with rho proportional to a^-4 gives H^2=(4 pi G/3)rho rather than (8 pi G/3)rho; recovering the radiation coefficient requires the GR G_00 equation or the active gravitational mass term rho+3p. Repair target: either narrow this wrapper to pressureless dust/Newton-Poisson only, or add a retained one-hop bounded GR/relativistic-fluid textbook lemma deriving flat F1 for arbitrary w and make the radiation H_rad route cite that lemma. Claim boundary until fixed: the k=0 dust first-integral algebra is correct, and the flat spatial-slice dependency is retained, but the radiation import is not closed by the current derivation.
-- **auditor confidence:** high
 
 ### `newtonian_distance_law_confirmed`
 

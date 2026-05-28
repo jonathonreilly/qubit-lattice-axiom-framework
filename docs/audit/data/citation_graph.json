@@ -67169,10 +67169,10 @@
         "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "73a992fb9359cfbc40c28f698db99ad02a1bee1113e8bc48df2afca793cbeb2c",
+      "note_hash": "92a8f67876f11bd5784e5507d006d5651636415adb72b78d5c6ee520446873de",
       "path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
-      "title": "Newton-Poisson \u2192 Flat First Friedmann Law \u2014 Named Non-Derivation Import"
+      "title": "Newton-Poisson \u2192 Flat First Friedmann Law (Dust) \u2014 Named Non-Derivation Import"
     },
     "newtonian_distance_law_confirmed": {
       "claim_id": "newtonian_distance_law_confirmed",

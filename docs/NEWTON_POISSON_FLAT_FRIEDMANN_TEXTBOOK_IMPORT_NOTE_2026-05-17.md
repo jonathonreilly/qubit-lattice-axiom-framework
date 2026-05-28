@@ -1,20 +1,58 @@
-# Newton-Poisson → Flat First Friedmann Law — Named Non-Derivation Import
+# Newton-Poisson → Flat First Friedmann Law (Dust) — Named Non-Derivation Import
 
-**Date:** 2026-05-17
-**Claim type:** bounded_theorem
-**Status:** bounded named-import wrapper. The flat first Friedmann law
-
-```
-H^2 = (8 pi G / 3) rho
-```
-
-on a spatially flat (k = 0) homogeneous-isotropic slice is a textbook
-Newton-Poisson reduction (Milne 1934, McCrea & Milne 1934), recovered
-in the appropriate symmetric limit of General Relativity. This note
-records that reduction as a named non-derivation import so downstream
-rows that consume the flat first Friedmann law can register this
-wrapper as their one-hop dependency.
+**Date:** 2026-05-17 (original); 2026-05-28 (dust first-integral split from
+the radiation/GR case per audit verdict).
+**Type:** bounded_theorem
 **Status authority:** independent audit lane only.
+**Status:** bounded named-import wrapper for the **dust (pressureless)**
+flat first Friedmann law
+
+```
+H^2 = (8 pi G / 3) rho        (dust, p = 0)
+```
+
+on a spatially flat (k = 0) homogeneous-isotropic slice, recovered as a
+textbook Newton-Poisson first integral (Milne 1934, McCrea & Milne 1934).
+The **radiation / general-pressure** case is **out of scope** here: it is
+NOT a Newtonian first integral (see 2026-05-28 repair header). This note
+records the dust reduction as a named non-derivation import so downstream
+rows that consume the dust flat first Friedmann law can register this
+wrapper as their one-hop dependency.
+
+## 2026-05-28 Audit Repair (dust split from radiation/GR)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"For dust, multiplying a''=-(4 pi G/3)rho a with rho a^3=const gives
+> H^2=(8 pi G/3)rho plus curvature. For radiation, using the same
+> rho-only Newtonian acceleration with rho a^4=const gives half the
+> needed coefficient; the correct flat radiation law needs the
+> GR/pressure source term."*
+
+The auditor is correct: the Newtonian Poisson source is the **mass
+density `rho` only**, with no pressure term. For dust (`p = 0`) the
+Newtonian first integral reproduces the GR flat first Friedmann law
+exactly. For radiation (`p = rho/3`), the active gravitational mass is
+`rho + 3p = 2 rho`, so the Newtonian `rho`-only acceleration gives only
+**half** the correct coefficient — the flat radiation Friedmann law
+genuinely requires the GR/pressure source term, which a Newton-Poisson
+reduction cannot supply.
+
+Repair via the **dust/radiation split** the auditor offered:
+
+- **Load-bearing (in scope):** the dust (`p = 0`) Newton-Poisson
+  first-integral wrapper `H^2 = (8 pi G/3) rho + curvature`. This is the
+  clean textbook reduction and is the only thing this note imports.
+- **Out of scope (removed from this wrapper's claim surface):** the
+  radiation-fluid / general-pressure flat Friedmann law and any
+  downstream `H_rad` use. Those require a retained GR / active-
+  gravitational-mass (`rho + 3p`) source lemma that is **not** supplied
+  by a Newton-Poisson reduction and is **not** a one-hop dependency here.
+
+Downstream consumers that need the **radiation** flat Friedmann law must
+wait for a retained GR/pressure-source lemma; consumers that need only
+the **dust** first integral can register this wrapper as their one-hop
+dependency. No new axiom, import, or retained bridge is introduced.
 
 ## Purpose
 

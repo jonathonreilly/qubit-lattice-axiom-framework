@@ -83,6 +83,10 @@ closed exactly:
   conventions; top-only normalization is a new physical radial law, and the
   target factor appears only after adding a normalization constant or
   root-rank response rule
+  homogeneous radial normalization no-go: any top-only positive homogeneous
+  scalar of the supplied C3 operator ray fixes lambda_top only after a
+  normalization constant is supplied; common same-source reparameterization
+  cancels from the top/W ratio
   one-Higgs carrier radial factor no-go: the neutral Higgs 1/sqrt(2)
   kinematic factor maps a supplied generation-matrix coefficient into a top
   mass response, but it does not identify that coefficient with the normalized
@@ -1873,6 +1877,11 @@ proposal_allowed_reason: |
   operator-size or source-coordinate conventions only. Top-only normalization
   is exactly a new radial law, while common same-source reparameterization
   cancels from the top/W readout.
+  The homogeneous radial normalization no-go prunes the class-level top-only
+  scalar-normalization shortcut: for any positive homogeneous scalar
+  `N(lambda_top A B_x) = lambda_top^p A^p N(B_x)`, `lambda_top` is fixed only
+  after a normalization constant is supplied. Choosing that constant to make
+  `lambda_top=1/sqrt(2)` is the missing radial law in another form.
   The one-Higgs carrier radial factor no-go prunes the carrier-normalization
   shortcut: the neutral Higgs `1/sqrt(2)` factor maps an already supplied
   generation-matrix coefficient into a top mass response, but the multiplier

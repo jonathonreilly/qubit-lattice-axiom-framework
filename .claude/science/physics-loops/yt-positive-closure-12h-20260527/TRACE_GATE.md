@@ -10,8 +10,8 @@ artifact_role: no_go
 next_trace_action: "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows"
 ```
 
-Cycle 33 tests whether same-surface quadratic action, Hilbert-Schmidt norm, or
-`P_nt` block quadratic density can supply the missing radial generator law.
+Cycle 34 tests whether the broader class of intrinsic homogeneous top-only
+scalar normalizations can supply the missing radial generator law.
 
 It cannot on the current surface. Granting the strongest C3 support used by
 this route,
@@ -21,16 +21,27 @@ V_top(lambda_top) = lambda_top A B_x,
 P_nt = P_omega + P_omega2,
 ```
 
-the quadratic traces are only
+any positive homogeneous scalar `N` of degree `p` on the supplied top-operator
+ray has the form
 
 ```text
-||lambda_top A B_x||_F^2 = lambda_top^2 A^2,
-Tr(P_nt (lambda_top A B_x)^2) = lambda_top^2 A^2 / 3,
-block mean = lambda_top^2 A^2 / 6.
+N(lambda_top A B_x) = lambda_top^p A^p N(B_x).
 ```
 
-These fix operator-size or source-coordinate conventions only. A top-only
-normalization is exactly a new physical radial law, while common same-source
+Thus `lambda_top` is determined only after a normalization constant is
+supplied. Choosing that constant to make `lambda_top=1/sqrt(2)` is the missing
+radial generator law in another form. Common same-source reparameterization
+cancels from the top/W readout, so a shared source-unit convention also cannot
+fix the relative radial coefficient. This prunes only the homogeneous
+top-only normalization shortcut; it does not refute a future accepted physical
+radial/backend theorem or strict pole rows.
+
+Cycle 33 tests whether same-surface quadratic action, Hilbert-Schmidt norm, or
+`P_nt` block quadratic density can supply the missing radial generator law.
+
+It cannot on the current surface. Granting the strongest current C3 support,
+quadratic traces fix operator-size or source-coordinate conventions only. A
+top-only normalization is a new physical radial law, while common same-source
 reparameterization cancels from the top/W readout. This prunes only the
 quadratic-action shortcut; it does not refute a future accepted physical
 radial/backend theorem or strict pole rows.

@@ -1,5 +1,12 @@
 # No-Go Ledger
 
+- New in the forty-eighth block: intrinsic homogeneous top-only scalar
+  normalization does not derive the missing radial generator factor. For any
+  positive homogeneous scalar on the supplied C3 top-operator ray,
+  `N(lambda_top A B_x)=lambda_top^p A^p N(B_x)`, so `lambda_top` is fixed only
+  after a normalization constant is supplied. Choosing the constant that gives
+  `lambda_top=1/sqrt(2)` is the missing radial law in another form, while
+  common same-source reparameterization cancels from the top/W ratio.
 - New in the forty-seventh block: same-surface quadratic action or
   Hilbert-Schmidt normalization does not derive the missing radial generator
   factor. Granting `P_nt` support and the derived `B_x` source tangent,

@@ -1,5 +1,38 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 48
+
+Scope:
+
+- C3 homogeneous radial-normalization no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, C3 projector algebra, homogeneous normalizer constants, multiple `lambda_top` completions, same-source reparameterization cancellation, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open homogeneous-normalization-to-radial-generator law; top-only homogeneous scalars fix `lambda_top` only after a normalization constant is supplied. |
+| Imports / support | DISCLOSED | No observed target, old Ward row, fitted selector, accepted radial law, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded so far with this review:
+
+- New runner: `PASS=77 FAIL=0`
+- Full stack runner: `PASS=602 FAIL=0`
+- Adjacent runners passed: same-surface radial-factor no-go `PASS=94`,
+  block-rank radial no-go `PASS=98`, Fisher-quotient radial no-go `PASS=91`,
+  quadratic-action radial no-go `PASS=78`, Fisher/LSZ radial-generator no-go
+  `PASS=105`, and nontrivial-block support `PASS=85`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- `POSITIVE_CLOSURE` remains absent.
+
 ## 2026-05-28 Local Review, Block 47
 
 Scope:

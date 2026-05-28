@@ -35,6 +35,9 @@ Current block artifacts:
 - `docs/YT_C3_QUADRATIC_ACTION_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_quadratic_action_radial_normalization_no_go.py`
 - `outputs/yt_c3_quadratic_action_radial_normalization_no_go_2026-05-28.json`
+- `docs/YT_C3_HOMOGENEOUS_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_homogeneous_radial_normalization_no_go.py`
+- `outputs/yt_c3_homogeneous_radial_normalization_no_go_2026-05-28.json`
 - `docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py`
 - `outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json`
@@ -169,6 +172,10 @@ Next artifact if continuing:
   operator-size or source-coordinate conventions, top-only normalization is a
   new radial law, and common same-source reparameterization cancels from the
   top/W readout.
+  The broader homogeneous top-only scalar-normalization class cannot close it
+  either: every positive homogeneous functional has
+  `N(lambda_top A B_x)=lambda_top^p A^p N(B_x)`, so the target radial factor
+  appears only after supplying the missing normalization constant/radial law.
   One-Higgs neutral-carrier normalization cannot close it either: the
   neutral Higgs `1/sqrt(2)` factor maps a supplied generation coefficient
   into the top mass row, but the multiplier `eta` tying that coefficient to

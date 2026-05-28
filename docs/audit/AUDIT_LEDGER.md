@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 170 |
-| **retained_bounded** | 579 |
+| **retained_bounded** | 580 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1158 |
+| unaudited | 1157 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 881 |
+| `audited_clean` | 882 |
 | `audited_conditional` | 62 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1388 |
+| `unaudited` | 1387 |
 
 | claim_type | count |
 |---|---:|
@@ -171,6 +171,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | B | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1859,6 +1860,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note replaces the prior single-step Lagrangian RP claim with the statement that the standard staggered-KS positive surface is the 2-step blocked transfer matrix T_hat^2=S_hat^2, while the primary runner shows the direct single-step spin-basis Gram matrix is non-PSD.  _(class `B`)_
 - **chain closes:** False — The primary runner closes the narrow single-step counterexample, and the retained one-hop dependencies close determinant positivity plus an abstract norm-square lemma. They do not construct the 2-step blocked staggered-KS transfer matrix or prove its positivity from the repo packet.
 - **rationale:** Issue: the source's positive replacement claim rests on the 2-step blocked staggered-KS transfer-matrix theorem cited to external literature, but the restricted packet provides no retained theorem or runner that constructs T_hat^2=S_hat^2 and proves positivity on the claimed 2-step physical Hilbert space. Why this blocks: the primary runner verifies a narrow negative result for the single-step Sharatchandra-Theta spin-basis Gram matrix; a counterexample to the removed surface does not by itself prove the replacement 2-step RP theorem. Repair target: add or wire a retained 2-step blocked staggered-KS transfer-matrix bridge, with a runner/proof that constructs the blocked Hilbert space, transfer matrix, reflection map, and positivity statement rather than citing them. Claim boundary until fixed: the direct single-step spin-basis Lagrangian RP surface under Sharatchandra Theta alone has a finite non-PSD witness; determinant positivity and the abstract norm-square lemma remain available on their audited narrow scopes, but full 2-step RP remains conditional.
+- **auditor confidence:** high
+
+### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional/cyclotomic theorem only: eta_g(T) for finite H, unitary g with g^N=1, self-adjoint T commuting with g; zero-free path invariance; and exact evaluation L_3(1,2)=2/9 with repeated C3 weights giving 1/9. No continuum APS eta theorem, fixed-point formula, framework Dirac-operator realization of the denominator, or phenomenology authority.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `beauvoir-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-z-n-equivariant-spectral-asymmetry`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Decompose H into g-character subspaces, so eta_g is a Z[zeta_N]-valued signed character trace. Along a zero-free g-commuting Hermitian path, each character-sector signature is constant. For N=3, in Q[omega]/(omega^2+omega+1), (omega-1)(omega^2-1)=3 and omega^4=omega, hence L_3(1,2)=(1/3)(1/3+1/3)=2/9.  _(class `A`)_
+- **chain closes:** True — The bounded finite algebra closes from spectral decomposition of a finite cyclic unitary action plus exact C3 cyclotomic arithmetic. The one-hop C3 dependency supplies only bounded support for the weight pattern, not a physical identification.
+- **rationale:** Clean only at finite-dimensional/cyclotomic scope. Independent check: because g is unitary of finite order and commutes with T, each nonzero T-eigenspace is g-invariant and diagonalizes into Nth-root characters, so eta_g is a finite Z[zeta_N]-valued signed trace. Along a zero-free g-commuting Hermitian path, the weighted finite signature cannot change. For the C3 local weight sum, (omega-1)(omega^2-1)=3 and omega^4=omega in Q[omega]/(omega^2+omega+1), giving L_3(1,2)=2/9 and repeated weights (1,1),(2,2)=1/9. The runner cache is SHA-pinned and reports PASS=30 FAIL=0. This verdict does not grant continuum APS, fixed-point formula, framework Dirac-operator denominator realization, Brannen/Koide/mass/phenomenology, empirical/tuned selector, or downstream status-promotion authority.
 - **auditor confidence:** high
 
 ### `background_independence_note`

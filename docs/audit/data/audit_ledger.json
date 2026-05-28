@@ -16062,22 +16062,48 @@
       "verdict_rationale": null
     },
     "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T06:54:26.398384+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": "Audited the finite-linear-algebra claim that the phase delta in H(a,b)=aI+bC+conj(b)C^2 is the within-triplet axis-exchange reflection order parameter: C3 is preserved for all delta, transpositions send delta to -delta, and generic nonzero sin(delta) lifts the S3 degeneracy while preserving C3."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "63a27ba5f79c23f06ab1b2253206de11ecbc56462bd567a713d23341a93a0465",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "beauvoir-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-z-n-equivariant-spectral-asymmetry",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded finite algebra closes from spectral decomposition of a finite cyclic unitary action plus exact C3 cyclotomic arithmetic. The one-hop C3 dependency supplies only bounded support for the weight pattern, not a physical identification.",
       "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional/cyclotomic theorem only: eta_g(T) for finite H, unitary g with g^N=1, self-adjoint T commuting with g; zero-free path invariance; and exact evaluation L_3(1,2)=2/9 with repeated C3 weights giving 1/9. No continuum APS eta theorem, fixed-point formula, framework Dirac-operator realization of the denominator, or phenomenology authority.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T06:54:26.398384+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -16086,34 +16112,35 @@
         "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Decompose H into g-character subspaces, so eta_g is a Z[zeta_N]-valued signed character trace. Along a zero-free g-commuting Hermitian path, each character-sector signature is constant. For N=3, in Q[omega]/(omega^2+omega+1), (omega-1)(omega^2-1)=3 and omega^4=omega, hence L_3(1,2)=(1/3)(1/3+1/3)=2/9.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "6c1ef488ecfdf777c993024f1c02671ff9dbc69290d3bed43f1894bb809bcc9c",
       "note_path": "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if later text widens the local weight-sum claim to composite-N weights with denominator zeros, or claims continuum APS, fixed-point, operator-realization, Brannen/Koide, mass, phenomenology, empirical/tuned selector, or downstream promotion content.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 30,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 30
       },
       "runner_path": "scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py",
       "title": "Finite Z_N Spectral-Asymmetry Weight-Sum Theorem (Bounded)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Clean only at finite-dimensional/cyclotomic scope. Independent check: because g is unitary of finite order and commutes with T, each nonzero T-eigenspace is g-invariant and diagonalizes into Nth-root characters, so eta_g is a finite Z[zeta_N]-valued signed trace. Along a zero-free g-commuting Hermitian path, the weighted finite signature cannot change. For the C3 local weight sum, (omega-1)(omega^2-1)=3 and omega^4=omega in Q[omega]/(omega^2+omega+1), giving L_3(1,2)=2/9 and repeated weights (1,1),(2,2)=1/9. The runner cache is SHA-pinned and reports PASS=30 FAIL=0. This verdict does not grant continuum APS, fixed-point formula, framework Dirac-operator denominator realization, Brannen/Koide/mass/phenomenology, empirical/tuned selector, or downstream status-promotion authority."
     },
     "axiom_reduction_note": {
       "audit_date": null,
@@ -190170,11 +190197,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 3.0,
+      "load_bearing_score": 6.0,
       "load_bearing_step": "A transposition sends C to C^2 and therefore conjugates b, so tau H(delta) tau\u2020 = H(-delta), with H transposition-invariant iff sin(delta)=0.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "e69dad7ae966d059deed4fa6d36cf809a3b2c84efc0bd4c9b8674046c9dfdad8",
       "note_path": "docs/NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check only the semantic naming of within-triplet transposition breaking as axis-exchange parity; the mathematical closure itself is straightforward.",

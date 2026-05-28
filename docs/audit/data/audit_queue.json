@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 230,
     "high": 317,
-    "leaf": 311,
+    "leaf": 310,
     "medium": 300
   },
   "cycle_break_target_count": 4,
@@ -26089,31 +26089,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35217,6 +35192,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 36,
-  "total_pending": 1158
+  "ready_count": 35,
+  "total_pending": 1157
 }

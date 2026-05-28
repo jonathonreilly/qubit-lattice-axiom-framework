@@ -64276,6 +64276,18 @@
       "runner_path": "scripts/frontier_lepton_charge_universality.py",
       "title": "Charged-Lepton Charge Universality Q_e = Q_\u03bc = Q_\u03c4 = \u22121"
     },
+    "lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26": {
+      "claim_id": "lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "c7fc8db4bc53e8ae21de1acef43c8ab95d21a0bb1c981ff7e099e6831344cce4",
+      "path": "docs/LEPTON_MASS_SCALE_MW_OVER_256_EMPIRICAL_OPEN_GATE_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_lepton_mass_scale_mw_over_256_empirical_open_gate.py",
+      "title": "Lepton Mass Scale `m_W/256` Empirical Open Gate"
+    },
     "lepton_shared_higgs_universality_collapse_note": {
       "claim_id": "lepton_shared_higgs_universality_collapse_note",
       "claim_type_author_hint": null,
@@ -86254,6 +86266,7 @@
     "lensing_finite_path_explanation_note",
     "lensing_finite_path_explanation_note_2026-05-17",
     "lensing_k_sweep_note",
+    "lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26",
     "lepton_single_higgs_pmns_triviality_note_2026-05-17",
     "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
     "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
@@ -86643,7 +86656,7 @@
       "meta": 192,
       "no_go": 85,
       "none": 1431,
-      "open_gate": 51,
+      "open_gate": 52,
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
@@ -86652,13 +86665,13 @@
       "meta": 192,
       "no_go": 188,
       "none": 426,
-      "open_gate": 128,
+      "open_gate": 129,
       "positive_theorem": 592
     },
     "edge_count": 9871,
-    "leaf_count": 815,
-    "node_count": 2592,
-    "root_count": 864,
-    "runners_with_path": 2167
+    "leaf_count": 816,
+    "node_count": 2593,
+    "root_count": 865,
+    "runners_with_path": 2168
   }
 }

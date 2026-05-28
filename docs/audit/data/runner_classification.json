@@ -14352,6 +14352,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_lepton_charge_universality.py"
     },
+    "lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 48
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_lepton_mass_scale_mw_over_256_empirical_open_gate.py"
+    },
     "lepton_shared_higgs_universality_collapse_note": {
       "assert_count": 1,
       "counts": {
@@ -42735,6 +42747,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_lepton_mass_scale_mw_over_256_empirical_open_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 48
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_lepton_shared_higgs_universality_collapse.py": {
       "assert_count": 1,
       "claims": [
@@ -57205,11 +57232,11 @@
       "A": 260,
       "B": 294,
       "C": 765,
-      "D": 302,
+      "D": 303,
       "none": 441
     },
-    "runners_classified": 2062,
+    "runners_classified": 2063,
     "runners_with_C": 1001,
-    "runners_with_D": 603
+    "runners_with_D": 604
   }
 }

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 244,
     "high": 319,
-    "leaf": 289,
+    "leaf": 290,
     "medium": 314
   },
   "cycle_break_target_count": 0,
@@ -27058,6 +27058,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/LEPTON_MASS_SCALE_MW_OVER_256_EMPIRICAL_OPEN_GATE_NOTE_2026-05-26.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_lepton_mass_scale_mw_over_256_empirical_open_gate.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35372,6 +35394,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 38,
-  "total_pending": 1166
+  "ready_count": 39,
+  "total_pending": 1167
 }

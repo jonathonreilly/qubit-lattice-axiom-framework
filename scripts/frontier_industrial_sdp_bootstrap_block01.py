@@ -64,28 +64,34 @@ def contains(interval: Tuple[float, float], value: float, tol: float = 1e-6) -> 
 # ---------------------------------------------------------------------------
 
 def su2_single_plaquette_bessel_moments(beta: float, k_max: int = 4) -> List[float]:
-    """SU(2) single-plaquette moments ⟨P^k⟩ where P = (1/2) tr U = cos(θ/2),
-    via Bessel function ratios.
+    """SU(2) single-plaquette moments ⟨P^k⟩ where P = (1/2) tr U = cos θ,
+    integrated over the FULL SU(2) class-angle domain.
 
-    For SU(2), Haar measure: dU = (1/(2π²)) sin²θ dθ dφ_1 dφ_2 (Euler angles).
-    Single-link integral: Z(β) = ∫dU exp((β/2) tr U) = ∫dU exp(β·cos(θ/2)).
-    Reduces to: Z(β) ∝ I_1(β)/β (modified Bessel).
+    For SU(2), an element is conjugate to diag(e^{iθ}, e^{-iθ}) with class
+    angle θ ∈ [0, π]; tr U = 2 cos θ, so P = (1/2) tr U = cos θ ∈ [-1, 1].
+    The reduced (class-function) Haar measure is (2/π) sin²θ dθ, which
+    normalizes to 1 on θ ∈ [0, π] and gives the fundamental-character
+    Catalan moments ⟨(tr U)^{2n}⟩ = Catalan(n) at β = 0.
 
-    ⟨(1/2 tr U)^k⟩ = ⟨cos^k(θ/2)⟩ — computable via Chebyshev / Bessel sums.
-    Standard result:
-      ⟨(1/2) tr U⟩ = I_2(β) / I_1(β)
-      ⟨((1/2) tr U)^k⟩ for k>1: more complex; can be computed numerically.
+    Single-link integral: Z(β) = ∫dU exp((β/2) tr U) = ∫dU exp(β cos θ),
+    which reduces to Z(β) ∝ I_1(β)/β (modified Bessel), and the Bessel
+    closed form for the first moment is ⟨P⟩ = I_2(β) / I_1(β).
 
-    Use numerical integration on θ ∈ [0, π] with Haar weight sin²(θ/2).
+    NOTE (full-domain fix): the class angle θ runs over [0, π] with
+    P = cos θ ranging over the FULL support [-1, 1]. Using P = cos(θ/2)
+    on θ ∈ [0, π] truncates P to [0, π/2] image [0, 1] (half the support)
+    and yields an incorrect reference; that earlier parameterization is
+    not used here. Numerical integration over θ ∈ [0, π] with the Haar
+    weight sin²θ reproduces I_2(β)/I_1(β) for the first moment.
     """
     moments = []
-    Z, _ = quad(lambda theta: math.sin(theta/2)**2 * math.exp(beta * math.cos(theta/2)), 0, math.pi)
+    Z, _ = quad(lambda theta: math.sin(theta) ** 2 * math.exp(beta * math.cos(theta)), 0, math.pi)
     for k in range(k_max + 1):
         if k == 0:
             moments.append(1.0)
             continue
         num, _ = quad(
-            lambda theta: math.sin(theta/2)**2 * math.cos(theta/2)**k * math.exp(beta * math.cos(theta/2)),
+            lambda theta: math.sin(theta) ** 2 * math.cos(theta) ** k * math.exp(beta * math.cos(theta)),
             0, math.pi,
         )
         moments.append(num / Z)
@@ -308,6 +314,23 @@ def validate_assertions(beta: float = 6.0) -> None:
     su3_mom = su3_single_plaquette_haar_moments(beta=beta, k_max=4)
     check("SU(2) reference m1 lies in support", -1.0 <= su2_mom[1] <= 1.0, f"m1={su2_mom[1]:.8f}")
     check("SU(3) reference m1 lies in support", -1.0 / 3.0 <= su3_mom[1] <= 1.0, f"m1={su3_mom[1]:.8f}")
+
+    # Full-domain Haar certification: the corrected SU(2) reference must match the
+    # Bessel closed form ⟨P⟩ = I_2(β)/I_1(β), and the pure-Haar (β=0) fundamental
+    # character moments must reproduce the Catalan numbers (1, 0, 1, 0, 2, ...).
+    bessel_m1 = iv(2, beta) / iv(1, beta)
+    check("SU(2) reference m1 matches Bessel ratio I_2(β)/I_1(β)",
+          abs(su2_mom[1] - bessel_m1) < 1e-6,
+          f"m1={su2_mom[1]:.8f}, I_2/I_1={bessel_m1:.8f}")
+    su2_haar0 = su2_single_plaquette_bessel_moments(beta=0.0, k_max=4)
+    # ⟨P^k⟩ = ⟨cos^k θ⟩; ⟨(tr U)^{2n}⟩ = ⟨(2 cos θ)^{2n}⟩ = 4^n ⟨cos^{2n} θ⟩ = Catalan(n).
+    catalan = {0: 1, 1: 1, 2: 2}  # Catalan(0..2)
+    char_m2 = (2.0 ** 2) * su2_haar0[2]
+    char_m4 = (2.0 ** 4) * su2_haar0[4]
+    check("SU(2) pure-Haar fundamental ⟨χ^2⟩ = Catalan(1) = 1",
+          abs(char_m2 - catalan[1]) < 1e-6, f"⟨χ^2⟩={char_m2:.6f}")
+    check("SU(2) pure-Haar fundamental ⟨χ^4⟩ = Catalan(2) = 2",
+          abs(char_m4 - catalan[2]) < 1e-6, f"⟨χ^4⟩={char_m4:.6f}")
 
     pure_su2 = cvxpy_max_min_m1_with_hankel(N=3, support=(-1.0, 1.0), fix_moments=None)
     pure_su3 = cvxpy_max_min_m1_with_hankel(N=3, support=(-1.0 / 3.0, 1.0), fix_moments=None)

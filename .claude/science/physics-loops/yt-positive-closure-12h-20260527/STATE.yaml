@@ -1,23 +1,23 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 23
+supervisor_cycle: 24
 runtime_budget_seconds: 43200
 remaining_campaign_seconds_at_cycle_start: 15217
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T02:46:33Z"
+last_checkpoint_utc: "2026-05-28T02:57:18Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: origin_main_strict_pole_row_refresh_no_go
+active_route: origin_main_declared_anchor_firewall_no_go
 hard_residual: "derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2), physical zero-singlet top-readout/sign law excluding P_0, or accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
-actual_current_surface_status: no-go / origin-main strict-row refresh
+actual_current_surface_status: no-go / forbidden declared-anchor remote subchain
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Cycle 23 prunes the origin/main strict-row refresh shortcut. A post-fetch origin/main scan finds the named strict top/W row outputs absent, confirms the origin/main FH response-ratio gate still has strict_top_w_rows_present=false, confirms the origin/main physical top-mass bridge still lacks a strict same-source response measurement, and finds no scanned origin/main Y_T output satisfying the positive strict packet fields. This is no-go route pruning only; future strict pole-row production remains live and positive closure remains open."
+claim_state_movement: "Cycle 24 prunes the origin/main declared-anchor bounded-subchain shortcut. The fetched mainline Y_T declared-anchor packet is retained-bounded only over declared plaquette/u0/alpha_LM, kappa_EW, and Ward-boundary/Clebsch inputs; those are forbidden or open for this campaign, so the remote packet cannot be imported as a positive-closure proof input. Positive closure remains open."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -109,6 +109,9 @@ files_touched:
   - docs/YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md
   - scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py
   - outputs/yt_origin_main_strict_pole_row_refresh_no_go_2026-05-28.json
+  - docs/YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md
+  - scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py
+  - outputs/yt_origin_main_declared_anchor_firewall_no_go_2026-05-28.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -184,7 +187,17 @@ no_go_routes:
   - C3 RN/Fisher line-simplex geometry, binary P_0/P_nt quotient coarse-graining, or Fisher-unit C3 score normalization certifies lambda_top=1/sqrt(2)
   - finite real C3 irrep/dimension/faithfulness facts derive accepted zero-singlet physical top-block membership or the coefficient row
   - freshly fetched origin/main already supplies accepted strict top/W pole-row evidence
+  - origin/main declared-anchor Y_T bounded subchain is admissible as current campaign closure proof
 commands_run:
+  - "python3 scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py -> PASS=46 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=515 FAIL=0"
+  - "python3 scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py -> PASS=59 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py -> PASS=74 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_strict_same_source_top_w_response_coefficient_obstruction.py -> PASS"
+  - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
+  - "git diff --check -> PASS"
+  - "git commit -m 'Prune origin-main declared-anchor closure shortcut' -> 836fd2414c8d7cb66b3c865e463e9a4945fb69de"
   - "python3 scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py -> PASS=59 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=507 FAIL=0"
   - "python3 scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py -> PASS=79 FAIL=0"
@@ -618,8 +631,8 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 23 science commit 59050961ac419e283c28fbd2f68128a478d6f834 and delivery commit efa28473da09fb5b3d62765c7a75b7d961af0621 are created locally; branch push and PR #1980 body update are the next delivery actions."
-latest_science_commit: 59050961ac419e283c28fbd2f68128a478d6f834
-latest_delivery_commit: efa28473da09fb5b3d62765c7a75b7d961af0621
-next_exact_action: "Produce new accepted strict top/W pole rows with contact/FV/IR/model-class controls, derive accepted same-surface backend/projectors/matrix elements, or return to accepted radial/readout dynamics for P_nt."
+pr_status: "Cycle 24 science commit 836fd2414c8d7cb66b3c865e463e9a4945fb69de is created locally; delivery commit, branch push, and PR #1980 body update are the next delivery actions."
+latest_science_commit: 836fd2414c8d7cb66b3c865e463e9a4945fb69de
+latest_delivery_commit: pending_cycle_24_delivery_commit
+next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

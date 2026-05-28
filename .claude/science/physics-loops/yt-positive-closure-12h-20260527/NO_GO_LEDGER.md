@@ -1,5 +1,10 @@
 # No-Go Ledger
 
+- New in the thirty-eighth block: the origin/main declared-anchor Y_T bounded
+  subchain cannot be imported as proof input for this campaign. It is
+  retained-bounded only over declared plaquette/u0/alpha_LM, `kappa_EW`, and
+  Ward-boundary/Clebsch anchors; those inputs are forbidden or open under the
+  current positive-closure campaign.
 - New in the thirty-seventh block: freshly fetched `origin/main` does not
   supply accepted strict top/W pole-row evidence. The named strict row outputs
   are absent on `origin/main` and the current branch, the origin/main FH

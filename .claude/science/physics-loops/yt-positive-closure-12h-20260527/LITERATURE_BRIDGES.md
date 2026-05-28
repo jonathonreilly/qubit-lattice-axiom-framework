@@ -118,3 +118,8 @@ a literature bridge. It uses fetched git data and finite JSON/schema checks to
 ask whether a strict top/W pole-row packet already exists on mainline. No
 external physics or math reference is load-bearing; external context cannot
 make an absent branch-local or remote certificate present.
+
+The origin/main declared-anchor firewall no-go is also a repository-state and
+campaign-input audit. It inspects mainline artifacts to verify that the
+bounded Y_T subchain is over declared anchors forbidden or open in this
+campaign. No external reference can make those forbidden anchors admissible.

@@ -1,5 +1,61 @@
 # Handoff
 
+Cycle 24 adds a thirty-eighth science block, not positive retained-grade
+closure. The block prunes a second origin/main shortcut:
+
+```text
+origin/main declared-anchor Y_T bounded subchain
+  -> admissible current-campaign proof input
+  -> coefficient-certified Y_T closure.
+```
+
+The fetched mainline declared-anchor packet is retained-bounded only over
+declared anchors, including `<P>`, plaquette/u0, `alpha_LM`, `kappa_EW`, and
+Ward-boundary/Clebsch inputs. Those anchors are forbidden or still open for
+this campaign, so the packet cannot be imported as a positive-closure proof
+input. The origin/main zero-import chain row is decoration under that bounded
+subchain and still keeps plaquette and `kappa_EW`/selector dependencies
+outside full closure.
+
+This is a no-go/route-pruning boundary only. No `POSITIVE_CLOSURE` marker was
+written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 24 science commit:
+
+```text
+836fd2414c8d7cb66b3c865e463e9a4945fb69de
+```
+
+Cycle 24 delivery commit:
+
+```text
+pending_cycle_24_delivery_commit
+```
+
+Cycle 24 artifacts:
+
+- `docs/YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py`
+- `outputs/yt_origin_main_declared_anchor_firewall_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 24 verification:
+
+- `python3 scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py`
+  -> `SUMMARY: PASS=46 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=515 FAIL=0`
+- Adjacent runners passed: origin/main strict pole-row refresh no-go
+  `PASS=59`, strict sparse availability audit `PASS=74`, and strict
+  same-source coefficient obstruction `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+The next exact action is to derive allowed same-surface radial/readout/backend
+laws without forbidden anchors, or produce accepted strict top/W pole rows.
+
 Cycle 23 adds a thirty-seventh science block, not positive retained-grade
 closure. The new block prunes the remote-refresh strict route:
 

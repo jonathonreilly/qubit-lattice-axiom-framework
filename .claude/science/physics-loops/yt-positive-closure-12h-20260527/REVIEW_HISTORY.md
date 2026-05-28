@@ -1,5 +1,39 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 38
+
+Scope:
+
+- origin/main declared-anchor firewall no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks origin/main declared-anchor and zero-import artifacts, audit ledger scope, forbidden-anchor mentions, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/forbidden declared-anchor remote subchain; it prunes only importing the origin/main bounded packet into this campaign. |
+| Imports / support | DISCLOSED | Plaquette/u0, `alpha_LM`, `kappa_EW`, and Ward-boundary/Clebsch anchors are forbidden or open for this campaign; allowed strict or same-surface dynamics routes remain open. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=46 FAIL=0`
+- Full stack runner: `PASS=515 FAIL=0`
+- Adjacent runners passed: origin/main strict pole-row refresh no-go
+  `PASS=59`, strict sparse availability audit `PASS=74`, and strict
+  same-source coefficient obstruction `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 37
 
 Scope:

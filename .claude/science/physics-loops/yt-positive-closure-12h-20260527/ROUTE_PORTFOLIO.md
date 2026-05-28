@@ -85,6 +85,9 @@ block and certify the coefficient row.
 The thirty-seventh route tested whether freshly fetched `origin/main` already
 contains the accepted strict top/W pole-row packet needed to bypass the C3
 readout/radial route.
+The thirty-eighth route tested whether the origin/main declared-anchor Y_T
+bounded subchain is admissible as a proof input under this campaign's
+forbidden-input firewall.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -126,6 +129,7 @@ readout/radial route.
 | Fisher-quotient radial normalization | no-go shortcut test | 3 | Pruned: fine and binary Fisher geometries are isometric, Fisher-unit score normalization is only a source-coordinate unit, and `B_x` has no internal Fisher direction in `P_nt` |
 | Real C3 irrep dimension top-block law | no-go shortcut test | 3 | Pruned: `P_nt` is the faithful two-dimensional real irrep, but selecting it as the physical top block imports an extra top-readout law, and `lambda_top` remains free |
 | Origin/main strict pole-row refresh | no-go remote-refresh audit | 3 | Pruned: fetched mainline has no named strict rows and no scanned Y_T output completing the strict positive packet |
+| Origin/main declared-anchor Y_T subchain | no-go forbidden-input firewall | 3 | Pruned: retained-bounded mainline algebra is over declared anchors forbidden or open in this campaign |
 
 ## Stuck Fan-Out
 
@@ -154,6 +158,7 @@ readout/radial route.
 | Existing dihedral basepoint anchor | Ask the already-derived real-record reflection/dihedral structure to choose the physical member | Fails; C3/D3 naturality has no section, and the existing reflection axis fixes the singlet member `P_0` |
 | Strict pole-row discovery | Search current Y_T strict/response/backend/projector outputs for a hidden accepted pole-row packet | Fails; support harnesses and candidates are present, but no complete accepted same-surface strict top/W pole-row certificate is present |
 | Origin/main strict-row refresh | Search fetched mainline for an accepted strict pole-row packet | Fails; named strict row outputs are absent and origin/main FH response outputs still mark strict rows/measurements absent |
+| Origin/main declared-anchor packet | Ask whether retained-bounded declared-anchor Y_T algebra can be imported as closure | Fails; the packet is over plaquette/u0/alpha_LM/kappa_EW/Ward anchors forbidden or open here |
 | Orientation-biased phase potential | Add a reflection-odd `sin(3 phi)` term to the C3 scalar phase potential | Fails; the potential selects a three-member C3 orbit, and the orbit contains a `P_0` singlet-row witness plus nontrivial target-row witnesses |
 | Source-response extremal readout | Use the derived `B_x` response itself as a non-scalar orbit-member/top-line readout | Fails; response maxima select `P_0 -> A/sqrt(3)`, while minima select the nontrivial pair only with an extra selector |
 | Strict W/Z plus C3 top-row splice | Combine strict W/Z denominator support with the conditional C3 target row | Fails; the target readout appears only after supplying same-surface splice authority and nontrivial top-line authority, while the same denominator/source scale allows a `P_0` singlet readout |

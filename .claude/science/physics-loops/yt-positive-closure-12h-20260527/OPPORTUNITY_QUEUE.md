@@ -25,6 +25,14 @@
 | 21 | Strict W/Z denominator plus conditional C3 target-row splice | low | high | present | pruned; formal target readout imports same-surface and physical nontrivial top-line authority |
 | 22 | C3 RN/Fisher quotient/source geometry as radial generator normalization | low | high | present | pruned; fine and binary Fisher metrics are isometric, Fisher-unit score is a source-coordinate normalization, and `B_x` has no internal Fisher direction in `P_nt` |
 
+Queue refresh after the thirty-eighth block: positive closure remains open.
+The origin/main declared-anchor Y_T bounded subchain cannot be used as a
+proof input here because it is explicitly over forbidden/open declared anchors
+(`plaquette/u0`, `alpha_LM`, `kappa_EW`, and Ward-boundary/Clebsch inputs).
+The next exact action remains to produce new accepted strict top/W pole rows
+or derive allowed same-surface radial/readout/backend laws without those
+anchors.
+
 Queue refresh after the thirty-seventh block: positive closure remains open.
 The origin/main strict pole-row refresh shortcut is pruned: the fetched
 mainline surface does not contain the named strict row outputs, its FH

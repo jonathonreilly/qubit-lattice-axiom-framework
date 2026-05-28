@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1126 |
+| unaudited | 1125 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 77 |
+| ~~audited_conditional~~ | 78 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 895 |
-| `audited_conditional` | 77 |
+| `audited_conditional` | 78 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1356 |
+| `unaudited` | 1355 |
 
 | claim_type | count |
 |---|---:|
@@ -1101,6 +1101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -15937,6 +15938,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
   - `YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`
   - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
   - `MINIMAL_AXIOMS_2026-05-20.md`
+- **auditor confidence:** high
+
+### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-dimensional S_6-democratic vector calculation on C^6 giving component amplitude 1/sqrt(6), evaluated only as a candidate support surface for the still-open top-response bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-yt-democratic-top-2026-05-28`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** If the top coefficient is the component amplitude of the unique permutation-invariant unit source on the six Q_L color-isospin components, then every component amplitude is 1/sqrt(6).  _(class `A`)_
+- **chain closes:** False — The S_6-invariant unit-vector calculation closes exactly, and an independent symbolic check reproduces the 1/sqrt(6) component amplitude. The top-coefficient claim remains conditional because the physical response bridge equating the top coefficient with this democratic Q_L component amplitude is explicitly open.
+- **rationale:** Issue: the democratic C^6 amplitude calculation is exact, but the row's top-coefficient significance depends on the open premise that the strict top response coefficient equals this democratic Q_L source component. Why this blocks: the restricted packet proves a normalized invariant-vector amplitude, not a physical Yukawa/readout theorem or response bridge. Repair target: derive a retained response theorem identifying the strict top coefficient with the democratic Q_L component amplitude, or narrow this row to a pure exact support lemma with graph-visible carrier-dimension inputs. Claim boundary until fixed: 1/sqrt(6) is an exact democratic-source amplitude candidate, not an audited top-coefficient closure.
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

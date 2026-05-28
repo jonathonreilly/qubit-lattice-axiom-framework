@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 558 |
+| **retained_bounded** | 559 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1198 |
+| unaudited | 1197 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 858 |
+| `audited_clean` | 859 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1428 |
+| `unaudited` | 1427 |
 
 | claim_type | count |
 |---|---:|
@@ -277,6 +277,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dispersion_relation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_assumptions_audit_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_abcc_signature_forcing_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_continuum_limit_velocity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -3615,6 +3616,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md`
   - `DM_ABCC_FIVE_BASIN_CHAMBER_DPLE_SUPPORT_THEOREM_NOTE_2026-04-21.md`
 - **auditor confidence:** high
+
+### `dm_abcc_basin_finite_search_support_note_2026-04-30`
+
+- **Note:** [`DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md`](../../docs/DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Deterministic finite-scan support certificate on the active A-BCC chamber only: the registered runner, without importing the archived basin coordinate chart, solves the live Hermitian-pencil PMNS-angle residual equations over the declared coordinate box [-50,50]^3, retained sigma set, active chamber inequality, and three deterministic seed families; it reproduces exactly three active-chamber representatives and their one-C_base/two-C_neg determinant split. No interval/root-isolation exhaustiveness, global no-missed-basin theorem, out-of-chamber chart closure, or complete A-BCC selector theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-dm-abcc-basin-finite-search-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The SHA-pinned runner cache reports PASS=16 FAIL=0: source-input firewall leaks=[], endpoint/midpoint/Chebyshev families each derive the same three active-chamber roots, residuals are <=4.91e-15, all representatives are inside the coordinate box and chamber, local residual Jacobians are full rank with min singular value 4.049e-04, and determinant components are one C_base plus two C_neg.  _(class `C`)_
+- **chain closes:** True — The row has no one-hop dependencies; the repaired live runner is the registered primary evidence and supports only the finite active-chamber scan surface stated in the source. The archived exhaustive wrapper remains historical provenance and is not promoted.
+- **rationale:** Clean bounded retention is appropriate for the repaired finite-scan support claim. The runner firewall confirms the active representatives are derived from the live equations rather than copied from the archived coordinate chart, and all three seed families agree on the same three in-chamber roots. The result is not exhaustive: the source and runner both disclaim interval/root-isolation and global no-missed-basin authority. The finite representative set, residual norms, chamber membership, local full-rank checks, and C_base/C_neg split are nevertheless reproducible runner facts on the declared scan surface.
+- **auditor confidence:** medium
 
 ### `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19`
 

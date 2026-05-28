@@ -49586,12 +49586,9 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
-        "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
-        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
-        "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
+        "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "note_hash": "0b15486c8b5be269671ba0957ef14a25fabc20ecc0bf862e4eba30ee6d744d6d",
+      "note_hash": "d2cd6d90c4a8e0e5aba36880405166727ec3dbe071b0ee68b90aaf72220f312e",
       "path": "docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
       "title": "DM Leptogenesis PMNS Transport Interval Witness"
@@ -53007,7 +53004,6 @@
         "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
         "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
         "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py",
-        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
@@ -53212,7 +53208,6 @@
         "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
         "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
         "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py",
-        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",

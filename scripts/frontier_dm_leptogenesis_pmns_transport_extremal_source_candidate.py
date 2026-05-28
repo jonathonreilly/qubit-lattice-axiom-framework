@@ -2,12 +2,12 @@
 """
 DM leptogenesis PMNS transport interval witness.
 
-Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+Framework baseline:
+  one-qubit operator algebra M_2(C) ~= Cl(3,0) on the Z^3 spatial substrate.
 
 Purpose:
   Record the bounded interval witness supported by the imported PMNS-assisted
-  transport functional beyond the sole-axiom boundary.
+  transport functional beyond the framework-baseline boundary.
 
   On the charged-lepton-active N_e route:
     - the aligned seed pair (xbar, ybar) is already fixed natively
@@ -20,25 +20,13 @@ Purpose:
   witness on that parameterized family.
 
 2026-05-27 runner repair:
-  The 2026-05-26 independent audit feedback on this row recorded this
-  runner-artifact issue: "the current restricted helper packet is internally
-  inconsistent: direct import now fails because canonical_h is imported
-  from scripts/frontier_dm_leptogenesis_pmns_projector_interface.py but
-  that file defines no canonical_h." That ImportError chain was caused by
-  an earlier (2026-05-26) raw-interface rewrite that stripped five
-  pure-LA helpers (canonical_y / canonical_h / monomial_y / monomial_h /
-  pmns_projector_packet) from the projector-interface module without
-  updating 10+ downstream importers.
-
-  The repair restores the five pure-LA helpers to
-  `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` (no
-  transport dependencies introduced; the narrowing intent of the
-  raw-interface rewrite is preserved) and inlines the one transport-
-  coupled helper (`eta_ratio_single_source_flavored`) in its single
-  consumer `scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py`.
-
-  This runner now imports + runs cleanly to PASS=12 / FAIL=0, with the
-  same bounded interval-witness reading as before the import was broken.
+  The raw PMNS projector-interface repair removed legacy helpers from the
+  raw-interface module. This runner now replays only the finite compatibility
+  layer it needs: CYCLE, canonical_h, active packet diagonalization, and the
+  one-column transport functional are local to this runner, while the exact
+  package constants and normalized transport grid come from
+  dm_leptogenesis_exact_common. This keeps the row executable without
+  re-expanding the old helper import surface.
 """
 
 from __future__ import annotations
@@ -55,19 +43,17 @@ from dm_leptogenesis_exact_common import (
     ETA_OBS,
     S_OVER_NGAMMA_EXACT,
     exact_package,
+    reference_expansion_profile,
+    solve_normalized_transport,
+    washout_profile,
 )
-from frontier_dm_leptogenesis_flavor_column_functional_theorem import (
-    flavored_column_functional,
-    flavored_transport_kernel,
-)
-from frontier_dm_leptogenesis_pmns_active_projector_reduction import active_packet_from_h
-from frontier_dm_leptogenesis_pmns_projector_interface import canonical_h
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
 XBAR_NE = 0.5633333333333334
 YBAR_NE = 0.30666666666666664
+CYCLE = np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]], dtype=complex)
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -82,6 +68,55 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
         msg += f"  ({detail})"
     print(msg)
     return condition
+
+
+def canonical_y(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
+    phase_block = np.diag(np.array([y[0], y[1], y[2] * np.exp(1j * delta)], dtype=complex))
+    return np.diag(np.asarray(x, dtype=complex)) + phase_block @ CYCLE
+
+
+def canonical_h(x: np.ndarray, y: np.ndarray, delta: float) -> np.ndarray:
+    ymat = canonical_y(x, y, delta)
+    return ymat @ ymat.conj().T
+
+
+def canonical_left_diagonalizer(h: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    evals, u = np.linalg.eigh(h)
+    order = np.argsort(np.real(evals))
+    evals = np.real(evals[order])
+    u = u[:, order]
+    return evals, u
+
+
+def active_packet_from_h(h_act: np.ndarray) -> np.ndarray:
+    _evals, u_act = canonical_left_diagonalizer(h_act)
+    return np.abs(u_act) ** 2
+
+
+def flavored_transport_kernel(k_decay: float) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    z_grid, n_n1, _ = solve_normalized_transport(k_decay, reference_expansion_profile)
+    source_profile = -np.gradient(n_n1, z_grid)
+    w_vals = np.array(
+        [washout_profile(float(z), k_decay, reference_expansion_profile) for z in z_grid],
+        dtype=float,
+    )
+    tail = np.zeros_like(z_grid)
+    for idx in range(len(z_grid) - 2, -1, -1):
+        tail[idx] = tail[idx + 1] + 0.5 * (w_vals[idx] + w_vals[idx + 1]) * (z_grid[idx + 1] - z_grid[idx])
+    return z_grid, source_profile, tail
+
+
+def psi_q(q: float, z_grid: np.ndarray, source_profile: np.ndarray, washout_tail: np.ndarray) -> float:
+    return float(np.trapezoid(q * source_profile * np.exp(-q * washout_tail), z_grid))
+
+
+def flavored_column_functional(
+    column: np.ndarray,
+    z_grid: np.ndarray,
+    source_profile: np.ndarray,
+    washout_tail: np.ndarray,
+) -> float:
+    return float(sum(psi_q(float(q), z_grid, source_profile, washout_tail) for q in np.asarray(column, dtype=float)))
 
 
 PKG = exact_package()
@@ -156,9 +191,9 @@ def part1_the_transport_objective_is_evaluable_on_the_imported_seed_surface() ->
         f"etas={np.round(etas_seed, 6)}",
     )
     check(
-        "The aligned seed benchmark on the canonical N_e seed pair is the 0.719082536061 lift",
+        "The aligned seed benchmark on the canonical N_e seed pair matches the prior direct-transport lift",
         abs(np.max(etas_seed) - 0.7190825360613422) < 2e-7,
-        f"packet={np.round(packet_seed, 6)}",
+        f"current functional replay={np.max(etas_seed):.12f}; prior direct benchmark=0.719082536061",
     )
 
     print()
@@ -297,8 +332,8 @@ def main() -> int:
     print("DM LEPTOGENESIS PMNS TRANSPORT INTERVAL WITNESS")
     print("=" * 88)
     print()
-    print("Framework convention:")
-    print('  "axiom" means only Cl(3) on Z^3.')
+    print("Framework baseline:")
+    print("  one-qubit operator algebra M_2(C) ~= Cl(3,0) on Z^3.")
     print()
     print("Question:")
     print("  Does the imported PMNS-assisted transport functional contain a")

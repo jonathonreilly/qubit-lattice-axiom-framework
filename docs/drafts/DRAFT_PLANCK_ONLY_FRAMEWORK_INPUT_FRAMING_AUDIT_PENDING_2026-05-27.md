@@ -15,7 +15,7 @@ the 2026-05-25 → 2026-05-27 hierarchy attack, but every claim about
 "reduced axiom surface", "Tier-A retirement", or "Planck-only minimum"
 depends on PRs that are sitting unratified in the audit pipeline.
 
-### What's actually on live main (as of 2026-05-27)
+### What's actually on live main (as of 2026-05-28)
 
 - `MINIMAL_AXIOMS_2026-05-20.md`: A1 (per-site qubit) + A2 (cubic lattice Z³)
   — **A2 is still a separate axiom**
@@ -23,7 +23,23 @@ depends on PRs that are sitting unratified in the audit pipeline.
   all as derivation_targets / not_a_node) — **registry edits #1983, #1984 not
   merged**
 - AC_φλ retirement (#1969) and θ retirement (#1978) **gated on capstones**
-- 24+ hierarchy bounded-closure PRs (#1991-#2046) **all unratified**
+- Hierarchy + cosmology-cascade audit wave (2026-05-27 → 2026-05-28) **substantial ratifications now landed via review-loop direct-to-main**:
+  - **`planck_target3_clifford_phase_bridge` → retained_bounded** ✓
+  - **`internal_external_su2_merger_from_universal_property` → retained_bounded** ✓ (PR #2049)
+  - **`g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory` → retained_bounded** ✓ (PR #2066)
+  - **`bz_volume_two_pi_cubed_substrate_internal` → retained_bounded** ✓
+  - **`g_bare_two_ward_h_unit_residue_accepted_premise_bridge` → retained_bounded** ✓
+  - **`dm_eta_bounded_prediction_from_supplied_nsites_v` → audited_conditional** ✓ (PR #2064)
+  - **`bbn_eta10_to_omega_b_h2_coefficient_admission_bridge` → audited_conditional** ✓ (PR #2065)
+  - **`sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge` → audited_conditional** ✓ (PR #2067)
+  - **`dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge` → audited_conditional** ✓ (PR #2072)
+  - **`massless_vector_polarization_count_from_lorentz_and_gauge` → audited_conditional** ✓ (PR #2073)
+  - **`cl3_chiral_cube_wilson_hop_doubling_foreclosed` → retained_no_go** ✓ (PR #2090; narrow same-link no-go, NOT repo-wide CW foreclosure)
+  - **`frw_adiabatic_expansion_cosmological_backdrop` → open_gate** ✓ (PR #2069)
+  - **`axiom_first_reflection_positivity` → audited_conditional** ✓
+  - Still unaudited: `cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube` (PR #2080), `cl3_su3_symmetric_base_commutant_gell_mann_embedding` (PR #2083), `dm_eta_g1_fierz_channel_narrative_correction` (PR #2082), `kolb_turner_freezeout_prefactor` (PR #2068), other coframe / link-local Planck-chain rows
+- C1 Planck chain partial: Target3 retained_bounded, but `planck_primitive_coframe_boundary_carrier`, `planck_link_local_first_variation_p_a_forcing`, `planck_primitive_clifford_majorana_edge_derivation`, `hubble_lane5_planck_c1_gate_audit` all still unaudited; **structural retained_no_gos** (`substrate_to_p_a_forcing`, `first_order_coframe_unconditionality`) remain
+- m_DM = 16v identification preserved as bounded composition (PR #2082 review-loop disposition explicitly retained `8/3 = 2·C_F` + `m_DM = (8/3)·6v = 16v` as bounded, with the same-link Wilson-hop doubling claim narrowly foreclosed)
 
 ### What this note projects
 
@@ -46,7 +62,30 @@ When all of the following ratify on the live audit ledger:
 3. PR #1969 (AC_φλ Tier-A retirement) — gated on Codex capstone #1959-#1965
 4. PR #1978 (θ Tier-A retirement) — gated on Track A capstone #1974-#1981
 5. The 24+ hierarchy chain PRs (#1991-#2046, including #2026 P2 bounded closure, #2030 F2 confirmation, #2046 A2 partial collapse)
-6. **PR #2049** (internal-external SU(2) merger from Cl(3,0) universal property) — operator-level identification `S_i = σ_i/2 = -i B_i` across 5 mechanisms, 273/0 sympy on all 48 O_h elements
+6. ✓ **PR #2049 (internal-external SU(2) merger)** — landed as retained_bounded on 2026-05-28
+7. C1 Planck chain advancing: Target3 retained_bounded but `planck_primitive_coframe_boundary_carrier`, `planck_link_local_first_variation_p_a_forcing`, `planck_primitive_clifford_majorana_edge_derivation`, `hubble_lane5_planck_c1_gate_audit` still unaudited; structural retained_no_gos on substrate-to-P_A forcing and first-order coframe unconditionality remain — **C1 cannot fully close as retained Planck-unit derivation; the honest landing surface is `audited_conditional` on supplied metric-compatible coframe response**
+
+### Updated migration unblock progress (2026-05-28)
+
+**Bounded-closure surface that has now landed on main via the cosmology-cascade audit wave:**
+
+| Closure pin | Status post-wave | Pathway |
+|---|---|---|
+| Bounded η prediction | audited_conditional | m_DM = 16v supplied premise, η_pred ∈ [4.94, 7.24]×10⁻¹⁰ brackets observation |
+| g_* = 427/4 | retained_bounded | SM thermal content arithmetic |
+| sphaleron 28/79 | audited_conditional | SM-content combinatorics |
+| Dirac/Weyl dof | audited_conditional | Lorentz + chirality |
+| Massless vector polarization | audited_conditional | Lorentz + gauge invariance |
+| BBN coefficient | audited_conditional | 1 of 5 components retired (2ζ(3)/π² photon prefactor) |
+| FRW + adiabatic backdrop | open_gate | honest admission boundary |
+| Wilson-hop doubling on same-link | retained_no_go | narrow foreclosure |
+
+**Closure paths that remain GENUINELY OPEN despite the wave:**
+
+- (C1) Planck anchor retained-grade Planck-unit derivation: blocked by `substrate_to_p_a_forcing` retained no-go; Target3 advancing as bounded_theorem only
+- (C2.α_GUT) absolute α_GUT: no published mechanism (per session lit search arXiv:2407.01580 / Gourlay-Gresnigt is closest cousin); ratio S_vis/S_dark with α_GUT canceling is a viable open attack surface
+- (C2.η) full closure of m_DM = N_sites·v identification: the candidate `16 = L_t · 4` (APBC selector × chirality-pair) is the cleanest framework-native open mechanism; per `m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28` (in flight)
+- α_GUT⁻¹ = 4π candidate (per 20-physicist panel convergence): requires audit-ratifying `alpha_bare_four_pi_from_z3_plancherel_bridge` AND making M_GUT = lattice scale identification explicit; both unaudited
 
 At that point, this note's projections become ACTUAL framework state and the
 synthesis can be migrated back to `docs/publication/ci3_z3/` as the

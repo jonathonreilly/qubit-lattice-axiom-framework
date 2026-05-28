@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 537 |
+| **retained_bounded** | 538 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
 | unaudited | 1230 |
-| audit_in_progress | 1 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -58,8 +57,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 832 |
+| `audited_clean` | 833 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
@@ -130,7 +128,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -351,6 +348,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4722,6 +4720,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Combine W1 F^2=1/6 with W2 F^2=g_bare^2/(2N_c), apply AN to obtain g_bare^2=2N_c(1/6), then use NC N_c=3 to get g_bare^2=1 and g_bare=1 on the positive branch.  _(class `A`)_
 - **chain closes:** True — The chain closes as exact symbolic algebra from retained-grade one-hop dependencies. The same-1PI exhaustion bridge is not re-derived by this row, but it is already contained in the scoped W2 retained_bounded dependency and is explicitly preserved as inherited admitted content.
 - **rationale:** The bounded claim is clean because it does not promote W2's admitted bridge into an unconditional proved physical identity. It only performs the narrow substitution W1 + W2 + AN + NC, and the stated scope explicitly excludes deriving W1, W2, N_c, physical readouts, or comparators. Admission gate passed: the W2 bridge admission is explicit, localized inside the retained_bounded W2 dependency, and preserved as inherited bounded content rather than hidden in the downstream algebraic conclusion.
+- **auditor confidence:** high
+
+### `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07`
+
+- **Note:** [`G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md`](../../docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** R1-R3 only: fixed Hilbert-Schmidt form on the canonical su(3) triplet block, invariant-form uniqueness up to scalar, and scalar-dilation trace/Casimir rigidity c=+/-1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-context-g-bare-hs-rigidity-20260528-r2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For T_a -> c T_a, both B_HS(T_a,T_b) and sum_a T_a T_a scale by c^2, so preserving the fixed trace Gram and quadratic Casimir forces c^2=1.  _(class `A`)_
+- **chain closes:** True — Fresh-context check confirms su(3) is simple, so invariant symmetric bilinear forms are one-dimensional; with Tr(T_a T_b)=N_F delta_ab, Schur centrality gives sum_a T_aT_a=C_F I_3 and tracing gives 3C_F=8N_F. Scaling by real c multiplies both invariants by c^2, so joint preservation is exactly c=+/-1.
+- **rationale:** The scoped R1-R3 trace/Casimir rigidity closes. This does not ratify physical connection equivalence, Wilson routing, N_F=1/2 derivation, running/fixed-point selection, or absolute g_bare=1 from A1+A2; c=-1 is only metric/Casimir-preserving within this scalar-dilation check, not a new Lie-bracket automorphism claim.
 - **auditor confidence:** high
 
 ### `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`

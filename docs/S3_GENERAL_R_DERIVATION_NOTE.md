@@ -1,21 +1,78 @@
-# S^3 Topology: General-R Derivation
+# S^3 Topology: Finite-R Bounded Derivation
 
-**Status:** CLOSED — derived for all R >= 2; two independent proof paths (computational + general)  
-**Type:** Constructive computation (R=2..6) + theorem chain with standard mathematical citation (Perelman 2003)  
-**Date:** 2026-04-13
-**Primary runner:** [`scripts/frontier_s3_cap_uniqueness.py`](../scripts/frontier_s3_cap_uniqueness.py) (all checks passed (companion to slow s3_general_r runner))
+**Date:** 2026-04-13 (original); 2026-05-28 (all-R wrapper retired per
+audit verdict).
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+**Status:** **bounded** for the finite radius range R = 2..10 (per the
+finite-radius certificates in the cited deps); the prior **"all R >= 2"
+wrapper is retired** because the unrestricted extension load-bears on
+the Perelman 2003 PL Poincare citation, which is a literature import
+not currently in retained inventory.
+**Primary runner:** [`scripts/frontier_s3_cap_uniqueness.py`](../scripts/frontier_s3_cap_uniqueness.py) (all checks passed; finite-R companion to the all-R s3_general_r runner)
+
+## 2026-05-28 Audit Repair (all-R wrapper retired)
+
+The 2026-05-28 audit verdict was `audited_failed` with closure issue:
+
+> *"The one-hop dependencies are retained_bounded only for
+> finite-radius certificates and explicitly exclude unrestricted all-R
+> PL cap closure, global uniqueness, physical closure, and PL S^3
+> identification."*
+
+Repair instruction: *"Replace the all-R wrapper with finite bounded
+scope or supply retained-grade one-hop all-R topology authorities."*
+
+The cited one-hop deps
+([`s3_cap_uniqueness_note`](S3_CAP_UNIQUENESS_NOTE.md) and
+[`s3_boundary_link_theorem_note`](S3_BOUNDARY_LINK_THEOREM_NOTE.md))
+are `retained_bounded` for the explicit cubical-boundary family at
+**R = 2..5** and **R = 2..10** respectively. The Step 4 application
+of the PL Poincare conjecture (Perelman 2003) was load-bearing for
+the all-R wrapper, and Perelman 2003 is a **literature import** not
+currently in retained inventory under the framework's no-imports-
+without-approval policy.
+
+This repair takes the **finite-scope narrowing path**:
+
+- demote claim_type `positive_theorem` -> `bounded_theorem`;
+- restrict the load-bearing claim to the finite R range
+  R = 2..10 (the scope of the retained deps); the unrestricted
+  "every R >= 2" wrapper is retired;
+- preserve the §"Derivation chain" Steps 1-3 (all R) as in-scope
+  structural arguments that are R-independent;
+- demote §"Derivation chain" Step 4 (Perelman 2003 application) to
+  "out-of-scope citation" and mark it explicitly as unsupported until
+  a retained PL Poincare / Moise authority lands;
+- preserve PATH 1 (computational, zero citations, R = 2..6) as the
+  load-bearing verification path;
+- demote PATH 2 (general R, Perelman citation) to a future-work
+  target conditional on a retained PL Poincare authority.
+
+Downstream consumers that load-bear specifically on the **all-R**
+wrapper must re-audit against this row's narrowed boundary. The 18
+direct citers are currently all `unaudited`, so the narrowing does
+not force any retroactive verdict change.
+
+## Theorem (finite R = 2..10, bounded)
 
 ---
 
 ## Theorem
 
-Let B_R be the cubical ball of radius R in Z^3 (the union of all unit cubes
-whose 8 corners lie within Euclidean distance R of the origin), and let
+Let B_R be the cubical ball of radius R in Z^3 (the union of all unit
+cubes whose 8 corners lie within Euclidean distance R of the origin),
+and let
 
     M_R = B_R  cup  cone(partial B_R)
 
-be the cone-capped closure.  Then M_R is PL homeomorphic to S^3 for every
-R >= 2.
+be the cone-capped closure. **For R in the finite range R = 2..10
+covered by the cited retained finite-radius certificates**
+([`s3_cap_uniqueness_note`](S3_CAP_UNIQUENESS_NOTE.md) for R = 2..5,
+[`s3_boundary_link_theorem_note`](S3_BOUNDARY_LINK_THEOREM_NOTE.md)
+for R = 2..10), M_R is PL homeomorphic to S^3. The extension to
+**every** R >= 2 is **out of scope** here; it requires a retained
+PL Poincare / Moise authority (see §"2026-05-28 Audit Repair" above).
 
 ---
 
@@ -123,22 +180,31 @@ This follows directly:
 - **PL 3-manifold:** Every vertex link is PL S^2 (Step 1).
 - **Simply connected:** pi_1(M_R) = 0 (Step 2).
 
-### Step 4.  M_R is PL homeomorphic to S^3 (for all R)
+### Step 4.  M_R is PL homeomorphic to S^3 (OUT OF SCOPE for all R)
 
-**The PL Poincare conjecture** (proved by Perelman, 2003; see Perelman,
-arXiv:0211159, 0303109, 0307245; exposition by Morgan-Tian, Kleiner-Lott,
-Cao-Zhu):
+**This step is out of scope as a load-bearing derivation step in the
+2026-05-28 narrowing.** It is retained here as future-work prose
+only, conditional on a retained PL Poincare / Moise authority.
+
+The all-R extension would proceed by citing the PL Poincare conjecture
+(Perelman 2003; arXiv:0211159, 0303109, 0307245; exposition by
+Morgan-Tian, Kleiner-Lott, Cao-Zhu):
 
 > Every compact closed simply-connected 3-manifold is homeomorphic to S^3.
 
-Combined with the equivalence of the TOP and PL categories in dimension 3
-(Moise's theorem: every topological 3-manifold admits a unique PL structure):
+combined with the equivalence of the TOP and PL categories in
+dimension 3 (Moise's theorem):
 
 > Every compact closed simply-connected PL 3-manifold is PL homeomorphic
 > to S^3.
 
-**Application:** M_R satisfies all hypotheses of the PL Poincare conjecture
-by Step 3.  Therefore M_R is PL homeomorphic to S^3 for every R >= 2.
+These are **literature imports**. Under the framework's
+no-imports-without-approval policy they are not currently retained.
+Until a retained PL Poincare / Moise authority lands, the in-scope
+load-bearing identification of M_R with PL S^3 is via the **finite-R
+direct verification** (PATH 1, R = 2..6) for the finite range
+R = 2..10 covered by the retained finite-radius dep certificates,
+not via this all-R Step 4.
 
 ---
 

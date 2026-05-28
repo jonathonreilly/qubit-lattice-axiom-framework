@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_top_coefficient_full_court_press.py
+runner_sha256: 2d9ded97cd693bedd16ef8c7c87f07a0b6dcb689595ee5e2777f207f4406ed9e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+==============================================================================
+Y_T TOP-COEFFICIENT FULL-COURT-PRESS
+==============================================================================
+
+Part 1: anchors and sections
+[PASS] docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md exists
+[PASS] docs/YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md exists
+[PASS] docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md exists
+[PASS] docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists
+[PASS] docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Assumptions Exercise
+[PASS] note contains required section: First-Principles Exercise
+[PASS] note contains required section: Literature Search
+[PASS] note contains required section: Mathematics Search
+[PASS] note contains required section: Route Verdicts
+[PASS] note contains required section: Decision
+[PASS] note contains required section: Firewalls
+[PASS] source-action row is retained_bounded support
+[PASS] one-Higgs row is not retained coefficient authority
+[PASS] hypercharge row is not retained coefficient authority
+[PASS] color-projection correction row is retained_no_go
+[PASS] Yukawa color projection is audited decoration
+
+Part 2: assumptions and firewalls
+[PASS] exercise phrase present: Explicit Assumptions
+[PASS] exercise phrase present: Implicit Assumptions
+[PASS] exercise phrase present: What If We Are Wrong?
+[PASS] exercise phrase present: Do not keep attacking W/Z normalization
+[PASS] exercise phrase present: Attack y_33 directly
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: observed W/Z/top masses
+[PASS] firewall phrase present: PDG values
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: fitted selector
+
+Part 3: math underdetermination
+[PASS] top/W row shape recovers arbitrary y_a: sqrt(2)*y_a/g_2
+[PASS] top/W row shape recovers arbitrary y_b: sqrt(2)*y_b/g_2
+[PASS] different coefficients are distinguishable only by top numerator: sqrt(2)*y_a/g_2 - sqrt(2)*y_b/g_2
+[PASS] gauge/operator constraints do not contain y_33
+[PASS] generation matrix has free top entry: Matrix([[y11, 0, 0], [0, y22, 0], [0, 0, y_33]])
+[PASS] changing y_33 leaves gauge representation unchanged
+
+Part 4: literature-source audit
+[PASS] literature source present: https://link.springer.com/article/10.1140/epjc/s10052-015-3576-5
+[PASS] literature source present: https://arxiv.org/abs/2305.05491
+[PASS] literature source present: https://link.springer.com/article/10.1140/epjc/s10052-012-2120-0
+[PASS] literature source present: https://arxiv.org/abs/1907.01590
+[PASS] literature search does not claim external theorem proves framework no-go
+
+Part 5: route decision
+[PASS] current structural route is marked blocked
+[PASS] qubit democratic source route is marked live exact-support candidate
+[PASS] signed-linear tangent route is marked live exact-support candidate
+[PASS] direct response/correlator route is marked live
+[PASS] new dynamical flavor theorem route is marked live but hard
+[PASS] structural derivation from current stack is not allowed
+[PASS] direct measurement route remains live
+[PASS] new flavor theorem route remains live
+
+Part 6: overclaim scan
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: Status: retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: This note derives `y_t`
+[PASS] forbidden overclaim absent: `y_33` is derived
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+[PASS] forbidden overclaim absent: full retained closure
+[PASS] old Ward note records H_unit definition trap
+
+wrote outputs/yt_top_coefficient_full_court_press_2026-05-25.json
+SUMMARY: PASS=59 FAIL=0
+
+----- stderr -----
+

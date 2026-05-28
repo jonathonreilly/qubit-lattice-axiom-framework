@@ -1,12 +1,52 @@
 # Mermin-Wagner / Hohenberg Bogoliubov Infrared Certificate
 
-**Date:** 2026-05-18 (bounded-certificate repair: 2026-05-27)
-**Claim type:** bounded_theorem
+**Date:** 2026-05-18 (bounded-certificate repair: 2026-05-27); 2026-05-28
+(|m_L| extraction split off as conditional on an unsupplied Ward lemma).
+**Type:** bounded_theorem
 **Status:** bounded Bogoliubov/infrared certificate; external
 Mermin-Wagner, Hohenberg, and Coleman references are parallel literature
 citations, not load-bearing retained-grade imports.
 **Runner:** `scripts/mermin_wagner_bogoliubov_bounded_certificate.py`
 **Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (Bogoliubov+IR core split from |m_L| extraction)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The finite spectral Bogoliubov inequality and the IR sum behavior
+> check out, but the packet does not fully state and close the
+> order-operator/charge-mode Ward or commutator normalization needed to
+> extract |m_L| from the summed inequality with L-independent constants."*
+
+Repair instruction offered two paths: (a) add an explicit lemma
+specifying the finite-volume operators `A_k`, `q_k`, the Ward/commutator
+lower bound `|<[q_k, A_-k]>| >= c|m_L|` with L-independent constants, and
+the susceptibility normalization; or (b) narrow.
+
+Adding the fully-stated, L-independent-constant Ward/commutator lemma is
+substantive new work (it is the technical heart of a rigorous
+Mermin-Wagner proof). This repair takes the **split path**:
+
+- **Load-bearing (in scope):** the finite Gibbs-state Bogoliubov
+  inequality, the lattice Goldstone dispersion
+  `E_k = 2 Σ_μ(1 − cos k_μ)`, the IR sum `I_d(L) = L^{-d} Σ_{k≠0} 1/E_k`,
+  and its dimension threshold (`d=1` exact identity, `d=2` log
+  divergence, `d=3` finite-window). These are the finite-dimensional
+  Hilbert-space facts the runner verifies.
+- **Conditional / NON-load-bearing (split off):** the extraction of the
+  order parameter bound `|m_L|² ≤ C'/I_d` and the consequent
+  vanishing-order-parameter (no continuous-symmetry SSB) conclusion.
+  This step requires the **order-operator / charge-mode Ward (or
+  commutator) normalization lemma** — explicit `A_k`, `q_k`, the lower
+  bound `|<[q_k, A_-k]>| ≥ c|m_L|` with **L-independent** constants, and
+  the susceptibility normalization — which this packet does **not** fully
+  state or close. It is recorded as a conditional consequence, valid IF
+  that Ward-normalization lemma is supplied.
+
+Downstream consumers that need the finite Bogoliubov inequality + IR
+divergence behavior can cite this row directly; consumers that need the
+`|m_L| → 0` no-SSB conclusion must carry the conditional Ward-lemma
+dependency. No new axiom, import, or retained bridge is introduced.
 
 ## Purpose
 

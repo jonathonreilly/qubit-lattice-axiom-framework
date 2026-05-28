@@ -64879,7 +64879,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "e2e161570f972598ad485eec61bbac30f2147f0858c0b5f5bdaf86ec4029fbe3",
+      "note_hash": "d23b17be211388344d0f0cdf1f39843f5bd48332c8ec04f9d08fb0060fd0feb2",
       "path": "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
       "runner_path": "scripts/mermin_wagner_bogoliubov_bounded_certificate.py",
       "title": "Mermin-Wagner / Hohenberg Bogoliubov Infrared Certificate"

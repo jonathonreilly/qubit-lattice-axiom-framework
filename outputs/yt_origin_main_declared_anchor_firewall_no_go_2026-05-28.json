@@ -1,0 +1,40 @@
+{
+  "actual_current_surface_status": "no-go / forbidden declared-anchor remote subchain",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "fail_count": 0,
+  "forbidden_inputs_present": {
+    "<P>": true,
+    "Ward Clebsch": true,
+    "Ward-boundary": true,
+    "alpha_LM": true,
+    "kappa_EW": true,
+    "observed": true,
+    "plaquette": true,
+    "u_0": true
+  },
+  "origin_main_audit_scope": {
+    "declared_effective_status": "retained_bounded",
+    "zero_import_effective_status": "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+    "zero_import_open_dependency_paths": [
+      "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+      "docs/RCONN_DERIVED_NOTE.md",
+      "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
+    ]
+  },
+  "origin_main_commit": "1bc92b75b5f7fef6dd0e78b90dc2548bc64d3864",
+  "pass_count": 46,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The origin/main declared-anchor Y_T bounded subchain is explicitly retained-bounded only over declared plaquette/u0/alpha_LM, kappa_EW, and Ward-boundary/Clebsch inputs. Those are forbidden or open inputs for this campaign, so the remote packet cannot be imported as a positive-closure proof input.",
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md",
+    "scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py",
+    "outputs/yt_origin_main_declared_anchor_firewall_no_go_2026-05-28.json",
+    "origin/main:docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md",
+    "origin/main:docs/YT_ZERO_IMPORT_CHAIN_NOTE.md"
+  ],
+  "route_pruned": "use origin/main declared-anchor Y_T bounded subchain as current campaign closure proof",
+  "route_still_live": "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows",
+  "trace_class": "negative_route_pruning"
+}

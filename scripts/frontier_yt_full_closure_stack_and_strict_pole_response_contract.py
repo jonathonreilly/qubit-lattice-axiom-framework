@@ -40,6 +40,9 @@ This runner verifies the current burn-down state:
   accepted top/W pole-row certificate under another artifact name.
 * The origin/main strict pole-row refresh no-go confirms that the freshly
   fetched mainline surface also does not supply the missing strict packet.
+* The origin/main declared-anchor firewall no-go confirms that the mainline
+  declared-anchor Y_T bounded subchain relies on inputs forbidden in this
+  campaign and cannot be imported as closure.
 * The microscopic backend/projector/matrix-element boundary prunes the current
   non-compute shortcut: source law, carrier amplitude, C3 algebra, W row, and
   no-kappa candidate do not derive the accepted top projector or matrix
@@ -216,6 +219,7 @@ C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY = DOCS / "YT_C3_CIRCULANT_DYN
 STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT = DOCS / "YT_STRICT_SPARSE_TOP_W_POLE_RESPONSE_AVAILABILITY_AUDIT_NOTE_2026-05-27.md"
 STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO = DOCS / "YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md"
 ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO = DOCS / "YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md"
+ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO = DOCS / "YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md"
 MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY = DOCS / "YT_MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_NOTE_2026-05-27.md"
 C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO = DOCS / "YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md"
 C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY = DOCS / "YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md"
@@ -297,6 +301,7 @@ C3_CIRCULANT_DYNAMICS_ORDERING_SOURCE_LAW_BOUNDARY_OUT = ROOT / "outputs" / "yt_
 STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT = ROOT / "outputs" / "yt_strict_sparse_top_w_pole_response_availability_audit_2026-05-27.json"
 STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO_OUT = ROOT / "outputs" / "yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json"
 ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT = ROOT / "outputs" / "yt_origin_main_strict_pole_row_refresh_no_go_2026-05-28.json"
+ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT = ROOT / "outputs" / "yt_origin_main_declared_anchor_firewall_no_go_2026-05-28.json"
 MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT = ROOT / "outputs" / "yt_microscopic_backend_projector_matrix_element_boundary_2026-05-27.json"
 C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT = ROOT / "outputs" / "yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json"
 C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT = ROOT / "outputs" / "yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json"
@@ -409,6 +414,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT,
         STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO,
         ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO,
+        ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO,
         MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY,
         C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO,
         C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY,
@@ -475,6 +481,7 @@ def part1_anchors() -> dict[str, str]:
         STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT,
         STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO_OUT,
         ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT,
+        ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT,
         MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT,
         C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT,
         C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT,
@@ -543,6 +550,7 @@ def part1_anchors() -> dict[str, str]:
         "strict sparse pole-response availability audit",
         "strict pole-row repository discovery no-go",
         "origin/main strict pole-row refresh no-go",
+        "origin/main declared-anchor firewall no-go",
         "microscopic backend/projector/matrix-element boundary",
         "positive real C3 transfer/Perron selection",
         "phase-ordering cone",
@@ -629,6 +637,7 @@ def part2_support_outputs() -> dict[str, Any]:
     strict_sparse_top_w_availability_audit = load_json(STRICT_SPARSE_TOP_W_AVAILABILITY_AUDIT_OUT)
     strict_pole_row_repository_discovery_nogo = load_json(STRICT_POLE_ROW_REPOSITORY_DISCOVERY_NOGO_OUT)
     origin_main_strict_pole_refresh_nogo = load_json(ORIGIN_MAIN_STRICT_POLE_REFRESH_NOGO_OUT)
+    origin_main_declared_anchor_firewall_nogo = load_json(ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NOGO_OUT)
     microscopic_backend_projector_matrix_element_boundary = load_json(MICROSCOPIC_BACKEND_PROJECTOR_MATRIX_ELEMENT_BOUNDARY_OUT)
     c3_positive_transfer_perron_top_line_nogo = load_json(C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NOGO_OUT)
     c3_phase_ordering_cone_support_boundary = load_json(C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_OUT)
@@ -1267,6 +1276,20 @@ def part2_support_outputs() -> dict[str, Any]:
         is False,
     )
     check(
+        "origin/main declared-anchor firewall no-go passed",
+        origin_main_declared_anchor_firewall_nogo.get("fail_count") == 0,
+        origin_main_declared_anchor_firewall_nogo.get("fail_count"),
+    )
+    check(
+        "origin/main declared-anchor firewall is route pruning",
+        origin_main_declared_anchor_firewall_nogo.get("trace_class") == "negative_route_pruning",
+        origin_main_declared_anchor_firewall_nogo.get("trace_class"),
+    )
+    forbidden_inputs = origin_main_declared_anchor_firewall_nogo.get("forbidden_inputs_present", {})
+    check("origin/main declared-anchor packet mentions alpha_LM", forbidden_inputs.get("alpha_LM") is True)
+    check("origin/main declared-anchor packet mentions plaquette", forbidden_inputs.get("plaquette") is True)
+    check("origin/main zero-import row is decoration", str(origin_main_declared_anchor_firewall_nogo.get("origin_main_audit_scope", {}).get("zero_import_effective_status", "")).startswith("decoration"))
+    check(
         "microscopic backend/projector/matrix-element boundary passed",
         microscopic_backend_projector_matrix_element_boundary.get("fail_count") == 0,
         microscopic_backend_projector_matrix_element_boundary.get("fail_count"),
@@ -1711,6 +1734,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "strict_sparse_top_w_availability_audit": strict_sparse_top_w_availability_audit,
         "strict_pole_row_repository_discovery_nogo": strict_pole_row_repository_discovery_nogo,
         "origin_main_strict_pole_refresh_nogo": origin_main_strict_pole_refresh_nogo,
+        "origin_main_declared_anchor_firewall_nogo": origin_main_declared_anchor_firewall_nogo,
         "microscopic_backend_projector_matrix_element_boundary": microscopic_backend_projector_matrix_element_boundary,
         "c3_positive_transfer_perron_top_line_nogo": c3_positive_transfer_perron_top_line_nogo,
         "c3_phase_ordering_cone_support_boundary": c3_phase_ordering_cone_support_boundary,
@@ -2122,7 +2146,9 @@ def main() -> int:
             "factorization plus zero-singlet nontrivial-block support, but those inputs remain open "
             "and coefficient-certified top/W response evidence remains absent. "
             "The origin/main refresh confirms the fetched mainline surface also "
-            "does not supply the missing strict top/W pole-row packet."
+            "does not supply the missing strict top/W pole-row packet. "
+            "The origin/main declared-anchor bounded subchain is not usable "
+            "here because it depends on campaign-forbidden declared anchors."
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
@@ -2178,6 +2204,7 @@ def main() -> int:
             "strict_sparse_top_w_availability_audit_fail_count": support_outputs["strict_sparse_top_w_availability_audit"].get("fail_count"),
             "strict_pole_row_repository_discovery_nogo_fail_count": support_outputs["strict_pole_row_repository_discovery_nogo"].get("fail_count"),
             "origin_main_strict_pole_refresh_nogo_fail_count": support_outputs["origin_main_strict_pole_refresh_nogo"].get("fail_count"),
+            "origin_main_declared_anchor_firewall_nogo_fail_count": support_outputs["origin_main_declared_anchor_firewall_nogo"].get("fail_count"),
             "microscopic_backend_projector_matrix_element_boundary_fail_count": support_outputs["microscopic_backend_projector_matrix_element_boundary"].get("fail_count"),
             "c3_positive_transfer_perron_top_line_nogo_fail_count": support_outputs["c3_positive_transfer_perron_top_line_nogo"].get("fail_count"),
             "c3_phase_ordering_cone_support_boundary_fail_count": support_outputs["c3_phase_ordering_cone_support_boundary"].get("fail_count"),
@@ -2300,6 +2327,9 @@ def main() -> int:
             "docs/YT_ORIGIN_MAIN_STRICT_POLE_ROW_REFRESH_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py",
             "outputs/yt_origin_main_strict_pole_row_refresh_no_go_2026-05-28.json",
+            "docs/YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py",
+            "outputs/yt_origin_main_declared_anchor_firewall_no_go_2026-05-28.json",
         ],
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

@@ -1210,6 +1210,14 @@ origin/main Y_T output satisfies the positive packet fields.  This prunes only
 the remote-refresh shortcut; the strict route remains live as a future
 production route.
 
+[`YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md`](YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md)
+also checks a second origin/main temptation: importing the audited
+declared-anchor Y_T bounded subchain.  That packet is retained-bounded only
+over declared `<P>`, plaquette/u0, `alpha_LM`, `kappa_EW`, and
+Ward-boundary/Clebsch anchors.  Those are forbidden or open inputs for this
+campaign, so the remote bounded subchain cannot serve as the positive-closure
+proof input.
+
 [`YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md`](YT_STRICT_WZ_C3_TOP_ROW_SPLICE_NO_GO_NOTE_2026-05-27.md)
 then tests whether the closed strict W/Z denominator support can be spliced
 with the conditional C3 target row to make the missing strict packet.  The
@@ -1701,6 +1709,10 @@ proposal_allowed_reason: |
   strict row outputs absent, its FH response outputs still mark strict rows as
   absent, and no scanned origin/main Y_T output completes the positive strict
   packet fields.
+  The origin/main declared-anchor firewall no-go prunes the other mainline
+  temptation: retained-bounded algebra over declared plaquette/u0,
+  `alpha_LM`, `kappa_EW`, and Ward-boundary anchors is not admissible as proof
+  input under this campaign's forbidden-input list.
   Strict same-source response evidence is not present, so retained or
   proposed-retained Y_T wording is not allowed.
 bare_retained_allowed: false

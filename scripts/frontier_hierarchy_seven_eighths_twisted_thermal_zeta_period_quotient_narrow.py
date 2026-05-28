@@ -27,7 +27,20 @@ integral).
 Pure class-A rational-arithmetic + classical analytic-number-theory
 identity. No framework axiom or admission is consumed.
 
-Target: PASS = 18, FAIL = 0.
+The load-bearing trace step (eqs (1)-(2) of the source note) is the
+Matsubara frequency rescaling: each spectral trace sum_n omega_n^(-s)
+carries mass-dimension -s and is made dimensionless by measuring the
+modes in units of the relevant fundamental Matsubara frequency. The
+bosonic ladder omega_n = 2 pi n / beta is rescaled by (2 pi / beta)^s
+to give n^(-s) (-> zeta(s)); the APBC fermionic ladder
+omega_n = (2n+1) pi / beta is rescaled by (pi / beta)^s to give
+(2n+1)^(-s) (-> lambda(s)). The rescaling factor is the *reciprocal*
+of the dimensionful mode-scale; the as-written reciprocal (beta/2pi)^s
+leaves a residual beta-dependence and is rejected. T0a-T0f below check
+this rescaling step explicitly (symbolically with general beta and
+numerically at beta = 3 != 2 pi).
+
+Target: PASS = 24, FAIL = 0.
 """
 
 from __future__ import annotations
@@ -95,6 +108,161 @@ def lambda_func(s):
 def lambda_numeric(s):
     """Numeric Dirichlet lambda for mpmath."""
     return (mpmath.mpf(1) - mpmath.power(2, -s)) * mpmath.zeta(s)
+
+
+# ============================================================================
+section("Part 0: Matsubara frequency rescaling (load-bearing trace step T0)")
+# Statement: the load-bearing trace step (eqs (1)-(2) of the source note).
+# A spectral trace sum_n omega_n^(-s) over Matsubara frequencies carries
+# mass-dimension -s; to obtain the dimensionless period quotient each mode is
+# measured in units of its fundamental Matsubara frequency:
+#   bosonic  omega_n = 2 pi n / beta   rescaled by (2 pi / beta)^s -> n^(-s)
+#   APBC ferm omega_n = (2n+1) pi/beta rescaled by (pi / beta)^s  -> (2n+1)^(-s)
+# The rescaling factor is the reciprocal of the dimensionful mode-scale; the
+# as-written reciprocal (beta/2pi)^s leaves a residual beta-dependence (this is
+# the audit's objection, checked negatively in T0c/T0d). The corrected factor
+# makes both traces exactly beta-independent so the quotient Q(s) is a pure
+# number.
+# ============================================================================
+
+
+def t0a_bosonic_rescaling_symbolic() -> bool:
+    # (2 pi n / beta)^(-s) * (2 pi / beta)^s == n^(-s), beta-free for general beta.
+    beta = sp.symbols("beta", positive=True)
+    n = sp.symbols("n", positive=True)
+    s = sp.symbols("s", positive=True)
+    omega = 2 * sp.pi * n / beta
+    term = omega ** (-s) * (2 * sp.pi / beta) ** s
+    return simplify(term - n ** (-s)) == 0
+
+
+check(
+    "T0a: bosonic (2 pi n/beta)^(-s) * (2 pi/beta)^s = n^(-s) symbolic (beta-free)",
+    t0a_bosonic_rescaling_symbolic(),
+    detail="dimensionless bosonic Matsubara trace -> zeta(s), general symbolic beta",
+)
+
+
+def t0b_fermionic_rescaling_symbolic() -> bool:
+    # ((2m+1) pi / beta)^(-s) * (pi / beta)^s == (2m+1)^(-s), beta-free.
+    beta = sp.symbols("beta", positive=True)
+    m = sp.symbols("m", nonnegative=True)
+    s = sp.symbols("s", positive=True)
+    omega = (2 * m + 1) * sp.pi / beta
+    term = omega ** (-s) * (sp.pi / beta) ** s
+    return simplify(term - (2 * m + 1) ** (-s)) == 0
+
+
+check(
+    "T0b: fermionic ((2m+1) pi/beta)^(-s) * (pi/beta)^s = (2m+1)^(-s) symbolic (beta-free)",
+    t0b_fermionic_rescaling_symbolic(),
+    detail="dimensionless APBC Matsubara trace -> lambda(s), general symbolic beta",
+)
+
+
+def t0c_bosonic_wrong_factor_leaves_beta() -> bool:
+    # The as-written reciprocal (beta/2pi)^s does NOT make the bosonic trace
+    # dimensionless: the per-term result still depends on beta. This is the
+    # audit's objection -> the as-written factor is rejected. PASS == "is
+    # NOT beta-free".
+    beta = sp.symbols("beta", positive=True)
+    n = sp.symbols("n", positive=True)
+    s = sp.symbols("s", positive=True)
+    omega = 2 * sp.pi * n / beta
+    term_wrong = omega ** (-s) * (beta / (2 * sp.pi)) ** s
+    return simplify(term_wrong - n ** (-s)) != 0
+
+
+check(
+    "T0c: as-written bosonic factor (beta/2pi)^s leaves residual beta-dependence (rejected)",
+    t0c_bosonic_wrong_factor_leaves_beta(),
+    detail="audit objection: reciprocal factor wrong-direction; corrected factor is unique",
+)
+
+
+def t0d_fermionic_wrong_factor_leaves_beta() -> bool:
+    # The as-written fermionic factor (beta/2pi)^s * 2^s does NOT make the
+    # APBC trace dimensionless either. PASS == "is NOT beta-free".
+    beta = sp.symbols("beta", positive=True)
+    m = sp.symbols("m", nonnegative=True)
+    s = sp.symbols("s", positive=True)
+    omega = (2 * m + 1) * sp.pi / beta
+    term_wrong = omega ** (-s) * (beta / (2 * sp.pi)) ** s * sp.Rational(2) ** s
+    return simplify(term_wrong - (2 * m + 1) ** (-s)) != 0
+
+
+check(
+    "T0d: as-written fermionic factor (beta/2pi)^s * 2^s leaves residual beta-dependence (rejected)",
+    t0d_fermionic_wrong_factor_leaves_beta(),
+    detail="audit objection: reciprocal factor wrong-direction; corrected factor (pi/beta)^s is unique",
+)
+
+
+def t0e_bosonic_trace_numeric_beta_not_2pi() -> bool:
+    # 40-digit mpmath: at beta = 3 != 2 pi, s = 4, the rescaled bosonic trace
+    # sum_{n>=1} (2 pi n/beta)^(-s) (2 pi/beta)^s reproduces zeta(4); the
+    # as-written factor (beta/2pi)^s does NOT. Use mpmath.nsum (convergence-
+    # accelerated infinite sum) so there is no truncation residual.
+    mpmath.mp.dps = 40
+    beta = mpmath.mpf("3.0")
+    two_pi = 2 * mpmath.pi
+    s_val = 4
+    rescale = mpmath.power(two_pi / beta, s_val)
+    corrected = mpmath.nsum(
+        lambda n: mpmath.power(two_pi * n / beta, -s_val) * rescale, [1, mpmath.inf]
+    )
+    if abs(corrected - mpmath.zeta(s_val)) > mpmath.mpf("1e-25"):
+        return False
+    # The as-written reciprocal factor must visibly fail to reproduce zeta(4).
+    rescale_wrong = mpmath.power(beta / two_pi, s_val)
+    as_written = mpmath.nsum(
+        lambda n: mpmath.power(two_pi * n / beta, -s_val) * rescale_wrong,
+        [1, mpmath.inf],
+    )
+    if abs(as_written - mpmath.zeta(s_val)) < mpmath.mpf("1e-3"):
+        return False
+    return True
+
+
+check(
+    "T0e: rescaled bosonic trace at beta=3!=2pi reproduces zeta(4); as-written factor fails",
+    t0e_bosonic_trace_numeric_beta_not_2pi(),
+    detail="40-digit mpmath nsum (convergence-accelerated), dimensionless-trace check of eq (1)",
+)
+
+
+def t0f_fermionic_trace_numeric_beta_not_2pi() -> bool:
+    # 40-digit mpmath: at beta = 3 != 2 pi, s = 4, the rescaled APBC fermionic
+    # trace sum_{n>=0} ((2n+1) pi/beta)^(-s) (pi/beta)^s reproduces lambda(4);
+    # the as-written factor (beta/2pi)^s * 2^s does NOT. Use mpmath.nsum
+    # (convergence-accelerated) so there is no truncation residual.
+    mpmath.mp.dps = 40
+    beta = mpmath.mpf("3.0")
+    pi = mpmath.pi
+    two_pi = 2 * pi
+    s_val = 4
+    rescale = mpmath.power(pi / beta, s_val)
+    corrected = mpmath.nsum(
+        lambda n: mpmath.power((2 * n + 1) * pi / beta, -s_val) * rescale,
+        [0, mpmath.inf],
+    )
+    if abs(corrected - lambda_numeric(s_val)) > mpmath.mpf("1e-25"):
+        return False
+    rescale_wrong = mpmath.power(beta / two_pi, s_val) * mpmath.power(2, s_val)
+    as_written = mpmath.nsum(
+        lambda n: mpmath.power((2 * n + 1) * pi / beta, -s_val) * rescale_wrong,
+        [0, mpmath.inf],
+    )
+    if abs(as_written - lambda_numeric(s_val)) < mpmath.mpf("1e-3"):
+        return False
+    return True
+
+
+check(
+    "T0f: rescaled fermionic trace at beta=3!=2pi reproduces lambda(4); as-written factor fails",
+    t0f_fermionic_trace_numeric_beta_not_2pi(),
+    detail="40-digit mpmath nsum (convergence-accelerated), dimensionless-trace check of eq (2)",
+)
 
 
 # ============================================================================

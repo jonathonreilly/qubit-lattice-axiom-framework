@@ -23,7 +23,7 @@ the primitive singular top-readout law remain load-bearing.
 Cycle 15 science commit:
 
 ```text
-pending
+2d6c0fe014ef7967c7590b39cef912554437210d
 ```
 
 Cycle 15 verification:
@@ -51,6 +51,9 @@ closure. The twenty-ninth block is exact support: the primitive singular
 boundary intervention selects the nontrivial real C3 block on the
 reflection-even curve, but the physical singular-boundary top-readout law
 remains open.
+
+PR #1980 body has been updated with the cycle 15 result, artifacts,
+verification, and next exact action.
 
 Cycle 14 adds a twenty-eighth science block, not positive retained-grade
 closure. The new block prunes the shortcut

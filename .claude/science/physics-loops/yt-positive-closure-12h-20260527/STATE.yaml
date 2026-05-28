@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 21579
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T00:31:41Z"
+last_checkpoint_utc: "2026-05-28T00:33:22Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_primitive_singular_boundary_intervention_support
@@ -450,8 +450,11 @@ commands_run:
   - "python3 -m py_compile scripts/frontier_yt_c3_primitive_singular_boundary_intervention_support.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_mininfo_hard_boundary_face_selector_support.py scripts/frontier_yt_c3_hard_boundary_readout_law_underdetermination.py scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py scripts/frontier_yt_primitive_record_intervention_law.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py scripts/frontier_yt_first_principles_transfer_response_boundary.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS"
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
+  - "git commit -m 'Add C3 primitive singular-boundary support' -> 2d6c0fe014ef7967c7590b39cef912554437210d"
+  - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
+  - "gh pr edit 1980 --body-file /tmp/pr1980_body_cycle15.XXXXXX.md -> PR body updated"
 review_disposition: pass_for_support_boundary_only
-pr_status: "pending cycle 15 PR body update"
-latest_science_commit: pending
+pr_status: "PR #1980 body updated with the C3 primitive singular-boundary support result, artifacts, verification, and next exact action."
+latest_science_commit: 2d6c0fe014ef7967c7590b39cef912554437210d
 next_exact_action: "Derive/accept primitive singular-boundary top-readout law with same-surface generator factorization, derive another accepted zero-singlet top-block law, or produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

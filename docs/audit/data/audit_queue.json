@@ -68,24 +68,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "s3_cap_uniqueness_note",
-      "claim_scope": null,
+      "claim_scope": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: connected closed triangulated boundary checks, chi_boundary=2, cone boundary/base matching, paired non-base cone faces, apex link equal to the boundary triangulation, and chi_cap=1. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 21,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 19.964,
       "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
       "transitive_descendants": 705

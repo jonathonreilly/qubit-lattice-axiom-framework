@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 240,
+    "critical": 239,
     "high": 339,
     "leaf": 325,
     "medium": 335
@@ -68,25 +68,30 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
-      "claim_scope": "Bounded algebraic top-Yukawa subchain over declared anchors only: N_c=3, declared plaquette <P>=0.5934, F_adj=(N_c^2-1)/N_c^2, kappa_EW=0, Ward Clebsch 1/sqrt(6), and alpha_bare=1/(4 pi). The audit covers only the derived algebraic identities for u0, alpha_LM, alpha_s(v), K_EW(0), taste weight, g_lattice, and y_t(M_Pl); it does not derive the anchors, run RGE, or compare to observed SM values.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_zero_import_chain_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+        "plaquette_self_consistency_note",
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "rconn_derived_note"
+      ],
+      "direct_in_degree": 10,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.525,
-      "note_path": "docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 14.022,
+      "note_path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
-      "transitive_descendants": 520
+      "transitive_descendants": 519
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1469,33 +1474,6 @@
       "ready": false,
       "runner_path": "scripts/verify_cl3_sm_embedding.py",
       "transitive_descendants": 553
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_zero_import_chain_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
-        "plaquette_self_consistency_note",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "rconn_derived_note"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.022,
-      "note_path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
-      "transitive_descendants": 519
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -37271,5 +37249,5 @@
     }
   ],
   "ready_count": 63,
-  "total_pending": 1239
+  "total_pending": 1238
 }

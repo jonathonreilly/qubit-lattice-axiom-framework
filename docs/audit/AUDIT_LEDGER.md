@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 534 |
+| **retained_bounded** | 535 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
 | unaudited | 1237 |
-| audit_in_progress | 1 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,8 +56,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 828 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 829 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 45 |
@@ -130,7 +129,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -951,6 +949,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -14256,6 +14255,19 @@ Claim boundary until fixed: the current runner gives useful bounded evidence tha
 - **load-bearing step:** Two completions, kappa_Y = 0 with K_Y = 8/9 and kappa_Y = 1 with K_Y = 1, share the same retained Fierz channel fractions and color-blind scaling law, so those premises do not determine the connected-trace selector.  _(class `A`)_
 - **chain closes:** True — The cited authority supplies only the exact adjoint and singlet channel fractions, and it explicitly leaves matching/readout rules outside its derivation. The source note's two-completion witness is enough to show underdetermination on that restricted premise set.
 - **rationale:** The no-go is narrowly scoped to non-derivability from the restricted packet, not to impossibility across the full framework. Its load-bearing step is an algebraic independence witness over the cited channel fractions: the same retained primitive data permit kappa_Y = 0 and kappa_Y = 1 with different K_Y values. The cited Fierz authority is retained-grade decoration and does not contain a closed Yukawa readout theorem. The No-Go Discipline gate is satisfied in-packet: alternative routes are enumerated, the wall is collapsed to the missing selector theorem, hidden wording is scoped, and the steelman is left as future work rather than overruled.
+- **auditor confidence:** high
+
+### `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/YT_DECLARED_ANCHOR_BOUNDED_SUBCHAIN_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded top-Yukawa algebraic subchain over declared <P>=0.5934, F_adj=8/9, kappa_EW=0, Ward Clebsch 1/sqrt(6), and alpha_bare=1/(4*pi), with no anchor derivation, RGE run, or observed-SM comparison.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-context-yt-declared-anchor-20260528-r2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The listed identities follow by direct algebra from the declared inputs and definitions of u0, alpha_LM, alpha_s(v), K_EW, g_lattice, and y_t(M_Pl).  _(class `A`)_
+- **chain closes:** True — Independent fresh-context check confirms alpha_LM^2=(alpha_bare/u0)^2=alpha_bare*(alpha_bare/u0^2)=alpha_bare*alpha_s(v), K_EW(0)=1/(8/9)=9/8, (7/8)*(1/2)*(8/9)=7/18, and y_t(M_Pl)=sqrt(4*pi*alpha_LM)/sqrt(6).
+- **rationale:** The bounded declared-anchor algebra closes. The source and runner do not claim to derive the plaquette, kappa_EW=0, Ward Clebsch, RGE bridge, or observed top value, so those remain outside this retained-bounded scope.
 - **auditor confidence:** high
 
 ### `yt_ew_color_projection_theorem`

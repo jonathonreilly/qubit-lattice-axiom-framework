@@ -161372,24 +161372,50 @@
       "verdict_rationale": null
     },
     "lanes.ordered-lattice.readme": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T05:57:18.842062+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "continuum_bridge_note": null,
+          "same_family_3d_closure_note": "Fixed finite-lattice 3D valley-linear closure for h=0.25, W=10, L=12 core rows, same-h,W L=8,10,12 rows, and the W=10 tail, with the W=12 companion supplied only by retained-bounded dependency.",
+          "structured_chokepoint_bridge_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "continuum_bridge_note": "meta",
+          "same_family_3d_closure_note": "bounded_theorem",
+          "structured_chokepoint_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "continuum_bridge_note": "meta",
+          "same_family_3d_closure_note": "retained_bounded",
+          "structured_chokepoint_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "continuum_bridge_note",
+          "same_family_3d_closure_note",
+          "structured_chokepoint_bridge_note"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-ordered-lattice-lane-readme",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The README names and routes to underlying ordered-lattice authority surfaces; it does not derive a new ordered-lattice theorem or recompute the runner's ten-property card itself.",
       "claim_id": "lanes.ordered-lattice.readme",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Lane navigation/status summary for ordered-lattice work: the README groups dense spent-delay, nearest-neighbor refinement, and structured chokepoint/generated-symmetry bridge artifacts, and records dependency-repair links to in-docs authority surfaces. It explicitly says the README is a lane index, not an authority surface.",
+      "claim_type": "meta",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T05:57:18.842062+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -161399,19 +161425,19 @@
         "same_family_3d_closure_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 2.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The Audit dependency repair links section states that the links let the citation graph track one-hop edges and do not promote this README because it is a lane index, not an authority surface.",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "meta",
       "max_descendant_status_rank": 25,
       "note_hash": "fa27a50e8cc9a7f317f78df3fa5d8a4e4d5cf0bb7322167306bfcd67163a9a4d",
       "note_path": "docs/lanes/ordered-lattice/README.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "other: keep as meta navigation unless a new standalone ordered-lattice theorem is split into its own source note.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -161538,18 +161564,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
+        "total_fail": 0,
         "total_pass": 0
       },
       "runner_path": "scripts/lattice_3d_dense_10prop.py",
       "title": "Ordered-Lattice Lane",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the selected row is a lane index/status label, not a positive theorem. Why this blocks: its own text says the dependency links are graph repair and do not promote the README; the substantive scientific content remains in cited notes such as same_family_3d_closure_note, structured_chokepoint_bridge_note, and continuum_bridge_note. Repair target: split any intended standalone ordered-lattice theorem into a source note with a specific audited claim and runner. Claim boundary until fixed: cite this file only as navigation/meta framing; cite the underlying audited notes for bounded scientific content."
     },
     "lanes.readme": {
       "audit_date": null,

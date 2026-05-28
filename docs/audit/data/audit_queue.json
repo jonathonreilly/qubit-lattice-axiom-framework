@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 230,
     "high": 317,
-    "leaf": 322,
+    "leaf": 321,
     "medium": 300
   },
   "cycle_break_target_count": 4,
@@ -26089,32 +26089,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lanes.ordered-lattice.readme",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "continuum_bridge_note",
-        "structured_chokepoint_bridge_note",
-        "same_family_3d_closure_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/lanes/ordered-lattice/README.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_3d_dense_10prop.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35496,6 +35470,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 44,
-  "total_pending": 1169
+  "ready_count": 43,
+  "total_pending": 1168
 }

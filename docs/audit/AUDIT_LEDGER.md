@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 572 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1169 |
+| unaudited | 1168 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
-| ~~audited_renaming~~ | 19 |
+| ~~audited_renaming~~ | 20 |
 | ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -63,17 +63,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
-| `audited_renaming` | 19 |
-| `unaudited` | 1399 |
+| `audited_renaming` | 20 |
+| `unaudited` | 1398 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1107 |
 | `decoration` | 52 |
-| `meta` | 235 |
+| `meta` | 236 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 699 |
+| `positive_theorem` | 698 |
 
 | criticality | count |
 |---|---:|
@@ -1183,6 +1183,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `lanes.ordered-lattice.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -7980,6 +7981,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The Current Standing section labels the lane as old generated-geometry positives plus a current partial reopen and says not to conflate the two.  _(class `F`)_
 - **chain closes:** False — The README routes the reader to already-audited bounded rows; it does not derive any new finite table, physical bridge, or generated-geometry theorem itself.
 - **rationale:** Issue: the source note is a lane index/status label, not a standalone bounded theorem. Why this blocks: the only substantive scientific claims are delegated to cited rows such as gate_b_grown_joint_package_note, source_resolved_generated_architecture_bridge_note, and emergent_geometry_growth_note_2026-04-10; the README itself adds no load-bearing computation or proof beyond grouping and naming that surface. Repair target: if a separate theorem is intended, write a source note with a specific claim, dependencies, runner, and scoped conclusion rather than using the lane index. Claim boundary until fixed: safely cite this file only as navigation/meta framing; cite the underlying audited source notes for retained bounded scientific content.
+- **auditor confidence:** high
+
+### `lanes.ordered-lattice.readme`
+
+- **Note:** [`lanes/ordered-lattice/README.md`](../../docs/lanes/ordered-lattice/README.md)
+- **claim_type:** `meta`
+- **claim_scope:** Lane navigation/status summary for ordered-lattice work: the README groups dense spent-delay, nearest-neighbor refinement, and structured chokepoint/generated-symmetry bridge artifacts, and records dependency-repair links to in-docs authority surfaces. It explicitly says the README is a lane index, not an authority surface.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-ordered-lattice-lane-readme`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Audit dependency repair links section states that the links let the citation graph track one-hop edges and do not promote this README because it is a lane index, not an authority surface.  _(class `F`)_
+- **chain closes:** False — The README names and routes to underlying ordered-lattice authority surfaces; it does not derive a new ordered-lattice theorem or recompute the runner's ten-property card itself.
+- **rationale:** Issue: the selected row is a lane index/status label, not a positive theorem. Why this blocks: its own text says the dependency links are graph repair and do not promote the README; the substantive scientific content remains in cited notes such as same_family_3d_closure_note, structured_chokepoint_bridge_note, and continuum_bridge_note. Repair target: split any intended standalone ordered-lattice theorem into a source note with a specific audited claim and runner. Claim boundary until fixed: cite this file only as navigation/meta framing; cite the underlying audited notes for bounded scientific content.
 - **auditor confidence:** high
 
 ### `lattice_3d_dense_refinement_reconciliation_note`

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
-runner_sha256: 12db9415d3223c30be1022e8a55f207a327717b4e0b1699095459cfabae5d05a
+runner_sha256: b74df2ba8f3e6211211ff40bb014ac36f2bd7d70f837030c2cf83fb16b9e23bf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -20,6 +20,7 @@ PART 0: SOURCE FIREWALL
   [PASS] source note states boundary phrase: does not compute or retain eta/eta_obs diagnostics
   [PASS] source note states boundary phrase: does not import dm_leptogenesis_exact_common
   [PASS] source note states boundary phrase: No new repo-wide axiom is introduced
+  [PASS] source note states boundary phrase: simple (non-degenerate) spectra
   [PASS] source note states boundary phrase: scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
   [PASS] runner source excludes transport helper phrase: from dm_leptogenesis_exact_common import
   [PASS] runner source excludes transport helper phrase: solve_multisource_flavored_transport
@@ -43,6 +44,15 @@ PART 2: EIGENVECTOR REPHASING INVARIANCE
   [PASS] |U_pair|^2 is invariant under independent eigenvector rephasings  (max err=7.06e-16, samples=72)
 
 ========================================================================================
+PART 2b: DEGENERATE-SPECTRUM NON-INVARIANCE (scope boundary)
+========================================================================================
+  [PASS] rotated eigenbasis is still unitary  (||UU^dag - I|| = 3.64e-16)
+  [PASS] rotated eigenbasis still diagonalizes the degenerate H_nu  (off-diag = 1.15e-15)
+  [PASS] DEGENERATE pair: |U_pair|^2 CHANGES under eigenspace rotation (projector is NOT intrinsic for degenerate spectra)  (||P1 - P2|| = 0.9225 (both are valid eigenbases of the same pair))
+  ||P1 - P2|| = 0.922533 -- nonzero confirms the
+  intrinsic-projector claim is restricted to SIMPLE spectra.
+
+========================================================================================
 RESULT
 ========================================================================================
   Raw algebraic interface:
@@ -53,7 +63,7 @@ RESULT
   Carrier authority, physical N1 column selection, and eta diagnostics remain outside this repaired row.
 
 ========================================================================================
-SUMMARY: PASS=16 FAIL=0
+SUMMARY: PASS=20 FAIL=0
 ========================================================================================
 
 ----- stderr -----

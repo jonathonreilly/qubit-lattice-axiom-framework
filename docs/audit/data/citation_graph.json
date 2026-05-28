@@ -49221,7 +49221,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c48b181b1bdf4cd4add0f47a700db9398bac03b63af3298b8d9e4f900e78b617",
+      "note_hash": "27bf6dcb9a7d81ef414b1e435f4bbfef606cde3f1a3c0f362ae7a612eebeb140",
       "path": "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
       "title": "DM Leptogenesis PMNS Projector Interface"

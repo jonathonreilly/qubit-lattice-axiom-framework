@@ -57355,7 +57355,7 @@
         "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "04da5ba4204a232486f847a604fd9125cb4ba98a8f26d7d94c92bef4b950d340",
+      "note_hash": "0c95da7b313c7bed27510b3eb730691163acd8517dd753d962000b37af8764fe",
       "path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
       "runner_path": "scripts/frontier_gravity_sign_well_hill_diagnostic.py",
       "title": "Gravity Sign Well/Hill Diagnostic"

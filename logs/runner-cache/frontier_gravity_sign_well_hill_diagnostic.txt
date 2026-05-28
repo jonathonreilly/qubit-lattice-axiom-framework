@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gravity_sign_well_hill_diagnostic.py
-runner_sha256: a190eca8ca7eb6e7376a0f108310b12f3ba9081a8d7568ede81553f7562ef8a3
+runner_sha256: bf8a906bb763c3e995dce64a8e1dd67f2fb8f42e6f38bd7fe2eb165b261602eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 Gravity sign well/hill diagnostic
@@ -12,6 +12,7 @@ Gravity sign well/hill diagnostic
   [PASS] note boundary contains: No graph self-gravity result.
   [PASS] note boundary contains: No irregular-graph directional observable closure.
   [PASS] note boundary contains: No retained verdict and no direct ledger retag.
+  [PASS] note boundary contains: LAPSE_FLOOR = 0.01
   [PASS] identity well: norm conserved  (norm=1.000000000000)
   [PASS] identity well: direction TOWARD  (disp=+1.504366)
   [PASS] identity hill: norm conserved  (norm=1.000000000000)
@@ -28,8 +29,13 @@ Gravity sign well/hill diagnostic
   [PASS] parity distinguishes well from hill
   [PASS] lapse distinguishes well from hill
 
+LAPSE REGULARIZATION REPORT (explicit per 2026-05-28 audit repair)
+  LAPSE_FLOOR = 0.01
+  well: min(1+Phi/m) = -79.0000, floored sites = 15/61 (floor ACTIVE, load-bearing)
+  hill: min(1+Phi/m) = +1.2658, floored sites = 0/61 (floor inactive)
+
 Gravity sign well/hill diagnostic: PASS
-PASS=20 FAIL=0
+PASS=21 FAIL=0
 
 ----- stderr -----
 

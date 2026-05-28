@@ -18,6 +18,18 @@ PASS = 0
 FAIL = 0
 TOL = 1.0e-9
 
+# Lapse regularization floor (made explicit per 2026-05-28 audit repair).
+# The lapse coupling forms N = 1 + Phi/m and uses sqrt(N) on both sides of
+# the Hamiltonian. In the configured WELL potential, Phi < 0 drives
+# N = 1 + Phi/m below zero at sites near the source, so a naive sqrt(N)
+# would be complex. The diagnostic floors N to LAPSE_FLOOR before the
+# square root. This floor is a REGULARIZATION of an unphysical N<0
+# configuration, not a source-stated N>=0 lapse: it is load-bearing for
+# the lapse-row direction result and is reported explicitly by the runner
+# (see report_lapse_floor_activity). The parity and identity rows do NOT
+# use this floor and reproduce without any regularization.
+LAPSE_FLOOR = 0.01
+
 
 def check(label: str, ok: bool, detail: str = "") -> None:
     global PASS, FAIL
@@ -40,7 +52,11 @@ def staggered_hamiltonian(n: int, mass: float, potential: np.ndarray, coupling: 
             h[x, (x - 1) % n] += 0.5j
             h[x, x] += mass * eps[x]
         h = h.tocsr()
-        sqrt_lapse = diags(np.sqrt(np.maximum(1.0 + potential / mass, 0.01)), format="csr")
+        lapse_raw = 1.0 + potential / mass
+        # Explicit regularization (see LAPSE_FLOOR comment): floor N before
+        # sqrt so the configured WELL (N<0 near source) stays real.
+        lapse_reg = np.maximum(lapse_raw, LAPSE_FLOOR)
+        sqrt_lapse = diags(np.sqrt(lapse_reg), format="csr")
         return (sqrt_lapse @ h @ sqrt_lapse).tocsr()
 
     for x in range(n):
@@ -106,6 +122,10 @@ def main() -> int:
         "No graph self-gravity result.",
         "No irregular-graph directional observable closure.",
         "No retained verdict and no direct ledger retag.",
+        # Couple the explicit lapse-floor disclosure to the note so the
+        # load-bearing regularization cannot be silently dropped again
+        # (2026-05-28 audit repair).
+        "LAPSE_FLOOR = 0.01",
     ]
     for phrase in required_boundary:
         check(f"note boundary contains: {phrase}", phrase in note_text)
@@ -137,10 +157,37 @@ def main() -> int:
     check("parity distinguishes well from hill", observed[("parity", "well")] != observed[("parity", "hill")])
     check("lapse distinguishes well from hill", observed[("lapse", "well")] != observed[("lapse", "hill")])
 
+    report_lapse_floor_activity()
+
     print()
     print("Gravity sign well/hill diagnostic:", "PASS" if FAIL == 0 else "FAIL")
     print(f"PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
+
+
+def report_lapse_floor_activity() -> None:
+    """Explicitly report how often the lapse floor activates (audit repair).
+
+    Makes the previously-silent LAPSE_FLOOR regularization visible: for the
+    configured well/hill potentials, print min(N) before the floor and the
+    count of floored sites so the load-bearing regularization is auditable.
+    """
+    # Mirror the exact evolve_case configuration so the report matches the
+    # tested cases (n=61, mass=0.30, g=8.0, source_strength=1.0, mass_point=38).
+    n, mass = 61, 0.30
+    print()
+    print("LAPSE REGULARIZATION REPORT (explicit per 2026-05-28 audit repair)")
+    print(f"  LAPSE_FLOOR = {LAPSE_FLOOR}")
+    signs = {"well": -1.0, "hill": 1.0}
+    for kind, sign in signs.items():
+        potential = potential_profile(n=n, mass=mass, g=8.0, source_strength=1.0, mass_point=38, sign=sign)
+        lapse_raw = 1.0 + potential / mass
+        n_floored = int(np.sum(lapse_raw < LAPSE_FLOOR))
+        print(
+            f"  {kind:>4}: min(1+Phi/m) = {lapse_raw.min():+.4f}, "
+            f"floored sites = {n_floored}/{n} "
+            f"({'floor ACTIVE, load-bearing' if n_floored else 'floor inactive'})"
+        )
 
 
 if __name__ == "__main__":

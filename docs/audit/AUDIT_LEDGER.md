@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 540 |
+| **retained_bounded** | 541 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1226 |
+| unaudited | 1225 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 835 |
+| `audited_clean` | 836 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1456 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -288,6 +288,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3755,6 +3756,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** **Script:** `scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py`  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded imported-transport interval witness on the fixed N_e parameterized family: the aligned seed evaluates below eta/eta_obs=1, a sampled off-seed endpoint evaluates above 1, and continuity gives an interpolated eta/eta_obs=1 witness; no physical source-selector law, full-stack closure, or helper-row promotion is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-dm-pmns-transport-interval-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The imported PMNS-assisted transport functional has a seed endpoint with max_i eta_i/eta_obs < 1, an off-seed endpoint with max_i eta_i/eta_obs > 1, and therefore an interpolated point with max_i eta_i/eta_obs = 1 on the same parameterized family.  _(class `A`)_
+- **chain closes:** True — The runner provides deterministic seed and off-seed endpoint values with max eta/eta_obs approximately 0.71908 and 1.05222. The evaluated transport columns are continuous functions of the finite source parameters, so the brentq interpolation witness at lambda=0.914106850348 is a valid bounded interval witness inside the imported setup.
+- **rationale:** The narrowed claim closes as a bounded diagnostic: it asserts only existence of a seed-to-overshoot interval witness for the imported transport functional and explicitly excludes physical source selection. The current runner imports the helper packet cleanly, evaluates the aligned seed below one, finds a deterministic off-seed overshoot above one, and verifies the interpolated equality witness on the same fixed-seed family. Residual risk is exactly the imported transport/helper authority and selector bridge, which the claim leaves out of scope, so retained status should remain bounded.
 - **auditor confidence:** high
 
 ### `dm_lepton_synthesis_note_2026-04-19`

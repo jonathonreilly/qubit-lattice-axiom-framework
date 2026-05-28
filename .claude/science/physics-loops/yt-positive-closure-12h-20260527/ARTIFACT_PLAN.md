@@ -77,6 +77,12 @@ Current block artifacts:
 - `docs/YT_FISHER_LSZ_RADIAL_GENERATOR_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_fisher_lsz_radial_generator_normalization_no_go.py`
 - `outputs/yt_fisher_lsz_radial_generator_normalization_no_go_2026-05-28.json`
+- `docs/YT_C3_BLOCK_RANK_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_block_rank_radial_normalization_no_go.py`
+- `outputs/yt_c3_block_rank_radial_normalization_no_go_2026-05-28.json`
+- `docs/YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py`
+- `outputs/yt_c3_fisher_quotient_radial_normalization_no_go_2026-05-28.json`
 - `docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py`
 - `outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json`
@@ -124,4 +130,7 @@ Next artifact if continuing:
   `lambda_top` free. Block rank cannot close the radial gap either:
   `rank(P_nt)=2` makes the root-rank factor visible, but root-rank averaging
   is an extra physical radial generator law unless derived from accepted
-  same-surface dynamics.
+  same-surface dynamics. The Fisher-quotient/source-geometry refinement also
+  cannot close it: the fine and binary Fisher metrics are isometric,
+  Fisher-unit C3 score normalization is only a source-coordinate
+  normalization, and `B_x` has no internal Fisher direction in `P_nt`.

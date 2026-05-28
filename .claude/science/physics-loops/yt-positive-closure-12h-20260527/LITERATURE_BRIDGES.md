@@ -98,3 +98,10 @@ No external representation-theory or operator-norm theorem is load-bearing.
 External context could only motivate accepting root-rank averaging as a
 physical radial generator law; it does not derive `lambda_top=1/sqrt(2)` on
 the current surface.
+The Fisher-quotient radial-normalization no-go directly computes the
+reflection-even C3 line-simplex Fisher metric, the binary `P_0/P_nt` quotient
+metric, the Fisher-unit C3 score normalization, and the internal `P_nt`
+centered score. No external information-geometry theorem or literature
+normalization convention is load-bearing. External context could only motivate
+accepting a new physical source-geometry-to-radial-generator law; it does not
+derive `lambda_top=1/sqrt(2)` on the current surface.

@@ -74,6 +74,11 @@ zero `B_x` variance, can supply the missing physical endpoint/readout law.
 The thirty-third route was the required deep-work stretch attempt: it tested
 whether Fisher arclength and Fisher/LSZ source normalization can force the
 missing relative radial generator factor `lambda_top=1/sqrt(2)`.
+The thirty-fourth route tested whether block rank or root-rank averaging can
+force that same radial generator factor.
+The thirty-fifth route tested whether the stronger C3 RN/Fisher quotient
+geometry or Fisher-unit source-score normalization can force that radial
+generator factor.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -111,6 +116,8 @@ missing relative radial generator factor `lambda_top=1/sqrt(2)`.
 | Radial/readout compensation | no-go shortcut test | 3 | Pruned: target magnitude imposes only `lambda_top |3s-1|=1/sqrt(2)` and cannot certify zero singlet weight, radial factorization, or source orientation/sign |
 | Sharp-response readout | no-go shortcut test | 3 | Pruned: zero `B_x` variance selects both `P_nt` and `P_0`, and `P_0` can be target-size with a compensating radial factor |
 | Fisher/LSZ radial generator normalization | deep-work no-go shortcut test | 3 | Pruned: source normalization removes raw scale `beta`, but `lambda_top` remains a relative top response coefficient |
+| Block-rank radial normalization | no-go shortcut test | 3 | Pruned: `rank(P_nt)=2` makes the root-rank factor visible, but ordinary matrix elements and block-density expectations stay rank-blind unless the root-rank law is added |
+| Fisher-quotient radial normalization | no-go shortcut test | 3 | Pruned: fine and binary Fisher geometries are isometric, Fisher-unit score normalization is only a source-coordinate unit, and `B_x` has no internal Fisher direction in `P_nt` |
 
 ## Stuck Fan-Out
 
@@ -154,6 +161,7 @@ missing relative radial generator factor `lambda_top=1/sqrt(2)`.
 | Sharp-response readout | Ask whether `Var(B_x)=0` selects the physical nontrivial endpoint | Fails; zero variance selects both `P_nt` and `P_0`, and radial compensation keeps the singlet endpoint target-size |
 | Fisher/LSZ radial generator normalization | Ask whether source arclength/LSZ raw-scale normalization fixes `lambda_top=1/sqrt(2)` | Fails; `O_beta/||O_beta||=B_x` removes `beta`, while `V_top(lambda_top)=lambda_top A B_x` leaves the target coefficient free |
 | Block-rank radial normalization | Ask whether `rank(P_nt)=2` or root-rank averaging fixes `lambda_top=1/sqrt(2)` | Fails; ordinary `P_nt` matrix elements and block-density expectations stay at `A/sqrt(6)`, Hilbert-Schmidt conventions give same-data alternatives, and root-rank averaging is the added law under test |
+| Fisher-quotient radial normalization | Ask whether C3 RN/Fisher quotient geometry or Fisher-unit C3 score normalization fixes `lambda_top=1/sqrt(2)` | Fails; the fine and binary quotient metrics are equal, source-unit normalization is not a top radial generator law, and `B_x` is scalar inside `P_nt` |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -235,3 +243,9 @@ surface does not derive root-rank averaging as the physical top radial
 generator. The next positive move is unchanged: derive accepted radial
 dynamics plus a physical `P_0`-excluding top-readout law, or produce accepted
 strict pole rows.
+The Fisher-quotient radial normalization no-go prunes the information-geometry
+refinement of that shortcut: coarse-graining to `P_0/P_nt` preserves the
+Fisher metric, Fisher-unit line-score normalization is not a top radial mass
+generator, and there is no internal `P_nt` Fisher direction for `B_x`. The
+next positive move is still accepted radial dynamics plus a physical
+`P_0`-excluding top-readout law, or accepted strict pole rows.

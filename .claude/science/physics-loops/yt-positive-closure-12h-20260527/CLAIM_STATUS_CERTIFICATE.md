@@ -1,10 +1,11 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go / open block-rank-to-radial-generator law
+actual_current_surface_status: no-go / open Fisher-quotient-to-radial-generator
+  law
 trace_class: negative_route_pruning
-reachability_to_target: prunes the shortcut from rank(P_nt)=2 or root-rank
-  averaging to lambda_top = 1/sqrt(2)
+reachability_to_target: prunes the shortcut from C3 RN/Fisher quotient or
+  Fisher-unit source geometry to lambda_top = 1/sqrt(2)
 conditional_surface_status: exact top-row certificate if accepted same-surface
   radial generator dynamics derives lambda_top = 1/sqrt(2) and an accepted
   zero-singlet top-readout/sign law excludes P_0, or if accepted strict pole
@@ -12,7 +13,7 @@ conditional_surface_status: exact top-row certificate if accepted same-surface
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "rank(P_nt)=2 makes 1/sqrt(2) a tempting root-rank factor, but ordinary P_nt matrix elements, block-density expectations, and Hilbert-Schmidt block conventions do not derive the physical root-rank top radial generator law. The target row appears only after adding that law."
+proposal_allowed_reason: "The fine reflection-even C3 RN/Fisher curve and the binary P_0/P_nt quotient are isometric, Fisher-unit C3 score normalization is only a source-coordinate normalization, and B_x has no internal Fisher direction inside P_nt. The target row still appears only after adding an accepted physical radial generator law."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass_for_no_go_route_pruning_only

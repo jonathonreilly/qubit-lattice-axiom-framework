@@ -1,5 +1,74 @@
 # Handoff
 
+Cycle 21 adds a thirty-fifth science block, not positive retained-grade
+closure. The new block prunes the information-geometry radial shortcut
+
+```text
+C3 RN/Fisher quotient/source geometry
+  -> lambda_top = 1/sqrt(2).
+```
+
+The reflection-even C3 line-simplex curve
+
+```text
+q(s) = (s,(1-s)/2,(1-s)/2)
+```
+
+and the binary `P_0/P_nt` quotient both have Fisher metric
+
+```text
+ds^2 / [s(1-s)].
+```
+
+So quotient coarse-graining does not introduce the missing root-rank factor.
+Fisher-unit normalization of the C3 score makes the nontrivial line-score
+magnitude `1/sqrt(2)`, but that is a source-coordinate normalization, not a
+top radial generator law. If applied only to the top row it changes the model
+surface and gives the wrong same-source readout; if applied to the full
+same-source coordinate it cancels from the top/W ratio. Inside `P_nt`,
+`B_x` is scalar, so its centered internal Fisher score is zero.
+
+This is an exact negative boundary only. No `POSITIVE_CLOSURE` marker was
+written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 21 science commit:
+
+```text
+cae4183704b822ddfb65b577d137f6b4998c0cd0
+```
+
+Cycle 21 artifacts:
+
+- `docs/YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py`
+- `outputs/yt_c3_fisher_quotient_radial_normalization_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 21 verification so far:
+
+- `python3 scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py`
+  -> `SUMMARY: PASS=91 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=490 FAIL=0`
+- Adjacent runners passed: block-rank radial no-go `PASS=98`,
+  Fisher/LSZ radial-generator no-go `PASS=105`, same-surface radial-factor
+  no-go `PASS=94`, hard-boundary support `PASS=97`, primitive
+  singular-boundary support `PASS=96`, nontrivial-block support `PASS=85`,
+  first-principles transfer response `PASS=56`, direct sparse certificate
+  `PASS=88`, strict sparse availability audit `PASS=74`, same-surface matrix
+  factorization `PASS=77`, radial/readout compensation no-go `PASS=100`,
+  sharp-response readout no-go `PASS=98`, and hard-boundary readout-law no-go
+  `PASS=81`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+The next exact action remains rank 1 or rank 4: derive accepted same-surface
+radial generator dynamics plus a physical top-readout law excluding `P_0`, or
+produce accepted strict top/W pole rows with contact, FV/IR, and model-class
+controls.
+
 Cycle 20 adds a thirty-fourth science block, not positive retained-grade
 closure. The new block prunes the shortcut
 

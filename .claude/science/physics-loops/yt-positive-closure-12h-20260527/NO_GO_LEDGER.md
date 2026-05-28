@@ -257,3 +257,14 @@ feed `A/sqrt(12)`.
   unaccepted radial generator law. Positive closure still needs accepted
   same-surface radial generator dynamics, a physical top readout excluding
   `P_0`, or accepted strict top/W pole rows.
+- New in the thirty-fifth block: C3 RN/Fisher quotient/source geometry does
+  not certify the relative top radial generator factor. The reflection-even
+  line-simplex curve `q(s)=(s,(1-s)/2,(1-s)/2)` and the binary `P_0/P_nt`
+  quotient have identical Fisher metric `ds^2/[s(1-s)]`, so no root-rank
+  factor appears under coarse-graining. Fisher-unit normalization makes the
+  nontrivial line-score magnitude `1/sqrt(2)`, but that is a
+  source-coordinate normalization; a top-only use changes the surface and a
+  common same-source use cancels from the top/W ratio. Inside `P_nt`, `B_x` is
+  scalar, so there is no internal Fisher direction to normalize. Positive
+  closure still needs accepted same-surface radial generator dynamics, a
+  physical top readout excluding `P_0`, or accepted strict top/W pole rows.

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 547 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1215 |
+| unaudited | 1214 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 47 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -60,10 +60,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 846 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
-| `audited_failed` | 45 |
+| `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1445 |
+| `unaudited` | 1444 |
 
 | claim_type | count |
 |---|---:|
@@ -1085,6 +1085,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
+| `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
@@ -6006,6 +6007,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the narrowed scope, the runner stdout matches the note's signs and classifications for every ratified row. The z=2, z=4, z=6, and z=7 dense rows are explicitly outside the audited scope and are not ratified here.
 - **rationale:** The scoped claim is an algebraic sign-interpretation over runner-computed observables, and the supplied runner computes the relevant rows rather than printing fixed classifications. No one-hop authorities are listed, so no dependency-retention blocker is available inside the restricted packet. Clean status applies only to the narrowed z=3 and z=5 dense rows plus the other printed runner rows; the broader z=2..6 dense table is not part of this verdict.
 - **auditor confidence:** medium
+
+### `gravity_sign_audit_2026-04-10`
+
+- **Note:** [`GRAVITY_SIGN_AUDIT_2026-04-10.md`](../../docs/GRAVITY_SIGN_AUDIT_2026-04-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded configured finite 1D well/hill diagnostic claiming that the source's stated identity, parity, and lapse Hamiltonian forms produce the declared well/hill direction table for n=61, mass=0.30, dt=0.12, steps=20, mass point 38, and initial packet center 30.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gravity-sign-well-hill-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The claimed direction table says that under the stipulated parity and lapse Hamiltonian forms, identity gives well -> TOWARD and hill -> TOWARD, while parity and lapse each give well -> TOWARD and hill -> AWAY.  _(class `C`)_
+- **chain closes:** False — The parity/identity finite signs reproduce, but the lapse part does not close against the cited lapse form: the configured well potential gives N=1+Phi/m < 0, while the runner silently floors N to 0.01 before taking sqrt(N). That floor is unstated and load-bearing.
+- **rationale:** Issue: the one-hop operator certificate defines the lapse form as sqrt(N) H_flat sqrt(N) with N=1+Phi/m real and nonnegative, but the configured well profile in the runner has N_min=-79 and the runner replaces N by max(N,0.01). Why this blocks: the source claims a lapse-Hamiltonian well/hill result, while the executable verifies a clipped-lapse regularization not stated in the note or dependency. An independent dense-exponential check reproduces the clipped-lapse signs, but the unregularized N<0 case is outside the cited domain and is not the same Hermitian/norm-preserving observable. Repair target: either state and audit the floored-lapse regularization with the full potential/profile parameters as the bounded claim, or choose a configuration with N>=0 and rerun the lapse diagnostic; split the parity-only finite sign result if needed. Claim boundary until fixed: the identity/parity finite signs and the clipped-lapse finite signs are candidate bounded results, but the current source's lapse-form direction table is not retained.
+- **auditor confidence:** high
 
 ### `growing_graph_dynamic_limit_diagnostic_note`
 

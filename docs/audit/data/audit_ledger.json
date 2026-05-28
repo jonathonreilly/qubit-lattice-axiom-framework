@@ -122305,24 +122305,42 @@
       "verdict_rationale": null
     },
     "gravity_sign_audit_2026-04-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T03:13:04.260353+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "Bounded algebraic certificate for the displayed staggered parity, identity, and lapse operator forms on finite sites/rational test profiles; excludes external literature correctness, uniqueness, framework derivation, continuum/GR consequences, and gate closure."
+        },
+        "dep_claim_type": {
+          "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 10.248,
+        "runner_hash": "a190eca8ca7eb6e7376a0f108310b12f3ba9081a8d7568ede81553f7562ef8a3",
+        "transitive_descendants": 75
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-gravity-sign-well-hill-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The parity/identity finite signs reproduce, but the lapse part does not close against the cited lapse form: the configured well potential gives N=1+Phi/m < 0, while the runner silently floors N to 0.01 before taking sqrt(N). That floor is unstated and load-bearing.",
       "claim_id": "gravity_sign_audit_2026-04-10",
-      "claim_scope": null,
+      "claim_scope": "Bounded configured finite 1D well/hill diagnostic claiming that the source's stated identity, parity, and lapse Hamiltonian forms produce the declared well/hill direction table for n=61, mass=0.30, dt=0.12, steps=20, mass point 38, and initial packet center 30.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T03:13:04.260353+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -122330,19 +122348,19 @@
         "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 10.248,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The claimed direction table says that under the stipulated parity and lapse Hamiltonian forms, identity gives well -> TOWARD and hill -> TOWARD, while parity and lapse each give well -> TOWARD and hill -> AWAY.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "04da5ba4204a232486f847a604fd9125cb4ba98a8f26d7d94c92bef4b950d340",
       "note_path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: make the lapse regularization explicit in the source and operator certificate, or rerun a source-stated N>=0 lapse configuration; consider splitting out the parity-only clean core.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -122570,18 +122588,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 5,
+        "C": 15,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 20
       },
       "runner_path": "scripts/frontier_gravity_sign_well_hill_diagnostic.py",
       "title": "Gravity Sign Well/Hill Diagnostic",
       "transitive_descendants": 75,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the one-hop operator certificate defines the lapse form as sqrt(N) H_flat sqrt(N) with N=1+Phi/m real and nonnegative, but the configured well profile in the runner has N_min=-79 and the runner replaces N by max(N,0.01). Why this blocks: the source claims a lapse-Hamiltonian well/hill result, while the executable verifies a clipped-lapse regularization not stated in the note or dependency. An independent dense-exponential check reproduces the clipped-lapse signs, but the unregularized N<0 case is outside the cited domain and is not the same Hermitian/norm-preserving observable. Repair target: either state and audit the floored-lapse regularization with the full potential/profile parameters as the bounded claim, or choose a configuration with N>=0 and rerun the lapse diagnostic; split the parity-only finite sign result if needed. Claim boundary until fixed: the identity/parity finite signs and the clipped-lapse finite signs are candidate bounded results, but the current source's lapse-form direction table is not retained."
     },
     "gravity_signed_source_density_boundary_note": {
       "audit_date": null,

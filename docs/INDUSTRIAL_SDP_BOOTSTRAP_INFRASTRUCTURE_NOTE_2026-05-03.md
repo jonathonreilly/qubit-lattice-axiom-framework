@@ -1,6 +1,40 @@
 # Industrial SDP Bootstrap — Infrastructure + SU(2)/SU(3) Single-Plaquette Validation
 
-**Date:** 2026-05-03
+**Date:** 2026-05-03 (original); 2026-05-28 (SU(2) full-class-angle Haar fix).
+**Type:** bounded_theorem
+
+## 2026-05-28 Audit Repair (SU(2) full class-angle Haar reference)
+
+The 2026-05-28 audit verdict was `audited_failed`:
+
+> *"the SU(2) reference surface is not the stated full SU(2) Haar/Bessel
+> single-plaquette integral. The runner integrates theta in [0, pi] with
+> P=cos(theta/2), restricting to P>=0; the full SU(2) class-angle integral
+> gives I2(6)/I1(6)=0.76272608, not 0.76736480."*
+
+Fixed. The SU(2) conjugacy classes are parametrized by an eigenvalue angle
+`alpha in [0, pi]` (eigenvalues `e^{±i·alpha}`), with `P = (1/2) tr U =
+cos(alpha) in [-1, +1]` and class measure `(2/pi) sin^2(alpha) dalpha`. The
+prior runner integrated `theta in [0, pi]` with `P = cos(theta/2)`, i.e.
+`theta/2 in [0, pi/2]`, which silently truncated the domain to `P >= 0`.
+The runner now integrates the **full class-angle domain** and a self-check
+asserts `<P> = I_2(beta)/I_1(beta)`. At `beta=6` this gives the correct
+`<P> = 0.76272608` (was `0.76736480`); see corrected table below.
+
+Two additional repair details:
+
+- The runner's `cvxpy` import is now optional. The scipy-only
+  single-plaquette REFERENCE section (the load-bearing audit-repair
+  content) runs and is cacheable without the SDP solver env; the CVXPY
+  containment certificate is reported as SKIPPED when `cvxpy` is absent.
+- The CVXPY containment certificate was **regenerated in the SDP venv**
+  (cvxpy 1.9.1 + CLARABEL/SCS) with the corrected SU(2) `m_2, m_3, m_4`.
+  The re-solved SU(2) fixed-moment bracket is `m_1 ∈ [0.679959, 0.766941]`
+  (was `[0.684871, 0.769227]` with the old truncated moments) and it
+  contains the corrected reference `m_1 = 0.76272608`. All 14 CVXPY
+  containment assertions pass (PASS=14 / FAIL=0). The SHA-pinned cache
+  reflects this full CVXPY run.
+
 **Type:** infrastructure + validation support theorem
 **Claim scope:** establish a working CVXPY-based moment-problem SDP
 infrastructure for lattice gauge bootstrap on this framework, validated by
@@ -33,7 +67,7 @@ Three primitives implemented:
 
 | # | Primitive | Description |
 |---|---|---|
-| BS1 | SU(2) single-plaquette moments via Bessel + numerical Haar | `⟨((1/2) tr U)^k⟩_single` for k ∈ {0,1,2,3,4} from numerical integration of `∫dθ sin²(θ/2) cos^k(θ/2) exp(β cos(θ/2)) dθ` over θ ∈ [0, π] |
+| BS1 | SU(2) single-plaquette moments via Bessel + numerical Haar | `⟨((1/2) tr U)^k⟩_single` for k ∈ {0,1,2,3,4} from numerical integration of `∫dα sin²(α) cos^k(α) exp(β cos α) dα` over the **full class-angle domain** α ∈ [0, π] (P = cos α ∈ [−1,1]); self-checked against `⟨P⟩ = I_2(β)/I_1(β)` |
 | BS2 | SU(3) single-plaquette moments via Cartan-torus Haar integration | `⟨((1/3) Re tr U)^k⟩_single` from 2D grid integration over Weyl chamber with Vandermonde measure |
 | BS3 | CVXPY moment-problem bootstrap | Hankel-PSD + Hausdorff-shifted-PSD on `[a, b]`-supported moment sequences; max/min `m_1 = ⟨P⟩` subject to PSD constraints; supports fixing higher moments to known reference values |
 
@@ -45,14 +79,22 @@ At `β = 6`:
 
 ```text
 ⟨P^0⟩_SU(2)_single = 1.00000000  (normalization)
-⟨P^1⟩_SU(2)_single = 0.76736480  (Bessel-style: I_2(β)/I_1(β) variant)
-⟨P^2⟩_SU(2)_single = 0.62153293
-⟨P^3⟩_SU(2)_single = 0.51967618
-⟨P^4⟩_SU(2)_single = 0.44425771
+⟨P^1⟩_SU(2)_single = 0.76272608  (= I_2(β)/I_1(β) exactly, full class-angle domain)
+⟨P^2⟩_SU(2)_single = 0.61863696
+⟨P^3⟩_SU(2)_single = 0.51696810
+⟨P^4⟩_SU(2)_single = 0.44207224
 ```
 
-CVXPY bracket with `m_2, m_3, m_4` fixed to reference, `m_1` free:
-`m_1 ∈ [0.684871, 0.769227]` — width 0.084, contains reference 0.767.
+(2026-05-28: corrected from the prior `P >= 0`-truncated values
+`0.76736480 / 0.62153293 / 0.51967618 / 0.44425771`. The `⟨P^1⟩` value
+now equals `I_2(6)/I_1(6) = 0.76272608` exactly, as the runner asserts.)
+
+CVXPY bracket with `m_2, m_3, m_4` fixed to reference, `m_1` free
+(regenerated 2026-05-28 in the SDP venv with the corrected moments):
+`m_1 ∈ [0.679959, 0.766941]` — contains the corrected reference
+`0.76272608`. Containment holds and is not endpoint recovery
+(`|0.679959 − 0.7627| > 1e-3` and `|0.766941 − 0.7627| > 1e-3`). All 14
+CVXPY containment assertions pass.
 
 ### SU(3) single-plaquette (Haar reference, 80×80 grid)
 

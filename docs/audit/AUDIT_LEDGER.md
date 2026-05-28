@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 580 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1156 |
+| unaudited | 1155 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 882 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1386 |
+| `unaudited` | 1385 |
 
 | claim_type | count |
 |---|---:|
@@ -1019,6 +1019,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1978,6 +1979,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Defining beta(g,N)=2N/g^2, substitution under g -> g/c gives beta(g/c,N)=c^2 beta(g,N), and the joint product beta*g^2 remains 2N.  _(class `A`)_
 - **chain closes:** True — The conclusions follow by direct substitution in beta(g,N)=2N/g^2 and elementary rational algebra. The runner verifies the symbolic identities, exact rational instances, nontrivial beta changes, orbit exhaustion, product invariance, and scope guards with PASS=43 and FAIL=0.
 - **rationale:** The restricted claim is pure polynomial algebra: once beta(g,N)=2N/g^2 is defined, the c^2 rescaling and beta*g^2 invariance follow immediately without importing Wilson action, SU(N_c), Cl(3), a physical g_bare value, or any numerical comparator. The live runner reproduces all symbolic, exact-rational, orbit/fiber, and scope-guard checks with PASS=43 and FAIL=0. Residual risk is downstream misuse as a derivation of the physical g_bare convention rather than an abstract identity.
+- **auditor confidence:** high
+
+### `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`
+
+- **Note:** [`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded arithmetic lemma only: assuming the Wilson action-surface premise WM: beta = 2 N_c / g_bare^2, the product beta*g_bare^2 = 2 N_c is exactly invariant under the scoped joint rescaling beta -> c^2 beta and g_bare^2 -> g_bare^2/c^2. This does not derive Wilson matching, a Wilson action selector, a canonical physical g_bare value, or any parent status promotion.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-2026-05-28-beta-gbare-squared-rescaling-invariance`  (codex-gpt-5.5; independence=strong)
+- **load-bearing step:** Assuming WM gives beta=2N_c/q with q=g_bare^2>0; after beta'(c)=c^2 beta and q'(c)=q/c^2, the product beta'(c)q'(c)=beta q=2N_c by exact cancellation.  _(class `A`)_
+- **chain closes:** False — The algebraic identity closes exactly under the stated WM premise, but the restricted packet does not derive or accept WM as retained authority. The physical Wilson-surface reading therefore remains conditional.
+- **rationale:** The cached runner and local rerun both report PASS=151 FAIL=0, and the independent check is direct: c^2*(1/c^2)=1, so beta'(c)g_bare'^2(c)=2N_c for positive rational c whenever WM is assumed. The one-hop abstract algebra dependency is retained and the scoped rescaling dependency is retained_bounded, but both preserve the boundary that Wilson matching is an input, not a theorem. No-go-discipline scope check: this verdict names WM as an unretired premise without claiming no future Wilson-matching derivation route exists.
+- **open / conditional deps cited:**
+  - `WM Wilson action-surface matching premise beta = 2 N_c / g_bare^2`
 - **auditor confidence:** high
 
 ### `beyond_lattice_qcd_note`

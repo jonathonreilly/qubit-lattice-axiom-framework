@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 230,
-    "high": 327,
+    "high": 326,
     "leaf": 325,
     "medium": 335
   },
@@ -6552,7 +6552,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_weak_connectivity_note",
+      "claim_id": "gate_b_nonlabel_connectivity_v1_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -6560,19 +6560,18 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "gate_b_farfield_note",
-        "gate_b_grown_distance_law_note",
-        "gate_b_grown_joint_package_note"
+        "gate_b_weak_connectivity_note",
+        "gate_b_farfield_note"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.687,
-      "note_path": "docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md",
+      "load_bearing_score": 10.129,
+      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/gate_b_weak_connectivity_harness.py",
-      "transitive_descendants": 102
+      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1.py",
+      "transitive_descendants": 98
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -11552,31 +11551,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py",
       "transitive_descendants": 99
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_nonlabel_connectivity_v1_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_weak_connectivity_note",
-        "gate_b_farfield_note"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.129,
-      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1.py",
-      "transitive_descendants": 98
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -36708,5 +36682,5 @@
     }
   ],
   "ready_count": 56,
-  "total_pending": 1217
+  "total_pending": 1216
 }

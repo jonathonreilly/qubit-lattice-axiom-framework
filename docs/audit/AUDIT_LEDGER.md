@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 545 |
+| **retained_bounded** | 546 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1217 |
+| unaudited | 1216 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 844 |
+| `audited_clean` | 845 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1447 |
+| `unaudited` | 1446 |
 
 | claim_type | count |
 |---|---:|
@@ -379,6 +379,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -5139,6 +5140,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The runner completed and reproduces the note's finite counts and means: exact grid 6/9 TOWARD with y=1.0 at 0/3, grown row 33/36 TOWARD with y=1.0 at 9/12. Within the bounded scope, this supports the stated comparator conclusion without requiring upstream dependencies.
 - **rationale:** The note is narrowly bounded and the current runner directly computes the finite comparator rather than hard-coding the displayed deltas. The completed stdout matches the note's frozen result, including the closest-bucket seed split. Residual risk is limited to the interpretive wording around beam-optics/detector geometry; the clean scope is the finite exact-vs-grown control, not full Gate B or any universal near-field theorem.
 - **auditor confidence:** high
+
+### `gate_b_weak_connectivity_note`
+
+- **Note:** [`GATE_B_WEAK_CONNECTIVITY_NOTE.md`](../../docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded weak-connectivity numerical replay on the declared Gate-B h=0.5, four-seed, z={3,4,5} scenario: label-based no-restore connectivity preserves the far-field signature, while the weaker KNN+floor connectivity collapses it; no broad generated-geometry, physical-gravity, or full Gate-B closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gate-b-weak-connectivity-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The harness computes exact-grid, no-restore label-NN, and no-restore KNN+floor rows at h=0.5 over four seeds and z_masses={3,4,5}, reporting 12/12 TOWARD and F~M=1.00 for the first two rows but 0/12 TOWARD and F~M=0.00 for the KNN+floor candidate.  _(class `C`)_
+- **chain closes:** True — The cached runner completes and matches the source frozen result: exact grid and no-restore label-NN are 12/12 TOWARD with F~M=1.00, while no-restore KNN+floor is 0/12 with F~M=0.00. Current ledger deps are retained-bounded; older dependency-status prose in the source is historical and not status authority.
+- **rationale:** The row closes as a bounded finite-harness certificate. The runner constructs the three families, swaps the connectivity rule, propagates amplitudes, and computes the centroid/F~M readout rather than merely printing constants. The verdict is limited to sharpening the connectivity bottleneck on this declared comparison; it does not ratify primitive-to-gravity readout or full Gate-B package survival.
+- **auditor confidence:** medium
 
 ### `gauge_scalar_temporal_completion_theorem_note`
 

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 560 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1193 |
+| unaudited | 1192 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 860 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1423 |
+| `unaudited` | 1422 |
 
 | claim_type | count |
 |---|---:|
@@ -1001,6 +1001,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3749,6 +3750,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Refining the same-surface thermal quadrature shifts the admitted-family selector root by far more than the apparent 9/62 residual, so the structural 9/62 collapse is not stable.  _(class `C`)_
 - **chain closes:** True — The note's bounded negative claim is exactly reproduced by the runner: it computes the coarse apparent match, then recomputes refined roots at 4000, 8000, and 16000 points and shows material drift away from 9/62.
 - **rationale:** The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded exact-series/tail support check for the same-surface thermal Coulomb factors on the declared helper-defined live DM sample points: the attractive and repulsive positive-series decompositions and the J1/J2 Meijer-G term integrals are valid, and the cached runner encloses the corrected continuum evaluator in sub-1e-9 ratio-width intervals at alpha_lo, alpha_conv, and alpha_hi. The full live-slice selector support claim is not cleanly audited without one-hop retained authorities for the helper-defined live interval, observed eta/omega conversion, and same-surface alpha constants.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-dm-series-tail-support-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The corrected continuum evaluator is claimed to lie inside exact positive-series/tail support intervals at alpha_lo, alpha_conv, and alpha_hi, with ratio widths below 1e-9.  _(class `A`)_
+- **chain closes:** False — The positive-series identities, tail inequalities, and J1/J2 Meijer-G representations close algebraically and by independent quadrature checks. The chain does not fully close for the live DM slice because the helper layer imports the plaquette-derived alpha interval and eta/omega selector constants without corresponding one-hop retained authorities in this row's dependency packet.
+- **rationale:** Independent checks confirm the exact identities y/(1-e^{-y})=sum_{n>=0} y e^{-ny}, y/(e^y-1)=sum_{n>=1} y e^{-ny}, the tail bounds from y/(1-e^{-y})<=1+y, and the helper's J1/J2 Meijer-G formulas against direct high-precision quadrature. The cached runner reports PASS=13 FAIL=0 and gives narrow enclosures containing the corrected evaluator at the three stated sample points. However, the helper layer imports CANONICAL_ALPHA_LM, the plaquette-supported alpha endpoint, ETA_OBS, and omega_b conversion machinery while the row exposes only thermal-integral and Maxwell-Boltzmann/Sommerfeld normalization dependencies. That makes the live-slice support claim conditional on missing one-hop input authority, even though the thermal series/tail machinery itself is supported.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19`

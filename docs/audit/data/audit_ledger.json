@@ -58299,24 +58299,46 @@
       "verdict_rationale": "The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result."
     },
     "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T04:12:10.604096+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited.",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Bounded Maxwell-Boltzmann/Sommerfeld normalization algebra at the explicit benchmark slice x_f=25, with a=x_f/4=25/4: verifies the normalized MB denominator, <1/v>=5/sqrt(pi), <1/v^2>=25/2, the substitution t=a v^2 giving alpha_eff/v=alpha_eff*sqrt(a/t), and the thermal-average t-measure prefactor 2/sqrt(pi). No framework derivation of the Maxwell-Boltzmann distribution, freeze-out value x_f=25, Sommerfeld enhancement law, relic-abundance dynamics, or downstream DM thermal closure is audited."
+        },
+        "dep_claim_type": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+          "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "841ece80f8f33d54276bf4e170d62c9fe97f55360ded1777c338b77ac161c13c",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-dm-series-tail-support-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The positive-series identities, tail inequalities, and J1/J2 Meijer-G representations close algebraically and by independent quadrature checks. The chain does not fully close for the live DM slice because the helper layer imports the plaquette-derived alpha interval and eta/omega selector constants without corresponding one-hop retained authorities in this row's dependency packet.",
       "claim_id": "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Bounded exact-series/tail support check for the same-surface thermal Coulomb factors on the declared helper-defined live DM sample points: the attractive and repulsive positive-series decompositions and the J1/J2 Meijer-G term integrals are valid, and the cached runner encloses the corrected continuum evaluator in sub-1e-9 ratio-width intervals at alpha_lo, alpha_conv, and alpha_hi. The full live-slice selector support claim is not cleanly audited without one-hop retained authorities for the helper-defined live interval, observed eta/omega conversion, and same-surface alpha constants.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T04:12:10.604096+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -58325,24 +58347,24 @@
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.144,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The corrected continuum evaluator is claimed to lie inside exact positive-series/tail support intervals at alpha_lo, alpha_conv, and alpha_hi, with ratio widths below 1e-9.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "e3b7dfc64e3b33d31a61ab34d578a039e0f02ae869664784fc4df184f62d436c",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add retained one-hop authorities for the live alpha interval constants, eta/omega conversion target, and same-surface selector sample definitions used by the helper layer, or narrow the note to a pure thermal-kernel series/tail lemma at explicitly supplied numeric alpha inputs.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -58509,18 +58531,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 7,
         "B": 0,
-        "C": 0,
+        "C": 6,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 13
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py",
       "title": "DM Full Closure Same-Surface Thermal Series/Tail Support",
       "transitive_descendants": 49,
-      "verdict_rationale": null
+      "verdict_rationale": "Independent checks confirm the exact identities y/(1-e^{-y})=sum_{n>=0} y e^{-ny}, y/(e^y-1)=sum_{n>=1} y e^{-ny}, the tail bounds from y/(1-e^{-y})<=1+y, and the helper's J1/J2 Meijer-G formulas against direct high-precision quadrature. The cached runner reports PASS=13 FAIL=0 and gives narrow enclosures containing the corrected evaluator at the three stated sample points. However, the helper layer imports CANONICAL_ALPHA_LM, the plaquette-supported alpha endpoint, ETA_OBS, and omega_b conversion machinery while the row exposes only thermal-integral and Maxwell-Boltzmann/Sommerfeld normalization dependencies. That makes the live-slice support claim conditional on missing one-hop input authority, even though the thermal series/tail machinery itself is supported."
     },
     "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19": {
       "audit_date": "2026-05-23T19:46:21.680360+00:00",

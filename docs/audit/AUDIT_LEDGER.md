@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 535 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1237 |
+| unaudited | 1236 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -52,6 +52,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 4 |
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
+| `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
 | `decoration_under_yt_ew_color_projection_theorem` | 1 |
 
 | audit_status | count |
@@ -59,16 +60,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 1 |
 | `audited_clean` | 829 |
 | `audited_conditional` | 42 |
-| `audited_decoration` | 49 |
+| `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1467 |
+| `unaudited` | 1466 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1103 |
-| `decoration` | 50 |
+| `bounded_theorem` | 1102 |
+| `decoration` | 51 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 111 |
@@ -1048,6 +1049,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
 | `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_yt_ew_color_projection_theorem` | cross_family | codex-gpt-5.5 | A | `yt_ew_color_projection_theorem` |
+| `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -14398,6 +14400,24 @@ Claim boundary until fixed: given D1 and D2 as assumptions, the u_0 cancellation
 - **load-bearing step:** C_A - C_B = (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso), so C_A=C_B iff c_S*g_bare^2=2/N_iso, while C_A=C_B is itself the missing same-1PI bridge.  _(class `A`)_
 - **chain closes:** True — The algebraic gate closes as an open-gate diagnostic: the retained inputs and runner support the residual, the gate equation, and the off-surface failure. The chain does not close, and does not claim to close, the same-1PI bridge or any downstream retained theorem.
 - **rationale:** Clean only as open_gate. The note correctly blocks propagation by stating that equating Rep A and Rep B would assume the same-1PI equivalence under review. It avoids deriving g_bare=1, the Standard Model top-Yukawa observable, or same-1PI identity.
+- **auditor confidence:** high
+
+### `yt_zero_import_chain_note`
+
+- **Note:** [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](../../docs/YT_ZERO_IMPORT_CHAIN_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Historical zero-import y_t note after the 2026-05-26 split, audited only as a navigational/restatement packet for the retained-bounded declared-anchor algebraic subchain and the explicit exclusion of the older full zero-import numerical prediction from retained scope.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's current auditable theorem is delegated to the retained declared-anchor subchain, while the historical full zero-import prediction remains conditional on the plaquette readout and kappa_EW connected-trace selector.  _(class `A`)_
+- **chain closes:** True — As a decoration, the row closes by pointing to the already retained-bounded declared-anchor algebra and by not asserting the full historical prediction as retained. Independent algebra confirms the same F_adj, K_EW, taste-weight, alpha_LM, alpha_s(v), and Ward-boundary identities checked by the parent runner.
+- **rationale:** Issue: the current note adds no independent theorem beyond the retained declared-anchor subchain; it is a historical/navigational authority note that restates the bounded algebra and names the old full-chain residuals. Why this blocks independent retained-bounded status: the note itself says the full zero-import prediction is out of current audit scope, and its one-hop packet still leaves the canonical plaquette value and kappa_EW=0 selector outside retained derivation. Repair target: a future independent full-chain theorem would need retained-grade plaquette and kappa_EW bridge authorities, plus a runner that checks the full claimed chain rather than only the declared-anchor algebra. Claim boundary until fixed: cite this row only as decoration under the retained declared-anchor bounded subchain, not as standalone authority for the historical zero-import numerical prediction.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `RCONN_DERIVED_NOTE.md`
+  - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
+- **decoration parent:** `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26`
 - **auditor confidence:** high
 
 ### `yukawa_color_projection_theorem`

@@ -313377,27 +313377,57 @@
       "verdict_rationale": null
     },
     "yt_zero_import_chain_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T01:54:54.763085+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization.",
+          "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": "Bounded top-Yukawa algebraic subchain over declared <P>=0.5934, F_adj=8/9, kappa_EW=0, Ward Clebsch 1/sqrt(6), and alpha_bare=1/(4*pi), with no anchor derivation, RGE run, or observed-SM comparison."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "rconn_derived_note": "no_go",
+          "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "rconn_derived_note": "retained_no_go",
+          "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": "retained_bounded"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "plaquette_self_consistency_note",
+          "rconn_derived_note",
+          "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26"
+        ],
+        "load_bearing_score": 14.022,
+        "runner_hash": "814a20b1826ad9b2945d1749a39ad924687885663d08976f882caf17a0327bec",
+        "transitive_descendants": 519
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "As a decoration, the row closes by pointing to the already retained-bounded declared-anchor algebra and by not asserting the full historical prediction as retained. Independent algebra confirms the same F_adj, K_EW, taste-weight, alpha_LM, alpha_s(v), and Ward-boundary identities checked by the parent runner.",
       "claim_id": "yt_zero_import_chain_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Historical zero-import y_t note after the 2026-05-26 split, audited only as a navigational/restatement packet for the retained-bounded declared-anchor algebraic subchain and the explicit exclusion of the older full zero-import numerical prediction from retained scope.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T01:54:54.763085+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
       "deps": [
         "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
         "plaquette_self_consistency_note",
@@ -313405,20 +313435,24 @@
         "rconn_derived_note"
       ],
       "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
       "load_bearing_score": 14.022,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note's current auditable theorem is delegated to the retained declared-anchor subchain, while the historical full zero-import prediction remains conditional on the plaquette readout and kappa_EW connected-trace selector.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "3b2fce6b7b04ed2159edf06ded10fed16731e145021c19e6ce869a20764b57fa",
       "note_path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "scope_too_broad: promote beyond decoration only after replacing the historical note with an independently checkable full-chain theorem and retained-grade bridges for the plaquette readout and kappa_EW=0 selector.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/RCONN_DERIVED_NOTE.md",
+        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-01T15:26:01.959359+00:00",
@@ -313718,18 +313752,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 15,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 15
       },
       "runner_path": "scripts/frontier_yt_declared_anchor_bounded_subchain.py",
       "title": "Zero-Import y_t Derivation: Definitive Authority Note",
       "transitive_descendants": 519,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the current note adds no independent theorem beyond the retained declared-anchor subchain; it is a historical/navigational authority note that restates the bounded algebra and names the old full-chain residuals. Why this blocks independent retained-bounded status: the note itself says the full zero-import prediction is out of current audit scope, and its one-hop packet still leaves the canonical plaquette value and kappa_EW=0 selector outside retained derivation. Repair target: a future independent full-chain theorem would need retained-grade plaquette and kappa_EW bridge authorities, plus a runner that checks the full claimed chain rather than only the declared-anchor algebra. Claim boundary until fixed: cite this row only as decoration under the retained declared-anchor bounded subchain, not as standalone authority for the historical zero-import numerical prediction."
     },
     "yukawa_color_projection_theorem": {
       "audit_date": "2026-05-25T10:18:49.309520+00:00",

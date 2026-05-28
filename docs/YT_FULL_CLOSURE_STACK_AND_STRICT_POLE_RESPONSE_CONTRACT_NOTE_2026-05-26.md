@@ -82,6 +82,10 @@ closed exactly:
   kinematic factor maps a supplied generation-matrix coefficient into a top
   mass response, but it does not identify that coefficient with the normalized
   C3 nontrivial-block response with unit multiplier eta=1
+  one-Higgs generation-coefficient normalization no-go: ordinary
+  generation-matrix normalization conventions can set different eta values
+  (for example eta=1, sqrt(6), or sqrt(2)) and therefore do not derive the
+  missing coefficient-to-C3-source law
   real-irrep dimension top-block no-go: finite real C3 representation theory
   exposes P_0 as the trivial real irrep and P_nt as the faithful
   two-dimensional real irrep, but selecting the faithful/nontrivial summand as
@@ -230,6 +234,8 @@ still open:
   Fisher-unit score normalization
   accepted one-Higgs coefficient-to-C3-source law if the C3 route tries to
   derive lambda_top=1/sqrt(2) from the neutral Higgs radial 1/sqrt(2) factor
+  accepted generation-coefficient normalization/variational law if the route
+  tries to derive eta=1 from one-Higgs matrix norm conventions
   accepted real-irrep physical top-block law if the C3 route tries to select
   P_nt from faithful/nontrivial real C3 representation facts
   accepted independent physical readout/sign/radial laws, since target-size
@@ -1725,6 +1731,11 @@ proposal_allowed_reason: |
   `eta` between that coefficient and the normalized C3 nontrivial-block
   response remains free. The target requires `eta=1`, equivalently
   `lambda_top=1/sqrt(2)`.
+  The one-Higgs generation-coefficient normalization no-go prunes the matrix
+  norm variant of that shortcut: C3-unit, unit singular/Frobenius, and unit
+  three-generation-average conventions give eta values 1, sqrt(6), and
+  sqrt(2), respectively. Selecting eta=1 is the missing physical
+  coefficient-to-C3-source law, not a consequence of generic normalization.
   The real-irrep dimension top-block no-go prunes the representation-dimension
   shortcut: finite real C3 representation theory exposes P_nt as the faithful
   two-dimensional summand, but selecting that summand as the physical top block

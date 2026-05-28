@@ -1,0 +1,79 @@
+{
+  "actual_current_surface_status": "no-go / open generation-coefficient normalization law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_eta_equals_one_law_derived": false,
+    "bare_retained_allowed": false,
+    "c3_nontrivial_response_granted": true,
+    "eta_free_on_current_surface": true,
+    "lambda_top_free_on_current_surface": true,
+    "neutral_higgs_radial_factor_granted": true,
+    "no_forbidden_imports": true,
+    "one_higgs_carrier_granted": true,
+    "ordinary_generation_norms_tested": true,
+    "proposal_allowed": false,
+    "remaining_imports": [
+      "accepted one-Higgs coefficient-to-C3-source law eta=1",
+      "accepted same-surface radial generator factorization lambda_top=1/sqrt(2)",
+      "accepted physical zero-singlet top-readout law",
+      "accepted strict same-source top/W pole rows with controls"
+    ],
+    "route_pruned": "generic one-Higgs generation-matrix normalization convention derives eta=1",
+    "strict_top_w_response_certificate_present": false
+  },
+  "claim": "Ordinary one-Higgs generation-matrix normalization conventions do not derive eta=1 or lambda_top=1/sqrt(2).",
+  "dependency_fail_counts": {
+    "full_stack": 0,
+    "one_higgs_radial_nogo": 0,
+    "one_higgs_support": 0,
+    "strict_sparse_audit": 0,
+    "strict_symbolic_top": 0,
+    "top_coeff_nogo": 0
+  },
+  "fail_count": 0,
+  "matrix_norm_family": {
+    "eta_target_c3_unit": "1",
+    "eta_unit_frob": "sqrt(6)",
+    "eta_unit_three_average": "sqrt(2)",
+    "frob_sq": "eta**2/6",
+    "rank": "1",
+    "singular_value": "sqrt(6)*eta/6"
+  },
+  "next_action": "derive accepted eta=1/lambda_top=1/sqrt(2) coefficient law plus physical zero-singlet top readout, or produce accepted strict same-source top/W pole rows with controls",
+  "normalization_witness": {
+    "c3_unit": {
+      "eta": "1",
+      "lambda_top": "sqrt(2)/2",
+      "top_row": "sqrt(3)*A/6",
+      "y33": "sqrt(6)/6"
+    },
+    "free_eta_counterexample": {
+      "eta": "2",
+      "lambda_top": "sqrt(2)",
+      "top_row": "sqrt(3)*A/3",
+      "y33": "sqrt(6)/3"
+    },
+    "unit_three_generation_average": {
+      "eta": "sqrt(2)",
+      "lambda_top": "1",
+      "top_row": "sqrt(6)*A/6",
+      "y33": "sqrt(3)/3"
+    },
+    "unit_top_singular_value": {
+      "eta": "sqrt(6)",
+      "lambda_top": "sqrt(3)",
+      "top_row": "sqrt(2)*A/2",
+      "y33": "1"
+    }
+  },
+  "pass_count": 111,
+  "proposal_allowed": false,
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NO_GO_NOTE_2026-05-28.md",
+    "scripts/frontier_yt_one_higgs_generation_coefficient_normalization_no_go.py",
+    "outputs/yt_one_higgs_generation_coefficient_normalization_no_go_2026-05-28.json"
+  ],
+  "trace_class": "negative_route_pruning"
+}

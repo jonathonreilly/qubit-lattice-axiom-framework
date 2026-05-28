@@ -32,6 +32,12 @@ Cycle 28 science commit:
 2d814d6d63d74e2c407c4cb46efc121913682fe
 ```
 
+Cycle 28 delivery commit:
+
+```text
+3d192314d547a477b34debd93817418b5c6843cf
+```
+
 Cycle 28 artifacts:
 
 - `docs/YT_ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`

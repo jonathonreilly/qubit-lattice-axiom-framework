@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 583 |
+| **retained_bounded** | 584 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 25 |
-| unaudited | 1144 |
+| unaudited | 1143 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,22 +59,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 888 |
+| `audited_clean` | 889 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 49 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1374 |
+| `unaudited` | 1373 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1108 |
+| `bounded_theorem` | 1109 |
 | `decoration` | 53 |
 | `meta` | 237 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 695 |
+| `positive_theorem` | 694 |
 
 | criticality | count |
 |---|---:|
@@ -409,6 +409,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_strong_field_observable_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5797,6 +5798,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The weak-field mass law collapses as soon as the backreaction is turned on at the tested coupling, with eps=0.10 giving F~M exponent = -0.60 instead of near 1.  _(class `C`)_
 - **chain closes:** True — The runner directly computes the zero-coupling reduction, centroid shifts, escape ratios, and weak-field exponent for the stated finite sweep. Within that bounded scope, the no-go conclusion follows from the completed output: eps=0 reduction is exact, but the weak-field exponent collapses when backreaction is enabled.
 - **rationale:** The note does not claim a positive self-gravity bridge; it claims the minimal tested loop fails. The runner source computes the propagated amplitudes and backreaction field rather than printing constants, and stdout matches the note's decisive failure signal: eps=0.10 has exponent -0.60. The clean scope is bounded to this exact finite runner setup, not a general theorem about all Poisson-like backreaction schemes.
+- **auditor confidence:** high
+
+### `gate_b_strong_field_observable_split_note`
+
+- **Note:** [`GATE_B_STRONG_FIELD_OBSERVABLE_SPLIT_NOTE.md`](../../docs/GATE_B_STRONG_FIELD_OBSERVABLE_SPLIT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded synthesis over the two named Gate B grown-row probes only: the absorptive gamma term directly attenuates detector amplitude and changes escape on the retained row, while the minimal causal-memory gamma changes only the layerwise field history and produces no coherent phase-ramp or escape observable in that exact architecture. This does not retain a complex-action branch, a causal-field theory, or generated-geometry transfer.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-gate-b-strong-field-split-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The note's mechanism split follows because the complex-action runner propagates with exp(i*K*act - gamma*act), so positive gamma directly attenuates amplitudes, while the causal-memory runner keeps propagation exp(i*K*act) and varies only the layerwise source field history.  _(class `B`)_
+- **chain closes:** True — Both one-hop dependencies are retained-grade and their current cached outputs match the source note's frozen numbers. The restricted packet supports only the named finite synthesis and not any broader field-theory or generated-family claim.
+- **rationale:** The two probes are not testing the same perturbation: the absorptive proxy inserts a real attenuation factor in every propagation weight, while the causal-memory proxy changes the field source history without an absorptive term. Current cached outputs reproduce the note's frozen comparison: absorptive escape falls from 0.215 to approximately 0.000 across the gamma sweep, while causal-memory escape remains 1.000 to three decimals and the phase-ramp observable stays flat. Because the support is finite runner-output synthesis from two retained one-hop rows, the clean verdict is bounded to that mechanism split only.
 - **auditor confidence:** high
 
 ### `gate_b_v6_nearfield_comparator_note`

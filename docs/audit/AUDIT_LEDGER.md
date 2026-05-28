@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 539 |
+| **retained_bounded** | 540 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 834 |
+| `audited_clean` | 835 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1457 |
+| `unaudited` | 1456 |
 
 | claim_type | count |
 |---|---:|
@@ -632,6 +632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `omega_lambda_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9184,6 +9185,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the audited periodic staggered torus, the potential-weighted Ollivier curvature proxy tracks G*T strongly and beats random/shuffled controls, but remains a bounded structured-curvature proxy rather than an Einstein-equation derivation.  _(class `C`)_
 - **chain closes:** True — The primary runner reproduces the screened potential-weighted mean R²=0.9728 while density and combined definitions remain weak. The companion control runner reproduces the screened and low-screening control claims, including random/shuffled collapse and the low-screening shell-averaged near-match that limits the interpretation to a structured proxy.
 - **rationale:** The note's bounded claim is supported by current runners: the potential-weighted construction gives strong R² against G*T, random and shuffled controls collapse, and the low-screening rerun survives. The same current output also supports the caveat that shell-averaged structured fields reproduce almost all of the low-screening signal, so dynamic backreaction and Einstein-equation closure are not established. Residual risk is the declared method-specific observable choice and missing open-boundary/Wilson comparison, both already outside the safe claim.
+- **auditor confidence:** high
+
+### `omega_lambda_derivation_note`
+
+- **Note:** [`OMEGA_LAMBDA_DERIVATION_NOTE.md`](../../docs/OMEGA_LAMBDA_DERIVATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded declared-input arithmetic cascade: assuming Omega_b=0.0492, R=Omega_DM/Omega_b=5.38, and Omega_total=1, compute Omega_DM=0.264696, Omega_m=0.313896, Omega_Lambda=0.686104, and record S=R/(31/9)=1.5619354838709678 without deriving the declared premises or cosmology bridges.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-omega-lambda-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given Omega_b=0.0492, R=Omega_DM/Omega_b=5.38, and Omega_total=1, compute Omega_DM=R*Omega_b, Omega_m=Omega_b+Omega_DM, and Omega_Lambda=Omega_total-Omega_m=0.686104.  _(class `A`)_
+- **chain closes:** True — The arithmetic is exact at the stated precision: 5.38*0.0492=0.264696, 0.0492+0.264696=0.313896, and 1-0.313896=0.686104. The retained-bounded R_base dependency supplies only 31/9, used to compute the recorded non-derived multiplier S=5.38/(31/9).
+- **rationale:** The scoped bounded claim closes because the note now states the cosmological quantities as declared premises and claims only the finite arithmetic cascade from them. The runner verifies the source boundary text, exact R_base identity, declared-input positivity/flatness checks, Omega_DM/Omega_m/Omega_Lambda arithmetic, rounding, and the non-derived Sommerfeld multiplier. This does not promote Omega_Lambda as a first-principles prediction; retained status should be bounded to the declared-input arithmetic surface.
 - **auditor confidence:** high
 
 ### `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10`

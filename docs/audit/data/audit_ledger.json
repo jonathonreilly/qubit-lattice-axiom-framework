@@ -195102,24 +195102,42 @@
       "verdict_rationale": "The note's bounded claim is supported by current runners: the potential-weighted construction gives strong R\u00b2 against G*T, random and shuffled controls collapse, and the low-screening rerun survives. The same current output also supports the caveat that shell-averaged structured fields reproduce almost all of the low-screening signal, so dynamic backreaction and Einstein-equation closure are not established. Residual risk is the declared method-specific observable choice and missing open-boundary/Wilson comparison, both already outside the safe claim."
     },
     "omega_lambda_derivation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T02:35:58.515267+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "Given retained SU(3)/SU(2) structural inputs and the admitted GUT hypercharge normalization factor 3/5, the exact algebraic identity R_base = (3/5) * [(4/3)*8 + (3/4)*3] / [(3/4)*3] = 31/9."
+        },
+        "dep_claim_type": {
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "r_base_group_theory_derivation_theorem_note_2026-04-24": "retained_bounded"
+        },
+        "deps": [
+          "r_base_group_theory_derivation_theorem_note_2026-04-24"
+        ],
+        "load_bearing_score": 13.948,
+        "runner_hash": "841e559463446b18c2aa5002e0f08f896840c5a2d30f38fc89ac262b2018e417",
+        "transitive_descendants": 246
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-omega-lambda-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The arithmetic is exact at the stated precision: 5.38*0.0492=0.264696, 0.0492+0.264696=0.313896, and 1-0.313896=0.686104. The retained-bounded R_base dependency supplies only 31/9, used to compute the recorded non-derived multiplier S=5.38/(31/9).",
       "claim_id": "omega_lambda_derivation_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded declared-input arithmetic cascade: assuming Omega_b=0.0492, R=Omega_DM/Omega_b=5.38, and Omega_total=1, compute Omega_DM=0.264696, Omega_m=0.313896, Omega_Lambda=0.686104, and record S=R/(31/9)=1.5619354838709678 without deriving the declared premises or cosmology bridges.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T02:35:58.515267+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -195127,19 +195145,19 @@
         "r_base_group_theory_derivation_theorem_note_2026-04-24"
       ],
       "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 13.948,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given Omega_b=0.0492, R=Omega_DM/Omega_b=5.38, and Omega_total=1, compute Omega_DM=R*Omega_b, Omega_m=Omega_b+Omega_DM, and Omega_Lambda=Omega_total-Omega_m=0.686104.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "31844b72dc7aed8c855210f985624dca0d4ff3b29ea37f1f87e8446baad16c41",
       "note_path": "docs/OMEGA_LAMBDA_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "No re-audit needed unless the source broadens beyond declared-input arithmetic or claims a derivation of Omega_b, R=5.38, flatness, the Sommerfeld continuation, or a DM relic bridge.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -195197,18 +195215,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 9,
+        "B": 7,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 16
       },
       "runner_path": "scripts/frontier_omega_lambda_arithmetic_cascade.py",
       "title": "Omega_Lambda Arithmetic Cascade",
       "transitive_descendants": 246,
-      "verdict_rationale": null
+      "verdict_rationale": "The scoped bounded claim closes because the note now states the cosmological quantities as declared premises and claims only the finite arithmetic cascade from them. The runner verifies the source boundary text, exact R_base identity, declared-input positivity/flatness checks, Omega_DM/Omega_m/Omega_Lambda arithmetic, rounding, and the non-derived Sommerfeld multiplier. This does not promote Omega_Lambda as a first-principles prediction; retained status should be bounded to the declared-input arithmetic surface."
     },
     "omega_lambda_matter_bridge_theorem_note_2026-04-22": {
       "audit_date": null,
@@ -231580,11 +231599,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 19.522,
+      "load_bearing_score": 22.522,
       "load_bearing_step": "R_base = (3/5) * [C_2(3) * dim(adj_3) + C_2(2) * dim(adj_2)] / [C_2(2) * dim(adj_2)] = 31/9.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "dcd6b70ca6cca2e031801c0921a748a5d34cc8f916287f237589396589b72279",
       "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
       "notes_for_re_audit_if_any": "Second auditor should re-check only that the 3/5 normalization remains treated as an admitted retained_bounded input and that no downstream cosmology or representation-uniqueness scope is inferred.",

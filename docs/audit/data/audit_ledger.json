@@ -37087,22 +37087,42 @@
       "verdict_rationale": "The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation."
     },
     "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T07:08:33.008458+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5eec62348cf429251ad5c1b96cf3e93289bf39667b24639bf14e3edd8d6f86b5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "boole-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-cl3-chiral-cube-wilson-hop-doubling-no-go",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The same-link algebra closes from Taylor expansion, Hermitian conjugacy, and the retained SU(3) generator normalization/Casimir identity. The no-go discipline gate passes because the verdict is narrowed to the same-link Step-5 factor-of-two source and explicitly leaves broader Wilson-action and structural-product routes open.",
       "claim_id": "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
-      "claim_scope": null,
+      "claim_scope": "Same-link no-go only: for U_mu + U_mu^dagger with U_mu^dagger the Hermitian conjugate of the same SU(3) Wilson link, the O(g^2) gauge-averaged correction carries one fundamental Casimir C_F, not 2 C_F. This forecloses only Step 5's premise that the two same-link terms can be treated as independent SU(3) link variables each supplying C_F; it does not foreclose full Wilson-action neighboring-edge, lattice-wide, multi-loop, structural-product, or alternative Coleman-Weinberg routes.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T07:08:33.008458+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -37110,34 +37130,40 @@
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For one Hermitian X = g a A_mu^a T^a, exp(iX)+exp(-iX)=2I-X^2+O(X^4); X^2 contains one A^a A^b bilinear, and the coincident gauge average gives delta_ab T^a T^b=C_F I=4/3 I, not 2C_F I=8/3 I.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "82ed8d312f16651debe9c92fb56638283e571732457231d717159475741c51ff",
       "note_path": "docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "Re-audit if the parent Step 5 is reformulated as a neighboring-edge/full-Wilson-action derivation, an independent structural-product argument, or a new retained dynamical Fierz-channel mechanism; this verdict does not foreclose those routes.",
+      "open_dependency_paths": [
+        "Full Wilson-action or site-summed neighboring-edge derivation using distinct edge variables such as U_mu(x) and U_mu^dagger(x-mu)",
+        "Independent structural-product route for m_DM = N_sites v or m_DM = 16 v",
+        "Lattice-wide, multi-loop, neighboring-edge, or alternative Coleman-Weinberg routes",
+        "New dynamical input through a traceless-adjoint Fierz channel"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 67,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 67
       },
       "runner_path": "scripts/audit_companion_cl3_chiral_cube_wilson_hop_doubling_foreclosed_2026_05_27.py",
       "title": "Cl(3) Chiral-Cube Wilson-Hop Doubling Foreclosed Narrow No-Go",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The cache and local rerun both report PASS=67 FAIL=0. Independent check: exp(iX)+exp(-iX) has two quadratic half-terms that sum to -X^2, not -2X^2; after <A^a A^b>=delta_ab, the correction is -C_F I. The runner also verifies same-link unitarity/Hermitian conjugacy, alternative reads R0-R7, and Fierz sandwich controls. No-go-discipline N1-N8 are satisfied only for the narrow same-link claim: neighboring-edge full Wilson-action derivations, structural-product support for m_DM=16v, lattice-wide/multi-loop routes, and new dynamical Fierz inputs remain outside this verdict."
     },
     "cl3_color_automorphism_theorem": {
       "audit_date": "2026-05-23T15:58:34.632612+00:00",
@@ -37236,11 +37262,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 34.873,
+      "load_bearing_score": 35.873,
       "load_bearing_step": "Embedding the standard Gell-Mann generators as (U_base\u2020 diag(T^a,0_1) U_base) \u2297 I_2 on the 3D symmetric base block gives an SU(3) action commuting with the fiber operators, and the standard SU(3) Fierz identity gives R_conn=(N_c^2-1)/N_c^2=8/9 for N_c=3.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "7f1795669c3439f497792abbd993c0aff160f3e6ca221ec8811c9be58ac31b96",
       "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
       "notes_for_re_audit_if_any": "Second auditor should confirm downstream wording preserves the exclusion of physical SM color and unconditional sqrt(9/8) EW readout.",

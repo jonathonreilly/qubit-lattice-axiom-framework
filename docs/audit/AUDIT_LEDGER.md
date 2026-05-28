@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 148 |
-| **retained_no_go** | 170 |
+| **retained_no_go** | 171 |
 | **retained_bounded** | 580 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1155 |
+| unaudited | 1154 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 882 |
+| `audited_clean` | 883 |
 | `audited_conditional` | 64 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1385 |
+| `unaudited` | 1384 |
 
 | claim_type | count |
 |---|---:|
@@ -109,8 +109,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 181 | 39.01 | `unaudited` | unaudited |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 714 | 37.98 | `unaudited` | unaudited |
 | 10 | `yt_ew_color_projection_theorem` | no_go | critical | 556 | 37.62 | `audited_clean` | **retained_no_go** |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1037 | 35.52 | `audited_clean` | **retained** |
-| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 937 | 34.87 | `audited_clean` | **retained** |
+| 11 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 937 | 35.87 | `audited_clean` | **retained** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1037 | 35.52 | `audited_clean` | **retained** |
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 752 | 33.56 | `audited_clean` | **retained_bounded** |
 | 14 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 179 | 33.49 | `unaudited` | unaudited |
 | 15 | `three_generation_structure_note` | bounded_theorem | critical | 701 | 33.45 | `audited_clean` | **retained_bounded** |
@@ -234,6 +234,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -2872,6 +2873,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The separator, non-equivalence for opposite Schur scalars, and idempotent factorisation follow algebraically from the retained central pseudoscalar identity/split plus Schur's lemma and Artin-Wedderburn. No physical bridge, lattice carrier, fitted input, or external comparator is used.
 - **rationale:** The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27`
+
+- **Note:** [`CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md`](../../docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Same-link no-go only: for U_mu + U_mu^dagger with U_mu^dagger the Hermitian conjugate of the same SU(3) Wilson link, the O(g^2) gauge-averaged correction carries one fundamental Casimir C_F, not 2 C_F. This forecloses only Step 5's premise that the two same-link terms can be treated as independent SU(3) link variables each supplying C_F; it does not foreclose full Wilson-action neighboring-edge, lattice-wide, multi-loop, structural-product, or alternative Coleman-Weinberg routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `boole-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-cl3-chiral-cube-wilson-hop-doubling-no-go`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For one Hermitian X = g a A_mu^a T^a, exp(iX)+exp(-iX)=2I-X^2+O(X^4); X^2 contains one A^a A^b bilinear, and the coincident gauge average gives delta_ab T^a T^b=C_F I=4/3 I, not 2C_F I=8/3 I.  _(class `A`)_
+- **chain closes:** True — The same-link algebra closes from Taylor expansion, Hermitian conjugacy, and the retained SU(3) generator normalization/Casimir identity. The no-go discipline gate passes because the verdict is narrowed to the same-link Step-5 factor-of-two source and explicitly leaves broader Wilson-action and structural-product routes open.
+- **rationale:** The cache and local rerun both report PASS=67 FAIL=0. Independent check: exp(iX)+exp(-iX) has two quadratic half-terms that sum to -X^2, not -2X^2; after <A^a A^b>=delta_ab, the correction is -C_F I. The runner also verifies same-link unitarity/Hermitian conjugacy, alternative reads R0-R7, and Fierz sandwich controls. No-go-discipline N1-N8 are satisfied only for the narrow same-link claim: neighboring-edge full Wilson-action derivations, structural-product support for m_DM=16v, lattice-wide/multi-loop routes, and new dynamical Fierz inputs remain outside this verdict.
+- **open / conditional deps cited:**
+  - `Full Wilson-action or site-summed neighboring-edge derivation using distinct edge variables such as U_mu(x) and U_mu^dagger(x-mu)`
+  - `Independent structural-product route for m_DM = N_sites v or m_DM = 16 v`
+  - `Lattice-wide, multi-loop, neighboring-edge, or alternative Coleman-Weinberg routes`
+  - `New dynamical input through a traceless-adjoint Fierz channel`
 - **auditor confidence:** high
 
 ### `cl3_color_automorphism_theorem`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 566 |
+| **retained_bounded** | 567 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1181 |
+| unaudited | 1180 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 866 |
+| `audited_clean` | 867 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1411 |
+| `unaudited` | 1410 |
 
 | claim_type | count |
 |---|---:|
@@ -364,6 +364,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_closure_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -5044,6 +5045,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Substitute F_Htt^(0)(g_bare) = 1/sqrt(6) into F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c) with N_c = 3, giving g_bare^2 = 1 and the positive-branch solution g_bare = 1.  _(class `A`)_
 - **chain closes:** True — The chain closes only at bounded-theorem scope. The local algebra follows from retained_bounded one-hop authorities, but the H_unit-residue admission inherited through the same-1PI pinning input prevents honest classification as an unbounded positive theorem.
 - **rationale:** As a positive_theorem the note would overclaim: every load-bearing authority in the packet is retained_bounded, and the same-1PI pinning input carries the H_unit-residue admission. After narrowing to bounded_theorem scope, the closure is a genuine class-A algebraic consequence of the retained_bounded Ward inputs. The runner supports the arithmetic and checks textual presence of the Ward/pinning premises, but it does not independently derive the H_unit-residue exhaustion bridge.
+- **auditor confidence:** high
+
+### `g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional accepted-premise bridge: under explicit P1 that the tree-level H_unit residue exhausts the same-projected 1PI coefficient, plus retained Rep-B F_Htt=1/sqrt(6), exact coefficient algebra derives g_bare^2=1 and positive-branch g_bare=1. This does not prove P1, promote the parent status, identify the Standard Model top-Yukawa, or assert regulator/continuum/phenomenology claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `fresh-agent-Ohm-019e6ced-91f6-7f01-9b3c-e48b8a3d1ccf`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Under P1, the same projected coefficient gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2N_c); substituting F_Htt=1/sqrt(6) and N_c=3 yields g_bare^2=1, with g_bare=1 only on the positive branch.  _(class `B`)_
+- **chain closes:** True — The chain closes only on the stated P1 conditional surface inherited from the retained-bounded parent row. The runner verifies the post-P1 coefficient algebra, W1 substitution, exact rational solve, positive-branch readout, dependency/source firewall, and boundary language with PASS=67 FAIL=0; it does not derive the same-projected 1PI exhaustion premise.
+- **rationale:** A restricted fresh-context auditor confirmed clean status only at the bounded conditional-bridge scope. The row does not launder P1 into a proved premise: it explicitly registers P1 as the H_unit-residue admission and repeats that the missing same-projected 1PI exhaustion bridge remains outside scope. Given that condition and the retained Rep-B identity, the algebra F^2=g_bare^2/(2N_c), F=1/sqrt(6), N_c=3 gives g_bare^2=1 exactly; the final g_bare=1 is only the positive-branch convention.
 - **auditor confidence:** high
 
 ### `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19`

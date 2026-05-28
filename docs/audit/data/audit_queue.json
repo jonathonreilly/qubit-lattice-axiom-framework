@@ -3,7 +3,7 @@
     "critical": 230,
     "high": 317,
     "leaf": 325,
-    "medium": 309
+    "medium": 308
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -16561,31 +16561,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
-        "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py",
-      "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -16631,6 +16606,31 @@
       "ready": true,
       "runner_path": "scripts/same_family_3d_closure.py",
       "transitive_descendants": 4
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
+        "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.5,
+      "note_path": "docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/alpha_convention_i2_accepted_premise_runner.py",
+      "transitive_descendants": 3
     },
     {
       "audit_independence_required": "any_non_self",
@@ -25114,31 +25114,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09.py",
       "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
-        "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/alpha_convention_i2_accepted_premise_runner.py",
-      "transitive_descendants": 3
     },
     {
       "audit_independence_required": "any_non_self",
@@ -35790,5 +35765,5 @@
     }
   ],
   "ready_count": 48,
-  "total_pending": 1181
+  "total_pending": 1180
 }

@@ -9,6 +9,14 @@ not apply an audit verdict and does not promote any downstream cosmology row.
 
 proposal_allowed: false
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This row is not a coefficient derivation from the framework. Its re-audit
+target is the deterministic unit-conversion identity over the explicitly
+supplied P1-P4 packet, with P1-P4 kept as local admissions rather than
+authority imported by stealth. The arithmetic and source firewall may be
+ratified independently of the parent cosmology cascade.
+
 ## 0. Scope and Boundary
 
 This note formalizes a single textbook coefficient that currently enters the

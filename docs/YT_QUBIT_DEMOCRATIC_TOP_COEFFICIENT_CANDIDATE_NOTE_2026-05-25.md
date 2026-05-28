@@ -13,6 +13,13 @@ direct_effective_status_change_allowed_from_this_note: false
 **Primary runner:** `scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py`
 **Generated output:** `outputs/yt_qubit_democratic_top_coefficient_candidate_2026-05-25.json`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is an exact support lemma over the supplied Q_L carrier
+dimension and democratic-component amplitude. It does not prove that the
+physical top response coefficient equals that amplitude, and it does not close
+the positive Y_T lane.
+
 This note is the first stretch after the top coefficient was isolated as the
 remaining blocker.  It asks whether the qubit-at-each-`Z^3`-site baseline plus
 the already available Q_L carrier structure forces a canonical top coefficient

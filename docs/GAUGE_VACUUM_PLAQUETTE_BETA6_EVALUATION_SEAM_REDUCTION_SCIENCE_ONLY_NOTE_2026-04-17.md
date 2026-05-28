@@ -10,6 +10,14 @@ on the full Wilson/Haar one-slab kernel, full-slice rim-lift, and
 untruncated boundary-amplitude theorems being retained inputs**.
 **Runner:** `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This source is further narrowed to an if-premises-then-algebra reduction. It
+does not claim beta=6 seam closure authority, explicit `rho_(p,q)(6)`,
+plaquette Picard-Fuchs data, analytic `P(6)`, or an unconditional evaluator.
+The full Wilson/Haar kernel, rim-lift, kernel/rim compression, and compressed
+rim-evaluation laws remain separate missing authorities.
+
 ## 2026-05-27 Audit Repair (conditional-reduction narrowing)
 
 The 2026-05-25 audit verdict was `audited_conditional` with closure

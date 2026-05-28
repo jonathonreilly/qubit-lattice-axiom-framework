@@ -13,6 +13,13 @@ direct_effective_status_change_allowed_from_this_note: false
 **Primary runner:** `scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py`
 **Generated output:** `outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The row is narrowed to exact support for the signed-linear democratic Q_L
+source tangent under the supplied source-action, LSP, and democratic-source
+inputs. It does not prove that the physical top response coefficient is this
+tangent and does not promote Y_T closure.
+
 This note answers the axiom-first version of the remaining Y_T question:
 
 ```text

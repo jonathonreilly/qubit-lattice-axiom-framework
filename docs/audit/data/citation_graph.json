@@ -24482,7 +24482,7 @@
     },
     {
       "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-      "to": "minimal_axioms_2026-04-11"
+      "to": "minimal_axioms"
     },
     {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
@@ -41959,14 +41959,14 @@
     },
     "assumption_derivation_ledger": {
       "claim_id": "assumption_derivation_ledger",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "rconn_derived_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad6a84ff591922e3322e5a14ea23d989f4010f639b19c61b700af1eb784c6d13",
+      "note_hash": "edf77d76349699b7a20708e6403d24e9b47ca1bb181fc80772f06b30b39fb5c8",
       "path": "docs/ASSUMPTION_DERIVATION_LEDGER.md",
       "runner_path": null,
       "title": "Assumption / Derivation Ledger"
@@ -42557,7 +42557,7 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "257631c05d33feb5159da56fed871812033b85f2ecfe9c4f69593b85a9a30d68",
+      "note_hash": "5fc67fa80ae0f7b46a292587eaad190fba53475afc7b241e1a45a01b6c25937a",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation"
@@ -42974,7 +42974,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "9a78a221a4f2a7e106bd7f47fd2f465d1759e9b1e1649ce462309fd3ba886309",
+      "note_hash": "25a55e7a16a3c873adc3fb305126873d2d729544271bbd4d2ede5a2d48ca9804",
       "path": "docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md",
       "runner_path": "scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py",
       "title": "BBN eta_10 -> Omega_b h^2 Coefficient Admission Bridge"
@@ -43039,7 +43039,7 @@
         "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ca4582a927596369d6117125d42ae0cfed030ee4838a6a1710d087214a2a425f",
+      "note_hash": "b2ff4d0d9dfa80469baf3e3429e35c6237d62b82032bcdaf43009078eb669225",
       "path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
       "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
       "title": "\u03b2\u00b7g_bare\u00b2 = 2 N_c Conditional Wilson-Matching Arithmetic Lemma"
@@ -47600,7 +47600,7 @@
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "20f3a147b4572e3bb0a13dead07e53f4a4fa0d226fbaef69010dcc7457f8517a",
+      "note_hash": "fc3788fbdaa47783b0738475c8d4d86986eec52985a80394e3b7972afcc41baa",
       "path": "docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
       "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
       "title": "Dirac / Weyl Fermion DOF From Lorentz and Chirality Admission Bridge Note"
@@ -47793,7 +47793,7 @@
         "sign_portability_invariant_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "24bff63d0d5d742245b5d59f1ec472b70780530129439c038d37ed7bd08be219",
+      "note_hash": "f820ce36e1ac5c838954a9686f6544c5a2563bfc24415b2493b8227d2d35e4f6",
       "path": "docs/DISTANCE_LAW_BREAKPOINT_NOTE.md",
       "runner_path": "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py",
       "title": "Distance Law Breakpoint Note"
@@ -47812,16 +47812,16 @@
     },
     "distance_law_frontier_audit_note": {
       "claim_id": "distance_law_frontier_audit_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "gate_b_grown_distance_law_note",
         "gate_b_h025_distance_law_note",
         "wide_lattice_h2t_distance_law_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "27fb890424b8c4509a2bcde8f7defee9fda79489f69ed91841ee5ceb409439b5",
+      "note_hash": "c32ea5d6377a70eae3bed2e3f3dd9763d45859791e17e25b8b2f328e4332d982",
       "path": "docs/DISTANCE_LAW_FRONTIER_AUDIT_NOTE.md",
       "runner_path": null,
       "title": "Distance Law Frontier Audit"
@@ -48156,7 +48156,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "7b1b4897add385984b182d0e8b4f38f93ffe191851a3a898646da0a176d8c879",
+      "note_hash": "0705c798f47316a0316336881b39dedf309b7b5d5eff3a03ac56f9b0503ec3a6",
       "path": "docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md",
       "runner_path": "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py",
       "title": "DM `eta` Bounded Prediction From Supplied `N_sites \u00b7 v` Premise Narrow Theorem"
@@ -48360,7 +48360,7 @@
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "note_hash": "31c938c732fcbd286deb12cb7e0e689da4d88c0b9aa7c68f7f758e4d539eb21d",
+      "note_hash": "9a4d00253b852b887506ab8f0c0ee697ac572b1553f3b9f62e3db851d199b9c3",
       "path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
       "title": "DM Full Closure Same-Surface Numerator Selector Boundary"
@@ -48410,7 +48410,7 @@
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a0a7e55e26dd390b5517bebc55b127a85caeb5ffc23093d90f907de1f233058d",
+      "note_hash": "fb71647dad71426e2ee8cef59a4c86febb3e08940a23678a8b9b49d9fbf66214",
       "path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Monotonicity Theorem"
@@ -48447,7 +48447,7 @@
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "note_hash": "e3b7dfc64e3b33d31a61ab34d578a039e0f02ae869664784fc4df184f62d436c",
+      "note_hash": "40f73d297b47bfce612ba6373b7403f8b530d8eb65b25508bdfae4f21c1df9dc",
       "path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py",
       "title": "DM Full Closure Same-Surface Thermal Series/Tail Support"
@@ -49201,7 +49201,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c48b181b1bdf4cd4add0f47a700db9398bac03b63af3298b8d9e4f900e78b617",
+      "note_hash": "5625f4cb9d165e90f83db053dcbb6c1b376a6c01633952d13b4d560964b769b4",
       "path": "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
       "title": "DM Leptogenesis PMNS Projector Interface"
@@ -53423,9 +53423,9 @@
     },
     "early_family_transfer_connectivity_diagnosis": {
       "claim_id": "early_family_transfer_connectivity_diagnosis",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "gate_b_nonlabel_sign_grown_transfer_note",
         "claude_complex_action_grown_companion_note",
@@ -53435,7 +53435,7 @@
         "generated_geometry_synthesis_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bde48e8eb24f1a766a7014a280ee0f9fc20f401f71114019d9ebd51775e5beaa",
+      "note_hash": "134c5a961ff31dbd3f44610528b946355eea1263bb48cb3a29f713564455f900",
       "path": "docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md",
       "runner_path": null,
       "title": "Early Family Transfer Connectivity Diagnosis"
@@ -53619,7 +53619,7 @@
         "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "89d481c97209538cac4b73b028c2fd48a9373a1d8af52614b5d58bb726b9535d",
+      "note_hash": "31c7e16dbd4b81b85ea3de4d3d1136049d6da83d6451131ccd411faa3f3561fe",
       "path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
       "runner_path": "scripts/frontier_emergent_lorentz_invariance.py",
       "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)"
@@ -55553,7 +55553,7 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "049d83aa6a0fb7592c42d4e3734ea4ec0dc2fa0055fe93b23428e442bbe26580",
+      "note_hash": "e29f674c909311643403b41cb135a88a37fd4bd2288f2a2772405448abafbe49",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction"
@@ -58369,7 +58369,7 @@
         "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fdb53ab34b661c53206dc91f9e80e384c19dc2c575884c1ba92d017659dcb7e7",
+      "note_hash": "8bfae64b49a389cf71f8e21ae77229b3516d8cf3adbd270425e72c61fd97c9d4",
       "path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
       "title": "Higgs Lattice Eigenvalue Ratio (Mean-Field) \u2014 Narrow Theorem"
@@ -59390,14 +59390,14 @@
     },
     "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "claim_id": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d0973ea1d92b7e9d83a63ae281d661da39e7afc3d39032c5e90ac9e5ae5198cb",
+      "note_hash": "a07c567d931be73f7407006f4cf3095135851a2b9de93d29cab06a881f553fbb",
       "path": "docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py",
       "title": "4D Instanton Minimal Action `8\u03c0\u00b2/g\u00b2` \u2014 External Narrow Theorem"
@@ -64760,7 +64760,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b6321de75a744a93b99117c72d4a44245a1c1a3f98f8fd8d98912cdba8ce4307",
+      "note_hash": "ebf424e2bb8ddda40860b1e261bb5aec43c6a523c248be577887e1b16823ee46",
       "path": "docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md",
       "runner_path": "scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py",
       "title": "Massless Vector Polarization Count from Lorentzian Signature and Gauge Redundancy \u2014 Bounded Narrow Theorem"
@@ -64892,9 +64892,9 @@
     },
     "mesoscopic_surrogate_alternate_family_scout_note": {
       "claim_id": "mesoscopic_surrogate_alternate_family_scout_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "mesoscopic_surrogate_localization_frontier_note",
         "mesoscopic_surrogate_localization_sweep_note",
@@ -64904,7 +64904,7 @@
         "persistent_inertial_response_readiness_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0cde8b8223e376a7e7c935b2c15f3b79109e22595316398800b2fd3a34b620e8",
+      "note_hash": "1e6f69ce1d6a213e9d62a7aeb8463fe327d1c5cb8be4ea0ed6ad1f2ce9521cb4",
       "path": "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_alternate_family_scout.py",
       "title": "Mesoscopic Surrogate Alternate-Family Scout Note"
@@ -67117,7 +67117,7 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fae94c8edc985c93899c55a59631cb405bcb642a42ac00e91894d1127887f355",
+      "note_hash": "016d7c2b5888d897518afaa1d43b8f93104cb39013b4e691f62f59f49717ca01",
       "path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "title": "Newton's Law Conditional Worked Example on the Z^3 Spatial Substrate"
@@ -67146,7 +67146,7 @@
         "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "73a992fb9359cfbc40c28f698db99ad02a1bee1113e8bc48df2afca793cbeb2c",
+      "note_hash": "3a0cf85b278d0c045da2324665374f7f84fd269f3bee3d58a5753eb6a71d225a",
       "path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Newton-Poisson \u2192 Flat First Friedmann Law \u2014 Named Non-Derivation Import"
@@ -67514,7 +67514,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "7dabc0f172f9f77c5ecf4439417205e1f05815786ca4b423cb14628df64bfaff",
+      "note_hash": "2a221cebeeabf75e9980d7b5c3d31043f542558036dfd2fb27aa2614d1372f74",
       "path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
@@ -69200,7 +69200,7 @@
       "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "af370e5559f06573f8c182c1d3dd83e507c38979bc7d65c80a02e20c490f07cf",
+      "note_hash": "b4cb0eaa806136f8dea5b4154fad2d72b7f2773e566329881f8820553aa62f04",
       "path": "docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md",
       "runner_path": "scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py",
       "title": "Plaquette beta=6 Perturbative-Derivation Bounded Obstruction"
@@ -69212,7 +69212,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "3e2ae2fec18841b041534f4603c6e5d4529f3d733a56f49b874ede84f138a54b",
+      "note_hash": "65ba07fc27f5d10ba81664cfb97452976d6b52064e5637d141ece5c05c08b31c",
       "path": "docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md",
       "runner_path": "scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py",
       "title": "SU(3) Wilson Plaquette Strong-Coupling Pad\u00e9[3/3] Narrow Theorem (Bounded)"
@@ -74979,7 +74979,7 @@
         "retarded_field_compact_refinement_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9ea35ee0cd0853d929612891858b37db74a420652a259a6dcb6cb9ae79f07bd0",
+      "note_hash": "839196658a1c6f39c3c49eb452eb846f1ba84a5887e676440b4e6ed08d2fed4b",
       "path": "docs/RETARDED_FIELD_HARNESS_NOTE.md",
       "runner_path": "scripts/retarded_field_harness.py",
       "title": "Retarded Field Harness"
@@ -77479,7 +77479,7 @@
       "helper_runner_paths": [
         "scripts/generative_causal_dag_interference.py"
       ],
-      "note_hash": "825a3de15d376ca03162a5a689666627d0e3ed6bd87d621879cc179b7cf16c04",
+      "note_hash": "56a68786375b420a6d7effa9f956de9a5bd95e176c06998f521013f3855c14a1",
       "path": "docs/SPECTRAL_SYMMETRY_NOTE.md",
       "runner_path": "scripts/ceiling_formal_proof.py",
       "title": "Spectral Symmetry Note \u2014 CLT-Style Decoherence Evidence on Random Causal DAGs"
@@ -77514,7 +77514,7 @@
         "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d904155b347516b914cdf4b5a292cb0fa8aae62cdef447b13b7e0ad1f1d1a6ce",
+      "note_hash": "1fc6efe2d1f91e2c9f6e350581faeb01d940871eca67c44e0273b2f018808dc8",
       "path": "docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
       "runner_path": "scripts/sphaleron_coefficient_28_79_runner.py",
       "title": "Sphaleron Coefficient C_sph = 28/79 from SM-Like Content \u2014 Admission Bridge"
@@ -78374,14 +78374,14 @@
     },
     "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05": {
       "claim_id": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms_2026-04-11"
+        "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "note_hash": "1b55c51e562bf2ca62eed1bdec9c5aba613f467230da6a9daa54cf251a974ad7",
       "path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note"
@@ -79016,7 +79016,7 @@
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad2b3930627157ddd7938799834dc293e86c90a8dc9d425c2b8f497bcce42b15",
+      "note_hash": "17841bbe1675452f4a09759c0b039e6876269c26075e7dfb74f846e7db43e0d3",
       "path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
       "title": "SU(3) L_s=3 PBC Cube Haar Monte Carlo: Honest Negative Result"
@@ -82205,7 +82205,7 @@
       "claim_id": "wave_direct_dm_h025_low_band_retention_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "wave_direct_dm_h025_fam1_seed1_control_note",
         "wave_direct_dm_h025_two_point_synthesis_note"
@@ -82214,7 +82214,7 @@
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "470b2631c8ba049104e90846fe57ab10b87877cb533c1035e6a03665234a606f",
+      "note_hash": "bf61e82b1a0b2c5a191cce8e3e1a2ec8db39c3c10e04e37fa4cd53c9a634fbf3",
       "path": "docs/WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
       "title": "Wave Direct-dM H=0.25 Low-Band Retention Note"
@@ -82478,7 +82478,7 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eb79689fa019da65c8630b2339022222f5ff34bfa0563e32778ca5f162fd2699",
+      "note_hash": "d8743533145943fa03eb29a3e3a2b235d4923b94f8ca36f9b55c9fdb45cd5c9e",
       "path": "docs/WAVE_RETARDED_GRAVITY_NOTE.md",
       "runner_path": "scripts/wave_retarded_gravity.py",
       "title": "Wave Retarded Gravity: Retarded \u2260 Instantaneous on the Wave Field"
@@ -85018,7 +85018,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "f68373ee60eb16ec56df495a23e862308fdd72c73116a572e88f34e842a5f296",
+      "note_hash": "2d0131e37cafcb58988dbb672bcfd03c7e64b1f36d1c6b8fa16f67aae17b92f7",
       "path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py",
       "title": "Y_T Qubit Democratic Top-Coefficient Candidate"
@@ -85047,7 +85047,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "49511525b9ba33e0d699172a3d38699d3ad7f644fcad69c2eff394ba44ef0972",
+      "note_hash": "efaf4e0e51a4f5602d9242995cb25b751e2224ace351a01305697103ee88e3a3",
       "path": "docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py",
       "title": "Y_T Qubit Signed-Linear Source Response Bridge Candidate"
@@ -86418,22 +86418,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 645,
+      "bounded_theorem": 646,
       "decoration": 1,
-      "meta": 192,
+      "meta": 196,
       "no_go": 85,
-      "none": 1437,
+      "none": 1434,
       "open_gate": 50,
-      "positive_theorem": 169
+      "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1060,
+      "bounded_theorem": 1061,
       "decoration": 1,
-      "meta": 192,
+      "meta": 196,
       "no_go": 188,
       "none": 426,
       "open_gate": 127,
-      "positive_theorem": 585
+      "positive_theorem": 580
     },
     "edge_count": 9861,
     "leaf_count": 807,

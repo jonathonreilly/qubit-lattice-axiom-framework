@@ -23,6 +23,15 @@ the 2026-05-27 narrowing).
 (Hamiltonian-level positivity exhibits E1-E6; these are structural
 finite-block checks for a chosen `H_lat`, not Lagrangian RP exhibits).
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This source note no longer asks the audit lane to treat the 2-step
+staggered-KS transfer-matrix positivity bridge as proved. The audit-clean
+content offered here is the narrower negative exhibit: the single-step
+spin-basis Lagrangian reflection-positivity matrix is non-PSD in the runner's
+finite block. Any future positive 2-step `T_hat^2 = S_hat^2` theorem must be a
+separate row with its own proof and runner.
+
 ## 2026-05-27 Audit Repair
 
 The prior version of this note claimed a single-step Lagrangian

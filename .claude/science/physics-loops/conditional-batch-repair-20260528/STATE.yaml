@@ -1,0 +1,20 @@
+loop_slug: conditional-batch-repair-20260528
+started_from: origin/main@858dfca7e
+rebased_to: origin/main@be771e4fe
+branch: physics-loop/conditional-batch-repair-20260528
+mode: science-fix
+target_status: best_honest_status
+current_surface_status: verified_and_queued_for_reaudit
+audit_scope: "May 28 audited_conditional ledger rows"
+target_row_count: 33
+edits:
+  source_notes_scoped: 33
+  runners_changed:
+    - scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
+    - scripts/wave_direct_dm_h025_point_runner.py
+  caches_refreshed:
+    - logs/runner-cache/frontier_dm_leptogenesis_pmns_projector_interface.txt
+    - logs/runner-cache/wave_direct_dm_h025_point_runner.txt
+proposal_allowed: false
+audit_required_before_effective_status: true
+next_exact_action: "Draft PR is open; independent reviewer/auditor owns extraction and landing."

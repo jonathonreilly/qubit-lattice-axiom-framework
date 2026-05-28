@@ -5,6 +5,15 @@
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The live theorem is the calculus statement conditional on the displayed
+same-surface thermal ratio formula. The formula itself, including the `64:1`
+channel weighting and the differentiation to
+`64 f_att'(8y) + f_rep'(y)`, is a supplied premise of this row unless a
+separate authority proves it. Re-audit should not treat this note as closing
+the same-surface DM ratio formula.
+
 ## Question
 
 What part of the DM-side selector problem can already be closed exactly, before

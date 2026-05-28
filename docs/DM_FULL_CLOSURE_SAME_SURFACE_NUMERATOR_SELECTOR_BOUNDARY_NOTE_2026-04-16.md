@@ -5,6 +5,14 @@
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is narrowed to a pure endpoint-interval arithmetic lemma:
+given the explicit endpoint numbers and selector interval printed by the
+runner, the claimed numerator-boundary comparison follows. This row does not
+claim one-hop authority for the plaquette alpha endpoints, eta/omega
+conversion, packet completeness, or selector datum.
+
 ## Question
 
 Does the current exact DM packet already furnish a theorem-grade selector on

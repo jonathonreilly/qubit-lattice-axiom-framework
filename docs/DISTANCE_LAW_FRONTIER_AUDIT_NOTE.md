@@ -1,7 +1,15 @@
 # Distance Law Frontier Audit
 
 **Date:** 2026-04-05 (status line rephrased 2026-04-28 per audit-lane verdict)
+**Claim type:** meta
 **Status:** support / frontier-summary note, no runner registered, depends on three unaudited upstream distance-law notes; not a tier-ratifiable summary on its own.
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This file is a frontier-summary/meta note, not a bounded theorem. It may point
+to distance-law inputs after those rows are independently audited, but it does
+not itself supply a ranking runner or reproduce the frontier criteria. Any
+future frontier summary must land as a separate runner-backed row.
 
 ## Question
 

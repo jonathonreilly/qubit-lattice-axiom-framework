@@ -8,6 +8,14 @@ effective status are set by the independent audit lane.
 **Primary runner:** [`scripts/frontier_beta_gbare_squared_rescaling_invariance.py`](../scripts/frontier_beta_gbare_squared_rescaling_invariance.py)
 **Runner cache:** [`logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt`](../logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt)
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is only the algebraic invariant
+`beta * g_bare^2 = 2 N_c` under the stated Wilson-action normalization
+premise WM. WM is not cited as an effective framework theorem by this row.
+The row should not be used as Wilson matching authority unless a separate WM
+authority is audited.
+
 ## Claim
 
 This row is an explicitly conditional arithmetic lemma. It assumes the

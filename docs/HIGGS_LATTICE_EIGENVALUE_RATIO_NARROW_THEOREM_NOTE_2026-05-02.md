@@ -4,6 +4,14 @@
 **Type:** bounded_theorem (proposed; audit-lane to ratify)
 **Primary runner:** `scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The audit target is the exact ratio algebra conditional on the supplied
+`D_taste^2 = d I` identity and mean-field `U_ab -> u_0 delta_ab` surface.
+Those two premises are not promoted by this note and must not be inherited
+from the old `g_bare` convention chain. If they remain unaudited, the row is
+only a bounded algebra certificate.
+
 ## Claim scope (proposed)
 
 > **Given** the declared graph-first SU(3) gauge surface

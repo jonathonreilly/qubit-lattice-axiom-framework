@@ -1,7 +1,7 @@
 # Staggered + Wilson Determinant-Positivity Bridge Theorem Note
 
 **Date:** 2026-05-05
-**Type:** positive_theorem
+**Type:** bounded_theorem
 **Claim scope:** Under the symmetric-canonical surface consisting of the
 canonical conventions used by
 `docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
@@ -15,6 +15,14 @@ background for any `m > 0`. The proof is a structural two-sublattice
 block decomposition; no per-configuration numerical input is required.
 **Status authority:** independent audit lane only.
 **Primary runner:** `scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py`
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The matrix surface is now explicitly the supplied symmetric-canonical
+finite-block surface described below and the current Axiom 1/Axiom 2 wording
+in `MINIMAL_AXIOMS_2026-05-20.md`. This row no longer relies on superseded
+`minimal_axioms_2026-04-11` authority; if a convention is not listed below, it
+is not part of the live positivity theorem.
 
 ## Why this note exists
 
@@ -30,8 +38,9 @@ numerical support for the Wilson extension."
 This note supplies the missing bridge for the symmetric-canonical
 subsurface rather than a general Wilson-laplacian result. It proves
 `det(M_KS + M_W + m · I) > 0` in closed form when the parent conventions
-(`ε M_W ε = M_W`, parent §3a; mass term `m · I`, parent eq. (1) and the
-A3 carrier) are supplemented by `M_W = r · d · I`.
+(`epsilon M_W epsilon = M_W`, parent §3a; mass term `m * I`, parent eq. (1),
+and the current Axiom 1/Axiom 2 finite-block carrier) are supplemented by
+`M_W = r * d * I`.
 
 The proof is a sublattice block decomposition; the resulting structure is
 isomorphic to the BdG / chiral-pair form, and the determinant is a
@@ -44,9 +53,10 @@ symmetric-canonical surface.
 
 Adopt the parent-note conventions verbatim:
 
-- **A1 / A2 / A3 / A4** as in
-  [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) and the
-  parent reflection-positivity note. The lattice block is
+- **Axiom 1 / Axiom 2 finite-block surface** as in
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) plus the
+  explicit symmetric-canonical conventions in the parent reflection-positivity
+  note. The lattice block is
   `Λ = (Z/L_τ Z) × (Z/L_s Z)^{d_s}` with **even** total site count `n`
   and balanced sublattice partition `n_+ = n_- = n/2` under the staggered
   chirality `ε(x) = (-1)^{x_1 + ... + x_d}` (the lattice block has even
@@ -258,8 +268,8 @@ configuration-by-configuration on every SU(3) gauge background. ∎
   nearest-neighbour hops) reduces to this `ε`-commuting form on the
   canonical surface is the parent note's own structural assertion and
   is not re-derived here.
-- (D3) Mass term is `m · I`. **Asserted** in parent eq. (1) and the
-  A3 carrier.
+- (D3) Mass term is `m * I`. **Asserted** in parent eq. (1) as part of
+  the supplied symmetric-canonical finite-block surface.
 - (D4) The diagonal blocks of `M_W + m · I` are equal: `A = B = α · I`.
   **Holds** in the symmetric-canonical case where `M_W` reduces to a
   sublattice-uniform diagonal multiple of the identity. The
@@ -352,8 +362,8 @@ proven theorem**, not the load-bearing input.
   `docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
   (not a load-bearing dependency of this bridge note; the dependency edge
   is parent-to-bridge)
-- A_min carrier:
-  [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
+- Current Axiom 1/Axiom 2 carrier:
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - Standard linear-algebra fact (SVD, BdG block structure): textbook
   matrix analysis (Horn-Johnson; not a numerical or fitted import).
 

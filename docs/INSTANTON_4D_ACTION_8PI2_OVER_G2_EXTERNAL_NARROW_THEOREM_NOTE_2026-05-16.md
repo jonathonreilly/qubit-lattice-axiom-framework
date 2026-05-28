@@ -1,7 +1,7 @@
 # 4D Instanton Minimal Action `8π²/g²` — External Narrow Theorem
 
 **Date:** 2026-05-16
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
 **Scope:** external 4D Euclidean SU(N) Yang-Mills instanton minimal action
 formula (BPST 1975; 't Hooft 1976) and lattice preservation under Lüscher
 admissibility (Lüscher 1982; Lüscher 2010). Cited only as published
@@ -11,6 +11,14 @@ closure, scale ratio derivation, or `α_LM^16` substitution is claimed.
 status set by `compute_effective_status.py`.
 **Runner:** [`scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py`](../scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.txt`](../logs/runner-cache/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.txt)
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is the bounded Hodge/Bogomolny inequality plus the BPST
+radial normalization certificate verified by the runner. Atiyah-Singer
+integrality, BPST existence as a global theorem, and Luescher lattice-topology
+preservation remain parallel external context unless separate authority rows
+prove them.
 
 ## Claim
 

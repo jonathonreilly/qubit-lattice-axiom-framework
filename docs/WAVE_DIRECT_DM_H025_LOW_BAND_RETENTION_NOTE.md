@@ -1,7 +1,14 @@
 # Wave Direct-dM H=0.25 Low-Band Retention Note
 
 **Date:** 2026-04-08
-**Status:** proposed_retained one-strength validation on the Fam1/seed1 branch replay, later hardened by control ladder
+**Status:** bounded seed-1 control artifact; independent audit owns status.
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The source row is repointed to the Fam1 seed-1 `H = 0.25` control claim, not
+the default seed-0 runner cache. Re-audit should use a seed-1 command/cache or
+treat the seed-0 cache as non-load-bearing. The row does not claim broad
+retention beyond the single control point.
 
 This note records the complementary direct `H = 0.25` replay for the
 direct-`dM` amplitude-band story:

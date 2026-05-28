@@ -6,6 +6,8 @@ This runner verifies only finite linear algebra:
   * U_pair = U_e^dagger U_nu is unitary;
   * |U_pair|^2 is doubly stochastic;
   * |U_pair|^2 is invariant under independent eigenvector rephasings.
+  * degenerate eigenspace rotations are a real open boundary: the raw
+    |U_pair|^2 packet is not basis-invariant without an additional selector.
 
 It intentionally does not compute leptogenesis transport diagnostics or import
 the DM transport helper module.
@@ -221,8 +223,38 @@ def part2_rephasing_invariance() -> None:
         f"max err={max_rephase_err:.2e}, samples={samples}",
     )
 
+def part3_degenerate_eigenspace_boundary() -> None:
+    print("\n" + "=" * 88)
+    print("PART 3: DEGENERATE EIGENSPACE BOUNDARY")
+    print("=" * 88)
 
-def part3_result() -> None:
+    h_nu = np.diag([1.0, 1.0, 3.0]).astype(complex)
+    h_e = np.diag([1.2, 2.0, 3.4]).astype(complex)
+
+    theta = np.pi / 5.0
+    rot = np.array(
+        [
+            [np.cos(theta), np.sin(theta), 0.0],
+            [-np.sin(theta), np.cos(theta), 0.0],
+            [0.0, 0.0, 1.0],
+        ],
+        dtype=complex,
+    )
+    _u_pair_a, packet_a = projector_packet(h_nu, h_e)
+    u_nu_rot = np.eye(3, dtype=complex) @ rot
+    u_e = np.eye(3, dtype=complex)
+    packet_b = np.abs(u_e.conj().T @ u_nu_rot) ** 2
+    diff = float(np.linalg.norm(packet_a - packet_b))
+
+    check(
+        "degenerate eigenspace rotations change the raw packet without a selector",
+        diff > 1e-3,
+        f"packet diff={diff:.6f}",
+    )
+    print("  This is an intentional boundary check, not a failure of the simple-spectrum interface.")
+
+
+def part4_result() -> None:
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
@@ -230,6 +262,7 @@ def part3_result() -> None:
     print("    - supplied Hermitian pair -> U_pair = U_e^dagger U_nu")
     print("    - |U_pair|^2 is doubly stochastic")
     print("    - |U_pair|^2 is invariant under eigenvector rephasings")
+    print("    - degenerate eigenspaces require an additional selector")
     print()
     print("  Carrier authority, physical N1 column selection, and eta diagnostics remain outside this repaired row.")
 
@@ -242,7 +275,8 @@ def main() -> int:
     part0_source_firewall()
     part1_unitary_and_doubly_stochastic()
     part2_rephasing_invariance()
-    part3_result()
+    part3_degenerate_eigenspace_boundary()
+    part4_result()
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

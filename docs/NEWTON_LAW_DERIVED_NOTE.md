@@ -52,6 +52,14 @@ THEN the inverse-square force law follows as class-A algebra/calculus.
 None of BA-1 / BA-3 is derived from the framework axiom here. No new
 axiom, import, or retained bridge is introduced by this repair.
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is narrowed to Poisson-potential algebra under the explicit
+bounded admissions listed below. This row does not claim to derive BA-1 as an
+equation of motion from the framework, does not prove the test-mass force rule
+`F = -M_test grad(phi)`, and does not register product-law cross-coupling as
+load-bearing evidence. Those remain separate open authorities.
+
 ## Bounded admissions
 
 The load-bearing claim is **conditional on the three bounded admissions**

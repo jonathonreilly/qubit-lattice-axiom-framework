@@ -6,6 +6,14 @@
 **Primary runner:** `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py`
 **Status authority:** independent audit lane only.
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This row is narrowed to the raw pair-to-projector construction for simple
+spectra and fixed eigenbasis output. Degenerate eigenspaces are explicitly
+treated as an open invariance boundary unless the runner's degeneracy probe
+says the compared quantity is basis-invariant. Re-audit should not read this
+note as proving a physical PMNS projector map.
+
 ## Raw Pair-to-Projector Interface
 
 This row is a raw-interface repair. Its claim is exactly the finite

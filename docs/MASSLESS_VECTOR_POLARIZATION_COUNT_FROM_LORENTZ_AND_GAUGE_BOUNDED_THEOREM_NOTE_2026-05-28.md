@@ -10,6 +10,14 @@ audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py`](../scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py)
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The row is narrowed to the abstract fixed-momentum linear-algebra quotient:
+a four-component vector constrained by one independent transverse condition
+and quotiented by one independent null gauge direction has dimension two.
+Lorentzian QFT, Maxwell dynamics, plane-wave completeness, and SM gauge
+content are context/admissions only; they are not promoted by this row.
+
 ## 1. Claim scope
 
 > **Theorem (Massless vector polarization count).** Let `A_μ(x)` for
@@ -99,8 +107,8 @@ instead of an embedded unattributed premise.
 ## 3. Admitted-context inputs
 
 This narrow theorem **admits the following standard relativistic-QFT
-context**. The admissions are explicit and not promoted to retained
-framework status.
+context**. The admissions are explicit and not promoted to framework
+authority.
 
 - **(AC1) Lorentzian `R^{3,1}` manifold.** A smooth four-dimensional
   real manifold with metric signature `(+, −, −, −)` (the

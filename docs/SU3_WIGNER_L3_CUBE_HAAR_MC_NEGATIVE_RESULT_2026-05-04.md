@@ -13,6 +13,15 @@ Direct attempt to compute the L_s=3 PBC cube Wigner-Racah trace
 `T_lambda(L=3 cube)` via Haar Monte Carlo. **Result: naive Haar MC does
 not work.**
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The live claim is the finite-run negative diagnostic only. The MC means are
+not statistically significant by a conventional 2-SE diagnostic; the largest
+reported normalized discrepancy is about 1.20 SE, so this is not a 1-SE claim.
+Sample-complexity comments are heuristic unless tied to a stated
+dimension-normalized mean convention, and this row is not a global no-go for
+exact contraction, improved Monte Carlo, or importance sampling.
+
 For 5000 Haar SU(3) samples on the L_s=3 PBC cube (81 directed links,
 81 unique Wilson plaquettes), the integrand averages for nontrivial
 irreps are at the same order as their MC standard error:
@@ -20,13 +29,13 @@ irreps are at the same order as their MC standard error:
 | irrep | `<integrand>` | MC ± error |
 |---|---:|---:|
 | (0,0) | `1.0` | `0` (exact) |
-| (1,0) | `-6.3e-5` | `±5.9e-5` (within error of 0) |
-| (1,1) | `9.5e-18` | `±8.0e-18` (within error of 0) |
-| (2,0) | `3.5e-9` | `±4.1e-9` (within error of 0) |
-| (2,1) | `1.44e-12` | `±1.62e-12` (within error of 0) |
+| (1,0) | `-6.3e-5` | `±5.9e-5` (about `1.07` SE from 0) |
+| (1,1) | `9.5e-18` | `±8.0e-18` (about `1.19` SE from 0) |
+| (2,0) | `3.5e-9` | `±4.1e-9` (about `0.85` SE from 0) |
+| (2,1) | `1.44e-12` | `±1.62e-12` (about `0.89` SE from 0) |
 
 All nontrivial integrand averages are **statistically indistinguishable
-from zero** at N_samples = 5000. The resulting source-sector Perron
+from zero by a conventional 2-SE diagnostic** at N_samples = 5000. The resulting source-sector Perron
 solve gives `P_cube(L=3 PBC, MC) = 0.108`, dominated by random noise in
 the rho values (some negative, which is unphysical for a probability
 density).
@@ -58,12 +67,12 @@ error ~ stddev / sqrt(N).
 ### 1.2 Resolving a value of order 10^(-100)
 
 After dividing by the irrep-dimension factor `1 / d_lambda^81 = 1 / 8^81
-~ 1.2e-73`, the relevant scale of `T_(1,1)(L=3 cube)` is approximately
-`1e-100` or below.
-
-To resolve `T_(1,1) ~ 1e-100` above MC noise (variance ~ 1 per sample),
-we'd need `N_samples ~ (1 / 1e-100)^2 = 1e+200` samples. Infeasible by
-~150 orders of magnitude.
+~ 1.2e-73`, a dimension-normalized adjoint trace target
+`T_(1,1) ~ 1e-100` corresponds to a raw integrand mean near
+`T_(1,1) * 8^81 ~ 8e-28`. Under O(1) raw variance, resolving that mean would
+require on the order of `1 / (8e-28)^2 ~ 2e54` samples. If instead `1e-100`
+is interpreted as the raw integrand mean itself, the heuristic count would be
+`1e200`. Both estimates are variance heuristics, not claimed lower bounds.
 
 ### 1.3 What this means for this row
 
@@ -136,16 +145,16 @@ integrand `∏_p chi_lambda(U_p)` for `lambda ∈ {(0,0), (1,0), (0,1),
 (1,1), (2,0), (0,2), (2,1)}`.  The runner also verifies
 `chi_lambda(I) = dim(lambda)` for the tracked irreps, including the
 corrected `(2,1)` character.  For all nontrivial irreps, the MC mean is
-statistically indistinguishable from zero (within ±1 standard error).
+statistically indistinguishable from zero by a conventional 2-SE diagnostic
+(largest normalized discrepancy about `1.20` SE).
 The induced source-sector Perron value is `P_cube(L=3 PBC, MC) =
 0.1076`, dominated by MC noise; gap to bridge target is `0.4859 =
 1604× ε_witness`.
 
-Naive Haar MC at L_s=3 cannot resolve `T_lambda(L=3 cube)` for
-nontrivial `lambda`: the integrand's product structure across 81
-plaquettes drives its expected magnitude below `~ 1e-100`, which
-requires `~ 1e+200` samples to resolve above MC variance — infeasible
-by ~150 orders of magnitude.
+Naive Haar MC at L_s=3 did not resolve `T_lambda(L=3 cube)` for
+nontrivial `lambda` in this finite run. The integrand's product structure
+across 81 plaquettes gives a severe variance barrier; sample-complexity
+sentences in this note are heuristic unless a raw-mean convention is stated.
 
 ## 5. Scope
 

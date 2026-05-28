@@ -5,6 +5,14 @@
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is the thermal-kernel positive-series and tail-control
+lemma at the explicit numeric alpha inputs consumed by the runner. The live
+alpha interval constants, eta/omega conversion target, and same-surface
+selector sample definitions remain outside this row unless separate
+audit-clean authorities provide them.
+
 ## Question
 
 Can the DM thermal layer be hardened beyond the old coarse-grid or opaque

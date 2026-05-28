@@ -1,7 +1,15 @@
 # Early Family Transfer Connectivity Diagnosis
 
 **Date:** 2026-04-06  
-**Status:** proposed_retained narrow diagnosis of the origin architecture
+**Claim type:** meta
+**Status:** support / meta diagnosis; independent audit owns status.
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This note is a synthesis pointer over cited grown-row inputs, not a theorem
+row. It does not register an executable ranking criterion and does not promote
+`GENERATED_GEOMETRY_SYNTHESIS_NOTE.md` beyond metadata/support. If a retained
+transfer theorem is desired, it needs a separate runner-backed artifact.
 
 ## Artifact chain
 

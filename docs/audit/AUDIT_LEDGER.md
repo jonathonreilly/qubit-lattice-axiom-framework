@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 581 |
+| **retained_bounded** | 582 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 25 |
-| unaudited | 1147 |
+| unaudited | 1146 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 886 |
+| `audited_clean` | 887 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1377 |
+| `unaudited` | 1376 |
 
 | claim_type | count |
 |---|---:|
@@ -379,6 +379,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gate_b_complex_action_falsifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5389,6 +5390,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under the explicit H_unit-residue admission, Representation B is allowed to be read as the same complete projected Gamma_S^(4) coefficient as Representation A, so equating coefficients gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c), and the retained Rep-B value F_Htt^(0)=1/sqrt(6) then gives g_bare=1 on the positive branch.  _(class `A`)_
 - **chain closes:** True — The chain closes only for the bounded conditional theorem: direct dependencies are retained_bounded, and the missing H_unit-residue-to-complete-1PI bridge is stated as a load-bearing admission rather than smuggled in as a derived fact. The packet does not close, and the note does not claim to close, the complete same-projected 1PI exhaustion theorem.
 - **rationale:** The source note is correctly scoped as conditional Path-2 support: it repeatedly states that off-surface g_bare=1 depends on the H_unit-residue admission and does not prove the missing same-projected 1PI exhaustion bridge. The runner passes 25 checks, but those checks are source-firewall and coefficient-algebra checks after the admitted premise, not a first-principles computation of the bridge. Under that bounded scope, the algebra from F_Htt^(0)^2=1/6 and F_Htt^(0)^2=g_bare^2/(2N_c) to g_bare=1 is exact, and the retained_bounded direct dependencies are sufficient for bounded chain closure.
+- **auditor confidence:** high
+
+### `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`
+
+- **Note:** [`G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional arithmetic proof-walk only: given the supplied Standard Model thermal-inventory premise packet P1-P5 plus the cited retained support packet R1-R6, the unbroken-SM thermal count closes as N_bosons=28, N_fermions=90, and g_* = 28 + (7/8)*90 = 427/4 = 106.75. The verdict does not derive or retire P1-P5, does not promote the SM inventory to retained framework content, and does not close thermal-equilibrium dynamics or downstream leptogenesis/cosmology uses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-g-star-supplied-thermal-inventory-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Convert the supplied P1-P5 inventory into N_bosons=28 and N_fermions=90, then apply the retained/supplied 7/8 fermion thermal weight: 28 + (7/8)*90 = 427/4 = 106.75.  _(class `A`)_
+- **chain closes:** True — Within the bounded conditional scope, the retained support rows are retained-grade, P1-P5 are explicitly supplied rather than hidden, and independent rational arithmetic confirms the stated g_* value.
+- **rationale:** The note is honest about its imports: Standard Model inventory, massless-vector polarizations, Higgs component count, Dirac/Weyl state count, and T>250 GeV regime are P1-P5 supplied premises, not derived framework content. Under those premises and the retained support packet, the arithmetic is exact: bosons = 8*2 + 3*2 + 1*2 + 4 = 28; fermions = 3*(2*3*4 + 4 + 2) = 90; g_* = 28 + (7/8)*90 = 427/4 = 106.75. The runner's 89 PASS checks verify the factorization, citation/premise surface, parent-inventory alignment, and boundary disclaimers; no lattice-action, fitted comparator, downstream cosmology, or BSM inventory claim is imported.
 - **auditor confidence:** high
 
 ### `gate_b_complex_action_falsifier_note`

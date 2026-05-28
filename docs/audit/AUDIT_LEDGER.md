@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 538 |
+| **retained_bounded** | 539 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 833 |
+| `audited_clean` | 834 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1458 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
@@ -283,6 +283,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3647,6 +3648,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the exact projected Hermitian response pack, the unsymmetrized even column split is the pair (S12, S13), which descends on the sparse face to the live readout formulas.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the runner verifies that S12 and S13 are exactly the two real even off-diagonal response entries, that they pull back to (u,v)/(b,rho), and that the stated live readout formulas follow. It does not derive the Schur projection or a selector for the split, which the note explicitly leaves outside scope.
 - **rationale:** The load-bearing step is an algebraic coordinate/readout closure on an already supplied projected Hermitian response pack, not a first-principles derivation. The runner source computes the response pack from helper definitions, extracts S12 and S13, verifies their pullback and forward readout identities, and exhibits a same-triplet separator. The observed TARGET reproduction is a non-load-bearing comparator-style check and should not be read as deriving the target or a selector law.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded thermal-equilibrium conversion arithmetic: from the retained-bounded declared Standard Model g_*=106.75 inventory plus standard relativistic number/entropy density formulas, compute d_N=0.003901498367656259, g_*S(today)=43/11, s/n_gamma=7.039433661546651, and their product 0.02746433893974878.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-dm-equilibrium-conversion-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using g_* = 106.75, the relativistic Majorana equilibrium yield is d_N = 135 zeta(3)/(4 pi^4 g_*) and late entropy bookkeeping gives s/n_gamma = (pi^4/(45 zeta(3)))*(43/11).  _(class `A`)_
+- **chain closes:** True — The independent formula check reproduces n_N/T^3=3 zeta(3)/(2 pi^2), s/T^3=(2 pi^2/45)g_*, d_N=135 zeta(3)/(4 pi^4 g_*), and s/n_gamma=(pi^4/(45 zeta(3)))(43/11). The only physics inventory input is the direct retained-bounded g_* row, so the result remains bounded rather than unbounded.
+- **rationale:** The scoped bounded claim closes: once the retained-bounded SM relativistic inventory supplies g_*=106.75, the Majorana yield, e+e- entropy reheating ratio, g_*S(today), s/n_gamma, and product are direct thermal algebra. The runner independently evaluates the Bose/Fermi integrals and reproduces the exact formulas; it does not use the legacy 7.04 benchmark in the audited path. Residual risk is only the declared-inventory/instantaneous-equilibrium scope inherited from the bounded g_* and textbook thermal premises, so the row should retain as bounded.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16`

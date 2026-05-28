@@ -58575,24 +58575,42 @@
       "verdict_rationale": "The load-bearing step is an algebraic coordinate/readout closure on an already supplied projected Hermitian response pack, not a first-principles derivation. The runner source computes the response pack from helper definitions, extracts S12 and S13, verifies their pullback and forward readout identities, and exhibits a same-triplet separator. The observed TARGET reproduction is a non-load-bearing comparator-style check and should not be read as deriving the target or a selector law."
     },
     "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T02:33:35.525262+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited."
+        },
+        "dep_claim_type": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "sm_relativistic_dof_count_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 10.46,
+        "runner_hash": "b7b78ee26edaf69b4ed4d2b1de14807ed9037286c0887a748064c9b1ae531d23",
+        "transitive_descendants": 248
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-dm-equilibrium-conversion-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The independent formula check reproduces n_N/T^3=3 zeta(3)/(2 pi^2), s/T^3=(2 pi^2/45)g_*, d_N=135 zeta(3)/(4 pi^4 g_*), and s/n_gamma=(pi^4/(45 zeta(3)))(43/11). The only physics inventory input is the direct retained-bounded g_* row, so the result remains bounded rather than unbounded.",
       "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
-      "claim_scope": null,
+      "claim_scope": "Bounded thermal-equilibrium conversion arithmetic: from the retained-bounded declared Standard Model g_*=106.75 inventory plus standard relativistic number/entropy density formulas, compute d_N=0.003901498367656259, g_*S(today)=43/11, s/n_gamma=7.039433661546651, and their product 0.02746433893974878.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T02:33:35.525262+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -58600,21 +58618,21 @@
         "sm_relativistic_dof_count_import_note_2026-05-17"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.46,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Using g_* = 106.75, the relativistic Majorana equilibrium yield is d_N = 135 zeta(3)/(4 pi^4 g_*) and late entropy bookkeeping gives s/n_gamma = (pi^4/(45 zeta(3)))*(43/11).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "7fc788beb4449b4b46694ea790ad2ed02fd7842b6596c16025ea13c41707da2b",
       "note_path": "docs/DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "No re-audit needed unless the declared SM g_* inventory, equilibrium/decoupling scope, or downstream use of the conversion product changes.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -58772,18 +58790,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 7,
+        "B": 2,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 9
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py",
       "title": "DM Leptogenesis Equilibrium-Conversion Theorem",
       "transitive_descendants": 248,
-      "verdict_rationale": null
+      "verdict_rationale": "The scoped bounded claim closes: once the retained-bounded SM relativistic inventory supplies g_*=106.75, the Majorana yield, e+e- entropy reheating ratio, g_*S(today), s/n_gamma, and product are direct thermal algebra. The runner independently evaluates the Bose/Fermi integrals and reproduces the exact formulas; it does not use the legacy 7.04 benchmark in the audited path. Residual risk is only the declared-inventory/instantaneous-equilibrium scope inherited from the bounded g_* and textbook thermal premises, so the row should retain as bounded."
     },
     "dm_leptogenesis_exact_kernel_closure_note_2026-04-15": {
       "audit_date": null,
@@ -248947,11 +248966,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 9.477,
+      "load_bearing_score": 12.477,
       "load_bearing_step": "Given g_bosonic=28, g_fermionic=90, and fermion weight 7/8, compute g_* = 28 + (7/8)*90 = 427/4 = 106.75.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "14ca250db8402f5bab238354f8c653bd7f58f3a88086e74374940081c031cb23",
       "note_path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "No re-audit needed unless the source broadens beyond declared-inventory arithmetic or claims the SM inventory/cosmology as derived.",

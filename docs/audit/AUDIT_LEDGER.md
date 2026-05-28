@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 574 |
+| **retained_bounded** | 575 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1165 |
+| unaudited | 1164 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 875 |
+| `audited_clean` | 876 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1395 |
+| `unaudited` | 1394 |
 
 | claim_type | count |
 |---|---:|
@@ -191,6 +191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2197,6 +2198,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The axiom-premise authority supplies the finite qubit tensor-product substrate, hence H_Λ has dimension 2^|Λ| ≥ 2 and E(H_Λ) is the standard finite-dimensional effect algebra. With the stated Busch/CFMR theorem as the standard mathematical input, the Born-form conclusion follows directly.
 - **rationale:** The source does not re-prove Busch's theorem, but it honestly scopes the row as applying that named standard POVM-Gleason theorem to the framework substrate. The only framework dependency is the axiom-premise Minimal Axioms note, which correctly yields A_Λ = M_{2^|Λ|}(C) and dim H_Λ ≥ 2 for nonempty finite Λ. The M3 partition-additivity condition is strong enough to match the effect-additivity needed for the stated theorem by adding complements. No runner was supplied, so the audit is textual rather than computational.
 - **auditor confidence:** medium
+
+### `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** From the accepted Z^3 spatial substrate plus standard Pontryagin-duality and Haar-normalization facts, the BZ dual is T^3 and its Haar probability measure in [-pi,pi]^3 coordinates is d^3k/(2pi)^3. The continuum R^3 Fourier denominator is certified only as a non-load-bearing numerical convention comparison, not as a derived continuum-measure bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `ampere-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-bz-volume-two-pi-cubed`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** (Z^3)^* = T^3, vol([-pi,pi]^3) = (2pi)^3, hence mu_Haar(dk) = d^3k/(2pi)^3.  _(class `A`)_
+- **chain closes:** True — The substrate-internal chain closes from Z^3 plus standard Pontryagin/Haar facts: the dual torus and its probability-normalized Haar measure fix the (2pi)^3 denominator. The continuum comparison is explicitly non-load-bearing.
+- **rationale:** The bounded theorem closes at the stated scope. Independent check: Pontryagin duality gives Z^* = R/2piZ and products give (Z^3)^* = T^3; the coordinate fundamental domain [-pi,pi]^3 has product volume (2pi)^3; Haar probability normalization on the compact torus therefore writes as d^3k/(2pi)^3. The runner checks source-boundary firewalls, character-sum structure, exact sympy volume/Haar identities, Riemann-sum normalization, translation invariance, and alternative-constant fingerprints with PASS=55 FAIL=0. Residual risk is only scope creep: this does not derive the continuum R^3 Fourier measure, any 4D loop measure, Wick rotation, hierarchy primitive, 4pi factor, or Wilson/g_bare normalization.
+- **auditor confidence:** high
 
 ### `carrier_orbit_invariance_note_2026-05-03`
 

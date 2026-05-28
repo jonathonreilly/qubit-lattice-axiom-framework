@@ -21821,22 +21821,44 @@
       "verdict_rationale": "The source does not re-prove Busch's theorem, but it honestly scopes the row as applying that named standard POVM-Gleason theorem to the framework substrate. The only framework dependency is the axiom-premise Minimal Axioms note, which correctly yields A_\u039b = M_{2^|\u039b|}(C) and dim H_\u039b \u2265 2 for nonempty finite \u039b. The M3 partition-additivity condition is strong enough to match the effect-additivity needed for the stated theorem by adding complements. No runner was supplied, so the audit is textual rather than computational."
     },
     "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T06:15:57.197904+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "92e391d4dd077cbfa66c5fa1ae71b232dc600324021a04f90a5a8996a43bb2b2",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "ampere-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-bz-volume-two-pi-cubed",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The substrate-internal chain closes from Z^3 plus standard Pontryagin/Haar facts: the dual torus and its probability-normalized Haar measure fix the (2pi)^3 denominator. The continuum comparison is explicitly non-load-bearing.",
       "claim_id": "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
+      "claim_scope": "From the accepted Z^3 spatial substrate plus standard Pontryagin-duality and Haar-normalization facts, the BZ dual is T^3 and its Haar probability measure in [-pi,pi]^3 coordinates is d^3k/(2pi)^3. The continuum R^3 Fourier denominator is certified only as a non-load-bearing numerical convention comparison, not as a derived continuum-measure bridge.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T06:15:57.197904+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -21844,34 +21866,35 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "(Z^3)^* = T^3, vol([-pi,pi]^3) = (2pi)^3, hence mu_Haar(dk) = d^3k/(2pi)^3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "905bdd9d430195ae221b044af92a7dca7fecbc696285b0eb31e3722463b503c4",
       "note_path": "docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Recheck only if later scope treats this as deriving the continuum R^3 Fourier measure, a BZ-to-continuum bridge, a 4D loop measure, Wick rotation, or a hierarchy/g_bare normalization primitive.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 55,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 55
       },
       "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
       "title": "Brillouin-Zone Volume `(2\u03c0)\u00b3` on `Z\u00b3` is Substrate-Internal \u2014 Narrow Theorem",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The bounded theorem closes at the stated scope. Independent check: Pontryagin duality gives Z^* = R/2piZ and products give (Z^3)^* = T^3; the coordinate fundamental domain [-pi,pi]^3 has product volume (2pi)^3; Haar probability normalization on the compact torus therefore writes as d^3k/(2pi)^3. The runner checks source-boundary firewalls, character-sum structure, exact sympy volume/Haar identities, Riemann-sum normalization, translation invariance, and alternative-constant fingerprints with PASS=55 FAIL=0. Residual risk is only scope creep: this does not derive the continuum R^3 Fourier measure, any 4D loop measure, Wick rotation, hierarchy primitive, 4pi factor, or Wilson/g_bare normalization."
     },
     "c3_symmetry_preserved_interpretation_note_2026-05-08": {
       "audit_date": null,

@@ -15,6 +15,12 @@ same endpoint data. Therefore nearest-face readout remains a new physical
 top-readout theorem to derive, not a consequence of the current boundary
 geometry alone.
 
+Cycle 14 science commit:
+
+```text
+d4424e71d74981354160d932f473f04b2b5498dc
+```
+
 Cycle 14 verification:
 
 - `python3 scripts/frontier_yt_c3_hard_boundary_readout_law_underdetermination.py` -> `SUMMARY: PASS=81 FAIL=0`

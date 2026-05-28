@@ -1,7 +1,43 @@
 # Gate B: Evolving Network Dynamics — Current Status
 
-**Date:** 2026-04-04
-**Status:** bounded - bounded or caveated result note
+**Date:** 2026-04-04 (original); 2026-05-28 (primary connectivity-tolerance
+numbers refreshed against the current cached runner).
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+**Status:** bounded omnibus synthesis; per-row numbers defer to the
+SHA-pinned companion notes (see refresh header).
+
+## 2026-05-28 Audit Repair (stale primary numbers refreshed)
+
+The 2026-05-28 audit verdict was `audited_failed`:
+
+> *"The registered primary runner and the retained direct companion now
+> report different connectivity-tolerance values, so the omnibus note is
+> stale on its own load-bearing primary replay."*
+
+The stale claim was the §"What was tested" item-1 headline that the noisy
+NN lattice gives `100% TOWARD at all jitter levels 0.0-0.5`. The current
+registered primary runner
+[`scripts/gate_b_connectivity_tolerance.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_connectivity_tolerance.py)
+(SHA-pinned cache `logs/runner-cache/gate_b_connectivity_tolerance.txt`)
+reports a **mixed** jittered-lattice replay, not `100%`:
+
+```text
+jitter   toward
+ 0.00     66.7%
+ 0.10     55.6%
+ 0.20     66.7%
+ 0.30     47.2%
+ 0.40     50.0%
+ 0.50     75.0%
+```
+
+Item 1 below is corrected to these current numbers. To stop this omnibus
+synthesis from re-staling on restated companion numbers, **per-row
+quantitative values are authoritative in the SHA-pinned companion notes**,
+not in this omnibus prose; this note now reads as an index + qualitative
+synthesis over those companions. No new axiom, import, or runner is
+introduced by this repair.
 
 ## The question
 
@@ -28,8 +64,14 @@ Latest bounded follow-up:
 - [docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md)
 
 1. **Noisy NN lattice** (positions jittered, fixed connectivity):
-   100% TOWARD at all jitter levels 0.0-0.5, F∝M=1.00, Born 0.
-   Gravity degrades gracefully (~40% weaker at jitter=0.5).
+   **mixed 47-75% TOWARD across jitter levels 0.0-0.5** on the current
+   registered connectivity-tolerance replay (66.7% / 55.6% / 66.7% /
+   47.2% / 50.0% / 75.0% at jitter 0.00/0.10/0.20/0.30/0.40/0.50),
+   `F~M` ≈ 0.47-0.75 per row. (Corrected 2026-05-28 from the stale
+   `100% at all jitter levels` headline; see repair header. The
+   authoritative per-jitter numbers live in the SHA-pinned
+   [`GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
+   companion.)
 
 2. **Templated growth** (copy prev layer + jitter, NN offsets):
    50-67% TOWARD, F∝M=1.00. Position drift accumulates across layers.

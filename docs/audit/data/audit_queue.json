@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 250,
     "high": 310,
-    "leaf": 271,
+    "leaf": 272,
     "medium": 304
   },
   "cycle_break_target_count": 6,
@@ -26591,6 +26591,45 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gate_b_dynamics_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_connectivity_tolerance_note",
+        "evolving_network_prototype_v4_note",
+        "evolving_network_prototype_v5_note",
+        "evolving_network_prototype_v6_note",
+        "gate_b_farfield_note",
+        "gate_b_v6_nearfield_comparator_note",
+        "gate_b_grown_distance_law_note",
+        "gate_b_grown_joint_package_note",
+        "gate_b_nonlabel_connectivity_v3_note",
+        "gate_b_h025_farfield_note",
+        "gate_b_h025_distance_law_note",
+        "gate_b_h025_joint_package_note",
+        "gate_b_weak_connectivity_note",
+        "gate_b_nonlabel_connectivity_v2_note",
+        "gate_b_no_restore_farfield_note",
+        "gate_b_no_restore_joint_package_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_connectivity_tolerance.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34699,6 +34738,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 7,
-  "total_pending": 1135
+  "ready_count": 8,
+  "total_pending": 1136
 }

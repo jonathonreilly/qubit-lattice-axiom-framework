@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 171 |
-| **retained_bounded** | 585 |
+| **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 25 |
-| unaudited | 1139 |
+| unaudited | 1138 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 890 |
+| `audited_clean` | 891 |
 | `audited_conditional` | 69 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1369 |
+| `unaudited` | 1368 |
 
 | claim_type | count |
 |---|---:|
@@ -536,6 +536,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -7985,6 +7986,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal two-variable reduced-carrier algebra only: for positive rho_+, rho_perp with rho_+^2+rho_perp^2=E_tot, the symmetric log-volume extremum has rho_+^2=rho_perp^2=E_tot/2; under E_i=rho_i^2 and the retained Frobenius identities E_+=3a^2 and E_perp=6|b|^2 this gives a^2=2|b|^2, kappa=2, and S_E=2S_rho. This excludes physical SO(2) quotient derivation, charged-lepton scalar-lane readout, mass identification, Standard Model matching, observed lepton masses, and parent physical Koide closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-fresh-koide-mru-reduced-carrier-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Maximize S_rho=log rho_+ + log rho_perp under rho_+^2+rho_perp^2=E_tot, then substitute E_i=rho_i^2 and retained E_+=3a^2, E_perp=6|b|^2 to obtain a^2=2|b|^2 and kappa=2, with S_E=2S_rho.  _(class `A`)_
+- **chain closes:** True — The reduced-carrier extremum closes by elementary AM-GM/Lagrange algebra, and the retained Frobenius identities supply the post-quotient substitution; no physical Koide bridge is consumed.
+- **rationale:** The bounded formal chain closes: the symmetric two-slot log extremum is unique, the positive change of variables E_i=rho_i^2 is monotone, and the retained Frobenius identities convert E_+=E_perp into a^2=2|b|^2 and kappa=2. The result is not decoration because no single parent carries both the reduced rho-carrier extremum and the Frobenius post-quotient substitution; the source combines two retained algebraic inputs. The clean verdict is strictly formal and does not ratify a physical charged-lepton carrier, mass/readout identification, observed Koide match, or parent physical Koide lane.
 - **auditor confidence:** high
 
 ### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`

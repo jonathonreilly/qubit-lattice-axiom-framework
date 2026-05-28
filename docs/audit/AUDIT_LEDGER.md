@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 554 |
+| **retained_bounded** | 555 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1205 |
+| unaudited | 1204 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 853 |
+| `audited_clean` | 854 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1435 |
+| `unaudited` | 1434 |
 
 | claim_type | count |
 |---|---:|
@@ -311,6 +311,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `eigenvalue_anderson_phase_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `electric_sign_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `electrostatics_card_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
+| `electrostatics_grown_sign_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `electrostatics_superposition_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `em_gravity_coexistence_2x2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4121,6 +4122,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The runner explicitly instantiates the 3D ordered lattice, constructs scalar source fields, propagates charged test packets, and computes the reported centroid shifts rather than printing constants. The audited conclusion is limited to the constructed scalar sign-law probe and does not require Maxwell, gauge, magnetic, or radiative structure.
 - **rationale:** The provided source code performs an internal numerical computation over the lattice machinery and derives the sign antisymmetry, null cancellation, dipole flip, charge-scaling exponent, and screening attenuation values shown in stdout. The reported numbers are not hard-coded expected outputs, and no external comparator or cross-note value is imported. The clean verdict applies only to the narrow scalar sign-coupled construction as stated, not to any broader electromagnetic theory.
 - **auditor confidence:** high
+
+### `electrostatics_grown_sign_law_note`
+
+- **Note:** [`ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md`](../../docs/ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded fixed-runner scalar sign-law companion on the imported Gate-B grown-geometry helper row grow(drift=0.2, restore=0.7) for seeds [0,1], fixed field and no graph update: the registered runner reproduces the printed single-source, neutral same-point, like-pair, dipole, and double-charge delta_z sign table, exact printed neutral cancellation, and approximately linear +1/+2 charge response. No Maxwell theory, radiation derivation, electromagnetic field theory, geometry-generic theorem, or physical Gate-B closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-electrostatics-grown-sign-law-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The SHA-pinned runner cache completes and reports: single +1 delta_z=-1.882286e-04 AWAY, single -1 delta_z=+1.882349e-04 TOWARD, neutral same-point +1/-1 delta_z=0, like pair +1/+1 delta_z=-2.556525e-04 AWAY, dipole +1/-1 delta_z=+3.137392e-05 TOWARD, double +2 delta_z=-3.764509e-04 AWAY, and charge exponent 1.000. The helper path is registered and supplies the grow(drift, restore, seed) geometry constructor.  _(class `C`)_
+- **chain closes:** True — The one-hop dependency gate_b_grown_joint_package_note is retained-bounded, the primary runner and helper runner are in the restricted packet, and the cached output supports the finite sign/cancellation/linearity table under the narrowed fixed-row scope. The closure is bounded to the runner-defined scalar sign-law companion and does not promote the stale broader final-verdict/status prose.
+- **rationale:** This closes as a bounded numerical companion after narrowing to the registered runner evidence. The old blocker was restricted-packet incompleteness; the current ledger registers the primary runner and helper path, and the one-hop grown-joint helper authority is retained-bounded. The runner computes fields and propagates amplitudes on the helper-grown row rather than printing constants. Independent checks confirmed the sign table, exact same-point neutral cancellation by algebraic cancellation of +1 and -1 source terms, +2/+1 scaling with exponent about 0.999976, and near antisymmetry of single +/- sources. I did not audit a W=8 geometry claim: the runner header prints W=8 while the imported grow helper uses its own W=10 constant, so the retained scope is the helper grow(drift=0.2, restore=0.7, seed) row and the printed finite delta_z table, not the runner's width label.
+- **auditor confidence:** medium
 
 ### `electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17`
 

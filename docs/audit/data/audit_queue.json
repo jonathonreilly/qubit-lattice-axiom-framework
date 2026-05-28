@@ -68,24 +68,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "three_generation_structure_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded finite corner-spectrum statement on the supplied staggered-Dirac/Wilson Z^3 surface: the Brillouin-zone corners {0,pi}^3 split by Wilson mass m(p)=sum_mu(1-cos p_mu)=2 hw(p) into degeneracies 1+3+3+1, the hw=1 orbit is the unique lightest nonzero triplet, and the retained-bounded no-proper-quotient dependency supplies only the finite M_3(C)/no-proper-quotient algebra for that triplet. No rooting, physical-species, SM-generation, CKM, chirality, substrate-physicality, or full matter-content claim is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 42,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 30.455,
       "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
       "transitive_descendants": 701

@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 533 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1240 |
+| unaudited | 1239 |
+| audit_in_progress | 1 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -55,14 +56,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 827 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1470 |
+| `unaudited` | 1469 |
 
 | claim_type | count |
 |---|---:|
@@ -115,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 17 | `cpt_exact_note` | positive_theorem | critical | 914 | 31.34 | `audited_clean` | **retained** |
 | 18 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 566 | 31.15 | `unaudited` | unaudited |
 | 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 920 | 30.85 | `audited_renaming` | ~~audited_renaming~~ |
-| 20 | `three_generation_structure_note` | bounded_theorem | critical | 701 | 30.45 | `unaudited` | unaudited |
+| 20 | `three_generation_structure_note` | bounded_theorem | critical | 701 | 30.45 | `audit_in_progress` | audit_in_progress |
 | 21 | `left_handed_charge_matching_note` | decoration | critical | 683 | 30.42 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 224 | 29.81 | `unaudited` | unaudited |
 | 23 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 190 | 29.08 | `unaudited` | unaudited |
@@ -128,6 +129,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `three_generation_structure_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |

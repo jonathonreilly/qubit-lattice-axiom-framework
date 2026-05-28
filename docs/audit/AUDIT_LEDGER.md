@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 552 |
+| **retained_bounded** | 553 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1207 |
+| unaudited | 1206 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 851 |
+| `audited_clean` | 852 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1437 |
+| `unaudited` | 1436 |
 
 | claim_type | count |
 |---|---:|
@@ -592,6 +592,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_absorbing_horizon_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `minimal_bidirectional_trapping_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -8596,6 +8597,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The cached runner reports alpha=0 weak-field recovery with exact grid and sector stencil both 3/3 TOWARD and F~M=1.00, then escape fractions 1.0002, 0.4353, 0.0903, 0.0202, 0.0000, 0.0000 at alpha=0,0.10,0.30,0.50,2.00,10.00.  _(class `C`)_
 - **chain closes:** True — All four one-hop dependencies are retained-bounded, the long cached runner completed successfully, and the printed values support the source's bounded alpha-threshold readout. The absorption parameter remains a hand-added proxy inside the audited scope, not a derived physical law.
 - **rationale:** The row closes only as a bounded finite-harness observation. The source now states that alpha is hand-added, that the observation is runner-defined, and that no absorbing-horizon law, black-hole observable, strong-field threshold, or A_min derivation is claimed. The cached runner computes weak-field recovery and escape fractions on the declared family; alpha=0 recovers the retained-lane signature, alpha=0.10 is the first positive listed alpha below 50% escape, and alpha>=0.5 is near-zero escape on this finite readout. Residual risk is the modeling proxy itself, which remains outside the clean scope.
+- **auditor confidence:** medium
+
+### `minimal_bidirectional_trapping_probe_note`
+
+- **Note:** [`MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE.md`](../../docs/MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded runner-defined Gate-B no-restore grown-family trapping proxy at h=0.5, W=10, NL=25, seeds 0..3, z={3,4,5}, drift=0.2: alpha=0 recovers the runner-defined weak-field readout, alpha>=0.10 gives escape fraction below 50%, and alpha>=0.5 gives escape fraction about 0.02 or lower. No derived no-return law, black-hole observable, strong-field trapping law, or physical Gate-B closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-minimal-bidirectional-trapping-probe-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cached runner reports alpha=0 weak-field recovery with exact grid and sector stencil both 3/3 TOWARD and F~M=1.00, then escape fractions 1.0002, 0.4353, 0.0903, 0.0202, 0.0000, and 0.0000 at alpha=0, 0.10, 0.30, 0.50, 2.00, and 10.00, with branch verdict viable.  _(class `C`)_
+- **chain closes:** True — All one-hop dependencies are retained-bounded, the SHA-pinned cached runner completed successfully, and the printed values support only the bounded alpha-threshold/no-return proxy stated here. The alpha absorption parameter remains a hand-added runner proxy, not a derived physical trapping law.
+- **rationale:** This closes as a bounded finite-harness observation. The source explicitly limits the result to the runner-defined no-restore grown-family proxy and denies black-hole, horizon, strong-field, or physical Gate-B closure authority. The cached runner reproduces the weak-field lane at alpha=0 and gives the threshold sequence needed for the claim; an independent arithmetic check of the printed escape fractions confirms 0.4353 < 0.5 at alpha=0.10 and 0.0202 is about 0.02 at alpha=0.50. The residual risk is modeling scope, not an unsupported theorem step, because alpha is a hand-added damping proxy.
 - **auditor confidence:** medium
 
 ### `minimal_source_driven_field_probe_note`

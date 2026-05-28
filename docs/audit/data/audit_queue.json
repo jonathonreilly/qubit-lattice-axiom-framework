@@ -3,7 +3,7 @@
     "critical": 230,
     "high": 320,
     "leaf": 325,
-    "medium": 332
+    "medium": 331
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -16642,29 +16642,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "minimal_bidirectional_trapping_probe_note",
+      "claim_id": "retarded_field_delay_proxy_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
         "minimal_absorbing_horizon_probe_note",
-        "gate_b_nonlabel_connectivity_v1_note",
-        "gate_b_nonlabel_connectivity_v1_distance_note",
-        "gate_b_nonlabel_connectivity_v1_joint_note",
-        "gate_b_farfield_note"
+        "minimal_bidirectional_trapping_probe_note"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.976,
-      "note_path": "docs/MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE.md",
+      "helper_runner_paths": [
+        "scripts/causal_field_gravity.py"
+      ],
+      "load_bearing_score": 7.959,
+      "note_path": "docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/minimal_bidirectional_trapping_probe.py",
-      "transitive_descendants": 88
+      "runner_path": "scripts/retarded_field_delay_proxy_probe.py",
+      "transitive_descendants": 87
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17209,33 +17208,6 @@
       "ready": false,
       "runner_path": null,
       "transitive_descendants": 94
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "retarded_field_delay_proxy_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_absorbing_horizon_probe_note",
-        "minimal_bidirectional_trapping_probe_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/causal_field_gravity.py"
-      ],
-      "load_bearing_score": 7.959,
-      "note_path": "docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/retarded_field_delay_proxy_probe.py",
-      "transitive_descendants": 87
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36459,5 +36431,5 @@
     }
   ],
   "ready_count": 58,
-  "total_pending": 1207
+  "total_pending": 1206
 }

@@ -141330,22 +141330,46 @@
       "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the hypotheses stated in the note. The runner source performs symbolic matrix checks and explicit eigenvector checks rather than importing empirical masses, calibrated constants, or prior contested premises. No cited authority is needed for the main implication, and the note correctly limits the framework-realization question as open rather than claiming closure."
     },
     "koide_aps_block_by_block_forcing_note_2026-04-21": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T03:16:32.832752+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only; no arbitrary PL cap, S^3, homogeneity, or physical-closure claim is audited here.",
+          "s3_cap_uniqueness_note": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited."
+        },
+        "dep_claim_type": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "bounded_theorem",
+          "s3_cap_uniqueness_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "retained_bounded",
+          "s3_cap_uniqueness_note": "retained_bounded"
+        },
+        "deps": [
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17",
+          "s3_cap_uniqueness_note"
+        ],
+        "load_bearing_score": 8.5,
+        "runner_hash": "04f185cf232bbc4ac38733ba9bb0667764c700f837c93e22f59b985d7e5b54e8",
+        "transitive_descendants": 63
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-koide-aps-block-by-block-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact APS arithmetic closes only after stipulating p=3, weights (1,2), and ABSS applicability on PL S^3 x R. The one-hop retained-bounded deps are finite cone-cap certificates and explicitly do not identify the compactification with PL S^3 or provide the global topological/ABSS bridge.",
       "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Block-by-block APS eta=2/9 support chain on the stated admitted Cl(3)/Z^3 to PL S^3 x R topological route, excluding the physical selected-line Brannen-phase bridge.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T03:16:32.832752+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -141354,19 +141378,19 @@
         "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 8.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The source asserts that every building block of the ambient eta=2/9 APS derivation is forced on the admitted Cl(3)/Z^3 topological route, so no hidden internal choice is made within that route.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "5f81d8878e0e2ea8fce31109da7c472d9f5246a54399be7241475c926256d13c",
       "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained or approved-admission theorem for the Cl(3)/Z^3 -> PL S^3 x R APS route and C3 fixed-locus weights, or narrow this source to the explicit algebraic certificate conditional on stipulated p=3, weights (1,2), and ABSS formula.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -141449,18 +141473,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 29,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 29
       },
       "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
       "title": "Delta Support Route Block-by-Block Forcing: APS \u03b7 = 2/9 Verification",
       "transitive_descendants": 63,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the runner verifies exact algebra for the APS eta sum once p=3, weights (1,2), PL S^3 x R, and ABSS applicability are supplied, but the restricted packet does not supply those topological premises as retained authority. S3_CAP_UNIQUENESS_NOTE is narrowed to finite cone-cap construction facts and explicitly does not identify the compactification with PL S^3; PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE is likewise narrowed to finite cone-cap boundary facts, not the ABSS theorem or global smoothing/classification wrapper. The Tier-A registry contains no accepted premise for this topological route. Why this blocks: the source's 'no hidden internal choice' conclusion depends on an admitted route that is not a retained dependency, so the audit cannot promote it as a closed derivation from the provided authorities. Repair target: add or cite a retained theorem/admission for the Cl(3)/Z^3 to PL S^3 x R route, the C3 fixed-locus/weights in that route, and the needed ABSS applicability theorem; alternatively rewrite the row as a purely algebraic bounded certificate conditional on explicitly stipulated p=3, weights (1,2), and ABSS formula. Claim boundary until fixed: given those stipulated topological/ABSS inputs, independent algebra confirms (omega-1)(omega^2-1)=3 and eta(3,1,2)=2/9; the physical Brannen-phase bridge remains out of scope. No-Go Discipline gate: negative uniqueness closure is not shipped as clean; N1/N3/N6/N7 fail for a closed no-alternative claim because alternative route closure was not exhausted, 'admitted/topological/ABSS' premises are hidden admissions in the restricted packet, import-retirement remains a live repair path, and the strongest steelman is that a future retained topology route could ratify exactly the stipulated inputs."
     },
     "koide_axiom_native_support_batch_note_2026-04-22": {
       "audit_date": null,

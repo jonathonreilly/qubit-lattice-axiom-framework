@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 547 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1214 |
+| unaudited | 1213 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,21 +58,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 846 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1444 |
+| `unaudited` | 1443 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1104 |
+| `bounded_theorem` | 1105 |
 | `decoration` | 51 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 704 |
+| `positive_theorem` | 703 |
 
 | criticality | count |
 |---|---:|
@@ -999,6 +999,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -6878,6 +6879,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using {H,Γχ}=0 and Hv=λv, the two evaluations give λ⟨v|Γχ|v⟩=-λ⟨v|Γχ|v⟩, so since λ≠0, ⟨v|Γχ|v⟩=0.  _(class `A`)_
 - **chain closes:** True — The implication follows directly from Hermiticity, anti-commutation, and the nonzero eigenvalue hypothesis. The conversion from zero Γχ expectation to Q=2/3 is an explicit quadratic identity, with no external physics input needed.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the hypotheses stated in the note. The runner source performs symbolic matrix checks and explicit eigenvector checks rather than importing empirical masses, calibrated constants, or prior contested premises. No cited authority is needed for the main implication, and the note correctly limits the framework-realization question as open rather than claiming closure.
+- **auditor confidence:** high
+
+### `koide_aps_block_by_block_forcing_note_2026-04-21`
+
+- **Note:** [`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Block-by-block APS eta=2/9 support chain on the stated admitted Cl(3)/Z^3 to PL S^3 x R topological route, excluding the physical selected-line Brannen-phase bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-koide-aps-block-by-block-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source asserts that every building block of the ambient eta=2/9 APS derivation is forced on the admitted Cl(3)/Z^3 topological route, so no hidden internal choice is made within that route.  _(class `A`)_
+- **chain closes:** False — The exact APS arithmetic closes only after stipulating p=3, weights (1,2), and ABSS applicability on PL S^3 x R. The one-hop retained-bounded deps are finite cone-cap certificates and explicitly do not identify the compactification with PL S^3 or provide the global topological/ABSS bridge.
+- **rationale:** Issue: the runner verifies exact algebra for the APS eta sum once p=3, weights (1,2), PL S^3 x R, and ABSS applicability are supplied, but the restricted packet does not supply those topological premises as retained authority. S3_CAP_UNIQUENESS_NOTE is narrowed to finite cone-cap construction facts and explicitly does not identify the compactification with PL S^3; PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE is likewise narrowed to finite cone-cap boundary facts, not the ABSS theorem or global smoothing/classification wrapper. The Tier-A registry contains no accepted premise for this topological route. Why this blocks: the source's 'no hidden internal choice' conclusion depends on an admitted route that is not a retained dependency, so the audit cannot promote it as a closed derivation from the provided authorities. Repair target: add or cite a retained theorem/admission for the Cl(3)/Z^3 to PL S^3 x R route, the C3 fixed-locus/weights in that route, and the needed ABSS applicability theorem; alternatively rewrite the row as a purely algebraic bounded certificate conditional on explicitly stipulated p=3, weights (1,2), and ABSS formula. Claim boundary until fixed: given those stipulated topological/ABSS inputs, independent algebra confirms (omega-1)(omega^2-1)=3 and eta(3,1,2)=2/9; the physical Brannen-phase bridge remains out of scope. No-Go Discipline gate: negative uniqueness closure is not shipped as clean; N1/N3/N6/N7 fail for a closed no-alternative claim because alternative route closure was not exhausted, 'admitted/topological/ABSS' premises are hidden admissions in the restricted packet, import-retirement remains a live repair path, and the strongest steelman is that a future retained topology route could ratify exactly the stipulated inputs.
 - **auditor confidence:** high
 
 ### `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`

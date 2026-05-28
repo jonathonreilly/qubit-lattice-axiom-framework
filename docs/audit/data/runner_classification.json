@@ -10476,6 +10476,18 @@
       "dominant_class": null,
       "runner": "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py"
     },
+    "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 11,
+        "B": 3,
+        "C": 2,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_hierarchy_alpha_bare_four_pi_content_attribution.py"
+    },
     "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16": {
       "assert_count": 2,
       "counts": {
@@ -40083,6 +40095,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_hierarchy_alpha_bare_four_pi_content_attribution.py": {
+      "assert_count": 1,
+      "claims": [
+        "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 11,
+        "B": 3,
+        "C": 2,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence.py": {
       "assert_count": 2,
       "claims": [
@@ -57337,14 +57364,14 @@
   "stats": {
     "decoration_candidates": 357,
     "dominant_class_distribution": {
-      "A": 261,
+      "A": 262,
       "B": 294,
       "C": 766,
       "D": 305,
       "none": 441
     },
-    "runners_classified": 2067,
-    "runners_with_C": 1003,
-    "runners_with_D": 608
+    "runners_classified": 2068,
+    "runners_with_C": 1004,
+    "runners_with_D": 609
   }
 }

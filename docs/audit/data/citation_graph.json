@@ -11697,6 +11697,34 @@
       "to": "cpt_exact_note"
     },
     {
+      "from": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
+      "to": "hierarchy_formula_honest_status_note_2026-05-10"
+    },
+    {
+      "from": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
+      "to": "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24"
+    },
+    {
+      "from": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
+      "to": "alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17"
+    },
+    {
+      "from": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
+      "to": "g_bare_derivation_note"
+    },
+    {
+      "from": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
+      "to": "g_bare_canonical_convention_narrow_theorem_note_2026-05-02"
+    },
+    {
+      "from": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
       "from": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
       "to": "hierarchy_formula_honest_status_note_2026-05-10"
     },
@@ -58013,6 +58041,26 @@
       "runner_path": "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py",
       "title": "Hermitian-Lift `\u0398_H = P K` Bounded Narrow Theorem on Framework C, P"
     },
+    "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26": {
+      "claim_id": "hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (content-attribution diagnostic packet",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "hierarchy_formula_honest_status_note_2026-05-10",
+        "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
+        "alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17",
+        "g_bare_derivation_note",
+        "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+        "minimal_axioms",
+        "plaquette_self_consistency_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "eb6441af2cf47852c7e3c3bada5aa8c617820d8c4167cd6f5624e76bf2cd8b31",
+      "path": "docs/HIERARCHY_ALPHA_BARE_FOUR_PI_CONTINUUM_MEASURE_CONTENT_ATTRIBUTION_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_hierarchy_alpha_bare_four_pi_content_attribution.py",
+      "title": "Hierarchy `\u03b1_bare^16 = (4\u03c0)^{-16}` Continuum-Measure Content-Attribution \u2014 Bounded Note"
+    },
     "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16": {
       "claim_id": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
       "claim_type_author_hint": "bounded_theorem",
@@ -86758,7 +86806,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 657,
+      "bounded_theorem": 658,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86767,7 +86815,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1067,
+      "bounded_theorem": 1068,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86775,10 +86823,10 @@
       "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9882,
+    "edge_count": 9889,
     "leaf_count": 818,
-    "node_count": 2597,
+    "node_count": 2598,
     "root_count": 866,
-    "runners_with_path": 2172
+    "runners_with_path": 2173
   }
 }

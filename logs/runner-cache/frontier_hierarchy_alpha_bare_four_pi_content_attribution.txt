@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_alpha_bare_four_pi_content_attribution.py
+runner_sha256: a1627cce2b71a34a6e368d8a8f5067491db7e307aaaf276e80632e298f6b023a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+HIERARCHY ALPHA_BARE (4 PI)^-16 CONTENT-ATTRIBUTION DIAGNOSTIC
+  Claim id: hierarchy_alpha_bare_four_pi_continuum_measure_content_attribution_bounded_note_2026-05-26
+
+== Part 0: source firewall ==
+PASS: source contains boundary phrase: Content-Attribution
+PASS: source contains boundary phrase: T1, exact algebraic identity
+PASS: source contains boundary phrase: T2, content-attribution decomposition
+PASS: source contains boundary phrase: T3, content-chain trace
+PASS: source contains boundary phrase: T4, counterfactual sensitivity
+PASS: source contains boundary phrase: **Status authority:** independent audit lane only
+PASS: source contains boundary phrase: proposal_allowed: true
+PASS: source contains boundary phrase: audit_required_before_effective_status_change: true
+PASS: source contains boundary phrase: scripts/frontier_hierarchy_alpha_bare_four_pi_content_attribution.py
+PASS: source contains boundary phrase: This packet does not
+PASS: source contains boundary phrase: no new admission
+PASS: source contains boundary phrase: no new repo vocabulary
+PASS: source note excludes promotion phrase: retained closure
+PASS: source note excludes promotion phrase: retained-grade closure
+PASS: source note excludes promotion phrase: retained promotion
+PASS: source note excludes promotion phrase: promote to retained
+PASS: source note excludes promotion phrase: closes primitive P3
+
+== Part 1: T1 algebraic identity alpha_LM^16 = alpha_bare^16 * u_0^(-16) ==
+PASS: T1 symbolic: alpha_LM^16 == alpha_bare^16 * u_0^(-16) (diff = 0)
+PASS: T1 numeric: alpha_LM^16 == alpha_bare^16 * u_0^(-16) at canonical surface (lhs = 2.085701e-17, rhs = 2.085701e-17)
+
+== Part 2: T2 numerical content-attribution decomposition ==
+PASS: T2a: alpha_bare^16 = (1/(4 pi))^16 numeric (alpha_bare^16 = 2.586081e-18, expected = 2.586081e-18)
+PASS: T2b: u_0^(-16) = <P>^(-4) numeric (u_0^(-16) = 8.0651, <P>^(-4) = 8.0651)
+PASS: T2c: alpha_bare^16 * u_0^(-16) matches alpha_LM^16 to roundoff (product = 2.085701e-17, alpha_LM^16 = 2.085701e-17)
+PASS: T2d-i: alpha_bare^16 supplies ~17-18 decades of suppression (log10 in [-18.5, -16.5]) (log10(alpha_bare^16) = -17.5874)
+PASS: T2d-ii: u_0^(-16) supplies sub-decade order-unity factor (0 < log10 < 1.5) (log10(u_0^(-16)) = 0.9066)
+PASS: T2d-iii: alpha_LM^16 log10 decomposition sums correctly (log10(alpha_bare^16) + log10(u_0^(-16)) = -16.6807, log10(alpha_LM^16) = -16.6807)
+
+== Part 3: T3 content-chain trace ==
+PASS: T3a: alpha_bare = g_bare^2/(4 pi) at g_bare = 1 gives 1/(4 pi) (alpha_bare = 0.079577, 1/(4 pi) = 0.079577)
+PASS: T3b: alpha_bare^16 = (4 pi)^(-16) exactly (alpha_bare^16 = 2.586081e-18, (4 pi)^(-16) = 2.586081e-18)
+
+== Part 4: T4 counterfactual c^16 sensitivity ==
+PASS: T4a: c=2 gives v_new/v_canonical = 2^16 = 65536 (ratio = 6.553600e+04, expected = 6.553600e+04)
+PASS: T4b: c=1/2 gives v_new/v_canonical = 2^(-16) ~ 1.526e-5 (ratio = 1.525879e-05, expected = 1.525879e-05)
+PASS: T4c: c=2 pi gives v_new/v_canonical = (2 pi)^16 (ratio = 5.900352e+12, expected = 5.900352e+12)
+
+== Part 5: T5 source-note boundary check ==
+PASS: T5 boundary: source contains 'does not' clause: Derive `α_bare = 1/(4π)` from `Cl(3)` on `Z^3` primitives. The
+PASS: T5 boundary: source contains 'does not' clause: Modify the honest-status note, the canonical chain note
+PASS: T5 boundary: source contains 'does not' clause: Promote any cited authority
+PASS: T5 boundary: source contains 'does not' clause: Close primitive P3
+PASS: T5 boundary: source contains 'does not' clause: Introduce a new primitive
+PASS: T5 boundary: source contains 'does not' clause: Introduce any new repo vocabulary
+PASS: T7 forbidden-imports check present
+
+== Summary ==
+Content-attribution diagnostic: alpha_LM^16 = alpha_bare^16 * u_0^(-16); alpha_bare^16 ~ (4 pi)^(-16) ~ 2.5861e-18 dominates the ~17-decade suppression; u_0^(-16) = <P>^(-4) ~ 8.0651 is the Lepage-Mackenzie order-unity correction. Content rides existing primitive P3 of the honest-status note; no new admission, no new axiom, no new repo vocabulary, no status promotion.
+
+TOTAL: PASS=37 FAIL=0
+VERDICT: content-attribution diagnostic passes; alpha_bare^16 ~ (4 pi)^(-16) dominates the hierarchy formula's suppression and traces to existing upstream (C1)-(C4) authority chain inside open primitive P3.
+
+----- stderr -----
+

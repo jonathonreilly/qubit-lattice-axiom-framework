@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 577 |
+| **retained_bounded** | 578 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1162 |
+| unaudited | 1161 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 878 |
+| `audited_clean` | 879 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1392 |
+| `unaudited` | 1391 |
 
 | claim_type | count |
 |---|---:|
@@ -391,6 +391,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_h025_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_h025_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_h025_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_distance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5422,6 +5423,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The chain closes only for the finite h=0.25 runner-defined replay: the one-hop dependencies are retained_bounded, the cached runner output is SHA-pinned and complete, the declared measurement count is internally consistent, and the source note scopes the result as a bounded scaling check rather than Gate B closure.
 - **rationale:** Clean only at the narrow bounded-runner level. The runner/cache pins H=0.25, W=6, NL=25, four seeds, z_masses=[3,4,5], exact-grid and grown drift=0.2/restore=0.7 rows, with exit_code=0 after a 710s cached run. Independent parameter checks confirm 12 sign tests per row and on-grid source indices; the small-field phase perturbation makes the rounded F~M=1.00 output plausible as a finite perturbative slope certificate, not an unsupported dimensional theorem. The source's broader survival language is accepted only as a finite h=0.25 replay and not as full Gate B closure, continuum refinement, or physical-gravity transfer.
 - **auditor confidence:** high
+
+### `gate_b_h025_joint_package_note`
+
+- **Note:** [`GATE_B_H025_JOINT_PACKAGE_NOTE.md`](../../docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** SHA-pinned bounded compact h=0.25 replay for scripts/gate_b_h025_joint_package.py, sha256 8fc593c0f34c5744805ceafd8dc6265719ce37df64f4fd45f0c56e2d46822b53, with H=0.25, PW=6, L=3, NL=13, SEEDS=[0], exact-grid and grown drift=0.2/restore=0.7 rows. The retained claim is only that the runner-defined finite geometry, propagation, and readout report Born 2.62e-15 and 2.94e-15, d_TV 0.850 and 0.916, MI 0.655 and 0.770, and decoherence 49.8% and 48.8%, supporting a qualitative compact single-seed same-regime refinement check. It is not an h=0.25 family-survival theorem or full same-family closure proof.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `descartes-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-gate-b-h025-joint-package`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Independent parameter/formula sanity check: H=0.25 and PW=6 give hw=24, 2401 nodes per full layer, 28813 total nodes, 2401 detector nodes, 2401 barrier nodes, exact setup slits A/B with 1127 nodes each and 147 blocked central nodes. EXPECTED_REPLAY is used only after measurement in assert_replay_matches_source_note, not to generate grow, propagate, born_measure, or measure_row values. The Born I3-like inclusion-exclusion is expected to cancel to roundoff for linear propagation; d_TV, MI, and decoherence definitions are range-consistent.  _(class `C`)_
+- **chain closes:** True — The chain closes only for the finite compact single-seed h=0.25 replay: the one-hop dependencies are retained_bounded, the runner computes the observables before checking expected values, the cached output is SHA-pinned and complete, and the source note explicitly rejects a full same-family closure proof.
+- **rationale:** Clean only under the narrowed finite compact single-seed scope. The runner/cache pins H=0.25, PW=6, L=3, NL=13, SEEDS=[0], exact-grid and grown drift=0.2/restore=0.7 rows, with exit_code=0 after a 93s cached run. Independent parameter and range checks found no formula blocker: the grid/node/slit counts are internally consistent; the hard-coded replay values are post-compute assertions; the Born residual is e-15-scale as expected for linear inclusion-exclusion cancellation; d_TV is normalized total variation, MI is equal-prior binary Jensen-Shannon information, and the decoherence factor uses exp(-LAM^2*sn) with sn >= 0. Cross-row deltas support only qualitative same-regime language, not quantitative closeness beyond the two rounded rows, h=0.25 family survival, canonical-width closure, or multi-seed transfer.
+- **auditor confidence:** medium_high
 
 ### `gate_b_no_restore_farfield_note`
 

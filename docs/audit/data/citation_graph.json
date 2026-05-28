@@ -22573,6 +22573,14 @@
       "to": "lh_anomaly_trace_catalog_theorem_note_2026-04-25"
     },
     {
+      "from": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
+      "from": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+      "to": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
       "to": "minimal_axioms"
     },
@@ -75035,6 +75043,21 @@
       "runner_path": "scripts/frontier_rh_sector_anomaly_cancellation_identities.py",
       "title": "RH-Sector Anomaly Cancellation Identities: SU(3)\u00b2\u00d7Y, Y\u00b3, and Gravitational\u00b2\u00d7Y"
     },
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": {
+      "claim_id": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a254d6c2096c0a045954daaca57d578864e0a5fac20391ea1ce4991135c28066",
+      "path": "docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
+      "runner_path": "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py",
+      "title": "RP -> P2: Fixed-SU(3) Gauge Extension + Labeling-Indifference Tightening of the Realization Residual"
+    },
     "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20": {
       "claim_id": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
       "claim_type_author_hint": "bounded_theorem",
@@ -86450,7 +86473,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 649,
+      "bounded_theorem": 650,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86459,7 +86482,7 @@
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1062,
+      "bounded_theorem": 1063,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86467,10 +86490,10 @@
       "open_gate": 128,
       "positive_theorem": 584
     },
-    "edge_count": 9862,
-    "leaf_count": 807,
-    "node_count": 2581,
+    "edge_count": 9864,
+    "leaf_count": 808,
+    "node_count": 2582,
     "root_count": 856,
-    "runners_with_path": 2156
+    "runners_with_path": 2157
   }
 }

@@ -19476,6 +19476,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_rh_sector_anomaly_cancellation_identities.py"
     },
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py"
+    },
     "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -54952,6 +54964,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py": {
+      "assert_count": 1,
+      "claims": [
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/same_family_3d_closure.py": {
       "assert_count": 1,
       "claims": [
@@ -56907,12 +56934,12 @@
     "dominant_class_distribution": {
       "A": 256,
       "B": 293,
-      "C": 763,
+      "C": 764,
       "D": 302,
       "none": 437
     },
-    "runners_classified": 2051,
-    "runners_with_C": 999,
+    "runners_classified": 2052,
+    "runners_with_C": 1000,
     "runners_with_D": 602
   }
 }

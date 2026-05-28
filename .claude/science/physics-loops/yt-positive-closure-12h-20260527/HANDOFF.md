@@ -29,7 +29,7 @@ Cycle 24 science commit:
 Cycle 24 delivery commit:
 
 ```text
-pending_cycle_24_delivery_commit
+cd5c2ad52a949dbb4a9f208a914ccf2a1f80b785
 ```
 
 Cycle 24 artifacts:

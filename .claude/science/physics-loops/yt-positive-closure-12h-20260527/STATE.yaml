@@ -198,6 +198,7 @@ commands_run:
   - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
   - "git diff --check -> PASS"
   - "git commit -m 'Prune origin-main declared-anchor closure shortcut' -> 836fd2414c8d7cb66b3c865e463e9a4945fb69de"
+  - "git commit -m 'Record origin-main declared-anchor delivery' -> cd5c2ad52a949dbb4a9f208a914ccf2a1f80b785"
   - "python3 scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py -> PASS=59 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=507 FAIL=0"
   - "python3 scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py -> PASS=79 FAIL=0"
@@ -631,8 +632,8 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 24 science commit 836fd2414c8d7cb66b3c865e463e9a4945fb69de is created locally; delivery commit, branch push, and PR #1980 body update are the next delivery actions."
+pr_status: "Cycle 24 science commit 836fd2414c8d7cb66b3c865e463e9a4945fb69de and delivery commit cd5c2ad52a949dbb4a9f208a914ccf2a1f80b785 are created locally; branch push and PR #1980 body update are the next delivery actions."
 latest_science_commit: 836fd2414c8d7cb66b3c865e463e9a4945fb69de
-latest_delivery_commit: pending_cycle_24_delivery_commit
+latest_delivery_commit: cd5c2ad52a949dbb4a9f208a914ccf2a1f80b785
 next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

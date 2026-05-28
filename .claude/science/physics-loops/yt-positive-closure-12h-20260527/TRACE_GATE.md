@@ -10,23 +10,21 @@ artifact_role: no_go
 next_trace_action: "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows"
 ```
 
-Cycle 27 tests whether one-Higgs neutral-carrier normalization can be promoted
-into the current campaign's same-surface C3 coefficient/radial law.
+Cycle 28 tests whether ordinary one-Higgs generation-matrix normalization can
+be promoted into the current campaign's same-surface C3 coefficient/radial law.
 
-It cannot. The one-Higgs carrier theorem selects the allowed top carrier
-skeleton, and the neutral Higgs `1/sqrt(2)` factor maps a supplied generation
-coefficient into the top mass row. But the current first open gate is still
-the coefficient-bearing same-surface matrix-element gate:
+It cannot. The finite witness preserves the one-Higgs carrier skeleton,
+neutral Higgs radial factor, W denominator, and granted C3 response while
+varying the matrix-norm convention:
 
 ```text
-lambda_top=1/sqrt(2)
-zero-singlet physical top-block/readout law excluding P_0
-accepted backend/projectors/source-generator matrix elements
-or strict top/W pole rows with controls
+C3-unit coefficient:     eta=1
+unit singular/Frobenius: eta=sqrt(6)
+unit three-gen average:  eta=sqrt(2)
 ```
 
-The finite one-Higgs family
-`y_33(eta)=eta/sqrt(6)` gives
-`|dM_t/dell|=eta A/sqrt(12)` and
-`lambda_top=eta/sqrt(2)`. The target row requires `eta=1`, but that
-coefficient-to-C3-source law is not derived on the actual surface.
+Only the first convention gives the target row. Selecting it is therefore the
+missing coefficient-to-C3-source law, not a consequence of generic
+normalization. The first open gate remains an accepted law fixing
+`eta=1`/`lambda_top=1/sqrt(2)`, an accepted zero-singlet top-readout law with
+backend/projectors/matrix elements, or strict top/W pole rows with controls.

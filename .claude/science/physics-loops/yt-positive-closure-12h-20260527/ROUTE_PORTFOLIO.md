@@ -96,6 +96,8 @@ panel synthesis is admissible as the current same-surface matrix-element
 proof.
 The forty-first route tested whether one-Higgs neutral-carrier normalization
 can supply the missing same-surface C3 coefficient/radial law.
+The forty-second route tested whether ordinary one-Higgs generation-matrix
+normalization conventions can supply the missing unit multiplier `eta=1`.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -141,6 +143,7 @@ can supply the missing same-surface C3 coefficient/radial law.
 | Origin/main declared-anchor Y_T subchain | no-go forbidden-input firewall | 3 | Pruned: retained-bounded mainline algebra is over declared anchors forbidden or open in this campaign |
 | Physical source-law panel current-gate import | no-go stale-gate firewall | 3 | Pruned: the older source-law panel targets the former no-hidden-scale/mininfo source-intervention gate, not the current radial/readout/backend or strict pole-row certificate |
 | One-Higgs carrier radial factor | no-go shortcut test | 3 | Pruned: neutral Higgs `1/sqrt(2)` maps a supplied generation coefficient into a top row, but the multiplier `eta` tying that coefficient to the normalized C3 source response remains free |
+| One-Higgs generation coefficient normalization | no-go shortcut test | 3 | Pruned: C3-unit, unit singular/Frobenius, and unit three-generation-average conventions give different eta values; eta=1 remains a physical coefficient-to-C3-source law |
 
 ## Stuck Fan-Out
 
@@ -189,6 +192,7 @@ can supply the missing same-surface C3 coefficient/radial law.
 | Block-rank radial normalization | Ask whether `rank(P_nt)=2` or root-rank averaging fixes `lambda_top=1/sqrt(2)` | Fails; ordinary `P_nt` matrix elements and block-density expectations stay at `A/sqrt(6)`, Hilbert-Schmidt conventions give same-data alternatives, and root-rank averaging is the added law under test |
 | Fisher-quotient radial normalization | Ask whether C3 RN/Fisher quotient geometry or Fisher-unit C3 score normalization fixes `lambda_top=1/sqrt(2)` | Fails; the fine and binary quotient metrics are equal, source-unit normalization is not a top radial generator law, and `B_x` is scalar inside `P_nt` |
 | One-Higgs carrier radial factor | Ask whether the one-Higgs neutral-carrier `1/sqrt(2)` factor supplies the missing C3 radial/source coefficient | Fails; `y_33(eta)=eta/sqrt(6)` gives `|dM_t/dell|=eta A/sqrt(12)` and `lambda_top=eta/sqrt(2)`, so `eta=1` remains an added coefficient-to-C3-source law |
+| One-Higgs generation coefficient normalization | Ask whether ordinary matrix-norm conventions force the unit C3 coefficient | Fails; unit singular/Frobenius and unit three-generation average give `eta=sqrt(6)` and `eta=sqrt(2)`, while the target `eta=1` is exactly the C3-unit law under test |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -283,3 +287,8 @@ that coefficient with the normalized C3 source response. The current surface
 leaves `eta` free, so positive closure still needs an accepted
 coefficient-to-C3-source/radial generator law, an accepted zero-singlet
 physical readout plus generator factorization, or strict top/W pole rows.
+The one-Higgs generation-coefficient normalization no-go prunes the matrix-norm
+variant: ordinary coefficient norms do not select the C3-unit convention.
+Different natural norms produce different eta values on the same carrier and
+C3 data, so eta=1 remains a physical law to derive or bypass with strict pole
+rows.

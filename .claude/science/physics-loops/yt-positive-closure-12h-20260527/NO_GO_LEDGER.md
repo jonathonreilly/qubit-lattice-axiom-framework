@@ -1,5 +1,12 @@
 # No-Go Ledger
 
+- New in the forty-second block: ordinary one-Higgs generation-matrix
+  normalization conventions do not certify `eta=1`. C3-unit, unit
+  singular/Frobenius, and unit three-generation-average coefficient
+  conventions give eta values 1, `sqrt(6)`, and `sqrt(2)` respectively while
+  preserving the same carrier, neutral Higgs radial factor, W denominator, and
+  granted C3 response. Selecting `eta=1` is the missing physical
+  coefficient-to-C3-source law, not a generic normalization consequence.
 - New in the forty-first block: one-Higgs neutral-carrier normalization does
   not certify the missing radial/source coefficient. Even granting the
   one-Higgs top carrier skeleton, the neutral Higgs `1/sqrt(2)` kinematic

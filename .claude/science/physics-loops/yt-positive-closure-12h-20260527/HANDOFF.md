@@ -1,5 +1,64 @@
 # Handoff
 
+Cycle 28 adds a forty-second science block, not positive retained-grade
+closure. The block prunes the shortcut:
+
+```text
+ordinary one-Higgs generation-matrix normalization
+  -> eta=1 or lambda_top=1/sqrt(2)
+  -> coefficient row dM_t/dell = A/sqrt(12).
+```
+
+The finite witness keeps the same one-Higgs carrier skeleton, neutral Higgs
+radial factor, W denominator, and granted C3 response while changing the
+coefficient norm convention:
+
+```text
+C3-unit coefficient:       eta=1
+unit singular/Frobenius:   eta=sqrt(6)
+unit three-gen average:    eta=sqrt(2)
+free coefficient:          eta free.
+```
+
+Only the first convention gives the target row. Selecting it is the missing
+coefficient-to-C3-source law, not a consequence of generic matrix norm
+normalization. This is a no-go/route-pruning boundary only. No
+`POSITIVE_CLOSURE` marker was written. Retained/proposed-retained wording
+remains disallowed.
+
+Cycle 28 science commit:
+
+```text
+2d814d6d63d74e2c407c4cb46efc121913682fe
+```
+
+Cycle 28 artifacts:
+
+- `docs/YT_ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_one_higgs_generation_coefficient_normalization_no_go.py`
+- `outputs/yt_one_higgs_generation_coefficient_normalization_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 28 verification so far:
+
+- `python3 scripts/frontier_yt_one_higgs_generation_coefficient_normalization_no_go.py`
+  -> `SUMMARY: PASS=111 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=547 FAIL=0`
+- Adjacent runners passed: top-response coefficient underdetermination no-go
+  `PASS=43`, one-Higgs carrier radial-factor no-go `PASS=117`, one-Higgs
+  top-carrier support `PASS=41`, strict symbolic top response packet
+  `PASS=45`, and strict sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- `POSITIVE_CLOSURE` remains absent.
+
+The next exact action remains to derive allowed same-surface
+radial/readout/backend laws without forbidden anchors, or produce accepted
+strict top/W pole rows.
+
 Cycle 27 adds a forty-first science block, not positive retained-grade
 closure. The block prunes the shortcut:
 

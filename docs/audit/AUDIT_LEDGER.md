@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 148 |
-| **retained_no_go** | 171 |
+| **retained_no_go** | 172 |
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1132 |
+| unaudited | 1131 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 892 |
+| `audited_clean` | 893 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1362 |
+| `unaudited` | 1361 |
 
 | claim_type | count |
 |---|---:|
@@ -757,6 +757,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `q_integer_spectrum_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
+| `quantum_horizon_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -11513,6 +11514,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The primary runner freezes the self-coupled fields before the k scan and asserts that G=0 produces no peaks, the fixed-field Born/Sorkin check is machine clean, and every self-coupled minimum in the tested threshold/window/damping/refinement cases has an empty sub-Nyquist peak set.  _(class `C`)_
 - **chain closes:** True — The cited self-gravity loop, Born audit, and Gate-B self-gravity rows are retained-grade bounded/no-go controls. The helper and primary runner construct the reduced lattice propagation test directly, use the branch QNM harness as the object under test, and complete with exit_code=0 and a pinned cache showing no sub-Nyquist hardening peak under the stated controls.
 - **rationale:** This is clean only as an open gate. The note does not promote a positive QNM spectral law; it records that the current branch-side hardening story fails the stated review bars on the tested bounded surface. The runner computes the relevant controls rather than merely restating the note: G=0 peak null, frozen-field propagation, fixed-field Born/Sorkin I3/P below 1e-11, Nyquist exclusion, and threshold/window/damping/refinement stability. The no-go discipline gate does not force a no-go demotion because the claim is not universal and leaves an explicit future positive route: stable sub-Nyquist peaks under the same or stronger controls. The residual risk is scope drift; this row should block promotion of the current QNM story, not be cited as a theorem that QNM hardening is impossible.
+- **auditor confidence:** high
+
+### `quantum_horizon_note`
+
+- **Note:** [`QUANTUM_HORIZON_NOTE.md`](../../docs/QUANTUM_HORIZON_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-sweep no-go for a strong wavelength-dependent quantum-horizon shift on the retained/generated sector-stencil absorbing-horizon family, restricted to the alpha_crit 50%-escape observable and scanned k={1,2,3,4,5,6,7,10} / alpha=0..2 grid.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `Lagrange-fresh-context-019e6dbe-fb6b-7882-bb49-94977ed64e15`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The cached runner computes alpha_crit for k in {1,2,3,4,5,6,7,10} on the retained generated-geometry absorbing proxy and fits the sub-Nyquist rows as alpha_crit ~= 0.08 * k^0.03, showing no strong k-dependent horizon shift for this observable.  _(class `C`)_
+- **chain closes:** True — The one-hop dependency is retained_bounded for the same runner-defined absorbing proxy family, and the primary runner reuses that harness to compute the k sweep directly. The source keeps the negative claim narrow to this observable and family, and the no-go discipline gate leaves other wavelength-dependent trapping or spectral routes explicitly open.
+- **rationale:** Fresh-context audit agreed that the runner genuinely computes the finite k/alpha sweep and that the cached output matches the note: alpha_crit stays near 0.08-0.09 with a sub-Nyquist exponent around 0.03. The N1-N8 gate does not expose an overbroad no-go because the source does not rule out all trapping, all spectral effects, or other horizon observables. This is clean only as the finite-envelope no-go for the declared alpha_crit observable on the declared retained-bounded proxy family.
 - **auditor confidence:** high
 
 ### `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28`

@@ -70,6 +70,10 @@ closed exactly:
   RN/Fisher family exposes both P_nt and P_0 endpoints, while a nearest
   Fisher-boundary-face law would select P_nt conditionally; the nearest-face
   readout law is not accepted on the current surface
+  hard-boundary readout law underdetermination no-go: current RN/Fisher
+  boundary geometry alone does not promote nearest-face support into accepted
+  physical top-readout law; the same data admit P_0-selecting purity/rank,
+  positive-source-asymptote, and response-maximum rules
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -183,6 +187,8 @@ still open:
   RN/Fisher source semantics into zero P_0 singlet weight
   accepted hard-boundary nearest-face top-readout law if the C3 route tries to
   turn the RN/Fisher boundary compactification into zero P_0 singlet weight
+  accepted physical principle deriving nearest-face readout rather than another
+  hard-boundary criterion, since current boundary geometry alone is now pruned
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -564,6 +570,15 @@ d_F(1/3, P_0)  = pi - 2 asin(1/sqrt(3)).
 Thus an accepted nearest-hard-boundary-face readout law would select `P_nt`.
 The actual current surface does not contain that law, so this is support for
 a new possible readout theorem, not closure.
+
+[`YT_C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`](YT_C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md)
+then tests whether the current boundary geometry itself can promote that
+support into the physical top-readout law.  It cannot.  On the same
+compactified curve, nearest Fisher face and maximum boundary entropy select
+`P_nt`, while purity/minimum-rank, positive-source-asymptote, and response
+maximum rules select `P_0`.  Thus nearest-face readout remains a new physical
+law to derive, not a consequence of the current RN/Fisher hard-boundary data
+alone.
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a
@@ -1441,6 +1456,11 @@ proposal_allowed_reason: |
   both P_nt and P_0 endpoints, and nearest-Fisher-boundary selection would
   choose P_nt, but nearest-boundary face selection remains a new unaccepted
   physical top-readout law.
+  The hard-boundary readout law underdetermination no-go now prunes promotion
+  of that nearest-face support from current boundary geometry alone: the same
+  endpoint data also admit P_0-selecting purity/rank, positive-source-asymptote,
+  and response-maximum rules, so an accepted physical nearest-face theorem is
+  still a load-bearing import.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface

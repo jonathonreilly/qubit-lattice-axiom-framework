@@ -192,3 +192,10 @@ are `2 asin(1/sqrt(3))` to `P_nt` and
 choose `P_nt` and conditionally give `A/sqrt(12)`. This is exact support only:
 the current surface does not accept nearest-boundary face selection as the
 physical top readout, and strict pole controls remain absent.
+- New in the twenty-eighth block: current C3 RN/Fisher hard-boundary geometry
+  alone does not derive the accepted nearest-hard-boundary-face physical
+  top-readout law. Nearest Fisher face and maximum boundary entropy select
+  `P_nt`, but purity/minimum-rank, positive-source-asymptote, and
+  response-maximum rules select `P_0` from the same endpoint data. A positive
+  hard-boundary route therefore needs a new accepted physical readout theorem
+  rather than geometry-alone promotion, or strict top/W pole rows.

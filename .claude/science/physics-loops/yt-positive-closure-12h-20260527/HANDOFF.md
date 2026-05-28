@@ -1,6 +1,43 @@
 # Handoff
 
-The campaign has produced twenty-seven science blocks, not positive retained-grade
+Cycle 14 adds a twenty-eighth science block, not positive retained-grade
+closure. The new block prunes the shortcut
+
+```text
+current C3 RN/Fisher hard-boundary geometry
+  -> accepted nearest-hard-boundary-face physical top-readout law.
+```
+
+Nearest Fisher face and maximum boundary entropy still select `P_nt` and
+would conditionally feed the `A/sqrt(12)` row, but purity/minimum-rank,
+positive-source-asymptote, and response-maximum rules select `P_0` on the
+same endpoint data. Therefore nearest-face readout remains a new physical
+top-readout theorem to derive, not a consequence of the current boundary
+geometry alone.
+
+Cycle 14 verification:
+
+- `python3 scripts/frontier_yt_c3_hard_boundary_readout_law_underdetermination.py` -> `SUMMARY: PASS=81 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=432 FAIL=0`
+- Adjacent runners passed: hard-boundary support `PASS=97`, mininfo readout
+  no-go `PASS=103`, nontrivial-block support `PASS=85`,
+  source-orientation sign-selector no-go `PASS=89`, source-response extremal
+  no-go `PASS=105`, trace-free centered-source no-go `PASS=89`, strict
+  sparse availability audit `PASS=74`, direct sparse response certificate
+  `PASS=88`, same-surface matrix factorization `PASS=77`, and
+  first-principles transfer response `PASS=56`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+No `POSITIVE_CLOSURE` marker was written. Retained/proposed-retained wording
+remains disallowed. The next exact action is to derive an accepted
+same-surface physical nearest-Fisher hard-boundary readout law plus generator
+factorization, derive another accepted zero-singlet top-block law, or produce
+accepted strict top/W pole-row data with contact, FV/IR, and model-class
+controls.
+
+The campaign has produced twenty-eight science blocks, not positive retained-grade
 closure:
 
 1. a conditional-support matrix-element factorization boundary and later
@@ -57,6 +94,9 @@ closure:
 27. exact support showing the hard-boundary completion of that RN/Fisher C3
     source curve has nearest Fisher boundary face `P_nt`, while the physical
     nearest-boundary readout law remains open.
+28. a no-go showing the current RN/Fisher hard-boundary endpoint geometry
+    alone does not derive nearest-face selection as the accepted physical
+    top-readout law because same-data rules can select `P_0`.
 
 Cycle 13 hard-boundary support science commit pushed and recorded in PR #1980:
 

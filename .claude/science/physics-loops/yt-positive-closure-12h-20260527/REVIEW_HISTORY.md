@@ -1,5 +1,40 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 28
+
+Scope:
+
+- C3 hard-boundary readout-law underdetermination no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, endpoint responses, same-data boundary rule witnesses, no-go certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open hard-boundary readout law; nearest-face support is preserved but not promoted into physical readout authority. |
+| Imports / support | DISCLOSED | No observed masses, target selector, old Ward authority, external theorem, or strict pole-row evidence is imported. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `claim_type: no_go`, actual status, trace class, and proposal firewall are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=81 FAIL=0`
+- Full stack runner: `PASS=432 FAIL=0`
+- Adjacent runners passed: hard-boundary support `PASS=97`,
+  minimum-information readout no-go `PASS=103`, nontrivial-block support
+  `PASS=85`, source-orientation sign-selector no-go `PASS=89`,
+  source-response extremal no-go `PASS=105`, trace-free centered-source
+  no-go `PASS=89`, strict sparse availability audit `PASS=74`, direct sparse
+  response certificate `PASS=88`, same-surface matrix factorization
+  `PASS=77`, and first-principles transfer response `PASS=56`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-27 Local Review, Block 25
 
 Scope:

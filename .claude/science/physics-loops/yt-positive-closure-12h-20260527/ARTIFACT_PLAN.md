@@ -80,6 +80,9 @@ Current block artifacts:
 - `docs/YT_C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_mininfo_hard_boundary_face_selector_support.py`
 - `outputs/yt_c3_mininfo_hard_boundary_face_selector_support_2026-05-27.json`
+- `docs/YT_C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md`
+- `scripts/frontier_yt_c3_hard_boundary_readout_law_underdetermination.py`
+- `outputs/yt_c3_hard_boundary_readout_law_underdetermination_2026-05-27.json`
 - `docs/YT_STRICT_TOP_W_POLE_ROW_REPOSITORY_DISCOVERY_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_strict_top_w_pole_row_repository_discovery_no_go.py`
 - `outputs/yt_strict_top_w_pole_row_repository_discovery_no_go_2026-05-27.json`
@@ -94,4 +97,5 @@ Next artifact if continuing:
   backend/projector/matrix-element theorem; if staying on C3, a genuinely new
   same-surface physical top-block/readout/hard-boundary theorem excluding
   `P_0` and supplying accepted backend, W/top projectors, generator
-  factorization, and source-generator matrix elements.
+  factorization, and source-generator matrix elements. Current boundary
+  geometry alone is now pruned as that theorem.

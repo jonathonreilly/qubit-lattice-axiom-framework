@@ -58,6 +58,9 @@ readout semantics can derive that zero-singlet law.
 The twenty-seventh route tested whether hard-boundary completion of the same
 minimum-information C3 source family can derive that zero-singlet law, and
 isolated a conditional nearest-Fisher-face support route.
+The twenty-eighth route tested whether current hard-boundary information
+geometry alone can promote nearest-Fisher-face support into the accepted
+physical top-readout law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -89,6 +92,7 @@ isolated a conditional nearest-Fisher-face support route.
 | Trace-free centered-source selector for `P_nt` | no-go shortcut test | 3 | Pruned: `Tr(B_x)=0` is operator-level; zero source expectation gives singlet weight `s=1/3`, not `s=0` |
 | Minimum-information readout selector for `P_nt` | no-go shortcut test | 3 | Pruned: finite RN/I-projection tilts retain full support; zero singlet requires an infinite boundary or target response insertion |
 | Hard-boundary minimum-information face selector | exact support / boundary test | 2 | Landed: boundary completion has both `P_nt` and `P_0` endpoints; nearest Fisher boundary face is `P_nt`, but the nearest-face top-readout law is open |
+| Hard-boundary readout law from current geometry alone | no-go shortcut test | 3 | Pruned: nearest-face and entropy rules select `P_nt`, but purity/rank, positive-source-asymptote, and response-maximum rules select `P_0` on the same endpoint data |
 
 ## Stuck Fan-Out
 
@@ -124,6 +128,7 @@ isolated a conditional nearest-Fisher-face support route.
 | Trace-free centered-source selector | Ask whether connected/trace-free source semantics exclude `P_0` | Fails; trace-freeness is an operator/source statement, zero expectation gives `s=1/3`, and the target row requires `s=0` |
 | Minimum-information readout selector | Ask whether finite RN/Fisher source semantics exclude `P_0` | Fails; finite tilts keep full support, and zero singlet is an infinite-boundary or target-insertion condition |
 | Hard-boundary minimum-information face selector | Compactify the finite RN/Fisher C3 source family and choose a boundary face | Support only; the curve has both `P_nt` and `P_0` endpoints, and nearest Fisher boundary selects `P_nt`, but nearest-face readout is a new unaccepted physical law |
+| Hard-boundary readout law from geometry alone | Ask whether current endpoint geometry makes nearest-face selection physical | Fails; same-data hard-boundary rules include `P_0` selectors, so nearest-face readout still needs an accepted physical theorem |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -166,3 +171,9 @@ candidate is `P_nt`, but accepting nearest-boundary face selection as the
 physical top readout remains a new same-surface law. Positive closure still
 requires that law plus generator factorization, another accepted zero-singlet
 top-block theorem, or strict pole-row data.
+The hard-boundary readout-law underdetermination block prunes the shortcut
+from current boundary geometry to that accepted law: the same endpoint data
+also support `P_0` under purity/rank, positive-source-asymptote, and
+response-maximum rules. A positive hard-boundary route must therefore derive
+nearest-face readout from new accepted same-surface physics, not simply cite
+the current RN/Fisher geometry.

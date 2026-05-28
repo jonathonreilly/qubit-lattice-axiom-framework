@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1135 |
+| unaudited | 1134 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 71 |
+| ~~audited_conditional~~ | 72 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 892 |
-| `audited_conditional` | 71 |
+| `audited_conditional` | 72 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1365 |
+| `unaudited` | 1364 |
 
 | claim_type | count |
 |---|---:|
@@ -1069,6 +1069,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -9316,6 +9317,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note records S_half = (1/2) S_inst = 4 pi^2/g^2 only under regulator, meron-pair, half-volume, or twisted-boundary/fractional-instanton boundary data, while refusing standalone singular-meron finite-action status.  _(class `A`)_
 - **chain closes:** True — For an open_gate row, the chain closes because the source keeps the regulator/twist/patching construction load-bearing and does not promote the external context to a retained theorem. The one-hop retained_bounded instanton infrastructure supplies the finite half-action arithmetic and twisted T4 k/N fractional-charge arithmetic used by this bounded gate.
 - **rationale:** Fresh-context audit agreed that the row cleanly records only an external open gate. The runner verifies the half-action algebra and boundary-disclaimer checks, and the note explicitly refuses standalone finite-action singular-meron status, framework substrate identification, hierarchy closure, alpha_LM^16 closure, and 4pi^2-to-ln(M_Pl/v) scale matching. This is clean as an open gate, not a retained positive theorem.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_alternate_family_scout_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Cross-note mesoscopic-surrogate planning recommendation that points to the 3D h=0.25 ordered-lattice family as the next plausible localization target, based on retained bounded h=0.5, 2D threshold, same-family 3D, and valley-linear bridge notes.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-mesoscopic-scout-2026-05-27`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** The note recommends the retained 3D h=0.25 ordered-lattice family as the cheapest already-bounded family worth one more localization attempt because h=0.5 and 2D localization lanes are closed and h=0.25 has stronger retained continuum-like behavior.  _(class `B`)_
+- **chain closes:** False — The runner confirms the cited notes contain the expected frozen-evidence markers, but it does not compute or enforce an objective ranking for 'cheapest plausible next target'. The direct dependency packet also includes a persistent-inertial-response readiness note whose current audited role is meta/index only and explicitly denies a ratifiable readiness frontier or priority ordering.
+- **rationale:** The upstream retained-bounded notes support the local observations that the h=0.5 frontier and 2D threshold lane are not the obvious next localization lever, and that h=0.25 has stronger bounded same-family/asymptotic evidence. What does not close is the theorem-grade ranking: 'cheapest plausible next target' is a planning judgment, not an executable dominance criterion, and the readiness note dependency is explicitly meta only. The no-go/planning-stress check therefore leaves this as a useful scout, not a retained bounded theorem.
+- **open / conditional deps cited:**
+  - `PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md`
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_annular_tapered_sweep_note`

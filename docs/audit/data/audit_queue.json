@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 230,
     "high": 317,
-    "leaf": 288,
+    "leaf": 287,
     "medium": 300
   },
   "cycle_break_target_count": 4,
@@ -26089,35 +26089,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mesoscopic_surrogate_alternate_family_scout_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mesoscopic_surrogate_localization_frontier_note",
-        "mesoscopic_surrogate_localization_sweep_note",
-        "mesoscopic_surrogate_threshold_2d_note",
-        "same_family_3d_closure_note",
-        "valley_linear_asymptotic_bridge_note",
-        "persistent_inertial_response_readiness_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mesoscopic_surrogate_alternate_family_scout.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -34622,6 +34593,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 13,
-  "total_pending": 1135
+  "ready_count": 12,
+  "total_pending": 1134
 }

@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 250,
-    "high": 310,
+    "high": 311,
     "leaf": 271,
     "medium": 304
   },
@@ -7142,6 +7142,31 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "s3_cap_uniqueness_note",
+        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.5,
+      "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
+      "transitive_descendants": 63
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -34699,6 +34724,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 7,
-  "total_pending": 1135
+  "ready_count": 8,
+  "total_pending": 1136
 }

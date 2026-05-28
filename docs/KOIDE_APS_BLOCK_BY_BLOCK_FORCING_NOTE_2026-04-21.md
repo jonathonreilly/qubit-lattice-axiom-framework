@@ -1,20 +1,73 @@
 # Delta Support Route Block-by-Block Forcing: APS η = 2/9 Verification
 
-**Date:** 2026-04-21
-**Status:** Strong executable support verification of the ambient APS route.
+**Date:** 2026-04-21 (original); 2026-05-28 (narrowed to the explicit
+algebraic certificate conditional on stipulated p=3 / weights (1,2) /
+ABSS-applicability per audit verdict).
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+**Status:** explicit algebraic APS `η = 2/9` certificate, **conditional
+on the stipulated topological inputs** (p=3, C₃ fixed-locus weights
+(1,2), and ABSS-equivariant-fixed-point applicability on PL S³ × ℝ).
 **Runner:** `scripts/frontier_koide_aps_block_by_block_forcing.py` — 29/29 PASS.
 All checks are executable symbolic or numeric computations; no literal
 `True` placeholders remain.
 
----
+## 2026-05-28 Audit Repair (conditional algebraic certificate)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The exact APS arithmetic closes only after stipulating p=3, weights
+> (1,2), and ABSS applicability on PL S^3 x R. The one-hop
+> retained-bounded deps are finite cone-cap certificates and explicitly
+> do not identify the compactification with PL S^3 or provide the global
+> topological/ABSS bridge."*
+
+Repair instruction offered two paths: (a) supply a retained / approved
+theorem for the `Cl(3)/Z³ → PL S³ × ℝ` APS route and the C₃ fixed-locus
+weights, or (b) narrow this source to the explicit algebraic certificate
+conditional on the stipulated p=3, weights (1,2), and ABSS formula.
+
+Path (a) is unavailable: the cone-cap deps
+([`s3_cap_uniqueness_note`](S3_CAP_UNIQUENESS_NOTE.md),
+[`pl_topology_infrastructure_textbook_import_note_2026-05-17`](PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md))
+are **finite-R** cone-cap construction certificates only; per the
+2026-05-28 narrowing of `s3_general_r_derivation_note`, the all-R PL S³
+identification is itself not retained (it would import the PL Poincaré
+conjecture). There is no retained `Cl(3)/Z³ → PL S³ × ℝ` global
+topological bridge to cite.
+
+This repair therefore takes **path (b)**:
+
+**Load-bearing (conditional algebraic certificate):** GIVEN the
+stipulated topological inputs
+
+- `p = 3` (the C₃ rotation order),
+- C₃ fixed-locus tangent weights `(1, 2) mod 3`,
+- applicability of the ABSS equivariant fixed-point formula on
+  `PL S³ × ℝ`,
+
+the block-by-block APS arithmetic (blocks (a)–(h) below) closes
+**exactly** to `η = 2/9`. This is the verified executable content.
+
+**NON-load-bearing (stipulated, not retained):** the identification of
+the `Cl(3)/Z³` compactification with `PL S³ × ℝ`, the global ABSS
+topological bridge, and the physical selected-line Brannen-phase
+identification. The finite-R cone-cap deps do **not** supply these; they
+are stipulated inputs to the conditional certificate, not retained
+derivations. Downstream consumers must carry these stipulations.
+
+No new axioms, imports, or retained bridges are introduced by this
+repair.
 
 ## Statement
 
 Every building block of the ambient `η = 2/9` derivation via APS
-topological robustness is verified executable on the admitted
-Cl(3)/Z³ topological route — no hidden internal choice is made within that
-route. This note does not by itself prove the remaining physical bridge
-identifying the selected-line Brannen phase with the ambient APS invariant.
+topological robustness is verified executable on the **stipulated**
+Cl(3)/Z³ → PL S³ × ℝ topological route — no hidden internal choice is
+made *within* that stipulated route. This note does not prove the
+stipulated route itself (PL S³ identification + global ABSS bridge), and
+does not prove the remaining physical bridge identifying the
+selected-line Brannen phase with the ambient APS invariant.
 
 ## Forced building blocks
 

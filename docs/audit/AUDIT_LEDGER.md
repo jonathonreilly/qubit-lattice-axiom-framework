@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 551 |
+| **retained_bounded** | 552 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1208 |
+| unaudited | 1207 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 850 |
+| `audited_clean` | 851 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1438 |
+| `unaudited` | 1437 |
 
 | claim_type | count |
 |---|---:|
@@ -591,6 +591,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `minimal_absorbing_horizon_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -8583,6 +8584,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
 - **auditor confidence:** high
+
+### `minimal_absorbing_horizon_probe_note`
+
+- **Note:** [`MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md`](../../docs/MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded runner-defined Gate-B no-restore grown-family absorption probe at h=0.5, W=10, NL=25, seeds 0..3, z={3,4,5}, drift=0.2: alpha=0 recovers the runner-defined weak-field readout, alpha>=0.10 gives escape fraction below 50%, and alpha>=0.5 gives escape fraction about 0.02 or lower; no derived absorbing-horizon law, black-hole observable, strong-field threshold, or physical Gate-B closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-minimal-absorbing-horizon-probe-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cached runner reports alpha=0 weak-field recovery with exact grid and sector stencil both 3/3 TOWARD and F~M=1.00, then escape fractions 1.0002, 0.4353, 0.0903, 0.0202, 0.0000, 0.0000 at alpha=0,0.10,0.30,0.50,2.00,10.00.  _(class `C`)_
+- **chain closes:** True — All four one-hop dependencies are retained-bounded, the long cached runner completed successfully, and the printed values support the source's bounded alpha-threshold readout. The absorption parameter remains a hand-added proxy inside the audited scope, not a derived physical law.
+- **rationale:** The row closes only as a bounded finite-harness observation. The source now states that alpha is hand-added, that the observation is runner-defined, and that no absorbing-horizon law, black-hole observable, strong-field threshold, or A_min derivation is claimed. The cached runner computes weak-field recovery and escape fractions on the declared family; alpha=0 recovers the retained-lane signature, alpha=0.10 is the first positive listed alpha below 50% escape, and alpha>=0.5 is near-zero escape on this finite readout. Residual risk is the modeling proxy itself, which remains outside the clean scope.
+- **auditor confidence:** medium
 
 ### `minimal_source_driven_field_probe_note`
 

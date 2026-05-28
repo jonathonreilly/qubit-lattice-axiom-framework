@@ -3,7 +3,7 @@
     "critical": 230,
     "high": 320,
     "leaf": 325,
-    "medium": 333
+    "medium": 332
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -16642,7 +16642,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "minimal_absorbing_horizon_probe_note",
+      "claim_id": "minimal_bidirectional_trapping_probe_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -16650,20 +16650,21 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
+        "minimal_absorbing_horizon_probe_note",
         "gate_b_nonlabel_connectivity_v1_note",
         "gate_b_nonlabel_connectivity_v1_distance_note",
         "gate_b_nonlabel_connectivity_v1_joint_note",
         "gate_b_farfield_note"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.008,
-      "note_path": "docs/MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md",
+      "load_bearing_score": 6.976,
+      "note_path": "docs/MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/minimal_absorbing_horizon_probe.py",
-      "transitive_descendants": 90
+      "runner_path": "scripts/minimal_bidirectional_trapping_probe.py",
+      "transitive_descendants": 88
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17208,34 +17209,6 @@
       "ready": false,
       "runner_path": null,
       "transitive_descendants": 94
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "minimal_bidirectional_trapping_probe_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_absorbing_horizon_probe_note",
-        "gate_b_nonlabel_connectivity_v1_note",
-        "gate_b_nonlabel_connectivity_v1_distance_note",
-        "gate_b_nonlabel_connectivity_v1_joint_note",
-        "gate_b_farfield_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.976,
-      "note_path": "docs/MINIMAL_BIDIRECTIONAL_TRAPPING_PROBE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/minimal_bidirectional_trapping_probe.py",
-      "transitive_descendants": 88
     },
     {
       "audit_independence_required": "any_non_self",
@@ -27730,6 +27703,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "quantum_horizon_note",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_absorbing_horizon_probe_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/minimal_absorbing_horizon_probe.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/QUANTUM_HORIZON_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/quantum_horizon_k_sweep.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "spectral_symmetry_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34541,32 +34540,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "quantum_horizon_note",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_absorbing_horizon_probe_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/minimal_absorbing_horizon_probe.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/QUANTUM_HORIZON_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/quantum_horizon_k_sweep.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "quark_bae_analog_bounded_obstruction_note_2026-05-10_quarkbae",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36485,6 +36458,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 57,
-  "total_pending": 1208
+  "ready_count": 58,
+  "total_pending": 1207
 }

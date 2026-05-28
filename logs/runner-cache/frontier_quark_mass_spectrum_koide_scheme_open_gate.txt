@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py
+runner_sha256: 3b495bc414c9b5e3d4d41b01c5af90bbf279bcbc55e124c5983fcd696e30ac1f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Quark mass spectrum Koide-scheme open gate
+========================================================================
+
+Central-value comparators
+  charged_lepton  Q=0.666660512 |b|^2/a^2=0.499990767 hierarchy=3477.2
+  up_quark        Q=0.849094427 |b|^2/a^2=0.773641640 hierarchy=80092.6
+  down_quark      Q=0.731427651 |b|^2/a^2=0.597141477 hierarchy=895.1
+  PASS: charged-lepton Q comparator is close to 2/3 (Q=0.666660512)
+  PASS: charged-lepton apparent |b|^2/a^2 is close to 1/2 (0.499990767)
+  PASS: up-quark Q comparator is far from 2/3 (Q=0.849094427)
+  PASS: down-quark Q comparator is separated from 2/3 (Q=0.731427651)
+  PASS: up-quark apparent |b|^2/a^2 differs from lepton BAE (0.773641640)
+  PASS: down-quark apparent |b|^2/a^2 differs from lepton BAE (0.597141477)
+  PASS: up and down quark comparators are distinct (gap=0.117666775)
+  PASS: up-quark hierarchy is extreme (80092.6)
+  PASS: down-quark hierarchy is large but less extreme than up-quark (895.1)
+  PASS: charged-lepton hierarchy lies between down and up in this comparator (3477.2)
+  PASS: Q <-> |b|^2/a^2 algebra reconstructs Q=0.666667
+  PASS: Q <-> |b|^2/a^2 algebra reconstructs Q=0.849094
+  PASS: Q <-> |b|^2/a^2 algebra reconstructs Q=0.731428
+  PASS: quark values are treated as scheme-dependent comparators (no derivation claimed)
+
+========================================================================
+TOTAL: PASS=14 FAIL=0
+VERDICT: quark Koide-scheme open gate verified; quark BAE parameters and scales remain open.
+
+----- stderr -----
+

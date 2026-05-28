@@ -19104,6 +19104,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_quark_mass_ratios_taste_staircase_support.py"
     },
+    "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py"
+    },
     "quark_projector_parameter_audit_note_2026-04-19": {
       "assert_count": 2,
       "counts": {
@@ -46362,6 +46374,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py": {
+      "assert_count": 1,
+      "claims": [
+        "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_quark_projector_parameter_audit.py": {
       "assert_count": 2,
       "claims": [
@@ -57313,11 +57340,11 @@
       "A": 261,
       "B": 294,
       "C": 766,
-      "D": 304,
+      "D": 305,
       "none": 441
     },
-    "runners_classified": 2066,
+    "runners_classified": 2067,
     "runners_with_C": 1003,
-    "runners_with_D": 607
+    "runners_with_D": 608
   }
 }

@@ -22193,6 +22193,18 @@
       "to": "ckm_five_sixths_bridge_support_note"
     },
     {
+      "from": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "quark_projector_parameter_audit_note_2026-04-19",
       "to": "quark_projector_ray_phase_completion_note_2026-04-18"
     },
@@ -74275,6 +74287,22 @@
       "runner_path": "scripts/frontier_quark_mass_ratios_taste_staircase_support.py",
       "title": "Quark Mass Ratios from the Taste-Staircase + EWSB Cascade"
     },
+    "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26": {
+      "claim_id": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "879896bb4efe37bbf3642774e19a336b2c6aa1e3e23c27af74d1470fdaf302ec",
+      "path": "docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py",
+      "title": "Quark Mass Spectrum Koide-Scheme Open Gate"
+    },
     "quark_projector_parameter_audit_note_2026-04-19": {
       "claim_id": "quark_projector_parameter_audit_note_2026-04-19",
       "claim_type_author_hint": null,
@@ -86735,7 +86763,7 @@
       "meta": 192,
       "no_go": 85,
       "none": 1431,
-      "open_gate": 53,
+      "open_gate": 54,
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
@@ -86744,13 +86772,13 @@
       "meta": 192,
       "no_go": 188,
       "none": 426,
-      "open_gate": 130,
+      "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9879,
-    "leaf_count": 817,
-    "node_count": 2596,
+    "edge_count": 9882,
+    "leaf_count": 818,
+    "node_count": 2597,
     "root_count": 866,
-    "runners_with_path": 2171
+    "runners_with_path": 2172
   }
 }

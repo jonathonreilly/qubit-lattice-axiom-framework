@@ -73,6 +73,11 @@ closed exactly:
   block-density expectations, and Hilbert-Schmidt block conventions do not
   derive lambda_top=1/sqrt(2); root-rank averaging is an extra physical radial
   generator law
+  Fisher quotient radial normalization no-go: the reflection-even C3
+  RN/Fisher line-simplex geometry and its binary P_0/P_nt quotient are
+  isometric, Fisher-unit score normalization is only a source-coordinate
+  normalization, and B_x has no internal Fisher direction inside P_nt; none of
+  these derive lambda_top=1/sqrt(2)
   zero-singlet top-block membership no-go: current real/reflection-even C3
   block algebra does not exclude P_0; P_nt is selected only after importing
   a sign/order law or minimum-response convention
@@ -204,6 +209,9 @@ still open:
   lambda_top=1/sqrt(2) if the C3 route grants zero-singlet P_nt support
   accepted block-rank/root-rank radial generator law if the C3 route tries to
   derive lambda_top=1/sqrt(2) from rank(P_nt)=2
+  accepted Fisher-quotient/source-geometry-to-radial-generator law if the C3
+  route tries to derive lambda_top=1/sqrt(2) from RN/Fisher coarse-graining or
+  Fisher-unit score normalization
   accepted independent physical readout/sign/radial laws, since target-size
   response magnitude itself cannot certify zero singlet weight or
   lambda_top=1/sqrt(2)
@@ -1651,6 +1659,11 @@ proposal_allowed_reason: |
   The Fisher-LSZ radial generator normalization no-go prunes the deep-work
   source-normalization escape hatch: Fisher arclength and LSZ remove raw
   source scale, but not the relative top response coefficient lambda_top.
+  The Fisher quotient radial-normalization no-go prunes the stronger
+  information-geometric shortcut: fine C3 line-simplex Fisher geometry and the
+  binary P_0/P_nt quotient have the same metric, Fisher-unit C3 score
+  normalization is a coordinate unit rather than a top mass-generator law, and
+  the internal P_nt Fisher direction for B_x is degenerate.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface

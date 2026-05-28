@@ -185,3 +185,10 @@ proposal_allowed: false
 proposal_allowed_reason: "Source note records the structural cancellation theorem. Effective retained tier is set by the independent audit lane based on retained-grade upstream availability of NATIVE_GAUGE_CLOSURE_NOTE (SU(2) gauge structure), GRAPH_FIRST_SU3_INTEGRATION_NOTE (N_c = 3), and THREE_GENERATION_STRUCTURE_NOTE (n_gen = 3); not asserted by author."
 bare_retained_allowed: false
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [anomaly_forces_time_theorem](ANOMALY_FORCES_TIME_THEOREM.md)
+- [one_generation_matter_closure_note](ONE_GENERATION_MATTER_CLOSURE_NOTE.md)

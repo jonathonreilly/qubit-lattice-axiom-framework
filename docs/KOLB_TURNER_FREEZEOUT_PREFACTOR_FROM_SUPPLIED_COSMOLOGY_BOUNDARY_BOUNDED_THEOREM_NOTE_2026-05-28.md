@@ -430,3 +430,11 @@ forbidden_imports_used: false
 These are plain-text non-load-bearing cross-references for the audit lane;
 the only load-bearing one-hop dependency is the retained/effective SM
 relativistic DOF count link above.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [newton_poisson_flat_friedmann_textbook_import_note_2026-05-17](NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+- [axiom_first_stefan_boltzmann_theorem_note_2026-05-01](AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md)
+- [admitted_input_registry_tier_a_note_2026-05-23](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)

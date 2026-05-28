@@ -282,3 +282,15 @@ Expected result:
 ```text
 SUMMARY: PASS=... FAIL=0
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [yt_strict_symbolic_top_response_row_packet_note_2026-05-25](YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md)
+- [yt_top_response_coefficient_underdetermination_no_go_note_2026-05-25](YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md)
+- [sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26](SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md)
+- [yt_source_action_support_packet_note_2026-05-22](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
+- [yt_color_projection_correction_note](YT_COLOR_PROJECTION_CORRECTION_NOTE.md)
+- [yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25](YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md)
+- [yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25](YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md)

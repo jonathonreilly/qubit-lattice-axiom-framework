@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28.py
+runner_sha256: 12ea93ee6f3d60a737e280d74e8322f37f8c25543c9fffe2ac9200c06a5ab3d1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+
+==============================================================================
+STAGE 1 (FORM): F_p collapses to one scale c via GL_2(C) characters
+==============================================================================
+  [PASS] M_2(C) has exactly two conjugation invariants {tr, det} (Newton: no 3rd)
+  [PASS] det(M) = scaling of M on Lambda^2 C^2 (canonical volume; det forced structurally)
+  [PASS] |det|^c is a multiplicative character GL_2(C)->R_{>0} for any real c
+  [PASS] |tr| fails multiplicativity => not a character (det is the only one)
+  [PASS] log|det(AB)| = log|det A| + log|det B| (product additivity is derived)
+  [PASS] per-dim-normalized log|det| additive under (x) within P-form scope
+  [PASS] F_p = |Z|^p has log F_p = p*log|Z| = c*log|det| (whole family <-> one scale c)
+         STAGE 1 collapses the F_p function space to a single real parameter c (= p)
+  [PASS] log|det(exp X)| = Re tr X (trace = generator; log|det| its group integral)
+
+==============================================================================
+STAGE 2 (SCALE): Gibbs-expectation identity fixes c = 1
+==============================================================================
+  [PASS] bare gradient of W = log Z equals <O> (selects log)
+  [PASS] bare gradient of W = Z^p != <O> for p != 0 (raw multiplicative scalar fails)
+         d(Z^p)/dj - <O> = (p*Z(j)**p - 1)*Derivative(Z(j), j)/Z(j) (zero only if p*Z^p == 1, impossible)
+  [PASS] numeric: d log Z / dj = <O> = Tr(rho(-P)) on 1-qubit/2-qubit Gibbs blocks
+         200 random Hermitian (H, P); max |d logZ/dj - <O>| = 2.33e-09
+  [PASS] identity-source: log Z(s) = log Z0 - s  =>  d log Z/ds = -1 = -<1>  (fixes c=1)
+         for W = c log Z, dW/ds = -c; demanding = <O> = -1 gives c = 1
+  [PASS] normalized-trace calibration <1> = Tr rho = 1
+         max |Tr rho - 1| = 2.22e-16
+
+==============================================================================
+P2: phase-blindness dissolves under positivity (mass-like sources only)
+==============================================================================
+  [PASS] Z = Tr e^{-(H+J)} > 0 for self-adjoint H, J (P2 vacuous)
+         200 Hermitian samples; min Re(Z) = 0.0485, max|Im(Z)| < 1e-9
+  [PASS] real anti-Hermitian D: det(D+jI) = det(D-jI) (|det| even; phase-blind)
+         det(D+jI) = (a**2 + j**2)*(b**2 + j**2)
+  [PASS] CAVEAT: a non-self-adjoint source can drive det(D+J) off the positive axis
+         P2 dissolution is verified only on the self-adjoint / mass-like source sector
+
+==============================================================================
+RESIDUAL (P-cal): is the STAGE-2 selector additivity in differential form?
+==============================================================================
+  [PASS] (1/p) W^{-1} dW/dj = <O> for EVERY p: probability normalization can't select p
+         => the c=1 selection rides on the BARE-gradient demand, not on Tr rho = 1
+  [PASS] W = log Z: cross-block d^2W/dj_A dj_B = 0 (locality-of-source/additivity)
+         the bare-gradient=<O> selector is additivity in differential form (Pattern-L)
+  [PASS] W = Z^p (p=1.7): cross-block d^2W != 0 (multiplicative, disconnected piece)
+         => whether P-cal is a genuine primitive or relocated additivity remains unresolved
+  [PASS] Z[J_A(+)J_B] = Z_A Z_B is the F_p property (4) for EVERY p (qubit additivity step is circular)
+         factorization is multiplicative; the additive 'log' step is the imported choice
+
+==============================================================================
+NOTE: honest-scope and boundary strings
+==============================================================================
+  [PASS] required honest-scope strings present
+         all present
+  [PASS] forbidden status-promotion strings absent
+         none present
+
+==============================================================================
+PASS=22 FAIL=0
+==============================================================================
+
+SUMMARY (no parent additivity closure claimed):
+  STAGE 1 collapses the F_p function space to a single real scale c
+  (GL_2(C) characters); STAGE 2 fixes c=1 by the Gibbs-expectation
+  identity + normalized trace; P2 dissolves under positivity (mass-like
+  sources). The residual is ONE premise P-cal replacing {P1,P2,P4};
+  whether P-cal is a genuine approved primitive or relocated additivity
+  remains unresolved.
+
+----- stderr -----
+

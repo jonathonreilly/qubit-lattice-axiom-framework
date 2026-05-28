@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 147 |
-| **retained_no_go** | 168 |
+| **retained_no_go** | 169 |
 | **retained_bounded** | 556 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1202 |
+| unaudited | 1201 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 855 |
+| `audited_clean` | 856 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1432 |
+| `unaudited` | 1431 |
 
 | claim_type | count |
 |---|---:|
@@ -411,6 +411,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_susceptibility_flow_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5692,6 +5693,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner constructs S_packet = exp(ETA J) D_packet exp(ETA J), eta_packet = exp(ETA J / 2) e_(0,0), and z_packet = S_packet^DEPTH eta_packet, then verifies the finite positivity, symmetry, normalization, and Perron-overlap properties.  _(class `C`)_
 - **chain closes:** True — Within the narrowed finite scope, the runner source genuinely constructs the recurrence matrix, transfer witness, boundary vector, and boundary-amplitude sequence, then checks the claimed finite properties. The full Wilson-environment transfer identity is explicitly outside the audited claim scope.
 - **rationale:** The source note’s load-bearing claim is only the existence and verification of one finite constructed witness packet, and the provided runner actually computes that packet rather than importing or printing contested constants. The cited upstream authority is retained_bounded, and the open full Wilson-environment bridge is not used as a premise for this bounded claim. The conclusion therefore closes on its own finite terms while preserving the stated exclusions.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow finite structural-surface no-go only: on the runner's listed class-sector witness surface, the enumerated positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique beta=6 spatial-environment pair (S_6^env, eta_6) or a unique induced normalized three-sample datum. This does not audit any claim that the full beta=6 Wilson-parent/factorization/current-stack admissibility constraints fail, nor does it close explicit S_6^env, eta_6, rho_(p,q)(6), canonical P(6), or a global plaquette selector.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gauge-vacuum-spatial-underdetermination-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cached runner and direct rerun exhibit two admissible normalized beta-side witnesses on the listed structural surface: symmetry/swap errors are below 1e-12, rho_A(0,0)=rho_B(0,0)=1, max |rho_A-rho_B|=0.060847050322, and the same rank-3 left sample operator sends them to different normalized triples with max |Zhat_A-Zhat_B|=0.121575423874 and imaginary residue 4.093e-14.  _(class `C`)_
+- **chain closes:** True — The one-hop spatial-environment transfer dependency is retained-bounded only as a finite witness packet, which is exactly the narrowed surface audited here. The no-go discipline gate passes because the source collapses the wall to the listed structural surface, explicitly leaves the full beta=6 stack open, enumerates alternative routes, and accepts the steelman that stronger full-stack constraints may still collapse the witnesses.
+- **rationale:** Clean no-go is warranted only at the narrowed finite-surface level. A logical non-uniqueness obstruction needs two admissible witnesses satisfying the stated conditions but inducing different data; the runner supplies exactly that. Independent arithmetic checks confirmed rank(F)=3 with restriction error 4.777e-15, all reported structural errors below 1e-12, rho_gap > 1e-3, and triple_gap > 1e-2 with negligible imaginary residue. The no-go discipline review does not overclaim: N1 lists the full Wilson-parent stack as open, N2 collapses the wall set to the listed structural surface, N3/N5 scope the rhetoric to the finite witness packet, N6 records a positive bridge path, and N7 steelmans that the full beta=6 stack may still rule out one witness. Therefore the retained result is a finite structural-surface underdetermination no-go, not a full plaquette closure obstruction.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_spectral_measure_theorem_note`

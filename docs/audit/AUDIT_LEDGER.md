@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 561 |
+| **retained_bounded** | 562 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1189 |
+| unaudited | 1188 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 861 |
+| `audited_clean` | 862 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1419 |
+| `unaudited` | 1418 |
 
 | claim_type | count |
 |---|---:|
@@ -276,6 +276,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dispersion_high_p_tiebreaker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dispersion_relation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `distance_law_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_abcc_assumptions_audit_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3592,6 +3593,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** False — The source note contains incompatible retained surfaces, and the current artifact set does not reproduce the W=40 alpha ~ -1.5 table from the status headline.
 - **rationale:** Issue: the note's candidate retained-grade status claims a far-field alpha around -1.5 and continued steepening, but the note's own later conclusion claims an approximately 1/b law from the grown-geometry runner, and the current named artifacts do not reproduce the W=40 far-field table that carries the -1.5 headline. Why this blocks: the retained claim surface is internally contradictory and stale relative to the current artifact set; a reader cannot tell whether the proposed retained result is a steep non-Newtonian wide-lattice law or the grown-geometry alpha = -0.962 near-1/b result. Repair target: split or rewrite the note so the status, artifact chain, and runner output name one exact claim; either restore a runner that reproduces the W=40 b>=15/local-exponent table or demote that old table and retain only the current grown-geometry alpha = -0.962 result under its own bounded note. Claim boundary until fixed: it is safe to claim that scripts/distance_law_grown_geometry.py currently reproduces the grown-geometry table with all sampled b rows TOWARD and alpha(all b) = -0.962; the alpha ~ -1.5 far-field steepening headline is not audit-retained.
 - **auditor confidence:** high
+
+### `distance_law_portability_note`
+
+- **Note:** [`DISTANCE_LAW_PORTABILITY_NOTE.md`](../../docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-runner table and partial-portability boundary for scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py: on the four tested structured-family rows with b=[5,6,7,8,10], field_strength=0.004, k=5.0, beta=0.8, the runner computes alpha/R^2/TOWARD counts showing no uniform distance-tail transfer across the tested rows. This excludes causal mechanism diagnosis, physical Gate B closure, geometry-independence claims, and broader family universality.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-distance-law-portability-20260528-aquinas`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The primary runner computes alpha, R^2, and TOWARD counts for four structured-family rows, then derives mean alpha -1.154, alpha span 1.847, boundary families alt-connectivity/third-family/fourth-family, and fifth-family as the only all-TOWARD row.  _(class `C`)_
+- **chain closes:** True — Within the bounded table scope, the retained one-hop dependencies supply the structured-family generators, the runner computes the table from those helper geometries, and the SHA-pinned cached run exits 0 with assertions matching the source note. The architecture-specific mechanism prose is not included in the audited closure.
+- **rationale:** A fresh restricted-input audit confirmed the finite table and safe-read boundary: alt-connectivity, third-family, and fourth-family are 0/5 TOWARD while fifth-family radial is 5/5 TOWARD, and the displayed alpha/R^2 values match the runner assertions within the stated tolerance. The helper builders construct the relevant structured connectivity families, and the primary runner recomputes deltas, directions, log-log exponents, R^2, mean alpha, span, boundary-family set, and all-TOWARD set rather than printing constants. Clean status is limited to this finite computational boundary and does not ratify the mechanism explanations, physical source-law closure, or any unbounded portability/no-portability theorem.
+- **auditor confidence:** medium
 
 ### `dm_abcc_assumptions_audit_note_2026-04-19`
 

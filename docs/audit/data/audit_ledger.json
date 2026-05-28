@@ -53626,22 +53626,54 @@
       "verdict_rationale": "Issue: the note's candidate retained-grade status claims a far-field alpha around -1.5 and continued steepening, but the note's own later conclusion claims an approximately 1/b law from the grown-geometry runner, and the current named artifacts do not reproduce the W=40 far-field table that carries the -1.5 headline. Why this blocks: the retained claim surface is internally contradictory and stale relative to the current artifact set; a reader cannot tell whether the proposed retained result is a steep non-Newtonian wide-lattice law or the grown-geometry alpha = -0.962 near-1/b result. Repair target: split or rewrite the note so the status, artifact chain, and runner output name one exact claim; either restore a runner that reproduces the W=40 b>=15/local-exponent table or demote that old table and retain only the current grown-geometry alpha = -0.962 result under its own bounded note. Claim boundary until fixed: it is safe to claim that scripts/distance_law_grown_geometry.py currently reproduces the grown-geometry table with all sampled b rows TOWARD and alpha(all b) = -0.962; the alpha ~ -1.5 far-field steepening headline is not audit-retained."
     },
     "distance_law_portability_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T04:25:55.772649+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alt_connectivity_family_sign_note": "A bounded numerical-computational audit of the parity-rotated sector-transition connectivity family on the no-restore grown slice for drifts 0.0, 0.1, 0.2, 0.3, 0.5 and seeds 0, 1, 2.",
+          "fourth_family_quadrant_note": "Finite quadrant-reflection connectivity sweeps on the grown slice exhibit a nonempty but seed/drift-limited signed-source basin with zero-source, neutral-cancellation, sign-orientation, and near-linear charge-scaling controls.",
+          "gate_b_no_restore_farfield_note": "Bounded finite-runner replay for scripts/gate_b_no_restore_farfield.py at H=0.5, NL=25, PW=8, seeds [0,1], z masses [3,4,5], drift rows [0.0,0.1,0.2,0.3,0.5], RESTORE=0, asserting only the runner-defined TOWARD counts and F~M slopes. No physical Gate B closure, generated-geometry replacement theorem, or primitive-to-gravity bridge is audited.",
+          "third_grown_family_sign_note": "Finite bounded computational claim that the third no-restore grown-family slice has five signed-source passing rows over drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], with exact zero/neutral controls and near-linear charge scaling on the passing rows."
+        },
+        "dep_claim_type": {
+          "alt_connectivity_family_sign_note": "bounded_theorem",
+          "fourth_family_quadrant_note": "bounded_theorem",
+          "gate_b_no_restore_farfield_note": "bounded_theorem",
+          "third_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alt_connectivity_family_sign_note": "retained_bounded",
+          "fourth_family_quadrant_note": "retained_bounded",
+          "gate_b_no_restore_farfield_note": "retained_bounded",
+          "third_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "alt_connectivity_family_sign_note",
+          "fourth_family_quadrant_note",
+          "gate_b_no_restore_farfield_note",
+          "third_grown_family_sign_note"
+        ],
+        "load_bearing_score": 5.5,
+        "runner_hash": "18eb8e1741f63d45df1c30652cbc3bacc9bd17853f27c87c4f00bda7e4eff918",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-distance-law-portability-20260528-aquinas",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded table scope, the retained one-hop dependencies supply the structured-family generators, the runner computes the table from those helper geometries, and the SHA-pinned cached run exits 0 with assertions matching the source note. The architecture-specific mechanism prose is not included in the audited closure.",
       "claim_id": "distance_law_portability_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded finite-runner table and partial-portability boundary for scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py: on the four tested structured-family rows with b=[5,6,7,8,10], field_strength=0.004, k=5.0, beta=0.8, the runner computes alpha/R^2/TOWARD counts showing no uniform distance-tail transfer across the tested rows. This excludes causal mechanism diagnosis, physical Gate B closure, geometry-independence claims, and broader family universality.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T04:25:55.772649+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -53652,24 +53684,24 @@
         "fourth_family_quadrant_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
         "scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py",
         "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py",
         "scripts/gate_b_no_restore_farfield.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 5.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The primary runner computes alpha, R^2, and TOWARD counts for four structured-family rows, then derives mean alpha -1.154, alpha span 1.847, boundary families alt-connectivity/third-family/fourth-family, and fifth-family as the only all-TOWARD row.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "3f24d0157daf3ca87c7d2890c120fd7ccb1edf2659a32529a2dcb42acea85134",
       "note_path": "docs/DISTANCE_LAW_PORTABILITY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the claim is expanded to causal mechanism diagnosis, physical source-law closure, grown-family universality, or broader structured-family coverage beyond the four runner rows.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -53780,18 +53812,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 4
       },
       "runner_path": "scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py",
       "title": "Distance Law Portability Across Structured Families",
       "transitive_descendants": 7,
-      "verdict_rationale": null
+      "verdict_rationale": "A fresh restricted-input audit confirmed the finite table and safe-read boundary: alt-connectivity, third-family, and fourth-family are 0/5 TOWARD while fifth-family radial is 5/5 TOWARD, and the displayed alpha/R^2 values match the runner assertions within the stated tolerance. The helper builders construct the relevant structured connectivity families, and the primary runner recomputes deltas, directions, log-log exponents, R^2, mean alpha, span, boundary-family set, and all-TOWARD set rather than printing constants. Clean status is limited to this finite computational boundary and does not ratify the mechanism explanations, physical source-law closure, or any unbounded portability/no-portability theorem."
     },
     "distance_law_preserving_third_family_note": {
       "audit_date": null,
@@ -102961,11 +102994,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 7.087,
+      "load_bearing_score": 10.087,
       "load_bearing_step": "The note's frozen rows match the SHA-pinned cached runner output for restore=0 across the declared drift rows, two seeds, three far-field z masses, and three-strength F~M probe.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "c635c0bb4972268abb58f6d867ed2aaed093bdc0db643847007aafedac1cb7a0",
       "note_path": "docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if the claim is broadened beyond the declared H=0.5 no-restore finite runner rows, if physical Gate B closure is asserted, or if the no-restore family is used as a theorem-grade replacement for restore>0 geometry.",

@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 375,
     "high": 512,
-    "leaf": 1071,
+    "leaf": 1072,
     "medium": 640
   },
   "flagship_signal_used": false,
-  "node_count": 2598,
+  "node_count": 2599,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,44 +19,44 @@
     {
       "claim_id": "observable_principle_from_axiom_note",
       "criticality": "critical",
-      "load_bearing_score": 53.526,
-      "transitive_descendants": 736
+      "load_bearing_score": 53.527,
+      "transitive_descendants": 737
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
       "criticality": "critical",
-      "load_bearing_score": 53.36,
-      "transitive_descendants": 928
+      "load_bearing_score": 53.361,
+      "transitive_descendants": 929
     },
     {
       "claim_id": "minimal_axioms_2026-05-03",
       "criticality": "critical",
-      "load_bearing_score": 50.85,
-      "transitive_descendants": 922
+      "load_bearing_score": 50.852,
+      "transitive_descendants": 923
     },
     {
       "claim_id": "graph_first_su3_integration_note",
       "criticality": "critical",
-      "load_bearing_score": 46.573,
-      "transitive_descendants": 1076
+      "load_bearing_score": 46.574,
+      "transitive_descendants": 1077
     },
     {
       "claim_id": "yt_ward_identity_derivation_theorem",
       "criticality": "critical",
-      "load_bearing_score": 40.911,
-      "transitive_descendants": 962
+      "load_bearing_score": 40.913,
+      "transitive_descendants": 963
     },
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 40.562,
-      "transitive_descendants": 1068
+      "load_bearing_score": 40.563,
+      "transitive_descendants": 1069
     },
     {
       "claim_id": "anomaly_forces_time_theorem",
       "criticality": "critical",
-      "load_bearing_score": 39.76,
-      "transitive_descendants": 866
+      "load_bearing_score": 39.762,
+      "transitive_descendants": 867
     },
     {
       "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
@@ -79,14 +79,14 @@
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 36.033,
-      "transitive_descendants": 1047
+      "load_bearing_score": 36.035,
+      "transitive_descendants": 1048
     },
     {
       "claim_id": "cl3_color_automorphism_theorem",
       "criticality": "critical",
-      "load_bearing_score": 35.89,
-      "transitive_descendants": 948
+      "load_bearing_score": 35.892,
+      "transitive_descendants": 949
     },
     {
       "claim_id": "plaquette_self_consistency_note",
@@ -109,8 +109,8 @@
     {
       "claim_id": "minimal_axioms_2026-04-11",
       "criticality": "critical",
-      "load_bearing_score": 32.892,
-      "transitive_descendants": 949
+      "load_bearing_score": 32.893,
+      "transitive_descendants": 950
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
@@ -121,8 +121,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 31.353,
-      "transitive_descendants": 924
+      "load_bearing_score": 31.355,
+      "transitive_descendants": 925
     },
     {
       "claim_id": "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
@@ -133,8 +133,8 @@
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
       "criticality": "critical",
-      "load_bearing_score": 30.863,
-      "transitive_descendants": 930
+      "load_bearing_score": 30.864,
+      "transitive_descendants": 931
     },
     {
       "claim_id": "left_handed_charge_matching_note",
@@ -157,8 +157,8 @@
     {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "criticality": "critical",
-      "load_bearing_score": 27.825,
-      "transitive_descendants": 906
+      "load_bearing_score": 27.827,
+      "transitive_descendants": 907
     },
     {
       "claim_id": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",

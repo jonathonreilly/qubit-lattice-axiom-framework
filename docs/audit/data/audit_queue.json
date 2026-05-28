@@ -3,7 +3,7 @@
     "critical": 230,
     "high": 320,
     "leaf": 325,
-    "medium": 334
+    "medium": 333
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -16642,7 +16642,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_nonlabel_connectivity_v1_joint_note",
+      "claim_id": "minimal_absorbing_horizon_probe_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -16651,17 +16651,19 @@
       "cross_confirmation_status": null,
       "deps": [
         "gate_b_nonlabel_connectivity_v1_note",
+        "gate_b_nonlabel_connectivity_v1_distance_note",
+        "gate_b_nonlabel_connectivity_v1_joint_note",
         "gate_b_farfield_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.524,
-      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_JOINT_NOTE.md",
+      "load_bearing_score": 8.008,
+      "note_path": "docs/MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_joint.py",
-      "transitive_descendants": 91
+      "runner_path": "scripts/minimal_absorbing_horizon_probe.py",
+      "transitive_descendants": 90
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17206,33 +17208,6 @@
       "ready": false,
       "runner_path": null,
       "transitive_descendants": 94
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "minimal_absorbing_horizon_probe_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_nonlabel_connectivity_v1_note",
-        "gate_b_nonlabel_connectivity_v1_distance_note",
-        "gate_b_nonlabel_connectivity_v1_joint_note",
-        "gate_b_farfield_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.008,
-      "note_path": "docs/MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/minimal_absorbing_horizon_probe.py",
-      "transitive_descendants": 90
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36511,5 +36486,5 @@
     }
   ],
   "ready_count": 57,
-  "total_pending": 1209
+  "total_pending": 1208
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 550 |
+| **retained_bounded** | 551 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1209 |
+| unaudited | 1208 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 849 |
+| `audited_clean` | 850 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1439 |
+| `unaudited` | 1438 |
 
 | claim_type | count |
 |---|---:|
@@ -376,6 +376,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_distance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gate_b_nonlabel_connectivity_v1_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -5120,6 +5121,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner reports that both exact grid and geometry-sector stencil rows are 12/12 TOWARD and have positive declining post-peak distance-law tails, with exact grid tail b^(-0.56), R^2=0.720, and geometry-sector stencil tail b^(-0.53), R^2=0.992.  _(class `C`)_
 - **chain closes:** True — The current one-hop dependencies are retained-bounded, the cached output matches the frozen log, and independent log-log regression on the printed mean deltas reproduces the reported negative slopes and R^2 values. Stale source prose saying the deps were conditional is historical, not audit authority.
 - **rationale:** The row closes as a bounded finite-harness companion. The runner constructs the exact and no-restore geometry-sector families, propagates amplitudes, reports positive TOWARD counts for all 12 tested geometry-sector cases, and fits the post-peak distance-law tails rather than merely printing constants. Independent arithmetic on the frozen mean deltas gives slope -0.559/R^2 0.720 for exact grid and slope -0.531/R^2 0.992 for the geometry-sector stencil, matching the rounded source values. The clean scope is only this declared replay; full Gate B closure, physical-gravity readout, and universal non-label transfer remain unaudited.
+- **auditor confidence:** high
+
+### `gate_b_nonlabel_connectivity_v1_joint_note`
+
+- **Note:** [`GATE_B_NONLABEL_CONNECTIVITY_V1_JOINT_NOTE.md`](../../docs/GATE_B_NONLABEL_CONNECTIVITY_V1_JOINT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded h=0.5, W=10, NL=25, four-seed joint-package comparison between exact grid and no-restore geometry-sector stencil connectivity on the declared Gate-B V1 family: Born-clean to machine precision and same qualitative d_TV/MI/decoherence regime; no universal non-label theorem or physical Gate-B closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gate-b-nonlabel-v1-joint-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner reports exact-grid and geometry-sector stencil joint-package rows with Born at machine zero and comparable d_TV, MI, and decoherence values: exact grid d_TV=0.458, MI=0.178, decoh=17.2%; geometry-sector d_TV=0.453, MI=0.204, decoh=17.5%.  _(class `C`)_
+- **chain closes:** True — The current one-hop dependencies are retained-bounded, the runner constructs and measures the declared geometries, and the current cached output matches the source's rounded d_TV/MI/decoherence values. The Born mantissa differs from the frozen log only at machine-zero scale, which does not affect the audited Born-clean qualitative claim.
+- **rationale:** The row closes as a bounded finite-harness companion. The runner constructs the exact and no-restore geometry-sector families, propagates amplitudes, and computes Born/d_TV/MI/decoherence rather than importing the table. Current output preserves the source's load-bearing qualitative comparison: both rows are Born-clean to machine precision and the geometry-sector d_TV/MI/decoherence values stay in the same regime as the exact-grid control. The clean scope excludes full Gate B closure, physical-gravity readout, universal non-label transfer, and any exact significance for the machine-zero Born mantissa.
 - **auditor confidence:** high
 
 ### `gate_b_nonlabel_connectivity_v1_note`

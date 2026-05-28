@@ -27,18 +27,29 @@ Latest bounded follow-up:
 - [logs/2026-04-04-evolving-network-prototype-v5.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v5.txt)
 - [docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md)
 
-1. **Noisy NN lattice** (positions jittered, fixed connectivity):
-   100% TOWARD at all jitter levels 0.0-0.5, F∝M=1.00, Born 0.
-   Gravity degrades gracefully (~40% weaker at jitter=0.5).
+The primary runner reports per-architecture TOWARD fractions and a local
+`F~M` response-slope probe (mean over the six frozen seeds). These match the
+retained companion [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md):
+
+1. **Jittered NN lattice** (positions jittered, fixed connectivity):
+   `75.0%` TOWARD at jitter `0.5`; across the jitter sweep `0.0-0.5` the
+   TOWARD fraction stays in the `47.2%-75.0%` band with local `F~M` in the
+   `0.47-0.75` band. Born stays at machine precision. The response degrades
+   gradually rather than at a cliff; it does not collapse.
 
 2. **Templated growth** (copy prev layer + jitter, NN offsets):
-   50-67% TOWARD, F∝M=1.00. Position drift accumulates across layers.
+   `27.8%` TOWARD, local `F~M = 0.27`. Position drift accumulates across
+   layers and the response becomes mixed.
 
 3. **K-NN grown** (relaxed positions, 9-nearest connectivity):
-   25% TOWARD, F∝M=1.00. Asymmetric connectivity breaks coherence.
+   `55.6%` TOWARD, local `F~M = 0.55`. Asymmetric connectivity weakens
+   coherence.
 
 4. **Grid-snapped grown** (relaxed positions, snapped NN connectivity):
-   50% TOWARD, F∝M=1.00. Inconsistent grid assignment.
+   `58.3%` TOWARD, local `F~M = 0.58`. Inconsistent grid assignment.
+
+For reference, the ordered-lattice baseline is `66.7%` TOWARD with local
+`F~M = 0.66` on the same frozen seeds.
 
 ## Key insight
 
@@ -53,12 +64,19 @@ The growth rule must produce **structured connectivity**, not just
 regular spacing. K-nearest-neighbor connectivity on relaxed positions
 does NOT suffice — the resulting edge structure is too asymmetric.
 
-## What F∝M tells us
+## What the local `F~M` probe tells us
 
-F∝M = 1.00 transfers to ALL tested architectures, including K-NN
-grown DAGs with only 25% TOWARD. The mass scaling is more robust
-than the gravity sign — it depends on the action formula (linear in f)
-but not on the connectivity structure.
+On this connectivity-tolerance primary replay, the local `F~M`
+response-slope probe stays in a bounded band (`0.27-0.75` across the tested
+architectures and jitter levels) rather than collapsing — it does not show
+a cliff even where the TOWARD fraction is mixed (e.g. templated growth at
+`27.8%` TOWARD keeps `F~M = 0.27`). The mass-side response is therefore more
+stable under connectivity changes than the gravity sign, but the local
+`F~M` values on this near-field harness are **not** universal constants and
+should not be read as a promoted `F∝M = 1.00` law. The clean retained
+`F∝M = 1.00` mass-scaling result lives on the far-field harness
+([docs/GATE_B_FARFIELD_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)),
+not on this connectivity-tolerance replay.
 
 ## Path forward
 
@@ -78,14 +96,18 @@ Options:
 
 ## Honest status for reviewers
 
-The model can produce Newtonian gravity (F∝M=1.0, ~1/b) on grown
-geometry IF the connectivity is approximately grid-structured. The
-tolerance for position noise is high (0.5h). The remaining challenge
-is producing the grid-like connectivity from a local rule.
+The model can produce TOWARD gravity on grown geometry IF the connectivity
+is approximately grid-structured. A fixed connectivity backbone tolerates
+substantial position noise (the jitter sweep degrades gradually across
+`0.0-0.5` rather than at a cliff). The remaining challenge is producing the
+grid-like connectivity from a local rule. The clean `F∝M = 1.00`
+mass-scaling closure is the separate far-field harness result, not this
+near-field connectivity-tolerance replay.
 
-This is a genuine partial result, not a failure: the geometry
-tolerance is quantified, the mass scaling transfers universally,
-and the connectivity requirement is identified.
+This is a genuine partial result, not a failure: the position-noise
+tolerance is quantified on this replay, the local mass-side response stays
+in a bounded band rather than collapsing, and the connectivity requirement
+is identified.
 
 The newest v4 crystal-like growth rule is the first explicit
 structured-connectivity prototype guided by that lesson. It remains mixed and

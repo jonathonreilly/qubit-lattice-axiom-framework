@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1132 |
+| unaudited | 1134 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
 | ~~audited_conditional~~ | 72 |
-| ~~audited_failed~~ | 4 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,19 +63,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 891 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 48 |
+| `audited_failed` | 46 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1362 |
+| `unaudited` | 1364 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1108 |
+| `bounded_theorem` | 1107 |
 | `decoration` | 53 |
 | `meta` | 237 |
 | `no_go` | 260 |
 | `open_gate` | 112 |
-| `positive_theorem` | 695 |
+| `positive_theorem` | 696 |
 
 | criticality | count |
 |---|---:|
@@ -1163,7 +1163,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_fm_transfer_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
-| `gate_b_dynamics_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -1172,7 +1171,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
-| `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -5377,21 +5375,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: first / audited_clean / bounded_theorem / class C; J2: first / audited_clean / bounded_theorem / class C; J3: first / audited_clean / bounded_theorem / class C; J4: first / audited_clean / bounded_theorem / class C; J5: first / audited_clean / bounded_theorem / class C. Majority rationale: J1: The source claim is explicitly scoped to a finite self-contained replay, not a Gate B dynamics theorem or universal F~M law. The cached runner output matches the note's jitter and architecture tables, and the load-bearing qualitative comparison is bounded to those tables, so no external physical bridge or unaudited dependency is needed at that scope. | J2: The note and cached runner support a narrow self-contained finite replay: the current code reproduces the frozen jitter and architecture tables, and the note explicitly limits the claim to the replay rather than Gate B closure or universal F~M constants. Within that bounded scope no unclosed dependency requires a conditional verdict. | J3: The source note is explicitly scoped to a finite deterministic replay, not a Gate B dynamics theorem or universal F~M claim. The cached runner output matches the frozen tables and supports the bounded connectivity-vs-position-noise comparison under the stated replay definitions, so no unresolved external bridge is load-bearing for this claim. | J4: The restricted packet supports only a bounded finite replay claim, and the cached runner output exactly matches the note's tables and scoped interpretation. The note explicitly confines the result to the fixed valley-linear replay and disclaims Gate B closure, universality, and a dynamics theorem, so no unclosed external physical bridge is load-bearing for this scoped claim. | J5: The restricted packet is a self-contained finite replay: the runner stdout matches the note tables, and the note confines the claim to a connectivity-vs-position-noise comparison while explicitly disclaiming Gate B closure, dynamics universality, and universal F~M constants. No unaudited dependency or unratified physical bridge is needed for that bounded claim.
 - **auditor confidence:** judicial_panel_majority
 
-### `gate_b_dynamics_note`
-
-- **Note:** [`GATE_B_DYNAMICS_NOTE.md`](../../docs/GATE_B_DYNAMICS_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Omnibus Gate B current-status synthesis over the connectivity-tolerance replay and later retained/bounded Gate B finite-runner rows. The audit checks whether this source note's own primary replay numbers and status claims remain current relative to its registered runner and one-hop retained companions.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-xhigh-2026-05-28-gate-b-dynamics-stale-runner`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note's primary status read says fixed-connectivity jitter gives 100% TOWARD at all jitter levels with F∝M=1.00 and that F∝M=1.00 transfers to all tested architectures.  _(class `B`)_
-- **chain closes:** False — The registered primary runner and the retained direct companion now report different connectivity-tolerance values, so the omnibus note is stale on its own load-bearing primary replay.
-- **rationale:** Issue: the source note's primary frozen-replay section is stale relative to its registered runner and direct retained companion. It states 100% TOWARD for all fixed-connectivity jitter levels and F∝M=1.00 across tested architectures, but the current cached runner reports fixed-connectivity jitter rows of 47.2%-75.0% TOWARD with local F~M 0.47-0.75, and architecture rows including ordered 66.7%, templated growth 27.8%, K-NN 55.6%, snapped/grid-like 58.3%. Why this blocks: this is an omnibus current-status note; a hostile auditor cannot cite it as a bounded synthesis while its primary numerical/status table contradicts the live runner and the already retained Gate B connectivity-tolerance companion. Repair target: update or delete the stale early replay/status paragraphs, cite the current GATE_B_CONNECTIVITY_TOLERANCE_NOTE values, and, if this row is meant to remain an omnibus synthesis, add a small registered synthesis runner or table check over the retained one-hop Gate B rows. Claim boundary until fixed: the individual one-hop Gate B artifacts keep their own retained/retained_bounded scopes, including the far-field and h=0.25 finite rows; this omnibus dynamics note itself is not citeable as a current bounded Gate B synthesis.
-- **open / conditional deps cited:**
-  - `source note primary replay/status paragraphs stale relative to scripts/gate_b_connectivity_tolerance.py and GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md`
-- **auditor confidence:** high
-
 ### `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17`
 
 - **Note:** [`GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md)
@@ -7412,19 +7395,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The in-sample classifier rule (avg_deg >= 10.415 and reach_frac >= 0.859) is applied without refit to nine scripted independent generator families, yielding only 2/9 full-battery passes, 4/9 hard-coded prediction accuracy, and 6/9 no-refit rule accuracy.  _(class `C`)_
 - **chain closes:** True — The live runner rebuilds the nine named generator families, applies the same five-condition battery and frozen rule, and reproduces the negative table: only E1_er_p005 and E2_er_p020 pass, hard-coded predictions score 4/9, and the no-refit classifier rule scores 6/9.
 - **rationale:** The finite negative result closes on its own terms: the checked-in runner contains the nine generator constructors, the hard-coded prediction dictionary, the five-condition battery, and the frozen avg_deg/reach_frac rule, and live replay matches the source note's pass/fail and accuracy claims. The decisive rule failures R1, R3, and X1 all satisfy the frozen structural thresholds but fail the actual battery, while only the two Erdős-Rényi families pass the full package. This clean verdict is narrow: it certifies this deterministic nine-family held-out replay and the checked-in prediction table, not an exhaustive statistical theorem over all independent generator laws or independent timestamp proof beyond the artifact chain.
-- **auditor confidence:** high
-
-### `industrial_sdp_bootstrap_infrastructure_note_2026-05-03`
-
-- **Note:** [`INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite CVXPY moment-problem SDP infrastructure validation at beta=6 for SU(2)/SU(3) single-plaquette moment data, including support-only PSD brackets and fixed-higher-moment containment of m1. The full lattice plaquette value, loop-equation bootstrap, industrial precision, and external MC/Kazakov-Zheng comparators are not audited.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-industrial-sdp-bootstrap-block01-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The runner-computed SU(2)/SU(3) single-plaquette reference moments are used as fixed higher moments in a Hankel/Hausdorff CVXPY moment problem whose m1 bracket is claimed to contain the known reference value.  _(class `C`)_
-- **chain closes:** False — The CVXPY feasibility/bracketing machinery runs, but the SU(2) reference surface is not the stated full SU(2) Haar/Bessel single-plaquette integral. The runner integrates theta in [0, pi] with P=cos(theta/2), restricting to P>=0; the full SU(2) class-angle integral gives I2(6)/I1(6)=0.76272608, not 0.76736480.
-- **rationale:** The cached runner exits successfully and reports PASS=13 FAIL=0, and its CVXPY bracket logic is internally consistent for the moments it computes. Independent math check of the SU(2) reference construction fails: for SU(2) with P=(1/2)tr U=cos(phi), Haar weight sin^2(phi) on phi in [0,pi] gives <P>=I2(beta)/I1(beta)=0.76272608 at beta=6, while the runner/note value 0.76736480 comes from integrating only phi in [0,pi/2]. Because the stated validation is against SU(2) single-plaquette Bessel/Haar reference data, the load-bearing validation does not close on its own terms even though the infrastructure itself is present. The SU(3) and pure PSD portions are not enough to ratify the combined source claim.
 - **auditor confidence:** high
 
 ### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`

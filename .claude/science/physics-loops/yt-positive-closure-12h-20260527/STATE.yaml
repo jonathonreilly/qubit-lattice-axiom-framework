@@ -266,6 +266,9 @@ no_go_routes:
   - nonreversible oriented C3 Markov-current dynamics plus connected/current normalization derives an accepted non-mass physical top-line law or lambda_top=1/sqrt(2)
   - continuous C3 unitary character-flow dynamics plus branch/unit normalization derives an accepted non-mass physical top-line law or source matrix element
 commands_run:
+  - "git commit -m 'Record homogeneous radial normalization delivery' -> ba3dfa33745be4b65d423073b2ee6ffe43de72a9"
+  - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
+  - "gh pr edit 1980 --body-file - -> PR body updated"
   - "git commit -m 'Prune C3 homogeneous radial normalization shortcut' -> 4f030e53910344846f8d4b099f545350ed834b03"
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
@@ -807,9 +810,9 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 34 science commit 4f030e53910344846f8d4b099f545350ed834b03 is pushed; PR #1980 body is updated with the homogeneous radial-normalization no-go result and verification."
+pr_status: "Cycle 34 science commit 4f030e53910344846f8d4b099f545350ed834b03 and delivery commit ba3dfa33745be4b65d423073b2ee6ffe43de72a9 are pushed; PR #1980 body is updated with the homogeneous radial-normalization no-go result and verification."
 latest_science_commit: 4f030e53910344846f8d4b099f545350ed834b03
-latest_delivery_commit: pending_cycle34_delivery_state_commit
-latest_delivery_hash_record_commit: pending_cycle34_delivery_state_commit
+latest_delivery_commit: ba3dfa33745be4b65d423073b2ee6ffe43de72a9
+latest_delivery_hash_record_commit: pending_cycle34_delivery_hash_record
 next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

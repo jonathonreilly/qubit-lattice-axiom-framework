@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py
+runner_sha256: 65b98727b099c18c5d7718f81e9007a10771a25e131cf380b9e2337f668086b4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+Section 1: Dimensional fourth-root compression (retained dependency)
+  PASS: (B1) alpha = 1/d solves [C_M * f^alpha] = 1 given [f] = d
+  PASS: (B1) at d=4, alpha = 1/4 uniquely among positive integers
+
+Section 2: Riemann-Dirichlet triple coincidence (retained dependency)
+  PASS: (B2) R_lat(c=3) = 7/8
+  PASS: (B2) eta(4)/zeta(4) = 7/8
+  PASS: (B2) 2^(d-2) = d unique at d=4
+  PASS: (B2) triple simultaneity holds only at d=4 (d in [2,11])
+
+Section 3: alpha_LM geometric-mean identity (retained dependency)
+  PASS: (B4) alpha_LM^2 = alpha_bare * alpha_s(v) (symbolic)
+  PASS: (B4) log alpha_LM = (log alpha_bare + log alpha_s(v))/2
+  PASS: (B4) alpha_LM/alpha_bare = alpha_s(v)/alpha_LM = 1/u_0
+
+Section 4: EW gauge-mass diagonalization (retained dependency)
+  PASS: (B6) M_W = g v / 2 from |D_mu H|^2 at <H>
+  PASS: (B6) M_Z = sqrt(g^2 + g_Y^2) v / 2
+  PASS: (B6) rho_tree = M_W^2 / (M_Z^2 cos^2(theta_W)) = 1
+  PASS: (B6) e = g sin(theta_W) = g_Y cos(theta_W) algebraically
+
+Section 5: Dimension counting of v_hierarchy
+  PASS: (B5) [M_Pl] = 1 (C1)
+  PASS: (B5) [(7/8)^(1/4)] = 0
+  PASS: (B5) [alpha_LM^16] = 0
+  PASS: (B5) [v_hierarchy] = 1 in mass units
+
+Section 6: Canonical-surface evaluation (illustrative, not load-bearing)
+  PASS: (illustrative) u_0 = <P>^(1/4) ≈ 0.877681
+  PASS: (illustrative) alpha_LM ≈ 0.0906684
+  PASS: (illustrative) (7/8)^(1/4) ≈ 0.967168
+  PASS: (illustrative) v_hierarchy ≈ 246.2828 GeV
+  PASS: (illustrative) deviation from v_obs ≈ +0.0255%
+
+Section 7: Curve-fit defense (Boundaries §5.1)
+  PASS: (§5.1) continuous N fit ≈ 16.0001 under (7/8)^(1/4) prefactor
+  PASS: (§5.1) overshoot at integer N=16, no prefactor: ≈ +3.42%
+  PASS: (§5.1) (7/8)^(1/4) ≈ 0.9672 absorbs ≈ 3.28% downward
+  PASS: (§5.1) knob 1: M_red factor = 1/sqrt(8 pi) ≈ 0.1995
+  PASS: (§5.1) knob 2: three-coupling factor-67 spread at N=16
+  PASS: (§5.1) alternative alpha_bare^16: v_pred ≈ 30.5 GeV (factor 0.124)
+  PASS: (§5.1) alternative alpha_s(v)^16: v_pred ≈ 1987 GeV (factor 8.07)
+  PASS: (§5.1) knob 3: (7/8)^(1/16) shifts v_pred by +2.56%
+
+========================================================================
+TOTAL: PASS=30 FAIL=0
+VERDICT: bridge passes; under C1-C4, the dimension-one hierarchy-formula output is consistently assigned to the EW Higgs VEV parameter on the canonical surface; package-level closure remains bounded by the four named admitted-context inputs; the 0.0255% canonical-surface match remains a bounded numerical match, not a derived theorem.
+
+----- stderr -----
+

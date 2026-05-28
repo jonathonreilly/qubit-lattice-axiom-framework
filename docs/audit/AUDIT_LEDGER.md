@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 570 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1176 |
+| unaudited | 1175 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 870 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1406 |
+| `unaudited` | 1405 |
 
 | claim_type | count |
 |---|---:|
@@ -999,6 +999,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `assumption_derivation_ledger` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1624,6 +1625,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The exact R_conn repair closes only as F_adj=(3^2-1)/3^2=8/9 with the physical selector left conditional by the retained no-go dependency. The remaining ingredient status rows are not directly wired to retained-grade authorities in the restricted packet.
 - **rationale:** Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency.
 - **auditor confidence:** high
+
+### `asymmetry_persistence_collapse_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** N=80 qualitative observation only: nonzero persistence thresholds show lower unitary pur_min versus baseline, including the layernorm lane; stochastic-collapse rows do not show a uniform detector-purity lowering versus baseline. N=100 rows and the N=100 layernorm-assisted pocket are out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `carver-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-asymmetry-persistence-collapse`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The note's claim that asymmetry-persistence is a unitary decoherence aid at N=80 and is not a generic stochastic-collapse rescue at N=80.  _(class `C`)_
+- **chain closes:** False — The completed N=80 stdout supports the scoped qualitative direction, but the source itself places the regulated-propagator and pruning-rule closure in admitted-context helper imports, and the row has no direct retained or accepted-premise dependency edges for those helpers.
+- **rationale:** Issue: the N=80 qualitative table supports lower unitary pur_min only at the nonzero persistence thresholds, while the helper closure bracket for the generator, pruning rule, regulated propagator, and purity machinery is not wired as retained or accepted authority. Why this blocks: without those dependency edges, a clean bounded verdict would retain a computed observation whose load-bearing machinery is explicitly admitted-context rather than closed in the audit graph. Repair target: add retained or explicitly admitted authority for the three helper surfaces and clarify the thr=0.00 control wording. Claim boundary until fixed: the completed N=80 stdout locally supports the narrow qualitative observation, but N=100 rows and any collapse-pocket claim remain out of scope and the row stays conditional.
+- **open / conditional deps cited:**
+  - `scripts/asymmetry_persistence_pilot.py`
+  - `scripts/gap_topological_asymmetry.py`
+  - `scripts/gap_topological_asymmetry_layernorm_combo.py`
+- **auditor confidence:** medium
 
 ### `asymmetry_persistence_joint_card_note`
 

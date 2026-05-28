@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1236
+**Total pending:** 1235
 **Ready (all deps already at retained-grade or metadata tiers):** 61
 
 By criticality:
-- `critical`: 237
+- `critical`: 236
 - `high`: 339
 - `medium`: 335
 - `leaf`: 325
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | audit_in_progress | critical | 489 | 13.44 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_wilson_bz_corner_hamming_staircase.py` |
+| 1 | `higgs_mass_from_axiom_note` | bounded_theorem | unaudited | critical | 486 | 24.93 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/higgs_tree_level_mean_field_runner_2026_05_03.py` |
 | 2 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | unaudited | critical | 377 | 16.56 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` |
 | 3 | `gravity_clean_derivation_note` | bounded_theorem | unaudited | critical | 280 | 17.63 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 4 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | audit_in_progress | critical | 251 | 9.48 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_relativistic_dof_finite_inventory.py` |

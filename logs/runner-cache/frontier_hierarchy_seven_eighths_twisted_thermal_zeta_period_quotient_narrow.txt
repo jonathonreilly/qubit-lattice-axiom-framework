@@ -1,11 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow.py
-runner_sha256: 56859a45998e8b635836ea832e7ba4b47ea5c22d5ad0bc8e6ba05ba33ef1fe9b
+runner_sha256: 66bb03f08c393349c04d5641922ad9895cd22da9763b9fe6d87063952288b928
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
+
+----------------------------------------------------------------------------------------
+Part 0: Matsubara frequency rescaling (load-bearing trace step T0)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T0a: bosonic (2 pi n/beta)^(-s) * (2 pi/beta)^s = n^(-s) symbolic (beta-free)  (dimensionless bosonic Matsubara trace -> zeta(s), general symbolic beta)
+  [PASS (A)] T0b: fermionic ((2m+1) pi/beta)^(-s) * (pi/beta)^s = (2m+1)^(-s) symbolic (beta-free)  (dimensionless APBC Matsubara trace -> lambda(s), general symbolic beta)
+  [PASS (A)] T0c: as-written bosonic factor (beta/2pi)^s leaves residual beta-dependence (rejected)  (audit objection: reciprocal factor wrong-direction; corrected factor is unique)
+  [PASS (A)] T0d: as-written fermionic factor (beta/2pi)^s * 2^s leaves residual beta-dependence (rejected)  (audit objection: reciprocal factor wrong-direction; corrected factor (pi/beta)^s is unique)
+  [PASS (A)] T0e: rescaled bosonic trace at beta=3!=2pi reproduces zeta(4); as-written factor fails  (40-digit mpmath nsum (convergence-accelerated), dimensionless-trace check of eq (1))
+  [PASS (A)] T0f: rescaled fermionic trace at beta=3!=2pi reproduces lambda(4); as-written factor fails  (40-digit mpmath nsum (convergence-accelerated), dimensionless-trace check of eq (2))
 
 ----------------------------------------------------------------------------------------
 Pattern A narrow theorem: 7/8 twisted thermal-zeta period quotient
@@ -89,7 +99,7 @@ Part 14: D2 collapse honesty acknowledgement (T14)
   [PASS (A)] T14: D2 disclosure printed and W6/W3 arithmetic equality verified  (explicit honesty disclosure of section 0 of source note)
 
 ========================================================================================
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=24 FAIL=0
 ========================================================================================
 
 VERDICT: 7/8 twisted thermal-zeta period quotient narrow theorem passes.

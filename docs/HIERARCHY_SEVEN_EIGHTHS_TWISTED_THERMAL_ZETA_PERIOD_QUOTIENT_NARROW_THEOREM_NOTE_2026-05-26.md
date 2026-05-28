@@ -77,18 +77,34 @@ share.
 > - fermionic APBC modes: `ω_n^(F) = (2n + 1) π / β`, `n ∈ ℤ`.
 >
 > Define for `Re(s) > 1` the two generalized thermal zeta-function
-> single-circle traces (per spatial mode, in units `β = 2π`):
+> single-circle traces (per spatial mode). A spectral trace
+> `Σ ω_n^(-s)` over Matsubara frequencies carries mass-dimension
+> `-s`; to obtain the dimensionless period quotient one must
+> measure each `ω_n` in units of the relevant fundamental Matsubara
+> frequency. The bosonic ladder has fundamental spacing
+> `ω_1^(B) = 2π/β`, so the dimensionless bosonic trace divides each
+> mode by `2π/β` (equivalently, multiplies `ω_n^(-s)` by the
+> rescaling factor `(2π/β)^s`), giving the integer ladder `n`. The
+> APBC fermionic frequencies `(2n+1)π/β` are integer multiples of the
+> natural frequency unit `π/β` (half the bosonic unit; the value that
+> turns the odd-mode ladder into the integers `2n+1`), so the
+> dimensionless fermionic trace divides each mode by `π/β` (i.e.
+> multiplies `ω_n^(-s)` by `(π/β)^s`):
 >
 > ```text
-> ζ_B(s)  :=  Σ_{n ≥ 1} (2π n / β)^(-s) · (β / 2π)^s
+> ζ_B(s)  :=  Σ_{n ≥ 1} (2π n / β)^(-s) · (2π / β)^s
 >          =  Σ_{n ≥ 1} 1 / n^s   =   ζ(s),                            (1)
 >
-> ζ_F(s)  :=  Σ_{n ≥ 0} ((2n + 1) π / β)^(-s) · (β / 2π)^s · 2^s
+> ζ_F(s)  :=  Σ_{n ≥ 0} ((2n + 1) π / β)^(-s) · (π / β)^s
 >          =  Σ_{n ≥ 0} 1 / (2n + 1)^s   =   λ(s),                     (2)
 > ```
 >
 > where `ζ(s)` is the Riemann zeta and `λ(s) = Σ_{n ≥ 0} 1/(2n+1)^s` is
-> the Dirichlet lambda function.
+> the Dirichlet lambda function. The rescaling factor is the
+> reciprocal `(2π/β)^s` (resp. `(π/β)^s`) of the dimensionful
+> mode-scale `(β/2π)^(-s)` (resp. `(β/π)^(-s)`); both traces are then
+> exactly `β`-independent (dimensionless), so the period quotient
+> below is a pure number.
 >
 > Then the **APBC/PBC twisted thermal-zeta period quotient** at integer
 > `s = d ≥ 2` satisfies the exact rational identity (at `d = 4`):
@@ -166,9 +182,14 @@ is
 ```
 
 So the **half-period-twisted Hurwitz sum** equals `2^s · λ(s)` exactly.
-Equivalently, the **APBC Matsubara fermion sum** (after pulling out
-the `β / 2π` rescaling) is the Hurwitz zeta at twist `a = 1/2`,
-divided by `2^s`.
+Equivalently, the **dimensionless APBC Matsubara fermion sum**
+`ζ_F(s)` of (2) — formed by multiplying `ω_n^(F) = (2n+1)π/β` modes
+by the rescaling factor `(π/β)^s`, i.e. measuring each mode in units
+of the fermionic fundamental spacing `π/β` — is exactly `λ(s)`, the
+Hurwitz zeta at twist `a = 1/2` divided by `2^s`:
+`ζ_F(s) = ζ(s, 1/2) / 2^s = λ(s)`. The reciprocal rescaling factor
+`(π/β)^s` cancels the dimensionful `(β/π)^(-s) = (π/β)^s` carried by
+`ω_n^(F)`, leaving a `β`-independent pure number.
 
 ### 2.3 Combining the splits
 
@@ -199,10 +220,13 @@ a free field on `S¹_β × M³`, the one-loop effective action carries
 the trace of the heat-kernel `K(τ) = tr e^(-τ D)` where `D` is the
 Euclidean Laplacian. Zeta-regularizing along the thermal circle
 amounts to summing over the discrete Matsubara momenta — `2πn/β`
-(PBC, bosonic) or `(2n+1)π/β` (APBC, fermionic). At the spectral
-exponent `s = d` (here `d = 4`), the difference between fermionic
-and bosonic zeta sums per spatial mode is exactly the rational
-factor `1 − 2^(1 − s)`. This is the textbook generalized-thermal-zeta
+(PBC, bosonic) or `(2n+1)π/β` (APBC, fermionic) — each measured in
+units of its fundamental ladder spacing (`2π/β` bosonic, `π/β`
+fermionic) so the resulting spectral trace is dimensionless and
+`β`-independent. At the spectral exponent `s = d` (here `d = 4`),
+the difference between the dimensionless fermionic and bosonic zeta
+sums per spatial mode is exactly the rational factor `1 − 2^(1 − s)`.
+This is the textbook generalized-thermal-zeta
 result of Cognola-Zerbini and the Camporesi-Higuchi tradition;
 here it is recorded with the framework's `S¹_β × Z³` substrate as
 the relevant thermal manifold. ∎
@@ -299,6 +323,19 @@ PYTHONPATH=scripts python3 scripts/frontier_hierarchy_seven_eighths_twisted_ther
 The runner verifies, at exact rational precision via Python `Fraction`
 and `sympy`, plus 40-digit `mpmath` numerics:
 
+0. **T0 (Matsubara rescaling).** The load-bearing trace step (1)-(2):
+   that the rescaled bosonic and fermionic Matsubara spectral traces
+   are exactly `β`-independent (dimensionless) and reduce to `ζ(s)`
+   and `λ(s)` respectively. Verified three ways: (a) symbolically with
+   general positive symbolic `β`, the per-term factors
+   `(2πn/β)^(-s)·(2π/β)^s = n^(-s)` and
+   `((2n+1)π/β)^(-s)·(π/β)^s = (2n+1)^(-s)` simplify `β`-free; (b) the
+   wrong-direction reciprocal factor `(β/2π)^s` is shown to leave a
+   residual `β`-dependence (so the corrected factor is the unique one
+   making the trace dimensionless); (c) 40-digit `mpmath`
+   convergence-accelerated (`nsum`) evaluation of the rescaled traces
+   at `β = 3 ≠ 2π` and `s = 4` reproduces `ζ(4)` and `λ(4)` to
+   `1e-25`, while the as-written reciprocal factor does not.
 1. **T1.** Riemann zeta odd-tail split:
    `ζ(s) = λ(s) + 2^(-s) ζ(s)` symbolically and at `s ∈ {2, 3, 4, 5}`.
 2. **T2.** Dirichlet lambda closed form:
@@ -339,7 +376,8 @@ and `sympy`, plus 40-digit `mpmath` numerics:
     derivation route" so the audit trail records the honesty
     disclosure of §0.
 
-Target PASS = 18, FAIL = 0 (T1 expands to T1 symbolic + T1b at four integer
+Target PASS = 24, FAIL = 0 (T0 expands to six Matsubara-rescaling
+checks T0a-T0f; T1 expands to T1 symbolic + T1b at four integer
 values of s).
 
 ## 9. Independent audit handoff

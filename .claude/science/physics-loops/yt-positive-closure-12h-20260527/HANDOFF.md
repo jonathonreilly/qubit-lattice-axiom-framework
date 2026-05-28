@@ -25,6 +25,12 @@ C3 route.
 This is an exact negative boundary only. No `POSITIVE_CLOSURE` marker was
 written. Retained/proposed-retained wording remains disallowed.
 
+Cycle 16 science commit:
+
+```text
+48bd8ae93b53c055ecbc7ba82de05e2ac9c47ecb
+```
+
 Cycle 16 artifacts:
 
 - `docs/YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`

@@ -64843,6 +64843,18 @@
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
       "title": "L\u00fcders Sequential-Product Conditional Bridge (Narrow)"
     },
+    "m2_tensor_d4_dimension_256_bounded_note_2026-05-26": {
+      "claim_id": "m2_tensor_d4_dimension_256_bounded_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "ee5bbf311e3d1e7584b09a6bc32d4807cd57b1caeceb8891c663dc5d11ad37a5",
+      "path": "docs/M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_m2_tensor_d4_dimension_256_bounded.py",
+      "title": "`M_2(C)^\u22974` Dimension 256 Bounded Note"
+    },
     "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28": {
       "claim_id": "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28",
       "claim_type_author_hint": "bounded_theorem",
@@ -86276,6 +86288,7 @@
     "local_zsym_predictor_note",
     "localized_source_response_sweep_note_2026-05-17",
     "lorentz_violation_derived_note",
+    "m2_tensor_d4_dimension_256_bounded_note_2026-05-26",
     "main_open_cubic_validation_2026-04-11",
     "massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28",
     "matched_2d_4d_decoherence_note",
@@ -86651,7 +86664,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 655,
+      "bounded_theorem": 656,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86660,7 +86673,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1065,
+      "bounded_theorem": 1066,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86669,9 +86682,9 @@
       "positive_theorem": 592
     },
     "edge_count": 9871,
-    "leaf_count": 816,
-    "node_count": 2593,
-    "root_count": 865,
-    "runners_with_path": 2168
+    "leaf_count": 817,
+    "node_count": 2594,
+    "root_count": 866,
+    "runners_with_path": 2169
   }
 }

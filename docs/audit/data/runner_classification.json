@@ -14736,6 +14736,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_luders_sequential_product_conditional_bridge.py"
     },
+    "m2_tensor_d4_dimension_256_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_m2_tensor_d4_dimension_256_bounded.py"
+    },
     "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28": {
       "assert_count": 1,
       "counts": {
@@ -43063,6 +43075,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_m2_tensor_d4_dimension_256_bounded.py": {
+      "assert_count": 1,
+      "claims": [
+        "m2_tensor_d4_dimension_256_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_mass_mixing_disjointness_theorem.py": {
       "assert_count": 1,
       "claims": [
@@ -57231,12 +57258,12 @@
     "dominant_class_distribution": {
       "A": 260,
       "B": 294,
-      "C": 765,
+      "C": 766,
       "D": 303,
       "none": 441
     },
-    "runners_classified": 2063,
-    "runners_with_C": 1001,
-    "runners_with_D": 604
+    "runners_classified": 2064,
+    "runners_with_C": 1002,
+    "runners_with_D": 605
   }
 }

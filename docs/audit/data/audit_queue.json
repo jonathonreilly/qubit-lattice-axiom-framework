@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 244,
     "high": 319,
-    "leaf": 290,
+    "leaf": 291,
     "medium": 314
   },
   "cycle_break_target_count": 0,
@@ -27080,6 +27080,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "m2_tensor_d4_dimension_256_bounded_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_m2_tensor_d4_dimension_256_bounded.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35394,6 +35416,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 39,
-  "total_pending": 1167
+  "ready_count": 40,
+  "total_pending": 1168
 }

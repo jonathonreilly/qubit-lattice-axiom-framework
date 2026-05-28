@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_m2_tensor_d4_dimension_256_bounded.py
+runner_sha256: f8e6d0d9e6a6b88a48b3cea28cf0b4f73536762df53a0784c240c0dcf71a5e20
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+M_2(C)^tensor4 dimension-256 bounded verifier
+PASS: dim_C(M_2(C)) = 4 by basis enumeration
+PASS: tensor-dimension induction gives dim_C(M_2(C)^tensor1) = 4^1 (value=4)
+PASS: tensor-dimension induction gives dim_C(M_2(C)^tensor2) = 4^2 (value=16)
+PASS: tensor-dimension induction gives dim_C(M_2(C)^tensor3) = 4^3 (value=64)
+PASS: tensor-dimension induction gives dim_C(M_2(C)^tensor4) = 4^4 (value=256)
+PASS: tensor-dimension induction gives dim_C(M_2(C)^tensor5) = 4^5 (value=1024)
+PASS: explicit tensor basis count at d=4 is 256
+PASS: explicit tensor basis rank at d=4 is 256 (rank=256)
+PASS: M_2(C)^tensor4 acts on C^16 (shape=(16, 16))
+PASS: dim_C(M_16(C)) = 16^2 = 256
+PASS: reciprocal bookkeeping value is exactly 1/256
+PASS: does not derive d=4; d=4 is the bounded parameter
+PASS: does not consume PDG values or mass-scale observations
+PASS: does not derive a lepton mass scale
+PASS=14 FAIL=0
+
+----- stderr -----
+

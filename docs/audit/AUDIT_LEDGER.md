@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 580 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1157 |
+| unaudited | 1156 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 882 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1387 |
+| `unaudited` | 1386 |
 
 | claim_type | count |
 |---|---:|
@@ -1017,6 +1017,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1904,6 +1905,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `Gcrit_0.011_not_sampled_or_reproduced_by_live_runner`
   - `field_strength_dependence_rows_s_0.001_and_s_0.016_not_present_in_current_runner`
   - `high_G_live_runner_shows_unstable_away_behavior_not_smooth_threshold_table`
+- **auditor confidence:** high
+
+### `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`
+
+- **Note:** [`BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional admission-bridge arithmetic only: given the explicit imported P1-P4 premise packet plus the analytic Planck photon-density factor, the eta_10 to Omega_b h^2 conversion lands within the stated tolerance of the Cyburt-Fields-Olive-Yeh 2016 coefficient. This does not derive or promote the coefficient, P1-P4, or any downstream cosmology row.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `banach-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-bbn-eta10-coefficient-admission-bridge`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The bridge multiplies the analytic 2*zeta(3)/pi^2 photon-density factor by imported T_CMB/constants, proton mass, critical-density normalization, and Cyburt convention/residual normalization, then compares Omega_b h^2/eta_10 to 3.6515e-3.  _(class `B`)_
+- **chain closes:** False — The arithmetic and source firewall close only as a conditional admission bridge. The imported P1-P4 packet, including the Cyburt convention/residual normalization, is not retained-grade or registry-accepted authority in this row.
+- **rationale:** The runner cache and local rerun both report PASS=29 FAIL=0, and the independent check agrees that 2*zeta(3)/pi^2 gives the Planck photon-density factor and the supplied constants produce 3.656085e-03, within the row's 0.2% tolerance of 3.6515e-3. The result still depends on explicit imported premises P1-P4 and on an admitted Cyburt convention/residual normalization, so the chain does not close as retained bounded science. No-go-discipline scope check: this verdict does not claim those imports are irreducible walls or that alternative derivation routes are impossible; it only records that this packet has not retired them.
+- **open / conditional deps cited:**
+  - `P1 proton rest mass derivation/status`
+  - `P2 present-day CMB temperature derivation/status`
+  - `P3 critical density unit rho_crit/h^2, including H_100/G normalization`
+  - `P4 Cyburt convention/residual normalization, including photon entropy/e+e-/neutrino-decoupling convention`
+  - `parent cosmology cascade status`
 - **auditor confidence:** high
 
 ### `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10`

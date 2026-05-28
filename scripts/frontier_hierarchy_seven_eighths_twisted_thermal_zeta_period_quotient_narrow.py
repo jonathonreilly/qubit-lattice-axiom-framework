@@ -16,6 +16,25 @@ uses the Hurwitz-zeta twist  zeta(s, 1/2) = 2^s lambda(s)  on the
 thermal circle S^1_beta corresponding to APBC fermion modes
 omega_n = (2n+1)pi/beta.
 
+CORRECTED MATSUBARA NORMALIZATION (2026-05-28).
+An earlier revision quoted the dimensionless Matsubara rescalings with
+the RECIPROCAL scale factor (it multiplied (omega_n)^(-s) by (beta/2pi)^s,
+a power of TIME = mu^(-s)), so the rescaled traces were NOT dimensionless
+and did not equal zeta(s)/lambda(s) as written. The auditor flagged this:
+  (2pi n/beta)^(-s)*(beta/2pi)^s = (beta/2pi)^(2s)*n^(-s)  !=  n^(-s).
+The correct, non-reciprocal convention divides each Matsubara tower by
+ITS OWN fundamental frequency (mu_B = 2pi/beta for PBC, mu_F = pi/beta
+for APBC), i.e. the summand is (omega_n/mu)^(-s) with mu a FREQUENCY, so
+the rescaling factor is mu^(+s):
+  zeta_B(s) = sum_{n>=1} (2pi n/beta)^(-s) * (2pi/beta)^s   = zeta(s),
+  zeta_F(s) = sum_{n>=0} ((2n+1)pi/beta)^(-s) * (pi/beta)^s = lambda(s).
+T15-T17 below verify this corrected rescaling bridge (the part the
+earlier runner never checked). The closed-form quotient
+Q(s) = 1 - 2^(1-s) is unchanged. Because the sector-native
+dimensionless-reference choice (zeta_B = zeta, zeta_F = lambda) is a
+conditioning convention, the claim is a bounded_theorem (conditional),
+not an unconditional positive theorem.
+
 This is the W6 derivation-route witness for the
 HIERARCHY_SEVEN_EIGHTHS_QUARTER_FERMION_BOSON_SCALE_CONVERSION_BRIDGE
 parent bridge note. The arithmetic collapses onto W3
@@ -24,10 +43,12 @@ section 0 of the source note. No new arithmetic fact; only a
 different derivation chain (Hurwitz-zeta twist vs Fermi-Dirac
 integral).
 
-Pure class-A rational-arithmetic + classical analytic-number-theory
-identity. No framework axiom or admission is consumed.
+Class-A arithmetic core (rational-arithmetic + classical analytic-
+number-theory identity); one conditioning input, the sector-native
+dimensionless-reference convention zeta_B = zeta, zeta_F = lambda. No
+framework axiom or observational input is consumed.
 
-Target: PASS = 18, FAIL = 0.
+Target: PASS = 21, FAIL = 0.
 """
 
 from __future__ import annotations
@@ -493,6 +514,147 @@ check(
 )
 
 
+# ----------------------------------------------------------------------------
+section("Part 15: Corrected Matsubara rescaling bridge (T15) — eq. (1)-(2)")
+# Statement: with the CORRECT, non-reciprocal convention (each tower divided
+# by its OWN fundamental frequency mu, summand = (omega_n/mu)^(-s), so the
+# rescaling factor is mu^(+s)), the dimensionless summands reduce exactly to
+# n^(-s) and (2n+1)^(-s), giving zeta_B = zeta(s) and zeta_F = lambda(s).
+# This is the load-bearing bridge the earlier revision quoted with the
+# RECIPROCAL factor (beta/2pi)^s and that the prior runner never checked.
+# Verified symbolically with beta, n, s free positive symbols (so the result
+# holds identically in beta -- the traces are genuinely dimensionless).
+# ----------------------------------------------------------------------------
+
+def t15_corrected_rescaling_symbolic() -> bool:
+    n, s, beta = sp.symbols("n s beta", positive=True)
+    # Bosonic PBC: omega_n = 2*pi*n/beta, reference mu_B = 2*pi/beta.
+    omega_B = 2 * sp.pi * n / beta
+    mu_B = 2 * sp.pi / beta
+    boson_summand = omega_B ** (-s) * mu_B ** s  # = (omega_B/mu_B)^(-s)
+    if simplify(boson_summand - n ** (-s)) != 0:
+        return False
+    # Fermionic APBC: omega_n = (2n+1)*pi/beta, reference mu_F = pi/beta.
+    omega_F = (2 * n + 1) * sp.pi / beta
+    mu_F = sp.pi / beta
+    fermion_summand = omega_F ** (-s) * mu_F ** s  # = (omega_F/mu_F)^(-s)
+    if simplify(fermion_summand - (2 * n + 1) ** (-s)) != 0:
+        return False
+    return True
+
+
+check(
+    "T15: corrected dimensionless summands = n^(-s) and (2n+1)^(-s) symbolic",
+    t15_corrected_rescaling_symbolic(),
+    detail="(2pi n/beta)^(-s)*(2pi/beta)^s = n^(-s); ((2n+1)pi/beta)^(-s)*(pi/beta)^s = (2n+1)^(-s)",
+)
+
+
+# ----------------------------------------------------------------------------
+section("Part 16: Reciprocal-error guard + beta-independence (T16)")
+# Statement: (a) symbolically confirm the OLD factor (beta/2pi)^s is WRONG --
+# (2pi n/beta)^(-s)*(beta/2pi)^s = (beta/2pi)^(2s)*n^(-s) != n^(-s); (b)
+# numerically confirm the CORRECTED traces zeta_B, zeta_F are beta-independent
+# and equal zeta(4), lambda(4) at three distinct beta, while the old factor
+# gives a manifestly beta-dependent trace. This is the direct check of the
+# auditor's reported defect.
+# ----------------------------------------------------------------------------
+
+def t16_reciprocal_guard_and_beta_independence() -> bool:
+    n, s, beta = sp.symbols("n s beta", positive=True)
+    # (a) Old (buggy) bosonic factor (beta/2pi)^s does NOT give n^(-s):
+    omega_B = 2 * sp.pi * n / beta
+    old_boson = omega_B ** (-s) * (beta / (2 * sp.pi)) ** s
+    # It must EQUAL (beta/2pi)^(2s) * n^(-s) and must DIFFER from n^(-s).
+    if simplify(old_boson - (beta / (2 * sp.pi)) ** (2 * s) * n ** (-s)) != 0:
+        return False
+    if simplify(old_boson - n ** (-s)) == 0:
+        return False  # would mean the old factor was (wrongly) fine
+    # Old (buggy) fermionic factor (beta/2pi)^s * 2^s = (beta/pi)^s:
+    omega_F = (2 * n + 1) * sp.pi / beta
+    old_fermion = omega_F ** (-s) * (beta / (2 * sp.pi)) ** s * 2 ** s
+    if simplify(old_fermion - (beta / sp.pi) ** (2 * s) * (2 * n + 1) ** (-s)) != 0:
+        return False
+    if simplify(old_fermion - (2 * n + 1) ** (-s)) == 0:
+        return False
+
+    # (b) Numerical beta-independence of the CORRECTED traces at s=4.
+    mpmath.mp.dps = 40
+    s_val = 4
+    NB, NF = 6000, 6000
+    zeta4 = mpmath.zeta(s_val)
+    lam4 = lambda_numeric(s_val)
+    for beta_val in [mpmath.mpf("0.37"), mpmath.mpf("5.0"), 2 * mpmath.pi]:
+        mu_B = 2 * mpmath.pi / beta_val
+        mu_F = mpmath.pi / beta_val
+        zB = mpmath.fsum(
+            (2 * mpmath.pi * k / beta_val) ** (-s_val) * mu_B ** s_val
+            for k in range(1, NB)
+        )
+        zF = mpmath.fsum(
+            ((2 * k + 1) * mpmath.pi / beta_val) ** (-s_val) * mu_F ** s_val
+            for k in range(0, NF)
+        )
+        # Truncation tail of zeta(4)/lambda(4) past N~6000 is ~ 1e-11.
+        if abs(zB - zeta4) > mpmath.mpf("1e-9"):
+            return False
+        if abs(zF - lam4) > mpmath.mpf("1e-9"):
+            return False
+        # And the OLD factor would give a beta-dependent trace: at these
+        # three betas the old bosonic trace (beta/2pi)^(2s)*zeta(4) takes
+        # three different values, so it cannot equal zeta(4) at all three.
+        old_zB = (beta_val / (2 * mpmath.pi)) ** (2 * s_val) * zeta4
+        if beta_val != 2 * mpmath.pi and abs(old_zB - zeta4) < mpmath.mpf("1e-6"):
+            return False  # old trace accidentally dimensionless -> would be a bug in the guard
+    return True
+
+
+check(
+    "T16: old (beta/2pi)^s factor != n^(-s); corrected traces beta-independent = zeta(4),lambda(4)",
+    t16_reciprocal_guard_and_beta_independence(),
+    detail="direct check of auditor's reciprocal-normalization defect + dimensionlessness",
+)
+
+
+# ----------------------------------------------------------------------------
+section("Part 17: Common-reference Hurwitz cross-link (T17) — eq. (D')")
+# Statement: measuring the APBC tower against the COMMON bosonic reference
+# mu_B = 2pi/beta (instead of its own mu_F = pi/beta) gives
+# ((2n+1)pi/beta)^(-s)*(2pi/beta)^s = 2^s (2n+1)^(-s), whose sum is
+# 2^s lambda(s) = zeta(s,1/2) (Hurwitz). So zeta_F^common and the
+# sector-native zeta_F = lambda(s) differ by exactly (mu_B/mu_F)^s = 2^s.
+# This is where the 2^s of section 2.2 legitimately lives.
+# ----------------------------------------------------------------------------
+
+def t17_common_reference_hurwitz_link() -> bool:
+    n, s, beta = sp.symbols("n s beta", positive=True)
+    omega_F = (2 * n + 1) * sp.pi / beta
+    mu_B = 2 * sp.pi / beta
+    common_summand = omega_F ** (-s) * mu_B ** s  # = (omega_F/mu_B)^(-s)
+    # Must equal 2^s (2n+1)^(-s).
+    if simplify(common_summand - 2 ** s * (2 * n + 1) ** (-s)) != 0:
+        return False
+    # And the ratio of reference scales is (mu_B/mu_F)^s = 2^s.
+    mu_F = sp.pi / beta
+    if simplify((mu_B / mu_F) ** s - 2 ** s) != 0:
+        return False
+    # Numerically: common-reference fermionic trace = 2^s lambda(s) = zeta(s,1/2).
+    mpmath.mp.dps = 40
+    for s_val in [2, 3, 4, 5, 6]:
+        common_trace = mpmath.power(2, s_val) * lambda_numeric(s_val)
+        hurwitz = mpmath.zeta(s_val, mpmath.mpf("0.5"))
+        if abs(common_trace - hurwitz) > mpmath.mpf("1e-30"):
+            return False
+    return True
+
+
+check(
+    "T17: common-reference fermionic trace = 2^s (2n+1)^(-s) = 2^s lambda(s) = zeta(s,1/2)",
+    t17_common_reference_hurwitz_link(),
+    detail="the 2^s of section 2.2 is the reference-scale ratio (mu_B/mu_F)^s = 2^s",
+)
+
+
 # ============================================================================
 # Summary
 # ============================================================================
@@ -507,9 +669,14 @@ if FAIL > 0:
     sys.exit(1)
 
 print(
-    "\nVERDICT: 7/8 twisted thermal-zeta period quotient narrow theorem passes.\n"
-    "Q(s) = (2 lambda(s) - zeta(s)) / zeta(s) = 1 - 2^(1-s) = eta(s)/zeta(s);\n"
+    "\nVERDICT: 7/8 twisted thermal-zeta period quotient narrow bounded_theorem passes.\n"
+    "Corrected Matsubara normalization (T15-T17): dividing each Matsubara tower by\n"
+    "its OWN fundamental frequency (mu_B=2pi/beta, mu_F=pi/beta), with the reference\n"
+    "entering as mu^(+s) (NOT the reciprocal (beta/2pi)^s of the earlier revision),\n"
+    "gives the dimensionless, beta-independent traces zeta_B = zeta(s), zeta_F = lambda(s).\n"
+    "Then Q(s) = (2 lambda(s) - zeta(s)) / zeta(s) = 1 - 2^(1-s) = eta(s)/zeta(s);\n"
     "at integer s=4, Q(4) = 7/8 exactly; at any other integer d >= 2, Q(d) != 7/8.\n"
+    "Conditional on the sector-native reference convention (zeta_B=zeta, zeta_F=lambda).\n"
     "W6 supplies a derivation-route witness to the parent bridge note; the\n"
     "underlying arithmetic collapses onto W3 (eta(4)/zeta(4) = 7/8) — D2 caveat\n"
     "explicitly acknowledged in source note section 0."

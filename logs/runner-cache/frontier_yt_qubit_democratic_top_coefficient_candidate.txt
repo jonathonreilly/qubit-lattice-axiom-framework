@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py
+runner_sha256: 37a2ea85293c75b2b90eeb3f8549a30ccc01288968e32688211e206a66e3eb77
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+==============================================================================
+Y_T QUBIT DEMOCRATIC TOP-COEFFICIENT CANDIDATE
+==============================================================================
+
+Part 1: anchors and authority
+[PASS] docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
+[PASS] docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md exists
+[PASS] docs/YT_STRICT_SYMBOLIC_TOP_RESPONSE_ROW_PACKET_NOTE_2026-05-25.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Axiom-First Setup
+[PASS] note contains required section: Exact Mathematics
+[PASS] note contains required section: Why This Is New Science Rather Than The Old Trap
+[PASS] note contains required section: Relationship To Step 1
+[PASS] note contains required section: What Still Does Not Close
+[PASS] note contains required section: Firewalls
+[PASS] source-action support is retained_bounded
+[PASS] EW mass theorem is retained
+[PASS] minimal axioms are qubit-on-Z3 framed
+
+Part 2: democratic invariant vector
+[PASS] S6 transposition invariance forces all entries equal: {u1: u0, u2: u0, u3: u0, u4: u0, u5: u0}
+[PASS] democratic vector has unit norm: 1
+[PASS] component 0 amplitude is 1/sqrt(6): sqrt(6)/6
+[PASS] component 2 amplitude is 1/sqrt(6): sqrt(6)/6
+[PASS] component 5 amplitude is 1/sqrt(6): sqrt(6)/6
+
+Part 3: uniqueness under color-isospin democracy
+[PASS] democratic vector invariant under adjacent swap 0<->1
+[PASS] democratic vector invariant under adjacent swap 1<->2
+[PASS] democratic vector invariant under adjacent swap 2<->3
+[PASS] democratic vector invariant under adjacent swap 3<->4
+[PASS] democratic vector invariant under adjacent swap 4<->5
+[PASS] non-democratic vector breaks permutation invariance: Matrix([[1], [2], [1], [1], [1], [1]])
+
+Part 4: Step 1 boundary
+[PASS] candidate amplitude equals 1/sqrt(6): sqrt(6)/6
+[PASS] candidate is available as exact support
+[PASS] physical coefficient bridge remains open
+
+Part 5: firewalls
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: observed W/Z/top masses
+[PASS] firewall phrase present: PDG values
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: fitted selector
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: Status: retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: `y_33` is derived
+[PASS] forbidden overclaim absent: `y_t` is derived
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+
+wrote outputs/yt_qubit_democratic_top_coefficient_candidate_2026-05-25.json
+SUMMARY: PASS=42 FAIL=0
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 572 |
+| **retained_bounded** | 573 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1168 |
+| unaudited | 1167 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 873 |
+| `audited_clean` | 874 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1398 |
+| `unaudited` | 1397 |
 
 | claim_type | count |
 |---|---:|
@@ -995,6 +995,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15285,6 +15286,19 @@ Why this blocks: separate retained bounded status would duplicate a direct algeb
 Repair target: box this row under yt_ew_color_projection_theorem, or re-promote only if a future revision adds independent content beyond common-factor cancellation.
 Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero EW coupling rescaling is exact algebra, but it is decoration rather than an independent theorem.
 - **decoration parent:** `yt_ew_color_projection_theorem`
+- **auditor confidence:** high
+
+### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
+
+- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite signed-record support only: the Y_T product-RN primitive epsilon_x is realized as a local sharp Pauli-z projective signed readout, and the exponential RN family is unique under the stated smooth normalized-composition and origin-score semantics. This does not close a preferred physical Pauli axis, same-surface source/action authority, Higgs operator, scalar LSZ normalization, kappa_Y=0, y_t, or matching/running.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `meitner-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-yt-lsp-signed-record-source-readout`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** E_x = (+1)P_+(x) + (-1)P_-(x) = sigma_z(x), and d log R_h / d h_x |_{h=0} = epsilon_x, so the source score is the signed local projective readout.  _(class `A`)_
+- **chain closes:** True — The finite Pauli projector algebra, the retained bounded LSP projective measurement rule, and the retained bounded product-RN source-action support packet are sufficient to identify the signed source record with a native projective readout and to prove the stated RN-family uniqueness under the given source semantics.
+- **rationale:** The bounded support identity closes without importing physical Y_T closure. Independent check: P_+ and P_- are orthogonal idempotents summing to I, P_+ - P_- = sigma_z, and sigma_z has spectrum {-1,+1}; tensor-product site readouts commute and have outcome set {-1,+1}^Lambda. For R_h(epsilon)=exp(sum h_x epsilon_x)/Z(h), the h=0 uniform signed-record reference has zero mean, so d log R_h / d h_x at h=0 equals epsilon_x. The source-family uniqueness corollary is valid under the stated assumptions because normalized multiplication makes log-odds additive, smooth additive log-odds are linear, and the origin-score condition fixes the coefficients. The runner checks these algebraic/RN facts and the boundary firewalls with PASS=50 FAIL=0. Residual risk is downstream scope creep: this result does not select a physical Pauli axis or close Higgs/Yukawa/source-action authority.
 - **auditor confidence:** high
 
 ### `yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25`

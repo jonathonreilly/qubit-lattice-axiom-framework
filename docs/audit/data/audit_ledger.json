@@ -307718,24 +307718,52 @@
       "verdict_rationale": null
     },
     "yt_lsp_signed_record_source_readout_support_note_2026-05-24": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T06:02:23.778930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "For a finite qubit-lattice region and an explicitly chosen canonical projective-measurement Naimark/L\u00fcders dilation, the outcome-r Kraus operator is P_r and sequential composition with a later effect is P_r E P_r; no uniqueness of all instruments implementing the same POVM is audited.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited."
+        },
+        "dep_claim_type": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "a796ff28b71099137ffcc59118f2b240cabdfad5f6b54b5730b3963ce026ad01",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "meitner-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-yt-lsp-signed-record-source-readout",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite Pauli projector algebra, the retained bounded LSP projective measurement rule, and the retained bounded product-RN source-action support packet are sufficient to identify the signed source record with a native projective readout and to prove the stated RN-family uniqueness under the given source semantics.",
       "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
-      "claim_scope": null,
+      "claim_scope": "Finite signed-record support only: the Y_T product-RN primitive epsilon_x is realized as a local sharp Pauli-z projective signed readout, and the exponential RN family is unique under the stated smooth normalized-composition and origin-score semantics. This does not close a preferred physical Pauli axis, same-surface source/action authority, Higgs operator, scalar LSZ normalization, kappa_Y=0, y_t, or matching/running.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T06:02:23.778930+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -307745,19 +307773,19 @@
         "yt_source_action_support_packet_note_2026-05-22"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 2.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "E_x = (+1)P_+(x) + (-1)P_-(x) = sigma_z(x), and d log R_h / d h_x |_{h=0} = epsilon_x, so the source score is the signed local projective readout.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "88e90e0792fa2ef82cda75733e3eb017552198496b23451745b313b40be1cd03",
       "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Recheck only if downstream users broaden this beyond finite signed-readout carrier and RN-family uniqueness under source semantics; it does not close preferred physical Pauli axis, Higgs operator, scalar LSZ normalization, kappa_Y=0, y_t, or same-surface source/action authority.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -307822,18 +307850,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 16,
+        "B": 34,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 50
       },
       "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
       "title": "Y_T LSP Signed-Record Source-Readout Support Theorem",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "The bounded support identity closes without importing physical Y_T closure. Independent check: P_+ and P_- are orthogonal idempotents summing to I, P_+ - P_- = sigma_z, and sigma_z has spectrum {-1,+1}; tensor-product site readouts commute and have outcome set {-1,+1}^Lambda. For R_h(epsilon)=exp(sum h_x epsilon_x)/Z(h), the h=0 uniform signed-record reference has zero mean, so d log R_h / d h_x at h=0 equals epsilon_x. The source-family uniqueness corollary is valid under the stated assumptions because normalized multiplication makes log-odds additive, smooth additive log-odds are linear, and the origin-score condition fixes the coefficients. The runner checks these algebraic/RN facts and the boundary firewalls with PASS=50 FAIL=0. Residual risk is downstream scope creep: this result does not select a physical Pauli axis or close Higgs/Yukawa/source-action authority."
     },
     "yt_microscopic_schur_class_admissibility_note": {
       "audit_date": null,
@@ -313308,11 +313337,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.907,
+      "load_bearing_score": 9.907,
       "load_bearing_step": "The finite product RN source family R_h(epsilon) composes by source-field addition, has primitive one-site signed-record score at h=0, and is equivalent after normalization to the source-coupled site-diagonal action S_h = S_0 - sum_x h_x epsilon_x.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "faef6bc4e6246cab6d9dab404140936bd7f766c34ddf47852eaae3ca3e9924f3",
       "note_path": "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
       "notes_for_re_audit_if_any": "Re-audit if this row is cited as neutral EW/Higgs source/action authority, if strict physical-response artifacts appear, or if the source broadens beyond the finite RN/action support identity.",

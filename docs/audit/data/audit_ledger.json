@@ -102960,22 +102960,46 @@
       "verdict_rationale": "The load-bearing claim is narrowly bounded to the single-seed no-restore replay, and the inspected current output reports the same four rows and numerical values quoted in the note. No dependencies are required for this bounded computational table, and the safe-read language preserves the limitation that this is not a full generated-geometry or stability theorem. Residual risk is limited to the harness definition itself, not to a mismatch between the note and its frozen output."
     },
     "gate_b_nonlabel_connectivity_v1_distance_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T03:24:35.041888+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_nonlabel_connectivity_v1_note": "Bounded non-label connectivity V1 numerical comparison on the declared Gate-B h=0.5, W=10, NL=25, four-seed, z={3,4,5}, drift=0.2 scenario: the geometry-sector forward stencil preserves the far-field signature where naive KNN+floor fails; no universal non-label connectivity theorem, generated-geometry family theorem, or physical Gate-B closure is audited."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_nonlabel_connectivity_v1_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_nonlabel_connectivity_v1_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_nonlabel_connectivity_v1_note"
+        ],
+        "load_bearing_score": 7.524,
+        "runner_hash": "716a7e3cdc42958b672e2b68c11034b2a6b69a64f61b2091939b8fe2ecb814ac",
+        "transitive_descendants": 91
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gate-b-nonlabel-v1-distance-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current one-hop dependencies are retained-bounded, the cached output matches the frozen log, and independent log-log regression on the printed mean deltas reproduces the reported negative slopes and R^2 values. Stale source prose saying the deps were conditional is historical, not audit authority.",
       "claim_id": "gate_b_nonlabel_connectivity_v1_distance_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded h=0.5, W=10, NL=25, four-seed, z={3,4,5} distance-law companion comparing exact grid against no-restore geometry-sector stencil connectivity on the declared Gate-B V1 family; no universal non-label transfer, physical Gate-B closure, or gravity-readout theorem is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T03:24:35.041888+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -102984,19 +103008,19 @@
         "gate_b_farfield_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.524,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner reports that both exact grid and geometry-sector stencil rows are 12/12 TOWARD and have positive declining post-peak distance-law tails, with exact grid tail b^(-0.56), R^2=0.720, and geometry-sector stencil tail b^(-0.53), R^2=0.992.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "293be1481996cf92546b82a6af7dec71fbfdd65237c642463d47a32af9279dad",
       "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_DISTANCE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source broadens beyond the declared V1 distance-law companion, if runner/cache/log values change, or if downstream work cites this as physical Gate-B closure or a universal non-label distance-law theorem.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -103125,18 +103149,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 1
       },
       "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
       "title": "Gate B Non-Label Connectivity V1 Distance-Law Note",
       "transitive_descendants": 91,
-      "verdict_rationale": null
+      "verdict_rationale": "The row closes as a bounded finite-harness companion. The runner constructs the exact and no-restore geometry-sector families, propagates amplitudes, reports positive TOWARD counts for all 12 tested geometry-sector cases, and fits the post-peak distance-law tails rather than merely printing constants. Independent arithmetic on the frozen mean deltas gives slope -0.559/R^2 0.720 for exact grid and slope -0.531/R^2 0.992 for the geometry-sector stencil, matching the rounded source values. The clean scope is only this declared replay; full Gate B closure, physical-gravity readout, and universal non-label transfer remain unaudited."
     },
     "gate_b_nonlabel_connectivity_v1_h025_note": {
       "audit_date": null,
@@ -103464,11 +103489,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.129,
+      "load_bearing_score": 13.129,
       "load_bearing_step": "The harness compares exact grid, no-restore KNN+floor, and no-restore geometry-sector stencil connectivity at h=0.5 over the declared four-seed z={3,4,5} row, reporting 3/3 TOWARD for exact, 0/12 for KNN+floor, and 12/12 with F~M=1.00 for the geometry-sector stencil.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "51a52e205b2d21a91825d18304b17863d17515ebe04562d4c1fc18abeae90620",
       "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if the source broadens beyond this V1 candidate, if runner/cache values change, or if downstream work cites this as full generated-geometry or physical Gate-B closure.",

@@ -3,7 +3,7 @@
     "critical": 230,
     "high": 320,
     "leaf": 325,
-    "medium": 335
+    "medium": 334
   },
   "cycle_break_target_count": 4,
   "cycle_break_targets": [
@@ -16637,31 +16637,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_nonlabel_connectivity_v1_distance_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_nonlabel_connectivity_v1_note",
-        "gate_b_farfield_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.524,
-      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_DISTANCE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
-      "transitive_descendants": 91
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36535,6 +36510,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 58,
-  "total_pending": 1210
+  "ready_count": 57,
+  "total_pending": 1209
 }

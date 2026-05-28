@@ -87221,22 +87221,42 @@
       "verdict_rationale": "The provided source code performs an internal numerical computation over the lattice machinery and derives the sign antisymmetry, null cancellation, dipole flip, charge-scaling exponent, and screening attenuation values shown in stdout. The reported numbers are not hard-coded expected outputs, and no external comparator or cross-note value is imported. The clean verdict applies only to the narrow scalar sign-coupled construction as stated, not to any broader electromagnetic theory."
     },
     "electrostatics_grown_sign_law_audited_scope_narrow_bounded_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T07:24:35.071702+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "electrostatics_grown_sign_law_note": "Bounded fixed-runner scalar sign-law companion on the imported Gate-B grown-geometry helper row grow(drift=0.2, restore=0.7) for seeds [0,1], fixed field and no graph update: the registered runner reproduces the printed single-source, neutral same-point, like-pair, dipole, and double-charge delta_z sign table, exact printed neutral cancellation, and approximately linear +1/+2 charge response. No Maxwell theory, radiation derivation, electromagnetic field theory, geometry-generic theorem, or physical Gate-B closure is audited."
+        },
+        "dep_claim_type": {
+          "electrostatics_grown_sign_law_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "electrostatics_grown_sign_law_note": "retained_bounded"
+        },
+        "deps": [
+          "electrostatics_grown_sign_law_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "df64b1622b5a93bc39aad14c3cd5bb743d8c257104a11d9d0fc579271f70a96a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-electrostatics-grown-sign-law-audited-scope-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded single-grown-row scope, the registered runner and helper source are present, the direct parent is retained-bounded for the same imported grown row, and independent arithmetic from the runner stdout confirms all numeric thresholds.",
       "claim_id": "electrostatics_grown_sign_law_audited_scope_narrow_bounded_note_2026-05-10",
-      "claim_scope": null,
+      "claim_scope": "Bounded fixed-runner scalar sign-law threshold gate on the imported Gate-B grown-geometry helper row grow(drift=0.2, restore=0.7) for seeds [0,1], fixed field, no graph update, one source layer, and final-layer centroid readout. Closes only reproduction of the printed delta_z sign table, neutral cancellation, antisymmetry, and approximate +1/+2 charge linearity under explicit thresholds; no geometry-generic theorem, Maxwell/EM/radiation claim, or physical Gate-B closure is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T07:24:35.071702+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -87244,16 +87264,16 @@
         "electrostatics_grown_sign_law_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/gate_b_grown_joint_package.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The companion runner computes six mean delta_z source cases from the imported grown geometry and applies explicit sign, neutral-cancellation, antisymmetry, charge-linearity, and scope thresholds.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "06df5410bef95514297972e83520bf900d58f55c558b07b649b0bcd68c11fbea",
@@ -87262,18 +87282,19 @@
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 8,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 9
       },
       "runner_path": "scripts/frontier_electrostatics_grown_sign_law_audited_scope_pass_thresholds.py",
       "title": "Electrostatics Grown Sign-Law Audited-Scope Narrowing Bounded Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner does not merely print constants: it constructs source fields on the imported grow(drift=0.2, restore=0.7) geometry for seeds [0,1], propagates amplitudes, reads final-layer centroid shifts, and gates the resulting six source cases. Independent arithmetic on the reported deltas gives antisymmetry about 3.35e-05 < 1e-3 and a +2/+1 linearity error about 3.35e-05 < 5e-3, with the required signs and exact printed neutral cancellation. The clean verdict is only bounded: it ratifies the registered single-row threshold checks and does not promote a geometry-generic electrostatics theorem, Maxwell/radiation derivation, or first-principles closure of the grow generator beyond the retained-bounded input scope."
     },
     "electrostatics_grown_sign_law_note": {
       "audit_date": "2026-05-28T03:36:40.380722+00:00",
@@ -87326,11 +87347,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 7.67,
+      "load_bearing_score": 10.67,
       "load_bearing_step": "The SHA-pinned runner cache completes and reports: single +1 delta_z=-1.882286e-04 AWAY, single -1 delta_z=+1.882349e-04 TOWARD, neutral same-point +1/-1 delta_z=0, like pair +1/+1 delta_z=-2.556525e-04 AWAY, dipole +1/-1 delta_z=+3.137392e-05 TOWARD, double +2 delta_z=-3.764509e-04 AWAY, and charge exponent 1.000. The helper path is registered and supplies the grow(drift, restore, seed) geometry constructor.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "b76fd45b8e6917d5a5aba4a4208d36d639f7c2f8462225dd9846cb94235c0842",
       "note_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if this row is cited as full electromagnetism, Maxwell/radiation theory, physical Gate-B closure, or a geometry-generic sign-law theorem; if the source makes W, seed coverage, or helper geometry width load-bearing; if the runner's imported grow helper changes; or if the stale absolute artifact/status prose is edited in a way that broadens the claim.",

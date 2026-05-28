@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 230,
     "high": 317,
-    "leaf": 303,
+    "leaf": 302,
     "medium": 300
   },
   "cycle_break_target_count": 4,
@@ -26089,32 +26089,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "electrostatics_grown_sign_law_audited_scope_narrow_bounded_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "electrostatics_grown_sign_law_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/gate_b_grown_joint_package.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_electrostatics_grown_sign_law_audited_scope_pass_thresholds.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -35011,6 +34985,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 28,
-  "total_pending": 1150
+  "ready_count": 27,
+  "total_pending": 1149
 }

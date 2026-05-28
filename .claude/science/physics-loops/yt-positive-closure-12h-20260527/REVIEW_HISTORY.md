@@ -1,5 +1,39 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 40
+
+Scope:
+
+- physical source-panel current-gate firewall no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks the historical panel, current first-open gate, radial/strict dependencies, finite lambda witness, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/stale physical-source panel gate firewall; it prunes only importing the older panel as current closure proof. |
+| Imports / support | DISCLOSED | The panel is granted as historical support/planning, but it does not supply `lambda_top=1/sqrt(2)`, zero-singlet top-block law, accepted backend/matrix elements, or strict rows. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=94 FAIL=0`
+- Full stack runner: `PASS=530 FAIL=0`
+- Adjacent runners passed: C3 same-surface radial-factor no-go `PASS=94`,
+  Fisher/LSZ radial normalization no-go `PASS=105`, strict sparse availability
+  audit `PASS=74`, and legacy Hessian bridge firewall no-go `PASS=98`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 39
 
 Scope:

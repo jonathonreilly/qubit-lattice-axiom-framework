@@ -91,6 +91,9 @@ forbidden-input firewall.
 The thirty-ninth route tested whether the local legacy Hessian/UV
 bridge-selector stack is admissible as the current campaign's missing
 same-surface radial/backend law.
+The fortieth route tested whether the earlier physical source-law research
+panel synthesis is admissible as the current same-surface matrix-element
+proof.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -134,6 +137,7 @@ same-surface radial/backend law.
 | Real C3 irrep dimension top-block law | no-go shortcut test | 3 | Pruned: `P_nt` is the faithful two-dimensional real irrep, but selecting it as the physical top block imports an extra top-readout law, and `lambda_top` remains free |
 | Origin/main strict pole-row refresh | no-go remote-refresh audit | 3 | Pruned: fetched mainline has no named strict rows and no scanned Y_T output completing the strict positive packet |
 | Origin/main declared-anchor Y_T subchain | no-go forbidden-input firewall | 3 | Pruned: retained-bounded mainline algebra is over declared anchors forbidden or open in this campaign |
+| Physical source-law panel current-gate import | no-go stale-gate firewall | 3 | Pruned: the older source-law panel targets the former no-hidden-scale/mininfo source-intervention gate, not the current radial/readout/backend or strict pole-row certificate |
 
 ## Stuck Fan-Out
 

@@ -25,6 +25,15 @@
 | 21 | Strict W/Z denominator plus conditional C3 target-row splice | low | high | present | pruned; formal target readout imports same-surface and physical nontrivial top-line authority |
 | 22 | C3 RN/Fisher quotient/source geometry as radial generator normalization | low | high | present | pruned; fine and binary Fisher metrics are isometric, Fisher-unit score is a source-coordinate normalization, and `B_x` has no internal Fisher direction in `P_nt` |
 
+Queue refresh after the fortieth block: positive closure remains open. The
+earlier physical source-law research panel is not an allowed closure input for
+the current gate. It targets the former no-hidden-scale/minimum-information
+source-intervention theorem and does not supply `lambda_top=1/sqrt(2)`,
+zero-singlet physical top-block membership, accepted backend/projectors/source
+matrix elements, or strict top/W pole rows. The next exact action remains to
+derive new allowed same-surface radial/readout/backend laws or produce
+accepted strict top/W pole rows.
+
 Queue refresh after the thirty-ninth block: positive closure remains open.
 The legacy Hessian/UV bridge stack is not an allowed closure input for this
 campaign. It is bounded support over plaquette/u0, `alpha_LM`, old Ward-side

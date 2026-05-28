@@ -1,5 +1,12 @@
 # No-Go Ledger
 
+- New in the fortieth block: the earlier physical source-law research panel
+  synthesis cannot be imported as the current campaign's coefficient-bearing
+  same-surface matrix-element proof. It targets the former no-hidden-scale /
+  minimum-information source-intervention gate and does not supply
+  `lambda_top=1/sqrt(2)`, zero-singlet physical top-block membership,
+  accepted backend/projectors/source matrix elements, or strict top/W pole rows
+  with controls.
 - New in the thirty-ninth block: the legacy Hessian/UV bridge selector stack
   cannot be imported as proof input for this campaign's missing
   same-surface radial/backend law. The older bridge surfaces are bounded

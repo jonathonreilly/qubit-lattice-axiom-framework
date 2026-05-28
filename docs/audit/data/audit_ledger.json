@@ -303530,11 +303530,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 36.622,
+      "load_bearing_score": 37.622,
       "load_bearing_step": "The value kappa_EW = 0 is not selected by the Fierz fraction, by common rescaling, by the weak-angle preservation property, or by the historical numerical agreement after choosing that value.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "022edcd031e5ab176496b512925223b6841c50741c43ab62e3a9b98458af188e",
       "note_path": "docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
       "notes_for_re_audit_if_any": "Re-audit if a retained lattice-current selector theorem, convention-retirement theorem, or exact disconnected-current coefficient computation is added that fixes kappa_EW = 0 from accepted primitives.",
@@ -304778,24 +304778,46 @@
       "verdict_rationale": "The load-bearing step is a direct algebraic consequence of the channel definitions in the cited authority, whose effective status is retained-grade decoration. The runner source genuinely computes the relevant identity in Test 5 rather than hard-coding the contested conclusion. No-Go Discipline does not defeat the narrowed claim: possible escape routes through current construction, renormalization convention, connected-subtraction framing, V-fluctuation dynamics, or non-scalar improvement would address the broader M residual, not the tested scalar CMT factorization statement."
     },
     "yt_ew_matching_rule_m_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T03:01:49.208173+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yukawa_color_projection_theorem": "Pure SU(N_c) representation channel counting: N_c tensor N_c-bar decomposes as singlet plus adjoint, giving f_adj,dim = (N_c^2 - 1)/N_c^2 and 8/9 at N_c = 3, with no dynamical trace or physical Yukawa matching claim."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "no_go",
+          "yukawa_color_projection_theorem": "decoration"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yukawa_color_projection_theorem": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem",
+          "yukawa_color_projection_theorem"
+        ],
+        "load_bearing_score": 8.748,
+        "runner_hash": "a325d349a1ca2f3b4c934cbcb332ef414950138f07bed0544a5aa09357dafd57",
+        "transitive_descendants": 151
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-yt-ew-rule-m-current-packet-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The exact channel-count check gives dim(adj)/dim(full)=8/9, and the source/runner both verify that S1, S2, and S3 are only current-packet gaps, not closed universal walls. The N1-N8 no-go gate passes because five routes are named, wall inflation is avoided, hidden OZI/PDG/Higgs inputs are excluded, and future selector/convention/non-perturbative routes are explicitly left open.",
       "claim_id": "yt_ew_matching_rule_m_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Current-packet no-go boundary for EW matching rule M: the packet supplies exact F_adj=8/9 algebraic support at N_c=3 but does not supply a retained disconnected-current/OZI/selector theorem deriving exact physical R_conn=8/9 for EW matching rule M; no global finite-N_c or future-route no-go is audited.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T03:01:49.208173+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -304804,19 +304826,19 @@
         "yukawa_color_projection_theorem"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 8.748,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Within the current packet, F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3 is available as algebraic support, but no retained selector in the packet promotes that fraction to the physical EW matching rule M.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b005fb89e36996f10f3d14df5c255ee36a120da5c2e076cf91d5d042a736fff6",
       "note_path": "docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if a retained disconnected-current/OZI/current-selector theorem lands, if a convention ratifies kappa_EW=0, or if the source broadens beyond current-packet scope.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -304875,18 +304897,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 29,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 29
       },
       "runner_path": "scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py",
       "title": "YT EW Matching Rule M Current-Packet Boundary",
       "transitive_descendants": 151,
-      "verdict_rationale": null
+      "verdict_rationale": "The no-go is clean only at current-packet resolution. The retained no-go parent and the channel-fraction decoration supply the algebraic surface, while the repaired note avoids the historical overclaim that rule M is globally non-exact or that all future selector routes are closed. The retained result is therefore the narrow boundary: exact physical EW matching rule M is not derived by this packet."
     },
     "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25": {
       "audit_date": "2026-05-27T05:54:38.246722+00:00",
@@ -314403,11 +314426,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-      "load_bearing_score": 14.511,
+      "load_bearing_score": 18.511,
       "load_bearing_step": "The color bilinear representation decomposes as N_c tensor N_c-bar = 1 plus adj, so the adjoint representation-dimension fraction is (N_c^2 - 1)/N_c^2 and equals 8/9 at N_c = 3.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "3e47c2b7d5acb2528e574287a7c1c8eec0bbb2fbd3e7b4260a0cc0c9bfb85f31",
       "note_path": "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md",
       "notes_for_re_audit_if_any": "Re-check downstream uses to ensure the 8/9 representation-dimension fraction is not promoted into a dynamical trace or physical Yukawa matching coefficient without a separate bridge theorem.",

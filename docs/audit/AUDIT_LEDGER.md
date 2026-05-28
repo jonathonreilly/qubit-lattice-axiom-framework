@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 147 |
-| **retained_no_go** | 167 |
+| **retained_no_go** | 168 |
 | **retained_bounded** | 544 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1219 |
+| unaudited | 1218 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 842 |
+| `audited_clean` | 843 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1449 |
+| `unaudited` | 1448 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `minimal_axioms` | meta | critical | 1058 | 39.05 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 181 | 39.01 | `unaudited` | unaudited |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 714 | 37.98 | `unaudited` | unaudited |
-| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 556 | 36.62 | `audited_clean` | **retained_no_go** |
+| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 556 | 37.62 | `audited_clean` | **retained_no_go** |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1037 | 35.52 | `audited_clean` | **retained** |
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 937 | 34.87 | `audited_clean` | **retained** |
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 752 | 33.56 | `audited_clean` | **retained_bounded** |
@@ -964,6 +964,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -14578,6 +14579,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** Under scalar CMT factorization G_full = u_0 * G_V, both Fierz channels scale uniformly: S(G_full) = u_0^2 S(G_V) and C(G_full) = u_0^2 C(G_V).  _(class `A`)_
 - **chain closes:** True — The scoped no-go follows algebraically from the supplied Fierz definitions of S and C: both are quadratic in G, so multiplying G by u_0 multiplies both by u_0^2. The missing EW Wilson-line current construction remains open only for the broader matching rule M, not for this narrowed obstruction.
 - **rationale:** The load-bearing step is a direct algebraic consequence of the channel definitions in the cited authority, whose effective status is retained-grade decoration. The runner source genuinely computes the relevant identity in Test 5 rather than hard-coding the contested conclusion. No-Go Discipline does not defeat the narrowed claim: possible escape routes through current construction, renormalization convention, connected-subtraction framing, V-fluctuation dynamics, or non-scalar improvement would address the broader M residual, not the tested scalar CMT factorization statement.
+- **auditor confidence:** high
+
+### `yt_ew_matching_rule_m_note_2026-05-02`
+
+- **Note:** [`YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`](../../docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Current-packet no-go boundary for EW matching rule M: the packet supplies exact F_adj=8/9 algebraic support at N_c=3 but does not supply a retained disconnected-current/OZI/selector theorem deriving exact physical R_conn=8/9 for EW matching rule M; no global finite-N_c or future-route no-go is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop-yt-ew-rule-m-current-packet-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within the current packet, F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3 is available as algebraic support, but no retained selector in the packet promotes that fraction to the physical EW matching rule M.  _(class `A`)_
+- **chain closes:** True — The exact channel-count check gives dim(adj)/dim(full)=8/9, and the source/runner both verify that S1, S2, and S3 are only current-packet gaps, not closed universal walls. The N1-N8 no-go gate passes because five routes are named, wall inflation is avoided, hidden OZI/PDG/Higgs inputs are excluded, and future selector/convention/non-perturbative routes are explicitly left open.
+- **rationale:** The no-go is clean only at current-packet resolution. The retained no-go parent and the channel-fraction decoration supply the algebraic surface, while the repaired note avoids the historical overclaim that rule M is globally non-exact or that all future selector routes are closed. The retained result is therefore the narrow boundary: exact physical EW matching rule M is not derived by this packet.
 - **auditor confidence:** high
 
 ### `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`

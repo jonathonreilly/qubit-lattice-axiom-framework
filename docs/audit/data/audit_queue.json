@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 230,
     "high": 317,
-    "leaf": 323,
+    "leaf": 322,
     "medium": 300
   },
   "cycle_break_target_count": 4,
@@ -26089,32 +26089,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lanes.generated-geometry.readme",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_grown_joint_package_note",
-        "source_resolved_generated_architecture_bridge_note",
-        "emergent_geometry_growth_note_2026-04-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/lanes/generated-geometry/README.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_grown_joint_package.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lanes.ordered-lattice.readme",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35522,6 +35496,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 45,
-  "total_pending": 1170
+  "ready_count": 44,
+  "total_pending": 1169
 }

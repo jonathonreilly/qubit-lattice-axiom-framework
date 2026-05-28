@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1131 |
+| unaudited | 1130 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 74 |
+| ~~audited_conditional~~ | 75 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 893 |
-| `audited_conditional` | 74 |
+| `audited_conditional` | 75 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1361 |
+| `unaudited` | 1360 |
 
 | claim_type | count |
 |---|---:|
@@ -1078,6 +1078,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | D | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `retarded_field_harness_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11865,6 +11866,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Both one-hop dependencies are now retained-bounded, the runner cache is fresh for the current SHA and the direct runner output matches it, and the finite table supports the bounded phase-lag proxy scope. The result remains a configured replay of admitted DAG/field operators, not a derivation of physical delay, redshift, or wave dynamics.
 - **rationale:** This closes only at bounded-theorem grade. The source explicitly narrows the row to one retarded-blend parameter sweep, one fixed intermediate probe patch, and the mix=0 baseline check; it also denies broad gravitational-wave authority. The runner constructs the DAG, mass/probe patches, instantaneous Laplacian field, causal-sum blend, and propagated amplitudes rather than printing constants. Independent checks verified the table arithmetic: the base lag is zero, the base amplitude ratio is one, all rows use six seeds, nonzero mix rows have nonzero lag, and the largest absolute lag is the reported mix=0.25 value. The mix=0 recovery is exact by runner construction, so it is evidence for implementation consistency only, not an independent physical theorem.
 - **auditor confidence:** medium
+
+### `retarded_field_harness_note`
+
+- **Note:** [`RETARDED_FIELD_HARNESS_NOTE.md`](../../docs/RETARDED_FIELD_HARNESS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded retarded-field harness table: retarded versus instantaneous detector deflection, oscillating-source deflections for T=4,8,16, and tail-decay percentages on the fixed imposed-field harness, read alongside retained-bounded causality/delay/compact-refinement companion probes.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-retarded-field-harness-2026-05-27`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** The runner computes a sudden-turn-on retarded/instantaneous deflection comparison plus oscillating-source deflection and tail-decay rows on the fixed h=0.5, W=6, L=30, s=0.01, c=0.8 harness.  _(class `B`)_
+- **chain closes:** False — The runner output matches the note and the companion dependencies are retained_bounded for related finite retarded-field probes. The chain does not close as a retained theorem because this row synthesizes a frequency-fingerprint/branch-worth-keeping interpretation from a hand-imposed field model without a registered criterion that turns the one harness table plus companion probes into theorem-grade frequency-fingerprint authority.
+- **rationale:** The finite table is real: the cached runner computes the stated +0.026352 instantaneous and +0.020489 retarded deflections, the T=4/8/16 oscillating-source rows, and the tail-decay percentages. The companion rows support that retarded scheduling can be a bounded observable, but they do not supply a bridge from this hand-imposed field harness to a retained frequency-fingerprint theorem or full wave law. The correct retained use is the raw bounded table; the stronger branch-level synthesis remains conditional.
+- **auditor confidence:** high
 
 ### `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`
 

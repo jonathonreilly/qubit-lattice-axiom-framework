@@ -236202,8 +236202,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "The compact and refined families have mean inst-ret splits of -1.669200e-02 and -4.352319e-02, with retarded below instantaneous on 0/5 and 3/5 b-rows respectively, so the split survives but is not uniformly directional.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_conditional",
+      "max_descendant_status_rank": 10,
       "note_hash": "cead3fd039ed9a16b2493d584b4e54af04a25bdac091635e2342ac98951b69ac",
       "note_path": "docs/RETARDED_FIELD_COMPACT_REFINEMENT_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if promoted as a universal retarded-gravity law, a uniformly stable suppression theorem, or a broader family-class refinement theorem.",
@@ -236461,22 +236461,50 @@
       "verdict_rationale": "This closes only at bounded-theorem grade. The source explicitly narrows the row to one retarded-blend parameter sweep, one fixed intermediate probe patch, and the mix=0 baseline check; it also denies broad gravitational-wave authority. The runner constructs the DAG, mass/probe patches, instantaneous Laplacian field, causal-sum blend, and propagated amplitudes rather than printing constants. Independent checks verified the table arithmetic: the base lag is zero, the base amplitude ratio is one, all rows use six seeds, nonzero mix rows have nonzero lag, and the largest absolute lag is the reported mix=0.25 value. The mix=0 recovery is exact by runner construction, so it is evidence for implementation consistency only, not an independent physical theorem."
     },
     "retarded_field_harness_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T08:45:46.094402+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "retarded_field_causality_probe_note": "A bounded numerical probe comparing detector centroid shift under instantaneous versus retarded imposed fields on a four-seed compact generated 3D DAG family.",
+          "retarded_field_compact_refinement_note": "Two-family compact/refined retarded-field smoke probe showing the retarded and instantaneous detector-centroid rows remain different on both families, with nonzero mean split but row-sign-dependent behavior rather than uniform suppression.",
+          "retarded_field_delay_proxy_note": "Bounded compact retarded-field blend replay on the generated 3D DAG family with seeds=6, layers=18, nodes/layer=32, probe_layer=9, mass_layer=12, mass_count=8, K=5.0, and mix in {0.0,0.25,0.5,1.0}: the runner computes the declared intermediate-layer phase-lag table, mix=0 returns the instantaneous baseline exactly, and nonzero mix values produce nonzero finite phase-lag proxies. No gravitational-wave theory, universal redshift/delay law, physical gravity derivation, or moonshot-branch closure is audited."
+        },
+        "dep_claim_type": {
+          "retarded_field_causality_probe_note": "bounded_theorem",
+          "retarded_field_compact_refinement_note": "bounded_theorem",
+          "retarded_field_delay_proxy_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "retarded_field_causality_probe_note": "retained_bounded",
+          "retarded_field_compact_refinement_note": "retained_bounded",
+          "retarded_field_delay_proxy_note": "retained_bounded"
+        },
+        "deps": [
+          "retarded_field_causality_probe_note",
+          "retarded_field_compact_refinement_note",
+          "retarded_field_delay_proxy_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7abdd44b1e7fb601bc5fbce8c0ea19bd07414e11108f144618b865f38c054c22",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-retarded-field-harness-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner output matches the note and the companion dependencies are retained_bounded for related finite retarded-field probes. The chain does not close as a retained theorem because this row synthesizes a frequency-fingerprint/branch-worth-keeping interpretation from a hand-imposed field model without a registered criterion that turns the one harness table plus companion probes into theorem-grade frequency-fingerprint authority.",
       "claim_id": "retarded_field_harness_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded retarded-field harness table: retarded versus instantaneous detector deflection, oscillating-source deflections for T=4,8,16, and tail-decay percentages on the fixed imposed-field harness, read alongside retained-bounded causality/delay/compact-refinement companion probes.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T08:45:46.094402+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -236486,19 +236514,19 @@
         "retarded_field_compact_refinement_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "weak",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner computes a sudden-turn-on retarded/instantaneous deflection comparison plus oscillating-source deflection and tail-decay rows on the fixed h=0.5, W=6, L=30, s=0.01, c=0.8 harness.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "9ea35ee0cd0853d929612891858b37db74a420652a259a6dcb6cb9ae79f07bd0",
       "note_path": "docs/RETARDED_FIELD_HARNESS_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: Add a registered assertion criterion for the frequency-fingerprint claim over this harness and companion probes, or narrow the row to a pure bounded runner-table certificate without branch-worth/fingerprint synthesis.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -236544,18 +236572,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/retarded_field_harness.py",
       "title": "Retarded Field Harness",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The finite table is real: the cached runner computes the stated +0.026352 instantaneous and +0.020489 retarded deflections, the T=4/8/16 oscillating-source rows, and the tail-decay percentages. The companion rows support that retarded scheduling can be a bounded observable, but they do not supply a bridge from this hand-imposed field harness to a retained frequency-fingerprint theorem or full wave law. The correct retained use is the raw bounded table; the stronger branch-level synthesis remains conditional."
     },
     "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-27T05:34:40.207603+00:00",

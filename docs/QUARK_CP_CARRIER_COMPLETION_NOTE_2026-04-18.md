@@ -229,3 +229,11 @@ Current expected results on this branch:
 - `frontier_quark_jarlskog_closure_scan.py`: `PASS=5 FAIL=0`
 - `frontier_quark_cp_primitive_projector_scan.py`: summary scan with strongest
   candidate `J/J_atlas = 1.075`
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is a bounded existence-of-fit statement: with imported
+mass/CKM/Jarlskog comparator targets and two solved complex carrier
+coefficients, the extended quark surface can reproduce the selected target
+surface while preserving the determinant-phase check. This note does not derive
+the carrier slot, the coefficients, or the comparator targets from retained
+primitives, and it is not a first-principles CKM closure.

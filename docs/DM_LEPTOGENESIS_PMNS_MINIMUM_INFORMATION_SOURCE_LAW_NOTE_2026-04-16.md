@@ -138,7 +138,7 @@ python3 scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py
 
 ## 2026-05-19 audit-conditional repair
 
-This block narrows the retained scope of the note to match what the
+This block narrows the bounded conditional scope of the note to match what the
 runner actually verifies and explicitly admits the information-geometric
 selector as an imported assumption rather than a framework-derived
 object.
@@ -169,12 +169,12 @@ In particular:
   charged-lepton-active seed surface; their use as reference distributions
   for KL is part of the imported selector setup
 
-### Narrowed retained scope (bounded_theorem)
+### Narrowed bounded scope (bounded_theorem)
 
 After this audit, the retained claim of this note is narrowed to the
 following bounded conditional:
 
-> **Bounded retained claim.** Given (a) the imported information-geometric
+> **Bounded conditional claim.** Given (a) the imported information-geometric
 > selector `I_seed` and (b) the transport-favored column `i_*` identified
 > by the exact extremal class (sister theorems), the constrained
 > optimization problem
@@ -190,7 +190,7 @@ Everything outside this constrained-opt closure on the favored column
 (including the broader question of whether `I_seed` is the *correct*
 selector, whether the baseline framework selects it over alternatives,
 or whether the PMNS-assisted `N_e` branch closes from primitives) is
-**explicitly out of retained scope** for this note.
+**explicitly out of the bounded source scope** for this note.
 
 ### Caveats
 
@@ -224,3 +224,12 @@ for the stationary classification. The renaming-tier source-law row is
 the explicit selector convention layered on top of that classification.
 This is source-side routing context only; it does not assert an
 `audit_status` or `effective_status`.
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the bounded constrained-optimization statement after
+admitting the information-geometric selector and the fixed native seed surface.
+The hard-coded seed surface, the `eta_obs` closure constraint, and the selected
+objective are explicit conditional inputs. This note does not derive the
+selector from `Cl(3)` on `Z^3`, does not close the PMNS-assisted `N_e` branch,
+and does not treat numerical agreement with `eta_obs` as first-principles
+retention.

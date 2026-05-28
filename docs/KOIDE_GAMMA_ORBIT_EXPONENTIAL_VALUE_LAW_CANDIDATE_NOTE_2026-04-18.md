@@ -198,3 +198,12 @@ beta_* ~= 0.6335716 on the small-root branch.
 
 That candidate lands almost exactly on the observed charged-lepton amplitude
 direction.
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is a bounded positive witness inside the exact
+`Gamma`-orbit/exponential family: after importing the neutrino-sector
+`H_*` generator and optimizing the single parameter `beta`, the small-root
+branch lands on the Koide cone and closely matches the charged-lepton amplitude
+direction. This note does not derive `H_*` as the charged-lepton generator,
+does not derive the optimizer `beta_*`, and does not promote a retained
+charged-lepton value law.

@@ -114,3 +114,11 @@ is numerically consistent with 1/r^2 at 0.1% precision.
 
 Total: 3.7 minutes (N=31..96, including mass-independence check).
 CG solver handles 96^3 (884K sites) in 2.5 seconds.
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the finite Poisson/path-sum table plus the declared
+scaled-fit diagnostic estimator on the listed lattice sizes. The selected
+`N >= 56` weighted mean is not asserted as a derived continuum estimator, and
+the note does not claim a retained inverse-square gravity law until an
+independent estimator-selection or continuum-limit theorem is supplied. The
+alternative finite-size extrapolations remain part of the scope boundary.

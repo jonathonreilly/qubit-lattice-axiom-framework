@@ -44,6 +44,17 @@ the first Hankel packet `(m1, m2)` are equivalent via `alpha0 = m1` and
 `beta1^2 = m2 - m1^2`, with `beta1 > 0`. This is an exact algebraic identity
 on the realized packet.
 
+## 2026-05-28 re-audit scope
+
+The re-auditable claim is only the finite algebraic equivalence
+`alpha0 = m1`, `beta1^2 = m2 - m1^2` on the canonical packet exercised by the
+registered runner. It is not a decoration of the older
+`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet...`
+parent and does not inherit that parent as retained authority. If the audit
+lane needs a dependency, the only admissible dependency is the actual
+canonical-packet construction supplied to the runner; the
+earliest-feeding-boundary reading stays explicitly non-load-bearing.
+
 ## Bottom line (non-load-bearing historical context)
 
 The remarks below are **not** load-bearing for this row and depend on

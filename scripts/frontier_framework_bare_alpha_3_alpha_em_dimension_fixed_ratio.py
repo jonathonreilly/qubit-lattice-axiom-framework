@@ -122,10 +122,10 @@ def audit_authority_surfaces(audit: Audit) -> None:
         "1/(d+1)" in cl3 and "1/(d+2)" in cl3 and "bare gauge couplings" in cl3,
     )
     audit.check(
-        "EW normalization lane exists",
-        "standalone retained EW normalization lane" in ew
-        or "Retained status" in ew
-        or "EW normalization lane" in ew,
+        "EW kappa-family boundary exists",
+        "K_EW(kappa_EW)" in ew
+        and "kappa_EW = 0" in ew
+        and "bounded no-go" in ew,
     )
     audit.check(
         "publication matrix keeps CL3 support boundary",

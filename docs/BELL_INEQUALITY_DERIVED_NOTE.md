@@ -387,3 +387,12 @@ would require:
    scaling.
 4. A runner that tests a fixed derived coupling / continuum-refinement
    family rather than sweeping to violation.
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the finite model-surface CHSH diagnostic only:
+selected small periodic lattices, selected `G` couplings, explicit Cl(3)
+taste-operator checks, and the `G = 0` null control. This note does not claim a
+framework-native gravitational Bell theorem, a continuum limit, a unique
+physical normalization for `G`, or a derived two-species matter sector. The
+large chosen couplings and diagonal periodic-Poisson density coupling are part
+of the bounded model surface, not derived primitives.

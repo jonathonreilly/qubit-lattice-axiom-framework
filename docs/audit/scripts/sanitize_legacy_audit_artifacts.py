@@ -101,7 +101,13 @@ def canonicalize_decoration_parent_ids(ledger: dict) -> None:
         if not isinstance(row, dict):
             continue
         parent = row.get("decoration_parent_claim_id")
-        if not isinstance(parent, str) or not parent or parent in rows:
+        if not isinstance(parent, str) or not parent:
+            continue
+        if parent in rows:
+            continue
+        lowered = parent.lower()
+        if lowered in rows:
+            row["decoration_parent_claim_id"] = lowered
             continue
         normalized = parent.lstrip("./")
         candidates = [parent, normalized, f"./{normalized}", Path(normalized).name]

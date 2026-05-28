@@ -1,7 +1,7 @@
 # Complex Selectivity Predictor Note
 
 **Date:** 2026-04-06  
-**Status:** proposed_retained narrow predictor card for complex-action survival on structured families
+**Status:** bounded narrow predictor card for complex-action survival on the listed structured-family authorities
 **Claim type:** bounded_theorem
 
 **Audit-conditional perimeter (2026-05-10):**
@@ -39,7 +39,7 @@ AWAY-at-gamma=0 boundary` row that distinguishes the second-family
 positive from the second-family boundary closure). Until those
 one-hop edges are wired, the safe read of this note is restricted
 to the five already-supplied one-hop authorities; the headline
-§"Final Verdict" sentence ("retained narrow predictor: complex-action
+§"Final Verdict" sentence ("bounded narrow predictor: complex-action
 survival requires an anchor-local crossover; coarser basin geometry
 does not predict it") is **conditional** on the two unwired inputs
 landing as one-hop edges. Nothing in this edit promotes audit
@@ -90,7 +90,7 @@ companion survives on a structured family?
 
 ## Final Verdict
 
-**retained narrow predictor: complex-action survival requires an anchor-local crossover; coarser basin geometry does not predict it**
+**bounded narrow predictor: complex-action survival on the listed family cards requires an anchor-local crossover; coarser basin geometry does not predict it**
 
 ## Citation chain and audit-stated repair path (2026-05-10)
 
@@ -113,7 +113,7 @@ one-hop edges are visible.
 | Unwired authority — original grown basin | [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](../archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md) (signed-source side) and [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) (complex-action side) | not wired as one-hop edges (signed side is archived under `archive_unlanded/`); cited only in `source_notes` of the runner row | needed for the original grown-basin row (`retained_complex = yes`, `anchor_crossover = yes on nearby rows`) |
 | Unwired authority — second-family boundary | [`docs/SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md`](SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md) | not wired as one-hop edge from this row | needed for the second-family boundary-window discriminator note ("exact gamma=0 + Born proxy + crossover survive narrowly", "loses it in the tighter boundary window") |
 | Sibling archive — fifth-family stale runner | [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_COMPLEX_NOTE.md`](../archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_COMPLEX_NOTE.md) | not wired as one-hop edge (archived) | source-context provenance for the fifth-family row |
-| Repo baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | repo-baseline terminology anchor for the path-sum architecture |
+| Repo baseline anchor | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | accepted axiom premise | repo-baseline terminology anchor for the path-sum architecture |
 
 The audit-stated repair path (verbatim from the audit
 `notes_for_re_audit_if_any`) is to either (i) **add direct

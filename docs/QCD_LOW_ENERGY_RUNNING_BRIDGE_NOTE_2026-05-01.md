@@ -32,7 +32,7 @@ footing as PDG quark-mass thresholds and the standard MSbar 2-loop SM RGE
 beta functions. The source note does not make the upstream plaquette value
 a one-hop premise of this row; the boundary values below are admitted
 numerical infrastructure for the kernel check. The author tier is therefore
-`bounded`, not `proposed_retained`. The `Type: bounded_theorem` source hint
+`bounded`, not a retained-grade proposal. The `Type: bounded_theorem` source hint
 is an authoring queue hint only; independent audit still owns `claim_type`,
 `audit_status`, and any effective `retained_bounded` propagation.
 
@@ -123,7 +123,7 @@ The bridge uses only published, peer-reviewed SM RGE infrastructure:
 
 ## Why a `bounded` author tier is the honest choice
 
-The audit ledger separates `proposed_retained` (author claims a
+The audit ledger separates retained-grade proposal language (author claims a
 first-principles framework-native derivation) from `bounded` (author
 acknowledges the result is conditional on stated external infrastructure).
 
@@ -139,7 +139,7 @@ Three structural facts force the `bounded` tier here:
 3. the truncation order (2-loop vs. 4-loop) is a pragmatic choice and the
    residual is empirical rather than structural.
 
-A `proposed_retained` claim would assert that this bridge is derivable
+A retained-grade proposal would assert that this bridge is derivable
 from `Cl(3)` on `Z^3` axioms alone. That claim is not in scope here. The
 honest claim is the narrower one: given standard QCD running infrastructure
 plus the admitted boundary tuple, the v -> M_Z transfer is consistent with
@@ -236,3 +236,11 @@ not request audit credit for their progress. The honest read remains:
   standard-infrastructure references that this note does not derive;
 - retained-grade propagation of a framework-derived `alpha_s(M_Z)` remains
   blocked until a separate boundary authority derives `alpha_s(v)`.
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the bounded standard-infrastructure running kernel:
+given the admitted boundary tuple at `v`, the implemented two-loop SM/QCD RGE
+plus the declared threshold map transfers to the quoted `M_Z` range. This note
+does not derive `alpha_s(v)`, the beta-function infrastructure, the quark-mass
+thresholds, or the PDG comparator from the framework. Its value is registering
+the transfer kernel and its imports explicitly.

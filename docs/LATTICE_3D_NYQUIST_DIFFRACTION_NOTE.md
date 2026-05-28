@@ -1,7 +1,7 @@
 # Lattice 3D Nyquist Diffraction Note
 
 **Date:** 2026-04-04  
-**Status:** bounded Nyquist-flip probe on the proposed_retained 3D ordered-lattice family
+**Status:** bounded Nyquist-flip probe on the finite ordered-lattice family
 
 ## Artifact chain
 
@@ -78,7 +78,7 @@ So the honest interpretation is:
 This note should be read alongside the valley-linear finite-lattice bridge:
 
 - [`VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md)
-- [`docs/START_HERE.md`](/Users/jonreilly/Projects/Physics/docs/START_HERE.md) if you want the retained 3D gravity lane in the broader repo context
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) for the current axiom surface (`Cl(3)` local algebra on the `Z^3` spatial substrate)
 
 The difference is:
 

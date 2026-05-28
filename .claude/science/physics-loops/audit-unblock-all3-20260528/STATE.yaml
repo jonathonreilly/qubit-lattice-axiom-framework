@@ -1,0 +1,55 @@
+slug: audit-unblock-all3-20260528
+branch: physics-loop/audit-unblock-all3-20260528
+base: origin/main
+mode: run
+target_status: best-honest-status
+active_route: all_three_audit_unblock_classes
+cycle_count: 1
+files_touched:
+  pending_chain:
+    - docs/audit/data/axiom_premise_nodes.json
+    - docs/audit/scripts/sanitize_legacy_audit_artifacts.py
+    - docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md
+    - docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md
+    - docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md
+    - docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md
+    - docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md
+    - docs/CKM_ATLAS_CLOSURE_FORMULA_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-10.md
+    - docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md
+    - docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md
+  numerical_match:
+    - docs/BELL_INEQUALITY_DERIVED_NOTE.md
+    - docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md
+    - docs/COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md
+    - docs/DISTANCE_LAW_DEFINITIVE_NOTE.md
+    - docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md
+    - docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
+    - docs/KOIDE_GAMMA_ORBIT_EXPONENTIAL_VALUE_LAW_CANDIDATE_NOTE_2026-04-18.md
+    - docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md
+    - docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md
+    - docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md
+    - docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md
+    - docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md
+    - docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md
+    - docs/work_history/ckm/CABIBBO_BOUND_NOTE.md
+  failed_salvage:
+    - scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py
+    - scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
+    - docs/DM_NEUTRINO_WEAK_TRIPLET_COEFFICIENT_BOUNDARY_NOTE_2026-05-28.md
+    - docs/FRAMEWORK_BARE_ALPHA_3_ALPHA_EM_DIMENSION_FIXED_RATIO_CONDITIONAL_NOTE_2026-05-28.md
+open_imports:
+  - numerical rows remain bounded or conditional by construction
+  - two salvage notes retain explicit open source-amplitude and EW-selector boundaries
+review_loop_disposition: not_run_user_said_review_loop_will_fix_ci
+checks:
+  - python3 scripts/frontier_dm_neutrino_weak_triplet_coefficient_axiom_boundary.py
+  - python3 scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py
+  - bash docs/audit/scripts/run_pipeline.sh
+pipeline_result:
+  retained_pending_chain: 0
+  seed_reaudit_required_hash_changed: 22
+  lint_errors: 0
+  lint_notices: 158
+  live_dispatch_entries: 1
+next_exact_action: commit, push, and open PR for reviewer extraction
+stop_condition: PR opened for reviewer/auditor handoff

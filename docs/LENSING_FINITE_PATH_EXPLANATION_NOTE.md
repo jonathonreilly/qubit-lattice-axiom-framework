@@ -222,3 +222,11 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   direction is *lensing_long_path_test → this_finite_path_explanation*,
   not vice versa. This bookkeeping bullet duplicated the already-backticked
   entry above; left in see-also form for textual parity.)
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is now negative/open rather than a successful numerical
+match: the centered finite-path surrogate is falsified as an exact explanation
+of the measured lensing slope by the literal-geometry check and the second
+`T_phys` test. The old centered `L = 10` agreement is retained only as route
+history. This note should be audited as an open/negative boundary on the
+finite-path explanation, not as support for a derived lensing law.

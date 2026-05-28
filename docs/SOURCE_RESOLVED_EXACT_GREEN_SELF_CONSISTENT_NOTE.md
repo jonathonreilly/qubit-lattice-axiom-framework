@@ -109,3 +109,10 @@ Treat this as a real bounded positive:
 - `F~M` stays at `1.00`
 - the pocket survives a self-consistency update on the exact refinement family
 - this is the best current exact-lattice propagating-field refinement lead
+## 2026-05-28 numerical-match re-audit scope
+
+The re-auditable claim is the compact finite-lattice self-consistency diagnostic
+with the calibration gain treated as an explicit frozen setup input. The zero
+source reduction, sign, and near-linear scaling on the tested pocket are useful
+bounded facts, but the calibrated gain is not a derived amplitude and the note
+does not claim a full self-consistent field theory or continuum Green law.

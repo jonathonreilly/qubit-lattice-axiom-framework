@@ -25,6 +25,17 @@ core of the legacy parent CKM atlas-closure row, scoped to those algebraic
 blocks **not** already isolated by the sister magnitudes / CP-phase narrow
 theorems.
 
+## 2026-05-28 re-audit scope
+
+The load-bearing claim of this note is the standalone substitution theorem
+below. It should be re-audited as a narrow algebra theorem over the explicit
+input identities `(I1)-(Iq)` and magnitude identities `(M1)-(M5)`, not as a
+status decoration of `CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`. The legacy atlas
+parent remains context for where the identities came from; this note does not
+ask the audit lane to treat that unaudited parent as a retained dependency or
+to propagate the physical CKM atlas closure. No new axiom, observed CKM value,
+PDG comparator, fitted selector, or `alpha_s` value is used in the proof.
+
 ## Statement
 
 Let `alpha_s, n_pair, n_color, n_quark` be abstract positive symbols (with

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 555 |
+| **retained_bounded** | 556 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1204 |
+| unaudited | 1203 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 854 |
+| `audited_clean` | 855 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1434 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
@@ -541,6 +541,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7822,6 +7823,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Under the gravity-observable hierarchy classifier, the runner-computed z = 2, 3, 4, 5 window is genuinely attractive on this tested 3D dense spent-delay card.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the lattice, field, propagation, detector probabilities, centroid shift, P_near, and channel bias directly, then computes all four z = 2..5 rows without importing or hard-coding the contested values. The cited hierarchy authority supplies the retained sign-interpretation rule, and the source note excludes the rows and broader claims that the authority does not retain.
 - **rationale:** The load-bearing attractive-window claim is a bounded first-principles runner computation on the stated card. The runner source is not a constant printer or cross-note equality check; it generates the graph, propagates amplitudes, computes the observables, and classifies z = 2, 3, 4, 5 as attractive with positive centroid, P_near, and bias. The one-hop hierarchy authority is retained_bounded, and the note explicitly narrows away z = 6, 2D distance-law, refinement, and all-distances claims. A second auditor should note the minor non-load-bearing Born display drift between 7.39e-16 in the note and 7.37e-16 in the runner output.
+- **auditor confidence:** high
+
+### `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
+
+- **Note:** [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-lattice-greens-normalization-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner cache and direct rerun report lambda(k)/|k|^2 -> 1 on axis and diagonal small-k tests, continuum flux exactly 1.0 for 1/(4*pi*r), and axis residuals 2.658444e-07, 8.302321e-09, 2.594066e-10, 8.106139e-12 at r=16,32,64,128 with scaled r^5 coefficients tending to 0.27852, then prints CERTIFICATE PASS for the 1/(4*pi*r) normalization.  _(class `C`)_
+- **chain closes:** True — The row has no one-hop dependencies, the registered runner is fresh and passes, and the source proof plus independent checks close the framework-local normalization for the stated Z^3 stencil. Textbook references are parallel provenance only; the retained authority is bounded to this local operator convention and coefficient.
+- **rationale:** The claim closes at bounded-theorem grade for the stated operator convention. Independently, expanding 6-2(cos kx+cos ky+cos kz) gives |k|^2-(kx^4+ky^4+kz^4)/12+O(|k|^6), so the singular Fourier part has the continuum Poisson normalization. The unit-flux check fixes the constant as 1/(4*pi*r), and applying the exact lattice stencil to 1/(4*pi*r) on axis gives a residual with r^5 scaling tending to 7/(8*pi), matching the runner values. The source does not use Maradudin/Spitzer/Lawler as a hidden accepted premise and explicitly excludes downstream Newton or gravity closure.
 - **auditor confidence:** high
 
 ### `lattice_keff_continuum_note`

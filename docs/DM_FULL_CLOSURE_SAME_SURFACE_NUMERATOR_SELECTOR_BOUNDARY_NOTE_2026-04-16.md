@@ -1,9 +1,44 @@
 # DM Full Closure Same-Surface Numerator Selector Boundary
 
-**Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-16  
+**Type:** bounded_theorem
+**Status:** bounded endpoint-distinctness/non-overlap arithmetic certificate
+for the helper-defined numbers; the selector-boundary conclusion is
+conditional on unsupplied plaquette/η-ω/packet-completeness authorities
+(see 2026-05-28 repair header).
+**Date:** 2026-04-16 (2026-05-28: arithmetic core split from the unsupplied
+selector-boundary authorities per audit verdict).
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
+**Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py`
+
+## 2026-05-28 Audit Repair (arithmetic core split from selector-boundary authorities)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The endpoint distinctness and non-overlap arithmetic checks close for
+> the helper-defined numbers. The selector-boundary claim does not fully
+> close because the certified thermal interval machinery,
+> plaquette-derived endpoint constants, eta/omega conversion, and
+> packet-completeness premise are not available as retained one-hop
+> [authorities]."*
+
+Repair via the split path (supplying retained authorities for the
+certified interval bounds, plaquette endpoints, η/ω conversion, and
+packet-completeness premise is substantive DM-lane work, out of scope):
+
+- **Load-bearing (in scope):** the endpoint-distinctness and non-overlap
+  arithmetic checks **for the helper-defined numbers** — these close
+  exactly and are runner-verified.
+- **Conditional / NON-load-bearing (split off):** the
+  **selector-boundary conclusion**, which requires the certified
+  same-surface ratio bounds, the plaquette-derived α endpoint
+  definitions, the η/ω conversion, and the packet-completeness / selector
+  datum premise. None is available as a retained one-hop authority; the
+  selector-boundary claim is recorded as conditional on them.
+
+No new axiom, import, or retained bridge is introduced. The arithmetic
+endpoint-distinctness certificate is the load-bearing content; the
+selector-boundary conclusion stays conditional until its authorities land.
 
 ## Question
 

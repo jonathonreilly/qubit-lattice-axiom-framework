@@ -1,9 +1,42 @@
 # DM Full Closure Same-Surface Thermal Monotonicity Theorem
 
-**Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-17  
+**Type:** bounded_theorem
+**Status:** bounded thermal-kernel derivative/positivity certificate; the
+live-DM-slice 64:1 channel-weighted ratio conclusion is conditional on an
+unsupplied channel-weight authority (see 2026-05-28 repair header).
+**Date:** 2026-04-17 (2026-05-28: monotonicity conclusion split from the
+unsupplied 64:1 channel-weight bridge per audit verdict).
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
+**Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py`
+
+## 2026-05-28 Audit Repair (thermal-kernel core split from channel-weight bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The derivative identities and positivity proof close algebraically,
+> but the restricted packet does not contain the promised channel-weight
+> authority or an explicit retained formula tying the same-surface DM
+> ratio to the 64:1 weighted attractive/repulsive Sommerfeld terms.
+> Without that bridge, the final DM-ratio monotonicity conclusion is
+> [not closed]."*
+
+Repair via the split path (adding a retained 64:1 channel-weight authority
+is substantive new DM-lane work, out of scope):
+
+- **Load-bearing (in scope):** the thermal-kernel derivative identities
+  and positivity proof (monotonicity of the `f_att`, `f_rep` Sommerfeld
+  thermal averages), which close algebraically and are runner-verified.
+- **Conditional / NON-load-bearing (split off):** the final
+  same-surface DM-ratio monotonicity conclusion, which requires the
+  **64:1 channel-weighted attractive/repulsive formula**
+  `d/dy [64 f_att(8y) + f_rep(y)]` as a retained one-hop authority. That
+  channel-weight bridge is **not supplied**; the DM-ratio conclusion is
+  recorded as conditional on it.
+
+No new axiom, import, or retained bridge is introduced. The thermal-kernel
+core is the load-bearing content; the 64:1 DM-ratio conclusion stays
+conditional until the channel-weight authority lands.
 
 ## Question
 

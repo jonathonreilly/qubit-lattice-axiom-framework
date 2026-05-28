@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1145 |
+| unaudited | 1148 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 61 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 891 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1375 |
+| `unaudited` | 1378 |
 
 | claim_type | count |
 |---|---:|
@@ -1043,9 +1043,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `distance_law_frontier_audit_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
-| `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `early_family_transfer_connectivity_diagnosis` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
@@ -3961,19 +3958,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The bounded support claim closes on its own terms: the runner recomputes the converged same-surface selector, verifies the observed Omega_DM comparator on the admitted one-scalar family, and checks that the coarse grid and 9/62 clue are not stable. The source note explicitly keeps current-bank selector closure open, so this clean audit is limited to the convergence/sanity-check surface and does not ratify a theorem-grade DM selector law. Residual risk is downstream misuse of the admitted-family crossing as a first-principles current-bank closure.
 - **auditor confidence:** high
 
-### `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`
-
-- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded arithmetic boundary check for the two helper-defined same-surface endpoint couplings alpha_lo and alpha_hi: the cached runner confirms the endpoints are distinct, both exceed alpha_bare, and their certified ratio and Omega_DM intervals do not overlap. This does not audit a theorem-grade selector no-go or current-bank completeness result, and it depends on helper-defined live constants and certified thermal-support machinery not present as retained one-hop authorities in this row.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-dm-numerator-selector-boundary-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The two current-bank endpoint couplings are distinct exact reals and map to disjoint certified same-surface DM ratio intervals, while the packet supplies no further selector datum.  _(class `A`)_
-- **chain closes:** False — The endpoint distinctness and non-overlap arithmetic checks close for the helper-defined numbers. The selector-boundary claim does not fully close because the certified thermal interval machinery, plaquette-derived endpoint constants, eta/omega conversion, and packet-completeness premise are not available as retained one-hop authorities in the restricted packet.
-- **rationale:** The cached runner reports PASS=8 FAIL=0 and the arithmetic is internally consistent: alpha_lo != alpha_hi, both exceed alpha_bare, and the reported R and Omega_DM intervals are disjoint. But the row directly depends only on the thermal integral representation, while the runner imports helper-defined canonical plaquette endpoints, eta/omega conversion, and certified same-surface ratio bounds from the broader DM support layer. The immediately upstream series/tail support surface is itself conditional, and the packet-completeness declaration is print-only rather than a retained constructive selector obstruction. The correct audit result is therefore conditional support for the arithmetic boundary, not a clean selector-boundary theorem.
-- **auditor confidence:** high
-
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`
 
 - **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md)
@@ -3987,19 +3971,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** Clean bounded retention is appropriate after strict scope narrowing. The title says full closure, but the body and runner only close an exact integral representation and low-order moments on the declared same-surface slice. The independent change-of-variables audit confirms the normalized MB measure transforms to (2/sqrt(pi))*sqrt(t)*exp(-t) dt and the Sommerfeld argument becomes alpha_eff*sqrt(a/t). The source explicitly states current-bank selector closure remains open, so no downstream DM closure or Sommerfeld physics is smuggled into the verdict.
 - **auditor confidence:** high
 
-### `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17`
-
-- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded algebraic monotonicity check for the stated Sommerfeld derivative identities and the stated channel-weighted integrand 64 f_att'(8y)+f_rep'(y): h(y)=e^(2y)-2y e^y-1 has h(0)=0 and h'(y)=2 e^y(e^y-1-y)>0 for y>0, giving f_att'(y)>1/2, f_rep'(y)>-1/2, and a positive pointwise derivative. The full same-surface DM-ratio monotonicity claim is not cleanly audited without a one-hop retained authority or explicit formula for the 64:1 channel-weighted ratio surface.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-dm-thermal-monotonicity-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The pointwise derivative bound 64 f_att'(8y)+f_rep'(y)>63/2 is used to conclude that the exact same-surface thermal DM ratio is strictly increasing in alpha.  _(class `A`)_
-- **chain closes:** False — The derivative identities and positivity proof close algebraically, but the restricted packet does not contain the promised channel-weight authority or an explicit retained formula tying the same-surface DM ratio to the 64:1 weighted attractive/repulsive Sommerfeld terms. Without that bridge, the final DM-ratio monotonicity conclusion is conditional on an unstated one-hop input.
-- **rationale:** Independent algebra verifies the runner's core identities: f_att'(y)-1/2 and f_rep'(y)+1/2 both reduce to h(y)/(2(e^y-1)^2), and h'(y)=2 e^y(e^y-1-y)>0 makes h(y)>0 for y>0. The cached runner reports PASS=5 FAIL=0 and is consistent with that algebra. However, the source itself says the 64:1 same-surface channel-weight assignment is documented separately, while the ledger row exposes only the thermal-integral and Maxwell-Boltzmann/Sommerfeld normalization dependencies. The clean theorem burden for the full same-surface DM ratio therefore is not met in the restricted packet.
-- **auditor confidence:** high
-
 ### `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`
 
 - **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md)
@@ -4011,19 +3982,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Refining the same-surface thermal quadrature shifts the admitted-family selector root by far more than the apparent 9/62 residual, so the structural 9/62 collapse is not stable.  _(class `C`)_
 - **chain closes:** True — The note's bounded negative claim is exactly reproduced by the runner: it computes the coarse apparent match, then recomputes refined roots at 4000, 8000, and 16000 points and shows material drift away from 9/62.
 - **rationale:** The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result.
-- **auditor confidence:** high
-
-### `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`
-
-- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded exact-series/tail support check for the same-surface thermal Coulomb factors on the declared helper-defined live DM sample points: the attractive and repulsive positive-series decompositions and the J1/J2 Meijer-G term integrals are valid, and the cached runner encloses the corrected continuum evaluator in sub-1e-9 ratio-width intervals at alpha_lo, alpha_conv, and alpha_hi. The full live-slice selector support claim is not cleanly audited without one-hop retained authorities for the helper-defined live interval, observed eta/omega conversion, and same-surface alpha constants.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-dm-series-tail-support-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The corrected continuum evaluator is claimed to lie inside exact positive-series/tail support intervals at alpha_lo, alpha_conv, and alpha_hi, with ratio widths below 1e-9.  _(class `A`)_
-- **chain closes:** False — The positive-series identities, tail inequalities, and J1/J2 Meijer-G representations close algebraically and by independent quadrature checks. The chain does not fully close for the live DM slice because the helper layer imports the plaquette-derived alpha interval and eta/omega selector constants without corresponding one-hop retained authorities in this row's dependency packet.
-- **rationale:** Independent checks confirm the exact identities y/(1-e^{-y})=sum_{n>=0} y e^{-ny}, y/(e^y-1)=sum_{n>=1} y e^{-ny}, the tail bounds from y/(1-e^{-y})<=1+y, and the helper's J1/J2 Meijer-G formulas against direct high-precision quadrature. The cached runner reports PASS=13 FAIL=0 and gives narrow enclosures containing the corrected evaluator at the three stated sample points. However, the helper layer imports CANONICAL_ALPHA_LM, the plaquette-supported alpha endpoint, ETA_OBS, and omega_b conversion machinery while the row exposes only thermal-integral and Maxwell-Boltzmann/Sommerfeld normalization dependencies. That makes the live-slice support claim conditional on missing one-hop input authority, even though the thermal series/tail machinery itself is supported.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19`

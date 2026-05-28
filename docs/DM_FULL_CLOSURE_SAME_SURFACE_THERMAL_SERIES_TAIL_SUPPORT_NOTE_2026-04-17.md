@@ -1,9 +1,45 @@
 # DM Full Closure Same-Surface Thermal Series/Tail Support
 
-**Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-17  
+**Type:** bounded_theorem
+**Status:** bounded pure thermal-kernel series/tail certificate; the live-DM
+slice (plaquette-derived α interval, η/ω selector constants) is conditional
+on unsupplied authorities (see 2026-05-28 repair header).
+**Date:** 2026-04-17 (2026-05-28: pure thermal-kernel core split from the
+unsupplied live-DM-slice constants per audit verdict).
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
+**Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py`
+
+## 2026-05-28 Audit Repair (thermal-kernel core split from live-DM constants)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The positive-series identities, tail inequalities, and J1/J2 Meijer-G
+> representations close algebraically and by independent quadrature
+> checks. The chain does not fully close for the live DM slice because
+> the helper layer imports the plaquette-derived alpha interval and
+> eta/omega selector constants without corresponding one-hop retained
+> [authorities]."*
+
+Repair via the split path (the auditor's "narrow to a pure thermal-kernel"
+option; supplying retained authorities for the plaquette α interval and
+η/ω selector is substantive DM-lane work, out of scope):
+
+- **Load-bearing (in scope):** the positive-series identities, tail
+  inequalities, and the J1/J2 Meijer-G representations — closed
+  algebraically and by independent quadrature checks (runner-verified).
+  This is a **pure thermal-kernel** result, independent of any specific
+  DM-slice numbers.
+- **Conditional / NON-load-bearing (split off):** the **live DM slice** —
+  the plaquette-derived α interval constants, the η/ω conversion target,
+  and the same-surface selector sample definitions. The helper layer
+  imports these **without retained one-hop authorities**; they are
+  recorded as conditional inputs, not part of the load-bearing
+  thermal-kernel certificate.
+
+No new axiom, import, or retained bridge is introduced. The pure
+thermal-kernel series/tail certificate is the load-bearing content; the
+live-DM-slice numbers stay conditional until their authorities land.
 
 ## Question
 

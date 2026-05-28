@@ -1,11 +1,19 @@
-# Audit-Backlog Retained Campaign — Progress Synthesis (Cycles 1-19)
+# Audit-Backlog Campaign Progress Synthesis (Cycles 1-19)
 
 **Date:** 2026-05-02
+**Claim type:** meta
 **Status:** campaign-level progress synthesis covering cycles 1-19 of
 audit-backlog-campaign-20260502. Documents cumulative claim-state
 movement, identifies remaining Nature-grade targets, and provides
 handoff for review backlog.
 **Primary runner:** `scripts/frontier_audit_backlog_campaign_synthesis.py`
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This file is a textual campaign index and handoff, not a theorem row and not a
+bundle-level authority for the 19 cycle outputs. Re-audit should not require
+this synthesis to include every cycle-level certificate or convention bridge:
+those remain owned by the individual cycle PRs and source notes.
 
 ## 0. Campaign overview
 

@@ -10782,42 +10782,24 @@
       "verdict_rationale": "Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class D). Vote breakdown: J1: first / audited_clean / positive_theorem / class D; J2: first / audited_clean / positive_theorem / class D; J3: first / audited_clean / positive_theorem / class D; J4: first / audited_clean / positive_theorem / class D; J5: first / audited_clean / positive_theorem / class D. Majority rationale: J1: The source proves a scoped dependency-firewall theorem: direct alpha_EM(M_Z) substitution misses the textbook Rydberg scale by about 15%, and the repo still lacks retained m_e, alpha(0)/QED running, and the physical-unit atomic limit. That is a clean positive theorem about the current dependency boundary, with a load-bearing external comparator check, not a retained all-routes no-go. | J2: The source proves an exact current-state dependency firewall: direct alpha_EM(M_Z) substitution misses by 15.21%, while m_e, alpha(0)/QED running, and the physical-unit atomic limit remain unretained. That cleanly supports the positive theorem tuple without claiming hydrogen closure. | J3: The source proves a current-repo dependency firewall: direct alpha_EM(M_Z) substitution misses by about 15%, and retained m_e, alpha(0)/QED running, and the physical-unit NR limit are absent. That is a clean positive theorem about dependency status, with the load-bearing step in repo-state/dependency checks, not an exhaustive no-go theorem. | J4: The source proves a scoped dependency firewall: direct alpha_EM(M_Z) substitution misses the Rydberg scale by 15.21%, and current Lane 2 lacks retained m_e, alpha(0), and the physical-unit NR Coulomb bridge. That is clean as a positive dependency-accounting theorem with an external comparator/status load-bearing step, not a class-A algebraic no-go. | J5: The source proves a positive dependency-accounting theorem: in the current Lane 2 state, direct alpha_EM(M_Z) substitution is blocked unless m_e, alpha(0)/running, and the physical-unit atomic limit are retained. It explicitly leaves future closure open, so it is not a hard no_go. The runner closes this as D-class repo-state/dependency firewall evidence, not an A-class derivation."
     },
     "audit_backlog_note_2026-05-02": {
-      "audit_date": "2026-05-24T20:57:31.225995+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited."
-        },
-        "dep_claim_type": {
-          "left_handed_charge_matching_note": "decoration"
-        },
-        "dep_effective_status": {
-          "left_handed_charge_matching_note": "decoration_under_graph_first_su3_integration_note"
-        },
-        "deps": [
-          "left_handed_charge_matching_note"
-        ],
-        "load_bearing_score": 6.0,
-        "runner_hash": "fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826",
-        "transitive_descendants": 7
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205600Z-c2a4ee90-audit_backlog_note_2026--01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The restricted packet provides only one LHCM authority plus a runner that checks substrings in the synthesis note. It does not provide the cycle-level CLAIM_STATUS_CERTIFICATE.md files or retained convention/bridge authorities needed to verify the aggregate status claims.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "audit_backlog_note_2026-05-02",
-      "claim_scope": "Campaign-level aggregation of the 2026-05-02 audit-backlog cycles, including listed PRs, claimed status movement, open Nature-grade targets, and forbidden-import compliance.",
+      "claim_scope": null,
       "claim_type": "meta",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-24T20:57:31.225995+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -10825,23 +10807,20 @@
         "left_handed_charge_matching_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "meta",
+      "effective_status_reason": "metadata",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "meta",
       "load_bearing_score": 6.0,
-      "load_bearing_step": "The campaign synthesis asserts that cycles 1-19 have independently certified statuses and that these aggregate into LHCM exact-support movement, SM extension theorems, named obstructions, and status corrections.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
+      "note_hash": "cdb2033f1af5e1583a22a60c1cdf6e655ce04f93e30f5838603d5f30b7522d4d",
       "note_path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: include the 19 cycle-level CLAIM_STATUS_CERTIFICATE.md files and the convention/bridge authorities they rely on, or narrow this row to a purely textual campaign index.",
-      "open_dependency_paths": [
-        ".claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md",
-        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T16:08:17.632772+00:00",
@@ -10924,21 +10903,74 @@
             "total_pass": 47
           },
           "verdict_rationale": "The note is explicitly a campaign synthesis rather than a new derivation, so its load-bearing support is the existence and correctness of the individual cycle certificates. Those certificates are named but not included in the restricted packet, and the provided runner is a text-coverage checker only. The one included cited authority is retained_bounded at the packet header level, but its body also records conditional/open boundaries around normalization and downstream SM identification, which the synthesis itself acknowledges as governance/open-target dependencies."
+        },
+        {
+          "archived_at": "2026-05-28T20:13:08.467111+00:00",
+          "archived_for_note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
+          "audit_date": "2026-05-24T20:57:31.225995+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited."
+            },
+            "dep_claim_type": {
+              "left_handed_charge_matching_note": "decoration"
+            },
+            "dep_effective_status": {
+              "left_handed_charge_matching_note": "decoration_under_graph_first_su3_integration_note"
+            },
+            "deps": [
+              "left_handed_charge_matching_note"
+            ],
+            "load_bearing_score": 6.0,
+            "runner_hash": "fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826",
+            "transitive_descendants": 7
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205600Z-c2a4ee90-audit_backlog_note_2026--01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The restricted packet provides only one LHCM authority plus a runner that checks substrings in the synthesis note. It does not provide the cycle-level CLAIM_STATUS_CERTIFICATE.md files or retained convention/bridge authorities needed to verify the aggregate status claims.",
+          "claim_scope": "Campaign-level aggregation of the 2026-05-02 audit-backlog cycles, including listed PRs, claimed status movement, open Nature-grade targets, and forbidden-import compliance.",
+          "claim_type": "meta",
+          "claim_type_last_reviewed": "2026-05-24T20:57:31.225995+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The campaign synthesis asserts that cycles 1-19 have independently certified statuses and that these aggregate into LHCM exact-support movement, SM extension theorems, named obstructions, and status corrections.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: include the 19 cycle-level CLAIM_STATUS_CERTIFICATE.md files and the convention/bridge authorities they rely on, or narrow this row to a purely textual campaign index.",
+          "open_dependency_paths": [
+            ".claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md",
+            "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 47,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 47
+          },
+          "verdict_rationale": "The runner verifies that expected headings, PR numbers, lane names, and compliance phrases appear in the note; it does not verify the independent cycle certifications or the scientific status transitions. The provided LHCM authority is narrowed to a scale-free ratio and explicitly treats absolute normalization and SM hypercharge identification as convention/out-of-scope steps. Therefore the synthesis may be a useful index, but the broader status-movement claim does not close from the restricted packet."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 47,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 47
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
-      "title": "Audit-Backlog Retained Campaign \u2014 Progress Synthesis (Cycles 1-19)",
+      "title": "Audit-Backlog Campaign Progress Synthesis (Cycles 1-19)",
       "transitive_descendants": 7,
-      "verdict_rationale": "The runner verifies that expected headings, PR numbers, lane names, and compliance phrases appear in the note; it does not verify the independent cycle certifications or the scientific status transitions. The provided LHCM authority is narrowed to a scale-free ratio and explicitly treats absolute normalization and SM hypercharge identification as convention/out-of-scope steps. Therefore the synthesis may be a useful index, but the broader status-movement claim does not close from the restricted packet."
+      "verdict_rationale": null
     },
     "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01": {
       "audit_date": null,
@@ -18049,51 +18081,42 @@
       "verdict_rationale": "The cached runner and local rerun both report PASS=151 FAIL=0, and the independent check is direct: c^2*(1/c^2)=1, so beta'(c)g_bare'^2(c)=2N_c for positive rational c whenever WM is assumed. The one-hop abstract algebra dependency is retained and the scoped rescaling dependency is retained_bounded, but both preserve the boundary that Wilson matching is an input, not a theorem. No-go-discipline scope check: this verdict names WM as an unretired premise without claiming no future Wilson-matching derivation route exists."
     },
     "beyond_lattice_qcd_note": {
-      "audit_date": "2026-05-10T18:34:07.507394+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 0.0,
-        "runner_hash": "e747d61be70e5d09589deb86ef50e43ccb8b367e2496264b05e7df690a94ad89",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1329-3117-73e3-9ff8-a7a36875c656",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner verifies finite algebraic/numerical behavior of the chosen model, but it computes detector probabilities as np.abs(psi)**2 and therefore assumes the Born readout it claims to derive. No one-hop authority or theorem closes the graph-to-gravity physical bridge or the claim that lattice QCD lacks any analogous construction.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "beyond_lattice_qcd_note",
-      "claim_scope": "Finite runner-backed demonstration that a specified graph Poisson coupling changes a toy propagator and that a linear three-slit path-sum gives vanishing Sorkin I_3, with asserted but unaudited implications for lattice QCD and Born-rule derivation.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T18:34:07.507394+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The linearity of the graph path-sum is asserted to force I_3 = 0 as a mathematical identity, making the Born rule a theorem rather than a postulate, while the same graph structure is asserted to supply gravity through S = L(1-f).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "47ae1ec2338cf1e44c91b63b4959b58bdf40df58536b9ca009d5a93ddba37df9",
+      "note_hash": "f2646a62065e7c1f0b239be1f9ba1bd1dac08eb9ac1004375c8d40f7b4751858",
       "note_path": "docs/BEYOND_LATTICE_QCD_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem \u2014 derive the probability/readout map and graph-gravity/lattice-QCD comparison from retained inputs, then rerun an audit on the reduced or repaired claim.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -18134,21 +18157,62 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the numerical comparisons demonstrate a distinction, but the physical interpretation still imports the framework source/readout bridge rather than deriving it here. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-28T20:13:08.619874+00:00",
+          "archived_for_note_hash": "47ae1ec2338cf1e44c91b63b4959b58bdf40df58536b9ca009d5a93ddba37df9",
+          "audit_date": "2026-05-10T18:34:07.507394+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 0.0,
+            "runner_hash": "e747d61be70e5d09589deb86ef50e43ccb8b367e2496264b05e7df690a94ad89",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1329-3117-73e3-9ff8-a7a36875c656",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner verifies finite algebraic/numerical behavior of the chosen model, but it computes detector probabilities as np.abs(psi)**2 and therefore assumes the Born readout it claims to derive. No one-hop authority or theorem closes the graph-to-gravity physical bridge or the claim that lattice QCD lacks any analogous construction.",
+          "claim_scope": "Finite runner-backed demonstration that a specified graph Poisson coupling changes a toy propagator and that a linear three-slit path-sum gives vanishing Sorkin I_3, with asserted but unaudited implications for lattice QCD and Born-rule derivation.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T18:34:07.507394+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The linearity of the graph path-sum is asserted to force I_3 = 0 as a mathematical identity, making the Born rule a theorem rather than a postulate, while the same graph structure is asserted to supply gravity through S = L(1-f).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem \u2014 derive the probability/readout map and graph-gravity/lattice-QCD comparison from retained inputs, then rerun an audit on the reduced or repaired claim.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 12,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 13
+          },
+          "verdict_rationale": "Issue: the note promotes a finite toy-model computation and an I_3 identity into a Born-rule derivation and a lattice-QCD no-analog claim. Why this blocks: the Sorkin test uses P = |psi|^2 in the runner, and the graph-gravity and lattice-QCD comparison bridges are not derived or supported by any cited authority. Repair target: provide a retained bridge theorem deriving the probability/readout rule without imposing |psi|^2, plus a retained authority or theorem for the lattice-QCD comparison. Claim boundary until fixed: the runner supports only that the specified numerical model changes its propagated profile when the Poisson field is included and that its Born-probability three-slit calculation has negligible I_3."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 12,
+        "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "total_pass": 13
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_beyond_lattice_qcd.py",
       "title": "Beyond Lattice Gauge Theory: Two Concrete Results",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the note promotes a finite toy-model computation and an I_3 identity into a Born-rule derivation and a lattice-QCD no-analog claim. Why this blocks: the Sorkin test uses P = |psi|^2 in the runner, and the graph-gravity and lattice-QCD comparison bridges are not derived or supported by any cited authority. Repair target: provide a retained bridge theorem deriving the probability/readout rule without imposing |psi|^2, plus a retained authority or theorem for the lattice-QCD comparison. Claim boundary until fixed: the runner supports only that the specified numerical model changes its propagated profile when the Poisson field is included and that its Born-probability three-slit calculation has negligible I_3."
+      "verdict_rationale": null
     },
     "bh_entropy_derived_note": {
       "audit_date": "2026-05-27T00:39:14.578249+00:00",
@@ -19887,48 +19951,24 @@
       "verdict_rationale": null
     },
     "born_rule_from_gleason_busch_derivation_note_2026-05-20": {
-      "audit_date": "2026-05-27T03:00:22.600842+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_axiom_premise_note_hash": {
-          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
-        },
-        "dep_claim_scope": {
-          "minimal_axioms": null,
-          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
-        },
-        "dep_claim_type": {
-          "minimal_axioms": "meta",
-          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "minimal_axioms": "meta",
-          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
-        },
-        "deps": [
-          "minimal_axioms",
-          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
-        ],
-        "load_bearing_score": 1.5,
-        "runner_hash": null,
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The retained tracial-state dependency now closes only the unique-tracial-state theorem, and explicitly does not identify that state with a pre-record physical reference. The source note still imports the no-extra-structure/pre-record identification, L\u00fcders compositional-consistency update, and record-as-Kraus bridge as admitted or in-flight inputs, so the Born derivation does not close from the one-hop retained packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "claim_scope": "Bounded Born-rule repair route on the qubit-lattice operator algebra: if one assumes the standard Gleason-Busch probability representation on the POVM effect algebra, identifies the unique tracial state with a pre-record reference state, and assumes a L\u00fcders/Kraus record-conditioning bridge, then the usual post-record Born form follows. This audit does not ratify the pre-record identification, the L\u00fcders/update bridge, the record-as-Kraus bridge, or a retained closure of the failed gravitational-Hartree Born route.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "bounded support",
-      "claim_type_last_reviewed": "2026-05-27T03:00:22.600842+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -19937,37 +19977,94 @@
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "The load-bearing chain is Step 2 plus Steps 3-4: pinning sigma to rho_ref as the pre-record state, then using L\u00fcders/Kraus conditioning to obtain p(j|i)=<psi_i|E_j|psi_i> and the rank-1 Born form.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "cf6e466df5357904e7720a68f69d3f1716b9e63fa734c77727e72317466391ef",
+      "note_hash": "12f91a2dbab72afaaee2079b69e220c05a6c8cf27a53f3145d5564d61517140d",
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: land and cite retained bridge theorems for pre-record identification, L\u00fcders/update or resolved projective-measurement conditioning, and persistent-record-as-Kraus/readout mapping; then re-audit the Born derivation with those direct dependencies.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-28T20:13:08.759983+00:00",
+          "archived_for_note_hash": "cf6e466df5357904e7720a68f69d3f1716b9e63fa734c77727e72317466391ef",
+          "audit_date": "2026-05-27T03:00:22.600842+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_axiom_premise_note_hash": {
+              "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+            },
+            "dep_claim_scope": {
+              "minimal_axioms": null,
+              "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
+            },
+            "dep_claim_type": {
+              "minimal_axioms": "meta",
+              "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "minimal_axioms": "meta",
+              "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
+            },
+            "deps": [
+              "minimal_axioms",
+              "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+            ],
+            "load_bearing_score": 1.5,
+            "runner_hash": null,
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The retained tracial-state dependency now closes only the unique-tracial-state theorem, and explicitly does not identify that state with a pre-record physical reference. The source note still imports the no-extra-structure/pre-record identification, L\u00fcders compositional-consistency update, and record-as-Kraus bridge as admitted or in-flight inputs, so the Born derivation does not close from the one-hop retained packet.",
+          "claim_scope": "Bounded Born-rule repair route on the qubit-lattice operator algebra: if one assumes the standard Gleason-Busch probability representation on the POVM effect algebra, identifies the unique tracial state with a pre-record reference state, and assumes a L\u00fcders/Kraus record-conditioning bridge, then the usual post-record Born form follows. This audit does not ratify the pre-record identification, the L\u00fcders/update bridge, the record-as-Kraus bridge, or a retained closure of the failed gravitational-Hartree Born route.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-27T03:00:22.600842+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The load-bearing chain is Step 2 plus Steps 3-4: pinning sigma to rho_ref as the pre-record state, then using L\u00fcders/Kraus conditioning to obtain p(j|i)=<psi_i|E_j|psi_i> and the rank-1 Born form.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: land and cite retained bridge theorems for pre-record identification, L\u00fcders/update or resolved projective-measurement conditioning, and persistent-record-as-Kraus/readout mapping; then re-audit the Born derivation with those direct dependencies.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "assert_count": 0,
+            "runner_result": "No runner is registered for this row.",
+            "runner_status": "no_primary_runner",
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the row's Born conclusion depends on physical/readout bridges that are not retained in the restricted packet: the unique tracial state is not yet identified with a pre-record reference state, L\u00fcders compositional consistency is admitted, and record-as-Kraus is still a separate target. Why this blocks: Gleason-Busch supplies the representation form only after a probability assignment is admitted, and the retained tracial theorem supplies a mathematical state, not the physical pre-record/readout bridge needed for this row's claimed Born-rule derivation. Repair target: land retained bridge theorems for the no-extra-structure pre-record identification, L\u00fcders/update rule or its resolved projective-measurement substitute, and persistent-record-as-Kraus/readout mapping, then wire them as direct dependencies. Claim boundary until fixed: this remains a bounded repair route showing how Born follows under named standard/admitted inputs, not a retained derivation from A1+A2."
+        }
+      ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "assert_count": 0,
-        "runner_result": "No runner is registered for this row.",
-        "runner_status": "no_primary_runner",
         "total_pass": 0
       },
       "runner_path": null,
       "title": "Born Rule via Gleason\u2013Busch on the Pre-Record Reference State: Bounded Support / Repair Route",
       "transitive_descendants": 1,
-      "verdict_rationale": "Issue: the row's Born conclusion depends on physical/readout bridges that are not retained in the restricted packet: the unique tracial state is not yet identified with a pre-record reference state, L\u00fcders compositional consistency is admitted, and record-as-Kraus is still a separate target. Why this blocks: Gleason-Busch supplies the representation form only after a probability assignment is admitted, and the retained tracial theorem supplies a mathematical state, not the physical pre-record/readout bridge needed for this row's claimed Born-rule derivation. Repair target: land retained bridge theorems for the no-extra-structure pre-record identification, L\u00fcders/update rule or its resolved projective-measurement substitute, and persistent-record-as-Kraus/readout mapping, then wire them as direct dependencies. Claim boundary until fixed: this remains a bounded repair route showing how Born follows under named standard/admitted inputs, not a retained derivation from A1+A2."
+      "verdict_rationale": null
     },
     "born_scattering_comparison_note": {
       "audit_date": null,
@@ -41071,41 +41168,24 @@
       "verdict_rationale": "The audited claim is only the bounded finite-dimensional implication from an assumed transfer-matrix gap to temporal decay, and that implication closes by standard spectral algebra. The runner constructs random positive Hermitian transfer matrices, checks the spectral identity, ground-state bound, thermal trace-distance bound, and a no-gap counterexample; it does not hard-code a disputed physical gap. The clean boundary is narrow: this does not prove Delta_T > 0 on A_min and does not prove spatial cluster decomposition."
     },
     "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T21:17:34.750748+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-03": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-03": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-03": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-03"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260517-211508-78dc5814-cluster_decomposition_sp-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
-      "claim_scope": "Finite-dimensional conditional bridge: assuming a positive Hermitian slab transfer operator T_x with a nondegenerate top eigenvalue and gap \u0394_x>0, the ground-state and finite-temperature slab correlator bounds (S.7) and (S.8) follow.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T21:17:34.750748+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -41113,34 +41193,84 @@
         "minimal_axioms_2026-05-03"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "The connected term expands as \u03a3_{k\u22651}(\u03bb_k/M_x)^d\u27e80_x|A_p|k\u27e9\u27e8k|B_q|0_x\u27e9 and Cauchy-Schwarz bounds it by \u2016A_p\u2016\u2016B_q\u2016exp(-d\u0394_x).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "fa0582483cd13222dba2bdcf86b0d28f16067f64cf8243b3729029535f44be35",
+      "note_hash": "6aa724c9cf256eb9a5a72381c07aa815ab70d75671e2b83cbd2e4bda726bcba0",
       "note_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop authorities constructing the positive Hermitian spatial slab transfer operator for the canonical Hamiltonian and proving \u0394_x>0, then re-audit any unconditional promotion.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-28T20:13:08.987024+00:00",
+          "archived_for_note_hash": "fa0582483cd13222dba2bdcf86b0d28f16067f64cf8243b3729029535f44be35",
+          "audit_date": "2026-05-17T21:17:34.750748+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-03": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-03": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-03": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-03"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260517-211508-78dc5814-cluster_decomposition_sp-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes.",
+          "claim_scope": "Finite-dimensional conditional bridge: assuming a positive Hermitian slab transfer operator T_x with a nondegenerate top eigenvalue and gap \u0394_x>0, the ground-state and finite-temperature slab correlator bounds (S.7) and (S.8) follow.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T21:17:34.750748+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The connected term expands as \u03a3_{k\u22651}(\u03bb_k/M_x)^d\u27e80_x|A_p|k\u27e9\u27e8k|B_q|0_x\u27e9 and Cauchy-Schwarz bounds it by \u2016A_p\u2016\u2016B_q\u2016exp(-d\u0394_x).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop authorities constructing the positive Hermitian spatial slab transfer operator for the canonical Hamiltonian and proving \u0394_x>0, then re-audit any unconditional promotion.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 5
+          },
+          "verdict_rationale": "The runner performs real finite-dimensional algebraic checks and a no-gap counterexample, but it does not construct T_x or derive \u0394_x>0 from Cl(3) on Z^3. The note is honest that H1 and H2 are open inputs, and the only provided cited authority supplies the minimal framework rather than the missing slab-transfer construction or gap theorem. The retained safe claim is the conditional spectral bridge, not the parent row's unconditional spatial L2 clustering."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 5
+        "total_pass": 0
       },
       "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
       "title": "Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3",
       "transitive_descendants": 1,
-      "verdict_rationale": "The runner performs real finite-dimensional algebraic checks and a no-gap counterexample, but it does not construct T_x or derive \u0394_x>0 from Cl(3) on Z^3. The note is honest that H1 and H2 are open inputs, and the only provided cited authority supplies the minimal framework rather than the missing slab-transfer construction or gap theorem. The retained safe claim is the conditional spectral bridge, not the parent row's unconditional spatial L2 clustering."
+      "verdict_rationale": null
     },
     "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02": {
       "audit_date": null,
@@ -47396,40 +47526,22 @@
       "verdict_rationale": null
     },
     "cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29": {
-      "audit_date": "2026-04-30T19:16:32.931821+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_effective_status": {
-          "alpha_s_derived_note": "audited_conditional",
-          "ckm_third_row_magnitudes_theorem_note_2026-04-24": "audited_conditional",
-          "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25": "audited_conditional",
-          "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29": "audited_conditional",
-          "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24": "audited_conditional"
-        },
-        "deps": [
-          "alpha_s_derived_note",
-          "ckm_third_row_magnitudes_theorem_note_2026-04-24",
-          "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25",
-          "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29",
-          "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
-        ],
-        "load_bearing_score": 0.0,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "No. One-hop dependencies are not all retained (koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29=audited_conditional, cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25=audited_conditional, wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24=audited_conditional), so the chain does not close under the leaf audit rule.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -47441,36 +47553,87 @@
         "alpha_s_derived_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.085,
-      "load_bearing_step": "V8 (Block 1, Koide Q closure attempt) with the retained CKM atlas.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "861b223cd74e063a7b66b2f7a256d1a71984a292fdcdd4ad4e077770184b3f22",
+      "note_hash": "43545f571c06352fefbc64fa31a0766ce822a4a5e260e69c6c7258afa0543eef",
       "note_path": "docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_PROMOTED_VIA_V8_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: audit or repair the listed dependency rows to retained/equivalent closure, then re-audit this claim.",
-      "open_dependency_paths": [
-        "docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md",
-        "docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25.md",
-        "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md",
-        "docs/ALPHA_S_DERIVED_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-28T20:13:09.181519+00:00",
+          "archived_for_note_hash": "861b223cd74e063a7b66b2f7a256d1a71984a292fdcdd4ad4e077770184b3f22",
+          "audit_date": "2026-04-30T19:16:32.931821+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_effective_status": {
+              "alpha_s_derived_note": "audited_conditional",
+              "ckm_third_row_magnitudes_theorem_note_2026-04-24": "audited_conditional",
+              "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25": "audited_conditional",
+              "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29": "audited_conditional",
+              "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24": "audited_conditional"
+            },
+            "deps": [
+              "alpha_s_derived_note",
+              "ckm_third_row_magnitudes_theorem_note_2026-04-24",
+              "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25",
+              "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29",
+              "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
+            ],
+            "load_bearing_score": 0.0,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "No. One-hop dependencies are not all retained (koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29=audited_conditional, cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25=audited_conditional, wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24=audited_conditional), so the chain does not close under the leaf audit rule.",
+          "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": null,
+          "claim_type_provenance": "migration_hint",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "V8 (Block 1, Koide Q closure attempt) with the retained CKM atlas.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "dependency_not_retained: audit or repair the listed dependency rows to retained/equivalent closure, then re-audit this claim.",
+          "open_dependency_paths": [
+            "docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md",
+            "docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25.md",
+            "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md",
+            "docs/ALPHA_S_DERIVED_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1,
+            "total_pass": 2
+          },
+          "verdict_rationale": null
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 1,
+        "B": 0,
         "C": 0,
-        "D": 1,
-        "total_pass": 2
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8.py",
       "title": "Cross-Sector A\u00b2-Q_l-|V_cb| Bridge Support via V8 Composition (V1)",
@@ -50438,41 +50601,24 @@
       "verdict_rationale": "The load-bearing step is a direct finite-dimensional computation of the derivative of the stated runner update, with no WKB, eikonal, external comparator, or cross-note numerical import doing the sign work. The source code computes the derivative from the specified potential profile and propagator and cross-checks it by finite difference; expected signs are used only as checks, not as substituted derivative values. The note's remaining-wall language passes the bounded-wall gate because it explicitly confines the result to finite runner support and names distinct open routes without promoting them into impossibility claims."
     },
     "dimension_selection_lower_bound_bridge_v2_2026-05-20": {
-      "audit_date": "2026-05-22T01:00:24.032652+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
-        },
-        "dep_claim_type": {
-          "dimensional_gravity_table": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "dimensional_gravity_table": "retained_bounded"
-        },
-        "deps": [
-          "dimensional_gravity_table"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-005919-b49b9bae-dimension_selection_lowe-003",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The derivative sign calculation closes algebraically once the eikonal bending rule is admitted. The restricted packet does not derive or independently certify the needed bridge from the finite-k discrete propagator and normalized centroid observable to the WKB/Fermat sign rule.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
-      "claim_scope": "Audited only the bounded analytic sign bridge for scripts/frontier_dimension_selection.py's stated action S=L(1-phi), analytic potential family, and centroid-shift observable at d in the runner's stated family.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T01:00:24.032652+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -50480,36 +50626,86 @@
         "dimensional_gravity_table"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The runner's centroid-shift sign is governed by bending toward larger n_eff = 1 - phi, hence toward larger f_d(r), so raw_delta > 0 exactly when df_d/dr < 0.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "8950a525c7762229752256d9555a159ed85a7af546517d302d575efdea66a302",
+      "note_hash": "a19e54e635ce9220506dc3492560d1718886c2fd2c057677b002692039f06867",
       "note_path": "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a discrete-to-eikonal bridge theorem, or an independent finite-k sign proof, showing the runner's normalized centroid shift has the claimed sign for the stated potential family.",
-      "open_dependency_paths": [
-        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-28T20:13:09.371292+00:00",
+          "archived_for_note_hash": "8950a525c7762229752256d9555a159ed85a7af546517d302d575efdea66a302",
+          "audit_date": "2026-05-22T01:00:24.032652+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+            },
+            "dep_claim_type": {
+              "dimensional_gravity_table": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "dimensional_gravity_table": "retained_bounded"
+            },
+            "deps": [
+              "dimensional_gravity_table"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260522-005919-b49b9bae-dimension_selection_lowe-003",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The derivative sign calculation closes algebraically once the eikonal bending rule is admitted. The restricted packet does not derive or independently certify the needed bridge from the finite-k discrete propagator and normalized centroid observable to the WKB/Fermat sign rule.",
+          "claim_scope": "Audited only the bounded analytic sign bridge for scripts/frontier_dimension_selection.py's stated action S=L(1-phi), analytic potential family, and centroid-shift observable at d in the runner's stated family.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-22T01:00:24.032652+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The runner's centroid-shift sign is governed by bending toward larger n_eff = 1 - phi, hence toward larger f_d(r), so raw_delta > 0 exactly when df_d/dr < 0.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a discrete-to-eikonal bridge theorem, or an independent finite-k sign proof, showing the runner's normalized centroid shift has the claimed sign for the stated potential family.",
+          "open_dependency_paths": [
+            "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 1
+          },
+          "verdict_rationale": "The runner source and stdout support that the code uses the stated analytic potential family and reports the claimed signs for d=1..5. But the note's load-bearing scientific step is not a first-principles computation; it imports standard WKB/eikonal bending as an admitted premise and assumes it faithfully controls the runner's finite-k centroid shift. The cited retained_bounded authority is also narrower than the full d=1..5 analytic family, with d=2 explicitly diagnostic-only in that authority, though the runner source itself supplies the analytic d=2 form."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 1,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 1
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dimension_selection.py",
       "title": "Dimension-Selection Lower-Bound Bridge V2 (Runner-Faithful)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The runner source and stdout support that the code uses the stated analytic potential family and reports the claimed signs for d=1..5. But the note's load-bearing scientific step is not a first-principles computation; it imports standard WKB/eikonal bending as an admitted premise and assumes it faithfully controls the runner's finite-k centroid shift. The cited retained_bounded authority is also narrower than the full d=1..5 analytic family, with d=2 explicitly diagnostic-only in that authority, though the runner source itself supplies the analytic d=2 form."
+      "verdict_rationale": null
     },
     "dimension_selection_note": {
       "audit_date": "2026-05-23T19:58:28.237184+00:00",

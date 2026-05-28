@@ -3,6 +3,7 @@
 **Date:** 2026-05-20
 **Status:** proposal — pre-audit bounded support / repair-route note
 **Type:** bounded support
+**Status authority:** independent audit lane only.
 **Repair route for:** the `audited_failed`
 `BORN_RULE_ANALYSIS_2026-04-11.md` lane (the gravitational Hartree
 fixed-point derivation failed; this note proposes Gleason–Busch on a
@@ -17,18 +18,26 @@ dim-2 extension), Lüders 1951 / Cassinelli-Lahti 1995 (composition-
 consistent update rule), the no-extra-structure premise on the
 pre-record reference (from the companion tracial-state note), and a
 record-as-Kraus identification of the framework's persistent-record
-lane (currently in-flight, not retained). Closure of any one of these
-imports would tighten the route; closure of all five would promote it
-to a retained derivation.
+lane (currently in-flight, not effective authority). Closure of any one of
+these imports would tighten the route; closure of all five would only justify a
+future audit proposal, not a status change from this note.
 
-## What this note derives
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This note is narrowed to a repair-route map over explicitly imported
+Gleason-Busch, Luders/update, pre-record identification, and persistent-record
+premises. It does not derive the probability/readout rule from the current
+framework surface and does not close the Born-rule lane.
+
+## What this route formalizes
 
 On the qubit-lattice framework (A1+A2 in qubit form per
 `MINIMAL_AXIOMS_2026-05-20.md`), with the pre-record reference state
 `ρ_ref = ⊗_x I/2` derived in
 `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`,
 the Born rule for measurement outcomes follows from operator-algebraic
-and probability-theoretic standard mathematics:
+and probability-theoretic standard mathematics, the repair route would have
+the following form if every imported premise below were supplied:
 
 > For any POVM `{E_i}` on the qubit-lattice operator algebra, the
 > probability of outcome `i` for the pre-record system is

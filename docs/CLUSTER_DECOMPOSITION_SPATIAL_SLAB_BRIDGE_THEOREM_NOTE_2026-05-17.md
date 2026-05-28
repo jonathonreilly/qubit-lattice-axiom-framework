@@ -9,6 +9,13 @@ effective status are set only by the independent audit lane.
 **Runner:** `scripts/cluster_decomposition_spatial_slab_bridge_check.py`
 **Log:** `outputs/cluster_decomposition_spatial_slab_bridge_check_2026-05-17.txt`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is the finite-dimensional spectral estimate conditional on
+H1 (positive Hermitian slab transfer operator) and H2 (`Delta_x > 0`). This
+row does not construct the canonical Hamiltonian slab transfer operator and
+does not prove the spatial gap from the framework baseline.
+
 ## Why this note exists
 
 The audit verdict on

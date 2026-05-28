@@ -42148,17 +42148,17 @@
     },
     "audit_backlog_note_2026-05-02": {
       "claim_id": "audit_backlog_note_2026-05-02",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "left_handed_charge_matching_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
+      "note_hash": "cdb2033f1af5e1583a22a60c1cdf6e655ce04f93e30f5838603d5f30b7522d4d",
       "path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
-      "title": "Audit-Backlog Retained Campaign \u2014 Progress Synthesis (Cycles 1-19)"
+      "title": "Audit-Backlog Campaign Progress Synthesis (Cycles 1-19)"
     },
     "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01": {
       "claim_id": "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01",
@@ -43046,12 +43046,12 @@
     },
     "beyond_lattice_qcd_note": {
       "claim_id": "beyond_lattice_qcd_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "47ae1ec2338cf1e44c91b63b4959b58bdf40df58536b9ca009d5a93ddba37df9",
+      "note_hash": "f2646a62065e7c1f0b239be1f9ba1bd1dac08eb9ac1004375c8d40f7b4751858",
       "path": "docs/BEYOND_LATTICE_QCD_NOTE.md",
       "runner_path": "scripts/frontier_beyond_lattice_qcd.py",
       "title": "Beyond Lattice Gauge Theory: Two Concrete Results"
@@ -43238,7 +43238,7 @@
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cf6e466df5357904e7720a68f69d3f1716b9e63fa734c77727e72317466391ef",
+      "note_hash": "12f91a2dbab72afaaee2079b69e220c05a6c8cf27a53f3145d5564d61517140d",
       "path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Born Rule via Gleason\u2013Busch on the Pre-Record Reference State: Bounded Support / Repair Route"
@@ -46347,7 +46347,7 @@
         "minimal_axioms_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fa0582483cd13222dba2bdcf86b0d28f16067f64cf8243b3729029535f44be35",
+      "note_hash": "6aa724c9cf256eb9a5a72381c07aa815ab70d75671e2b83cbd2e4bda726bcba0",
       "path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
       "title": "Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3"
@@ -47042,9 +47042,9 @@
     },
     "cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29": {
       "claim_id": "cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29",
         "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25",
@@ -47053,7 +47053,7 @@
         "alpha_s_derived_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "861b223cd74e063a7b66b2f7a256d1a71984a292fdcdd4ad4e077770184b3f22",
+      "note_hash": "43545f571c06352fefbc64fa31a0766ce822a4a5e260e69c6c7258afa0543eef",
       "path": "docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_PROMOTED_VIA_V8_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/frontier_cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8.py",
       "title": "Cross-Sector A\u00b2-Q_l-|V_cb| Bridge Support via V8 Composition (V1)"
@@ -47447,7 +47447,7 @@
         "dimensional_gravity_table"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8950a525c7762229752256d9555a159ed85a7af546517d302d575efdea66a302",
+      "note_hash": "a19e54e635ce9220506dc3492560d1718886c2fd2c057677b002692039f06867",
       "path": "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
       "runner_path": "scripts/frontier_dimension_selection.py",
       "title": "Dimension-Selection Lower-Bound Bridge V2 (Runner-Faithful)"
@@ -86418,22 +86418,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 645,
+      "bounded_theorem": 647,
       "decoration": 1,
-      "meta": 192,
+      "meta": 193,
       "no_go": 85,
-      "none": 1437,
+      "none": 1434,
       "open_gate": 50,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1060,
+      "bounded_theorem": 1062,
       "decoration": 1,
-      "meta": 192,
+      "meta": 193,
       "no_go": 188,
-      "none": 426,
+      "none": 424,
       "open_gate": 127,
-      "positive_theorem": 585
+      "positive_theorem": 584
     },
     "edge_count": 9861,
     "leaf_count": 807,

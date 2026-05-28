@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 559 |
+| **retained_bounded** | 560 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1195 |
+| unaudited | 1194 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 859 |
+| `audited_clean` | 860 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1425 |
+| `unaudited` | 1424 |
 
 | claim_type | count |
 |---|---:|
@@ -354,6 +354,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_status_correction_audit_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4849,6 +4850,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The direct ledger dependencies are retained-grade: the parent g_bare row is retained_bounded, the rescaling row is retained_bounded, and the constraint-vs-convention row is retained_bounded. The packet's runner verifies the refreshed note structure, parent runner presence, declared repair-candidate links, criteria table, and sister-row inventory with PASS=35 FAIL=0. The source table's loose 'retained' wording for the rescaling row is scoped here as retained-grade, not unbounded retained.
 - **rationale:** No-go/admission gate: the packet does not close a no-go and does not claim that absolute normalization has been derived; it keeps the remaining CN/beta=6 absolute-derivation target outside scope. The bounded status-correction claim closes because the prior missing-runner issue is now false, the two repair-candidate rows are live retained-grade dependencies, and the refreshed packet explicitly keeps proposal_allowed=false for parent promotion. Residual risk is bounded to status metadata: this audit does not prove the canonical normalization from A1+A2, does not turn beta=6 into a first-principles output, and does not upgrade the parent beyond its audit-derived retained_bounded boundary.
 - **auditor confidence:** high
+
+### `g_bare_dynamical_fixation_obstruction_note_2026-04-18`
+
+- **Note:** [`G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md`](../../docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only the cached completed L=4, Lt=4 Wilson-SU(3) plus staggered-fermion six-detector scan under the runner-local beta=6 loud-feature predicate: no listed detector supplies a localized detector-loud non-smooth feature fixing g_bare=1 on that finite surface. This excludes larger volumes, unscanned observables, statistical population claims, cross-lattice persistence, and normalization/operator-algebra routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-context-20260528-gbare-l4-detector-obstruction`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The finite cached runner classifies six L=4 detector outputs against its beta=6 loud-feature predicate and reports no localized feature for all six detectors.  _(class `C`)_
+- **chain closes:** True — The cache completed successfully, the PASS harness reports 6/6 no-feature checks, and the reported feature metrics satisfy the runner predicate: high residuals without kink/extremum do not qualify, while rho(0) has a kink but residual 2.71 below the >3 threshold. The source's N1-N8 gate narrows the negative statement to this finite detector surface and leaves larger-volume and alternate-observable routes open.
+- **rationale:** A fresh restricted-input audit confirmed the runner predicate against the cached metrics: <P>, |L|, and logdet have residuals above 3 sigma but no kink or extremum; lambda_min and spectral gap are subthreshold; rho(0) has a kink but residual 2.71 below threshold. The negative-claim checklist is adequate for the narrow claim because it enumerates six tested detector routes, names the finite-surface/threshold/cache walls, rejects cross-lattice and broad Path 3 closure, discloses the rho(0) shoulder, and preserves larger-volume and alternate-observable routes as open. Therefore the bounded finite-surface obstruction closes cleanly, but only at the stated L=4 six-detector scope.
+- **auditor confidence:** medium
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`
 

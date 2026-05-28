@@ -14247,22 +14247,52 @@
       "verdict_rationale": "The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes."
     },
     "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T06:10:50.064494+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "minimal_axioms": null,
+          "no_per_site_chirality_theorem_note_2026-05-02": "Under the k=1 qubit-per-site reading H_x = C^2 with the canonical Pauli Cl(3) action, no \u03b3_5 \u2208 M_2(C) satisfies \u03b3_5^2 = I and anticommutes with all three generators."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "minimal_axioms": "meta",
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "minimal_axioms",
+          "no_per_site_chirality_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "68d8d90af5cc3643b58b90875058346bc6624dd07395c8f4eaffe14d8bddecb7",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "raman-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-lattice-wz-fujikawa-narrow",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded finite-matrix identity closes on the auxiliary Z4 site-index grading and direct runner construction. The grading is not a forbidden per-site gamma5 in M_2(C), and the row's scope excludes anomaly/cohomology/continuum claims.",
       "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
+      "claim_scope": "Finite Z4 staggered-grading trace theorem on L={4,6} even periodic boxes, for free, random U(1), and flux-winding backgrounds and tested t values: epsilon D epsilon = -D; Tr(epsilon exp(-t D^dag D)) is t-stable, integer-valued, equals the zero-mode chirality count, and is gauge-invariant. This does not retain any ABJ/Wess-Zumino/Fujikawa anomaly replacement, continuum coefficient, cohomology obstruction, or nonzero-index claim.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T06:10:50.064494+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -14272,34 +14302,35 @@
         "cpt_exact_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Because epsilon anticommutes with finite anti-Hermitian D, D^dag D commutes with epsilon and nonzero eigenspaces pair with opposite epsilon, so Tr(epsilon exp(-t D^dag D)) reduces to n_+ - n_-.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "6454fe6ccbdab2355dd510bf81d906832662c9d690389d9c16e28190da1b759c",
       "note_path": "docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit only if downstream text uses this as an ABJ/WZ/Fujikawa anomaly, continuum coefficient, local-cohomology, or nonzero-index theorem.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 50,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 50
       },
       "runner_path": "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py",
       "title": "Finite Z4 Staggered-Grading Trace Theorem (Bounded)",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note is narrowly scoped to finite Z4 staggered-grading trace identities and explicitly disclaims ABJ/Wess-Zumino/Fujikawa replacement claims. Independent check: each nearest-neighbor hop flips epsilon, giving epsilon D epsilon = -D; with finite anti-Hermitian D, D^dag D commutes with epsilon and nonzero modes pair between epsilon sectors, so Tr(epsilon exp(-t D^dag D)) equals the zero-mode chirality count and is t-independent/integer-valued. U(1) gauge rotations conjugate D while commuting with site-diagonal epsilon, so cyclicity gives gauge invariance. The runner constructs D matrices, U(1) backgrounds, gauge rotations, heat kernels, and zero-mode counts on L=4 and L=6 with PASS=50 FAIL=0. The observed index is zero throughout, which is inside the stated bounded scope and does not undercut the finite trace theorem."
     },
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17": {
       "audit_date": null,

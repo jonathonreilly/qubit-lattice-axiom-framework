@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 573 |
+| **retained_bounded** | 574 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1166 |
+| unaudited | 1165 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 874 |
+| `audited_clean` | 875 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1396 |
+| `unaudited` | 1395 |
 
 | claim_type | count |
 |---|---:|
@@ -170,6 +170,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | B | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1825,6 +1826,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.  _(class `A`)_
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
+- **auditor confidence:** high
+
+### `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Z4 staggered-grading trace theorem on L={4,6} even periodic boxes, for free, random U(1), and flux-winding backgrounds and tested t values: epsilon D epsilon = -D; Tr(epsilon exp(-t D^dag D)) is t-stable, integer-valued, equals the zero-mode chirality count, and is gauge-invariant. This does not retain any ABJ/Wess-Zumino/Fujikawa anomaly replacement, continuum coefficient, cohomology obstruction, or nonzero-index claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `raman-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-lattice-wz-fujikawa-narrow`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Because epsilon anticommutes with finite anti-Hermitian D, D^dag D commutes with epsilon and nonzero eigenspaces pair with opposite epsilon, so Tr(epsilon exp(-t D^dag D)) reduces to n_+ - n_-.  _(class `A`)_
+- **chain closes:** True — The bounded finite-matrix identity closes on the auxiliary Z4 site-index grading and direct runner construction. The grading is not a forbidden per-site gamma5 in M_2(C), and the row's scope excludes anomaly/cohomology/continuum claims.
+- **rationale:** The source note is narrowly scoped to finite Z4 staggered-grading trace identities and explicitly disclaims ABJ/Wess-Zumino/Fujikawa replacement claims. Independent check: each nearest-neighbor hop flips epsilon, giving epsilon D epsilon = -D; with finite anti-Hermitian D, D^dag D commutes with epsilon and nonzero modes pair between epsilon sectors, so Tr(epsilon exp(-t D^dag D)) equals the zero-mode chirality count and is t-independent/integer-valued. U(1) gauge rotations conjugate D while commuting with site-diagonal epsilon, so cyclicity gives gauge invariance. The runner constructs D matrices, U(1) backgrounds, gauge rotations, heat kernels, and zero-mode counts on L=4 and L=6 with PASS=50 FAIL=0. The observed index is zero throughout, which is inside the stated bounded scope and does not undercut the finite trace theorem.
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`

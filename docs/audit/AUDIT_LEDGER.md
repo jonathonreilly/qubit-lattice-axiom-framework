@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1245 |
+| unaudited | 1244 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 826 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1475 |
+| `unaudited` | 1474 |
 
 | claim_type | count |
 |---|---:|
@@ -956,6 +956,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1658,6 +1659,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.  _(class `A`)_
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
+- **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded source-surface repair for staggered-only reflection positivity: the row correctly records a finite-runner counterexample to direct single-step spin-basis Lagrangian RP under Sharatchandra Theta alone, and it narrows the intended positive surface to a 2-step blocked staggered-KS formulation. The 2-step blocked transfer-matrix positivity theorem itself is not audited as closed by this row.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note replaces the prior single-step Lagrangian RP claim with the statement that the standard staggered-KS positive surface is the 2-step blocked transfer matrix T_hat^2=S_hat^2, while the primary runner shows the direct single-step spin-basis Gram matrix is non-PSD.  _(class `B`)_
+- **chain closes:** False — The primary runner closes the narrow single-step counterexample, and the retained one-hop dependencies close determinant positivity plus an abstract norm-square lemma. They do not construct the 2-step blocked staggered-KS transfer matrix or prove its positivity from the repo packet.
+- **rationale:** Issue: the source's positive replacement claim rests on the 2-step blocked staggered-KS transfer-matrix theorem cited to external literature, but the restricted packet provides no retained theorem or runner that constructs T_hat^2=S_hat^2 and proves positivity on the claimed 2-step physical Hilbert space. Why this blocks: the primary runner verifies a narrow negative result for the single-step Sharatchandra-Theta spin-basis Gram matrix; a counterexample to the removed surface does not by itself prove the replacement 2-step RP theorem. Repair target: add or wire a retained 2-step blocked staggered-KS transfer-matrix bridge, with a runner/proof that constructs the blocked Hilbert space, transfer matrix, reflection map, and positivity statement rather than citing them. Claim boundary until fixed: the direct single-step spin-basis Lagrangian RP surface under Sharatchandra Theta alone has a finite non-PSD witness; determinant positivity and the abstract norm-square lemma remain available on their audited narrow scopes, but full 2-step RP remains conditional.
 - **auditor confidence:** high
 
 ### `background_independence_note`

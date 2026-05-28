@@ -143989,24 +143989,42 @@
       "verdict_rationale": "The load-bearing reduction is an algebraic identity applied to a directly verified 3-real cyclic Hermitian subspace, with retained one-hop authority for the character/operator bridge. The runner source performs symbolic commutant, basis, path-algebra, and bridge checks rather than merely printing constants. Its observed charged-lepton portion is an external numerical comparator, but it is not needed for the bounded target-size theorem and does not carry the claimed structural conclusion."
     },
     "koide_cl3_selector_gap_note_2026-04-19": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T02:41:49.429982+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited."
+        },
+        "dep_claim_type": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "retained"
+        },
+        "deps": [
+          "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+        ],
+        "load_bearing_score": 9.395,
+        "runner_hash": null,
+        "transitive_descendants": 237
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-koide-selector-gap-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source now consistently marks the global Cl(3)-alone selector non-derivability statement and every listed route-exhaustion claim as open inventory, not as a closed theorem. The direct retained parent supports only the V_eff coefficient assignment/gap context, which is all this open gate uses as load-bearing input.",
       "claim_id": "koide_cl3_selector_gap_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Open selector-gap inventory for the Koide Cl(3)->SM embedding routes: the retained parent supplies only the V_eff coefficient-assignment/gap context, while Kramers-doublet, baryon-Schur, SU(3)-coupling, degeneracy, full-4x4, transport, and kappa_* route closures remain unaudited open gates.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T02:41:49.429982+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -144014,19 +144032,19 @@
         "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 9.395,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note is graph-visible only as an inventory of candidate Cl(3) selector-gap routes; only the parent V_eff coefficient assignment is supported, and all route-exhaustion or global non-derivability claims remain open pending per-route retained authorities.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "141d829d4a7fba9c6a13d26f953ccfb2ad20fc9d2027a4cb8662974f03a69f4d",
       "note_path": "docs/KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit only if a per-route retained authority lands or the source promotes the inventory into a closed Cl(3)-alone non-derivability theorem or a specific route-exhaustion claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -144266,7 +144284,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -144277,7 +144295,7 @@
       "runner_path": null,
       "title": "Koide Cl(3) \u2192 SM Embedding \u2014 Selector Gap Note",
       "transitive_descendants": 237,
-      "verdict_rationale": null
+      "verdict_rationale": "The scoped open-gate claim closes: the note does not assert a retained no-go, does not exhaust the listed Cl(3) routes, and explicitly prevents downstream consumers from citing its route numerics or route failures as bounded theorem values. Its only retained input is the parent V_eff coefficient-assignment/gap context, and all selector-closure routes are left pending direct retained dependencies or runners. Residual risk is future source broadening; if any listed route is promoted from inventory to conclusion, it needs its own audit."
     },
     "koide_cone_completing_root_narrow_theorem_note_2026-05-02": {
       "audit_date": "2026-05-05T11:38:02.248823+00:00",

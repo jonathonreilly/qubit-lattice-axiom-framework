@@ -24817,6 +24817,10 @@
       "to": "quark_bimodule_lo_shell_normalization_theorem_note_2026-04-19"
     },
     {
+      "from": "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
+      "to": "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+    },
+    {
       "from": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
       "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
@@ -79019,6 +79023,20 @@
       "runner_path": "scripts/frontier_strc_lo_collinearity_theorem.py",
       "title": "STRC-LO / BICAC Theorem from Exact 1(+)5 Channel Completeness"
     },
+    "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26": {
+      "claim_id": "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a58c458678bafd5907daab987ba54012cd44b807054e4fc627cd0559969fb717",
+      "path": "docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/strong_cp_epsilon_pseudotensor_oh_sign_runner.py",
+      "title": "Strong-CP Epsilon-Pseudotensor O_h Sign Bridge -- Bounded Note"
+    },
     "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19": {
       "claim_id": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
       "claim_type_author_hint": "bounded_theorem",
@@ -86976,7 +86994,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 663,
+      "bounded_theorem": 664,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86985,7 +87003,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1073,
+      "bounded_theorem": 1074,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86993,10 +87011,10 @@
       "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9911,
+    "edge_count": 9912,
     "leaf_count": 822,
-    "node_count": 2603,
+    "node_count": 2604,
     "root_count": 866,
-    "runners_with_path": 2178
+    "runners_with_path": 2179
   }
 }

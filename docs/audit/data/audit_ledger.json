@@ -11994,7 +11994,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 23.866,
+      "load_bearing_score": 23.867,
       "load_bearing_step": "The complexification splits as Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands distinguished by \u03c9 \u2192 \u00b1i, so each summand has the unique 2-dimensional M_2(C) irreducible module and finite-dimensional representations decompose into copies of the two chiral irreps.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -12509,7 +12509,7 @@
       },
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
-      "transitive_descendants": 932,
+      "transitive_descendants": 933,
       "verdict_rationale": "The load-bearing step is an algebraic Clifford-algebra classification and representation-theory decomposition, not a numerical fit, definition, or external comparator. Both cited one-hop authorities are retained-grade and directly cover the split, chirality labels, two-dimensional irreps, and uniqueness within chirality. The runner source performs concrete Pauli-matrix and chirality checks, with one weak random-search exhibit for 3D nonexistence, but the proof of odd-dimensional exclusion is supplied by the retained algebraic decomposition rather than by that search."
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
@@ -37915,7 +37915,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 24.904,
+      "load_bearing_score": 24.905,
       "load_bearing_step": "Cl(3,0) is real-isomorphic to M_2(C), and after complexification the central idempotents e_\u00b1 split it as M_2(C) \u2295 M_2(C), whose irreducible modules have complex dimension 2.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -37936,7 +37936,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
       "title": "Cl(3) Complexification Split Narrow Theorem",
-      "transitive_descendants": 957,
+      "transitive_descendants": 958,
       "verdict_rationale": "The load-bearing content is a standard class-(A) algebraic closure: centrality and square of the pseudoscalar, the real-algebra isomorphism Cl(3,0) \u2245 M_2(C), the complexified idempotent split, and the 2-dimensional simple-module readout. The runner source genuinely performs exact symbolic Pauli-matrix and abstract idempotent checks rather than importing external constants or fitted premises. The proof stays within the stated abstract algebra scope and explicitly excludes the open physical per-site Hilbert-space bridge."
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
@@ -38318,13 +38318,13 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -38345,7 +38345,7 @@
       },
       "runner_path": "scripts/cl3_oh_cubic_lift_faithful_runner.py",
       "title": "Cl(3) Faithful Lift of the Cubic Point Group O_h \u2014 Narrow Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": null
     },
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
@@ -38429,7 +38429,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 18.369,
+      "load_bearing_score": 18.37,
       "load_bearing_step": "The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with summands distinguished by omega = +/- i, yields exactly the two faithful irreducible complex 2-dimensional representations.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -38450,7 +38450,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
       "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
-      "transitive_descendants": 934,
+      "transitive_descendants": 935,
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is exact local Clifford/Pauli representation theory and closes from the stated generator relations plus standard finite-dimensional algebra. The source note explicitly excludes physical Hilbert-space identification and staggered-fermion bridges, so those exclusions bound scope but do not make the local algebra theorem conditional. Under clarified A1, the Cl(3,0)/Pauli local-algebra content is part of the closed qubit-algebra surface, so positive_theorem is the correct type. The runner performs exact class-A algebra checks and imports no external comparator or fitted premise. | The restricted claim is exact finite-dimensional Clifford/Pauli representation theory and does not import a physical Hilbert-space identification, staggered-fermion bridge, or open framework gate. Its load-bearing step is ordinary algebraic classification plus Schur's lemma, supported by exact local checks in the runner and no external comparator or tuned input. Under the clarified A1 context, this local Cl(3,0)/Pauli representation scope is a closed local-algebra theorem, so positive_theorem is the correct typing rather than bounded_theorem. | The restricted claim is an exact algebraic theorem about the local Clifford/Pauli representation surface, with no imported physical Hilbert-space bridge or open gate. Under the clarified A1 context, this local algebraic scope is not merely bounded by an admitted premise; it is the closed local-algebra content of the framework and qualifies as positive_theorem. The runner supports the algebraic checks with exact symbolic matrix computations and introduces no external comparator or tuned input. | The restricted claim is purely local algebra: it assumes only the Cl(3,0) generator relations and proves Pauli existence, omega centrality with omega^2 = -I, and the two irreducible chirality sectors. Under the clarified A1 context, this is not an admitted physical bridge or conditional Hilbert-space identification; it is a closed local-algebra theorem. The runner checks are exact algebraic A-class checks and introduce no external comparator, tuned value, or cross-note premise. | Both audits agree that the derivation closes and that the load-bearing step is class A algebraic representation theory. The disagreement is claim_type: under clarified A1, this exact local Cl(3,0)/Pauli representation scope has no admitted physical bridge, open dependency, or external comparator, so it is a positive_theorem rather than merely bounded. The note's exclusions of physical Hilbert-space identification and staggered-fermion content are scope controls, not unclosed premises for the audited local theorem."
     },
     "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": {
@@ -265360,6 +265360,59 @@
       "transitive_descendants": 235,
       "verdict_rationale": null
     },
+    "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "a58c458678bafd5907daab987ba54012cd44b807054e4fc627cd0559969fb717",
+      "note_path": "docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/strong_cp_epsilon_pseudotensor_oh_sign_runner.py",
+      "title": "Strong-CP Epsilon-Pseudotensor O_h Sign Bridge -- Bounded Note",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
+    },
     "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19": {
       "audit_date": "2026-05-27T03:59:51.398123+00:00",
       "audit_state_snapshot": {
@@ -319800,7 +319853,7 @@
     "preserved_archived_failed": 44,
     "preserved_existing": 2445,
     "re_audit_required": 0,
-    "row_count": 2489,
-    "seeded_new": 0
+    "row_count": 2490,
+    "seeded_new": 1
   }
 }

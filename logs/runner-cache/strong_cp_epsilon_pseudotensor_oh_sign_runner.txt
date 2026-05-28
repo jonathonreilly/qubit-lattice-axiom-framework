@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/strong_cp_epsilon_pseudotensor_oh_sign_runner.py
+runner_sha256: 691fa04a7206db7b8c312856883664feb62d54ee5933df7d14466e91e5498b92
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+============================================================================
+STRONG-CP SUPPORT: EPSILON-PSEUDOTENSOR O_h SIGN BRIDGE
+============================================================================
+
+Sanity: O_h structure
+----------------------------------------------------------------------------
+  [PASS] |O_h| = 48  (got 48)
+  [PASS] 24 proper + 24 improper rotations  (proper=24, improper=24)
+
+Wilson plaquette action is O_h-invariant
+----------------------------------------------------------------------------
+  [PASS] Wilson action invariant under 12 O_h elements  (S_W = -1.9224)
+
+Levi-Civita with one temporal index is O_h-pseudotensor
+----------------------------------------------------------------------------
+  [PASS] epsilon_{ijk} -> det(R)*epsilon for all 48 O_h elements
+
+Epsilon F F slot transforms as Q -> det(R) * Q
+----------------------------------------------------------------------------
+  [PASS] Q = epsilon^{ijk} F_{0i} F_{jk} invariant under proper R (5 F samples x 6 R)
+  [PASS] Q = epsilon^{ijk} F_{0i} F_{jk} sign-flips under improper R (5 F samples x 6 R)
+
+Multiple abstract F samples share the same index law
+----------------------------------------------------------------------------
+  [PASS] sample_F_0: Q_R / Q_orig = det(R) = -1  (ratio = -1.0000+0.0000j)
+  [PASS] sample_F_1: Q_R / Q_orig = det(R) = -1  (ratio = -1.0000-0.0000j)
+  [PASS] sample_F_2: Q_R / Q_orig = det(R) = -1  (ratio = -1.0000-0.0000j)
+
+============================================================================
+TOTAL: PASS=9 FAIL=0
+VERDICT: Wilson plaquette invariance and epsilon-pseudotensor
+sign law hold on the bounded checks; coefficient exclusion
+remains conditional on a separate O_h-invariant action-class
+result.
+
+----- stderr -----
+

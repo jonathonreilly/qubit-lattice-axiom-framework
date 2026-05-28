@@ -22032,6 +22032,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_strc_lo_collinearity_theorem.py"
     },
+    "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 24,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/strong_cp_epsilon_pseudotensor_oh_sign_runner.py"
+    },
     "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19": {
       "assert_count": 0,
       "counts": {
@@ -56492,6 +56504,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/strong_cp_epsilon_pseudotensor_oh_sign_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 24,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/structured_chokepoint_bridge.py": {
       "assert_count": 0,
       "claims": [
@@ -57501,12 +57528,12 @@
     "dominant_class_distribution": {
       "A": 263,
       "B": 294,
-      "C": 768,
+      "C": 769,
       "D": 307,
       "none": 441
     },
-    "runners_classified": 2073,
-    "runners_with_C": 1009,
+    "runners_classified": 2074,
+    "runners_with_C": 1010,
     "runners_with_D": 613
   }
 }

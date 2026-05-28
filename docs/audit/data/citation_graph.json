@@ -24489,10 +24489,6 @@
       "to": "graph_dirac_requirements_2026-04-10"
     },
     {
-      "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-      "to": "minimal_axioms_2026-04-11"
-    },
-    {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
       "to": "left_handed_charge_matching_note"
     },
@@ -78400,14 +78396,12 @@
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "minimal_axioms_2026-04-11"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "note_hash": "ce0ab768f13eddc3ba9ec5a2048ecbcb50de64b263f4543c7b9a67337b15fb0f",
       "path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
-      "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note"
+      "title": "Staggered + Wilson Supplied-Surface Determinant Positivity"
     },
     "stale_narrative_review_2026-05-03": {
       "claim_id": "stale_narrative_review_2026-05-03",
@@ -86288,6 +86282,7 @@
     "staggered_self_consistent_two_body_note_2026-04-11",
     "staggered_test_mass_companion_note_2026-04-11",
     "staggered_two_field_wave_note",
+    "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
     "stale_narrative_review_2026-05-03",
     "strong_cp_theta_zero_note",
     "structured_chokepoint_bridge_note",
@@ -86458,10 +86453,10 @@
       "open_gate": 128,
       "positive_theorem": 585
     },
-    "edge_count": 9863,
+    "edge_count": 9862,
     "leaf_count": 807,
     "node_count": 2580,
-    "root_count": 855,
+    "root_count": 856,
     "runners_with_path": 2155
   }
 }

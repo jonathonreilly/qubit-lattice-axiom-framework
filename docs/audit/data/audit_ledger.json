@@ -179396,13 +179396,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 47,
+      "direct_in_degree": 46,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 33.396,
+      "load_bearing_score": 32.887,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -179649,7 +179649,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Inputs (SUPERSEDED)",
-      "transitive_descendants": 952,
+      "transitive_descendants": 946,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-05-03": {
@@ -263046,65 +263046,43 @@
       "verdict_rationale": "The claim is scoped to a bounded corrected wave-field prototype, not retained universal robustness. Current output confirms W1-W4 on all three families, W6 only on growing, and width response as a diagnostic rather than a gate. Residual risk is limited to the stated lack of universal contraction, full state-family robustness, larger-graph battery, and retarded-field closure."
     },
     "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05": {
-      "audit_date": "2026-05-28T01:25:08.601814+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "minimal_axioms_2026-04-11": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-04-11": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-04-11": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-04-11"
-        ],
-        "load_bearing_score": 10.794,
-        "runner_hash": "f5115ce1145d6366453a50167d854516411f958d95072a2a02febf949baca7b7",
-        "transitive_descendants": 887
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The determinant algebra and runner checks close on the supplied symmetric-canonical matrix surface, but the row's only declared dependency is the superseded minimal_axioms_2026-04-11 meta note and the source still imports parent canonical-surface assertions not retained in the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-      "claim_scope": "Bounded determinant algebra on a supplied symmetric-canonical matrix surface: for balanced sublattices and M=[[alpha I,K],[-K^dag,alpha I]] with real nonzero alpha=m+r d, the determinant factorizes as prod_i(alpha^2+sigma_i^2)>0. Certification that this surface is the current framework Wilson/staggered convention remains conditional.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-28T01:25:08.601814+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "minimal_axioms_2026-04-11"
-      ],
+      "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.806,
-      "load_bearing_step": "After epsilon-block ordering and SVD K=U Sigma V^dag, gamma5 M is unitarily equivalent to independent 2x2 blocks [[alpha,sigma_i],[sigma_i,-alpha]], so det(M)=det(epsilon)^-1 det(epsilon M)=prod_i(alpha^2+sigma_i^2)>0.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "note_hash": "ce0ab768f13eddc3ba9ec5a2048ecbcb50de64b263f4543c7b9a67337b15fb0f",
       "note_path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: replace the direct dependency on superseded minimal_axioms_2026-04-11 with current retained/axiom-premise authority for the matrix surface, or reframe the row as explicitly supplied-surface algebra with no framework-convention authority claim.",
-      "open_dependency_paths": [
-        "minimal_axioms_2026-04-11"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-07T08:10:02.495039+00:00",
@@ -263367,22 +263345,74 @@
             "total_pass": 26
           },
           "verdict_rationale": "The presented determinant factorisation is a genuine algebraic closure over the stated symmetric-canonical hypotheses, and the runner source actually constructs finite SU(3) staggered operators and verifies the block factorisation rather than printing constants. However, the proof explicitly depends on admitted inputs D1-D4, including parent-note conventions and the symmetric Wilson restriction, while the restricted upstream authority provided here is `docs/MINIMAL_AXIOMS_2026-04-11.md`, marked superseded/meta. Under the rubric, that non-retained upstream and the imported unclosed conventions force a conditional verdict even though the local algebra is sound on its assumed surface."
+        },
+        {
+          "archived_at": "2026-05-28T20:45:16.826007+00:00",
+          "archived_for_note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+          "audit_date": "2026-05-28T01:25:08.601814+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "minimal_axioms_2026-04-11": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-04-11": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-04-11": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-04-11"
+            ],
+            "load_bearing_score": 10.794,
+            "runner_hash": "f5115ce1145d6366453a50167d854516411f958d95072a2a02febf949baca7b7",
+            "transitive_descendants": 887
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The determinant algebra and runner checks close on the supplied symmetric-canonical matrix surface, but the row's only declared dependency is the superseded minimal_axioms_2026-04-11 meta note and the source still imports parent canonical-surface assertions not retained in the restricted packet.",
+          "claim_scope": "Bounded determinant algebra on a supplied symmetric-canonical matrix surface: for balanced sublattices and M=[[alpha I,K],[-K^dag,alpha I]] with real nonzero alpha=m+r d, the determinant factorizes as prod_i(alpha^2+sigma_i^2)>0. Certification that this surface is the current framework Wilson/staggered convention remains conditional.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T01:25:08.601814+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "After epsilon-block ordering and SVD K=U Sigma V^dag, gamma5 M is unitarily equivalent to independent 2x2 blocks [[alpha,sigma_i],[sigma_i,-alpha]], so det(M)=det(epsilon)^-1 det(epsilon M)=prod_i(alpha^2+sigma_i^2)>0.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "dependency_not_retained: replace the direct dependency on superseded minimal_axioms_2026-04-11 with current retained/axiom-premise authority for the matrix surface, or reframe the row as explicitly supplied-surface algebra with no framework-convention authority claim.",
+          "open_dependency_paths": [
+            "minimal_axioms_2026-04-11"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 7,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 26
+          },
+          "verdict_rationale": "Issue: the algebraic bridge is valid on the supplied surface M_W=r d I, but the source cites the superseded minimal_axioms_2026-04-11 stack and parent canonical-surface assertions for why that surface is the framework Wilson/staggered convention. Why this blocks: the audit packet can certify the determinant factorization as bounded algebra, but not the authority that the current framework is on that symmetric-canonical Wilson surface. Independent math check: SVD of K reduces epsilon M to 2x2 blocks with determinant -(alpha^2+sigma_i^2); det(epsilon)=(-1)^(n/2), so the signs cancel and det(M)=prod_i(alpha^2+sigma_i^2), strictly positive for alpha=m+r d != 0. Repair target: replace the superseded minimal-axioms dependency with the current axiom premise or a retained surface-selection theorem, and wire/audit any parent convention needed for M_W=r d I. Claim boundary until fixed: the determinant positivity formula is sound as a bounded algebraic theorem on a supplied symmetric-canonical matrix surface, not yet as a current-framework Wilson-sector authority."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 7,
+        "C": 0,
         "D": 0,
-        "total_fail": 0,
-        "total_pass": 26
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
-      "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note",
+      "title": "Staggered + Wilson Supplied-Surface Determinant Positivity",
       "transitive_descendants": 894,
-      "verdict_rationale": "Issue: the algebraic bridge is valid on the supplied surface M_W=r d I, but the source cites the superseded minimal_axioms_2026-04-11 stack and parent canonical-surface assertions for why that surface is the framework Wilson/staggered convention. Why this blocks: the audit packet can certify the determinant factorization as bounded algebra, but not the authority that the current framework is on that symmetric-canonical Wilson surface. Independent math check: SVD of K reduces epsilon M to 2x2 blocks with determinant -(alpha^2+sigma_i^2); det(epsilon)=(-1)^(n/2), so the signs cancel and det(M)=prod_i(alpha^2+sigma_i^2), strictly positive for alpha=m+r d != 0. Repair target: replace the superseded minimal-axioms dependency with the current axiom premise or a retained surface-selection theorem, and wire/audit any parent convention needed for M_W=r d I. Claim boundary until fixed: the determinant positivity formula is sound as a bounded algebraic theorem on a supplied symmetric-canonical matrix surface, not yet as a current-framework Wilson-sector authority."
+      "verdict_rationale": null
     },
     "stale_narrative_review_2026-05-03": {
       "audit_date": null,

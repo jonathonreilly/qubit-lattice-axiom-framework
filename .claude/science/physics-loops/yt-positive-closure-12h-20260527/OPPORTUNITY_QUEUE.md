@@ -228,3 +228,13 @@ or rank 4, but rank 1 now requires a genuinely accepted physical theorem for
 nearest-face/readout or another zero-singlet top-block law beyond current
 boundary geometry; otherwise pivot to accepted strict same-source top/W
 pole-row data with contact, FV/IR, and model-class controls.
+
+Queue refresh after the twenty-ninth block: positive closure remains open.
+The primitive singular-boundary intervention support result strengthens the
+hard-boundary candidate: on the reflection-even C3 RN/Fisher curve, least-KL
+singular support loss selects `P_nt/2` and would conditionally give the target
+row. The actual open import is now sharper: derive/accept that primitive
+singular no-hidden-record top-readout law as physical, with same-surface
+generator factorization, or produce accepted strict same-source top/W pole-row
+data with contact, FV/IR, and model-class controls. Full-simplex least-KL
+degeneracy prevents treating the support result as closure.

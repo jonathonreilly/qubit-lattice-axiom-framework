@@ -1,5 +1,42 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 29
+
+Scope:
+
+- C3 primitive singular-boundary intervention support note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the support-boundary artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, reflection-even least-KL singular boundary selection, full-simplex degeneracy, coefficient consequences, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is exact-support/open primitive-singular-boundary readout law; the support result is not promoted to physical top-readout closure. |
+| Imports / support | DISCLOSED | The primitive singular top-readout law, same-surface generator factorization, and strict pole rows remain open; forbidden mass/target/fit inputs are absent. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: upstream_support`, actual status, proposal firewall, and no-go boundary are explicit. |
+
+Disposition: pass for support-boundary artifact only; independent audit still
+required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=96 FAIL=0`
+- Full stack runner: `PASS=441 FAIL=0`
+- Adjacent runners passed: hard-boundary support `PASS=97`, hard-boundary
+  readout-law no-go `PASS=81`, minimum-information readout no-go `PASS=103`,
+  nontrivial-block support `PASS=85`, primitive record law `PASS=75`, strict
+  sparse availability audit `PASS=74`, direct sparse certificate `PASS=88`,
+  first-principles transfer response `PASS=56`, and same-surface matrix
+  factorization `PASS=77`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 28
 
 Scope:

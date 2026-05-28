@@ -1,0 +1,91 @@
+{
+  "actual_current_surface_status": "exact-support / open primitive-singular-boundary readout law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_primitive_singular_boundary_top_readout_law_derived": false,
+    "accepted_same_surface_generator_factorization_derived": false,
+    "bare_retained_allowed": false,
+    "least_kl_full_simplex_unique_top_block": false,
+    "least_kl_reflection_even_boundary_selects_Pnt": true,
+    "no_forbidden_imports": true,
+    "primitive_singular_boundary_rule_formulated": true,
+    "proposal_allowed": false,
+    "strict_top_w_response_certificate_present": false
+  },
+  "coefficient_consequence": {
+    "P_0_response": "2/sqrt(6)",
+    "P_nt_over_2_response": "-1/sqrt(6)",
+    "conditional_top_row_if_P_0": "A/sqrt(3)",
+    "conditional_top_row_if_P_nt_over_2": "A/sqrt(12)",
+    "singlet_readout_if_P_0": "2/sqrt(6)",
+    "target_readout_if_P_nt_over_2": "1/sqrt(6)"
+  },
+  "dependency_statuses": {
+    "block_support": "exact-support / open nontrivial-block membership law",
+    "full_stack": "exact-support / open strict-response gate",
+    "hard_boundary_support": "exact-support / open hard-boundary readout law",
+    "hard_boundary_underdetermination": "no-go / open hard-boundary readout law",
+    "mininfo_no_go": "no-go / open minimum-information readout law",
+    "primitive_record_law": "exact-support",
+    "real_source": "exact-support",
+    "strict_availability": "no-go"
+  },
+  "fail_count": 0,
+  "full_simplex_degeneracy_no_go": {
+    "full_simplex_least_kl_faces": {
+      "drop_P0": {
+        "B_x_response": "-sqrt(6)/6",
+        "kl": "log(3/2)",
+        "law": "(0, 1/2, 1/2)"
+      },
+      "drop_Pomega": {
+        "B_x_response": "sqrt(6)/12",
+        "kl": "log(3/2)",
+        "law": "(1/2, 0, 1/2)"
+      },
+      "drop_Pomega2": {
+        "B_x_response": "sqrt(6)/12",
+        "kl": "log(3/2)",
+        "law": "(1/2, 1/2, 0)"
+      }
+    },
+    "full_simplex_least_kl_unique": false,
+    "reflection_even_curve_restriction_load_bearing": true
+  },
+  "no_go_audit": {
+    "not_pruned": "a future accepted same-surface theorem identifying top readout with primitive singular no-hidden-record boundary intervention",
+    "reason": "The finite theorem derives interior RN/I-projection source laws for named expectation biases. Its singular-boundary extension selects P_nt only after adding a primitive hard-boundary readout criterion on the reflection-even C3 curve; that criterion is not accepted on the actual current surface.",
+    "route_pruned": "finite primitive no-hidden-record intervention theorem derives accepted physical singular hard-boundary top readout",
+    "route_still_live": [
+      "accepted primitive singular-boundary top-readout law plus generator factorization",
+      "another accepted physical top-block/readout law excluding P_0",
+      "accepted strict same-source top/W pole rows with controls"
+    ]
+  },
+  "pass_count": 96,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The least-KL singular boundary law on the reflection-even C3 RN/Fisher curve selects P_nt and would give A/sqrt(12) with same-surface generator factorization. The actual current surface has not accepted primitive singular-boundary readout as the physical top law and still lacks strict pole-row controls.",
+  "reachability_to_target": "supports",
+  "reflection_even_boundary_kl_support": {
+    "baseline": "(1/3, 1/3, 1/3)",
+    "kl_to_baseline": {
+      "P_0": "log(3)",
+      "P_nt_over_2": "log(3/2)"
+    },
+    "least_kl_reflection_even_boundary": "P_nt/2",
+    "maximum_entropy_reflection_even_boundary": "P_nt/2",
+    "nearest_fisher_reflection_even_boundary": "P_nt/2",
+    "reflection_even_boundary_endpoints": {
+      "P_0": "(1, 0, 0)",
+      "P_nt_over_2": "(0, 1/2, 1/2)"
+    }
+  },
+  "review_surface": [
+    "docs/YT_C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_NOTE_2026-05-28.md",
+    "scripts/frontier_yt_c3_primitive_singular_boundary_intervention_support.py",
+    "outputs/yt_c3_primitive_singular_boundary_intervention_support_2026-05-28.json"
+  ],
+  "route_still_live": "derive accepted primitive singular-boundary top-readout law with same-surface generator factorization, derive another accepted zero-singlet top-block law, or produce accepted strict same-source top/W pole rows directly",
+  "trace_class": "upstream_support"
+}

@@ -1,5 +1,57 @@
 # Handoff
 
+Cycle 15 adds a twenty-ninth science block, not positive retained-grade
+closure. The new block tests a sharper hard-boundary route:
+
+```text
+primitive singular no-hidden-record boundary intervention
+  -> reflection-even least-KL boundary support selects P_nt/2
+  -> conditional A/sqrt(12) row.
+```
+
+On the reflection-even C3 RN/Fisher boundary curve, the singular
+no-hidden-record law selects `q_nt=(0,1/2,1/2)=P_nt/2` because
+`D(q_nt || uniform)=log(3/2) < log(3)=D(P_0 || uniform)`. With the still-open
+same-surface generator factorization, this would feed the `A/sqrt(12)` row.
+
+This is exact support only. The actual current surface has not accepted
+primitive singular-boundary readout as the physical top law, and least-KL
+support loss on the full three-line simplex is not unique: dropping any one
+line gives KL `log(3/2)`. Therefore the reflection-even curve restriction and
+the primitive singular top-readout law remain load-bearing.
+
+Cycle 15 science commit:
+
+```text
+pending
+```
+
+Cycle 15 verification:
+
+- `python3 scripts/frontier_yt_c3_primitive_singular_boundary_intervention_support.py` -> `SUMMARY: PASS=96 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py` -> `SUMMARY: PASS=441 FAIL=0`
+- Adjacent runners passed: hard-boundary support `PASS=97`,
+  hard-boundary readout-law no-go `PASS=81`, minimum-information readout
+  no-go `PASS=103`, nontrivial-block support `PASS=85`, primitive record law
+  `PASS=75`, strict sparse availability audit `PASS=74`, direct sparse
+  response certificate `PASS=88`, first-principles transfer response
+  `PASS=56`, and same-surface matrix factorization `PASS=77`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+No `POSITIVE_CLOSURE` marker was written. Retained/proposed-retained wording
+remains disallowed. The next exact action is to derive an accepted primitive
+singular-boundary top-readout law with same-surface generator factorization,
+derive another accepted zero-singlet top-block law, or produce accepted strict
+top/W pole-row data with contact, FV/IR, and model-class controls.
+
+The campaign has produced twenty-nine science blocks, not positive retained-grade
+closure. The twenty-ninth block is exact support: the primitive singular
+boundary intervention selects the nontrivial real C3 block on the
+reflection-even curve, but the physical singular-boundary top-readout law
+remains open.
+
 Cycle 14 adds a twenty-eighth science block, not positive retained-grade
 closure. The new block prunes the shortcut
 

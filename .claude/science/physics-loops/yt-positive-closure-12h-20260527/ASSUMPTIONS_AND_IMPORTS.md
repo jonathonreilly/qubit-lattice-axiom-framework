@@ -13,6 +13,7 @@
 | Minimum-information readout law for zero singlet weight | Would convert finite RN/Fisher minimum-information source semantics into support in `P_nt` | unsupported import on actual surface; minimum-information readout shortcut pruned | `YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md` | yes if used | yes for mininfo readout route | derive accepted physical top-block/readout law excluding `P_0`, add an accepted hard-boundary law, or bypass with strict pole rows | no-go for finite mininfo-readout shortcut |
 | Hard-boundary nearest-face top-readout law | Would convert the compactified C3 RN/Fisher source family into zero-singlet support by selecting the nearest Fisher boundary face `P_nt` | exact support/open import | `YT_C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_NOTE_2026-05-27.md` | yes if used | yes for hard-boundary route | derive/accept the physical hard-boundary nearest-face readout law plus same-surface generator factorization, or bypass with strict pole rows | support only; open physical readout law |
 | Current hard-boundary information geometry alone | Would promote nearest-face support into the accepted physical top-readout law without a new physical premise | pruned on current surface | `YT_C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md` | yes if used as shortcut | yes for hard-boundary shortcut | derive a new accepted physical nearest-face readout theorem from same-surface dynamics, or bypass with strict pole rows | no-go for geometry-alone promotion |
+| Primitive singular no-hidden-record boundary readout | Would identify the physical top block with the least-KL singular support-loss face on the reflection-even C3 RN/Fisher boundary curve | exact support/open import | `YT_C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_NOTE_2026-05-28.md` | yes if used as closure | yes | derive/accept physical primitive singular-boundary top-readout law plus generator factorization, or strict pole rows | support only; full-simplex least-KL degeneracy keeps the physical law open |
 | Same-surface top generator factorization `(A/sqrt(2)) B_x` | Turns C3 response into `A/sqrt(12)` matrix element | unsupported import on actual surface | new factorization boundary | yes | yes | derive accepted transfer/action generator or strict pole rows | open blocker |
 | Physical top pole/projector | Identifies the sector whose matrix element is read | unsupported import on actual surface | top-sector projector obstruction stack | yes | yes | non-mass-ordering top-line theorem, dynamics, or pole certificate | open blocker |
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
@@ -148,3 +149,10 @@ of that candidate: the same endpoint data admit `P_0`-selecting purity/rank,
 positive-source-asymptote, and response-maximum rules. Nearest-face readout
 therefore remains an accepted-physics import to derive, not a consequence of
 current RN/Fisher boundary geometry.
+The primitive singular-boundary intervention support block sharpens the same
+hard-boundary escape hatch: least-KL singular support loss on the
+reflection-even C3 RN/Fisher boundary curve selects `P_nt/2`, because
+`D(P_nt/2 || uniform)=log(3/2)` is below `D(P_0 || uniform)=log(3)`. This is
+still support only. The finite primitive intervention theorem does not itself
+derive an accepted singular physical top readout, and least-KL support loss on
+the full three-line simplex has three degenerate dropped-line faces.

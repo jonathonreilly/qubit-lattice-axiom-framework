@@ -125,6 +125,11 @@ This runner verifies the current burn-down state:
   that support from current information geometry alone: the same boundary data
   also admit P_0-selecting purity/rank, positive-source-asymptote, and
   response-maximum rules.
+* The primitive singular-boundary intervention support theorem sharpens the
+  best hard-boundary candidate: a least-KL no-hidden-record singular boundary
+  rule on the reflection-even C3 RN/Fisher curve selects P_nt and would give
+  A/sqrt(12), but that singular-boundary readout law is not accepted on the
+  actual current surface.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -166,6 +171,7 @@ C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO = DOCS / "YT_C3_TRACE_FREE_CENTE
 C3_MININFO_READOUT_ZERO_SINGLET_NOGO = DOCS / "YT_C3_MININFO_READOUT_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md"
 C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT = DOCS / "YT_C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_NOTE_2026-05-27.md"
 C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION = DOCS / "YT_C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md"
+C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT = DOCS / "YT_C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_NOTE_2026-05-28.md"
 DIRECT_SPARSE_RESPONSE_CERT = DOCS / "YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md"
 KAPPA_DIRECT_EXERCISE = DOCS / "YT_KAPPA_DIRECT_FULL_PHYSICS_EXERCISE_NOTE_2026-05-27.md"
 NATIVE_BACKEND_CANDIDATE = DOCS / "YT_NATIVE_SAME_SURFACE_TOP_W_TRANSFER_ACTION_BACKEND_CANDIDATE_NOTE_2026-05-27.md"
@@ -224,6 +230,7 @@ C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT = ROOT / "outputs" / "yt_c3_
 C3_MININFO_READOUT_ZERO_SINGLET_NOGO_OUT = ROOT / "outputs" / "yt_c3_mininfo_readout_zero_singlet_no_go_2026-05-27.json"
 C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_mininfo_hard_boundary_face_selector_support_2026-05-27.json"
 C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_OUT = ROOT / "outputs" / "yt_c3_hard_boundary_readout_law_underdetermination_2026-05-27.json"
+C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_OUT = ROOT / "outputs" / "yt_c3_primitive_singular_boundary_intervention_support_2026-05-28.json"
 DIRECT_SPARSE_RESPONSE_CERT_OUT = ROOT / "outputs" / "yt_direct_same_surface_sparse_transfer_response_certificate_2026-05-27.json"
 KAPPA_DIRECT_EXERCISE_OUT = ROOT / "outputs" / "yt_kappa_direct_full_physics_exercise_2026-05-27.json"
 NATIVE_BACKEND_CANDIDATE_OUT = ROOT / "outputs" / "yt_native_same_surface_top_w_transfer_action_backend_candidate_2026-05-27.json"
@@ -327,6 +334,7 @@ def part1_anchors() -> dict[str, str]:
         C3_MININFO_READOUT_ZERO_SINGLET_NOGO,
         C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT,
         C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION,
+        C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT,
         DIRECT_SPARSE_RESPONSE_CERT,
         KAPPA_DIRECT_EXERCISE,
         NATIVE_BACKEND_CANDIDATE,
@@ -384,6 +392,7 @@ def part1_anchors() -> dict[str, str]:
         C3_MININFO_READOUT_ZERO_SINGLET_NOGO_OUT,
         C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_OUT,
         C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_OUT,
+        C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_OUT,
         DIRECT_SPARSE_RESPONSE_CERT_OUT,
         KAPPA_DIRECT_EXERCISE_OUT,
         NATIVE_BACKEND_CANDIDATE_OUT,
@@ -443,6 +452,7 @@ def part1_anchors() -> dict[str, str]:
         "minimum-information readout zero-singlet no-go",
         "hard-boundary minimum-information face-selector support",
         "hard-boundary readout law underdetermination",
+        "primitive singular-boundary intervention support",
         "sparse transfer response certificate",
         "targeted kappa exercise",
         "native candidate backend",
@@ -521,6 +531,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_mininfo_readout_zero_singlet_nogo = load_json(C3_MININFO_READOUT_ZERO_SINGLET_NOGO_OUT)
     c3_mininfo_hard_boundary_face_selector_support = load_json(C3_MININFO_HARD_BOUNDARY_FACE_SELECTOR_SUPPORT_OUT)
     c3_hard_boundary_readout_law_underdetermination = load_json(C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_OUT)
+    c3_primitive_singular_boundary_intervention_support = load_json(C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_OUT)
     direct_sparse_cert = load_json(DIRECT_SPARSE_RESPONSE_CERT_OUT)
     kappa_exercise = load_json(KAPPA_DIRECT_EXERCISE_OUT)
     native_backend = load_json(NATIVE_BACKEND_CANDIDATE_OUT)
@@ -821,6 +832,41 @@ def part2_support_outputs() -> dict[str, Any]:
     check(
         "C3 hard-boundary underdetermination still has no strict positive certificate",
         c3_hard_boundary_readout_law_underdetermination.get("certificate_boundary", {})
+        .get("strict_top_w_response_certificate_present")
+        is False,
+    )
+    check(
+        "C3 primitive singular-boundary support passed",
+        c3_primitive_singular_boundary_intervention_support.get("fail_count") == 0,
+        c3_primitive_singular_boundary_intervention_support.get("fail_count"),
+    )
+    check(
+        "C3 primitive singular-boundary support remains open",
+        c3_primitive_singular_boundary_intervention_support.get("actual_current_surface_status")
+        == "exact-support / open primitive-singular-boundary readout law",
+        c3_primitive_singular_boundary_intervention_support.get("actual_current_surface_status"),
+    )
+    check(
+        "least-KL reflection-even singular boundary selects P_nt",
+        c3_primitive_singular_boundary_intervention_support.get("certificate_boundary", {})
+        .get("least_kl_reflection_even_boundary_selects_Pnt")
+        is True,
+    )
+    check(
+        "primitive singular-boundary top readout law remains open",
+        c3_primitive_singular_boundary_intervention_support.get("certificate_boundary", {})
+        .get("accepted_primitive_singular_boundary_top_readout_law_derived")
+        is False,
+    )
+    check(
+        "full simplex least-KL boundary is not a unique top-block law",
+        c3_primitive_singular_boundary_intervention_support.get("certificate_boundary", {})
+        .get("least_kl_full_simplex_unique_top_block")
+        is False,
+    )
+    check(
+        "C3 primitive singular-boundary support still has no strict certificate",
+        c3_primitive_singular_boundary_intervention_support.get("certificate_boundary", {})
         .get("strict_top_w_response_certificate_present")
         is False,
     )
@@ -1330,6 +1376,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_mininfo_readout_zero_singlet_nogo": c3_mininfo_readout_zero_singlet_nogo,
         "c3_mininfo_hard_boundary_face_selector_support": c3_mininfo_hard_boundary_face_selector_support,
         "c3_hard_boundary_readout_law_underdetermination": c3_hard_boundary_readout_law_underdetermination,
+        "c3_primitive_singular_boundary_intervention_support": c3_primitive_singular_boundary_intervention_support,
         "direct_sparse_response_certificate": direct_sparse_cert,
         "kappa_direct_exercise": kappa_exercise,
         "native_backend_candidate": native_backend,
@@ -1709,6 +1756,11 @@ def main() -> int:
             "boundary data also admit P_0-selecting purity/rank, "
             "positive-source-asymptote, and response-maximum rules, so "
             "nearest-face readout remains a new physical law. "
+            "The primitive singular-boundary support theorem tightens the "
+            "candidate: least-KL no-hidden-record singular boundary readout "
+            "on the reflection-even C3 curve selects P_nt, but that "
+            "singular-boundary top-readout law is not accepted on the actual "
+            "surface. "
             "First-principles transfer response is now closed, but the top sector "
             "matrix element remains load-bearing. The factorization boundary shows "
             "exactly how A/sqrt(12) would follow from accepted generator "
@@ -1717,7 +1769,7 @@ def main() -> int:
         ),
         "bare_retained_allowed": False,
         "audit_required_before_effective_retained": True,
-        "first_open_gate": "accepted strict same-source top/W pole rows, or accepted same-surface sign/order/readout/hard-boundary dynamics deriving zero-singlet physical top-block support with backend/projectors/matrix elements",
+        "first_open_gate": "accepted strict same-source top/W pole rows, or accepted same-surface sign/order/readout/primitive-singular-boundary dynamics deriving zero-singlet physical top-block support with backend/projectors/matrix elements",
         "backup_route": "strict same-source top/W pole-response measurement certificate",
         "closure_stack": closure_stack,
         "certificates": certificates,
@@ -1744,6 +1796,7 @@ def main() -> int:
             "c3_mininfo_readout_zero_singlet_nogo_fail_count": support_outputs["c3_mininfo_readout_zero_singlet_nogo"].get("fail_count"),
             "c3_mininfo_hard_boundary_face_selector_support_fail_count": support_outputs["c3_mininfo_hard_boundary_face_selector_support"].get("fail_count"),
             "c3_hard_boundary_readout_law_underdetermination_fail_count": support_outputs["c3_hard_boundary_readout_law_underdetermination"].get("fail_count"),
+            "c3_primitive_singular_boundary_intervention_support_fail_count": support_outputs["c3_primitive_singular_boundary_intervention_support"].get("fail_count"),
             "direct_sparse_response_certificate_fail_count": support_outputs["direct_sparse_response_certificate"].get("fail_count"),
             "top_sector_projector_obstruction_fail_count": support_outputs["top_sector_projector_obstruction"].get("fail_count"),
             "c3_spectral_projector_support_fail_count": support_outputs["c3_spectral_projector_support"].get("fail_count"),
@@ -1807,6 +1860,9 @@ def main() -> int:
             "docs/YT_C3_HARD_BOUNDARY_READOUT_LAW_UNDERDETERMINATION_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_hard_boundary_readout_law_underdetermination.py",
             "outputs/yt_c3_hard_boundary_readout_law_underdetermination_2026-05-27.json",
+            "docs/YT_C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_c3_primitive_singular_boundary_intervention_support.py",
+            "outputs/yt_c3_primitive_singular_boundary_intervention_support_2026-05-28.json",
             "docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py",
             "outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json",

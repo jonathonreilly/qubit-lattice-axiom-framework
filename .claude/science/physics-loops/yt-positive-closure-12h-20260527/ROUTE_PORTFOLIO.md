@@ -61,6 +61,9 @@ isolated a conditional nearest-Fisher-face support route.
 The twenty-eighth route tested whether current hard-boundary information
 geometry alone can promote nearest-Fisher-face support into the accepted
 physical top-readout law.
+The twenty-ninth route tested whether a primitive singular no-hidden-record
+boundary intervention supplies a sharper same-surface hard-boundary support
+law for the nontrivial block.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -93,6 +96,7 @@ physical top-readout law.
 | Minimum-information readout selector for `P_nt` | no-go shortcut test | 3 | Pruned: finite RN/I-projection tilts retain full support; zero singlet requires an infinite boundary or target response insertion |
 | Hard-boundary minimum-information face selector | exact support / boundary test | 2 | Landed: boundary completion has both `P_nt` and `P_0` endpoints; nearest Fisher boundary face is `P_nt`, but the nearest-face top-readout law is open |
 | Hard-boundary readout law from current geometry alone | no-go shortcut test | 3 | Pruned: nearest-face and entropy rules select `P_nt`, but purity/rank, positive-source-asymptote, and response-maximum rules select `P_0` on the same endpoint data |
+| Primitive singular no-hidden-record boundary intervention | exact support / open readout-law boundary | 2 | Landed: least-KL singular support loss on the reflection-even C3 RN/Fisher curve selects `P_nt/2`, but the primitive singular physical top-readout law remains open and the full simplex has degenerate dropped-line faces |
 
 ## Stuck Fan-Out
 
@@ -129,6 +133,7 @@ physical top-readout law.
 | Minimum-information readout selector | Ask whether finite RN/Fisher source semantics exclude `P_0` | Fails; finite tilts keep full support, and zero singlet is an infinite-boundary or target-insertion condition |
 | Hard-boundary minimum-information face selector | Compactify the finite RN/Fisher C3 source family and choose a boundary face | Support only; the curve has both `P_nt` and `P_0` endpoints, and nearest Fisher boundary selects `P_nt`, but nearest-face readout is a new unaccepted physical law |
 | Hard-boundary readout law from geometry alone | Ask whether current endpoint geometry makes nearest-face selection physical | Fails; same-data hard-boundary rules include `P_0` selectors, so nearest-face readout still needs an accepted physical theorem |
+| Primitive singular boundary intervention | Ask whether primitive no-hidden-record support loss chooses the top block more narrowly | Support only; reflection-even least-KL singular support loss selects `P_nt/2`, but accepting that singular readout as physical is a new law and full-simplex least-KL is degenerate |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -177,3 +182,9 @@ also support `P_0` under purity/rank, positive-source-asymptote, and
 response-maximum rules. A positive hard-boundary route must therefore derive
 nearest-face readout from new accepted same-surface physics, not simply cite
 the current RN/Fisher geometry.
+The primitive singular-boundary support block keeps the hard-boundary route
+alive in a narrower form: a primitive no-hidden-record singular readout on the
+reflection-even curve selects `P_nt/2` by least KL, but that physical singular
+top-readout law is still exactly the missing premise. The next positive move
+must derive/accept that law with generator factorization or leave C3 for
+strict top/W pole-row data.

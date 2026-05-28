@@ -84,3 +84,10 @@ load-bearing: the runner derives the metric `ds^2/[s(1-s)]`, the two boundary
 distances, and the nearest-face comparison directly. External context could
 only motivate accepting nearest-boundary face selection as a physical
 top-readout law; it does not close the current repository surface.
+The primitive singular-boundary intervention support block directly computes
+finite KL divergences from the uniform C3 baseline to the reflection-even
+singular endpoints and to the three full-simplex dropped-line faces. No
+external KL theorem, information-geometry source, or physics readout rule is
+load-bearing. External context could only motivate accepting primitive
+singular no-hidden-record boundary readout as a physical top law; it does not
+close the current repository surface.

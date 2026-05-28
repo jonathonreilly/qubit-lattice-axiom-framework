@@ -74,6 +74,10 @@ closed exactly:
   boundary geometry alone does not promote nearest-face support into accepted
   physical top-readout law; the same data admit P_0-selecting purity/rank,
   positive-source-asymptote, and response-maximum rules
+  primitive singular-boundary intervention support: least-KL
+  no-hidden-record singular boundary readout on the reflection-even C3
+  RN/Fisher curve selects P_nt and would give A/sqrt(12), but that
+  singular-boundary top-readout law is not accepted on the current surface
   the sparse transfer response certificate harness exists and rejects
   kappa-tainted backends
   the top generation projector remains open: C3-symmetric staggered
@@ -189,6 +193,9 @@ still open:
   turn the RN/Fisher boundary compactification into zero P_0 singlet weight
   accepted physical principle deriving nearest-face readout rather than another
   hard-boundary criterion, since current boundary geometry alone is now pruned
+  accepted primitive singular no-hidden-record boundary readout law if the C3
+  route tries to derive the nearest-face rule from a hard-boundary extension of
+  the primitive intervention theorem
   accepted physical top generation projector or strict top pole identification
   accepted C3-preserving circulant generation operator, eigenvalue ordering,
   and top-line source-generator matrix element
@@ -579,6 +586,21 @@ compactified curve, nearest Fisher face and maximum boundary entropy select
 maximum rules select `P_0`.  Thus nearest-face readout remains a new physical
 law to derive, not a consequence of the current RN/Fisher hard-boundary data
 alone.
+
+[`YT_C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_NOTE_2026-05-28.md`](YT_C3_PRIMITIVE_SINGULAR_BOUNDARY_INTERVENTION_SUPPORT_NOTE_2026-05-28.md)
+then tests the strongest remaining hard-boundary premise suggested by the
+primitive no-hidden-record source theorem.  If the physical top readout is
+accepted as the least-KL singular no-hidden-record boundary intervention on
+the reflection-even C3 RN/Fisher curve, the selected endpoint is `P_nt/2`:
+
+```text
+D(P_nt/2 || uniform) = log(3/2) < log(3) = D(P_0 || uniform).
+```
+
+This gives the same conditional `A/sqrt(12)` row as nearest-Fisher readout.
+It is still support only.  The finite primitive intervention theorem covers
+interior expectation-bias source laws; accepting this singular support-loss
+readout as the physical top law remains a new same-surface premise.
 
 [`YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md`](YT_DIRECT_SAME_SURFACE_SPARSE_TRANSFER_RESPONSE_CERTIFICATE_NOTE_2026-05-27.md)
 implements the first concrete certificate harness for this route.  It has a
@@ -1461,6 +1483,11 @@ proposal_allowed_reason: |
   endpoint data also admit P_0-selecting purity/rank, positive-source-asymptote,
   and response-maximum rules, so an accepted physical nearest-face theorem is
   still a load-bearing import.
+  The primitive singular-boundary intervention support theorem tightens this
+  candidate without closing it: a least-KL no-hidden-record singular boundary
+  law on the reflection-even C3 RN/Fisher curve selects P_nt and would supply
+  A/sqrt(12), but the actual current surface has not accepted that
+  singular-boundary readout law as the physical top law.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface
@@ -1478,7 +1505,7 @@ proposal_allowed_reason: |
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
 first_open_gate: accepted strict same-source top/W pole rows, or a new
-  same-surface source-orientation/sign/readout/hard-boundary dynamics theorem deriving
+  same-surface source-orientation/sign/readout/primitive-singular-boundary dynamics theorem deriving
   zero-singlet physical top-block support, with accepted backend, W/top
   projectors, and source-generator matrix elements
 refined_first_open_gate: coefficient-certified same-surface top sector matrix

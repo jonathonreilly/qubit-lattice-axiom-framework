@@ -199,3 +199,19 @@ physical top readout, and strict pole controls remain absent.
   response-maximum rules select `P_0` from the same endpoint data. A positive
   hard-boundary route therefore needs a new accepted physical readout theorem
   rather than geometry-alone promotion, or strict top/W pole rows.
+
+Non-no-go support checkpoint after the twenty-eighth block: the primitive
+singular no-hidden-record boundary intervention gives a sharper conditional
+candidate. On the reflection-even C3 RN/Fisher boundary curve, least-KL
+singular support loss from the uniform baseline selects
+`q_nt=(0,1/2,1/2)=P_nt/2`, because `D(q_nt||u)=log(3/2)` is below
+`D(P_0||u)=log(3)`. With the still-open generator factorization this would
+feed `A/sqrt(12)`.
+- New in the twenty-ninth block: the finite primitive no-hidden-record
+  intervention theorem alone does not derive accepted physical singular
+  hard-boundary top readout. The singular-boundary readout criterion is a new
+  physical law on the actual surface, and least-KL support loss on the full
+  three-line simplex has three degenerate dropped-line faces. Positive closure
+  still needs an accepted primitive singular-boundary top-readout theorem plus
+  generator factorization, another accepted zero-singlet top-block law, or
+  strict top/W pole rows.

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 234,
+    "critical": 233,
     "high": 339,
     "leaf": 325,
     "medium": 335
@@ -66,33 +66,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gravity_clean_derivation_note",
-      "claim_scope": "Bounded weak-field IF-chain on Z^3: assuming -Delta_lat, L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), and the standard Z^3 Green-function asymptotic G(r)~1/(4*pi*r), the lattice Poisson equation gives a 1/r potential and inverse-square bilinear force in lattice units.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "self_consistency_forces_poisson_note",
-        "poisson_exhaustive_uniqueness_note",
-        "gravity_full_self_consistency_note",
-        "staggered_fermion_card_2026-04-11"
-      ],
-      "direct_in_degree": 19,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.634,
-      "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 280
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -6655,6 +6628,31 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gravity_clean_derivation_note",
+        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.466,
+      "note_path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 249
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -6880,6 +6878,31 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "broad_gravity_derivation_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gravity_clean_derivation_note",
+        "gravity_full_self_consistency_note"
+      ],
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.858,
+      "note_path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 57
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "wave_direct_dm_h025_two_point_synthesis_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -6922,31 +6945,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_yt_source_action_support_packet.py",
       "transitive_descendants": 14
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_clean_derivation_note",
-        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.466,
-      "note_path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
-      "transitive_descendants": 249
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -13906,31 +13904,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_ew_lattice_a4_bridge.py",
-      "transitive_descendants": 57
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "broad_gravity_derivation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_clean_derivation_note",
-        "gravity_full_self_consistency_note"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.858,
-      "note_path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
       "transitive_descendants": 57
     },
     {
@@ -37120,6 +37093,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 59,
-  "total_pending": 1233
+  "ready_count": 60,
+  "total_pending": 1232
 }

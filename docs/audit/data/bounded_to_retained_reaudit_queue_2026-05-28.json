@@ -1,0 +1,239 @@
+{
+  "schema": "promotion_reaudit_queue.v1",
+  "generated_date": "2026-05-28",
+  "status": "dispatcher-only queue for fresh-context audit; not an audit verdict; does not retag the ledger; not part of the audit citation graph.",
+  "policy": "Promote bounded_theorem -> positive_theorem only via fresh-context audit applied through docs/audit/scripts/apply_audit.py. Re-audit each row independently; do not bulk-retag. Split any row mixing exact algebra with physical interpretation before retagging.",
+  "selection_rule": "audited_clean / retained_bounded rows ranked by transitive descendants, restricted to exact local/finite algebra, finite representation theory, onset coefficients, or operator realization whose bounded status is not protecting a still-open physical closure. g_bare cluster excluded (see retired_targets).",
+  "baseline": {
+    "branch": "main",
+    "commit": "0edf9a74",
+    "pipeline": "bash docs/audit/scripts/run_pipeline.sh after review-loop regeneration"
+  },
+  "prior_queues_consumed": {
+    "bounded_to_retained_reaudit_queue_2026-05-23": "10 of 11 promoted to retained",
+    "promotion_reaudit_queue_2026-05-22": "7 of 13 promoted; several demoted to decoration"
+  },
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/MINIMAL_AXIOMS_2026-05-20.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher queue as evidence",
+    "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
+    "prior assistant discussion",
+    "prior audit rationales",
+    "publication-facing retained summaries"
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "groups": [
+    {
+      "group_id": "lead_exact_algebra_candidates",
+      "order": 1,
+      "blocked_by_group_ids": [],
+      "targets": [
+        {
+          "audit_question": "Can the exact complexification split Cl(3,0)(x)C ~ M_2(C)(+)M_2(C) with omega->+/-i summand labelling, and its finite Wedderburn/Schur uniqueness, be reclassified positive_theorem with physical interpretation excluded?",
+          "claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+          "transitive_descendants": 927
+        },
+        {
+          "audit_question": "Can the exact finite-linear-algebra fact that translation projectors P_i plus cyclic C3[111] powers generate all matrix units E_ij be reclassified positive_theorem, leaving the physical three-generation readout out of scope? Split first if the row mixes the two.",
+          "claim_id": "three_generation_observable_theorem_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
+          "transitive_descendants": 926
+        },
+        {
+          "audit_question": "Can the exact reflection-positivity Cauchy-Schwarz inequality on the Theta-invariant gauge half-surface be reclassified positive_theorem?",
+          "claim_id": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "transitive_descendants": 909
+        },
+        {
+          "audit_question": "Can the exact finite-rep fact that preserving the D_3 projector algebra forces coordinate-subset invariant subspaces be reclassified positive_theorem?",
+          "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
+          "transitive_descendants": 710
+        },
+        {
+          "audit_question": "Can the exact Schur-complement elimination Lambda_R = H_tt - H_tb H_bb^{-1} H_bt on the finite harmonic bulk be reclassified positive_theorem? Split any physical boundary-action interpretation first.",
+          "claim_id": "oh_schur_boundary_action_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md",
+          "transitive_descendants": 712
+        },
+        {
+          "audit_question": "Can the exact finite cubical-ball boundary-cap uniqueness (R=2..5 constructed family) be reclassified positive_theorem?",
+          "claim_id": "s3_cap_uniqueness_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
+          "transitive_descendants": 710
+        },
+        {
+          "audit_question": "Can the exact lattice-dispersion fact m(p)=2 hw(p) on p_mu in {0,pi} with degeneracies 1,3,3,1 and hw=1 the unique lowest band be reclassified positive_theorem, leaving generation-count physics out of scope? Split first if mixed.",
+          "claim_id": "three_generation_structure_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+          "transitive_descendants": 707
+        }
+      ]
+    },
+    {
+      "group_id": "cluster_decomposition",
+      "order": 2,
+      "blocked_by_group_ids": [],
+      "targets": [
+        {
+          "audit_question": "Can the spectral-decomposition + Cauchy-Schwarz connected-correlator bound be reclassified positive_theorem? Confirm the mass-gap input is retained-grade first.",
+          "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+          "transitive_descendants": 896
+        },
+        {
+          "audit_question": "Can the finite-Lambda SU(3) Wilson heat-kernel positivity lemmas be reclassified positive_theorem on the finite-Lambda surface?",
+          "claim_id": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+          "transitive_descendants": 896
+        },
+        {
+          "audit_question": "Can the bounded cluster-decomposition closure be reclassified positive_theorem? Confirm the Lieb-Robinson series bound's grade first.",
+          "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
+          "transitive_descendants": 894
+        }
+      ]
+    }
+  ],
+  "retired_targets": [
+    {
+      "audit_question": "Highest single reach (960) but load-bearing step invokes a canonical fermion normalization (H_unit ~ 1/sqrt(N_c N_iso)) -- the same normalization-convention class that blocks the g_bare cluster.",
+      "claim_id": "yt_ward_identity_derivation_theorem",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+      "transitive_descendants": 960,
+      "retired_reason": "deferred_normalization_convention"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
+      "transitive_descendants": 931,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
+      "transitive_descendants": 927,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_derivation_note",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
+      "transitive_descendants": 925,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
+      "transitive_descendants": 918,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md",
+      "transitive_descendants": 909,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
+      "transitive_descendants": 899,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_rigidity_theorem_note",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
+      "transitive_descendants": 893,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-05-09.md",
+      "transitive_descendants": 892,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    },
+    {
+      "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
+      "claim_id": "g_bare_two_ward_closure_note_2026-04-18",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md",
+      "transitive_descendants": 891,
+      "retired_reason": "blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28"
+    }
+  ]
+}

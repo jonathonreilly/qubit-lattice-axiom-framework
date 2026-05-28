@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1141 |
+| unaudited | 1142 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 68 |
+| ~~audited_conditional~~ | 67 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 891 |
-| `audited_conditional` | 68 |
+| `audited_conditional` | 67 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1371 |
+| `unaudited` | 1372 |
 
 | claim_type | count |
 |---|---:|
@@ -1047,7 +1047,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
-| `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `early_family_transfer_connectivity_diagnosis` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `emergent_lorentz_invariance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -4108,19 +4107,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the sampled multistart starts, the constrained scan recovers one favored low-action PMNS-assisted N_e branch separated from a high-action branch by a finite action gap.  _(class `C`)_
 - **chain closes:** True — Within the narrowed sampled-runner scope, the primary runner constructs feasible closure starts, runs constrained stationary solves, clusters converged solutions, and computes the branch actions and eta readouts rather than printing the branch table as constants. The packet does not close, and the note no longer claims, certified-global branch enumeration or theorem-grade global selector authority.
 - **rationale:** The source note has been narrowed to the exact finite diagnostic supported by the cached runner output. The load-bearing branch enumeration and action-gap computation are produced by actual constrained optimization and clustering through the included helper chain, with no hard-coded branch representatives in the primary runner. The eta/eta_obs=1 statements are observation-normalized closure readouts on the imposed closure surface, not an independent global prediction. The note explicitly excludes branch completeness, branch uniqueness beyond the sampled starts, and certified-global selector content.
-- **auditor confidence:** high
-
-### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
-
-- **Note:** [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Raw finite linear-algebra interface from supplied 3x3 positive-definite Hermitian matrices and chosen unitary eigenvector matrices to U_pair=U_e^dagger U_nu and P=|U_pair|^2, excluding physical carrier, N1 column, and eta diagnostics.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Products of unitary eigenvector matrices are unitary, so entrywise squared magnitudes are doubly stochastic and invariant under diagonal eigenvector rephasings, but not under general rotations inside degenerate eigenspaces.  _(class `A`)_
-- **chain closes:** False — The stated unitarity, row/column-sum, and diagonal-rephasing invariance algebra closes for a fixed choice of eigenvector matrices. The row does not close as an intrinsic pair-to-projector theorem for arbitrary positive-definite Hermitian pairs because degenerate spectra allow non-diagonal unitary rotations within eigenspaces; those rotations can change |U_e^dagger U_nu|^2 while leaving the Hermitian pair unchanged.
-- **rationale:** Issue: the source asks whether the projector packet is intrinsic to the Hermitian pair and answers yes for any positive-definite Hermitian pair, but only proves invariance under column phases. Why this blocks: if H_nu=I and H_e=I, choosing U_nu=U_e=I gives P=I, while rotating one degenerate eigenspace by a nontrivial unitary gives a different P from the same pair. The runner uses deterministic nondegenerate examples and phase rephasings, so it cannot catch this missing degeneracy gauge. Repair target: restrict the theorem to simple spectra or explicitly include chosen eigenbases as part of the input, or replace the vector-level packet with a projector-subspace construction invariant under degenerate-eigenspace rotations. Claim boundary until fixed: for fixed eigenvector matrices, U_pair is unitary, |U_pair|^2 is doubly stochastic, and diagonal rephasings do not change P; pair-intrinsic PMNS/projector authority remains unproved.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`

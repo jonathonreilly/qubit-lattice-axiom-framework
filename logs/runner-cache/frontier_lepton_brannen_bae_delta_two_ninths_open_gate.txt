@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py
+runner_sha256: fc33101f1c11e2f1580c84bf8c9b441a1de76f1de45113aa528d357699a4f39c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Charged-lepton Brannen-BAE delta=2/9 open gate
+========================================================================
+
+Conditional Brannen-BAE ratios at delta=2/9
+  k=0: 2.379438171633256
+  k=1: 0.040349908219207
+  k=2: 0.580211920147537
+  PASS: all three conditional ratios are positive
+  PASS: sorted electron-like ratio matches independent target (0.040349908219207)
+  PASS: sorted muon-like ratio matches independent target (0.580211920147537)
+  PASS: sorted tau-like ratio matches independent target (2.379438171633256)
+  PASS: Brannen root-of-unity sum gives sum ratios = 3 (sum=3.000000000000000)
+  PASS: Koide Q is 2/3 at delta=2/9 (Q=0.666666666666667)
+  PASS: Koide Q remains 2/3 at probe delta=0.0
+  PASS: Koide Q remains 2/3 at probe delta=0.1
+  PASS: Koide Q remains 2/3 at probe delta=0.5
+  PASS: Koide Q remains 2/3 at probe delta=1.0
+
+PDG comparator
+  a_PDG   = 17.715561709132775 sqrt(MeV)
+  a_PDG^2 = 313.841126670091342 MeV
+  delta_PDG = 0.222270487540236
+  delta_PDG - 2/9 = 0.000048265318014
+  ratio deviations:
+    electron: +1.163601581720408e-06
+    muon: +1.388179691452773e-05
+    tau: -1.504539849594977e-05
+  PASS: PDG Koide Q is within 1e-5 of 2/3
+  PASS: PDG-extracted phase is within 1e-4 rad of 2/9 (gap=4.826531801355172e-05)
+  PASS: electron ratio comparator within 3e-5 absolute (dev=+1.163601581720408e-06)
+  PASS: muon ratio comparator within 3e-5 absolute (dev=+1.388179691452773e-05)
+  PASS: tau ratio comparator within 3e-5 absolute (dev=-1.504539849594977e-05)
+  PASS: a_PDG is an observational scale residual near 17.72 sqrt(MeV) (not derived)
+  PASS: a_PDG squared is near 313.84 MeV (not derived)
+
+========================================================================
+TOTAL: PASS=17 FAIL=0
+VERDICT: lepton Brannen-BAE delta=2/9 open gate verified; phase and scale remain open.
+
+----- stderr -----
+

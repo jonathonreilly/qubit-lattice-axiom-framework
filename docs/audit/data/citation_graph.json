@@ -48360,8 +48360,8 @@
     },
     "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16": {
       "claim_id": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
@@ -48372,7 +48372,7 @@
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "note_hash": "31c938c732fcbd286deb12cb7e0e689da4d88c0b9aa7c68f7f758e4d539eb21d",
+      "note_hash": "980ec57c57b641f71960d680f5b2adfe616609d18d4e66578a5df8a2015656b4",
       "path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
       "title": "DM Full Closure Same-Surface Numerator Selector Boundary"
@@ -48414,15 +48414,15 @@
     },
     "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": {
       "claim_id": "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
         "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a0a7e55e26dd390b5517bebc55b127a85caeb5ffc23093d90f907de1f233058d",
+      "note_hash": "6e7919a8473a9e3a137a0ea436483be8734d33663d3fdbef6195e5bcb8b6eb60",
       "path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Monotonicity Theorem"
@@ -48446,8 +48446,8 @@
     },
     "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": {
       "claim_id": "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
@@ -48459,7 +48459,7 @@
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "note_hash": "e3b7dfc64e3b33d31a61ab34d578a039e0f02ae869664784fc4df184f62d436c",
+      "note_hash": "5542a68bea2c5843ee0e6fcf74042553a942f265d522987dcf8aa695cf27327f",
       "path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py",
       "title": "DM Full Closure Same-Surface Thermal Series/Tail Support"
@@ -86473,11 +86473,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 650,
+      "bounded_theorem": 653,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1434,
+      "none": 1431,
       "open_gate": 51,
       "positive_theorem": 169
     },

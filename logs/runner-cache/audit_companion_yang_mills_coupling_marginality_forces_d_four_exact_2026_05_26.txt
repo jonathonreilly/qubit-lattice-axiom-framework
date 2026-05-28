@@ -1,0 +1,221 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py
+runner_sha256: f58f4ae9d15f285f4e7f593c523644f34a1d158614830523a9b288f42bac44ed
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26
+Goal: sympy verification that [g_YM] = (4 - d) / 2 = 0 iff d = 4
+      via engineering-dimension bookkeeping on the bare Yang-Mills
+      action S_YM = integral d^d x (-(1/4)) tr(F^2)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: (Y1)-(Y3) Setup of engineering dimensions in natural units
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Y1) Action is dimensionless: [S] = 0  ([S] = 0)
+  [PASS (A)] (Y2) Coordinate engineering dimension: [x^mu] = -1  ([x^mu] = -1)
+  [PASS (A)] (Y3) Partial derivative engineering dimension: [partial_mu] = +1  ([partial_mu] = 1)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 2  ([d^2 x] = -2)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 3  ([d^3 x] = -3)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 4  ([d^4 x] = -4)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 5  ([d^5 x] = -5)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 6  ([d^6 x] = -6)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 7  ([d^7 x] = -7)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 8  ([d^8 x] = -8)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 9  ([d^9 x] = -9)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 10  ([d^10 x] = -10)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 11  ([d^11 x] = -11)
+  [PASS (A)] (Y2) Volume element: [d^d x] = -d at d = 12  ([d^12 x] = -12)
+
+----------------------------------------------------------------------------------------
+Part 2: (Y4) Gauge-field dimension from kinetic-term normalization
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 2: [A_mu] = 0  ([A_mu] = 0, expected = 0)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 2: 2[partial] + 2[A] = d, lhs = 2, rhs = 2  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 3: [A_mu] = 1/2  ([A_mu] = 1/2, expected = 1/2)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 3: 2[partial] + 2[A] = d, lhs = 3, rhs = 3  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 4: [A_mu] = 1  ([A_mu] = 1, expected = 1)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 4: 2[partial] + 2[A] = d, lhs = 4, rhs = 4  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 5: [A_mu] = 3/2  ([A_mu] = 3/2, expected = 3/2)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 5: 2[partial] + 2[A] = d, lhs = 5, rhs = 5  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 6: [A_mu] = 2  ([A_mu] = 2, expected = 2)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 6: 2[partial] + 2[A] = d, lhs = 6, rhs = 6  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 7: [A_mu] = 5/2  ([A_mu] = 5/2, expected = 5/2)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 7: 2[partial] + 2[A] = d, lhs = 7, rhs = 7  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 8: [A_mu] = 3  ([A_mu] = 3, expected = 3)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 8: 2[partial] + 2[A] = d, lhs = 8, rhs = 8  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 9: [A_mu] = 7/2  ([A_mu] = 7/2, expected = 7/2)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 9: 2[partial] + 2[A] = d, lhs = 9, rhs = 9  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 10: [A_mu] = 4  ([A_mu] = 4, expected = 4)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 10: 2[partial] + 2[A] = d, lhs = 10, rhs = 10  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 11: [A_mu] = 9/2  ([A_mu] = 9/2, expected = 9/2)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 11: 2[partial] + 2[A] = d, lhs = 11, rhs = 11  (lhs - rhs = 0)
+  [PASS (A)] (Y4) [A_mu] = (d - 2) / 2 at d = 12: [A_mu] = 5  ([A_mu] = 5, expected = 5)
+  [PASS (A)] (Y4) Kinetic-term dimensional balance at d = 12: 2[partial] + 2[A] = d, lhs = 12, rhs = 12  (lhs - rhs = 0)
+
+----------------------------------------------------------------------------------------
+Part 3: (Y5) Field-strength and gauge-coupling dimensions
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 2: [F] = 1  ([F] = 1, expected = 1)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 2: [g_YM] = 1  ([g_YM] = 1, expected = 1)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 2: [g_YM] + 2[A] = [F], lhs = 1, rhs = 1  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 3: [F] = 3/2  ([F] = 3/2, expected = 3/2)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 3: [g_YM] = 1/2  ([g_YM] = 1/2, expected = 1/2)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 3: [g_YM] + 2[A] = [F], lhs = 3/2, rhs = 3/2  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 4: [F] = 2  ([F] = 2, expected = 2)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 4: [g_YM] = 0  ([g_YM] = 0, expected = 0)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 4: [g_YM] + 2[A] = [F], lhs = 2, rhs = 2  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 5: [F] = 5/2  ([F] = 5/2, expected = 5/2)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 5: [g_YM] = -1/2  ([g_YM] = -1/2, expected = -1/2)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 5: [g_YM] + 2[A] = [F], lhs = 5/2, rhs = 5/2  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 6: [F] = 3  ([F] = 3, expected = 3)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 6: [g_YM] = -1  ([g_YM] = -1, expected = -1)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 6: [g_YM] + 2[A] = [F], lhs = 3, rhs = 3  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 7: [F] = 7/2  ([F] = 7/2, expected = 7/2)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 7: [g_YM] = -3/2  ([g_YM] = -3/2, expected = -3/2)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 7: [g_YM] + 2[A] = [F], lhs = 7/2, rhs = 7/2  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 8: [F] = 4  ([F] = 4, expected = 4)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 8: [g_YM] = -2  ([g_YM] = -2, expected = -2)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 8: [g_YM] + 2[A] = [F], lhs = 4, rhs = 4  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 9: [F] = 9/2  ([F] = 9/2, expected = 9/2)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 9: [g_YM] = -5/2  ([g_YM] = -5/2, expected = -5/2)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 9: [g_YM] + 2[A] = [F], lhs = 9/2, rhs = 9/2  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 10: [F] = 5  ([F] = 5, expected = 5)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 10: [g_YM] = -3  ([g_YM] = -3, expected = -3)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 10: [g_YM] + 2[A] = [F], lhs = 5, rhs = 5  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 11: [F] = 11/2  ([F] = 11/2, expected = 11/2)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 11: [g_YM] = -7/2  ([g_YM] = -7/2, expected = -7/2)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 11: [g_YM] + 2[A] = [F], lhs = 11/2, rhs = 11/2  (lhs - rhs = 0)
+  [PASS (A)] (Y5) [F_{mu nu}] = d / 2 at d = 12: [F] = 6  ([F] = 6, expected = 6)
+  [PASS (A)] (Y5) [g_YM] = (4 - d) / 2 at d = 12: [g_YM] = -4  ([g_YM] = -4, expected = -4)
+  [PASS (A)] (Y5) F_{mu nu} non-abelian-piece balance at d = 12: [g_YM] + 2[A] = [F], lhs = 6, rhs = 6  (lhs - rhs = 0)
+
+----------------------------------------------------------------------------------------
+Part 4: (Y6) Cross-verification via cubic self-interaction term
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 2: v1 = 1, v2 = 1  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 2: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 3: v1 = 1/2, v2 = 1/2  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 3: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 4: v1 = 0, v2 = 0  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 4: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 5: v1 = -1/2, v2 = -1/2  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 5: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 6: v1 = -1, v2 = -1  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 6: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 7: v1 = -3/2, v2 = -3/2  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 7: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 8: v1 = -2, v2 = -2  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 8: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 9: v1 = -5/2, v2 = -5/2  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 9: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 10: v1 = -3, v2 = -3  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 10: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 11: v1 = -7/2, v2 = -7/2  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 11: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) [g_YM] consistent across two derivations at d = 12: v1 = -4, v2 = -4  (v1 - v2 = 0)
+  [PASS (A)] (Y6) Cubic vertex dimensional balance at d = 12: -d + [g_YM] + 1 + 3[A] = 0, value = 0  (balance = 0)
+  [PASS (A)] (Y6) Symbolic: g_YM_dim_v1(d) and g_YM_dim_v2(d) both equal (4 - d) / 2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (Y6) Symbolic: g_YM_dim_v1(d) = 0 has unique solution d = 4  (solutions = [4])
+  [PASS (A)] (Y6) Symbolic: g_YM_dim_v2(d) = 0 has unique solution d = 4  (solutions = [4])
+
+----------------------------------------------------------------------------------------
+Part 5: (Y7) Tabular evaluation of [g_YM] = (4 - d) / 2
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Y7) Super-renormalizable at d = 2: [g_YM] = 1 > 0  ([g_YM] = 1)
+  [PASS (A)] (Y7) Super-renormalizable at d = 3: [g_YM] = 1/2 > 0  ([g_YM] = 1/2)
+  [PASS (A)] (Y7) Marginal at d = 4: [g_YM] = 0 = 0  ([g_YM] = 0)
+  [PASS (A)] (Y7) Non-renormalizable at d = 5: [g_YM] = -1/2 < 0  ([g_YM] = -1/2)
+  [PASS (A)] (Y7) Non-renormalizable at d = 6: [g_YM] = -1 < 0  ([g_YM] = -1)
+  [PASS (A)] (Y7) Non-renormalizable at d = 7: [g_YM] = -3/2 < 0  ([g_YM] = -3/2)
+  [PASS (A)] (Y7) Non-renormalizable at d = 8: [g_YM] = -2 < 0  ([g_YM] = -2)
+  [PASS (A)] (Y7) Non-renormalizable at d = 9: [g_YM] = -5/2 < 0  ([g_YM] = -5/2)
+  [PASS (A)] (Y7) Non-renormalizable at d = 10: [g_YM] = -3 < 0  ([g_YM] = -3)
+  [PASS (A)] (Y7) Non-renormalizable at d = 11: [g_YM] = -7/2 < 0  ([g_YM] = -7/2)
+  [PASS (A)] (Y7) Non-renormalizable at d = 12: [g_YM] = -4 < 0  ([g_YM] = -4)
+
+  Engineering-dimension table [g_YM] = (4 - d) / 2:
+    d =  2: [g_YM] =      1   (super-ren. (relevant))
+    d =  3: [g_YM] =    1/2   (super-ren. (relevant))
+    d =  4: [g_YM] =      0   (marginal)
+    d =  5: [g_YM] =   -1/2   (non-renormalizable (irrelevant))
+    d =  6: [g_YM] =     -1   (non-renormalizable (irrelevant))
+    d =  7: [g_YM] =   -3/2   (non-renormalizable (irrelevant))
+    d =  8: [g_YM] =     -2   (non-renormalizable (irrelevant))
+    d =  9: [g_YM] =   -5/2   (non-renormalizable (irrelevant))
+    d = 10: [g_YM] =     -3   (non-renormalizable (irrelevant))
+    d = 11: [g_YM] =   -7/2   (non-renormalizable (irrelevant))
+    d = 12: [g_YM] =     -4   (non-renormalizable (irrelevant))
+
+----------------------------------------------------------------------------------------
+Part 6: (Y8) Uniqueness of d = 4 for [g_YM] = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Y8) Among d in {2, ..., 12}, exactly d = 4 satisfies [g_YM] = 0  (marginal d values = [4])
+  [PASS (A)] (Y8) Among d in {2, ..., 20}, exactly d = 4 satisfies [g_YM] = 0  (marginal d values (extended) = [4])
+  [PASS (A)] (Y8) Linear equation (4 - d) = 0 has unique solution d = 4  (solutions = [4])
+
+----------------------------------------------------------------------------------------
+Part 7: Cross-consistency between [g_YM] from F_{mu nu} non-abelian piece and from cubic action
+----------------------------------------------------------------------------------------
+  [PASS (A)] (consistency) at d = 2: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 2: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 2: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 3: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 3: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 3: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 4: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 4: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: True, v2 == 0: True)
+  [PASS (A)] (consistency) at d = 4: marginality iff d == 4  (v1 == 0: True, d == 4: True)
+  [PASS (A)] (consistency) at d = 5: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 5: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 5: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 6: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 6: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 6: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 7: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 7: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 7: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 8: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 8: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 8: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 9: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 9: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 9: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 10: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 10: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 10: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 11: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 11: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 11: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+  [PASS (A)] (consistency) at d = 12: g_v1 = g_v2  (g_v1 - g_v2 = 0)
+  [PASS (A)] (consistency) at d = 12: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)
+  [PASS (A)] (consistency) at d = 12: marginality iff d == 4  (v1 == 0: False, d == 4: False)
+
+----------------------------------------------------------------------------------------
+Part 8: Informational dimensional readings (cross-check, not load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (info) At d = 4: [A_mu] = 1 (canonical gauge field dimension in 4d)  ([A_mu]|_{d=4} = 1)
+  [PASS (A)] (info) At d = 4: [F_{mu nu}] = 2 (2-form on R^4)  ([F]|_{d=4} = 2)
+  [PASS (A)] (info) At d = 4: [g_YM] = 0 (dimensionless coupling, marginal/ren.)  ([g_YM]|_{d=4} = 0)
+  [PASS (A)] (info) At d = 3: [g_YM] = 1/2 (super-ren. Yang-Mills in 3d)  ([g_YM]|_{d=3} = 1/2)
+  [PASS (A)] (info) At d = 6: [g_YM] = -1 (non-ren. Yang-Mills in 6d)  ([g_YM]|_{d=6} = -1)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 146
+  FAIL = 0
+
+  Note path: YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md
+  Claim id:  yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26
+
+  Result: all class-(A) checks pass at exact rational precision.
+
+----- stderr -----
+

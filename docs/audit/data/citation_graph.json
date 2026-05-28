@@ -53629,8 +53629,8 @@
     },
     "emergent_lorentz_invariance_note": {
       "claim_id": "emergent_lorentz_invariance_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "cpt_exact_note",
@@ -53639,7 +53639,7 @@
         "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "89d481c97209538cac4b73b028c2fd48a9373a1d8af52614b5d58bb726b9535d",
+      "note_hash": "839d2a5447f264b36640b6e0fe561af53065ae0f106a94dd37d275599672d631",
       "path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
       "runner_path": "scripts/frontier_emergent_lorentz_invariance.py",
       "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)"
@@ -86443,11 +86443,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 642,
+      "bounded_theorem": 643,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1440,
+      "none": 1439,
       "open_gate": 50,
       "positive_theorem": 169
     },

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 174 |
-| **retained_bounded** | 586 |
+| **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1124 |
+| unaudited | 1123 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 895 |
+| `audited_clean` | 896 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1354 |
+| `unaudited` | 1353 |
 
 | claim_type | count |
 |---|---:|
@@ -1019,6 +1019,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -15991,6 +15992,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** The finite product RN source family R_h(epsilon) composes by source-field addition, has primitive one-site signed-record score at h=0, and is equivalent after normalization to the source-coupled site-diagonal action S_h = S_0 - sum_x h_x epsilon_x.  _(class `A`)_
 - **chain closes:** True — The finite algebra closes directly: multiplication of exp(sum h_x epsilon_x) weights adds source profiles, the h=0 score is epsilon_x because the uniform signed-record mean is zero, and exp(-S_h)/exp(-S_0) equals the same unnormalized RN weight. The runner and an independent two-site enumeration both verify the identities and the open-gate firewalls.
 - **rationale:** The audited result is support mathematics only, and the source states that boundary clearly. The runner computes the finite RN composition, generator, and site-diagonal action equivalence, writes a certificate with proposal_allowed=false and current_closure_satisfied=false, and verifies absence of strict source-Higgs rows/WZ bypass artifacts. A separate finite enumeration reproduces the composition, score, and action-equivalence errors near numerical zero. No Y_T value, EW/Higgs authority, LSZ normalization, pole row, matching/running, or fitted/observed input is used or retained.
+- **auditor confidence:** high
+
+### `yt_source_covariance_normalization_support_note_2026-05-24`
+
+- **Note:** [`YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-support RN source-coordinate derivative identities fixing the source-side connected row in the fixed h coordinate; physical scalar/Higgs normalization, canonical O_H, LSZ, kappa_Y, m_t, and y_t are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-fresh-context-audit-loop-2026-05-28`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** d log Z / d h_x = <epsilon_x>_h and d^2 log Z / d h_x d h_y = <epsilon_x epsilon_y>_h - <epsilon_x>_h <epsilon_y>_h, so C_ss(x,y; h) = Cov_h(epsilon_x, epsilon_y).  _(class `A`)_
+- **chain closes:** True — Finite support and positive mu_0 give Z(h)>0 and justify differentiating through the sum: d_x Z = Z <epsilon_x>_h, and d_y <epsilon_x>_h = <epsilon_x epsilon_y>_h - <epsilon_x>_h <epsilon_y>_h. The retained-grade one-hop dependencies supply the RN source convention and the scalar-normalization boundary without importing a physical Higgs/LSZ normalization.
+- **rationale:** Independent math check: direct differentiation of the finite partition function gives the stated expectation and connected-covariance identities with no missing sign, factor, or normalization. The uniform-origin statement follows only under the stated uniform signed-record reference, and source rescaling changes the fixed-h score unless treated as a different source-coordinate convention. The cached runner reports RESULT: PASS=33 FAIL=0 and checks the covariance identity, origin convention, source-rescaling boundary, and firewalls against scalar/Higgs overclaim.
 - **auditor confidence:** high
 
 ### `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23`

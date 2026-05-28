@@ -68,25 +68,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": null,
+      "claim_scope": "Bounded R1-R3 algebraic core: for a fixed Hilbert-Schmidt form on the canonical su(3) triplet block, the Ad-invariant form is unique up to scalar, and scalar dilation T_a -> c T_a preserves both the trace Gram and quadratic Casimir only for c = +/-1; connection-rescaling and Wilson-routing observations are out of scope.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "physical_lattice_necessity_note",
         "g_bare_structural_normalization_theorem_note_2026-04-18"
       ],
       "direct_in_degree": 28,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 21.714,
       "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
       "transitive_descendants": 209

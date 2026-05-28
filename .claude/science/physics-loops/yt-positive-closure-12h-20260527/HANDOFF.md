@@ -51,7 +51,13 @@ Cycle 31 science commit:
 d97ed2305adf8437925906839a80b5b3f5bb591d
 ```
 
-Cycle 31 delivery commit, branch push, and PR #1980 body update are pending.
+Cycle 31 delivery commit:
+
+```text
+574f24dad18c63d91e82d6ac3dffb2f90d48908a
+```
+
+Cycle 31 branch push and PR #1980 body update are complete.
 
 Cycle 30 adds a forty-fourth science block, not positive retained-grade
 closure. The block prunes the shortcut:

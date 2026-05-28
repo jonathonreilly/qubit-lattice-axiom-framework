@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 5286
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T05:01:51Z"
+last_checkpoint_utc: "2026-05-28T05:03:06Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_oriented_markov_current_source_law_no_go
@@ -241,6 +241,9 @@ no_go_routes:
   - ordinary one-Higgs generation-matrix normalization conventions certify eta=1 or lambda_top=1/sqrt(2)
   - nonreversible oriented C3 Markov-current dynamics plus connected/current normalization derives an accepted non-mass physical top-line law or lambda_top=1/sqrt(2)
 commands_run:
+  - "gh pr edit 1980 --body-file - -> PR body updated"
+  - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
+  - "git commit -m 'Record C3 oriented Markov current delivery' -> 574f24dad18c63d91e82d6ac3dffb2f90d48908a"
   - "git commit -m 'Prune C3 oriented Markov current shortcut' -> d97ed2305adf8437925906839a80b5b3f5bb591d"
   - "python3 scripts/frontier_yt_c3_oriented_markov_current_source_law_no_go.py -> PASS=109 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=576 FAIL=0"

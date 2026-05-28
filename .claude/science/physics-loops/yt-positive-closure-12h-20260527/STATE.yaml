@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 2285
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T06:12:58Z"
+last_checkpoint_utc: "2026-05-28T06:16:40Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_local_coefficient_flow_selector_no_go
@@ -282,6 +282,9 @@ no_go_routes:
   - continuous C3 unitary character-flow dynamics plus branch/unit normalization derives an accepted non-mass physical top-line law or source matrix element
   - local C3 coefficient-flow template for a(h), x(h), y(h) derives an accepted physical nontrivial top row or radial generator factor
 commands_run:
+  - "gh pr edit 1980 --body-file - -> PR body updated"
+  - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
+  - "git commit -m 'Prune C3 local coefficient flow selector shortcut' -> 74b947a0aa93eb092faa1b726595a950c9fb1964"
   - "python3 scripts/frontier_yt_c3_local_coefficient_flow_selector_no_go.py -> PASS=82 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=619 FAIL=0"
   - "python3 scripts/frontier_yt_c3_circulant_dynamics_ordering_source_law_boundary.py -> PASS=95 FAIL=0"
@@ -856,9 +859,9 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 36 local coefficient-flow selector no-go block is verified locally; science commit, push, and PR #1980 body update are pending."
-latest_science_commit: pending_cycle36
-latest_delivery_commit: pending_cycle36
-latest_delivery_hash_record_commit: pending_cycle36
+pr_status: "Cycle 36 science commit 74b947a0aa93eb092faa1b726595a950c9fb1964 is pushed; PR #1980 body is updated with the local coefficient-flow selector no-go result and verification. Delivery state commit is pending."
+latest_science_commit: 74b947a0aa93eb092faa1b726595a950c9fb1964
+latest_delivery_commit: pending_cycle36_delivery_state
+latest_delivery_hash_record_commit: pending_cycle36_delivery_hash_record
 next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

@@ -44,7 +44,8 @@ Cycle 36 verification so far:
 - `python3 -m py_compile ...` passed.
 - YAML validation passed.
 - `git diff --check` passed.
-- Commit, push, and PR body update are pending for this block.
+- Science commit `74b947a0aa93eb092faa1b726595a950c9fb1964` was pushed.
+- PR #1980 body was updated with the cycle 36 result and verification.
 - `POSITIVE_CLOSURE` remains absent.
 
 The next exact action remains to derive accepted same-surface

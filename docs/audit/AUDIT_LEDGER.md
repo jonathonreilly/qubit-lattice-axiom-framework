@@ -23,11 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 534 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1239 |
+| unaudited | 1238 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 42 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,10 +60,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 828 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 49 |
-| `audited_failed` | 44 |
+| `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1469 |
+| `unaudited` | 1468 |
 
 | claim_type | count |
 |---|---:|
@@ -1071,6 +1072,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `s3_general_r_derivation_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -10626,6 +10628,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the explicit cubical-ball family constructed by the runner at R=2,3,4,5, the checker constructs the boundary triangulation and cone complex and verifies the listed finite incidence, link, boundary, and Euler facts.  _(class `A`)_
 - **chain closes:** True — Fresh-context independent check confirmed this is finite combinatorics over the declared runner family: edge-degree two and vertex-link cycle checks make the boundary a closed triangulated 2-manifold in the checked cases; coning gives apex link equal to the base triangulation, paired non-base cone faces, and chi_cap=1. The source excludes global uniqueness and PL S^3 conclusions.
 - **rationale:** The second audit agrees that the narrowed bounded certificate closes only for the explicit finite construction. The runner directly constructs the cubical balls, boundary triangulations, and cone complexes for R=2,3,4,5, while the source explicitly removes global PL cap uniqueness, physical closure, Schoenflies/Alexander/Perelman/Moise imports, and PL S^3 identification.
+- **auditor confidence:** high
+
+### `s3_general_r_derivation_note`
+
+- **Note:** [`S3_GENERAL_R_DERIVATION_NOTE.md`](../../docs/S3_GENERAL_R_DERIVATION_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** All-R positive topology claim under audit: M_R = B_R cup cone(partial B_R) is PL-homeomorphic to S^3 for every R >= 2, with uniqueness of compactification and framework-level selection asserted as resolved. The attached finite cone-cap runner and current one-hop dependencies do not support that scope.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note asserts that Steps 1-3 verify compact closed simply connected PL 3-manifold hypotheses for all R >= 2 and Step 4 then applies PL Poincare/Moise to conclude M_R is PL S^3 for every R.  _(class `B`)_
+- **chain closes:** False — The one-hop dependencies are retained_bounded only for finite-radius certificates and explicitly exclude unrestricted all-R PL cap closure, global uniqueness, physical closure, and PL S^3 identification.
+- **rationale:** Issue: the source claims an all-R PL S^3 theorem plus resolved uniqueness and framework selection, but its direct retained-grade authorities do not prove those statements. `s3_cap_uniqueness_note` is now audited only as a finite cone-cap construction certificate for R=2..5 and explicitly excludes global cap uniqueness, physical closure, arbitrary PL cap classification, and PL S^3 compactification. `s3_boundary_link_theorem_note` is audited only as R=2..10 boundary-link verification plus a finite local subset certificate, with unrestricted all-R cubical-ball closure out of scope. Why this blocks: applying Perelman/Moise requires compact closed simply connected PL 3-manifold hypotheses for every R, and the current packet does not prove the required all-R boundary-link/disk, simple-connectivity, or cap-uniqueness/selection premises. The attached runner is the finite cone-cap runner for the narrowed S3 cap row, not a general-R proof of this note's theorem. Repair target: either rewrite this row to the finite retained-bounded cone-cap/link scope already audited upstream, or add retained one-hop theorems/runners for the all-R boundary-link bridge, pi_1 closure, PL 3-manifold hypotheses, and any claimed uniqueness/selection step. Claim boundary until fixed: finite cone-cap construction facts at checked radii and bounded boundary-link certificates may be cited through their own audited rows; this all-R PL S^3 wrapper is not closed.
+- **open / conditional deps cited:**
+  - `s3_cap_uniqueness_note`
+  - `s3_boundary_link_theorem_note`
 - **auditor confidence:** high
 
 ### `s3_mass_matrix_no_go_note`

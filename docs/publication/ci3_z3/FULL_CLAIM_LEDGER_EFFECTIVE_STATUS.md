@@ -76,7 +76,7 @@ These rows correspond to Section A of
 |---|---|---|---|
 | Qubit at every site of `Z^3` is the working physical axiom surface | promoted | framework sentence and ontological surface for the manuscript; the equivalent `Cl(3,0)` local-algebra reading is the audit-stable mathematical language | [ARXIV_DRAFT.md](./ARXIV_DRAFT.md), [MINIMAL_AXIOMS_2026-05-20.md](../../MINIMAL_AXIOMS_2026-05-20.md)&nbsp;[audit:meta] |
 | anomaly-forced `3+1` | promoted | single-clock codimension-1 theorem survives direct audit | [ANOMALY_FORCES_TIME_THEOREM.md](../../ANOMALY_FORCES_TIME_THEOREM.md)&nbsp;[audit:unaudited] |
-| retained `S^3` compactification / topology closure | promoted | cone-cap family now clears the accepted topology bar and is no longer a live gate | [S3_GENERAL_R_DERIVATION_NOTE.md](../../S3_GENERAL_R_DERIVATION_NOTE.md)&nbsp;[audit:unaudited], [S3_CAP_UNIQUENESS_NOTE.md](../../S3_CAP_UNIQUENESS_NOTE.md)&nbsp;[audit:retained_bounded] |
+| retained `S^3` compactification / topology closure | promoted | cone-cap family now clears the accepted topology bar and is no longer a live gate | [S3_GENERAL_R_DERIVATION_NOTE.md](../../S3_GENERAL_R_DERIVATION_NOTE.md)&nbsp;[audit:audited_failed], [S3_CAP_UNIQUENESS_NOTE.md](../../S3_CAP_UNIQUENESS_NOTE.md)&nbsp;[audit:retained_bounded] |
 
 ### Gravity
 

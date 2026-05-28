@@ -235538,22 +235538,46 @@
       "verdict_rationale": "The second audit agrees that the narrowed bounded certificate closes only for the explicit finite construction. The runner directly constructs the cubical balls, boundary triangulations, and cone complexes for R=2,3,4,5, while the source explicitly removes global PL cap uniqueness, physical closure, Schoenflies/Alexander/Perelman/Moise imports, and PL S^3 identification."
     },
     "s3_general_r_derivation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T01:43:29.839812+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_boundary_link_theorem_note": "Bounded R=2..10 verification that every actual boundary vertex link of B_R is a PL 2-disk, plus the finite Proposition Z octahedral K_simp(P) subset certificate; unrestricted all-R cubical-ball closure is out of scope.",
+          "s3_cap_uniqueness_note": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited."
+        },
+        "dep_claim_type": {
+          "s3_boundary_link_theorem_note": "bounded_theorem",
+          "s3_cap_uniqueness_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "s3_boundary_link_theorem_note": "retained_bounded",
+          "s3_cap_uniqueness_note": "retained_bounded"
+        },
+        "deps": [
+          "s3_boundary_link_theorem_note",
+          "s3_cap_uniqueness_note"
+        ],
+        "load_bearing_score": 18.451,
+        "runner_hash": "a7d5e017199ff21ece96fe07aa0089c8904fbfa3551b6a70cf93ade785baa606",
+        "transitive_descendants": 699
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop dependencies are retained_bounded only for finite-radius certificates and explicitly exclude unrestricted all-R PL cap closure, global uniqueness, physical closure, and PL S^3 identification.",
       "claim_id": "s3_general_r_derivation_note",
-      "claim_scope": null,
+      "claim_scope": "All-R positive topology claim under audit: M_R = B_R cup cone(partial B_R) is PL-homeomorphic to S^3 for every R >= 2, with uniqueness of compactification and framework-level selection asserted as resolved. The attached finite cone-cap runner and current one-hop dependencies do not support that scope.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "Constructive computation (R=2..6) + theorem chain with standard mathematical citation (Perelman 2003)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T01:43:29.839812+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -235562,20 +235586,23 @@
         "s3_boundary_link_theorem_note"
       ],
       "direct_in_degree": 18,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 18.451,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note asserts that Steps 1-3 verify compact closed simply connected PL 3-manifold hypotheses for all R >= 2 and Step 4 then applies PL Poincare/Moise to conclude M_R is PL S^3 for every R.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "ebc7974078c0f5dee37c16ada66efad06c628861ee9ffb9b206d5d54102c58aa",
       "note_path": "docs/S3_GENERAL_R_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "Replace the all-R wrapper with finite bounded scope or supply retained-grade one-hop all-R topology authorities before re-audit.",
+      "open_dependency_paths": [
+        "s3_cap_uniqueness_note",
+        "s3_boundary_link_theorem_note"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-03T11:37:21.236823+00:00",
@@ -235702,18 +235729,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 52,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 52
       },
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
       "title": "S^3 Topology: General-R Derivation",
       "transitive_descendants": 699,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source claims an all-R PL S^3 theorem plus resolved uniqueness and framework selection, but its direct retained-grade authorities do not prove those statements. `s3_cap_uniqueness_note` is now audited only as a finite cone-cap construction certificate for R=2..5 and explicitly excludes global cap uniqueness, physical closure, arbitrary PL cap classification, and PL S^3 compactification. `s3_boundary_link_theorem_note` is audited only as R=2..10 boundary-link verification plus a finite local subset certificate, with unrestricted all-R cubical-ball closure out of scope. Why this blocks: applying Perelman/Moise requires compact closed simply connected PL 3-manifold hypotheses for every R, and the current packet does not prove the required all-R boundary-link/disk, simple-connectivity, or cap-uniqueness/selection premises. The attached runner is the finite cone-cap runner for the narrowed S3 cap row, not a general-R proof of this note's theorem. Repair target: either rewrite this row to the finite retained-bounded cone-cap/link scope already audited upstream, or add retained one-hop theorems/runners for the all-R boundary-link bridge, pi_1 closure, PL 3-manifold hypotheses, and any claimed uniqueness/selection step. Claim boundary until fixed: finite cone-cap construction facts at checked radii and bounded boundary-link certificates may be cited through their own audited rows; this all-R PL S^3 wrapper is not closed."
     },
     "s3_mass_matrix_no_go_note": {
       "audit_date": "2026-05-02T15:48:15.381673+00:00",

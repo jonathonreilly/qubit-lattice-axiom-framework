@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 241,
+    "critical": 240,
     "high": 339,
     "leaf": 325,
     "medium": 335
@@ -66,31 +66,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "s3_general_r_derivation_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "s3_cap_uniqueness_note",
-        "s3_boundary_link_theorem_note"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.451,
-      "note_path": "docs/S3_GENERAL_R_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
-      "transitive_descendants": 699
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -37295,6 +37270,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 64,
-  "total_pending": 1240
+  "ready_count": 63,
+  "total_pending": 1239
 }

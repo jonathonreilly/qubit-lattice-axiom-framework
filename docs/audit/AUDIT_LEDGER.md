@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 587 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 26 |
-| unaudited | 1130 |
+| unaudited | 1132 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
 | ~~audited_conditional~~ | 72 |
-| ~~audited_failed~~ | 6 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,10 +63,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 891 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 50 |
+| `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1360 |
+| `unaudited` | 1362 |
 
 | claim_type | count |
 |---|---:|
@@ -1153,7 +1153,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `broad_gravity_derivation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `critical_exponents_topology_note_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -1167,7 +1166,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_dynamics_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
-| `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `grown_transfer_basin_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -2210,19 +2208,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Set the Wilson quadratic coefficient equal to the heat-kernel quadratic coefficient, (beta/(4 N_c))|X|^2 = |X|^2/(2t), hence t = 2 N_c / beta = g_bare^2 and t(6)=1.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded surface, the conclusion follows by ordinary algebra from the canonical trace/norm relation, the Wilson small-U quadratic coefficient, and the standard local heat-kernel Gaussian asymptotic on a compact Lie group. The standard Brownian-motion/heat-kernel facts are acceptable mathematical machinery here because they are used only for the local asymptotic matching, not to import a physical action-choice or thermodynamic bridge.
 - **rationale:** The source is explicit that this is only a leading-order bounded matching theorem and not a resolution of the bridge gap, action-form uniqueness, finite-beta corrections, or thermodynamic plaquette behavior. The load-bearing calculation is a class-A coefficient match, and the cited retained-bounded/decoration inputs supply the canonical normalization and N_c=3 surface needed for the scoped result. The runner corroborates the algebraic normalization, small-U expansion, t(beta)=2N_c/beta, and t(6)=1 checks; its heat-kernel plaquette preview is non-load-bearing and does not introduce an external comparator. No hidden fitted value or physical observable bridge is used inside the audited scope.
-- **auditor confidence:** high
-
-### `broad_gravity_derivation_note`
-
-- **Note:** [`BROAD_GRAVITY_DERIVATION_NOTE.md`](../../docs/BROAD_GRAVITY_DERIVATION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Broad weak-field gravity bundle assessment claiming that S = kL(1-phi) is derived from the retained weak-field core and that WEP and gravitational time dilation can be promoted while geodesics, light bending, and the conformal metric remain bounded.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-broad-gravity-derivation-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note's central load-bearing step is that S = kL(1-phi) is derived from the framework's self-consistency chain, so WEP and gravitational time dilation inherit derived status rather than merely following from an accepted action.  _(class `B`)_
-- **chain closes:** False — The one-hop retained-bounded dependencies do not supply the promoted premise. GRAVITY_CLEAN_DERIVATION_NOTE treats S=L(1-phi), rho=|psi|^2, and L^{-1}=G_0 as named inputs in a bounded IF-chain; GRAVITY_FULL_SELF_CONSISTENCY_NOTE treats L^{-1}=G_0 as stipulated, not derived from the Cl(3)-on-Z^3 baseline.
-- **rationale:** Issue: the source's promotion of WEP and time dilation rests on the assertion that the weak-field action S = kL(1-phi) is derived, but its one-hop dependencies have since been narrowed to conditional statements where that response, the source readout, and the closure identity are stipulated inputs. Why this blocks: the promoted signatures are algebraic consequences once S and the Poisson/readout premises are supplied; the restricted packet does not derive those premises, and one dependency explicitly says the stronger physical-gravity closure is out of scope. Repair target: rewrite this row as a bounded conditional bundle matching the current dependency scopes, or add retained bridge theorems deriving L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the clock/readout map. Claim boundary until fixed: conditional WEP/time-dilation algebra may be cited only under the explicitly supplied weak-field action/readout assumptions; no broad gravity-signature promotion is retained from this row.
 - **auditor confidence:** high
 
 ### `broad_surrogate_point_source_compare_note`
@@ -6679,19 +6664,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the narrowed scope, the runner stdout matches the note's signs and classifications for every ratified row. The z=2, z=4, z=6, and z=7 dense rows are explicitly outside the audited scope and are not ratified here.
 - **rationale:** The scoped claim is an algebraic sign-interpretation over runner-computed observables, and the supplied runner computes the relevant rows rather than printing fixed classifications. No one-hop authorities are listed, so no dependency-retention blocker is available inside the restricted packet. Clean status applies only to the narrowed z=3 and z=5 dense rows plus the other printed runner rows; the broader z=2..6 dense table is not part of this verdict.
 - **auditor confidence:** medium
-
-### `gravity_sign_audit_2026-04-10`
-
-- **Note:** [`GRAVITY_SIGN_AUDIT_2026-04-10.md`](../../docs/GRAVITY_SIGN_AUDIT_2026-04-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded configured finite 1D well/hill diagnostic claiming that the source's stated identity, parity, and lapse Hamiltonian forms produce the declared well/hill direction table for n=61, mass=0.30, dt=0.12, steps=20, mass point 38, and initial packet center 30.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gravity-sign-well-hill-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The claimed direction table says that under the stipulated parity and lapse Hamiltonian forms, identity gives well -> TOWARD and hill -> TOWARD, while parity and lapse each give well -> TOWARD and hill -> AWAY.  _(class `C`)_
-- **chain closes:** False — The parity/identity finite signs reproduce, but the lapse part does not close against the cited lapse form: the configured well potential gives N=1+Phi/m < 0, while the runner silently floors N to 0.01 before taking sqrt(N). That floor is unstated and load-bearing.
-- **rationale:** Issue: the one-hop operator certificate defines the lapse form as sqrt(N) H_flat sqrt(N) with N=1+Phi/m real and nonnegative, but the configured well profile in the runner has N_min=-79 and the runner replaces N by max(N,0.01). Why this blocks: the source claims a lapse-Hamiltonian well/hill result, while the executable verifies a clipped-lapse regularization not stated in the note or dependency. An independent dense-exponential check reproduces the clipped-lapse signs, but the unregularized N<0 case is outside the cited domain and is not the same Hermitian/norm-preserving observable. Repair target: either state and audit the floored-lapse regularization with the full potential/profile parameters as the bounded claim, or choose a configuration with N>=0 and rerun the lapse diagnostic; split the parity-only finite sign result if needed. Claim boundary until fixed: the identity/parity finite signs and the clipped-lapse finite signs are candidate bounded results, but the current source's lapse-form direction table is not retained.
-- **auditor confidence:** high
 
 ### `growing_graph_dynamic_limit_diagnostic_note`
 

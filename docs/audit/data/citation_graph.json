@@ -43563,18 +43563,18 @@
     },
     "broad_gravity_derivation_note": {
       "claim_id": "broad_gravity_derivation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gravity_clean_derivation_note",
         "gravity_full_self_consistency_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7ceb196770437f8a9abf6f65aa3103f8ad0bfe344bad4689e7f74a5938fcb1ee",
+      "note_hash": "386d34d5c0a874ab1f9b596a1c4898ca8817fd6d176ea17b7e2cbf2b49698777",
       "path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
       "runner_path": null,
-      "title": "Broad Gravity Bundle: Per-Signature Derivation Chains"
+      "title": "Broad Gravity Bundle: Per-Signature Bounded IF-Chains"
     },
     "broad_surrogate_point_source_compare_note": {
       "claim_id": "broad_surrogate_point_source_compare_note",
@@ -57355,7 +57355,7 @@
         "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "04da5ba4204a232486f847a604fd9125cb4ba98a8f26d7d94c92bef4b950d340",
+      "note_hash": "4e898acbb165e8cf3645bcdbeed3aca71666f4b45f636fadcc66e23352a2e5c5",
       "path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
       "runner_path": "scripts/frontier_gravity_sign_well_hill_diagnostic.py",
       "title": "Gravity Sign Well/Hill Diagnostic"
@@ -86443,11 +86443,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 642,
+      "bounded_theorem": 643,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1440,
+      "none": 1439,
       "open_gate": 50,
       "positive_theorem": 169
     },

@@ -1,5 +1,84 @@
 # Handoff
 
+Cycle 22 adds a thirty-sixth science block, not positive retained-grade
+closure. The new block prunes the shortcut
+
+```text
+finite real C3 irrep/dimension/faithfulness facts
+  -> accepted zero-singlet physical top-block membership
+  -> coefficient row dM_t/dell = A/sqrt(12).
+```
+
+The real regular representation splits exactly as
+
+```text
+R[C3] = P_0 + P_nt,
+```
+
+where `P_0` is the one-dimensional trivial real irrep and `P_nt` is the
+faithful two-dimensional real irrep. That finite algebra exposes the tempting
+top-block candidate, but it does not make the faithful/nontrivial summand the
+accepted physical Y_T top block. That selection is still an extra physical
+top-readout law. Even after supplying `P_nt`, the same-surface matrix element
+has a free radial coefficient:
+
+```text
+|dM_t/dell| = lambda_top A/sqrt(6).
+```
+
+The target coefficient requires `lambda_top = 1/sqrt(2)`, so the branch still
+needs accepted same-surface radial generator dynamics or accepted strict
+top/W pole rows with contact, FV/IR, and model-class controls.
+
+This is an exact no-go/route-pruning boundary only. No `POSITIVE_CLOSURE`
+marker was written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 22 science commit:
+
+```text
+bff9f07ca1dbb03e19fd3ff522b50c3fc8a3016b
+```
+
+Cycle 22 delivery commit:
+
+```text
+pending_cycle_22_delivery_commit
+```
+
+Cycle 22 artifacts:
+
+- `docs/YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py`
+- `outputs/yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 22 verification:
+
+- `python3 scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py`
+  -> `SUMMARY: PASS=76 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=499 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`,
+  zero-singlet top-block no-go `PASS=104`, representation phase-selection
+  no-go `PASS=94`, same-surface radial-factor no-go `PASS=94`,
+  Fisher-quotient radial no-go `PASS=91`, same-surface matrix factorization
+  `PASS=77`, first-principles transfer response `PASS=56`, strict sparse
+  availability audit `PASS=74`, direct sparse certificate `PASS=88`,
+  radial/readout compensation no-go `PASS=100`, sharp-response readout no-go
+  `PASS=98`, block-rank radial no-go `PASS=98`, Fisher/LSZ radial-generator
+  no-go `PASS=105`, source-orientation sign-selector no-go `PASS=89`,
+  trace-free centered-source no-go `PASS=89`, and minimum-information readout
+  no-go `PASS=103`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+The next exact action remains rank 1 or rank 4: derive accepted same-surface
+radial generator dynamics plus a physical top-readout law excluding `P_0`, or
+produce accepted strict top/W pole rows with contact, FV/IR, and model-class
+controls.
+
 Cycle 21 adds a thirty-fifth science block, not positive retained-grade
 closure. The new block prunes the information-geometry radial shortcut
 

@@ -79,6 +79,9 @@ force that same radial generator factor.
 The thirty-fifth route tested whether the stronger C3 RN/Fisher quotient
 geometry or Fisher-unit source-score normalization can force that radial
 generator factor.
+The thirty-sixth route tested whether finite real C3
+irrep/dimension/faithfulness facts can select `P_nt` as the physical Y_T top
+block and certify the coefficient row.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -118,6 +121,7 @@ generator factor.
 | Fisher/LSZ radial generator normalization | deep-work no-go shortcut test | 3 | Pruned: source normalization removes raw scale `beta`, but `lambda_top` remains a relative top response coefficient |
 | Block-rank radial normalization | no-go shortcut test | 3 | Pruned: `rank(P_nt)=2` makes the root-rank factor visible, but ordinary matrix elements and block-density expectations stay rank-blind unless the root-rank law is added |
 | Fisher-quotient radial normalization | no-go shortcut test | 3 | Pruned: fine and binary Fisher geometries are isometric, Fisher-unit score normalization is only a source-coordinate unit, and `B_x` has no internal Fisher direction in `P_nt` |
+| Real C3 irrep dimension top-block law | no-go shortcut test | 3 | Pruned: `P_nt` is the faithful two-dimensional real irrep, but selecting it as the physical top block imports an extra top-readout law, and `lambda_top` remains free |
 
 ## Stuck Fan-Out
 
@@ -138,6 +142,7 @@ generator factor.
 | Unit-normalized signed base dynamics | Add `x_0^2+y_0^2=1` to the signed branch | Fails; `(0,1)` selects `P_omega2`, but `(sqrt(3)/2,1/2)` selects `P_0` with the same sign and unit norm |
 | Primitive character angle | Test `phi=+/-2pi/3` on the unit base circle | Succeeds conditionally; it hits the target row, but deriving that phase for the physical Y_T base operator remains open |
 | Representation-only selection | Ask C3 character/projector facts or functions of `C` to choose the phase | Fails; the same C3-native family contains `phi=0` and `phi=pi/6` singlet witnesses |
+| Real-irrep dimension selection | Ask real C3 irreducibility, dimension, or faithfulness to choose the top block | Fails as actual-surface closure; faithfulness selects `P_nt` only as an added physical premise, and radial factorization remains open |
 | Cubic trace invariant | Extremize `Tr(H(phi)^3)` on the unit C3 base circle | Succeeds conditionally; cubic maxima include `phi=+/-2pi/3`, but also the singlet `phi=0`, so accepted orientation/cubic dynamics remain load-bearing |
 | Cubic potential invariance | Ask C3-invariant cubic phase-potential structure alone to choose the physical phase law | Fails; sign, variational convention, singlet extrema, degeneracies, and orientation branch remain load-bearing |
 | General scalar phase orbit | Ask C3-invariant scalar phase dynamics to select the physical nontrivial top line | Fails; orbit selection is not orbit-member selection, and the same orbit contains `P_0`, `P_omega2`, and `P_omega` witnesses |

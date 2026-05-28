@@ -1,5 +1,47 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 36
+
+Scope:
+
+- C3 real-irrep dimension top-block no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, finite real C3 projectors, the `P_0 + P_nt` real decomposition, source matrix elements, free `lambda_top`, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open real-irrep physical top-block law; faithful/nontrivial irrep selection is not promoted into an accepted Y_T top-readout law. |
+| Imports / support | DISCLOSED | The physical law selecting `P_nt`, the radial factor `lambda_top=1/sqrt(2)`, and strict pole rows remain open; forbidden mass/target/fit inputs are absent. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review so far:
+
+- New runner: `PASS=76 FAIL=0`
+- Full stack runner: `PASS=499 FAIL=0`
+- Adjacent runners passed: nontrivial-block support `PASS=85`,
+  zero-singlet top-block no-go `PASS=104`, representation phase-selection
+  no-go `PASS=94`, same-surface radial-factor no-go `PASS=94`,
+  Fisher-quotient radial no-go `PASS=91`, same-surface matrix factorization
+  `PASS=77`, first-principles transfer response `PASS=56`, strict sparse
+  availability audit `PASS=74`, direct sparse certificate `PASS=88`,
+  radial/readout compensation no-go `PASS=100`, sharp-response readout no-go
+  `PASS=98`, block-rank radial no-go `PASS=98`, Fisher/LSZ radial-generator
+  no-go `PASS=105`, source-orientation sign-selector no-go `PASS=89`,
+  trace-free centered-source no-go `PASS=89`, and minimum-information readout
+  no-go `PASS=103`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 35
 
 Scope:

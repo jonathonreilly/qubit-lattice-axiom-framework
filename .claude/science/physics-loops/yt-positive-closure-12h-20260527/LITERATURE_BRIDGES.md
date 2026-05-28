@@ -105,3 +105,10 @@ centered score. No external information-geometry theorem or literature
 normalization convention is load-bearing. External context could only motivate
 accepting a new physical source-geometry-to-radial-generator law; it does not
 derive `lambda_top=1/sqrt(2)` on the current surface.
+The real-irrep dimension top-block no-go directly computes the finite real
+C3 regular-representation decomposition into `P_0` and `P_nt`, checks their
+dimensions and source matrix elements, and verifies the free `lambda_top`
+family. No external representation-theory reference is load-bearing. External
+context could only motivate accepting faithful/nontrivial C3 action as a
+physical Y_T top-block law; it does not derive that law on the current
+surface.

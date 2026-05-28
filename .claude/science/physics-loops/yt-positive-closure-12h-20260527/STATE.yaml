@@ -1,23 +1,23 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 21
+supervisor_cycle: 22
 runtime_budget_seconds: 43200
 remaining_campaign_seconds_at_cycle_start: 15217
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T02:09:56Z"
+last_checkpoint_utc: "2026-05-28T02:36:39Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: c3_fisher_quotient_radial_normalization_no_go
+active_route: c3_real_irrep_dimension_top_block_no_go
 hard_residual: "derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2), physical zero-singlet top-readout/sign law excluding P_0, or accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
-actual_current_surface_status: no-go / open Fisher-quotient-to-radial-generator law
+actual_current_surface_status: no-go / open real-irrep physical top-block law
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Cycle 21 prunes the Fisher-quotient/source-geometry radial-normalization shortcut. The reflection-even C3 RN/Fisher line-simplex curve and its binary P_0/P_nt quotient have identical Fisher metric, Fisher-unit C3 score normalization is only a source-coordinate normalization, and B_x has no internal Fisher direction inside P_nt. The target row still appears only after adding an accepted physical radial generator law. Positive closure remains open."
+claim_state_movement: "Cycle 22 prunes the finite real-C3 irrep/dimension shortcut. The regular real representation splits as P_0 plus P_nt, with P_0 the trivial real irrep and P_nt the faithful two-dimensional real irrep, but selecting the faithful/nontrivial summand as the physical top block is an extra top-readout law rather than a consequence of representation theory alone. Even if P_nt is supplied, lambda_top remains free and the target row still requires accepted lambda_top=1/sqrt(2) radial generator factorization or strict pole rows. Positive closure remains open."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -103,6 +103,9 @@ files_touched:
   - docs/YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md
   - scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py
   - outputs/yt_c3_fisher_quotient_radial_normalization_no_go_2026-05-28.json
+  - docs/YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md
+  - scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py
+  - outputs/yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -121,6 +124,7 @@ open_imports:
   - accepted physical sharp-endpoint/readout law excluding P_0 if zero response variance is used
   - accepted microscopic dynamics deriving nontrivial C3 phase-ordering cone membership
   - accepted zero-singlet physical top-block membership in P_nt
+  - accepted physical theorem identifying the faithful/nontrivial real C3 irrep P_nt as the Y_T top block
   - accepted same-surface sign/order/readout law excluding P_0
   - accepted physical source-orientation/sign/readout law excluding P_0
   - accepted trace-free-source-to-top-membership law excluding P_0
@@ -175,7 +179,30 @@ no_go_routes:
   - Fisher/LSZ source normalization certifies the relative top radial generator factor lambda_top=1/sqrt(2)
   - block rank or root-rank averaging certifies lambda_top=1/sqrt(2)
   - C3 RN/Fisher line-simplex geometry, binary P_0/P_nt quotient coarse-graining, or Fisher-unit C3 score normalization certifies lambda_top=1/sqrt(2)
+  - finite real C3 irrep/dimension/faithfulness facts derive accepted zero-singlet physical top-block membership or the coefficient row
 commands_run:
+  - "python3 scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py -> PASS=76 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=499 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py -> PASS=85 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py -> PASS=104 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_representation_phase_selection_no_go.py -> PASS=94 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py -> PASS=94 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py -> PASS=91 FAIL=0"
+  - "python3 scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py -> PASS=77 FAIL=0"
+  - "python3 scripts/frontier_yt_first_principles_transfer_response_boundary.py -> PASS=56 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py -> PASS=88 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_radial_readout_compensation_underdetermination_no_go.py -> PASS=100 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_sharp_response_readout_underdetermination_no_go.py -> PASS=98 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_block_rank_radial_normalization_no_go.py -> PASS=98 FAIL=0"
+  - "python3 scripts/frontier_yt_fisher_lsz_radial_generator_normalization_no_go.py -> PASS=105 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py -> PASS=89 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py -> PASS=89 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py -> PASS=103 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_c3_nontrivial_block_matrix_element_support.py scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py scripts/frontier_yt_c3_representation_phase_selection_no_go.py scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py scripts/frontier_yt_same_surface_top_matrix_element_factorization_boundary.py scripts/frontier_yt_first_principles_transfer_response_boundary.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_direct_same_surface_sparse_transfer_response_certificate.py scripts/frontier_yt_c3_radial_readout_compensation_underdetermination_no_go.py scripts/frontier_yt_c3_sharp_response_readout_underdetermination_no_go.py scripts/frontier_yt_c3_block_rank_radial_normalization_no_go.py scripts/frontier_yt_fisher_lsz_radial_generator_normalization_no_go.py scripts/frontier_yt_c3_source_orientation_sign_selector_no_go.py scripts/frontier_yt_c3_trace_free_centered_source_zero_singlet_no_go.py scripts/frontier_yt_c3_mininfo_readout_zero_singlet_no_go.py -> PASS"
+  - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
+  - "git diff --check -> PASS"
+  - "git commit -m 'Prune C3 real-irrep top-block shortcut' -> bff9f07ca1dbb03e19fd3ff522b50c3fc8a3016b"
   - "python3 scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py -> PASS=91 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=490 FAIL=0"
   - "python3 scripts/frontier_yt_c3_block_rank_radial_normalization_no_go.py -> PASS=98 FAIL=0"
@@ -571,8 +598,8 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 20 pushed to origin and PR #1980 body updated with exact result and verification."
-latest_science_commit: 0f43b0a4a96feac232d0ec0cb127f67e68b97b1f
-latest_delivery_commit: 9893573f363b2b5f5cbbcb08669b46aeae23a9b4
+pr_status: "Cycle 22 science commit bff9f07ca1dbb03e19fd3ff522b50c3fc8a3016b is created locally; delivery commit, branch push, and PR #1980 body update are the next delivery actions."
+latest_science_commit: bff9f07ca1dbb03e19fd3ff522b50c3fc8a3016b
+latest_delivery_commit: pending_cycle_22_delivery_commit
 next_exact_action: "Derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2) plus a physical top-readout law excluding P_0, or produce accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

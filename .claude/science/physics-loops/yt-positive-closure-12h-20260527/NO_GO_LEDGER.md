@@ -1,5 +1,13 @@
 # No-Go Ledger
 
+- New in the thirty-sixth block: finite real C3 irrep/dimension/faithfulness
+  facts do not derive accepted zero-singlet physical top-block membership or
+  the coefficient row. `P_0` is the trivial real irrep and `P_nt` is the
+  faithful two-dimensional real irrep; selecting the faithful/nontrivial
+  summand as the Y_T top block is an extra physical top-readout law, not a
+  consequence of representation theory alone. Even if `P_nt` is supplied,
+  `lambda_top` remains free and the target still requires accepted
+  `lambda_top=1/sqrt(2)` radial factorization or strict pole rows.
 - Formal transfer/Feynman-Hellmann first principles alone do not force
   `kappa`; sector matrix elements remain load-bearing.
 - Current same-source/W-row/symbolic-top support cannot be promoted into a

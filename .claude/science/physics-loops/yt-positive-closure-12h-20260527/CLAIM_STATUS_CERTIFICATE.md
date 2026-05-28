@@ -1,19 +1,19 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go / open Fisher-quotient-to-radial-generator
-  law
+actual_current_surface_status: no-go / open real-irrep physical top-block law
 trace_class: negative_route_pruning
-reachability_to_target: prunes the shortcut from C3 RN/Fisher quotient or
-  Fisher-unit source geometry to lambda_top = 1/sqrt(2)
+reachability_to_target: prunes the shortcut from finite real C3
+  irrep/dimension/faithfulness facts to accepted zero-singlet top-block
+  membership and the coefficient row
 conditional_surface_status: exact top-row certificate if accepted same-surface
   radial generator dynamics derives lambda_top = 1/sqrt(2) and an accepted
-  zero-singlet top-readout/sign law excludes P_0, or if accepted strict pole
-  rows are supplied
+  top-block/readout law selects P_nt, or if accepted strict pole rows are
+  supplied
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The fine reflection-even C3 RN/Fisher curve and the binary P_0/P_nt quotient are isometric, Fisher-unit C3 score normalization is only a source-coordinate normalization, and B_x has no internal Fisher direction inside P_nt. The target row still appears only after adding an accepted physical radial generator law."
+proposal_allowed_reason: "Finite real C3 representation theory exposes P_nt as the faithful two-dimensional real irrep, but selecting it as the physical Y_T top block is an extra physical top-readout law. Even with P_nt supplied, lambda_top remains free on the current surface."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass_for_no_go_route_pruning_only

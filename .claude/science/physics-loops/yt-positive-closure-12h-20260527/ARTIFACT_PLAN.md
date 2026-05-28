@@ -83,6 +83,9 @@ Current block artifacts:
 - `docs/YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_fisher_quotient_radial_normalization_no_go.py`
 - `outputs/yt_c3_fisher_quotient_radial_normalization_no_go_2026-05-28.json`
+- `docs/YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py`
+- `outputs/yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json`
 - `docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py`
 - `outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json`

@@ -68,6 +68,11 @@ closed exactly:
   Fisher-LSZ radial generator normalization no-go: Fisher arclength and LSZ
   remove raw source scale, but they do not identify the normalized C3 source
   tangent with lambda_top=1/sqrt(2)
+  block-rank radial normalization no-go: rank(P_nt)=2 makes a root-rank
+  factor numerically tempting, but ordinary P_nt matrix elements,
+  block-density expectations, and Hilbert-Schmidt block conventions do not
+  derive lambda_top=1/sqrt(2); root-rank averaging is an extra physical radial
+  generator law
   zero-singlet top-block membership no-go: current real/reflection-even C3
   block algebra does not exclude P_0; P_nt is selected only after importing
   a sign/order law or minimum-response convention
@@ -197,6 +202,8 @@ still open:
   accepted same-surface generator factorization for the top block
   accepted same-surface radial generator factorization fixing
   lambda_top=1/sqrt(2) if the C3 route grants zero-singlet P_nt support
+  accepted block-rank/root-rank radial generator law if the C3 route tries to
+  derive lambda_top=1/sqrt(2) from rank(P_nt)=2
   accepted independent physical readout/sign/radial laws, since target-size
   response magnitude itself cannot certify zero singlet weight or
   lambda_top=1/sqrt(2)

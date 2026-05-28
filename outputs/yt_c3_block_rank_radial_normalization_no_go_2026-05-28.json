@@ -1,0 +1,90 @@
+{
+  "actual_current_surface_status": "no-go / open block-rank-to-radial-generator law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block_rank_readouts": {
+    "B_x_on_P_nt": "-1/sqrt(6)",
+    "hilbert_schmidt_block_norm": "A/sqrt(3)",
+    "hilbert_schmidt_per_root_rank": "A/sqrt(6)",
+    "ordinary_block_density_row": "A/sqrt(6)",
+    "rank_P_nt": "2",
+    "root_rank_average_equivalent_to_lambda_top": "1/sqrt(2)",
+    "root_rank_factor": "1/sqrt(2)",
+    "root_rank_response_average": "A/sqrt(12)",
+    "same_data_conventions": [
+      {
+        "certifies_target_without_radial_law": false,
+        "name": "unit vector in P_nt",
+        "top_row": "A/sqrt(6)"
+      },
+      {
+        "certifies_target_without_radial_law": false,
+        "name": "block density P_nt/2",
+        "top_row": "A/sqrt(6)"
+      },
+      {
+        "certifies_target_without_radial_law": false,
+        "name": "Hilbert-Schmidt block norm",
+        "top_row": "A/sqrt(3)"
+      },
+      {
+        "certifies_target_without_radial_law": false,
+        "name": "Hilbert-Schmidt block norm per root-rank",
+        "top_row": "A/sqrt(6)"
+      },
+      {
+        "certifies_target_without_radial_law": false,
+        "name": "response divided by root-rank",
+        "top_row": "A/sqrt(12)",
+        "why_not": "this is the added root-rank radial law"
+      }
+    ]
+  },
+  "certificate_boundary": {
+    "bare_retained_allowed": false,
+    "lambda_top_free_on_current_surface": true,
+    "no_forbidden_imports": true,
+    "ordinary_projector_matrix_element_has_root_rank_factor": false,
+    "proposal_allowed": false,
+    "rank_factor_candidate": "1/sqrt(rank(P_nt)) = 1/sqrt(2)",
+    "rank_factor_derived_on_current_surface": false,
+    "rank_factor_numerically_matches_target_lambda": true,
+    "route_pruned": "block rank or root-rank averaging certifies lambda_top=1/sqrt(2) without an accepted radial generator dynamics theorem",
+    "same_data_counterconventions_present": true,
+    "strict_top_w_response_certificate_present": false
+  },
+  "dependencies": {
+    "c3_block_support": "exact-support / open nontrivial-block membership law",
+    "c3_radial_factor_nogo": "no-go / open same-surface radial generator factorization",
+    "first_principles": "exact-support / formal-transfer no-go",
+    "fisher_lsz_radial_nogo": "no-go / open Fisher-LSZ-to-radial-generator factorization",
+    "full_stack": "exact-support / open strict-response gate",
+    "same_surface_factorization": "conditional-support",
+    "strict_availability": "no-go"
+  },
+  "fail_count": 0,
+  "pass_count": 98,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Rank(P_nt)=2 makes 1/sqrt(2) a tempting root-rank factor, but ordinary P_nt matrix elements and block-density expectations remain rank blind, Hilbert-Schmidt block norms give a different same-data number, and the target row appears only after adding the root-rank response rule. That rule is the missing radial generator law, not a derivation from current C3 block algebra.",
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_C3_BLOCK_RANK_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md",
+    "scripts/frontier_yt_c3_block_rank_radial_normalization_no_go.py",
+    "outputs/yt_c3_block_rank_radial_normalization_no_go_2026-05-28.json"
+  ],
+  "route_pruned": "block rank or root-rank averaging certifies lambda_top=1/sqrt(2) without an accepted radial generator dynamics theorem",
+  "route_still_live": "derive accepted same-surface radial generator dynamics plus a physical top-readout law excluding P_0, or produce accepted strict top/W pole rows with contact, FV/IR, and model-class controls",
+  "same_surface_counterfamily": {
+    "dM_W_dell": "g_2*A/2",
+    "dM_t_dell_magnitude": "lambda_top*A/sqrt(6)",
+    "same_source_readout": "lambda_top/sqrt(3)",
+    "same_surface_witnesses": {
+      "lambda_top=1": "A/sqrt(6)",
+      "lambda_top=1/sqrt(2)": "A/sqrt(12)",
+      "lambda_top=sqrt(2)": "A/sqrt(3)"
+    },
+    "source_reparameterization_removes_lambda_top": false,
+    "top_generator_family": "V_top(lambda_top)=lambda_top*A*B_x"
+  },
+  "trace_class": "negative_route_pruning"
+}

@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 167 |
 | **retained_bounded** | 543 |
 | _retained_pending_chain_ | 8 |
-| open_gate | 21 |
-| unaudited | 1222 |
+| open_gate | 22 |
+| unaudited | 1221 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 839 |
+| `audited_clean` | 840 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1452 |
+| `unaudited` | 1451 |
 
 | claim_type | count |
 |---|---:|
@@ -599,6 +599,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `n_f_trace_space_bounded_obstruction_note_2026-05-07_w2binary` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -8685,6 +8686,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given canonical Gell-Mann generators on V_3 and their full-framework embedding T_a^V = diag(T_a,0) ⊗ I_2 on V = C^8, Tr_{V_3}(T_aT_b)=1/2 delta_ab while Tr_V(T_a^V T_b^V)=1 delta_ab, so the two natural trace surfaces differ by the weak/taste fiber multiplicity 2.  _(class `A`)_
 - **chain closes:** True — The trace identity closes algebraically: for the embedded carrier, Tr((diag(T,0)⊗I_2)^2)=2 Tr(T^2), so canonical V_3 normalization 1/2 becomes full-space normalization 1. The no-go discipline gate is satisfied for the scoped negative boundary: seven attack routes are named, there is one residual binary trace-surface choice, and no new-axiom or universal no-route claim is recorded.
 - **rationale:** The bounded theorem closes as an exact trace-surface statement over retained-grade inputs. The runner and independent trace check agree that the full-framework trace is exactly twice the color-carrier trace, and the source explicitly does not overclaim a unique derivation of N_F=1/2. Residual risk is limited to future source edits that try to promote the V_3 choice from bounded convention to uniquely forced primitive.
+- **auditor confidence:** high
+
+### `n_f_trace_space_bounded_obstruction_note_2026-05-07_w2binary`
+
+- **Note:** [`N_F_TRACE_SPACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_w2binary.md`](../../docs/N_F_TRACE_SPACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_w2binary.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open gate for the remaining N_F trace-surface choice: after the prior bounded reduction to {1/2,1}, eight routes are checked and the binary choice is not closed without an additional structural bridge identifying the per-site Cl(3) bivector SU(2), matter V_3 carrier, or irreducible-trace convention with the color-SU(3) trace surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-audit-loop-n-f-trace-space-open-gate-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing bridge step is the assertion that the per-site Cl(3) bivector SU(2) is the SU(2) subgroup of color-SU(3) on the (1,2)-block of V_3; the source records that this identification is not derived from the restricted Cl(3)+Z^3 inputs.  _(class `A`)_
+- **chain closes:** True — The algebraic checks verify both trace surfaces and the factor-2 inflation on V_color/V, while the independent check confirms that per-site half-Pauli and the SU(2) sub-block have the same 1/2 trace but live on distinct Hilbert-space levels. The no-go/open-gate discipline is satisfied for this scoped boundary: eight attack routes are enumerated, the conditional bridges are explicit, and the source maps a concrete bridge theorem rather than claiming a universal no-route result.
+- **rationale:** The row is clean as an open gate, not as a positive derivation of N_F=1/2. The runner's conditional positive routes all depend on exactly the matter-sector, irreducible-trace, or per-site/color-SU(2) identifications that the source names as unclosed; the retained one-hop packet does not supply a theorem equating those Hilbert-space levels. The audited outcome is therefore a retained open gate: the V_3-vs-V trace-surface convention remains live until that bridge is derived.
 - **auditor confidence:** high
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`

@@ -124,22 +124,22 @@ def main() -> int:
     print(f"  bounded below 0.27 on tested window: {bounded_3d}")
     print(f"  final relative change < 0.04: {converging_3d} ({final_change:.6e})")
 
-    print("\nPART E: Bogoliubov-bound consequence")
+    print("\nPART E: IR surrogate consequence (conditional on Ward normalization)")
     bounds_1d = [math.sqrt(1.0 / ir_sum(length, 1)) for length in [8, 16, 32, 64, 128]]
     bounds_2d = [math.sqrt(1.0 / ir_sum(length, 2)) for length in lengths_2d]
     dec_1d = all(b < a for a, b in zip(bounds_1d, bounds_1d[1:]))
     dec_2d = all(b < a for a, b in zip(bounds_2d, bounds_2d[1:]))
-    print(f"  d=1 |m_L| upper bounds: {[round(v, 6) for v in bounds_1d]}")
-    print(f"  d=2 |m_L| upper bounds: {[round(v, 6) for v in bounds_2d]}")
-    print(f"  d=1 bound decreasing: {dec_1d}")
-    print(f"  d=2 bound decreasing: {dec_2d}")
+    print(f"  d=1 sqrt(1/I_d) surrogate bounds: {[round(v, 6) for v in bounds_1d]}")
+    print(f"  d=2 sqrt(1/I_d) surrogate bounds: {[round(v, 6) for v in bounds_2d]}")
+    print(f"  d=1 surrogate decreasing: {dec_1d}")
+    print(f"  d=2 surrogate decreasing: {dec_2d}")
 
     checks = {
         "finite Bogoliubov inequality": bog_ok,
         "exact d=1 IR identity": id_ok,
         "d=2 logarithmic growth": growing_2d and stable_2d,
         "d=3 finite window": bounded_3d and converging_3d,
-        "Bogoliubov bound tightens in d<=2": dec_1d and dec_2d,
+        "sqrt(1/I_d) surrogate tightens in d<=2": dec_1d and dec_2d,
     }
 
     print("\nSUMMARY")
@@ -148,7 +148,7 @@ def main() -> int:
         "exact d=1 IR identity": "A",
         "d=2 logarithmic growth": "C",
         "d=3 finite window": "C",
-        "Bogoliubov bound tightens in d<=2": "C",
+        "sqrt(1/I_d) surrogate tightens in d<=2": "C",
     }
     for name, ok in checks.items():
         cls = classes[name]

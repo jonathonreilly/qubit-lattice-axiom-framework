@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/mermin_wagner_bogoliubov_bounded_certificate.py
-runner_sha256: a8356b061ebdfc2ca90fed7fb42978f2c1423cf9c9f5804f71d6c715652495e3
+runner_sha256: 941d35c177e28acb7643820e20efbd6a2e06c3b40cfe21316bdd2321d313d206
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -45,18 +45,18 @@ PART D: three-dimensional finite IR window
   bounded below 0.27 on tested window: True
   final relative change < 0.04: True (1.180459e-02)
 
-PART E: Bogoliubov-bound consequence
-  d=1 |m_L| upper bounds: [1.234427, 0.867722, 0.612672, 0.433066, 0.306196]
-  d=2 |m_L| upper bounds: [1.623722, 1.428682, 1.290644, 1.186226, 1.135776, 1.10365]
-  d=1 bound decreasing: True
-  d=2 bound decreasing: True
+PART E: IR surrogate consequence (conditional on Ward normalization)
+  d=1 sqrt(1/I_d) surrogate bounds: [1.234427, 0.867722, 0.612672, 0.433066, 0.306196]
+  d=2 sqrt(1/I_d) surrogate bounds: [1.623722, 1.428682, 1.290644, 1.186226, 1.135776, 1.10365]
+  d=1 surrogate decreasing: True
+  d=2 surrogate decreasing: True
 
 SUMMARY
   [PASS (A)] finite Bogoliubov inequality
   [PASS (A)] exact d=1 IR identity
   [PASS (C)] d=2 logarithmic growth
   [PASS (C)] d=3 finite window
-  [PASS (C)] Bogoliubov bound tightens in d<=2
+  [PASS (C)] sqrt(1/I_d) surrogate tightens in d<=2
   PASS=5 FAIL=0
 
 ----- stderr -----

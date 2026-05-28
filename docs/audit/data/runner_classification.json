@@ -1500,6 +1500,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_bh_quarter_wald_noether_framework_carrier.py"
     },
+    "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_binom_d_2_equals_twice_dminus1_exact_2026_05_26.py"
+    },
     "block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -2256,6 +2268,18 @@
       "dominant_class": "A",
       "runner": "scripts/audit_companion_charged_lepton_y_tau_structural_anchor_partition.py"
     },
+    "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py"
+    },
     "chiral_3plus1d_boundary_phase_note": {
       "assert_count": 0,
       "counts": {
@@ -2987,6 +3011,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_ckm_wolfenstein_eta_inverse_square_gap.py"
+    },
+    "cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py"
     },
     "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": {
       "assert_count": 0,
@@ -7800,6 +7836,18 @@
       "dominant_class": "C",
       "runner": "scripts/cl3_exact_tier_path_integral_2026_05_07_exact.py"
     },
+    "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py"
+    },
     "family_companion_compare_note": {
       "assert_count": 0,
       "counts": {
@@ -11040,6 +11088,18 @@
       "dominant_class": null,
       "runner": "scripts/higher_symmetry_joint_validation.py"
     },
+    "hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py"
+    },
     "holographic_probe_note_2026-04-11": {
       "assert_count": 0,
       "counts": {
@@ -11519,6 +11579,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/render_controlled_vocabulary.py"
+    },
+    "klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_klein_four_product_bz_corners_forces_d_four_exact_2026_05_26.py"
     },
     "kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11": {
       "assert_count": 1,
@@ -20628,6 +20700,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_sm_relativistic_dof_finite_inventory.py"
     },
+    "so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py"
+    },
     "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
       "assert_count": 1,
       "counts": {
@@ -24648,6 +24732,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_gw_echo_derived.py"
     },
+    "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py"
+    },
     "ygut_normalization_proof_walk_lattice_independence_bounded_note_2026-05-08": {
       "assert_count": 1,
       "counts": {
@@ -27038,6 +27134,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/audit_companion_binom_d_2_equals_twice_dminus1_exact_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/audit_companion_charged_lepton_koide_cone_algebraic.py": {
       "assert_count": 1,
       "claims": [
@@ -27060,6 +27171,21 @@
       ],
       "counts": {
         "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 19,
         "B": 0,
         "C": 0,
         "D": 0
@@ -27102,6 +27228,21 @@
       "assert_count": 1,
       "claims": [
         "ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26"
       ],
       "counts": {
         "A": 0,
@@ -27413,6 +27554,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/audit_companion_fermion_parity_pauli_tensor_exact_2026_05_10.py": {
       "assert_count": 1,
       "claims": [
@@ -27552,6 +27708,36 @@
       "assert_count": 1,
       "claims": [
         "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_klein_four_product_bz_corners_forces_d_four_exact_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26"
       ],
       "counts": {
         "A": 0,
@@ -27938,6 +28124,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py": {
       "assert_count": 1,
       "claims": [
@@ -28227,6 +28428,21 @@
       "assert_count": 1,
       "claims": [
         "wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py": {
+      "assert_count": 0,
+      "claims": [
+        "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26"
       ],
       "counts": {
         "A": 0,
@@ -56957,15 +57173,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 353,
+    "decoration_candidates": 357,
     "dominant_class_distribution": {
-      "A": 256,
+      "A": 260,
       "B": 294,
       "C": 764,
       "D": 302,
-      "none": 437
+      "none": 441
     },
-    "runners_classified": 2053,
+    "runners_classified": 2061,
     "runners_with_C": 1000,
     "runners_with_D": 602
   }

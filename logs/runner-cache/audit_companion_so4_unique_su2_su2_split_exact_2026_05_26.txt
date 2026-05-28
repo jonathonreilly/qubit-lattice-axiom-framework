@@ -1,0 +1,137 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py
+runner_sha256: 611b5422f47b56ca5651eccf6078afd1511361a34572d0f01499ce1c8b24b74f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.22
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+SO4_UNIQUE_SU2_SU2_SPLIT_NARROW_THEOREM_NOTE_2026-05-26
+Goal: sympy verification that so(4) ≅ su(2) ⊕ su(2) holds uniquely
+      among so(d) for d >= 2, via the Hodge self-dual 2-form split
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: (S1) Dimension formula dim so(d) = d(d-1)/2
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1) at d = 0, dim so(d) = 0  (computed = 0)
+  [PASS (A)] (S1) at d = 1, dim so(d) = 0  (computed = 0)
+  [PASS (A)] (S1) at d = 2, dim so(d) = 1  (computed = 1)
+  [PASS (A)] (S1) at d = 3, dim so(d) = 3  (computed = 3)
+  [PASS (A)] (S1) at d = 4, dim so(d) = 6  (computed = 6)
+  [PASS (A)] (S1) at d = 5, dim so(d) = 10  (computed = 10)
+  [PASS (A)] (S1) at d = 6, dim so(d) = 15  (computed = 15)
+  [PASS (A)] (S1) at d = 7, dim so(d) = 21  (computed = 21)
+  [PASS (A)] (S1) at d = 8, dim so(d) = 28  (computed = 28)
+  [PASS (A)] (S1) at d = 3, canonical basis has 3 elements  (len(basis) = 3)
+  [PASS (A)] (S1) at d = 4, canonical basis has 6 elements  (len(basis) = 6)
+  [PASS (A)] (S1) at d = 5, canonical basis has 10 elements  (len(basis) = 10)
+
+----------------------------------------------------------------------------------------
+Part 2: (S2) Small-d degeneracies
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S2) at d = 0, so(d) is trivial (dim 0)  (dim = 0)
+  [PASS (A)] (S2) at d = 1, so(d) is trivial (dim 0)  (dim = 0)
+  [PASS (A)] (S2) at d = 2, so(2) is 1-dimensional  (dim = 1)
+  [PASS (A)] (S2) at d = 2, [J, J] = 0 (abelian)  (trivially abelian)
+
+----------------------------------------------------------------------------------------
+Part 3: (S4) Construct η^±_i as 2-forms / skew matrices on R^4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4) η^+_0 is 4×4 skew-symmetric (so(4) element)  (A + A^T = 0)
+  [PASS (A)] (S4) η^+_1 is 4×4 skew-symmetric (so(4) element)  (A + A^T = 0)
+  [PASS (A)] (S4) η^+_2 is 4×4 skew-symmetric (so(4) element)  (A + A^T = 0)
+  [PASS (A)] (S4) η^-_0 is 4×4 skew-symmetric (so(4) element)  (A + A^T = 0)
+  [PASS (A)] (S4) η^-_1 is 4×4 skew-symmetric (so(4) element)  (A + A^T = 0)
+  [PASS (A)] (S4) η^-_2 is 4×4 skew-symmetric (so(4) element)  (A + A^T = 0)
+  [PASS (A)] (S4) η^+_0 is self-dual: *η^+_0 = +η^+_0  (Hodge eigenvalue = +1)
+  [PASS (A)] (S4) η^+_1 is self-dual: *η^+_1 = +η^+_1  (Hodge eigenvalue = +1)
+  [PASS (A)] (S4) η^+_2 is self-dual: *η^+_2 = +η^+_2  (Hodge eigenvalue = +1)
+  [PASS (A)] (S4) η^-_0 is anti-self-dual: *η^-_0 = -η^-_0  (Hodge eigenvalue = -1)
+  [PASS (A)] (S4) η^-_1 is anti-self-dual: *η^-_1 = -η^-_1  (Hodge eigenvalue = -1)
+  [PASS (A)] (S4) η^-_2 is anti-self-dual: *η^-_2 = -η^-_2  (Hodge eigenvalue = -1)
+
+----------------------------------------------------------------------------------------
+Part 4: (S4) Verify [η^+_i, η^+_j] is an su(2) bracket
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4) [η^+_0, η^+_1] = c_+ * η^+_2 for some scalar c_+  (c_+ = -2)
+  [PASS (A)] (S4) |c_+| = 2 (normalization factor for Plücker-basis bracket)  (c_+ = -2)
+  [PASS (A)] (S4) [η^+_0, η^+_1] = c_+ ε_{01k} η^+_k (su(2)_+ bracket)  (c_+ ε = -2 ε; closes in span{η^+})
+  [PASS (A)] (S4) [η^+_0, η^+_2] = c_+ ε_{02k} η^+_k (su(2)_+ bracket)  (c_+ ε = -2 ε; closes in span{η^+})
+  [PASS (A)] (S4) [η^+_1, η^+_2] = c_+ ε_{12k} η^+_k (su(2)_+ bracket)  (c_+ ε = -2 ε; closes in span{η^+})
+
+----------------------------------------------------------------------------------------
+Part 5: (S4) Verify [η^-_i, η^-_j] is an independent su(2) bracket
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4) [η^-_0, η^-_1] = c_- * η^-_2 for some scalar c_-  (c_- = 2)
+  [PASS (A)] (S4) |c_-| = 2 (normalization factor for Plücker-basis bracket)  (c_- = 2)
+  [PASS (A)] (S4) [η^-_0, η^-_1] = c_- ε_{01k} η^-_k (su(2)_- bracket)  (c_- ε = 2 ε; closes in span{η^-})
+  [PASS (A)] (S4) [η^-_0, η^-_2] = c_- ε_{02k} η^-_k (su(2)_- bracket)  (c_- ε = 2 ε; closes in span{η^-})
+  [PASS (A)] (S4) [η^-_1, η^-_2] = c_- ε_{12k} η^-_k (su(2)_- bracket)  (c_- ε = 2 ε; closes in span{η^-})
+
+----------------------------------------------------------------------------------------
+Part 6: (S4) Verify [η^+_i, η^-_j] = 0 (mutual commutativity)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4) [η^+_0, η^-_0] = 0  (mutual commutativity)
+  [PASS (A)] (S4) [η^+_0, η^-_1] = 0  (mutual commutativity)
+  [PASS (A)] (S4) [η^+_0, η^-_2] = 0  (mutual commutativity)
+  [PASS (A)] (S4) [η^+_1, η^-_0] = 0  (mutual commutativity)
+  [PASS (A)] (S4) [η^+_1, η^-_1] = 0  (mutual commutativity)
+  [PASS (A)] (S4) [η^+_1, η^-_2] = 0  (mutual commutativity)
+  [PASS (A)] (S4) [η^+_2, η^-_0] = 0  (mutual commutativity)
+  [PASS (A)] (S4) [η^+_2, η^-_1] = 0  (mutual commutativity)
+  [PASS (A)] (S4) [η^+_2, η^-_2] = 0  (mutual commutativity)
+
+----------------------------------------------------------------------------------------
+Part 7: (S4) Direct-sum decomposition so(4) = Λ^+ ⊕ Λ^-
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4) (η^+_0, η^+_1, η^+_2, η^-_0, η^-_1, η^-_2) span so(4): rank = 6  (rank = 6)
+  [PASS (A)] (S4) any A in so(4) decomposes uniquely: A = A^+ + A^-  (Hodge projection sum)
+  [PASS (A)] (S4) Hodge projection: A^+ is self-dual (* A^+ = +A^+)  (self-dual half)
+  [PASS (A)] (S4) Hodge projection: A^- is anti-self-dual (* A^- = -A^-)  (anti-self-dual half)
+
+----------------------------------------------------------------------------------------
+Part 8: (S3) Counterfactual at d = 3: so(3) is simple
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S3) dim so(3) = 3  (basis count = 3)
+  [PASS (A)] (S3) [M_{01}, M_{02}] = ±M_{12} (so(3) closes under bracket)  (+M_{12}: False, -M_{12}: True)
+  [PASS (A)] (S3) so(3) is simple (single-element ideal closure = full so(3))  (ideal generated by any nonzero basis element = so(3))
+  [PASS (A)] (S3) so(3) does NOT decompose into two simple non-abelian ideals  (follows from simplicity)
+
+----------------------------------------------------------------------------------------
+Part 9: (S3) Counterfactual at d = 5: so(5) is simple
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S3) dim so(5) = 10  (basis count = 10)
+  [PASS (A)] (S3) so(5) is simple (structural ideal closure check)  (ideal generated by any nonzero basis element = so(5))
+  [PASS (A)] (S3) so(5) does NOT decompose into two simple non-abelian ideals  (follows from simplicity)
+
+----------------------------------------------------------------------------------------
+Part 10: (S5) Uniqueness — d = 4 is unique among {0,1,...,8}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S5) at d = 0, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)
+  [PASS (A)] (S5) at d = 1, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)
+  [PASS (A)] (S5) at d = 2, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)
+  [PASS (A)] (S5) at d = 3, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)
+  [PASS (A)] (S5) at d = 4, so(d) decomposes into 2 simple non-abelian ideals: True  (expected True, got True)
+  [PASS (A)] (S5) at d = 5, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)
+  [PASS (A)] (S5) at d = 6, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)
+  [PASS (A)] (S5) at d = 7, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)
+  [PASS (A)] (S5) at d = 8, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)
+  [PASS (A)] (S5) Among d in {0, 1, ..., 8}, exactly d = 4 admits the decomposition  (matching d values = [4])
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 68
+  FAIL = 0
+
+  Note path: SO4_UNIQUE_SU2_SU2_SPLIT_NARROW_THEOREM_NOTE_2026-05-26.md
+  Claim id:  so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26
+
+  Result: all class-(A) checks pass at exact rational precision.
+
+----- stderr -----
+

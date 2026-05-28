@@ -1,0 +1,191 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py
+runner_sha256: 4105731d3bc78c486346d56001ba3a278218e6b0843c59cf961b2e0f214e944b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26
+Goal: sympy verification that Cl(3, 1) ≅ M_4(R) and
+      dim_R Cl(3, 1) = 16 = 2^4, with explicit 4x4 real
+      generator construction Γ_1, Γ_2, Γ_3, Γ_4 satisfying
+      Γ_i Γ_j + Γ_j Γ_i = 2 η_{ij} I_4, η = diag(+1,+1,+1,-1).
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: (C1) Universal-property dimension formula dim_R Cl(p,q) = 2^{p+q}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) n = 0: sum_{k=0..0} binom(0, k) = 2^0 = 1  (computed = 1)
+  [PASS (A)] (C1) n = 1: sum_{k=0..1} binom(1, k) = 2^1 = 2  (computed = 2)
+  [PASS (A)] (C1) n = 2: sum_{k=0..2} binom(2, k) = 2^2 = 4  (computed = 4)
+  [PASS (A)] (C1) n = 3: sum_{k=0..3} binom(3, k) = 2^3 = 8  (computed = 8)
+  [PASS (A)] (C1) n = 4: sum_{k=0..4} binom(4, k) = 2^4 = 16  (computed = 16)
+  [PASS (A)] (C1) n = 5: sum_{k=0..5} binom(5, k) = 2^5 = 32  (computed = 32)
+  [PASS (A)] (C1) n = 6: sum_{k=0..6} binom(6, k) = 2^6 = 64  (computed = 64)
+  [PASS (A)] (C1) n = 7: sum_{k=0..7} binom(7, k) = 2^7 = 128  (computed = 128)
+  [PASS (A)] (C1) n = 8: sum_{k=0..8} binom(8, k) = 2^8 = 256  (computed = 256)
+
+----------------------------------------------------------------------------------------
+Part 2: (C1) dim_R Cl(p, q) = 2^{p+q} per signature (p, q)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) signature (0, 0): dim_R Cl(0, 0) = 2^0 = 1  (2^0 = 1)
+  [PASS (A)] (C1) signature (1, 0): dim_R Cl(1, 0) = 2^1 = 2  (2^1 = 2)
+  [PASS (A)] (C1) signature (0, 1): dim_R Cl(0, 1) = 2^1 = 2  (2^1 = 2)
+  [PASS (A)] (C1) signature (2, 0): dim_R Cl(2, 0) = 2^2 = 4  (2^2 = 4)
+  [PASS (A)] (C1) signature (1, 1): dim_R Cl(1, 1) = 2^2 = 4  (2^2 = 4)
+  [PASS (A)] (C1) signature (0, 2): dim_R Cl(0, 2) = 2^2 = 4  (2^2 = 4)
+  [PASS (A)] (C1) signature (3, 0): dim_R Cl(3, 0) = 2^3 = 8  (2^3 = 8)
+  [PASS (A)] (C1) signature (2, 1): dim_R Cl(2, 1) = 2^3 = 8  (2^3 = 8)
+  [PASS (A)] (C1) signature (1, 2): dim_R Cl(1, 2) = 2^3 = 8  (2^3 = 8)
+  [PASS (A)] (C1) signature (0, 3): dim_R Cl(0, 3) = 2^3 = 8  (2^3 = 8)
+  [PASS (A)] (C1) signature (4, 0): dim_R Cl(4, 0) = 2^4 = 16  (2^4 = 16)
+  [PASS (A)] (C1) signature (3, 1): dim_R Cl(3, 1) = 2^4 = 16  (2^4 = 16)
+  [PASS (A)] (C1) signature (2, 2): dim_R Cl(2, 2) = 2^4 = 16  (2^4 = 16)
+  [PASS (A)] (C1) signature (1, 3): dim_R Cl(1, 3) = 2^4 = 16  (2^4 = 16)
+  [PASS (A)] (C1) signature (0, 4): dim_R Cl(0, 4) = 2^4 = 16  (2^4 = 16)
+
+----------------------------------------------------------------------------------------
+Part 3: (C2) Explicit real 4x4 generators of Cl(3, 1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) building block σ_x is a real 2x2 matrix  (entries real)
+  [PASS (A)] (C2) building block σ_z is a real 2x2 matrix  (entries real)
+  [PASS (A)] (C2) building block ε is a real 2x2 matrix  (entries real)
+  [PASS (A)] (C2) σ_x^2 = I_2 (square +I)
+  [PASS (A)] (C2) σ_z^2 = I_2 (square +I)
+  [PASS (A)] (C2) ε^2 = -I_2 (square -I)
+  [PASS (A)] (C2) {σ_x, σ_z} = 0 (anticommute)
+  [PASS (A)] (C2) {σ_x, ε} = 0 (anticommute)
+  [PASS (A)] (C2) {σ_z, ε} = 0 (anticommute)
+  [PASS (A)] (C2) Γ_1 is a real 4x4 matrix  (shape=(4, 4), all entries real)
+  [PASS (A)] (C2) Γ_2 is a real 4x4 matrix  (shape=(4, 4), all entries real)
+  [PASS (A)] (C2) Γ_3 is a real 4x4 matrix  (shape=(4, 4), all entries real)
+  [PASS (A)] (C2) Γ_4 is a real 4x4 matrix  (shape=(4, 4), all entries real)
+
+----------------------------------------------------------------------------------------
+Part 4: (C2) Clifford anticommutation Γ_i Γ_j + Γ_j Γ_i = 2 η_{ij} I_4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) Γ_1^2 = 1 · I_4  (η_{11} = 1)
+  [PASS (A)] (C2) {Γ_1, Γ_2} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_1, Γ_3} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_1, Γ_4} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_2, Γ_1} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) Γ_2^2 = 1 · I_4  (η_{22} = 1)
+  [PASS (A)] (C2) {Γ_2, Γ_3} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_2, Γ_4} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_3, Γ_1} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_3, Γ_2} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) Γ_3^2 = 1 · I_4  (η_{33} = 1)
+  [PASS (A)] (C2) {Γ_3, Γ_4} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_4, Γ_1} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_4, Γ_2} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) {Γ_4, Γ_3} = 0 (off-diagonal)  (anticommute)
+  [PASS (A)] (C2) Γ_4^2 = -1 · I_4  (η_{44} = -1)
+
+----------------------------------------------------------------------------------------
+Part 5: (C2) Construct 16 standard Clifford monomials of Cl(3, 1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) 16 standard Clifford monomial indices enumerated  (count = 16 (expected 16))
+  [PASS (A)] (C2) monomial 1 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_1 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_2 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_3 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_4 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_1 Γ_2 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_1 Γ_3 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_1 Γ_4 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_2 Γ_3 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_2 Γ_4 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_3 Γ_4 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_1 Γ_2 Γ_3 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_1 Γ_2 Γ_4 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_1 Γ_3 Γ_4 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_2 Γ_3 Γ_4 is a real 4x4 matrix  (shape=(4, 4))
+  [PASS (A)] (C2) monomial Γ_1 Γ_2 Γ_3 Γ_4 is a real 4x4 matrix  (shape=(4, 4))
+
+----------------------------------------------------------------------------------------
+Part 6: (C2) 16 monomials are R-linearly independent in M_4(R)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) R-linear span of the 16 Clifford monomials has rank 16  (computed rank = 16)
+
+----------------------------------------------------------------------------------------
+Part 7: (C2) 16 monomials span all of M_4(R) (full surjection)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) span(16 monomials) = M_4(R) (16 independent in 16-dim space)  (rank 16 = dim M_4(R) = 16)
+  [PASS (A)] (C2) dim_R M_4(R) = 16  (4 · 4 = 16)
+
+----------------------------------------------------------------------------------------
+Part 8: (C3) Dimension readout dim_R Cl(3, 1) = 16 = 2^4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C3) 2^{p+q} = 2^4 = 16 at signature (3, 1)  (universal property)
+  [PASS (A)] (C3) dim_R M_4(R) = 4 · 4 = 16  (real matrix dim)
+  [PASS (A)] (C3) Cartan-Bott isomorphism: both sides agree at 16  (2^4 = 16 = 4·4)
+
+----------------------------------------------------------------------------------------
+Part 9: (C4) Cartan-Bott classification cell verification (n = 4)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C4) Cl(3, 1) → M_4(R) is surjective (16 monomials span)  (rank check)
+  [PASS (A)] (C4) Cl(3, 1) → M_4(R) is injective (equal dim, surjective)  (equal dim + surjective = injective)
+  [PASS (A)] (C4) Cl(3, 1) ≅ M_4(R) (Cartan-Bott classification cell)  (isomorphism via universal property)
+
+----------------------------------------------------------------------------------------
+Part 10: (C4) Counterfactual at n = 2: no M_4(R) cell
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C4) at n = 2, dim_R Cl(p, q) = 4 ≠ dim_R M_4(R) = 16  (2^2 = 4, 4·4 = 16)
+  [PASS (A)] (C4) at n = 2, no signature realizes Cl(p, q) ≅ M_4(R)  (excluded by dim formula)
+
+----------------------------------------------------------------------------------------
+Part 11: (C4) Counterfactual at n = 3: no M_4(R) cell
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C4) at n = 3, dim_R Cl(p, q) = 8 ≠ dim_R M_4(R) = 16  (2^3 = 8, 4·4 = 16)
+  [PASS (A)] (C4) at n = 3, no signature realizes Cl(p, q) ≅ M_4(R)  (excluded by dim formula)
+
+----------------------------------------------------------------------------------------
+Part 12: (C4) Cartan-Bott table check for n = 4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C4) at n = 4, dim_R Cl(p, q) = 16 = dim_R M_4(R)  (2^4 = 16 = 4·4)
+  [PASS (A)] (C4) cell (3, 1): Cl(3, 1) ≅ M_4(R) (explicit construction above)  (verified by 16 monomials spanning M_4(R))
+
+----------------------------------------------------------------------------------------
+Part 13: (C4) Uniqueness of smallest-n M_4(R) cell
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C4) at n = 0, any signature realizes Cl(p,q) ≅ M_4(R): False  (expected False)
+  [PASS (A)] (C4) at n = 1, any signature realizes Cl(p,q) ≅ M_4(R): False  (expected False)
+  [PASS (A)] (C4) at n = 2, any signature realizes Cl(p,q) ≅ M_4(R): False  (expected False)
+  [PASS (A)] (C4) at n = 3, any signature realizes Cl(p,q) ≅ M_4(R): False  (expected False)
+  [PASS (A)] (C4) at n = 4, any signature realizes Cl(p,q) ≅ M_4(R): True  (expected True)
+  [PASS (A)] (C4) smallest n with Cl(p, q) ≅ M_4(R) is n = 4  (smallest = 4)
+
+----------------------------------------------------------------------------------------
+Part 14: (C2-bridge) Match with naive lattice fermion 2^d at d = 4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2-bridge) naive lattice BZ corner count at d = 4 is 16  (upstream narrow theorem)
+  [PASS (A)] (C2-bridge) dim_R Cl(3, 1) at signature (3, 1) is 16  (present narrow theorem)
+  [PASS (A)] (C2-bridge) both integers equal 16 (arithmetic match at n = 4)  (16 = 16 from independent surfaces)
+
+----------------------------------------------------------------------------------------
+Part 15: (C3-sanity) Volume element ω = Γ_1 Γ_2 Γ_3 Γ_4 properties
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C3-sanity) ω = Γ_1 Γ_2 Γ_3 Γ_4 is a real 4x4 matrix  (real matrix)
+  [PASS (A)] (C3-sanity) ω^2 = -I_4 in signature (3, 1)  ((-1)^{n(n-1)/2 + q} = (-1)^{6+1} = -1)
+  [PASS (A)] (C3-sanity) {ω, Γ_1} = 0 (volume element anticommutes at n even)  (parity rule for even n)
+  [PASS (A)] (C3-sanity) {ω, Γ_2} = 0 (volume element anticommutes at n even)  (parity rule for even n)
+  [PASS (A)] (C3-sanity) {ω, Γ_3} = 0 (volume element anticommutes at n even)  (parity rule for even n)
+  [PASS (A)] (C3-sanity) {ω, Γ_4} = 0 (volume element anticommutes at n even)  (parity rule for even n)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 100
+  FAIL = 0
+
+  Note path: CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md
+  Claim id:  cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26
+
+  Result: all class-(A) checks pass at exact rational precision.
+
+----- stderr -----
+

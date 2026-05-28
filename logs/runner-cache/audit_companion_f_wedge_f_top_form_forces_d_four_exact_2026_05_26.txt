@@ -1,0 +1,153 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py
+runner_sha256: c098afe399eb86e748c9d8b7ca0da70a40584cc67998a1b0add21544e117ec4d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+F_WEDGE_F_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26
+Goal: sympy verification that ω ∧ ω ∈ Λ^d(R^d) iff d = 4
+      via graded exterior-algebra degree counting on Λ^*(R^d)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: (W1)/(W2) Dimension formula dim Λ^p(R^d) = binom(d, p)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W1) at d = 0, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 1, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 1, p = 1: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 2, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 2, p = 1: dim Λ^p(R^d) = 2  (computed = 2)
+  [PASS (A)] (W1) at d = 2, p = 2: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 3, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 3, p = 1: dim Λ^p(R^d) = 3  (computed = 3)
+  [PASS (A)] (W1) at d = 3, p = 2: dim Λ^p(R^d) = 3  (computed = 3)
+  [PASS (A)] (W1) at d = 3, p = 3: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 4, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 4, p = 1: dim Λ^p(R^d) = 4  (computed = 4)
+  [PASS (A)] (W1) at d = 4, p = 2: dim Λ^p(R^d) = 6  (computed = 6)
+  [PASS (A)] (W1) at d = 4, p = 3: dim Λ^p(R^d) = 4  (computed = 4)
+  [PASS (A)] (W1) at d = 4, p = 4: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 5, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 5, p = 1: dim Λ^p(R^d) = 5  (computed = 5)
+  [PASS (A)] (W1) at d = 5, p = 2: dim Λ^p(R^d) = 10  (computed = 10)
+  [PASS (A)] (W1) at d = 5, p = 3: dim Λ^p(R^d) = 10  (computed = 10)
+  [PASS (A)] (W1) at d = 5, p = 4: dim Λ^p(R^d) = 5  (computed = 5)
+  [PASS (A)] (W1) at d = 5, p = 5: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 6, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 6, p = 1: dim Λ^p(R^d) = 6  (computed = 6)
+  [PASS (A)] (W1) at d = 6, p = 2: dim Λ^p(R^d) = 15  (computed = 15)
+  [PASS (A)] (W1) at d = 6, p = 3: dim Λ^p(R^d) = 20  (computed = 20)
+  [PASS (A)] (W1) at d = 6, p = 4: dim Λ^p(R^d) = 15  (computed = 15)
+  [PASS (A)] (W1) at d = 6, p = 5: dim Λ^p(R^d) = 6  (computed = 6)
+  [PASS (A)] (W1) at d = 6, p = 6: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 7, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 7, p = 1: dim Λ^p(R^d) = 7  (computed = 7)
+  [PASS (A)] (W1) at d = 7, p = 2: dim Λ^p(R^d) = 21  (computed = 21)
+  [PASS (A)] (W1) at d = 7, p = 3: dim Λ^p(R^d) = 35  (computed = 35)
+  [PASS (A)] (W1) at d = 7, p = 4: dim Λ^p(R^d) = 35  (computed = 35)
+  [PASS (A)] (W1) at d = 7, p = 5: dim Λ^p(R^d) = 21  (computed = 21)
+  [PASS (A)] (W1) at d = 7, p = 6: dim Λ^p(R^d) = 7  (computed = 7)
+  [PASS (A)] (W1) at d = 7, p = 7: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 8, p = 0: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W1) at d = 8, p = 1: dim Λ^p(R^d) = 8  (computed = 8)
+  [PASS (A)] (W1) at d = 8, p = 2: dim Λ^p(R^d) = 28  (computed = 28)
+  [PASS (A)] (W1) at d = 8, p = 3: dim Λ^p(R^d) = 56  (computed = 56)
+  [PASS (A)] (W1) at d = 8, p = 4: dim Λ^p(R^d) = 70  (computed = 70)
+  [PASS (A)] (W1) at d = 8, p = 5: dim Λ^p(R^d) = 56  (computed = 56)
+  [PASS (A)] (W1) at d = 8, p = 6: dim Λ^p(R^d) = 28  (computed = 28)
+  [PASS (A)] (W1) at d = 8, p = 7: dim Λ^p(R^d) = 8  (computed = 8)
+  [PASS (A)] (W1) at d = 8, p = 8: dim Λ^p(R^d) = 1  (computed = 1)
+  [PASS (A)] (W2) at d = 0: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+  [PASS (A)] (W2) at d = 1: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+  [PASS (A)] (W2) at d = 2: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+  [PASS (A)] (W2) at d = 3: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+  [PASS (A)] (W2) at d = 4: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+  [PASS (A)] (W2) at d = 5: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+  [PASS (A)] (W2) at d = 6: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+  [PASS (A)] (W2) at d = 7: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+  [PASS (A)] (W2) at d = 8: dim Λ^d(R^d) = 1 (top-form line)  (top dim = 1)
+
+----------------------------------------------------------------------------------------
+Part 2: (W3) Top-form criterion Λ^4(R^d) ≠ 0 iff d ≥ 4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W3) at d = 0: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got False)  (dim Λ^4(R^0) = 0)
+  [PASS (A)] (W3) at d = 1: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got False)  (dim Λ^4(R^1) = 0)
+  [PASS (A)] (W3) at d = 2: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got False)  (dim Λ^4(R^2) = 0)
+  [PASS (A)] (W3) at d = 3: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got False)  (dim Λ^4(R^3) = 0)
+  [PASS (A)] (W3) at d = 4: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got True)  (dim Λ^4(R^4) = 1)
+  [PASS (A)] (W3) at d = 5: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got True)  (dim Λ^4(R^5) = 5)
+  [PASS (A)] (W3) at d = 6: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got True)  (dim Λ^4(R^6) = 15)
+  [PASS (A)] (W3) at d = 7: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got True)  (dim Λ^4(R^7) = 35)
+  [PASS (A)] (W3) at d = 8: Λ^4(R^d) ≠ 0 iff d ≥ 4 (got True)  (dim Λ^4(R^8) = 70)
+
+----------------------------------------------------------------------------------------
+Part 3: (W4) Explicit ω = e^1∧e^2 + e^3∧e^4 at d = 4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W4) ω has degree 2  (degree = 2)
+  [PASS (A)] (W4) ω ∧ ω = 2 · e^1 ∧ e^2 ∧ e^3 ∧ e^4  (ω ∧ ω = {(1, 2, 3, 4): 2})
+  [PASS (A)] (W4) ω ∧ ω has degree 4 = top degree on R^4  (degree = 4, d = 4)
+
+----------------------------------------------------------------------------------------
+Part 4: (W5) Plücker polynomial identity in 6 components
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W5) Plücker polynomial: ω∧ω = 2(w12 w34 - w13 w24 + w14 w23) e^1∧e^2∧e^3∧e^4  (coeff = 2*w12*w34 - 2*w13*w24 + 2*w14*w23)
+  [PASS (A)] (W5) Plücker polynomial is not identically zero  (P(1, 0, 0, 0, 0, 1) = 2)
+
+----------------------------------------------------------------------------------------
+Part 5: (W6) Counterfactual at d ∈ {2, 3}: ω ∧ ω = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W6) at d = 2: ω ∧ ω = 0 for every 2-form ω  (computed: {})
+  [PASS (A)] (W6) at d = 3: ω ∧ ω = 0 for every 2-form ω  (computed: {})
+  [PASS (A)] (W6) at d = 2: (e^1∧e^2) ∧ (e^1∧e^2) = 0 (repeated factor)
+  [PASS (A)] (W6) at d = 3: (e^1∧e^2) ∧ (e^1∧e^2) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+  [PASS (A)] (W6) at d = 3: (e^1∧e^2) ∧ (e^1∧e^3) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+  [PASS (A)] (W6) at d = 3: (e^1∧e^2) ∧ (e^2∧e^3) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+  [PASS (A)] (W6) at d = 3: (e^1∧e^3) ∧ (e^1∧e^2) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+  [PASS (A)] (W6) at d = 3: (e^1∧e^3) ∧ (e^1∧e^3) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+  [PASS (A)] (W6) at d = 3: (e^1∧e^3) ∧ (e^2∧e^3) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+  [PASS (A)] (W6) at d = 3: (e^2∧e^3) ∧ (e^1∧e^2) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+  [PASS (A)] (W6) at d = 3: (e^2∧e^3) ∧ (e^1∧e^3) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+  [PASS (A)] (W6) at d = 3: (e^2∧e^3) ∧ (e^2∧e^3) = 0  (only 4-forms allowed live in Λ^4(R^3) = 0)
+
+----------------------------------------------------------------------------------------
+Part 6: (W7) Counterfactual at d ∈ {5, 6}: ω∧ω ∈ Λ^4 not top
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W7) at d = 5: ω ∧ ω has degree 4  (degree = 4)
+  [PASS (A)] (W7) at d = 5: degree 4 < d = 5 (not top form)  (4 < 5 = True)
+  [PASS (A)] (W7) at d = 5: ω ∧ ω ≠ 0 (sanity)  (ω∧ω = 2 e^1∧e^2∧e^3∧e^4)
+  [PASS (A)] (W7) at d = 6: ω ∧ ω has degree 4  (degree = 4)
+  [PASS (A)] (W7) at d = 6: degree 4 < d = 6 (not top form)  (4 < 6 = True)
+  [PASS (A)] (W7) at d = 6: ω ∧ ω ≠ 0 (sanity)  (ω∧ω = 2 e^1∧e^2∧e^3∧e^4)
+
+----------------------------------------------------------------------------------------
+Part 7: (W3) Uniqueness — d = 4 is the only top-form wedge-square dim
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W3) at d = 0: ω ∧ ω is a top-form: False  (expected False)
+  [PASS (A)] (W3) at d = 1: ω ∧ ω is a top-form: False  (expected False)
+  [PASS (A)] (W3) at d = 2: ω ∧ ω is a top-form: False  (expected False)
+  [PASS (A)] (W3) at d = 3: ω ∧ ω is a top-form: False  (expected False)
+  [PASS (A)] (W3) at d = 4: ω ∧ ω is a top-form: True  (expected True)
+  [PASS (A)] (W3) at d = 5: ω ∧ ω is a top-form: False  (expected False)
+  [PASS (A)] (W3) at d = 6: ω ∧ ω is a top-form: False  (expected False)
+  [PASS (A)] (W3) at d = 7: ω ∧ ω is a top-form: False  (expected False)
+  [PASS (A)] (W3) at d = 8: ω ∧ ω is a top-form: False  (expected False)
+  [PASS (A)] (W3) Among d in {0, 1, ..., 8}, exactly d = 4 has ω ∧ ω as top-form  (matching d values = [4])
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 96
+  FAIL = 0
+
+  Note path: F_WEDGE_F_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md
+  Claim id:  f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26
+
+  Result: all class-(A) checks pass at exact rational precision.
+
+----- stderr -----
+

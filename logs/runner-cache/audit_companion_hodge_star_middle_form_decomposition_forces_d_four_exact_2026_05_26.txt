@@ -1,0 +1,247 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py
+runner_sha256: 3ec3719443764a4a2dadca3b839f3e46ae820687e8242957cc4afb1083a13332
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+HODGE_STAR_MIDDLE_FORM_DECOMPOSITION_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26
+Goal: sympy verification that `*` is an endomorphism of Λ²(R^d) iff d = 4,
+      with explicit self-dual / anti-self-dual eigenbasis at d = 4 Riemannian.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: (H1) Source-target dim equality dim Λ^k(R^d) = dim Λ^{d-k}(R^d)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H1) at d = 0, k = 0: dim Λ^0(R^0) = dim Λ^0(R^0) = 1  (binom(0, 0) = 1, binom(0, 0) = 1)
+  [PASS (A)] (H1) at d = 1, k = 0: dim Λ^0(R^1) = dim Λ^1(R^1) = 1  (binom(1, 0) = 1, binom(1, 1) = 1)
+  [PASS (A)] (H1) at d = 1, k = 1: dim Λ^1(R^1) = dim Λ^0(R^1) = 1  (binom(1, 1) = 1, binom(1, 0) = 1)
+  [PASS (A)] (H1) at d = 2, k = 0: dim Λ^0(R^2) = dim Λ^2(R^2) = 1  (binom(2, 0) = 1, binom(2, 2) = 1)
+  [PASS (A)] (H1) at d = 2, k = 1: dim Λ^1(R^2) = dim Λ^1(R^2) = 2  (binom(2, 1) = 2, binom(2, 1) = 2)
+  [PASS (A)] (H1) at d = 2, k = 2: dim Λ^2(R^2) = dim Λ^0(R^2) = 1  (binom(2, 2) = 1, binom(2, 0) = 1)
+  [PASS (A)] (H1) at d = 3, k = 0: dim Λ^0(R^3) = dim Λ^3(R^3) = 1  (binom(3, 0) = 1, binom(3, 3) = 1)
+  [PASS (A)] (H1) at d = 3, k = 1: dim Λ^1(R^3) = dim Λ^2(R^3) = 3  (binom(3, 1) = 3, binom(3, 2) = 3)
+  [PASS (A)] (H1) at d = 3, k = 2: dim Λ^2(R^3) = dim Λ^1(R^3) = 3  (binom(3, 2) = 3, binom(3, 1) = 3)
+  [PASS (A)] (H1) at d = 3, k = 3: dim Λ^3(R^3) = dim Λ^0(R^3) = 1  (binom(3, 3) = 1, binom(3, 0) = 1)
+  [PASS (A)] (H1) at d = 4, k = 0: dim Λ^0(R^4) = dim Λ^4(R^4) = 1  (binom(4, 0) = 1, binom(4, 4) = 1)
+  [PASS (A)] (H1) at d = 4, k = 1: dim Λ^1(R^4) = dim Λ^3(R^4) = 4  (binom(4, 1) = 4, binom(4, 3) = 4)
+  [PASS (A)] (H1) at d = 4, k = 2: dim Λ^2(R^4) = dim Λ^2(R^4) = 6  (binom(4, 2) = 6, binom(4, 2) = 6)
+  [PASS (A)] (H1) at d = 4, k = 3: dim Λ^3(R^4) = dim Λ^1(R^4) = 4  (binom(4, 3) = 4, binom(4, 1) = 4)
+  [PASS (A)] (H1) at d = 4, k = 4: dim Λ^4(R^4) = dim Λ^0(R^4) = 1  (binom(4, 4) = 1, binom(4, 0) = 1)
+  [PASS (A)] (H1) at d = 5, k = 0: dim Λ^0(R^5) = dim Λ^5(R^5) = 1  (binom(5, 0) = 1, binom(5, 5) = 1)
+  [PASS (A)] (H1) at d = 5, k = 1: dim Λ^1(R^5) = dim Λ^4(R^5) = 5  (binom(5, 1) = 5, binom(5, 4) = 5)
+  [PASS (A)] (H1) at d = 5, k = 2: dim Λ^2(R^5) = dim Λ^3(R^5) = 10  (binom(5, 2) = 10, binom(5, 3) = 10)
+  [PASS (A)] (H1) at d = 5, k = 3: dim Λ^3(R^5) = dim Λ^2(R^5) = 10  (binom(5, 3) = 10, binom(5, 2) = 10)
+  [PASS (A)] (H1) at d = 5, k = 4: dim Λ^4(R^5) = dim Λ^1(R^5) = 5  (binom(5, 4) = 5, binom(5, 1) = 5)
+  [PASS (A)] (H1) at d = 5, k = 5: dim Λ^5(R^5) = dim Λ^0(R^5) = 1  (binom(5, 5) = 1, binom(5, 0) = 1)
+  [PASS (A)] (H1) at d = 6, k = 0: dim Λ^0(R^6) = dim Λ^6(R^6) = 1  (binom(6, 0) = 1, binom(6, 6) = 1)
+  [PASS (A)] (H1) at d = 6, k = 1: dim Λ^1(R^6) = dim Λ^5(R^6) = 6  (binom(6, 1) = 6, binom(6, 5) = 6)
+  [PASS (A)] (H1) at d = 6, k = 2: dim Λ^2(R^6) = dim Λ^4(R^6) = 15  (binom(6, 2) = 15, binom(6, 4) = 15)
+  [PASS (A)] (H1) at d = 6, k = 3: dim Λ^3(R^6) = dim Λ^3(R^6) = 20  (binom(6, 3) = 20, binom(6, 3) = 20)
+  [PASS (A)] (H1) at d = 6, k = 4: dim Λ^4(R^6) = dim Λ^2(R^6) = 15  (binom(6, 4) = 15, binom(6, 2) = 15)
+  [PASS (A)] (H1) at d = 6, k = 5: dim Λ^5(R^6) = dim Λ^1(R^6) = 6  (binom(6, 5) = 6, binom(6, 1) = 6)
+  [PASS (A)] (H1) at d = 6, k = 6: dim Λ^6(R^6) = dim Λ^0(R^6) = 1  (binom(6, 6) = 1, binom(6, 0) = 1)
+  [PASS (A)] (H1) at d = 7, k = 0: dim Λ^0(R^7) = dim Λ^7(R^7) = 1  (binom(7, 0) = 1, binom(7, 7) = 1)
+  [PASS (A)] (H1) at d = 7, k = 1: dim Λ^1(R^7) = dim Λ^6(R^7) = 7  (binom(7, 1) = 7, binom(7, 6) = 7)
+  [PASS (A)] (H1) at d = 7, k = 2: dim Λ^2(R^7) = dim Λ^5(R^7) = 21  (binom(7, 2) = 21, binom(7, 5) = 21)
+  [PASS (A)] (H1) at d = 7, k = 3: dim Λ^3(R^7) = dim Λ^4(R^7) = 35  (binom(7, 3) = 35, binom(7, 4) = 35)
+  [PASS (A)] (H1) at d = 7, k = 4: dim Λ^4(R^7) = dim Λ^3(R^7) = 35  (binom(7, 4) = 35, binom(7, 3) = 35)
+  [PASS (A)] (H1) at d = 7, k = 5: dim Λ^5(R^7) = dim Λ^2(R^7) = 21  (binom(7, 5) = 21, binom(7, 2) = 21)
+  [PASS (A)] (H1) at d = 7, k = 6: dim Λ^6(R^7) = dim Λ^1(R^7) = 7  (binom(7, 6) = 7, binom(7, 1) = 7)
+  [PASS (A)] (H1) at d = 7, k = 7: dim Λ^7(R^7) = dim Λ^0(R^7) = 1  (binom(7, 7) = 1, binom(7, 0) = 1)
+  [PASS (A)] (H1) at d = 8, k = 0: dim Λ^0(R^8) = dim Λ^8(R^8) = 1  (binom(8, 0) = 1, binom(8, 8) = 1)
+  [PASS (A)] (H1) at d = 8, k = 1: dim Λ^1(R^8) = dim Λ^7(R^8) = 8  (binom(8, 1) = 8, binom(8, 7) = 8)
+  [PASS (A)] (H1) at d = 8, k = 2: dim Λ^2(R^8) = dim Λ^6(R^8) = 28  (binom(8, 2) = 28, binom(8, 6) = 28)
+  [PASS (A)] (H1) at d = 8, k = 3: dim Λ^3(R^8) = dim Λ^5(R^8) = 56  (binom(8, 3) = 56, binom(8, 5) = 56)
+  [PASS (A)] (H1) at d = 8, k = 4: dim Λ^4(R^8) = dim Λ^4(R^8) = 70  (binom(8, 4) = 70, binom(8, 4) = 70)
+  [PASS (A)] (H1) at d = 8, k = 5: dim Λ^5(R^8) = dim Λ^3(R^8) = 56  (binom(8, 5) = 56, binom(8, 3) = 56)
+  [PASS (A)] (H1) at d = 8, k = 6: dim Λ^6(R^8) = dim Λ^2(R^8) = 28  (binom(8, 6) = 28, binom(8, 2) = 28)
+  [PASS (A)] (H1) at d = 8, k = 7: dim Λ^7(R^8) = dim Λ^1(R^8) = 8  (binom(8, 7) = 8, binom(8, 1) = 8)
+  [PASS (A)] (H1) at d = 8, k = 8: dim Λ^8(R^8) = dim Λ^0(R^8) = 1  (binom(8, 8) = 1, binom(8, 0) = 1)
+
+----------------------------------------------------------------------------------------
+Part 2: (H2)/(H3) Endomorphism condition * : Λ^k → Λ^k iff d = 2k
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H2) at d = 0, k = 0: * is endomorphism of Λ^k iff k = d-k (here: True)  (d == 2k: True)
+  [PASS (A)] (H2) at d = 1, k = 0: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 1, k = 1: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 2, k = 0: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 2, k = 1: * is endomorphism of Λ^k iff k = d-k (here: True)  (d == 2k: True)
+  [PASS (A)] (H2) at d = 2, k = 2: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 3, k = 0: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 3, k = 1: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 3, k = 2: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 3, k = 3: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 4, k = 0: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 4, k = 1: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 4, k = 2: * is endomorphism of Λ^k iff k = d-k (here: True)  (d == 2k: True)
+  [PASS (A)] (H2) at d = 4, k = 3: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 4, k = 4: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 5, k = 0: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 5, k = 1: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 5, k = 2: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 5, k = 3: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 5, k = 4: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 5, k = 5: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 6, k = 0: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 6, k = 1: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 6, k = 2: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 6, k = 3: * is endomorphism of Λ^k iff k = d-k (here: True)  (d == 2k: True)
+  [PASS (A)] (H2) at d = 6, k = 4: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 6, k = 5: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 6, k = 6: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 7, k = 0: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 7, k = 1: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 7, k = 2: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 7, k = 3: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 7, k = 4: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 7, k = 5: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 7, k = 6: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 7, k = 7: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 8, k = 0: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 8, k = 1: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 8, k = 2: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 8, k = 3: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 8, k = 4: * is endomorphism of Λ^k iff k = d-k (here: True)  (d == 2k: True)
+  [PASS (A)] (H2) at d = 8, k = 5: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 8, k = 6: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 8, k = 7: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H2) at d = 8, k = 8: * is endomorphism of Λ^k iff k = d-k (here: False)  (d == 2k: False)
+  [PASS (A)] (H3) at k = 2, d = 0: * is endomorphism of Λ^2(R^0) iff d = 4 (here: False)  (d == 4: False)
+  [PASS (A)] (H3) at k = 2, d = 1: * is endomorphism of Λ^2(R^1) iff d = 4 (here: False)  (d == 4: False)
+  [PASS (A)] (H3) at k = 2, d = 2: * is endomorphism of Λ^2(R^2) iff d = 4 (here: False)  (d == 4: False)
+  [PASS (A)] (H3) at k = 2, d = 3: * is endomorphism of Λ^2(R^3) iff d = 4 (here: False)  (d == 4: False)
+  [PASS (A)] (H3) at k = 2, d = 4: * is endomorphism of Λ^2(R^4) iff d = 4 (here: True)  (d == 4: True)
+  [PASS (A)] (H3) at k = 2, d = 5: * is endomorphism of Λ^2(R^5) iff d = 4 (here: False)  (d == 4: False)
+  [PASS (A)] (H3) at k = 2, d = 6: * is endomorphism of Λ^2(R^6) iff d = 4 (here: False)  (d == 4: False)
+  [PASS (A)] (H3) at k = 2, d = 7: * is endomorphism of Λ^2(R^7) iff d = 4 (here: False)  (d == 4: False)
+  [PASS (A)] (H3) at k = 2, d = 8: * is endomorphism of Λ^2(R^8) iff d = 4 (here: False)  (d == 4: False)
+
+----------------------------------------------------------------------------------------
+Part 3: (H4) Hodge-star square identity *^2 = (-1)^{k(d-k)} sgn(g) id
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H4) at d = 2, k = 2: (-1)^{k(d-k)} = (-1)^0 = +1 always  (parity exponent = 0, result = 1)
+  [PASS (A)] (H4) at d = 3, k = 2: (-1)^{k(d-k)} = (-1)^2 = +1 always  (parity exponent = 2, result = 1)
+  [PASS (A)] (H4) at d = 4, k = 2: (-1)^{k(d-k)} = (-1)^4 = +1 always  (parity exponent = 4, result = 1)
+  [PASS (A)] (H4) at d = 5, k = 2: (-1)^{k(d-k)} = (-1)^6 = +1 always  (parity exponent = 6, result = 1)
+  [PASS (A)] (H4) at d = 6, k = 2: (-1)^{k(d-k)} = (-1)^8 = +1 always  (parity exponent = 8, result = 1)
+  [PASS (A)] (H4) at d = 7, k = 2: (-1)^{k(d-k)} = (-1)^10 = +1 always  (parity exponent = 10, result = 1)
+  [PASS (A)] (H4) at d = 8, k = 2: (-1)^{k(d-k)} = (-1)^12 = +1 always  (parity exponent = 12, result = 1)
+  [PASS (A)] (H4)+(Q') at d = 4 Riemannian: *^2 (e^1 ∧ e^2) = +id  (*^2 = {(1, 2): 1}, expected = {(1, 2): 1})
+  [PASS (A)] (H4)+(Q') at d = 4 Riemannian: *^2 (e^1 ∧ e^3) = +id  (*^2 = {(1, 3): 1}, expected = {(1, 3): 1})
+  [PASS (A)] (H4)+(Q') at d = 4 Riemannian: *^2 (e^1 ∧ e^4) = +id  (*^2 = {(1, 4): 1}, expected = {(1, 4): 1})
+  [PASS (A)] (H4)+(Q') at d = 4 Riemannian: *^2 (e^2 ∧ e^3) = +id  (*^2 = {(2, 3): 1}, expected = {(2, 3): 1})
+  [PASS (A)] (H4)+(Q') at d = 4 Riemannian: *^2 (e^2 ∧ e^4) = +id  (*^2 = {(2, 4): 1}, expected = {(2, 4): 1})
+  [PASS (A)] (H4)+(Q') at d = 4 Riemannian: *^2 (e^3 ∧ e^4) = +id  (*^2 = {(3, 4): 1}, expected = {(3, 4): 1})
+
+----------------------------------------------------------------------------------------
+Part 4: (H8) Explicit basis-2-form Hodge action at d = 4 Riemannian
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H8) * (e^1 ∧ e^2) at d = 4  (computed = {(3, 4): 1}, expected = {(3, 4): 1})
+  [PASS (A)] (H8) * (e^1 ∧ e^3) at d = 4  (computed = {(2, 4): -1}, expected = {(2, 4): -1})
+  [PASS (A)] (H8) * (e^1 ∧ e^4) at d = 4  (computed = {(2, 3): 1}, expected = {(2, 3): 1})
+  [PASS (A)] (H8) * (e^2 ∧ e^3) at d = 4  (computed = {(1, 4): 1}, expected = {(1, 4): 1})
+  [PASS (A)] (H8) * (e^2 ∧ e^4) at d = 4  (computed = {(1, 3): -1}, expected = {(1, 3): -1})
+  [PASS (A)] (H8) * (e^3 ∧ e^4) at d = 4  (computed = {(1, 2): 1}, expected = {(1, 2): 1})
+
+----------------------------------------------------------------------------------------
+Part 5: (H5)/(H8) Self-dual / anti-self-dual eigenbasis at d = 4 Riemannian
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H5) * η^+_1 = +η^+_1 (eigenvalue +1)  (* η^+_1 = {(3, 4): sqrt(2)/2, (1, 2): sqrt(2)/2})
+  [PASS (A)] (H5) * η^+_2 = +η^+_2 (eigenvalue +1)  (* η^+_2 = {(2, 4): -sqrt(2)/2, (1, 3): sqrt(2)/2})
+  [PASS (A)] (H5) * η^+_3 = +η^+_3 (eigenvalue +1)  (* η^+_3 = {(2, 3): sqrt(2)/2, (1, 4): sqrt(2)/2})
+  [PASS (A)] (H5) * η^-_1 = -η^-_1 (eigenvalue -1)  (* η^-_1 = {(3, 4): sqrt(2)/2, (1, 2): -sqrt(2)/2}, -η^-_1 = {(1, 2): -sqrt(2)/2, (3, 4): sqrt(2)/2})
+  [PASS (A)] (H5) * η^-_2 = -η^-_2 (eigenvalue -1)  (* η^-_2 = {(2, 4): -sqrt(2)/2, (1, 3): -sqrt(2)/2}, -η^-_2 = {(1, 3): -sqrt(2)/2, (2, 4): -sqrt(2)/2})
+  [PASS (A)] (H5) * η^-_3 = -η^-_3 (eigenvalue -1)  (* η^-_3 = {(2, 3): sqrt(2)/2, (1, 4): -sqrt(2)/2}, -η^-_3 = {(1, 4): -sqrt(2)/2, (2, 3): sqrt(2)/2})
+
+----------------------------------------------------------------------------------------
+Part 6: Orthonormality of eigenbasis under Λ²(R^4) inner product
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H8) <η^+1, η^+1> = 1 (orthonormal diag)  (gram[0][0] = 1)
+  [PASS (A)] (H8) <η^+2, η^+2> = 1 (orthonormal diag)  (gram[1][1] = 1)
+  [PASS (A)] (H8) <η^+3, η^+3> = 1 (orthonormal diag)  (gram[2][2] = 1)
+  [PASS (A)] (H8) <η^-1, η^-1> = 1 (orthonormal diag)  (gram[3][3] = 1)
+  [PASS (A)] (H8) <η^-2, η^-2> = 1 (orthonormal diag)  (gram[4][4] = 1)
+  [PASS (A)] (H8) <η^-3, η^-3> = 1 (orthonormal diag)  (gram[5][5] = 1)
+  [PASS (A)] (H8) <η^+1, η^+2> = 0 (orthogonal off-diag)  (gram[0][1] = 0)
+  [PASS (A)] (H8) <η^+1, η^+3> = 0 (orthogonal off-diag)  (gram[0][2] = 0)
+  [PASS (A)] (H8) <η^+1, η^-1> = 0 (orthogonal off-diag)  (gram[0][3] = 0)
+  [PASS (A)] (H8) <η^+1, η^-2> = 0 (orthogonal off-diag)  (gram[0][4] = 0)
+  [PASS (A)] (H8) <η^+1, η^-3> = 0 (orthogonal off-diag)  (gram[0][5] = 0)
+  [PASS (A)] (H8) <η^+2, η^+1> = 0 (orthogonal off-diag)  (gram[1][0] = 0)
+  [PASS (A)] (H8) <η^+2, η^+3> = 0 (orthogonal off-diag)  (gram[1][2] = 0)
+  [PASS (A)] (H8) <η^+2, η^-1> = 0 (orthogonal off-diag)  (gram[1][3] = 0)
+  [PASS (A)] (H8) <η^+2, η^-2> = 0 (orthogonal off-diag)  (gram[1][4] = 0)
+  [PASS (A)] (H8) <η^+2, η^-3> = 0 (orthogonal off-diag)  (gram[1][5] = 0)
+  [PASS (A)] (H8) <η^+3, η^+1> = 0 (orthogonal off-diag)  (gram[2][0] = 0)
+  [PASS (A)] (H8) <η^+3, η^+2> = 0 (orthogonal off-diag)  (gram[2][1] = 0)
+  [PASS (A)] (H8) <η^+3, η^-1> = 0 (orthogonal off-diag)  (gram[2][3] = 0)
+  [PASS (A)] (H8) <η^+3, η^-2> = 0 (orthogonal off-diag)  (gram[2][4] = 0)
+  [PASS (A)] (H8) <η^+3, η^-3> = 0 (orthogonal off-diag)  (gram[2][5] = 0)
+  [PASS (A)] (H8) <η^-1, η^+1> = 0 (orthogonal off-diag)  (gram[3][0] = 0)
+  [PASS (A)] (H8) <η^-1, η^+2> = 0 (orthogonal off-diag)  (gram[3][1] = 0)
+  [PASS (A)] (H8) <η^-1, η^+3> = 0 (orthogonal off-diag)  (gram[3][2] = 0)
+  [PASS (A)] (H8) <η^-1, η^-2> = 0 (orthogonal off-diag)  (gram[3][4] = 0)
+  [PASS (A)] (H8) <η^-1, η^-3> = 0 (orthogonal off-diag)  (gram[3][5] = 0)
+  [PASS (A)] (H8) <η^-2, η^+1> = 0 (orthogonal off-diag)  (gram[4][0] = 0)
+  [PASS (A)] (H8) <η^-2, η^+2> = 0 (orthogonal off-diag)  (gram[4][1] = 0)
+  [PASS (A)] (H8) <η^-2, η^+3> = 0 (orthogonal off-diag)  (gram[4][2] = 0)
+  [PASS (A)] (H8) <η^-2, η^-1> = 0 (orthogonal off-diag)  (gram[4][3] = 0)
+  [PASS (A)] (H8) <η^-2, η^-3> = 0 (orthogonal off-diag)  (gram[4][5] = 0)
+  [PASS (A)] (H8) <η^-3, η^+1> = 0 (orthogonal off-diag)  (gram[5][0] = 0)
+  [PASS (A)] (H8) <η^-3, η^+2> = 0 (orthogonal off-diag)  (gram[5][1] = 0)
+  [PASS (A)] (H8) <η^-3, η^+3> = 0 (orthogonal off-diag)  (gram[5][2] = 0)
+  [PASS (A)] (H8) <η^-3, η^-1> = 0 (orthogonal off-diag)  (gram[5][3] = 0)
+  [PASS (A)] (H8) <η^-3, η^-2> = 0 (orthogonal off-diag)  (gram[5][4] = 0)
+
+----------------------------------------------------------------------------------------
+Part 7: (H6) Counterfactual at d ∈ {2, 3}: * is not endo of Λ²(R^d)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H6) at d = 2: * maps Λ²(R^2) to Λ^0(R^2), target_degree ≠ 2 (not endo)  (target degree 0 = 2: False)
+  [PASS (A)] (H1)+(H6) at d = 2: dim Λ²(R^2) = dim Λ^0(R^2) = 1  (dim_source = 1, dim_target = 1)
+  [PASS (A)] (H6) at d = 3: * maps Λ²(R^3) to Λ^1(R^3), target_degree ≠ 2 (not endo)  (target degree 1 = 2: False)
+  [PASS (A)] (H1)+(H6) at d = 3: dim Λ²(R^3) = dim Λ^1(R^3) = 3  (dim_source = 3, dim_target = 3)
+
+----------------------------------------------------------------------------------------
+Part 8: (H7) Counterfactual at d ∈ {5, 6, 7, 8}: * is not endo of Λ²(R^d)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H7) at d = 5: * maps Λ²(R^5) to Λ^3(R^5), target_degree ≠ 2 (not endo)  (target degree 3 = 2: False)
+  [PASS (A)] (H1)+(H7) at d = 5: dim Λ²(R^5) = dim Λ^3(R^5) = 10  (dim_source = 10, dim_target = 10)
+  [PASS (A)] (H7) at d = 6: * maps Λ²(R^6) to Λ^4(R^6), target_degree ≠ 2 (not endo)  (target degree 4 = 2: False)
+  [PASS (A)] (H1)+(H7) at d = 6: dim Λ²(R^6) = dim Λ^4(R^6) = 15  (dim_source = 15, dim_target = 15)
+  [PASS (A)] (H7) at d = 7: * maps Λ²(R^7) to Λ^5(R^7), target_degree ≠ 2 (not endo)  (target degree 5 = 2: False)
+  [PASS (A)] (H1)+(H7) at d = 7: dim Λ²(R^7) = dim Λ^5(R^7) = 21  (dim_source = 21, dim_target = 21)
+  [PASS (A)] (H7) at d = 8: * maps Λ²(R^8) to Λ^6(R^8), target_degree ≠ 2 (not endo)  (target degree 6 = 2: False)
+  [PASS (A)] (H1)+(H7) at d = 8: dim Λ²(R^8) = dim Λ^6(R^8) = 28  (dim_source = 28, dim_target = 28)
+
+----------------------------------------------------------------------------------------
+Part 9: (H9) Uniqueness over d ∈ {0, ..., 8}: only d = 4 is endo dim
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H9) Among d ∈ {0, 1, ..., 8}, exactly d = 4 has * endo of Λ²(R^d)  (matching d values = [4])
+
+----------------------------------------------------------------------------------------
+Part 10: Trace of `*` on Λ²(R^4) is zero (equal-dim split sanity)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Tr(* on Λ²(R^4) Riemannian) = 0 (equal +1/-1 multiplicity split)  (trace = 0)
+  [PASS (A)] *^2 = identity on Λ²(R^4) Riemannian (matrix form of (Q'))  (*^2 - I = Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]))
+  [PASS (A)] Tr(*^2) = dim Λ²(R^4) = 6  (Tr(*^2) = 6)
+  [PASS (A)] (H8) Multiplicity of +1 eigenvalue of `*` on Λ²(R^4) is 3 (self-dual subspace dim)  (+1 mult = 3)
+  [PASS (A)] (H8) Multiplicity of -1 eigenvalue of `*` on Λ²(R^4) is 3 (anti-self-dual subspace dim)  (-1 mult = 3)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 178
+  FAIL = 0
+
+  Note path: HODGE_STAR_MIDDLE_FORM_DECOMPOSITION_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md
+  Claim id:  hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26
+
+  Result: all class-(A) checks pass at exact rational precision.
+
+----- stderr -----
+

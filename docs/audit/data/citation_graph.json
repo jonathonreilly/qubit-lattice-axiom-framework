@@ -43145,6 +43145,18 @@
       "runner_path": "scripts/frontier_bh_quarter_wald_noether_framework_carrier.py",
       "title": "BH 1/4 Carrier from Framework Wald-Noether Charge Boundary Note (V1)"
     },
+    "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "claim_id": "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "02eefbf68c576593fde1d2b9d11d687641a343eb8c32245ec9f306f7781fd78a",
+      "path": "docs/BINOM_D_2_EQUALS_TWICE_DMINUS1_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/audit_companion_binom_d_2_equals_twice_dminus1_exact_2026_05_26.py",
+      "title": "`binom(d, 2) = 2 \u00b7 (d - 1)` Forces `d = 4` Narrow Theorem"
+    },
     "block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02": {
       "claim_id": "block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02",
       "claim_type_author_hint": "positive_theorem",
@@ -44721,6 +44733,18 @@
       "runner_path": "scripts/audit_companion_charged_lepton_y_tau_structural_anchor_partition.py",
       "title": "Charged-Lepton `y_\u03c4` Ward Identity Structural Anchor Requirements Positive Theorem"
     },
+    "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "claim_id": "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "c3af25f7cbb39800919f95164c72dd2d55e1e6b739ecaa3ce2d5ef0e6a721900",
+      "path": "docs/CHERN_CHARACTER_K2_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py",
+      "title": "Chern-Character `k = 2` Term Top-Form Forces `d = 4` Narrow Theorem"
+    },
     "chiral_3plus1d_boundary_phase_note": {
       "claim_id": "chiral_3plus1d_boundary_phase_note",
       "claim_type_author_hint": null,
@@ -45809,6 +45833,18 @@
       "path": "docs/CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md",
       "runner_path": "scripts/frontier_ckm_wolfenstein_eta_inverse_square_gap.py",
       "title": "CKM Wolfenstein `eta^2` Inverse-Square Structural Reading Theorem"
+    },
+    "cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26": {
+      "claim_id": "cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "38ac31c43c19af74cf8005848222d16c23608968b432a1fddbd3d811a370a6f1",
+      "path": "docs/CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py",
+      "title": "`Cl(3,1) \u2245 M_4(R)` Dimension-Sixteen Narrow Theorem"
     },
     "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": {
       "claim_id": "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
@@ -54036,6 +54072,18 @@
       "runner_path": null,
       "title": "Derivation: Decoherence Exponent vs Dimension"
     },
+    "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "claim_id": "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "75ea32bebfeb35de4e96b90cee5ed374cd8dfd078989f50ff254f159e94f30ab",
+      "path": "docs/F_WEDGE_F_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py",
+      "title": "Wedge-Square of a 2-Form is a Top-Degree Form Iff `d = 4` Narrow Theorem"
+    },
     "family_companion_compare_note": {
       "claim_id": "family_companion_compare_note",
       "claim_type_author_hint": "meta",
@@ -58844,6 +58892,18 @@
       "runner_path": "scripts/higher_symmetry_joint_validation.py",
       "title": "Higher-Symmetry Joint Validation Note \u2014 Cached N Range (Binding)"
     },
+    "hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "claim_id": "hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "93cfa8a18f49dd9b0a1929f2ad6b0059f4a6272a7857a133f9229e22e884195d",
+      "path": "docs/HODGE_STAR_MIDDLE_FORM_DECOMPOSITION_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py",
+      "title": "Hodge Star Middle-Form Self-Dual/Anti-Self-Dual Decomposition Forces `d = 4` Narrow Theorem"
+    },
     "holographic_probe_note_2026-04-11": {
       "claim_id": "holographic_probe_note_2026-04-11",
       "claim_type_author_hint": null,
@@ -59550,6 +59610,18 @@
       "path": "docs/KEY_TERMINOLOGY.md",
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology"
+    },
+    "klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "claim_id": "klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "9f4bb728f1e821ee10d079ef17d4442cb91f003eb17e08c5881e6911c211684e",
+      "path": "docs/KLEIN_FOUR_PRODUCT_BZ_CORNERS_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/audit_companion_klein_four_product_bz_corners_forces_d_four_exact_2026_05_26.py",
+      "title": "Klein-Four \u00d7 Klein-Four BZ-Corner Factorization Forces `d = 4` Narrow Theorem"
     },
     "kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11": {
       "claim_id": "kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11",
@@ -77041,6 +77113,18 @@
       "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
       "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Finite Inventory Arithmetic"
     },
+    "so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26": {
+      "claim_id": "so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "d55528a900fe0045e4effc5451df297b282c06985161775641378c0cdeb68e3f",
+      "path": "docs/SO4_UNIQUE_SU2_SU2_SPLIT_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py",
+      "title": "`so(4) \u2245 su(2) \u2295 su(2)` Unique Among Rotation Algebras Narrow Theorem"
+    },
     "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
       "claim_id": "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer",
       "claim_type_author_hint": "bounded_theorem",
@@ -83615,6 +83699,18 @@
       "runner_path": null,
       "title": "Writing Voice Guide"
     },
+    "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26": {
+      "claim_id": "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "0fd1fc837104da948a7ee370a0f209f59f61842c95a0d4119763afffb7079d6d",
+      "path": "docs/YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py",
+      "title": "Yang-Mills Bare Coupling Marginality `[g_YM] = 0` Forces `d = 4` Narrow Theorem"
+    },
     "ygut_normalization_proof_walk_lattice_independence_bounded_note_2026-05-08": {
       "claim_id": "ygut_normalization_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "claim_type_author_hint": "bounded_theorem",
@@ -85780,6 +85876,7 @@
     "beyond_lattice_qcd_note",
     "bh_entropy_rt_ratio_widom_no_go_note",
     "bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10",
+    "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26",
     "block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02",
     "bmv_bounded_negative_note",
     "bmv_entanglement_note_2026-04-11",
@@ -85813,6 +85910,7 @@
     "charged_lepton_two_higgs_canonical_reduction_note",
     "charged_lepton_typeb_radian_readout_generation_selector_no_go_note_2026-04-27",
     "charged_lepton_y_tau_mechanism_stuck_fanout_note_2026-04-28",
+    "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26",
     "chiral_3plus1d_boundary_phase_note",
     "chiral_3plus1d_coupled_coin_note",
     "chiral_3plus1d_mixing_period_note",
@@ -85829,6 +85927,7 @@
     "ckm_down_type_scale_convention_support_note_2026-04-22",
     "ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10",
     "ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02",
+    "cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26",
     "cl3_complexification_split_narrow_theorem_note_2026-05-10",
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
     "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
@@ -85941,6 +86040,7 @@
     "evolving_network_prototype_v6_note",
     "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
     "experiment_backmatch_query_pack_note",
+    "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26",
     "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10",
     "fermion_parity_z2_grading_theorem_note_2026-05-02",
     "fifth_family_complex_boundary_note",
@@ -86043,6 +86143,7 @@
     "higher_dimension_status_2026-04-01",
     "higher_order_structural_theorems_note_2026-05-17",
     "higher_symmetry_gravity_probe_note",
+    "hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26",
     "holographic_probe_note_2026-04-11",
     "hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28",
     "hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29",
@@ -86056,6 +86157,7 @@
     "interest_map",
     "inverse_problem_note",
     "k_dependence_review_safe_note",
+    "klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26",
     "kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11",
     "koide_a1_closure_recommendation_2026-04-22",
     "koide_a1_derivation_status_note_2026-05-17",
@@ -86314,6 +86416,7 @@
     "sixth_family_sheared_fm_transfer_note",
     "sixth_family_sheared_note",
     "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10",
+    "so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26",
     "source_driven_field_recovery_h025_pocket_note",
     "source_driven_field_recovery_sweep_note",
     "source_resolved_exact_green_h025_pocket_note_2026-05-17",
@@ -86488,6 +86591,7 @@
     "work_history.repo.review_feedback.readme",
     "work_history.yt.yt_explicit_systematic_reduction_options_2026-04-15",
     "work_history.yt.yt_explicit_systematic_status_review_2026-04-15",
+    "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26",
     "yt_boundary_theorem_note_2026-05-17",
     "yt_bridge_action_invariant_note_2026-05-17",
     "yt_bridge_hessian_selector_note_2026-05-17",
@@ -86517,7 +86621,7 @@
       "no_go": 85,
       "none": 1431,
       "open_gate": 51,
-      "positive_theorem": 169
+      "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1064,
@@ -86526,12 +86630,12 @@
       "no_go": 188,
       "none": 426,
       "open_gate": 128,
-      "positive_theorem": 584
+      "positive_theorem": 592
     },
     "edge_count": 9869,
-    "leaf_count": 806,
-    "node_count": 2583,
-    "root_count": 856,
-    "runners_with_path": 2158
+    "leaf_count": 814,
+    "node_count": 2591,
+    "root_count": 864,
+    "runners_with_path": 2166
   }
 }

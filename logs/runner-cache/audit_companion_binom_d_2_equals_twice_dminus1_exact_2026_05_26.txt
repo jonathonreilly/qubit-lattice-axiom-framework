@@ -1,0 +1,105 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_binom_d_2_equals_twice_dminus1_exact_2026_05_26.py
+runner_sha256: 819fc01ecf359ebd32e0c3632fc17576561c5dc83992d0b40cee19b59badb449
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+BINOM_D_2_EQUALS_TWICE_DMINUS1_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26
+Goal: sympy verification that binom(d, 2) = 2(d - 1) iff d = 4
+      via elementary integer arithmetic on binomial coefficients
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: (D2) Numerical evaluation table for d in {2, ..., 12}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (D2) at d = 2: L = binom(d, 2) = 1, R = 2(d - 1) = 2, L - R = -1  (L = 1, R = 2)
+  [PASS (A)] (D2) at d = 3: L = binom(d, 2) = 3, R = 2(d - 1) = 4, L - R = -1  (L = 3, R = 4)
+  [PASS (A)] (D2) at d = 4: L = binom(d, 2) = 6, R = 2(d - 1) = 6, L - R = 0  (L = 6, R = 6)
+  [PASS (A)] (D2) at d = 5: L = binom(d, 2) = 10, R = 2(d - 1) = 8, L - R = 2  (L = 10, R = 8)
+  [PASS (A)] (D2) at d = 6: L = binom(d, 2) = 15, R = 2(d - 1) = 10, L - R = 5  (L = 15, R = 10)
+  [PASS (A)] (D2) at d = 7: L = binom(d, 2) = 21, R = 2(d - 1) = 12, L - R = 9  (L = 21, R = 12)
+  [PASS (A)] (D2) at d = 8: L = binom(d, 2) = 28, R = 2(d - 1) = 14, L - R = 14  (L = 28, R = 14)
+  [PASS (A)] (D2) at d = 9: L = binom(d, 2) = 36, R = 2(d - 1) = 16, L - R = 20  (L = 36, R = 16)
+  [PASS (A)] (D2) at d = 10: L = binom(d, 2) = 45, R = 2(d - 1) = 18, L - R = 27  (L = 45, R = 18)
+  [PASS (A)] (D2) at d = 11: L = binom(d, 2) = 55, R = 2(d - 1) = 20, L - R = 35  (L = 55, R = 20)
+  [PASS (A)] (D2) at d = 12: L = binom(d, 2) = 66, R = 2(d - 1) = 22, L - R = 44  (L = 66, R = 22)
+
+----------------------------------------------------------------------------------------
+Part 2: (D1) Polynomial factorization
+----------------------------------------------------------------------------------------
+  [PASS (A)] (D1) d(d-1) - 4(d-1) factors as (d-1)(d-4)  (factored = (d - 4)*(d - 1))
+  [PASS (A)] (D1) (d - 1)(d - 4) = 0 has solutions d ∈ {1, 4}  (solutions = [1, 4])
+  [PASS (A)] (D1) Restricted to d >= 2, unique solution is d = 4  (valid = [4])
+
+----------------------------------------------------------------------------------------
+Part 3: (D2) Match at d = 4 (only)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (D2) at d = 2: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 3: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 4: L = R is True  (expected match: True, got True)
+  [PASS (A)] (D2) at d = 5: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 6: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 7: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 8: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 9: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 10: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 11: L = R is False  (expected match: False, got False)
+  [PASS (A)] (D2) at d = 12: L = R is False  (expected match: False, got False)
+
+----------------------------------------------------------------------------------------
+Part 4: (D3) Monotonicity L > R for d in {5, ..., 12}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (D3) at d = 5: L - R = 2 > 0  (L - R = 2)
+  [PASS (A)] (D3) at d = 5: L - R = (d - 1)(d - 4) / 2 = 2  (formula = 2, computed = 2)
+  [PASS (A)] (D3) at d = 6: L - R = 5 > 0  (L - R = 5)
+  [PASS (A)] (D3) at d = 6: L - R = (d - 1)(d - 4) / 2 = 5  (formula = 5, computed = 5)
+  [PASS (A)] (D3) at d = 7: L - R = 9 > 0  (L - R = 9)
+  [PASS (A)] (D3) at d = 7: L - R = (d - 1)(d - 4) / 2 = 9  (formula = 9, computed = 9)
+  [PASS (A)] (D3) at d = 8: L - R = 14 > 0  (L - R = 14)
+  [PASS (A)] (D3) at d = 8: L - R = (d - 1)(d - 4) / 2 = 14  (formula = 14, computed = 14)
+  [PASS (A)] (D3) at d = 9: L - R = 20 > 0  (L - R = 20)
+  [PASS (A)] (D3) at d = 9: L - R = (d - 1)(d - 4) / 2 = 20  (formula = 20, computed = 20)
+  [PASS (A)] (D3) at d = 10: L - R = 27 > 0  (L - R = 27)
+  [PASS (A)] (D3) at d = 10: L - R = (d - 1)(d - 4) / 2 = 27  (formula = 27, computed = 27)
+  [PASS (A)] (D3) at d = 11: L - R = 35 > 0  (L - R = 35)
+  [PASS (A)] (D3) at d = 11: L - R = (d - 1)(d - 4) / 2 = 35  (formula = 35, computed = 35)
+  [PASS (A)] (D3) at d = 12: L - R = 44 > 0  (L - R = 44)
+  [PASS (A)] (D3) at d = 12: L - R = (d - 1)(d - 4) / 2 = 44  (formula = 44, computed = 44)
+  [PASS (A)] (D3) Symbolic: L(d) - R(d) = (d-1)(d-4)/2  (L - R = (d - 4)*(d - 1)/2)
+
+----------------------------------------------------------------------------------------
+Part 5: (D4) Violation at d in {2, 3}: L < R
+----------------------------------------------------------------------------------------
+  [PASS (A)] (D4) at d = 2: L - R = -1 < 0  (L - R = -1)
+  [PASS (A)] (D4) at d = 3: L - R = -1 < 0  (L - R = -1)
+
+----------------------------------------------------------------------------------------
+Part 6: (D5) Uniqueness over d in {2, ..., 12}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (D5) Among d in {2, ..., 12}, exactly d = 4 satisfies L(d) = R(d)  (matching d values = [4])
+  [PASS (A)] (D5) Among d in {2, ..., 20}, exactly d = 4 satisfies L(d) = R(d)  (matching d values (extended) = [4])
+
+----------------------------------------------------------------------------------------
+Part 7: (D6) Informational geometric reading (cross-check, not load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (D6) [info] dim Λ^2(R^4) = dim so(4) = 6  (dim Λ^2(R^4) = 6, dim so(4) = 6)
+  [PASS (A)] (D6) [info] 6 = 2 × 3 = 2 × dim su(2) (self-dual + anti-self-dual halves)  (6 = 2 × 3 = 6)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 48
+  FAIL = 0
+
+  Note path: BINOM_D_2_EQUALS_TWICE_DMINUS1_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md
+  Claim id:  binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26
+
+  Result: all class-(A) checks pass at exact rational precision.
+
+----- stderr -----
+

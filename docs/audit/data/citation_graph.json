@@ -12257,18 +12257,6 @@
       "to": "plaquette_self_consistency_note"
     },
     {
-      "from": "higgs_mass_from_axiom_note",
-      "to": "higgs_mass_derived_note"
-    },
-    {
-      "from": "higgs_mass_from_axiom_note",
-      "to": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
-    },
-    {
-      "from": "higgs_mass_from_axiom_note",
-      "to": "higgs_kappa_curv_from_vtaste_symmetric_point_narrow_theorem_note_2026-05-10"
-    },
-    {
       "from": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
       "to": "higgs_mass_from_axiom_note"
     },
@@ -26930,10 +26918,6 @@
     },
     {
       "from": "wave_direct_dm_portability_batch_note",
-      "to": "wave_direct_dm_h025_fam2_seed1_followup_note"
-    },
-    {
-      "from": "wave_direct_dm_portability_batch_note",
       "to": "wave_direct_dm_h025_fam2_seed0_control_note"
     },
     {
@@ -28635,14 +28619,6 @@
     {
       "from": "yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25",
       "to": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
-    },
-    {
-      "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
-    },
-    {
-      "from": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "to": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
     },
     {
       "from": "yt_source_covariance_normalization_support_note_2026-05-24",
@@ -58483,13 +58459,10 @@
         "higgs_from_lattice_note",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
         "yt_ew_color_projection_theorem",
-        "plaquette_self_consistency_note",
-        "higgs_mass_derived_note",
-        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
-        "higgs_kappa_curv_from_vtaste_symmetric_point_narrow_theorem_note_2026-05-10"
+        "plaquette_self_consistency_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0c90a8715f36d584fca8b56965331007c7ac00150c1301083861bdcf0df9c6c4",
+      "note_hash": "89aa06db5d3fec46bec32e0ddec9cb517e10043c85327f187215c99d72acd6fb",
       "path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
       "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking"
@@ -82366,7 +82339,6 @@
         "wave_direct_dm_h025_low_band_retention_note",
         "wave_direct_dm_h025_two_point_synthesis_note",
         "wave_direct_dm_h025_fam2_seed0_boundary_note",
-        "wave_direct_dm_h025_fam2_seed1_followup_note",
         "wave_direct_dm_h025_fam2_seed0_control_note",
         "wave_direct_dm_h025_fam2_seed1_control_note",
         "wave_direct_dm_h025_fam2_two_point_synthesis_note"
@@ -82375,7 +82347,7 @@
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "note_hash": "9c6acf9afda43d404454aafd2094b696113594f63d7717df9645dbc4e803da6b",
+      "note_hash": "885442051d0e2d483eda405f62e9d9a3e07338df81b3788bbc8bba1fe5f2fb2c",
       "path": "docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_portability_batch.py",
       "title": "Wave Direct-dM Portability Batch"
@@ -85213,12 +85185,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-        "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "83cbe835cdb23a0fd3247414fffb8bc994d19e4951b97c1a6c24461011d42846",
+      "note_hash": "fa298872f743325d1afbdab7334176bd25c701ad05aeae12990c793dafc4383b",
       "path": "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
       "runner_path": "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py",
       "title": "Y_T Source-Coordinate Invariant Top/W Ratio Gate"
@@ -86441,6 +86410,7 @@
     "yt_retention_master_manifest_2026-04-18",
     "yt_source_action_route_exhaustion_summary_note_2026-05-22",
     "yt_source_action_support_packet_note_2026-05-22",
+    "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
     "yt_ssb_matching_gap_analysis_note_2026-04-18",
     "z2_hw1_mass_matrix_parametrization_note",
     "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
@@ -86465,10 +86435,10 @@
       "open_gate": 127,
       "positive_theorem": 586
     },
-    "edge_count": 9867,
-    "leaf_count": 805,
+    "edge_count": 9861,
+    "leaf_count": 807,
     "node_count": 2579,
-    "root_count": 854,
+    "root_count": 855,
     "runners_with_path": 2154
   }
 }

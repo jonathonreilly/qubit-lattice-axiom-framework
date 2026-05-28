@@ -6,7 +6,7 @@ remaining_campaign_seconds_at_cycle_start: 2285
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T06:03:30Z"
+last_checkpoint_utc: "2026-05-28T06:05:13Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
 active_route: c3_same_source_w_normalized_radial_ratio_no_go
@@ -274,6 +274,9 @@ no_go_routes:
   - nonreversible oriented C3 Markov-current dynamics plus connected/current normalization derives an accepted non-mass physical top-line law or lambda_top=1/sqrt(2)
   - continuous C3 unitary character-flow dynamics plus branch/unit normalization derives an accepted non-mass physical top-line law or source matrix element
 commands_run:
+  - "gh pr edit 1980 --body-file - -> PR body updated with cycle 35 delivery commit"
+  - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
+  - "git commit -m 'Record W-normalized radial ratio delivery' -> 34e4f173611d4404c81f838747508c6e5bf8ad3e"
   - "gh pr edit 1980 --body-file - -> PR body updated"
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "git commit -m 'Prune C3 same-source W-normalized radial ratio shortcut' -> 9ffa95c8c76da17c5e57ba98e227145c0f7656d6"
@@ -831,9 +834,9 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 35 science commit 9ffa95c8c76da17c5e57ba98e227145c0f7656d6 is pushed; PR #1980 body is updated with the W-normalized radial-ratio no-go result and verification. Delivery state commit is pending."
+pr_status: "Cycle 35 science commit 9ffa95c8c76da17c5e57ba98e227145c0f7656d6 and delivery commit 34e4f173611d4404c81f838747508c6e5bf8ad3e are pushed; PR #1980 body is updated with the W-normalized radial-ratio no-go result and verification."
 latest_science_commit: 9ffa95c8c76da17c5e57ba98e227145c0f7656d6
-latest_delivery_commit: pending_cycle35_delivery_state
+latest_delivery_commit: 34e4f173611d4404c81f838747508c6e5bf8ad3e
 latest_delivery_hash_record_commit: pending_cycle35_delivery_hash_record
 next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

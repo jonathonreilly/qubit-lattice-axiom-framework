@@ -31,7 +31,8 @@ Verification recorded so far with this review:
 - YAML validation passed.
 - `git diff --check` passed.
 - `POSITIVE_CLOSURE` remains absent.
-- Science commit `9ffa95c8c76da17c5e57ba98e227145c0f7656d6` was pushed and
+- Science commit `9ffa95c8c76da17c5e57ba98e227145c0f7656d6` and delivery
+  commit `34e4f173611d4404c81f838747508c6e5bf8ad3e` were pushed, and
   PR #1980 body was updated.
 
 ## 2026-05-28 Local Review, Block 48

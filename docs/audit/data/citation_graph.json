@@ -24653,6 +24653,14 @@
       "to": "structured_chokepoint_bridge_note"
     },
     {
+      "from": "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+      "to": "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30"
+    },
+    {
+      "from": "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+      "to": "native_gauge_closure_note"
+    },
+    {
       "from": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
       "to": "native_gauge_closure_note"
     },
@@ -78668,6 +78676,21 @@
       "runner_path": "scripts/structureless_dag_gravity_harness.py",
       "title": "Gravity on Structureless Causal DAGs"
     },
+    "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": {
+      "claim_id": "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
+        "native_gauge_closure_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c1858a3f133203cf7ab14330d5b63e6397bf3d63b3b69c4ada62d6cb4a7b1776",
+      "path": "docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/audit_companion_su2_weak_alpha_lattice_anchor_2026_05_28.py",
+      "title": "SU(2)_L Lattice-Scale \u03b1_2 = 1/(16\u03c0) Anchor Narrow Theorem"
+    },
     "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": {
       "claim_id": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -86431,7 +86454,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 647,
+      "bounded_theorem": 648,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86440,7 +86463,7 @@
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1060,
+      "bounded_theorem": 1061,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86448,10 +86471,10 @@
       "open_gate": 128,
       "positive_theorem": 585
     },
-    "edge_count": 9861,
+    "edge_count": 9863,
     "leaf_count": 807,
-    "node_count": 2580,
+    "node_count": 2581,
     "root_count": 856,
-    "runners_with_path": 2155
+    "runners_with_path": 2156
   }
 }

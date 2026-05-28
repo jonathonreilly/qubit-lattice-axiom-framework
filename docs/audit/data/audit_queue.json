@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 244,
     "high": 319,
-    "leaf": 277,
+    "leaf": 278,
     "medium": 310
   },
   "cycle_break_target_count": 0,
@@ -26789,6 +26789,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
+        "native_gauge_closure_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_su2_weak_alpha_lattice_anchor_2026_05_28.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34981,6 +35006,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 23,
-  "total_pending": 1150
+  "ready_count": 24,
+  "total_pending": 1151
 }

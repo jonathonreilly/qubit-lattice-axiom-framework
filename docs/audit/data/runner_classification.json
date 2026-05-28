@@ -10500,6 +10500,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py"
     },
+    "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 30,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py"
+    },
     "hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow_no_go_note_2026-05-15": {
       "assert_count": 1,
       "counts": {
@@ -40041,6 +40053,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py": {
+      "assert_count": 1,
+      "claims": [
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 30,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -57177,12 +57204,12 @@
     "dominant_class_distribution": {
       "A": 260,
       "B": 294,
-      "C": 764,
+      "C": 765,
       "D": 302,
       "none": 441
     },
-    "runners_classified": 2061,
-    "runners_with_C": 1000,
-    "runners_with_D": 602
+    "runners_classified": 2062,
+    "runners_with_C": 1001,
+    "runners_with_D": 603
   }
 }

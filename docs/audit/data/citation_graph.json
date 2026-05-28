@@ -11725,6 +11725,14 @@
       "to": "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+      "to": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+      "to": "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
+    },
+    {
       "from": "hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow_no_go_note_2026-05-15",
       "to": "bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10"
     },
@@ -57996,6 +58004,21 @@
       "runner_path": "scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py",
       "title": "Hierarchy alpha_LM Exponent / Species-Count Bridge \u2014 Regulator-Dependence No-Go Note"
     },
+    "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": {
+      "claim_id": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (scoping; carries a bulk-vanishing",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+        "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b003f969935753f292d7bf775b433367ac2b583a8abf4299fee751cd3fad2234",
+      "path": "docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py",
+      "title": "APS \u03b7-Invariant of the Bulk Staggered Dirac on Z^3 \u00d7 S^1 \u2014 Bulk-Vanishing Scoping Note"
+    },
     "hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow_no_go_note_2026-05-15": {
       "claim_id": "hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow_no_go_note_2026-05-15",
       "claim_type_author_hint": "no_go",
@@ -86615,7 +86638,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 654,
+      "bounded_theorem": 655,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86624,7 +86647,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1064,
+      "bounded_theorem": 1065,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86632,10 +86655,10 @@
       "open_gate": 128,
       "positive_theorem": 592
     },
-    "edge_count": 9869,
-    "leaf_count": 814,
-    "node_count": 2591,
+    "edge_count": 9871,
+    "leaf_count": 815,
+    "node_count": 2592,
     "root_count": 864,
-    "runners_with_path": 2166
+    "runners_with_path": 2167
   }
 }

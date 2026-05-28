@@ -1,20 +1,29 @@
 #!/usr/bin/env python3
-"""Broad gravity bundle: per-signature derivation tests.
+"""Broad gravity bundle: per-signature bounded IF-chain tests.
 
 PURPOSE: For each GR signature (WEP, time dilation, geodesic, light bending,
-conformal metric), test the derivation chain from the framework and classify
-as EXACT (derived) or BOUNDED (conditional).
+conformal metric), trace the conditional chain and classify the numerical
+checks as EXACT (machine-precision identity) or BOUNDED (depends on a further
+step).
 
-KEY ARGUMENT: S = kL(1-phi) is DERIVED, not postulated. The self-consistency
-chain gives:
-  1. H = -Delta           (KS construction)
+Admitted-input scope repair 2026-05-28
+--------------------------------------
+The chain rests on ADMITTED INPUTS that are stipulated, NOT derived from the
+Cl(3)-on-Z^3 baseline:
+  * L^{-1} = G_0   (weak-field self-consistency closure)
+  * rho = |psi|^2  (gravitational mass-source readout)
+  * S  = L(1-phi)  (weak-field test-mass response)
+Given those inputs, the chain is:
+  1. H = -Delta           (KS algebraic identity)
   2. G_0 = H^{-1}         (definition)
-  3. L^{-1} = G_0 => L=-Delta  (framework closure condition)
-  4. phi = GM/r            (Green's function theorem)
-  5. S = kL(1-phi)         (eikonal limit of perturbed propagator)
+  3. L^{-1} = G_0 => L=-Delta  (ADMITTED closure input, not derived here)
+  4. phi = GM/r            (external lattice Green's-function theorem)
+  5. S = kL(1-phi)         (given admitted S=L(1-phi) input + eikonal limit)
 
-Each test below traces the full chain and separates EXACT checks (derived from
-framework) from BOUNDED checks (conditional on continuum limit or other steps).
+The numerical EXACT/BOUNDED labels below describe individual checks. They do
+NOT assert that the admitted inputs are derived from the baseline. WEP and time
+dilation are BOUNDED SUPPORT CONDITIONAL on the admitted inputs, not
+unconditional derivations. See docs/BROAD_GRAVITY_DERIVATION_NOTE.md.
 
 PStack experiment: broad-gravity-bundle
 """
@@ -243,7 +252,10 @@ def check_self_consistency():
     print()
     print("=" * 72)
     print("CHECK 2: SELF-CONSISTENCY — L^{-1} = G_0 => L = H")
-    print("  Chain position: Step 3 (framework closure condition)")
+    print("  Chain position: Step 3 (ADMITTED closure input, not derived)")
+    print("  The numeric check below verifies G_0^{-1} = H to machine precision,")
+    print("  i.e. that GIVEN the admitted closure L^{-1}=G_0 the operator is H.")
+    print("  It does NOT derive L^{-1}=G_0 from the Cl(3)-on-Z^3 baseline.")
     print("=" * 72)
 
     L = 8
@@ -432,8 +444,8 @@ def check_wep():
     print()
     print("=" * 72)
     print("CHECK 5: WEP — DEFLECTION IS k-INDEPENDENT")
-    print("  Derivation: S = kL(1-phi); delta S = 0 => k cancels")
-    print("  Status: EXACT (derived from framework)")
+    print("  Chain: S = kL(1-phi) (given admitted inputs); delta S = 0 => k cancels")
+    print("  Status: EXACT k-cancellation; bounded support conditional on admitted inputs")
     print("=" * 72)
 
     N = 31
@@ -528,8 +540,9 @@ def check_wep():
     print()
     print("  NOTE: WEP k-independence is exact because S = k * F(path, phi).")
     print("  The k cancels in delta S = 0. This is structural, not accidental.")
-    print("  But S = kL(1-phi) is DERIVED from the framework, not postulated.")
-    print("  Therefore WEP is a DERIVED consequence, not a built-in assumption.")
+    print("  S = kL(1-phi) follows GIVEN the admitted input S = L(1-phi).")
+    print("  Therefore WEP is BOUNDED SUPPORT CONDITIONAL on the admitted inputs,")
+    print("  not an unconditional derivation from the baseline.")
 
 
 # ============================================================================
@@ -542,8 +555,8 @@ def check_time_dilation():
     print("=" * 72)
     print("CHECK 6: TIME DILATION — phase rate = k(1-phi)")
     print("  Tautological part: phase identity for any field")
-    print("  Derived part: phi = GM/(4 pi r) from the retained Poisson/Newton chain")
-    print("  Status: retained weak-field corollary; direct finite-lattice profile check is bounded")
+    print("  Profile part: phi = GM/(4 pi r) from the retained Poisson/Newton chain")
+    print("  Status: bounded support conditional on admitted inputs (action form S=L(1-phi))")
     print("=" * 72)
 
     N = 31
@@ -849,16 +862,21 @@ def main():
     print("BROAD GRAVITY BUNDLE: PER-SIGNATURE DERIVATION TESTS")
     print("=" * 72)
     print()
-    print("Central argument: S = kL(1-phi) is DERIVED from the framework.")
-    print("The self-consistency chain:")
-    print("  1. H = -Delta           (KS construction)")
+    print("Central argument: S = kL(1-phi) follows GIVEN the admitted inputs.")
+    print("ADMITTED INPUTS (stipulated, NOT derived from the baseline):")
+    print("  * L^{-1} = G_0   (weak-field self-consistency closure)")
+    print("  * rho = |psi|^2  (gravitational mass-source readout)")
+    print("  * S  = L(1-phi)  (weak-field test-mass response)")
+    print("Given those inputs, the chain is:")
+    print("  1. H = -Delta           (KS algebraic identity)")
     print("  2. G_0 = H^{-1}         (definition)")
-    print("  3. L^{-1} = G_0 => L=-Delta  (closure condition)")
-    print("  4. phi = GM/r            (Green's function theorem)")
-    print("  5. S = kL(1-phi)         (eikonal limit)")
+    print("  3. L^{-1} = G_0 => L=-Delta  (ADMITTED closure input)")
+    print("  4. phi = GM/r            (external lattice theorem)")
+    print("  5. S = kL(1-phi)         (given admitted S=L(1-phi) input + eikonal)")
     print()
-    print("Each test below traces the full chain. Checks are labeled EXACT")
-    print("(derived from framework) or BOUNDED (conditional on additional step).")
+    print("Each test below traces the conditional chain. Checks are labeled EXACT")
+    print("(machine-precision identity) or BOUNDED (depends on a further step).")
+    print("Labels do NOT assert the admitted inputs are derived from the baseline.")
     print()
 
     # Run all checks
@@ -899,16 +917,19 @@ def main():
     print(f"    FAIL:    {n_fail}")
     print()
 
-    # Per-signature decisions
+    # Per-signature status (conditional on the admitted inputs)
     print("=" * 72)
-    print("PER-SIGNATURE DECISIONS")
+    print("PER-SIGNATURE STATUS (conditional on admitted inputs)")
     print("=" * 72)
     print()
-    print("  1. WEP:              PROMOTE (k-independence is derived, not postulated)")
-    print("  2. Time dilation:    PROMOTE (phi = GM/4pi*r is derived, not just phase identity)")
-    print("  3. Geodesic eq:      KEEP BOUNDED (conditional on continuum limit)")
-    print("  4. Light bending:    KEEP BOUNDED (conditional on conformal metric + null geod)")
-    print("  5. Conformal metric: KEEP BOUNDED (conditional on continuum limit)")
+    print("  1. WEP:              bounded support conditional on admitted inputs")
+    print("  2. Time dilation:    bounded support conditional on admitted inputs")
+    print("  3. Geodesic eq:      bounded support conditional on admitted inputs + continuum limit")
+    print("  4. Light bending:    bounded support conditional on admitted inputs + continuum + null geod")
+    print("  5. Conformal metric: bounded support conditional on admitted inputs + continuum limit")
+    print()
+    print("  Admitted inputs (stipulated, NOT derived): L^{-1}=G_0, rho=|psi|^2, S=L(1-phi).")
+    print("  See docs/BROAD_GRAVITY_DERIVATION_NOTE.md.")
     print()
 
     print(f"  Elapsed: {elapsed:.1f}s")

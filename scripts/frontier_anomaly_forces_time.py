@@ -27,7 +27,7 @@ With that assumption, d_time > 1 is excluded because the multi-time /
 ultrahyperbolic continuum problem requires nonlocal constraints on
 codimension-1 initial data.
 
-THEOREM (Anomaly-forced time, single-clock form):
+THEOREM (anomaly-cancellation / single-clock bridge, conditional):
 Let Cl(3) on Z^3 produce su(2) + su(3) + u(1) with left-handed content
 (2,3)_{+1/3} + (2,1)_{-1}. Assume:
   1. the framework evolves states by a single strongly continuous unitary
@@ -485,7 +485,7 @@ def step3_chirality_dimension():
 # ============================================================================
 def step4_unique_time():
     print("\n" + "=" * 72)
-    print("STEP 4: SINGLE-CLOCK CODIMENSION-1 EVOLUTION FORCES d_time = 1")
+    print("STEP 4: SINGLE-CLOCK CODIMENSION-1 EVOLUTION SELECTS d_time = 1 WITHIN THE BRIDGE")
     print("=" * 72)
     print()
 
@@ -644,8 +644,8 @@ def step5_complete_chain():
     print("                 nonlocal constraints on codimension-1 data")
     print()
     print("  7. RESULT: d_total = 3 + 1 = 4")
-    print("     Time is not an input -- it is forced by anomaly + chirality +")
-    print("     single-clock codimension-1 evolution.")
+    print("     The one-time outcome follows only inside the stated conditional")
+    print("     bridge: anomaly + chirality + single-clock codimension-1 evolution.")
     print()
 
     # Verify the complete chain numerically
@@ -707,12 +707,12 @@ def step5_complete_chain():
 
     print()
     print("  " + "=" * 60)
-    print("  THEOREM (Anomaly-forced time, single-clock form) VERIFIED:")
+    print("  THEOREM (anomaly-cancellation / single-clock bridge, conditional) VERIFIED:")
     print("  Cl(3) on Z^3 => su(2)+su(3)+u(1) => anomaly => singlets")
     print("  => chirality => even d_total => d_t odd")
     print("  => single-clock codim-1 evolution excludes d_t > 1 => 3+1D")
     print()
-    print("  The temporal direction is DERIVED, not assumed.")
+    print("  The temporal direction is selected within the stated bridge, not by ABJ alone.")
     print("  " + "=" * 60)
 
 
@@ -739,7 +739,7 @@ def bonus_charge_table():
     print(f"  {'Particle':<10} {'T3':<8} {'SU(3)':<8} {'Y':<8} {'Q=T3+Y/2':<10} {'Origin'}")
     print("  " + "-" * 65)
     for name, T3, su3, Y, Q in particles:
-        origin = "Cl(3) taste" if name.endswith("_L") else "anomaly-forced"
+        origin = "Cl(3) taste" if name.endswith("_L") else "anomaly-cancellation completion"
         print(f"  {name:<10} {T3:<8} {su3:<8} {Y:<8} {Q:<10} {origin}")
 
     charges = [
@@ -771,8 +771,8 @@ def bonus_charge_table():
 # ============================================================================
 def main():
     print("=" * 72)
-    print("ANOMALY CANCELLATION FORCES 3+1D SPACETIME")
-    print("Temporal direction derived from anomaly + chirality + single-clock evolution")
+    print("ANOMALY-CANCELLATION CONSISTENCY BRIDGE FOR 3+1D SPACETIME")
+    print("Temporal direction selected by anomaly + chirality + single-clock evolution")
     print("=" * 72)
 
     step1_verify_anomaly()
@@ -791,7 +791,7 @@ def main():
         print(f"\nFAILED {FAIL_COUNT} checks!")
         sys.exit(1)
     else:
-        print("\nAll checks passed. Anomaly-forced time theorem verified.")
+        print("\nAll checks passed. Conditional anomaly/single-clock bridge verified.")
         sys.exit(0)
 
 

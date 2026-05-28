@@ -1,4 +1,4 @@
-# Anomaly Cancellation Forces 3+1 Spacetime
+# Anomaly-Cancellation Consistency Bridge for 3+1 Spacetime
 
 **Date:** 2026-04-24 (scope tightened 2026-05-02; citation chain partially
 internalized 2026-05-03; audit-prep stale-citation correction 2026-05-07)
@@ -59,8 +59,9 @@ remains a bare external admission on current `main`:
   external load-bearing admission. PR 418 merged 2026-05-03; citation
   status on `main`: present (proposed_retained, audit-pending).
 Under these citations plus the open ABJ admission (i), spacetime
-signature `(3,1)` is forced. The load-bearing chain has one remaining
-bare external admission (admission (i)).
+signature `(3,1)` is selected within the stated conditional bridge.
+The load-bearing chain has one remaining bare external admission
+(admission (i)).
 **Load-bearing class:** B (conditional bridge) on current `main`. Any
 promotion toward A (positive theorem) is conditional on a successor
 companion note for admission (i) landing on `main` AND on independent
@@ -99,7 +100,7 @@ landing is now conditioned on a successor companion note for admission
 met. Source-note authority does not assign or propose retained /
 positive_theorem status; only the independent audit lane does.
 
-## Theorem (Anomaly-forced time, single-clock form, conditional)
+## Theorem (anomaly-cancellation / single-clock form, conditional)
 
 Let the Cl(3) Clifford algebra acting on Z^3 produce the gauge algebra
 su(2) + su(3) + u(1) with left-handed fermion content
@@ -131,8 +132,9 @@ Per-site `gamma_5` is excluded by
 the chirality grading lives on the staggered taste-reconstructed Dirac, not on the
 per-site Cl(3) algebra.
 
-Then consistency of the quantum gauge theory forces exactly one temporal
-dimension, giving spacetime signature `(3,1)`.
+Then consistency of the quantum gauge theory selects exactly one
+temporal dimension within the stated premises, giving spacetime
+signature `(3,1)`.
 
 ## Audit-lane handoff
 
@@ -362,10 +364,11 @@ is inherited from admission (iv). The honest decomposition is:
 
 - **Net effect:** `d_t = 1` follows by combining the two — Step 3
   forces `d_t in {odd positives}` and admission (iv) excludes `d_t > 1`.
-  Neither step alone forces `d_t = 1`. The title "Anomaly forces 3+1
-  spacetime" is shorthand for the compound derivation; the literal
-  forcing is "ABJ + chirality + single-clock real-time evolution
-  force `d_t = 1` and hence signature (3,1)".
+  Neither step alone forces `d_t = 1`. The former title "Anomaly
+  forces 3+1 spacetime" was only shorthand for the compound conditional
+  chain; the literal content is "ABJ + chirality + single-clock
+  real-time evolution select `d_t = 1` and hence signature (3,1)"
+  within the stated premises.
 
 Why this matters for audit framing: admission (iv)'s real-time Lorentzian
 presupposition is itself derived in the single-clock theorem from
@@ -409,7 +412,7 @@ ABJ admission:
       => [AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03 (on main; PR 418 merged 2026-05-03)]
       => single-clock codimension-1 evolution excludes d_t > 1
       => d_t = 1 uniquely
-      => spacetime is 3+1 dimensional.  QED.
+      => within the stated bridge, spacetime signature is (3,1).  QED.
 
 On current `main`, three of the four bridge premises above are citations
 to companion notes (NATIVE_GAUGE_CLOSURE_NOTE [proposed_retained],

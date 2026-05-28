@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 560 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1194 |
+| unaudited | 1193 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 860 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1424 |
+| `unaudited` | 1423 |
 
 | claim_type | count |
 |---|---:|
@@ -1000,6 +1000,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3722,6 +3723,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The cached runner and direct rerun pass five checks: exact denominator, t-prefactor 2/sqrt(pi), <1/v>=5/sqrt(pi), <1/v^2>=25/2, and reduction of the former grid-average object to one continuum integral target. An independent symbolic substitution t=a v^2 gives normalized t-weight 2*sqrt(t)*exp(-t)/sqrt(pi) and sqrt(a)=5/2 at x_f=25.  _(class `A`)_
 - **chain closes:** True — The sole one-hop dependency is retained-bounded and supplies the normalization constants and Sommerfeld argument convention. The row's runner and independent symbolic check verify only the integral representation and moment identities; the open selector/integral-evaluation problem remains outside the audited closure.
 - **rationale:** Clean bounded retention is appropriate after strict scope narrowing. The title says full closure, but the body and runner only close an exact integral representation and low-order moments on the declared same-surface slice. The independent change-of-variables audit confirms the normalized MB measure transforms to (2/sqrt(pi))*sqrt(t)*exp(-t) dt and the Sommerfeld argument becomes alpha_eff*sqrt(a/t). The source explicitly states current-bank selector closure remains open, so no downstream DM closure or Sommerfeld physics is smuggled into the verdict.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic monotonicity check for the stated Sommerfeld derivative identities and the stated channel-weighted integrand 64 f_att'(8y)+f_rep'(y): h(y)=e^(2y)-2y e^y-1 has h(0)=0 and h'(y)=2 e^y(e^y-1-y)>0 for y>0, giving f_att'(y)>1/2, f_rep'(y)>-1/2, and a positive pointwise derivative. The full same-surface DM-ratio monotonicity claim is not cleanly audited without a one-hop retained authority or explicit formula for the 64:1 channel-weighted ratio surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-dm-thermal-monotonicity-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The pointwise derivative bound 64 f_att'(8y)+f_rep'(y)>63/2 is used to conclude that the exact same-surface thermal DM ratio is strictly increasing in alpha.  _(class `A`)_
+- **chain closes:** False — The derivative identities and positivity proof close algebraically, but the restricted packet does not contain the promised channel-weight authority or an explicit retained formula tying the same-surface DM ratio to the 64:1 weighted attractive/repulsive Sommerfeld terms. Without that bridge, the final DM-ratio monotonicity conclusion is conditional on an unstated one-hop input.
+- **rationale:** Independent algebra verifies the runner's core identities: f_att'(y)-1/2 and f_rep'(y)+1/2 both reduce to h(y)/(2(e^y-1)^2), and h'(y)=2 e^y(e^y-1-y)>0 makes h(y)>0 for y>0. The cached runner reports PASS=5 FAIL=0 and is consistent with that algebra. However, the source itself says the 64:1 same-surface channel-weight assignment is documented separately, while the ledger row exposes only the thermal-integral and Maxwell-Boltzmann/Sommerfeld normalization dependencies. The clean theorem burden for the full same-surface DM ratio therefore is not met in the restricted packet.
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`

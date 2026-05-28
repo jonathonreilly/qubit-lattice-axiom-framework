@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gravity_sign_well_hill_diagnostic.py
-runner_sha256: a190eca8ca7eb6e7376a0f108310b12f3ba9081a8d7568ede81553f7562ef8a3
+runner_sha256: cd6f3369f8a163536527828be220df13b433c3354fabc0935e7dc6b277a70688
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 Gravity sign well/hill diagnostic
@@ -12,6 +12,10 @@ Gravity sign well/hill diagnostic
   [PASS] note boundary contains: No graph self-gravity result.
   [PASS] note boundary contains: No irregular-graph directional observable closure.
   [PASS] note boundary contains: No retained verdict and no direct ledger retag.
+  [PASS] note boundary contains: lapse-closure part is open
+  [PASS] note boundary contains: explicit
+
+Bounded claim (no regularization applied; identity + parity only):
   [PASS] identity well: norm conserved  (norm=1.000000000000)
   [PASS] identity well: direction TOWARD  (disp=+1.504366)
   [PASS] identity hill: norm conserved  (norm=1.000000000000)
@@ -20,16 +24,17 @@ Gravity sign well/hill diagnostic
   [PASS] parity well: direction TOWARD  (disp=+1.838085)
   [PASS] parity hill: norm conserved  (norm=1.000000000000)
   [PASS] parity hill: direction AWAY  (disp=-0.044294)
-  [PASS] lapse well: norm conserved  (norm=1.000000000000)
-  [PASS] lapse well: direction TOWARD  (disp=+0.258871)
-  [PASS] lapse hill: norm conserved  (norm=1.000000000000)
-  [PASS] lapse hill: direction AWAY  (disp=-0.625120)
   [PASS] identity is negative control: well and hill both TOWARD
   [PASS] parity distinguishes well from hill
-  [PASS] lapse distinguishes well from hill
+
+OPEN lapse diagnostic (NOT part of the bounded claim):
+  Explicit lapse regularization: N -> max(N, 0.01) before sqrt(N).
+  lapse well: TOWARD  disp=+0.258871  norm=1.000000000000  [FLOOR ACTIVE: 15 sites with N<=0, min N=-79.0000]
+  lapse hill: AWAY  disp=-0.625120  norm=1.000000000000  [no floor needed: min N=1.2658]
+  NOTE: the lapse well/hill split depends on the explicitly floored, non-positive lapse above. It does NOT close against the cited lapse form and is OPEN. See docs/GRAVITY_SIGN_AUDIT_2026-04-10.md.
 
 Gravity sign well/hill diagnostic: PASS
-PASS=20 FAIL=0
+PASS=17 FAIL=0
 
 ----- stderr -----
 

@@ -14656,46 +14656,24 @@
       "verdict_rationale": null
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-28T01:20:05.291284+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "Bounded measure-theoretic norm-square identity, real non-negativity, and induced Hermitian positive semidefinite sesquilinear form for (X, \u03bc, \u0398, S_+, F) under the stated \u0398-invariance and reflection-Hermiticity assumptions.",
-          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
-        },
-        "dep_claim_type": {
-          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "bounded_theorem",
-          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained_bounded",
-          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
-        },
-        "deps": [
-          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-          "staggered_only_det_positivity_case_a_note_2026-05-17"
-        ],
-        "load_bearing_score": 27.307,
-        "runner_hash": "1aa86e6405b426846c48264d883264cdb522b0de340442d6594fe3d1dc8fed2f",
-        "transitive_descendants": 895
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The primary runner closes the narrow single-step counterexample, and the retained one-hop dependencies close determinant positivity plus an abstract norm-square lemma. They do not construct the 2-step blocked staggered-KS transfer matrix or prove its positivity from the repo packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_scope": "Bounded source-surface repair for staggered-only reflection positivity: the row correctly records a finite-runner counterexample to direct single-step spin-basis Lagrangian RP under Sharatchandra Theta alone, and it narrows the intended positive surface to a 2-step blocked staggered-KS formulation. The 2-step blocked transfer-matrix positivity theorem itself is not audited as closed by this row.",
-      "claim_type": "bounded_theorem",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-28T01:20:05.291284+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -14704,19 +14682,19 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 35,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 27.339,
-      "load_bearing_step": "The note replaces the prior single-step Lagrangian RP claim with the statement that the standard staggered-KS positive surface is the 2-step blocked transfer matrix T_hat^2=S_hat^2, while the primary runner shows the direct single-step spin-basis Gram matrix is non-PSD.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "1a5924143c0cd8d84222894b3cb09d0b15ec1cd1913d40dd4f87e85e84641f4a",
+      "note_hash": "51dbcdf8971241642e812c745c184a6dc44d6cb04b15ba355c3d41a01cc3b5c7",
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: create or wire an audit-clean 2-step blocked staggered-KS transfer-matrix theorem that derives positivity of T_hat^2=S_hat^2 on the 2-step physical Hilbert space; keep the single-step no-go as a separate bounded negative witness.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -15241,22 +15219,76 @@
             "total_pass": 5
           },
           "verdict_rationale": "E1-E5 pass, but they are finite representative structural checks: free staggered transfer matrices, a truncated U(1) plaquette, finite Fock-space RP samples, a finite Gram matrix, and finite anticommutation checks. They do not compute or prove the load-bearing arbitrary compact SU(3) gauge-half boundary factorization or the staggered Grassmann half-action reflection-positive factorization. E6 is correctly diagnostic-only and cannot carry the theorem. The narrowed Wilson-excluding scope is appropriate, but the proof still imports missing reflection-positivity bridge theorems beyond the cited retained inputs."
+        },
+        {
+          "archived_at": "2026-05-28T17:58:08.790236+00:00",
+          "archived_for_note_hash": "1a5924143c0cd8d84222894b3cb09d0b15ec1cd1913d40dd4f87e85e84641f4a",
+          "audit_date": "2026-05-28T01:20:05.291284+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "Bounded measure-theoretic norm-square identity, real non-negativity, and induced Hermitian positive semidefinite sesquilinear form for (X, \u03bc, \u0398, S_+, F) under the stated \u0398-invariance and reflection-Hermiticity assumptions.",
+              "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+            },
+            "dep_claim_type": {
+              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "bounded_theorem",
+              "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained_bounded",
+              "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+            },
+            "deps": [
+              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+              "staggered_only_det_positivity_case_a_note_2026-05-17"
+            ],
+            "load_bearing_score": 27.307,
+            "runner_hash": "1aa86e6405b426846c48264d883264cdb522b0de340442d6594fe3d1dc8fed2f",
+            "transitive_descendants": 895
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The primary runner closes the narrow single-step counterexample, and the retained one-hop dependencies close determinant positivity plus an abstract norm-square lemma. They do not construct the 2-step blocked staggered-KS transfer matrix or prove its positivity from the repo packet.",
+          "claim_scope": "Bounded source-surface repair for staggered-only reflection positivity: the row correctly records a finite-runner counterexample to direct single-step spin-basis Lagrangian RP under Sharatchandra Theta alone, and it narrows the intended positive surface to a 2-step blocked staggered-KS formulation. The 2-step blocked transfer-matrix positivity theorem itself is not audited as closed by this row.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T01:20:05.291284+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The note replaces the prior single-step Lagrangian RP claim with the statement that the standard staggered-KS positive surface is the 2-step blocked transfer matrix T_hat^2=S_hat^2, while the primary runner shows the direct single-step spin-basis Gram matrix is non-PSD.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: create or wire an audit-clean 2-step blocked staggered-KS transfer-matrix theorem that derives positivity of T_hat^2=S_hat^2 on the 2-step physical Hilbert space; keep the single-step no-go as a separate bounded negative witness.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 9,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 1
+          },
+          "verdict_rationale": "Issue: the source's positive replacement claim rests on the 2-step blocked staggered-KS transfer-matrix theorem cited to external literature, but the restricted packet provides no retained theorem or runner that constructs T_hat^2=S_hat^2 and proves positivity on the claimed 2-step physical Hilbert space. Why this blocks: the primary runner verifies a narrow negative result for the single-step Sharatchandra-Theta spin-basis Gram matrix; a counterexample to the removed surface does not by itself prove the replacement 2-step RP theorem. Repair target: add or wire a retained 2-step blocked staggered-KS transfer-matrix bridge, with a runner/proof that constructs the blocked Hilbert space, transfer matrix, reflection map, and positivity statement rather than citing them. Claim boundary until fixed: the direct single-step spin-basis Lagrangian RP surface under Sharatchandra Theta alone has a finite non-PSD witness; determinant positivity and the abstract norm-square lemma remain available on their audited narrow scopes, but full 2-step RP remains conditional."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 9,
+        "C": 0,
         "D": 0,
-        "total_fail": 0,
-        "total_pass": 1
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py",
-      "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation",
+      "title": "Axiom-First Reflection Positivity: Single-Step Spin-Basis No-Go (Staggered-Only)",
       "transitive_descendants": 915,
-      "verdict_rationale": "Issue: the source's positive replacement claim rests on the 2-step blocked staggered-KS transfer-matrix theorem cited to external literature, but the restricted packet provides no retained theorem or runner that constructs T_hat^2=S_hat^2 and proves positivity on the claimed 2-step physical Hilbert space. Why this blocks: the primary runner verifies a narrow negative result for the single-step Sharatchandra-Theta spin-basis Gram matrix; a counterexample to the removed surface does not by itself prove the replacement 2-step RP theorem. Repair target: add or wire a retained 2-step blocked staggered-KS transfer-matrix bridge, with a runner/proof that constructs the blocked Hilbert space, transfer matrix, reflection map, and positivity statement rather than citing them. Claim boundary until fixed: the direct single-step spin-basis Lagrangian RP surface under Sharatchandra Theta alone has a finite non-PSD witness; determinant positivity and the abstract norm-square lemma remain available on their audited narrow scopes, but full 2-step RP remains conditional."
+      "verdict_rationale": null
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "audit_date": null,
@@ -313878,8 +313910,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "If the top coefficient is the component amplitude of the unique permutation-invariant unit source on the six Q_L color-isospin components, then every component amplitude is 1/sqrt(6).",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "f68373ee60eb16ec56df495a23e862308fdd72c73116a572e88f34e842a5f296",
       "note_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
       "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the strict top response coefficient equals the democratic Q_L component amplitude, or split this into a pure exact support lemma with explicit direct dependencies for the Q_L carrier dimension.",
@@ -314040,8 +314072,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "Projective readout of the democratic Q_L ray gives component weight 1/6, while a signed linear source/action tangent gives component amplitude 1/sqrt(6); identifying the physical top Yukawa coefficient with that tangent remains the candidate bridge.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "49511525b9ba33e0d699172a3d38699d3ad7f644fcad69c2eff394ba44ef0972",
       "note_path": "docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md",
       "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the physical top response coefficient is the signed linear democratic Q_L source tangent, or keep this as exact support with explicit direct dependencies for the source-action, LSP, and democratic-source inputs.",
@@ -317911,8 +317943,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2413,
-    "re_audit_required": 8,
+    "preserved_existing": 2420,
+    "re_audit_required": 1,
     "row_count": 2465,
     "seeded_new": 0
   }

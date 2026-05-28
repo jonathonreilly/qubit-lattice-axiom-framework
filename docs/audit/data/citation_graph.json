@@ -42569,18 +42569,18 @@
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29": {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [
         "staggered_only_det_positivity_case_a_note_2026-05-17",
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1a5924143c0cd8d84222894b3cb09d0b15ec1cd1913d40dd4f87e85e84641f4a",
+      "note_hash": "51dbcdf8971241642e812c745c184a6dc44d6cb04b15ba355c3d41a01cc3b5c7",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py",
-      "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation"
+      "title": "Axiom-First Reflection Positivity: Single-Step Spin-Basis No-Go (Staggered-Only)"
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17",
@@ -86443,19 +86443,19 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 642,
+      "bounded_theorem": 641,
       "decoration": 1,
       "meta": 192,
-      "no_go": 85,
+      "no_go": 86,
       "none": 1440,
       "open_gate": 50,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1058,
+      "bounded_theorem": 1057,
       "decoration": 1,
       "meta": 192,
-      "no_go": 188,
+      "no_go": 189,
       "none": 426,
       "open_gate": 127,
       "positive_theorem": 587

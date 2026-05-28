@@ -1,11 +1,63 @@
-# Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation
+# Axiom-First Reflection Positivity: Single-Step Spin-Basis No-Go (Staggered-Only)
 
 **Date:** 2026-04-29 (original); 2026-05-26 (staggered-only narrowing);
 2026-05-27 (single-step spin-basis no-go acknowledgment + 2-step
-narrowing).
-**Type:** bounded_theorem
+narrowing); 2026-05-28 (retyped to no_go per audit verdict; 2-step
+positivity demoted to non-load-bearing literature context).
+**Type:** no_go
 **Loop:** `axiom-first-foundations`
 **Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (retype to no_go)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The primary runner closes the narrow single-step counterexample,
+> and the retained one-hop dependencies close determinant positivity
+> plus an abstract norm-square lemma. They do not construct the 2-step
+> blocked staggered-KS transfer matrix or prove its positivity from
+> the repo packet."*
+
+Repair instruction: *"create or wire an audit-clean 2-step blocked
+staggered-KS transfer-matrix theorem that derives positivity of
+T_hat^2 = S_hat^2 ... keep the single-step no-go as a separate bounded
+negative witness."*
+
+Deriving the 2-step blocked positivity in-repo is substantive new work
+(the STW 1981 / Palumbo 2002 construction is a real research target,
+not a one-line wiring) and is out of scope for a review-loop PR. This
+repair takes the auditor's offered alternative — **keep the single-step
+no-go as the load-bearing negative witness** — and retypes the row
+accordingly:
+
+- `claim_type`: `bounded_theorem` -> `no_go`. The load-bearing content
+  of this row is the **proven negative result** that direct single-step
+  spin-basis Lagrangian RP for staggered KS under Sharatchandra Theta
+  alone is non-PSD (runner-verified, free U=1 min eigenvalue -0.80).
+- The **2-step `T_hat^2` positivity is demoted to non-load-bearing
+  literature context** (STW 1981 / Palumbo 2002 / Smit §6 /
+  Caracciolo-Palumbo 2013). This note does **not** derive it; it is
+  recorded only as the standard published resolution surface. A future
+  PR that constructs the 2-step positivity in-repo can re-promote a
+  positive companion row.
+
+### Convention note (settled 2026-05-28)
+
+A 2026-05-27 attempt (PR #2084) tried to retract this no-go by claiming
+the Berezin contraction convention was wrong. That retraction was
+**itself incorrect** and was rejected by review-loop. The settled
+convention, verified from a first-principles brute-force Berezin
+integral (measure normalization cancels in the ratio): for
+`S = bar(chi) M chi` with `exp(-S)`,
+
+```text
+<chi_b bar(chi)_a>  =  (M^{-1})[b, a],
+<bar(chi)_a chi_b>  =  -(M^{-1})[b, a].
+```
+
+The on-main no-go runner uses this correct convention and reproduces
+the non-PSD Gram. The single-step no-go is genuine, not a convention
+artifact.
 **Primary runner:** [`scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py`](../scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py)
 (no-go demonstration: single-step Lagrangian RP for staggered KS in
 spin basis is verifiably non-PSD; this is the load-bearing exhibit for
@@ -43,18 +95,28 @@ that this claim cannot be derived in that surface:
   192 (1981) 205). Smit's *Introduction to QFT on a Lattice*, §6,
   documents this as the standard treatment.
 
-This repair therefore takes the **2-step narrowing path**:
+This 2026-05-27 revision took a "2-step narrowing" framing in which the
+2-step positivity was treated as the load-bearing positive claim. The
+**2026-05-28 retype above supersedes that framing**: the load-bearing
+content of this row is now the single-step no_go (runner-verified), and
+the 2-step positivity is non-load-bearing literature context (the
+audit verdict correctly flagged that the 2-step positivity was claimed
+but not derived in-repo). The bullets below are kept for provenance but
+read under the 2026-05-28 retype:
 
-- the load-bearing positive claim is the 2-step blocked formulation;
+- the load-bearing claim is the **single-step no_go** (Gram non-PSD),
+  not the 2-step positivity;
 - the direct single-step spin-basis Lagrangian RP surface under
-  Sharatchandra Theta alone is explicitly declared out-of-scope and is
-  no-go per the cached runner;
+  Sharatchandra Theta alone is the proven negative result per the
+  cached runner;
+- the 2-step blocked positivity is literature context (STW 1981 /
+  Palumbo 2002 / Smit), not derived here, not load-bearing;
 - Hamiltonian-level positivity exhibits in the secondary runner are
   kept as structural finite-block consistency checks, not as a
-  proof of the single-step Lagrangian RP claim.
+  proof of any Lagrangian RP claim.
 
 The Wilson-fermion subsurface remains out of scope per the 2026-05-26
-narrowing. This note continues to claim only the staggered-only
+narrowing. This note continues to address only the staggered-only
 fermion sector.
 
 This source note does not set or predict an audit outcome; later
@@ -62,23 +124,29 @@ status is generated by the audit pipeline after independent review.
 
 ## Scope
 
-In scope (load-bearing):
+In scope (load-bearing — the no_go):
 
 - finite lattice blocks with the parent temporal-link reflection map
   `theta(t, x_vec) = (-1 - t, x_vec)`;
 - compact `SU(3)` Wilson plaquette gauge links with Haar measure;
 - Kogut-Susskind staggered fermions with positive real mass
   `M = M_KS + m I`, `m > 0`;
-- the **2-step blocked transfer matrix** `T_hat^2` over two lattice
-  spacings, as in Palumbo 2002 / Sharatchandra-Thun-Weisz 1981 / Smit;
-- polynomial observables supported in the positive-time half that are
-  invariant under the 2-step blocking.
+- the **negative result** that the direct single-step spin-basis
+  Lagrangian RP Gram matrix on this surface is non-PSD (runner-verified);
+- polynomial observables supported in the positive-time half (the
+  Gram-matrix test surface).
+
+Literature context (NOT load-bearing on this row):
+
+- the **2-step blocked transfer matrix** `T_hat^2` positivity as in
+  Palumbo 2002 / Sharatchandra-Thun-Weisz 1981 / Smit — cited as the
+  published resolution surface, not derived in this repo.
 
 Out of scope (removed from this row's claim surface):
 
-- **single-step** spin-basis Lagrangian RP for staggered KS under
-  Sharatchandra Theta alone (the load-bearing no-go runner documents
-  this);
+- a **positive** single-step spin-basis Lagrangian RP theorem for
+  staggered KS under Sharatchandra Theta alone (this row proves the
+  opposite — the no_go);
 - Wilson-fermion operators `M_KS + M_W + m I`;
 - symmetric-canonical Wilson determinant bridges;
 - configuration-by-configuration Wilson-fermion determinant positivity;
@@ -108,40 +176,55 @@ not import any fitted value, observed target value, literature
 numerical comparator, same-surface family selector, or admitted unit
 convention.
 
-## Statement (2-step blocked formulation)
+## Load-bearing statement (no_go)
 
-Let `A_+^(2)` be the polynomial algebra generated by gauge and
-staggered fermion fields supported in the positive-time half and
-invariant under the 2-step blocking (one block = two lattice
-spacings). On the staggered-only action surface
+On the staggered-only action surface
 
 ```text
     S = S_G[U] + bar(chi) (M_KS[U] + m I) chi,        m > 0,
 ```
 
-the 2-step blocked transfer matrix `T_hat^2 = S_hat^2` over two
-lattice spacings is positive Hermitian on the 2-step physical Hilbert
-space `H_phys^(2)`. With vacuum-energy subtraction,
+with the temporal link-reflection `theta(t, x) = (-1-t, x)` and the
+Sharatchandra fermion reflection convention, the **direct single-step
+spin-basis Lagrangian reflection-positivity Gram matrix**
 
 ```text
-    T_hat_tilde^2 := T_hat^2 / lambda_max(T_hat^2),
-    H_hat_tilde   := -log(T_hat_tilde^2) / (2 a_tau),
+    G_{IJ} = <Theta(F_I) F_J>_S,    F_I in A_+ (positive-time half),
 ```
 
-one has `||T_hat_tilde^2|| = 1` and `H_hat_tilde >= 0`, i.e., the
-2-step-blocked lattice energy spectrum is non-negative.
+computed with the correct Berezin contraction
+`<bar(chi)_a chi_b> = -(M^{-1})[b,a]`, is **not positive semidefinite**.
+The primary runner exhibits a free-configuration counterexample with
+minimum eigenvalue `-0.80` and PSD failure in 5/5 sampled U(1)
+configurations. This is the load-bearing negative result of this row.
 
-This is the standard staggered-KS result of Sharatchandra-Thun-Weisz
-(Nucl. Phys. B 192 (1981) 205) and Palumbo (Phys. Rev. D 66 (2002)
-077503), summarised in Smit, *Intro. to QFT on a Lattice*, §6 as
-`T_hat_4 = S_hat_4^2` (transfer matrix over two lattice spacings).
+The mechanism is structural (see §"Single-step no-go" below): the
+staggered spatial phase `eta_1(x) = (-1)^{t_x}` flips sign across the
+reflection plane and the Sharatchandra Theta carries no compensating
+phase, so the single-step spin-basis action is not reflection-positive
+under Theta alone.
 
-This source note does not reproduce those proofs; it cites them as
-the published authorities for the 2-step formulation. The
-load-bearing in-scope content of this row is the **explicit
-acknowledgment that single-step Lagrangian RP fails** (load-bearing
-no-go runner) **plus the scope statement** that the 2-step block
-formulation is the correct surface, with citations.
+## Literature context (NOT load-bearing on this row)
+
+The standard lattice-QFT resolution of single-step staggered RP
+failure is the **2-step blocked transfer matrix** `T_hat^2 = S_hat^2`
+over two lattice spacings, on which a positive Hermitian transfer
+operator and a non-negative subtracted energy spectrum are obtained.
+This is the result of Sharatchandra-Thun-Weisz (Nucl. Phys. B 192
+(1981) 205) and Palumbo (Phys. Rev. D 66 (2002) 077503), summarised in
+Smit, *Intro. to QFT on a Lattice*, §6 as `T_hat_4 = S_hat_4^2`, with
+the single-step spin-basis difficulty noted in Caracciolo-Palumbo
+(Phys. Rev. D 87 (2013) 014507, arXiv:1210.1786).
+
+**This row does not derive the 2-step positivity.** The 2-step result
+is recorded here only as the published resolution surface, explicitly
+**non-load-bearing** for this no_go row. Constructing and proving the
+2-step `T_hat^2` positivity in-repo (per the 2026-05-28 audit
+instruction) is a separate future-work target; a positive companion
+row can be promoted when that construction lands. Downstream consumers
+that need positive staggered RP should treat the 2-step positivity as
+literature-cited, not as a retained in-repo theorem, until that
+companion row exists.
 
 ## Single-step no-go (load-bearing on the runner)
 
@@ -299,24 +382,27 @@ narrow no-go.
 
 ## Honest Status
 
-Branch-local source-surface repair. The narrowed source claim is a
-**2-step blocked** staggered-only reflection-positivity theorem
-proposal for independent re-audit, with an explicit single-step
-no-go runner that documents the failure of the prior overreach. It
-is not an author-applied audit promotion.
+Branch-local source-surface repair. The load-bearing claim is a
+**no_go**: the direct single-step spin-basis Lagrangian RP Gram matrix
+for staggered KS under Sharatchandra Theta is non-PSD (runner-verified,
+correct Berezin convention). It is not an author-applied audit
+promotion.
 
-What this can support if audit passes:
+What this row supports:
 
-- downstream claims that need reflection positivity for the standard
-  staggered-KS lattice (interpreted as 2-step blocked) can continue
-  to cite this row;
-- downstream claims that load-bear specifically on **single-step**
-  Lagrangian RP in the spin basis must be re-audited against the
-  no-go runner here.
+- a terminal negative witness: downstream claims must NOT assume
+  single-step spin-basis Lagrangian RP for staggered KS holds;
+- a pointer to the literature 2-step resolution (non-load-bearing).
 
-What this does not support:
+What this row does NOT support:
 
-- a full single-step staggered RP theorem (no-go per primary runner +
-  Caracciolo-Palumbo 2013);
+- a positive single-step staggered RP theorem (this row proves the
+  no_go);
+- an in-repo-derived 2-step `T_hat^2` positivity (literature-cited
+  only; a future companion row can derive and promote it);
 - a full staggered + Wilson-fermion RP theorem;
 - an unconditional Wilson-sector determinant positivity statement.
+
+Downstream consumers that previously cited this row for *positive*
+staggered RP must re-audit: the positive content is now literature-
+context only, pending a derived 2-step companion row.

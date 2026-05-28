@@ -19893,6 +19893,18 @@
       "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     },
     {
+      "from": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+      "to": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
+    },
+    {
+      "from": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
+      "from": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
       "from": "p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27",
       "to": "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
     },
@@ -68126,6 +68138,22 @@
       "runner_path": "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py",
       "title": "Finite-Dimensional Spectral Wick-Rotation Bridge from Framework Companions Narrow Theorem"
     },
+    "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28": {
+      "claim_id": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c6ebffe8a303e65db036ce20a059795f9d246aa19c18d6e71225f9c676550a06",
+      "path": "docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md",
+      "runner_path": "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py",
+      "title": "P2 Phase-Positive Support from the RP Transfer-Matrix Trace Bridge"
+    },
     "p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27": {
       "claim_id": "p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27",
       "claim_type_author_hint": "bounded_theorem",
@@ -86418,7 +86446,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 645,
+      "bounded_theorem": 646,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86427,7 +86455,7 @@
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1060,
+      "bounded_theorem": 1061,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86435,10 +86463,10 @@
       "open_gate": 127,
       "positive_theorem": 585
     },
-    "edge_count": 9861,
+    "edge_count": 9864,
     "leaf_count": 807,
-    "node_count": 2579,
+    "node_count": 2580,
     "root_count": 855,
-    "runners_with_path": 2154
+    "runners_with_path": 2155
   }
 }

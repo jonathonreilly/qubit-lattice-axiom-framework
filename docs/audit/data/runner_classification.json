@@ -16752,6 +16752,18 @@
       "dominant_class": "A",
       "runner": "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py"
     },
+    "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py"
+    },
     "p2_wick_rotation_sign_epsilon_closure_narrow_theorem_note_2026-05-27": {
       "assert_count": 1,
       "counts": {
@@ -54126,6 +54138,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py": {
+      "assert_count": 1,
+      "claims": [
+        "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/p2_wick_rotation_sign_epsilon_closure_runner_2026_05_27.py": {
       "assert_count": 1,
       "claims": [
@@ -56853,12 +56880,12 @@
     "dominant_class_distribution": {
       "A": 256,
       "B": 293,
-      "C": 762,
+      "C": 763,
       "D": 303,
       "none": 435
     },
-    "runners_classified": 2049,
-    "runners_with_C": 998,
+    "runners_classified": 2050,
+    "runners_with_C": 999,
     "runners_with_D": 603
   }
 }

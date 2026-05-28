@@ -287660,24 +287660,54 @@
       "verdict_rationale": null
     },
     "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T01:56:58.249505+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "no_go",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "plaquette_self_consistency_note",
+          "yt_ew_color_projection_theorem",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.014,
+        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+        "transitive_descendants": 516
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic coefficient checks close: the SU(N_c) Fierz singlet coefficient is 1/(2N_c), the Q_L scalar-singlet normalization gives Z^2=N_c N_iso=6 and 1/sqrt(6), and the strong-coupling one-link route gives a distinct 1/N_c^2 coefficient. The domain-selection step that makes the perturbative coefficient govern the canonical surface uses alpha_LM from the canonical plaquette surface, while the one-hop plaquette authority explicitly withholds a derivation/certificate of the canonical 0.5934 readout.",
       "claim_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Subordinate Ward-identity support comparing the perturbative color-singlet coefficient C_pert=1/(2N_c) with the strong-coupling coefficient C_strong=1/N_c^2, and arguing that the perturbative coefficient is the relevant leading input on the tadpole-improved canonical surface.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T01:56:58.249505+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -287688,22 +287718,27 @@
         "plaquette_self_consistency_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 12.014,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The exact SU(3) Fierz algebra gives C_pert=1/(2N_c)=1/6 and the Haar one-link strong-coupling route gives C_strong=1/N_c^2=1/9, but selecting C_pert as governing the canonical tadpole-improved surface depends on the canonical plaquette/alpha_LM bridge.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d8e2d7f0a182335907e13c2e4e234f3988f855585e4c731c43c442bdba4fa9e6",
       "note_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained canonical-surface bridge for the plaquette/u0/alpha_LM input and perturbative-domain selection, and rewire the superseded minimal_axioms_2026-04-11 dependency to current open-gate authorities.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "scripts/canonical_plaquette_surface.py"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.370019+00:00",
@@ -287793,18 +287828,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 44,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 44
       },
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "UV Gauge-to-Yukawa Bridge: Subordinate Support Note",
       "transitive_descendants": 516,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: exact Fierz, Haar, Clifford, and H_unit normalization algebra closes, but the support note's canonical-surface selection of the perturbative coefficient imports alpha_LM/u0 from the canonical plaquette surface and still cites a superseded minimal-axioms surface. Why this blocks: the direct plaquette authority is retained only for the finite bounded observable/diagnostic and explicitly says the canonical 0.5934 value is an admitted comparison/reuse number, not a retained derivation; the source therefore cannot independently certify that the perturbative expansion governs the retained surface. Repair target: replace the superseded minimal-axioms dependency with the current named gates and add a retained canonical-surface bridge deriving or ratifying the plaquette/u0/alpha_LM input and the perturbative-domain selection. Claim boundary until fixed: the row may be used as support for exact finite coefficient algebra and for the parent bounded Ward matrix-element packet, but not as retained authority that the canonical physical y_t bridge is perturbatively governed."
     },
     "v_eff_total_njl_style_bounded_theorem_note_2026-05-10": {
       "audit_date": null,

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 535 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,21 +59,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 829 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1466 |
+| `unaudited` | 1465 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1102 |
+| `bounded_theorem` | 1103 |
 | `decoration` | 51 |
 | `meta` | 234 |
 | `no_go` | 260 |
 | `open_gate` | 111 |
-| `positive_theorem` | 707 |
+| `positive_theorem` | 706 |
 
 | criticality | count |
 |---|---:|
@@ -998,6 +998,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -13655,6 +13656,24 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.  _(class `C`)_
 - **chain closes:** True — The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
+- **auditor confidence:** high
+
+### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`
+
+- **Note:** [`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](../../docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Subordinate Ward-identity support comparing the perturbative color-singlet coefficient C_pert=1/(2N_c) with the strong-coupling coefficient C_strong=1/N_c^2, and arguing that the perturbative coefficient is the relevant leading input on the tadpole-improved canonical surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact SU(3) Fierz algebra gives C_pert=1/(2N_c)=1/6 and the Haar one-link strong-coupling route gives C_strong=1/N_c^2=1/9, but selecting C_pert as governing the canonical tadpole-improved surface depends on the canonical plaquette/alpha_LM bridge.  _(class `C`)_
+- **chain closes:** False — The finite algebraic coefficient checks close: the SU(N_c) Fierz singlet coefficient is 1/(2N_c), the Q_L scalar-singlet normalization gives Z^2=N_c N_iso=6 and 1/sqrt(6), and the strong-coupling one-link route gives a distinct 1/N_c^2 coefficient. The domain-selection step that makes the perturbative coefficient govern the canonical surface uses alpha_LM from the canonical plaquette surface, while the one-hop plaquette authority explicitly withholds a derivation/certificate of the canonical 0.5934 readout.
+- **rationale:** Issue: exact Fierz, Haar, Clifford, and H_unit normalization algebra closes, but the support note's canonical-surface selection of the perturbative coefficient imports alpha_LM/u0 from the canonical plaquette surface and still cites a superseded minimal-axioms surface. Why this blocks: the direct plaquette authority is retained only for the finite bounded observable/diagnostic and explicitly says the canonical 0.5934 value is an admitted comparison/reuse number, not a retained derivation; the source therefore cannot independently certify that the perturbative expansion governs the retained surface. Repair target: replace the superseded minimal-axioms dependency with the current named gates and add a retained canonical-surface bridge deriving or ratifying the plaquette/u0/alpha_LM input and the perturbative-domain selection. Claim boundary until fixed: the row may be used as support for exact finite coefficient algebra and for the parent bounded Ward matrix-element packet, but not as retained authority that the canonical physical y_t bridge is perturbatively governed.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `MINIMAL_AXIOMS_2026-04-11.md`
+  - `MINIMAL_AXIOMS_2026-05-20.md`
+  - `scripts/canonical_plaquette_surface.py`
 - **auditor confidence:** high
 
 ### `valley_linear_action_note`

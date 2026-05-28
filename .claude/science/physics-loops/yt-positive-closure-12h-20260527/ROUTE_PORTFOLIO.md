@@ -10,6 +10,8 @@ The fifth route tested the current microscopic source/backend/carrier/C3
 shortcut to the accepted matrix element.
 The sixth route tested positive real C3 transfer/Perron selection as a
 nontrivial top-line law.
+The forty-third route tested the reversible C3 Markov/Laplacian stochastic
+dynamics refinement of the C3 source-law route.
 The seventh route characterized the residual C3 phase-ordering cone.
 The eighth route pruned reflection-even base dynamics as a derivation of that
 cone.
@@ -105,6 +107,7 @@ normalization conventions can supply the missing unit multiplier `eta=1`.
 | Treat `B_x` alone as coefficient certificate | no-go shortcut test | 2 | Pruned: `P_0` gives `A/sqrt(3)` |
 | Non-mass-ordering C3 top-line law | no-go shortcut test | 3 | Pruned on current real/reflection-even C3 support |
 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | no-go shortcut test | 3 | Pruned as source-derivative shortcut; base dynamics/order still open |
+| Reversible C3 Markov/Laplacian source law | no-go shortcut test | 3 | Pruned: stationary/Perron line is `P_0`, nontrivial block is degenerate, and connected normalization only recovers `B_x` |
 | Strict sparse top/W pole-response evidence | availability audit | 3 | Audited absent on current branch; harness/candidate only |
 | Microscopic backend/projector/matrix-element shortcut | no-go shortcut test | 3 | Pruned: current support does not derive accepted backend, top projector, or source-generator matrix element |
 | Positive real C3 transfer/Perron selection | no-go shortcut test | 3 | Pruned: positivity selects `P_0`, not a nontrivial line |
@@ -292,3 +295,9 @@ variant: ordinary coefficient norms do not select the C3-unit convention.
 Different natural norms produce different eta values on the same carrier and
 C3 data, so eta=1 remains a physical law to derive or bypass with strict pole
 rows.
+The Markov-Laplacian source-law no-go prunes the reversible stochastic C3
+dynamics refinement. The random-walk generator has `P_0` as its
+stationary/Perron line, leaves the nontrivial block degenerate, and connected
+normalization only returns `B_x` up to sign. Positive closure still needs a
+physical top-readout law excluding `P_0`, accepted radial generator dynamics,
+accepted backend/projectors, or strict top/W pole rows.

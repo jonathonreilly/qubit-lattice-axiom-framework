@@ -86,6 +86,10 @@ closed exactly:
   generation-matrix normalization conventions can set different eta values
   (for example eta=1, sqrt(6), or sqrt(2)) and therefore do not derive the
   missing coefficient-to-C3-source law
+  Markov-Laplacian source-law no-go: reversible C3 stochastic dynamics has
+  P_0 as the stationary/Perron line, keeps the nontrivial block degenerate,
+  and connected normalization only recovers B_x up to sign; it does not
+  derive the physical top readout or lambda_top=1/sqrt(2)
   real-irrep dimension top-block no-go: finite real C3 representation theory
   exposes P_0 as the trivial real irrep and P_nt as the faithful
   two-dimensional real irrep, but selecting the faithful/nontrivial summand as
@@ -165,6 +169,10 @@ closed exactly:
   positive real C3 transfer/Perron selection is not a top-line law: it picks
   the C3 singlet Perron line or leaves the nontrivial block degenerate, so it
   does not supply the target nontrivial C3 character line
+  C3 Markov-Laplacian source-law no-go: the reversible C3 random-walk
+  generator sharpens the stochastic dynamics shortcut but still selects P_0
+  as stationary/Perron line, leaves the nontrivial modes degenerate, and
+  after connected normalization supplies only B_x up to sign
   the residual C3 phase-ordering cone is explicit support: nontrivial top-line
   ordering requires y_0 > sqrt(3) x_0 or -y_0 > sqrt(3) x_0, but that cone
   membership is not derived on the actual surface
@@ -236,6 +244,10 @@ still open:
   derive lambda_top=1/sqrt(2) from the neutral Higgs radial 1/sqrt(2) factor
   accepted generation-coefficient normalization/variational law if the route
   tries to derive eta=1 from one-Higgs matrix norm conventions
+  accepted physical top-readout/radial law if the C3 route tries to derive
+  the target row from reversible Markov/Laplacian dynamics, since that
+  dynamics only supplies the real B_x direction and a degenerate nontrivial
+  block
   accepted real-irrep physical top-block law if the C3 route tries to select
   P_nt from faithful/nontrivial real C3 representation facts
   accepted independent physical readout/sign/radial laws, since target-size
@@ -1196,6 +1208,29 @@ next non-compute route is therefore an accepted base C3 circulant dynamics
 theorem with orientation/phase law and top-line ordering, not another source
 normalization argument.
 
+The Markov-Laplacian source-law no-go tests the strongest reversible
+stochastic refinement of that route.  For
+
+```text
+Q_r = r(C+C^2-2I),        L_r = -Q_r,
+```
+
+the spectra are
+
+```text
+Q_r:
+  P_0       -> 0
+  P_omega   -> -3r
+  P_omega2  -> -3r.
+```
+
+The Markov semigroup therefore has `P_0` as its stationary/Perron line, and
+the nontrivial modes remain degenerate.  Removing the identity part and
+normalizing the connected generator gives only the already-derived `B_x` ray
+up to sign.  Thus the reversible Markov/Laplacian shortcut still needs an
+accepted physical top-readout law excluding `P_0`, accepted
+`lambda_top=1/sqrt(2)` radial generator dynamics, or strict top/W pole rows.
+
 The strict sparse top/W pole-response availability audit then checks the
 remaining bypass route on the current branch.  It finds the sparse harness and
 native no-`kappa` candidate, but the strict positive evidence artifacts are
@@ -1736,6 +1771,12 @@ proposal_allowed_reason: |
   three-generation-average conventions give eta values 1, sqrt(6), and
   sqrt(2), respectively. Selecting eta=1 is the missing physical
   coefficient-to-C3-source law, not a consequence of generic normalization.
+  The Markov-Laplacian source-law no-go prunes the reversible stochastic
+  dynamics shortcut: the C3 random-walk generator has P_0 as its stationary
+  Perron line, the nontrivial block is degenerate, and connected source
+  normalization only returns B_x up to sign. It does not derive a physical
+  top-readout law excluding P_0 or the radial factor
+  lambda_top=1/sqrt(2).
   The real-irrep dimension top-block no-go prunes the representation-dimension
   shortcut: finite real C3 representation theory exposes P_nt as the faithful
   two-dimensional summand, but selecting that summand as the physical top block

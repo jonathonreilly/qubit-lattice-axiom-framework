@@ -1,5 +1,38 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 43
+
+Scope:
+
+- C3 Markov-Laplacian source-law no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, finite C3 Markov/Laplacian spectrum, connected source normalization to `B_x`, radial/readout counterfamily, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open Markov-Laplacian-to-top-row law; the stochastic generator selects `P_0` or a degenerate nontrivial block and does not derive `lambda_top=1/sqrt(2)`. |
+| Imports / support | DISCLOSED | Forbidden inputs are absent; open top-readout, radial factorization, backend/projector, and strict pole-row imports are named. |
+| Nature retention | OPEN | No positive closure; proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=108 FAIL=0`
+- Full stack runner: `PASS=557 FAIL=0`
+- Adjacent runners passed: C3 circulant dynamics/source-law boundary
+  `PASS=95`, positive transfer/Perron no-go `PASS=64`, real-record
+  reflection-even source theorem `PASS=76`, nontrivial-block matrix-element
+  support `PASS=85`, same-surface radial-factor no-go `PASS=94`, and strict
+  sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 42
 
 Scope:

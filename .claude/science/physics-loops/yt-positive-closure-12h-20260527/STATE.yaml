@@ -1,24 +1,31 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 28
+supervisor_cycle: 29
 runtime_budget_seconds: 43200
-remaining_campaign_seconds_at_cycle_start: 8727
+remaining_campaign_seconds_at_cycle_start: 7600
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T03:58:21Z"
+last_checkpoint_utc: "2026-05-28T04:16:17Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: one_higgs_generation_coefficient_normalization_no_go
+active_route: c3_markov_laplacian_source_law_no_go
 hard_residual: "derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2), physical zero-singlet top-readout/sign law excluding P_0, or accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
-actual_current_surface_status: no-go / open generation-coefficient normalization law
+actual_current_surface_status: no-go / open Markov-Laplacian-to-top-row law
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Cycle 28 prunes the one-Higgs generation-matrix normalization shortcut. Ordinary coefficient normalizations can set eta=1, sqrt(6), sqrt(2), or leave eta free while preserving the same one-Higgs carrier skeleton, neutral Higgs radial factor, W denominator, and granted C3 response. Selecting eta=1 is therefore the missing coefficient-to-C3-source law, not a consequence of generic matrix norm conventions. Positive closure remains open."
+claim_state_movement: "Cycle 29 prunes the reversible C3 Markov/Laplacian source-law shortcut. The C3 random-walk generator has P_0 as stationary/Perron line, keeps the nontrivial block degenerate, and connected normalization only recovers B_x up to sign. It does not derive the physical top-readout law excluding P_0, lambda_top=1/sqrt(2), accepted backend/projectors, or strict top/W pole rows. Positive closure remains open."
 files_touched:
+  - docs/YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md
+  - scripts/frontier_yt_c3_markov_laplacian_source_law_no_go.py
+  - outputs/yt_c3_markov_laplacian_source_law_no_go_2026-05-28.json
+  - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
+  - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
+  - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
+  - .claude/science/physics-loops/yt-positive-closure-12h-20260527/
   - docs/YT_ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NO_GO_NOTE_2026-05-28.md
   - scripts/frontier_yt_one_higgs_generation_coefficient_normalization_no_go.py
   - outputs/yt_one_higgs_generation_coefficient_normalization_no_go_2026-05-28.json

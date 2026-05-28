@@ -113,6 +113,14 @@ context could only motivate accepting faithful/nontrivial C3 action as a
 physical Y_T top-block law; it does not derive that law on the current
 surface.
 
+The Markov-Laplacian source-law no-go directly diagonalizes the finite
+three-state reversible C3 random-walk generator `Q_r=r(C+C^2-2I)`, checks the
+stationary/Perron `P_0` line, the degenerate nontrivial block, and the
+connected normalization back to `B_x`. No external Markov-chain or graph
+Laplacian reference is load-bearing. External context could only motivate a
+new physical readout/radial law; it does not derive `P_0` exclusion,
+`lambda_top=1/sqrt(2)`, or strict pole rows on the current surface.
+
 The origin/main strict pole-row refresh no-go is a repository-state audit, not
 a literature bridge. It uses fetched git data and finite JSON/schema checks to
 ask whether a strict top/W pole-row packet already exists on mainline. No

@@ -10,21 +10,19 @@ artifact_role: no_go
 next_trace_action: "derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows"
 ```
 
-Cycle 28 tests whether ordinary one-Higgs generation-matrix normalization can
-be promoted into the current campaign's same-surface C3 coefficient/radial law.
+Cycle 29 tests whether a reversible C3 Markov/Laplacian source law can be
+promoted into the current campaign's same-surface top row.
 
-It cannot. The finite witness preserves the one-Higgs carrier skeleton,
-neutral Higgs radial factor, W denominator, and granted C3 response while
-varying the matrix-norm convention:
+It cannot. The finite witness uses
 
 ```text
-C3-unit coefficient:     eta=1
-unit singular/Frobenius: eta=sqrt(6)
-unit three-gen average:  eta=sqrt(2)
+Q_r = r(C+C^2-2I),        L_r = -Q_r.
 ```
 
-Only the first convention gives the target row. Selecting it is therefore the
-missing coefficient-to-C3-source law, not a consequence of generic
-normalization. The first open gate remains an accepted law fixing
-`eta=1`/`lambda_top=1/sqrt(2)`, an accepted zero-singlet top-readout law with
-backend/projectors/matrix elements, or strict top/W pole rows with controls.
+The Markov semigroup has `P_0` as the stationary/Perron line, while the
+nontrivial modes are exactly degenerate. Removing the identity part and
+normalizing the connected generator gives the already-derived `B_x` ray up to
+sign. The first open gate remains an accepted physical top-readout law
+excluding `P_0`, accepted `lambda_top=1/sqrt(2)` radial generator dynamics
+with backend/projectors/matrix elements, or strict top/W pole rows with
+controls.

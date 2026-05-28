@@ -28,6 +28,7 @@
 | Physical top pole/projector | Identifies the sector whose matrix element is read | unsupported import on actual surface | top-sector projector obstruction stack | yes | yes | non-mass-ordering top-line theorem, dynamics, or pole certificate | open blocker |
 | Base C3 circulant dynamics and orientation/phase law | Supplies spectral ordering and isolates physical top line | unsupported import on actual surface | C3 dynamics ordering/source-law boundary | yes | yes | derive microscopic dynamics theorem or strict pole rows | next active blocker |
 | Positive real C3 transfer/Perron top-line selection | Would use positivity to select the physical top line | pruned on current surface | `YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md` | yes | yes | add accepted orientation/phase/top-ordering dynamics or strict pole rows | no-go for positive real shortcut |
+| Reversible C3 Markov/Laplacian source law | Would use stochastic C3 random-walk dynamics plus connected normalization to supply the physical top row | pruned on current surface | `YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md` | yes if used as shortcut | yes for Markov/Laplacian shortcut | derive accepted physical top readout excluding `P_0`, accepted radial generator dynamics, accepted backend/projectors, or strict pole rows | no-go for reversible stochastic dynamics shortcut |
 | Nontrivial C3 phase-ordering cone membership | Places the top line in `P_omega` or `P_omega2` instead of `P_0` | exact support/open import | `YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md` | yes | yes | derive `y_0 > sqrt(3) x_0` or `-y_0 > sqrt(3) x_0` from accepted microscopic dynamics | open blocker |
 | Orientation-odd same-surface C3 phase law | Supplies nonzero `y_0` strong enough to isolate a nontrivial complex line | unsupported import on actual surface; reflection-even route pruned | `YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | derive accepted orientation-odd base dynamics with `|y_0| > sqrt(3) x_0` and W/top matrix elements, or bypass with strict pole rows | open blocker |
 | Quantitative C3 phase-strength law | Upgrades orientation sign/nonzero `B_y` to strict nontrivial cone membership | unsupported import on actual surface; sign-only route pruned | `YT_C3_ORIENTATION_PHASE_STRENGTH_BOUNDARY_NO_GO_NOTE_2026-05-27.md` | yes for C3 route | yes for C3 route | derive accepted same-surface law proving `|y_0| > sqrt(3) x_0` on signed branch | open blocker |
@@ -59,6 +60,10 @@ contain accepted strict pole-response evidence; and the current microscopic
 shortcut does not derive the accepted backend, physical top projector, or
 source-generator matrix element; and positive real C3 transfer/Perron
 selection picks the singlet `P_0` rather than a nontrivial physical top line.
+The reversible C3 Markov/Laplacian refinement is now pruned as well: the
+stochastic generator has `P_0` as stationary/Perron line, keeps the
+nontrivial block degenerate, and connected normalization only returns `B_x`
+up to sign.
 The exact residual C3 phase-ordering cone is now characterized, but accepted
 base-operator cone membership remains open. Reflection-even base dynamics is
 now pruned as a route to that cone because it forces `y_0 = 0`, leaving either

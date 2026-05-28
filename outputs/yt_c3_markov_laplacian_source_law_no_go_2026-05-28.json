@@ -1,0 +1,90 @@
+{
+  "actual_current_surface_status": "no-go / open Markov-Laplacian-to-top-row law",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_backend_projectors_matrix_elements_present": false,
+    "bare_retained_allowed": false,
+    "markov_rate_scale_free_until_physical_calibration": true,
+    "nontrivial_block_degenerate": true,
+    "normalized_connected_generator_is_Bx_up_to_sign": true,
+    "positive_closure_marker_allowed": false,
+    "proposal_allowed": false,
+    "radial_generator_factorization_lambda_top_derived": false,
+    "reversible_c3_markov_laplacian_checked": true,
+    "stationary_perron_line_is_P0": true,
+    "strict_top_w_response_certificate_present": false,
+    "top_line_ordering_derived": false,
+    "zero_singlet_top_readout_derived": false
+  },
+  "claim_id": "yt_c3_markov_laplacian_source_law_no_go_note_2026-05-28",
+  "claim_type": "no_go",
+  "connected_source_normalization_witness": {
+    "P_0_response": "2/sqrt(6)",
+    "P_nt_block_density_response": "-1/sqrt(6)",
+    "P_omega2_response": "-1/sqrt(6)",
+    "P_omega_response": "-1/sqrt(6)",
+    "Q_decomposition": "r*sqrt(6)*B_x - 2*r*sqrt(3)*B_a",
+    "connected_quotient": "r*sqrt(6)*B_x",
+    "unit_connected_generator": "B_x"
+  },
+  "dependency_fail_counts": {
+    "c3_block_support": 0,
+    "c3_dynamics": 0,
+    "c3_perron": 0,
+    "c3_radial_nogo": 0,
+    "c3_real_source": 0,
+    "full_stack": 0,
+    "strict_availability": 0
+  },
+  "fail_count": 0,
+  "forbidden_inputs_used": false,
+  "markov_laplacian_witness": {
+    "L_P0": "0",
+    "L_Pomega": "3*r",
+    "L_Pomega2": "3*r",
+    "Q_P0": "0",
+    "Q_Pomega": "-3*r",
+    "Q_Pomega2": "-3*r",
+    "Q_r": "r*(C+C^2-2I)",
+    "conclusion": "stationary/Perron line is P_0; nontrivial block is degenerate",
+    "semigroup_P0": "1",
+    "semigroup_nontrivial": "exp(-3*r*t)"
+  },
+  "next_exact_action": "derive accepted same-surface readout/radial/backend laws, or produce accepted strict same-source top/W pole rows",
+  "pass_count": 108,
+  "positive_closure_marker_allowed": false,
+  "positive_closure_marker_written": false,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The reversible C3 Markov/Laplacian law has P_0 as stationary/Perron line, leaves the nontrivial block degenerate, and after connected normalization only recovers B_x up to sign. It does not derive the physical top-readout law excluding P_0, lambda_top=1/sqrt(2), accepted backend/projectors, or strict top/W pole rows.",
+  "radial_readout_counterfamily": {
+    "P_0_row": "2*lambda_top*A/sqrt(6)",
+    "P_nt_row": "lambda_top*A/sqrt(6)",
+    "family": "V_top(lambda_top)=lambda_top*A*B_x",
+    "same_source_readout": "lambda_top/sqrt(3)",
+    "target_requires_lambda_top": "1/sqrt(2)",
+    "witnesses": [
+      {
+        "lambda_top": "1/sqrt(2)",
+        "target": false,
+        "top_row": "A/sqrt(3)",
+        "top_support": "P_0"
+      },
+      {
+        "lambda_top": "1",
+        "target": false,
+        "top_row": "A/sqrt(6)",
+        "top_support": "P_nt"
+      },
+      {
+        "lambda_top": "1/sqrt(2)",
+        "target": true,
+        "top_row": "A/sqrt(12)",
+        "top_support": "P_nt"
+      }
+    ]
+  },
+  "reachability_to_target": "prunes",
+  "route_pruned": "reversible C3 Markov/Laplacian dynamics plus connected source normalization supplies the coefficient-bearing top matrix element",
+  "trace_class": "negative_route_pruning"
+}

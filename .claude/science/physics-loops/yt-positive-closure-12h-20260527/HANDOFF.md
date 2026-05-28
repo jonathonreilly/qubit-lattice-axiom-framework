@@ -1,5 +1,51 @@
 # Handoff
 
+Cycle 29 adds a forty-third science block, not positive retained-grade
+closure. The block prunes the shortcut:
+
+```text
+reversible C3 Markov/Laplacian source law
+  + connected source normalization
+  -> coefficient row dM_t/dell = A/sqrt(12).
+```
+
+The finite witness uses `Q_r=r(C+C^2-2I)`. Its Markov semigroup has `P_0` as
+the stationary/Perron line, and its nontrivial modes are degenerate. Removing
+the identity part and normalizing the connected generator gives the
+already-derived `B_x` direction up to sign. The route therefore still does not
+derive the physical top-readout law excluding `P_0`, the radial factor
+`lambda_top=1/sqrt(2)`, accepted backend/projectors, or strict top/W pole
+rows. This is a no-go/route-pruning boundary only. No `POSITIVE_CLOSURE`
+marker was written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 29 artifacts:
+
+- `docs/YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_markov_laplacian_source_law_no_go.py`
+- `outputs/yt_c3_markov_laplacian_source_law_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 29 verification so far:
+
+- `python3 scripts/frontier_yt_c3_markov_laplacian_source_law_no_go.py`
+  -> `SUMMARY: PASS=108 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=557 FAIL=0`
+- Adjacent runners passed: C3 circulant dynamics/source-law boundary
+  `PASS=95`, positive transfer/Perron no-go `PASS=64`, real-record
+  reflection-even source theorem `PASS=76`, nontrivial-block matrix-element
+  support `PASS=85`, same-surface radial-factor no-go `PASS=94`, and strict
+  sparse availability audit `PASS=74`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+- `POSITIVE_CLOSURE` remains absent.
+
+The next exact action remains to derive allowed same-surface
+radial/readout/backend laws without forbidden anchors, or produce accepted
+strict top/W pole rows.
+
 Cycle 28 adds a forty-second science block, not positive retained-grade
 closure. The block prunes the shortcut:
 

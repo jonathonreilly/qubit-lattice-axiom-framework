@@ -20,6 +20,9 @@ Current block artifacts:
 - `docs/YT_C3_POSITIVE_TRANSFER_PERRON_TOP_LINE_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_positive_transfer_perron_top_line_no_go.py`
 - `outputs/yt_c3_positive_transfer_perron_top_line_no_go_2026-05-27.json`
+- `docs/YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_markov_laplacian_source_law_no_go.py`
+- `outputs/yt_c3_markov_laplacian_source_law_no_go_2026-05-28.json`
 - `docs/YT_C3_PHASE_ORDERING_CONE_SUPPORT_BOUNDARY_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_phase_ordering_cone_support_boundary.py`
 - `outputs/yt_c3_phase_ordering_cone_support_boundary_2026-05-27.json`

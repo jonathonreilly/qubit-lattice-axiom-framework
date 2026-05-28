@@ -319,3 +319,11 @@ feed `A/sqrt(12)`.
   scalar, so there is no internal Fisher direction to normalize. Positive
   closure still needs accepted same-surface radial generator dynamics, a
   physical top readout excluding `P_0`, or accepted strict top/W pole rows.
+- New in the forty-third block: reversible C3 Markov/Laplacian dynamics does
+  not certify the physical top row. The random-walk generator
+  `Q_r=r(C+C^2-2I)` has `P_0` as stationary/Perron line and gives a degenerate
+  nontrivial block. After identity quotient and connected normalization it
+  only recovers the already-derived `B_x` ray up to sign. Positive closure
+  still needs an accepted physical readout excluding `P_0`, accepted
+  `lambda_top=1/sqrt(2)` radial generator dynamics, accepted
+  backend/projectors, or strict top/W pole rows.

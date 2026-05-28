@@ -163,6 +163,10 @@ This runner verifies the current burn-down state:
 * The one-Higgs generation-coefficient normalization shortcut is now pruned:
   ordinary matrix-norm conventions set different eta values and do not derive
   the accepted coefficient-to-C3-source law eta=1.
+* The C3 Markov/Laplacian source-law shortcut is now pruned: reversible C3
+  stochastic dynamics has P_0 as its stationary/Perron line, keeps the
+  nontrivial block degenerate, and connected normalization only recovers B_x
+  up to sign, leaving physical top readout and lambda_top=1/sqrt(2) open.
 * No retained/proposed-retained Y_T closure is authorized by this packet.
 """
 
@@ -206,6 +210,7 @@ C3_BLOCK_RANK_RADIAL_NORMALIZATION_NOGO = DOCS / "YT_C3_BLOCK_RANK_RADIAL_NORMAL
 C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NOGO = DOCS / "YT_C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md"
 ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO = DOCS / "YT_ONE_HIGGS_CARRIER_RADIAL_FACTOR_NO_GO_NOTE_2026-05-28.md"
 ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO = DOCS / "YT_ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NO_GO_NOTE_2026-05-28.md"
+C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO = DOCS / "YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md"
 C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO = DOCS / "YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md"
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO = DOCS / "YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md"
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO = DOCS / "YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md"
@@ -293,6 +298,9 @@ ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO_OUT = (
 )
 ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO_OUT = (
     ROOT / "outputs" / "yt_one_higgs_generation_coefficient_normalization_no_go_2026-05-28.json"
+)
+C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO_OUT = (
+    ROOT / "outputs" / "yt_c3_markov_laplacian_source_law_no_go_2026-05-28.json"
 )
 C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO_OUT = (
     ROOT / "outputs" / "yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json"
@@ -413,6 +421,7 @@ def part1_anchors() -> dict[str, str]:
         C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NOGO,
         ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO,
         ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO,
+        C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO,
         C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO,
@@ -484,6 +493,7 @@ def part1_anchors() -> dict[str, str]:
         C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NOGO_OUT,
         ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO_OUT,
         ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO_OUT,
+        C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO_OUT,
         C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO_OUT,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT,
@@ -557,6 +567,7 @@ def part1_anchors() -> dict[str, str]:
         "Fisher quotient radial normalization no-go",
         "one-Higgs carrier radial factor no-go",
         "one-Higgs generation-coefficient normalization no-go",
+        "Markov-Laplacian source-law no-go",
         "real-irrep dimension top-block no-go",
         "source-orientation sign-selector no-go",
         "trace-free centered-source no-go",
@@ -648,6 +659,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_fisher_quotient_radial_normalization_nogo = load_json(C3_FISHER_QUOTIENT_RADIAL_NORMALIZATION_NOGO_OUT)
     one_higgs_carrier_radial_factor_nogo = load_json(ONE_HIGGS_CARRIER_RADIAL_FACTOR_NOGO_OUT)
     one_higgs_generation_coefficient_normalization_nogo = load_json(ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NOGO_OUT)
+    c3_markov_laplacian_source_law_nogo = load_json(C3_MARKOV_LAPLACIAN_SOURCE_LAW_NOGO_OUT)
     c3_real_irrep_dimension_top_block_nogo = load_json(C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NOGO_OUT)
     c3_zero_singlet_top_block_membership_nogo = load_json(C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT)
     c3_source_orientation_sign_selector_nogo = load_json(C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT)
@@ -1011,6 +1023,46 @@ def part2_support_outputs() -> dict[str, Any]:
         .get("eta_unit_frob")
         != one_higgs_generation_coefficient_normalization_nogo.get("matrix_norm_family", {})
         .get("eta_target_c3_unit"),
+    )
+    check(
+        "C3 Markov/Laplacian source-law no-go passed",
+        c3_markov_laplacian_source_law_nogo.get("fail_count") == 0,
+        c3_markov_laplacian_source_law_nogo.get("fail_count"),
+    )
+    check(
+        "C3 Markov/Laplacian source-law route is pruned",
+        c3_markov_laplacian_source_law_nogo.get("trace_class") == "negative_route_pruning",
+        c3_markov_laplacian_source_law_nogo.get("trace_class"),
+    )
+    check(
+        "Markov stationary/Perron line is P0",
+        c3_markov_laplacian_source_law_nogo.get("certificate_boundary", {})
+        .get("stationary_perron_line_is_P0")
+        is True,
+    )
+    check(
+        "Markov nontrivial block remains degenerate",
+        c3_markov_laplacian_source_law_nogo.get("certificate_boundary", {})
+        .get("nontrivial_block_degenerate")
+        is True,
+    )
+    check(
+        "Markov connected normalization only recovers Bx",
+        c3_markov_laplacian_source_law_nogo.get("certificate_boundary", {})
+        .get("normalized_connected_generator_is_Bx_up_to_sign")
+        is True,
+    )
+    check(
+        "Markov/Laplacian no-go does not derive radial factor",
+        c3_markov_laplacian_source_law_nogo.get("certificate_boundary", {})
+        .get("radial_generator_factorization_lambda_top_derived")
+        is False,
+    )
+    check(
+        "Markov/Laplacian no-go keeps strict rows absent",
+        c3_markov_laplacian_source_law_nogo.get("certificate_boundary", {})
+        .get("strict_top_w_response_certificate_present")
+        is False,
     )
     check(
         "C3 real-irrep dimension top-block no-go passed",
@@ -1853,6 +1905,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_fisher_quotient_radial_normalization_nogo": c3_fisher_quotient_radial_normalization_nogo,
         "one_higgs_carrier_radial_factor_nogo": one_higgs_carrier_radial_factor_nogo,
         "one_higgs_generation_coefficient_normalization_nogo": one_higgs_generation_coefficient_normalization_nogo,
+        "c3_markov_laplacian_source_law_nogo": c3_markov_laplacian_source_law_nogo,
         "c3_real_irrep_dimension_top_block_nogo": c3_real_irrep_dimension_top_block_nogo,
         "c3_zero_singlet_top_block_membership_nogo": c3_zero_singlet_top_block_membership_nogo,
         "c3_source_orientation_sign_selector_nogo": c3_source_orientation_sign_selector_nogo,
@@ -2104,7 +2157,7 @@ def main() -> int:
         {
             "step": 6.5,
             "name": "physical top generation projector",
-            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_radial_generator_factorization_remains_open_and_real_block_algebra_sign_choice_trace_free_centering_finite_mininfo_readout_and_real_irrep_dimension_faithfulness_do_not_derive_that_membership_hard_boundary_mininfo_nearest_face_selects_pnt_conditionally_but_nearest_face_readout_law_is_open_and_not_derived_from_current_boundary_geometry_alone_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
+            "status": "corner_label_shortcut_pruned_c3_spectral_projectors_supported_source_direction_now_bx_up_to_sign_nontrivial_top_line_shortcut_pruned_mass_ordering_selects_p0_real_same_surface_non_mass_ordering_shortcut_pruned_nontrivial_block_support_shows_only_zero_singlet_weight_is_needed_for_coefficient_but_radial_generator_factorization_remains_open_and_real_block_algebra_sign_choice_trace_free_centering_finite_mininfo_readout_and_real_irrep_dimension_faithfulness_do_not_derive_that_membership_hard_boundary_mininfo_nearest_face_selects_pnt_conditionally_but_nearest_face_readout_law_is_open_and_not_derived_from_current_boundary_geometry_alone_microscopic_source_backend_carrier_c3_shortcut_pruned_positive_c3_perron_shortcut_pruned_markov_laplacian_source_law_shortcut_pruned_phase_ordering_cone_characterized_but_open_reflection_even_sign_only_and_unit_normalized_phase_strength_shortcuts_pruned_primitive_character_phase_angles_conditionally_hit_target_but_phase_law_open_representation_theory_alone_pruned_cubic_invariant_route_conditional_cubic_potential_invariance_alone_pruned_general_phase_orbit_selector_pruned_orbit_member_covariance_pruned_dihedral_basepoint_anchor_pruned_orientation_biased_phase_potential_pruned_source_response_extremal_readout_pruned",
             "closed": True,
             "next_action": "produce accepted strict top/W pole rows, or derive an accepted same-surface sign/order/readout law excluding P_0 with backend/projectors/matrix elements",
         },
@@ -2140,6 +2193,12 @@ def main() -> int:
             "The positive real C3 transfer/Perron shortcut is also pruned "
             "because positivity selects P_0, while the target coefficient "
             "requires a nontrivial C3 character line or strict pole rows. "
+            "The reversible C3 Markov-Laplacian source-law shortcut is now "
+            "pruned too: the stochastic generator has P_0 as its "
+            "stationary/Perron line, leaves the nontrivial block degenerate, "
+            "and connected normalization only recovers B_x up to sign; it "
+            "does not derive the physical top-readout law or "
+            "lambda_top=1/sqrt(2). "
             "The residual C3 phase-ordering cone is now explicit: a "
             "nontrivial top line requires y_0 > sqrt(3) x_0 or "
             "-y_0 > sqrt(3) x_0, but the current surface does not derive "
@@ -2352,6 +2411,7 @@ def main() -> int:
             "c3_fisher_quotient_radial_normalization_nogo_fail_count": support_outputs["c3_fisher_quotient_radial_normalization_nogo"].get("fail_count"),
             "one_higgs_carrier_radial_factor_nogo_fail_count": support_outputs["one_higgs_carrier_radial_factor_nogo"].get("fail_count"),
             "one_higgs_generation_coefficient_normalization_nogo_fail_count": support_outputs["one_higgs_generation_coefficient_normalization_nogo"].get("fail_count"),
+            "c3_markov_laplacian_source_law_nogo_fail_count": support_outputs["c3_markov_laplacian_source_law_nogo"].get("fail_count"),
             "c3_real_irrep_dimension_top_block_nogo_fail_count": support_outputs["c3_real_irrep_dimension_top_block_nogo"].get("fail_count"),
             "c3_zero_singlet_top_block_membership_nogo_fail_count": support_outputs["c3_zero_singlet_top_block_membership_nogo"].get("fail_count"),
             "c3_source_orientation_sign_selector_nogo_fail_count": support_outputs["c3_source_orientation_sign_selector_nogo"].get("fail_count"),
@@ -2433,6 +2493,9 @@ def main() -> int:
             "docs/YT_ONE_HIGGS_GENERATION_COEFFICIENT_NORMALIZATION_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_one_higgs_generation_coefficient_normalization_no_go.py",
             "outputs/yt_one_higgs_generation_coefficient_normalization_no_go_2026-05-28.json",
+            "docs/YT_C3_MARKOV_LAPLACIAN_SOURCE_LAW_NO_GO_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_c3_markov_laplacian_source_law_no_go.py",
+            "outputs/yt_c3_markov_laplacian_source_law_no_go_2026-05-28.json",
             "docs/YT_C3_REAL_IRREP_DIMENSION_TOP_BLOCK_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_c3_real_irrep_dimension_top_block_no_go.py",
             "outputs/yt_c3_real_irrep_dimension_top_block_no_go_2026-05-28.json",

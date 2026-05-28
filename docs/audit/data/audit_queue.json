@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 237,
+    "critical": 236,
     "high": 339,
     "leaf": 325,
     "medium": 335
@@ -68,27 +68,29 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-      "claim_scope": "Bounded finite combinatorial theorem: on the 16 BZ corners n in {0,1}^4 of the Z^3+t APBC minimal block, Hamming-weight classes have multiplicities binomial(4,k)=(1,4,6,4,1) and the Wilson term W(n)=r sum_mu(1-cos(n_mu*pi)) equals 2r hw(n), giving shifts (0,2r,4r,6r,8r).",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "higgs_mass_from_axiom_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "three_generation_structure_note"
+        "higgs_from_lattice_note",
+        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+        "yt_ew_color_projection_theorem"
       ],
-      "direct_in_degree": 9,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 32,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.437,
-      "note_path": "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 24.928,
+      "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_wilson_bz_corner_hamming_staircase.py",
-      "transitive_descendants": 489
+      "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
+      "transitive_descendants": 486
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2237,32 +2239,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_phase_removal.py",
       "transitive_descendants": 488
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_mass_from_axiom_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "higgs_from_lattice_note",
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "yt_ew_color_projection_theorem"
-      ],
-      "direct_in_degree": 32,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 24.928,
-      "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
-      "transitive_descendants": 486
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -37193,5 +37169,5 @@
     }
   ],
   "ready_count": 61,
-  "total_pending": 1236
+  "total_pending": 1235
 }

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 167 |
-| **retained_bounded** | 535 |
+| **retained_bounded** | 536 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
 | unaudited | 1234 |
-| audit_in_progress | 1 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -58,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 829 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 830 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
@@ -113,12 +112,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 937 | 34.87 | `audited_clean` | **retained** |
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 752 | 33.56 | `audited_clean` | **retained_bounded** |
 | 14 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 179 | 33.49 | `unaudited` | unaudited |
-| 15 | `minimal_axioms_2026-04-11` | meta | critical | 944 | 33.38 | `unaudited` | meta |
-| 16 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 568 | 32.15 | `unaudited` | unaudited |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 914 | 31.34 | `audited_clean` | **retained** |
-| 18 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 566 | 31.15 | `unaudited` | unaudited |
-| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 920 | 30.85 | `audited_renaming` | ~~audited_renaming~~ |
-| 20 | `three_generation_structure_note` | bounded_theorem | critical | 701 | 30.45 | `audited_clean` | **retained_bounded** |
+| 15 | `three_generation_structure_note` | bounded_theorem | critical | 701 | 33.45 | `audited_clean` | **retained_bounded** |
+| 16 | `minimal_axioms_2026-04-11` | meta | critical | 944 | 33.38 | `unaudited` | meta |
+| 17 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 568 | 32.15 | `unaudited` | unaudited |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 914 | 31.34 | `audited_clean` | **retained** |
+| 19 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 566 | 31.15 | `unaudited` | unaudited |
+| 20 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 920 | 30.85 | `audited_renaming` | ~~audited_renaming~~ |
 | 21 | `left_handed_charge_matching_note` | decoration | critical | 683 | 30.42 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 224 | 29.81 | `unaudited` | unaudited |
 | 23 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 190 | 29.08 | `unaudited` | unaudited |
@@ -131,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -945,6 +943,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wide_family_h0125_bridge_reopen_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -14135,6 +14134,19 @@ Repair target: add or cite a retained bridge deriving the canonical Wilson match
 Claim boundary until fixed: within the named real-positive canonical leading-beta ansatz, the finite runner evidence supports rejection of the i theta Im Tr U_P slot by P4 and enumerates the real Wilson slot, but the row remains conditional on the missing Wilson-matching / beta authority.
 - **open / conditional deps cited:**
   - `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`
+- **auditor confidence:** high
+
+### `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08`
+
+- **Note:** [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](../../docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The 16 BZ corners n in {0,1}^4 partition by Hamming weight with multiplicities (1,4,6,4,1), and W(n)=2r hw(n) for symbolic Wilson coefficient r.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-context-wilson-bz-hamming-20260528-r2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For n in {0,1}^4, 1-cos(n_mu*pi)=2n_mu, hence W(n)=r sum_mu 2n_mu=2r hw(n), and each hw=k class has binomial(4,k) corners.  _(class `A`)_
+- **chain closes:** True — Fresh-context check confirms that choosing k one-bits among four axes gives binomial(4,k)=(1,4,6,4,1) and total 16; cos(0)=1 and cos(pi)=-1 make each active bit contribute exactly 2r, so the shifts are 0,2r,4r,6r,8r by Hamming class.
+- **rationale:** The scoped bounded theorem closes as exact finite combinatorics. Residual risk lies only outside the audited boundary: the setup's BZ-corner labeling and Wilson-term formula are assumed, r is not derived, and no Higgs-mass, continuum-limit, or parent-status claim is ratified here.
 - **auditor confidence:** high
 
 ### `wilson_mu2_distance_sweep_note_2026-04-11`

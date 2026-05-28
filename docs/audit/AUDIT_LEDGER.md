@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 584 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 25 |
-| unaudited | 1141 |
+| unaudited | 1140 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 68 |
+| ~~audited_conditional~~ | 69 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 889 |
-| `audited_conditional` | 68 |
+| `audited_conditional` | 69 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1371 |
+| `unaudited` | 1370 |
 
 | claim_type | count |
 |---|---:|
@@ -1056,6 +1056,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7528,6 +7529,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For a finite-dimensional matrix algebra M_d(C), the only density matrix fixed by rho -> U rho U^dagger for every unitary U in U(d) is rho = I_d / d.  _(class `A`)_
 - **chain closes:** False — The finite-dimensional algebraic conclusion follows once PRR is granted, but PRR is an admitted external premise and neither cited authority derives or approves it. Removing PRR removes the conclusion.
 - **rationale:** The core invariant-state theorem is standard finite-dimensional algebra: commuting with all unitaries forces a scalar density, and trace normalization fixes I_d/d. The runner performs exact internal checks of the sign, permutation, normalization, partial-trace, and source-boundary claims, with no external comparator or tuned value. The row nevertheless imports PRR as an explicit unclosed admission, and N6 does not close that admission because the packet repeatedly states PRR is not an axiom, not a framework rule, and requires separate approval or derivation.
+- **auditor confidence:** high
+
+### `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** External 4D Euclidean SU(N) instanton minimal-action theorem as stated: Atiyah-Singer integrality, Bogomolny/self-duality bound, BPST |Q|=1 saturation S_inst=8*pi^2/g^2, and lattice-topology preservation under Luescher admissibility / Wilson flow, with no framework substrate or hierarchy substitution retained. The finite Hodge/Bogomolny algebra and BPST radial 8*pi^2 normalization are covered by the retained bounded one-hop certificate, but the full global and lattice external theorem package is not independently retained in the restricted packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-instanton-8pi2-external-2026-05-28`  (codex-gpt-5.5; independence=weak)
+- **load-bearing step:** The note imports the external theorem package that Q is integer by Atiyah-Singer, the Bogomolny bound gives S[A] >= (8*pi^2/g^2)|Q| with self-dual saturation, BPST realizes |Q|=1, and Luescher admissibility / Wilson flow preserves lattice topology in the continuum limit.  _(class `B`)_
+- **chain closes:** False — The retained one-hop dependency closes only the bounded finite algebra/arithmetic certificate, while the source's full external theorem package also relies on global Atiyah-Singer and Luescher lattice-topology inputs that the dependency explicitly leaves as parallel context.
+- **rationale:** Issue: the source's external theorem package is broader than the retained one-hop authority, which is only a bounded certificate for finite Hodge/Bogomolny algebra, BPST radial normalization, and twisted T4 arithmetic after stated conventions. Why this blocks: the source also load-bears on global Atiyah-Singer integrality, BPST existence as an external smooth-field theorem, and Luescher admissibility / Wilson-flow lattice topology, but the dependency explicitly says those remain parallel mathematical context unless separately audited. Repair target: either add and audit a retained external-theorem authority packet for the global and lattice ingredients, or narrow this source to the finite bounded algebra already certified. Claim boundary until fixed: safe to cite the bounded 8*pi^2 normalization/algebra certificate, not the full external instanton theorem package as retained positive theorem.
 - **auditor confidence:** high
 
 ### `inverse_problem_note`

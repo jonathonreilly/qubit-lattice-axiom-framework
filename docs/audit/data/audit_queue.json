@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 230,
     "high": 317,
-    "leaf": 294,
+    "leaf": 293,
     "medium": 300
   },
   "cycle_break_target_count": 4,
@@ -26089,30 +26089,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34769,6 +34745,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 19,
-  "total_pending": 1141
+  "ready_count": 18,
+  "total_pending": 1140
 }

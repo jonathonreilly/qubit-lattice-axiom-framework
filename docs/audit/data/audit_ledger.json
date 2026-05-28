@@ -139107,24 +139107,42 @@
       "verdict_rationale": "The core invariant-state theorem is standard finite-dimensional algebra: commuting with all unitaries forces a scalar density, and trace normalization fixes I_d/d. The runner performs exact internal checks of the sign, permutation, normalization, partial-trace, and source-boundary claims, with no external comparator or tuned value. The row nevertheless imports PRR as an explicit unclosed admission, and N6 does not close that admission because the packet repeatedly states PRR is not an axiom, not a framework rule, and requires separate approval or derivation."
     },
     "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T08:08:49.203876+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "Finite Hodge/Bogomolny algebra, BPST radial 8pi^2 normalization integral, and twisted T4 k/N arithmetic after the stated conventions and standard inputs are fixed."
+        },
+        "dep_claim_type": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1cc98f061f812b032eb469aad8a52ef47c9b40cf16902d864b9495d304c292cd",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-instanton-8pi2-external-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained one-hop dependency closes only the bounded finite algebra/arithmetic certificate, while the source's full external theorem package also relies on global Atiyah-Singer and Luescher lattice-topology inputs that the dependency explicitly leaves as parallel context.",
       "claim_id": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
+      "claim_scope": "External 4D Euclidean SU(N) instanton minimal-action theorem as stated: Atiyah-Singer integrality, Bogomolny/self-duality bound, BPST |Q|=1 saturation S_inst=8*pi^2/g^2, and lattice-topology preservation under Luescher admissibility / Wilson flow, with no framework substrate or hierarchy substitution retained. The finite Hodge/Bogomolny algebra and BPST radial 8*pi^2 normalization are covered by the retained bounded one-hop certificate, but the full global and lattice external theorem package is not independently retained in the restricted packet.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T08:08:49.203876+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -139132,19 +139150,19 @@
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "weak",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note imports the external theorem package that Q is integer by Atiyah-Singer, the Bogomolny bound gives S[A] >= (8*pi^2/g^2)|Q| with self-dual saturation, BPST realizes |Q|=1, and Luescher admissibility / Wilson flow preserves lattice topology in the continuum limit.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d0973ea1d92b7e9d83a63ae281d661da39e7afc3d39032c5e90ac9e5ae5198cb",
       "note_path": "docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow to the retained bounded Hodge/Bogomolny plus BPST radial normalization certificate, or add a retained-grade authority packet for Atiyah-Singer integrality, BPST existence, and Luescher lattice-topology preservation before re-auditing the full external theorem package.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -139190,18 +139208,21 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 17,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "independent_check": "Manual check confirms the algebraic saturation S=(8*pi^2/g^2)Q under self-duality and Q=(1/32*pi^2) integral Tr(F*F), but the restricted retained dependency does not prove the global integrality/existence/lattice-admissibility claims.",
+        "runner_sha256": "1cc98f061f812b032eb469aad8a52ef47c9b40cf16902d864b9495d304c292cd",
+        "runner_status": "PASS=17 FAIL=0",
+        "total_pass": 17
       },
       "runner_path": "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py",
       "title": "4D Instanton Minimal Action `8\u03c0\u00b2/g\u00b2` \u2014 External Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source's external theorem package is broader than the retained one-hop authority, which is only a bounded certificate for finite Hodge/Bogomolny algebra, BPST radial normalization, and twisted T4 arithmetic after stated conventions. Why this blocks: the source also load-bears on global Atiyah-Singer integrality, BPST existence as an external smooth-field theorem, and Luescher admissibility / Wilson-flow lattice topology, but the dependency explicitly says those remain parallel mathematical context unless separately audited. Repair target: either add and audit a retained external-theorem authority packet for the global and lattice ingredients, or narrow this source to the finite bounded algebra already certified. Claim boundary until fixed: safe to cite the bounded 8*pi^2 normalization/algebra certificate, not the full external instanton theorem package as retained positive theorem."
     },
     "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": {
       "audit_date": null,

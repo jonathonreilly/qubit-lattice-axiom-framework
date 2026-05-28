@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 563 |
+| **retained_bounded** | 564 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1187 |
+| unaudited | 1186 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 863 |
+| `audited_clean` | 864 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1417 |
+| `unaudited` | 1416 |
 
 | claim_type | count |
 |---|---:|
@@ -386,6 +386,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_nonlabel_connectivity_v1_joint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_nonlabel_connectivity_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5311,6 +5312,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The frozen result reports exact grid 12/12 TOWARD F~M=1.00, no-restore label-NN 12/12 TOWARD F~M=1.00, and no-restore forward-cone candidate 8/12 TOWARD F~M=0.50, so the forward-cone rule is not yet a viable replacement for label-based far-field connectivity.  _(class `C`)_
 - **chain closes:** True — The source is scoped to one completed finite runner scenario, all one-hop dependencies are retained-bounded, and the cached runner output matches the source table exactly. The table directly supports the bounded negative replacement claim while leaving physical Gate B closure outside scope.
 - **rationale:** A restricted fresh-context auditor confirmed that the runner constructs the exact-grid control, no-restore label-NN control, and actual-position forward-cone/floor candidate, propagates the runner-defined field/readout, and computes the TOWARD counts plus F~M slopes. The output reproduces the note's finite table: the controls remain 12/12 with F~M=1.00, while the non-label cone-floor candidate drops to 8/12 and F~M=0.50. This closes only the bounded comparison that the sampled cone-floor rule is not a viable replacement on the declared row; it does not ratify the admitted source law, propagation kernel, TOWARD readout, or full physical Gate B interpretation.
+- **auditor confidence:** high
+
+### `gate_b_nonlabel_connectivity_v3_note`
+
+- **Note:** [`GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md`](../../docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-runner replay for scripts/gate_b_nonlabel_connectivity_v3.py at H=0.5, N_LAYERS=25, HALF=10, drift=0.2, seeds [0,1,2,3], z masses [3,4,5], comparing exact grid, no-restore label-NN, and one local degree-balanced non-label connectivity rule with target out-degree 9 and alpha=0.03. No physical Gate B closure, primitive-to-gravity bridge, broad drift sweep, or general non-label no-go is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `fresh-agent-Darwin-019e6cdc-e61b-7cc3-aea0-0852140fcb85`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The frozen result reports exact grid 12/12 TOWARD F~M=1.00, no-restore label-NN 12/12 TOWARD F~M=1.00, and no-restore degree-balanced matching 10/12 TOWARD F~M=0.75, so the degree-balanced rule is not yet a viable replacement for direct label-NN matching.  _(class `C`)_
+- **chain closes:** True — The source is scoped to one completed finite runner scenario, all one-hop dependencies are retained-bounded, and the cached runner output matches the source table exactly. The table supports only the bounded negative replacement claim; the runner's drift-sweep print label is informational because the measured no-restore rows use fixed drift=0.2.
+- **rationale:** A restricted fresh-context auditor confirmed that the runner constructs the exact-grid control, no-restore label-NN control, and actual-position degree-balanced candidate, then computes the centroid TOWARD counts and F~M slopes. The output reproduces the note's finite table: the controls remain 12/12 with F~M=1.00, while the non-label degree-balanced candidate drops to 10/12 and F~M=0.75. This closes the bounded statement that this sampled local degree-balancing rule is not a viable replacement on the declared row; it does not ratify the admitted source law, propagation kernel, TOWARD readout, or full physical Gate B interpretation.
 - **auditor confidence:** high
 
 ### `gate_b_nonlabel_sign_grown_transfer_note`

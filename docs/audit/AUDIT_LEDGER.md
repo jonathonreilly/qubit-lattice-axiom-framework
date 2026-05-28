@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 148 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 578 |
+| **retained_bounded** | 579 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1161 |
+| unaudited | 1160 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 20 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 879 |
+| `audited_clean` | 880 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1391 |
+| `unaudited` | 1390 |
 
 | claim_type | count |
 |---|---:|
@@ -863,6 +863,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13105,6 +13106,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Issue: the algebraic bridge is valid on the supplied surface M_W=r d I, but the source cites the superseded minimal_axioms_2026-04-11 stack and parent canonical-surface assertions for why that surface is the framework Wilson/staggered convention. Why this blocks: the audit packet can certify the determinant factorization as bounded algebra, but not the authority that the current framework is on that symmetric-canonical Wilson surface. Independent math check: SVD of K reduces epsilon M to 2x2 blocks with determinant -(alpha^2+sigma_i^2); det(epsilon)=(-1)^(n/2), so the signs cancel and det(M)=prod_i(alpha^2+sigma_i^2), strictly positive for alpha=m+r d != 0. Repair target: replace the superseded minimal-axioms dependency with the current axiom premise or a retained surface-selection theorem, and wire/audit any parent convention needed for M_W=r d I. Claim boundary until fixed: the determinant positivity formula is sound as a bounded algebraic theorem on a supplied symmetric-canonical matrix surface, not yet as a current-framework Wilson-sector authority.
 - **open / conditional deps cited:**
   - `minimal_axioms_2026-04-11`
+- **auditor confidence:** high
+
+### `static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27`
+
+- **Note:** [`STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](../../docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional/local accepted-premise bridge: given local P1 static-source readout V(r) = -C*g_bare^2*G(r), the Maradudin asymptotic supplied through its retained decoration parent, the retained I2 convention alpha := g_bare^2/(4*pi), and the retained g_bare=1 conditional, exact substitution gives V(r) -> -C*g_bare^2/(4*pi*|r|) = -C*alpha/|r| and alpha = 1/(4*pi) at g_bare=1. This does not derive or promote P1 to Tier-A, does not promote the parent alpha_bare bridge, and does not close Newton-law/gravity, 4D loop/Wick, hierarchy, physical-continuum, Wilson plaquette matching, generator normalization, or C=C_F derivation claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `volta-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-static-source-i1`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** B1-B4 exact algebra: substitute M1 G(r) -> 1/(4*pi*|r|) into P1 V(r) = -C*g_bare^2*G(r), define alpha = g_bare^2/(4*pi), rewrite V(r) as -C*alpha/|r|, then set g_bare=1 to get alpha=1/(4*pi).  _(class `B`)_
+- **chain closes:** True — The chain closes at the conditional bounded scope: P1 remains a local admitted readout convention, M1 is consumed through the retained Maradudin parent behind the decoration wrapper, I2 and g_bare=1 are retained_bounded dependencies, and the B1-B4 algebra is exact. It does not close the admitted P1 derivation or any downstream physical/gravity/continuum claim.
+- **rationale:** Clean only as a conditional accepted-premise bridge. Independent algebra confirms the sign, 4*pi factor, C factor, alpha substitution, and g_bare=1 specialization. The runner is SHA-pinned, exits 0, and reports EXACT PASS=41 FAIL=0 plus BOUNDED PASS=11 FAIL=0; the source's verification snippet still says TOTAL PASS=35 FAIL=0, but that is non-load-bearing transcript drift because the current runner adds checks and all current checks pass. No-go discipline gate passed: the wall set collapses to the single local P1 admission; M1 authority is taken from the retained Maradudin parent, not the decoration wrapper as new authority; I2 and g_bare are retained dependencies; C=C_F is part of P1 for this row; multiplicative-bridge and regulator-dependence no-go references are used only as exclusions; and future derivation/retirement paths for P1, C=C_F, Wilson-surface normalization, and the parent bridge remain open. The verdict does not promote P1 to Tier-A, the parent alpha_bare bridge, Newton-law/gravity, 4D loop/Wick, hierarchy, physical continuum, Wilson plaquette matching, generator normalization, or C=C_F derivation claims.
 - **auditor confidence:** high
 
 ### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`

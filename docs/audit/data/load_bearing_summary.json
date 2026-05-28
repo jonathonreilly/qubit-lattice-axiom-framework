@@ -49,8 +49,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 40.057,
-      "transitive_descendants": 1064
+      "load_bearing_score": 40.558,
+      "transitive_descendants": 1065
     },
     {
       "claim_id": "anomaly_forces_time_theorem",
@@ -109,8 +109,8 @@
     {
       "claim_id": "minimal_axioms_2026-04-11",
       "criticality": "critical",
-      "load_bearing_score": 33.395,
-      "transitive_descendants": 951
+      "load_bearing_score": 32.886,
+      "transitive_descendants": 945
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",

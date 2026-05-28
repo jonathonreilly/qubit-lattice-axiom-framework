@@ -1,10 +1,19 @@
 # Mesoscopic Surrogate Alternate-Family Scout Note
 
 **Date:** 2026-04-04  
-**Status:** bounded - bounded or caveated result note
-the retained 3D `h=0.25` family
+**Claim type:** meta
+**Status:** support / meta scout over already bounded families; independent
+audit owns status.
+The 3D `h=0.25` family remains only a cited input.
 **Primary runner:** `scripts/mesoscopic_surrogate_alternate_family_scout.py`
 
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This note is a planning/scout index, not a bounded theorem. It does not supply
+a registered ranking criterion over the cited rows and does not promote
+`PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md`. A future theorem row must
+make the priority criterion executable.
 
 ## Question
 

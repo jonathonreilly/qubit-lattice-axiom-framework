@@ -16,6 +16,13 @@ rows that consume the flat first Friedmann law can register this
 wrapper as their one-hop dependency.
 **Status authority:** independent audit lane only.
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This row is split to the clean dust Newton-Poisson first-integral wrapper on a
+spatially flat homogeneous-isotropic slice. Radiation pressure and full GR
+Friedmann import are not part of the live claim here and require a separate
+pressure-source/GR bridge if reused downstream.
+
 ## Purpose
 
 This wrapper note documents the Newton-Poisson reduction to the flat
@@ -31,9 +38,9 @@ Hypotheses:
 - Newtonian gravitational potential `Phi` satisfying the Poisson
   equation `nabla^2 Phi = 4 pi G rho` in the symmetric limit, with `G`
   the Newton constant and `rho` the homogeneous energy density.
-- Pressureless dust or radiation fluid on the slice, with continuity
-  equation `dot rho + 3 H (1 + w) rho = 0` for equation-of-state `w`
-  (equivalently `rho a^(3(1+w)) = constant` when `w` is constant).
+- Pressureless dust on the slice, with continuity equation
+  `dot rho + 3 H rho = 0` (equivalently `rho a^3 = constant`).
+  Radiation or pressure-source variants are outside this row's live claim.
 
 Conclusion (textbook Milne / McCrea-Milne):
 
@@ -88,7 +95,10 @@ The same `(F1)` is recovered as the symmetric limit of the
 
 This wrapper is consumed by:
 
-- `DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md` — combines `(F1)` with the radiation density `rho_rad(T) = (pi^2 / 30) g_* T^4` to obtain `H_rad(T) = sqrt(4 pi^3 g_* / 45) T^2 / M_Pl` on the flat FRW slice.
+- `DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md` — uses the same flat
+  Friedmann form with a radiation density input. That radiation-pressure
+  application is outside this row's dust-only live claim unless a separate
+  pressure-source/GR bridge supplies it.
 
 ## Boundary
 

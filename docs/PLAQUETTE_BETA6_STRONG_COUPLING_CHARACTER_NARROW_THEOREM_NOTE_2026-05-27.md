@@ -2,7 +2,15 @@
 
 **Date:** 2026-05-27
 **Claim type:** bounded_theorem
-**Claim scope:** the standalone algebraic facts that
+**Claim scope:** the standalone algebraic facts listed after the re-audit
+scope below.
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is the algebra after the strong-coupling coefficient table
+and leading character-coefficient setup are explicitly supplied. The Munster /
+Drouffe-Zuber coefficients and the `u = beta/18` setup are not promoted by
+this row; they are premise data for the finite Pade calculation.
 
 1. the strong-coupling character expansion of the SU(3) Wilson
    single-plaquette expectation `<P>` begins

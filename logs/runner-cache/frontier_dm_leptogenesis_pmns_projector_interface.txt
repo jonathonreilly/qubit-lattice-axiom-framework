@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
-runner_sha256: 12db9415d3223c30be1022e8a55f207a327717b4e0b1699095459cfabae5d05a
+runner_sha256: c7ddd10bd3863518ed4cde2ce655052f3c9adb080d1f7899dd95756828ea7757
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -43,17 +43,24 @@ PART 2: EIGENVECTOR REPHASING INVARIANCE
   [PASS] |U_pair|^2 is invariant under independent eigenvector rephasings  (max err=7.06e-16, samples=72)
 
 ========================================================================================
+PART 3: DEGENERATE EIGENSPACE BOUNDARY
+========================================================================================
+  [PASS] degenerate eigenspace rotations change the raw packet without a selector  (packet diff=0.690983)
+  This is an intentional boundary check, not a failure of the simple-spectrum interface.
+
+========================================================================================
 RESULT
 ========================================================================================
   Raw algebraic interface:
     - supplied Hermitian pair -> U_pair = U_e^dagger U_nu
     - |U_pair|^2 is doubly stochastic
     - |U_pair|^2 is invariant under eigenvector rephasings
+    - degenerate eigenspaces require an additional selector
 
   Carrier authority, physical N1 column selection, and eta diagnostics remain outside this repaired row.
 
 ========================================================================================
-SUMMARY: PASS=16 FAIL=0
+SUMMARY: PASS=17 FAIL=0
 ========================================================================================
 
 ----- stderr -----

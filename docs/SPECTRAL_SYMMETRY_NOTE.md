@@ -20,6 +20,13 @@ audit pipeline after independent review.
 [`docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md`](HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md)
 (`retained_bounded` on `main`)
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The re-audit target is limited to the exact cached finite-seed measurements and
+the monotone Lindeberg-ratio observation printed by the runner. Power-law
+convergence and CLT-mechanism interpretation are not theorem claims unless a
+future registered statistical criterion supplies them.
+
 ## Safe bounded statement
 
 On the cached configuration (npl=25, connect_radius=2.5, k=5.0, 16

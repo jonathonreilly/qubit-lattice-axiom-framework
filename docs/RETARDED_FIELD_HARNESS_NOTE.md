@@ -3,6 +3,13 @@
 **Date:** 2026-04-05  
 **Status:** bounded retarded-field harness with sudden-turn-on and oscillating-source companions
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The live claim is the bounded runner-table certificate emitted by
+`scripts/retarded_field_harness.py`. Branch-worth and frequency-fingerprint
+synthesis are reader context only until a registered assertion criterion over
+this harness and companion probes exists.
+
 ## Artifact chain
 
 - [`scripts/retarded_field_harness.py`](/Users/jonreilly/Projects/Physics/scripts/retarded_field_harness.py)

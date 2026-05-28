@@ -4,6 +4,7 @@
 This stays intentionally small for automation use:
   - one H point at a time
   - one family / seed / strength selection
+  - default Fam1/seed1 selection matches the source note's live control row
   - runtime and peak RSS reported alongside the direct-dM observables
 
 It is the reusable support entrypoint for the current H=0.25 validation
@@ -56,8 +57,8 @@ def main() -> int:
     parser.add_argument(
         "--seed",
         type=int,
-        default=0,
-        help="Grow seed for the geometry. Default: 0",
+        default=1,
+        help="Grow seed for the geometry. Default: 1",
     )
     parser.add_argument(
         "--strength",

@@ -1,0 +1,45 @@
+# Opportunity Queue
+
+Completed in ledger order for this batch:
+
+1. assumption_derivation_ledger
+2. axiom_first_reflection_positivity_theorem_note_2026-04-29
+3. bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28
+4. beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08
+5. dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28
+6. distance_law_breakpoint_note
+7. distance_law_frontier_audit_note
+8. dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28
+9. dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16
+10. dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17
+11. dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17
+12. dm_leptogenesis_pmns_projector_interface_note_2026-04-16
+13. early_family_transfer_connectivity_diagnosis
+14. emergent_lorentz_invariance_note
+15. gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17
+16. higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02
+17. instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16
+18. massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28
+19. mesoscopic_surrogate_alternate_family_scout_note
+20. newton_law_derived_note
+21. newton_poisson_flat_friedmann_textbook_import_note_2026-05-17
+22. observable_principle_from_axiom_note
+23. plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27
+24. plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27
+25. retarded_field_harness_note
+26. spectral_symmetry_note
+27. sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28
+28. staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05
+29. su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04
+30. wave_direct_dm_h025_low_band_retention_note
+31. wave_retarded_gravity_note
+32. yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25
+33. yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25
+
+Upstream landed during rebase:
+
+- mermin_wagner_bogoliubov_textbook_import_note_2026-05-18
+- koide_aps_block_by_block_forcing_note_2026-04-21
+
+Next opportunity after this PR: wait for independent audit results and target
+any rows that remain conditional for deeper premise derivation.

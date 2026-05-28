@@ -4,6 +4,14 @@
 **Status:** bounded conditional structural-dispersion theorem on the cubic Z³ lattice — IF exact CPT, exact/tree-level parity protection against odd-dimension LV, and the hierarchy-scale identification `a ~ 1/M_Planck` are supplied as bridge premises, THEN the registered structural-dispersion / cubic-harmonic results imply Lorentz invariance to the reported precision. The IF-conditions are not registered as audit-clean dependencies. Not a tier-ratifiable Lorentz-invariance theorem on its own.
 **Script:** `scripts/frontier_emergent_lorentz_invariance.py`
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The live claim is split: the runner-backed structural dispersion/cubic-harmonic
+core is the re-audit target, while the Planck-suppressed physical estimate
+requires the separate Planck-pin/unit-map premise. This row does not cite the
+Planck-scale lane as an already-effective dependency and should not be used as
+an unconditional Lorentz-invariance theorem.
+
 ## Conditional Support Claim
 
 **Conditional structural-dispersion support.**

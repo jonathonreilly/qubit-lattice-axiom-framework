@@ -6,6 +6,14 @@ from the stitched instantaneous (c=∞) comparator by 23-26% on 3 families;
 F~M and Born are preserved on the tested surface. The c=∞ comparator
 identification remains the named conditional input.
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The live claim is the finite wave-equation/beam runner comparison under the
+stitched late-time static-slice comparator explicitly named below. This row
+does not prove that comparator is the exact discrete `c = infinity` Green
+function; any continuum or lab-scaling interpretation remains split from the
+bounded runner table.
+
 ## Artifact chain
 
 - [`scripts/wave_retarded_gravity.py`](../scripts/wave_retarded_gravity.py)

@@ -3,6 +3,14 @@
 **Date:** 2026-04-06 (status line rephrased 2026-04-28 per audit-lane verdict)
 **Status:** bounded narrow breakpoint table — the runner reprints hard-coded `alpha` / direction rows; the architecture-feature diagnosis (open directed vs shell vs reflection vs deep-branch routing) is not closed by matched ablation computations. Cited distance-law portability note is unknown; sign-invariant context is conditional. Not a tier-ratifiable architecture-feature theorem.
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The live claim is split to the finite runner table only: the hard-coded
+`alpha`/direction breakpoint rows printed by
+`scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py`. The architecture-feature
+diagnosis remains reader context and is not part of the theorem claim unless a
+future matched-ablation runner supplies it.
+
 ## Artifact Chain
 
 - [`scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py)

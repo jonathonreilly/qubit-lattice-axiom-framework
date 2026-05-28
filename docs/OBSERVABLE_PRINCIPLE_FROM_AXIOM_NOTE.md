@@ -32,6 +32,14 @@ primitives) is explicitly **out of scope** and is not asserted here.
 exact-algebra statement** on the exact minimal hierarchy block,
 conditional on the P1+P2 admitted scalar-selection surface:
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The audit target remains the finite-block `log|det(D+J)|` generator identity
+conditional on P1 scalar additivity and P2 continuous phase-blind
+scalar-generator selection. P2 is not derived in this file and no Tier-A
+registry update is performed here. Re-audit should not treat this row as
+closing the observable-principle parent.
+
 > **Given** P1 (scalar additivity on independent subsystems) and P2
 > (continuous phase-blind scalar-generator selection: a scalar bosonic
 > generator is a continuous function of `|Z|` alone), with canonical

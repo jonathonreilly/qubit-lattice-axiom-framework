@@ -13,6 +13,15 @@ pipeline after independent review.
 `HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md`).
 **Primary runner:** [`scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py`](../scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py)
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This row is a bounded arithmetic certificate over the supplied P1-P7 packet,
+not a dark-matter prediction derived from the current framework surface. The
+freeze-out-bypass identity, `m_DM = N_sites * v`, BBN conversion coefficient,
+thermal constants, and Sommerfeld/`alpha_X` route choice remain local
+premises. Re-audit should judge whether the runner certifies the arithmetic and
+premise firewall, not whether P1-P7 are already closed elsewhere.
+
 ```yaml
 actual_current_surface_status: narrow_bounded_theorem
 conditional_surface_status: narrow_bounded_theorem

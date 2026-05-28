@@ -2,11 +2,20 @@
 
 **Date:** 2026-04-15 (original); 2026-05-27 (scope narrowing + R_conn row
 repair).
-**Type:** bounded_theorem
+**Type:** meta
 **Status authority:** independent audit lane only.
 
 This file exists to stop the package from blurring axioms, computed
 inputs, derived quantitative rows, and still-open companion lanes.
+
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+This ledger is now presented as metadata and dependency hygiene, not as an
+independent theorem asserting that every ingredient row below is closed. Any
+non-`R_conn` ingredient that lacks a one-hop audit-clean authority remains an
+open ingredient pointer. Re-audit should therefore judge this file as a
+ledger/scope-control artifact unless the downstream ingredient row itself is
+independently audited.
 
 ## 2026-05-27 Scope narrowing
 

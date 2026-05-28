@@ -6,6 +6,14 @@
 effective status are set by the independent audit lane.
 **Primary runner:** [`scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py`](../scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py)
 
+## 2026-05-28 Science-Fix Re-Audit Scope
+
+The audit target is the rational degree-of-freedom bookkeeping once Q1 and Q2
+are supplied. Q1 (Lorentzian-signature extension) and Q2 (on-shell
+thermal-counting convention) remain explicit local admissions. This row does
+not promote the parent thermal inventory or close the remaining thermal
+premises P1, P2, P3, or P5.
+
 ## Claim
 
 Given the supplied Cl(3,1) Lorentzian-signature extension and

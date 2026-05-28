@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 568 |
+| **retained_bounded** | 569 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1178 |
+| unaudited | 1177 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 868 |
+| `audited_clean` | 869 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1408 |
+| `unaudited` | 1407 |
 
 | claim_type | count |
 |---|---:|
@@ -140,6 +140,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | B | - |
@@ -1372,6 +1373,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `ai_methodology/raw/prompts_session_ebae4639_jonreilly.md is raw transcript rather than canonical theorem note`
   - `stale embedded PASS=41/JTS-residue transcript state conflicts with live PASS=13/JTS-derived runner state`
   - `canonical ISSR1/JTS theorem notes are not registered as this row's one-hop dependencies`
+- **auditor confidence:** high
+
+### `alpha_convention_i2_accepted_premise_bridge_bounded_note_2026-05-27`
+
+- **Note:** [`ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](../../docs/ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional accepted-premise bridge: given P1 alpha := g_bare^2/(4 pi), retained-bounded g_bare = 1, and the retained alpha_LM identity, exact substitution yields alpha = alpha_bare = 1/(4 pi) and composes with alpha_LM^2 = alpha_bare * alpha_s(v). It does not derive P1, promote P1 to Tier-A, or promote the parent bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `godel-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-alpha-convention-i2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substitute g_bare = 1 into P1 alpha = g_bare^2/(4 pi), and substitute alpha_bare = g_bare^2/(4 pi) into alpha_LM^2 = alpha_bare * alpha_s(v).  _(class `A`)_
+- **chain closes:** True — The bounded claim closes from the restricted packet: both direct dependencies are retained-grade, and the remaining step is exact algebra under explicitly admitted P1. The scope does not derive P1 or promote downstream/parent claims.
+- **rationale:** The runner encodes P1 as a supplied convention premise and checks conditional substitution algebra; it does not claim to derive P1 from framework primitives. Fresh-context independent algebra checked alpha(1)-1/(4pi)=0, (alpha_bare/u0)^2 - alpha_bare*(alpha_bare/u0^2)=0, alpha_LM^2/alpha_s - alpha_bare=0, and after P1 substitution the ratio becomes g_bare^2/(4pi). A rescaled convention differs by g_bare^2*(k-1)/(4pi), so P1 fixes k=1 only within the admitted convention. The source boundary keeps the theorem bounded: P1 remains admitted, not Tier-A-derived, and the parent bridge is not promoted.
 - **auditor confidence:** high
 
 ### `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`

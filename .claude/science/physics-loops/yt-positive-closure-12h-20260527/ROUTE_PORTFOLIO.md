@@ -153,6 +153,7 @@ missing relative radial generator factor `lambda_top=1/sqrt(2)`.
 | Radial/readout compensation | Ask whether the target-size row can infer zero singlet support or the radial factor | Fails; `lambda_top |3s-1|=1/sqrt(2)` has multiple finite completions and signed branches need a source-orientation law |
 | Sharp-response readout | Ask whether `Var(B_x)=0` selects the physical nontrivial endpoint | Fails; zero variance selects both `P_nt` and `P_0`, and radial compensation keeps the singlet endpoint target-size |
 | Fisher/LSZ radial generator normalization | Ask whether source arclength/LSZ raw-scale normalization fixes `lambda_top=1/sqrt(2)` | Fails; `O_beta/||O_beta||=B_x` removes `beta`, while `V_top(lambda_top)=lambda_top A B_x` leaves the target coefficient free |
+| Block-rank radial normalization | Ask whether `rank(P_nt)=2` or root-rank averaging fixes `lambda_top=1/sqrt(2)` | Fails; ordinary `P_nt` matrix elements and block-density expectations stay at `A/sqrt(6)`, Hilbert-Schmidt conventions give same-data alternatives, and root-rank averaging is the added law under test |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -228,3 +229,9 @@ the missing radial theorem: Fisher/LSZ removes raw source scale, but not the
 relative top response coefficient. The next positive move must derive that
 relative same-surface radial dynamics, derive a physical top-readout law
 excluding `P_0`, or produce accepted strict pole rows.
+The block-rank radial normalization no-go prunes the newest rank shortcut:
+`rank(P_nt)=2` exposes a numerically useful `1/sqrt(2)`, but the current
+surface does not derive root-rank averaging as the physical top radial
+generator. The next positive move is unchanged: derive accepted radial
+dynamics plus a physical `P_0`-excluding top-readout law, or produce accepted
+strict pole rows.

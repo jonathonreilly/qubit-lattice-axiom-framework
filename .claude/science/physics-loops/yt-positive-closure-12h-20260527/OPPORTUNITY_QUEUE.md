@@ -2,7 +2,7 @@
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Status |
 |---:|---|---:|---:|---|---|
-| 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout/hard-boundary law | medium | high | partial | factorization support landed; block support landed; radial-factor-free, target-magnitude back-solving, sharp-response, and Fisher/LSZ source-normalization shortcuts pruned; current real/reflection-even block-algebra, source-orientation sign-choice, trace-free centered-source, finite minimum-information readout, and current hard-boundary geometry-alone shortcuts pruned; primitive singular-boundary support isolates a conditional `P_nt` candidate but physical readout/sign and radial generator laws remain open |
+| 1 | Derive accepted same-surface generator factorization `(A/sqrt(2))B_x` and a new zero-singlet top-block membership sign/order/readout/hard-boundary law | medium | high | partial | factorization support landed; block support landed; radial-factor-free, target-magnitude back-solving, sharp-response, Fisher/LSZ source-normalization, and block-rank/root-rank radial shortcuts pruned; current real/reflection-even block-algebra, source-orientation sign-choice, trace-free centered-source, finite minimum-information readout, and current hard-boundary geometry-alone shortcuts pruned; primitive singular-boundary support isolates a conditional `P_nt` candidate but physical readout/sign and radial generator laws remain open |
 | 2 | Non-mass-ordering C3 top-block law excluding `P_0` without target selection | low | high | present | pruned on current real/reflection-even C3 surface, including the weaker zero-singlet block-membership shortcut |
 | 3 | Accepted C3 circulant dynamics/source law for `a(h), x(h), y(h)` | low | high | present | pruned as source-derivative shortcut; base dynamics/order still open |
 | 4 | Strict sparse top/W pole-response evidence on accepted backend | medium | high | harness present | audited absent on current branch, including repository discovery scan |
@@ -245,6 +245,16 @@ and LSZ remove raw source scale, but the relative top response coefficient
 `lambda_top` remains free in `V_top(lambda_top)=lambda_top A B_x`; the target
 still requires `lambda_top=1/sqrt(2)`. The next exact action remains rank 1 or
 rank 4: derive accepted same-surface radial generator dynamics plus a physical
+top-readout law excluding `P_0`, or produce accepted strict top/W pole-row data
+with contact, FV/IR, and model-class controls.
+
+Queue refresh after the thirty-fourth block: positive closure remains open.
+The block-rank/root-rank radial-normalization route is pruned. `rank(P_nt)=2`
+makes `1/sqrt(2)` visible, but ordinary `P_nt` matrix elements and
+block-density expectations remain `A/sqrt(6)`, Hilbert-Schmidt conventions
+give same-data alternatives, and `A/sqrt(12)` appears only after adding the
+root-rank response law itself. The next exact action remains rank 1 or rank 4:
+derive accepted same-surface radial generator dynamics plus a physical
 top-readout law excluding `P_0`, or produce accepted strict top/W pole-row data
 with contact, FV/IR, and model-class controls.
 

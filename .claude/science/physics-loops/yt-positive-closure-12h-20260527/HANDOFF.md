@@ -1,5 +1,70 @@
 # Handoff
 
+Cycle 20 adds a thirty-fourth science block, not positive retained-grade
+closure. The new block prunes the shortcut
+
+```text
+rank(P_nt)=2 or root-rank averaging
+  -> lambda_top = 1/sqrt(2).
+```
+
+The finite C3 algebra makes the tempting number visible, but does not derive
+it as the physical radial top generator. With `V_top=A B_x` and
+`B_x P_nt=-P_nt/sqrt(6)`,
+
+```text
+|<psi|V_top|psi>| = A/sqrt(6)        for unit psi in P_nt,
+|Tr((P_nt/2) V_top)| = A/sqrt(6),
+||P_nt V_top P_nt||_HS = A/sqrt(3).
+```
+
+The target row `A/sqrt(12)` appears only after adding the rule
+
+```text
+response -> response / sqrt(rank(P_nt)).
+```
+
+That rule is the missing root-rank radial generator law, not a consequence of
+the current same-surface block algebra.
+
+This is an exact negative boundary only. No `POSITIVE_CLOSURE` marker was
+written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 20 science commit:
+
+```text
+0f43b0a4a96feac232d0ec0cb127f67e68b97b1f
+```
+
+Cycle 20 artifacts:
+
+- `docs/YT_C3_BLOCK_RANK_RADIAL_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_c3_block_rank_radial_normalization_no_go.py`
+- `outputs/yt_c3_block_rank_radial_normalization_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 20 verification so far:
+
+- `python3 scripts/frontier_yt_c3_block_rank_radial_normalization_no_go.py`
+  -> `SUMMARY: PASS=98 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=481 FAIL=0`
+- Adjacent runners passed: same-surface radial-factor no-go `PASS=94`,
+  Fisher/LSZ radial-generator no-go `PASS=105`, nontrivial-block support
+  `PASS=85`, first-principles transfer response `PASS=56`, same-surface
+  matrix factorization `PASS=77`, direct sparse certificate `PASS=88`,
+  strict sparse availability audit `PASS=74`, and radial/readout compensation
+  no-go `PASS=100`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+The next exact action is still rank 1 or rank 4: derive accepted
+same-surface radial generator dynamics plus a physical top-readout law
+excluding `P_0`, or produce accepted strict top/W pole rows with contact,
+FV/IR, and model-class controls.
+
 Cycle 19 adds a thirty-third science block, not positive retained-grade
 closure. This was the required deep-work stretch attempt after two no-go
 route-pruning blocks. It prunes the shortcut

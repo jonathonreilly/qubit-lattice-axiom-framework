@@ -247,3 +247,13 @@ feed `A/sqrt(12)`.
   Positive closure still needs accepted same-surface radial generator
   dynamics, a physical top readout excluding `P_0`, or accepted strict top/W
   pole rows.
+- New in the thirty-fourth block: block rank/root-rank normalization does not
+  certify the relative top radial generator factor. Although
+  `rank(P_nt)=2` exposes the tempting number `1/sqrt(2)`, ordinary
+  `P_nt` unit-vector matrix elements and the block-density expectation give
+  `A/sqrt(6)` before an extra radial law, while Hilbert-Schmidt block
+  conventions give same-data alternatives. The target `A/sqrt(12)` appears
+  only after adding root-rank response averaging, which is exactly the
+  unaccepted radial generator law. Positive closure still needs accepted
+  same-surface radial generator dynamics, a physical top readout excluding
+  `P_0`, or accepted strict top/W pole rows.

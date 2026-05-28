@@ -1,5 +1,42 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 34
+
+Scope:
+
+- C3 block-rank radial normalization no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, finite C3 projectors, `rank(P_nt)=2`, block-density/Hilbert-Schmidt/root-rank readout conventions, the `lambda_top` counterfamily, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open block-rank-to-radial-generator law; `rank(P_nt)=2` is not promoted into `lambda_top=1/sqrt(2)`. |
+| Imports / support | DISCLOSED | The physical root-rank radial generator law, physical top-readout law excluding `P_0`, and strict pole rows remain open; forbidden mass/target/fit inputs are absent. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=98 FAIL=0`
+- Full stack runner: `PASS=481 FAIL=0`
+- Adjacent runners passed: same-surface radial-factor no-go `PASS=94`,
+  Fisher/LSZ radial-generator no-go `PASS=105`, nontrivial-block support
+  `PASS=85`, first-principles transfer response `PASS=56`, same-surface
+  matrix factorization `PASS=77`, direct sparse certificate `PASS=88`,
+  strict sparse availability audit `PASS=74`, and radial/readout compensation
+  no-go `PASS=100`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 33
 
 Scope:

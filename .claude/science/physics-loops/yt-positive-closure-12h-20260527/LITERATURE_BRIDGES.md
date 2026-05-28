@@ -91,3 +91,10 @@ external KL theorem, information-geometry source, or physics readout rule is
 load-bearing. External context could only motivate accepting primitive
 singular no-hidden-record boundary readout as a physical top law; it does not
 close the current repository surface.
+The block-rank radial-normalization no-go directly computes `rank(P_nt)=2`,
+ordinary `P_nt` matrix elements, block-density expectations, and
+Hilbert-Schmidt block conventions in the same finite C3 projector algebra.
+No external representation-theory or operator-norm theorem is load-bearing.
+External context could only motivate accepting root-rank averaging as a
+physical radial generator law; it does not derive `lambda_top=1/sqrt(2)` on
+the current surface.

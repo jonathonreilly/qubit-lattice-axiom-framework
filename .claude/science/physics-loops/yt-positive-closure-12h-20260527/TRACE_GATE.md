@@ -7,28 +7,36 @@ target_blocker_text: "derive/certify the coefficient-bearing same-surface top se
 source_of_blocker_text: user_goal
 reachability_to_target: prunes
 artifact_role: no_go
-next_trace_action: "derive accepted same-surface dynamics identifying the normalized C3 source tangent with lambda_top=1/sqrt(2), derive a physical top-readout law excluding P_0, or produce accepted strict top/W pole rows with controls"
+next_trace_action: "derive accepted same-surface radial generator dynamics plus a physical top-readout law excluding P_0, or produce accepted strict top/W pole rows with controls"
 ```
 
-Cycle 19 is the required deep-work stretch attempt after two no-go pruning
-blocks. It grants Fisher arclength and Fisher/LSZ source-normalization support
-and tests whether those support theorems force the missing radial factor.
-
-They do not. For raw source scale `beta` and relative top response coefficient
-`lambda_top`,
+Cycle 20 tests the block-rank shortcut after the Fisher/LSZ radial-generator
+shortcut was pruned. It grants the best C3 support premise for the sake of
+argument:
 
 ```text
-O_beta = beta B_x,
-O_beta / ||O_beta|| = B_x,
-V_top(lambda_top) = lambda_top A B_x.
+support(top) <= P_nt,    rank(P_nt)=2,    B_x P_nt = -P_nt/sqrt(6).
 ```
 
-Fisher/LSZ normalization removes `beta`, but the top row remains
-`lambda_top A/sqrt(6)`. The target row still requires
-`lambda_top=1/sqrt(2)`.
+The root-rank number is visible:
 
-This trace prunes only the shortcut from source-scale normalization to radial
-generator factorization. It does not close the target. Positive closure still
-requires accepted radial/readout/sign laws on the same surface, or accepted
-strict same-source top/W pole rows with contact, FV/IR, and model-class
-controls.
+```text
+1/sqrt(rank(P_nt)) = 1/sqrt(2).
+```
+
+But the actual matrix elements are rank-blind:
+
+```text
+|<psi|A B_x|psi>| = A/sqrt(6)        for unit psi in P_nt,
+|Tr((P_nt/2) A B_x)| = A/sqrt(6).
+```
+
+Hilbert-Schmidt block conventions give `A/sqrt(3)` or return `A/sqrt(6)`;
+the target `A/sqrt(12)` appears only after adding the root-rank response
+average itself. That added average is the missing physical radial generator
+law, not a derivation from current block algebra.
+
+This trace prunes only the shortcut from block rank to radial generator
+factorization. It does not close the target. Positive closure still requires
+accepted radial/readout/sign laws on the same surface, or accepted strict
+same-source top/W pole rows with contact, FV/IR, and model-class controls.

@@ -121,4 +121,7 @@ Next artifact if continuing:
   cannot close the gap because it leaves the sharp singlet endpoint available.
   Fisher/LSZ source normalization cannot close the radial gap because it
   removes raw source scale but leaves the relative top response coefficient
-  `lambda_top` free.
+  `lambda_top` free. Block rank cannot close the radial gap either:
+  `rank(P_nt)=2` makes the root-rank factor visible, but root-rank averaging
+  is an extra physical radial generator law unless derived from accepted
+  same-surface dynamics.

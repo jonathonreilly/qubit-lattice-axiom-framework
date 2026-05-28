@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 230,
-    "high": 326,
+    "high": 325,
     "leaf": 325,
     "medium": 335
   },
@@ -6547,31 +6547,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_nonlabel_connectivity_v1_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_weak_connectivity_note",
-        "gate_b_farfield_note"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.129,
-      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1.py",
-      "transitive_descendants": 98
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16788,6 +16763,56 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gate_b_nonlabel_connectivity_v1_distance_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_nonlabel_connectivity_v1_note",
+        "gate_b_farfield_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.524,
+      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_DISTANCE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
+      "transitive_descendants": 91
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gate_b_nonlabel_connectivity_v1_joint_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_nonlabel_connectivity_v1_note",
+        "gate_b_farfield_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.524,
+      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_JOINT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_joint.py",
+      "transitive_descendants": 91
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "electrostatics_grown_sign_law_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17272,56 +17297,6 @@
       "ready": false,
       "runner_path": null,
       "transitive_descendants": 94
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_nonlabel_connectivity_v1_distance_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_nonlabel_connectivity_v1_note",
-        "gate_b_farfield_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.524,
-      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_DISTANCE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
-      "transitive_descendants": 91
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_nonlabel_connectivity_v1_joint_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_nonlabel_connectivity_v1_note",
-        "gate_b_farfield_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.524,
-      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_JOINT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_joint.py",
-      "transitive_descendants": 91
     },
     {
       "audit_independence_required": "any_non_self",
@@ -27574,6 +27549,35 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "early_family_transfer_connectivity_diagnosis",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_nonlabel_sign_grown_transfer_note",
+        "claude_complex_action_grown_companion_note",
+        "fixed_field_grown_transfer_scout_note",
+        "gate_b_nonlabel_connectivity_v1_note",
+        "gate_b_weak_connectivity_note",
+        "generated_geometry_synthesis_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -27622,6 +27626,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gate_b_nonlabel_connectivity_v1_h025_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_nonlabel_connectivity_v1_note",
+        "gate_b_farfield_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_H025_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
       "transitive_descendants": 0
     },
     {
@@ -31917,35 +31946,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "early_family_transfer_connectivity_diagnosis",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_nonlabel_sign_grown_transfer_note",
-        "claude_complex_action_grown_companion_note",
-        "fixed_field_grown_transfer_scout_note",
-        "gate_b_nonlabel_connectivity_v1_note",
-        "gate_b_weak_connectivity_note",
-        "generated_geometry_synthesis_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "electrostatics_grown_sign_law_audited_scope_narrow_bounded_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -32197,31 +32197,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_nonlabel_connectivity_v1_h025_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_nonlabel_connectivity_v1_note",
-        "gate_b_farfield_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_H025_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
       "transitive_descendants": 0
     },
     {
@@ -36681,6 +36656,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 56,
-  "total_pending": 1216
+  "ready_count": 59,
+  "total_pending": 1215
 }

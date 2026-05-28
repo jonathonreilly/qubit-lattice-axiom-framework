@@ -103386,22 +103386,46 @@
       "verdict_rationale": null
     },
     "gate_b_nonlabel_connectivity_v1_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T03:08:14.493378+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_weak_connectivity_note": "Bounded weak-connectivity numerical replay on the declared Gate-B h=0.5, four-seed, z={3,4,5} scenario: label-based no-restore connectivity preserves the far-field signature, while the weaker KNN+floor connectivity collapses it; no broad generated-geometry, physical-gravity, or full Gate-B closure is audited."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_weak_connectivity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_weak_connectivity_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_weak_connectivity_note"
+        ],
+        "load_bearing_score": 10.129,
+        "runner_hash": "3b4279cc1e3c8121c3cfb60663e276d509f292d06420a2eeb6014bfcd5d70e5f",
+        "transitive_descendants": 98
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gate-b-nonlabel-connectivity-v1-20260528-r1",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cached runner completes and matches the frozen result: exact grid is 3/3 TOWARD with F~M=1.00, KNN+floor is 0/12 with no F~M fit, and geometry-sector stencil is 12/12 with F~M=1.00. Current one-hop deps are retained-bounded, and older source dependency-status prose is historical rather than audit authority.",
       "claim_id": "gate_b_nonlabel_connectivity_v1_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded non-label connectivity V1 numerical comparison on the declared Gate-B h=0.5, W=10, NL=25, four-seed, z={3,4,5}, drift=0.2 scenario: the geometry-sector forward stencil preserves the far-field signature where naive KNN+floor fails; no universal non-label connectivity theorem, generated-geometry family theorem, or physical Gate-B closure is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T03:08:14.493378+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -103410,19 +103434,19 @@
         "gate_b_farfield_note"
       ],
       "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.129,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The harness compares exact grid, no-restore KNN+floor, and no-restore geometry-sector stencil connectivity at h=0.5 over the declared four-seed z={3,4,5} row, reporting 3/3 TOWARD for exact, 0/12 for KNN+floor, and 12/12 with F~M=1.00 for the geometry-sector stencil.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "51a52e205b2d21a91825d18304b17863d17515ebe04562d4c1fc18abeae90620",
       "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source broadens beyond this V1 candidate, if runner/cache values change, or if downstream work cites this as full generated-geometry or physical Gate-B closure.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -103550,18 +103574,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 3
       },
       "runner_path": "scripts/gate_b_nonlabel_connectivity_v1.py",
       "title": "Gate B Non-Label Connectivity V1 Note",
       "transitive_descendants": 98,
-      "verdict_rationale": null
+      "verdict_rationale": "The row closes as a bounded finite-harness comparison. The runner constructs the geometries, applies the two non-label/connectivity candidates, propagates amplitudes, and computes TOWARD/F~M readouts rather than printing a frozen conclusion. The clean scope is the declared V1 comparison only; broad Gate-B closure and universal non-label connectivity remain unaudited."
     },
     "gate_b_nonlabel_connectivity_v2_note": {
       "audit_date": null,
@@ -104535,11 +104560,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 9.687,
+      "load_bearing_score": 12.687,
       "load_bearing_step": "The harness computes exact-grid, no-restore label-NN, and no-restore KNN+floor rows at h=0.5 over four seeds and z_masses={3,4,5}, reporting 12/12 TOWARD and F~M=1.00 for the first two rows but 0/12 TOWARD and F~M=0.00 for the KNN+floor candidate.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "afe8bfd5270c1ac0781fc1f5189ae023c089bc84868a83299a94f54f9c4fb548",
       "note_path": "docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if the source broadens beyond the declared weak-connectivity candidate, if runner/cache values change, or if downstream work cites this as more than a bounded connectivity-bottleneck replay.",

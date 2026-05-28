@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 168 |
-| **retained_bounded** | 546 |
+| **retained_bounded** | 547 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1216 |
+| unaudited | 1215 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 845 |
+| `audited_clean` | 846 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1446 |
+| `unaudited` | 1445 |
 
 | claim_type | count |
 |---|---:|
@@ -375,6 +375,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_grown_trapping_transport_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `gate_b_nonlabel_connectivity_v1_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5088,6 +5089,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The note's frozen table matches the inspected runner output artifact exactly, and the runner computes the listed quantities deterministically from the stated one-seed bounded harness. The note does not claim full generated-geometry closure or drift stability.
 - **rationale:** The load-bearing claim is narrowly bounded to the single-seed no-restore replay, and the inspected current output reports the same four rows and numerical values quoted in the note. No dependencies are required for this bounded computational table, and the safe-read language preserves the limitation that this is not a full generated-geometry or stability theorem. Residual risk is limited to the harness definition itself, not to a mismatch between the note and its frozen output.
 - **auditor confidence:** high
+
+### `gate_b_nonlabel_connectivity_v1_note`
+
+- **Note:** [`GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](../../docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded non-label connectivity V1 numerical comparison on the declared Gate-B h=0.5, W=10, NL=25, four-seed, z={3,4,5}, drift=0.2 scenario: the geometry-sector forward stencil preserves the far-field signature where naive KNN+floor fails; no universal non-label connectivity theorem, generated-geometry family theorem, or physical Gate-B closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gate-b-nonlabel-connectivity-v1-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The harness compares exact grid, no-restore KNN+floor, and no-restore geometry-sector stencil connectivity at h=0.5 over the declared four-seed z={3,4,5} row, reporting 3/3 TOWARD for exact, 0/12 for KNN+floor, and 12/12 with F~M=1.00 for the geometry-sector stencil.  _(class `C`)_
+- **chain closes:** True — The cached runner completes and matches the frozen result: exact grid is 3/3 TOWARD with F~M=1.00, KNN+floor is 0/12 with no F~M fit, and geometry-sector stencil is 12/12 with F~M=1.00. Current one-hop deps are retained-bounded, and older source dependency-status prose is historical rather than audit authority.
+- **rationale:** The row closes as a bounded finite-harness comparison. The runner constructs the geometries, applies the two non-label/connectivity candidates, propagates amplitudes, and computes TOWARD/F~M readouts rather than printing a frozen conclusion. The clean scope is the declared V1 comparison only; broad Gate-B closure and universal non-label connectivity remain unaudited.
+- **auditor confidence:** medium
 
 ### `gate_b_nonlabel_sign_grown_transfer_note`
 

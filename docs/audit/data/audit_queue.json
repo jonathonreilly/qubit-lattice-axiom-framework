@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 248,
+    "critical": 247,
     "high": 339,
     "leaf": 325,
     "medium": 335
@@ -66,33 +66,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "emergent_lorentz_invariance_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cpt_exact_note",
-        "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
-        "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
-        "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
-      ],
-      "direct_in_degree": 20,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.811,
-      "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_emergent_lorentz_invariance.py",
-      "transitive_descendants": 897
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -37469,6 +37442,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 67,
-  "total_pending": 1247
+  "ready_count": 66,
+  "total_pending": 1246
 }

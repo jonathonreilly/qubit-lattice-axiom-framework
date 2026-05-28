@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 532 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 20 |
-| unaudited | 1246 |
+| unaudited | 1245 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,12 +57,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 826 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1476 |
+| `unaudited` | 1475 |
 
 | claim_type | count |
 |---|---:|
@@ -966,6 +966,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `emergent_lorentz_invariance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4024,6 +4025,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On seed 42, the primary runner's matter-coupled growth rule produces a grown graph with higher effective dimension and much higher peak shell-bin density than the uniform-growth control.  _(class `C`)_
 - **chain closes:** True — The included runner source actually constructs both graphs, evolves the matter field for the coupled case, applies the |psi|^2-biased parent selection, and computes the reported shell-volume and density metrics. The cached output supports the narrowed qualitative claim on this seed.
 - **rationale:** The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim.
+- **auditor confidence:** high
+
+### `emergent_lorentz_invariance_note`
+
+- **Note:** [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](../../docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded structural-dispersion support for the free cubic Z^3 staggered lattice: the source and runner close the low-momentum dispersion expansion, dimension-6 p^4 correction, cubic l=4 angular signature, finite free-H CPT support, and dispersion parity support. Planck-suppressed physical estimates and broad SME Lorentz-invariance interpretation remain conditional on an upstream Planck-pin/unit-map authority not closed by this row.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If exact CPT, tree-level parity protection, and the hierarchy-scale pin a ~ 1/M_Planck are supplied, then E^2=sum_i sin^2(p_i a)/a^2 gives E^2=p^2-(a^2/3)sum_i p_i^4+O(a^4 p^6), with relative suppression (1/5)(E/M_Planck)^2 and cubic l=4 angular structure.  _(class `B`)_
+- **chain closes:** False — The local dispersion, parity, CPT-support, and angular math close; the Planck-suppressed physical readout still imports the Planck-pin/unit-map premise from an upstream package lane that is not a retained one-hop dependency for this row.
+- **rationale:** Issue: the source's Planck-suppressed Lorentz-invariance interpretation depends on the hierarchy-scale identification a ~ 1/M_Planck, but the named Planck scale lane is unaudited and not wired as a direct retained dependency; the wired Planck Target 3 dependency explicitly excludes physical-unit, Newton-coupling, and Planck-unit claims. Why this blocks: the runner checks the consequence of the pin after reading/citing it; it does not derive the unit map or promote the Planck pin to retained authority. Repair target: either wire and audit-clean the Planck scale lane, or split this row so the audited clean core is only the structural dispersion/CPT/parity/cubic-harmonic support and the Planck-suppressed physical estimate waits on a retained unit-map bridge. Claim boundary until fixed: the free staggered lattice has a checked dimension-6 p^4 correction with cubic l=4 angular signature and bounded runner-local CPT/parity support; physical Planck-suppressed Lorentz-invariance estimates remain conditional.
+- **open / conditional deps cited:**
+  - `planck_scale_lane_status_note_2026-04-23`
 - **auditor confidence:** high
 
 ### `emergent_product_law_audit_2026-04-11`

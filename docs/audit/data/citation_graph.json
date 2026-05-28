@@ -42557,7 +42557,7 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "257631c05d33feb5159da56fed871812033b85f2ecfe9c4f69593b85a9a30d68",
+      "note_hash": "df785e04528a3942d0966fa64ff87b305fef87b7ea6d77b7e1353ba9a0a47a42",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation"

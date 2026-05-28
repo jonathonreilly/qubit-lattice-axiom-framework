@@ -46,6 +46,12 @@ The next exact action remains to derive allowed same-surface
 radial/readout/backend laws without forbidden anchors, or produce accepted
 strict top/W pole rows.
 
+Cycle 29 science commit:
+
+```text
+398253f506486d82aba3b116badd08546296b9b2
+```
+
 Cycle 28 adds a forty-second science block, not positive retained-grade
 closure. The block prunes the shortcut:
 

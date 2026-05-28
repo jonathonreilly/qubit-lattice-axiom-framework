@@ -1,5 +1,13 @@
 # No-Go Ledger
 
+- New in the thirty-ninth block: the legacy Hessian/UV bridge selector stack
+  cannot be imported as proof input for this campaign's missing
+  same-surface radial/backend law. The older bridge surfaces are bounded
+  support over plaquette/u0, `alpha_LM`, old Ward-side boundaries,
+  Planck-scale endpoints, target-conditioned `y_t(v)` filters,
+  observed-scale electroweak endpoint data, and proxy bridge families. They do
+  not supply `lambda_top=1/sqrt(2)`, accepted backend/projectors/source
+  matrix elements, or strict top/W pole rows with controls.
 - New in the thirty-eighth block: the origin/main declared-anchor Y_T bounded
   subchain cannot be imported as proof input for this campaign. It is
   retained-bounded only over declared plaquette/u0/alpha_LM, `kappa_EW`, and

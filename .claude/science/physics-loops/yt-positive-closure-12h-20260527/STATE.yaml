@@ -1,23 +1,23 @@
 loop_slug: yt-positive-closure-12h-20260527
 mode: campaign
-supervisor_cycle: 24
+supervisor_cycle: 25
 runtime_budget_seconds: 43200
-remaining_campaign_seconds_at_cycle_start: 15217
+remaining_campaign_seconds_at_cycle_start: 11363
 repo: /private/tmp/yt-primitive-physical-source-theorem-20260526
 branch: physics-loop/yt-primitive-physical-source-theorem-20260526
 pr: 1980
-last_checkpoint_utc: "2026-05-28T02:57:18Z"
+last_checkpoint_utc: "2026-05-28T03:17:43Z"
 lock_mode: branch-local
 lock_note: "Repo-global automation_lock.py status previously failed with permission denied on /Users/jonreilly; continued under branch-local campaign state."
-active_route: origin_main_declared_anchor_firewall_no_go
+active_route: legacy_hessian_bridge_firewall_no_go
 hard_residual: "derive accepted same-surface radial generator dynamics fixing lambda_top=1/sqrt(2), physical zero-singlet top-readout/sign law excluding P_0, or accepted strict same-source top/W pole-row data with contact/FV/IR/model-class controls"
-actual_current_surface_status: no-go / forbidden declared-anchor remote subchain
+actual_current_surface_status: no-go / legacy Hessian-bridge firewall
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 bare_retained_allowed: false
 positive_closure_marker_written: false
-claim_state_movement: "Cycle 24 prunes the origin/main declared-anchor bounded-subchain shortcut. The fetched mainline Y_T declared-anchor packet is retained-bounded only over declared plaquette/u0/alpha_LM, kappa_EW, and Ward-boundary/Clebsch inputs; those are forbidden or open for this campaign, so the remote packet cannot be imported as a positive-closure proof input. Positive closure remains open."
+claim_state_movement: "Cycle 25 prunes the legacy Hessian/UV bridge shortcut. Older bounded bridge-selector surfaces depend on forbidden/open bridge inputs, including plaquette/u0, alpha_LM, old Ward-side boundaries, Planck-scale endpoints, target-conditioned y_t(v) filters, and proxy bridge families; they do not supply lambda_top=1/sqrt(2), accepted backend/projectors/matrix elements, or strict top/W pole rows. Positive closure remains open."
 files_touched:
   - docs/YT_C3_ORIENTATION_PHASE_DYNAMICS_NECESSITY_NO_GO_NOTE_2026-05-27.md
   - scripts/frontier_yt_c3_orientation_phase_dynamics_necessity.py
@@ -112,6 +112,9 @@ files_touched:
   - docs/YT_ORIGIN_MAIN_DECLARED_ANCHOR_FIREWALL_NO_GO_NOTE_2026-05-28.md
   - scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py
   - outputs/yt_origin_main_declared_anchor_firewall_no_go_2026-05-28.json
+  - docs/YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md
+  - scripts/frontier_yt_legacy_hessian_bridge_firewall_no_go.py
+  - outputs/yt_legacy_hessian_bridge_firewall_no_go_2026-05-28.json
   - docs/YT_FULL_CLOSURE_STACK_AND_STRICT_POLE_RESPONSE_CONTRACT_NOTE_2026-05-26.md
   - scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py
   - outputs/yt_full_closure_stack_and_strict_pole_response_contract_2026-05-26.json
@@ -188,7 +191,18 @@ no_go_routes:
   - finite real C3 irrep/dimension/faithfulness facts derive accepted zero-singlet physical top-block membership or the coefficient row
   - freshly fetched origin/main already supplies accepted strict top/W pole-row evidence
   - origin/main declared-anchor Y_T bounded subchain is admissible as current campaign closure proof
+  - legacy Hessian/UV bridge selector support is admissible as current-campaign same-surface radial/backend proof
 commands_run:
+  - "python3 scripts/frontier_yt_legacy_hessian_bridge_firewall_no_go.py -> PASS=98 FAIL=0"
+  - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=522 FAIL=0"
+  - "python3 scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py -> PASS=46 FAIL=0"
+  - "python3 scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py -> PASS=94 FAIL=0"
+  - "python3 scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py -> PASS=74 FAIL=0"
+  - "python3 scripts/frontier_yt_fisher_lsz_radial_generator_normalization_no_go.py -> PASS=105 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_yt_legacy_hessian_bridge_firewall_no_go.py scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py scripts/frontier_yt_c3_same_surface_radial_factor_underdetermination_no_go.py scripts/frontier_yt_strict_sparse_top_w_pole_response_availability_audit.py scripts/frontier_yt_fisher_lsz_radial_generator_normalization_no_go.py -> PASS"
+  - "ruby -e 'require \"yaml\"; YAML.load_file(ARGV[0]); puts \"YAML OK\"' .claude/science/physics-loops/yt-positive-closure-12h-20260527/STATE.yaml -> YAML OK"
+  - "git diff --check -> PASS"
+  - "git commit -m 'Prune legacy Hessian bridge shortcut' -> 49ef3ebaa4d71a3c804b0302705f7fdc0d67463f"
   - "python3 scripts/frontier_yt_origin_main_declared_anchor_firewall_no_go.py -> PASS=46 FAIL=0"
   - "python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py -> PASS=515 FAIL=0"
   - "python3 scripts/frontier_yt_origin_main_strict_pole_row_refresh_no_go.py -> PASS=59 FAIL=0"
@@ -632,8 +646,8 @@ commands_run:
   - "git push origin physics-loop/yt-primitive-physical-source-theorem-20260526 -> branch updated"
   - "gh pr edit 1980 --body-file - -> PR body updated"
 review_disposition: pass_for_no_go_route_pruning_only
-pr_status: "Cycle 24 science commit 836fd2414c8d7cb66b3c865e463e9a4945fb69de and delivery commit cd5c2ad52a949dbb4a9f208a914ccf2a1f80b785 are created locally; branch push and PR #1980 body update are the next delivery actions."
-latest_science_commit: 836fd2414c8d7cb66b3c865e463e9a4945fb69de
-latest_delivery_commit: cd5c2ad52a949dbb4a9f208a914ccf2a1f80b785
+pr_status: "Cycle 25 science commit 49ef3ebaa4d71a3c804b0302705f7fdc0d67463f is created locally; delivery commit, branch push, and PR #1980 body update are pending."
+latest_science_commit: 49ef3ebaa4d71a3c804b0302705f7fdc0d67463f
+latest_delivery_commit: pending
 next_exact_action: "Derive allowed same-surface radial/readout/backend laws without forbidden anchors, or produce accepted strict top/W pole rows."
 stop_condition: "Continue campaign unless positive closure is achieved, runtime expires, or refreshed queue is globally exhausted."

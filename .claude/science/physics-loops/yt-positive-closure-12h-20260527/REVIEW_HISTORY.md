@@ -1,5 +1,40 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 39
+
+Scope:
+
+- legacy Hessian/UV bridge firewall no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the no-go route-pruning artifact. No
+subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner scans legacy Hessian/UV notes and runners, detects forbidden/open bridge inputs, checks strict certificate fields, and records a finite radial witness. |
+| Physics claim boundary | PASS | Status is no-go/legacy Hessian-bridge firewall; it prunes only importing older bounded bridge support into the current positive-closure campaign. |
+| Imports / support | DISCLOSED | Plaquette/u0, `alpha_LM`, old Ward-side boundaries, Planck endpoints, target-conditioned filters, observed-scale endpoint data, and proxy families are not used as proof inputs. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=98 FAIL=0`
+- Full stack runner: `PASS=522 FAIL=0`
+- Adjacent runners passed: origin/main declared-anchor firewall no-go
+  `PASS=46`, C3 same-surface radial-factor no-go `PASS=94`, strict sparse
+  availability audit `PASS=74`, and Fisher/LSZ radial normalization no-go
+  `PASS=105`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 38
 
 Scope:

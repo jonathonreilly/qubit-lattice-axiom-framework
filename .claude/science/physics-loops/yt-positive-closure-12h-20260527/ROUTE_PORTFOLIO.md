@@ -88,6 +88,9 @@ readout/radial route.
 The thirty-eighth route tested whether the origin/main declared-anchor Y_T
 bounded subchain is admissible as a proof input under this campaign's
 forbidden-input firewall.
+The thirty-ninth route tested whether the local legacy Hessian/UV
+bridge-selector stack is admissible as the current campaign's missing
+same-surface radial/backend law.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -110,6 +113,7 @@ forbidden-input firewall.
 | C3 orbit-member/readout covariance | no-go shortcut test | 3 | Pruned: free C3 orbits have no equivariant section; symmetry-breaking sections include `P_0` and nontrivial witnesses |
 | Existing C3/dihedral basepoint anchor | no-go shortcut test | 3 | Pruned: full C3/D3 naturality has no section; the existing reflection axis fixes `P_0`, while rotated axes import the missing basepoint |
 | Strict pole-row repository discovery | no-go current-branch audit | 3 | Pruned: no hidden accepted strict top/W pole-row certificate exists under current Y_T response/backend/projector artifact names |
+| Legacy Hessian/UV bridge firewall | no-go forbidden-input firewall | 3 | Pruned: older bounded bridge support depends on plaquette/u0, alpha_LM, old Ward-side boundaries, Planck endpoints, target-conditioned filters, and proxy families; it supplies no radial/backend or strict pole-row certificate |
 | Orientation-biased C3 phase potential | no-go shortcut test | 3 | Pruned: a reflection-odd `sin(3 phi)` bias still selects a C3 orbit, not a physical member; generic orbits include `P_0` |
 | Source-response extremal readout | no-go shortcut test | 3 | Pruned: signed/absolute maxima select `P_0`; signed/absolute minima give the target row only by importing a minimum-response selector and leave the nontrivial pair degenerate |
 | Strict W/Z plus C3 top-row splice | no-go shortcut test | 3 | Pruned: the formal target splice needs same-surface authority and the physical nontrivial top line; the same denominator admits the `P_0` singlet readout |

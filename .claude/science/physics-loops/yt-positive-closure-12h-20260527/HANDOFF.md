@@ -1,5 +1,57 @@
 # Handoff
 
+Cycle 25 adds a thirty-ninth science block, not positive retained-grade
+closure. The block prunes the local legacy shortcut:
+
+```text
+legacy Hessian/UV bridge selector stack
+  -> admissible current-campaign same-surface radial/backend law
+  -> coefficient-certified Y_T closure.
+```
+
+The older Hessian/UV bridge surfaces are bounded support over
+plaquette/u0, `alpha_LM`, old Ward-side boundaries, Planck-scale endpoints,
+target-conditioned `y_t(v)` filters, observed-scale electroweak endpoint
+data, and proxy bridge families. They do not supply
+`lambda_top=1/sqrt(2)`, accepted backend/projectors/source-generator matrix
+elements, or strict top/W pole rows with contact, FV/IR, and model-class
+controls.
+
+This is a no-go/route-pruning boundary only. No `POSITIVE_CLOSURE` marker was
+written. Retained/proposed-retained wording remains disallowed.
+
+Cycle 25 science commit:
+
+```text
+49ef3ebaa4d71a3c804b0302705f7fdc0d67463f
+```
+
+Cycle 25 artifacts:
+
+- `docs/YT_LEGACY_HESSIAN_BRIDGE_FIREWALL_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_legacy_hessian_bridge_firewall_no_go.py`
+- `outputs/yt_legacy_hessian_bridge_firewall_no_go_2026-05-28.json`
+- updated full closure stack note/runner/output
+- refreshed loop pack
+
+Cycle 25 verification:
+
+- `python3 scripts/frontier_yt_legacy_hessian_bridge_firewall_no_go.py`
+  -> `SUMMARY: PASS=98 FAIL=0`
+- `python3 scripts/frontier_yt_full_closure_stack_and_strict_pole_response_contract.py`
+  -> `SUMMARY: PASS=522 FAIL=0`
+- Adjacent runners passed: origin/main declared-anchor firewall no-go
+  `PASS=46`, C3 same-surface radial-factor no-go `PASS=94`, strict sparse
+  availability audit `PASS=74`, and Fisher/LSZ radial normalization no-go
+  `PASS=105`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
+The next exact action remains to derive allowed same-surface
+radial/readout/backend laws without forbidden anchors, or produce accepted
+strict top/W pole rows.
+
 Cycle 24 adds a thirty-eighth science block, not positive retained-grade
 closure. The block prunes a second origin/main shortcut:
 

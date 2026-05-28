@@ -176549,24 +176549,42 @@
       "verdict_rationale": "A fresh restricted-input audit independently confirms the 1D identity I_1(L)=(L^2-1)/(12L), the d=2 logarithmic divergence by comparison with the lattice |k|^{-2} infrared singularity, and d>=3 boundedness by local integrability near k=0; the cached runner is consistent with those checks and reports PASS=5 FAIL=0. The finite Bogoliubov matrix inequality has the standard spectral/Cauchy-Schwarz proof. The clean bounded theorem still overreaches because the source names a continuous-symmetry order parameter but does not supply the explicit finite-volume operator identity or lower bound relating <[q_k,A_-k]> to |m_L| with constants independent of L. Therefore the row is conditional rather than clean."
     },
     "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T08:32:12.083450+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "Finite Hodge/Bogomolny algebra, BPST radial 8pi^2 normalization integral, and twisted T4 k/N arithmetic after the stated conventions and standard inputs are fixed."
+        },
+        "dep_claim_type": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c71357305e2e76ef597f34f43b6141ac432b18bcc30f441a8c8475872528f260",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "Huygens-fresh-context-019e6db4-e96b-7b63-857f-7ac312c4780e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For an open_gate row, the chain closes because the source keeps the regulator/twist/patching construction load-bearing and does not promote the external context to a retained theorem. The one-hop retained_bounded instanton infrastructure supplies the finite half-action arithmetic and twisted T4 k/N fractional-charge arithmetic used by this bounded gate.",
       "claim_id": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
+      "claim_scope": "External open gate for the meron/fractional-instanton half-action scale 4 pi^2/g^2, scoped to regulator, twist, patching, half-volume, paired/capped, or fractional-instanton contexts; excludes framework substrate identification, hierarchy closure, alpha_LM^16 closure, and scale-ratio derivation.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T08:32:12.083450+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -176574,19 +176592,19 @@
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note records S_half = (1/2) S_inst = 4 pi^2/g^2 only under regulator, meron-pair, half-volume, or twisted-boundary/fractional-instanton boundary data, while refusing standalone singular-meron finite-action status.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5dc5376a531586e51bd9015220de851bf3b4b52ddf264ac326046a10761e8125",
       "note_path": "docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Open gate ratified only at the stated external boundary; any later framework use must separately prove the regulator/twist/patching sector and substrate/observable bridge.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -176632,18 +176650,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 23,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 23
       },
       "runner_path": "scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py",
       "title": "Meron / Fractional-Instanton Half-Action `4\u03c0\u00b2/g\u00b2` \u2014 External Narrow Gate",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Fresh-context audit agreed that the row cleanly records only an external open gate. The runner verifies the half-action algebra and boundary-disclaimer checks, and the note explicitly refuses standalone finite-action singular-meron status, framework substrate identification, hierarchy closure, alpha_LM^16 closure, and 4pi^2-to-ln(M_Pl/v) scale matching. This is clean as an open gate, not a retained positive theorem."
     },
     "meson_charges_from_quark_y_note_2026-05-02": {
       "audit_date": null,

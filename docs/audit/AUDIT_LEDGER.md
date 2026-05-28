@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 171 |
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 8 |
-| open_gate | 25 |
-| unaudited | 1136 |
+| open_gate | 26 |
+| unaudited | 1135 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 891 |
+| `audited_clean` | 892 |
 | `audited_conditional` | 71 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 50 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1366 |
+| `unaudited` | 1365 |
 
 | claim_type | count |
 |---|---:|
@@ -614,6 +614,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_decay_diagnosis_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_annular_tapered_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_compact_floor_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9303,6 +9304,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** False — The finite spectral Bogoliubov inequality and the IR sum behavior check out, but the packet does not fully state and close the order-operator/charge-mode Ward or commutator normalization needed to extract |m_L| from the summed inequality with L-independent constants.
 - **rationale:** A fresh restricted-input audit independently confirms the 1D identity I_1(L)=(L^2-1)/(12L), the d=2 logarithmic divergence by comparison with the lattice |k|^{-2} infrared singularity, and d>=3 boundedness by local integrability near k=0; the cached runner is consistent with those checks and reports PASS=5 FAIL=0. The finite Bogoliubov matrix inequality has the standard spectral/Cauchy-Schwarz proof. The clean bounded theorem still overreaches because the source names a continuous-symmetry order parameter but does not supply the explicit finite-volume operator identity or lower bound relating <[q_k,A_-k]> to |m_L| with constants independent of L. Therefore the row is conditional rather than clean.
 - **auditor confidence:** medium
+
+### `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** External open gate for the meron/fractional-instanton half-action scale 4 pi^2/g^2, scoped to regulator, twist, patching, half-volume, paired/capped, or fractional-instanton contexts; excludes framework substrate identification, hierarchy closure, alpha_LM^16 closure, and scale-ratio derivation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `Huygens-fresh-context-019e6db4-e96b-7b63-857f-7ac312c4780e`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The note records S_half = (1/2) S_inst = 4 pi^2/g^2 only under regulator, meron-pair, half-volume, or twisted-boundary/fractional-instanton boundary data, while refusing standalone singular-meron finite-action status.  _(class `A`)_
+- **chain closes:** True — For an open_gate row, the chain closes because the source keeps the regulator/twist/patching construction load-bearing and does not promote the external context to a retained theorem. The one-hop retained_bounded instanton infrastructure supplies the finite half-action arithmetic and twisted T4 k/N fractional-charge arithmetic used by this bounded gate.
+- **rationale:** Fresh-context audit agreed that the row cleanly records only an external open gate. The runner verifies the half-action algebra and boundary-disclaimer checks, and the note explicitly refuses standalone finite-action singular-meron status, framework substrate identification, hierarchy closure, alpha_LM^16 closure, and 4pi^2-to-ln(M_Pl/v) scale matching. This is clean as an open gate, not a retained positive theorem.
+- **auditor confidence:** high
 
 ### `mesoscopic_surrogate_annular_tapered_sweep_note`
 

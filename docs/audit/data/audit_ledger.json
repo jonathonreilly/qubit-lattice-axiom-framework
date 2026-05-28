@@ -57352,24 +57352,42 @@
       "verdict_rationale": "The bounded support claim closes on its own terms: the runner recomputes the converged same-surface selector, verifies the observed Omega_DM comparator on the admitted one-scalar family, and checks that the coarse grid and 9/62 clue are not stable. The source note explicitly keeps current-bank selector closure open, so this clean audit is limited to the convergence/sanity-check surface and does not ratify a theorem-grade DM selector law. Residual risk is downstream misuse of the admitted-family crossing as a first-principles current-bank closure."
     },
     "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T04:14:02.696683+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited."
+        },
+        "dep_claim_type": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded"
+        },
+        "deps": [
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "36136c7d46fe9eed27c62ab5427c38252e61f9ff952f3187d5f479f22686e4df",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-dm-numerator-selector-boundary-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The endpoint distinctness and non-overlap arithmetic checks close for the helper-defined numbers. The selector-boundary claim does not fully close because the certified thermal interval machinery, plaquette-derived endpoint constants, eta/omega conversion, and packet-completeness premise are not available as retained one-hop authorities in the restricted packet.",
       "claim_id": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-      "claim_scope": null,
+      "claim_scope": "Bounded arithmetic boundary check for the two helper-defined same-surface endpoint couplings alpha_lo and alpha_hi: the cached runner confirms the endpoints are distinct, both exceed alpha_bare, and their certified ratio and Omega_DM intervals do not overlap. This does not audit a theorem-grade selector no-go or current-bank completeness result, and it depends on helper-defined live constants and certified thermal-support machinery not present as retained one-hop authorities in this row.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-28T04:14:02.696683+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -57377,24 +57395,24 @@
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.585,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The two current-bank endpoint couplings are distinct exact reals and map to disjoint certified same-surface DM ratio intervals, while the packet supplies no further selector datum.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "31c938c732fcbd286deb12cb7e0e689da4d88c0b9aa7c68f7f758e4d539eb21d",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add retained one-hop authorities for the certified same-surface ratio bounds, plaquette-derived alpha endpoint definitions, eta/omega conversion, and the packet-completeness/selector-datum premise, or narrow the note to a pure arithmetic lemma over explicitly supplied endpoint and interval numbers.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -57566,16 +57584,17 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 8,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
       "title": "DM Full Closure Same-Surface Numerator Selector Boundary",
       "transitive_descendants": 47,
-      "verdict_rationale": null
+      "verdict_rationale": "The cached runner reports PASS=8 FAIL=0 and the arithmetic is internally consistent: alpha_lo != alpha_hi, both exceed alpha_bare, and the reported R and Omega_DM intervals are disjoint. But the row directly depends only on the thermal integral representation, while the runner imports helper-defined canonical plaquette endpoints, eta/omega conversion, and certified same-surface ratio bounds from the broader DM support layer. The immediately upstream series/tail support surface is itself conditional, and the packet-completeness declaration is print-only rather than a retained constructive selector obstruction. The correct audit result is therefore conditional support for the arithmetic boundary, not a clean selector-boundary theorem."
     },
     "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17": {
       "audit_date": null,

@@ -74,6 +74,9 @@ Current block artifacts:
 - `docs/YT_C3_SHARP_RESPONSE_READOUT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md`
 - `scripts/frontier_yt_c3_sharp_response_readout_underdetermination_no_go.py`
 - `outputs/yt_c3_sharp_response_readout_underdetermination_no_go_2026-05-28.json`
+- `docs/YT_FISHER_LSZ_RADIAL_GENERATOR_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`
+- `scripts/frontier_yt_fisher_lsz_radial_generator_normalization_no_go.py`
+- `outputs/yt_fisher_lsz_radial_generator_normalization_no_go_2026-05-28.json`
 - `docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`
 - `scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py`
 - `outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json`
@@ -116,3 +119,6 @@ Next artifact if continuing:
   radial factor, and target-size response magnitude cannot back-solve either
   the radial factor or zero-singlet readout law. Zero response variance also
   cannot close the gap because it leaves the sharp singlet endpoint available.
+  Fisher/LSZ source normalization cannot close the radial gap because it
+  removes raw source scale but leaves the relative top response coefficient
+  `lambda_top` free.

@@ -1,0 +1,132 @@
+{
+  "actual_current_surface_status": "no-go / open Fisher-LSZ-to-radial-generator factorization",
+  "anchor_statuses": {
+    "c3_compensation_nogo": {
+      "proposal_allowed": false,
+      "status": "no-go / open independent radial and top-readout laws",
+      "trace_class": "negative_route_pruning"
+    },
+    "c3_radial_nogo": {
+      "proposal_allowed": false,
+      "status": "no-go / open same-surface radial generator factorization",
+      "trace_class": "negative_route_pruning"
+    },
+    "c3_sharp_nogo": {
+      "proposal_allowed": false,
+      "status": "no-go / open sharp-readout physical selection law",
+      "trace_class": "negative_route_pruning"
+    },
+    "first_principles": {
+      "proposal_allowed": false,
+      "status": "exact-support / formal-transfer no-go",
+      "trace_class": "negative_route_pruning"
+    },
+    "fisher_arclength": {
+      "proposal_allowed": false,
+      "status": "exact-support / narrowed bridge",
+      "trace_class": "upstream_support"
+    },
+    "fisher_lsz": {
+      "proposal_allowed": false,
+      "status": "exact-support under accepted isolated-pole source surface",
+      "trace_class": "upstream_support"
+    },
+    "full_stack": {
+      "proposal_allowed": false,
+      "status": "exact-support / open strict-response gate",
+      "trace_class": null
+    },
+    "same_surface_factorization": {
+      "proposal_allowed": false,
+      "status": "conditional-support",
+      "trace_class": "upstream_support"
+    },
+    "strict_availability": {
+      "proposal_allowed": false,
+      "status": "no-go",
+      "trace_class": "negative_route_pruning"
+    }
+  },
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate_boundary": {
+    "accepted_same_surface_radial_generator_factorization_derived": false,
+    "accepted_zero_singlet_top_readout_law_derived": false,
+    "bare_retained_allowed": false,
+    "fisher_lsz_bridge_granted": true,
+    "lambda_top_relative_response_free": true,
+    "no_forbidden_imports": true,
+    "proposal_allowed": false,
+    "raw_source_scale_removed": true,
+    "route_pruned": "Fisher/LSZ source normalization plus P_nt support and W row force lambda_top=1/sqrt(2)",
+    "strict_top_w_response_certificate_present": false,
+    "target_requires_lambda_top": "1/sqrt(2)"
+  },
+  "claim_id": "yt_fisher_lsz_radial_generator_normalization_no_go_note_2026-05-28",
+  "deep_work_stretch_summary": {
+    "forbidden_inputs_used": [],
+    "hard_wall": "The current surface lacks an accepted theorem identifying the Fisher/LSZ-normalized C3 source tangent with the top radial mass generator coefficient lambda_top=1/sqrt(2).",
+    "minimal_premises": [
+      "Fisher/LSZ normalized source direction B_x",
+      "same-source W row g_2*A/2",
+      "zero-singlet top readout in P_nt granted for the stretch attempt",
+      "no observed masses, fitted selectors, or target insertion"
+    ]
+  },
+  "fail_count": 0,
+  "first_open_gate_after_this_note": "accepted same-surface radial generator factorization plus physical top-block/readout law excluding P_0, or accepted strict top/W pole rows",
+  "lsz_reparameterization_boundary": {
+    "lsz_insertion": "1/A_res",
+    "lsz_raw_scale_invariant": true,
+    "source_reparameterized_readout": "lambda_top/sqrt(3)",
+    "top_row_depends_on_lambda_top": true,
+    "w_row_depends_on_lambda_top": false
+  },
+  "no_go_audit": {
+    "narrow_route_pruned": "Fisher/LSZ source normalization plus P_nt support and W row force lambda_top=1/sqrt(2)",
+    "reason": "Fisher/LSZ normalization removes the raw source scale beta, but the same normalized source direction B_x admits a finite same-source top response family V_top(lambda_top)=lambda_top*A*B_x.",
+    "remaining_imports": [
+      "accepted same-surface radial generator factorization lambda_top=1/sqrt(2)",
+      "accepted physical top-block/readout law excluding P_0",
+      "accepted strict same-source top/W pole rows with controls"
+    ],
+    "route_still_live": [
+      "derive radial generator factorization from new same-surface dynamics",
+      "derive zero-singlet physical readout plus radial theorem",
+      "produce accepted strict top/W pole rows"
+    ]
+  },
+  "normalization_witness": {
+    "fisher_norm": "beta",
+    "fisher_normalized_source": "B_x",
+    "raw_source": "O_beta=beta*B_x",
+    "raw_source_scale_removed": true,
+    "relative_top_response_coefficient_removed": false,
+    "same_source_readout": "lambda_top/sqrt(3)",
+    "target_lambda_top": "1/sqrt(2)",
+    "top_generator_family": "V_top(lambda_top)=lambda_top*A*B_x",
+    "top_row_magnitude": "lambda_top*A/sqrt(6)",
+    "witnesses": [
+      {
+        "beta": "1",
+        "lambda_top": "1/sqrt(2)",
+        "row": "A/sqrt(12)"
+      },
+      {
+        "beta": "3",
+        "lambda_top": "2/sqrt(2)",
+        "row": "2*A/sqrt(12)"
+      }
+    ]
+  },
+  "pass_count": 105,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Fisher/LSZ source normalization removes raw source scale but does not derive the relative top response coefficient lambda_top=1/sqrt(2), physical zero-singlet readout law, or strict top/W pole rows.",
+  "reachability_to_target": "prunes",
+  "review_surface": [
+    "docs/YT_FISHER_LSZ_RADIAL_GENERATOR_NORMALIZATION_NO_GO_NOTE_2026-05-28.md",
+    "scripts/frontier_yt_fisher_lsz_radial_generator_normalization_no_go.py",
+    "outputs/yt_fisher_lsz_radial_generator_normalization_no_go_2026-05-28.json"
+  ],
+  "trace_class": "negative_route_pruning"
+}

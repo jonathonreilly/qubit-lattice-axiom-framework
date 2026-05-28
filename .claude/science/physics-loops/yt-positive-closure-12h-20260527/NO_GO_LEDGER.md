@@ -239,3 +239,11 @@ feed `A/sqrt(12)`.
   allows both `s=0` (`P_nt`) and `s=1` (`P_0`). The singlet endpoint can be
   target-size with `lambda_top=1/(2sqrt(2))`, so a physical endpoint law
   excluding `P_0` and an independent radial theorem remain load-bearing.
+- New in the thirty-third block: Fisher/LSZ source normalization does not
+  certify the relative top radial generator factor. Fisher arclength and LSZ
+  remove raw source scale `beta`, but the normalized C3 direction still admits
+  `V_top(lambda_top)=lambda_top A B_x`; the top row is
+  `lambda_top A/sqrt(6)` and the target requires `lambda_top=1/sqrt(2)`.
+  Positive closure still needs accepted same-surface radial generator
+  dynamics, a physical top readout excluding `P_0`, or accepted strict top/W
+  pole rows.

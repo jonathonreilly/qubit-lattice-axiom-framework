@@ -1,5 +1,42 @@
 # Review History
 
+## 2026-05-28 Local Review, Block 33
+
+Scope:
+
+- Fisher/LSZ radial-generator normalization no-go note;
+- new runner and output;
+- updated full closure stack note/runner/output;
+- refreshed campaign loop pack.
+
+This is a local review-loop pass for the deep-work no-go route-pruning
+artifact. No subagents were launched in this cycle.
+
+| Reviewer lens | Result | Notes |
+|---|---|---|
+| Code / runner | PASS | New runner checks dependency outputs, Fisher raw-scale normalization, C3 `B_x` normalization, `lambda_top` response family, LSZ/source-reparameterization boundary, certificate fields, and firewalls. |
+| Physics claim boundary | PASS | Status is no-go/open Fisher-LSZ-to-radial-generator factorization; Fisher/LSZ support is not promoted into `lambda_top=1/sqrt(2)`. |
+| Imports / support | DISCLOSED | The radial factor, physical top-readout law excluding `P_0`, and strict pole rows remain open; forbidden mass/target/fit inputs are absent. |
+| Nature retention | OPEN | No positive closure; retained/proposed-retained wording remains disallowed. |
+| Audit compatibility | PASS | `trace_class: negative_route_pruning`, actual status, proposal firewall, and narrow route-pruned scope are explicit. |
+
+Disposition: pass for no-go route-pruning artifact only; independent audit
+still required before any effective retained status.
+
+Verification recorded with this review:
+
+- New runner: `PASS=105 FAIL=0`
+- Full stack runner: `PASS=472 FAIL=0`
+- Adjacent runners passed: Fisher arclength invariant `PASS=56`,
+  Fisher/LSZ bridge `PASS=48`, first-principles transfer response `PASS=56`,
+  same-surface matrix factorization `PASS=77`, radial-factor no-go `PASS=94`,
+  radial/readout compensation no-go `PASS=100`, sharp-response no-go
+  `PASS=98`, nontrivial-block support `PASS=85`, strict sparse availability
+  audit `PASS=74`, and direct sparse certificate `PASS=88`.
+- `python3 -m py_compile ...` passed.
+- YAML validation passed.
+- `git diff --check` passed.
+
 ## 2026-05-28 Local Review, Block 32
 
 Scope:

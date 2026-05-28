@@ -71,6 +71,9 @@ can back-solve zero singlet weight, radial factorization, or physical
 source-orientation/sign.
 The thirty-second route tested whether sharp same-source response, modeled by
 zero `B_x` variance, can supply the missing physical endpoint/readout law.
+The thirty-third route was the required deep-work stretch attempt: it tested
+whether Fisher arclength and Fisher/LSZ source normalization can force the
+missing relative radial generator factor `lambda_top=1/sqrt(2)`.
 
 | Route | Type | Claim movement | Result |
 |---|---|---:|---|
@@ -107,6 +110,7 @@ zero `B_x` variance, can supply the missing physical endpoint/readout law.
 | Same-surface radial factor | no-go shortcut test | 3 | Pruned: `V_top(lambda_top)=lambda_top A B_x` preserves `P_nt`, `B_x`, and the W row while varying the top coefficient |
 | Radial/readout compensation | no-go shortcut test | 3 | Pruned: target magnitude imposes only `lambda_top |3s-1|=1/sqrt(2)` and cannot certify zero singlet weight, radial factorization, or source orientation/sign |
 | Sharp-response readout | no-go shortcut test | 3 | Pruned: zero `B_x` variance selects both `P_nt` and `P_0`, and `P_0` can be target-size with a compensating radial factor |
+| Fisher/LSZ radial generator normalization | deep-work no-go shortcut test | 3 | Pruned: source normalization removes raw scale `beta`, but `lambda_top` remains a relative top response coefficient |
 
 ## Stuck Fan-Out
 
@@ -148,6 +152,7 @@ zero `B_x` variance, can supply the missing physical endpoint/readout law.
 | Same-surface radial factor | Ask whether zero-singlet `P_nt` support plus `B_x` and W row force `lambda_top=1/sqrt(2)` | Fails; the same-source family `V_top(lambda_top)=lambda_top A B_x` varies the coefficient |
 | Radial/readout compensation | Ask whether the target-size row can infer zero singlet support or the radial factor | Fails; `lambda_top |3s-1|=1/sqrt(2)` has multiple finite completions and signed branches need a source-orientation law |
 | Sharp-response readout | Ask whether `Var(B_x)=0` selects the physical nontrivial endpoint | Fails; zero variance selects both `P_nt` and `P_0`, and radial compensation keeps the singlet endpoint target-size |
+| Fisher/LSZ radial generator normalization | Ask whether source arclength/LSZ raw-scale normalization fixes `lambda_top=1/sqrt(2)` | Fails; `O_beta/||O_beta||=B_x` removes `beta`, while `V_top(lambda_top)=lambda_top A B_x` leaves the target coefficient free |
 
 Conclusion: the campaign has narrowed the C3 algebraic routes to a new
 same-surface physical orientation/basepoint/orbit-member theorem selecting a
@@ -217,3 +222,9 @@ The sharp-response readout no-go prunes the next refinement: zero `B_x`
 variance leaves both nontrivial and singlet endpoints. Sharpness is not a
 physical top-block law unless a new same-surface theorem excludes `P_0`; radial
 factorization remains independent.
+The Fisher/LSZ radial generator normalization no-go records the required
+stretch attempt after repeated no-go blocks. It prunes source-normalization as
+the missing radial theorem: Fisher/LSZ removes raw source scale, but not the
+relative top response coefficient. The next positive move must derive that
+relative same-surface radial dynamics, derive a physical top-readout law
+excluding `P_0`, or produce accepted strict pole rows.

@@ -65,6 +65,9 @@ closed exactly:
   sharp-response readout underdetermination no-go: zero response variance
   Var(B_x)=0 selects both P_nt and P_0 endpoints, and the singlet endpoint can
   be target-size with a compensating radial factor
+  Fisher-LSZ radial generator normalization no-go: Fisher arclength and LSZ
+  remove raw source scale, but they do not identify the normalized C3 source
+  tangent with lambda_top=1/sqrt(2)
   zero-singlet top-block membership no-go: current real/reflection-even C3
   block algebra does not exclude P_0; P_nt is selected only after importing
   a sign/order law or minimum-response convention
@@ -565,6 +568,27 @@ the current surface. It would still need a physical endpoint/readout theorem
 excluding `P_0`, plus independent radial generator factorization or strict
 pole rows.
 
+[`YT_FISHER_LSZ_RADIAL_GENERATOR_NORMALIZATION_NO_GO_NOTE_2026-05-28.md`](YT_FISHER_LSZ_RADIAL_GENERATOR_NORMALIZATION_NO_GO_NOTE_2026-05-28.md)
+then tests the deep-work escape hatch: maybe Fisher arclength and LSZ
+normalization fix the same missing radial factor.  They do not.  For
+
+```text
+O_beta = beta B_x,
+O_beta / ||O_beta|| = B_x,
+V_top(lambda_top) = lambda_top A B_x,
+```
+
+the raw source scale `beta` cancels from the Fisher/LSZ-normalized source
+direction, but `lambda_top` remains in
+
+```text
+|dM_t/dell| = lambda_top A/sqrt(6),
+y_readout = lambda_top/sqrt(3).
+```
+
+Thus Fisher/LSZ source normalization is support for source-scale removal, not
+the accepted radial generator theorem `lambda_top=1/sqrt(2)`.
+
 [`YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md`](YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md)
 then tests that narrower blocker directly.  For every real reflection-even
 C3-circulant block operator
@@ -980,6 +1004,12 @@ The top-projector specialization makes the route boundary explicit:
 derive accepted physical top generation projector, not merely the
 generation-blind six-component carrier coefficient.
 ```
+
+The Fisher/LSZ radial generator normalization no-go records the deep-work
+attempt on the same residual: source arclength removes raw scale `beta`, but
+the relative top response coefficient `lambda_top` remains free.  Therefore
+the positive route still needs an accepted radial generator theorem or strict
+pole-row evidence.
 
 The C3 spectral support keeps the best positive projector route explicit:
 
@@ -1611,6 +1641,9 @@ proposal_allowed_reason: |
   selects both P_nt and P_0 endpoints, and the P_0 endpoint can be target-size
   with a compensating radial factor. A physical endpoint law excluding P_0 and
   an independent radial theorem remain load-bearing.
+  The Fisher-LSZ radial generator normalization no-go prunes the deep-work
+  source-normalization escape hatch: Fisher arclength and LSZ remove raw
+  source scale, but not the relative top response coefficient lambda_top.
   The strict W/Z plus C3 top-row splice no-go prunes the current strict-route
   shortcut: denominator-side W/Z support plus a conditional C3 target row is
   not yet an accepted same-source top/W pole packet because the same-surface

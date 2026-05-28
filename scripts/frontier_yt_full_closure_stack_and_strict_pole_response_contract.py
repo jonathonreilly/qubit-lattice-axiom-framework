@@ -179,6 +179,7 @@ C3_NONTRIVIAL_BLOCK_MATRIX_ELEMENT_SUPPORT = DOCS / "YT_C3_NONTRIVIAL_BLOCK_MATR
 C3_SAME_SURFACE_RADIAL_FACTOR_NOGO = DOCS / "YT_C3_SAME_SURFACE_RADIAL_FACTOR_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md"
 C3_RADIAL_READOUT_COMPENSATION_NOGO = DOCS / "YT_C3_RADIAL_READOUT_COMPENSATION_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md"
 C3_SHARP_RESPONSE_READOUT_NOGO = DOCS / "YT_C3_SHARP_RESPONSE_READOUT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md"
+FISHER_LSZ_RADIAL_GENERATOR_NOGO = DOCS / "YT_FISHER_LSZ_RADIAL_GENERATOR_NORMALIZATION_NO_GO_NOTE_2026-05-28.md"
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO = DOCS / "YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md"
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO = DOCS / "YT_C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NO_GO_NOTE_2026-05-27.md"
 C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO = DOCS / "YT_C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NO_GO_NOTE_2026-05-27.md"
@@ -246,6 +247,9 @@ C3_RADIAL_READOUT_COMPENSATION_NOGO_OUT = (
 )
 C3_SHARP_RESPONSE_READOUT_NOGO_OUT = (
     ROOT / "outputs" / "yt_c3_sharp_response_readout_underdetermination_no_go_2026-05-28.json"
+)
+FISHER_LSZ_RADIAL_GENERATOR_NOGO_OUT = (
+    ROOT / "outputs" / "yt_fisher_lsz_radial_generator_normalization_no_go_2026-05-28.json"
 )
 C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT = ROOT / "outputs" / "yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json"
 C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT = ROOT / "outputs" / "yt_c3_source_orientation_sign_selector_no_go_2026-05-27.json"
@@ -354,6 +358,7 @@ def part1_anchors() -> dict[str, str]:
         C3_SAME_SURFACE_RADIAL_FACTOR_NOGO,
         C3_RADIAL_READOUT_COMPENSATION_NOGO,
         C3_SHARP_RESPONSE_READOUT_NOGO,
+        FISHER_LSZ_RADIAL_GENERATOR_NOGO,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO,
         C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO,
@@ -415,6 +420,7 @@ def part1_anchors() -> dict[str, str]:
         C3_SAME_SURFACE_RADIAL_FACTOR_NOGO_OUT,
         C3_RADIAL_READOUT_COMPENSATION_NOGO_OUT,
         C3_SHARP_RESPONSE_READOUT_NOGO_OUT,
+        FISHER_LSZ_RADIAL_GENERATOR_NOGO_OUT,
         C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT,
         C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT,
         C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT,
@@ -478,6 +484,7 @@ def part1_anchors() -> dict[str, str]:
         "zero-singlet top-block membership no-go",
         "radial/readout compensation underdetermination no-go",
         "sharp-response readout underdetermination no-go",
+        "Fisher-LSZ radial generator normalization no-go",
         "source-orientation sign-selector no-go",
         "trace-free centered-source no-go",
         "minimum-information readout zero-singlet no-go",
@@ -559,6 +566,7 @@ def part2_support_outputs() -> dict[str, Any]:
     c3_same_surface_radial_factor_nogo = load_json(C3_SAME_SURFACE_RADIAL_FACTOR_NOGO_OUT)
     c3_radial_readout_compensation_nogo = load_json(C3_RADIAL_READOUT_COMPENSATION_NOGO_OUT)
     c3_sharp_response_readout_nogo = load_json(C3_SHARP_RESPONSE_READOUT_NOGO_OUT)
+    fisher_lsz_radial_generator_nogo = load_json(FISHER_LSZ_RADIAL_GENERATOR_NOGO_OUT)
     c3_zero_singlet_top_block_membership_nogo = load_json(C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NOGO_OUT)
     c3_source_orientation_sign_selector_nogo = load_json(C3_SOURCE_ORIENTATION_SIGN_SELECTOR_NOGO_OUT)
     c3_trace_free_centered_source_zero_singlet_nogo = load_json(C3_TRACE_FREE_CENTERED_SOURCE_ZERO_SINGLET_NOGO_OUT)
@@ -768,6 +776,31 @@ def part2_support_outputs() -> dict[str, Any]:
         c3_sharp_response_readout_nogo.get("certificate_boundary", {})
         .get("zero_variance_allows_singlet_endpoint")
         is True,
+    )
+    check(
+        "Fisher-LSZ radial generator normalization no-go passed",
+        fisher_lsz_radial_generator_nogo.get("fail_count") == 0,
+        fisher_lsz_radial_generator_nogo.get("fail_count"),
+    )
+    check(
+        "Fisher-LSZ radial generator route is pruned",
+        fisher_lsz_radial_generator_nogo.get("trace_class") == "negative_route_pruning",
+        fisher_lsz_radial_generator_nogo.get("trace_class"),
+    )
+    check(
+        "Fisher-LSZ removes raw source scale",
+        fisher_lsz_radial_generator_nogo.get("certificate_boundary", {}).get("raw_source_scale_removed")
+        is True,
+    )
+    check(
+        "Fisher-LSZ leaves lambda_top free",
+        fisher_lsz_radial_generator_nogo.get("certificate_boundary", {}).get("lambda_top_relative_response_free")
+        is True,
+    )
+    check(
+        "Fisher-LSZ route still requires lambda_top=1/sqrt(2)",
+        fisher_lsz_radial_generator_nogo.get("certificate_boundary", {}).get("target_requires_lambda_top")
+        == "1/sqrt(2)",
     )
     check(
         "C3 zero-singlet top-block membership no-go passed",
@@ -1488,6 +1521,7 @@ def part2_support_outputs() -> dict[str, Any]:
         "c3_same_surface_radial_factor_nogo": c3_same_surface_radial_factor_nogo,
         "c3_radial_readout_compensation_nogo": c3_radial_readout_compensation_nogo,
         "c3_sharp_response_readout_nogo": c3_sharp_response_readout_nogo,
+        "fisher_lsz_radial_generator_nogo": fisher_lsz_radial_generator_nogo,
         "c3_zero_singlet_top_block_membership_nogo": c3_zero_singlet_top_block_membership_nogo,
         "c3_source_orientation_sign_selector_nogo": c3_source_orientation_sign_selector_nogo,
         "c3_trace_free_centered_source_zero_singlet_nogo": c3_trace_free_centered_source_zero_singlet_nogo,
@@ -1727,7 +1761,7 @@ def main() -> int:
         {
             "step": 6,
             "name": "strict same-source top/W response rows",
-            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_radial_factor_no_go_shows_zero_singlet_support_still_needs_lambda_top_equal_1_over_sqrt2_radial_readout_compensation_no_go_shows_target_magnitude_does_not_back_solve_zero_singlet_or_radial_factor_sharp_response_readout_no_go_shows_zero_variance_still_allows_singlet_endpoint_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
+            "status": "remaining_audit_clean_positive_route_evidence_absent_exact_obstruction_prunes_derivation_from_current_same_source_w_row_symbolic_top_support_alone_first_principles_transfer_response_reduces_blocker_to_sector_matrix_element_factorization_boundary_shows_A_over_sqrt12_is_conditional_on_generator_and_nontrivial_line_nontrivial_block_support_shows_zero_singlet_weight_suffices_and_complex_line_isolation_is_not_needed_for_coefficient_radial_factor_no_go_shows_zero_singlet_support_still_needs_lambda_top_equal_1_over_sqrt2_radial_readout_compensation_no_go_shows_target_magnitude_does_not_back_solve_zero_singlet_or_radial_factor_sharp_response_readout_no_go_shows_zero_variance_still_allows_singlet_endpoint_fisher_lsz_radial_generator_no_go_shows_source_scale_normalization_does_not_fix_lambda_top_bounded_sparse_certificate_harness_present_strict_wz_plus_c3_top_row_splice_pruned",
             "closed": False,
             "next_action": "derive accepted same-surface generator factorization plus a new sign/order/readout law excluding P_0, or produce a new accepted strict pole-response packet because none is present under existing artifact names",
         },
@@ -1857,6 +1891,11 @@ def main() -> int:
             "singlet endpoint can be target-size with a compensating radial "
             "factor, so sharpness is not a physical top-block selection law "
             "on the current surface. "
+            "The Fisher/LSZ radial generator normalization shortcut is "
+            "pruned as the required deep-work stretch attempt: Fisher "
+            "arclength and LSZ remove raw source scale, but they do not "
+            "identify the normalized C3 source tangent with the relative "
+            "top response coefficient lambda_top=1/sqrt(2). "
             "The zero-singlet top-block membership shortcut from the current "
             "real/reflection-even C3 block data is now pruned too: the same "
             "finite block algebra permits P_0 or P_nt depending on an "
@@ -1928,6 +1967,7 @@ def main() -> int:
             "c3_same_surface_radial_factor_nogo_fail_count": support_outputs["c3_same_surface_radial_factor_nogo"].get("fail_count"),
             "c3_radial_readout_compensation_nogo_fail_count": support_outputs["c3_radial_readout_compensation_nogo"].get("fail_count"),
             "c3_sharp_response_readout_nogo_fail_count": support_outputs["c3_sharp_response_readout_nogo"].get("fail_count"),
+            "fisher_lsz_radial_generator_nogo_fail_count": support_outputs["fisher_lsz_radial_generator_nogo"].get("fail_count"),
             "c3_zero_singlet_top_block_membership_nogo_fail_count": support_outputs["c3_zero_singlet_top_block_membership_nogo"].get("fail_count"),
             "c3_source_orientation_sign_selector_nogo_fail_count": support_outputs["c3_source_orientation_sign_selector_nogo"].get("fail_count"),
             "c3_trace_free_centered_source_zero_singlet_nogo_fail_count": support_outputs["c3_trace_free_centered_source_zero_singlet_nogo"].get("fail_count"),
@@ -1989,6 +2029,9 @@ def main() -> int:
             "docs/YT_C3_SHARP_RESPONSE_READOUT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-28.md",
             "scripts/frontier_yt_c3_sharp_response_readout_underdetermination_no_go.py",
             "outputs/yt_c3_sharp_response_readout_underdetermination_no_go_2026-05-28.json",
+            "docs/YT_FISHER_LSZ_RADIAL_GENERATOR_NORMALIZATION_NO_GO_NOTE_2026-05-28.md",
+            "scripts/frontier_yt_fisher_lsz_radial_generator_normalization_no_go.py",
+            "outputs/yt_fisher_lsz_radial_generator_normalization_no_go_2026-05-28.json",
             "docs/YT_C3_ZERO_SINGLET_TOP_BLOCK_MEMBERSHIP_NO_GO_NOTE_2026-05-27.md",
             "scripts/frontier_yt_c3_zero_singlet_top_block_membership_no_go.py",
             "outputs/yt_c3_zero_singlet_top_block_membership_no_go_2026-05-27.json",

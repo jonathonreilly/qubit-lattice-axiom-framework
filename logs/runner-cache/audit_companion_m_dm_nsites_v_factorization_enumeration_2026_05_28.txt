@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_m_dm_nsites_v_factorization_enumeration_2026_05_28.py
+runner_sha256: fcf9973f15572ee7a6b79d42f9a5122e72157ea65a8f967ff0e09317af841901
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+========================================================================================
+INTEGER-16 FACTORIZATION CATALOG COMPANION
+Scope: exact arithmetic plus source-boundary hygiene only.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: exact arithmetic identities
+----------------------------------------------------------------------------------------
+  [PASS] F1 arithmetic: 2^4 = 16
+  [PASS] SU(3) C_F at N_c=3 equals 4/3 (C_F=4/3)
+  [PASS] F2 first factor: 2 C_F = 8/3 (2 C_F=8/3)
+  [PASS] F2 arithmetic: (8/3) * 6 = 16
+  [PASS] F2 arithmetic by Fraction independent path
+  [PASS] F3 spinor factor at d=4 is 4 (N_spinor=4)
+  [PASS] F3 taste factor at d=4 is 4 (N_taste=4)
+  [PASS] F3 arithmetic: 4 * 4 = 16
+  [PASS] F4 arithmetic: L_t * 4 = 16 at L_t=4
+  [PASS] Klein-four orbit count ceil(L_t/4)=1 at L_t=4
+
+----------------------------------------------------------------------------------------
+Part 2: divisor and source-reading distinctness
+----------------------------------------------------------------------------------------
+  [PASS] positive divisors of 16 are {1,2,4,8,16} ([1, 2, 4, 8, 16])
+  [PASS] integer divisor pairs are (1,16), (2,8), (4,4) ([(1, 16), (2, 8), (4, 4)])
+  [PASS] F2 rational factorization is not an integer divisor pair
+  [PASS] four catalog labels are present
+  [PASS] F3 and F4 share arithmetic but have different source readings
+  [PASS] all four source readings are distinct
+
+----------------------------------------------------------------------------------------
+Part 3: cited source files
+----------------------------------------------------------------------------------------
+  [PASS] cited file exists: docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
+  [PASS] cited file exists: docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md
+  [PASS] cited file exists: docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md
+  [PASS] cited file exists: docs/OBSERVABLE_PRINCIPLE_KLEIN_FOUR_APBC_ORBIT_PARTITION_CLOSED_FORM_NARROW_THEOREM_NOTE_2026-05-17.md
+  [PASS] cited file exists: docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md
+
+----------------------------------------------------------------------------------------
+Part 4: source-note boundary hygiene
+----------------------------------------------------------------------------------------
+  [PASS] required source boundary text: '**Type:** bounded_theorem'
+  [PASS] required source boundary text: '**Audit status:** assigned only by the independent audit lane.'
+  [PASS] required source boundary text: 'does not derive `m_DM = N_sites · v`'
+  [PASS] required source boundary text: 'does not assign audit status'
+  [PASS] required source boundary text: 'does not ship a new no-go'
+  [PASS] required source boundary text: 'not a claim that no future source can introduce another reading'
+  [PASS] required source boundary text: 'The audit ledger is the authority for live effective status.'
+  [PASS] required source boundary text: 'F1'
+  [PASS] required source boundary text: 'F2'
+  [PASS] required source boundary text: 'F3'
+  [PASS] required source boundary text: 'F4'
+  [PASS] forbidden source overclaim absent: 'audited_clean'
+  [PASS] forbidden source overclaim absent: 'promotes the bounded eta prediction'
+  [PASS] forbidden source overclaim absent: 'closes m_DM = N_sites · v'
+  [PASS] forbidden source overclaim absent: 'new axiom proposed'
+  [PASS] forbidden source overclaim absent: 'lattice-realization-invariant by definition'
+
+========================================================================================
+SUMMARY: PASS=37 FAIL=0
+========================================================================================
+
+----- stderr -----
+

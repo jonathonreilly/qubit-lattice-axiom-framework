@@ -17813,6 +17813,26 @@
       "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
     },
     {
+      "from": "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28",
+      "to": "hierarchy_formula_honest_status_note_2026-05-10"
+    },
+    {
+      "from": "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28",
+      "to": "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27"
+    },
+    {
+      "from": "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28",
+      "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28",
+      "to": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28"
+    },
+    {
       "from": "native_gauge_closure_note",
       "to": "graph_first_selector_derivation_note"
     },
@@ -64716,6 +64736,24 @@
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
       "title": "L\u00fcders Sequential-Product Conditional Bridge (Narrow)"
     },
+    "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28": {
+      "claim_id": "m_dm_nsites_v_integer_16_factorization_enumeration_narrow_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "hierarchy_formula_honest_status_note_2026-05-10",
+        "cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27",
+        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+        "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+        "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "cbbe6050263bb72d079e6e01543e6768aae09277c0ce04d6ec9cbc36d879a20f",
+      "path": "docs/M_DM_NSITES_V_INTEGER_16_FACTORIZATION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/audit_companion_m_dm_nsites_v_factorization_enumeration_2026_05_28.py",
+      "title": "`m_DM = N_sites \u00b7 v` Integer-16 Factorization Catalog"
+    },
     "main_open_cubic_validation_2026-04-11": {
       "claim_id": "main_open_cubic_validation_2026-04-11",
       "claim_type_author_hint": null,
@@ -86473,7 +86511,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 653,
+      "bounded_theorem": 654,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -86482,7 +86520,7 @@
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1063,
+      "bounded_theorem": 1064,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -86490,10 +86528,10 @@
       "open_gate": 128,
       "positive_theorem": 584
     },
-    "edge_count": 9864,
-    "leaf_count": 808,
-    "node_count": 2582,
+    "edge_count": 9869,
+    "leaf_count": 806,
+    "node_count": 2583,
     "root_count": 856,
-    "runners_with_path": 2157
+    "runners_with_path": 2158
   }
 }

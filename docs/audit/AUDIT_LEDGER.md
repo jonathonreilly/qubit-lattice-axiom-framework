@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 147 |
 | **retained_no_go** | 169 |
-| **retained_bounded** | 564 |
+| **retained_bounded** | 565 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1185 |
+| unaudited | 1184 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 18 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 864 |
+| `audited_clean` | 865 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1415 |
+| `unaudited` | 1414 |
 
 | claim_type | count |
 |---|---:|
@@ -953,6 +953,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_family_scout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam1_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam1_seed1_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wave_direct_dm_h025_fam2_seed0_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed1_control_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14510,6 +14511,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The supplied runner cache matches the table and summary in the note, and the primary runner fixes the claimed family, seed, H, and strength ladder before calling the shared compute path. Within the restricted packet, the claim remains bounded to this family/seed/H control replay and does not require a portability law.
 - **rationale:** The runner output reports an exact S=0 null, negative delta_hist at all three nonzero strengths, R_hist values from -29.02% to -30.37%, and a 5.22% scaled-magnitude spread, matching the source note. The runner source is not a constant printer: it delegates to measure_dm after pinning the CLI arguments to Fam1, seed 1, H=0.25, and the included helper path constructs the lattice, histories, wave field, and beam response rather than importing the contested table from another note. The note's conclusion is appropriately bounded and explicitly avoids promoting a portability law.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_seed0_boundary_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Fam2 seed0 S=0.004 direct-dM matched-history boundary certificate over H=0.50, 0.35, and 0.25: the sign survives and the fine-H delta remains materially nonzero, but the old high-band magnitude collapses below 30%. No portability, family-wide, seed-wide, Fam1/Fam3, lab-facing magnitude, or physical-law claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `fresh-agent-Aristotle-019e6ce1-cd25-7ec1-95be-2fff6356da6a`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the tested Fam2 seed-0 row, the direct-dM sign survives but the old higher-magnitude band still collapses into the lower-magnitude regime.  _(class `C`)_
+- **chain closes:** True — The row-specific runner recomputes the three H rows from the matched-history solver and its cached output matches the source table with PASS=21 FAIL=0. Independent arithmetic confirms delta_hist=dM(early)-dM(late), the reported R_hist values, the negative sign at all three H values, material fine-H delta, monotone |R_hist| compression, and fine |R_hist| below 30%; the one-hop control/synthesis dependencies are retained-bounded and used only as bounded context.
+- **rationale:** A restricted fresh-context auditor confirmed that the cached runner exits cleanly, recomputes the declared Fam2 seed0 S=0.004 H rows, and supports the boundary interpretation. The printed values close the numerical checks: delta_hist is negative at H=0.50, 0.35, and 0.25, fine-H |delta_hist| is above 1e-3, and |R_hist| compresses from 42.33% to 37.73% to 22.61%, below the 30% boundary threshold. The clean scope is only this bounded row-specific certificate; the note explicitly excludes portability or family-wide fine-H promotion.
+- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam2_seed0_control_note`
 

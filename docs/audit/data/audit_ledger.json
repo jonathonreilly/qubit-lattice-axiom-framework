@@ -291700,24 +291700,46 @@
       "verdict_rationale": null
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-28T04:40:55.438431+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+        ],
+        "load_bearing_score": 4.7,
+        "runner_hash": "5277344ddb09006632fc5f7af0dd59868be50f5e45b1d8ad426725105333522d",
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-Aristotle-019e6ce1-cd25-7ec1-95be-2fff6356da6a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The row-specific runner recomputes the three H rows from the matched-history solver and its cached output matches the source table with PASS=21 FAIL=0. Independent arithmetic confirms delta_hist=dM(early)-dM(late), the reported R_hist values, the negative sign at all three H values, material fine-H delta, monotone |R_hist| compression, and fine |R_hist| below 30%; the one-hop control/synthesis dependencies are retained-bounded and used only as bounded context.",
       "claim_id": "wave_direct_dm_h025_fam2_seed0_boundary_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded Fam2 seed0 S=0.004 direct-dM matched-history boundary certificate over H=0.50, 0.35, and 0.25: the sign survives and the fine-H delta remains materially nonzero, but the old high-band magnitude collapses below 30%. No portability, family-wide, seed-wide, Fam1/Fam3, lab-facing magnitude, or physical-law claim is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-28T04:40:55.438431+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -291726,22 +291748,22 @@
         "wave_direct_dm_h025_fam2_two_point_synthesis_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 4.7,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the tested Fam2 seed-0 row, the direct-dM sign survives but the old higher-magnitude band still collapses into the lower-magnitude regime.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8bdadfd109517ae01166863d103ce94559f775a2aebbaefcb3833de11e56d502",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Residual risks: re-audit if the claim is widened beyond Fam2 seed0 S=0.004 and the three H rows, if helper solver semantics change, or if this boundary result is used as evidence for family-wide portability or a physical law.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -291833,18 +291855,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 3,
         "B": 0,
-        "C": 0,
+        "C": 18,
         "D": 0,
-        "total_pass": 0
+        "total_fail": 0,
+        "total_pass": 21
       },
       "runner_path": "scripts/wave_direct_dm_h025_fam2_seed0_boundary_certificate.py",
       "title": "Wave Direct-dM H=0.25 Fam2 Seed0 Boundary Note",
       "transitive_descendants": 12,
-      "verdict_rationale": null
+      "verdict_rationale": "A restricted fresh-context auditor confirmed that the cached runner exits cleanly, recomputes the declared Fam2 seed0 S=0.004 H rows, and supports the boundary interpretation. The printed values close the numerical checks: delta_hist is negative at H=0.50, 0.35, and 0.25, fine-H |delta_hist| is above 1e-3, and |R_hist| compresses from 42.33% to 37.73% to 22.61%, below the 30% boundary threshold. The clean scope is only this bounded row-specific certificate; the note explicitly excludes portability or family-wide fine-H promotion."
     },
     "wave_direct_dm_h025_fam2_seed0_boundary_note_2026-05-17": {
       "audit_date": null,
@@ -292523,11 +292546,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.907,
+      "load_bearing_score": 9.907,
       "load_bearing_step": "Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is now controlled rather than one-strength.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "7421f5597882251be66eed2dd600273da117a262f7df1199fb2b1cf97250f363",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md",
       "notes_for_re_audit_if_any": "If future edits make the coarse-H bands or Fam1 comparison load-bearing rather than contextual boundary language, add retained one-hop dependencies and re-audit the enlarged scope.",

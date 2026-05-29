@@ -1,0 +1,23 @@
+
+========================================================================
+Angular structure of U on a=rho cos(phi), b=rho sin(phi)
+========================================================================
+  b/a=1/sqrt2 (r=1/2, Q=2/3) is phi=35.26deg. Look for the U-minimum angle.
+   m      rho   phi*(U-min)   b/a    r      U(b=0)     U(r=1/2)   cost
+   -1.80  0.3     0.0deg     0.000  0.000  -1.36437  -1.33132  +0.03305
+   -1.80  0.6     0.0deg     0.000  0.000  -1.53009  -1.45322  +0.07686
+   -1.00  0.3     0.0deg     0.000  0.000  -1.82033  -1.78456  +0.03578
+   -1.00  0.6     0.0deg     0.000  0.000  -1.99774  -1.91975  +0.07798
+   +0.10  0.3     0.0deg     0.000  0.000  -2.46604  -2.43252  +0.03351
+   +0.10  0.6     0.0deg     0.000  0.000  -2.62868  -2.56127  +0.06741
+
+========================================================================
+VERDICT
+========================================================================
+  U minimized at phi=0 (b=0) for every m, rho: the uniform condensate wins ->
+  r=0 -> Q=1/3 (degenerate). NO feature at b/a=1/sqrt2; NOT O(2)-flat (staggered
+  strictly costs energy). Third independent fermion-sector computation agreeing
+  the vacuum drives r->0, never r=1/2. So Q=2/3 is NOT a fermion-vacuum effect at
+  mean-field. Robust negative for that hypothesis; RELOCATES the splitting to the
+  action's explicit (bridge-gap) structure or a non-fermionic (gauge) sector --
+  untested here, route open not closed.

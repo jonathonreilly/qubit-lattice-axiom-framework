@@ -1,0 +1,126 @@
+===== runner cache v1 =====
+runner: scripts/frontier_shape_theorem_robustness_audit.py
+runner_sha256: 45f075ef8fa590232dda7ef9c49845a3a38bf8a397555cc377472587f62c3ea7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================
+G5 SHAPE-THEOREM ROBUSTNESS AUDIT
+==============================================================================
+
+==============================================================================
+STRESS 1: alternative Gamma_i axis choices (axis-1 / 2 / 3 branches)
+==============================================================================
+  [PASS] axis 1: first-order vanishing on T_1 (L-taste)
+  [PASS] axis 1: second-order return species block = I_3  (diag=[ 1.000000,  1.000000,  1.000000])
+    axis 1: unreachable T_2 states = [(0, 1, 1)]
+  [PASS] axis 1: predicted unreachable T_2 state is ((0, 1, 1))  (observed [(0, 1, 1)])
+  [PASS] axis 2: first-order vanishing on T_1 (L-taste)
+  [PASS] axis 2: second-order return species block = I_3  (diag=[ 1.000000,  1.000000,  1.000000])
+    axis 2: unreachable T_2 states = [(1, 0, 1)]
+  [PASS] axis 2: predicted unreachable T_2 state is ((1, 0, 1))  (observed [(1, 0, 1)])
+  [PASS] axis 3: first-order vanishing on T_1 (L-taste)
+  [PASS] axis 3: second-order return species block = I_3  (diag=[ 1.000000,  1.000000,  1.000000])
+    axis 3: unreachable T_2 states = [(1, 1, 0)]
+  [PASS] axis 3: predicted unreachable T_2 state is ((1, 1, 0))  (observed [(1, 1, 0)])
+  [PASS] S_3 symmetry: all three axes have exactly one unreachable T_2 state
+  [PASS] S_3 symmetry: the three unreachable states are the three T_2 states
+
+==============================================================================
+STRESS 2: O_3 contribution to the Gamma_1 fourth-order return
+==============================================================================
+    n=1: ||return_with_O3 - return_without_O3||_F = 0.000e+00, species block diff = 0.000e+00
+  [PASS] fourth-order-family n=1: O_3 contributes nothing (species)
+    n=2: ||return_with_O3 - return_without_O3||_F = 0.000e+00, species block diff = 0.000e+00
+  [PASS] fourth-order-family n=2: O_3 contributes nothing (species)
+    n=3: ||return_with_O3 - return_without_O3||_F = 0.000e+00, species block diff = 0.000e+00
+  [PASS] fourth-order-family n=3: O_3 contributes nothing (species)
+    n=4: ||return_with_O3 - return_without_O3||_F = 0.000e+00, species block diff = 0.000e+00
+  [PASS] fourth-order-family n=4: O_3 contributes nothing (species)
+  [PASS] Direct one-hop T_1 -> O_3 vanishes  (|P_O3 G1 P_T1|_F = 0.000e+00)
+    |P_O3 G1 P_T2|_F = 1.414e+00
+    Path T1->T2->O3->T2->T1 species diag = [ 0.000000,  0.000000,  0.000000]
+  [PASS] Path T1->T2->O3->T2->T1 is diagonal on species
+  [PASS] Path T1->T2->O3->T2->T1 diag: species 2 = species 3 (S_2 residual)  (d2=0.000000, d3=0.000000)
+  [PASS] Path T1->T2->O3->T2->T1 species 1 differs from species 2  (d1=0.000000, d2=0.000000)
+
+==============================================================================
+STRESS 3: taste doublet L- vs R- species blocks
+==============================================================================
+  [PASS] L-taste second-order species block = I_3
+  [PASS] R-taste second-order species block = I_3
+  [PASS] L and R taste species blocks agree
+  [PASS] L-taste weighted Sigma = diag(w_O0, w_a, w_b) exactly  (diag=[ 0.370000,  1.190000,  2.310000])
+  [PASS] R-taste weighted Sigma = diag(w_O0, w_a, w_b) exactly  (diag=[ 0.370000,  1.190000,  2.310000])
+  [PASS] R-taste does NOT break the residual S_2 (w_a = w_b requirement unchanged)
+
+==============================================================================
+STRESS 4: alternative intermediate-state splittings
+==============================================================================
+    P_O0 alone:         diag = [ 1.000000,  0.000000,  0.000000]
+    P_T2 alone:         diag = [ 0.000000,  1.000000,  1.000000]
+    P_T2(1,1,0) alone:  diag = [ 0.000000,  1.000000,  0.000000]
+    P_T2(1,0,1) alone:  diag = [ 0.000000,  0.000000,  1.000000]
+    P_T2(0,1,1) alone:  diag = [ 0.000000,  0.000000,  0.000000]
+  [PASS] P_O0 alone: diag = (1, 0, 0)
+  [PASS] P_T2(1,1,0) alone: diag = (0, 1, 0)
+  [PASS] P_T2(1,0,1) alone: diag = (0, 0, 1)
+  [PASS] P_T2(0,1,1) alone: diag = (0, 0, 0) — unreachable state
+  [PASS] P_T2 = sum of single-state T_2 projectors
+  [PASS] Sigma(P_T2) = Sigma(P_T2_110) + Sigma(P_T2_101) + Sigma(P_T2_011)
+    P_T2(contains ax1): diag = [ 0.000000,  1.000000,  1.000000]
+    P_T2(lacks ax1):    diag = [ 0.000000,  0.000000,  0.000000]
+  [PASS] P_T2(contains axis 1) carries all of T_2's contribution
+  [PASS] P_T2(lacks axis 1) contributes zero
+
+==============================================================================
+STRESS 5: S_3 permutation gauge check of the unreachability
+==============================================================================
+  [PASS] perm (1, 2, 3): U commutes with P_O0, P_T1, P_T2, P_O3  (max commutator = 0.00e+00)
+  [PASS] perm (1, 3, 2): U commutes with P_O0, P_T1, P_T2, P_O3  (max commutator = 0.00e+00)
+  [PASS] perm (2, 1, 3): U commutes with P_O0, P_T1, P_T2, P_O3  (max commutator = 0.00e+00)
+  [PASS] perm (2, 3, 1): U commutes with P_O0, P_T1, P_T2, P_O3  (max commutator = 0.00e+00)
+  [PASS] perm (3, 1, 2): U commutes with P_O0, P_T1, P_T2, P_O3  (max commutator = 0.00e+00)
+  [PASS] perm (3, 2, 1): U commutes with P_O0, P_T1, P_T2, P_O3  (max commutator = 0.00e+00)
+
+    Physically-correct S_3 covariance (using native Gamma_i operators):
+      axis 1: unreachable = (0, 1, 1) verified=True;  P_O0-contribution diag = [ 1.000000,  0.000000,  0.000000]
+  [PASS] native axis 1: shape theorem (unreachable state + P_O0 diag)
+      axis 2: unreachable = (1, 0, 1) verified=True;  P_O0-contribution diag = [ 1.000000,  0.000000,  0.000000]
+  [PASS] native axis 2: shape theorem (unreachable state + P_O0 diag)
+      axis 3: unreachable = (1, 1, 0) verified=True;  P_O0-contribution diag = [ 1.000000,  0.000000,  0.000000]
+  [PASS] native axis 3: shape theorem (unreachable state + P_O0 diag)
+  [PASS] Gauge-invariant statement: shape theorem S_3-covariant via native Gamma_i
+
+==============================================================================
+STRESS 6: pre-EWSB family M(phi) = sum_i phi_i Gamma_i and axis-compatibility
+==============================================================================
+  [PASS] M(e_1) = Gamma_1
+  [PASS] axis-1 shape theorem on pre-EWSB M(e_1): Sigma = I_3
+  [PASS] M(e_2) = Gamma_2
+  [PASS] axis-2 shape theorem on pre-EWSB M(e_2): Sigma = I_3
+  [PASS] M(e_3) = Gamma_3
+  [PASS] axis-3 shape theorem on pre-EWSB M(e_3): Sigma = I_3
+  [PASS] pre-EWSB phi=(1, 1, 0): Sigma_species = |phi|^2 I_3  (|phi|^2 = 2.00)
+  [PASS] pre-EWSB phi=(1, 1, 1): Sigma_species = |phi|^2 I_3  (|phi|^2 = 3.00)
+  [PASS] pre-EWSB phi=(0.5, 1.3, 2.7): Sigma_species = |phi|^2 I_3  (|phi|^2 = 9.23)
+  [PASS] pre-EWSB phi=(1, -1, 2): Sigma_species = |phi|^2 I_3  (|phi|^2 = 6.00)
+
+==============================================================================
+STRESS 7: does the retained Dirac-bridge theorem PASS set imply a companion runner v2's shape theorem?
+==============================================================================
+  [PASS] Retained (b): Sigma = I_6 on full taste-doubled T_1
+  [PASS] Linearity: Sigma(aX + bY) = a Sigma(X) + b Sigma(Y)
+  [PASS] Shape theorem: weighted Sigma species = diag(w_O0, w_a, w_b) with w_c decoupled  (w_c was 42.0, completely absent from diag)
+  [PASS] Retained (b)+(c) alone logically weaker than shape theorem  (formal observation; (d) requires single-projector identities)
+
+==============================================================================
+RESULT: PASS=57 FAIL=0
+==============================================================================
+VERDICT: SHAPE_THEOREM_ROBUST = TRUE
+==============================================================================
+
+----- stderr -----
+

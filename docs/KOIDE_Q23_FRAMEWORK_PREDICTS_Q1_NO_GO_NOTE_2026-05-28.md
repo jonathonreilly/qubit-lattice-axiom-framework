@@ -1,5 +1,16 @@
 # Koide Q=2/3 — final no-go: the framework natively predicts Q=1
 
+> **RETRACTED / OVERREACH (2026-05-28, same day) — see
+> `KOIDE_Q1_OVERREACH_SELF_CORRECTION_NOTE_2026-05-28.md`.** The headline
+> "framework predicts Q=1" is overstated. The equal-block (1,1) weight that
+> gives Q=2/3 is the canonical **counting measure on the two minimal central
+> idempotents** of `ℝ[Z₃]=ℝ⊕ℂ` — it is NOT "inconsistent." Correct status:
+> A1+A2 admit BOTH a Q=1 (dimension/trace) and a Q=2/3 (block-count)
+> canonical measure; neither is forced (= main's `open_gate`). What stands:
+> all **trace/dimension-type** mechanisms (modular, Jordan, Gaussian,
+> Kähler, positivity, dynamics) give Q=1 — i.e. *if* trace-type, Q=1. Read
+> everything below as "trace-type → Q=1," not "framework → Q=1."
+
 **Date:** 2026-05-28
 **Claim type:** retained_no_go (derivation of Q=2/3 from A1+A2+retained);
 the framework's native prediction is Q=1. The import needed for Q=2/3 is

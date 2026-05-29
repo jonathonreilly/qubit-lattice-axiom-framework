@@ -1,5 +1,14 @@
 # Koide Q=2/3 — two-channel bounded obstruction (campaign capstone)
 
+> **PARTIAL CORRECTION (2026-05-28) — see
+> `KOIDE_Q1_OVERREACH_SELF_CORRECTION_NOTE_2026-05-28.md`.** The
+> "framework natively selects F3 (Q=1)" framing over-privileges the
+> dimension/trace measure. Block-counting (the 2 central idempotents of
+> `ℝ[Z₃]=ℝ⊕ℂ`) is equally canonical and gives F1 (Q=2/3). Correct: the
+> trace/dimension-type channels (the ones analyzed here) give F3, but
+> block-counting (→F1) is canonical and untouched. Status is UNDETERMINED
+> between two canonical measures, not "framework → Q=1."
+
 **Date:** 2026-05-28
 **Claim type:** bounded_retained (two-channel; framework natively selects
 F3); promotion route OPEN and named. Imports no axiom/comparator/

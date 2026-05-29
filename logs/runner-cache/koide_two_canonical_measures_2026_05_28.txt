@@ -1,0 +1,53 @@
+
+========================================================================
+(1) TWO canonical measures on R[Z_3] = R (+) C
+========================================================================
+  R[Z_3] real Wedderburn decomposition: R (+) C
+    -> 2 minimal central idempotents (real-irreducible blocks):
+       P_+ (trivial, real irrep, FS +1) and P_perp (doublet, complex type).
+
+  DIMENSION / trace (Plancherel)  weight by real dim
+      (w_+, w_perp)=(1,2)  ->  r=1.000  Q=1.0000  (F3 = Q=1)
+  BLOCK / central-idempotent count weight each block 1
+      (w_+, w_perp)=(1,1)  ->  r=0.500  Q=0.6667  (F1 = Q=2/3)
+
+  => DIMENSION measure -> Q=1 ;  BLOCK measure -> Q=2/3.
+     Both canonical & consistent. Rep theory ranks NEITHER.
+     'framework predicts Q=1' is RETRACTED -> UNDETERMINED.
+
+========================================================================
+(2) number of minimal central idempotents of R[Z_d] (= # blocks)
+========================================================================
+    Z_2: 2 real-irreducible blocks
+    Z_3: 2 real-irreducible blocks   <- d=3: 2 blocks (1 real + 1 complex)
+    Z_4: 3 real-irreducible blocks
+    Z_5: 3 real-irreducible blocks
+    Z_6: 4 real-irreducible blocks
+  For Z_3 the block-count measure is uniform on 2 blocks = (1,1) = F1.
+
+========================================================================
+(3) what the campaign DID establish (still valid, narrower scope)
+========================================================================
+  trace/dimension-type mechanisms all realize the DIMENSION measure -> F3:
+    - canonical/Plancherel trace  -> F3 (Q=1)
+    - Tomita-Takesaki modular flow  -> F3 (Q=1)
+    - Euclidean-Jordan trace  -> F3 (Q=1)
+    - Gaussian functional determinant  -> F3 (Q=1)
+    - Kahler/Bargmann measure  -> F3 (Q=1)
+    - reflection-positivity saturation  -> F3 (Q=1)
+    - perturbative + nonperturbative dynamics  -> F3 (Q=1)
+  ALL are trace/dimension-type. NONE is the block-count measure
+  (counting measure on central idempotents, not a trace) -> F1 (Q=2/3)
+  remains canonical and UNTOUCHED by these. So: 'IF trace-type, Q=1';
+  trace-type is NOT forced.
+
+========================================================================
+VERDICT (corrected): UNDETERMINED between two canonical measures
+========================================================================
+  A1+A2+retained admit BOTH Q=1 (dimension/trace) and Q=2/3
+  (block/sector-count); neither is forced. = main's open_gate status.
+  OPEN PHYSICS QUESTION: does charged-lepton mass-generation weight
+  the C_3 isotypes by the TRACE (dimension -> Q=1; thermal/spectral)
+  or by the BLOCK/SECTOR count (-> Q=2/3; democratic over distinct
+  superselection sectors)? Observed Q=2/3 favors the sector reading
+  -- a falsifiable hint, not a framework refutation, and not settled.

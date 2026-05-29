@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 148 |
+| **retained** | 149 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 568 |
+| **retained_bounded** | 564 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1202 |
+| unaudited | 1205 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -57,22 +57,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 872 |
+| `audited_clean` | 869 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1432 |
+| `unaudited` | 1435 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1119 |
+| `bounded_theorem` | 1118 |
 | `decoration` | 51 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 116 |
-| `positive_theorem` | 713 |
+| `positive_theorem` | 714 |
 
 | criticality | count |
 |---|---:|
@@ -111,12 +111,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 951 | 35.90 | `audited_clean` | **retained** |
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 775 | 34.60 | `audited_clean` | **retained_bounded** |
 | 14 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 186 | 33.55 | `unaudited` | unaudited |
-| 15 | `three_generation_structure_note` | bounded_theorem | critical | 711 | 33.48 | `audited_clean` | **retained_bounded** |
-| 16 | `minimal_axioms_2026-04-11` | meta | critical | 952 | 32.90 | `unaudited` | meta |
-| 17 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 577 | 32.17 | `unaudited` | unaudited |
-| 18 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 934 | 31.37 | `audited_renaming` | ~~audited_renaming~~ |
-| 19 | `cpt_exact_note` | positive_theorem | critical | 927 | 31.36 | `audited_clean` | **retained** |
-| 20 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 575 | 31.17 | `unaudited` | unaudited |
+| 15 | `minimal_axioms_2026-04-11` | meta | critical | 952 | 32.90 | `unaudited` | meta |
+| 16 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 577 | 32.17 | `unaudited` | unaudited |
+| 17 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 934 | 31.37 | `audited_renaming` | ~~audited_renaming~~ |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 927 | 31.36 | `audited_clean` | **retained** |
+| 19 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 575 | 31.17 | `unaudited` | unaudited |
+| 20 | `three_generation_structure_note` | bounded_theorem | critical | 711 | 30.48 | `unaudited` | unaudited |
 | 21 | `left_handed_charge_matching_note` | decoration | critical | 693 | 30.44 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 231 | 29.86 | `unaudited` | unaudited |
 | 23 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 197 | 29.13 | `unaudited` | unaudited |
@@ -919,14 +919,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `third_grown_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_local_algebra_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `three_generation_observable_count_corollary_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_observable_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-26` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
-| `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -982,7 +980,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wide_family_h0125_bridge_reopen_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
-| `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -13922,19 +13919,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** Within its stated boundary, the proof is complete: total cube vertices are counted by the product rule, weight-w vertices by choosing w coordinates, and the d=3 row gives 1,3,3,1. The runner independently checks the same algebraic surface by exact enumeration and binomial identities with PASS=55, FAIL=0. No hidden physical import is needed because the note expressly does not derive d=3 as a substrate fact or identify the cube with Brillouin-zone corners.
 - **auditor confidence:** high
 
-### `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26`
-
-- **Note:** [`THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded abstract-C^3 composition bridge only: given the retained distinct-translation-character theorem and retained M_3(C) Burnside theorem, the diagonal joint projectors P_{X_i} and the order-3 cycle sigma generate M_3(C), so there is no proper nonzero/nontrivial subspace of C^3 invariant under both the projector family and sigma. This does not close physical hw=1 carrier identification, physical-species interpretation, three-generation matter content, staggered-Dirac realization, or any continuum/numerical claim.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The retained character theorem supplies rank-1 coordinate projectors as polynomials in T_x,T_y,T_z, the retained Burnside theorem supplies <sigma,T_x,T_y,T_z>_alg = M_3(C), and the standard M_3(C) action on C^3 has no invariant subspaces other than {0} and C^3.  _(class `A`)_
-- **chain closes:** True — All one-hop dependencies are retained-grade, and the bridge consumes only their abstract-C^3 algebraic content. The runner reconstructs the projectors, order-3 cycle, matrix-unit generation, and no-nontrivial-invariant-subspace conclusion with PASS=8 FAIL=0. The parent dependency is used as the repair target context; the load-bearing closure comes from the retained character and Burnside siblings plus standard finite-dimensional linear algebra.
-- **rationale:** The clean verdict is for the narrow finite-dimensional algebraic statement. The generated matrix units span M_3(C), and invariance under the projector family plus sigma therefore forces invariance under the full matrix algebra; any nonzero vector then generates all of C^3 under matrix units, so the only invariant subspaces are {0} and C^3. The no-go discipline gate passes as a scope check because this is not a broad physical no-go: it is an exact abstract-C^3 irreducibility result, with physical carrier, species, staggered-Dirac, matter-content, and continuum readings explicitly excluded. The phrase 'no proper subspace' is audited as 'no proper nonzero/nontrivial invariant subspace' because {0} is invariant.
-- **auditor confidence:** high
-
 ### `three_generation_observable_count_corollary_note_2026-05-03`
 
 - **Note:** [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](../../docs/THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
@@ -13964,14 +13948,15 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 ### `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02`
 
 - **Note:** [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** On the retained finite C^3/hw=1 triplet, the diagonal translation-character projectors together with the C3[111] cycle generate M_3(C), and no nonzero proper subspace or quotient preserves both structures. Physical-species interpretation, SM-generation identification, substrate physicality, and full matter-content closure are out of scope.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite-dimensional algebra theorem on the retained hw=1 carrier H_hw=1 ~= C^3 with basis X_1, X_2, X_3: the coordinate projectors D_3 together with the C3[111] cycle generate M_3(C), and the only subspaces invariant under both retained structures are 0 and C^3. Equivalently, there is no nontrivial proper quotient preserving both translation-character separation and the C3[111] cycle. Physical-species interpretation, SM-generation identification, full staggered-carrier/substrate realization, and broader matter-content closure are out of scope.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-gpt-5.5-fresh-three-gen-no-proper-quotient-C75Ktt-2026-05-26-pass2`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Preserving the projector algebra D_3 forces any invariant subspace to be a coordinate-subset span, and preserving C3[111] forces that subset to be closed under the three-cycle, leaving only 0 and C^3.  _(class `A`)_
-- **chain closes:** True — The provided retained one-hop scopes supply the finite hw=1 triplet/cube carrier, the S3 tensor-position action whose 3-cycle gives the C3 carrier action, and the projector/character separation needed for the narrowed algebraic theorem. The remaining proof is finite-dimensional linear algebra: rank-one coordinate projectors plus a transitive 3-cycle generate all matrix units, so there is no common nontrivial invariant subspace.
-- **rationale:** The narrowed theorem closes as a class-A algebraic identity over retained finite carrier inputs; it does not rely on the broader physical carrier or species interpretation. No-go discipline gate passes within the restricted packet because the exclusion is only the finite invariant-subspace statement: the C3-only eigenspace attack is explicitly ruled out by requiring D3 plus C3, there is no independent wall set or residual witness, and N8 repo-wide searching was intentionally not performed under the packet restriction. Runner evidence is supportive: 9 PASS lines are exact matrix/subspace computations, while 25 note-structure and 11 ledger/dependency PASS lines are non-load-bearing scope/status checks.
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260529-three-gen-no-proper-quotient`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** For coordinate projectors P_i and cyclic permutation C, the products P_i C^k P_j give all matrix units E_ij, hence <D_3,C> = M_3(C). Equivalently, D_3-invariance forces any invariant subspace to be span{X_i : i in S}, and C-invariance forces S to be empty or all of {1,2,3}; a quotient preserving both structures requires such an invariant kernel, so only the trivial kernel or whole space is possible.  _(class `A`)_
+- **chain closes:** True — The five-judge panel split 4-1 for the second audit. The current one-hop dependency statuses are retained-grade for the audited scope, and the cached runner exits 0 with PASS=45 FAIL=0 while verifying the projector identities, C3^3=I, matrix-unit generation, and invariant-subspace enumeration. The independent algebra check closes as class A: D_3 forces coordinate-subset subspaces and the transitive C3 cycle leaves only empty/full subsets. No-go discipline N1-N8 does not demote the result because C3-only eigenspaces, D3-only coordinate subsets, non-coordinate kernels, quotient-kernel reformulations, and physical-carrier readings either fail the joint D_3+C3 preservation requirement or are explicitly out of scope.
+- **rationale:** The five-judge panel split 4-1 for the second audit. The current one-hop dependency statuses are retained-grade for the audited scope, and the cached runner exits 0 with PASS=45 FAIL=0 while verifying the projector identities, C3^3=I, matrix-unit generation, and invariant-subspace enumeration. The independent algebra check closes as class A: D_3 forces coordinate-subset subspaces and the transitive C3 cycle leaves only empty/full subsets. No-go discipline N1-N8 does not demote the result because C3-only eigenspaces, D3-only coordinate subsets, non-coordinate kernels, quotient-kernel reformulations, and physical-carrier readings either fail the joint D_3+C3 preservation requirement or are explicitly out of scope.
+- **auditor confidence:** high
 
 ### `three_generation_observable_theorem_note`
 
@@ -14010,19 +13995,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For any nonempty proper coordinate subset S, the compressed matrices P_S G_i P_S on P_S H_taste do not satisfy the Cl(3) anticommutator relations.  _(class `A`)_
 - **chain closes:** True — Independently: each G_i is a signed permutation sending |s> to +/-|s xor e_i>. If A_i=P_S G_i P_S satisfied A_i^2=I on span(S), then every s in S must have s xor e_i in S, since otherwise A_i|s>=0 and A_i^2|s>=0 != |s>; closure under all three flips plus transitivity of (Z_2)^3 leaves only empty or full coordinate subsets.
 - **rationale:** The finite algebra closes from the displayed Cl(3) matrices alone, with no hidden physical semantics or comparator. The runner constructs the generators, exhausts all 254 nonempty proper coordinate subsets, checks flip closure, and cached output reports PASS=14 FAIL=0. N1-N8 passes for the narrow claim because plausible counter-routes such as non-coordinate subspaces, path-integral rooting, and physical generation interpretation are explicitly outside scope rather than claimed closed.
-- **auditor confidence:** high
-
-### `three_generation_structure_note`
-
-- **Note:** [`THREE_GENERATION_STRUCTURE_NOTE.md`](../../docs/THREE_GENERATION_STRUCTURE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite Z^3 corner/Hamming-weight Wilson-mass spectrum on the supplied staggered-Dirac/Wilson surface, plus only the retained-bounded D3+C3 -> M3(C) no-proper-quotient dependency for the hw=1 triplet. No no-rooting, physical-species, SM-generation, CKM, chirality, substrate-physicality, or full matter-content claim is audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-fresh-context-three-gen-20260527-r2`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** For p_mu in {0,pi}, 1-cos(p_mu) is 0 or 2, so m(p)=2 hw(p), giving degeneracies 1+3+3+1 with hw=1 the unique lightest nonzero triplet.  _(class `A`)_
-- **chain closes:** True — Fresh-context check independently enumerated 8 corners with Hamming counts {0:1,1:3,2:3,3:1} and masses 0,2,4,6. The one-hop finite algebra dependency supplies the retained-bounded D3+C3 no-proper-quotient statement, and the source excludes broader physical-generation claims.
-- **rationale:** The second audit agrees that the narrowed bounded claim closes as finite spectrum arithmetic plus a retained-bounded finite-algebra dependency. Runner PASS is consistent with, but not a substitute for, the independent enumeration. No rooting, SM-generation, CKM, chirality, physical-species, substrate-physicality, or full matter-content bridge is ratified.
 - **auditor confidence:** high
 
 ### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`
@@ -14895,19 +14867,6 @@ Repair target: add or cite a retained bridge deriving the canonical Wilson match
 Claim boundary until fixed: within the named real-positive canonical leading-beta ansatz, the finite runner evidence supports rejection of the i theta Im Tr U_P slot by P4 and enumerates the real Wilson slot, but the row remains conditional on the missing Wilson-matching / beta authority.
 - **open / conditional deps cited:**
   - `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`
-- **auditor confidence:** high
-
-### `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08`
-
-- **Note:** [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md`](../../docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The 16 BZ corners n in {0,1}^4 partition by Hamming weight with multiplicities (1,4,6,4,1), and W(n)=2r hw(n) for symbolic Wilson coefficient r.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-fresh-context-wilson-bz-hamming-20260528-r2`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** For n in {0,1}^4, 1-cos(n_mu*pi)=2n_mu, hence W(n)=r sum_mu 2n_mu=2r hw(n), and each hw=k class has binomial(4,k) corners.  _(class `A`)_
-- **chain closes:** True — Fresh-context check confirms that choosing k one-bits among four axes gives binomial(4,k)=(1,4,6,4,1) and total 16; cos(0)=1 and cos(pi)=-1 make each active bit contribute exactly 2r, so the shifts are 0,2r,4r,6r,8r by Hamming class.
-- **rationale:** The scoped bounded theorem closes as exact finite combinatorics. Residual risk lies only outside the audited boundary: the setup's BZ-corner labeling and Wilson-term formula are assumed, r is not derived, and no Higgs-mass, continuum-limit, or parent-status claim is ratified here.
 - **auditor confidence:** high
 
 ### `wilson_mu2_distance_sweep_note_2026-04-11`

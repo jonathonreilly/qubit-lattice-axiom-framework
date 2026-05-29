@@ -11,52 +11,6 @@
         "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
         "docs/MINIMAL_AXIOMS_2026-05-20.md"
       ],
-      "audit_question": "Can the exact finite-rep fact that preserving the D_3 projector algebra forces coordinate-subset invariant subspaces be reclassified positive_theorem?",
-      "blocked_by_group_ids": [],
-      "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "deps": [
-        "site_phase_cube_shift_intertwiner_note",
-        "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
-        "z2_hw1_mass_matrix_parametrization_note"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher queue as evidence",
-        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 4,
-      "group_id": "lead_exact_algebra_candidates",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "queue_order": 1,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
-      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
       "audit_question": "Can the exact Schur-complement elimination Lambda_R = H_tt - H_tb H_bb^{-1} H_bt on the finite harmonic bulk be reclassified positive_theorem? Split any physical boundary-action interpretation first.",
       "blocked_by_group_ids": [],
       "claim_id": "oh_schur_boundary_action_note",
@@ -81,7 +35,7 @@
       ],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md",
-      "queue_order": 2,
+      "queue_order": 1,
       "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_oh_schur_boundary_action.py",
@@ -122,7 +76,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
-      "queue_order": 3,
+      "queue_order": 2,
       "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
@@ -163,7 +117,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
-      "queue_order": 4,
+      "queue_order": 3,
       "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
@@ -208,7 +162,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
-      "queue_order": 5,
+      "queue_order": 4,
       "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
@@ -217,9 +171,9 @@
       "state": "live"
     }
   ],
-  "live_count": 5,
+  "live_count": 4,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 5,
+  "ready_count": 4,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "audited_clean",
@@ -755,6 +709,89 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py",
+      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "retained",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Can the exact finite-rep fact that preserving the D_3 projector algebra forces coordinate-subset invariant subspaces be reclassified positive_theorem?",
+      "blocked_by_group_ids": [],
+      "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+      "deps": [
+        "site_phase_cube_shift_intertwiner_note",
+        "s3_taste_cube_decomposition_note",
+        "s3_mass_matrix_no_go_note",
+        "z2_hw1_mass_matrix_parametrization_note"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher queue as evidence",
+        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 4,
+      "group_id": "lead_exact_algebra_candidates",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
+      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Can the exact lattice-dispersion fact m(p)=2 hw(p) on p_mu in {0,pi} with degeneracies 1,3,3,1 and hw=1 the unique lowest band be reclassified positive_theorem, leaving generation-count physics out of scope? Split first if mixed.",
+      "blocked_by_group_ids": [],
+      "claim_id": "three_generation_structure_note",
+      "deps": [
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher queue as evidence",
+        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 7,
+      "group_id": "lead_exact_algebra_candidates",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+      "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
       "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"
@@ -1829,56 +1866,6 @@
       "resolution_manifest_date": "2026-05-28",
       "resolution_reason": "bounded_terminal_after_reaudit",
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
-      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Can the exact lattice-dispersion fact m(p)=2 hw(p) on p_mu in {0,pi} with degeneracies 1,3,3,1 and hw=1 the unique lowest band be reclassified positive_theorem, leaving generation-count physics out of scope? Split first if mixed.",
-      "blocked_by_group_ids": [],
-      "claim_id": "three_generation_structure_note",
-      "deps": [
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher queue as evidence",
-        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 7,
-      "group_id": "lead_exact_algebra_candidates",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-28T01:41:16.952987+00:00",
-        "audit_status": "audited_clean",
-        "auditor": "codex-audit-loop-fresh-context-three-gen-20260527-r2",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "bounded_theorem",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-05-28",
-      "resolution_reason": "bounded_terminal_after_reaudit",
-      "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
       "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"

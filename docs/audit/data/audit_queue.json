@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 241,
-    "high": 319,
+    "high": 318,
     "leaf": 314,
     "medium": 322
   },
@@ -6826,30 +6826,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gravity_sign_audit_2026-04-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.248,
-      "note_path": "docs/GRAVITY_SIGN_AUDIT_2026-04-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gravity_sign_well_hill_diagnostic.py",
-      "transitive_descendants": 75
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17126,6 +17102,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "irregular_sign_core_packet_gate_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "weak_coupling_retention_note_2026-04-11",
+        "gravity_sign_audit_2026-04-10"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.807,
+      "note_path": "docs/IRREGULAR_SIGN_CORE_PACKET_GATE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_irregular_sign_core_packet_gate.py",
+      "transitive_descendants": 13
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -24122,31 +24123,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
-      "transitive_descendants": 13
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "irregular_sign_core_packet_gate_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "weak_coupling_retention_note_2026-04-11",
-        "gravity_sign_audit_2026-04-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.807,
-      "note_path": "docs/IRREGULAR_SIGN_CORE_PACKET_GATE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_irregular_sign_core_packet_gate.py",
       "transitive_descendants": 13
     },
     {
@@ -36149,5 +36125,5 @@
     }
   ],
   "ready_count": 47,
-  "total_pending": 1196
+  "total_pending": 1195
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 153 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 562 |
+| **retained_bounded** | 563 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1194 |
+| unaudited | 1193 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 873 |
+| `audited_clean` | 874 |
 | `audited_conditional` | 64 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1424 |
+| `unaudited` | 1423 |
 
 | claim_type | count |
 |---|---:|
@@ -456,6 +456,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_full_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `growing_graph_dynamic_propagation_replacement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6492,6 +6493,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the narrowed scope, the runner stdout matches the note's signs and classifications for every ratified row. The z=2, z=4, z=6, and z=7 dense rows are explicitly outside the audited scope and are not ratified here.
 - **rationale:** The scoped claim is an algebraic sign-interpretation over runner-computed observables, and the supplied runner computes the relevant rows rather than printing fixed classifications. No one-hop authorities are listed, so no dependency-retention blocker is available inside the restricted packet. Clean status applies only to the narrowed z=3 and z=5 dense rows plus the other printed runner rows; the broader z=2..6 dense table is not part of this verdict.
 - **auditor confidence:** medium
+
+### `gravity_sign_audit_2026-04-10`
+
+- **Note:** [`GRAVITY_SIGN_AUDIT_2026-04-10.md`](../../docs/GRAVITY_SIGN_AUDIT_2026-04-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite configured 1D well/hill diagnostic for the stipulated identity and parity on-site Hamiltonian forms at n=61, mass=0.30, dt=0.12, steps=20; excludes lapse closure, physical gravity-sign derivation, graph self-gravity, irregular-graph portability, and derivation of the couplings from baseline axioms.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-gravity-sign-well-hill-b`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** In the configured finite 1D test, identity gives well -> TOWARD and hill -> TOWARD as a negative control, while parity gives well -> TOWARD and hill -> AWAY, with lapse excluded from the bounded claim.  _(class `A`)_
+- **chain closes:** True — The one-hop dependency is retained_bounded for the displayed identity/parity/lapse operator-form algebra, and the present note narrows the audited claim to the identity/parity finite signs only. The runner output and an independent dense finite recomputation both reproduce the four stated signs with norm conservation and no lapse floor in the load-bearing path.
+- **rationale:** The scoped claim is a bounded finite diagnostic, not a derivation of physical gravity or of the coupling forms. The current runner exits 0 with PASS=17 FAIL=0 and its bounded accounting covers only identity/parity signs and norm checks; the lapse section is explicitly labelled open and outside PASS/FAIL. I independently rebuilt the 61-site dense Hamiltonians without importing the runner and checked both dense Crank-Nicolson and exact matrix-exponential evolution: identity well +1.504366/+1.503341, identity hill +1.562577/+1.561775, parity well +1.838085/+1.838024, parity hill -0.044294/-0.045776, all with unit norm and the expected sign. The dependency status is retained_bounded, so the bounded chain closes at the stated finite operator-form scope.
+- **auditor confidence:** high
 
 ### `growing_graph_dynamic_limit_diagnostic_note`
 

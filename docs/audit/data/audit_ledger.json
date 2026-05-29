@@ -312030,22 +312030,42 @@
       "verdict_rationale": "Issue: the source presents an exact bounded proof-walk, but the proof-walk is only the rational specialization of the cited Fierz channel-count parent.\nWhy this blocks: a separate retained bounded theorem would duplicate algebraic content already carried by the parent decoration authority, and would inflate the claim surface without adding an independent observable, comparator, or selector theorem.\nRepair target: box this note under the Fierz channel-count parent, or re-promote only if a later revision adds independent physical content such as a retained EW-current selector or a new comparator not already attached to the parent.\nClaim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebra under the parent; it should be treated as decoration, not as an independent retained bounded theorem."
     },
     "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T07:44:32.946901+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Exact finite Pauli/projector and retained EW one-Higgs bookkeeping carrier-ray bridge: the signed-record sigma_z source is affinely equivalent to the P_- occupation source, and P_- is the neutral Higgs ray; radial source-coordinate scale cancels only by the prior ratio gate."
+        },
+        "dep_claim_type": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d2245416087e828a1908e5f9e8b108a17c140c2ef354ea66fe2afed695ddfebf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli/EW generator algebra gives QH(h)=0 for the lower radial doublet and nonzero charged W directions. Under the explicitly conditional common-source top and W mass formulas, differentiating with respect to h gives a shared factor a that cancels from the ratio.",
       "claim_id": "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25",
-      "claim_scope": null,
+      "claim_scope": "Bounded support gate: given the retained-bounded neutral carrier-ray bridge and the conditional one-Higgs top-carrier response formulas, the neutral radial Higgs carrier is annihilated by Q = T_3 + Y and a common source coordinate would cancel from dM_t/dh divided by dM_W/dh; no retained Y_T closure, top coefficient theorem, same-surface top/W transfer-response theorem, retained top-carrier or hypercharge authority, physical-scale g_2 bridge, or y_t/m_t value is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T07:44:32.946901+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -312053,34 +312073,34 @@
         "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For H(h) = (0, (v_0 + a h)/sqrt(2))^T, Q = T_3 + Y annihilates the neutral radial carrier, while dM_W/dh = (g_2/2)a and dM_t/dh = (y_t/sqrt(2))a on a common source, so the unknown source slope cancels in the top/W response ratio.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "05b9b8853437ec7f4ece44b891aff22737624ab26568da6f03eea8a46b3784b2",
       "note_path": "docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check if broadened to retained Y_T closure, a top coefficient theorem, same-surface top/W transfer-response theorem, retained one-Higgs top-carrier or hypercharge authority, physical-scale g_2 authority, strict pole rows, or a physical y_t/m_t value claim.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 9,
+        "B": 34,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 43
       },
       "runner_path": "scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py",
       "title": "Y_T EW/Higgs Source-Intertwiner Gate",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the bounded support scope, the algebra closes: Q annihilates the neutral radial Higgs carrier, T1/T2 generate the charged directions, and the common-source top/W response ratio cancels the unknown affine source slope. The independent manual check matches the sympy runner's generator action and derivative identities. The runner and source note also preserve the current blockers: one-Higgs top carrier and hypercharge rows are not retained authority, coefficient-certified top/W response rows are absent, and no physical y_t or g_2 value is derived. Residual risk appears only if this row is broadened from a bounded support gate to full retained Y_T closure."
     },
     "yt_ew_m_residual_note_2026-05-02": {
       "audit_date": "2026-05-23T15:28:36.460329+00:00",

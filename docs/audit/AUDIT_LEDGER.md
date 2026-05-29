@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 163 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 595 |
+| **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1131 |
+| unaudited | 1130 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 920 |
+| `audited_clean` | 921 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1361 |
+| `unaudited` | 1360 |
 
 | claim_type | count |
 |---|---:|
@@ -1037,6 +1037,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_ew_higgs_source_intertwiner_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16101,6 +16102,19 @@ Why this blocks: a separate retained bounded theorem would duplicate algebraic c
 Repair target: box this note under the Fierz channel-count parent, or re-promote only if a later revision adds independent physical content such as a retained EW-current selector or a new comparator not already attached to the parent.
 Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebra under the parent; it should be treated as decoration, not as an independent retained bounded theorem.
 - **decoration parent:** `ew_current_fierz_channel_decomposition_note_2026-05-01`
+- **auditor confidence:** high
+
+### `yt_ew_higgs_source_intertwiner_gate_note_2026-05-25`
+
+- **Note:** [`YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md`](../../docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded support gate: given the retained-bounded neutral carrier-ray bridge and the conditional one-Higgs top-carrier response formulas, the neutral radial Higgs carrier is annihilated by Q = T_3 + Y and a common source coordinate would cancel from dM_t/dh divided by dM_W/dh; no retained Y_T closure, top coefficient theorem, same-surface top/W transfer-response theorem, retained top-carrier or hypercharge authority, physical-scale g_2 bridge, or y_t/m_t value is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For H(h) = (0, (v_0 + a h)/sqrt(2))^T, Q = T_3 + Y annihilates the neutral radial carrier, while dM_W/dh = (g_2/2)a and dM_t/dh = (y_t/sqrt(2))a on a common source, so the unknown source slope cancels in the top/W response ratio.  _(class `A`)_
+- **chain closes:** True — The Pauli/EW generator algebra gives QH(h)=0 for the lower radial doublet and nonzero charged W directions. Under the explicitly conditional common-source top and W mass formulas, differentiating with respect to h gives a shared factor a that cancels from the ratio.
+- **rationale:** Within the bounded support scope, the algebra closes: Q annihilates the neutral radial Higgs carrier, T1/T2 generate the charged directions, and the common-source top/W response ratio cancels the unknown affine source slope. The independent manual check matches the sympy runner's generator action and derivative identities. The runner and source note also preserve the current blockers: one-Higgs top carrier and hypercharge rows are not retained authority, coefficient-certified top/W response rows are absent, and no physical y_t or g_2 value is derived. Residual risk appears only if this row is broadened from a bounded support gate to full retained Y_T closure.
 - **auditor confidence:** high
 
 ### `yt_ew_m_residual_note_2026-05-02`

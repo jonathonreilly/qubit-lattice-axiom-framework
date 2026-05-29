@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 601 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1167 |
+| unaudited | 1166 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 932 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1403 |
+| `unaudited` | 1402 |
 
 | claim_type | count |
 |---|---:|
@@ -1068,6 +1068,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -2023,6 +2024,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
   - `BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md::WM`
+- **auditor confidence:** high
+
+### `beyond_lattice_qcd_note`
+
+- **Note:** [`BEYOND_LATTICE_QCD_NOTE.md`](../../docs/BEYOND_LATTICE_QCD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied runner's finite Poisson/transfer-matrix simulation produces the reported gravity-induced centroid, spread, visibility, and profile-shape changes, and its coded linear three-slit path-sum gives I3≈0 when detector probabilities are computed as |psi|^2.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-beyond_lattice_qcd_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-computed finite numerical results are exactly produced: gravity changes the detector profile on a 32^3 lattice and the Sorkin I3 parameter is zero to machine precision across tested settings.  _(class `C`)_
+- **chain closes:** False — The finite numerical outputs close as runner computations, but the advertised Born-rule derivation and lattice-QCD comparison do not. The Sorkin branch forms probabilities with np.abs(psi)**2, so the readout map being claimed is imported rather than derived, and no restricted authority proves the comparative lattice-QCD no-analog step.
+- **rationale:** The runner is not a print-only artifact: it solves the finite Poisson problem, propagates wave amplitudes, computes detector profiles, and performs the three-slit inclusion-exclusion test without hard-coded expected constants. That supports the narrowed finite numerical statements. However, the source and runner still identify I3=0 with a derived Born rule while computing every P as |psi|^2, and the asserted lattice-QCD contrast is not derived from any provided one-hop authority. The claim therefore remains conditional on a retained readout-map bridge and a scoped comparative authority or a narrower claim.
 - **auditor confidence:** high
 
 ### `bh_entropy_derived_note`

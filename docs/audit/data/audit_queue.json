@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 309
+    "medium": 308
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16746,29 +16746,29 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_h025_low_band_retention_note",
+      "claim_id": "wave_direct_dm_h025_high_band_boundary_note",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "wave_direct_dm_h025_fam1_seed1_control_note"
+        "wave_direct_dm_h025_low_band_retention_note",
+        "wave_direct_dm_h025_two_point_synthesis_note"
       ],
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [
-        "scripts/wave_direct_dm_h025_control_batch.py",
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
-      "load_bearing_score": 5.407,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md",
+      "load_bearing_score": 5.307,
+      "note_path": "docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py",
-      "transitive_descendants": 14
+      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+      "transitive_descendants": 13
     },
     {
       "audit_independence_required": "any_non_self",
@@ -23685,34 +23685,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/signed_gravity_remaining_closure_gates.py",
-      "transitive_descendants": 13
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wave_direct_dm_h025_high_band_boundary_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_low_band_retention_note",
-        "wave_direct_dm_h025_two_point_synthesis_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "load_bearing_score": 5.307,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
       "transitive_descendants": 13
     },
     {
@@ -35715,5 +35687,5 @@
     }
   ],
   "ready_count": 34,
-  "total_pending": 1179
+  "total_pending": 1178
 }

@@ -15,7 +15,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 495,
+      "max_transitive_descendants": 496,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -24,7 +24,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
           "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking",
-          "transitive_descendants": 495
+          "transitive_descendants": 496
         },
         {
           "audit_status": "unaudited",
@@ -33,7 +33,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md",
           "title": "Higgs-Channel Effective N_taste Boundary Bounded Note",
-          "transitive_descendants": 495
+          "transitive_descendants": 496
         }
       ],
       "requires_lemma_extraction": false

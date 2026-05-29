@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 243,
-    "high": 315,
+    "high": 314,
     "leaf": 336,
     "medium": 306
   },
@@ -6883,31 +6883,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "angular_kernel_underdetermination_no_go_note",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lorentz_boost_covariance_2d_theorem_note",
-        "emergent_lorentz_invariance_note"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.383,
-      "note_path": "docs/ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_angular_kernel_underdetermination_nogo.py",
-      "transitive_descendants": 58
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16928,6 +16903,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "architecture_note_directional_measure",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "angular_kernel_underdetermination_no_go_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/three_d_angle_weight.py",
+        "scripts/three_d_gravity.py"
+      ],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/architecture_directional_measure_table_runner_2026_05_03.py",
+      "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "distance_law_breakpoint_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -24027,33 +24029,6 @@
       "ready": false,
       "runner_path": null,
       "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "architecture_note_directional_measure",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "angular_kernel_underdetermination_no_go_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/three_d_angle_weight.py",
-        "scripts/three_d_gravity.py"
-      ],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/architecture_directional_measure_table_runner_2026_05_03.py",
-      "transitive_descendants": 8
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36236,5 +36211,5 @@
     }
   ],
   "ready_count": 65,
-  "total_pending": 1200
+  "total_pending": 1199
 }

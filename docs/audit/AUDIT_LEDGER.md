@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 164 |
-| **retained_no_go** | 172 |
+| **retained_no_go** | 173 |
 | **retained_bounded** | 594 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1198 |
+| unaudited | 1197 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 23 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 920 |
+| `audited_clean` | 921 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1434 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
@@ -157,6 +157,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alternative_coupled_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `anderson_phase_mu2_0001_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `angular_kernel_orbit_class_underdetermination_narrow_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `angular_kernel_underdetermination_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `architecture_portability_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1589,6 +1590,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** D4 orbit classes on R(d_max) are indexed by unordered multisets {|dy|, |dz|}, giving |O(d_max)|=(d_max+1)(d_max+2)/2, and unit mass is one linear equation in the orbit weights so the cubic-symmetric probability simplex has dimension |O(d_max)|-1.  _(class `A`)_
 - **chain closes:** True — The claim is a self-contained algebraic/combinatorial statement with no cited dependencies. The D4 orbit enumeration, simplex dimension, automatic quadratic isotropy under D4 symmetry, and finite witness moment computations close from the supplied definitions and runner source/stdout.
 - **rationale:** The load-bearing work is finite orbit enumeration and polynomial moment evaluation on a specified lattice layer, not a physics bridge, external comparator, tuned numerical match, or definition substitution. The runner actually constructs the finite set, orbit classes, symbolic mass functional, witnesses, and moment ratios rather than merely printing constants. Minor notation in the prose axial-only support omits negative axial points, but the intended D4-invariant axial-orbit witness is explicit in the runner and the interval claim remains algebraically valid.
+- **auditor confidence:** high
+
+### `angular_kernel_underdetermination_no_go_note`
+
+- **Note:** [`ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`](../../docs/ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded no-go for the directional-measure angular kernel under the stated Cl(3)-trace, action-extremization, forward-cone, and leading-isotropy primitives, plus routing decoupling from the staggered/Laplacian boost-covariance surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-angular_kernel_underdete`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The stated four primitives admit the seven listed distinct kernels, all passing the primitive checks while producing different transverse moments, so w(theta) is not uniquely determined on that surface.  _(class `C`)_
+- **chain closes:** True — The runner constructs multiple admissible angular kernels, checks the primitive properties, and computes distinct second and fourth transverse moments. The no-go is correctly bounded because it does not rule out adding a higher-order isotropy, Lagrangian, or observable-matching axiom.
+- **rationale:** The load-bearing negative result is an explicit counterexample family, not a definition, renaming, or tuned numerical match. The supplied retained-grade authorities support the routing clarification that the boost lane is on the staggered/Laplacian carrier rather than the directional-measure kernel. Some runner checks are narrative summaries, but the computed witness family and fixed-carrier checks are sufficient for the bounded audited scope.
 - **auditor confidence:** high
 
 ### `architecture_portability_sweep_note`

@@ -114,7 +114,7 @@ def _fit_power(xs: list[float], ys: list[float]) -> float | None:
     return sxy / sxx
 
 
-def main() -> None:
+def main() -> int:
     lat = m.Lattice3D.build(NL_PHYS, PW, H)
     source_nodes = _source_cluster_nodes(lat)
     zero_field = [[0.0 for _ in range(lat.npl)] for _ in range(lat.nl)]
@@ -185,6 +185,20 @@ def main() -> None:
     mean_inst_ratio = sum(inst_ratios) / len(inst_ratios)
     mean_green_ratio = sum(green_ratios) / len(green_ratios)
     causal_memory = sum(p - g for p, g in zip(prop_vals, green_vals)) / len(prop_vals)
+    assertions_ok = (
+        abs(zero_delta) < 1e-14
+        and toward == len(prop_vals)
+        and all(p > g > i > 0.0 for p, g, i in zip(prop_vals, green_vals, inst_vals))
+        and inst_alpha is not None
+        and green_alpha is not None
+        and prop_alpha is not None
+        and abs(inst_alpha - 1.0) < 0.02
+        and abs(green_alpha - 1.0) < 0.01
+        and abs(prop_alpha - 1.0) < 0.01
+        and 1.41 < mean_inst_ratio < 1.43
+        and 1.148 < mean_green_ratio < 1.151
+        and causal_memory > 0.0
+    )
 
     print()
     print("SAFE READ")
@@ -196,7 +210,10 @@ def main() -> None:
     print(f"  mean |prop/green| ratio: {mean_green_ratio:.3f}")
     print(f"  causal memory observable (prop - green): {causal_memory:+.6e}")
     print("  this is a bounded propagating-field pocket, not a full self-consistent GR sector")
+    print(f"  [{'PASS' if assertions_ok else 'FAIL'} (C)] asserted propagating Green packet")
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    return 0 if assertions_ok else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

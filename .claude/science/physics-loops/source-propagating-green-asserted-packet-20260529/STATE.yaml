@@ -1,0 +1,22 @@
+loop_slug: source-propagating-green-asserted-packet-20260529
+created: 2026-05-29
+base: origin/main
+branch: physics-loop/source-propagating-green-asserted-packet-20260529
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: source_resolved_green_chain_assertion_repair
+hard_residual: "Convert the unaudited source-resolved same-site memory pocket from frozen prose to an asserted finite packet, and remove non-load-bearing sibling links from the source-resolved Green chain."
+files_touched:
+  - docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md
+  - docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md
+  - scripts/source_resolved_propagating_green_pocket.py
+open_imports: []
+new_axioms: []
+observed_target_values_used: false
+fitted_selectors_used: false
+trace_gate_classification: upstream_support
+review_loop_disposition: pending_reviewer
+audit_required_before_effective_status: true
+pr_status: ready_to_open
+next_exact_action: "Open draft PR for independent review/audit queue handling."
+stop_condition: "Science block packaged; continue to next opportunity after PR creation."

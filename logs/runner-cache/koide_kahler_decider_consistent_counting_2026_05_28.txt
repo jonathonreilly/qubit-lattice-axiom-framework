@@ -1,0 +1,60 @@
+
+========================================================================
+(1) THE DECISIVE ARITHMETIC: consistent counting -> F3 either way
+========================================================================
+  E_+ = 3a^2 (trivial: 1 real dim = 1/2 complex dim)
+  E_perp = 6|b|^2 (doublet: 2 real dim = 1 complex dim)
+
+  REAL dims both       (w_+, w_perp) = (1, 2): r=1.0000  Q=1.0000  -> F3 (consistent)
+  COMPLEX dims both    (w_+, w_perp) = (1/2, 1): r=1.0000  Q=1.0000  -> F3 (consistent)
+  ASYMMETRIC (F1)      (w_+, w_perp) = (1, 1): r=0.5000  Q=0.6667  -> F1 (inconsistent!)
+  => BOTH consistent countings (real-both, complex-both) give r=1=F3.
+     Only the ASYMMETRIC (doublet complex, singlet real) gives F1.
+     F1 = the tuned weight kappa=2mu/nu, NOT a consistent count.
+
+========================================================================
+(2) omega (Cl(3,0) pseudoscalar = the QM i) is CENTRAL -> uniform i*Id
+========================================================================
+  omega = s1 s2 s3 = [0.+1.j 0.+1.j]  (= i * I_2, central, omega^2=-1)
+    [omega, e1] = 0.0e+00  (commutes => central)
+    [omega, e2] = 0.0e+00  (commutes => central)
+    [omega, e3] = 0.0e+00  (commutes => central)
+  => omega acts as the SAME scalar i on every grade-1 axis; it
+     complexifies the singlet a and the doublet b UNIFORMLY, so it
+     cannot supply the asymmetric (doublet-only) complex count. -> F3.
+
+========================================================================
+(3) the F1-giving J (rotation about body diagonal) is C_3-sourced, != omega
+========================================================================
+  J fixes the singlet axis n?  J n = [0.5774 0.5774 0.5774]  (= n: True)
+  J acts on doublet: J d1 . d1 = -0.000 (=0 => 90deg rotation in plane)
+  J^2 on doublet = -Id?  J@J@d1 = [-0.7071  0.7071  0.    ] vs -d1 = [-0.7071  0.7071 -0.    ]
+  => J fixes the singlet and pairs ONLY the doublet (the asymmetric
+     structure F1 needs). It is sourced by C_3 generation symmetry,
+     NOT by A1. omega (uniform i*Id_3) is a DIFFERENT operator. So
+     'polarize w.r.t. J' is a free choice / import, not forced by A1.
+
+========================================================================
+(4) packet parameter space {(a,b): a in R, b in C} = R^3 is ODD-dim
+========================================================================
+  dim_R = 1 (a) + 2 (b) = 3 (ODD) -> admits NO global complex
+  structure. There is no canonical holomorphic polarization of the
+  mass-operator packet itself; omega=i lives in the qubit state
+  space, not on this R^3 parameter space.
+
+========================================================================
+VERDICT: F3-NO-GO. Framework predicts Q=1; Q=2/3 needs an import.
+========================================================================
+  A1+A2+retained natively select F3 (r=1, Q=1) for the charged-lepton
+  generation carrier, on EVERY consistent channel: classical/real
+  measures, the perturbative+nonperturbative dynamical channel, AND
+  the genuinely quantum/Kahler measure built from A1's own omega=i.
+  Q=2/3 (F1) requires the ASYMMETRIC isotype weight (doublet counted
+  as 1 complex unit, singlet as 1 real unit) = the tuned kappa=2mu/nu
+  = polarizing w.r.t. the C_3-sourced J instead of A1's omega. That
+  is an unflagged IMPORT, not forced by A1. The equipartition
+  derivation rests on exactly this asymmetric (inconsistent) count.
+  CONCLUSION: the framework, taken honestly with a consistent
+  measure, predicts Q=1 -- NOT the observed 2/3. Deriving 2/3 needs
+  new structure (a forced complex structure pairing ONLY the
+  generation doublet) that A1+A2+retained do not supply.

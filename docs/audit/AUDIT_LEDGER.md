@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 163 |
+| **retained** | 164 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
 | unaudited | 1200 |
-| audit_in_progress | 1 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -58,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 919 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 920 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
@@ -114,8 +113,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 776 | 34.60 | `audited_clean` | **retained_bounded** |
 | 14 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 187 | 33.55 | `unaudited` | unaudited |
 | 15 | `three_generation_structure_note` | bounded_theorem | critical | 712 | 33.48 | `audited_clean` | **retained_bounded** |
-| 16 | `minimal_axioms_2026-04-11` | meta | critical | 983 | 32.94 | `unaudited` | meta |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 930 | 32.36 | `audited_clean` | **retained** |
+| 16 | `cpt_exact_note` | positive_theorem | critical | 930 | 33.36 | `audited_clean` | **retained** |
+| 17 | `minimal_axioms_2026-04-11` | meta | critical | 983 | 32.94 | `unaudited` | meta |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 578 | 32.18 | `unaudited` | unaudited |
 | 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 935 | 31.87 | `audited_renaming` | ~~audited_renaming~~ |
 | 20 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 576 | 31.17 | `unaudited` | unaudited |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `lorentz_boost_covariance_2d_theorem_note` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -619,6 +617,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lorentz_boost_covariance_2d_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8620,6 +8619,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The sweep result says the best smaller admissible row, topN 169, matches but does not improve on the broad topN 196 control, so no smaller family beats the broad frontier under the stated floors.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helpers instantiate the lattice propagation, source field, compression families, support/capture floors, score, and width-ratio comparison rather than merely printing constants. The runner output supports the note's bounded negative claim that smaller admissible rows do not beat the broad control, although ties are present among topN rows.
 - **rationale:** The cited upstream authorities are retained_bounded, and the restricted packet includes the primary runner source plus transitive helper sources needed to inspect the load-bearing compute path. The runner computes the h=0.25 lattice/source-response sweep from framework primitives and reports that topN 169 is the best smaller admissible row with the same displayed score/capture/width metrics as broad topN 196, not an improvement over it. This closes the bounded claim as stated: smaller source objects remain possible, but the sweep does not move the frontier past the broad control. A second auditor should note that the runner's printed SAFE READ branch appears logically mislabeled in code, but the numeric control/best-smaller comparison and the note's conclusion are still consistent.
+- **auditor confidence:** high
+
+### `lorentz_boost_covariance_2d_theorem_note`
+
+- **Note:** [`LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md`](../../docs/LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The audited scope is the free massive scalar 1+1D Hamiltonian-lattice spectral two-point function at fixed physical (Δt, Δx, m), restricted to spacelike separations, and its strict a -> 0 continuum SO(1,1) covariance.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-detailed-lorentz-20260529-second-lorentz_boost_covariance`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** In the continuum limit a -> 0, the lattice spectral integral with E_lat(p) converges to the continuum massive-scalar integral W_cont(Δt,Δx;m)=K_0(m sqrt(-s^2))/(2π) for spacelike s^2<0, which depends only on the SO(1,1) invariant s^2.  _(class `A`)_
+- **chain closes:** True — The note’s core theorem closes from standard algebraic properties of the continuum relativistic dispersion, invariant on-shell measure dp/E, and the spacelike K_0 form. The cited 3+1D dispersion note is contextual rather than load-bearing for this 1+1D free-scalar proof.
+- **rationale:** The runner source performs nontrivial numerical and algebraic checks of the lattice dispersion, continuum limit, invariant measure, K_0 spacelike form, and boost covariance; it is not a print-only or tuned numerical-match runner. Several final Part 7 checks are assertive summaries, but the load-bearing analytic and numerical checks occur earlier and support the restricted theorem surface. The only cited authority is retained_bounded and is not needed as a load-bearing premise for the 1+1D free-scalar covariance result, so no dependency downgrade is triggered.
 - **auditor confidence:** high
 
 ### `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`

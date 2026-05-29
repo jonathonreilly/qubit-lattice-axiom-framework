@@ -47378,11 +47378,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 32.363,
+      "load_bearing_score": 33.363,
       "load_bearing_step": "`CPT * H * (CPT)^{-1} = C * P * H * P * C = C * (-H) * C = -(-H) = H`, hence the CPT/Theta_H-odd Hamiltonian-sector projection vanishes.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "5b8f580bf1abc9b2485f451acec1be9f87d3e7aa0ec45cabd339de9f05b383ef",
       "note_path": "docs/CPT_EXACT_NOTE.md",
       "notes_for_re_audit_if_any": "Recheck that downstream claims do not reuse the runner's stale canonical SME coefficient labels as retained SME-basis conclusions.",
@@ -90369,11 +90369,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 19.833,
+      "load_bearing_score": 23.833,
       "load_bearing_step": "The staggered dispersion expands as E^2 = p^2 - (a^2/3) sum_i p_i^4 + O(a^4 p^6), and the anisotropic sum_i n_i^4 term decomposes as 3/5 + (4 sqrt(pi)/15) K4 in normalized real spherical harmonics with only l=4 cubic-harmonic content.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "29a3b32fb0a98ceffa08f704654474b64f1cce57a894df3b6e47e1599454d5ad",
       "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if downstream scope is broadened to Planck-pin numerical estimates, full SME coefficient-zero interpretation, or a lattice-action no-dimension-5 no-go.",
@@ -178594,22 +178594,42 @@
       "verdict_rationale": null
     },
     "lorentz_boost_covariance_2d_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "audit_date": "2026-05-29T20:00:42.782470+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note"
+        ],
+        "load_bearing_score": 15.828,
+        "runner_hash": "6860c87f411913f450123781a6381b46696b48488b2dfc0d25fc1eeb07618c0b",
+        "transitive_descendants": 908
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-detailed-lorentz-20260529-second-lorentz_boost_covariance",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note\u2019s core theorem closes from standard algebraic properties of the continuum relativistic dispersion, invariant on-shell measure dp/E, and the spacelike K_0 form. The cited 3+1D dispersion note is contextual rather than load-bearing for this 1+1D free-scalar proof.",
       "claim_id": "lorentz_boost_covariance_2d_theorem_note",
-      "claim_scope": "Continuum-limit free massive scalar 1+1D Hamiltonian-lattice two-point function at fixed spacelike separation, with finite-a boost covariance explicitly excluded.",
+      "claim_scope": "The audited scope is the free massive scalar 1+1D Hamiltonian-lattice spectral two-point function at fixed physical (\u0394t, \u0394x, m), restricted to spacelike separations, and its strict a -> 0 continuum SO(1,1) covariance.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-29T19:59:23.473332+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-29T20:00:42.782470+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -178624,27 +178644,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-29T20:00:42.782470+00:00",
+          "auditor": "codex-cli-detailed-lorentz-20260529-second-lorentz_boost_covariance",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited scope is the free massive scalar 1+1D Hamiltonian-lattice spectral two-point function at fixed physical (\u0394t, \u0394x, m), restricted to spacelike separations, and its strict a -> 0 continuum SO(1,1) covariance.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "emergent_lorentz_invariance_note"
       ],
       "direct_in_degree": 12,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained",
       "load_bearing_score": 15.828,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "In the continuum limit a -> 0, the lattice spectral integral with E_lat(p) converges to the continuum massive-scalar integral W_cont(\u0394t,\u0394x;m)=K_0(m sqrt(-s^2))/(2\u03c0) for spacelike s^2<0, which depends only on the SO(1,1) invariant s^2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "89beb705ac5ac1ba84d4220be8ccc435dceca47db979587efcc5ea2b2a951231",
       "note_path": "docs/LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the analytic convergence justification beyond the finite numerical sweeps, especially interchange of the a -> 0 limit with the oscillatory integral, but no open dependency blocks the stated spacelike free-scalar theorem.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -178719,18 +178750,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 31,
         "B": 0,
-        "C": 0,
+        "C": 8,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 39
       },
       "runner_path": "scripts/frontier_lorentz_boost_2d.py",
       "title": "1+1D SO(1,1) Boost Covariance of the Path-Sum 2-Point Function",
       "transitive_descendants": 908,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source performs nontrivial numerical and algebraic checks of the lattice dispersion, continuum limit, invariant measure, K_0 spacelike form, and boost covariance; it is not a print-only or tuned numerical-match runner. Several final Part 7 checks are assertive summaries, but the load-bearing analytic and numerical checks occur earlier and support the restricted theorem surface. The only cited authority is retained_bounded and is not needed as a load-bearing premise for the 1+1D free-scalar covariance result, so no dependency downgrade is triggered."
     },
     "lorentz_boost_covariance_3plus1d_theorem_note": {
       "audit_date": null,
@@ -204159,11 +204190,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.334,
+      "load_bearing_score": 14.334,
       "load_bearing_step": "Combining the formal Dirac parity table with the abstract derivative sign character gives total weight (-1)^N for every enumerated index assignment in the four named structures, with odd-N/even-N projection vanishings accordingly.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "d6f41f417ae0e0e992195fb1f6d66b46babee337070ce02e01f98b4e70f89d02",
       "note_path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": "Future re-audit should preserve the formal-sign-only scope and require a separate retained bridge theorem before reopening any action-level SME/LV no-go or actual lattice derivative representative claim.",

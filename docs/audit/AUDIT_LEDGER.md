@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 164 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 596 |
+| **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
 | unaudited | 1199 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 16 |
+| ~~audited_conditional~~ | 17 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -57,9 +57,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
+| `audit_in_progress` | 3 |
 | `audited_clean` | 920 |
-| `audited_conditional` | 16 |
+| `audited_conditional` | 17 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
@@ -132,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1067,6 +1066,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -11307,6 +11307,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Both one-hop dependencies are retained-grade: cl3_color_automorphism_theorem supplies the Gell-Mann SU(3) carrier and su3_dabc_symmetric_theorem_note_2026-05-02 supplies the d^{abc} decomposition. The proof is finite-dimensional trace algebra, and the exact-symbolic runner reports PASS=26 FAIL=0 for the carrier, d/f tables, conjugate representation, anomaly-index sign flip, A(3bar)=-1, two-fermion -2 contribution, and consistency probes.
 - **rationale:** The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation.
 - **auditor confidence:** high
+
+### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`
+
+- **Note:** [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](../../docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-carrier fixed-background transfer positivity from the anti-Hermitian staggered spatial hop, plus permutation invariance of det(M_KS+mI), spec(H_hat), and Z; the advertised P2/AC_phi_lambda residual tightening is conditional on omitted authorities for the P2 bridge and the AC_phi_lambda species-label classification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-rp-p2-panel1-judge01`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Because h[U] is anti-Hermitian it diagonalizes with eigenvalues i lambda_j, reducing the two-step transfer to positive 2x2 transfer pairs exp(+/-2 asinh(sqrt(m^2+lambda_j^2))), while det/spec/Z are invariant under permutation-unitary conjugation.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified tuple ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The transfer-matrix coefficient and normalization chain closes as finite linear algebra: the stated 1/2 staggered hops give T_s=[[-2A_t,I],[I,0]], hence the two-step scalar block has trace 2+4(m^2+lambda^2), determinant 1, and eigenvalues exp(+/-2 asinh(sqrt(m^2+lambda^2))). The det/spec/Z relabeling statement is also class-A similarity invariance. However, the full source claim does more than those algebraic facts: it asserts a residual tightening for the P2 bridge away from AC_phi_lambda, which requires the omitted premise that P2 depends only on det/spec/Z and the omitted classification that AC_phi_lambda is only hw=1 species labeling. Under the rubric, those missing load-bearing edges make the applicable verdict audited_conditional, not audited_clean.
+- **rationale:** Five-judge panel majority 5/5 ratified tuple ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The transfer-matrix coefficient and normalization chain closes as finite linear algebra: the stated 1/2 staggered hops give T_s=[[-2A_t,I],[I,0]], hence the two-step scalar block has trace 2+4(m^2+lambda^2), determinant 1, and eigenvalues exp(+/-2 asinh(sqrt(m^2+lambda^2))). The det/spec/Z relabeling statement is also class-A similarity invariance. However, the full source claim does more than those algebraic facts: it asserts a residual tightening for the P2 bridge away from AC_phi_lambda, which requires the omitted premise that P2 depends only on det/spec/Z and the omitted classification that AC_phi_lambda is only hw=1 species labeling. Under the rubric, those missing load-bearing edges make the applicable verdict audited_conditional, not audited_clean.
+- **auditor confidence:** judicial_panel_vote
 
 ### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 247,
+    "critical": 246,
     "high": 315,
     "leaf": 335,
     "medium": 306
@@ -8,31 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-      "claim_scope": "Bounded finite-carrier/linear-algebra extension: on the stated staggered-only temporal-gauge surface with m>0, fixed-background anti-Hermitian spatial hopping gives positive two-step transfer eigenvalues and hence per-config fermion positivity; together with the retained determinant-weight and retained-bounded gauge-half norm-square deps, this supplies the named U-integrated RP factorization. Separately, det(M_KS+mI), spec(H_hat), and Z=Tr(e^{-beta H_hat}) are invariant under hw=1 triplet relabeling; the residual-tightening reading is only that constructions depending solely on these invariants are insensitive to a pure species-label relabeling. The verdict does not close substeps (1)+(2), does not close or remove AC_phi_lambda, does not derive scalar additivity, and does not prove continuum/OS reconstruction or a from-scratch full interacting SU(3) RP theorem beyond the named factorization.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.892,
-      "note_path": "docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py",
-      "transitive_descendants": 949
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36305,6 +36280,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 68,
-  "total_pending": 1203
+  "ready_count": 67,
+  "total_pending": 1202
 }

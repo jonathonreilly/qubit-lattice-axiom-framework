@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 598 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1177 |
+| unaudited | 1176 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 29 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 929 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 29 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1413 |
+| `unaudited` | 1412 |
 
 | claim_type | count |
 |---|---:|
@@ -1068,6 +1068,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `continuum_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -3231,6 +3232,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The cascade `eta -> Omega_b (BBN) -> Omega_DM = R * Omega_b -> Omega_m -> Omega_Lambda = 1 - Omega_m (flatness)` uses one imported input (`eta`) and one bounded/tuned parameter (`alpha_GUT`) to match the Planck pie-chart entries.  _(class `G`)_
 - **chain closes:** False — The arithmetic closes only after importing eta_obs, external BBN/flatness assumptions, and a tuned/self-consistent R value. Under the restricted packet, only R_base is a retained one-hop dependency; the named Phase 4, eta-support, Omega_Lambda, and DM/neutrino authorities are missing direct dependency edges or are unaudited/conditional, and the runner hard-codes the calibrated R rather than deriving the Sommerfeld selection.
 - **rationale:** Issue: the note and runner verify a calibrated comparator cascade, not a closed bounded theorem. Why this blocks: eta is imported from observation and R = 5.48 is selected by matching the observed DM/baryon ratio, while several named authorities needed for the cascade are not retained one-hop dependencies. Repair target: add the missing dependency edges and provide retained bridge theorems for eta, the matter/cosmology-flatness assumptions, and the alpha_GUT/Sommerfeld selection, with a runner that computes the bounded band instead of hard-coding R_selfconsistent. Claim boundary until fixed: arithmetic conditional cascade from imported eta, external BBN/flatness, retained-bounded R_base, and calibrated alpha_GUT/Sommerfeld only.
+
+### `coulomb_stability_upper_bound_support_note_2026-05-20`
+
+- **Note:** [`COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](../../docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic scaling lemma: assuming the admitted general-d Coulomb Hamiltonian, scaled-trial-state expectations, and Coulomb/scalar sector identification, the trial-state scaling marks d = 4 as critical, d >= 5 as unbounded below, and d = 3 as admitted hydrogenic background.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-coulomb_stability_upper_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the scaled trial state, <H_d>_{psi_lambda} = lambda^2 T - lambda^(d-2) U, so for d >= 5 the attractive term dominates as lambda -> infinity and the Hamiltonian is unbounded below.  _(class `A`)_
+- **chain closes:** False — The algebraic scaling step closes inside the admitted P1-P2 premises. The retained chain does not close because P1, P2, and P3 are explicit external admissions not derived from the cited retained-bounded authority or any supplied bridge theorem.
+- **rationale:** The load-bearing step is a class A algebraic dominance check over stated scaling inputs. However, the note itself identifies the general-d Coulomb Hamiltonian, d-dimensional continuum quantum mechanics scalings and spectrum, and Coulomb/scalar sector identification as admitted external premises. The only cited authority is retained_bounded for cache-backed d = 3 and d = 4 table rows and does not supply the missing general-d Coulomb/QM bridge. No runner source or stdout is available, but the verdict does not depend on compute noncompletion because the conditional algebra can be judged from the note text.
+- **open / conditional deps cited:**
+  - `DIMENSIONAL_GRAVITY_TABLE.md`
+- **auditor confidence:** high
 
 ### `coupled_field_generated_family_probe_note`
 

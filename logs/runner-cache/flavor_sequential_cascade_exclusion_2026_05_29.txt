@@ -1,0 +1,42 @@
+
+========================================================================
+(1) uniform open chain caps at Q=5/9 (cannot reach 2/3 physically)
+========================================================================
+  sqrt-mass = eigenvalues of d*I + t*hop_open; positivity needs t/d < 1/sqrt2
+    t/d=0.000: sqrt-masses=[1. 1. 1.]  Q=0.3333
+    t/d=0.101: sqrt-masses=[0.857 1.    1.143]  Q=0.3379
+    t/d=0.202: sqrt-masses=[0.714 1.    1.286]  Q=0.3515
+    t/d=0.303: sqrt-masses=[0.571 1.    1.429]  Q=0.3741
+    t/d=0.404: sqrt-masses=[0.429 1.    1.571]  Q=0.4059
+    t/d=0.505: sqrt-masses=[0.286 1.    1.714]  Q=0.4467
+    t/d=0.606: sqrt-masses=[0.143 1.    1.857]  Q=0.4966
+    t/d=0.707: sqrt-masses=[0. 1. 2.]  Q=0.5556
+  => Q caps at 5/9 = 0.5556 (at t/d=1/sqrt2); 2/3 = 0.6667 is UNREACHABLE.
+
+========================================================================
+(2) non-uniform chains hit 2/3 only on a tuned measure-zero surface
+========================================================================
+  positive-spectrum chains: 16197/20000; within 0.01 of 2/3: 3 (0.02% -> measure-zero / tuned)
+
+========================================================================
+(3) the data DISFAVORS the cascade, FAVORS the cyclic-balanced structure
+========================================================================
+  observed charged-lepton Q = 0.66666 = 2/3
+  open-chain (uniform cascade) maximum Q = 5/9 = 0.5556
+  2/3 (0.6667) > 5/9 (0.5556): the leptons are MORE balanced than
+  any uniform temporal cascade can produce. So the generations do NOT
+  break into a linear/sequential order; they retain the CYCLIC balance
+  (circulant/Brannen form), where r=|b|^2/a^2=1/2 is the free amplitude.
+
+========================================================================
+VERDICT: sequential/open-chain breaking ruled out; flat direction confirmed
+========================================================================
+  The open-chain operator reaches the Gamma_chi-odd sector (good), but its
+  physical spectrum caps at 5/9 < 2/3 (uniform) or needs tuning (non-uniform).
+  No native sequential-generation mechanism exists. So even the last
+  distinct NATIVE breaking candidate does not force r=1/2 -- confirming the
+  flat-direction conclusion from the sequential/temporal-order direction.
+  NEW BOUNDED RESULT (falsifiable): the framework forbids the charged-lepton
+  spectrum from arising as a uniform sequential (open-chain) cascade: Q<=5/9.
+  The data places the leptons at the cyclic-balanced point (2/3>5/9), i.e.
+  the circulant structure with the amplitude r=1/2 a contingent flat direction.

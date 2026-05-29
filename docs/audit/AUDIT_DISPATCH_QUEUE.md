@@ -2,10 +2,10 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 7
-**Ready entries:** 7
+**Live entries:** 6
+**Ready entries:** 6
 **Resolved (post-manifest re-audit) entries:** 19
-**Resolved/invalid entries:** 35
+**Resolved/invalid entries:** 36
 **Retired entries:** 15
 
 Source sidecars:
@@ -20,13 +20,12 @@ Source sidecars:
 
 | # | ready | group | claim_id | current | source note | audit question | ready_blocker |
 |---:|:---:|---|---|---|---|---|---|
-| 1 | Y | `lead_exact_algebra_candidates` | `three_generation_observable_theorem_note` | bounded_theorem / audited_clean / retained_bounded | `docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` | Can the exact finite-linear-algebra fact that translation projectors P_i plus cyclic C3[111] powers generate all matrix units E_ij be reclassified positive_theorem, leaving the physical three-generation readout out of scope? Split first if the row mixes the two. |  |
-| 2 | Y | `lead_exact_algebra_candidates` | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem / audited_clean / retained_bounded | `docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md` | Can the exact reflection-positivity Cauchy-Schwarz inequality on the Theta-invariant gauge half-surface be reclassified positive_theorem? |  |
-| 3 | Y | `lead_exact_algebra_candidates` | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem / audited_clean / retained_bounded | `docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md` | Can the exact finite-rep fact that preserving the D_3 projector algebra forces coordinate-subset invariant subspaces be reclassified positive_theorem? |  |
-| 4 | Y | `lead_exact_algebra_candidates` | `oh_schur_boundary_action_note` | bounded_theorem / audited_clean / retained_bounded | `docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md` | Can the exact Schur-complement elimination Lambda_R = H_tt - H_tb H_bb^{-1} H_bt on the finite harmonic bulk be reclassified positive_theorem? Split any physical boundary-action interpretation first. |  |
-| 5 | Y | `cluster_decomposition` | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / audited_clean / retained_bounded | `docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md` | Can the spectral-decomposition + Cauchy-Schwarz connected-correlator bound be reclassified positive_theorem? Confirm the mass-gap input is retained-grade first. |  |
-| 6 | Y | `cluster_decomposition` | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | bounded_theorem / audited_clean / retained_bounded | `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` | Can the finite-Lambda SU(3) Wilson heat-kernel positivity lemmas be reclassified positive_theorem on the finite-Lambda surface? |  |
-| 7 | Y | `cluster_decomposition` | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / audited_clean / retained_bounded | `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` | Can the bounded cluster-decomposition closure be reclassified positive_theorem? Confirm the Lieb-Robinson series bound's grade first. |  |
+| 1 | Y | `lead_exact_algebra_candidates` | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem / audited_clean / retained_bounded | `docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md` | Can the exact reflection-positivity Cauchy-Schwarz inequality on the Theta-invariant gauge half-surface be reclassified positive_theorem? |  |
+| 2 | Y | `lead_exact_algebra_candidates` | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem / audited_clean / retained_bounded | `docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md` | Can the exact finite-rep fact that preserving the D_3 projector algebra forces coordinate-subset invariant subspaces be reclassified positive_theorem? |  |
+| 3 | Y | `lead_exact_algebra_candidates` | `oh_schur_boundary_action_note` | bounded_theorem / audited_clean / retained_bounded | `docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md` | Can the exact Schur-complement elimination Lambda_R = H_tt - H_tb H_bb^{-1} H_bt on the finite harmonic bulk be reclassified positive_theorem? Split any physical boundary-action interpretation first. |  |
+| 4 | Y | `cluster_decomposition` | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / audited_clean / retained_bounded | `docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md` | Can the spectral-decomposition + Cauchy-Schwarz connected-correlator bound be reclassified positive_theorem? Confirm the mass-gap input is retained-grade first. |  |
+| 5 | Y | `cluster_decomposition` | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | bounded_theorem / audited_clean / retained_bounded | `docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md` | Can the finite-Lambda SU(3) Wilson heat-kernel positivity lemmas be reclassified positive_theorem on the finite-Lambda surface? |  |
+| 6 | Y | `cluster_decomposition` | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / audited_clean / retained_bounded | `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md` | Can the bounded cluster-decomposition closure be reclassified positive_theorem? Confirm the Lieb-Robinson series bound's grade first. |  |
 
 ## Resolved By Post-Manifest Re-Audit
 
@@ -69,30 +68,31 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 9 | resolved_or_superseded | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem / audited_clean / retained |
 | 10 | resolved_or_superseded | `s3_taste_cube_decomposition_note` | positive_theorem / audited_clean / retained |
 | 11 | resolved_or_superseded | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem / audited_clean / retained |
-| 12 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem / audited_clean / retained_bounded |
-| 13 | resolved_or_superseded | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / audited_clean / retained_bounded |
-| 14 | resolved_or_superseded | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / audited_conditional / audited_conditional |
-| 15 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 16 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 17 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 18 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
-| 19 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
-| 20 | resolved_or_superseded | `cl3_color_automorphism_theorem` | positive_theorem / audited_clean / retained |
-| 21 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
-| 22 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
-| 23 | resolved_or_superseded | `action_normalization_note` | no_go / audited_clean / retained_no_go |
-| 24 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / audited_conditional / audited_conditional |
-| 25 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
-| 26 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / audited_renaming / audited_renaming |
-| 27 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
-| 28 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem / audited_clean / retained_bounded |
-| 29 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / retained_pending_chain |
-| 30 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 31 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 32 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
-| 33 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 34 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 35 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 12 | resolved_or_superseded | `three_generation_observable_theorem_note` | positive_theorem / audited_clean / retained |
+| 13 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem / audited_clean / retained_bounded |
+| 14 | resolved_or_superseded | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / audited_clean / retained_bounded |
+| 15 | resolved_or_superseded | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / audited_conditional / audited_conditional |
+| 16 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 17 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 18 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 19 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
+| 20 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
+| 21 | resolved_or_superseded | `cl3_color_automorphism_theorem` | positive_theorem / audited_clean / retained |
+| 22 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
+| 23 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
+| 24 | resolved_or_superseded | `action_normalization_note` | no_go / audited_clean / retained_no_go |
+| 25 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / audited_conditional / audited_conditional |
+| 26 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
+| 27 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / audited_renaming / audited_renaming |
+| 28 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
+| 29 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem / audited_clean / retained_bounded |
+| 30 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / retained_pending_chain |
+| 31 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 32 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 33 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
+| 34 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 35 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 36 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
 
 ## Retired Dispatch Targets
 
@@ -104,12 +104,12 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 4 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 5 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 6 | `g_bare_derivation_note` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
-| 7 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
+| 7 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 8 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 9 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 10 | `g_bare_rigidity_theorem_note` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 11 | `g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
-| 12 | `g_bare_two_ward_closure_note_2026-04-18` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
+| 12 | `g_bare_two_ward_closure_note_2026-04-18` | positive_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 13 | `generation_axiom_boundary_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim. |
 | 14 | `native_gauge_closure_note` | positive_theorem / audited_clean / retained | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim. |
 | 15 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; current source scope is a finite projection lemma and does not close the kappa_EW matching-rule identification. Positive-theorem promotion remains conditional on a future source repair that closes that identification. |

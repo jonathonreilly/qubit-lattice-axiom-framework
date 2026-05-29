@@ -1,0 +1,29 @@
+
+========================================================================
+FACT 1: COUNTING-vs-SPLITTING tension on the C_3 orbit
+========================================================================
+  C_3-equivariant (gives the COUNT 3): [H,R]=0.0e+00, {H,Gx}=2.53 (commutes -> Q=1)
+  chiral (gives the VALUE 2/3):        {H,Gx}=1.4e-16, [H,R]=1.63 (BREAKS the orbit)
+  => count needs [H,R]=0; value needs [H,R]!=0. Mutually exclusive on
+     the same C_3. (Rests on retained_bounded koide_z3_equivariant_anticommuting.)
+
+========================================================================
+FACT 2: CATEGORY MISMATCH -- anomaly fixes charges, not the modulus r
+========================================================================
+  free Yukawa coeffs at FIXED anomaly-cancelling charges:
+    within 0.01 of Q=2/3: 1.39% (chance level -> no preference)
+  charges = discrete/deformation-invariant; Q=2/3 = continuous Yukawa
+  modulus. No discrete consistency condition fixes it (framework OR SM).
+
+========================================================================
+VERDICT (time-emergence panel, 14 lenses, 0 escapes, confirms-import)
+========================================================================
+  Time-emergence / anomaly-cancellation does NOT force Q=2/3: it reaches
+  CHARGES + signature + the COUNT 3, never the continuous mass ratio.
+  Co-emergence is transport's twin, not its escape (provenance-independent:
+  Gamma_chi is itself circulant, so comm(R) cap anticomm(Gamma_chi)={0}).
+  GATE, precisely located: the C_3-orbit COUNTING-vs-SPLITTING tension.
+  Status: open_gate; the single import (S_3-orbit-splitting chiral grading
+  on the generation R^3) is shared with generation-ID and signed-gravity.
+  NOT a promotion of Q=2/3; a sharper POSITIVE characterization of why
+  it is not internally derivable.

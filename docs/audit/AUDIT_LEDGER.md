@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 163 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 595 |
+| **retained_bounded** | 594 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1202 |
+| unaudited | 1204 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 918 |
+| `audited_clean` | 917 |
 | `audited_conditional` | 14 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1438 |
+| `unaudited` | 1440 |
 
 | claim_type | count |
 |---|---:|
@@ -73,17 +73,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `meta` | 240 |
 | `no_go` | 260 |
 | `open_gate` | 117 |
-| `positive_theorem` | 702 |
+| `positive_theorem` | 703 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 383 |
 | `high` | 505 |
-| `medium` | 607 |
+| `medium` | 608 |
 | `leaf` | 1013 |
 
 - **Retained pending chain closure:** 10
-- **Citation cycles detected:** 1
+- **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
 
@@ -98,7 +98,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 741 | 55.03 | `unaudited` | unaudited |
+| 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 728 | 54.51 | `unaudited` | unaudited |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 971 | 53.42 | `audited_clean` | **retained** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 966 | 50.92 | `unaudited` | meta |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1103 | 46.61 | `audited_clean` | **retained** |
@@ -423,7 +423,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
-| `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -5543,19 +5542,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** But Theorem 1 gives P(beta) = beta / 18 + O(beta^2), so exact equality forces Gamma = 1; since Gamma_cand = 1.554921974442116 != 1, P(beta) = P_1plaq(Gamma_cand beta) cannot be true.  _(class `A`)_
 - **chain closes:** True — The note compares the same normalized plaquette observable on both sides and derives identical beta=0 slopes 1/18 for the full Wilson plaquette and local one-plaquette block. An exact constant rescaling would change the local slope to Gamma/18, so equality near beta=0 forces Gamma=1, contradicting the stated Gamma_cand.
 - **rationale:** The retained claim is a no-go, not support for the remaining beta-dependent program. The obstruction closes by exact small-beta algebra: equal analytic expansions of the same plaquette observable require equal first derivatives at beta=0, and the candidate constant lift has the wrong derivative. The runner hard-codes the elementary Haar slope rather than independently deriving Haar integration, but the source derivation is explicit enough and the runner checks the decisive slope mismatch for the scoped no-go. Residual risk is limited to normalization conventions for the plaquette/action; within the conventions stated in the note, the conclusion follows.
-- **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_distinct_shell_theorem_note`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite mod-2 cubical-boundary geometry for distinct plaquettes around a marked plaquette in the local four-coordinate Wilson cubical patch, including the beta^5 numerator and beta^6 vacuum distinct-shell order corollaries.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260524T202502Z-b2d2be46-gauge_vacuum_plaquette_d-02`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The runner exhaustively checks all 5^4 one-per-observed-edge distinct four-action candidates and finds that none closes the marked plaquette boundary, while the other five faces of an elementary cube do close it.  _(class `C`)_
-- **chain closes:** True — The lower bound, exhaustive four-action exclusion, and explicit five-action cube-shell witness close the bounded finite-geometry claim. No beta_eff law, physical coupling normalization, or external comparator is imported.
-- **rationale:** The primary runner performs an actual finite cubical-boundary computation: it constructs local plaquettes, computes mod-2 edge boundaries, enumerates the 625 four-action candidates, and checks the explicit cube witness. The load-bearing result is not read from another note, fitted to an external value, or produced by a definition substitution. The hard-coded support check is non-load-bearing and does not affect the theorem closure.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10`

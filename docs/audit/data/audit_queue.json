@@ -3,26 +3,10 @@
     "critical": 250,
     "high": 315,
     "leaf": 336,
-    "medium": 305
+    "medium": 307
   },
-  "cycle_break_target_count": 1,
-  "cycle_break_targets": [
-    {
-      "all_cycle_nodes": [
-        "observable_principle_from_axiom_note",
-        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
-      ],
-      "cycle_id": "cycle-0001",
-      "cycle_length": 3,
-      "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['observable_principle_from_axiom_note', 'observable_principle_p1_p2_from_qubit_trace_note_2026-05-20'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
-      "max_transitive_descendants": 741,
-      "primary_break_target": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
-      "primary_break_target_audit_status": "unaudited",
-      "primary_break_target_criticality": "critical",
-      "repair_class": "cycle_break_required"
-    }
-  ],
+  "cycle_break_target_count": 0,
+  "cycle_break_targets": [],
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -112,12 +96,12 @@
       "direct_in_degree": 3,
       "effective_status": "retained_bounded",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.039,
+      "load_bearing_score": 14.018,
       "note_path": "docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py",
-      "transitive_descendants": 743
+      "transitive_descendants": 732
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -579,35 +563,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "admitted_input_registry_tier_a_note_2026-05-23",
-        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
-        "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
-      ],
-      "direct_in_degree": 91,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 55.035,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "transitive_descendants": 741
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -617,7 +572,6 @@
       "cross_confirmation_status": null,
       "deps": [
         "minimal_axioms_2026-05-03",
-        "observable_principle_from_axiom_note",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
@@ -652,12 +606,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.035,
+      "load_bearing_score": 11.014,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
-      "transitive_descendants": 741
+      "transitive_descendants": 730
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -678,12 +632,41 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.035,
+      "load_bearing_score": 10.012,
       "note_path": "docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py",
-      "transitive_descendants": 741
+      "transitive_descendants": 729
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_from_axiom_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+        "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
+      ],
+      "direct_in_degree": 90,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 54.51,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
+      "transitive_descendants": 728
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -17041,6 +17024,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.144,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_EXACT_CORE_NARROW_THEOREM_NOTE_2026-05-29.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
+      "transitive_descendants": 49
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -20460,6 +20465,30 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_abcc_cp_phase_no_go_theorem.py",
+      "transitive_descendants": 48
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.615,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
       "transitive_descendants": 48
     },
     {
@@ -36399,6 +36428,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 68,
-  "total_pending": 1206
+  "ready_count": 69,
+  "total_pending": 1208
 }

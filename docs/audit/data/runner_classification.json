@@ -9192,6 +9192,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py"
     },
+    "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 33,
+        "D": 18
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py"
+    },
     "gauge_vacuum_plaquette_distinct_shell_theorem_note": {
       "assert_count": 1,
       "counts": {
@@ -39297,6 +39309,7 @@
     "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py": {
       "assert_count": 1,
       "claims": [
+        "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29",
         "gauge_vacuum_plaquette_distinct_shell_theorem_note"
       ],
       "counts": {

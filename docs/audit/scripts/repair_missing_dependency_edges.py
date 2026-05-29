@@ -10,6 +10,23 @@ open_dependency_paths, but that note is not a direct dependency, the script can
 append an explicit markdown link to the source note. The normal audit pipeline
 then picks up the new edge, changes the source note hash, and resets that row
 for fresh re-audit.
+
+Two guards stop the script from fighting deliberate human cycle-breaks (an
+auditor names what is missing from the chain; it does not know the graph
+direction, so the wiring step must resolve it):
+  (a) backtick guard — if the target note's filename already appears as a
+      backticked plain-text reference in the source note, no live link is
+      added. Authors backtick a downstream note's filename to record a
+      sideways/back pointer without creating a load-bearing citation edge,
+      usually to keep the graph acyclic. A backtick is not an edge to the
+      graph builder, so a fresh markdown link would silently override that
+      decision and recreate the cycle.
+  (b) cycle guard — if adding the source->target edge would close a directed
+      cycle in the citation graph, the edge is skipped (reusing
+      build_cycle_inventory.detect_cycles, the audit lane's canonical cycle
+      walk).
+Both guards err toward NOT writing an edge: a missed auto-wire is recoverable
+(a human can add it), but a re-created cycle causes nightly bot churn.
 """
 
 from __future__ import annotations
@@ -18,11 +35,19 @@ import argparse
 import collections
 import json
 import os
+import re
 from pathlib import Path, PurePosixPath
+
+from build_cycle_inventory import detect_cycles
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+GRAPH_PATH = REPO_ROOT / "docs" / "audit" / "data" / "citation_graph.json"
 MARKER = "## Audit dependency repair links"
+# Inline-code spans (`like_this.md`) are NOT citation edges: the graph builder's
+# link regex only matches [text](path) links. Authors backtick a note's filename
+# to record a sideways/back pointer without creating a load-bearing edge.
+BACKTICK_SPAN_RE = re.compile(r"`([^`\n]+)`")
 INTRO = (
     "This graph-bookkeeping section records explicit dependency links named by "
     "a prior conditional audit so the audit citation graph can track them. It "
@@ -138,9 +163,85 @@ def bullet_for(source_path: Path, target_id: str, target_path: Path) -> str:
     return f"- [{target_id}]({rel})"
 
 
-def apply_repairs(rows: dict[str, dict], repairs: dict[str, list[str]], apply: bool) -> tuple[int, int]:
+def load_graph_adjacency() -> dict[str, list[str]]:
+    """Return {claim_id: [dep_id, ...]} from the citation graph.
+
+    This is the same dependency structure build_cycle_inventory.detect_cycles
+    consumes. The graph records live markdown-link edges only (a backticked
+    filename is not an edge), and the pipeline that runs after this script
+    rebuilds it, so it is exactly the pre-repair edge set the new edges would be
+    added on top of. Returns {} if the graph is absent — the cycle guard then
+    no-ops while the backtick guard still applies.
+    """
+    if not GRAPH_PATH.exists():
+        return {}
+    graph = json.loads(GRAPH_PATH.read_text(encoding="utf-8"))
+    return {
+        cid: list(node.get("deps") or [])
+        for cid, node in graph.get("nodes", {}).items()
+    }
+
+
+def has_backticked_reference(text: str, target_path: Path) -> bool:
+    """True if the target note's filename appears inside an inline-code span.
+
+    Authors backtick a filename to record a sideways/back pointer without
+    creating a live citation edge (the convention that breaks length-2 cycles).
+    Matching on the basename catches every backticked form — bare name,
+    relative path, or repo-relative path — because the basename is a substring
+    of each, and these dated note filenames do not collide as substrings.
+    """
+    basename = target_path.name
+    return any(basename in span for span in BACKTICK_SPAN_RE.findall(text))
+
+
+def _canonical_cycle(cycle: list[str]) -> tuple[str, ...]:
+    """Rotate a cycle to start at its smallest node id, so the same directed
+    cycle has one representation regardless of where the DFS entered it."""
+    if not cycle:
+        return ()
+    pivot = min(range(len(cycle)), key=cycle.__getitem__)
+    return tuple(cycle[pivot:] + cycle[:pivot])
+
+
+def _canonical_cycles(adjacency: dict[str, list[str]]) -> set[tuple[str, ...]]:
+    nodes = {cid: {"deps": deps} for cid, deps in adjacency.items()}
+    return {_canonical_cycle(cycle) for cycle in detect_cycles(nodes)}
+
+
+def edge_would_close_cycle(
+    adjacency: dict[str, list[str]], source_id: str, target_id: str
+) -> bool:
+    """True if adding source_id -> target_id introduces a new directed cycle.
+
+    Reuses build_cycle_inventory.detect_cycles and compares the canonical cycle
+    set before and after the tentative edge. A genuinely new cycle always shows
+    up as a new canonical entry, so there are no false negatives; a false
+    positive merely skips one auto-wire, which is the safe direction. Nodes
+    unknown to the graph cannot lie on an existing path, so an edge touching one
+    is correctly judged cycle-free.
+    """
+    existing = adjacency.get(source_id, [])
+    if target_id in existing:
+        return False
+    before = _canonical_cycles(adjacency)
+    trial = dict(adjacency)
+    trial[source_id] = existing + [target_id]
+    return bool(_canonical_cycles(trial) - before)
+
+
+def apply_repairs(
+    rows: dict[str, dict],
+    repairs: dict[str, list[str]],
+    apply: bool,
+    adjacency: dict[str, list[str]] | None = None,
+) -> dict[str, int]:
+    if adjacency is None:
+        adjacency = load_graph_adjacency()
     changed_files = 0
     added_edges = 0
+    skipped_backticked = 0
+    skipped_cycle = 0
     for source_id, targets in sorted(repairs.items()):
         source_path = REPO_ROOT / rows[source_id]["note_path"]
         text = source_path.read_text(encoding="utf-8")
@@ -149,8 +250,20 @@ def apply_repairs(rows: dict[str, dict], repairs: dict[str, list[str]], apply: b
             target_path = REPO_ROOT / rows[target_id]["note_path"]
             bullet = bullet_for(source_path, target_id, target_path)
             link_fragment = bullet.rsplit("](", 1)[1].rstrip(")")
-            if bullet not in text and f"]({link_fragment})" not in text:
-                bullets.append(bullet)
+            # Already wired as a live markdown link: nothing to do.
+            if bullet in text or f"]({link_fragment})" in text:
+                continue
+            # Guard (a): respect a deliberately-backticked sideways/back pointer.
+            if has_backticked_reference(text, target_path):
+                skipped_backticked += 1
+                continue
+            # Guard (b): never auto-wire an edge that closes a citation cycle.
+            if edge_would_close_cycle(adjacency, source_id, target_id):
+                skipped_cycle += 1
+                continue
+            bullets.append(bullet)
+            # Reflect the accepted edge so later candidates this run see it.
+            adjacency.setdefault(source_id, []).append(target_id)
         if not bullets:
             continue
 
@@ -165,7 +278,12 @@ def apply_repairs(rows: dict[str, dict], repairs: dict[str, list[str]], apply: b
         else:
             next_text = text.rstrip() + f"\n\n{MARKER}\n\n{INTRO}\n\n{addition}"
         source_path.write_text(next_text, encoding="utf-8")
-    return changed_files, added_edges
+    return {
+        "changed_files": changed_files,
+        "dependency_edges": added_edges,
+        "skipped_backticked": skipped_backticked,
+        "skipped_cycle": skipped_cycle,
+    }
 
 
 def main() -> int:
@@ -179,12 +297,14 @@ def main() -> int:
 
     rows = load_rows()
     repairs = candidate_repairs(rows)
-    changed_files, added_edges = apply_repairs(rows, repairs, args.apply)
+    stats = apply_repairs(rows, repairs, args.apply)
     mode = "applied" if args.apply else "dry_run"
     print(f"repair_missing_dependency_edges: {mode}")
     print(f"  candidate_rows: {len(repairs)}")
-    print(f"  changed_files: {changed_files}")
-    print(f"  dependency_edges: {added_edges}")
+    print(f"  changed_files: {stats['changed_files']}")
+    print(f"  dependency_edges: {stats['dependency_edges']}")
+    print(f"  skipped_backticked_reference: {stats['skipped_backticked']}")
+    print(f"  skipped_cycle_would_close: {stats['skipped_cycle']}")
     if args.apply:
         print("  next: bash docs/audit/scripts/run_pipeline.sh")
     return 0

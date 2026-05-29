@@ -1,12 +1,12 @@
 # Audit Queue
 
-**Total pending:** 1206
-**Ready (all deps already at retained-grade or metadata tiers):** 68
+**Total pending:** 1208
+**Ready (all deps already at retained-grade or metadata tiers):** 69
 
 By criticality:
 - `critical`: 250
 - `high`: 315
-- `medium`: 305
+- `medium`: 307
 - `leaf`: 336
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
@@ -18,7 +18,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 1 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | audit_in_progress | critical | 949 | 10.89 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py` |
 | 2 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | unaudited | critical | 949 | 10.39 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py` |
 | 3 | `emergent_lorentz_invariance_note` | bounded_theorem | unaudited | critical | 911 | 19.83 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_emergent_lorentz_invariance.py` |
-| 4 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | critical | 743 | 14.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py` |
+| 4 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | critical | 732 | 14.02 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py` |
 | 5 | `higgs_mass_from_axiom_note` | bounded_theorem | unaudited | critical | 496 | 24.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/higgs_tree_level_mean_field_runner_2026_05_03.py` |
 | 6 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 948 | 27.89 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py` |
 | 7 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 941 | 17.88 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cluster_decomposition_check.py` |
@@ -36,10 +36,10 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 19 | `staggered_dirac_grassmann_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 890 | 13.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_grassmann_forcing_dependency_chain.py` |
 | 20 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 888 | 18.80 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_kawamoto_smit_phase_forcing.py` |
 | 21 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 870 | 39.77 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
-| 22 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 741 | 55.03 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
-| 23 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | unaudited | critical | 741 | 11.04 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |
-| 24 | `observable_principle_p1_p2_from_qubit_trace_note_2026-05-20` | bounded_theorem | unaudited | critical | 741 | 11.04 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py` |
-| 25 | `p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28` | bounded_theorem | unaudited | critical | 741 | 10.04 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py` |
+| 22 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | unaudited | critical | 741 | 11.04 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |
+| 23 | `observable_principle_p1_p2_from_qubit_trace_note_2026-05-20` | bounded_theorem | unaudited | critical | 730 | 11.01 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py` |
+| 24 | `p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28` | bounded_theorem | unaudited | critical | 729 | 10.01 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py` |
+| 25 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 728 | 54.51 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
 | 26 | `alpha_s_derived_note` | bounded_theorem | unaudited | critical | 724 | 38.00 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_zero_import_chain.py` |
 | 27 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 704 | 12.46 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
 | 28 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 678 | 26.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
@@ -65,13 +65,5 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 48 | `yt_bridge_hessian_selector_note` | bounded_theorem | unaudited | critical | 575 | 14.17 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_bridge_hessian_selector.py` |
 | 49 | `yt_bridge_higher_order_corrections_note` | bounded_theorem | unaudited | critical | 573 | 12.66 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_bridge_higher_order_corrections.py` |
 | 50 | `yt_bridge_nonlocal_corrections_note` | bounded_theorem | unaudited | critical | 573 | 12.66 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_bridge_nonlocal_corrections.py` |
-
-## Citation cycle break targets
-
-1 citation cycles in the graph. Each cycle permanently blocks every member from `retained` until one node is re-audited with explicit cycle-break instructions or a 'see also' edge is stripped. Top 25 below; full list in `data/audit_queue.json` under `cycle_break_targets`.
-
-| # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
-|---:|---|---:|---:|---|---|---|
-| 1 | `cycle-0001` | 3 | 741 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | critical | unaudited |
 
 Full queue lives in `data/audit_queue.json`.

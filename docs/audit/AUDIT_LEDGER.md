@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 573 |
+| **retained_bounded** | 574 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1173 |
+| unaudited | 1172 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 886 |
+| `audited_clean` | 887 |
 | `audited_conditional` | 71 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1403 |
+| `unaudited` | 1402 |
 
 | claim_type | count |
 |---|---:|
@@ -979,6 +979,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_low_band_retention_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_seed1_crossfamily_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `wave_direct_dm_portability_batch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_equation_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_equation_self_field_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
@@ -15096,6 +15097,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The synthesis table combines the retained seed0 and seed1 control ladders at Fam1, H=0.25, S=0.004 and asserts common negative delta_hist with seed 1 having the larger-magnitude negative R_hist.  _(class `B`)_
 - **chain closes:** True — Both one-hop control notes are retained-bounded, the direct runner completes in this worktree with PASS=39 FAIL=0, and independent arithmetic on the frozen logs confirms delta_hist = dM(early)-dM(late), negative signs for both seeds, and |R_hist(seed1)| > |R_hist(seed0)| at S=0.004.
 - **rationale:** The source has been narrowed to the retained-core fine-pair comparison and explicitly excludes the older coarse-band reversal/mechanism claims. The runner checks source boundaries, reads only the two Fam1 seed-control logs, verifies exact nulls/sign patterns/spread summaries, and matches the S=0.004 table values. A separate log arithmetic check reproduces the negative deltas and R_hist ordering within rounding. Residual risk is limited to the finite logged control-ladder setup; no family-wide, portability, mechanism, or coarse-band conclusion is retained.
+- **auditor confidence:** high
+
+### `wave_direct_dm_portability_batch_note`
+
+- **Note:** [`WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md`](../../docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded direct-dM portability batch over Fam1/Fam2/Fam3, seeds 0 and 1, H in {0.5,0.35}, strengths {0,0.002,0.004,0.008}, and the matched-schedule direct-retarded response: exact S=0 nulls, negative delta_hist for all nonzero runs, reference-strength R_hist band -19.98% to -44.29%, and within-bucket |delta_hist/s| spread from 1.97% to 6.91%. H=0.25 portability, tight amplitude law, continuum stability, lab-facing magnitude, and mechanism claims are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-wave-direct-dm-portability-batch-2026-05-28`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Across the 48-run portability batch, the runner reports null max |delta_hist|=0, all reference-strength signs negative, R_hist means/bands for each family/H bucket, and |delta_hist/s| spreads between 1.97% and 6.91%.  _(class `C`)_
+- **chain closes:** True — The primary runner computes the declared three-family, two-seed, two-H, four-strength batch through the direct-dM helper path. Independent checks of the cached output confirm the exact null, negative nonzero deltas, reference-strength R_hist band, and spread extrema reported in the source note.
+- **rationale:** Clean under the bounded H=0.5/0.35 portability-batch scope. The runner is a genuine batch computation over the declared family/seed/H/strength grid and the summary values match the source: exact null, stable negative sign, material reference-strength response, and low within-bucket weak-field spread. The later H=0.25 rows and syntheses are useful context but do not promote this row to an H=0.25 portability law, a tight amplitude law, a continuum-stability theorem, or a lab-facing magnitude claim.
 - **auditor confidence:** high
 
 ### `wave_equation_gravity_note`

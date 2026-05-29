@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 305
+    "medium": 304
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16746,39 +16746,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_portability_batch_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_high_band_boundary_note",
-        "wave_direct_dm_h025_low_band_retention_note",
-        "wave_direct_dm_h025_two_point_synthesis_note",
-        "wave_direct_dm_h025_fam2_seed0_boundary_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "load_bearing_score": 4.959,
-      "note_path": "docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wave_direct_dm_portability_batch.py",
-      "transitive_descendants": 10
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -16796,6 +16763,31 @@
       "ready": true,
       "runner_path": "scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py",
       "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wave_direct_dm_seed_band_diagnosis_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wave_direct_dm_portability_batch_note",
+        "wave_direct_dm_h025_two_point_synthesis_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.0,
+      "note_path": "docs/WAVE_DIRECT_DM_SEED_BAND_DIAGNOSIS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wave_direct_dm_seed_band_diagnosis.py",
+      "transitive_descendants": 7
     },
     {
       "audit_independence_required": "any_non_self",
@@ -23989,31 +23981,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_seed_band_diagnosis_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_portability_batch_note",
-        "wave_direct_dm_h025_two_point_synthesis_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.0,
-      "note_path": "docs/WAVE_DIRECT_DM_SEED_BAND_DIAGNOSIS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wave_direct_dm_seed_band_diagnosis.py",
-      "transitive_descendants": 7
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -27059,6 +27026,37 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wave_direct_dm_h025_fam2_seed1_control_note",
+        "wave_direct_dm_h025_fam2_seed0_control_note",
+        "wave_direct_dm_h025_fam2_two_point_synthesis_note",
+        "wave_direct_dm_h025_two_point_synthesis_note",
+        "wave_direct_dm_portability_batch_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/wave_direct_dm_matched_history_probe.py",
+        "scripts/wave_retardation_continuum_limit.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -35061,37 +35059,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note",
-        "wave_direct_dm_h025_two_point_synthesis_note",
-        "wave_direct_dm_portability_batch_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wave_direct_dm_matched_history_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35606,6 +35573,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 35,
-  "total_pending": 1175
+  "ready_count": 36,
+  "total_pending": 1174
 }

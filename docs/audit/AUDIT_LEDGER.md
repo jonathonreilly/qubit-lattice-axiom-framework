@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 578 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1166 |
+| unaudited | 1165 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -51,6 +51,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 4 |
+| `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
 | `decoration_under_yt_ew_color_projection_theorem` | 1 |
@@ -60,20 +61,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 891 |
 | `audited_conditional` | 72 |
-| `audited_decoration` | 50 |
+| `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1396 |
+| `unaudited` | 1395 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1122 |
-| `decoration` | 51 |
+| `decoration` | 52 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 117 |
-| `positive_theorem` | 709 |
+| `positive_theorem` | 708 |
 
 | criticality | count |
 |---|---:|
@@ -1136,6 +1137,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `translation_abelian_composition_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `translation_covariance_local_op_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -14338,6 +14340,20 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Three independent grown families produce quantitatively identical physics on all 9 measurable properties to within 5%.  _(class `B`)_
 - **chain closes:** False — The source table itself leaves Family 3 Distance alpha as '(not yet)', and no runner is provided to recompute the 9-property comparison, so the headline 9/9 three-family match does not close.
 - **rationale:** Issue: The note claims three families match on all 9 measurable properties, but the table explicitly has Family 3 Distance alpha marked '(not yet)' and the note provides no runner or log artifact to verify the cross-family card. Why this blocks: the load-bearing 9/9 statement is false on the face of the supplied table, and the broader inference that observables are geometry-independent cannot follow from a partial, hand-entered comparison. Repair target: add a runner that recomputes every listed property for all three families, including Family 3 Distance alpha, with explicit <5% assertions and at least one holdout check. Claim boundary until fixed: safe to cite this as a partial comparison of three selected drift/restore rows with eight populated properties and distance-alpha data only for Families 1 and 2; not safe to claim 9/9 three-family equality or geometry-independence.
+- **auditor confidence:** high
+
+### `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03`
+
+- **Note:** [`THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md`](../../docs/THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic finite-Fourier diagonalization of the order-3 cyclic action on the retained three-generation C^3 parent surface; no physical species, hierarchy, CKM/PMNS, or new observable bridge is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_three_generation_observable_theorem_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the parent C3 cyclic permutation X_a -> X_{a+1} on C^3, the standard Z_3 Fourier vectors Y_k=(1/sqrt(3)) sum_a omega^{-k(a-1)} X_a diagonalize C3 with eigenvalues omega^k.  _(class `A`)_
+- **chain closes:** True — The Fourier basis, eigenvalues, orthonormality, inverse transform, isotypic decomposition, diagonal form, and cyclic-average projector all follow by finite-dimensional algebra from the retained parent C3 action.
+- **rationale:** The independent check verifies the cyclic permutation matrix has order 3, eigenvalues {1, omega, omega^2}, a unitary Fourier eigenbasis, one-dimensional eigenspaces, and a rank-one cyclic-average projector. This is correct mathematics, but it is ordinary finite-Fourier algebra applied to the single retained parent three-generation observable theorem. It adds no independent comparator, no physical generation-species bridge, no hierarchy/CKM/PMNS closure, and no compression of the parent claim. It should be boxed as decoration under the parent rather than retained as a separate positive theorem.
+- **decoration parent:** `three_generation_observable_theorem_note`
 - **auditor confidence:** high
 
 ### `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10`

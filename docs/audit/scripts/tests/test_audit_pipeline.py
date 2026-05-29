@@ -95,6 +95,14 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     module.LEDGER_PATH = module.DATA_DIR / "audit_ledger.json"
     if hasattr(module, "GRAPH_PATH"):
         module.GRAPH_PATH = module.DATA_DIR / "citation_graph.json"
+    # audit_lint reads these at main() time; without redirecting them the lint
+    # validates a synthetic temp ledger against the REAL repo's
+    # tier_a_admissions.json / audit_dispatch_queue.json and emits spurious
+    # errors (rows the test never created).
+    if hasattr(module, "TIER_A_ADMISSIONS_PATH"):
+        module.TIER_A_ADMISSIONS_PATH = module.DATA_DIR / "tier_a_admissions.json"
+    if hasattr(module, "AUDIT_DISPATCH_QUEUE_PATH"):
+        module.AUDIT_DISPATCH_QUEUE_PATH = module.DATA_DIR / "audit_dispatch_queue.json"
     if hasattr(module, "SUMMARY_PATH"):
         # Either compute_effective_status (effective_status_summary) or
         # compute_load_bearing (load_bearing_summary). Set both files under
@@ -2260,8 +2268,6 @@ class AuditLintDispatchQueueTest(unittest.TestCase):
         self._write_sidecar_and_queue(target_cid=target_cid, in_queue_bucket=in_queue_bucket)
         m = _import("audit_lint")
         _patch_repo_root(m, self.tmp_root)
-        m.AUDIT_DISPATCH_QUEUE_PATH = m.DATA_DIR / "audit_dispatch_queue.json"
-        m.TIER_A_ADMISSIONS_PATH = m.DATA_DIR / "tier_a_admissions.json"
         import io, contextlib
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf):

@@ -182,11 +182,20 @@ framework after the gauge/gravity derivation itself. The paper can state:
    limitation as standard lattice QCD and does not weaken the
    universality-based identification.
 
-3. **Emergent Lorentz invariance:** This is no longer an open structural
-   gap on `main`. The current package carries an exact retained Lorentz
-   theorem via [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](EMERGENT_LORENTZ_INVARIANCE_NOTE.md).
-   The remaining comparison work is only optional textbook packaging, not a
-   missing Lorentz derivation.
+3. **Emergent Lorentz invariance (approximate, unaudited):** The package
+   carries an *approximate* emergent Lorentz structure via
+   [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
+   not an exact retained Lorentz theorem. That note is a bounded
+   structural-dispersion result with effective_status `unaudited`: on the
+   cubic `Z³` lattice the infrared dispersion is isotropic at leading order,
+   but the first anisotropic correction is a CPT-even, parity-even
+   **dimension-6** operator with a unique `ℓ = 4` cubic-harmonic signature —
+   i.e. residual Lorentz violation at O((E/M_Planck)²), suppressed below all
+   current experimental bounds but not exact. The Planck-suppressed numerical
+   readout is additionally conditional on an upstream Planck-pin/unit-map
+   authority that is not retained. Lorentz invariance is therefore emergent to
+   all currently testable precision, but promoting this to an exact retained
+   Lorentz theorem remains open work.
 
 4. **Strong-field quantum gravity:** The continuum chain covers the
    weak-field/stationary sector. The full non-perturbative quantum

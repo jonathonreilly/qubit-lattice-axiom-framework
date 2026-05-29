@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 168 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 604 |
+| **retained_bounded** | 605 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1149 |
+| unaudited | 1148 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 937 |
+| `audited_clean` | 938 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1385 |
+| `unaudited` | 1384 |
 
 | claim_type | count |
 |---|---:|
@@ -562,6 +562,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -8181,6 +8182,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The retained unpointed tests are invariant along the source, CP1-line, and endpoint torsor fibres while the open charged-lepton readouts change, so origin-free retained data do not force the simultaneous closing representative.  _(class `A`)_
 - **chain closes:** True — The note scopes the result as an atlas no-go, not a positive Koide closure. The algebraic fibre checks exhibit invariant unpointed data together with changed readouts, so the claimed non-forcing result follows within that scoped atlas.
 - **rationale:** The runner completed from cache with 15/15 PASS lines and checks symbolic algebraic invariance/countermodel facts for the three residual freedoms. It does not hard-code a positive Koide closure; it explicitly reports that the dimensionless lane is not closed and that a physical source/boundary-origin law remains the next theorem. No one-hop dependencies are listed, so there is no open dependency chain in the restricted packet. Residual risk is limited to the note's scoped atlas premise, not to the internal no-go once that atlas is taken as the audited object.
+- **auditor confidence:** high
+
+### `koide_q23_block_weight_frontier_bounded_note_2026-05-29`
+
+- **Note:** [`KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`](../../docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the C_3 isotype power-split algebra: equal block-count weighting gives Q=2/3, dimension/Plancherel weighting gives Q=1, and the physical selection of the equal-block rule remains unproved.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-233030-47d4ad0f-koide_q23_block_weight_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With E_+ = 3a^2 and E_perp = 6|b|^2, Q = 1/3 + (2/3)|b|^2/a^2, so Q=2/3 iff |b|^2/a^2=1/2, equivalently E_+ = E_perp.  _(class `A`)_
+- **chain closes:** True — The formulas follow by translating the retained C_3 Fourier Koide equivalence into the note's unnormalized a,b convention, and the counting-vs-splitting localization follows from the retained bounded equivariant anti-commuting obstruction. No derivation of the physical equal-block selection is needed because the note explicitly excludes that from scope.
+- **rationale:** The load-bearing content is class-A algebra over retained or retained-bounded inputs. Independent checks confirm the displayed E_+, E_perp, Q formula, the Q=2/3 iff E_+=E_perp equivalence, and the three table entries. The runner performs finite matrix and power-split checks and does not import observed values, fitted selectors, or external comparators. The clean result is bounded only; it does not promote charged-lepton Koide or the equal-block physical rule to a derived theorem.
 - **auditor confidence:** high
 
 ### `koide_q23_oh_covariance_nogo_note_2026-04-22`

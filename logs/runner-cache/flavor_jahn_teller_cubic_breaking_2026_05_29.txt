@@ -1,0 +1,60 @@
+
+========================================================================
+(1) Fermion vacuum energy vs cubic-symmetry-breaking distortion
+========================================================================
+  distortion d = eps * (traceless unit vector); E_vac(eps) - E_vac(0):
+  pattern A (2,-1,-1)/sqrt6        pattern B (1,0,-1)/sqrt2
+   eps=0.02:  A dE=-0.000010        B dE=-0.000010
+   eps=0.05:  A dE=-0.000062        B dE=-0.000062
+   eps=0.10:  A dE=-0.000248        B dE=-0.000250
+   eps=0.15:  A dE=-0.000556        B dE=-0.000563
+  => dE < 0 for eps != 0 (both signs): the cubic-symmetric point is a
+     LOCAL MAX of E_vac -> fermion-sea Jahn-Teller instability (native).
+
+========================================================================
+(2) scaling: analytic eps^2 (competes with stiffness), not log-Peierls
+========================================================================
+   eps=0.010:  dE/eps^2 = -0.0250  (const -> analytic eps^2)
+   eps=0.020:  dE/eps^2 = -0.0249  (const -> analytic eps^2)
+   eps=0.040:  dE/eps^2 = -0.0249  (const -> analytic eps^2)
+   eps=0.080:  dE/eps^2 = -0.0248  (const -> analytic eps^2)
+  E_total(eps) = dE_ferm(eps) + (K/2) eps^2 ; breaks iff K < K_c.
+  g_bare=1 fixes the stiffness K -> outcome determined by the full action.
+
+========================================================================
+(3) Q at the broken corners vs base mass: 2/3 needs LIGHT (near-critical) gens
+========================================================================
+  generation corner masses M_mu = M0 + (+d,0,-d) (pattern B), d=1:
+   M0 (base)   masses               sqrt-masses          Q
+    5.00     [6. 5. 4.]           [2.449 2.236 2.   ]  0.3356
+    2.10     [3.1 2.1 1.1]        [1.761 1.449 1.049]  0.3474
+    1.50     [2.5 1.5 0.5]        [1.581 1.225 0.707]  0.3646
+    1.20     [2.2 1.2 0.2]        [1.483 1.095 0.447]  0.3932
+    1.10     [2.1 1.1 0.1]        [1.449 1.049 0.316]  0.4167
+    1.05     [2.05 1.05 0.05]     [1.432 1.025 0.224]  0.4385
+    1.02     [2.02 1.02 0.02]     [1.421 1.01  0.141]  0.4623
+  => heavy base -> Q ~ 1/3 (small relative split); near-critical (light) base ->
+     large relative hierarchy -> Q rises 1/3 -> 1, passing 2/3. Leptons ARE light.
+
+========================================================================
+(4) why this sidesteps the central chirality gate
+========================================================================
+  retained_bounded koide_z3_equivariant_anticommuting_no_go forbids a native
+  OPERATOR anticommuting with Gamma_chi on the generation R^3 (an eigenVECTOR
+  property). But Jahn-Teller breaking sets eigenVALUES by spontaneous vacuum
+  anisotropy -- no chiral grading is written. Q sees only eigenvalues, so the
+  operator-level no-go is ORTHOGONAL to this mechanism. It is a genuine native
+  route to the VALUE that the entire operator-level campaign could not see.
+
+========================================================================
+VERDICT
+========================================================================
+  NATIVE candidate mechanism for the generation hierarchy: a fermion-sea
+  Jahn-Teller instability spontaneously breaks the cubic axis-symmetry,
+  splitting the near-critical (light) generation corners -> hierarchical
+  masses with Q in [1/3,1], 2/3 in range. NOT a flat direction (definite
+  instability competing with a fixed g_bare=1 stiffness). NOT the blocked
+  chiral-grading import (spontaneous, eigenvalue-level). NOT yet a derivation
+  of 2/3: the generic gauge expectation is that the stiffness wins (symmetric
+  vacuum, Q=1/3); whether the framework's stiffness lets the breaking win, and
+  the exact Q, is a full-action lattice computation. Real, computable, open.

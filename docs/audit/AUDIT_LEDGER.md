@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 158 |
+| **retained** | 159 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 585 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1152 |
+| unaudited | 1151 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 902 |
+| `audited_clean` | 903 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1382 |
+| `unaudited` | 1381 |
 
 | claim_type | count |
 |---|---:|
@@ -495,6 +495,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7165,6 +7166,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The equality R_lat(d-1)=eta(d)/zeta(d) is equivalent to 1/(2d)=2^(1-d), hence to 2^(d-2)=d, whose unique integer solution for d>=2 is d=4.  _(class `A`)_
 - **chain closes:** True — The proof reduces to elementary algebra plus the standard eta-zeta identity eta(s)/zeta(s)=1-2^(1-s). The uniqueness of d=4 follows from the monotonicity argument for 2^(d-2)-d on integers d>=4 and direct checks at d=2,3.
 - **rationale:** The load-bearing step is a genuine class-A algebraic identity over explicitly stated functions of d, with no external observed comparator, tuned scale, framework axiom, or upstream retained claim needed. The runner source performs exact rational and symbolic checks rather than merely printing a pass summary, though several runner checks are relational context outside the narrow load-bearing theorem. The note's conclusion is limited enough to close: it establishes the d=4 triple coincidence, not the broader hierarchy formula, L_t selection, or outer exponent.
+- **auditor confidence:** high
+
+### `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`HIERARCHY_SEVEN_EIGHTHS_TWISTED_THERMAL_ZETA_PERIOD_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/HIERARCHY_SEVEN_EIGHTHS_TWISTED_THERMAL_ZETA_PERIOD_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone analytic-number-theory theorem: for Re(s)>1, with zeta(s) the Riemann zeta function and lambda(s)=sum_{n>=0}(2n+1)^(-s), the APBC/PBC dimensionless period quotient Q(s)=(2 lambda(s)-zeta(s))/zeta(s) equals 1-2^(1-s)=eta(s)/zeta(s); for integer d>=2, Q(d)=7/8 exactly only at d=4. Hierarchy-formula closure, outer 1/4 exponent, physical L_t or d=4 selection, coupling-scale closure, and arithmetic independence from the eta/zeta W3 identity are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-hierarchy-twisted-thermal-zeta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The odd/even split gives lambda(s)=(1-2^(-s)) zeta(s), hence Q(s)=(2(1-2^(-s))-1)=1-2^(1-s)=eta(s)/zeta(s); solving Q(d)=7/8 for integer d>=2 gives d=4.  _(class `A`)_
+- **chain closes:** True — Independent check: substitute lambda(s)=(1-2^-s)zeta(s) into Q to get 1-2^(1-s); Q(d)=7/8 implies 2^(1-d)=1/8=2^-3, so d=4, and other integer values d>=2 differ. The Matsubara rescaling equations correctly make the bosonic and APBC ladders dimensionless; the D2 caveat is honored because Q=eta/zeta is the same arithmetic as W3.
+- **rationale:** The row closes as a standalone quotient identity. The proof uses only absolutely convergent zeta/lambda sums, the odd/even integer split, and the Hurwitz half-period twist; the runner verifies the dimensionless Matsubara rescaling, the closed form, Q(4)=7/8, the d!=4 negative scan, and the explicit D2 collapse with PASS=24 FAIL=0. Residual risk is only downstream overuse: this is derivation-route robustness for the same eta/zeta arithmetic, not a new arithmetic witness and not a hierarchy-formula or physical-substrate closure.
 - **auditor confidence:** high
 
 ### `hierarchy_spatial_bc_and_u0_scaling_note`

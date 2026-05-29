@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 569 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1179 |
+| unaudited | 1178 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 70 |
+| ~~audited_conditional~~ | 71 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 881 |
-| `audited_conditional` | 70 |
+| `audited_conditional` | 71 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1409 |
+| `unaudited` | 1408 |
 
 | claim_type | count |
 |---|---:|
@@ -1056,6 +1056,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9848,6 +9849,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Both direct dependencies are retained_bounded. The runner re-derives the closed forms from explicit harness parameters, builds and propagates the lattice at the three alternate parameter points, measures sigma_arm and c2 directly, and compares those measurements against the parameterized formulas without importing publication framing or fitted target constants as hidden premises.
 - **rationale:** Clean only under the narrowed bounded scope. The source and runner support a harness-parameterized check over BETA, K_PHYS, and PHYS_L while holding the NN three-edge geometry fixed. The runner's secondary h->0 geodesic-limit C_arm fit comparison fails for Points A and C by just over 10%, but the note marks that comparison as tracked-only and not part of the primary acceptance; the load-bearing primary per-h coherent comparison closes at <=2.44%, and c2_inf closes at <=0.279%. The FANOUT language is acceptable only as the fixed FANOUT=3 normalization inside the current geometry, because no fanout-varying topology is tested.
 - **auditor confidence:** medium_high
+
+### `no_per_site_bosonic_ccr_theorem_note_2026-05-02`
+
+- **Note:** [`NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional trace obstruction for an exact bosonic CCR on a supplied finite-dimensional per-site Hilbert space; the framework-specific identification dim_C H_x = 2 is not closed by the cited per-site Cl(3) uniqueness dependency.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-no-per-site-bosonic-ccr-2026-05-28`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29, dim_C H_x = 2 for every site x; then tr([a,a†])=0 but tr(I_Hx)=2.  _(class `B`)_
+- **chain closes:** False — The trace obstruction closes once finite-dimensional H_x is supplied, but the only cited dependency retains only abstract Cl(3) representation classification and excludes the physical per-site Hilbert-space identification. The source therefore has not closed the framework-specific dim_C H_x = 2 premise from its one-hop packet.
+- **rationale:** Issue: Step 1 cites the per-site uniqueness note as providing physical dim_C H_x = 2, but that retained dependency explicitly excludes physical per-site Hilbert-space identification and realization. Why this blocks: the runner proves the trace obstruction only after a finite-dimensional H_x is supplied; it does not construct the framework-site Hilbert space from retained inputs. Repair target: cite and audit a retained per-site Hilbert/Fock realization bridge, or narrow this note to the pure finite-dimensional trace theorem. Claim boundary until fixed: no bounded operators on any supplied finite-dimensional Hilbert space can satisfy [a,a†]=I, but the framework-site H_x premise is not retained here.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
+- **auditor confidence:** high
 
 ### `no_per_site_chirality_theorem_note_2026-05-02`
 

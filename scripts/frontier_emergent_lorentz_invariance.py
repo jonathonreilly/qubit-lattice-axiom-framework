@@ -28,7 +28,9 @@ MECHANISM:
   6. P exactness at tree level is a bridge premise; this runner checks
      the dispersion-side parity support directly.
   7. The angular structure of Σ_i n_i⁴ is the unique cubic harmonic
-     at ℓ=4: K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄).
+     at ℓ=4: with the standard normalized harmonic
+     K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄), the exact decomposition is
+     Σ_i n_i⁴ = 3/5 + (4√π/15) K₄.
 
 CONDITIONAL PREDICTION:
   Lorentz invariance emerges at low energies with corrections at
@@ -247,8 +249,10 @@ def test_cubic_harmonic():
     print("\n=== Part 3: Cubic harmonic angular structure ===\n")
 
     # The LV operator is Σ_i n_i⁴ where n̂ = p̂ (unit direction)
-    # Decomposition: Σ n_i⁴ = 3/5 + (4/5) K₄(θ,φ)
-    # where K₄ = c₀ Y₄₀ + c₄(Y₄₄ + Y₄,₋₄) with c₀, c₄ from O_h rep theory
+    # Decomposition with the standard normalized harmonic:
+    #   Σ n_i⁴ = 3/5 + (4√π/15) K₄(θ,φ)
+    # where K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄) (Condon-Shortley normalized).
+    # The coefficient 4√π/15 = <Σn⁴|K₄>/<K₄|K₄> = (16√π/35)/(12/7).
 
     # Verify at specific directions
     def sum_n4(theta, phi):
@@ -280,8 +284,9 @@ def test_cubic_harmonic():
           abs(1.0 / (1.0 / 3) - 3.0) < 1e-12,
           "unique observable if experimental sensitivity reaches (E/M_Pl)²")
 
-    # Verify decomposition: Σ n_i⁴ = 3/5 + (4/5) K₄
-    # Isotropic part: average of Σ n_i⁴ over the sphere = 3/5
+    # Verify decomposition: Σ n_i⁴ = 3/5 + (4√π/15) K₄ (coefficient checked
+    # pointwise further below). First the isotropic part:
+    # the average of Σ n_i⁴ over the sphere = 3/5
     # (because <n_i⁴> = 1/5 for each direction, and there are 3)
     n_samples = 10000
     rng = np.random.default_rng(42)
@@ -328,6 +333,44 @@ def test_cubic_harmonic():
     check("No ℓ=6 content in Σn_i⁴ anisotropic part",
           abs(proj_60) < 0.05,
           f"|⟨f₄|Y₆₀⟩| = {abs(proj_60):.4f}")
+
+    # Exact decomposition coefficient (the load-bearing identity).
+    # Build the normalized cubic harmonic K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄)
+    # and verify the pointwise identity Σn_i⁴ = 3/5 + (4√π/15) K₄ to machine
+    # precision at every sampled direction. This is the check that fails if
+    # the coefficient is taken as 4/5 (the prior, incorrect normalization).
+    Y40_full = np.real(sph_harm(0, 4, phi, theta))
+    Y44_full = sph_harm(4, 4, phi, theta)
+    Y4m4_full = sph_harm(-4, 4, phi, theta)
+    K4_full = np.real(Y40_full + np.sqrt(5.0 / 14.0) * (Y44_full + Y4m4_full))
+    coeff_correct = 4.0 * np.sqrt(np.pi) / 15.0
+    recon = 3.0 / 5.0 + coeff_correct * K4_full
+    max_resid = float(np.max(np.abs(sn4 - recon)))
+    check("Exact decomposition: Σn_i⁴ = 3/5 + (4√π/15) K₄ (pointwise)",
+          max_resid < 1e-12,
+          f"max|Σn_i⁴ − (3/5 + (4√π/15)K₄)| = {max_resid:.2e}; "
+          f"coeff = 4√π/15 = {coeff_correct:.6f}")
+
+    # The discarded coefficient 4/5 does NOT reproduce the identity (guard
+    # against silent regression to the prior normalization error).
+    recon_wrong = 3.0 / 5.0 + 0.8 * K4_full
+    max_resid_wrong = float(np.max(np.abs(sn4 - recon_wrong)))
+    check("Coefficient 4/5 is rejected (does not satisfy the identity)",
+          max_resid_wrong > 0.1,
+          f"max residual with 4/5 = {max_resid_wrong:.4f} (≫ 0, as expected)")
+
+    # Closed-form projection values that pin the coefficient analytically:
+    #   <Σn⁴|K₄> = 16√π/35,  <K₄|K₄> = 1 + 5/14 + 5/14 = 12/7,
+    #   coeff = (16√π/35)/(12/7) = 4√π/15.
+    inner_sn4_K4 = np.mean(sn4 * K4_full) * 4 * np.pi
+    inner_K4_K4 = np.mean(K4_full * K4_full) * 4 * np.pi
+    check("Projection ⟨Σn_i⁴|K₄⟩ = 16√π/35",
+          abs(inner_sn4_K4 - 16.0 * np.sqrt(np.pi) / 35.0) < 0.02,
+          f"⟨Σn_i⁴|K₄⟩ = {inner_sn4_K4:.4f}, "
+          f"exact = {16.0*np.sqrt(np.pi)/35.0:.4f}")
+    check("Norm ⟨K₄|K₄⟩ = 12/7",
+          abs(inner_K4_K4 - 12.0 / 7.0) < 0.05,
+          f"⟨K₄|K₄⟩ = {inner_K4_K4:.4f}, exact = {12.0/7.0:.4f}")
 
     return True
 
@@ -793,7 +836,7 @@ def test_combined():
 
     check("Angular structure: unique cubic harmonic K₄ at ℓ=4",
           True,
-          "Σn_i⁴ = 3/5 + (4/5)K₄; factor-of-3 anisotropy axis vs diagonal")
+          "Σn_i⁴ = 3/5 + (4√π/15)K₄; factor-of-3 anisotropy axis vs diagonal")
 
     check("Conditional Planck-pin arithmetic gives |δE/E| < 10⁻¹⁹ at highest observable energies",
           True,

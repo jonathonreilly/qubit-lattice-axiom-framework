@@ -2,7 +2,8 @@
 
 **Date:** 2026-04-15 (status line narrowed 2026-04-28); 2026-05-28
 (structural-dispersion core split from the Planck-suppressed estimate per
-audit verdict).
+audit verdict); 2026-05-29 (cubic-harmonic decomposition coefficient
+corrected 4/5 → 4√π/15 per audit verdict).
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Status:** bounded structural-dispersion theorem on the cubic Z³ lattice.
@@ -61,6 +62,38 @@ consumers that need the Planck-suppressed numerical estimate or the broad
 SME interpretation must wait for the Planck-pin lane to reach retained
 grade; consumers that need only the structural dispersion / dimension-6 /
 cubic-harmonic facts can cite this row directly.
+
+## 2026-05-29 Audit Repair (cubic-harmonic normalization fix)
+
+The 2026-05-29 audit verdict was `audited_failed` on a single
+normalization slip in the load-bearing cubic-harmonic decomposition:
+
+> *"the source's load-bearing cubic-harmonic normalization states
+> Σ_i n_i⁴ = 3/5 + (4/5) K₄ with K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄). Under
+> standard normalized spherical harmonics the matching coefficient is
+> 4√π/15 … Repair target: either rescale the definition of K₄ or replace
+> the coefficient by 4√π/15, and add a runner check for the exact
+> decomposition coefficient."*
+
+This repair keeps the normalized harmonic `K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄)`
+as written and replaces the coefficient `4/5 → 4√π/15` in Step 4. The value
+is fixed by the orthonormal projection
+
+    c = ⟨Σn_i⁴ | K₄⟩ / ⟨K₄ | K₄⟩ = (16√π/35) / (12/7) = 4√π/15 ≈ 0.4727,
+
+with `⟨K₄ | K₄⟩ = 1 + 5/14 + 5/14 = 12/7`. The prior `4/5` is the value for
+an unnormalized K₄ and is inconsistent with the normalized form printed in
+the note. The runner (Part 3) now verifies the pointwise identity
+`Σ_i n_i⁴ = 3/5 + (4√π/15) K₄` to machine precision, explicitly rejects the
+`4/5` value, and checks the two projection numbers `⟨Σn_i⁴|K₄⟩ = 16√π/35`
+and `⟨K₄|K₄⟩ = 12/7`.
+
+This is a normalization correction only: it changes no physics, no scope,
+and no dependency edges. The factor-of-3 special-direction anisotropy
+(`Σn_i⁴ = 1` along `[100]`, `1/3` along `[111]`), the purely `ℓ = 4`
+angular content, and the dimension-6 classification are all unchanged. The
+load-bearing claim remains the bounded structural-dispersion core; the note
+still does **not** establish full SO(3,1) / SO(4) Lorentz invariance.
 
 ## Conditional Support Claim
 
@@ -149,11 +182,20 @@ the Planck-pin premise is supplied.
 
 The LV operator Σ_i n_i⁴ (where n̂ = p̂) decomposes as:
 
-    Σ_i n_i⁴ = 3/5 + (4/5) K₄(θ, φ)
+    Σ_i n_i⁴ = 3/5 + (4√π/15) K₄(θ, φ)
 
-where K₄ is the unique cubic harmonic at ℓ = 4:
+where K₄ is the unique cubic harmonic at ℓ = 4, written in the standard
+normalized (Condon–Shortley) spherical harmonics:
 
     K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄)
+
+The coefficient is fixed by the orthonormal projection
+`c = ⟨Σn_i⁴ | K₄⟩ / ⟨K₄ | K₄⟩ = (16√π/35)/(12/7) = 4√π/15 ≈ 0.4727`,
+using `⟨K₄ | K₄⟩ = 1 + 5/14 + 5/14 = 12/7`. (An earlier revision wrote
+this coefficient as `4/5`, which is the value for an unnormalized K₄; with
+the normalized harmonic written above the correct coefficient is `4√π/15`.
+The runner verifies the pointwise identity to machine precision and
+rejects the `4/5` value.)
 
 Properties:
 - Factor-of-3 anisotropy: Σn_i⁴ = 1 along [100], 1/3 along [111]
@@ -259,10 +301,13 @@ produce relativistic physics?" The answer is:
 ```
 python3 scripts/frontier_emergent_lorentz_invariance.py
 # Exit code: 0
-# PASS=55  FAIL=0
+# PASS=57  FAIL=0
 # (Added Part 6b: CPT support on runner's H; Part 6c: parity support on
 #  staggered dispersion; Part 6d: Planck-pin bridge citation. The
-#  original PASS=37 surface is preserved unchanged.)
+#  2026-05-29 repair adds an exact cubic-harmonic decomposition-coefficient
+#  check in Part 3 — pointwise Σn_i⁴ = 3/5 + (4√π/15)K₄ to machine
+#  precision, explicit rejection of the prior 4/5 value, and the
+#  ⟨Σn_i⁴|K₄⟩ = 16√π/35, ⟨K₄|K₄⟩ = 12/7 projection values.)
 ```
 
 ## Audit boundary (2026-04-28)

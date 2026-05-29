@@ -178764,22 +178764,50 @@
       "verdict_rationale": "The runner source performs nontrivial numerical and algebraic checks of the lattice dispersion, continuum limit, invariant measure, K_0 spacelike form, and boost covariance; it is not a print-only or tuned numerical-match runner. Several final Part 7 checks are assertive summaries, but the load-bearing analytic and numerical checks occur earlier and support the restricted theorem surface. The only cited authority is retained_bounded and is not needed as a load-bearing premise for the 1+1D free-scalar covariance result, so no dependency downgrade is triggered."
     },
     "lorentz_boost_covariance_3plus1d_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T20:04:01.830843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "light_cone_framing_note": null,
+          "lorentz_boost_covariance_2d_theorem_note": "The audited scope is the free massive scalar 1+1D Hamiltonian-lattice spectral two-point function at fixed physical (\u0394t, \u0394x, m), restricted to spacelike separations, and its strict a -> 0 continuum SO(1,1) covariance."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "light_cone_framing_note": "positive_theorem",
+          "lorentz_boost_covariance_2d_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "light_cone_framing_note": "unaudited",
+          "lorentz_boost_covariance_2d_theorem_note": "retained"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "light_cone_framing_note",
+          "lorentz_boost_covariance_2d_theorem_note"
+        ],
+        "load_bearing_score": 14.811,
+        "runner_hash": "df470004ccdd743d2afe0b674865877e133181c9a6870b8ee78d0477cc44c1d4",
+        "transitive_descendants": 897
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-detailed-lorentz-20260529-lorentz_boost_covariance",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The narrow free-scalar continuum covariance core is supported by the stated lattice dispersion, invariant on-shell measure, and spacelike K1 form. The full note as written still imports open or not-retained framing for the Planck-scale physical readout and finite-a light-cone/Lieb-Robinson caveat.",
       "claim_id": "lorentz_boost_covariance_3plus1d_theorem_note",
-      "claim_scope": null,
+      "claim_scope": "Free-scalar Hamiltonian-lattice continuum-limit 3+1D two-point covariance and structural finite-a cubic-harmonic LV characterization, not an unconditional Planck-scale phenomenological readout.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-29T20:04:01.830843+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -178789,20 +178817,23 @@
         "light_cone_framing_note"
       ],
       "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 14.811,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "In the strict continuum limit, the lattice spectral integral converges to the continuum on-shell integral with E^2=m^2+|p|^2 and invariant measure d^3p/(2E_p), so W_cont depends only on s^2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d83932ff43c07dda4e1c4c19982d4b2c2aad3c9e98c674dd697ccf50b55b550d",
       "note_path": "docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: narrow the audited row to the free-scalar continuum covariance plus structural K4 statement, or supply retained-grade Planck-pin and light-cone framing authorities for the broader physical-readout sentences.",
+      "open_dependency_paths": [
+        "docs/LIGHT_CONE_FRAMING_NOTE.md",
+        "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.369075+00:00",
@@ -178910,18 +178941,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 39,
+        "B": 5,
+        "C": 13,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 57
       },
       "runner_path": "scripts/frontier_lorentz_boost_3plus1d.py",
       "title": "3+1D SO(3,1) Boost Covariance of the Path-Sum 2-Point Function",
       "transitive_descendants": 897,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs substantive checks of lattice dispersion symmetries, continuum-form invariance, Euclidean convergence, and the corrected normalized K4 decomposition, but several combined-theorem and dependency-link checks are narrative assertions rather than independent derivations. The one-hop LIGHT_CONE_FRAMING_NOTE.md authority is marked unaudited, and the Planck-pin/unit-map needed for the (E/M_Pl)^2 and experimental-sensitivity readout is explicitly not retained in the restricted packet. Thus the continuum free-scalar core is plausibly closed, but the source note's broader stated package remains conditional."
     },
     "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": {
       "audit_date": "2026-05-29T19:57:55.787800+00:00",

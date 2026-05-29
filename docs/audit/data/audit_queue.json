@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 248,
+    "critical": 247,
     "high": 315,
     "leaf": 335,
     "medium": 306
@@ -312,32 +312,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
-      "transitive_descendants": 897
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lorentz_boost_covariance_3plus1d_theorem_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lorentz_boost_covariance_2d_theorem_note",
-        "emergent_lorentz_invariance_note",
-        "light_cone_framing_note"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.811,
-      "note_path": "docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_lorentz_boost_3plus1d.py",
       "transitive_descendants": 897
     },
     {
@@ -36332,5 +36306,5 @@
     }
   ],
   "ready_count": 68,
-  "total_pending": 1204
+  "total_pending": 1203
 }

@@ -1,14 +1,32 @@
 # Plaquette V=1 Picard-Fuchs ODE: Rank-Bound Citation Note
 
 **Date:** 2026-05-06
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Status:** bounded support theorem; audit status is set only by the
-independent audit lane.
+**Status authority:** independent audit lane only.
 **Companion notes:**
 [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) (the ODE)
 and
 [`PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md)
 (the partial minimality proof, pending the rank bound covered here)
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The restricted packet supplies retained bounded finite-window companion notes, but not a closed bridge proving rank/order ≤ 3 or excluding order ≤ 2 annihilators at arbitrary coefficient degree. The source note itself identifies that missin"*
+
+with repair: *"missing_bridge_theorem: provide either a retained explicit SU(3) order/rank ≤ 3 citation or an auditable creative-telescoping/minimal-annihilator certificate closing the all-degree lower-order exclusion."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The finitely-checked unconditional certificate that no order-≤-2 polynomial-coefficient annihilator of `J(β)` exists at coefficient degree ≤ 12 (runner certificate `[B]`, PASS=5, FAIL=0), combined with the uniqueness certificate `[C]` for the order-3 degree-2 operator `L` and the errata identification that "rk(SU(3)) = 3" is a typo for "matrix size N = 3" while the effective bound comes from Framework D (Bessel-determinant + D-module closure + creative telescoping).
+- **NON-load-bearing (split off / admitted):** The infinite-degree lower-order exclusion — the claim that no order-≤-2 annihilator exists at coefficient degree > 12 — which requires either a Koutschan-style creative-telescoping certificate extending to all degrees or a retained explicit citation bounding the SU(3) Wilson character integral order to ≤ 3; neither is supplied and both remain admitted, not-derived targets.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Audit gap addressed
 

@@ -3,10 +3,29 @@
 **Date:** 2026-05-25
 **Status (source-side label):** bounded_theorem
 **Claim type:** bounded_theorem
+**Type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py`](../scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py)
 **Cached output:** [`logs/runner-cache/frontier_wilson_action_surface_selector_real_positive_2026_05_25.txt`](../logs/runner-cache/frontier_wilson_action_surface_selector_real_positive_2026_05_25.txt)
 **Parent context (cleared row):** `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (currently `audited_conditional`; backticked — this note is the *repair candidate* for one of two missing bridges named by the judicial-panel audit verdict, not a load-bearing dep on this proof's chain).
 **Status authority:** independent audit lane only. The `bounded_theorem` label is a source-side claim-boundary declaration, not an audit verdict.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The runner completes and supports the finite checks inside the declared ansatz, but the one-hop dependency's audited scope is only a conditional algebraic rescaling lemma: given canonical trace normalization and scoped Wilson matching, resc"*
+
+with repair: *"missing_bridge_theorem: provide a retained Wilson matching / beta=6 canonical-normalization authority, or narrow this row to an explicitly conditional selector over scoped Wilson matching and beta=6."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The eight runner verification gates (V1–V8) on actual SU(3) configurations — gauge-invariance of plaquette functionals, action-functional-level exclusion of the `iθ Im Tr U_P` imaginary slot by (P4), the sympy continuum-limit expansion, bounded-below check, and canonical-ansatz enumeration — all of which verify the Wilson-surface selection within the explicitly scoped `(P1)–(P5)` ansatz; these finite checks close under the stated conventions.
+- **NON-load-bearing (split off / admitted):** The canonical-normalization authority `β = 6` cited from `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` — the audit notes its scope is only a conditional algebraic rescaling lemma (given canonical trace normalization and scoped Wilson matching), not a fully retained Wilson-matching derivation; the real-positive Wilson surface selection is therefore conditional on that authority being promoted to a fully retained canonical-normalization and Wilson-matching theorem.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## §0. Honest framing — what this note adds, and what it does not
 

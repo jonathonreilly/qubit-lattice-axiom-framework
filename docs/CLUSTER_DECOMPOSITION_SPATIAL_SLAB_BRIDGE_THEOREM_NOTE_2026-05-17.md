@@ -4,6 +4,26 @@
 **Status:** source-note proposal; final claim type, audit verdict, and
 effective status are set only by the independent audit lane.
 **Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes."*
+
+with repair: *"missing_bridge_theorem: add retained one-hop authorities constructing the positive Hermitian spatial slab transfer operator for the canonical Hamiltonian and proving Δ_x>0, then re-audit any unconditional promotion."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The finite-dimensional spectral decomposition + Cauchy-Schwarz + trace-distance argument that, given hypotheses H1 (existence of positive Hermitian slab transfer operator `T_x`) and H2 (spatial gap `Δ_x > 0`), derives the exponential spatial clustering bounds (S.1)-(S.2) exactly. This chain is runner-verified and closes on its own conditional terms.
+- **NON-load-bearing (split off / admitted):** The construction of a positive Hermitian spatial slab transfer operator `T_x` from the canonical physical Cl(3) over Z^3 Hamiltonian (H1) and the derivation of `Δ_x > 0` for that operator (H2); both are explicitly named open inputs that require retained authority (spatial OS reflection positivity or direct slab-positivity from the canonical action) not supplied here.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
+
 **Loop:** `axiom-first-foundations`
 **Cycle:** block-28 narrow closure follow-up to the 2026-05-09 temporal bridge
 **Runner:** `scripts/cluster_decomposition_spatial_slab_bridge_check.py`

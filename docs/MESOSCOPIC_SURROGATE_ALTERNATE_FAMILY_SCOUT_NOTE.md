@@ -2,9 +2,28 @@
 
 **Date:** 2026-04-04  
 **Status:** bounded - bounded or caveated result note
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
 the retained 3D `h=0.25` family
 **Primary runner:** `scripts/mesoscopic_surrogate_alternate_family_scout.py`
 
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The runner confirms the cited notes contain the expected frozen-evidence markers, but it does not compute or enforce an objective ranking for 'cheapest plausible next target'. The direct dependency packet also includes a persistent-inertial"*
+
+with repair: *"missing_bridge_theorem: Add an explicit registered ranking/priority criterion over the cited retained rows, or retag this note as a support/meta planning index rather than a bounded theorem."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The runner verifies that the cited upstream notes (`MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE`, `MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE`, `SAME_FAMILY_3D_CLOSURE_NOTE`) contain the expected frozen-evidence markers ruling out `h=0.5` and 2D threshold lanes; these negative results are bounded and cache-backed.
+- **NON-load-bearing (split off / admitted):** The positive ranking conclusion — that the retained 3D `h=0.25` family is the "cheapest plausible next target" — is not derived from a registered objective ranking criterion over the cited retained rows; that priority ordering is an editorial judgment, not a computed or retained-authority-backed result, and is admitted as a non-load-bearing planning input.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Question
 

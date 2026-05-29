@@ -1,8 +1,129 @@
 # Signed Gravity APS-Locked Source Action Proposal
 
-**Date:** 2026-04-25
-**Status:** conditional action candidate; not derived from the retained stack
+**Date:** 2026-04-25 (2026-05-28: Origin obligation sharpened to a single
+derivation target — the generation-chirality grading — see panel section).
+**Type:** open_gate
+**Status authority:** independent audit lane only.
+**Status:** **open gate, sharpened** — the proposed `χ_η M_phys ⟨ρ,Φ⟩`
+source-action cross term is not supplied by the current retained inventory. The
+7-angle panel localizes the known route to a generation/orientation-factor
+**chiral grading** `Γ` anticommuting with `D_Y` (the same gate type appearing in
+the Koide-Q=2/3 / generation-ID chirality lanes). Deriving such a grading is the
+frontier target; sufficiency still has to be checked by the resulting
+construction rather than asserted here. Under no-admissions the grading must be
+**derived**, not admitted. The local source/response harness passes but is not a
+derivation.
 **Script:** [`../scripts/signed_gravity_aps_locked_source_action_proposal.py`](../scripts/signed_gravity_aps_locked_source_action_proposal.py)
+
+## 2026-05-28 Panel Convergence — Origin Obligation Sharpened to the Generation-Chirality Grading
+
+Proof obligation #1 ("Origin": derive `S_int = −χ_η M_phys ⟨ρ,Φ⟩` from retained
+structure rather than adding it as an axiom) was attacked by a 7-angle panel
+framed to **find the escape** (APS-index coupling, anomaly inflow,
+eta-variation/spectral-flow, Wald/Gauss source-unit accounting, adversarial
+refutation, literature scout, first-principles + math). The panel did **not**
+find an impossibility — it found that the examined routes all reduce to the
+same missing structure: a chiral grading on the generation/orientation factor.
+This **sharpens** the open gate to a precise derivation target rather than
+closing it. The two structural facts below are the *localization* of that gate
+(they show that, absent the grading, the current retained inventory does not
+supply the χ-odd source) — they are **not** a no-go verdict on the physics. "No
+admissions" means the grading must be derived; it does **not** mean the gate is a
+wall.
+
+**Two independent structural reasons the χ-odd source cannot come from retained structure:**
+
+1. **Positivity forces the active source orientation-even.** Every retained
+   object that can source `Φ` by variation is non-negative and orientation-even:
+   the Born density `ρ = |ψ|² ≥ 0`, the inertial mass / Gauss-flux magnitude
+   `M_phys = C_abs > 0` (an absolute exterior-monopole coefficient `φ → C/r`,
+   sign-blind, NOT spectral-index data), `q_bare = 4π M_phys`, `c_cell = 1/4`,
+   `λ = 1`, and the positive Wald area carrier `(1/4)A/a² ≥ 0`. The active source
+   `ρ_active = −δS_int/δΦ` is a variation of a sum of these, hence orientation-even:
+   it spans only `[+1,+1]` over the two `χ` sectors and **structurally cannot
+   realize the required orientation-odd `[+1,−1]`**. The lane's own factorization
+   `C_signed = Q_χ · C_abs` concedes the sign must come from a separate `Q_χ`
+   factor the retained stack does not contain. (Verified independently: the
+   Stieltjes / M-matrix positivity of the screened-Poisson source forces
+   `ρ ≥ 0 ⇒ Φ ≥ 0`; a sign flip needs a mixed-sign source, which positivity
+   forbids.)
+2. **`sign(η)` is variationally inert.** The action carries `χ_η = sign η_δ(D_Y)`,
+   an integer-valued spectral-asymmetry label that is **locally constant** on the
+   gapped admissible domain (`h_δ = 0`). Hence `δ sign(η)/δΦ ≡ 0` there (verified:
+   2000 random gap-preserving deformations give `max|δη/δΦ| = 0` exactly; the
+   smooth APS local term vanishes on the closed flat lattice by `Γ₅` ±-pairing,
+   `η ≡ 0`; standard APS theory — Farber–Levine, Fukaya et al. — confirms `η`
+   varies only by integer jumps at zero-crossings, which `h_δ=0` excludes). A
+   label with vanishing functional derivative **cannot be an active variational
+   source** — it can only multiply an independently-varied positive source by
+   hand, which is exactly the new axiom. "Source sign = boundary η sign" is an
+   aesthetic ansatz, not a dynamical derivation.
+
+**Examined escape routes reduce to the same missing grading (on the current retained substrate):**
+
+- **APS index:** `M_phys = C_abs` is a Gauss-flux magnitude, not index data; the
+  matter index is locally constant (`dIndex/dΦ = 0`); `δη/δΦ = 0` by gap rigidity.
+- **Anomaly inflow:** retained boundary `η = 0` (flat `Z³`, no Pontryagin density,
+  torsion-free — both new-axiom additions); and even a hypothetical bulk term
+  would land `χ_η` in the **area coefficient** — the channel the proposal
+  explicitly rejects — not the interior `ρΦ` source (anomaly invariants are
+  orbit-functorial global labels, the wrong shape for a local `ρ(x)` source).
+- **Literature:** `sign(η)` is a genuine active coupling for **gauge/EM** fields
+  in 2+1D (parity anomaly) and the Witten-effect monopole charge, but there is
+  **no established mechanism** where `sign(η)` of a boundary Dirac operator sources
+  a 3+1D **scalar-gravity** `ρΦ` coupling; in the canonical APS/QFT framework
+  (Witten; Witten–Yonekura) `η` is a partition-function **spectator phase**.
+- **Separability:** retained structure factorizes (disjoint regions sew by direct
+  sum ⇒ `det` factorizes, `log|det|` additive, block-local derivatives), so it
+  produces no boundary-label × bulk-source × field **product** term; the
+  determinant orientation line is a section-less `Z₂` **torsor** (hosts the
+  label, selects no canonical section).
+
+**The frontier target (a shared gate TYPE, not one shared operator).** The route
+identified here is for `Φ`/the mass operator to couple to a **chiral grading that
+anticommutes with `D_Y`** and breaks the native symmetry of the relevant factor.
+A 5-agent follow-up panel established the precise relation to the Koide lane,
+**correcting an earlier overstatement** that it was literally the same grading:
+the three lanes need gradings on **three distinct tensor factors** —
+Koide `Γ_χ` on the **generation R³**, signed-gravity's grading on the
+**cochain/taste** factor of `D_Y`, and the Connes–Lott chirality `γ_CL = I⊗σ₃` on
+an **L/R factor**. They are **not one operator**; they share a **gate type**:
+*derive a non-transportable, symmetry-breaking chiral grading on a factor whose
+native structure (C₃-equivariance / cochain pairing) forbids it.* Two sub-results
+sharpen this:
+
+- **The Connes–Lott separate-factor route genuinely evades the retained
+  `koide_z3_equivariant_anticommuting_no_go`** (its §4 leaves this open): with
+  `D = [[0,M],[M†,0]]`, `{D, γ_CL=I⊗σ₃} = 0` is automatic for any `M`, and the
+  no-go provably does not reach `γ_CL` (which is generation-trivial). But `γ_CL`
+  is **generation-blind**, so it yields the L/R-balance invariant, *not* the
+  Z₃-character Koide invariant — `Q=2/3 ⟺ r=|b|²/a²=1/2` stays **unforced**
+  (consistent with the team's prior `KOIDE_U_BAE_NCG_SPECTRAL_TRIPLE` Probe U and
+  the KO-dimension real-structure narrowing: the spectral action is symmetric in
+  the three eigenvalues and never selects `r=1/2`). And the L/R factor itself is
+  **not native** — it is the framework's existing `Z³→Z⁴`/`e₄` Wick-rotation
+  admission (Cl(3) is odd, so no native `γ₅`).
+- **The concrete, unforeclosed unification target** is therefore a *single
+  product-grading spectral triple* `H = R³_gen ⊗ (taste) ⊗ (H_L⊕H_R)` carrying one
+  Dirac whose off-diagonal blocks simultaneously (i) restrict to an `{H,Γ_χ}=0`
+  operator on the generation R³ (→ Koide) and (ii) induce a nonzero orientation-odd
+  `η_δ(D_Y)` on the cochain factor (→ signed source), via the **product** grading
+  `Γ_χ⊗ε` — not the (foreclosed) identification `γ_CL=Γ_χ`. No retained no-go
+  forecloses this product-grading triple; the decisive open computation is whether
+  its order-one / `J`-reality condition pins `b/a = 1/√2`.
+
+This is the no-admissions path being targeted: construct the grading, never
+axiomatize it. If the sufficiency checks close, it could unlock signed-gravity,
+Koide `Q=2/3`, and generation-ID — but the two honest open sub-gates remain the
+`e₄`/P2 L/R-factor origin and the `r=1/2` forcing, neither yet supplied.
+
+This convergence reproduces and sharpens the existing lane infrastructure
+(`signed_gravity_response_lane_status_note`;
+`SIGNED_GRAVITY_RETAINED_BOUNDARY_SOURCE_PRINCIPLE_NO_GO_NOTE` orientation-even
+`[+1,+1]` cannot span `[+1,−1]`; the native-complex containment and
+host-vs-selector results) by supplying the positivity + variational-inertness
+**reasons** the gate sits exactly at the chiral grading. No new axiom, import, or retained
+bridge is introduced by this repair.
 
 This note proposes the smallest action that would close the remaining
 APS/source-locking gap identified in

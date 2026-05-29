@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 172 |
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 27 |
-| unaudited | 1147 |
+| open_gate | 28 |
+| unaudited | 1146 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 907 |
+| `audited_clean` | 908 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1377 |
+| `unaudited` | 1376 |
 
 | claim_type | count |
 |---|---:|
@@ -603,6 +603,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
+| `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9009,6 +9010,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given the Brannen/Koide form with assumed coefficient sqrt(2) and trial phase delta=2/9, the sorted dimensionless ratios and fixed PDG-mass comparator match the stated residuals while the phase, coefficient, and scale remain undeclared by retained dynamics.  _(class `D`)_
 - **chain closes:** True — The conditional algebra follows from the retained Brannen/Koide trigonometric identities, and the runner reproduces the listed PDG comparator values. The claim remains an open gate because the phase, coefficient, and scale are external/conditional inputs rather than derived framework outputs.
 - **rationale:** The note is honest about its status: it verifies a conditional numerical gate and external comparator, while explicitly refusing to derive the Brannen phase, BAE coefficient, or dimensionful scale. The cached runner reports PASS=17, FAIL=0 under SHA fc33101f1c11e2f1580c84bf8c9b441a1de76f1de45113aa528d357699a4f39c, with 10 algebraic/conditional checks and 7 PDG-comparator checks. Because the claim_type is open_gate, this clean audit preserves effective_status=open_gate rather than promoting the comparator to retained lepton-mass science.
+- **auditor confidence:** high
+
+### `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26`
+
+- **Note:** [`LEPTON_MASS_SCALE_MW_OVER_256_EMPIRICAL_OPEN_GATE_NOTE_2026-05-26.md`](../../docs/LEPTON_MASS_SCALE_MW_OVER_256_EMPIRICAL_OPEN_GATE_NOTE_2026-05-26.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited empirical open gate: with the note's fixed PDG charged-lepton masses, fixed PDG m_W=80369.2 MeV, dim_C(M_2(C))=4 bookkeeping, and comparator delta=2/9, the m_W/256 scale and Brannen-style lepton comparators reproduce the stated offsets. No derivation of m_W, the 1/256 factor, delta=2/9, absolute charged-lepton masses, or lepton-sector closure is audited or retained.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using fixed PDG comparator inputs, a_lepton^2 from charged-lepton square roots numerically agrees with m_W/256 at about 0.032%, while 1/256, m_W, delta=2/9, and the lepton masses remain empirical or open inputs.  _(class `D`)_
+- **chain closes:** True — The arithmetic closes as an external-comparator gate: m_W/256, a_lepton^2, and the Brannen-style masses are reproduced from the fixed empirical inputs. The row remains open because the physical scale, suppression factor, comparator phase, and observed masses are not derived from retained framework structure.
+- **rationale:** The note accurately records a sharp empirical comparator and repeatedly blocks promotion to a theorem. The cached runner reports PASS=28, FAIL=0 under SHA a5b0055d6d66b50dfdd59a1bdc0909d7fe6dd862437b4f441c21f0494d70ea22, with bookkeeping/open-gate checks plus external PDG-comparator checks. Because the claim_type is open_gate, the clean audit preserves effective_status=open_gate and does not retain the scale relation as derived science.
 - **auditor confidence:** high
 
 ### `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`

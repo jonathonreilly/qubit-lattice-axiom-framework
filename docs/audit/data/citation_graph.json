@@ -9813,6 +9813,50 @@
       "to": "claude_complex_action_grown_companion_note"
     },
     {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "pmns_oriented_cycle_channel_value_law_note"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "quark_c3_circulant_source_law_boundary_note_2026-04-28"
+    },
+    {
+      "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "to": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
+    },
+    {
       "from": "four_d_distance_width_probe_note",
       "to": "dimensional_gravity_table"
     },
@@ -12391,10 +12435,6 @@
     {
       "from": "higgs_mass_from_axiom_note",
       "to": "plaquette_self_consistency_note"
-    },
-    {
-      "from": "higgs_mass_from_axiom_note",
-      "to": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
     },
     {
       "from": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
@@ -15803,6 +15843,22 @@
     {
       "from": "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20",
       "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+      "to": "koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+      "to": "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
     },
     {
       "from": "koide_qubit_lattice_dim_algebraic_closure_note_2026-04-20",
@@ -54675,6 +54731,30 @@
       "runner_path": null,
       "title": "Flagship Paper Contribution Statement Note"
     },
+    "flavor_frontier_map_form_vs_value_note_2026-05-29": {
+      "claim_id": "flavor_frontier_map_form_vs_value_note_2026-05-29",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10",
+        "ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10",
+        "wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10",
+        "ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26",
+        "pmns_oriented_cycle_channel_value_law_note",
+        "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
+        "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
+        "quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28",
+        "quark_c3_circulant_source_law_boundary_note_2026-04-28",
+        "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "aabdf8779f9d555592e202aacb68e75b81c5256b711b111a86590a660a88353f",
+      "path": "docs/FLAVOR_FRONTIER_MAP_FORM_VS_VALUE_NOTE_2026-05-29.md",
+      "runner_path": "scripts/flavor_frontier_form_vs_value_2026_05_29.py",
+      "title": "Flavor Frontier Map: Form Versus Value"
+    },
     "fm_transfer_note": {
       "claim_id": "fm_transfer_note",
       "claim_type_author_hint": null,
@@ -59020,11 +59100,10 @@
         "higgs_from_lattice_note",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
         "yt_ew_color_projection_theorem",
-        "plaquette_self_consistency_note",
-        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+        "plaquette_self_consistency_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bf2bbb9f21ed8e140a3ede41b590e0fc233795d35502e48c25db3f9f9ecdb325",
+      "note_hash": "89aa06db5d3fec46bec32e0ddec9cb517e10043c85327f187215c99d72acd6fb",
       "path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
       "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking"
@@ -62097,6 +62176,18 @@
       "runner_path": null,
       "title": "Koide OP-Locality + Brannen + Plancherel + Callan-Harvey Honest Residual Composition"
     },
+    "koide_order_one_circulant_diagnostic_note_2026-05-29": {
+      "claim_id": "koide_order_one_circulant_diagnostic_note_2026-05-29",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "08eb166eeeb79c2b0dcd0a8e051e937b4510aee9f757682c869691fdf5826c1f",
+      "path": "docs/KOIDE_ORDER_ONE_CIRCULANT_DIAGNOSTIC_NOTE_2026-05-29.md",
+      "runner_path": "scripts/frontier_koide_order_one_circulant_diagnostic_2026_05_29.py",
+      "title": "Koide Order-One Circulant Diagnostic"
+    },
     "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20": {
       "claim_id": "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20",
       "claim_type_author_hint": null,
@@ -62198,6 +62289,23 @@
       "path": "docs/KOIDE_POSITIVE_PATHS_FIRST_PRINCIPLES_NOTE_2026-04-18.md",
       "runner_path": null,
       "title": "Koide Positive Paths \u2014 First-Principles Attack Map"
+    },
+    "koide_q23_block_weight_frontier_bounded_note_2026-05-29": {
+      "claim_id": "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10",
+        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a046d70f9c342b43b5b54eccddd6ff594a03e3ed6933aefc45429d7c985f670b",
+      "path": "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md",
+      "runner_path": "scripts/koide_q23_block_weight_frontier_2026_05_29.py",
+      "title": "Koide Q=2/3 Block-Weight Frontier"
     },
     "koide_q23_oh_covariance_nogo_note_2026-04-22": {
       "claim_id": "koide_q23_oh_covariance_nogo_note_2026-04-22",
@@ -86919,6 +87027,7 @@
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
     "koide_native_dimensionless_note_2026-04-24",
     "koide_native_zero_section_closure_route_note_2026-04-24",
+    "koide_order_one_circulant_diagnostic_note_2026-05-29",
     "koide_pointed_origin_exhaustion_theorem_note_2026-04-24",
     "koide_q23_oh_covariance_nogo_note_2026-04-22",
     "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25_note_2026-05-17",
@@ -87353,27 +87462,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 693,
+      "bounded_theorem": 695,
       "decoration": 1,
-      "meta": 197,
+      "meta": 198,
       "no_go": 87,
       "none": 1409,
       "open_gate": 58,
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1093,
+      "bounded_theorem": 1095,
       "decoration": 1,
-      "meta": 197,
+      "meta": 198,
       "no_go": 190,
       "none": 422,
       "open_gate": 133,
       "positive_theorem": 581
     },
-    "edge_count": 9950,
-    "leaf_count": 827,
-    "node_count": 2617,
-    "root_count": 872,
-    "runners_with_path": 2191
+    "edge_count": 9964,
+    "leaf_count": 820,
+    "node_count": 2620,
+    "root_count": 873,
+    "runners_with_path": 2194
   }
 }

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 160 |
+| **retained** | 161 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 585 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1150 |
+| unaudited | 1149 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 904 |
+| `audited_clean` | 905 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1380 |
+| `unaudited` | 1379 |
 
 | claim_type | count |
 |---|---:|
@@ -520,6 +520,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_physical_bridge_attempt_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7660,6 +7661,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Kernel-generic absorption occurs under any nonzero field for gamma > 0, while only the localized 1/r gravity field produces the TOWARD -> AWAY deflection crossover.  _(class `C`)_
 - **chain closes:** False — The live runner supports the gravity-specific crossover and gamma=0.5 escape suppression, but it contradicts the source's stronger detector-escape claim for any gamma > 0: several nonzero-field rows at gamma=0.1 or 0.2 still have escape ratios above 1.
 - **rationale:** Issue: the source conflates link-level imaginary-action damping with the detector escape observable. The factor exp(-k gamma L f) is below 1 for f > 0 and gamma > 0, but the runner's detector escape ratios are still above 1 for UNIFORM f=0.005 at gamma=0.1 and 0.2, UNIFORM f=0.01 at gamma=0.1 and 0.2, and GRAVITY at gamma=0.1 and 0.2. Why this blocks: the retained separation claim says kernel-generic absorption occurs under any nonzero field at gamma > 0, but the measured observable used by the note only shows suppression at sufficiently large gamma in this setup. Repair target: distinguish local per-link attenuation from total detector escape, or add a theorem/runner proving a thresholded escape-suppression criterion across gamma and field families. Claim boundary until fixed: safely claim only that gamma=0.5 suppresses detector escape for the tested nonzero fields, and that the 1/r gravity field uniquely shows the tested TOWARD -> AWAY centroid crossover by gamma=0.2.
+- **auditor confidence:** high
+
+### `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`KLEIN_FOUR_PRODUCT_BZ_CORNERS_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/KLEIN_FOUR_PRODUCT_BZ_CORNERS_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone finite-group theorem: for integer d >= 2, the elementary abelian 2-group (Z_2)^d, abstractly the {0,pi}^d corner set, is isomorphic to V_4 x V_4 with both factors literally Klein-four/rank-2/order-4 iff d = 4. Broader Brillouin-zone physics, taste/doubler, Wick rotation, framework substrate realization, and physical d=4 selection are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** V_4 x V_4 is (Z_2)^2 x (Z_2)^2 = (Z_2)^4, so an isomorphism (Z_2)^d ~= V_4 x V_4 forces d = 4 by rank/cardinality, and d = 4 has the explicit coordinate split.  _(class `A`)_
+- **chain closes:** True — The proof reduces to elementary abelian 2-group rank additivity and cardinality: V_4 x V_4 has rank 4 and order 16, while (Z_2)^d has rank d and order 2^d. The d=4 coordinate split gives the forward isomorphism, and rank/order excludes all other d >= 2.
+- **rationale:** The source note's load-bearing claim is a genuine class-A algebraic identity over elementary finite-group facts, not a physical bridge or imported framework premise. Independent rank and cardinality checks both force d=4, and the explicit d=4 coordinate map is a bijective homomorphism. The cached runner independently enumerates the group checks and reports PASS=75, FAIL=0 under SHA 6982bfb1572c56fd4310098e1b26b3cef5510d85421b2a5f4e4553beadf28263. The clean verdict covers only the finite-group theorem and excludes all BZ-physics, Wick, taste/doubler, substrate-realization, and physical dimension-selection readings.
 - **auditor confidence:** high
 
 ### `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11`

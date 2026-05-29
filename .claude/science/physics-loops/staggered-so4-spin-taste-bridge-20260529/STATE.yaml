@@ -1,0 +1,28 @@
+loop: staggered-so4-spin-taste-bridge-20260529
+branch: physics-loop/staggered-so4-spin-taste-bridge-20260529
+target_claim_id: lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29
+actual_current_surface_status: unaudited
+branch_author_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: canonical free staggered phase/blocking derivation
+files_touched:
+  - docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md
+  - scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
+  - logs/runner-cache/frontier_lorentz_boost_free_staggered_fermion_2point_so4.txt
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+open_imports: []
+new_axioms: false
+review_loop_disposition: not_run_user_delegated_to_reviewer
+audit_required_before_effective_retained: true
+pipeline_result:
+  audit_status: unaudited
+  effective_status: unaudited
+  queue_ready: true
+  queue_rank: 870
+next_exact_action: independent audit of the repaired row
+stop_condition: science block packaged as draft PR

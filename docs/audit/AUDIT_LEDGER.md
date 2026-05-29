@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 154 |
+| **retained** | 155 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 582 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1159 |
+| unaudited | 1158 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 895 |
+| `audited_clean` | 896 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1389 |
+| `unaudited` | 1388 |
 
 | claim_type | count |
 |---|---:|
@@ -179,6 +179,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_bounded_negative_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_entanglement_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -2070,6 +2071,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For abstract positive rationals c, G, and A, the equation A*c = A/(4G) for all A>0 is equivalent to 4Gc=1, so c=1/4 implies G=1 and G=1 implies c=1/4 under that constraint.  _(class `A`)_
 - **chain closes:** True — The equivalence follows by factoring S_Wald-S_BH as A(4Gc-1)/(4G), then solving the resulting rational constraint. The runner verifies the factorization, equivalence, specializations, hyperbola examples, and symbolic sanity checks with PASS=19 and FAIL=0.
 - **rationale:** The restricted packet isolates a pure rational-algebra lemma: equality of A*c and A/(4G) for all positive A is exactly the constraint 4Gc=1. No physical Wald formula, gravitational action-density bridge, framework coframe carrier, Newton constant, or observed black-hole entropy input is consumed. Residual risk is downstream misuse as a physical BH-quarter derivation rather than the algebraic step needed after separate physical premises are supplied.
+- **auditor confidence:** high
+
+### `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`BINOM_D_2_EQUALS_TWICE_DMINUS1_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/BINOM_D_2_EQUALS_TWICE_DMINUS1_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone integer-arithmetic theorem: for integers d>=2, binom(d,2)=2*(d-1) iff d=4. Geometric, Lie-algebra, Hodge, Yang-Mills, chirality, Wick-rotation, and framework-forcing interpretations are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-binom-d-four`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Solving d(d-1)/2 = 2(d-1) gives (d-1)(d-4)=0; under the stated integer domain d>=2, the unique solution is d=4.  _(class `A`)_
+- **chain closes:** True — The algebra is exact: multiplying by 2 and factoring gives d in {1,4}, and the domain d>=2 removes d=1. The runner independently verifies the factorization, the finite table, monotonicity for d>=5, and the d=2,3 failures at exact symbolic precision.
+- **rationale:** The claim is a standalone arithmetic identity and closes without dependencies or physical imports. Independent manual factorization matches the source and the exact sympy runner. Residual risk is only downstream scope creep: this row does not itself derive Wick rotation, Hodge decomposition, so(4) splitting, Yang-Mills structure, or d=4 from the framework axioms.
 - **auditor confidence:** high
 
 ### `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02`

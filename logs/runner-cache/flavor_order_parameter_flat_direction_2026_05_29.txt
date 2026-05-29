@@ -1,0 +1,45 @@
+
+========================================================================
+POSITIVE 1: spontaneous breaking is FORCED (democratic vacuum unstable)
+========================================================================
+  records/Lueders Jacobian eigenvalues at democratic vacuum: [2. 2. 0.]
+  eig = 2 > 1 on the breaking directions => S_3-symmetric vacuum UNSTABLE
+  => spontaneous generation-symmetry breaking is FORCED to occur.
+
+========================================================================
+POSITIVE 2 (decisive): the breaking is the WRONG SYMMETRY SECTOR
+========================================================================
+  Gamma_chi is circulant: [Gx, C] = 0.0e+00
+  circulant C     : [.,Gx]=0e+00 (COMMUTES); {.,Gx}=1.33 (not anticommuting)
+  circulant C^2   : [.,Gx]=0e+00 (COMMUTES); {.,Gx}=1.33 (not anticommuting)
+  circulant C+C^2 : [.,Gx]=0e+00 (COMMUTES); {.,Gx}=2.67 (not anticommuting)
+  => EVERY C_3-equivariant (circulant) native structure -- instability, flow,
+     potential, C/CP-breaking, emergent-time -- commutes with Gamma_chi.
+     The Q=2/3 order parameter must ANTICOMMUTE (non-circulant). Orthogonal.
+     Native breaking overshoots to collapse (Q->1); r=1/2 never pinned.
+
+========================================================================
+the other routes (all reduce to gate)
+========================================================================
+  no stopping mechanism: existence wall (r=1) is ABSORBING (no restoring force);
+    walls push same direction ~5000x asymmetric; r=1/2 non-stationary (beta!=0).
+  r=1/2 NOT critical: F(Q) smooth at 2/3; criticality at cone edges Q=1/3, Q=1;
+    'midpoint=critical' is COORDINATE-DEPENDENT (true in Q,r; false in sigma,sqrt r).
+  Sakharov BLOCKED: CPT exact (retained); C=-I_3 on generations (generation-blind);
+    CP-violation lives inside the circulant algebra (commutes with Gamma_chi).
+
+========================================================================
+CONCLUSION: r=1/2 is a framework FLAT DIRECTION (contingent)
+========================================================================
+  FORCED:    the vacuum MANIFOLD Q in [1/3,1]  AND  that breaking OCCURS.
+  NOT FORCED: the value r=1/2 -- a dynamically-unpinned flat direction =
+             a contingent boundary/initial condition.
+  Reason (one fact, verified): Gamma_chi circulant => every native symmetric/
+  equivariant structure commutes with it; the order parameter must anticommute
+  (non-circulant). Symmetric structures categorically cannot produce a
+  broken-symmetry order parameter in the orthogonal sector.
+  CONSTRUCTIVE NEXT: formalize a NO-SELECTOR THEOREM (the flavor modulus is a
+  framework flat direction) -- the circulant-commutation fact above is most of it;
+  converts the open gate into a settled bounded result. Caveat: 'contingent' is
+  the correct null but needs the negative theorem; forced-but-undiscovered vs
+  genuinely-contingent is formally undecided -- B shows no TESTED selector forces it.

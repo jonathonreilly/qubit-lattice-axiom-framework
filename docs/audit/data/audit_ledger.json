@@ -89012,24 +89012,50 @@
       "verdict_rationale": "The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim."
     },
     "emergent_lorentz_invariance_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T02:22:29.736690+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "Bounded formal sign theorem only: under 4x4 Dirac parity conjugation by gamma^0 and the abstract derivative signs partial_0 -> +partial_0 and partial_i -> -partial_i, the four named dimension-5 SME-style bilinear structures have formal parity weight (-1)^(total spatial index count), with the corresponding formal symmetric/antisymmetric projection vanishings. This does not audit any lattice-action Lorentz-violation no-go, concrete staggered derivative representative, CPT theorem, or new axiom.",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional finite-lattice free staggered Hamiltonian statement: H=iD is Hermitian, Theta_H=P K preserves H given the stated staggered P spectral-flip identity, and the resulting Theta_H-odd Hamiltonian-sector proxy vanishes in the checked free substrate sectors."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "bounded_theorem",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": "retained_bounded",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 19.831,
+        "runner_hash": "d9e6624dccf6241cc1083e0fe4abc987148434c7255d58a3a9bcac11db6d13ad",
+        "transitive_descendants": 910
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-gpt-5.5-restricted-input-emergent-lorentz-20260529",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The sin^2 expansion, bosonic coefficient, p^4/dimension-6 classification, parity-even absence of odd-power dispersion terms, and narrowed CPT/Theta_H proxy support close for the structural surface, without a load-bearing Planck pin. The exact cubic-harmonic normalization does not close as written: with standard normalized Y_lm, K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4) gives sum_i n_i^4 = 3/5 + (4 sqrt(pi)/15) K_4, not 3/5 + (4/5) K_4.",
       "claim_id": "emergent_lorentz_invariance_note",
-      "claim_scope": null,
+      "claim_scope": "Free even-periodic cubic Cl(3)/Z^3 staggered structural-dispersion surface: sin^2 dispersion expansion, no odd-power term in the checked parity-even dispersion, retained-bounded finite-lattice CPT/Theta_H proxy support, formal parity dim-5 support, and cubic-harmonic l=4 angular statement; excluding Planck-pin numerical estimates and canonical SME coefficient identification.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T02:22:29.736690+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -89039,19 +89065,19 @@
         "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 20,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 19.831,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The structural core asserts that the free staggered dispersion expands as E^2 = a^-2 sum_i sin^2(p_i a) = p^2 - (a^2/3) sum_i p_i^4 + O(a^4 p^6), making the leading non-isotropic correction dimension-6 with angular decomposition sum_i n_i^4 = 3/5 + (4/5) K_4 and K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "27daebf0c02301c18d4126218a1d27ee424e8ba2a57939d8e06441668c6db131",
       "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Correct the K_4 normalization by either rescaling K_4 or replacing the coefficient 4/5 with 4 sqrt(pi)/15 under standard normalized spherical harmonics; re-check that the final scope still excludes Planck-pin estimates, canonical SME coefficients, and broad no-dimension-5 lattice-action language.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -89325,18 +89351,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 20,
+        "B": 3,
+        "C": 30,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 53
       },
       "runner_path": "scripts/frontier_emergent_lorentz_invariance.py",
       "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
       "transitive_descendants": 910,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source's load-bearing cubic-harmonic normalization states sum_i n_i^4 = 3/5 + (4/5) K_4 with K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4). Why this blocks: under standard normalized spherical harmonics the matching coefficient is 4 sqrt(pi)/15; for example along [100] the anisotropic part is 0.4, while (4/5)K_4 gives about 0.677. Repair target: either rescale the definition of K_4 or replace the coefficient by 4 sqrt(pi)/15, and add a runner check for the exact decomposition coefficient. Claim boundary until fixed: the safe reduced statement is that the p^4 anisotropy has an l=4 cubic-harmonic angular component with the stated special-direction factor, while the exact normalized decomposition is wrong as written."
     },
     "emergent_product_law_audit_2026-04-11": {
       "audit_date": "2026-05-10T19:55:16.388420+00:00",

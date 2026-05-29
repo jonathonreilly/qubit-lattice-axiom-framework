@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 243,
     "high": 313,
-    "leaf": 326,
+    "leaf": 325,
     "medium": 294
   },
   "cycle_break_target_count": 0,
@@ -26128,32 +26128,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
-        "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "teleportation_resource_from_poisson_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -27082,6 +27056,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/ceiling_formal_proof.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "su3_wigner_l3_treewidth_infeasible_2026-05-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
+        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py",
       "transitive_descendants": 0
     },
     {
@@ -34587,31 +34586,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_wigner_l3_treewidth_infeasible_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04",
-        "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su5_decomposition_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35627,5 +35601,5 @@
     }
   ],
   "ready_count": 45,
-  "total_pending": 1176
+  "total_pending": 1175
 }

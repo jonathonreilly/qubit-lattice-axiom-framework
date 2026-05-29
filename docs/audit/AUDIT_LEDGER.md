@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 168 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 598 |
+| **retained_bounded** | 599 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1174 |
+| unaudited | 1173 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 929 |
+| `audited_clean` | 930 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1410 |
+| `unaudited` | 1409 |
 
 | claim_type | count |
 |---|---:|
@@ -919,6 +919,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block3_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_wilson_closed_form_fanout_theorem_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `substrate_to_p_a_forcing_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -13671,6 +13672,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the narrowed scope, the one-hop dependencies are retained-grade or retained_bounded and supply the SU(3) representation-theory and L_s=3 geometry inputs. The primary runner source visibly recomputes the coefficients and singlet basis rather than importing the disclaimed bridge constants or relying on the missing Block 5 runner.
 - **rationale:** The supplied runner is source-visible and does more than print cached constants: it evaluates the SU(3) Bessel-determinant coefficient sum, diagonalizes the 4096 x 4096 total Casimir to recover the rank-8 singlet basis, constructs the stated plaquette tensor, and reports the finite storage/intermediate arithmetic. The repaired note no longer load-bears on the L_s=2 Block 5 diagnostics or on the unaudited bridge/open-gate constants. The full L_s=3 contraction is expressly outside the audited claim, so its absence is not a blocker for this staging theorem.
 - **auditor confidence:** medium
+
+### `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04`
+
+- **Note:** [`SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md`](../../docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite runner-verified N_samples=5000 naive-Haar Monte Carlo negative result for the L_s=3 PBC cube, including 81-link/81-plaquette geometry, character normalization checks, non-significant nontrivial integrand averages, and the resulting noise-dominated source-sector Perron value; excluded the note's explicitly non-binding sample-complexity and signal-size interpretation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-su3_wigner_l3_cube_haar_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner performs 5000 Haar SU(3) samples on the L_s=3 PBC cube and finds all nontrivial integrand means within about 1.20 standard errors, with the induced P_cube(L=3 PBC, MC)=0.1076 treated as noise-dominated rather than a derived physical value.  _(class `C`)_
+- **chain closes:** True — The supplied runner source genuinely samples Haar-projected SU(3) links, builds the stated L_s=3 Wilson plaquettes, evaluates the listed SU(3) characters, accumulates the MC means/errors, and computes the reported Perron value. The cached stdout matches the note's finite measurement claims, while the broader 1e-100/1e200 interpretation is explicitly marked non-load-bearing.
+- **rationale:** For the narrowed load-bearing claim, the chain closes as a bounded finite computation: the code does not merely print constants, and the cached run reports the advertised 81-plaquette geometry, seven character-normalization checks, nonsignificant nontrivial MC means, and P_cube=0.1075862340. The cited authorities are retained-grade, and the claim does not rely on them for an unclosed bridge promotion. The hard-coded bridge target and epsilon values are used only for comparator context, not to derive the audited finite Haar-MC negative result. The quantitative sample-complexity story remains non-binding and is not part of this clean verdict.
+- **auditor confidence:** high
 
 ### `su3_wilson_closed_form_fanout_theorem_note_2026-05-04`
 

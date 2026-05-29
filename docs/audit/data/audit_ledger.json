@@ -94431,24 +94431,42 @@
       "verdict_rationale": null
     },
     "exponent_derivation": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T22:48:00.028996+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "matched_2d_4d_decoherence_note": "Pinned matched 2D-vs-4D decoherence replay for the named generator routines and default arguments, showing the reported pur_min/<k>/r4 table and alpha delta do not support 4D exponent flattening in this bounded pocket."
+        },
+        "dep_claim_type": {
+          "matched_2d_4d_decoherence_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "matched_2d_4d_decoherence_note": "retained_bounded"
+        },
+        "deps": [
+          "matched_2d_4d_decoherence_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-224539-d342e7c3-exponent_derivation",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The empirical table and 1/d ansatz are not independently backed by runner output or runner source in the packet, and the effective-path-count and mixing-fraction bridge is explicitly admitted as hand-waving. The displayed f_mix-to-alpha algebra also does not support the later 1/d flattening claim under the note's own conventions.",
       "claim_id": "exponent_derivation",
-      "claim_scope": null,
+      "claim_scope": "The audited scope is the bounded claim that the displayed d=1,2,3 simulation exponent table is roughly organized by |alpha| ~ 1/d_spatial, while the path-measure derivation is admitted as non-load-bearing open work.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T22:48:00.028996+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -94456,19 +94474,19 @@
         "matched_2d_4d_decoherence_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note normalizes the d=1 measured exponent at -1.5 and asserts that the prediction alpha ~ 1/d_spatial gives d=2: -0.75 and d=3: -0.50, matching the displayed measurements in trend and order of magnitude.",
+      "load_bearing_step_class": "G",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "7f27ea40b83af511d7e30a27e7921e980e6d7dc497c0dd15eb6214058423329b",
       "note_path": "docs/EXPONENT_DERIVATION.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem - derive n_eff and f_mix from the actual DAG path measure, repair or remove the inconsistent f_mix-to-alpha scaling, and provide a matched multi-dimensional runner that isolates dimension from topology and connectivity.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -94586,7 +94604,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -94597,7 +94615,7 @@
       "runner_path": null,
       "title": "Derivation: Decoherence Exponent vs Dimension",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The source itself splits the effective path-count and mixing-fraction derivation off as open work, so the dimensional mechanism is not closed by the restricted packet. The cited retained-bounded matched 2D-vs-4D authority explicitly says dimension alone is not isolated in the matched comparison. Strict formula inventory also flags the f_mix-to-alpha displayed scaling: alpha proportional to -d log(L/r) does not yield the claimed 1/d trend, and with N_eff ~ N the omitted N/log N dependence further prevents a closed exponent law. What remains is a tuned family-level numerical heuristic, not an audited theorem."
     },
     "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
       "audit_date": "2026-05-29T06:44:17.080069+00:00",
@@ -181153,8 +181171,8 @@
       "load_bearing_score": 2.585,
       "load_bearing_step": "The matched comparison does not support a clean '4D flattens the ceiling' claim under the pinned 2D/4D generator definitions, degree matching, seeds, k-band, and pur_min metric.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "meta",
+      "max_descendant_status_rank": 25,
       "note_hash": "7308275c6b2a25056bb0f910ea23f10d0e2c937e326b2c352f5a76a4f2ed2050",
       "note_path": "docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md",
       "notes_for_re_audit_if_any": "Re-audit if the claim is widened beyond the pinned generator routines, default arguments, radius grid, seed count, or bounded no-flattening interpretation.",

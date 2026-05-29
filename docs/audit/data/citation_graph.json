@@ -70329,7 +70329,7 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a90276cc090f28598799bec08b1bf58c6d878138aa9be6a38f59329318ed4981",
+      "note_hash": "07b3fbf625dfe6cd578c2c907c3f9b6a88ffb3269a0b59bf5533788e819c8956",
       "path": "docs/PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/planck_target3_coframe_response_accepted_premise_runner.py",
       "title": "Planck Target-3 Coframe-Response Accepted-Premise Bridge"

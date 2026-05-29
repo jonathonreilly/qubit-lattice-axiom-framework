@@ -19,11 +19,11 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 179 |
 | critical | `unaudited` | 152 |
-| medium | `unaudited` | 96 |
+| medium | `unaudited` | 95 |
 | high | `audited_numerical_match` | 4 |
+| medium | `audited_conditional` | 4 |
 | critical | `audited_conditional` | 3 |
 | high | `audited_renaming` | 3 |
-| medium | `audited_conditional` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
 | critical | `open_gate` | 2 |
@@ -458,7 +458,7 @@ publication tables phrase it.
 | medium | `pmns_chart_constants_retention_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pmns_graph_commutant_cycle_value_boundary_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pmns_right_polar_section_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
-| medium | `q_integer_spectrum_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `q_integer_spectrum_theorem_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_bimodule_norm_naturality_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

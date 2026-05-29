@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 569 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1180 |
+| unaudited | 1179 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 69 |
+| ~~audited_conditional~~ | 70 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 881 |
-| `audited_conditional` | 69 |
+| `audited_conditional` | 70 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1410 |
+| `unaudited` | 1409 |
 
 | claim_type | count |
 |---|---:|
@@ -1062,6 +1062,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | D | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `retarded_field_harness_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -11180,6 +11181,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On commuting source families, the framework's W[J] is the standard cumulant generating functional applied to the given pre-record reference state.  _(class `F`)_
 - **chain closes:** True — Within the stated commuting-source scope, the formula matches the standard cumulant-generating-functional form after applying the joint spectral measure and the explicit e^{-J} sign convention. The result is an identification of an existing framework symbol with an existing standard object, not an independent derivation from A1+A2.
 - **rationale:** The note's operative move is to assert that the already-stated framework functional W[J] is the standard cumulant generating functional on the commuting-source scope. That is a valid narrow identification given the formula and sign bookkeeping, but under the rubric it is class F rather than class A or C. The cited axiom premise supplies the qubit-on-Z^3 substrate only; it does not derive the cumulant-generating-functional form.
+- **auditor confidence:** high
+
+### `q_integer_spectrum_theorem_note_2026-05-02`
+
+- **Note:** [`Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Framework-facing total charge spectrum theorem: per-site n_x=a_x^dagger a_x has eigenvalues {0,1} and Q_total=sum_x n_x has spectrum {0,...,N} with binomial multiplicities on the N-site Fock space.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By per-site uniqueness, H_x ~= C^2 with canonical fermion raising/lowering operators, so n_x=a_x^dagger a_x has spectrum {0,1} and Q_total has spectrum {0,...,N} on the tensor-product Fock space.  _(class `B`)_
+- **chain closes:** False — The finite tensor-product algebra closes after H_x=C^2 and the occupation-basis a/a^dagger construction are supplied, but the cited per-site uniqueness row's audited scope excludes physical per-site Hilbert-space identification and chirality/realization selection.
+- **rationale:** Issue: the source uses axiom_first_cl3_per_site_uniqueness as authority for a framework per-site Hilbert H_x~=C^2 and one-mode Fock construction, but that dependency is retained only as a pure Cl(3,0) representation-classification theorem and explicitly excludes physical per-site Hilbert-space identification. Why this blocks: the runner correctly checks the algebra of n=a^dagger a on a stipulated C^2 tensor product, including spectrum {0,...,N}, binomial multiplicities, commutativity, and Q=N/2 I - (1/2)sum sigma_3,x; it does not supply the missing bridge from abstract Cl(3) chirality modules to the framework Fock space or charge operator. Repair target: cite/audit a retained per-site Fock-space realization theorem, or narrow this row to a purely stipulated N-qubit algebra theorem with H=(C^2)^N and a/a^dagger defined by convention. Claim boundary until fixed: the integer-spectrum algebra is valid for a supplied N-site qubit/Fock tensor product, but framework charge quantization is not retained from the current one-hop dependency.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `qcd_low_energy_running_bridge_note_2026-05-01`

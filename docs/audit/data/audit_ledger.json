@@ -229258,24 +229258,42 @@
       "verdict_rationale": "The note's operative move is to assert that the already-stated framework functional W[J] is the standard cumulant generating functional on the commuting-source scope. That is a valid narrow identification given the formula and sign bookkeeping, but under the rubric it is class F rather than class A or C. The cited axiom premise supplies the qubit-on-Z^3 substrate only; it does not derive the cumulant-generating-functional form."
     },
     "q_integer_spectrum_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T05:35:25.473768+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "9042cf2aed3bb0c2bdd1d6d56595c0adab190cb424e5c09d246afda1d2846f77",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite tensor-product algebra closes after H_x=C^2 and the occupation-basis a/a^dagger construction are supplied, but the cited per-site uniqueness row's audited scope excludes physical per-site Hilbert-space identification and chirality/realization selection.",
       "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Framework-facing total charge spectrum theorem: per-site n_x=a_x^dagger a_x has eigenvalues {0,1} and Q_total=sum_x n_x has spectrum {0,...,N} with binomial multiplicities on the N-site Fock space.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T05:35:25.473768+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -229283,20 +229301,22 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.585,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By per-site uniqueness, H_x ~= C^2 with canonical fermion raising/lowering operators, so n_x=a_x^dagger a_x has spectrum {0,1} and Q_total has spectrum {0,...,N} on the tensor-product Fock space.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8cdee38cec613f2e240ba086899ddd6df8c5231639d790cdd2c5a5437d405e9e",
       "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained per-site Fock-space/charge-operator realization authority, or narrow the row to a stipulated N-qubit algebra theorem and re-audit.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-22T15:08:24.498177+00:00",
@@ -229441,16 +229461,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/q_integer_spectrum_check.py",
       "title": "Per-Site n\u0302 \u2208 {0, 1} \u21d2 Total Q\u0302 Integer Spectrum on Framework Fock Space",
       "transitive_descendants": 47,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the source uses axiom_first_cl3_per_site_uniqueness as authority for a framework per-site Hilbert H_x~=C^2 and one-mode Fock construction, but that dependency is retained only as a pure Cl(3,0) representation-classification theorem and explicitly excludes physical per-site Hilbert-space identification. Why this blocks: the runner correctly checks the algebra of n=a^dagger a on a stipulated C^2 tensor product, including spectrum {0,...,N}, binomial multiplicities, commutativity, and Q=N/2 I - (1/2)sum sigma_3,x; it does not supply the missing bridge from abstract Cl(3) chirality modules to the framework Fock space or charge operator. Repair target: cite/audit a retained per-site Fock-space realization theorem, or narrow this row to a purely stipulated N-qubit algebra theorem with H=(C^2)^N and a/a^dagger defined by convention. Claim boundary until fixed: the integer-spectrum algebra is valid for a supplied N-site qubit/Fock tensor product, but framework charge quantization is not retained from the current one-hop dependency."
     },
     "qcd_low_energy_running_bridge_note_2026-05-01": {
       "audit_date": "2026-05-25T14:40:00.171798+00:00",

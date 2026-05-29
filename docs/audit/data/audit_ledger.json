@@ -18560,8 +18560,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "Defining beta(g,N)=2N/g^2, substitution under g -> g/c gives beta(g/c,N)=c^2 beta(g,N), and the joint product beta*g^2 remains 2N.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_conditional",
+      "max_descendant_status_rank": 10,
       "note_hash": "a8fb8bff35dc5bd2c474a4d489632f65aebcb6678f2d93a9693e8a3e65ddc44d",
       "note_path": "docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Recheck if later work cites this as deriving g_bare=1, beta=6, Wilson action normalization, or an SU(N_c) physical convention.",
@@ -18582,24 +18582,46 @@
       "verdict_rationale": "The restricted claim is pure polynomial algebra: once beta(g,N)=2N/g^2 is defined, the c^2 rescaling and beta*g^2 invariance follow immediately without importing Wilson action, SU(N_c), Cl(3), a physical g_bare value, or any numerical comparator. The live runner reproduces all symbolic, exact-rational, orbit/fiber, and scope-guard checks with PASS=43 and FAIL=0. Residual risk is downstream misuse as a derivation of the physical g_bare convention rather than an abstract identity."
     },
     "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T22:16:34.088179+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "Standalone polynomial-algebra identity over abstract positive g and c with N in characteristic zero: beta(g/c,N)=c^2 beta(g,N), beta*g^2=2N is invariant under (g,beta)->(g/c,c^2 beta), and the positive-g rescaling orbit/fiber statements hold; no lattice gauge theory, Wilson plaquette action, Cl(3), SU(N_c), physical g_bare convention, external target, or unit convention is audited.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself."
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ee5915affbf116af9fa11fd6bc002448d1c66f07c09333fe44fcb06a16695a0c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-beta_gbare_squared_resca",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebra closes exactly as a conditional class-A substitution once WM is admitted. The packet does not derive or retain WM, so any physical Wilson-surface reading remains conditional on that premise.",
       "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
-      "claim_scope": null,
+      "claim_scope": "Conditional arithmetic identity: assuming the admitted WM premise, beta * g_bare^2 = 2 N_c is invariant under the scoped joint rescaling at exact rational precision.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T22:16:34.088179+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -18608,20 +18630,23 @@
         "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Under the explicit Wilson matching premise WM: beta = 2 N_c / g_bare^2, beta * g_bare^2 = 2 N_c and the joint rescaling beta -> c^2 beta, g_bare^2 -> g_bare^2/c^2 leaves the product invariant.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4931a8532196d1e1a0a358fac55120e66428b5b77030e9888e130601c514edaf",
       "note_path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: derive or register retained-grade authority for the Wilson matching premise WM, then re-audit whether the row can promote beyond conditional arithmetic.",
+      "open_dependency_paths": [
+        "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
+        "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md::WM"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-27T14:30:54.774813+00:00",
@@ -18743,18 +18768,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 151,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 151
       },
       "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
       "title": "\u03b2\u00b7g_bare\u00b2 = 2 N_c Conditional Wilson-Matching Arithmetic Lemma",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is genuine algebra over the explicit WM premise and the retained abstract identity; the runner source actually computes the rational products with Fraction rather than merely printing constants. However, WM is explicitly admitted and not derived or registered as retained authority in the restricted packet. The cited rescaling authority is retained_bounded and also treats Wilson matching as a scoped input, so the row cannot promote beyond conditional arithmetic."
     },
     "beyond_lattice_qcd_note": {
       "audit_date": null,

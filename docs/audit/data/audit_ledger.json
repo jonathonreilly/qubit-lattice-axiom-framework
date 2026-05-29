@@ -9268,7 +9268,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/assumption_derivation_ledger_meta_check.py",
       "title": "Assumption / Derivation Ledger",
       "transitive_descendants": 944,
       "verdict_rationale": null
@@ -18762,8 +18762,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "Defining beta(g,N)=2N/g^2, substitution under g -> g/c gives beta(g/c,N)=c^2 beta(g,N), and the joint product beta*g^2 remains 2N.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "a8fb8bff35dc5bd2c474a4d489632f65aebcb6678f2d93a9693e8a3e65ddc44d",
       "note_path": "docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Recheck if later work cites this as deriving g_bare=1, beta=6, Wilson action normalization, or an SU(N_c) physical convention.",

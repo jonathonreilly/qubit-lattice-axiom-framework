@@ -42626,7 +42626,7 @@
       "helper_runner_paths": [],
       "note_hash": "ee9e3b21f4968b43af33e1594029d9f6ec833e21bad638397c24f92951647c03",
       "path": "docs/ASSUMPTION_DERIVATION_LEDGER.md",
-      "runner_path": null,
+      "runner_path": "scripts/assumption_derivation_ledger_meta_check.py",
       "title": "Assumption / Derivation Ledger"
     },
     "asymmetry_persistence_born_note": {

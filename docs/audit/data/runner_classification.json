@@ -792,6 +792,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_area_law_quarter_broader_no_go.py"
     },
+    "assumption_derivation_ledger": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/assumption_derivation_ledger_meta_check.py"
+    },
     "asymmetry_persistence_born_note": {
       "assert_count": 0,
       "counts": {
@@ -27458,6 +27470,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/assumption_derivation_ledger_meta_check.py": {
+      "assert_count": 1,
+      "claims": [
+        "assumption_derivation_ledger"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/asymmetry_persistence_born_calibration.py": {
@@ -58266,7 +58293,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 358,
     "dominant_class_distribution": {
       "A": 268,
       "B": 296,

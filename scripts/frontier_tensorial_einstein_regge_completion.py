@@ -25,17 +25,16 @@ Interpretation:
 from __future__ import annotations
 
 from dataclasses import dataclass
-from _frontier_loader import load_frontier
 
 import numpy as np
 from scipy.ndimage import map_coordinates
 
-
-
-same_source = load_frontier("same_source_metric", "frontier_same_source_metric_ansatz_scan.py")
-coarse = load_frontier("coarse_grained", "frontier_coarse_grained_exterior_law.py")
-schur = load_frontier("schur_boundary", "frontier_oh_schur_boundary_action.py")
-microscopic = load_frontier("microscopic_dirichlet", "frontier_microscopic_dirichlet_bridge_principle.py")
+# Keep the helper modules as static imports so the audit packet builder can
+# include their source through helper_runner_paths. The tensorial probe uses
+# the same objects as before; this just removes opaque dynamic loading.
+import frontier_coarse_grained_exterior_law as coarse
+import frontier_oh_schur_boundary_action as schur
+import frontier_same_source_metric_ansatz_scan as same_source
 
 
 @dataclass

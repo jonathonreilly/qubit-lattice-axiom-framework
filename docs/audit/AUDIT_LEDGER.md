@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 155 |
+| **retained** | 156 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 582 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1158 |
+| unaudited | 1157 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 896 |
+| `audited_clean` | 897 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1388 |
+| `unaudited` | 1387 |
 
 | claim_type | count |
 |---|---:|
@@ -219,6 +219,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_typeb_radian_readout_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2633,6 +2634,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** A selector from scalar quotient data to one generation label would have to pick a C3-fixed label, but the C3 action 0 -> 1 -> 2 -> 0 on generation labels is free, so no fixed singleton label exists; only based maps exist and those require extra basepoint/source/generation data.  _(class `A`)_
 - **chain closes:** True — The negative result closes as an exact group-action obstruction from the supplied premises: scalar Q/delta/z data are invariant under cyclic relabeling, while the target generation labels form a free C3 orbit. Therefore invariant scalar data cannot canonically select one physical generation label without additional based data. The runner directly checks the scalar invariance, carrier relabeling behavior, free action, absence of invariant singleton, and existence of only based maps.
 - **rationale:** The claim is a narrow no-go, not a positive charged-lepton mass closure. Its load-bearing step is exact algebra over the supplied C3 action and scalar-readout premise, and the runner checks the obstruction directly. No PDG masses, observed hierarchy label, or hidden physical generation identification are used as derivation input.
+- **auditor confidence:** high
+
+### `chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`CHERN_CHARACTER_K2_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/CHERN_CHARACTER_K2_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone graded-algebra theorem: for a matrix-valued 2-form F on R^d, the Chern-character term ch_k(F) has homogeneous degree 2k and is a nonzero top-degree form only when 2k=d; specializing the formal k=2 term gives d=4 and coefficient (i/(2*pi))^2/2! = -1/(8*pi^2). Physical anomaly, index-theorem, Chern-Weil integrality, gauge-bundle topology, Wick-rotation, and framework F identification are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-chern-k2-d-four`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since F is a 2-form, F^wedge k and tr(F^wedge k) have form degree 2k, so the homogeneous Chern-character term is top-degree on R^d iff 2k=d; setting k=2 gives d=4 and (i/(2*pi))^2/2! = -1/(8*pi^2).  _(class `A`)_
+- **chain closes:** True — The degree-counting check is exact: wedge degree adds by two per F factor, trace and scalar prefactors preserve degree, and top-degree means degree d. The runner independently verifies the exterior-algebra dimension table, k,d top-form criterion, explicit nonzero R^4 representative, low/high-dimensional counterfactuals, and the factorial coefficient at exact symbolic precision.
+- **rationale:** The row closes as a pure exterior-algebra/formal-Chern-character identity with no graph dependencies. The manual check and exact runner agree on degree 2k, top-degree condition 2k=d, the k=2 specialization d=4, and the -1/(8*pi^2) coefficient. Residual risk is only downstream overuse: this does not derive the ABJ anomaly, Chern-Weil integrality, instantons, Wick rotation, or a framework gauge-field 2-form.
 - **auditor confidence:** high
 
 ### `chiral_3plus1d_boundary_phase_note`

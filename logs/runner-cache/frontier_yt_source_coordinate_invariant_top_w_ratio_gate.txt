@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_source_coordinate_invariant_top_w_ratio_gate.py
+runner_sha256: a548185dedc69c8b9ad7a4cadadd0df624f28d043f0a9deb1f76d499f9b23772
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+==============================================================================
+Y_T SOURCE-COORDINATE INVARIANT TOP/W RATIO GATE
+==============================================================================
+
+Part 1: anchors and retained upstream scope
+[PASS] docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Theorem
+[PASS] note contains required section: Consequence
+[PASS] note contains required section: Why This Is Not A Renaming
+[PASS] note contains required section: Non-Claims
+[PASS] EW Higgs gauge-mass theorem is retained
+[PASS] source-action support packet remains retained_bounded only
+
+Part 2: arbitrary radial coordinate cancels
+[PASS] dM_t/dh over dM_W/dh cancels v'(h): sqrt(2)*y_t/g_2
+[PASS] y_t recovered from arbitrary radial coordinate: y_t
+
+Part 3: local source reparameterization invariance
+[PASS] ratio invariant under h=f(s): sqrt(2)*y_t/g_2
+[PASS] recovered y_t invariant under h=f(s): y_t
+[PASS] ratio invariant for nonlinear coordinate witness: sqrt(2)*y_t/g_2
+
+Part 4: neutral radial tangent is one-dimensional after EW carrier is accepted
+[PASS] neutral radial source tangent has one free Jacobian: Matrix([[0], [sqrt(2)*a/2]])
+[PASS] radial tangent is electromagnetically neutral: Matrix([[0], [0]])
+
+Part 5: current closure boundary
+[PASS] source-coordinate normalization is not a blocker for the ratio
+[PASS] neutral carrier-ray bridge is present
+[PASS] strict W/Z denominator response is present
+[PASS] symbolic top response row is present
+[PASS] full same-surface top/W transfer response remains absent
+[PASS] coefficient-certified top/W rows remain absent
+[PASS] numerical g_2 authority remains absent
+[PASS] status remains support/open gate: {'ew_mass_status': 'retained', 'source_action_status': 'retained_bounded'}
+
+Part 6: firewalls
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: observed W/Z/top masses
+[PASS] firewall phrase present: fitted selectors
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: This note derives `y_t`
+[PASS] forbidden overclaim absent: retained Y_T closure has been obtained
+[PASS] forbidden overclaim absent: the signed-record source is the Higgs
+
+wrote outputs/yt_source_coordinate_invariant_top_w_ratio_gate_2026-05-25.json
+SUMMARY: PASS=39 FAIL=0
+
+----- stderr -----
+

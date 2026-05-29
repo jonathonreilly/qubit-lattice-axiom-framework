@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 322
+    "medium": 321
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16746,28 +16746,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.2,
-      "note_path": "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mermin_wagner_bogoliubov_bounded_certificate.py",
-      "transitive_descendants": 51
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -16813,6 +16791,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
+      "transitive_descendants": 50
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_reduction_note",
+        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.172,
+      "note_path": "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
       "transitive_descendants": 50
     },
     {
@@ -19745,31 +19748,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_exact_interacting_bridge_transport.py",
-      "transitive_descendants": 50
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_reduction_note",
-        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.172,
-      "note_path": "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
       "transitive_descendants": 50
     },
     {
@@ -36050,5 +36028,5 @@
     }
   ],
   "ready_count": 44,
-  "total_pending": 1192
+  "total_pending": 1191
 }

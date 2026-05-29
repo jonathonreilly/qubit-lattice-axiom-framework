@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 153 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 564 |
+| **retained_bounded** | 565 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1190 |
+| unaudited | 1189 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 875 |
+| `audited_clean` | 876 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1420 |
+| `unaudited` | 1419 |
 
 | claim_type | count |
 |---|---:|
@@ -604,6 +604,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_decay_diagnosis_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_annular_tapered_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9002,6 +9003,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The memory failure is not primarily a Yukawa-range artifact: mu^2 matters, but geometry scaling matters more, and the old screening-alone diagnosis is too strong.  _(class `C`)_
 - **chain closes:** True — The registered runner exits 0 and reproduces the scaled-geometry decay and fixed-geometry survival/strengthening tables exactly, including the mu^2=0 and mu^2=0.22 anchor values quoted in the note.
 - **rationale:** The bounded diagnosis closes against scripts/frontier_memory_mu2_size_sweep.py. The current output matches the note's scaled-geometry rows, including N=61 mu2=0 memory +0.020854 vs mu2=0.22 +0.016780 and N=121 mu2=0 +0.001767 vs mu2=0.22 +0.000865, and it matches the fixed-geometry rows, including N=81 mu2=0 +0.231199 vs mu2=0.22 +0.244260 and N=121 mu2=0 +2.580905 vs mu2=0.22 +2.599619. The note does not promote a publication-grade memory claim; it only narrows the failure mode.
+- **auditor confidence:** high
+
+### `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18`
+
+- **Note:** [`MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Gibbs-state Bogoliubov inequality and lattice IR-sum certificate only; excludes the Ward/commutator-normalized order-parameter extraction and the no continuous-symmetry SSB conclusion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-mermin-wagner-bogoliubov-a`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The finite Bogoliubov inequality together with E_k = 2 sum_mu(1 - cos k_mu) and I_d(L) = L^-d sum_{k != 0} 1/E_k gives the d=1 exact identity, d=2 logarithmic growth, and finite d=3 window behavior.  _(class `A`)_
+- **chain closes:** True — Within the narrowed scope, the finite matrix inequality closes by spectral/Cauchy-Schwarz algebra and the IR behavior closes from the stated lattice dispersion. The |m_L| extraction and no-SSB theorem do not close here and are not part of the audited clean scope.
+- **rationale:** The runner exits 0 with PASS=5 FAIL=0 and its code computes finite matrix and lattice-sum checks rather than importing the textbook theorem. Independent recheck, without importing the runner, passed random 5x5 Hermitian Gibbs Bogoliubov instances, the exact I_1 identity for multiple L, monotone/log-scale d=2 behavior, and finite d=3 window behavior through L=24. The no-go/admission gate passes only because this clean verdict does not retain the Ward-normalized |m_L| extraction or no-SSB conclusion.
 - **auditor confidence:** high
 
 ### `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`

@@ -16684,9 +16684,9 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 24,
-        "D": 2
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -41034,9 +41034,9 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 24,
-        "D": 2
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "C",

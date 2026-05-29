@@ -68646,7 +68646,7 @@
     "observable_principle_from_axiom_note": {
       "claim_id": "observable_principle_from_axiom_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (finite-algebra `log|det(D+J)|` generator on",
+      "claim_type_author_hint_raw": "bounded_theorem.",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "admitted_input_registry_tier_a_note_2026-05-23",
@@ -87618,6 +87618,7 @@
     "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
     "nonlabel_grown_basin_note",
     "nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16",
+    "observable_principle_from_axiom_note",
     "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
     "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
     "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21",

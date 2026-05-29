@@ -3,21 +3,18 @@
 Hierarchy observable principle from the lattice axiom.
 
 Goal:
-  Replace the imported "effective-action order parameter" language with a
-  framework-internal conditional statement on the exact Grassmann Gaussian:
+  Check the exact finite log|det| source-response theorem on the runner block:
 
-      Z[J] = det(D + J)
+      W[J] = log |det(D + J)| - log |det D|
 
-  Given P1 (scalar additivity on independent subsystems) and P2 (continuous
-  phase-blind scalar-generator selection), |Z| is multiplicative, so the
-  additive scalar generator is fixed up to W = c log|Z| + const. With the
-  canonical c=1 generator normalization and zero-source baseline, local scalar
-  observables are therefore the source-response coefficients of log|Z|
-  (equivalently Re log Z).
+  The 2026-05-29 scope repair removes P2 scalar-generator selection from the
+  load-bearing claim. This runner verifies only the exact algebra after W is
+  explicitly supplied; it does not prove that physical scalar observables must
+  select W from all possible generator choices.
 
-  On the minimal hierarchy block this reproduces the exact dimension-4
-  effective-potential coefficient A(L_t), and the resulting temporal kernel is
-  exactly the bosonic sign/conjugation-closed orbit kernel that selects L_t=4.
+  On the minimal hierarchy block this W reproduces the exact dimension-4
+  source-curvature coefficient A(L_t), and the resulting temporal kernel is
+  exactly the sign/conjugation-closed orbit kernel that selects L_t=4.
 """
 
 from __future__ import annotations
@@ -25,6 +22,7 @@ from __future__ import annotations
 import cmath
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 from canonical_plaquette_surface import CANONICAL_ALPHA_LM, CANONICAL_PLAQUETTE, CANONICAL_U0
@@ -33,6 +31,8 @@ np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"
 
 
 def check(name: str, condition: bool, detail: str = ""):
@@ -173,6 +173,33 @@ def orbit_weights(lt: int):
             vals.append(round(1.0 / (3.0 + math.sin(angle) ** 2), 15))
         out.append(sorted(set(vals)))
     return out
+
+
+def test_source_note_scope_firewall():
+    print("\n" + "=" * 78)
+    print("PART 0: SOURCE NOTE SCOPE FIREWALL")
+    print("=" * 78)
+
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    required = [
+        "narrowed from a P1+P2 scalar-generator selection claim",
+        "P2 is removed from the load-bearing theorem surface",
+        "This row no longer claims that the framework uniquely selects `W`",
+        "This row does not claim scalar-generator selection from A1/A2",
+        "This row does not claim P2",
+        "No new axiom is introduced",
+        "Comparator-Only Readout",
+    ]
+    forbidden = [
+        "P1 and P2 stay admitted; the Tier-A portfolio is not extended.",
+        "Given P1 (scalar additivity on independent subsystems) and P2",
+        "conditional on the P1+P2 admitted scalar-selection surface",
+    ]
+
+    for phrase in required:
+        check(f"source note carries repaired-scope phrase: {phrase}", phrase in note)
+    for phrase in forbidden:
+        check(f"source note excludes old conditional-scope phrase: {phrase}", phrase not in note)
 
 
 def test_additive_scalar_generator():
@@ -381,42 +408,32 @@ def test_hierarchy_value_from_internal_observable_principle():
     print("  INFO: comparator only; not counted as a theorem PASS check.")
 
 
-def test_conditional_scope_shape():
-    """Part 6 -- conditional-scope verification (2026-05-25 P1+P2 narrowing).
+def test_repaired_logdet_scope_shape():
+    """Part 6 -- repaired exact log|det| scope verification.
 
-    Per the 2026-05-25 scope narrowing recorded in
-    `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the load-bearing claim
-    of the parent note is conditional on the P1+P2 scalar-selection surface:
+    Per the 2026-05-29 scope repair recorded in
+    `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the load-bearing claim is
+    no longer conditional on P2 scalar-generator selection. The repaired claim
+    explicitly supplies
 
-      P1: scalar additivity on independent subsystems
-          (W[J_1 (+) J_2] = W[J_1] + W[J_2])
-      P2: continuous phase-blind scalar-generator selection
-          (the scalar bosonic generator is a continuous function of |Z| alone)
+      W[J] = log|det(D+J)| - log|det D|
 
-    The canonical c=1 generator normalization and zero-source baseline are
-    fixed conventionally; finite-block regularity and source-evenness are
-    checked as candidate consistency properties, not as derivations of the
-    broader P2 selection premise.
+    and proves the exact algebraic consequences of that supplied functional.
 
-    This test verifies, *as an empirical statement on the runner's lattice
-    Dirac operator*, that:
+    This test verifies, as an empirical statement on the runner's finite
+    lattice Dirac operator, that:
 
-      - if the candidate generator W = log|det(D+J)| - log|det D| is adopted
-        under P1+P2, it is additive on direct sums, source-even, regular near
-        zero source, and implements the baseline convention W(0) = 0;
+      - W is additive on direct sums, source-even, regular near zero source,
+        and implements the baseline convention W(0) = 0;
 
-      - any candidate that violates P1 (e.g. raw |Z|) fails to be a unique
-        additive scalar generator, confirming P1 is a load-bearing selection
-        filter rather than a redundant assumption.
+      - raw |Z| is not additive, showing why this row must not be cited as a
+        selection theorem for arbitrary scalar generators.
 
-    This part does NOT attempt to derive P1 or P2 from retained primitives;
-    that is explicitly out of scope per the audit-named conditional scope.
-    It only verifies the conditional shape on the runner's block so
-    reviewers can independently check that the runner's PASS count matches
-    the conditional load-bearing statement of the parent note.
+    This part does not attempt to derive P2 from retained primitives. It is a
+    scope firewall for the repaired exact log|det| theorem.
     """
     print("\n" + "=" * 78)
-    print("PART 6: CONDITIONAL-SHAPE VERIFICATION (2026-05-25 P1+P2 NARROWING)")
+    print("PART 6: REPAIRED EXACT LOG|DET| SCOPE VERIFICATION")
     print("=" * 78)
 
     u0 = 0.9
@@ -472,12 +489,12 @@ def test_conditional_scope_shape():
         raw_violation = max(raw_violation, abs(z_tot - (z2 + z4)) / z_tot)
 
     check(
-        "P1 (additivity) holds for the candidate generator W = log|det(D+J)|",
+        "direct-sum additivity holds for supplied W = log|det(D+J)|",
         p1_max_err < 1e-12,
         f"max additivity error = {p1_max_err:.2e}",
     )
     check(
-        "P2 consistency: selected phase-blind candidate is source-even, W(j) = W(-j)",
+        "supplied W is source-even on the runner block, W(j) = W(-j)",
         p2_max_err < 1e-12,
         f"max evenness error = {p2_max_err:.2e}",
     )
@@ -492,29 +509,24 @@ def test_conditional_scope_shape():
         f"max zero-source baseline error = {p4_baseline_err:.2e}",
     )
     check(
-        "P1 is non-vacuous: raw |Z| violates additivity (so P1 is a real filter)",
+        "scope firewall: raw |Z| violates additivity, so this is not a selection theorem",
         raw_violation > 0.1,
         f"raw |Z| additivity violation = {raw_violation:.4f}",
     )
     print(
-        "  Note: this part verifies the CONDITIONAL SHAPE only "
-        "(P1+P2 plus the canonical c=1 convention select the candidate W). It does NOT derive "
-        "P1 or P2 from retained-grade primitives; that path is explicitly out of "
-        "scope per the audit-named conditional scope (see "
-        "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md §'Audit-named "
-        "conditional scope')."
+        "  Note: this part verifies the repaired exact log|det| scope only. "
+        "It does not derive P2 or claim that the framework uniquely selects W "
+        "from all possible scalar-generator choices."
     )
 
 
 def test_candidate_consistency_checks():
-    """Part 7 -- runner-local consistency checks for the selected candidate.
+    """Part 7 -- runner-local consistency checks for the supplied W.
 
-    Per the 2026-05-25 narrowing recorded in
-    `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` §"Runner-local
-    consistency checks for P2/P3/P4", these checks do not derive the
-    broader P2 scalar-generator classification premise. They verify that the
-    selected phase-blind amplitude generator has the expected structural
-    behavior on the registered staggered block:
+    Per the 2026-05-29 scope repair recorded in
+    `docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, these checks verify
+    structural behavior of the explicitly supplied log|det| functional on the
+    registered staggered block:
 
       * source evenness: because D is real anti-Hermitian on the runner block,
         `|det(D + jI)| = |det(D - jI)|`, so the selected candidate W is even
@@ -528,17 +540,16 @@ def test_candidate_consistency_checks():
         zero-source subtraction enforces `W(0) = 0`, and additive shifts do
         not change source-derivative observables.
 
-    P1 and P2 remain admitted scalar-selection premises. This part does not
-    promote `CPT_EXACT_NOTE` or any cited upstream row; it only checks the
-    candidate selected under the conditional surface.
+    This part does not prove or assume a P2 scalar-generator classification
+    theorem; it only checks the supplied W.
     """
     print("\n" + "=" * 78)
-    print("PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR THE SELECTED CANDIDATE")
+    print("PART 7: RUNNER-LOCAL CONSISTENCY CHECKS FOR SUPPLIED W")
     print("=" * 78)
 
     u0 = 0.9
 
-    # Candidate source-evenness check: D is real anti-Hermitian on the
+    # Source-evenness check: D is real anti-Hermitian on the
     # staggered block.
     print("\n  Source-evenness check: D is real anti-Hermitian on the runner block.")
     real_d_imag_norm_max = 0.0
@@ -582,7 +593,7 @@ def test_candidate_consistency_checks():
             source_even_err = max(source_even_err, abs(zp - zm))
 
     check(
-        "source-evenness checked: |det(D + jI)| = |det(D - jI)| for the candidate",
+        "source-evenness checked: |det(D + jI)| = |det(D - jI)| for supplied W",
         source_even_err < 1e-12,
         f"max |zp - zm| = {source_even_err:.2e}",
     )
@@ -609,11 +620,11 @@ def test_candidate_consistency_checks():
         f"max |det(D+J) - conj(det(D-J))| = {p2_conj_err:.2e}",
     )
 
-    # Candidate regularity check: j -> det(D + jI) is a polynomial in j of degree n;
+    # Regularity check: j -> det(D + jI) is a polynomial in j of degree n;
     # log|det(D + jI)| is real-analytic on j-neighborhoods where the polynomial
     # is nonzero. The runner verifies via Taylor-coefficient stability and
     # via D being invertible (so j=0 is in the analyticity neighborhood).
-    print("\n  Candidate regularity check: finite-block analyticity of log|det(D + jI)|.")
+    print("\n  Regularity check: finite-block analyticity of log|det(D + jI)|.")
     p3_d_invertible_err = 0.0
     for ls, lt in [(2, 2), (2, 4)]:
         d = build_dirac_4d_apbc(ls, lt, u0)
@@ -622,7 +633,7 @@ def test_candidate_consistency_checks():
         p3_d_invertible_err = max(p3_d_invertible_err, 1.0 / max(smin, 1e-30))
         # Cap to avoid logging huge floats; we only need finiteness.
     check(
-        "candidate regularity checked: D is invertible on the runner block (smin > 0)",
+        "regularity checked: D is invertible on the runner block (smin > 0)",
         p3_d_invertible_err < 1e3,
         f"max 1/sigma_min(D) = {p3_d_invertible_err:.2e}",
     )
@@ -647,7 +658,7 @@ def test_candidate_consistency_checks():
             p3_quadratic_stab_err = max(p3_quadratic_stab_err, rel)
 
     check(
-        "candidate regularity checked: small-j Taylor ratio W(j)/j^2 converges to A(L_t)",
+        "regularity checked: small-j Taylor ratio W(j)/j^2 converges to A(L_t)",
         p3_quadratic_stab_err < 5e-3,
         f"max relative |W(j)/j^2 - A_exact| / A_exact = {p3_quadratic_stab_err:.2e}",
     )
@@ -704,23 +715,24 @@ def test_candidate_consistency_checks():
     )
 
     print(
-        "\n  Summary: the selected P1+P2 candidate passes source-evenness,\n"
+        "\n  Summary: the supplied log|det| functional passes source-evenness,\n"
         "  finite-block regularity, and additive-baseline invariance checks.\n"
         "  The c=1 scale is a representative normalization, not a derived\n"
-        "  physical scale. These checks do not derive the P1+P2 scalar-selection\n"
-        "  surface or promote any cited upstream row."
+        "  physical scale. These checks do not derive a P2 scalar-selection\n"
+        "  theorem or promote any cited upstream row."
     )
 
 
 def main():
     print("Hierarchy observable principle from the lattice axiom")
     print("=" * 78)
+    test_source_note_scope_firewall()
     test_additive_scalar_generator()
     test_local_source_response_and_block_locality()
     test_uniform_scalar_generator_from_axiom()
     test_orbit_kernel_and_selector()
     test_hierarchy_value_from_internal_observable_principle()
-    test_conditional_scope_shape()
+    test_repaired_logdet_scope_shape()
     test_candidate_consistency_checks()
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")

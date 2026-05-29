@@ -10773,6 +10773,14 @@
       "to": "graph_first_su3_integration_note"
     },
     {
+      "from": "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
+      "from": "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
+      "to": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
+    },
+    {
       "from": "graph_first_selector_derivation_note",
       "to": "graph_first_su3_integration_note"
     },
@@ -17577,6 +17585,14 @@
       "to": "light_cone_framing_note"
     },
     {
+      "from": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+      "to": "cpt_exact_note"
+    },
+    {
       "from": "lorentz_kernel_positive_closure_note",
       "to": "emergent_lorentz_invariance_note"
     },
@@ -19675,6 +19691,18 @@
     {
       "from": "observable_principle_from_axiom_note",
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "observable_principle_from_axiom_note",
+      "to": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
+    },
+    {
+      "from": "observable_principle_from_axiom_note",
+      "to": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28"
+    },
+    {
+      "from": "observable_principle_from_axiom_note",
+      "to": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
     },
     {
       "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
@@ -41528,9 +41556,9 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3aa30725d3489f200d38d1598fb1820446f00f2cbcb78f9b473b3907094b203c",
+      "note_hash": "68a729768c0b166e7ad7725792e24b4cde2f8dc2e801f53a8e38ab7ba8a2e72a",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
-      "runner_path": null,
+      "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
     },
     "ai_methodology.skills.methodology-paper-synthesizer.skill": {
@@ -42413,7 +42441,7 @@
         "scripts/gap_topological_asymmetry.py",
         "scripts/gap_topological_asymmetry_layernorm_combo.py"
       ],
-      "note_hash": "629360cdbac655b9fc8e0ba141e1d706bdf70a94227838589c6acfe194456fdd",
+      "note_hash": "8264a24e2320068c2e41e62ef6cdbf7fe508261bea0cf6fe7a902e446ff12f06",
       "path": "docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
       "title": "Asymmetry Persistence Born Calibration Note"
@@ -47172,7 +47200,7 @@
         "emergent_lorentz_invariance_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c0daabf6ad82149fe4213756404dbb5473a7e4f32908882b424008fa0ff563d9",
+      "note_hash": "b7f9ee3cd1cef07dbfe6c9a626ece236ca345b8266825a4369c8464af5eaa296",
       "path": "docs/CONTINUUM_IDENTIFICATION_NOTE.md",
       "runner_path": "scripts/frontier_continuum_identification_audit.py",
       "title": "Continuum Identification: Gravity and Gauge"
@@ -57539,6 +57567,21 @@
       "runner_path": "scripts/frontier_gr_class_expansion_finite_rank_target.py",
       "title": "Gravity Class Expansion Target: Finite-Rank Source-to-Metric on the Current Bridge Surface"
     },
+    "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": {
+      "claim_id": "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c2f27fe705e097e461538d431a7f57ca8942841305c13c59b6072b1ce6ce3400",
+      "path": "docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md",
+      "runner_path": "scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py",
+      "title": "Graph-Braid Anyon Exclusion on Z^3: First-Quantized {Boson, Fermion} Dichotomy"
+    },
     "graph_dirac_requirements_2026-04-10": {
       "claim_id": "graph_dirac_requirements_2026-04-10",
       "claim_type_author_hint": null,
@@ -65341,6 +65384,21 @@
       "runner_path": "scripts/frontier_lorentz_boost_3plus1d.py",
       "title": "3+1D SO(3,1) Boost Covariance of the Path-Sum 2-Point Function"
     },
+    "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": {
+      "claim_id": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "cpt_exact_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a3c0cff4debb71f778c9b481dc84201236202346e320bfc842417cd921de205c",
+      "path": "docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md",
+      "runner_path": "scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py",
+      "title": "Free Staggered-Dirac 2-Point Schwinger Function: SO(4) Covariance in the Continuum Limit (Narrow)"
+    },
     "lorentz_kernel_positive_closure_note": {
       "claim_id": "lorentz_kernel_positive_closure_note",
       "claim_type_author_hint": null,
@@ -66412,7 +66470,7 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "98531fac922f46470e9b33289a4eb77d0702590e88398791a59ce42868428bee",
+      "note_hash": "9453c23c1588888816f3b1ccc71cdef1642c022b73e9dfba4a1f118bee61760e",
       "path": "docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/multisite_pauli_group_check.py",
       "title": "Multi-Site Pauli Group P_N Has Order 4^{N+1} on N-Site Cl(3) Fock Space"
@@ -68287,12 +68345,15 @@
       "claim_type_author_hint_raw": "bounded_theorem (finite-algebra `log|det(D+J)|` generator on",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "admitted_input_registry_tier_a_note_2026-05-23"
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+        "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
       ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "7dabc0f172f9f77c5ecf4439417205e1f05815786ca4b423cb14628df64bfaff",
+      "note_hash": "ff15f82796d0ea7a1ed3bd6530c6f85e131d2cf0dce0cecbf24430c6f0a05faf",
       "path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
@@ -75589,7 +75650,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "75c400e5245f53c741c0045114a1d6e211cd9e0d4fd6d4c2680ba5754ea43750",
+      "note_hash": "e6590578a7890ddd3bc0f0d99c291ef3bdce3cc61e2d194afc37e0368be17d17",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -79466,7 +79527,7 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e38505a0f62fb5949b1ed57eae1e9474a4ab85f2ab8a63f8be1c2c40a69bfe5e",
+      "note_hash": "4595e5276b49683d1e24ff79600f99076bda4eff96c4267637b69227a2bd10c6",
       "path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
       "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
       "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface"
@@ -87462,7 +87523,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 695,
+      "bounded_theorem": 697,
       "decoration": 1,
       "meta": 198,
       "no_go": 87,
@@ -87471,7 +87532,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1095,
+      "bounded_theorem": 1097,
       "decoration": 1,
       "meta": 198,
       "no_go": 190,
@@ -87479,10 +87540,10 @@
       "open_gate": 133,
       "positive_theorem": 581
     },
-    "edge_count": 9964,
-    "leaf_count": 820,
-    "node_count": 2620,
+    "edge_count": 9971,
+    "leaf_count": 821,
+    "node_count": 2622,
     "root_count": 873,
-    "runners_with_path": 2194
+    "runners_with_path": 2197
   }
 }

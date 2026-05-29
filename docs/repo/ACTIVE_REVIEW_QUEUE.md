@@ -99,6 +99,31 @@ Current science/open-lane follow-ups:
   Axiom 2, so it requires explicit user approval before any ratification or
   audit-dispatch sidecar can land.
   Disposition: `science-needed`.
+- `2026-05-29-pr2203-so4-power-counting-marginal-anisotropy-gate`
+  Scope: PR #2203,
+  `EMERGENT_SO4_CONDITIONAL_ON_CONTINUUM_LIMIT_POWER_COUNTING_NARROW_THEOREM_NOTE_2026-05-29.md`,
+  and its companion power-counting runner.
+  Finding: the exact spatial `O_h` / cubic-harmonic power-counting checks are
+  useful, but the submitted theorem over-promotes them to a full SO(4)
+  all-`n`-point continuum implication; on a `Z^3 x Z_tau` surface with only
+  spatial cubic symmetry, a marginal time-vs-space kinetic anisotropy is not
+  excluded by the runner. Salvage should either add an explicit retained or
+  admitted Euclidean kinetic-normalization / 4D-hypercubic premise, or narrow
+  the theorem to spatial cubic artifact power counting.
+  Disposition: `science-needed`.
+- `2026-05-29-pr2207-eta-holonomy-braid-invariant-gap`
+  Scope: PR #2207,
+  `ETA_PHASE_HOLONOMY_AREA_FLUX_NOT_BRAID_INVARIANT_NARROW_NO_GO_NOTE_2026-05-29.md`,
+  and its companion runner.
+  Finding: the exact `eta`-phase spin-diagonalization and `Z_2` area-flux
+  computation are valuable, but the no-go conclusion is not yet supported:
+  the runner asserts rather than proves that the compared detour swaps are the
+  same element of `B_2(Z^3)` and that a one-token plaquette loop is
+  null-homotopic in `UD_2(Z^3)`. A graph treated as a 1-complex does not
+  automatically include geometric plaquette faces. Salvage should either
+  compute/establish the relevant `UD_2` homotopy or land only the narrower
+  base-connection area-flux theorem.
+  Disposition: `science-needed`.
 
 ## Intake Format
 

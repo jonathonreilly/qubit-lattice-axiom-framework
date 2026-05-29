@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py
-runner_sha256: 79bad7ad73284cb3824a03c5958446d87a7e4687ac9ad62a16dcdb8535baab5e
+runner_sha256: 9b09f3f1caf95ad21236b4008f656f5198cc3261526b9d149e68bb23ccda7060
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ================================================================================
@@ -26,6 +26,9 @@ status: ok
 
 === V2: Real-action exclusion of imaginary-plaquette slot ===
 
+  [PASS] V2.0a  Q_lat density (Tr U_P - Tr U_P^dag)/(2i) is REAL (= Im Tr U_P)  (max|Im of (z-zbar)/(2i)| = 0.00e+00)
+  [PASS] V2.0b  Lemma 2.3 three forms agree: i*theta*Im z = i*theta*(z-zbar)/(2i) = (theta/2)(z-zbar); S_theta is pure imaginary  (max form deviation = 0.00e+00; min|Im S_theta| = 1.6924e-02)
+  [PASS] V2.0c  Convention-switch guard: spurious 'extra-i' form i*theta*(z-zbar)/2 (= -theta*Im z) differs from S_theta  (min|S_theta - (extra-i form)| = 2.3934e-02  (the two are NOT the same quantity))
   [PASS] V2.1  theta = 0 yields real Boltzmann factor (control)  (max|Im exp(-i*0*Q)| = 0.00e+00)
   [PASS] V2  theta = 0.01: complex-phase rejection triggers  (max|Im exp(-i*theta*Q)| = 1.3500e-01)
   [PASS] V2  theta = 0.1: complex-phase rejection triggers  (max|Im exp(-i*theta*Q)| = 9.7661e-01)
@@ -34,6 +37,9 @@ status: ok
 
 === V3: Canonical-normalization continuum-limit decomposition ===
 
+  [PASS] V3.0a  Trace normalization: Tr((F^a T^a)^2) = (1/2) F^a F^a  [Tr(T^a T^b)=(1/2)delta]  (Tr((F^a T^a)^2) = 1.95186440, (1/2) F^a F^a = 1.95186440)
+  [PASS] V3.0b  Lemma 2.2 coefficient: (a^4/2 prefactor)*(1/2 trace-norm) = a^4/4 (NO extra 1/2)  ((1/2)*(1/2) = 0.25 -> coefficient of F^aF^a in (N_c - Re Tr U_P) is a^4 * 0.25 = a^4/4)
+  [PASS] V3.0c  Spurious-(1/2) form is excluded: correct ratio is F^aF^a, not (1/2)F^aF^a  (correct (N_c-Re)/(a^4/4) -> 3.903729 = F^aF^a;  buggy '(1/2)' form would give 1.951864 (rejected))
   [PASS] V3.1  Re Tr U_P leading-order coefficient matches F^a F^a (YM kinetic)  (a=0.02: (N_c - Re_z)/(a^4/4) = 3.903729, F^a F^a = 3.903729, rel.err = 6.02e-09)
   [PASS] V3.2  Im Tr U_P vanishes at order a^4 (CP-odd density appears at a^6)  (a=0.02: Im_z/a^4 = -7.4297e-06)
   [PASS] V3.3  Im Tr U_P / a^4 -> 0 as a -> 0 (consistent with leading O(a^6) CP-odd density)  (Im/a^4 at a=0.5: -4.6200e-03;  at a=0.02: -7.4297e-06)
@@ -47,6 +53,12 @@ status: ok
 
 === V5: Mass orientation — (C-det) + (C-class) two-constraint split ===
 
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
   [PASS] V5.1  (C-det):  (M-real) det(D + m I) is real-positive (phase ~= 0)  (max|phase| = 1.14e-16)
   [PASS] V5.2  (C-det):  (M-complex, alpha=pi/4) det(D + m e^{i pi/4} I) has NONZERO phase  (max|phase| = 1.6103)
   [PASS] V5.3  (C-class):  (M-real) is pure scalar (M_S != 0, M_P = 0)  (M_S = 1.0000+0.0000j, M_P = 0.0000+0.0000j)
@@ -89,7 +101,7 @@ GATE SUMMARY (8 verification gates):
   GATES: PASS = 8, FAIL = 0
 
 SUB-CHECK SUMMARY:
-  PASS = 33, FAIL = 0, runtime = 0.3s
+  PASS = 39, FAIL = 0, runtime = 0.2s
 ================================================================================
 
 ----- stderr -----

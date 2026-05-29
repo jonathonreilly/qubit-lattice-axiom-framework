@@ -1,0 +1,21 @@
+loop_slug: source-transverse-green-corrected-packet-20260529
+created: 2026-05-29
+base: origin/main
+branch: physics-loop/source-transverse-green-corrected-packet-20260529
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+active_route: corrected_source_resolved_transverse_green_boundary
+hard_residual: "Preserve the finite TOWARD/linear facts while blocking the stale positive transverse-over-same headline."
+files_touched:
+  - docs/SOURCE_RESOLVED_TRANSVERSE_GREEN_CORRECTED_BOUNDARY_NOTE_2026-05-29.md
+  - scripts/source_resolved_transverse_green_corrected_boundary_check.py
+open_imports: []
+new_axioms: []
+observed_target_values_used: false
+fitted_selectors_used: false
+trace_gate_classification: direct_blocker_closure
+review_loop_disposition: pending_reviewer
+audit_required_before_effective_status: true
+pr_status: ready_to_open
+next_exact_action: "Open draft PR for independent review/audit queue handling."
+stop_condition: "Science block packaged; continue to next opportunity after PR creation."

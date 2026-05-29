@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 597 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1184 |
+| unaudited | 1183 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 927 |
-| `audited_conditional` | 23 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1420 |
+| `unaudited` | 1419 |
 
 | claim_type | count |
 |---|---:|
@@ -1064,6 +1064,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3478,6 +3479,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact finite-k tangent recursion for the layer-normalized propagator gives dC/dM at M=0 negative for d<=2 and positive for d>=3 on the stated runner geometry.  _(class `C`)_
 - **chain closes:** True — The runner source implements the finite lattice propagator, normalized tangent recursion, centroid derivative, finite-difference check, and parent finite-M replay rather than merely printing constants. The conclusion closes only for the explicitly fixed runner geometry and stated potential family.
 - **rationale:** The load-bearing step is a direct finite-dimensional computation of the derivative of the stated runner update, with no WKB, eikonal, external comparator, or cross-note numerical import doing the sign work. The source code computes the derivative from the specified potential profile and propagator and cross-checks it by finite difference; expected signs are used only as checks, not as substituted derivative values. The note's remaining-wall language passes the bounded-wall gate because it explicitly confines the result to finite runner support and names distinct open routes without promoting them into impossibility claims.
+- **auditor confidence:** high
+
+### `dimension_selection_note`
+
+- **Note:** [`DIMENSION_SELECTION_NOTE.md`](../../docs/DIMENSION_SELECTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional lower-bound claim only: assuming the supplied analytic d-dimensional potentials and sign criterion, the note asserts the tested setup excludes d <= 2 for attractive gravity with linear mass dependence.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-dimension_selection_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The phase-coupling sign analysis says attractive deflection occurs only for decaying analytic d-dimensional potentials, so the tested self-consistency setup excludes d <= 2 and gives a lower bound d >= 3.  _(class `A`)_
+- **chain closes:** False — The restricted packet provides no cited authority or derivation for the analytic d-dimensional potentials and phase-coupling sign bridge. The runner source/stdout is also absent, so the numerical table cannot be independently verified from this packet.
+- **rationale:** Judging from the note text alone, the scoped result is explicitly conditional on hand-coded analytic potentials and a sign criterion that are admitted rather than derived. The unique d = 3 conclusion additionally depends on an admitted d <= 3 upper bound, so it is not closed by this packet. Because no runner source or stdout is included, the numerical lower-bound experiment is not verifiable here beyond the source note's narrative.
 - **auditor confidence:** high
 
 ### `dimensional_gravity_table`

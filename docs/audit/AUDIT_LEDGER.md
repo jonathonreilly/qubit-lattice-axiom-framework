@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 167 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 596 |
+| **retained_bounded** | 597 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1188 |
+| unaudited | 1187 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 23 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 926 |
+| `audited_clean` | 927 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1424 |
+| `unaudited` | 1423 |
 
 | claim_type | count |
 |---|---:|
@@ -1018,6 +1018,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `wave_retardation_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_retardation_lab_prediction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `wave_retarded_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_boundary_sensitivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_direct_probe_fine_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_fixed_beam_boundary_sensitivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -15007,6 +15008,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Both sweeps give numerically meaningful slopes, but neither is a true scaling exponent: the first is dominated by trajectory-range effects, the second is non-monotonic, so lab extrapolation by power law is invalid.  _(class `C`)_
 - **chain closes:** True — The cached runner exits successfully and reports different relative gaps at shared velocities across the range-coupled and trajectory-fixed sweeps, while the trajectory-fixed relative gaps run 151.45%, 9.40%, 7.10%, 3.81%, 10.25%, 21.14%, and 66.59%. Those completed outputs directly support the scoped no-go against a clean one-parameter v/c scaling card.
 - **rationale:** The runner source computes two sweeps using the wave-retardation harness rather than hard-coding the claimed non-monotonic pattern. The current cached output matches the note's load-bearing tables to rounding and shows both sweep-geometry dependence and a non-monotonic trajectory-fixed gap. This clean verdict is limited to blocking the naive lab scaling card from these sweeps; it does not rule out a later continuum-limit or redesigned-harness scaling theorem.
+- **auditor confidence:** high
+
+### `wave_retarded_gravity_note`
+
+- **Note:** [`WAVE_RETARDED_GRAVITY_NOTE.md`](../../docs/WAVE_RETARDED_GRAVITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** At H=0.5, NL=30, S=0.004, v/c=0.30, iz 6->0, and the three listed grown families, the provided runner computes a nonzero beam-deflection difference between the retarded moving-source wave field and the exact discrete Poisson c=infinity instantaneous comparator, with relative gaps 12.15%-16.51%; no finite-c sign law or continuum-stable magnitude is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-wave_retarded_gravity_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes M as the undamped moving-source wave evolution, I as the per-layer SOR discrete Poisson solve lap[f] = -src for the current source position, propagates the same beam through both, and finds delta_M - delta_I = +0.001163 on Fam1 and 12-17% relative gaps across Fam1/Fam2/Fam3.  _(class `C`)_
+- **chain closes:** True — The bridge theorem supplied in the packet identifies the discrete Poisson solve as the exact c=infinity comparator, and the runner source actually constructs that comparator by SOR rather than by importing or printing the contested result. The bounded numerical M-I existence claim follows from the completed runner output within the stated fixed-lattice scope.
+- **rationale:** The load-bearing computation is not a renaming or hard-coded numerical match: the source code builds the grown DAGs, evolves the wave field, solves the static Poisson slices, propagates amplitudes, and computes the reported deflections. All one-hop cited authorities in the packet have retained-grade effective statuses, and the formerly open c=infinity comparator identification is directly closed by the included bridge theorem. The clean verdict is limited to the bounded fixed-H existence-of-difference result and does not promote the withdrawn direction claim, lab scaling, or continuum magnitude.
 - **auditor confidence:** high
 
 ### `wave_static_boundary_sensitivity_note`

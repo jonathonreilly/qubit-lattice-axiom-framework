@@ -42301,14 +42301,14 @@
     },
     "assumption_derivation_ledger": {
       "claim_id": "assumption_derivation_ledger",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "rconn_derived_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad6a84ff591922e3322e5a14ea23d989f4010f639b19c61b700af1eb784c6d13",
+      "note_hash": "ee9e3b21f4968b43af33e1594029d9f6ec833e21bad638397c24f92951647c03",
       "path": "docs/ASSUMPTION_DERIVATION_LEDGER.md",
       "runner_path": null,
       "title": "Assumption / Derivation Ledger"
@@ -42490,14 +42490,14 @@
     },
     "audit_backlog_note_2026-05-02": {
       "claim_id": "audit_backlog_note_2026-05-02",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "left_handed_charge_matching_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
+      "note_hash": "e1ad218b34aca1121e32d1da2fa435fb781562745e04a1018beeb1590f84ecd6",
       "path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
       "title": "Audit-Backlog Retained Campaign \u2014 Progress Synthesis (Cycles 1-19)"
@@ -55994,10 +55994,10 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "049d83aa6a0fb7592c42d4e3734ea4ec0dc2fa0055fe93b23428e442bbe26580",
+      "note_hash": "8ae9f221de987b642c0fc7ec2df8b50aa185200628ab6260b414e49e89cdf292",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
-      "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction"
+      "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction (Formal Algebraic Lemma)"
     },
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17": {
       "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17",
@@ -87279,20 +87279,20 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 692,
+      "bounded_theorem": 691,
       "decoration": 1,
-      "meta": 195,
+      "meta": 197,
       "no_go": 86,
-      "none": 1411,
+      "none": 1410,
       "open_gate": 58,
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1093,
+      "bounded_theorem": 1092,
       "decoration": 1,
-      "meta": 195,
+      "meta": 197,
       "no_go": 189,
-      "none": 423,
+      "none": 422,
       "open_gate": 133,
       "positive_theorem": 580
     },

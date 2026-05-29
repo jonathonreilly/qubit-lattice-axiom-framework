@@ -9053,42 +9053,24 @@
       "verdict_rationale": null
     },
     "assumption_derivation_ledger": {
-      "audit_date": "2026-05-28T01:22:17.601215+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
-        },
-        "dep_claim_type": {
-          "rconn_derived_note": "no_go"
-        },
-        "dep_effective_status": {
-          "rconn_derived_note": "retained_no_go"
-        },
-        "deps": [
-          "rconn_derived_note"
-        ],
-        "load_bearing_score": 13.798,
-        "runner_hash": null,
-        "transitive_descendants": 889
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The exact R_conn repair closes only as F_adj=(3^2-1)/3^2=8/9 with the physical selector left conditional by the retained no-go dependency. The remaining ingredient status rows are not directly wired to retained-grade authorities in the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "assumption_derivation_ledger",
-      "claim_scope": "Bounded ledger-level bookkeeping surface: the file may be used as a roadmap of ingredient labels and authority pointers, with the R_conn row narrowed to exact F_adj=8/9 plus conditional physical selector language. It does not independently certify the listed package-wide statuses until each ingredient row is wired to a retained-grade one-hop authority.",
-      "claim_type": "bounded_theorem",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-28T01:22:17.601215+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "meta",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -9096,19 +9078,19 @@
         "rconn_derived_note"
       ],
       "direct_in_degree": 8,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "meta",
+      "effective_status_reason": "metadata",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "meta",
       "load_bearing_score": 13.822,
-      "load_bearing_step": "The ledger says every ingredient row is only a summary pointer to its named authority, while the only currently wired citation-graph edge is the R_conn/F_adj row to rconn_derived_note.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "ad6a84ff591922e3322e5a14ea23d989f4010f639b19c61b700af1eb784c6d13",
+      "note_hash": "ee9e3b21f4968b43af33e1594029d9f6ec833e21bad638397c24f92951647c03",
       "note_path": "docs/ASSUMPTION_DERIVATION_LEDGER.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: wire every non-R_conn ingredient row to its retained-grade authority note or split the ledger into metadata plus independently audited ingredient claims.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -9160,22 +9142,72 @@
             "total_pass": 0
           },
           "verdict_rationale": "This source is a status ledger, so its load-bearing operation is cross-note authority accounting rather than an equation proof. Under the restricted packet, all table rows other than the R_conn row are unsupported because their authorities are not declared one-hop dependencies. The Rconn dependency is retained-grade, but it explicitly says the exact 8/9 result remains F_adj support and that the physical EW-current selector kappa_EW = 0 is underdetermined; the ledger therefore overstates the authority when it calls `R_conn = 8/9` derived. A clean reduced claim would report F_adj = 8/9 as exact support and the 9/8 correction only as the connected-trace specialization, while wiring every other status row to direct retained-grade dependencies."
+        },
+        {
+          "archived_at": "2026-05-29T12:22:42.930760+00:00",
+          "archived_for_note_hash": "ad6a84ff591922e3322e5a14ea23d989f4010f639b19c61b700af1eb784c6d13",
+          "audit_date": "2026-05-28T01:22:17.601215+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+            },
+            "dep_claim_type": {
+              "rconn_derived_note": "no_go"
+            },
+            "dep_effective_status": {
+              "rconn_derived_note": "retained_no_go"
+            },
+            "deps": [
+              "rconn_derived_note"
+            ],
+            "load_bearing_score": 13.798,
+            "runner_hash": null,
+            "transitive_descendants": 889
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The exact R_conn repair closes only as F_adj=(3^2-1)/3^2=8/9 with the physical selector left conditional by the retained no-go dependency. The remaining ingredient status rows are not directly wired to retained-grade authorities in the restricted packet.",
+          "claim_scope": "Bounded ledger-level bookkeeping surface: the file may be used as a roadmap of ingredient labels and authority pointers, with the R_conn row narrowed to exact F_adj=8/9 plus conditional physical selector language. It does not independently certify the listed package-wide statuses until each ingredient row is wired to a retained-grade one-hop authority.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T01:22:17.601215+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The ledger says every ingredient row is only a summary pointer to its named authority, while the only currently wired citation-graph edge is the R_conn/F_adj row to rconn_derived_note.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: wire every non-R_conn ingredient row to its retained-grade authority note or split the ledger into metadata plus independently audited ingredient claims.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_fail": 0,
         "total_pass": 0
       },
       "runner_path": null,
       "title": "Assumption / Derivation Ledger",
       "transitive_descendants": 904,
-      "verdict_rationale": "Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency."
+      "verdict_rationale": null
     },
     "asymmetry_persistence_born_note": {
       "audit_date": "2026-05-29T06:20:39.109359+00:00",
@@ -10875,42 +10907,24 @@
       "verdict_rationale": "Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class D). Vote breakdown: J1: first / audited_clean / positive_theorem / class D; J2: first / audited_clean / positive_theorem / class D; J3: first / audited_clean / positive_theorem / class D; J4: first / audited_clean / positive_theorem / class D; J5: first / audited_clean / positive_theorem / class D. Majority rationale: J1: The source proves a scoped dependency-firewall theorem: direct alpha_EM(M_Z) substitution misses the textbook Rydberg scale by about 15%, and the repo still lacks retained m_e, alpha(0)/QED running, and the physical-unit atomic limit. That is a clean positive theorem about the current dependency boundary, with a load-bearing external comparator check, not a retained all-routes no-go. | J2: The source proves an exact current-state dependency firewall: direct alpha_EM(M_Z) substitution misses by 15.21%, while m_e, alpha(0)/QED running, and the physical-unit atomic limit remain unretained. That cleanly supports the positive theorem tuple without claiming hydrogen closure. | J3: The source proves a current-repo dependency firewall: direct alpha_EM(M_Z) substitution misses by about 15%, and retained m_e, alpha(0)/QED running, and the physical-unit NR limit are absent. That is a clean positive theorem about dependency status, with the load-bearing step in repo-state/dependency checks, not an exhaustive no-go theorem. | J4: The source proves a scoped dependency firewall: direct alpha_EM(M_Z) substitution misses the Rydberg scale by 15.21%, and current Lane 2 lacks retained m_e, alpha(0), and the physical-unit NR Coulomb bridge. That is clean as a positive dependency-accounting theorem with an external comparator/status load-bearing step, not a class-A algebraic no-go. | J5: The source proves a positive dependency-accounting theorem: in the current Lane 2 state, direct alpha_EM(M_Z) substitution is blocked unless m_e, alpha(0)/running, and the physical-unit atomic limit are retained. It explicitly leaves future closure open, so it is not a hard no_go. The runner closes this as D-class repo-state/dependency firewall evidence, not an A-class derivation."
     },
     "audit_backlog_note_2026-05-02": {
-      "audit_date": "2026-05-24T20:57:31.225995+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited."
-        },
-        "dep_claim_type": {
-          "left_handed_charge_matching_note": "decoration"
-        },
-        "dep_effective_status": {
-          "left_handed_charge_matching_note": "decoration_under_graph_first_su3_integration_note"
-        },
-        "deps": [
-          "left_handed_charge_matching_note"
-        ],
-        "load_bearing_score": 6.0,
-        "runner_hash": "fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826",
-        "transitive_descendants": 7
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205600Z-c2a4ee90-audit_backlog_note_2026--01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The restricted packet provides only one LHCM authority plus a runner that checks substrings in the synthesis note. It does not provide the cycle-level CLAIM_STATUS_CERTIFICATE.md files or retained convention/bridge authorities needed to verify the aggregate status claims.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "audit_backlog_note_2026-05-02",
-      "claim_scope": "Campaign-level aggregation of the 2026-05-02 audit-backlog cycles, including listed PRs, claimed status movement, open Nature-grade targets, and forbidden-import compliance.",
+      "claim_scope": null,
       "claim_type": "meta",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-24T20:57:31.225995+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -10918,23 +10932,20 @@
         "left_handed_charge_matching_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "meta",
+      "effective_status_reason": "metadata",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "meta",
       "load_bearing_score": 6.0,
-      "load_bearing_step": "The campaign synthesis asserts that cycles 1-19 have independently certified statuses and that these aggregate into LHCM exact-support movement, SM extension theorems, named obstructions, and status corrections.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
+      "note_hash": "e1ad218b34aca1121e32d1da2fa435fb781562745e04a1018beeb1590f84ecd6",
       "note_path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: include the 19 cycle-level CLAIM_STATUS_CERTIFICATE.md files and the convention/bridge authorities they rely on, or narrow this row to a purely textual campaign index.",
-      "open_dependency_paths": [
-        ".claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md",
-        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T16:08:17.632772+00:00",
@@ -11017,21 +11028,74 @@
             "total_pass": 47
           },
           "verdict_rationale": "The note is explicitly a campaign synthesis rather than a new derivation, so its load-bearing support is the existence and correctness of the individual cycle certificates. Those certificates are named but not included in the restricted packet, and the provided runner is a text-coverage checker only. The one included cited authority is retained_bounded at the packet header level, but its body also records conditional/open boundaries around normalization and downstream SM identification, which the synthesis itself acknowledges as governance/open-target dependencies."
+        },
+        {
+          "archived_at": "2026-05-29T12:22:43.105254+00:00",
+          "archived_for_note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
+          "audit_date": "2026-05-24T20:57:31.225995+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited."
+            },
+            "dep_claim_type": {
+              "left_handed_charge_matching_note": "decoration"
+            },
+            "dep_effective_status": {
+              "left_handed_charge_matching_note": "decoration_under_graph_first_su3_integration_note"
+            },
+            "deps": [
+              "left_handed_charge_matching_note"
+            ],
+            "load_bearing_score": 6.0,
+            "runner_hash": "fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826",
+            "transitive_descendants": 7
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205600Z-c2a4ee90-audit_backlog_note_2026--01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The restricted packet provides only one LHCM authority plus a runner that checks substrings in the synthesis note. It does not provide the cycle-level CLAIM_STATUS_CERTIFICATE.md files or retained convention/bridge authorities needed to verify the aggregate status claims.",
+          "claim_scope": "Campaign-level aggregation of the 2026-05-02 audit-backlog cycles, including listed PRs, claimed status movement, open Nature-grade targets, and forbidden-import compliance.",
+          "claim_type": "meta",
+          "claim_type_last_reviewed": "2026-05-24T20:57:31.225995+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The campaign synthesis asserts that cycles 1-19 have independently certified statuses and that these aggregate into LHCM exact-support movement, SM extension theorems, named obstructions, and status corrections.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: include the 19 cycle-level CLAIM_STATUS_CERTIFICATE.md files and the convention/bridge authorities they rely on, or narrow this row to a purely textual campaign index.",
+          "open_dependency_paths": [
+            ".claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md",
+            "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 47,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 47
+          },
+          "verdict_rationale": "The runner verifies that expected headings, PR numbers, lane names, and compliance phrases appear in the note; it does not verify the independent cycle certifications or the scientific status transitions. The provided LHCM authority is narrowed to a scale-free ratio and explicitly treats absolute normalization and SM hypercharge identification as convention/out-of-scope steps. Therefore the synthesis may be a useful index, but the broader status-movement claim does not close from the restricted packet."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 47,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 47
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
       "title": "Audit-Backlog Retained Campaign \u2014 Progress Synthesis (Cycles 1-19)",
       "transitive_descendants": 7,
-      "verdict_rationale": "The runner verifies that expected headings, PR numbers, lane names, and compliance phrases appear in the note; it does not verify the independent cycle certifications or the scientific status transitions. The provided LHCM authority is narrowed to a scale-free ratio and explicitly treats absolute normalization and SM hypercharge identification as convention/out-of-scope steps. Therefore the synthesis may be a useful index, but the broader status-movement claim does not close from the restricted packet."
+      "verdict_rationale": null
     },
     "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01": {
       "audit_date": null,
@@ -109395,46 +109459,24 @@
       "verdict_rationale": "The theorem is a genuine algebraic closure: temporal gauge makes each mixed plaquette depend only on the same spatial link on adjacent slices, so the mixed kernel factorizes, and central convolution diagonalizes on Peter-Weyl matrix coefficients with eigenvalue c_lambda/d_lambda. The marked/non-marked compression then follows by tensoring these one-link identities and dividing by the trivial-channel scalar. The runner is not a proof of the compact-group theorem because it checks finite Z_N cases, but it is consistent structural verification plus a useful negative control; the proof itself supplies the compact-group step through Schur orthogonality."
     },
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": {
-      "audit_date": "2026-05-28T03:47:16.321543+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
-          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Narrow finite structural-surface no-go only: on the runner's listed class-sector witness surface, the enumerated positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique beta=6 spatial-environment pair (S_6^env, eta_6) or a unique induced normalized three-sample datum. This does not audit any claim that the full beta=6 Wilson-parent/factorization/current-stack admissibility constraints fail, nor does it close explicit S_6^env, eta_6, rho_(p,q)(6), canonical P(6), or a global plaquette selector."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
-          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
-          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
-        ],
-        "load_bearing_score": 7.5,
-        "runner_hash": "331ebb0dc75ae7c63c0fc6ffba81d8e7c72881a2e407207993cfb85d220be55d",
-        "transitive_descendants": 63
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-beta6-evaluation-seam-reduction-20260528-r1",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The retained one-hop deps cover only the finite transfer witness packet and the finite structural-surface underdetermination no-go. The four authorities that make this an actual beta=6 matrix-element reduction remain required-but-unsupplied retained inputs, so the row cannot be retained as closed theorem authority.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
-      "claim_scope": "Conditional beta=6 plaquette PF seam reduction: if the full Wilson/Haar one-slab kernel theorem, full-slice rim-lift theorem, exact kernel/rim compression theorem, and exact compressed rim-evaluation theorem are supplied as retained premises, then the remaining seam reduces algebraically to matrix-element evaluation of the class-sector integral objects. This audit does not ratify those four authorities, explicit K_6^env or B_6(W) matrix elements, rho_(p,q)(6), plaquette PF data, analytic P(6), or an unconditional beta=6 evaluator closure.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-28T03:47:16.321543+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -109443,25 +109485,20 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 7.5,
-      "load_bearing_step": "The source's reduction is algebraic once the four full-scope Wilson/Haar kernel, rim-lift, compression, and compressed rim-evaluation premises are granted. The cached runner supports only the finite structural witness surface: rank(F)=3, restriction error 4.777e-15, two admissible beta-side witnesses with rho_gap=0.060847050322, and different normalized triples with max gap 0.121575423874. It does not derive the four full-scope premise authorities.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "049d83aa6a0fb7592c42d4e3734ea4ec0dc2fa0055fe93b23428e442bbe26580",
+      "note_hash": "8ae9f221de987b642c0fc7ec2df8b50aa185200628ab6260b414e49e89cdf292",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: Re-audit after retained one-hop authorities exist for the full Wilson/Haar one-slab kernel, full-slice rim-lift, exact kernel/rim compression, and exact compressed rim-evaluation laws, or after the note is narrowed further to a purely formal if-premises-then-algebra lemma that does not claim beta=6 seam closure authority. Do not cite this row as explicit rho_(p,q)(6), plaquette PF data, analytic P(6), or an unconditional evaluator.",
-      "open_dependency_paths": [
-        "full Wilson/Haar one-slab kernel theorem is not retained one-hop authority",
-        "full-slice rim-lift theorem is not retained one-hop authority",
-        "exact kernel/rim compression theorem is not retained one-hop authority",
-        "exact compressed rim-evaluation theorem is not retained one-hop authority"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-05T07:51:30.017686+00:00",
@@ -109564,22 +109601,81 @@
             "total_pass": 10
           },
           "verdict_rationale": "The note's main step is an algebraic reduction, not a first-principles computation. However, it depends on open or missing bridges: the full untruncated Wilson environment transfer identity and the exact one-slab/rim integral boundary inputs are not closed by the restricted packet. The included runner mostly checks finite structural witnesses, string-presence support in other repo notes, and three-sample operator facts; it does not evaluate or prove the physical K_6^env and B_6(W) integral matrix-element setup claimed here."
+        },
+        {
+          "archived_at": "2026-05-29T12:22:43.887729+00:00",
+          "archived_for_note_hash": "049d83aa6a0fb7592c42d4e3734ea4ec0dc2fa0055fe93b23428e442bbe26580",
+          "audit_date": "2026-05-28T03:47:16.321543+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+              "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Narrow finite structural-surface no-go only: on the runner's listed class-sector witness surface, the enumerated positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique beta=6 spatial-environment pair (S_6^env, eta_6) or a unique induced normalized three-sample datum. This does not audit any claim that the full beta=6 Wilson-parent/factorization/current-stack admissibility constraints fail, nor does it close explicit S_6^env, eta_6, rho_(p,q)(6), canonical P(6), or a global plaquette selector."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+              "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+              "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+              "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+            ],
+            "load_bearing_score": 7.5,
+            "runner_hash": "331ebb0dc75ae7c63c0fc6ffba81d8e7c72881a2e407207993cfb85d220be55d",
+            "transitive_descendants": 63
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-beta6-evaluation-seam-reduction-20260528-r1",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The retained one-hop deps cover only the finite transfer witness packet and the finite structural-surface underdetermination no-go. The four authorities that make this an actual beta=6 matrix-element reduction remain required-but-unsupplied retained inputs, so the row cannot be retained as closed theorem authority.",
+          "claim_scope": "Conditional beta=6 plaquette PF seam reduction: if the full Wilson/Haar one-slab kernel theorem, full-slice rim-lift theorem, exact kernel/rim compression theorem, and exact compressed rim-evaluation theorem are supplied as retained premises, then the remaining seam reduces algebraically to matrix-element evaluation of the class-sector integral objects. This audit does not ratify those four authorities, explicit K_6^env or B_6(W) matrix elements, rho_(p,q)(6), plaquette PF data, analytic P(6), or an unconditional beta=6 evaluator closure.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T03:47:16.321543+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The source's reduction is algebraic once the four full-scope Wilson/Haar kernel, rim-lift, compression, and compressed rim-evaluation premises are granted. The cached runner supports only the finite structural witness surface: rank(F)=3, restriction error 4.777e-15, two admissible beta-side witnesses with rho_gap=0.060847050322, and different normalized triples with max gap 0.121575423874. It does not derive the four full-scope premise authorities.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: Re-audit after retained one-hop authorities exist for the full Wilson/Haar one-slab kernel, full-slice rim-lift, exact kernel/rim compression, and exact compressed rim-evaluation laws, or after the note is narrowed further to a purely formal if-premises-then-algebra lemma that does not claim beta=6 seam closure authority. Do not cite this row as explicit rho_(p,q)(6), plaquette PF data, analytic P(6), or an unconditional evaluator.",
+          "open_dependency_paths": [
+            "full Wilson/Haar one-slab kernel theorem is not retained one-hop authority",
+            "full-slice rim-lift theorem is not retained one-hop authority",
+            "exact kernel/rim compression theorem is not retained one-hop authority",
+            "exact compressed rim-evaluation theorem is not retained one-hop authority"
+          ],
+          "runner_check_breakdown": {
+            "A": 1,
+            "B": 5,
+            "C": 5,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 11
+          },
+          "verdict_rationale": "The narrowed source is honest, but the audit verdict remains conditional. The bounded-wall discipline gate passes only for the conditional reduction: N1/N2 identify the four missing full-scope authorities, N3 names them as the hidden wall set rather than treating them as retained facts, and N7 concedes that retained-bounded transfer support plus the runner only support the conditional version. The runner is relevant evidence that the current finite structural surface still leaves a beta-side vector open; it is not a proof of the full Wilson/Haar one-slab kernel, full rim lift, untruncated compression, or compressed rim-evaluation identities. Therefore the correct handoff is missing_bridge_theorem, not audited_clean."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 1,
-        "B": 5,
-        "C": 5,
+        "A": 0,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_fail": 0,
-        "total_pass": 11
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
-      "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction",
+      "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction (Formal Algebraic Lemma)",
       "transitive_descendants": 63,
-      "verdict_rationale": "The narrowed source is honest, but the audit verdict remains conditional. The bounded-wall discipline gate passes only for the conditional reduction: N1/N2 identify the four missing full-scope authorities, N3 names them as the hidden wall set rather than treating them as retained facts, and N7 concedes that retained-bounded transfer support plus the runner only support the conditional version. The runner is relevant evidence that the current finite structural surface still leaves a beta-side vector open; it is not a proof of the full Wilson/Haar one-slab kernel, full rim lift, untruncated compression, or compressed rim-evaluation identities. Therefore the correct handoff is missing_bridge_theorem, not audited_clean."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17": {
       "audit_date": null,
@@ -325361,8 +325457,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2454,
-    "re_audit_required": 2,
+    "preserved_existing": 2453,
+    "re_audit_required": 3,
     "row_count": 2500,
     "seeded_new": 0
   }

@@ -1,0 +1,104 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py
+runner_sha256: fb8cccd762904bd0996a31c8aa29a7fb9f99a3e08e832f6ad4ceef2dd6b1b094
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.47
+status: ok
+----- stdout -----
+==============================================================================
+FS ROTATION-EXCHANGE DISCRETE-INSUFFICIENCY -- audit companion
+on-site 2pi=-1 sign is NOT the discriminator; cross-site relation is
+==============================================================================
+
+------------------------------------------------------------------------------
+(1) on-site spinor 2pi rotation U_2pi = exp(2 pi i S_3) acts as -I_2
+------------------------------------------------------------------------------
+  [PASS] U_2pi = exp(2 pi i sigma_3/2) = -I_2 (on a single site)  (U_2pi = (-1)*I_2)
+  [PASS] U_4pi = exp(4 pi i sigma_3/2) = +I_2 (2O double-cover: 4pi -> +1)
+
+------------------------------------------------------------------------------
+(2) two-site exchange P (tensor swap): +1 on symmetric, -1 on antisymmetric
+------------------------------------------------------------------------------
+  [PASS] P^2 = I_4 (P is an involution / element of S_2)
+  [PASS] P (|00>) = +|00>  (symmetric, +1)
+  [PASS] P (|11>) = +|11>  (symmetric, +1)
+  [PASS] P (|01>+|10>) = +(...)  (symmetric, +1)
+  [PASS] P (|01>-|10>) = -(...)  (ANTIsymmetric, -1)
+  [PASS] P spectrum = {+1 (mult 3), -1 (mult 1)}  (eigenvals = {1: 3, -1: 1})
+
+------------------------------------------------------------------------------
+(3) bridge gap: the on-site 2pi sign carries NO two-site-exchange info
+------------------------------------------------------------------------------
+  [PASS] U_2pi (x) I = -I_4 (left-site 2pi rotation is a global sign)  (= (-1)*I_4)
+  [PASS] I (x) U_2pi = -I_4 (right-site 2pi rotation is a global sign)  (= (-1)*I_4)
+  [PASS] U_2pi (x) I == I (x) U_2pi (both the SAME scalar -I_4)
+  [PASS] on-site 2pi acts as -1 on the SYMMETRIC sector (same as antisym)
+  [PASS] on-site 2pi acts as -1 on the ANTISYMMETRIC sector (same as sym)
+  [PASS] P is NOT a scalar matrix (it separates sym from antisym)
+  [PASS] algebra <U_2pi(x)I, I(x)U_2pi> = scalars only (complex dim 1)  (dim = 1)
+  [PASS] no element of <on-site 2pi rotations> equals P (scalars cannot equal the non-scalar exchange)
+
+------------------------------------------------------------------------------
+(4) hard-core boson: bare ladders COMMUTE across sites (bosonic/ungraded)
+------------------------------------------------------------------------------
+  [PASS] [sigma_+ (x) I, I (x) sigma_+] = 0 (commute at separation -> BOSONIC)
+  [PASS] [sigma_+ (x) I, I (x) sigma_-] = 0 (commute at separation)
+  [PASS] {sigma_+ (x) I, I (x) sigma_+} != 0 (they do NOT anticommute)
+  [PASS] on-site nilpotent (sigma_+)^2 = 0 (per-site Fock dim 2 -> spin-1/2)
+  [PASS] hard-core boson site sees the SAME on-site U_2pi = -I_2 (spin-1/2 + 2pi=-1, yet BOSONIC)
+
+------------------------------------------------------------------------------
+(5) Jordan-Wigner dressed ladders ANTICOMMUTE across sites (fermionic/CAR)
+------------------------------------------------------------------------------
+  [PASS] {c_0, c_1} = 0 (cross-site CAR -> FERMIONIC)
+  [PASS] {c_0, c_1^dag} = 0 (x != y)
+  [PASS] {c_1, c_0^dag} = 0 (x != y)
+  [PASS] on-site {c_0, c_0^dag} = I_4
+  [PASS] on-site (c_0)^2 = 0
+  [PASS] on-site (c_1)^2 = 0
+
+------------------------------------------------------------------------------
+(6) hard-core-boson and JW-fermion generators span the SAME algebra M_4(C)
+------------------------------------------------------------------------------
+  [PASS] hard-core-boson algebra <sigma_+(x)I, sigma_3(x)I, I(x)sigma_+, I(x)sigma_3> = M_4(C) (complex dim 16)  (dim = 16)
+  [PASS] JW-fermion algebra <c_0, c_1> = M_4(C) (complex dim 16)  (dim = 16)
+  [PASS] both frames live on the SAME algebra (16 = dim End(C^4)) -> the discriminator is the cross-site relation, NOT the on-site sign
+
+==============================================================================
+VERDICT
+==============================================================================
+  THE ROTATION-EXCHANGE ROUTE DOES NOT CLOSE FS FROM RETAINED INPUTS.
+  (1) The on-site spinor 2pi rotation U_2pi = exp(2 pi i S_3) = -I_2 is a
+      single-site element of the on-site SU(2); lifted to two sites it is
+      the SAME global scalar -I_4 on the left or right factor.
+  (2) Two-site EXCHANGE is the tensor swap P (an element of S_2 subset
+      U(4)): +1 on the symmetric sector, -1 on the antisymmetric sector.
+  (3) BRIDGE GAP: the on-site 2pi rotation generates only scalars (dim 1),
+      acts as -1 on BOTH the symmetric and antisymmetric sectors, and
+      therefore cannot equal the non-scalar P.  Nothing connects the
+      on-site rotation sign to the two-site exchange operator.  The
+      Finkelstein-Rubinstein engine that would identify them lives in the
+      pi_1 of a CONTINUOUS configuration space, which the bare discrete
+      site set does not supply.
+  (4) The HARD-CORE BOSON shares every premise (spin-1/2, dim-2, same
+      on-site 2pi = -1 sign, on-site nilpotent) yet is BOSONIC: its bare
+      ladders COMMUTE at separation.  'spin-1/2 + 2pi=-1 => fermion'
+      proves too much.
+  (5) JW-dressing makes the SAME ladders ANTICOMMUTE (cross-site CAR).
+  (6) Both frames span the SAME full algebra M_4(C); the ONLY difference
+      is the cross-site (anti)commutator = GRADED LOCALITY, which is not
+      in the retained set.
+
+  Honest scope: this prunes the rotation-exchange ROUTE from the retained
+  inputs; it does NOT foreclose FS absolutely.  Two named future-closure
+  paths remain OPEN: (a) a lattice-native discrete-homotopy / graph-braid
+  pi_1 construction; (b) a graded-locality / fermion-parity-superselection
+  principle.  FS remains an admission candidate on the discrete substrate,
+  'unsolved / needs-new-structure', not 'impossible'.
+
+==============================================================================
+PASS=30 FAIL=0
+
+----- stderr -----
+

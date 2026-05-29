@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 246,
     "high": 315,
-    "leaf": 330,
+    "leaf": 331,
     "medium": 305
   },
   "cycle_break_target_count": 1,
@@ -27111,6 +27111,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -36143,6 +36168,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 58,
-  "total_pending": 1196
+  "ready_count": 59,
+  "total_pending": 1197
 }

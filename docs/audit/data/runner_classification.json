@@ -8220,6 +8220,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py"
     },
+    "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28": {
+      "assert_count": 2,
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py"
+    },
     "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03": {
       "assert_count": 2,
       "counts": {
@@ -27900,6 +27912,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_fs_rotation_exchange_discrete_insufficiency_2026_05_28.py": {
+      "assert_count": 2,
+      "claims": [
+        "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py": {
@@ -57823,14 +57850,14 @@
   "stats": {
     "decoration_candidates": 357,
     "dominant_class_distribution": {
-      "A": 266,
+      "A": 267,
       "B": 294,
       "C": 773,
       "D": 308,
       "none": 444
     },
-    "runners_classified": 2085,
+    "runners_classified": 2086,
     "runners_with_C": 1016,
-    "runners_with_D": 617
+    "runners_with_D": 618
   }
 }

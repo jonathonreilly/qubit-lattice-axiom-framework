@@ -166123,13 +166123,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.629,
+      "load_bearing_score": 11.15,
       "load_bearing_step": "The runner cache and direct rerun report lambda(k)/|k|^2 -> 1 on axis and diagonal small-k tests, continuum flux exactly 1.0 for 1/(4*pi*r), and axis residuals 2.658444e-07, 8.302321e-09, 2.594066e-10, 8.106139e-12 at r=16,32,64,128 with scaled r^5 coefficients tending to 0.27852, then prints CERTIFICATE PASS for the 1/(4*pi*r) normalization.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -166235,7 +166235,7 @@
       },
       "runner_path": "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
       "title": "`Z^3` Lattice Green's Function Asymptotic Normalization \u2014 Framework-Applied Certificate",
-      "transitive_descendants": 69,
+      "transitive_descendants": 70,
       "verdict_rationale": "The claim closes at bounded-theorem grade for the stated operator convention. Independently, expanding 6-2(cos kx+cos ky+cos kz) gives |k|^2-(kx^4+ky^4+kz^4)/12+O(|k|^6), so the singular Fourier part has the continuum Poisson normalization. The unit-flux check fixes the constant as 1/(4*pi*r), and applying the exact lattice stencil to 1/(4*pi*r) on axis gives a residual with r^5 scaling tending to 7/(8*pi), matching the runner values. The source does not use Maradudin/Spitzer/Lawler as a hidden accepted premise and explicitly excludes downstream Newton or gravity closure."
     },
     "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27": {
@@ -222829,7 +222829,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "fc0d3f9e616dec43d0c871be1c1d332ae3aec78151e3d1b8e0191e4b4240643d",
+      "note_hash": "b442cb6864ca9553cbd9f25bb40706d266f08a91b13330801df8a009992c236b",
       "note_path": "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -298371,6 +298371,59 @@
       "transitive_descendants": 157,
       "verdict_rationale": "The runner source performs actual numerical evolution of the stated second-order stencil and propagates amplitudes through the generated field; it does not merely print constants or import the contested results. The static, F~M, Born, null, gravity-sign, and retardation outputs are computed internally from the specified finite lattice setup. The clean verdict is bounded to this runner-level numerical theorem, not to broader physical equivalence with GR or untested multi-source/backreaction claims."
     },
+    "wave_poisson_cinf_bridge_theorem_note_2026-05-28": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "wave_poisson_cinf_bridge_theorem_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 6.115,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
+      "note_hash": "78f0a9c1e081936aa19fd4ecda580f70e8edf924758d01360f25efadf2dda67d",
+      "note_path": "docs/WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/wave_poisson_cinf_bridge_theorem.py",
+      "title": "Discrete Poisson Solve = Exact c=\u221e Instantaneous Field (Bridge Theorem)",
+      "transitive_descendants": 48,
+      "verdict_rationale": null
+    },
     "wave_radiation_note": {
       "audit_date": "2026-05-05T12:08:50.836083+00:00",
       "audit_state_snapshot": {
@@ -298870,62 +298923,29 @@
       "verdict_rationale": "The runner source computes two sweeps using the wave-retardation harness rather than hard-coding the claimed non-monotonic pattern. The current cached output matches the note's load-bearing tables to rounding and shows both sweep-geometry dependence and a non-monotonic trajectory-fixed gap. This clean verdict is limited to blocking the naive lab scaling card from these sweeps; it does not rule out a later continuum-limit or redesigned-harness scaling theorem."
     },
     "wave_retarded_gravity_note": {
-      "audit_date": "2026-05-28T04:16:14.295762+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "kubo_continuum_limit_note": "For the specified Fam1 grown-DAG static 1/r-field harness at H = 0.50, 0.35, 0.25, the cached runner computes kubo_true = 7.061910, 5.972756, 5.986043, with 0.2% last-step drift under the runner's 5% criterion.",
-          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited.",
-          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
-          "wave_retardation_continuum_limit_note": "Finite H-refinement battery showing that the tested retarded-vs-c-infinity magnitude gaps are not converged for cached-static, equilibrated-static, or imposed-Newton comparators at H = 0.5, 0.35, 0.25, while dM is comparatively stable.",
-          "wave_retardation_lab_prediction_note": "The two cached wave-retardation velocity sweeps block a clean single v/c lab-scaling card because the measured M-I gap changes with sweep design and is non-monotonic in the trajectory-fixed sweep."
-        },
-        "dep_claim_type": {
-          "kubo_continuum_limit_note": "bounded_theorem",
-          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
-          "linear_response_true_kubo_note": "bounded_theorem",
-          "wave_retardation_continuum_limit_note": "bounded_theorem",
-          "wave_retardation_lab_prediction_note": "no_go"
-        },
-        "dep_effective_status": {
-          "kubo_continuum_limit_note": "retained_bounded",
-          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
-          "linear_response_true_kubo_note": "retained_bounded",
-          "wave_retardation_continuum_limit_note": "retained_bounded",
-          "wave_retardation_lab_prediction_note": "retained_no_go"
-        },
-        "deps": [
-          "kubo_continuum_limit_note",
-          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-          "linear_response_true_kubo_note",
-          "wave_retardation_continuum_limit_note",
-          "wave_retardation_lab_prediction_note"
-        ],
-        "load_bearing_score": 6.085,
-        "runner_hash": "3f622973b524ab533c50737d5784d183dd05543a02456941c98f3231556a08e1",
-        "transitive_descendants": 47
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-wave-retarded-gravity-20260528-r1",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The finite M-vs-stitched-I computation closes on the cached runner surface, but the source's stronger reading of I as the exact c=infinity instantaneous comparator remains a named conditional input. The one-hop continuum and lab-retardation authorities explicitly bound or block stronger continuum-stable magnitude and lab-scaling interpretations.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "wave_retarded_gravity_note",
-      "claim_scope": "Bounded finite-runner result at H=0.5, NL=30, v/c=0.30, S=0.004, K=5.0, and the three listed grown geometries: the cached runner computes a nonzero gap between the retarded moving-source wave field M and the stitched late-time static-slice comparator I, with relative M-I gaps of 22.53% to 26.05%, while F~M, Born, and null diagnostics remain acceptable on the tested surface. This does not audit the stitched comparator as the exact physical c=infinity/instantaneous limit, a continuum-stable retardation magnitude, lab scaling, orbital motion, or strong-field/backreaction behavior.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-28T04:16:14.295762+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
+        "wave_poisson_cinf_bridge_theorem_note_2026-05-28",
         "linear_response_true_kubo_note",
         "wave_retardation_continuum_limit_note",
         "wave_retardation_lab_prediction_note",
@@ -298933,19 +298953,19 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 6.085,
-      "load_bearing_step": "The runner compares the retarded moving-source field M against a layer-by-layer stitched late-time static-slice comparator I and finds M-I gaps of order 23-26% across three geometries.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "eb79689fa019da65c8630b2339022222f5ff34bfa0563e32778ca5f162fd2699",
+      "note_hash": "28dd533dd2f7efe01e7461a53be649e17d1df0f2313ed2ed8fb329b5602b344a",
       "note_path": "docs/WAVE_RETARDED_GRAVITY_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a direct discrete static-solve or analytic discrete Green-function proof that the stitched late-time static slices are the exact c=infinity comparator for this finite wave-equation/beam operator, and keep any continuum or lab-scaling claim split into separate certified rows.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -299119,22 +299139,88 @@
             "total_pass": 1
           },
           "verdict_rationale": "The fixed-harness numerical claim is supported by a deterministic runner whose code constructs the moving retarded field, constructs the stitched comparator, propagates the beam, and reproduces the note's table. However, the source note itself flags the c=infinity comparator identification as conditional, and the one-hop continuum authority explicitly reports comparator instability and calls the exact discrete static comparator unresolved. Thus the audited result is only a bounded fixed-H M != I result for the implemented comparator, not a closed physical c=infinity retardation theorem."
+        },
+        {
+          "archived_at": "2026-05-29T00:39:59.130308+00:00",
+          "archived_for_note_hash": "eb79689fa019da65c8630b2339022222f5ff34bfa0563e32778ca5f162fd2699",
+          "audit_date": "2026-05-28T04:16:14.295762+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "kubo_continuum_limit_note": "For the specified Fam1 grown-DAG static 1/r-field harness at H = 0.50, 0.35, 0.25, the cached runner computes kubo_true = 7.061910, 5.972756, 5.986043, with 0.2% last-step drift under the runner's 5% criterion.",
+              "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited.",
+              "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
+              "wave_retardation_continuum_limit_note": "Finite H-refinement battery showing that the tested retarded-vs-c-infinity magnitude gaps are not converged for cached-static, equilibrated-static, or imposed-Newton comparators at H = 0.5, 0.35, 0.25, while dM is comparatively stable.",
+              "wave_retardation_lab_prediction_note": "The two cached wave-retardation velocity sweeps block a clean single v/c lab-scaling card because the measured M-I gap changes with sweep design and is non-monotonic in the trajectory-fixed sweep."
+            },
+            "dep_claim_type": {
+              "kubo_continuum_limit_note": "bounded_theorem",
+              "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+              "linear_response_true_kubo_note": "bounded_theorem",
+              "wave_retardation_continuum_limit_note": "bounded_theorem",
+              "wave_retardation_lab_prediction_note": "no_go"
+            },
+            "dep_effective_status": {
+              "kubo_continuum_limit_note": "retained_bounded",
+              "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+              "linear_response_true_kubo_note": "retained_bounded",
+              "wave_retardation_continuum_limit_note": "retained_bounded",
+              "wave_retardation_lab_prediction_note": "retained_no_go"
+            },
+            "deps": [
+              "kubo_continuum_limit_note",
+              "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+              "linear_response_true_kubo_note",
+              "wave_retardation_continuum_limit_note",
+              "wave_retardation_lab_prediction_note"
+            ],
+            "load_bearing_score": 6.085,
+            "runner_hash": "3f622973b524ab533c50737d5784d183dd05543a02456941c98f3231556a08e1",
+            "transitive_descendants": 47
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-wave-retarded-gravity-20260528-r1",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The finite M-vs-stitched-I computation closes on the cached runner surface, but the source's stronger reading of I as the exact c=infinity instantaneous comparator remains a named conditional input. The one-hop continuum and lab-retardation authorities explicitly bound or block stronger continuum-stable magnitude and lab-scaling interpretations.",
+          "claim_scope": "Bounded finite-runner result at H=0.5, NL=30, v/c=0.30, S=0.004, K=5.0, and the three listed grown geometries: the cached runner computes a nonzero gap between the retarded moving-source wave field M and the stitched late-time static-slice comparator I, with relative M-I gaps of 22.53% to 26.05%, while F~M, Born, and null diagnostics remain acceptable on the tested surface. This does not audit the stitched comparator as the exact physical c=infinity/instantaneous limit, a continuum-stable retardation magnitude, lab scaling, orbital motion, or strong-field/backreaction behavior.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T04:16:14.295762+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The runner compares the retarded moving-source field M against a layer-by-layer stitched late-time static-slice comparator I and finds M-I gaps of order 23-26% across three geometries.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add a direct discrete static-solve or analytic discrete Green-function proof that the stitched late-time static slices are the exact c=infinity comparator for this finite wave-equation/beam operator, and keep any continuum or lab-scaling claim split into separate certified rows.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 7,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "The runner source genuinely constructs moving-source wave histories, stitched static-slice comparator histories, beam propagation, family portability, F~M, Born, and null diagnostics; the cached output reports the same M-I gaps and support diagnostics as the note. Direct dependencies are retained-grade, but they do not eliminate the source's own caveat that identifying the stitched late-time static slices with the exact c=infinity comparator is a conditional input. The continuum-limit dependency also says the retardation magnitude is comparator-dominated and not converged, while the lab-prediction dependency blocks simple v/c scaling. The row therefore audits as conditional bounded support for a finite M-vs-stitched-comparator gap, not clean physical instantaneous-retardation closure."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 7,
+        "C": 0,
         "D": 0,
-        "total_fail": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/wave_retarded_gravity.py",
       "title": "Wave Retarded Gravity: Retarded \u2260 Instantaneous on the Wave Field",
       "transitive_descendants": 47,
-      "verdict_rationale": "The runner source genuinely constructs moving-source wave histories, stitched static-slice comparator histories, beam propagation, family portability, F~M, Born, and null diagnostics; the cached output reports the same M-I gaps and support diagnostics as the note. Direct dependencies are retained-grade, but they do not eliminate the source's own caveat that identifying the stitched late-time static slices with the exact c=infinity comparator is a conditional input. The continuum-limit dependency also says the retardation magnitude is comparator-dominated and not converged, while the lab-prediction dependency blocks simple v/c scaling. The row therefore audits as conditional bounded support for a finite M-vs-stitched-comparator gap, not clean physical instantaneous-retardation closure."
+      "verdict_rationale": null
     },
     "wave_static_boundary_sensitivity_note": {
       "audit_date": "2026-05-11T22:57:20.232607+00:00",
@@ -320114,8 +320200,8 @@
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
     "preserved_existing": 2450,
-    "re_audit_required": 0,
-    "row_count": 2495,
+    "re_audit_required": 1,
+    "row_count": 2496,
     "seeded_new": 1
   }
 }

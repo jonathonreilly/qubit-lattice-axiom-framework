@@ -6,19 +6,26 @@ the discrete wave equation (x = time, c = 1 cell/dt). Propagate the
 beam through the resulting time-dependent field and measure detector
 deflection.
 
-Decisive test:
-  Compare moving-source deflection against three frozen references:
-    A. frozen at z_start (initial position)
-    B. frozen at z_end (final position)
-    C. frozen at z_mid (instantaneous-average position)
-  Newton: deflection should match B (the "current" position when the
-          beam crosses).
-  Retarded (finite c): deflection should be closer to A or to a
-          retarded-time average, NOT to B.
+Decisive test (existence-of-difference):
+  Compare the retarded moving-source field M against the EXACT c=infinity
+  instantaneous comparator I = the discrete static Poisson solve lap[f]=-src
+  for the current source position (the unique c=infinity fixed point of the
+  wave operator; see docs/WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md).
+  Three frozen references (A/B/C) are kept only as intuition aids.
+
+  Reading: M != I demonstrates a finite-lattice difference between the
+  retarded field and the instantaneous c=infinity field at the tested
+  (H, v/c). NOTE: the SIGN of M-I is configuration-dependent (positive for
+  the large source displacement used here, crossing zero for small motion),
+  so this runner asserts existence-of-difference, NOT a config-independent
+  "retarded is smaller/larger" finite-c direction. (A prior version compared
+  against an undamped frozen-source late-time snapshot, which never settles
+  and is ~33-38% off the true static field; that comparator overshot and
+  produced a spurious sign. Corrected 2026-05-28.)
 
 Tests:
   1. Static reference: v=0 should reproduce wave_equation_self_field static
-  2. Moving source (v>0) deflection vs frozen-A / frozen-B / frozen-C
+  2. Moving source (v>0) deflection: M (retarded) vs I (c=infinity Poisson)
   3. f-symmetry: +v vs -v
   4. F~M holds on moving-source field
   5. Born preserved on moving-source field
@@ -208,14 +215,60 @@ def _moving(iz_start, v_cells_per_layer):
     return lambda t: iz_start + int(round(v_cells_per_layer * (t - src_layer_start)))
 
 
-def _make_instantaneous(s, iz_of_t):
-    """Build a stitched 'instantaneous' field history.
+def _solve_poisson_static(strength, iz_now, omega=1.8, tol=1e-11, max_iter=20000):
+    """Exact discrete c=infinity instantaneous field: the static Poisson solve.
 
-    At each layer t, the field everywhere on that layer is set to the
-    LATE-TIME stationary slice of a static solve with the source frozen
-    at iz_of_t(t). This is the comparator that says: what if the field
-    everywhere always tracked the CURRENT source position with no
-    propagation delay? It is the c=infinity limit of the wave equation.
+    The undamped leapfrog update f_next = 2 f_curr - f_prev + h2 (lap + src)
+    has a unique time-independent fixed point given by setting the second
+    time-difference to zero: lap[f*] = -src (Dirichlet f*=0 on the boundary).
+    f* is the EXACT c=infinity instantaneous field of this operator (it is
+    c-independent: h2 divides out of the fixed-point equation), proved in
+    docs/WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md.
+
+    Solved here by successive over-relaxation (SOR) of
+        f[iy][iz] = (1-omega) f + omega * 0.25 (neighbors + src),
+    which converges to f* (the discrete Dirichlet Laplacian is negative
+    definite). This replaces the previous comparator, which used a single
+    LATE-TIME slice of the *undamped* frozen-source evolution; that snapshot
+    never settles (each mode rings as 1-cos(omega_k t)) and is ~33-38% off
+    f*, so it was not the c=infinity field. See the bridge-theorem note.
+    """
+    hw = int(PW / H)
+    nw = 2 * hw + 1
+    sy = 0 + nw // 2
+    sz = iz_now + nw // 2
+    f = [[0.0] * nw for _ in range(nw)]
+    for _ in range(max_iter):
+        max_delta = 0.0
+        for iy in range(1, nw - 1):
+            row = f[iy]
+            up = f[iy - 1]
+            dn = f[iy + 1]
+            for iz in range(1, nw - 1):
+                src = strength if (iy == sy and iz == sz) else 0.0
+                new = 0.25 * (up[iz] + dn[iz] + row[iz - 1] + row[iz + 1] + src)
+                old = row[iz]
+                val = old + omega * (new - old)
+                d = val - old
+                if d < 0:
+                    d = -d
+                if d > max_delta:
+                    max_delta = d
+                row[iz] = val
+        if max_delta < tol:
+            break
+    return f
+
+
+def _make_instantaneous(s, iz_of_t):
+    """Build a stitched instantaneous (c=infinity) field history.
+
+    At each layer t, the field everywhere on that layer is set to the EXACT
+    discrete static (Poisson) solve for the source frozen at iz_of_t(t) --
+    the unique c=infinity fixed point lap[f*]=-src of the wave operator
+    (docs/WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md). This is the
+    field that everywhere instantaneously tracks the CURRENT source position
+    with no propagation delay. Static slices are cached per source position.
     """
     hw = int(PW / H)
     nw = 2 * hw + 1
@@ -227,8 +280,7 @@ def _make_instantaneous(s, iz_of_t):
             continue
         iz_now = iz_of_t(t)
         if iz_now not in cache:
-            full = _solve_wave_moving(s, src_layer_start, _frozen(iz_now))
-            cache[iz_now] = [row[:] for row in full[NL - 1]]
+            cache[iz_now] = _solve_poisson_static(s, iz_now)
         history[t] = [row[:] for row in cache[iz_now]]
     return history
 
@@ -291,9 +343,10 @@ def main():
     rel_MI = abs(diff_MI) / max(abs(delta_M), abs(delta_I), 1e-12)
     print(f"\n  decisive: M - I = {diff_MI:+.6f}  (relative {rel_MI:.2%})")
     if rel_MI > 0.05:
-        verdict = "RETARDED != INSTANTANEOUS — finite-c effect resolved"
+        verdict = ("RETARDED != INSTANTANEOUS(c=inf Poisson) — existence-of-difference "
+                   "at this config (sign is config-dependent, not a finite-c direction)")
     else:
-        verdict = "RETARDED ~= INSTANTANEOUS — finite-c effect unresolved at this v/c"
+        verdict = "RETARDED ~= INSTANTANEOUS(c=inf Poisson) — no resolved difference at this config"
     print(f"  verdict: {verdict}")
 
     # 3. v-symmetry: +v vs -v

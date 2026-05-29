@@ -24492,6 +24492,18 @@
       "dominant_class": null,
       "runner": "scripts/wave_equation_self_field.py"
     },
+    "wave_poisson_cinf_bridge_theorem_note_2026-05-28": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 6
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/wave_poisson_cinf_bridge_theorem.py"
+    },
     "wave_radiation_note": {
       "assert_count": 0,
       "counts": {
@@ -24534,7 +24546,7 @@
         "A": 0,
         "B": 0,
         "C": 0,
-        "D": 2
+        "D": 4
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -57385,6 +57397,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/wave_poisson_cinf_bridge_theorem.py": {
+      "assert_count": 0,
+      "claims": [
+        "wave_poisson_cinf_bridge_theorem_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 6
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/wave_radiation.py": {
       "assert_count": 0,
       "claims": [
@@ -57439,7 +57466,7 @@
         "A": 0,
         "B": 0,
         "C": 0,
-        "D": 2
+        "D": 4
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -57663,12 +57690,12 @@
     "dominant_class_distribution": {
       "A": 264,
       "B": 294,
-      "C": 769,
+      "C": 770,
       "D": 308,
       "none": 444
     },
-    "runners_classified": 2079,
-    "runners_with_C": 1010,
-    "runners_with_D": 615
+    "runners_classified": 2080,
+    "runners_with_C": 1011,
+    "runners_with_D": 616
   }
 }

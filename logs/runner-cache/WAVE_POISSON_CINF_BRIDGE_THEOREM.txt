@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/wave_poisson_cinf_bridge_theorem.py
+runner_sha256: 9e813b632fe43c260fe2649d69e4c2791b7093e21c5fea4444e884296b9fbe6e
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 1.85
+status: ok
+----- stdout -----
+========================================================================
+WAVE-POISSON c=infinity BRIDGE THEOREM CERTIFIER
+operator: f_next = 2 f_curr - f_prev + h2 (lap[f_curr] + src), H=0.5, h2=0.25
+========================================================================
+
+(A) FIXED-POINT UNIQUENESS (L symmetric negative-definite)
+  [CERT] nint= 3: sym_err=0.0e+00 eig in [-6.82843,-1.17157] neg_def=True in(-8,0)=True
+  [CERT] nint= 5: sym_err=0.0e+00 eig in [-7.46410,-0.53590] neg_def=True in(-8,0)=True
+  [CERT] nint= 8: sym_err=0.0e+00 eig in [-7.75877,-0.24123] neg_def=True in(-8,0)=True
+  [CERT] nint=15: sym_err=0.0e+00 eig in [-7.92314,-0.07686] neg_def=True in(-8,0)=True
+  [CERT] nint=31: sym_err=0.0e+00 eig in [-7.98074,-0.01926] neg_def=True in(-8,0)=True
+  [CERT] f* solves L f*=-src and is exact update fixed point: |L f*+src|=3.47e-18, leapfrog residual H2*|L f*+src|=8.67e-19
+
+(B) c->infinity / STATIC IDENTIFICATION (f* independent of c)
+  [CERT] h2= 0.01: fixed-point residual h2*|L f*+src|=4.44e-18 (same f* for all c)
+  [CERT] h2= 0.25: fixed-point residual h2*|L f*+src|=1.11e-16 (same f* for all c)
+  [CERT] h2= 1.00: fixed-point residual h2*|L f*+src|=4.44e-16 (same f* for all c)
+  [CERT] h2= 3.00: fixed-point residual h2*|L f*+src|=1.33e-15 (same f* for all c)
+  [CERT] damped late snapshot -> f*: gamma=0.02, max|f-f*|=3.33e-16 (unique attractor)
+  [CERT] undamped time-average -> f*: steps=200000, max|<f>-f*|=5.85e-06 (Cesaro O(1/N))
+
+(B') EXACT MODAL CLOSED FORM (undamped frozen source from rest)
+  [CERT] closed form vs simulation: CFL-stable(|2cos|<2)=True, max|closed-sim|=1.35e-14 over sampled t; per mode x_n=x*[1-cos(th n)-tan(th/2)sin(th n)], 2cos th=2+h2 mu
+
+(C) NEGATIVE CONTROL: undamped finite-time snapshot is NOT f*
+  [CERT] min over t of max|snap-f*| (generic frozen source): min_gap=0.0394 = 6.6% of |f*|; rings forever, never settles
+  [CERT] harness full[NL-1] comparator vs true Poisson f*: rel gap=11.8% (peak |f*|=2.76e-03); slowest ring period =91 steps >> 19 active steps => UNSETTLED. Harness 'instantaneous' field is transient-contaminated, NOT f*.
+
+========================================================================
+SUMMARY
+  (A) fixed-point uniqueness (L neg-def, f* unique) : PASS
+  (B) c->inf static identification (f* c-independent): PASS
+  (B') exact modal closed form                      : PASS
+  (C) undamped snapshot != f* (neg control)         : PASS
+
+  THEOREM CERTIFIED: YES
+  -> discrete Poisson solve f* IS the exact c=infinity instantaneous
+     field (fixed-point + static senses); a finite-time undamped
+     frozen-source snapshot is NOT f* and is an incorrect comparator.
+========================================================================
+
+----- stderr -----
+

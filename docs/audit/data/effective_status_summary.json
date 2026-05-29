@@ -5,12 +5,12 @@
     "meta": 237,
     "no_go": 260,
     "open_gate": 116,
-    "positive_theorem": 704
+    "positive_theorem": 705
   },
   "cycle_examples": [],
   "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 60,
+    "audited_conditional": 59,
     "audited_numerical_match": 14,
     "audited_renaming": 21,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
@@ -46,7 +46,7 @@
     "retained_bounded": 586,
     "retained_no_go": 174,
     "retained_pending_chain": 8,
-    "unaudited": 1179
+    "unaudited": 1181
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

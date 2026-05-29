@@ -27173,8 +27173,16 @@
       "to": "wave_direct_dm_h025_family_pair_synthesis_note"
     },
     {
+      "from": "wave_poisson_cinf_bridge_theorem_note_2026-05-28",
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+    },
+    {
       "from": "wave_retardation_continuum_limit_note",
       "to": "wave_retardation_lab_prediction_note"
+    },
+    {
+      "from": "wave_retarded_gravity_note",
+      "to": "wave_poisson_cinf_bridge_theorem_note_2026-05-28"
     },
     {
       "from": "wave_retarded_gravity_note",
@@ -72168,7 +72176,7 @@
         "universal_qg_optional_textbook_comparison_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fc0d3f9e616dec43d0c871be1c1d332ae3aec78151e3d1b8e0191e4b4240643d",
+      "note_hash": "b442cb6864ca9553cbd9f25bb40706d266f08a91b13330801df8a009992c236b",
       "path": "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
       "runner_path": null,
       "title": "Derivation Atlas"
@@ -83038,6 +83046,20 @@
       "runner_path": "scripts/wave_equation_self_field.py",
       "title": "Wave-Equation Self-Field: Time-Dependent Field from One Local Equation"
     },
+    "wave_poisson_cinf_bridge_theorem_note_2026-05-28": {
+      "claim_id": "wave_poisson_cinf_bridge_theorem_note_2026-05-28",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "78f0a9c1e081936aa19fd4ecda580f70e8edf924758d01360f25efadf2dda67d",
+      "path": "docs/WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/wave_poisson_cinf_bridge_theorem.py",
+      "title": "Discrete Poisson Solve = Exact c=\u221e Instantaneous Field (Bridge Theorem)"
+    },
     "wave_radiation_note": {
       "claim_id": "wave_radiation_note",
       "claim_type_author_hint": null,
@@ -83080,10 +83102,11 @@
     },
     "wave_retarded_gravity_note": {
       "claim_id": "wave_retarded_gravity_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "wave_poisson_cinf_bridge_theorem_note_2026-05-28",
         "linear_response_true_kubo_note",
         "wave_retardation_continuum_limit_note",
         "wave_retardation_lab_prediction_note",
@@ -83091,7 +83114,7 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eb79689fa019da65c8630b2339022222f5ff34bfa0563e32778ca5f162fd2699",
+      "note_hash": "28dd533dd2f7efe01e7461a53be649e17d1df0f2313ed2ed8fb329b5602b344a",
       "path": "docs/WAVE_RETARDED_GRAVITY_NOTE.md",
       "runner_path": "scripts/wave_retarded_gravity.py",
       "title": "Wave Retarded Gravity: Retarded \u2260 Instantaneous on the Wave Field"
@@ -87089,13 +87112,13 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 669,
+      "bounded_theorem": 670,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1431,
+      "none": 1430,
       "open_gate": 54,
-      "positive_theorem": 177
+      "positive_theorem": 178
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1079,
@@ -87104,12 +87127,12 @@
       "no_go": 188,
       "none": 426,
       "open_gate": 131,
-      "positive_theorem": 592
+      "positive_theorem": 593
     },
-    "edge_count": 9918,
+    "edge_count": 9920,
     "leaf_count": 827,
-    "node_count": 2609,
+    "node_count": 2610,
     "root_count": 870,
-    "runners_with_path": 2184
+    "runners_with_path": 2185
   }
 }

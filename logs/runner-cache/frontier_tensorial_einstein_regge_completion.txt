@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_tensorial_einstein_regge_completion.py
-runner_sha256: d911f3655b3665a00c16047ab6107a3f7eaf7979c84f850253a2de6808ef100f
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 3.66
-status: ok
------ stdout -----
 Tensorial completion test for restricted Einstein/Regge lift
 ==============================================================================
 
@@ -28,6 +20,3 @@ mixed perturbation activates both vector and tensor channels: PASS
 
 Verdict:
 The current restricted 3+1 lift is scalar-complete on the bridge surface, but it is not a full tensorial completion theorem. Shift and traceless tensor sectors remain invisible to the scalar Schur action and produce independent Einstein residuals, so generic nonspherical/time-dependent sectors need an additional tensor-valued matching principle.
-
------ stderr -----
-

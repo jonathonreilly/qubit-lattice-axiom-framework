@@ -1,0 +1,31 @@
+loop: tensorial-regge-static-helper-paths-20260529
+branch: physics-loop/tensorial-regge-static-helper-paths-20260529
+target_claim_id: tensorial_einstein_regge_completion_probe_helper_note_2026-04-14
+actual_current_surface_status: unaudited
+branch_author_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: static helper imports for audit packet completeness
+files_touched:
+  - scripts/frontier_tensorial_einstein_regge_completion.py
+  - docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md
+  - logs/runner-cache/frontier_tensorial_einstein_regge_completion.txt
+open_imports: []
+new_axioms: false
+review_loop_disposition: not_run_user_delegated_to_reviewer
+audit_required_before_effective_retained: true
+pipeline_result:
+  audit_status: unaudited
+  effective_status: unaudited
+  queue_ready: true
+  queue_rank: 557
+  open_dependency_paths: []
+  helper_runner_paths:
+    - scripts/_frontier_loader.py
+    - scripts/frontier_coarse_grained_exterior_law.py
+    - scripts/frontier_microscopic_dirichlet_bridge_principle.py
+    - scripts/frontier_oh_schur_boundary_action.py
+    - scripts/frontier_same_source_metric_ansatz_scan.py
+next_exact_action: independent audit of the repaired packet
+stop_condition: science block packaged as draft PR

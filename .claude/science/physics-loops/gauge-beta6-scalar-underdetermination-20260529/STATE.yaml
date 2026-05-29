@@ -1,0 +1,23 @@
+loop_slug: gauge-beta6-scalar-underdetermination-20260529
+branch: physics-loop/gauge-beta6-scalar-underdetermination-20260529
+base: origin/main
+target_claim_id: gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+cycle_count: 1
+active_route: narrow to the formal scalar-underdetermination no-go
+hard_residual: beta=6 Wilson/Haar kernel, rim-lift, compression, and PF data remain outside this row
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md
+  - scripts/gauge_vacuum_plaquette_scalar_underdetermination_formal.py
+  - logs/runner-cache/gauge_vacuum_plaquette_scalar_underdetermination_formal.txt
+trace_gate_classification: direct_blocker_closure
+review_findings: independent review loop not run; PR is queued for reviewer extraction
+pr_status: draft_pending
+next_exact_action: independent audit should decide whether the narrowed no-go can be retained_no_go
+stop_condition: draft PR opened with target row ready for independent audit

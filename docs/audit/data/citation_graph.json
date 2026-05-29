@@ -10321,14 +10321,6 @@
       "to": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
     },
     {
-      "from": "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
-      "to": "plaquette_self_consistency_note"
-    },
-    {
-      "from": "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
-      "to": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17"
-    },
-    {
       "from": "gauge_vacuum_plaquette_bridge_support_note",
       "to": "gauge_scalar_temporal_completion_theorem_note"
     },
@@ -56429,14 +56421,11 @@
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
-      "deps": [
-        "plaquette_self_consistency_note",
-        "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "3c3d59bc141c9950204ec1c2b990d9729853e2f8180c82457c4fde7b6e4a7361",
+      "note_hash": "3eb463aa278f5f6835aaf80c5ae412a5c3278d22ae777940b5a11ffd9c71ce6c",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md",
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+      "runner_path": "scripts/gauge_vacuum_plaquette_scalar_underdetermination_formal.py",
       "title": "Gauge-Vacuum Plaquette Beta=6 Scalar-Value Insufficiency"
     },
     "gauge_vacuum_plaquette_bridge_support_note": {
@@ -87403,6 +87392,7 @@
     "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03",
     "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17",
+    "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
     "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
     "gauge_vacuum_plaquette_constant_lift_obstruction_note",
     "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29",

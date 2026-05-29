@@ -1466,6 +1466,14 @@
     },
     {
       "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+    },
+    {
+      "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "to": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
+    },
+    {
+      "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
     },
     {
@@ -42879,11 +42887,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
         "staggered_only_det_positivity_case_a_note_2026-05-17",
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "df785e04528a3942d0966fa64ff87b305fef87b7ea6d77b7e1353ba9a0a47a42",
+      "note_hash": "ac545ac8ca7fad7c84b973a194ac4e5e288cefadaf94958cb4616d31daa6341d",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation"
@@ -42899,6 +42909,18 @@
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_axiom_first_reflection_positivity_theorem_note_2026-04-29_hostile_audit_findings.py",
       "title": "axiom first reflection positivity theorem note (2026-04-29 \u2014 Hostile Audit Findings"
+    },
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": {
+      "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "970ad51e52e7d8282136d53055286950fc5ef4e369e307fa64b6a354e8673ffd",
+      "path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
+      "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
+      "title": "Free Staggered 2-Step Blocked Transfer-Matrix Positivity (In-Repo Derivation)"
     },
     "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": {
       "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
@@ -86493,6 +86515,7 @@
     "axiom_change_proposal_2026-04-10",
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17",
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17",
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
     "background_independence_note",
     "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
     "bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10",
@@ -87246,7 +87269,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 673,
+      "bounded_theorem": 674,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -87255,7 +87278,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1083,
+      "bounded_theorem": 1084,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -87263,10 +87286,10 @@
       "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9939,
-    "leaf_count": 829,
-    "node_count": 2613,
-    "root_count": 870,
-    "runners_with_path": 2188
+    "edge_count": 9941,
+    "leaf_count": 828,
+    "node_count": 2614,
+    "root_count": 871,
+    "runners_with_path": 2189
   }
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1137 |
+| unaudited | 1139 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 71 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -58,18 +58,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 921 |
-| `audited_conditional` | 72 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 920 |
+| `audited_conditional` | 71 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1367 |
+| `unaudited` | 1369 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1130 |
+| `bounded_theorem` | 1131 |
 | `decoration` | 52 |
 | `meta` | 237 |
 | `no_go` | 259 |
@@ -78,10 +78,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 378 |
+| `critical` | 380 |
 | `high` | 505 |
 | `medium` | 604 |
-| `leaf` | 1012 |
+| `leaf` | 1011 |
 
 - **Retained pending chain closure:** 10
 - **Citation cycles detected:** 1
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `left_handed_charge_matching_note` | decoration | critical | 694 | 30.44 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 232 | 29.86 | `unaudited` | unaudited |
 | 23 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 198 | 29.14 | `unaudited` | unaudited |
-| 24 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 910 | 27.83 | `audited_conditional` | ~~audited_conditional~~ |
+| 24 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 910 | 27.83 | `unaudited` | unaudited |
 | 25 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 632 | 27.81 | `unaudited` | unaudited |
 
 
@@ -132,6 +132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -792,7 +793,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_delay_proxy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -1057,7 +1057,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | A | - |
@@ -1900,19 +1899,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.  _(class `A`)_
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
-- **auditor confidence:** high
-
-### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Free 1+1d staggered-KS two-step transfer-matrix positivity is checked; the interacting SU(3) gauge case is only a proposed reduction target, not a closed RP theorem.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-fresh-reflection-positivity-20260529`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The note derives the free two-step kernel as T_hat^2 = Gamma(t1^(2)) = tensor_p diag(1, e^{-2E(p)}) and then records the SU(3) gauge case as a product of that fermion-sector positivity, determinant positivity, and the gauge-half norm-square dependency.  _(class `A`)_
-- **chain closes:** False — The free algebra closes: the action-derived recurrence gives T_odd T_even with trace 2+4(m^2+sin^2 p), determinant 1, eigenvalues e^{+-2E}, and Gamma(diag(1,e^{-2E})) is positive Hermitian. The interacting SU(3) statement does not close because the two retained dependencies supply only determinant positivity and an abstract gauge-half norm-square, not the missing combined 2-step transfer/OS bridge for gauge-coupled staggered fermion observables.
-- **rationale:** Issue: the free 1+1d two-step transfer-matrix algebra closes, but the source also records an interacting SU(3) gauge-case reduction as if the retained determinant positivity and abstract gauge-half Cauchy-Schwarz rows complete the full RP statement. Why this blocks: those dependencies explicitly close only their narrow factors and do not prove the combined 2-step transfer/OS bridge for gauge-coupled staggered fermion observables on A_+^(2). Repair target: prove that the interacting SU(3) staggered action factorizes into the same 2-step transfer-positive fermion sector, positive determinant weight, and Theta-invariant gauge-half norm-square, or narrow the claim to the free U=1 two-step theorem plus a non-retained reduction target. Claim boundary until fixed: the free two-step transfer positivity is supported; full interacting SU(3) staggered RP is conditional on a missing bridge theorem.
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`
@@ -11966,19 +11952,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting T^a_Rbar := -(T^a_R)^* into Tr_R[T^a_R {T^b_R, T^c_R}] gives one overall minus sign for the cubic trace, hence A(Rbar) = -A(R); with A(3)=1 this gives A(3bar)=-1 and two copies give -2.  _(class `A`)_
 - **chain closes:** True — Both one-hop dependencies are retained-grade: cl3_color_automorphism_theorem supplies the Gell-Mann SU(3) carrier and su3_dabc_symmetric_theorem_note_2026-05-02 supplies the d^{abc} decomposition. The proof is finite-dimensional trace algebra, and the exact-symbolic runner reports PASS=26 FAIL=0 for the carrier, d/f tables, conjugate representation, anomaly-index sign flip, A(3bar)=-1, two-fermion -2 contribution, and consistency probes.
 - **rationale:** The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation.
-- **auditor confidence:** high
-
-### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`
-
-- **Note:** [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](../../docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded finite-carrier/linear-algebra extension: on the stated staggered-only temporal-gauge surface with m>0, fixed-background anti-Hermitian spatial hopping gives positive two-step transfer eigenvalues and hence per-config fermion positivity; together with the retained determinant-weight and retained-bounded gauge-half norm-square deps, this supplies the named U-integrated RP factorization. Separately, det(M_KS+mI), spec(H_hat), and Z=Tr(e^{-beta H_hat}) are invariant under hw=1 triplet relabeling; the residual-tightening reading is only that constructions depending solely on these invariants are insensitive to a pure species-label relabeling. The verdict does not close substeps (1)+(2), does not close or remove AC_phi_lambda, does not derive scalar additivity, and does not prove continuum/OS reconstruction or a from-scratch full interacting SU(3) RP theorem beyond the named factorization.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Anti-Hermitian fixed-background spatial hopping diagonalizes into modes i*lambda whose two-step transfer eigenvalues are exp(+/-2 asinh(sqrt(m^2+lambda^2))), and determinant/spectrum/trace quantities are invariant under hw=1 triplet relabeling by permutation-unitary conjugation.  _(class `A`)_
-- **chain closes:** True — The fixed-background positivity follows from anti-Hermitian h[U], unitary diagonalization, and the explicit positive 2x2 transfer eigenvalues. Relabeling invariance follows from determinant, spectrum, and trace invariance under unitary similarity, while the integrated RP reduction uses only retained-grade named deps for the remaining nonnegative factors.
-- **rationale:** The load-bearing transfer argument is class-A finite linear algebra, and the labeling result is ordinary unitary-conjugation invariance of det/spec/trace. The cached runner reports SCORECARD PASS=7, FAIL=0 under SHA 77ec52a654dbeb674b684dc4396710cd8eb217c71bcef2213387af579060e725, covering the modal formula, free-case bridge, SU(3)/U(1) finite exhibits, and all three invariance checks. No-go discipline is satisfied because the audit does not ratify a universal no-go or close AC_phi_lambda; it ratifies only the positive invariance theorem and a bounded residual-routing statement for RP/P2 quantities already scoped to det/spec/Z. The two load-bearing deps are retained-grade or retained-bounded, so the clean verdict remains bounded rather than unbounded retained science.
 - **auditor confidence:** high
 
 ### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`

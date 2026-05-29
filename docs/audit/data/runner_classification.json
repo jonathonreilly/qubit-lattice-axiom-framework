@@ -1188,6 +1188,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_axiom_first_reflection_positivity_theorem_note_2026-04-29_hostile_audit_findings.py"
     },
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py"
+    },
     "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": {
       "assert_count": 1,
       "counts": {
@@ -28991,7 +29003,8 @@
     "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py": {
       "assert_count": 1,
       "claims": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
       ],
       "counts": {
         "A": 0,

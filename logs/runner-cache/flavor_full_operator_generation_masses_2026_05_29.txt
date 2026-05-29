@@ -1,0 +1,43 @@
+
+========================================================================
+FULL free+Wilson staggered/naive Dirac on Z^3 -- BZ corner spectrum
+========================================================================
+  m=0.1, r=1.0.  corner mass = |eig| of D at k=corner*pi
+  (0, 0, 0) hw=0: |eig|=[0.1 0.1]  (= m+2r*hw = 0.10)
+  (0, 0, 1) hw=1: |eig|=[2.1 2.1]  (= m+2r*hw = 2.10)
+  (0, 1, 0) hw=1: |eig|=[2.1 2.1]  (= m+2r*hw = 2.10)
+  (1, 0, 0) hw=1: |eig|=[2.1 2.1]  (= m+2r*hw = 2.10)
+  (0, 1, 1) hw=2: |eig|=[4.1 4.1]  (= m+2r*hw = 4.10)
+  (1, 0, 1) hw=2: |eig|=[4.1 4.1]  (= m+2r*hw = 4.10)
+  (1, 1, 0) hw=2: |eig|=[4.1 4.1]  (= m+2r*hw = 4.10)
+  (1, 1, 1) hw=3: |eig|=[6.1 6.1]  (= m+2r*hw = 6.10)
+
+========================================================================
+GENERATION sector = hw=1 corners -> DEGENERATE -> Q=1/3
+========================================================================
+  hw=1 corners [(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+  masses [2.1 2.1 2.1] -> ALL EQUAL; sqrt-masses [1.449 1.449 1.449];  Q = 0.3333 = 1/3
+  The full kinetic+Wilson operator is cubic/S_3-symmetric among the 3 axes,
+  so it CANNOT split (pi,0,0),(0,pi,0),(0,0,pi). At corners sin(k)=0 => the
+  Cl(3) sigma hopping is silent; only the scalar (weight-only) Wilson mass survives.
+
+========================================================================
+VERDICT: the value is a NONPERTURBATIVE output, not a flat direction
+========================================================================
+  Free+Wilson full operator  ->  Q = 1/3 (degenerate), a DEFINITE prediction.
+  Observed splitting (Q=2/3, the hierarchy)  ->  spontaneous S_3-breaking of the
+  cubic axis-symmetry by the NONPERTURBATIVE VACUUM (gauge configuration), the
+  analog of chiral-symmetry breaking giving the QCD hadron spectrum.
+
+  This REFUTES 'flat direction': the value is a definite output of the full
+  dynamics (the vacuum picks a definite config -> definite masses). It is also
+  NOT analytically derivable from the operator: like the QCD hadron spectrum it
+  needs the full nonperturbative (lattice) solution. The isolated 3x3 generation
+  lens cannot see it -- it only sees the form (the cone), never the value.
+
+  GENUINE OPEN QUESTION (definite, never computed): does the framework's
+  nonperturbative Z^3 vacuum SPONTANEOUSLY break the cubic/S_3 axis-symmetry,
+  and does the resulting generation splitting land on Q=2/3? That is a lattice-
+  scale computation (g_bare=1 fixes the coupling -> no free flavor knob), the
+  analog of 'does QCD spontaneously break chiral symmetry' (it does). Definite,
+  parameter-free, hard -- NOT a flat direction and NOT exhausted.

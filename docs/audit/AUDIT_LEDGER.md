@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 562 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1195 |
+| unaudited | 1194 |
 | meta | 230 |
-| ~~audited_numerical_match~~ | 14 |
+| ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 1 |
@@ -62,9 +62,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 64 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
-| `audited_numerical_match` | 14 |
+| `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1425 |
+| `unaudited` | 1424 |
 
 | claim_type | count |
 |---|---:|
@@ -1168,6 +1168,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cosmology_from_mass_spectrum_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
+| `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -4026,6 +4027,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** **Script:** `scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py`  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Observed-normalized PMNS transport interval/match witness inside the imported fixed-N_e family: the seed endpoint is below eta/eta_obs=1, a sampled off-seed endpoint is above 1, and interpolation yields an eta/eta_obs=1 point. No physical selector law, source derivation, or full-stack leptogenesis closure is audited.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-fresh-dm-pmns-transport-interval-a`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The imported transport functional evaluates the aligned seed endpoint below eta/eta_obs=1, a sampled off-seed endpoint above 1, and an interpolated point on that family at eta/eta_obs=1.  _(class `G`)_
+- **chain closes:** False — The numerical interval and interpolated root reproduce, but the equality to eta/eta_obs=1 is obtained by choosing/interpolating a source parameter against ETA_OBS rather than by an independently retained selector law.
+- **rationale:** Issue: The bounded interval witness is reproducible, but the load-bearing equality is an observed-normalized target hit selected by interpolation over an off-seed parameter family. Why this blocks: audited_clean would require the source/lambda selector to be fixed independently of the observed eta/eta_obs target; here brentq chooses the point that makes the diagnostic equal 1. Repair target: derive a retained selector for the off-seed source or lambda, or keep the row explicitly as a numerical-match diagnostic. Claim boundary until fixed: the imported functional has a seed-to-overshoot interval and an interpolated eta/eta_obs=1 match witness; no physical selector law or full-stack closure follows.
 - **auditor confidence:** high
 
 ### `dm_lepton_synthesis_note_2026-04-19`

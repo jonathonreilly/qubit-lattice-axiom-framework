@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 168 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 602 |
+| **retained_bounded** | 603 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1155 |
+| unaudited | 1154 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 935 |
+| `audited_clean` | 936 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1391 |
+| `unaudited` | 1390 |
 
 | claim_type | count |
 |---|---:|
@@ -465,6 +465,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `graph_first_selector_derivation_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `graph_first_su3_integration_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `graph_laplacian_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6588,6 +6589,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** False — The Yang-Mills algebraic core closes once the local SU(3) connection, transformation law, and F^2 gauge action are admitted. The cited authorities retain only structural graph-first su(3)/nonabelian closure and do not construct the local Lorentz-covariant Yang-Mills connection, gauge action, or propagator needed to place the theorem on the live framework surface.
 - **rationale:** The runner source performs real algebraic checks: it computes SU(3) structure constants from Gell-Mann matrices, checks antisymmetry pairings, tests nonzero mass-term variation on generic fields, and verifies the displayed p^2 pole form. Those checks support the standard Yang-Mills theorem on the admitted surface, but they are class (A), not a first-principles construction from the graph-first framework. Because the bridge from the retained structural SU(3) surface to a local Lorentz-covariant Yang-Mills connection/action/propagator is explicitly not supplied, the cited chain does not close.
 - **auditor confidence:** high
+
+### `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** First-quantized unordered two-particle graph-braid exchange on the Z^3 site graph/finite cubes of side L >= 3: anyonic exchange phases are excluded, leaving boson or fermion exchange, and the retained dim_C H_x = 2 input excludes the free infinite-tower boson from the scoped combined statement.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-230355-aa7d32b8-graph_braid_z3_anyon_exc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the exchange class generates the Z_2 torsion summand for the non-planar 3-connected Z^3 site graph, any abelian statistic sends it to x in U(1) with x^2 = 1, hence the exchange phase is only +1 or -1.  _(class `C`)_
+- **chain closes:** True — Within the first-quantized scope, the graph-theoretic inputs and the Z_2-to-{+1,-1} phase restriction close by exact graph/SNF computation plus the packet's quoted Ko-Park/HKRS theorem statements. The source explicitly does not claim the open second-quantized graded-locality bridge.
+- **rationale:** The runner source actually constructs the Abrams UD_2 cells, integer boundary matrices, Smith normal forms, and graph planarity/connectivity checks; it is not a print-only or tuned-comparator runner. The displayed boundary formulas, H_1 reference values, graph counts/connectivity values, and Hom(Z_2,U(1)) restriction are consistent with the stated conventions and runner assertions. The sole framework dependency for the free-boson exclusion is the retained per-site dim-2 authority, while the second-quantized bridge is explicitly excluded from the claim scope.
+- **auditor confidence:** medium
 
 ### `graph_first_selector_derivation_note`
 

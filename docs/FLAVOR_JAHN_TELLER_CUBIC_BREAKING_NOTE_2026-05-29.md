@@ -30,10 +30,30 @@ Fermion vacuum energy of the Wilson-Dirac operator on Z³ as a function of a
    `E_total(ε) = dE_ferm(ε) + (K/2)ε²` breaks iff `K < K_c`. `g_bare=1` fixes
    the stiffness `K` → the outcome is determined by the full action.
 3. **Q vs base mass.** At a heavy base mass the splitting is small relative to
-   the mass → Q stays ≈1/3. But charged leptons are **light** (near-critical,
-   base mass → 0), where a small absolute splitting is a **large relative
-   hierarchy** → Q rises through `[1/3, 1]` and **passes 2/3** at a specific
-   near-critical tuning.
+   the mass → Q stays ≈1/3. Near-critical (light) generations give a large
+   relative hierarchy → Q rises through `[1/3, 1]`. **But see the refinement
+   below: 2/3 is *in* that range but is NOT naturally/robustly delivered with
+   the observed 3-distinct spectrum** — an honest correction to a first,
+   over-rosy "passes 2/3" reading.
+
+## Refinement (corrected Q-structure — `scripts/flavor_jahn_teller_Q_structure_2026_05_29.py`)
+The cubic-breaking is **traceless** (`Σd_μ=0`), so the three corner masses have
+**fixed mean** `M0`, and `Q = 3M0/(Σ√M_μ)²` spans `[1/3, 1]`. Three facts
+sharpen (and partly walk back) the optimistic reading:
+
+- **(A) The energetically-preferred direction gives TWO DEGENERATE generations.**
+  The `E_vac` angular scan minimizes at the "one-axis-out" directions →
+  masses `(M0+2a, M0−a, M0−a)`. Sweeping toward criticality reproduces the
+  **gross lepton structure "1 heavy + 2 light"** and passes `Q=2/3` (at
+  `a/M0≈0.957`, masses `(2.91, 0.043, 0.043)`) — but at **leading order the two
+  light generations are degenerate** (`e=μ`), which is not observed. The e–μ
+  splitting needs a **secondary, subleading** breaking.
+- **(B) The simplest 3-distinct pattern `(M0+d, M0, M0−d)` CAPS at `Q=0.5`** (as
+  the lightest → 0), not 2/3. *(This corrects the prior "passes 2/3": that
+  reading was `Q_max=0.515` for this pattern.)*
+- **(C)** A genuinely 3-distinct, steep hierarchy (`~(2.85, 0.15, ~0)`) **can**
+  give `Q=2/3`, but it is a **fine point** in the traceless plane, not the
+  energetically-cheapest direction.
 
 ## Why this matters: it sidesteps the central chirality gate
 The whole multi-lens Koide campaign hit one wall — `koide_z3_equivariant_
@@ -56,12 +76,23 @@ the near-critical (light) generation corners → hierarchical masses with Q in
   with a fixed (`g_bare=1`) stiffness — there is no free flavor knob.
 - **NOT the blocked import:** spontaneous and eigenvalue-level, not a
   chiral-grading operator on R³.
-- **NOT yet a derivation of 2/3.** The *generic* gauge expectation is that the
-  gauge stiffness wins (symmetric vacuum preserved → Q=1/3) — lattice gauge
-  vacua usually preserve the lattice point group. Whether the framework's
-  specific stiffness lets the Jahn-Teller breaking win, and the exact Q it
-  yields, is a **full-action lattice computation** (not done here).
+- **NOT yet a derivation of 2/3,** and two concrete gaps remain:
+  1. **Stiffness.** The fermion sea *alone* runs to **maximal anisotropy** (no
+     interior minimum of `E_ferm(ε)` — it decreases monotonically to the
+     boundary where one `r_μ→0`). So the breaking magnitude — hence Q — is set
+     by a **stiffness** the fermion determinant does not supply. The *generic*
+     gauge expectation is that the stiffness wins (symmetric vacuum, Q=1/3);
+     whether the framework's specific (`g_bare=1`) stiffness lets the breaking
+     win is a **full-action lattice computation** — and the stiffness is set by
+     the same **action-derivation ("bridge gap")** that is itself an open
+     frontier. The flavor value is downstream of the action derivation.
+  2. **e–μ degeneracy.** The energetically-preferred pattern leaves the two
+     light generations degenerate at leading order; the observed `e≠μ` needs a
+     secondary breaking not yet identified.
 
 This is the concrete, computable, **open** derivation target the
-"nonperturbative value" relocation pointed to: not a wall, not a flat
-direction — a definite native mechanism whose outcome is a lattice number.
+"nonperturbative value" relocation pointed to: a definite native mechanism
+whose outcome is a lattice number, with a real structural hint (the cheapest
+pattern matches the gross "1 heavy + 2 light" lepton structure) and two named
+gaps (stiffness from the action; e–μ splitting). Not a wall, not a flat
+direction, not yet a derivation.

@@ -1,0 +1,59 @@
+
+========================================================================
+(1) Gamma_chi's '2/3' is FORCED by involution, NOT tuned to Koide
+========================================================================
+  require (tJ - I)^2 = I  =>  3t^2 - 2t = 0  =>  t in {0, 2/3}
+  t=0 trivial (-I); t=2/3 is the UNIQUE nontrivial involution.
+  Gamma_chi^2 = I ? True
+  eigenvalues [-1. -1.  1.]  (+1 singlet, -1 doublet); 2/3 = 2/dim, not Koide.
+
+========================================================================
+(2) FORWARD mechanism (RETAINED): chiral (anticommuting) => Q=2/3
+========================================================================
+  {H,Gx}=0, Hv=lam v, lam!=0  =>  H(Gx v) = -lam (Gx v)  =>  Gx v _|_ v
+  =>  <v|Gx|v>=0  =>  |v_singlet|^2 = |v_doublet|^2  =>  Q=2/3.
+  max |<v|Gx|v>| over nonzero-eigval eigenvectors (20000) = 1.07e-15
+  => every nonzero-eigval eigenvector of a chiral H has Q=2/3 exactly.
+
+========================================================================
+(3) The framework's DEFAULT is NON-chiral -> Q=1 (retained no-go)
+========================================================================
+  A1+A2 supply only the Z_3-equivariant (circulant) algebra {I,S,S^2}.
+  [Gamma_chi, S] = 0.0e+00  (Gx is a circulant)
+  => EVERY Z_3-equivariant operator COMMUTES with Gamma_chi (non-chiral).
+  Cl(3) bivector S - S^T: [biv, Gx] = 0.0e+00  (commutes -> no singlet<->doublet mixing)
+  retained KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO: comm(S) cap
+  anticomm(Gx) = {0}. So no nonzero circulant anticommutes with Gx.
+  => the chiral operator BREAKS Z_3-equivariance (off-diagonal, Dirac-
+     type). A1's Clifford anticommutation lives on the 2x2 qubit/spinor
+     factor, NOT the generation R^3, so it does not supply it.
+
+========================================================================
+(4) the physical sqrt-mass vector IS Gamma_chi-balanced (postdiction)
+========================================================================
+  <v|Gx|v>/<v|v> = +0.000009  (=0 => chiral-balanced)
+  Q = 0.666661  (2/3 to 6e-6; 3 masses, 1 relation)
+
+========================================================================
+(5) the gap is MIS-LOCATED relative to the existing chirality gate
+========================================================================
+  anomaly_forces_time produces gamma5 on the SPACETIME Clifford factor;
+  Gamma_chi grades the GENERATION factor. DIFFERENT tensor factors.
+  So Q=2/3 does NOT reduce cleanly to the existing (unaudited) gate --
+  it needs a separate, UNBUILT spacetime->generation chirality bridge
+  (and staggered Dirac on Z^3 has no Ginsparg-Wilson relation).
+
+========================================================================
+STATUS: derived-modulo-chirality (non-circular, faithful relabeling)
+========================================================================
+  Q=2/3 <=> charged-lepton mass operator is CHIRAL (anticommutes with
+  the Z_3 grading) = the signature of Dirac mass generation. NON-chiral
+  default -> Q=1. NON-CIRCULAR: forward proof never names Q/2/3; Gx's
+  2/3 is forced by involution+equivariance. GENUINE PROGRESS: 'why 2/3'
+  is exactly relocated to 'why is mass-gen chiral on the generation
+  sector' -- a single, physical, well-posed gate (Koide = corollary of
+  chirality, not a coincidence). OPEN: that chiral operator is not
+  supplied by A1+A2+retained (retained no-go) and the needed gamma5 is
+  mis-located (spacetime vs generation factor; bridge unbuilt).
+  NEXT: build/audit the spacetime-gamma5 -> generation-Gamma_chi bridge;
+  if it exists -> Koide closes to 'derived'; if no-go -> pins the import.

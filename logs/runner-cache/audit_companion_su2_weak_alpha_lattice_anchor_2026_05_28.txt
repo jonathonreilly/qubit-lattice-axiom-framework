@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_su2_weak_alpha_lattice_anchor_2026_05_28.py
+runner_sha256: c5ea83c4cb5b49fcbc6732ebe7e1ea1db0a8f2f7839ebbd1a885b0b3dffbbf9d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28
@@ -94,3 +102,6 @@ TOTAL: PASS=26 FAIL=0
 VERDICT: bounded narrow-theorem anchor passes; alpha_2 |_lattice = 1 / (16 pi)
 follows from the four named inputs by exact sympy rational + pi arithmetic.
 ========================================================================================
+
+----- stderr -----
+

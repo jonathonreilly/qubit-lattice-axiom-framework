@@ -78,22 +78,43 @@ the gate is a wall.
   determinant orientation line is a section-less `Z₂` **torsor** (hosts the
   label, selects no canonical section).
 
-**The frontier target (shared with the Koide/generation lane).** The unique way
-to obtain a `Φ`-dependent, `χ`-odd `η` is for `Φ` (or the mass operator) to
-couple to a **chiral grading `Γ` that anticommutes with `D_Y`** on the
-generation/orientation factor — generating spectral flow. This is precisely the
-**same generation-chirality grading** that Koide `Q = 2/3` (mass operator chiral,
-`Γ_χ = (2/3)J − I`) and the three-generation identification require. So the
-panel does not isolate three separate problems — it shows signed-gravity's Origin
-obligation is **one face of a single shared frontier target**: derive a
-generation-factor chiral grading from `A1 + A2 + retained`. The known partial
-result is only that *spacetime* `γ₅` cannot be transported to it (it acts
-`C₃`-trivially); a **native** generation-factor derivation is open, not
-foreclosed. Deriving it (a) is the no-admissions way to close this — the grading
-is constructed, never axiomatized — and (b) would unlock signed-gravity, Koide
-`Q = 2/3`, and generation-ID simultaneously. That cross-lane over-determination
-(two independent physics requirements pointing at the same structure) is itself
-evidence the grading is real and should be derivable, not a coincidence to wall off.
+**The frontier target (a shared gate TYPE, not one shared operator).** The way to
+obtain a `Φ`-dependent, `χ`-odd `η` is for `Φ`/the mass operator to couple to a
+**chiral grading that anticommutes with `D_Y`** and breaks the native symmetry of
+the relevant factor. A 5-agent follow-up panel established the precise relation to
+the Koide lane, **correcting an earlier overstatement** that it was literally the
+same grading: the three lanes need gradings on **three distinct tensor factors** —
+Koide `Γ_χ` on the **generation R³**, signed-gravity's grading on the
+**cochain/taste** factor of `D_Y`, and the Connes–Lott chirality `γ_CL = I⊗σ₃` on
+an **L/R factor**. They are **not one operator**; they share a **gate type**:
+*derive a non-transportable, symmetry-breaking chiral grading on a factor whose
+native structure (C₃-equivariance / cochain pairing) forbids it.* Two sub-results
+sharpen this:
+
+- **The Connes–Lott separate-factor route genuinely evades the retained
+  `koide_z3_equivariant_anticommuting_no_go`** (its §4 leaves this open): with
+  `D = [[0,M],[M†,0]]`, `{D, γ_CL=I⊗σ₃} = 0` is automatic for any `M`, and the
+  no-go provably does not reach `γ_CL` (which is generation-trivial). But `γ_CL`
+  is **generation-blind**, so it yields the L/R-balance invariant, *not* the
+  Z₃-character Koide invariant — `Q=2/3 ⟺ r=|b|²/a²=1/2` stays **unforced**
+  (consistent with the team's prior `KOIDE_U_BAE_NCG_SPECTRAL_TRIPLE` Probe U and
+  the KO-dimension real-structure narrowing: the spectral action is symmetric in
+  the three eigenvalues and never selects `r=1/2`). And the L/R factor itself is
+  **not native** — it is the framework's existing `Z³→Z⁴`/`e₄` Wick-rotation
+  admission (Cl(3) is odd, so no native `γ₅`).
+- **The concrete, unforeclosed unification target** is therefore a *single
+  product-grading spectral triple* `H = R³_gen ⊗ (taste) ⊗ (H_L⊕H_R)` carrying one
+  Dirac whose off-diagonal blocks simultaneously (i) restrict to an `{H,Γ_χ}=0`
+  operator on the generation R³ (→ Koide) and (ii) induce a nonzero orientation-odd
+  `η_δ(D_Y)` on the cochain factor (→ signed source), via the **product** grading
+  `Γ_χ⊗ε` — not the (foreclosed) identification `γ_CL=Γ_χ`. No retained no-go
+  forecloses this product-grading triple; the decisive open computation is whether
+  its order-one / `J`-reality condition pins `b/a = 1/√2`.
+
+This is the no-admissions path: construct the grading, never axiomatize it. It
+would unlock signed-gravity, Koide `Q=2/3`, and generation-ID — but the two
+honest open sub-gates remain the `e₄`/P2 L/R-factor origin and the `r=1/2`
+forcing, neither yet supplied.
 
 This convergence reproduces and sharpens the existing lane infrastructure
 (`signed_gravity_response_lane_status_note`;

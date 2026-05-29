@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/cyclic_dft_uniform_magnitude_runner.py
+runner_sha256: 0a33a929d7ec479eb41d50106c3d512f619e56f882dab9b03f74ce0357d8ed89
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+========================================================================
+CYCLIC DFT UNIFORM MAGNITUDE -- BOUNDED CHECK
+========================================================================
+  [PASS] all normalized Z_2 DFT entries have |F_N[j,k]|^2 = 1/2  (4 entries checked)
+  [PASS] all normalized Z_3 DFT entries have |F_N[j,k]|^2 = 1/3  (9 entries checked)
+  [PASS] all normalized Z_4 DFT entries have |F_N[j,k]|^2 = 1/4  (16 entries checked)
+  [PASS] all normalized Z_5 DFT entries have |F_N[j,k]|^2 = 1/5  (25 entries checked)
+  [PASS] all normalized Z_6 DFT entries have |F_N[j,k]|^2 = 1/6  (36 entries checked)
+  [PASS] all normalized Z_7 DFT entries have |F_N[j,k]|^2 = 1/7  (49 entries checked)
+  [PASS] all normalized Z_12 DFT entries have |F_N[j,k]|^2 = 1/12  (144 entries checked)
+  [PASS] Z_3 character orthogonality holds
+  [PASS] Z_4 character orthogonality holds
+  [PASS] Z_5 character orthogonality holds
+  [PASS] Z_3 entry (0,0) has magnitude squared 1/3  (value=0.333333333333)
+  [PASS] Z_3 entry (0,1) has magnitude squared 1/3  (value=0.333333333333)
+  [PASS] Z_3 entry (0,2) has magnitude squared 1/3  (value=0.333333333333)
+  [PASS] Z_3 entry (1,0) has magnitude squared 1/3  (value=0.333333333333)
+  [PASS] Z_3 entry (1,1) has magnitude squared 1/3  (value=0.333333333333)
+  [PASS] Z_3 entry (1,2) has magnitude squared 1/3  (value=0.333333333333)
+  [PASS] Z_3 entry (2,0) has magnitude squared 1/3  (value=0.333333333333)
+  [PASS] Z_3 entry (2,1) has magnitude squared 1/3  (value=0.333333333333)
+  [PASS] Z_3 entry (2,2) has magnitude squared 1/3  (value=0.333333333333)
+========================================================================
+TOTAL: PASS=19 FAIL=0
+VERDICT: cyclic DFT uniform magnitude theorem holds.
+
+----- stderr -----
+

@@ -18,9 +18,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 149 |
+| **retained** | 150 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 560 |
+| **retained_bounded** | 559 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
 | unaudited | 1208 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1118 |
+| `bounded_theorem` | 1117 |
 | `decoration` | 51 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 116 |
-| `positive_theorem` | 714 |
+| `positive_theorem` | 715 |
 
 | criticality | count |
 |---|---:|
@@ -242,7 +242,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
@@ -2954,15 +2954,15 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 ### `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
 
 - **Note:** [`CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](../../docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite spatial lattice Lambda only: the pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, Haar) has a simple positive top eigenvalue and a strict finite-volume spectral gap; no thermodynamic, continuum, or uniform-in-Lambda conclusion is audited.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T232731Z-9c26ad5c-cluster_decomposition_de-02`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Lemma B gives strict positivity of the finite-Lambda SU(3) Wilson heat-kernel transfer kernel, Lemma C gives trace-class compactness, self-adjointness follows from the real symmetric kernel, and Perron-Jentzsch/Krein-Rutman then gives a simple top eigenvalue with a strict spectral gap.  _(class `C`)_
-- **chain closes:** True — For fixed finite Lambda, the packet derives strict positivity of the SU(3) heat kernel, bounded positive Wilson weighting on a compact configuration space, smooth trace-class compactness, and positivity improvement. Those hypotheses are enough for the stated Perron-Jentzsch spectral-gap conclusion for T_W.
-- **rationale:** The core pure-Wilson claim is not a definition, renaming, external comparison, or tuned numerical match; it is an operator-theoretic finite-volume derivation on SU(3)^E. The runner source performs genuine SU(3) character-series, Haar-quadrature, heat-equation, and sampled positivity checks, with V4 and V6 mainly algebraic spectrum checks. The staggered+Wilson T_full material is explicitly presented only as conditional on Leg A and is not promoted as an unconditional result in this audit scope.
-- **auditor confidence:** medium
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260529-cluster-delta-t-finite-lambda`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** K_tau is strictly positive and smooth on connected compact SU(3); hence T_W has a real symmetric smooth strictly positive kernel on compact Conf(Lambda)^2, is compact/trace-class and positivity-improving, and Perron-Jentzsch/Krein-Rutman gives a simple positive spectral radius with all other spectral values strictly below it in modulus.  _(class `A`)_
+- **chain closes:** True — The five-judge panel unanimously sided with the second audit. The pure-Wilson finite-Lambda core closes by standard heat-kernel positivity and compact positive-operator theory: on compact SU(3)^E, heat-kernel positivity plus the positive Wilson factor gives a strictly positive smooth kernel; compactness/trace-class and positivity improvement let Perron-Jentzsch/Krein-Rutman produce a simple top eigenvalue and strict finite-volume spectral separation. The finite-Lambda, fixed-parameter, no-thermodynamic-limit, no-continuum, no-Yang-Mills, and no-spatial-clustering clauses are scope boundaries, not live admissions. Leg A appears only in the conditional T_full extension and is excluded from the ratified scope; runner PASS=8 supports the analytic checks but sampled Leg A/T_full checks are not load-bearing.
+- **rationale:** The five-judge panel unanimously sided with the second audit. The pure-Wilson finite-Lambda core closes by standard heat-kernel positivity and compact positive-operator theory: on compact SU(3)^E, heat-kernel positivity plus the positive Wilson factor gives a strictly positive smooth kernel; compactness/trace-class and positivity improvement let Perron-Jentzsch/Krein-Rutman produce a simple top eigenvalue and strict finite-volume spectral separation. The finite-Lambda, fixed-parameter, no-thermodynamic-limit, no-continuum, no-Yang-Mills, and no-spatial-clustering clauses are scope boundaries, not live admissions. Leg A appears only in the conditional T_full extension and is excluded from the ratified scope; runner PASS=8 supports the analytic checks but sampled Leg A/T_full checks are not load-bearing.
+- **auditor confidence:** high
 
 ### `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`
 

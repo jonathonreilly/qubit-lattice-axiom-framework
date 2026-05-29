@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 574 |
+| **retained_bounded** | 575 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1172 |
+| unaudited | 1171 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 887 |
+| `audited_clean` | 888 |
 | `audited_conditional` | 71 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1402 |
+| `unaudited` | 1401 |
 
 | claim_type | count |
 |---|---:|
@@ -1011,6 +1011,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15670,6 +15671,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** The finite product RN source family R_h(epsilon) composes by source-field addition, has primitive one-site signed-record score at h=0, and is equivalent after normalization to the source-coupled site-diagonal action S_h = S_0 - sum_x h_x epsilon_x.  _(class `A`)_
 - **chain closes:** True — The finite algebra closes directly: multiplication of exp(sum h_x epsilon_x) weights adds source profiles, the h=0 score is epsilon_x because the uniform signed-record mean is zero, and exp(-S_h)/exp(-S_0) equals the same unnormalized RN weight. The runner and an independent two-site enumeration both verify the identities and the open-gate firewalls.
 - **rationale:** The audited result is support mathematics only, and the source states that boundary clearly. The runner computes the finite RN composition, generator, and site-diagonal action equivalence, writes a certificate with proposal_allowed=false and current_closure_satisfied=false, and verifies absence of strict source-Higgs rows/WZ bypass artifacts. A separate finite enumeration reproduces the composition, score, and action-equivalence errors near numerical zero. No Y_T value, EW/Higgs authority, LSZ normalization, pole row, matching/running, or fitted/observed input is used or retained.
+- **auditor confidence:** high
+
+### `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25`
+
+- **Note:** [`YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`](../../docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-yt-source-coordinate-top-w-ratio-2026-05-28`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The common v'(h) factor in dM_t/dh=(y_t/sqrt(2))v'(h) and dM_W/dh=(g_2/2)v'(h) cancels, so y_t=(g_2/sqrt(2))(dM_t/dh)/(dM_W/dh), and the same cancellation holds under h=f(s).  _(class `A`)_
+- **chain closes:** True — The formula is an exact symbolic quotient: differentiating both masses with respect to the same local source coordinate gives a shared Jacobian, and a reparameterization h=f(s) multiplies both derivatives by the same chain-rule factor. Independent symbolic recomputation reproduces sqrt(2)*y_t/g_2 and recovered y_t.
+- **rationale:** Clean under the exact coordinate-invariance support scope. The source note does not rename the signed-record source as the Higgs; it proves that once a later retained same-surface EW radial source is supplied, the top/W derivative ratio is independent of the local coordinate normalization. The runner's symbolic checks and firewall/status checks pass, but they correctly leave the top transfer-response theorem, coefficient-certified rows, retained numerical g_2 authority, and physical-scale Y_T closure outside this row.
 - **auditor confidence:** high
 
 ### `yt_source_covariance_normalization_support_note_2026-05-24`

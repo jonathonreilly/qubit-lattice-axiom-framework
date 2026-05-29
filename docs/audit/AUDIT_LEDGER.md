@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 162 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 590 |
+| **retained_bounded** | 591 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1138 |
+| unaudited | 1137 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 914 |
+| `audited_clean` | 915 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1368 |
+| `unaudited` | 1367 |
 
 | claim_type | count |
 |---|---:|
@@ -891,6 +891,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
+| `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `structured_chokepoint_bridge_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -13700,6 +13701,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** B1-B4 exact algebra: substitute M1 G(r) -> 1/(4*pi*|r|) into P1 V(r) = -C*g_bare^2*G(r), define alpha = g_bare^2/(4*pi), rewrite V(r) as -C*alpha/|r|, then set g_bare=1 to get alpha=1/(4*pi).  _(class `B`)_
 - **chain closes:** True — The chain closes at the conditional bounded scope: P1 remains a local admitted readout convention, M1 is consumed through the retained Maradudin parent behind the decoration wrapper, I2 and g_bare=1 are retained_bounded dependencies, and the B1-B4 algebra is exact. It does not close the admitted P1 derivation or any downstream physical/gravity/continuum claim.
 - **rationale:** Clean only as a conditional accepted-premise bridge. Independent algebra confirms the sign, 4*pi factor, C factor, alpha substitution, and g_bare=1 specialization. The runner is SHA-pinned, exits 0, and reports EXACT PASS=41 FAIL=0 plus BOUNDED PASS=11 FAIL=0; the source's verification snippet still says TOTAL PASS=35 FAIL=0, but that is non-load-bearing transcript drift because the current runner adds checks and all current checks pass. No-go discipline gate passed: the wall set collapses to the single local P1 admission; M1 authority is taken from the retained Maradudin parent, not the decoration wrapper as new authority; I2 and g_bare are retained dependencies; C=C_F is part of P1 for this row; multiplicative-bridge and regulator-dependence no-go references are used only as exclusions; and future derivation/retirement paths for P1, C=C_F, Wilson-surface normalization, and the parent bridge remain open. The verdict does not promote P1 to Tier-A, the parent alpha_bare bridge, Newton-law/gravity, 4D loop/Wick, hierarchy, physical continuum, Wilson plaquette matching, generator normalization, or C=C_F derivation claims.
+- **auditor confidence:** high
+
+### `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded O_h sign bridge: with O_h acting as signed spatial permutations and fixing Euclidean time, the Wilson plaquette contribution is invariant under link/plaquette relabeling, epsilon^{ijk} transforms by det(R), and any rank-two tensor slot Q[F]=epsilon^{ijk}F_{0i}F_{jk} transforms by det(R); coefficient exclusion is only conditional on a separately proved O_h-invariant action class and slot covariance.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using R_{ia}R_{jb}R_{kc} epsilon_{abc}=det(R) epsilon_{ijk}, a rank-two tensor transform gives Q[R.F]=epsilon^{ijk}R_{ia}F_{0a}R_{jb}R_{kc}F_{bc}=det(R)Q[F].  _(class `A`)_
+- **chain closes:** True — The epsilon pseudotensor identity is exact for the 48 signed permutations, and the Q[F] sign law follows by direct index contraction. Wilson plaquette invariance follows from plaquette relabeling plus Re tr(U_P^dagger)=Re tr(U_P), while the strong-CP/action-class consequences remain explicitly conditional and out of scope.
+- **rationale:** The load-bearing tensor sign law is an exact finite-group/index identity, independently re-derived from the Levi-Civita determinant formula and rank-two transformation rule. The runner's random Wilson/F samples are only sanity checks, but the source proof states the analytic reason, and the all-48 epsilon enumeration supports the finite-group part. The no-go/admission-wall gate passes because the note does not assert strong-CP closure, full action-class O_h-invariance, topological-charge discretization covariance, continuum theta bridging, or exclusion of CP-odd slots outside the stated determinant-odd epsilon F F form.
 - **auditor confidence:** high
 
 ### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`

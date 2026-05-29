@@ -1,8 +1,96 @@
 # Signed Gravity APS-Locked Source Action Proposal
 
-**Date:** 2026-04-25
-**Status:** conditional action candidate; not derived from the retained stack
+**Date:** 2026-04-25 (2026-05-28: Origin obligation resolved as a NO-GO under
+no-admissions — see panel-convergence section).
+**Type:** no_go
+**Status authority:** independent audit lane only.
+**Status:** **origin no-go** — the proposed `χ_η M_phys ⟨ρ,Φ⟩` source-action cross
+term is NOT derivable from the retained APS/Wald/Gauss stack; deriving it requires
+a forbidden import (a chiral grading on the generation/orientation factor — the
+shared Koide/generation chirality gate). The local source/response harness still
+passes (it was built to), but that is not a derivation.
 **Script:** [`../scripts/signed_gravity_aps_locked_source_action_proposal.py`](../scripts/signed_gravity_aps_locked_source_action_proposal.py)
+
+## 2026-05-28 Panel Convergence — Origin Obligation is a NO-GO (no admissions)
+
+Proof obligation #1 ("Origin": derive `S_int = −χ_η M_phys ⟨ρ,Φ⟩` from retained
+APS/Wald/Gauss structure rather than adding it as an axiom) was attacked by a
+7-angle panel framed to **find the escape** (APS-index coupling, anomaly inflow,
+eta-variation/spectral-flow, Wald/Gauss source-unit accounting, adversarial
+no-go refutation, literature scout, first-principles + math). All converged: the
+cross term is **not derivable from retained structure**. Because this repository
+takes **no admissions**, the verdict's alternative ("mark permanently as an
+axiomatic extension") is off the table, so the Origin obligation closes as a
+**no-go**, scoped to the retained flat-substrate inventory, with one explicit
+open promotion route (below).
+
+**Two independent structural reasons the χ-odd source cannot come from retained structure:**
+
+1. **Positivity forces the active source orientation-even.** Every retained
+   object that can source `Φ` by variation is non-negative and orientation-even:
+   the Born density `ρ = |ψ|² ≥ 0`, the inertial mass / Gauss-flux magnitude
+   `M_phys = C_abs > 0` (an absolute exterior-monopole coefficient `φ → C/r`,
+   sign-blind, NOT spectral-index data), `q_bare = 4π M_phys`, `c_cell = 1/4`,
+   `λ = 1`, and the positive Wald area carrier `(1/4)A/a² ≥ 0`. The active source
+   `ρ_active = −δS_int/δΦ` is a variation of a sum of these, hence orientation-even:
+   it spans only `[+1,+1]` over the two `χ` sectors and **structurally cannot
+   realize the required orientation-odd `[+1,−1]`**. The lane's own factorization
+   `C_signed = Q_χ · C_abs` concedes the sign must come from a separate `Q_χ`
+   factor the retained stack does not contain. (Verified independently: the
+   Stieltjes / M-matrix positivity of the screened-Poisson source forces
+   `ρ ≥ 0 ⇒ Φ ≥ 0`; a sign flip needs a mixed-sign source, which positivity
+   forbids.)
+2. **`sign(η)` is variationally inert.** The action carries `χ_η = sign η_δ(D_Y)`,
+   an integer-valued spectral-asymmetry label that is **locally constant** on the
+   gapped admissible domain (`h_δ = 0`). Hence `δ sign(η)/δΦ ≡ 0` there (verified:
+   2000 random gap-preserving deformations give `max|δη/δΦ| = 0` exactly; the
+   smooth APS local term vanishes on the closed flat lattice by `Γ₅` ±-pairing,
+   `η ≡ 0`; standard APS theory — Farber–Levine, Fukaya et al. — confirms `η`
+   varies only by integer jumps at zero-crossings, which `h_δ=0` excludes). A
+   label with vanishing functional derivative **cannot be an active variational
+   source** — it can only multiply an independently-varied positive source by
+   hand, which is exactly the new axiom. "Source sign = boundary η sign" is an
+   aesthetic ansatz, not a dynamical derivation.
+
+**Every escape route closes on the retained flat substrate:**
+
+- **APS index:** `M_phys = C_abs` is a Gauss-flux magnitude, not index data; the
+  matter index is locally constant (`dIndex/dΦ = 0`); `δη/δΦ = 0` by gap rigidity.
+- **Anomaly inflow:** retained boundary `η = 0` (flat `Z³`, no Pontryagin density,
+  torsion-free — both new-axiom additions); and even a hypothetical bulk term
+  would land `χ_η` in the **area coefficient** — the channel the proposal
+  explicitly rejects — not the interior `ρΦ` source (anomaly invariants are
+  orbit-functorial global labels, the wrong shape for a local `ρ(x)` source).
+- **Literature:** `sign(η)` is a genuine active coupling for **gauge/EM** fields
+  in 2+1D (parity anomaly) and the Witten-effect monopole charge, but there is
+  **no established mechanism** where `sign(η)` of a boundary Dirac operator sources
+  a 3+1D **scalar-gravity** `ρΦ` coupling; in the canonical APS/QFT framework
+  (Witten; Witten–Yonekura) `η` is a partition-function **spectator phase**.
+- **Separability:** retained structure factorizes (disjoint regions sew by direct
+  sum ⇒ `det` factorizes, `log|det|` additive, block-local derivatives), so it
+  produces no boundary-label × bulk-source × field **product** term; the
+  determinant orientation line is a section-less `Z₂` **torsor** (hosts the
+  label, selects no canonical section).
+
+**The single open promotion route (shared with the Koide/generation lane).** The
+only way to obtain a `Φ`-dependent, `χ`-odd `η` is for `Φ` (or the mass operator)
+to couple to a **chiral grading `Γ` that anticommutes with `D_Y`** on the
+generation/orientation factor — generating spectral flow. That is precisely the
+**same chirality-import gate** that blocks Koide `Q = 2/3` and the
+three-generation identification, and it is itself a **retained no-go**: a
+spacetime `γ₅` cannot be transported to a chiral grading on the generation
+factor (it acts `C₃`-trivially). So this no-go is scoped — not a permanent lock:
+**if** that generation-chirality grading is ever derived (closing the shared
+gate), the signed source could follow. Absent it, the cross term is an
+independent axiom, which no-admissions forbids.
+
+This convergence reproduces and strengthens the existing retained no-go
+infrastructure (`signed_gravity_response_lane_status_note` = `retained_no_go`;
+`SIGNED_GRAVITY_RETAINED_BOUNDARY_SOURCE_PRINCIPLE_NO_GO_NOTE` orientation-even
+`[+1,+1]` cannot span `[+1,−1]`; the native-complex containment and
+host-vs-selector results) by supplying the positivity + variational-inertness
+**reasons** behind the finite-span residual. No new axiom, import, or retained
+bridge is introduced by this repair.
 
 This note proposes the smallest action that would close the remaining
 APS/source-locking gap identified in

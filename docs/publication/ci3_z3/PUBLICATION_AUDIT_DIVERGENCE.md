@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 177 |
 | critical | `unaudited` | 152 |
-| medium | `unaudited` | 94 |
+| medium | `unaudited` | 93 |
 | high | `audited_numerical_match` | 4 |
 | medium | `audited_conditional` | 4 |
 | high | `audited_conditional` | 3 |
@@ -32,7 +32,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 448
+**Total non-retained-grade rows in publication tables:** 447
 
 ## Per-row breakdown
 
@@ -475,7 +475,6 @@ publication tables phrase it.
 | medium | `universal_gr_casimir_block_localization_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `universal_qg_continuum_bridge_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | medium | `up_sector_partition_revisit_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
-| medium | `wave_retarded_gravity_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `work_history.ckm.cabibbo_bound_note` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md |
 | medium | `work_history.ckm.jarlskog_phase_bound_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

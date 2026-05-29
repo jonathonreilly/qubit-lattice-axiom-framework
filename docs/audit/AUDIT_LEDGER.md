@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 149 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 564 |
+| **retained_bounded** | 563 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1205 |
+| unaudited | 1206 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 869 |
+| `audited_clean` | 868 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1435 |
+| `unaudited` | 1436 |
 
 | claim_type | count |
 |---|---:|
@@ -662,7 +662,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -911,7 +911,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9740,14 +9739,14 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 
 - **Note:** [`OH_SCHUR_BOUNDARY_ACTION_NOTE.md`](../../docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes represented in the runner, the Schur-complement DtN boundary energy generates the checked shell trace stationarity equations.
+- **claim_scope:** For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes, the Schur-complement DtN boundary energy generates the checked shell-trace stationarity equations: Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, E_R(f)=1/2 f^T Lambda_R f, grad E_R=Lambda_R f, and Lambda_R f - j = 0 when j is the microscopic trace flux of the same harmonic exterior field. No general Einstein/Regge, nonlinear GR, all-R, arbitrary-source, or broader non-O_h strong-field theorem is ratified.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260505-022854-5eea0f25-oh_schur_boundary_action-002`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Eliminating the harmonic bulk by exact Schur complement gives Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, and E_R(f)=1/2 f^T Lambda_R f has gradient Lambda_R f equal to the microscopic trace flux.  _(class `A`)_
-- **chain closes:** True — The central Schur-complement energy and gradient statement is a standard algebraic closure for the partitioned lattice Laplacian, and the runner checks symmetry, positivity, harmonic reconstruction, flux equality, and stationarity for the two stated source families. The conclusion closes only within the explicitly bounded current source classes and boundary setup.
-- **rationale:** The load-bearing step is an algebraic Schur-complement identity, not a renaming or tuned numerical match. The runner source actually constructs Lambda from lattice Laplacian blocks and solves the harmonic bulk equation, then verifies the gradient/flux and sourced stationarity claims to numerical precision. The result is bounded to the current R=4 shell and source classes; it does not claim a general Einstein/Regge theorem.
-- **auditor confidence:** medium
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260529-oh-schur-boundary`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** For the trace/bulk split of the finite symmetric negative lattice Laplacian, harmonic bulk elimination gives u_b=-H_bb^{-1}H_bt f and Lambda_R=H_tt-H_tb H_bb^{-1}H_bt; substituting the harmonic extension into 1/2 u^T H u gives the Schur-complement boundary energy and differentiating gives trace flux Lambda_R f.  _(class `A`)_
+- **chain closes:** True — The five-judge panel split 4-1 for the first audit. The Schur-complement algebra independently closes the sign, factor, gradient, and trace-flux identities, and the cached runner exits 0 with PASS=6 FAIL=0, reporting symmetry error 3.331e-16, positive minimum eigenvalue 1.148587e+00, O_h stationarity residual 9.021e-17, and finite-rank stationarity residual 2.776e-16. The source note's audited object is the finite R=4 shell-action/stationarity result on the current source classes, not merely a generic Schur-complement lemma; broad physical boundary-action and Einstein/Regge readings remain explicitly out of scope. Under audit-loop typing this is a clean bounded theorem rather than a positive-theorem retag.
+- **rationale:** The five-judge panel split 4-1 for the first audit. The Schur-complement algebra independently closes the sign, factor, gradient, and trace-flux identities, and the cached runner exits 0 with PASS=6 FAIL=0, reporting symmetry error 3.331e-16, positive minimum eigenvalue 1.148587e+00, O_h stationarity residual 9.021e-17, and finite-rank stationarity residual 2.776e-16. The source note's audited object is the finite R=4 shell-action/stationarity result on the current source classes, not merely a generic Schur-complement lemma; broad physical boundary-action and Einstein/Regge readings remain explicitly out of scope. Under audit-loop typing this is a clean bounded theorem rather than a positive-theorem retag.
+- **auditor confidence:** high
 
 ### `ollivier_einstein_proxy_note_2026-04-11`
 
@@ -13766,19 +13765,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Using the current bright tensor coefficients from the current tensor-boundary-drive pipeline, the runner fixes an affine law from the two exact A1 support endpoints and tests it on intermediate canonical A1 backgrounds, the exact local O_h A1 baseline, and the finite-rank A1 baseline.  _(class `C`)_
 - **chain closes:** True — Within the bounded scope, the cached runner completes and directly computes the support Green-matrix endpoint equality, the delta_A1(r) formula residuals, and the affine tensor-law residuals. The note explicitly leaves the exact tensor observable, exact endpoint coefficients, restricted tensor completion theorem, and nonlinear GR outside the closed claim.
 - **rationale:** The exact support-side portion is not just a symbol rename: the runner constructs the support potential and verifies the endpoint arm equality, center-excess size 1/6, and delta_A1(r)=1/(6(1+sqrt(6)r)) at machine precision. The bounded tensor portion is also scoped conservatively: it claims only that the current runner-computed bright tensor coefficients are nearly affine in this exact support scalar on the sampled canonical family and two baselines, with completed cached output showing all five checks pass. The note does not overclaim derivation of the tensor observable or endpoint coefficients, and those gaps are explicitly excluded from the closed scope.
-- **auditor confidence:** medium
-
-### `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`
-
-- **Note:** [`TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded helper-module audit of the specific vector-shift, traceless-shear, and mixed probe computations on the retained scalar bridge grids, including scalar-action invariance and Einstein-residual channel activation at the runner's sampled shell-adjacent points.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T112435Z-5f8edb4e-tensorial_einstein_regge-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For each vector-shift, traceless-shear, and mixed probe, the helper computes the full 3+1 Einstein tensor and reports the active G_{0i}, traceless G_{ij}, and combined residual channels while the scalar shell trace/action is held fixed.  _(class `C`)_
-- **chain closes:** True — Within this bounded helper scope, the runner source constructs the ADM perturbations, computes Christoffel/Ricci/Einstein tensors by centered finite differences, and the completed cached run passes the four decisive checks. This does not audit or ratify a downstream full tensorial Einstein/Regge no-go beyond the tested helper probes.
-- **rationale:** The cited authorities are retained_bounded, and the primary runner does actual tensorial computation rather than printing constants or importing the contested residuals. The scalar action is unchanged because the scalar trace input is fixed, while the vector, shear, and mixed probes produce nonzero Einstein residual channels in the completed run. The No-Go Discipline gate is satisfied only after narrowing: this verdict covers the bounded helper/probe computation, not a full closure or full no-go theorem for all tensorial completions.
 - **auditor confidence:** medium
 
 ### `testable_predictions_map_note`

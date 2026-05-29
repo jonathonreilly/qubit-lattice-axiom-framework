@@ -1,0 +1,83 @@
+loop_slug: sm-gstar-matter-content
+goal: >
+  Retire the monolithic external "declared SM relativistic inventory" import
+  (sm_relativistic_dof_count_import_note_2026-05-17, retained_bounded) by
+  sourcing each dof count of the high-T unbroken-phase g_* = 106.75 census from
+  framework gauge+generation+Higgs structure, naming residuals explicitly.
+target_status: bounded_theorem
+mode: run
+runtime_budget: single deep-work cycle
+cycle_count: 1
+block_count: 1
+active_route: B (assemble-retained-core-and-name-residuals)
+hard_residual_being_attacked: >
+  Inventory-sourcing decomposition: converting the monolithic external SM
+  census (premise P1 of the existing 2026-05-28 note) into a framework-internal
+  assembly with named residuals.
+science_branch: physics-loop/sm-gstar-matter-content-derivation-2026-05-29
+
+files_touched:
+  - docs/SM_GSTAR_FROM_FRAMEWORK_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_from_framework_structure_2026_05_29.py
+  - .claude/science/physics-loops/sm-gstar-matter-content/*
+
+open_imports_residuals:
+  - R-U1Y: U(1)_Y hypercharge gauge sector existence (unaudited)
+  - R-POL: massless-vector 2-polarization (unaudited; emergent-Lorentz under repair)
+  - R-HIGGS: single complex Higgs doublet minimality (assumed, not derived)
+  - R-MATTER: one-generation matter completion full theorem + neutral-singlet convention (unaudited)
+  - R-FSB: full fermionic Stefan-Boltzmann derivation (unaudited; 7/8 ratio retained)
+  - R-SPIN: per-site spin-1/2 carrier (audited_conditional)
+  - I12: RH-neutrino thermal exclusion (sector import)
+
+derived_from_retained:
+  - SU(3)_c sector + dim adj 8 (retained)
+  - SU(2)_L sector + dim adj 3 (retained)
+  - n_gen = 3 (retained)
+  - N_c = 3 (retained)
+  - spin-statistics cardinality (retained)
+  - fermion thermal weight ratio 7/8 (retained)
+  - hypercharge-value algebraic enumeration (retained_bounded)
+  - one-generation anomaly singlet completion (retained_bounded)
+
+no_go_routes:
+  - full-derivation/retained claim (firewall-blocked)
+  - bare-arithmetic-only deliverable (corollary churn vs 2026-05-28 note)
+  - single-Higgs-doublet minimality as gating step (deferred, hard open)
+
+trace_gate_classification: direct_blocker_closure / partially_closes
+review_findings: see REVIEW_HISTORY.md — local disposition pass; runner PASS=117 FAIL=0; vocab_lint 0 violations; no docs/audit/ touched
+pr_status: opening (note + runner + loop pack ready; committing + pushing + gh pr create)
+next_exact_action: >
+  Commit; push -u origin physics-loop/sm-gstar-matter-content-derivation-2026-05-29;
+  gh pr create; gh pr view --json number,url; queue residual retirements (HANDOFF.md).
+stop_condition: >
+  Single block; stop after PR opened (or PR_BACKLOG written) and HANDOFF queues
+  residual retirements.
+
+# --- Cycle 2 (2026-05-29): R-HIGGS attacked on the g_* census count ---
+cycle2:
+  science_branch: physics-loop/sm-gstar-higgs-sector-count-stretch-2026-05-29
+  residual_attacked: R-HIGGS (single complex SU(2)_L Higgs doublet count for the census)
+  files_touched:
+    - docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md
+    - scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
+    - .claude/science/physics-loops/sm-gstar-matter-content/{NO_GO_LEDGER,HANDOFF,STATE}.{md,yaml}
+  outcome: >
+    (a) EWSB-Higgs and flavor-sector-Higgs are DIFFERENT objects. Framework-native
+    EWSB scalar = one composite SU(2)_L doublet H_unit (4 dof; unique (1,1) scalar
+    composite on Q_L, D9/D16/D17, retained_bounded Ward; one-doublet EW bookkeeping
+    retained). The retained charged-lepton two-Higgs canonical reduction governs
+    Yukawa textures (two distinct effective Z_3 offsets; 7-real-parameter class A+B C)
+    realized WITHIN one doublet via H/tilde H and the gauge-redundant Z_3 charge q_H;
+    adds NO thermalized dof. A genuine two-thermalized-doublet 2HDM needs an independent
+    scalar = admitted extension, not retained.
+  g_star_consequence: "106.75 stands (110.75 only under an admitted-extension second-doublet import)"
+  ewsb_vs_flavor: distinct
+  retained_two_higgs_governs: flavor-sector Yukawa textures (couplings), not thermalized field content
+  trace_gate_classification: direct_blocker_closure / partially_closes (census-count content of R-HIGGS)
+  claim_type: bounded_theorem
+  runner_result: PASS=51 FAIL=0
+  review_findings: vocab_lint 0 violations; no docs/audit/ touched
+  pr_status: opening (note + runner + loop pack ready; committing + pushing + gh pr create)
+  still_open: flavor-sector Yukawa textures (7 quantities); R-POL, R-U1Y, R-MATTER, R-FSB, R-SPIN, I11, I12 unchanged

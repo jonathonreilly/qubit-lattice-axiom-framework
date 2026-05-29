@@ -1,0 +1,8 @@
+goal: repair audited conditional no_per_site_chirality row by narrowing to supplied Pauli M2C no-go
+target_claim: no_per_site_chirality_theorem_note_2026-05-02
+target_note: docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md
+target_runner: scripts/no_per_site_chirality_check.py
+audit_blocker: missing framework H_x to single 2D Pauli chirality module bridge
+route: remove framework carrier identification and keep exact supplied-Pauli M_2(C) no-go
+axiom_count_delta: 0
+status_claim: bounded/no-go support only; independent audit owns all verdict changes

@@ -29,6 +29,8 @@ reachability_to_target: partially_closes
 proposal_allowed: false
 audit_required_before_effective_retained: true
 review_disposition: local_pass
-pr_status: pending
+pr_status: open_draft
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2179
 next_exact_action: >
-  Commit, push, and open a review PR for this conditional-repair batch.
+  Independent reviewer/auditor should review draft PR 2179. Next science-fix
+  work should start from current origin/main unless intentionally stacking.

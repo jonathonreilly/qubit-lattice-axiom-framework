@@ -21,3 +21,8 @@ Disposition: `PASS WITH BOUNDED RE-AUDIT`.
 
 The branch repairs exactly the auditor-stated blockers and preserves the
 independent audit boundary.
+
+## PR
+
+Draft PR:
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2179>

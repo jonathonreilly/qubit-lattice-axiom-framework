@@ -36,6 +36,9 @@ No audit verdicts were applied in this branch.
 
 ## Next
 
-Open the review PR. The next likely science-fix target is the per-site
-finite-algebra cluster around bosonic CCR, spin-half, and integer-spectrum
-rows.
+Draft PR:
+
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2179>
+
+The next likely science-fix target is the per-site finite-algebra cluster
+around bosonic CCR, spin-half, and integer-spectrum rows.

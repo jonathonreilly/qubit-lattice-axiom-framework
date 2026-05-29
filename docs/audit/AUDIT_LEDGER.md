@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 605 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1142 |
+| unaudited | 1141 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 939 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1378 |
+| `unaudited` | 1377 |
 
 | claim_type | count |
 |---|---:|
@@ -1112,6 +1112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -11080,6 +11081,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The scoped claim closes. The retained one-hop dependencies supply the well-defined finite periodic SU(3) Wilson plaquette observable, the accepted 3+1D Wilson surface combinatorics, and the boundary that analytic P(6) and constant-lift closure remain unavailable. The runner source and SHA-pinned cache align on seed 42, beta=6, periodic 4D finite volumes, cold-start SU(3) links, Gell-Mann Metropolis updates, and broad L=2/L=3 plaquette support checks.
 - **rationale:** Clean for the stated bounded theorem. The source note, one-hop retained dependencies, runner source, and cached output align on the same finite-volume 3+1D periodic Wilson plaquette computation. The claim uses 0.5934 only as contextual comparator and does not overclaim analytic P(6), autocorrelation-controlled thermodynamic extrapolation, or infinite-volume closure.
 - **auditor confidence:** medium_high
+
+### `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`
+
+- **Note:** [`PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Given the listed hard-coded SU(3) plaquette coefficient packet and the beta=6 MC comparator, the tested finite weak-coupling/tadpole/Pade grid remains near <P>~0.91 and does not reach <P>_MC=0.5934.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-235545-916ea864-plaquette_beta6_perturba`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** No combination of finite-order PT truncation, tadpole improvement, and Pade resummation tested in the runner brings <P>_analytic within 5% of the MC value.  _(class `D`)_
+- **chain closes:** False — The finite arithmetic over the supplied coefficients closes conditionally, but the retained chain does not close because the NSPT coefficient packet, MC comparator, and F2 scale are imported external inputs with no supplied retained authority. The source also contains a precision overstatement in the tadpole-improved Pade family.
+- **rationale:** The runner genuinely computes the truncations, fixed points, and Pade grids from its hard-coded coefficient list; it is not merely printing PASS constants. However, the load-bearing coefficient packet, <P>_MC=0.5934 comparator, and F2_SCALE_PERCENT are external imported values, so the result is a comparator-bound arithmetic check rather than a class C derivation from the framework baseline. The source also overstates the T4 tadpole-improved Pade precision: runner output gives [1/2]_TI=0.910668 and [2/1]_TI=0.910645, which are more than 1e-5 away from 0.910550, although the broad >5% obstruction still holds. The no-go rhetoric is otherwise scoped to the tested finite weak-coupling/tadpole/Pade route and leaves non-perturbative routes open.
+- **auditor confidence:** high
 
 ### `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10`
 

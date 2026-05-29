@@ -1,0 +1,57 @@
+======================================================================
+(PC1) Hypercubic dispersion expansion (staggered + Laplacian)
+======================================================================
+PASS: PC1a: fermion leading term is p^2 (isotropic, dim-4 kinetic)
+PASS: PC1b: boson leading term is p^2 (isotropic, dim-4 kinetic)
+PASS: PC1c: fermion has NO O(a^1) (dimension-5) anisotropy term
+PASS: PC1d: boson has NO O(a^1) (dimension-5) anisotropy term
+PASS: PC1e: fermion O(a^2) term equals (-1/3) sum_i p_i^4 (dim-6)
+PASS: PC1f: boson O(a^2) term equals (-1/12) sum_i p_i^4 (dim-6)
+PASS: PC1g: anisotropy operator degree (4) = kinetic degree (2) + 2 -> two extra mass dimensions -> dimension-6 operator
+======================================================================
+(PC2) O_h-singlet (cubic-harmonic) count per angular momentum l
+======================================================================
+PASS: PC2.l0: O_h-singlet count at l=0 is 1
+PASS: PC2.l1: O_h-singlet count at l=1 is 0
+PASS: PC2.l2: O_h-singlet count at l=2 is 0
+PASS: PC2.l3: O_h-singlet count at l=3 is 0
+PASS: PC2.l4: O_h-singlet count at l=4 is 1
+PASS: PC2.l5: O_h-singlet count at l=5 is 0
+PASS: PC2.l6: O_h-singlet count at l=6 is 1
+PASS: PC2.l7: O_h-singlet count at l=7 is 0
+PASS: PC2.l8: O_h-singlet count at l=8 is 1
+PASS: PC2.l9: O_h-singlet count at l=9 is 1
+PASS: PC2.l10: O_h-singlet count at l=10 is 1
+PASS: PC2*: lowest l with a NON-trivial (l>0) O_h singlet is l = 4 -> first SO(4)-breaking O_h-invariant angular structure is l=4
+======================================================================
+(PC3) Angular decomposition of leading anisotropy (l=4, normalized convention)
+======================================================================
+PASS: PC3*a: Y_{0,0} is unit-normalized
+PASS: PC3*b: Y_{4,0} is unit-normalized
+PASS: PC3*c: Y_{4,+4} is unit-normalized
+PASS: PC3*d: Y_{4,-4} is unit-normalized
+PASS: PC3a: isotropic projection <f|Y00> Y00 = 3/5 (l=0 part)
+PASS: PC3b: zonal l=4 projection <f|Y_{4,0}> = 4 sqrt(pi)/15 (exact)
+PASS: PC3c: full l=0 + l=4 reconstruction closes (symbolic, ==0)
+PASS: PC3d: no sin(4 phi) content (<f|Y_{4,-4}> = 0)
+   max|LHS - reconstruction| over 200000 directions = 6.661e-16
+PASS: PC3e: pointwise reconstruction holds to < 1e-12
+PASS: PC3f: <f | Y_{2,0}> = 0 (no l=2 contamination)
+PASS: PC3g: sum_i n_i^4 = 1 along [001] axis
+PASS: PC3h: sum_i n_i^4 = 1/3 along [111] diagonal (factor-3 ratio)
+======================================================================
+(PC4) Gaussian-fixed-point power-counting (d=4)
+======================================================================
+PASS: PC4a: dimension-4 operator is marginal (y = 0) in d=4
+PASS: PC4b: dimension-5 operator has y = -1 (irrelevant)
+PASS: PC4c: dimension-6 operator has y = -2 < 0 -> IRRELEVANT at the Gaussian FP in d=4 (load-bearing power-counting input)
+PASS: PC4d: dim-6 coupling carries mass-dimension -2 -> a^2 suppression (O(a^2) corrections, vanish as a->0)
+PASS: PC4e: sign-convention sanity -- dimension-2 (mass) operator is relevant (y = +2 > 0)
+======================================================================
+(PC5) Conditionality / vacuity guard
+======================================================================
+PASS: PC5a: runner does NOT verify continuum-limit existence (antecedent is the explicit open gate; implication only)
+PASS: PC5b: note proves the IMPLICATION only; power-counting irrelevance is vacuous content without the antecedent
+======================================================================
+PASS=38  FAIL=0
+======================================================================

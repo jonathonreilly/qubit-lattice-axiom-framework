@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 164 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 594 |
+| **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1196 |
+| unaudited | 1195 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 23 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 921 |
+| `audited_clean` | 922 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1432 |
+| `unaudited` | 1431 |
 
 | claim_type | count |
 |---|---:|
@@ -418,6 +418,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_bridge_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -5539,6 +5540,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In temporal gauge each mixed plaquette holonomy reduces to U_(tau+1)(x,mu) U_tau(x,mu)^-1, giving K as a product over spatial links, and Schur orthogonality gives integral_G chi_mu(U' U^-1) lambda_ij(U) dU = delta_{mu,lambda} d_lambda^-1 lambda_ij(U').  _(class `A`)_
 - **chain closes:** True — The source note closes from compact-group Haar measure, the stated temporal-gauge Wilson mixed plaquette structure, Fubini factorization, and standard Schur orthogonality. No one-hop dependency, SU(3) specialization, beta=6 value, source-sector bridge, full transfer operator, reflection positivity, or physical identification is needed.
 - **rationale:** The theorem is a genuine algebraic closure: temporal gauge makes each mixed plaquette depend only on the same spatial link on adjacent slices, so the mixed kernel factorizes, and central convolution diagonalizes on Peter-Weyl matrix coefficients with eigenvalue c_lambda/d_lambda. The marked/non-marked compression then follows by tensoring these one-link identities and dividing by the trivial-channel scalar. The runner is not a proof of the compact-group theorem because it checks finite Z_N cases, but it is consistent structural verification plus a useful negative control; the proof itself supplies the compact-group step through Schur orthogonality.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Purely formal finite-dimensional linear-algebra lemma for abstract `(S, eta, K)` on the class-sector space; no Wilson/Haar, beta=6, plaquette, or physical-identification closure was audited as in scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For arbitrary abstract finite-dimensional operators and data `(S, eta, K)`, defining `z_(p,q)=<chi_(p,q),S^(L_perp-1) eta>`, `rho=z/z_(0,0)`, `v=sum z chi`, and `Z(W)=<K(W),v>` makes the stated coefficient and evaluation relations follow by elementary linear algebra.  _(class `A`)_
+- **chain closes:** True — The narrowed in-scope claim closes because the displayed relations are definitions and immediate linear-algebra consequences of the abstract hypotheses. The physical beta=6 identification remains explicitly out of scope and is not used to close the audited claim.
+- **rationale:** After the 2026-05-28 narrowing, the load-bearing claim is only a formal if-premises-then-algebra lemma over arbitrary finite-dimensional `(S, eta, K)`. That claim is class A and does not require the four Wilson/Haar bridge authorities, which the note explicitly excludes from scope. The runner contains five theorem-style algebraic/finite structural checks and five cross-note support-string checks; it does not derive the physical Wilson/Haar identities, but the narrowed formal claim does not depend on those identities.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_bridge_support_note`

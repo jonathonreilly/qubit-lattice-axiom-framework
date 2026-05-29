@@ -109766,24 +109766,46 @@
       "verdict_rationale": "The theorem is a genuine algebraic closure: temporal gauge makes each mixed plaquette depend only on the same spatial link on adjacent slices, so the mixed kernel factorizes, and central convolution diagonalizes on Peter-Weyl matrix coefficients with eigenvalue c_lambda/d_lambda. The marked/non-marked compression then follows by tensoring these one-link identities and dividing by the trivial-channel scalar. The runner is not a proof of the compact-group theorem because it checks finite Z_N cases, but it is consistent structural verification plus a useful negative control; the proof itself supplies the compact-group step through Schur orthogonality."
     },
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T21:07:51.434461+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "Narrow finite structural-surface no-go only: on the runner's listed class-sector witness surface, the enumerated positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique beta=6 spatial-environment pair (S_6^env, eta_6) or a unique induced normalized three-sample datum. This does not audit any claim that the full beta=6 Wilson-parent/factorization/current-stack admissibility constraints fail, nor does it close explicit S_6^env, eta_6, rho_(p,q)(6), canonical P(6), or a global plaquette selector."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": "retained_no_go"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.5,
+        "runner_hash": "331ebb0dc75ae7c63c0fc6ffba81d8e7c72881a2e407207993cfb85d220be55d",
+        "transitive_descendants": 63
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed in-scope claim closes because the displayed relations are definitions and immediate linear-algebra consequences of the abstract hypotheses. The physical beta=6 identification remains explicitly out of scope and is not used to close the audited claim.",
       "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Purely formal finite-dimensional linear-algebra lemma for abstract `(S, eta, K)` on the class-sector space; no Wilson/Haar, beta=6, plaquette, or physical-identification closure was audited as in scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T21:07:51.434461+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -109792,19 +109814,19 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For arbitrary abstract finite-dimensional operators and data `(S, eta, K)`, defining `z_(p,q)=<chi_(p,q),S^(L_perp-1) eta>`, `rho=z/z_(0,0)`, `v=sum z chi`, and `Z(W)=<K(W),v>` makes the stated coefficient and evaluation relations follow by elementary linear algebra.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8ae9f221de987b642c0fc7ec2df8b50aa185200628ab6260b414e49e89cdf292",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream ledger consumers inherit only the formal-lemma scope and do not treat this row as a retained beta=6 Wilson/Haar matrix-element reduction.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -109971,18 +109993,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 5,
+        "B": 5,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 10
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction (Formal Algebraic Lemma)",
       "transitive_descendants": 63,
-      "verdict_rationale": null
+      "verdict_rationale": "After the 2026-05-28 narrowing, the load-bearing claim is only a formal if-premises-then-algebra lemma over arbitrary finite-dimensional `(S, eta, K)`. That claim is class A and does not require the four Wilson/Haar bridge authorities, which the note explicitly excludes from scope. The runner contains five theorem-style algebraic/finite structural checks and five cross-note support-string checks; it does not derive the physical Wilson/Haar identities, but the narrowed formal claim does not depend on those identities."
     },
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17": {
       "audit_date": null,
@@ -118954,11 +118976,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 7.022,
+      "load_bearing_score": 10.022,
       "load_bearing_step": "The cached runner and direct rerun exhibit two admissible normalized beta-side witnesses on the listed structural surface: symmetry/swap errors are below 1e-12, rho_A(0,0)=rho_B(0,0)=1, max |rho_A-rho_B|=0.060847050322, and the same rank-3 left sample operator sends them to different normalized triples with max |Zhat_A-Zhat_B|=0.121575423874 and imaginary residue 4.093e-14.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "befe094fc9d7b81824d32c99e773674d911887199212d66e31a719d9ac7c9420",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
       "notes_for_re_audit_if_any": "Re-audit if this row is cited as ruling out the full beta=6 Wilson-parent/factorization/current-stack route, as proving nonexistence or nonuniqueness of the actual Wilson environment transfer, as closing explicit S_6^env/eta_6/rho_(p,q)(6), or if additional full-stack admissibility constraints are added that apply to the two witnesses.",

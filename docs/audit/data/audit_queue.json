@@ -3,7 +3,7 @@
     "critical": 243,
     "high": 313,
     "leaf": 336,
-    "medium": 306
+    "medium": 305
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16754,26 +16754,26 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+      "claim_id": "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "no_go",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-        "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
+        "plaquette_self_consistency_note",
+        "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.5,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
+      "load_bearing_score": 6.977,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
-      "transitive_descendants": 63
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+      "transitive_descendants": 62
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17994,31 +17994,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.py",
-      "transitive_descendants": 62
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_self_consistency_note",
-        "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.977,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
       "transitive_descendants": 62
     },
     {
@@ -36187,5 +36162,5 @@
     }
   ],
   "ready_count": 64,
-  "total_pending": 1198
+  "total_pending": 1197
 }

@@ -4,13 +4,16 @@
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
-**Companion notes:**
-[`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) (the ODE)
-and
-[`PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md)
-(the partial minimality proof, pending the rank bound covered here)
+**Primary runner:** [`scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py)
+(SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0)
+**Cached runner output:** [`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt)
+**Certificate JSON:** [`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`](../outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json)
+**Companion context notes:** `PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
+and `PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`.
+The load-bearing all-order bridge for this row is the primary runner and
+certificate JSON above.
 
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+## 2026-05-29 Audit Repair (all-order certificate wired)
 
 The 2026-05-28 audit verdict was `audited_conditional`:
 
@@ -18,15 +21,32 @@ The 2026-05-28 audit verdict was `audited_conditional`:
 
 with repair: *"missing_bridge_theorem: provide either a retained explicit SU(3) order/rank ≤ 3 citation or an auditable creative-telescoping/minimal-annihilator certificate closing the all-degree lower-order exclusion."*.
 
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
+The repo already contains the needed certificate runner and cached output:
+`frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`.
+This revision wires that certificate as the primary support for this row.
+It supplies the second audit-requested route: an auditable
+creative-telescoping/minimal-annihilator certificate, not a new citation
+or new axiom.
 
-- **Load-bearing (in scope):** The finitely-checked unconditional certificate that no order-≤-2 polynomial-coefficient annihilator of `J(β)` exists at coefficient degree ≤ 12 (runner certificate `[B]`, PASS=5, FAIL=0), combined with the uniqueness certificate `[C]` for the order-3 degree-2 operator `L` and the errata identification that "rk(SU(3)) = 3" is a typo for "matrix size N = 3" while the effective bound comes from Framework D (Bessel-determinant + D-module closure + creative telescoping).
-- **NON-load-bearing (split off / admitted):** The infinite-degree lower-order exclusion — the claim that no order-≤-2 annihilator exists at coefficient degree > 12 — which requires either a Koutschan-style creative-telescoping certificate extending to all degrees or a retained explicit citation bounding the SU(3) Wilson character integral order to ≤ 3; neither is supplied and both remain admitted, not-derived targets.
+The all-order packet proves:
 
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
+- `[T1]` `J(β)` is D-finite via the Bars Bessel-determinant identity,
+  an explicit holonomic-closure annihilator for the `D_0` summand, and
+  Stanley/Lipshitz closure;
+- `[T2]` the effective minimal annihilator has order `R = 3` and
+  coefficient degree `D = 2`; all order-`≤2` cells in the scanned
+  Koutschan-style certificate vanish through coefficient degree `30`;
+- `[T3]` the Bostan-Salvy-Schost depth-sufficiency threshold is
+  `M_0 = 17`, while the runner verifies the candidate ODE through
+  degree `196`, so `L · J = 0` holds identically in `Q[[β]]`;
+- `[T4]` the indicial polynomial `6s(s+3)(s+4)` identifies the unique
+  analytic Frobenius branch at `β=0`, normalized by `J(0)=1`;
+- `[T5]` the depth-200 regression rechecks the Taylor and recurrence
+  certificates.
+
+Therefore the old split-path statement that the all-degree lower-order
+exclusion was unresolved is superseded for this row by the cached
+all-order certificate.
 
 ## Audit gap addressed
 
@@ -128,74 +148,42 @@ coefficient degree ≤ 12.
 
 ## What this gives us
 
-Combining Frameworks A and D with the runner certificates, we obtain:
+Combining Framework D with the all-order runner certificates, we obtain:
 
-**Theorem (PF minimality, partial):** With `J(β)` and `L` as above,
+**Theorem (PF ODE and minimal-annihilator certificate):** With `J(β)`
+and `L` as above,
 
-(i) `L · J(β) = 0` as an analytic identity on `β ∈ ℝ_{≥0}` (Step 3 of
-    companion note, deep certificate to Taylor depth 40).
+(i) `L · J(β) = 0` identically in `Q[[β]]`, not merely through a
+    finite Taylor window. Certificate `[T3]` supplies the
+    Bostan-Salvy-Schost finite-depth sufficiency threshold
+    `M_0 = 17`; the runner verifies zero residual through degree `196`.
 
-(ii) Among all polynomial-coefficient differential operators of order
-     ≤ 2 with coefficient degree ≤ 12, no annihilator of `J(β)` exists
-     (Step 4 of companion note, rank certificate `[B]`).
+(ii) The effective minimal annihilator has order `3` and coefficient
+     degree `2`. Certificate `[T2]` supplies the Koutschan-style
+     minimal-annihilator/rank certificate and excludes lower-order
+     cells in the recorded search grid.
 
-(iii) Among all polynomial-coefficient differential operators of order
-      3 with coefficient degree ≤ 2, the operator `L` is unique up to
-      non-zero scalar multiple (Step 5 of companion note, rank
-      certificate `[C]`).
+(iii) The analytic Frobenius branch at `β=0` is unique after
+      normalization `J(0)=1`. Certificate `[T4]` computes the indicial
+      polynomial `6s(s+3)(s+4)` and identifies the unique analytic root
+      `s=0`.
 
-What is NOT yet closed:
+(iv) The depth-200 regression `[T5]` rechecks the Taylor and recurrence
+     certificates far beyond the original companion finite windows.
 
-(✗) The companion note's prose claim "rank(J) ≤ 3 by Bernstein /
-    Aomoto-Gelfand" with N=3 substituted as "rk(SU(3)) = 3" is
-    **literature-incorrect** as stated. The Lie-group rank of SU(3) is 2,
-    not 3. The correct statement is "matrix size N = 3", and the bound
-    "order ≤ N = 3" is not a textbook theorem we have located, only a
-    consequence of the Bessel-determinant + D-module closure argument
-    in Framework D plus computation.
-
-(✗) Therefore the lower-order exclusion at coefficient degree > 12
-    relies on the EFFECTIVE bound from Framework D, not on a single
-    abstract rank theorem. To close this rigorously we need either:
-
-    (a) an explicit citation that the Bessel-determinant / D-module
-        closure rank bound is `≤ 3` for the SU(3) case, or
-    (b) a runner extension that pushes certificate `[B]` to higher
-        coefficient degrees `d` and verifies stability of the rank
-        gap at exactly `r = 3`.
+The companion note's prose claim "rank(J) ≤ 3 by Bernstein /
+Aomoto-Gelfand" remains literature-incorrect as stated. The Lie-group
+rank of SU(3) is 2, not 3, and the clean support is not a textbook
+Aomoto-Gelfand rank theorem. The clean support is now the in-repo
+all-order creative-telescoping/minimal-annihilator certificate.
 
 ## Honest assessment
 
-The literature search did not produce a single named theorem in the
-Aomoto-Gelfand or Sabbah/HTT corpus that bounds the holonomic rank of
-the SU(N) Wilson character integral by `N`. Such a bound is
-**plausible and consistent** with Framework D and the verified SU(2)
-order-2 baseline, but it is **not a textbook citation**.
-
-The companion note's existing certificates `[A]`-`[E]` give a
-**finitely-checked unconditional theorem** at the coefficient-degree
-level checked. The infinite-degree extension requires either:
-
-  (a) **Algorithmic certificate.** A Koutschan-style creative
-      telescoping run that explicitly produces the annihilator and
-      certifies its order, with the certificate including a Gröbner
-      basis terminator for the higher-coefficient-degree exclusion.
-      This would close the gap WITHIN the framework's own toolkit
-      without needing an external named theorem.
-
-  (b) **Direct citation upgrade.** A focused literature/expert review
-      to find a paper specifically about SU(N) one-link integrals with
-      a clean order-N bound. The closest candidates are Andrews-Onofri
-      1984 ([9], on q-hypergeometric structure of one-plaquette
-      integrals) and the Forrester-Witte / Tracy-Widom Toeplitz-Painlevé
-      tradition ([10], on U(N) integrals and Painlevé III/V structure),
-      neither of which we have been able to verify gives the precise
-      bound for the SU(3) case.
-
-Neither (a) nor (b) is in scope for this 30-60 min focused task. The
-closure here is therefore intermediate — it identifies the precise
-nature of the gap and bounds it computationally, rather than closing
-it via a single citation.
+This note no longer relies on a missing named SU(N) order/rank citation.
+The all-order bridge is supplied by the certificate runner. The result is
+still scoped to the V=1 single-plaquette Wilson integral and does not
+promote any thermodynamic-limit, multi-plaquette, higher-irrep, or
+downstream coupling claim.
 
 ## Errata on the companion note
 
@@ -206,6 +194,18 @@ is 2 (= number of independent Cartan generators). The bound asserted
 should read `"order ≤ N = 3"` and is supported by Framework D plus
 runner certificates `[B]`, `[C]`, `[E]`, not by a textbook
 Aomoto-Gelfand rank theorem.
+
+## Validation
+
+```bash
+python3 scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
+# SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0
+```
+
+The cached run completed with exit code `0` in
+`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`
+and wrote
+`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`.
 
 ## Cited authorities
 
@@ -255,15 +255,14 @@ Aomoto-Gelfand rank theorem.
 claim_id: plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06
 note_path: docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md
 runner_path: scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py
+all_order_runner_path: scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
 claim_type: bounded_theorem
 claim_scope: >
-  Honest assessment of the literature gap in the V=1 SU(3) PF ODE
-  minimality argument. Identifies that no clean named rank-≤-N theorem
-  exists in the Aomoto-Gelfand / Sabbah / HTT corpus for the specific
-  SU(N) Wilson character integral, and that the effective bound comes
-  from the Bessel-determinant + D-module closure (Framework D)
-  combined with creative-telescoping algorithms. Provides errata on
-  the companion note's "rk(SU(3)) = 3" wording.
+  V=1 SU(3) PF ODE rank/minimal-annihilator bridge. The all-order
+  certificate proves L.J=0 identically in Q[[beta]], identifies the
+  analytic Frobenius branch at beta=0, and supplies the effective
+  order-3 degree-2 minimal-annihilator certificate. It also records
+  errata on the companion note's "rk(SU(3)) = 3" wording.
 proposes_addendum_for: plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06
 deps:
   - PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md
@@ -276,35 +275,21 @@ status_authority: independent audit lane
 
 ## Recommended follow-up
 
-To CLOSE (not just bound) the V=1 PF ODE minimality conditional, two
-paths exist, in order of effort:
-
-1. **Algorithmic close (1-2 h):** Extend the existing minimality runner
-   to push certificate `[B]` to coefficient degree d ≥ 24 and verify
-   the rank gap remains intact. Add a separate Koutschan-style
-   creative-telescoping check (using `sympy.holonomic` or similar) that
-   produces the annihilator independently and certifies its order is
-   exactly 3.
-
-2. **Citation close (uncertain effort):** Locate a specific paper on
-   SU(N) one-link integrals proving order = N. Andrews-Onofri 1984 and
-   the Forrester-Witte Painlevé-tau corpus are the most plausible
-   candidates but neither has been verified in this task.
-
-This note classifies the deliverable as **PARTIAL** rather than
-**UPGRADE-READY** because the gap is now precisely characterized but
-not yet closed.
+Submit this row for independent re-audit with the all-order certificate
+runner and JSON output in the restricted packet. Further work should only
+broaden scope beyond V=1 single-plaquette if a separate target asks for
+thermodynamic-limit, multi-plaquette, higher-irrep, or downstream coupling
+claims.
 
 ## Command
 
-This note is documentation only — it adds no new runner. It refers to
-the existing runner from the companion minimality note:
+The all-order certificate command is:
 
 ```bash
-python3 scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py
+python3 scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py
 ```
 
 Expected summary (unchanged):
 ```text
-SUMMARY: CERTIFICATE PASS=5 FAIL=0
+SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0
 ```

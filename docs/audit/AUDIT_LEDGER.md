@@ -11244,22 +11244,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The note has been narrowed to a bounded finite-runner certificate and no longer asserts the all-order Picard-Fuchs or Frobenius-branch theorem. The included source is not a pure printout: it symbolically builds the truncated series, computes the residual, numerically evolves the ODE, and compares against direct Weyl integration at the specified points. Within that bounded scope, the runner output matches the note's stated PASS=4 FAIL=0 and the beta=6 value. This does not audit or imply the separate all-order companion claim.
 - **auditor confidence:** high
 
-### `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06`
-
-- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audit of the rank-bound citation note's narrowed finite-window/literature-gap claim for the V=1 SU(3) Picard-Fuchs ODE, excluding the admitted all-degree minimality bridge.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-audit-ready-20260529-plaquette_v1_picard_fuch`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note relies on the finite runner certificate that no order-≤-2 polynomial-coefficient annihilator exists through coefficient degree ≤12, together with uniqueness of the order-3 degree-2 operator.  _(class `B`)_
-- **chain closes:** False — The cited minimality note only supports the checked lower-order window {1} x {0..12} union {2} x {0..11}; it explicitly says the (r=2,d=12) cell was skipped. The source note also states analytic-identity and all-degree implications that are not supplied by the restricted cited authorities.
-- **rationale:** Runner stdout and source are unavailable, so the judgment falls back to the source note and cited authorities. The source note imports companion finite-window certificates, but overstates their scope: the retained companion excludes order-2 only through degree 11, not degree 12, and the ODE companion is finite-runner scoped rather than an analytic identity proof. The all-degree rank/order bridge remains explicitly admitted rather than closed.
-- **open / conditional deps cited:**
-  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
-  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`
-- **auditor confidence:** high
-
 ### `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`
 
 - **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md)

@@ -1,0 +1,24 @@
+loop: picard-fuchs-all-order-wire-20260529
+branch: physics-loop/picard-fuchs-all-order-wire-20260529
+target_claim_id: plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06
+actual_current_surface_status: unaudited
+branch_author_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: wire existing all-order creative-telescoping certificate
+files_touched:
+  - docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md
+open_imports:
+  - thermodynamic-limit and multi-plaquette claims remain out of scope
+new_axioms: false
+review_loop_disposition: not_run_user_delegated_to_reviewer
+audit_required_before_effective_retained: true
+pipeline_result:
+  audit_status: unaudited
+  effective_status: unaudited
+  queue_ready: true
+  queue_rank: 851
+  open_dependency_paths: []
+next_exact_action: independent audit of the repaired row
+stop_condition: science block packaged as draft PR

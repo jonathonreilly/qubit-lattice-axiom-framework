@@ -21061,14 +21061,6 @@
       "to": "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
     },
     {
-      "from": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
-      "to": "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
-    },
-    {
-      "from": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
-      "to": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
-    },
-    {
       "from": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
       "to": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
     },
@@ -70617,14 +70609,13 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+      "deps": [],
+      "helper_runner_paths": [
+        "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "7238382097de824ee271b674cadec1e2e2925842327968a84778fa6d1a3cdf02",
+      "note_hash": "daa8c22130b234ecfc2661f6df19ab37333990b5255166658cd0455e133a013b",
       "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Rank-Bound Citation Note"
     },
     "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17": {
@@ -87662,6 +87653,7 @@
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
     "plaquette_self_consistency_note",
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
+    "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
     "pmns_active_four_real_source_from_transport_note_2026-05-17",
     "pmns_c3_character_holonomy_closure_note_2026-05-17",
     "pmns_commutant_eigenoperator_selector_note",

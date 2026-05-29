@@ -1,0 +1,40 @@
+
+========================================================================
+(1) single democratic coupling G -> uniform-only, r=0, Q=1/3
+========================================================================
+   G      a        b        r      Q
+   1.0   +0.5326  +0.0000   0.000  0.3333
+   2.0   +0.9660  +0.0000   0.000  0.3333
+   3.0   +1.3367  +0.0000   0.000  0.3333
+   5.0   +1.9629  +0.0000   0.000  0.3333
+
+========================================================================
+(2) enhance the staggered coupling Gs/Gu -> b still 0 (uniform suppresses it)
+========================================================================
+   Gs/Gu   a        b        r
+   1.0     +0.9660  +0.0000   0.000
+   2.0     +0.9660  +0.0000   0.000
+   4.0     +0.9660  +0.0000   0.000
+
+========================================================================
+(3) pure-staggered branch (Gu=0) -> no condensation (competing orders)
+========================================================================
+   Gs=3.0: a=+0.0000 b=+0.0000
+   Gs=5.0: a=+0.0000 b=+0.0000
+
+========================================================================
+(4) r=1/2 (Q=2/3) is a uniform-staggered COEXISTENCE / multicritical point
+========================================================================
+   Q=2/3 <=> r=|b|^2/a^2 = 1/2 <=> b/a = 1/sqrt2 = 0.7071 (both condensates ON).
+   Mean-field selects uniform-only (b=0); coexistence at b/a=0.707 is NOT generic.
+
+========================================================================
+VERDICT
+========================================================================
+  Self-consistency does NOT force r=1/2. Mean-field forces r=0 (Q=1/3, degenerate)
+  -- the democratic default again. Q=2/3 = uniform-staggered condensate coexistence
+  (multicritical) at b/a=1/sqrt2; the generic dynamics does not select it. Wall not
+  broken but LOCATED: 2/3 is a multicritical condition. Caveats: mean-field; the
+  density-wave contact interaction is a MODEL, not the derived (bridge-gap) action.
+  Next: does the true action / fluctuations / an enhanced symmetry at coexistence
+  select b/a=1/sqrt2? (multicritical points are sometimes symmetry-selected).

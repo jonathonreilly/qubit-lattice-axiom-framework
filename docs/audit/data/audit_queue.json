@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 243,
     "high": 313,
-    "leaf": 313,
+    "leaf": 312,
     "medium": 294
   },
   "cycle_break_target_count": 0,
@@ -26128,33 +26128,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ew_current_matching_ozi_suppression_theorem_note_2026-04-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "rconn_derived_note",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_color_projection_mc.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "exponent_derivation",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35308,6 +35281,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 33,
-  "total_pending": 1163
+  "ready_count": 32,
+  "total_pending": 1162
 }

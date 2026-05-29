@@ -93359,24 +93359,46 @@
       "verdict_rationale": "Five-judge panel majority 4/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is exact class-A representation algebra over the retained SU(3)/N_c = 3 input, with no external comparator and no tuned numerical input. The runner checks real SU(N) generator normalization, Fierz completeness, dimension counting, and citation hygiene, but it does not turn the algebraic corollary into an independent physical theorem. Under the rubric's clean-vs-decoration tie-break, the closed content is decoration of the retained SU(3) parent, while the matching rule (M) remains explicitly outside the audit scope. | The scoped claim is exact class-A algebra: Fierz completeness and the 1 plus adjoint decomposition over the retained SU(3) color structure. There are no external comparators or tuned inputs, and the note explicitly excludes the matching rule (M), so the physical 9/8 EW correction is not closed here. Under the tie-break rule, because the closed content reduces to standard mathematics applied to a single retained SU(3) parent, the proper terminal tuple is decoration rather than an independent positive-theorem clean result. | The load-bearing step is a standard algebraic representation-dimension identity over the retained SU(3) parent, with no external comparator and no tuned numerical input. The runner checks real SU(N) algebra, Fierz completeness, and the exact Fraction(8,9), but it does not make this an independent physical theorem. Because the note explicitly excludes deriving matching rule (M) and the closed content is only the algebraic channel fraction, the decoration verdict is the applicable tuple. | Both audits correctly identify the load-bearing step as class A and agree that the scoped channel-fraction claim closes while matching rule (M) remains outside the result. Under the rubric's tie-breaker, a zero-comparator algebraic corollary that reduces to retained SU(3) structure plus standard Fierz/representation algebra is decoration rather than a new positive theorem. The runner supports the algebra and citation hygiene but does not turn the standard dimension-count corollary into an independent first-principles computation."
     },
     "ew_current_matching_ozi_suppression_theorem_note_2026-04-27": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T22:44:32.391161+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-224241-a1acaed5-ew_current_matching_ozi_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet supplies exact Fierz/channel-count support for the 8/9 adjoint fraction and an R_conn MC corroboration, but it does not close the physical EW connected-trace selector or a retained derivation identifying the EW disconnected topology with the claimed O(1/N_c^2) coefficient family. The runner checks the sibling R_conn observable, not the EW disconnected-current vacuum polarization.",
       "claim_id": "ew_current_matching_ozi_suppression_theorem_note_2026-04-27",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded claim that EW disconnected-current vacuum-polarization contributions are parametrically O(1/N_c^2) relative to the connected color trace, excluding any exact 9/8 coefficient.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T22:44:32.391161+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -93385,22 +93407,25 @@
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Each EW-current insertion is assigned a singlet-projector factor of 1/N_c, so Pi_EW^disc / Pi_EW^conn ~ (1/N_c^2) h(lambda), and the physical continuum readout is then taken to be connected up to O(1/N_c^2).",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "bc354561cb4ac1fbdc0a4ae1158d898d05111d4b9519a42fc3994ec5e9943ce1",
       "note_path": "docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade EW current selector/disconnected-topology theorem or a dedicated runner/derivation that computes the EW disconnected-current contribution rather than the sibling R_conn ratio.",
+      "open_dependency_paths": [
+        "docs/RCONN_DERIVED_NOTE.md",
+        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-29T11:18:28.155608+00:00",
@@ -93522,18 +93547,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 1,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "EW Current Matching via OZI / Disconnected-Trace Suppression Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Both cited authorities explicitly leave the physical EW matching selector open: RCONN states kappa_EW is underdetermined, and the Fierz note names matching rule (M) as not derived. The source note admits the exact 9/8 bridge is non-load-bearing, but its displayed theorem still says the physical continuum-matched EW polarization is connected up to O(1/N_c^2), which requires that missing readout bridge. The displayed Wigner-Eckart/projector formula supplies at most a size-class argument and is not independently verified by the R_conn runner."
     },
     "ew_current_matching_rule_open_gate_note_2026-05-03": {
       "audit_date": "2026-05-23T14:29:39.084015+00:00",

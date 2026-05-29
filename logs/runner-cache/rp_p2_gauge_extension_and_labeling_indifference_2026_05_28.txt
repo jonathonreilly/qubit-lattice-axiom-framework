@@ -1,17 +1,9 @@
-===== runner cache v1 =====
-runner: scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py
-runner_sha256: 77ec52a654dbeb674b684dc4396710cd8eb217c71bcef2213387af579060e725
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.37
-status: ok
------ stdout -----
 ==============================================================================
-RP -> P2: FIXED-SU(3) GAUGE EXTENSION + LABELING-INDIFFERENCE EXHIBIT
+FIXED-GAUGE RP TRANSFER + STANDALONE RELABELING-INVARIANCE EXHIBIT
 ==============================================================================
 Staggered KS, temporal gauge U_0=1, m=0.5, eta_0=1, eta_1(t)=(-1)^t.
 Free case (free two-step transfer-matrix positivity row) was U=1 momentum-diagonal; here: fixed SU(3)/U(1),
-position space, config-by-config.  Labeling-indifference: det/spec/Z
+position space, config-by-config.  Relabeling invariance: det/spec/Z
 invariant under hw=1 triplet relabeling.
 
 ------------------------------------------------------------------------------
@@ -36,7 +28,7 @@ SAMPLED SU(3) PER-CONFIG POSITIVITY: fixed random spatial backgrounds
     spec(T2cl[U]) subset R_{>0}; T_hat^2[U]=B[U]^dag B[U]; H_hat[U]>=0
 ------------------------------------------------------------------------------
     configs=200  (SU(3), L_s=4, 3 colors -> 12 spatial modes)
-    max |Im(decay eig)| over configs   = 7.529e-16  (want ~0)
+    max |Im(decay eig)| over configs   = 7.234e-16  (want ~0)
     min decaying eigenvalue mu          = 1.458981e-01  (want >0)
     max decaying eigenvalue mu          = 3.819653e-01  (<=1)
     min single-particle eig(H_hat[U])   = 4.812127e-01  (>=0)
@@ -57,7 +49,7 @@ SAMPLED U(1) PER-CONFIG POSITIVITY (Abelian cross-check)
     sampled U(1) positivity = PASS
 
 ------------------------------------------------------------------------------
-B   LABELING-INDIFFERENCE: det(M_KS+mI), spec(H_hat), Z=Tr(e^{-beta H_hat})
+B   STANDALONE RELABELING INVARIANCE: det(M_KS+mI), spec(H_hat), Z=Tr(e^{-beta H_hat})
     invariant under hw=1 triplet relabeling (permutation conjugation)
 ------------------------------------------------------------------------------
     hw=1 triplet permutations tested    = 6 (all of S_3)
@@ -84,12 +76,10 @@ U-INTEGRATED RP REDUCTION (named deps, not re-derived here)
            REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)
       >= 0,  each factor non-negative.
 
-    RESIDUAL TIGHTENING (refines P2 phase-blindness bridge 'modulo AC_phi_lambda'):
-    RP positivity & P2 phase-blindness depend only on det(M_KS+mI) and
-    spec(H_hat) and Z, which are relabeling invariants. So they are
-    INDEPENDENT of substep-(4) AC_phi_lambda (hw=1 species LABELING).
-    Their realization dependence is substeps (1) Grassmann + (2) kinetic
-    structure ONLY -- bounded-closeable candidate (unaudited synthesis).
+    DOWNSTREAM CONTEXT NOT CLAIMED HERE:
+    This runner does not close any P2/AC_phi_lambda residual. It only
+    supplies the finite det/spec/Z relabeling-invariance facts that
+    downstream rows may cite after separate audit.
 
 ==============================================================================
 SCORECARD: PASS=7 FAIL=0
@@ -101,6 +91,3 @@ SCORECARD: PASS=7 FAIL=0
   spectrum invariance     : spec(H_hat) relabeling-invariant
   trace invariance        : Z=Tr(e^{-beta H_hat}) relabeling-invariant
 ==============================================================================
-
------ stderr -----
-

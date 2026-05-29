@@ -1,0 +1,8 @@
+goal: repair audited conditional RP/P2 gauge-extension row by narrowing to standalone transfer positivity plus det/spec/Z invariance
+target_claim: rp_p2_gauge_extension_and_realization_residual_note_2026-05-28
+target_note: docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md
+target_runner: scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py
+audit_blocker: missing P2 phase-blindness and AC_phi_lambda dependency edges for broader residual tightening
+route: remove downstream residual-tightening claim and keep standalone fixed-background transfer positivity plus relabeling invariance
+axiom_count_delta: 0
+status_claim: bounded support only; independent audit owns all verdict changes

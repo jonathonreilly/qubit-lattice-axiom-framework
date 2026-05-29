@@ -78,9 +78,26 @@ P_N is a Z_4 central extension of (Z_2 × Z_2)^N.
 **(M5) Element orders.** Every element g ∈ P_N satisfies g^4 = I_N. The
 orders of elements are 1, 2, or 4 (dividing 4 = order of central Z_4).
 
-**(M6) N-site generators count.** The minimal generating set has 3N elements
-(σ_{i, x} for i ∈ {1, 2, 3}, x ∈ {1, ..., N}). Each is involutory: σ_{i, x}^2
-= I_N.
+**(M6) Minimal generator count = 2N + 1.** The minimal generating set of
+P_N has exactly **2N + 1** elements, not 3N. The 3N involutory site-Paulis
+σ_{i, x} (i ∈ {1, 2, 3}, x ∈ {1, ..., N}) form a *generating* set, but it is
+not minimal for N ≥ 2 (the two counts coincide only at N = 1, where 3N =
+2N + 1 = 3). The center phase i·I is a **single global** scalar
+shared across the entire register — it does not have to be re-supplied per
+site. Once one site supplies the global phase, two anticommuting Paulis
+suffice on every additional site. A minimal generating set is therefore
+
+```text
+    {σ_{1, x}, σ_{3, x} : x = 1, ..., N}  ∪  {i·I_N}                       (3)
+```
+
+— that is, X_x and Z_x at each of the N sites (2N elements) plus one global
+phase generator (1 element), totalling 2N + 1. Equivalently one may drop
+the explicit i·I and instead include a single σ_{2, x} (one Y on a single
+site), which carries the global i; this is also a 2N + 1 set. Concretely:
+- N = 1: minimal = 3;
+- N = 2: minimal = 5;
+- N = 3: minimal = 7.
 
 ## Proof
 
@@ -153,15 +170,53 @@ sites). Squaring: g² = (phase)² · (each σ_a^2 = I_a) = (phase)² · I_N.
 Squaring again: g^4 = ((phase)²)² · I_N = ((phase)^4) · I_N = I_N (since
 (phase)^4 = 1 for phase ∈ Z_4) — establishing (M5).
 
-### Step 7 — Generator count (M6)
+### Step 7 — Minimal generator count = 2N + 1 (M6)
 
-Each σ_{i, x} is in the generating set; there are 3 choices of i × N choices
-of x = 3N generators. Each is involutory (σ_i^2 = I, hence σ_{i, x}^2 = I_N).
-Removing any generator would leave one of the per-site factors (σ_{i, x})
-unable to be reached without help from the others — but the per-site
-quotient at site x is Z_2 × Z_2 generated minimally by {σ_{1, x}, σ_{2, x}}
-plus {σ_{3, x} = i σ_{1, x} σ_{2, x}}. So 3 generators per site is sufficient
-and minimal up to normalization — establishing (M6). ∎
+The 3N site-Paulis σ_{i, x} generate P_N, but for N ≥ 2 they are not a
+*minimal* generating set, because the global phase i·I is shared and the
+third Pauli at each site is then redundant. (At N = 1 the counts coincide:
+3N = 2N + 1 = 3.)
+
+**Sufficiency (2N + 1 generate P_N).** Take the set (3):
+{σ_{1, x}, σ_{3, x} : x} ∪ {i·I_N}. Using X Z = −i Y (single-qubit Pauli
+identity), the third Pauli at each site is Y_x = σ_{2, x} = i σ_{1, x} σ_{3, x}.
+The factor i is available as the global generator (i·I_N), and σ_{1, x} = X_x,
+σ_{3, x} = Z_x are in the set, so each σ_{2, x} = (i·I_N) σ_{1, x} σ_{3, x}
+lies in the generated group. Hence every site-Pauli σ_{i, x} is generated,
+so the set generates all of P_N. This is 2N + 1 generators. (The runner confirms the
+generated order equals 4^{N+1} for N = 1, 2, 3.) The same holds for the
+alternative set {X_x, Z_x : x} ∪ {Y_1}: the single Y_1 = i X_1 Z_1 supplies
+the global i, after which every Y_x = i X_x Z_x follows.
+
+**Necessity (≥ 2N + 1, for any choice of generators).** Use the
+abelianization. The commutator subgroup is [P_N, P_N] = {±I_N}: any two
+site-Paulis either commute (disjoint sites, or equal) or anticommute, and
+g h g^{-1} h^{-1} = ±I_N in every case; closing under products keeps all
+commutators in {±I_N}, and σ_{1,x} σ_{3,x} σ_{1,x}^{-1} σ_{3,x}^{-1} = −I_N
+realises −I_N, so [P_N, P_N] = {±I_N} has order 2. Every g ∈ P_N satisfies
+g² ∈ {±I_N} (Step 6 with the central square), so in the quotient every
+element has order dividing 2: the abelianization
+
+```text
+    P_N / [P_N, P_N]   is elementary abelian of order  4^{N+1} / 2 = 2^{2N+1},
+```
+
+i.e. (Z_2)^{2N+1}, of rank 2N + 1. Any generating set of P_N must map onto
+a generating set of this quotient, and an elementary-abelian 2-group of
+rank r needs exactly r generators. Hence **every** generating set of P_N
+has at least 2N + 1 elements — independent of whether the generators are
+Paulis. (The runner verifies |[P_N, P_N]| = 2, the elementary-abelian
+quotient, and rank 2N + 1 for N = 1, 2.)
+
+Combining sufficiency and necessity: the minimal generating set size is
+exactly 2N + 1, establishing (M6). ∎
+
+**Why the earlier 3N count was wrong.** The 3N figure double-counted the
+phase: it implicitly treated the i·I phase as if it had to be re-supplied
+at each site (3 = 2 Paulis + 1 phase per site). But the center Z_4 is a
+single global subgroup of P_N, not a per-site tensor factor (Step 3): one
+phase generator serves all N sites. Per additional site only the two
+anticommuting Paulis X_x, Z_x are needed, giving 3 + 2(N − 1) = 2N + 1.
 
 ## Hypothesis set used
 
@@ -208,11 +263,19 @@ Positive theorem on the framework's multi-site Pauli group order, derived
 from a single cited one-hop dependency by tensor-product extension of
 the per-site result. The runner exhibits explicit BFS group generation
 for N = 1, 2, 3 (giving orders 16, 64, 256), the order formula 4^{N+1},
-center structure, quotient structure — all at machine precision.
+center structure, and quotient structure — all at machine precision. It
+additionally **asserts the minimal generator count 2N + 1** at machine
+precision: the 2N site-Paulis ⟨X_i, Z_i⟩ generate only the phaseless group
+of order 2·4^N and omit i·I (insufficient); a 2N + 1 generating set
+(site-Paulis + one phase, two distinct constructions) reaches the full
+4^{N+1}; no size-2N subset of the site-Pauli pool reaches the full group;
+and the abelianization P_N/[P_N, P_N] ≅ (Z_2)^{2N+1} has rank 2N + 1,
+giving a generator-type-independent lower bound. The corrected M6 count
+2N + 1 (not 3N) is thereby runner-verified, not prose-only.
 
 ```yaml
 claim_type_author_hint: positive_theorem
-claim_scope: "Multi-site Pauli group P_N has order 4^{N+1}; center Z(P_N) ≅ Z_4 (scalar phases); quotient ≅ (Z_2 × Z_2)^N; central extension 1 → Z_4 → P_N → (Z_2 × Z_2)^N → 1."
+claim_scope: "Multi-site Pauli group P_N has order 4^{N+1}; center Z(P_N) ≅ Z_4 (scalar phases); quotient ≅ (Z_2 × Z_2)^N; central extension 1 → Z_4 → P_N → (Z_2 × Z_2)^N → 1; minimal generating set has 2N+1 elements (global phase shared across the register, not re-supplied per site)."
 upstream_dependencies:
   - axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29
 admitted_context_inputs:

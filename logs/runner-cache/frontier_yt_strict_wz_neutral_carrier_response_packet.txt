@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py
+runner_sha256: 48f9c92150f9086f5c4deaf49ba252502c50e984a834ee0943b61dc7521a1d16
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+==============================================================================
+Y_T STRICT W/Z NEUTRAL-CARRIER RESPONSE PACKET
+==============================================================================
+
+Part 1: anchors and authority scope
+[PASS] docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md exists
+[PASS] docs/EW_COUPLING_DERIVATION_NOTE.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Strict W/Z Response Rows
+[PASS] note contains required section: What This Closes
+[PASS] note contains required section: What This Still Does Not Close
+[PASS] note contains required section: Why This Is Not A Renaming
+[PASS] note contains required section: Review Boundary Certificate
+[PASS] EW Higgs gauge-mass theorem is retained
+[PASS] source-action support packet is retained_bounded
+[PASS] one-Higgs top carrier is not retained authority yet
+[PASS] hypercharge uniqueness is not retained authority yet
+[PASS] EW coupling note is not retained g_2(v) authority
+
+Part 2: neutral ray tangent
+[PASS] H(s) lies on neutral P_- ray: Matrix([[0], [sqrt(2)*v(s)/2]])
+[PASS] dH/ds lies on neutral P_- ray: Matrix([[0], [sqrt(2)*Derivative(v(s), s)/2]])
+[PASS] dH/ds is Q-neutral: Matrix([[0], [0]])
+
+Part 3: strict W/Z response rows
+[PASS] dM_W/ds row: g_2*Derivative(v(s), s)/2
+[PASS] dM_Z/ds row: sqrt(g_2**2 + g_Y**2)*Derivative(v(s), s)/2
+[PASS] W/Z response ratio cancels source Jacobian: g_2/sqrt(g_2**2 + g_Y**2)
+[PASS] absolute W response recovers radial Jacobian if g_2 is known: Derivative(v(s), s)
+
+Part 4: source-coordinate reparameterization
+[PASS] W/Z response ratio invariant under s=f(r): g_2/sqrt(g_2**2 + g_Y**2)
+
+Part 5: current Y_T closure boundary
+[PASS] strict W/Z denominator response is closed
+[PASS] symbolic top response row is present
+[PASS] coefficient-certified top response remains absent
+[PASS] one-Higgs top carrier is not retained authority yet
+[PASS] hypercharge uniqueness is not retained authority yet
+[PASS] physical-scale g_2 is not retained authority yet
+[PASS] retained Y_T closure is not allowed from W/Z denominator rows alone
+
+Part 6: firewalls
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: `yt_ward_identity`
+[PASS] firewall phrase present: `y_t_bare`
+[PASS] firewall phrase present: observed W/Z/top masses
+[PASS] firewall phrase present: PDG values
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: fitted selector
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: This packet derives `y_t`
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+[PASS] forbidden overclaim absent: coefficient-certified top response rows are present
+[PASS] forbidden overclaim absent: physical-scale `g_2(v)` is retained
+
+wrote outputs/yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json
+SUMMARY: PASS=47 FAIL=0
+
+----- stderr -----
+

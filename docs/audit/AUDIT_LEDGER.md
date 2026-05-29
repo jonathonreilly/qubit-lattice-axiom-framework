@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 168 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 601 |
+| **retained_bounded** | 602 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1166 |
+| unaudited | 1165 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 932 |
+| `audited_clean` | 933 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1402 |
+| `unaudited` | 1401 |
 
 | claim_type | count |
 |---|---:|
@@ -182,6 +182,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_bounded_negative_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2075,6 +2076,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For abstract positive rationals c, G, and A, the equation A*c = A/(4G) for all A>0 is equivalent to 4Gc=1, so c=1/4 implies G=1 and G=1 implies c=1/4 under that constraint.  _(class `A`)_
 - **chain closes:** True — The equivalence follows by factoring S_Wald-S_BH as A(4Gc-1)/(4G), then solving the resulting rational constraint. The runner verifies the factorization, equivalence, specializations, hyperbola examples, and symbolic sanity checks with PASS=19 and FAIL=0.
 - **rationale:** The restricted packet isolates a pure rational-algebra lemma: equality of A*c and A/(4G) for all positive A is exactly the constraint 4Gc=1. No physical Wald formula, gravitational action-density bridge, framework coframe carrier, Newton constant, or observed black-hole entropy input is consumed. Residual risk is downstream misuse as a physical BH-quarter derivation rather than the algebraic step needed after separate physical premises are supplied.
+- **auditor confidence:** high
+
+### `binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28`
+
+- **Note:** [`BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN_NARROW_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-group/character-theory audit of the binary octahedral group 2O: group order/centre/conjugacy structure, irrep dimension and z-sign partition, and the defining spin-1/2 representation's χ(-1)=-2, with no statistics or exchange claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-binary_octahedral_discre`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The central element z=-1 is central of order 2, so by Schur's lemma it acts as a scalar ±1 on each irrep; the irreps that factor through O have z=+1 and the remaining spinorial irreps of dimensions {2,2,4} have z=-1, hence χ(z)=-dim.  _(class `A`)_
+- **chain closes:** True — The restricted packet gives the finite quaternionic construction, exact group/centre/conjugacy checks, retained Cl(3) authorities only for the carrier-language bridge, and a runner that materially computes the finite-group facts. The character-table partition is partly numerical/standard-character-table consistency rather than a fully exact first-principles derivation, but that is adequate for the bounded finite-group theorem as scoped.
+- **rationale:** The claim is a narrow algebraic finite-group statement, not a physical spin-statistics derivation. The runner constructs the 48 quaternion elements, checks closure, centre, conjugacy classes, and the defining SU(2) sign with exact symbolic arithmetic; it also checks the irrep dimension/sign partition by class-algebra eigenspace clustering against standard 2O character-table content. The cited internal authorities are retained-grade and are used only to identify the framework's per-site Cl(3) carrier, not to prove the finite-group facts. The note repeatedly excludes CAR, exchange, and spin-statistics, so the audited conclusion closes at ingredient B only.
 - **auditor confidence:** high
 
 ### `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26`

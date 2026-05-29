@@ -1,0 +1,87 @@
+
+========================================================================
+(1) FREE/QUADRATIC action equipartition over (a, Re b, Im b) -> F3
+========================================================================
+  Generation sector has 3 REAL modes: a (trivial), Re b, Im b (doublet).
+  A free/Gaussian (quadratic) action weights each real mode equally
+  (equipartition: <energy> = kT/2 per quadratic dof). With total
+  energy N split equally over 3 real modes:
+    E_+ (trivial, 1 mode) = 0.3333
+    E_perp (doublet, 2 modes) = 0.6667   (ratio 1:2)
+    => r = |b|^2/a^2 = 1.0000   Q = 1.0000   = F3 (Q=1)
+  This is the Probe 25 result: free dynamics lands at F3, NOT F1.
+  KEY: the quadratic action = the FLAT dimension measure. The
+  doublet's 2 real modes each get an equal share, so it weighs 2.
+  F1 (r=1/2) needs the 2 real modes to SHARE one mode's worth =
+  count the complex block ONCE = the same un-supplied (1,1) primitive.
+
+========================================================================
+(2) the interacting correction is far too small to reach F1
+========================================================================
+  F3->F1 gap in r:  |1 - 1/2| = 0.500
+  F3->F1 gap in Q:  |1 - 2/3| = 0.3333
+  Probe 28 interacting vertex magnitude ~ 0.0072
+  ratio vertex / gap_Q ~ 0.0216  (<< 1)
+  => the perturbative interacting correction cannot move F3 to F1.
+
+========================================================================
+(3) RG / lattice flow: r=1/2 is non-stationary or unselected
+========================================================================
+  Probe 5 (RG): beta(r=1/2) ~ -0.036 != 0  -> 1/2 NOT a fixed point;
+                stationary points are elsewhere (e.g. r: 1.0 -> 1.0).
+  Probe 21 (native lattice flow): r=1/2 IS a fixed point but is NOT
+                selected ('no-selection' -- the flow is neutral on (a,b)).
+  Z^3 scalar potential (2026-04-19): V_eff minimum at m_V ~ -0.433,
+                physical point m_* ~ -1.161 -- minimum at the WRONG point.
+
+========================================================================
+(4) TWO-CHANNEL STRUCTURE: both channels are the same measure
+========================================================================
+  KINEMATIC channel: how to COUNT the doublet irrep in the measure.
+    reality/modular/Jordan all count it as 2 real dims -> F3. (no-go)
+  DYNAMICAL channel: equipartition of the quadratic action over the
+    real modes ALSO counts the doublet as 2 -> F3. (probes 25/28/5/21)
+  These are NOT independent: a free/Gaussian action IS the flat
+  dimension measure. Dynamics INHERITS the kinematic dimension-count.
+  Both channels land at F3 (r=1, Q=1) and both lack the SAME single
+  ingredient: the (1,1)-multiplicity / 'count the complex block once'
+  primitive. It is supplied by neither kinematics nor dynamics.
+
+========================================================================
+(5) POSITIVITY-CONE result: r=1/2 is STRICTLY INTERIOR (import-free)
+========================================================================
+  reality-respecting (real-b) circulant eigenvalues (sqrt-masses):
+    lambda = {a+2b, a-b, a-b}  (doublet a-b is 2-fold degenerate).
+    b=0.00 (r=0.00): eigenvalues [1.0, 1.0, 1.0]  Q=0.3333
+    b=0.50 (r=0.25): eigenvalues [0.5, 0.5, 2.0]  Q=0.5000
+    b=1.00 (r=1.00): eigenvalues [0.0, 0.0, 3.0]  Q=1.0000
+  positivity (sqrt-masses >= 0) boundaries: r=0 (b=0, Q=1/3) and
+  r=1 (b=a, the DOUBLET mode a-b goes MASSLESS, Q=1=F3).
+  => r=1/2 (Q=2/3) is STRICTLY INTERIOR to the positive cone, so NO
+     reflection-positivity / unitarity / BPS SATURATION can land on
+     it (saturation hits a boundary). Import-free; points AWAY from F1.
+
+========================================================================
+VERDICT (two-channel hunt complete: 0/5 dynamical corners reach F1)
+========================================================================
+  On A1+A2+retained the charged-lepton generation carrier natively
+  selects F3 (r=1, Q=1), NOT F1 (r=1/2, Q=2/3), on BOTH channels:
+   KINEMATIC: settled no-go (modular trivial, EJA rank-3, reality
+     keeps {w,wbar} two equal modes).
+   DYNAMICAL: free/Gaussian determinant (1/2)logdet K = (1/2)[1*logE+
+     + 2*logE_perp] IS the dimension measure -> F3; interacting too
+     small; theta only rotates arg(b); instanton fugacity sweeps r->1;
+     gap-eqn democratic kernel -> r=1; positivity saturates on the
+     boundary, never the interior r=1/2; index quantizes the COUNT
+     (d=3) not the ratio r.
+  THEOREM: dynamics INHERITS the kinematic dimension-count (the
+  quadratic action = the dimension measure) -- not two chances at F1,
+  one chance counted twice. Q=2/3 needs the (1,1) complex-multiplicity
+  primitive, supplied by NEITHER channel.
+  SINGLE UNCOVERED ESCAPE (non-fitting): A1 = M_2(C) = Cl(3,0) is a
+  COMPLEX algebra; the campaign assumed the REAL measure throughout.
+  Open question = does A1's intrinsic complex structure J CANONICALLY
+  FORCE the holomorphic/Kahler measure that counts the doublet as ONE
+  complex unit (collapsing U(1)_b as a complex-structure gauge)? If
+  yes -> F1; if no -> framework is F3-native. (= ND4 of the sister
+  weight-audit; the two lanes converge on the SAME residual.)

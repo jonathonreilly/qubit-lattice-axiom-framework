@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 172 |
 | **retained_bounded** | 588 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 28 |
-| unaudited | 1142 |
+| open_gate | 29 |
+| unaudited | 1141 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 910 |
+| `audited_clean` | 911 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1372 |
+| `unaudited` | 1371 |
 
 | claim_type | count |
 |---|---:|
@@ -772,6 +772,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_time_coupling_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11719,6 +11720,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For arbitrary positive diagonal Yukawa singular-value matrices D_u and D_d and fixed CKM unitary V, the construction Y_u = D_u and Y_d = V D_d gives U_u^dag U_d = V while leaving the singular values equal to the freely chosen diagonal entries, so CKM mixing does not determine quark Yukawa eigenvalues.  _(class `A`)_
 - **chain closes:** True — The negative boundary closes as an exact linear-algebra obstruction: the allowed one-Higgs gauge skeleton admits arbitrary 3x3 Yukawa matrices, the top Ward normalization supplies no generation projector, and a fixed CKM matrix is compatible with independently varied Yukawa singular values. Therefore the listed support surface leaves the target non-top ratios unconstrained.
 - **rationale:** The proof is a clean no-go: it does not attempt to derive numerical masses, does not reuse the top Ward identity as a hidden species-uniform physical identification, and the runner checks the load-bearing CKM/singular-value witness plus the gauge-selection freedom and scope firewall.
+- **auditor confidence:** high
+
+### `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26`
+
+- **Note:** [`QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md`](../../docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited open gate: retained C3/Koide algebra supplies the coordinate identities, while conventional central-value quark masses are used only as scheme-dependent observational comparators showing that apparent up/down quark |b|^2/a^2 ratios differ from the charged-lepton BAE value. No quark mass, quark Brannen phase, quark amplitude ratio, mass scale, CKM-to-mass theorem, or scheme-native framework mass definition is derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using conventional central-value quark mass comparators, the Koide Q values and reconstructed apparent |b|^2/a^2 ratios differ from the charged-lepton BAE value, so quark-sector mass work must not copy the lepton coefficient without a separate scheme-aware derivation.  _(class `D`)_
+- **chain closes:** True — The algebraic conversion between Q and |b|^2/a^2 follows from retained Koide/circulant identities, and the runner reproduces the stated central-value comparator separations. The row remains an open gate because the quark masses are external scheme-dependent inputs and no quark-sector dynamics are derived.
+- **rationale:** The note correctly treats the quark numbers as scheme-dependent comparators and uses them only to set a boundary on future quark-mass work. The cached runner reports PASS=14, FAIL=0 under SHA 3b495bc414c9b5e3d4d41b01c5af90bbf279bcbc55e124c5983fcd696e30ac1f, reproducing the charged-lepton, up-quark, and down-quark Q and apparent-amplitude ratios plus algebraic reconstruction checks. Because the claim_type is open_gate, this clean audit preserves open-gate status and does not retain any quark-mass theorem.
 - **auditor confidence:** high
 
 ### `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`

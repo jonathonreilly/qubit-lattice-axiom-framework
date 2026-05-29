@@ -31,11 +31,12 @@ algebra, the following narrow conditional consequence holds:
 (B3)  the 16 Clifford words {1, Γ_a, Γ_a Γ_b, Γ_a Γ_b Γ_c, Γ_t Γ_n Γ_1 Γ_2}
       span End(K) = M_4(C); the rank-4 module K is the irreducible
       Cl_4(C) module
-(B4)  the oriented pairs
+(B4') there exists a Pauli-realized compatible Hermitian inner product
+      for the Cl_4(C) irreducible in which the oriented pairs
         c_N := (Γ_t + i Γ_n)/2,   c_T := (Γ_1 + i Γ_2)/2
       satisfy  {c_i, c_j} = 0  and  {c_i, c_j^†} = δ_{ij} I_K
-      — i.e., the active rank-4 block is the Fock space of two
-      complex CAR modes.
+      — i.e., in that chosen Hermitian realization the active rank-4
+      block is the Fock space of two complex CAR modes.
 ```
 
 These are abstract finite-dim complex linear-algebra identities once
@@ -43,8 +44,13 @@ These are abstract finite-dim complex linear-algebra identities once
 The bridge does **not** derive (P1) from the one-qubit operator algebra
 `M_2(ℂ) ≅ Cl(3,0)` on the `Z^3` spatial substrate; it formally registers
 (P1) as a single accepted-premise packet entry, then proves the narrow
-algebraic content (B1)–(B4) by polarization and standard
+algebraic content (B1)–(B4') by polarization and standard
 representation theory.
+
+The daggered CAR statement in (B4') is intentionally an existence
+statement for a compatible Pauli/Hermitian realization. It is not a
+claim that every similarity-equivalent Clifford representation satisfies
+the same `†`-CAR identities against an externally fixed inner product.
 
 This narrow theorem responds in kind to the canonical hypercharge-bridge
 audit-repair pattern documented in
@@ -77,7 +83,7 @@ audit-readable named-premise form.
   auditor's "accepted-premise packet entries" path.
 
 The single registered premise (P1) feeds step (B1) of the §"Proof-walk"
-table. Steps (B2)–(B4) consume only (P1) and standard finite-dim
+table. Steps (B2)–(B4') consume only (P1) and standard finite-dim
 representation theory (Artin-Wedderburn semisimple classification +
 Schur's lemma + Pauli-realization isomorphism, as already retained in
   [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)).
@@ -90,16 +96,21 @@ Schur's lemma + Pauli-realization isomorphism, as already retained in
 | (B2) | Choosing an orthonormal basis `{e_t, e_x, e_y, e_z}` and writing `Γ_a := D(e_a)` gives `Γ_a² = I_K` and `{Γ_a, Γ_b} = 0` for `a ≠ b` | Specialize (B1) at `u = v = e_a` and at `u = e_a, v = e_b` | no |
 | (B3a) | The 16 monomials `{1, Γ_a, Γ_a Γ_b (a<b), Γ_a Γ_b Γ_c (a<b<c), Γ_t Γ_n Γ_1 Γ_2}` are linearly independent in `End(K)` | Counting (16 monomials) + dim `End(K) = dim_C M_4(C) = 16` + the Clifford relations from (B2) | no |
 | (B3b) | The Clifford algebra `Cl(E, <·,·>)` of dim 4 has a unique faithful irreducible complex representation of dim 4 (up to isomorphism); the supplied rank-4 module `K` realises it | Artin-Wedderburn + Schur + the retained `CL3_COMPLEXIFICATION_SPLIT` algebraic content (rep theory of `Cl(d) ⊗_R C`) | no |
-| (B4) | The oriented pairs `c_N := (Γ_t + i Γ_n)/2`, `c_T := (Γ_1 + i Γ_2)/2` satisfy `{c_i, c_j} = 0` and `{c_i, c_j^†} = δ_{ij} I_K` (canonical CAR algebra) | Direct anticommutator computation from (B2) | no |
+| (B4') | In a Pauli-realized compatible Hermitian model of the irreducible, the oriented pairs `c_N := (Γ_t + i Γ_n)/2`, `c_T := (Γ_1 + i Γ_2)/2` satisfy `{c_i, c_j} = 0` and `{c_i, c_j^†} = δ_{ij} I_K` (canonical CAR algebra) | Direct anticommutator computation in the chosen Hermitian Pauli realization from (B2)-(B3) | no |
+
+The bridge does not assert that the daggered CAR statement is invariant
+under arbitrary nonunitary similarity transforms with the same external
+inner product. The runner includes a nonunitary-similarity boundary check:
+B1-B3 survive, while fixed-inner-product daggered CAR need not.
 
 The bridge does not cite the Wilson plaquette action, staggered phases,
 Brillouin-zone labels, link unitaries, lattice scale `u_0`, a Monte
-Carlo measurement, or a fitted observational value. All steps (B1)–(B4)
+Carlo measurement, or a fitted observational value. All steps (B1)–(B4')
 are abstract finite-dim complex linear algebra once (P1) is registered.
 
 ## Exact arithmetic check (sympy-verified)
 
-The runner reduces (B1)–(B4) to exact symbolic identities at the
+The runner reduces (B1)–(B4') to exact symbolic identities at the
 finite-dim representation level:
 
 - (B1) polarization: from `D(u)² = ||u||² I_K`, expand `D(u+v)²`
@@ -118,8 +129,8 @@ finite-dim representation level:
 - (B3b) Artin-Wedderburn + Schur force the irreducible complex
   module dim to be `2^{⌊d/2⌋} = 2^2 = 4` for `Cl(4,C)`; the rank-4
   supplied block `K` realises that unique irreducible.
-- (B4) direct anticommutator computation in sympy on the rank-4
-  representation:
+- (B4') direct anticommutator computation in sympy on the rank-4
+  Pauli-realized Hermitian representation:
   ```text
   {c_N, c_N} = (1/4)({Γ_t, Γ_t} + 2i {Γ_t, Γ_n} - {Γ_n, Γ_n})
              = (1/4)(2 I + 0 - 2 I) = 0,
@@ -127,6 +138,11 @@ finite-dim representation level:
              ... = I,
   ```
   and similarly for `c_T` and the cross-pair anticommutators.
+- Boundary witness: a nonunitary similarity transform preserves the
+  Clifford anticommutators and word-span facts, but generally changes
+  adjoints relative to the fixed standard inner product. Therefore the
+  daggered CAR part is recorded only for a compatible Hermitian
+  realization, not for arbitrary similarity representatives.
 
 No quark electric-charge cross-check, no PDG-observed value, no
 lattice action, no `g_bare` input enters this proof-walk.
@@ -145,14 +161,14 @@ lattice action, no `g_bare` input enters this proof-walk.
   is the conditional parent whose supplied-premise scope this note
   formalizes in named-premise form. It is the parent context, not a
   load-bearing dependency for this proof: this note's audit content
-  (the (B1)–(B4) algebraic identities under (P1)) is decoupled from
+  (the (B1)–(B4') algebraic identities under (P1)) is decoupled from
   the parent's downstream Planck-unit, source-normalization, and
   substrate-forcing scope.
 - `PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`
   selects the rank-4 active block `P_A H_cell` on which the
   coframe-response premise (P1) is supplied. It is upstream context for
   the active-block geometry, not a load-bearing dependency for the
-  abstract (B1)–(B4) Clifford content.
+  abstract (B1)–(B4') Clifford content.
 - `HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`
   is the canonical narrow-bridge template whose accepted-premise
   registration pattern this note mirrors. Pattern reference only;
@@ -188,9 +204,11 @@ This bridge does not close:
 - a minimal-stack derivation of the Planck scale;
 - any continuum-limit numerical claim such as plaquette, mass, or
   coupling values;
-- any parent theorem/status promotion (the bridge records (B1)–(B4)
+- any parent theorem/status promotion (the bridge records (B1)–(B4')
   as a separate bounded identity packet; downstream status of the
   parent Target-3 row is decided by the audit lane).
+- fixed-inner-product daggered CAR for every nonunitarily
+  similarity-equivalent Clifford representation.
 
 The bridge re-bases the parent's existing coframe-response admission
 onto the explicit (P1) accepted-premise registration. It does not
@@ -207,8 +225,8 @@ PYTHONPATH=scripts python3 scripts/planck_target3_coframe_response_accepted_prem
 Expected:
 
 ```text
-TOTAL: PASS=N FAIL=0
-VERDICT: bounded accepted-premise bridge passes; (B1)–(B4) follow from
+TOTAL: PASS=75 FAIL=0
+VERDICT: bounded accepted-premise bridge passes; (B1)–(B4') follow from
 the retained Cl(3) complexification split + accepted-premise packet (P1)
 by polarization and finite-dim sympy linear algebra.
 ```

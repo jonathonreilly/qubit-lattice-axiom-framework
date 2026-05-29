@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 156 |
+| **retained** | 157 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 582 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1157 |
+| unaudited | 1156 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 897 |
+| `audited_clean` | 898 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1387 |
+| `unaudited` | 1386 |
 
 | claim_type | count |
 |---|---:|
@@ -235,6 +235,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2872,6 +2873,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Unitary row and column orthogonality make the moduli products close as triangles, giving R_12 = R_13 = R_23 = C_12 = C_13 = C_23 = 4 J^2, and the constructive converse recovers the third row by the Hermitian cross product with |t_i|^2 = c_i.  _(class `A`)_
 - **chain closes:** True — The narrowed theorem closes from standard finite-dimensional unitary-matrix algebra, Heron's identity, and the explicit cross-product construction. The source boilerplate naming STAGGERED_DIRAC and g_bare is a lane-upgrade guardrail, not load-bearing for this algebraic certificate; the only ledger direct dependency in the packet is retained_bounded and is not used in the proof. No-go discipline check for the bounded-wall language is not blocking because this verdict does not assert a negative wall closure or treat the gate boilerplate as an independent theorem result.
 - **rationale:** The proof does not import CKM numerical values, alpha_s inputs, PDG comparators, or a hidden phase convention. The runner checks the exact Fourier-unitary case, symbolic Heron identity, symbolic constructive converse, and a numeric nondegenerate bistochastic lift, with no failed checks. This is not decoration because it supplies a standalone algebraic certificate/compression rather than merely expanding a single upstream CKM parameter choice. Clean status applies only to the bounded finite-dimensional certificate, not to any broader physical lane promotion.
+
+### `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone real Clifford-algebra theorem: dim_R Cl(p,q)=2^(p+q), the signature cell Cl(3,1) is isomorphic as a real algebra to M_4(R), and therefore dim_R Cl(3,1)=dim_R M_4(R)=16=2^4. Framework Wick-rotation, signature selection, hierarchy-exponent bridges, site-Hilbert identification, anomaly content, and d_t>1 exclusion are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-cl31-m4r-sixteen`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source combines the universal Clifford basis count dim_R Cl(p,q)=2^(p+q) with an explicit Cartan-Bott/real-matrix realization of Cl(3,1) as M_4(R), so both algebras have real dimension 16.  _(class `A`)_
+- **chain closes:** True — The independent check verifies the 2^n basis count, and the runner gives explicit real 4x4 generators with signature (+,+,+,-), 16 independent Clifford monomials, and full rank in M_4(R). This establishes the claimed isomorphism/dimension statement within the admitted real Clifford-algebra setting without using framework physics premises.
+- **rationale:** The row closes as a standalone Clifford-algebra classification/dimension theorem. The exact runner does more than cite the periodic table: it constructs a real 4x4 representation of the Cl(3,1) relations and shows the 16 monomials span all of M_4(R). Residual risk is only downstream overuse: this row does not derive Wick rotation, select Cl(3,1) over Cl(1,3) from framework axioms, or bridge the integer 16 to hierarchy or lattice-species surfaces.
+- **auditor confidence:** high
 
 ### `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02`
 

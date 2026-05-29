@@ -9000,42 +9000,24 @@
       "verdict_rationale": null
     },
     "assumption_derivation_ledger": {
-      "audit_date": "2026-05-28T01:22:17.601215+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
-        },
-        "dep_claim_type": {
-          "rconn_derived_note": "no_go"
-        },
-        "dep_effective_status": {
-          "rconn_derived_note": "retained_no_go"
-        },
-        "deps": [
-          "rconn_derived_note"
-        ],
-        "load_bearing_score": 13.798,
-        "runner_hash": null,
-        "transitive_descendants": 889
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The exact R_conn repair closes only as F_adj=(3^2-1)/3^2=8/9 with the physical selector left conditional by the retained no-go dependency. The remaining ingredient status rows are not directly wired to retained-grade authorities in the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "assumption_derivation_ledger",
-      "claim_scope": "Bounded ledger-level bookkeeping surface: the file may be used as a roadmap of ingredient labels and authority pointers, with the R_conn row narrowed to exact F_adj=8/9 plus conditional physical selector language. It does not independently certify the listed package-wide statuses until each ingredient row is wired to a retained-grade one-hop authority.",
-      "claim_type": "bounded_theorem",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-28T01:22:17.601215+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "meta",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -9043,19 +9025,19 @@
         "rconn_derived_note"
       ],
       "direct_in_degree": 8,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "meta",
+      "effective_status_reason": "metadata",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "meta",
       "load_bearing_score": 13.82,
-      "load_bearing_step": "The ledger says every ingredient row is only a summary pointer to its named authority, while the only currently wired citation-graph edge is the R_conn/F_adj row to rconn_derived_note.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "ad6a84ff591922e3322e5a14ea23d989f4010f639b19c61b700af1eb784c6d13",
+      "note_hash": "ae07c45a4bbfea65925aec9f85c55eb9c37af5b6174b5febc8e73e871ee6a577",
       "note_path": "docs/ASSUMPTION_DERIVATION_LEDGER.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: wire every non-R_conn ingredient row to its retained-grade authority note or split the ledger into metadata plus independently audited ingredient claims.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -9107,22 +9089,72 @@
             "total_pass": 0
           },
           "verdict_rationale": "This source is a status ledger, so its load-bearing operation is cross-note authority accounting rather than an equation proof. Under the restricted packet, all table rows other than the R_conn row are unsupported because their authorities are not declared one-hop dependencies. The Rconn dependency is retained-grade, but it explicitly says the exact 8/9 result remains F_adj support and that the physical EW-current selector kappa_EW = 0 is underdetermined; the ledger therefore overstates the authority when it calls `R_conn = 8/9` derived. A clean reduced claim would report F_adj = 8/9 as exact support and the 9/8 correction only as the connected-trace specialization, while wiring every other status row to direct retained-grade dependencies."
+        },
+        {
+          "archived_at": "2026-05-29T00:51:40.363931+00:00",
+          "archived_for_note_hash": "ad6a84ff591922e3322e5a14ea23d989f4010f639b19c61b700af1eb784c6d13",
+          "audit_date": "2026-05-28T01:22:17.601215+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+            },
+            "dep_claim_type": {
+              "rconn_derived_note": "no_go"
+            },
+            "dep_effective_status": {
+              "rconn_derived_note": "retained_no_go"
+            },
+            "deps": [
+              "rconn_derived_note"
+            ],
+            "load_bearing_score": 13.798,
+            "runner_hash": null,
+            "transitive_descendants": 889
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The exact R_conn repair closes only as F_adj=(3^2-1)/3^2=8/9 with the physical selector left conditional by the retained no-go dependency. The remaining ingredient status rows are not directly wired to retained-grade authorities in the restricted packet.",
+          "claim_scope": "Bounded ledger-level bookkeeping surface: the file may be used as a roadmap of ingredient labels and authority pointers, with the R_conn row narrowed to exact F_adj=8/9 plus conditional physical selector language. It does not independently certify the listed package-wide statuses until each ingredient row is wired to a retained-grade one-hop authority.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T01:22:17.601215+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The ledger says every ingredient row is only a summary pointer to its named authority, while the only currently wired citation-graph edge is the R_conn/F_adj row to rconn_derived_note.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: wire every non-R_conn ingredient row to its retained-grade authority note or split the ledger into metadata plus independently audited ingredient claims.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_fail": 0,
         "total_pass": 0
       },
       "runner_path": null,
       "title": "Assumption / Derivation Ledger",
       "transitive_descendants": 903,
-      "verdict_rationale": "Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency."
+      "verdict_rationale": null
     },
     "asymmetry_persistence_born_note": {
       "audit_date": null,
@@ -14325,7 +14357,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -52525,7 +52557,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -101508,7 +101540,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -199318,8 +199350,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "Substituting (Y_uR,Y_dR,Y_eR,Y_nuR)=(a+1,a-1,b-1,b+1) into the cubic anomaly gives -6(n_color a + b), which vanishes by the imported LH trace relation b=-n_color a.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "7a2a142015b91b1641eb58479d4635c0a93a0cd4326c34e1a9934b8928ee247f",
       "note_path": "docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "",
@@ -201347,8 +201379,8 @@
       "load_bearing_score": 4.585,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "d0d7638afb212531bbc0474d17b5822785fc916e59783c593954542fc87d8d33",
       "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": null,
@@ -258453,8 +258485,8 @@
       "load_bearing_score": 4.085,
       "load_bearing_step": "The finite-dimensional identities Tr([a,a\u2020]) = 0 while Tr(I_H) = D rule out CCR for D >= 1, and the CAR relations give {a\u2020,a\u2020} = 2(a\u2020)^2 = 0 plus n^2 = a\u2020aa\u2020a = n.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "18d0c734377c0401683434c3d1f2fd71032a231048e7a8f781fd72f83ad6592c",
       "note_path": "docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Second auditor may re-check the D = 0 convention in the CCR no-go wording; the substantive D >= 1 finite-dimensional obstruction is closed.",
@@ -320562,8 +320594,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2451,
-    "re_audit_required": 0,
+    "preserved_existing": 2450,
+    "re_audit_required": 1,
     "row_count": 2495,
     "seeded_new": 0
   }

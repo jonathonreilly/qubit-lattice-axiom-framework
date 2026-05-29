@@ -40556,19 +40556,19 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_last_reviewed": "2026-05-11T16:24:35.574353+00:00",
       "claim_type_provenance": "audited",
-      "criticality": "leaf",
+      "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_axioms_2026-05-03"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained_pending_chain",
       "effective_status_reason": "chain_waiting_on:minimal_axioms_2026-05-03",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_pending_chain",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 3.5,
       "load_bearing_step": "A degree-r product gamma_S satisfies gamma_S gamma_mu = (-1)^(r - 1_{mu in S}) gamma_mu gamma_S, so a monomial can anticommute with every generator only when S is the full set and n is even; hence no nonzero Clifford-algebra element has the required anticommutation property for odd n.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -40589,7 +40589,7 @@
       },
       "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
       "title": "Clifford Chirality-Dimension Narrow Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 7,
       "verdict_rationale": "The load-bearing step is ordinary Clifford-basis algebra: the volume element sign follows from moving one generator through the other n-1 generators, and the monomial parity conditions rule out any odd-n internal element that anticommutes with every generator. The runner corroborates this with explicit finite Clifford representations for n=1 through n=6 and checks only algebraic class-A statements. Residual risk is only scope creep: the audited result forces d_t odd under the stated total-Clifford setup and A2, but it does not derive d_t=1 or any anomaly/gauge/fermion-content conclusion."
     },
     "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {
@@ -132542,72 +132542,48 @@
       "verdict_rationale": null
     },
     "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-28T04:45:03.282850+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
-          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
-        },
-        "dep_claim_type": {
-          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
-          "graph_first_su3_integration_note": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
-          "graph_first_su3_integration_note": "retained"
-        },
-        "deps": [
-          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-          "graph_first_su3_integration_note"
-        ],
-        "load_bearing_score": 3.807,
-        "runner_hash": "91c94aab606c66870ffddf16840242af7fbb3e16bbf5105d225d11d1b98dd02c",
-        "transitive_descendants": 6
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "fresh-agent-Boyle-019e6ce4-ee9d-7ef1-8c2f-513651126166",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The displayed algebra and runner checks close exactly: W''(0)/N_tot equals 1/(4u_0^2), matching R_lattice. The retained one-hop rows cover the scoped SU(3) and g_bare surfaces, but the Clifford/staggered identity D_taste^2=d I and mean-field factorization U_ab -> u_0 delta_ab are load-bearing admitted premises, not retained one-hop theorem rows or registered Tier-A admissions in this packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-      "claim_scope": "Exact mean-field algebraic ratio R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) for N_taste=16, N_c=3, and scoped g_bare=1, assuming D_taste^2=d I with d=4 and mean-field scaling U_ab -> u_0 delta_ab. Physical Higgs/SM matching, u_0 value, and m_H=v/(2u_0) are excluded.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (proposed; audit-lane to ratify)",
-      "claim_type_last_reviewed": "2026-05-28T04:45:03.282850+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "graph_first_su3_integration_note",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 3.807,
-      "load_bearing_step": "Given D_taste^2=d I with d=4 and mean-field U_ab -> u_0 delta_ab, W''(0)/N_tot = 1/(4u_0^2) and R_lattice = 4/(u_0^2 N_taste)=1/(4u_0^2) at N_taste=16.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "fdb53ab34b661c53206dc91f9e80e384c19dc2c575884c1ba92d017659dcb7e7",
+      "note_hash": "43c2b7216d291cd31720dc2c726d1bee17bdb4fae880dc42c0f32667ee4770a7",
       "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: add retained one-hop theorem/dependency coverage or explicitly approved admission rows for D_taste^2=d I and mean-field U_ab -> u_0 delta_ab, then re-audit the exact algebraic ratio.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -132901,22 +132877,80 @@
             "total_pass": 29
           },
           "verdict_rationale": "Issue: the repaired source and live ledger cite the newer g_bare repaired dependency pair, but the primary runner still asserts the obsolete canonical-convention dependency and now exits with FAIL=1 when refreshed. Why this blocks: the audit lane cannot ratify a runner-backed bounded theorem when the registered certificate is stale relative to the actual dependency surface, even though the algebraic steps pass under the listed assumptions. Repair target: update the runner's graph-visible dependency checks to the repaired g_bare rescaling and constraint-vs-convention authorities, refresh the SHA-pinned cache, and preserve the explicit no-physical-Higgs-identification scope guard. Claim boundary until fixed: the note may be read as an unaudited algebra sketch under stated mean-field/Staggered-Clifford assumptions, but it is not retained-bounded until the runner certificate matches the repaired source/ledger."
+        },
+        {
+          "archived_at": "2026-05-29T02:28:25.053870+00:00",
+          "archived_for_note_hash": "fdb53ab34b661c53206dc91f9e80e384c19dc2c575884c1ba92d017659dcb7e7",
+          "audit_date": "2026-05-28T04:45:03.282850+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+              "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+            },
+            "dep_claim_type": {
+              "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+              "graph_first_su3_integration_note": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+              "graph_first_su3_integration_note": "retained"
+            },
+            "deps": [
+              "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+              "graph_first_su3_integration_note"
+            ],
+            "load_bearing_score": 3.807,
+            "runner_hash": "91c94aab606c66870ffddf16840242af7fbb3e16bbf5105d225d11d1b98dd02c",
+            "transitive_descendants": 6
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "fresh-agent-Boyle-019e6ce4-ee9d-7ef1-8c2f-513651126166",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The displayed algebra and runner checks close exactly: W''(0)/N_tot equals 1/(4u_0^2), matching R_lattice. The retained one-hop rows cover the scoped SU(3) and g_bare surfaces, but the Clifford/staggered identity D_taste^2=d I and mean-field factorization U_ab -> u_0 delta_ab are load-bearing admitted premises, not retained one-hop theorem rows or registered Tier-A admissions in this packet.",
+          "claim_scope": "Exact mean-field algebraic ratio R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) for N_taste=16, N_c=3, and scoped g_bare=1, assuming D_taste^2=d I with d=4 and mean-field scaling U_ab -> u_0 delta_ab. Physical Higgs/SM matching, u_0 value, and m_H=v/(2u_0) are excluded.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T04:45:03.282850+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Given D_taste^2=d I with d=4 and mean-field U_ab -> u_0 delta_ab, W''(0)/N_tot = 1/(4u_0^2) and R_lattice = 4/(u_0^2 N_taste)=1/(4u_0^2) at N_taste=16.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: add retained one-hop theorem/dependency coverage or explicitly approved admission rows for D_taste^2=d I and mean-field U_ab -> u_0 delta_ab, then re-audit the exact algebraic ratio.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 33,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 33
+          },
+          "verdict_rationale": "Issue: the exact algebra depends on two load-bearing imports, D_taste^2=d I and U_ab -> u_0 delta_ab, that are stated as admitted standard inputs rather than retained one-hop authorities. Why this blocks: without retained or explicitly approved admission status for those premises, the audit can verify only the downstream algebra, not the full claimed lattice-side theorem from retained inputs. Repair target: add retained one-hop theorem/dependency coverage or an explicitly approved admission for the Clifford/staggered identity and the mean-field scaling premise, then re-audit the same algebraic ratio. Claim boundary until fixed: the runner-supported equality R_lattice=1/(4u_0^2) is an exact conditional algebraic consequence of the stated premises and does not support any physical Higgs mass or Standard Model matching claim."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 33,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_fail": 0,
-        "total_pass": 33
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
       "title": "Higgs Lattice Eigenvalue Ratio (Mean-Field) \u2014 Narrow Theorem",
       "transitive_descendants": 6,
-      "verdict_rationale": "Issue: the exact algebra depends on two load-bearing imports, D_taste^2=d I and U_ab -> u_0 delta_ab, that are stated as admitted standard inputs rather than retained one-hop authorities. Why this blocks: without retained or explicitly approved admission status for those premises, the audit can verify only the downstream algebra, not the full claimed lattice-side theorem from retained inputs. Repair target: add retained one-hop theorem/dependency coverage or an explicitly approved admission for the Clifford/staggered identity and the mean-field scaling premise, then re-audit the same algebraic ratio. Claim boundary until fixed: the runner-supported equality R_lattice=1/(4u_0^2) is an exact conditional algebraic consequence of the stated premises and does not support any physical Higgs mass or Standard Model matching claim."
+      "verdict_rationale": null
     },
     "higgs_mass_12pct_gap_decomposition_bounded_note_2026-05-10_higgss7": {
       "audit_date": null,
@@ -141661,7 +141695,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 13.383,
+      "load_bearing_score": 13.384,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -141682,7 +141716,7 @@
       },
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology",
-      "transitive_descendants": 943,
+      "transitive_descendants": 944,
       "verdict_rationale": null
     },
     "klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26": {
@@ -181223,7 +181257,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 50.855,
+      "load_bearing_score": 50.856,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -181244,7 +181278,7 @@
       },
       "runner_path": "scripts/frontier_generation_rooting_undefined.py",
       "title": "Minimal Framework Axioms (Restored)",
-      "transitive_descendants": 925,
+      "transitive_descendants": 926,
       "verdict_rationale": null
     },
     "minimal_bidirectional_trapping_probe_note": {
@@ -284539,17 +284573,17 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": "2026-05-17T18:56:29.217025+00:00",
       "claim_type_provenance": "audited",
-      "criticality": "leaf",
+      "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 3.5,
       "load_bearing_step": "Substituting L = 4 into the unit-mean condition gives <P>/u_0^4 = 1, hence u_0^4 = <P> and the unique positive solution is u_0 = <P>^{1/4}.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -284570,7 +284604,7 @@
       },
       "runner_path": "scripts/frontier_u0_plaquette_quartic_derivation.py",
       "title": "u_0 = <P>^{1/4} Plaquette-Quartic-Exponent Narrow Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 7,
       "verdict_rationale": "The load-bearing step is elementary algebra over positive reals: the four link rescalings produce the factor u_0^{-4}, and enforcing unit dressed plaquette expectation fixes the unique positive fourth root. The runner source materially checks this symbolic chain and does not import numerical plaquette values, PDG values, fitted u_0, or a specific gauge group. This is clean only as a bounded theorem conditional on P1 and the admitted P2 principle; it does not close the external physics origin of P2 or any numerical plaquette evaluation."
     },
     "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17": {
@@ -321320,8 +321354,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2451,
-    "re_audit_required": 0,
+    "preserved_existing": 2450,
+    "re_audit_required": 1,
     "row_count": 2495,
     "seeded_new": 0
   }

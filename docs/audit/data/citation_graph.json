@@ -12193,6 +12193,14 @@
       "to": "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
     },
     {
+      "from": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "to": "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "to": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "higgs_mass_12pct_gap_decomposition_bounded_note_2026-05-10_higgss7",
       "to": "lattice_physical_matching_theorem_bounded_obstruction_note_2026-05-10_match"
     },
@@ -58737,10 +58745,12 @@
       "deps": [
         "graph_first_su3_integration_note",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fdb53ab34b661c53206dc91f9e80e384c19dc2c575884c1ba92d017659dcb7e7",
+      "note_hash": "43c2b7216d291cd31720dc2c726d1bee17bdb4fae880dc42c0f32667ee4770a7",
       "path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
       "title": "Higgs Lattice Eigenvalue Ratio (Mean-Field) \u2014 Narrow Theorem"
@@ -87106,8 +87116,8 @@
       "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9918,
-    "leaf_count": 827,
+    "edge_count": 9920,
+    "leaf_count": 825,
     "node_count": 2609,
     "root_count": 870,
     "runners_with_path": 2184

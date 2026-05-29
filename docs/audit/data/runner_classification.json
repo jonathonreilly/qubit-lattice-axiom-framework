@@ -10901,10 +10901,10 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
+        "C": 2,
         "D": 0
       },
-      "decoration_candidate": true,
+      "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py"
     },
@@ -40746,10 +40746,10 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
+        "C": 2,
         "D": 0
       },
-      "decoration_candidate": true,
+      "decoration_candidate": false,
       "dominant_class": "B",
       "exists": true
     },
@@ -57659,7 +57659,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 356,
     "dominant_class_distribution": {
       "A": 264,
       "B": 294,
@@ -57668,7 +57668,7 @@
       "none": 444
     },
     "runners_classified": 2079,
-    "runners_with_C": 1010,
+    "runners_with_C": 1011,
     "runners_with_D": 615
   }
 }

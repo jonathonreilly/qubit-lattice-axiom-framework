@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 168 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 600 |
+| **retained_bounded** | 601 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1170 |
+| unaudited | 1169 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 931 |
+| `audited_clean` | 932 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1406 |
+| `unaudited` | 1405 |
 
 | claim_type | count |
 |---|---:|
@@ -131,6 +131,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1235,6 +1236,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 
 ## Audit findings (full)
+
+### `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28`
+
+- **Note:** [`ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded internal correction: on the free/flat staggered operator on Z_4 x Z_2^3, with an L=4 robustness check, the eps-gap identity and A[1,1]=0 show that the existing residual should target a chi != 0 or Q != 0 background, not treat absence of GW as the demonstrated internal obstruction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-abj_residual_gw_not_nece`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the free staggered operator with eps D eps = -D, K = eps D gives H(m)^2 = K^2 + m^2 I, and the flat-background trace A[1,1] = Tr[eps exp(-t D^dag D)] vanishes.  _(class `A`)_
+- **chain closes:** True — The runner source explicitly constructs the free staggered D and eps grading and verifies the anticommutation, Hermiticity, H(m)^2 identity, spectral gap away from m=0, and vanishing heat-kernel trace. The note does not claim to close P1' or exhibit a nonzero-index background.
+- **rationale:** The load-bearing internal facts are exact finite-dimensional algebra plus direct first-principles matrix checks, with no hard-coded contested premise and no external comparator. CPT_EXACT is retained-grade for the relevant eps-anticommutation pattern, and the runner independently instantiates the free 4D staggered operator used in this note. The external GW-demolition citations are confined to removing a necessity misstatement and are not used to import a nonzero-index construction into the framework chain.
+- **auditor confidence:** high
 
 ### `accessible_prediction_note`
 

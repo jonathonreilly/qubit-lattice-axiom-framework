@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 243,
     "high": 313,
-    "leaf": 322,
+    "leaf": 321,
     "medium": 294
   },
   "cycle_break_target_count": 0,
@@ -26128,30 +26128,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cpt_exact_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/abj_residual_gw_not_necessary_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35526,6 +35502,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 42,
-  "total_pending": 1172
+  "ready_count": 41,
+  "total_pending": 1171
 }

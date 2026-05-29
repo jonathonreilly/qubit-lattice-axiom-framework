@@ -1256,22 +1256,42 @@
       "verdict_rationale": null
     },
     "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T22:12:32.163200+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "eddf6bbb89014c86a2c7d6aa56ffc6e691cccfcf12c8057a46bb8e93739dd94e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-audit-ready-20260529-abj_residual_gw_not_nece",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source explicitly constructs the free staggered D and eps grading and verifies the anticommutation, Hermiticity, H(m)^2 identity, spectral gap away from m=0, and vanishing heat-kernel trace. The note does not claim to close P1' or exhibit a nonzero-index background.",
       "claim_id": "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
-      "claim_scope": null,
+      "claim_scope": "Audited only the bounded internal correction: on the free/flat staggered operator on Z_4 x Z_2^3, with an L=4 robustness check, the eps-gap identity and A[1,1]=0 show that the existing residual should target a chi != 0 or Q != 0 background, not treat absence of GW as the demonstrated internal obstruction.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T22:12:32.163200+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -1279,34 +1299,34 @@
         "cpt_exact_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For the free staggered operator with eps D eps = -D, K = eps D gives H(m)^2 = K^2 + m^2 I, and the flat-background trace A[1,1] = Tr[eps exp(-t D^dag D)] vanishes.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5c6075d0eed06ac0f48cda22824970d553ebabde486cde350d65e494d87ce2bb",
       "note_path": "docs/ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the GW-necessity demolition remains citation-only and that no downstream status treats the external constructions as imported framework theorems.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 24,
         "B": 0,
-        "C": 0,
+        "C": 12,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 36
       },
       "runner_path": "scripts/abj_residual_gw_not_necessary_runner.py",
       "title": "ABJ Residual Correction: Ginsparg-Wilson Is Not the Obstruction (eps-Gap + chi=0)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing internal facts are exact finite-dimensional algebra plus direct first-principles matrix checks, with no hard-coded contested premise and no external comparator. CPT_EXACT is retained-grade for the relevant eps-anticommutation pattern, and the runner independently instantiates the free 4D staggered operator used in this note. The external GW-demolition citations are confined to removing a necessity misstatement and are not used to import a nonzero-index construction into the framework chain."
     },
     "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10": {
       "audit_date": null,

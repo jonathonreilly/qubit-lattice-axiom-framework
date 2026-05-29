@@ -3,7 +3,8 @@
 **Claim type:** bounded_theorem
 **Status:** support - raw algebraic interface; independent audit owns status
 **Date:** 2026-04-16 (2026-05-25: raw-interface repair; 2026-05-28: intrinsic
-claim restricted to simple spectra per audit verdict).
+claim restricted to simple spectra per audit verdict; 2026-05-29:
+eigenvalue-label convention made explicit).
 **Primary runner:** `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py`
 **Status authority:** independent audit lane only.
 
@@ -45,20 +46,43 @@ No new axioms, imports, or runners-as-dependencies. The load-bearing
 algebra is unchanged; only the intrinsic-to-the-pair reading is scoped to
 simple spectra.
 
+## 2026-05-29 Audit Repair (ordered labels for simple spectra)
+
+The later audit feedback found one remaining ambiguity:
+
+> *"The raw fixed-eigenvector algebra closes, but the note also claims a
+> simple-spectrum intrinsic-to-the-pair projector packet without specifying
+> the eigenvalue label/order convention needed to fix rows and columns.
+> Simple spectra leave independent row/column permutation freedom."*
+
+This repair adopts the explicit convention already used by the runner:
+eigenvectors are labeled by **ascending eigenvalue order** for both
+`H_nu` and `H_e`. With simple spectra and this order convention, the
+eigenvector matrices are determined by the Hermitian pair up to independent
+diagonal phases, and those phases do not change `|U_e^dagger U_nu|^2`.
+
+Without this order convention, the unordered pair still determines the same
+projector only **up to independent row and column permutations**. The ordered
+`3 x 3` packet is therefore not claimed unless the ascending-eigenvalue
+label convention is part of the input surface.
+
 ## Raw Pair-to-Projector Interface
 
 This row is a raw-interface repair. Its claim is exactly the finite
 linear-algebra interface below:
 
 Given any two `3 x 3` positive-definite Hermitian matrices `(H_nu, H_e)`,
-let
+let the eigenvalues be simple when the pair itself is asked to determine an
+ordered packet, and label the eigenvectors by ascending eigenvalue order:
 
 ```text
 H_nu = U_nu D_nu U_nu^dagger
 H_e  = U_e  D_e  U_e^dagger
 ```
 
-with unitary eigenvector matrices `U_nu` and `U_e`. Define
+with unitary eigenvector matrices `U_nu` and `U_e`. For fixed supplied
+eigenvector matrices the same algebra applies without the simple-spectrum
+or ordering hypothesis. Define
 
 ```text
 U_pair = U_e^dagger U_nu,
@@ -90,9 +114,13 @@ This row does not import dm_leptogenesis_exact_common.
 This row does not claim the projector is intrinsic to the pair for
 **degenerate** spectra: for a degenerate Hermitian matrix the
 projector `|U_pair|^2` is basis-dependent (non-diagonal eigenspace
-rotations change it), as the runner's Part 2b exhibits. The
+rotations change it), as the runner's Part 2c exhibits. The
 intrinsic-to-the-pair reading is restricted to simple (non-degenerate)
 spectra.
+
+This row does not claim an ordered projector packet without an eigenvalue
+label convention. Without ascending-eigenvalue labels, the pair determines
+the packet only up to independent row and column permutations.
 
 No new repo-wide axiom is introduced.
 
@@ -107,11 +135,13 @@ packet intrinsic to that pair?
 
 ## Answer
 
-Yes for **simple (non-degenerate) spectra**, in the bounded algebraic
-sense above; **no for degenerate spectra** (see the 2026-05-28 repair
-header — a degenerate eigenspace admits non-diagonal rotations that
-change `|U_pair|^2`). For a fixed choice of eigenvector matrices the
-three statements hold unconditionally. The matrix
+Yes for **simple (non-degenerate) spectra with ascending-eigenvalue labels
+for both matrices**, in the bounded algebraic sense above; **no for
+degenerate spectra** (see the 2026-05-28 repair header — a degenerate
+eigenspace admits non-diagonal rotations that change `|U_pair|^2`). Without
+the ordering convention, the intrinsic packet is defined only up to
+independent row and column permutations. For a fixed choice of eigenvector
+matrices the three statements hold unconditionally. The matrix
 `U_pair = U_e^dagger U_nu` is unitary because it is a product of
 unitaries, and the entrywise squared magnitudes of a unitary matrix form
 a doubly stochastic matrix. Independent phase choices of the eigenvector
@@ -169,6 +199,31 @@ Each entry is multiplied by a unit-modulus phase, so
 ```
 
 is unchanged.
+
+### 4. Simple-spectrum intrinsic reading with ordered labels
+
+For a Hermitian matrix with simple spectrum, each eigenspace is
+one-dimensional. After eigenvalues are labeled in ascending order, another
+unitary diagonalizer with the same ordered labels can only multiply each
+eigenvector by a unit phase. Thus two allowed ordered diagonalizer choices
+have the form
+
+```text
+U_nu' = U_nu D_nu_phase,
+U_e'  = U_e  D_e_phase.
+```
+
+By the rephasing calculation above,
+
+```text
+|U_e'^dagger U_nu'|^2 = |D_e_phase^dagger U_e^dagger U_nu D_nu_phase|^2
+                      = |U_e^dagger U_nu|^2.
+```
+
+If the ascending-eigenvalue labels are dropped, independent column
+permutations of `U_nu` and `U_e` remain available. They act on the packet
+as independent column and row permutations, so the ordered `3 x 3` matrix is
+not intrinsic without the label convention.
 
 ## Consequence
 

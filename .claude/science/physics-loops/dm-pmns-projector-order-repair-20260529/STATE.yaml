@@ -1,0 +1,41 @@
+loop_slug: dm-pmns-projector-order-repair-20260529
+date: 2026-05-29
+branch: physics-loop/dm-pmns-projector-order-repair-20260529
+base: origin/main@9a157affd
+target_claim_id: dm_leptogenesis_pmns_projector_interface_note_2026-04-16
+target_note: docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md
+target_runner: scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker_source: audit_ledger
+blocker_summary: >
+  Simple spectra alone leave independent row/column permutation freedom; the
+  intrinsic ordered projector packet needs an explicit eigenvalue label/order
+  convention.
+repair_summary: >
+  The note now adopts ascending eigenvalue order for both Hermitian matrices
+  when the pair itself is used to determine an ordered packet. The runner adds a
+  simple-spectrum order-convention exhibit proving phase invariance with labels
+  and row/column permutation freedom without them.
+open_imports: []
+new_axioms: []
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md
+  - scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
+verification:
+  py_compile: passed
+  runner: passed
+  pipeline: passed
+  pipeline_row_result: unaudited_ready_queue_rank_3
+  audited_conditional_count_after_pipeline: 15
+  ready_audit_queue_count_after_pipeline: 57
+  diff_check: passed
+review_loop_disposition: local_self_review_pass_pending_codex_reviewer
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: amend rebased commit, push, open draft PR
+stop_condition: PR opened or no safe GitHub path

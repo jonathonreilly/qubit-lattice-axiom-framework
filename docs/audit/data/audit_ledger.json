@@ -209003,24 +209003,48 @@
       "verdict_rationale": "The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome."
     },
     "persistent_record_as_kraus_operator_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T23:54:29.032673+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "persistent_record_overlap_kernel_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "persistent_record_overlap_kernel_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "persistent_record_overlap_kernel_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "08fca11ee1c5c97a2b4ee08e1debb9159bc327e7aae53ebe2fec36e6a5680c72",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-235254-9f828c85-persistent_record_as_kra",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite Kraus algebra closes after W is assumed, but the restricted packet does not derive the normalized linear record-writing isometry/readout from the retained overlap-kernel pilot. Equation (6) also misstates the general record probability as |A_r <phi_r|psi>|^2 rather than the block norm ||K_r psi||^2 under the note's own K_r definition.",
       "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional algebra only: assuming a normalized linear isometry W with an orthonormal record-block decomposition, the extracted blocks form a Kraus family with trace-preserving unconditional update and normalized selective updates.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T23:54:29.032673+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -209029,19 +209053,19 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given a normalized record-writing isometry W = sum_r K_r \\otimes |r>, W^dagger W = I is equivalent to sum_r K_r^dagger K_r = I, so the unconditional map sigma -> sum_r K_r sigma K_r^dagger is CPTP and selective states normalize by outcome probability.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "ebb66f338545701da293036395e691a12f245bb2237d3060a826ae4d9c513744",
       "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite a retained finite normalized linear record-writing isometry/readout theorem from the persistent-record overlap-kernel lane, and repair Eq. (6) to use sum_r ||K_r psi||^2 or explicitly add the rank-one assumptions that would make the displayed formula valid.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -209270,18 +209294,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
       "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely constructs a finite random isometry, extracts blocks, and checks the standard algebraic consequences; it does not hard-code the advertised pass. However, it verifies only the conditional finite-instrument theorem and does not instantiate or derive the persistent-record overlap-kernel dynamics as a normalized linear isometry with the required record readout. The displayed Step 2 probability formula is not generally correct for the K_r map defined in Step 1, so the note is not clean as written even for the algebraic exposition."
     },
     "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22": {
       "audit_date": "2026-05-23T12:52:12.797919+00:00",

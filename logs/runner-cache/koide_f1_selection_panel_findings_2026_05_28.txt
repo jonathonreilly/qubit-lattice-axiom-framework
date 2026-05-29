@@ -1,0 +1,66 @@
+
+========================================================================
+(A) EVERY CANONICAL VOLUME/DIMENSION MEASURE -> (1,2) -> Q=1 = F3
+========================================================================
+  trivial isotype E_+ = 3 a^2 (1 real dim); doublet E_perp = 6|b|^2
+  (2 real dim). The doublet is counted by its REAL DIMENSION = 2:
+
+  equipartition:  singlet energy = 0.5 (1 dof),  doublet = 1.0 (2 dofs)  ratio 1:2
+  Plancherel dim^2/|G|: trivial=0.333,  doublet(w+wbar)=0.667  ratio 1:2
+  Gaussian det / Haar on R^3: doublet block is 2-dimensional -> 1:2
+  => all give (p_+,p_perp)=(1/3,2/3): Q = 1.00000 = F3
+     equal-block (1/2,1/2): Q = 0.66667 = F1 (physical)
+     all-trivial (1,0):     Q = 0.33333 (Q_min)
+
+========================================================================
+(B) CONVENTION-ILLEGITIMACY: F1<->F3 MOVES the dimensionless Q
+========================================================================
+  Q(F1) = 0.66667,  Q(F3) = 1.00000
+  |Delta Q| / Q = 50.0%  (50% shift)
+  A legitimate unit/measure convention (meter/GeV/radian class)
+  must leave every DIMENSIONLESS predicted-vs-measured ratio
+  INVARIANT -- that is the admissibility criterion that licensed
+  the radian/meter reclassifications. Q is dimensionless and
+  directly measured (=0.6667). A choice moving it by 50% against
+  PDG data CANNOT be a unit convention.
+  => CORRECTION: F1-vs-F3 is NOT audit-decidable as a convention;
+     it is a genuine, still-open physics measure-SELECTION gap.
+     (PDG Q=0.6667 sits at F1, decisively excluding F3=Q=1.)
+
+========================================================================
+(C) THE SINGLE NAMED WALL: U(1)_b angular quotient on the doublet
+========================================================================
+  Doublet coordinate b = |b| e^{i theta} in the (Re b, Im b) plane.
+  Retained K/CPT supplies the DISCRETE Z_2 (w <-> wbar); it does
+  NOT supply the CONTINUOUS U(1)_b phase quotient.
+  If theta is gauged/quotiented out BEFORE the measure, the
+  doublet collapses 2 real dofs -> 1 radial dof |b|:
+    U(1)_b quotient=False: doublet counts as 2 real dof -> weighting (1,2) -> Q=1.0000 = F3 (Q=1)
+    U(1)_b quotient=True : doublet counts as 1 real dof -> weighting (1,1) -> Q=0.6667 = F1 (Q=2/3)
+  => F3->F1 IFF the continuous doublet phase is quotiented out.
+     This single missing ingredient is the entire residual gap.
+
+========================================================================
+(D) BANKABLE: d=3 transversal rigidity (three-generation predictor)
+========================================================================
+  Delta(d) = Q_mid - Q_equi = (1+d)/(2d) - 2/d = (d-3)/(2d).
+    d=2: Q_equi=1.0000 Q_mid=0.7500 Delta=-0.2500  
+    d=3: Q_equi=0.6667 Q_mid=0.6667 Delta=+0.0000  <= unique zero
+    d=4: Q_equi=0.5000 Q_mid=0.6250 Delta=+0.1250  
+  Simple transversal zero only at d=3 (slope 1/6) -> exactly 3
+  Koide-coherent generations; a Q=2/3 4th charged lepton is
+  falsified (d=4 needs Q_equi=1/2 but Q_mid=5/8). This is a
+  CONSISTENCY FILTER over d, NOT the selection law over the
+  ratio r at fixed d -- file as rigidity/predictor, not closure.
+
+========================================================================
+VERDICT
+========================================================================
+  No escape. F1 is NOT derived. F1-vs-F3 is NOT a legitimate unit
+  convention (it moves dimensionless Q). The crux collapses to ONE
+  unforced step: a U(1)_b angular quotient on the C_3 doublet that
+  would let counting-on-blocks (F1) override the dimension/
+  Plancherel measure (F3) that every retained structure selects.
+  Most promising route: Jaynes MaxEnt derives the 2-valued FS
+  block label as the macrostate variable (defeats Q=1/3), but
+  cannot adjudicate cell-counting (F1) vs Haar-volume (F3).

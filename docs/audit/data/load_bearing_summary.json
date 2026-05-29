@@ -101,6 +101,12 @@
       "transitive_descendants": 186
     },
     {
+      "claim_id": "three_generation_structure_note",
+      "criticality": "critical",
+      "load_bearing_score": 33.476,
+      "transitive_descendants": 711
+    },
+    {
       "claim_id": "minimal_axioms_2026-04-11",
       "criticality": "critical",
       "load_bearing_score": 32.896,
@@ -129,12 +135,6 @@
       "criticality": "critical",
       "load_bearing_score": 31.17,
       "transitive_descendants": 575
-    },
-    {
-      "claim_id": "three_generation_structure_note",
-      "criticality": "critical",
-      "load_bearing_score": 30.476,
-      "transitive_descendants": 711
     },
     {
       "claim_id": "left_handed_charge_matching_note",

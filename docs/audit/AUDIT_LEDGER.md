@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 168 |
-| **retained_no_go** | 173 |
+| **retained_no_go** | 174 |
 | **retained_bounded** | 602 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1158 |
+| unaudited | 1157 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 933 |
+| `audited_clean` | 934 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1394 |
+| `unaudited` | 1393 |
 
 | claim_type | count |
 |---|---:|
@@ -372,6 +372,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5195,6 +5196,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The source partitions the cosmological backdrop into five framework/conditional context ingredients and three local supplied premises C1-C3, keeps the sets disjoint, records zero admission retirements, and explicitly denies theorem-grade closure or repo-wide status effects.  _(class `A`)_
 - **chain closes:** True — As an open_gate, the row closes: the registered runner verifies the finite partition, source-firewall phrases, non-link context-surface handling, and no-overclaim boundaries, while the source leaves C1-C3 and all cosmology derivations open.
 - **rationale:** Clean only as an open admission-boundary gate. The runner's 48 PASS checks are textual and finite-partition guards rather than cosmology dynamics, but that is exactly the claimed object: a record that the existing eta-cascade backdrop still depends on C1 cosmological principle, C2 adiabatic expansion, and C3 non-Lambda EOS labels. Independent partition arithmetic confirms 5 framework/conditional ingredients plus 3 supplied premises, disjoint, with union size 8 and zero retired admissions. No retained theorem, observational value, entropy-conservation derivation, FRW dynamics, Tier-A registry entry, or effective-status promotion is claimed.
+- **auditor confidence:** high
+
+### `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`
+
+- **Note:** [`FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md`](../../docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the narrow claim that, on the A1/A2 one-qubit tensor algebra over the bare Z^3 substrate and granting U_2pi=-I_2, the rotation-exchange route does not force CAR over the hard-core-boson reading; it does not audit or assert absolute impossibility of fermionic statistics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-225320-d02e6759-fs_rotation_exchange_dis`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The on-site 2pi rotation lifts to the same scalar -I_4 on either site and generates only scalars, while two-site exchange is the non-scalar swap P, so the on-site sign cannot supply the cross-site CAR exchange sign without an extra continuous homotopy or graded-locality input.  _(class `A`)_
+- **chain closes:** True — The cited axiom premise supplies the qubit tensor-product substrate and the retained parent no-go supplies the broader statistics-agnostic context. The finite algebra closes exactly: U_2pi lifts are scalar, P is non-scalar, hard-core-boson and JW generators span the same M_4(C), and no retained continuous-configuration-space or graded-locality bridge is supplied.
+- **rationale:** The runner source performs exact SymPy matrix computations rather than printing constants or importing a contested premise, and the provided cache reports PASS=30 FAIL=0. The only upstream authorities are a retained no-go and an accepted axiom premise, so there is no dependency downgrade. The no-go discipline gate is satisfied at the narrow scope: the note enumerates alternative routes, collapses the wall to the absent exchange-rotation/graded-locality bridge, and explicitly leaves graph-braid and graded-locality closures open.
 - **auditor confidence:** high
 
 ### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`

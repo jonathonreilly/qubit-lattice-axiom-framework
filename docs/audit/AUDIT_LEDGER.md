@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1195 |
+| unaudited | 1194 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 23 |
-| ~~audited_conditional~~ | 19 |
+| ~~audited_conditional~~ | 20 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 922 |
-| `audited_conditional` | 19 |
+| `audited_conditional` | 20 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1431 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
@@ -1059,6 +1059,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lorentz_boost_covariance_3plus1d_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5553,6 +5554,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For arbitrary abstract finite-dimensional operators and data `(S, eta, K)`, defining `z_(p,q)=<chi_(p,q),S^(L_perp-1) eta>`, `rho=z/z_(0,0)`, `v=sum z chi`, and `Z(W)=<K(W),v>` makes the stated coefficient and evaluation relations follow by elementary linear algebra.  _(class `A`)_
 - **chain closes:** True — The narrowed in-scope claim closes because the displayed relations are definitions and immediate linear-algebra consequences of the abstract hypotheses. The physical beta=6 identification remains explicitly out of scope and is not used to close the audited claim.
 - **rationale:** After the 2026-05-28 narrowing, the load-bearing claim is only a formal if-premises-then-algebra lemma over arbitrary finite-dimensional `(S, eta, K)`. That claim is class A and does not require the four Wilson/Haar bridge authorities, which the note explicitly excludes from scope. The runner contains five theorem-style algebraic/finite structural checks and five cross-note support-string checks; it does not derive the physical Wilson/Haar identities, but the narrowed formal claim does not depend on those identities.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the formal scalar-insufficiency claim that one fixed plaquette scalar, treated as one scalar constraint on a retained positive class-sector vector, is not enough to recover v_6, rho_(p,q)(6), or the full compressed boundary function.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Fixing one scalar value L(v)=c does not determine a unique positive normalized class-sector vector v; distinct vectors can share that scalar while differing on other statistics and hence on boundary data.  _(class `A`)_
+- **chain closes:** False — The algebraic underdetermination point closes only as a formal finite-dimensional statement. The beta=6 PF-lane conclusion still imports an open physical bridge: the cited evaluation-seam authority explicitly scopes K_6^env, B_6(W), and compressed rim evaluation as formal/conditional pending unsupplied Wilson/Haar authorities, and the plaquette note does not certify the canonical P(6) readout.
+- **rationale:** The load-bearing step is an algebraic scalar-underdetermination argument, and the runner supports finite retained-sector sampling/inversion rather than a first-principles beta=6 physics closure. That is enough for a bounded formal warning that one scalar sample is insufficient to recover an N-dimensional retained coefficient vector. It is not enough for the broader beta=6 PF-seam claim because the main cited seam-reduction authority explicitly leaves the Wilson/Haar kernel, rim-lift, compression, and compressed evaluation identifications out of scope. Clean retention would therefore over-propagate a formal lemma through open physical identifications.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_bridge_support_note`

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py
-runner_sha256: b9587af40f12a4f7b7fd8cd684fd0f53541b8429b0a9e5fb4e860d59d0bbe700
+runner_sha256: a2592bb225a4231d49b7069e29f1f601bf90ed58db462216498ce2225e202ea2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.93
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -28,7 +28,7 @@ Part 1: (L1) ungraded equal-time locality on 2-site space — symbolic
   [PASS (A)] O_x · O_y = a ⊗ b (tensor-factorization corollary L3 ungraded)  (confirms tensor-product structure)
 
 ----------------------------------------------------------------------------------------
-Part 2: (L4) Pauli instance — distinct-site commutators
+Part 2: abstract M_2(C) Pauli illustration of (L1)-(L3) — distinct-site commutators (illustration only; no per-site physical Hilbert-realization claim)
 ----------------------------------------------------------------------------------------
   [PASS (A)] [σ_3^{(1)}, σ_3^{(2)}] = 0 exact at distinct sites
   [PASS (A)] [σ_+^{(1)}, σ_-^{(2)}] = 0 exact at distinct sites
@@ -56,7 +56,7 @@ Part 5: counterfactual probes
 ----------------------------------------------------------------------------------------
 Part 6: cited dependency ledger row visibility
 ----------------------------------------------------------------------------------------
-  [PASS (A)] cited dep `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` is graph-visible in audit ledger  (effective_status: unaudited)
+  [PASS (A)] cited dep `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` is graph-visible in audit ledger  (effective_status: retained)
 
 ----------------------------------------------------------------------------------------
 Summary
@@ -64,13 +64,15 @@ Summary
   Verified at exact sympy precision:
     (L1) ungraded [O_x, O_y] = 0 over 8 free 2x2 entries at 2 sites
     (L3) tensor-factorization O_x · O_y = a ⊗ b
-    (L4) Pauli instance: [σ_3^{(1)}, σ_3^{(2)}] = 0, [σ_+, σ_-] = 0,
+    Abstract M_2(C) Pauli illustration of (L1)-(L3):
+         [σ_3^{(1)}, σ_3^{(2)}] = 0, [σ_+, σ_-] = 0,
          [σ_+, σ_3] = 0, [σ_-, σ_3] = 0 at distinct sites
+         (illustration only; no per-site physical Hilbert-realization claim)
     (L2) Pauli ladders on distinct raw tensor factors commute
     3-site extension: [O_1, O_3] = 0 with identity at site 2
     Counterfactual: same-site [σ_+, σ_3] ≠ 0 confirms non-trivial scope
-    Cited dep `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
-    is graph-visible in audit_ledger.json
+    Ledger-row visibility check: `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
+    is graph-visible in audit_ledger.json (not load-bearing on rescoped claim)
 
 ========================================================================================
 TOTAL: PASS=17, FAIL=0

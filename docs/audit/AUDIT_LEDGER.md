@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 163 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 594 |
+| **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1132 |
+| unaudited | 1131 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 919 |
+| `audited_clean` | 920 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1362 |
+| `unaudited` | 1361 |
 
 | claim_type | count |
 |---|---:|
@@ -1034,6 +1034,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -16044,6 +16045,19 @@ Claim boundary until fixed: the current runner gives useful bounded evidence tha
 - **load-bearing step:** Two completions, kappa_Y = 0 with K_Y = 8/9 and kappa_Y = 1 with K_Y = 1, share the same retained Fierz channel fractions and color-blind scaling law, so those premises do not determine the connected-trace selector.  _(class `A`)_
 - **chain closes:** True — The cited authority supplies only the exact adjoint and singlet channel fractions, and it explicitly leaves matching/readout rules outside its derivation. The source note's two-completion witness is enough to show underdetermination on that restricted premise set.
 - **rationale:** The no-go is narrowly scoped to non-derivability from the restricted packet, not to impossibility across the full framework. Its load-bearing step is an algebraic independence witness over the cited channel fractions: the same retained primitive data permit kappa_Y = 0 and kappa_Y = 1 with different K_Y values. The cited Fierz authority is retained-grade decoration and does not contain a closed Yukawa readout theorem. The No-Go Discipline gate is satisfied in-packet: alternative routes are enumerated, the wall is collapsed to the missing selector theorem, hidden wording is scoped, and the steelman is left as future work rather than overruled.
+- **auditor confidence:** high
+
+### `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-dimensional selector: given a normalized connected source-response surface over trace-one color records and the stated corrected K_Y(kappa_Y) family, the identity color source is normalization-only, the nonzero tangent is End(C^N)/CI ~= sl_N, and kappa_Y = 0 gives K_Y = (N^2 - 1)/N^2 = 8/9 at N = 3; no physical Y_T, Higgs/source-action, canonical O_H, scalar LSZ, pole-row, or top-Yukawa value closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On trace-one color records, J = aI gives Tr(J rho) = a, so the centered connected score is zero; after quotienting by CI the connected tangent is sl_N with dimension N^2 - 1, selecting kappa_Y = 0 in the stated K_Y(kappa_Y) family.  _(class `A`)_
+- **chain closes:** True — For trace-one rho, scalar identity sources contribute only constants and are killed by centering. The quotient by the identity line has dimension N^2 - 1 inside the N^2-dimensional color matrix-source sector, so the connected-source fraction is (N^2 - 1)/N^2 and the singlet coefficient in the stated family is zero.
+- **rationale:** Within the bounded premise packet, the algebra closes: the identity source is constant on the trace-one surface, centering kills constants, and the traceless quotient has dimension N^2 - 1. The independent manual check matches the runner's exact rational projection and score calculations, including the N = 3 value 8/9 and the singlet gap 1/9. The runner also verifies that the source note preserves the open physical blockers rather than claiming full Y_T closure. Residual risk appears only if this row is broadened from the bounded selector to the physical neutral EW/Higgs source-action surface, canonical O_H, scalar LSZ normalization, strict pole rows, W/Z response bypass, or a physical top-Yukawa prediction.
 - **auditor confidence:** high
 
 ### `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26`

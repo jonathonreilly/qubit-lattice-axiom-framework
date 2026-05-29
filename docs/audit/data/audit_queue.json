@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 243,
     "high": 313,
-    "leaf": 305,
+    "leaf": 304,
     "medium": 294
   },
   "cycle_break_target_count": 0,
@@ -26128,31 +26128,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35108,6 +35083,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 25,
-  "total_pending": 1155
+  "ready_count": 24,
+  "total_pending": 1154
 }

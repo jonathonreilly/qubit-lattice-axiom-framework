@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 603 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1153 |
+| unaudited | 1152 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 936 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1389 |
+| `unaudited` | 1388 |
 
 | claim_type | count |
 |---|---:|
@@ -1093,6 +1093,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lorentz_boost_covariance_3plus1d_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7588,6 +7589,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The endpoint configuration at P=1 remains feasible under the PSD, Hausdorff, Gram, support, area-law, and admitted lower-bound constraints.  _(class `A`)_
 - **chain closes:** True — Setting p1=p2=p3=p4=r1=r2=q1=q2=pr=pq=rq=1 makes the Hankel, shifted Hausdorff, and Gram matrices PSD and satisfies p4<=p2, r1<=p2, q1<=p4, support bounds, and p1>=0.4225, so the upper optimum cannot be below 1.
 - **rationale:** Clean only as an open gate, not as a retained lattice plaquette value or nontrivial bracket theorem. The lower bound p1>=0.4225 is imported/admitted, not derived by the SDP. The runner hard-codes that lower bound and hard-codes MC/bridge comparators for reporting, but those constants are not needed for the scoped upper-bound non-improvement result.
+- **auditor confidence:** high
+
+### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-region theorem: assuming PRR on A_Lambda ~= M_{2^|Lambda|}(C), full inner-unitary invariance forces rho_ref|_Lambda = I/2^|Lambda|; PRR itself is not derived or approved.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-231332-d6e6a7b3-inner_automorphism_invar`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For a finite-dimensional matrix algebra M_d(C), the only density matrix fixed by rho -> U rho U^dagger for every unitary U in U(d) is rho = I_d/d.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional algebraic implication closes once PRR is granted: diagonal sign/phase invariance kills off-diagonal entries, permutations equalize the diagonal, and trace normalization fixes I_d/d. The missing step is a retained derivation or explicit framework approval that the pre-record reference state satisfies PRR on every finite region.
+- **rationale:** The runner source performs real finite-dimensional algebra checks and source-boundary checks; it does not merely print constants, and it does not smuggle in a numerical comparator. The displayed finite-region formulas and normalizations used in the source note are consistent under the stated M_d(C) and qubit-region definitions. However, the note explicitly imports PRR as an admitted external premise, and neither cited retained authority derives or approves that premise. Therefore the row is a valid conditional algebraic bridge, not a clean derivation of the pre-record reference state's tracial form from the restricted packet.
 - **auditor confidence:** high
 
 ### `inverse_problem_note`

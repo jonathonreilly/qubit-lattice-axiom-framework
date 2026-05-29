@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py
+runner_sha256: a3e120d5547cfb4b43d227402240a964f2be9ad4cc7a461a90cdc22f22cc9a50
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+==============================================================================
+P2 DETERMINANT-REALIZATION BRIDGE, CONDITIONAL ON THE FERMIONIC FRAME
+assembly + separability + residual re-attribution (FS, not AC_phi_lambda)
+==============================================================================
+
+--- BLOCK 1  Berezin Gaussian-determinant identity  Z_F[M] = det(M) ---
+  [PASS] berezin Z_F[M]=det(M) generic 1x1
+  [PASS] berezin Z_F[M]=det(M) generic 2x2
+  [PASS] berezin Z_F[M]=det(M) generic 3x3
+  [PASS] berezin Z_F[D+J]=det(D+J) numeric 3x3
+
+--- BLOCK 2  staggered determinant positivity (zero-source, phase-free) ---
+  [PASS] M_KS anti-Hermitian  L=(4,4)  err=0.0e+00
+  [PASS] {eps,M_KS}=0  L=(4,4)  err=0.0e+00
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(4,4) m=0.3  det=0.049944
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(4,4) m=0.7  det=7.337294
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(4,4) m=1.5  det=10201.789078
+  [PASS] log|det| = log det  L=(4,4)  m=0.7
+  [PASS] M_KS anti-Hermitian  L=(4,2)  err=0.0e+00
+  [PASS] {eps,M_KS}=0  L=(4,2)  err=0.0e+00
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(4,2) m=0.3  det=0.009624
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(4,2) m=0.7  det=0.533046
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(4,2) m=1.5  det=53.472656
+  [PASS] log|det| = log det  L=(4,2)  m=0.7
+  [PASS] M_KS anti-Hermitian  L=(6,2)  err=0.0e+00
+  [PASS] {eps,M_KS}=0  L=(6,2)  err=0.0e+00
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(6,2) m=0.3  det=0.004033
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(6,2) m=0.7  det=0.567648
+  [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(6,2) m=1.5  det=410.062500
+  [PASS] log|det| = log det  L=(6,2)  m=0.7
+
+--- BLOCK 3  relabeling-invariance SEPARABILITY  (residual = FS, NOT AC_phi_lambda) ---
+  [PASS] det(hw=1) invariant over all 6 S_3 relabelings  maxdev=2.8e-17
+  [PASS] spec(hw=1) invariant over all S_3 relabelings  maxdev=4.4e-16
+  [PASS] Z=Tr(e^-H) invariant over all S_3 relabelings  maxdev=1.8e-15
+  [PASS] det(M_KS+mI) invariant over 9 embedded relabelings  maxdev=2.7e-15  baseline=7.33729411
+  [PASS] det blind to delta mass-pattern relabeling (AC_phi_lambda)  maxdev=0.0e+00
+
+==============================================================================
+INTERPRETATION
+------------------------------------------------------------------------------
+Block 1: the fermion partition function on the fermionic frame IS
+  det(D+J) (Berezin), so the readout W = log|det(D+J)| IS the generator.
+Block 2: on the zero-source staggered surface det(M_KS+mI) > 0, so
+  log|det| = log det (no phase) -- the realization half of P2 there.
+Block 3 (CRUX): det, spec(H_hat), Z are invariant under ALL S_3
+  relabelings of the hw=1 triplet and the delta mass-pattern. Since
+  AC_phi_lambda IS exactly such a relabeling, the determinant readout
+  is PROVABLY BLIND to it. The realization residual is therefore the
+  substep-1 FERMIONIC-STATISTICS selection FS (an admission; NOT forced
+  by the Axiom 1 / Axiom 2 baseline), NOT AC_phi_lambda. The
+  second-transcendental (Lindemann)
+  obstruction lives in substep-4 / AC_phi_lambda and is ORTHOGONAL.
+==============================================================================
+SCORECARD: PASS=27 FAIL=0
+
+----- stderr -----
+

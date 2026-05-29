@@ -20005,6 +20005,26 @@
       "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
     },
     {
+      "from": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
+      "from": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
+      "to": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
       "from": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -68523,6 +68543,24 @@
       "runner_path": "scripts/frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28.py",
       "title": "Observable Principle \u2014 Form/Scale Two-Stage Synthesis"
     },
+    "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28": {
+      "claim_id": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+        "staggered_only_det_positivity_case_a_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e82fa7195c3b52bce7711193c43ecc14c4e20507d813e809b7b21a10eeec1fda",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py",
+      "title": "Observable-Principle P2 \u2014 Determinant-Realization Bridge, Conditional on the Fermionic Frame, and Residual Re-Attribution (FS, not AC_phi_lambda)"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -87292,7 +87330,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 692,
+      "bounded_theorem": 693,
       "decoration": 1,
       "meta": 197,
       "no_go": 86,
@@ -87301,7 +87339,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1092,
+      "bounded_theorem": 1093,
       "decoration": 1,
       "meta": 197,
       "no_go": 189,
@@ -87309,10 +87347,10 @@
       "open_gate": 133,
       "positive_theorem": 581
     },
-    "edge_count": 9943,
+    "edge_count": 9948,
     "leaf_count": 826,
-    "node_count": 2615,
+    "node_count": 2616,
     "root_count": 872,
-    "runners_with_path": 2189
+    "runners_with_path": 2190
   }
 }

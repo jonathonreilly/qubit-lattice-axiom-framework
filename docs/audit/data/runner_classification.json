@@ -16812,6 +16812,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28.py"
     },
+    "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 12,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -28293,6 +28305,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py": {
+      "assert_count": 1,
+      "claims": [
+        "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 12,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py": {
@@ -57798,12 +57825,12 @@
     "dominant_class_distribution": {
       "A": 266,
       "B": 294,
-      "C": 772,
+      "C": 773,
       "D": 308,
       "none": 444
     },
-    "runners_classified": 2084,
-    "runners_with_C": 1015,
-    "runners_with_D": 616
+    "runners_classified": 2085,
+    "runners_with_C": 1016,
+    "runners_with_D": 617
   }
 }

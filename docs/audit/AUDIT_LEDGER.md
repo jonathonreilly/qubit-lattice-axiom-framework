@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1192 |
+| unaudited | 1193 |
 | meta | 235 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -65,11 +65,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1427 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1133 |
+| `bounded_theorem` | 1134 |
 | `decoration` | 52 |
 | `meta` | 239 |
 | `no_go` | 259 |
@@ -81,16 +81,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 380 |
 | `high` | 505 |
 | `medium` | 607 |
-| `leaf` | 1009 |
+| `leaf` | 1010 |
 
 - **Retained pending chain closure:** 10
 - **Citation cycles detected:** 1
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2084
-- runners with (C) first-principles compute hits: 1015
-- runners with (D) external comparator hits: 616
+- runners classified: 2085
+- runners with (C) first-principles compute hits: 1016
+- runners with (D) external comparator hits: 617
 - decoration candidates (no C, no D): 357
 
 ## Top 25 by load-bearing score (topology only)
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 932 | 53.37 | `audited_clean` | **retained** |
 | 3 | `minimal_axioms_2026-05-03` | meta | critical | 927 | 50.86 | `unaudited` | meta |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1080 | 46.58 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms` | meta | critical | 1073 | 41.07 | `unaudited` | meta |
+| 5 | `minimal_axioms` | meta | critical | 1074 | 41.07 | `unaudited` | meta |
 | 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 966 | 40.92 | `audited_clean` | **retained_bounded** |
 | 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 870 | 39.77 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 189 | 39.07 | `unaudited` | unaudited |

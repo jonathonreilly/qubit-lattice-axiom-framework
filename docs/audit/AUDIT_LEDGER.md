@@ -15444,24 +15444,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
 - **auditor confidence:** high
 
-### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`
-
-- **Note:** [`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](../../docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact algebraic support for C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element; not a closed theorem selecting C_pert over C_strong on the canonical tadpole-improved surface.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-fresh-context-20260529-uv-bridge-wall-01`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** On the canonical surface (alpha_LM = 0.091 << 1, n_opt ~ 35 loops), the perturbative expansion is convergent, so C_pert is the correct input to the main theorem's Step 3 UV side and C_strong is not.  _(class `B`)_
-- **chain closes:** False — The finite algebraic coefficients close, but the expansion-domain and selection claim does not follow from the one-hop packet. The packet does not supply a retained theorem deriving the plaquette 0.5934/u0 surface, closing the g_bare and staggered-Dirac gates, proving shared tadpole transport, or proving that tadpole-improved perturbation theory rather than the strong-coupling expansion governs this coefficient.
-- **rationale:** Issue: the source's load-bearing selection step says the tadpole-improved canonical surface makes C_pert the governing coefficient and excludes C_strong, but the restricted packet only closes the finite algebraic coefficients and small-alpha arithmetic. Why this blocks: small alpha_LM and n_opt ~ pi/alpha_LM do not by themselves prove convergence or supply a retained expansion-domain/selector theorem, and the runner imports the canonical plaquette/u0 surface rather than deriving it. Repair target: supply a retained expansion-domain/selection theorem for the tadpole-improved canonical surface, plus retained closure or explicit bounded admissions for plaquette 0.5934/u0, g_bare, staggered-Dirac realization, and shared tadpole transport. Claim boundary until fixed: the exact algebraic support C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element are verified, but the governing-coefficient selection remains conditional.
-- **open / conditional deps cited:**
-  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
-  - `MINIMAL_AXIOMS_2026-04-11.md`
-  - `MINIMAL_AXIOMS_2026-05-20.md`
-  - `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`
-- **auditor confidence:** high
-
 ### `valley_linear_action_note`
 
 - **Note:** [`VALLEY_LINEAR_ACTION_NOTE.md`](../../docs/VALLEY_LINEAR_ACTION_NOTE.md)

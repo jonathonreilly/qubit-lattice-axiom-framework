@@ -1,0 +1,44 @@
+loop_slug: uv-yukawa-coeff-scope-repair-20260529
+date: 2026-05-29
+branch: physics-loop/uv-yukawa-coeff-scope-repair-20260529
+base: origin/main@f5ddc3ec6
+target_claim_id: uv_gauge_to_yukawa_bridge_sc_vs_pert_note
+target_note: docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md
+target_runner: scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker_source: audit_ledger
+blocker_summary: >
+  The exact finite coefficients close, but the source claimed the canonical
+  tadpole-improved surface selects the perturbative coefficient without a
+  retained expansion-domain/selector theorem.
+repair_summary: >
+  The note now claims only the exact finite coefficient packet:
+  C_pert=1/(2Nc), C_strong=1/Nc^2, their distinction, Dirac Fierz channel
+  checks, and H_unit 1/sqrt(6) overlap. The governing expansion selector is
+  out of scope.
+open_imports:
+  - future_expansion_domain_selector_out_of_scope
+new_axioms: []
+files_touched:
+  - docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md
+  - scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py
+verification:
+  py_compile: passed
+  runner: passed
+  pipeline: passed
+  pipeline_result: >
+    run_pipeline.sh completed with one re-audit-required row, zero stale audit
+    invalidations, audited_conditional=14, unaudited=1195, ready queue=60
+    after rebasing to origin/main@f5ddc3ec6.
+  audit_queue_rank: 3
+  diff_check: passed
+review_loop_disposition: local_self_review_pass_pending_codex_reviewer
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: amend regenerated audit outputs, push, open draft PR
+stop_condition: PR opened or no safe GitHub path

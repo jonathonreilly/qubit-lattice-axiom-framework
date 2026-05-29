@@ -185359,7 +185359,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 55,
+      "direct_in_degree": 54,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
@@ -185410,7 +185410,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 46,
+      "direct_in_degree": 45,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
@@ -214453,7 +214453,7 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 44,
+      "direct_in_degree": 43,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
@@ -300177,70 +300177,28 @@
       "verdict_rationale": null
     },
     "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": {
-      "audit_date": "2026-05-29T03:28:01.490880+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {
-          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
-        },
-        "dep_claim_scope": {
-          "minimal_axioms": null,
-          "minimal_axioms_2026-04-11": null,
-          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
-          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
-          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
-        },
-        "dep_claim_type": {
-          "minimal_axioms": "meta",
-          "minimal_axioms_2026-04-11": "meta",
-          "plaquette_self_consistency_note": "bounded_theorem",
-          "yt_ew_color_projection_theorem": "no_go",
-          "yt_ward_identity_derivation_theorem": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "minimal_axioms": "meta",
-          "minimal_axioms_2026-04-11": "meta",
-          "plaquette_self_consistency_note": "retained_bounded",
-          "yt_ew_color_projection_theorem": "retained_no_go",
-          "yt_ward_identity_derivation_theorem": "retained_bounded"
-        },
-        "deps": [
-          "minimal_axioms",
-          "minimal_axioms_2026-04-11",
-          "plaquette_self_consistency_note",
-          "yt_ew_color_projection_theorem",
-          "yt_ward_identity_derivation_theorem"
-        ],
-        "load_bearing_score": 12.039,
-        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
-        "transitive_descendants": 525
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-fresh-context-20260529-uv-bridge-wall-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The finite algebraic coefficients close, but the expansion-domain and selection claim does not follow from the one-hop packet. The packet does not supply a retained theorem deriving the plaquette 0.5934/u0 surface, closing the g_bare and staggered-Dirac gates, proving shared tadpole transport, or proving that tadpole-improved perturbation theory rather than the strong-coupling expansion governs this coefficient.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-      "claim_scope": "Exact algebraic support for C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element; not a closed theorem selecting C_pert over C_strong on the canonical tadpole-improved surface.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-29T03:28:01.490880+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem.",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "yt_ward_identity_derivation_theorem",
-        "yt_ew_color_projection_theorem",
-        "minimal_axioms_2026-04-11",
-        "plaquette_self_consistency_note",
-        "minimal_axioms"
-      ],
+      "deps": [],
       "direct_in_degree": 6,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
@@ -300254,15 +300212,10 @@
       "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "5303f2e681e47f902e0fb66d41319ff8f39405a4d476ad917539b0fecbe9f688",
+      "note_hash": "89c9a77a3c26ed36fc3d40e8a0a664ed307e94da98ed0ecc2aff83f4eca57a41",
       "note_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: supply a retained expansion-domain/selection theorem for the tadpole-improved canonical surface, plus retained closure or explicit admissions for plaquette 0.5934/u0, g_bare, staggered-Dirac realization, and shared tadpole transport.",
-      "open_dependency_paths": [
-        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
-        "docs/MINIMAL_AXIOMS_2026-04-11.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.370019+00:00",
@@ -300417,16 +300370,89 @@
             "total_pass": 44
           },
           "verdict_rationale": "Issue: exact Fierz, Haar, Clifford, and H_unit normalization algebra closes, but the support note's canonical-surface selection of the perturbative coefficient imports alpha_LM/u0 from the canonical plaquette surface and still cites a superseded minimal-axioms surface. Why this blocks: the direct plaquette authority is retained only for the finite bounded observable/diagnostic and explicitly says the canonical 0.5934 value is an admitted comparison/reuse number, not a retained derivation; the source therefore cannot independently certify that the perturbative expansion governs the retained surface. Repair target: replace the superseded minimal-axioms dependency with the current named gates and add a retained canonical-surface bridge deriving or ratifying the plaquette/u0/alpha_LM input and the perturbative-domain selection. Claim boundary until fixed: the row may be used as support for exact finite coefficient algebra and for the parent bounded Ward matrix-element packet, but not as retained authority that the canonical physical y_t bridge is perturbatively governed."
+        },
+        {
+          "archived_at": "2026-05-29T12:47:48.599114+00:00",
+          "archived_for_note_hash": "5303f2e681e47f902e0fb66d41319ff8f39405a4d476ad917539b0fecbe9f688",
+          "audit_date": "2026-05-29T03:28:01.490880+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {
+              "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+            },
+            "dep_claim_scope": {
+              "minimal_axioms": null,
+              "minimal_axioms_2026-04-11": null,
+              "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+              "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+              "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+            },
+            "dep_claim_type": {
+              "minimal_axioms": "meta",
+              "minimal_axioms_2026-04-11": "meta",
+              "plaquette_self_consistency_note": "bounded_theorem",
+              "yt_ew_color_projection_theorem": "no_go",
+              "yt_ward_identity_derivation_theorem": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "minimal_axioms": "meta",
+              "minimal_axioms_2026-04-11": "meta",
+              "plaquette_self_consistency_note": "retained_bounded",
+              "yt_ew_color_projection_theorem": "retained_no_go",
+              "yt_ward_identity_derivation_theorem": "retained_bounded"
+            },
+            "deps": [
+              "minimal_axioms",
+              "minimal_axioms_2026-04-11",
+              "plaquette_self_consistency_note",
+              "yt_ew_color_projection_theorem",
+              "yt_ward_identity_derivation_theorem"
+            ],
+            "load_bearing_score": 12.039,
+            "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+            "transitive_descendants": 525
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-fresh-context-20260529-uv-bridge-wall-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The finite algebraic coefficients close, but the expansion-domain and selection claim does not follow from the one-hop packet. The packet does not supply a retained theorem deriving the plaquette 0.5934/u0 surface, closing the g_bare and staggered-Dirac gates, proving shared tadpole transport, or proving that tadpole-improved perturbation theory rather than the strong-coupling expansion governs this coefficient.",
+          "claim_scope": "Exact algebraic support for C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element; not a closed theorem selecting C_pert over C_strong on the canonical tadpole-improved surface.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-29T03:28:01.490880+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "On the canonical surface (alpha_LM = 0.091 << 1, n_opt ~ 35 loops), the perturbative expansion is convergent, so C_pert is the correct input to the main theorem's Step 3 UV side and C_strong is not.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "scope_too_broad: supply a retained expansion-domain/selection theorem for the tadpole-improved canonical surface, plus retained closure or explicit admissions for plaquette 0.5934/u0, g_bare, staggered-Dirac realization, and shared tadpole transport.",
+          "open_dependency_paths": [
+            "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+            "docs/MINIMAL_AXIOMS_2026-04-11.md",
+            "docs/MINIMAL_AXIOMS_2026-05-20.md",
+            "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 36,
+            "B": 8,
+            "C": 0,
+            "D": 0,
+            "total_pass": 44
+          },
+          "verdict_rationale": "Issue: the source's load-bearing selection step says the tadpole-improved canonical surface makes C_pert the governing coefficient and excludes C_strong, but the restricted packet only closes the finite algebraic coefficients and small-alpha arithmetic. Why this blocks: small alpha_LM and n_opt ~ pi/alpha_LM do not by themselves prove convergence or supply a retained expansion-domain/selector theorem, and the runner imports the canonical plaquette/u0 surface rather than deriving it. Repair target: supply a retained expansion-domain/selection theorem for the tadpole-improved canonical surface, plus retained closure or explicit bounded admissions for plaquette 0.5934/u0, g_bare, staggered-Dirac realization, and shared tadpole transport. Claim boundary until fixed: the exact algebraic support C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element are verified, but the governing-coefficient selection remains conditional."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 36,
-        "B": 8,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 44
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "UV Gauge-to-Yukawa Bridge: Subordinate Support Note",
@@ -316518,7 +316544,7 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 49,
+      "direct_in_degree": 48,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 578 |
+| **retained_bounded** | 579 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1165 |
+| unaudited | 1164 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 891 |
+| `audited_clean` | 892 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1395 |
+| `unaudited` | 1394 |
 
 | claim_type | count |
 |---|---:|
@@ -162,6 +162,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `asymmetry_persistence_joint_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1681,6 +1682,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The exact R_conn repair closes only as F_adj=(3^2-1)/3^2=8/9 with the physical selector left conditional by the retained no-go dependency. The remaining ingredient status rows are not directly wired to retained-grade authorities in the restricted packet.
 - **rationale:** Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency.
 - **auditor confidence:** high
+
+### `asymmetry_persistence_collapse_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow qualitative observation from the completed N=80 configured runner output only: asymmetry-persistence lowers the unitary pur_min readout at the nonzero thresholds, while the stochastic-collapse readout does not show a uniform lowering relative to the unpruned baseline; N=100 rows and any collapse-pocket claim are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At N=80 and thresholds 0.10/0.20, pers_pmin is 0.981 versus base_pmin 0.998 and pers_LN is 0.889/0.881 versus base_LN 0.954, while pers_col is 0.286/0.281 versus base_col 0.264 and persCol_LN is 0.235/0.236 versus col_LN 0.235.  _(class `D`)_
+- **chain closes:** True — The current source scope is only the qualitative N=80 runner-output comparison; the cached stdout contains the required N=80 rows, and the helper sources show the configured graph generation, propagation, collapse, and purity readouts used for that comparison.
+- **rationale:** Within the narrowed scope, the completed N=80 stdout supports both qualitative statements: nonzero asymmetry-persistence thresholds lower the unitary pur_min readout, including the layernorm variant, and the stochastic-collapse columns do not show a generic lowering relative to baseline. The verdict does not use the runner's N=100 rows, does not assert a quantitative threshold row, does not assert a collapse pocket, and does not promote the helper model to a physical mechanism beyond this configured bounded simulation surface.
+- **auditor confidence:** medium
 
 ### `asymmetry_persistence_joint_card_note`
 

@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 297
+    "medium": 296
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16746,34 +16746,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "asymmetry_persistence_collapse_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "asymmetry_persistence_pilot_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/asymmetry_persistence_pilot.py",
-        "scripts/gap_topological_asymmetry.py",
-        "scripts/gap_topological_asymmetry_layernorm_combo.py"
-      ],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/asymmetry_persistence_collapse_pilot.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "source_resolved_wavefield_mechanism_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -26198,6 +26170,37 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "asymmetry_persistence_born_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "asymmetry_persistence_collapse_note",
+        "asymmetry_persistence_joint_card_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/asymmetry_persistence_collapse_pilot.py",
+        "scripts/asymmetry_persistence_joint_card.py",
+        "scripts/asymmetry_persistence_pilot.py",
+        "scripts/gap_topological_asymmetry.py",
+        "scripts/gap_topological_asymmetry_layernorm_combo.py"
+      ],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -27868,37 +27871,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "asymmetry_persistence_born_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "asymmetry_persistence_collapse_note",
-        "asymmetry_persistence_joint_card_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/asymmetry_persistence_collapse_pilot.py",
-        "scripts/asymmetry_persistence_joint_card.py",
-        "scripts/asymmetry_persistence_pilot.py",
-        "scripts/gap_topological_asymmetry.py",
-        "scripts/gap_topological_asymmetry_layernorm_combo.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
       "transitive_descendants": 1
     },
     {
@@ -35397,5 +35369,5 @@
     }
   ],
   "ready_count": 32,
-  "total_pending": 1167
+  "total_pending": 1166
 }

@@ -1,11 +1,27 @@
 # SU(3) L_s=3 PBC Cube Haar Monte Carlo: Honest Negative Result
 
 **Date:** 2026-05-04
-**Claim type:** bounded_theorem
-**Status authority:** source-note proposal only; audit verdict and
-effective status are set by the independent audit lane.
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
 **Primary runner:** `scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py`
 **Predecessor:** `docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md` (PR #501).
+
+## 2026-05-28 Audit Repair (narrow to runner-verified measurement)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The finite runner-output negative diagnosis is substantially supported, but the source note needs quantitative repair before the bounded theorem closes cleanly."*
+
+with repair: *"scope_too_broad: repair handoff: replace every 'within +/-1 standard error' claim with 'within about 1.20 SE' or 'not statistically significant by a conventional 2-SE diagnostic'; replace the 1e200/~150-orders sample-complexity statement with a qualitative phrasing."*
+
+This revision narrows the claim to exactly what the runner proves:
+
+- **Load-bearing (in scope):** The finite N_samples=5000 Haar MC negative result on the L_s=3 PBC cube: all nontrivial integrand averages (irreps (1,0), (1,1), (2,0), (2,1)) are not statistically significant by a conventional 2-SE diagnostic, and the induced source-sector Perron value P_cube(L=3 PBC, MC) = 0.1076 is noise-dominated.
+- **NON-load-bearing (non-binding interpretation):** The exact sample-complexity claim (that resolving T_(1,1) requires precisely ~1e+200 samples, infeasible by ~150 orders of magnitude); the specific 1e-100 signal-magnitude estimate rests on a product-structure argument that is a plausible illustration, not a certified tight bound. Marked as non-binding interpretation.
+
+No new axiom, import, or retained bridge is introduced. Only the exact finite
+measurement is load-bearing; the broader mechanism reading is explicitly
+non-binding.
 
 ## 0. Headline
 
@@ -20,10 +36,10 @@ irreps are at the same order as their MC standard error:
 | irrep | `<integrand>` | MC ± error |
 |---|---:|---:|
 | (0,0) | `1.0` | `0` (exact) |
-| (1,0) | `-6.3e-5` | `±5.9e-5` (within error of 0) |
-| (1,1) | `9.5e-18` | `±8.0e-18` (within error of 0) |
-| (2,0) | `3.5e-9` | `±4.1e-9` (within error of 0) |
-| (2,1) | `1.44e-12` | `±1.62e-12` (within error of 0) |
+| (1,0) | `-6.3e-5` | `±5.9e-5` (within about 1.20 SE; not statistically significant by a conventional 2-SE diagnostic) |
+| (1,1) | `9.5e-18` | `±8.0e-18` (within about 1.20 SE; not statistically significant by a conventional 2-SE diagnostic) |
+| (2,0) | `3.5e-9` | `±4.1e-9` (within about 1.20 SE; not statistically significant by a conventional 2-SE diagnostic) |
+| (2,1) | `1.44e-12` | `±1.62e-12` (within about 1.20 SE; not statistically significant by a conventional 2-SE diagnostic) |
 
 All nontrivial integrand averages are **statistically indistinguishable
 from zero** at N_samples = 5000. The resulting source-sector Perron
@@ -62,8 +78,8 @@ After dividing by the irrep-dimension factor `1 / d_lambda^81 = 1 / 8^81
 `1e-100` or below.
 
 To resolve `T_(1,1) ~ 1e-100` above MC noise (variance ~ 1 per sample),
-we'd need `N_samples ~ (1 / 1e-100)^2 = 1e+200` samples. Infeasible by
-~150 orders of magnitude.
+we'd need `N_samples ~ (1 / 1e-100)^2 = 1e+200` samples — astronomically large
+(far beyond any feasible sample budget).
 
 ### 1.3 What this means for this row
 
@@ -136,7 +152,8 @@ integrand `∏_p chi_lambda(U_p)` for `lambda ∈ {(0,0), (1,0), (0,1),
 (1,1), (2,0), (0,2), (2,1)}`.  The runner also verifies
 `chi_lambda(I) = dim(lambda)` for the tracked irreps, including the
 corrected `(2,1)` character.  For all nontrivial irreps, the MC mean is
-statistically indistinguishable from zero (within ±1 standard error).
+statistically indistinguishable from zero (within about 1.20 SE; not
+statistically significant by a conventional 2-SE diagnostic).
 The induced source-sector Perron value is `P_cube(L=3 PBC, MC) =
 0.1076`, dominated by MC noise; gap to bridge target is `0.4859 =
 1604× ε_witness`.
@@ -144,8 +161,8 @@ The induced source-sector Perron value is `P_cube(L=3 PBC, MC) =
 Naive Haar MC at L_s=3 cannot resolve `T_lambda(L=3 cube)` for
 nontrivial `lambda`: the integrand's product structure across 81
 plaquettes drives its expected magnitude below `~ 1e-100`, which
-requires `~ 1e+200` samples to resolve above MC variance — infeasible
-by ~150 orders of magnitude.
+requires astronomically large sample counts (far beyond any feasible
+sample budget) to resolve above MC variance.
 
 ## 5. Scope
 
@@ -180,7 +197,7 @@ Claim type: `bounded_theorem`.
 
 Review boundary: the runner documents a negative result for naive Haar
 MC on the L_s=3 PBC cube. At N=5000, all nontrivial integrand averages
-are statistically indistinguishable from zero within MC standard error.
+are statistically indistinguishable from zero (within about 1.20 SE; not statistically significant by a conventional 2-SE diagnostic).
 The reported `P_cube(L=3 PBC, MC) = 0.1076` is a noise-dominated failure
 signal, not a derived value. This note does not set an audit verdict and
 does not promote the bridge parent chain.

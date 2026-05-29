@@ -1,14 +1,34 @@
 # Lane 4F (Σm_ν) — F3 Stuck Fan-Out Synthesis
 
 **Date:** 2026-04-28
+**Type:** no_go
 **Status:** open branch-local **stuck-fan-out synthesis** note on
 `physics-loop/sigma-mnu-f3-dm-cluster-20260428`. Cycle 2 of the F3
 loop. Audit-grade. Per Deep Work Rules: 5 orthogonal Σm_ν cross-
 bound routes beyond the Cycle-1 DM-cluster cross-bound.
+**Status authority:** independent audit lane only.
 **Lane:** 4 — Neutrino quantitative closure (sub-target 4F-β)
 **Loop:** `sigma-mnu-f3-dm-cluster-20260428`
 **Runner:** `scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py`
 **Log:** `outputs/frontier_sigma_mnu_f3_stuck_fanout_synthesis_2026-04-28.txt`
+
+## 2026-05-28 Audit Repair (conditional core; missing upstream admitted)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The finite-route synthesis follows only if the five route statuses and current-framework surface are accepted as inputs. The packet supplies no upstream authorities for T-4F-alpha-2, the current-bank Omega_DM interval, retained N_eff, the n"*
+
+with repair: *"missing_dependency_edge: add direct cited authorities for the F3 Cycle-1 DM cross-bound, T-4F-alpha-2 functional-form theorem, current-bank Omega_DM theorem, Lane 5 C1 gate status, and eta/leptogenesis status, then re-run the no-go audit."*
+
+Supplying the named upstream authority is substantive new work, out of scope.
+This revision narrows via the **admission path**:
+
+- **Load-bearing (in scope):** Given the five route statuses and the current-framework surface as admitted inputs, the synthesis closes: F3-α through F3-ε are assessed, the ~0.003 eV admission window is identified, and the no-go result — that no orthogonal F3-* route supplies an independent numerical Σm_ν cross-bound on the current-bank surface — follows algebraically from those inputs.
+- **NON-load-bearing (admitted / unsupplied):** The specific retained authorities establishing the five input route statuses — the T-4F-alpha-2 functional-form theorem, the current-bank Omega_DM interval theorem, retained N_eff, Lane 5 C1 gate status, and eta/leptogenesis status — are admitted as unsupplied inputs; no direct cited authority row for any of these is present in the restricted packet.
+
+No new axiom, import, or retained bridge is introduced. The conditional core is
+the load-bearing content; the named upstream stays admitted until a retained
+authority/runner for it lands.
 
 ---
 

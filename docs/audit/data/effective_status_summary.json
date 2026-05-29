@@ -1,16 +1,16 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1118,
+    "bounded_theorem": 1119,
     "decoration": 51,
-    "meta": 237,
+    "meta": 238,
     "no_go": 259,
     "open_gate": 116,
-    "positive_theorem": 714
+    "positive_theorem": 712
   },
   "cycle_examples": [],
   "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 59,
+    "audited_conditional": 44,
     "audited_numerical_match": 14,
     "audited_renaming": 21,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
@@ -38,13 +38,13 @@
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 230,
+    "meta": 233,
     "open_gate": 25,
     "retained": 149,
     "retained_bounded": 560,
     "retained_no_go": 172,
     "retained_pending_chain": 10,
-    "unaudited": 1208
+    "unaudited": 1220
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

@@ -1,14 +1,33 @@
 # Carrier-Independent Bilateral Lattice-Noether Identity — Narrow Theorem (Block 27)
 
 **Date:** 2026-05-17
-**Type:** positive_theorem (narrow sub-theorem)
+**Type:** bounded_theorem
 **Loop:** `filter-excluded-positive-closures-2026-05-17`, Block 27
 **Authority role:** source-note proposal; effective `effective_status`
 is set only by the independent audit lane.
+**Status authority:** independent audit lane only.
 **Primary runner:** `scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py`
 **Cache:** `logs/runner-cache/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.txt`
 **Parent (audited_conditional row this narrow closure targets):**
   `docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
+
+## 2026-05-28 Audit Repair (conditional core; missing upstream admitted)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The AxisInv reindexing algebra closes once the finite Grassmann bilinear action and site-local/internal generator hypotheses are assumed. The restricted packet does not close the import of that Grassmann/action surface from A1+A2, and [T,M]"*
+
+with repair: *"missing_dependency_edge: cite a retained finite-Grassmann bilinear/partition theorem as a one-hop dependency and narrow T2 to site-local/internal generators, or add a separate Ward theorem for lattice-index generators."*
+
+Supplying the named upstream authority is substantive new work, out of scope.
+This revision narrows via the **admission path**:
+
+- **Load-bearing (in scope):** The AxisInv reindexing algebra — T1 anti-Hermiticity characterization, T2 bilateral conserved current derivation, T3 class-strictness certification, T4 sharpness, and T5 carrier-uniformity — all close algebraically and are verified numerically by the eight runner exhibits to machine precision, given the finite Grassmann bilinear action `S_F = chi_bar M chi` and site-local/internal generators `T` satisfying `[T, M] = 0` as supplied inputs.
+- **NON-load-bearing (admitted / unsupplied):** The finite Grassmann bilinear/partition theorem establishing that the variational derivation `delta S_F[alpha]` produces the bilateral form (5) — specifically the one-hop retained authority closing the import of the Grassmann/action surface from A1+A2 — is admitted as an unsupplied input; additionally T2 as stated covers site-local/internal generators and no separate Ward theorem for lattice-index generators is supplied.
+
+No new axiom, import, or retained bridge is introduced. The conditional core is
+the load-bearing content; the named upstream stays admitted until a retained
+authority/runner for it lands.
 
 ## Authority disclaimer
 

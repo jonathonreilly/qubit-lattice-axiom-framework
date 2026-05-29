@@ -1,16 +1,32 @@
 # 4D Instanton Minimal Action `8π²/g²` — External Narrow Theorem
 
 **Date:** 2026-05-16
-**Claim type:** positive_theorem
+**Type:** bounded_theorem
 **Scope:** external 4D Euclidean SU(N) Yang-Mills instanton minimal action
 formula (BPST 1975; 't Hooft 1976) and lattice preservation under Lüscher
 admissibility (Lüscher 1982; Lüscher 2010). Cited only as published
 gauge-theory context. No framework substrate identification, hierarchy
 closure, scale ratio derivation, or `α_LM^16` substitution is claimed.
-**Status authority:** independent audit lane only; pipeline-derived
-status set by `compute_effective_status.py`.
+**Status authority:** independent audit lane only.
 **Runner:** [`scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py`](../scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.txt`](../logs/runner-cache/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.txt)
+
+## 2026-05-28 Audit Repair (narrow to runner-verified measurement)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The retained one-hop dependency closes only the bounded finite algebra/arithmetic certificate, while the source's full external theorem package also relies on global Atiyah-Singer and Luescher lattice-topology inputs that the dependency explicitly does not cover."*
+
+with repair: *"scope_too_broad: narrow to the retained bounded Hodge/Bogomolny plus BPST radial normalization certificate, or add a retained-grade authority packet for Atiyah-Singer integrality, BPST existence, and Luescher lattice-topology preservation."*
+
+This revision narrows the claim to exactly what the runner proves:
+
+- **Load-bearing (in scope):** The bounded finite algebra/arithmetic certificate: symbolic reproduction of S_inst = 8π²/g² from the Bogomolny bound saturated by F = *F, numerical evaluation at g² ∈ {1/2, 1, 2}, self-duality identity verification, and the BPST radial-normalization checks (runner tests T1–T6), as certified by the paired runner and its cache.
+- **NON-load-bearing (non-binding interpretation):** The global Atiyah-Singer integrality theorem (Q ∈ Z for all smooth finite-action SU(N) configurations on compactified 4-manifolds), the full BPST existence theorem (existence of the |Q|=1 self-dual solution), and the Lüscher lattice-topology preservation result (admissibility + gradient flow giving integer Q_lat with O(a²) corrections in the continuum limit). These inputs are stated in the note as external published context (runner tests T7–T10), but no retained one-hop authority covers them; they are marked non-binding interpretation unless a retained authority packet is supplied.
+
+No new axiom, import, or retained bridge is introduced. Only the exact finite
+measurement is load-bearing; the broader mechanism reading is explicitly
+non-binding.
 
 ## Claim
 

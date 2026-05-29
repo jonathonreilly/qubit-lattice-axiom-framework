@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 153 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 567 |
+| **retained_bounded** | 568 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1185 |
+| unaudited | 1184 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 878 |
+| `audited_clean` | 879 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1415 |
+| `unaudited` | 1414 |
 
 | claim_type | count |
 |---|---:|
@@ -293,6 +293,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -3959,6 +3960,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Refining the same-surface thermal quadrature shifts the admitted-family selector root by far more than the apparent 9/62 residual, so the structural 9/62 collapse is not stable.  _(class `C`)_
 - **chain closes:** True — The note's bounded negative claim is exactly reproduced by the runner: it computes the coarse apparent match, then recomputes refined roots at 4000, 8000, and 16000 points and shows material drift away from 9/62.
 - **rationale:** The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure x_f=25 thermal-kernel series/tail certificate: positive Coulomb series identities, exact J1/J2 term-integral representations, and exact tail bounds; excludes live-DM slice constants, alpha/eta/omega selector samples, and current-bank selector closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-descartes-019e7228`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The same-surface DM thermal factors admit exact positive-series decompositions, with tails bounded by y/(1-e^-y)<=1+y so the remainders reduce to J1/J2 Meijer-G integrals.  _(class `A`)_
+- **chain closes:** True — The scoped pure thermal-kernel claim closes from the retained bounded thermal integral/normalization inputs plus standard algebra and special-function identities; helper-defined live-DM sample points are excluded from the clean scope.
+- **rationale:** The geometric-series identities are exact for y>0, and the tail inequality is equivalent to log(1+y)<=y. Independent quadrature checks for J1(c)=int v exp(-a v^2-c/v)dv and J2(c)=int v^2 exp(-a v^2-c/v)dv match the helper's Meijer-G forms. Helper inspection shows live-DM imports including plaquette alpha endpoints, ETA_OBS/omega_b conversion, and OMEGA_DM_OBS; these support checks remain outside clean scope absent retained one-hop authorities.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19`

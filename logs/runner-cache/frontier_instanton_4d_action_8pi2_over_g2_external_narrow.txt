@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py
-runner_sha256: 1cc98f061f812b032eb469aad8a52ef47c9b40cf16902d864b9495d304c292cd
+runner_sha256: 85806f77574e02c11ab40bbfc1ca09a581effe4a82117f7f348924c7f3b9ce75
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
-# 4D instanton 8 pi^2 / g^2 external theorem runner
+# 4D instanton 8 pi^2 / g^2 bounded normalization runner
 # Source note: docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
 
 ==============================================================================
@@ -16,12 +16,12 @@ T1: symbolic S_inst = 8 pi^2 / g^2 at |Q| = 1 from Bogomolny saturation
          S_inst = 8*pi**2/g**2, expected 8*pi**2/g**2
 
 ==============================================================================
-T2: Atiyah-Singer integrality Q in Z stated as external theorem
+T2: global instanton inputs are explicitly non-load-bearing context
 ==============================================================================
-  [PASS] note states canonical Q = (1/32 pi^2) integral Tr(F *F) formula
-         topological charge formula present in claim section
-  [PASS] note states Atiyah-Singer integer integrality Q in Z
-         Q in Z + Atiyah-Singer named explicitly
+  [PASS] note names Atiyah-Singer/BPST/Luescher as background only
+         global theorem package is present only in the context section
+  [PASS] note states global theorem package is not retained/load-bearing for this row
+         non-claims section and context boundary are explicit
 
 ==============================================================================
 T3: numerical S_inst at g^2 in {1/2, 1, 2}
@@ -50,20 +50,18 @@ T6: self-duality F = *F ⟹ S = (1/(2 g^2)) ∫ Tr(F^2) = (8 pi^2/g^2)|Q|
          S = 8*pi**2*Q/g**2, expected 8*pi**2*Q/g**2
 
 ==============================================================================
-T7: lattice O(a^2) correction structure recorded (no numerical claim)
+T7: lattice/admissibility language is context only, not a retained theorem
 ==============================================================================
-  [PASS] note records Lüscher admissibility condition
-         admissibility + Lüscher cited
-  [PASS] note records O(a^2) lattice correction structure (no numerical claim)
-         structural form recorded
-  [PASS] note records modern Wilson flow / gradient flow topology extraction
-         Lüscher arXiv:1006.4518 cited
+  [PASS] note keeps Luescher/admissibility/Wilson-flow language visible as context
+         lattice language remains available for later bridge work
+  [PASS] note disclaims retained lattice-topology preservation and continuum control
+         lattice package is non-load-bearing for this bounded certificate
 
 ==============================================================================
-T8: boundary — note declares positive_theorem
+T8: boundary — note declares bounded_theorem
 ==============================================================================
-  [PASS] note declares Claim type: positive_theorem
-         Claim type line present
+  [PASS] note declares bounded_theorem and no longer declares positive_theorem
+         bounded metadata lines present
 
 ==============================================================================
 T9: boundary — note does NOT claim substrate identification
@@ -83,7 +81,7 @@ T10: boundary — note does NOT claim alpha_LM^16 closure or hierarchy
   [PASS] boundary explicitly names v/M_Pl scale ratio as out-of-scope
          v/M_Pl explicitly listed in boundary
 
-=== TOTAL: PASS=17, FAIL=0 ===
+=== TOTAL: PASS=16, FAIL=0 ===
 
 ----- stderr -----
 

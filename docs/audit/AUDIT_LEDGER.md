@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 161 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 587 |
+| **retained_bounded** | 588 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 28 |
-| unaudited | 1144 |
+| unaudited | 1143 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 909 |
+| `audited_clean` | 910 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1374 |
+| `unaudited` | 1373 |
 
 | claim_type | count |
 |---|---:|
@@ -749,6 +749,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_3d_self_field_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `poisson_exhaustive_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11276,6 +11277,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Within the stated active-operator construction and the retained oriented-cycle coefficient law, the identity block and vanishing coefficients follow by direct matrix algebra. The proof does not attempt to derive the active-operator construction itself from the sole axiom.
 - **rationale:** The load-bearing step is a valid class A algebraic substitution in the supplied construction, and the cited coefficient law is marked retained. However, the audit packet contains no first-principles derivation and no external comparator checks; it reduces to one retained parent law plus standard finite-dimensional matrix algebra. Under the tie-breaking rule, a zero-D purely algebraic bridge of this kind is classified as audited_decoration rather than audited_clean.
 - **decoration parent:** `pmns_oriented_cycle_channel_value_law_note`
+- **auditor confidence:** high
+
+### `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebra lemma for PMNS magnitudes-squared matrices: assuming trimaximal second column, mu-tau equal moduli, doubly stochastic row/column sums, and s^2=|U_e3|^2, the displayed TM2 magnitudes matrix follows and is nonnegative for 0 <= s^2 <= 2/3. No derivation of PMNS residuals, empirical fit values, phases, neutrino masses, or sin^2(theta_13) is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the second column fixed to 1/3, mu-tau row equality, row/column stochastic sums, and s^2=|U_e3|^2, the remaining entries are forced as |U_e1|^2=2/3-s^2, |U_mu3|^2=|U_tau3|^2=(1-s^2)/2, and |U_mu1|^2=|U_tau1|^2=1/6+s^2/2.  _(class `A`)_
+- **chain closes:** True — The assumptions determine each unfixed entry by one-line row/column-sum algebra, and the displayed matrix directly satisfies the stochastic and mu-tau conditions. Nonnegativity on 0 <= s^2 <= 2/3 follows entrywise.
+- **rationale:** The row is a class-A conditional matrix-algebra lemma with no empirical PMNS inputs or upstream residual authority consumed. The cached runner reports PASS=41, FAIL=0 under SHA 1303ee82698e1952d1afe55566c105569a3682c27899c3117c75923c725fc164, checking exact rational samples, row/column sums, trimaximality, mu-tau equality, and nonnegativity. The clean verdict is bounded to the conditional assumptions and does not promote any PMNS residual or angle prediction.
 - **auditor confidence:** high
 
 ### `pmns_uniform_scalar_deformation_boundary_note`

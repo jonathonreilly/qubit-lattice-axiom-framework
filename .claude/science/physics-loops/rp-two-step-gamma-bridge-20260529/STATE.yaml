@@ -1,0 +1,8 @@
+goal: repair audited conditional free staggered two-step RP positivity row
+target_claim: axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28
+target_note: docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md
+target_runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
+audit_blocker: missing in-packet free-fermion second-quantization/coherent-state transfer bridge, including decaying-mode projection
+route: add decaying spectral projector and finite exterior-algebra Gamma(K) bridge inside runner and note
+axiom_count_delta: 0
+status_claim: bounded support only; independent audit owns all verdict changes

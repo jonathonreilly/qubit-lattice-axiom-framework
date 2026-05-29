@@ -101,6 +101,3 @@ PASS=5 FAIL=0
   (complex single-particle spectrum), consistent with the single-step no-go
   runner. The interacting gauge case is only recorded as the named
   reduction target; it is not re-derived by this free-case runner.
-
------ stderr -----
-

@@ -1,0 +1,51 @@
+
+========================================================================
+FAIR (20/20): steps 1-2 -- reality interpretation + real reflections
+========================================================================
+  (1) reading A1/A2 physically (reality interp; 'reality can't not exist')  = FAIR.
+  (2) a correct physical framework must support real reflections (CPT/antimatter) = FAIR.
+      The framework HAS one: C=(-1)^{x+y+z}, {C,H_phys}=0, sigma(H)=-sigma(H) (E<->-E).
+
+========================================================================
+WALL (20/20): the framework's real reflections are VERTICAL (generation-blind)
+========================================================================
+  CPT/parity C=(-1)^Hamming on hw=1 triplet = [-1, -1, -1] = scalar -I_3
+    => COMMUTES with Gamma_chi (anticomm needed for Q=2/3): generation-blind.
+  charge-conj c(b)=(1,1,1)-b: hw=1 [(1, 0, 0), (0, 1, 0), (0, 0, 1)] -> hw=2 [(0, 1, 1), (1, 0, 1), (1, 1, 0)] (ANTI-generations, off the triplet)
+  Connes real structure J: S_3-symmetric, [D,J]=0 for every circulant, never selects r=1/2.
+  => real reflections act on the particle<->antiparticle / energy axis (VERTICAL),
+     relating generations to ANTI-generations -- NEVER one generation to another.
+
+========================================================================
+SHARPEST NEW POINT: Q=2/3 cannot be a REFLECTION at all (dim 1 != 2)
+========================================================================
+  Gamma_chi eigenvalues [-1. -1.  1.]: +1 eigenspace dim=1 (singlet), -1 dim=2 (doublet).
+  An operator ANTICOMMUTING with Gamma_chi must SWAP the +1 and -1 eigenspaces.
+  dim 1 != 2 => NO involution (P^2=I, invertible) can swap them. So the Q=2/3
+  operator is NOT a reflection -- it is a reflection-ODD MASS operator
+  (spectrum {-lam, 0, +lam}; the 0 absorbs the 1-vs-2 mismatch).
+  => Q=2/3 needs a symmetry-BREAKING ORDER PARAMETER, not a symmetry/reflection.
+
+========================================================================
+the wall, numerically (no S_3-invariant op anticommutes)
+========================================================================
+  S_3-invariant ops anticommuting with Gamma_chi: 0/5000 (=0).
+
+========================================================================
+VERDICT: fair-but-blocked; the deep clarification
+========================================================================
+  Your read is FAIR on the foundations (reality interp; framework supports real
+  reflections -- 20/20). It FAILS at the link: the framework's real reflections
+  (CPT, antimatter, parity, charge-conj, Connes J) are ALL VERTICAL
+  (particle<->antiparticle), generation-blind, and COMMUTE with Gamma_chi.
+  The flavor breaking is HORIZONTAL (within generations, S_3-breaking) and is a
+  symmetry-BREAKING ORDER PARAMETER -- which categorically CANNOT come from a
+  symmetry/reflection/consistency condition (every route tried). And reality
+  itself maximally BREAKS the relevant reflections (Wu-Lee-Yang parity violation):
+  reality is NOT reflection-balanced, so 'reality sits balanced' is empirically
+  false for real reflections. The flavor values are spontaneous-symmetry-breaking
+  vacuum data -- contingent, not fixed by the (symmetric) structure.
+  ONE door still open (not closed): a PRODUCT grading R^3 (x) (L/R or taste) where
+  the extra factor supplies the missing -1 partner -- but that needs the non-native
+  L/R (Wick-rotation) import, and the separate-factor grading leaves r=1/2 unforced.
+  = the SAME chirality-import gate (signed-gravity / generation-ID), untouched by CPT.

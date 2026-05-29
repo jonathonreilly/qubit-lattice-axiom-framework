@@ -318357,22 +318357,56 @@
       "verdict_rationale": "Issue: the democratic C^6 amplitude calculation is exact, but the row's top-coefficient significance depends on the open premise that the strict top response coefficient equals this democratic Q_L source component. Why this blocks: the restricted packet proves a normalized invariant-vector amplitude, not a physical Yukawa/readout theorem or response bridge. Repair target: derive a retained response theorem identifying the strict top coefficient with the democratic Q_L component amplitude, or narrow this row to a pure exact support lemma with graph-visible carrier-dimension inputs. Claim boundary until fixed: 1/sqrt(6) is an exact democratic-source amplitude candidate, not an audited top-coefficient closure."
     },
     "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T06:04:48.891327+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.0,
+        "runner_hash": "92bdfb5e93a585d2eb07b09aea3f26a48d1d891bcd0829e8a891bb1674c4e3a6",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited qubit algebra supplies the Pauli/projector surface, the retained source-action packet supplies the signed-record source, the retained EW theorem supplies H_0, Y_H=1/2 and Q=T_3+Y, and the prior ratio gate supplies coordinate-scale cancellation.",
       "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-      "claim_scope": null,
+      "claim_scope": "Exact finite Pauli/projector and retained EW one-Higgs bookkeeping carrier-ray bridge: the signed-record sigma_z source is affinely equivalent to the P_- occupation source, and P_- is the neutral Higgs ray; radial source-coordinate scale cancels only by the prior ratio gate.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T06:04:48.891327+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -318383,14 +318417,14 @@
         "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 5.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "epsilon = sigma_z = P_+ - P_- = I - 2 P_- gives exp(h epsilon)=exp(h) exp(-2h P_-), while Q=T_3+Y annihilates H_0=(0,v/sqrt(2))^T and charges the upper ray.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "2688d633c7558be718f97dd1c52bb1d55c094ee9f5b4eed86d19c6eb86b48c1f",
@@ -318399,18 +318433,19 @@
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 18,
+        "B": 38,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "fail": 0,
+        "total_pass": 56
       },
       "runner_path": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
       "title": "Y_T Qubit Neutral-Higgs Carrier-Ray Bridge",
       "transitive_descendants": 7,
-      "verdict_rationale": null
+      "verdict_rationale": "The independent check gives P_-=diag(0,1), P_+=diag(1,0), sigma_z=I-2P_-, and exp(h sigma_z)=exp(h)exp(-2hP_-), so normalized signed-record sources are P_- occupation sources with j=-2h. With T_3=diag(1/2,-1/2), Y=I/2, Q=diag(1,0), the retained EW vacuum H_0=(0,v/sqrt(2))^T lies uniquely in ker Q and is fixed by P_-. The radial tangent remains in that ray, and the only remaining Jacobian cancels by the already audited source-coordinate ratio gate. This does not derive the physical Y_T transfer surface, top coefficient, top Yukawa carrier, hypercharge/top authority, g_2(v), m_t, v=246 GeV, or Y_T closure."
     },
     "yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25": {
       "audit_date": "2026-05-28T09:09:41.702642+00:00",
@@ -319264,11 +319299,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 4.17,
+      "load_bearing_score": 7.17,
       "load_bearing_step": "The common v'(h) factor in dM_t/dh=(y_t/sqrt(2))v'(h) and dM_W/dh=(g_2/2)v'(h) cancels, so y_t=(g_2/sqrt(2))(dM_t/dh)/(dM_W/dh), and the same cancellation holds under h=f(s).",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "fa298872f743325d1afbdab7334176bd25c701ad05aeae12990c793dafc4383b",
       "note_path": "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md",
       "notes_for_re_audit_if_any": "Second auditor should preserve this as an exact support/bounded theorem only and not promote it to Y_T closure, top coefficient derivation, g_2 authority, physical-scale matching, or EW carrier/source authority.",

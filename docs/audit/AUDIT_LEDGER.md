@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 576 |
+| **retained_bounded** | 577 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1170 |
+| unaudited | 1169 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 889 |
+| `audited_clean` | 890 |
 | `audited_conditional` | 71 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1400 |
+| `unaudited` | 1399 |
 
 | claim_type | count |
 |---|---:|
@@ -1010,6 +1010,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15646,6 +15647,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** If the top coefficient is the component amplitude of the unique permutation-invariant unit source on the six Q_L color-isospin components, then every component amplitude is 1/sqrt(6).  _(class `A`)_
 - **chain closes:** False — The S_6-invariant unit-vector calculation closes exactly, and an independent symbolic check reproduces the 1/sqrt(6) component amplitude. The top-coefficient claim remains conditional because the physical response bridge equating the top coefficient with this democratic Q_L component amplitude is explicitly open.
 - **rationale:** Issue: the democratic C^6 amplitude calculation is exact, but the row's top-coefficient significance depends on the open premise that the strict top response coefficient equals this democratic Q_L source component. Why this blocks: the restricted packet proves a normalized invariant-vector amplitude, not a physical Yukawa/readout theorem or response bridge. Repair target: derive a retained response theorem identifying the strict top coefficient with the democratic Q_L component amplitude, or narrow this row to a pure exact support lemma with graph-visible carrier-dimension inputs. Claim boundary until fixed: 1/sqrt(6) is an exact democratic-source amplitude candidate, not an audited top-coefficient closure.
+- **auditor confidence:** high
+
+### `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite Pauli/projector and retained EW one-Higgs bookkeeping carrier-ray bridge: the signed-record sigma_z source is affinely equivalent to the P_- occupation source, and P_- is the neutral Higgs ray; radial source-coordinate scale cancels only by the prior ratio gate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** epsilon = sigma_z = P_+ - P_- = I - 2 P_- gives exp(h epsilon)=exp(h) exp(-2h P_-), while Q=T_3+Y annihilates H_0=(0,v/sqrt(2))^T and charges the upper ray.  _(class `A`)_
+- **chain closes:** True — The cited qubit algebra supplies the Pauli/projector surface, the retained source-action packet supplies the signed-record source, the retained EW theorem supplies H_0, Y_H=1/2 and Q=T_3+Y, and the prior ratio gate supplies coordinate-scale cancellation.
+- **rationale:** The independent check gives P_-=diag(0,1), P_+=diag(1,0), sigma_z=I-2P_-, and exp(h sigma_z)=exp(h)exp(-2hP_-), so normalized signed-record sources are P_- occupation sources with j=-2h. With T_3=diag(1/2,-1/2), Y=I/2, Q=diag(1,0), the retained EW vacuum H_0=(0,v/sqrt(2))^T lies uniquely in ker Q and is fixed by P_-. The radial tangent remains in that ray, and the only remaining Jacobian cancels by the already audited source-coordinate ratio gate. This does not derive the physical Y_T transfer surface, top coefficient, top Yukawa carrier, hypercharge/top authority, g_2(v), m_t, v=246 GeV, or Y_T closure.
 - **auditor confidence:** high
 
 ### `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25`

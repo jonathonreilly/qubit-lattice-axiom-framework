@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 246,
     "high": 315,
-    "leaf": 329,
+    "leaf": 330,
     "medium": 305
   },
   "cycle_break_target_count": 1,
@@ -27257,6 +27257,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_order_one_does_not_force_ratio_diagnostic_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KOIDE_ORDER_ONE_DOES_NOT_FORCE_RATIO_DIAGNOSTIC_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_order_one_does_not_force_ratio.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "kubo_fam2_non_convergence_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -36115,6 +36137,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 57,
-  "total_pending": 1195
+  "ready_count": 58,
+  "total_pending": 1196
 }

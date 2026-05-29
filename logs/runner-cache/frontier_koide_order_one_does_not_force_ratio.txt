@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_order_one_does_not_force_ratio.py
+runner_sha256: 706636aa131a7132c5fd91388da7b2db21a51f6f76348a05632b21a0be46d8ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+
+------------------------------------------------------------------------------------
+PART 1: circulant generation algebra => order-one is VACUOUS
+------------------------------------------------------------------------------------
+  [PASS] circulant Yukawa M commutes with circulant algebra element: [M, a] = 0  ()
+  [PASS] inner commutator [D, pi(a)] = 0 identically (=> order-one vacuous, no r constraint)  (vanishes before J/grading enter, for ALL a,b,c)
+
+------------------------------------------------------------------------------------
+PART 2: explicit distinct-r witnesses all satisfy order-zero + order-one
+------------------------------------------------------------------------------------
+  [PASS] r=0.05: order-one satisfied (circulant algebra) max|O|=0.00e+00  (b=0.2236)
+  [PASS] r= 0.2: order-one satisfied (circulant algebra) max|O|=0.00e+00  (b=0.4472)
+  [PASS] r= 0.5: order-one satisfied (circulant algebra) max|O|=0.00e+00  (b=0.7071)
+  [PASS] r= 1.0: order-one satisfied (circulant algebra) max|O|=0.00e+00  (b=1.0000)
+  [PASS] r= 2.0: order-one satisfied (circulant algebra) max|O|=1.11e-16  (b=1.4142)
+  [PASS] r= 5.0: order-one satisfied (circulant algebra) max|O|=0.00e+00  (b=2.2361)
+
+  => order-one holds for a CONTINUUM of r; it does NOT select r=1/2.
+
+------------------------------------------------------------------------------------
+PART 3: full M_3 algebra => order-one moduli space is free (Cacic 2009)
+------------------------------------------------------------------------------------
+  [PASS] M_3 Yukawa directions unconstrained by order-one: free_dim=1 of 9  (rank(order-one map)=8 -> Yukawa NOT pinned (moduli-free))
+
+====================================================================================
+  TOTAL: PASS=9 FAIL=0
+====================================================================================
+  VERDICT: NCG order-one does NOT force the Koide ratio r=1/2 (vacuous on circulant, moduli-free on M_3).
+
+----- stderr -----
+

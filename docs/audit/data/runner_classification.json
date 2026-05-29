@@ -12816,6 +12816,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_one_scalar_obstruction_triangulation.py"
     },
+    "koide_order_one_does_not_force_ratio_diagnostic_note_2026-05-28": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_koide_order_one_does_not_force_ratio.py"
+    },
     "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20": {
       "assert_count": 1,
       "counts": {
@@ -42336,6 +42348,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_order_one_does_not_force_ratio.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_order_one_does_not_force_ratio_diagnostic_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_koide_p_one_clock_3plus1_transport_reduction_2026_04_20.py": {
       "assert_count": 1,
       "claims": [
@@ -57798,12 +57825,12 @@
     "dominant_class_distribution": {
       "A": 266,
       "B": 294,
-      "C": 772,
+      "C": 773,
       "D": 308,
       "none": 444
     },
-    "runners_classified": 2084,
-    "runners_with_C": 1015,
+    "runners_classified": 2085,
+    "runners_with_C": 1016,
     "runners_with_D": 616
   }
 }

@@ -62054,6 +62054,18 @@
       "runner_path": null,
       "title": "Koide OP-Locality + Brannen + Plancherel + Callan-Harvey Honest Residual Composition"
     },
+    "koide_order_one_does_not_force_ratio_diagnostic_note_2026-05-28": {
+      "claim_id": "koide_order_one_does_not_force_ratio_diagnostic_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "efe7aaaa5b6b8df184643fc2a0f2fae0f208befb872a61485bc061b1bedd0b4a",
+      "path": "docs/KOIDE_ORDER_ONE_DOES_NOT_FORCE_RATIO_DIAGNOSTIC_NOTE_2026-05-28.md",
+      "runner_path": "scripts/frontier_koide_order_one_does_not_force_ratio.py",
+      "title": "NCG Order-One Condition Does Not Force the Koide Ratio (Diagnostic)"
+    },
     "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20": {
       "claim_id": "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20",
       "claim_type_author_hint": null,
@@ -86858,6 +86870,7 @@
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
     "koide_native_dimensionless_note_2026-04-24",
     "koide_native_zero_section_closure_route_note_2026-04-24",
+    "koide_order_one_does_not_force_ratio_diagnostic_note_2026-05-28",
     "koide_pointed_origin_exhaustion_theorem_note_2026-04-24",
     "koide_q23_oh_covariance_nogo_note_2026-04-22",
     "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25_note_2026-05-17",
@@ -87292,7 +87305,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 692,
+      "bounded_theorem": 693,
       "decoration": 1,
       "meta": 197,
       "no_go": 86,
@@ -87301,7 +87314,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1092,
+      "bounded_theorem": 1093,
       "decoration": 1,
       "meta": 197,
       "no_go": 189,
@@ -87310,9 +87323,9 @@
       "positive_theorem": 581
     },
     "edge_count": 9943,
-    "leaf_count": 826,
-    "node_count": 2615,
-    "root_count": 872,
-    "runners_with_path": 2189
+    "leaf_count": 827,
+    "node_count": 2616,
+    "root_count": 873,
+    "runners_with_path": 2190
   }
 }

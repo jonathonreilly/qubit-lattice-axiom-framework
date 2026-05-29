@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 571 |
+| **retained_bounded** | 572 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1175 |
+| unaudited | 1174 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 884 |
+| `audited_clean` | 885 |
 | `audited_conditional` | 71 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1405 |
+| `unaudited` | 1404 |
 
 | claim_type | count |
 |---|---:|
@@ -505,6 +505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_physical_bridge_attempt_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7426,6 +7427,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the specified h=0.5, W=8, L=12, max_d=3 harness, Born holds across all five variants while TOWARD holds for the four non-heavy-delete variants and fails for heavy_delete_70.  _(class `C`)_
 - **chain closes:** True — The runner constructs the five graph variants, computes Born, gravity sign, k=0, and no-field controls, and asserts the narrowed table stated in the note. The audited conclusion is explicitly bounded to this harness and does not claim universal graph-structure irrelevance.
 - **rationale:** The current cache reproduces the narrowed table exactly, including the heavy_delete_70 AWAY counterexample that retracts the older universal-robustness framing. The note's safe conclusion follows from the finite runner output and its assertions, with no hidden dependency needed for the bounded harness statement. Residual risk is the ordinary finite-sample limitation: different graph perturbations, strengths, phases, or lattice parameters are outside this audit.
+- **auditor confidence:** high
+
+### `irregular_sign_core_packet_gate_note`
+
+- **Note:** [`IRREGULAR_SIGN_CORE_PACKET_GATE_NOTE.md`](../../docs/IRREGULAR_SIGN_CORE_PACKET_GATE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded same-surface irregular sign-separator gate for the centered non-oscillating core_packet observable on the configured random_geometric(side=8), growing(n_target=64), and layered_cycle(layers=8,width=8) graph families, seeds 42-46, G in {5.0,10.0}, mu2 in {0.1,0.001}, window steps [2,11), and metrics ball1_margin, ball2_margin, depth_margin, with an 80% positive-fraction gate. Arbitrary packet portability, off-center/transport directionality, universal graph/G coverage, and causal claims about shell_packet interference or underlying sign physics are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-irregular-sign-core-packet-2026-05-28`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes positive-fraction gates for ball1_margin, ball2_margin, and depth_margin at mu2=0.1 and mu2=0.001, requiring the minimum positive fraction at each screening level to be at least 80% and both screening gates to pass.  _(class `C`)_
+- **chain closes:** True — The runner constructs the configured graph families and core_packet observable, solves the two sign evolutions, computes the three margin families, and applies the declared 80% positive-fraction gates. The cached output gives 30/30 for all metrics at mu2=0.1 and minimum 28/30 = 93.3% at mu2=0.001, so both screening gates and the cross-screening gate close within the bounded surface.
+- **rationale:** Clean under the bounded gate scope. Independent arithmetic from the runner output verifies the gate fractions: 30/30 = 100% at mu2=0.1 and a minimum 28/30 = 93.3% at mu2=0.001, both above the stated 80% threshold; the cross-screening gate is therefore a direct conjunction. Residual risk is interpretive scope: this audit does not retain the source's broader shell_packet-causation or underlying-sign-physics language, only the configured centered core_packet separator gate.
 - **auditor confidence:** high
 
 ### `k_dependence_review_safe_note`

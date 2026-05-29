@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 166 |
+| **retained** | 167 |
 | **retained_no_go** | 173 |
 | **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1189 |
+| unaudited | 1188 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 23 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 925 |
+| `audited_clean` | 926 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1425 |
+| `unaudited` | 1424 |
 
 | claim_type | count |
 |---|---:|
@@ -1014,6 +1014,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_seed_band_diagnosis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wave_equation_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_equation_self_field_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `wave_poisson_cinf_bridge_theorem_note_2026-05-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wave_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `wave_retardation_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_retardation_lab_prediction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -14955,6 +14956,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the bounded numerical scope, the runner directly evolves the discrete local wave equation and then computes the reported observables from that field. No cited upstream authority or external comparator is needed for the finite-run claim.
 - **rationale:** The runner source performs actual numerical evolution of the stated second-order stencil and propagates amplitudes through the generated field; it does not merely print constants or import the contested results. The static, F~M, Born, null, gravity-sign, and retardation outputs are computed internally from the specified finite lattice setup. The clean verdict is bounded to this runner-level numerical theorem, not to broader physical equivalence with GR or untested multi-source/backreaction claims.
 - **auditor confidence:** medium
+
+### `wave_poisson_cinf_bridge_theorem_note_2026-05-28`
+
+- **Note:** [`WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md`](../../docs/WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the self-contained discrete linear-algebra bridge that the Dirichlet 5-point Poisson solve is the unique static fixed point of the stated leapfrog wave operator, and that the finite-time undamped frozen-source snapshot tested by the harness is a transient-contaminated comparator rather than f*.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-wave_poisson_cinf_bridge`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Setting f_next = f_curr = f_prev = f* in the leapfrog update gives 0 = h2(L f* + src), hence L f* = -src, and L is symmetric negative-definite so this solution is unique.  _(class `A`)_
+- **chain closes:** True — The fixed-point identity follows algebraically from the stated update, and the note proves invertibility by negative-definiteness of the Dirichlet stencil. The modal analysis and runner source support the snapshot negative control without importing an unclosed external premise.
+- **rationale:** The load-bearing step is a genuine algebraic closure over the operator stated in the packet, not a renaming or numerical match. The runner source actually constructs the Dirichlet Laplacian, solves the Poisson system, checks eigenvalues/residuals, simulates the damped and undamped recurrences, and verifies the modal closed form and harness snapshot gap. There are no upstream cited authorities whose retained status could downgrade the chain, and the numerical certificate is corroborative rather than the sole premise.
+- **auditor confidence:** high
 
 ### `wave_radiation_note`
 

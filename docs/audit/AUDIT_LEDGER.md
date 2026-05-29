@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 153 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 566 |
+| **retained_bounded** | 567 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1186 |
+| unaudited | 1185 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 877 |
+| `audited_clean` | 878 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1416 |
+| `unaudited` | 1415 |
 
 | claim_type | count |
 |---|---:|
@@ -291,6 +291,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3932,6 +3933,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The cached runner and direct rerun pass five checks: exact denominator, t-prefactor 2/sqrt(pi), <1/v>=5/sqrt(pi), <1/v^2>=25/2, and reduction of the former grid-average object to one continuum integral target. An independent symbolic substitution t=a v^2 gives normalized t-weight 2*sqrt(t)*exp(-t)/sqrt(pi) and sqrt(a)=5/2 at x_f=25.  _(class `A`)_
 - **chain closes:** True — The sole one-hop dependency is retained-bounded and supplies the normalization constants and Sommerfeld argument convention. The row's runner and independent symbolic check verify only the integral representation and moment identities; the open selector/integral-evaluation problem remains outside the audited closure.
 - **rationale:** Clean bounded retention is appropriate after strict scope narrowing. The title says full closure, but the body and runner only close an exact integral representation and low-order moments on the declared same-surface slice. The independent change-of-variables audit confirms the normalized MB measure transforms to (2/sqrt(pi))*sqrt(t)*exp(-t) dt and the Sommerfeld argument becomes alpha_eff*sqrt(a/t). The source explicitly states current-bank selector closure remains open, so no downstream DM closure or Sommerfeld physics is smuggled into the verdict.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded same-surface thermal-kernel algebra: the attractive and repulsive Sommerfeld kernel derivative identities and sign bounds for y>0; excludes 64:1 channel-weighted live-DM monotonicity, root uniqueness, and integral evaluation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-huygens-019e7223`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** f_att'(y)-1/2 = f_rep'(y)+1/2 = h(y)/(2(e^y-1)^2), with h(y)=e^(2y)-2 y e^y-1 and h'(y)=2 e^y(e^y-1-y)>0 for y>0.  _(class `A`)_
+- **chain closes:** True — For the narrowed kernel core, the chain closes algebraically: both shifted derivatives reduce to the shared numerator h(y), and h(0)=0 with h'(y)>0 for y>0 gives the stated sign bounds.
+- **rationale:** The derivative identities and positivity proof independently verify. Writing E=e^y, the runner formulas simplify to the shared shifted numerator E^2-2yE-1 over 2(E-1)^2; the runner's expm1 expression for h is algebraically identical. Since the denominator is positive for y>0, h(0)=0, and h'(y)=2e^y(e^y-1-y)>0, the kernel bounds follow. The 64:1 channel-weight exhibit is conditional support only and is not included in the clean scope.
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`

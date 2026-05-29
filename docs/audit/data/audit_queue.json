@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 320
+    "medium": 319
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16746,30 +16746,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "industrial_sdp_bootstrap_infrastructure_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_self_consistency_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.672,
-      "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_INFRASTRUCTURE_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
-      "transitive_descendants": 50
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -16844,6 +16820,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py",
+      "transitive_descendants": 49
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "plaquette_self_consistency_note",
+        "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+        "industrial_sdp_bootstrap_infrastructure_note_2026-05-03"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.144,
+      "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
       "transitive_descendants": 49
     },
     {
@@ -20069,32 +20071,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_quartic_isotropy_and_u2_obstruction.py",
-      "transitive_descendants": 49
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_self_consistency_note",
-        "gauge_vacuum_plaquette_framework_point_underdetermination_note",
-        "industrial_sdp_bootstrap_infrastructure_note_2026-05-03"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.144,
-      "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
       "transitive_descendants": 49
     },
     {
@@ -36001,5 +35977,5 @@
     }
   ],
   "ready_count": 43,
-  "total_pending": 1190
+  "total_pending": 1189
 }

@@ -140435,24 +140435,42 @@
       "verdict_rationale": "The finite negative result closes on its own terms: the checked-in runner contains the nine generator constructors, the hard-coded prediction dictionary, the five-condition battery, and the frozen avg_deg/reach_frac rule, and live replay matches the source note's pass/fail and accuracy claims. The decisive rule failures R1, R3, and X1 all satisfy the frozen structural thresholds but fail the actual battery, while only the two Erd\u0151s-R\u00e9nyi families pass the full package. This clean verdict is narrow: it certifies this deterministic nine-family held-out replay and the checked-in prediction table, not an exhaustive statistical theorem over all independent generator laws or independent timestamp proof beyond the artifact chain."
     },
     "industrial_sdp_bootstrap_infrastructure_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T05:05:38.474171+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 7.672,
+        "runner_hash": "5fec271ff86d939b62d16fe7822322a8a21786d652c8415058b54286d5d328b6",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-hegel-019e721c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded single-plaquette infrastructure validation closes: the runner computes the stated Haar/Bessel reference moments and solves the SDP with m1 free; the one-hop 0.5934 plaquette note is comparator-only here.",
       "claim_id": "industrial_sdp_bootstrap_infrastructure_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Bounded validation that the CVXPY moment-SDP runner computes SU(2)/SU(3) beta=6 single-plaquette reference moments and returns N=3 Hankel/Hausdorff brackets containing m1 when m2-m4 are fixed; excludes full lattice <P>(beta=6), 0.5934 certification, infinite-volume closure, and industrial-precision bracketing.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "infrastructure + validation support theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T05:05:38.474171+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -140460,14 +140478,14 @@
         "plaquette_self_consistency_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.672,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "CVXPY brackets contain known reference values when higher moments are fixed.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "dec37228fc1fadd9a0b6091c68eb7d6fa8a798e6b7305d3b8b2c49edb6c80fce",
@@ -140584,18 +140602,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 7,
         "B": 0,
-        "C": 0,
+        "C": 6,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 13
       },
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block01.py",
       "title": "Industrial SDP Bootstrap \u2014 Infrastructure + SU(2)/SU(3) Single-Plaquette Validation",
       "transitive_descendants": 50,
-      "verdict_rationale": null
+      "verdict_rationale": "Independent recomputation gives I_2(6)/I_1(6)=0.7627260757491918, matching the SU(2) m1 in the note. A fresh independent PSD feasibility scan gives SU(2) m1 about [0.6799586, 0.7669342] and SU(3) about [0.2819121, 0.4515328], both containing their reference m1 values and matching runner output to solver tolerance. The runner source does not hard-code target brackets; 0.5934/0.59353 appear only as printed comparators. The clean scope is bounded infrastructure validation, not the source note's broader positive theorem hint."
     },
     "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03": {
       "audit_date": null,

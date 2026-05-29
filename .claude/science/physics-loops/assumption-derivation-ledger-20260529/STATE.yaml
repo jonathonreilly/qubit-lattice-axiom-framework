@@ -1,0 +1,35 @@
+loop_slug: assumption-derivation-ledger-20260529
+branch: physics-loop/assumption-derivation-ledger-20260529
+base: origin/main
+mode: science_fix_loop
+current_goal: >
+  Repair the critical assumption_derivation_ledger audited conditional row by
+  converting the ledger from a bounded theorem/status surface into metadata.
+target_status: meta
+actual_current_surface_status: meta
+audit_required_before_effective_retained: false
+bare_retained_allowed: false
+block_count: 1
+files_touched:
+  - docs/ASSUMPTION_DERIVATION_LEDGER.md
+  - scripts/assumption_derivation_ledger_meta_check.py
+repair:
+  old_blocker: >
+    The ledger listed many package-wide ingredients as assumed, derived,
+    retained, bounded, or promoted while only wiring one direct dependency.
+  repair: >
+    The file now declares itself a non-authoritative roadmap/index, uses
+    non-load-bearing roadmap labels, and explicitly sets no audit status or
+    ingredient-row proof.
+pipeline_result:
+  claim_type: meta
+  effective_status: meta
+  audit_queue_entry: false
+  descendants: 904
+  audited_conditional_count_after_pipeline: 20
+  ready_audit_queue_count_after_pipeline: 52
+verification:
+  meta_runner: passed
+  audit_pipeline: passed
+  audit_lint: "passed with notices only"
+next_exact_action: "Open PR for review-loop extraction; do not merge from this loop."

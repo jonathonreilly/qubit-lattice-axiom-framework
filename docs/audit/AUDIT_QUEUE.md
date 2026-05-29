@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1203
+**Total pending:** 1202
 **Ready (all deps already at retained-grade or metadata tiers):** 53
 
 By criticality:
-- `critical`: 248
+- `critical`: 247
 - `high`: 319
 - `medium`: 322
 - `leaf`: 314
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | audit_in_progress | critical | 498 | 13.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_wilson_bz_corner_hamming_staircase.py` |
+| 1 | `higgs_mass_from_axiom_note` | bounded_theorem | unaudited | critical | 495 | 24.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/higgs_tree_level_mean_field_runner_2026_05_03.py` |
 | 2 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | unaudited | critical | 384 | 16.59 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` |
 | 3 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | unaudited | critical | 292 | 14.20 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hw1_second_order_return_shape_theorem.py` |
 | 4 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | critical | 255 | 10.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py` |

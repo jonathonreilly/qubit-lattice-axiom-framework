@@ -1,0 +1,69 @@
+
+========================================================================
+(1) circulant algebra is COMMUTATIVE -> Tomita modular flow trivial
+========================================================================
+  max ||[H_i, H_j]|| over samples = 2.22e-16  (=> commutative)
+  THEOREM (standard): for a faithful trace tau on an ABELIAN von
+  Neumann algebra, the GNS modular operator Delta = 1 and the
+  modular automorphism group sigma_t = id (KMS is trivial).
+  => Tomita-Takesaki is STATE-INDEPENDENT here; it cannot prefer
+     equal-block (F1) over dimension-weighted (F3). Modular route
+     to 'pair=1' is BLIND. (Sharper than the prior 'modular is
+     blind' finding: here it is provably trivial, not just silent.)
+
+========================================================================
+(2) Jordan trace form Tr(H^2) = diag(3,6,6): NEUTRAL on F1-vs-F3
+========================================================================
+  Tr(H^2)            = 8.010000
+  E_+ + E_perp       = 8.010000  (3a^2 + 6|b|^2)
+  E_+ = 5.0700  E_perp = 2.9400   (quad form diag(3,6,6))
+    Tr(H^2) at arg-shift 0.00 = 8.010000  (J-invariant: block energies unchanged)
+    Tr(H^2) at arg-shift 0.50 = 8.010000  (J-invariant: block energies unchanged)
+    Tr(H^2) at arg-shift 1.30 = 8.010000  (J-invariant: block energies unchanged)
+  CORRECTION (verification workflow, adversarial angle): the trace
+  form supplies the block ENERGIES {3a^2, 6|b|^2} but NOT the rule
+  for comparing unequal-dimension blocks. Equate TOTALS 3a^2=6|b|^2
+  -> r=1/2 = F1.  Insert per-real-dim /2 (3a^2 = 3|b|^2) -> r=1 = F3.
+  => the trace form is NEUTRAL on F1-vs-F3 (F1-leaning under naive
+     total-equality); it is NOT 'F3-side'. The fork is the unforced
+     'one complex unit vs two real dims' choice, which it cannot make.
+
+========================================================================
+(3) which reality-respecting weight gives which r = |b|^2/a^2 ?
+========================================================================
+  F1 (Q=2/3): r=1/2  <=> E_+ = E_perp  (equal block TOTAL power)
+  F3 (Q=1):   r=1    <=> equal PER-REAL-DIM power
+
+  Bargmann/Fock (holomorphic, <|b|^2>=1, <a^2>=1): r = 1.000 = F3
+  flat per-real-dof (<|b|^2>=2<a^2>):              r = 2.000  (past F3)
+  block-count MaxEnt (count complex block ONCE):   r = 0.500 = F1
+
+  reality (b-bar=conj b) makes the {omega,omega-bar} pair ONE
+  complex number b (one complex DOF). But one complex DOF = TWO
+  real DOF; whether the weight counts it as 1 (complex block, F1)
+  or 2 (real dims, F3) is NOT fixed by reality -- reality supplies
+  the complex structure J, not the counting CONVENTION.
+
+========================================================================
+VERDICT (confirmed by 4-angle verification workflow, 0/4 forcing)
+========================================================================
+  Reality + modular do NOT force pair=1, KINEMATICALLY. Confirmed:
+   - generation circulant abelian => modular flow trivial (Delta=1)
+     for EVERY state, not just the trace; KMS blind to F1/F3.
+   - Z^3 type-III hole CLOSED: a modular weight on the abelian
+     circulant is a diagonal Fourier multiplier; reality forces
+     p_omega = p_omega-bar (two equal modes; collapse needs p=0 =
+     reality violation). And a generic type-III modular flow does
+     NOT preserve the circulant subalgebra, so no induced block
+     weight exists to invoke.
+   - canonical Euclidean-Jordan structure is rank-3 SPLIT (R+R+R):
+     doublet = 2 frame slots, not 1; forcing rank-2 needs a spin-
+     factor product = an unflagged import.
+   - trace form is NEUTRAL (above), not evidence either way.
+  => KINEMATIC/normalization forcing of r=1/2 is a retained_no_go
+     on the phase+reality+modular/KMS+Jordan family. Routes OPEN.
+  HIGHEST-VALUE OPEN ROUTE: a DERIVED DYNAMICAL Z^3 potential whose
+  stationary point sits at 3a^2=6|b|^2 (r=1/2). The no-go is purely
+  KINEMATIC (how to COUNT the irrep); a DYNAMICAL selection lives in
+  the spatial/translation sector the abelian-generation argument
+  explicitly does not constrain. That sector is untouched.

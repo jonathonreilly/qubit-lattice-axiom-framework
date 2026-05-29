@@ -11,6 +11,11 @@ decomposition. The bridge is a conditional theorem:
 
 This runner exhibits:
 
+  E0.  Adjoint-placement firewall for (B.14) — the old intermediate
+       bound using ||A|0>|| ||B^†|0>|| is false for arbitrary bounded
+       A,B, while the repaired Cauchy-Schwarz vectors
+       ||A^†|0>|| ||B|0>|| give the correct route to ||A|| ||B||.
+
   E1.  Closed-form spectral identity (B.6) — the connected-correlator
        expansion as Σ_{k≥1} (λ_k/M_T)^n <0|A|k><k|B|0>. We verify
        this on random Hermitian transfer matrices T with
@@ -125,6 +130,47 @@ def thermal_expectation(A, T_norm, beta_eff):
 
 def op_norm(A):
     return float(np.linalg.svd(A, compute_uv=False).max())
+
+
+# ---------------------------------------------------------------------------
+# E0: Adjoint-placement firewall for (B.14)
+# ---------------------------------------------------------------------------
+
+def exhibit_E0_adjoint_placement():
+    print("\n--- E0: B.14 adjoint-placement firewall ---")
+    print("  Verify the audited counterexample to the old intermediate line")
+    print("  and the corrected Cauchy-Schwarz placement.")
+    r = 0.5
+    T_norm = np.diag([1.0, r]).astype(complex)
+    ground_state = np.array([1.0, 0.0], dtype=complex)
+    excited_state = np.array([0.0, 1.0], dtype=complex)
+
+    # A=|0><1|, B=|1><0|. Then <0|A|1><1|B|0> = 1.
+    A = np.array([[0.0, 1.0], [0.0, 0.0]], dtype=complex)
+    B = np.array([[0.0, 0.0], [1.0, 0.0]], dtype=complex)
+
+    term_abs = abs(
+        (ground_state.conj() @ A @ excited_state)
+        * (excited_state.conj() @ B @ ground_state)
+    )
+    wrong_intermediate = norm(A @ ground_state) * norm(B.conj().T @ ground_state)
+    corrected_intermediate = norm(A.conj().T @ ground_state) * norm(B @ ground_state)
+    final_op_norm_bound = op_norm(A) * op_norm(B)
+
+    print(f"  T = diag(1,{r}), A=|0><1|, B=|1><0|")
+    print(f"  term_abs = |<0|A|1><1|B|0>| = {term_abs:.3f}")
+    print(f"  old wrong ||A|0>|| ||B^†|0>|| = {wrong_intermediate:.3f}")
+    print(f"  corrected ||A^†|0>|| ||B|0>|| = {corrected_intermediate:.3f}")
+    print(f"  final ||A|| ||B|| bound = {final_op_norm_bound:.3f}")
+
+    old_is_false = term_abs > wrong_intermediate + 1e-12
+    corrected_holds = term_abs <= corrected_intermediate + 1e-12
+    final_holds = corrected_intermediate <= final_op_norm_bound + 1e-12
+    ok = old_is_false and corrected_holds and final_holds
+    print(f"  old placement falsified: {'PASS' if old_is_false else 'FAIL'}")
+    print(f"  corrected placement holds: {'PASS' if corrected_holds else 'FAIL'}")
+    print(f"  corrected path reaches op-norm bound: {'PASS' if final_holds else 'FAIL'}")
+    return ok
 
 
 # ---------------------------------------------------------------------------
@@ -304,12 +350,14 @@ def main():
 
     rng = np.random.default_rng(seed=2026_05_09)
 
+    e0 = exhibit_E0_adjoint_placement()
     e1 = exhibit_E1(rng, d=8, n_trials=10)
     e2 = exhibit_E2(rng, d=8, n_trials=20)
     e3 = exhibit_E3(rng, d=8, n_trials=20)
     e4 = exhibit_E4(rng, d=8, n_trials=5)
 
     results = {
+        "E0 (B.14 adjoint-placement firewall)": e0,
         "E1 (spectral identity B.6)":       e1,
         "E2 (ground-state clustering B.7)": e2,
         "E3 (thermal trace-distance B.8)":  e3,

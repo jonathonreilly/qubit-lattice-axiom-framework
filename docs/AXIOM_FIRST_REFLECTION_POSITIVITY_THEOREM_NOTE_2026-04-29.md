@@ -116,17 +116,29 @@ Out of scope (removed from this row's claim surface):
 
 ## Dependencies
 
-The source package uses one in-repo first-principles construction (the
-new positive 2-step runner) plus two local authorities that identify
-the intended gauge-case reduction path, plus the single-step no-go
-runner:
+The source package uses an in-repo first-principles derivation of the
+2-step positivity (a standalone free-case note + its primary positive
+runner, plus a retained_bounded fixed-`SU(3)` gauge-extension note),
+plus two local authorities that supply the remaining factors of the
+gauge-case reduction, plus the single-step no-go runner:
 
-- The **fermion-sector 2-step transfer-matrix positivity** is supplied
-  in-repo by the new primary positive runner
+- The **free-case fermion-sector 2-step transfer-matrix positivity** is
+  supplied in-repo by the standalone derivation note
+  [AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
+  and its primary positive runner
   [`axiom_first_rp_two_step_transfer_matrix_positivity.py`](../scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py)
-  (free case explicit; see §"In-repo first-principles construction and
-  proof"). This is the load-bearing positive piece and is not imported
-  from the literature.
+  (free `U = 1` case explicit; see §"In-repo first-principles
+  construction and proof"). This is the load-bearing positive piece and
+  is **derived in-repo, not imported** from the literature.
+- The **fixed-`SU(3)` gauge-background extension** of that same 2-step
+  positivity is the retained_bounded note
+  [RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md),
+  which establishes `T_hat^2[U]` positive Hermitian config-by-config at
+  fixed arbitrary spatial `SU(3)` (and `U(1)`) background in temporal
+  gauge, by a finite anti-Hermitian-hop modal reduction (the free
+  `U = 1` case is the translation-invariant specialization of the note
+  above). In the gauge-case reduction this carries the per-config
+  fermion-sector factor from `U = 1` to fixed nontrivial background.
 - [STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
   proves the configuration-by-configuration determinant positivity
   `det(M_KS + m I) = prod (m^2 + sigma_i^2) >= m^n > 0` for `m > 0` on
@@ -143,14 +155,16 @@ runner:
   row therefore cites it only for the abstract identity, not for a
   Wilson-plaquette boundary closure.
 
-The two local authorities are cited only for their stated narrow
-surfaces, each covering one named factor of the proposed gauge-case
-reduction. The free-case construction below is the new load-bearing
-positive theorem support; the full interacting gauge closure remains
-limited to the reduction claim and must be judged by the independent
-audit lane. This note does not import any fitted value, observed target
-value, literature numerical comparator, same-surface family selector,
-or admitted unit convention.
+The det-positivity and Cauchy-Schwarz authorities are cited only for
+their stated narrow surfaces, each covering one named factor of the
+proposed gauge-case reduction. The free-case derivation below (now
+captured in the standalone free-case note) is the load-bearing positive
+theorem support, and the fixed-`SU(3)` gauge-extension note carries it
+to nontrivial background; the full interacting gauge closure remains
+limited to the named three-factor reduction claim and must be judged by
+the independent audit lane. This note does not import any fitted value,
+observed target value, literature numerical comparator, same-surface
+family selector, or admitted unit convention.
 
 ## Statement (2-step blocked formulation)
 
@@ -178,12 +192,17 @@ one has `||T_hat_tilde^2|| = 1` and `H_hat_tilde >= 0`, i.e., the
 ### In-repo first-principles construction and proof (free case)
 
 This positivity is **derived in-repo from the staggered action**, not
-imported. The construction and its numerical verification are the new
-primary positive runner
+imported. The standalone derivation note is
+[AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md),
+and the construction with its numerical verification is the primary
+positive runner
 [`scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py`](../scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py).
-The free case (`U = 1`) is treated explicitly and decisively; the
-gauge case is reduced to two retained dependencies (see "Gauge-case
-reduction" below).
+The free case (`U = 1`) is treated explicitly and decisively below; the
+fixed-`SU(3)` gauge-background extension of the same object is the
+retained_bounded note
+[RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md),
+and the full gauge case is reduced to that extension plus two retained
+dependencies (see "Gauge-case reduction" below).
 
 **Why two steps (mechanism, not citation).** With the canonical
 staggered phases `eta_0 = 1` and `eta_1(t) = (-1)^t` the temporal hop
@@ -285,20 +304,25 @@ The intended `SU(3)`-gauged staggered 2-step RP closure is the
 following reduction target:
 
 ```text
-    (fermion-sector 2-step transfer positivity)         [NEW, this note]
+    (fermion-sector 2-step transfer positivity)         [in-repo derived]
   x (positive determinant weight det(M_KS + m I) > 0)   [retained dep]
   x (gauge-half Cauchy-Schwarz norm-square)             [retained_bounded dep]
 ```
 
-The piece newly supplied in-repo is the **fermion-sector 2-step
-transfer-matrix positivity** (Steps 1–4 + R2 above). The positive
-gauge weight is the retained Case A determinant note
+The fermion-sector 2-step transfer-matrix positivity is supplied
+in-repo: the free `U = 1` case is the construction above (Steps 1–4 +
+R2), captured in
+[AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md),
+and the fixed-`SU(3)` gauge-background extension (`T_hat^2[U]` positive
+Hermitian config-by-config at arbitrary fixed spatial background in
+temporal gauge) is the retained_bounded note
+[RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md).
+The positive gauge weight is the retained Case A determinant note
 (`det(M_KS + m I) = prod (m^2 + sigma_i^2) >= m^n > 0`
 config-by-config on every `SU(3)` background), and the gauge/bosonic
 half is the retained gauge-half Cauchy-Schwarz norm-square note. The
-gauge case is not re-derived from scratch here, and the full
-interacting positivity is not claimed beyond this explicitly scoped
-reduction target.
+full interacting `U`-integrated positivity is not claimed beyond this
+explicitly scoped three-factor reduction target.
 
 This replaces the prior citation-only treatment: the 2-step blocked
 positivity is now the in-repo first-principles result above (free case

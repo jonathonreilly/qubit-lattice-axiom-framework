@@ -1,0 +1,38 @@
+
+========================================================================
+(1) record-mixture: pre-record (democratic) <-> full collapse
+========================================================================
+  p(t) = (1-t)*(1/3,1/3,1/3) + t*(1,0,0);  Q(t) = purity(p) = (1+2t^2)/3
+    t=0.0000: Q=0.3333
+    t=0.2500: Q=0.3750
+    t=0.5000: Q=0.5000
+    t=0.7071: Q=0.6667  <-- Q=2/3
+    t=1.0000: Q=1.0000
+  Q=2/3 <=> t=1/sqrt(2): the same sqrt2 / r=1/2 number, unforced.
+
+========================================================================
+(2) fixed-point structure of the record (sharpening) map p -> p^2/Z
+========================================================================
+  Lueders sharpening drives purity UP. Fixed points & stability:
+    democratic (exact)      : Q 0.3333 -> 0.3333
+    democratic + tiny tilt  : Q 0.3334 -> 1.0000
+  => Q=1/3 (democratic) is an UNSTABLE fixed point; any tilt flows to
+     Q=1 (collapse, STABLE). Q=2/3 is NEITHER a fixed point. No native
+     record dynamics parks the pattern at 2/3.
+
+========================================================================
+(3) A1-balanced record (equal record vs relax-to-rho_ref) -> Q=1/2
+========================================================================
+    balanced t=1/2: Q=0.5000  (=1/2, NOT 2/3)
+  One qubit / one bit of record (the A1-natural 'balance') gives 1/2,
+  not 2/3. Reaching 2/3 needs the special t=1/sqrt(2) record-amount.
+
+========================================================================
+VERDICT: records/persistence reduces to the SAME gap
+========================================================================
+  Vacuum-selection via rho_ref + Lueders records + persistence drives
+  Q to 1/3 (no record) or 1 (full record); 2/3 is the intermediate
+  record-amount t=1/sqrt(2) = r=1/2, which is NOT a fixed point and is
+  NOT forced by A1+A2 (A1-balanced records give 1/2). So the 5th lens
+  (records/persistence) joins kinematic/dynamical/quantum/chiral: all
+  reduce to the single unforced number r=1/2. The gap is unchanged.

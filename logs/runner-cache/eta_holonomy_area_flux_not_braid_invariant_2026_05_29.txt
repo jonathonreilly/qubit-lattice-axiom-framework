@@ -1,0 +1,80 @@
+==============================================================================
+eta-phase holonomy is an AREA-FLUX, not a braid invariant
+(sharpening of the FS rotation-exchange discrete-insufficiency no-go)
+==============================================================================
+Canonical KS phases: eta_1 = 1, eta_2 = (-1)^{x1}, eta_3 = (-1)^{x1+x2}
+Spin-diagonal gauge: T(x) = sigma_1^{x1} sigma_2^{x2} sigma_3^{x3}
+
+------------------------------------------------------------------------------
+(a) spin-diagonalization identity   T(x)^dag sigma_mu T(x+mu_hat) = eta_mu(x) I_2
+------------------------------------------------------------------------------
+  [PASS] identity exact for all x in [0,3)^3 and all mu in {1,2,3} (symbolic, 3^3 = 27 sites)  (max |lhs-rhs| = 0)
+  [PASS] identity exact for all x in [0,4)^3 and all mu in {1,2,3} (symbolic, 4^3 = 64 sites)  (max |lhs-rhs| = 0)
+
+------------------------------------------------------------------------------
+(b) Z_2 plaquette curvature = -1 per face (uniform pi-flux), gauge-invariant
+------------------------------------------------------------------------------
+  [PASS] plane (1,2): every unit plaquette curvature = -1 on 4^3 block  (holonomy values = [-1])
+  [PASS] plane (1,3): every unit plaquette curvature = -1 on 4^3 block  (holonomy values = [-1])
+  [PASS] plane (2,3): every unit plaquette curvature = -1 on 4^3 block  (holonomy values = [-1])
+  [PASS] curvature unchanged under arbitrary Z_2 gauge twist Omega_mu(x) -> g(x) Omega_mu(x) g(x+mu) (so -1/face is gauge-invariant)  (max |curv_gauged - curv| = 0)
+
+------------------------------------------------------------------------------
+(c) (-1)^{area} holonomy law and the three named two-token exchange loops
+------------------------------------------------------------------------------
+  [PASS] rectangular base loop holonomy = (-1)^{a*b} for all a,b in {1..4} (16 rectangles, all closed)  (1x1->-1; 1x2->+1; 2x3->+1; 3x3->-1; 4x4->+1)
+  [PASS] Y-move / zero-area swap -> holonomy +1 (swap realized, collision-free)  (holonomy = +1)
+  [PASS] 1x1-detour swap   -> holonomy -1 (swap realized, collision-free)  (holonomy = -1)
+  [PASS] 1x2-detour swap   -> holonomy +1 (swap realized, collision-free)  (holonomy = +1)
+
+------------------------------------------------------------------------------
+(d) same swap, homotopic in UD_2(Z^3), DIFFERENT holonomy (the obstruction)
+------------------------------------------------------------------------------
+  [PASS] 1x1 and 1x2 detour swaps realize the SAME token permutation (A<->B exchange in both)
+  [PASS] both swaps are collision-free (tokens never co-occupy a site)
+  [PASS] difference loop (swap_1x1 then swap_1x2^-1) is a CLOSED single-token base loop (returns both tokens to start)  (endpoint = (0, 0, 0))
+  [PASS] difference loop bounds ONE unit cell -> holonomy -1 = product of the two swap holonomies (they are unequal as holonomies)  (diff-loop holonomy = -1, ha*hb = -1)
+  [PASS] DECISIVE: same braid element of B_2(Z^3) (homotopic swaps) carries DIFFERENT holonomy  -1 (1x1) vs +1 (1x2)  ->  eta-holonomy is NOT a braid invariant (no homomorphism B_2 -> Z_2 can take two values on one element)  (hol(1x1) = -1, hol(1x2) = +1)
+
+------------------------------------------------------------------------------
+(e) structural decoupling: base-connection holonomy is blind to the braid class
+------------------------------------------------------------------------------
+  [PASS] single-token 1x1 base loop closes (returns the token to start)  (endpoint = (0, 0, 0))
+  [PASS] single-token 1x1 base loop has NONTRIVIAL holonomy -1 (the area flux of one face) -- yet it is null-homotopic in UD_2(Z^3) (a unit square, fillable via the third direction in d>=3), hence NOT a braid/exchange generator  (holonomy = -1)
+  [PASS] CONSEQUENCE: a base-connection holonomy that is nontrivial on a null-homotopic (non-braid) loop and multivalued on a single braid class is structurally NOT a braid invariant
+
+==============================================================================
+SCORECARD
+==============================================================================
+  C_a  spin-diagonalization identity  T^dag sigma_mu T(x+mu) = eta_mu I  (exact)
+  C_b  Z_2 curvature = -1/face in all 3 planes, gauge-invariant
+  C_c  (-1)^{area} law + Y-move(+1), 1x1(-1), 1x2(+1) exchange holonomies
+  C_d  same swap, homotopic in UD_2(Z^3), DIFFERENT holonomy (-1 vs +1)
+  C_e  base-connection holonomy is structurally blind to the braid class
+
+==============================================================================
+VERDICT
+==============================================================================
+  THE eta-PHASE DISCRETE SPIN CONNECTION'S HOLONOMY AROUND GRAPH-BRAID
+  EXCHANGE LOOPS IS THE GEOMETRIC AREA-FLUX (-1)^{enclosed area}, NOT A
+  BRAID INVARIANT.  Two exchange loops that are the SAME element of
+  B_2(Z^3) (the 1x1- and 1x2-detour swaps -- same permutation,
+  collision-free, homotopic in UD_2(Z^3)) carry DIFFERENT holonomies
+  (-1 vs +1) because they enclose different base area.  A fermion sign
+  must be a homomorphism on the braid group (one value per braid
+  class), so the eta-holonomy CANNOT supply the fermionic exchange
+  sign.  The eta-connection lives over the BASE Z^3 while the exchange
+  Z_2 lives in pi_1(UD_2(Z^3)); a base connection's holonomy is
+  structurally blind to the braid class (it is even nontrivial on a
+  null-homotopic, non-braid unit-square loop).
+
+  Honest scope: this CLOSES the most natural concrete realization of
+  the FS no-go's open graph-braid path (the eta-phase discrete spin
+  structure on the base Z^3).  It does NOT claim every conceivable
+  discrete construction is impossible: a spin structure placed on
+  UD_2(Z^3) ITSELF (rather than on the base) remains formally OPEN,
+  though structurally constrained by the same base-vs-configuration-
+  space obstruction.
+
+==============================================================================
+PASS=18 FAIL=0

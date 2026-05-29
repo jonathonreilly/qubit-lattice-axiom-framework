@@ -21696,6 +21696,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_staggered_backreaction_iterative.py"
     },
+    "staggered_backreaction_live_capture_packet_note_2026-05-29": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/staggered_backreaction_live_capture_packet_check.py"
+    },
     "staggered_backreaction_nonlocal_closure_note": {
       "assert_count": 0,
       "counts": {
@@ -57169,6 +57181,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/staggered_backreaction_live_capture_packet_check.py": {
+      "assert_count": 0,
+      "claims": [
+        "staggered_backreaction_live_capture_packet_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/staggered_chiral_symmetry_check.py": {

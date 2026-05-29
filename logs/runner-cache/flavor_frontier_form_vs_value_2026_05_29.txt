@@ -1,0 +1,62 @@
+
+========================================================================
+(1) STRONGEST result: CKM CP angle from ONE integer, zero tuning
+========================================================================
+  retained ckm_cp_phase structural identity: cos^2 delta = 1/n_quark
+  delta = arccos(1/sqrt(6)) = 65.905 deg   (r^2-INDEPENDENT)
+  PDG gamma = 65.7 +/- 3.0 deg  ->  match 0.07 sigma
+  A genuine falsifiable structural prediction of the ANGLE (pure integer).
+  BUT: free readout of an already-imported (1+5) projector split, not a
+  NEW parameter reduction.
+
+========================================================================
+(2) the recurring 2/3 is TWO distinct objects (coincident only at (2,3))
+========================================================================
+  Koide:  2/d         = 0.6667  (weight-RATIO, equal-weight isotype split; <=> r=1/2)
+  CKM:    n_pair/n_col = 0.6667  (integer COUNT ratio; A^2)
+  CKM perp weight 2/n_color^2 = 0.2222  (= 2/9, distinct from 2/3)
+  => same NUMBER at (2,3), algebraically DIFFERENT objects. Not one structure.
+
+========================================================================
+(3) IMPORT COUNT: ~4-6 independent, NOT one (no value propagation)
+========================================================================
+  charged-lepton masses : import = r=1/2 (S_3-breaking chiral grading on gen-R^3) + scale
+                          [the Koide import]
+  CKM (4 params)        : import = alpha_s (sources lambda) + count tuple (2,3,6)
+                          [shares Koide import? NO]
+  up-quark masses       : import = 2 free readout exponents (p,q)
+                          [retained_no_go: A1 grading underdetermines]
+  down-quark masses     : import = 2 CKM-coupled bridges (bounded)
+                          [NO]
+  PMNS (3 ang + phase)  : import = (s12^2,s13^2) + cycle values c_i (explicitly unselected)
+                          [NO]
+  neutrino mass         : import = absolute scale + Majorana phases
+                          [open]
+
+  retained_no_go quark_c3_circulant_source_law_boundary: even granting Koide's
+  A1 grading (3a^2=6|q|^2), each quark sector leaves scale, hierarchy-phase,
+  amplitude-vs-Yukawa readout, and up/down species-map FREE. A1 does NOT propagate.
+
+========================================================================
+(4) NET: form unified, values free -> re-parametrization, not reduction
+========================================================================
+  SM continuous flavor params ~ 20.  Framework substrate pins ~0 continuous.
+  Genuine cuts are DISCRETE only: n_gen=3, n_color=3 (from C_3 / hw=1 geometry).
+  Within-CKM: {A,rho,eta,delta} collapse to count-fixed identities leaving ONE
+  continuous scale lambda -- a real 4->1 cut, but CONDITIONAL on importing
+  (2,3,6)+alpha_s. The single Koide import unlocks at most 1 lepton relation.
+
+========================================================================
+VERDICT
+========================================================================
+  The framework UNIFIES the FORM of the entire flavor sector on one shared,
+  genuinely-derived C_3-corner scaffold (Koide biconditional; CKM sum rules +
+  Wolfenstein identities + r^2-independent CP angle 65.9deg + Jarlskog moduli
+  certificate; PMNS native oriented-cycle basis + antiunitary CP locus; and the
+  DISCRETE n_gen=3, n_color=3). It does NOT reduce the continuous VALUES: ~4-6
+  independent imports, ~20 -> ~20. Literature-comparable to a DERIVED (not
+  postulated) residual-C_3 family-symmetry / texture ansatz -- a modest,
+  novel-in-provenance gain. The unifying obstruction is the counting-vs-
+  splitting tension generalized: ONE WALL WEARING SIX MASKS -- the C_3 orbit
+  that gives the discrete wins forces equivariant operators that cannot pin
+  any continuous modulus (every flavor value sits in the orbit-BREAKING dir).

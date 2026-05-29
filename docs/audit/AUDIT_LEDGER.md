@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 568 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1202 |
+| unaudited | 1203 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 57 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -58,12 +58,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 872 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1432 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
@@ -1017,7 +1017,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `distance_law_breakpoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `distance_law_frontier_audit_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
@@ -3635,19 +3634,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The retained signal is the 31^3 through 64^3 grid sweep with largest-grid far-field exponent alpha = -1.023 +/- 0.012, finite-size extrapolation alpha_inf = -0.976 +/- 0.019, and largest-grid mass-linearity spread below 0.1%.  _(class `C`)_
 - **chain closes:** True — The named runner directly recomputes the Poisson field, path-sum deflections, far-field fits, finite-size extrapolation, and largest-grid mass scaling, and its live output reproduces the note's bounded numerical values.
 - **rationale:** The clean verdict is narrow. The live runner reproduces alpha(64^3) = -1.0233 +/- 0.0115, alpha_inf = -0.9762 +/- 0.0193, and delta/M spread 0.0010 on the specified Dirichlet 3D path-sum setup. The note explicitly limits the claim to a bounded numerical continuation and states that it is not full Newton closure, not architecture portability, and not a two-body M1 M2 theorem. Residual risk is therefore scope-bound: the result should only be cited for this finite path-sum surface and its stated convergence trend.
-- **auditor confidence:** high
-
-### `distance_law_breakpoint_note`
-
-- **Note:** [`DISTANCE_LAW_BREAKPOINT_NOTE.md`](../../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded audit of the distance-law breakpoint table and proposed architecture-feature diagnosis over the two grown-family baselines plus alt-connectivity, third-family, fourth-family, and fifth-family radial rows. The static table values are not audited as a causal architecture-feature theorem.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-distance-law-breakpoint`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The near-Newtonian distance tail survives only in open directed transport families; shell-locking, reflection closure, and deep branch routing break or flatten it.  _(class `B`)_
-- **chain closes:** False — The two direct dependencies are now retained-bounded, but they support only finite portability/sign diagnostic tables and explicitly exclude causal mechanism or architecture-feature diagnosis. This row's primary runner reprints hard-coded alpha/direction/feature rows with no matched ablation computation or provenance assertions for the claimed causal breakpoint mechanism.
-- **rationale:** Issue: the note still turns a static hard-coded breakpoint table into an architecture-feature diagnosis that says open directed transport preserves the distance tail while shell routing, reflection closure, and deep branch routing break or flatten it. Why this blocks: the retained distance-law portability dependency closes only the finite structured-family table and explicitly excludes causal mechanism diagnosis, while this row's runner does not recompute matched ablations or derive the feature labels from retained family mechanisms. Repair target: split a clean finite breakpoint-table note from the causal diagnosis, or add matched ablation computations/provenance rows for shell routing, reflection closure, radial confinement, and deep-branch routing. Claim boundary until fixed: it is safe to cite this as a bounded static breakpoint summary consistent with retained portability diagnostics, not as a retained architecture-feature theorem.
 - **auditor confidence:** high
 
 ### `distance_law_definitive_note`

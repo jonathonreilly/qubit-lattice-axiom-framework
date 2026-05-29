@@ -1,0 +1,125 @@
+{
+  "claim": "On a normalized connected source-response surface over trace-one color records, the identity color direction is a pure normalization mode, so the nonzero source tangent is the traceless augmentation ideal and K_connected=(N^2-1)/N^2.",
+  "fail_count": 0,
+  "normalized_source_rows": {
+    "2": {
+      "identity_scores": [
+        "0",
+        "0",
+        "0"
+      ],
+      "trace_shift": "3/2"
+    },
+    "3": {
+      "identity_scores": [
+        "0",
+        "0",
+        "0"
+      ],
+      "trace_shift": "2"
+    },
+    "4": {
+      "identity_scores": [
+        "0",
+        "0",
+        "0"
+      ],
+      "trace_shift": "5/2"
+    },
+    "5": {
+      "identity_scores": [
+        "0",
+        "0",
+        "0"
+      ],
+      "trace_shift": "3"
+    }
+  },
+  "pass_count": 90,
+  "projection_rows": {
+    "2": {
+      "augmentation_dim": 3,
+      "connected_fraction": "3/4",
+      "full_dim": 4,
+      "singlet_gap_to_full_trace": "1/4"
+    },
+    "3": {
+      "augmentation_dim": 8,
+      "connected_fraction": "8/9",
+      "full_dim": 9,
+      "singlet_gap_to_full_trace": "1/9"
+    },
+    "4": {
+      "augmentation_dim": 15,
+      "connected_fraction": "15/16",
+      "full_dim": 16,
+      "singlet_gap_to_full_trace": "1/16"
+    },
+    "5": {
+      "augmentation_dim": 24,
+      "connected_fraction": "24/25",
+      "full_dim": 25,
+      "singlet_gap_to_full_trace": "1/25"
+    },
+    "6": {
+      "augmentation_dim": 35,
+      "connected_fraction": "35/36",
+      "full_dim": 36,
+      "singlet_gap_to_full_trace": "1/36"
+    },
+    "7": {
+      "augmentation_dim": 48,
+      "connected_fraction": "48/49",
+      "full_dim": 49,
+      "singlet_gap_to_full_trace": "1/49"
+    }
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The theorem closes the finite color-source algebra on the connected source surface, but it does not itself derive same-surface neutral EW/Higgs source/action authority, canonical O_H, or scalar LSZ normalization.",
+  "remaining_blockers": [
+    "same-surface normalized connected source/action authority for Y_T",
+    "canonical O_H",
+    "scalar LSZ normalization",
+    "strict pole rows or W/Z response bypass after normalization is fixed",
+    "matching/running after physical input exists"
+  ],
+  "selector_rows": {
+    "2": {
+      "F_adj": "3/4",
+      "F_singlet": "1/4",
+      "K_connected": "3/4",
+      "K_full_trace": "1",
+      "kappa_connected": "0"
+    },
+    "3": {
+      "F_adj": "8/9",
+      "F_singlet": "1/9",
+      "K_connected": "8/9",
+      "K_full_trace": "1",
+      "kappa_connected": "0"
+    },
+    "4": {
+      "F_adj": "15/16",
+      "F_singlet": "1/16",
+      "K_connected": "15/16",
+      "K_full_trace": "1",
+      "kappa_connected": "0"
+    },
+    "5": {
+      "F_adj": "24/25",
+      "F_singlet": "1/25",
+      "K_connected": "24/25",
+      "K_full_trace": "1",
+      "kappa_connected": "0"
+    },
+    "6": {
+      "F_adj": "35/36",
+      "F_singlet": "1/36",
+      "K_connected": "35/36",
+      "K_full_trace": "1",
+      "kappa_connected": "0"
+    }
+  },
+  "status": "bounded support: connected-source selector for kappa_Y=0",
+  "yt_consequence": "If the physical Yukawa-side source/action surface is accepted as this normalized connected source tangent, kappa_Y=0 and K_Y=8/9 at N_c=3."
+}

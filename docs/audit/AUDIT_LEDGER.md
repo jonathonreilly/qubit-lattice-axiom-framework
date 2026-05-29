@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 164 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 595 |
+| **retained_bounded** | 594 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1198 |
+| unaudited | 1199 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -57,14 +57,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 920 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1434 |
+| `unaudited` | 1435 |
 
 | claim_type | count |
 |---|---:|
@@ -130,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -227,7 +226,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -609,6 +607,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | C | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -2574,19 +2573,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
-- **auditor confidence:** high
-
-### `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`
-
-- **Note:** [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** For any two distinct Z^3 qubit sites with self-adjoint involutive single-qubit observables, the two-site CHSH operator has norm at most 2√2 and the bound is saturated by the standard Bell-state Pauli configuration as a state-space witness.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T120315Z-9189bc1d-chsh_tsirelson_lattice_q-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Using the CHSH square expansion with distinct-site tensor commutation and the commutator norm bounds gives ‖C²‖ ≤ 8, hence ‖C‖ ≤ 2√2, with the standard Bell-state Pauli witness saturating it.  _(class `A`)_
-- **chain closes:** True — The bound follows as a direct algebraic specialization of the retained structural CHSH theorem to the A1+A2 qubit lattice, with distinct-site commutation supplied by retained_bounded tensor locality. The axiom-premise citation supplies the per-site M2(C) and Z^3 substrate and is used within its stated scope.
-- **rationale:** No runner artifacts are available, so the judgment is from note text alone. The load-bearing step is a textbook algebraic norm bound over retained-grade inputs plus the explicitly flagged axiom premise; no external comparator, fitted scale, or renaming step is used. The saturation witness is already contained in the retained structural CHSH authority and is valid on the qubit-pair Hilbert space supplied by A1. The claim is bounded to pair-wise kinematic CHSH structure and does not assert dynamical preparation.
 - **auditor confidence:** high
 
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`
@@ -8543,6 +8529,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given the retained Sym²/Anti² split and gl(3) ⊕ gl(1) commutant with compact semisimple su(3), Sym² is a non-trivial 3-dimensional SU(3) irrep, Anti² is trivial, and C² ⊗ (Sym² ⊕ Anti²) = (2,3) ⊕ (2,1).  _(class `A`)_
 - **chain closes:** True — The cited retained integration note supplies the 3+1 tau split and gl(3) ⊕ gl(1) commutant with su(3) on the 3-block, while the selector note supplies canonical axis selection. Standard finite-dimensional SU(3) representation facts and tensor-product distributivity then yield B1-B3 without importing SM labels or hypercharge normalization.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade cited inputs, not a numerical match, external comparator, or renaming. The runner source performs exact symbolic checks of the tau eigenspaces, Gell-Mann su(3) algebra, small su(3) irrep dimensions, one-dimensional triviality, and tensor-product ranks; these support class A rather than class C. The ratio note is used only as a consistency check and is not needed for B1-B3.
+- **auditor confidence:** high
+
+### `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-second-lieb_robinson_equal_time`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Embedded operators supported on distinct tensor factors commute because each acts as the identity on the other's factor, so O_x O_y = O_y O_x.  _(class `A`)_
+- **chain closes:** True — The conclusions follow directly from the stipulated tensor-product Hilbert space and disjoint-factor embeddings. No upstream physical bridge, numerical comparator, or dynamical authority is needed for L1-L3.
+- **rationale:** The load-bearing step is a standard algebraic identity over tensor-product operators with disjoint support. The source note explicitly rescopes away the prior physical per-site realization clause, Lieb-Robinson time evolution, continuum microcausality, and fermionic graded tensor-product claims. The provided runner genuinely constructs symbolic and Pauli tensor-product operators and checks the claimed commutators and factorization, with no hard-coded numerical target or external comparator. The ledger visibility check is non-load-bearing and does not affect closure.
 - **auditor confidence:** high
 
 ### `linear_response_derivation_note`

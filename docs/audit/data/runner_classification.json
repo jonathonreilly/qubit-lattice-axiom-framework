@@ -4068,6 +4068,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_staggered_cycle_break_slice.py"
     },
+    "cyclic_dft_uniform_magnitude_bounded_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/cyclic_dft_uniform_magnitude_runner.py"
+    },
     "cyclic_projector_compression_narrow_theorem_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -31457,6 +31469,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/cyclic_dft_uniform_magnitude_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "cyclic_dft_uniform_magnitude_bounded_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/decoherence_action_independence.py": {
       "assert_count": 0,
       "claims": [
@@ -57584,9 +57611,9 @@
       "B": 294,
       "C": 769,
       "D": 307,
-      "none": 443
+      "none": 444
     },
-    "runners_classified": 2076,
+    "runners_classified": 2077,
     "runners_with_C": 1010,
     "runners_with_D": 613
   }

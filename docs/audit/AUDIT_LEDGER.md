@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 166 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 595 |
+| **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1191 |
+| unaudited | 1190 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 23 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 924 |
+| `audited_clean` | 925 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1427 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
@@ -424,6 +424,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -5653,6 +5654,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** All 625 one-per-edge four-action candidate sets have nonempty mod-2 boundary, while the explicit five-action elementary-cube completion has empty boundary.  _(class `A`)_
 - **chain closes:** True — The runner source constructs plaquette edges from the stated definitions, enumerates the local one-edge-sharing candidates, checks all four-action products, and verifies the explicit six-face cube boundary by XOR cancellation. No external authority or physical beta-order premise is needed for the audited narrow geometry claim.
 - **rationale:** The audited scope is the finite mod-2 geometry only, not the runner's printed beta-order interpretation. Within that scope, the source and runner perform an actual exhaustive incidence computation rather than importing or hard-coding the contested conclusion. The four relevant checks establish the one-edge sharing lower bound, exclude all four-action closures, and exhibit a five-action cube witness, so the stated minimal size follows.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_distinct_shell_theorem_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite mod-2 cubical-boundary theorem that the minimal distinct connected shell containing a marked plaquette on the four-coordinate Wilson cubical patch is the six-face cube boundary, with bounded beta^5 numerator and beta^6 vacuum order readings.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_d`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exhaustive 625-case four-action exclusion plus the explicit five-action cube-shell witness establish minimal distinct connected shell size 6, with the bounded beta-order reading assigning one power of beta per action plaquette.  _(class `A`)_
+- **chain closes:** True — The finite geometry closes from the retained exact-core authority and the runner source, which performs the claimed candidate enumeration and mod-2 boundary checks rather than merely printing constants. The beta-order statements are explicitly bounded physical readings from the action-plaquette count, not a claimed full beta_eff reduction law.
+- **rationale:** The cited exact-core authority is retained and supplies the standalone finite geometry. The included runner source constructs local plaquettes, enumerates all one-per-edge four-action candidates, computes GF(2) boundaries, and verifies the explicit cube shell, so the load-bearing finite step is a genuine algebraic closure. The source note clearly bounds the beta^5 and beta^6 interpretation and excludes the open full beta_eff law, so it does not overclaim that missing downstream result.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10`

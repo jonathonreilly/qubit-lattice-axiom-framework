@@ -111000,11 +111000,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained",
-      "load_bearing_score": 6.144,
+      "load_bearing_score": 9.144,
       "load_bearing_step": "All 625 one-per-edge four-action candidate sets have nonempty mod-2 boundary, while the explicit five-action elementary-cube completion has empty boundary.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "1e416fe35cee368e26f902e9b2976ff1b4170645eb02fe93b85c54d01fedc9df",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_EXACT_CORE_NARROW_THEOREM_NOTE_2026-05-29.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that the local base range {-1,0,1}^4 is sufficient for every plaquette sharing an edge with p0; it appears sufficient from the stated unit-plaquette definition.",
@@ -111025,24 +111025,42 @@
       "verdict_rationale": "The audited scope is the finite mod-2 geometry only, not the runner's printed beta-order interpretation. Within that scope, the source and runner perform an actual exhaustive incidence computation rather than importing or hard-coding the contested conclusion. The four relevant checks establish the one-edge sharing lower bound, exclude all four-action closures, and exhibit a five-action cube witness, so the stated minimal size follows."
     },
     "gauge_vacuum_plaquette_distinct_shell_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T21:20:05.982098+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29": "Finite GF(2) cubical-boundary theorem for distinct plaquette shells around the marked plaquette in the abstract four-coordinate lattice patch."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29"
+        ],
+        "load_bearing_score": 7.615,
+        "runner_hash": "05d5f81c6b182c7217e164bd1d88bbc53e96d5526324251b8c6c661e6322af73",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite geometry closes from the retained exact-core authority and the runner source, which performs the claimed candidate enumeration and mod-2 boundary checks rather than merely printing constants. The beta-order statements are explicitly bounded physical readings from the action-plaquette count, not a claimed full beta_eff reduction law.",
       "claim_id": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
-      "claim_scope": null,
+      "claim_scope": "Finite mod-2 cubical-boundary theorem that the minimal distinct connected shell containing a marked plaquette on the four-coordinate Wilson cubical patch is the six-face cube boundary, with bounded beta^5 numerator and beta^6 vacuum order readings.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T21:20:05.982098+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -111050,19 +111068,19 @@
         "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.615,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The exhaustive 625-case four-action exclusion plus the explicit five-action cube-shell witness establish minimal distinct connected shell size 6, with the bounded beta-order reading assigning one power of beta per action plaquette.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "3be5c3e981834f73c8383c217a0d1ef9882aea77fad38a9ba1e49633faef5bf4",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check whether the bounded beta-order corollaries are intended as part of this row's audited scope or only explanatory consequences of the retained geometry.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -111369,18 +111387,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
       "title": "Gauge-Vacuum Plaquette Distinct-Shell Finite Geometry Packet",
       "transitive_descendants": 48,
-      "verdict_rationale": null
+      "verdict_rationale": "The cited exact-core authority is retained and supplies the standalone finite geometry. The included runner source constructs local plaquettes, enumerates all one-per-edge four-action candidates, computes GF(2) boundaries, and verifies the explicit cube shell, so the load-bearing finite step is a genuine algebraic closure. The source note clearly bounds the beta^5 and beta^6 interpretation and excludes the open full beta_eff law, so it does not overclaim that missing downstream result."
     },
     "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": {
       "audit_date": "2026-05-23T18:40:10.115413+00:00",

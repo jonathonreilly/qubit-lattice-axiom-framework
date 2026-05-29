@@ -339,47 +339,6 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Can the exact minimal distinct-shell geometry around a marked plaquette on the accepted Wilson 3+1 surface be reclassified as positive_theorem while leaving full reduction-law and beta=6 continuation open?",
-      "blocked_by_group_ids": [],
-      "claim_id": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
-      "deps": [
-        "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this bounded-to-retained queue as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries",
-        "PR 1648 source-coupled local-action convention as an assumed axiom"
-      ],
-      "generated_order": 9,
-      "group_id": "wilson_exact_local_chain",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md",
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
-      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
-    },
-    {
       "actual_audit_status": "audited_clean",
       "actual_claim_type": "positive_theorem",
       "actual_effective_status": "retained",
@@ -2001,6 +1960,57 @@
       "resolution_reason": "same_status_fresh_context_reaudit_after_manifest",
       "runner_path": "scripts/no_per_site_chirality_check.py",
       "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Can the exact minimal distinct-shell geometry around a marked plaquette on the accepted Wilson 3+1 surface be reclassified as positive_theorem while leaving full reduction-law and beta=6 continuation open?",
+      "blocked_by_group_ids": [],
+      "claim_id": "gauge_vacuum_plaquette_distinct_shell_theorem_note",
+      "deps": [
+        "gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this bounded-to-retained queue as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries",
+        "PR 1648 source-coupled local-action convention as an assumed axiom"
+      ],
+      "generated_order": 9,
+      "group_id": "wilson_exact_local_chain",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_DISTINCT_SHELL_THEOREM_NOTE.md",
+      "resolution_evidence": {
+        "audit_date": "2026-05-29T21:20:05.982098+00:00",
+        "audit_status": "audited_clean",
+        "auditor": "codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_d",
+        "auditor_family": "codex-gpt-5.5",
+        "claim_type": "bounded_theorem",
+        "independence": "cross_family"
+      },
+      "resolution_manifest_date": "2026-05-23",
+      "resolution_reason": "bounded_terminal_after_reaudit",
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
+      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"
     },

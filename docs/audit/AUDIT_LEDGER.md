@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 603 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1154 |
+| unaudited | 1153 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 936 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1390 |
+| `unaudited` | 1389 |
 
 | claim_type | count |
 |---|---:|
@@ -1092,6 +1092,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lorentz_boost_covariance_3plus1d_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6692,6 +6693,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On this 1D ring protocol, a transient retarded field pulse produces a small but repeatable permanent shift in marker separation after the pulse has passed, with weak-pulse approximate linearity and strong-pulse nonlinearity.  _(class `C`)_
 - **chain closes:** True — The included runner source actually evolves the field and marker wavepackets and computes the reported separations rather than printing hard-coded constants. The broader Yukawa-screening interpretation is not load-bearing for the narrowed bounded claim and is explicitly caveated by the cited robustness notes.
 - **rationale:** The runner output matches the source note's narrow numerical table and summary for the N=61 protocol, and the source code performs a genuine simulation from the stated toy equations. The cited retained_bounded authorities support restricting the claim away from a graph-family or publication-grade positive memory result. The note's wording about Yukawa screening as the likely cause is weaker than the current cited authorities allow, but the audited claim is bounded to the reproduced narrow-ring signal and the instability under robustness checks.
+- **auditor confidence:** high
+
+### `gravitational_wave_probe_note`
+
+- **Note:** [`GRAVITATIONAL_WAVE_PROBE_NOTE.md`](../../docs/GRAVITATIONAL_WAVE_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite toy-lattice differences in Tests B-D on the specified 20x20x20 lattice only; no physical post-Newtonian or gravitational-wave observable mapping is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-230834-38d670d2-gravitational_wave_probe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-verified core is the internal 20x20x20 toy-lattice computation of finite differences between instantaneous/retarded potential sampling and between S=L(1-f) and S=L(1-f-f^2/2), with physical PN/GW identification admitted as non-load-bearing.  _(class `C`)_
+- **chain closes:** False — The visible source supports a genuine finite-lattice computation for part of the runner, but the packet truncates the primary runner source across load-bearing Test B/C implementation, so stdout cannot be treated as authoritative for those computations. The physical PN/GW bridge is also explicitly admitted as missing and remains outside the closed scope.
+- **rationale:** The note's repair correctly narrows the load-bearing claim to internal toy-lattice quantities and admits that physical post-Newtonian or gravitational-wave identification is not derived. However, the restricted packet does not include the complete primary runner source: the implementation of load-bearing Tests B/C is replaced by a truncation marker, while the rubric says runner stdout alone is not authoritative. The bounded toy computation should be re-audited with the complete runner source; the physical bridge remains unaudited.
 - **auditor confidence:** high
 
 ### `gravitomagnetic_note`

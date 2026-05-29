@@ -1,0 +1,84 @@
+loop_slug: sm-gstar-matter-content
+goal: >
+  Retire the monolithic external "declared SM relativistic inventory" import
+  (sm_relativistic_dof_count_import_note_2026-05-17, retained_bounded) by
+  sourcing each dof count of the high-T unbroken-phase g_* = 106.75 census from
+  framework gauge+generation+Higgs structure, naming residuals explicitly.
+target_status: bounded_theorem
+mode: run
+runtime_budget: single deep-work cycle
+cycle_count: 2
+block_count: 2
+active_route: B (assemble-retained-core-and-name-residuals); cycle-2 sub-route = retire-named-residuals-via-resourcing
+hard_residual_being_attacked: >
+  Cycle 2: retire two named census residuals — R-FSB (fermion weight) and
+  R-U1Y (abelian gauge dof) — to retained-sourced for the g_* dof-count, by
+  re-sourcing the exact quantity g_* consumes (the 7/8 ratio; the one-abelian-
+  factor rank) to an already-retained authority. NOT a derivation of the full
+  fermionic-SB law or of the hypercharge values, which stay separately
+  blocked/bounded and are not g_* dof-count inputs.
+science_branch: physics-loop/sm-gstar-retire-fsb-u1y-residuals-2026-05-29
+
+files_touched:
+  # cycle 1 (PR #2223 branch physics-loop/sm-gstar-matter-content-derivation-2026-05-29):
+  - docs/SM_GSTAR_FROM_FRAMEWORK_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_from_framework_structure_2026_05_29.py
+  # cycle 2 (this branch physics-loop/sm-gstar-retire-fsb-u1y-residuals-2026-05-29):
+  - docs/SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md
+  - scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py
+  - .claude/science/physics-loops/sm-gstar-matter-content/*
+
+residuals_retired_to_retained_sourced:
+  - R-FSB: g_* fermion weight = retained 7/8 ratio
+      (hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor, retained:
+      R_lat(3)=7/8 and eta(4)/zeta(4)=7/8). Full substrate fermionic-SB law
+      (axiom_first_fermionic_stefan_boltzmann_..._note_2026-05-26, unaudited,
+      blocked on Wightman chain) is STRONGER and NOT needed by g_*.
+  - R-U1Y: g_* abelian gauge dof-count = retained one-abelian-factor rank
+      (gl(1) of the retained gl(3)+gl(1) commutant; native_gauge_closure_note +
+      graph_first_su3_integration_note, both retained) -> 1 vector -> 2 dof.
+      Hypercharge VALUES (hypercharge_identification_note retained_bounded;
+      standard_model_hypercharge_uniqueness_..._2026-04-24 unaudited) stay
+      bounded/unaudited and are NOT a g_* dof-count input (explicitly separated).
+
+open_imports_residuals:
+  - R-POL: massless-vector 2-polarization (unaudited; emergent-Lorentz under repair)
+  - R-HIGGS: single complex Higgs doublet minimality (assumed, not derived)
+  - R-MATTER: one-generation matter completion full theorem + neutral-singlet convention (unaudited)
+  - R-SPIN: per-site spin-1/2 carrier (audited_conditional)
+  - I12: RH-neutrino thermal exclusion (sector import)
+
+derived_from_retained:
+  - SU(3)_c sector + dim adj 8 (retained)
+  - SU(2)_L sector + dim adj 3 (retained)
+  - one abelian gauge factor / gl(1) rank (retained gl(3)+gl(1) commutant)  # NEW cycle 2 (R-U1Y)
+  - n_gen = 3 (retained)
+  - N_c = 3 (retained)
+  - spin-statistics cardinality (retained)
+  - fermion thermal weight ratio 7/8 (retained)  # tightened cycle 2 (R-FSB)
+  - hypercharge-value algebraic enumeration (retained_bounded)
+  - one-generation anomaly singlet completion (retained_bounded)
+
+no_go_routes:
+  - full-derivation/retained claim (firewall-blocked)
+  - bare-arithmetic-only deliverable (corollary churn vs 2026-05-28 note)
+  - single-Higgs-doublet minimality as gating step (deferred, hard open)
+  - claiming full fermionic-SB law or hypercharge values are derived (cycle 2: they stay separate; g_* needs only the ratio + rank)
+
+trace_gate_classification: direct_blocker_closure / partially_closes
+review_findings: >
+  cycle 1: runner PASS=117 FAIL=0. cycle 2 (residual retirement):
+  scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py PASS=63
+  FAIL=0; vocab_lint 0 violations; ledger cross-check confirms retired-to
+  sources retained and separated stronger statements stay unaudited/
+  retained_bounded; no docs/audit/ touched.
+pr_status: >
+  cycle 1 = PR #2223 (open). cycle 2 = opening
+  (note + runner + loop-pack update ready; committing + pushing + gh pr create).
+next_exact_action: >
+  Commit; push -u origin physics-loop/sm-gstar-retire-fsb-u1y-residuals-2026-05-29;
+  gh pr create; gh pr view --json number,url. Remaining residuals to retire next:
+  R-POL (pending emergent-Lorentz), R-HIGGS (hard open), R-MATTER, R-SPIN.
+stop_condition: >
+  Cycle 2 single block; stop after PR opened (or PR_BACKLOG written). Four
+  residuals remain (R-HIGGS, R-POL, R-MATTER, R-SPIN) plus imports I11/I12.

@@ -1021,7 +1021,7 @@
       "runner": "scripts/axiom_first_cluster_decomposition_check.py"
     },
     "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
@@ -29112,7 +29112,7 @@
       "exists": true
     },
     "scripts/axiom_first_coleman_mermin_wagner_check.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
       ],

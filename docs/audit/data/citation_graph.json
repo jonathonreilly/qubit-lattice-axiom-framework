@@ -1237,14 +1237,6 @@
       "to": "strong_cp_theta_zero_note"
     },
     {
-      "from": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-      "to": "axiom_reduction_note"
-    },
-    {
-      "from": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-      "to": "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
-    },
-    {
       "from": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
       "to": "minimal_axioms_2026-05-03"
     },
@@ -42995,18 +42987,15 @@
     },
     "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": {
       "claim_id": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "axiom_reduction_note",
-        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
-      ],
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem.",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0046b45589b8366a15b7802ba86db8e07645b6634dd662346c409da510664eac",
+      "note_hash": "74150371d86a13677ae455758a4cf70e3ffa7a414a69ce8e07dc960d82dd9b3f",
       "path": "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
-      "title": "Axiom-First Coleman\u2013Mermin\u2013Wagner Lattice Analogue on Cl(3) \u2297 Z^d"
+      "title": "Axiom-First Coleman-Mermin-Wagner IR-Sum Threshold Packet"
     },
     "axiom_first_cpt_theorem_stretch_note_2026-04-29": {
       "claim_id": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
@@ -87174,6 +87163,7 @@
     "audit_packet_script_deps_note_2026-05-17",
     "audit_structural_issues_snapshot_2026-05-17",
     "axiom_change_proposal_2026-04-10",
+    "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
     "axiom_first_microcausality_lieb_robinson_note_2026-05-17",
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17",
     "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
@@ -87938,7 +87928,7 @@
       "decoration": 1,
       "meta": 199,
       "no_go": 87,
-      "none": 1409,
+      "none": 1408,
       "open_gate": 58,
       "positive_theorem": 175
     },

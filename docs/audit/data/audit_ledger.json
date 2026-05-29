@@ -1759,7 +1759,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 9.781,
+      "load_bearing_score": 7.0,
       "load_bearing_step": "The tested DAG family shows that the better-performing action switches from spent-delay to valley-linear as graph geometry becomes more regular.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -1822,7 +1822,7 @@
       },
       "runner_path": "scripts/action_regularity_crossover.py",
       "title": "Action Crossover: Spent-delay \u2192 Valley-linear with Regularity",
-      "transitive_descendants": 54,
+      "transitive_descendants": 7,
       "verdict_rationale": "The included runner source performs an actual deterministic sweep: it generates the DAGs, propagates both action formulas, counts TOWARD outcomes, and prints values matching the note. The affirmative claim is explicitly bounded to the tested DAG slice and disclaims a universal bridge theorem or closed action derivation. Under that narrowed scope, the open axiom-level interpretation is not load-bearing, so the finite computational replay closes."
     },
     "action_geometry_bridge_note": {
@@ -13279,71 +13279,43 @@
       "verdict_rationale": null
     },
     "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-29T05:08:13.879084+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "axiom_reduction_note": null,
-          "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "Finite Gibbs-state Bogoliubov inequality and lattice IR-sum certificate only; excludes the Ward/commutator-normalized order-parameter extraction and the no continuous-symmetry SSB conclusion."
-        },
-        "dep_claim_type": {
-          "axiom_reduction_note": "meta",
-          "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "axiom_reduction_note": "meta",
-          "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "retained_bounded"
-        },
-        "deps": [
-          "axiom_reduction_note",
-          "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
-        ],
-        "load_bearing_score": 7.172,
-        "runner_hash": "7f10102009669e04a1b6a0d5469a1f6d32310d00e139c41b061da0e39606bbcf",
-        "transitive_descendants": 50
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The IR-sum scaling exhibit closes, but the full minimality theorem needs the order-parameter Ward/commutator normalization omitted by the direct Mermin-Wagner dependency and a theorem-grade D9/kernel premise rather than the Axiom Reduction meta inventory.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-      "claim_scope": "Bounded dimensional-minimality claim combining lattice IR-sum Mermin-Wagner scaling with the D9 long-range-force/kernel condition to argue d=3 is the minimal spatial dimension compatible with continuous SSB and a non-logarithmic long-range force.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-29T05:08:13.879084+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem.",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "axiom_reduction_note",
-        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
-      ],
+      "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 7.172,
-      "load_bearing_step": "From AXIOM_REDUCTION_NOTE D9 and MW1/MW2, d \u2265 3 is required for continuous SSB and the long-range-force condition, so d = 3 is the unique minimal integer satisfying both.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "0046b45589b8366a15b7802ba86db8e07645b6634dd662346c409da510664eac",
+      "note_hash": "74150371d86a13677ae455758a4cf70e3ffa7a414a69ce8e07dc960d82dd9b3f",
       "note_path": "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained Ward/commutator normalization for order-parameter extraction and theorem-grade D9/kernel-stability authority, then re-audit the minimality claim.",
-      "open_dependency_paths": [
-        "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
-        "docs/AXIOM_REDUCTION_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T20:38:13.943182+00:00",
@@ -13467,21 +13439,78 @@
             "total_pass": 4
           },
           "verdict_rationale": "Issue: the note uses the standard Bogoliubov/Mermin-Wagner theorem argument and Axiom Reduction D9 to conclude d = 3 minimality, while the registered dependency is a meta inventory and the runner only exhibits IR-sum scaling. Why this blocks: retained clean status would require retained theorem-grade authority for the no-SSB implication and for the long-range-force/kernel condition, not just a numerical lattice-sum exhibit and a meta inventory citation. Repair target: add retained source notes proving the lattice Mermin-Wagner bound in this framework and the D9 kernel/long-range-force condition, then re-audit the dimensional-minimality chain. Claim boundary until fixed: the row supports a bounded conditional IR-scaling exhibit consistent with the CMW dimensional threshold, not a retained axiom-first derivation of d = 3."
+        },
+        {
+          "archived_at": "2026-05-29T13:04:30.088911+00:00",
+          "archived_for_note_hash": "0046b45589b8366a15b7802ba86db8e07645b6634dd662346c409da510664eac",
+          "audit_date": "2026-05-29T05:08:13.879084+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "axiom_reduction_note": null,
+              "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "Finite Gibbs-state Bogoliubov inequality and lattice IR-sum certificate only; excludes the Ward/commutator-normalized order-parameter extraction and the no continuous-symmetry SSB conclusion."
+            },
+            "dep_claim_type": {
+              "axiom_reduction_note": "meta",
+              "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "axiom_reduction_note": "meta",
+              "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "retained_bounded"
+            },
+            "deps": [
+              "axiom_reduction_note",
+              "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
+            ],
+            "load_bearing_score": 7.172,
+            "runner_hash": "7f10102009669e04a1b6a0d5469a1f6d32310d00e139c41b061da0e39606bbcf",
+            "transitive_descendants": 50
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The IR-sum scaling exhibit closes, but the full minimality theorem needs the order-parameter Ward/commutator normalization omitted by the direct Mermin-Wagner dependency and a theorem-grade D9/kernel premise rather than the Axiom Reduction meta inventory.",
+          "claim_scope": "Bounded dimensional-minimality claim combining lattice IR-sum Mermin-Wagner scaling with the D9 long-range-force/kernel condition to argue d=3 is the minimal spatial dimension compatible with continuous SSB and a non-logarithmic long-range force.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-29T05:08:13.879084+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "From AXIOM_REDUCTION_NOTE D9 and MW1/MW2, d \u2265 3 is required for continuous SSB and the long-range-force condition, so d = 3 is the unique minimal integer satisfying both.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained Ward/commutator normalization for order-parameter extraction and theorem-grade D9/kernel-stability authority, then re-audit the minimality claim.",
+          "open_dependency_paths": [
+            "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+            "docs/AXIOM_REDUCTION_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 1,
+            "B": 1,
+            "C": 2,
+            "D": 0,
+            "total_pass": 4
+          },
+          "verdict_rationale": "Issue: the proof promotes the Bogoliubov+IR sum into a no-continuous-SSB conclusion and then combines it with D9, but the direct Mermin-Wagner dependency explicitly excludes the Ward/commutator-normalized order-parameter extraction, and AXIOM_REDUCTION_NOTE is a meta inventory rather than retained theorem authority for D9. Why this blocks: the runner's I_d(L) table independently checks the d=1 linear, d=2 logarithmic, and d>=3 finite IR behavior, but that does not by itself prove vanishing order parameter or the framework's long-range-force dimension condition. Repair target: supply a retained Ward/commutator normalization lemma for the finite-volume order parameter and a retained theorem-grade D9/kernel-stability authority, then re-run the dimensional-minimality audit. Claim boundary until fixed: the source may cite the checked IR-sum threshold as supporting evidence; it may not retain the full d_s=3 minimality theorem or the d_s=2 continuous-SSB exclusion as closed."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 1,
-        "B": 1,
-        "C": 2,
+        "A": 0,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_pass": 4
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
-      "title": "Axiom-First Coleman\u2013Mermin\u2013Wagner Lattice Analogue on Cl(3) \u2297 Z^d",
+      "title": "Axiom-First Coleman-Mermin-Wagner IR-Sum Threshold Packet",
       "transitive_descendants": 50,
-      "verdict_rationale": "Issue: the proof promotes the Bogoliubov+IR sum into a no-continuous-SSB conclusion and then combines it with D9, but the direct Mermin-Wagner dependency explicitly excludes the Ward/commutator-normalized order-parameter extraction, and AXIOM_REDUCTION_NOTE is a meta inventory rather than retained theorem authority for D9. Why this blocks: the runner's I_d(L) table independently checks the d=1 linear, d=2 logarithmic, and d>=3 finite IR behavior, but that does not by itself prove vanishing order parameter or the framework's long-range-force dimension condition. Repair target: supply a retained Ward/commutator normalization lemma for the finite-volume order parameter and a retained theorem-grade D9/kernel-stability authority, then re-run the dimensional-minimality audit. Claim boundary until fixed: the source may cite the checked IR-sum threshold as supporting evidence; it may not retain the full d_s=3 minimality theorem or the d_s=2 continuous-SSB exclusion as closed."
+      "verdict_rationale": null
     },
     "axiom_first_cpt_theorem_stretch_note_2026-04-29": {
       "audit_date": null,
@@ -16848,7 +16877,7 @@
       "claim_type_author_hint_raw": "meta",
       "claim_type_last_reviewed": null,
       "claim_type_provenance": "author_hint",
-      "criticality": "medium",
+      "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
@@ -16858,17 +16887,17 @@
         "valley_linear_robustness_note",
         "valley_linear_continuum_synthesis_note"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 0,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 6.2,
+      "load_bearing_score": 0.0,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "d62cbb413b779542c80cf2f17b5b4df8b33173d555b3a10a59778f851c33bcd0",
       "note_path": "docs/AXIOM_REDUCTION_NOTE.md",
       "notes_for_re_audit_if_any": null,
@@ -16966,7 +16995,7 @@
       },
       "runner_path": null,
       "title": "Axiom Reduction: Honest Minimal Assumption Inventory",
-      "transitive_descendants": 51,
+      "transitive_descendants": 0,
       "verdict_rationale": null
     },
     "axiom_stack_minimality_cl4c_no_go_theorem_note_2026-04-29": {
@@ -20879,11 +20908,11 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 8.454,
+      "load_bearing_score": 5.959,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "255a0574d1cd61b28b932ed271086965a5f1ee3c8c7ccb6ed8dc9598bb1865cf",
       "note_path": "docs/BORN_RULE_ANALYSIS_2026-04-11.md",
       "notes_for_re_audit_if_any": null,
@@ -21008,7 +21037,7 @@
       },
       "runner_path": null,
       "title": "Born Rule Negative \u2014 Interpretive Conditional Reading",
-      "transitive_descendants": 61,
+      "transitive_descendants": 10,
       "verdict_rationale": null
     },
     "born_rule_from_gleason_busch_derivation_note_2026-05-20": {
@@ -50650,7 +50679,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 9.781,
+      "load_bearing_score": 6.807,
       "load_bearing_step": "At zero field both action branches reduce to act = L, so the per-edge contribution and all downstream decoherence observables are identical between spent_delay and valley_linear.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -50895,7 +50924,7 @@
       },
       "runner_path": "scripts/decoherence_action_independence.py",
       "title": "Decoherence is Action-Independent",
-      "transitive_descendants": 54,
+      "transitive_descendants": 6,
       "verdict_rationale": "The load-bearing independence claim closes by direct algebra over the included helper source: both action branches use the same act = L at zero field. The primary runner then recomputes the tested observables and reports zero deltas for every h and metric, with no hard-coded expected values on the load-bearing path. The numeric values in the note's displayed table are stale relative to the supplied runner cache for several metrics, but the audited action-independence claim is the exact cross-action identity, which the runner and algebra both support."
     },
     "decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17": {
@@ -52756,7 +52785,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.17,
+      "load_bearing_score": 12.585,
       "load_bearing_step": "The binding d=3 and d=4 table entries are exactly the cache-backed rows asserted by the certificate runner against registered cached artifacts.",
       "load_bearing_step_class": "B",
       "max_descendant_status": "retained_bounded",
@@ -53158,7 +53187,7 @@
       },
       "runner_path": "scripts/dimensional_gravity_table_certificate_runner_2026_05_03.py",
       "title": "Dimensional Gravity Table \u2014 Cache-Backed d=3 / d=4 Rows Only (Binding)",
-      "transitive_descendants": 71,
+      "transitive_descendants": 23,
       "verdict_rationale": "The repaired note has narrowed the claim to a bounded cache-backed inventory rather than a universal dimensional-gravity theorem. The runner source is not a first-principles compute runner; it performs structural algebraic checks plus cache/log verification, so the load-bearing step is class B. Because the binding claim is only that the cache-backed d=3/d=4 entries are registered and internally matched, and the d=2 plus asymptotic 4D distance-law claims are demoted out of scope, the narrowed chain closes on its own terms."
     },
     "dirac_core_card_note": {
@@ -182807,21 +182836,21 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": "2026-05-29T04:55:32.157471+00:00",
       "claim_type_provenance": "audited",
-      "criticality": "medium",
+      "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 1,
+      "direct_in_degree": 0,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.2,
+      "load_bearing_score": 0.0,
       "load_bearing_step": "The finite Bogoliubov inequality together with E_k = 2 sum_mu(1 - cos k_mu) and I_d(L) = L^-d sum_{k != 0} 1/E_k gives the d=1 exact identity, d=2 logarithmic growth, and finite d=3 window behavior.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "2190a12b5f9e8ba3067157ad49677413c5b624c948a61e211786205a713f16dc",
       "note_path": "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
       "notes_for_re_audit_if_any": "Second auditor should verify the ledger scope remains narrowed: downstream use of |m_L| -> 0 or no continuous-symmetry SSB still requires a separate finite-volume Ward/commutator normalization lemma.",
@@ -182923,7 +182952,7 @@
       },
       "runner_path": "scripts/mermin_wagner_bogoliubov_bounded_certificate.py",
       "title": "Mermin-Wagner / Hohenberg Bogoliubov Infrared Certificate",
-      "transitive_descendants": 51,
+      "transitive_descendants": 0,
       "verdict_rationale": "The runner exits 0 with PASS=5 FAIL=0 and its code computes finite matrix and lattice-sum checks rather than importing the textbook theorem. Independent recheck, without importing the runner, passed random 5x5 Hermitian Gibbs Bogoliubov instances, the exact I_1 identity for multiple L, monotone/log-scale d=2 behavior, and finite d=3 window behavior through L=24. The no-go/admission gate passes only because this clean verdict does not retain the Ward-normalized |m_L| extraction or no-SSB conclusion."
     },
     "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
@@ -300798,7 +300827,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.022,
+      "load_bearing_score": 11.322,
       "load_bearing_step": "The same-harness comparison table reports that, with only the action law changed, valley-linear has Born 4.20e-15, k=0 +0.00e+00, F~M alpha 1.00, TOWARD 8/8, and tail slope -0.93 versus spent-delay alpha 0.50 and tail slope -0.52.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -300900,7 +300929,7 @@
       },
       "runner_path": "scripts/valley_linear_same_harness_compare.py",
       "title": "3D Valley-Linear Action Note",
-      "transitive_descendants": 64,
+      "transitive_descendants": 19,
       "verdict_rationale": "The load-bearing evidence is a completed first-principles compute inside the restricted packet, not a copied upstream value or a printed constant. The runner computes both actions under the same lattice and readout parameters and produces the reported Born, k=0, mass-law exponent, gravity sign/count, and tail slope diagnostics. The note's own language keeps the claim bounded and explicitly excludes convergence, derivation from axioms, and Newtonian-gravity promotion."
     },
     "valley_linear_asymptotic_bridge_note": {
@@ -300969,7 +300998,7 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.833,
+      "load_bearing_score": 8.322,
       "load_bearing_step": "The replay table shows TOWARD persistence and F~M=1.00 across the tested h/W ladder while the far-tail exponent changes with h and W, so the result is a near-Newtonian finite-lattice bridge rather than a stabilized universal -1.00 theorem.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -301031,7 +301060,7 @@
       },
       "runner_path": "scripts/valley_linear_asymptotic_bridge.py",
       "title": "Valley-Linear Asymptotic Bridge Note",
-      "transitive_descendants": 56,
+      "transitive_descendants": 9,
       "verdict_rationale": "The note's conclusion is conservative and matches the completed runner output: the tested slices remain TOWARD, preserve F~M near 1.00, and show far-tail slopes that vary across h/W choices. The runner source is not a trivial constant printer; it constructs lattice checkpoints, propagates fields, computes Born/k=0/gravity/mass-scaling/distance-law quantities, and fits power laws. No external comparator or imported calibrated measurement is used, and the claimed scope stays bounded to this finite replay."
     },
     "valley_linear_continuum_synthesis_note": {
@@ -301103,11 +301132,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.728,
+      "load_bearing_score": 3.322,
       "load_bearing_step": "In the wide-ray continuum regime x_m >> b and L_phys - x_m >> b, d(delta Phi)/db -> 2 k s / b, so the continuum deflection scale of the valley-linear action is 1/b in the 3D straight-ray approximation.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "34b85eb33a4f38f5d0521588f25a0030d9a8863a7a63bb3d5e173a28b157ba10",
       "note_path": "docs/VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md",
       "notes_for_re_audit_if_any": "Re-check only if future edits promote the 1/b continuum bridge into an exact finite-lattice convergence theorem or architecture-independent Newtonian law.",
@@ -301267,7 +301296,7 @@
       },
       "runner_path": "scripts/frontier_valley_linear_continuum_synthesis.py",
       "title": "Valley-Linear Continuum Synthesis Note",
-      "transitive_descendants": 52,
+      "transitive_descendants": 4,
       "verdict_rationale": "The claim closes only because its operative scope is bounded: a straight-ray continuum algebraic bridge plus synthesis of already retained-bounded lattice evidence. The note repeatedly excludes exact finite-lattice convergence, universal architecture independence, and a stabilized finite-lattice -1.00 theorem, so the Newtonian language is confined to the stipulated continuum approximation rather than overclaimed as a full discrete-model theorem."
     },
     "valley_linear_mirror_transfer_note": {
@@ -301459,7 +301488,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.255,
+      "load_bearing_score": 7.307,
       "load_bearing_step": "The strongest safe summary is that the valley-linear action is robust on the tested 3D ordered-lattice slices, with Born machine-clean, F~M = 1.00, and gravity TOWARD throughout the tested rows.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -301567,7 +301596,7 @@
       },
       "runner_path": "scripts/valley_linear_robustness_sweep.py",
       "title": "Valley-Linear Robustness Note",
-      "transitive_descendants": 53,
+      "transitive_descendants": 6,
       "verdict_rationale": "The note\u2019s bounded tables are directly reproduced by a completed runner whose source performs the relevant numerical computation from the stated lattice/action setup. The runner does not import the contested table values from another note and does not use external comparator data. The claim is carefully scoped: it does not assert universality, a continuum theorem, or a settled derivation of the action law."
     },
     "valley_linear_wide_tail_note": {

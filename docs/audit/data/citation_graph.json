@@ -24402,14 +24402,6 @@
     },
     {
       "from": "source_resolved_wavefield_green_pocket_note",
-      "to": "source_resolved_propagating_green_pocket_note"
-    },
-    {
-      "from": "source_resolved_wavefield_green_pocket_note",
-      "to": "source_resolved_exact_green_pocket_note"
-    },
-    {
-      "from": "source_resolved_wavefield_green_pocket_note",
       "to": "minimal_source_driven_field_probe_note"
     },
     {
@@ -78782,18 +78774,16 @@
     },
     "source_resolved_wavefield_green_pocket_note": {
       "claim_id": "source_resolved_wavefield_green_pocket_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "source_resolved_propagating_green_pocket_note",
-        "source_resolved_exact_green_pocket_note",
         "minimal_source_driven_field_probe_note"
       ],
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "note_hash": "982de9e6c5d3ea7241ff57dbe2b13e02cb2070f14a8028a02f8e0b7a6b811698",
+      "note_hash": "f3d596928c8fe896aa3c62b34a9696230d27e110829e89d328bd40bf87b45c3e",
       "path": "docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md",
       "runner_path": "scripts/source_resolved_wavefield_green_pocket.py",
       "title": "Source-Resolved Wavefield Green Pocket"

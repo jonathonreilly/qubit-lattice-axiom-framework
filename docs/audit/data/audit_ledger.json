@@ -260755,7 +260755,7 @@
         "source_resolved_exact_green_scaling_note",
         "source_resolved_exact_green_self_consistent_note"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -260763,7 +260763,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 9.241,
+      "load_bearing_score": 8.728,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -260943,7 +260943,7 @@
       },
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "title": "Source-Resolved Exact Green Pocket",
-      "transitive_descendants": 106,
+      "transitive_descendants": 105,
       "verdict_rationale": null
     },
     "source_resolved_exact_green_pocket_note_2026-05-17": {
@@ -261063,7 +261063,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 8.255,
+      "load_bearing_score": 8.241,
       "load_bearing_step": "For the fixed h=0.5, W=3, L=24 source-resolved Green-kernel configuration, the runner computes zero-source shift +0.000000e+00, four positive Green deflections, F~M exponent 1.01, and mean |green/inst| = 1.111.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
@@ -261210,7 +261210,7 @@
       },
       "runner_path": "scripts/source_resolved_exact_green_scaling.py",
       "title": "Source-Resolved Exact Green Scaling",
-      "transitive_descendants": 107,
+      "transitive_descendants": 106,
       "verdict_rationale": "The runner source is substantive: it constructs the finite lattice, computes the source-resolved Green-like field, propagates amplitudes, and derives the centroid shifts and fitted exponents without importing prior note outputs or asserting the table constants. The cached stdout matches the note's frozen readout, including exact zero-source reduction and all four TOWARD rows. This clean verdict applies only to the bounded fixed-configuration computation, not to a full self-consistent field theory or generated-geometry transfer."
     },
     "source_resolved_exact_green_self_consistent_note": {
@@ -261303,7 +261303,7 @@
       ],
       "independence": "judicial_review",
       "intrinsic_status": "audited_numerical_match",
-      "load_bearing_score": 7.255,
+      "load_bearing_score": 7.241,
       "load_bearing_step": "The frozen pocket uses an admitted calibrated gain input, chosen to set the base-field cap, and then reports the one-update Green self-consistent numerical table and mean ratio.",
       "load_bearing_step_class": "G",
       "max_descendant_status": "retained_pending_chain",
@@ -261397,7 +261397,7 @@
       },
       "runner_path": "scripts/source_resolved_exact_green_self_consistent.py",
       "title": "Source-Resolved Exact Green Self-Consistent Pocket",
-      "transitive_descendants": 107,
+      "transitive_descendants": 106,
       "verdict_rationale": "The restricted packet explicitly makes the calibrated gain a frozen setup input, and the runner hard-codes that gain while asserting that it sets the target base-field cap before reproducing the frozen table. That is a bounded numerical pocket at a chosen calibration value, not first-principles closure from the axiom. Under the rubric, this is class G and the appropriate terminal verdict is audited_numerical_match."
     },
     "source_resolved_generated_architecture_bridge_note": {
@@ -262704,7 +262704,7 @@
         "minimal_source_driven_field_probe_note",
         "source_resolved_exact_green_pocket_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -262712,7 +262712,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 7.7,
+      "load_bearing_score": 7.187,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -262838,7 +262838,7 @@
       },
       "runner_path": "scripts/source_resolved_propagating_green_pocket.py",
       "title": "Source-Resolved Propagating Green Pocket",
-      "transitive_descendants": 103,
+      "transitive_descendants": 102,
       "verdict_rationale": null
     },
     "source_resolved_radical_geometry_probe_note": {
@@ -263426,17 +263426,15 @@
       "chain_closure_explanation": null,
       "claim_id": "source_resolved_wavefield_green_pocket_note",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "source_resolved_propagating_green_pocket_note",
-        "source_resolved_exact_green_pocket_note",
         "minimal_source_driven_field_probe_note"
       ],
       "direct_in_degree": 2,
@@ -263452,7 +263450,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "982de9e6c5d3ea7241ff57dbe2b13e02cb2070f14a8028a02f8e0b7a6b811698",
+      "note_hash": "f3d596928c8fe896aa3c62b34a9696230d27e110829e89d328bd40bf87b45c3e",
       "note_path": "docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

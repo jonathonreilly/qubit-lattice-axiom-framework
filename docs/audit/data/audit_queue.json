@@ -11466,17 +11466,17 @@
         "source_resolved_exact_green_scaling_note",
         "source_resolved_exact_green_self_consistent_note"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "load_bearing_score": 9.241,
+      "load_bearing_score": 8.728,
       "note_path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
-      "transitive_descendants": 106
+      "transitive_descendants": 105
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -11493,44 +11493,16 @@
         "minimal_source_driven_field_probe_note",
         "source_resolved_exact_green_pocket_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "load_bearing_score": 7.7,
+      "load_bearing_score": 7.187,
       "note_path": "docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/source_resolved_propagating_green_pocket.py",
-      "transitive_descendants": 103
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "source_resolved_wavefield_green_pocket_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "source_resolved_propagating_green_pocket_note",
-        "source_resolved_exact_green_pocket_note",
-        "minimal_source_driven_field_probe_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/minimal_source_driven_field_probe.py"
-      ],
-      "load_bearing_score": 7.687,
-      "note_path": "docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/source_resolved_wavefield_green_pocket.py",
       "transitive_descendants": 102
     },
     {

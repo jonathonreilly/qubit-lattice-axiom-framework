@@ -13,6 +13,28 @@ pipeline after independent review.
 `HUBBLE_LANE5_C2_ATTACK_SURFACE_BIPARTITION_NARROW_THEOREM_NOTE_2026-05-27.md`).
 **Primary runner:** [`scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py`](../scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py)
 
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (conditional arithmetic; premise packet admitted)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The runner closes the numerical substitution under the supplied packet, and the two ledger dependencies are retained_bounded. The scientific chain does not close because P1-P7, including the freeze-out-bypass identity and m_DM=N_sites*v pre..."*
+
+with repair: *"dependency_not_retained: derive or explicitly accepted-premise-register P1-P7, especially the freeze-out-bypass identity and m_DM=N_sites*v route, then re-audit whether the prediction can promote beyond conditional bounded arithmetic."*.
+
+Deriving or registering the named premise packet as retained authority is
+substantive new work, out of scope. This revision narrows via the **admission
+path**:
+
+- **Load-bearing (in scope):** Given the retained `R_base = 31/9` and the retained structural ratio identity, composed with the supplied P1-P7 premise packet, the freeze-out-bypass arithmetic `eta_pred = C(x_F, alpha_X, R) * (N_sites * v)^2` yields a bounded band `eta_pred in [5.25e-10, 8.11e-10]` bracketing `eta_obs = 6.12e-10`, which the runner verifies with floating-point arithmetic over the supplied rectangle.
+- **NON-load-bearing (admitted / not retained):** The P1-P7 premise packet — comprising the freeze-out-bypass identity `eta = C * m_DM^2` (P1, source `DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25`, currently `unaudited`), the structural mass candidate `m_DM = N_sites * v = 16 * v` (P2, composed from authorities not yet retained-bounded), and the textbook BBN coefficient, freeze-out band, SM degrees of freedom, Kolb-Turner prefactor, and Sommerfeld/dark-coupling band (P3-P7). It is recorded as an admitted, not-retained input; the physical higher-tier reading stays conditional on it reaching retained-grade authority.
+
+No new axiom, import, or retained bridge is introduced. The conditional
+arithmetic is the load-bearing content; the premise packet stays admitted
+until a retained authority for it lands.
+
 ```yaml
 actual_current_surface_status: narrow_bounded_theorem
 conditional_surface_status: narrow_bounded_theorem

@@ -9,6 +9,28 @@ not apply an audit verdict and does not promote any downstream cosmology row.
 
 proposal_allowed: false
 
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (conditional arithmetic; premise packet admitted)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The arithmetic and source firewall close only as a conditional admission bridge. The imported P1-P4 packet, including the Cyburt convention/residual normalization, is not retained-grade or registry-accepted authority in this row."*
+
+with repair: *"dependency_not_retained: derive, retire, or explicitly accepted-premise-register the P1-P4 coefficient premise packet, then re-audit whether the bridge can promote beyond conditional admission arithmetic."*.
+
+Deriving or registering the named premise packet as retained authority is
+substantive new work, out of scope. This revision narrows via the **admission
+path**:
+
+- **Load-bearing (in scope):** Given P1-P4 as supplied inputs, the deterministic unit-conversion arithmetic on the Planck-distribution photon number density (`2 zeta(3)/pi^2` factor) recovers the Cyburt+ 2016 textbook coefficient `3.6515e-3` to within 0.13%, which the runner verifies exactly.
+- **NON-load-bearing (admitted / not retained):** The P1-P4 premise packet — comprising proton rest mass `m_p` (P1), present-day CMB temperature `T_CMB` (P2), critical-density unit `rho_crit/h^2` from `H_100` and Newton's constant `G` (P3), and the Cyburt convention/residual normalization `S_Cyburt` (P4). It is recorded as an admitted, not-retained input; the physical higher-tier reading stays conditional on it reaching retained-grade authority.
+
+No new axiom, import, or retained bridge is introduced. The conditional
+arithmetic is the load-bearing content; the premise packet stays admitted
+until a retained authority for it lands.
+
 ## 0. Scope and Boundary
 
 This note formalizes a single textbook coefficient that currently enters the

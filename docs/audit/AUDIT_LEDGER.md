@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 581 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1161 |
+| unaudited | 1160 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 72 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,10 +62,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 894 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
-| `audited_failed` | 47 |
+| `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1391 |
+| `unaudited` | 1390 |
 
 | claim_type | count |
 |---|---:|
@@ -1191,6 +1191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_nonlocal_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_results_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_scale_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -13404,6 +13405,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** B1-B4 exact algebra: substitute M1 G(r) -> 1/(4*pi*|r|) into P1 V(r) = -C*g_bare^2*G(r), define alpha = g_bare^2/(4*pi), rewrite V(r) as -C*alpha/|r|, then set g_bare=1 to get alpha=1/(4*pi).  _(class `B`)_
 - **chain closes:** True — The chain closes at the conditional bounded scope: P1 remains a local admitted readout convention, M1 is consumed through the retained Maradudin parent behind the decoration wrapper, I2 and g_bare=1 are retained_bounded dependencies, and the B1-B4 algebra is exact. It does not close the admitted P1 derivation or any downstream physical/gravity/continuum claim.
 - **rationale:** Clean only as a conditional accepted-premise bridge. Independent algebra confirms the sign, 4*pi factor, C factor, alpha substitution, and g_bare=1 specialization. The runner is SHA-pinned, exits 0, and reports EXACT PASS=41 FAIL=0 plus BOUNDED PASS=11 FAIL=0; the source's verification snippet still says TOTAL PASS=35 FAIL=0, but that is non-load-bearing transcript drift because the current runner adds checks and all current checks pass. No-go discipline gate passed: the wall set collapses to the single local P1 admission; M1 authority is taken from the retained Maradudin parent, not the decoration wrapper as new authority; I2 and g_bare are retained dependencies; C=C_F is part of P1 for this row; multiplicative-bridge and regulator-dependence no-go references are used only as exclusions; and future derivation/retirement paths for P1, C=C_F, Wilson-surface normalization, and the parent bridge remain open. The verdict does not promote P1 to Tier-A, the parent alpha_bare bridge, Newton-law/gravity, 4D loop/Wick, hierarchy, physical continuum, Wilson plaquette matching, generator normalization, or C=C_F derivation claims.
+- **auditor confidence:** high
+
+### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`
+
+- **Note:** [`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](../../docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Wilson/staggered-surface repair candidate claiming that, under explicit canonical Wilson real-positive-measure premises and scalar-mass action-class boundary, the single-plaquette CP-odd i*theta*sum Im Tr U_P slot is inadmissible and the convention-aligned real scalar mass line gives arg det(M_u M_d)=0; clover/multi-plaquette/topological-charge and axion routes are excluded.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-strong-cp-operator-basis`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source composes Lemma 2.2's plaquette continuum decomposition, Lemma 2.3's i*theta*Q_lat real-positive-measure rejection, and Lemma 3.1's determinant-phase/scalar-class intersection to conclude theta_bare=0 in the reviewed single-plaquette slot and arg det(M_u M_d)=0 on the real scalar mass line.  _(class `A`)_
+- **chain closes:** False — The dependencies are retained-grade and the runner exits cleanly, but the source proof does not close on its own formulas: Lemma 2.2 displays Re Tr U_P = N_c - (a^4/4)*(1/2)F^aF^a even though the expansion and runner use N_c - (a^4/4)F^aF^a, and Lemma 2.3 switches conventions in the algebra of i*theta*(Tr U-Tr U^dag), before returning to the runner's complex Boltzmann phase convention.
+- **rationale:** Issue: the source and runner disagree on a load-bearing normalization/sign family. Lemma 2.2's displayed kinetic coefficient has an extra factor of 1/2 relative to the SU(3) trace normalization and the runner's V3 check, while Lemma 2.3's intermediate i*theta algebra alternates between a real action contribution and the complex Boltzmann phase used by the theorem and runner. Why this blocks: the claim is an operator-basis/mass-orientation repair candidate, so the exact CP-odd slot normalization and real-positive-measure rejection cannot be certified clean while the proof text contains factor/sign inconsistencies. Repair target: fix the Lemma 2.2 coefficient, rewrite the theta-slot convention as Q_lat=(Tr U-Tr U^dag)/(2i) real and S_theta=i*theta*Q_lat consistently, and add an analytic or runner check covering the stated scalar-mass phase family rather than only representative phases. Claim boundary until fixed: the cached runner provides sampled support for the narrowed Wilson-slot and mass-phase rejection story, and the no-go discipline section correctly excludes broad F-tilde-F/topological/axion routes, but this source row is not a clean bounded theorem yet.
 - **auditor confidence:** high
 
 ### `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`

@@ -19,9 +19,9 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 179 |
 | critical | `unaudited` | 152 |
-| medium | `unaudited` | 95 |
+| medium | `unaudited` | 94 |
+| medium | `audited_conditional` | 5 |
 | high | `audited_numerical_match` | 4 |
-| medium | `audited_conditional` | 4 |
 | critical | `audited_conditional` | 3 |
 | high | `audited_renaming` | 3 |
 | critical | `audited_numerical_match` | 2 |
@@ -450,7 +450,7 @@ publication tables phrase it.
 | medium | `neutrino_majorana_no_stationary_scale_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_retained_lanes_note_2026-04-16` | `unaudited` | `unaudited` | PUBLICATION_MATRIX.md |
 | medium | `neutrino_sole_axiom_full_closure_boundary_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `one_parameter_reduced_shell_law_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pauli_group_order_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `plaquette_bootstrap_framework_integration_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

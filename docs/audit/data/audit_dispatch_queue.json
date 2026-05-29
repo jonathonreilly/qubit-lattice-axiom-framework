@@ -1527,48 +1527,6 @@
         "docs/MINIMAL_AXIOMS_2026-05-20.md",
         "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
       ],
-      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-bosonic-CCR trace obstruction close (finite-dim trace + dim_C H_x = 2 forces no CCR rep), or does another blocker remain?",
-      "blocked_by_group_ids": [],
-      "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_conditional",
-      "expected_current_claim_type": "positive_theorem",
-      "expected_current_effective_status": "audited_conditional",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 6,
-      "group_id": "r1_per_site_dim_two_consumers",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
-      "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
-    },
-    {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
       "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Pauli group order theorem close on the bounded per-site scope, or does another blocker remain?",
       "blocked_by_group_ids": [],
       "claim_id": "pauli_group_order_theorem_note_2026-05-02",
@@ -1940,6 +1898,58 @@
       "resolution_reason": "bounded_terminal_after_reaudit",
       "runner_path": "scripts/frontier_weak_coupling_battery.py",
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved"
+    },
+    {
+      "actual_audit_status": "audited_conditional",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "audited_conditional",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-bosonic-CCR trace obstruction close (finite-dim trace + dim_C H_x = 2 forces no CCR rep), or does another blocker remain?",
+      "blocked_by_group_ids": [],
+      "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+      "deps": [
+        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_conditional",
+      "expected_current_claim_type": "positive_theorem",
+      "expected_current_effective_status": "audited_conditional",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 6,
+      "group_id": "r1_per_site_dim_two_consumers",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+      "resolution_evidence": {
+        "audit_date": "2026-05-29T05:40:10.151836+00:00",
+        "audit_status": "audited_conditional",
+        "auditor": "codex-audit-loop-no-per-site-bosonic-ccr-2026-05-28",
+        "auditor_family": "codex-gpt-5.5",
+        "claim_type": "positive_theorem",
+        "independence": "cross_family"
+      },
+      "resolution_manifest_date": "2026-05-22",
+      "resolution_reason": "same_status_fresh_context_reaudit_after_manifest",
+      "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"
     },

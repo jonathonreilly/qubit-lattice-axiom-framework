@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 602 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1163 |
+| unaudited | 1162 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 933 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1399 |
+| `unaudited` | 1398 |
 
 | claim_type | count |
 |---|---:|
@@ -1081,6 +1081,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4146,6 +4147,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given g_* = 106.75, compute d_N = 135 zeta(3)/(4 pi^4 g_*) and, from (T_gamma/T_nu)^3 = 11/4, g_*S(today) = 43/11 and s/n_gamma = pi^4 g_*S(today)/(45 zeta(3)).  _(class `A`)_
 - **chain closes:** True — The direct dependency supplies retained-bounded g_* = 106.75. Independent arithmetic gives d_N = 0.003901498367656258, g_*S(today)=43/11, s/n_gamma = 7.039433661546651, and product (s/n_gamma)*d_N = 0.02746433893974878.
 - **rationale:** Second clean pass confirms the bounded arithmetic/conversion scope. The runner's nine checks and an independent high-precision recomputation agree on the exact factors and numerics. Residual risk: the result imports the Standard Model inventory and standard equilibrium/entropy-conservation formulas as bounded premises; it does not derive those premises from the framework or close physical leptogenesis transport.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_EXPANSION_AXIOM_BOUNDARY_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_EXPANSION_AXIOM_BOUNDARY_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded boundary-narrowing claim that the remaining explicit non-axiom datum is H_rad(T)/E_H(z), not an unbounded derivation of eta from Cl(3) on Z^3 alone.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-223557-27efaf17-dm_leptogenesis_expansio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After closing the source package, transfer coefficients, projection law, coherent kernel, equilibrium factors, and direct transport integral, the single remaining non-axiom object is H_rad(T), equivalently E_H(z) with its z=1 normalization.  _(class `A`)_
+- **chain closes:** False — The restricted packet does not supply retained authorities or a non-hard-coded derivation closing all listed non-expansion ingredients simultaneously. The runner string-checks the note for H_rad(T) and uses unconditional True checks for the functional/uniqueness assertions, so the one-object boundary remains conditional on an unsupplied bridge.
+- **rationale:** The source note itself admits that eta uniqueness given H_rad(T) is not established by a retained theorem or non-hard-coded runner. The primary runner does not independently derive the boundary from the axiom: part 2 reads the same boundary note, part 3 hard-codes True, and the helper uses hard-coded constants rather than a first-principles Cl(3) computation for the relevant closure claims. Thus the narrowed H_rad(T) boundary is a conditional bookkeeping statement, not a closed theorem from the restricted packet.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16`

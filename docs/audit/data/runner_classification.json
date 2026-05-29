@@ -26316,6 +26316,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py"
     },
+    "yt_tier_a_source_action_top_premise_closure_note_2026-05-29": {
+      "assert_count": 1,
+      "counts": {
+        "A": 8,
+        "B": 1,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_yt_tier_a_source_action_top_premise_closure.py"
+    },
     "yt_top_coefficient_full_court_press_note_2026-05-25": {
       "assert_count": 1,
       "counts": {
@@ -52270,6 +52282,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_yt_tier_a_source_action_top_premise_closure.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_tier_a_source_action_top_premise_closure_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 8,
+        "B": 1,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_yt_top_coefficient_full_court_press.py": {
       "assert_count": 1,
       "claims": [
@@ -57998,14 +58025,14 @@
   "stats": {
     "decoration_candidates": 357,
     "dominant_class_distribution": {
-      "A": 267,
+      "A": 268,
       "B": 295,
       "C": 776,
       "D": 309,
       "none": 444
     },
-    "runners_classified": 2091,
-    "runners_with_C": 1019,
-    "runners_with_D": 620
+    "runners_classified": 2092,
+    "runners_with_C": 1020,
+    "runners_with_D": 621
   }
 }

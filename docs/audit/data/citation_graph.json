@@ -29105,6 +29105,38 @@
       "to": "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
     },
     {
+      "from": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "to": "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28"
+    },
+    {
+      "from": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "to": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21"
+    },
+    {
+      "from": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "to": "yt_source_covariance_normalization_support_note_2026-05-24"
+    },
+    {
+      "from": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "to": "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25"
+    },
+    {
+      "from": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "to": "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25"
+    },
+    {
+      "from": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "to": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+    },
+    {
       "from": "yt_top_coefficient_full_court_press_note_2026-05-25",
       "to": "yt_strict_symbolic_top_response_row_packet_note_2026-05-25"
     },
@@ -86367,6 +86399,27 @@
       "runner_path": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py",
       "title": "Y_T Strict W/Z Neutral-Carrier Response Packet"
     },
+    "yt_tier_a_source_action_top_premise_closure_note_2026-05-29": {
+      "claim_id": "yt_tier_a_source_action_top_premise_closure_note_2026-05-29",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
+        "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "yt_source_covariance_normalization_support_note_2026-05-24",
+        "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25",
+        "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25",
+        "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "37be828b0e790700d44a4454c46ce04b363c96157912dc9e0a570f6c0c2c2df4",
+      "path": "docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md",
+      "runner_path": "scripts/frontier_yt_tier_a_source_action_top_premise_closure.py",
+      "title": "Y_T Tier-A Source-Action Top-Premise Closure"
+    },
     "yt_top_coefficient_full_court_press_note_2026-05-25": {
       "claim_id": "yt_top_coefficient_full_court_press_note_2026-05-25",
       "claim_type_author_hint": "no_go",
@@ -87536,7 +87589,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 697,
+      "bounded_theorem": 698,
       "decoration": 1,
       "meta": 198,
       "no_go": 87,
@@ -87545,7 +87598,7 @@
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1097,
+      "bounded_theorem": 1098,
       "decoration": 1,
       "meta": 198,
       "no_go": 190,
@@ -87553,10 +87606,10 @@
       "open_gate": 133,
       "positive_theorem": 582
     },
-    "edge_count": 9971,
-    "leaf_count": 821,
-    "node_count": 2623,
+    "edge_count": 9979,
+    "leaf_count": 820,
+    "node_count": 2624,
     "root_count": 873,
-    "runners_with_path": 2198
+    "runners_with_path": 2199
   }
 }

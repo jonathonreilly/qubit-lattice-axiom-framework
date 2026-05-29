@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 243,
     "high": 313,
-    "leaf": 334,
+    "leaf": 333,
     "medium": 294
   },
   "cycle_break_target_count": 0,
@@ -26128,31 +26128,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "asymmetry_persistence_born_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35838,6 +35813,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 53,
-  "total_pending": 1184
+  "ready_count": 52,
+  "total_pending": 1183
 }

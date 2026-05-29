@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 163 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 596 |
+| **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1186 |
+| unaudited | 1187 |
 | meta | 233 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 920 |
+| `audited_clean` | 919 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1419 |
+| `unaudited` | 1420 |
 
 | claim_type | count |
 |---|---:|
@@ -618,7 +618,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8727,19 +8726,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The sweep result says the best smaller admissible row, topN 169, matches but does not improve on the broad topN 196 control, so no smaller family beats the broad frontier under the stated floors.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helpers instantiate the lattice propagation, source field, compression families, support/capture floors, score, and width-ratio comparison rather than merely printing constants. The runner output supports the note's bounded negative claim that smaller admissible rows do not beat the broad control, although ties are present among topN rows.
 - **rationale:** The cited upstream authorities are retained_bounded, and the restricted packet includes the primary runner source plus transitive helper sources needed to inspect the load-bearing compute path. The runner computes the h=0.25 lattice/source-response sweep from framework primitives and reports that topN 169 is the best smaller admissible row with the same displayed score/capture/width metrics as broad topN 196, not an improvement over it. This closes the bounded claim as stated: smaller source objects remain possible, but the sweep does not move the frontier past the broad control. A second auditor should note that the runner's printed SAFE READ branch appears logically mislabeled in code, but the numeric control/best-smaller comparison and the note's conclusion are still consistent.
-- **auditor confidence:** high
-
-### `lorentz_violation_derived_note`
-
-- **Note:** [`LORENTZ_VIOLATION_DERIVED_NOTE.md`](../../docs/LORENTZ_VIOLATION_DERIVED_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** From a Planck-spaced Z^3 cubic lattice with the standard second-order nearest-neighbor finite-difference Laplacian, the leading low-momentum dispersion correction is the CPT-even dimension-6 cubic-anisotropic term -(a^2/12) sum_i p_i^4, with the runner's Planck-scale estimates below the quoted bounds.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-judicial-third-lorentz-violation-derived-20260505`  (codex-gpt-5; independence=judicial_review)
-- **load-bearing step:** E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + O(a^4 p^6).  _(class `C`)_
-- **chain closes:** True — The Planck spacing and standard finite-difference kinetic operator are explicit hypotheses of the bounded scope, not hidden dependencies. Under those hypotheses, the Taylor expansion fixes the a^2/12 coefficient and the cubic p_i^4 anisotropy, and the cached runner uses the corrected (4/a^2) normalization and reproduces the quoted Planck-scale ratios.
-- **rationale:** The second audit is right to phrase the result as conditional on a Planck-spaced Z^3 lattice and the standard nearest-neighbor finite-difference operator, but those conditions are already inside the audited bounded theorem scope and do not by themselves force audited_conditional. The clean verdict applies only to the scoped dispersion correction and arithmetic comparisons to the quoted bounds; broader note language about full sector-specific SME maps, taste-breaking phenomenology, or all-current experimental status is not ratified here.
 - **auditor confidence:** high
 
 ### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`

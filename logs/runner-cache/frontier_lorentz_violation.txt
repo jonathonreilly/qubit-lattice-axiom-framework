@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_violation.py
-runner_sha256: 3553a9c6d621967a7e6dc03d37b85772c0919de0d7c7f89b5d48adc3f4facb53
+runner_sha256: 2d8d27338b8c0f50d2de42b35e9ce7cc0a56f48b0997a102158de5547073eba8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 1.87
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -49,22 +49,26 @@ Standard Model Extension (SME) Coefficient Analysis
 2. STANDARD MODEL EXTENSION (SME) COEFFICIENT MAPPING
 ==============================================================================
 
-  The Lorentz-violating correction decomposes into spherical harmonics:
+  The Lorentz-violating correction decomposes in NORMALIZED real spherical
+  harmonics Y_lm (scipy.special.sph_harm / sympy.Ynm convention):
 
-    sum_i p_i^4 = p^4 * [3/5 + (4/5) * K_4(theta, phi)]
+    sum_i p_i^4 = p^4 * [3/5 + (4*sqrt(pi)/15) * K_4(theta, phi)]
 
   where K_4 is the cubic harmonic of order 4:
-    K_4 = (1/sqrt(12)) [Y_{40} + sqrt(5/14) (Y_{44} + Y_{4,-4})]
+    K_4 = Y_{40} + sqrt(5/14) (Y_{44} + Y_{4,-4})
+
+  The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727 with normalized Y_lm,
+  NOT 4/5 (corrected 2026-05-29; verify_cubic_harmonic_identity() pins it).
 
   In the SME framework (Kostelecky & Mewes):
   - The correction is a dimension-6 operator (d=6, n=4 in p)
   - CPT-even (see Section 5 below)
   - The nonminimal SME coefficients are:
 
-    c^(6)_{(I)00}   = -(a^2/12)(3/5) / sqrt(4 pi)   [isotropic, j=0]
-    c^(6)_{(I)40}   = -(a^2/12)(4/5) * (...)         [anisotropic, j=4, m=0]
-    c^(6)_{(I)44}   = -(a^2/12)(4/5) * (...)         [anisotropic, j=4, m=4]
-    c^(6)_{(I)4,-4} = -(a^2/12)(4/5) * (...)         [anisotropic, j=4, m=-4]
+    c^(6)_{(I)00}   = -(a^2/12)(3/5) / sqrt(4 pi)        [isotropic, j=0]
+    c^(6)_{(I)40}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=0]
+    c^(6)_{(I)44}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=4]
+    c^(6)_{(I)4,-4} = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=-4]
 
   All other SME coefficients are zero (no j=1,2,3 from cubic symmetry).
 
@@ -72,12 +76,29 @@ Standard Model Extension (SME) Coefficient Analysis
     a in natural units:    8.2041e-20 GeV^-1
     c4 coefficient (a^2/12): 5.6090e-40 GeV^-2
     c^(6) isotropic (j=0): -3.3654e-40 GeV^-2
-    c^(6) aniso (j=4,m=0): -4.4872e-40 GeV^-2
+    c^(6) aniso (j=4,m=0): -2.6511e-40 GeV^-2
 
   Dimensionless SME coefficients (c^(6) * m^2):
     Electron: c^(6) * m_e^2 = 1.4646e-46
     Proton:   c^(6) * m_p^2 = 4.9350e-40
     Photon:   c^(6) (dim-less) = 5.6090e-40 GeV^-2
+
+==============================================================================
+2b. CUBIC-HARMONIC IDENTITY VERIFICATION (normalized Y_lm)
+==============================================================================
+
+  [PASS] Exact identity sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 (normalized Y_lm)
+         max|LHS-RHS| = 7.77e-16 over 200000 random directions (coef = 4*sqrt(pi)/15 = 0.472654)
+  [PASS] Old coefficient 4/5 is refuted under normalized Y_lm
+         max|LHS-RHS| = 2.77e-01 with the discarded 4/5 coefficient
+  [PASS] Isotropic average <sum_i n_i^4> = 3/5 (unchanged by the correction)
+         <f> = 0.599758 (expect 0.600000)
+  [PASS] Sympy: trigsimp(sum_i n_i^4 - [3/5 + (4*sqrt(pi)/15) K_4]) = 0 identically
+         symbolic residual = 0
+  [PASS] Sympy: <f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15 (exact spherical projection)
+         projected coefficient = 4*sqrt(pi)/15
+
+  CUBIC-HARMONIC IDENTITY VERIFICATION: PASS (5/5 checks)
 
 ==============================================================================
 3. COMPARISON WITH EXPERIMENTAL BOUNDS
@@ -294,7 +315,7 @@ HYPOTHESIS VERDICT
 
   3. SME coefficient values (a = l_Planck):
      - c^(6)_{(I)00} ~ -3.37e-40 GeV^-2 (isotropic)
-     - c^(6)_{(I)40} ~ -4.49e-40 GeV^-2 (anisotropic)
+     - c^(6)_{(I)40} ~ -2.65e-40 GeV^-2 (anisotropic)
      - All CPT-odd coefficients = 0 exactly
 
   4. Natural suppression:
@@ -321,10 +342,11 @@ HYPOTHESIS VERDICT
     tested if sensitivity improves by ~6 orders of magnitude in the
     photon birefringence sector.
 
-  Elapsed: 0.0 s
+  Elapsed: 1.7 s
 
 ==============================================================================
 EXPERIMENT COMPLETE
+  Cubic-harmonic identity check: PASS
 ==============================================================================
 
 ----- stderr -----

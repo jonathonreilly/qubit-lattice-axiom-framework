@@ -14799,7 +14799,7 @@
     "lorentz_boost_covariance_3plus1d_theorem_note": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 4,
         "D": 2
@@ -14823,7 +14823,7 @@
     "lorentz_violation_derived_note": {
       "assert_count": 0,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
         "D": 12
@@ -43397,7 +43397,7 @@
         "lorentz_boost_covariance_3plus1d_theorem_note"
       ],
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 4,
         "D": 2
@@ -43427,7 +43427,7 @@
         "lorentz_violation_derived_note"
       ],
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
         "D": 12

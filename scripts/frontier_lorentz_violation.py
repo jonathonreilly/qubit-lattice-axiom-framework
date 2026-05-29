@@ -30,12 +30,23 @@ maps onto specific SME framework coefficients.
 For a = l_Planck, the natural suppression is (E/E_Planck)^2 ~ 10^-38
 at E = 1 GeV, which is below ALL current experimental bounds.
 
+The angular decomposition sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 uses the
+standard NORMALIZED real spherical harmonics Y_lm (the
+scipy.special.sph_harm / sympy.Ynm convention); the l=4 cubic-harmonic
+coefficient is 4*sqrt(pi)/15, not 4/5 (corrected 2026-05-29). Section 2b
+(verify_cubic_harmonic_identity) checks this numerically and, when sympy
+is available, symbolically; the script exits non-zero if the check fails.
+scipy/sympy are used only for that optional cross-check and degrade
+gracefully (a closed-form numpy K_4 backs the numeric check if scipy is
+absent).
+
 PStack experiment: lorentz-violation-sme
 """
 
 from __future__ import annotations
 
 import math
+import sys
 import time
 
 import numpy as np
@@ -153,10 +164,14 @@ def compute_sme_coefficients(a_meters: float) -> dict:
 
     The cubic lattice correction -(a^2/12) sum_i p_i^4 has:
     - Mass dimension d = 6 (the p^4 term modifies a dimension-6 operator)
-    - It is a sum of p_i^4 terms, which decomposes in spherical harmonics as:
-      sum_i p_i^4 = (3/5)|p|^4 + (4/5)|p|^4 [Y_{40} + sqrt(5/14)(Y_{44}+Y_{4-4})]
+    - It is a sum of p_i^4 terms, which decomposes in NORMALIZED real
+      spherical harmonics Y_lm (scipy.special.sph_harm / sympy.Ynm
+      convention) as:
+      sum_i p_i^4 = (3/5)|p|^4 + (4*sqrt(pi)/15)|p|^4 [Y_{40} + sqrt(5/14)(Y_{44}+Y_{4-4})]
+      (the coefficient on the l=4 cubic harmonic is 4*sqrt(pi)/15 ~= 0.4727
+      with normalized Y_lm, NOT 4/5; see verify_cubic_harmonic_identity())
     - The isotropic part (j=0) gives: k^(6)_{00} ~ -(a^2/12)(3/5)
-    - The anisotropic part (j=4) gives: k^(6)_{40} ~ -(a^2/12)(4/5) etc.
+    - The anisotropic part (j=4) gives: k^(6)_{40} ~ -(a^2/12)(4*sqrt(pi)/15) etc.
 
     For comparison with experiment:
     - The coefficients have dimension [length]^2 = [energy]^{-2}
@@ -174,17 +189,19 @@ def compute_sme_coefficients(a_meters: float) -> dict:
     # The LV correction coefficient in natural units
     c4_coeff = a_nat**2 / 12.0  # dimension [1/GeV^2]
 
-    # Decompose sum_i p_i^4 into spherical harmonics
-    # sum_i p_i^4 = p^4 * [3/5 Y_00 * sqrt(4pi) + anisotropic terms]
-    # More precisely:
-    # x^4 + y^4 + z^4 = (3/5)r^4 + (4/5)r^4 * [cubic harmonics]
-    # The cubic harmonics K_4 = (1/sqrt(12))[Y_40 + sqrt(5/14)(Y_44 + Y_{4,-4})]
-    # are normalized so that the anisotropic part integrates to 4/5 of the total.
+    # Decompose sum_i p_i^4 into NORMALIZED real spherical harmonics Y_lm
+    # (the scipy.special.sph_harm / sympy.Ynm convention):
+    #   x^4 + y^4 + z^4 = (3/5)r^4 + (4*sqrt(pi)/15) r^4 * K_4,
+    #   K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_{4,-4})
+    # The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727 with normalized Y_lm,
+    # NOT 4/5 (an earlier revision wrote 4/5, which is only correct for an
+    # unnormalized angular convention; corrected 2026-05-29 to match the
+    # normalized K_4 and the verify_cubic_harmonic_identity() projection).
 
     # Isotropic part: modifies the effective mass or the p^4 coefficient
     # in the rotationally-invariant sector
     iso_fraction = 3.0 / 5.0
-    aniso_fraction = 4.0 / 5.0  # split among j=4 components
+    aniso_fraction = 4.0 * math.sqrt(math.pi) / 15.0  # coeff on normalized K_4
 
     # SME dimension-6 coefficients (c-type, CPT-even)
     # These modify the fermion dispersion as:
@@ -530,6 +547,160 @@ def direction_dependent_correction(p_gev: float, theta: float,
 
 
 # ============================================================
+# Section 6b: Cubic-harmonic identity verification (normalized Y_lm)
+# ============================================================
+
+def _real_cubic_harmonic_k4(theta: np.ndarray, phi: np.ndarray) -> np.ndarray:
+    """K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_{4,-4}) with NORMALIZED real Y_lm.
+
+    Uses scipy.special.sph_harm when available (with a version-robust
+    fallback for scipy >= 1.15, where the routine was renamed sph_harm_y).
+    If scipy is unavailable, falls back to the exact closed form
+
+        K_4 = (1/(16 sqrt(pi))) [ 3 (35 c^4 - 30 c^2 + 3) + 15 s^4 cos(4 phi) ]
+
+    (c = cos theta, s = sin theta), so the numeric identity check never
+    silently skips. Both routes use the same normalized Condon-Shortley
+    convention, in which Y_44 + Y_{4,-4} is real and proportional to
+    cos(4 phi).
+    """
+    try:
+        try:
+            from scipy.special import sph_harm  # scipy < 1.15
+        except ImportError:
+            from scipy.special import sph_harm_y as _shy  # scipy >= 1.15
+
+            def sph_harm(m, l, az, pol):
+                return _shy(l, m, pol, az)
+
+        y40 = sph_harm(0, 4, phi, theta)
+        y44 = sph_harm(4, 4, phi, theta)
+        y4m4 = sph_harm(-4, 4, phi, theta)
+        return np.real(y40 + math.sqrt(5.0 / 14.0) * (y44 + y4m4))
+    except Exception:
+        c = np.cos(theta)
+        s = np.sin(theta)
+        return (1.0 / (16.0 * math.sqrt(math.pi))) * (
+            3.0 * (35.0 * c ** 4 - 30.0 * c ** 2 + 3.0)
+            + 15.0 * s ** 4 * np.cos(4.0 * phi)
+        )
+
+
+def verify_cubic_harmonic_identity() -> bool:
+    """Verify the corrected cubic-harmonic decomposition identity.
+
+    With STANDARD NORMALIZED real spherical harmonics Y_lm (the
+    scipy.special.sph_harm / sympy.Ynm convention), the exact identity is
+
+        sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4,
+        K_4 = Y_40 + sqrt(5/14) (Y_44 + Y_{4,-4})
+
+    The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727, NOT 4/5; the old
+    4/5 value is only correct for an unnormalized angular convention and
+    is refuted here. Checks: (1) numeric pointwise identity over 2x10^5
+    random directions, (2) refutation of the discarded 4/5 coefficient,
+    (3) the 3/5 isotropic average, and (4) optionally (if sympy imports)
+    the symbolic trigsimp(f - rhs) = 0 plus the exact spherical projection
+    <f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15.
+
+    Returns True iff every check passes.
+    """
+    print(f"\n{'=' * 78}")
+    print("2b. CUBIC-HARMONIC IDENTITY VERIFICATION (normalized Y_lm)")
+    print(f"{'=' * 78}\n")
+
+    n_pass = 0
+    n_fail = 0
+
+    def _check(name: str, cond: bool, detail: str) -> None:
+        nonlocal n_pass, n_fail
+        tag = "PASS" if cond else "FAIL"
+        if cond:
+            n_pass += 1
+        else:
+            n_fail += 1
+        print(f"  [{tag}] {name}")
+        print(f"         {detail}")
+
+    coef_correct = 4.0 * math.sqrt(math.pi) / 15.0   # ~= 0.472654
+    coef_old = 4.0 / 5.0
+
+    rng = np.random.default_rng(2026)
+    n_dir = 200000
+    z = rng.uniform(-1.0, 1.0, n_dir)
+    phi = rng.uniform(0.0, 2.0 * np.pi, n_dir)
+    theta = np.arccos(z)
+    nx = np.sin(theta) * np.cos(phi)
+    ny = np.sin(theta) * np.sin(phi)
+    nz = np.cos(theta)
+    lhs = nx ** 4 + ny ** 4 + nz ** 4
+
+    k4 = _real_cubic_harmonic_k4(theta, phi)
+    err_correct = float(np.max(np.abs(lhs - (3.0 / 5.0 + coef_correct * k4))))
+    err_old = float(np.max(np.abs(lhs - (3.0 / 5.0 + coef_old * k4))))
+    iso_avg = float(np.mean(lhs))
+
+    _check(
+        "Exact identity sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 (normalized Y_lm)",
+        err_correct < 1e-12,
+        f"max|LHS-RHS| = {err_correct:.2e} over {n_dir} random directions "
+        f"(coef = 4*sqrt(pi)/15 = {coef_correct:.6f})",
+    )
+    _check(
+        "Old coefficient 4/5 is refuted under normalized Y_lm",
+        err_old > 1e-3,
+        f"max|LHS-RHS| = {err_old:.2e} with the discarded 4/5 coefficient",
+    )
+    _check(
+        "Isotropic average <sum_i n_i^4> = 3/5 (unchanged by the correction)",
+        abs(iso_avg - 3.0 / 5.0) < 1e-3,
+        f"<f> = {iso_avg:.6f} (expect 0.600000)",
+    )
+
+    # Optional exact symbolic confirmation (only if sympy is importable).
+    try:
+        import sympy as sp
+
+        th, ph = sp.symbols("theta phi", real=True)
+        nx_s = sp.sin(th) * sp.cos(ph)
+        ny_s = sp.sin(th) * sp.sin(ph)
+        nz_s = sp.cos(th)
+        f_s = nx_s ** 4 + ny_s ** 4 + nz_s ** 4
+        y40_s = sp.Ynm(4, 0, th, ph).expand(func=True)
+        y44_s = sp.Ynm(4, 4, th, ph).expand(func=True)
+        y4m4_s = sp.Ynm(4, -4, th, ph).expand(func=True)
+        k4_s = y40_s + sp.sqrt(sp.Rational(5, 14)) * (y44_s + y4m4_s)
+        rhs_s = sp.Rational(3, 5) + (4 * sp.sqrt(sp.pi) / 15) * k4_s
+        residual = sp.trigsimp(sp.simplify((f_s - rhs_s).rewrite(sp.cos)))
+        _check(
+            "Sympy: trigsimp(sum_i n_i^4 - [3/5 + (4*sqrt(pi)/15) K_4]) = 0 identically",
+            residual == 0,
+            f"symbolic residual = {residual}",
+        )
+
+        def _inner(a, b):
+            integrand = a * sp.conjugate(b) * sp.sin(th)
+            return sp.integrate(
+                sp.integrate(integrand, (ph, 0, 2 * sp.pi)), (th, 0, sp.pi)
+            )
+
+        coef_sym = sp.simplify(_inner(f_s, k4_s) / _inner(k4_s, k4_s))
+        _check(
+            "Sympy: <f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15 (exact spherical projection)",
+            sp.simplify(coef_sym - 4 * sp.sqrt(sp.pi) / 15) == 0,
+            f"projected coefficient = {coef_sym}",
+        )
+    except ImportError:
+        print("  [skip] sympy not available -- symbolic identity check skipped")
+        print("         (numeric pointwise check above already pins coef = 4*sqrt(pi)/15)")
+
+    verdict = "PASS" if n_fail == 0 else "FAIL"
+    print(f"\n  CUBIC-HARMONIC IDENTITY VERIFICATION: {verdict} "
+          f"({n_pass}/{n_pass + n_fail} checks)")
+    return n_fail == 0
+
+
+# ============================================================
 # Main experiment
 # ============================================================
 
@@ -604,22 +775,26 @@ def run_experiment():
     print(f"{'=' * 78}")
 
     print("""
-  The Lorentz-violating correction decomposes into spherical harmonics:
+  The Lorentz-violating correction decomposes in NORMALIZED real spherical
+  harmonics Y_lm (scipy.special.sph_harm / sympy.Ynm convention):
 
-    sum_i p_i^4 = p^4 * [3/5 + (4/5) * K_4(theta, phi)]
+    sum_i p_i^4 = p^4 * [3/5 + (4*sqrt(pi)/15) * K_4(theta, phi)]
 
   where K_4 is the cubic harmonic of order 4:
-    K_4 = (1/sqrt(12)) [Y_{40} + sqrt(5/14) (Y_{44} + Y_{4,-4})]
+    K_4 = Y_{40} + sqrt(5/14) (Y_{44} + Y_{4,-4})
+
+  The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727 with normalized Y_lm,
+  NOT 4/5 (corrected 2026-05-29; verify_cubic_harmonic_identity() pins it).
 
   In the SME framework (Kostelecky & Mewes):
   - The correction is a dimension-6 operator (d=6, n=4 in p)
   - CPT-even (see Section 5 below)
   - The nonminimal SME coefficients are:
 
-    c^(6)_{(I)00}   = -(a^2/12)(3/5) / sqrt(4 pi)   [isotropic, j=0]
-    c^(6)_{(I)40}   = -(a^2/12)(4/5) * (...)         [anisotropic, j=4, m=0]
-    c^(6)_{(I)44}   = -(a^2/12)(4/5) * (...)         [anisotropic, j=4, m=4]
-    c^(6)_{(I)4,-4} = -(a^2/12)(4/5) * (...)         [anisotropic, j=4, m=-4]
+    c^(6)_{(I)00}   = -(a^2/12)(3/5) / sqrt(4 pi)        [isotropic, j=0]
+    c^(6)_{(I)40}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=0]
+    c^(6)_{(I)44}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=4]
+    c^(6)_{(I)4,-4} = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=-4]
 
   All other SME coefficients are zero (no j=1,2,3 from cubic symmetry).
 """)
@@ -637,6 +812,11 @@ def run_experiment():
     print(f"    Electron: c^(6) * m_e^2 = {sme['electron_c6']:.4e}")
     print(f"    Proton:   c^(6) * m_p^2 = {sme['proton_c6']:.4e}")
     print(f"    Photon:   c^(6) (dim-less) = {sme['photon_c6']:.4e} GeV^-2")
+
+    # ── Section 2b: Cubic-harmonic identity verification ──────────
+    # Pin the angular decomposition coefficient (normalized Y_lm): the
+    # l=4 cubic-harmonic coefficient is 4*sqrt(pi)/15, not 4/5.
+    identity_ok = verify_cubic_harmonic_identity()
 
     # ── Section 3: Experimental bounds comparison ─────────────────
     print(f"\n{'=' * 78}")
@@ -982,8 +1162,13 @@ def run_experiment():
     print(f"  Elapsed: {elapsed:.1f} s")
     print(f"\n{'=' * 78}")
     print("EXPERIMENT COMPLETE")
+    print(f"  Cubic-harmonic identity check: "
+          f"{'PASS' if identity_ok else 'FAIL'}")
     print(f"{'=' * 78}")
+
+    return identity_ok
 
 
 if __name__ == "__main__":
-    run_experiment()
+    ok = run_experiment()
+    sys.exit(0 if ok else 1)

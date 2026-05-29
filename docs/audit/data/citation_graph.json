@@ -65185,7 +65185,7 @@
         "light_cone_framing_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3679de6b6ede3d873c1e8464ea049d3b29aa46ba5423b1ca1fcdf00a91343122",
+      "note_hash": "d83932ff43c07dda4e1c4c19982d4b2c2aad3c9e98c674dd697ccf50b55b550d",
       "path": "docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_lorentz_boost_3plus1d.py",
       "title": "3+1D SO(3,1) Boost Covariance of the Path-Sum 2-Point Function"
@@ -65213,7 +65213,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "4b2dd1041bec6f0aa53eac99ef2ff99bd5dd6c28dd0bd6ccba4102fdda81ed33",
+      "note_hash": "a98aaa669b56ab7ac359a48319da526b98f54aec4b62652195700b46b2543ce6",
       "path": "docs/LORENTZ_VIOLATION_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_lorentz_violation.py",
       "title": "Lorentz Violation Derived from Cubic Lattice Structure"

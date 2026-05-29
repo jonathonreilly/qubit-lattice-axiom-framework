@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 562 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1198 |
+| unaudited | 1197 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 870 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1428 |
+| `unaudited` | 1427 |
 
 | claim_type | count |
 |---|---:|
@@ -1032,6 +1032,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -6892,6 +6893,25 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Given D_taste^2=d I with d=4 and mean-field U_ab -> u_0 delta_ab, W''(0)/N_tot = 1/(4u_0^2) and R_lattice = 4/(u_0^2 N_taste)=1/(4u_0^2) at N_taste=16.  _(class `A`)_
 - **chain closes:** False — The displayed algebra and runner checks close exactly: W''(0)/N_tot equals 1/(4u_0^2), matching R_lattice. The retained one-hop rows cover the scoped SU(3) and g_bare surfaces, but the Clifford/staggered identity D_taste^2=d I and mean-field factorization U_ab -> u_0 delta_ab are load-bearing admitted premises, not retained one-hop theorem rows or registered Tier-A admissions in this packet.
 - **rationale:** Issue: the exact algebra depends on two load-bearing imports, D_taste^2=d I and U_ab -> u_0 delta_ab, that are stated as admitted standard inputs rather than retained one-hop authorities. Why this blocks: without retained or explicitly approved admission status for those premises, the audit can verify only the downstream algebra, not the full claimed lattice-side theorem from retained inputs. Repair target: add retained one-hop theorem/dependency coverage or an explicitly approved admission for the Clifford/staggered identity and the mean-field scaling premise, then re-audit the same algebraic ratio. Claim boundary until fixed: the runner-supported equality R_lattice=1/(4u_0^2) is an exact conditional algebraic consequence of the stated premises and does not support any physical Higgs mass or Standard Model matching claim.
+- **auditor confidence:** high
+
+### `higgs_mass_from_axiom_note`
+
+- **Note:** [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Tree-level mean-field derivation of the per-channel symmetric-point V_taste curvature scale m_curv_tree = v/(2 u0) = 140.3 GeV on the canonical surface, with N_c cancellation and no Higgs-pole promotion.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `fresh-higgs-curvature-auditor-2026-05-29`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Equations [4]-[6]: |d2V/dm2| per channel = (4/u0^2)/N_taste = 1/(4u0^2), so m_curv_tree/v = 1/(2u0) and m_curv_tree = v/(2u0).  _(class `A`)_
+- **chain closes:** False — The internal arithmetic closes over assumed inputs: d2V_taste/dm2 at m=0 is -N_taste/(4u0^2), division by N_taste=16 gives 1/(4u0^2), m_curv_tree = v/(2u0), and N_c cancels after factoring color. The restricted one-hop packet does not close the load-bearing inputs u0/0.5934, v, N_taste=16, the V_taste determinant/eigenvalue setup, or the mean-field surface.
+- **rationale:** Issue: the formula m_curv_tree = v/(2 u0) is reproduced correctly, but the one-hop packet does not close the canonical inputs it depends on. Why this blocks: the runner hard-codes U_0=0.8776, V_GEV=246.22, and N_TASTE=16, while the plaquette dependency explicitly withholds a same-surface or infinite-volume certificate for 0.5934 and the packet lacks retained one-hop closure for v, determinant/eigenvalue degeneracy, the effective taste-channel boundary, and the mean-field surface. Repair target: add retained or explicitly admitted one-hop authorities for the canonical u0/0.5934 value, v, N_taste=16, the V_taste determinant/eigenvalue construction, and the mean-field surface. Claim boundary until fixed: the internal tree-level algebra and N_c cancellation hold over those stated canonical inputs, and the row does not audit or promote a Higgs-pole prediction.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `HIERARCHY_THEOREM.md`
+  - `TASTE_POLYNOMIAL_NOTE.md`
+  - `DM_AMGM_SATURATION_NOTE.md`
+  - `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`
 - **auditor confidence:** high
 
 ### `higgs_mechanism_note`

@@ -133268,24 +133268,54 @@
       "verdict_rationale": null
     },
     "higgs_mass_from_axiom_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T03:41:46.726162+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_from_lattice_note": "The lattice Coleman-Weinberg runner provides bounded quantitative Higgs-sector support and consistency behavior, while exact m_H closure is outside this note's authority.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+        },
+        "dep_claim_type": {
+          "higgs_from_lattice_note": "bounded_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "no_go"
+        },
+        "dep_effective_status": {
+          "higgs_from_lattice_note": "retained_bounded",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_no_go"
+        },
+        "deps": [
+          "higgs_from_lattice_note",
+          "plaquette_self_consistency_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 24.954,
+        "runner_hash": "6409b2c35163b6ecb0e9f365437f761635933ba1baf88a7183839a657da4fe07",
+        "transitive_descendants": 495
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-higgs-curvature-auditor-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The internal arithmetic closes over assumed inputs: d2V_taste/dm2 at m=0 is -N_taste/(4u0^2), division by N_taste=16 gives 1/(4u0^2), m_curv_tree = v/(2u0), and N_c cancels after factoring color. The restricted one-hop packet does not close the load-bearing inputs u0/0.5934, v, N_taste=16, the V_taste determinant/eigenvalue setup, or the mean-field surface.",
       "claim_id": "higgs_mass_from_axiom_note",
-      "claim_scope": null,
+      "claim_scope": "Tree-level mean-field derivation of the per-channel symmetric-point V_taste curvature scale m_curv_tree = v/(2 u0) = 140.3 GeV on the canonical surface, with N_c cancellation and no Higgs-pole promotion.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T03:41:46.726162+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -133296,20 +133326,26 @@
         "plaquette_self_consistency_note"
       ],
       "direct_in_degree": 32,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 24.954,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Equations [4]-[6]: |d2V/dm2| per channel = (4/u0^2)/N_taste = 1/(4u0^2), so m_curv_tree/v = 1/(2u0) and m_curv_tree = v/(2u0).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "89aa06db5d3fec46bec32e0ddec9cb517e10043c85327f187215c99d72acd6fb",
       "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add retained or explicitly admitted one-hop authorities for the canonical u0/0.5934 value, v, N_taste=16, the V_taste determinant/eigenvalue construction, and the mean-field surface; otherwise keep the row conditional on those inputs.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+        "docs/HIERARCHY_THEOREM.md",
+        "docs/TASTE_POLYNOMIAL_NOTE.md",
+        "docs/DM_AMGM_SATURATION_NOTE.md",
+        "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-01T15:35:35.620575+00:00",
@@ -133485,18 +133521,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 4,
+        "B": 25,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 29
       },
       "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
       "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking",
       "transitive_descendants": 495,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the formula m_curv_tree = v/(2 u0) is reproduced correctly, but the one-hop packet does not close the canonical inputs it depends on. Why this blocks: the runner hard-codes U_0=0.8776, V_GEV=246.22, and N_TASTE=16, while the plaquette dependency explicitly withholds a same-surface or infinite-volume certificate for 0.5934 and the packet lacks retained one-hop closure for v, determinant/eigenvalue degeneracy, the effective taste-channel boundary, and the mean-field surface. Repair target: add retained or explicitly admitted one-hop authorities for the canonical u0/0.5934 value, v, N_taste=16, the V_taste determinant/eigenvalue construction, and the mean-field surface. Claim boundary until fixed: the internal tree-level algebra and N_c cancellation hold over those stated canonical inputs, and the row does not audit or promote a Higgs-pole prediction."
     },
     "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02": {
       "audit_date": null,

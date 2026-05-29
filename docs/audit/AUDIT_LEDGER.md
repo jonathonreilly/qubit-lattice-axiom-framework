@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 152 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 560 |
+| **retained_bounded** | 561 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
 | unaudited | 1200 |
-| audit_in_progress | 1 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 22 |
@@ -58,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 868 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 869 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `omega_lambda_derivation_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `s3_general_r_derivation_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -766,6 +764,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `s3_cap_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `s3_general_r_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `s3_taste_cube_decomposition_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `s3_time_constructed_support_tensor_primitive_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11370,6 +11369,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the explicit cubical-ball family constructed by the runner at R=2,3,4,5, the checker constructs the boundary triangulation and cone complex and verifies the listed finite incidence, link, boundary, and Euler facts.  _(class `A`)_
 - **chain closes:** True — Fresh-context independent check confirmed this is finite combinatorics over the declared runner family: edge-degree two and vertex-link cycle checks make the boundary a closed triangulated 2-manifold in the checked cases; coning gives apex link equal to the base triangulation, paired non-base cone faces, and chi_cap=1. The source excludes global uniqueness and PL S^3 conclusions.
 - **rationale:** The second audit agrees that the narrowed bounded certificate closes only for the explicit finite construction. The runner directly constructs the cubical balls, boundary triangulations, and cone complexes for R=2,3,4,5, while the source explicitly removes global PL cap uniqueness, physical closure, Schoenflies/Alexander/Perelman/Moise imports, and PL S^3 identification.
+- **auditor confidence:** high
+
+### `s3_general_r_derivation_note`
+
+- **Note:** [`S3_GENERAL_R_DERIVATION_NOTE.md`](../../docs/S3_GENERAL_R_DERIVATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-radius cubical-ball boundary-link disk certificate for R=2..10 plus finite cone-cap construction certificate for R=2..5; no all-R cap closure, global uniqueness, physical closure, or PL S^3 identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex_fresh_s3_general_r_second_delta`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For the explicit cubical-ball family at the finite radii checked by the runners, the boundary-link disk facts for R=2..10 and cone-cap construction facts for R=2..5 are established by direct finite computation.  _(class `A`)_
+- **chain closes:** True — The bounded chain closes from the retained_bounded one-hop dependencies and completed cached runner outputs. The source does not use the open all-R bridge, all-R cap closure, global uniqueness, physical closure, or PL S^3 identification to establish the audited finite-radius claim.
+- **rationale:** Within the bounded scope, the cited one-hop dependencies provide exactly the finite certificates the source claims: boundary-link disk verification for R=2..10 plus the finite local Proposition Z certificate, and cone-cap construction for R=2..5. I independently checked the cone combinatorics: for a closed boundary triangulation with V,E,F, the cone has chi=(V+1)-(E+V)+(F+E)-F=1, base triangles are the only degree-one faces, side faces are paired according to boundary edge degree two, and the apex link is the base triangulation; the runner counts for R=2..5 are consistent with these identities. The no-go/wall discipline gate does not expose a clean-blocking overclaim because the old all-R closure, global uniqueness, physical closure, PL S^3 identification, and large-coordinate bridge gap are explicitly excluded or marked open, not used as premises.
 - **auditor confidence:** high
 
 ### `s3_mass_matrix_no_go_note`

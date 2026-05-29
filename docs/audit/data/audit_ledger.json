@@ -240175,11 +240175,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 12.98,
+      "load_bearing_score": 15.98,
       "load_bearing_step": null,
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "b2b7abcbea872ba162821364de48eb8728ffa7d3fc150f09fccd0662872c89ea",
       "note_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
       "notes_for_re_audit_if_any": null,
@@ -240479,11 +240479,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 19.984,
+      "load_bearing_score": 22.984,
       "load_bearing_step": "For the explicit cubical-ball family constructed by the runner at R=2,3,4,5, the checker constructs the boundary triangulation and cone complex and verifies the listed finite incidence, link, boundary, and Euler facts.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "008c88c582022ab346a35846731bc2ac5f48bcb46ead6e1e35e2e5be7af88765",
       "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
       "notes_for_re_audit_if_any": "",
@@ -240727,24 +240727,50 @@
       "verdict_rationale": "The second audit agrees that the narrowed bounded certificate closes only for the explicit finite construction. The runner directly constructs the cubical balls, boundary triangulations, and cone complexes for R=2,3,4,5, while the source explicitly removes global PL cap uniqueness, physical closure, Schoenflies/Alexander/Perelman/Moise imports, and PL S^3 identification."
     },
     "s3_general_r_derivation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T03:21:32.323272+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only; no arbitrary PL cap, S^3, homogeneity, or physical-closure claim is audited here.",
+          "s3_boundary_link_theorem_note": "Bounded R=2..10 verification that every actual boundary vertex link of B_R is a PL 2-disk, plus the finite Proposition Z octahedral K_simp(P) subset certificate; unrestricted all-R cubical-ball closure is out of scope.",
+          "s3_cap_uniqueness_note": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited."
+        },
+        "dep_claim_type": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "bounded_theorem",
+          "s3_boundary_link_theorem_note": "bounded_theorem",
+          "s3_cap_uniqueness_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "retained_bounded",
+          "s3_boundary_link_theorem_note": "retained_bounded",
+          "s3_cap_uniqueness_note": "retained_bounded"
+        },
+        "deps": [
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17",
+          "s3_boundary_link_theorem_note",
+          "s3_cap_uniqueness_note"
+        ],
+        "load_bearing_score": 18.472,
+        "runner_hash": "a7d5e017199ff21ece96fe07aa0089c8904fbfa3551b6a70cf93ade785baa606",
+        "transitive_descendants": 709
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex_fresh_s3_general_r_second_delta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded chain closes from the retained_bounded one-hop dependencies and completed cached runner outputs. The source does not use the open all-R bridge, all-R cap closure, global uniqueness, physical closure, or PL S^3 identification to establish the audited finite-radius claim.",
       "claim_id": "s3_general_r_derivation_note",
-      "claim_scope": "Finite-radius certificate for the explicit cubical-ball boundary family: boundary-vertex link disk verification for R=2..10 plus the finite Q3 subset certificate, and cone-cap construction for R=2..5. Unrestricted all-R PL cap closure, global uniqueness, physical closure, and PL S^3 identification are excluded.",
+      "claim_scope": "Finite-radius cubical-ball boundary-link disk certificate for R=2..10 plus finite cone-cap construction certificate for R=2..5; no all-R cap closure, global uniqueness, physical closure, or PL S^3 identification.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-29T03:15:58.185149+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-29T03:21:32.323272+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -240759,8 +240785,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-29T03:21:32.322946+00:00",
+          "auditor": "codex_fresh_s3_general_r_second_delta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-radius cubical-ball boundary-link disk certificate for R=2..10 plus finite cone-cap construction certificate for R=2..5; no all-R cap closure, global uniqueness, physical closure, or PL S^3 identification.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -240769,19 +240806,19 @@
         "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 18,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 18.472,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For the explicit cubical-ball family at the finite radii checked by the runners, the boundary-link disk facts for R=2..10 and cone-cap construction facts for R=2..5 are established by direct finite computation.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b1e03e3e7d25905204628934e9cc2f0f6f8fee99031f7e4cbecae2334eec8184",
       "note_path": "docs/S3_GENERAL_R_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if later edits expand the scope beyond Part A R=2..10 or Part B R=2..5, especially toward the large-coordinate bridge lemma, unrestricted all-R cap closure, global cap uniqueness, physical closure, or PL S^3 identification.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -240967,18 +241004,38 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 173,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "dependency_runner": {
+          "A": 121,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "bounded": 2,
+          "exact": 119,
+          "fail": 0,
+          "path": "scripts/frontier_s3_boundary_link_theorem.py",
+          "total_pass": 121
+        },
+        "primary_runner": {
+          "A": 52,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "fail": 0,
+          "path": "scripts/frontier_s3_cap_uniqueness.py",
+          "total_pass": 52
+        },
+        "total_pass": 173
       },
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
       "title": "S^3 General-R \u2014 Finite-Radius Cap Certificate",
       "transitive_descendants": 709,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the bounded scope, the cited one-hop dependencies provide exactly the finite certificates the source claims: boundary-link disk verification for R=2..10 plus the finite local Proposition Z certificate, and cone-cap construction for R=2..5. I independently checked the cone combinatorics: for a closed boundary triangulation with V,E,F, the cone has chi=(V+1)-(E+V)+(F+E)-F=1, base triangles are the only degree-one faces, side faces are paired according to boundary edge degree two, and the apex link is the base triangulation; the runner counts for R=2..5 are consistent with these identities. The no-go/wall discipline gate does not expose a clean-blocking overclaim because the old all-R closure, global uniqueness, physical closure, PL S^3 identification, and large-coordinate bridge gap are explicitly excluded or marked open, not used as premises."
     },
     "s3_mass_matrix_no_go_note": {
       "audit_date": "2026-05-02T15:48:15.381673+00:00",

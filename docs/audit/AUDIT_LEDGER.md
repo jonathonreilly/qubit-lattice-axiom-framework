@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 162 |
+| **retained** | 163 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 594 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1133 |
+| unaudited | 1132 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 918 |
+| `audited_clean` | 919 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1363 |
+| `unaudited` | 1362 |
 
 | claim_type | count |
 |---|---:|
@@ -1032,6 +1032,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15998,6 +15999,19 @@ Claim boundary until fixed: within the named real-positive canonical leading-bet
   - `staggered_3D_cubic_source_mass_scaling_and_attraction_artifact_not_registered`
   - `Wilson_3D_cubic_source_mass_scaling_and_attraction_artifact_not_registered`
   - `2D_random_geometric_control_row_artifact_not_registered`
+- **auditor confidence:** high
+
+### `yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone engineering-dimension identity for the canonical Yang-Mills action: [g_YM] = (4 - d) / 2 and [g_YM] = 0 iff d = 4, excluding Wick/P2 closure, physical-dimension forcing, RG, beta-function, asymptotic-freedom, and full renormalizability claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The canonical kinetic term fixes [A_mu] = (d - 2) / 2, and dimensional consistency of i g_YM [A_mu, A_nu] with partial_mu A_nu gives [g_YM] + 2[A_mu] = d/2, hence [g_YM] = (4 - d) / 2.  _(class `A`)_
+- **chain closes:** True — The kinetic-term dimension balance gives 2 + 2[A] = d, so [A] = (d - 2) / 2. Substitution into either the non-abelian field-strength term or the cubic action term gives [g_YM] = (4 - d) / 2, whose zero is uniquely d = 4.
+- **rationale:** The restricted packet proves an exact engineering-dimension identity, not a physical spacetime-selection theorem. The independent manual check matches the runner: 2 + 2[A] = d fixes [A], and both [g_YM] + 2[A] = d/2 and -d + [g_YM] + 1 + 3[A] = 0 yield [g_YM] = (4 - d) / 2. The runner does not hard-code a fitted observable; it verifies the same algebra and uniqueness over integer dimensions with exact rational arithmetic. Residual risk appears only if the claim is broadened to renormalizability, beta functions, asymptotic freedom, physical d forcing, Wick/P2 closure, or a gauge-coupling value/running claim.
 - **auditor confidence:** high
 
 ### `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`

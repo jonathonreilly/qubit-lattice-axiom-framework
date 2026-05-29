@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 161 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 588 |
+| **retained_bounded** | 589 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1141 |
+| unaudited | 1140 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 911 |
+| `audited_clean` | 912 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1371 |
+| `unaudited` | 1370 |
 
 | claim_type | count |
 |---|---:|
@@ -792,6 +792,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_delay_proxy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -12005,6 +12006,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting T^a_Rbar := -(T^a_R)^* into Tr_R[T^a_R {T^b_R, T^c_R}] gives one overall minus sign for the cubic trace, hence A(Rbar) = -A(R); with A(3)=1 this gives A(3bar)=-1 and two copies give -2.  _(class `A`)_
 - **chain closes:** True — Both one-hop dependencies are retained-grade: cl3_color_automorphism_theorem supplies the Gell-Mann SU(3) carrier and su3_dabc_symmetric_theorem_note_2026-05-02 supplies the d^{abc} decomposition. The proof is finite-dimensional trace algebra, and the exact-symbolic runner reports PASS=26 FAIL=0 for the carrier, d/f tables, conjugate representation, anomaly-index sign flip, A(3bar)=-1, two-fermion -2 contribution, and consistency probes.
 - **rationale:** The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation.
+- **auditor confidence:** high
+
+### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`
+
+- **Note:** [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](../../docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-carrier/linear-algebra extension: on the stated staggered-only temporal-gauge surface with m>0, fixed-background anti-Hermitian spatial hopping gives positive two-step transfer eigenvalues and hence per-config fermion positivity; together with the retained determinant-weight and retained-bounded gauge-half norm-square deps, this supplies the named U-integrated RP factorization. Separately, det(M_KS+mI), spec(H_hat), and Z=Tr(e^{-beta H_hat}) are invariant under hw=1 triplet relabeling; the residual-tightening reading is only that constructions depending solely on these invariants are insensitive to a pure species-label relabeling. The verdict does not close substeps (1)+(2), does not close or remove AC_phi_lambda, does not derive scalar additivity, and does not prove continuum/OS reconstruction or a from-scratch full interacting SU(3) RP theorem beyond the named factorization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Anti-Hermitian fixed-background spatial hopping diagonalizes into modes i*lambda whose two-step transfer eigenvalues are exp(+/-2 asinh(sqrt(m^2+lambda^2))), and determinant/spectrum/trace quantities are invariant under hw=1 triplet relabeling by permutation-unitary conjugation.  _(class `A`)_
+- **chain closes:** True — The fixed-background positivity follows from anti-Hermitian h[U], unitary diagonalization, and the explicit positive 2x2 transfer eigenvalues. Relabeling invariance follows from determinant, spectrum, and trace invariance under unitary similarity, while the integrated RP reduction uses only retained-grade named deps for the remaining nonnegative factors.
+- **rationale:** The load-bearing transfer argument is class-A finite linear algebra, and the labeling result is ordinary unitary-conjugation invariance of det/spec/trace. The cached runner reports SCORECARD PASS=7, FAIL=0 under SHA 77ec52a654dbeb674b684dc4396710cd8eb217c71bcef2213387af579060e725, covering the modal formula, free-case bridge, SU(3)/U(1) finite exhibits, and all three invariance checks. No-go discipline is satisfied because the audit does not ratify a universal no-go or close AC_phi_lambda; it ratifies only the positive invariance theorem and a bounded residual-routing statement for RP/P2 quantities already scoped to det/spec/Z. The two load-bearing deps are retained-grade or retained-bounded, so the clean verdict remains bounded rather than unbounded retained science.
 - **auditor confidence:** high
 
 ### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`

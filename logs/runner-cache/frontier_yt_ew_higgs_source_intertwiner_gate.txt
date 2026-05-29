@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_ew_higgs_source_intertwiner_gate.py
+runner_sha256: d2245416087e828a1908e5f9e8b108a17c140c2ef354ea66fe2afed695ddfebf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+==============================================================================
+Y_T EW/HIGGS SOURCE-INTERTWINER GATE
+==============================================================================
+
+Part 1: anchors and current authority
+[PASS] docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Candidate Intertwiner
+[PASS] note contains required section: Why This Still Does Not Close
+[PASS] note contains required section: Required Positive Theorem
+[PASS] note contains required section: Non-Claims
+[PASS] source-action support packet is retained_bounded
+[PASS] EW Higgs gauge-mass theorem is retained
+[PASS] one-Higgs Yukawa gauge-selection row is not retained
+[PASS] hypercharge uniqueness row is not retained
+
+Part 2: neutral radial Higgs carrier algebra
+[PASS] radial Higgs carrier is a complex doublet
+[PASS] neutral generator Q=T3+Y annihilates H(h)
+[PASS] T1 acts nontrivially on the radial carrier: Matrix([[sqrt(2)*(a*h + v)/4], [0]])
+[PASS] T2 acts nontrivially on the radial carrier: Matrix([[-sqrt(2)*I*(a*h + v)/4], [0]])
+[PASS] source derivative is radial and shares one slope a: Matrix([[0], [sqrt(2)*a/2]])
+
+Part 3: top/W response ratio from common radial source
+[PASS] dM_W/dh has common source slope: a*g_2/2
+[PASS] dM_t/dh has common source slope: sqrt(2)*a*y_t/2
+[PASS] top/W response ratio cancels source slope: sqrt(2)*y_t/g_2
+[PASS] y_t recovered from ratio and g_2: y_t
+
+Part 4: one-Higgs top carrier support is present but unaudited
+[PASS] one-Higgs note selects Q_L tilde H u_R
+[PASS] one-Higgs note states no numerical Yukawa eigenvalue claim
+[PASS] one-Higgs note leaves generation matrices free
+
+Part 5: current closure blockers
+[PASS] neutral carrier-ray bridge is present
+[PASS] strict W/Z denominator response is present
+[PASS] symbolic top response row is present
+[PASS] full same-surface top/W transfer response remains unproved
+[PASS] coefficient-certified top/W rows remain absent
+[PASS] one-Higgs carrier is not retained authority yet
+[PASS] hypercharge uniqueness is not retained authority yet
+
+Part 6: firewalls
+[PASS] firewall phrase present: observed mass targets
+[PASS] firewall phrase present: `H_unit`
+[PASS] firewall phrase present: Ward identity reuse
+[PASS] firewall phrase present: plaquette/u0
+[PASS] firewall phrase present: `alpha_LM`
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: This note derives `y_t`
+[PASS] forbidden overclaim absent: This note derives `g_2`
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+
+wrote outputs/yt_ew_higgs_source_intertwiner_gate_2026-05-25.json
+SUMMARY: PASS=43 FAIL=0
+
+----- stderr -----
+

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 600 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1171 |
+| unaudited | 1170 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 931 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1407 |
+| `unaudited` | 1406 |
 
 | claim_type | count |
 |---|---:|
@@ -1094,6 +1094,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -15709,6 +15710,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** epsilon = sigma_z = P_+ - P_- = I - 2 P_- gives exp(h epsilon)=exp(h) exp(-2h P_-), while Q=T_3+Y annihilates H_0=(0,v/sqrt(2))^T and charges the upper ray.  _(class `A`)_
 - **chain closes:** True — The cited qubit algebra supplies the Pauli/projector surface, the retained source-action packet supplies the signed-record source, the retained EW theorem supplies H_0, Y_H=1/2 and Q=T_3+Y, and the prior ratio gate supplies coordinate-scale cancellation.
 - **rationale:** The independent check gives P_-=diag(0,1), P_+=diag(1,0), sigma_z=I-2P_-, and exp(h sigma_z)=exp(h)exp(-2hP_-), so normalized signed-record sources are P_- occupation sources with j=-2h. With T_3=diag(1/2,-1/2), Y=I/2, Q=diag(1,0), the retained EW vacuum H_0=(0,v/sqrt(2))^T lies uniquely in ker Q and is fixed by P_-. The radial tangent remains in that ray, and the only remaining Jacobian cancels by the already audited source-coordinate ratio gate. This does not derive the physical Y_T transfer surface, top coefficient, top Yukawa carrier, hypercharge/top authority, g_2(v), m_t, v=246 GeV, or Y_T closure.
+- **auditor confidence:** high
+
+### `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional C^6 support result separating the S_6-democratic signed-linear source tangent 1/sqrt(6) from the projective weight 1/6; no derived physical top Yukawa coefficient.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-yt_qubit_signed_linear_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the S_6-democratic source constraint, the invariant normalized vector in C^6 is u_dem = (1,1,1,1,1,1)/sqrt(6), so a signed-linear source/action tangent has component 1/sqrt(6) while the projective component probability is 1/6.  _(class `A`)_
+- **chain closes:** False — The finite vector algebra closes, but the chain from qubits on Z^3 to a physical y_33 value does not. The missing step is the bridge theorem identifying the top Yukawa coefficient with the signed-linear democratic Q_L source tangent.
+- **rationale:** The runner genuinely checks the elementary C^6 algebra: S_6 invariance forces equal components, normalization gives 1/sqrt(6), and the projector probability is 1/6. Those checks are algebraic closure over an explicitly imposed democratic-source and signed-linear readout setup, not a first-principles derivation from the qubit-on-Z3 baseline alone. The note itself admits that the physical bridge to y_33 remains unproved, so retained status cannot propagate to Y_T closure.
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

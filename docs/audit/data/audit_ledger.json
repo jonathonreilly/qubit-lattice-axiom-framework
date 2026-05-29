@@ -270982,24 +270982,50 @@
       "verdict_rationale": "The load-bearing tensor sign law is an exact finite-group/index identity, independently re-derived from the Levi-Civita determinant formula and rank-two transformation rule. The runner's random Wilson/F samples are only sanity checks, but the source proof states the analytic reason, and the all-48 epsilon enumeration supports the finite-group part. The no-go/admission-wall gate passes because the note does not assert strong-CP closure, full action-class O_h-invariance, topological-charge discretization covariance, continuum theta bridging, or exclusion of CP-odd slots outside the stated determinant-odd epsilon F F form."
     },
     "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T21:56:14.518977+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "9b09f3f1caf95ad21236b4008f656f5198cc3261526b9d149e68bb23ccda7060",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-strong_cp_operator_basis",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes once the real-positive Wilson measure selector and scalar-mass-only boundary are admitted. The restricted packet does not derive or provide retained one-hop authority for those action-surface selectors from the Cl(3)/Z^3 baseline; R3 supplies only an abstract norm-square lemma.",
       "claim_id": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
-      "claim_scope": null,
+      "claim_scope": "Bounded support for theta_eff = 0 only on the explicit canonical Wilson single-plaquette real-positive surface plus retained staggered determinant positivity and a scalar-mass-only action-class boundary.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T21:56:14.518977+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -271009,20 +271035,23 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "A nonzero i theta Q_lat single-plaquette term is excluded because it makes the Boltzmann weight complex on the real-positive Wilson surface, and intersecting determinant positivity with the scalar-mass action class leaves only the real scalar mass line.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4595e5276b49683d1e24ff79600f99076bda4eff96c4267637b69227a2bd10c6",
       "note_path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained one-hop derivations or accepted bounded-premise records for the real-positive Wilson measure selector and scalar-mass-only action-class boundary, then re-audit the composition.",
+      "open_dependency_paths": [
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-24T08:14:16.920439+00:00",
@@ -271311,18 +271340,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
       "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The theta-slot rejection and mass-line selection are valid algebraic consequences of the stated bounded premises, and the runner performs substantive bounded checks rather than merely printing constants. However, the source note explicitly load-bears the real-positive Wilson action surface and the scalar-mass action-class boundary, and those are not closed by the cited retained authorities in this packet. The result is therefore conditional support on the named retained surface, not a clean derivation of that surface or of the parent strong-CP closure."
     },
     "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": {
       "audit_date": "2026-05-29T01:16:35.448809+00:00",

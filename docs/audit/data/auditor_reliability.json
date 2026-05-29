@@ -25,7 +25,7 @@
     "codex-gpt-5": {
       "audits_with_runner_class": {
         "A": 54,
-        "B": 28,
+        "B": 27,
         "C": 152,
         "D": 7,
         "F": 2
@@ -38,7 +38,7 @@
       "criticality_counts": {
         "critical": 10,
         "high": 24,
-        "leaf": 174,
+        "leaf": 173,
         "medium": 35
       },
       "cross_confirmation_agreement_rate": 0.738,
@@ -57,20 +57,19 @@
       "third_pass_decisions_n": 14,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 243,
+      "total_audits": 242,
       "verdict_changed_after_re_audit": 471,
       "verdict_counts": {
         "audited_clean": 202,
-        "audited_conditional": 1,
         "audited_failed": 40
       }
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 416,
-        "B": 52,
-        "C": 330,
-        "D": 11,
+        "A": 413,
+        "B": 44,
+        "C": 328,
+        "D": 10,
         "E": 14,
         "F": 7,
         "G": 17
@@ -83,7 +82,7 @@
       "criticality_counts": {
         "critical": 113,
         "high": 145,
-        "leaf": 344,
+        "leaf": 330,
         "medium": 245
       },
       "cross_confirmation_agreement_rate": 0.776,
@@ -103,11 +102,11 @@
       "third_pass_decisions_n": 100,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 847,
-      "verdict_changed_after_re_audit": 655,
+      "total_audits": 833,
+      "verdict_changed_after_re_audit": 654,
       "verdict_counts": {
         "audited_clean": 718,
-        "audited_conditional": 35,
+        "audited_conditional": 21,
         "audited_decoration": 48,
         "audited_failed": 7,
         "audited_numerical_match": 17,
@@ -137,7 +136,7 @@
   "totals": {
     "auditor_families_observed": 3,
     "overall_agreement_rate": 0.788,
-    "total_audits_recorded": 1093,
+    "total_audits_recorded": 1078,
     "total_cross_confirmation_family_participations": 342,
     "total_cross_confirmation_pairs": 293,
     "total_third_pass_decisions": 114

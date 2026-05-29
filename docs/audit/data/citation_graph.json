@@ -42592,7 +42592,7 @@
       "helper_runner_paths": [
         "scripts/mirror_born_audit.py"
       ],
-      "note_hash": "1212d9044c23a30482423df07b16c22d88e1ef9bd6ec15565f2ad3068ee36bb7",
+      "note_hash": "c1be18b8802a28021412b117e8dd083afafcf66fba00e81c2e43b9e5a03ba48b",
       "path": "docs/AUDITED_SYMMETRY_SYNTHESIS_NOTE.md",
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Audited Symmetry Synthesis Note"
@@ -43330,7 +43330,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "9a78a221a4f2a7e106bd7f47fd2f465d1759e9b1e1649ce462309fd3ba886309",
+      "note_hash": "a6d3dd3777359aab4f93be980b2a0a49e433fed7d8bd615e11dfeb9c25f38b72",
       "path": "docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md",
       "runner_path": "scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py",
       "title": "BBN eta_10 -> Omega_b h^2 Coefficient Admission Bridge"
@@ -43395,7 +43395,7 @@
         "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ca4582a927596369d6117125d42ae0cfed030ee4838a6a1710d087214a2a425f",
+      "note_hash": "4931a8532196d1e1a0a358fac55120e66428b5b77030e9888e130601c514edaf",
       "path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
       "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
       "title": "\u03b2\u00b7g_bare\u00b2 = 2 N_c Conditional Wilson-Matching Arithmetic Lemma"
@@ -47465,9 +47465,9 @@
     },
     "cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29": {
       "claim_id": "cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29",
         "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25",
@@ -47476,10 +47476,10 @@
         "alpha_s_derived_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "861b223cd74e063a7b66b2f7a256d1a71984a292fdcdd4ad4e077770184b3f22",
+      "note_hash": "29df89711e69d3efc9f0f19023a6fc5e30591411137b44b740aab82fd14960b0",
       "path": "docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_PROMOTED_VIA_V8_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/frontier_cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8.py",
-      "title": "Cross-Sector A\u00b2-Q_l-|V_cb| Bridge Support via V8 Composition (V1)"
+      "title": "Cross-Sector A\u00b2-Q_l-|V_cb| Bridge Support from Conditional Koide Input"
     },
     "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25": {
       "claim_id": "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25",
@@ -48247,16 +48247,16 @@
     },
     "distance_law_frontier_audit_note": {
       "claim_id": "distance_law_frontier_audit_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "gate_b_grown_distance_law_note",
         "gate_b_h025_distance_law_note",
         "wide_lattice_h2t_distance_law_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "27fb890424b8c4509a2bcde8f7defee9fda79489f69ed91841ee5ceb409439b5",
+      "note_hash": "1b5138c46acf4e8bb6102b7f3f160a9f14266377e2befc9fe4852f9be47a463f",
       "path": "docs/DISTANCE_LAW_FRONTIER_AUDIT_NOTE.md",
       "runner_path": null,
       "title": "Distance Law Frontier Audit"
@@ -48591,7 +48591,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "7b1b4897add385984b182d0e8b4f38f93ffe191851a3a898646da0a176d8c879",
+      "note_hash": "a0343f24c3f7f2c155748e64b542952d2393d1b7682271e4371f6db7fc4239d6",
       "path": "docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md",
       "runner_path": "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py",
       "title": "DM `eta` Bounded Prediction From Supplied `N_sites \u00b7 v` Premise Narrow Theorem"
@@ -53853,9 +53853,9 @@
     },
     "early_family_transfer_connectivity_diagnosis": {
       "claim_id": "early_family_transfer_connectivity_diagnosis",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "gate_b_nonlabel_sign_grown_transfer_note",
         "claude_complex_action_grown_companion_note",
@@ -53865,7 +53865,7 @@
         "generated_geometry_synthesis_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bde48e8eb24f1a766a7014a280ee0f9fc20f401f71114019d9ebd51775e5beaa",
+      "note_hash": "93aea692ecc226aa0a26ece4f6c6ca69af60911d551850100b9f538f1ec56694",
       "path": "docs/EARLY_FAMILY_TRANSFER_CONNECTIVITY_DIAGNOSIS.md",
       "runner_path": null,
       "title": "Early Family Transfer Connectivity Diagnosis"
@@ -59921,14 +59921,14 @@
     },
     "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "claim_id": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d0973ea1d92b7e9d83a63ae281d661da39e7afc3d39032c5e90ac9e5ae5198cb",
+      "note_hash": "73f24885070cd2cb2242c4f1a8679200448f8f98798bf1ebe411d8febccf3812",
       "path": "docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py",
       "title": "4D Instanton Minimal Action `8\u03c0\u00b2/g\u00b2` \u2014 External Narrow Theorem"
@@ -60071,7 +60071,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "aa7e9d1cdf4d4686b0605d67c2e489c6c3ff7c266ac28056ef975abd8d4a5bd7",
+      "note_hash": "38cf0b410b218f721efad2ff17a889c66ebe2675876593b2e185a949b34c59a4",
       "path": "docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md",
       "runner_path": "scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py",
       "title": "Kroschinsky-Marchetti-Salmhofer Fermionic Brydges Majorant \u2014 External Narrow Theorem"
@@ -64317,15 +64317,15 @@
     },
     "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17": {
       "claim_id": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem (narrow sub-theorem)",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms_2026-05-03",
         "axiom_first_lattice_noether_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5689a146be5a79e590b53d09af0288750bb1162d5006d1bd2fdd13b9863cae99",
+      "note_hash": "955807287ad47195d459cb22bf824448b49dfc33b79e37d090c87f7f1da9bb8f",
       "path": "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
       "title": "Carrier-Independent Bilateral Lattice-Noether Identity \u2014 Narrow Theorem (Block 27)"
@@ -76869,15 +76869,15 @@
     },
     "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28": {
       "claim_id": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "open_gate",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "d917f63dcee8ee2cdc74d5bba2029c5a7a5774927b1c1be556b85430e1ffb3b2",
+      "note_hash": "f3921af35d5ab8021720ad4f9cdbb1b6f7965d4b446996ce631031c6a0235005",
       "path": "docs/SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md",
       "runner_path": "scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py",
-      "title": "Lane 4F (\u03a3m_\u03bd) \u2014 F3 Stuck Fan-Out Synthesis"
+      "title": "Neutrino Sum-Mass Route-Status Fan-Out Synthesis"
     },
     "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09": {
       "claim_id": "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
@@ -78254,7 +78254,7 @@
       "helper_runner_paths": [
         "scripts/generative_causal_dag_interference.py"
       ],
-      "note_hash": "825a3de15d376ca03162a5a689666627d0e3ed6bd87d621879cc179b7cf16c04",
+      "note_hash": "9c581edcabc7443d5705a71cb541e259d5d05e1bbdaaf56d73a19374de1d077a",
       "path": "docs/SPECTRAL_SYMMETRY_NOTE.md",
       "runner_path": "scripts/ceiling_formal_proof.py",
       "title": "Spectral Symmetry Note \u2014 CLT-Style Decoherence Evidence on Random Causal DAGs"
@@ -79818,7 +79818,7 @@
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad2b3930627157ddd7938799834dc293e86c90a8dc9d425c2b8f497bcce42b15",
+      "note_hash": "797d27b4ef4f7028a45c3cd662df0df05f3821aa344fd950860f223d734c38b1",
       "path": "docs/SU3_WIGNER_L3_CUBE_HAAR_MC_NEGATIVE_RESULT_2026-05-04.md",
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
       "title": "SU(3) L_s=3 PBC Cube Haar Monte Carlo: Honest Negative Result"
@@ -81448,12 +81448,12 @@
     },
     "unified_basin_signed_source_control_support_note_2026-04-30": {
       "claim_id": "unified_basin_signed_source_control_support_note_2026-04-30",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "bd125917a2d4c34956a5cf6b4d59cd89481562fe571b12b035e9455d542d0b56",
+      "note_hash": "e3e406f80d536a2f0ccd9dc7787bf2534252eb9b714612e58d8d7c1d94163879",
       "path": "docs/UNIFIED_BASIN_SIGNED_SOURCE_CONTROL_SUPPORT_NOTE_2026-04-30.md",
       "runner_path": null,
       "title": "Unified Basin Signed-Source Control Support Note"
@@ -84412,9 +84412,9 @@
     },
     "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17": {
       "claim_id": "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem (numerical narrow well-definedness)",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "plaquette_self_consistency_note",
         "yt_ward_identity_derivation_theorem"
@@ -84422,7 +84422,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "6fd096b4ec7f77bb84f65d21860a07318fc858724e1cde779c7ddec06df3f390",
+      "note_hash": "4afc63f993b8134be22a096d0e5d234b327c650c7992683410ebfc65482e0815",
       "path": "docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_yt_boundary_bc_transfer_uniqueness.py",
       "title": "yt Boundary BC-Transfer Uniqueness Narrow Theorem (Backward-RGE Monotonicity)"
@@ -87279,22 +87279,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 687,
+      "bounded_theorem": 690,
       "decoration": 1,
-      "meta": 192,
-      "no_go": 85,
-      "none": 1417,
+      "meta": 195,
+      "no_go": 86,
+      "none": 1413,
       "open_gate": 58,
-      "positive_theorem": 174
+      "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1089,
+      "bounded_theorem": 1092,
       "decoration": 1,
-      "meta": 192,
-      "no_go": 188,
+      "meta": 195,
+      "no_go": 189,
       "none": 424,
-      "open_gate": 134,
-      "positive_theorem": 586
+      "open_gate": 133,
+      "positive_theorem": 580
     },
     "edge_count": 9943,
     "leaf_count": 826,

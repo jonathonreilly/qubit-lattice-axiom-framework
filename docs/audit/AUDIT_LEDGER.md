@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 161 |
+| **retained** | 162 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 589 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1140 |
+| unaudited | 1139 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 912 |
+| `audited_clean` | 913 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1370 |
+| `unaudited` | 1369 |
 
 | claim_type | count |
 |---|---:|
@@ -831,6 +831,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -12703,6 +12704,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given g_bosonic=28, g_fermionic=90, and fermion weight 7/8, compute g_* = 28 + (7/8)*90 = 427/4 = 106.75.  _(class `A`)_
 - **chain closes:** True — Fresh-context arithmetic check confirms bosons 16+6+2+4=28, fermions 72+12+6=90, (7/8)*90=315/4, and 28=112/4, so the exact total is 427/4=106.75.
 - **rationale:** The bounded finite arithmetic certificate closes over the declared inventory and retained 7/8 weight. Residual risk is outside this verdict: the SM particle inventory, thermal-equilibrium assumptions, cosmology, downstream leptogenesis use, and framework derivation of particle content are not audited here.
+- **auditor confidence:** high
+
+### `so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`SO4_UNIQUE_SU2_SU2_SPLIT_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/SO4_UNIQUE_SU2_SU2_SPLIT_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone finite-dimensional real Lie-algebra theorem: among real rotation algebras so(d) for d >= 2, exactly d = 4 decomposes as a direct sum of two simple non-abelian ideals, so(4) ~= su(2) + su(2); no framework substrate, Wick, gauge, Yang-Mills, or dimension-forcing claim is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Combining the small-d degeneracies, the Cartan-classification simplicity of so(d) for d >= 3 and d != 4, and the explicit Hodge self-dual/anti-self-dual split of so(4), exactly d = 4 has so(d) ~= g_1 + g_2 with both g_i simple non-abelian ideals.  _(class `A`)_
+- **chain closes:** True — The explicit so(4) split closes by direct Hodge-projection and bracket checks, while uniqueness for the remaining d is exactly the standard compact real Lie-algebra classification plus the d=0,1,2 degeneracies. The note does not use any internal framework, Wick-rotation, gauge-group, or physical-carrier identification.
+- **rationale:** The load-bearing mathematical statement is a standard classification theorem with the exceptional so(4) decomposition exhibited explicitly. Independent checks confirmed the dimension formula, the Hodge +/- eigenspace dimensions, bracket closure within each 3-dimensional summand, mutual commutativity, and that simplicity outside d=4 is the cited Cartan-classification input rather than a hidden framework premise. The audited scope is only this pure Lie-algebra identity; the note's exclusions prevent promotion to any Wick-rotation, time-direction, gauge-identification, or Yang-Mills consequence.
 - **auditor confidence:** high
 
 ### `source_driven_field_recovery_h025_pocket_note`

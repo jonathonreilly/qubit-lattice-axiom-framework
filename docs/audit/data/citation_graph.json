@@ -28241,6 +28241,42 @@
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
     },
     {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23"
+    },
+    {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "yt_source_action_support_packet_note_2026-05-22"
+    },
+    {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+    },
+    {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "yt_color_projection_correction_note"
+    },
+    {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "yt_ew_color_projection_theorem"
+    },
+    {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
+    },
+    {
+      "from": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "to": "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
+    },
+    {
       "from": "yt_constructive_uv_bridge_note",
       "to": "yt_interacting_bridge_locality_note"
     },
@@ -85443,6 +85479,28 @@
       "path": "docs/YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md",
       "runner_path": "scripts/frontier_yt_connected_source_augmentation_ideal_selector.py",
       "title": "Y_T Connected-Source Augmentation-Ideal Selector Narrow Theorem"
+    },
+    "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29": {
+      "claim_id": "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "`no_go`",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26",
+        "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+        "yt_source_action_support_packet_note_2026-05-22",
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+        "yt_color_projection_correction_note",
+        "yt_ew_color_projection_theorem",
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
+        "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "107c03443137d8d2a9c5f327e4895d42096512951e7a0cffe67ef6fc3ead574b",
+      "path": "docs/YT_CONNECTED_SOURCE_SELECTOR_SCALAR_LIFT_NO_GO_NOTE_2026-05-29.md",
+      "runner_path": "scripts/frontier_yt_connected_source_selector_scalar_lift_no_go.py",
+      "title": "Y_T Connected-Source Selector Scalar-Lift No-Go"
     },
     "yt_constructive_uv_bridge_note": {
       "claim_id": "yt_constructive_uv_bridge_note",

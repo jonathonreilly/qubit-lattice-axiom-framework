@@ -25536,6 +25536,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_yt_connected_source_augmentation_ideal_selector.py"
     },
+    "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_yt_connected_source_selector_scalar_lift_no_go.py"
+    },
     "yt_constructive_uv_bridge_note": {
       "assert_count": 0,
       "counts": {
@@ -51485,6 +51497,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_yt_connected_source_selector_scalar_lift_no_go.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_yt_constructive_uv_bridge.py": {
       "assert_count": 0,
       "claims": [
@@ -58293,7 +58320,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 358,
     "dominant_class_distribution": {
       "A": 268,
       "B": 296,

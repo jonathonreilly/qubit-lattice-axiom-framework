@@ -38,7 +38,9 @@ CONDITIONAL PREDICTION:
   substructure.
 
 PStack experiment: frontier-emergent-lorentz-invariance
-Self-contained: numpy + scipy.special only.
+Self-contained: numpy + scipy.special. (sympy is used only as an OPTIONAL
+extra symbolic confirmation of the exact cubic-harmonic coefficient in
+Part 3; it degrades gracefully to the numeric check if sympy is absent.)
 """
 
 from __future__ import annotations
@@ -247,8 +249,13 @@ def test_cubic_harmonic():
     print("\n=== Part 3: Cubic harmonic angular structure ===\n")
 
     # The LV operator is Σ_i n_i⁴ where n̂ = p̂ (unit direction)
-    # Decomposition: Σ n_i⁴ = 3/5 + (4/5) K₄(θ,φ)
-    # where K₄ = c₀ Y₄₀ + c₄(Y₄₄ + Y₄,₋₄) with c₀, c₄ from O_h rep theory
+    # Decomposition in NORMALIZED real spherical harmonics Y_lm (the
+    # scipy.special.sph_harm convention used throughout this runner):
+    #     Σ n_i⁴ = 3/5 + (4√π/15) K₄(θ,φ),  K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄)
+    # The coefficient on K₄ is 4√π/15 ≈ 0.4727 with normalized Y_lm, NOT 4/5
+    # (an earlier revision wrote 4/5, which is only correct under an
+    # unnormalized angular convention; corrected 2026-05-29 to match the
+    # normalized K₄ and the sph_harm projections below).
 
     # Verify at specific directions
     def sum_n4(theta, phi):
@@ -280,7 +287,7 @@ def test_cubic_harmonic():
           abs(1.0 / (1.0 / 3) - 3.0) < 1e-12,
           "unique observable if experimental sensitivity reaches (E/M_Pl)²")
 
-    # Verify decomposition: Σ n_i⁴ = 3/5 + (4/5) K₄
+    # Verify decomposition: Σ n_i⁴ = 3/5 + (4√π/15) K₄ (normalized Y_lm)
     # Isotropic part: average of Σ n_i⁴ over the sphere = 3/5
     # (because <n_i⁴> = 1/5 for each direction, and there are 3)
     n_samples = 10000
@@ -328,6 +335,74 @@ def test_cubic_harmonic():
     check("No ℓ=6 content in Σn_i⁴ anisotropic part",
           abs(proj_60) < 0.05,
           f"|⟨f₄|Y₆₀⟩| = {abs(proj_60):.4f}")
+
+    # -------------------------------------------------------------------
+    # Exact cubic-harmonic identity with NORMALIZED Y_lm (2026-05-29 fix).
+    # Verify Σn_i⁴ = 3/5 + (4√π/15) K₄ pointwise to machine precision over
+    # many random directions, with K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄) built
+    # from the same normalized sph_harm used above. Also confirm the OLD
+    # coefficient 4/5 fails, so the runner pins the correct normalization.
+    # -------------------------------------------------------------------
+    rng2 = np.random.default_rng(2026)
+    Nv = 50000
+    zv = rng2.uniform(-1, 1, Nv)
+    phiv = rng2.uniform(0, 2 * np.pi, Nv)
+    thetav = np.arccos(zv)
+    nxv = np.sin(thetav) * np.cos(phiv)
+    nyv = np.sin(thetav) * np.sin(phiv)
+    nzv = np.cos(thetav)
+    lhs_v = nxv ** 4 + nyv ** 4 + nzv ** 4
+
+    Y40v = sph_harm(0, 4, phiv, thetav)
+    Y44v = sph_harm(4, 4, phiv, thetav)
+    Y4m4v = sph_harm(-4, 4, phiv, thetav)
+    K4v = np.real(Y40v + np.sqrt(5.0 / 14.0) * (Y44v + Y4m4v))
+
+    coef_correct = 4.0 * np.sqrt(np.pi) / 15.0   # ≈ 0.472654
+    coef_old = 4.0 / 5.0
+    err_correct = float(np.max(np.abs(lhs_v - (3.0 / 5.0 + coef_correct * K4v))))
+    err_old = float(np.max(np.abs(lhs_v - (3.0 / 5.0 + coef_old * K4v))))
+
+    check("Exact identity Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm)",
+          err_correct < 1e-12,
+          f"max|LHS-RHS| = {err_correct:.2e} over {Nv} random directions "
+          f"(coef = 4√π/15 ≈ {coef_correct:.6f})")
+    check("Old coefficient 4/5 is refuted under normalized Y_lm",
+          err_old > 1e-3,
+          f"max|LHS-RHS| = {err_old:.2e} with the discarded 4/5 coefficient")
+
+    # Symbolic confirmation (optional: only if sympy is importable). Confirms
+    # trigsimp(Σn_i⁴ − [3/5 + (4√π/15)K₄]) = 0 and that the coefficient is the
+    # exact projection ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15, not a numeric coincidence.
+    try:
+        import sympy as sp
+        th, ph = sp.symbols('theta phi', real=True)
+        nx_s = sp.sin(th) * sp.cos(ph)
+        ny_s = sp.sin(th) * sp.sin(ph)
+        nz_s = sp.cos(th)
+        f_s = nx_s ** 4 + ny_s ** 4 + nz_s ** 4
+        Y40_s = sp.Ynm(4, 0, th, ph).expand(func=True)
+        Y44_s = sp.Ynm(4, 4, th, ph).expand(func=True)
+        Y4m4_s = sp.Ynm(4, -4, th, ph).expand(func=True)
+        K4_s = Y40_s + sp.sqrt(sp.Rational(5, 14)) * (Y44_s + Y4m4_s)
+        rhs_s = sp.Rational(3, 5) + (4 * sp.sqrt(sp.pi) / 15) * K4_s
+        residual = sp.trigsimp(sp.simplify((f_s - rhs_s).rewrite(sp.cos)))
+        check("Sympy: trigsimp(Σn_i⁴ − [3/5 + (4√π/15)K₄]) = 0 identically",
+              residual == 0,
+              f"symbolic residual = {residual}")
+
+        # Coefficient as exact spherical projection ⟨f|K₄⟩/⟨K₄|K₄⟩.
+        def _inner(A, B):
+            integ = A * sp.conjugate(B) * sp.sin(th)
+            return sp.integrate(sp.integrate(integ, (ph, 0, 2 * sp.pi)),
+                                (th, 0, sp.pi))
+        coef_sym = sp.simplify(_inner(f_s, K4_s) / _inner(K4_s, K4_s))
+        check("Sympy: ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15 (exact projection)",
+              sp.simplify(coef_sym - 4 * sp.sqrt(sp.pi) / 15) == 0,
+              f"projected coefficient = {coef_sym}")
+    except ImportError:
+        info("Sympy not available — symbolic identity check skipped",
+             "numeric pointwise check above already pins coef = 4√π/15")
 
     return True
 
@@ -793,7 +868,7 @@ def test_combined():
 
     check("Angular structure: unique cubic harmonic K₄ at ℓ=4",
           True,
-          "Σn_i⁴ = 3/5 + (4/5)K₄; factor-of-3 anisotropy axis vs diagonal")
+          "Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm); factor-of-3 anisotropy axis vs diagonal")
 
     check("Conditional Planck-pin arithmetic gives |δE/E| < 10⁻¹⁹ at highest observable energies",
           True,

@@ -7611,7 +7611,7 @@
     "emergent_lorentz_invariance_note": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 4,
         "C": 7,
         "D": 3
@@ -38420,7 +38420,7 @@
         "emergent_lorentz_invariance_note"
       ],
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 4,
         "C": 7,
         "D": 3

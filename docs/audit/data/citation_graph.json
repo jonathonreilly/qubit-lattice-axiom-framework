@@ -54018,7 +54018,7 @@
         "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "27daebf0c02301c18d4126218a1d27ee424e8ba2a57939d8e06441668c6db131",
+      "note_hash": "29a3b32fb0a98ceffa08f704654474b64f1cce57a894df3b6e47e1599454d5ad",
       "path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
       "runner_path": "scripts/frontier_emergent_lorentz_invariance.py",
       "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)"

@@ -147,22 +147,59 @@ the Planck-pin premise is supplied.
 
 ### Step 4: Cubic harmonic angular signature
 
-The LV operator Σ_i n_i⁴ (where n̂ = p̂) decomposes as:
+The LV operator Σ_i n_i⁴ (where n̂ = p̂) decomposes, in the basis of the
+**standard normalized real spherical harmonics** Y_lm (orthonormal over
+the unit sphere, Condon–Shortley convention, the same convention as
+`scipy.special.sph_harm` used by the runner), as:
 
-    Σ_i n_i⁴ = 3/5 + (4/5) K₄(θ, φ)
+    Σ_i n_i⁴ = 3/5 + (4√π/15) K₄(θ, φ)
 
 where K₄ is the unique cubic harmonic at ℓ = 4:
 
     K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄)
 
+**Convention note (normalization correction, 2026-05-29).** With
+*normalized* Y_lm the coefficient on K₄ is `4√π/15 ≈ 0.4727`, NOT `4/5`.
+An earlier revision of this note wrote `4/5`; that value is only correct
+for an unnormalized angular convention and is inconsistent with the
+normalized K₄ above and with the runner's `sph_harm` projection. The
+identity is fixed here to the normalized convention so that note and
+runner agree. The isotropic part `3/5`, the factor-of-3 anisotropy, and
+the ℓ = 0/2/6-free structure are unchanged by this correction; only the
+numerical weight on the ℓ = 4 anisotropy operator is corrected.
+
+**Sympy derivation of the coefficient.** For n = (sinθcosφ, sinθsinφ,
+cosθ), expand f(θ,φ) = Σ_i n_i⁴ in normalized Y_lm. The only nonzero
+projections are ℓ = 0 and ℓ = 4:
+
+- ⟨f | Y₀₀⟩ = 6√π/5, so the isotropic part is ⟨f|Y₀₀⟩ Y₀₀ = 3/5
+  (since Y₀₀ = 1/(2√π)).
+- ⟨K₄ | K₄⟩ = 1 + 5/14 + 5/14 = 12/7 (the three normalized harmonics
+  in K₄ are orthonormal, with coefficients 1, √(5/14), √(5/14)).
+- ⟨f | K₄⟩ / ⟨K₄ | K₄⟩ = 4√π/15.
+
+Reconstructing f = (3/5) + (4√π/15) K₄ and simplifying gives `trigsimp(f
+− rhs) = 0` identically (exact symbolic zero). A numeric cross-check over
+5×10⁴ random directions gives `max|LHS − RHS| = 7.8×10⁻¹⁶` for the
+corrected coefficient versus `2.8×10⁻¹` for the old `4/5` — confirming
+`4√π/15` and refuting `4/5` under the normalized convention. Part 3 of
+the runner reproduces both the symbolic and numeric checks (the same
+identity also closes at `2×10⁵` directions in offline verification).
+
 Properties:
 - Factor-of-3 anisotropy: Σn_i⁴ = 1 along [100], 1/3 along [111]
-- No ℓ = 0, 2, or 6 contamination (verified by spherical harmonic projection)
+  (pure geometry; independent of the K₄ coefficient)
+- Only the isotropic ℓ = 0 term and the cubic ℓ = 4 term appear; no
+  ℓ = 2 or ℓ = 6 contamination is detected (verified by spherical
+  harmonic projection)
 - Unique to cubic lattice substructure
 
 This angular pattern is the framework's smoking-gun prediction: if
 Lorentz violation is ever detected at the (E/M_Planck)² level, the
-angular dependence uniquely identifies cubic lattice substructure.
+angular dependence uniquely identifies cubic lattice substructure. The
+normalization correction changes the *magnitude* assigned to the ℓ = 4
+anisotropy operator but not its existence, its uniqueness, or the
+factor-of-3 axis/diagonal ratio.
 
 ### Step 5: Isotropy at low momentum (verified)
 
@@ -259,10 +296,15 @@ produce relativistic physics?" The answer is:
 ```
 python3 scripts/frontier_emergent_lorentz_invariance.py
 # Exit code: 0
-# PASS=55  FAIL=0
+# PASS=57  FAIL=0
 # (Added Part 6b: CPT support on runner's H; Part 6c: parity support on
 #  staggered dispersion; Part 6d: Planck-pin bridge citation. The
 #  original PASS=37 surface is preserved unchanged.)
+# (2026-05-29: Part 3 now verifies the exact cubic-harmonic identity
+#  Σn_i⁴ = 3/5 + (4√π/15)K₄ with normalized Y_lm — pointwise to
+#  max|LHS-RHS| = 7.8e-16 over 5×10⁴ random directions, the old 4/5
+#  coefficient refuted at 2.8e-1, plus a sympy trigsimp = 0 and the
+#  exact projection ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15.)
 ```
 
 ## Audit boundary (2026-04-28)

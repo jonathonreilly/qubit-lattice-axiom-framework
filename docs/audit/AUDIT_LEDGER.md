@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1136 |
+| unaudited | 1137 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 72 |
-| ~~audited_failed~~ | 4 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,10 +62,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 921 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
-| `audited_failed` | 48 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1366 |
+| `unaudited` | 1367 |
 
 | claim_type | count |
 |---|---:|
@@ -1185,7 +1185,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | B | - |
-| `emergent_lorentz_invariance_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_fm_transfer_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -4659,19 +4658,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On seed 42, the primary runner's matter-coupled growth rule produces a grown graph with higher effective dimension and much higher peak shell-bin density than the uniform-growth control.  _(class `C`)_
 - **chain closes:** True — The included runner source actually constructs both graphs, evolves the matter field for the coupled case, applies the |psi|^2-biased parent selection, and computes the reported shell-volume and density metrics. The cached output supports the narrowed qualitative claim on this seed.
 - **rationale:** The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim.
-- **auditor confidence:** high
-
-### `emergent_lorentz_invariance_note`
-
-- **Note:** [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](../../docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Free even-periodic cubic Cl(3)/Z^3 staggered structural-dispersion surface: sin^2 dispersion expansion, no odd-power term in the checked parity-even dispersion, retained-bounded finite-lattice CPT/Theta_H proxy support, formal parity dim-5 support, and cubic-harmonic l=4 angular statement; excluding Planck-pin numerical estimates and canonical SME coefficient identification.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-gpt-5.5-restricted-input-emergent-lorentz-20260529`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The structural core asserts that the free staggered dispersion expands as E^2 = a^-2 sum_i sin^2(p_i a) = p^2 - (a^2/3) sum_i p_i^4 + O(a^4 p^6), making the leading non-isotropic correction dimension-6 with angular decomposition sum_i n_i^4 = 3/5 + (4/5) K_4 and K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4).  _(class `A`)_
-- **chain closes:** False — The sin^2 expansion, bosonic coefficient, p^4/dimension-6 classification, parity-even absence of odd-power dispersion terms, and narrowed CPT/Theta_H proxy support close for the structural surface, without a load-bearing Planck pin. The exact cubic-harmonic normalization does not close as written: with standard normalized Y_lm, K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4) gives sum_i n_i^4 = 3/5 + (4 sqrt(pi)/15) K_4, not 3/5 + (4/5) K_4.
-- **rationale:** Issue: the source's load-bearing cubic-harmonic normalization states sum_i n_i^4 = 3/5 + (4/5) K_4 with K_4 = Y_40 + sqrt(5/14)(Y_44 + Y_4,-4). Why this blocks: under standard normalized spherical harmonics the matching coefficient is 4 sqrt(pi)/15; for example along [100] the anisotropic part is 0.4, while (4/5)K_4 gives about 0.677. Repair target: either rescale the definition of K_4 or replace the coefficient by 4 sqrt(pi)/15, and add a runner check for the exact decomposition coefficient. Claim boundary until fixed: the safe reduced statement is that the p^4 anisotropy has an l=4 cubic-harmonic angular component with the stated special-direction factor, while the exact normalized decomposition is wrong as written.
 - **auditor confidence:** high
 
 ### `emergent_product_law_audit_2026-04-11`

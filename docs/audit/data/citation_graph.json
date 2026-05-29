@@ -70341,7 +70341,7 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a90276cc090f28598799bec08b1bf58c6d878138aa9be6a38f59329318ed4981",
+      "note_hash": "aaeddb37c5b34f847ad87b79f6ec0d4214bb6ce286c54ba2c707c9e17a390d83",
       "path": "docs/PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/planck_target3_coframe_response_accepted_premise_runner.py",
       "title": "Planck Target-3 Coframe-Response Accepted-Premise Bridge"
@@ -71650,7 +71650,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "4b402ec617b843484a89d3b5ed7a17368bf2f3491a8a391a571895806653a05f",
+      "note_hash": "67ba8c78953ec45077f92f5d4abbb7c4a76c4f423bad7f77c4fbbada329f7208",
       "path": "docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/pmns_tm2_residual_consequence_runner.py",
       "title": "PMNS TM2 Residual Consequence -- Bounded Algebra Note"

@@ -11657,10 +11657,10 @@
       "counts": {
         "A": 3,
         "B": 5,
-        "C": 1,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py"
     },
@@ -41728,10 +41728,10 @@
       "counts": {
         "A": 3,
         "B": 5,
-        "C": 1,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "exists": true
     },
@@ -58293,7 +58293,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 358,
     "dominant_class_distribution": {
       "A": 268,
       "B": 296,

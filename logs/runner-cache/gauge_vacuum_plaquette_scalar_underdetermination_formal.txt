@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_scalar_underdetermination_formal.py
+runner_sha256: 5e8d2090a322a8a0e2043eaa42b75bafe18e0d73b67e00a650d9624c77d0fb73
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+========================================================================================
+GAUGE-VACUUM PLAQUETTE SCALAR-UNDERDETERMINATION FORMAL RUNNER
+========================================================================================
+
+  [PASS] [THEOREM] witness vectors are strictly positive normalized vectors in V_3
+         sum(vA)=1, sum(vB)=1
+  [PASS] [THEOREM] witness vectors are distinct
+         vA=(Fraction(1, 5), Fraction(3, 5), Fraction(1, 5)), vB=(Fraction(7, 20), Fraction(3, 10), Fraction(7, 20))
+  [PASS] [THEOREM] single scalar L has the same value on both witnesses
+         L(vA)=1, L(vB)=1
+  [PASS] [THEOREM] second statistic M separates the two witnesses
+         M(vA)=7/5, M(vB)=17/10
+  [PASS] [THEOREM] null direction preserves normalization
+         sum(w)=0
+  [PASS] [THEOREM] null direction preserves the scalar L
+         L(w)=0
+  [PASS] [THEOREM] null direction changes M
+         M(w)=2
+  [PASS] [THEOREM] a nonzero move along w stays inside the positive simplex
+         eps=3/20, vA+eps*w=(Fraction(7, 20), Fraction(3, 10), Fraction(7, 20))
+  [PASS] [THEOREM] the same move preserves L and changes M
+         L(v_eps)=1, M(v_eps)=17/10
+  [PASS] [THEOREM] generic polynomial boundary evaluation can separate equal-L witnesses
+         Z_2(vA)=11/5, Z_2(vB)=47/20
+  [PASS] [THEOREM] note declares the narrowed no_go claim type
+  [PASS] [THEOREM] note states Wilson/Haar, rim-lift, compression, and PF data are non-claims
+
+THEOREM PASS=12 SUPPORT=0 FAIL=0
+
+----- stderr -----
+

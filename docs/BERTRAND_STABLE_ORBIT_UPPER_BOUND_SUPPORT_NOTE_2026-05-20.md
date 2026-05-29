@@ -2,8 +2,28 @@
 
 **Date:** 2026-05-20
 **Claim type:** bounded_theorem
+**Type:** bounded_theorem
 **Status:** source-side proposal; independent audit lane only
+**Status authority:** independent audit lane only.
 **Related wrapper:** `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The algebraic stability step closes under the assumed continuum potential. The restricted packet does not close the general continuum dimensional-gravity law beyond the cache-backed d = 3 and d = 4 rows, so the d >= 5 instability portion de"*
+
+with repair: *"missing_bridge_theorem: provide a retained derivation or authority for the continuum V(r) = -k/r^(d-2) law across the integer d >= 5 cases used by the upper-bound argument."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The effective-potential stability algebra — equations (1)–(3) and the sign condition `(d-2)(4-d) > 0` — is exactly verified for the cache-backed `d = 3` and `d = 4` rows, giving stable circular orbits at `d = 3` and marginal at `d = 4`; this algebraic step closes under the assumed continuum form for those rows.
+- **NON-load-bearing (split off / admitted):** The extension of the same continuum law `V(r) = -k/r^(d-2)` to all integer `d >= 5` is an explicit bounded extrapolation beyond the cache-backed rows in `DIMENSIONAL_GRAVITY_TABLE` and is not backed by a retained derivation or authority; the `d >= 5` instability conclusion is an admitted, not-derived input to the upper-bound argument.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Claim Boundary
 

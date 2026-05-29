@@ -1,6 +1,7 @@
 # 't Hooft 1981 Dual-Superconductor / Center-Vortex Confinement — External Narrow Gate
 
 **Date:** 2026-05-16
+**Type:** open_gate
 **Claim type:** open_gate
 **Scope:** external 4D SU(N) Yang-Mills confinement-mechanism context:
 abelian projection with residual U(1)^(N-1), magnetic monopole
@@ -17,6 +18,24 @@ identification, hierarchy closure, scale ratio derivation, or
 status set by `compute_effective_status.py`.
 **Runner:** [`scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py`](../scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt`](../logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt)
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The restricted packet closes only the syntactic and symbolic recording of the open gate. It does not derive monopole condensation, center-vortex percolation, the Wilson-loop area law, σ > 0, or a framework substrate/readout bridge."*
+
+with repair: *"missing_bridge_theorem: Add retained-grade bridge theorems or one-hop retained authorities for monopole/vortex condensation, the Wilson-loop area law/string tension, and any framework substrate observable identification before upgrading bey"*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The runner-verified symbolic recording of the published open gate — abelian-projection residual group structure, vortex and monopole action symbolic forms, area-law observable target, and center/order-disorder diagnostic vocabulary — verified across checks T1–T10 (PASS=N, FAIL=0); this closes as a faithful syntactic registration of the external 't Hooft 1981 / Mandelstam 1976 / Greensite 2011 confinement-mechanism context.
+- **NON-load-bearing (split off / admitted):** Any framework substrate identification with the dual-superconductor or center-vortex mechanism, and any derivation of monopole condensation, center-vortex percolation, the Wilson-loop area law `σ > 0`, or framework-observable readout from framework primitives; these require retained-grade bridge theorems or one-hop retained authorities that are not supplied and remain admitted, not-derived targets.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Claim
 

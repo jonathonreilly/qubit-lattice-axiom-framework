@@ -1,6 +1,8 @@
 # EW Current Matching via OZI / Disconnected-Trace Suppression Theorem
 
 **Date:** 2026-04-27
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
 **Status:** bounded support theorem for EW current matching on the standard 1/N_c expansion surface
 **Primary runner:** `scripts/frontier_color_projection_mc.py`
 **Depends on:**
@@ -18,6 +20,24 @@ contribution to `O(1/N_c^2)`; the Fierz note specifies the connected-
 channel weight as exact group theory.
 
 ---
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The one-hop deps retain only the SU(3) Fierz/channel-count result F_adj = R_conn = 8/9 and explicitly do not derive kappa_EW = 0 or ratify the full EW matching rule. The runner independently checks R_conn against 8/9, but it does not comput"*
+
+with repair: *"missing_bridge_theorem: require retained-grade closure of the physical EW connected-trace selector and the OZI/disconnected-coefficient bridge before upgrading beyond audited_conditional."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The SU(3) large-N_c topological OZI suppression argument showing the disconnected EW vacuum-polarization piece is parametrically suppressed at `O(1/N_c^2)` relative to the connected piece, with the runner independently verifying `R_conn = 8/9` on a 4^4 lattice at β=6 to 0.2%.
+- **NON-load-bearing (split off / admitted):** The physical EW connected-trace selector (that the continuum matching reads off the connected trace rather than the total trace) and the identification of the disconnected coefficient with `1/R_conn` giving the exact `9/8` matching factor; both require a retained-grade EW matching rule derivation not supplied by this packet.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Statement
 

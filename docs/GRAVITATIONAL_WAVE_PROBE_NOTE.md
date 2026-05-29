@@ -1,6 +1,27 @@
 # Gravitational Wave / Post-Newtonian Probe
 
 **Status:** bounded - bounded or caveated result note
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The runner computes internal toy-lattice differences, but the note relabels those differences as post-Newtonian or gravitational-wave-adjacent physics without a cited bridge theorem deriving the retarded potential, c_lattice, PN observable,"*
+
+with repair: *"missing_bridge_theorem — derive and cite a retained theorem mapping the lattice propagation/readout and f^2 action to a physical post-Newtonian observable, then rerun a non-imposed comparator."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The runner's internal toy-lattice computations: the measured propagation differences between retarded and instantaneous potential sampling (Tests B, C) and the f^2 action correction magnitudes (Test D) on the 20x20x20 lattice, which are exactly computed finite-lattice differences without reference to any physical observable.
+- **NON-load-bearing (split off / admitted):** The identification of those toy-lattice differences with physical post-Newtonian or gravitational-wave observables; this requires a retained bridge theorem deriving the retarded-potential / PN-observable mapping from the lattice propagation/readout and f^2 action, which is not supplied and is recorded here as an admitted, not-derived relabeling.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
+
 ## Status: Three of four tests positive
 
 **Audit-lane runner update (2026-05-09):** The primary runner `scripts/frontier_grav_wave_post_newtonian.py` now carries explicit assertion checks (`assert math.isclose(...)`, `assert abs(...) < EPS`, etc.) mirroring its existing PASS-condition booleans. This makes the runner's class-A invariants visible to `docs/audit/scripts/classify_runner_passes.py`. The runner output and pass/fail semantics are unchanged.

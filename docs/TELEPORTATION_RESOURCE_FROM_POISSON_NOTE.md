@@ -1,5 +1,8 @@
 # Teleportation Resource From Poisson/CHSH: First Audit
 
+**Type:** open_gate
+**Status authority:** independent audit lane only.
+
 Status: planning / first artifact. This note records a narrow audit of whether
 the existing Poisson-driven CHSH lane already yields an encoded two-qubit Bell
 resource for ordinary quantum state teleportation.
@@ -35,6 +38,24 @@ It does not claim matter teleportation, charge transfer, mass transfer, or
 faster-than-light transport. The only audited object is a quantum state
 teleportation resource extracted from the two-species ground state used by
 `scripts/frontier_bell_inequality.py`.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The runner computes the bounded extraction diagnostics, but the packet does not prove the native preparation/readout theorem or justify selecting the last taste bit as a physical deterministic carrier. The note itself keeps that bridge open"*
+
+with repair: *"missing_bridge_theorem: prove the native preparation/readout and last-taste-bit logical-carrier selection, then rerun the small-surface checks with the Poisson/CHSH machinery source included in the restricted packet."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The runner's bounded extraction diagnostics on the two small surfaces (1D N=8 and 2D 4x4): traced Bell overlap, negativity, and standard teleportation fidelity under the last-taste-bit logical-qubit identification, confirming a positive first artifact for the Poisson/CHSH cases relative to the null case.
+- **NON-load-bearing (split off / admitted):** The native preparation/readout theorem selecting the last taste bit as a physical deterministic teleportation carrier (distinct from offline ground-state extraction), and the packet-completeness step including the Poisson/CHSH machinery source in the restricted packet; both are missing bridge theorems recorded here as admitted, not-derived inputs.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Script
 

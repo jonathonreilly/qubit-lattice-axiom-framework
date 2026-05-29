@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-20
 **Type:** bounded_theorem
-**Status:** source-side bridge queued for independent audit
+**Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/frontier_dimension_selection.py`](../scripts/frontier_dimension_selection.py)
 **Scope:** bounded analytic sign bridge for the existing runner; not a
 promotion of `DIMENSION_SELECTION_NOTE.md` or of the wider D=3 chain.
@@ -19,6 +19,24 @@ analytic bridge.
 (submitted in PR #1603, not landed) which argued from `F = ∇φ`
 classical force, inconsistent with the runner's action-based
 propagator observable.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The derivative sign calculation closes algebraically once the eikonal bending rule is admitted. The restricted packet does not derive or independently certify the needed bridge from the finite-k discrete propagator and normalized centroid o"*
+
+with repair: *"missing_bridge_theorem: provide a discrete-to-eikonal bridge theorem, or an independent finite-k sign proof, showing the runner's normalized centroid shift has the claimed sign for the stated potential family."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The runner's numerically verified centroid-shift sign at `d ∈ {1, 2, 3, 4, 5}` combined with the algebraic identification that the sign is governed by whether `df_d/dr` is positive or negative, as established by direct calculus on the runner's stated potential family (2a–c) — this closes in the high-k eikonal limit once the standard WKB/Fermat's-principle semiclassical approximation is admitted.
+- **NON-load-bearing (split off / admitted):** The discrete-to-eikonal bridge theorem certifying that the runner's finite-k normalized centroid-shift observable at the specific grid resolution faithfully tracks the eikonal bending direction; this bridge is admitted as a named non-derivation import (standard WKB) rather than independently derived or retained-authority-certified.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Claim
 

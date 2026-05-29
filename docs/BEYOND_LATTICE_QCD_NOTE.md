@@ -1,7 +1,27 @@
 # Beyond Lattice Gauge Theory: Two Concrete Results
 
 **Status:** Demonstrated numerically  
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_beyond_lattice_qcd.py`
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The runner verifies finite algebraic/numerical behavior of the chosen model, but it computes detector probabilities as np.abs(psi)**2 and therefore assumes the Born readout it claims to derive. No one-hop authority or theorem closes the gra"*
+
+with repair: *"missing_bridge_theorem — derive the probability/readout map and graph-gravity/lattice-QCD comparison from retained inputs, then rerun an audit on the reduced or repaired claim."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The runner-computed finite numerical results are exactly produced: the gravity-QM coupling produces measurable changes in Y-centroid, RMS spread, fringe visibility, and profile shape on a `32^3` lattice, and the Sorkin `I_3` parameter is `0` to machine precision (`~10^-16`) across tested wavenumbers and slit spacings, confirming that linear path-sum superposition enforces pairwise-only interference numerically.
+- **NON-load-bearing (split off / admitted):** The interpretation that `I_3 = 0` constitutes a derivation of the Born rule from graph structure — rather than a consequence of the `np.abs(psi)**2` readout assumed in the runner — depends on a readout-map bridge (connecting graph-path amplitudes to probabilities without pre-assuming Born) that is not supplied; that identification of the Sorkin test result with a derived Born rule is admitted as a not-derived relabeling of the numerical output.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## The honest overlap
 

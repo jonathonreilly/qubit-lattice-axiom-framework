@@ -2,7 +2,8 @@
 
 **Date:** 2026-05-20
 **Status:** proposal — pre-audit bounded support / repair-route note
-**Type:** bounded support
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
 **Repair route for:** the `audited_failed`
 `BORN_RULE_ANALYSIS_2026-04-11.md` lane (the gravitational Hartree
 fixed-point derivation failed; this note proposes Gleason–Busch on a
@@ -20,6 +21,24 @@ record-as-Kraus identification of the framework's persistent-record
 lane (currently in-flight, not retained). Closure of any one of these
 imports would tighten the route; closure of all five would promote it
 to a retained derivation.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The retained tracial-state dependency now closes only the unique-tracial-state theorem, and explicitly does not identify that state with a pre-record physical reference. The source note still imports the no-extra-structure/pre-record identi"*
+
+with repair: *"missing_bridge_theorem: land and cite retained bridge theorems for pre-record identification, Lüders/update or resolved projective-measurement conditioning, and persistent-record-as-Kraus/readout mapping; then re-audit the Born derivation w"*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The Gleason-Busch uniqueness step (Steps 1 and 2 of the derivation) that determines the form `p(E) = Tr(σ·E)` from the one-qubit operator algebra on the `Z^3` spatial substrate plus standard probability axioms (P1)-(P3), verified by runner-referenced operator-algebraic argument on the finite qubit-lattice algebra; and the algebraic step tracing `σ` to the unique tracial state `ρ_ref = ⊗_x I/2` derived in the companion tracial-state note.
+- **NON-load-bearing (split off / admitted):** The identification of the unique tracial state with the physical pre-record reference (no-extra-structure premise), the Lüders/compositional-consistency update rule (U4), and the formal connection of the persistent-record lane to Kraus operators — all three are admitted, not-derived inputs recorded as explicit external premises; the Born-rule conclusion is conditional on these bridges being independently retained.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## What this note derives
 

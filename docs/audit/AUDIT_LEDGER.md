@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 175 |
 | **retained_bounded** | 605 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 29 |
-| unaudited | 1148 |
+| open_gate | 30 |
+| unaudited | 1147 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 938 |
+| `audited_clean` | 939 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1384 |
+| `unaudited` | 1383 |
 
 | claim_type | count |
 |---|---:|
@@ -582,6 +582,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -8455,6 +8456,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the specified Fam1 grown-DAG static 1/r-field harness, the runner computes kubo_true = 7.061910, 5.972756, 5.986043 at H = 0.50, 0.35, 0.25, so the medium-to-fine drift is 0.2% under the runner's 5% criterion.  _(class `C`)_
 - **chain closes:** True — The supplied runner source actually grows the lattice, propagates A and B, computes the centroid derivative, and prints the cached values without hard-coded expected results. This closes the bounded three-refinement numerical statement, but not a stronger general H to 0 continuum theorem.
 - **rationale:** The load-bearing bounded claim is a class C framework-internal computation: the runner instantiates the Fam1 grown-DAG harness and computes the Kubo coefficient values directly. The cached stdout matches the source note's table and the last-step drift calculation. The cited one-hop authorities are provided as retained_bounded, so there is no open dependency blocking this scoped result. This clean verdict is only for the bounded three-point Fam1 stabilization, not for a general asymptotic H to 0 theorem or family-portable continuum result.
+- **auditor confidence:** high
+
+### `kubo_fam2_non_convergence_note_2026-05-02`
+
+- **Note:** [`KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md`](../../docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Fam2 is documented as non-convergent on H ∈ {0.50, 0.35, 0.25, 0.20}; O1-O3 are candidate obstruction routes only, with the exhaustive obstruction claim explicitly admitted as non-load-bearing.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-233422-3ee7adc9-kubo_fam2_non_convergenc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Fam2 data on the tested H ladder are non-monotone with 12.2% and 36.4% oscillations, so the note scopes the result to a documented open residual with three named, non-exhaustive candidate obstruction routes.  _(class `A`)_
+- **chain closes:** True — The finite-H values and percentage drifts are supported by the retained_bounded cited authorities, and the arithmetic checks out. The source note explicitly removes the unsupported exhaustive 'only these routes' bridge from the audited load-bearing scope.
+- **rationale:** As scoped, this is an open-gate/status claim rather than a proof of Fam2 divergence or an exhaustive obstruction theorem. The runner is a structure and text-presence check, not a first-principles physics computation, but the quantitative non-convergence comes from retained_bounded upstream authorities whose displayed numbers are internally consistent. Because the note admits the missing bridge theorem for exhaustiveness and makes it non-load-bearing, the audited chain closes for the narrower documented-residual claim.
 - **auditor confidence:** high
 
 ### `kubo_fam2_refinement_note`

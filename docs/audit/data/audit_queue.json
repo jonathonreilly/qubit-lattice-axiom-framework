@@ -17198,7 +17198,7 @@
       "blocker": null,
       "claim_id": "signed_gravity_aps_locked_source_action_proposal_note",
       "claim_scope": null,
-      "claim_type": "no_go",
+      "claim_type": "open_gate",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,

@@ -1,28 +1,34 @@
 # Signed Gravity APS-Locked Source Action Proposal
 
-**Date:** 2026-04-25 (2026-05-28: Origin obligation resolved as a NO-GO under
-no-admissions — see panel-convergence section).
-**Type:** no_go
+**Date:** 2026-04-25 (2026-05-28: Origin obligation sharpened to a single
+derivation target — the generation-chirality grading — see panel section).
+**Type:** open_gate
 **Status authority:** independent audit lane only.
-**Status:** **origin no-go** — the proposed `χ_η M_phys ⟨ρ,Φ⟩` source-action cross
-term is NOT derivable from the retained APS/Wald/Gauss stack; deriving it requires
-a forbidden import (a chiral grading on the generation/orientation factor — the
-shared Koide/generation chirality gate). The local source/response harness still
-passes (it was built to), but that is not a derivation.
+**Status:** **open gate, sharpened** — the proposed `χ_η M_phys ⟨ρ,Φ⟩` source-action
+cross term is derivable **if and only if** a generation/orientation-factor
+**chiral grading** `Γ` anticommuting with `D_Y` is derived (the shared
+Koide-Q=2/3 / generation-ID chirality gate). A 7-angle panel proved that
+*within the current retained inventory, without that grading*, the cross term
+cannot appear — which **locates the gate precisely**. Under no-admissions that
+grading must be **derived**, not admitted: it is the frontier target, not a
+closure. The local source/response harness passes but is not a derivation.
 **Script:** [`../scripts/signed_gravity_aps_locked_source_action_proposal.py`](../scripts/signed_gravity_aps_locked_source_action_proposal.py)
 
-## 2026-05-28 Panel Convergence — Origin Obligation is a NO-GO (no admissions)
+## 2026-05-28 Panel Convergence — Origin Obligation Sharpened to the Generation-Chirality Grading
 
 Proof obligation #1 ("Origin": derive `S_int = −χ_η M_phys ⟨ρ,Φ⟩` from retained
-APS/Wald/Gauss structure rather than adding it as an axiom) was attacked by a
-7-angle panel framed to **find the escape** (APS-index coupling, anomaly inflow,
+structure rather than adding it as an axiom) was attacked by a 7-angle panel
+framed to **find the escape** (APS-index coupling, anomaly inflow,
 eta-variation/spectral-flow, Wald/Gauss source-unit accounting, adversarial
-no-go refutation, literature scout, first-principles + math). All converged: the
-cross term is **not derivable from retained structure**. Because this repository
-takes **no admissions**, the verdict's alternative ("mark permanently as an
-axiomatic extension") is off the table, so the Origin obligation closes as a
-**no-go**, scoped to the retained flat-substrate inventory, with one explicit
-open promotion route (below).
+refutation, literature scout, first-principles + math). The panel did **not**
+find an impossibility — it found that **every route reduces to one and the same
+missing structure**: a chiral grading on the generation/orientation factor. This
+**sharpens** the open gate to a single, precise, derivable target rather than
+closing it. The two structural facts below are the *localization* of that gate
+(they show that, absent the grading, the current retained inventory provably
+cannot produce the χ-odd source) — they are **not** a no-go verdict on the
+physics. "No admissions" means the grading must be derived; it does **not** mean
+the gate is a wall.
 
 **Two independent structural reasons the χ-odd source cannot come from retained structure:**
 
@@ -52,7 +58,7 @@ open promotion route (below).
    hand, which is exactly the new axiom. "Source sign = boundary η sign" is an
    aesthetic ansatz, not a dynamical derivation.
 
-**Every escape route closes on the retained flat substrate:**
+**Every escape route reduces to the same missing grading (on the current retained substrate):**
 
 - **APS index:** `M_phys = C_abs` is a Gauss-flux magnitude, not index data; the
   matter index is locally constant (`dIndex/dΦ = 0`); `δη/δΦ = 0` by gap rigidity.
@@ -72,24 +78,29 @@ open promotion route (below).
   determinant orientation line is a section-less `Z₂` **torsor** (hosts the
   label, selects no canonical section).
 
-**The single open promotion route (shared with the Koide/generation lane).** The
-only way to obtain a `Φ`-dependent, `χ`-odd `η` is for `Φ` (or the mass operator)
-to couple to a **chiral grading `Γ` that anticommutes with `D_Y`** on the
-generation/orientation factor — generating spectral flow. That is precisely the
-**same chirality-import gate** that blocks Koide `Q = 2/3` and the
-three-generation identification, and it is itself a **retained no-go**: a
-spacetime `γ₅` cannot be transported to a chiral grading on the generation
-factor (it acts `C₃`-trivially). So this no-go is scoped — not a permanent lock:
-**if** that generation-chirality grading is ever derived (closing the shared
-gate), the signed source could follow. Absent it, the cross term is an
-independent axiom, which no-admissions forbids.
+**The frontier target (shared with the Koide/generation lane).** The unique way
+to obtain a `Φ`-dependent, `χ`-odd `η` is for `Φ` (or the mass operator) to
+couple to a **chiral grading `Γ` that anticommutes with `D_Y`** on the
+generation/orientation factor — generating spectral flow. This is precisely the
+**same generation-chirality grading** that Koide `Q = 2/3` (mass operator chiral,
+`Γ_χ = (2/3)J − I`) and the three-generation identification require. So the
+panel does not isolate three separate problems — it shows signed-gravity's Origin
+obligation is **one face of a single shared frontier target**: derive a
+generation-factor chiral grading from `A1 + A2 + retained`. The known partial
+result is only that *spacetime* `γ₅` cannot be transported to it (it acts
+`C₃`-trivially); a **native** generation-factor derivation is open, not
+foreclosed. Deriving it (a) is the no-admissions way to close this — the grading
+is constructed, never axiomatized — and (b) would unlock signed-gravity, Koide
+`Q = 2/3`, and generation-ID simultaneously. That cross-lane over-determination
+(two independent physics requirements pointing at the same structure) is itself
+evidence the grading is real and should be derivable, not a coincidence to wall off.
 
-This convergence reproduces and strengthens the existing retained no-go
-infrastructure (`signed_gravity_response_lane_status_note` = `retained_no_go`;
+This convergence reproduces and sharpens the existing lane infrastructure
+(`signed_gravity_response_lane_status_note`;
 `SIGNED_GRAVITY_RETAINED_BOUNDARY_SOURCE_PRINCIPLE_NO_GO_NOTE` orientation-even
 `[+1,+1]` cannot span `[+1,−1]`; the native-complex containment and
 host-vs-selector results) by supplying the positivity + variational-inertness
-**reasons** behind the finite-span residual. No new axiom, import, or retained
+**reasons** the gate sits exactly at the chiral grading. No new axiom, import, or retained
 bridge is introduced by this repair.
 
 This note proposes the smallest action that would close the remaining

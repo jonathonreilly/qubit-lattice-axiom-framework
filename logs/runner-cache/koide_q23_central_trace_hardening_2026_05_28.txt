@@ -1,0 +1,139 @@
+
+========================================================================
+ANGLE 1 -- generation space = Cl(3) grade-1 = regular rep of Z_3
+========================================================================
+  Color-Z_3 generator P (permutes the 3 Cl(3) vector axes):
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
+  eigenvalues of P = [-0.5+0.866025j -0.5-0.866025j  1. +0.j      ]  (should be 1, w, w^2)
+  matches cube roots of unity: True
+  trivial isotypic (Z_3-fixed) = body diagonal = [0.57735 0.57735 0.57735]
+  P @ diag = diag ? True
+  => 'democratic direction' is forced as the unique Z_3-fixed
+     axis of the Cl(3) color automorphism (NOT an external input).
+
+========================================================================
+ANGLE 3 -- Frobenius-Schur: R[Z_3] = R (+) C ; Cl(3)-native J
+========================================================================
+  fluctuation plane basis f1=[ 0.7071 -0.7071  0.    ] f2=[ 0.4082  0.4082 -0.8165]
+  bivector generator L (grade-2, dual to body diagonal):
+[[ 0.     -0.5774  0.5774]
+ [ 0.5774  0.     -0.5774]
+ [-0.5774  0.5774  0.    ]]
+  L restricted to fluctuation plane (2x2):
+[[-0. -1.]
+ [ 1.  0.]]
+  J^2 = -I on plane ? True
+  => the fluctuation isotypic is ONE COMPLEX line (Kahler (1,1)):
+     1 real trivial block (+) 1 complex fluctuation block.
+     The complex structure J is the Cl(3) grade-2 bivector dual
+     to the Z_3-fixed body-diagonal axis. (1 complex dof.)
+
+========================================================================
+ANGLE 4 (CORE, AUDITED+CORRECTED) -- which block weighting?
+========================================================================
+  R[Z_3] = R (+) C : the isotypic POWER split (trivial, fluct)
+  determines Q. Three canonical weightings exist:
+
+   weighting (p_triv, p_fluct) |   Q    | meaning
+   all-trivial   (1 , 0  )  | 0.33333 | Q_min = democratic
+   equal-block   (1/2,1/2)  | 0.66667 | MIDPOINT = 2/3
+   dim-weighted  (1/3,2/3)  | 1.00000 | Q_max = canonical/Plancherel
+
+  AUDIT RESULT (corrects my earlier claim):
+   * The CANONICAL group-algebra / Plancherel central trace weights
+     each irrep block by dim^2/|G| = (1/3, 2/3) -> Q = 1, NOT 2/3.
+     So 'equipartition = canonical central trace' is FALSE. KILLED.
+   * Equipartition is the EQUAL-BLOCK weighting (1/2,1/2): equal
+     weight to each of the B=2 Frobenius-Schur blocks, INDEPENDENT
+     of block dimension. This is max-entropy over the BLOCK LABEL,
+     not over generations and not the dimension-weighted trace.
+
+  The three canonical weightings map EXACTLY onto the three
+  special Koide values: (Q_min, midpoint, Q_max) = (1/3, 2/3, 1).
+
+========================================================================
+ANGLE 4b -- closed form (no cone artifacts): equal block => Q=2/d
+========================================================================
+  Let total norm^2 = 1, split equally: |s_par|^2=|s_perp|^2=1/2.
+  cos^2 theta = |s_par|^2 / |s|^2 = 1/2  =>  Q = 1/(d * 1/2) = 2/d.
+    d=2: Q = 2/d = 1.000000
+    d=3: Q = 2/d = 0.666667
+    d=4: Q = 2/d = 0.500000
+  Exact, basis-free. d=3 (Cl(3)/Z^3) => Q = 2/3.
+
+========================================================================
+ANGLE 4c -- A1's qubit fixes the B=2 block label (the '2' of 2/3)
+========================================================================
+  # real-irreducible (Frobenius-Schur) blocks B of R[Z_d]:
+    Z_2: B = 2  <== B=2 (qubit-like 1-bit block label)
+    Z_3: B = 2  <== B=2 (qubit-like 1-bit block label)
+    Z_4: B = 3
+    Z_5: B = 3
+    Z_6: B = 4
+    Z_7: B = 4
+
+  B=2 ONLY for d=2,3. A1 says the primitive distinction is a QUBIT
+  = a single 2-valued (1-bit) label. The FS decomposition of the
+  generation regular-rep gives a 2-valued block label (trivial vs
+  fluctuation) PRECISELY when d in {2,3}. Maximum entropy over this
+  1-bit qubit-block label = (1/2,1/2) = equipartition.
+  d=2 -> Q=2/d=1 (degenerate); d=3 is the unique nontrivial case.
+  => '2' in Q=2/3 is the qubit/block count (A1); '3' is the
+     generation/lattice count (A2).
+
+========================================================================
+ANGLE 2 -- purity (|n|=1) alone is NOT sufficient (honest)
+========================================================================
+  Bloch-trine embedding sqrt(m_k)=a + b*cos(2pi k/3), pure: a^2+b^2=1.
+  Equipartition needs b^2 = 2 a^2 (=> a^2=1/3,b^2=2/3, magic angle).
+  Pure state alone leaves a free 1-parameter family:
+    alpha= 20.000 deg (pure): b^2/a^2=0.1325  Q=0.35541
+    alpha= 45.000 deg (pure): b^2/a^2=1.0000  Q=0.50000
+    alpha= 54.736 deg (pure): b^2/a^2=2.0000  Q=0.66667
+    alpha= 70.000 deg (pure): b^2/a^2=7.5486  Q=nan
+  => purity fixes |n|=1 but NOT the direction/ratio. The RATIO is
+     fixed by the equal-block weighting (Angle 4/4c), NOT by
+     purity. Purity is at best a consistency condition, not the
+     forcing. (This corrects the original Step 3.)
+
+========================================================================
+ANGLE 6 -- d=3 uniqueness robustness (transversal simple zero)
+========================================================================
+  Delta(d) = Q_mid - Q_equi = (1+d)/(2d) - 2/d = (d-3)/(2d).
+  Zero only at d=3; near d=3: Delta(3+eps) = eps/(2(3+eps)) ~ eps/6.
+    d= 2.5: Delta=-0.10000
+    d= 2.9: Delta=-0.01724
+    d= 3.0: Delta=+0.00000
+    d= 3.1: Delta=+0.01613
+    d= 3.5: Delta=+0.07143
+    d= 4.0: Delta=+0.12500
+  numerical d(Delta)/dd at d=3 = 0.166667  (exact 1/6 = 0.166667)
+  => isolated, transversal (non-degenerate) selection of d=3;
+     the two balance principles separate linearly off d=3.
+
+========================================================================
+SYNTHESIS (post-audit)
+========================================================================
+  EXACT, BASIS-FREE (proven here, no assumption):
+   (1) generation space = Cl(3) grade-1 = regular rep of color-Z_3;
+       the democratic direction is FORCED as the unique Z_3-fixed
+       body diagonal -- not an external choice.
+   (3) Frobenius-Schur: R[Z_3] = R (+) C ; fluctuation = ONE complex
+       block, complex structure J = Cl(3) grade-2 bivector dual to
+       the body diagonal (Kahler (1,1)).
+   (4) the THREE canonical isotypic weightings (all-trivial,
+       equal-block, dim-weighted) give EXACTLY (Q_min,mid,Q_max)=
+       (1/3, 2/3, 1). The canonical/Plancherel trace = dim-weighted
+       => Q=1 (NOT 2/3): the central-trace route is KILLED.
+   (4c) B=2 FS blocks only for d in {2,3}; d=3 unique nontrivial.
+   (6) d=3 double-characterization (equipartition = range-midpoint)
+       is a transversal simple zero (slope 1/6).
+  RESIDUAL ASSUMPTION (sharpened weakest link, tied to A1):
+   the packet sits at EQUAL-BLOCK weight = maximum entropy over the
+   B=2 (qubit / 1-bit) Frobenius-Schur block label. This is the '2'
+   of A1. It is NOT the canonical trace (which gives Q=1) and NOT
+   max-entropy-over-generations (which gives Q=1/3). Deriving WHY
+   the block label rather than the state label carries the max-
+   entropy is the remaining open step.

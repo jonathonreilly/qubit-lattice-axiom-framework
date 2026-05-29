@@ -68,18 +68,49 @@ In the `Z_3`-Fourier parametrization `s_k = A(1 + r cos(delta + 2 pi k/3))`
 `power(k=0 mean mode) = power(k=+-1 fluctuation doublet)`. (Non-negativity
 of sqrt-mass is a genuine constraint, recorded in the runner.)
 
-### Step 4 (A1 forces equipartition via pure-state purity). The crux.
-A1 gives a per-site qubit `rho = (I + n . sigma)/2`. Its Hilbert-Schmidt
-norm splits into identity (democratic) and Pauli (fluctuation) parts:
+### Step 4 (HARDENED + AUDITED). What fixes the equipartition.
+> The original Step 3 ("a pure qubit has equal identity/Pauli HS power")
+> was **wrong on audit** -- it conflated the generation-space split
+> (democratic vs fluctuation, both grade-1) with the qubit grade-0/grade-1
+> split, and purity alone does not fix the ratio. Replaced by the
+> following, see `koide-q23-assumptions-audit-2026-05-28.md` and runner
+> `koide_q23_central_trace_hardening_2026_05_28.py`.
 
-    Tr(rho^2) = Tr((I/2)^2) + Tr(((n.sigma)/2)^2) = 1/2 + |n|^2/2.
+**4a (exact -- the map).** The generation space IS Cl(3) grade-1, and
+the color-`Z_3` automorphism cyclically permutes the three Cl(3) vector
+generators `sigma_1,sigma_2,sigma_3` -- i.e. the regular representation
+of `Z_3`. Its unique `Z_3`-fixed axis is the body diagonal `(1,1,1)`.
+So the **democratic direction is forced** (the eigenvalue-1 eigenvector),
+not chosen. Fluctuation = the eigenvalue-`{w,w^2}` complement.
 
-For a **PURE** qubit state `|n| = 1`: identity-power = Pauli-power = 1/2.
-**A pure single qubit has equal democratic and fluctuation HS-power.**
-Identifying the sqrt-mass packet's democratic/fluctuation power-split
-with the qubit's identity/Pauli HS-split, a *persistent (pure) particle*
-excitation (`|n|=1`, not a mixed/decohered state) carries exactly
-equipartition -> Step 2 -> `Q = 2/d`.
+**4b (exact -- Kahler).** Frobenius-Schur: `R[Z_3] = R (+) C`. The
+fluctuation isotypic is ONE 2-real-dim block carrying a complex
+structure `J` (`J^2=-I`), realized as the **Cl(3) grade-2 bivector dual
+to the body-diagonal axis** (the rotation generator about `(1,1,1)`).
+So fluctuation = 1 complex degree of freedom -- the holomorphic `(1,1)`
+reading.
+
+**4c (exact -- the three weightings).** The isotypic power split
+`(p_triv, p_fluct)` fixes `Q = 1/(3 p_triv/(p_triv+p_fluct))`. The three
+canonical weightings map exactly onto the three special values:
+
+    (1, 0)    -> Q = 1/3   (all-trivial; democratic; Q_min)
+    (1/2,1/2) -> Q = 2/3   (equal-block; MIDPOINT)
+    (1/3,2/3) -> Q = 1     (dimension-weighted = canonical/Plancherel trace; Q_max)
+
+**4d (KILLED routes).** The canonical / Plancherel central tracial state
+weights blocks by dimension `(1/3,2/3)` and gives `Q=1`, NOT 2/3 -- so
+"equipartition = canonical central trace" is false; likewise
+`rho_ref=(x)I/2` restricted to generations is uniform, giving `Q=1/3`.
+Both attractive routes are eliminated.
+
+**4e (residual assumption, tied to A1).** Equipartition is the
+**equal-block weighting** = maximum entropy over the `B=2` Frobenius-
+Schur block label. The block count `B(d)=2` holds only for `d in {2,3}`;
+A1's qubit is exactly a 1-bit (2-valued) primitive, and max-entropy over
+a 1-bit label is `(1/2,1/2)`. This is the residual, un-derived step
+(why max-entropy over the block label rather than the state label).
+-> Step 2 -> `Q = 2/d`.
 
 ### Step 5 (A2 fixes d=3; double characterization unique to d=3).
 `d = 3` is the number of generations = dim `Z^3` = number of `Cl(3)`
@@ -114,37 +145,47 @@ principles). This is falsifiable by any future heavy charged lepton:
 its mass cannot extend the `(e, mu, tau)` triple to a 4-state Koide set
 at 2/3.
 
-## Weakest Link
-**Step 4's identification** is the least certain: *why* does the
-charged-lepton sqrt-mass packet's democratic/fluctuation power-split
-equal the qubit `rho`'s identity/Pauli HS-split, and *why* is the
-relevant qubit state pure (`|n|=1`) rather than mixed? Steps 1-3, 5 are
-exact identities; Step 4 is a structural mapping hypothesis.
+## Weakest Link (post-hardening)
+After the Step-4 hardening + audit, the entire residual content is ONE
+crisp question (assumption **4e**):
 
-Test of the weakest link: derive the map from sqrt-mass amplitudes to
-the per-site Bloch decomposition explicitly (e.g. via the staggered
-generation realization), and check that the *persistence* condition
-(self-maintaining pattern) selects `|n|=1`. If persistence instead
-allowed `|n| < 1`, the prediction is `Q < 2/3` by
-`Q = 2/(d) * f(|n|)`-type scaling; the observed `Q = 2/3` to 0.001%
-then bounds `|n| = 1 - O(10^-5)`, a quantitative target for the
-persistence-purity derivation.
+> **Why does the physical packet sit at EQUAL-BLOCK weight (1/2,1/2) =
+> maximum entropy over the `B=2` Frobenius-Schur block label, rather
+> than at the dimension-weighted canonical trace (1/3,2/3 -> Q=1) or
+> the state-uniform reference (Q=1/3)?**
+
+Everything else (Steps 1, 2, 4a-4d, 5) is now an exact identity or an
+eliminated route (see audit note). The forcing is sharply localized and
+has two independent exact anchors that coincide ONLY at d=3:
+equipartition value `2/d` and range-midpoint value `(1+d)/(2d)`.
+
+Test of the weakest link: derive a max-entropy / variational principle
+on A1+A2 whose natural random variable is the FS *block* label (1 bit,
+the qubit) rather than the generation label. A clean discriminator: any
+such principle must reproduce the exact `(1/3,2/3,1)` three-weighting
+correspondence AND select the middle option; principles that maximize
+entropy over generations (-> Q=1/3) or use the canonical trace
+(-> Q=1) are already falsified against `Q_emp = 0.6667`.
 
 ## Status
-PROPOSED
+PROPOSED (bounded) -- hardened and self-audited 2026-05-28.
 
-Steps 1, 2, 3, 5 are verified exact identities (two runners, cached).
-Step 4 (A1 -> equipartition via pure-state purity) is a proposed forcing
-whose sqrt-mass <-> Bloch identification remains to be derived. The
-result is honestly a *near-closure*: it reduces "why 2/3" to the single
-question "why is the persistent generation packet a pure-qubit
-equipartition," plus the independent (exact) observation that d=3 is the
-unique dimension where two distinct balance principles coincide at 2/3.
+Exact (no assumption): Steps 1, 2, 4a, 4b, 4c, 5, and the d=3
+transversality. Eliminated routes (4d): canonical/Plancherel central
+trace (-> Q=1) and pure-state purity forcing. Residual un-derived
+assumption: 4e (max-entropy over the FS block label). This is honestly
+a *bounded* result, not full closure: "why 2/3" is reduced to the single
+crisp question of 4e, with two independent exact anchors coinciding only
+and transversally at d=3.
 
 ## Runners
 - `scripts/koide_q23_extremal_first_principles_2026_05_28.py`
   (empirical anchor, geometry, Z_3 Fourier, dimension formula, Bloch).
 - `scripts/koide_q23_forcing_principle_2026_05_28.py`
   (purity identity, range endpoints, two-balance-principle d=3
-  uniqueness, pure-qubit equipartition, novel prediction).
+  uniqueness, novel prediction).
+- `scripts/koide_q23_central_trace_hardening_2026_05_28.py`
+  (Step-4 hardening: generation-space map, Kahler J, three-weighting
+  correspondence, canonical-trace kill, B(d) count, transversality).
+Audit: `koide-q23-assumptions-audit-2026-05-28.md`.
 Cached: `logs/runner-cache/koide_q23_*_2026_05_28.txt`.

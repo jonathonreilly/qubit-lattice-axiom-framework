@@ -2029,6 +2029,18 @@
       "to": "planck_source_unit_normalization_support_theorem_note_2026-04-25"
     },
     {
+      "from": "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28",
+      "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+    },
+    {
+      "from": "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "bminusl_anomaly_freedom_note_2026-05-17",
       "to": "bminusl_anomaly_freedom_theorem_note_2026-04-24"
     },
@@ -19523,6 +19535,58 @@
     {
       "from": "observable_principle_audit_note_2026-05-02",
       "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "observable_principle_from_axiom_note",
@@ -43348,6 +43412,22 @@
       "path": "docs/BH_QUARTER_WALD_NOETHER_FRAMEWORK_CARRIER_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/frontier_bh_quarter_wald_noether_framework_carrier.py",
       "title": "BH 1/4 Carrier from Framework Wald-Noether Charge Boundary Note (V1)"
+    },
+    "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28": {
+      "claim_id": "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "dd868fa6b7294ec68298e349a82542c7b8bde495122637fe08ef19c765f495be",
+      "path": "docs/BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/audit_companion_binary_octahedral_discrete_spinor_sign_2026_05_28.py",
+      "title": "Binary Octahedral Discrete Spinor Sign Narrow Theorem"
     },
     "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26": {
       "claim_id": "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26",
@@ -67966,6 +68046,32 @@
       "runner_path": "scripts/frontier_observable_principle_audit.py",
       "title": "Observable-Principle From-Axiom Note \u2014 Status Correction Audit"
     },
+    "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28": {
+      "claim_id": "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16",
+        "observable_principle_from_axiom_note",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "85c442302c6bc811f5e6c4bd93d8a9b70e2e50d4be36376bf26af70547e01573",
+      "path": "docs/OBSERVABLE_PRINCIPLE_DET_UNIQUE_MULTIPLICATIVE_CHARACTER_FORM_SELECTION_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/audit_companion_observable_principle_det_multiplicative_character_form_selection_2026_05_28.py",
+      "title": "Observable Principle \u2014 `det` Unique by Multiplicative-Character Form Selection Narrow Theorem Note"
+    },
     "observable_principle_from_axiom_note": {
       "claim_id": "observable_principle_from_axiom_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -87099,7 +87205,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 669,
+      "bounded_theorem": 671,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -87108,7 +87214,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1079,
+      "bounded_theorem": 1081,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -87116,10 +87222,10 @@
       "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9920,
+    "edge_count": 9936,
     "leaf_count": 827,
-    "node_count": 2609,
+    "node_count": 2611,
     "root_count": 870,
-    "runners_with_path": 2184
+    "runners_with_path": 2186
   }
 }

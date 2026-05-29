@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_observable_principle_det_multiplicative_character_form_selection_2026_05_28.py
+runner_sha256: a54afe87c0419dcea244b379ab455a668e132d72bfa39192e4cf1886715c82a8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.23
+status: ok
+----- stdout -----
+
+=== Part 1: det is a multiplicative character chi(A.S)=chi(A).chi(S) ===
+[PASS] det(A.S) == det(A).det(S)  [n=2, generic symbolic]  [residual=0]
+[PASS] det(A.S) == det(A).det(S)  [n=3, generic symbolic]  [residual=0]
+[PASS] det(A.S.T) == det(A).det(S).det(T)  [n=2, three-fold composition]  [residual=0]
+
+=== Part 2: tr fails multiplicative-character AND fails additive form ===
+[PASS] tr(A.S) != tr(A).tr(S)  [n=2] (tr is NOT a character)  [nonzero residual=-a00*s11 + a01*s10 + a10*s01 - a11*s00]
+[PASS] tr(A.S) != tr(A)+tr(S)  [n=2] (tr not multiplicative-as-additive)  [nonzero residual=a00*s00 - a00 + a01*s10 + a10*s01 + a11*s11 - a11 - s00 - s11]
+[PASS] tr(A.S) != tr(A).tr(S)  [n=3] (tr is NOT a character)  [nonzero residual=a00*s00 + a01*s10 + a02*s20 + a10*s01 + a11*s11 + a12*s21 + a20*s02 + a21*s12 + a22*s22 - (a00 + a11 + a22)*(s00 + s11 + s22)]
+[PASS] tr(A.S) != tr(A)+tr(S)  [n=3] (tr not multiplicative-as-additive)  [nonzero residual=a00*s00 - a00 + a01*s10 + a02*s20 + a10*s01 + a11*s11 - a11 + a12*s21 + a20*s02 + a21*s12 + a22*s22 - a22 - s00 - s11 - s22]
+[PASS] tr(A.S) numeric witness != tr(A).tr(S) and != tr(A)+tr(S)  [tr(AS)=15, tr(A)tr(S)=28, tr(A)+tr(S)=11]
+
+=== Part 3: power traces tr(M^s) (s != 1) fail the character property ===
+[PASS] tr((A.S)^2) != tr(A^2).tr(S^2)  [n=2] (power-trace not a character)  [nonzero residual (generic)]
+[PASS] tr((A.S)^3) != tr(A^3).tr(S^3)  [n=2] (power-trace not a character)  [nonzero residual (generic)]
+[PASS] tr((A.S)^2) != tr(A^2).tr(S^2)  [n=3] (power-trace not a character)  [nonzero residual (generic)]
+[PASS] tr((A.S)^3) != tr(A^3).tr(S^3)  [n=3] (power-trace not a character)  [nonzero residual (generic)]
+
+=== Part 4: e_1..e_{n-1} fail the character property; e_n = det passes ===
+[PASS] e_1(A.S) != e_1(A).e_1(S)  [n=2] (e_1 = tr, not a character)
+[PASS] e_2(A.S) == e_2(A).e_2(S)  [n=2] (e_2 = det, IS a character)
+[PASS] e_2 == det consistency  [n=2]
+[PASS] e_1(A.S) != e_1(A).e_1(S)  [n=3] (e_1 = tr, not a character)
+[PASS] e_2(A.S) != e_2(A).e_2(S)  [n=3] (e_2 not a character)
+[PASS] e_3(A.S) == e_3(A).e_3(S)  [n=3] (e_3 = det, IS a character)
+[PASS] e_3 == det consistency  [n=3]
+
+=== Part 5: det^k are characters (k=2,3); mixed functionals are not ===
+[PASS] det(A.S)^2 == det(A)^2.det(S)^2  (det^2 IS a character)
+[PASS] det(A.S)^3 == det(A)^3.det(S)^3  (det^3 IS a character)
+[PASS] (tr + det)(A.S) != (tr+det)(A).(tr+det)(S) (non-character fails)
+
+=== Part 6: additive form of the character is c.log (Cauchy ODE) ===
+[PASS] Cauchy ODE r W'(r)=c solves to W = const + c.log(r)  [dsolve -> Eq(W(r), C1 + c*log(r))]
+[PASS] c.log(r1 r2) == c.log(r1) + c.log(r2) (functional equation)
+[PASS] log(|det|^k) == k . log|det| (character power absorbed into scale c)
+[PASS] log|det(A (+) B)| == log|det A| + log|det B| (additive over sectors)
+
+=== Part 7: Pattern-L guard — det-vs-tr selection does NOT use the direct-sum-additivity axis ===
+[PASS] tr(A (+) B) == tr(A) + tr(B) (tr PASSES direct-sum additivity)  [=> direct-sum axis cannot exclude tr; not the axis used here]
+[PASS] det(A (+) B) == det(A).det(B) (direct-sum multiplicativity; the old-campaign axis)  [the |det|^p family lives here; exponent unfixed on this axis]
+[PASS] CONTRAST: on composition axis tr FAILS while det passes (re-assert)  [composition axis does the det-vs-tr work the direct-sum axis cannot]
+[PASS] Pattern-L guard: tr separates the two axes (fails composition-character, passes direct-sum-additivity)  [documented: det-vs-tr selection rides on composition-character only]
+
+======================================================================
+TOTAL: 30 PASS / 0 FAIL  (out of 30 checks)
+======================================================================
+
+All checks passed: det is the unique algebraic/rational multiplicative character generator (tr / tr(M^s) / e_{1..n-1} all fail); additive form is c.log|det|; Pattern-L direct-sum axis is documented as NOT the selection axis.
+
+----- stderr -----
+

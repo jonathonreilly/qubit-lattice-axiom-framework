@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_binary_octahedral_discrete_spinor_sign_2026_05_28.py
+runner_sha256: 630d57413a065b8e88819dcf1609fabf7752a05370ea893aac244f35ca9023a5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.96
+status: ok
+----- stdout -----
+Section 1: (C1) 2O is a 48-element group (closure): PASS=5 FAIL=0
+
+Section 2: (C2) central element z = -1 (order 2, unique): PASS=4 FAIL=0
+
+Section 3: (C3) conjugacy-class structure (8 classes): PASS=4 FAIL=0
+
+Section 4: (C4) irrep dimension partition (sum of squares 48): PASS=3 FAIL=0
+
+Section 5: (C5) z-sign partition (spinorial vs non-spinorial): PASS=6 FAIL=0
+
+Section 6: (C6) defining spin-1/2 SU(2) rep (chi(z) = -2): PASS=5 FAIL=0
+
+Section 7: Summary (discrete spinor sign certificate)
+  2O = binary octahedral group, |2O| = 48, SU(2) double cover of O ~= S_4.
+  Unique nontrivial central element z = -1 (the 2pi rotation), order 2.
+  Spinorial (faithful) irreps  : dims {2,2,4}, z acts as -1, chi(z) = -dim.
+  Non-spinorial irreps (thru O): dims {1,1,2,3,3}, z acts as +1, chi(z) = +dim.
+  Defining spin-1/2 SU(2) rep  : faithful, chi(z) = -2.
+  ==> The discrete spinor 2pi = -1 sign is a finite-group fact of 2O,
+      with NO continuous rotation group and NO statistics assumption.
+  SCOPE: this certifies the discrete spinor SIGN only (ingredient B).
+         It does NOT establish anticommutation / CAR / fermionic statistics.
+
+TOTAL: PASS=27 FAIL=0
+VERDICT: 2O central element z = -1 acts as the scalar -1 on the
+         spin-1/2 (faithful) irreps; the discrete spinor 2pi = -1
+         sign holds as a finite-group fact (ingredient B only).
+
+----- stderr -----
+

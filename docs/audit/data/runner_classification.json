@@ -1500,6 +1500,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_bh_quarter_wald_noether_framework_carrier.py"
     },
+    "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28": {
+      "assert_count": 8,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_binary_octahedral_discrete_spinor_sign_2026_05_28.py"
+    },
     "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26": {
       "assert_count": 0,
       "counts": {
@@ -16500,6 +16512,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_observable_principle_audit.py"
     },
+    "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28": {
+      "assert_count": 0,
+      "counts": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_observable_principle_det_multiplicative_character_form_selection_2026_05_28.py"
+    },
     "observable_principle_from_axiom_note": {
       "assert_count": 0,
       "counts": {
@@ -27350,6 +27374,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/audit_companion_binary_octahedral_discrete_spinor_sign_2026_05_28.py": {
+      "assert_count": 8,
+      "claims": [
+        "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/audit_companion_binom_d_2_equals_twice_dminus1_exact_2026_05_26.py": {
       "assert_count": 0,
       "claims": [
@@ -28113,6 +28152,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/audit_companion_observable_principle_det_multiplicative_character_form_selection_2026_05_28.py": {
+      "assert_count": 0,
+      "claims": [
+        "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28"
+      ],
+      "counts": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py": {
@@ -57659,16 +57713,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 358,
     "dominant_class_distribution": {
-      "A": 264,
+      "A": 266,
       "B": 294,
       "C": 769,
       "D": 308,
       "none": 444
     },
-    "runners_classified": 2079,
-    "runners_with_C": 1010,
+    "runners_classified": 2081,
+    "runners_with_C": 1011,
     "runners_with_D": 615
   }
 }

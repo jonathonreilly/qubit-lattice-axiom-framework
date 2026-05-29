@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1206
-**Ready (all deps already at retained-grade or metadata tiers):** 59
+**Total pending:** 1209
+**Ready (all deps already at retained-grade or metadata tiers):** 60
 
 By criticality:
-- `critical`: 254
+- `critical`: 256
 - `high`: 319
 - `medium`: 321
-- `leaf`: 312
+- `leaf`: 313
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -21,9 +21,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 4 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 909 | 13.33 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_per_site_hilbert_dim_two_check.py` |
 | 5 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | unaudited | critical | 900 | 10.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py` |
 | 6 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | unaudited | critical | 875 | 13.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/no_per_site_chirality_check.py` |
-| 7 | `s3_general_r_derivation_note` | bounded_theorem | unaudited | critical | 709 | 18.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_cap_uniqueness.py` |
-| 8 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | positive_theorem | unaudited | critical | 525 | 12.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
-| 9 | `higgs_mass_from_axiom_note` | bounded_theorem | unaudited | critical | 495 | 24.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/higgs_tree_level_mean_field_runner_2026_05_03.py` |
+| 7 | `three_generation_structure_note` | bounded_theorem | unaudited | critical | 711 | 30.48 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_generation_structure_narrow_spectrum.py` |
+| 8 | `s3_general_r_derivation_note` | bounded_theorem | unaudited | critical | 709 | 18.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_cap_uniqueness.py` |
+| 9 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | positive_theorem | unaudited | critical | 525 | 12.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 10 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | unaudited | critical | 384 | 16.59 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` |
 | 11 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | unaudited | critical | 292 | 14.20 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hw1_second_order_return_shape_theorem.py` |
 | 12 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | critical | 255 | 10.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py` |

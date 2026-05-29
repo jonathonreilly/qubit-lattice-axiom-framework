@@ -22,9 +22,12 @@ trace_class: negative_route_pruning
 reachability_to_target: prunes
 proposal_allowed: false
 review_disposition: pass_with_no_go_claim
-pr_status: pending
+pr_status: open_draft
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2165
 next_exact_action: >
-  Commit, push, and open a review PR for the exact negative boundary.
+  Wait for reviewer/auditor handling of the draft PR, then target the next
+  positive route: physical color-matrix connected-source authority or exact
+  disconnected/singlet coefficient computation.
 stop_condition: >
-  Stop this block after the PR is open and verified, then report the next
-  positive science target.
+  This block is complete after PR verification; next work should start from a
+  fresh branch on current origin/main unless intentionally stacking.

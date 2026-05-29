@@ -1,0 +1,63 @@
+# 3D Dense Spent-Delay `z=2..6` Endpoint Packet
+
+**Date:** 2026-05-29
+**Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
+**Claim type:** positive_theorem
+**Primary runner:** [`scripts/lattice_3d_dense_z2_z6_endpoint_check.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_check.py)
+
+## Purpose
+
+This packet repairs the exact missing endpoint named by the audit blocker for
+the archived dense spent-delay row. The existing retained-bounded resolution
+note already supports the live `z=2..5` finite card through
+[`scripts/lattice_3d_dense_10prop.py`](../scripts/lattice_3d_dense_10prop.py).
+This packet does not mutate that audited primary runner. Instead it adds a
+dedicated endpoint runner that imports the same dense-lattice harness and
+checks the previously omitted `z=6` row alongside `z=2..5`.
+
+No new axiom, observed target value, fitted selector, or external comparator is
+introduced. The scope is the finite dense spent-delay harness only.
+
+## Live Endpoint Runner
+
+The runner computes detector-centroid shift, near-mass probability gain, and
+mass-side bias for `z = 2, 3, 4, 5, 6` in the existing dense `L=12`,
+`W=6`, `h=1.0`, 49-edge/node spent-delay harness.
+
+Current live output:
+
+```text
+ z     centroid       P_near         bias         sign
+ 2 +3.101326e-03 +1.469137e-03 +1.070972e-01   ATTRACTIVE
+ 3 +1.941146e-03 +3.741160e-04 +1.763808e-01   ATTRACTIVE
+ 4 +1.157377e-03 +6.261414e-04 +1.136756e-01   ATTRACTIVE
+ 5 +6.932863e-04 +7.148235e-04 +4.860136e-02   ATTRACTIVE
+ 6 +5.723120e-04 +5.356147e-04 +1.115616e-04   ATTRACTIVE
+
+hierarchy-aligned support: 5/5 points
+ASSERTIONS: PASS
+```
+
+The `z=6` endpoint is positive on all three finite signs used by the harness:
+centroid shift, near-window probability, and side-bias. The side-bias is small
+at `z=6`, so the safe read is endpoint support for the finite tested card, not
+an asymptotic attraction theorem.
+
+## Claim Boundary
+
+This packet supports only the following bounded positive claim:
+
+> In the existing 3D dense spent-delay harness, the finite endpoint scan
+> `z=2..6` has hierarchy-aligned attractive support at every tested point,
+> including the previously omitted `z=6` endpoint.
+
+It does not claim:
+
+- attraction for all source distances;
+- continuum or asymptotic attraction;
+- physical Newtonian gravity;
+- a stronger distance-law theorem than the finite printed endpoint scan;
+- effective retained status before independent audit.
+
+Independent audit should use this row to decide whether the old z=6 runner
+artifact blocker has been repaired by a dedicated endpoint certificate.

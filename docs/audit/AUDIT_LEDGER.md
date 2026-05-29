@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1193 |
+| unaudited | 1192 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 23 |
-| ~~audited_conditional~~ | 20 |
+| ~~audited_conditional~~ | 21 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 923 |
-| `audited_conditional` | 20 |
+| `audited_conditional` | 21 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1429 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -1056,6 +1056,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2018,6 +2019,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs the two graph families, applies the layer-normalized propagator, computes corrected Sorkin I3 including -P(empty), and reports machine-precision ratios. The helper sources are present and implement graph generation, field computation, and propagation rather than importing or hard-coding the contested result.
 - **rationale:** The source note's qualitative claims are bounded to the displayed runner configuration and are supported by a completed cached run. The runner source genuinely computes the amplitudes and corrected Born ratios from generated DAGs and helper primitives; it does not merely print constants or compare against an imported target. The note's table values are stale relative to the included stdout, but the mismatch does not change the audited conclusion because the current stdout still places both lanes at 1e-16 to 1e-15 and preserves the stated non-monotone ordering/no-winner summary.
 - **auditor confidence:** medium
+
+### `born_rule_from_gleason_busch_derivation_note_2026-05-20`
+
+- **Note:** [`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](../../docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the conditional Born-rule route: Gleason-Busch fixes p(E)=Tr(σE) on the qubit-lattice effect algebra, then σ is identified with the tracial state and projective record conditioning is used to obtain the standard pure-state Born rule.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-born_rule_from_gleason_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A1+A2 with the no-extra-structure identification pins σ = ρ_ref = ⊗_x I/2 for the pre-record system.  _(class `B`)_
+- **chain closes:** False — The Gleason-Busch probability-form step is standard, and the cited tracial-state authority retains only uniqueness of the tracial state. The chain still needs the open identification of that state with the physical pre-record reference, plus the record-as-Kraus/readout bridge for the full post-record conclusion.
+- **rationale:** The source note itself admits that the no-extra-structure/pre-record identification, Lüders/update premise, and persistent-record-as-Kraus mapping are not derived in the restricted packet. The cited tracial-state authority is retained for unique tracial-state characterization only and explicitly says the pre-record identification remains an open admission, so retained status cannot propagate through that identification. Even if the projective-measurement component is treated as resolved elsewhere, that authority is not included as a cited retained dependency here and the pre-record identification remains a blocker.
+- **open / conditional deps cited:**
+  - `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`
+- **auditor confidence:** high
 
 ### `bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10`
 

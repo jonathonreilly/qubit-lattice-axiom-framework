@@ -20617,24 +20617,48 @@
       "verdict_rationale": null
     },
     "born_rule_from_gleason_busch_derivation_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T21:16:37.206615+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-born_rule_from_gleason_b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Gleason-Busch probability-form step is standard, and the cited tracial-state authority retains only uniqueness of the tracial state. The chain still needs the open identification of that state with the physical pre-record reference, plus the record-as-Kraus/readout bridge for the full post-record conclusion.",
       "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Audited the conditional Born-rule route: Gleason-Busch fixes p(E)=Tr(\u03c3E) on the qubit-lattice effect algebra, then \u03c3 is identified with the tracial state and projective record conditioning is used to obtain the standard pure-state Born rule.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T21:16:37.206615+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -20643,20 +20667,22 @@
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "A1+A2 with the no-extra-structure identification pins \u03c3 = \u03c1_ref = \u2297_x I/2 for the pre-record system.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "82ef80be0f3712a075a5f5abfa2a8c0c64e0be1806a66bf322eb6c458e19c0a8",
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite retained bridge theorems for pre-record identification and persistent-record-as-Kraus/readout mapping, and wire any resolved projective-measurement/L\u00fcders authority as a direct dependency before re-audit.",
+      "open_dependency_paths": [
+        "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-29T12:08:46.580919+00:00",
@@ -20719,7 +20745,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -20730,7 +20756,7 @@
       "runner_path": null,
       "title": "Born Rule via Gleason\u2013Busch on the Pre-Record Reference State: Bounded Support / Repair Route",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note itself admits that the no-extra-structure/pre-record identification, L\u00fcders/update premise, and persistent-record-as-Kraus mapping are not derived in the restricted packet. The cited tracial-state authority is retained for unique tracial-state characterization only and explicitly says the pre-record identification remains an open admission, so retained status cannot propagate through that identification. Even if the projective-measurement component is treated as resolved elsewhere, that authority is not included as a cited retained dependency here and the pre-record identification remains a blocker."
     },
     "born_scattering_comparison_note": {
       "audit_date": null,

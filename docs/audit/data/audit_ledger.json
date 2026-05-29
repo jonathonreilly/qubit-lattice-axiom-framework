@@ -282554,11 +282554,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 19.482,
+      "load_bearing_score": 22.482,
       "load_bearing_step": "For coordinate projectors P_i and cyclic permutation C, the products P_i C^k P_j give all matrix units E_ij, hence <D_3,C> = M_3(C). Equivalently, D_3-invariance forces any invariant subspace to be span{X_i : i in S}, and C-invariance forces S to be empty or all of {1,2,3}; a quotient preserving both structures requires such an invariant kernel, so only the trivial kernel or whole space is possible.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "ecc3386078b1401209aeca659957c594acc0ae989fcffccffacd11f7ee8845e4",
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": null,
@@ -283287,24 +283287,42 @@
       "verdict_rationale": "The finite algebra closes from the displayed Cl(3) matrices alone, with no hidden physical semantics or comparator. The runner constructs the generators, exhausts all 254 nonempty proper coordinate subsets, checks flip closure, and cached output reports PASS=14 FAIL=0. N1-N8 passes for the narrow claim because plausible counter-routes such as non-coordinate subspaces, path-integral rooting, and physical generation interpretation are explicitly outside scope rather than claimed closed."
     },
     "three_generation_structure_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T03:10:19.348385+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "Exact finite-dimensional algebra theorem on the retained hw=1 carrier H_hw=1 ~= C^3 with basis X_1, X_2, X_3: the coordinate projectors D_3 together with the C3[111] cycle generate M_3(C), and the only subspaces invariant under both retained structures are 0 and C^3. Equivalently, there is no nontrivial proper quotient preserving both translation-character separation and the C3[111] cycle. Physical-species interpretation, SM-generation identification, full staggered-carrier/substrate realization, and broader matter-content closure are out of scope."
+        },
+        "dep_claim_type": {
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 30.476,
+        "runner_hash": "acfc459efc1a8a8fb8d28f9bfd2c519169f4b9b4ccc207d5b31cd78c6bab3774",
+        "transitive_descendants": 711
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex_fresh_three_gen_structure_second_pass_2026_05_29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independent exact enumeration gives 8 corners, degeneracies [1,3,3,1], masses 0,2,4,6 by Hamming weight, and hw=1 as the unique lightest nonzero orbit. The admitted staggered-Dirac/Wilson surface is present in the Tier-A registry, and the direct dependency's scoped algebra result supplies only the finite C^3/M_3(C) no-proper-quotient statement without importing physical-species or SM-generation claims.",
       "claim_id": "three_generation_structure_note",
-      "claim_scope": "Bounded local structure on the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface: {0,pi}^3 corner spectrum, Wilson mass m=2hw, degeneracy 1+3+3+1, hw=1 as the lightest nonzero triplet, plus only the direct dependency's narrow M_3(C)/no-proper-quotient statement for that triplet.",
+      "claim_scope": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-29T03:05:29.164083+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-29T03:10:19.348385+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -283319,27 +283337,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-29T03:10:19.348135+00:00",
+          "auditor": "codex_fresh_three_gen_structure_second_pass_2026_05_29",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 42,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 30.476,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At BZ corners p_mu in {0, pi}, m(p)=sum_mu(1-cos p_mu)=2 hw(p), so the eight corners split as 1+3+3+1 and hw=1 is exactly the threefold lightest nonzero-mass orbit, with the M_3(C)/no-proper-quotient part imported from the direct audited dependency.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "684d23754000f7c39047f1dfb09801c20f68aa498cb7f69789fd3588388dc104",
       "note_path": "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the Tier-A admission for staggered_dirac_realization_gate_note_2026-05-03 is retired/changed, or if the direct M_3(C)/no-proper-quotient dependency scope changes.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -283670,16 +283699,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 8,
+        "B": 7,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 15
       },
       "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
       "title": "Three-Generation Matter Structure Note",
       "transitive_descendants": 711,
-      "verdict_rationale": null
+      "verdict_rationale": "The spectral calculation is a finite algebraic identity on the explicitly admitted bounded surface, not a tuned numerical comparator or a physical-generation identification. The runner's math checks agree with an independent exact enumeration, while its source-firewall checks confirm the note excludes no-rooting, physical lattice necessity, CKM, chirality, and new-axiom claims. The no-go/wall discipline gate does not expose an inflated wall set: there is a single registered Tier-A admitted surface, the no-proper-quotient residual exactly matches the direct dependency's audited scope, and all broader negative/physical claims are explicitly out of scope."
     },
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
       "audit_date": "2026-05-23T12:56:41.423657+00:00",

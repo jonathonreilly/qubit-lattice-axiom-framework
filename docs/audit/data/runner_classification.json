@@ -14004,6 +14004,18 @@
       "dominant_class": null,
       "runner": "scripts/lattice_3d_dense_10prop.py"
     },
+    "lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/lattice_3d_dense_z2_z6_endpoint_check.py"
+    },
     "lattice_3d_dense_window_extension_note": {
       "assert_count": 0,
       "counts": {
@@ -53915,6 +53927,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/lattice_3d_dense_z2_z6_endpoint_check.py": {
+      "assert_count": 0,
+      "claims": [
+        "lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/lattice_3d_l2_numpy_h0125_audit.py": {

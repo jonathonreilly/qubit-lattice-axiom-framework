@@ -2381,14 +2381,6 @@
       "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
     },
     {
-      "from": "broad_gravity_derivation_note",
-      "to": "gravity_clean_derivation_note"
-    },
-    {
-      "from": "broad_gravity_derivation_note",
-      "to": "gravity_full_self_consistency_note"
-    },
-    {
       "from": "broad_surrogate_point_source_compare_note",
       "to": "ordered_lattice_packet_reidentification_note"
     },
@@ -44276,17 +44268,14 @@
     "broad_gravity_derivation_note": {
       "claim_id": "broad_gravity_derivation_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem.",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "gravity_clean_derivation_note",
-        "gravity_full_self_consistency_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "386d34d5c0a874ab1f9b596a1c4898ca8817fd6d176ea17b7e2cbf2b49698777",
+      "note_hash": "403bca397aef232ebd7f5fe81a3bc22b8aa49684ea9b6a79d4168f117919bd51",
       "path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
-      "runner_path": null,
-      "title": "Broad Gravity Bundle: Per-Signature Bounded IF-Chains"
+      "runner_path": "scripts/broad_gravity_signature_algebra_scope_check.py",
+      "title": "Broad Gravity Signature Algebra Packet"
     },
     "broad_surrogate_point_source_compare_note": {
       "claim_id": "broad_surrogate_point_source_compare_note",
@@ -87197,6 +87186,7 @@
     "bound_state_selection_note",
     "branch_cleanup_recommendation_2026-05-03",
     "breakthrough_direction_memo_2026-04-10",
+    "broad_gravity_derivation_note",
     "c3_symmetry_preserved_interpretation_note_2026-05-17",
     "carrier_orbit_invariance_note_2026-05-03",
     "causal_escape_window_note",

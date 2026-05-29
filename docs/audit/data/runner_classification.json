@@ -1800,6 +1800,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_bridge_lanes_promotion_2026_05_10_lanes.py"
     },
+    "broad_gravity_derivation_note": {
+      "assert_count": 0,
+      "counts": {
+        "A": 3,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/broad_gravity_signature_algebra_scope_check.py"
+    },
     "broad_surrogate_point_source_compare_note": {
       "assert_count": 0,
       "counts": {
@@ -29410,6 +29422,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/broad_gravity_signature_algebra_scope_check.py": {
+      "assert_count": 0,
+      "claims": [
+        "broad_gravity_derivation_note"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/broad_surrogate_point_source_compare.py": {
@@ -58266,7 +58293,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 358,
     "dominant_class_distribution": {
       "A": 268,
       "B": 296,

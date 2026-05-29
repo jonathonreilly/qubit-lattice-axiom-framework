@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/koide_u1b_forbidden_by_c3_order_relation_runner.py
+runner_sha256: 76aee7477b187fab53ed4653886de81ce223943a2b340e3c887a2f4a9e177051
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+========================================================================
+Koide: continuous U(1)_b on the generation doublet is FORBIDDEN by C^3=I
+Note: KOIDE_U1B_FORBIDDEN_BY_C3_ORDER_RELATION_NARROW_NO_GO_NOTE_2026-05-29.md
+========================================================================
+[PASS] C^3 = I (retained order-3 generation relabeling)
+[PASS] (A) doublet rotation (B1,B2) by alpha == rephasing C -> e^{i alpha} C  verified for alpha in {0.3,1.0,2.1,2.7}
+[PASS] (B) the 3 cube-root rephasings preserve C^3=I (discrete C_3)
+[PASS] (B) every generic continuous rephasing BREAKS C^3=I (no U(1)_b)  e^{3 i alpha} != 1 for alpha not in (2pi/3)Z
+[PASS] (B) conjugation preserves order: (g C g^dag)^3 = I  so g C g^dag = e^{ia}C would still require e^{3ia}=1
+[PASS] (C) gauge U(1) (generation-blind scalar) acts trivially on the doublet  g H g^dag = H -> b unchanged
+[PASS] (D) generic translation maps C OUT of the C_3-circulant class  P C P^dag not proportional to C -> not a mass-structure symmetry
+[PASS] (D) off-grid linear translation (slope 0.4) also leaves the class
+[PASS] (D) only slope 2pi k/3 stays in class = the discrete C_3 character
+[PASS] (E) <C_3 shift, K reflection> on doublet = finite group of order 6  |G| = 6; rotation angles = [0, 120, 240] (discrete, not U(1))
+[PASS] (F) C_3-invariant quadratic weight is forced ∝ I (auto rotation-symmetric)  so the open datum is the COUNTING (det_C vs det_R), not a broken weight-symmetry
+[PASS] (G) r=|b|^2/a^2=1/2 => E_+ = E_perp (equal block) => Q = 2/3 (det_C)  E_+=3.000, E_perp=3.000, Q=0.666667
+========================================================================
+TOTAL: PASS=12 FAIL=0
+VERDICT: NO-GO. det_C / Koide Q=2/3 requires a continuous U(1)_b rotation of the generation doublet; that rotation is identically a continuous rephasing of the order-3 shift C, which the retained relation C^3=I forbids (only the discrete C_3 survives). Gauge circles are generation-blind and translations give only the discrete C_3. Hence no continuous symmetry on the generation factor can force det_C; the measure-selection is a genuine minimal import.
+========================================================================
+
+----- stderr -----
+

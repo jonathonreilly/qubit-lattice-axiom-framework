@@ -1,0 +1,68 @@
+==================================================================================
+U-INTEGRATED COMBINED RP FOR MIXED GAUGE+FERMION OBSERVABLES
+  (root gate of the Cl(3)/Z^3 continuum-QFT program; scratch evidence only)
+==================================================================================
+  mass m=0.5, a_tau=1.0.  Settled Berezin convention:
+    <chi_b bar_chi_a>=+(M^-1)[b,a],  <bar_chi_a chi_b>=-(M^-1)[b,a].
+
+----------------------------------------------------------------------------------
+NEGATIVE CONTROL: single-step NAIVE reflected fermion Gram non-PSD
+  (must reproduce min eig ~ -0.8 -> validates Wick machinery + the no-go)
+----------------------------------------------------------------------------------
+  basis size=9   single-step naive Gram min eig = -0.8000
+  -> reproduces documented no-go: PASS
+
+----------------------------------------------------------------------------------
+R1: ACTUAL WILSON TEMPORAL-GAUGE TRANSFER KERNEL IS POSITIVE-DEFINITE
+  K(U,U') = exp(-beta(1-Re Tr(U'U^dag)/nc)) on the real plaquette boundary
+  (Osterwalder-Seiler gauge-half, instantiated -- not the abstract CS)
+----------------------------------------------------------------------------------
+  beta= 1.0: U(1) kernel min eig=+9.175e-12  SU(3) kernel min eig=+1.134e-01  PSD:True
+  beta= 2.0: U(1) kernel min eig=+1.464e-08  SU(3) kernel min eig=+2.567e-01  PSD:True
+  beta= 4.0: U(1) kernel min eig=+1.019e-05  SU(3) kernel min eig=+5.787e-01  PSD:True
+  -> R1 (Wilson boundary gauge transfer PSD): PASS
+
+----------------------------------------------------------------------------------
+ROUTE T [U(1)]: COMBINED TRANSFER-MATRIX GRAM on H_gauge (x) H_ferm
+  <Omega|O^dag T_full O|Omega>, T_full=(Kg^1/2(x)I)(oplus_k Bk^dag Bk)(Kg^1/2(x)I)
+----------------------------------------------------------------------------------
+  H dim=40  gauge transfer min eig=2.660e-02  (PSD bosonic)
+  per-config fermion: max|Im decay|=2.16e-16, min decay=1.5472e-01
+  combined T_full min eig=+1.033e-03  operator-Schmidt rank=3 (>1 => ENTANGLED: True)
+  observables=24 (genuinely mixed=15)  ||G-G^dag||=1.26e-16
+  MIXED Gram min eig=-5.330216e-17  max eig=3.0851e+00
+  -> Route T [U(1)] PSD: PASS
+
+----------------------------------------------------------------------------------
+ROUTE T [SU(3)]: COMBINED TRANSFER-MATRIX GRAM on H_gauge (x) H_ferm
+----------------------------------------------------------------------------------
+  H dim=512  gauge transfer min eig=8.906e-01
+  per-config fermion: max|Im decay|=8.60e-16, min decay=1.4590e-01
+  combined T_full min eig=+4.410e-05  operator-Schmidt rank=8 (ENTANGLED: True)
+  observables=112 (genuinely mixed=81)  ||G-G^dag||=3.10e-17
+  MIXED Gram min eig=-2.739590e-16  max eig=1.1723e+00
+  -> Route T [SU(3)] PSD: PASS
+
+----------------------------------------------------------------------------------
+ROUTE C [U(1)]: LITERAL U-INTEGRATED COMBINED GRAM (real det>0 weight, Haar)
+----------------------------------------------------------------------------------
+  observables=24 (genuinely mixed=15)  configs=4000
+  min det weight=1.3131e+00 (nonpos=0)  max|Im decay|=8.87e-16
+  ||G-G^dag||=4.34e-18  MIXED Gram min eig=-7.991400e-17
+  -> Route C [U(1)] PSD: PASS
+
+----------------------------------------------------------------------------------
+ROUTE C [SU(3)]: LITERAL U-INTEGRATED COMBINED GRAM (real det>0 weight, Haar)
+----------------------------------------------------------------------------------
+  observables=112 (genuinely mixed=81)  configs=3000
+  min det weight=2.6180e+00 (nonpos=0)  max|Im decay|=9.15e-16
+  ||G-G^dag||=1.84e-18  MIXED Gram min eig=-2.738899e-16
+  -> Route C [SU(3)] PSD: PASS
+
+==================================================================================
+SCORECARD: PASS=6 FAIL=0
+  negative control      : single-step naive Lagrangian Gram non-PSD (sanity)
+  R1                    : actual Wilson temporal-gauge transfer PSD (OS gauge-half)
+  Route T [U(1)]/[SU(3)]: combined transfer-matrix MIXED Gram PSD (entangled T_full)
+  Route C [U(1)]/[SU(3)]: literal U-integrated combined MIXED Gram PSD (real det>0)
+==================================================================================

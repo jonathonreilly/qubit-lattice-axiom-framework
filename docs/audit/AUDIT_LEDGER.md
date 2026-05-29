@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 157 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 582 |
+| **retained_bounded** | 583 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1156 |
+| unaudited | 1155 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 898 |
+| `audited_clean` | 899 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1386 |
+| `unaudited` | 1385 |
 
 | claim_type | count |
 |---|---:|
@@ -269,6 +269,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cycle_battery_scaled_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_break_frontier_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_break_slice_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `cyclic_dft_uniform_magnitude_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3541,6 +3542,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Yes. The registered runner completed successfully and checks the finite slice described by the source note.
 - **rationale:** The clean content is the finite cycle-break slice, not a universal repair. The runner completed successfully and the classified check surface is {'A': 0, 'B': 0, 'C': 0, 'D': 0, 'total_pass': 0}. Residual risk is generalization outside the matched slice.
 - **auditor confidence:** medium
+
+### `cyclic_dft_uniform_magnitude_bounded_note_2026-05-26`
+
+- **Note:** [`CYCLIC_DFT_UNIFORM_MAGNITUDE_BOUNDED_NOTE_2026-05-26.md`](../../docs/CYCLIC_DFT_UNIFORM_MAGNITUDE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite cyclic-character algebra theorem: for the normalized DFT/character table of Z_N, with N a positive cyclic-group order, every entry F_N[j,k]=exp(2*pi*i*j*k/N)/sqrt(N) has magnitude-squared 1/N; in particular all Z_3 entry overlap magnitudes are 1/3. PMNS/residual-symmetry, dynamics-lane, K-theory, empirical, and framework-bridge interpretations are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-cyclic-dft-uniform-magnitude`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Each omega_N^(j k) is a unit complex number, so |omega_N^(j k)/sqrt(N)|^2 = 1/N for every j,k.  _(class `A`)_
+- **chain closes:** True — The independent check is the exact modulus identity |exp(i theta)|=1 combined with the normalized 1/sqrt(N) factor, giving |F_N[j,k]|^2=1/N for all indices. Character orthogonality is the standard finite cyclic character-table form and no physical identification is used.
+- **rationale:** The row closes as a bounded finite-group algebra statement. The source's proof uses only the unit modulus of cyclic characters and the normalized DFT factor, and the runner corroborates sampled N values plus all Z_3 entries with PASS=19 FAIL=0. Residual risk is downstream overuse: this verdict does not identify any PMNS column, residual symmetry, K-theory object, dynamics invariant, or framework carrier with the cyclic DFT table.
+- **auditor confidence:** high
 
 ### `cyclic_projector_compression_narrow_theorem_note_2026-05-02`
 

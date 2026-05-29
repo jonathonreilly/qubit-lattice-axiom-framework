@@ -15,6 +15,15 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
          leading lattice correction = dim-6 ell=4 cubic harmonic, O(a^2).
 
 
+=== Part 0: canonical staggered phases -> reduced-BZ spin/taste operator ===
+
+  [PASS] Canonical eta flip matrices alpha_mu obey Cl(4): {alpha_mu,alpha_nu}=2delta  (herm=0.0e+00, square=0.0e+00, anti=0.0e+00)
+  [PASS] Blocked free staggered difference reduces exactly to i sin(p_mu a)/a * alpha_mu  (max residual after exp(iap.b) rephasing = 4.7e-16)
+  [PASS] Full blocked action is m I_16 + i sum_mu alpha_mu sin(p_mu a)/a  (max full-operator residual = 1.1e-16)
+  [PASS] Alpha_mu generate a 16-dim Cl_4 algebra with 16-dim commutant (taste M_4)  (generated rank=16, commutant dim=16)
+  [PASS] Taste spectator degeneracy: blocked spectrum is four copies of the 4-spinor block  (mult(m+i|s|)=8, mult(m-i|s|)=8, |s|=0.615924)
+  [PASS] Derived 16x16 operator has closed inverse with Delta=m^2+sum sin^2/a^2  (max|D16 G16 - I| = 2.8e-17)
+
 === Part 1: Euclidean Clifford algebra + staggered operator ===
 
   [PASS] Euclidean Clifford {g_mu,g_nu}=2 delta (Hermitian gammas)  (max|off|=0.0e+00, max|diag-2|=0.0e+00)

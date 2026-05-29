@@ -25,17 +25,21 @@ Interpretation:
 from __future__ import annotations
 
 from dataclasses import dataclass
-from _frontier_loader import load_frontier
 
+import frontier_coarse_grained_exterior_law as coarse
+import frontier_microscopic_dirichlet_bridge_principle as microscopic
+import frontier_oh_schur_boundary_action as schur
+import frontier_same_source_metric_ansatz_scan as same_source
 import numpy as np
 from scipy.ndimage import map_coordinates
 
 
 
-same_source = load_frontier("same_source_metric", "frontier_same_source_metric_ansatz_scan.py")
-coarse = load_frontier("coarse_grained", "frontier_coarse_grained_exterior_law.py")
-schur = load_frontier("schur_boundary", "frontier_oh_schur_boundary_action.py")
-microscopic = load_frontier("microscopic_dirichlet", "frontier_microscopic_dirichlet_bridge_principle.py")
+# Keep the microscopic Dirichlet bridge as an explicit import even though this
+# runner only needs its construction transitively through the helper surface.
+# The audit pipeline records static imports in helper_runner_paths; dynamic
+# _frontier_loader imports were opaque to the restricted audit packet.
+_MICROSCOPIC_BRIDGE_MODULE = microscopic
 
 
 @dataclass

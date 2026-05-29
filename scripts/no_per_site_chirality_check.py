@@ -1,7 +1,7 @@
-"""No per-site γ_5 chirality operator on Cl(3) Pauli rep.
+"""No gamma5 chirality operator in the supplied Cl(3) Pauli M_2(C) rep.
 
-For each site x ∈ Z^3, by axiom_first_cl3_per_site_uniqueness ρ : Cl(3) → M_2(C)
-with γ_i ↦ σ_i. The Cl(3) volume element
+Given the supplied representation rho : Cl(3) -> M_2(C) with gamma_i -> sigma_i,
+the Cl(3) volume element
 
     ω := γ_1 γ_2 γ_3
 
@@ -11,12 +11,15 @@ acts in Pauli rep as σ_1 σ_2 σ_3 = i I_2. Therefore:
     (2) ω = i·I_2 is a scalar (proportional to identity)
     (3) NO element of Cl(3) anticommutes with all three generators γ_i
     (4) Therefore there is NO chirality operator γ_5 satisfying
-        γ_5² = +I_2 and {γ_5, γ_i} = 0 for all i, on per-site Hilbert.
+        γ_5² = +I_2 and {γ_5, γ_i} = 0 for all i, inside this supplied M_2(C)
+        Pauli carrier.
 
 This is the per-site instance of the standard "no chirality in odd D"
 fact (Lawson-Michelsohn): for Cl(p,q) with n = p+q odd, the volume element
 is central, hence chirality requires extending the algebra (e.g. by
-introducing a temporal direction, n+1 even).
+introducing a temporal direction, n+1 even). This runner does not identify the
+physical framework H_x with this carrier; it only checks the supplied-Pauli
+M_2(C) no-go.
 """
 from __future__ import annotations
 
@@ -25,7 +28,7 @@ import numpy as np
 
 def main() -> None:
     print("=" * 72)
-    print("NO PER-SITE γ_5 CHIRALITY ON Cl(3) PAULI REP")
+    print("NO γ_5 CHIRALITY INSIDE SUPPLIED Cl(3) PAULI M_2(C) REP")
     print("=" * 72)
     print()
 
@@ -124,13 +127,13 @@ def main() -> None:
     # ----- Test 5: No M satisfying both M² = +I_2 and {M, σ_i} = 0 -----
     print("-" * 72)
     print("TEST 5: No γ_5 candidate exists — no M satisfies (γ_5² = +I_2)")
-    print("        AND {γ_5, σ_i} = 0 for all i, on Pauli per-site Hilbert.")
+    print("        AND {γ_5, σ_i} = 0 for all i, inside supplied Pauli M_2(C).")
     print("-" * 72)
     # By Test 4, the only M satisfying {M, σ_i} = 0 for all i is M = 0.
     # M = 0 doesn't satisfy M² = +I_2. Hence no γ_5 candidate exists.
     print("  Test 4 proved: only zero anticommutes with all three σ_i.")
     print("  Zero matrix doesn't satisfy γ_5² = +I_2 (since 0² = 0 ≠ I).")
-    print("  Therefore no γ_5 exists on per-site Cl(3) Hilbert.")
+    print("  Therefore no γ_5 exists inside the supplied Cl(3) Pauli M_2(C) carrier.")
     t5_ok = t4_ok  # follows directly from Test 4
     print(f"  STATUS: {'PASS' if t5_ok else 'FAIL'}")
     print()

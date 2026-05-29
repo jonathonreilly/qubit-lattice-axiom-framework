@@ -1,5 +1,5 @@
 ========================================================================
-NO PER-SITE γ_5 CHIRALITY ON Cl(3) PAULI REP
+NO γ_5 CHIRALITY INSIDE SUPPLIED Cl(3) PAULI M_2(C) REP
 ========================================================================
 
   ω = σ_1 σ_2 σ_3 =
@@ -35,11 +35,11 @@ TEST 4: No nonzero M ∈ M_2(C) anticommutes with all three σ_i
 
 ------------------------------------------------------------------------
 TEST 5: No γ_5 candidate exists — no M satisfies (γ_5² = +I_2)
-        AND {γ_5, σ_i} = 0 for all i, on Pauli per-site Hilbert.
+        AND {γ_5, σ_i} = 0 for all i, inside supplied Pauli M_2(C).
 ------------------------------------------------------------------------
   Test 4 proved: only zero anticommutes with all three σ_i.
   Zero matrix doesn't satisfy γ_5² = +I_2 (since 0² = 0 ≠ I).
-  Therefore no γ_5 exists on per-site Cl(3) Hilbert.
+  Therefore no γ_5 exists inside the supplied Cl(3) Pauli M_2(C) carrier.
   STATUS: PASS
 
 ------------------------------------------------------------------------

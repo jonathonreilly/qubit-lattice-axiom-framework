@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 161 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 586 |
+| **retained_bounded** | 587 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 28 |
-| unaudited | 1146 |
+| unaudited | 1145 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 908 |
+| `audited_clean` | 909 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1376 |
+| `unaudited` | 1375 |
 
 | claim_type | count |
 |---|---:|
@@ -621,6 +621,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
@@ -9286,6 +9287,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The conclusion (1) follows by direct algebra: K_P† E K_P = P† E P = P E P, using P† = P.  _(class `A`)_
 - **chain closes:** True — The retained_bounded LSP-projective authority supplies the canonical-frame premise K_P=P for ideal unrefined projective measurements, and the remaining equality is direct matrix algebra. The runner checks the algebra symbolically and verifies that alternative Kraus choices are distinct rather than silently forced.
 - **rationale:** All load-bearing non-axiom dependencies in the restricted packet are retained-grade: Kraus-Choi is retained and LSP-projective is retained_bounded; the Minimal Axioms node is an axiom-premise carve-out. The theorem is clean only at bounded scope, namely the canonical projective Lüders/Naimark frame, not uniqueness of all sequential products. Same-packet negative-boundary checks do not defeat that scoped result because the alternative-Kraus routes are explicitly outside the canonical-frame claim.
+- **auditor confidence:** high
+
+### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`
+
+- **Note:** [`M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md`](../../docs/M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-dimensional algebra theorem: with d=4 supplied as an explicit bounded parameter, dim_C(M_2(C)^tensor4)=4^4=256, equivalently M_2(C)^tensor4 ~= M_16(C) has complex dimension 16^2=256, and the reciprocal bookkeeping value is 1/256. No derivation of d=4, m_W, a lepton mass scale, charged-lepton masses, or a bridge to the empirical open gate is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since dim_C(M_2(C))=4 and finite tensor-product dimensions multiply, dim_C(M_2(C)^tensor d)=4^d, so at the bounded parameter d=4 the dimension is 4^4=256 and the reciprocal is 1/256.  _(class `A`)_
+- **chain closes:** True — The theorem closes by basis counting and tensor-product dimension multiplicativity over finite-dimensional complex vector spaces. The only physics-sensitive quantity, d=4, is an explicit bounded parameter rather than an output.
+- **rationale:** The row is a class-A algebraic bookkeeping theorem and does not import PDG values, mass-scale observations, or a physical dimension derivation. The cached runner reports PASS=14, FAIL=0 under SHA f8e6d0d9e6a6b88a48b3cea28cf0b4f73536762df53a0784c240c0dcf71a5e20, including explicit tensor basis/rank checks at d=4. Clean status is bounded by the claim_type: downstream effective status should be retained_bounded, not an unbounded derivation of the lepton scale or d=4.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

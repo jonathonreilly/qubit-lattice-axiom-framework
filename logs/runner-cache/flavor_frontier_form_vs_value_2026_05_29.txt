@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/flavor_frontier_form_vs_value_2026_05_29.py
+runner_sha256: 93a76d05845a1ab04cefdf926b0548a8232078888c7e1d51189c4fc32cd7393a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[PASS] koide_circulant_character_bridge_narrow_theorem_note_2026-05-09 is retained-grade  (effective_status=retained)
+[PASS] ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10 is retained-grade  (effective_status=retained)
+[PASS] ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10 is retained-grade  (effective_status=retained)
+[PASS] wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10 is retained-grade  (effective_status=retained)
+[PASS] ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26 is retained-grade  (effective_status=retained_bounded)
+[PASS] pmns_oriented_cycle_channel_value_law_note is retained-grade  (effective_status=retained)
+[PASS] pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16 is retained-grade  (effective_status=retained)
+[PASS] pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26 is retained-grade  (effective_status=retained_bounded)
+[PASS] quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28 is retained-grade  (effective_status=retained_no_go)
+[PASS] quark_c3_circulant_source_law_boundary_note_2026-04-28 is retained-grade  (effective_status=retained_no_go)
+[PASS] quark mass spectrum Koide scheme remains open_gate  (effective_status=open_gate)
+[PASS] CKM CP angle arithmetic  (delta=65.905157)
+[PASS] PDG gamma comparison arithmetic
+[PASS] Koide and CKM 2/3 values are numerically equal
+[PASS] CKM perpendicular weight is distinct from 2/3  (2/9=0.222222)
+
+PASS=15 FAIL=0
+Form support is retained-grade; continuous flavor values remain separate inputs/open gates.
+
+----- stderr -----
+

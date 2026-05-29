@@ -47889,14 +47889,14 @@
     },
     "dimension_selection_note": {
       "claim_id": "dimension_selection_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "31133faae3905b03d27efc52392fcb8689f2eb9b7fafc175e0d1aca19a49ca8d",
+      "note_hash": "0fd525a195d09e238e39927bb57ddae70bc414f15d78180a1788a895f83f03e2",
       "path": "docs/DIMENSION_SELECTION_NOTE.md",
-      "runner_path": "scripts/frontier_dimension_selection.py",
+      "runner_path": null,
       "title": "Dimension Selection: Does Self-Consistency Require d = 3?"
     },
     "dimension_selection_upper_bound_textbook_import_note_2026-05-17": {
@@ -48220,15 +48220,15 @@
     },
     "distance_law_breakpoint_note": {
       "claim_id": "distance_law_breakpoint_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "distance_law_portability_note",
         "sign_portability_invariant_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "24bff63d0d5d742245b5d59f1ec472b70780530129439c038d37ed7bd08be219",
+      "note_hash": "1e5f541224512c30da7f20fad3100c79500848ccc7f543cc5c6fbaad561e6ed6",
       "path": "docs/DISTANCE_LAW_BREAKPOINT_NOTE.md",
       "runner_path": "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py",
       "title": "Distance Law Breakpoint Note"
@@ -87279,20 +87279,20 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 690,
+      "bounded_theorem": 692,
       "decoration": 1,
       "meta": 195,
       "no_go": 86,
-      "none": 1413,
+      "none": 1411,
       "open_gate": 58,
       "positive_theorem": 171
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1092,
+      "bounded_theorem": 1093,
       "decoration": 1,
       "meta": 195,
       "no_go": 189,
-      "none": 424,
+      "none": 423,
       "open_gate": 133,
       "positive_theorem": 580
     },
@@ -87300,6 +87300,6 @@
     "leaf_count": 826,
     "node_count": 2614,
     "root_count": 871,
-    "runners_with_path": 2189
+    "runners_with_path": 2188
   }
 }

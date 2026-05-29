@@ -51762,52 +51762,42 @@
       "verdict_rationale": null
     },
     "dimension_selection_note": {
-      "audit_date": "2026-05-23T19:58:28.237184+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 2.585,
-        "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
-        "transitive_descendants": 2
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T195806Z-e816e970-dimension_selection_note-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The numerical lower-bound experiment is present, but the broader d = 3 conclusion also imports an upper bound from stable orbits/atoms that is not provided as a cited retained authority in this packet. The runner additionally measures gravity using hand-coded analytic d-dimensional potentials in 2D propagation, so the bridge from the stated axiom to those potentials and sign criterion is not closed inside the packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dimension_selection_note",
-      "claim_scope": "The restricted packet supports only the bounded lower-bound claim that, in this runner's propagator-plus-Poisson model with the stated analytic d-dimensional potentials, d <= 2 fails attractive gravity and beta ~= 1 while d >= 3 passes those numerical criteria.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-23T19:58:28.237184+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.585,
-      "load_bearing_step": "The propagator phase coupling S = L * (1 - phi) produces attractive deflection only when the potential phi decays with distance, which requires d >= 3.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "31133faae3905b03d27efc52392fcb8689f2eb9b7fafc175e0d1aca19a49ca8d",
+      "note_hash": "0fd525a195d09e238e39927bb57ddae70bc414f15d78180a1788a895f83f03e2",
       "note_path": "docs/DIMENSION_SELECTION_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained upstream authorities or a self-contained derivation for the d <= 3 upper bound and for the analytic d-dimensional potential/sign bridge used by the runner.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -51891,21 +51881,63 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the note imports the d<=3 upper bound and the phase-to-force/readout bridge without retained cited support. Why this blocks: without those inputs, the supplied evidence only shows that the selected runner criteria pass for d=3,4,5 and fail for d<=2 under chosen parameters. Repair target: add retained one-hop stability authorities and a bridge theorem tying the runner readout to the claimed gravitational observable, or split the note to the finite numerical lower-bound claim. Claim boundary until fixed: runner-specific evidence for excluding d<=2 under the stated setup, not a retained dimension-selection theorem."
+        },
+        {
+          "archived_at": "2026-05-29T12:18:34.435768+00:00",
+          "archived_for_note_hash": "31133faae3905b03d27efc52392fcb8689f2eb9b7fafc175e0d1aca19a49ca8d",
+          "audit_date": "2026-05-23T19:58:28.237184+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 2.585,
+            "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
+            "transitive_descendants": 2
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T195806Z-e816e970-dimension_selection_note-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The numerical lower-bound experiment is present, but the broader d = 3 conclusion also imports an upper bound from stable orbits/atoms that is not provided as a cited retained authority in this packet. The runner additionally measures gravity using hand-coded analytic d-dimensional potentials in 2D propagation, so the bridge from the stated axiom to those potentials and sign criterion is not closed inside the packet.",
+          "claim_scope": "The restricted packet supports only the bounded lower-bound claim that, in this runner's propagator-plus-Poisson model with the stated analytic d-dimensional potentials, d <= 2 fails attractive gravity and beta ~= 1 while d >= 3 passes those numerical criteria.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-23T19:58:28.237184+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The propagator phase coupling S = L * (1 - phi) produces attractive deflection only when the potential phi decays with distance, which requires d >= 3.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained upstream authorities or a self-contained derivation for the d <= 3 upper bound and for the analytic d-dimensional potential/sign bridge used by the runner.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 1
+          },
+          "verdict_rationale": "The runner performs a substantive numerical computation rather than merely printing constants, and its own output honestly reports that the three tested observables coexist at d = 3, 4, 5 rather than uniquely selecting d = 3. The note's bounded lower-bound claim is partly supported by the computation, but the unique d = 3 conclusion depends on separate orbital and atomic stability inputs not included as authorities. The analytic d-dimensional potential formulas and their connection to the claimed axiom are also imported bridge structure rather than closed from the restricted packet alone."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "total_pass": 1
+        "total_pass": 0
       },
-      "runner_path": "scripts/frontier_dimension_selection.py",
+      "runner_path": null,
       "title": "Dimension Selection: Does Self-Consistency Require d = 3?",
       "transitive_descendants": 2,
-      "verdict_rationale": "The runner performs a substantive numerical computation rather than merely printing constants, and its own output honestly reports that the three tested observables coexist at d = 3, 4, 5 rather than uniquely selecting d = 3. The note's bounded lower-bound claim is partly supported by the computation, but the unique d = 3 conclusion depends on separate orbital and atomic stability inputs not included as authorities. The analytic d-dimensional potential formulas and their connection to the claimed axiom are also imported bridge structure rather than closed from the restricted packet alone."
+      "verdict_rationale": null
     },
     "dimension_selection_upper_bound_textbook_import_note_2026-05-17": {
       "audit_date": null,
@@ -54750,46 +54782,24 @@
       "verdict_rationale": "The clean verdict is narrow. The live runner reproduces alpha(64^3) = -1.0233 +/- 0.0115, alpha_inf = -0.9762 +/- 0.0193, and delta/M spread 0.0010 on the specified Dirichlet 3D path-sum setup. The note explicitly limits the claim to a bounded numerical continuation and states that it is not full Newton closure, not architecture portability, and not a two-body M1 M2 theorem. Residual risk is therefore scope-bound: the result should only be cited for this finite path-sum surface and its stated convergence trend."
     },
     "distance_law_breakpoint_note": {
-      "audit_date": "2026-05-28T04:50:44.245496+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "distance_law_portability_note": "Bounded finite-runner table and partial-portability boundary for scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py: on the four tested structured-family rows with b=[5,6,7,8,10], field_strength=0.004, k=5.0, beta=0.8, the runner computes alpha/R^2/TOWARD counts showing no uniform distance-tail transfer across the tested rows. This excludes causal mechanism diagnosis, physical Gate B closure, geometry-independence claims, and broader family universality.",
-          "sign_portability_invariant_note": "Finite cached diagnostic that scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py exits 0 for the runner-defined G1-G4 gate packet on the two-row second-grown recompute subset, the recorded core family logs, and the fifth-family holdout under the stated tolerances; no universal portability theorem, row-wise lower-bound theorem, or independent order parameter is audited."
-        },
-        "dep_claim_type": {
-          "distance_law_portability_note": "bounded_theorem",
-          "sign_portability_invariant_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "distance_law_portability_note": "retained_bounded",
-          "sign_portability_invariant_note": "retained_bounded"
-        },
-        "deps": [
-          "distance_law_portability_note",
-          "sign_portability_invariant_note"
-        ],
-        "load_bearing_score": 4.085,
-        "runner_hash": "539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091",
-        "transitive_descendants": 5
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-distance-law-breakpoint",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The two direct dependencies are now retained-bounded, but they support only finite portability/sign diagnostic tables and explicitly exclude causal mechanism or architecture-feature diagnosis. This row's primary runner reprints hard-coded alpha/direction/feature rows with no matched ablation computation or provenance assertions for the claimed causal breakpoint mechanism.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "distance_law_breakpoint_note",
-      "claim_scope": "Bounded audit of the distance-law breakpoint table and proposed architecture-feature diagnosis over the two grown-family baselines plus alt-connectivity, third-family, fourth-family, and fifth-family radial rows. The static table values are not audited as a causal architecture-feature theorem.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-28T04:50:44.245496+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -54798,19 +54808,19 @@
         "sign_portability_invariant_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 4.085,
-      "load_bearing_step": "The near-Newtonian distance tail survives only in open directed transport families; shell-locking, reflection closure, and deep branch routing break or flatten it.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "24bff63d0d5d742245b5d59f1ec472b70780530129439c038d37ed7bd08be219",
+      "note_hash": "1e5f541224512c30da7f20fad3100c79500848ccc7f543cc5c6fbaad561e6ed6",
       "note_path": "docs/DISTANCE_LAW_BREAKPOINT_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: split the finite breakpoint table from the architecture-feature diagnosis, or add matched ablation computations/provenance for each claimed break feature before re-auditing.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -54907,22 +54917,76 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the status line says the runner reprints hard-coded rows and the architecture-feature diagnosis lacks matched ablation computations. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-29T12:18:34.684254+00:00",
+          "archived_for_note_hash": "24bff63d0d5d742245b5d59f1ec472b70780530129439c038d37ed7bd08be219",
+          "audit_date": "2026-05-28T04:50:44.245496+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "distance_law_portability_note": "Bounded finite-runner table and partial-portability boundary for scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py: on the four tested structured-family rows with b=[5,6,7,8,10], field_strength=0.004, k=5.0, beta=0.8, the runner computes alpha/R^2/TOWARD counts showing no uniform distance-tail transfer across the tested rows. This excludes causal mechanism diagnosis, physical Gate B closure, geometry-independence claims, and broader family universality.",
+              "sign_portability_invariant_note": "Finite cached diagnostic that scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py exits 0 for the runner-defined G1-G4 gate packet on the two-row second-grown recompute subset, the recorded core family logs, and the fifth-family holdout under the stated tolerances; no universal portability theorem, row-wise lower-bound theorem, or independent order parameter is audited."
+            },
+            "dep_claim_type": {
+              "distance_law_portability_note": "bounded_theorem",
+              "sign_portability_invariant_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "distance_law_portability_note": "retained_bounded",
+              "sign_portability_invariant_note": "retained_bounded"
+            },
+            "deps": [
+              "distance_law_portability_note",
+              "sign_portability_invariant_note"
+            ],
+            "load_bearing_score": 4.085,
+            "runner_hash": "539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091",
+            "transitive_descendants": 5
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-distance-law-breakpoint",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The two direct dependencies are now retained-bounded, but they support only finite portability/sign diagnostic tables and explicitly exclude causal mechanism or architecture-feature diagnosis. This row's primary runner reprints hard-coded alpha/direction/feature rows with no matched ablation computation or provenance assertions for the claimed causal breakpoint mechanism.",
+          "claim_scope": "Bounded audit of the distance-law breakpoint table and proposed architecture-feature diagnosis over the two grown-family baselines plus alt-connectivity, third-family, fourth-family, and fifth-family radial rows. The static table values are not audited as a causal architecture-feature theorem.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T04:50:44.245496+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The near-Newtonian distance tail survives only in open directed transport families; shell-locking, reflection closure, and deep branch routing break or flatten it.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "scope_too_broad: split the finite breakpoint table from the architecture-feature diagnosis, or add matched ablation computations/provenance for each claimed break feature before re-auditing.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_fail": 1,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the note still turns a static hard-coded breakpoint table into an architecture-feature diagnosis that says open directed transport preserves the distance tail while shell routing, reflection closure, and deep branch routing break or flatten it. Why this blocks: the retained distance-law portability dependency closes only the finite structured-family table and explicitly excludes causal mechanism diagnosis, while this row's runner does not recompute matched ablations or derive the feature labels from retained family mechanisms. Repair target: split a clean finite breakpoint-table note from the causal diagnosis, or add matched ablation computations/provenance rows for shell routing, reflection closure, radial confinement, and deep-branch routing. Claim boundary until fixed: it is safe to cite this as a bounded static breakpoint summary consistent with retained portability diagnostics, not as a retained architecture-feature theorem."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_fail": 1,
         "total_pass": 0
       },
       "runner_path": "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py",
       "title": "Distance Law Breakpoint Note",
       "transitive_descendants": 5,
-      "verdict_rationale": "Issue: the note still turns a static hard-coded breakpoint table into an architecture-feature diagnosis that says open directed transport preserves the distance tail while shell routing, reflection closure, and deep branch routing break or flatten it. Why this blocks: the retained distance-law portability dependency closes only the finite structured-family table and explicitly excludes causal mechanism diagnosis, while this row's runner does not recompute matched ablations or derive the feature labels from retained family mechanisms. Repair target: split a clean finite breakpoint-table note from the causal diagnosis, or add matched ablation computations/provenance rows for shell routing, reflection closure, radial confinement, and deep-branch routing. Claim boundary until fixed: it is safe to cite this as a bounded static breakpoint summary consistent with retained portability diagnostics, not as a retained architecture-feature theorem."
+      "verdict_rationale": null
     },
     "distance_law_definitive_note": {
       "audit_date": "2026-05-11T16:35:37.560340+00:00",
@@ -325297,8 +325361,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2455,
-    "re_audit_required": 1,
+    "preserved_existing": 2454,
+    "re_audit_required": 2,
     "row_count": 2500,
     "seeded_new": 0
   }

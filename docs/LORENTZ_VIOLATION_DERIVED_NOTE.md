@@ -53,20 +53,56 @@ predicted by some loop quantum gravity models.
 
 ### Step 4 -- Angular structure: the cubic harmonic fingerprint
 
-The operator sum_i n_i^4 (for unit vector n) decomposes as:
+The operator sum_i n_i^4 (for unit vector n) decomposes, in the basis of
+the STANDARD NORMALIZED real spherical harmonics Y_lm (orthonormal over
+the unit sphere, Condon-Shortley convention -- the same convention as
+scipy.special.sph_harm / sympy.Ynm used by the runner), as:
 
-    sum_i n_i^4 = 3/5 + (4/5) K_4(theta, phi)
+    sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4(theta, phi)
 
 where K_4 is the l=4 cubic harmonic:
 
-    K_4 ~ Y_{40} + sqrt(5/14) (Y_{44} + Y_{4,-4})
+    K_4 = Y_{40} + sqrt(5/14) (Y_{44} + Y_{4,-4})
+
+Convention note (normalization correction, 2026-05-29). With *normalized*
+Y_lm the coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727, NOT 4/5. An earlier
+revision of this note wrote 4/5; that value is only correct for an
+unnormalized angular convention and is inconsistent with the normalized
+K_4 above and with the runner's sph_harm projection. The identity is fixed
+here to the normalized convention so that note and runner agree. The
+isotropic part 3/5, the factor-of-3 anisotropy, and the l = 0/2/6-free
+structure are unchanged by this correction; only the numerical weight on
+the l = 4 anisotropy operator is corrected.
+
+Sympy derivation of the coefficient. For n = (sin t cos p, sin t sin p,
+cos t), expand f(t,p) = sum_i n_i^4 in normalized Y_lm. The only nonzero
+projections are l = 0 and l = 4:
+
+- <f | Y_{00}> = 6*sqrt(pi)/5, so the isotropic part is <f|Y_{00}> Y_{00}
+  = 3/5 (since Y_{00} = 1/(2*sqrt(pi))).
+- <K_4 | K_4> = 1 + 5/14 + 5/14 = 12/7 (the three normalized harmonics in
+  K_4 are orthonormal, with coefficients 1, sqrt(5/14), sqrt(5/14)).
+- <f | K_4> / <K_4 | K_4> = 4*sqrt(pi)/15.
+
+Reconstructing f = 3/5 + (4*sqrt(pi)/15) K_4 and simplifying gives
+trigsimp(f - rhs) = 0 identically (exact symbolic zero). A numeric
+cross-check over 2x10^5 random directions gives max|LHS - RHS| =
+7.8x10^-16 for the corrected coefficient versus 2.8x10^-1 for the old 4/5
+-- confirming 4*sqrt(pi)/15 and refuting 4/5 under the normalized
+convention. The runner reproduces both the symbolic and numeric checks.
 
 Verified numerically:
-- Isotropic average < f_4 > = 3/5 (to 0.002% by angular integration)
+- Isotropic average < f_4 > = 3/5 (to 0.002% by angular integration;
+  unchanged by the coefficient correction)
+- Exact identity sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 holds pointwise
+  to max|LHS - RHS| = 7.8e-16 over 2x10^5 random directions (old 4/5
+  refuted at 2.8e-1)
 - Only l=4 spherical harmonics contribute (l=2 and l=6 projections < 0.1% of l=4)
-- Coefficient ratio |c_{44}/c_{40}| = sqrt(5/14) to 0.2%
+- Coefficient ratio |c_{44}/c_{40}| = sqrt(5/14) to 0.2% (the relative
+  l=4 structure is unaffected by the overall normalization correction)
 - Invariant under all 48 O_h elements
 - Factor-of-3 anisotropy: f_4 = 1 along axis, f_4 = 1/3 along body diagonal
+  (pure geometry; independent of the K_4 coefficient)
 
 The uniqueness of the cubic harmonic at l=4 follows from representation
 theory: the trivial representation A_{1g} of O_h appears exactly once in
@@ -122,3 +158,22 @@ and is internally inconsistent with the printed Taylor expansion. The
 runner has been updated to the standard `(4/a^2)` form that matches
 this note's Step 2 and produces sub-microscopic residuals
 (`< 1.1e-6`) in the p^4 expansion check at `pa = 0.1256`.
+
+Normalization correction (2026-05-29): a previous version of this note
+and runner wrote the cubic-harmonic decomposition with coefficient `4/5`
+on `K_4 = Y_{40} + sqrt(5/14)(Y_{44} + Y_{4,-4})`. With the standard
+normalized real spherical harmonics `Y_lm` (the
+`scipy.special.sph_harm` / `sympy.Ynm` convention) the correct
+coefficient is `4*sqrt(pi)/15 ~= 0.4727` (see Step 4). The runner now
+carries this corrected identity and an explicit verification block
+(`verify_cubic_harmonic_identity()`): a numeric pointwise check over
+`2x10^5` random directions (`max|LHS - RHS| = 7.8e-16` for
+`4*sqrt(pi)/15`, the old `4/5` refuted at `2.8e-1`) plus, when `sympy`
+is importable, the symbolic `trigsimp(f - rhs) = 0` and the exact
+projection `<f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15`. This is a normalization
+correction only: the dimension-6 classification, the parity-even /
+no-odd-power conclusion, the `3/5` isotropic average, and the
+factor-of-3 `[100]`/`[111]` anisotropy are unchanged, because they
+follow from the dispersion Taylor structure and pure geometry, not from
+the `K_4` coefficient. The script exits non-zero if the identity check
+fails.

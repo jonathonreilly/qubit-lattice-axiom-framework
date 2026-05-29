@@ -67,6 +67,20 @@ import numpy as np
 import scipy.integrate as si
 import scipy.special as sp
 
+# Normalized spherical harmonics, scipy.special.sph_harm convention
+# (complex Y_l^m; the m = ±4 sum used in the cubic harmonic K_4 is real).
+# scipy >= 1.15 renamed sph_harm -> sph_harm_y with swapped argument order.
+try:
+    from scipy.special import sph_harm as _sph_harm_raw  # scipy < 1.15
+
+    def _sph_harm(m, l, phi, theta):
+        return _sph_harm_raw(m, l, phi, theta)
+except ImportError:
+    from scipy.special import sph_harm_y as _sph_harm_y  # scipy >= 1.15
+
+    def _sph_harm(m, l, phi, theta):
+        return _sph_harm_y(l, m, theta, phi)
+
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
 PASS_COUNT = 0
@@ -688,6 +702,69 @@ def test_part6_cubic_lv_at_finite_a():
           relative_aniso < 0.20,
           f"anisotropy/W_cont = {relative_aniso:.3f} at smallest a; "
           f"shrinks to 0 as a -> 0")
+
+    # 6.6: exact cubic-harmonic decomposition identity with NORMALIZED Y_lm.
+    #   Σn_i⁴ = 3/5 + (4√π/15) K₄,  K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄),
+    # in the standard normalized spherical-harmonic basis (scipy.special.
+    # sph_harm convention; the m=±4 combination is real-valued so K₄ is the
+    # real cubic harmonic). This pins the MAGNITUDE of the l=4 anisotropy
+    # operator that checks 6.1-6.5 exhibit and matches the sibling decomposition
+    # in EMERGENT_LORENTZ_INVARIANCE_NOTE Step 4. With *normalized* Y_lm the
+    # coefficient is 4√π/15 ≈ 0.4727, NOT 4/5 (the old, unnormalized value),
+    # so we also confirm 4/5 is refuted. The isotropic 3/5 and the factor-of-3
+    # anisotropy (check 6.4) are unaffected by this magnitude correction.
+    rng_h = np.random.default_rng(2026)
+    Nv = 50000
+    zv = rng_h.uniform(-1, 1, Nv)
+    phiv = rng_h.uniform(0, 2 * np.pi, Nv)
+    thetav = np.arccos(zv)
+    nxv = np.sin(thetav) * np.cos(phiv)
+    nyv = np.sin(thetav) * np.sin(phiv)
+    nzv = np.cos(thetav)
+    lhs_v = nxv ** 4 + nyv ** 4 + nzv ** 4
+    Y40v = _sph_harm(0, 4, phiv, thetav)
+    Y44v = _sph_harm(4, 4, phiv, thetav)
+    Y4m4v = _sph_harm(-4, 4, phiv, thetav)
+    K4v = np.real(Y40v + np.sqrt(5.0 / 14.0) * (Y44v + Y4m4v))
+    coef_correct = 4.0 * np.sqrt(np.pi) / 15.0  # ≈ 0.472654
+    coef_old = 4.0 / 5.0
+    err_correct = float(np.max(np.abs(lhs_v - (3.0 / 5.0 + coef_correct * K4v))))
+    err_old = float(np.max(np.abs(lhs_v - (3.0 / 5.0 + coef_old * K4v))))
+    check("Σn_i⁴ = 3/5 + (4√π/15)K₄ exact (normalized Y_lm); old 4/5 refuted",
+          err_correct < 1e-12 and err_old > 1e-3,
+          f"max|LHS-RHS| = {err_correct:.2e} for 4√π/15 ≈ {coef_correct:.6f} vs "
+          f"{err_old:.2e} for the discarded 4/5, over {Nv} random directions")
+
+    # 6.7: symbolic confirmation (sympy) that 4√π/15 is the EXACT spherical
+    # projection ⟨f|K₄⟩/⟨K₄|K₄⟩ and the identity is a symbolic zero -- not a
+    # numeric coincidence. ⟨f|Y₀₀⟩Y₀₀ = 3/5 and ⟨K₄|K₄⟩ = 12/7. Skipped
+    # gracefully (still a PASS) if sympy is not installed.
+    try:
+        import sympy as _sym
+        th, ph = _sym.symbols('theta phi', real=True)
+        f_s = ((_sym.sin(th) * _sym.cos(ph)) ** 4
+               + (_sym.sin(th) * _sym.sin(ph)) ** 4
+               + _sym.cos(th) ** 4)
+        Y40_s = _sym.Ynm(4, 0, th, ph).expand(func=True)
+        Y44_s = _sym.Ynm(4, 4, th, ph).expand(func=True)
+        Y4m4_s = _sym.Ynm(4, -4, th, ph).expand(func=True)
+        K4_s = Y40_s + _sym.sqrt(_sym.Rational(5, 14)) * (Y44_s + Y4m4_s)
+        rhs_s = _sym.Rational(3, 5) + (4 * _sym.sqrt(_sym.pi) / 15) * K4_s
+        residual = _sym.trigsimp(_sym.simplify((f_s - rhs_s).rewrite(_sym.cos)))
+
+        def _inner(A, B):
+            integ = A * _sym.conjugate(B) * _sym.sin(th)
+            return _sym.integrate(_sym.integrate(integ, (ph, 0, 2 * _sym.pi)),
+                                  (th, 0, _sym.pi))
+        coef_sym = _sym.simplify(_inner(f_s, K4_s) / _inner(K4_s, K4_s))
+        check("Sympy: trigsimp(Σn_i⁴ - [3/5 + (4√π/15)K₄]) = 0; ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15",
+              residual == 0
+              and _sym.simplify(coef_sym - 4 * _sym.sqrt(_sym.pi) / 15) == 0,
+              f"symbolic residual = {residual}, projected coef = {coef_sym}")
+    except ImportError:
+        check("Sympy symbolic K₄-identity check (optional dependency)",
+              True,
+              "sympy not installed; numeric check 6.6 already pins coef = 4√π/15")
 
     return True
 

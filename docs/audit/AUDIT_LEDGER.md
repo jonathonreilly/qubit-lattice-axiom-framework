@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 161 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 585 |
+| **retained_bounded** | 586 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1149 |
+| unaudited | 1148 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 905 |
+| `audited_clean` | 906 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1379 |
+| `unaudited` | 1378 |
 
 | claim_type | count |
 |---|---:|
@@ -537,6 +537,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -7922,6 +7923,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Each identity (T1)-(T9) is conditional on admissions (A1)-(A5) and reduces, under the relevant subset, to direct rational arithmetic in Q.  _(class `A`)_
 - **chain closes:** True — The algebraic identities close on their own conditional terms from the stated admissions by exact rational arithmetic. The admissions (A1)-(A5) themselves are not derived or retained-grade in this packet.
 - **rationale:** The runner source genuinely computes the listed conditional identities with Python Fraction arithmetic and does not assert retained-grade closure. However, the load-bearing inputs are explicit admissions: the toy carrier, central Z grammar, endpoint algebra, based endpoint section, and eta_APS = 2/9 are not derived from retained authorities in the restricted packet. No-Go Discipline gate N1/N2 also prevents a clean negative-boundary reading: the packet names admission walls but does not supply independent retained closures or five independent attack-route eliminations.
+- **auditor confidence:** high
+
+### `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25`
+
+- **Note:** [`KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md`](../../docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic theorem over the six explicitly stated native angular values alpha_i in {2*pi, (2/3)*pi, (2/9)*pi, pi, (2/3)*pi, (1/3)*pi}: the pure rational 2/9 is not in Q.alpha_i for any listed nonzero rational multiple of pi. The verdict does not derive the six native-unit enumeration, does not prove exhaustiveness over all angular constructions, and does not close or retain the radian-bridge primitive P.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each listed alpha_i = q_i*pi with q_i a nonzero rational, any rational c satisfying c*alpha_i = 2/9 would make pi = 2/(9*c*q_i) rational, so no such rational c exists; c=0 gives 0 != 2/9.  _(class `A`)_
+- **chain closes:** True — Within the bounded six-value scope, the proof needs only q_i != 0, rational arithmetic, and pi irrational/transcendental: a rational multiple of pi cannot equal the nonzero rational 2/9. The retained three-generation dependency supplies the d=3 positional value used in the listed coefficients, and the retained no-go is only positional for the bridge residual rather than a forcing input.
+- **rationale:** The audited result is a class-A separation theorem over six stated rational multiples of pi, and the independent calculation closes by the elementary fact Q*pi intersects Q only at 0. The cached runner computes the exact rational/pi forms and no-rational-solution checks with PASS=146, FAIL=0 under SHA 73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275. No-go discipline is satisfied only because the verdict is bounded: it does not ratify an exhaustive native-unit list, a radian-bridge closure, or the broader Koide/Brannen programme. A non-load-bearing admitted-context sentence about arbitrary polynomials in pi is broader than needed; the clean audit relies only on the correct linear q*pi case.
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

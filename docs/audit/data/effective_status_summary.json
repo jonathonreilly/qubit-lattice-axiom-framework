@@ -43,10 +43,10 @@
     "meta": 230,
     "open_gate": 26,
     "retained": 161,
-    "retained_bounded": 585,
+    "retained_bounded": 586,
     "retained_no_go": 172,
     "retained_pending_chain": 10,
-    "unaudited": 1149
+    "unaudited": 1148
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

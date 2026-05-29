@@ -2306,5 +2306,152 @@ class AuditLintDispatchQueueTest(unittest.TestCase):
         self.assertNotIn("audit_dispatch_queue_stale", out)
 
 
+class RepairMissingDependencyEdgesTest(unittest.TestCase):
+    """Guards on the nightly dependency-edge repair.
+
+    The bot must not convert a deliberately-backticked sideways pointer into a
+    live citation edge, and must not auto-wire any edge that would close a
+    cycle in the citation graph. Either move re-creates a length-2 cycle that
+    a human broke on purpose, and the next nightly run would re-add it.
+    """
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.fx = CleanLedgerFixture(self.tmp_root)
+
+    # --- pure-logic unit tests (no fixture needed) ---------------------------
+
+    def test_edge_would_close_cycle_detects_back_paths(self):
+        m = _import("repair_missing_dependency_edges")
+        # b already points at a; wiring a -> b closes a length-2 cycle.
+        self.assertTrue(m.edge_would_close_cycle({"a": [], "b": ["a"]}, "a", "b"))
+        # No path from b back to a: the edge is cycle-free.
+        self.assertFalse(m.edge_would_close_cycle({"a": [], "b": []}, "a", "b"))
+        # Longer cycle: a -> b -> c, and c -> a closes it.
+        chain = {"a": ["b"], "b": ["c"], "c": []}
+        self.assertTrue(m.edge_would_close_cycle(chain, "c", "a"))
+        # A forward shortcut a -> c does not close any cycle.
+        self.assertFalse(m.edge_would_close_cycle(chain, "a", "c"))
+        # Re-adding an existing edge introduces no new cycle.
+        self.assertFalse(m.edge_would_close_cycle({"a": ["b"], "b": ["a"]}, "b", "a"))
+        # A node unknown to the graph cannot lie on an existing path.
+        self.assertFalse(m.edge_would_close_cycle({"a": []}, "a", "z"))
+
+    def test_has_backticked_reference_matches_filename_not_links(self):
+        m = _import("repair_missing_dependency_edges")
+        tgt = Path("docs/FOO_BOUNDED_NOTE_2026-05-08.md")
+        self.assertTrue(
+            m.has_backticked_reference("see `FOO_BOUNDED_NOTE_2026-05-08.md` here", tgt)
+        )
+        # Backticked repo-relative path still matches on basename.
+        self.assertTrue(
+            m.has_backticked_reference("`docs/sub/FOO_BOUNDED_NOTE_2026-05-08.md`", tgt)
+        )
+        # A live markdown link is NOT a backtick reference (the existing dedup
+        # owns that case; this guard must not fire on it).
+        self.assertFalse(
+            m.has_backticked_reference("[foo](FOO_BOUNDED_NOTE_2026-05-08.md)", tgt)
+        )
+        # A bare prose mention without backticks is not a backtick reference.
+        self.assertFalse(
+            m.has_backticked_reference("plain FOO_BOUNDED_NOTE_2026-05-08.md text", tgt)
+        )
+
+    # --- integration tests over a fixture ledger + graph ---------------------
+
+    def _seed_pair(self, *, source_body: str, target_deps):
+        """Seed source NOTE_A (audited_conditional, names NOTE_B in
+        open_dependency_paths) and target NOTE_B (with the given graph deps).
+        Returns the imported, repo-root-patched module."""
+        self.fx.write_note("docs/NOTE_A.md", source_body)
+        self.fx.write_note("docs/NOTE_B.md", "# Note B\n")
+        self.fx.write_graph(
+            {
+                "nodes": {
+                    "note_a": {"deps": []},
+                    "note_b": {"deps": list(target_deps)},
+                }
+            }
+        )
+        self.fx.write_ledger(
+            {
+                "schema_version": 1,
+                "rows": {
+                    "note_a": {
+                        "claim_id": "note_a",
+                        "note_path": "docs/NOTE_A.md",
+                        "deps": [],
+                        "audit_status": "audited_conditional",
+                        "open_dependency_paths": ["docs/NOTE_B.md"],
+                    },
+                    "note_b": {
+                        "claim_id": "note_b",
+                        "note_path": "docs/NOTE_B.md",
+                        "deps": list(target_deps),
+                        "audit_status": "audited_clean",
+                    },
+                },
+            }
+        )
+        m = _import("repair_missing_dependency_edges")
+        _patch_repo_root(m, self.tmp_root)
+        return m
+
+    def _apply(self, m):
+        rows = m.load_rows()
+        repairs = m.candidate_repairs(rows)
+        stats = m.apply_repairs(rows, repairs, apply=True)
+        note_a = (self.tmp_root / "docs" / "NOTE_A.md").read_text(encoding="utf-8")
+        return stats, note_a
+
+    def test_skips_edge_that_would_close_cycle(self):
+        # NOTE_B already cites NOTE_A (graph edge note_b -> note_a), so wiring
+        # note_a -> note_b would close a length-2 cycle.
+        m = self._seed_pair(source_body="# Note A\n", target_deps=["note_a"])
+        stats, note_a = self._apply(m)
+        self.assertEqual(stats["skipped_cycle"], 1)
+        self.assertEqual(stats["dependency_edges"], 0)
+        self.assertEqual(stats["changed_files"], 0)
+        self.assertNotIn("](NOTE_B.md)", note_a)
+        self.assertNotIn(m.MARKER, note_a)
+
+    def test_skips_target_already_backticked(self):
+        # NOTE_A backticks NOTE_B's filename as a deliberate sideways pointer.
+        body = (
+            "# Note A\n\n"
+            "See `NOTE_B.md` (backticked to break the audit-graph cycle: "
+            "downstream consumer, not a load-bearing edge).\n"
+        )
+        m = self._seed_pair(source_body=body, target_deps=[])
+        stats, note_a = self._apply(m)
+        self.assertEqual(stats["skipped_backticked"], 1)
+        self.assertEqual(stats["dependency_edges"], 0)
+        self.assertNotIn("](NOTE_B.md)", note_a)
+
+    def test_adds_legitimate_non_cycle_non_backticked_edge(self):
+        # No back edge and no backtick: the missing edge is wired normally.
+        m = self._seed_pair(source_body="# Note A\n", target_deps=[])
+        stats, note_a = self._apply(m)
+        self.assertEqual(stats["dependency_edges"], 1)
+        self.assertEqual(stats["changed_files"], 1)
+        self.assertEqual(stats["skipped_backticked"], 0)
+        self.assertEqual(stats["skipped_cycle"], 0)
+        self.assertIn("- [note_b](NOTE_B.md)", note_a)
+        self.assertIn(m.MARKER, note_a)
+
+    def test_existing_live_link_is_not_duplicated(self):
+        body = (
+            "# Note A\n\n"
+            "## Audit dependency repair links\n\n"
+            "- [note_b](NOTE_B.md)\n"
+        )
+        m = self._seed_pair(source_body=body, target_deps=[])
+        stats, note_a = self._apply(m)
+        self.assertEqual(stats["dependency_edges"], 0)
+        self.assertEqual(note_a.count("](NOTE_B.md)"), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

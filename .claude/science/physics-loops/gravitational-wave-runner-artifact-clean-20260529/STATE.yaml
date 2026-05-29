@@ -1,0 +1,27 @@
+loop: gravitational-wave-runner-artifact-clean-20260529
+branch: physics-loop/gravitational-wave-runner-artifact-clean-20260529
+base: origin/main@a7c75afdd
+target_claim_id: gravitational_wave_probe_note
+actual_current_surface_status: bounded-support
+effective_status_after_pipeline: unaudited
+audit_required_before_effective_retained: true
+active_route: complete primary runner source and bounded toy-sensitivity scope
+files_touched:
+  - docs/GRAVITATIONAL_WAVE_PROBE_NOTE.md
+  - scripts/frontier_grav_wave_post_newtonian.py
+  - logs/runner-cache/frontier_grav_wave_post_newtonian.txt
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+verification:
+  - python3 -m py_compile scripts/frontier_grav_wave_post_newtonian.py
+  - PYTHONPATH=scripts python3 scripts/frontier_grav_wave_post_newtonian.py
+  - python3 scripts/precompute_audit_runners.py --runners scripts/frontier_grav_wave_post_newtonian.py --force --push-mode none --allow-non-main --concurrency 1
+  - bash docs/audit/scripts/run_pipeline.sh
+result: row reset to unaudited and ready with complete runner source/cache
+next_exact_action: independent audit of bounded toy-lattice scope
+stop_condition: draft PR opened

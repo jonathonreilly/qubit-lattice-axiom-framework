@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_grav_wave_post_newtonian.py
-runner_sha256: cf43854527541082260d302ac94e3827db3f94d4eaa49cdbe04de8cecccc7784
+runner_sha256: ce04c9599b2ee6eb5afa7aef2040a93c50ec5f1061452613059bbac4d2d1d9c3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 25.40
+elapsed_sec: 10.26
 status: ok
 ----- stdout -----
 ========================================================================
-GRAVITATIONAL WAVE / POST-NEWTONIAN PROBE
-Two-axiom framework: beyond weak-field Newtonian gravity
+GRAVITATIONAL WAVE / ACTION-FORM SENSITIVITY PROBE
+Bounded finite-lattice toy-model comparisons
 ========================================================================
 
 Lattice: 20x20x20 = 8000 nodes
@@ -19,7 +19,7 @@ scipy available: True
 TEST A: GRAVITATIONAL WAVE PROPAGATION
 ========================================================================
 
-  Poisson solve time: 0.11s
+  Poisson solve time: 0.06s
 
   Field profile along z-axis from source:
       r         f(r)    1/(4pi*r)    ratio
@@ -48,10 +48,10 @@ TEST A: GRAVITATIONAL WAVE PROPAGATION
   90% of full deflection reached at R=6
   -> Beam samples field only near its path
   -> Field at large R from beam path is irrelevant
-  [Test A time: 3.1s]
+  [Test A time: 1.5s]
 
 ========================================================================
-TEST B: POST-NEWTONIAN FORCE FROM MOVING SOURCE
+TEST B: IMPOSED RETARDED SOURCE SAMPLING
 ========================================================================
 
   Part 1: RETARDED vs INSTANTANEOUS POTENTIAL
@@ -76,13 +76,13 @@ TEST B: POST-NEWTONIAN FORCE FROM MOVING SOURCE
   Retardation correction fit: |inst - retard| ~ alpha * v
   alpha = 0.004594, R^2 = 0.8052
 
-  RESULT: Retardation correction grows with velocity.
-  The framework distinguishes instantaneous from retarded potentials
-  when the source moves. This is a genuine post-Newtonian effect.
-  [Test B time: 6.0s]
+  RESULT: Retarded-vs-instantaneous difference grows with velocity.
+  The finite toy model distinguishes the imposed retarded
+  source rule from instantaneous Poisson sampling.
+  [Test B time: 3.0s]
 
 ========================================================================
-TEST C: CAUSAL STRUCTURE OF FIELD-AMPLITUDE COUPLING
+TEST C: LAYER-ORDER SENSITIVITY OF FIELD-AMPLITUDE COUPLING
 ========================================================================
 
   Localized field perturbation test:
@@ -100,12 +100,12 @@ TEST C: CAUSAL STRUCTURE OF FIELD-AMPLITUDE COUPLING
         16     9.900121       9.899926    -0.019521
 
   Sensitivity profile slope: -0.022986 per layer
-  (negative slope = later layers have less effect = causal)
+  (negative slope = later layers have less remaining path)
 
   RESULT: Sensitivity DECREASES for later layers.
-  This is consistent with causal (finite-speed) propagation:
+  This is an ordered-layer sensitivity result:
   perturbations at later layers have less remaining path to
-  accumulate deflection, mimicking a light-cone structure.
+  accumulate deflection. No dynamical wave equation is derived.
 
   Self-consistency retardation test:
   Compare: (a) field from final density vs (b) field from initial guess
@@ -113,10 +113,10 @@ TEST C: CAUSAL STRUCTURE OF FIELD-AMPLITUDE COUPLING
   Beam density center of mass: (18.8, 9.9, 9.9)
   Beam density max: 2.452245e+09
   Beam spread: sigma_x=0.55, sigma_y=3.97, sigma_z=3.98
-  [Test C time: 4.4s]
+  [Test C time: 2.1s]
 
 ========================================================================
-TEST D: VALLEY-LINEAR vs POST-NEWTONIAN ACTION
+TEST D: VALLEY-LINEAR vs IMPOSED f^2 ACTION
 ========================================================================
 
     strength    max_f   VL delta_z   PN delta_z    ratio    diff%
@@ -130,11 +130,11 @@ TEST D: VALLEY-LINEAR vs POST-NEWTONIAN ACTION
 
   f^2 correction exceeds 1% at strength s = 0.0500 (max f = 0.01218)
   diff% vs max_f slope: -14.30%/unit-field
-  (should be ~O(1) if f^2 correction is genuine)
-  [Test D time: 11.3s]
+  (diagnostic only; no physical PN coefficient is derived)
+  [Test D time: 3.5s]
 
 ========================================================================
-SYNTHESIS: BEYOND NEWTONIAN GRAVITY
+SYNTHESIS: BOUNDED TOY-MODEL SENSITIVITY
 ========================================================================
 
 1. GRAVITATIONAL WAVES:
@@ -143,47 +143,41 @@ SYNTHESIS: BEYOND NEWTONIAN GRAVITY
    of its path. The Poisson equation is elliptic (instantaneous),
    so the field itself does NOT propagate as a wave.
    HONEST NEGATIVE: no gravitational waves from the field equation.
-   However, the beam propagates at finite speed (layer by layer),
-   so information about field changes is carried at the beam speed.
+   The ordered beam update is layer-local, but no dynamical
+   gravitational field propagation law is derived here.
 
 2. RETARDED vs INSTANTANEOUS POTENTIAL:
    Retardation effect DETECTED (up to 15.0% at highest v).
-   The instantaneous Poisson field and retarded field give
-   different deflections when the source moves. This shows the
-   framework CAN distinguish retarded from instantaneous potentials.
+   The instantaneous Poisson field and imposed retarded field give
+   different deflections when the source moves. This is a
+   finite-runner sensitivity result, not a derived PN observable.
 
-3. CAUSAL STRUCTURE:
-   Sensitivity profile shows CAUSAL structure:
+3. LAYER-ORDER SENSITIVITY:
+   Sensitivity profile shows ordered-layer structure:
    later-layer perturbations have less effect (less remaining path).
-   The ordered propagation introduces a LIGHT-CONE-LIKE structure.
-   This is the seed of gravitational wave propagation.
+   This is not a derived dynamical wave equation.
 
-4. POST-NEWTONIAN ACTION f^2 CORRECTION:
+4. IMPOSED f^2 ACTION DIFFERENCE:
    f^2 correction DETECTABLE above strength s = 0.0500.
-   The framework can distinguish S=L(1-f) from S=L(1-f-f^2/2).
-   This means post-Newtonian physics is accessible in principle.
+   The finite runner distinguishes S=L(1-f) from S=L(1-f-f^2/2).
+   No physical post-Newtonian coefficient is derived.
 
 ========================================================================
 VERDICT
 ========================================================================
 
-The two-axiom framework produces:
+The finite toy runner shows:
 
-  - Newtonian gravity: YES (confirmed by previous work)
-  - Gravitational waves: The Poisson field is instantaneous (no waves
-    from the field equation alone). However, the ordered propagation
-    introduces causal structure: the beam samples the field at finite
-    speed, creating an effective light cone for information propagation.
-  - Post-Newtonian corrections: Two sources of beyond-Newton physics:
-    (a) velocity-dependent forces from time-dependent field sampling
-    (b) the f^2 action correction distinguishable at strong fields
-  - GR derivation: The action S=L(1-f) matches the weak-field GR metric
-    g_00 = 1-2f to leading order. The propagator's causal structure
-    (ordered layer-by-layer evolution) provides the finite-speed
-    information propagation that is the prerequisite for gravitational
-    waves in any future dynamical field extension.
+  - Poisson-field gravitational waves: NEGATIVE.
+  - Imposed retarded-source sampling differs from instantaneous sampling.
+  - Ordered-layer perturbations have layer-dependent sensitivity.
+  - The imposed f^2 action is distinguishable in the tested range.
 
-Total runtime: 24.9s
+This runner does not derive GR, physical gravitational waves, a
+post-Newtonian observable, c_lattice normalization, or an f^2
+coefficient from retained framework primitives.
+
+Total runtime: 10.1s
 
 ----- stderr -----
 

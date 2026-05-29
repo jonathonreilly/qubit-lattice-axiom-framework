@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 159 |
+| **retained** | 160 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 585 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1151 |
+| unaudited | 1150 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 903 |
+| `audited_clean` | 904 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1381 |
+| `unaudited` | 1380 |
 
 | claim_type | count |
 |---|---:|
@@ -501,6 +501,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -7276,6 +7277,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The registered SHA-pinned joint-validator cache for scripts/higher_symmetry_joint_validation.py, on default argv with N=25,40,60,80 and 16 seeds, directly supports the bounded Z2 x Z2 Born-clean, k=0-zero, and positive band-averaged gravity rows in the sparse window.  _(class `C`)_
 - **chain closes:** True — The packet includes the primary runner, both helper sources, and a SHA-pinned cache whose stdout matches the narrowed sparse-window claim. The dense N=80/100/120 material is explicitly excluded from binding scope despite stale historical text later in the note.
 - **rationale:** Within the narrowed binding scope, the runner genuinely generates the DAG families, calls the joint measurement code, computes Born, gravity, k=0, purity, gravity-band, and exponent summaries, and reports values not hard-coded from the note. The helper sources are present and do not import the contested result as an input. The cited mirror authority is retained_bounded, and no non-retained cited authority is needed for the narrowed cache-backed claim. The note still contains stale 32-seed and N=120 promotional prose, but its binding-scope language cleanly demotes those statements out of the audited claim.
+- **auditor confidence:** high
+
+### `hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`HODGE_STAR_MIDDLE_FORM_DECOMPOSITION_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/HODGE_STAR_MIDDLE_FORM_DECOMPOSITION_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone Hodge-theoretic linear-algebra theorem: on an oriented real inner-product space, the Hodge star maps Lambda^2(R^d) to Lambda^(d-2)(R^d), so the non-vacuous 2-form self-dual/anti-self-dual eigenspace decomposition exists exactly when d=4; in Riemannian d=4, *^2=+id and Lambda^2 splits into 3-dimensional +/- eigenspaces, while in Lorentzian d=4 the analogous split is over C with eigenvalues +/-i. Gauge curvature, Yang-Mills/BPS/instanton, Donaldson/twistor, Wick-rotation, framework field-strength identification, and d=4-from-axioms claims are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-hodge-star-d-four`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Hodge star has degree map *: Lambda^k(R^d)->Lambda^(d-k)(R^d), so it is an endomorphism of Lambda^k exactly when k=d-k; for k=2 this forces d=4, and then *^2=sgn(g) id yields the stated eigenspace split.  _(class `A`)_
+- **chain closes:** True — Independent check: the endomorphism condition is d-k=k, hence d=2k and d=4 for k=2. In Riemannian d=4 the explicit basis pairs e12/e34, e13/e24, e14/e23 diagonalize * into three +1 and three -1 eigenvectors; for d!=4 the target degree d-2 differs from 2, so no Lambda^2 eigenspace decomposition is defined.
+- **rationale:** The row closes as a standalone Hodge-star linear-algebra theorem. The source's load-bearing step is the complementary-degree map k -> d-k and the standard star-square identity; the exact runner verifies source-target dimensions, d=4 uniqueness for k=2, the explicit 4D Riemannian Hodge action, orthonormal +/- eigenbasis, trace/eigenvalue multiplicities, and d!=4 counterfactuals with PASS=178 FAIL=0. Residual risk is downstream overuse: this does not identify a framework gauge curvature, derive Wick rotation or d=4 from axioms, or prove Yang-Mills/instanton/Donaldson/twistor consequences.
 - **auditor confidence:** high
 
 ### `holographic_probe_note_2026-04-11`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 168 |
 | **retained_no_go** | 173 |
-| **retained_bounded** | 599 |
+| **retained_bounded** | 600 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1172 |
+| unaudited | 1171 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 930 |
+| `audited_clean` | 931 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1408 |
+| `unaudited` | 1407 |
 
 | claim_type | count |
 |---|---:|
@@ -1049,6 +1049,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15682,6 +15683,19 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** E_x = (+1)P_+(x) + (-1)P_-(x) = sigma_z(x), and d log R_h / d h_x |_{h=0} = epsilon_x, so the source score is the signed local projective readout.  _(class `A`)_
 - **chain closes:** True — The finite Pauli projector algebra, the retained bounded LSP projective measurement rule, and the retained bounded product-RN source-action support packet are sufficient to identify the signed source record with a native projective readout and to prove the stated RN-family uniqueness under the given source semantics.
 - **rationale:** The bounded support identity closes without importing physical Y_T closure. Independent check: P_+ and P_- are orthogonal idempotents summing to I, P_+ - P_- = sigma_z, and sigma_z has spectrum {-1,+1}; tensor-product site readouts commute and have outcome set {-1,+1}^Lambda. For R_h(epsilon)=exp(sum h_x epsilon_x)/Z(h), the h=0 uniform signed-record reference has zero mean, so d log R_h / d h_x at h=0 equals epsilon_x. The source-family uniqueness corollary is valid under the stated assumptions because normalized multiplication makes log-odds additive, smooth additive log-odds are linear, and the origin-score condition fixes the coefficients. The runner checks these algebraic/RN facts and the boundary firewalls with PASS=50 FAIL=0. Residual risk is downstream scope creep: this result does not select a physical Pauli axis or close Higgs/Yukawa/source-action authority.
+- **auditor confidence:** high
+
+### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite-dimensional support lemma that an S_6-democratic unit source on a six-component Q_L carrier has component amplitude 1/sqrt(6), not the physical identification with y_33 or y_t.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-yt_qubit_democratic_top_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The unique S_6-permutation-invariant unit vector on the six Q_L color-isospin components is (1,1,1,1,1,1)/sqrt(6), so each component amplitude is 1/sqrt(6).  _(class `A`)_
+- **chain closes:** True — The invariant-vector calculation closes as standard linear algebra once the six-component Q_L carrier and full S_6 democracy are taken as the stated setup. The physical bridge equating this amplitude with the top Yukawa response is explicitly outside the audited load-bearing scope.
+- **rationale:** The repaired note cleanly limits its load-bearing claim to the finite-dimensional S_6-invariant unit-vector lemma. The runner source actually performs symbolic checks of equality constraints, normalization, component amplitudes, and permutation invariance rather than merely printing constants. The note explicitly admits that the response bridge to y_33 remains open and does not use that bridge as a load-bearing step.
 - **auditor confidence:** high
 
 ### `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`

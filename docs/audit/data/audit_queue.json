@@ -3,7 +3,7 @@
     "critical": 246,
     "high": 315,
     "leaf": 284,
-    "medium": 298
+    "medium": 299
   },
   "cycle_break_target_count": 1,
   "cycle_break_targets": [
@@ -24263,6 +24263,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_su3_integration_note",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.807,
+      "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
+      "transitive_descendants": 6
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34841,5 +34869,5 @@
     }
   ],
   "ready_count": 8,
-  "total_pending": 1143
+  "total_pending": 1144
 }

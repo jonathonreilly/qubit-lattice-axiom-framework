@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1140 |
+| unaudited | 1141 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 70 |
+| ~~audited_conditional~~ | 69 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 920 |
-| `audited_conditional` | 70 |
+| `audited_conditional` | 69 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1370 |
+| `unaudited` | 1371 |
 
 | claim_type | count |
 |---|---:|
@@ -80,8 +80,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 380 |
 | `high` | 505 |
-| `medium` | 604 |
-| `leaf` | 1011 |
+| `medium` | 606 |
+| `leaf` | 1009 |
 
 - **Retained pending chain closure:** 10
 - **Citation cycles detected:** 1
@@ -89,9 +89,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 2083
-- runners with (C) first-principles compute hits: 1013
+- runners with (C) first-principles compute hits: 1014
 - runners with (D) external comparator hits: 615
-- decoration candidates (no C, no D): 358
+- decoration candidates (no C, no D): 357
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 741 | 55.03 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 932 | 53.37 | `audited_clean` | **retained** |
-| 3 | `minimal_axioms_2026-05-03` | meta | critical | 926 | 50.86 | `unaudited` | meta |
+| 3 | `minimal_axioms_2026-05-03` | meta | critical | 927 | 50.86 | `unaudited` | meta |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1080 | 46.58 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms` | meta | critical | 1073 | 41.07 | `unaudited` | meta |
 | 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 966 | 40.92 | `audited_clean` | **retained_bounded** |
@@ -1083,7 +1083,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
-| `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7180,19 +7179,6 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current Higgs runner shows that the framework has nontrivial quantitative Higgs behavior once the lattice Coleman-Weinberg mechanism is active.  _(class `C`)_
 - **chain closes:** True — For this bounded scope, the note does not claim an exact Higgs-mass derivation; it claims only that the runner exhibits nontrivial CW Higgs behavior and supports bounded studies. The completed runner computes CW potential/SSB scans and ballpark mass-ratio behavior, while its failed exact-coupling/crossing checks are consistent with the note's explicit boundary.
 - **rationale:** The source note is narrowly scoped: it is a support note for bounded Higgs quantitative behavior and explicitly excludes standalone exact m_H authority. The runner is not clean for exact Higgs closure, but that is not the claim under audit; the two completed failures show missing exact coupling/crossing closure and reinforce the boundary. Within the bounded scope, the source note and completed runner evidence close without promoting an exact Higgs-mass derivation.
-- **auditor confidence:** high
-
-### `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
-
-- **Note:** [`HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact mean-field algebraic ratio R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) for N_taste=16, N_c=3, and scoped g_bare=1, assuming D_taste^2=d I with d=4 and mean-field scaling U_ab -> u_0 delta_ab. Physical Higgs/SM matching, u_0 value, and m_H=v/(2u_0) are excluded.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `fresh-agent-Boyle-019e6ce4-ee9d-7ef1-8c2f-513651126166`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Given D_taste^2=d I with d=4 and mean-field U_ab -> u_0 delta_ab, W''(0)/N_tot = 1/(4u_0^2) and R_lattice = 4/(u_0^2 N_taste)=1/(4u_0^2) at N_taste=16.  _(class `A`)_
-- **chain closes:** False — The displayed algebra and runner checks close exactly: W''(0)/N_tot equals 1/(4u_0^2), matching R_lattice. The retained one-hop rows cover the scoped SU(3) and g_bare surfaces, but the Clifford/staggered identity D_taste^2=d I and mean-field factorization U_ab -> u_0 delta_ab are load-bearing admitted premises, not retained one-hop theorem rows or registered Tier-A admissions in this packet.
-- **rationale:** Issue: the exact algebra depends on two load-bearing imports, D_taste^2=d I and U_ab -> u_0 delta_ab, that are stated as admitted standard inputs rather than retained one-hop authorities. Why this blocks: without retained or explicitly approved admission status for those premises, the audit can verify only the downstream algebra, not the full claimed lattice-side theorem from retained inputs. Repair target: add retained one-hop theorem/dependency coverage or an explicitly approved admission for the Clifford/staggered identity and the mean-field scaling premise, then re-audit the same algebraic ratio. Claim boundary until fixed: the runner-supported equality R_lattice=1/(4u_0^2) is an exact conditional algebraic consequence of the stated premises and does not support any physical Higgs mass or Standard Model matching claim.
 - **auditor confidence:** high
 
 ### `higgs_mechanism_note`

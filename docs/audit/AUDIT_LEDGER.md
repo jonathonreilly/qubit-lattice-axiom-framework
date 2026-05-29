@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 158 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 584 |
+| **retained_bounded** | 585 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1153 |
+| unaudited | 1152 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 901 |
+| `audited_clean` | 902 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1383 |
+| `unaudited` | 1382 |
 
 | claim_type | count |
 |---|---:|
@@ -488,6 +488,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7029,6 +7030,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Using K(i)=-i, KDK^{-1}=D, and P D P^{-1}=-D, the note computes Θ_H H Θ_H^{-1}=-i·PDP=-i·(-D)=iD=H.  _(class `A`)_
 - **chain closes:** True — The conclusion follows by algebra from the retained-grade C/P-on-D identities in CPT_EXACT_NOTE plus the immediate real-matrix conjugation rule for D and K(i)=-i. The SME-bilinear identification remains explicitly out of scope and is not needed for L1-L4.
 - **rationale:** The load-bearing step is a direct algebraic conjugation identity over retained-grade finite-lattice inputs, not a definition, renaming, external comparator, or tuned numerical match. The runner source builds the framework matrices directly and checks the claimed matrix identities with no helper imports or hidden constants. The cited bridge's open SME-dictionary issue is explicitly excluded from the audited scope, so it does not carry into this bounded theorem.
+- **auditor confidence:** high
+
+### `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`
+
+- **Note:** [`HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md`](../../docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded scoping theorem on the exact bare bulk staggered-Dirac surface: for the massless mean-field Hermitian staggered Dirac operator on the L_s=2, L_t in {2,4}, APBC closed-torus Z^3 x S^1 substrate, the APS signed spectral asymmetry sum is zero by +/- spectral pairing; and the candidate 1/8 expressions 2^(1-d), 1/(2d), and 1-eta(d)/zeta(d) coincide at d=4 only through the existing integer-alignment identity 2^(d-2)=d. Broad APS mechanisms with Wilson/domain-wall mass, nontrivial gauge background, boundary geometry, spectral flow, or residue corrections remain open and are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-hierarchy-aps-eta-bulk-vanishing`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The massless staggered chirality operator anticommutes with the Hermitian staggered Dirac matrix on the stated finite bulk surface, pairing every nonzero eigenvalue lambda with -lambda so sum sign(lambda)=0; separately, 2^(1-d)=1/(2d)=1-eta(d)/zeta(d) is equivalent to 2^(d-2)=d and has the unique integer solution d=4.  _(class `A`)_
+- **chain closes:** True — Manual check: anticommutation {Gamma5,D}=0 implies +/- eigenvalue pairing, and the stated L_t=2,4 spectra have nonzero uniform |lambda|^2, so the signed eta sum vanishes. The rational identity check reduces A=B=C to 2^(d-2)=d, with d=2,3 nonzero residuals and monotonic positivity for d>=5. The no-go discipline gate does not block because the verdict ratifies only this exact bare-bulk obstruction and leaves the five alternative APS routes open.
+- **rationale:** The row closes as a bounded scoping theorem, not as an APS no-go. The exact finite bulk surface has +/- spectral pairing, so the bare APS eta signed sum is zero and cannot supply eta_APS/2=1/8 there. The 1/8 rational identities are not independent witnesses because their equality reduces to the already retained d=4 integer-alignment theorem. The source's N1-N8 discipline is adequate for the audited scope: Wilson/domain-wall mass, nontrivial gauge backgrounds, boundary geometry, spectral flow, and residue corrections are explicitly left open rather than foreclosed.
 - **auditor confidence:** high
 
 ### `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 241,
     "high": 315,
-    "leaf": 303,
+    "leaf": 302,
     "medium": 296
   },
   "cycle_break_target_count": 0,
@@ -26170,31 +26170,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-        "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35083,6 +35058,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 23,
-  "total_pending": 1155
+  "ready_count": 22,
+  "total_pending": 1154
 }

@@ -1,0 +1,26 @@
+loop: bertrand-green-kernel-bridge-20260529
+branch: physics-loop/bertrand-green-kernel-bridge-20260529
+target_claim_id: bertrand_stable_orbit_upper_bound_support_note_2026-05-20
+actual_current_surface_status: unaudited
+branch_author_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: native radial Green-kernel derivation for all d >= 3
+files_touched:
+  - docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md
+  - scripts/bertrand_stable_orbit_green_kernel_bridge.py
+  - logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge_2026_05_29.txt
+open_imports:
+  - Bertrand all-bounded-orbits closure theorem remains out of scope
+new_axioms: false
+review_loop_disposition: not_run_user_delegated_to_reviewer
+audit_required_before_effective_retained: true
+pipeline_result:
+  audit_status: unaudited
+  effective_status: unaudited
+  queue_ready: true
+  queue_rank: 851
+  open_dependency_paths: []
+next_exact_action: independent audit of the repaired row
+stop_condition: science block packaged as draft PR

@@ -29394,6 +29394,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/bertrand_stable_orbit_green_kernel_bridge.py": {
+      "assert_count": 1,
+      "claims": [
+        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/bmv_bounded_negative.py": {
       "assert_count": 7,
       "claims": [
@@ -58293,7 +58308,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 358,
     "dominant_class_distribution": {
       "A": 268,
       "B": 296,

@@ -60,6 +60,39 @@ not an unconditional proof that the one-qubit operator algebra on the `Z^3`
 spatial substrate forbids every CP-odd topological discretization or derives
 the scalar-mass-only action class.
 
+## §0.2. 2026-05-29 convention reconciliation (factor-of-½ bookkeeping)
+
+An audit flagged an internal factor-of-½ inconsistency between the displayed
+Lemma formulas and the runner. The single self-consistent convention now used
+identically in Lemma 2.2, Lemma 2.3, the §5 gate descriptions, and the runner
+(which is the executable ground truth) is:
+
+- Generators `T^a = λ^a/2` with `Tr(T^a T^b) = (1/2) δ^{ab}`, hence
+  `Tr((F^a_{μν} T^a)²) = (1/2) F^a_{μν} F^{μν,a}`, so the `(a^4/2)` expansion
+  prefactor already absorbs the trace-`1/2` to give
+  ```
+  Re Tr U_P = N_c − (a^4/4) F^a_{μν} F^{μν,a} + O(a^6)
+  ```
+  with **no second `1/2`**. (The earlier displayed `N_c − (a^4/4)·(1/2) F^a F^a`
+  double-counted the trace normalization and is corrected.)
+- The CP-odd slot is the pure-imaginary action term
+  `S_θ = i θ Q_lat = i θ Σ_P Im Tr U_P = (θ/2) Σ_P (Tr U_P − Tr U_P^†)`, with the
+  real topological-charge proxy `Q_lat = Σ_P (Tr U_P − Tr U_P^†)/(2i)`. The three
+  forms agree with **no spurious extra factor of `i`**; Lemma 2.3 no longer
+  switches between `(θ/2)(Tr U − Tr U^†)` and an extra-`i` form mid-proof.
+
+The runner now **asserts these coefficients explicitly** (gates V3.0a/b/c for the
+plaquette-expansion coefficient, V2.0a/b/c for the θ-term algebra), so the
+convention is executed ground truth, not prose-only bookkeeping. This
+reconciliation changes only the **displayed coefficient bookkeeping**: the two
+substantive conclusions — `θ_bare = 0` on the real-positive Wilson slot
+(Theorem 2.4) and `arg det(M_u M_d) = 0` on the scalar-mass surface
+(Theorem 3.4) — are unchanged, because they depend only on (i) any nonzero `θ`
+making the Boltzmann factor complex and (ii) the determinant phase of real vs.
+complex mass, neither of which references the kinetic-coefficient normalization.
+The source-side label remains `bounded_theorem`; the independent audit lane owns
+the verdict.
+
 ---
 
 ## §1. Setting
@@ -110,12 +143,22 @@ Tr U_P = N_c + i a² Tr(F_{μν}^a T^a) − (a^4/2) Tr((F_{μν}^a T^a)²) + O(a
         = N_c − (a^4/2) Tr((F_{μν}^a T^a)²)  [since Tr T^a = 0]
         + O(a^6).
 ```
+**Trace-normalization convention (used identically here, in Lemma 2.3, and in the runner V3).** With `Tr(T^a T^b) = (1/2) δ^{ab}` for fundamental SU(3), the quadratic trace evaluates to
+```
+Tr((F_{μν}^a T^a)²) = (1/2) F^a_{μν} F^{μν,a},
+```
+where `F^a_{μν} F^{μν,a}` denotes the raw sum over the colour index `a` (and the μν components) of the squared algebra coefficients. Substituting into the `(a^4/2)` prefactor gives
+```
+(a^4/2) · Tr((F_{μν}^a T^a)²) = (a^4/2) · (1/2) F^a_{μν} F^{μν,a} = (a^4/4) F^a_{μν} F^{μν,a},
+```
+so the trace-normalization `1/2` is already absorbed into the displayed `(a^4/4)` coefficient and must not be written a second time.
+
 Therefore:
 - **Re Tr U_P** at leading non-trivial order yields the kinetic piece
   ```
-  Re Tr U_P  =  N_c − (a^4/4) · (1/2) F^a_{μν} F^{μν,a}  +  O(a^6)
+  Re Tr U_P  =  N_c − (a^4/4) F^a_{μν} F^{μν,a}  +  O(a^6)
   ```
-  (using `Tr(T^a T^b) = (1/2) δ^{ab}` for fundamental SU(3)), which under (P3) canonical normalization gives the YM kinetic term with `β = 2 N_c / g²` (Wilson convention).
+  (the `1/2` from `Tr(T^a T^b) = (1/2) δ^{ab}` is already absorbed into the `(a^4/4)` coefficient as shown above), which under (P3) canonical normalization gives the YM kinetic term with `β = 2 N_c / g²` (Wilson convention). This is exactly the coefficient asserted by the runner gate V3 (`(N_c − Re Tr U_P)/(a^4/4) → F^a_{μν} F^{μν,a}`).
 - **Im Tr U_P** at leading order vanishes when `F_{μν}^a` is real-valued in `su(3)` (since `T^a` are Hermitian and `Tr T^a = 0`). It receives nontrivial single-plaquette contributions at order `a^6` and above:
   ```
   Im Tr U_P  =  O(a^6)
@@ -126,25 +169,23 @@ Therefore:
 
 ### Lemma 2.3 (The CP-odd single-plaquette slot violates the real-positive measure)
 
-Consider adding to the canonical Wilson action `S_W[U] = (β/N_c) Σ_P (N_c − Re Tr U_P)` a candidate CP-odd plaquette-local term
+Consider adding to the canonical Wilson action `S_W[U] = (β/N_c) Σ_P (N_c − Re Tr U_P)` a candidate CP-odd plaquette-local term. We fix the convention once and use it throughout: write the real lattice topological-charge proxy as
 ```
-S_θ[U] = i θ · Σ_P Im Tr U_P  ≡  (θ/2) · Σ_P (Tr U_P − Tr U_P^†)
+Q_lat[U] := Σ_P (Tr U_P − Tr U_P^†)/(2i) = Σ_P Im Tr U_P   ∈ R
 ```
-for some real coupling `θ ∈ R`.
+(`Q_lat` is real because `(z − z̄)/(2i) = Im z`). The candidate CP-odd action term is the **pure-imaginary** action contribution
+```
+S_θ[U] = i θ · Q_lat[U] = i θ · Σ_P Im Tr U_P = (θ/2) · Σ_P (Tr U_P − Tr U_P^†)
+```
+for some real coupling `θ ∈ R`. (The three forms agree: `i θ Im Tr U_P = i θ (Tr U_P − Tr U_P^†)/(2i) = (θ/2)(Tr U_P − Tr U_P^†)` — no extra factor of `i` is introduced.) The action term `S_θ` is therefore imaginary, contributing the phase `e^{−S_θ} = e^{−i θ Q_lat}` to the Boltzmann weight.
 
-**Claim.** For any `θ ≠ 0`, the candidate `exp(-S_W[U] - i θ Q_lat[U])` is not real-positive configuration-wise on generic SU(3) configurations.
+**Claim.** For any `θ ≠ 0`, the candidate `exp(−S_W[U] − S_θ[U]) = exp(−S_W[U] − i θ Q_lat[U])` is not real-positive configuration-wise on generic SU(3) configurations.
 
-**Proof from primitives.** By Lemma 2.1, the most general gauge-invariant plaquette-local term is `F(Tr U_P, Tr U_P^†)`. To be real-valued (P4) on the configuration space, the term must satisfy `F(z, z̄)^* = F(z, z̄)`, i.e., `F(z, z̄) = G(z + z̄, i(z − z̄))` for `G` real on its (real-valued) two arguments. The candidate `i θ · (z − z̄)/(2i) = θ · Im z` is a real function of `(z + z̄, Im z)`, but with the explicit factor of `i` in front, the candidate
-```
-i θ · (Tr U_P − Tr U_P^†) / 2 = i θ · i · Im Tr U_P = − θ · Im Tr U_P
-```
-is in fact **real** (because the explicit `i (z − z̄)/2 = − Im z`, which is real). So **a naive lattice "iθ × imaginary part" candidate IS real** when written carefully.
-
-We must therefore look more carefully. The genuine obstruction comes from the **partition function**:
+**Proof from primitives.** By Lemma 2.1, the most general gauge-invariant plaquette-local term is `F(Tr U_P, Tr U_P^†)`. For the **action** to be real-valued (P4) on the configuration space, the term must satisfy `F(z, z̄)^* = F(z, z̄)`, i.e., `F(z, z̄) = G(z + z̄, Im z)` for `G` real on its (real-valued) two arguments. The proposed `S_θ = i θ Q_lat = i θ Im Tr U_P` is **not** of this real form: it is `i` times the real quantity `Im Tr U_P`, hence pure imaginary and not a real-action summand (for `θ ≠ 0`). Equivalently, the genuine obstruction is most transparent at the level of the **partition function**:
 ```
 Z(θ) = ∫ DU exp(−S_W[U] − i θ · Q_lat[U])
 ```
-where `Q_lat[U] := Σ_P (Tr U_P − Tr U_P^†)/(2i) = Σ_P Im Tr U_P` is the lattice topological-charge proxy. The exponential's argument is now `−S_W − i θ Q_lat`. The Boltzmann factor itself becomes **complex** (not real-positive) configuration-by-configuration:
+with `Q_lat[U] = Σ_P Im Tr U_P` the real lattice topological-charge proxy fixed above. The exponential's argument is `−S_W − i θ Q_lat`. The Boltzmann factor itself becomes **complex** (not real-positive) configuration-by-configuration:
 ```
 exp(− S_W[U] − i θ Q_lat[U])  =  exp(−S_W[U]) · (cos(θ Q_lat[U]) − i sin(θ Q_lat[U])).
 ```
@@ -282,12 +323,12 @@ The original parent note's closure was: 13 theorem passes + 30 retained-surface 
 The companion runner [`scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py`](../scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py) exhibits the bounded construction-and-rejection at the operator-slot level rather than only evaluating a θ-free surface. Eight verification gates:
 
 - **V1 — Plaquette gauge-invariant operator enumeration.** Construct candidate scalar functionals `{Tr U_P, Tr U_P^†, Tr U_P², Tr(U_P U_P^†)}`. For each, sample `N = 20` random SU(3) plaquette configurations and verify gauge invariance under random `V ∈ SU(3)` transformations of all bounding link variables. PASS = all four candidates gauge-invariant; this verifies Lemma 2.1's framing.
-- **V2 — Real-action exclusion of imaginary-plaquette slot.** Build candidate `S_θ[U] = i θ · Σ_P Im Tr U_P` for `θ ∈ {0.01, 0.1, 1.0}` on small Λ. Compute the Boltzmann factor `exp(−S_W − S_θ)` on `N = 20` configurations. PASS if for `θ ≠ 0`, the Boltzmann factor has nonzero imaginary part (verifying the Lemma 2.3 obstruction at the lattice level).
-- **V3 — Canonical-normalization continuum-limit check.** Expand `U_P = exp(i a² F^a_{μν} T^a)` for small `a` and `random su(3)`-valued `F^a_{μν}`. Verify (i) `Re Tr U_P → N_c − (a^4/4) F^a F^a + O(a^6)` matching the YM kinetic with β = 6 convention, and (ii) `Im Tr U_P` vanishes at order `a^4` (i.e., the CP-odd density first appears at `a^6` or higher). PASS = both checks hold within numerical tolerance on 5 expansion orders.
+- **V2 — Real-action exclusion of imaginary-plaquette slot.** First (V2.0a/b/c) **assert the Lemma 2.3 θ-term algebra explicitly**: the `Q_lat` density `(Tr U_P − Tr U_P^†)/(2i)` is real and equals `Im Tr U_P`; the three displayed forms of the slot density agree with no spurious extra factor of `i` (`i θ · Im Tr U_P = i θ · (Tr U_P − Tr U_P^†)/(2i) = (θ/2)(Tr U_P − Tr U_P^†)`, all pure imaginary); and the spurious "extra-`i`" form `i θ · (Tr U_P − Tr U_P^†)/2 = −θ · Im Tr U_P` (real) is asserted to be a **different** quantity, guarding against the convention switch. Then build candidate `S_θ[U] = i θ · Σ_P Im Tr U_P` for `θ ∈ {0.01, 0.1, 1.0}` on small Λ, compute the Boltzmann factor `exp(−S_W − S_θ)` on `N = 10` configurations, and PASS if for `θ ≠ 0` the Boltzmann factor has nonzero imaginary part (verifying the Lemma 2.3 obstruction at the lattice level).
+- **V3 — Canonical-normalization continuum-limit check.** First (V3.0a/b/c) **assert the plaquette-expansion coefficient explicitly**: the trace normalization `Tr((F^a_{μν} T^a)²) = (1/2) F^a_{μν} F^{μν,a}` (from `Tr(T^a T^b) = (1/2) δ^{ab}`); the prefactor algebra `(a^4/2) · (1/2) = a^4/4`; and that the displayed Lemma 2.2 coefficient is `N_c − (a^4/4) F^a F^a` with **no spurious extra `1/2`** (the buggy `(a^4/4)·(1/2)` form is explicitly rejected because it would predict the wrong ratio by a factor of two). Then expand `U_P = exp(i a² F^a_{μν} T^a)` for small `a` and `random su(3)`-valued `F^a_{μν}` and verify (i) `Re Tr U_P → N_c − (a^4/4) F^a F^a + O(a^6)` matching the YM kinetic with β = 6 convention, and (ii) `Im Tr U_P` vanishes at order `a^4` (i.e., the CP-odd density first appears at `a^6` or higher). PASS = all checks hold within numerical tolerance on 5 expansion orders.
 - **V4 — Bounded-below check on real Wilson slot.** Compute `S_W = (β/N_c) Σ_P (N_c − Re Tr U_P)` on `N = 50` random SU(3) configurations. PASS = all `S_W ≥ 0` (verifies (P5) for the retained slot).
 - **V5 — Mass orientation: (C-det) + (C-class) split.** Build candidate masses (M-real with `m = 1.0`), (M-complex with `α = π/4`), (M-pseudoscalar with `m₅ = 1.0`), (M-mixed with `m = m₅ = 1.0`) on a small 2×2×2×2 staggered Λ with `N = 10` random SU(3) configurations. Compute `det(D + M)` and verify: (a) M-real gives real-positive det, satisfying (C-det); (b) M-complex (α=π/4) gives nonzero-phase det, failing (C-det); (c-d) M-pseudoscalar and M-mixed are characterized structurally by nonzero ε-component (`M_P ≠ 0`), failing (C-class) — verify by decomposing each into `(M_S · I + M_P · ε)`. PASS = M-real is the unique candidate satisfying both (C-det) AND (C-class).
 - **V6 — Mass orientation: reflection-positivity precondition.** Same small Λ, same configurations. For each candidate mass, check the determinant precondition for the retained RP construction: `det(D + M) > 0` real-positive. PASS = M-real passes on all; M-complex (α=π/4) fails (C-det). M-mixed empirically passes the RP determinant precondition but is excluded by (C-class), as recorded honestly.
-- **V7 — CP-odd single-plaquette slot construction + rejection.** Explicitly construct the CP-odd single-plaquette slot coupling `S_θ[U] = i θ · Σ_P Im Tr U_P` (which contributes `−i θ Q_lat[U]` to the action when written with the standard sign convention). Compute the Boltzmann factor `exp(−S_W − i θ Q_lat[U])` for `θ = 0.1` on a small Λ and `N = 5` configurations. Verify the Boltzmann factor has nonzero imaginary part for `θ ≠ 0` and zero imaginary part for `θ = 0`. PASS = rejection criterion triggers for `θ ≠ 0`, control passes for `θ = 0`.
+- **V7 — CP-odd single-plaquette slot construction + rejection.** Explicitly construct the CP-odd single-plaquette slot coupling `S_θ[U] = i θ · Q_lat[U] = i θ · Σ_P Im Tr U_P` (so the exponent `−S_θ = −i θ Q_lat[U]` enters the Boltzmann weight). Compute the Boltzmann factor `exp(−S_W − S_θ) = exp(−S_W − i θ Q_lat[U])` for `θ = 0.1` on a small Λ and `N = 5` configurations. Verify the Boltzmann factor has nonzero imaginary part for `θ ≠ 0` and zero imaginary part for `θ = 0`. PASS = rejection criterion triggers for `θ ≠ 0`, control passes for `θ = 0`.
 - **V8 — Composition with Leg A.** Sample `N = 30` SU(3) configurations on small Λ. Compute (i) `det(D + 1.0 · I)` and verify real-positive (Leg A retained behavior, parent note line 49); (ii) `det(D + 1.0 · e^{iπ/4} · I)` (M-complex at α=π/4) and verify nonzero-phase for all samples. PASS = Leg A real-positivity holds AND M-complex (α=π/4) is rejected. This composition exhibits Theorem 3.4 + Leg A on actual SU(3) configurations.
 
 Hard assertion gates, PASS/FAIL summary, target `PASS = 8, FAIL = 0`. Runtime < 5 minutes on a standard laptop using NumPy only.

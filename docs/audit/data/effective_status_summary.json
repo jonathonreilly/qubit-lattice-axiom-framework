@@ -7,13 +7,8 @@
     "open_gate": 117,
     "positive_theorem": 701
   },
-  "cycle_examples": [
-    [
-      "higgs_mass_from_axiom_note",
-      "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
-    ]
-  ],
-  "cycles_detected": 1,
+  "cycle_examples": [],
+  "cycles_detected": 0,
   "effective_status_counts": {
     "audited_conditional": 15,
     "audited_failed": 3,

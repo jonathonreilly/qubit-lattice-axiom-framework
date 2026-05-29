@@ -12385,10 +12385,6 @@
       "to": "plaquette_self_consistency_note"
     },
     {
-      "from": "higgs_mass_from_axiom_note",
-      "to": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
-    },
-    {
       "from": "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02",
       "to": "higgs_mass_from_axiom_note"
     },
@@ -58997,11 +58993,10 @@
         "higgs_from_lattice_note",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
         "yt_ew_color_projection_theorem",
-        "plaquette_self_consistency_note",
-        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+        "plaquette_self_consistency_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bf2bbb9f21ed8e140a3ede41b590e0fc233795d35502e48c25db3f9f9ecdb325",
+      "note_hash": "89aa06db5d3fec46bec32e0ddec9cb517e10043c85327f187215c99d72acd6fb",
       "path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
       "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
       "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking"
@@ -87347,7 +87342,7 @@
       "open_gate": 133,
       "positive_theorem": 581
     },
-    "edge_count": 9948,
+    "edge_count": 9947,
     "leaf_count": 826,
     "node_count": 2616,
     "root_count": 872,

@@ -8,6 +8,8 @@ direct_effective_status_change_allowed_from_this_note: false
 # Y_T Qubit Democratic Top-Coefficient Candidate
 
 **Claim type:** bounded_theorem
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
 **Role:** exact support / science candidate.
 **Status:** candidate support; no positive Y_T closure.
 **Primary runner:** `scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py`
@@ -44,6 +46,24 @@ top Yukawa coefficient = democratic Q_L source component amplitude.
 That equality must be derived from a dynamical response theorem or measured.
 This note supplies the strongest current science candidate for that
 premise.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The S_6-invariant unit-vector calculation closes exactly, and an independent symbolic check reproduces the 1/sqrt(6) component amplitude. The top-coefficient claim remains conditional because the physical response bridge equating the top co"*
+
+with repair: *"missing_bridge_theorem: prove the strict top response coefficient equals the democratic Q_L component amplitude, or split this into a pure exact support lemma with explicit direct dependencies for the Q_L carrier dimension."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The exact finite-dimensional result that the unique `S_6`-permutation-invariant unit vector on the six Q_L color-isospin components has component amplitude `1/sqrt(6)`, verified by the runner via independent symbolic check; this is a pure exact support lemma for the Q_L carrier dimension.
+- **NON-load-bearing (split off / admitted):** The identification of that democratic component amplitude with the physical top Yukawa response coefficient `y_33`; this requires a dynamical response bridge theorem equating the strict top coefficient to the democratic Q_L source amplitude, which is not supplied and is recorded here as an admitted, not-derived input.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Axiom-First Setup
 

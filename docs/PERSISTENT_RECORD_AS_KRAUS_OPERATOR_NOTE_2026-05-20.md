@@ -1,8 +1,9 @@
 # Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators
 
 **Date:** 2026-05-20
-**Type:** bounded_theorem candidate
+**Type:** bounded_theorem
 **Status:** source-side proposal — independent audit lane owns the verdict
+**Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/persistent_record_kraus_instrument_certificate.py`](../scripts/persistent_record_kraus_instrument_certificate.py)
 **Runner cache:** [`logs/runner-cache/persistent_record_kraus_instrument_certificate.txt`](../logs/runner-cache/persistent_record_kraus_instrument_certificate.txt)
 **Supplies (proposed):** a bounded replacement candidate for the
@@ -18,6 +19,24 @@ alias/decorative handle, the candidate parent is
 [`PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md`](PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md).
 This is source-side routing context only; it does not assert an
 `audit_status` or `effective_status`.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The Kraus/CPTP algebra closes once a normalized linear isometry W is assumed, and the runner verifies that algebra on a finite sampled isometry. The restricted packet does not derive W from the retained persistent-record overlap-kernel pilo"*
+
+with repair: *"missing_bridge_theorem: derive or cite a retained normalized linear record-writing isometry theorem for the persistent-record overlap-kernel lane; then re-audit the finite Kraus/CPTP algebra as a bounded bridge."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The finite-instrument algebraic certificate — that if a normalized linear isometry `W : H_sys → H_sys ⊗ H_record` is given, then extracting record blocks `K_r` yields (a) resolution of identity `Σ_r K_r†K_r = I`, (b) a CPTP unconditional update, and (c) normalized selective post-record states — all verified by the runner on a concrete `C^4 → C^4 ⊗ C^3` example.
+- **NON-load-bearing (split off / admitted):** The derivation of a normalized linear record-writing isometry W from the retained `PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE` overlap-kernel pilot lane; the packet assumes W as an external input and does not construct it from the overlap-kernel dynamics, so the Kraus bridge is conditional on a retained isometry theorem that is not yet supplied.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Claim
 

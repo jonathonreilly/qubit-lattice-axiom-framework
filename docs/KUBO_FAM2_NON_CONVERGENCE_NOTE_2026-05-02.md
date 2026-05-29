@@ -7,6 +7,26 @@ non-convergence residual flagged in
 `KUBO_FAM2_REFINEMENT_NOTE.md`. Per skill workflow #9 deep-block stretch
 attempt requirement (after 2 consecutive demotion cycles 10, 11).
 **Primary runner:** `scripts/frontier_kubo_fam2_non_convergence_stretch.py`
+**Type:** open_gate
+**Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The cited authorities support that Fam2 is non-convergent on the tested H ladder and that the easy near-term rescue is weakened. They do not prove the exhaustive obstruction claim that only the three named non-perturbative routes could reso"*
+
+with repair: *"missing_bridge_theorem: prove or replace the exhaustive claim that the Fam2 residual requires one of the three named non-perturbative analyses; otherwise scope the note explicitly to documented possible obstruction routes."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The runner-documented non-convergence of Fam2 across the tested H ladder (oscillation range 12.2%–36.4%), the explicit naming of three candidate obstruction routes (O1 microscopic dynamics, O2 critical-point / phase transition, O3 discretization artifact), and the sharpening of the residual from a vague non-convergence to a statement requiring non-perturbative analysis of (drift, restore) parameter space.
+- **NON-load-bearing (split off / admitted):** The exhaustive claim that Fam2 non-convergence can only be resolved via one of the three named non-perturbative routes is not proved; no bridge theorem establishes that these routes are exhaustive, so the exhaustive-obstruction framing is an admitted, non-load-bearing characterization rather than a derived result.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## 0. The named residual
 

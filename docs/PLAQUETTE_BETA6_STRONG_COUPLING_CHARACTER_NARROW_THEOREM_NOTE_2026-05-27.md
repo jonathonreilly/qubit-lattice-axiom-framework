@@ -38,9 +38,27 @@ close the plaquette-self-consistency lane.
 **Status authority:** independent audit lane only. This source note
 does not set or predict an audit outcome; effective status is
 pipeline-derived after independent review.
-**Type:** bounded_theorem.
+**Type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py`](./../scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py)
 **Cached log:** [`logs/runner-cache/frontier_plaquette_beta6_strong_coupling_character_narrow.txt`](./../logs/runner-cache/frontier_plaquette_beta6_strong_coupling_character_narrow.txt) (PASS=20 FAIL=0)
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The Padé algebra closes exactly inside the supplied coefficient packet and runner. The retained audit chain does not close because the Münster-Drouffe-Zuber coefficient table, the leading-order character coefficient setup, and the MC compar"*
+
+with repair: *"missing_bridge_theorem: Add retained/effective bounded input rows for the SU(3) strong-coupling coefficient table and leading character-coefficient setup, or narrow this row to a pure algebra lemma explicitly conditional on those supplied c"*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The exact Padé[3/3] algebra: given the supplied Münster-Drouffe-Zuber coefficient table `{c_1=1, c_4=4, c_6=24, c_7=-24, c_8=100}` as an external input, the runner verifies in exact sympy rational arithmetic that `Pade[3/3](1/3) = 3/5`, the conformal cross-check at `alpha in {2,4}` also yields `3/5`, the rigidity audit holds, and the Borel-Laplace route is obstructed.
+- **NON-load-bearing (split off / admitted):** The Münster-Drouffe-Zuber SU(3) strong-coupling coefficient table itself, the leading-order character-coefficient setup `u(beta) = beta/(2 N^2)`, and the MC comparison value `0.5934` are all external inputs, not results retained in the framework; without a retained bridge deriving these from the axioms, the note is explicitly conditional on those cited external provisions.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Statement
 

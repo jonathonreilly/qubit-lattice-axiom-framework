@@ -2,8 +2,28 @@
 
 **Status:** support - route-2 primitive-chain update
 **Date:** 2026-04-19  
+**Type:** open_gate
+**Status authority:** independent audit lane only.
 **Purpose:** restate the remaining Route-2 primitives after the exact bilinear
 carrier and the new readout/time-coupling theorem block
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The status update follows algebraically from the cited no-go and bounded notes, but the full positive theorem does not close because the readout map P_R, specifically beta_E / alpha_E = 21/4, is explicitly left open."*
+
+with repair: *"missing_bridge_theorem: derive beta_E / alpha_E = 21/4 from the restricted Route-2 objects or prove an admissibility theorem showing it cannot be uniquely selected."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The algebraic reduction that collapses the Route-2 readout problem to three exact endpoint ratios `(β_T/α_T, α_T/α_E, β_E/α_E)` and the exact derivation that the current stack (exact kinematic scaffold `PL S³ × R`, bilinear carrier `K_R`, and slice semigroup `T_R = exp(−Λ_R)`) already determines the `T`-side candidates, leaving only the `E`-channel ratio as the remaining obstruction; these structural reductions follow from the cited retained upstream authorities.
+- **NON-load-bearing (split off / admitted):** The exact value `β_E/α_E = 21/4` — the specific E-channel readout entry needed to close the unique readout-to-slice time-coupling theorem — is not derived from the current Route-2 objects and is explicitly recorded as an open primitive; the positive theorem cannot close until this ratio is independently derived or an admissibility theorem rules out unique selection.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Verdict
 

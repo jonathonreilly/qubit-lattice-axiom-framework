@@ -1,7 +1,27 @@
 # Tensor Network Connection Note
 
 **Status:** support - structural or confirmatory support note
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The runner reproduces the finite numerical gates, but it does not derive the note's broader bridge to AdS/CFT, Ryu-Takayanagi, and holographic-principle language. In particular, the runner reports the S vs 1/g RT fit as R^2=0.6465 while the linea"*
+
+with repair: *"missing_bridge_theorem: Re-audit after either removing/marking the holographic and RT language as explicitly interpretive, or adding a retained bridge theorem that derives the claimed AdS/CFT/RT/holographic connection from the finite transf"*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The four runner-verified computational gates: propagator-as-MPO bond dimension equals Ny on tested 2D lattices (Test 1); CFT central charge `c=1.09` with `R^2=0.9997` and 2D area-law fit `R^2=0.9996` (Test 2); gravitational bond dimension drop 8→7 at `f=20` (Test 3); monotonic entropy decrease with gravitational coupling (Test 4) — all finite numerical results exactly reproduced by the runner.
+- **NON-load-bearing (split off / admitted):** The broader interpretive bridge connecting these finite numerical results to AdS/CFT, Swingle 2012, Pastawski et al. 2015, Ryu-Takayanagi, and the holographic principle is not derived by the runner; those identifications are explicitly interpretive and remain admitted, non-load-bearing language until a retained bridge theorem derives the connection from the finite transfer-matrix structure.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 **Audit-conditional perimeter (2026-05-02):**
 The current generated audit ledger records this row `audited_conditional` with

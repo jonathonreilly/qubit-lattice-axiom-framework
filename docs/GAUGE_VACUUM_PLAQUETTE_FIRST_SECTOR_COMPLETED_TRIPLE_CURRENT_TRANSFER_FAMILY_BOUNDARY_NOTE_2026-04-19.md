@@ -1,11 +1,30 @@
 # Gauge-Vacuum Plaquette First-Sector Completed Triple Current Transfer-Family Boundary
 
 **Date:** 2026-04-19 (originally); 2026-05-03 (dense-grid certificate added); 2026-05-10 (scope-narrowed per audit verdict); 2026-05-16 (continuous-box Lipschitz certificate added)
+**Type:** no_go
 **Claim type:** no_go
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py`](../scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py) (dense-grid sampled certificate, PASS=3, FAIL=0)
 **Continuous-box runner:** [`scripts/gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16.py`](../scripts/gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16.py) (adaptive subdivision under empirically validated Lipschitz constants; supports `g(p) > 5e-3` on the continuous box under that stated empirical-Lipschitz assumption, PASS=7, FAIL=0)
 **Companion runner:** [`scripts/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.py`](../scripts/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.py) (original local-perturbation check)
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The finite sampled-grid statement closes against the provided runner output. The continuous-family no-go does not close because the global Lipschitz constants are empirical finite-difference bounds rather than analytic or interval-certified"*
+
+with repair: *"missing_bridge_theorem: certify the Lipschitz constants analytically or by interval arithmetic, then rerun the continuous-box certificate with those certified bounds."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** The runner-certified sampled-grid no-go over the explicit 1440-point dense grid (PASS=3, FAIL=0), establishing that no point in the listed grid realizes the completed first-sector triple with gap below `7.79e-3`; the continuous-box Lipschitz subdivision runner provides conditional support for the continuous-box statement under the empirically validated 2.5x safety-cushion Lipschitz constants.
+- **NON-load-bearing (split off / admitted):** The unconditional continuous-family no-go claim, which requires analytic or interval-arithmetic certification of the Lipschitz constants rather than the empirical finite-difference sup-gradient bounds currently recorded; that certification is the named missing bridge and stays an admitted, not-yet-closed derivation target.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 ## Claim
 

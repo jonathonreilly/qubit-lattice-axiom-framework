@@ -3,6 +3,26 @@
 **Status:** support - structural or confirmatory support note
 **Date:** 2026-04-11
 **Primary runner:** scripts/frontier_field_equation_uniqueness.py
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only.
+
+## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The variation of the chosen action algebraically gives the screened Poisson equation, but the packet does not close the missing bridge that this chosen action is uniquely forced by the framework rather than assumed. The included runner also"*
+
+with repair: *"missing_bridge_theorem: provide a restricted-class uniqueness theorem deriving the local quadratic field action, including why the mass term and source coupling are selected rather than assumed."*.
+
+Supplying the named retained authority/bridge is substantive new work, out of
+scope for this repair. This revision takes the **split path**:
+
+- **Load-bearing (in scope):** Within the restricted class of local, quadratic, positive-definite graph field actions, the Euler-Lagrange variation of the stated action algebraically and uniquely yields the screened Poisson equation `(L + mu^2 I) Phi = G rho`; this derivation is exact and constitutes the runner-verified content.
+- **NON-load-bearing (split off / admitted):** The selection of the local quadratic action form itself — specifically why the mass term and source coupling are chosen and not derived from the framework axioms — is an assumed premise rather than a retained, derived result; this uniqueness-forcing bridge remains an admitted, non-load-bearing input until a retained restricted-class uniqueness theorem for the action is supplied.
+
+No new axiom, import, or retained bridge is introduced. The runner-verified
+core is the load-bearing content; the named bridge stays an admitted,
+non-load-bearing input until a retained authority for it lands.
 
 **Audit-dispatch parent candidate:** If a future independent audit
 evaluates whether this variational wrapper is a non-chain-closing

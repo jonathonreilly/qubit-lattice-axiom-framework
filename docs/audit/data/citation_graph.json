@@ -55849,10 +55849,10 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "049d83aa6a0fb7592c42d4e3734ea4ec0dc2fa0055fe93b23428e442bbe26580",
+      "note_hash": "8ae9f221de987b642c0fc7ec2df8b50aa185200628ab6260b414e49e89cdf292",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
-      "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction"
+      "title": "Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction (Formal Algebraic Lemma)"
     },
     "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17": {
       "claim_id": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_note_2026-05-17",

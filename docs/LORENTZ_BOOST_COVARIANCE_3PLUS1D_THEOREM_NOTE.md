@@ -4,7 +4,7 @@
 **Status:** proposed_retained exact theorem on the continuum-limit free-scalar
 Hamiltonian-lattice surface, with explicit dim-6 cubic-harmonic LV bound
 at finite `a`
-**Script:** `scripts/frontier_lorentz_boost_3plus1d.py` (PASS=55, FAIL=0)
+**Script:** `scripts/frontier_lorentz_boost_3plus1d.py` (PASS=57, FAIL=0)
 **Companions:**
 [LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md](LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md),
 `ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`,
@@ -158,8 +158,28 @@ E_lat^2(p) = m^2 + |p⃗|^2 - (a^2/12) sum_i p_i^4 + O(a^4 p^6).
 
 The leading correction `sum_i p_i^4` is the cubic harmonic at `l = 4`
 (see EMERGENT_LORENTZ_INVARIANCE_NOTE Step 4 for the
-`Σn_i⁴ = 3/5 + (4/5) K_4` decomposition with `K_4 = Y_{40} + sqrt(5/14)
-(Y_{4,4} + Y_{4,-4})`).
+`Σn_i⁴ = 3/5 + (4√π/15) K_4` decomposition with `K_4 = Y_{40} +
+sqrt(5/14)(Y_{4,4} + Y_{4,-4})`, in the standard normalized
+spherical-harmonic basis `Y_lm` -- the `scipy.special.sph_harm` /
+`sympy.Ynm` convention, under which the `m = ±4` combination
+`Y_{4,4} + Y_{4,-4}` is real-valued and `K_4` is the real cubic harmonic).
+
+**Convention note (normalization correction, 2026-05-29).** With
+*normalized* `Y_lm` the coefficient on `K_4` is `4√π/15 ≈ 0.4727`, NOT
+`4/5`. An earlier revision wrote `4/5`; that value holds only for an
+unnormalized angular convention and is inconsistent with the normalized
+`K_4` above and with the sibling decomposition in
+EMERGENT_LORENTZ_INVARIANCE_NOTE Step 4. With `f = Σn_i⁴`, sympy gives the
+isotropic projection `<f|Y_{00}> Y_{00} = 3/5`, the norm
+`<K_4|K_4> = 12/7`, and the exact projection
+`<f|K_4>/<K_4|K_4> = 4√π/15`, with
+`trigsimp(f - [3/5 + (4√π/15) K_4]) = 0` identically; a numeric check over
+5×10⁴ directions gives `max|LHS - RHS| = 7.8×10⁻¹⁶` for `4√π/15` versus
+`2.8×10⁻¹` for `4/5` (runner Part 6, checks 6.6-6.7). The correction sets
+only the magnitude of the `l = 4` anisotropy operator: the isotropic
+average `3/5`, the factor-of-3 axis/diagonal anisotropy, the
+parity-even/no-odd-power structure, the dim-6 classification, and the
+continuum boost-covariance conclusion are all unchanged.
 
 In the strict continuum limit `a -> 0`, `E_lat^2 -> m^2 + |p⃗|^2`, the
 unique `SO(3) x R`-invariant relativistic dispersion. The convergence is
@@ -414,11 +434,11 @@ upgrade for the emergent-Lorentz lane.
 
 ```bash
 python3 scripts/frontier_lorentz_boost_3plus1d.py
-# PASS=55  FAIL=0
+# PASS=57  FAIL=0
 # Exit code: 0
 ```
 
-The 55 checks span 8 parts:
+The 57 checks span 8 parts:
 
 | Part | Coverage                                                            | PASS |
 |------|---------------------------------------------------------------------|------|
@@ -427,16 +447,16 @@ The 55 checks span 8 parts:
 | 3    | Continuum 2-point function (analytic K_1 form, cluster, asymptotic) | 7   |
 | 4    | Lattice -> continuum convergence (Euclidean + spacelike Lorentzian) | 4   |
 | 5    | SO(3,1) boost covariance: 5 rapidities along [100] + [110] + [111] + arbitrary + composition | 13 |
-| 6    | Cubic-harmonic LV at finite `a` (inherited dim-6 K_4)              | 5    |
+| 6    | Cubic-harmonic LV at finite `a` (dim-6 K_4 + normalized-K_4 identity) | 7   |
 | 7    | Combined SO(3,1) theorem statement                                 | 10   |
 | 8    | Connection to existing dispersion theorem (strict extension)       | 5    |
 
-Total: 55/55 PASS.
+Total: 57/57 PASS.
 
 ## Commands run
 
 ```bash
 git checkout -b lorentz-boost-covariance 59f7e4f0  # main head
 python3 scripts/frontier_lorentz_boost_3plus1d.py
-# Exit code: 0  PASS=55  FAIL=0
+# Exit code: 0  PASS=57  FAIL=0
 ```

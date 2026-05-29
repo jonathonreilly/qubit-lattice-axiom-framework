@@ -58664,7 +58664,7 @@
       "deps": [
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -58675,7 +58675,7 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.585,
+      "load_bearing_score": 7.144,
       "load_bearing_step": "The endpoint-distinctness and non-overlap arithmetic checks for the helper-defined numbers close exactly and are runner-verified.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -58913,84 +58913,57 @@
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
       "title": "DM Full Closure Same-Surface Numerator Selector Boundary",
-      "transitive_descendants": 47,
+      "transitive_descendants": 49,
       "verdict_rationale": "The runner no longer uses literal True checks for selector absence; its eight checks are endpoint definition/order, distinctness from alpha_bare, and interval non-overlap inequalities. The clean verdict applies only to this bounded arithmetic core over helper-defined quantities and helper-returned intervals. No selector-boundary or no-selector/no-go conclusion is ratified; N1-N8 was not passed for such a conclusion and it remains outside clean scope."
     },
     "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17": {
-      "audit_date": "2026-05-29T05:28:04.572716+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited.",
-          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "Bounded same-surface thermal-kernel algebra: the attractive and repulsive Sommerfeld kernel derivative identities and sign bounds for y>0; excludes 64:1 channel-weighted live-DM monotonicity, root uniqueness, and integral evaluation.",
-          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "Pure x_f=25 thermal-kernel series/tail certificate: positive Coulomb series identities, exact J1/J2 term-integral representations, and exact tail bounds; excludes live-DM slice constants, alpha/eta/omega selector samples, and current-bank selector closure."
-        },
-        "dep_claim_type": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
-          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "bounded_theorem",
-          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
-          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "retained_bounded",
-          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "retained_bounded"
-        },
-        "deps": [
-          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
-        ],
-        "load_bearing_score": 7.115,
-        "runner_hash": "a8381ebd8cd71fc329464620bbb4f0c057ac056c8d4d3813c7cfc152b7f2717d",
-        "transitive_descendants": 48
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The exact thermal enclosures close only for supplied constants; the row's current-bank and admitted-family selector surfaces import live DM alpha endpoints, ETA/omega conversion, and the observed DM target without a retained direct authority for the selector boundary.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
-      "claim_scope": "Bounded thermal-layer endpoint/root certification over supplied alpha endpoints, baryon conversion, and observed DM target constants; current-bank selector/no-go authority and the admitted-family live-DM constants are not retained by this row.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-29T05:28:04.572716+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
         "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
+        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
+        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 7.115,
-      "load_bearing_step": "The runner combines certified_same_surface_ratio_bounds, monotonicity, omega_b_from_eta(ETA_OBS), OMEGA_DM_OBS, and the helper alpha endpoints to certify endpoint images and a one-scalar root interval.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "3a13e7b7c6651cdf856946a3818d4fd0ad4b958b493962d8e9f907f20a0ddbd3",
+      "note_hash": "59aa999199be85161f5297b2aa5952ac03bc92829d56def3192d59a6a175b170",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: wire and audit the numerator/current-bank selector boundary plus live alpha/eta/omega constant authorities, or split this into a pure supplied-constant numerical certificate before re-audit.",
-      "open_dependency_paths": [
-        "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -59098,21 +59071,81 @@
             "total_pass": 9
           },
           "verdict_rationale": "The runner output is successful, but the visible runner source is not itself a first-principles computation from Cl(3) on Z^3. Its load-bearing numerical certificates are imported from modules not provided in the restricted packet, including the same-surface ratio bounds, sigma interval, endpoint constants, observed DM target, and eta-derived baryon density. Therefore the claim may be a valid bounded theorem if those imported certificate routines are retained and independently audited, but it does not close from the provided packet alone."
+        },
+        {
+          "archived_at": "2026-05-29T09:02:38.352433+00:00",
+          "archived_for_note_hash": "3a13e7b7c6651cdf856946a3818d4fd0ad4b958b493962d8e9f907f20a0ddbd3",
+          "audit_date": "2026-05-29T05:28:04.572716+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited.",
+              "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "Bounded same-surface thermal-kernel algebra: the attractive and repulsive Sommerfeld kernel derivative identities and sign bounds for y>0; excludes 64:1 channel-weighted live-DM monotonicity, root uniqueness, and integral evaluation.",
+              "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "Pure x_f=25 thermal-kernel series/tail certificate: positive Coulomb series identities, exact J1/J2 term-integral representations, and exact tail bounds; excludes live-DM slice constants, alpha/eta/omega selector samples, and current-bank selector closure."
+            },
+            "dep_claim_type": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+              "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "bounded_theorem",
+              "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+              "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "retained_bounded",
+              "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "retained_bounded"
+            },
+            "deps": [
+              "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+              "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
+              "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
+            ],
+            "load_bearing_score": 7.115,
+            "runner_hash": "a8381ebd8cd71fc329464620bbb4f0c057ac056c8d4d3813c7cfc152b7f2717d",
+            "transitive_descendants": 48
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The exact thermal enclosures close only for supplied constants; the row's current-bank and admitted-family selector surfaces import live DM alpha endpoints, ETA/omega conversion, and the observed DM target without a retained direct authority for the selector boundary.",
+          "claim_scope": "Bounded thermal-layer endpoint/root certification over supplied alpha endpoints, baryon conversion, and observed DM target constants; current-bank selector/no-go authority and the admitted-family live-DM constants are not retained by this row.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-29T05:28:04.572716+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The runner combines certified_same_surface_ratio_bounds, monotonicity, omega_b_from_eta(ETA_OBS), OMEGA_DM_OBS, and the helper alpha endpoints to certify endpoint images and a one-scalar root interval.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: wire and audit the numerator/current-bank selector boundary plus live alpha/eta/omega constant authorities, or split this into a pure supplied-constant numerical certificate before re-audit.",
+          "open_dependency_paths": [
+            "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 2,
+            "C": 0,
+            "D": 1,
+            "total_pass": 9
+          },
+          "verdict_rationale": "Issue: the visible runner certifies tight enclosures after importing ALPHA_LO/ALPHA_HI, ETA_OBS/omega_b, and OMEGA_DM_OBS from helper modules, but the direct dependencies only retain the pure thermal integral, monotonicity, and series-tail machinery. The source itself names the numerator selector boundary as the sibling current-bank no-go, and that row is not yet retained or wired as a direct dependency. Why this blocks: the clean prior thermal rows explicitly excluded live-DM slice constants; this row reintroduces them as load-bearing inputs for the current-bank image and admitted-family root interval. No-go discipline also blocks promoting the current-bank no-selector conclusion here: the row does not enumerate and close five alternative selector routes, so the negative result cannot be inherited as a clean no-go from this packet. Repair target: add/audit retained direct authority for the numerator/current-bank selector boundary and for the live alpha/eta/omega constants, or split a pure conditional numerical certificate that states all constants as supplied inputs. Claim boundary until fixed: for the supplied numeric endpoints and target, the runner's exact-series/monotonicity composition supports the printed enclosures and root interval; it does not retain a current-bank selector theorem, a current-bank no-go, or an admitted-family physical selector law."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 6,
-        "B": 2,
+        "A": 0,
+        "B": 0,
         "C": 0,
-        "D": 1,
-        "total_pass": 9
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Bounding Theorem",
       "transitive_descendants": 48,
-      "verdict_rationale": "Issue: the visible runner certifies tight enclosures after importing ALPHA_LO/ALPHA_HI, ETA_OBS/omega_b, and OMEGA_DM_OBS from helper modules, but the direct dependencies only retain the pure thermal integral, monotonicity, and series-tail machinery. The source itself names the numerator selector boundary as the sibling current-bank no-go, and that row is not yet retained or wired as a direct dependency. Why this blocks: the clean prior thermal rows explicitly excluded live-DM slice constants; this row reintroduces them as load-bearing inputs for the current-bank image and admitted-family root interval. No-go discipline also blocks promoting the current-bank no-selector conclusion here: the row does not enumerate and close five alternative selector routes, so the negative result cannot be inherited as a clean no-go from this packet. Repair target: add/audit retained direct authority for the numerator/current-bank selector boundary and for the live alpha/eta/omega constants, or split a pure conditional numerical certificate that states all constants as supplied inputs. Claim boundary until fixed: for the supplied numeric endpoints and target, the runner's exact-series/monotonicity composition supports the printed enclosures and root interval; it does not retain a current-bank selector theorem, a current-bank no-go, or an admitted-family physical selector law."
+      "verdict_rationale": null
     },
     "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": {
       "audit_date": "2026-05-28T03:50:47.795466+00:00",
@@ -132694,13 +132727,13 @@
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
         "higgs_mass_from_axiom_note"
       ],
-      "direct_in_degree": 7,
+      "direct_in_degree": 8,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.428,
+      "load_bearing_score": 12.954,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -132721,7 +132754,7 @@
       },
       "runner_path": "scripts/frontier_higgs_channel_effective_ntaste_boundary.py",
       "title": "Higgs-Channel Effective N_taste Boundary Bounded Note",
-      "transitive_descendants": 486,
+      "transitive_descendants": 495,
       "verdict_rationale": null
     },
     "higgs_classicality_boundary_operator_absence_no_go_note_2026-05-10": {
@@ -133711,54 +133744,24 @@
       "verdict_rationale": null
     },
     "higgs_mass_from_axiom_note": {
-      "audit_date": "2026-05-29T03:41:46.726162+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "higgs_from_lattice_note": "The lattice Coleman-Weinberg runner provides bounded quantitative Higgs-sector support and consistency behavior, while exact m_H closure is outside this note's authority.",
-          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
-          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically.",
-          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
-        },
-        "dep_claim_type": {
-          "higgs_from_lattice_note": "bounded_theorem",
-          "plaquette_self_consistency_note": "bounded_theorem",
-          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem",
-          "yt_ew_color_projection_theorem": "no_go"
-        },
-        "dep_effective_status": {
-          "higgs_from_lattice_note": "retained_bounded",
-          "plaquette_self_consistency_note": "retained_bounded",
-          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded",
-          "yt_ew_color_projection_theorem": "retained_no_go"
-        },
-        "deps": [
-          "higgs_from_lattice_note",
-          "plaquette_self_consistency_note",
-          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-          "yt_ew_color_projection_theorem"
-        ],
-        "load_bearing_score": 24.954,
-        "runner_hash": "6409b2c35163b6ecb0e9f365437f761635933ba1baf88a7183839a657da4fe07",
-        "transitive_descendants": 495
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "fresh-higgs-curvature-auditor-2026-05-29",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The internal arithmetic closes over assumed inputs: d2V_taste/dm2 at m=0 is -N_taste/(4u0^2), division by N_taste=16 gives 1/(4u0^2), m_curv_tree = v/(2u0), and N_c cancels after factoring color. The restricted one-hop packet does not close the load-bearing inputs u0/0.5934, v, N_taste=16, the V_taste determinant/eigenvalue setup, or the mean-field surface.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "higgs_mass_from_axiom_note",
-      "claim_scope": "Tree-level mean-field derivation of the per-channel symmetric-point V_taste curvature scale m_curv_tree = v/(2 u0) = 140.3 GeV on the canonical surface, with N_c cancellation and no Higgs-pole promotion.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-29T03:41:46.726162+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -133766,29 +133769,24 @@
         "higgs_from_lattice_note",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
         "yt_ew_color_projection_theorem",
-        "plaquette_self_consistency_note"
+        "plaquette_self_consistency_note",
+        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
       ],
       "direct_in_degree": 32,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 24.954,
-      "load_bearing_step": "Equations [4]-[6]: |d2V/dm2| per channel = (4/u0^2)/N_taste = 1/(4u0^2), so m_curv_tree/v = 1/(2u0) and m_curv_tree = v/(2u0).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "89aa06db5d3fec46bec32e0ddec9cb517e10043c85327f187215c99d72acd6fb",
+      "note_hash": "bf2bbb9f21ed8e140a3ede41b590e0fc233795d35502e48c25db3f9f9ecdb325",
       "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: add retained or explicitly admitted one-hop authorities for the canonical u0/0.5934 value, v, N_taste=16, the V_taste determinant/eigenvalue construction, and the mean-field surface; otherwise keep the row conditional on those inputs.",
-      "open_dependency_paths": [
-        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
-        "docs/HIERARCHY_THEOREM.md",
-        "docs/TASTE_POLYNOMIAL_NOTE.md",
-        "docs/DM_AMGM_SATURATION_NOTE.md",
-        "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-01T15:35:35.620575+00:00",
@@ -133961,21 +133959,89 @@
             "total_pass": 29
           },
           "verdict_rationale": "Issue: the exact curvature algebra is correct, but the current proof packet imports the canonical u0, VEV scale v, V_taste/eigenvalue-degeneracy surface, and uniform N_taste=16 channel assumption without a closed retained dependency chain in this row. Why this blocks: the direct plaquette authority withholds a derivation of the canonical 0.5934/u0 readout, HIGGS_MASS_DERIVED_NOTE and the effective-N_taste boundary notes remain unaudited, and this row's graph links only a broad Higgs support note plus the Wilson staircase and EW kappa no-go. Repair target: either split a declared-input theorem over explicit u0, v, V_taste, and N_taste premises, or add/audit direct retained authorities for the plaquette/u0 readout, hierarchy/VEV readout, V_taste eigenvalue surface, and effective channel count. Claim boundary until fixed: the formula m_curv_tree=v/(2u0) is valid algebra on the stated mean-field surface and is not a Higgs pole; it is not yet retained as an axiom-derived canonical quantitative result."
+        },
+        {
+          "archived_at": "2026-05-29T09:02:39.610265+00:00",
+          "archived_for_note_hash": "89aa06db5d3fec46bec32e0ddec9cb517e10043c85327f187215c99d72acd6fb",
+          "audit_date": "2026-05-29T03:41:46.726162+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "higgs_from_lattice_note": "The lattice Coleman-Weinberg runner provides bounded quantitative Higgs-sector support and consistency behavior, while exact m_H closure is outside this note's authority.",
+              "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+              "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically.",
+              "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0."
+            },
+            "dep_claim_type": {
+              "higgs_from_lattice_note": "bounded_theorem",
+              "plaquette_self_consistency_note": "bounded_theorem",
+              "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem",
+              "yt_ew_color_projection_theorem": "no_go"
+            },
+            "dep_effective_status": {
+              "higgs_from_lattice_note": "retained_bounded",
+              "plaquette_self_consistency_note": "retained_bounded",
+              "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded",
+              "yt_ew_color_projection_theorem": "retained_no_go"
+            },
+            "deps": [
+              "higgs_from_lattice_note",
+              "plaquette_self_consistency_note",
+              "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+              "yt_ew_color_projection_theorem"
+            ],
+            "load_bearing_score": 24.954,
+            "runner_hash": "6409b2c35163b6ecb0e9f365437f761635933ba1baf88a7183839a657da4fe07",
+            "transitive_descendants": 495
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "fresh-higgs-curvature-auditor-2026-05-29",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The internal arithmetic closes over assumed inputs: d2V_taste/dm2 at m=0 is -N_taste/(4u0^2), division by N_taste=16 gives 1/(4u0^2), m_curv_tree = v/(2u0), and N_c cancels after factoring color. The restricted one-hop packet does not close the load-bearing inputs u0/0.5934, v, N_taste=16, the V_taste determinant/eigenvalue setup, or the mean-field surface.",
+          "claim_scope": "Tree-level mean-field derivation of the per-channel symmetric-point V_taste curvature scale m_curv_tree = v/(2 u0) = 140.3 GeV on the canonical surface, with N_c cancellation and no Higgs-pole promotion.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-29T03:41:46.726162+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Equations [4]-[6]: |d2V/dm2| per channel = (4/u0^2)/N_taste = 1/(4u0^2), so m_curv_tree/v = 1/(2u0) and m_curv_tree = v/(2u0).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: add retained or explicitly admitted one-hop authorities for the canonical u0/0.5934 value, v, N_taste=16, the V_taste determinant/eigenvalue construction, and the mean-field surface; otherwise keep the row conditional on those inputs.",
+          "open_dependency_paths": [
+            "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+            "docs/HIERARCHY_THEOREM.md",
+            "docs/TASTE_POLYNOMIAL_NOTE.md",
+            "docs/DM_AMGM_SATURATION_NOTE.md",
+            "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 4,
+            "B": 25,
+            "C": 0,
+            "D": 0,
+            "total_pass": 29
+          },
+          "verdict_rationale": "Issue: the formula m_curv_tree = v/(2 u0) is reproduced correctly, but the one-hop packet does not close the canonical inputs it depends on. Why this blocks: the runner hard-codes U_0=0.8776, V_GEV=246.22, and N_TASTE=16, while the plaquette dependency explicitly withholds a same-surface or infinite-volume certificate for 0.5934 and the packet lacks retained one-hop closure for v, determinant/eigenvalue degeneracy, the effective taste-channel boundary, and the mean-field surface. Repair target: add retained or explicitly admitted one-hop authorities for the canonical u0/0.5934 value, v, N_taste=16, the V_taste determinant/eigenvalue construction, and the mean-field surface. Claim boundary until fixed: the internal tree-level algebra and N_c cancellation hold over those stated canonical inputs, and the row does not audit or promote a Higgs-pole prediction."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 4,
-        "B": 25,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 29
+        "total_pass": 0
       },
       "runner_path": "scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
       "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking",
       "transitive_descendants": 495,
-      "verdict_rationale": "Issue: the formula m_curv_tree = v/(2 u0) is reproduced correctly, but the one-hop packet does not close the canonical inputs it depends on. Why this blocks: the runner hard-codes U_0=0.8776, V_GEV=246.22, and N_TASTE=16, while the plaquette dependency explicitly withholds a same-surface or infinite-volume certificate for 0.5934 and the packet lacks retained one-hop closure for v, determinant/eigenvalue degeneracy, the effective taste-channel boundary, and the mean-field surface. Repair target: add retained or explicitly admitted one-hop authorities for the canonical u0/0.5934 value, v, N_taste=16, the V_taste determinant/eigenvalue construction, and the mean-field surface. Claim boundary until fixed: the internal tree-level algebra and N_c cancellation hold over those stated canonical inputs, and the row does not audit or promote a Higgs-pole prediction."
+      "verdict_rationale": null
     },
     "higgs_mass_from_axiom_status_correction_audit_note_2026-05-02": {
       "audit_date": null,
@@ -323220,8 +323286,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2451,
-    "re_audit_required": 0,
+    "preserved_existing": 2449,
+    "re_audit_required": 2,
     "row_count": 2495,
     "seeded_new": 0
   }

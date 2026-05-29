@@ -1,12 +1,12 @@
 # Audit Queue
 
-**Total pending:** 1132
-**Ready (all deps already at retained-grade or metadata tiers):** 0
+**Total pending:** 1134
+**Ready (all deps already at retained-grade or metadata tiers):** 1
 
 By criticality:
-- `critical`: 241
+- `critical`: 242
 - `high`: 315
-- `medium`: 296
+- `medium`: 297
 - `leaf`: 280
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
@@ -65,5 +65,13 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 48 | `yt_p2_v_matching_theorem_note_2026-04-17` | bounded_theorem | unaudited | critical | 525 | 11.54 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p2_v_matching.py` |
 | 49 | `yt_p2_taste_staircase_beta_functions_note_2026-04-17` | no_go | unaudited | critical | 524 | 13.54 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p2_taste_staircase_beta.py` |
 | 50 | `yt_vertex_power_derivation` | open_gate | unaudited | critical | 523 | 11.03 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
+
+## Citation cycle break targets
+
+1 citation cycles in the graph. Each cycle permanently blocks every member from `retained` until one node is re-audited with explicit cycle-break instructions or a 'see also' edge is stripped. Top 25 below; full list in `data/audit_queue.json` under `cycle_break_targets`.
+
+| # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
+|---:|---|---:|---:|---|---|---|
+| 1 | `cycle-0001` | 2 | 495 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | critical | unaudited |
 
 Full queue lives in `data/audit_queue.json`.

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1130 |
+| unaudited | 1132 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 74 |
+| ~~audited_conditional~~ | 72 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 921 |
-| `audited_conditional` | 74 |
+| `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1360 |
+| `unaudited` | 1362 |
 
 | claim_type | count |
 |---|---:|
@@ -84,7 +84,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `leaf` | 1008 |
 
 - **Retained pending chain closure:** 10
-- **Citation cycles detected:** 0
+- **Citation cycles detected:** 1
 
 ### Runner classification (static heuristic)
 
@@ -1073,7 +1073,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `distance_law_frontier_audit_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
-| `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1086,7 +1085,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
-| `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.5 | B | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -4080,21 +4078,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The endpoint-distinctness and non-overlap arithmetic checks for the helper-defined numbers close exactly and are runner-verified.  _(class `A`)_
 - **chain closes:** True — For the narrowed arithmetic core, direct recomputation gives alpha_bare=0.07957747154594767, alpha_lo=0.09066783601728631, alpha_hi=0.09226499261836020, with alpha_bare < alpha_lo < alpha_hi; the non-overlap check is arithmetic over helper-returned intervals with R_lo_hi < R_hi_lo.
 - **rationale:** The runner no longer uses literal True checks for selector absence; its eight checks are endpoint definition/order, distinctness from alpha_bare, and interval non-overlap inequalities. The clean verdict applies only to this bounded arithmetic core over helper-defined quantities and helper-returned intervals. No selector-boundary or no-selector/no-go conclusion is ratified; N1-N8 was not passed for such a conclusion and it remains outside clean scope.
-- **auditor confidence:** high
-
-### `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`
-
-- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded thermal-layer endpoint/root certification over supplied alpha endpoints, baryon conversion, and observed DM target constants; current-bank selector/no-go authority and the admitted-family live-DM constants are not retained by this row.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The runner combines certified_same_surface_ratio_bounds, monotonicity, omega_b_from_eta(ETA_OBS), OMEGA_DM_OBS, and the helper alpha endpoints to certify endpoint images and a one-scalar root interval.  _(class `B`)_
-- **chain closes:** False — The exact thermal enclosures close only for supplied constants; the row's current-bank and admitted-family selector surfaces import live DM alpha endpoints, ETA/omega conversion, and the observed DM target without a retained direct authority for the selector boundary.
-- **rationale:** Issue: the visible runner certifies tight enclosures after importing ALPHA_LO/ALPHA_HI, ETA_OBS/omega_b, and OMEGA_DM_OBS from helper modules, but the direct dependencies only retain the pure thermal integral, monotonicity, and series-tail machinery. The source itself names the numerator selector boundary as the sibling current-bank no-go, and that row is not yet retained or wired as a direct dependency. Why this blocks: the clean prior thermal rows explicitly excluded live-DM slice constants; this row reintroduces them as load-bearing inputs for the current-bank image and admitted-family root interval. No-go discipline also blocks promoting the current-bank no-selector conclusion here: the row does not enumerate and close five alternative selector routes, so the negative result cannot be inherited as a clean no-go from this packet. Repair target: add/audit retained direct authority for the numerator/current-bank selector boundary and for the live alpha/eta/omega constants, or split a pure conditional numerical certificate that states all constants as supplied inputs. Claim boundary until fixed: for the supplied numeric endpoints and target, the runner's exact-series/monotonicity composition supports the printed enclosures and root interval; it does not retain a current-bank selector theorem, a current-bank no-go, or an admitted-family physical selector law.
-- **open / conditional deps cited:**
-  - `DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`
@@ -7239,25 +7222,6 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Given D_taste^2=d I with d=4 and mean-field U_ab -> u_0 delta_ab, W''(0)/N_tot = 1/(4u_0^2) and R_lattice = 4/(u_0^2 N_taste)=1/(4u_0^2) at N_taste=16.  _(class `A`)_
 - **chain closes:** False — The displayed algebra and runner checks close exactly: W''(0)/N_tot equals 1/(4u_0^2), matching R_lattice. The retained one-hop rows cover the scoped SU(3) and g_bare surfaces, but the Clifford/staggered identity D_taste^2=d I and mean-field factorization U_ab -> u_0 delta_ab are load-bearing admitted premises, not retained one-hop theorem rows or registered Tier-A admissions in this packet.
 - **rationale:** Issue: the exact algebra depends on two load-bearing imports, D_taste^2=d I and U_ab -> u_0 delta_ab, that are stated as admitted standard inputs rather than retained one-hop authorities. Why this blocks: without retained or explicitly approved admission status for those premises, the audit can verify only the downstream algebra, not the full claimed lattice-side theorem from retained inputs. Repair target: add retained one-hop theorem/dependency coverage or an explicitly approved admission for the Clifford/staggered identity and the mean-field scaling premise, then re-audit the same algebraic ratio. Claim boundary until fixed: the runner-supported equality R_lattice=1/(4u_0^2) is an exact conditional algebraic consequence of the stated premises and does not support any physical Higgs mass or Standard Model matching claim.
-- **auditor confidence:** high
-
-### `higgs_mass_from_axiom_note`
-
-- **Note:** [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Tree-level mean-field derivation of the per-channel symmetric-point V_taste curvature scale m_curv_tree = v/(2 u0) = 140.3 GeV on the canonical surface, with N_c cancellation and no Higgs-pole promotion.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `fresh-higgs-curvature-auditor-2026-05-29`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Equations [4]-[6]: |d2V/dm2| per channel = (4/u0^2)/N_taste = 1/(4u0^2), so m_curv_tree/v = 1/(2u0) and m_curv_tree = v/(2u0).  _(class `A`)_
-- **chain closes:** False — The internal arithmetic closes over assumed inputs: d2V_taste/dm2 at m=0 is -N_taste/(4u0^2), division by N_taste=16 gives 1/(4u0^2), m_curv_tree = v/(2u0), and N_c cancels after factoring color. The restricted one-hop packet does not close the load-bearing inputs u0/0.5934, v, N_taste=16, the V_taste determinant/eigenvalue setup, or the mean-field surface.
-- **rationale:** Issue: the formula m_curv_tree = v/(2 u0) is reproduced correctly, but the one-hop packet does not close the canonical inputs it depends on. Why this blocks: the runner hard-codes U_0=0.8776, V_GEV=246.22, and N_TASTE=16, while the plaquette dependency explicitly withholds a same-surface or infinite-volume certificate for 0.5934 and the packet lacks retained one-hop closure for v, determinant/eigenvalue degeneracy, the effective taste-channel boundary, and the mean-field surface. Repair target: add retained or explicitly admitted one-hop authorities for the canonical u0/0.5934 value, v, N_taste=16, the V_taste determinant/eigenvalue construction, and the mean-field surface. Claim boundary until fixed: the internal tree-level algebra and N_c cancellation hold over those stated canonical inputs, and the row does not audit or promote a Higgs-pole prediction.
-- **open / conditional deps cited:**
-  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
-  - `HIERARCHY_THEOREM.md`
-  - `TASTE_POLYNOMIAL_NOTE.md`
-  - `DM_AMGM_SATURATION_NOTE.md`
-  - `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`
 - **auditor confidence:** high
 
 ### `higgs_mechanism_note`

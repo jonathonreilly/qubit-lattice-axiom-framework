@@ -168,3 +168,4 @@ matches the live cite-chain pattern used by the
 `DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md` rigorize
 (commit `8e84f0c23`, PR #899) and the `dm_neutrino` bosonic candidates
 trio (commit `7bb12badd`, PR #926).
+- [dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16](DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md)

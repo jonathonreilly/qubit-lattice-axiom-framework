@@ -1,7 +1,47 @@
 {
-  "cycle_count": 0,
-  "cycles": [],
-  "length_counts": {},
+  "cycle_count": 1,
+  "cycles": [
+    {
+      "cycle_id": "cycle-0001",
+      "decision": null,
+      "edges": [
+        {
+          "from": "higgs_mass_from_axiom_note",
+          "to": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+        },
+        {
+          "from": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+          "to": "higgs_mass_from_axiom_note"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 495,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_mass_from_axiom_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
+          "title": "Symmetric-Point Per-Channel Curvature Scale `m_curv_tree` from V_taste \u2014 Complete Derivation with N_c Tracking",
+          "transitive_descendants": 495
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md",
+          "title": "Higgs-Channel Effective N_taste Boundary Bounded Note",
+          "transitive_descendants": 495
+        }
+      ],
+      "requires_lemma_extraction": false
+    }
+  ],
+  "length_counts": {
+    "2": 1
+  },
   "sort": [
     "max_transitive_descendants descending",
     "length ascending",

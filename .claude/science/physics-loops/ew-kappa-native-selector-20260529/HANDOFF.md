@@ -48,4 +48,9 @@ a derivation.
 
 ## Next Exact Action
 
-Commit, push, and open a review PR for this branch.
+Review draft PR #2165:
+
+<https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2165>
+
+For new science work, start from current `origin/main` unless intentionally
+stacking on this branch.

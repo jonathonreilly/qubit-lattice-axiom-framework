@@ -144521,24 +144521,46 @@
       "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the hypotheses stated in the note. The runner source performs symbolic matrix checks and explicit eigenvector checks rather than importing empirical masses, calibrated constants, or prior contested premises. No cited authority is needed for the main implication, and the note correctly limits the framework-realization question as open rather than claiming closure."
     },
     "koide_aps_block_by_block_forcing_note_2026-04-21": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T04:45:02.081071+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "Finite cone-cap construction certificate for the explicit cubical-boundary family at R = 2, 3, 4 only; no arbitrary PL cap, S^3, homogeneity, or physical-closure claim is audited here.",
+          "s3_cap_uniqueness_note": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited."
+        },
+        "dep_claim_type": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "bounded_theorem",
+          "s3_cap_uniqueness_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17": "retained_bounded",
+          "s3_cap_uniqueness_note": "retained_bounded"
+        },
+        "deps": [
+          "pl_topology_infrastructure_textbook_import_note_2026-05-17",
+          "s3_cap_uniqueness_note"
+        ],
+        "load_bearing_score": 8.5,
+        "runner_hash": "763878775d8c0b8c764f6248a2c53431085f4ba0568e8449b674df4581a424e1",
+        "transitive_descendants": 63
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-koide-aps-block-a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped algebra closes exactly: the C3 cyclic permutation has eigenvalues 1, omega, omega^2, the transverse weights are (1,2) up to order, (omega-1)(omega^2-1)=3, and the two ABSS summands are both 1/3, yielding 2/9 after division by p=3. The no-go/admission gate passes only for this narrowed boundary because the note explicitly keeps the global topology route, ABSS route derivation, and physical-observable bridge outside the retained claim.",
       "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-      "claim_scope": null,
+      "claim_scope": "Conditional bounded algebraic certificate only: assuming p=3, C3 transverse weights (1,2), and the ABSS fixed-point formula/applicability on the stipulated PL S^3 x R route, the APS eta arithmetic closes to 2/9. This audit does not retain or derive the global Cl(3)/Z^3 -> PL S^3 x R topology route, the ABSS bridge, or the physical selected-line Brannen-phase identification.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T04:45:02.081071+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -144547,19 +144569,19 @@
         "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 8.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given p = 3, tangent weights (1,2), and ABSS fixed-point applicability on the stipulated PL S^3 x R route, the block-by-block APS arithmetic gives eta = (1/3)(1/3 + 1/3) = 2/9.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b8d0857d7b5d4b1217f6755be8b9df61d572e26cce3d6ec0eaaa618949f07910",
       "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve the conditional boundary and do not cite this row for the global Cl(3)/Z^3 -> PL S^3 x R derivation, ABSS applicability derivation, or physical Brannen-phase bridge.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -144697,18 +144719,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 29,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 29
       },
       "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
       "title": "Delta Support Route Block-by-Block APS \u03b7 = 2/9 Conditional Verification",
       "transitive_descendants": 63,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner completed with 29 PASS and 0 FAIL, and an independent recomputation that did not import the runner reproduced the characteristic polynomial, weights, core product, ABSS sum, and nearby alternatives. Alternative p=3 weights (1,1) and (2,2) give 1/9, while (1,2) and (2,1) give 2/9; nearby body-diagonal-like p values do not reproduce 2/9 except p=3. The clean result is strictly bounded to the conditional algebraic APS certificate and does not promote the unretained global topology/ABSS/physical bridges."
     },
     "koide_axiom_native_support_batch_note_2026-04-22": {
       "audit_date": null,

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 153 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 563 |
+| **retained_bounded** | 564 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1192 |
+| unaudited | 1191 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 874 |
+| `audited_clean` | 875 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1422 |
+| `unaudited` | 1421 |
 
 | claim_type | count |
 |---|---:|
@@ -505,6 +505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_a1_physical_bridge_attempt_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7392,6 +7393,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using {H,Γχ}=0 and Hv=λv, the two evaluations give λ⟨v|Γχ|v⟩=-λ⟨v|Γχ|v⟩, so since λ≠0, ⟨v|Γχ|v⟩=0.  _(class `A`)_
 - **chain closes:** True — The implication follows directly from Hermiticity, anti-commutation, and the nonzero eigenvalue hypothesis. The conversion from zero Γχ expectation to Q=2/3 is an explicit quadratic identity, with no external physics input needed.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the hypotheses stated in the note. The runner source performs symbolic matrix checks and explicit eigenvector checks rather than importing empirical masses, calibrated constants, or prior contested premises. No cited authority is needed for the main implication, and the note correctly limits the framework-realization question as open rather than claiming closure.
+- **auditor confidence:** high
+
+### `koide_aps_block_by_block_forcing_note_2026-04-21`
+
+- **Note:** [`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded algebraic certificate only: assuming p=3, C3 transverse weights (1,2), and the ABSS fixed-point formula/applicability on the stipulated PL S^3 x R route, the APS eta arithmetic closes to 2/9. This audit does not retain or derive the global Cl(3)/Z^3 -> PL S^3 x R topology route, the ABSS bridge, or the physical selected-line Brannen-phase identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-koide-aps-block-a`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given p = 3, tangent weights (1,2), and ABSS fixed-point applicability on the stipulated PL S^3 x R route, the block-by-block APS arithmetic gives eta = (1/3)(1/3 + 1/3) = 2/9.  _(class `A`)_
+- **chain closes:** True — The scoped algebra closes exactly: the C3 cyclic permutation has eigenvalues 1, omega, omega^2, the transverse weights are (1,2) up to order, (omega-1)(omega^2-1)=3, and the two ABSS summands are both 1/3, yielding 2/9 after division by p=3. The no-go/admission gate passes only for this narrowed boundary because the note explicitly keeps the global topology route, ABSS route derivation, and physical-observable bridge outside the retained claim.
+- **rationale:** The runner completed with 29 PASS and 0 FAIL, and an independent recomputation that did not import the runner reproduced the characteristic polynomial, weights, core product, ABSS sum, and nearby alternatives. Alternative p=3 weights (1,1) and (2,2) give 1/9, while (1,2) and (2,1) give 2/9; nearby body-diagonal-like p values do not reproduce 2/9 except p=3. The clean result is strictly bounded to the conditional algebraic APS certificate and does not promote the unretained global topology/ABSS/physical bridges.
 - **auditor confidence:** high
 
 ### `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`

@@ -70,6 +70,40 @@ continuous symmetries acts as `U(1)_b`") into a theorem ("*none can*,
 because `C^3 = I`"), closing Probe 13's left-open option 2 negatively
 with a reason.
 
+## Scope (post-audit 2026-05-29): a true NARROW theorem, NOT the load-bearing reason for `Q=2/3` being import-required
+
+A hostile audit of every load-bearing no-go behind the "Koide `Q=2/3`
+is import-required" verdict (2026-05-29; all tiers re-pulled from the
+live ledger) confirms this theorem is **airtight and correctly scoped**,
+but clarifies its **role**, and this note's claim is hereby narrowed
+accordingly:
+
+- This theorem forecloses exactly the **symmetry route** to det_C: no
+  continuous `U(1)_b` rotation of the doublet can exist, because
+  `C^3 = I`. That is true and is the content of Probe 13's option 2.
+- It is **NOT** the load-bearing reason `Q=2/3` is not forced. Crucially,
+  **both `det_C` and `det_R` are `U(1)_b`-invariant** (each depends only
+  on `|b|`), so the presence or absence of a continuous `U(1)_b`
+  *symmetry* does **not**, by itself, distinguish the two counting
+  measures — the distinction is the **counting** (one complex DOF vs two
+  real), not a symmetry. This theorem rules out one *route* to det_C; it
+  does not, alone, select det_R.
+- The actual load-bearing reason (audit's decisive global finding): **no
+  retained note forces the equal-block weight at all.** Every retained
+  weight-touching theorem — `charged_lepton_koide_cone_algebraic_equivalence`,
+  `koide_anticommuting_operator_derivation`,
+  `koide_kappa_block_total_frobenius_algebraic` — reaches `Q=2/3` only as
+  an *equivalence* conditional on equal-power and **verbatim disclaims
+  forcing it** (cone-equivalence: "does NOT claim the framework forces
+  `v` onto the cone `a^2 = 2|z|^2`; that forcing requires additional
+  structural input"). The default trace/dimension measure gives det_R
+  → `Q=1`. The single unforced datum is the **weight selection**, which
+  is the open frontier — not this symmetry no-go.
+
+So this note stands as a valid **narrow** no-go (the symmetry route to
+det_C is foreclosed by `C^3 = I`), correctly scoped as *one foreclosed
+route*, not the reason the value is import-required.
+
 ## What this does and does not conclude
 
 - It **forbids** the det_C / `Q = 2/3` value from being forced by any
@@ -97,7 +131,7 @@ with a reason.
 |---|---|---|
 | A1 | `Cl(3)` local algebra | framework axiom (`MINIMAL_AXIOMS`) |
 | A2 | `Z^3` spatial substrate | framework axiom |
-| C3 | `hw=1` carries the order-3 generation shift `C`, `C^3 = I`; `M_3(C)` algebra | retained `THREE_GENERATION_OBSERVABLE_THEOREM`, `STAGGERED_DIRAC_BZ_CORNER_FORCING` |
+| C3 | `hw=1` carries the order-3 generation shift `C`, `C^3 = I`; `M_3(C)` algebra | retained `THREE_GENERATION_OBSERVABLE_THEOREM` (the `C^3=I` pivot; audited_clean, critical, lb_class A). NOTE: `STAGGERED_DIRAC_BZ_CORNER_FORCING` is **unaudited** and is **not** relied on — `C^3=I` stands on `three_generation_observable` alone, and the runner builds `C` and checks `C^3=I` self-containedly. |
 | Circ | `C_3`-equivariant Hermitian on `hw=1` is `H = aI + bC + b-bar C^2` | retained `KOIDE_CIRCULANT_CHARACTER_DERIVATION` |
 | A1cond | Koide `Q = 2/3 <=> r = |b|^2/a^2 = 1/2 <=> {H, Gamma_chi} = 0` | retained `KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM`, `CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE` |
 | Block | `det_C` (equal block, `kappa=2`) `<=>` `r=1/2`; `det_R` (dimension, `kappa=1`) `<=>` Plancherel/`Q=1` | retained `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE`, `KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION` |

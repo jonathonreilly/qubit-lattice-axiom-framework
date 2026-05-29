@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 597 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1186 |
+| unaudited | 1185 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
-| ~~audited_renaming~~ | 23 |
+| ~~audited_renaming~~ | 24 |
 | ~~audited_conditional~~ | 22 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
-| `audited_renaming` | 23 |
-| `unaudited` | 1422 |
+| `audited_renaming` | 24 |
+| `unaudited` | 1421 |
 
 | claim_type | count |
 |---|---:|
@@ -1194,6 +1194,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -3632,6 +3633,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The retained signal is the 31^3 through 64^3 grid sweep with largest-grid far-field exponent alpha = -1.023 +/- 0.012, finite-size extrapolation alpha_inf = -0.976 +/- 0.019, and largest-grid mass-linearity spread below 0.1%.  _(class `C`)_
 - **chain closes:** True — The named runner directly recomputes the Poisson field, path-sum deflections, far-field fits, finite-size extrapolation, and largest-grid mass scaling, and its live output reproduces the note's bounded numerical values.
 - **rationale:** The clean verdict is narrow. The live runner reproduces alpha(64^3) = -1.0233 +/- 0.0115, alpha_inf = -0.9762 +/- 0.0193, and delta/M spread 0.0010 on the specified Dirichlet 3D path-sum setup. The note explicitly limits the claim to a bounded numerical continuation and states that it is not full Newton closure, not architecture portability, and not a two-body M1 M2 theorem. Residual risk is therefore scope-bound: the result should only be cited for this finite path-sum surface and its stated convergence trend.
+- **auditor confidence:** high
+
+### `distance_law_breakpoint_note`
+
+- **Note:** [`DISTANCE_LAW_BREAKPOINT_NOTE.md`](../../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Static finite breakpoint table of six retained rows with alpha, direction, and preserve/break/boundary labels, excluding the split-off causal architecture-feature diagnosis.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-distance_law_breakpoint_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing content is the finite breakpoint table: the per-family alpha and direction-fraction rows for the two grown anchors and the alt/third/fourth/fifth-radial families.  _(class `E`)_
+- **chain closes:** True — The packet closes only in the degenerate sense that the runner defines a constant ROWS table and prints it. It does not compute the alpha/direction values, verify them against cited artifacts, or prove the stronger architecture-feature diagnosis.
+- **rationale:** The primary runner contains a hard-coded dataclass table and rendering logic only; it performs no measurement, assertion, import, or cross-note verification. Under the rubric, a runner that prints constants without computation is class E and the result is a definition/static restatement rather than a bounded derivation. The source note correctly demotes the causal feature diagnosis to non-load-bearing conjecture, but the remaining load-bearing finite table is still not executably audited by this packet.
 - **auditor confidence:** high
 
 ### `distance_law_definitive_note`

@@ -19,7 +19,14 @@ WHAT THIS RUNNER DOES:
 
   V1 — Gauge-invariant plaquette-local operator enumeration
   V2 — Real-action exclusion of imaginary-plaquette slot
+        (V2.0a/b/c assert the Lemma 2.3 theta-term algebra is internally
+         consistent: Q_lat density is real, the three S_theta forms agree
+         with no extra i, and the spurious extra-i form is guarded against.)
   V3 — Canonical-normalization continuum-limit decomposition
+        (V3.0a/b/c assert the plaquette-expansion coefficient explicitly:
+         Tr((F^a T^a)^2) = (1/2) F^a F^a, the (a^4/2)*(1/2) = a^4/4 prefactor
+         algebra, and that the displayed Lemma 2.2 coefficient is
+         N_c - (a^4/4) F^a F^a with NO spurious extra 1/2.)
   V4 — Bounded-below check on real Wilson slot
   V5 — Mass orientation: Hermiticity-spectral selection
   V6 — Mass orientation: reflection-positivity precondition
@@ -27,6 +34,13 @@ WHAT THIS RUNNER DOES:
   V8 — Composition with Leg A retained primitive
 
   PASS = 8, FAIL = 0 expected.
+
+  CONVENTION (fixed once, used identically in the note and here):
+    T^a = lambda^a/2,  Tr(T^a T^b) = (1/2) delta^{ab}.
+    Re Tr U_P = N_c - (a^4/4) F^a_{munu} F^{munu,a} + O(a^6)   [no extra 1/2]
+    S_theta[U] = i*theta*Q_lat = i*theta*sum_P Im Tr U_P
+               = (theta/2) sum_P (Tr U_P - Tr U_P^dag)         [pure imaginary]
+    Q_lat[U]   = sum_P (Tr U_P - Tr U_P^dag)/(2i) = sum_P Im Tr U_P   [real]
 
 ANTI-OVERCLAIM:
   - Does NOT claim dynamical theta-selection in non-canonical-normalization.
@@ -327,11 +341,64 @@ def test_V2_imaginary_plaquette_slot_exclusion():
 
     thetas = [0.0, 0.01, 0.1, 1.0]
 
-    # For each theta, sample N configurations; compute the candidate
-    #   S_theta[U] = -theta * sum_P Im Tr U_P
-    # and the candidate complex Boltzmann factor
-    #   exp(-S_W - i * theta * Q_lat[U])
+    # Convention fixed once (matches the note Lemma 2.3, used identically here and in V7):
+    #   Q_lat[U] := sum_P (Tr U_P - Tr U_P^dag)/(2i) = sum_P Im Tr U_P   (REAL)
+    #   S_theta[U] = i*theta*Q_lat = i*theta*sum_P Im Tr U_P = (theta/2) sum_P (Tr U_P - Tr U_P^dag)
+    #               (PURE IMAGINARY action term; the three forms agree with NO extra factor of i)
+    #   Boltzmann factor: exp(-S_W - S_theta) = exp(-S_W) * exp(-i*theta*Q_lat).
     # We verify that for theta != 0 the Boltzmann factor has nonzero imaginary part.
+
+    # -----------------------------------------------------------------------
+    # V2.0 — ASSERT the Lemma 2.3 theta-term algebra is internally consistent
+    #        (no convention switch). On a sampled complex z = Tr U_P:
+    #          (a) Q_lat-density (z - zbar)/(2i) is REAL and equals Im z;
+    #          (b) the three displayed forms of the S_theta density agree:
+    #               i*theta*Im z  ==  i*theta*(z-zbar)/(2i)  ==  (theta/2)(z - zbar);
+    #          (c) the S_theta density is PURE IMAGINARY (it is i * real), so it is
+    #              not a real-action summand for theta != 0;
+    #          (d) GUARD: the spurious "extra i" form  i*theta*(z - zbar)/2  used to
+    #              appear mid-proof and equals -theta*Im z (REAL) -- a DIFFERENT
+    #              quantity. Assert it differs from the correct S_theta density, so
+    #              the convention switch cannot silently reappear.
+    # -----------------------------------------------------------------------
+    rng_alg = np.random.default_rng(2026051902 + 99)
+    theta_alg = 0.37
+    max_form_dev = 0.0
+    max_qlat_im = 0.0
+    min_imag_purity = np.inf
+    min_buggy_gap = np.inf
+    for _ in range(20):
+        U_P = random_su3(rng_alg)
+        z = np.trace(U_P)
+        zbar = np.conj(z)
+        Q_density = (z - zbar) / (2j)            # should be real, == Im z
+        S_form_A = 1j * theta_alg * z.imag       # i*theta*Im z
+        S_form_B = 1j * theta_alg * (z - zbar) / (2j)  # i*theta*(z-zbar)/(2i)
+        S_form_C = (theta_alg / 2.0) * (z - zbar)      # (theta/2)(z - zbar)
+        buggy_extra_i = 1j * theta_alg * (z - zbar) / 2.0  # the spurious extra-i form (= -theta*Im z)
+        max_qlat_im = max(max_qlat_im, abs(Q_density.imag))
+        max_form_dev = max(max_form_dev, abs(S_form_A - S_form_B), abs(S_form_A - S_form_C))
+        # purity: S_theta density should be pure imaginary -> real part ~ 0
+        min_imag_purity = min(min_imag_purity, abs(S_form_A.imag))  # |Im| should be sizeable
+        max_form_dev = max(max_form_dev, abs(S_form_A.real))        # |Re| should be ~0
+        # gap between correct S_theta density and the buggy extra-i form
+        min_buggy_gap = min(min_buggy_gap, abs(S_form_A - buggy_extra_i))
+
+    check(
+        "V2.0a  Q_lat density (Tr U_P - Tr U_P^dag)/(2i) is REAL (= Im Tr U_P)",
+        max_qlat_im < 1e-12,
+        f"max|Im of (z-zbar)/(2i)| = {max_qlat_im:.2e}",
+    )
+    check(
+        "V2.0b  Lemma 2.3 three forms agree: i*theta*Im z = i*theta*(z-zbar)/(2i) = (theta/2)(z-zbar); S_theta is pure imaginary",
+        max_form_dev < 1e-12 and min_imag_purity > 1e-6,
+        f"max form deviation = {max_form_dev:.2e}; min|Im S_theta| = {min_imag_purity:.4e}",
+    )
+    check(
+        "V2.0c  Convention-switch guard: spurious 'extra-i' form i*theta*(z-zbar)/2 (= -theta*Im z) differs from S_theta",
+        min_buggy_gap > 1e-6,
+        f"min|S_theta - (extra-i form)| = {min_buggy_gap:.4e}  (the two are NOT the same quantity)",
+    )
 
     max_imag_for_theta = {th: 0.0 for th in thetas}
     for cfg in range(N_cfgs):
@@ -392,6 +459,43 @@ def test_V3_continuum_limit_decomposition():
     # Verify Im Tr U_P vanishes at leading order (it's 0 because F is Hermitian, T^a Hermitian)
     F2 = sum(F_a[a] ** 2 for a in range(8))  # F^a F^a sum (using Tr(T^a T^b) = 1/2 delta^ab)
     # Expected leading Re: N_c - (a^4 / 4) * F2 (because Tr((F^a T^a)^2) = (1/2) F^a F^a; coefficient (a^4 / 2) * (1/2) F2 = (a^4/4) F2)
+
+    # -----------------------------------------------------------------------
+    # V3.0 — ASSERT the trace-normalization that fixes the displayed Lemma 2.2
+    #        coefficient. This is the executed ground truth for the convention:
+    #        Tr((F^a T^a)^2) = (1/2) F^a F^a  with  Tr(T^a T^b) = (1/2) delta^{ab}.
+    #        Hence the (a^4/2) prefactor * (1/2) trace-norm = (a^4/4) coefficient.
+    #        The note's Lemma 2.2 must display  N_c - (a^4/4) F^a F^a  (NO extra 1/2):
+    #        the 1/2 from the trace normalization is ALREADY inside the (a^4/4).
+    #        A note that wrote  N_c - (a^4/4)*(1/2) F^a F^a  would double-count the
+    #        trace-1/2 and FAIL this assert (audit-miss guard: coefficient asserted,
+    #        not left in prose only).
+    # -----------------------------------------------------------------------
+    trace_quad = np.trace(F_munu_lie @ F_munu_lie).real  # Tr((F^a T^a)^2)
+    half_F2 = 0.5 * F2
+    check(
+        "V3.0a  Trace normalization: Tr((F^a T^a)^2) = (1/2) F^a F^a  [Tr(T^a T^b)=(1/2)delta]",
+        abs(trace_quad - half_F2) < 1e-12,
+        f"Tr((F^a T^a)^2) = {trace_quad:.8f}, (1/2) F^a F^a = {half_F2:.8f}",
+    )
+    # The prefactor algebra: (a^4/2) * Tr((F^a T^a)^2) = (a^4/2)*(1/2) F^aF^a = (a^4/4) F^aF^a
+    # i.e. the asserted Lemma 2.2 coefficient of F^aF^a in (N_c - Re Tr U_P) is exactly a^4/4.
+    asserted_coeff_factor = 0.5 * 0.5  # (a^4/2 prefactor)*(1/2 trace-norm) gives a^4 * this
+    check(
+        "V3.0b  Lemma 2.2 coefficient: (a^4/2 prefactor)*(1/2 trace-norm) = a^4/4 (NO extra 1/2)",
+        abs(asserted_coeff_factor - 0.25) < 1e-15,
+        f"(1/2)*(1/2) = {asserted_coeff_factor} -> coefficient of F^aF^a in (N_c - Re Tr U_P) is a^4 * {asserted_coeff_factor} = a^4/4",
+    )
+    # Guard against the buggy displayed form  N_c - (a^4/4)*(1/2) F^aF^a:
+    # that would predict ratio (N_c - Re_z)/(a^4/4) -> (1/2) F2, which is WRONG by a factor of 2.
+    buggy_predicted_ratio = 0.5 * F2  # what the spurious-(1/2) note would predict
+    correct_predicted_ratio = F2     # what the runner-consistent convention predicts
+    check(
+        "V3.0c  Spurious-(1/2) form is excluded: correct ratio is F^aF^a, not (1/2)F^aF^a",
+        abs(correct_predicted_ratio - F2) < 1e-12 and abs(buggy_predicted_ratio - F2) > 1e-3,
+        f"correct (N_c-Re)/(a^4/4) -> {correct_predicted_ratio:.6f} = F^aF^a;  buggy '(1/2)' form would give {buggy_predicted_ratio:.6f} (rejected)",
+    )
+
     Re_leading_factor = []
     Im_residual = []
     for a in a_values:

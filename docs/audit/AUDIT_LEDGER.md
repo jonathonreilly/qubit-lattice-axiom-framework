@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 597 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1183 |
+| unaudited | 1182 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 927 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1419 |
+| `unaudited` | 1418 |
 
 | claim_type | count |
 |---|---:|
@@ -1068,6 +1068,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lorentz_boost_covariance_3plus1d_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7321,6 +7322,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** V_4 x V_4 is (Z_2)^2 x (Z_2)^2 = (Z_2)^4, so an isomorphism (Z_2)^d ~= V_4 x V_4 forces d = 4 by rank/cardinality, and d = 4 has the explicit coordinate split.  _(class `A`)_
 - **chain closes:** True — The proof reduces to elementary abelian 2-group rank additivity and cardinality: V_4 x V_4 has rank 4 and order 16, while (Z_2)^d has rank d and order 2^d. The d=4 coordinate split gives the forward isomorphism, and rank/order excludes all other d >= 2.
 - **rationale:** The source note's load-bearing claim is a genuine class-A algebraic identity over elementary finite-group facts, not a physical bridge or imported framework premise. Independent rank and cardinality checks both force d=4, and the explicit d=4 coordinate map is a bijective homomorphism. The cached runner independently enumerates the group checks and reports PASS=75, FAIL=0 under SHA 6982bfb1572c56fd4310098e1b26b3cef5510d85421b2a5f4e4553beadf28263. The clean verdict covers only the finite-group theorem and excludes all BZ-physics, Wick, taste/doubler, substrate-realization, and physical dimension-selection readings.
+- **auditor confidence:** high
+
+### `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11`
+
+- **Note:** [`KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md`](../../docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only the algebraic scalar-majorant consequences of the stated per-scale BBF norm inequality were audited; the KMS theorem establishing that inequality was not supplied in the packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-kms_fermionic_brydges_ma`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the KMS per-scale bound, the scalar majorant ODE dy/dl = a y^2 + b y yields small-data boundedness, monotonicity, scale chaining, and fixed-point consequences.  _(class `A`)_
+- **chain closes:** False — The runner genuinely checks algebraic consequences of the scalar ODE once the per-scale majorant inequality is assumed. The restricted packet does not supply the KMS theorem statement/proof or a retained upstream authority establishing that inequality and its hypotheses.
+- **rationale:** The runner source performs real Fraction arithmetic and boundary-text checks, but all scientific closure depends on accepting the KMS per-scale BBF majorant inequality as an external input. The source note explicitly admits that this upstream theorem is unsupplied and that no retained authority row for it is present. Therefore the conditional scalar ODE core closes algebraically, but the claimed external theorem chain does not close from the restricted packet alone.
+- **open / conditional deps cited:**
+  - `KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md`
 - **auditor confidence:** high
 
 ### `koide_a1_loop_final_status_2026-04-22`

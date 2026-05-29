@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 162 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 589 |
+| **retained_bounded** | 590 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1139 |
+| unaudited | 1138 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 913 |
+| `audited_clean` | 914 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1369 |
+| `unaudited` | 1368 |
 
 | claim_type | count |
 |---|---:|
@@ -853,6 +853,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_support_localization_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -13050,6 +13051,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The note claims that on the cached N=12-80 random-DAG configuration the detector distributions converge in d_TV with power-law decline and that the measurements support a CLT-style non-dominance mechanism rather than rank-1 spectral collapse.  _(class `C`)_
 - **chain closes:** False — The finite runner table and the monotone Lindeberg-ratio decrease close as measurements, but the convergence-with-power-law and CLT-mechanism reading is stronger than the cached evidence proves. The d_TV/overlap/purity residuals are noisy across N and their fitted power laws have only R^2 about 0.35-0.42.
 - **rationale:** Issue: the runner computes the finite table, but the load-bearing claim promotes noisy finite measurements into a convergence/power-law and CLT-style mechanism statement. Why this blocks: d_TV is not monotone on the cached range, the overlap and purity residuals also have large finite-N excursions, and the reported power-law fits have low R^2, so the restricted packet does not establish the mechanism strength claimed. Repair target: narrow the theorem to the exact cached table plus monotone Lindeberg-ratio observation, or add an assertion runner/statistical criterion that proves the convergence and mechanism claim on the declared ensemble. Claim boundary until fixed: the cache supports the printed finite measurements and a plausible interpretation, not an audited bounded theorem of power-law convergence/mechanism closure.
+- **auditor confidence:** high
+
+### `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28`
+
+- **Note:** [`SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](../../docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded admission-bridge theorem: given retained N_F = 3, the retained doubled-hypercharge one-generation spectrum, and the local supplied EWPT-equilibrium premise packet E1-E6 including N_H = 1, the chemical-potential linear system reduces to C_sph = (8 N_F + 4 N_H)/(22 N_F + 13 N_H) and hence 28/79; no derivation of E1-E6 or cosmological mechanism is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting sphaleron equilibrium mu_lL = -3 mu_qL into hypercharge neutrality after the Yukawa relations gives mu_qL = -(2 N_F + N_H)/(4 N_F) mu_phi, so n_B/(n_B-n_L) = (8 N_F + 4 N_H)/(22 N_F + 13 N_H).  _(class `A`)_
+- **chain closes:** True — The retained dependencies provide only N_F = 3 and the hypercharge spectrum; E1-E6 are explicitly local supplied premises. From those inputs, the hypercharge-neutrality equation, baryon/lepton densities, prefactor cancellation, and 28/79 specialization are exact rational arithmetic.
+- **rationale:** The source cleanly scopes the result as a bounded implication, not as a derivation of sphaleron dynamics, the EWPT temperature window, Yukawa equilibration, small-mu/T thermodynamics, or Higgs content. Independent algebra confirms the signs, multiplicities, bosonic factor, baryon/lepton normalizations, and cancellation leading to 28/79. The no-go/admission-wall gate passes because the note exposes the local E1-E6 premise packet rather than presenting those premises as closed framework facts or independent no-go walls.
 - **auditor confidence:** high
 
 ### `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10`

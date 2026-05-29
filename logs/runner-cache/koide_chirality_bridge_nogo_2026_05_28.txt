@@ -1,0 +1,46 @@
+
+========================================================================
+(1) the Koide chiral operator must BREAK C_3-equivariance
+========================================================================
+  {H, Gx}=0 (chiral) and [H, S]=0 (C_3-equivariant) => H=0
+  (retained koide_z3_equivariant_anticommuting_no_go: comm(S) cap
+   anticomm(Gx) = {0}). So a nonzero chiral H MUST have [H,S] != 0.
+
+========================================================================
+(2) spacetime gamma5 acts C_3-trivially -> cannot supply it
+========================================================================
+  anomaly_forces_time gives gamma5 on the SPACETIME factor; on the
+  generation index it acts as (gamma5 (x) G). Anticommuting with
+  (I (x) Gx) REQUIRES {G, Gx}=0 on the generation factor:
+    G=I_gen (gamma5 trivial on gen) : {G,Gx}=1.33 (!=0 => NOT anticommuting)   [G,S]=0.00
+    G=S  (C_3-equivariant)          : {G,Gx}=1.33 (!=0 => NOT anticommuting)   [G,S]=0.00
+    G=S - S^T (Cl(3) bivector)      : {G,Gx}=2.00 (!=0 => NOT anticommuting)   [G,S]=0.00
+  => every spacetime-supplied / C_3-equivariant G commutes with Gx.
+  The C_3-orbit-splitting (non-equivariant) G that chirality needs is
+  NOT produced by spacetime gamma5. BRIDGE = NO-GO.
+
+========================================================================
+(3) corrects the 'no Ginsparg-Wilson' framing
+========================================================================
+  Prior framing blamed 'staggered Z^3 has no Ginsparg-Wilson'. But GW
+  is SUFFICIENT, not NECESSARY. The operative obstruction is sharper:
+  any chiral grading anticommuting with Gx must split the C_3 orbit,
+  and no functorial/spacetime structure does. (Aligns with the sister
+  generation-ID lane's three-wall no-go; wall 3 = R3-S1 retained.)
+
+========================================================================
+VERDICT: bridge NO-GO -> generation chirality is an IMPORT
+========================================================================
+  The chiral structure that forces Koide Q=2/3 (anticommuting with
+  the generation grading) CANNOT be transported from the framework's
+  spacetime chirality (anomaly_forces_time gamma5); it would have to
+  be an INDEPENDENT primitive on the generation R^3 factor that
+  A1+A2+retained do not supply. So:
+   - Q=2/3 is DERIVED-MODULO-CHIRALITY (chiral mass-gen => 2/3,
+     non-circular, retained mechanism), AND
+   - the required chirality is a CONFIRMED no-go to derive from
+     A1+A2+retained: it is a genuine, user-approval-required import
+     (an independent generation-sector chiral grading).
+  This is the SAME single gate as generation-identification chirality.
+  Closing Koide-2/3 to 'derived' requires importing that grading; the
+  framework's NON-chiral default predicts Q=1.

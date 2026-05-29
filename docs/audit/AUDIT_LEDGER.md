@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 162 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 591 |
+| **retained_bounded** | 592 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1137 |
+| unaudited | 1136 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 915 |
+| `audited_clean` | 916 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1367 |
+| `unaudited` | 1366 |
 
 | claim_type | count |
 |---|---:|
@@ -900,6 +900,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structured_mirror_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13845,6 +13846,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe read is that structureless causal DAGs can show TOWARD rows, and when they do the source-strength response stays close to linear on this pocket.  _(class `C`)_
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
+- **auditor confidence:** high
+
+### `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28`
+
+- **Note:** [`SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic anchor: given the Wilson convention beta_W=2N/g_bare^2, the retained_bounded assumed input g_2^2|_lattice=1/(d+1)=1/4 at d=3, the QFT convention alpha=g^2/(4pi), and retained native SU(2) with N=2, the lattice-scale identities alpha_2=1/(16pi), 1/alpha_2=16pi, and beta_W=16 follow; no derivation of the conventions, coupling input, physical scale, or RG running is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute g_2^2|_lattice=1/4 into alpha=g^2/(4pi) and N=2 into beta_W=2N/g_bare^2, giving alpha_2|_lattice=1/(16pi), 1/alpha_2=16pi, and beta_W=16.  _(class `A`)_
+- **chain closes:** True — The two ledger dependencies are retained-grade for this bounded use: the assumed-input row supplies g_2^2=1/(d+1) and native gauge closure supplies SU(2). The rest is exact rational/pi substitution under explicitly named textbook conventions, with no PDG comparator, scale identification, unification claim, or derivation of the assumed coupling.
+- **rationale:** The load-bearing identities are exact substitutions and round-trip correctly: 4pi*alpha_2=1/4, 1/alpha_2=16pi, and beta_W*g_2^2=2N=4. The runner refreshed successfully and verifies the anchor, reciprocal, Wilson beta, numeric readouts, and counterfactual arithmetic; independent arithmetic reproduces the same factors and normalization. The no-go/admission-wall gate passes because the source explicitly bounds the Wilson convention, fine-structure convention, assumed g_2 input, and scale/RG claims rather than promoting them to derived framework facts.
 - **auditor confidence:** high
 
 ### `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`

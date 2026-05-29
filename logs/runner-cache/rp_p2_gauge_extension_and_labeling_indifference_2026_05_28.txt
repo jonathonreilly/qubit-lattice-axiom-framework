@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py
+runner_sha256: 77ec52a654dbeb674b684dc4396710cd8eb217c71bcef2213387af579060e725
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
 ==============================================================================
 RP -> P2: FIXED-SU(3) GAUGE EXTENSION + LABELING-INDIFFERENCE EXHIBIT
 ==============================================================================
@@ -93,3 +101,6 @@ SCORECARD: PASS=7 FAIL=0
   spectrum invariance     : spec(H_hat) relabeling-invariant
   trace invariance        : Z=Tr(e^{-beta H_hat}) relabeling-invariant
 ==============================================================================
+
+----- stderr -----
+

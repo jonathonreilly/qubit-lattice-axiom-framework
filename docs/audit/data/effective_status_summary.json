@@ -41,11 +41,11 @@
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 236,
     "open_gate": 29,
-    "retained": 167,
+    "retained": 168,
     "retained_bounded": 597,
     "retained_no_go": 173,
     "retained_pending_chain": 10,
-    "unaudited": 1181
+    "unaudited": 1180
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

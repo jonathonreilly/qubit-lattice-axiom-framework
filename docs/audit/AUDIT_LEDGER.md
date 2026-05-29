@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 167 |
+| **retained** | 168 |
 | **retained_no_go** | 173 |
 | **retained_bounded** | 597 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1181 |
+| unaudited | 1180 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 927 |
+| `audited_clean` | 928 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1417 |
+| `unaudited` | 1416 |
 
 | claim_type | count |
 |---|---:|
@@ -162,6 +162,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `asymmetry_persistence_born_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `asymmetry_persistence_joint_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -1684,6 +1685,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Within the finite primitive-edge class whose local data are only the 16-state primitive cell, source-free state, rank-four projector, locality/additivity, and standard von Neumann or binary measurement entropy, there is no derivation of an entanglement area coefficient equal to 1/4.  _(class `A`)_
 - **chain closes:** True — The chain closes because the canonical entropy values from the stated finite data are computed directly and none equals 1/4 in natural units, while the tuned gapped-edge value requires p_* not fixed by the primitive rank pair (16,4). With no dependencies, there is no unresolved upstream status blocking the scoped no-go.
 - **rationale:** The no-go is scoped to exact finite-cell entropy constructions and a gapped two-level edge example, not to all possible entropy-carrier theorems. The note explicitly distinguishes the primitive trace Tr((I_16/16)P_A)=1/4 from von Neumann and binary entropy values, and the runner reproduces those finite arithmetic checks with current PASS=26 FAIL=0. No hidden physical identification is used to claim a positive entropy coefficient; the conclusion is negative and leaves positive routes open only if they add a selector or operational entropy theorem.
+- **auditor confidence:** high
+
+### `asymmetry_persistence_born_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_BORN_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Narrow dense Born calibration for generated asymmetry-persistence graphs at N=100, npl=60, thresholds 0.10 and 0.20, 2 seeds and 4 realizations, including linear, persistence, persistence+LN, and persistence+LN+collapse columns.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-audit-ready-20260529-asymmetry_persistence_bo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The corrected Sorkin |I3|/P magnitudes in the table are reproducible from the registered runner at the narrow N=100, npl=60, thresholds=[0.1,0.2], 2-seed, 4-realization default configuration, and every column is far below 1e-10.  _(class `C`)_
+- **chain closes:** True — The restricted packet includes the primary runner, its cache, and all named helper sources; the runner builds the graphs, propagates amplitudes, computes the corrected Sorkin I3 with -P(empty), and reproduces the note table without hard-coded expected values. The conclusion is limited to the stated narrow density-limited probe and does not assert broader-N or asymptotic closure.
+- **rationale:** The load-bearing result is a direct deterministic computation from the included graph-generation, propagation, collapse, and Sorkin-metric code, not a definition, renaming, external comparator, or numerical fit to imported constants. The cached stdout matches the source-note table and records status ok within the audit timeout. The cited authorities are retained_bounded and the note explicitly confines itself to the narrow N=100 calibration rather than relying on the open broader sweep.
 - **auditor confidence:** high
 
 ### `asymmetry_persistence_collapse_note`

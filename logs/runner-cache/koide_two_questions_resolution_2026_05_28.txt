@@ -1,0 +1,44 @@
+
+========================================================================
+QUESTION A -- thermal/dynamical (fluctuating doublet field) -> Q=1
+========================================================================
+  weight the doublet by its thermal dof = 2 real dims (the TRACE):
+    equipartition / condensate:  r = 1.0   Q = 1.0000  (F3)
+  campaign dynamical probes (free, interacting, condensate, RG, gap)
+  ALL gave Q=1 or an IRRATIONAL tuned root -- never the clean 2/3.
+    (gap-eqn root s/d = 4-3*sqrt2 = -0.2426: irrational, not 1/2)
+
+========================================================================
+QUESTION B -- structural/representation (fixed mass operator) -> Q=2/3
+========================================================================
+  weight the Z_3-IRREDUCIBLE BLOCKS equally (counting measure on the
+  2 minimal central idempotents of R[Z_3]=R(+)C):
+    block (1,1):  r = 0.5   Q = 0.6667  (F1) -- a CLEAN RATIONAL
+
+========================================================================
+WHICH QUESTION are the charged-lepton masses asking?
+========================================================================
+  observed Q (PDG)  = 0.6666605  -- a clean rational 2/3 to 1e-5
+  |Q_obs - 2/3|/(2/3) = 0.0009%
+  |Q_obs - 1|         = 0.3333  (thermal answer is far off)
+  => the masses answer QUESTION B (structural/block), NOT A (thermal).
+  The SHARP RATIONAL 2/3 is a representation-theoretic signature:
+  a thermal/dynamical mechanism gives Q=1 or an irrational value;
+  only the block/representation structure gives the clean 2/3.
+
+========================================================================
+RESOLUTION
+========================================================================
+  There are not two answers to one question -- there are two
+  questions. Pure rep theory is agnostic (both measures canonical),
+  but PHYSICS picks the question: the charged leptons are a FIXED,
+  sharp, non-mixing mass SPECTRUM organized by Z_3 representation,
+  so the representation/block weighting is the physical one -> Q=2/3.
+  The Q=1 'prediction' answers 'what if the masses were a thermal
+  condensate' -- which they are not (it gives the wrong, non-rational
+  region). DERIVED from A1+A2: the Z_3 block structure + the algebraic
+  equivalence Q=2/3 <=> equal-block. IDENTIFICATION (data-confirmed,
+  not yet first-principles-derived): that charged-lepton mass-
+  generation is structural (block) not thermal (trace). The sharp
+  rational 2/3 is the evidence -- and the framework makes the
+  thermal-vs-structural dichotomy precise and falsifiable.

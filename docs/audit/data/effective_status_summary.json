@@ -7,10 +7,15 @@
     "open_gate": 117,
     "positive_theorem": 704
   },
-  "cycle_examples": [],
-  "cycles_detected": 0,
+  "cycle_examples": [
+    [
+      "higgs_mass_from_axiom_note",
+      "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+    ]
+  ],
+  "cycles_detected": 1,
   "effective_status_counts": {
-    "audited_conditional": 74,
+    "audited_conditional": 72,
     "audited_failed": 4,
     "audited_numerical_match": 17,
     "audited_renaming": 22,
@@ -46,7 +51,7 @@
     "retained_bounded": 596,
     "retained_no_go": 172,
     "retained_pending_chain": 10,
-    "unaudited": 1130
+    "unaudited": 1132
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

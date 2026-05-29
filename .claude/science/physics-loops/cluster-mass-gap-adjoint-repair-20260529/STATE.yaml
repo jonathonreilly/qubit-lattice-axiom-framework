@@ -1,0 +1,36 @@
+loop_slug: cluster-mass-gap-adjoint-repair-20260529
+branch: physics-loop/cluster-mass-gap-adjoint-repair-20260529
+base: origin/main
+mode: science_fix_loop
+current_goal: >
+  Repair the B.14 adjoint-placement error in the finite-dimensional
+  transfer-matrix mass-gap bridge.
+target_status: proposed_retained_bounded_after_independent_audit
+actual_current_surface_status: proposed_retained
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+block_count: 1
+files_touched:
+  - docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md
+  - scripts/cluster_decomposition_mass_gap_bridge_check.py
+repair:
+  old_blocker: >
+    B.14 bounded the Cauchy-Schwarz factors with ||A|0>|| ||B^dagger|0>||,
+    which is false for arbitrary bounded A,B.
+  repair: >
+    Replaced the intermediate vectors with ||A^dagger|0>|| ||B|0>|| and
+    added a runner exhibit for the auditor's two-dimensional counterexample.
+pipeline_result:
+  claim_type: bounded_theorem
+  audit_status: unaudited
+  effective_status: unaudited
+  queue_rank: 4
+  queue_ready: true
+  descendants: 902
+  audited_conditional_count_after_pipeline: 18
+  ready_audit_queue_count_after_pipeline: 56
+verification:
+  runner: "PASSED: 5/5"
+  audit_pipeline: passed
+  audit_lint: "passed with notices only"
+next_exact_action: "Open PR for review-loop extraction; do not merge from this loop."

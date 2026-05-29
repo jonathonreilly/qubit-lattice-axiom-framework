@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 568 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1182 |
+| unaudited | 1181 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 68 |
+| ~~audited_conditional~~ | 69 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 880 |
-| `audited_conditional` | 68 |
+| `audited_conditional` | 69 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1412 |
+| `unaudited` | 1411 |
 
 | claim_type | count |
 |---|---:|
@@ -1031,6 +1031,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `distance_law_frontier_audit_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
+| `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3923,6 +3924,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Using the corrected high-precision continuum thermal evaluator on the admitted same-surface one-scalar DM family gives a unique interior closure crossing at sigma_conv = 0.145077095756643 and Omega_DM = 0.268.  _(class `D`)_
 - **chain closes:** True — The note states a bounded admitted-family convergence claim, and the runner recomputes the interior crossing, matches the quoted Omega_DM comparator, and verifies material drift away from the coarse and 9/62 values.
 - **rationale:** The bounded support claim closes on its own terms: the runner recomputes the converged same-surface selector, verifies the observed Omega_DM comparator on the admitted one-scalar family, and checks that the coarse grid and 9/62 clue are not stable. The source note explicitly keeps current-bank selector closure open, so this clean audit is limited to the convergence/sanity-check surface and does not ratify a theorem-grade DM selector law. Residual risk is downstream misuse of the admitted-family crossing as a first-principles current-bank closure.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded thermal-layer endpoint/root certification over supplied alpha endpoints, baryon conversion, and observed DM target constants; current-bank selector/no-go authority and the admitted-family live-DM constants are not retained by this row.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner combines certified_same_surface_ratio_bounds, monotonicity, omega_b_from_eta(ETA_OBS), OMEGA_DM_OBS, and the helper alpha endpoints to certify endpoint images and a one-scalar root interval.  _(class `B`)_
+- **chain closes:** False — The exact thermal enclosures close only for supplied constants; the row's current-bank and admitted-family selector surfaces import live DM alpha endpoints, ETA/omega conversion, and the observed DM target without a retained direct authority for the selector boundary.
+- **rationale:** Issue: the visible runner certifies tight enclosures after importing ALPHA_LO/ALPHA_HI, ETA_OBS/omega_b, and OMEGA_DM_OBS from helper modules, but the direct dependencies only retain the pure thermal integral, monotonicity, and series-tail machinery. The source itself names the numerator selector boundary as the sibling current-bank no-go, and that row is not yet retained or wired as a direct dependency. Why this blocks: the clean prior thermal rows explicitly excluded live-DM slice constants; this row reintroduces them as load-bearing inputs for the current-bank image and admitted-family root interval. No-go discipline also blocks promoting the current-bank no-selector conclusion here: the row does not enumerate and close five alternative selector routes, so the negative result cannot be inherited as a clean no-go from this packet. Repair target: add/audit retained direct authority for the numerator/current-bank selector boundary and for the live alpha/eta/omega constants, or split a pure conditional numerical certificate that states all constants as supplied inputs. Claim boundary until fixed: for the supplied numeric endpoints and target, the runner's exact-series/monotonicity composition supports the printed enclosures and root interval; it does not retain a current-bank selector theorem, a current-bank no-go, or an admitted-family physical selector law.
+- **open / conditional deps cited:**
+  - `DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`

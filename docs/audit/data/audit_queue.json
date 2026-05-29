@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 314
+    "medium": 313
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16741,37 +16741,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-        "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
-        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
-        "scripts/dm_leptogenesis_exact_common.py"
-      ],
-      "load_bearing_score": 7.115,
-      "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
-      "transitive_descendants": 48
     },
     {
       "audit_independence_required": "any_non_self",
@@ -35846,6 +35815,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 39,
-  "total_pending": 1184
+  "ready_count": 38,
+  "total_pending": 1183
 }

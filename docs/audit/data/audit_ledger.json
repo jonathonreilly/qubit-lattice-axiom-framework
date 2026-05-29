@@ -58778,22 +58778,50 @@
       "verdict_rationale": null
     },
     "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T05:28:04.572716+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited.",
+          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "Bounded same-surface thermal-kernel algebra: the attractive and repulsive Sommerfeld kernel derivative identities and sign bounds for y>0; excludes 64:1 channel-weighted live-DM monotonicity, root uniqueness, and integral evaluation.",
+          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "Pure x_f=25 thermal-kernel series/tail certificate: positive Coulomb series identities, exact J1/J2 term-integral representations, and exact tail bounds; excludes live-DM slice constants, alpha/eta/omega selector samples, and current-bank selector closure."
+        },
+        "dep_claim_type": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "bounded_theorem",
+          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "retained_bounded",
+          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "retained_bounded"
+        },
+        "deps": [
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
+          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.115,
+        "runner_hash": "a8381ebd8cd71fc329464620bbb4f0c057ac056c8d4d3813c7cfc152b7f2717d",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact thermal enclosures close only for supplied constants; the row's current-bank and admitted-family selector surfaces import live DM alpha endpoints, ETA/omega conversion, and the observed DM target without a retained direct authority for the selector boundary.",
       "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Bounded thermal-layer endpoint/root certification over supplied alpha endpoints, baryon conversion, and observed DM target constants; current-bank selector/no-go authority and the admitted-family live-DM constants are not retained by this row.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-29T05:28:04.572716+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -58803,25 +58831,27 @@
         "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.115,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner combines certified_same_surface_ratio_bounds, monotonicity, omega_b_from_eta(ETA_OBS), OMEGA_DM_OBS, and the helper alpha endpoints to certify endpoint images and a one-scalar root interval.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "3a13e7b7c6651cdf856946a3818d4fd0ad4b958b493962d8e9f907f20a0ddbd3",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire and audit the numerator/current-bank selector boundary plus live alpha/eta/omega constant authorities, or split this into a pure supplied-constant numerical certificate before re-audit.",
+      "open_dependency_paths": [
+        "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -58932,18 +58962,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 6,
+        "B": 2,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "total_pass": 9
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Bounding Theorem",
       "transitive_descendants": 48,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the visible runner certifies tight enclosures after importing ALPHA_LO/ALPHA_HI, ETA_OBS/omega_b, and OMEGA_DM_OBS from helper modules, but the direct dependencies only retain the pure thermal integral, monotonicity, and series-tail machinery. The source itself names the numerator selector boundary as the sibling current-bank no-go, and that row is not yet retained or wired as a direct dependency. Why this blocks: the clean prior thermal rows explicitly excluded live-DM slice constants; this row reintroduces them as load-bearing inputs for the current-bank image and admitted-family root interval. No-go discipline also blocks promoting the current-bank no-selector conclusion here: the row does not enumerate and close five alternative selector routes, so the negative result cannot be inherited as a clean no-go from this packet. Repair target: add/audit retained direct authority for the numerator/current-bank selector boundary and for the live alpha/eta/omega constants, or split a pure conditional numerical certificate that states all constants as supplied inputs. Claim boundary until fixed: for the supplied numeric endpoints and target, the runner's exact-series/monotonicity composition supports the printed enclosures and root interval; it does not retain a current-bank selector theorem, a current-bank no-go, or an admitted-family physical selector law."
     },
     "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": {
       "audit_date": "2026-05-28T03:50:47.795466+00:00",

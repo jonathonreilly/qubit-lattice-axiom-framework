@@ -19,15 +19,15 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 179 |
 | critical | `unaudited` | 152 |
-| medium | `unaudited` | 98 |
+| medium | `unaudited` | 97 |
 | high | `audited_numerical_match` | 4 |
 | critical | `audited_conditional` | 3 |
 | high | `audited_renaming` | 3 |
+| medium | `audited_conditional` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
 | critical | `open_gate` | 2 |
 | high | `audited_conditional` | 2 |
-| medium | `audited_conditional` | 2 |
 | critical | `audited_failed` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_failed` | 1 |
@@ -399,7 +399,7 @@ publication tables phrase it.
 | medium | `dm_candidate_mass_window_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_flagship_closure_review_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
-| medium | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
+| medium | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_minimal_a13_sheet_selector_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_off_seed_triplet_sign_boundary_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

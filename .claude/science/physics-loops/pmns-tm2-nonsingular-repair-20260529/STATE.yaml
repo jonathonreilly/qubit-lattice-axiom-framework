@@ -1,0 +1,31 @@
+loop_slug: pmns-tm2-nonsingular-repair-20260529
+branch: physics-loop/pmns-tm2-nonsingular-repair-20260529
+base: origin/main
+current_goal: "Repair the PMNS TM2 conditional row by narrowing the CP conclusion to the nonsingular phase chamber named by audit."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+cycle_count: 1
+active_route: "Add c12*s12*s13 != 0 to the note and assert the s13^2=2/3 endpoint in the runner."
+files_touched:
+  - docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md
+  - scripts/pmns_tm2_residual_consequence_runner.py
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+open_imports: []
+no_go_routes:
+  - "Do not claim CP forcing at sin^2(theta_13)=2/3; the phase multiplier vanishes there."
+trace_gate_classification: direct_blocker_closure
+review_findings: "External reviewer pending; local self-check confirms the audit-named endpoint is now explicit."
+pr_status: "pending"
+next_exact_action: "Commit, push, open draft PR, then continue to the next available audit unlock."
+stop_condition: "Stop only after PR verification or a concrete tooling failure."

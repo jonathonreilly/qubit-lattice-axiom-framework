@@ -45,6 +45,25 @@ def lhs_without_cp_phase(s13_sq: Fraction) -> Fraction:
     return c12_sq + s12_sq * s13_sq
 
 
+def nonsingular_phase_factor_sq(s13_sq: Fraction) -> Fraction:
+    """Square of c12*s12*s13 under the TM2 sum rule."""
+    c13_sq = 1 - s13_sq
+    s12_sq = Fraction(1, 3) / c13_sq
+    c12_sq = 1 - s12_sq
+    return c12_sq * s12_sq * s13_sq
+
+
+def phase_equation_residual_at_degenerate_endpoint(
+    s13_sq: Fraction, cos_delta: Fraction
+) -> Fraction:
+    """Equation (3) residual when the phase multiplier is exactly zero."""
+    factor_sq = nonsingular_phase_factor_sq(s13_sq)
+    if factor_sq != 0:
+        raise ValueError("endpoint residual helper requires c12*s12*s13 = 0")
+    phase_multiplier = Fraction(0, 1)
+    return lhs_without_cp_phase(s13_sq) - phase_multiplier * cos_delta - Fraction(2, 3)
+
+
 def implied_cos_delta(s13_sq: float) -> float:
     c13_sq = 1.0 - s13_sq
     s12_sq = (1.0 / 3.0) / c13_sq
@@ -94,12 +113,30 @@ def main() -> int:
             lhs_without_cp_phase(s13_sq) == Fraction(2, 3),
         )
 
+    for s13_sq in [Fraction(1, 100), Fraction(223, 10000), Fraction(1, 20)]:
+        check(
+            f"phase divisor is nonzero for sin^2(theta_13)={s13_sq}",
+            nonsingular_phase_factor_sq(s13_sq) > 0,
+        )
+
     for s13_sq in [0.01, 0.0223, 0.05]:
         cos_delta = implied_cos_delta(s13_sq)
         check(
             f"cos(delta_CP)=0 follows for sin^2(theta_13)={s13_sq}",
             abs(cos_delta) < 1e-12,
             f"cos(delta_CP)={cos_delta:.3e}",
+        )
+
+    endpoint = Fraction(2, 3)
+    _lhs, endpoint_s12_sq = tm2_sum_rule(endpoint)
+    check(
+        "endpoint sin^2(theta_13)=2/3 has c12=0 under TM2",
+        endpoint_s12_sq == 1 and nonsingular_phase_factor_sq(endpoint) == 0,
+    )
+    for cos_delta in [Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1)]:
+        check(
+            f"endpoint phase equation does not force cos(delta_CP)={cos_delta}",
+            phase_equation_residual_at_degenerate_endpoint(endpoint, cos_delta) == 0,
         )
 
     print("=" * 72)

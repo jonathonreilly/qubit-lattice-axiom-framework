@@ -71638,7 +71638,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "4b402ec617b843484a89d3b5ed7a17368bf2f3491a8a391a571895806653a05f",
+      "note_hash": "d19cb412db242f906b45beb0f0a4858b1a99ce3dada3bc229301534047293def",
       "path": "docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/pmns_tm2_residual_consequence_runner.py",
       "title": "PMNS TM2 Residual Consequence -- Bounded Algebra Note"

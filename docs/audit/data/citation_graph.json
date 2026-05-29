@@ -76978,15 +76978,15 @@
     },
     "signed_gravity_aps_locked_source_action_proposal_note": {
       "claim_id": "signed_gravity_aps_locked_source_action_proposal_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
       "deps": [],
       "helper_runner_paths": [
         "scripts/numpy_replay_bootstrap.py",
         "scripts/signed_gravity_aps_boundary_index_probe.py"
       ],
-      "note_hash": "d3474696144240bed52ee5da25ca89e71126ce01cde36b74361a3757378ae641",
+      "note_hash": "73a27e66fd8386bb6de4c6d1bd9ed50059b5ebd4a452159ba3a219025d8e7a43",
       "path": "docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
       "runner_path": "scripts/signed_gravity_aps_locked_source_action_proposal.py",
       "title": "Signed Gravity APS-Locked Source Action Proposal"
@@ -87273,8 +87273,8 @@
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
-      "none": 1431,
-      "open_gate": 54,
+      "none": 1430,
+      "open_gate": 55,
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
@@ -87283,8 +87283,8 @@
       "meta": 192,
       "no_go": 188,
       "none": 426,
-      "open_gate": 131,
-      "positive_theorem": 592
+      "open_gate": 132,
+      "positive_theorem": 591
     },
     "edge_count": 9941,
     "leaf_count": 828,

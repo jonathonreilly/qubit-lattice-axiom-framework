@@ -298994,22 +298994,62 @@
       "verdict_rationale": "Clean within the stated bounded scope. The runner is not a constant-printer: the wrapper pins the intended Fam1/seed1/H=0.25 arguments, the helper constructs source histories and wave/beam responses, and the cache completes under the declared 1800 s budget. The note also correctly demotes the H=0.5/H=0.35 comparison rows and broader cross-seed/portability discussion to non-load-bearing context."
     },
     "wave_direct_dm_h025_seed0_crossfamily_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T06:08:13.427172+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "Runner-defined Fam1, seed 0, H=0.25 control replay only: exact S=0 null, common negative weak-field sign across S=0.002/0.004/0.008, and approximately linear weak-field scaling with R_hist around -20% to -21%. No Fam1 seed1, Fam2, cross-family, or general H=0.25 portability claim.",
+          "wave_direct_dm_h025_fam2_seed0_boundary_note": "Bounded Fam2 seed0 S=0.004 direct-dM matched-history boundary certificate over H=0.50, 0.35, and 0.25: the sign survives and the fine-H delta remains materially nonzero, but the old high-band magnitude collapses below 30%. No portability, family-wide, seed-wide, Fam1/Fam3, lab-facing magnitude, or physical-law claim is audited.",
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension.",
+          "wave_direct_dm_h025_high_band_boundary_note": "Bounded Fam1 seed0 H=0.25, S=0.004 direct-dM point: dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, R_hist=-20.12%, with the retained fine-pair synthesis establishing that seed 1 has the larger-magnitude negative R_hist at the same H and strength. Coarse H=0.5/0.35 provenance, coarse-to-fine reversal framing, mechanism claims, and portability claims are excluded."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed0_boundary_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_h025_high_band_boundary_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed0_boundary_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_h025_high_band_boundary_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam1_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed0_boundary_note",
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed1_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note",
+          "wave_direct_dm_h025_high_band_boundary_note"
+        ],
+        "load_bearing_score": 4.0,
+        "runner_hash": "2a225787af486efb0b1e47bacf936ae040622e6f11841dc7dce013c6aded70fa",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner and frozen logs verify the arithmetic comparison, null rows, signs, and spread bounds, but the claim remains a selected-scale numerical compression at H=0.25/seed 0 rather than a structural derivation from retained framework inputs.",
       "claim_id": "wave_direct_dm_h025_seed0_crossfamily_note",
-      "claim_scope": null,
+      "claim_scope": "Log-backed two-family seed-0 H=0.25 direct-dM compression over the listed Fam1/Fam2 frozen control rows, including exact S=0 nulls, negative nonzero sign pattern, weak-field spread bounds, and the selected S=0.004 ordering Fam2 deeper than Fam1.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T06:08:13.427172+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -299022,19 +299062,19 @@
         "wave_direct_dm_h025_fam2_seed0_boundary_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_numerical_match",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_numerical_match",
       "load_bearing_score": 4.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The selected seed-0 H=0.25 S=0.004 rows have Fam1 delta_hist=-0.001256, R_hist=-20.12% and Fam2 delta_hist=-0.001576, R_hist=-22.61%, so Fam2 is deeper than Fam1 on this preselected fine-H surface.",
+      "load_bearing_step_class": "G",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "515084182caedf032961fa063d7dccdaf1e441cf7adb7d03f7d9fbb004930112",
       "note_path": "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Numerical-match ceiling: promotion requires a first-principles magnitude/order derivation or a separate retained theorem explaining why H=0.25 seed 0 is a forced structural surface rather than a selected comparison point.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -299127,18 +299167,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "assert_count": 1,
+        "runner_status": "ok"
       },
       "runner_path": "scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py",
       "title": "Wave Direct-dM H=0.25 Seed0 Cross-Family Compression Note",
       "transitive_descendants": 7,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the load-bearing cross-family ordering and magnitude band are read from two preselected simulation rows at the tuned H=0.25, seed-0 surface. Why this blocks: the restricted packet verifies the log-backed table but does not derive the magnitudes or the Fam2>Fam1 ordering from Cl(3) on Z^3, nor does it supply a family-wide or third-family law. Repair target: derive a class-C first-principles magnitude/order law for the selected surface, or split any future structural claim from this archived two-row numerical compression. Claim boundary until fixed: the frozen Fam1/Fam2 seed-0 logs support a bounded numerical comparison only: common negative sign and Fam2 deeper than Fam1 at S=0.004, with no retained portability or stable amplitude law."
     },
     "wave_direct_dm_h025_seed1_crossfamily_note": {
       "audit_date": "2026-05-28T04:48:04.515762+00:00",

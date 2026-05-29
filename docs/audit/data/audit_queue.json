@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 301
+    "medium": 300
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16741,35 +16741,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wave_direct_dm_h025_seed0_crossfamily_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_fam1_seed0_control_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note",
-        "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_high_band_boundary_note",
-        "wave_direct_dm_h025_fam2_seed0_boundary_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.0,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py",
-      "transitive_descendants": 7
     },
     {
       "audit_independence_required": "any_non_self",
@@ -35499,6 +35470,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 36,
-  "total_pending": 1171
+  "ready_count": 35,
+  "total_pending": 1170
 }

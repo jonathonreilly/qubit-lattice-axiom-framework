@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 593 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1135 |
+| unaudited | 1134 |
 | meta | 230 |
-| ~~audited_numerical_match~~ | 16 |
+| ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 4 |
@@ -63,18 +63,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
-| `audited_numerical_match` | 16 |
+| `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1365 |
+| `unaudited` | 1364 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1124 |
+| `bounded_theorem` | 1125 |
 | `decoration` | 52 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 117 |
-| `positive_theorem` | 706 |
+| `positive_theorem` | 705 |
 
 | criticality | count |
 |---|---:|
@@ -1236,6 +1236,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | judicial_review | codex-gpt-5.5 | G | - |
+| `wave_direct_dm_h025_fam2_seed1_followup_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -15478,6 +15479,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The primary runner calls measure_dm over the stated strengths and prints values matching the note; the helper path shown instantiates the lattice growth, wave solve, beam propagation, and history comparison rather than importing the contested conclusion. Within the restricted packet, the stated null, sign pattern, and weak-field scaling summary follow from the completed runner output.
 - **rationale:** The source note's load-bearing numerical claim is supported by a completed runner with exit code 0, and the printed rows match the note's table and summary. The primary runner does not hard-code the contested output values; it delegates to measure_dm and computes null size, sign pattern, and scaled spread from returned rows. No cited upstream authority is needed for this bounded control-ladder claim, and the note explicitly avoids broader family-pair portability claims.
 - **auditor confidence:** medium
+
+### `wave_direct_dm_h025_fam2_seed1_followup_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical follow-up for one selected direct-dM replay: Fam2, seed 1, H=0.25, S=0.004 has dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03% in the archived target log; the note compares that selected late-gain value to earlier coarse seed-1 rows and excludes a portability or amplitude-law claim.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The H=0.25 late gain +0.002037 is numerically close to the coarse Fam2 seed-1 late gains +0.001937 and +0.002061, while the normalized R_hist shifts to -35.03%.  _(class `G`)_
+- **chain closes:** False — The archived target log supports the stated single replay values, and retained downstream control notes now carry the controlled Fam2 pair surface. This note's distinctive promotion depends on selected numerical comparison to earlier coarse points rather than a structural derivation or independent theorem.
+- **rationale:** Issue: the load-bearing retained read is a selected numerical match/ordering comparison across specific family, seed, H, and strength settings, not a theorem derived from retained inputs. Why this blocks: the target log verifies the point values, but closeness of late-gain scale to two earlier coarse rows and the cross-seed ordering are empirical replay comparisons with chosen settings. Repair target: make the controlled Fam2 pair synthesis or a broader pre-registered batch the claim surface, with runner arguments/caches tied exactly to each row. Claim boundary until fixed: cite this row only as an archived Fam2 seed-1 H=0.25 replay datapoint feeding the retained-bounded control/synthesis lane, not as an independent retained theorem or portability result.
+- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_fam2_two_point_synthesis_note`
 

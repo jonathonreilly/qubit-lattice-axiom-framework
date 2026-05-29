@@ -112,6 +112,20 @@ the parent (P1):
   the remaining residual; this note carries it forward as a strictly
   smaller named premise than the parent (P1).
 
+  **Correction pointer (2026-05-28; editorial cross-reference, reviewer
+  to decide).** The "robust non-zero indices ... generally require the
+  overlap-Dirac construction (Adams 2002)" attribution above is corrected
+  by
+  [`ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md`](ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md):
+  the Ginsparg-Wilson relation is sufficient but **not** necessary for a
+  lattice index. The demonstrable framework-internal obstruction on the
+  free/flat background is the `eps`-gap (`{eps, D} = 0` => `H(m)^2 =
+  K^2 + m^2 I` => `min|spec H(m)| = |m|` => spectral flow 0) together with
+  `chi = 0` (`A[1, U=1] = 0` by `+/-` pairing). So `(P1')` is correctly
+  stated as "exhibit a `chi != 0` / `Q != 0` background", not "import
+  overlap because no GW". This pointer does not alter the `(P1')` premise
+  text; the audit lane decides whether to fold the correction in.
+
 The relationship to the parent (P1) is:
 
 ```text

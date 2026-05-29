@@ -68774,11 +68774,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 19.533,
+      "load_bearing_score": 20.533,
       "load_bearing_step": "{M(phi), gamma_5} = 0, hence P_L M(phi) P_L = P_R M(phi) P_R = 0, and at axis inputs M(e_i) = Gamma_i while Xi_5 is not chiral off-diagonal.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "6e117d47f2f4b7b4ccbc0d2121fcb824dd399eeb7b52f7d17e4ca2b8967d9514",
       "note_path": "docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md",
       "notes_for_re_audit_if_any": "Second auditor should preserve the same boundary: clean only for the finite algebraic Dirac-structure core, not for the upstream Higgs-family existence, V_sel derivation, 3+1 chirality derivation, weak-axis convention, or neutrino normalization.",
@@ -138762,24 +138762,46 @@
       "verdict_rationale": null
     },
     "hw1_second_order_return_shape_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T04:02:13.336099+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "Exact finite-algebra Dirac-structure claim for the explicit Cl(4)/C^16 Gamma_i and gamma_5 packet: M(phi)=sum_i phi_i Gamma_i is chiral off-diagonal, has zero same-chirality blocks, reduces to Gamma_i at axis inputs, and excludes Xi_5 as a direct chiral off-diagonal Yukawa surface.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "positive_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "retained",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 14.195,
+        "runner_hash": "e3e9151abfa7429b30ad67195cbb3cc7a673d70af6b17246674f1f36eda609df",
+        "transitive_descendants": 292
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-hw1-shape-b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct dependencies supply the Gamma_1/T_1 retained surface and generation triplet basis. In the fixed-taste T_1 basis, Gamma_1 flips (1,0,0) to O0, (0,1,0) to (1,1,0), and (0,0,1) to (1,0,1); the remaining T_2 state (0,1,1) has no T_1 preimage under a Gamma_1 hop. Orthogonal diagonal projectors and linearity then force the affine diagonal formula.",
       "claim_id": "hw1_second_order_return_shape_theorem_note",
       "claim_scope": "Exact finite-matrix shape theorem on the retained C^16 Cl(3) x chirality carrier: for weak-axis Gamma_1 and the hw=1 generation/species basis, W=w_O0 P_O0 + w_a P_(1,1,0) + w_b P_(1,0,1) + w_c P_(0,1,1) gives diag(w_O0,w_a,w_b), with w_c absent; uniform weights give I_3. Physical charged-lepton mass values, positivity/normalization of weights, and derivation of the intermediate propagator weights are out of scope.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-29T03:56:16.737297+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-29T04:02:13.336099+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -138794,8 +138816,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-29T04:02:13.335818+00:00",
+          "auditor": "codex-audit-loop-fresh-hw1-shape-b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-matrix shape theorem on the retained C^16 Cl(3) x chirality carrier: for weak-axis Gamma_1 and the hw=1 generation/species basis, W=w_O0 P_O0 + w_a P_(1,1,0) + w_b P_(1,0,1) + w_c P_(0,1,1) gives diag(w_O0,w_a,w_b), with w_c absent; uniform weights give I_3. Physical charged-lepton mass values, positivity/normalization of weights, and derivation of the intermediate propagator weights are out of scope.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -138803,19 +138836,19 @@
         "three_generation_observable_theorem_note"
       ],
       "direct_in_degree": 12,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained",
       "load_bearing_score": 14.195,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The four single-projector identities P_T1 Gamma_1 P_X Gamma_1 P_T1 give diag(1,0,0), diag(0,1,0), diag(0,0,1), and zero for X=O0,(1,1,0),(1,0,1),(0,1,1), followed by linearity in W.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8bc5ce90bda3bbae3b796c75fd70b6ec58f7e6b17ba311d2990723648debf8e9",
       "note_path": "docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if the row is broadened to claim physical charged-lepton masses, positivity/normalization of weights, supplied weight values, weak-axis selection, or a retained primitive fixing the intermediate propagator weights.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -138902,16 +138935,30 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 76,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "primary_runner": {
+          "A": 19,
+          "B": 0,
+          "C": 0,
+          "D": 1,
+          "total_pass": 20
+        },
+        "robustness_runner": {
+          "A": 57,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "total_pass": 57
+        },
+        "total_pass": 77
       },
       "runner_path": "scripts/frontier_hw1_second_order_return_shape_theorem.py",
       "title": "hw=1 Second-Order-Return Shape Theorem",
       "transitive_descendants": 292,
-      "verdict_rationale": null
+      "verdict_rationale": "Second clean pass confirms the narrowed finite-matrix structural theorem. The result is only the affine projector/bit-flip identity on the retained carrier and retained generation/species surface; it does not derive charged-lepton masses, weight positivity, weight normalization, weak-axis selection, or a retained primitive fixing the three intermediate weights. One robustness PASS is informational, but the load-bearing single-hop/projector identities are independently checked and sufficient."
     },
     "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": {
       "audit_date": "2026-05-26T20:30:31.467501+00:00",
@@ -283063,11 +283110,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 49.364,
+      "load_bearing_score": 53.364,
       "load_bearing_step": "The projectors P_1, P_2, P_3 and powers of C3 generate every matrix unit: E_ij = P_i C3^k P_j for the unique k in {0,1,2} that maps X_j to X_i.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_no_go",
+      "max_descendant_status_rank": 100,
       "note_hash": "6d325d35f4da173d9af2e8eaf23c465f5c17adeaac400bd40af6874b11ae7ca7",
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
       "notes_for_re_audit_if_any": "Do not broaden this positive_theorem beyond the finite C^3 operator-algebra fact and quotient-preservation corollary. Any physical generation readout, species semantics, substrate necessity, mass hierarchy, CKM/PMNS closure, Grassmann construction, or full staggered-carrier realization must be audited separately.",

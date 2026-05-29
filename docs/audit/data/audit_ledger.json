@@ -100362,24 +100362,54 @@
       "verdict_rationale": "The runner and helper do not hard-code a physical coupling target; they check canonical generator embedding, trace Gram normalization, scalar-dilation failure, and finite-link logarithm reconstruction inside `SU(3)`. The source's strongest permissible conclusion is bounded and coordinate-level: `g_bare = 1` denotes the canonical finite-link generator normalization after the trace form is fixed. It does not claim a dynamical fixed point, a continuum gauge coupling, Wilson/beta normalization, a branch-global logarithm, or phenomenological coupling values. Residual risk is only scope drift in future wording, not failure of the bounded finite-link algebra presented here."
     },
     "g_bare_structural_normalization_theorem_note_2026-04-18": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T02:14:47.459134+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Assuming canonical Cl(3) connection normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, beta = 6, and the two retained_bounded 2026-05-03 repair rows, exact algebra gives g_bare^2 = 1 and hence g_bare = 1 on the positive-coupling branch.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "g_bare_derivation_note",
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 18.352,
+        "runner_hash": "012c6d47f31c15f41c45a91f34a0d6c6df2060bc5ef193068249174bba4cb3f9",
+        "transitive_descendants": 923
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-gpt-5.5-fresh-restricted-input-g-bare-structural-20260529",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Wilson coefficient relation and scalar-dilation Gram check close, but they do not derive the physical/action coefficient g = 1. The missing step is a theorem fixing the Wilson kinetic coefficient, rather than identifying g with the absence of a coordinate or generator rescaling.",
       "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
-      "claim_scope": null,
+      "claim_scope": "Bounded Wilson-surface normalization: with the standard Wilson plaquette action and canonical Tr(T_a T_b)=delta_ab/2 generators, the expansion gives beta = 2 N_c / g^2, and scalar generator dilations are not automorphisms of the fixed Gram basis; g = 1 is only the unrescaled-coordinate convention.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T02:14:47.459134+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -100390,19 +100420,19 @@
         "three_generation_observable_theorem_note"
       ],
       "direct_in_degree": 17,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 18.352,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note identifies the canonical unrescaled Cl(3) connection basis with g = 1, then applies beta = 2 N_c / g^2 to get beta = 6.",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "6bd0697450b63318460df822ee56000aaaaf781701c4cbb497598342b5a36747",
       "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit only if a new theorem derives the Wilson action coefficient or physical connection normalization, rather than defining g = 1 as the unrescaled coordinate choice; also correct the trace-vs-component factor wording.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -100644,16 +100674,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 59,
+        "B": 2,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 61
       },
       "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
       "title": "G_bare Structural Normalization: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain",
       "transitive_descendants": 923,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the Wilson expansion gives beta = 2 N_c / g^2 and the scalar-dilation Gram check excludes T_a -> lambda T_a as an automorphism of the fixed canonical basis, but the final g = 1 assignment identifies g with unrescaled Cl(3) connection coordinates rather than deriving a physical bare coupling. Why this blocks: fixing the generator basis does not by itself fix the Wilson kinetic coefficient or rule out a distinct normalization of the connection coefficients. Repair target: supply a theorem deriving the Wilson action coefficient or physical connection normalization from retained inputs, and correct the trace-vs-component factor wording in the matching line. Claim boundary until fixed: within the admitted Wilson-action surface, the coefficient relation and no-generator-dilation statement are bounded support; g = 1 remains a convention/renaming of the unrescaled coordinate choice."
     },
     "g_bare_two_ward_closure_note_2026-04-18": {
       "audit_date": null,

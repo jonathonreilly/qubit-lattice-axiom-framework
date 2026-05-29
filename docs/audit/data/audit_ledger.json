@@ -14325,7 +14325,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -21064,54 +21064,24 @@
       "verdict_rationale": null
     },
     "bridge_gap_hk_plaquette_closed_form_note_2026-05-06": {
-      "audit_date": "2026-05-26T00:00:00+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "bridge_gap_hk_time_derivation_note_2026-05-06": "Bounded leading-order small-U Wilson-to-heat-kernel Brownian-time matching: under canonical Tr(T_a T_b)=delta_ab/2, admitted Wilson/action-form and heat-kernel comparison assumptions, and canonical g_bare=1 with N_c=3, the matching gives t(beta)=2 N_c/beta=g_bare^2 and t(6)=1; no action-form uniqueness, finite-beta correction, thermodynamic plaquette, or bridge-gap closure is included.",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
-          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded."
-        },
-        "dep_claim_type": {
-          "bridge_gap_hk_time_derivation_note_2026-05-06": "bounded_theorem",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
-          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
-        },
-        "dep_effective_status": {
-          "bridge_gap_hk_time_derivation_note_2026-05-06": "retained_bounded",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
-          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
-        },
-        "deps": [
-          "bridge_gap_hk_time_derivation_note_2026-05-06",
-          "g_bare_structural_normalization_theorem_note_2026-04-18",
-          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
-          "su3_casimir_fundamental_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 8.68,
-        "runner_hash": "031a6de1c6a6c0453e1eeaed1b7f98d5e8adf1c341774f70b242e0546b6dd045",
-        "transitive_descendants": 144
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-bridge-gap-hk-plaquette-2026-05-26-fresh-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The derivation closes from the heat-kernel expansion, Schur orthogonality, Z_HK=1 normalization, and the retained-bounded Casimir value C2(1,0)=C2(0,1)=4/3. The beta=6 number then follows by importing the retained-bounded Block 01 input t(6)=1; Wilson and MC comparisons are explicitly non-load-bearing.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
-      "claim_scope": "Bounded SU(3) single-plaquette heat-kernel expectation: under the Block 01 Brownian-time matching surface and canonical fundamental Casimir C2=4/3, <(1/3) Re Tr U>_HK,1plaq(t)=exp(-2t/3), so at t(6)=1 it equals exp(-2/3); thermodynamic plaquette values, Wilson/HK action-form uniqueness, finite-beta corrections, and bridge-gap closure are excluded.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "bounded support theorem",
-      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -21122,34 +21092,97 @@
         "g_bare_structural_normalization_theorem_note_2026-04-18"
       ],
       "direct_in_degree": 3,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 8.757,
-      "load_bearing_step": "Combining Re Tr U = (chi_(1,0) + chi_(0,1))/2 with the heat-kernel character expansion and Schur orthogonality selects only lambda=(0,1),(1,0), giving integral Re Tr U P_t(U)dU = 3 exp(-2t/3) and hence <(1/3) Re Tr U> = exp(-2t/3).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "7a8a3993a7ba10057b316fae1ec3d01d248574580232b5053043fe7fb3ec92fa",
       "note_path": "docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check only the runner PASS-class split for the non-load-bearing Wilson/MC comparator lines; no repair target found for the bounded theorem.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-29T00:58:04.139264+00:00",
+          "audit_date": "2026-05-26T00:00:00+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "bridge_gap_hk_time_derivation_note_2026-05-06": "Bounded leading-order small-U Wilson-to-heat-kernel Brownian-time matching: under canonical Tr(T_a T_b)=delta_ab/2, admitted Wilson/action-form and heat-kernel comparison assumptions, and canonical g_bare=1 with N_c=3, the matching gives t(beta)=2 N_c/beta=g_bare^2 and t(6)=1; no action-form uniqueness, finite-beta correction, thermodynamic plaquette, or bridge-gap closure is included.",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+              "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded."
+            },
+            "dep_claim_type": {
+              "bridge_gap_hk_time_derivation_note_2026-05-06": "bounded_theorem",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
+              "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
+            },
+            "dep_effective_status": {
+              "bridge_gap_hk_time_derivation_note_2026-05-06": "retained_bounded",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
+              "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
+            },
+            "deps": [
+              "bridge_gap_hk_time_derivation_note_2026-05-06",
+              "g_bare_structural_normalization_theorem_note_2026-04-18",
+              "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+              "su3_casimir_fundamental_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 8.68,
+            "runner_hash": "031a6de1c6a6c0453e1eeaed1b7f98d5e8adf1c341774f70b242e0546b6dd045",
+            "transitive_descendants": 144
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-bridge-gap-hk-plaquette-2026-05-26-fresh-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The derivation closes from the heat-kernel expansion, Schur orthogonality, Z_HK=1 normalization, and the retained-bounded Casimir value C2(1,0)=C2(0,1)=4/3. The beta=6 number then follows by importing the retained-bounded Block 01 input t(6)=1; Wilson and MC comparisons are explicitly non-load-bearing.",
+          "claim_scope": "Bounded SU(3) single-plaquette heat-kernel expectation: under the Block 01 Brownian-time matching surface and canonical fundamental Casimir C2=4/3, <(1/3) Re Tr U>_HK,1plaq(t)=exp(-2t/3), so at t(6)=1 it equals exp(-2/3); thermodynamic plaquette values, Wilson/HK action-form uniqueness, finite-beta corrections, and bridge-gap closure are excluded.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:bridge_gap_hk_time_derivation_note_2026-05-06:retained_bounded->retained_pending_chain",
+          "load_bearing_step": "Combining Re Tr U = (chi_(1,0) + chi_(0,1))/2 with the heat-kernel character expansion and Schur orthogonality selects only lambda=(0,1),(1,0), giving integral Re Tr U P_t(U)dU = 3 exp(-2t/3) and hence <(1/3) Re Tr U> = exp(-2t/3).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check only the runner PASS-class split for the non-load-bearing Wilson/MC comparator lines; no repair target found for the bounded theorem.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 2,
+            "C": 0,
+            "D": 1,
+            "total_pass": 8
+          },
+          "verdict_rationale": "The exact two-character statement follows directly from Schur orthogonality applied to the SU(3) heat-kernel character expansion: all higher representations vanish against Re Tr U, and the fundamental/conjugate-fundamental pair gives exp(-2t/3) after dividing by N_c=3. The t(6)=1 substitution is supplied by a retained-bounded dependency, so the exp(-2/3) specialization is clean within the bounded surface. Residual risk lies outside the audited claim: thermodynamic multi-plaquette evaluation and action-form uniqueness are not closed here."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 5,
-        "B": 2,
+        "A": 0,
+        "B": 0,
         "C": 0,
-        "D": 1,
-        "total_pass": 8
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/probe_hk_plaquette_closed_form.py",
       "title": "Bridge Gap \u2014 Single-Plaquette Heat-Kernel Closed Form (Block 02)",
       "transitive_descendants": 152,
-      "verdict_rationale": "The exact two-character statement follows directly from Schur orthogonality applied to the SU(3) heat-kernel character expansion: all higher representations vanish against Re Tr U, and the fundamental/conjugate-fundamental pair gives exp(-2t/3) after dividing by N_c=3. The t(6)=1 substitution is supplied by a retained-bounded dependency, so the exp(-2/3) specialization is clean within the bounded surface. Residual risk lies outside the audited claim: thermodynamic multi-plaquette evaluation and action-form uniqueness are not closed here."
+      "verdict_rationale": null
     },
     "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06": {
       "audit_date": null,
@@ -21208,54 +21241,24 @@
       "verdict_rationale": null
     },
     "bridge_gap_hk_time_derivation_note_2026-05-06": {
-      "audit_date": "2026-05-26T00:00:00+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given admitted Wilson canonical-normalization g_bare = 1, the standard Wilson \u03b2 relation/field-strength rescaling, and retained graph-first SU(3) giving N_c = 3, \u03b2 = 6 and F^lattice = \u03a9^Cl(3) within the stated lattice expansion.",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
-          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded."
-        },
-        "dep_claim_type": {
-          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
-          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
-        },
-        "dep_effective_status": {
-          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
-          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
-          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
-        },
-        "deps": [
-          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
-          "g_bare_structural_normalization_theorem_note_2026-04-18",
-          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
-          "su3_casimir_fundamental_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 8.19,
-        "runner_hash": "bd38846f35d4a83ce3076e5e0e92e6108fb3ed8d6395b4ff8e7a3798b8aa543d",
-        "transitive_descendants": 145
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-bridge-gap-hk-time-2026-05-26-fresh-auditor",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Within the stated bounded surface, the conclusion follows by ordinary algebra from the canonical trace/norm relation, the Wilson small-U quadratic coefficient, and the standard local heat-kernel Gaussian asymptotic on a compact Lie group. The standard Brownian-motion/heat-kernel facts are acceptable mathematical machinery here because they are used only for the local asymptotic matching, not to import a physical action-choice or thermodynamic bridge.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "bridge_gap_hk_time_derivation_note_2026-05-06",
-      "claim_scope": "Bounded leading-order small-U Wilson-to-heat-kernel Brownian-time matching: under canonical Tr(T_a T_b)=delta_ab/2, admitted Wilson/action-form and heat-kernel comparison assumptions, and canonical g_bare=1 with N_c=3, the matching gives t(beta)=2 N_c/beta=g_bare^2 and t(6)=1; no action-form uniqueness, finite-beta correction, thermodynamic plaquette, or bridge-gap closure is included.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "bounded support theorem",
-      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -21266,34 +21269,97 @@
         "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
       ],
       "direct_in_degree": 2,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.267,
-      "load_bearing_step": "Set the Wilson quadratic coefficient equal to the heat-kernel quadratic coefficient, (beta/(4 N_c))|X|^2 = |X|^2/(2t), hence t = 2 N_c / beta = g_bare^2 and t(6)=1.",
-      "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 8.267,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "9d969370e7b8f7b3642b7f298f20edf8154498a0c9fa2a31973dc3569e948e87",
       "note_path": "docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md",
-      "notes_for_re_audit_if_any": "Second auditor should preserve the bounded scope: this verdict does not certify heat-kernel action-form selection, finite-beta corrections, thermodynamic-limit plaquette values, or the full bridge gap.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-29T00:58:04.139512+00:00",
+          "audit_date": "2026-05-26T00:00:00+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given admitted Wilson canonical-normalization g_bare = 1, the standard Wilson \u03b2 relation/field-strength rescaling, and retained graph-first SU(3) giving N_c = 3, \u03b2 = 6 and F^lattice = \u03a9^Cl(3) within the stated lattice expansion.",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+              "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded."
+            },
+            "dep_claim_type": {
+              "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
+              "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
+            },
+            "dep_effective_status": {
+              "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
+              "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
+              "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
+            },
+            "deps": [
+              "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+              "g_bare_structural_normalization_theorem_note_2026-04-18",
+              "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+              "su3_casimir_fundamental_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 8.19,
+            "runner_hash": "bd38846f35d4a83ce3076e5e0e92e6108fb3ed8d6395b4ff8e7a3798b8aa543d",
+            "transitive_descendants": 145
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-bridge-gap-hk-time-2026-05-26-fresh-auditor",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Within the stated bounded surface, the conclusion follows by ordinary algebra from the canonical trace/norm relation, the Wilson small-U quadratic coefficient, and the standard local heat-kernel Gaussian asymptotic on a compact Lie group. The standard Brownian-motion/heat-kernel facts are acceptable mathematical machinery here because they are used only for the local asymptotic matching, not to import a physical action-choice or thermodynamic bridge.",
+          "claim_scope": "Bounded leading-order small-U Wilson-to-heat-kernel Brownian-time matching: under canonical Tr(T_a T_b)=delta_ab/2, admitted Wilson/action-form and heat-kernel comparison assumptions, and canonical g_bare=1 with N_c=3, the matching gives t(beta)=2 N_c/beta=g_bare^2 and t(6)=1; no action-form uniqueness, finite-beta correction, thermodynamic plaquette, or bridge-gap closure is included.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:g_bare_structural_normalization_theorem_note_2026-04-18:retained_bounded->unaudited",
+          "load_bearing_step": "Set the Wilson quadratic coefficient equal to the heat-kernel quadratic coefficient, (beta/(4 N_c))|X|^2 = |X|^2/(2t), hence t = 2 N_c / beta = g_bare^2 and t(6)=1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should preserve the bounded scope: this verdict does not certify heat-kernel action-form selection, finite-beta corrections, thermodynamic-limit plaquette values, or the full bridge gap.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 7,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "The source is explicit that this is only a leading-order bounded matching theorem and not a resolution of the bridge gap, action-form uniqueness, finite-beta corrections, or thermodynamic plaquette behavior. The load-bearing calculation is a class-A coefficient match, and the cited retained-bounded/decoration inputs supply the canonical normalization and N_c=3 surface needed for the scoped result. The runner corroborates the algebraic normalization, small-U expansion, t(beta)=2N_c/beta, and t(6)=1 checks; its heat-kernel plaquette preview is non-load-bearing and does not introduce an external comparator. No hidden fitted value or physical observable bridge is used inside the audited scope."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 7,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/probe_hk_time_derivation.py",
       "title": "Bridge Gap \u2014 Heat-Kernel Time from Canonical Cl(3) Tr-Form (Block 01)",
       "transitive_descendants": 153,
-      "verdict_rationale": "The source is explicit that this is only a leading-order bounded matching theorem and not a resolution of the bridge gap, action-form uniqueness, finite-beta corrections, or thermodynamic plaquette behavior. The load-bearing calculation is a class-A coefficient match, and the cited retained-bounded/decoration inputs supply the canonical normalization and N_c=3 surface needed for the scoped result. The runner corroborates the algebraic normalization, small-U expansion, t(beta)=2N_c/beta, and t(6)=1 checks; its heat-kernel plaquette preview is non-load-bearing and does not introduce an external comparator. No hidden fitted value or physical observable bridge is used inside the audited scope."
+      "verdict_rationale": null
     },
     "bridge_lanes_promotion_proposal_note_2026-05-10_lanes": {
       "audit_date": null,
@@ -52525,7 +52591,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -68550,11 +68616,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 20.533,
+      "load_bearing_score": 19.533,
       "load_bearing_step": "{M(phi), gamma_5} = 0, hence P_L M(phi) P_L = P_R M(phi) P_R = 0, and at axis inputs M(e_i) = Gamma_i while Xi_5 is not chiral off-diagonal.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_no_go",
-      "max_descendant_status_rank": 100,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "6e117d47f2f4b7b4ccbc0d2121fcb824dd399eeb7b52f7d17e4ca2b8967d9514",
       "note_path": "docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md",
       "notes_for_re_audit_if_any": "Second auditor should preserve the same boundary: clean only for the finite algebraic Dirac-structure core, not for the upstream Higgs-family existence, V_sel derivation, 3+1 chirality derivation, weak-axis convention, or neutrino normalization.",
@@ -97311,11 +97377,11 @@
         "g_bare_structural_normalization_theorem_note_2026-04-18"
       ],
       "direct_in_degree": 14,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status": "retained_pending_chain",
+      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:chain_waiting_on:g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
       "helper_runner_paths": [],
       "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "intrinsic_status": "retained_pending_chain",
       "load_bearing_score": 14.748,
       "load_bearing_step": "Relative to the retained-bounded Wilson/canonical-normalization surface and the admitted N_F=1/2 Hilbert-Schmidt scalar, beta=2N_c=6 and beta=2N_c/g_bare^2 force g_bare^2=1, so g_bare is an L4 constraint rather than a second convention layer.",
       "load_bearing_step_class": "A",
@@ -98769,11 +98835,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.311,
+      "load_bearing_score": 10.311,
       "load_bearing_step": "Substitute F_Htt^(0)(g_bare)=1/sqrt(6) into F_Htt^(0)(g_bare)^2=g_bare^2/(2 N_c); at N_c=3 this gives 1/6=g_bare^2/6, hence g_bare^2=1 and on the positive branch g_bare=1.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "ebcaff01edcec5c97fb96603a16a3ba833422209d9c00fd04e8996c46d0d20a2",
       "note_path": "docs/G_BARE_FORCED_BY_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-05-09.md",
       "notes_for_re_audit_if_any": "Re-audit if the same-1PI pinning dependency loses retained_bounded status, if its inherited H_unit-residue bounded premise is retired or reclassified, or if this source broadens beyond the W1-plus-W2 algebraic scope.",
@@ -98945,93 +99011,45 @@
       "verdict_rationale": "The bounded claim is clean because it does not promote W2's admitted bridge into an unconditional proved physical identity. It only performs the narrow substitution W1 + W2 + AN + NC, and the stated scope explicitly excludes deriving W1, W2, N_c, physical readouts, or comparators. Admission gate passed: the W2 bridge admission is explicit, localized inside the retained_bounded W2 dependency, and preserved as inherited bounded content rather than hidden in the downstream algebraic conclusion."
     },
     "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": {
-      "audit_date": "2026-05-28T02:21:32.215748+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
-          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can."
-        },
-        "dep_claim_type": {
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
-          "physical_lattice_necessity_note": "no_go"
-        },
-        "dep_effective_status": {
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
-          "physical_lattice_necessity_note": "retained_no_go"
-        },
-        "deps": [
-          "g_bare_structural_normalization_theorem_note_2026-04-18",
-          "physical_lattice_necessity_note"
-        ],
-        "load_bearing_score": 21.714,
-        "runner_hash": "5b82fa4436749f0be366622db1fe08682dce5061745b71e9486821588361c6e7",
-        "transitive_descendants": 209
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop-fresh-context-g-bare-hs-rigidity-20260528-r2",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Fresh-context check confirms su(3) is simple, so invariant symmetric bilinear forms are one-dimensional; with Tr(T_a T_b)=N_F delta_ab, Schur centrality gives sum_a T_aT_a=C_F I_3 and tracing gives 3C_F=8N_F. Scaling by real c multiplies both invariants by c^2, so joint preservation is exactly c=+/-1.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": "R1-R3 only: fixed Hilbert-Schmidt form on the canonical su(3) triplet block, invariant-form uniqueness up to scalar, and scalar-dilation trace/Casimir rigidity c=+/-1.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-28T02:21:32.215748+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-28T02:17:46.787564+00:00",
-          "auditor": "codex-audit-loop",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded R1-R3 algebraic core: for a fixed Hilbert-Schmidt form on the canonical su(3) triplet block, the Ad-invariant form is unique up to scalar, and scalar dilation T_a -> c T_a preserves both the trace Gram and quadratic Casimir only for c = +/-1; connection-rescaling and Wilson-routing observations are out of scope.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-28T02:21:32.215597+00:00",
-          "auditor": "codex-audit-loop-fresh-context-g-bare-hs-rigidity-20260528-r2",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "R1-R3 only: fixed Hilbert-Schmidt form on the canonical su(3) triplet block, invariant-form uniqueness up to scalar, and scalar-dilation trace/Casimir rigidity c=+/-1.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "physical_lattice_necessity_note",
         "g_bare_structural_normalization_theorem_note_2026-04-18"
       ],
       "direct_in_degree": 28,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 24.762,
-      "load_bearing_step": "For T_a -> c T_a, both B_HS(T_a,T_b) and sum_a T_a T_a scale by c^2, so preserving the fixed trace Gram and quadratic Casimir forces c^2=1.",
-      "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 21.762,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "6411eaf1f489953af3469541f05c4814fc1000d419bbaebd27f2b46ad008ec1a",
       "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "notes_for_re_audit_if_any": "No re-audit needed unless the source promotes R4/R5 connection or Wilson-routing observations into load-bearing claims.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -99141,22 +99159,102 @@
             "total_pass": 67
           },
           "verdict_rationale": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation."
+        },
+        {
+          "archived_at": "2026-05-29T00:58:04.152141+00:00",
+          "audit_date": "2026-05-28T02:21:32.215748+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+              "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can."
+            },
+            "dep_claim_type": {
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
+              "physical_lattice_necessity_note": "no_go"
+            },
+            "dep_effective_status": {
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
+              "physical_lattice_necessity_note": "retained_no_go"
+            },
+            "deps": [
+              "g_bare_structural_normalization_theorem_note_2026-04-18",
+              "physical_lattice_necessity_note"
+            ],
+            "load_bearing_score": 21.714,
+            "runner_hash": "5b82fa4436749f0be366622db1fe08682dce5061745b71e9486821588361c6e7",
+            "transitive_descendants": 209
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop-fresh-context-g-bare-hs-rigidity-20260528-r2",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Fresh-context check confirms su(3) is simple, so invariant symmetric bilinear forms are one-dimensional; with Tr(T_a T_b)=N_F delta_ab, Schur centrality gives sum_a T_aT_a=C_F I_3 and tracing gives 3C_F=8N_F. Scaling by real c multiplies both invariants by c^2, so joint preservation is exactly c=+/-1.",
+          "claim_scope": "R1-R3 only: fixed Hilbert-Schmidt form on the canonical su(3) triplet block, invariant-form uniqueness up to scalar, and scalar-dilation trace/Casimir rigidity c=+/-1.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T02:21:32.215748+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-28T02:17:46.787564+00:00",
+              "auditor": "codex-audit-loop",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded R1-R3 algebraic core: for a fixed Hilbert-Schmidt form on the canonical su(3) triplet block, the Ad-invariant form is unique up to scalar, and scalar dilation T_a -> c T_a preserves both the trace Gram and quadratic Casimir only for c = +/-1; connection-rescaling and Wilson-routing observations are out of scope.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-28T02:21:32.215597+00:00",
+              "auditor": "codex-audit-loop-fresh-context-g-bare-hs-rigidity-20260528-r2",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "R1-R3 only: fixed Hilbert-Schmidt form on the canonical su(3) triplet block, invariant-form uniqueness up to scalar, and scalar-dilation trace/Casimir rigidity c=+/-1.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:g_bare_structural_normalization_theorem_note_2026-04-18:retained_bounded->unaudited",
+          "load_bearing_step": "For T_a -> c T_a, both B_HS(T_a,T_b) and sum_a T_a T_a scale by c^2, so preserving the fixed trace Gram and quadratic Casimir forces c^2=1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "No re-audit needed unless the source promotes R4/R5 connection or Wilson-routing observations into load-bearing claims.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 24,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_fail": 0,
+            "total_pass": 24
+          },
+          "verdict_rationale": "The scoped R1-R3 trace/Casimir rigidity closes. This does not ratify physical connection equivalence, Wilson routing, N_F=1/2 derivation, running/fixed-point selection, or absolute g_bare=1 from A1+A2; c=-1 is only metric/Casimir-preserving within this scalar-dilation check, not a new Lie-bracket automorphism claim."
         }
       ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 24,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_fail": 0,
-        "total_pass": 24
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
       "title": "g_bare Hilbert\u2013Schmidt Rigidity Theorem (R1\u2013R3 Bounded Algebraic Core)",
       "transitive_descendants": 216,
-      "verdict_rationale": "The scoped R1-R3 trace/Casimir rigidity closes. This does not ratify physical connection equivalence, Wilson routing, N_F=1/2 derivation, running/fixed-point selection, or absolute g_bare=1 from A1+A2; c=-1 is only metric/Casimir-preserving within this scalar-dilation check, not a new Lie-bracket automorphism claim."
+      "verdict_rationale": null
     },
     "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17": {
       "audit_date": null,
@@ -99829,11 +99927,11 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 16.312,
+      "load_bearing_score": 13.312,
       "load_bearing_step": "By the finite-link bridge `(HF)`, each finite `SU(3)` link holonomy admits the coefficient-vector expression `U = exp(i A^a T_a a)` in the fixed canonical generator basis; by clauses 1-4, that basis carries no further scalar-normalization freedom within the fixed trace form.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "a9d3a45950911f285fb44224dfd53e9f21ceef98b4bf67af683c01064045497f",
       "note_path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
       "notes_for_re_audit_if_any": "No-go/admission gate applied as a scope check: the current claim does not ship a no-go or independent wall list, and historical admissions are either retired for finite links or explicitly excluded from the audited scope. A later audit should re-check if future text promotes the finite-link coordinate statement into continuum, Wilson/beta, global-branch, or phenomenological coupling normalization.",
@@ -100207,82 +100305,26 @@
       "verdict_rationale": "The runner and helper do not hard-code a physical coupling target; they check canonical generator embedding, trace Gram normalization, scalar-dilation failure, and finite-link logarithm reconstruction inside `SU(3)`. The source's strongest permissible conclusion is bounded and coordinate-level: `g_bare = 1` denotes the canonical finite-link generator normalization after the trace form is fixed. It does not claim a dynamical fixed point, a continuum gauge coupling, Wilson/beta normalization, a branch-global logarithm, or phenomenological coupling values. Residual risk is only scope drift in future wording, not failure of the bounded finite-link algebra presented here."
     },
     "g_bare_structural_normalization_theorem_note_2026-04-18": {
-      "audit_date": "2026-05-26T17:06:21.216121+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "g_bare_derivation_note": "Assuming canonical Cl(3) connection normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, beta = 6, and the two retained_bounded 2026-05-03 repair rows, exact algebra gives g_bare^2 = 1 and hence g_bare = 1 on the positive-coupling branch.",
-          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
-          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
-          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
-        },
-        "dep_claim_type": {
-          "g_bare_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "positive_theorem",
-          "native_gauge_closure_note": "positive_theorem",
-          "three_generation_observable_theorem_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "g_bare_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained",
-          "native_gauge_closure_note": "retained",
-          "three_generation_observable_theorem_note": "retained_bounded"
-        },
-        "deps": [
-          "g_bare_derivation_note",
-          "graph_first_su3_integration_note",
-          "native_gauge_closure_note",
-          "three_generation_observable_theorem_note"
-        ],
-        "load_bearing_score": 18.315,
-        "runner_hash": "012c6d47f31c15f41c45a91f34a0d6c6df2060bc5ef193068249174bba4cb3f9",
-        "transitive_descendants": 900
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-gpt-5.5-fresh-g-bare-structural-normalization-second-C75Ktt-2026-05-26",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The direct dependencies supplied in the packet are retained-grade or retained_bounded, and the note explicitly treats the Wilson action form and kinetic matching convention as admitted bounded premises rather than hidden derivations. Within that admitted surface, the trace-Gram/scalar-dilation and Wilson-coefficient steps close without importing a downstream plaquette-evaluation result.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
-      "claim_scope": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-26T17:06:21.216121+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-26T17:01:15.066473+00:00",
-          "auditor": "codex-gpt-5.5-fresh-g-bare-structural-normalization-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded structural-normalization support on the admitted SU(3) Wilson-evaluation surface: retained/retained_bounded Cl(3)->End(V)->su(3) inputs plus canonical trace normalization exclude residual scalar generator dilation and force beta=2 N_c/g^2, hence beta=6 when the canonical connection is read with g=1. This does not derive the Wilson action form, action-choice uniqueness, continuum dynamics, running coupling, or downstream phenomenology.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-26T17:06:21.215531+00:00",
-          "auditor": "codex-gpt-5.5-fresh-g-bare-structural-normalization-second-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "g_bare_derivation_note",
@@ -100291,19 +100333,19 @@
         "three_generation_observable_theorem_note"
       ],
       "direct_in_degree": 17,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 21.352,
-      "load_bearing_step": "Given the admitted Wilson plaquette action and canonical generators with Tr(T_a T_b)=delta_ab/2, the small-a matching gives beta=2 N_c/g^2; in the canonical Cl(3)-normalized basis scalar generator dilation is not admissible, so g=1 and beta=6 for SU(3).",
-      "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 18.352,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "6bd0697450b63318460df822ee56000aaaaf781701c4cbb497598342b5a36747",
       "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
-      "notes_for_re_audit_if_any": "Re-audit if this row is later cited as deriving the Wilson plaquette action itself, as a dynamical fixed-point/running-coupling result, or outside the admitted Wilson/canonical-normalization surface.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -100452,107 +100494,131 @@
             "total_pass": 61
           },
           "verdict_rationale": "The runner performs real finite-dimensional checks for Clifford relations, standard Gell-Mann trace normalization, Gram scaling under T -> lambda T, and the standard small-a Wilson coefficient. But the load-bearing step canonical g = 1 is not computed from those checks: the code sets g2_canonical = 1.0 and then evaluates beta, while the note equates absence of generator rescaling with the physical coupling convention. The Wilson action form is also explicitly admitted rather than derived, and docs/G_BARE_DERIVATION_NOTE.md contains open-gate language about this identification. Thus the result is a bounded normalization/notation identification, not a derivation of g_bare from the cited inputs."
+        },
+        {
+          "archived_at": "2026-05-29T00:57:35.049250+00:00",
+          "audit_date": "2026-05-26T17:06:21.216121+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "g_bare_derivation_note": "Assuming canonical Cl(3) connection normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, beta = 6, and the two retained_bounded 2026-05-03 repair rows, exact algebra gives g_bare^2 = 1 and hence g_bare = 1 on the positive-coupling branch.",
+              "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+              "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+              "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+            },
+            "dep_claim_type": {
+              "g_bare_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "positive_theorem",
+              "native_gauge_closure_note": "positive_theorem",
+              "three_generation_observable_theorem_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "g_bare_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained",
+              "native_gauge_closure_note": "retained",
+              "three_generation_observable_theorem_note": "retained_bounded"
+            },
+            "deps": [
+              "g_bare_derivation_note",
+              "graph_first_su3_integration_note",
+              "native_gauge_closure_note",
+              "three_generation_observable_theorem_note"
+            ],
+            "load_bearing_score": 18.315,
+            "runner_hash": "012c6d47f31c15f41c45a91f34a0d6c6df2060bc5ef193068249174bba4cb3f9",
+            "transitive_descendants": 900
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-structural-normalization-second-C75Ktt-2026-05-26",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The direct dependencies supplied in the packet are retained-grade or retained_bounded, and the note explicitly treats the Wilson action form and kinetic matching convention as admitted bounded premises rather than hidden derivations. Within that admitted surface, the trace-Gram/scalar-dilation and Wilson-coefficient steps close without importing a downstream plaquette-evaluation result.",
+          "claim_scope": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T17:06:21.216121+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-26T17:01:15.066473+00:00",
+              "auditor": "codex-gpt-5.5-fresh-g-bare-structural-normalization-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded structural-normalization support on the admitted SU(3) Wilson-evaluation surface: retained/retained_bounded Cl(3)->End(V)->su(3) inputs plus canonical trace normalization exclude residual scalar generator dilation and force beta=2 N_c/g^2, hence beta=6 when the canonical connection is read with g=1. This does not derive the Wilson action form, action-choice uniqueness, continuum dynamics, running coupling, or downstream phenomenology.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-26T17:06:21.215531+00:00",
+              "auditor": "codex-gpt-5.5-fresh-g-bare-structural-normalization-second-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_claim_type_changed:three_generation_observable_theorem_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "Given the admitted Wilson plaquette action and canonical generators with Tr(T_a T_b)=delta_ab/2, the small-a matching gives beta=2 N_c/g^2; in the canonical Cl(3)-normalized basis scalar generator dilation is not admissible, so g=1 and beta=6 for SU(3).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-audit if this row is later cited as deriving the Wilson plaquette action itself, as a dynamical fixed-point/running-coupling result, or outside the admitted Wilson/canonical-normalization surface.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 59,
+            "B": 2,
+            "C": 0,
+            "D": 0,
+            "total_pass": 61
+          },
+          "verdict_rationale": "The source does not inflate the result into a full dynamical derivation: it repeatedly preserves the bounded Wilson-action/canonical-normalization scope and names the action-choice gap. The runner cache is current and clean, with exact PASS=59, bounded PASS=2, total PASS=61, FAIL=0; the bounded PASS lines mark the admitted Wilson/action-form and upstream structural inputs rather than hiding them. The runner checks the load-bearing algebraic chain, including canonical Gram rigidity, scalar-dilation failure, the Wilson small-a coefficient, and beta=2 N_c/g^2 leading to beta=6 at canonical g=1. No open one-hop dependency or downstream circular beta input is needed for the scoped claim."
         }
       ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 59,
-        "B": 2,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 61
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
       "title": "G_bare Structural Normalization: Cl(3) -> End(V) -> su(3) -> Wilson Action Chain",
       "transitive_descendants": 923,
-      "verdict_rationale": "The source does not inflate the result into a full dynamical derivation: it repeatedly preserves the bounded Wilson-action/canonical-normalization scope and names the action-choice gap. The runner cache is current and clean, with exact PASS=59, bounded PASS=2, total PASS=61, FAIL=0; the bounded PASS lines mark the admitted Wilson/action-form and upstream structural inputs rather than hiding them. The runner checks the load-bearing algebraic chain, including canonical Gram rigidity, scalar-dilation failure, the Wilson small-a coefficient, and beta=2 N_c/g^2 leading to beta=6 at canonical g=1. No open one-hop dependency or downstream circular beta input is needed for the scoped claim."
+      "verdict_rationale": null
     },
     "g_bare_two_ward_closure_note_2026-04-18": {
-      "audit_date": "2026-05-26T19:02:03.777836+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09": "Bounded Ward-route algebra: given the retained_bounded Ward Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity on the same Q_L block, the unique positive bare coupling satisfying both at N_c=3 is g_bare=1; no continuum, Wilson-phenomenological, top-Yukawa readout, physical coupling normalization, or independent derivation of the same-1PI bridge is audited here.",
-          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
-          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "Conditional algebraic pinning of g_bare=1 on Q_L from retained Rep-B independence plus the explicitly admitted H_unit-residue identification of Rep B with the complete same-projected 1PI coefficient; the same-projected 1PI exhaustion bridge itself is not audited as proved.",
-          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
-        },
-        "dep_claim_type": {
-          "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09": "bounded_theorem",
-          "g_bare_rigidity_theorem_note": "bounded_theorem",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
-          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "bounded_theorem",
-          "yt_ward_identity_derivation_theorem": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09": "retained_bounded",
-          "g_bare_rigidity_theorem_note": "retained_bounded",
-          "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
-          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "retained_bounded",
-          "yt_ward_identity_derivation_theorem": "retained_bounded"
-        },
-        "deps": [
-          "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09",
-          "g_bare_rigidity_theorem_note",
-          "g_bare_structural_normalization_theorem_note_2026-04-18",
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
-          "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
-          "yt_ward_identity_derivation_theorem"
-        ],
-        "load_bearing_score": 13.271,
-        "runner_hash": "306472fc90e3117c16f7a04ce0c822990e138d778de19b82cbb133f9d90d5534",
-        "transitive_descendants": 873
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-closure-second-C75Ktt-2026-05-26",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The chain closes only at bounded-theorem scope. The local algebra follows from retained_bounded one-hop authorities, but the H_unit-residue admission inherited through the same-1PI pinning input prevents honest classification as an unbounded positive theorem.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "g_bare_two_ward_closure_note_2026-04-18",
-      "claim_scope": "Bounded Ward-route algebra on the retained Q_L block: given the retained_bounded Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity, including its H_unit-residue admission, the unique positive bare coupling is g_bare = 1 at N_c = 3. This does not assert an admission-free physical coupling, SM top-Yukawa readout, continuum limit, Wilson-action choice, or phenomenological normalization.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem (in-note algebra) under upstream-conditional",
-      "claim_type_last_reviewed": "2026-05-26T19:02:03.777836+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-26T18:57:32.933901+00:00",
-          "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-closure-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded Ward-route closure: given the retained_bounded Rep-B independence identity and retained_bounded same-1PI pinning identity on the Q_L block, the unique positive g_bare consistent with both at N_c=3 is g_bare=1.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-26T19:02:03.777636+00:00",
-          "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-closure-second-C75Ktt-2026-05-26",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded Ward-route algebra on the retained Q_L block: given the retained_bounded Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity, including its H_unit-residue admission, the unique positive bare coupling is g_bare = 1 at N_c = 3. This does not assert an admission-free physical coupling, SM top-Yukawa readout, continuum limit, Wilson-action choice, or phenomenological normalization.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
@@ -100563,19 +100629,19 @@
         "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09"
       ],
       "direct_in_degree": 6,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 12.809,
-      "load_bearing_step": "Substitute F_Htt^(0)(g_bare) = 1/sqrt(6) into F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c) with N_c = 3, giving g_bare^2 = 1 and the positive-branch solution g_bare = 1.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "4e3be1a58ddc3a71d2000c8eaa363d79c4aca218666f45d2a5d58e2c88b733e3",
       "note_path": "docs/G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md",
-      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve bounded scope and do not cite this row as an admission-free physical coupling, SM top-Yukawa readout, or continuum/Wilson normalization theorem.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -100634,6 +100700,102 @@
             "total_pass": 18
           },
           "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md, G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md, YT_WARD_IDENTITY_DERIVATION_THEOREM.md, G_BARE_RIGIDITY_THEOREM_NOTE.md, G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+        },
+        {
+          "archived_at": "2026-05-29T00:57:35.049540+00:00",
+          "audit_date": "2026-05-26T19:02:03.777836+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09": "Bounded Ward-route algebra: given the retained_bounded Ward Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity on the same Q_L block, the unique positive bare coupling satisfying both at N_c=3 is g_bare=1; no continuum, Wilson-phenomenological, top-Yukawa readout, physical coupling normalization, or independent derivation of the same-1PI bridge is audited here.",
+              "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+              "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "Conditional algebraic pinning of g_bare=1 on Q_L from retained Rep-B independence plus the explicitly admitted H_unit-residue identification of Rep B with the complete same-projected 1PI coefficient; the same-projected 1PI exhaustion bridge itself is not audited as proved.",
+              "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+            },
+            "dep_claim_type": {
+              "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09": "bounded_theorem",
+              "g_bare_rigidity_theorem_note": "bounded_theorem",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+              "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "bounded_theorem",
+              "yt_ward_identity_derivation_theorem": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09": "retained_bounded",
+              "g_bare_rigidity_theorem_note": "retained_bounded",
+              "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+              "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19": "retained_bounded",
+              "yt_ward_identity_derivation_theorem": "retained_bounded"
+            },
+            "deps": [
+              "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09",
+              "g_bare_rigidity_theorem_note",
+              "g_bare_structural_normalization_theorem_note_2026-04-18",
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+              "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
+              "yt_ward_identity_derivation_theorem"
+            ],
+            "load_bearing_score": 13.271,
+            "runner_hash": "306472fc90e3117c16f7a04ce0c822990e138d778de19b82cbb133f9d90d5534",
+            "transitive_descendants": 873
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-closure-second-C75Ktt-2026-05-26",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The chain closes only at bounded-theorem scope. The local algebra follows from retained_bounded one-hop authorities, but the H_unit-residue admission inherited through the same-1PI pinning input prevents honest classification as an unbounded positive theorem.",
+          "claim_scope": "Bounded Ward-route algebra on the retained Q_L block: given the retained_bounded Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity, including its H_unit-residue admission, the unique positive bare coupling is g_bare = 1 at N_c = 3. This does not assert an admission-free physical coupling, SM top-Yukawa readout, continuum limit, Wilson-action choice, or phenomenological normalization.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-26T19:02:03.777836+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-26T18:57:32.933901+00:00",
+              "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-closure-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded Ward-route closure: given the retained_bounded Rep-B independence identity and retained_bounded same-1PI pinning identity on the Q_L block, the unique positive g_bare consistent with both at N_c=3 is g_bare=1.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-26T19:02:03.777636+00:00",
+              "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-closure-second-C75Ktt-2026-05-26",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded Ward-route algebra on the retained Q_L block: given the retained_bounded Rep-B form-factor identity and the retained_bounded same-1PI coefficient identity, including its H_unit-residue admission, the unique positive bare coupling is g_bare = 1 at N_c = 3. This does not assert an admission-free physical coupling, SM top-Yukawa readout, continuum limit, Wilson-action choice, or phenomenological normalization.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:g_bare_structural_normalization_theorem_note_2026-04-18:retained_bounded->unaudited",
+          "load_bearing_step": "Substitute F_Htt^(0)(g_bare) = 1/sqrt(6) into F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c) with N_c = 3, giving g_bare^2 = 1 and the positive-branch solution g_bare = 1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check that downstream citations preserve bounded scope and do not cite this row as an admission-free physical coupling, SM top-Yukawa readout, or continuum/Wilson normalization theorem.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 16,
+            "B": 2,
+            "C": 0,
+            "D": 0,
+            "total_pass": 18
+          },
+          "verdict_rationale": "As a positive_theorem the note would overclaim: every load-bearing authority in the packet is retained_bounded, and the same-1PI pinning input carries the H_unit-residue admission. After narrowing to bounded_theorem scope, the closure is a genuine class-A algebraic consequence of the retained_bounded Ward inputs. The runner supports the arithmetic and checks textual presence of the Ward/pinning premises, but it does not independently derive the H_unit-residue exhaustion bridge."
         }
       ],
       "prose_corrections": [],
@@ -100641,16 +100803,16 @@
       "relabel_date": "2026-05-06T17:45:26.976868+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 16,
-        "B": 2,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 18
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_g_bare_two_ward_closure.py",
       "title": "Two-Representation Ward Closure on `g_bare`",
       "transitive_descendants": 896,
-      "verdict_rationale": "As a positive_theorem the note would overclaim: every load-bearing authority in the packet is retained_bounded, and the same-1PI pinning input carries the H_unit-residue admission. After narrowing to bounded_theorem scope, the closure is a genuine class-A algebraic consequence of the retained_bounded Ward inputs. The runner supports the arithmetic and checks textual presence of the Ward/pinning premises, but it does not independently derive the H_unit-residue exhaustion bridge."
+      "verdict_rationale": null
     },
     "g_bare_two_ward_h_unit_residue_accepted_premise_bridge_bounded_note_2026-05-26": {
       "audit_date": "2026-05-28T04:53:27.362269+00:00",
@@ -101508,7 +101670,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -138350,108 +138512,141 @@
       "verdict_rationale": null
     },
     "hw1_second_order_return_shape_theorem_note": {
-      "audit_date": "2026-05-24T20:55:17.530786+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "Exact finite-algebra Dirac-structure claim for the explicit Cl(4)/C^16 Gamma_i and gamma_5 packet: M(phi)=sum_i phi_i Gamma_i is chiral off-diagonal, has zero same-chirality blocks, reduces to Gamma_i at axis inputs, and excludes Xi_5 as a direct chiral off-diagonal Yukawa surface.",
-          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
-        },
-        "dep_claim_type": {
-          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "positive_theorem",
-          "three_generation_observable_theorem_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "retained",
-          "three_generation_observable_theorem_note": "retained_bounded"
-        },
-        "deps": [
-          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
-          "three_generation_observable_theorem_note"
-        ],
-        "load_bearing_score": 14.114,
-        "runner_hash": "e3e9151abfa7429b30ad67195cbb3cc7a673d70af6b17246674f1f36eda609df",
-        "transitive_descendants": 276
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205321Z-7c288d9f-hw1_second_order_return_-02",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited retained Gamma_1/T_1 surface plus the explicit Hamming-bit action close the projector calculation: Gamma_1 flips only axis 1, so the three T_1 species hit O_0, T_2(1,1,0), and T_2(1,0,1), while T_2(0,1,1) is absent at this order. Linearity then gives the affine diagonal form.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "hw1_second_order_return_shape_theorem_note",
-      "claim_scope": "Exact finite-dimensional Cl(3)\u2297taste projector identity for the Gamma_1 second-order return on the hw=1 generation triplet, with arbitrary intermediate weights and no claimed derivation of the weight values.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-24T20:55:17.530786+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-24T20:52:56.185691+00:00",
-          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205235Z-7c288d9f-hw1_second_order_return_-01",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Exact algebraic shape of the second-order Gamma_1 return on the retained hw=1 species basis for arbitrary weights on O_0 and the three T_2 projectors.",
-          "claim_type": "positive_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-24T20:55:17.530786+00:00",
-          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205321Z-7c288d9f-hw1_second_order_return_-02",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Exact finite-dimensional Cl(3)\u2297taste projector identity for the Gamma_1 second-order return on the hw=1 generation triplet, with arbitrary intermediate weights and no claimed derivation of the weight values.",
-          "claim_type": "positive_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
         "three_generation_observable_theorem_note"
       ],
       "direct_in_degree": 12,
-      "effective_status": "retained",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 14.195,
-      "load_bearing_step": "Direct matrix computation gives the four single-projector returns diag(1,0,0), diag(0,1,0), diag(0,0,1), and diag(0,0,0); linearity in the weights gives P_T1 Gamma_1 W Gamma_1 P_T1 = diag(w_O0,w_a,w_b).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8bc5ce90bda3bbae3b796c75fd70b6ec58f7e6b17ba311d2990723648debf8e9",
       "note_path": "docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-check that downstream uses do not treat the arbitrary weights as retained-derived mass values; this audit covers only the affine shape theorem.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-29T00:57:35.071818+00:00",
+          "audit_date": "2026-05-24T20:55:17.530786+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "Exact finite-algebra Dirac-structure claim for the explicit Cl(4)/C^16 Gamma_i and gamma_5 packet: M(phi)=sum_i phi_i Gamma_i is chiral off-diagonal, has zero same-chirality blocks, reduces to Gamma_i at axis inputs, and excludes Xi_5 as a direct chiral off-diagonal Yukawa surface.",
+              "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+            },
+            "dep_claim_type": {
+              "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "positive_theorem",
+              "three_generation_observable_theorem_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "retained",
+              "three_generation_observable_theorem_note": "retained_bounded"
+            },
+            "deps": [
+              "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
+              "three_generation_observable_theorem_note"
+            ],
+            "load_bearing_score": 14.114,
+            "runner_hash": "e3e9151abfa7429b30ad67195cbb3cc7a673d70af6b17246674f1f36eda609df",
+            "transitive_descendants": 276
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205321Z-7c288d9f-hw1_second_order_return_-02",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The cited retained Gamma_1/T_1 surface plus the explicit Hamming-bit action close the projector calculation: Gamma_1 flips only axis 1, so the three T_1 species hit O_0, T_2(1,1,0), and T_2(1,0,1), while T_2(0,1,1) is absent at this order. Linearity then gives the affine diagonal form.",
+          "claim_scope": "Exact finite-dimensional Cl(3)\u2297taste projector identity for the Gamma_1 second-order return on the hw=1 generation triplet, with arbitrary intermediate weights and no claimed derivation of the weight values.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-24T20:55:17.530786+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-24T20:52:56.185691+00:00",
+              "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205235Z-7c288d9f-hw1_second_order_return_-01",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Exact algebraic shape of the second-order Gamma_1 return on the retained hw=1 species basis for arbitrary weights on O_0 and the three T_2 projectors.",
+              "claim_type": "positive_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-24T20:55:17.530786+00:00",
+              "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205321Z-7c288d9f-hw1_second_order_return_-02",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Exact finite-dimensional Cl(3)\u2297taste projector identity for the Gamma_1 second-order return on the hw=1 generation triplet, with arbitrary intermediate weights and no claimed derivation of the weight values.",
+              "claim_type": "positive_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_claim_type_changed:three_generation_observable_theorem_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "Direct matrix computation gives the four single-projector returns diag(1,0,0), diag(0,1,0), diag(0,0,1), and diag(0,0,0); linearity in the weights gives P_T1 Gamma_1 W Gamma_1 P_T1 = diag(w_O0,w_a,w_b).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check that downstream uses do not treat the arbitrary weights as retained-derived mass values; this audit covers only the affine shape theorem.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 20,
+            "D": 0,
+            "total_pass": 20
+          },
+          "verdict_rationale": "Both one-hop authorities are retained-grade under the rubric, and the load-bearing step is an exact algebraic projector decomposition rather than a fitted numerical comparison or renaming. The runner\u2019s broader hierarchy survey ends underdetermined for charged-lepton mass values, but the audited source claim only asserts the structural affine shape and explicitly leaves the weights unfixed. The structural theorem therefore closes on the restricted packet."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 20,
+        "C": 0,
         "D": 0,
-        "total_pass": 20
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_hw1_second_order_return_shape_theorem.py",
       "title": "hw=1 Second-Order-Return Shape Theorem",
       "transitive_descendants": 292,
-      "verdict_rationale": "Both one-hop authorities are retained-grade under the rubric, and the load-bearing step is an exact algebraic projector decomposition rather than a fitted numerical comparison or renaming. The runner\u2019s broader hierarchy survey ends underdetermined for charged-lepton mass values, but the audited source claim only asserts the structural affine shape and explicitly leaves the weights unfixed. The structural theorem therefore closes on the restricted packet."
+      "verdict_rationale": null
     },
     "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": {
       "audit_date": "2026-05-26T20:30:31.467501+00:00",
@@ -143545,11 +143740,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 21.679,
+      "load_bearing_score": 18.679,
       "load_bearing_step": "The exact wall is {q*pi : q in Q} cap Q = {0}, so a nonzero pure rational such as 2/9 is not supplied as a literal radian by the listed finite periodic phase sources; finite Wilson/root-of-unity escape routes remain q*pi as well.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "88ad09bf68eeba52d1978e3ee46d3bb902c60145b929985db4518f72e2b6500a",
       "note_path": "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
       "notes_for_re_audit_if_any": "Second auditor should keep the clean verdict scoped to the listed finite/periodic phase-source and finite-Wilson no-go; it does not certify Q closure, delta closure, P_A1 as an axiom, or any future nonlisted Type-B-to-radian bridge.",
@@ -148816,46 +149011,24 @@
       "verdict_rationale": "The runner source genuinely computes the listed conditional identities with Python Fraction arithmetic and does not assert retained-grade closure. However, the load-bearing inputs are explicit admissions: the toy carrier, central Z grammar, endpoint algebra, based endpoint section, and eta_APS = 2/9 are not derived from retained authorities in the restricted packet. No-Go Discipline gate N1/N2 also prevents a clean negative-boundary reading: the packet names admission walls but does not supply independent retained closures or five independent attack-route eliminations."
     },
     "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25": {
-      "audit_date": "2026-05-25T14:47:25.490570+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
-          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
-        },
-        "dep_claim_type": {
-          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
-          "three_generation_observable_theorem_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
-          "three_generation_observable_theorem_note": "retained_bounded"
-        },
-        "deps": [
-          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-          "three_generation_observable_theorem_note"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T144610Z-aa578827-koide_dimensionless_radi-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The restricted separation follows directly from exact rational arithmetic plus irrationality/transcendence of pi: Q*pi intersects Q only at 0, while 2/9 is nonzero. The result does not depend on closing the radian-bridge postulate P or on proving that the six listed units are exhaustive.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
-      "claim_scope": "For the six explicitly listed nonzero alpha_i = q_i*pi values, the pure rational 2/9 is not in Q.alpha_i; no closure of P or exhaustive native-unit enumeration is audited.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-25T14:47:25.490570+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -148864,34 +149037,89 @@
         "three_generation_observable_theorem_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "If c_i * alpha_i = 2/9 with c_i,q_i in Q\\{0}, then t_i*pi = 2/9 for t_i in Q\\{0}, forcing pi = 2/(9*t_i) in Q, contradicting transcendence/irrationality of pi.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4be8387fa1470374d354fab3de7aae1a60623fe4e6ef849fc5652dd29f76ed65",
       "note_path": "docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md",
-      "notes_for_re_audit_if_any": "Re-check only the scope boundary: this clean verdict covers the six explicitly listed alpha_i values, not their full provenance or exhaustiveness; also note the non-load-bearing overbroad wording about arbitrary polynomials in pi.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-29T00:57:35.076166+00:00",
+          "audit_date": "2026-05-25T14:47:25.490570+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+              "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+            },
+            "dep_claim_type": {
+              "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+              "three_generation_observable_theorem_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+              "three_generation_observable_theorem_note": "retained_bounded"
+            },
+            "deps": [
+              "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+              "three_generation_observable_theorem_note"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T144610Z-aa578827-koide_dimensionless_radi-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The restricted separation follows directly from exact rational arithmetic plus irrationality/transcendence of pi: Q*pi intersects Q only at 0, while 2/9 is nonzero. The result does not depend on closing the radian-bridge postulate P or on proving that the six listed units are exhaustive.",
+          "claim_scope": "For the six explicitly listed nonzero alpha_i = q_i*pi values, the pure rational 2/9 is not in Q.alpha_i; no closure of P or exhaustive native-unit enumeration is audited.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-25T14:47:25.490570+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_type_changed:three_generation_observable_theorem_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "If c_i * alpha_i = 2/9 with c_i,q_i in Q\\{0}, then t_i*pi = 2/9 for t_i in Q\\{0}, forcing pi = 2/(9*t_i) in Q, contradicting transcendence/irrationality of pi.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check only the scope boundary: this clean verdict covers the six explicitly listed alpha_i values, not their full provenance or exhaustiveness; also note the non-load-bearing overbroad wording about arbitrary polynomials in pi.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 146,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 146
+          },
+          "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity over the six stated q_i inputs and the admitted standard fact that pi is irrational/transcendental. The cited authorities are retained-grade, and the open radian-bridge primitive is explicitly excluded from the audited scope rather than imported. The runner source hard-codes the six listed q_i values and checks the exact symbolic separation; it does not pretend to derive P or use external comparator data. The No-Go Discipline gate does not block clean because the negative boundary is narrowly limited to these six alpha_i and rational coefficients."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 146,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 146
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py",
       "title": "Koide Dimensionless `2/9` vs Radian `2/9` \u2014 Native-Unit Separation Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity over the six stated q_i inputs and the admitted standard fact that pi is irrational/transcendental. The cited authorities are retained-grade, and the open radian-bridge primitive is explicitly excluded from the audited scope rather than imported. The runner source hard-codes the six listed q_i values and checks the exact symbolic separation; it does not pretend to derive P or use external comparator data. The No-Go Discipline gate does not block clean because the negative boundary is narrowly limited to these six alpha_i and rational coefficients."
+      "verdict_rationale": null
     },
     "koide_dweh_cyclic_compression_note_2026-04-18": {
       "audit_date": "2026-05-05T09:49:41.642799+00:00",
@@ -199318,8 +199546,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "Substituting (Y_uR,Y_dR,Y_eR,Y_nuR)=(a+1,a-1,b-1,b+1) into the cubic anomaly gives -6(n_color a + b), which vanishes by the imported LH trace relation b=-n_color a.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "7a2a142015b91b1641eb58479d4635c0a93a0cd4326c34e1a9934b8928ee247f",
       "note_path": "docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "",
@@ -201347,8 +201575,8 @@
       "load_bearing_score": 4.585,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "d0d7638afb212531bbc0474d17b5822785fc916e59783c593954542fc87d8d33",
       "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": null,
@@ -205343,11 +205571,11 @@
       ],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 22.931,
+      "load_bearing_score": 19.931,
       "load_bearing_step": "For positive real x and y, (x/y)^16=1 implies x/y=1; combined with x/y^2=1 this gives y=1, x=1, hence beta=6 and u_0=u_0_can using x=6/beta.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "99107dea55040bdc13659d9f1618167ac5fee0590c8b7b836bc2ba58f0bb0246",
       "note_path": "docs/PHYSICAL_LATTICE_NECESSITY_NOTE.md",
       "notes_for_re_audit_if_any": "Keep future citations inside the narrowed algebraic no-go boundary unless separate semantic or regulator-universal claims are independently audited.",
@@ -258231,46 +258459,24 @@
       "verdict_rationale": null
     },
     "sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28": {
-      "audit_date": "2026-05-28T08:53:38.250307+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "Audited the conditional rational-algebra enumeration of (A1)-(A3) with y_4 = 0 and y_1 > 0, plus the stated charge readout under Q = T_3 + Y/2 using the note's declared left-handed hypercharges.",
-          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
-        },
-        "dep_claim_type": {
-          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "bounded_theorem",
-          "three_generation_observable_theorem_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "retained_bounded",
-          "three_generation_observable_theorem_note": "retained_bounded"
-        },
-        "deps": [
-          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10",
-          "three_generation_observable_theorem_note"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "3ff8c7ee25332ab5adca953176736e27dbc968eb68591eb9fd5ad1a73d8d2e8b",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-gpt-5.5-xhigh-sphaleron-28-79-2026-05-27",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The rational chemical-potential reduction closes, and an independent Fraction check reproduces 28/79. The retained audit chain does not close because E1-E6 are explicit local supplied premises, not retained theorems, axiom premises, or Tier-A admitted derivation targets.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28",
-      "claim_scope": "Exact algebraic reduction of the sphaleron conversion coefficient to 28/79 conditional on retained N_F = 3, retained one-generation doubled hypercharges, and the local supplied EWPT-equilibrium premise packet E1-E6.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-28T08:53:38.250307+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -258279,34 +258485,89 @@
         "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "weak",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Given retained N_F = 3, the retained doubled-hypercharge spectrum, and the supplied EWPT-equilibrium premise packet E1-E6, the chemical-potential equations reduce by rational arithmetic to C_sph = (8 N_F + 4 N_H)/(22 N_F + 13 N_H) and hence 28/79 at (3,1).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d904155b347516b914cdf4b5a292cb0fa8aae62cdef447b13b7e0ad1f1d1a6ce",
       "note_path": "docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or formally admit the EWPT-equilibrium premise packet E1-E6, especially the sphaleron/Yukawa/plasma-neutrality/small-mu/T/single-Higgs assumptions, before promoting the bridge beyond conditional algebra.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-29T00:57:35.129917+00:00",
+          "audit_date": "2026-05-28T08:53:38.250307+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "Audited the conditional rational-algebra enumeration of (A1)-(A3) with y_4 = 0 and y_1 > 0, plus the stated charge readout under Q = T_3 + Y/2 using the note's declared left-handed hypercharges.",
+              "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+            },
+            "dep_claim_type": {
+              "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "bounded_theorem",
+              "three_generation_observable_theorem_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "retained_bounded",
+              "three_generation_observable_theorem_note": "retained_bounded"
+            },
+            "deps": [
+              "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10",
+              "three_generation_observable_theorem_note"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "3ff8c7ee25332ab5adca953176736e27dbc968eb68591eb9fd5ad1a73d8d2e8b",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-gpt-5.5-xhigh-sphaleron-28-79-2026-05-27",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The rational chemical-potential reduction closes, and an independent Fraction check reproduces 28/79. The retained audit chain does not close because E1-E6 are explicit local supplied premises, not retained theorems, axiom premises, or Tier-A admitted derivation targets.",
+          "claim_scope": "Exact algebraic reduction of the sphaleron conversion coefficient to 28/79 conditional on retained N_F = 3, retained one-generation doubled hypercharges, and the local supplied EWPT-equilibrium premise packet E1-E6.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-28T08:53:38.250307+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "weak",
+          "invalidation_reason": "dep_claim_type_changed:three_generation_observable_theorem_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "Given retained N_F = 3, the retained doubled-hypercharge spectrum, and the supplied EWPT-equilibrium premise packet E1-E6, the chemical-potential equations reduce by rational arithmetic to C_sph = (8 N_F + 4 N_H)/(22 N_F + 13 N_H) and hence 28/79 at (3,1).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or formally admit the EWPT-equilibrium premise packet E1-E6, especially the sphaleron/Yukawa/plasma-neutrality/small-mu/T/single-Higgs assumptions, before promoting the bridge beyond conditional algebra.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 40,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 40
+          },
+          "verdict_rationale": "Issue: the algebra from E1-E6 plus the retained N_F and hypercharge inputs is correct, but E1-E6 carry the EWPT equilibrium, B-L conservation, hypercharge-neutral plasma, Yukawa-equilibrium, small-mu/T expansion, and single-Higgs premises as supplied local admissions. Why this blocks: the audit lane may retain the exact rational reduction only if those physical premises are retained or formally admitted; this source explicitly says they are not new axioms or registry-accepted premises. Repair target: derive the EWPT-equilibrium packet in retained notes, add graph-visible retained dependencies for the needed premises, or route an explicit approved Tier-A admission update. Claim boundary until fixed: under E1-E6 the arithmetic gives 28/79, but the framework has not derived or retained the EWPT premise packet."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 40,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 40
+        "total_pass": 0
       },
       "runner_path": "scripts/sphaleron_coefficient_28_79_runner.py",
       "title": "Sphaleron Coefficient C_sph = 28/79 from SM-Like Content \u2014 Admission Bridge",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the algebra from E1-E6 plus the retained N_F and hypercharge inputs is correct, but E1-E6 carry the EWPT equilibrium, B-L conservation, hypercharge-neutral plasma, Yukawa-equilibrium, small-mu/T expansion, and single-Higgs premises as supplied local admissions. Why this blocks: the audit lane may retain the exact rational reduction only if those physical premises are retained or formally admitted; this source explicitly says they are not new axioms or registry-accepted premises. Repair target: derive the EWPT-equilibrium packet in retained notes, add graph-visible retained dependencies for the needed premises, or route an explicit approved Tier-A admission update. Claim boundary until fixed: under E1-E6 the arithmetic gives 28/79, but the framework has not derived or retained the EWPT premise packet."
+      "verdict_rationale": null
     },
     "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-22T16:18:55.647764+00:00",
@@ -258453,8 +258714,8 @@
       "load_bearing_score": 4.085,
       "load_bearing_step": "The finite-dimensional identities Tr([a,a\u2020]) = 0 while Tr(I_H) = D rule out CCR for D >= 1, and the CAR relations give {a\u2020,a\u2020} = 2(a\u2020)^2 = 0 plus n^2 = a\u2020aa\u2020a = n.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "18d0c734377c0401683434c3d1f2fd71032a231048e7a8f781fd72f83ad6592c",
       "note_path": "docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Second auditor may re-check the D = 0 convention in the CCR no-go wording; the substantive D >= 1 finite-dimensional obstruction is closed.",
@@ -269468,11 +269729,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "decoration_under_cl3_color_automorphism_theorem",
-      "load_bearing_score": 18.687,
+      "load_bearing_score": 15.687,
       "load_bearing_step": "Tr[C_2] = \u03a3_a Tr[T^a T^a] = 4, while Tr[c_2(3) I_3] = 3 c_2(3), hence c_2(3)=4/3.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "d6e2848fd14e60b6bbbcb142227a43c1d10dd084190c9c8866dac72b3d8534d5",
       "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": "Re-check only that the pipeline accepts decoration classification for this narrowed bounded-theorem note; the K1-K3 algebraic chain itself closes.",
@@ -280706,77 +280967,110 @@
       "verdict_rationale": "Issue: The note claims three families match on all 9 measurable properties, but the table explicitly has Family 3 Distance alpha marked '(not yet)' and the note provides no runner or log artifact to verify the cross-family card. Why this blocks: the load-bearing 9/9 statement is false on the face of the supplied table, and the broader inference that observables are geometry-independent cannot follow from a partial, hand-entered comparison. Repair target: add a runner that recomputes every listed property for all three families, including Family 3 Distance alpha, with explicit <5% assertions and at least one holdout check. Claim boundary until fixed: safe to cite this as a partial comparison of three selected drift/restore rows with eight populated properties and distance-alpha data only for Families 1 and 2; not safe to claim 9/9 three-family equality or geometry-independence."
     },
     "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03": {
-      "audit_date": "2026-05-24T20:59:38.891406+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_axiom_premise_note_hash": {},
-        "dep_claim_scope": {
-          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
-        },
-        "dep_claim_type": {
-          "three_generation_observable_theorem_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "three_generation_observable_theorem_note": "retained_bounded"
-        },
-        "deps": [
-          "three_generation_observable_theorem_note"
-        ],
-        "load_bearing_score": 3.322,
-        "runner_hash": "d22c2ef9f5949d2f57622676ede693af119715d986693cd4ce32357d3125c87d",
-        "transitive_descendants": 4
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205917Z-2048b28b-three_gen_z3_fourier_dia-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The conclusion follows by direct finite-dimensional linear algebra from the single retained_bounded upstream input that C3[111] is the cyclic shift on the X1,X2,X3 basis. No additional physics premise or external comparator is used.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03",
-      "claim_scope": "Given the retained C^3 hw=1 triplet and cyclic C3[111] action, the standard Z3 Fourier basis diagonalizes C3[111] with eigenvalues 1, omega, omega^2 and yields the stated one-dimensional isotypic decomposition and cyclic-average projector.",
-      "claim_type": "decoration",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-24T20:59:38.891406+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "three_generation_observable_theorem_note",
+      "decoration_parent_claim_id": null,
       "deps": [
         "three_generation_observable_theorem_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "decoration_under_three_generation_observable_theorem_note",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "decoration_under_three_generation_observable_theorem_note",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 3.322,
-      "load_bearing_step": "By the retained three-generation observable theorem, C3[111] acts on H_hw=1 as the cyclic permutation X1 -> X2 -> X3 -> X1, represented by the 3x3 cyclic shift matrix.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4b5c4b1bba0ea9a69cd0cf6d97c648f94407bbf80d6094ffcb195e74e22bc0aa",
       "note_path": "docs/THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": "Re-check only that the parent cyclic-action claim remains retained_bounded; the present note's algebra is otherwise direct.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-29T00:57:35.147534+00:00",
+          "audit_date": "2026-05-24T20:59:38.891406+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_axiom_premise_note_hash": {},
+            "dep_claim_scope": {
+              "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+            },
+            "dep_claim_type": {
+              "three_generation_observable_theorem_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "three_generation_observable_theorem_note": "retained_bounded"
+            },
+            "deps": [
+              "three_generation_observable_theorem_note"
+            ],
+            "load_bearing_score": 3.322,
+            "runner_hash": "d22c2ef9f5949d2f57622676ede693af119715d986693cd4ce32357d3125c87d",
+            "transitive_descendants": 4
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205917Z-2048b28b-three_gen_z3_fourier_dia-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The conclusion follows by direct finite-dimensional linear algebra from the single retained_bounded upstream input that C3[111] is the cyclic shift on the X1,X2,X3 basis. No additional physics premise or external comparator is used.",
+          "claim_scope": "Given the retained C^3 hw=1 triplet and cyclic C3[111] action, the standard Z3 Fourier basis diagonalizes C3[111] with eigenvalues 1, omega, omega^2 and yields the stated one-dimensional isotypic decomposition and cyclic-average projector.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-24T20:59:38.891406+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "three_generation_observable_theorem_note",
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_type_changed:three_generation_observable_theorem_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "By the retained three-generation observable theorem, C3[111] acts on H_hw=1 as the cyclic permutation X1 -> X2 -> X3 -> X1, represented by the 3x3 cyclic shift matrix.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check only that the parent cyclic-action claim remains retained_bounded; the present note's algebra is otherwise direct.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 9,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 9
+          },
+          "verdict_rationale": "The runner source hard-codes the cyclic-shift matrix supplied by the upstream note and verifies the Fourier diagonalization, orthonormality, inverse transform, eigenspace dimensions, diagonal form, and cyclic-average projector by direct matrix algebra. This is a sound algebraic extraction from the retained parent theorem, not a new first-principles computation of the C3[111] operator or the hw=1 triplet. Because the chain reduces to one retained parent claim plus standard Fourier mathematics with zero external checks, the conservative rubric classifies it as audited_decoration rather than audited_clean."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 9,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 9
+        "total_pass": 0
       },
       "runner_path": "scripts/three_gen_z3_fourier_diagonalization_check.py",
       "title": "Z_3 Fourier Diagonalization of C3[111] on Framework hw=1 Triplet",
       "transitive_descendants": 4,
-      "verdict_rationale": "The runner source hard-codes the cyclic-shift matrix supplied by the upstream note and verifies the Fourier diagonalization, orthonormality, inverse transform, eigenspace dimensions, diagonal form, and cyclic-average projector by direct matrix algebra. This is a sound algebraic extraction from the retained parent theorem, not a new first-principles computation of the C3[111] operator or the hw=1 triplet. Because the chain reduces to one retained parent claim plus standard Fourier mathematics with zero external checks, the conservative rubric classifies it as audited_decoration rather than audited_clean."
+      "verdict_rationale": null
     },
     "three_generation_chirality_boundary_note": {
       "audit_date": null,
@@ -281994,7 +282288,7 @@
       "verdict_rationale": "The narrowed theorem closes as a class-A algebraic identity over retained finite carrier inputs; it does not rely on the broader physical carrier or species interpretation. No-go discipline gate passes within the restricted packet because the exclusion is only the finite invariant-subspace statement: the C3-only eigenspace attack is explicitly ruled out by requiring D3 plus C3, there is no independent wall set or residual witness, and N8 repo-wide searching was intentionally not performed under the packet restriction. Runner evidence is supportive: 9 PASS lines are exact matrix/subspace computations, while 25 note-structure and 11 ledger/dependency PASS lines are non-load-bearing scope/status checks."
     },
     "three_generation_observable_theorem_note": {
-      "audit_date": "2026-05-24T20:40:23.140785+00:00",
+      "audit_date": "2026-05-29T00:57:34.616672+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
         "dep_axiom_premise_note_hash": {},
@@ -282030,26 +282324,26 @@
           "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
           "z2_hw1_mass_matrix_parametrization_note"
         ],
-        "load_bearing_score": 47.842,
+        "load_bearing_score": 53.364,
         "runner_hash": "62ebd44bdaf2638a9682e67fb32031013123dca283ff4bf5d81d828dd870f7d2",
-        "transitive_descendants": 917
+        "transitive_descendants": 931
       },
       "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T203906Z-6a84a04c-three_generation_observa-02",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260529-three_generation_observable",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "Given the specified operators, the projector construction, matrix-unit generation, observable-descent lemma, and irreducibility argument are standard finite-dimensional linear algebra. The cited retained inputs are sufficient for this narrowed operator-algebra surface, while physical-species and substrate claims are explicitly out of scope.",
+      "chain_closure_explanation": "Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The source explicitly fences the claim to finite C^3 matrix algebra and excludes physical species/readout, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization. The runner reports PASS=47 FAIL=0, including the nine matrix units, generated dimension 9, scalar commutant, and quotient obstruction. Independent exact checks reproduced P_i = E_ii, C3^3 = I, all P_i C3^k P_j = E_ij, and rank 9. Under the audit rubric this is class-A algebraic closure over explicit finite inputs, eligible as positive_theorem rather than bounded_theorem when the physical realization semantics are excluded from scope.",
       "claim_id": "three_generation_observable_theorem_note",
-      "claim_scope": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope.",
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": "2026-05-24T20:40:23.140785+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": "2026-05-29T00:57:34.616672+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -282064,19 +282358,44 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
+        "mode": "judicial_third_pass",
         "second_audit": {
-          "audit_date": "2026-05-24T20:40:23.140785+00:00",
-          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T203906Z-6a84a04c-three_generation_observa-02",
+          "audit_date": "2026-05-29T00:52:10.749698+00:00",
+          "auditor": "codex-gpt-5.5-fresh-context-aquinas-019e7134-eb27-7621-a3a6-f8efccd1136e",
           "auditor_family": "codex-gpt-5.5",
           "auditor_model": "gpt-5.5",
           "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists.",
-          "claim_type": "bounded_theorem",
+          "claim_scope": "Finite linear algebra on C^3: explicit rank-one translation projectors P_i and a cyclic C3 operator generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical three-generation readout, species semantics, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are excluded.",
+          "claim_type": "positive_theorem",
           "independence": "fresh_context",
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "status": "confirmed"
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-29T00:57:34.616672+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260529-three_generation_observable",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The bounded side was clean on truth and class but over-conservative on claim_type: it kept bounded_theorem because of historical retained-surface and physical-carrier provenance language even though the ratified scope is only the exact finite C^3 algebra and quotient-preservation corollary.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The source explicitly fences the claim to finite C^3 matrix algebra and excludes physical species/readout, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization. The runner reports PASS=47 FAIL=0, including the nine matrix units, generated dimension 9, scalar commutant, and quotient obstruction. Independent exact checks reproduced P_i = E_ii, C3^3 = I, all P_i C3^k P_j = E_ij, and rank 9. Under the audit rubric this is class-A algebraic closure over explicit finite inputs, eligible as positive_theorem rather than bounded_theorem when the physical realization semantics are excluded from scope.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 47,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "fail": 0,
+            "total_pass": 47
+          },
+          "second_auditor_error": "No material error. The majority caveat is that the applied scope must remain strictly limited to the explicit finite algebra and quotients preserving that algebra; physical generation readout, species semantics, substrate necessity, mass hierarchy, CKM/PMNS closure, Grassmann construction, and full staggered-carrier realization remain outside this verdict.",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -282088,19 +282407,19 @@
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
       ],
       "direct_in_degree": 79,
-      "effective_status": "retained_bounded",
+      "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 53.364,
-      "load_bearing_step": "The translation projectors P_i together with powers of the cyclic C3[111] map generate every matrix unit E_ij, so the retained algebra is M_3(C), whose irreducibility leaves no nontrivial invariant quotient kernel.",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained",
+      "load_bearing_score": 49.364,
+      "load_bearing_step": "The projectors P_1, P_2, P_3 and powers of C3 generate every matrix unit: E_ij = P_i C3^k P_j for the unique k in {0,1,2} that maps X_j to X_i.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_no_go",
-      "max_descendant_status_rank": 100,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "6d325d35f4da173d9af2e8eaf23c465f5c17adeaac400bd40af6874b11ae7ca7",
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-check that later wording stays limited to the specified C^3 operator algebra and does not re-import physical-species or substrate identification.",
+      "notes_for_re_audit_if_any": "Do not broaden this positive_theorem beyond the finite C^3 operator-algebra fact and quotient-preservation corollary. Any physical generation readout, species semantics, substrate necessity, mass hierarchy, CKM/PMNS closure, Grassmann construction, or full staggered-carrier realization must be audited separately.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -282316,12 +282635,13 @@
         "B": 0,
         "C": 0,
         "D": 0,
+        "fail": 0,
         "total_pass": 47
       },
       "runner_path": "scripts/frontier_three_generation_observable_theorem.py",
       "title": "Three-Generation Observable Theorem Note",
       "transitive_descendants": 931,
-      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure over the supplied operator inputs, not a definition, renaming, numerical match, or external comparator check. The runner source hard-codes the specified finite matrices as inputs but then actually verifies the projector ranks, matrix-unit generation, commutant dimension, observable descent, and irreducibility checks. The negative no-proper-quotient boundary passes the restricted no-go gate because attack routes such as preserving only translations, dropping C3, approximate reduction, nonlinear quotienting, or physical reinterpretation all leave the stated exact full-algebra quotient scope."
+      "verdict_rationale": "Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The source explicitly fences the claim to finite C^3 matrix algebra and excludes physical species/readout, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization. The runner reports PASS=47 FAIL=0, including the nine matrix units, generated dimension 9, scalar commutant, and quotient obstruction. Independent exact checks reproduced P_i = E_ii, C3^3 = I, all P_i C3^k P_j = E_ij, and rank 9. Under the audit rubric this is class-A algebraic closure over explicit finite inputs, eligible as positive_theorem rather than bounded_theorem when the physical realization semantics are excluded from scope."
     },
     "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26": {
       "audit_date": "2026-05-28T09:02:02.783725+00:00",

@@ -1,13 +1,40 @@
 {
   "by_criticality": {
-    "critical": 250,
-    "high": 317,
-    "leaf": 309,
-    "medium": 320
+    "critical": 254,
+    "high": 319,
+    "leaf": 311,
+    "medium": 321
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_derivation_note",
+        "native_gauge_closure_note",
+        "graph_first_su3_integration_note",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 17,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 18.352,
+      "note_path": "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_g_bare_structural_normalization.py",
+      "transitive_descendants": 923
+    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -236,6 +263,31 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hw1_second_order_return_shape_theorem_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 12,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.195,
+      "note_path": "docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_hw1_second_order_return_shape_theorem.py",
+      "transitive_descendants": 292
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
       "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
@@ -455,6 +507,35 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_lorentz_boost_3plus1d.py",
+      "transitive_descendants": 896
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_two_ward_closure_note_2026-04-18",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+        "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
+        "yt_ward_identity_derivation_theorem",
+        "g_bare_rigidity_theorem_note",
+        "g_bare_structural_normalization_theorem_note_2026-04-18",
+        "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.809,
+      "note_path": "docs/G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_g_bare_two_ward_closure.py",
       "transitive_descendants": 896
     },
     {
@@ -6187,6 +6268,31 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "physical_lattice_necessity_note",
+        "g_bare_structural_normalization_theorem_note_2026-04-18"
+      ],
+      "direct_in_degree": 28,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 21.762,
+      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
+      "transitive_descendants": 216
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "su2_witten_z2_anomaly_theorem_note_2026-04-24",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -7046,31 +7152,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
-      "claim_scope": "Bounded convention-layer stratification for the g_bare chain: on the admitted Wilson plaquette/kinetic-matching surface and with the explicit L3 convention N_F=1/2, the retained-bounded HS rigidity and structural-normalization inputs locate the scalar convention at N_F and derive g_bare=1 at L4; no derivation of N_F=1/2, Wilson action form, running/fixed-point selection, or absolute g_bare from A1+A2 is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-        "g_bare_structural_normalization_theorem_note_2026-04-18"
-      ],
-      "direct_in_degree": 14,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.748,
-      "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
-      "transitive_descendants": 214
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -8335,6 +8416,31 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_p3_msbar_to_pole_k2.py",
       "transitive_descendants": 217
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
+      "claim_id": "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
+      "claim_scope": "Bounded convention-layer stratification for the g_bare chain: on the admitted Wilson plaquette/kinetic-matching surface and with the explicit L3 convention N_F=1/2, the retained-bounded HS rigidity and structural-normalization inputs locate the scalar convention at N_F and derive g_bare=1 at L4; no derivation of N_F=1/2, Wilson action form, running/fixed-point selection, or absolute g_bare from A1+A2 is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": "awaiting_second",
+      "deps": [
+        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+        "g_bare_structural_normalization_theorem_note_2026-04-18"
+      ],
+      "direct_in_degree": 14,
+      "effective_status": "retained_pending_chain",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.748,
+      "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md",
+      "queue_reason": "audit_in_progress",
+      "ready": false,
+      "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
+      "transitive_descendants": 214
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -10599,6 +10705,60 @@
       "ready": false,
       "runner_path": "scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py",
       "transitive_descendants": 155
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "bridge_gap_hk_time_derivation_note_2026-05-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_structural_normalization_theorem_note_2026-04-18",
+        "su3_casimir_fundamental_theorem_note_2026-05-02",
+        "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.267,
+      "note_path": "docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/probe_hk_time_derivation.py",
+      "transitive_descendants": 153
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "bridge_gap_hk_time_derivation_note_2026-05-06",
+        "su3_casimir_fundamental_theorem_note_2026-05-02",
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+        "g_bare_structural_normalization_theorem_note_2026-04-18"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.757,
+      "note_path": "docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/probe_hk_plaquette_closed_form.py",
+      "transitive_descendants": 152
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17306,6 +17466,30 @@
       "ready": true,
       "runner_path": "scripts/per_site_su2_spin_half_check.py",
       "transitive_descendants": 5
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.322,
+      "note_path": "docs/THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/three_gen_z3_fourier_diagonalization_check.py",
+      "transitive_descendants": 4
     },
     {
       "audit_independence_required": "any_non_self",
@@ -27355,6 +27539,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -27560,6 +27769,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "three_generation_observable_theorem_note",
+        "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SPHALERON_COEFFICIENT_28_79_FROM_SM_LIKE_CONTENT_ADMISSION_BRIDGE_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/sphaleron_coefficient_28_79_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -28649,7 +28883,7 @@
       "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,
@@ -30959,7 +31193,7 @@
       "claim_id": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,
@@ -31498,7 +31732,7 @@
       "claim_id": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,
@@ -36137,6 +36371,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 54,
-  "total_pending": 1196
+  "ready_count": 58,
+  "total_pending": 1205
 }

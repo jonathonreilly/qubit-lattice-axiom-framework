@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 177 |
 | critical | `unaudited` | 152 |
-| medium | `unaudited` | 96 |
+| medium | `unaudited` | 95 |
 | high | `audited_numerical_match` | 4 |
 | high | `audited_conditional` | 3 |
 | high | `audited_renaming` | 3 |
@@ -32,7 +32,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 449
+**Total non-retained-grade rows in publication tables:** 448
 
 ## Per-row breakdown
 
@@ -412,7 +412,6 @@ publication tables phrase it.
 | medium | `dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_wilson_direct_descendant_microscopic_value_frontier_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `g_weak_from_framework_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

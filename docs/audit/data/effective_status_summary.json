@@ -11,7 +11,7 @@
   "cycles_detected": 0,
   "effective_status_counts": {
     "audited_conditional": 48,
-    "audited_failed": 1,
+    "audited_failed": 2,
     "audited_numerical_match": 18,
     "audited_renaming": 24,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
@@ -46,7 +46,7 @@
     "retained_bounded": 605,
     "retained_no_go": 175,
     "retained_pending_chain": 10,
-    "unaudited": 1146
+    "unaudited": 1145
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

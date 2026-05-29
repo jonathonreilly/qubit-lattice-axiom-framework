@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 579 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1164 |
+| unaudited | 1163 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 72 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,19 +62,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 892 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
-| `audited_failed` | 46 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1394 |
+| `unaudited` | 1393 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1122 |
+| `bounded_theorem` | 1123 |
 | `decoration` | 52 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 117 |
-| `positive_theorem` | 708 |
+| `positive_theorem` | 707 |
 
 | criticality | count |
 |---|---:|
@@ -1148,6 +1148,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `asymmetry_persistence_born_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | D | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
@@ -1681,6 +1682,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The ledger says every ingredient row is only a summary pointer to its named authority, while the only currently wired citation-graph edge is the R_conn/F_adj row to rconn_derived_note.  _(class `B`)_
 - **chain closes:** False — The exact R_conn repair closes only as F_adj=(3^2-1)/3^2=8/9 with the physical selector left conditional by the retained no-go dependency. The remaining ingredient status rows are not directly wired to retained-grade authorities in the restricted packet.
 - **rationale:** Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency.
+- **auditor confidence:** high
+
+### `asymmetry_persistence_born_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_BORN_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded corrected-Born calibration for the dense asymmetry-persistence runner at the stated narrow N=100, npl=60, 2-seed, 4-realization configuration; broader default-run and asymptotic Born-clean claims are excluded.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The source asserts that the registered runner at N=100, npl=60, thresholds 0.10/0.20, 2 seeds, and 4 realizations reproduces the Born |I3|/P table values.  _(class `D`)_
+- **chain closes:** False — The broad default cache times out, and an exact completed narrow rerun supports machine-precision Born cleanliness but does not reproduce several table entries in the current source note.
+- **rationale:** Issue: the stated narrow command does not reproduce the source table exactly. A completed rerun of `python3 scripts/asymmetry_persistence_born_calibration.py --n-layers 100 --thresholds 0.10 0.20 --n-seeds 2 --n-realizations 4 --npl 60` gave threshold 0.10 linear=6.54e-16±9.9e-17, persistence=8.49e-16±1.7e-16, persist+LN=2.78e-16±7.2e-17, persist+LN+collapse=2.78e-16±5.8e-17; threshold 0.20 linear=6.54e-16±9.9e-17, persistence=1.12e-15±2.5e-16, persist+LN=2.59e-16±3.9e-17, persist+LN+collapse=3.33e-16±5.0e-17. These differ from the table's linear and collapse entries, while the registered broad default cache still times out. Why this blocks: the row claims table reproducibility from the registered runner/cache, so the current source is stale on its own numerical surface even though the qualitative Born-clean conclusion remains plausible. Repair target: update the table to the completed narrow command output and add an args-specific completed transcript/cache, or narrow the source to the qualitative machine-precision conclusion. Claim boundary until fixed: the direct narrow rerun supports machine-precision corrected-Born values, but the current table and cache do not audit cleanly.
 - **auditor confidence:** high
 
 ### `asymmetry_persistence_collapse_note`

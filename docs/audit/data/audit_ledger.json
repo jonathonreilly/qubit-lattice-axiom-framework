@@ -9125,24 +9125,46 @@
       "verdict_rationale": "Issue: the ledger still lists many package-wide ingredients as assumed, derived, retained, bounded, or promoted while declaring that only the F_adj/R_conn row has a direct citation-graph dependency. Why this blocks: a bounded ledger can be useful as a roadmap, but without one-hop retained-grade authority edges the audit lane cannot certify those row statuses from this file's prose. Independent math check: the wired R_conn repair correctly narrows exact color algebra to F_adj=(N_c^2-1)/N_c^2=8/9 at N_c=3, and the physical K_EW/R_conn selector remains conditional as stated by rconn_derived_note. Repair target: add direct dependency edges from each ingredient row to the retained-grade authority note(s), or split this file into non-claim metadata plus separately audited ingredient rows. Claim boundary until fixed: use this as a non-authoritative roadmap; only the R_conn/F_adj correction is supported by the current one-hop dependency."
     },
     "asymmetry_persistence_born_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T06:20:39.109359+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "asymmetry_persistence_collapse_note": "Narrow qualitative observation from the completed N=80 configured runner output only: asymmetry-persistence lowers the unitary pur_min readout at the nonzero thresholds, while the stochastic-collapse readout does not show a uniform lowering relative to the unpruned baseline; N=100 rows and any collapse-pocket claim are excluded.",
+          "asymmetry_persistence_joint_card_note": "Dense 3D generated same-graph joint card for N=80 with npl=50 and N=100 with npl=60, 8 matched seeds, thresholds 0.00/0.10/0.20, measuring pur_cl, pur_min, gravity delta, and corrected Born |I3|/P under linear and layer-normalized propagation."
+        },
+        "dep_claim_type": {
+          "asymmetry_persistence_collapse_note": "bounded_theorem",
+          "asymmetry_persistence_joint_card_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "asymmetry_persistence_collapse_note": "retained_bounded",
+          "asymmetry_persistence_joint_card_note": "retained_bounded"
+        },
+        "deps": [
+          "asymmetry_persistence_collapse_note",
+          "asymmetry_persistence_joint_card_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "1c011f7ae6e918e10909249a5525bdb8492609416f2bc83d4282e44107379c0d",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The broad default cache times out, and an exact completed narrow rerun supports machine-precision Born cleanliness but does not reproduce several table entries in the current source note.",
       "claim_id": "asymmetry_persistence_born_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Bounded corrected-Born calibration for the dense asymmetry-persistence runner at the stated narrow N=100, npl=60, 2-seed, 4-realization configuration; broader default-run and asymptotic Born-clean claims are excluded.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T06:20:39.109359+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -9151,8 +9173,8 @@
         "asymmetry_persistence_joint_card_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/asymmetry_persistence_collapse_pilot.py",
         "scripts/asymmetry_persistence_joint_card.py",
@@ -9160,16 +9182,16 @@
         "scripts/gap_topological_asymmetry.py",
         "scripts/gap_topological_asymmetry_layernorm_combo.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The source asserts that the registered runner at N=100, npl=60, thresholds 0.10/0.20, 2 seeds, and 4 realizations reproduces the Born |I3|/P table values.",
+      "load_bearing_step_class": "D",
       "max_descendant_status": "meta",
       "max_descendant_status_rank": 25,
       "note_hash": "629360cdbac655b9fc8e0ba141e1d706bdf70a94227838589c6acfe194456fdd",
       "note_path": "docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update stale table values and provide a completed narrow-command transcript/cache; do not use the broad default timeout as scientific evidence against the qualitative Born-clean result.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -9301,18 +9323,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "runner_status": "completed_narrow_rerun_table_mismatch"
       },
       "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
       "title": "Asymmetry Persistence Born Calibration Note",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the stated narrow command does not reproduce the source table exactly. A completed rerun of `python3 scripts/asymmetry_persistence_born_calibration.py --n-layers 100 --thresholds 0.10 0.20 --n-seeds 2 --n-realizations 4 --npl 60` gave threshold 0.10 linear=6.54e-16\u00b19.9e-17, persistence=8.49e-16\u00b11.7e-16, persist+LN=2.78e-16\u00b17.2e-17, persist+LN+collapse=2.78e-16\u00b15.8e-17; threshold 0.20 linear=6.54e-16\u00b19.9e-17, persistence=1.12e-15\u00b12.5e-16, persist+LN=2.59e-16\u00b13.9e-17, persist+LN+collapse=3.33e-16\u00b15.0e-17. These differ from the table's linear and collapse entries, while the registered broad default cache still times out. Why this blocks: the row claims table reproducibility from the registered runner/cache, so the current source is stale on its own numerical surface even though the qualitative Born-clean conclusion remains plausible. Repair target: update the table to the completed narrow command output and add an args-specific completed transcript/cache, or narrow the source to the qualitative machine-precision conclusion. Claim boundary until fixed: the direct narrow rerun supports machine-precision corrected-Born values, but the current table and cache do not audit cleanly."
     },
     "asymmetry_persistence_collapse_note": {
       "audit_date": "2026-05-29T06:17:16.528267+00:00",
@@ -9370,8 +9392,8 @@
       "load_bearing_score": 2.585,
       "load_bearing_step": "At N=80 and thresholds 0.10/0.20, pers_pmin is 0.981 versus base_pmin 0.998 and pers_LN is 0.889/0.881 versus base_LN 0.954, while pers_col is 0.286/0.281 versus base_col 0.264 and persCol_LN is 0.235/0.236 versus col_LN 0.235.",
       "load_bearing_step_class": "D",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "meta",
+      "max_descendant_status_rank": 25,
       "note_hash": "d3f72f53eddb7ab6ac4cb417028200ee717add8993b147b10e2cafb824086ab3",
       "note_path": "docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md",
       "notes_for_re_audit_if_any": null,

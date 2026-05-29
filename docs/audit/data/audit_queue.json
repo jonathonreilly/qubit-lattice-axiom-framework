@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 316
+    "medium": 315
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16741,32 +16741,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_self_consistency_note",
-        "gauge_vacuum_plaquette_framework_point_underdetermination_note",
-        "industrial_sdp_bootstrap_infrastructure_note_2026-05-03"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.144,
-      "note_path": "docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
-      "transitive_descendants": 49
     },
     {
       "audit_independence_required": "any_non_self",
@@ -35896,6 +35870,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 41,
-  "total_pending": 1186
+  "ready_count": 40,
+  "total_pending": 1185
 }

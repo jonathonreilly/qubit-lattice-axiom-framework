@@ -140687,24 +140687,50 @@
       "verdict_rationale": "Independent recomputation gives I_2(6)/I_1(6)=0.7627260757491918, matching the SU(2) m1 in the note. A fresh independent PSD feasibility scan gives SU(2) m1 about [0.6799586, 0.7669342] and SU(3) about [0.2819121, 0.4515328], both containing their reference m1 values and matching runner output to solver tolerance. The runner source does not hard-code target brackets; 0.5934/0.59353 appear only as printed comparators. The clean scope is bounded infrastructure validation, not the source note's broader positive theorem hint."
     },
     "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T05:22:50.562842+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
+          "industrial_sdp_bootstrap_infrastructure_note_2026-05-03": "Bounded validation that the CVXPY moment-SDP runner computes SU(2)/SU(3) beta=6 single-plaquette reference moments and returns N=3 Hankel/Hausdorff brackets containing m1 when m2-m4 are fixed; excludes full lattice <P>(beta=6), 0.5934 certification, infinite-volume closure, and industrial-precision bracketing.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "no_go",
+          "industrial_sdp_bootstrap_infrastructure_note_2026-05-03": "bounded_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note": "retained_no_go",
+          "industrial_sdp_bootstrap_infrastructure_note_2026-05-03": "retained_bounded",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+          "industrial_sdp_bootstrap_infrastructure_note_2026-05-03",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 7.144,
+        "runner_hash": "00310b164929d9679cf0fa3a36732b76b961977e053c28feb49a5bec92b7be29",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-aristotle-019e722c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Setting p1=p2=p3=p4=r1=r2=q1=q2=pr=pq=rq=1 makes the Hankel, shifted Hausdorff, and Gram matrices PSD and satisfies p4<=p2, r1<=p2, q1<=p4, support bounds, and p1>=0.4225, so the upper optimum cannot be below 1.",
       "claim_id": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Open-gate result: for the implemented Block-02 SDP constraints, p1=1 remains feasible, so the current SDP surface supplies no nontrivial upper bound on lattice <P>(beta=6) without additional loop-equation input.",
+      "claim_type": "open_gate",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "numerical CVXPY bracket attempt + named-obstruction stretch",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T05:22:50.562842+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -140714,14 +140740,14 @@
         "industrial_sdp_bootstrap_infrastructure_note_2026-05-03"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 7.144,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The endpoint configuration at P=1 remains feasible under the PSD, Hausdorff, Gram, support, area-law, and admitted lower-bound constraints.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "3974a9f7d642c54275d6ca77ef65901787d7af5340fc6ea59b499851f08384eb",
@@ -140793,18 +140819,19 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
+        "stdout_summary": "All four upper solves return approximately 1.0; the full solve reports [0.422504, 1.000001].",
         "total_pass": 0
       },
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
       "title": "Industrial SDP Bootstrap \u2014 Lattice \u27e8P\u27e9(\u03b2=6) Bracket Attempt",
       "transitive_descendants": 49,
-      "verdict_rationale": null
+      "verdict_rationale": "Clean only as an open gate, not as a retained lattice plaquette value or nontrivial bracket theorem. The lower bound p1>=0.4225 is imported/admitted, not derived by the SDP. The runner hard-codes that lower bound and hard-codes MC/bridge comparators for reporting, but those constants are not needed for the scoped upper-bound non-improvement result."
     },
     "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
       "audit_date": "2026-05-25T12:20:12.648412+00:00",

@@ -4,8 +4,8 @@
     "decoration": 51,
     "meta": 237,
     "no_go": 259,
-    "open_gate": 116,
-    "positive_theorem": 712
+    "open_gate": 117,
+    "positive_theorem": 711
   },
   "cycle_examples": [],
   "cycles_detected": 0,
@@ -40,12 +40,12 @@
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 230,
-    "open_gate": 25,
+    "open_gate": 26,
     "retained": 153,
     "retained_bounded": 568,
     "retained_no_go": 172,
     "retained_pending_chain": 10,
-    "unaudited": 1184
+    "unaudited": 1183
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

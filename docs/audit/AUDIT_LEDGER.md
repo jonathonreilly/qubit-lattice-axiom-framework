@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 172 |
 | **retained_bounded** | 568 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 25 |
-| unaudited | 1184 |
+| open_gate | 26 |
+| unaudited | 1183 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,13 +58,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 879 |
+| `audited_clean` | 880 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1414 |
+| `unaudited` | 1413 |
 
 | claim_type | count |
 |---|---:|
@@ -72,8 +72,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration` | 51 |
 | `meta` | 237 |
 | `no_go` | 259 |
-| `open_gate` | 116 |
-| `positive_theorem` | 712 |
+| `open_gate` | 117 |
+| `positive_theorem` | 711 |
 
 | criticality | count |
 |---|---:|
@@ -502,6 +502,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7337,6 +7338,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** CVXPY brackets contain known reference values when higher moments are fixed.  _(class `C`)_
 - **chain closes:** True — The bounded single-plaquette infrastructure validation closes: the runner computes the stated Haar/Bessel reference moments and solves the SDP with m1 free; the one-hop 0.5934 plaquette note is comparator-only here.
 - **rationale:** Independent recomputation gives I_2(6)/I_1(6)=0.7627260757491918, matching the SU(2) m1 in the note. A fresh independent PSD feasibility scan gives SU(2) m1 about [0.6799586, 0.7669342] and SU(3) about [0.2819121, 0.4515328], both containing their reference m1 values and matching runner output to solver tolerance. The runner source does not hard-code target brackets; 0.5934/0.59353 appear only as printed comparators. The clean scope is bounded infrastructure validation, not the source note's broader positive theorem hint.
+- **auditor confidence:** high
+
+### `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03`
+
+- **Note:** [`INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate result: for the implemented Block-02 SDP constraints, p1=1 remains feasible, so the current SDP surface supplies no nontrivial upper bound on lattice <P>(beta=6) without additional loop-equation input.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-audit-loop-aristotle-019e722c`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The endpoint configuration at P=1 remains feasible under the PSD, Hausdorff, Gram, support, area-law, and admitted lower-bound constraints.  _(class `A`)_
+- **chain closes:** True — Setting p1=p2=p3=p4=r1=r2=q1=q2=pr=pq=rq=1 makes the Hankel, shifted Hausdorff, and Gram matrices PSD and satisfies p4<=p2, r1<=p2, q1<=p4, support bounds, and p1>=0.4225, so the upper optimum cannot be below 1.
+- **rationale:** Clean only as an open gate, not as a retained lattice plaquette value or nontrivial bracket theorem. The lower bound p1>=0.4225 is imported/admitted, not derived by the SDP. The runner hard-codes that lower bound and hard-codes MC/bridge comparators for reporting, but those constants are not needed for the scoped upper-bound non-improvement result.
 - **auditor confidence:** high
 
 ### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`

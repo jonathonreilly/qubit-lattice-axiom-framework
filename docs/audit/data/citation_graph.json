@@ -78720,6 +78720,21 @@
       "runner_path": "scripts/source_resolved_radical_geometry_probe.py",
       "title": "Source-Resolved Radical Geometry Probe"
     },
+    "source_resolved_retarded_green_corrected_packet_note_2026-05-29": {
+      "claim_id": "source_resolved_retarded_green_corrected_packet_note_2026-05-29",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [
+        "scripts/minimal_source_driven_field_probe.py",
+        "scripts/source_resolved_retarded_green_pocket.py"
+      ],
+      "note_hash": "37c81bbb71547f2145783fa4ada71e03b58aadd70bdcb1ac5eba1c26521ad1df",
+      "path": "docs/SOURCE_RESOLVED_RETARDED_GREEN_CORRECTED_PACKET_NOTE_2026-05-29.md",
+      "runner_path": "scripts/source_resolved_retarded_green_corrected_packet_check.py",
+      "title": "Source-Resolved Retarded Green Corrected Packet"
+    },
     "source_resolved_self_consistent_generated_transfer_note": {
       "claim_id": "source_resolved_self_consistent_generated_transfer_note",
       "claim_type_author_hint": null,
@@ -87752,6 +87767,7 @@
     "source_resolved_geometry_rule_repair_note",
     "source_resolved_propagating_generated_transfer_note",
     "source_resolved_radical_geometry_probe_note",
+    "source_resolved_retarded_green_corrected_packet_note_2026-05-29",
     "source_resolved_self_consistent_generated_transfer_note",
     "source_resolved_support_localization_split_note",
     "source_resolved_wavefield_v2_note",

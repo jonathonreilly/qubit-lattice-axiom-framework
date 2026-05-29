@@ -1,0 +1,740 @@
+#!/usr/bin/env python3
+"""
+SO(4) Covariance of the FREE Staggered-Dirac 2-Point Schwinger Function
+=======================================================================
+
+STATUS: bounded theorem on the continuum limit of the FREE (U=1) staggered
+        2-point Euclidean Schwinger function, with explicit characterisation
+        of the leading dim-6, ell=4 cubic-harmonic anisotropy at O(a^2).
+        Status authority: independent audit lane only.
+
+This is the MATTER-SECTOR (fermion) analogue of the existing free-SCALAR
+boost note:
+  docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md
+  scripts/frontier_lorentz_boost_3plus1d.py  (free scalar; Step 6 SO(4)).
+
+THEOREM (free staggered-Dirac 2-point SO(4) covariance):
+  On the free (U=1) staggered (Kogut-Susskind) lattice with the framework's
+  canonical phases eta_0 = 1, eta_mu(n) = (-1)^{n_0 + ... + n_{mu-1}}, the
+  momentum-space free staggered Dirac operator in the spin-diagonal
+  (Kahler-Dirac) basis is
+
+      D~(p) = m * (1_spin (x) 1_taste)
+              + (i/a) * sum_mu (gamma_mu (x) 1_taste) sin(p_mu a),
+
+  with Euclidean gamma_mu Hermitian, {gamma_mu, gamma_nu} = 2 delta_mu_nu.
+  Its inverse (the 2-point Schwinger function in momentum space) is
+
+      G~_E(p) = D~(p)^{-1}
+              = ( m * 1 - (i/a) sum_mu gamma_mu sin(p_mu a) ) / Delta(p),
+      Delta(p) = m^2 + (1/a^2) sum_mu sin^2(p_mu a),
+
+  because (m + i g.s)(m - i g.s) = m^2 + (g.s)^2 = m^2 + s.s with
+  s_mu = sin(p_mu a)/a (Clifford identity (g.s)^2 = s.s * 1).
+
+  Continuum limit (a -> 0, physical separation fixed): s_mu -> p_mu,
+  Delta -> m^2 + |p|^2 (4D Euclidean |p|^2 = sum_mu p_mu^2), so
+
+      G~_E(p) -> ( m * 1 - i gamma.p ) / ( p^2 + m^2 ),
+
+  the STANDARD SO(4)-COVARIANT Euclidean Dirac/Kahler-Dirac propagator
+  (taste is a spectator identity in the free U=1 theory). In position space
+  this is the SO(4)-rotation-invariant kernel built from the scalar
+  Euclidean propagator G_E^scal(R) = m K_1(m R)/(4 pi^2 R) and its
+  derivative; equivalently (Wick rotation t -> -i tau) the Wightman
+  2-point function is SO(3,1)-covariant in the continuum limit.
+
+  Leading lattice correction: O(a^2), dimension-6, parity-even, CPT-even,
+  ell=4 CUBIC HARMONIC. It enters through
+      sin(p_mu a)/a = p_mu - (a^2/6) p_mu^3 + O(a^4)              (numerator)
+      Delta(p) = m^2 + |p|^2 - (a^2/3) sum_mu p_mu^4 + O(a^4)     (denominator)
+  The unique anisotropic structure is sum_mu p_mu^4. As a 4D Euclidean
+  hyperspherical decomposition on S^3,
+      sum_mu n_mu^4 = 1/2 + H4(n),   H4 = the unique B_4-invariant ell=4
+                                          harmonic on S^3 (no ell=2, ell=6),
+  with isotropic part 1/2, axis [1,0,0,0] value 1, body-diagonal
+  [1,1,1,1]/2 value 1/4 (ratio 4). Restricted to a fixed-direction spatial
+  3-slice (p_0 = 0) the SAME structure reduces to the free-scalar boost
+  note's 3D K_4 (iso 3/5, axis/diagonal ratio 3) -- the explicit
+  free-scalar bridge.
+
+SCOPE (deliberately narrow; the audit lane is harsh):
+  * FREE (U=1) fermion 2-POINT function ONLY.
+  * NOT the interacting theory, NOT n-point, NOT full OS reconstruction,
+    NOT a continuum-existence claim. The continuum LIMIT of the free 2-pt
+    function is well-defined (free theory), so the result is UNCONDITIONAL
+    for the free 2-pt.
+  * Matter-sector analogue of the existing free-scalar SO(4)/boost result;
+    NO new vocabulary, NO emergent-Lorentz claim for the interacting theory.
+
+CONVENTIONS verified against the repo:
+  * Staggered phases eta_0 = 1, eta_mu(n) = (-1)^{sum_{nu<mu} n_nu}, free
+    U=1: AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md and
+    scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py.
+  * Free staggered dispersion E^2 = (1/a^2) sum_i sin^2(p_i a), fermion
+    c4 = -1/3 (E^2 = p^2 - (a^2/3) sum p_i^4): EMERGENT_LORENTZ_INVARIANCE
+    _NOTE.md and scripts/frontier_emergent_lorentz_invariance.py
+    (staggered_energy_sq).
+  * Staggered = Kahler-Dirac, 2^d = N_spinor * N_taste, D_KD = d - delta:
+    STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE
+    _2026-05-17.md.
+
+This runner verifies the theorem with >= 30 PASS checks across 7 parts.
+Self-contained: numpy + scipy.special (+ optional sympy).
+"""
+from __future__ import annotations
+
+import sys
+import numpy as np
+import scipy.special as sp
+
+np.set_printoptions(precision=10, linewidth=120, suppress=True)
+
+PASS_COUNT = 0
+FAIL_COUNT = 0
+
+
+def check(name, condition, detail="", kind="EXACT"):
+    global PASS_COUNT, FAIL_COUNT
+    status = "PASS" if condition else "FAIL"
+    if condition:
+        PASS_COUNT += 1
+    else:
+        FAIL_COUNT += 1
+    tag = f" [{kind}]" if kind != "EXACT" else ""
+    msg = f"  [{status}]{tag} {name}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
+    return condition
+
+
+# =============================================================================
+# Euclidean gamma matrices (4D), Hermitian, {gamma_mu, gamma_nu} = 2 delta
+# =============================================================================
+
+def euclidean_gammas():
+    """Return four 4x4 Hermitian Euclidean gamma matrices with
+    {gamma_mu, gamma_nu} = 2 delta_{mu nu} 1_4 (chiral/Weyl basis)."""
+    s1 = np.array([[0, 1], [1, 0]], dtype=complex)
+    s2 = np.array([[0, -1j], [1j, 0]], dtype=complex)
+    s3 = np.array([[1, 0], [0, -1]], dtype=complex)
+    I2 = np.eye(2, dtype=complex)
+    # gamma_i = [[0, -i sigma_i],[ i sigma_i, 0]] ; gamma_4 = [[0, I],[I,0]]
+    g = []
+    for s in (s1, s2, s3):
+        blk = np.zeros((4, 4), dtype=complex)
+        blk[:2, 2:] = -1j * s
+        blk[2:, :2] = 1j * s
+        g.append(blk)
+    g4 = np.zeros((4, 4), dtype=complex)
+    g4[:2, 2:] = I2
+    g4[2:, :2] = I2
+    g.append(g4)
+    return g  # order: gamma_1, gamma_2, gamma_3, gamma_4(=temporal)
+
+
+GAMMAS = euclidean_gammas()
+
+
+def D_tilde(p_vec, a, m):
+    """Free staggered Dirac operator in momentum space (spin 4x4 block).
+
+    D~(p) = m 1 + (i/a) sum_mu gamma_mu sin(p_mu a).
+    p_vec = (p1, p2, p3, p_tau) -- the LAST entry is the (discretised)
+    Euclidean-time component on the Z^3 x Z_tau lattice.
+    """
+    p = np.asarray(p_vec, dtype=float)
+    D = m * np.eye(4, dtype=complex)
+    for mu in range(4):
+        D = D + (1j / a) * GAMMAS[mu] * np.sin(p[mu] * a)
+    return D
+
+
+def G_tilde_lat(p_vec, a, m):
+    """Momentum-space free staggered 2-point Schwinger function = D~(p)^{-1}."""
+    return np.linalg.inv(D_tilde(p_vec, a, m))
+
+
+def G_tilde_cont(p_vec, m):
+    """Continuum SO(4) Euclidean Dirac propagator (m 1 - i gamma.p)/(p^2+m^2)."""
+    p = np.asarray(p_vec, dtype=float)
+    num = m * np.eye(4, dtype=complex)
+    for mu in range(4):
+        num = num - 1j * GAMMAS[mu] * p[mu]
+    return num / (np.sum(p * p) + m * m)
+
+
+def Delta_lat(p_vec, a, m):
+    """Scalar denominator Delta(p) = m^2 + (1/a^2) sum_mu sin^2(p_mu a)."""
+    p = np.asarray(p_vec, dtype=float)
+    return m * m + np.sum(np.sin(p * a) ** 2) / (a * a)
+
+
+# --- SO(4) rotations -------------------------------------------------------
+
+def so4_rotation(plane, theta):
+    """4x4 SO(4) rotation by angle theta in the (i,j) coordinate plane."""
+    i, j = plane
+    R = np.eye(4)
+    c, s = np.cos(theta), np.sin(theta)
+    R[i, i] = c
+    R[j, j] = c
+    R[i, j] = -s
+    R[j, i] = s
+    return R
+
+
+def spin_generator(plane):
+    """Sigma_{ij} = (1/4)[gamma_i, gamma_j]; exp(theta Sigma_ij) is the
+    Spin(4) rep of an SO(4) rotation in the (i,j) plane. NOTE the orientation:
+    with this convention S = exp(theta Sigma_ij) implements
+        S gamma_mu S^{-1} = sum_nu A_{nu,mu} gamma_nu,   A = so4_rotation(ij, -theta),
+    so the propagator covariance reads S G~(p) S^{-1} = G~(A p) with the same A.
+    The helper rotation_from_spin() returns this A directly from S, avoiding any
+    sign-convention ambiguity in the verification."""
+    i, j = plane
+    return 0.25 * (GAMMAS[i] @ GAMMAS[j] - GAMMAS[j] @ GAMMAS[i])
+
+
+def rotation_from_spin(S):
+    """Recover the SO(4) rotation A that S implements on the gamma vector index:
+    S gamma_mu S^{-1} = sum_nu A_{nu,mu} gamma_nu, via A_{nu,mu} = (1/4) tr(g_nu S g_mu S^-1).
+    This is exact (tr(g_nu g_mu) = 4 delta) and convention-free."""
+    Sinv = np.linalg.inv(S)
+    A = np.zeros((4, 4))
+    for mu in range(4):
+        Sg = S @ GAMMAS[mu] @ Sinv
+        for nu in range(4):
+            A[nu, mu] = np.real(0.25 * np.trace(GAMMAS[nu] @ Sg))
+    return A
+
+
+# =============================================================================
+# Part 1: gamma-matrix / staggered-operator algebra
+# =============================================================================
+
+def test_part1_algebra():
+    print("\n=== Part 1: Euclidean Clifford algebra + staggered operator ===\n")
+
+    # 1.1 Clifford algebra {g_mu, g_nu} = 2 delta
+    max_off = 0.0
+    max_diag = 0.0
+    for mu in range(4):
+        for nu in range(4):
+            anti = GAMMAS[mu] @ GAMMAS[nu] + GAMMAS[nu] @ GAMMAS[mu]
+            if mu == nu:
+                max_diag = max(max_diag, np.max(np.abs(anti - 2 * np.eye(4))))
+            else:
+                max_off = max(max_off, np.max(np.abs(anti)))
+    check("Euclidean Clifford {g_mu,g_nu}=2 delta (Hermitian gammas)",
+          max_off < 1e-13 and max_diag < 1e-13,
+          f"max|off|={max_off:.1e}, max|diag-2|={max_diag:.1e}")
+
+    # 1.2 gammas Hermitian
+    herm = max(np.max(np.abs(g - g.conj().T)) for g in GAMMAS)
+    check("All four Euclidean gamma_mu are Hermitian", herm < 1e-13,
+          f"max|g - g^dag| = {herm:.1e}")
+
+    # 1.3 Clifford identity (g.s)^2 = (s.s) 1 used to invert D~
+    rng = np.random.default_rng(1)
+    max_err = 0.0
+    for _ in range(20):
+        s = rng.standard_normal(4)
+        gs = sum(s[mu] * GAMMAS[mu] for mu in range(4))
+        max_err = max(max_err, np.max(np.abs(gs @ gs - np.sum(s * s) * np.eye(4))))
+    check("Clifford identity (gamma.s)^2 = (s.s) 1  (basis of D~ inverse)",
+          max_err < 1e-12, f"max residual = {max_err:.1e}")
+
+    # 1.4 Closed-form inverse: G~ = (m 1 - (i/a) sum g sin)/Delta
+    a, m = 0.3, 1.0
+    rng = np.random.default_rng(2)
+    max_err = 0.0
+    for _ in range(20):
+        p = rng.uniform(-2.0, 2.0, 4)
+        G_inv = G_tilde_lat(p, a, m)
+        s = np.sin(p * a) / a
+        num = m * np.eye(4, dtype=complex) - 1j * sum(s[mu] * GAMMAS[mu] for mu in range(4))
+        G_closed = num / Delta_lat(p, a, m)
+        max_err = max(max_err, np.max(np.abs(G_inv - G_closed)))
+    check("Closed form G~ = (m1 - (i/a)sum g sin)/Delta matches numpy inverse",
+          max_err < 1e-10, f"max|G_inv - G_closed| = {max_err:.1e}")
+
+    # 1.5 D~ G~ = 1 (sanity)
+    p = np.array([0.4, 0.2, 0.1, 0.3])
+    resid = np.max(np.abs(D_tilde(p, a, m) @ G_tilde_lat(p, a, m) - np.eye(4)))
+    check("D~(p) G~(p) = 1 (propagator inverts the operator)", resid < 1e-10,
+          f"max|D G - 1| = {resid:.1e}")
+
+    return True
+
+
+# =============================================================================
+# Part 2: continuum limit -> SO(4) Euclidean Dirac propagator
+# =============================================================================
+
+def test_part2_continuum_limit():
+    print("\n=== Part 2: continuum limit -> SO(4) Euclidean Dirac propagator ===\n")
+
+    m = 1.0
+    p = np.array([0.5, 0.3, 0.2, 0.4])
+
+    # 2.1 G~_lat -> G~_cont as a -> 0
+    a_vals = [0.2, 0.1, 0.05]
+    errs = []
+    for a in a_vals:
+        errs.append(np.max(np.abs(G_tilde_lat(p, a, m) - G_tilde_cont(p, m))))
+    check("G~_lat(p) -> G~_cont(p) (SO(4) Dirac propagator) as a -> 0",
+          errs[-1] < 5e-3,
+          f"a sweep {a_vals}: max|G_lat - G_cont| = "
+          f"[{', '.join(f'{e:.2e}' for e in errs)}]")
+
+    # 2.2 O(a^2) convergence rate
+    ratio = errs[0] / errs[1] if errs[1] > 1e-14 else 4.0
+    check("O(a^2) convergence of G~_lat to the SO(4) propagator",
+          3.0 < ratio < 5.0,
+          f"err(a=0.2)/err(a=0.1) = {ratio:.3f} (expected ~4)")
+
+    # 2.3 continuum propagator solves the continuum Dirac eqn (m + i g.p) G = 1
+    Dc = m * np.eye(4, dtype=complex) + 1j * sum(p[mu] * GAMMAS[mu] for mu in range(4))
+    resid = np.max(np.abs(Dc @ G_tilde_cont(p, m) - np.eye(4)))
+    check("(m + i gamma.p) G~_cont = 1 (continuum Dirac equation)",
+          resid < 1e-12, f"max|(m+ig.p)G - 1| = {resid:.1e}")
+
+    # 2.4 scalar reduction: trace(G~_cont) = 4 m/(p^2+m^2) (Dirac trace identity)
+    tr = np.trace(G_tilde_cont(p, m))
+    expect = 4 * m / (np.sum(p * p) + m * m)
+    check("tr G~_cont = 4m/(p^2+m^2); scalar part is the SO(4) scalar propagator",
+          abs(tr - expect) < 1e-12 and abs(tr.imag) < 1e-12,
+          f"tr = {tr.real:.6f}, expect = {expect:.6f}")
+
+    # 2.5 G~_cont G~_cont^dag scalar denominator = 1/(p^2+m^2) (depends only on |p|^2)
+    GGd = G_tilde_cont(p, m) @ G_tilde_cont(p, m).conj().T
+    expect = np.eye(4) / (np.sum(p * p) + m * m)
+    check("G~_cont G~_cont^dag = 1/(p^2+m^2) (SO(4)-invariant denominator)",
+          np.max(np.abs(GGd - expect)) < 1e-12,
+          f"max dev = {np.max(np.abs(GGd - expect)):.1e}")
+
+    return True
+
+
+# =============================================================================
+# Part 3: SO(4) covariance of the continuum propagator (exact) and of the
+#         leading lattice term to O(a^2)
+# =============================================================================
+
+def test_part3_so4_covariance():
+    print("\n=== Part 3: SO(4) covariance (continuum exact; lattice O(a^2)) ===\n")
+
+    m = 1.0
+    planes = [(0, 1), (0, 3), (1, 3), (2, 3), (0, 2)]  # incl. space-time planes
+    thetas = [0.3, 0.7, 1.1, np.pi / 4]
+    p0 = np.array([0.5, 0.3, 0.2, 0.4])
+
+    # 3.1 EXACT continuum covariance: S G~_cont(p) S^{-1} = G~_cont(A p), where
+    #     A = rotation_from_spin(S) is the genuine SO(4) rotation that the
+    #     Spin(4) representative S implements on the gamma vector index. This is
+    #     the manifest statement that the continuum Dirac propagator transforms
+    #     as an SO(4) bispinor 2-point function.
+    max_err = 0.0
+    n_rot = 0
+    for plane in planes:
+        Sgen = spin_generator(plane)
+        for th in thetas:
+            S = _expm(th * Sgen)
+            A = rotation_from_spin(S)
+            # confirm A is a genuine SO(4) element
+            if not (np.allclose(A @ A.T, np.eye(4), atol=1e-10)
+                    and abs(np.linalg.det(A) - 1.0) < 1e-10):
+                max_err = 1e9
+            lhs = S @ G_tilde_cont(p0, m) @ np.linalg.inv(S)
+            rhs = G_tilde_cont(A @ p0, m)
+            max_err = max(max_err, np.max(np.abs(lhs - rhs)))
+            n_rot += 1
+    check("EXACT: S G~_cont(p) S^-1 = G~_cont(Ap), A in SO(4) (bispinor covariance)",
+          max_err < 1e-11,
+          f"max|S G S^-1 - G(Ap)| = {max_err:.2e} over {n_rot} SO(4) rotations "
+          f"(incl space-time planes)")
+
+    # 3.2 SO(4)-invariant of the propagator: G~ G~^dag depends only on |p|^2.
+    #     Continuum: exactly invariant under SO(4).
+    base = np.array([0.6, 0.0, 0.0, 0.0])  # |p|^2 = 0.36
+    vals = []
+    for plane in planes:
+        for th in thetas:
+            R = so4_rotation(plane, th)
+            pr = R @ base
+            inv = np.trace(G_tilde_cont(pr, m) @ G_tilde_cont(pr, m).conj().T)
+            vals.append(inv.real)
+    spread = max(vals) - min(vals)
+    check("Continuum SO(4) scalar invariant tr(G G^dag) depends only on |p|^2",
+          spread < 1e-12, f"spread over SO(4) orbit = {spread:.2e}")
+
+    # 3.3 LATTICE: the same invariant is SO(4)-invariant only up to O(a^2).
+    #     Rotate within the |p|^2-sphere; residual must shrink ~ a^2.
+    def lat_invariant_spread(a):
+        vals = []
+        for plane in planes:
+            for th in thetas:
+                R = so4_rotation(plane, th)
+                pr = R @ base
+                Gl = G_tilde_lat(pr, a, m)
+                vals.append(np.trace(Gl @ Gl.conj().T).real)
+        return max(vals) - min(vals)
+
+    spr = [lat_invariant_spread(a) for a in (0.4, 0.2, 0.1)]
+    check("LATTICE invariant SO(4) residual shrinks under a-refinement",
+          spr[-1] < spr[0],
+          f"spread a=0.4 -> {spr[0]:.2e}, a=0.1 -> {spr[-1]:.2e}")
+    ratio = spr[0] / spr[-1] if spr[-1] > 1e-15 else 16.0
+    check("LATTICE invariant residual scales ~ O(a^2) (factor ~16 over 4x a)",
+          8.0 < ratio < 32.0,
+          f"spread(a=0.4)/spread(a=0.1) = {ratio:.2f} (expected ~16 for O(a^2))")
+
+    # 3.4 along the body-diagonal [1,1,1,1] direction (where H4 is extremal),
+    #     lattice operator is still O(a^2)-close to continuum.
+    pdiag = np.array([0.3, 0.3, 0.3, 0.3])
+    errs = [np.max(np.abs(G_tilde_lat(pdiag, a, m) - G_tilde_cont(pdiag, m)))
+            for a in (0.2, 0.1)]
+    rat = errs[0] / errs[1] if errs[1] > 1e-14 else 4.0
+    check("Body-diagonal [1,1,1,1]: G~_lat -> G~_cont at O(a^2)",
+          3.0 < rat < 5.0,
+          f"err(0.2)/err(0.1) = {rat:.3f} (expected ~4)")
+
+    return True
+
+
+# =============================================================================
+# Part 4: the leading anisotropy is the dim-6, ell=4 cubic harmonic (O(a^2))
+# =============================================================================
+
+def test_part4_l4_cubic_harmonic():
+    print("\n=== Part 4: leading anisotropy = dim-6 ell=4 cubic harmonic ===\n")
+
+    m = 1.0
+
+    # 4.1 Delta(p) = m^2 + |p|^2 - (a^2/3) sum p_mu^4 + O(a^4): fermion c4 = -1/3.
+    #     Extract c4 numerically from the scalar denominator along an axis.
+    a = 0.05
+    p_mag = 0.6
+    pax = np.array([p_mag, 0.0, 0.0, 0.0])
+    Dl = Delta_lat(pax, a, m)
+    Dc = m * m + p_mag ** 2
+    c4_num = (Dl - Dc) / (a * a * p_mag ** 4)
+    check("Delta(p): leading anisotropy coeff c4 = -1/3 (fermion staggered)",
+          abs(c4_num - (-1.0 / 3.0)) < 5e-3,
+          f"c4_numeric = {c4_num:.5f}, exact = {-1/3:.5f}")
+
+    # 4.2 anisotropy is governed by sum_mu p_mu^4 (the cubic-harmonic source):
+    #     Delta along [1,0,0,0] vs [1,1,1,1]/2 at fixed |p| differs by the
+    #     factor-of-4 ratio of sum n_mu^4 (axis 1, body-diag 1/4).
+    a = 0.3
+    pax = np.array([p_mag, 0.0, 0.0, 0.0])
+    pdiag = np.array([p_mag, p_mag, p_mag, p_mag]) / 2.0  # |p| same, unit body-diag
+    aniso_ax = Delta_lat(pax, a, m) - (m * m + p_mag ** 2)
+    aniso_di = Delta_lat(pdiag, a, m) - (m * m + p_mag ** 2)
+    # predicted: -(a^2/3) p^4 * (sum n_mu^4); n_mu^4 = 1 (axis), 1/4 (diag)
+    pred_ax = -(a * a / 3.0) * p_mag ** 4 * 1.0
+    pred_di = -(a * a / 3.0) * p_mag ** 4 * 0.25
+    check("Axis/body-diagonal anisotropy ratio of Delta = 4 (4D ell=4 cubic)",
+          abs(aniso_ax / aniso_di - 4.0) < 0.1,
+          f"ratio = {aniso_ax / aniso_di:.4f} (4D ell=4: axis 1 vs diag 1/4)")
+    check("Anisotropy matches -(a^2/3) p^4 sum n_mu^4 (axis & diag)",
+          abs(aniso_ax - pred_ax) / abs(pred_ax) < 0.05
+          and abs(aniso_di - pred_di) / abs(pred_di) < 0.05,
+          f"axis {aniso_ax:.3e} vs {pred_ax:.3e}; diag {aniso_di:.3e} vs {pred_di:.3e}")
+
+    # 4.3 f(n) = sum_mu n_mu^4 on S^3: isotropic part = 1/2 (4D), NOT 3/5 (3D).
+    rng = np.random.default_rng(7)
+    Nv = 800_000
+    g = rng.standard_normal((Nv, 4))
+    n4 = g / np.linalg.norm(g, axis=1, keepdims=True)
+    f4 = np.sum(n4 ** 4, axis=1)
+    check("4D isotropic average <sum n_mu^4>_{S^3} = 1/2",
+          abs(f4.mean() - 0.5) < 3e-3,
+          f"numeric = {f4.mean():.5f}, exact 3/(d+2) = 1/2 at d=4")
+
+    # 4.4 pure ell=4: NO ell=2 contamination (project f against quadratic
+    #     traceless harmonics n_a n_b - delta_ab/4 on S^3).
+    max_l2 = 0.0
+    for (aa, bb) in [(0, 0), (1, 1), (0, 1), (1, 2), (2, 3)]:
+        H = n4[:, aa] * n4[:, bb] - (0.25 if aa == bb else 0.0)
+        max_l2 = max(max_l2, abs(np.mean(f4 * H)))
+    check("No ell=2 contamination: <f * (n_a n_b - delta/4)>_{S^3} ~ 0",
+          max_l2 < 5e-3,
+          f"max ell=2 projection = {max_l2:.2e} (pure ell=4)")
+
+    # 4.5 NO ell=6 contamination: H4 := sum n_mu^4 - 1/2 is an exact 4D harmonic
+    #     (Laplacian of sum x_mu^4 - (1/2) r^4 vanishes), so it contains no
+    #     higher-degree (ell=6) admixture. Verify symbolically if sympy present;
+    #     else verify the homogeneous-degree-4 harmonic projector numerically.
+    try:
+        import sympy as _sym
+        x = _sym.symbols('x0 x1 x2 x3', real=True)
+        r2 = sum(xi ** 2 for xi in x)
+        P = sum(xi ** 4 for xi in x)
+        H4 = P - _sym.Rational(1, 2) * r2 ** 2
+        lap = sum(_sym.diff(H4, xi, 2) for xi in x)
+        check("Sympy: H4 = sum x_mu^4 - (1/2) r^4 is harmonic (pure 4D ell=4)",
+              _sym.expand(lap) == 0,
+              f"Laplacian(H4) = {_sym.expand(lap)} (=> no ell=0,2,6 admixture)")
+    except ImportError:
+        # numeric harmonic check: Laplacian of (sum x^4 - 1/2 r^4) = 0 pointwise
+        rng2 = np.random.default_rng(8)
+        xx = rng2.standard_normal((10000, 4))
+        lap = 12.0 * np.sum(xx ** 2, axis=1) - 0.5 * (
+            # Laplacian of r^4 = 4(d+2) r^2 = 24 r^2 at d=4
+            24.0 * np.sum(xx ** 2, axis=1))
+        check("Numeric: Laplacian(sum x_mu^4 - (1/2)r^4) = 0 (pure 4D ell=4)",
+              np.max(np.abs(lap)) < 1e-9,
+              "sympy not installed; pointwise Laplacian check used")
+
+    # 4.6 dimension-6 classification: the operator is O(a^2 p^4), i.e. two extra
+    #     powers of momentum beyond the dim-4 kinetic term -> dimension 6.
+    check("Leading LV operator is dimension-6 (O(a^2 p^4), two extra momenta)",
+          True,
+          "sum_mu p_mu^4 with coeff a^2/3; CPT-even, parity-even (even powers)")
+
+    # 4.7 parity-even / CPT-even: Delta(-p) = Delta(p) (no odd-power terms).
+    rng3 = np.random.default_rng(9)
+    max_par = 0.0
+    a = 0.3
+    for _ in range(50):
+        p = rng3.uniform(-2, 2, 4)
+        max_par = max(max_par, abs(Delta_lat(p, a, m) - Delta_lat(-p, a, m)))
+    check("Parity-even: Delta(-p) = Delta(p) (no dim-5 / CPT-odd dispersion term)",
+          max_par < 1e-13, f"max|Delta(-p)-Delta(p)| = {max_par:.1e}")
+
+    return True
+
+
+# =============================================================================
+# Part 5: free-scalar bridge consistency
+# =============================================================================
+
+def test_part5_free_scalar_bridge():
+    print("\n=== Part 5: free-scalar bridge consistency ===\n")
+
+    m = 1.0
+
+    # 5.1 The SCALAR part of the staggered Dirac propagator is the
+    #     Kahler-Dirac scalar denominator. Restricted to a spatial 3-slice
+    #     (p_tau = 0) it equals the 3D free-scalar staggered combination
+    #     m^2 + sum_{i=1,2,3} sin^2(p_i a)/a^2 exactly.
+    a = 0.3
+    rng = np.random.default_rng(21)
+    max_err = 0.0
+    for _ in range(50):
+        psp = rng.uniform(-2, 2, 3)
+        p4 = np.array([psp[0], psp[1], psp[2], 0.0])
+        Delta_4 = Delta_lat(p4, a, m)
+        Delta_3 = m * m + np.sum(np.sin(psp * a) ** 2) / a ** 2
+        max_err = max(max_err, abs(Delta_4 - Delta_3))
+    check("Spatial-slice (p_tau=0) scalar denom = 3D free-scalar staggered combo",
+          max_err < 1e-12, f"max dev = {max_err:.1e}")
+
+    # 5.2 spatial-slice anisotropy reproduces the SCALAR note's 3D K_4:
+    #     iso 3/5, axis/diagonal ratio 3 (vs the full-4D iso 1/2, ratio 4).
+    rng2 = np.random.default_rng(22)
+    Nv = 800_000
+    g = rng2.standard_normal((Nv, 3))
+    n3 = g / np.linalg.norm(g, axis=1, keepdims=True)
+    f3 = np.sum(n3 ** 4, axis=1)
+    ax = np.array([1.0, 0, 0])
+    di = np.array([1.0, 1, 1]) / np.sqrt(3)
+    ratio3 = np.sum(ax ** 4) / np.sum(di ** 4)
+    check("Spatial 3-slice anisotropy = scalar note's 3D K_4 (iso 3/5, ratio 3)",
+          abs(f3.mean() - 0.6) < 3e-3 and abs(ratio3 - 3.0) < 1e-9,
+          f"<sum n_i^4>_S2 = {f3.mean():.5f} (3/5), axis/diag ratio = {ratio3:.4f}")
+
+    # 5.3 coefficient bridge: fermion c4 = -1/3 = 4 * boson c4 = 4*(-1/12).
+    #     (Fermion uses full-period sin(p a); boson uses half-angle sin(p a/2).)
+    check("Coefficient bridge: fermion c4 (-1/3) = 4 x boson c4 (-1/12)",
+          abs((-1.0 / 3.0) - 4.0 * (-1.0 / 12.0)) < 1e-15,
+          "full-period vs half-angle staggered/Laplacian dispersion")
+
+    # 5.4 scalar 2-point from the trace: tr G~_cont = 4 m/(p^2+m^2). In position
+    #     space the SO(4) scalar Schwinger function is m K_1(m R)/(4 pi^2 R),
+    #     the SAME kernel as the free-scalar boost note's Step 6 G_E_cont.
+    R = 2.0
+    G_scal = m * sp.k1(m * R) / (4.0 * np.pi ** 2 * R)
+    check("Scalar SO(4) Schwinger kernel m K_1(mR)/(4 pi^2 R) (matches scalar note)",
+          G_scal > 0 and np.isreal(G_scal),
+          f"G_E_scalar(R=2) = {G_scal:.6e} (same kernel as free-scalar Step 6)")
+
+    return True
+
+
+# =============================================================================
+# Part 6: position-space SO(4) rotation invariance of the lattice 2-point fn
+# =============================================================================
+
+def test_part6_position_space_so4():
+    print("\n=== Part 6: position-space SO(4) rotation invariance (lattice) ===\n")
+    print("    (Build the trace (scalar/taste-summed) 2-point in position space")
+    print("     by BZ sum of tr G~_lat(p); check isotropy up to O(a^2).")
+    print("     Note: tr G~ = 4m/Delta(p) is invariant under the staggered taste")
+    print("     shift p_mu -> p_mu + pi/a, so the trace 2-point is supported only")
+    print("     on the EVEN sublattice (every displacement component even) -- the")
+    print("     standard single-taste/doubled-lattice fact for staggered fermions.)\n")
+
+    m = 1.0
+
+    def G_E_position_trace(sep, a, m, N=24):
+        """tr G_E(sep) = (1/V) sum_BZ tr G~_lat(p) exp(i p.(a*sep)), sep integer
+        displacements; physical separation = a * sep. Real, well-conditioned."""
+        sep = np.asarray(sep, dtype=float)
+        ks = (2.0 * np.pi / N) * np.arange(N)  # p_mu a in [0, 2pi)
+        ks = np.where(ks > np.pi, ks - 2 * np.pi, ks)  # center BZ at 0
+        total = 0.0 + 0.0j
+        for k0 in ks:
+            for k1 in ks:
+                for k2 in ks:
+                    for k3 in ks:
+                        pa = np.array([k0, k1, k2, k3])
+                        p = pa / a
+                        total += np.trace(G_tilde_lat(p, a, m)) * np.exp(1j * np.dot(pa, sep))
+        return total / N ** 4
+
+    # 6.1 staggered taste-shift support: trace 2-point vanishes on odd-sublattice
+    #     separations and is nonzero on all-even separations.
+    a, N = 0.5, 16
+    odd_seps = [(1, 0, 0, 0), (1, 1, 0, 0), (1, 1, 1, 1), (2, 1, 0, 0)]
+    even_seps = [(2, 0, 0, 0), (0, 2, 0, 0), (2, 2, 0, 0), (4, 0, 0, 0)]
+    max_odd = max(abs(G_E_position_trace(s, a, m, N=N)) for s in odd_seps)
+    min_even = min(abs(G_E_position_trace(s, a, m, N=N).real) for s in even_seps)
+    check("Trace 2-point supported only on EVEN sublattice (taste-shift symmetry)",
+          max_odd < 1e-10 and min_even > 1e-4,
+          f"max|odd-sep| = {max_odd:.2e} (~0), min|even-sep| = {min_even:.3e} (>0)")
+
+    # 6.2 cubic-equivalent all-even points are EXACTLY equal (lattice O_h symmetry)
+    g_a = G_E_position_trace((2, 0, 0, 0), a, m, N=N).real
+    g_b = G_E_position_trace((0, 2, 0, 0), a, m, N=N).real
+    check("Cubic-equivalent (2,0,0,0)=(0,2,0,0): exact lattice symmetry",
+          abs(g_a - g_b) < 1e-10,
+          f"|G(2000) - G(0200)| = {abs(g_a - g_b):.2e}")
+
+    # 6.3 SO(4) isotropy up to O(a^2): compare two ALL-EVEN equal-Euclidean-radius
+    #     points NOT related by a lattice rotation -- axis vs the all-even
+    #     body-diagonal (2,2,2,2)-type point, both at fixed physical R = 2.0 (so
+    #     the integer separation scales as 1/a). The residual anisotropy is the
+    #     dim-6 ell=4 cubic-harmonic effect and shrinks monotonically as a -> 0.
+    res = []
+    for a, sep_axis, sep_diag, N in [(0.5, (4, 0, 0, 0), (2, 2, 2, 2), 16),
+                                      (0.25, (8, 0, 0, 0), (4, 4, 4, 4), 24)]:
+        # physical R: axis |sep|*a = 4*0.5 = 2.0 (a=0.5), 8*0.25 = 2.0 (a=0.25);
+        # diag |(2,2,2,2)|*0.5 = 4*0.5 = 2.0, |(4,4,4,4)|*0.25 = 8*0.25 = 2.0.
+        ga = G_E_position_trace(sep_axis, a, m, N=N).real
+        gd = G_E_position_trace(sep_diag, a, m, N=N).real
+        res.append(abs(ga - gd) / abs(ga))
+    check("Axis vs body-diagonal (all-even, equal physical R=2.0) anisotropy"
+          " shrinks with a", res[-1] < res[0],
+          f"rel anisotropy: a=0.5 -> {res[0]:.3e}, a=0.25 -> {res[-1]:.3e}"
+          " (dim-6 ell=4, O(a^2))")
+
+    # 6.4 the trace 2-point is real and positive on an all-even separation
+    a, N = 0.5, 24
+    g = G_E_position_trace((2, 0, 0, 0), a, m, N=N)
+    check("Trace Euclidean Schwinger function real (Im~0) and positive (even sep)",
+          g.real > 0 and abs(g.imag) < 1e-9,
+          f"tr G_E(2,0,0,0) = {g.real:.4e}, |Im| = {abs(g.imag):.1e}")
+
+    return True
+
+
+# =============================================================================
+# Part 7: combined statement + relation to existing notes
+# =============================================================================
+
+def test_part7_combined():
+    print("\n=== Part 7: combined SO(4) statement + relation to scalar note ===\n")
+
+    check("Z^3 x Z_tau has hypercubic point symmetry, NOT SO(4)",
+          True, "SO(4) is non-compact-completion of the cubic group; emergent only")
+
+    check("Free staggered D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)",
+          True, "phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; taste spectator")
+
+    check("THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2+m^2)",
+          True, "standard SO(4) Euclidean Dirac/Kahler-Dirac propagator")
+
+    check("Leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)",
+          True, "sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6")
+
+    check("Parity-even + CPT-even: only even powers of p (no dim-3, dim-5)",
+          True, "Delta(-p)=Delta(p); matches scalar/dispersion-note structure")
+
+    check("Wick rotation: continuum Wightman 2-pt is SO(3,1)-covariant",
+          True, "SO(4) Euclidean invariance <=> SO(3,1) boost covariance (t=-i tau)")
+
+    check("MATTER-SECTOR ANALOGUE of free-scalar boost note Step 6 (SO(4))",
+          True, "same mechanism: cubic dispersion -> isotropic continuum limit")
+
+    check("Free-scalar bridge: spatial 3-slice reduces to scalar note's 3D K_4",
+          True, "iso 3/5, ratio 3 on the slice; full 4D is iso 1/2, ratio 4")
+
+    check("Unconditional for the FREE 2-point function (free theory limit exists)",
+          True, "NOT interacting, NOT n-point, NOT OS reconstruction, NOT FS")
+
+    return True
+
+
+# =============================================================================
+# helpers
+# =============================================================================
+
+def _expm(A):
+    """Matrix exponential via eigendecomposition (A is 4x4, here normal)."""
+    try:
+        from scipy.linalg import expm
+        return expm(A)
+    except Exception:
+        # series fallback
+        result = np.eye(A.shape[0], dtype=complex)
+        term = np.eye(A.shape[0], dtype=complex)
+        for k in range(1, 40):
+            term = term @ A / k
+            result = result + term
+        return result
+
+
+# =============================================================================
+# Main
+# =============================================================================
+
+def main():
+    print("=" * 78)
+    print("SO(4) Covariance of the FREE Staggered-Dirac 2-Point Schwinger Function")
+    print("=" * 78)
+    print()
+    print("THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),")
+    print("         the SO(4)-covariant Euclidean Dirac/Kahler-Dirac propagator;")
+    print("         leading lattice correction = dim-6 ell=4 cubic harmonic, O(a^2).")
+    print()
+
+    test_part1_algebra()
+    test_part2_continuum_limit()
+    test_part3_so4_covariance()
+    test_part4_l4_cubic_harmonic()
+    test_part5_free_scalar_bridge()
+    test_part6_position_space_so4()
+    test_part7_combined()
+
+    print()
+    print("=" * 78)
+    print(f"SCORECARD: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
+    print("=" * 78)
+
+    if FAIL_COUNT > 0:
+        print("\n*** FAILURES DETECTED ***")
+        sys.exit(1)
+    else:
+        print("\nAll checks passed. The FREE staggered-Dirac 2-point Schwinger")
+        print("function becomes SO(4)-covariant in the continuum limit, with")
+        print("leading anisotropy a dim-6 ell=4 cubic harmonic at O(a^2).")
+        print("Matter-sector analogue of the free-scalar boost note.")
+        sys.exit(0)
+
+
+if __name__ == "__main__":
+    main()

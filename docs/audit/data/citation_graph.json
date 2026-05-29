@@ -84577,6 +84577,18 @@
       "runner_path": "scripts/frontier_yt_color_projection_correction.py",
       "title": "Y_T Color Projection Matching No-Go and Conditional Family"
     },
+    "yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26": {
+      "claim_id": "yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "`bounded_theorem` (exact support bridge).",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "95ebc62bb9c59f4b0ed6483e0427499739e265a76a9a902982efb8db72128080",
+      "path": "docs/YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_yt_connected_source_augmentation_ideal_selector.py",
+      "title": "Y_T Connected-Source Augmentation-Ideal Selector Narrow Theorem"
+    },
     "yt_constructive_uv_bridge_note": {
       "claim_id": "yt_constructive_uv_bridge_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -87015,6 +87027,7 @@
     "yt_bridge_hessian_selector_note_2026-05-17",
     "yt_bridge_moment_closure_note_2026-05-17",
     "yt_bridge_rearrangement_principle_note_2026-05-17",
+    "yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26",
     "yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26",
     "yt_ew_color_projection_theorem",
     "yt_ew_coupling_bridge_note_2026-05-17",
@@ -87033,7 +87046,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 667,
+      "bounded_theorem": 668,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -87042,7 +87055,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1077,
+      "bounded_theorem": 1078,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -87051,9 +87064,9 @@
       "positive_theorem": 592
     },
     "edge_count": 9912,
-    "leaf_count": 825,
-    "node_count": 2607,
-    "root_count": 869,
-    "runners_with_path": 2182
+    "leaf_count": 826,
+    "node_count": 2608,
+    "root_count": 870,
+    "runners_with_path": 2183
   }
 }

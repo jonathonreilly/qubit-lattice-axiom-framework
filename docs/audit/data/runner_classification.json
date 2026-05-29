@@ -25248,6 +25248,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_yt_color_projection_correction.py"
     },
+    "yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_yt_connected_source_augmentation_ideal_selector.py"
+    },
     "yt_constructive_uv_bridge_note": {
       "assert_count": 0,
       "counts": {
@@ -50887,6 +50899,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_yt_connected_source_augmentation_ideal_selector.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_yt_constructive_uv_bridge.py": {
       "assert_count": 0,
       "claims": [
@@ -57610,11 +57637,11 @@
       "A": 263,
       "B": 294,
       "C": 769,
-      "D": 307,
+      "D": 308,
       "none": 444
     },
-    "runners_classified": 2077,
+    "runners_classified": 2078,
     "runners_with_C": 1010,
-    "runners_with_D": 613
+    "runners_with_D": 614
   }
 }

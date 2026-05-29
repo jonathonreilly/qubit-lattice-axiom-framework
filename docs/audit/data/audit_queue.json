@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 241,
     "high": 315,
-    "leaf": 310,
+    "leaf": 309,
     "medium": 296
   },
   "cycle_break_target_count": 0,
@@ -26170,35 +26170,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_h025_feasibility_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_h025_high_band_boundary_note",
-        "wave_direct_dm_h025_two_point_synthesis_note",
-        "wave_direct_dm_h025_low_band_retention_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_FEASIBILITY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wave_direct_dm_h025_feasibility_probe.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -26800,6 +26771,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/wave_direct_dm_h025_point_runner.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wave_direct_dm_matched_history_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wave_direct_dm_family_scout_note",
+        "wave_direct_dm_portability_batch_note",
+        "wave_direct_dm_h025_feasibility_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/wave_retardation_continuum_limit.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/WAVE_DIRECT_DM_MATCHED_HISTORY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wave_direct_dm_matched_history_probe.py",
       "transitive_descendants": 0
     },
     {
@@ -34771,34 +34770,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_matched_history_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_family_scout_note",
-        "wave_direct_dm_portability_batch_note",
-        "wave_direct_dm_h025_feasibility_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/WAVE_DIRECT_DM_MATCHED_HISTORY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wave_direct_dm_matched_history_probe.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wave_direct_dm_post_fam3_successor_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35262,5 +35233,5 @@
     }
   ],
   "ready_count": 29,
-  "total_pending": 1162
+  "total_pending": 1161
 }

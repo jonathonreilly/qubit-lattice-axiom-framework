@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 581 |
+| **retained_bounded** | 582 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1160 |
+| unaudited | 1159 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,22 +59,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 894 |
+| `audited_clean` | 895 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1390 |
+| `unaudited` | 1389 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1123 |
+| `bounded_theorem` | 1124 |
 | `decoration` | 52 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 117 |
-| `positive_theorem` | 707 |
+| `positive_theorem` | 706 |
 
 | criticality | count |
 |---|---:|
@@ -979,6 +979,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_fam2_seed0_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_seed1_control_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_fam2_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `wave_direct_dm_h025_feasibility_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_high_band_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_low_band_retention_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_seed1_crossfamily_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
@@ -15153,6 +15154,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is now controlled rather than one-strength.  _(class `A`)_
 - **chain closes:** True — The two direct retained-grade control notes provide the exact nulls, common negative sign patterns, weak-field linearity spreads, and seed0/seed1 H=0.25 values needed for the pair synthesis. The conclusion is only the bounded conjunction/comparison of those inputs, with broader portability and family-widening claims explicitly excluded.
 - **rationale:** The row is retagged from positive_theorem to bounded_theorem because its support is finite to the configured Fam2 H=0.25 two-seed ladder and one upstream control input is itself bounded. The synthesis closes as an algebraic/logical aggregation over two retained-grade control-note inputs; no runner is present or needed for this aggregation row. It is not decoration because it aggregates two independent seed-control inputs into a bounded family-pair control/asymmetry surface, rather than restating a single parent by pure algebra. Clean status does not ratify Fam3, seed widening, lab-facing magnitude, Fam1 comparison, or a general H=0.25 portability law.
+
+### `wave_direct_dm_h025_feasibility_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FEASIBILITY_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FEASIBILITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded operational/numerical artifact: the Fam1 seed0 direct-dM matched-history harness at H=0.25 and S=0.004 completes within the declared 1800 s audit budget and emits dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, R_hist=-20.12%, with the result interpreted only as a single-point feasibility/high-band-boundary datum. Portability, mechanism, coarse-to-fine law, and family-wide claims are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-wave-h025-feasibility`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The primary runner calls measure_dm(0.25, S_PHYS, Fam1, drift=0.20, restore=0.70, seed=0), completes under AUDIT_TIMEOUT_SEC=1800, and reports the H=0.25 seed0 direct-dM values used by the source note.  _(class `C`)_
+- **chain closes:** True — The cached runner output matches the source's load-bearing point values: dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, and R_hist=-20.12%. A manual arithmetic check confirms the sign and normalized magnitude from the printed dM values, and the one-hop H=0.25 boundary/synthesis dependencies are retained-bounded for the narrowed interpretation.
+- **rationale:** The row is clean only as a bounded single-run feasibility and boundary datum. The runner computes the stated H=0.25 Fam1 seed0 point through the shared matched-history harness rather than importing the output constants, and the printed values agree with the source's scientific numbers. Residual risk is scope, not arithmetic: runtime/RSS are machine- and cache-dependent operational metadata, and this row does not establish portability, a mechanism, or a refinement-stable amplitude law.
+- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_high_band_boundary_note`
 

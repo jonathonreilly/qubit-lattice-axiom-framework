@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 243,
+    "critical": 242,
     "high": 319,
     "leaf": 314,
     "medium": 322
@@ -8,30 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "omega_lambda_derivation_note",
-      "claim_scope": "Bounded declared-input arithmetic cascade: assuming Omega_b=0.0492, R=Omega_DM/Omega_b=5.38, and Omega_total=1, compute Omega_DM=0.264696, Omega_m=0.313896, Omega_Lambda=0.686104, and record S=R/(31/9)=1.5619354838709678 without deriving the declared premises or cosmology bridges.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "r_base_group_theory_derivation_theorem_note_2026-04-24"
-      ],
-      "direct_in_degree": 12,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.989,
-      "note_path": "docs/OMEGA_LAMBDA_DERIVATION_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_omega_lambda_arithmetic_cascade.py",
-      "transitive_descendants": 253
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36196,6 +36172,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 49,
-  "total_pending": 1198
+  "ready_count": 48,
+  "total_pending": 1197
 }

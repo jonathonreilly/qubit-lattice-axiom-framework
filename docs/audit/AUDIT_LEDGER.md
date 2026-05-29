@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 157 |
+| **retained** | 158 |
 | **retained_no_go** | 172 |
 | **retained_bounded** | 583 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1155 |
+| unaudited | 1154 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 899 |
+| `audited_clean` | 900 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1385 |
+| `unaudited` | 1384 |
 
 | claim_type | count |
 |---|---:|
@@ -348,6 +348,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_current_traceless_generator_selector_no_go_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4878,6 +4879,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The derivation asserts n_eff ~ M^((d_spatial-1)/d_spatial), f_mix ~ (r/L)^(d_spatial), and therefore an approximate alpha ~ 1/d_spatial dimensional scaling for the decoherence ceiling exponent.  _(class `A`)_
 - **chain closes:** False — The key effective-path-count and mixing-fraction scalings are asserted as heuristic, and the one retained-bounded dependency explicitly reports that the matched 2D-vs-4D replay does not support a clean dimension-only escape claim. Without a derivation from the actual DAG path measure or a matched multi-dimensional runner, the exponent law does not close.
 - **rationale:** Issue: the load-bearing n_eff and f_mix scaling steps are hand-waving assumptions rather than derived consequences of the retained graph/path measure. Why this blocks: the note's alpha~1/d trend and 5D/6D predictions cannot be retained as a bounded theorem when the matched 2D/4D dependency says dimension alone is not currently isolated and no primary runner is attached to this row. Repair target: supply a rigorous path-measure theorem or a pre-registered matched-dimensional sweep that controls topology/connectivity and reproduces the exponent trend. Claim boundary until fixed: the note is usable as an organizing heuristic and prediction sketch, but not as a retained dimensional exponent mechanism.
+- **auditor confidence:** high
+
+### `f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`F_WEDGE_F_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/F_WEDGE_F_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone exterior-algebra theorem: for a 2-form omega on a real d-dimensional vector space/manifold, omega wedge omega is homogeneous of degree 4 when nonzero, and a nonzero wedge-square is a top-degree form exactly when d=4; at d<4 the wedge-square vanishes and at d>4 any nonzero wedge-square is a non-top 4-form. Gauge curvature, Chern/Pontryagin/anomaly content, Wick rotation, framework field-strength identification, and d=4-from-axioms claims are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-f-wedge-f-top-form-d-four`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The wedge product raises form degree additively, so omega in Lambda^2 gives omega wedge omega in Lambda^4; a nonzero homogeneous p-form is top-degree exactly when p=d, hence the wedge-square is top-degree exactly for d=4.  _(class `A`)_
+- **chain closes:** True — The independent check is pure degree counting in the exterior algebra: 2+2=4 and top degree is d. The explicit d=4 example omega=e1^e2+e3^e4 gives omega^omega=2 e1^e2^e3^e4, while d<4 truncates Lambda^4 to zero and d>4 leaves degree 4 below top degree.
+- **rationale:** The row closes as a standalone exterior-algebra degree theorem. The source's load-bearing step is the standard graded product Lambda^2 x Lambda^2 -> Lambda^4 plus the top-degree criterion p=d, and the exact runner verifies the binomial dimensions, d=4 example, Plucker coefficient, low-dimensional truncation, and d>4 non-top counterfactuals with PASS=96 FAIL=0. Residual risk is downstream overuse: this does not identify omega with a framework gauge field strength, derive Wick rotation or d=4 from the axioms, or import Chern-Weil/instanton/anomaly content.
 - **auditor confidence:** high
 
 ### `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10`

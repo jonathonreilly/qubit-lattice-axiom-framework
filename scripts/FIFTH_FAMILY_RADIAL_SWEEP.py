@@ -63,14 +63,27 @@ def main() -> None:
     print()
     print("SAFE READ")
     print(f"  passed rows: {len(passed)}/{len(rows)}")
+    pass_keys = {(r[0], r[1]) for r in passed}
+    boundary = next(r for r in rows if abs(r[0] - 0.20) < 1e-12 and r[1] == 0)
+    assertions_ok = (
+        pass_keys == {(0.05, 0), (0.30, 1)}
+        and abs(boundary[2]) < 1e-12
+        and abs(boundary[5]) < 1e-12
+        and boundary[3] < 0.0
+        and boundary[4] > 0.0
+        and not boundary[-1]
+    )
     if passed:
         drift_vals = sorted({r[0] for r in passed})
         print(f"  drift coverage: {drift_vals}")
-        print(f"  mean exponent among passes: {_mean([r[6] for r in passed]):.6f}")
+        print(f"  mean exponent among passes: {_mean([r[7] for r in passed]):.6f}")
         print("  this radial-shell family is a real fifth-family basin on the sampled rows")
     else:
         print("  no row survived the exact zero/neutral gate")
         print("  the radial-shell rule is a diagnosed failure on this slice")
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    if not assertions_ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

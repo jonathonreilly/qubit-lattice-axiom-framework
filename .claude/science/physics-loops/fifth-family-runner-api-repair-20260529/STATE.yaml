@@ -1,0 +1,45 @@
+loop_slug: fifth-family-runner-api-repair-20260529
+date: 2026-05-29
+branch: physics-loop/fifth-family-runner-api-repair-20260529
+base: origin/main@96d90f5ed
+target_claim_id: fifth_family_radial_repaired_positive_packet_note_2026-05-29
+target_note: docs/FIFTH_FAMILY_RADIAL_REPAIRED_POSITIVE_PACKET_NOTE_2026-05-29.md
+target_runner: scripts/FIFTH_FAMILY_RADIAL_BASIN.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker_source: audit_ledger
+blocker_summary: >
+  Archived fifth-family radial rows failed because the radial-shell helper API
+  was no longer exported, so live runners could not recompute the finite rows.
+repair_summary: >
+  Restored the radial-shell helper compatibility API, added hard assertion
+  exits to the live radial sweep/basin/F~M scripts, and added a new live
+  positive finite packet queued for independent audit.
+open_imports: []
+new_axioms: []
+verification:
+  py_compile: passed
+  radial_sweep: passed
+  radial_basin: passed
+  radial_fm_transfer: passed
+  radial_failure_audit: passed
+  pipeline: passed
+  diff_check: passed
+  pipeline_result: >
+    Newly seeded one unaudited positive_theorem row. Target row queued at rank
+    890, ready=true, open dependencies empty. Existing fifth-family retained
+    boundary rows remained retained_bounded after restoring generated surfaces
+    from origin/main and rerunning the pipeline. Stale audit invalidations=0.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+pr:
+  number: 2208
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2208
+  state: open_draft
+  merge_state_status: CLEAN
+next_exact_action: refresh audit-unlock backlog and continue campaign
+stop_condition: campaign stops only after refreshed backlog has no viable repair target

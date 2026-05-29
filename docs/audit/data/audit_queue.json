@@ -3,7 +3,7 @@
     "critical": 241,
     "high": 315,
     "leaf": 314,
-    "medium": 306
+    "medium": 305
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16741,33 +16741,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "irregular_directional_observable_note_2026-04-11",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "irregular_sign_core_packet_gate_note",
-        "weak_coupling_retention_note_2026-04-11"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_staggered_self_gravity.py"
-      ],
-      "load_bearing_score": 4.7,
-      "note_path": "docs/IRREGULAR_DIRECTIONAL_OBSERVABLE_NOTE_2026-04-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_irregular_directional_observable.py",
-      "transitive_descendants": 12
     },
     {
       "audit_independence_required": "any_non_self",
@@ -35633,6 +35606,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 36,
-  "total_pending": 1176
+  "ready_count": 35,
+  "total_pending": 1175
 }

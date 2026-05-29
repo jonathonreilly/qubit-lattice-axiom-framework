@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 572 |
+| **retained_bounded** | 573 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1174 |
+| unaudited | 1173 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
@@ -58,22 +58,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 885 |
+| `audited_clean` | 886 |
 | `audited_conditional` | 71 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1404 |
+| `unaudited` | 1403 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1121 |
+| `bounded_theorem` | 1122 |
 | `decoration` | 51 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 117 |
-| `positive_theorem` | 710 |
+| `positive_theorem` | 709 |
 
 | criticality | count |
 |---|---:|
@@ -505,6 +505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7427,6 +7428,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the specified h=0.5, W=8, L=12, max_d=3 harness, Born holds across all five variants while TOWARD holds for the four non-heavy-delete variants and fails for heavy_delete_70.  _(class `C`)_
 - **chain closes:** True — The runner constructs the five graph variants, computes Born, gravity sign, k=0, and no-field controls, and asserts the narrowed table stated in the note. The audited conclusion is explicitly bounded to this harness and does not claim universal graph-structure irrelevance.
 - **rationale:** The current cache reproduces the narrowed table exactly, including the heavy_delete_70 AWAY counterexample that retracts the older universal-robustness framing. The note's safe conclusion follows from the finite runner output and its assertions, with no hidden dependency needed for the bounded harness statement. Residual risk is the ordinary finite-sample limitation: different graph perturbations, strengths, phases, or lattice parameters are outside this audit.
+- **auditor confidence:** high
+
+### `irregular_directional_observable_note_2026-04-11`
+
+- **Note:** [`IRREGULAR_DIRECTIONAL_OBSERVABLE_NOTE_2026-04-11.md`](../../docs/IRREGULAR_DIRECTIONAL_OBSERVABLE_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded off-center/transport-style irregular-graph directional-observable diagnostic on the configured three graph families, G in {10,50,100}, N_STEPS=8, and identity-vs-parity coupling comparison: depth_shift separates 0/9 cases, cut_flux separates 0/9 cases, and frontier_bias separates 4/9 cases. This retains only failure of these three tested candidate observables on this finite surface; it does not assert a universal no-go for all directional observables, packets, graph families, or operating points.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-irregular-directional-observable-2026-05-28`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner's sign-selection check reports depth_shift 0/9, cut_flux 0/9, and frontier_bias 4/9 sign-separated parity-vs-identity cases on the tested families and G sweep.  _(class `C`)_
+- **chain closes:** True — The runner constructs the configured off-center state on the three graph families, evolves identity and parity couplings, computes the three candidate directional observables, and counts sign-separated parity-vs-identity pairs. Manual sign inspection of the printed table confirms 0/9 depth, 0/9 cut flux, and 4/9 frontier-bias separations.
+- **rationale:** Clean as a bounded diagnostic failure surface. The source and runner agree that the two main dynamical observables do not sign-separate on any tested case and the best candidate, frontier current bias, separates only 4/9 cases, so no tested observable qualifies as robust on this finite packet/family/G surface. Residual risk is no-go scope: this audit does not retain a universal obstruction to all graph-native directional observables, and the later centered core_packet separator remains a separate retained_bounded narrower positive surface.
 - **auditor confidence:** high
 
 ### `irregular_sign_core_packet_gate_note`

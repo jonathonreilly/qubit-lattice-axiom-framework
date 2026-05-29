@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 580 |
+| **retained_bounded** | 581 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1162 |
+| unaudited | 1161 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 893 |
+| `audited_clean` | 894 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1392 |
+| `unaudited` | 1391 |
 
 | claim_type | count |
 |---|---:|
@@ -650,6 +650,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
 | `nn_lattice_rescaled_c2_derivation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9776,6 +9777,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source computes relaunch profiles, capture, carry, and relative shift error for the listed top-N classes, and the completed stdout shows no row satisfying all three thresholds. The conclusion is limited to this finite sweep and does not establish any broader persistent-pattern inertial-mass theorem.
 - **rationale:** The source note makes a bounded negative claim and does not overstate it into a positive Newton or inertial-mass theorem. The supplied runner performs a finite propagation/relaunch sweep and the stdout supports the stated negative result: the only row with capture above threshold has rel_shift_err=0.271, far above 0.05. The clean scope is only the enumerated runner configuration and thresholds; broader ordered-lattice or Newton-derivation closure remains outside this claim.
 - **auditor confidence:** medium
+
+### `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`
+
+- **Note:** [`NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Named bounded import of the dust-only Newton-Poisson/Milne-McCrea first integral on a flat homogeneous-isotropic slice: assuming Poisson source rho, pressureless continuity rho*a^3=const, and k=0, obtain H^2=(8*pi*G/3)*rho. Radiation/general-pressure, GR pressure source, framework Newton/G derivation, and downstream cosmology are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-xhigh-2026-05-28-newton-poisson-friedmann`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For dust, integrating a''/a=-(4*pi*G/3)*rho with rho*a^3=const gives H^2=(8*pi*G/3)*rho plus a curvature integration constant, and k=0 sets that constant to zero.  _(class `A`)_
+- **chain closes:** True — The independent check matches the note: with rho=C/a^3, multiplying a''=-(4*pi*G/3)*rho*a by a' integrates to (1/2)a'^2=(4*pi*G/3)C/a+const, hence H^2=(8*pi*G/3)rho+const/a^2; the flat k=0 premise removes the curvature term. The source correctly excludes radiation/general pressure, where rho-only Newtonian acceleration would not supply the GR pressure-source coefficient.
+- **rationale:** The audited claim is only the dust first-integral wrapper, not a derivation of Newton-Poisson, G, GR, radiation, or downstream cosmology. Under the stated retained/accepted inputs, the dust continuity equation supplies the exact factor 8*pi*G/3 and the flatness premise removes the integration constant. Residual risk is confined to downstream consumers: any radiation/general-pressure use still needs a separate retained GR/active-gravitational-mass source lemma.
+- **auditor confidence:** high
 
 ### `newtonian_distance_law_confirmed`
 

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1135 |
+| unaudited | 1136 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -65,11 +65,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1365 |
+| `unaudited` | 1366 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1129 |
+| `bounded_theorem` | 1130 |
 | `decoration` | 52 |
 | `meta` | 237 |
 | `no_go` | 259 |
@@ -81,15 +81,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 378 |
 | `high` | 505 |
 | `medium` | 604 |
-| `leaf` | 1011 |
+| `leaf` | 1012 |
 
 - **Retained pending chain closure:** 10
 - **Citation cycles detected:** 1
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2082
-- runners with (C) first-principles compute hits: 1012
+- runners classified: 2083
+- runners with (C) first-principles compute hits: 1013
 - runners with (D) external comparator hits: 615
 - decoration candidates (no C, no D): 358
 
@@ -117,7 +117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `minimal_axioms_2026-04-11` | meta | critical | 953 | 32.90 | `unaudited` | meta |
 | 17 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 578 | 32.18 | `unaudited` | unaudited |
 | 18 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 935 | 31.87 | `audited_renaming` | ~~audited_renaming~~ |
-| 19 | `cpt_exact_note` | positive_theorem | critical | 928 | 31.36 | `audited_clean` | **retained** |
+| 19 | `cpt_exact_note` | positive_theorem | critical | 929 | 31.86 | `audited_clean` | **retained** |
 | 20 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 576 | 31.17 | `unaudited` | unaudited |
 | 21 | `left_handed_charge_matching_note` | decoration | critical | 694 | 30.44 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 232 | 29.86 | `unaudited` | unaudited |

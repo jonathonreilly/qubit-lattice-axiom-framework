@@ -445,6 +445,10 @@
       "to": "cpt_exact_note"
     },
     {
+      "from": "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
+      "to": "cpt_exact_note"
+    },
+    {
       "from": "accessible_prediction_note",
       "to": "action_normalization_note"
     },
@@ -40125,10 +40129,24 @@
         "cpt_exact_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "89e13c4c542d321c7fbefb0546f794a33da3e07b30b54dd69e113f68983afdd3",
+      "note_hash": "28c5d2f2a89f5a35cf6cb8c853d994a06205990e0aa594f50a3a882a1c91b79e",
       "path": "docs/ABJ_ANOMALY_FRAMEWORK_INTERNAL_U1_JACOBIAN_NARROW_NOTE_2026-05-27.md",
       "runner_path": "scripts/abj_anomaly_framework_internal_u1_jacobian_runner.py",
       "title": "ABJ Anomaly Framework-Internal U(1)_Y Jacobian Narrow Bridge"
+    },
+    "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": {
+      "claim_id": "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cpt_exact_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5c6075d0eed06ac0f48cda22824970d553ebabde486cde350d65e494d87ce2bb",
+      "path": "docs/ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/abj_residual_gw_not_necessary_runner.py",
+      "title": "ABJ Residual Correction: Ginsparg-Wilson Is Not the Obstruction (eps-Gap + chi=0)"
     },
     "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10": {
       "claim_id": "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10",
@@ -42800,7 +42818,7 @@
         "cpt_exact_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6454fe6ccbdab2355dd510bf81d906832662c9d690389d9c16e28190da1b759c",
+      "note_hash": "9fc8e3464f27c690441d22f02c8b44cbffe426377680691c9ec85f627e95ac31",
       "path": "docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md",
       "runner_path": "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py",
       "title": "Finite Z4 Staggered-Grading Trace Theorem (Bounded)"
@@ -87228,7 +87246,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 672,
+      "bounded_theorem": 673,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -87237,7 +87255,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1082,
+      "bounded_theorem": 1083,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -87245,10 +87263,10 @@
       "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9938,
-    "leaf_count": 828,
-    "node_count": 2612,
+    "edge_count": 9939,
+    "leaf_count": 829,
+    "node_count": 2613,
     "root_count": 870,
-    "runners_with_path": 2187
+    "runners_with_path": 2188
   }
 }

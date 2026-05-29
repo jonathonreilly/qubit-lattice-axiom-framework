@@ -68,11 +68,18 @@ def main() -> None:
     print()
     print("SAFE READ")
     print(f"  passed rows: {len(passed)}/{len(rows)}")
+    assertions_ok = (
+        {(r[0], r[1]) for r in passed} == set(TARGETS)
+        and all(abs(r[2] - 1.0) < 0.05 for r in passed)
+    )
     if passed:
         print(f"  mean F~M among passes: {_mean([r[2] for r in passed]):.6f}")
         print("  the fifth-family radial-shell slice preserves weak-field linearity on the sampled rows")
     else:
         print("  no row retained weak-field linearity on this slice")
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    if not assertions_ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

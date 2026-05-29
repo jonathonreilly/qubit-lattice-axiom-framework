@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 566 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1187 |
+| unaudited | 1186 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,21 +59,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 877 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1417 |
+| `unaudited` | 1416 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1119 |
+| `bounded_theorem` | 1120 |
 | `decoration` | 51 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 116 |
-| `positive_theorem` | 713 |
+| `positive_theorem` | 712 |
 
 | criticality | count |
 |---|---:|
@@ -1011,6 +1011,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `assumption_derivation_ledger` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1790,6 +1791,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The central idempotents e_+ = (1 - i omega)/2 and e_- = (1 + i omega)/2 split Cl(3,0) tensor_R C into two M_2(C) summands labelled by omega = +i and omega = -i, and Artin-Wedderburn/Schur gives the unique 2-dimensional simple module in each summand plus finite direct-sum decomposition.  _(class `A`)_
 - **chain closes:** True — Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.
 - **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.
+- **auditor confidence:** high
+
+### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded dimensional-minimality claim combining lattice IR-sum Mermin-Wagner scaling with the D9 long-range-force/kernel condition to argue d=3 is the minimal spatial dimension compatible with continuous SSB and a non-logarithmic long-range force.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From AXIOM_REDUCTION_NOTE D9 and MW1/MW2, d ≥ 3 is required for continuous SSB and the long-range-force condition, so d = 3 is the unique minimal integer satisfying both.  _(class `B`)_
+- **chain closes:** False — The IR-sum scaling exhibit closes, but the full minimality theorem needs the order-parameter Ward/commutator normalization omitted by the direct Mermin-Wagner dependency and a theorem-grade D9/kernel premise rather than the Axiom Reduction meta inventory.
+- **rationale:** Issue: the proof promotes the Bogoliubov+IR sum into a no-continuous-SSB conclusion and then combines it with D9, but the direct Mermin-Wagner dependency explicitly excludes the Ward/commutator-normalized order-parameter extraction, and AXIOM_REDUCTION_NOTE is a meta inventory rather than retained theorem authority for D9. Why this blocks: the runner's I_d(L) table independently checks the d=1 linear, d=2 logarithmic, and d>=3 finite IR behavior, but that does not by itself prove vanishing order parameter or the framework's long-range-force dimension condition. Repair target: supply a retained Ward/commutator normalization lemma for the finite-volume order parameter and a retained theorem-grade D9/kernel-stability authority, then re-run the dimensional-minimality audit. Claim boundary until fixed: the source may cite the checked IR-sum threshold as supporting evidence; it may not retain the full d_s=3 minimality theorem or the d_s=2 continuous-SSB exclusion as closed.
+- **open / conditional deps cited:**
+  - `MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`
+  - `AXIOM_REDUCTION_NOTE.md`
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`

@@ -12934,24 +12934,46 @@
       "verdict_rationale": null
     },
     "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T05:08:13.879084+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_reduction_note": null,
+          "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "Finite Gibbs-state Bogoliubov inequality and lattice IR-sum certificate only; excludes the Ward/commutator-normalized order-parameter extraction and the no continuous-symmetry SSB conclusion."
+        },
+        "dep_claim_type": {
+          "axiom_reduction_note": "meta",
+          "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_reduction_note": "meta",
+          "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": "retained_bounded"
+        },
+        "deps": [
+          "axiom_reduction_note",
+          "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
+        ],
+        "load_bearing_score": 7.172,
+        "runner_hash": "7f10102009669e04a1b6a0d5469a1f6d32310d00e139c41b061da0e39606bbcf",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The IR-sum scaling exhibit closes, but the full minimality theorem needs the order-parameter Ward/commutator normalization omitted by the direct Mermin-Wagner dependency and a theorem-grade D9/kernel premise rather than the Axiom Reduction meta inventory.",
       "claim_id": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Bounded dimensional-minimality claim combining lattice IR-sum Mermin-Wagner scaling with the D9 long-range-force/kernel condition to argue d=3 is the minimal spatial dimension compatible with continuous SSB and a non-logarithmic long-range force.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-29T05:08:13.879084+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -12960,20 +12982,23 @@
         "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.172,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "From AXIOM_REDUCTION_NOTE D9 and MW1/MW2, d \u2265 3 is required for continuous SSB and the long-range-force condition, so d = 3 is the unique minimal integer satisfying both.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "0046b45589b8366a15b7802ba86db8e07645b6634dd662346c409da510664eac",
       "note_path": "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained Ward/commutator normalization for order-parameter extraction and theorem-grade D9/kernel-stability authority, then re-audit the minimality claim.",
+      "open_dependency_paths": [
+        "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+        "docs/AXIOM_REDUCTION_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T20:38:13.943182+00:00",
@@ -13100,18 +13125,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 1,
+        "B": 1,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 4
       },
       "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
       "title": "Axiom-First Coleman\u2013Mermin\u2013Wagner Lattice Analogue on Cl(3) \u2297 Z^d",
       "transitive_descendants": 50,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the proof promotes the Bogoliubov+IR sum into a no-continuous-SSB conclusion and then combines it with D9, but the direct Mermin-Wagner dependency explicitly excludes the Ward/commutator-normalized order-parameter extraction, and AXIOM_REDUCTION_NOTE is a meta inventory rather than retained theorem authority for D9. Why this blocks: the runner's I_d(L) table independently checks the d=1 linear, d=2 logarithmic, and d>=3 finite IR behavior, but that does not by itself prove vanishing order parameter or the framework's long-range-force dimension condition. Repair target: supply a retained Ward/commutator normalization lemma for the finite-volume order parameter and a retained theorem-grade D9/kernel-stability authority, then re-run the dimensional-minimality audit. Claim boundary until fixed: the source may cite the checked IR-sum threshold as supporting evidence; it may not retain the full d_s=3 minimality theorem or the d_s=2 continuous-SSB exclusion as closed."
     },
     "axiom_first_cpt_theorem_stretch_note_2026-04-29": {
       "audit_date": null,

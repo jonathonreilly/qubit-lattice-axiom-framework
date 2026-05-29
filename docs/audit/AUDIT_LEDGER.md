@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 147 |
+| **retained** | 148 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 570 |
+| **retained_bounded** | 568 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1201 |
+| unaudited | 1202 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 21 |
@@ -57,22 +57,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 873 |
+| `audited_clean` | 872 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1431 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1120 |
+| `bounded_theorem` | 1119 |
 | `decoration` | 51 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 116 |
-| `positive_theorem` | 712 |
+| `positive_theorem` | 713 |
 
 | criticality | count |
 |---|---:|
@@ -752,7 +752,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -855,8 +855,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
-| `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `structured_chokepoint_bridge_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
@@ -11151,14 +11150,14 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`
 
 - **Note:** [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded measure-theoretic norm-square identity, real non-negativity, and induced Hermitian positive semidefinite sesquilinear form for (X, μ, Θ, S_+, F) under the stated Θ-invariance and reflection-Hermiticity assumptions.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T190603Z-231ecf63-reflection_positivity_ga-01`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Using Θ-invariance of S_+ and reflection-Hermiticity of F, the reflected expectation becomes ∫_X |ψ²(x)F(x)|² dμ(x), hence a weighted L² norm-square.  _(class `A`)_
-- **chain closes:** True — The identity follows directly from substituting S_+(Θx)=S_+(x), F(Θx)=overline{F(x)}, and ψ²=exp(-S_+) into the displayed integral. No cited authority or external physics input is required for the bounded statement.
-- **rationale:** The load-bearing step is a genuine algebraic identity over the explicit hypotheses in the note. The runner source actually constructs a finite measured-space model with Θ(k)=-k, checks Θ-invariance, Hermiticity, the norm-square identity, non-negativity, and sesquilinear properties, rather than only printing expected constants. The theorem is intentionally narrow and does not import the open Wilson plaquette, fermion determinant, or combined-sector reflection-positivity bridges. A second auditor should note the wording of strict positivity should be read as ψ²F not equal to zero μ-a.e., not nonzero at almost every point.
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260529-rp-gauge-half-cs`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Using S_+(Theta x)=S_+(x) and F(Theta x)=overline{F(x)}, the integrand exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) becomes exp(-2S_+(x)) |F(x)|^2 = |psi^2(x) F(x)|^2.  _(class `A`)_
+- **chain closes:** True — Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
+- **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
 - **auditor confidence:** high
 
 ### `replay_environment_note`
@@ -12908,30 +12907,17 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Clean only as a conditional accepted-premise bridge. Independent algebra confirms the sign, 4*pi factor, C factor, alpha substitution, and g_bare=1 specialization. The runner is SHA-pinned, exits 0, and reports EXACT PASS=41 FAIL=0 plus BOUNDED PASS=11 FAIL=0; the source's verification snippet still says TOTAL PASS=35 FAIL=0, but that is non-load-bearing transcript drift because the current runner adds checks and all current checks pass. No-go discipline gate passed: the wall set collapses to the single local P1 admission; M1 authority is taken from the retained Maradudin parent, not the decoration wrapper as new authority; I2 and g_bare are retained dependencies; C=C_F is part of P1 for this row; multiplicative-bridge and regulator-dependence no-go references are used only as exclusions; and future derivation/retirement paths for P1, C=C_F, Wilson-surface normalization, and the parent bridge remain open. The verdict does not promote P1 to Tier-A, the parent alpha_bare bridge, Newton-law/gravity, 4D loop/Wick, hierarchy, physical continuum, Wilson plaquette matching, generator normalization, or C=C_F derivation claims.
 - **auditor confidence:** high
 
-### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`
-
-- **Note:** [`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](../../docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional bounded theorem: on the canonical single-plaquette Wilson real-positive measure surface, the nonzero Euclidean i-theta ImTr plaquette slot is rejected; on the retained staggered determinant-positive scalar-mass action class, non-real scalar mass phases are rejected, while positive mass sign is conventional.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-gpt-5.5-fresh-2026-05-27-raman-2nd`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Nonzero exp(-S_W - i theta Q_lat[U]) is generically complex and violates the explicit real-positive Wilson surface, while the intersection of determinant positivity with the explicit scalar-mass class leaves only real scalar M=mI.  _(class `A`)_
-- **chain closes:** True — The chain closes only after treating the real-positive Wilson surface and scalar-mass action-class boundary as explicit bounded premises. The note does not close, and correctly excludes, clover/multi-plaquette/axion/non-real-positive routes or unconditional theta selection.
-- **rationale:** Within the narrowed scope, the proof is an algebraic closure over retained one-hop inputs plus explicit action-surface premises, not a hidden derivation from the minimal axiom surface. The runner genuinely constructs SU(3) plaquettes, Wilson phases, staggered determinants, and scalar/pseudoscalar decompositions; it supports the bounded rejection but not any broader no-go. The source's N1-N8 no-go discipline correctly fails the broad universal FtildeF/no-theta claim and preserves the narrowed slot theorem.
-- **auditor confidence:** high
-
 ### `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`
 
 - **Note:** [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](../../docs/STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)
 - **claim_type:** `no_go`
-- **claim_scope:** For finite or compact measured spaces with measure-preserving involution, real Theta-invariant S_+, real Theta-anti-invariant h, and reflection-Hermitian F, the symmetric half-square RP reflected expectation is insensitive to adding i c h to S_+.
+- **claim_scope:** Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T203211Z-e020632a-strong_cp_rp_half_cannot-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** By Theta-anti-invariance of h, exp(-i c (h(x) + h(Theta x))) = 1, so the symmetrically modified reflected expectation equals the original RP norm-square.  _(class `A`)_
-- **chain closes:** True — The cited authority is retained_bounded and supplies the reflected-expectation norm-square identity. The added CP-odd phase cancels pointwise under the stated Theta-anti-invariance, so the no-go closes within the narrowed half-square RP scope.
-- **rationale:** The proof is a direct algebraic closure over the retained upstream identity: h(Theta x) = -h(x) cancels the symmetric phase, and reflection-Hermiticity makes F(Theta x)F(x) a norm-square factor. The runner source genuinely computes the finite-carrier identities with sympy/numpy and does not hard-code contested constants or import external comparators. The no-go gate passes at this packet scope: attacks via non-Hermitian observables, non-anti-invariant h, fixed points, carrier extension, single-side phases, and real-action admissibility either fail by the stated algebra or fall outside the narrowed operational claim. The clean verdict is only for the half-square RP detection failure, not for full continuum theta physics or independent action-class admissibility.
+- **auditor:** `Mencius-fresh-context-019e7149-406d-7741-9daa-2fa46308d218`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The phase factor in the symmetrically modified reflected expectation is exp(-i c (h(x) + h(Theta x))) = 1 by Theta-anti-invariance, so the modified expectation equals the original nonnegative norm-square.  _(class `A`)_
+- **chain closes:** True — The result is exact algebra over the cited RP identity hypotheses: S_+(Theta x)=S_+(x), h(Theta x)=-h(x), and F(Theta x)=conjugate(F(x)). The no-go closes only the RP-half-square repair route, not every possible primitive or action-admissibility route for excluding theta.
+- **rationale:** The load-bearing cancellation is pointwise: the symmetric modification contributes exp(-i c(h(x)+h(Theta x)))=1, so the reflected expectation remains the same weighted norm-square. The cached runner exits 0 with PASS=16 FAIL=0 and checks exact finite carriers plus orbit-pair identities; the runner source computes the stated cancellations rather than printing constants. No-go discipline N1-N8 passes under the narrow scope: alternative RP-detection routes, hidden-wall scan, residual matching, rhetoric narrowing, partial-closure scan, steelman, and cross-cycle echo do not refute the claim that retained RP alone cannot derive the no-bare-theta-slot premise.
 - **auditor confidence:** high
 
 ### `strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10`

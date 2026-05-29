@@ -1,0 +1,30 @@
+slug: ew-kappa-native-selector-20260529
+mode: run
+branch: physics-loop/ew-kappa-native-selector-20260529
+base: origin/main@cebe6742f
+goal: >
+  Test whether the newly landed connected-source augmentation-ideal selector can
+  move the Y_T/EW kappa selectors from bounded/open to framework-native
+  unbounded status without adding axioms.
+target_status: best-honest-status
+cycle_count: 1
+active_route: connected_source_scalar_lift
+hard_residual: >
+  Decide whether a color-matrix connected source quotient is already present in
+  the scalar signed-record / one-Higgs source packets.
+files_touched:
+  - docs/YT_CONNECTED_SOURCE_SELECTOR_SCALAR_LIFT_NO_GO_NOTE_2026-05-29.md
+  - scripts/frontier_yt_connected_source_selector_scalar_lift_no_go.py
+  - outputs/yt_connected_source_selector_scalar_lift_no_go_2026-05-29.json
+  - .claude/science/physics-loops/ew-kappa-native-selector-20260529/
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+proposal_allowed: false
+review_disposition: pass_with_no_go_claim
+pr_status: pending
+next_exact_action: >
+  Commit, push, and open a review PR for the exact negative boundary.
+stop_condition: >
+  Stop this block after the PR is open and verified, then report the next
+  positive science target.

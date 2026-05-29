@@ -1,0 +1,45 @@
+loop_slug: koide-zero-section-scope-repair-20260529
+date: 2026-05-29
+branch: physics-loop/koide-zero-section-scope-repair-20260529
+base: origin/main@3689f9be3
+target_claim_id: koide_native_zero_section_closure_route_note_2026-04-24
+target_note: docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md
+target_runner: scripts/frontier_koide_native_zero_section_closure_route.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+blocker_source: audit_ledger
+blocker_summary: >
+  The algebra closes, but the old row load-bore on three open physical/readout
+  identifications: charged-lepton zero-source readout, Brannen whole-real-Z3
+  endpoint, and unit-preserving determinant-line endpoint.
+repair_summary: >
+  The note and runner now claim only a bounded formal algebra theorem on
+  supplied zero-section variables. The physical/readout identifications are
+  explicit non-claims and not load-bearing inputs.
+open_imports:
+  - physical_charged_lepton_zero_source_readout_out_of_scope
+  - physical_brannen_whole_real_z3_endpoint_out_of_scope
+  - physical_determinant_line_based_readout_out_of_scope
+new_axioms: []
+files_touched:
+  - docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md
+  - scripts/frontier_koide_native_zero_section_closure_route.py
+verification:
+  py_compile: passed
+  runner: passed
+  pipeline: passed
+  pipeline_result: >
+    run_pipeline.sh completed with one re-audit-required row, stale audit
+    invalidations=0, audited_conditional=14, unaudited=1197, ready queue=63
+    after rebasing to origin/main@3689f9be3.
+    The target row is queued unaudited at rank 563 with open_dependency_paths=[].
+  diff_check: passed
+review_loop_disposition: local_self_review_pass_pending_codex_reviewer
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: amend regenerated audit outputs, push, open draft PR
+stop_condition: PR opened, then continue campaign

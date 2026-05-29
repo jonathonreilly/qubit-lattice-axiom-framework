@@ -62436,14 +62436,14 @@
     "koide_native_zero_section_closure_route_note_2026-04-24": {
       "claim_id": "koide_native_zero_section_closure_route_note_2026-04-24",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem.",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b35f37650c48368a382644762e590b107e6d03c07ecbd76969e616e66cfa4263",
+      "note_hash": "88738bbda54c3460ec4e71baecc84588b629211b337e20afc9b7998b431bcaad",
       "path": "docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_native_zero_section_closure_route.py",
-      "title": "Koide native zero-section closure route"
+      "title": "Koide Native Zero-Section Formal Algebra Packet"
     },
     "koide_native_zero_section_nature_review_note_2026-04-24": {
       "claim_id": "koide_native_zero_section_nature_review_note_2026-04-24",

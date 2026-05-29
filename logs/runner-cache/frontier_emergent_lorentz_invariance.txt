@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_emergent_lorentz_invariance.py
-runner_sha256: d9e6624dccf6241cc1083e0fe4abc987148434c7255d58a3a9bcac11db6d13ad
+runner_sha256: cf45285c87ca2982094b078109d4e38a9ea81e6e41b18d9a5a687350aa507d78
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 1.90
 status: ok
 ----- stdout -----
 ========================================================================
@@ -49,6 +49,10 @@ BOUNDED SUPPORT: if the bridge premises are supplied, Lorentz
   [PASS] No ℓ=2 content in anisotropic part  (|⟨f₄|Y₂₀⟩| = 0.0024)
   [PASS] Nonzero ℓ=4 content in anisotropic part  (|⟨f₄|Y₄₀⟩| = 0.4769)
   [PASS] No ℓ=6 content in Σn_i⁴ anisotropic part  (|⟨f₄|Y₆₀⟩| = 0.0009)
+  [PASS] Exact identity Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm)  (max|LHS-RHS| = 7.77e-16 over 50000 random directions (coef = 4√π/15 ≈ 0.472654))
+  [PASS] Old coefficient 4/5 is refuted under normalized Y_lm  (max|LHS-RHS| = 2.77e-01 with the discarded 4/5 coefficient)
+  [PASS] Sympy: trigsimp(Σn_i⁴ − [3/5 + (4√π/15)K₄]) = 0 identically  (symbolic residual = 0)
+  [PASS] Sympy: ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15 (exact projection)  (projected coefficient = 4*sqrt(pi)/15)
 
 === Part 4: CPT protection ===
 
@@ -129,13 +133,13 @@ BOUNDED SUPPORT: if the bridge premises are supplied, Lorentz
   [PASS] Z³ lattice has octahedral symmetry O_h (48 elements), not SO(3,1)  (O_h ⊂ SO(3) ⊂ SO(3,1); broken at the lattice scale)
   [PASS] Staggered dispersion: E² = p² − (a²/3)Σp_i⁴ + O(a⁴)  (leading correction is O(a²p⁴), dimension-6)
   [PASS] Checked CPT/P bridge premises remove dim-3, -4, and -5 LV on this support surface  (leading structural LV operator is dimension-6)
-  [PASS] Angular structure: unique cubic harmonic K₄ at ℓ=4  (Σn_i⁴ = 3/5 + (4/5)K₄; factor-of-3 anisotropy axis vs diagonal)
+  [PASS] Angular structure: unique cubic harmonic K₄ at ℓ=4  (Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm); factor-of-3 anisotropy axis vs diagonal)
   [PASS] Conditional Planck-pin arithmetic gives |δE/E| < 10⁻¹⁹ at highest observable energies  (if a ~ 1/M_Pl is supplied, suppression follows)
   [PASS] CONDITIONAL SUPPORT: Lorentz-violation estimate is Planck-suppressed at E ≪ M_Planck  (O_h + supplied Planck pin gives (E/M_Pl)² support estimate)
   [PASS] PREDICTION: cubic harmonic ℓ=4 signature if LV ever detected  (smoking gun for lattice substructure; testable angular pattern)
 
 ========================================================================
-SUMMARY: PASS=53  FAIL=0
+SUMMARY: PASS=57  FAIL=0
 ========================================================================
 
 All bounded checks passed for the conditional support surface.

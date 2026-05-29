@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 602 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1164 |
+| unaudited | 1163 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 933 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1400 |
+| `unaudited` | 1399 |
 
 | claim_type | count |
 |---|---:|
@@ -1077,6 +1077,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `continuum_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -3649,6 +3650,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact finite-k tangent recursion for the layer-normalized propagator gives dC/dM at M=0 negative for d<=2 and positive for d>=3 on the stated runner geometry.  _(class `C`)_
 - **chain closes:** True — The runner source implements the finite lattice propagator, normalized tangent recursion, centroid derivative, finite-difference check, and parent finite-M replay rather than merely printing constants. The conclusion closes only for the explicitly fixed runner geometry and stated potential family.
 - **rationale:** The load-bearing step is a direct finite-dimensional computation of the derivative of the stated runner update, with no WKB, eikonal, external comparator, or cross-note numerical import doing the sign work. The source code computes the derivative from the specified potential profile and propagator and cross-checks it by finite difference; expected signs are used only as checks, not as substituted derivative values. The note's remaining-wall language passes the bounded-wall gate because it explicitly confines the result to finite runner support and names distinct open routes without promoting them into impossibility claims.
+- **auditor confidence:** high
+
+### `dimension_selection_lower_bound_bridge_v2_2026-05-20`
+
+- **Note:** [`DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md`](../../docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the eikonal derivative-sign bridge for scripts/frontier_dimension_selection.py's analytic potential family, with finite runner sign checks at d in {1,2,3,4,5}; beta/alpha, upper-bound, and wider D=3 claims are out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-223159-c0ee3010-dimension_selection_lowe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the admitted eikonal rule that the packet bends toward larger f_d(r), the runner sign is attractive iff df_d/dr < 0, which holds exactly for d >= 3 and not for d <= 2.  _(class `A`)_
+- **chain closes:** False — The derivative sign calculation closes algebraically once the eikonal bending rule is assumed, and the supplied runner output matches the sign criterion at d=1..5. The full chain to the runner's finite-k normalized centroid shift does not close because the discrete-to-eikonal/WKB sign-preservation bridge is admitted rather than derived or supplied as retained authority.
+- **rationale:** The displayed derivative identities for f_1, f_2, and f_d for d >= 3 are correct, and the supplied runner code/output contains actual finite centroid computations whose signs match the criterion for d=1..5. But the conclusion that this algebraic/eikonal sign governs the runner's normalized finite-k centroid observable still rests on an admitted WKB/discrete-to-eikonal bridge not closed inside the packet. The formula inventory also finds non-load-bearing source drift: the blanket statement that phi < 0 for M > 0 is false for d=2 when 0 < r < 1, including the runner's r=0.5 regularization, and the prose claiming the d>=3 alpha values match the Green-function falloff overstates the supplied table. Therefore the row is conditional rather than clean.
 - **auditor confidence:** high
 
 ### `dimension_selection_note`

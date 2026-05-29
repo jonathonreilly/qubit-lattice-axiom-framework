@@ -43,8 +43,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 41.069,
-      "transitive_descendants": 1073
+      "load_bearing_score": 43.078,
+      "transitive_descendants": 1080
     },
     {
       "claim_id": "yt_ward_identity_derivation_theorem",

@@ -19450,11 +19450,15 @@
     },
     {
       "from": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
-      "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+      "to": "minimal_axioms"
     },
     {
       "from": "no_per_site_chirality_theorem_note_2026-05-02",
-      "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "no_per_site_chirality_theorem_note_2026-05-02",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "n_eff_from_three_generations_theorem_note_2026-04-24",
@@ -20354,7 +20358,11 @@
     },
     {
       "from": "per_site_su2_spin_half_theorem_note_2026-05-02",
-      "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "per_site_su2_spin_half_theorem_note_2026-05-02",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "physical_lattice_foundational_interpretation_note_2026-05-08",
@@ -22646,7 +22654,7 @@
     },
     {
       "from": "q_integer_spectrum_theorem_note_2026-05-02",
-      "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+      "to": "minimal_axioms"
     },
     {
       "from": "radian_bridge_expanded_inventory_bounded_note_2026-05-10_radianexp",
@@ -67993,14 +68001,14 @@
     },
     "no_per_site_bosonic_ccr_theorem_note_2026-05-02": {
       "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "54b0a371479eee86563104268b8135cda3dbd4255294a4a6611a84ee94478257",
+      "note_hash": "94df97dba846db57cb786cb7002dd41b250e5b577c13609724aecc0a8f68fd17",
       "path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
       "title": "No Per-Site Bosonic CCR on Cl(3) Lattice Sites"
@@ -68011,13 +68019,14 @@
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        "minimal_axioms",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ff529bb3e0ab5ee86bd5e039fe4e9721268464fdf866bb1e9e9626093266c5eb",
+      "note_hash": "2cdd539b9054b4e796c7a04bb5afbfe78639d3b0118faa50dd20735fa22d4eb0",
       "path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/no_per_site_chirality_check.py",
-      "title": "No Per-Site \u03b3_5 Chirality Operator on Cl(3) Pauli Rep"
+      "title": "No Per-Site \u03b3_5 Chirality Operator in the A1 Qubit Algebra"
     },
     "nonlabel_grown_basin_note": {
       "claim_id": "nonlabel_grown_basin_note",
@@ -68961,13 +68970,14 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        "minimal_axioms",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d0d7638afb212531bbc0474d17b5822785fc916e59783c593954542fc87d8d33",
+      "note_hash": "4582f786f1112dbf7713f81595d7b296ccce626d0477d5918e9a3894a211b3d6",
       "path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/per_site_su2_spin_half_check.py",
-      "title": "Per-Site Cl(3) Hilbert Carries the Unique j = 1/2 Spin Irrep of su(2)"
+      "title": "Per-Site Pauli Action Carries the Unique j = 1/2 su(2) Module"
     },
     "periodic_2d_wraparound_fix_note_2026-04-11": {
       "claim_id": "periodic_2d_wraparound_fix_note_2026-04-11",
@@ -74121,13 +74131,13 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8cdee38cec613f2e240ba086899ddd6df8c5231639d790cdd2c5a5437d405e9e",
+      "note_hash": "a790a5671fb9524e7ad56a2e6c16014eef523a9fb03ef7dba5213e1b4b81440a",
       "path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/q_integer_spectrum_check.py",
-      "title": "Per-Site n\u0302 \u2208 {0, 1} \u21d2 Total Q\u0302 Integer Spectrum on Framework Fock Space"
+      "title": "Per-Site Qubit Occupation Count Has Integer Spectrum"
     },
     "qcd_low_energy_running_bridge_note_2026-05-01": {
       "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
@@ -87282,21 +87292,21 @@
       "bounded_theorem": 674,
       "decoration": 1,
       "meta": 192,
-      "no_go": 85,
+      "no_go": 86,
       "none": 1430,
       "open_gate": 55,
-      "positive_theorem": 177
+      "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1084,
       "decoration": 1,
       "meta": 192,
-      "no_go": 188,
+      "no_go": 189,
       "none": 426,
       "open_gate": 132,
-      "positive_theorem": 591
+      "positive_theorem": 590
     },
-    "edge_count": 9943,
+    "edge_count": 9945,
     "leaf_count": 826,
     "node_count": 2614,
     "root_count": 871,

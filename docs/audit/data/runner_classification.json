@@ -16444,19 +16444,19 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/no_per_site_bosonic_ccr_check.py"
     },
     "no_per_site_chirality_theorem_note_2026-05-02": {
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 6,
         "D": 0
       },
@@ -17128,7 +17128,7 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 7,
         "D": 0
       },
@@ -18880,7 +18880,7 @@
       "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 7,
         "D": 1
       },
@@ -54824,12 +54824,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/no_per_site_chirality_check.py": {
@@ -54839,7 +54839,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 6,
         "D": 0
       },
@@ -55019,7 +55019,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 7,
         "D": 0
       },
@@ -55610,7 +55610,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 7,
         "D": 1
       },
@@ -57780,13 +57780,13 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 358,
     "dominant_class_distribution": {
       "A": 266,
-      "B": 294,
+      "B": 295,
       "C": 771,
       "D": 308,
-      "none": 444
+      "none": 443
     },
     "runners_classified": 2083,
     "runners_with_C": 1014,

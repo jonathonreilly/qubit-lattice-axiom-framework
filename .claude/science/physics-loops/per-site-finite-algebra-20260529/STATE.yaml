@@ -1,0 +1,48 @@
+loop_slug: per-site-finite-algebra-20260529
+branch: physics-loop/per-site-finite-algebra-20260529
+base: origin/main
+mode: science_fix_loop
+current_goal: >
+  Repair audited conditional per-site finite-algebra rows by replacing the
+  obsolete physical-Hilbert dependency with A1-native M_2(C) local algebra.
+target_status: proposed_retained_after_independent_audit
+actual_current_surface_status: proposed_retained
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+block_count: 1
+files_touched:
+  - docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md
+  - docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md
+  - docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md
+  - docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md
+  - scripts/no_per_site_bosonic_ccr_check.py
+  - scripts/q_integer_spectrum_check.py
+  - scripts/per_site_su2_spin_half_check.py
+  - scripts/no_per_site_chirality_check.py
+source_repairs:
+  no_per_site_bosonic_ccr_theorem_note_2026-05-02:
+    old_blocker: "depended on older per-site uniqueness row for physical dim_C H_x = 2"
+    repair: "direct A1 M_2(C) trace no-go"
+    claim_type_after_pipeline: no_go
+    queue_ready: true
+  q_integer_spectrum_theorem_note_2026-05-02:
+    old_blocker: "depended on older per-site uniqueness row for framework Fock/charge reading"
+    repair: "A1 qubit rank-one projection occupation-count theorem; physical charge out of scope"
+    claim_type_after_pipeline: positive_theorem
+    queue_ready: true
+  per_site_su2_spin_half_theorem_note_2026-05-02:
+    old_blocker: "depended on older per-site uniqueness row for physical spin/H_x identification"
+    repair: "A1 Pauli local su(2) action S_i = sigma_i/2; physical spin generator out of scope"
+    claim_type_after_pipeline: positive_theorem
+    queue_ready: true
+  no_per_site_chirality_theorem_note_2026-05-02:
+    old_blocker: "conditional on identifying H_x with supplied single 2D Pauli Cl(3) module"
+    repair: "direct A1 M_2(C) no-go for an internal gamma_5 anticommuting with all Pauli generators"
+    claim_type_after_pipeline: no_go
+    queue_ready: true
+verification:
+  py_compile: passed
+  runners: passed
+  audit_pipeline: passed
+  audit_lint: "passed with notices only"
+next_exact_action: "Open PR for review-loop/auditor extraction; do not merge from this loop."

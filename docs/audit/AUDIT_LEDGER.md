@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 594 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1199 |
+| unaudited | 1198 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
-| ~~audited_renaming~~ | 22 |
+| ~~audited_renaming~~ | 23 |
 | ~~audited_conditional~~ | 18 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
-| `audited_renaming` | 22 |
-| `unaudited` | 1435 |
+| `audited_renaming` | 23 |
+| `unaudited` | 1434 |
 
 | claim_type | count |
 |---|---:|
@@ -1187,6 +1187,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -6726,6 +6727,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current Higgs runner shows that the framework has nontrivial quantitative Higgs behavior once the lattice Coleman-Weinberg mechanism is active.  _(class `C`)_
 - **chain closes:** True — For this bounded scope, the note does not claim an exact Higgs-mass derivation; it claims only that the runner exhibits nontrivial CW Higgs behavior and supports bounded studies. The completed runner computes CW potential/SSB scans and ballpark mass-ratio behavior, while its failed exact-coupling/crossing checks are consistent with the note's explicit boundary.
 - **rationale:** The source note is narrowly scoped: it is a support note for bounded Higgs quantitative behavior and explicitly excludes standalone exact m_H authority. The runner is not clean for exact Higgs closure, but that is not the claim under audit; the two completed failures show missing exact coupling/crossing closure and reinforce the boundary. Within the bounded scope, the source note and completed runner evidence close without promoting an exact Higgs-mass derivation.
+- **auditor confidence:** high
+
+### `higgs_mass_from_axiom_note`
+
+- **Note:** [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](../../docs/HIGGS_MASS_FROM_AXIOM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the demoted claim that V_taste's symmetric-point per-channel curvature magnitude, rescaled by the admitted VEV v and canonical u_0, gives m_curv_tree = v/(2u_0) = 140.3 GeV, with N_c canceling and no Higgs-pole claim.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-higgs_mass_from_axiom_no`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Define m_curv_tree² as the per-channel symmetric-point curvature times the externally-fixed v² scale: m_curv_tree² := (4/u_0²)/N_taste · v² = v²/(4u_0²).  _(class `E`)_
+- **chain closes:** True — The algebra from the stated V_taste form to the per-channel curvature and v/(2u_0) closes internally. The closure is definitional for the constructed scale m_curv_tree, not a derivation of a physical Higgs mass or of the admitted u_0 and v inputs.
+- **rationale:** The repaired note no longer overclaims a Higgs pole and correctly presents the 140.3 GeV number as a symmetric-point curvature scale. However, the load-bearing move is the definition of m_curv_tree as per-channel dimensionless curvature multiplied by the external VEV scale, so the audited conclusion is a definition plus algebraic substitution. The runner verifies that algebra and source-note hygiene, but it hard-codes the canonical inputs V_GEV, U_0, N_TASTE and does not derive them from the cited packet.
+- **open / conditional deps cited:**
+  - `HIGGS_FROM_LATTICE_NOTE.md`
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `higgs_mechanism_note`

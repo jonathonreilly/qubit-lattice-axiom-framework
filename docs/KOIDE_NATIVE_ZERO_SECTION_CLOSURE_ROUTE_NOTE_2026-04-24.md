@@ -1,191 +1,94 @@
-# Koide native zero-section closure route
+# Koide Native Zero-Section Formal Algebra Packet
 
-**Date:** 2026-04-24
+**Date:** 2026-04-24 (2026-05-29 scope repair).
 **Runner:** `scripts/frontier_koide_native_zero_section_closure_route.py`
-**Claim type:** bounded_theorem
-**Status:** bounded_conditional native route; not proposed_retained-only closure
-**Retained scope:** class-A symbolic algebra checks the runner verifies under three
-admitted identifications (see "2026-05-19 audit-conditional repair" below).
-**Current-surface firewall:** this row may be cited on the actual current
-surface only as conditional support for the native zero-section route. It may
-not be cited as a retained Koide Q/delta closure unless the three
-identifications named below are independently derived and audited.
+**Claim type:** bounded_theorem.
+**Status:** bounded-support formal algebra; not a retained Koide closure.
+**Status authority:** independent audit lane only.
 
-## 2026-05-26 conditional-use firewall
+## 2026-05-29 Scope Repair
 
-actual_current_surface_status: conditional-support / bounded-support
-conditional_surface_status: `Q = 2/3` and `delta_open = 2/9` follow only under
-the three named zero-section/readout identifications.
-proposal_allowed: false
-proposal_allowed_reason: this row still depends on the admitted Brannen
-real-`Z_3` primitive endpoint, unit-preserving determinant-line readout, and
-charged-lepton zero-source source-response readout.
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
+The conditional audit accepted the finite-dimensional algebra but found three
+physical/readout identifications still open:
 
-This note does not derive any of the three identifications. It records the
-finite-dimensional algebra and arithmetic consequences that follow after those
-identifications are supplied. Downstream use must keep that condition attached:
+1. the charged-lepton scalar readout as a zero-source coefficient;
+2. the physical Brannen endpoint as the whole real nontrivial `Z_3` primitive;
+3. the open determinant-line endpoint readout as unit-preserving and based.
 
-1. The `Q = 2/3` conclusion is conditional on the charged-lepton scalar being
-   the zero-source source-response coefficient on the normalized second-order
-   carrier.
-2. The no-spectator conclusion is conditional on the physical Brannen endpoint
-   being the whole real nontrivial `Z_3` primitive rather than a rank-one
-   selected line.
-3. The `c = 0` endpoint conclusion is conditional on a unit-preserving based
-   determinant-line readout rather than an unbased torsor coordinate.
+This repair removes those physical identifications from the load-bearing
+surface. The current row is only a formal zero-section algebra packet. It
+proves what follows after the formal substitutions are supplied; it does not
+derive why those substitutions are the physical charged-lepton or Brannen
+readouts.
 
-The repair introduces no new axiom and no new admitted premise. It narrows the
-row's usable current-surface status so independent audit can decide whether
-the firewall is sufficient or whether one of the three identifications must be
-split into a separate upstream theorem.
+No new axiom is introduced. No mass data, fitted Koide value, target endpoint,
+or observational selector is used.
 
-## Purpose
+## In-Scope Theorem
 
-Figure out how the Koide lane could close natively after the residual
-cohomology obstruction reduced the gap to one zero-section theorem:
+The runner verifies the following finite symbolic claims.
 
-```text
-z = 0
-spectator = 0
-c = 0.
-```
+1. For the formal source label `z`, define
 
-## Route
+   ```text
+   w_+ = (1 + z)/2,
+   r = (1 - w_+)/w_+,
+   Q = (1 + r)/3.
+   ```
 
-The viable native route is not another rank-one selected-line theorem.  It is:
+   The formal zero section `z = 0` gives `w_+ = 1/2`, `K_TL = 0`, and
+   `Q = 2/3`. A nonzero source label remains a falsifier; for example
+   `z = -1/3` gives `Q = 1`.
 
-```text
-Q:
-  native zero-source charged-lepton scalar readout
-  -> z = 0
-  -> K_TL = 0
-  -> Q = 2/3.
+2. On the real nontrivial `Z_3` doublet with generator rotation by `2 pi/3`,
+   the equivariant real endomorphisms are exactly `a I + b J`, `J^2 = -I`.
+   Solving the equivariant idempotent equation gives only `0` and `I`.
+   Hence a rank-one selected/spectator line inside the real doublet is not
+   `Z_3`-equivariant data.
 
-delta:
-  Brannen endpoint is the whole real nontrivial Z3 primitive
-  -> no equivariant spectator projector
-  -> spectator = 0.
+3. For a formal based endpoint map
 
-  unit-preserving determinant-line endpoint readout
-  -> c = 0.
+   ```text
+   F(phi) = phi + c,
+   ```
 
-  APS fixed-point computation
-  -> eta_APS = 2/9
-  -> delta_open = 2/9.
-```
+   the based-unit condition `F(0) = 0` forces `c = 0`. An unbased torsor
+   coordinate remains the exact falsifier; for example `c = 1/9` shifts the
+   same closed value to `1/3`.
 
-## Real `Z3` Primitive Theorem
+4. The APS fixed-point arithmetic in the runner gives
 
-On the retained real nontrivial `Z3` character pair, the generator is a
-rotation by `2pi/3`.  Its real equivariant endomorphisms are:
+   ```text
+   eta_APS = 2/9.
+   ```
 
-```text
-a I + b J,  J^2 = -I.
-```
+   Under the formal substitutions `selected = 1`, `spectator = 0`, and
+   `c = 0`, the formal open endpoint equals `eta_APS = 2/9`.
 
-Solving the equivariant idempotent equation gives only:
+These are algebraic implications on supplied formal variables. They are not a
+physical charged-lepton Koide closure theorem.
 
-```text
-0
-I.
-```
+## Non-Claims
 
-Therefore the real primitive has no retained `Z3`-equivariant selected/spectator
-projector.  If the Brannen endpoint is this native real primitive, the
-spectator channel is killed by representation theory:
+This row does not prove:
 
-```text
-spectator = 0.
-```
+- that the charged-lepton scalar readout is the zero-source coefficient;
+- that the physical Brannen endpoint is the whole real nontrivial `Z_3`
+  primitive;
+- that the physical open determinant-line readout is unit-preserving or based;
+- retained-only closure of `Q = 2/3`, `delta_open = 2/9`, or full
+  dimensionless Koide;
+- a replacement for any prior no-go against rank-one selected-line routes.
 
-## Rank-One Boundary
-
-A real rank-one line projector inside the real doublet does not commute with
-the retained `Z3` rotation.  So a rank-one selected Brannen line is not native
-to the retained real primitive; it is extra boundary data.
-
-This is the important pivot:
-
-```text
-native closure must identify Brannen delta with the whole real Z3 primitive,
-not with an arbitrary CP1 line inside the primitive.
-```
-
-## Unit Endpoint
-
-For an open determinant-line endpoint coordinate:
-
-```text
-F(phi) = phi + c.
-```
-
-The unit condition:
-
-```text
-F(0) = 0
-```
-
-forces:
-
-```text
-c = 0.
-```
-
-An unbased torsor coordinate remains the exact falsifier.  For example:
-
-```text
-eta_APS = 2/9
-c = 1/9
-delta_open = 1/3.
-```
-
-## Conditional Closure
-
-Under the native zero-section identifications:
-
-```text
-z = 0
-spectator = 0
-c = 0
-```
-
-the runner verifies:
-
-```text
-Q = 2/3
-delta_open = eta_APS = 2/9.
-```
-
-## Review Boundary
-
-This is not yet retained-only closure.  It identifies exactly what a retained
-native closure must prove:
-
-```text
-1. the physical Brannen endpoint is the whole real nontrivial Z3 primitive,
-   not a rank-one selected line inside its multiplicity space;
-
-2. the physical open determinant-line endpoint readout is unit-preserving /
-   based, not an unbased torsor coordinate;
-
-3. the charged-lepton scalar readout is the zero-source source-response
-   coefficient on the normalized second-order carrier.
-```
-
-The old retained no-gos remain valid against the rank-one selected-line route.
-This route says the native closure has to change that interpretation: the
-native object is the irreducible real primitive.
+Those physical/readout identifications remain separate frontier problems and
+are not load-bearing inputs for this narrowed row.
 
 ## Falsifiers
 
-- A retained reason why Brannen delta must be a rank-one line rather than the
-  real nontrivial `Z3` primitive.
-- A retained spectator channel that is `Z3` equivariant on the real primitive.
-- A physical endpoint readout that is genuinely unbased, so `c` is observable.
-- A nonzero charged-lepton selector source that is native rather than a hidden
-  value parameter.
+- A counterexample to the real `Z_3` commutant/idempotent calculation.
+- A `Z_3`-equivariant real rank-one projector inside the nontrivial doublet.
+- A based endpoint map with `F(0) = 0` and nonzero additive offset `c`.
+- A mismatch in the APS arithmetic check for the supplied fixed-point formula.
 
 ## Verification
 
@@ -193,77 +96,18 @@ Run:
 
 ```bash
 python3 scripts/frontier_koide_native_zero_section_closure_route.py
-python3 scripts/frontier_koide_hostile_review_guard.py
-python3 scripts/frontier_koide_lane_regression.py
 ```
 
 Expected closeout:
 
 ```text
-KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE=CONDITIONAL
-CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_Q=TRUE
-CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_DELTA=TRUE
-CONDITIONAL_NATIVE_ZERO_SECTION_IMPLIES_NATIVE_VALUES=TRUE
-RETAINED_ONLY_NATIVE_CLOSURE_CLAIMED=FALSE
-ACTUAL_CURRENT_SURFACE_STATUS=CONDITIONAL_SUPPORT
+KOIDE_NATIVE_ZERO_SECTION_FORMAL_ALGEBRA=TRUE
+FORMAL_ZERO_SECTION_IMPLIES_Q=TRUE
+FORMAL_REAL_Z3_PRIMITIVE_HAS_NO_EQUIVARIANT_SPECTATOR=TRUE
+FORMAL_BASED_ENDPOINT_IMPLIES_DELTA=TRUE
+PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE
+ACTUAL_CURRENT_SURFACE_STATUS=BOUNDED_SUPPORT
+OPEN_IDENTIFICATION_THEOREMS_LOAD_BEARING=FALSE
 AUDIT_REQUIRED_BEFORE_EFFECTIVE_RETAINED=TRUE
 BARE_RETAINED_ALLOWED=FALSE
-RESIDUAL_IDENTIFICATION_DELTA=Brannen_endpoint_is_real_Z3_primitive_not_rank_one_line
-RESIDUAL_TRIVIALIZATION=unit_preserving_determinant_line_endpoint_readout
 ```
-
-## 2026-05-19 audit-conditional repair: narrow to class-A symbolic checks + admit three open identifications
-
-Per the audited_conditional verdict, this note's "exact conditional native
-route" language is narrowed to the class-A symbolic algebra checks that the
-runner actually verifies. The three open identification theorems are moved
-to explicit admitted-context so the retained scope does not overclaim a
-positive_theorem-tier result.
-
-Concretely, what remains retained is the runner's symbolic algebra:
-
-- The `Z_3`-equivariant idempotent computation: on the retained real
-  nontrivial `Z_3` character pair with generator a rotation by `2pi/3`,
-  the real equivariant idempotents in `aI + bJ` (with `J^2 = -I`) reduce
-  to `{0, I}`. This is class-A finite-dimensional linear algebra.
-- The rank-one boundary observation: a real rank-one line projector inside
-  the real doublet does not commute with the retained `Z_3` rotation.
-  Class-A commutator check.
-- The unit-endpoint substitution: under `F(phi) = phi + c` and the unit
-  condition `F(0) = 0`, one gets `c = 0`. Class-A substitution.
-- Under the substitutions `z = 0`, `spectator = 0`, `c = 0`, the closeout
-  flags `Q = 2/3` and `delta_open = eta_APS = 2/9` are class-A
-  arithmetic consequences of those substitutions, not retained physical
-  outputs.
-
-What is now explicitly admitted, not retained:
-
-1. **Brannen-endpoint-is-real-`Z_3`-primitive admission.** The
-   identification that the physical Brannen endpoint is the whole real
-   nontrivial `Z_3` primitive (rather than a rank-one selected line inside
-   its multiplicity space) is an open identification theorem. The runner
-   shows that *if* this identification holds, then `spectator = 0`. It
-   does not derive the identification from retained primitives.
-2. **Unit-preserving determinant-line readout admission.** The
-   identification that the physical open determinant-line endpoint
-   readout is unit-preserving / based (rather than an unbased torsor
-   coordinate) is an open identification theorem. The runner shows that
-   *if* this identification holds, then `c = 0`. It does not derive the
-   identification from retained primitives. An unbased torsor coordinate
-   (e.g. `c = 1/9`, `delta_open = 1/3`) remains the explicit falsifier.
-3. **Charged-lepton zero-source admission.** The identification that the
-   charged-lepton scalar readout is the zero-source source-response
-   coefficient on the normalized second-order carrier (so `z = 0`) is an
-   open identification theorem. The runner shows that *if* this
-   identification holds, then `K_TL = 0` and the route lands at
-   `Q = 2/3`. It does not derive the zero-source identification from
-   retained primitives.
-
-The source-side `claim_type` is `bounded_theorem` because the route is
-exact only *under the three admitted identifications*. The runner's
-symbolic checks remain class-A and unchanged. The previously stated
-route is not a retained-only native closure of the Koide lane.
-
-The original falsifiers section continues to apply: any of the three
-admissions can be falsified by exhibiting a retained-tier reason
-defeating its premise.

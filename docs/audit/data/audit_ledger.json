@@ -282846,24 +282846,58 @@
       "verdict_rationale": "The claim is narrowly bounded and does not overstate beyond the fixed supplied-resource protocol. The load-bearing formula and threshold follow from the stated teleportation-channel derivation and are corroborated by the completed runner across representative resource families and arbitrary random density matrices. No external comparator, tuned numerical match, unsupported physical identification, or unclosed dependency is needed for the scoped conclusion."
     },
     "teleportation_resource_from_poisson_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T22:02:42.483404+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null,
+          "teleportation_apparatus_dynamics_closure_note": "Within the explicit engineered lattice model, a retarded nearest-neighbor carrier, finite-strength Bell-stabilizer transducer, finite spin bath, and branch-independent apparatus ledger jointly pass the stated ordinary state-teleportation gates without claiming matter, energy, object, FTL, unique relativistic-field, continuum-detector, or microscopic Cl(3)/Z^3 Hamiltonian closure.",
+          "teleportation_measurement_record_note": "In the explicit ideal orthogonal Bell-record register model V|Psi> = sum_zx (P_zx^AR tensor I_B)|Psi> tensor |zx>_M, the runner verifies input-independent record/Bob pre-record marginals and branch-conditioned teleportation correction to numerical precision.",
+          "teleportation_poisson_resource_sweep_note": "Bounded numerical sweep of deterministic traced encoded two-qubit teleportation resources on 1d_N8 and 2d_4x4 Poisson-coupled lattices over the stated mass and coupling grid.",
+          "teleportation_resource_fidelity_note": "Supplied-density-matrix, ordinary qubit-state teleportation under an ideal fixed Bell measurement, ideal two-bit classical record, and fixed Bob-side Pauli correction convention; no optimization over local frames or measurements and no claim about preparation dynamics, matter/mass/charge/energy transport, field-theoretic communication, or FTL signaling."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "bounded_theorem",
+          "teleportation_measurement_record_note": "bounded_theorem",
+          "teleportation_poisson_resource_sweep_note": "bounded_theorem",
+          "teleportation_resource_fidelity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta",
+          "teleportation_apparatus_dynamics_closure_note": "retained_bounded",
+          "teleportation_measurement_record_note": "retained_bounded",
+          "teleportation_poisson_resource_sweep_note": "retained_bounded",
+          "teleportation_resource_fidelity_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03",
+          "teleportation_apparatus_dynamics_closure_note",
+          "teleportation_measurement_record_note",
+          "teleportation_poisson_resource_sweep_note",
+          "teleportation_resource_fidelity_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "58372e79a50eaaa488f03eb81365bddab6e0b54c03c4808720aff2d825af5ace",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-teleportation_resource_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the finite small-surface reduced-resource diagnostics, and the source code is a real eigenstate/reduction/fidelity computation rather than a print-only or hard-coded certificate. The chain still does not prove the native preparation/readout theorem or justify the last taste bit as a physical deterministic teleportation carrier.",
       "claim_id": "teleportation_resource_from_poisson_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded small-surface offline extraction diagnostics for the stipulated last-taste-bit logical resource from the 1D N=8 and 2D 4x4 Poisson/CHSH ground states, restricted to ordinary quantum-state teleportation.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T22:02:42.483404+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -282875,22 +282909,24 @@
         "minimal_axioms_2026-05-03"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/frontier_bell_inequality.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Keep the last taste bit of each species as the logical qubit, trace over cells and spectator taste bits, and compute Bell overlap, negativity, CHSH, and standard teleportation fidelity of the resulting two-qubit density matrix.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0473494b6647080959a303ed34f387ddedb83540f51f4c7bfe0c045b8753e53a",
       "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the native preparation/readout theorem and last-taste-bit logical-carrier selection, then rerun the small-surface checks with the Poisson/CHSH machinery source included in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
       "previous_auditor_family": "codex-fresh",
       "previous_audits": [
         {
@@ -283042,18 +283078,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 4
       },
       "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
       "title": "Teleportation Resource From Poisson/CHSH: First Audit",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The bounded diagnostic core is supported: the primary runner imports the Poisson/CHSH construction, diagonalizes the finite Hamiltonians, traces to the stipulated logical qubits, and computes the reported resource diagnostics. However, the note itself admits that the native preparation/readout theorem and last-taste-bit logical-carrier selection are not supplied, and the adjacent retained bounded teleportation notes do not close that bridge. The row therefore remains an open-gate conditional rather than a closed deterministic resource derivation."
     },
     "teleportation_retained_axis_operator_algebra_closure_note": {
       "audit_date": "2026-05-07T17:46:10.663786+00:00",

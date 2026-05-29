@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 599 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1173 |
+| unaudited | 1172 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 930 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1409 |
+| `unaudited` | 1408 |
 
 | claim_type | count |
 |---|---:|
@@ -1090,6 +1090,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -14106,6 +14107,21 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For an arbitrary supplied physical two-qubit resource density matrix rho_RB, the fixed Bell-basis measurement with fixed Bob Pauli correction induces a Pauli channel whose weights are the Bell-basis diagonal overlaps p_g=<beta_g|rho_RB|beta_g>; hence the identity entanglement fidelity is p_00=<Phi+|rho_RB|Phi+> and the qubit average fidelity is F_avg=(1+2 p_00)/3, giving the fixed-protocol threshold p_00>1/2 for beating 2/3.  _(class `C`)_
 - **chain closes:** True — Within the stated fixed protocol, the note supplies the algebraic channel reduction and the completed runner independently implements the same three-qubit protocol, exact Choi average fidelity, threshold brackets, no-record Bob diagnostics, and trace-preservation checks. The reported formula error is numerical roundoff scale and all acceptance gates pass. The broader native resource-preparation and non-ideal operational questions are explicitly outside scope rather than hidden premises for this bounded theorem.
 - **rationale:** The claim is narrowly bounded and does not overstate beyond the fixed supplied-resource protocol. The load-bearing formula and threshold follow from the stated teleportation-channel derivation and are corroborated by the completed runner across representative resource families and arbitrary random density matrices. No external comparator, tuned numerical match, unsupported physical identification, or unclosed dependency is needed for the scoped conclusion.
+- **auditor confidence:** high
+
+### `teleportation_resource_from_poisson_note`
+
+- **Note:** [`TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded small-surface offline extraction diagnostics for the stipulated last-taste-bit logical resource from the 1D N=8 and 2D 4x4 Poisson/CHSH ground states, restricted to ordinary quantum-state teleportation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-teleportation_resource_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Keep the last taste bit of each species as the logical qubit, trace over cells and spectator taste bits, and compute Bell overlap, negativity, CHSH, and standard teleportation fidelity of the resulting two-qubit density matrix.  _(class `C`)_
+- **chain closes:** False — The runner computes the finite small-surface reduced-resource diagnostics, and the source code is a real eigenstate/reduction/fidelity computation rather than a print-only or hard-coded certificate. The chain still does not prove the native preparation/readout theorem or justify the last taste bit as a physical deterministic teleportation carrier.
+- **rationale:** The bounded diagnostic core is supported: the primary runner imports the Poisson/CHSH construction, diagonalizes the finite Hamiltonians, traces to the stipulated logical qubits, and computes the reported resource diagnostics. However, the note itself admits that the native preparation/readout theorem and last-taste-bit logical-carrier selection are not supplied, and the adjacent retained bounded teleportation notes do not close that bridge. The row therefore remains an open-gate conditional rather than a closed deterministic resource derivation.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `teleportation_retained_axis_operator_algebra_closure_note`

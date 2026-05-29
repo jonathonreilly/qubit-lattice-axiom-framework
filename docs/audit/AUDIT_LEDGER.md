@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 162 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 593 |
+| **retained_bounded** | 594 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1134 |
+| unaudited | 1133 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
@@ -59,22 +59,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 917 |
+| `audited_clean` | 918 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1364 |
+| `unaudited` | 1363 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1125 |
+| `bounded_theorem` | 1126 |
 | `decoration` | 52 |
 | `meta` | 237 |
 | `no_go` | 259 |
 | `open_gate` | 117 |
-| `positive_theorem` | 705 |
+| `positive_theorem` | 704 |
 
 | criticality | count |
 |---|---:|
@@ -1006,6 +1006,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_low_band_retention_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_seed1_crossfamily_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `wave_direct_dm_matched_history_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_portability_batch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_seed_band_diagnosis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wave_equation_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -15581,6 +15582,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The synthesis table combines the retained seed0 and seed1 control ladders at Fam1, H=0.25, S=0.004 and asserts common negative delta_hist with seed 1 having the larger-magnitude negative R_hist.  _(class `B`)_
 - **chain closes:** True — Both one-hop control notes are retained-bounded, the direct runner completes in this worktree with PASS=39 FAIL=0, and independent arithmetic on the frozen logs confirms delta_hist = dM(early)-dM(late), negative signs for both seeds, and |R_hist(seed1)| > |R_hist(seed0)| at S=0.004.
 - **rationale:** The source has been narrowed to the retained-core fine-pair comparison and explicitly excludes the older coarse-band reversal/mechanism claims. The runner checks source boundaries, reads only the two Fam1 seed-control logs, verifies exact nulls/sign patterns/spread summaries, and matches the S=0.004 table values. A separate log arithmetic check reproduces the negative deltas and R_hist ordering within rounding. Residual risk is limited to the finite logged control-ladder setup; no family-wide, portability, mechanism, or coarse-band conclusion is retained.
+- **auditor confidence:** high
+
+### `wave_direct_dm_matched_history_note`
+
+- **Note:** [`WAVE_DIRECT_DM_MATCHED_HISTORY_NOTE.md`](../../docs/WAVE_DIRECT_DM_MATCHED_HISTORY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded deterministic-compute result for the Fam1 seed-0 direct-dM matched-history probe at H=0.5 and H=0.35: with matched start/end/final geometry and identical move trace but different timing, the cached runner gives exact S=0 nulls, negative delta_hist for S in {0.002,0.004,0.008}, approximately linear weak-field scaling, and R_hist about -42% to -44%; no portability, multi-seed, H=0.25, continuum, or lab-observable claim is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The matched-history runner computes dM(early) and dM(late) for the two schedules and finds delta_hist<0 at both tested H values with exact S=0 null and weak-field scaling over S=0.002,0.004,0.008.  _(class `C`)_
+- **chain closes:** True — The source table matches the current cached runner output for the stated Fam1 seed-0 setup, and the null/sign/linearity claims are direct arithmetic from that output. The note explicitly excludes portability, multi-seed, H=0.25, continuum-stability, and lab-observable interpretations.
+- **rationale:** The runner computes the stated two-schedule direct-dM observables rather than hard-coding the quoted deltas, and the cached output reproduces the source values at H=0.5 and H=0.35. Independent arithmetic confirms the exact null rows, common negative sign, and approximate weak-field scaling; the H=0.35 geometry drift is disclosed in the source and kept inside the bounded scope. The result is retained only as a narrow deterministic-compute surface, not as an amplitude law, portability result, or physical observable bridge.
 - **auditor confidence:** high
 
 ### `wave_direct_dm_portability_batch_note`

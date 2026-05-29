@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 241,
     "high": 315,
-    "leaf": 284,
+    "leaf": 283,
     "medium": 296
   },
   "cycle_break_target_count": 0,
@@ -26170,34 +26170,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_matched_history_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_family_scout_note",
-        "wave_direct_dm_portability_batch_note",
-        "wave_direct_dm_h025_feasibility_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/WAVE_DIRECT_DM_MATCHED_HISTORY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wave_direct_dm_matched_history_probe.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -34625,6 +34597,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 4,
-  "total_pending": 1136
+  "ready_count": 3,
+  "total_pending": 1135
 }

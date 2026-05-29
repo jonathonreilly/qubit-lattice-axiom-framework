@@ -1,0 +1,205 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py
+runner_sha256: 73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.64
+status: ok
+----- stdout -----
+========================================================================================
+Koide dimensionless 2/9 vs radian 2/9 — native-unit separation narrow theorem
+(Audit-companion runner)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+(S1) Native-unit values: alpha_i = q_i * pi for fixed nonzero rationals q_i
+----------------------------------------------------------------------------------------
+  [PASS] alpha_1 cycle: q_i is a nonzero rational  (q_i = 2)
+  [PASS] alpha_1 cycle: alpha simplifies to q*pi exactly  (alpha = 2*pi, q*pi = 2*pi)
+  [PASS] alpha_2 Z_3-step: q_i is a nonzero rational  (q_i = 2/3)
+  [PASS] alpha_2 Z_3-step: alpha simplifies to q*pi exactly  (alpha = 2*pi/3, q*pi = 2*pi/3)
+  [PASS] alpha_3 Plancherel-step: q_i is a nonzero rational  (q_i = 2/9)
+  [PASS] alpha_3 Plancherel-step: alpha simplifies to q*pi exactly  (alpha = 2*pi/9, q*pi = 2*pi/9)
+  [PASS] alpha_4 Bargmann closed-orbit: q_i is a nonzero rational  (q_i = 1)
+  [PASS] alpha_4 Bargmann closed-orbit: alpha simplifies to q*pi exactly  (alpha = pi, q*pi = pi)
+  [PASS] alpha_5 character-step: q_i is a nonzero rational  (q_i = 2/3)
+  [PASS] alpha_5 character-step: alpha simplifies to q*pi exactly  (alpha = 2*pi/3, q*pi = 2*pi/3)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: q_i is a nonzero rational  (q_i = 1/3)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: alpha simplifies to q*pi exactly  (alpha = pi/3, q*pi = pi/3)
+
+----------------------------------------------------------------------------------------
+(S2) No-rational-solution lemma: c_i * alpha_i = 2/9 has no rational c_i
+----------------------------------------------------------------------------------------
+  [PASS] alpha_1 cycle: sp.solve(c*alpha = 2/9, c[free]) has exactly one formal solution  (sols_free = [1/(9*pi)])
+  [PASS] alpha_1 cycle: formal solution c = 1/(9*pi) is NOT a rational  (csol = 1/(9*pi), type = Mul)
+  [PASS] alpha_1 cycle: formal solution contains pi (transcendental witness)  (csol = 1/(9*pi))
+  [PASS] alpha_1 cycle: rational-domain solution is excluded by pi transcendence  (csol.is_rational = False)
+  [PASS] alpha_1 cycle: trivial c=0 gives 0 != 2/9  (0 * alpha = 0, 2/9 = 2/9)
+  [PASS] alpha_2 Z_3-step: sp.solve(c*alpha = 2/9, c[free]) has exactly one formal solution  (sols_free = [1/(3*pi)])
+  [PASS] alpha_2 Z_3-step: formal solution c = 1/(3*pi) is NOT a rational  (csol = 1/(3*pi), type = Mul)
+  [PASS] alpha_2 Z_3-step: formal solution contains pi (transcendental witness)  (csol = 1/(3*pi))
+  [PASS] alpha_2 Z_3-step: rational-domain solution is excluded by pi transcendence  (csol.is_rational = False)
+  [PASS] alpha_2 Z_3-step: trivial c=0 gives 0 != 2/9  (0 * alpha = 0, 2/9 = 2/9)
+  [PASS] alpha_3 Plancherel-step: sp.solve(c*alpha = 2/9, c[free]) has exactly one formal solution  (sols_free = [1/pi])
+  [PASS] alpha_3 Plancherel-step: formal solution c = 1/pi is NOT a rational  (csol = 1/pi, type = Pow)
+  [PASS] alpha_3 Plancherel-step: formal solution contains pi (transcendental witness)  (csol = 1/pi)
+  [PASS] alpha_3 Plancherel-step: rational-domain solution is excluded by pi transcendence  (csol.is_rational = False)
+  [PASS] alpha_3 Plancherel-step: trivial c=0 gives 0 != 2/9  (0 * alpha = 0, 2/9 = 2/9)
+  [PASS] alpha_4 Bargmann closed-orbit: sp.solve(c*alpha = 2/9, c[free]) has exactly one formal solution  (sols_free = [2/(9*pi)])
+  [PASS] alpha_4 Bargmann closed-orbit: formal solution c = 2/(9*pi) is NOT a rational  (csol = 2/(9*pi), type = Mul)
+  [PASS] alpha_4 Bargmann closed-orbit: formal solution contains pi (transcendental witness)  (csol = 2/(9*pi))
+  [PASS] alpha_4 Bargmann closed-orbit: rational-domain solution is excluded by pi transcendence  (csol.is_rational = False)
+  [PASS] alpha_4 Bargmann closed-orbit: trivial c=0 gives 0 != 2/9  (0 * alpha = 0, 2/9 = 2/9)
+  [PASS] alpha_5 character-step: sp.solve(c*alpha = 2/9, c[free]) has exactly one formal solution  (sols_free = [1/(3*pi)])
+  [PASS] alpha_5 character-step: formal solution c = 1/(3*pi) is NOT a rational  (csol = 1/(3*pi), type = Mul)
+  [PASS] alpha_5 character-step: formal solution contains pi (transcendental witness)  (csol = 1/(3*pi))
+  [PASS] alpha_5 character-step: rational-domain solution is excluded by pi transcendence  (csol.is_rational = False)
+  [PASS] alpha_5 character-step: trivial c=0 gives 0 != 2/9  (0 * alpha = 0, 2/9 = 2/9)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: sp.solve(c*alpha = 2/9, c[free]) has exactly one formal solution  (sols_free = [2/(3*pi)])
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: formal solution c = 2/(3*pi) is NOT a rational  (csol = 2/(3*pi), type = Mul)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: formal solution contains pi (transcendental witness)  (csol = 2/(3*pi))
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: rational-domain solution is excluded by pi transcendence  (csol.is_rational = False)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: trivial c=0 gives 0 != 2/9  (0 * alpha = 0, 2/9 = 2/9)
+
+----------------------------------------------------------------------------------------
+(S3) Separation theorem: 2/9 != c * alpha_i for any c in Q\{0}
+----------------------------------------------------------------------------------------
+  [PASS] alpha_1 cycle: c = 1 gives c*alpha != 2/9  (c*alpha = 2*pi)
+  [PASS] alpha_1 cycle: c = -1 gives c*alpha != 2/9  (c*alpha = -2*pi)
+  [PASS] alpha_1 cycle: c = 1/2 gives c*alpha != 2/9  (c*alpha = pi)
+  [PASS] alpha_1 cycle: c = 1/9 gives c*alpha != 2/9  (c*alpha = 2*pi/9)
+  [PASS] alpha_1 cycle: c = 2/9 gives c*alpha != 2/9  (c*alpha = 4*pi/9)
+  [PASS] alpha_1 cycle: c = 9/2 gives c*alpha != 2/9  (c*alpha = 9*pi)
+  [PASS] alpha_1 cycle: c = 3 gives c*alpha != 2/9  (c*alpha = 6*pi)
+  [PASS] alpha_1 cycle: c = -2/3 gives c*alpha != 2/9  (c*alpha = -4*pi/3)
+  [PASS] alpha_1 cycle: c = 7/4 gives c*alpha != 2/9  (c*alpha = 7*pi/2)
+  [PASS] alpha_2 Z_3-step: c = 1 gives c*alpha != 2/9  (c*alpha = 2*pi/3)
+  [PASS] alpha_2 Z_3-step: c = -1 gives c*alpha != 2/9  (c*alpha = -2*pi/3)
+  [PASS] alpha_2 Z_3-step: c = 1/2 gives c*alpha != 2/9  (c*alpha = pi/3)
+  [PASS] alpha_2 Z_3-step: c = 1/9 gives c*alpha != 2/9  (c*alpha = 2*pi/27)
+  [PASS] alpha_2 Z_3-step: c = 2/9 gives c*alpha != 2/9  (c*alpha = 4*pi/27)
+  [PASS] alpha_2 Z_3-step: c = 9/2 gives c*alpha != 2/9  (c*alpha = 3*pi)
+  [PASS] alpha_2 Z_3-step: c = 3 gives c*alpha != 2/9  (c*alpha = 2*pi)
+  [PASS] alpha_2 Z_3-step: c = -2/3 gives c*alpha != 2/9  (c*alpha = -4*pi/9)
+  [PASS] alpha_2 Z_3-step: c = 7/4 gives c*alpha != 2/9  (c*alpha = 7*pi/6)
+  [PASS] alpha_3 Plancherel-step: c = 1 gives c*alpha != 2/9  (c*alpha = 2*pi/9)
+  [PASS] alpha_3 Plancherel-step: c = -1 gives c*alpha != 2/9  (c*alpha = -2*pi/9)
+  [PASS] alpha_3 Plancherel-step: c = 1/2 gives c*alpha != 2/9  (c*alpha = pi/9)
+  [PASS] alpha_3 Plancherel-step: c = 1/9 gives c*alpha != 2/9  (c*alpha = 2*pi/81)
+  [PASS] alpha_3 Plancherel-step: c = 2/9 gives c*alpha != 2/9  (c*alpha = 4*pi/81)
+  [PASS] alpha_3 Plancherel-step: c = 9/2 gives c*alpha != 2/9  (c*alpha = pi)
+  [PASS] alpha_3 Plancherel-step: c = 3 gives c*alpha != 2/9  (c*alpha = 2*pi/3)
+  [PASS] alpha_3 Plancherel-step: c = -2/3 gives c*alpha != 2/9  (c*alpha = -4*pi/27)
+  [PASS] alpha_3 Plancherel-step: c = 7/4 gives c*alpha != 2/9  (c*alpha = 7*pi/18)
+  [PASS] alpha_4 Bargmann closed-orbit: c = 1 gives c*alpha != 2/9  (c*alpha = pi)
+  [PASS] alpha_4 Bargmann closed-orbit: c = -1 gives c*alpha != 2/9  (c*alpha = -pi)
+  [PASS] alpha_4 Bargmann closed-orbit: c = 1/2 gives c*alpha != 2/9  (c*alpha = pi/2)
+  [PASS] alpha_4 Bargmann closed-orbit: c = 1/9 gives c*alpha != 2/9  (c*alpha = pi/9)
+  [PASS] alpha_4 Bargmann closed-orbit: c = 2/9 gives c*alpha != 2/9  (c*alpha = 2*pi/9)
+  [PASS] alpha_4 Bargmann closed-orbit: c = 9/2 gives c*alpha != 2/9  (c*alpha = 9*pi/2)
+  [PASS] alpha_4 Bargmann closed-orbit: c = 3 gives c*alpha != 2/9  (c*alpha = 3*pi)
+  [PASS] alpha_4 Bargmann closed-orbit: c = -2/3 gives c*alpha != 2/9  (c*alpha = -2*pi/3)
+  [PASS] alpha_4 Bargmann closed-orbit: c = 7/4 gives c*alpha != 2/9  (c*alpha = 7*pi/4)
+  [PASS] alpha_5 character-step: c = 1 gives c*alpha != 2/9  (c*alpha = 2*pi/3)
+  [PASS] alpha_5 character-step: c = -1 gives c*alpha != 2/9  (c*alpha = -2*pi/3)
+  [PASS] alpha_5 character-step: c = 1/2 gives c*alpha != 2/9  (c*alpha = pi/3)
+  [PASS] alpha_5 character-step: c = 1/9 gives c*alpha != 2/9  (c*alpha = 2*pi/27)
+  [PASS] alpha_5 character-step: c = 2/9 gives c*alpha != 2/9  (c*alpha = 4*pi/27)
+  [PASS] alpha_5 character-step: c = 9/2 gives c*alpha != 2/9  (c*alpha = 3*pi)
+  [PASS] alpha_5 character-step: c = 3 gives c*alpha != 2/9  (c*alpha = 2*pi)
+  [PASS] alpha_5 character-step: c = -2/3 gives c*alpha != 2/9  (c*alpha = -4*pi/9)
+  [PASS] alpha_5 character-step: c = 7/4 gives c*alpha != 2/9  (c*alpha = 7*pi/6)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = 1 gives c*alpha != 2/9  (c*alpha = pi/3)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = -1 gives c*alpha != 2/9  (c*alpha = -pi/3)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = 1/2 gives c*alpha != 2/9  (c*alpha = pi/6)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = 1/9 gives c*alpha != 2/9  (c*alpha = pi/27)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = 2/9 gives c*alpha != 2/9  (c*alpha = 2*pi/27)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = 9/2 gives c*alpha != 2/9  (c*alpha = 3*pi/2)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = 3 gives c*alpha != 2/9  (c*alpha = pi)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = -2/3 gives c*alpha != 2/9  (c*alpha = -2*pi/9)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: c = 7/4 gives c*alpha != 2/9  (c*alpha = 7*pi/12)
+
+----------------------------------------------------------------------------------------
+Numerical disagreement at 50 decimal digits
+----------------------------------------------------------------------------------------
+  [PASS] alpha_1 cycle: |alpha - 2/9| > 1e-40 at 50 digits  (|alpha - 2/9| = 6.0609630849573642547030645443367835461721165765280)
+  [PASS] alpha_2 Z_3-step: |alpha - 2/9| > 1e-40 at 50 digits  (|alpha - 2/9| = 1.8721728801709732700862066999641130339092240440278)
+  [PASS] alpha_3 Plancherel-step: |alpha - 2/9| > 1e-40 at 50 digits  (|alpha - 2/9| = 0.47590947857550960854725408517322286315492653319447)
+  [PASS] alpha_4 Bargmann closed-orbit: |alpha - 2/9| > 1e-40 at 50 digits  (|alpha - 2/9| = 2.9193704313675710162404211610572806619749471771529)
+  [PASS] alpha_5 character-step: |alpha - 2/9| > 1e-40 at 50 digits  (|alpha - 2/9| = 1.8721728801709732700862066999641130339092240440278)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: |alpha - 2/9| > 1e-40 at 50 digits  (|alpha - 2/9| = 0.82497532897437552393199223887094540584350091090281)
+
+----------------------------------------------------------------------------------------
+Symbolic transcendence-style witness: alpha_i - 2/9 has nonzero pi-coefficient
+----------------------------------------------------------------------------------------
+  [PASS] alpha_1 cycle: simplify(alpha - 2/9) is not zero  (diff = -2/9 + 2*pi)
+  [PASS] alpha_1 cycle: simplify(alpha - 2/9) is not a rational  (diff = -2/9 + 2*pi, type = Add)
+  [PASS] alpha_1 cycle: alpha is not declared rational by sympy  (alpha.is_rational = False)
+  [PASS] alpha_1 cycle: alpha contains sp.pi as an atom  (atoms(alpha) = {2, pi})
+  [PASS] alpha_2 Z_3-step: simplify(alpha - 2/9) is not zero  (diff = -2/9 + 2*pi/3)
+  [PASS] alpha_2 Z_3-step: simplify(alpha - 2/9) is not a rational  (diff = -2/9 + 2*pi/3, type = Add)
+  [PASS] alpha_2 Z_3-step: alpha is not declared rational by sympy  (alpha.is_rational = False)
+  [PASS] alpha_2 Z_3-step: alpha contains sp.pi as an atom  (atoms(alpha) = {2/3, pi})
+  [PASS] alpha_3 Plancherel-step: simplify(alpha - 2/9) is not zero  (diff = -2/9 + 2*pi/9)
+  [PASS] alpha_3 Plancherel-step: simplify(alpha - 2/9) is not a rational  (diff = -2/9 + 2*pi/9, type = Add)
+  [PASS] alpha_3 Plancherel-step: alpha is not declared rational by sympy  (alpha.is_rational = False)
+  [PASS] alpha_3 Plancherel-step: alpha contains sp.pi as an atom  (atoms(alpha) = {pi, 2/9})
+  [PASS] alpha_4 Bargmann closed-orbit: simplify(alpha - 2/9) is not zero  (diff = -2/9 + pi)
+  [PASS] alpha_4 Bargmann closed-orbit: simplify(alpha - 2/9) is not a rational  (diff = -2/9 + pi, type = Add)
+  [PASS] alpha_4 Bargmann closed-orbit: alpha is not declared rational by sympy  (alpha.is_rational = False)
+  [PASS] alpha_4 Bargmann closed-orbit: alpha contains sp.pi as an atom  (atoms(alpha) = {pi})
+  [PASS] alpha_5 character-step: simplify(alpha - 2/9) is not zero  (diff = -2/9 + 2*pi/3)
+  [PASS] alpha_5 character-step: simplify(alpha - 2/9) is not a rational  (diff = -2/9 + 2*pi/3, type = Add)
+  [PASS] alpha_5 character-step: alpha is not declared rational by sympy  (alpha.is_rational = False)
+  [PASS] alpha_5 character-step: alpha contains sp.pi as an atom  (atoms(alpha) = {2/3, pi})
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: simplify(alpha - 2/9) is not zero  (diff = -2/9 + pi/3)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: simplify(alpha - 2/9) is not a rational  (diff = -2/9 + pi/3, type = Add)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: alpha is not declared rational by sympy  (alpha.is_rational = False)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: alpha contains sp.pi as an atom  (atoms(alpha) = {1/3, pi})
+
+----------------------------------------------------------------------------------------
+Counter-example positive controls
+----------------------------------------------------------------------------------------
+  [PASS] alpha_1 cycle: 0 * alpha = 0 != 2/9 (trivial separation)  (diff = -2/9)
+  [PASS] alpha_2 Z_3-step: 0 * alpha = 0 != 2/9 (trivial separation)  (diff = -2/9)
+  [PASS] alpha_3 Plancherel-step: 0 * alpha = 0 != 2/9 (trivial separation)  (diff = -2/9)
+  [PASS] alpha_4 Bargmann closed-orbit: 0 * alpha = 0 != 2/9 (trivial separation)  (diff = -2/9)
+  [PASS] alpha_5 character-step: 0 * alpha = 0 != 2/9 (trivial separation)  (diff = -2/9)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: 0 * alpha = 0 != 2/9 (trivial separation)  (diff = -2/9)
+  [PASS] alpha_1 cycle: pure rational 2/9 != alpha (radian-bridge identification not native)  (diff = 2/9 - 2*pi)
+  [PASS] alpha_2 Z_3-step: pure rational 2/9 != alpha (radian-bridge identification not native)  (diff = 2/9 - 2*pi/3)
+  [PASS] alpha_3 Plancherel-step: pure rational 2/9 != alpha (radian-bridge identification not native)  (diff = 2/9 - 2*pi/9)
+  [PASS] alpha_4 Bargmann closed-orbit: pure rational 2/9 != alpha (radian-bridge identification not native)  (diff = 2/9 - pi)
+  [PASS] alpha_5 character-step: pure rational 2/9 != alpha (radian-bridge identification not native)  (diff = 2/9 - 2*pi/3)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: pure rational 2/9 != alpha (radian-bridge identification not native)  (diff = 2/9 - pi/3)
+
+----------------------------------------------------------------------------------------
+Sanity: distinct q_i across the six native units
+----------------------------------------------------------------------------------------
+  [PASS] six native-unit constructions enumerated  (len(NATIVE_UNITS) = 6)
+  [PASS] six q_i collapse to five distinct rationals (q_2 = q_5 = 2/3)  (qs = [2, 2/3, 2/9, 1, 2/3, 1/3], distinct = [2/9, 1/3, 2/3, 1, 2])
+
+----------------------------------------------------------------------------------------
+Boundary: no q_i is zero (separation would be vacuous if alpha_i = 0)
+----------------------------------------------------------------------------------------
+  [PASS] alpha_1 cycle: q_i != 0  (q_i = 2)
+  [PASS] alpha_2 Z_3-step: q_i != 0  (q_i = 2/3)
+  [PASS] alpha_3 Plancherel-step: q_i != 0  (q_i = 2/9)
+  [PASS] alpha_4 Bargmann closed-orbit: q_i != 0  (q_i = 1)
+  [PASS] alpha_5 character-step: q_i != 0  (q_i = 2/3)
+  [PASS] alpha_6 selected-line CP^1 Berry-per-step: q_i != 0  (q_i = 1/3)
+
+========================================================================================
+SUMMARY: PASS=146 FAIL=0
+PASSED: 146/146
+========================================================================================
+KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION=TRUE
+PURE_RATIONAL_2_OVER_9_NOT_IN_Q_DOT_ALPHA_FOR_ANY_NATIVE_UNIT=TRUE
+ALL_SIX_NATIVE_UNITS_ARE_RATIONAL_MULTIPLES_OF_PI=TRUE
+NO_NONZERO_RATIONAL_C_SOLVES_C_ALPHA_EQUAL_2_OVER_9=TRUE
+RADIAN_BRIDGE_POSTULATE_P_CLOSURE_ASSERTED=FALSE
+RETAINED_GRADE_CLOSURE_ASSERTED=FALSE
+RETAINED_GRADE_NO_GO_ASSERTED=FALSE
+
+----- stderr -----
+

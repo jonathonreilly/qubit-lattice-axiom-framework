@@ -15,7 +15,7 @@ conditional lemma:
 
 > If a PMNS matrix satisfies a trimaximal second-column residual and a
 > mu-tau modulus residual, then the leading-order TM2 sum rule and the
-> maximal-CP consequence follow.
+> maximal-CP consequence follow on the nonsingular TM2 chamber.
 
 The upstream identification of those residuals with retained
 framework physics remains separate.
@@ -36,8 +36,15 @@ one-Dirac-phase parametrization, and assume:
    ```
    for the relevant mass-index columns, in particular `i = 3`.
 
-3. `sin(theta_13) != 0` when interpreting the Dirac phase. If
-   `sin(theta_13) = 0`, the phase is not fixed by the final step.
+3. The CP-phase conclusion is interpreted only on the nonsingular TM2
+   chamber
+   ```text
+   c12 s12 s13 != 0.
+   ```
+   Equivalently, using the TM2 sum rule below,
+   `0 < sin^2(theta_13) < 2/3`. At the endpoints the final phase
+   coefficient vanishes and the residual equations do not force
+   `delta_CP`.
 
 These are assumptions of this bounded algebra note, not conclusions.
 
@@ -47,7 +54,9 @@ Under the assumptions above:
 
 1. `sin^2(theta_23) = 1/2`.
 2. `3 sin^2(theta_12) cos^2(theta_13) = 1`.
-3. If `sin(theta_13) != 0`, then `cos(delta_CP) = 0`, so
+3. If `c12 s12 s13 != 0` (equivalently
+   `0 < sin^2(theta_13) < 2/3` on the TM2 chamber), then
+   `cos(delta_CP) = 0`, so
    `delta_CP` lies in `{pi/2, 3pi/2}` modulo `2pi`.
 
 ## Proof
@@ -115,8 +124,27 @@ Equation (3) reduces to
 2 c12 s12 s13 cos(delta_CP) = 0.
 ```
 
-For `sin(theta_13) != 0`, and away from singular mixing angles,
-`c12 s12 s13` is nonzero. Hence `cos(delta_CP) = 0`.
+On the nonsingular chamber `c12 s12 s13 != 0`, hence
+`cos(delta_CP) = 0`.
+
+The endpoint caveat is necessary. The TM2 sum rule gives
+
+```text
+c12^2 = (2 - 3 sin^2(theta_13)) / (3 (1 - sin^2(theta_13))).
+```
+
+At `sin^2(theta_13) = 2/3`, `c12 = 0`, so the equation
+
+```text
+2 c12 s12 s13 cos(delta_CP) = 0
+```
+
+is true for every `delta_CP`; maximal CP is not forced there. At
+`sin(theta_13)=0`, the Dirac phase is likewise not fixed by this
+division step. Thus the phase conclusion is exactly the nonsingular
+TM2-chamber consequence, while the TM2 sum rule and `theta_23=pi/4`
+conclusions remain valid at the algebraic endpoints where the formulas
+are defined.
 
 ## Boundaries
 
@@ -139,6 +167,6 @@ PYTHONPATH=scripts python3 scripts/pmns_tm2_residual_consequence_runner.py
 Expected:
 
 ```text
-TOTAL: PASS=15 FAIL=0
+TOTAL: PASS=20 FAIL=0
 VERDICT: conditional TM2 algebraic consequence holds.
 ```

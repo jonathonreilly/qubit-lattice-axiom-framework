@@ -11,7 +11,8 @@ PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.
   =>  (B2) Clifford relations { Gamma_a, Gamma_b } = 2 delta_{ab} I
   =>  (B3) 16 Clifford words span End(K) = M_4(C); rank-4 K
             realises the unique irreducible Cl_4(C) module
-  =>  (B4) oriented CAR-mode pairs satisfy { c_i, c_j } = 0,
+  =>  (B4) in the Pauli-realized Hermitian representative, oriented
+            CAR-mode pairs satisfy { c_i, c_j } = 0,
             { c_i, c_j^dag } = delta_{ij} I
 
 All identities are verified by exact sympy symbolic arithmetic on
@@ -68,6 +69,9 @@ def part0_source_firewall() -> None:
         "bounded_theorem",
         "Status authority",
         "independent audit lane only",
+        "Pauli-realized Hermitian representative",
+        "not a representation-invariant daggered-CAR",
+        "Audit Repair Boundary",
     ]
     for phrase in required:
         check(f"source contains required phrase: {phrase}", phrase in note)
@@ -317,6 +321,53 @@ def part4_car_modes() -> None:
         )
 
 
+def part4b_dagger_boundary() -> None:
+    print("\n== Part 4b: daggered CAR boundary under nonunitary similarity ==")
+    Gt, Gn, G1, G2 = build_cl4_representation()
+    I4 = sp.eye(4)
+    Z = sp.zeros(4, 4)
+    scale = sp.diag(2, 1, 1, 1)
+    scale_inv = scale.inv()
+    transformed = [scale * G * scale_inv for G in (Gt, Gn, G1, G2)]
+
+    relations_ok = True
+    for i, Gi in enumerate(transformed):
+        relations_ok = relations_ok and (Gi * Gi == I4)
+        for j, Gj in enumerate(transformed):
+            if i == j:
+                continue
+            relations_ok = relations_ok and (Gi * Gj + Gj * Gi == Z)
+    check(
+        "nonunitary similarity preserves the Clifford relations B1-B3",
+        relations_ok,
+    )
+
+    nonhermitian = any(G.H != G for G in transformed)
+    check(
+        "same transformed representation is not Hermitian for the fixed standard dagger",
+        nonhermitian,
+    )
+
+    cN = sp.Rational(1, 2) * (transformed[0] + sp.I * transformed[1])
+    cT = sp.Rational(1, 2) * (transformed[2] + sp.I * transformed[3])
+    daggered = {
+        "cN cN^dag": cN * cN.H + cN.H * cN,
+        "cT cT^dag": cT * cT.H + cT.H * cT,
+        "cN cT^dag": cN * cT.H + cT.H * cN,
+        "cT cN^dag": cT * cN.H + cN.H * cT,
+    }
+    spoils_standard_dagger_car = (
+        daggered["cN cN^dag"] != I4
+        or daggered["cT cT^dag"] != I4
+        or daggered["cN cT^dag"] != Z
+        or daggered["cT cN^dag"] != Z
+    )
+    check(
+        "fixed-standard-dagger CAR is not invariant under arbitrary nonunitary similarity",
+        spoils_standard_dagger_car,
+    )
+
+
 def part5_dependency_status() -> None:
     print("\n== Part 5: dependency status check ==")
     # Verify that the load-bearing one-hop dependency exists.
@@ -367,14 +418,16 @@ def main() -> int:
     part2_clifford_relations()
     part3_clifford_words_span()
     part4_car_modes()
+    part4b_dagger_boundary()
     part5_dependency_status()
     part6_no_forbidden_imports()
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow "
+            "VERDICT: bounded accepted-premise bridge passes; (B1)-(B3) follow "
             "from the retained Cl(3) complexification split + accepted-premise "
-            "packet (P1) by polarization and finite-dim sympy linear algebra."
+            "packet (P1), and (B4) is narrowed to the compatible Pauli-realized "
+            "Hermitian representative."
         )
         return 0
     print("VERDICT: bounded accepted-premise bridge FAILED.")

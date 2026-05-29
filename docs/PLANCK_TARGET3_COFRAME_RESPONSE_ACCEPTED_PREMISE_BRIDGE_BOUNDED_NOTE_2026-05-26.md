@@ -31,20 +31,29 @@ algebra, the following narrow conditional consequence holds:
 (B3)  the 16 Clifford words {1, Γ_a, Γ_a Γ_b, Γ_a Γ_b Γ_c, Γ_t Γ_n Γ_1 Γ_2}
       span End(K) = M_4(C); the rank-4 module K is the irreducible
       Cl_4(C) module
-(B4)  the oriented pairs
+(B4)  in the Pauli-realized Hermitian representative of the irreducible
+      Cl_4(C) module, the oriented pairs
         c_N := (Γ_t + i Γ_n)/2,   c_T := (Γ_1 + i Γ_2)/2
       satisfy  {c_i, c_j} = 0  and  {c_i, c_j^†} = δ_{ij} I_K
-      — i.e., the active rank-4 block is the Fock space of two
-      complex CAR modes.
+      — i.e., that representative is the Fock space of two complex CAR
+      modes. This is an existence statement for a compatible Hermitian
+      representative, not a representation-invariant daggered-CAR
+      conclusion from (P1) alone.
 ```
 
-These are abstract finite-dim complex linear-algebra identities once
-(P1) is registered as the accepted-premise packet entry for this row.
+Steps (B1)–(B3) are abstract finite-dim complex linear-algebra identities
+once (P1) is registered as the accepted-premise packet entry for this
+row. Step (B4) is deliberately narrowed to the Pauli-realized Hermitian
+representative checked by the runner. The bridge does not claim that
+the dagger operation, or a compatible Hermitian inner product making
+every `D(e_a)` self-adjoint, is forced by (P1) alone.
+
 The bridge does **not** derive (P1) from the one-qubit operator algebra
 `M_2(ℂ) ≅ Cl(3,0)` on the `Z^3` spatial substrate; it formally registers
 (P1) as a single accepted-premise packet entry, then proves the narrow
-algebraic content (B1)–(B4) by polarization and standard
-representation theory.
+algebraic content (B1)–(B3) by polarization and standard
+representation theory, with the compatible-representative CAR realization
+recorded separately in (B4).
 
 This narrow theorem responds in kind to the canonical hypercharge-bridge
 audit-repair pattern documented in
@@ -90,7 +99,7 @@ Schur's lemma + Pauli-realization isomorphism, as already retained in
 | (B2) | Choosing an orthonormal basis `{e_t, e_x, e_y, e_z}` and writing `Γ_a := D(e_a)` gives `Γ_a² = I_K` and `{Γ_a, Γ_b} = 0` for `a ≠ b` | Specialize (B1) at `u = v = e_a` and at `u = e_a, v = e_b` | no |
 | (B3a) | The 16 monomials `{1, Γ_a, Γ_a Γ_b (a<b), Γ_a Γ_b Γ_c (a<b<c), Γ_t Γ_n Γ_1 Γ_2}` are linearly independent in `End(K)` | Counting (16 monomials) + dim `End(K) = dim_C M_4(C) = 16` + the Clifford relations from (B2) | no |
 | (B3b) | The Clifford algebra `Cl(E, <·,·>)` of dim 4 has a unique faithful irreducible complex representation of dim 4 (up to isomorphism); the supplied rank-4 module `K` realises it | Artin-Wedderburn + Schur + the retained `CL3_COMPLEXIFICATION_SPLIT` algebraic content (rep theory of `Cl(d) ⊗_R C`) | no |
-| (B4) | The oriented pairs `c_N := (Γ_t + i Γ_n)/2`, `c_T := (Γ_1 + i Γ_2)/2` satisfy `{c_i, c_j} = 0` and `{c_i, c_j^†} = δ_{ij} I_K` (canonical CAR algebra) | Direct anticommutator computation from (B2) | no |
+| (B4) | In the Pauli-realized Hermitian representative, the oriented pairs `c_N := (Γ_t + i Γ_n)/2`, `c_T := (Γ_1 + i Γ_2)/2` satisfy `{c_i, c_j} = 0` and `{c_i, c_j^†} = δ_{ij} I_K` (canonical CAR algebra) | Direct anticommutator computation from (B2) after choosing the compatible Hermitian Pauli representative; not a daggered-CAR invariant of (P1) alone | no |
 
 The bridge does not cite the Wilson plaquette action, staggered phases,
 Brillouin-zone labels, link unitaries, lattice scale `u_0`, a Monte
@@ -119,7 +128,7 @@ finite-dim representation level:
   module dim to be `2^{⌊d/2⌋} = 2^2 = 4` for `Cl(4,C)`; the rank-4
   supplied block `K` realises that unique irreducible.
 - (B4) direct anticommutator computation in sympy on the rank-4
-  representation:
+  Pauli-realized Hermitian representation:
   ```text
   {c_N, c_N} = (1/4)({Γ_t, Γ_t} + 2i {Γ_t, Γ_n} - {Γ_n, Γ_n})
              = (1/4)(2 I + 0 - 2 I) = 0,
@@ -127,6 +136,12 @@ finite-dim representation level:
              ... = I,
   ```
   and similarly for `c_T` and the cross-pair anticommutators.
+- Boundary check: a nonunitary similarity transform preserves the
+  Clifford relations and the span statement in (B1)–(B3), but can make
+  the transformed `Γ_a` non-Hermitian with respect to the fixed standard
+  inner product and spoil the standard-dagger CAR equations. This is why
+  (B4) is stated only as a compatible Pauli-representative existence
+  statement, not as a consequence of (P1) alone.
 
 No quark electric-charge cross-check, no PDG-observed value, no
 lattice action, no `g_bare` input enters this proof-walk.
@@ -196,6 +211,15 @@ The bridge re-bases the parent's existing coframe-response admission
 onto the explicit (P1) accepted-premise registration. It does not
 eliminate admission; it formally exposes the conditional chain.
 
+## Audit Repair Boundary
+
+The 2026-05-29 repair narrows the former daggered-CAR wording. The row
+does not assert that (P1) alone determines a Hermitian inner product on
+`K` or that every representation satisfying (B1)–(B3) automatically
+satisfies `{c_i,c_j^†}=δ_ij I` with respect to a fixed background
+dagger. The only daggered-CAR statement is the runner-verified
+compatible Pauli-realization existence statement.
+
 ## Verification
 
 Run:
@@ -209,6 +233,8 @@ Expected:
 ```text
 TOTAL: PASS=N FAIL=0
 VERDICT: bounded accepted-premise bridge passes; (B1)–(B4) follow from
-the retained Cl(3) complexification split + accepted-premise packet (P1)
-by polarization and finite-dim sympy linear algebra.
+VERDICT: bounded accepted-premise bridge passes; (B1)–(B3) follow from
+the retained Cl(3) complexification split + accepted-premise packet
+(P1), and (B4) is narrowed to the compatible Pauli-realized Hermitian
+representative.
 ```

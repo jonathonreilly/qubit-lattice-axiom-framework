@@ -1,0 +1,34 @@
+slug: science-fix-loop-20260529
+mode: run
+branch: physics-loop/science-fix-loop-20260529
+base: origin/main@0997ece24
+goal: >
+  Repair freshly audited conditional rows from the overnight audit without
+  applying audit verdicts or adding axioms.
+target_status: best-honest-status
+cycle_count: 1
+active_route: conditional_algebra_repairs
+rows_repaired:
+  - pmns_tm2_residual_consequence_bounded_note_2026-05-26
+  - planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26
+files_touched:
+  - docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md
+  - scripts/pmns_tm2_residual_consequence_runner.py
+  - docs/PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  - scripts/planck_target3_coframe_response_accepted_premise_runner.py
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+actual_current_surface_status: bounded-support repairs queued for re-audit
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_disposition: local_pass
+pr_status: pending
+next_exact_action: >
+  Commit, push, and open a review PR for this conditional-repair batch.

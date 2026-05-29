@@ -45,6 +45,34 @@ def lhs_without_cp_phase(s13_sq: Fraction) -> Fraction:
     return c12_sq + s12_sq * s13_sq
 
 
+def c12_sq_from_tm2(s13_sq: Fraction) -> Fraction:
+    c13_sq = 1 - s13_sq
+    s12_sq = Fraction(1, 3) / c13_sq
+    return 1 - s12_sq
+
+
+def cp_divisor_sq_from_tm2(s13_sq: Fraction) -> Fraction:
+    c13_sq = 1 - s13_sq
+    s12_sq = Fraction(1, 3) / c13_sq
+    c12_sq = 1 - s12_sq
+    return c12_sq * s12_sq * s13_sq
+
+
+def endpoint_residual_for_any_cos_delta(s13_sq: Fraction, cos_delta: Fraction) -> Fraction:
+    """Return the mu-row equation residual at theta23=pi/4.
+
+    A zero value means
+        c12^2 + s12^2 s13^2 - 2 c12 s12 s13 cos(delta) = 2/3.
+    At the s13^2=2/3 endpoint, c12=0 and the residual is zero for every
+    cos(delta), so the CP phase is not forced by the residual equations.
+    """
+    lhs_no_cos = lhs_without_cp_phase(s13_sq)
+    divisor_sq = cp_divisor_sq_from_tm2(s13_sq)
+    if divisor_sq != 0:
+        raise ValueError("endpoint_residual_for_any_cos_delta is only for singular TM2 endpoints")
+    return lhs_no_cos - Fraction(2, 3)
+
+
 def implied_cos_delta(s13_sq: float) -> float:
     c13_sq = 1.0 - s13_sq
     s12_sq = (1.0 / 3.0) / c13_sq
@@ -100,6 +128,23 @@ def main() -> int:
             f"cos(delta_CP)=0 follows for sin^2(theta_13)={s13_sq}",
             abs(cos_delta) < 1e-12,
             f"cos(delta_CP)={cos_delta:.3e}",
+        )
+
+    endpoint = Fraction(2, 3)
+    check(
+        "TM2 endpoint sin^2(theta_13)=2/3 has c12=0",
+        c12_sq_from_tm2(endpoint) == 0,
+        f"c12^2={c12_sq_from_tm2(endpoint)}",
+    )
+    check(
+        "TM2 endpoint has zero CP divisor c12*s12*s13",
+        cp_divisor_sq_from_tm2(endpoint) == 0,
+        f"(c12*s12*s13)^2={cp_divisor_sq_from_tm2(endpoint)}",
+    )
+    for cos_delta in [Fraction(-1), Fraction(0), Fraction(1)]:
+        check(
+            f"endpoint residual does not force delta_CP for cos(delta)={cos_delta}",
+            endpoint_residual_for_any_cos_delta(endpoint, cos_delta) == 0,
         )
 
     print("=" * 72)

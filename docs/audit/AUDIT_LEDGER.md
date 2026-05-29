@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 597 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1185 |
+| unaudited | 1184 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 927 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1421 |
+| `unaudited` | 1420 |
 
 | claim_type | count |
 |---|---:|
@@ -1078,6 +1078,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -12013,6 +12014,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Block 2 reads the registered per-row outputs of each one-hop family runner and asserts G1 zero-source, G2 neutral, G3 antisymmetry, and G4 unit-slope thresholds, with rejected rows surfaced as basin/seed exclusions.  _(class `B`)_
 - **chain closes:** True — The bounded diagnostic closes because the runner source implements the stated two-block check, the cached run exits 0 with all reported G1-G4 gates passing, and the supplied direct dependencies are retained_bounded. The chain closes only for the finite registered-output comparison, not for the source note's broader corollary/proof wording if read as a cross-family theorem.
 - **rationale:** The B-class dependence is not a blocker under the narrowed claim scope because the row is explicitly a finite cached comparison over retained_bounded family outputs, not a first-principles portability proof. The primary runner does more than print constants: it recomputes a small second-grown subset and then parses registered/fallback family logs to enforce the four stated gates. The theorem/corollary language must be read as explanatory prose only; the audited claim excludes universal inheritance, row-wise lower-bound closure, and independent order-parameter status. This is not algebraic decoration because it is a multi-family computational diagnostic rather than a single-parent algebraic restatement.
+
+### `signed_gravity_aps_locked_source_action_proposal_note`
+
+- **Note:** [`SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md`](../../docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the conditional APS-locked source-action ansatz: if the chi_eta M_phys <rho,Phi> term is admitted, the finite algebra gives locked signed source/response behavior while leaving its origin open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-signed_gravity_aps_locke`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the proposed interaction term, S_int = - sum_a chi_a M_a sum_x rho_a(x) Phi_x, the variation gives rho_active(x) = sum_a chi_a M_a rho_a(x).  _(class `A`)_
+- **chain closes:** False — The algebra closes only after inserting the chi_eta M_phys rho Phi cross term. The restricted packet supplies no derivation of that term from retained APS/Wald/Gauss structure or from a derived generation-chirality grading.
+- **rationale:** The runner verifies consequences of the proposed action term by finite differentiation, sign-table checks, and unitary/Born controls; those are algebraic checks on an admitted ansatz, not an origin derivation. The source note is explicit that S_int is a new premise unless derived elsewhere, and the cited-authorities packet contains no retained upstream bridge. The helper boundary model supplies toy eta sectors but does not derive the scalar-gravity source coupling. Thus the note is a coherent conditional candidate/open gate, not a retained theorem.
+- **auditor confidence:** high
 
 ### `signed_gravity_response_lane_status_note_2026-04-26`
 

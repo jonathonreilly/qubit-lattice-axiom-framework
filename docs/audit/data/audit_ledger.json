@@ -7620,22 +7620,42 @@
       "verdict_rationale": null
     },
     "architecture_note_directional_measure": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T21:26:01.006239+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "angular_kernel_underdetermination_no_go_note": "Bounded no-go for the directional-measure angular kernel under the stated Cl(3)-trace, action-extremization, forward-cone, and leading-isotropy primitives, plus routing decoupling from the staggered/Laplacian boost-covariance surface."
+        },
+        "dep_claim_type": {
+          "angular_kernel_underdetermination_no_go_note": "no_go"
+        },
+        "dep_effective_status": {
+          "angular_kernel_underdetermination_no_go_note": "retained_no_go"
+        },
+        "deps": [
+          "angular_kernel_underdetermination_no_go_note"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "4f45869c60fd07fd1b2b927e8ec9c8d6b33bccaaf9f511489361d113bdfb2cae",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-audit-ready-20260529-architecture_note_direct",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet closes the bounded claim that the listed smoke/table checks pass at the fixed tuned value beta = 0.8. It does not close, and does not claim to close, a first-principles derivation of beta.",
       "claim_id": "architecture_note_directional_measure",
-      "claim_scope": null,
+      "claim_scope": "Bounded tuned-support audit of the directional path-measure table at beta = 0.8, including runner-backed Born/additivity, interference, k=0 real-amplitude, gravity-sign, gravity-scaling, and beta-sweep monotonicity checks; beta derivation is explicitly excluded.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T21:26:01.006239+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -7643,22 +7663,22 @@
         "angular_kernel_underdetermination_no_go_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_numerical_match",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/three_d_angle_weight.py",
         "scripts/three_d_gravity.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_numerical_match",
       "load_bearing_score": 5.17,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The directional path measure with propagator exp(i k S_spent)/L^p * exp(-beta theta^2), evaluated at the tuned input beta = 0.8, reproduces the bounded smoke/table tests while beta itself remains empirically chosen rather than derived.",
+      "load_bearing_step_class": "G",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "2d1845e7d86a774b132bbd4eda9fb70bc44aa1c93645458d4cd939ffe4c704ba",
       "note_path": "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that the intended ledger category for tuned support is audited_numerical_match rather than audited_conditional; the scientific boundary is clear either way because beta = 0.8 is not derived.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -7805,18 +7825,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "A": 1,
+        "B": 1,
+        "C": 3,
+        "D": 1,
+        "total_pass": 6
       },
       "runner_path": "scripts/architecture_directional_measure_table_runner_2026_05_03.py",
       "title": "Architecture Note: Directional Path Measure",
       "transitive_descendants": 8,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner performs actual computations on deterministic 2D and 3D fixtures and reports PASS=6/6, with helper sources present for the transitive imports. However, the load-bearing setting beta = 0.8 is hard-coded as an empirical gravity-card value, and the note repeatedly scopes the result to that tuned point rather than deriving beta from the retained primitives. The retained no-go authority supports that demotion by showing the angular kernel is underdetermined without an additional premise."
     },
     "architecture_portability_sweep_note": {
       "audit_date": "2026-05-10T18:30:28.946746+00:00",

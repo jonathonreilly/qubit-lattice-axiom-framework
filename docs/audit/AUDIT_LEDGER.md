@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 597 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1187 |
+| unaudited | 1186 |
 | meta | 236 |
-| ~~audited_numerical_match~~ | 17 |
+| ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 23 |
 | ~~audited_conditional~~ | 22 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -62,9 +62,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
-| `audited_numerical_match` | 17 |
+| `audited_numerical_match` | 18 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1423 |
+| `unaudited` | 1422 |
 
 | claim_type | count |
 |---|---:|
@@ -1175,6 +1175,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `architecture_note_directional_measure` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `ckm_down_type_scale_convention_support_note_2026-04-22` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `cosmology_from_mass_spectrum_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
@@ -1613,6 +1614,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The stated four primitives admit the seven listed distinct kernels, all passing the primitive checks while producing different transverse moments, so w(theta) is not uniquely determined on that surface.  _(class `C`)_
 - **chain closes:** True — The runner constructs multiple admissible angular kernels, checks the primitive properties, and computes distinct second and fourth transverse moments. The no-go is correctly bounded because it does not rule out adding a higher-order isotropy, Lagrangian, or observable-matching axiom.
 - **rationale:** The load-bearing negative result is an explicit counterexample family, not a definition, renaming, or tuned numerical match. The supplied retained-grade authorities support the routing clarification that the boost lane is on the staggered/Laplacian carrier rather than the directional-measure kernel. Some runner checks are narrative summaries, but the computed witness family and fixed-carrier checks are sufficient for the bounded audited scope.
+- **auditor confidence:** high
+
+### `architecture_note_directional_measure`
+
+- **Note:** [`ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](../../docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded tuned-support audit of the directional path-measure table at beta = 0.8, including runner-backed Born/additivity, interference, k=0 real-amplitude, gravity-sign, gravity-scaling, and beta-sweep monotonicity checks; beta derivation is explicitly excluded.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-architecture_note_direct`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The directional path measure with propagator exp(i k S_spent)/L^p * exp(-beta theta^2), evaluated at the tuned input beta = 0.8, reproduces the bounded smoke/table tests while beta itself remains empirically chosen rather than derived.  _(class `G`)_
+- **chain closes:** True — The restricted packet closes the bounded claim that the listed smoke/table checks pass at the fixed tuned value beta = 0.8. It does not close, and does not claim to close, a first-principles derivation of beta.
+- **rationale:** The primary runner performs actual computations on deterministic 2D and 3D fixtures and reports PASS=6/6, with helper sources present for the transitive imports. However, the load-bearing setting beta = 0.8 is hard-coded as an empirical gravity-card value, and the note repeatedly scopes the result to that tuned point rather than deriving beta from the retained primitives. The retained no-go authority supports that demotion by showing the angular kernel is underdetermined without an additional premise.
 - **auditor confidence:** high
 
 ### `architecture_portability_sweep_note`

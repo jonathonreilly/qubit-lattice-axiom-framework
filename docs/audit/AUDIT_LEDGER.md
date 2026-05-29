@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 172 |
 | **retained_bounded** | 586 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 26 |
-| unaudited | 1148 |
+| open_gate | 27 |
+| unaudited | 1147 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 906 |
+| `audited_clean` | 907 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1378 |
+| `unaudited` | 1377 |
 
 | claim_type | count |
 |---|---:|
@@ -602,6 +602,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8996,6 +8997,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The restricted packet supports the open-gate conclusion: the cited YT authority defines H_unit on the Q_L=(2,3) quark block, while no cited authority defines an analogous physical lepton scalar bridge. The formal hypercharge algebra therefore remains conditional rather than a closed lepton Yukawa identity.
 - **rationale:** The load-bearing step is an algebraic/source-surface absence check over the provided authorities, not a new physics derivation. The conclusion is deliberately limited to an open gate and does not overclaim a no-go, lepton mass prediction, or permanent exclusion of the lane. One caveat is that the included runner source appears to use brittle text searches and the quoted YUKAWA authority in this packet does not visibly contain the exact quark-bilinear string the runner checks, but the broader cited YT authority still only defines the scalar on Q_L and not on a lepton block.
 - **auditor confidence:** medium
+
+### `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26`
+
+- **Note:** [`LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`](../../docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited open gate: conditional Brannen/Koide dimensionless ratios at assumed delta=2/9 and coefficient sqrt(2), plus the stated PDG charged-lepton comparator, are reproduced; no derivation of delta=2/9, sqrt(2), the scale a, absolute lepton masses, or neutrino-sector content is audited or retained.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the Brannen/Koide form with assumed coefficient sqrt(2) and trial phase delta=2/9, the sorted dimensionless ratios and fixed PDG-mass comparator match the stated residuals while the phase, coefficient, and scale remain undeclared by retained dynamics.  _(class `D`)_
+- **chain closes:** True — The conditional algebra follows from the retained Brannen/Koide trigonometric identities, and the runner reproduces the listed PDG comparator values. The claim remains an open gate because the phase, coefficient, and scale are external/conditional inputs rather than derived framework outputs.
+- **rationale:** The note is honest about its status: it verifies a conditional numerical gate and external comparator, while explicitly refusing to derive the Brannen phase, BAE coefficient, or dimensionful scale. The cached runner reports PASS=17, FAIL=0 under SHA fc33101f1c11e2f1580c84bf8c9b441a1de76f1de45113aa528d357699a4f39c, with 10 algebraic/conditional checks and 7 PDG-comparator checks. Because the claim_type is open_gate, this clean audit preserves effective_status=open_gate rather than promoting the comparator to retained lepton-mass science.
+- **auditor confidence:** high
 
 ### `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`
 

@@ -8,7 +8,32 @@ traceless `G_{ij}` Einstein-residual computation used by the
 scalar-trace-tensor no-go witness.
 **Status authority:** independent audit lane only. This wrapper note
 is audit-lane infrastructure for the corresponding helper module.
-**Primary runner / module:** `scripts/frontier_tensorial_einstein_regge_completion.py`
+**Primary runner:** `scripts/frontier_tensorial_einstein_regge_completion.py`
+
+## 2026-05-29 Packet-Completeness Repair
+
+The conditional audit blocker was a runner packet issue, not a new tensorial
+physics premise: the primary runner loaded the scalar-field helper modules
+through `_frontier_loader`, so the restricted audit packet exposed only the
+top-level stdout plus the dynamic loader. This made the same-source scalar
+field and an unused microscopic-Dirichlet helper look like opaque runtime
+premises.
+
+This repair keeps the bounded tensorial-probe claim unchanged and makes the
+load-bearing helper sources explicit:
+
+- the runner now statically imports `frontier_same_source_metric_ansatz_scan.py`,
+  `frontier_coarse_grained_exterior_law.py`, and
+  `frontier_oh_schur_boundary_action.py`;
+- the unused dynamic `frontier_microscopic_dirichlet_bridge_principle.py` load
+  was removed from the tensorial probe runner;
+- the existing retained-bounded dependency links to the coarse-grained
+  exterior helper and the O_h Schur boundary action remain the only theorem
+  dependencies.
+
+No new axiom is introduced. No full Einstein/Regge completion, nonlinear GR
+closure, all-source theorem, or framework-level tensor-matching theorem is
+claimed here.
 
 ## Purpose
 

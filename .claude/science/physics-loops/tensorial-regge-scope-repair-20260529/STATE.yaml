@@ -1,0 +1,43 @@
+loop_slug: tensorial-regge-scope-repair-20260529
+date: 2026-05-29
+branch: physics-loop/tensorial-regge-scope-repair-20260529
+base: origin/main@f5ddc3ec6
+target_claim_id: tensorial_einstein_regge_completion_probe_helper_note_2026-04-14
+target_note: docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md
+target_runner: scripts/frontier_tensorial_einstein_regge_completion.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker_source: audit_ledger
+blocker_summary: >
+  The runner passes the intended tensorial-probe checks, but dynamic
+  _frontier_loader imports were not represented in helper_runner_paths and an
+  unused microscopic helper made the restricted packet incomplete.
+repair_summary: >
+  The primary runner now statically imports the three load-bearing helper
+  modules and removes the unused microscopic dynamic import. The bounded
+  tensorial-probe claim and no-full-GR boundary remain unchanged.
+open_imports:
+  - full_einstein_regge_completion_out_of_scope
+new_axioms: []
+files_touched:
+  - docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md
+  - scripts/frontier_tensorial_einstein_regge_completion.py
+verification:
+  py_compile: passed
+  runner: passed
+  pipeline: passed
+  pipeline_result: >
+    run_pipeline.sh completed with stale audit invalidations=0,
+    audited_conditional=14, unaudited=1195, ready queue=60. The target row is
+    queued unaudited at rank 562 with helper_runner_paths exposing the static
+    same-source, coarse-grained, and Schur helpers.
+  diff_check: passed
+review_loop_disposition: local_self_review_pass_pending_codex_reviewer
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: commit, push, open draft PR
+stop_condition: PR opened, then continue campaign

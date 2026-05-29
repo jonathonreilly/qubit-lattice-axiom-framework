@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1194 |
+| unaudited | 1195 |
 | meta | 235 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 15 |
+| ~~audited_conditional~~ | 14 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 919 |
-| `audited_conditional` | 15 |
+| `audited_conditional` | 14 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1429 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
@@ -1065,7 +1065,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -13785,22 +13784,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Using the current bright tensor coefficients from the current tensor-boundary-drive pipeline, the runner fixes an affine law from the two exact A1 support endpoints and tests it on intermediate canonical A1 backgrounds, the exact local O_h A1 baseline, and the finite-rank A1 baseline.  _(class `C`)_
 - **chain closes:** True — Within the bounded scope, the cached runner completes and directly computes the support Green-matrix endpoint equality, the delta_A1(r) formula residuals, and the affine tensor-law residuals. The note explicitly leaves the exact tensor observable, exact endpoint coefficients, restricted tensor completion theorem, and nonlinear GR outside the closed claim.
 - **rationale:** The exact support-side portion is not just a symbol rename: the runner constructs the support potential and verifies the endpoint arm equality, center-excess size 1/6, and delta_A1(r)=1/(6(1+sqrt(6)r)) at machine precision. The bounded tensor portion is also scoped conservatively: it claims only that the current runner-computed bright tensor coefficients are nearly affine in this exact support scalar on the sampled canonical family and two baselines, with completed cached output showing all five checks pass. The note does not overclaim derivation of the tensor observable or endpoint coefficients, and those gaps are explicitly excluded from the closed scope.
-- **auditor confidence:** medium
-
-### `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`
-
-- **Note:** [`TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded tensorial-probe helper surface for the current runner: scalar boundary action blindness versus active vector/shear Einstein residual channels on the implemented local O_h and finite-rank scalar exterior fields; no full Einstein/Regge completion, nonlinear GR, all-source, or framework-level tensor matching theorem is audited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The registered runner reports that the scalar Schur boundary action is unchanged under vector-shift, traceless-shear, and mixed tensor perturbations, while the corresponding Einstein tensor channels are active.  _(class `C`)_
-- **chain closes:** False — The registered runner cache reports the intended four decisive tensorial-probe checks as passing, but the runner dynamically loads load-bearing sibling scripts through _frontier_loader that are not listed in helper_runner_paths, and two of those dynamic helpers have no one-hop wrapper authority in the ledger. Without those sources or retained dependency handles in the restricted packet, stdout cannot fully certify what objects are being compared.
-- **rationale:** Issue: the load-bearing runner delegates scalar-field construction and microscopic bridge pieces through dynamic _frontier_loader imports that are not fully represented in helper_runner_paths or one-hop retained wrapper notes. Why this blocks: the top-level stdout confirms the four probe outcomes, but a clean audit must verify the imported same-source metric and microscopic Dirichlet bridge machinery rather than treating them as opaque runtime premises. Repair target: register the dynamic helper scripts as helper_runner_paths, or add retained one-hop wrapper notes/dependency edges for scripts/frontier_same_source_metric_ansatz_scan.py and scripts/frontier_microscopic_dirichlet_bridge_principle.py, then rerun the tensorial probe certificate. Claim boundary until fixed: the current packet is a reported finite tensorial-probe diagnostic, not a closed retained helper theorem for downstream no-go use.
-- **open / conditional deps cited:**
-  - `scripts/frontier_same_source_metric_ansatz_scan.py`
-  - `scripts/frontier_microscopic_dirichlet_bridge_principle.py`
 - **auditor confidence:** medium
 
 ### `testable_predictions_map_note`

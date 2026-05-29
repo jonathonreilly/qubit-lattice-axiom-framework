@@ -1,0 +1,24 @@
+loop: dimension-lower-finite-k-rewire-20260529
+branch: physics-loop/dimension-lower-finite-k-rewire-20260529
+base: origin/main@fb6302b65
+target_claim_id: dimension_selection_lower_bound_bridge_v2_2026-05-20
+actual_current_surface_status: bounded-support
+effective_status_after_pipeline: unaudited
+audit_required_before_effective_retained: true
+active_route: retained finite-k bridge dependency rewire
+files_touched:
+  - docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+verification:
+  - python3 -m py_compile scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py scripts/frontier_dimension_selection.py
+  - python3 scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+  - bash docs/audit/scripts/run_pipeline.sh
+result: row reset to unaudited and ready with deps on retained finite-k bridge and dimensional gravity table
+next_exact_action: independent audit/review of the rewired lower-bound V2 packet
+stop_condition: draft PR opened for reviewer extraction

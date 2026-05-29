@@ -33,6 +33,31 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   recomputation, invariant/limit checks, or direct comparison to a cited
   theorem. Do not let PASS output, cached logs, or generated expected values
   substitute for this check.
+- Displayed closed-form identities are part of the math audit even when they
+  appear in characterization, fingerprint, signature, qualitative-support,
+  or non-headline sections. Inventory every quantitative equation, table
+  coefficient, ratio, projection, and prose/comment closed form of the source
+  packet. A wrong displayed formula means the source is not clean as written;
+  do not exempt it because the headline bound or theorem may not depend on it.
+- When a coefficient multiplies a named basis object, recompute the coefficient
+  in the stated normalization. This includes spherical harmonics, group
+  characters, Casimirs, Gell-Mann/Pauli/projector bases, normalized
+  eigenvectors, and similar named bases. Use a projection check such as
+  `<f,B>/<B,B>` (or the exact algebraic equivalent) and flag convention-pairing
+  errors where the coefficient and basis are individually valid only under
+  different normalizations.
+- Runner PASS covers only quantities the runner executes and asserts. Compare
+  each displayed coefficient against actual executable checks, not comments or
+  narrative in the runner. If a coefficient lives only in prose or code comments,
+  or no runner assertion would fail if it were wrong, treat it as unverified
+  unless the auditor independently recomputes it in the restricted packet.
+- If the note and runner describe the same object with different conventions or
+  normalizations, treat that as source-runner drift and do not grant
+  `audited_clean` until the convention is reconciled. When a closed-form
+  coefficient defect appears copied across a note family, finish the current
+  verdict using only the restricted packet, then record exact sibling repair or
+  re-audit targets in the handoff; do not use sibling rows as evidence for the
+  target claim.
 - When the independent math check fails, is incomplete, or exposes a
   runner/source mismatch, the verdict rationale must name the exact formula
   family and why the independent check does not close. Do not grant

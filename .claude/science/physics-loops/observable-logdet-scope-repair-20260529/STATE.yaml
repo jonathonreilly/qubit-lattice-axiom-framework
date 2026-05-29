@@ -1,0 +1,41 @@
+loop_slug: observable-logdet-scope-repair-20260529
+date: 2026-05-29
+branch: physics-loop/observable-logdet-scope-repair-20260529
+base: origin/main@22a274dd2
+target_claim_id: observable_principle_from_axiom_note
+target_note: docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+target_runner: scripts/frontier_hierarchy_observable_principle_from_axiom.py
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+blocker_source: audit_ledger
+blocker_summary: >
+  P2 was an inline unregistered scalar-generator selection premise. The runner
+  proved exact log|det| algebra after choosing that surface but did not prove
+  the generator-classification theorem excluding other scalar choices.
+repair_summary: >
+  The source note no longer claims scalar-generator selection. It supplies
+  W[J] = log|det(D+J)| - log|det D| explicitly and proves only direct-sum
+  additivity, source derivatives, Matsubara curvature, and Lt=4 orbit algebra.
+open_imports:
+  - future_p2_scalar_generator_selection_theorem_out_of_scope
+new_axioms: []
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  - scripts/frontier_hierarchy_observable_principle_from_axiom.py
+verification:
+  py_compile: passed
+  runner: passed
+  pipeline: passed
+  pipeline_row_result: unaudited_ready_queue_rank_3
+  audited_conditional_count_after_pipeline: 14
+  ready_audit_queue_count_after_pipeline: 58
+  diff_check: passed
+review_loop_disposition: local_self_review_pass_pending_codex_reviewer
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: amend rebased commit, push, open draft PR
+stop_condition: PR opened or no safe GitHub path

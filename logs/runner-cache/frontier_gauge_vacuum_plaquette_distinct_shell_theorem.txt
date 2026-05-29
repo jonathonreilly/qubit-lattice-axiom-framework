@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py
-runner_sha256: c7761e6e37d741b2f04523b626ded4d42d352228803b9b74f6a5936e801d1b12
+runner_sha256: 05d5f81c6b182c7217e164bd1d88bbc53e96d5526324251b8c6c661e6322af73
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-VACUUM PLAQUETTE DISTINCT-SHELL THEOREM
+GAUGE-VACUUM PLAQUETTE DISTINCT-SHELL FINITE GEOMETRY PACKET
 ==============================================================================
 
 Observed plaquette

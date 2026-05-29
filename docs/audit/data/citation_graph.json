@@ -42376,14 +42376,14 @@
     },
     "audit_backlog_note_2026-05-02": {
       "claim_id": "audit_backlog_note_2026-05-02",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [
         "left_handed_charge_matching_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
+      "note_hash": "e1ad218b34aca1121e32d1da2fa435fb781562745e04a1018beeb1590f84ecd6",
       "path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
       "title": "Audit-Backlog Retained Campaign \u2014 Progress Synthesis (Cycles 1-19)"
@@ -87091,18 +87091,18 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 669,
       "decoration": 1,
-      "meta": 192,
+      "meta": 193,
       "no_go": 85,
-      "none": 1431,
+      "none": 1430,
       "open_gate": 54,
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1079,
       "decoration": 1,
-      "meta": 192,
+      "meta": 193,
       "no_go": 188,
-      "none": 426,
+      "none": 425,
       "open_gate": 131,
       "positive_theorem": 592
     },

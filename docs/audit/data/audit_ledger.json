@@ -186280,24 +186280,42 @@
       "verdict_rationale": "The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration."
     },
     "multisite_pauli_group_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T05:25:49.805295+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.644,
+        "runner_hash": "bcecab4e6b98faff1c01cc53359ca88c66c43bb6936343786277f57ba0cc123d",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The order/center enumeration passes, but the stated minimal-generator theorem is false for N>1: once one site supplies the global phase, two generators suffice on each additional site.",
       "claim_id": "multisite_pauli_group_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Multi-site Pauli group theorem as stated, including order, center, quotient, central extension, element orders, and the claimed 3N minimal generator count for P_N on the N-site tensor product Pauli space.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T05:25:49.805295+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -186305,19 +186323,19 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 6.644,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The theorem states that the minimal generating set has 3N elements sigma_{i,x}, one for each Pauli direction at each site.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "98531fac922f46470e9b33289a4eb77d0702590e88398791a59ce42868428bee",
       "note_path": "docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "other: repair the false generator-minimality clause or split it out, then re-audit the order/center theorem separately with an explicit per-site H_x=C^2 authority if needed.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -186479,16 +186497,17 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "missing_check": "No runner check for minimal generator count; independent enumeration refutes the stated 3N minimality for N=2,3.",
+        "total_pass": 6
       },
       "runner_path": "scripts/multisite_pauli_group_check.py",
       "title": "Multi-Site Pauli Group P_N Has Order 4^{N+1} on N-Site Cl(3) Fock Space",
       "transitive_descendants": 49,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: M6 claims the minimal generating set has 3N elements. Independent enumeration of the same matrix generators gives minimal sizes 3 for N=1, 5 for N=2, and 7 for N=3, i.e. 2N+1 for these cases, not 3N. Why this blocks: M6 is part of the stated theorem, and the runner does not test minimality; it only enumerates the full 3N-generator group and checks order/center/quotient. Repair target: split the clean order/center/quotient theorem from generator minimality, correct the minimal-generator statement to the appropriate convention, and add runner checks for omitted-generator generating sets. Also wire a retained or axiom-premise authority for the physical per-site H_x=C^2 identification if the repaired claim is framework-facing rather than a stipulated tensor-product algebra theorem. Claim boundary until fixed: the order formula |P_N|=4^{N+1}, scalar center, quotient order, and element-order facts appear algebraically supportable for the stipulated N-qubit Pauli group, but the full current theorem cannot be retained with M6 as written."
     },
     "n_eff_from_three_generations_theorem_note_2026-04-24": {
       "audit_date": null,

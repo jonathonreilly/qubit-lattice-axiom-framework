@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 568 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1183 |
+| unaudited | 1182 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 15 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 68 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,10 +61,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 880 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 50 |
-| `audited_failed` | 45 |
+| `audited_failed` | 46 |
 | `audited_numerical_match` | 15 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1413 |
+| `unaudited` | 1412 |
 
 | claim_type | count |
 |---|---:|
@@ -1152,6 +1152,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -9496,6 +9497,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The centered quadrupole keeps the centroid essentially pinned but opens a real width/tidal channel, and the width response grows with quadrupole separation.  _(class `C`)_
 - **chain closes:** True — The live probe reproduces the frozen controls and finite quadrupole rows: same-site and neutral controls are zero, the dipole mainly shifts centroid, and the centered quadrupoles give near-zero centroid change with positive width response at a = 1.0 and a = 2.0. The source explicitly excludes full tensor gravity and a general multipole theory.
 - **rationale:** The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration.
+- **auditor confidence:** high
+
+### `multisite_pauli_group_theorem_note_2026-05-02`
+
+- **Note:** [`MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Multi-site Pauli group theorem as stated, including order, center, quotient, central extension, element orders, and the claimed 3N minimal generator count for P_N on the N-site tensor product Pauli space.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The theorem states that the minimal generating set has 3N elements sigma_{i,x}, one for each Pauli direction at each site.  _(class `A`)_
+- **chain closes:** False — The order/center enumeration passes, but the stated minimal-generator theorem is false for N>1: once one site supplies the global phase, two generators suffice on each additional site.
+- **rationale:** Issue: M6 claims the minimal generating set has 3N elements. Independent enumeration of the same matrix generators gives minimal sizes 3 for N=1, 5 for N=2, and 7 for N=3, i.e. 2N+1 for these cases, not 3N. Why this blocks: M6 is part of the stated theorem, and the runner does not test minimality; it only enumerates the full 3N-generator group and checks order/center/quotient. Repair target: split the clean order/center/quotient theorem from generator minimality, correct the minimal-generator statement to the appropriate convention, and add runner checks for omitted-generator generating sets. Also wire a retained or axiom-premise authority for the physical per-site H_x=C^2 identification if the repaired claim is framework-facing rather than a stipulated tensor-product algebra theorem. Claim boundary until fixed: the order formula |P_N|=4^{N+1}, scalar center, quotient order, and element-order facts appear algebraically supportable for the stipulated N-qubit Pauli group, but the full current theorem cannot be retained with M6 as written.
 - **auditor confidence:** high
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`

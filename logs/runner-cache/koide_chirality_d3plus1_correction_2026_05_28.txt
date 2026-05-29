@@ -1,0 +1,45 @@
+
+========================================================================
+(1) d=3+1: 8 spatial corners (Z_2)^3 = 1+3+3+1; generations = hw=1
+========================================================================
+  Hamming-weight (S_3) orbit sizes: [1, 3, 3, 1] = 1+3+3+1
+  generation triplet (hw=1): [(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+
+========================================================================
+(2) native chirality is S_3-invariant -> uniform on generations
+========================================================================
+  staggered chirality C=(-1)^(x+y+z) on hw=1: [-1, -1, -1] (uniform)
+  C is a function of Hamming weight => S_3-invariant => CONSTANT on
+  each S_3 orbit. Anticommuting with Gamma_chi requires S_3/C_3-breaking
+  (off-diagonal singlet<->doublet). An S_3-invariant chirality CANNOT.
+  => native chirality does NOT split the generations. NO-GO robust.
+
+========================================================================
+(3) NO 4-dim taste in d=3+1 -> the gamma5(x)xi5 escape dissolves
+========================================================================
+  16-corner / V_4 x V_4 / spin(4)(x)taste(4) needs d=4 (Klein-four^2).
+  d=3+1 has 8 spatial corners; 3D Hamiltonian staggered = 2 tastes,
+  and the 3 generations are the S_3 ORBIT (not a taste multiplet).
+  So there is no 4-dim taste sector for xi5 to act in. The previously
+  floated gamma5 (x) xi5 escape was a d=4 artifact and DISSOLVES.
+
+========================================================================
+(4) 3+1 Dirac Hamiltonian is gapped: H^2=|k|^2+m^2 -> spectral flow 0
+========================================================================
+  || H^2 - (|k|^2+m^2) I || = 5.33e-17
+  => H^2 = |k|^2 + m^2: gap = |m|, never closes as m varies ->
+     no zero-mode crossing -> chiral index 0 (wall W1 holds in 3+1).
+
+========================================================================
+VERDICT (d=3+1, corrected): chirality no-go is ROBUST
+========================================================================
+  The native chirality is S_3-invariant (uniform on the generation
+  orbit) and the Hamiltonian is gapped (index 0). No native chiral
+  structure splits the generations / anticommutes with Gamma_chi.
+  The d=4 spin-taste escape does not exist here. So Q=2/3 via the
+  CHIRALITY lens needs an S_3/C_3-BREAKING import -- confirmed in the
+  correct d=3+1 structure. (And the anticommuting-H lens is itself a
+  formal relabeling: the real gap is the principle fixing the circulant
+  ratio r=|b|^2/a^2=1/2, i.e. why the eigenvalue-vector is Gamma_chi-
+  balanced -- which no lens tried (kinematic/dynamical/quantum/chiral)
+  supplies from A1+A2.)

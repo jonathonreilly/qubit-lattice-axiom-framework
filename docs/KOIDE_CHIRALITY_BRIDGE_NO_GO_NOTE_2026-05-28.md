@@ -1,5 +1,16 @@
 # Koide last mile — the chirality bridge is a no-go (chirality is an import)
 
+> **d=3+1 CONFIRMATION + escape retraction (2026-05-28) — runner
+> `koide_chirality_d3plus1_correction_2026_05_28.py`.** A floated escape (a
+> spin-taste `γ₅⊗ξ₅` chirality with `ξ₅` acting on a 4-dim taste sector) was
+> a **d=4 Euclidean artifact**. The framework is **d=3+1** (Z³ space +
+> emergent time): only 8 spatial corners, NO 16-corner / 4-dim taste. In the
+> correct structure the no-go is ROBUST: native chirality `C=(−1)^{x+y+z}` is
+> a function of Hamming weight, hence **S₃-invariant → uniform on the hw=1
+> generation orbit**, so it cannot anticommute with `Γ_χ` (which needs
+> S₃/C₃-breaking); and the 3+1 Dirac Hamiltonian is gapped (`H²=|k|²+m²` →
+> index 0, wall W1). The escape dissolves; chirality remains an import.
+
 **Date:** 2026-05-28
 **Claim type:** bounded_theorem / no-go (the spacetime→generation chirality
 bridge). Imports nothing; promotes nothing; sets no retained status.

@@ -11,6 +11,14 @@ F1) rather than dimension-weighted (Q=1 = F3) or state-uniform (Q=1/3).
 **Runner:** `scripts/koide_f1_selection_panel_findings_2026_05_28.py`;
 cache `logs/runner-cache/koide_f1_selection_panel_findings_2026_05_28.txt`.
 
+> **PARTIAL CORRECTION (2026-05-28, same day):** Findings 2, 3, 4 stand. The
+> "single named wall" of Finding 1 — phrased here as the `U(1)_b` *angular*
+> quotient on the doublet — was subsequently shown MIS-LOCATED by the
+> 6-mechanism wall-attack: `θ = arg(b)` is exactly Q-orthogonal, so no phase
+> quotient can fix `|b|²/a²`. The wall is RADIAL (real-dimension 2→1 /
+> `det^{1/dim}`), not angular. See
+> `KOIDE_U1B_WALL_RADIAL_RELOCATION_FINDINGS_2026-05-28.md`.
+
 ## Panel
 10 physics lenses (representation theory, Jaynes MaxEnt, qubit/trine-POVM,
 lattice path-integral measure, equipartition theorem, Kähler/Bargmann,

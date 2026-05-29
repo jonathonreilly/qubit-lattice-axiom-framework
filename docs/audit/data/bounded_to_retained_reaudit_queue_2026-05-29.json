@@ -1,0 +1,256 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/MINIMAL_AXIOMS_2026-05-20.md"
+  ],
+  "baseline": {
+    "branch": "origin/main",
+    "commit": "96d90f5ed",
+    "ledger": "docs/audit/data/audit_ledger.json"
+  },
+  "class_counts": {
+    "comment": "Heuristic triage over the 590 retained_bounded rows not handled separately (595 total minus the 5 in-flight rows). Per-row class is reviewer-owned; the heuristic is deliberately conservative toward genuine because over-converting a bounded row is the dangerous error.",
+    "genuine": 402,
+    "removable": 16,
+    "retained_bounded_total": 595,
+    "rows_handled_separately": 5,
+    "spurious": 172,
+    "triaged_pool": 590
+  },
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "this bounded-to-retained queue as evidence",
+    "the 2026-05-23 bounded-to-retained queue as evidence",
+    "prior assistant discussion",
+    "prior audit rationales",
+    "publication-facing retained summaries"
+  ],
+  "generated_date": "2026-05-29",
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "policy": {
+    "introduces_new_axioms": false,
+    "retags_ledger": false
+  },
+  "schema": "promotion_reaudit_queue.v1",
+  "selection_rule": "Already audited-clean retained_bounded rows with large transitive descendant counts whose load-bearing content is exact local algebra, finite representation theory, a closed-form identity, existence-uniqueness, an onset coefficient, or an operator realization, and whose safe positive scope is strictly narrower than any still-open physical closure. Rows already converted by the 2026-05-22 promotion queue and the 2026-05-23 bounded-to-retained queue are excluded (they are no longer retained_bounded). The five rows in flight in a separate review packet are excluded.",
+  "status": "dispatcher_only_not_audit_verdict",
+  "targets": [
+    {
+      "claim_id": "oh_schur_boundary_action_note",
+      "class": "spurious",
+      "downstream": 718,
+      "note_path": "docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md",
+      "proposed_scope": "Exact Schur-complement Dirichlet-to-Neumann boundary action on the finite R=4 exterior shell: Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, E_R(f)=1/2 f^T Lambda_R f, grad E_R = Lambda_R f, and the sourced Euler-Lagrange identity Lambda_R f - j = 0 for the microscopic trace flux of the same harmonic exterior field.",
+      "rank": 1,
+      "why": "Highest reach. The exact lattice DtN / Schur-complement identities are finite linear algebra. The bound is the general Einstein/Regge/all-R/arbitrary-source strong-field theorem, which stays explicitly out of scope.",
+      "audit_question": "Can the exact finite-shell Schur-complement DtN boundary-action identities at R=4 be reclassified as positive_theorem while leaving the general Einstein/Regge, nonlinear-GR, all-R, and arbitrary-source closures out of scope?"
+    },
+    {
+      "claim_id": "dm_neutrino_weak_vector_theorem_note_2026-04-15",
+      "class": "spurious",
+      "downstream": 525,
+      "note_path": "docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md",
+      "proposed_scope": "Exact finite Clifford representation theorem on C^16: the chiral bridge family Y_i = P_R Gamma_i P_L is an exact SU(2) weak vector under the derived bivectors B_a, has spin-1 adjoint Casimir, and satisfies Tr(Y_i^dag Y_j) = 8 delta_ij.",
+      "rank": 2,
+      "why": "The covariance and trace-orthogonality are exact finite representation theory. The bound is only the homogeneous overall coefficient normalization, which stays support-only via the separate bosonic-normalization row.",
+      "audit_question": "Can the exact SU(2) weak-vector representation identities and Tr(Y_i^dag Y_j)=8 delta_ij be reclassified as positive_theorem while leaving the overall coefficient normalization and second-order suppression law support-only?"
+    },
+    {
+      "claim_id": "pl_topology_infrastructure_textbook_import_note_2026-05-17",
+      "class": "removable",
+      "downstream": 717,
+      "note_path": "docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+      "proposed_scope": "Exact finite cone-cap construction certificate for the explicit cubical-boundary family at R=2,3,4: finite boundary, cone, link, face-pairing, and Euler-characteristic checks.",
+      "rank": 3,
+      "why": "The finite-R cone-cap certificate is an exact constructive combinatorial result. Bounded only because restricted to the enumerated R range; extending to arbitrary PL caps / S^3 / homogeneity is the open extension.",
+      "audit_question": "Can the exact finite cone-cap certificate at R=2,3,4 be reclassified as positive_theorem on the enumerated family while leaving arbitrary-PL-cap, S^3, and homogeneity closures open?"
+    },
+    {
+      "claim_id": "s3_cap_uniqueness_note",
+      "class": "removable",
+      "downstream": 716,
+      "note_path": "docs/S3_CAP_UNIQUENESS_NOTE.md",
+      "proposed_scope": "Exact finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks.",
+      "rank": 4,
+      "why": "Exact finite construction over the enumerated R range. Bounded only by the finite R cutoff; global cap uniqueness, arbitrary PL cap classification, and PL S^3 compactification remain the open extension.",
+      "audit_question": "Can the exact finite cone-cap certificate at R=2..5 be reclassified as positive_theorem over the enumerated family while leaving global cap uniqueness and PL S^3 closures open?"
+    },
+    {
+      "claim_id": "s3_boundary_link_theorem_note",
+      "class": "removable",
+      "downstream": 714,
+      "note_path": "docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+      "proposed_scope": "Exact exhaustive 256-subset octahedral certificate (every connected proper subset P of {0,-1}^3 has simplicial closure K_simp(P) a PL 2-disk) plus the R=2..10 boundary-link disk verification.",
+      "rank": 5,
+      "why": "The exhaustive 256-subset enumeration is a complete finite combinatorial theorem; the R=2..10 piece is finite verification. Bounded only by the unrestricted all-R cubical-ball closure, which stays open.",
+      "audit_question": "Can the exhaustive 256-subset octahedral disk certificate be reclassified as positive_theorem while leaving the unrestricted all-R cubical-ball disk theorem open?"
+    },
+    {
+      "claim_id": "s3_general_r_derivation_note",
+      "class": "removable",
+      "downstream": 710,
+      "note_path": "docs/S3_GENERAL_R_DERIVATION_NOTE.md",
+      "proposed_scope": "Exact finite-radius cubical-ball boundary-link disk certificate for R=2..10 plus finite cone-cap construction certificate for R=2..5.",
+      "rank": 6,
+      "why": "Exact finite construction/verification over the enumerated R ranges. Bounded only by all-R cap closure, global uniqueness, and PL S^3 identification, which stay open.",
+      "audit_question": "Can the exact finite boundary-link and cone-cap certificates over the enumerated R ranges be reclassified as positive_theorem while leaving all-R closure and PL S^3 identification open?"
+    },
+    {
+      "claim_id": "higgs_mechanism_note",
+      "class": "spurious",
+      "downstream": 483,
+      "note_path": "docs/HIGGS_MECHANISM_NOTE.md",
+      "proposed_scope": "Exact finite-dimensional algebra of the admitted quartic potential V(r) = (1/2) m2 r^2 + (1/4) lambda r^4 on r >= 0: global-minimum case analysis and radial curvature at the minimum.",
+      "rank": 7,
+      "why": "The radial-potential minimization is exact closed-form scalar calculus. The bound is the framework-native scalar substrate, Coleman-Weinberg potential, and physical Higgs-mass prediction, all of which stay out of scope.",
+      "audit_question": "Can the exact quartic-potential minimization and radial-curvature algebra be reclassified as positive_theorem while leaving the scalar-substrate derivation, Coleman-Weinberg potential, and physical Higgs mass out of scope?"
+    },
+    {
+      "claim_id": "dm_neutrino_cascade_geometry_note_2026-04-14",
+      "class": "spurious",
+      "downstream": 467,
+      "note_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+      "proposed_scope": "Exact C^8 weak-axis Clifford operator realization for Gamma_1 on O_0, T_1, T_2: P_T1 Gamma_1 P_T1 = 0, the rank-1 O_0 plus rank-2 T_2 one-hop split, and the second-order return decomposition diag(1,0,0) + diag(0,1,1) = I_3.",
+      "rank": 8,
+      "why": "The operator-geometry decomposition is exact finite linear algebra. The bound is the physical neutrino-Yukawa cascade interpretation, which stays out of scope.",
+      "audit_question": "Can the exact C^8 weak-axis operator-realization identities be reclassified as positive_theorem while leaving the physical neutrino cascade interpretation out of scope?"
+    },
+    {
+      "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
+      "class": "spurious",
+      "downstream": 406,
+      "note_path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
+      "proposed_scope": "Exact finite-dimensional algebra on C^8 = (C^2)^{otimes 3}: the residual Z_2 stabilizer of a selected hw=1 cube axis maps to the P_23 swap acting on the active Hermitian triplet lane (X_1,X_2,X_3), forcing P_23 H P_23 = H.",
+      "rank": 9,
+      "why": "Stand-alone finite-dimensional bridge lemma on existing repo-canonical objects with a full step-by-step runner. The bound is active-sector assignment and value selection, which stay open.",
+      "audit_question": "Can the exact finite-dimensional axis-to-lane bridge identity (P_23 H P_23 = H) be reclassified as positive_theorem while leaving active-sector assignment and PMNS value selection open?"
+    },
+    {
+      "claim_id": "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+      "class": "spurious",
+      "downstream": 405,
+      "note_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+      "proposed_scope": "Exact finite-dimensional algebra on V_1: the chosen forward 3-cycle and residual P_23 action induce the stated cycle-channel and antiunitary residual-swap identities.",
+      "rank": 10,
+      "why": "Exact finite-dimensional identities. The bound is the downstream coefficient/orientation-selection and PMNS value laws, which stay open.",
+      "audit_question": "Can the exact forward-cycle / residual-swap identities on V_1 be reclassified as positive_theorem while leaving coefficient and orientation-selection laws open?"
+    },
+    {
+      "claim_id": "pmns_oriented_cycle_selection_structure_note",
+      "class": "spurious",
+      "downstream": 402,
+      "note_path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
+      "proposed_scope": "The three displayed finite 3x3 matrix identities for C, I_3, P_23, A_fwd(c), and the prescribed map S(A)=P_23 A^dagger P_23: cyclic coefficient permutation, the C_3 fixed locus c_1=c_2=c_3, and the swap-conjugation fixed locus c_1=conj(c_3) with c_2 real.",
+      "rank": 11,
+      "why": "Already narrowed in source to raw finite matrix identities with no carrier or value law. Pure exact finite matrix algebra.",
+      "audit_question": "Can the three raw finite matrix identities be reclassified as positive_theorem with no carrier, native observable, or PMNS value-selection claim imported?"
+    },
+    {
+      "claim_id": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+      "class": "spurious",
+      "downstream": 240,
+      "note_path": "docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "proposed_scope": "Exact finite-Grassmann Berezin identity: under the explicit anticommutation hypotheses and Berezin integration rules, Z_F = int prod dchi-bar dchi exp(-chi-bar M chi) = det(M) for any complex matrix M, and any odd-Grassmann two-point correlator is antisymmetric under exchange.",
+      "rank": 12,
+      "why": "Pure finite Grassmann calculus with all hypotheses explicit. The bound is the deliberate isolation from physical Hilbert-space identification and the bosonic no-go derivation, which stay out of scope.",
+      "audit_question": "Can the exact finite-Grassmann Berezin determinant identity and odd-correlator antisymmetry be reclassified as positive_theorem with no physical Hilbert-space identification or bosonic no-go imported?"
+    },
+    {
+      "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+      "class": "spurious",
+      "downstream": 237,
+      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "proposed_scope": "Exact narrow algebraic bridge between two retained substrate primitives (the Cl(3) faithful complex-irrep dim-2 readout and the finite-Grassmann Berezin determinant identity): the substep-1 Grassmann-vs-bosonic algebraic dichotomy on H_Lambda = V^{otimes|Lambda|}.",
+      "rank": 13,
+      "why": "Finite algebraic bridge on two already-retained primitives. The bound is the open staggered-Dirac realization gate, which stays open.",
+      "audit_question": "Can the exact substep-1 Grassmann-vs-bosonic algebraic dichotomy be reclassified as positive_theorem while leaving the staggered-Dirac realization gate open?"
+    },
+    {
+      "claim_id": "pmns_commutant_eigenoperator_selector_note",
+      "class": "spurious",
+      "downstream": 194,
+      "note_path": "docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md",
+      "proposed_scope": "Exact C_3 representation-theoretic decomposition of the corner-trace profile of a projected non-Cl(3) commutant generator on the hw=1 orbit: the C_3-trivial mode is the orbit average and the C_3-fundamental modes are corner-distinguishing, with the one-way Cl(3)-span vanishing check.",
+      "rank": 14,
+      "why": "Exact finite C_3 Fourier/representation decomposition. The bound is the bridge to physical PMNS observables, which is explicitly not in the load-bearing chain.",
+      "audit_question": "Can the exact C_3 corner-trace Fourier-mode decomposition be reclassified as positive_theorem while leaving the bridge to physical PMNS observables out of scope?"
+    },
+    {
+      "claim_id": "koide_cyclic_projector_block_democracy_note_2026-04-18",
+      "class": "spurious",
+      "downstream": 189,
+      "note_path": "docs/KOIDE_CYCLIC_PROJECTOR_BLOCK_DEMOCRACY_NOTE_2026-04-18.md",
+      "proposed_scope": "Exact cyclic-projector circulant algebra: the cyclic basis B0=I, B1=C+C^2, B2=i(C-C^2), the exact cyclic responses and target reconstruction, and the exact response-space identity 2 r0^2 = r1^2 + r2^2.",
+      "rank": 15,
+      "why": "Exact finite circulant / cyclic-projector algebra. The bound is the physical Koide-selector interpretation, which stays a candidate, not a closure.",
+      "audit_question": "Can the exact cyclic-projector circulant identities (including 2 r0^2 = r1^2 + r2^2 in response space) be reclassified as positive_theorem while leaving the physical Koide selector a candidate?"
+    },
+    {
+      "claim_id": "su3_wigner_intertwiner_block3_theorem_note_2026-05-03",
+      "class": "spurious",
+      "downstream": 169,
+      "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK3_THEOREM_NOTE_2026-05-03.md",
+      "proposed_scope": "Exact finite combinatorial lattice geometry of the L_s=3 PBC cube: 27 sites, 81 directed links, 81 unique unoriented plaquettes, and the verified each-link-in-exactly-4-plaquettes incidence.",
+      "rank": 16,
+      "why": "Exact finite combinatorial/lattice-geometry enumeration verified exhaustively. The bound is the broader cube-closure campaign verdict, which stays out of scope.",
+      "audit_question": "Can the exact L_s=3 PBC cube combinatorial-geometry enumeration be reclassified as positive_theorem without promoting the broader cube-closure campaign verdict?"
+    },
+    {
+      "claim_id": "hierarchy_matsubara_decomposition_note",
+      "class": "removable",
+      "downstream": 524,
+      "note_path": "docs/HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md",
+      "proposed_scope": "Exact closed-form temporal Matsubara decomposition on the minimal L_s=2 spatial APBC block: |det(D+m)| = prod_omega [m^2 + u_0^2 (3 + sin^2 omega)]^4, with the matching intensive free-energy-density and condensate decompositions.",
+      "rank": 17,
+      "why": "The decomposition is an exact closed form on the minimal block. Bounded because restricted to L_s=2; extending the closed form to general L_s is the open extension.",
+      "audit_question": "Can the exact L_s=2 closed-form Matsubara determinant/free-energy/condensate decomposition be reclassified as positive_theorem on the minimal block while leaving the general-L_s extension open?"
+    },
+    {
+      "claim_id": "hierarchy_spatial_bc_and_u0_scaling_note",
+      "class": "removable",
+      "downstream": 484,
+      "note_path": "docs/HIERARCHY_SPATIAL_BC_AND_U0_SCALING_NOTE.md",
+      "proposed_scope": "Exact minimal L_s=2 hierarchy-block statements: temporal-APBC determinant formulas for spatial PBC/APBC, the BC-independent zero-mass u_0^(8 L_t) power, the APBC-only finite intensive small-m coefficient limit, and the local m/u_0 homogeneity of the free-energy density.",
+      "rank": 18,
+      "why": "Each listed statement is exact on the minimal block. Bounded because restricted to L_s=2; generalizing the BC and u_0-scaling laws to larger spatial blocks is the open extension.",
+      "audit_question": "Can the exact L_s=2 spatial-BC and u_0-scaling determinant/homogeneity statements be reclassified as positive_theorem on the minimal block while leaving larger-block generalization open?"
+    }
+  ],
+  "retired_targets": [
+    {
+      "claim_id": "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+      "current_effective_status": "retained_bounded",
+      "downstream": 499,
+      "note_path": "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md",
+      "retired_reason": "exact_content_already_lifted_in_companion",
+      "comment": "Carries the exact finite identity W(n)/r = 2*hw(n) with binomial(4,k) multiplicities, but its closed-form companion WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md already lifts the proof-walk to a full closed-form theorem. The clean positive target is the companion (currently unaudited); send the companion through the mechanical queue rather than re-typing this proof-walk."
+    },
+    {
+      "claim_id": "g_bare_rigidity_theorem_note",
+      "current_effective_status": "retained_bounded",
+      "downstream": 899,
+      "note_path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
+      "retired_reason": "load_bearing_in_open_g_bare_closure",
+      "comment": "The finite-link coordinate-rigidity statement is exact algebra, but the row sits in the g_bare=1 forcing chain whose closure stays conditional until the same-1PI bridge / Wilson matching retain. Keep bounded so the conditional g_bare closure is not implicitly upgraded."
+    },
+    {
+      "claim_id": "koide_circulant_wilson_target_note_2026-04-18",
+      "current_effective_status": "retained_bounded",
+      "downstream": 229,
+      "note_path": "docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md",
+      "retired_reason": "assembler_not_source_of_exact_statement",
+      "comment": "This is a support/assembly note that imports the exact circulant identity from KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md and does not derive the spectral bridge itself. Target the narrow theorem that owns the exact identity, not this assembler."
+    },
+    {
+      "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
+      "current_effective_status": "retained_bounded",
+      "downstream": 267,
+      "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
+      "retired_reason": "exact_arithmetic_conditional_on_admitted_normalization",
+      "comment": "R_base = 31/9 is exact rational group-theory arithmetic, but it consumes the admitted Georgi-Glashow/GUT hypercharge normalization 3/5 as an input. Removable only after that 3/5 input is itself retained or derived; leave bounded until then."
+    }
+  ]
+}

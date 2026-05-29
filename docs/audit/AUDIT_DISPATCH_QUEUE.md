@@ -90,7 +90,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 34 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem / audited_clean / retained_bounded |
 | 35 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / retained_pending_chain |
 | 36 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 37 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 37 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
 | 38 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
 
 ## Retired Dispatch Targets

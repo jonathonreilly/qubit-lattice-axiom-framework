@@ -17629,10 +17629,6 @@
       "to": "emergent_lorentz_invariance_note"
     },
     {
-      "from": "lorentz_boost_covariance_3plus1d_theorem_note",
-      "to": "light_cone_framing_note"
-    },
-    {
       "from": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
       "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
     },
@@ -65674,16 +65670,15 @@
     },
     "lorentz_boost_covariance_3plus1d_theorem_note": {
       "claim_id": "lorentz_boost_covariance_3plus1d_theorem_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "lorentz_boost_covariance_2d_theorem_note",
-        "emergent_lorentz_invariance_note",
-        "light_cone_framing_note"
+        "emergent_lorentz_invariance_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d83932ff43c07dda4e1c4c19982d4b2c2aad3c9e98c674dd697ccf50b55b550d",
+      "note_hash": "86c236fc03cb27a6fb899e1b7955b1b41a568b296a51269d4fac7d383a672e27",
       "path": "docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_lorentz_boost_3plus1d.py",
       "title": "3+1D SO(3,1) Boost Covariance of the Path-Sum 2-Point Function"

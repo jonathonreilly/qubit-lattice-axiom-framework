@@ -14922,7 +14922,7 @@
         "A": 3,
         "B": 0,
         "C": 4,
-        "D": 2
+        "D": 4
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -43763,7 +43763,7 @@
         "A": 3,
         "B": 0,
         "C": 4,
-        "D": 2
+        "D": 4
       },
       "decoration_candidate": false,
       "dominant_class": "C",

@@ -38562,22 +38562,46 @@
       "verdict_rationale": null
     },
     "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T06:22:27.631259+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "5b574315a310f4ba4ecdaad3ad61ac965a8e3919e94125ec547b30ba3a470507",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained Cl(3) algebra supplies the generators and Pauli realization; O_h is the finite signed-permutation subgroup of O(3); orthogonality preserves the Clifford relations and the top-grade pseudoscalar transforms by the determinant character. The runner verifies all 48 elements.",
       "claim_id": "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
+      "claim_scope": "Pure Cl(3)/finite-cubic-group support lemma: every signed-permutation matrix R in O_h extends to a Cl(3) algebra automorphism on generators, the pseudoscalar I=gamma_1 gamma_2 gamma_3 transforms as det(R) I, and the pure pseudoscalar line has zero O_h-average. Strong-CP/action-class/continuum bridges are excluded.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T06:22:27.631259+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -38586,14 +38610,14 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For R in O_h, gamma_i -> sum_j R_ij gamma_j preserves {gamma_i,gamma_j}=2 delta_ij by orthogonality, hence extends to an automorphism, and the volume element I transforms by the determinant character.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "2d0768747f0453fb473e9323c73325160776b401dd381950bb35f6c660653692",
@@ -38602,18 +38626,19 @@
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 18,
         "D": 0,
-        "total_pass": 0
+        "fail": 0,
+        "total_pass": 18
       },
       "runner_path": "scripts/cl3_oh_cubic_lift_faithful_runner.py",
       "title": "Cl(3) Faithful Lift of the Cubic Point Group O_h \u2014 Narrow Theorem",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The independent check follows the universal-property proof: orthogonal signed-permutation matrices preserve the Clifford bilinear form, so the generator map extends to an algebra automorphism. The pseudoscalar is the oriented volume element, so its transformed coefficient is the Leibniz determinant. The all-48 runner verifies the Clifford relations, determinant split, pseudoscalar sign, and zero group average. The verdict is bounded to this substrate algebra lemma and does not establish O_h-invariance of any lattice action class, CP-odd clover/multi-plaquette exclusion, continuum theta_QCD retirement, or any strong-CP closure."
     },
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-22T15:08:08.944954+00:00",

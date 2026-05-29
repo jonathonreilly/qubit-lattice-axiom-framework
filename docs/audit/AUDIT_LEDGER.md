@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 154 |
 | **retained_no_go** | 172 |
-| **retained_bounded** | 579 |
+| **retained_bounded** | 580 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 26 |
-| unaudited | 1163 |
+| unaudited | 1162 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 16 |
 | ~~audited_renaming~~ | 22 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 892 |
+| `audited_clean` | 893 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 16 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1393 |
+| `unaudited` | 1392 |
 
 | claim_type | count |
 |---|---:|
@@ -236,6 +236,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_color_automorphism_theorem` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2943,6 +2944,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The determinant and grade-action identities follow by direct 2x2 matrix algebra once the retained upstream Cl(3,0)≅M_2(C) Pauli realisation is admitted. The lattice-readout statement is only a negative boundary disclaimer, not a claimed closure.
 - **rationale:** The proof is a genuine class-A algebraic check over the retained one-hop Cl(3) complexification/split authority plus standard 2x2 matrix algebra. The runner source actually computes symbolic and exact rational matrix identities and does not import PDG values, fitted constants, or hidden numerical comparators. Under the rubric tie-breaker, because the audit has only algebraic checks, zero external comparator checks, and reduces to one upstream retained parent plus standard mathematics, the terminal verdict is audited_decoration rather than audited_clean.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure Cl(3)/finite-cubic-group support lemma: every signed-permutation matrix R in O_h extends to a Cl(3) algebra automorphism on generators, the pseudoscalar I=gamma_1 gamma_2 gamma_3 transforms as det(R) I, and the pure pseudoscalar line has zero O_h-average. Strong-CP/action-class/continuum bridges are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For R in O_h, gamma_i -> sum_j R_ij gamma_j preserves {gamma_i,gamma_j}=2 delta_ij by orthogonality, hence extends to an automorphism, and the volume element I transforms by the determinant character.  _(class `C`)_
+- **chain closes:** True — The retained Cl(3) algebra supplies the generators and Pauli realization; O_h is the finite signed-permutation subgroup of O(3); orthogonality preserves the Clifford relations and the top-grade pseudoscalar transforms by the determinant character. The runner verifies all 48 elements.
+- **rationale:** The independent check follows the universal-property proof: orthogonal signed-permutation matrices preserve the Clifford bilinear form, so the generator map extends to an algebra automorphism. The pseudoscalar is the oriented volume element, so its transformed coefficient is the Leibniz determinant. The all-48 runner verifies the Clifford relations, determinant split, pseudoscalar sign, and zero group average. The verdict is bounded to this substrate algebra lemma and does not establish O_h-invariance of any lattice action class, CP-odd clover/multi-plaquette exclusion, continuum theta_QCD retirement, or any strong-CP closure.
 - **auditor confidence:** high
 
 ### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`

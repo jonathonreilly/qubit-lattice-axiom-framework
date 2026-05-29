@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 241,
     "high": 315,
-    "leaf": 313,
+    "leaf": 312,
     "medium": 296
   },
   "cycle_break_target_count": 0,
@@ -26170,31 +26170,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/cl3_oh_cubic_lift_faithful_runner.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -26770,6 +26745,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/sphaleron_coefficient_28_79_runner.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/strong_cp_epsilon_pseudotensor_oh_sign_runner.py",
       "transitive_descendants": 0
     },
     {
@@ -34221,30 +34220,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/strong_cp_epsilon_pseudotensor_oh_sign_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su3_bridge_clean_tube_k12_support_2026-05-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35338,5 +35313,5 @@
     }
   ],
   "ready_count": 31,
-  "total_pending": 1165
+  "total_pending": 1164
 }

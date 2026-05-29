@@ -25572,6 +25572,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py"
     },
+    "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26": {
+      "assert_count": 1,
+      "counts": {
+        "A": 7,
+        "B": 3,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py"
+    },
     "yt_microscopic_schur_class_admissibility_note": {
       "assert_count": 0,
       "counts": {
@@ -51246,6 +51258,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 3,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_yt_microscopic_schur_class_admissibility.py": {
       "assert_count": 0,
       "claims": [
@@ -57634,14 +57661,14 @@
   "stats": {
     "decoration_candidates": 357,
     "dominant_class_distribution": {
-      "A": 263,
+      "A": 264,
       "B": 294,
       "C": 769,
       "D": 308,
       "none": 444
     },
-    "runners_classified": 2078,
+    "runners_classified": 2079,
     "runners_with_C": 1010,
-    "runners_with_D": 614
+    "runners_with_D": 615
   }
 }

@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py
+runner_sha256: 30204647d114dbaefe2355382b731bbded3963f512463efd898f5b99b0ab3534
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+============================================================================================
+Y_T LSP SOURCE-SCALE BOUNDARY AND STRICT-RESPONSE CONTRACT
+============================================================================================
+
+Part 1: anchors and status boundary
+[PASS] docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
+[PASS] docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md exists
+[PASS] docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
+[PASS] docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] note contains required section: Theorem A: LSP Projective Readout Is Source-Scale Blind
+[PASS] note contains required section: Theorem B: Strict Same-Source Top/W Response Certificate
+[PASS] note contains required section: Current Status
+[PASS] note contains required section: Non-Claims
+[PASS] note contains required section: Review Boundary Certificate
+[PASS] axiom memo says LSP-projective instrument is a derivation lane
+[PASS] axiom memo limits LSP to ideal unrefined sharp projective measurement
+[PASS] LSP theorem states K_P = P
+[PASS] LSP source support identifies signed Pauli readout
+[PASS] source/action support remains support only
+[PASS] FH gate supplies response ratio
+[PASS] source-unit no-go records lambda family
+[PASS] LSP source row is retained_bounded support
+[PASS] source/action row is retained_bounded support
+[PASS] source/action gate is not retained authority
+
+Part 2: LSP projective scale blindness
+[PASS] P_plus is a projection
+[PASS] P_minus is a projection
+[PASS] P_plus and P_minus are orthogonal
+[PASS] signed readout equals sigma_z
+[PASS] signed readout spectrum is {-1,+1}
+[PASS] positive lambda preserves the normalized source ray: Matrix([[sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6]])
+[PASS] projective component probability stays 1/6: 1/6
+[PASS] source-action tangent changes by lambda: sqrt(6)*lambda/6
+[PASS] lambda=2 changes action coefficient while preserving projective ray
+
+Part 3: strict top/W response contract algebra
+[PASS] response readout formula is y_t=(g2/sqrt(2))*dMt/dMW: sqrt(2)*dM_t_dh*g_2/(2*dM_W_dh)
+[PASS] same-source coordinate rescaling cancels: sqrt(2)*dM_t_dh*g_2/(2*dM_W_dh)
+[PASS] lambda branch would read y=lambda/sqrt(6): sqrt(6)*lambda/6
+[PASS] lambda=1 branch reads y=1/sqrt(6): sqrt(6)/6
+
+Part 4: strict certificate boundary
+[PASS] strict W/Z support packet is present: outputs/yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json
+[PASS] symbolic top packet is present: outputs/yt_strict_symbolic_top_response_row_packet_2026-05-25.json
+[PASS] required strict certificate field registered: same_source_id
+[PASS] required strict certificate field registered: top_pole_isolated
+[PASS] required strict certificate field registered: w_pole_isolated
+[PASS] required strict certificate field registered: dM_t_dh
+[PASS] required strict certificate field registered: dM_W_dh
+[PASS] required strict certificate field registered: contact_subtraction_done
+[PASS] required strict certificate field registered: fv_ir_controls_pass
+[PASS] required strict certificate field registered: same_model_class
+[PASS] required strict certificate field registered: same_scale_g2
+[PASS] required strict certificate field registered: no_forbidden_imports
+[PASS] strict coefficient-certified top/W response certificate is absent: outputs/yt_strict_same_source_top_w_response_certificate_2026-05-26.json
+
+Part 5: firewalls
+[PASS] firewall/nonclaim phrase present: `H_unit`
+[PASS] firewall/nonclaim phrase present: `yt_ward_identity`
+[PASS] firewall/nonclaim phrase present: `y_t_bare`
+[PASS] firewall/nonclaim phrase present: observed top/W masses
+[PASS] firewall/nonclaim phrase present: PDG
+[PASS] firewall/nonclaim phrase present: `alpha_LM`
+[PASS] firewall/nonclaim phrase present: plaquette/u0
+[PASS] firewall/nonclaim phrase present: fitted selector
+[PASS] forbidden overclaim absent: Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: positive Y_T closure has been obtained
+[PASS] forbidden overclaim absent: LSP projective measurement alone -> lambda = 1 is closed
+[PASS] forbidden overclaim absent: This note proves strict top/W pole-response evidence exists
+[PASS] new note contains no legacy PR-number language
+
+wrote outputs/yt_lsp_source_scale_boundary_and_strict_response_contract_2026-05-26.json
+SUMMARY: PASS=63 FAIL=0
+
+----- stderr -----
+

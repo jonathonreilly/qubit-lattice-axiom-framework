@@ -1,0 +1,61 @@
+{
+  "actual_current_surface_status": "exact-support / open strict-response gate",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificate": {
+    "certificate_passes_schema": false,
+    "computed_y_t": null,
+    "missing_fields": [
+      "same_source_id",
+      "top_pole_isolated",
+      "w_pole_isolated",
+      "dM_t_dh",
+      "dM_W_dh",
+      "contact_subtraction_done",
+      "fv_ir_controls_pass",
+      "same_model_class",
+      "same_scale_g2",
+      "no_forbidden_imports"
+    ],
+    "present": false
+  },
+  "claim": "LSP projective readout supplies the signed record but is source-scale blind; strict same-source top/W pole-response evidence would compute y_t from physical responses.",
+  "fail_count": 0,
+  "pass_count": 63,
+  "projective_boundary": {
+    "action_coefficient_family": "lambda/sqrt(6)",
+    "projective_probability": "1/6",
+    "projective_readout": "epsilon in {-1,+1}"
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Allowed only if a strict coefficient-certified top/W response certificate is present and passes schema. Current branch records the contract and keeps closure open because the certificate is absent.",
+  "reachability_to_target": "supports",
+  "required_certificate_fields": [
+    "same_source_id",
+    "top_pole_isolated",
+    "w_pole_isolated",
+    "dM_t_dh",
+    "dM_W_dh",
+    "contact_subtraction_done",
+    "fv_ir_controls_pass",
+    "same_model_class",
+    "same_scale_g2",
+    "no_forbidden_imports"
+  ],
+  "response_contract": {
+    "primitive_branch": "lambda=1 -> y_t=1/sqrt(6)",
+    "readout": "y_t=(g_2/sqrt(2))*(dM_t/dh)/(dM_W/dh)",
+    "same_source_rescaling": "cancels"
+  },
+  "review_surface": [
+    "docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
+    "scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py",
+    "outputs/yt_lsp_source_scale_boundary_and_strict_response_contract_2026-05-26.json"
+  ],
+  "trace_class": "upstream_support",
+  "upstream_statuses": {
+    "lsp_source": "retained_bounded",
+    "source_action": "retained_bounded",
+    "source_action_gate": "unaudited"
+  }
+}

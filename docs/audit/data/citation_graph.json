@@ -28185,6 +28185,30 @@
       "to": "yt_source_action_support_packet_note_2026-05-22"
     },
     {
+      "from": "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26",
+      "to": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+    },
+    {
+      "from": "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26",
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26",
+      "to": "yt_source_action_support_packet_note_2026-05-22"
+    },
+    {
+      "from": "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26",
+      "to": "yt_fh_top_w_response_ratio_gate_note_2026-05-25"
+    },
+    {
+      "from": "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26",
+      "to": "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+    },
+    {
       "from": "yt_microscopic_schur_class_admissibility_note",
       "to": "yt_exact_coarse_grained_bridge_operator_note"
     },
@@ -85026,6 +85050,25 @@
       "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
       "title": "Y_T LSP Signed-Record Source-Readout Support Theorem"
     },
+    "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26": {
+      "claim_id": "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "yt_source_action_support_packet_note_2026-05-22",
+        "yt_fh_top_w_response_ratio_gate_note_2026-05-25",
+        "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ef5e0280ab8bc7ae132f609635b893e208628650720eade6f27d164290a053d1",
+      "path": "docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md",
+      "runner_path": "scripts/frontier_yt_lsp_source_scale_boundary_and_strict_response_contract.py",
+      "title": "Y_T LSP Source-Scale Boundary And Strict-Response Contract"
+    },
     "yt_microscopic_schur_class_admissibility_note": {
       "claim_id": "yt_microscopic_schur_class_admissibility_note",
       "claim_type_author_hint": null,
@@ -87046,7 +87089,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 668,
+      "bounded_theorem": 669,
       "decoration": 1,
       "meta": 192,
       "no_go": 85,
@@ -87055,7 +87098,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1078,
+      "bounded_theorem": 1079,
       "decoration": 1,
       "meta": 192,
       "no_go": 188,
@@ -87063,10 +87106,10 @@
       "open_gate": 131,
       "positive_theorem": 592
     },
-    "edge_count": 9912,
-    "leaf_count": 826,
-    "node_count": 2608,
+    "edge_count": 9918,
+    "leaf_count": 827,
+    "node_count": 2609,
     "root_count": 870,
-    "runners_with_path": 2183
+    "runners_with_path": 2184
   }
 }

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 249,
     "high": 315,
-    "leaf": 336,
+    "leaf": 335,
     "medium": 306
   },
   "cycle_break_target_count": 0,
@@ -27545,31 +27545,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "cpt_exact_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36380,6 +36355,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 69,
-  "total_pending": 1206
+  "ready_count": 68,
+  "total_pending": 1205
 }

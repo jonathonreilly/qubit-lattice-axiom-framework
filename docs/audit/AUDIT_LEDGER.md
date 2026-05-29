@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 596 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1202 |
+| unaudited | 1201 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 14 |
+| ~~audited_conditional~~ | 15 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 919 |
-| `audited_conditional` | 14 |
+| `audited_conditional` | 15 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1438 |
+| `unaudited` | 1437 |
 
 | claim_type | count |
 |---|---:|
@@ -1057,6 +1057,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -8617,6 +8618,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The sweep result says the best smaller admissible row, topN 169, matches but does not improve on the broad topN 196 control, so no smaller family beats the broad frontier under the stated floors.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helpers instantiate the lattice propagation, source field, compression families, support/capture floors, score, and width-ratio comparison rather than merely printing constants. The runner output supports the note's bounded negative claim that smaller admissible rows do not beat the broad control, although ties are present among topN rows.
 - **rationale:** The cited upstream authorities are retained_bounded, and the restricted packet includes the primary runner source plus transitive helper sources needed to inspect the load-bearing compute path. The runner computes the h=0.25 lattice/source-response sweep from framework primitives and reports that topN 169 is the best smaller admissible row with the same displayed score/capture/width metrics as broad topN 196, not an improvement over it. This closes the bounded claim as stated: smaller source objects remain possible, but the sweep does not move the frontier past the broad control. A second auditor should note that the runner's printed SAFE READ branch appears logically mislabeled in code, but the numeric control/best-smaller comparison and the note's conclusion are still consistent.
+- **auditor confidence:** high
+
+### `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the free U=1 staggered-Dirac two-point SO(4) continuum-limit statement for the displayed spin/taste momentum-space operator, including the O(a^2) ell=4 anisotropy characterization; no interacting, n-point, OS-reconstruction, or physical-unit claim was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-detailed-lorentz-20260529-lorentz_boost_free_stagg`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For s_mu = sin(p_mu a)/a, the Clifford identity gives G~_E(p) = (m1 - i gamma.s)/(m^2+s.s), and as a -> 0 this tends to (m1 - i gamma.p)/(p^2+m^2).  _(class `A`)_
+- **chain closes:** False — The algebraic inverse, continuum limit, SO(4) covariance, and ell=4 anisotropy close for the displayed D~(p). The restricted packet does not close the prior bridge from the one-component staggered action with canonical phases to that exact spin/taste momentum-space operator with taste as a spectator identity; the cited Kähler-Dirac authority explicitly leaves the physical/dynamical operator identification and Kawamoto-Smit forcing out of scope.
+- **rationale:** The runner genuinely instantiates Euclidean gamma matrices and the displayed D~(p), checks the closed-form inverse, continuum SO(4) covariance, O(a^2) scaling, and the cubic-harmonic anisotropy; no external comparator or tuned numerical match is used. Several summary PASS lines are hard-coded narrative assertions and are not load-bearing evidence. The conditional blocker is upstream: the source note cites the Kähler-Dirac narrow theorem as supplying the spin/taste structure, but that authority expressly does not prove the dynamical staggered-operator/Kähler-Dirac identification or the Kawamoto-Smit phase forcing. Thus the theorem is clean only after taking the displayed free operator as an admitted premise, not as a closed consequence of the cited inputs.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `lorentz_violation_derived_note`

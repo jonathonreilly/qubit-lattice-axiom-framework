@@ -3,7 +3,7 @@
     "critical": 243,
     "high": 313,
     "leaf": 336,
-    "medium": 304
+    "medium": 303
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16749,30 +16749,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "multisite_pauli_group_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.644,
-      "note_path": "docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/multisite_pauli_group_check.py",
-      "transitive_descendants": 49
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36136,6 +36112,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 63,
-  "total_pending": 1196
+  "ready_count": 62,
+  "total_pending": 1195
 }

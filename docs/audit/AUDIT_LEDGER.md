@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 562 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1197 |
+| unaudited | 1196 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 870 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1427 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
@@ -1022,6 +1022,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_frontier_audit_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `early_family_transfer_connectivity_diagnosis` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | B | - |
 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | D | - |
@@ -3985,6 +3986,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the sampled multistart starts, the constrained scan recovers one favored low-action PMNS-assisted N_e branch separated from a high-action branch by a finite action gap.  _(class `C`)_
 - **chain closes:** True — Within the narrowed sampled-runner scope, the primary runner constructs feasible closure starts, runs constrained stationary solves, clusters converged solutions, and computes the branch actions and eta readouts rather than printing the branch table as constants. The packet does not close, and the note no longer claims, certified-global branch enumeration or theorem-grade global selector authority.
 - **rationale:** The source note has been narrowed to the exact finite diagnostic supported by the cached runner output. The load-bearing branch enumeration and action-gap computation are produced by actual constrained optimization and clustering through the included helper chain, with no hard-coded branch representatives in the primary runner. The eta/eta_obs=1 statements are observation-normalized closure readouts on the imposed closure surface, not an independent global prediction. The note explicitly excludes branch completeness, branch uniqueness beyond the sampled starts, and certified-global selector content.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 3x3 Hermitian-pair projector algebra for fixed supplied eigenvector matrices, plus the claimed simple-spectrum intrinsic-to-pair reading.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-fresh-dm-lepto-projector-a`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For fixed supplied eigenvector matrices U_pair=U_e^dagger U_nu is unitary, |U_pair|^2 is doubly stochastic and diagonal-rephasing invariant; the source further claims the packet is intrinsic to a supplied Hermitian pair for simple spectra.  _(class `A`)_
+- **chain closes:** False — The fixed-eigenvector algebra closes by unitary algebra, but the ordered intrinsic projector matrix does not follow from simple spectra alone without an eigenvalue label/order convention; simple spectra leave independent row/column permutation freedom.
+- **rationale:** Issue: The raw fixed-eigenvector algebra closes, but the note also claims a simple-spectrum intrinsic-to-the-pair projector packet without specifying the eigenvalue label/order convention needed to fix rows and columns. Why this blocks: simple non-degenerate spectra determine one-dimensional eigenspaces only up to phase after labels are fixed; without labels or an ordering rule, valid eigenvector matrix permutations change P as an ordered 3x3 packet. Repair target: add an explicit eigenvalue-order/label convention, such as ascending eigenvalues for both matrices, or weaken the intrinsic statement to P only up to independent row/column permutations. Claim boundary until fixed: for fixed supplied eigenvector matrices, U_pair is unitary, |U_pair|^2 is doubly stochastic, and diagonal eigenvector rephasings leave |U_pair|^2 unchanged; degenerate spectra remain explicitly excluded.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`

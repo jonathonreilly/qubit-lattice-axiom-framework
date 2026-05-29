@@ -27278,6 +27278,10 @@
     },
     {
       "from": "wave_retarded_gravity_note",
+      "to": "wave_poisson_cinf_bridge_theorem_note_2026-05-28"
+    },
+    {
+      "from": "wave_retarded_gravity_note",
       "to": "linear_response_true_kubo_note"
     },
     {
@@ -27291,10 +27295,6 @@
     {
       "from": "wave_retarded_gravity_note",
       "to": "kubo_continuum_limit_note"
-    },
-    {
-      "from": "wave_retarded_gravity_note",
-      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
     },
     {
       "from": "wave_static_direct_probe_fine_note",
@@ -72342,7 +72342,7 @@
         "universal_qg_optional_textbook_comparison_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fc0d3f9e616dec43d0c871be1c1d332ae3aec78151e3d1b8e0191e4b4240643d",
+      "note_hash": "b442cb6864ca9553cbd9f25bb40706d266f08a91b13330801df8a009992c236b",
       "path": "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
       "runner_path": null,
       "title": "Derivation Atlas"
@@ -83227,6 +83227,18 @@
       "runner_path": "scripts/wave_equation_self_field.py",
       "title": "Wave-Equation Self-Field: Time-Dependent Field from One Local Equation"
     },
+    "wave_poisson_cinf_bridge_theorem_note_2026-05-28": {
+      "claim_id": "wave_poisson_cinf_bridge_theorem_note_2026-05-28",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "ddc52611decb6c7c424f3973125b9866eda4b2b28db42fe5d1d2f0a95dabd331",
+      "path": "docs/WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md",
+      "runner_path": "scripts/wave_poisson_cinf_bridge_theorem.py",
+      "title": "Discrete Poisson Solve = Exact c=\u221e Instantaneous Field (Bridge Theorem)"
+    },
     "wave_radiation_note": {
       "claim_id": "wave_radiation_note",
       "claim_type_author_hint": null,
@@ -83269,18 +83281,18 @@
     },
     "wave_retarded_gravity_note": {
       "claim_id": "wave_retarded_gravity_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "wave_poisson_cinf_bridge_theorem_note_2026-05-28",
         "linear_response_true_kubo_note",
         "wave_retardation_continuum_limit_note",
         "wave_retardation_lab_prediction_note",
-        "kubo_continuum_limit_note",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+        "kubo_continuum_limit_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eb79689fa019da65c8630b2339022222f5ff34bfa0563e32778ca5f162fd2699",
+      "note_hash": "3ece83d125db1dbc4cedc175462b8ef8b29092a0a31f5c2412a46018d7f23165",
       "path": "docs/WAVE_RETARDED_GRAVITY_NOTE.md",
       "runner_path": "scripts/wave_retarded_gravity.py",
       "title": "Wave Retarded Gravity: Retarded \u2260 Instantaneous on the Wave Field"
@@ -87220,6 +87232,7 @@
     "wave_direct_dm_h025_fam2_seed1_followup_note_2026-05-17",
     "wave_equation_gravity_note",
     "wave_equation_self_field_note",
+    "wave_poisson_cinf_bridge_theorem_note_2026-05-28",
     "wave_radiation_note",
     "wave_retardation_lab_prediction_note",
     "wave_static_boundary_sensitivity_note",
@@ -87279,13 +87292,13 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 691,
+      "bounded_theorem": 692,
       "decoration": 1,
       "meta": 197,
       "no_go": 86,
-      "none": 1410,
+      "none": 1409,
       "open_gate": 58,
-      "positive_theorem": 171
+      "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1092,
@@ -87294,12 +87307,12 @@
       "no_go": 189,
       "none": 422,
       "open_gate": 133,
-      "positive_theorem": 580
+      "positive_theorem": 581
     },
     "edge_count": 9943,
     "leaf_count": 826,
-    "node_count": 2614,
-    "root_count": 871,
-    "runners_with_path": 2188
+    "node_count": 2615,
+    "root_count": 872,
+    "runners_with_path": 2189
   }
 }

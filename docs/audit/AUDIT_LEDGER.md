@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 595 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 29 |
-| unaudited | 1190 |
+| unaudited | 1192 |
 | meta | 235 |
 | ~~audited_numerical_match~~ | 17 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 16 |
+| ~~audited_conditional~~ | 15 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 919 |
-| `audited_conditional` | 16 |
+| `audited_conditional` | 15 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 17 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1425 |
+| `unaudited` | 1427 |
 
 | claim_type | count |
 |---|---:|
@@ -74,13 +74,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `meta` | 239 |
 | `no_go` | 259 |
 | `open_gate` | 117 |
-| `positive_theorem` | 700 |
+| `positive_theorem` | 701 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 380 |
 | `high` | 505 |
-| `medium` | 606 |
+| `medium` | 607 |
 | `leaf` | 1009 |
 
 - **Retained pending chain closure:** 10
@@ -88,9 +88,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2083
-- runners with (C) first-principles compute hits: 1014
-- runners with (D) external comparator hits: 615
+- runners classified: 2084
+- runners with (C) first-principles compute hits: 1015
+- runners with (D) external comparator hits: 616
 - decoration candidates (no C, no D): 357
 
 ## Top 25 by load-bearing score (topology only)
@@ -1067,7 +1067,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
-| `wave_retarded_gravity_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -14823,19 +14822,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Both sweeps give numerically meaningful slopes, but neither is a true scaling exponent: the first is dominated by trajectory-range effects, the second is non-monotonic, so lab extrapolation by power law is invalid.  _(class `C`)_
 - **chain closes:** True — The cached runner exits successfully and reports different relative gaps at shared velocities across the range-coupled and trajectory-fixed sweeps, while the trajectory-fixed relative gaps run 151.45%, 9.40%, 7.10%, 3.81%, 10.25%, 21.14%, and 66.59%. Those completed outputs directly support the scoped no-go against a clean one-parameter v/c scaling card.
 - **rationale:** The runner source computes two sweeps using the wave-retardation harness rather than hard-coding the claimed non-monotonic pattern. The current cached output matches the note's load-bearing tables to rounding and shows both sweep-geometry dependence and a non-monotonic trajectory-fixed gap. This clean verdict is limited to blocking the naive lab scaling card from these sweeps; it does not rule out a later continuum-limit or redesigned-harness scaling theorem.
-- **auditor confidence:** high
-
-### `wave_retarded_gravity_note`
-
-- **Note:** [`WAVE_RETARDED_GRAVITY_NOTE.md`](../../docs/WAVE_RETARDED_GRAVITY_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded finite-runner result at H=0.5, NL=30, v/c=0.30, S=0.004, K=5.0, and the three listed grown geometries: the cached runner computes a nonzero gap between the retarded moving-source wave field M and the stitched late-time static-slice comparator I, with relative M-I gaps of 22.53% to 26.05%, while F~M, Born, and null diagnostics remain acceptable on the tested surface. This does not audit the stitched comparator as the exact physical c=infinity/instantaneous limit, a continuum-stable retardation magnitude, lab scaling, orbital motion, or strong-field/backreaction behavior.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-wave-retarded-gravity-20260528-r1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The runner compares the retarded moving-source field M against a layer-by-layer stitched late-time static-slice comparator I and finds M-I gaps of order 23-26% across three geometries.  _(class `C`)_
-- **chain closes:** False — The finite M-vs-stitched-I computation closes on the cached runner surface, but the source's stronger reading of I as the exact c=infinity instantaneous comparator remains a named conditional input. The one-hop continuum and lab-retardation authorities explicitly bound or block stronger continuum-stable magnitude and lab-scaling interpretations.
-- **rationale:** The runner source genuinely constructs moving-source wave histories, stitched static-slice comparator histories, beam propagation, family portability, F~M, Born, and null diagnostics; the cached output reports the same M-I gaps and support diagnostics as the note. Direct dependencies are retained-grade, but they do not eliminate the source's own caveat that identifying the stitched late-time static slices with the exact c=infinity comparator is a conditional input. The continuum-limit dependency also says the retardation magnitude is comparator-dominated and not converged, while the lab-prediction dependency blocks simple v/c scaling. The row therefore audits as conditional bounded support for a finite M-vs-stitched-comparator gap, not clean physical instantaneous-retardation closure.
 - **auditor confidence:** high
 
 ### `wave_static_boundary_sensitivity_note`

@@ -14748,24 +14748,46 @@
       "verdict_rationale": null
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T02:28:30.728271+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 27.83,
+        "runner_hash": "b847d04c8088525cc3fd6639bd929cd069106e2f119671b9e1a35889cb38fe37",
+        "transitive_descendants": 909
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-fresh-reflection-positivity-20260529",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The free algebra closes: the action-derived recurrence gives T_odd T_even with trace 2+4(m^2+sin^2 p), determinant 1, eigenvalues e^{+-2E}, and Gamma(diag(1,e^{-2E})) is positive Hermitian. The interacting SU(3) statement does not close because the two retained dependencies supply only determinant positivity and an abstract gauge-half norm-square, not the missing combined 2-step transfer/OS bridge for gauge-coupled staggered fermion observables.",
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_scope": null,
+      "claim_scope": "Free 1+1d staggered-KS two-step transfer-matrix positivity is checked; the interacting SU(3) gauge case is only a proposed reduction target, not a closed RP theorem.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-29T02:28:30.728271+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -14774,19 +14796,19 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 36,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 27.83,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note derives the free two-step kernel as T_hat^2 = Gamma(t1^(2)) = tensor_p diag(1, e^{-2E(p)}) and then records the SU(3) gauge case as a product of that fermion-sector positivity, determinant positivity, and the gauge-half norm-square dependency.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "df785e04528a3942d0966fa64ff87b305fef87b7ea6d77b7e1353ba9a0a47a42",
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove that the interacting SU(3) staggered action on A_+^(2) factorizes into the same 2-step transfer-positive fermion sector, positive determinant weight, and Theta-invariant gauge-half norm-square, or narrow the row to the free U=1 two-step theorem plus a non-retained reduction target.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -15369,18 +15391,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 4,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 4
       },
       "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation",
       "transitive_descendants": 909,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the free 1+1d two-step transfer-matrix algebra closes, but the source also records an interacting SU(3) gauge-case reduction as if the retained determinant positivity and abstract gauge-half Cauchy-Schwarz rows complete the full RP statement. Why this blocks: those dependencies explicitly close only their narrow factors and do not prove the combined 2-step transfer/OS bridge for gauge-coupled staggered fermion observables on A_+^(2). Repair target: prove that the interacting SU(3) staggered action factorizes into the same 2-step transfer-positive fermion sector, positive determinant weight, and Theta-invariant gauge-half norm-square, or narrow the claim to the free U=1 two-step theorem plus a non-retained reduction target. Claim boundary until fixed: the free two-step transfer positivity is supported; full interacting SU(3) staggered RP is conditional on a missing bridge theorem."
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_note_2026-05-17": {
       "audit_date": null,

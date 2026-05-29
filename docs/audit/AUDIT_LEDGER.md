@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 559 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 25 |
-| unaudited | 1206 |
+| unaudited | 1205 |
 | meta | 230 |
 | ~~audited_numerical_match~~ | 14 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 865 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 14 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1436 |
+| `unaudited` | 1435 |
 
 | claim_type | count |
 |---|---:|
@@ -121,7 +121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `left_handed_charge_matching_note` | decoration | critical | 693 | 30.44 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 231 | 29.86 | `unaudited` | unaudited |
 | 23 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 197 | 29.13 | `unaudited` | unaudited |
-| 24 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 909 | 27.83 | `unaudited` | unaudited |
+| 24 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 909 | 27.83 | `audited_conditional` | ~~audited_conditional~~ |
 | 25 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 631 | 27.80 | `unaudited` | unaudited |
 
 
@@ -1001,6 +1001,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `assumption_derivation_ledger` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audit_backlog_note_2026-05-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | strong | codex-gpt-5.5 | A | - |
@@ -1784,6 +1785,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.  _(class `A`)_
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
+- **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free 1+1d staggered-KS two-step transfer-matrix positivity is checked; the interacting SU(3) gauge case is only a proposed reduction target, not a closed RP theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-fresh-reflection-positivity-20260529`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The note derives the free two-step kernel as T_hat^2 = Gamma(t1^(2)) = tensor_p diag(1, e^{-2E(p)}) and then records the SU(3) gauge case as a product of that fermion-sector positivity, determinant positivity, and the gauge-half norm-square dependency.  _(class `A`)_
+- **chain closes:** False — The free algebra closes: the action-derived recurrence gives T_odd T_even with trace 2+4(m^2+sin^2 p), determinant 1, eigenvalues e^{+-2E}, and Gamma(diag(1,e^{-2E})) is positive Hermitian. The interacting SU(3) statement does not close because the two retained dependencies supply only determinant positivity and an abstract gauge-half norm-square, not the missing combined 2-step transfer/OS bridge for gauge-coupled staggered fermion observables.
+- **rationale:** Issue: the free 1+1d two-step transfer-matrix algebra closes, but the source also records an interacting SU(3) gauge-case reduction as if the retained determinant positivity and abstract gauge-half Cauchy-Schwarz rows complete the full RP statement. Why this blocks: those dependencies explicitly close only their narrow factors and do not prove the combined 2-step transfer/OS bridge for gauge-coupled staggered fermion observables on A_+^(2). Repair target: prove that the interacting SU(3) staggered action factorizes into the same 2-step transfer-positive fermion sector, positive determinant weight, and Theta-invariant gauge-half norm-square, or narrow the claim to the free U=1 two-step theorem plus a non-retained reduction target. Claim boundary until fixed: the free two-step transfer positivity is supported; full interacting SU(3) staggered RP is conditional on a missing bridge theorem.
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

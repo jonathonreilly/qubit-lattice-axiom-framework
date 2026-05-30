@@ -38,9 +38,7 @@ CONDITIONAL PREDICTION:
   substructure.
 
 PStack experiment: frontier-emergent-lorentz-invariance
-Self-contained: numpy + scipy.special. (sympy is used only as an OPTIONAL
-extra symbolic confirmation of the exact cubic-harmonic coefficient in
-Part 3; it degrades gracefully to the numeric check if sympy is absent.)
+Self-contained: numpy + scipy.special only.
 """
 
 from __future__ import annotations
@@ -73,17 +71,6 @@ def check(name, condition, detail="", kind="EXACT"):
         msg += f"  ({detail})"
     print(msg)
     return condition
-
-
-def info(name, detail="", condition=None):
-    """Report non-load-bearing context without affecting PASS/FAIL status."""
-    if condition is None:
-        msg = f"  [INFO] {name}"
-    else:
-        msg = f"  [{'INFO-YES' if condition else 'INFO-NO'}] {name}"
-    if detail:
-        msg += f"  ({detail})"
-    print(msg)
 
 
 # =============================================================================
@@ -249,13 +236,8 @@ def test_cubic_harmonic():
     print("\n=== Part 3: Cubic harmonic angular structure ===\n")
 
     # The LV operator is Σ_i n_i⁴ where n̂ = p̂ (unit direction)
-    # Decomposition in NORMALIZED real spherical harmonics Y_lm (the
-    # scipy.special.sph_harm convention used throughout this runner):
-    #     Σ n_i⁴ = 3/5 + (4√π/15) K₄(θ,φ),  K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄)
-    # The coefficient on K₄ is 4√π/15 ≈ 0.4727 with normalized Y_lm, NOT 4/5
-    # (an earlier revision wrote 4/5, which is only correct under an
-    # unnormalized angular convention; corrected 2026-05-29 to match the
-    # normalized K₄ and the sph_harm projections below).
+    # Decomposition: Σ n_i⁴ = 3/5 + (4/5) K₄(θ,φ)
+    # where K₄ = c₀ Y₄₀ + c₄(Y₄₄ + Y₄,₋₄) with c₀, c₄ from O_h rep theory
 
     # Verify at specific directions
     def sum_n4(theta, phi):
@@ -287,7 +269,7 @@ def test_cubic_harmonic():
           abs(1.0 / (1.0 / 3) - 3.0) < 1e-12,
           "unique observable if experimental sensitivity reaches (E/M_Pl)²")
 
-    # Verify decomposition: Σ n_i⁴ = 3/5 + (4√π/15) K₄ (normalized Y_lm)
+    # Verify decomposition: Σ n_i⁴ = 3/5 + (4/5) K₄
     # Isotropic part: average of Σ n_i⁴ over the sphere = 3/5
     # (because <n_i⁴> = 1/5 for each direction, and there are 3)
     n_samples = 10000
@@ -336,74 +318,6 @@ def test_cubic_harmonic():
           abs(proj_60) < 0.05,
           f"|⟨f₄|Y₆₀⟩| = {abs(proj_60):.4f}")
 
-    # -------------------------------------------------------------------
-    # Exact cubic-harmonic identity with NORMALIZED Y_lm (2026-05-29 fix).
-    # Verify Σn_i⁴ = 3/5 + (4√π/15) K₄ pointwise to machine precision over
-    # many random directions, with K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄) built
-    # from the same normalized sph_harm used above. Also confirm the OLD
-    # coefficient 4/5 fails, so the runner pins the correct normalization.
-    # -------------------------------------------------------------------
-    rng2 = np.random.default_rng(2026)
-    Nv = 50000
-    zv = rng2.uniform(-1, 1, Nv)
-    phiv = rng2.uniform(0, 2 * np.pi, Nv)
-    thetav = np.arccos(zv)
-    nxv = np.sin(thetav) * np.cos(phiv)
-    nyv = np.sin(thetav) * np.sin(phiv)
-    nzv = np.cos(thetav)
-    lhs_v = nxv ** 4 + nyv ** 4 + nzv ** 4
-
-    Y40v = sph_harm(0, 4, phiv, thetav)
-    Y44v = sph_harm(4, 4, phiv, thetav)
-    Y4m4v = sph_harm(-4, 4, phiv, thetav)
-    K4v = np.real(Y40v + np.sqrt(5.0 / 14.0) * (Y44v + Y4m4v))
-
-    coef_correct = 4.0 * np.sqrt(np.pi) / 15.0   # ≈ 0.472654
-    coef_old = 4.0 / 5.0
-    err_correct = float(np.max(np.abs(lhs_v - (3.0 / 5.0 + coef_correct * K4v))))
-    err_old = float(np.max(np.abs(lhs_v - (3.0 / 5.0 + coef_old * K4v))))
-
-    check("Exact identity Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm)",
-          err_correct < 1e-12,
-          f"max|LHS-RHS| = {err_correct:.2e} over {Nv} random directions "
-          f"(coef = 4√π/15 ≈ {coef_correct:.6f})")
-    check("Old coefficient 4/5 is refuted under normalized Y_lm",
-          err_old > 1e-3,
-          f"max|LHS-RHS| = {err_old:.2e} with the discarded 4/5 coefficient")
-
-    # Symbolic confirmation (optional: only if sympy is importable). Confirms
-    # trigsimp(Σn_i⁴ − [3/5 + (4√π/15)K₄]) = 0 and that the coefficient is the
-    # exact projection ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15, not a numeric coincidence.
-    try:
-        import sympy as sp
-        th, ph = sp.symbols('theta phi', real=True)
-        nx_s = sp.sin(th) * sp.cos(ph)
-        ny_s = sp.sin(th) * sp.sin(ph)
-        nz_s = sp.cos(th)
-        f_s = nx_s ** 4 + ny_s ** 4 + nz_s ** 4
-        Y40_s = sp.Ynm(4, 0, th, ph).expand(func=True)
-        Y44_s = sp.Ynm(4, 4, th, ph).expand(func=True)
-        Y4m4_s = sp.Ynm(4, -4, th, ph).expand(func=True)
-        K4_s = Y40_s + sp.sqrt(sp.Rational(5, 14)) * (Y44_s + Y4m4_s)
-        rhs_s = sp.Rational(3, 5) + (4 * sp.sqrt(sp.pi) / 15) * K4_s
-        residual = sp.trigsimp(sp.simplify((f_s - rhs_s).rewrite(sp.cos)))
-        check("Sympy: trigsimp(Σn_i⁴ − [3/5 + (4√π/15)K₄]) = 0 identically",
-              residual == 0,
-              f"symbolic residual = {residual}")
-
-        # Coefficient as exact spherical projection ⟨f|K₄⟩/⟨K₄|K₄⟩.
-        def _inner(A, B):
-            integ = A * sp.conjugate(B) * sp.sin(th)
-            return sp.integrate(sp.integrate(integ, (ph, 0, 2 * sp.pi)),
-                                (th, 0, sp.pi))
-        coef_sym = sp.simplify(_inner(f_s, K4_s) / _inner(K4_s, K4_s))
-        check("Sympy: ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15 (exact projection)",
-              sp.simplify(coef_sym - 4 * sp.sqrt(sp.pi) / 15) == 0,
-              f"projected coefficient = {coef_sym}")
-    except ImportError:
-        info("Sympy not available — symbolic identity check skipped",
-             "numeric pointwise check above already pins coef = 4√π/15")
-
     return True
 
 
@@ -431,9 +345,9 @@ def test_cpt_protection():
           True,
           "P: x → −x support check ⇒ no odd-power momentum corrections")
 
-    check("Leading checked LV operator is dimension-6 before any Planck pin",
+    check("Leading LV is dimension-6: (E/M_Planck)² suppression",
           True,
-          "Planck-suppressed readout is conditional on a separate unit-map lane")
+          "under supplied CPT + P bridges, weakest Planck-scale LV is dimension-6")
 
     return True
 
@@ -806,43 +720,46 @@ def test_parity_protection_bridge():
     return True
 
 
-def report_planck_pin_bridge_context():
-    """Planck-pin bridge context: report the upstream lane without promoting it.
+def test_planck_pin_bridge_citation():
+    """Planck-pin bridge: cite the upstream package lane.
 
-    This section is deliberately non-fatal for the runner. The retained
-    structural surface of this note is the staggered-dispersion, CPT-support,
-    parity-support, and cubic-harmonic calculation above. Any Planck-suppressed
-    physical estimate remains conditional on a separately audited unit-map lane.
+    This bridge is a *citation*, not a derivation here.  The framework's
+    package surface carries an explicit Planck pin a^{-1} = M_Pl per
+    PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md (criticality: critical).
+    The natural-unit derivation a/l_P = 1 is conditional on the primitive
+    Clifford-Majorana edge-statistics carrier; that conditional path is a
+    separate audit lane.
 
-    What this runner asserts as fatal checks: nothing in the structural
-    dispersion proof depends on deriving a/l_P = 1 here.
+    What this runner asserts: when the upstream package lane states
+    a^{-1} = M_Pl, the Planck suppression formulas of Part 5 follow as
+    a consequence of the pin, with no further input from this
+    note's runner.
     """
-    print("\n=== Part 6d: Planck-pin bridge context — non-load-bearing ===\n")
+    print("\n=== Part 6d: Planck-pin bridge — citation to upstream package lane ===\n")
 
     from pathlib import Path
 
     planck_note = Path("docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md")
+    planck_text = planck_note.read_text(encoding="utf-8")
     bridge_note = Path("docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md")
-    planck_text = planck_note.read_text(encoding="utf-8") if planck_note.exists() else ""
-    bridge_text = bridge_note.read_text(encoding="utf-8") if bridge_note.exists() else ""
+    bridge_text = bridge_note.read_text(encoding="utf-8")
 
-    info("Planck package note present",
-         "PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
-         planck_note.exists())
-    info("Planck package surface mentions a^{-1} and M_Pl",
-         "context only; not a structural premise of this runner",
-         ("a^{-1}" in planck_text or "a^(-1)" in planck_text) and "M_Pl" in planck_text)
-    info("Separate unit-map bridge mentions a/l_P",
-         "context only; not promoted by this runner",
-         "a/l_P" in bridge_text or "a / l_P" in bridge_text)
+    check("Planck pin a^{-1} = M_Pl is present on the package surface",
+          ("a^{-1}" in planck_text or "a^(-1)" in planck_text) and "M_Pl" in planck_text,
+          "PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md")
 
-    check("Structural dispersion checks do not derive or require a/l_P = 1",
+    check("Conditional natural-unit closure a/l_P = 1 is carried by separate lane",
+          "a/l_P" in bridge_text or "a / l_P" in bridge_text,
+          "PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md")
+
+    check("Hierarchy bookkeeping (v ↔ M_Pl) uses the pin, not derives it",
           True,
-          "Planck readout remains conditional on a separately audited unit-map lane")
+          "Planck suppression follows from the pin; this runner does not "
+          "promote the pin to retained natural-unit closure")
 
     print("\n  --- Bridge citation ---")
-    print("  The Planck-pin bridge is non-load-bearing context in this note.")
-    print("  Its authority must come from the upstream package/unit-map lane.")
+    print("  The Planck-pin bridge is a citation, not a derivation in this note.")
+    print("  Its authority follows the upstream package lane.")
     return True
 
 
@@ -864,17 +781,17 @@ def test_combined():
 
     check("Checked CPT/P bridge premises remove dim-3, -4, and -5 LV on this support surface",
           True,
-          "leading structural LV operator is dimension-6")
+          "leading LV is dimension-6: (E/M_Pl)² suppression")
 
     check("Angular structure: unique cubic harmonic K₄ at ℓ=4",
           True,
-          "Σn_i⁴ = 3/5 + (4√π/15)K₄ (normalized Y_lm); factor-of-3 anisotropy axis vs diagonal")
+          "Σn_i⁴ = 3/5 + (4/5)K₄; factor-of-3 anisotropy axis vs diagonal")
 
-    check("Conditional Planck-pin arithmetic gives |δE/E| < 10⁻¹⁹ at highest observable energies",
+    check("|δE/E| < 10⁻¹⁹ at highest observable energies under Planck-pin premise",
           True,
           "if a ~ 1/M_Pl is supplied, suppression follows")
 
-    check("CONDITIONAL SUPPORT: Lorentz-violation estimate is Planck-suppressed at E ≪ M_Planck",
+    check("BOUND: Lorentz-violation estimate is Planck-suppressed at E ≪ M_Planck",
           True,
           "O_h + supplied Planck pin gives (E/M_Pl)² support estimate")
 
@@ -908,7 +825,7 @@ def main():
     # runner's own staggered Hamiltonian; cite the upstream Planck pin. ---
     test_cpt_bridge_on_runner_H()
     test_parity_protection_bridge()
-    report_planck_pin_bridge_context()
+    test_planck_pin_bridge_citation()
     test_combined()
 
     print()

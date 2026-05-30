@@ -1,0 +1,91 @@
+====================================================================================
+DUAL-COMPUTATION: BEREZIN PATH-INTEGRAL == OPERATOR TRANSFER SANDWICH
+  (H2) mixed OS transfer representation on the 2-step blocked staggered surface
+====================================================================================
+  mass m=0.5, temporal bulk half-extent NT_BULK=16 (2x16=32 slices), eq tol=1e-10
+  reflection theta(t,x)=(-1-t,x); staggered eta_1(t)=(-1)^t flips under theta
+  Berezin sign: <chi_b bar_a>=+(M^-1)[b,a], <bar_a chi_b>=-(M^-1)[b,a]
+
+------------------------------------------------------------------------------------
+CHECK 1  FREE (U=1): Berezin block metric  ==  c_block * operator e^{-2E}
+  cleanest instance of the representation equality (no gauge entanglement)
+------------------------------------------------------------------------------------
+  lambda=+1.0000  E=0.96242  Berezin=0.2917960675  operator(c_block*e^-2E)=0.2917960675  |diff|=5.55e-17
+  lambda=-1.0000  E=0.96242  Berezin=0.2917960675  operator(c_block*e^-2E)=0.2917960675  |diff|=5.55e-17
+  lambda=+1.0000  E=0.96242  Berezin=0.2917960675  operator(c_block*e^-2E)=0.2917960675  |diff|=5.55e-17
+  lambda=-1.0000  E=0.96242  Berezin=0.2917960675  operator(c_block*e^-2E)=0.2917960675  |diff|=5.55e-17
+  lambda=-0.0000  E=0.48121  Berezin=0.7639320225  operator(c_block*e^-2E)=0.7639320225  |diff|=7.21e-14
+  lambda=+0.0000  E=0.48121  Berezin=0.7639320225  operator(c_block*e^-2E)=0.7639320225  |diff|=7.21e-14
+  worst |Berezin - operator| (free, per-mode) = 7.205e-14
+  full POSITION-basis many-field Berezin Gram positive eigs = [0.34314575 0.34314575 0.76393202]
+     expected c_block*e^-2E (operator spectrum)             = [0.34314575 0.34314575 0.76393202]
+  worst |full-Berezin-Gram eig - operator| = 7.205e-14 (no per-mode reduction: every Grassmann cross-contraction included)
+  -> CHECK 1 representation equality (free): PASS
+
+------------------------------------------------------------------------------------
+CHECK 2  FIXED nontrivial background: per-config representation equality
+  reuses the anti-Hermitian-hop modal reduction h[U]=U_h(iL)U_h^dag
+------------------------------------------------------------------------------------
+  U(1)  fixed bkgd: 4 modes, worst |Berezin-operator| = 1.665e-16
+  SU(3) fixed bkgd: 6 modes, worst |Berezin-operator| = 1.110e-16
+  -> CHECK 2 representation equality (fixed bkgd): PASS
+
+------------------------------------------------------------------------------------
+CHECK 3  U-INTEGRATED MIXED Gram on H_gauge (x) H_ferm  (the full (H2) object)
+  Berezin: det-weighted Grassmann reflected correlator of MIXED observables
+  Operator: <Omega|O^dag T_full O|Omega>, T_full=(Kg^1/2(x)I)(oplus_U B^dag B)(...)
+  assert the two Gram matrices are EQUAL (gauge-fermion entanglement carried both ways)
+------------------------------------------------------------------------------------
+  [u1] dimH=32  observables=18 (genuinely mixed=10)
+        gauge transfer min eig=2.101e-04 (PSD), min det weight=1.3180 (>0)
+        operator-Schmidt rank=3 (>1 => ENTANGLED: True)
+        worst per-block |Berezin-operator| = 3.153e-14
+        worst |G_Berezin - G_operator|      = 1.532e-14  (equality tol 1e-10)
+        operator Gram: ||G-G^dag||=1.11e-16  min eig=-1.780e-16 (PSD by construction)
+  [su3] dimH=384  observables=84 (genuinely mixed=54)
+        gauge transfer min eig=9.251e-01 (PSD), min det weight=2.6664 (>0)
+        operator-Schmidt rank=6 (>1 => ENTANGLED: True)
+        worst per-block |Berezin-operator| = 1.549e-14
+        worst |G_Berezin - G_operator|      = 5.662e-15  (equality tol 1e-10)
+        operator Gram: ||G-G^dag||=6.21e-17  min eig=-2.916e-16 (PSD by construction)
+  -> CHECK 3 U-integrated mixed representation equality: PASS
+
+------------------------------------------------------------------------------------
+CHECK 4  REFLECTION = ADJOINT on mixed observables (Theta = (.)^dag)
+  the reconstructed OS Gram is Hermitian to machine precision
+------------------------------------------------------------------------------------
+  U(1)  ||G - G^dag|| = 1.110e-16
+  SU(3) ||G - G^dag|| = 5.722e-17
+  -> CHECK 4 reflection=adjoint: PASS
+
+------------------------------------------------------------------------------------
+CHECK 5  BEREZIN DECAY ANCHOR: forward 2-pt decays as e^{-2E(p)} per 2-step
+  the transfer eigenvalue appears INSIDE the path integral (faithfulness)
+------------------------------------------------------------------------------------
+  worst |ratio - e^{-2E}| across modes/separations = 1.426e-09
+  -> CHECK 5 decay anchor: PASS
+
+------------------------------------------------------------------------------------
+CHECK 6  NEGATIVE CONTROL: SINGLE-STEP reflection BREAKS the equality
+  the staggered eta_1 flip is uncompensated single-step => the reflected
+  positive-cone metric is INDEFINITE (min eig < 0), so it is NOT equal to
+  any positive operator sandwich.  This MUST fail the PSD/equality test.
+------------------------------------------------------------------------------------
+  single-step per-mode block metric min eig = -0.5528 (indefinite => no positive operator sandwich)
+  full single-step naive Lagrangian Gram min eig = -0.8000 (documented no-go ~ -0.80)
+  -> CHECK 6 single-step equality is VIOLATED (control has teeth): PASS
+
+====================================================================================
+SCORECARD: PASS=6 FAIL=0
+  CHECK 1 free (U=1)            : Berezin == operator per mode (representation eq.)
+  CHECK 2 fixed SU(3)/U(1) bkgd : per-config Berezin == operator
+  CHECK 3 U-integrated MIXED    : entangled H_gauge(x)H_ferm Gram, Berezin == operator
+  CHECK 4 reflection = adjoint  : OS Gram Hermitian to machine precision
+  CHECK 5 decay anchor          : Berezin forward 2-pt ~ e^{-2E(p)} per 2-step
+  CHECK 6 single-step control   : single-step BREAKS the equality (indefinite)
+------------------------------------------------------------------------------------
+  Finite-carrier verification of the Luescher/Osterwalder-Seiler/STW/Palumbo
+  transfer-matrix REPRESENTATION (cited); the 2-step eta_1 sign bookkeeping under
+  theta(t,x)=(-1-t,x) is the in-repo derived content.  NOT a continuum / OS-
+  reconstruction (Wightman) claim; NOT a full interacting-RP closure.
+====================================================================================

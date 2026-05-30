@@ -14,8 +14,6 @@ framework theorem. Cited only as published gauge-theory context
 Del Debbio-Faber-Greensite-Olejnik 1996). No framework substrate
 identification, hierarchy closure, scale ratio derivation, or
 `α_LM^16` substitution is claimed.
-**Status authority:** independent audit lane only; pipeline-derived
-status set by `compute_effective_status.py`.
 **Runner:** [`scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py`](../scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt`](../logs/runner-cache/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.txt)
 
@@ -202,6 +200,25 @@ substrate with the 4D SU(N) gauge background, identify a framework
 observable with the Wilson loop or vortex condensate, derive the
 monopole/vortex measure and string tension, and verify the
 substrate-specific bridge.
+
+## Scope Repair Checker
+
+The source-side scope checker for this row is:
+
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_thooft_center_vortex_scope_repair.py
+```
+
+This checker is a source-boundary guard. It does not apply an audit result or
+promote the row beyond `open_gate`; promotion would require retained one-hop
+authorities or new retained bridge theorems for condensation/percolation,
+string tension, Wilson-loop area law, and framework observable identification.
+This row is a permanent `open_gate` external-context catalogue. The source
+repair must not treat the row as a confinement theorem, and does not ask audit
+to close monopole condensation, center-vortex condensation/percolation, or a
+Wilson-loop area law. A future retained bridge theorem would be needed before
+any framework observable identification could use this context as a theorem
+input.
 
 ## External References
 

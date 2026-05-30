@@ -71703,18 +71703,6 @@
       "runner_path": "scripts/poisson_3d_self_field.py",
       "title": "Poisson 3D Self-Field: Full Field from One Local Equation"
     },
-    "poisson_backreaction_live_threshold_packet_note_2026-05-29": {
-      "claim_id": "poisson_backreaction_live_threshold_packet_note_2026-05-29",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
-      "helper_runner_paths": [],
-      "note_hash": "90602681a4514aad720e331b3883af9ac85207da778a7bad3c4f15eab8a08154",
-      "path": "docs/POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md",
-      "runner_path": "scripts/backreaction_poisson_live_threshold_check.py",
-      "title": "Poisson Backreaction Live Threshold Packet"
-    },
     "poisson_exhaustive_uniqueness_note": {
       "claim_id": "poisson_exhaustive_uniqueness_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -87671,7 +87659,6 @@
     "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
     "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
     "pmns_uniform_scalar_deformation_boundary_note",
-    "poisson_backreaction_live_threshold_packet_note_2026-05-29",
     "poisson_self_gravity_loop_v3_note",
     "poisson_self_gravity_mechanism_note",
     "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17",

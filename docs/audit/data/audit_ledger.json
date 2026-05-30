@@ -112573,10 +112573,10 @@
         "B": 1,
         "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py",
-      "title": "Gauge-Vacuum Plaquette First-Sector Completed Triple Sampled-Grid Boundary",
+      "title": "Gauge-Vacuum Plaquette First-Sector Completed Triple Current Transfer-Family Boundary",
       "transitive_descendants": 0,
       "verdict_rationale": "For the narrowed finite-grid statement, the load-bearing computation is not a printed constant: the runner enumerates the stated Cartesian grid and computes the gap from the helper primitives. The hard-coded stated boundary gap is used only for a loose sanity comparison, not for the finite-grid minimum. The source's no-go discipline section narrows the negative claim to sampled-grid resolution and admits the off-grid continuous minimizer objection, so the clean verdict does not certify the unconditional continuous-family no-go."
     },

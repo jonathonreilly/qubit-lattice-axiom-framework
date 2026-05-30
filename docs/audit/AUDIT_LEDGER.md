@@ -1902,6 +1902,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted packet closes the narrowed claim as exact finite-dimensional Clifford/Wedderburn algebra: omega^2 = -1 and centrality give the idempotent split, the Pauli realization supplies the real-algebra identification Cl(3,0) ~= M_2(C), and semisimplicity of M_2(C) plus M_2(C) gives the two 2-dimensional chirality irreps and finite direct-sum decomposition. The runner corroborates the algebraic identities, but random probes are not load-bearing proof. No physical Hilbert-space carrier identification, Grassmann/staggered realization, chirality-selection rule, or spin-statistics interpretation is in the ratified scope.
 - **auditor confidence:** high
 
+### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded dimensional-minimality claim combining lattice IR-sum Mermin-Wagner scaling with the D9 long-range-force/kernel condition to argue d=3 is the minimal spatial dimension compatible with continuous SSB and a non-logarithmic long-range force.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From AXIOM_REDUCTION_NOTE D9 and MW1/MW2, d ≥ 3 is required for continuous SSB and the long-range-force condition, so d = 3 is the unique minimal integer satisfying both.  _(class `B`)_
+- **chain closes:** False — The IR-sum scaling exhibit closes, but the full minimality theorem needs the order-parameter Ward/commutator normalization omitted by the direct Mermin-Wagner dependency and a theorem-grade D9/kernel premise rather than the Axiom Reduction meta inventory.
+- **rationale:** Issue: the proof promotes the Bogoliubov+IR sum into a no-continuous-SSB conclusion and then combines it with D9, but the direct Mermin-Wagner dependency explicitly excludes the Ward/commutator-normalized order-parameter extraction, and AXIOM_REDUCTION_NOTE is a meta inventory rather than retained theorem authority for D9. Why this blocks: the runner's I_d(L) table independently checks the d=1 linear, d=2 logarithmic, and d>=3 finite IR behavior, but that does not by itself prove vanishing order parameter or the framework's long-range-force dimension condition. Repair target: supply a retained Ward/commutator normalization lemma for the finite-volume order parameter and a retained theorem-grade D9/kernel-stability authority, then re-run the dimensional-minimality audit. Claim boundary until fixed: the source may cite the checked IR-sum threshold as supporting evidence; it may not retain the full d_s=3 minimality theorem or the d_s=2 continuous-SSB exclusion as closed.
+- **open / conditional deps cited:**
+  - `MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`
+  - `AXIOM_REDUCTION_NOTE.md`
+- **auditor confidence:** high
+
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`
 
 - **Note:** [`AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)

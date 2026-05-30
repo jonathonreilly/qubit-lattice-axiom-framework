@@ -1,17 +1,15 @@
 # Source-Resolved Propagating Green Pocket
 
 **Date:** 2026-04-05  
-**Type:** bounded_theorem
-**Claim type:** bounded_theorem
-**Status authority:** independent audit lane only.
-**Status:** bounded-support exact-lattice same-site-memory positive packet;
-proposed for independent audit, not audit-ratified.
-**Primary runner:**
-[`scripts/source_resolved_propagating_green_pocket.py`](../scripts/source_resolved_propagating_green_pocket.py)
+**Status:** proposed_retained exact-lattice same-site-memory positive
 
 This note freezes the smallest exact-lattice same-site-memory harness that
-could still be compared directly against the static Green control and
+could still be compared directly against the retained static Green control and
 the instantaneous `1/r` comparator.
+
+The script is:
+
+- [`scripts/source_resolved_propagating_green_pocket.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_propagating_green_pocket.py)
 
 ## Setup
 
@@ -23,7 +21,7 @@ the instantaneous `1/r` comparator.
 
 ## Hard gates
 
-The asserted exact-lattice run passes all requested gates:
+The retained exact-lattice run passes all requested gates:
 
 - exact zero-source reduction: `0.0`
 - all-TOWARD on the source ladder: `4/4`
@@ -49,7 +47,7 @@ The same-site memory field is not identical to the static Green control:
 
 - mean `prop - green = +1.197212e-03`
 
-That is the smallest checked layer-memory observable in this pocket. It is
+That is the smallest retained layer-memory observable in this pocket. It is
 nontrivial, but it remains bounded and does not claim transverse transport, a
 finite-speed field equation, or a full self-consistent GR sector.
 
@@ -69,33 +67,10 @@ What it is **not**:
 - a genuine transverse transport or finite-speed field model
 - a horizon / black-hole result
 - a claim that the generated geometry sector is closed
-- audit-ratified status before independent audit
-
-## Current assertion readout
-
-The registered runner now asserts the finite packet:
-
-```text
-zero-source dynamic shift: +0.000000e+00
-instantaneous F~M exponent: 1.01
-static Green F~M exponent: 1.00
-propagating Green F~M exponent: 1.00
-TOWARD rows: 4/4
-mean |prop/inst| ratio: 1.420
-mean |prop/green| ratio: 1.149
-causal memory observable (prop - green): +1.197212e-03
-ASSERTIONS: PASS
-```
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records the one load-bearing upstream authority
-used by the runner. It does not promote this note or change the audited claim
-scope.
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [minimal_source_driven_field_probe_note](MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)
-
-The exact-Green sibling `SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md` is useful
-context, but it is not a load-bearing authority for this packet: the registered
-runner constructs its own static Green control before comparing it to the
-same-site memory field.
+- [source_resolved_exact_green_pocket_note](SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)

@@ -2,8 +2,7 @@
 """Exact series/tail support for the same-surface DM thermal kernel.
 
 Framework convention:
-  The framework baseline is one-qubit operator algebra on the Z^3 spatial
-  substrate.
+  "axiom" means only the single framework axiom Cl(3) on Z^3.
 
 Purpose:
   Replace the old opaque thermal support story by an exact positive-series
@@ -34,7 +33,6 @@ from dm_leptogenesis_exact_common import ETA_OBS
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
-SUPPORT_COUNT = 0
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -42,20 +40,6 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     status = "PASS" if condition else "FAIL"
     if condition:
         PASS_COUNT += 1
-    else:
-        FAIL_COUNT += 1
-    msg = f"  [{status}] {name}"
-    if detail:
-        msg += f"  ({detail})"
-    print(msg)
-    return condition
-
-
-def support(name: str, condition: bool, detail: str = "") -> bool:
-    global SUPPORT_COUNT, FAIL_COUNT
-    status = "SUPPORT" if condition else "FAIL"
-    if condition:
-        SUPPORT_COUNT += 1
     else:
         FAIL_COUNT += 1
     msg = f"  [{status}] {name}"
@@ -116,7 +100,7 @@ def part2_exact_tail_inequalities() -> None:
 
 def part3_live_dm_slice_support() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: CONDITIONAL LIVE DM-SLICE SERIES/TAIL SUPPORT EXHIBIT")
+    print("PART 3: LIVE DM-SLICE SERIES/TAIL SUPPORT")
     print("=" * 88)
 
     omega_b = float(omega_b_from_eta(ETA_OBS))
@@ -132,12 +116,12 @@ def part3_live_dm_slice_support() -> None:
         r_lo, r_hi = same_surface_ratio_bounds(alpha)
         r_eval = converged_same_surface_ratio(alpha)
         width = r_hi - r_lo
-        support(
+        check(
             f"{label} lies inside the exact series/tail support interval",
             r_lo < r_eval < r_hi,
             f"R=[{r_lo:.12f}, {r_hi:.12f}], eval={r_eval:.12f}",
         )
-        support(
+        check(
             f"{label} support interval is extremely narrow",
             width < 1.0e-9,
             f"width={width:.12e}",
@@ -166,12 +150,12 @@ def main() -> int:
     print("  Honest status:")
     print("    - the coarse thermal selector story is gone")
     print("    - the corrected continuum evaluator agrees with an exact positive-series")
-    print("      decomposition plus exact tail control on the conditional live DM interval")
+    print("      decomposition plus exact tail control on the live DM interval")
     print("    - this hardens the DM thermal layer substantially")
     print("    - but it is still support, not theorem-grade current-bank selector closure")
 
     print("\n" + "=" * 88)
-    print(f"SUMMARY: PASS={PASS_COUNT} SUPPORT={SUPPORT_COUNT} FAIL={FAIL_COUNT}")
+    print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 

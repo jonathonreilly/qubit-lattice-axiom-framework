@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py
-runner_sha256: adc3651c6c053516bd80c8b8af54ea5fc0926272b667adc076ae6e777d0e8bc4
-timeout_sec: 120
+runner_sha256: 841ece80f8f33d54276bf4e170d62c9fe97f55360ded1777c338b77ac161c13c
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 53.85
+elapsed_sec: 164.10
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -26,14 +26,14 @@ PART 2: EXACT TAIL INEQUALITIES
   [PASS] Those tail bounds reduce the thermal remainder to the exact J1/J2 integrals  (upper tail = J2 + b J1 at the corresponding cutoff)
 
 ========================================================================================
-PART 3: CONDITIONAL LIVE DM-SLICE SERIES/TAIL SUPPORT EXHIBIT
+PART 3: LIVE DM-SLICE SERIES/TAIL SUPPORT
 ========================================================================================
-  [SUPPORT] alpha_lo lies inside the exact series/tail support interval  (R=[5.442019867867, 5.442019867931], eval=5.442019867924)
-  [SUPPORT] alpha_lo support interval is extremely narrow  (width=6.358735760159e-11)
-  [SUPPORT] alpha_conv lies inside the exact series/tail support interval  (R=[5.447934280692, 5.447934280753], eval=5.447934280746)
-  [SUPPORT] alpha_conv support interval is extremely narrow  (width=6.074962755065e-11)
-  [SUPPORT] alpha_hi lies inside the exact series/tail support interval  (R=[5.482855571890, 5.482855571936], eval=5.482855571931)
-  [SUPPORT] alpha_hi support interval is extremely narrow  (width=4.645972495609e-11)
+  [PASS] alpha_lo lies inside the exact series/tail support interval  (R=[5.442019867867, 5.442019867931], eval=5.442019867924)
+  [PASS] alpha_lo support interval is extremely narrow  (width=6.358735760159e-11)
+  [PASS] alpha_conv lies inside the exact series/tail support interval  (R=[5.447934280692, 5.447934280753], eval=5.447934280746)
+  [PASS] alpha_conv support interval is extremely narrow  (width=6.074962755065e-11)
+  [PASS] alpha_hi lies inside the exact series/tail support interval  (R=[5.482855571890, 5.482855571936], eval=5.482855571931)
+  [PASS] alpha_hi support interval is extremely narrow  (width=4.645972495609e-11)
 
   alpha_lo   = 0.090667836017286
   alpha_conv = 0.090899546858439
@@ -47,13 +47,12 @@ BOTTOM LINE
   Honest status:
     - the coarse thermal selector story is gone
     - the corrected continuum evaluator agrees with an exact positive-series
-      decomposition plus exact tail control on the conditional live DM interval
+      decomposition plus exact tail control on the live DM interval
     - this hardens the DM thermal layer substantially
     - but it is still support, not theorem-grade current-bank selector closure
 
 ========================================================================================
-SUMMARY: PASS=7 SUPPORT=6 FAIL=0
+SUMMARY: PASS=13 FAIL=0
 ========================================================================================
-
 ----- stderr -----
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 168 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 605 |
+| **retained_bounded** | 606 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1140 |
+| unaudited | 1139 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 939 |
+| `audited_clean` | 940 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1376 |
+| `unaudited` | 1375 |
 
 | claim_type | count |
 |---|---:|
@@ -806,6 +806,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_delay_proxy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `retarded_field_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12073,6 +12074,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Both one-hop dependencies are now retained-bounded, the runner cache is fresh for the current SHA and the direct runner output matches it, and the finite table supports the bounded phase-lag proxy scope. The result remains a configured replay of admitted DAG/field operators, not a derivation of physical delay, redshift, or wave dynamics.
 - **rationale:** This closes only at bounded-theorem grade. The source explicitly narrows the row to one retarded-blend parameter sweep, one fixed intermediate probe patch, and the mix=0 baseline check; it also denies broad gravitational-wave authority. The runner constructs the DAG, mass/probe patches, instantaneous Laplacian field, causal-sum blend, and propagated amplitudes rather than printing constants. Independent checks verified the table arithmetic: the base lag is zero, the base amplitude ratio is one, all rows use six seeds, nonzero mix rows have nonzero lag, and the largest absolute lag is the reported mix=0.25 value. The mix=0 recovery is exact by runner construction, so it is evidence for implementation consistency only, not an independent physical theorem.
 - **auditor confidence:** medium
+
+### `retarded_field_harness_note`
+
+- **Note:** [`RETARDED_FIELD_HARNESS_NOTE.md`](../../docs/RETARDED_FIELD_HARNESS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded runner-table certificate for the h=0.5, W=6, L=30, s=0.01, c=0.8 harness: instantaneous/retarded deflections, T=4/8/16 oscillating-source deflections, and tail-decay percentages.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-000338-9499d110-retarded_field_harness_n`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-verified frozen table of instantaneous vs. retarded deflections, oscillating-source readouts, and tail-decay percentages is exactly computed and cache-matched on the h=0.5, W=6, L=30 harness.  _(class `C`)_
+- **chain closes:** True — The narrowed load-bearing core closes: the completed runner cache matches the frozen table, and the supplied source computes the lattice propagation and retarded fields rather than printing constants. The admitted frequency-fingerprint/branch-worth synthesis is not used as a load-bearing theorem.
+- **rationale:** The displayed runner-table values match the cache output, and the ratio 0.78 is the rounded quotient of the displayed retarded and instantaneous deflections. The source constructs the lattice, field schedules, propagation, oscillating-source fields, and tail-decay readouts numerically, with no helper imports, hard-coded expected outputs, or external comparator. All cited one-hop authorities are retained_bounded, and the note explicitly splits the unsupplied fingerprint/branch-worth bridge into non-load-bearing editorial synthesis.
+- **auditor confidence:** high
 
 ### `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`
 

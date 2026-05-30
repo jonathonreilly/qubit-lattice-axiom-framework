@@ -1,10 +1,11 @@
 # Universal GR Complement Canonicalization Audit
 
-**Status:** bounded - bounded or caveated result note
+**Status (source-side label):** bounded_theorem
+**Claim type:** bounded_theorem
 **Type:** bounded_theorem
-**Status authority:** independent audit lane only.
+**Primary runner:** `scripts/universal_gr_complement_canonical_reaudit.py`
+**Cached output:** `logs/runner-cache/universal_gr_complement_canonical_reaudit.txt`
 **Date:** 2026-04-14  
-**Branch:** `codex/review-active`  
 **Scope:** direct universal route / complement canonicalization only  
 **Ownership:** universal complement canonicalization only
 
@@ -19,21 +20,25 @@ with repair: *"missing_bridge_theorem: provide an axiom-native proof or executab
 Supplying the named retained authority/bridge is substantive new work, out of
 scope for this repair. This revision takes the **split path**:
 
-- **Load-bearing (in scope):** The runner verifies the four universal-only structural facts — that `Pi_A1` is rank-2 and rotation-commuting, that the induced complement generators close as `so(3)`, that the `Pi_A1`-projected quotient-kernel data are frame-invariant, and that the curvature-localization probe is orbit-valued rather than section-valued — which together establish the exact `SO(3)` orbit bundle and exact invariant `A1` projector as the strongest universal-data outputs.
+- **Load-bearing (in scope):** The runner verifies a bounded `SO(3)` witness: a valid spatial rotation moves complement coordinates while leaving the `A1` projection and the current quadratic invariant energy class tied. This supports the local claim that the checked universal/quadratic data do not select a canonical complement section.
 - **NON-load-bearing (split off / admitted):** The conclusion that the full `SO(3)` is the exact residual gauge and that no canonical `E ⊕ T1` section exists under any current universal invariant requires an exhaustiveness argument (ruling out all possible invariants) that is not supplied as an axiom-native proof or executable runner; that exhaustiveness/nonexistence claim is admitted as a not-derived input.
 
 No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
 non-load-bearing input until a retained authority for it lands.
 
+Named source context used for orientation, without importing a stronger status
+than this note proves: `UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md`
+and `UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md`.
+
 ## Verdict
 
 The direct universal `A1`-anchored route does not canonically split the
-complement `E \oplus T1` using only the universal data currently in the
-atlas.
+complement `E \oplus T1` using only the enumerated universal data and
+quadratic invariant class checked in this bounded packet.
 
-The strongest axiom-native object the universal data support is still the
-orbit bundle, not a canonical section:
+The strongest axiom-native object checked here is still the orbit bundle, not
+a canonical section:
 
 `P_comp^cand := (Pi_A1, O_{E \oplus T1}, \omega_MC)`
 
@@ -46,8 +51,8 @@ where:
 - `\omega_MC` is the natural Maurer-Cartan / orbit connection on that frame
   orbit.
 
-This is the strongest complement-frame candidate the universal stack can
-produce, but it is not a canonical split of the complement.
+This is the strongest complement-frame candidate produced by this route and
+runner packet, but it is not a canonical split of the complement.
 
 ## What the universal data do fix
 
@@ -62,34 +67,34 @@ structures:
 5. the exact invariant `A1` projector
    `Pi_A1 = diag(1,0,0,0,1,0,0,0,0,0)`.
 
-Those pieces are enough to isolate the invariant core and the complement
-orbit, but not enough to choose a canonical complement section.
+Those pieces are enough in this packet to isolate the invariant core and the
+complement orbit, but not enough to choose a canonical complement section.
 
-## What the audit tests
+## What the runner tests
 
-The runner checks four universal-only facts:
+The runner checks three bounded facts:
 
-1. `Pi_A1` is rank-2 and commutes with valid `3+1` spatial rotations;
-2. the induced rotation generators close as `so(3)` on the complement;
-3. the `Pi_A1`-projected quotient-kernel data are invariant under valid frame
-   changes, while the complement block is not;
-4. the curvature-localization probe remains orbit-valued rather than
-   section-valued on the `E \oplus T1` complement.
+1. the source note is wired as a bounded theorem with a primary runner, no
+   branch-local status authority, and explicit no-go discipline scope;
+2. a 90-degree spatial rotation is orthogonal, fixes the `A1` projection of
+   the witness, and moves the complement coordinates;
+3. every quadratic energy in the checked invariant class ties on that orbit,
+   so this invariant class does not select a canonical complement section.
 
-If those tests pass, then the exact residual gauge surviving all current
-universal invariants is still the full spatial rotation group:
+If those tests pass, then the residual gauge surviving the checked universal
+invariant packet remains the full spatial rotation group:
 
 `SO(3)`.
 
 ## Complement canonicalization result
 
 The universal `A1` core is canonical, but the complement is not canonically
-split by any invariant presently available in the universal atlas.
+split by the invariant class checked here.
 
 What survives is:
 
 - the exact `Pi_A1` core;
-- the exact `SO(3)` orbit bundle on the complement;
+- the checked `SO(3)` orbit witness on the complement;
 - the natural orbit / Maurer-Cartan connection.
 
 What does **not** survive is:
@@ -98,22 +103,22 @@ What does **not** survive is:
 - a distinguished curvature-localization connection;
 - a universal axis choice inside the complement.
 
-So the direct universal route bypasses the phase-lift `lambda`, but it still
-does not canonically resolve the complement frame. The complement remains an
-`SO(3)` orbit bundle.
+So the direct universal route bypasses the phase-lift `lambda`, but this
+bounded packet still does not canonically resolve the complement frame. The
+complement remains an `SO(3)` orbit bundle on the checked surface.
 
-## Strongest exact statement
+## Strongest bounded statement
 
-The strongest statement supported by the current universal data is:
+The strongest statement supported by this bounded packet is:
 
 > `Pi_A1` is canonical, the direct universal complement is only orbit-canonical,
-> and the exact residual gauge that survives every current universal invariant
+> and the residual gauge that survives the checked universal invariant packet
 > is `SO(3)`.
 
 Equivalently:
 
-> the current atlas does not canonically split `E \oplus T1`; it only fixes
-> the invariant `A1` core and the complement orbit.
+> this route does not canonically split `E \oplus T1`; it only fixes the
+> invariant `A1` core and the complement orbit on the checked surface.
 
 ## Honest status
 
@@ -126,4 +131,36 @@ The direct universal route is:
 - still blocked at the canonical complement-frame level.
 
 The remaining obstruction is not `lambda` on this route. It is the absence of
-a canonical complement section inside the `SO(3)` orbit bundle.
+a canonical complement section inside the `SO(3)` orbit bundle within this
+bounded invariant packet.
+
+## Review-loop no-go discipline gate
+
+- **N1 alternative routes:** additional curvature-localization invariants,
+  non-quadratic functionals, gauge-fixing choices, matter-coupled probes, and
+  external geometric structure are outside this bounded packet.
+- **N2 wall independence:** the obstruction uses an `A1` projector wall, an
+  `SO(3)` orbit wall, and a quadratic invariant-class wall; these are not
+  collapsed into one assumption.
+- **N3 hidden-wall scan:** phrases such as "universal", "canonical", and
+  "current atlas" are scoped to the explicitly listed route and runner checks,
+  not to every possible future invariant.
+- **N4 residual matching:** the note matches only the complement-section
+  blocker; it does not claim full GR closure, curvature localization, or
+  Einstein/Regge identification.
+- **N5 rhetoric audit:** "does not canonically split" means "not selected by
+  the checked invariant packet", not "mathematically impossible under any
+  extension".
+- **N6 partial-closure path:** the retained positive content is the canonical
+  `A1` core plus orbit-valued complement; stronger complement section work can
+  proceed by adding a new invariant or bridge.
+- **N7 steelman:** a later route may add an invariant that breaks the tie and
+  selects a section. This note leaves that route open.
+- **N8 cross-cycle echo:** this does not turn a route blocker into a
+  framework-wide no-go; it keeps the direct universal route boundary local.
+
+## Verification
+
+```bash
+PYTHONPATH=scripts python3 scripts/universal_gr_complement_canonical_reaudit.py
+```

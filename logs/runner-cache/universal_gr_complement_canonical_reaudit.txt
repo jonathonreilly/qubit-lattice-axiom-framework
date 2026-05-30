@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/universal_gr_complement_canonical_reaudit.py
+runner_sha256: 6c06470ff2a637da9cac20d6777b6863eb3e2f2b527eea278ea946bfddf3b723
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+Universal GR complement canonicalization source runner
+========================================================================
+
+A. Source-note wiring
+------------------------------------------------------------------------
+PASS: note declares bounded_theorem
+PASS: note points at this primary runner
+PASS: note does not carry branch-local status authority
+PASS: note does not carry branch-local branch metadata
+PASS: note names frame-bundle blocker context
+PASS: note names SO3 orbit-flat theorem context
+PASS: note keeps full-GR closure out of scope
+PASS: note narrows no-section wording to the checked invariant packet
+PASS: note includes no-go discipline N1-N8
+
+B. Bounded claim boundary
+------------------------------------------------------------------------
+PASS: note does not introduce an axiom
+PASS: stronger exhaustiveness is admitted as not-derived
+PASS: stronger complement section routes remain open
+
+C. Exact SO(3) witness
+------------------------------------------------------------------------
+PASS: rotation is orthogonal
+PASS: A1 projector is fixed -- A1=Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+PASS: complement coordinates move -- perp_rot=Matrix([[0, 0, -1, 0], [0, 0, 0, 0], [-1, 0, 0, 0], [0, 0, 0, 0]])
+PASS: A1 energy is unchanged -- 0 - 0
+PASS: complement energy is unchanged -- 1/5 - 1/5
+
+D. Quadratic-energy no-section check
+------------------------------------------------------------------------
+PASS: all quadratic energies in the current invariant class tie on the orbit -- delta=0
+PASS: energy tie plus moved coordinates prevents canonical section selection
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=19, FAIL=0
+VERDICT: bounded no-canonical-complement-section witness is ready for audit.
+
+----- stderr -----
+

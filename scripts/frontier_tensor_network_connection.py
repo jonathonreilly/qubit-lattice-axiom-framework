@@ -3,20 +3,21 @@
 
 Physics motivation
 ------------------
-The holographic entropy test (frontier_holographic_entropy.py) found
-area-law scaling with R^2 = 0.9996.  This strongly suggests the propagator
-has tensor-network structure.  Here we make this explicit.
+The finite entropy test (frontier_holographic_entropy.py) found area-law
+scaling with R^2 = 0.9996.  This suggests checking whether the propagator has
+finite tensor-network structure.  Here we make that computational check
+explicit without claiming a derived holographic dictionary.
 
 The key insight: on a layered DAG the path-sum propagator decomposes as
     psi_out = M_L . M_{L-1} . ... . M_1 . psi_in
 where each M_l is a transfer matrix of dimension (sites_l+1 x sites_l).
 This is precisely a Matrix Product Operator (MPO).
 
-We test four aspects:
-  1. The propagator IS a tensor network (MPO decomposition)
-  2. Entanglement structure matches MERA/tensor network predictions
-  3. Gravity modifies the effective bond dimension
-  4. Connection to Ryu-Takayanagi: S_A / boundary ~ 1/G
+We test four finite aspects:
+  1. The propagator factors through an MPO-style transfer product
+  2. Entanglement structure has the sampled log/area-law signatures
+  3. The toy gravitational potential modifies the effective bond dimension
+  4. Entropy decreases monotonically with the tested coupling
 
 All computations use exact diagonalization on small lattices.
 
@@ -523,8 +524,8 @@ def test_gravitational_bond_dimension() -> dict:
     (number of significant singular values) should DECREASE near a
     gravitational source -- gravity concentrates information.
 
-    This is the holographic principle in tensor network language:
-    gravity reduces the effective Hilbert space dimension.
+    This is only a finite singular-spectrum compression diagnostic. It does
+    not derive the holographic principle.
     """
     print("\n" + "=" * 72)
     print("TEST 3: GRAVITATIONAL BOND DIMENSION")
@@ -614,28 +615,18 @@ def test_gravitational_bond_dimension() -> dict:
 
 
 # ===================================================================
-# TEST 4: Connection to Ryu-Takayanagi
+# TEST 4: Entropy coupling sweep
 # ===================================================================
 
-def test_ryu_takayanagi() -> dict:
-    """Test 4: S_A / boundary ~ 1/G_N (gravitational coupling).
+def test_entropy_coupling_sweep() -> dict:
+    """Test 4: finite entropy response to the toy coupling.
 
-    The Ryu-Takayanagi formula says S_A = Area(gamma_A) / (4 G_N).
-    In our framework:
-      - S_A is the entanglement entropy across a cut
-      - Area(gamma_A) is the boundary size of the cut
-      - G_N is the gravitational coupling
-
-    If we vary the gravitational coupling (potential strength),
-    does S_A / boundary change inversely with the coupling?
-
-    More precisely: the free-field entropy gives the baseline.
-    Adding gravity should modify S_A.  The key relation is
-    S_A / boundary = alpha / (4 * G_eff) where alpha is a constant
-    and G_eff depends on the gravitational coupling strength.
+    The runner fits both S versus 1/g and S versus g. The inverse-coupling fit
+    is reported only as a failed RT-formula diagnostic; the passing gate is the
+    monotone entropy decrease over the tested coupling sweep.
     """
     print("\n" + "=" * 72)
-    print("TEST 4: RYU-TAKAYANAGI CONNECTION")
+    print("TEST 4: ENTROPY COUPLING SWEEP")
     print("=" * 72)
 
     results = {}
@@ -684,11 +675,9 @@ def test_ryu_takayanagi() -> dict:
     results["S_vals"] = S_vals
     results["S_over_bdy"] = S_over_bdy
 
-    # The RT formula predicts S = Area / (4G).
-    # In our discrete setting, if we identify the gravitational coupling g
-    # with 1/G_N, then S/boundary should be proportional to G_N ~ 1/g
-    # i.e., S/boundary should DECREASE as g increases.
-    # (Stronger gravity = more classical = less entanglement)
+    # A real RT formula would require a derived dictionary. Here the
+    # inverse-coupling fit is kept as a negative diagnostic against treating
+    # this finite sweep as an RT derivation.
 
     S_free = S_vals[0]
     S_strong = S_vals[-1]
@@ -707,7 +696,7 @@ def test_ryu_takayanagi() -> dict:
         ss_tot = np.sum((S_arr - np.mean(S_arr))**2)
         r2_rt = 1.0 - ss_res / ss_tot if ss_tot > 0 else 0
 
-        print(f"\n  RT fit: S = {coeffs_rt[0]:.4f} / g + {coeffs_rt[1]:.4f}")
+        print(f"\n  Inverse-coupling fit: S = {coeffs_rt[0]:.4f} / g + {coeffs_rt[1]:.4f}")
         print(f"  R^2 (S vs 1/g) = {r2_rt:.4f}")
         results["rt_r2"] = r2_rt
         results["rt_slope"] = coeffs_rt[0]
@@ -726,9 +715,9 @@ def test_ryu_takayanagi() -> dict:
 
         # Which fits better tells us the functional relationship
         if r2_rt > r2_lin:
-            print(f"  S ~ 1/g fits better -> consistent with RT: S = Area/(4G) with G ~ 1/g")
+            print("  S ~ 1/g fits better on this sweep")
         else:
-            print(f"  S ~ g fits better -> gravity modifies entropy linearly")
+            print("  S ~ g fits better -> not an RT S=Area/(4G) derivation")
 
     # Entanglement spectrum vs gravity
     print(f"\n  --- Entanglement spectrum vs gravity ---")
@@ -753,7 +742,8 @@ def test_ryu_takayanagi() -> dict:
 
     gate4 = entropy_decreases
     print(f"\n  Entropy decreases with gravity: {entropy_decreases}")
-    print(f"  GATE 4 (RT connection): {'PASS' if gate4 else 'FAIL'}")
+    print("  RT formula derived: NO")
+    print(f"  GATE 4 (monotone entropy diagnostic): {'PASS' if gate4 else 'FAIL'}")
 
     results["gate4"] = gate4
     results["entropy_decreases"] = entropy_decreases
@@ -782,8 +772,8 @@ def main():
     # Test 3: Gravitational bond dimension
     results["test3"] = test_gravitational_bond_dimension()
 
-    # Test 4: Ryu-Takayanagi
-    results["test4"] = test_ryu_takayanagi()
+    # Test 4: entropy coupling sweep
+    results["test4"] = test_entropy_coupling_sweep()
 
     # Summary
     elapsed = time.time() - t_start
@@ -799,7 +789,7 @@ def main():
     print(f"  Gate 1 (propagator is MPO):             {'PASS' if gate1 else 'FAIL'}")
     print(f"  Gate 2 (entanglement matches TN):       {'PASS' if gate2 else 'FAIL'}")
     print(f"  Gate 3 (gravity reduces bond dim):      {'PASS' if gate3 else 'FAIL'}")
-    print(f"  Gate 4 (Ryu-Takayanagi connection):     {'PASS' if gate4 else 'FAIL'}")
+    print(f"  Gate 4 (monotone entropy diagnostic):   {'PASS' if gate4 else 'FAIL'}")
 
     # Key quantitative results
     if "cft_c" in results["test2"]:
@@ -807,7 +797,9 @@ def main():
     if "area_law_r2" in results["test2"]:
         print(f"  Area law R^2 = {results['test2']['area_law_r2']:.4f}")
     if "rt_r2" in results["test4"]:
-        print(f"  RT fit R^2 (S vs 1/g) = {results['test4']['rt_r2']:.4f}")
+        print(f"  Inverse-coupling fit R^2 (S vs 1/g) = {results['test4']['rt_r2']:.4f}")
+    if "linear_r2" in results["test4"]:
+        print(f"  Linear fit R^2 (S vs g) = {results['test4']['linear_r2']:.4f}")
 
     n_pass = sum([gate1, gate2, gate3, gate4])
     print(f"\n  Gates passed: {n_pass}/4")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_tensor_network_connection.py
-runner_sha256: 346e820052a7d694b1fe274fac29de14cb767a42bbf1d112abb7404ac3401824
+runner_sha256: cd9cc0f08f1d96e1a0da9ecc80a50f8c8f17c16a5119afec7133738865ef2d78
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.11
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ========================================================================
@@ -115,7 +115,7 @@ TEST 3: GRAVITATIONAL BOND DIMENSION
   GATE 3 (gravity reduces effective bond dimension): PASS
 
 ========================================================================
-TEST 4: RYU-TAKAYANAGI CONNECTION
+TEST 4: ENTROPY COUPLING SWEEP
 ========================================================================
 
   Lattice: 16 x 8, boundary = 8
@@ -129,11 +129,11 @@ TEST 4: RYU-TAKAYANAGI CONNECTION
      8.0      2.8045      0.3506     -3.2633     -0.4079
     10.0      2.4314      0.3039     -3.6363     -0.3636
 
-  RT fit: S = 1.5451 / g + 3.3124
+  Inverse-coupling fit: S = 1.5451 / g + 3.3124
   R^2 (S vs 1/g) = 0.6465
   Linear fit: S = -0.3596 * g + 5.7679
   R^2 (S vs g) = 0.9745
-  S ~ g fits better -> gravity modifies entropy linearly
+  S ~ g fits better -> not an RT S=Area/(4G) derivation
 
   --- Entanglement spectrum vs gravity ---
     g= 0.0: xi (first 5) = [-34.53957599 -34.53957599 -34.53957599 -34.53957599 -34.53957599]
@@ -144,7 +144,8 @@ TEST 4: RYU-TAKAYANAGI CONNECTION
            entanglement gap = -34.5396
 
   Entropy decreases with gravity: True
-  GATE 4 (RT connection): PASS
+  RT formula derived: NO
+  GATE 4 (monotone entropy diagnostic): PASS
 
 
 ========================================================================
@@ -153,11 +154,12 @@ SUMMARY
   Gate 1 (propagator is MPO):             PASS
   Gate 2 (entanglement matches TN):       PASS
   Gate 3 (gravity reduces bond dim):      PASS
-  Gate 4 (Ryu-Takayanagi connection):     PASS
+  Gate 4 (monotone entropy diagnostic):   PASS
 
   Central charge c = 1.0855 (expect 1.0)
   Area law R^2 = 0.9996
-  RT fit R^2 (S vs 1/g) = 0.6465
+  Inverse-coupling fit R^2 (S vs 1/g) = 0.6465
+  Linear fit R^2 (S vs g) = 0.9745
 
   Gates passed: 4/4
   Elapsed: 0.0s

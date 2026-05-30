@@ -1,4 +1,4 @@
-# Free-Field Osterwalder-Schrader to Wightman Reconstruction with the Antiparticle Sector (Narrow Theorem)
+# Free-Field Wightman Reconstruction of the Free Staggered-Dirac 2-Point -- Bounded Conditional Assembly (Antiparticle Sector)
 
 **Date:** 2026-05-30
 **Claim type:** bounded_theorem
@@ -54,7 +54,12 @@ statistics-blind 2-point is the starting object.
 ## 1. Claim
 
 **Theorem (free-field reconstruction with antiparticle sector).**
-Let `S(p) = (m - i gamma.p)/(p^2 + m^2)` be the framework's free staggered
+Conditional on the cited rungs (two `audited_conditional`, two `unaudited`), the
+classical free-field Osterwalder-Schrader reconstruction assembles a relativistic
+Wightman 2-point function whose antiparticle sector carries the spectral
+multiplicity `{+E, +E, -E, -E}`, recovered from the statistics-blind
+staggered-Dirac kernel. In detail:
+let `S(p) = (m - i gamma.p)/(p^2 + m^2)` be the framework's free staggered
 Euclidean 2-point in the continuum limit (`a -> 0`), regarded as a
 **statistics-blind** covariance kernel `S(p) = M^{-1}(p)`, `M(p) = m + i gamma.p`.
 Applying the classical free-field Osterwalder-Schrader reconstruction to the
@@ -115,27 +120,36 @@ statistics flag.
 
 ---
 
-## 3. OS-axiom verification (free Gaussian) as statistics-blind facts
+## 3. OS-axiom status (free Gaussian): inherited conditionally from the cited rungs
 
 For the free Gaussian theory with covariance `S`, the Osterwalder-Schrader
-axioms hold as statistics-blind facts:
+axioms enter as follows. OS2 and OS4 are **inherited conditionally** from their
+cited rungs and are **not independently re-derived here**:
 
 - **OS0 (temperedness / regularity).** `S(p)` is a rational tempered kernel; the
   Gaussian generating functional `exp(-1/2 <J, S J>)` is OS-regular.
 - **OS1 (Euclidean covariance).** Continuum SO(4) covariance
   `S(Lambda p) = Sigma(Lambda) S(p) Sigma(Lambda)^{-1}` (imported from the boost
   note, continuum-scoped).
-- **OS2 (reflection positivity).** Provided by the two-step transfer positivity
-  `That^2 = Bdag B >= 0` of the RP rung; RP of the Gaussian measure follows from
-  positivity of the (reflected) covariance on half-space test functions.
+- **OS2 (reflection positivity).** **Inherited conditionally** from the cited RP
+  rung (`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`,
+  `audited_conditional`): two-step transfer positivity `That^2 = Bdag B >= 0`,
+  from which RP of the Gaussian measure follows by positivity of the (reflected)
+  covariance on half-space test functions. It is **not independently re-derived
+  here**.
 - **OS3 (symmetry).** The Schwinger functions are symmetric (Gaussian; the
   2-point Hermiticity relation `S(p)dag = gamma^0-type conjugate of S(p)` holds).
-- **OS4 (cluster).** The connected `n`-point functions vanish at large
-  separation; for the Gaussian theory cluster reduces to decay of the 2-point,
-  which holds for `m > 0`.
+- **OS4 (cluster).** **Inherited conditionally** from the cited OS-reconstruction
+  rung (`OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md`,
+  `unaudited`): for the Gaussian theory cluster reduces to decay of the connected
+  2-point, which holds for `m > 0`. It is **not independently re-derived here**.
 
-These are the hypotheses of the OS reconstruction theorem; with them, the
-reconstruction proceeds by standard methodology.
+OS0-OS4 are not machine-verified in the companion runner; the runner verifies the
+algebraic/spectral consequences of the reconstruction, conditional on OS holding.
+
+These are the hypotheses of the OS reconstruction theorem; with them (inherited
+at their cited audit statuses), the reconstruction proceeds by standard
+methodology.
 
 ---
 
@@ -264,15 +278,18 @@ confirmation of the bosonic Isserlis identity.
 
 ---
 
-## 8. Corollary (the FS keystone) -- stated conditionally
+## 8. Corollary (the FS keystone premise) -- stated conditionally
 
-**Corollary (pointer, conditional).** Combined with the verified spin-statistics
-mechanism -- commuting quantization of a relativistic spin-1/2 field with the
-antiparticle `{+E, +E, -E, -E}` sector forces an unbounded-below Dirac sea
-(equivalently a Lueders-Zumino negative-norm / ghost sector) and breaks
-microcausality, while the CAR quantization is healthy -- the bounded-energy,
-positive-metric reconstruction of Sections 4-6 **excludes the commuting
-quantization and forces CAR for the free sector.**
+**Corollary (pointer, conditional).** Conditional on the above rungs ratifying and
+on the LEVEL-1 spin-statistics mechanism (`axiom_first_spin_statistics_theorem`,
+currently `unaudited`) -- under which commuting quantization of a relativistic
+spin-1/2 field with the antiparticle `{+E, +E, -E, -E}` sector yields an
+unbounded-below Dirac sea (equivalently a Lueders-Zumino negative-norm / ghost
+sector) and breaks microcausality, while the CAR quantization is healthy -- the
+bounded-energy, positive-metric reconstruction of Sections 4-6 makes the
+commuting quantization excluded (CAR selected) for the free sector. This note
+does not itself establish FS; it delivers the relativistic-Wightman-field premise
+the mechanism requires.
 
 The discriminating quantity is convention-independent: it is the sign carried by
 adding one quantum to a negative-energy `-E` mode under each statistics, weighted

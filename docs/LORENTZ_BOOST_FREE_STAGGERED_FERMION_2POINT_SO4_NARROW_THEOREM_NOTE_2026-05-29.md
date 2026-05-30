@@ -354,8 +354,8 @@ optional sympy):
 | 0    | Canonical staggered phase/blocking derivation to `γ_μ ⊗ 1_taste`    | 6    |
 | 1    | Euclidean Clifford algebra + staggered operator + closed-form inverse | 5  |
 | 1a   | Exact finite-a scalar spectrum Δ(p) + 4-fold taste multiplicity (position-space staggered operator) | 7 |
-| 2    | Continuum limit → SO(4) Euclidean Dirac propagator (O(a²))          | 5    |
-| 3    | SO(4) covariance: exact continuum bispinor + lattice O(a²) residual | 5    |
+| 2    | Continuum limit → SO(4) Euclidean Dirac propagator, D~ block (O(a²) of the displayed taste-spectator block) | 5    |
+| 3    | SO(4) covariance: exact continuum bispinor + lattice O(a²) residual (D~ block; taste-singlet scalar sector) | 5    |
 | 4    | Scalar-spectrum leading anisotropy = dim-6 ℓ=4 cubic harmonic (4D; c₄=-1/3; no ℓ=2,6) | 8  |
 | 5    | Free-scalar bridge consistency (3-slice, coefficient, kernel)      | 4    |
 | 6    | Position-space SO(4) isotropy of the lattice trace 2-point (even sublattice) | 4 |

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_thooft_center_vortex_scope_repair.py
+runner_sha256: ee5616f563ee9b85bfbb02d5a8400ba0c19a135692d142efb9e4362dabcae95d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+'t Hooft center-vortex open-gate scope repair
+========================================================================
+
+A. Permanent open-gate boundary
+------------------------------------------------------------------------
+PASS: note declares open_gate
+PASS: note has no branch-local status authority
+PASS: note says permanent external-context catalogue
+PASS: note says audit should not close confinement theorem
+PASS: note excludes all positive closure targets
+PASS: note leaves future bridge theorem route explicit
+PASS: source checker does not claim to apply audit result
+
+B. Primary runner replay
+------------------------------------------------------------------------
+PASS: primary runner exits cleanly -- returncode=0
+PASS: primary runner reports no failures
+PASS: primary runner enforces open_gate declaration
+PASS: primary runner enforces no substrate identification
+PASS: primary runner enforces no hierarchy closure
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=12, FAIL=0
+VERDICT: row is ready for re-audit as a permanent open_gate.
+
+----- stderr -----
+

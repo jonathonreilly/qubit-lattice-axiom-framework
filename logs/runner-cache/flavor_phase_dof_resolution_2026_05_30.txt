@@ -1,0 +1,9 @@
+native-symmetric (Im b=0): at most 2 distinct masses:
+  Re b=0.3: sqrt-masses [0.7 0.7 1.6] -> 2 distinct, Q=0.3933
+  Re b=0.5: sqrt-masses [0.5 0.5 2. ] -> 2 distinct, Q=0.5000
+full operator (Im b!=0 = chiral import): 3 distinct (physical):
+  Im b=0.2: sqrt-masses [0.354 1.046 1.6  ] -> 3 distinct, Q=0.4200
+  Im b=0.4: sqrt-masses [0.007 1.393 1.6  ] -> 3 distinct, Q=0.5000
+
+measure-median Q: native-symmetric-only=0.666; full physical=1.334
+=> physical 3-distinct needs the import -> median Q=1 (retraction stands); exact 2/3 = chiral constraint.

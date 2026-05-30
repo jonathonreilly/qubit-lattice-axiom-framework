@@ -4,28 +4,27 @@ lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py
 ---------------------------------------------------------------------------
 
 Runner for the carrier-independent bilateral Noether identity narrow
-theorem (Block 27 of the 2026-05-17 filter-excluded-positive-closures
-campaign).
+theorem.
 
 Source note:
   docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md
 
-Parent (audited_conditional row this narrow closure targets):
+Parent context:
   docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
 
 Claim (carrier-independent bilateral Noether identity).
 Define the *axis-translation-invariant carrier class*
 
-    AntiHermCarrier(Z^d)  :=
+    AxisInv(Z^d)  :=
       { c_mu : Z^d -> R  |  c_mu(x + mu_hat) = c_mu(x)  for all x, mu }.
 
 For any c_mu in this class, the nearest-neighbour operator
 
     M_{x, x+mu_hat}  =  +(1/2) c_mu(x)
-    M_{x, x-mu_hat}  =  -(1/2) c_mu(x - mu_hat)        (= -(1/2) c_mu(x))
+    M_{x, x-mu_hat}  =  -(1/2) c_mu(x)
 
 is anti-Hermitian off-diagonal (M^T = -M off-diagonal). For any
-field-index generator T satisfying
+site-local/internal generator T satisfying
 
     [T, M]  =  0,                                                        (Sym)
 
@@ -45,15 +44,17 @@ not x_mu, so eta_mu(x + mu_hat) = eta_mu(x)). The naive Wilson-free
 choice c_mu(x) = 1 is another. The class is strictly larger than just
 {naive, staggered}; the runner exhibits exhibit other class members.
 
-Outside this class the bilateral identity *provably fails* (E5
-exhibits): if c_mu(x + mu_hat) != c_mu(x) somewhere, then M is no
-longer anti-Hermitian, the right and left eigenvectors decouple, and
-on-shell partial^L J^mu != 0 at the offending sites.
+Outside this class the bilateral form is no longer the form obtained by
+the reindexed local-alpha derivation. E5 exhibits the equivalent loss of
+off-diagonal anti-Hermiticity for the outgoing-hop convention used here.
 
 Thus the bilateral Noether identity is *carrier-independent within the
 axis-translation-invariant class*, decoupling the identity from the
 staggered-Dirac realization gate. The gate enters only when one wants
 to *identify* M with the specific physical operator M_KS.
+
+This runner does not claim a Ward theorem for generators that shift
+lattice indices.
 
 Exhibits.
 
@@ -72,9 +73,8 @@ Exhibits.
        Bilateral identity still holds, proving the class is strictly
        larger than {naive, staggered}.
 
-  E5.  No-go below the class: c_mu(x + mu_hat) != c_mu(x) at one
-       site. M loses anti-Hermiticity at that site; on-shell partial^L
-       J^mu acquires an explicit, computable non-zero remainder.
+  E5.  Sharpness below the class: c_mu(x + mu_hat) != c_mu(x) at one
+       site. M loses off-diagonal anti-Hermiticity at that site.
        Confirms the class characterization is sharp.
 
   E6.  Non-identity internal generator T = sigma_3 (block 2x2). With
@@ -367,19 +367,20 @@ def E5_anti_hermiticity_sharp_characterization():
     # The axis-translation-invariance condition c_mu(x + mu_hat) = c_mu(x)
     # is *equivalent* to off-diagonal anti-Hermiticity of M (for real c):
     #   M_{x, x+mu_hat} + M_{x+mu_hat, x}
-    #     = (1/2) c_mu(x) + (-1/2) c_mu(x+mu_hat - mu_hat)
-    #     = (1/2) c_mu(x) - (1/2) c_mu(x)
-    #     = 0 IFF c_mu(x+mu_hat) appears symmetrically;
+    #     = (1/2) c_mu(x) + (-1/2) c_mu(x+mu_hat)
+    #     = (1/2) [c_mu(x) - c_mu(x+mu_hat)]
+    #     = 0 IFF c_mu is axis-invariant along direction mu;
     # the bilateral (5) derivation in Step 2 of the parent note
     # combines forward + backward hops by RE-INDEXING the backward
     # piece x' = x - mu_hat, which produces a coefficient
-    # (1/2) c_mu(x') on the bilinear chibar_{x'+mu_hat} T chi_{x'}.
+    # (1/2) c_mu(x'+mu_hat) on the bilinear
+    # chibar_{x'+mu_hat} T chi_{x'}.
     # The forward piece has coefficient (1/2) c_mu(x') on
     # chibar_{x'} T chi_{x'+mu_hat}. These combine to the bilateral
     # form (5) IFF the two coefficients match -- which is automatic
     # when c is axis-inv (the re-indexed backward coefficient
-    # c_mu(x'-mu_hat-(-mu_hat)) = c_mu(x') matches the forward
-    # coefficient at x'). When c is NOT axis-inv, the two coefficients
+    # c_mu(x'+mu_hat) = c_mu(x') matches the forward coefficient at
+    # x'). When c is NOT axis-inv, the two coefficients
     # disagree and (5) is *not* the form produced by Step 2.
     # Sharp test: anti-Hermiticity of M's off-diagonal block.
 
@@ -550,13 +551,14 @@ def E8_carrier_uniformity():
 def main():
     print("=" * 72)
     print(" lattice_noether_carrier_independent_bilateral_identity_narrow")
-    print(" Block 27 of filter-excluded-positive-closures-2026-05-17")
     print()
-    print(" Theorem. Bilateral Noether identity holds on the axis-translation-")
+    print(" Bounded theorem. Bilateral Noether identity holds on the axis-translation-")
     print(" invariant carrier class { c_mu : c_mu(x + mu_hat) = c_mu(x) },")
     print(" with on-shell divergence vanishing for every c_mu in the class")
-    print(" and every generator T with [T, M] = 0. Decouples the bilateral")
-    print(" identity from the staggered-Dirac realization gate.")
+    print(" and every site-local/internal generator T with [T, M] = 0.")
+    print(" It does not claim a Ward theorem for lattice-index generators.")
+    print(" This decouples the bilateral identity from the staggered-Dirac")
+    print(" realization gate.")
     print("=" * 72)
     print()
     results = {

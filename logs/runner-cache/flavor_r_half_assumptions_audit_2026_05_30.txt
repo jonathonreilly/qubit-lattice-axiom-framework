@@ -1,0 +1,13 @@
+B3 check: lepton sqrt-mass variance ratio vs the cross-sector 2/9=(N-1)/N^2:
+  r=0.5: var/(sum)^2 = 0.1111 = (2/9)r ; Q=0.6667
+  r=1.0: var/(sum)^2 = 0.2222 = (2/9)r ; Q=1.0000
+  => r=1/2 gives 1/9 (NOT 2/9); the 2/9 cross-sector value -> r=1 -> Q=1 (distinct objects).
+
+A5 check: y_tau-self-term Delta Q ~ 4.29e-05 vs 0.333 needed -> shortfall ~7769x
+
+A7 check: Q linear in r -> 0.91 sigma maps to r-window ~[0.49996,0.50002] (width 6.1e-5);
+  nearest simple fraction (4/9,5/9) ~5450 sigma. Relaxing the target SHARPENS the pin.
+
+VERDICT: 0/4 live assumptions fell -> r=1/2 robustly the irreducible pin.
+Structural reason: framework reaches DISCRETE data + endpoints, never the CONTINUOUS modulus r.
+One route left: a NATIVE (A1+A2) matter beta-function with a 1/2-attractor (needs bridge-gap action).

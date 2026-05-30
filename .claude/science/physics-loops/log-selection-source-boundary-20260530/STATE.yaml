@@ -1,0 +1,27 @@
+loop: log-selection-source-boundary-20260530
+mode: focused_block
+target_status: best-honest-status
+branch: physics-loop/log-selection-source-boundary-20260530
+base: origin/main
+cycle: 1
+active_route: finite_record_probability_calculus_log_selection
+hard_residual: "Can finite sharp-record RN probability calculus select the unit logarithmic source generator rather than a scaled c log Z / lambda source family?"
+files_touched:
+  - docs/SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md
+  - scripts/frontier_source_measure_log_selection_boundary.py
+  - outputs/source_measure_log_selection_boundary_2026-05-30.json
+  - .claude/science/physics-loops/log-selection-source-boundary-20260530/
+open_imports:
+  - "physical source-unit/log-selection law"
+  - "strict same-source top/W response evidence if source-unit law is not derived"
+forbidden_imports:
+  - H_unit
+  - yt_ward_identity
+  - y_t_bare
+  - observed top/W/Z masses or PDG targets
+  - alpha_LM
+  - plaquette/u0
+  - fitted selector
+claim_state_movement: "negative_route_pruning: record-intervention/RN theorem alone does not retire P-cal or fix Y_T lambda=1"
+next_exact_action: "Choose one positive route: derive a physical Fisher-arclength source-unit law from sharp records, or build strict same-source top/W response evidence."
+stop_condition: "Block complete after note/runner/output/PR record exact boundary and identify next positive source-unit routes."

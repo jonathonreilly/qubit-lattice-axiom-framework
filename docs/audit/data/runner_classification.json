@@ -24205,16 +24205,16 @@
       "runner": "scripts/frontier_mass_ratio_up_sector.py"
     },
     "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": {
-      "assert_count": 1,
+      "assert_count": 0,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 2,
+        "B": 0,
+        "C": 6,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py"
+      "runner": "scripts/frontier_yt_ward_identity_derivation.py"
     },
     "v_eff_total_njl_style_bounded_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -52603,6 +52603,7 @@
     "scripts/frontier_yt_ward_identity_derivation.py": {
       "assert_count": 0,
       "claims": [
+        "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
         "yt_ward_identity_derivation_theorem",
         "yt_zero_import_authority_note"
       ],
@@ -57590,21 +57591,6 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "exists": true
-    },
-    "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py": {
-      "assert_count": 1,
-      "claims": [
-        "uv_gauge_to_yukawa_bridge_sc_vs_pert_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 2,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
       "exists": true
     },
     "scripts/valley_linear_asymptotic_bridge.py": {

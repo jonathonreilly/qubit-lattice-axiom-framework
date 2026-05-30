@@ -27041,6 +27041,26 @@
       "to": "ckm_atlas_axiom_closure_note"
     },
     {
+      "from": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+      "to": "yt_ward_identity_derivation_theorem"
+    },
+    {
+      "from": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+      "to": "yt_ew_color_projection_theorem"
+    },
+    {
+      "from": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+      "to": "minimal_axioms_2026-04-11"
+    },
+    {
+      "from": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "vacuum_critical_stability_note",
       "to": "composite_higgs_mechanism_note_2026-05-03"
     },
@@ -82993,15 +83013,23 @@
     },
     "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": {
       "claim_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem.",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
-      "helper_runner_paths": [],
-      "note_hash": "89c9a77a3c26ed36fc3d40e8a0a664ed307e94da98ed0ecc2aff83f4eca57a41",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": null,
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "yt_ward_identity_derivation_theorem",
+        "yt_ew_color_projection_theorem",
+        "minimal_axioms_2026-04-11",
+        "plaquette_self_consistency_note",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "note_hash": "5303f2e681e47f902e0fb66d41319ff8f39405a4d476ad917539b0fecbe9f688",
       "path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
-      "runner_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
-      "title": "UV Gauge-to-Yukawa Bridge: Perturbative vs Strong-Coupling Coefficients"
+      "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
+      "title": "UV Gauge-to-Yukawa Bridge: Subordinate Support Note"
     },
     "v_eff_total_njl_style_bounded_theorem_note_2026-05-10": {
       "claim_id": "v_eff_total_njl_style_bounded_theorem_note_2026-05-10",
@@ -87828,7 +87856,6 @@
     "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10",
     "universal_gr_supermetric_normal_form_note",
     "universal_qg_optional_textbook_comparison_note",
-    "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
     "valley_linear_action_note",
     "valley_linear_asymptotic_bridge_note",
     "valley_linear_mirror_transfer_note",
@@ -87911,7 +87938,7 @@
       "decoration": 1,
       "meta": 199,
       "no_go": 87,
-      "none": 1408,
+      "none": 1409,
       "open_gate": 58,
       "positive_theorem": 175
     },

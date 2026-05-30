@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 170 |
-| **retained_no_go** | 175 |
+| **retained_no_go** | 176 |
 | **retained_bounded** | 614 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1207 |
+| unaudited | 1206 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 950 |
+| `audited_clean` | 951 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1445 |
+| `unaudited` | 1444 |
 
 | claim_type | count |
 |---|---:|
@@ -430,6 +430,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_bridge_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -5786,6 +5787,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For arbitrary abstract finite-dimensional operators and data `(S, eta, K)`, defining `z_(p,q)=<chi_(p,q),S^(L_perp-1) eta>`, `rho=z/z_(0,0)`, `v=sum z chi`, and `Z(W)=<K(W),v>` makes the stated coefficient and evaluation relations follow by elementary linear algebra.  _(class `A`)_
 - **chain closes:** True — The narrowed in-scope claim closes because the displayed relations are definitions and immediate linear-algebra consequences of the abstract hypotheses. The physical beta=6 identification remains explicitly out of scope and is not used to close the audited claim.
 - **rationale:** After the 2026-05-28 narrowing, the load-bearing claim is only a formal if-premises-then-algebra lemma over arbitrary finite-dimensional `(S, eta, K)`. That claim is class A and does not require the four Wilson/Haar bridge authorities, which the note explicitly excludes from scope. The runner contains five theorem-style algebraic/finite structural checks and five cross-note support-string checks; it does not derive the physical Wilson/Haar identities, but the narrowed formal claim does not depend on those identities.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** A single scalar constraint L(v)=c does not determine a full positive normalized class-sector vector when the relevant level set contains distinct vectors; the displayed R^3 witnesses have equal L and unequal M.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-235543-c108b3fa-gauge_vacuum_plaquette_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Let V_n be the positive normalized simplex with n >= 3; if a scalar linear observable L(v)=ell·v has a level set containing more than one point in V_n, then fixing L(v)=c does not determine a unique v in V_n.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the stated level-set condition and the explicit finite-dimensional witness. No Wilson/Haar, rim-lift, compression, or PF bridge is used as a load-bearing premise.
+- **rationale:** The audited claim is only the finite-dimensional scalar-underdetermination lemma, not a beta=6 physical reconstruction theorem. The displayed vector, scalar, statistic, null-direction, and polynomial-evaluation arithmetic all check under the note's own definitions. The runner source performs exact Fraction-based checks with no helper imports or opaque upstream premises. The no-go scope is narrow: later structural theorems or additional independent data are expressly left open.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_bridge_support_note`

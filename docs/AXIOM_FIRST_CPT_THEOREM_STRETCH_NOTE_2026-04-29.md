@@ -65,8 +65,9 @@ This 2026-05-10 repair takes path (a) and rebases the hypothesis set:
 
 ## Scope (post-split, 2026-05-10)
 
-The downstream package `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` invokes
-a "CPT-even" assumption when restricting the scalar observable
+The package's
+[`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+invokes a "CPT-even" assumption when restricting the scalar observable
 generator `W` to depend only on `|Z|` rather than on the fermionic phase
 of `Z`. This note proposes a bounded fermion-sector identity that is
 the natural in-block step toward discharging that assumption: it
@@ -350,8 +351,8 @@ row becomes eligible for retagging by the independent audit lane.
 
 ## Corollaries (downstream tools)
 
-C1. *Partial discharge of the `CPT-even` assumption in downstream
-`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`.*
+C1. *Partial discharge of the `CPT-even` assumption in
+[`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md).*
 The fermion-sector contribution to the scalar observable generator
 `W` need only depend on `|Z|` because the fermion-sector determinant
 is real, by (CPT4). Discharge of the "CPT-even" premise on the full
@@ -380,7 +381,7 @@ conditional on (R2)(II).
   - [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
   - [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
 - Target of partial discharge:
-  `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+  [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
   (`audit_status: audited_conditional`, `claim_type: bounded_theorem`).
 - Related assumption ledger: [`ASSUMPTION_DERIVATION_LEDGER.md`](ASSUMPTION_DERIVATION_LEDGER.md)
   (`θ_eff = 0` row), cited as related, not as in-note closure for the

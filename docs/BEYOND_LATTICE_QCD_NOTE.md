@@ -1,6 +1,7 @@
 # Beyond Lattice Gauge Theory: Two Concrete Results
 
-**Status:** Demonstrated numerically  
+**Status:** bounded runner diagnostics / interpretive contrast; effective
+status is set only by the independent audit lane.
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_beyond_lattice_qcd.py`
@@ -33,7 +34,7 @@ is two concrete, testable results.
 
 ## Result 1: Gravity-QM inseparability
 
-**What we show:** The gravitational field (Poisson potential sourced by
+**Runner diagnostic:** The gravitational field proxy (Poisson potential sourced by
 |psi|^2) modifies the propagator's quantum structure in ways that go
 beyond simple deflection. Specifically, on a 32^3 lattice:
 
@@ -53,26 +54,26 @@ sent to zero in the continuum limit. The lattice itself has no gravitational
 content -- it cannot lens, focus, or modify quantum coherence. Quantum fields
 live ON the lattice, but the lattice is inert.
 
-In this framework, the action S = L(1-f) couples the quantum phase directly
-to the Poisson potential. The graph IS the gravitational field. There is no
-separable "lattice" that can be removed while keeping quantum mechanics intact.
+In this runner surface, the action S = L(1-f) couples the quantum phase
+directly to the Poisson potential. Treating that as a physical graph-gravity
+identification requires a separate bridge and is not claimed here.
 
-**Bounded claim:** The graph-first framework produces gravity-QM coupling
-from a single structure. Lattice QCD requires gravity to be added as a
-separate theory (lattice quantum gravity is a different program entirely,
-and does not use the same lattice as lattice QCD).
+**Bounded claim:** The runner exhibits a gravity-coupled propagator diagnostic
+on the graph-first surface. It does not prove a framework-vs-lattice-QCD
+physical comparison theorem.
 
 ## Result 2: Structural Born rule (Sorkin I_3 = 0)
 
-**What we show:** The path-sum propagator on the graph produces Sorkin
+**Runner diagnostic:** The path-sum propagator on the graph produces Sorkin
 parameter I_3 = 0 to machine precision (~10^-16) across all tested
 wavenumbers (k = 2 to 20) and slit spacings (2 to 5).
 
 The Sorkin parameter measures third-order interference:
 I_3 = P_ABC - P_AB - P_AC - P_BC + P_A + P_B + P_C
 
-I_3 = 0 means all interference is pairwise, which is equivalent to the
-Born rule (probability = |amplitude|^2).
+I_3 = 0 means all tested interference is pairwise. On a supplied quadratic
+probability readout this is the Born-rule interference signature; the readout
+bridge itself is not derived by this runner.
 
 A nonlinear (cubic) propagator gives I_3/P = 0.16, confirming the test
 has discriminating power -- it can detect violations of the Born rule
@@ -83,15 +84,13 @@ the Born rule is an axiom of quantum mechanics. The path integral computes
 amplitudes; the postulate that probabilities = |amplitudes|^2 is separate.
 Lattice QCD does not derive the Born rule -- it assumes it.
 
-In this framework, the path-sum propagator is a linear superposition of
-complex amplitudes over graph paths. The linearity of this sum forces
-I_3 = 0 as a mathematical identity. The Born rule is a theorem, not a postulate.
+In this runner, the path-sum propagator is a linear superposition of complex
+amplitudes over graph paths. The linearity of this sum forces the tested
+Sorkin `I_3 = 0` diagnostic. A full Born-rule theorem still requires the
+separate probability/readout bridge.
 
-**Bounded claim:** The Born rule follows from linearity of the path-sum.
-This is a structural property of the framework, not an input. (We
-acknowledge that this argument is related to Gleason's theorem and the
-general structure of Feynman path integrals -- the novelty is that it
-emerges from the graph structure without assuming a Hilbert space.)
+**Bounded claim:** The runner confirms the linear path-sum pairwise
+interference diagnostic. It does not by itself derive the probability rule.
 
 ## What this does NOT claim
 
@@ -111,10 +110,10 @@ graph structure -- it is not an add-on. Lattice QCD has no analogous
 coupling at any level of approximation.
 
 **Q: Isn't the Born rule result just Feynman's path integral argument?**
-A: Partially. Feynman showed that linear superposition of amplitudes
-implies Born rule statistics. Our contribution is showing this concretely
-on a graph propagator with explicit Sorkin tests, and combining it with
-the gravity-QM coupling to get a package that lattice QCD cannot replicate.
+A: Partially. Feynman showed that linear superposition of amplitudes controls
+interference structure. This row shows the Sorkin diagnostic concretely on a
+graph propagator; it does not close the full probability/readout theorem or a
+framework-vs-lattice-QCD comparison.
 
 **Q: Can't you just add gravity to a lattice?**
 A: Not in the same way. Lattice quantum gravity is a separate research

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Beyond lattice gauge theory: gravity-QM inseparability + structural Born rule.
+"""Beyond lattice gauge theory: gravity-QM and Sorkin diagnostics.
 
 ==========================================================================
 QUESTION: What concrete result does this framework produce that lattice
@@ -18,11 +18,10 @@ fields live ON the lattice, but the lattice itself carries no gravitational
 content. The lattice spacing `a` is a regulator that gets sent to zero --
 it is not a physical degree of freedom.
 
-In this framework, the SAME graph that supports quantum propagation ALSO
-generates gravity via the Poisson field. The action S = L(1-f) couples
-the quantum phase to the gravitational potential f. This coupling is
-NOT separable: removing gravity (f=0) changes the propagator's quantum
-correlations. Specifically:
+On this runner surface, the same graph that supports quantum propagation
+also carries a Poisson-field proxy. The action S = L(1-f) couples the
+quantum phase to the potential f. The computation checks that removing
+that coupling (f=0) changes the propagator diagnostics. Specifically:
 
   Test: compute propagator density with and without gravitational
   backreaction. Show that:
@@ -30,31 +29,31 @@ correlations. Specifically:
     (b) Interference fringe visibility changes (gravity modifies coherence)
     (c) The density profile is NOT a simple rescaling -- the SHAPE changes
 
-This means gravity and quantum mechanics are aspects of the SAME structure.
-Lattice QCD has no analog: its lattice cannot lens, attract, or modify
-quantum coherence.
+This means the runner's graph-field coupling changes quantum propagation.
+Interpreting that as a physical graph-gravity theorem requires a separate
+bridge not supplied by this runner.
 
-RESULT 2: BORN RULE IS STRUCTURAL (Sorkin I_3 = 0)
----------------------------------------------------
+RESULT 2: SORKIN PAIRWISE-INTERFERENCE DIAGNOSTIC (I_3 = 0)
+------------------------------------------------------------
 In lattice QCD (and all standard QFT on a lattice), the Born rule
 p = |amplitude|^2 is an axiom of quantum mechanics that is ASSUMED.
 The path integral machinery computes amplitudes; squaring to get
 probabilities is a separate postulate.
 
-In this framework, the path-sum propagator is a sum of complex amplitudes
-over graph paths. The Sorkin parameter I_3 measures third-order interference:
+Here, the path-sum propagator is a sum of complex amplitudes over graph paths.
+The Sorkin parameter I_3 measures third-order interference:
 
   I_3 = P_ABC - P_AB - P_AC - P_BC + P_A + P_B + P_C
 
-If I_3 = 0, all interference is pairwise (the Born rule holds).
-We test this on the graph propagator and show I_3 = 0 to machine
-precision. This is not assumed -- it follows from the linearity of the
-path-sum over a graph. The Born rule is a THEOREM, not a postulate.
+If I_3 = 0, all tested interference is pairwise. On a supplied quadratic
+probability readout, this is the Born-rule interference signature. The
+runner checks I_3 = 0 to machine precision; it does not independently derive
+the probability/readout map.
 
 Combined, these two results give a concrete answer to "how is this
 different from lattice QCD?":
   - Lattice QCD: fixed lattice + assumed QM axioms + separate gravity
-  - This framework: dynamic graph + derived Born rule + unified gravity-QM
+  - This runner: graph-field coupling diagnostics + Sorkin linearity check
 
 PStack experiment: beyond-lattice-qcd
 """
@@ -190,15 +189,15 @@ def test_gravity_qm_inseparability():
       B) Mass present, but gravity decoupled (f=0 forced) -- mass has no effect
       C) Mass present, gravity coupled (f from Poisson) -- full framework
 
-    In lattice QCD, cases A and B are identical (the lattice is inert).
-    In this framework, C differs from A in SHAPE, not just scale.
+    Cases A and B are identical when the field is decoupled. Case C differs
+    from A in SHAPE, not just scale, on the runner's coupled surface.
     """
     print("=" * 72)
     print("RESULT 1: GRAVITY-QM INSEPARABILITY")
     print("=" * 72)
     print()
-    print("Lattice QCD: lattice is a fixed scaffold. Quantum fields live ON it.")
-    print("This framework: the graph IS gravity. Removing f changes QM correlations.")
+    print("Reference contrast: a regulator lattice is a fixed scaffold.")
+    print("Runner surface: coupling f changes quantum propagation diagnostics.")
     print()
 
     N = 32
@@ -372,9 +371,8 @@ def test_gravity_qm_inseparability():
     print("  SUMMARY:")
     if grav_changes_qm:
         print("  [PASS] Gravity modifies the propagator's quantum structure.")
-        print("         The gravitational field is NOT an external add-on --")
-        print("         it changes deflection, coherence, and spread.")
-        print("         Lattice QCD has no analog: its lattice is inert.")
+        print("         The coupled field changes deflection, coherence, and spread.")
+        print("         Physical graph-gravity identification remains a separate bridge.")
     else:
         print("  [INCONCLUSIVE] Gravity effects too small at this grid size.")
     print()
@@ -389,7 +387,7 @@ def test_gravity_qm_inseparability():
 
 
 # ===========================================================================
-# RESULT 2: Structural Born rule (Sorkin I_3 = 0)
+# RESULT 2: Sorkin pairwise-interference diagnostic (I_3 = 0)
 # ===========================================================================
 
 def test_sorkin_structural():
@@ -398,24 +396,24 @@ def test_sorkin_structural():
     The Sorkin parameter measures third-order interference:
       I_3 = P_ABC - P_AB - P_AC - P_BC + P_A + P_B + P_C
 
-    In standard QM, I_3 = 0 is a CONSEQUENCE of the Born rule p = |amp|^2.
-    In lattice QCD, this is ASSUMED (the path integral formalism squares
-    amplitudes to get probabilities).
+    In standard QM, I_3 = 0 is a consequence of the Born-rule quadratic
+    probability readout. The path integral formalism computes amplitudes;
+    it still needs a readout rule to get probabilities.
 
-    In this framework, the propagator is a sum of complex amplitudes over
-    graph paths. We show I_3 = 0 to machine precision, which means the
-    Born rule is a THEOREM of the path-sum structure, not a separate axiom.
+    Here, the propagator is a sum of complex amplitudes over graph paths.
+    The runner shows I_3 = 0 to machine precision. That verifies the Sorkin
+    pairwise-interference diagnostic, not the full probability/readout theorem.
 
     The test uses a three-slit geometry on a 2D lattice graph:
     source -> barrier with 3 slits -> detector screen.
     """
     print("=" * 72)
-    print("RESULT 2: STRUCTURAL BORN RULE (Sorkin I_3 = 0)")
+    print("RESULT 2: SORKIN PAIRWISE-INTERFERENCE DIAGNOSTIC (I_3 = 0)")
     print("=" * 72)
     print()
-    print("Lattice QCD: Born rule (p = |amplitude|^2) is an axiom of QM.")
-    print("This framework: Born rule follows from linearity of path-sum.")
-    print("Test: Sorkin three-slit parameter I_3 must vanish identically.")
+    print("Reference contrast: the quadratic probability readout is an input.")
+    print("Runner surface: linear path-sum should give vanishing Sorkin I_3.")
+    print("Test: Sorkin three-slit parameter I_3 vanishes numerically.")
     print()
 
     # Three-slit setup on a 2D lattice
@@ -560,7 +558,7 @@ def test_sorkin_structural():
     print("  CONTROL: Nonlinear (cubic) propagator => I_3 != 0")
     def propagate_2d_nonlinear(open_slits: set, k_val: float,
                                 nonlinear_strength: float = 0.05) -> np.ndarray:
-        """Nonlinear propagator: adds cubic nonlinearity to break Born rule.
+        """Nonlinear propagator: adds cubic nonlinearity to break I_3 = 0.
 
         The nonlinearity makes the evolution slit-dependent in a way that
         violates the inclusion-exclusion identity, producing I_3 != 0.
@@ -614,9 +612,8 @@ def test_sorkin_structural():
     print("  SUMMARY:")
     if all_pass:
         print("  [PASS] I_3 = 0 to machine precision at all k and spacings.")
-        print("         The Born rule is a THEOREM of the linear path-sum,")
-        print("         not an additional axiom.")
-        print("         Lattice QCD assumes this; we derive it.")
+        print("         The linear path-sum satisfies the Sorkin diagnostic.")
+        print("         The probability/readout theorem remains a separate bridge.")
         if ratio_nl > 1e-6:
             print(f"         Control: nonlinear propagator gives I_3/P = {ratio_nl:.2e},")
             print("         confirming the test has discriminating power.")
@@ -665,27 +662,27 @@ def main():
         print(f"    - Shape difference:   {result1['shape_diff']:.6f}")
         print(f"    - Spread change:      {result1['spread_change']:+.4f}")
         print(f"    - Visibility change:  {result1['visibility_change']:+.6f}")
-        print("  In lattice QCD, the lattice is inert. There is no analog")
-        print("  for the lattice itself lensing quantum matter.")
+        print("  This is a runner diagnostic on the coupled graph-field surface.")
+        print("  A framework-vs-lattice-QCD theorem is not claimed here.")
     else:
         print("  [INCONCLUSIVE] Effects too small at this grid size.")
     print()
 
-    print("Result 2 (Structural Born rule):")
+    print("Result 2 (Sorkin pairwise-interference diagnostic):")
     if result2['all_pass']:
         print(f"  I_3/P < 1e-12 at all k and slit spacings tested.")
         print(f"  Nonlinear control: I_3/P = {result2['I3_nonlinear']:.2e} (>>0, test has power).")
-        print("  The Born rule is derived, not assumed.")
-        print("  Lattice QCD postulates the Born rule; this framework proves it.")
+        print("  The runner verifies pairwise-only interference on this surface.")
+        print("  It does not by itself derive the probability/readout rule.")
     else:
         print("  [UNEXPECTED FAILURE]")
     print()
 
     print("Concrete answer to 'how is this different from lattice QCD?':")
-    print("  1. The graph IS gravity -- removing it changes quantum correlations.")
-    print("     Lattice QCD's lattice is a regulator, not a gravitational field.")
-    print("  2. The Born rule is a theorem of the linear path-sum structure.")
-    print("     Lattice QCD assumes it as an axiom of quantum mechanics.")
+    print("  1. Coupling f changes quantum propagation diagnostics.")
+    print("     A physical graph-gravity theorem needs a separate bridge.")
+    print("  2. The linear path-sum satisfies the Sorkin I_3 diagnostic.")
+    print("     A full probability/readout theorem needs a separate bridge.")
     print()
     print(f"Total runtime: {t_total:.1f}s")
 

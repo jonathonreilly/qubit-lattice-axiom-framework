@@ -1,19 +1,21 @@
-===== runner cache v1 =====
-runner: scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
-runner_sha256: 283aae3b2446b7afc3df277e0ae22631fcf19274ab072c101ed2d897d1614f9f
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 23.008
-status: ok
------ stdout -----
 ==============================================================================
 SO(4) Covariance of the FREE Staggered-Dirac 2-Point Schwinger Function
 ==============================================================================
 
 THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
          the SO(4)-covariant Euclidean Dirac/Kahler-Dirac propagator;
-         leading lattice correction = dim-6 ell=4 cubic harmonic, O(a^2).
+         taste-singlet scalar-spectrum leading correction = dim-6 ell=4
+         cubic harmonic, O(a^2) (full spin x taste leading corr is O(a)).
 
+
+=== Part 0: canonical staggered phases -> reduced-BZ spin/taste operator ===
+
+  [PASS] Canonical eta flip matrices alpha_mu obey Cl(4): {alpha_mu,alpha_nu}=2delta  (herm=0.0e+00, square=0.0e+00, anti=0.0e+00)
+  [PASS] Blocked free staggered difference reduces exactly to i sin(p_mu a)/a * alpha_mu  (max residual after exp(iap.b) rephasing = 4.7e-16)
+  [PASS] Full blocked action is m I_16 + i sum_mu alpha_mu sin(p_mu a)/a  (max full-operator residual = 1.1e-16)
+  [PASS] Alpha_mu generate a 16-dim Cl_4 algebra with 16-dim commutant (taste M_4)  (generated rank=16, commutant dim=16)
+  [PASS] Taste spectator degeneracy: blocked spectrum is four copies of the 4-spinor block  (mult(m+i|s|)=8, mult(m-i|s|)=8, |s|=0.615924)
+  [PASS] Derived 16x16 operator has closed inverse with Delta=m^2+sum sin^2/a^2  (max|D16 G16 - I| = 2.8e-17)
 
 === Part 1: Euclidean Clifford algebra + staggered operator ===
 
@@ -35,7 +37,7 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] L=2: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 0.0e+00 (taste NOT in eigenvalue))
   [PASS] L=2: all spectral multiplicities divisible by 4 (4-fold taste)  (1 distinct eigenvalues, multiplicities [16])
   [PASS] L=4: M^dag M Hermitian (free staggered, position space)  (max|MdM - MdM^dag| = 0.0e+00)
-  [PASS] L=4: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 8.4e-15 (taste NOT in eigenvalue))
+  [PASS] L=4: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 9.8e-15 (taste NOT in eigenvalue))
   [PASS] L=4: all spectral multiplicities divisible by 4 (4-fold taste)  (5 distinct eigenvalues, multiplicities [16, 64, 96, 64, 16])
   [PASS] Finite-a dof count: 16*(L/2)^4 = L^4 (taste lives on block lattice 2a)  (16*(2)^4 = 256 = L^4 = 256 (so a single-spacing 16-comp taste-flat identity is forbidden))
 
@@ -63,7 +65,7 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] 4D isotropic average <sum n_mu^4>_{S^3} = 1/2  (numeric = 0.50026, exact 3/(d+2) = 1/2 at d=4)
   [PASS] No ell=2 contamination: <f * (n_a n_b - delta/4)>_{S^3} ~ 0  (max ell=2 projection = 1.81e-04 (pure ell=4))
   [PASS] Sympy: H4 = sum x_mu^4 - (1/2) r^4 is harmonic (pure 4D ell=4)  (Laplacian(H4) = 0 (=> no ell=0,2,6 admixture))
-  [PASS] Leading LV operator is dimension-6 (O(a^2 p^4), two extra momenta)  (sum_mu p_mu^4 with coeff a^2/3; CPT-even, parity-even (even powers))
+  [PASS] Scalar-spectrum leading LV operator is dimension-6 (O(a^2 p^4), two extra momenta)  (sum_mu p_mu^4 with coeff a^2/3; CPT-even, parity-even (even powers); taste-singlet Delta(p) sector (full spin x taste leading corr is O(a)))
   [PASS] Parity-even: Delta(-p) = Delta(p) (no dim-5 / CPT-odd dispersion term)  (max|Delta(-p)-Delta(p)| = 0.0e+00)
 
 === Part 5: free-scalar bridge consistency ===
@@ -92,7 +94,7 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] Z^3 x Z_tau has hypercubic point symmetry, NOT SO(4)  (SO(4) is non-compact-completion of the cubic group; emergent only)
   [PASS] Continuum-limit D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)  (phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; 1_taste spectator is the a->0 form, finite-a taste enters as 4-fold spectral mult (Part 1a))
   [PASS] THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2+m^2)  (standard SO(4) Euclidean Dirac/Kahler-Dirac propagator)
-  [PASS] Leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)  (sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6)
+  [PASS] Scalar-spectrum leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)  (sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6 (taste-singlet Delta(p)/D~ sector; full spin x taste leading corr is O(a)))
   [PASS] Parity-even + CPT-even: only even powers of p (no dim-3, dim-5)  (Delta(-p)=Delta(p); matches scalar/dispersion-note structure)
   [PASS] Wick rotation: continuum Wightman 2-pt is SO(3,1)-covariant  (SO(4) Euclidean invariance <=> SO(3,1) boost covariance (t=-i tau))
   [PASS] MATTER-SECTOR ANALOGUE of free-scalar boost note Step 6 (SO(4))  (same mechanism: cubic dispersion -> isotropic continuum limit)
@@ -100,10 +102,11 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] Unconditional for the FREE 2-point function (free theory limit exists)  (NOT interacting, NOT n-point, NOT OS reconstruction, NOT FS)
 
 ==============================================================================
-SCORECARD: PASS=47  FAIL=0
+SCORECARD: PASS=53  FAIL=0
 ==============================================================================
 
 All checks passed. The FREE staggered-Dirac 2-point Schwinger
-function becomes SO(4)-covariant in the continuum limit, with
-leading anisotropy a dim-6 ell=4 cubic harmonic at O(a^2).
+function becomes SO(4)-covariant in the continuum limit, with the
+taste-singlet scalar spectrum's leading anisotropy a dim-6 ell=4
+cubic harmonic at O(a^2) (full spin x taste leading corr is O(a)).
 Matter-sector analogue of the free-scalar boost note.

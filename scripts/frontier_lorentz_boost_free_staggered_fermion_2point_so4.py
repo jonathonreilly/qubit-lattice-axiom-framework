@@ -5,7 +5,12 @@ SO(4) Covariance of the FREE Staggered-Dirac 2-Point Schwinger Function
 
 STATUS: bounded theorem on the continuum limit of the FREE (U=1) staggered
         2-point Euclidean Schwinger function, with explicit characterisation
-        of the leading dim-6, ell=4 cubic-harmonic anisotropy at O(a^2).
+        of the leading dim-6, ell=4 cubic-harmonic anisotropy at O(a^2) OF THE
+        TASTE-SINGLET SCALAR SPECTRUM Delta(p) / displayed taste-spectator D~
+        sector. (For the full free staggered spin x taste propagator the
+        leading finite-a correction is the O(a) non-spectator taste-mixing
+        admitted below, vanishing as a->0; no O(a^2) leading-correction claim
+        is made for the full spin x taste propagator.)
         Status authority: independent audit lane only.
 
 This is the MATTER-SECTOR (fermion) analogue of the existing free-SCALAR
@@ -60,8 +65,11 @@ THEOREM (free staggered-Dirac 2-point SO(4) covariance):
   derivative; equivalently (Wick rotation t -> -i tau) the Wightman
   2-point function is SO(3,1)-covariant in the continuum limit.
 
-  Leading lattice correction: O(a^2), dimension-6, parity-even, CPT-even,
-  ell=4 CUBIC HARMONIC. It enters through
+  Leading lattice correction OF THE TASTE-SINGLET SCALAR SPECTRUM Delta(p) /
+  displayed taste-spectator D~ sector: O(a^2), dimension-6, parity-even,
+  CPT-even, ell=4 CUBIC HARMONIC. (For the FULL free staggered spin x taste
+  propagator the leading finite-a correction is the O(a) non-spectator
+  taste-mixing above, not this O(a^2) term.) It enters through
       sin(p_mu a)/a = p_mu - (a^2/6) p_mu^3 + O(a^4)              (numerator)
       Delta(p) = m^2 + |p|^2 - (a^2/3) sum_mu p_mu^4 + O(a^4)     (denominator)
   The unique anisotropic structure is sum_mu p_mu^4. As a 4D Euclidean
@@ -798,11 +806,13 @@ def test_part4_l4_cubic_harmonic():
               np.max(np.abs(lap)) < 1e-9,
               "sympy not installed; pointwise Laplacian check used")
 
-    # 4.6 dimension-6 classification: the operator is O(a^2 p^4), i.e. two extra
-    #     powers of momentum beyond the dim-4 kinetic term -> dimension 6.
-    check("Leading LV operator is dimension-6 (O(a^2 p^4), two extra momenta)",
+    # 4.6 dimension-6 classification: the scalar-spectrum LV operator is
+    #     O(a^2 p^4), i.e. two extra powers of momentum beyond the dim-4
+    #     kinetic term -> dimension 6.
+    check("Scalar-spectrum leading LV operator is dimension-6 (O(a^2 p^4), two extra momenta)",
           True,
-          "sum_mu p_mu^4 with coeff a^2/3; CPT-even, parity-even (even powers)")
+          "sum_mu p_mu^4 with coeff a^2/3; CPT-even, parity-even (even powers); "
+          "taste-singlet Delta(p) sector (full spin x taste leading corr is O(a))")
 
     # 4.7 parity-even / CPT-even: Delta(-p) = Delta(p) (no odd-power terms).
     rng3 = np.random.default_rng(9)
@@ -968,8 +978,9 @@ def test_part7_combined():
     check("THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2+m^2)",
           True, "standard SO(4) Euclidean Dirac/Kahler-Dirac propagator")
 
-    check("Leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)",
-          True, "sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6")
+    check("Scalar-spectrum leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)",
+          True, "sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6 "
+          "(taste-singlet Delta(p)/D~ sector; full spin x taste leading corr is O(a))")
 
     check("Parity-even + CPT-even: only even powers of p (no dim-3, dim-5)",
           True, "Delta(-p)=Delta(p); matches scalar/dispersion-note structure")
@@ -1019,7 +1030,8 @@ def main():
     print()
     print("THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),")
     print("         the SO(4)-covariant Euclidean Dirac/Kahler-Dirac propagator;")
-    print("         leading lattice correction = dim-6 ell=4 cubic harmonic, O(a^2).")
+    print("         taste-singlet scalar-spectrum leading correction = dim-6 ell=4")
+    print("         cubic harmonic, O(a^2) (full spin x taste leading corr is O(a)).")
     print()
 
     test_part0_canonical_staggered_to_spin_taste()
@@ -1042,8 +1054,9 @@ def main():
         sys.exit(1)
     else:
         print("\nAll checks passed. The FREE staggered-Dirac 2-point Schwinger")
-        print("function becomes SO(4)-covariant in the continuum limit, with")
-        print("leading anisotropy a dim-6 ell=4 cubic harmonic at O(a^2).")
+        print("function becomes SO(4)-covariant in the continuum limit, with the")
+        print("taste-singlet scalar spectrum's leading anisotropy a dim-6 ell=4")
+        print("cubic harmonic at O(a^2) (full spin x taste leading corr is O(a)).")
         print("Matter-sector analogue of the free-scalar boost note.")
         sys.exit(0)
 

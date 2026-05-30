@@ -586,9 +586,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -807,8 +807,13 @@
       ],
       "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
       "deps": [
-        "minimal_axioms",
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+        "luders_rule_from_composition_consistency_note_2026-05-20",
+        "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22"
       ],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",
@@ -829,7 +834,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "runner_path": null,
+      "runner_path": "scripts/born_rule_framework_bridge_check.py",
       "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"
@@ -1217,9 +1222,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "no_go",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1230,7 +1235,18 @@
       "audit_question": "Fresh-context provenance re-audit: the current clean no-go verdict has independence=weak. Re-audit the no-go boundary under current independence and no-go-discipline requirements.",
       "blocked_by_group_ids": [],
       "claim_id": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "deps": [],
+      "deps": [
+        "sigma_mnu_f3_dm_cross_bound_audit_note_2026-04-28",
+        "neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28",
+        "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
+        "hubble_lane5_two_gate_dependency_firewall_note_2026-04-27",
+        "hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28",
+        "hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29",
+        "hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29",
+        "hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29",
+        "dm_leptogenesis_transport_status_note_2026-05-10",
+        "eta_188_structural_origin_partial_note_2026-05-03"
+      ],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",
       "expected_current_audit_status": "audited_clean",
@@ -1516,6 +1532,91 @@
       "state": "resolved_or_superseded"
     },
     {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "no_go",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-bosonic-CCR trace obstruction close (finite-dim trace + dim_C H_x = 2 forces no CCR rep), or does another blocker remain?",
+      "blocked_by_group_ids": [],
+      "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_conditional",
+      "expected_current_claim_type": "positive_theorem",
+      "expected_current_effective_status": "audited_conditional",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 6,
+      "group_id": "r1_per_site_dim_two_consumers",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
+      "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "no_go",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-chirality result close, or does the missing physical-Hilbert-to-Pauli bridge remain?",
+      "blocked_by_group_ids": [],
+      "claim_id": "no_per_site_chirality_theorem_note_2026-05-02",
+      "deps": [
+        "minimal_axioms",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_conditional",
+      "expected_current_claim_type": "no_go",
+      "expected_current_effective_status": "audited_conditional",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 7,
+      "group_id": "r1_per_site_dim_two_consumers",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "runner_path": "scripts/no_per_site_chirality_check.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
       "actual_audit_status": "audited_clean",
       "actual_claim_type": "positive_theorem",
       "actual_effective_status": "retained",
@@ -1553,6 +1654,91 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/pauli_group_order_check.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Q-integer-spectrum result close on the bounded per-site scope, or does the staggered-Dirac/Grassmann bridge admission remain load-bearing?",
+      "blocked_by_group_ids": [],
+      "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_conditional",
+      "expected_current_claim_type": "positive_theorem",
+      "expected_current_effective_status": "audited_conditional",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 9,
+      "group_id": "r1_per_site_dim_two_consumers",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
+      "runner_path": "scripts/q_integer_spectrum_check.py",
+      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the per-site su(2) spin-half identification close, or does the missing physical-Hilbert bridge remain?",
+      "blocked_by_group_ids": [],
+      "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
+      "deps": [
+        "minimal_axioms",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_conditional",
+      "expected_current_claim_type": "positive_theorem",
+      "expected_current_effective_status": "audited_conditional",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "this k=1 qubit-per-site re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 10,
+      "group_id": "r1_per_site_dim_two_consumers",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+      "runner_path": "scripts/per_site_su2_spin_half_check.py",
       "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"
@@ -1860,110 +2046,6 @@
       "state": "resolved"
     },
     {
-      "actual_audit_status": "audited_conditional",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audited_conditional",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-bosonic-CCR trace obstruction close (finite-dim trace + dim_C H_x = 2 forces no CCR rep), or does another blocker remain?",
-      "blocked_by_group_ids": [],
-      "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_conditional",
-      "expected_current_claim_type": "positive_theorem",
-      "expected_current_effective_status": "audited_conditional",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 6,
-      "group_id": "r1_per_site_dim_two_consumers",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-29T05:40:10.151836+00:00",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-audit-loop-no-per-site-bosonic-ccr-2026-05-28",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "positive_theorem",
-        "independence": "cross_family"
-      },
-      "resolution_manifest_date": "2026-05-22",
-      "resolution_reason": "same_status_fresh_context_reaudit_after_manifest",
-      "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_conditional",
-      "actual_claim_type": "no_go",
-      "actual_effective_status": "audited_conditional",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-chirality result close, or does the missing physical-Hilbert-to-Pauli bridge remain?",
-      "blocked_by_group_ids": [],
-      "claim_id": "no_per_site_chirality_theorem_note_2026-05-02",
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_conditional",
-      "expected_current_claim_type": "no_go",
-      "expected_current_effective_status": "audited_conditional",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 7,
-      "group_id": "r1_per_site_dim_two_consumers",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-29T02:59:28.526962+00:00",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-fresh-restricted-input-audit-agent",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "no_go",
-        "independence": "fresh_context"
-      },
-      "resolution_manifest_date": "2026-05-22",
-      "resolution_reason": "same_status_fresh_context_reaudit_after_manifest",
-      "runner_path": "scripts/no_per_site_chirality_check.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
       "actual_audit_status": "audited_clean",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "retained_bounded",
@@ -2011,110 +2093,6 @@
       "resolution_reason": "bounded_terminal_after_reaudit",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
       "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_conditional",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audited_conditional",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Q-integer-spectrum result close on the bounded per-site scope, or does the staggered-Dirac/Grassmann bridge admission remain load-bearing?",
-      "blocked_by_group_ids": [],
-      "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_conditional",
-      "expected_current_claim_type": "positive_theorem",
-      "expected_current_effective_status": "audited_conditional",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 9,
-      "group_id": "r1_per_site_dim_two_consumers",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-29T05:35:25.473768+00:00",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-audit-loop",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "positive_theorem",
-        "independence": "cross_family"
-      },
-      "resolution_manifest_date": "2026-05-22",
-      "resolution_reason": "same_status_fresh_context_reaudit_after_manifest",
-      "runner_path": "scripts/q_integer_spectrum_check.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved"
-    },
-    {
-      "actual_audit_status": "audited_conditional",
-      "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audited_conditional",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the per-site su(2) spin-half identification close, or does the missing physical-Hilbert bridge remain?",
-      "blocked_by_group_ids": [],
-      "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_conditional",
-      "expected_current_claim_type": "positive_theorem",
-      "expected_current_effective_status": "audited_conditional",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "this k=1 qubit-per-site re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 10,
-      "group_id": "r1_per_site_dim_two_consumers",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
-      "resolution_evidence": {
-        "audit_date": "2026-05-29T06:11:05.440157+00:00",
-        "audit_status": "audited_conditional",
-        "auditor": "codex-audit-loop",
-        "auditor_family": "codex-gpt-5.5",
-        "claim_type": "positive_theorem",
-        "independence": "cross_family"
-      },
-      "resolution_manifest_date": "2026-05-22",
-      "resolution_reason": "same_status_fresh_context_reaudit_after_manifest",
-      "runner_path": "scripts/per_site_su2_spin_half_check.py",
-      "source_json_path": "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"
     },

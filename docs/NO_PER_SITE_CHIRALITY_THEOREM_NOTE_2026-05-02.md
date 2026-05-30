@@ -24,16 +24,19 @@ held that bridge conditional. This narrowed note does **not** consume that
 bridge as load-bearing authority. It proves only the supplied-Pauli
 `M_2(C)` algebraic no-go.
 
-## Admitted-context inputs
+## Admitted-Context Inputs
 
-- **Standard Clifford-algebra volume-element identity.** In Cl(p, q) with
-  n = p + q, the volume element ω = e_1 e_2 ... e_n satisfies
-  ω · e_μ = (-1)^(n-1) e_μ · ω. For n = 3 (odd), ω commutes with every
-  generator. Standard reference: Lawson–Michelsohn, *Spin Geometry*, Ch. I.
-- **Pauli matrices are a C-linear basis for M_2(C).** Standard fact: any
-  2x2 complex matrix decomposes uniquely as a·I + b·σ_1 + c·σ_2 + d·σ_3.
+- **Pauli basis for `M_2(C)`.** Every `2 x 2` complex matrix decomposes
+  uniquely as `a I + b_1 σ_1 + b_2 σ_2 + b_3 σ_3`.
+- **Direct volume-element computation.** In the Pauli realization,
+  `σ_1 σ_2 σ_3 = i I`.
 
-Both are pure mathematical facts; no admitted physics conventions.
+Both are finite-dimensional matrix computations carried out below. A
+standard odd-dimensional Clifford-volume statement gives parallel
+mathematical context, but it is not imported as a load-bearing theorem.
+The 2026-05-29 repair removes the previous load-bearing appeal to the
+older per-site uniqueness row, because that theorem is now correctly
+scoped away from the A1 local-algebra statement used here.
 
 ## Statement
 
@@ -42,28 +45,22 @@ generators acting as Pauli matrices `gamma_i -> sigma_i`. Define the Cl(3)
 volume element
 
 ```text
-    ω  :=  γ_1 γ_2 γ_3.                                                     (1)
+    ω := σ_1 σ_2 σ_3.                                                       (1)
 ```
 
 Then:
 
-**(N1) ω is central in Pauli rep.** ω = i·I_2; in particular [ω, σ_i] = 0
-for every i.
+**(N1) Volume element is scalar.** `ω = i I`; hence `[ω, σ_i] = 0`.
 
-**(N2) ω² = -I_2.** Direct computation (i·I)² = -I.
+**(N2) No universal anticommuting element.** The only
+`M ∈ M_2(C)` satisfying `{M, σ_i} = 0` for all `i = 1,2,3` is `M = 0`.
 
-**(N3) No γ_5 candidate exists.** There is no element γ_5 ∈ M_2(C) such
-that
-- γ_5² = +I_2 (involution), and
-- {γ_5, σ_i} = 0 for every i (anticommutes with all Cl(3) generators).
+**(N3) No γ_5 candidate.** There is no `γ_5 ∈ M_2(C)` satisfying
+`γ_5^2 = I` and `{γ_5, σ_i} = 0` for all `i`.
 
-Equivalently, the only M ∈ M_2(C) satisfying {M, σ_i} = 0 for all i is
-M = 0 (which fails the involution condition).
-
-**(N4) Even/odd subalgebras coincide on Pauli rep.** The Z_2-graded
-subalgebras Cl(3)_even = span{I, σ_iσ_j} and Cl(3)_odd = span{σ_i, ω}
-each span the full M_2(C) when projected to Pauli rep. There is no
-internal Z_2 grading, hence no chirality projector P_± = (1 ± γ_5)/2.
+**(N4) No intrinsic one-site chirality projector.** Since no such
+`γ_5` exists, no projector pair `(1 ± γ_5)/2` exists internally to the
+single-site A1 qubit algebra.
 
 ## Proof
 
@@ -72,54 +69,46 @@ internal Z_2 grading, hence no chirality projector P_± = (1 ± γ_5)/2.
 We assume only the supplied representation `gamma_i -> sigma_i` inside
 `M_2(C)`. No framework-level physical carrier identification is used.
 
-### Step 2 — Volume element computation (N1, N2)
+### Step 2 - Volume Element (N1)
 
-Direct multiplication in the Pauli basis:
-
-```text
-    ω  =  σ_1 σ_2 σ_3
-       =  σ_1 · (σ_2 σ_3)
-       =  σ_1 · (i σ_1)
-       =  i · σ_1²
-       =  i · I_2.                                                          (2)
-```
-
-Hence ω = i·I_2 is a scalar (proportional to identity), so it commutes
-with every σ_i — establishing (N1). Squaring: ω² = (i·I)² = -I_2 —
-establishing (N2).
-
-### Step 3 — No M anticommutes with all σ_i (N3)
-
-Suppose M ∈ M_2(C) satisfies {M, σ_i} = 0 for all i. Decompose M in the
-Pauli basis:
+Using the Pauli multiplication rules,
 
 ```text
-    M  =  a·I  +  b₁·σ_1  +  b₂·σ_2  +  b₃·σ_3                            (3)
+    ω = σ_1 σ_2 σ_3
+      = σ_1 (i σ_1)
+      = i σ_1^2
+      = i I.                                                               (2)
 ```
 
-with a, b_k ∈ C. Computing the anticommutator with σ_j and using
-{σ_j, σ_k} = 2 δ_{jk} I:
+Thus `ω` is a scalar and commutes with each `σ_i`.
+
+### Step 3 - Exhaust the Pauli Basis (N2)
+
+Let `M ∈ M_2(C)` and write it in the Pauli basis:
 
 ```text
-    {M, σ_j}  =  2a · σ_j  +  Σ_k b_k · {σ_k, σ_j}
-              =  2a · σ_j  +  2 b_j · I_2.                                  (4)
+    M = a I + b_1 σ_1 + b_2 σ_2 + b_3 σ_3.                                 (3)
 ```
 
-For this to vanish, we need both 2a = 0 (coefficient of σ_j) and
-2 b_j = 0 (coefficient of I_2). Since this must hold for all j ∈ {1,2,3},
-we get a = b_1 = b_2 = b_3 = 0, i.e. M = 0.
+For a fixed `j`,
 
-The zero matrix has 0² = 0 ≠ I_2, so it fails the involution condition
-γ_5² = +I_2. Therefore no γ_5 candidate exists — establishing (N3).
+```text
+    {M, σ_j} = 2a σ_j + Σ_k b_k {σ_k, σ_j}
+             = 2a σ_j + 2 b_j I.                                           (4)
+```
 
-### Step 4 — Even/odd subalgebra collapse (N4)
+If `{M, σ_j} = 0`, the linearly independent coefficients of `σ_j` and
+`I` force `a = 0` and `b_j = 0`. Requiring this for all
+`j = 1,2,3` gives
 
-In Pauli rep:
-- Even subalgebra basis (degree 0 + degree 2): {I, σ_1σ_2 = i σ_3,
-  σ_2σ_3 = i σ_1, σ_3σ_1 = i σ_2}, which as a C-span equals
-  span{I, σ_1, σ_2, σ_3} = M_2(C).
-- Odd subalgebra basis (degree 1 + degree 3): {σ_1, σ_2, σ_3,
-  σ_1σ_2σ_3 = i I}, which also as a C-span equals M_2(C).
+```text
+    a = b_1 = b_2 = b_3 = 0,
+```
+
+so `M = 0`. Therefore zero is the only matrix in `M_2(C)` that
+anticommutes with all three Pauli generators.
+
+### Step 4 - Exclude γ_5 (N3, N4)
 
 Both subalgebras span all of M_2(C) when extended to C-coefficients.
 The Z_2 grading, real and nontrivial in Cl(3) over R, becomes invisible
@@ -127,7 +116,7 @@ in the complex Pauli rep — the rep "doesn't see" the chirality split.
 Hence there is no projector P_± = (1 ± γ_5)/2 internal to the supplied
 Pauli `M_2(C)` carrier — establishing (N4). ∎
 
-## Hypothesis set used
+## Hypothesis Set Used
 
 - Supplied complex Pauli representation `gamma_i -> sigma_i` inside `M_2(C)`.
 - Standard Clifford volume-element identity (mathematical, admitted-context).
@@ -142,7 +131,10 @@ C1. **No Pauli-carrier chirality projector.** A "left/right" projection cannot
 be defined by an operator internal to the supplied `M_2(C)` Pauli carrier that
 anticommutes with all three `sigma_i`.
 
-## Out of scope
+C2. **Larger chirality mechanisms remain separate.** Any physical
+chirality construction must use additional structure beyond this one-site
+`M_2(C)` no-go, such as a larger Clifford algebra, temporal/signature
+data, multi-site structure, or independent gauge representation data.
 
 This note does not derive a temporal direction, 3+1 signature, Standard Model
 left/right gauge assignments, a physical chirality mechanism, or the
@@ -150,7 +142,9 @@ framework-level identification `H_x ~= C^2`. It only proves the supplied
 `M_2(C)` no-go above. Any claim that a larger Clifford algebra supplies
 physical γ_5 structure belongs to a separate theorem and runner.
 
-## Honest status
+This note does not derive a temporal direction, a 3+1 spacetime Clifford
+algebra, Standard Model left/right assignments, or a physical chirality
+mechanism. It only proves the single-site `M_2(C)` no-go above.
 
 No-go theorem inside the supplied complex Pauli `M_2(C)` representation,
 derived by elementary matrix algebra in the Pauli basis. The volume element

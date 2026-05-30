@@ -23,13 +23,45 @@ M_2(C) no-go.
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md"
+OLD_DEP = "AXIOM_FIRST_" + "CL3_PER_SITE_UNIQUENESS"
+
+
+def note_firewall() -> bool:
+    text = NOTE.read_text()
+    lowered = text.lower()
+    checks = {
+        "cites minimal axioms A1": "minimal_axioms_2026-05-20" in lowered
+        or "MINIMAL_AXIOMS_2026-05-20.md" in text,
+        "cites retained Pauli irrep uniqueness": "cl3_pauli_irrep_uniqueness" in lowered,
+        "states direct matrix no-go": "direct matrix" in lowered or "direct finite-dimensional" in lowered,
+        "keeps larger chirality out of scope": "larger chirality mechanisms remain separate" in lowered
+        or "larger spacetime clifford" in lowered,
+        "no old uniqueness node in YAML": OLD_DEP not in text,
+        "classified as no_go": "claim_type_author_hint: no_go" in text,
+    }
+    for label, ok in checks.items():
+        print(f"  {label}: {'PASS' if ok else 'FAIL'}")
+    return all(checks.values())
 
 
 def main() -> None:
     print("=" * 72)
     print("NO γ_5 CHIRALITY INSIDE SUPPLIED Cl(3) PAULI M_2(C) REP")
     print("=" * 72)
+    print()
+
+    print("-" * 72)
+    print("SOURCE FIREWALL: direct M_2(C) no-go, no imported odd-D theorem")
+    print("-" * 72)
+    t0_ok = note_firewall()
+    print(f"  STATUS: {'PASS' if t0_ok else 'FAIL'}")
     print()
 
     s1 = np.array([[0, 1], [1, 0]], dtype=complex)
@@ -165,13 +197,14 @@ def main() -> None:
     print()
 
     print("=" * 72)
+    print(f"  Source firewall (direct A1 M_2(C) no-go):          {'PASS' if t0_ok else 'FAIL'}")
     print(f"  Test 1 (ω = i·I_2):                                {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 ([ω, σ_i] = 0 — ω is central):              {'PASS' if t2_ok else 'FAIL'}")
     print(f"  Test 3 (ω² = -I_2):                                {'PASS' if t3_ok else 'FAIL'}")
     print(f"  Test 4 (no M anticommutes with all σ_i):           {'PASS' if t4_ok else 'FAIL'}")
     print(f"  Test 5 (no γ_5 candidate exists):                  {'PASS' if t5_ok else 'FAIL'}")
     print(f"  Test 6 (even/odd subalgebras coincide on Pauli):   {'PASS' if t6_ok else 'FAIL'}")
-    all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok])
+    all_ok = all([t0_ok, t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:
         raise SystemExit(1)

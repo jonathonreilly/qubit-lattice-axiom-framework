@@ -1,0 +1,20 @@
+loop_slug: plaquette-beta6-strong-pade-scope-20260530
+status: review_pr_ready
+base: origin/main
+branch: physics-loop/plaquette-beta6-strong-pade-scope-20260530
+target_claim_id: plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27
+target_note: docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md
+target_runner: scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py
+audit_blocker_closed: "narrow to a pure Padé algebra lemma conditional on supplied coefficients/evaluation point and fix the conformal-map docstring typo"
+repo_effective_status_after_pipeline: unaudited
+audit_queue_ready: true
+actual_current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  - "python3 -m py_compile scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py --force --push-mode none --allow-non-main --concurrency 1"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+next_exact_action: "Open draft review PR for independent audit extraction."

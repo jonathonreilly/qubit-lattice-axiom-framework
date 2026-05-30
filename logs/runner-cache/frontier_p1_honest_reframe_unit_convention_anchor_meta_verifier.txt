@@ -13,7 +13,11 @@ Scope: META-TIER semantic reclassification of P1 (M_Pl as anchor) via
 [PASS] S4.CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.: precedent file present on origin/main  (verified via git ls-tree)
 [PASS] S4.RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-: precedent file present on origin/main  (verified via git ls-tree)
 [PASS] S4.PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-: precedent file present on origin/main  (verified via git ls-tree)
-[PASS] S4.summary: ≥ 2 meta-tier precedent files needed for pipeline pattern; 3 cited  (3 precedent files cited)
+[PASS] S4.ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md: precedent file present on origin/main  (verified via git ls-tree)
+[PASS] S4.tier_a_admissions.json: precedent file present on origin/main  (verified via git ls-tree)
+[PASS] S4.summary: ≥ 2 meta-tier precedent files needed; 5 cited (including Tier-A registry)  (5 precedent files cited)
+[PASS] S4.tier_a: Tier-A admissions JSON present on origin/main  (registry already classifies S = absolute scale; this PR aligns EW-chain P1 with it)
+[PASS] S4.naming: EW-chain P1 ≠ Tier-A registry P1; EW-chain P1 maps to registry S  (EW-chain P1 = M_Pl anchor (HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10); registry P1 = extensivity / observable_principle_from_axiom_note; EW-chain P1 → registry S = absolute scale (one empirical scale-setting number; unit choice vacuous))
 [PASS] H1: no new numerical M_Pl, m_W, v_EW, or α_LM claim made by this note  (load-bearing scope is semantic (S1-S4); no dimensional value derived)
 [PASS] H2: no retained-row promotion; only meta-tier precedents cited  (S2 lit survey is sidecar; S1 is textbook math; S4 is meta precedent)
 [PASS] H3: HIERARCHY_FORMULA_HONEST_STATUS not cited as a retained precedent  (the unaudited honest-status row is correctly excluded from S4 precedents)
@@ -23,7 +27,7 @@ Scope: META-TIER semantic reclassification of P1 (M_Pl as anchor) via
 [PASS] H7: audit-lane verdict accepted either direction (clean or routed back)  (§4 'Significance (modest)' and §8 'Origin and what comes next' cover both outcomes)
 [PASS] H8: Buckingham-π citation does NOT enable any retained-row promotion  (S1 is a universal impossibility, not a framework-specific positive claim)
 
-PASS=17  FAIL=0
+PASS=21  FAIL=0
 
 All meta-tier semantic checks PASSED.
 Audit lane decides whether disposition applies.

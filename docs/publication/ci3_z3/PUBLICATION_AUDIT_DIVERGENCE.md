@@ -17,7 +17,7 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| high | `unaudited` | 173 |
+| high | `unaudited` | 172 |
 | critical | `unaudited` | 154 |
 | medium | `unaudited` | 97 |
 | high | `audited_numerical_match` | 4 |
@@ -25,8 +25,8 @@ publication tables phrase it.
 | high | `audited_renaming` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
+| high | `audited_conditional` | 2 |
 | critical | `audited_conditional` | 1 |
-| high | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
@@ -235,7 +235,7 @@ publication tables phrase it.
 | high | `ckm_thales_pinned_alpha_s_independent_ratios_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `ckm_wolfenstein_eta_inverse_square_gap_theorem_note_2026-04-26` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `cl3_sm_embedding_master_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| high | `continuum_identification_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| high | `continuum_identification_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `cosmological_constant_result_2026-04-12` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `cosmology_from_mass_spectrum_note` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md |
 | high | `cosmology_frw_kinematic_reduction_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

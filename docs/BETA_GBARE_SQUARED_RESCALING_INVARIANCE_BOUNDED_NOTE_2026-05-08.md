@@ -3,31 +3,10 @@
 **Date:** 2026-05-08. Repair narrowing: 2026-05-27.
 **Claim type:** bounded_theorem
 **Proposal allowed:** false
-**Status authority:** independent audit lane only.
+**Status authority:** source-note proposal only; audit verdict and
+effective status are set by the independent audit lane.
 **Primary runner:** [`scripts/frontier_beta_gbare_squared_rescaling_invariance.py`](../scripts/frontier_beta_gbare_squared_rescaling_invariance.py)
 **Runner cache:** [`logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt`](../logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt)
-
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-
-## 2026-05-28 Audit Repair (conditional arithmetic; premise packet admitted)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The algebraic identity closes exactly under the stated WM premise, but the restricted packet does not derive or accept WM as retained authority. The physical Wilson-surface reading therefore remains conditional."*
-
-with repair: *"dependency_not_retained: derive or explicitly register accepted retained-grade authority for the Wilson action-surface matching premise WM, then re-audit whether the row can promote beyond conditional arithmetic."*.
-
-Deriving or registering the named premise packet as retained authority is
-substantive new work, out of scope. This revision narrows via the **admission
-path**:
-
-- **Load-bearing (in scope):** Under the Wilson action-surface matching premise `WM: β = 2 N_c / g_bare²`, the product identity `β · g_bare² = 2 N_c` is ordinary algebra, and the joint rescaling `β -> c²β`, `g_bare² -> g_bare²/c²` leaves the product invariant; the runner verifies this at exact rational precision for the enumerated `c` values.
-- **NON-load-bearing (admitted / not retained):** The WM premise — `β = 2 N_c / g_bare²` as the Wilson action-surface matching relation — is the single premise packet. It is recorded as an admitted, not-retained input; the physical Wilson-surface reading stays conditional on WM reaching retained-grade authority.
-
-No new axiom, import, or retained bridge is introduced. The conditional
-arithmetic is the load-bearing content; the premise packet stays admitted
-until a retained authority for it lands.
 
 ## Claim
 

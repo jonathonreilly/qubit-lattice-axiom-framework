@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 612 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1213 |
+| unaudited | 1212 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 15 |
+| ~~audited_conditional~~ | 16 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 947 |
-| `audited_conditional` | 15 |
+| `audited_conditional` | 16 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1451 |
+| `unaudited` | 1450 |
 
 | claim_type | count |
 |---|---:|
@@ -1093,6 +1093,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `source_resolved_propagating_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -12555,6 +12556,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner reproduces the note's zero-source reduction, 0/4 TOWARD count, fitted exponents, and mean |prop/inst| ratio. The note is correctly bounded as a generated-family transfer no-go rather than a positive closure claim.
 - **rationale:** The current runner output matches the frozen result: all zero-source shifts are 0, the instantaneous exponent is 0.43, the propagating Green exponent is 0.33, propagating means are 0/4 TOWARD, and mean |prop/inst| is 2.119. This closes the bounded no-go for this causal-memory transfer on the retained compact generated family. Residual risk is limited to the chosen generated family and MEMORY_MIX=0.9 architecture under test.
 - **auditor confidence:** high
+
+### `source_resolved_propagating_green_pocket_note`
+
+- **Note:** [`SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is the declared finite lattice packet at h = 0.5, W = 3, L = 20, four in-bounds clipped cross-source nodes, s in {0.001, 0.002, 0.004, 0.008}, mix = 0.9, and the executable runner's static/source-resolved and same-site-memory fields; it is not a finite-speed field theory or self-consistent GR sector.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-233745-df90e5c3-source_resolved_propagat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The asserted exact-lattice run passes the finite gates: zero-source reduction, 4/4 TOWARD rows, propagating F~M = 1.00, mean |prop/inst| = 1.420, mean |prop/green| = 1.149, and a positive prop - green memory offset.  _(class `C`)_
+- **chain closes:** False — The numeric table, ratios, signs, mean memory offset, and runner assertions are computed rather than hard-coded and agree internally. However, the source packet displays the Green-kernel family as exp(-mu r)/(r+eps), while the executable code applies exp(-mu*(d+eps))/(d+eps) when d is the Euclidean source distance, so the packet does not close as written for the displayed kernel convention.
+- **rationale:** The primary runner genuinely instantiates the lattice, builds field layers, propagates amplitudes, fits exponents, and checks the finite packet without importing the frozen table as expected values. The cited upstream authority is retained_bounded, so there is no automatic dependency downgrade. The blocking issue is runner/source-packet formula drift: the displayed Green-kernel formula is not the kernel executed by the code, so the finite result is clean only after the kernel convention is reconciled.
+- **auditor confidence:** medium
 
 ### `source_resolved_radical_geometry_probe_note`
 

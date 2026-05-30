@@ -266122,22 +266122,42 @@
       "verdict_rationale": "The current runner output matches the frozen result: all zero-source shifts are 0, the instantaneous exponent is 0.43, the propagating Green exponent is 0.33, propagating means are 0/4 TOWARD, and mean |prop/inst| is 2.119. This closes the bounded no-go for this causal-memory transfer on the retained compact generated family. Residual risk is limited to the chosen generated family and MEMORY_MIX=0.9 architecture under test."
     },
     "source_resolved_propagating_green_pocket_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T23:39:58.020823+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_source_driven_field_probe_note": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs."
+        },
+        "dep_claim_type": {
+          "minimal_source_driven_field_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_source_driven_field_probe_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_source_driven_field_probe_note"
+        ],
+        "load_bearing_score": 7.187,
+        "runner_hash": "39c7457652a9f2e92c93832f781c319d28a28be1b6497693c6884c423df84391",
+        "transitive_descendants": 102
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-233745-df90e5c3-source_resolved_propagat",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numeric table, ratios, signs, mean memory offset, and runner assertions are computed rather than hard-coded and agree internally. However, the source packet displays the Green-kernel family as exp(-mu r)/(r+eps), while the executable code applies exp(-mu*(d+eps))/(d+eps) when d is the Euclidean source distance, so the packet does not close as written for the displayed kernel convention.",
       "claim_id": "source_resolved_propagating_green_pocket_note",
-      "claim_scope": null,
+      "claim_scope": "The audited scope is the declared finite lattice packet at h = 0.5, W = 3, L = 20, four in-bounds clipped cross-source nodes, s in {0.001, 0.002, 0.004, 0.008}, mix = 0.9, and the executable runner's static/source-resolved and same-site-memory fields; it is not a finite-speed field theory or self-consistent GR sector.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T23:39:58.020823+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -266145,21 +266165,21 @@
         "minimal_source_driven_field_probe_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.187,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The asserted exact-lattice run passes the finite gates: zero-source reduction, 4/4 TOWARD rows, propagating F~M = 1.00, mean |prop/inst| = 1.420, mean |prop/green| = 1.149, and a positive prop - green memory offset.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d118020890ccf784da74831766a6a98de8699ae433dcb9e152910b5eb24e4308",
       "note_path": "docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: reconcile the displayed Green-kernel formula with the executable kernel, regenerate the runner cache, and re-audit the same finite packet.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -266268,18 +266288,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/source_resolved_propagating_green_pocket.py",
       "title": "Source-Resolved Propagating Green Pocket",
       "transitive_descendants": 102,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner genuinely instantiates the lattice, builds field layers, propagates amplitudes, fits exponents, and checks the finite packet without importing the frozen table as expected values. The cited upstream authority is retained_bounded, so there is no automatic dependency downgrade. The blocking issue is runner/source-packet formula drift: the displayed Green-kernel formula is not the kernel executed by the code, so the finite result is clean only after the kernel convention is reconciled."
     },
     "source_resolved_radical_geometry_probe_note": {
       "audit_date": "2026-05-02T00:31:34.630096+00:00",

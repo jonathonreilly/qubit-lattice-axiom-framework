@@ -96,8 +96,7 @@ The current ledger statuses of the foundational and sibling notes are:
 
 - [`docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md`](MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)
   — foundational `Lattice3D` / `propagate` / `K` source authority
-  (current ledger: `audit_status: audited_clean`,
-  `effective_status: retained_bounded`).
+  (current ledger: `audit_status: unaudited`).
 - `docs/SOURCE_RESOLVED_EXACT_GREEN_H025_POCKET_NOTE.md`
   — companion `h = 0.25` Green pocket on a smaller family (current
   ledger: `audit_status: unaudited`). See-also cross-reference; backticked
@@ -105,14 +104,11 @@ The current ledger statuses of the foundational and sibling notes are:
   artifact-chain list already cites this base pocket as upstream (its
   refinement is downstream of this one); the load-bearing citation
   direction is h025 -> this pocket, not vice versa.
-- `docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`
-  — companion scaling note (current ledger: `audit_status: audited_clean`,
-  `effective_status: retained_bounded`). See-also cross-reference; not a
-  load-bearing authority for this base pocket.
-- `docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md`
+- [`docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`](SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md)
+  — companion scaling note (current ledger: `audit_status: unaudited`).
+- [`docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md`](SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md)
   — downstream self-consistent extension (current ledger:
-  `effective_status: audited_numerical_match`). See-also cross-reference; not
-  a load-bearing authority for this base pocket.
+  `effective_status: retained_bounded`).
 - `docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md`
   — downstream propagating-Green sibling (current ledger:
   `audit_status: unaudited`). See-also cross-reference; backticked to break
@@ -124,7 +120,9 @@ The current ledger statuses of the foundational and sibling notes are:
 The bounded inheritance for this note's load-bearing claim is the
 runner-imported foundational surface above. This landing adds hard-bar
 runner assertions and explicit one-hop authority links, but it does not
-mark the claim clean; the row should remain queued for independent re-audit.
+mark the claim clean; the row should remain queued for independent
+re-audit until either `MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE` is
+independently retained or the runner is made fully self-contained.
 
 ## Hard-bar runner assertions (2026-05-10)
 
@@ -222,10 +220,10 @@ the repo baseline.
   `mu = 0.08`, `eps = 0.5` are runner-selected, not derived
 - the calibration gain `2.131774e+00` is runner-tuned to a chosen
   `FIELD_TARGET_MAX = 0.02`, not a derived coupling
-- the foundational lattice/propagation infrastructure (`Lattice3D`,
-  `propagate`, `K`, etc.) is imported from
-  `MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE`, which is currently
-  `retained_bounded`
+- the foundational lattice/propagation infrastructure
+  (`Lattice3D`, `propagate`, `K`, etc.) is imported from
+  `MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE` whose ledger status is
+  currently `unaudited`
 
 ## Branch verdict
 

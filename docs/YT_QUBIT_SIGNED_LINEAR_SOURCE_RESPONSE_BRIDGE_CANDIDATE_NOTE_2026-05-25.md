@@ -12,26 +12,6 @@ direct_effective_status_change_allowed_from_this_note: false
 **Status:** candidate support; no positive Y_T closure.
 **Primary runner:** `scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py`
 **Generated output:** `outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json`
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The finite vector and tangent algebra closes exactly, including an independent check that the probability is 1/6 while the signed linear tangent is 1/sqrt(6). The physical identification of the top Yukawa coefficient with that tangent is ex"*
-
-with repair: *"missing_bridge_theorem: prove the physical top response coefficient is the signed linear democratic Q_L source tangent, or keep this as exact support with explicit direct dependencies for the source-action, LSP, and democratic-source inputs"*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The finite-dimensional vector algebra on `C^6` under the S_6-democratic source constraint, which exactly establishes that the democratic unit vector has component amplitude `1/sqrt(6)` (signed linear tangent) and projective weight `1/6`, with both values runner-verified and closed independently of any physical Yukawa identification.
-- **NON-load-bearing (split off / admitted):** The physical identification of the top Yukawa coefficient `y_33` with the signed linear action-tangent component of the democratic Q_L source — specifically, that the source-action rule, the LSP readout prescription, and the democratic-source input together force this identification — is explicitly an unproved bridge; the source-action, LSP, and democratic-source authorities are admitted inputs, not retained derivations, and the physical bridge remains open until a retained theorem supplies it.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
 
 This note answers the axiom-first version of the remaining Y_T question:
 

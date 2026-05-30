@@ -1,0 +1,7 @@
+[PASS] G1_freefermion_npoint_is_pfaffian_of_2point
+[PASS] G2_gaussian_char_functional_rigidity
+[PASS] G3_smeared_convergence_drives_functional_and_moments
+[PASS] G4_taste_fourfold_multiplicity_in_limit
+[PASS] G5_nonconverging_covariance_control
+[PASS] G6_dominated_convergence_envelope_residual
+SCORECARD PASS=6 FAIL=0

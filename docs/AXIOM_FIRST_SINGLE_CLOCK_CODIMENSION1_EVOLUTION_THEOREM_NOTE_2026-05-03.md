@@ -3,7 +3,7 @@
 **Date:** 2026-05-03
 **Type:** positive_theorem (lattice form); bounded_theorem (continuum-limit
 identification with Wightman one-parameter group)
-**Claim scope:** From A_min plus the retained reflection-positivity
+**Claim scope:** From A_min plus the reflection-positivity
 support theorem, the spectrum-condition support theorem, the
 retained cluster-decomposition support theorem, the retained
 Cl(3)-per-site-uniqueness support theorem, and the retained
@@ -123,7 +123,7 @@ No fitted parameters. No observed values used as proof inputs.
 
 ## Retained / near-retained inputs
 
-- **(R-RP) Reflection positivity.** From the retained
+- **(R-RP) Reflection positivity.** From the
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
   the canonical staggered + Wilson action on Λ is RP under temporal
   link reflection; the reconstructed transfer matrix `T : H_phys →
@@ -445,7 +445,7 @@ itself the remaining external admission in `ANOMALY_FORCES_TIME_THEOREM`.
 ## Hypothesis set used
 
 - A1, A2, A3, A4 (no fitted parameters, no observed values).
-- (R-RP) retained reflection-positivity support theorem.
+- (R-RP) reflection-positivity support theorem.
 - (R-SC) spectrum-condition support theorem.
 - (R-CD) retained cluster-decomposition support theorem.
 - (R-LR) retained microcausality / Lieb-Robinson support theorem.
@@ -517,7 +517,7 @@ staggered-phase sign mismatch.
 ```yaml
 proposed_claim_type: positive_theorem
 proposed_claim_scope: |
-  Lattice form: from A_min + retained RP + spectrum condition
+  Lattice form: from A_min + RP + spectrum condition
   + retained cluster decomposition + retained microcausality / Lieb-
   Robinson + retained Cl(3) per-site uniqueness, the framework's
   dynamics is a single-clock codimension-1 unitary evolution: (S1) the
@@ -572,7 +572,7 @@ bare_retained_allowed: false
 ## Citations
 
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
-- retained reflection-positivity:
+- reflection-positivity:
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - spectrum condition:
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)

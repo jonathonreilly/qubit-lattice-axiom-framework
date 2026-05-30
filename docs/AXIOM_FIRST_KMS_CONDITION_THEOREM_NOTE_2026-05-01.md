@@ -18,7 +18,7 @@ finite-temperature Gibbs state reconstructed from the reflection-
 positivity (RP) transfer matrix on a periodic Euclidean-time block
 satisfies the **Kubo-Martin-Schwinger (KMS) condition** at inverse
 temperature `β_th = L_τ · a_τ`. The companion artifacts are the
-retained RP support note
+RP support note
 ([`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md))
 and the spectrum-condition support note
 ([`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)).
@@ -59,7 +59,7 @@ temperature.
 
 ## Retained inputs
 
-- **RP transfer matrix.** From the retained RP support note (R3),
+- **RP transfer matrix.** From the RP support note (R3),
   `T : H_phys → H_phys` is Hermitian, positive, and has operator norm
   `‖T‖ ≤ 1` on the canonical surface. Translation in Euclidean time
   by one lattice unit is implemented by `T`.
@@ -107,7 +107,7 @@ evolution by
 
 for any `A` on `H_phys` and any `t ∈ R`.
 
-Then on `A_min` plus the retained RP + spectrum-condition surface:
+Then on `A_min` plus the RP + spectrum-condition surface:
 
 **(K1) Path-integral ↔ Gibbs-state correspondence.** The Euclidean
 path-integral on `Λ` with periodic-boundary fields and APBC fermions
@@ -173,7 +173,7 @@ temperature `β_th` and is invariant under `α_t` (Bratteli–Robinson
 the proof is elementary).
 
 Statements (K1)–(K4) constitute the KMS theorem on `A_min` plus the
-retained RP + spectrum-condition surface.
+RP + spectrum-condition surface.
 
 ## Proof
 
@@ -364,7 +364,7 @@ This completes the proof of (K1)–(K4) on `A_min`.
 ## Hypothesis set used
 
 - A1, A2, A3, A4 (only as in the RP note's hypothesis set).
-- Retained RP transfer-matrix structure (R3 of the RP note).
+- RP transfer-matrix structure (R3 of the RP note).
 - Spectrum condition (SC1, SC2) for `H ≥ 0`.
 - Standard cyclic-trace identity (basic linear algebra).
 
@@ -405,10 +405,10 @@ Stefan-Boltzmann block.
 ## Honest status
 
 **Branch-local theorem.** (K1)–(K4) are proved on `A_min` plus
-retained RP + spectrum condition by Steps 1–5. The proof leans
+RP + spectrum condition by Steps 1–5. The proof leans
 entirely on:
 
-- the retained RP transfer matrix `T` (already proved on `A_min`);
+- the RP transfer matrix `T` (already proved on `A_min`);
 - the spectrum condition `H ≥ 0` (already proved on
   `A_min`);
 - the cyclic-trace property of finite-dim traces (basic linear
@@ -426,7 +426,7 @@ cross-checks numerical equality of `F_{A,B}(t)` and
 
 ```yaml
 actual_current_surface_status: support
-conditional_surface_status: derived support theorem on A_min + retained RP + spectrum condition
+conditional_surface_status: derived support theorem on A_min + RP + spectrum condition
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
@@ -441,13 +441,13 @@ bare_retained_allowed: false
   the lattice analogue, which is what `A_min` allows.
 - Promotion to retained / Nature-grade in the canonical paper
   package. That requires `review-loop` backpressure and integration
-  outside this run, plus prior ratification of the retained RP and
+  outside this run, plus prior ratification of the RP and
   spectrum-condition support notes.
 
 ## Citations
 
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
-- retained RP support note: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- RP support note: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - spectrum-condition support note: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - companion cluster-decomposition note: [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
 - companion CPT note: [`AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`](AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md)

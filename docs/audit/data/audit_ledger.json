@@ -244815,24 +244815,46 @@
       "verdict_rationale": null
     },
     "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T00:08:47.648076+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1bc614946d7c8d81da2acd68dadc4ad3f653fa9dfd54e9668dc2304446612597",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-000647-b3a8b57d-rp_mixed_observable_sing",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The W^dag W assembly closes algebraically once the positive transfer ingredients and the representation equality are granted. The restricted packet does not itself prove the actual compact-group Wilson-boundary transfer positivity or the path-integral-to-two-step-transfer identification for mixed staggered observables; R1 and Route C are finite/sampled support, not retained bridge theorems.",
       "claim_id": "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29",
-      "claim_scope": null,
+      "claim_scope": "Finite two-step transfer-carrier positivity for represented mixed gauge+fermion observables, conditional on a PSD Wilson gauge transfer kernel, PSD fixed-gauge fermion two-step blocks, and the stated mixed OS transfer representation.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T00:08:47.648076+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -244841,89 +244863,34 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given T_gauge >= 0 and the block-diagonal core oplus_U B[U]^dag B[U] >= 0, T_full = (T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I) = W^dag W, so <Omega|O_hat^dag T_full O_hat|Omega> = ||W(O_hat Omega)||^2 >= 0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "4bbebac82088620418afea569ca67de2b27e8fc9992e5ac4eb635dc36917712f",
+      "note_hash": "6fbfcf20e254b99a0052fb773bdafdd1af0ce741ceab9eba5879a26b9ca67404",
       "note_path": "docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop authority proving the Wilson-boundary transfer-kernel positivity and the mixed staggered gauge+fermion OS two-step transfer representation, or narrow the row to the pure algebraic W^dag W lemma under explicit PSD-transfer premises.",
       "open_dependency_paths": [],
-      "previous_audits": [
-        {
-          "archived_at": "2026-05-30T11:37:44.315984+00:00",
-          "archived_for_note_hash": "6fbfcf20e254b99a0052fb773bdafdd1af0ce741ceab9eba5879a26b9ca67404",
-          "audit_date": "2026-05-30T00:08:47.648076+00:00",
-          "audit_state_snapshot": {
-            "criticality": "leaf",
-            "dep_axiom_premise_note_hash": {},
-            "dep_claim_scope": {
-              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
-              "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
-            },
-            "dep_claim_type": {
-              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
-              "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
-            },
-            "dep_effective_status": {
-              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
-              "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
-            },
-            "deps": [
-              "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-              "staggered_only_det_positivity_case_a_note_2026-05-17"
-            ],
-            "load_bearing_score": 0.0,
-            "runner_hash": "1bc614946d7c8d81da2acd68dadc4ad3f653fa9dfd54e9668dc2304446612597",
-            "transitive_descendants": 0
-          },
-          "audit_status": "audited_conditional",
-          "auditor": "codex-cli-gpt-5.5-20260530-000647-b3a8b57d-rp_mixed_observable_sing",
-          "auditor_confidence": "high",
-          "auditor_family": "codex-gpt-5.5",
-          "blocker": null,
-          "chain_closes": false,
-          "chain_closure_explanation": "The W^dag W assembly closes algebraically once the positive transfer ingredients and the representation equality are granted. The restricted packet does not itself prove the actual compact-group Wilson-boundary transfer positivity or the path-integral-to-two-step-transfer identification for mixed staggered observables; R1 and Route C are finite/sampled support, not retained bridge theorems.",
-          "claim_scope": "Finite two-step transfer-carrier positivity for represented mixed gauge+fermion observables, conditional on a PSD Wilson gauge transfer kernel, PSD fixed-gauge fermion two-step blocks, and the stated mixed OS transfer representation.",
-          "claim_type": "bounded_theorem",
-          "claim_type_last_reviewed": "2026-05-30T00:08:47.648076+00:00",
-          "claim_type_provenance": "audited",
-          "cross_confirmation": null,
-          "decoration_parent_claim_id": null,
-          "independence": "cross_family",
-          "load_bearing_step": "Given T_gauge >= 0 and the block-diagonal core oplus_U B[U]^dag B[U] >= 0, T_full = (T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I) = W^dag W, so <Omega|O_hat^dag T_full O_hat|Omega> = ||W(O_hat Omega)||^2 >= 0.",
-          "load_bearing_step_class": "A",
-          "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop authority proving the Wilson-boundary transfer-kernel positivity and the mixed staggered gauge+fermion OS two-step transfer representation, or narrow the row to the pure algebraic W^dag W lemma under explicit PSD-transfer premises.",
-          "open_dependency_paths": [],
-          "runner_check_breakdown": {
-            "A": 0,
-            "B": 0,
-            "C": 6,
-            "D": 0,
-            "total_pass": 6
-          },
-          "verdict_rationale": "The core finite-carrier algebra is sound: with T_gauge >= 0 and blockwise B[U]^dag B[U] >= 0, the displayed T_full is W^dag W and the represented Gram is non-negative. The cited retained determinant note and abstract gauge-half Cauchy-Schwarz note do not supply the Wilson plaquette boundary theorem, the fixed-gauge fermion transfer realization, or the mixed OS transfer representation as closed one-hop authorities. The runner genuinely computes finite matrix instances and the cached PASS=6 output is consistent with the code, but it constructs/samples the transfer object rather than proving the missing compact-group and representation bridges."
-        }
-      ],
+      "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 6,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py",
       "title": "Finite-Carrier Single-Transfer Assembly for Mixed Gauge+Fermion Reflection-Positivity Observables",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The core finite-carrier algebra is sound: with T_gauge >= 0 and blockwise B[U]^dag B[U] >= 0, the displayed T_full is W^dag W and the represented Gram is non-negative. The cited retained determinant note and abstract gauge-half Cauchy-Schwarz note do not supply the Wilson plaquette boundary theorem, the fixed-gauge fermion transfer realization, or the mixed OS transfer representation as closed one-hop authorities. The runner genuinely computes finite matrix instances and the cached PASS=6 output is consistent with the code, but it constructs/samples the transfer object rather than proving the missing compact-group and representation bridges."
     },
     "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": {
       "audit_date": "2026-05-29T20:49:15.751050+00:00",

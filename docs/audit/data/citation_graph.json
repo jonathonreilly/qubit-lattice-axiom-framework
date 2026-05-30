@@ -76294,7 +76294,7 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4bbebac82088620418afea569ca67de2b27e8fc9992e5ac4eb635dc36917712f",
+      "note_hash": "6fbfcf20e254b99a0052fb773bdafdd1af0ce741ceab9eba5879a26b9ca67404",
       "path": "docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md",
       "runner_path": "scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py",
       "title": "Finite-Carrier Single-Transfer Assembly for Mixed Gauge+Fermion Reflection-Positivity Observables"

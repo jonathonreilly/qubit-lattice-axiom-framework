@@ -1,0 +1,25 @@
+
+========================================================================
+native symmetries ALLOW the uniform generation mass a*I (a_VEV not forced to 0)
+========================================================================
+  S3 (axis permutations): a*I invariant? True -> ALLOWED
+  native reflections (CPT/charge-conj): generation-blind (~ +-I) -> commute with a*I -> ALLOWED
+  generic dynamics: uniform condensate wins -> a_VEV != 0 -> Q=1/3 (this session, 3 computations)
+
+========================================================================
+only the chiral grading Gamma_chi forbids it (the import)
+========================================================================
+  Tr(Gamma_chi) = -1.0  -> {M,Gamma_chi}=0 => Tr(M Gamma_chi)=0 => a*(-1)=0 => a=0.
+  Gamma_chi is non-circulant on the C3 orbit -> NOT native (retained_bounded no-go).
+  equivalently: the chiral-CRITICAL point (condensate->0) gives a_VEV->0 dynamically.
+
+========================================================================
+VERDICT
+========================================================================
+  a_VEV=0 (exact Q=2/3) is NOT natively forced (S3 + generation-blind reflections allow
+  the uniform mass; generic condensate -> a_VEV!=0 -> Q=1/3). It requires the chiral
+  grading Gamma_chi (single import) OR the chiral-critical point. The native block-count
+  measure supplies the EXPECTED 2/3 (moves 3-4); the import/criticality promotes it to
+  exact. So the charged-lepton Koide VALUE reduces cleanly to the ONE chiral input.
+  LIVE PATH: is the (light) lepton sector dynamically near the chiral-critical point?
+  If so, a_VEV->0 and Q->2/3 WITHOUT the operator-level import -- the next attack.

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1133 |
+| unaudited | 1132 |
 | meta | 237 |
 | ~~audited_numerical_match~~ | 18 |
-| ~~audited_renaming~~ | 24 |
+| ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -64,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
-| `audited_renaming` | 24 |
-| `unaudited` | 1370 |
+| `audited_renaming` | 25 |
+| `unaudited` | 1369 |
 
 | claim_type | count |
 |---|---:|
@@ -1276,6 +1276,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12858,6 +12859,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The empirically implied light-Dirac Yukawa y_nu ~ 10^-13 to 10^-12 lies many orders below the Gamma ~ y_nu^2 T versus H thermalization threshold, while the heavy-Majorana branch excludes nu_R by assuming M_R >> T_census, so nu_R is not a light thermalized degree of freedom in either admitted branch.  _(class `D`)_
 - **chain closes:** False — The finite g_* arithmetic and the displayed Yukawa/threshold estimates mostly check out, but the conclusion depends on imports not closed by the cited authorities: empirical small m_nu, the standard Gamma/H thermalization criterion, and M_R >> T_census for the Majorana branch. The source also has minor quantitative drift: the 0.1 eV, T=100 GeV margin is about 4.3 decades, not 4.6, and y_nu >= y_thr rather than O(1) is the minimal thermalizing route.
 - **rationale:** The cited authorities are retained-grade and the runner performs real arithmetic checks rather than merely printing a PASS line. However, the load-bearing step is an external-observation/standard-cosmology comparator, not a first-principles framework computation or a pure algebraic closure over retained inputs. The heavy-Majorana branch also relies on M_R >> T_census, which is asserted in the source note and hard-coded in the runner but not established by the one-hop no-go authority. Therefore the honest result is conditional, even though the scoped exclusion is plausible under the stated assumptions.
+- **auditor confidence:** high
+
+### `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that R-FSB and R-U1Y are retired to retained-sourced status for the g_* dof-count only: R-FSB via the retained 7/8 anchor, and R-U1Y via the retained gl(3) plus gl(1) commutant rank.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-133548-a6277735-sm_gstar_residual_retire`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note claims the g_* dof-count consumes only the retained 7/8 rational and the retained one-abelian-factor rank, both strictly weaker than the full fermionic-SB law and hypercharge-value statements.  _(class `F`)_
+- **chain closes:** False — The R-U1Y rank-only arithmetic is supported by the retained gl(3) plus gl(1) commutant, with R-POL still separate. The R-FSB step does not close because the cited 7/8 theorem supplies a retained rational coincidence, not a bridge identifying or deriving the fermionic thermal weight used in g_*.
+- **rationale:** The runner verifies exact arithmetic, ledger bookkeeping, and the rank-count separation, but it does not compute or bridge the fermionic Stefan-Boltzmann thermal factor. The source note equates the physical g_* fermion weight with an independently retained 7/8 rational because the numerical value matches. That is a role-identification substitution rather than a derivation of the thermal-weight input. The U1 rank retirement may be retained-scoped, but the two-residual retirement claim fails as a whole on R-FSB.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`
 - **auditor confidence:** high
 
 ### `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10`

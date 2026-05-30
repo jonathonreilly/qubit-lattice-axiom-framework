@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-r"""DUAL-COMPUTATION: BEREZIN PATH-INTEGRAL  ==  OPERATOR TRANSFER SANDWICH
-for the 2-step blocked staggered gauge+fermion OS transfer representation (H2).
+r"""DUAL-COMPUTATION: FERMION-SECTOR BEREZIN BLOCK METRIC  ==  OPERATOR TRANSFER
+for the 2-step blocked staggered OS transfer representation (fermion sector).
 
 Audit-companion runner for
   docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
@@ -16,26 +16,48 @@ T_full is posited -- it is the ASSEMBLY lemma, not the representation theorem.
 The no-go runner (scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py)
 computes the BEREZIN path-integral reflected Gram by Wick contraction with
 M[U]^{-1}.  Those two objects live in two separate runners and NO existing
-runner checks that they are EQUAL.
+runner checks that they are EQUAL in the FERMION sector.
 
-THE DECISIVE CHECK HERE (this is (H2)): for a basis of mixed gauge+fermion
-observables F on a small 2-step blocked lattice, compute INDEPENDENTLY
+THE DELIVERED CHECK HERE: in the FERMION sector of the 2-step blocked staggered
+surface, compute INDEPENDENTLY
 
-    (i)  <Theta(F) F>           via the det-weighted Berezin/Wick path integral
-                                 (Haar U-averaged for the U-integrated case), and
-    (ii) <Omega| O_hat^dag T_full O_hat |Omega>   via Fock-space operator algebra,
+    (i)  the reflected BEREZIN/Wick block metric of the staggered Grassmann
+         fields (the genuine path-integral object, via real M^{-1} contractions
+         with NO operator-side reference), and
+    (ii) the OPERATOR two-step transfer eigenvalue c_block * e^{-2E_j} on Fock
+         space,
 
-and assert (i) == (ii) to ~1e-10.  The two sides share ONLY the lattice action
-(the spatial-hop spectrum {E_p}); they are otherwise completely separate code
-paths (Grassmann integration over spacetime vs. operator algebra on Fock space).
-Equality of the two is the content of the Luescher/Osterwalder-Seiler transfer-
-matrix REPRESENTATION theorem, here verified on a finite carrier.
+and assert (i) == (ii).  The two sides share ONLY the lattice action (the
+spatial-hop spectrum {E_j}); they are otherwise completely separate code paths
+(Grassmann integration over the temporal chain vs. operator algebra on Fock
+space).  Equality of the two is the FERMION-SECTOR instance of the
+Luescher/Osterwalder-Seiler transfer-matrix REPRESENTATION theorem, here verified
+on finite carriers: per mode, per fixed gauge background (U(1)/SU(3)), and -- the
+genuine many-field test -- on the FULL position-basis many-field Berezin Gram
+(every Grassmann cross-contraction, no per-mode reduction) which fixes c_block=2
+a priori (mode/mass-independent).
 
-NEGATIVE CONTROL (must FAIL the equality): the SINGLE-step (one-slice) reflection
-breaks Theta-covariance of the staggered eta_1(t)=(-1)^t phase, so the single-step
+NOT ESTABLISHED HERE: the full gauge-fermion-ENTANGLED representation equality --
+a genuine many-field Grassmann integral of a MIXED (gauge x fermion) observable at
+each U, compared to the operator sandwich -- is NOT verified by this runner.  The
+"U-integrated" assembly below (CHECK 3) carries the gauge/Fock structure
+IDENTICALLY on both compared sides (same Wilson kernel Kg, same flat reference
+Omega, same observables, same Fock operators), differing ONLY in the per-config
+fermion block; its residual is therefore PURELY the per-mode fermion-sector scalar
+already tested per mode / per config, NOT an independent test of gauge-fermion
+mixing.  (Forcing the Berezin block := operator block makes that residual exactly
+zero while the operator-Schmidt rank is unchanged.)  The genuine full-mixed
+representation equality is RP_MIXED's assembly target and remains the harder open
+step.  This runner also does NOT verify the det(M[U]) positive weight or the Haar
+U-average (those belong to the gauge measure / RP_MIXED, not here), and does NOT
+prove the continuum / OS-reconstruction (Wightman) limit.
+
+NEGATIVE CONTROL (must FAIL): the SINGLE-step (one-slice) reflection breaks
+Theta-covariance of the staggered eta_1(t)=(-1)^t phase, so the single-step
 Berezin reflected form is NOT equal to any positive operator sandwich (its
 positive-cone metric is indefinite, min eig < 0).  The runner asserts the
-single-step equality is VIOLATED -- i.e. the discriminator has teeth.
+single-step equality is VIOLATED -- i.e. the 2-step reflection sign is the real
+physics and the discriminator has teeth.
 
 ============================================================================
 CITED (standard) vs DERIVED (in-repo) -- honesty ledger
@@ -53,24 +75,35 @@ CITED methodology (not reproven here):
     the coherent-state Berezin slice reconstruction.
   * Montvay-Munster Ch.3; Smit Sec.6 -- textbook treatments.
 DERIVED in-repo here (the load-bearing new finite-carrier content):
-  * The explicit dual computation that the det-weighted Berezin reflected
-    correlator of MIXED gauge+fermion blocked observables EQUALS the operator
-    sandwich on H_gauge (x) H_ferm, including the staggered eta_1 sign / 2-step
-    block bookkeeping under Theta(t,x)=(-1-t,x), with the single-step version as
-    a built-in negative control that the equality FAILS.
+  * The explicit dual computation that the reflected Berezin block metric of the
+    staggered Grassmann FERMION fields EQUALS the operator two-step transfer
+    eigenvalue c_block * e^{-2E_j} -- per mode, per fixed gauge background, and on
+    the FULL position-basis many-field Berezin Gram (no per-mode reduction) --
+    including the staggered eta_1 sign / 2-step block bookkeeping under
+    Theta(t,x)=(-1-t,x), with c_block=2 fixed a priori by the free many-field Gram
+    (mode/mass-independent), and with the single-step version as a built-in
+    negative control that the equality FAILS.
 
 ============================================================================
 SCOPE / HONESTY (anti-over-claim)
 ============================================================================
-Finite carrier only.  This runner verifies the REPRESENTATION EQUALITY on
-explicit small lattices (illustrating the construction whose general form is the
-cited methodology); it does NOT prove the continuum / OS-reconstruction
+Finite carrier, FERMION sector only.  This runner verifies the fermion-sector
+REPRESENTATION EQUALITY on explicit small lattices (illustrating the construction
+whose general form is the cited methodology).  It does NOT verify the full
+gauge-fermion-entangled (mixed-observable) representation equality (CHECK 3's
+"U-integrated" assembly carries the gauge/Fock structure identically on both
+compared sides, so its residual is purely the per-mode fermion scalar -- see the
+CHECK 3 header; the genuine mixed object is RP_MIXED's open assembly target).  It
+does NOT verify the det(M[U]) positive weight or the Haar U-average (gauge measure
+/ RP_MIXED, not here).  It does NOT prove the continuum / OS-reconstruction
 (Wightman) limit, nor Euclidean rotational invariance, nor compact-group Wilson-
 boundary positivity (a separate branch).  It does NOT claim the full interacting
-RP "closes": (H2) here + (H1 gauge PSD, separate branch) + Case-A det positivity
-(retained) + per-config fermion 2-step positivity (audited_conditional) together
-give the conditional bridge; this runner delivers (H2) only.  No ledger edits.
-Settled Berezin sign convention <chi_b bar_a>=+(M^-1)[b,a], <bar_a chi_b>=-(M^-1)[b,a].
+RP "closes": the fermion-sector representation here + (H1 gauge PSD, separate
+branch) + Case-A det positivity (retained) + per-config fermion 2-step positivity
+(audited_conditional) + the open mixed-observable assembly together would give the
+conditional bridge; this runner delivers the fermion-sector representation only.
+No ledger edits.  Settled Berezin sign convention
+<chi_b bar_a>=+(M^-1)[b,a], <bar_a chi_b>=-(M^-1)[b,a].
 """
 from __future__ import annotations
 
@@ -375,30 +408,42 @@ def dual_fixed_background(group, Ls, m):
 
 
 # ===========================================================================
-# DUAL CHECK 3 : U-INTEGRATED MIXED Gram -- the full scoped (H2) object.
+# DUAL CHECK 3 : the per-config fermion-sector equality ASSEMBLED into a shared
+# gauge/Fock wrapper.  NOT an independent test of gauge-fermion mixing.
 #
-# This is the load-bearing entangled check.  We build a basis of MIXED
-# observables  F = f(U) * (fermion monomial)  and compute, for the same basis:
+# HONEST SCOPE OF THIS CHECK (read first).  We build a basis of observables
+# F = f(U) * (fermion monomial) on H_gauge (x) H_ferm and assemble two Gram
+# matrices, G_op and G_ber.  By construction the two share IDENTICALLY:
+#   - the gauge half (the same Wilson kernel Kg^{1/2}, used as ONE object),
+#   - the reference state Omega (flat gauge reference (x) Fock vacuum),
+#   - the observables O = f(U)-multiplication (x) Fock operator, and
+#   - the Fock operators.
+# G_op and G_ber differ ONLY in the per-config fermion block (Top_blocks vs
+# Tber_blocks).  Consequently G_ber - G_op is a pure function of the per-block
+# difference Tber - Top; the entire gauge/Fock/entanglement structure CANCELS
+# identically.  Forcing Tber := Top gives worst|G_ber-G_op| = 0 EXACTLY while the
+# operator-Schmidt rank is unchanged -- so the rank>1 / mixed framing is NOT
+# load-bearing here.  The genuine content of this check is therefore exactly the
+# PER-CONFIG fermion-sector equality Tber == Top already established per mode
+# (CHECK 1) and per fixed background (CHECK 2), now exhibited inside a shared
+# operator wrapper.  Moreover Tber = (x)_j diag(1, cov_j) is per-mode FACTORIZED,
+# NOT a genuine many-field Grassmann integral of a mixed observable.
 #
-#   (i)  BEREZIN side:  <Theta(F) F> = (1/Z) sum_U w_G[U] det(M[U]) *
-#                       conj(f(U_reflected-paired)) f(U) * <Theta(ferm) ferm>_U
-#        with the per-config fermion factor = the Berezin block metric of the
-#        blocked staggered fields at background U (the genuine Grassmann integral),
-#        Haar U-averaged with the positive determinant weight det(M[U])>0.
+# What is NOT established here: the full gauge-fermion-ENTANGLED representation
+# equality -- a many-field Grassmann integral of a MIXED observable at each U,
+# compared independently to the operator sandwich -- and the det(M[U]) positive
+# weight / Haar U-average.  Those belong to RP_MIXED's assembly + the gauge
+# measure and remain open.  The finite-carrier check below uses the Wilson
+# transfer kernel Kg with a FLAT reference (no e^{-S_G} Boltzmann weight, no
+# det(M[U]) measure); it verifies the FERMION-sector representation per config.
 #
-#   (ii) OPERATOR side: <Omega| O^dag T_full O |Omega>, T_full = (Kg^{1/2}(x)I)
-#        (oplus_U B[U]^dag B[U]) (Kg^{1/2}(x)I) on H_gauge (x) H_ferm, with the
-#        fermion blocks built from the SAME action-derived {E_j(U)} and the gauge
-#        transfer Kg the Wilson temporal-gauge kernel; O = f(U)-multiplication (x)
-#        Fock operator.
-#
-# Both are assembled so that the gauge-fermion ENTANGLEMENT (the fermion factor
-# depends on U and does NOT factor out) is the same on both sides; we assert the
-# two Gram matrices are EQUAL to TOL_EQ.  The det weight enters the Berezin
-# measure; on the operator side it is the per-block transfer normalization.  We
-# use a SHARED finite gauge sample {g_k} (same Haar draws feed both sides) so the
-# comparison is exact, not statistical -- this is a finite-carrier equality, the
-# honest object.
+#   OPERATOR side: <Omega| O^dag T_full O |Omega>, T_full = (Kg^{1/2}(x)I)
+#       (oplus_U B[U]^dag B[U]) (Kg^{1/2}(x)I), fermion blocks from the
+#       action-derived {E_j(U)}, gauge transfer Kg the Wilson kernel.
+#   BEREZIN side: the SAME quadratic form with the fermion block replaced by the
+#       independently-computed Grassmann per-config block metric Tber.
+# A SHARED finite gauge sample {g_k} feeds both sides, so the comparison is exact,
+# not statistical.
 # ===========================================================================
 def wilson_kernel(g_list, beta, nc):
     """Wilson temporal-gauge transfer K(g,g')=exp(-beta(1-Re Tr(g g'^dag)/nc))."""
@@ -476,10 +521,16 @@ def per_config_fermion_transfer(links, Ls, nc, m, n_modes):
 
 
 def dual_u_integrated(group, Ls, m, beta, K_pts):
-    r"""Full scoped (H2): the U-integrated MIXED Gram, Berezin == operator.
+    r"""Per-config fermion-sector equality assembled into a shared gauge/Fock
+    wrapper (NOT an independent gauge-fermion-mixing test -- see the CHECK 3
+    header).  G_op and G_ber share the gauge half, Omega, observables and Fock
+    operators identically and differ ONLY in the per-config fermion block, so
+    worst|G_ber-G_op| reduces to the per-block fermion residual |Tber-Top|.
 
-    Shared finite gauge sample {g_k} (same Haar draws on both sides).  Build the
-    full mixed Gram on H_gauge (x) H_ferm both ways and assert equality.
+    Shared finite gauge sample {g_k} (same Haar draws on both sides).  Uses the
+    Wilson transfer kernel Kg with a FLAT reference -- no e^{-S_G} Boltzmann
+    weight and no det(M[U]) measure (those belong to the separate gauge measure /
+    RP_MIXED assembly, not verified here).
     """
     nc = 1 if group == 'u1' else 3
     n_modes = Ls * nc
@@ -503,22 +554,24 @@ def dual_u_integrated(group, Ls, m, beta, K_pts):
     Kg_half = (Vg * np.sqrt(wg_c)) @ Vg.conj().T
 
     # per-config fermion 2-step transfer operators (operator build vs Berezin
-    # build), and positive determinant weights
+    # build).
     dimF = 2 ** n_modes
-    Top_blocks, Tber_blocks, det_w = [], [], []
+    Top_blocks, Tber_blocks = [], []
     fock_ops = None
-    min_det = math.inf
+    # NON-LOAD-BEARING DIAGNOSTIC: the per-config 2-step kernel normalization
+    # prod_j (1 + e^{-2E_j}) is positive config-by-config.  This is NOT the
+    # det(M[U]) measure weight and does NOT enter G_op or G_ber below (both use a
+    # FLAT gauge reference and the Wilson kernel only); it is reported as context.
+    # The det(M[U]) positive weight (Case A) and the Haar U-average are part of the
+    # separate gauge measure / RP_MIXED assembly, not verified by this runner.
+    min_kernel_norm = math.inf
     for g in g_list:
         links = [g for _ in range(Ls)]
         T2op, T2ber, fock_ops, E = per_config_fermion_transfer(
             links, Ls, nc, m, n_modes)
         Top_blocks.append(T2op)
         Tber_blocks.append(T2ber)
-        # positive determinant weight det(M_KS+mI) = prod_j (m^2+lambda_j^2)
-        # (config-by-config > 0); here via the 2-step kernel it is prod (1+e^{-2E}).
-        dw = float(np.prod(1.0 + np.exp(-2.0 * E)))
-        det_w.append(dw)
-        min_det = min(min_det, dw)
+        min_kernel_norm = min(min_kernel_norm, float(np.prod(1.0 + np.exp(-2.0 * E))))
     nF = len(fock_ops)
 
     # ----- OPERATOR side: full mixed Gram on H_gauge (x) H_ferm -----
@@ -532,7 +585,11 @@ def dual_u_integrated(group, Ls, m, beta, K_pts):
     Kg_half_full = np.kron(Kg_half, np.eye(dimF, dtype=complex))
     T_full = Kg_half_full @ T_ferm @ Kg_half_full
     T_full = 0.5 * (T_full + T_full.conj().T)
-    # entanglement diagnostic (T_full is NOT a tensor product)
+    # NON-LOAD-BEARING diagnostic of T_full's structure (T_full is NOT a tensor
+    # product across H_gauge (x) H_ferm).  This does NOT make CHECK 3 an
+    # independent test of gauge-fermion mixing: this same operator T_full sits
+    # IDENTICALLY on both compared sides (only the fermion block differs), so the
+    # rank is irrelevant to the residual G_ber-G_op.  Reported as context only.
     Rsh = T_full.reshape(K_pts, dimF, K_pts, dimF).transpose(0, 2, 1, 3).reshape(
         K_pts * K_pts, dimF * dimF)
     sv = np.linalg.svd(Rsh, compute_uv=False)
@@ -557,15 +614,15 @@ def dual_u_integrated(group, Ls, m, beta, K_pts):
         for J in range(nObs):
             G_op[I, J] = np.vdot(left, TO[J])
 
-    # ----- BEREZIN side: the SAME mixed Gram, assembled from the Grassmann
-    # per-config block metrics (Tber_blocks) integrated against the positive
-    # det weight and the Wilson gauge transfer.  We reproduce EXACTLY the same
-    # quadratic form as the operator side but built from the Berezin fermion
-    # factor: the gauge half is the SAME Kg (one object, used identically), the
-    # fermion half is Tber (Berezin) instead of Top (operator).  Equality of
-    # G_ber and G_op is then PRECISELY the statement Tber == Top per block, i.e.
-    # the Berezin reflected fermion correlator equals the operator sandwich, with
-    # the gauge entanglement carried identically on both sides.
+    # ----- BEREZIN side: the SAME quadratic form as the operator side, with the
+    # fermion block replaced by the Grassmann per-config block metric (Tber_blocks)
+    # and the SAME Wilson gauge transfer Kg used identically (one object, both
+    # sides) and the SAME flat reference Omega.  Because only the fermion block
+    # differs, equality of G_ber and G_op is PRECISELY the per-block statement
+    # Tber == Top -- the per-config fermion-sector equality already established per
+    # mode (CHECK 1) and per fixed background (CHECK 2).  The gauge/Fock structure
+    # cancels identically; this is NOT an independent test of gauge-fermion mixing
+    # (forcing Tber:=Top gives worst_eq = 0 exactly, rank unchanged).
     T_fermB = np.zeros((dim, dim), dtype=complex)
     for k in range(K_pts):
         sl = slice(k * dimF, (k + 1) * dimF)
@@ -580,7 +637,9 @@ def dual_u_integrated(group, Ls, m, beta, K_pts):
             G_ber[I, J] = np.vdot(left, TOB[J])
 
     worst_eq = float(np.max(np.abs(G_ber - G_op)))
-    # also worst per-block Berezin-vs-operator residual (the elementary equality)
+    # the GENUINE content of this check: the per-block fermion-sector residual
+    # |Tber - Top| (the per-config representation equality).  worst_eq above is a
+    # pure function of this (the gauge/Fock wrapper cancels identically).
     worst_block = max(float(np.max(np.abs(b - o)))
                       for b, o in zip(Tber_blocks, Top_blocks))
     herm = float(np.max(np.abs(G_op - G_op.conj().T)))
@@ -588,7 +647,7 @@ def dual_u_integrated(group, Ls, m, beta, K_pts):
     n_mixed = sum(1 for (ig, ifk) in labels if ig != 0 and ifk != 0)
     return {
         "group": group, "dim": dim, "nObs": nObs, "n_mixed": n_mixed,
-        "gauge_min_eig": gauge_min_eig, "min_det": min_det,
+        "gauge_min_eig": gauge_min_eig, "min_kernel_norm": min_kernel_norm,
         "op_schmidt_rank": op_schmidt_rank, "entangled": op_schmidt_rank > 1,
         "worst_eq": worst_eq, "worst_block": worst_block, "herm": herm,
         "min_eig": float(eig.min()), "max_eig": float(eig.max()),
@@ -618,15 +677,17 @@ def decay_anchor(Ls, nc, m):
 
 
 # ===========================================================================
-# Reflection = adjoint on mixed observables, to machine precision.
+# Reflection = adjoint (a CITED OS property), to machine precision.  Consistency
+# check on the assembled Gram -- NOT a new claim.
 # Theta(F) = F^dag is implemented on the operator side as the Hermitian adjoint;
-# we verify <Omega|Theta(O)^dag T_full Theta(O)|Omega> = <Omega|O T_full O^dag|Omega>
-# pattern, i.e. that the OS metric is Hermitian (reflection acts as adjoint).
+# we verify the OS metric (the assembled Gram) is Hermitian, i.e. reflection acts
+# as the adjoint on the reconstructed Hilbert space.
 # ===========================================================================
 def reflection_equals_adjoint(group, Ls, m, beta, K_pts):
     """On the reconstructed Hilbert space the reflection Theta acts as the
        adjoint:  the OS Gram G_op is Hermitian to machine precision (G = G^dag),
-       which is the operator statement Theta = (.)^dag for mixed observables."""
+       which is the operator statement Theta = (.)^dag (a cited OS property; this
+       is a consistency check on the assembled Gram, not a new claim)."""
     res = dual_u_integrated(group, Ls, m, beta, K_pts)
     return res["herm"]
 
@@ -636,8 +697,8 @@ def reflection_equals_adjoint(group, Ls, m, beta, K_pts):
 # ===========================================================================
 def main() -> int:
     print("=" * 84)
-    print("DUAL-COMPUTATION: BEREZIN PATH-INTEGRAL == OPERATOR TRANSFER SANDWICH")
-    print("  (H2) mixed OS transfer representation on the 2-step blocked staggered surface")
+    print("DUAL-COMPUTATION: FERMION-SECTOR BEREZIN BLOCK METRIC == OPERATOR TRANSFER")
+    print("  2-step blocked staggered OS transfer representation (fermion sector)")
     print("=" * 84)
     print(f"  mass m={MASS}, temporal bulk half-extent NT_BULK={NT_BULK} "
           f"(2x{NT_BULK}={2*NT_BULK} slices), eq tol={TOL_EQ:g}")
@@ -684,38 +745,41 @@ def main() -> int:
     P += ok; F += (not ok)
     print()
 
-    # ---- DUAL CHECK 3: U-INTEGRATED MIXED Gram (the full scoped object) ----
+    # ---- DUAL CHECK 3: per-config fermion equality in a shared gauge/Fock wrapper
     print("-" * 84)
-    print("CHECK 3  U-INTEGRATED MIXED Gram on H_gauge (x) H_ferm  (the full (H2) object)")
-    print("  Berezin: det-weighted Grassmann reflected correlator of MIXED observables")
-    print("  Operator: <Omega|O^dag T_full O|Omega>, T_full=(Kg^1/2(x)I)(oplus_U B^dag B)(...)")
-    print("  assert the two Gram matrices are EQUAL (gauge-fermion entanglement carried both ways)")
+    print("CHECK 3  PER-CONFIG fermion equality assembled in a shared gauge/Fock wrapper")
+    print("  Top vs Tber are wrapped by the SAME Wilson kernel Kg, SAME flat Omega, SAME")
+    print("  observables/Fock ops -- they differ ONLY in the per-config fermion block, so")
+    print("  worst|G_ber-G_op| reduces to the per-block residual |Tber-Top|.  This is NOT")
+    print("  an independent gauge-fermion-mixing test (rank/dim/'mixed' are diagnostics).")
     print("-" * 84)
     ru1 = dual_u_integrated('u1', Ls=2, m=MASS, beta=2.0, K_pts=8)
     rsu3 = dual_u_integrated('su3', Ls=2, m=MASS, beta=4.0, K_pts=6)
     for r in (ru1, rsu3):
         print(f"  [{r['group']}] dimH={r['dim']}  observables={r['nObs']} "
-              f"(genuinely mixed={r['n_mixed']})")
-        print(f"        gauge transfer min eig={r['gauge_min_eig']:.3e} (PSD), "
-              f"min det weight={r['min_det']:.4f} (>0)")
-        print(f"        operator-Schmidt rank={r['op_schmidt_rank']} "
-              f"(>1 => ENTANGLED: {r['entangled']})")
-        print(f"        worst per-block |Berezin-operator| = {r['worst_block']:.3e}")
-        print(f"        worst |G_Berezin - G_operator|      = {r['worst_eq']:.3e}  "
-              f"(equality tol {TOL_EQ:g})")
-        print(f"        operator Gram: ||G-G^dag||={r['herm']:.2e}  "
-              f"min eig={r['min_eig']:+.3e} (PSD by construction)")
-    ok = (ru1["worst_eq"] < TOL_EQ and rsu3["worst_eq"] < TOL_EQ
-          and ru1["entangled"] and rsu3["entangled"]
-          and ru1["min_det"] > 0 and rsu3["min_det"] > 0)
-    print(f"  -> CHECK 3 U-integrated mixed representation equality: {'PASS' if ok else 'FAIL'}")
+              f"(diagnostic: nominally mixed={r['n_mixed']})")
+        print(f"        diagnostics (context, not load-bearing): gauge transfer min "
+              f"eig={r['gauge_min_eig']:.3e} (PSD),")
+        print(f"            min 2-step kernel norm={r['min_kernel_norm']:.4f} (>0; NOT the "
+              f"det(M[U]) measure), op-Schmidt rank={r['op_schmidt_rank']}")
+        print(f"        GENUINE: worst per-block |Tber - Top| (per-config fermion "
+              f"equality) = {r['worst_block']:.3e}")
+        print(f"        (assembled wrapper residual |G_ber - G_op| = {r['worst_eq']:.3e}, "
+              f"a pure function of the per-block residual above)")
+        print(f"        operator Gram Hermitian: ||G-G^dag||={r['herm']:.2e}")
+    # PASS criterion is the GENUINE per-config fermion equality |Tber-Top|; the
+    # assembled-wrapper residual worst_eq is not independent of it, and the
+    # entanglement-rank / kernel-norm diagnostics are NOT load-bearing here.
+    ok = (ru1["worst_block"] < TOL_EQ and rsu3["worst_block"] < TOL_EQ)
+    print(f"  -> CHECK 3 per-config fermion equality (in shared wrapper): "
+          f"{'PASS' if ok else 'FAIL'}")
     P += ok; F += (not ok)
     print()
 
     # ---- REFLECTION = ADJOINT ----
     print("-" * 84)
-    print("CHECK 4  REFLECTION = ADJOINT on mixed observables (Theta = (.)^dag)")
-    print("  the reconstructed OS Gram is Hermitian to machine precision")
+    print("CHECK 4  REFLECTION = ADJOINT (cited OS property; Theta = (.)^dag)")
+    print("  consistency check: the reconstructed OS Gram is Hermitian to machine precision")
     print("-" * 84)
     h1 = reflection_equals_adjoint('u1', Ls=2, m=MASS, beta=2.0, K_pts=8)
     h3 = reflection_equals_adjoint('su3', Ls=2, m=MASS, beta=4.0, K_pts=6)
@@ -771,17 +835,21 @@ def main() -> int:
     # ---- SUMMARY ----
     print("=" * 84)
     print(f"SCORECARD: PASS={P} FAIL={F}")
-    print("  CHECK 1 free (U=1)            : Berezin == operator per mode (representation eq.)")
+    print("  CHECK 1 free (U=1)            : Berezin block metric == c_block*e^-2E per mode")
+    print("                                 + FULL many-field position-basis Gram (fixes c_block=2)")
     print("  CHECK 2 fixed SU(3)/U(1) bkgd : per-config Berezin == operator")
-    print("  CHECK 3 U-integrated MIXED    : entangled H_gauge(x)H_ferm Gram, Berezin == operator")
-    print("  CHECK 4 reflection = adjoint  : OS Gram Hermitian to machine precision")
+    print("  CHECK 3 per-config in wrapper : Tber==Top inside a SHARED gauge/Fock wrapper")
+    print("                                 (NOT an independent gauge-fermion-mixing test)")
+    print("  CHECK 4 reflection = adjoint  : OS Gram Hermitian (cited OS property; consistency)")
     print("  CHECK 5 decay anchor          : Berezin forward 2-pt ~ e^{-2E(p)} per 2-step")
     print("  CHECK 6 single-step control   : single-step BREAKS the equality (indefinite)")
     print("-" * 84)
-    print("  Finite-carrier verification of the Luescher/Osterwalder-Seiler/STW/Palumbo")
-    print("  transfer-matrix REPRESENTATION (cited); the 2-step eta_1 sign bookkeeping under")
-    print("  theta(t,x)=(-1-t,x) is the in-repo derived content.  NOT a continuum / OS-")
-    print("  reconstruction (Wightman) claim; NOT a full interacting-RP closure.")
+    print("  DELIVERED: finite-carrier FERMION-SECTOR instance of the Luescher/Osterwalder-")
+    print("  Seiler/STW/Palumbo transfer-matrix REPRESENTATION (cited); the 2-step eta_1 sign")
+    print("  bookkeeping under theta(t,x)=(-1-t,x) is the in-repo derived content.")
+    print("  NOT established here: the full gauge-fermion-ENTANGLED (mixed-observable)")
+    print("  representation equality, the det(M[U]) weight / Haar U-average (RP_MIXED + gauge")
+    print("  measure), the continuum / OS-reconstruction (Wightman) limit, nor a full RP closure.")
     print("=" * 84)
     return 0 if F == 0 else 1
 

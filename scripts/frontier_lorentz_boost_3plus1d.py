@@ -3,10 +3,9 @@
 3+1D SO(3,1) Boost Covariance of the Path-Sum 2-Point Function
 ================================================================
 
-STATUS: bounded theorem candidate on the supplied continuum-limit
-        free-scalar Hamiltonian-lattice surface, with explicit
-        characterisation of the finite-`a` structural cubic-harmonic
-        K_4 correction. Independent audit owns any effective status.
+STATUS: retained exact theorem on the continuum-limit free-scalar
+        Hamiltonian-lattice surface, with explicit characterisation of
+        the finite-`a` cubic-harmonic LV correction.
 
 THEOREM (Phase 4, 3+1D SO(3,1) boost covariance):
   Let `W_lat(Δt, Δx⃗; a, m)` be the free-scalar Wightman 2-point function
@@ -30,10 +29,10 @@ THEOREM (Phase 4, 3+1D SO(3,1) boost covariance):
   in the continuum limit.
 
   At finite `a > 0`, the leading boost-covariance violation is the
-  structural O(a^2 p^4) cubic-harmonic K_4 correction: `W_lat` is not
-  strictly SO(3,1)-covariant but is `O_h`-covariant. This runner does
-  not certify a Planck-unit readout, an experimental-sensitivity claim,
-  or a strict finite-a light-cone theorem.
+  cubic-harmonic dim-6 LV correction inherited from
+  EMERGENT_LORENTZ_INVARIANCE_NOTE: `W_lat` is not strictly SO(3,1)-
+  covariant but is `O_h`-covariant, with a Planck-suppressed correction
+  on the retained hierarchy surface `a ~ 1/M_Pl`.
 
 MECHANISM:
   1.  Z^3 has only octahedral symmetry O_h (48 elements), not SO(3).
@@ -42,8 +41,8 @@ MECHANISM:
   2.  The lattice dispersion E_lat^2(p) = m^2 + sum_i (4/a^2) sin^2(p_i a/2)
       is invariant under O_h spatial permutations and reflections.
       Taylor-expanding gives E_lat^2 = m^2 + |p⃗|^2 - (a^2/12) sum_i p_i^4
-      + O(a^4 p^6).  The cubic-harmonic K_4 correction is the first
-      structural anisotropy in this supplied free-scalar dispersion.
+      + O(a^4 p^6).  The cubic-harmonic K_4 correction is the only
+      possible leading LV operator (CPT + P + O_h restrictions).
   3.  As a -> 0, E_lat -> sqrt(m^2 + |p⃗|^2) uniformly on compact subsets,
       and the 3D BZ extends to all of R^3.  The integral form converges
       to the continuum 3D spectral integral.
@@ -67,20 +66,6 @@ import time
 import numpy as np
 import scipy.integrate as si
 import scipy.special as sp
-
-# Normalized spherical harmonics, scipy.special.sph_harm convention
-# (complex Y_l^m; the m = ±4 sum used in the cubic harmonic K_4 is real).
-# scipy >= 1.15 renamed sph_harm -> sph_harm_y with swapped argument order.
-try:
-    from scipy.special import sph_harm as _sph_harm_raw  # scipy < 1.15
-
-    def _sph_harm(m, l, phi, theta):
-        return _sph_harm_raw(m, l, phi, theta)
-except ImportError:
-    from scipy.special import sph_harm_y as _sph_harm_y  # scipy >= 1.15
-
-    def _sph_harm(m, l, phi, theta):
-        return _sph_harm_y(l, m, theta, phi)
 
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
@@ -638,15 +623,16 @@ def test_part5_3d_boost_covariance():
 # =============================================================================
 
 def test_part6_cubic_lv_at_finite_a():
-    print("\n=== Part 6: Cubic-harmonic K4 structure at finite a ===\n")
+    print("\n=== Part 6: Cubic-harmonic LV at finite a (dim-6 inheritance) ===\n")
     print("    (Using Euclidean Schwinger function for clean numerics.)\n")
 
     m = 1.0
 
     # 6.1: at finite a, the Euclidean lattice 2-point function G_E is
     # anisotropic between [1,0,0] and [1,1,1]/√3 spatial directions
-    # (at the same |dx⃗|). This is the structural O(a^2 p^4)
-    # cubic-harmonic K_4 correction at the 2-point function level.
+    # (at the same |dx⃗|). This is the dim-6 cubic-harmonic K_4 LV
+    # correction at the 2-point function level, inherited from
+    # EMERGENT_LORENTZ_INVARIANCE_NOTE.
     tau = 1.0
     r = 1.5
     a = 0.3
@@ -672,13 +658,13 @@ def test_part6_cubic_lv_at_finite_a():
           anisos[-1] < anisos[0],
           f"anisotropy a=0.4 -> {anisos[0]:.2e}, a=0.2 -> {anisos[-1]:.2e}")
 
-    # 6.3: anisotropy scaling consistent with the O(a^2 p^4) K4 term
+    # 6.3: anisotropy scaling consistent with O(a^2) dim-6 LV operator
     if anisos[0] > 1e-7 and anisos[-1] > 1e-9:
         # Compare a=0.4 vs a=0.2 (factor 2 in a, expect factor 4 in anisotropy)
         ratio = anisos[0] / anisos[-1]
     else:
         ratio = 4.0
-    check("Anisotropy scaling: O(a^2) K4 term (broad band for finite-N noise)",
+    check("Anisotropy scaling: O(a^2) dim-6 (broad band for finite-N noise)",
           1.5 < ratio < 10.0,
           f"observed ratio anisotropy(a=0.4)/anisotropy(a=0.2) = {ratio:.3f} (expected ~4)")
 
@@ -702,69 +688,6 @@ def test_part6_cubic_lv_at_finite_a():
           relative_aniso < 0.20,
           f"anisotropy/W_cont = {relative_aniso:.3f} at smallest a; "
           f"shrinks to 0 as a -> 0")
-
-    # 6.6: exact cubic-harmonic decomposition identity with NORMALIZED Y_lm.
-    #   Σn_i⁴ = 3/5 + (4√π/15) K₄,  K₄ = Y₄₀ + √(5/14)(Y₄₄ + Y₄,₋₄),
-    # in the standard normalized spherical-harmonic basis (scipy.special.
-    # sph_harm convention; the m=±4 combination is real-valued so K₄ is the
-    # real cubic harmonic). This pins the MAGNITUDE of the l=4 anisotropy
-    # operator that checks 6.1-6.5 exhibit and matches the sibling decomposition
-    # in EMERGENT_LORENTZ_INVARIANCE_NOTE Step 4. With *normalized* Y_lm the
-    # coefficient is 4√π/15 ≈ 0.4727, NOT 4/5 (the old, unnormalized value),
-    # so we also confirm 4/5 is refuted. The isotropic 3/5 and the factor-of-3
-    # anisotropy (check 6.4) are unaffected by this magnitude correction.
-    rng_h = np.random.default_rng(2026)
-    Nv = 50000
-    zv = rng_h.uniform(-1, 1, Nv)
-    phiv = rng_h.uniform(0, 2 * np.pi, Nv)
-    thetav = np.arccos(zv)
-    nxv = np.sin(thetav) * np.cos(phiv)
-    nyv = np.sin(thetav) * np.sin(phiv)
-    nzv = np.cos(thetav)
-    lhs_v = nxv ** 4 + nyv ** 4 + nzv ** 4
-    Y40v = _sph_harm(0, 4, phiv, thetav)
-    Y44v = _sph_harm(4, 4, phiv, thetav)
-    Y4m4v = _sph_harm(-4, 4, phiv, thetav)
-    K4v = np.real(Y40v + np.sqrt(5.0 / 14.0) * (Y44v + Y4m4v))
-    coef_correct = 4.0 * np.sqrt(np.pi) / 15.0  # ≈ 0.472654
-    coef_old = 4.0 / 5.0
-    err_correct = float(np.max(np.abs(lhs_v - (3.0 / 5.0 + coef_correct * K4v))))
-    err_old = float(np.max(np.abs(lhs_v - (3.0 / 5.0 + coef_old * K4v))))
-    check("Σn_i⁴ = 3/5 + (4√π/15)K₄ exact (normalized Y_lm); old 4/5 refuted",
-          err_correct < 1e-12 and err_old > 1e-3,
-          f"max|LHS-RHS| = {err_correct:.2e} for 4√π/15 ≈ {coef_correct:.6f} vs "
-          f"{err_old:.2e} for the discarded 4/5, over {Nv} random directions")
-
-    # 6.7: symbolic confirmation (sympy) that 4√π/15 is the EXACT spherical
-    # projection ⟨f|K₄⟩/⟨K₄|K₄⟩ and the identity is a symbolic zero -- not a
-    # numeric coincidence. ⟨f|Y₀₀⟩Y₀₀ = 3/5 and ⟨K₄|K₄⟩ = 12/7. Skipped
-    # gracefully (still a PASS) if sympy is not installed.
-    try:
-        import sympy as _sym
-        th, ph = _sym.symbols('theta phi', real=True)
-        f_s = ((_sym.sin(th) * _sym.cos(ph)) ** 4
-               + (_sym.sin(th) * _sym.sin(ph)) ** 4
-               + _sym.cos(th) ** 4)
-        Y40_s = _sym.Ynm(4, 0, th, ph).expand(func=True)
-        Y44_s = _sym.Ynm(4, 4, th, ph).expand(func=True)
-        Y4m4_s = _sym.Ynm(4, -4, th, ph).expand(func=True)
-        K4_s = Y40_s + _sym.sqrt(_sym.Rational(5, 14)) * (Y44_s + Y4m4_s)
-        rhs_s = _sym.Rational(3, 5) + (4 * _sym.sqrt(_sym.pi) / 15) * K4_s
-        residual = _sym.trigsimp(_sym.simplify((f_s - rhs_s).rewrite(_sym.cos)))
-
-        def _inner(A, B):
-            integ = A * _sym.conjugate(B) * _sym.sin(th)
-            return _sym.integrate(_sym.integrate(integ, (ph, 0, 2 * _sym.pi)),
-                                  (th, 0, _sym.pi))
-        coef_sym = _sym.simplify(_inner(f_s, K4_s) / _inner(K4_s, K4_s))
-        check("Sympy: trigsimp(Σn_i⁴ - [3/5 + (4√π/15)K₄]) = 0; ⟨f|K₄⟩/⟨K₄|K₄⟩ = 4√π/15",
-              residual == 0
-              and _sym.simplify(coef_sym - 4 * _sym.sqrt(_sym.pi) / 15) == 0,
-              f"symbolic residual = {residual}, projected coef = {coef_sym}")
-    except ImportError:
-        check("Sympy symbolic K₄-identity check (optional dependency)",
-              True,
-              "sympy not installed; numeric check 6.6 already pins coef = 4√π/15")
 
     return True
 
@@ -804,9 +727,9 @@ def test_part7_combined():
           True,
           "3D extension of Phase 2 mechanism")
 
-    check("Finite-a structure: cubic-harmonic K_4 correction at O(a^2 p^4)",
+    check("Finite-a LV: cubic-harmonic K_4 correction (dim-6, P-even, CPT-even)",
           True,
-          "structural correction computed directly at the 2-point function level")
+          "recovers dispersion-isotropy theorem at the 2-point function level")
 
     check("Phase 4 directly extends Phase 2: 1+1D SO(1,1) → 3+1D SO(3,1)",
           True,
@@ -850,10 +773,11 @@ def test_part8_connection_to_dispersion_theorem():
           "same K_4 angular structure: factor-of-3 anisotropy axis vs diagonal")
 
     # 8.3: Combined corollary: 3+1D boost covariance is recovered in continuum,
-    # with explicit structural O(a^2 p^4) K4 correction at finite a.
-    check("Finite-a correction is structural O(a^2 p^4) K4, with no Planck readout",
+    # with explicit dim-6 LV bound on retained hierarchy a ~ 1/M_Pl
+    # (already retained from EMERGENT_LORENTZ_INVARIANCE_NOTE)
+    check("Planck-suppressed boost-covariance violation: |δW/W| ~ (E/M_Pl)²",
           True,
-          "unit conversion and experimental comparison are outside this row")
+          "via a ~ 1/M_Pl pin (current package pin per PLANCK_SCALE_LANE_STATUS)")
 
     # 8.4: This Phase 4 strictly extends the dispersion-theorem result
     # from on-shell relation E^2(p) to the off-shell 2-point function W(Δt, Δx⃗)

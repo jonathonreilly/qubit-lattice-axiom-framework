@@ -1,0 +1,43 @@
+{
+  "action_to_rn_identity": {
+    "scaled_action_source": "S_h=S_0-kappa_Pl h lambda O",
+    "scaled_score": "lambda O",
+    "unit_action_source": "S_h=S_0-kappa_Pl h O",
+    "unit_score": "O"
+  },
+  "binary_fisher_unit": {
+    "fisher_unit": "one Planck action quantum on signed record",
+    "scaled_fisher": "lambda^2"
+  },
+  "document_boundary": {
+    "actual_current_surface_status": "bounded-support",
+    "depends_on": [
+      "Tier-A Planck anchor / natural Planck units",
+      "finite source-action/RN support",
+      "normalized signed-record top source support"
+    ]
+  },
+  "summary": {
+    "actual_current_surface_status": "bounded-support",
+    "bare_retained_allowed": false,
+    "fail": 0,
+    "partially_closes": [
+      "dimensionful source-action unit to RN coordinate",
+      "lambda=1 inside one-Planck-action unit top source surface"
+    ],
+    "pass": 45,
+    "proposal_allowed": false,
+    "remaining_open_for_full_yt": [
+      "physical top source equals one-Planck-action unit deformation along O_top",
+      "canonical neutral Higgs/source surface and scalar LSZ/pole-row gates",
+      "matching/running bridges"
+    ],
+    "target_blocker": "Planck/action unit equals RN/Fisher source coordinate",
+    "trace_class": "upstream_support"
+  },
+  "top_consequence": {
+    "if_one_planck_action_unit": "y_33=1/sqrt(6)",
+    "remaining_hinge": "physical top source must be this unit deformation",
+    "top_direction": "(1,1,1,1,1,1)/sqrt(6)"
+  }
+}

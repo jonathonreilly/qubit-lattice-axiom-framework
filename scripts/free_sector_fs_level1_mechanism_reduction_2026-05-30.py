@@ -294,7 +294,7 @@ def check_microcausality_discriminator(rng):
     spacelike (anti)commutator that vanishes; built with COMMUTATORS (Bose) it
     does not. Convention-independent on-shell projector identity:
         (p_slash + m) + G^0 (p_slash - m) G^0 = 2E G^0        (CAR: canonical)
-        (p_slash + m) - G^0 (p_slash - m) G^0 = 2(gamma.p + m) != 2E G^0 (Bose)
+        (p_slash + m) - G^0 (p_slash - m) G^0 = 2(m - p_k G^k) != 2E G^0 (Bose)
     using sum u ubar = p_slash + m, sum v vbar = p_slash - m and
     sign(ubar u) = - sign(vbar v)."""
     G = minkowski_gammas()

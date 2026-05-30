@@ -193,7 +193,7 @@ discriminator:
 
 ```text
     (p_slash + m) + G^0 (p_slash - m) G^0 = 2E G^0     (CAR: canonical {psi,psidag}=delta^3, microcausal)
-    (p_slash + m) - G^0 (p_slash - m) G^0 = 2(gamma.p + m) != 2E G^0   (Bose: non-canonical, spacelike commutator nonzero)
+    (p_slash + m) - G^0 (p_slash - m) G^0 = 2(m - p_k G^k) != 2E G^0   (Bose: non-canonical, spacelike commutator nonzero)
 ```
 
 using `Sum u ubar = p_slash + m`, `Sum v vbar = p_slash - m`, and

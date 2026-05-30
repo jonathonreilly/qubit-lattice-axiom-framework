@@ -4,26 +4,6 @@
 **Claim type:** bounded_theorem
 **Status:** source-side proposal; independent audit lane only
 **Related wrapper:** `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The algebraic scaling step follows from the admitted Hamiltonian and trial-state expectations, but those are explicit external premises rather than retained results in the restricted packet. The missing closures are the general-d Coulomb Ha"*
-
-with repair: *"missing_bridge_theorem: add retained bridge theorems or cited retained dependencies deriving P1, P2, and P3, or keep the claim explicitly conditional on those external admissions."*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The elementary trial-state scaling argument — given the admitted d-dimensional Coulomb Hamiltonian (P1) and scaling expectations (P2) — which shows algebraically that `d >= 5` is unbounded below and identifies `d = 4` as the critical dimension, with `d = 3` as the canonical Rydberg case; this algebra is runner-verified and closes exactly within the admitted premises.
-- **NON-load-bearing (split off / admitted):** The general-d Coulomb Hamiltonian form (P1), the d-dimensional continuum quantum mechanics background (P2), and the Coulomb/scalar sector identification (P3) are all explicit external admissions, not retained results derived from framework authority; these bridge premises remain admitted, non-load-bearing inputs until retained derivations for them land.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
 
 ## Claim Boundary
 

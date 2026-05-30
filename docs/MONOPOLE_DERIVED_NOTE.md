@@ -26,10 +26,9 @@ the value at `L = 64` to four significant figures). The `c_lat` coefficient
 is derived; `beta = 1/(4*pi*alpha_EM(a^{-1}))` requires an external value
 of `alpha_EM` at the lattice scale.
 
-On the **Planck-scale package pin** `a^(-1) = M_Pl` (carried elsewhere in the
-framework — see [PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md](PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md) and
-[PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md);
-not derived in this note) and the **one-loop SM RG bridge import**
+On the **single primitive unit reference** `a^(-1) = M_Pl` (the units import,
+carried framework-wide — see [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md);
+a foundational unit, not derived in this note) and the **one-loop SM RG bridge import**
 `alpha_EM^{-1}(M_Pl) ~ 72.1` (from `alpha_EM(M_Z) = 1/127.9`, `b_EM = -80/9`;
 **not derived from lattice axioms**), the numerical prefactor is
 

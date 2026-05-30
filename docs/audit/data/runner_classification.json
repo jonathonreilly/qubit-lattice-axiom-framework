@@ -8449,7 +8449,7 @@
       "runner": "scripts/audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17.py"
     },
     "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": {
-      "assert_count": 1,
+      "assert_count": 0,
       "counts": {
         "A": 0,
         "B": 1,
@@ -8457,8 +8457,8 @@
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "B",
-      "runner": "scripts/frontier_g_bare_hs_rigidity_narrow.py"
+      "dominant_class": "C",
+      "runner": "scripts/frontier_g_bare_audit_residual_closure.py"
     },
     "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17": {
       "assert_count": 0,
@@ -39094,7 +39094,8 @@
     "scripts/frontier_g_bare_audit_residual_closure.py": {
       "assert_count": 0,
       "claims": [
-        "g_bare_constraint_vs_convention_restatement_note_2026-05-07"
+        "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
+        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
       ],
       "counts": {
         "A": 0,
@@ -39210,21 +39211,6 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "exists": true
-    },
-    "scripts/frontier_g_bare_hs_rigidity_narrow.py": {
-      "assert_count": 1,
-      "claims": [
-        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 3,
-        "C": 1,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_g_bare_rescaling_conditional_algebra_check.py": {

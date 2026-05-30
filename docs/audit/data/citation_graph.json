@@ -6637,18 +6637,6 @@
       "to": "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15"
     },
     {
-      "from": "dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16",
-      "to": "dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16"
-    },
-    {
-      "from": "dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16",
-      "to": "dm_leptogenesis_transport_integral_theorem_note_2026-04-16"
-    },
-    {
-      "from": "dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16",
-      "to": "dm_leptogenesis_hrad_theorem_note_2026-04-16"
-    },
-    {
       "from": "dm_leptogenesis_full_microscopic_reduction_note_2026-04-16",
       "to": "dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16"
     },
@@ -49339,11 +49327,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16",
-        "dm_leptogenesis_transport_integral_theorem_note_2026-04-16",
-        "dm_leptogenesis_hrad_theorem_note_2026-04-16"
-      ],
+      "deps": [],
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
@@ -87311,6 +87295,7 @@
     "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16",
     "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16",
     "dm_leptogenesis_exact_kernel_closure_note_2026-04-15_note_2026-05-17",
+    "dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16",
     "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
     "dm_leptogenesis_full_microscopic_reduction_note_2026-04-16_note_2026-05-17",
     "dm_leptogenesis_ne_active_column_axiom_boundary_note_2026-05-17",

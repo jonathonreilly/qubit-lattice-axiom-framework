@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
+runner_sha256: f07d1d9e3723b73bb48cb6f0554307c63c571b75a64a77d520f49b87b1d4cc21
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+g_* Higgs-sector count reconciliation runner (2026-05-29)
+==============================================================================
+
+[1] high-T relativistic dof census: one vs two EWSB doublets
+  [PASS] gluon dof = dim adj(SU(3)) * 2 = 16  (16)
+  [PASS] SU(2)_L dof = dim adj(SU(2)) * 2 = 6  (6)
+  [PASS] U(1)_Y dof = 1 * 2 = 2  (2)
+  [PASS] gauge bosonic subtotal = 24  (24)
+  [PASS] one complex SU(2)_L doublet -> 4 real scalar dof
+  [PASS] per-generation fermionic dof = 30  (30)
+  [PASS] N_fermions = 3 * 30 = 90  (90)
+  [PASS] single-doublet N_bosons = 28  (28)
+  [PASS] single-doublet g_* = 28 + (7/8)*90 = 427/4 = 106.75  (427/4 = 106.75)
+  [PASS] two-doublet N_bosons = 32  (32)
+  [PASS] two-doublet g_* = 32 + (7/8)*90 = 110.75  (443/4 = 110.75)
+  [PASS] g_* shift from a second thermalized doublet = +4 (one boson per scalar dof)  (4)
+  [PASS] the shift equals the 4 added scalar dof (bosonic, weight 1)
+
+[2] flavor-sector two-Higgs = Yukawa Z_3-offset texture, ONE doublet
+  [PASS] single fixed-offset Yukawa Y = D P is monomial -> Y^dag Y diagonal  (all 3 offsets, random couplings)
+  [PASS] two-offset Yukawa Y = A + B C is generically non-monomial -> Y^dag Y non-diagonal  (the flavor escape that makes PMNS nontrivial)
+  [PASS] retained two-Higgs canonical class: 12 - 5 = 7 real physical quantities  (12 - 5 = 7 (6 moduli + 1 phase))
+  [PASS] these 7 are Yukawa-texture parameters, NOT relativistic thermalized dof  (flavor space (couplings) vs Fock space (particle content))
+  [PASS] single-Higgs Z_3 charge q_H is a right-basis relabeling -> Y Y^dag invariant  (q_H gauge-redundant for PMNS; not a second physical doublet)
+  [PASS] pseudoreality epsilon U^* = U epsilon -> tilde H determined by H (one field)  (tilde H = i tau_2 H^* is not an independent doublet)
+
+[3] genuine 2HDM (two thermalized doublets) requires a second field
+  [PASS] D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6
+  [PASS] D17: no second (1,1) composite scalar -> alternatives Z^2 in {8, 9/2, 24} != 6  ((1,8)=8, (3,1)=9/2, (8,3)=24)
+  [PASS] genuine 2HDM needs an independent fundamental/second-composite scalar (admitted, not retained)  (absent from the bare action (D16); not framework-native)
+  [PASS] framework-native EWSB scalar count for the census = 1 doublet (4 dof)  (outcome (a): g_* = 106.75 stands on framework-native content)
+
+[4] note + authority cross-checks
+  [PASS] authority exists: YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+  [PASS] authority exists: YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md
+  [PASS] authority exists: CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md
+  [PASS] authority exists: DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md
+  [PASS] authority exists: LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE.md
+  [PASS] authority exists: HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md
+  [PASS] authority exists: SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md
+  [PASS] authority exists: EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
+  [PASS] authority exists: NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md
+  [PASS] authority exists: DM_NEUTRINO_CANONICAL_TWO_HIGGS_SLOT_NO_GO_NOTE_2026-04-15.md
+  [PASS] authority exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  [INFO] prior-cycle R-HIGGS note present on this branch: True (lands via PR #2223; soft check)
+  [PASS] note file exists
+  [PASS] note records load-bearing token: '106.75'
+  [PASS] note records load-bearing token: '110.75'
+  [PASS] note records load-bearing token: 'bounded_theorem'
+  [PASS] note records load-bearing token: 'R-HIGGS'
+  [PASS] note records load-bearing token: 'H_unit'
+  [PASS] forbidden-import disclaimer paragraph present in §1
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'monte carlo'
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'fitted selector'
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'best fit'
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'chi-squared fit'
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'pdg fit'
+  [PASS] no new-vocabulary token: 'two-class framing'
+  [PASS] no new-vocabulary token: 'g-star landing class'
+  [PASS] no new-vocabulary token: 'thermal dof framing'
+  [PASS] no new-vocabulary token: 'ewsb-flavor class'
+  [PASS] no new-vocabulary token: 'algebraic universality'
+
+==============================================================================
+PASS=51 FAIL=0
+==============================================================================
+
+----- stderr -----
+

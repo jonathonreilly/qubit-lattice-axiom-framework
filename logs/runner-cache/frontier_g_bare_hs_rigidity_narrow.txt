@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_g_bare_hs_rigidity_narrow.py
+runner_sha256: f4baa4bca1293edd525f61c7fc1dca71960beab9b2c949e1f125016cd525d095
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+========================================================================================
+G_BARE HS RIGIDITY NARROW CERTIFICATE
+Binding scope: R1-R3 trace-Casimir rigidity only
+========================================================================================
+  PASS canonical trace Gram Tr(T_a T_b)=delta_ab/2
+  PASS canonical Casimir sum_a T_a T_a=(4/3)I_3
+  PASS Ad-invariance of B_HS under sampled SU(3) action 1 (error=6.30e-16)
+  PASS Ad-invariance of B_HS under sampled SU(3) action 2 (error=4.64e-16)
+  PASS Ad-invariance of B_HS under sampled SU(3) action 3 (error=6.89e-16)
+  PASS Ad-invariance of B_HS under sampled SU(3) action 4 (error=5.69e-16)
+  PASS Ad-invariance of B_HS under sampled SU(3) action 5 (error=4.36e-16)
+  PASS trace Gram has selected normalization N_F=0.25
+  PASS Casimir obeys C_F=(8/3)N_F at N_F=0.25
+  PASS trace Gram has selected normalization N_F=0.5
+  PASS Casimir obeys C_F=(8/3)N_F at N_F=0.5
+  PASS trace Gram has selected normalization N_F=1.0
+  PASS Casimir obeys C_F=(8/3)N_F at N_F=1.0
+  PASS trace Gram has selected normalization N_F=2.0
+  PASS Casimir obeys C_F=(8/3)N_F at N_F=2.0
+  PASS Gram scales by c^2 for c=0.5
+  PASS Casimir scales by c^2 for c=0.5
+  PASS joint preservation iff c^2=1 for c=0.5
+  PASS Gram scales by c^2 for c=1.41421
+  PASS Casimir scales by c^2 for c=1.41421
+  PASS joint preservation iff c^2=1 for c=1.41421
+  PASS Gram scales by c^2 for c=2
+  PASS Casimir scales by c^2 for c=2
+  PASS joint preservation iff c^2=1 for c=2
+  PASS Gram scales by c^2 for c=3
+  PASS Casimir scales by c^2 for c=3
+  PASS joint preservation iff c^2=1 for c=3
+  PASS Gram scales by c^2 for c=-1
+  PASS Casimir scales by c^2 for c=-1
+  PASS joint preservation iff c^2=1 for c=-1
+  PASS Gram scales by c^2 for c=1
+  PASS Casimir scales by c^2 for c=1
+  PASS joint preservation iff c^2=1 for c=1
+  PASS source declares bounded theorem
+  PASS source names narrow runner
+  PASS source excludes former R4/R5 claims
+  PASS source excludes Wilson routing authority
+  PASS source excludes g_bare promotion
+
+SUMMARY: PASS=38 FAIL=0
+RUNNER STATUS: PASS
+
+----- stderr -----
+

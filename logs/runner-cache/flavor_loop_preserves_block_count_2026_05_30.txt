@@ -1,0 +1,35 @@
+
+========================================================================
+(A) one-loop polarization preserves the block-count ratio (degenerate G0)
+========================================================================
+  G0 = c*I_3 (free corners degenerate) -> Pi_X = c^2 Tr(X^2):
+    Pi_I (uniform)    = c^2 * 3
+    Pi_(J-I) (stagg.) = c^2 * 6
+    ratio 3:6 = 1:2 = bare HS ratio -> K^eff ∝ Tr(X^2) -> r^eff=1/2 -> Q=2/3 (RG-stable).
+  near-degenerate G0=diag(1,1,1+d): ratio stays ~2 (block-count robust):
+    d=0.0: Pi_b/Pi_a = 2.0000
+    d=0.1: Pi_b/Pi_a = 1.9938
+    d=0.3: Pi_b/Pi_a = 1.9512
+
+========================================================================
+(B) the VEV/tadpole is the separate collapse; LIGHT -> fluctuation-dominated -> 2/3
+========================================================================
+  M = a_VEV*I (uniform condensate, b_VEV->0) + dM (block-count fluctuations).
+  HEAVY (large a_VEV): M ~ a_VEV*I -> nearly degenerate -> Q~1/3.
+  LIGHT (small a_VEV): M ~ dM (fluctuations) -> block-count -> Q~2/3.
+  illustration: block-count fluctuation (a_f=1, b_f=1/sqrt2) on a uniform VEV v:
+    VEV v=4.0: sqrt-masses [6.414 4.293 4.293]  Q=0.3467
+    VEV v=1.0: sqrt-masses [3.414 1.293 1.293]  Q=0.4167
+    VEV v=0.2: sqrt-masses [2.614 0.493 0.493]  Q=0.5648
+    VEV v=0.0: sqrt-masses [2.414 0.293 0.293]  Q=0.6667
+
+========================================================================
+VERDICT
+========================================================================
+  The loop PRESERVES the block-count measure (Q=2/3) at the quadratic level (degenerate
+  G0 -> Pi ∝ Tr X^2). The collapse to Q=1/3 is the SEPARATE uniform-VEV/tadpole, which
+  dominates only for HEAVY fermions. Leptons are LIGHT -> fluctuation-dominated -> the
+  block-count measure sets Q -> 2/3. Native mechanism linking lepton lightness to Koide
+  Q=2/3. Caveats: qualitative crossover (needs matter-action scales); expected measure;
+  one-loop. The move-3 lean survives the dynamics; the open piece is the VEV/fluctuation
+  scale ratio from the g_bare=1 matter action.

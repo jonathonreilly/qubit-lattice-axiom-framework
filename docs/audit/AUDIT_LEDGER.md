@@ -1119,6 +1119,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -11087,6 +11088,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The bounded finite-algebra statement closes under the explicit supplied coframe-response premise. The fresh-context audit independently checked the polarization, Cl_4(C) representation, formal-# CAR anticommutators, spin phase, and trace arithmetic rather than relying only on runner PASS output. All broader physical conclusions remain outside scope.
 - **auditor confidence:** high
 
+### `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded accepted-premise bridge from the stated P1 coframe-response premise to B1-B4. B1-B3 are supported as finite-dimensional Clifford algebra consequences, but B4 as written is not audited clean because the dagger/CAR normalization requires a compatible Hermitian inner product or self-adjoint *-representation premise for D(e_a), which P1 does not state.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note claims that the accepted coframe-response premise D(v)^2=||v||^2 I_K polarizes to Clifford relations and then yields both an irreducible Cl_4(C) action on K and CAR modes c_N,c_T satisfying dagger anticommutators.  _(class `A`)_
+- **chain closes:** False — Polarization gives the Clifford anticommutators and the standard Cl_4(C) representation argument can close B1-B3. The CAR relations involving c_j^dagger do not follow from Clifford relations alone for an arbitrary similarity-equivalent representation unless the K inner product or a self-adjoint gamma/*-representation structure is supplied.
+- **rationale:** The no-go/bounded-wall gate exposes a hidden wall: the single registered premise P1 supplies a quadratic Clifford relation, but not the Hermitian structure needed for the daggered CAR claim in B4. A nonunitary similarity transform of the Pauli gamma matrices preserves B1-B3 while generally changing adjoints with respect to a fixed K inner product, so {c_i,c_j^dagger}=delta_ij I is not representation-invariant from P1 alone. The runner reports PASS=64, FAIL=0 under SHA 14b78a34cf0a5b5b0ba2f28308f82e82e3c18b986fc1276f94b7e25c45c5352e, but it verifies a chosen Hermitian Pauli realization rather than the general supplied-premise statement. Repair target: either add and audit a compatible Hermitian/*-representation premise for D on K, or narrow B4 to an existence statement in a chosen Pauli-realized inner product.
+- **auditor confidence:** high
+
 ### `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`
 
 - **Note:** [`PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md`](../../docs/PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)
@@ -11428,6 +11442,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With the second column fixed to 1/3, mu-tau row equality, row/column stochastic sums, and s^2=|U_e3|^2, the remaining entries are forced as |U_e1|^2=2/3-s^2, |U_mu3|^2=|U_tau3|^2=(1-s^2)/2, and |U_mu1|^2=|U_tau1|^2=1/6+s^2/2.  _(class `A`)_
 - **chain closes:** True — The assumptions determine each unfixed entry by one-line row/column-sum algebra, and the displayed matrix directly satisfies the stochastic and mu-tau conditions. Nonnegativity on 0 <= s^2 <= 2/3 follows entrywise.
 - **rationale:** The row is a class-A conditional matrix-algebra lemma with no empirical PMNS inputs or upstream residual authority consumed. The cached runner reports PASS=41, FAIL=0 under SHA 1303ee82698e1952d1afe55566c105569a3682c27899c3117c75923c725fc164, checking exact rational samples, row/column sums, trimaximality, mu-tau equality, and nonnegativity. The clean verdict is bounded to the conditional assumptions and does not promote any PMNS residual or angle prediction.
+- **auditor confidence:** high
+
+### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional PMNS residual algebra note: the trimaximal second-column and mu-tau modulus assumptions imply sin^2(theta_23)=1/2 and 3 sin^2(theta_12) cos^2(theta_13)=1, but the advertised maximal-CP conclusion requires the additional nonsingular condition c12*s12*s13 != 0, equivalently excluding the endpoint where the phase term vanishes independently of delta_CP.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note derives the TM2 sum rule and theta_23=pi/4 from trimaximal and mu-tau modulus residuals, then divides by 2 c12 s12 s13 to conclude cos(delta_CP)=0.  _(class `A`)_
+- **chain closes:** False — The first two algebraic consequences close. The CP step is overbroad as stated: at sin^2(theta_13)=2/3, the TM2 sum rule gives sin^2(theta_12)=1 and c12=0, so equation (3) is satisfied for any delta_CP and cos(delta_CP) is not forced.
+- **rationale:** The exact algebra supports the TM2 sum rule and mu-tau maximal theta_23 statement, and the cached runner reports PASS=15, FAIL=0 under SHA 2337f4d05c57d6fc03bca7a785f7c5e1256be88bf99f233f042b3f8e5e3009cc. However, the runner only samples nonsingular nonzero s13 values for the CP conclusion and misses the allowed endpoint sin^2(theta_13)=2/3. At that endpoint c12=0, so the factor multiplying cos(delta_CP) is zero and the residual equations do not force maximal CP. Repair target: add the explicit condition c12*s12*s13 != 0, or state the CP conclusion only on the nonsingular physical chamber such as 0 < sin^2(theta_13) < 2/3.
 - **auditor confidence:** high
 
 ### `pmns_uniform_scalar_deformation_boundary_note`

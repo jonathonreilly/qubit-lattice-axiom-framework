@@ -13,7 +13,7 @@
     "audited_conditional": 65,
     "audited_failed": 3,
     "audited_numerical_match": 18,
-    "audited_renaming": 24,
+    "audited_renaming": 25,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_color_automorphism_theorem": 6,
@@ -46,7 +46,7 @@
     "retained_bounded": 607,
     "retained_no_go": 175,
     "retained_pending_chain": 11,
-    "unaudited": 1133
+    "unaudited": 1132
   },
   "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [

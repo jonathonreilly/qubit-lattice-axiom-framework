@@ -105,14 +105,6 @@ regularizer has been fixed.
 
 - No non-zero index is exhibited. The finite boxes tested by the
   runner all produce observed integer index zero.
-  - **Correction pointer (2026-05-28; editorial, audit lane to decide):**
-    `ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md`
-    explains this `index = 0` on the free/flat background as the
-    `eps`-gap (`{eps, D} = 0` => `H(m)^2 = K^2 + m^2 I` => spectral flow 0)
-    plus `chi = 0` (`+/-` pairing) -- NOT a Ginsparg-Wilson / overlap
-    necessity. The downstream U(1)_Y note's "(P1') requires overlap-Dirac
-    (Adams 2002)" attribution is corrected there; the open residual is
-    "exhibit a `chi != 0` / `Q != 0` background".
 - No local-counterterm, Wess-Zumino cohomology, or anomaly-noncanceling
   conclusion is proved here.
 - No continuum limit, Seeley-DeWitt coefficient, or

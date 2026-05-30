@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30.py
+runner_sha256: dbf42f91da43417c02e6e8dc6f7eae164b7bf0ac56c8608773c3b47134f1c50b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+
+========================================================================
+Check 1 - multiset-even under b -> conj(b) (symbolic)
+========================================================================
+[PASS] det M is even in Im(b) (odd part = 0)  (odd=0)
+[PASS] eigenvalue multiset invariant under b -> conj(b) (k: 1<->2)
+
+========================================================================
+Check 2 - real-orthogonal transposition similarity (exact)
+========================================================================
+[PASS] P is a real orthogonal permutation
+[PASS] P C P = C^2 (P reflects the C_3 orbit)
+[PASS] P M(b) P = M(conj b) on the generation triplet  (max=0.0e+00)
+[PASS] (I_L (x) P) H(b) (I_L (x) P) = H(conj b)  (max=0.0e+00)
+[PASS] spectrum of H(b) equals spectrum of H(conj b) (round-then-sort)  (max=0.0e+00)
+
+========================================================================
+Check 3 - Berry curl = 0 for ANY kernel g (symbolic)
+========================================================================
+[PASS] curl( sum_k g(lam_k) d lam_k ) = 0 for arbitrary g  (curl=0)
+
+========================================================================
+Check 4 - det M real under arg(b) winding (no Berry winding)
+========================================================================
+[PASS] det M(|b| e^{i theta}) is real for all theta  (max|Im|/|det|=4.1e-16)
+
+========================================================================
+Check 5 - positive control: detector is sensitive
+========================================================================
+[PASS] retained anti-Hermitian coupling: spectral asymmetry eta = 0  (eta=0)
+[PASS] chiral c-independent deformation: spectral asymmetry eta != 0  (eta=4)
+[PASS] the chiral deformation genuinely breaks Hermiticity
+
+========================================================================
+Summary
+========================================================================
+PASS=12 FAIL=0
+Conjugation-odd Berry coefficient vanishes on the retained circulant
+(field-count 2, Q=1 default); Q=2/3 requires breaking the
+transposition similarity (the chiral import). Positive control eta_chi=4.
+
+----- stderr -----
+

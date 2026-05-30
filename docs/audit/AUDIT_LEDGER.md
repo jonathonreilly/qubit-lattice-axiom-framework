@@ -1194,7 +1194,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `critical_exponents_topology_note_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2814,19 +2813,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
-- **auditor confidence:** high
-
-### `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`
-
-- **Note:** [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Pair-wise CHSH Tsirelson operator-norm bound and Bell-state saturation for dichotomic single-qubit observables on two distinct qubit-lattice sites.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260529-222911-8bb1fa97-chsh_tsirelson_lattice_q`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note asserts the expansion C^2 = (A_1^2 + A_2^2) ⊗ (B_1^2 + B_2^2) + [A_1,A_2] ⊗ [B_1,B_2] and then uses it to obtain ‖C^2‖ ≤ 8.  _(class `A`)_
-- **chain closes:** False — The displayed C^2 identity (4) is false under the note's own CHSH sign convention. Expanding C = A_1⊗(B_1+B_2) + A_2⊗(B_1-B_2) with involutions gives C^2 = 4I - [A_1,A_2]⊗[B_1,B_2], not the note's plus-sign formula.
-- **rationale:** No runner stdout or source is available, so the audit falls back to the note text. The headline Tsirelson bound is standard and is supported by the retained upstream CHSH theorem, but the source note's own displayed load-bearing expansion has the wrong commutator sign for the stated plus/plus/plus/minus CHSH convention. Under the strict formula-inventory rule, a false displayed closed-form identity prevents a clean verdict even if the final inequality could be repaired by replacing equation (4) with the Landau identity.
 - **auditor confidence:** high
 
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`

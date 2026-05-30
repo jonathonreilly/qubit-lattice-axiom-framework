@@ -1,0 +1,20 @@
+loop_slug: chsh-tsirelson-landau-repair-20260530
+status: review_pr_ready
+base: origin/main
+branch: physics-loop/chsh-tsirelson-landau-repair-20260530
+target_claim_id: chsh_tsirelson_lattice_qubits_bound_note_2026-05-20
+target_note: docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md
+target_runner: scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py
+audit_blocker_closed: "repair equation (4) by replacing the displayed C^2 expansion with the correct Landau identity for the note's CHSH convention"
+repo_effective_status_after_pipeline: unaudited
+audit_queue_ready: true
+actual_current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  - "python3 -m py_compile scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py"
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py --force --push-mode none --allow-non-main --concurrency 1"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+next_exact_action: "Open draft review PR for independent audit extraction."

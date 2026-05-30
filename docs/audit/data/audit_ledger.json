@@ -31423,8 +31423,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "The Landau identity S_op^2 = 4I - [\u00c3_0, \u00c3_1][B\u0303_0, B\u0303_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2\u221a2.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_failed",
-      "max_descendant_status_rank": 0,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "66c47193803706d20e4590d7abd81baceb0de9ba98c58cf19e48b2c850de50c0",
       "note_path": "docs/CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that downstream users do not overread the product-state corollary as a derivation that the actual framework Hamiltonian at G=0 preserves separability; that dynamical premise is outside this theorem's algebraic closure.",
@@ -31445,52 +31445,24 @@
       "verdict_rationale": "The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope."
     },
     "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20": {
-      "audit_date": "2026-05-29T22:30:26.540372+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_axiom_premise_note_hash": {
-          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
-        },
-        "dep_claim_scope": {
-          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
-          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
-          "minimal_axioms": null
-        },
-        "dep_claim_type": {
-          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
-          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
-          "minimal_axioms": "meta"
-        },
-        "dep_effective_status": {
-          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
-          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
-          "minimal_axioms": "meta"
-        },
-        "deps": [
-          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
-          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
-          "minimal_axioms"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_failed",
-      "auditor": "codex-cli-gpt-5.5-20260529-222911-8bb1fa97-chsh_tsirelson_lattice_q",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The displayed C^2 identity (4) is false under the note's own CHSH sign convention. Expanding C = A_1\u2297(B_1+B_2) + A_2\u2297(B_1-B_2) with involutions gives C^2 = 4I - [A_1,A_2]\u2297[B_1,B_2], not the note's plus-sign formula.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
-      "claim_scope": "Pair-wise CHSH Tsirelson operator-norm bound and Bell-state saturation for dichotomic single-qubit observables on two distinct qubit-lattice sites.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": "2026-05-29T22:30:26.540372+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -31500,19 +31472,19 @@
         "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_failed",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_failed",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The note asserts the expansion C^2 = (A_1^2 + A_2^2) \u2297 (B_1^2 + B_2^2) + [A_1,A_2] \u2297 [B_1,B_2] and then uses it to obtain \u2016C^2\u2016 \u2264 8.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "5a5f932128dc3d591a15edffaae9920897100c9441c5da7c72c91f5d74d6225d",
+      "note_hash": "0a64cb8652808241a4a4cdef64219c60560fd4d39e2208eae54c97d5d154d16a",
       "note_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "other: repair equation (4) by replacing the displayed C^2 expansion with the correct Landau identity for the note's CHSH convention, then re-audit the norm-bound derivation and saturation witness.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -31631,10 +31603,70 @@
             "total_pass": 0
           },
           "verdict_rationale": "No runner artifacts are available, so the judgment is from note text alone. The load-bearing step is a textbook algebraic norm bound over retained-grade inputs plus the explicitly flagged axiom premise; no external comparator, fitted scale, or renaming step is used. The saturation witness is already contained in the retained structural CHSH authority and is valid on the qubit-pair Hilbert space supplied by A1. The claim is bounded to pair-wise kinematic CHSH structure and does not assert dynamical preparation."
+        },
+        {
+          "archived_at": "2026-05-30T02:52:32.040342+00:00",
+          "archived_for_note_hash": "5a5f932128dc3d591a15edffaae9920897100c9441c5da7c72c91f5d74d6225d",
+          "audit_date": "2026-05-29T22:30:26.540372+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_axiom_premise_note_hash": {
+              "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+            },
+            "dep_claim_scope": {
+              "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+              "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+              "minimal_axioms": null
+            },
+            "dep_claim_type": {
+              "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+              "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+              "minimal_axioms": "meta"
+            },
+            "dep_effective_status": {
+              "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+              "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+              "minimal_axioms": "meta"
+            },
+            "deps": [
+              "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+              "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+              "minimal_axioms"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_failed",
+          "auditor": "codex-cli-gpt-5.5-20260529-222911-8bb1fa97-chsh_tsirelson_lattice_q",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The displayed C^2 identity (4) is false under the note's own CHSH sign convention. Expanding C = A_1\u2297(B_1+B_2) + A_2\u2297(B_1-B_2) with involutions gives C^2 = 4I - [A_1,A_2]\u2297[B_1,B_2], not the note's plus-sign formula.",
+          "claim_scope": "Pair-wise CHSH Tsirelson operator-norm bound and Bell-state saturation for dichotomic single-qubit observables on two distinct qubit-lattice sites.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-29T22:30:26.540372+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The note asserts the expansion C^2 = (A_1^2 + A_2^2) \u2297 (B_1^2 + B_2^2) + [A_1,A_2] \u2297 [B_1,B_2] and then uses it to obtain \u2016C^2\u2016 \u2264 8.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "other: repair equation (4) by replacing the displayed C^2 expansion with the correct Landau identity for the note's CHSH convention, then re-audit the norm-bound derivation and saturation witness.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "No runner stdout or source is available, so the audit falls back to the note text. The headline Tsirelson bound is standard and is supported by the retained upstream CHSH theorem, but the source note's own displayed load-bearing expansion has the wrong commutator sign for the stated plus/plus/plus/minus CHSH convention. Under the strict formula-inventory rule, a false displayed closed-form identity prevents a clean verdict even if the final inequality could be repaired by replacing equation (4) with the Landau identity."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "clean",
+      "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -31642,10 +31674,10 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": null,
+      "runner_path": "scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py",
       "title": "Tsirelson Bound on Lattice Qubit Pairs",
       "transitive_descendants": 0,
-      "verdict_rationale": "No runner stdout or source is available, so the audit falls back to the note text. The headline Tsirelson bound is standard and is supported by the retained upstream CHSH theorem, but the source note's own displayed load-bearing expansion has the wrong commutator sign for the stated plus/plus/plus/minus CHSH convention. Under the strict formula-inventory rule, a false displayed closed-form identity prevents a clean verdict even if the final inequality could be repaired by replacing equation (4) with the Landau identity."
+      "verdict_rationale": null
     },
     "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02": {
       "audit_date": "2026-05-23T01:53:33.625665+00:00",

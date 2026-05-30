@@ -2118,35 +2118,11 @@
     },
     {
       "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "to": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
-    },
-    {
-      "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "to": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+      "to": "minimal_axioms"
     },
     {
       "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
       "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
-    },
-    {
-      "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
-    },
-    {
-      "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "to": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
-    },
-    {
-      "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "to": "luders_rule_from_composition_consistency_note_2026-05-20"
-    },
-    {
-      "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "to": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22"
-    },
-    {
-      "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
-      "to": "minimal_axioms"
     },
     {
       "from": "born_scattering_comparison_note",
@@ -44002,19 +43978,13 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
-        "luders_rule_from_composition_consistency_note_2026-05-20",
-        "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
-        "minimal_axioms"
+        "minimal_axioms",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "helper_runner_paths": [],
       "note_hash": "82ef80be0f3712a075a5f5abfa2a8c0c64e0be1806a66bf322eb6c458e19c0a8",
       "path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "runner_path": "scripts/born_rule_framework_bridge_check.py",
+      "runner_path": null,
       "title": "Born Rule via Gleason\u2013Busch on the Pre-Record Reference State: Bounded Support / Repair Route"
     },
     "born_scattering_comparison_note": {
@@ -60545,7 +60515,7 @@
       "note_hash": "38cf0b410b218f721efad2ff17a889c66ebe2675876593b2e185a949b34c59a4",
       "path": "docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md",
       "runner_path": "scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py",
-      "title": "KMS Fermionic Brydges Majorant - Finite Framework Majorant Repair"
+      "title": "Kroschinsky-Marchetti-Salmhofer Fermionic Brydges Majorant \u2014 External Narrow Theorem"
     },
     "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08": {
       "claim_id": "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",

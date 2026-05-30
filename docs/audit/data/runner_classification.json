@@ -1644,18 +1644,6 @@
       "dominant_class": null,
       "runner": "scripts/born_compare_modular_central_ln.py"
     },
-    "born_rule_from_gleason_busch_derivation_note_2026-05-20": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 3,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/born_rule_framework_bridge_check.py"
-    },
     "born_scattering_comparison_note": {
       "assert_count": 0,
       "counts": {
@@ -29434,21 +29422,6 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "exists": true
-    },
-    "scripts/born_rule_framework_bridge_check.py": {
-      "assert_count": 1,
-      "claims": [
-        "born_rule_from_gleason_busch_derivation_note_2026-05-20"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 3,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
       "exists": true
     },
     "scripts/broad_surrogate_point_source_compare.py": {

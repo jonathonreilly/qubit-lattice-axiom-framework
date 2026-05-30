@@ -1,0 +1,9 @@
+[PASS] C1_exact_frobenius_norm_2_over_sqrt_Delta
+[PASS] C2_jordan_bound_Delta_ge_m2_plus_4overpi2_psq
+[PASS] C3_integrand_L1_while_Phi_not_L1
+[PASS] C4_smeared_pairing_converges_Oa2
+[PASS] C5_nonconverging_covariance_control
+[PASS] C6_dominated_convergence_interchange
+  C4 smeared-pairing errors (a=0.4,0.2,0.1,0.05): 3.274e-03, 8.048e-04, 2.003e-04, 5.003e-05
+  C5 control: mis-scaled errors 5.020e-03, 4.250e-03, 4.177e-03, 4.167e-03; correct 3.274e-03, 8.048e-04, 2.003e-04, 5.003e-05; final ratio 83.3x
+SCORECARD PASS=6 FAIL=0

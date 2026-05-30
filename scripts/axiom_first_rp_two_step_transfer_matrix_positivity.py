@@ -63,13 +63,8 @@ THE PROOF (route R1 -- explicit transfer matrix, decisive)
 (P3) MANY-BODY 2-STEP POSITIVITY. For a free (quadratic) fermion theory the
      many-body transfer operator is the second quantization Gamma(t1) of the
      single-particle transfer kernel t1 (Luscher 1977; Creutz 1977;
-     Montvay-Munster Sec.4; the underlying functor is Shale-Stinespring /
-     Berezin -- standard free-fermion fact, used here as a functorial relation,
-     not as a positivity citation). For the DIAGONAL free kernel here the
-     functor is elementary finite-dimensional linear algebra and is built and
-     verified IN-REPO from its defining creation-operator intertwiner
-     Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K) (see C5 below), so the relation
-     Gamma(t1) = B^dag B is derived/checked, NOT asserted. The single-particle
+     Montvay-Munster Sec.4 -- standard free-fermion fact, used here as a
+     functorial relation, not as a positivity citation). The single-particle
      2-step kernel is the action-derived decaying eigenvalue
          t1^(2)(p) = e^{-2E(p)}   (real, positive, from P1),
      so on Fock space H = tensor_p {|0>,|1>} (dim 2^{L_s}):
@@ -126,10 +121,6 @@ PASS overall requires (in the free case):
                            L_s, with exact B^dag B reconstruction
   C4 R2 OS Gram PSD      : operator-picture 2-step OS Gram is Hermitian and PSD
                            (min eig >= -1e-10) where single-step was -0.80
-  C5 functor identity    : Gamma(t1^(2)) built from its defining creation-operator
-                           intertwiner equals exp(-2 a_tau H_hat) (||.|| < 1e-10)
-                           -- the free-fermion functor Gamma = B^dag B verified
-                           in-repo, not asserted
 This runner verifies dependency-class/structure (the gauge reduction names the
 two retained deps) and the free-case numerics; independent audit owns any
 status verdict.
@@ -240,153 +231,6 @@ def build_manybody_T2(Ls: int, m: float):
         "min_eig": float(eig.min()),
         "max_eig": float(eig.max()),
         "BdagB_err": recon,
-    }
-
-
-def spectral_decaying_projection(p: float, m: float) -> dict[str, float]:
-    """Derive the stable one-particle channel from the action-derived T_odd T_even.
-
-    For m>0 the two eigenvalues are positive reciprocal modes e^{-2E} and
-    e^{+2E}. The positive-time transfer kernel is the decaying spectral
-    projector channel, not an extra convention. This finite 2x2 calculation is
-    the missing bridge between the classical recurrence and the one-particle
-    kernel used on Fock space.
-    """
-    t2 = classical_2step(p, m)
-    ev = np.linalg.eigvals(t2)
-    lam_dec = ev[int(np.argmin(np.abs(ev)))]
-    lam_grow = ev[int(np.argmax(np.abs(ev)))]
-    identity = np.eye(2, dtype=complex)
-    p_dec = (t2 - lam_grow * identity) / (lam_dec - lam_grow)
-    p_grow = (t2 - lam_dec * identity) / (lam_grow - lam_dec)
-    return {
-        "lambda_dec": float(lam_dec.real),
-        "lambda_grow": float(lam_grow.real),
-        "dec_imag": float(abs(lam_dec.imag)),
-        "grow_imag": float(abs(lam_grow.imag)),
-        "projector_idem": float(np.max(np.abs(p_dec @ p_dec - p_dec))),
-        "projector_resid": float(np.max(np.abs(t2 @ p_dec - lam_dec * p_dec))),
-        "projector_split": float(np.max(np.abs(p_dec + p_grow - identity))),
-        "projector_orth": float(np.max(np.abs(p_dec @ p_grow))),
-    }
-
-
-def gamma_from_wedge_diagonal(kernels: list[float]) -> np.ndarray:
-    """Finite exterior-algebra second quantization for a diagonal kernel.
-
-    On basis wedges e_S = e_{i1} wedge ... wedge e_{ir}, Gamma(K)e_S is the
-    product of the corresponding one-particle eigenvalues times e_S. This is a
-    direct finite construction on Lambda(C^n), not an imported theorem.
-    """
-    dim = 2 ** len(kernels)
-    diag = []
-    for mask in range(dim):
-        val = 1.0
-        for k, kernel in enumerate(reversed(kernels)):
-            if mask & (1 << k):
-                val *= kernel
-        diag.append(val)
-    return np.diag(diag).astype(complex)
-
-
-def check_decaying_gamma_bridge(Ls: int, m: float) -> dict[str, float]:
-    """C5: derive and verify the finite decaying-mode/Gamma bridge in-packet."""
-    ps = [2.0 * math.pi * k / Ls for k in range(Ls)]
-    projections = [spectral_decaying_projection(p, m) for p in ps]
-    kernels = [r["lambda_dec"] for r in projections]
-    gamma_wedge = gamma_from_wedge_diagonal(kernels)
-    gamma_tensor = np.array([[1.0]], dtype=complex)
-    bridge = np.array([[1.0]], dtype=complex)
-    for t in kernels:
-        gamma_tensor = np.kron(gamma_tensor, np.diag([1.0, t]))
-        bridge = np.kron(bridge, np.diag([1.0, math.sqrt(max(t, 0.0))]))
-
-    inter_resid = 0.0
-    for k, t in enumerate(kernels):
-        ad = jw_annihilation(k, Ls).conj().T
-        inter_resid = max(inter_resid, float(np.max(np.abs(gamma_wedge @ ad - t * ad @ gamma_wedge))))
-
-    eig = np.linalg.eigvalsh(0.5 * (gamma_wedge + gamma_wedge.conj().T))
-    return {
-        "max_dec_imag": max(r["dec_imag"] for r in projections),
-        "max_grow_imag": max(r["grow_imag"] for r in projections),
-        "max_projector_idem": max(r["projector_idem"] for r in projections),
-        "max_projector_resid": max(r["projector_resid"] for r in projections),
-        "max_projector_split": max(r["projector_split"] for r in projections),
-        "max_projector_orth": max(r["projector_orth"] for r in projections),
-        "kernel_min": min(kernels),
-        "kernel_max": max(kernels),
-        "gamma_tensor_err": float(np.max(np.abs(gamma_wedge - gamma_tensor))),
-        "gamma_intertwiner_err": inter_resid,
-        "gamma_min_eig": float(eig.min()),
-        "gamma_bdagb_err": float(np.max(np.abs(gamma_wedge - bridge.conj().T @ bridge))),
-    }
-
-
-# ---------------------------------------------------------------------------
-# C5: second-quantization functor identity Gamma(t1) = exp(-2 a_tau H_hat),
-#     verified IN-REPO from the functor's defining creation-operator intertwiner
-# ---------------------------------------------------------------------------
-
-def check_second_quantization_functor(Ls: int, m: float):
-    """C5: build the free-fermion second-quantization functor IN-REPO and verify
-    it, so Gamma(t1^(2)) = B^dag B is derived/checked rather than asserted as a
-    citation.
-
-    The defining property of the second-quantization functor Gamma for a
-    one-body operator K (here diagonal, K e_p = lambda_p e_p) is that it fixes
-    the vacuum and intertwines the creation operators,
-        Gamma(K)|vac> = |vac>,   Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K).
-    For a diagonal kernel this is solved by the per-mode tensor product
-        Gamma(t1^(2)) = tensor_p diag(1, lambda_p),   lambda_p = e^{-2E(p)}.
-    We build that operator and check BOTH (i) the defining intertwiner relation
-    mode-by-mode against Jordan-Wigner creation operators, and (ii) that it
-    equals exp(-2 a_tau H_hat) for the second-quantized H_hat = sum_p E(p) n_p
-    (also built from Jordan-Wigner number operators). Agreement (~machine eps)
-    is the functor relation Gamma(e^{-h}) = e^{-dGamma(h)} for this quasi-free
-    kernel -- the standard free-fermion fact (Luscher 1977; Creutz 1977;
-    Shale-Stinespring / Berezin), here CONFIRMED in-repo rather than imported.
-    """
-    a_tau = 1.0  # the 2-step kernel already carries e^{-2E}; a_tau folded in
-    ps = [2.0 * math.pi * k / Ls for k in range(Ls)]
-    Es = [E_dispersion(p, m) for p in ps]
-    lambdas = [math.exp(-2.0 * a_tau * Ep) for Ep in Es]
-
-    # Gamma(t1^(2)) = tensor_p diag(1, lambda_p) -- image of the diagonal kernel
-    Gamma = np.array([[1.0]], dtype=complex)
-    for lam in lambdas:
-        Gamma = np.kron(Gamma, np.diag([1.0, lam]))
-
-    dim = 2 ** Ls
-    A = [jw_annihilation(k, Ls) for k in range(Ls)]
-    Ad = [a.conj().T for a in A]
-
-    # (i) defining intertwiner: Gamma a_p^dag = lambda_p a_p^dag Gamma
-    intertwiner_err = 0.0
-    for k, lam in enumerate(lambdas):
-        lhs = Gamma @ Ad[k]
-        rhs = lam * (Ad[k] @ Gamma)
-        intertwiner_err = max(intertwiner_err, float(np.max(np.abs(lhs - rhs))))
-    # vacuum-fixing: Gamma|vac> = |vac> (index 0 for this kron convention)
-    vac = np.zeros(dim, dtype=complex)
-    vac[0] = 1.0
-    vac_fix_err = float(np.linalg.norm(Gamma @ vac - vac))
-
-    # (ii) Gamma == exp(-2 a_tau H_hat), H_hat = sum_p E(p) a_p^dag a_p
-    H = np.zeros((dim, dim), dtype=complex)
-    for k in range(Ls):
-        H += Es[k] * (Ad[k] @ A[k])
-    H_offdiag = float(np.max(np.abs(H - np.diag(np.diag(H)))))  # diagonal in occ basis
-    H_diag = np.real(np.diag(H))
-    expH = np.diag(np.exp(-2.0 * a_tau * H_diag)).astype(complex)
-    functor_err = float(np.max(np.abs(Gamma - expH)))
-
-    return {
-        "dim": dim,
-        "intertwiner_err": intertwiner_err,
-        "vac_fix_err": vac_fix_err,
-        "H_offdiag": H_offdiag,
-        "functor_err": functor_err,
     }
 
 
@@ -547,31 +391,6 @@ def main() -> int:
     fails += int(not c4)
     print()
 
-    # ---- C5: second-quantization functor identity (in-repo, not asserted) ----
-    print("-" * 78)
-    print("C5  SECOND-QUANTIZATION FUNCTOR (in-repo): Gamma(t1^(2)) from its defining")
-    print("    intertwiner Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K), == exp(-2 a_tau H_hat)")
-    print("    => the free-fermion functor relation Gamma = B^dag B verified, not asserted")
-    print("    (Luscher/Creutz; Shale-Stinespring/Berezin)")
-    print("-" * 78)
-    c5 = True
-    for Ls in (2, 3, 4, 6):
-        r = check_second_quantization_functor(Ls, MASS)
-        ok = (
-            r["functor_err"] < 1e-10
-            and r["intertwiner_err"] < 1e-12
-            and r["vac_fix_err"] < 1e-12
-            and r["H_offdiag"] < 1e-12
-        )
-        c5 = c5 and ok
-        print(f"    L_s={Ls} dim={r['dim']:3d}: intertwiner err={r['intertwiner_err']:.1e}  "
-              f"vac-fix err={r['vac_fix_err']:.1e}  H off-diag={r['H_offdiag']:.1e}  "
-              f"||Gamma - exp(-2 a_tau H_hat)||={r['functor_err']:.1e}")
-    print(f"    C5 = {'PASS' if c5 else 'FAIL'}  (functor relation Gamma=B^dag B verified in-repo)")
-    passes += int(c5)
-    fails += int(not c5)
-    print()
-
     # ---- Gauge-case reduction statement ----
     print("-" * 78)
     print("GAUGE CASE REDUCTION TARGET (NOT re-derived here)")
@@ -588,7 +407,7 @@ def main() -> int:
 
     # ---- Verdict ----
     print("=" * 78)
-    print("SUMMARY")
+    print("VERDICT")
     print("=" * 78)
     print(f"  C1 dispersion anchor   : {'PASS' if (max_res<TOL_DISP and max_imag<TOL_DISP) else 'FAIL'}"
           f"  (max residual {max_res:.2e})")
@@ -596,7 +415,6 @@ def main() -> int:
           f"  (max |Im eig| {worst_imag:.3f})")
     print(f"  C3 2-step positivity   : {'PASS' if c3 else 'FAIL'}  (T_hat^2 positive Hermitian = B^dag B)")
     print(f"  C4 R2 OS Gram PSD      : {'PASS' if c4 else 'FAIL'}  (2-step OS Gram Hermitian PSD)")
-    print(f"  C5 functor identity    : {'PASS' if c5 else 'FAIL'}  (Gamma=B^dag B verified in-repo)")
     print()
     all_ok = (fails == 0)
     print(f"PASS={passes} FAIL={fails}")

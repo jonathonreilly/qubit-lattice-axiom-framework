@@ -1,10 +1,10 @@
 # g_bare Hilbert–Schmidt Rigidity Theorem (R1–R3 Bounded Algebraic Core)
 
 **Date:** 2026-05-07 (original); 2026-05-27 (R4/R5 narrowed out of scope).
-**Type:** bounded_theorem
+**Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome.
-**Primary runner:** [`scripts/frontier_g_bare_audit_residual_closure.py`](../scripts/frontier_g_bare_audit_residual_closure.py)
+**Primary runner:** [`scripts/frontier_g_bare_hs_rigidity_narrow.py`](../scripts/frontier_g_bare_hs_rigidity_narrow.py)
 
 ## 2026-05-27 Scope Repair
 
@@ -199,26 +199,59 @@ theorem, not from `cl3_color_automorphism_theorem`), and **(iii)** the joint
 trace–Casimir rigidity (a *two-form* statement that is not a
 consequence of the *one-form* canonical-basis statement).
 
-In particular:
+In particular, the repaired core uses:
 
-- `cl3_color_automorphism_theorem` says "the canonical Gell-Mann
-  generators have `Tr(T_a T_b) = δ/2`." That is a *value* statement on
-  a *specific basis*.
-- The present theorem says "the Hilbert–Schmidt **form** is unique up
-  to scalar, and no `c ≠ ±1` preserves both the form and the Casimir."
-  That is a *structural* statement on the *form itself*, true in any
-  basis.
+1. Simplicity of `su(3)` to make the Ad-invariant Hilbert-Schmidt form unique
+   up to the overall scalar `N_F`.
+2. Schur's lemma plus trace evaluation on the fundamental block:
 
-The two-form joint rigidity is the genuine independent content; the
-canonical basis values are merely a convenient witness.
+   ```text
+   sum_a T_a T_a = (8/3) N_F I_3.
+   ```
 
-## 6. Verification
+   In the canonical witness `N_F = 1/2`, this gives `C_F = 4/3`.
+3. A scalar dilation `T_a -> c T_a` sends both the trace Gram and quadratic
+   Casimir by the same factor `c^2`. Therefore no real `c != +/-1` preserves
+   the pair `(Tr(T_a T_b), sum_a T_a T_a)` simultaneously.
+
+Equivalently, scalar dilation is not a continuous automorphism of the fixed
+trace-Casimir structure.
+
+## Non-Binding Former Claims
+
+The previous source also included:
+
+- a claim that connection rescaling is only coordinate redundancy on the same
+  physical connection;
+- a claim that Wilson small-`a` matching routes any non-canonical basis
+  rescaling into the Wilson coefficient `beta`;
+- downstream wording about this row closing an absolute or physical
+  `g_bare = 1` derivation.
+
+Those statements are not part of this row's binding claim. They require
+separate retained-grade bridge theorems for physical connection equivalence,
+the Wilson action surface, and matching/routing. This row must not be cited as
+authority for those claims.
+
+## Direct Dependencies
+
+| Authority | Role |
+|---|---|
+| [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md) | supplies the framework Hilbert-space setting used by the row |
+| [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md) | supplies the concrete `Cl(3) -> End(V) -> su(3)` structural surface used here; independent audit owns whether that context is sufficient as load-bearing authority |
+| [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) | companion Casimir value/context; this repaired note also recomputes the finite matrix identity directly |
+
+The repaired claim does not need a physical Wilson matching premise.
+
+## Verification
+
+Run:
 
 ```bash
-python3 scripts/frontier_g_bare_audit_residual_closure.py
+python3 scripts/frontier_g_bare_hs_rigidity_narrow.py
 ```
 
-Verifies, in `Section H`:
+The runner verifies:
 
 1. (R1) The Hilbert–Schmidt form `B_HS` on `g_conc ⊂ End(V_3)` is
    computed explicitly and shown to be Ad-invariant (numerical Ad
@@ -232,11 +265,9 @@ Verifies, in `Section H`:
    every `c ≠ ±1`, both the trace Gram **and** the Casimir change
    by `c²`, and the canonical pair is recovered ONLY at `c² = 1`.
 
-The runner additionally prints a Wilson-coefficient routing check
-that exhibits `β_new = c² · β_old` under non-canonical basis. That
-output is **non-load-bearing** for the present row's R1-R3 scope; it
-is companion-observation evidence for the out-of-scope R5 claim
-discussed below.
+The runner deliberately does not certify Wilson-coefficient routing,
+physical connection equivalence, or an unconditional `g_bare = 1`
+derivation.
 
 ## Companion observations (out of scope)
 
@@ -280,7 +311,14 @@ consumers must not cite this row for R4-type connection-equivalence
 or R5-type Wilson-action-routing claims; only the R1-R3 bounded
 algebraic core is in load-bearing scope.
 
-## 7. The remaining convention layer (overall scalar `k`)
+Expected certificate:
+
+```text
+SUMMARY: PASS=38 FAIL=0
+RUNNER STATUS: PASS
+```
+
+## Remaining convention layer
 
 The present theorem proves rigidity up to overall scalar — what
 remains a convention is the *choice* of `N_F` (equivalently `k`).
@@ -305,8 +343,9 @@ which makes precise that `g_bare = 1` is a *derived constraint* given
 ```yaml
 target_claim_type: bounded_theorem
 proposed_claim_scope: |
-  Under the framework's fixed Hilbert-space inner product on V = C^8,
-  the Hilbert-Schmidt form on g_conc = su(3) ⊂ End(V) is the unique
+  Under the framework's fixed Hilbert-space inner product on the canonical
+  triplet block inside V = C^8, the Hilbert-Schmidt form on
+  g_conc = su(3) is the unique
   Ad-invariant inner product (Killing rigidity); no real c ≠ ±1
   preserves both the trace Gram and the quadratic Casimir
   simultaneously. The connection-rescaling and Wilson-coefficient
@@ -337,16 +376,11 @@ distinguishing_content_from_2026-05-03: |
   of cl3_color_automorphism_theorem.
 ```
 
-## 9. What this candidate can support after independent audit acceptance
+## Audit Boundary
 
-- The constraint reading of `g_bare = 1` (companion theorem
-  `G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md`).
-- The independent (non-decoration) closure of the rescaling-freedom
-  removal repair target named in
-  `G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`.
-- A future re-audit of `G_BARE_DERIVATION_NOTE.md`,
-  after the independent audit lane has reviewed this row and the companion
-  constraint-vs-convention restatement note.
+This repair is a queue-ready scope repair, not an audit verdict. It adds no
+new axiom, Wilson matching convention, physical selector, fitted value, or
+package-wide `g_bare` promotion.
 
 ## 10. What this theorem does NOT close
 

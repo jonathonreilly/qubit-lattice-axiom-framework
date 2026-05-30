@@ -20656,13 +20656,13 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 2,
-        "C": 0,
+        "B": 0,
+        "C": 2,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "runner": "scripts/signed_gravity_aps_source_action_boundary_repair.py"
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/signed_gravity_aps_locked_source_action_proposal.py"
     },
     "signed_gravity_aps_wald_gauss_bridge_audit_note": {
       "assert_count": 1,
@@ -56466,19 +56466,19 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/signed_gravity_aps_source_action_boundary_repair.py": {
+    "scripts/signed_gravity_aps_locked_source_action_proposal.py": {
       "assert_count": 1,
       "claims": [
         "signed_gravity_aps_locked_source_action_proposal_note"
       ],
       "counts": {
         "A": 0,
-        "B": 2,
-        "C": 0,
+        "B": 0,
+        "C": 2,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/signed_gravity_aps_wald_gauss_bridge_audit.py": {

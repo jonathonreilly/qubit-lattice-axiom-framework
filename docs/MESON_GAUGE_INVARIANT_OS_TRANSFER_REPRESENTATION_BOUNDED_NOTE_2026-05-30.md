@@ -273,7 +273,7 @@ matching operator-side transfer-matrix meson two-point,
    (1/Z_Q) sum_{U in Q} e^{-S_G[U]} det(M[U]) <Theta(F) F>^ferm_U
        = G_operator,Q(F,F) ,
    <Theta(F) F>^ferm connected  =  Tr[ V^dag G_f V G_f ]
-                                =  sum_n e^{-2 E_n} |<n| Ohat_meson |0>|^2  >= 0 ,
+                                =  sum_{j,k} |(Q^dag V Q)_{jk}|^2 (C_BLOCK e^{-2 E_j})(C_BLOCK e^{-2 E_k})  >= 0 ,
 ```
 
 where `G_f = C_BLOCK · Q diag(e^{-2 E_j(U)}) Q^dag` is the forward 2-step block propagator

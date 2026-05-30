@@ -1,55 +1,7 @@
 # Distance Law Breakpoint Note
 
-**Date:** 2026-04-06 (status line rephrased 2026-04-28 per audit-lane
-verdict); 2026-05-28 (finite breakpoint table split from the causal
-architecture-feature diagnosis per audit path (b)).
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-**Status:** bounded **finite breakpoint table** — the per-family `alpha` /
-direction rows, runner-reprinted finite data on the retained families. The
-**causal architecture-feature diagnosis** (which routing features break the
-tail) is **split off as NON-load-bearing**: it is not closed by matched
-ablation computations (see 2026-05-28 repair header). Not a tier-ratifiable
-architecture-feature theorem.
-
-## 2026-05-28 Audit Repair (finite table split from causal diagnosis)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The two direct dependencies are now retained-bounded, but they support
-> only finite portability/sign diagnostic tables and explicitly exclude
-> causal mechanism or architecture-feature diagnosis. This row's primary
-> runner reprints hard-coded alpha/direction rows with no matched ablation
-> computation or provenance assertions for the claimed causal breakpoint
-> mechanism."*
-
-with the offered repair: split the finite breakpoint table from the
-architecture-feature diagnosis, OR add matched ablation
-computations/provenance for each claimed break feature.
-
-This revision takes the **split path** (adding matched-ablation runners for
-each routing feature is substantive new work, out of scope):
-
-- **Load-bearing (in scope):** the **finite breakpoint table** — the
-  per-family `alpha` and direction-fraction rows (grown Fam1/Fam2 anchors
-  plus the alt-connectivity / third / fourth / fifth-radial families). These
-  are finite reprinted measurements; the two retained-bounded deps
-  ([`DISTANCE_LAW_PORTABILITY_NOTE.md`](DISTANCE_LAW_PORTABILITY_NOTE.md),
-  [`SIGN_PORTABILITY_INVARIANT_NOTE.md`](SIGN_PORTABILITY_INVARIANT_NOTE.md))
-  support exactly this finite portability/sign-diagnostic scope.
-- **NON-load-bearing (split off):** the **causal architecture-feature
-  diagnosis** in §"Safe Diagnosis" / §"Final Verdict" — the conclusion that
-  *open directed transport* preserves the tail while *shell-locking /
-  reflection closure / deep-branch routing* break it. This is a **conjectural
-  reading of the finite table**, NOT a closed causal theorem: it would
-  require matched ablation computations (toggle one feature at a time on a
-  fixed base geometry) and audit-clean provenance, neither of which this
-  runner supplies. Those sections are retained as a documented conjecture,
-  governed by this boundary.
-
-No new axiom, import, or retained bridge is introduced. The finite table is
-the load-bearing content; the causal feature attribution stays an explicitly
-non-load-bearing conjecture until matched ablations land.
+**Date:** 2026-04-06 (status line rephrased 2026-04-28 per audit-lane verdict)
+**Status:** bounded narrow breakpoint table — the runner reprints hard-coded `alpha` / direction rows; the architecture-feature diagnosis (open directed vs shell vs reflection vs deep-branch routing) is not closed by matched ablation computations. Cited distance-law portability note is unknown; sign-invariant context is conditional. Not a tier-ratifiable architecture-feature theorem.
 
 ## Artifact Chain
 

@@ -1,6 +1,7 @@
-# SU(3) L_s=3 Cube Exact TN: Treewidth Analysis Shows Naive Contraction Infeasible
+# SU(3) L_s=3 Cube Exact TN: Min-Degree/Min-Fill Treewidth Diagnostic
 
 **Date:** 2026-05-04
+**Date of scope repair:** 2026-05-30
 **Claim type:** bounded_theorem
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane.
@@ -13,19 +14,22 @@ PR #509 confirmed greedy contraction fails at step 82 with a 65 TB intermediate.
 PR #507 had estimated that **treewidth-based** ordering would give a 2 GB
 intermediate (`8^9`) for the L_s=3 PBC cube — fitting the 4 GB budget.
 
-**This PR shows that estimate was wrong by ~20 orders of magnitude.**
+**This PR shows that estimate was wrong by roughly 19 orders of magnitude for
+the two implemented elimination heuristics.**
 
 Computed elimination orders for the link adjacency graph (81 nodes,
 324 edges, all-degree-8 regular):
 
 | Heuristic | Treewidth UB | Max intermediate |
 |---|---:|---:|
-| Min-degree | **29** | `8^30 ≈ 10^28` entries (`1.8 × 10^19` GB) |
-| Min-fill | **29** | `8^30 ≈ 10^28` entries (`1.8 × 10^19` GB) |
+| Min-degree | **29** | `8^30 = 1.2379 × 10^27` entries (`1.84 × 10^19` GiB) |
+| Min-fill | **29** | `8^30 = 1.2379 × 10^27` entries (`1.84 × 10^19` GiB) |
 | Memory budget | — | 4 GB |
 | Excess factor | — | `~ 4.6 × 10^18×` over budget |
 
-Both standard heuristics return **treewidth bound 29**, giving intermediate sizes that exceed any conceivable memory budget by ~20 orders of magnitude.
+Both implemented standard heuristics return **treewidth upper bound 29**,
+giving intermediate sizes that exceed the 4 GB budget by roughly 19 orders of
+magnitude.
 
 ## 1. Why PR #507's estimate was wrong
 
@@ -34,7 +38,7 @@ PR #507 estimated treewidth `~ L² = 9` for the L_s=3 PBC cube — based on the 
 But the relevant graph for tensor-network contraction cost is the **link adjacency graph**: nodes are link tensors, edges are shared cyclic indices. This is a DIFFERENT, denser graph:
 
 - The 3D lattice graph: nodes = sites, edges = links. For L=3 PBC: 27 nodes, 81 edges, treewidth `~ 9`.
-- The link adjacency graph: nodes = **links**, edges = **shared cyclic indices** (= adjacent links in some plaquette). For L=3 PBC: 81 nodes, 324 edges, **treewidth ≥ 29**.
+- The link adjacency graph: nodes = **links**, edges = **shared cyclic indices** (= adjacent links in some plaquette). For L=3 PBC: 81 nodes, 324 edges; the implemented min-degree and min-fill eliminations both have max clique size 30, i.e. treewidth **upper bound 29**.
 
 The link adjacency graph is denser and has higher treewidth than the 3D lattice graph. Min-degree and min-fill heuristics both return 29.
 
@@ -58,7 +62,7 @@ PR #507's three engineering items must be revised:
 | Item | Status (as of this PR) |
 |---|---|
 | 1. Exact (not local) per-plaquette factor | DONE (PR #509) |
-| 2. Treewidth-based contraction order | **CONFIRMED INFEASIBLE** for naive node-elimination on the link adjacency graph |
+| 2. Treewidth-based contraction order | **TESTED HEURISTICS EXCEED BUDGET** for naive node-elimination on the link adjacency graph |
 | 3. Custom contraction engine | DONE (PR #509) |
 
 **New engineering items emerge:**
@@ -68,9 +72,9 @@ PR #507's three engineering items must be revised:
 - **2c. Hierarchical / matrix-product-state ansatz**: approximate the cube's tensor network with a tensor train / MPS structure. Introduces controllable truncation error, which violates exactness.
 - **2d. Adopt opt_einsum**: changes import policy. May find better orderings via path optimization, but unlikely to circumvent the fundamental treewidth bound.
 
-## 4. Theorem statement
+## 4. Bounded diagnostic statement
 
-**Bounded theorem (L_s=3 cube treewidth analysis).** The runner
+**Bounded diagnostic theorem (L_s=3 cube heuristic treewidth analysis).** The runner
 `scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py` builds the
 link adjacency graph for the L_s=3 PBC cube exact tensor-network
 contraction (81 nodes, 324 edges, 8-regular). Both min-degree and
@@ -78,12 +82,12 @@ min-fill elimination heuristics return treewidth upper bound **29**.
 
 The corresponding worst-case intermediate size for naive exact
 contraction is `8^30 ≈ 1.2 × 10^27` complex entries (~ `1.8 × 10^19` GB),
-exceeding any conceivable memory budget by ~20 orders of magnitude.
+exceeding the 4 GB budget by about `4.6 × 10^18`.
 
 This empirically refutes PR #507's estimate that treewidth-based
-ordering would give a 2 GB intermediate. The L_s=3 PBC cube exact
-contraction is **infeasible by naive node-elimination**, regardless of
-the elimination heuristic chosen.
+ordering would give a 2 GB intermediate for these two implemented standard
+heuristics. It does **not** prove a global treewidth lower bound or rule out
+all possible elimination/path-optimization strategies.
 
 ## 5. Path forward
 
@@ -149,9 +153,10 @@ Review boundary: the runner builds the L_s=3 PBC cube link adjacency
 graph and reports that min-degree and min-fill elimination heuristics
 both produce treewidth upper bound 29. That gives a naive exact
 node-elimination intermediate of order `8^30`, far beyond the 4 GB
-budget, and refutes the earlier `8^9` sizing estimate. This note does
-not set an audit verdict, does not compute `<P>(beta=6)`, and does not
-promote the bridge parent chain.
+budget, and refutes the earlier `8^9` sizing estimate for those
+implemented heuristics. This note does not set an audit verdict, does not
+compute `<P>(beta=6)`, does not prove a treewidth lower bound, does not rule
+out all possible path optimizers, and does not promote the bridge parent chain.
 
 ## 8. Cross-references
 

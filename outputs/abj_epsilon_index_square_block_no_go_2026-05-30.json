@@ -1,0 +1,380 @@
+{
+  "claim": "standard staggered epsilon index vanishes on equal-sublattice even periodic Z4 tori",
+  "pass": 45,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "Z4xZ2^3 random U(1): equal epsilon sublattice sizes",
+      "status": "PASS",
+      "detail": "N_+=16, N_-=16"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): D anti-Hermitian",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): eps D eps = -D",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): diagonal parity blocks vanish",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): lower block equals -B^dag",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): BB^dag and B^dagB spectra match including zeros",
+      "status": "PASS",
+      "detail": "max=2.220e-15"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): A_t vanishes at t=0.1",
+      "status": "PASS",
+      "detail": "A_t=-1.210e-14+-3.551e-17i"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): A_t vanishes at t=0.5",
+      "status": "PASS",
+      "detail": "A_t=-4.163e-15+1.344e-17i"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): A_t vanishes at t=1.0",
+      "status": "PASS",
+      "detail": "A_t=1.110e-16+3.123e-17i"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): A_t vanishes at t=2.0",
+      "status": "PASS",
+      "detail": "A_t=3.442e-15+-3.318e-17i"
+    },
+    {
+      "name": "Z4xZ2^3 random U(1): zero-mode multiplicities match",
+      "status": "PASS",
+      "detail": "ker BBdag=0, ker BdagB=0"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): equal epsilon sublattice sizes",
+      "status": "PASS",
+      "detail": "N_+=16, N_-=16"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): D anti-Hermitian",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): eps D eps = -D",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): diagonal parity blocks vanish",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): lower block equals -B^dag",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): BB^dag and B^dagB spectra match including zeros",
+      "status": "PASS",
+      "detail": "max=2.442e-15"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): A_t vanishes at t=0.1",
+      "status": "PASS",
+      "detail": "A_t=-2.665e-15+6.375e-17i"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): A_t vanishes at t=0.5",
+      "status": "PASS",
+      "detail": "A_t=1.943e-16+-1.735e-17i"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): A_t vanishes at t=1.0",
+      "status": "PASS",
+      "detail": "A_t=1.138e-15+1.431e-17i"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): A_t vanishes at t=2.0",
+      "status": "PASS",
+      "detail": "A_t=2.615e-15+-5.150e-18i"
+    },
+    {
+      "name": "Z4xZ2^3 flux U(1): zero-mode multiplicities match",
+      "status": "PASS",
+      "detail": "ker BBdag=2, ker BdagB=2"
+    },
+    {
+      "name": "Z4^4 random U(1): equal epsilon sublattice sizes",
+      "status": "PASS",
+      "detail": "N_+=128, N_-=128"
+    },
+    {
+      "name": "Z4^4 random U(1): D anti-Hermitian",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4^4 random U(1): eps D eps = -D",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4^4 random U(1): diagonal parity blocks vanish",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4^4 random U(1): lower block equals -B^dag",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4^4 random U(1): BB^dag and B^dagB spectra match including zeros",
+      "status": "PASS",
+      "detail": "max=1.066e-14"
+    },
+    {
+      "name": "Z4^4 random U(1): A_t vanishes at t=0.1",
+      "status": "PASS",
+      "detail": "A_t=1.110e-16+-9.286e-17i"
+    },
+    {
+      "name": "Z4^4 random U(1): A_t vanishes at t=0.5",
+      "status": "PASS",
+      "detail": "A_t=-2.109e-15+-8.199e-17i"
+    },
+    {
+      "name": "Z4^4 random U(1): A_t vanishes at t=1.0",
+      "status": "PASS",
+      "detail": "A_t=-4.996e-15+7.593e-17i"
+    },
+    {
+      "name": "Z4^4 random U(1): A_t vanishes at t=2.0",
+      "status": "PASS",
+      "detail": "A_t=-4.968e-15+-3.918e-17i"
+    },
+    {
+      "name": "Z4^4 random U(1): zero-mode multiplicities match",
+      "status": "PASS",
+      "detail": "ker BBdag=0, ker BdagB=0"
+    },
+    {
+      "name": "Z4^4 flux U(1): equal epsilon sublattice sizes",
+      "status": "PASS",
+      "detail": "N_+=128, N_-=128"
+    },
+    {
+      "name": "Z4^4 flux U(1): D anti-Hermitian",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4^4 flux U(1): eps D eps = -D",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4^4 flux U(1): diagonal parity blocks vanish",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4^4 flux U(1): lower block equals -B^dag",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "Z4^4 flux U(1): BB^dag and B^dagB spectra match including zeros",
+      "status": "PASS",
+      "detail": "max=4.441e-15"
+    },
+    {
+      "name": "Z4^4 flux U(1): A_t vanishes at t=0.1",
+      "status": "PASS",
+      "detail": "A_t=2.665e-15+-1.107e-16i"
+    },
+    {
+      "name": "Z4^4 flux U(1): A_t vanishes at t=0.5",
+      "status": "PASS",
+      "detail": "A_t=-5.496e-15+-2.758e-17i"
+    },
+    {
+      "name": "Z4^4 flux U(1): A_t vanishes at t=1.0",
+      "status": "PASS",
+      "detail": "A_t=-7.494e-16+-2.292e-17i"
+    },
+    {
+      "name": "Z4^4 flux U(1): A_t vanishes at t=2.0",
+      "status": "PASS",
+      "detail": "A_t=-2.595e-15+-9.402e-18i"
+    },
+    {
+      "name": "Z4^4 flux U(1): zero-mode multiplicities match",
+      "status": "PASS",
+      "detail": "ker BBdag=2, ker BdagB=2"
+    },
+    {
+      "name": "rectangular control: epsilon trace can be nonzero only after sublattice imbalance",
+      "status": "PASS",
+      "detail": "N_+-N_-=1, A_t=1.000000000000"
+    }
+  ],
+  "backgrounds": [
+    {
+      "label": "Z4xZ2^3 random U(1)",
+      "dims": [
+        4,
+        2,
+        2,
+        2
+      ],
+      "n_plus": 16,
+      "n_minus": 16,
+      "max_antihermitian_error": 0.0,
+      "max_eps_anticommutator_error": 0.0,
+      "max_block_relation_error": 0.0,
+      "max_spectrum_difference": 2.220446049250313e-15,
+      "zero_multiplicity_plus": 0,
+      "zero_multiplicity_minus": 0,
+      "a_t": {
+        "0.1": {
+          "real": -1.2101430968414206e-14,
+          "imag": -3.550762114890027e-17
+        },
+        "0.5": {
+          "real": -4.163336342344337e-15,
+          "imag": 1.3444106938820255e-17
+        },
+        "1.0": {
+          "real": 1.1102230246251565e-16,
+          "imag": 3.122502256758253e-17
+        },
+        "2.0": {
+          "real": 3.4416913763379853e-15,
+          "imag": -3.3176586478056436e-17
+        }
+      }
+    },
+    {
+      "label": "Z4xZ2^3 flux U(1)",
+      "dims": [
+        4,
+        2,
+        2,
+        2
+      ],
+      "n_plus": 16,
+      "n_minus": 16,
+      "max_antihermitian_error": 0.0,
+      "max_eps_anticommutator_error": 0.0,
+      "max_block_relation_error": 0.0,
+      "max_spectrum_difference": 2.4424906541753444e-15,
+      "zero_multiplicity_plus": 2,
+      "zero_multiplicity_minus": 2,
+      "a_t": {
+        "0.1": {
+          "real": -2.6645352591003757e-15,
+          "imag": 6.375108774214766e-17
+        },
+        "0.5": {
+          "real": 1.942890293094024e-16,
+          "imag": -1.734723475976807e-17
+        },
+        "1.0": {
+          "real": 1.1379786002407855e-15,
+          "imag": 1.431146867680866e-17
+        },
+        "2.0": {
+          "real": 2.6150956400350367e-15,
+          "imag": -5.149960319306146e-18
+        }
+      }
+    },
+    {
+      "label": "Z4^4 random U(1)",
+      "dims": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "n_plus": 128,
+      "n_minus": 128,
+      "max_antihermitian_error": 0.0,
+      "max_eps_anticommutator_error": 0.0,
+      "max_block_relation_error": 0.0,
+      "max_spectrum_difference": 1.0658141036401503e-14,
+      "zero_multiplicity_plus": 0,
+      "zero_multiplicity_minus": 0,
+      "a_t": {
+        "0.1": {
+          "real": 1.1102230246251565e-16,
+          "imag": -9.286191607338345e-17
+        },
+        "0.5": {
+          "real": -2.1094237467877974e-15,
+          "imag": -8.198770709653275e-17
+        },
+        "1.0": {
+          "real": -4.9960036108132044e-15,
+          "imag": 7.593480965545352e-17
+        },
+        "2.0": {
+          "real": -4.9682480351975755e-15,
+          "imag": -3.9180356008194916e-17
+        }
+      }
+    },
+    {
+      "label": "Z4^4 flux U(1)",
+      "dims": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "n_plus": 128,
+      "n_minus": 128,
+      "max_antihermitian_error": 0.0,
+      "max_eps_anticommutator_error": 0.0,
+      "max_block_relation_error": 0.0,
+      "max_spectrum_difference": 4.440892098500626e-15,
+      "zero_multiplicity_plus": 2,
+      "zero_multiplicity_minus": 2,
+      "a_t": {
+        "0.1": {
+          "real": 2.6645352591003757e-15,
+          "imag": -1.106767130200359e-16
+        },
+        "0.5": {
+          "real": -5.495603971894525e-15,
+          "imag": -2.757939276260002e-17
+        },
+        "1.0": {
+          "real": -7.494005416219807e-16,
+          "imag": -2.291732342091235e-17
+        },
+        "2.0": {
+          "real": -2.5951463200613034e-15,
+          "imag": -9.402065714522734e-18
+        }
+      }
+    }
+  ],
+  "rectangular_control": {
+    "n_plus": 5,
+    "n_minus": 4,
+    "a_t": 0.9999999999999967
+  },
+  "verdict": "For every tested even periodic Z4 torus and U(1) background, the standard massless staggered epsilon index vanishes because D has square bipartite block form. Closing P1' requires leaving this same-surface epsilon-index setup: e.g. an imbalanced/curved complex, a taste-singlet/Adams/overlap index operator, or an accepted ABJ premise."
+}

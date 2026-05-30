@@ -5,27 +5,29 @@ branch: physics-loop/source-measure-pcal-retirement-block01-20260530
 base: origin/main
 lock_mode: degraded_branch_local
 lock_note: "scripts/automation_lock.py status failed with permission denied on /Users/jonreilly; work isolated in /private/tmp worktree."
-cycle: 4
-active_route: pcal_retirement_synthesis
-hard_residual: "Do the three exact support routes certify P-cal retirement, or leave one source-measure semantic bridge?"
+cycle: 5
+active_route: record_intervention_theorem
+hard_residual: "Can the last source-measure semantic bridge be made a finite sharp-record representation theorem?"
 files_touched:
   - docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md
   - docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md
   - docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
   - docs/SOURCE_MEASURE_PCAL_RETIREMENT_SYNTHESIS_NOTE_2026-05-30.md
+  - docs/SOURCE_MEASURE_RECORD_INTERVENTION_THEOREM_NOTE_2026-05-30.md
   - scripts/frontier_source_measure_pcal_rn_cocycle.py
   - scripts/frontier_source_measure_pcal_cumulant_mobius.py
   - scripts/frontier_source_measure_sharp_record_tangent_space.py
   - scripts/frontier_source_measure_pcal_retirement_synthesis.py
+  - scripts/frontier_source_measure_record_intervention_theorem.py
   - outputs/source_measure_pcal_rn_cocycle_2026-05-30.json
   - outputs/source_measure_pcal_cumulant_mobius_2026-05-30.json
   - outputs/source_measure_sharp_record_tangent_space_2026-05-30.json
   - outputs/source_measure_pcal_retirement_synthesis_2026-05-30.json
+  - outputs/source_measure_record_intervention_2026-05-30.json
   - .claude/science/physics-loops/source-measure-pcal-retirement-20260530/
 open_imports:
   - "physical source intervention is an RN cocycle over sharp records"
   - "physical scalar response means connected source response"
-  - "physical source intervention means a smooth record-probability intervention"
   - "strict same-source top/W response evidence if RN-cocycle source identification is not accepted"
 forbidden_imports:
   - H_unit
@@ -35,5 +37,5 @@ forbidden_imports:
   - alpha_LM
   - plaquette/u0
   - fitted selector
-next_exact_action: "Commit/push block and open review PR. Continue the goal with either operational record log-likelihood action or strict same-source top/W response if the user wants another block."
+next_exact_action: "Run record-intervention theorem runner, then update stacked PR/branch. If it survives review, this is the proposed-retained source-measure bridge; otherwise demote back to exact-support synthesis."
 stop_condition: "Goal complete only if P-cal is retired or all viable routes are recorded with no-go/support status."

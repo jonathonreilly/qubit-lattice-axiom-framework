@@ -42,3 +42,28 @@ physical source is a smooth sharp-record probability intervention.
 
 That bridge is now narrow enough for audit/foundation review; it is not hidden
 inside the Y_T coefficient.
+
+## Cycle 5 Review
+
+Added
+[`SOURCE_MEASURE_RECORD_INTERVENTION_THEOREM_NOTE_2026-05-30.md`](../../../../docs/SOURCE_MEASURE_RECORD_INTERVENTION_THEOREM_NOTE_2026-05-30.md)
+and `scripts/frontier_source_measure_record_intervention_theorem.py`.
+
+Verification:
+
+- `python3 scripts/frontier_source_measure_record_intervention_theorem.py`:
+  PASS=33 FAIL=0.
+- Full five-runner stack:
+  - RN-cocycle: PASS=56 FAIL=0.
+  - Cumulant/Mobius: PASS=33 FAIL=0.
+  - Sharp-record tangent: PASS=38 FAIL=0.
+  - P-cal synthesis: PASS=36 FAIL=0.
+  - Record-intervention theorem: PASS=33 FAIL=0.
+- `python3 -m py_compile scripts/frontier_source_measure_record_intervention_theorem.py`:
+  PASS.
+- `git diff --check`: PASS.
+
+Cycle 5 disposition: `source-side proposed_retained for finite sharp-record
+source sector`, with independent audit required.  Scope is intentionally
+narrow: generic non-record dynamics, non-smooth interventions, and
+support-changing interventions remain out of scope.

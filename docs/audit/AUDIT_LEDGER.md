@@ -4269,6 +4269,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The source note has been narrowed to the exact finite diagnostic supported by the cached runner output. The load-bearing branch enumeration and action-gap computation are produced by actual constrained optimization and clustering through the included helper chain, with no hard-coded branch representatives in the primary runner. The eta/eta_obs=1 statements are observation-normalized closure readouts on the imposed closure surface, not an independent global prediction. The note explicitly excludes branch completeness, branch uniqueness beyond the sampled starts, and certified-global selector content.
 - **auditor confidence:** high
 
+### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 3x3 Hermitian-pair projector algebra for fixed supplied eigenvector matrices, plus the claimed simple-spectrum intrinsic-to-pair reading.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-fresh-dm-lepto-projector-a`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For fixed supplied eigenvector matrices U_pair=U_e^dagger U_nu is unitary, |U_pair|^2 is doubly stochastic and diagonal-rephasing invariant; the source further claims the packet is intrinsic to a supplied Hermitian pair for simple spectra.  _(class `A`)_
+- **chain closes:** False — The fixed-eigenvector algebra closes by unitary algebra, but the ordered intrinsic projector matrix does not follow from simple spectra alone without an eigenvalue label/order convention; simple spectra leave independent row/column permutation freedom.
+- **rationale:** Issue: The raw fixed-eigenvector algebra closes, but the note also claims a simple-spectrum intrinsic-to-the-pair projector packet without specifying the eigenvalue label/order convention needed to fix rows and columns. Why this blocks: simple non-degenerate spectra determine one-dimensional eigenspaces only up to phase after labels are fixed; without labels or an ordering rule, valid eigenvector matrix permutations change P as an ordered 3x3 packet. Repair target: add an explicit eigenvalue-order/label convention, such as ascending eigenvalues for both matrices, or weaken the intrinsic statement to P only up to independent row/column permutations. Claim boundary until fixed: for fixed supplied eigenvector matrices, U_pair is unitary, |U_pair|^2 is doubly stochastic, and diagonal eigenvector rephasings leave |U_pair|^2 unchanged; degenerate spectra remain explicitly excluded.
+- **auditor confidence:** high
+
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`
 
 - **Note:** [`DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md)

@@ -79026,24 +79026,6 @@
       "runner_path": "scripts/frontier_staggered_axis_symmetry_s3_discriminator.py",
       "title": "Physical Staggered Axis-Symmetry on the hw=1 Triplet is the Full S_3"
     },
-    "staggered_backreaction_live_capture_packet_note_2026-05-29": {
-      "claim_id": "staggered_backreaction_live_capture_packet_note_2026-05-29",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
-      "helper_runner_paths": [
-        "scripts/frontier_staggered_backreaction_capture_closure_harness.py",
-        "scripts/frontier_staggered_backreaction_iterative.py",
-        "scripts/frontier_staggered_backreaction_prototype.py",
-        "scripts/frontier_staggered_cycle_battery.py",
-        "scripts/frontier_staggered_layered_backreaction.py"
-      ],
-      "note_hash": "a34c57e44e5853c3b5289a39c94139af6ddf59c00c9859b39744ffea9f5ec490",
-      "path": "docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md",
-      "runner_path": "scripts/staggered_backreaction_live_capture_packet_check.py",
-      "title": "Staggered Backreaction Live Capture Packet"
-    },
     "staggered_backreaction_note": {
       "claim_id": "staggered_backreaction_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -87777,7 +87759,6 @@
     "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
     "staggered_3d_self_gravity_sign_note_2026-04-11",
     "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-    "staggered_backreaction_live_capture_packet_note_2026-05-29",
     "staggered_backreaction_note",
     "staggered_backreaction_shell_spectral_note",
     "staggered_dag_note_2026-04-10",

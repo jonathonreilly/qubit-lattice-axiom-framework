@@ -564,11 +564,14 @@ transcripts, and audit verdict payloads before landing. The only acceptable
 audit-lane changes from a PR are reviewed source/tooling repairs and
 machine-readable audit/re-audit targeting metadata, such as dispatcher
 sidecars, that do not assert a verdict. After applying the source repair, run
-the local pipeline to verify the row is queued or re-queued as intended. If the
-user requested source-only landing, restore generated audit outputs before
-committing; otherwise commit only pipeline-regenerated outputs from the current
-post-repair tree, and only when they contain no applied audit verdict supplied
-by the PR author.
+the local pipeline to verify the row is queued or re-queued as intended, then
+restore generated audit outputs from `origin/main` before committing. Pipeline
+regeneration of `docs/audit/data/`, `docs/audit/AUDIT_LEDGER.md`,
+`docs/audit/AUDIT_QUEUE.md`, `docs/audit/MISSING_DERIVATION_PROMPTS.md`, and
+`docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` is a VALIDATION step only;
+framework PRs must never ship these files because the merge would overwrite
+the audit lane's ratified state. The audit-loop run on `main` (nightly cron
+plus `audit:` commits) is the sole channel for landing those outputs.
 
 1. Source-note `Status:` prose is not an audit authority. New or touched claim
    notes should use `Type:` / `Claim type:` metadata for intended audit
@@ -600,12 +603,17 @@ git diff --check
 The known graph-cycle warning is acceptable. Any strict-lint error blocks a
 review-loop PASS.
 
-7. **Pipeline-clean PASS gate (hard).** After running the pipeline, the
-   following must hold for review-loop to issue PASS:
+7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
+   for validation, the framework PR must NOT land any pipeline-regenerated
+   audit-lane or effective-status surface. The independent audit lane is the
+   sole authority for these files; a framework PR that ships them creates a
+   dual-source-of-truth and overwrites the audit lane's ratified state at
+   merge. The following must hold for review-loop to issue PASS:
 
 ```bash
-# Must produce no output. Any change here means the branch did not
-# include the regenerated audit-data files; commit them before PASS.
+# Must produce no output. Any change here means the working tree has
+# pipeline-regenerated audit-lane outputs left over from validation;
+# drop them (see below) before recommitting.
 git status --porcelain docs/audit/AUDIT_LEDGER.md \
                        docs/audit/AUDIT_QUEUE.md \
                        docs/audit/data \
@@ -621,10 +629,24 @@ git status --porcelain docs/audit/AUDIT_LEDGER.md \
 ```
 
 If this command prints any lines, BLOCK PASS and instruct the operator to
-commit the regenerated files. When the audit workflow template is installed
-as `.github/workflows/audit.yml`, PR runs enforce the same gate and the nightly
-cron refreshes main; review-loop must not let a branch reach merge with
-pipeline-derived files out of date with the source notes.
+DROP the regenerated files before recommitting:
+
+```bash
+git checkout origin/main -- docs/audit/data/ \
+                            docs/audit/AUDIT_LEDGER.md \
+                            docs/audit/AUDIT_QUEUE.md \
+                            docs/audit/MISSING_DERIVATION_PROMPTS.md \
+                            'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
+                            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+git clean -fd -- docs/audit/data/
+```
+
+The pipeline is run for VALIDATION only — to confirm the source repair is
+ingested and the runner row is queued or re-queued as intended. The
+audit-loop pipeline run on `main` (nightly cron + `audit:` commits) is the
+sole channel for landing the regenerated outputs. Framework PRs that ship
+these files force a destructive overwrite of ratified audit state at merge
+time and have been an active source of broken-row regressions.
 
 8. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
    identify any artifact on the branch that ships a negative claim:

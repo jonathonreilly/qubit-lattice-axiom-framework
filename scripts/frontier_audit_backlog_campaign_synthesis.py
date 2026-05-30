@@ -29,7 +29,8 @@ def section(title):
 section("Part 1: synthesis structure")
 note_text = NOTE_PATH.read_text()
 required = [
-    "Audit-Backlog Retained Campaign — Progress Synthesis",
+    "Audit-Backlog Campaign Progress Synthesis",
+    "Re-Audit Scope",
     "Cycles 1-19",
     "audit-backlog-campaign-20260502",
     "LHCM closure chain",

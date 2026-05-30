@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_support_localization_split_probe.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_support_localization_split_probe.py)
-- [`logs/2026-04-05-source-resolved-support-localization-split-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-support-localization-split-probe.txt)
+- [`scripts/source_resolved_support_localization_split_probe.py`](../scripts/source_resolved_support_localization_split_probe.py)
+- [`logs/2026-04-05-source-resolved-support-localization-split-probe.txt`](../logs/2026-04-05-source-resolved-support-localization-split-probe.txt)
 
 ## Question
 

@@ -5,12 +5,12 @@
 
 ## Artifact Chain
 
-- [`scripts/impact_parameter_lensing_probe.py`](/Users/jonreilly/Projects/Physics/scripts/impact_parameter_lensing_probe.py)
-- [`logs/2026-04-06-impact-parameter-lensing-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-impact-parameter-lensing-probe.txt)
+- [`scripts/impact_parameter_lensing_probe.py`](../scripts/impact_parameter_lensing_probe.py)
+- [`logs/2026-04-06-impact-parameter-lensing-probe.txt`](../logs/2026-04-06-impact-parameter-lensing-probe.txt)
 - retained portability context:
-  - [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
-  - [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
-  - [`logs/2026-04-06-distance-law-grown-geometry.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-distance-law-grown-geometry.txt)
+  - [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](../docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
+  - [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
+  - [`logs/2026-04-06-distance-law-grown-geometry.txt`](../logs/2026-04-06-distance-law-grown-geometry.txt)
 
 ## Question
 

@@ -24,9 +24,9 @@ The review-hardening program has two parts:
 
 Current review-hardening tooling now includes:
 
-- [`scripts/canonical_regression_gate.py`](/Users/jonreilly/Projects/Physics/scripts/canonical_regression_gate.py)
-- [`scripts/reproduction_audit_harness.py`](/Users/jonreilly/Projects/Physics/scripts/reproduction_audit_harness.py)
-- [`docs/CANONICAL_HARNESS_INDEX.md`](/Users/jonreilly/Projects/Physics/docs/CANONICAL_HARNESS_INDEX.md)
+- [`scripts/canonical_regression_gate.py`](../../../../scripts/canonical_regression_gate.py)
+- [`scripts/reproduction_audit_harness.py`](../../../../scripts/reproduction_audit_harness.py)
+- [`docs/CANONICAL_HARNESS_INDEX.md`](../../../../docs/CANONICAL_HARNESS_INDEX.md)
 
 That gate is intentionally modest. It does **not** prove the physics. It does
 provide a cheap code/report drift detector for the retained mirror, lattice,
@@ -75,7 +75,7 @@ Why it matters:
 Current state:
 
 - an initial bounded gate now exists in
-  [`scripts/canonical_regression_gate.py`](/Users/jonreilly/Projects/Physics/scripts/canonical_regression_gate.py)
+  [`scripts/canonical_regression_gate.py`](../../../../scripts/canonical_regression_gate.py)
 - it now covers:
   - exact 2D mirror
   - mirror MI chokepoint chain
@@ -243,7 +243,7 @@ Goal:
 
 Concrete deliverables:
 
-- [ASSUMPTION_DERIVATION_LEDGER.md](/Users/jonreilly/Projects/Physics/docs/ASSUMPTION_DERIVATION_LEDGER.md)
+- [ASSUMPTION_DERIVATION_LEDGER.md](../../../../docs/ASSUMPTION_DERIVATION_LEDGER.md)
 - one shorter table version in any paper/manuscript
 
 Why it matters:
@@ -308,7 +308,7 @@ Goal:
 
 Concrete deliverables:
 
-- [LITERATURE_POSITIONING_NOTE.md](/Users/jonreilly/Projects/Physics/docs/LITERATURE_POSITIONING_NOTE.md)
+- [LITERATURE_POSITIONING_NOTE.md](../../../../docs/LITERATURE_POSITIONING_NOTE.md)
 - explicit future comparisons to:
   - quantum measure / Sorkin
   - open quantum systems / collision models

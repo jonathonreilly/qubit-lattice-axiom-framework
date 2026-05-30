@@ -5,7 +5,7 @@
 
 ## Artifact chain
 
-- [`scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py`](/Users/jonreilly/Projects/Physics/scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py)
+- [`scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py`](../scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py)
 
 ## Imported authority
 

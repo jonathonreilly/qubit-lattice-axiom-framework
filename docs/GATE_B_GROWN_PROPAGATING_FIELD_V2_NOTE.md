@@ -6,8 +6,8 @@ architecture on the moderate-drift row
 
 ## Artifact chain
 
-- [`scripts/gate_b_grown_propagating_field_v2.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_propagating_field_v2.py)
-- [`logs/2026-04-05-gate-b-grown-propagating-field-v2.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-propagating-field-v2.txt)
+- [`scripts/gate_b_grown_propagating_field_v2.py`](../scripts/gate_b_grown_propagating_field_v2.py)
+- [`logs/2026-04-05-gate-b-grown-propagating-field-v2.txt`](../logs/2026-04-05-gate-b-grown-propagating-field-v2.txt)
 
 ## Question
 

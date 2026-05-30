@@ -241,7 +241,7 @@ adjoint-weighted structure appears robust.
 
 Lane M then carried the slope-side `BETA` sweep through the deflection
 harness itself and closed the simple narrow-beam rescue:
-[`/Users/jonreilly/Projects/Physics/docs/LENSING_BETA_SWEEP_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LENSING_BETA_SWEEP_NOTE.md).
+[`/Users/jonreilly/Projects/Physics/docs/LENSING_BETA_SWEEP_NOTE.md`](../docs/LENSING_BETA_SWEEP_NOTE.md).
 The apparent `beta=5` near-`1/b` point is an isolated coarse-grid spike,
 not a stable asymptotic branch.
 

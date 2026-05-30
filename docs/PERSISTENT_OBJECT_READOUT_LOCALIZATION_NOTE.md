@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/persistent_object_readout_localization_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_readout_localization_probe.py)
-- [`logs/2026-04-05-persistent-object-readout-localization.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-persistent-object-readout-localization.txt)
+- [`scripts/persistent_object_readout_localization_probe.py`](../scripts/persistent_object_readout_localization_probe.py)
+- [`logs/2026-04-05-persistent-object-readout-localization.txt`](../logs/2026-04-05-persistent-object-readout-localization.txt)
 
 ## Question
 

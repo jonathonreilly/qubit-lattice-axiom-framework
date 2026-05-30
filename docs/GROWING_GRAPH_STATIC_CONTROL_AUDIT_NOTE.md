@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/growing_graph_dynamic_limit_diag.py`](/Users/jonreilly/Projects/Physics/scripts/growing_graph_dynamic_limit_diag.py)
-- [`logs/2026-04-06-growing-graph-static-control-audit.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-growing-graph-static-control-audit.txt)
+- [`scripts/growing_graph_dynamic_limit_diag.py`](../scripts/growing_graph_dynamic_limit_diag.py)
+- [`logs/2026-04-06-growing-graph-static-control-audit.txt`](../logs/2026-04-06-growing-graph-static-control-audit.txt)
 
 ## What was tested
 

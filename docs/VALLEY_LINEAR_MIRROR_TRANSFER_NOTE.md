@@ -14,8 +14,8 @@ unification theorem.
 
 ## Primary artifact
 
-- Script: [`scripts/valley_linear_mirror_transfer.py`](/Users/jonreilly/Projects/Physics/scripts/valley_linear_mirror_transfer.py)
-- Log: [`logs/2026-04-04-valley-linear-mirror-transfer.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-mirror-transfer.txt)
+- Script: [`scripts/valley_linear_mirror_transfer.py`](../scripts/valley_linear_mirror_transfer.py)
+- Log: [`logs/2026-04-04-valley-linear-mirror-transfer.txt`](../logs/2026-04-04-valley-linear-mirror-transfer.txt)
 
 The replay keeps fixed:
 

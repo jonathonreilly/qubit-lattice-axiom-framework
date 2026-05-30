@@ -7,10 +7,10 @@ This note freezes the bridge between the structured-placement lane and the
 canonical mirror chokepoint readout.
 
 Script:
-[`scripts/structured_chokepoint_bridge.py`](/Users/jonreilly/Projects/Physics/scripts/structured_chokepoint_bridge.py)
+[`scripts/structured_chokepoint_bridge.py`](../scripts/structured_chokepoint_bridge.py)
 
 Log:
-[`logs/2026-04-04-structured-chokepoint-bridge.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-structured-chokepoint-bridge.txt)
+[`logs/2026-04-04-structured-chokepoint-bridge.txt`](../logs/2026-04-04-structured-chokepoint-bridge.txt)
 
 ## Setup
 

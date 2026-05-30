@@ -5,14 +5,14 @@
 
 ## Artifact Chain
 
-- [`scripts/shapiro_unique_discriminator_v2.py`](/Users/jonreilly/Projects/Physics/scripts/shapiro_unique_discriminator_v2.py)
-- [`logs/2026-04-06-shapiro-unique-discriminator-v2.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-shapiro-unique-discriminator-v2.txt)
+- [`scripts/shapiro_unique_discriminator_v2.py`](../scripts/shapiro_unique_discriminator_v2.py)
+- [`logs/2026-04-06-shapiro-unique-discriminator-v2.txt`](../logs/2026-04-06-shapiro-unique-discriminator-v2.txt)
 - retained Shapiro chain:
-  - [`docs/SHAPIRO_DELAY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DELAY_NOTE.md)
-  - [`docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md)
-  - [`archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_COMPLEX_INTERACTION_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_COMPLEX_INTERACTION_NOTE.md)
-  - [`archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
-  - [`docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)
+  - [`docs/SHAPIRO_DELAY_NOTE.md`](../docs/SHAPIRO_DELAY_NOTE.md)
+  - [`docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md`](../docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md)
+  - [`archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_COMPLEX_INTERACTION_NOTE.md`](../archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_COMPLEX_INTERACTION_NOTE.md)
+  - [`archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
+  - [`docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`](../docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)
 
 ## Question
 

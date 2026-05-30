@@ -8,10 +8,10 @@ decision after adding the missing field-strength axis.
 
 Artifacts:
 
-- [`scripts/lattice_field_strength_unification.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_field_strength_unification.py)
-- [`logs/2026-04-03-lattice-field-strength-unification.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-field-strength-unification.txt)
+- [`scripts/lattice_field_strength_unification.py`](../scripts/lattice_field_strength_unification.py)
+- [`logs/2026-04-03-lattice-field-strength-unification.txt`](../logs/2026-04-03-lattice-field-strength-unification.txt)
 - prior fixed-strength decision:
-  [`docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md)
+  [`docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md`](../docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md)
 
 ## Question
 

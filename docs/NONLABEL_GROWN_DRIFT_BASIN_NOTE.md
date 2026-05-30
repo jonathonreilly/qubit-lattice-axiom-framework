@@ -5,11 +5,11 @@
 
 ## Artifact chain
 
-- [`scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py)
-- [`scripts/NONLABEL_GROWN_DRIFT_BASIN_DIAG.py`](/Users/jonreilly/Projects/Physics/scripts/NONLABEL_GROWN_DRIFT_BASIN_DIAG.py)
-- [`logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt)
+- [`scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py`](../scripts/NONLABEL_GROWN_DRIFT_BASIN_SWEEP.py)
+- [`scripts/NONLABEL_GROWN_DRIFT_BASIN_DIAG.py`](../scripts/NONLABEL_GROWN_DRIFT_BASIN_DIAG.py)
+- [`logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt`](../logs/2026-04-06-nonlabel-grown-drift-basin-sweep.txt)
 - retained restore-basin anchor:
-  [`docs/NONLABEL_GROWN_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/NONLABEL_GROWN_BASIN_NOTE.md)
+  [`docs/NONLABEL_GROWN_BASIN_NOTE.md`](../docs/NONLABEL_GROWN_BASIN_NOTE.md)
 
 ## Question
 

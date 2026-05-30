@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/broken_graph_action_power_robustness.py`](/Users/jonreilly/Projects/Physics/scripts/broken_graph_action_power_robustness.py)
-- Log: [`logs/2026-04-04-broken-graph-action-power-robustness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-broken-graph-action-power-robustness.txt)
+- Script: [`scripts/broken_graph_action_power_robustness.py`](../scripts/broken_graph_action_power_robustness.py)
+- Log: [`logs/2026-04-04-broken-graph-action-power-robustness.txt`](../logs/2026-04-04-broken-graph-action-power-robustness.txt)
 
 This note tests a narrow claim:
 
@@ -80,9 +80,9 @@ This note is intentionally narrower than the earlier inverse-problem memo:
 
 Read this with:
 
-- [`docs/INVERSE_PROBLEM_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/INVERSE_PROBLEM_NOTE.md)
-- [`docs/ACTION_UNIQUENESS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ACTION_UNIQUENESS_NOTE.md)
-- [`docs/ACTION_POWER_SCALING_SWEEP_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ACTION_POWER_SCALING_SWEEP_NOTE.md)
+- [`docs/INVERSE_PROBLEM_NOTE.md`](../docs/INVERSE_PROBLEM_NOTE.md)
+- [`docs/ACTION_UNIQUENESS_NOTE.md`](../docs/ACTION_UNIQUENESS_NOTE.md)
+- [`docs/ACTION_POWER_SCALING_SWEEP_NOTE.md`](../docs/ACTION_POWER_SCALING_SWEEP_NOTE.md)
 
 The inverse-problem note asks whether the graph is necessary for gravity to
 exist.

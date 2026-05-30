@@ -7,7 +7,7 @@ seeds `0..3`, `z = {3, 4, 5}`, `drift = 0.2` between exact grid, no-restore
 KNN+floor connectivity, and no-restore geometry-sector forward connectivity.
 Frozen on disk.
 **Status authority:** independent audit lane only.
-**Script:** [`scripts/gate_b_nonlabel_connectivity_v1.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v1.py) (PASS=1, C-class)
+**Script:** [`scripts/gate_b_nonlabel_connectivity_v1.py`](../scripts/gate_b_nonlabel_connectivity_v1.py) (PASS=1, C-class)
 
 ## Audit boundary (2026-05-10)
 
@@ -19,11 +19,11 @@ supported by that runner output.
 
 The conditional grade comes from non-retained one-hop dependencies:
 
-- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
+- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](../docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
   (`audit_status: audited_conditional`) — bounded weak-connectivity replay,
   the no-restore KNN+floor negative this row's geometry-sector candidate
   is contrasted against. Conditional.
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
   (`audit_status: audited_conditional`) — far-field Gate B reference whose
   primitive-to-physical-gravity bridge is itself flagged. Conditional.
 
@@ -34,8 +34,8 @@ conditional on the upstream rows.
 
 ## Artifact chain
 
-- [`scripts/gate_b_nonlabel_connectivity_v1.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v1.py)
-- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v1.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-nonlabel-connectivity-v1.txt)
+- [`scripts/gate_b_nonlabel_connectivity_v1.py`](../scripts/gate_b_nonlabel_connectivity_v1.py)
+- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v1.txt`](../logs/2026-04-05-gate-b-nonlabel-connectivity-v1.txt)
 
 ## Question
 
@@ -82,9 +82,9 @@ The bounded statement is:
 
 Read this together with:
 
-- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
+- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](../docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
   (`audit_status: audited_conditional`) — bounded weak-connectivity replay; one-hop dep.
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
   (`audit_status: audited_conditional`) — far-field Gate B reference; one-hop dep.
 
 The bounded numerical picture this note frozen-replays:

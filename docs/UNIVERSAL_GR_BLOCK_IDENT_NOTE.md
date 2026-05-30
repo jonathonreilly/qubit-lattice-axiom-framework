@@ -17,7 +17,7 @@ rank-1 `trace ↔ shear` mixer.
 
 That is **not** the current live direct-universal blocker on the invariant
 `PL S^3 x R` background. The exact invariant-background result is now in
-[UNIVERSAL_GR_ISOTROPIC_SCHUR_LOCALIZATION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_GR_ISOTROPIC_SCHUR_LOCALIZATION_NOTE.md),
+[UNIVERSAL_GR_ISOTROPIC_SCHUR_LOCALIZATION_NOTE.md](../docs/UNIVERSAL_GR_ISOTROPIC_SCHUR_LOCALIZATION_NOTE.md),
 where the `trace ↔ shear` mixer vanishes identically on `diag(a,b,b,b)`.
 
 ## Exact block projectors

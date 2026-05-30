@@ -5,12 +5,12 @@
 
 ## Artifact chain
 
-- [`scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py`](/Users/jonreilly/Projects/Physics/scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py)
-- [`logs/2026-04-06-unification-basin-failure.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-unification-basin-failure.txt)
+- [`scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py`](../scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py)
+- [`logs/2026-04-06-unification-basin-failure.txt`](../logs/2026-04-06-unification-basin-failure.txt)
 - retained row-level positives:
-  - [`docs/NONLABEL_GROWN_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/NONLABEL_GROWN_BASIN_NOTE.md)
-  - [`docs/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md)
-  - [`docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md)
+  - [`docs/NONLABEL_GROWN_BASIN_NOTE.md`](../docs/NONLABEL_GROWN_BASIN_NOTE.md)
+  - [`docs/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md`](../docs/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md)
+  - [`docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md`](../docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md)
 
 ## Question
 

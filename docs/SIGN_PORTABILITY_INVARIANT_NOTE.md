@@ -5,13 +5,13 @@
 
 ## Artifact Chain
 
-- [`scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py)
-- [`logs/2026-04-06-sign-portability-invariant.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-sign-portability-invariant.txt)
-- registered runner-cache output: [`logs/runner-cache/SIGN_PORTABILITY_INVARIANT_COMPARE.txt`](/Users/jonreilly/Projects/Physics/logs/runner-cache/SIGN_PORTABILITY_INVARIANT_COMPARE.txt)
+- [`scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py`](../scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py)
+- [`logs/2026-04-06-sign-portability-invariant.txt`](../logs/2026-04-06-sign-portability-invariant.txt)
+- registered runner-cache output: [`logs/runner-cache/SIGN_PORTABILITY_INVARIANT_COMPARE.txt`](../logs/runner-cache/SIGN_PORTABILITY_INVARIANT_COMPARE.txt)
 - first-principles derivation within one family (load-bearing dependency for the four gates):
-  [`docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md)
-- retained family notes: [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md), [`docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md), [`docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md), [`docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md), [`docs/FOURTH_FAMILY_QUADRANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FOURTH_FAMILY_QUADRANT_NOTE.md)
-- holdout confirmation: [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md), [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md), [`docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md)
+  [`docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](../docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md)
+- retained family notes: [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](../archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md), [`docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md`](../docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md), [`docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md`](../docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md), [`docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md`](../docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md), [`docs/FOURTH_FAMILY_QUADRANT_NOTE.md`](../docs/FOURTH_FAMILY_QUADRANT_NOTE.md)
+- holdout confirmation: [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md`](../archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md), [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md`](../archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md), [`docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md`](../docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md)
 
 ### Primary runner behavior (2026-05-09)
 
@@ -24,7 +24,7 @@ measurement code directly. It checks the four invariant gates on each
 row at the same row-level thresholds used in Block 2. This block is
 the numerical-side companion to the algebraic / leading-order proofs
 in
-[`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md).
+[`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](../docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md).
 
 **Block 2 — cross-family corollary check.** As before, the runner
 reads the registered per-row outputs of each one-hop family runner
@@ -93,7 +93,7 @@ The load-bearing claim "across the retained sign-law basins, the
 signed-control fixed point survives" is not a free-standing cross-note
 comparison.  It is now backed by a first-principles derivation within
 ONE retained sign-law family (the second grown family), in
-[`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md).
+[`SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`](../docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md).
 
 That note derives the four gates from the action and the
 source-construction map: G1 and G2 as exact algebraic identities at

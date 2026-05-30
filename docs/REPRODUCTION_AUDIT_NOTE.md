@@ -10,7 +10,7 @@ mistaking exploratory drivers for canonical harnesses.
 
 Run:
 
-[`scripts/reproduction_audit_harness.py`](/Users/jonreilly/Projects/Physics/scripts/reproduction_audit_harness.py)
+[`scripts/reproduction_audit_harness.py`](../scripts/reproduction_audit_harness.py)
 
 Default behavior:
 
@@ -65,9 +65,9 @@ the evidence chain stays fixed on disk.
 
 Use this note together with:
 
-- [`docs/CANONICAL_HARNESS_INDEX.md`](/Users/jonreilly/Projects/Physics/docs/CANONICAL_HARNESS_INDEX.md)
-- [`docs/START_HERE.md`](/Users/jonreilly/Projects/Physics/docs/START_HERE.md)
-- [`docs/LEGACY_EXPLORATORY_DRIVERS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LEGACY_EXPLORATORY_DRIVERS_NOTE.md)
+- [`docs/CANONICAL_HARNESS_INDEX.md`](../docs/CANONICAL_HARNESS_INDEX.md)
+- [`docs/START_HERE.md`](../docs/START_HERE.md)
+- [`docs/LEGACY_EXPLORATORY_DRIVERS_NOTE.md`](../docs/LEGACY_EXPLORATORY_DRIVERS_NOTE.md)
 
 The point is to make it obvious which scripts are retained harnesses and which
 ones are still exploratory drivers.

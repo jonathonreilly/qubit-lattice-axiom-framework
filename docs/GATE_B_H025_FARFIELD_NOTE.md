@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_h025_farfield.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_farfield.py)
-- [`logs/2026-04-05-gate-b-h025-farfield.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-farfield.txt)
+- [`scripts/gate_b_h025_farfield.py`](../scripts/gate_b_h025_farfield.py)
+- [`logs/2026-04-05-gate-b-h025-farfield.txt`](../logs/2026-04-05-gate-b-h025-farfield.txt)
 
 ## Question
 
@@ -39,9 +39,9 @@ The result to reject if it fails is:
 
 Read this together with:
 
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
 
 If the h=0.25 row stays clean, it strengthens the generated-geometry story by
 showing the far-field package survives refinement in a smaller bounded family.

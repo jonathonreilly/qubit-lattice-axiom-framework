@@ -5,8 +5,8 @@
 
 ## Artifact Chain
 
-- [`scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py)
-- [`logs/2026-04-06-fourth-family-quadrant.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fourth-family-quadrant.txt)
+- [`scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py`](../scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py)
+- [`logs/2026-04-06-fourth-family-quadrant.txt`](../logs/2026-04-06-fourth-family-quadrant.txt)
 
 ## Question
 

@@ -5,10 +5,10 @@
 
 ## Artifact Chain
 
-- [`scripts/ALT_CONNECTIVITY_FAMILY_FM_TRANSFER.py`](/Users/jonreilly/Projects/Physics/scripts/ALT_CONNECTIVITY_FAMILY_FM_TRANSFER.py)
-- [`logs/2026-04-06-alt-connectivity-family-fm-transfer.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-alt-connectivity-family-fm-transfer.txt)
-- [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
-- [`docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md)
+- [`scripts/ALT_CONNECTIVITY_FAMILY_FM_TRANSFER.py`](../scripts/ALT_CONNECTIVITY_FAMILY_FM_TRANSFER.py)
+- [`logs/2026-04-06-alt-connectivity-family-fm-transfer.txt`](../logs/2026-04-06-alt-connectivity-family-fm-transfer.txt)
+- [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](../docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
+- [`docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md`](../docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md)
 
 ## Question
 

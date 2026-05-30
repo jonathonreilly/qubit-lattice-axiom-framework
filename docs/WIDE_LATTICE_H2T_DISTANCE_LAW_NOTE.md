@@ -6,8 +6,8 @@ ordered 3D `1/L^2` family
 
 ## Artifact chain
 
-- [`scripts/wide_lattice_h2t_distance_replay.py`](/Users/jonreilly/Projects/Physics/scripts/wide_lattice_h2t_distance_replay.py)
-- [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-wide-lattice-h2t-distance-replay.txt)
+- [`scripts/wide_lattice_h2t_distance_replay.py`](../scripts/wide_lattice_h2t_distance_replay.py)
+- [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](../logs/2026-04-05-wide-lattice-h2t-distance-replay.txt)
 
 ## Question
 

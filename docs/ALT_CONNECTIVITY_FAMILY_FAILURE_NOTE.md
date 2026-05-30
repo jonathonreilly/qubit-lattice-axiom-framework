@@ -5,10 +5,10 @@
 
 ## Artifact Chain
 
-- [`scripts/ALT_CONNECTIVITY_FAMILY_FAILURE_AUDIT.py`](/Users/jonreilly/Projects/Physics/scripts/ALT_CONNECTIVITY_FAMILY_FAILURE_AUDIT.py)
-- [`logs/2026-04-06-alt-connectivity-family-failure-audit.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-alt-connectivity-family-failure-audit.txt)
-- [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
-- [`docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md)
+- [`scripts/ALT_CONNECTIVITY_FAMILY_FAILURE_AUDIT.py`](../scripts/ALT_CONNECTIVITY_FAMILY_FAILURE_AUDIT.py)
+- [`logs/2026-04-06-alt-connectivity-family-failure-audit.txt`](../logs/2026-04-06-alt-connectivity-family-failure-audit.txt)
+- [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](../docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
+- [`docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md`](../docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md)
 
 ## Question
 

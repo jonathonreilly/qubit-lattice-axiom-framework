@@ -5,11 +5,11 @@
 
 ## Artifact Chain
 
-- [`scripts/gate_b_grown_wavefield_companion.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_wavefield_companion.py)
-- [`docs/GATE_B_GROWN_WAVEFIELD_COMPANION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_WAVEFIELD_COMPANION_NOTE.md)
+- [`scripts/gate_b_grown_wavefield_companion.py`](../scripts/gate_b_grown_wavefield_companion.py)
+- [`docs/GATE_B_GROWN_WAVEFIELD_COMPANION_NOTE.md`](../docs/GATE_B_GROWN_WAVEFIELD_COMPANION_NOTE.md)
 - exact-lattice controls:
-  - [`docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md)
-  - [`docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md)
+  - [`docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md`](../docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md)
+  - [`docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md`](../docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md)
 
 ## Question
 

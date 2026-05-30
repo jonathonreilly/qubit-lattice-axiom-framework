@@ -6,8 +6,8 @@ harness
 
 ## Artifact chain
 
-- [`scripts/exact_lattice_complex_action_carryover.py`](/Users/jonreilly/Projects/Physics/scripts/exact_lattice_complex_action_carryover.py)
-- [`logs/2026-04-05-exact-lattice-complex-action-carryover.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-exact-lattice-complex-action-carryover.txt)
+- [`scripts/exact_lattice_complex_action_carryover.py`](../scripts/exact_lattice_complex_action_carryover.py)
+- [`logs/2026-04-05-exact-lattice-complex-action-carryover.txt`](../logs/2026-04-05-exact-lattice-complex-action-carryover.txt)
 
 ## Question
 

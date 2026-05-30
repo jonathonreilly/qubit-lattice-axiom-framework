@@ -6,8 +6,8 @@ grown row
 
 ## Artifact chain
 
-- [`scripts/gate_b_grown_wavefield_companion.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_wavefield_companion.py)
-- [`logs/2026-04-05-gate-b-grown-wavefield-companion.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-wavefield-companion.txt)
+- [`scripts/gate_b_grown_wavefield_companion.py`](../scripts/gate_b_grown_wavefield_companion.py)
+- [`logs/2026-04-05-gate-b-grown-wavefield-companion.txt`](../logs/2026-04-05-gate-b-grown-wavefield-companion.txt)
 
 ## Question
 

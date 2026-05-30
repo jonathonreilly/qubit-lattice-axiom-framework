@@ -5,7 +5,7 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_self_consistent_generated_transfer.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_self_consistent_generated_transfer.py)
+- [`scripts/source_resolved_self_consistent_generated_transfer.py`](../scripts/source_resolved_self_consistent_generated_transfer.py)
 
 ## Question
 

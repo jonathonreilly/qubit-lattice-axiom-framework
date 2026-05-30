@@ -5,10 +5,10 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_green_robustness.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_green_robustness.py)
-- [`logs/2026-04-05-source-resolved-green-robustness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-green-robustness.txt)
-- [`docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
-- [`docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md)
+- [`scripts/source_resolved_green_robustness.py`](../scripts/source_resolved_green_robustness.py)
+- [`logs/2026-04-05-source-resolved-green-robustness.txt`](../logs/2026-04-05-source-resolved-green-robustness.txt)
+- [`docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
+- [`docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`](../docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md)
 
 ## Question
 

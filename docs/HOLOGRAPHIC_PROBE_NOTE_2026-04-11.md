@@ -12,7 +12,7 @@ sense.
 
 ## Runner
 
-- Script: [frontier_holographic_probe.py](/Users/jonreilly/Projects/Physics/scripts/frontier_holographic_probe.py)
+- Script: [frontier_holographic_probe.py](../scripts/frontier_holographic_probe.py)
 - Environment: `/tmp/physics_venv`
 - Date rerun: `2026-04-18`
 

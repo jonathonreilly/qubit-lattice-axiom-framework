@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py`](/Users/jonreilly/Projects/Physics/scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py)
-- [`logs/2026-04-05-electrostatics-grown-sign-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-electrostatics-grown-sign-law.txt)
+- [`scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py`](../scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py)
+- [`logs/2026-04-05-electrostatics-grown-sign-law.txt`](../logs/2026-04-05-electrostatics-grown-sign-law.txt)
 
 ## Question
 

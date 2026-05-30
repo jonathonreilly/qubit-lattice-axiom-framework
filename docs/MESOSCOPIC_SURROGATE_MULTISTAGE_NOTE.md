@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/mesoscopic_surrogate_multistage.py`](/Users/jonreilly/Projects/Physics/scripts/mesoscopic_surrogate_multistage.py)
-- Log: [`logs/2026-04-04-mesoscopic-surrogate-multistage.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-mesoscopic-surrogate-multistage.txt)
+- Script: [`scripts/mesoscopic_surrogate_multistage.py`](../scripts/mesoscopic_surrogate_multistage.py)
+- Log: [`logs/2026-04-04-mesoscopic-surrogate-multistage.txt`](../logs/2026-04-04-mesoscopic-surrogate-multistage.txt)
 
 This note asks the next honest question after the one-step backreaction probe:
 
@@ -54,10 +54,10 @@ The important limit is unchanged:
 
 This note should be read together with:
 
-- [`MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md)
-- [`BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md)
-- [`MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md)
-- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
+- [`MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md`](../docs/MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md)
+- [`BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md`](../docs/BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md)
+- [`MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md`](../docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md)
+- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](../docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
 
 Together they now say:
 

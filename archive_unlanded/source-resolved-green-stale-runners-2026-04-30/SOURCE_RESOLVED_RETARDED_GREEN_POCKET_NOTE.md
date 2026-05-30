@@ -15,8 +15,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_retarded_green_pocket.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_retarded_green_pocket.py)
-- [`logs/2026-04-05-source-resolved-retarded-green-pocket.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-retarded-green-pocket.txt)
+- [`scripts/source_resolved_retarded_green_pocket.py`](../../scripts/source_resolved_retarded_green_pocket.py)
+- [`logs/2026-04-05-source-resolved-retarded-green-pocket.txt`](../../logs/2026-04-05-source-resolved-retarded-green-pocket.txt)
 
 ## Question
 

@@ -15,12 +15,12 @@
 
 ## Artifact Chain
 
-- [`docs/SHAPIRO_DELAY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DELAY_NOTE.md)
-- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
-- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
-- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
-- [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
-- [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
+- [`docs/SHAPIRO_DELAY_NOTE.md`](../../docs/SHAPIRO_DELAY_NOTE.md)
+- [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../../docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
+- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](../../docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
+- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](../../docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
+- [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](../../docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
+- [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](../../docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
 - retained scaling result anchor:
   - commit `1730b52` (`feat(shapiro): phase scales as s^1.000 (linear in mass), proportional to k`)
 

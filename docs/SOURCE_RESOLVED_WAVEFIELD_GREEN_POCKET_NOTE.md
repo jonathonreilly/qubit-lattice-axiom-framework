@@ -5,7 +5,7 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_wavefield_green_pocket.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_wavefield_green_pocket.py)
+- [`scripts/source_resolved_wavefield_green_pocket.py`](../scripts/source_resolved_wavefield_green_pocket.py)
 
 ## Question
 

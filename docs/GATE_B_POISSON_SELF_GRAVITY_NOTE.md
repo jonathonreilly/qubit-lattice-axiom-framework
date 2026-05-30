@@ -6,7 +6,7 @@ retained grown row
 
 ## Artifact chain
 
-- [`scripts/gate_b_poisson_self_gravity_probe.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_poisson_self_gravity_probe.py)
+- [`scripts/gate_b_poisson_self_gravity_probe.py`](../scripts/gate_b_poisson_self_gravity_probe.py)
 
 ## Question
 

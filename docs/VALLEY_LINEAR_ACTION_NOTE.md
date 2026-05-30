@@ -17,11 +17,11 @@ or a finished convergence theorem.
 
 Script:
 
-- [`scripts/valley_linear_same_harness_compare.py`](/Users/jonreilly/Projects/Physics/scripts/valley_linear_same_harness_compare.py)
+- [`scripts/valley_linear_same_harness_compare.py`](../scripts/valley_linear_same_harness_compare.py)
 
 Log:
 
-- [`logs/2026-04-04-valley-linear-same-harness-compare.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-same-harness-compare.txt)
+- [`logs/2026-04-04-valley-linear-same-harness-compare.txt`](../logs/2026-04-04-valley-linear-same-harness-compare.txt)
 
 The comparison keeps fixed:
 
@@ -38,7 +38,7 @@ It changes only the action law:
 
 ## Heavier companion script
 
-- [`scripts/lattice_3d_valley_linear_card.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_valley_linear_card.py)
+- [`scripts/lattice_3d_valley_linear_card.py`](../scripts/lattice_3d_valley_linear_card.py)
 
 This heavier script audits the valley-linear lane more broadly, but it should
 be read carefully:

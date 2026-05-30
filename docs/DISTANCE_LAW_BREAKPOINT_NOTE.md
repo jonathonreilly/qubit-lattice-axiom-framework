@@ -53,10 +53,10 @@ non-load-bearing conjecture until matched ablations land.
 
 ## Artifact Chain
 
-- [`scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py)
-- [`logs/DISTANCE_LAW_BREAKPOINT_COMPARE.txt`](/Users/jonreilly/Projects/Physics/logs/DISTANCE_LAW_BREAKPOINT_COMPARE.txt)
-- baseline portability result: [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
-- sign invariant context: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+- [`scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py`](../scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py)
+- [`logs/DISTANCE_LAW_BREAKPOINT_COMPARE.txt`](../logs/DISTANCE_LAW_BREAKPOINT_COMPARE.txt)
+- baseline portability result: [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](../docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
+- sign invariant context: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
 
 ## Question
 

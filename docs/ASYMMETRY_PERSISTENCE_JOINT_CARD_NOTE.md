@@ -43,10 +43,10 @@ The missing check was a one-page same-graph card with:
 ## Setup
 
 Script:
-[scripts/asymmetry_persistence_joint_card.py](/Users/jonreilly/Projects/Physics/scripts/asymmetry_persistence_joint_card.py)
+[scripts/asymmetry_persistence_joint_card.py](../scripts/asymmetry_persistence_joint_card.py)
 
 Log:
-[logs/2026-04-02-asymmetry-persistence-joint-card.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-02-asymmetry-persistence-joint-card.txt)
+[logs/2026-04-02-asymmetry-persistence-joint-card.txt](../logs/2026-04-02-asymmetry-persistence-joint-card.txt)
 
 Parameters:
 

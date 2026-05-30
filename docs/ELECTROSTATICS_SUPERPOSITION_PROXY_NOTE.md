@@ -21,7 +21,7 @@ The review-safe claim surface is intentionally small:
 
 ## Primary artifact
 
-- Script: [`scripts/electrostatics_superposition_proxy.py`](/Users/jonreilly/Projects/Physics/scripts/electrostatics_superposition_proxy.py)
+- Script: [`scripts/electrostatics_superposition_proxy.py`](../scripts/electrostatics_superposition_proxy.py)
 
 ## What was tested
 

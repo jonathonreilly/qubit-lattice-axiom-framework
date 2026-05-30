@@ -35,8 +35,8 @@ The key correction is physical indexing:
 
 Primary artifact chain:
 
-- [`scripts/lattice_3d_dense_refinement_reconciliation.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_dense_refinement_reconciliation.py)
-- [`logs/2026-04-04-lattice-3d-dense-refinement-reconciliation.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-lattice-3d-dense-refinement-reconciliation.txt)
+- [`scripts/lattice_3d_dense_refinement_reconciliation.py`](../scripts/lattice_3d_dense_refinement_reconciliation.py)
+- [`logs/2026-04-04-lattice-3d-dense-refinement-reconciliation.txt`](../logs/2026-04-04-lattice-3d-dense-refinement-reconciliation.txt)
 
 ## Comparison result
 

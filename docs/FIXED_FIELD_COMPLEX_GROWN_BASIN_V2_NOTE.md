@@ -5,9 +5,9 @@
 
 ## Artifact chain
 
-- [`scripts/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2.py`](/Users/jonreilly/Projects/Physics/scripts/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2.py)
-- [`logs/2026-04-06-fixed-field-complex-grown-basin-v2.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fixed-field-complex-grown-basin-v2.txt)
-- [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
+- [`scripts/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2.py`](../scripts/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2.py)
+- [`logs/2026-04-06-fixed-field-complex-grown-basin-v2.txt`](../logs/2026-04-06-fixed-field-complex-grown-basin-v2.txt)
+- [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
 
 ## Question
 

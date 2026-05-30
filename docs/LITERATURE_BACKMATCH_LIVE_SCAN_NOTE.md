@@ -6,7 +6,7 @@
 ## Scope
 
 This note is the live literature backmatch pass for the retained query pack in
-[`docs/EXPERIMENT_BACKMATCH_QUERY_PACK_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/EXPERIMENT_BACKMATCH_QUERY_PACK_NOTE.md).
+[`docs/EXPERIMENT_BACKMATCH_QUERY_PACK_NOTE.md`](../docs/EXPERIMENT_BACKMATCH_QUERY_PACK_NOTE.md).
 The goal is not to prove prior validation. The goal is to identify at most one
 credible published outcome that lines up with a retained prediction and to keep
 the distinction between resemblance and verification explicit.

@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/composite_source_additivity_2d_cross_family.py`](/Users/jonreilly/Projects/Physics/scripts/composite_source_additivity_2d_cross_family.py)
-- Log: [`logs/2026-04-04-composite-source-additivity-2d-cross-family.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-composite-source-additivity-2d-cross-family.txt)
+- Script: [`scripts/composite_source_additivity_2d_cross_family.py`](../scripts/composite_source_additivity_2d_cross_family.py)
+- Log: [`logs/2026-04-04-composite-source-additivity-2d-cross-family.txt`](../logs/2026-04-04-composite-source-additivity-2d-cross-family.txt)
 
 This is the smallest real cross-family check for the valley-linear additivity
 story:
@@ -81,7 +81,7 @@ This is the right kind of second-family support for the Newton-selection lane:
 ## Relation to the main derivation lane
 
 This note extends the bounded additivity story in
-[COMPOSITE_SOURCE_ADDITIVITY_NOTE.md](/Users/jonreilly/Projects/Physics/docs/COMPOSITE_SOURCE_ADDITIVITY_NOTE.md):
+[COMPOSITE_SOURCE_ADDITIVITY_NOTE.md](../docs/COMPOSITE_SOURCE_ADDITIVITY_NOTE.md):
 
 - 3D retained family: additivity frozen
 - 2D ordered family: additivity still frozen

@@ -5,9 +5,9 @@
 
 ## Primary artifact chain
 
-- Script: [`scripts/action_universality_probe.py`](/Users/jonreilly/Projects/Physics/scripts/action_universality_probe.py)
-- Log: [`logs/2026-04-04-action-universality-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-action-universality-probe.txt)
-- Companion sweep: [`docs/ACTION_POWER_SCALING_SWEEP_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ACTION_POWER_SCALING_SWEEP_NOTE.md)
+- Script: [`scripts/action_universality_probe.py`](../scripts/action_universality_probe.py)
+- Log: [`logs/2026-04-04-action-universality-probe.txt`](../logs/2026-04-04-action-universality-probe.txt)
+- Companion sweep: [`docs/ACTION_POWER_SCALING_SWEEP_NOTE.md`](../docs/ACTION_POWER_SCALING_SWEEP_NOTE.md)
 
 This is a bounded replay on one fixed retained family:
 

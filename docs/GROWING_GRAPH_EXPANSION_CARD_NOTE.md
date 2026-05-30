@@ -7,8 +7,8 @@
 
 ## Artifact chain
 
-- [`scripts/growing_graph_expansion_card.py`](/Users/jonreilly/Projects/Physics/scripts/growing_graph_expansion_card.py)
-- [`logs/2026-04-05-growing-graph-expansion-card.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-growing-graph-expansion-card.txt)
+- [`scripts/growing_graph_expansion_card.py`](../scripts/growing_graph_expansion_card.py)
+- [`logs/2026-04-05-growing-graph-expansion-card.txt`](../logs/2026-04-05-growing-graph-expansion-card.txt)
 
 ## Question
 

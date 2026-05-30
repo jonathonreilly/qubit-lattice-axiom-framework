@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/mesoscopic_surrogate_source_2d.py`](/Users/jonreilly/Projects/Physics/scripts/mesoscopic_surrogate_source_2d.py)
-- Log: [`logs/2026-04-04-mesoscopic-surrogate-source-2d.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-mesoscopic-surrogate-source-2d.txt)
+- Script: [`scripts/mesoscopic_surrogate_source_2d.py`](../scripts/mesoscopic_surrogate_source_2d.py)
+- Log: [`logs/2026-04-04-mesoscopic-surrogate-source-2d.txt`](../logs/2026-04-04-mesoscopic-surrogate-source-2d.txt)
 
 This note asks a narrower question than the relaunch controls:
 
@@ -77,10 +77,10 @@ So the surrogate-source idea is:
 
 This note should be read together with:
 
-- [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
-- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
+- [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](../docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
+- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](../docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
 
 Together they say:
 

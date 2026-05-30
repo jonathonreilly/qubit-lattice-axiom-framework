@@ -8,9 +8,9 @@ This file is a branch-summary memo, not a canonical project-state note.
 Use it as a historical import record only. For the current review-safe read of
 the kernel branch on `main`, prefer:
 
-- [`docs/CONTINUUM_CONVERGENCE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CONTINUUM_CONVERGENCE_NOTE.md)
-- [`docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md)
-- [`docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md)
+- [`docs/CONTINUUM_CONVERGENCE_NOTE.md`](../docs/CONTINUUM_CONVERGENCE_NOTE.md)
+- [`docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md`](../docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md)
+- [`docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md`](../docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md)
 
 ## Historical Branch Results
 

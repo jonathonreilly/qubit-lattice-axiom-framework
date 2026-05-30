@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/persistent_object_compact_inertial_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_compact_inertial_probe.py)
-- Log: [`logs/2026-04-16-persistent-object-compact-inertial-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-16-persistent-object-compact-inertial-probe.txt)
+- Script: [`scripts/persistent_object_compact_inertial_probe.py`](../scripts/persistent_object_compact_inertial_probe.py)
+- Log: [`logs/2026-04-16-persistent-object-compact-inertial-probe.txt`](../logs/2026-04-16-persistent-object-compact-inertial-probe.txt)
 
 ## Question
 

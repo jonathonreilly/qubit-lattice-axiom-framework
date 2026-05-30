@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/directional_b_geometry_normalized_holdout_transfer.py`](/Users/jonreilly/Projects/Physics/scripts/directional_b_geometry_normalized_holdout_transfer.py)
-- Log: [`logs/2026-04-04-directional-b-geometry-normalized-holdout-transfer.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-directional-b-geometry-normalized-holdout-transfer.txt)
+- Script: [`scripts/directional_b_geometry_normalized_holdout_transfer.py`](../scripts/directional_b_geometry_normalized_holdout_transfer.py)
+- Log: [`logs/2026-04-04-directional-b-geometry-normalized-holdout-transfer.txt`](../logs/2026-04-04-directional-b-geometry-normalized-holdout-transfer.txt)
 
 This follow-on keeps the retained directional propagator and the same
 mass-side action observables fixed:
@@ -81,11 +81,11 @@ So the current hierarchy remains:
 
 This note should be read with:
 
-- [`docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](/Users/jonreilly/Projects/Physics/docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md)
-- [`logs/2026-04-01-directional-b-geometry-normalized-compare.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-01-directional-b-geometry-normalized-compare.txt)
-- [`logs/2026-04-01-directional-b-mass-window-transfer.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-01-directional-b-mass-window-transfer.txt)
-- [`logs/2026-04-01-directional-b-asymptotic-bridge-card.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-01-directional-b-asymptotic-bridge-card.txt)
-- [`docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md)
+- [`docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](../docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md)
+- [`logs/2026-04-01-directional-b-geometry-normalized-compare.txt`](../logs/2026-04-01-directional-b-geometry-normalized-compare.txt)
+- [`logs/2026-04-01-directional-b-mass-window-transfer.txt`](../logs/2026-04-01-directional-b-mass-window-transfer.txt)
+- [`logs/2026-04-01-directional-b-asymptotic-bridge-card.txt`](../logs/2026-04-01-directional-b-asymptotic-bridge-card.txt)
+- [`docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md`](../docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md)
 
 Together they now say:
 

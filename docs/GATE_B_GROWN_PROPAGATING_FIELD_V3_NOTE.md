@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_grown_propagating_field_v3.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_propagating_field_v3.py)
-- [`logs/2026-04-05-gate-b-grown-propagating-field-v3.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-propagating-field-v3.txt)
+- [`scripts/gate_b_grown_propagating_field_v3.py`](../scripts/gate_b_grown_propagating_field_v3.py)
+- [`logs/2026-04-05-gate-b-grown-propagating-field-v3.txt`](../logs/2026-04-05-gate-b-grown-propagating-field-v3.txt)
 
 ## Question
 

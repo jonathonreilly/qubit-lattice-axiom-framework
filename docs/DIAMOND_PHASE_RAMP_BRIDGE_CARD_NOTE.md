@@ -5,13 +5,13 @@
 
 ## Artifact Chain
 
-- [`scripts/diamond_phase_ramp_bridge_card.py`](/Users/jonreilly/Projects/Physics/scripts/diamond_phase_ramp_bridge_card.py)
-- [`docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md)
-- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
-- [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
-- [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
-- [`docs/SOURCE_RESOLVED_WAVEFIELD_V2_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_WAVEFIELD_V2_NOTE.md)
-- [`docs/SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md)
+- [`scripts/diamond_phase_ramp_bridge_card.py`](../scripts/diamond_phase_ramp_bridge_card.py)
+- [`docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md`](../docs/DIAMOND_ABSOLUTE_UNIT_BRIDGE_NOTE.md)
+- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](../docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
+- [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](../docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md)
+- [`docs/DIAMOND_SENSOR_PREDICTION_NOTE.md`](../docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
+- [`docs/SOURCE_RESOLVED_WAVEFIELD_V2_NOTE.md`](../docs/SOURCE_RESOLVED_WAVEFIELD_V2_NOTE.md)
+- [`docs/SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md`](../docs/SOURCE_RESOLVED_WAVEFIELD_MECHANISM_NOTE.md)
 
 ## Question
 

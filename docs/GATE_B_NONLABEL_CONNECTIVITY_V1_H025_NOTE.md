@@ -6,8 +6,8 @@ the no-restore grown family
 
 ## Artifact chain
 
-- [`scripts/gate_b_nonlabel_connectivity_v1_h025.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v1_h025.py)
-- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v1-h025.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-nonlabel-connectivity-v1-h025.txt)
+- [`scripts/gate_b_nonlabel_connectivity_v1_h025.py`](../scripts/gate_b_nonlabel_connectivity_v1_h025.py)
+- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v1-h025.txt`](../logs/2026-04-05-gate-b-nonlabel-connectivity-v1-h025.txt)
 
 ## Question
 
@@ -49,8 +49,8 @@ This note is intentionally narrow:
 
 Read this together with:
 
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](../docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
 
 The purpose of this refinement companion is simple:
 

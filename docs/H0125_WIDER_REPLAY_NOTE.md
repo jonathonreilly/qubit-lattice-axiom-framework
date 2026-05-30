@@ -39,7 +39,7 @@ bridge, or does the fixed-family `F~M ~ 0.5` limit persist?
 ## Diagnostic
 
 - new replay script:
-  - [`scripts/lattice_3d_l2_wide_h0125_replay.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_wide_h0125_replay.py)
+  - [`scripts/lattice_3d_l2_wide_h0125_replay.py`](../scripts/lattice_3d_l2_wide_h0125_replay.py)
 - comparison families:
   - `phys_w = 3`
   - `phys_w = 4`
@@ -67,7 +67,7 @@ bridge, or does the fixed-family `F~M ~ 0.5` limit persist?
 Finished bounded no-go on the retained tested row.
 
 - comparison log:
-  - [`logs/2026-04-06-h0125-wide-full-window.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-wide-full-window.txt)
+  - [`logs/2026-04-06-h0125-wide-full-window.txt`](../logs/2026-04-06-h0125-wide-full-window.txt)
 - retained baseline:
   - `phys_w = 3`, `phys_l = 6`, `z = 3.0`, full window
   - `Born = 6.59e-15`
@@ -81,12 +81,12 @@ Finished bounded no-go on the retained tested row.
   - `TOWARD` gravity `+0.010955`
   - `alpha = 0.499`
 - confirmatory probe log:
-  - [`logs/2026-04-06-h0125-wide-full-window-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-wide-full-window-probe.txt)
+  - [`logs/2026-04-06-h0125-wide-full-window-probe.txt`](../logs/2026-04-06-h0125-wide-full-window-probe.txt)
   - same `phys_w = 4`, `phys_l = 6`, `z = 3.0`, full-window row
   - same `alpha = 0.499` on the reduced three-strength sweep
 - shorter-scale scout:
-  - [`docs/H0125_SCALABLE_SCOUT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/H0125_SCALABLE_SCOUT_NOTE.md)
-  - [`logs/2026-04-06-h0125-scalable-scout.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-scalable-scout.txt)
+  - [`docs/H0125_SCALABLE_SCOUT_NOTE.md`](../docs/H0125_SCALABLE_SCOUT_NOTE.md)
+  - [`logs/2026-04-06-h0125-scalable-scout.txt`](../logs/2026-04-06-h0125-scalable-scout.txt)
   - `phys_l = 4`, `phys_w = 3`, full window
   - `alpha = 0.501`, `0.501`, `0.502` across `z = 1.5`, `2.0`, `3.0`
 

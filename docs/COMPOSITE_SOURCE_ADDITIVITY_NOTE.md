@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/composite_source_additivity_harness.py`](/Users/jonreilly/Projects/Physics/scripts/composite_source_additivity_harness.py)
-- Log: [`logs/2026-04-04-composite-source-additivity-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-composite-source-additivity-harness.txt)
+- Script: [`scripts/composite_source_additivity_harness.py`](../scripts/composite_source_additivity_harness.py)
+- Log: [`logs/2026-04-04-composite-source-additivity-harness.txt`](../logs/2026-04-04-composite-source-additivity-harness.txt)
 
 This is a narrow probe on one fixed family:
 
@@ -79,7 +79,7 @@ This strengthens the Newton-selection lane, but only in a bounded way:
 ## Relation to the Newton derivation
 
 This note sharpens Principle 3 in
-[NEWTON_DERIVATION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/NEWTON_DERIVATION_NOTE.md):
+[NEWTON_DERIVATION_NOTE.md](../docs/NEWTON_DERIVATION_NOTE.md):
 
 - stronger than before:
   - valley-linear now has a frozen additivity replay, not just a verbal

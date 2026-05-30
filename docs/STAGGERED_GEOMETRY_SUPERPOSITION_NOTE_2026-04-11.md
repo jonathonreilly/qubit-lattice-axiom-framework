@@ -1,7 +1,7 @@
 # Staggered Geometry Superposition Note — 2026-04-11
 
 **Status:** bounded companion
-**Harness:** [frontier_staggered_geometry_superposition_retained.py](/Users/jonreilly/Projects/Physics/scripts/frontier_staggered_geometry_superposition_retained.py)
+**Harness:** [frontier_staggered_geometry_superposition_retained.py](../scripts/frontier_staggered_geometry_superposition_retained.py)
 
 ## What this is
 

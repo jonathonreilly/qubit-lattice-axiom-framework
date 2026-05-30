@@ -14,18 +14,18 @@ width change.
 
 ## Script
 
-- [`scripts/lattice_3d_l2_wide_h0125_w4_probe.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_wide_h0125_w4_probe.py)
+- [`scripts/lattice_3d_l2_wide_h0125_w4_probe.py`](../scripts/lattice_3d_l2_wide_h0125_w4_probe.py)
 
 ## Status
 
 This helper remains a scouting script, not the retained closeout surface.
 
 - actual closeout logs:
-  - [`logs/2026-04-06-h0125-wide-full-window.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-wide-full-window.txt)
-  - [`logs/2026-04-06-h0125-wide-full-window-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-wide-full-window-probe.txt)
+  - [`logs/2026-04-06-h0125-wide-full-window.txt`](../logs/2026-04-06-h0125-wide-full-window.txt)
+  - [`logs/2026-04-06-h0125-wide-full-window-probe.txt`](../logs/2026-04-06-h0125-wide-full-window-probe.txt)
 
 The finished retained width-4 result came from the targeted replay controls in
-[`scripts/lattice_3d_l2_wide_h0125_replay.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_wide_h0125_replay.py),
+[`scripts/lattice_3d_l2_wide_h0125_replay.py`](../scripts/lattice_3d_l2_wide_h0125_replay.py),
 which kept the physical family at `phys_l = 6` and still returned
 `alpha = 0.499` on the full-window `z = 3.0` row. So the wider-family lane is
 already a bounded no-go on the tested row, and this cheaper helper should stay

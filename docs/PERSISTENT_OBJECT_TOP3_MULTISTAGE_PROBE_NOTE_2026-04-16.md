@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/persistent_object_top3_multistage_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_top3_multistage_probe.py)
-- Log: [`logs/2026-04-16-persistent-object-top3-multistage-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-16-persistent-object-top3-multistage-probe.txt)
+- Script: [`scripts/persistent_object_top3_multistage_probe.py`](../scripts/persistent_object_top3_multistage_probe.py)
+- Log: [`logs/2026-04-16-persistent-object-top3-multistage-probe.txt`](../logs/2026-04-16-persistent-object-top3-multistage-probe.txt)
 
 ## Question
 

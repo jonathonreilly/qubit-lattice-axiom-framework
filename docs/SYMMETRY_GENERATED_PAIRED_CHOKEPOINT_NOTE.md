@@ -7,10 +7,10 @@ This note records the generated symmetry pilot that tries to recover part of
 the mirror-chokepoint benefit without hard-coding mirrored edge copies.
 
 Script:
-[`scripts/symmetry_generated_paired_chokepoint.py`](/Users/jonreilly/Projects/Physics/scripts/symmetry_generated_paired_chokepoint.py)
+[`scripts/symmetry_generated_paired_chokepoint.py`](../scripts/symmetry_generated_paired_chokepoint.py)
 
 Log:
-[`logs/2026-04-03-symmetry-generated-paired-chokepoint-n30.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-symmetry-generated-paired-chokepoint-n30.txt)
+[`logs/2026-04-03-symmetry-generated-paired-chokepoint-n30.txt`](../logs/2026-04-03-symmetry-generated-paired-chokepoint-n30.txt)
 
 ## Question
 

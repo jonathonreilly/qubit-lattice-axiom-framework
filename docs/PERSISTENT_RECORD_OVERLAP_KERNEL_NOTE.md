@@ -33,9 +33,9 @@ This is meant to sit between:
 ## Implemented pilot
 
 - Script:
-  [persistent_record_overlap_kernel.py](/Users/jonreilly/Projects/Physics/scripts/persistent_record_overlap_kernel.py)
+  [persistent_record_overlap_kernel.py](../scripts/persistent_record_overlap_kernel.py)
 - Log:
-  [2026-04-03-persistent-record-overlap-kernel.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-03-persistent-record-overlap-kernel.txt)
+  [2026-04-03-persistent-record-overlap-kernel.txt](../logs/2026-04-03-persistent-record-overlap-kernel.txt)
 
 Default run:
 

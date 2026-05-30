@@ -9,11 +9,11 @@ running elsewhere.
 
 ## Script
 
-[`scripts/lattice_kernel_transfer_norm_probe.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_kernel_transfer_norm_probe.py)
+[`scripts/lattice_kernel_transfer_norm_probe.py`](../scripts/lattice_kernel_transfer_norm_probe.py)
 
 ## Log
 
-[`logs/2026-04-04-lattice-kernel-transfer-norm-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-lattice-kernel-transfer-norm-probe.txt)
+[`logs/2026-04-04-lattice-kernel-transfer-norm-probe.txt`](../logs/2026-04-04-lattice-kernel-transfer-norm-probe.txt)
 
 ## What the probe measures
 
@@ -57,7 +57,7 @@ What it does give us is a bounded local discriminator:
 - that result should be treated as a review-safe warning, not a promoted law
 
 This note should also not be collapsed into the later exploratory
-[`scripts/transfer_norm_and_born.py`](/Users/jonreilly/Projects/Physics/scripts/transfer_norm_and_born.py)
+[`scripts/transfer_norm_and_born.py`](../scripts/transfer_norm_and_born.py)
 branch story. They are different observables, and the transfer-norm selection
 story remains under reconciliation on `main`.
 

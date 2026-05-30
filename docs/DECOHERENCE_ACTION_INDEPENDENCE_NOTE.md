@@ -32,8 +32,8 @@ valley-linear and spent-delay actions at every tested lattice spacing.
 
 Primary artifact:
 
-- [`scripts/decoherence_action_independence.py`](/Users/jonreilly/Projects/Physics/scripts/decoherence_action_independence.py)
-- [`logs/2026-04-04-decoherence-action-independence.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-decoherence-action-independence.txt)
+- [`scripts/decoherence_action_independence.py`](../scripts/decoherence_action_independence.py)
+- [`logs/2026-04-04-decoherence-action-independence.txt`](../logs/2026-04-04-decoherence-action-independence.txt)
 
 | h | d_TV (both) | MI (both) | Decoh (both) | S_norm (both) |
 |---|-------------|-----------|--------------|---------------|
@@ -88,7 +88,7 @@ inlines those load-bearing pieces verbatim from
 the unabridged file remains the canonical source).
 
 Provenance: copied verbatim from
-[`scripts/valley_linear_same_harness_compare.py`](/Users/jonreilly/Projects/Physics/scripts/valley_linear_same_harness_compare.py)
+[`scripts/valley_linear_same_harness_compare.py`](../scripts/valley_linear_same_harness_compare.py)
 on 2026-05-18 as part of the audited-conditional repair campaign for this
 note's `missing_dependency_edge` restricted-packet repair. Lines 47-184 of
 the canonical file.

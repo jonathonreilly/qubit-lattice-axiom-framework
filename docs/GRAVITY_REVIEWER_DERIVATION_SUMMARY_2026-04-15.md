@@ -25,10 +25,10 @@ The retained starting point is the exact weak-field gravity chain on `Z^3`:
 
 Primary authority:
 
-- [POISSON_SELF_GRAVITY_MECHANISM_NOTE.md](/Users/jonreilly/Projects/Physics/docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md)
-- [POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md](/Users/jonreilly/Projects/Physics/docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md)
-- [BROAD_GRAVITY_DERIVATION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/BROAD_GRAVITY_DERIVATION_NOTE.md)
-- [GRAVITY_CLEAN_DERIVATION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GRAVITY_CLEAN_DERIVATION_NOTE.md)
+- [POISSON_SELF_GRAVITY_MECHANISM_NOTE.md](../docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md)
+- [POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md](../docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md)
+- [BROAD_GRAVITY_DERIVATION_NOTE.md](../docs/BROAD_GRAVITY_DERIVATION_NOTE.md)
+- [GRAVITY_CLEAN_DERIVATION_NOTE.md](../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md)
 
 ### 2. Restricted strong-field closure
 
@@ -44,10 +44,10 @@ This is the restricted strong-field theorem:
 
 Primary authority:
 
-- [RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md)
-- [STAR_SUPPORTED_BRIDGE_CLASS_NOTE.md](/Users/jonreilly/Projects/Physics/docs/STAR_SUPPORTED_BRIDGE_CLASS_NOTE.md)
-- [OH_STATIC_CONSTRAINT_LIFT_NOTE.md](/Users/jonreilly/Projects/Physics/docs/OH_STATIC_CONSTRAINT_LIFT_NOTE.md)
-- [OH_SCHUR_BOUNDARY_ACTION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md)
+- [RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md](../docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md)
+- [STAR_SUPPORTED_BRIDGE_CLASS_NOTE.md](../docs/STAR_SUPPORTED_BRIDGE_CLASS_NOTE.md)
+- [OH_STATIC_CONSTRAINT_LIFT_NOTE.md](../docs/OH_STATIC_CONSTRAINT_LIFT_NOTE.md)
+- [OH_SCHUR_BOUNDARY_ACTION_NOTE.md](../docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md)
 
 ### 3. Direct-universal discrete global closure
 
@@ -67,9 +67,9 @@ Its closure stack is:
 
 Primary authority:
 
-- [UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md)
-- [UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md)
-- [UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md)
+- [UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md](../docs/UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md)
+- [UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md](../docs/UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md)
+- [UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md](../docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md)
 
 ### 4. UV-finite partition-density bridge
 
@@ -85,7 +85,7 @@ quantum-gravity-style bridge on the project route:
 
 Primary authority:
 
-- [UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md)
+- [UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md](../docs/UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md)
 
 ### 5. Canonical geometric refinement net
 
@@ -101,7 +101,7 @@ organization:
 
 Primary authority:
 
-- [UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md)
+- [UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md](../docs/UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md)
 
 ### 6. Inverse-limit Gaussian cylinder closure
 
@@ -114,7 +114,7 @@ project route:
 
 Primary authority:
 
-- [UNIVERSAL_QG_INVERSE_LIMIT_CLOSURE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_INVERSE_LIMIT_CLOSURE_NOTE.md)
+- [UNIVERSAL_QG_INVERSE_LIMIT_CLOSURE_NOTE.md](../docs/UNIVERSAL_QG_INVERSE_LIMIT_CLOSURE_NOTE.md)
 
 ### 7. Abstract Gaussian completion
 
@@ -127,7 +127,7 @@ Cameron-Martin completion on the project route:
 
 Primary authority:
 
-- [UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md)
+- [UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md](../docs/UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md)
 
 ### 8. Project-native PL field interface
 
@@ -141,7 +141,7 @@ piecewise-linear field realization on the refinement net:
 
 Primary authority:
 
-- [UNIVERSAL_QG_PL_FIELD_INTERFACE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_PL_FIELD_INTERFACE_NOTE.md)
+- [UNIVERSAL_QG_PL_FIELD_INTERFACE_NOTE.md](../docs/UNIVERSAL_QG_PL_FIELD_INTERFACE_NOTE.md)
 
 ### 9. Project-native PL weak-form closure
 
@@ -154,7 +154,7 @@ system on the refinement net:
 
 Primary authority:
 
-- [UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md)
+- [UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md](../docs/UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md)
 
 ### 10. Project-native PL Sobolev interface
 
@@ -167,7 +167,7 @@ weak-field carrier on the refinement net:
 
 Primary authority:
 
-- [UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md)
+- [UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md](../docs/UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md)
 
 ### 11. Canonical textbook weak/measure closure
 
@@ -180,7 +180,7 @@ Gaussian cylinder object:
 
 Primary authority:
 
-- [UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md)
+- [UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md](../docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md)
 
 ### 12. Smooth local and finite-atlas gravitational identification
 
@@ -194,8 +194,8 @@ already patches on finite atlases:
 
 Primary authority:
 
-- [UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md)
-- [UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md)
+- [UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md](../docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md)
+- [UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md](../docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md)
 
 ### 13. Smooth global weak/Gaussian gravitational solution class
 
@@ -207,7 +207,7 @@ The same route now also closes globally on the chosen smooth realization:
 
 Primary authority:
 
-- [UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md)
+- [UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md](../docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md)
 
 ### 14. Canonical smooth weak/measure equivalence
 
@@ -217,7 +217,7 @@ smooth gravitational coordinates.
 
 Primary authority:
 
-- [UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md)
+- [UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md](../docs/UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md)
 
 ## Exact claim boundaries
 

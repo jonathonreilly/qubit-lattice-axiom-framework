@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/persistent_object_compact_update_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_compact_update_probe.py)
-- [`logs/2026-04-05-persistent-object-compact-update.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-persistent-object-compact-update.txt)
+- [`scripts/persistent_object_compact_update_probe.py`](../scripts/persistent_object_compact_update_probe.py)
+- [`logs/2026-04-05-persistent-object-compact-update.txt`](../logs/2026-04-05-persistent-object-compact-update.txt)
 
 ## Question
 

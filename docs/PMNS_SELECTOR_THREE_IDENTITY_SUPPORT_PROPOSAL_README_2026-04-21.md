@@ -75,8 +75,8 @@ interesting candidate point-selection law
 
 ## Artifacts
 
-- [PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md](/Users/jonreilly/Projects/Physics/docs/PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md)
-- [frontier_pmns_selector_three_identity_support_2026_04_21.py](/Users/jonreilly/Projects/Physics/scripts/frontier_pmns_selector_three_identity_support_2026_04_21.py)
+- [PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md](../docs/PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md)
+- [frontier_pmns_selector_three_identity_support_2026_04_21.py](../scripts/frontier_pmns_selector_three_identity_support_2026_04_21.py)
 
 ## Validation instructions
 

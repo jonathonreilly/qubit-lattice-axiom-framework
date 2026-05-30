@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/graph_phase_diagram_scout.py`](/Users/jonreilly/Projects/Physics/scripts/graph_phase_diagram_scout.py)
-- Log: [`logs/2026-04-05-graph-phase-diagram-scout.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-graph-phase-diagram-scout.txt)
+- Script: [`scripts/graph_phase_diagram_scout.py`](../scripts/graph_phase_diagram_scout.py)
+- Log: [`logs/2026-04-05-graph-phase-diagram-scout.txt`](../logs/2026-04-05-graph-phase-diagram-scout.txt)
 
 ## Question
 
@@ -92,9 +92,9 @@ Why this lane:
 
 Read this with:
 
-- [`docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md)
-- [`docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md)
-- [`docs/EDGE_DELETION_BOUNDARY_SWEEP_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/EDGE_DELETION_BOUNDARY_SWEEP_NOTE.md)
+- [`docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md`](../docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md)
+- [`docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md`](../docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md)
+- [`docs/EDGE_DELETION_BOUNDARY_SWEEP_NOTE.md`](../docs/EDGE_DELETION_BOUNDARY_SWEEP_NOTE.md)
 
 Those notes established that the graph is forgiving but not irrelevant.
 This scout narrows that further:

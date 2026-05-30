@@ -7,12 +7,12 @@
 
 Primary target:
 
-- [`docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
+- [`docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
 
 Evidence chain:
 
-- [`scripts/wide_lattice_h2t_distance_replay.py`](/Users/jonreilly/Projects/Physics/scripts/wide_lattice_h2t_distance_replay.py)
-- [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-wide-lattice-h2t-distance-replay.txt)
+- [`scripts/wide_lattice_h2t_distance_replay.py`](../scripts/wide_lattice_h2t_distance_replay.py)
+- [`logs/2026-04-05-wide-lattice-h2t-distance-replay.txt`](../logs/2026-04-05-wide-lattice-h2t-distance-replay.txt)
 
 ## What Survives
 

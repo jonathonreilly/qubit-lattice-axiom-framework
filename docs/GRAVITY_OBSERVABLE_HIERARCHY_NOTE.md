@@ -168,9 +168,9 @@ rescue the retained 3D barrier failure.
 
 ## Artifact chain
 
-- [`scripts/gravity_observable_hierarchy.py`](/Users/jonreilly/Projects/Physics/scripts/gravity_observable_hierarchy.py)
-- [`logs/2026-04-04-gravity-observable-hierarchy.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-gravity-observable-hierarchy.txt)
-- [`archive_unlanded/lattice-dense-spent-delay-window-salvage-2026-04-30/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/lattice-dense-spent-delay-window-salvage-2026-04-30/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md)
+- [`scripts/gravity_observable_hierarchy.py`](../scripts/gravity_observable_hierarchy.py)
+- [`logs/2026-04-04-gravity-observable-hierarchy.txt`](../logs/2026-04-04-gravity-observable-hierarchy.txt)
+- [`archive_unlanded/lattice-dense-spent-delay-window-salvage-2026-04-30/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md`](../archive_unlanded/lattice-dense-spent-delay-window-salvage-2026-04-30/LATTICE_3D_DENSE_SPENT_DELAY_NOTE.md)
 
 ## Audit boundary (2026-04-28)
 

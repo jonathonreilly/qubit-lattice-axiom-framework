@@ -6,8 +6,8 @@ the retained grown-geometry family
 
 ## Artifact chain
 
-- [`scripts/gate_b_h025_joint_package.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_joint_package.py)
-- [`logs/2026-04-05-gate-b-h025-joint-package.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-joint-package.txt)
+- [`scripts/gate_b_h025_joint_package.py`](../scripts/gate_b_h025_joint_package.py)
+- [`logs/2026-04-05-gate-b-h025-joint-package.txt`](../logs/2026-04-05-gate-b-h025-joint-package.txt)
 
 ## Question
 
@@ -53,8 +53,8 @@ The bounded read should be interpreted as:
 
 Read this together with:
 
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
 
 The h=`0.25` joint replay is the refinement check for the already retained
 `h = 0.5` generated-geometry package. It is not a new architecture, and this

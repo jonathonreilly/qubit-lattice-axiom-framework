@@ -29,7 +29,7 @@ lane using the review-safe three-slit Sorkin quantity with the required `-P(empt
 term.
 
 Script:
-- [`scripts/central_band_born_dense_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/central_band_born_dense_sweep.py)
+- [`scripts/central_band_born_dense_sweep.py`](../scripts/central_band_born_dense_sweep.py)
 
 Harness:
 - corrected three-slit 3D chokepoint graph

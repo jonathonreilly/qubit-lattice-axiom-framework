@@ -5,10 +5,10 @@
 
 ## Artifact chain
 
-- Outer sweep script: [`scripts/persistent_object_blended_readout_outer_transfer_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_blended_readout_outer_transfer_sweep.py)
-- Outer sweep log: [`logs/2026-04-16-persistent-object-blended-readout-outer-transfer-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-16-persistent-object-blended-readout-outer-transfer-sweep.txt)
-- Boundary script: [`scripts/persistent_object_blended_readout_inner_source_boundary_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_blended_readout_inner_source_boundary_probe.py)
-- Boundary log: [`logs/2026-04-16-persistent-object-blended-readout-inner-source-boundary-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-16-persistent-object-blended-readout-inner-source-boundary-probe.txt)
+- Outer sweep script: [`scripts/persistent_object_blended_readout_outer_transfer_sweep.py`](../scripts/persistent_object_blended_readout_outer_transfer_sweep.py)
+- Outer sweep log: [`logs/2026-04-16-persistent-object-blended-readout-outer-transfer-sweep.txt`](../logs/2026-04-16-persistent-object-blended-readout-outer-transfer-sweep.txt)
+- Boundary script: [`scripts/persistent_object_blended_readout_inner_source_boundary_probe.py`](../scripts/persistent_object_blended_readout_inner_source_boundary_probe.py)
+- Boundary log: [`logs/2026-04-16-persistent-object-blended-readout-inner-source-boundary-probe.txt`](../logs/2026-04-16-persistent-object-blended-readout-inner-source-boundary-probe.txt)
 
 ## `_run_mode` helper + boundary cert scope narrowing (load-bearing for restricted packet, inlined 2026-05-18)
 

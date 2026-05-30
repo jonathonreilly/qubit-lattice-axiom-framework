@@ -5,9 +5,9 @@
 
 ## Artifact Chain
 
-- [`scripts/ALT_CONNECTIVITY_FAMILY_BASIN.py`](/Users/jonreilly/Projects/Physics/scripts/ALT_CONNECTIVITY_FAMILY_BASIN.py)
-- [`logs/2026-04-06-alt-connectivity-family-basin.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-alt-connectivity-family-basin.txt)
-- [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
+- [`scripts/ALT_CONNECTIVITY_FAMILY_BASIN.py`](../scripts/ALT_CONNECTIVITY_FAMILY_BASIN.py)
+- [`logs/2026-04-06-alt-connectivity-family-basin.txt`](../logs/2026-04-06-alt-connectivity-family-basin.txt)
+- [`docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md`](../docs/ALT_CONNECTIVITY_FAMILY_SIGN_NOTE.md)
 
 ## Question
 

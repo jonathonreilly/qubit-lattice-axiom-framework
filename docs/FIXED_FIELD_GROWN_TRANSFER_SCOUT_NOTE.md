@@ -5,12 +5,12 @@
 
 ## Artifact chain
 
-- [`scripts/fixed_field_grown_transfer_scout.py`](/Users/jonreilly/Projects/Physics/scripts/fixed_field_grown_transfer_scout.py)
-- [`logs/2026-04-06-fixed-field-grown-transfer-scout.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fixed-field-grown-transfer-scout.txt)
+- [`scripts/fixed_field_grown_transfer_scout.py`](../scripts/fixed_field_grown_transfer_scout.py)
+- [`logs/2026-04-06-fixed-field-grown-transfer-scout.txt`](../logs/2026-04-06-fixed-field-grown-transfer-scout.txt)
 - companion grown-geometry control:
-  [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
+  [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
   and
-  [`logs/2026-04-06-grown-geometry-complex-action-companion-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-grown-geometry-complex-action-companion-replay.txt)
+  [`logs/2026-04-06-grown-geometry-complex-action-companion-replay.txt`](../logs/2026-04-06-grown-geometry-complex-action-companion-replay.txt)
 
 ## Question
 

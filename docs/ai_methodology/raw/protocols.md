@@ -16131,9 +16131,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16177,9 +16177,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16221,9 +16221,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16267,9 +16267,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16340,9 +16340,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16381,9 +16381,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16423,9 +16423,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16467,9 +16467,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16507,9 +16507,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16552,9 +16552,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16591,9 +16591,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16631,9 +16631,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16675,9 +16675,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16720,9 +16720,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16767,9 +16767,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16808,9 +16808,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16846,9 +16846,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16884,9 +16884,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16922,9 +16922,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16960,9 +16960,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -16999,9 +16999,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -17039,9 +17039,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -17080,9 +17080,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -17107,7 +17107,7 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
   - `python3 scripts/pocket_wrap_suppressor_nonpocket_subtype_rules.py --variant-limit 352 > /Users/jonreilly/Projects/Physics/logs/2026-03-22-pocket-wrap-suppressor-nonpocket-subtype-rules-352.txt`
 - The `352` run completed successfully and exactly matched the existing `288`/`304`/`320`/`336` subtype membership and exact-rule table.
 - Tightened hourly automation behavior:
-  - added [AUTOPILOT_PROTOCOL.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_PROTOCOL.md)
+  - added [AUTOPILOT_PROTOCOL.md](../../../AUTOPILOT_PROTOCOL.md)
   - updated `/Users/jonreilly/.codex/automations/physics-autopilot/automation.toml` to require sync reconciliation first, newest-first worklog updates, and one bounded step by default.
 - Updated the mechanism narrative in `/Users/jonreilly/Projects/Physics/README.md`.
 
@@ -17121,10 +17121,10 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
-  - [AUTOPILOT_PROTOCOL.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_PROTOCOL.md)
+  - [README.md](../../../README.md)
+  - [AUTOPILOT_PROTOCOL.md](../../../AUTOPILOT_PROTOCOL.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/automation.toml`
@@ -17161,9 +17161,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -17202,9 +17202,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -17245,9 +17245,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -17288,9 +17288,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -17332,11 +17332,11 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Code:
-  - [toy_event_physics.py](/Users/jonreilly/Projects/Physics/toy_event_physics.py)
+  - [toy_event_physics.py](../../../toy_event_physics.py)
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs touched/generated:
@@ -17382,9 +17382,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Code:
-  - [toy_event_physics.py](/Users/jonreilly/Projects/Physics/toy_event_physics.py)
+  - [toy_event_physics.py](../../../toy_event_physics.py)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs touched/generated:
@@ -17425,9 +17425,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Code:
-  - [toy_event_physics.py](/Users/jonreilly/Projects/Physics/toy_event_physics.py)
+  - [toy_event_physics.py](../../../toy_event_physics.py)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs touched/generated:
@@ -17461,9 +17461,9 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Code:
-  - [scripts/pocket_wrap_suppressor_nonpocket_subtype_rules.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_nonpocket_subtype_rules.py)
+  - [scripts/pocket_wrap_suppressor_nonpocket_subtype_rules.py](../../../scripts/pocket_wrap_suppressor_nonpocket_subtype_rules.py)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Attempted (incomplete) log target:
@@ -17494,7 +17494,7 @@ then compare their exact-mask reach against `delta_count_family_pocket <= -14.50
 
 ### Files and results changed in this run
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Commit status:
@@ -17538,14 +17538,14 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Added helper:
   - `/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_nonpocket_subtype_rules.py`
 - New logs:
   - `/Users/jonreilly/Projects/Physics/logs/2026-03-21-pocket-wrap-suppressor-nonpocket-subtype-rules-192.txt`
   - `/Users/jonreilly/Projects/Physics/logs/2026-03-21-pocket-wrap-suppressor-nonpocket-subtype-rules-208.txt`
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Commit status:
@@ -17572,9 +17572,9 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - New log:
@@ -17610,9 +17610,9 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - New logs:
@@ -17641,9 +17641,9 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - New log:
@@ -17674,9 +17674,9 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - New log:
@@ -17715,9 +17715,9 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - New logs:
@@ -17751,9 +17751,9 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - New log:
@@ -17783,9 +17783,9 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - New logs:
@@ -17811,7 +17811,7 @@ Each autopilot run should:
   - `b126b11` `Isolate pocket-wrap overlap-context separators`
 - The active mechanism thread is still the pocket-wrap suppressor specificity line inside `base:taper-wrap` `local-morph`.
 - Added a new overlap-context rule runner:
-  - [scripts/pocket_wrap_suppressor_overlap_context_rules.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_overlap_context_rules.py)
+  - [scripts/pocket_wrap_suppressor_overlap_context_rules.py](../../../scripts/pocket_wrap_suppressor_overlap_context_rules.py)
 - Logged the `variant_limit = 64` overlap-context sweep to:
   - `/Users/jonreilly/Projects/Physics/logs/2026-03-21-pocket-wrap-suppressor-overlap-context-rules-64.txt`
 
@@ -17826,12 +17826,12 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Code:
-  - [toy_event_physics.py](/Users/jonreilly/Projects/Physics/toy_event_physics.py)
-  - [scripts/pocket_wrap_suppressor_overlap_context_rules.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_overlap_context_rules.py)
+  - [toy_event_physics.py](../../../toy_event_physics.py)
+  - [scripts/pocket_wrap_suppressor_overlap_context_rules.py](../../../scripts/pocket_wrap_suppressor_overlap_context_rules.py)
 - Updated narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Pushed commits:
@@ -17861,15 +17861,15 @@ Each autopilot run should:
 - The focused pair-kill diagnostic confirms that this is coordinate-exact rather than just count-based: at `variant_limit = 56` and `64`, the kill coordinates match the overlapping deep-support coordinates for all `3/3` pair-kill rows, including the partial-overlap row `local-morph-\x8e`.
 
 ### Files and results already documented
-- Narrative conclusions: [README.md](/Users/jonreilly/Projects/Physics/README.md)
-- Model/helper implementation: [toy_event_physics.py](/Users/jonreilly/Projects/Physics/toy_event_physics.py)
+- Narrative conclusions: [README.md](../../../README.md)
+- Model/helper implementation: [toy_event_physics.py](../../../toy_event_physics.py)
 - Current suppressor runners:
-  - [scripts/pocket_wrap_suppressor_coverage.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_coverage.py)
-  - [scripts/pocket_wrap_suppressor_coverage_sweep.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_coverage_sweep.py)
-  - [scripts/pocket_wrap_suppressor_injection.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_injection.py)
-  - [scripts/pocket_wrap_suppressor_specificity.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_specificity.py)
-  - [scripts/pocket_wrap_suppressor_specificity_sweep.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_specificity_sweep.py)
-  - [scripts/pocket_wrap_suppressor_pair_kill_diagnostic.py](/Users/jonreilly/Projects/Physics/scripts/pocket_wrap_suppressor_pair_kill_diagnostic.py)
+  - [scripts/pocket_wrap_suppressor_coverage.py](../../../scripts/pocket_wrap_suppressor_coverage.py)
+  - [scripts/pocket_wrap_suppressor_coverage_sweep.py](../../../scripts/pocket_wrap_suppressor_coverage_sweep.py)
+  - [scripts/pocket_wrap_suppressor_injection.py](../../../scripts/pocket_wrap_suppressor_injection.py)
+  - [scripts/pocket_wrap_suppressor_specificity.py](../../../scripts/pocket_wrap_suppressor_specificity.py)
+  - [scripts/pocket_wrap_suppressor_specificity_sweep.py](../../../scripts/pocket_wrap_suppressor_specificity_sweep.py)
+  - [scripts/pocket_wrap_suppressor_pair_kill_diagnostic.py](../../../scripts/pocket_wrap_suppressor_pair_kill_diagnostic.py)
 - Latest logs:
   - `/Users/jonreilly/Projects/Physics/logs/2026-03-21-pocket-wrap-suppressor-pair-kill-diagnostic-56.txt`
   - `/Users/jonreilly/Projects/Physics/logs/2026-03-21-pocket-wrap-suppressor-pair-kill-diagnostic-64.txt`
@@ -17901,9 +17901,9 @@ Each autopilot run should:
 
 ### Files and results changed in this run
 - Narrative:
-  - [README.md](/Users/jonreilly/Projects/Physics/README.md)
+  - [README.md](../../../README.md)
 - Updated run tracking:
-  - [AUTOPILOT_WORKLOG.md](/Users/jonreilly/Projects/Physics/AUTOPILOT_WORKLOG.md)
+  - [AUTOPILOT_WORKLOG.md](../../../AUTOPILOT_WORKLOG.md)
   - `/Users/jonreilly/Projects/Physics/logs/physics_autopilot_handoff.md`
   - `/Users/jonreilly/.codex/automations/physics-autopilot/memory.md`
 - Logs generated/used:
@@ -18053,9 +18053,9 @@ The review-hardening program has two parts:
 
 Current review-hardening tooling now includes:
 
-- [`scripts/canonical_regression_gate.py`](/Users/jonreilly/Projects/Physics/scripts/canonical_regression_gate.py)
-- [`scripts/reproduction_audit_harness.py`](/Users/jonreilly/Projects/Physics/scripts/reproduction_audit_harness.py)
-- [`docs/CANONICAL_HARNESS_INDEX.md`](/Users/jonreilly/Projects/Physics/docs/CANONICAL_HARNESS_INDEX.md)
+- [`scripts/canonical_regression_gate.py`](../../../scripts/canonical_regression_gate.py)
+- [`scripts/reproduction_audit_harness.py`](../../../scripts/reproduction_audit_harness.py)
+- [`docs/CANONICAL_HARNESS_INDEX.md`](../../../docs/CANONICAL_HARNESS_INDEX.md)
 
 That gate is intentionally modest. It does **not** prove the physics. It does
 provide a cheap code/report drift detector for the retained mirror, lattice,
@@ -18104,7 +18104,7 @@ Why it matters:
 Current state:
 
 - an initial bounded gate now exists in
-  [`scripts/canonical_regression_gate.py`](/Users/jonreilly/Projects/Physics/scripts/canonical_regression_gate.py)
+  [`scripts/canonical_regression_gate.py`](../../../scripts/canonical_regression_gate.py)
 - it now covers:
   - exact 2D mirror
   - mirror MI chokepoint chain
@@ -18272,7 +18272,7 @@ Goal:
 
 Concrete deliverables:
 
-- [ASSUMPTION_DERIVATION_LEDGER.md](/Users/jonreilly/Projects/Physics/docs/ASSUMPTION_DERIVATION_LEDGER.md)
+- [ASSUMPTION_DERIVATION_LEDGER.md](../../../docs/ASSUMPTION_DERIVATION_LEDGER.md)
 - one shorter table version in any paper/manuscript
 
 Why it matters:
@@ -18337,7 +18337,7 @@ Goal:
 
 Concrete deliverables:
 
-- [LITERATURE_POSITIONING_NOTE.md](/Users/jonreilly/Projects/Physics/docs/LITERATURE_POSITIONING_NOTE.md)
+- [LITERATURE_POSITIONING_NOTE.md](../../../docs/LITERATURE_POSITIONING_NOTE.md)
 - explicit future comparisons to:
   - quantum measure / Sorkin
   - open quantum systems / collision models

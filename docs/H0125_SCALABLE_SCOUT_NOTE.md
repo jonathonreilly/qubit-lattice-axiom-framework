@@ -12,14 +12,14 @@ any genuinely wider or more scalable replay path worth keeping.
 ## Controls
 
 - shorter-scale scout:
-  - [`logs/2026-04-06-h0125-scalable-scout.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-scalable-scout.txt)
+  - [`logs/2026-04-06-h0125-scalable-scout.txt`](../logs/2026-04-06-h0125-scalable-scout.txt)
   - `phys_l = 4`
   - `phys_w = 3`
   - `h = 0.125`
   - full window
   - `z_mass = 1.5, 2.0, 3.0`
 - retained comparator already closed elsewhere:
-  - [`logs/2026-04-06-h0125-wide-full-window.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-wide-full-window.txt)
+  - [`logs/2026-04-06-h0125-wide-full-window.txt`](../logs/2026-04-06-h0125-wide-full-window.txt)
   - `phys_l = 6`
   - `phys_w = 4`
   - full window

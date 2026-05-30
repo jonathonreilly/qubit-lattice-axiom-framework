@@ -123,7 +123,7 @@ boundary-fit note and is reproducible directly from the live script with:
 
 For review-hardening, the fast canonical regression gate keeps the strict
 baseline check separate from that slower replay; use
-[`scripts/canonical_regression_gate.py --slow`](/Users/jonreilly/Projects/Physics/scripts/canonical_regression_gate.py)
+[`scripts/canonical_regression_gate.py --slow`](../scripts/canonical_regression_gate.py)
 when you want both.
 
 For the canonical fixed-family decoherence fit on the bounded dense boundary

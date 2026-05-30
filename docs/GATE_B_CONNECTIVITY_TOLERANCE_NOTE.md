@@ -15,8 +15,8 @@ lane, but it does **not** close Gate B.
 
 ## Primary artifact
 
-- Script: [`scripts/gate_b_connectivity_tolerance.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_connectivity_tolerance.py)
-- Log: [`logs/2026-04-04-gate-b-connectivity-tolerance.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-gate-b-connectivity-tolerance.txt)
+- Script: [`scripts/gate_b_connectivity_tolerance.py`](../scripts/gate_b_connectivity_tolerance.py)
+- Log: [`logs/2026-04-04-gate-b-connectivity-tolerance.txt`](../logs/2026-04-04-gate-b-connectivity-tolerance.txt)
 
 ## What was compared
 

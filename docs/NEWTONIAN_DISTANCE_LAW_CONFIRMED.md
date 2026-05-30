@@ -7,9 +7,9 @@ This file preserves the original headline wording from the branch import.
 
 For the review-safe retained read, use:
 
-- [docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md](/Users/jonreilly/Projects/Physics/docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md)
-- [scripts/valley_linear_wide_tail_replay.py](/Users/jonreilly/Projects/Physics/scripts/valley_linear_wide_tail_replay.py)
-- [logs/2026-04-04-valley-linear-wide-tail-replay.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-wide-tail-replay.txt)
+- [docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md](../docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md)
+- [scripts/valley_linear_wide_tail_replay.py](../scripts/valley_linear_wide_tail_replay.py)
+- [logs/2026-04-04-valley-linear-wide-tail-replay.txt](../logs/2026-04-04-valley-linear-wide-tail-replay.txt)
 
 The safe wording is:
 

@@ -19,8 +19,8 @@ overall sweep does not close Gate B.
 
 ## Primary artifact
 
-- Script: [`scripts/evolving_network_prototype_v6.py`](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v6.py)
-- Log: [`logs/2026-04-04-evolving-network-prototype-v6.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v6.txt)
+- Script: [`scripts/evolving_network_prototype_v6.py`](../scripts/evolving_network_prototype_v6.py)
+- Log: [`logs/2026-04-04-evolving-network-prototype-v6.txt`](../logs/2026-04-04-evolving-network-prototype-v6.txt)
 
 ## Frozen replay setup
 

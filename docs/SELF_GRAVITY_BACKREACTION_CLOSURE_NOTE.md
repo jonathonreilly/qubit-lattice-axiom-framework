@@ -24,8 +24,8 @@ end-to-end Born sweep), run without `--quick`.
 
 ## Artifact Chain
 
-- [`scripts/poisson_self_gravity_loop_v3.py`](/Users/jonreilly/Projects/Physics/scripts/poisson_self_gravity_loop_v3.py)
-- [`logs/2026-04-06-self-gravity-backreaction-closure.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-self-gravity-backreaction-closure.txt)
+- [`scripts/poisson_self_gravity_loop_v3.py`](../scripts/poisson_self_gravity_loop_v3.py)
+- [`logs/2026-04-06-self-gravity-backreaction-closure.txt`](../logs/2026-04-06-self-gravity-backreaction-closure.txt)
 
 ## What Was Checked
 

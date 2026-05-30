@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_generated_support_recovery.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_generated_support_recovery.py)
-- [`logs/2026-04-05-source-resolved-generated-support-recovery.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-generated-support-recovery.txt)
+- [`scripts/source_resolved_generated_support_recovery.py`](../scripts/source_resolved_generated_support_recovery.py)
+- [`logs/2026-04-05-source-resolved-generated-support-recovery.txt`](../logs/2026-04-05-source-resolved-generated-support-recovery.txt)
 
 ## Question
 

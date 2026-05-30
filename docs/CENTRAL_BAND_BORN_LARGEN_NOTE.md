@@ -4,7 +4,7 @@ This note records the large-`N` extension of the dense central-band hard-geometr
 lane under the corrected three-slit Sorkin metric.
 
 Script:
-- [`scripts/central_band_born_largeN.py`](/Users/jonreilly/Projects/Physics/scripts/central_band_born_largeN.py)
+- [`scripts/central_band_born_largeN.py`](../scripts/central_band_born_largeN.py)
 
 Harness:
 - corrected three-slit 3D chokepoint graph

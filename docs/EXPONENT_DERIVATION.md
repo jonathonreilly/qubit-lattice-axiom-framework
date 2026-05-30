@@ -138,7 +138,7 @@ The prediction alpha ~ 1/d_spatial gives:
 The agreement is approximate but captures the right trend and
 the right order of magnitude on the unmatched family-level summaries.
 However, the matched comparison in
-[docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md)
+[docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md](../docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md)
 does **not** support a clean dimension-only escape claim, so this derivation
 should currently be read as an organizing heuristic rather than as a retained
 mechanism.

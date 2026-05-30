@@ -5,14 +5,14 @@
 
 ## Artifact Chain
 
-- [`scripts/impact_parameter_portability_probe.py`](/Users/jonreilly/Projects/Physics/scripts/impact_parameter_portability_probe.py)
-- [`logs/2026-04-06-impact-parameter-portability-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-impact-parameter-portability-probe.txt)
+- [`scripts/impact_parameter_portability_probe.py`](../scripts/impact_parameter_portability_probe.py)
+- [`logs/2026-04-06-impact-parameter-portability-probe.txt`](../logs/2026-04-06-impact-parameter-portability-probe.txt)
 - retained lensing context:
-  - [`docs/IMPACT_PARAMETER_LENSING_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/IMPACT_PARAMETER_LENSING_NOTE.md)
-  - [`logs/2026-04-06-impact-parameter-lensing-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-impact-parameter-lensing-probe.txt)
+  - [`docs/IMPACT_PARAMETER_LENSING_NOTE.md`](../docs/IMPACT_PARAMETER_LENSING_NOTE.md)
+  - [`logs/2026-04-06-impact-parameter-lensing-probe.txt`](../logs/2026-04-06-impact-parameter-lensing-probe.txt)
 - broader portability context:
-  - [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md)
-  - [`docs/IMPACT_PARAMETER_PORTABILITY_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/IMPACT_PARAMETER_PORTABILITY_EXTENSION_NOTE.md)
+  - [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md`](../archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md)
+  - [`docs/IMPACT_PARAMETER_PORTABILITY_EXTENSION_NOTE.md`](../docs/IMPACT_PARAMETER_PORTABILITY_EXTENSION_NOTE.md)
 
 ## Question
 

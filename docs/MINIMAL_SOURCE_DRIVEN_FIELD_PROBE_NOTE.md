@@ -26,9 +26,9 @@ not an audit verdict.
 
 ## Artifact chain
 
-- [`scripts/minimal_source_driven_field_probe.py`](/Users/jonreilly/Projects/Physics/scripts/minimal_source_driven_field_probe.py)
-- [`logs/2026-04-05-minimal-source-driven-field-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-minimal-source-driven-field-probe.txt)
-- [`docs/SOURCE_DRIVEN_FIELD_RECOVERY_SWEEP_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_DRIVEN_FIELD_RECOVERY_SWEEP_NOTE.md)
+- [`scripts/minimal_source_driven_field_probe.py`](../scripts/minimal_source_driven_field_probe.py)
+- [`logs/2026-04-05-minimal-source-driven-field-probe.txt`](../logs/2026-04-05-minimal-source-driven-field-probe.txt)
+- [`docs/SOURCE_DRIVEN_FIELD_RECOVERY_SWEEP_NOTE.md`](../docs/SOURCE_DRIVEN_FIELD_RECOVERY_SWEEP_NOTE.md)
 
 ## Question
 

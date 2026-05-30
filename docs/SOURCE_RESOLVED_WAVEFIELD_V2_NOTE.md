@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_wavefield_v2.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_wavefield_v2.py)
-- [`logs/2026-04-05-source-resolved-wavefield-v2.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-wavefield-v2.txt)
+- [`scripts/source_resolved_wavefield_v2.py`](../scripts/source_resolved_wavefield_v2.py)
+- [`logs/2026-04-05-source-resolved-wavefield-v2.txt`](../logs/2026-04-05-source-resolved-wavefield-v2.txt)
 
 ## Question
 

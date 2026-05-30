@@ -18,7 +18,7 @@ The goal was to answer:
 
 ## Script
 
-- [central_band_layernorm_combo.py](/Users/jonreilly/Projects/Physics/scripts/central_band_layernorm_combo.py)
+- [central_band_layernorm_combo.py](../scripts/central_band_layernorm_combo.py)
 
 ## Main table
 
@@ -100,11 +100,11 @@ packet does not have to chase the dependency edge.
 
 The retained authority for the modular-gap=2 + layernorm row on the same
 `16 seeds`, `npl=25`, `y_range=12`, `r=3.0`, `N=25..100` matched-seed grid is
-the runner [`scripts/geometry_lane_head_to_head.py`](/Users/jonreilly/Projects/Physics/scripts/geometry_lane_head_to_head.py)
+the runner [`scripts/geometry_lane_head_to_head.py`](../scripts/geometry_lane_head_to_head.py)
 (which delegates to `scripts/combined_gravity_scaling.py:run_joint` with
 `use_ln=True` on a `topology_families.generate_modular_dag(gap=2.0)` graph).
 The cached stdout is at
-[`logs/runner-cache/geometry_lane_head_to_head.txt`](/Users/jonreilly/Projects/Physics/logs/runner-cache/geometry_lane_head_to_head.txt).
+[`logs/runner-cache/geometry_lane_head_to_head.txt`](../logs/runner-cache/geometry_lane_head_to_head.txt).
 
 Modular gap=2 + layernorm `pur_min` row from that cache (matched 16 seeds):
 

@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/electrostatics_card.py`](/Users/jonreilly/Projects/Physics/scripts/electrostatics_card.py)
-- [`logs/2026-04-05-electrostatics-card.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-electrostatics-card.txt)
+- [`scripts/electrostatics_card.py`](../scripts/electrostatics_card.py)
+- [`logs/2026-04-05-electrostatics-card.txt`](../logs/2026-04-05-electrostatics-card.txt)
 
 ## Question
 

@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_generated_architecture_bridge.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_generated_architecture_bridge.py)
-- [`logs/2026-04-05-source-resolved-generated-architecture-bridge.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-generated-architecture-bridge.txt)
+- [`scripts/source_resolved_generated_architecture_bridge.py`](../scripts/source_resolved_generated_architecture_bridge.py)
+- [`logs/2026-04-05-source-resolved-generated-architecture-bridge.txt`](../logs/2026-04-05-source-resolved-generated-architecture-bridge.txt)
 
 ## Question
 

@@ -16,7 +16,7 @@ This file is a retracted aggregate session summary. Future readers should consul
 
 This is the topology-pivot session note. Later higher-dimensional results are
 tracked separately in
-[HIGHER_DIMENSION_STATUS_2026-04-01.md](/Users/jonreilly/Projects/Physics/docs/HIGHER_DIMENSION_STATUS_2026-04-01.md).
+[HIGHER_DIMENSION_STATUS_2026-04-01.md](../../docs/HIGHER_DIMENSION_STATUS_2026-04-01.md).
 
 ## The architecture story
 

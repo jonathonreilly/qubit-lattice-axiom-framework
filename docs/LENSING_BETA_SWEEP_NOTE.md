@@ -4,8 +4,8 @@
 
 ### Artifact chain
 
-- [`/Users/jonreilly/Projects/Physics/scripts/lensing_beta_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/lensing_beta_sweep.py)
-- [`/Users/jonreilly/Projects/Physics/logs/2026-04-08-lensing-beta-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-08-lensing-beta-sweep.txt)
+- [`/Users/jonreilly/Projects/Physics/scripts/lensing_beta_sweep.py`](../scripts/lensing_beta_sweep.py)
+- [`/Users/jonreilly/Projects/Physics/logs/2026-04-08-lensing-beta-sweep.txt`](../logs/2026-04-08-lensing-beta-sweep.txt)
 
 ### Question
 

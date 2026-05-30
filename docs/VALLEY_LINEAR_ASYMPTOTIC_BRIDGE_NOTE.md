@@ -15,9 +15,9 @@ safe read remains:
 
 ## Primary artifact
 
-- Script: [`scripts/valley_linear_asymptotic_bridge.py`](/Users/jonreilly/Projects/Physics/scripts/valley_linear_asymptotic_bridge.py)
-- Frozen log: [`logs/2026-04-04-valley-linear-asymptotic-bridge.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-asymptotic-bridge.txt)
-- Current-main replay: [`logs/2026-04-05-valley-linear-asymptotic-bridge-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-valley-linear-asymptotic-bridge-replay.txt)
+- Script: [`scripts/valley_linear_asymptotic_bridge.py`](../scripts/valley_linear_asymptotic_bridge.py)
+- Frozen log: [`logs/2026-04-04-valley-linear-asymptotic-bridge.txt`](../logs/2026-04-04-valley-linear-asymptotic-bridge.txt)
+- Current-main replay: [`logs/2026-04-05-valley-linear-asymptotic-bridge-replay.txt`](../logs/2026-04-05-valley-linear-asymptotic-bridge-replay.txt)
 
 The script keeps fixed:
 

@@ -17,16 +17,16 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ## Artifact Chain
 
-- [`scripts/PORTABLE_CARD_EXTENSION_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/PORTABLE_CARD_EXTENSION_COMPARE.py)
-- [`logs/PORTABLE_CARD_EXTENSION_COMPARE_2026-04-06.txt`](/Users/jonreilly/Projects/Physics/logs/PORTABLE_CARD_EXTENSION_COMPARE_2026-04-06.txt)
+- [`scripts/PORTABLE_CARD_EXTENSION_COMPARE.py`](../../scripts/PORTABLE_CARD_EXTENSION_COMPARE.py)
+- [`logs/PORTABLE_CARD_EXTENSION_COMPARE_2026-04-06.txt`](../../logs/PORTABLE_CARD_EXTENSION_COMPARE_2026-04-06.txt)
 - retained three-family card:
-  - [`docs/THREE_FAMILY_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/THREE_FAMILY_CARD_NOTE.md)
+  - [`docs/THREE_FAMILY_CARD_NOTE.md`](../../docs/THREE_FAMILY_CARD_NOTE.md)
 - portability context:
-  - [`docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md)
-  - [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+  - [`docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](../../docs/PORTABLE_PACKAGE_EXTENSION_NOTE.md)
+  - [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](../../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
 - distance-law context:
-  - [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
-  - [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
+  - [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](../../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
+  - [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](../../docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
 
 ## Question
 

@@ -15,10 +15,10 @@ The question is narrow:
 
 Artifacts:
 
-- [`scripts/lattice_nn_rg_alpha_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_nn_rg_alpha_sweep.py)
-- [`logs/2026-04-03-lattice-nn-rg-alpha-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-nn-rg-alpha-sweep.txt)
+- [`scripts/lattice_nn_rg_alpha_sweep.py`](../scripts/lattice_nn_rg_alpha_sweep.py)
+- [`logs/2026-04-03-lattice-nn-rg-alpha-sweep.txt`](../logs/2026-04-03-lattice-nn-rg-alpha-sweep.txt)
 - upstream deterministic refinement:
-  [`docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md)
+  [`docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md`](../docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md)
 
 ## Setup
 

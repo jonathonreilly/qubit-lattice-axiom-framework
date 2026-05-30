@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/equivalence_principle_harness.py`](/Users/jonreilly/Projects/Physics/scripts/equivalence_principle_harness.py)
-- Log: [`logs/2026-04-04-equivalence-principle-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-equivalence-principle-harness.txt)
+- Script: [`scripts/equivalence_principle_harness.py`](../scripts/equivalence_principle_harness.py)
+- Log: [`logs/2026-04-04-equivalence-principle-harness.txt`](../logs/2026-04-04-equivalence-principle-harness.txt)
 
 This is a narrow probe on one fixed family:
 

@@ -71,9 +71,9 @@ goes with that closure.
 
 Two companion scripts summarize the current mechanism view:
 
-- [scripts/path_sampling_analysis.py](/Users/jonreilly/Projects/Physics/scripts/path_sampling_analysis.py)
-- [scripts/field_localization_test.py](/Users/jonreilly/Projects/Physics/scripts/field_localization_test.py)
-- [2026-04-01-b-independence-mechanism.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-b-independence-mechanism.txt)
+- [scripts/path_sampling_analysis.py](../scripts/path_sampling_analysis.py)
+- [scripts/field_localization_test.py](../scripts/field_localization_test.py)
+- [2026-04-01-b-independence-mechanism.txt](../logs/2026-04-01-b-independence-mechanism.txt)
 
 ### 1. Path preservation
 

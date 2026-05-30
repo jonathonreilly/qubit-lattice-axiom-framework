@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/mesoscopic_surrogate_two_stage_2d.py`](/Users/jonreilly/Projects/Physics/scripts/mesoscopic_surrogate_two_stage_2d.py)
-- Log: [`logs/2026-04-04-mesoscopic-surrogate-two-stage-2d.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-mesoscopic-surrogate-two-stage-2d.txt)
+- Script: [`scripts/mesoscopic_surrogate_two_stage_2d.py`](../scripts/mesoscopic_surrogate_two_stage_2d.py)
+- Log: [`logs/2026-04-04-mesoscopic-surrogate-two-stage-2d.txt`](../logs/2026-04-04-mesoscopic-surrogate-two-stage-2d.txt)
 
 This is the cheapest retained-family check I could build for the multi-stage
 surrogate-source idea.
@@ -73,11 +73,11 @@ But the important limit remains:
 
 This note should be read together with:
 
-- [`MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md)
-- [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
-- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
-- [`MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md)
+- [`MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md`](../docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md)
+- [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](../docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
+- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](../docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
+- [`MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md`](../docs/MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md)
 
 Together they now say:
 

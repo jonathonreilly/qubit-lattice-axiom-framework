@@ -9,7 +9,7 @@ the instantaneous `1/r` comparator.
 
 The script is:
 
-- [`scripts/source_resolved_propagating_green_pocket.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_propagating_green_pocket.py)
+- [`scripts/source_resolved_propagating_green_pocket.py`](../scripts/source_resolved_propagating_green_pocket.py)
 
 ## Setup
 

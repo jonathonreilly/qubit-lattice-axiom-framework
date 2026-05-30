@@ -60,9 +60,9 @@ without losing the same-family barrier sanity checks.
 
 Artifact chain:
 
-- [`scripts/lattice_3d_l2_tail_stats.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_tail_stats.py)
-- [`scripts/lattice_3d_inverse_square_kernel.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_inverse_square_kernel.py)
-- [`logs/2026-04-04-lattice-3d-l2-tail-stats.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-lattice-3d-l2-tail-stats.txt)
+- [`scripts/lattice_3d_l2_tail_stats.py`](../scripts/lattice_3d_l2_tail_stats.py)
+- [`scripts/lattice_3d_inverse_square_kernel.py`](../scripts/lattice_3d_inverse_square_kernel.py)
+- [`logs/2026-04-04-lattice-3d-l2-tail-stats.txt`](../logs/2026-04-04-lattice-3d-l2-tail-stats.txt)
 
 ## Result
 

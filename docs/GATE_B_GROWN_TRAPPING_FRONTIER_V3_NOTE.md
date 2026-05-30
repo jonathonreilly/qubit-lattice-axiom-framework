@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_grown_trapping_frontier_v3.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_trapping_frontier_v3.py)
-- local log artifact: [`logs/2026-04-05-gate-b-grown-trapping-frontier-v3.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-trapping-frontier-v3.txt)
+- [`scripts/gate_b_grown_trapping_frontier_v3.py`](../scripts/gate_b_grown_trapping_frontier_v3.py)
+- local log artifact: [`logs/2026-04-05-gate-b-grown-trapping-frontier-v3.txt`](../logs/2026-04-05-gate-b-grown-trapping-frontier-v3.txt)
 
 ## Question
 

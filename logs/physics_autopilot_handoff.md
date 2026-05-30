@@ -31,7 +31,7 @@
   - `research_orchestrator.py ... open-cycle` on the canonical path still
     fails with `Operation not permitted` on the `.tmp` write
 - applied the bounded repo-facing integrity fix:
-  - [`/Users/jonreilly/Projects/Physics/scripts/research_orchestrator.py`](/Users/jonreilly/Projects/Physics/scripts/research_orchestrator.py)
+  - [`/Users/jonreilly/Projects/Physics/scripts/research_orchestrator.py`](../scripts/research_orchestrator.py)
     now supports `duplicate` as a first-class lane status
   - `python3 -m py_compile /Users/jonreilly/Projects/Physics/scripts/research_orchestrator.py`
     passed
@@ -58,10 +58,10 @@
 - `diamond-noise-floor-bridge`
   - mirror status: `duplicate`
   - strongest read: the narrow noise-floor bridge already exists across
-    [`/Users/jonreilly/Projects/Physics/docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md),
-    [`/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md),
+    [`/Users/jonreilly/Projects/Physics/docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md`](../docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md),
+    [`/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](../docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md),
     and
-    [`/Users/jonreilly/Projects/Physics/docs/TESTABLE_PREDICTIONS_MAP_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/TESTABLE_PREDICTIONS_MAP_NOTE.md)
+    [`/Users/jonreilly/Projects/Physics/docs/TESTABLE_PREDICTIONS_MAP_NOTE.md`](../docs/TESTABLE_PREDICTIONS_MAP_NOTE.md)
   - replacement pending lane added:
     `diamond-predictions-map-crosslink`
 - `relativistic-closure-boundary`

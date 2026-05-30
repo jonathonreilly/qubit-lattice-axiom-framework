@@ -19,9 +19,9 @@ unchanged because they do not depend on `field_m`.
 
 ## Artifact chain
 
-- [`scripts/lattice_3d_l2_numpy_h0125_audit.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_numpy_h0125_audit.py)
-- [`logs/runner-cache/lattice_3d_l2_numpy_h0125_audit.txt`](/Users/jonreilly/Projects/Physics/logs/runner-cache/lattice_3d_l2_numpy_h0125_audit.txt) (SHA-pinned audit-lane cache for the on-lattice rerun)
-- prior off-lattice log: [`logs/2026-04-05-lattice-3d-l2-numpy-h0125-audit.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-lattice-3d-l2-numpy-h0125-audit.txt) (transient; kept for cross-reference, not version-controlled)
+- [`scripts/lattice_3d_l2_numpy_h0125_audit.py`](../scripts/lattice_3d_l2_numpy_h0125_audit.py)
+- [`logs/runner-cache/lattice_3d_l2_numpy_h0125_audit.txt`](../logs/runner-cache/lattice_3d_l2_numpy_h0125_audit.txt) (SHA-pinned audit-lane cache for the on-lattice rerun)
+- prior off-lattice log: [`logs/2026-04-05-lattice-3d-l2-numpy-h0125-audit.txt`](../logs/2026-04-05-lattice-3d-l2-numpy-h0125-audit.txt) (transient; kept for cross-reference, not version-controlled)
 
 ## Question
 

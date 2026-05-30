@@ -33,8 +33,8 @@ The answer on the canonical family is:
 
 Primary artifact chain:
 
-- [`scripts/lattice_3d_dense_window_extension.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_dense_window_extension.py)
-- [`logs/2026-04-04-lattice-3d-dense-window-extension.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-lattice-3d-dense-window-extension.txt)
+- [`scripts/lattice_3d_dense_window_extension.py`](../scripts/lattice_3d_dense_window_extension.py)
+- [`logs/2026-04-04-lattice-3d-dense-window-extension.txt`](../logs/2026-04-04-lattice-3d-dense-window-extension.txt)
 
 ## Canonical sweep
 

@@ -24,10 +24,10 @@ The answer is: it does **not** close asymptotic behavior here.
 
 ## Frozen artifact chain
 
-- [`scripts/four_d_distance_width_probe.py`](/Users/jonreilly/Projects/Physics/scripts/four_d_distance_width_probe.py)
-- [`logs/2026-04-04-four-d-distance-width-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-four-d-distance-width-probe.txt)
+- [`scripts/four_d_distance_width_probe.py`](../scripts/four_d_distance_width_probe.py)
+- [`logs/2026-04-04-four-d-distance-width-probe.txt`](../logs/2026-04-04-four-d-distance-width-probe.txt)
 - heavier same-family companion log:
-  - [`logs/2026-04-04-4d-wide-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-4d-wide-distance-law.txt)
+  - [`logs/2026-04-04-4d-wide-distance-law.txt`](../logs/2026-04-04-4d-wide-distance-law.txt)
 
 ## Probe setup
 
@@ -74,7 +74,7 @@ What it **does** establish:
 ## Relation to the current dimensional table
 
 This probe is consistent with the broader 4D row in
-[DIMENSIONAL_GRAVITY_TABLE.md](/Users/jonreilly/Projects/Physics/docs/DIMENSIONAL_GRAVITY_TABLE.md):
+[DIMENSIONAL_GRAVITY_TABLE.md](../docs/DIMENSIONAL_GRAVITY_TABLE.md):
 
 - 4D remains on the retained `1/L^3` / `f = s / r^2` family
 - the mass response stays near-linear

@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_h025_distance_law.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_distance_law.py)
-- [`logs/2026-04-05-gate-b-h025-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-distance-law.txt)
+- [`scripts/gate_b_h025_distance_law.py`](../scripts/gate_b_h025_distance_law.py)
+- [`logs/2026-04-05-gate-b-h025-distance-law.txt`](../logs/2026-04-05-gate-b-h025-distance-law.txt)
 
 ## Question
 
@@ -49,8 +49,8 @@ The honest bounded statement is now:
 
 Read this with:
 
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
 
 The purpose of this companion is simple:
 

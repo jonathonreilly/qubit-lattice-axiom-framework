@@ -5,9 +5,9 @@
 
 ## Artifact chain
 
-- [`scripts/SECOND_GROWN_FAMILY_COMPLEX.py`](/Users/jonreilly/Projects/Physics/scripts/SECOND_GROWN_FAMILY_COMPLEX.py)
-- [`logs/2026-04-06-second-grown-family-complex.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-second-grown-family-complex.txt)
-- [`docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md)
+- [`scripts/SECOND_GROWN_FAMILY_COMPLEX.py`](../scripts/SECOND_GROWN_FAMILY_COMPLEX.py)
+- [`logs/2026-04-06-second-grown-family-complex.txt`](../logs/2026-04-06-second-grown-family-complex.txt)
+- [`docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md`](../docs/SECOND_GROWN_FAMILY_SIGN_NOTE.md)
 
 ## Question
 

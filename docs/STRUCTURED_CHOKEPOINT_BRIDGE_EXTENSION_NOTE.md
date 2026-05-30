@@ -7,10 +7,10 @@ This note records the narrow follow-up to the retained structured chokepoint
 bridge.
 
 Script:
-[`scripts/structured_chokepoint_bridge_extension.py`](/Users/jonreilly/Projects/Physics/scripts/structured_chokepoint_bridge_extension.py)
+[`scripts/structured_chokepoint_bridge_extension.py`](../scripts/structured_chokepoint_bridge_extension.py)
 
 Log:
-[`logs/2026-04-04-structured-chokepoint-bridge-extension.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-structured-chokepoint-bridge-extension.txt)
+[`logs/2026-04-04-structured-chokepoint-bridge-extension.txt`](../logs/2026-04-04-structured-chokepoint-bridge-extension.txt)
 
 ## Setup
 
@@ -42,7 +42,7 @@ larger layer counts while keeping the canonical mirror readout fixed.
 ## Expected Readout
 
 The extension should be interpreted alongside the base bridge note:
-- [`docs/STRUCTURED_CHOKEPOINT_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/STRUCTURED_CHOKEPOINT_BRIDGE_NOTE.md)
+- [`docs/STRUCTURED_CHOKEPOINT_BRIDGE_NOTE.md`](../docs/STRUCTURED_CHOKEPOINT_BRIDGE_NOTE.md)
 
 This note does not replace the canonical bridge note. It only answers the
 larger-N follow-up.

@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_no_restore_farfield.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_no_restore_farfield.py)
-- [`logs/2026-04-05-gate-b-no-restore-farfield.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-no-restore-farfield.txt)
+- [`scripts/gate_b_no_restore_farfield.py`](../scripts/gate_b_no_restore_farfield.py)
+- [`logs/2026-04-05-gate-b-no-restore-farfield.txt`](../logs/2026-04-05-gate-b-no-restore-farfield.txt)
 
 ## Question
 
@@ -60,9 +60,9 @@ The honest bounded statement is:
 
 Read this with:
 
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
 
 The use case is simple:
 

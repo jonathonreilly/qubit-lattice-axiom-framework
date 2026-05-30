@@ -5,7 +5,7 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_generated_support_recovery_basin.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_generated_support_recovery_basin.py)
+- [`scripts/source_resolved_generated_support_recovery_basin.py`](../scripts/source_resolved_generated_support_recovery_basin.py)
 
 ## Question
 

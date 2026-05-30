@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/wave_amplification_near_horizon.py`](/Users/jonreilly/Projects/Physics/scripts/wave_amplification_near_horizon.py)
-- [`logs/2026-04-05-wave-amplification-near-horizon.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-wave-amplification-near-horizon.txt)
+- [`scripts/wave_amplification_near_horizon.py`](../scripts/wave_amplification_near_horizon.py)
+- [`logs/2026-04-05-wave-amplification-near-horizon.txt`](../logs/2026-04-05-wave-amplification-near-horizon.txt)
 
 ## Question
 

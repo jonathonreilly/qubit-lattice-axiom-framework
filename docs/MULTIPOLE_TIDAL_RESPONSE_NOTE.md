@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/multipole_tidal_response_probe.py`](/Users/jonreilly/Projects/Physics/scripts/multipole_tidal_response_probe.py)
-- [`logs/2026-04-06-multipole-tidal-response-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-multipole-tidal-response-probe.txt)
+- [`scripts/multipole_tidal_response_probe.py`](../scripts/multipole_tidal_response_probe.py)
+- [`logs/2026-04-06-multipole-tidal-response-probe.txt`](../logs/2026-04-06-multipole-tidal-response-probe.txt)
 
 ## Question
 

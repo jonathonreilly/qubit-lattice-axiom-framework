@@ -41,8 +41,8 @@ So this is a real retained branch, not a replacement for the mirror flagship.
 
 Primary artifact chain:
 
-- [`scripts/lattice_3d_dense_10prop.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_dense_10prop.py)
-- [`logs/2026-04-04-lattice-3d-dense-10prop.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-lattice-3d-dense-10prop.txt)
+- [`scripts/lattice_3d_dense_10prop.py`](../../scripts/lattice_3d_dense_10prop.py)
+- [`logs/2026-04-04-lattice-3d-dense-10prop.txt`](../../logs/2026-04-04-lattice-3d-dense-10prop.txt)
 
 ## Retained card
 

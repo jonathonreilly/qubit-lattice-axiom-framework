@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/action_power_scaling_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/action_power_scaling_sweep.py)
-- Log: [`logs/2026-04-04-action-power-scaling-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-action-power-scaling-sweep.txt)
+- Script: [`scripts/action_power_scaling_sweep.py`](../scripts/action_power_scaling_sweep.py)
+- Log: [`logs/2026-04-04-action-power-scaling-sweep.txt`](../logs/2026-04-04-action-power-scaling-sweep.txt)
 
 This is a bounded replay on one fixed retained family:
 

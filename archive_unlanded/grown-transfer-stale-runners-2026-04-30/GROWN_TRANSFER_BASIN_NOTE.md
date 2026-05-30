@@ -15,13 +15,13 @@
 
 ## Artifact chain
 
-- [`scripts/GROWN_TRANSFER_BASIN_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/GROWN_TRANSFER_BASIN_SWEEP.py)
-- [`scripts/GROWN_TRANSFER_BASIN_TARGETED.py`](/Users/jonreilly/Projects/Physics/scripts/GROWN_TRANSFER_BASIN_TARGETED.py)
-- [`scripts/GROWN_TRANSFER_BASIN_DIAG.py`](/Users/jonreilly/Projects/Physics/scripts/GROWN_TRANSFER_BASIN_DIAG.py)
+- [`scripts/GROWN_TRANSFER_BASIN_SWEEP.py`](../../scripts/GROWN_TRANSFER_BASIN_SWEEP.py)
+- [`scripts/GROWN_TRANSFER_BASIN_TARGETED.py`](../../scripts/GROWN_TRANSFER_BASIN_TARGETED.py)
+- [`scripts/GROWN_TRANSFER_BASIN_DIAG.py`](../../scripts/GROWN_TRANSFER_BASIN_DIAG.py)
 - retained grown-row controls:
-  [`docs/FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md)
+  [`docs/FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md`](../../docs/FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md)
   and
-  [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
+  [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](../../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
 
 ## Question
 
@@ -104,11 +104,11 @@ That maps cleanly onto the current basin result:
 
 Relevant older notes:
 
-- [`docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
-- [`docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md)
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md)
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md)
+- [`docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
+- [`docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md`](../../docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](../../docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md`](../../docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md`](../../docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md)
 
 ## Final Verdict
 

@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/ordered_lattice_packet_reidentification.py`](/Users/jonreilly/Projects/Physics/scripts/ordered_lattice_packet_reidentification.py)
-- Log: [`logs/2026-04-04-ordered-lattice-packet-reidentification.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-ordered-lattice-packet-reidentification.txt)
+- Script: [`scripts/ordered_lattice_packet_reidentification.py`](../scripts/ordered_lattice_packet_reidentification.py)
+- Log: [`logs/2026-04-04-ordered-lattice-packet-reidentification.txt`](../logs/2026-04-04-ordered-lattice-packet-reidentification.txt)
 
 This is the smallest honest control I could build on the retained ordered-
 lattice family:
@@ -88,8 +88,8 @@ This note is the natural follow-on to
 
 The relaunch companion is:
 
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
 
 ## Best next move
 

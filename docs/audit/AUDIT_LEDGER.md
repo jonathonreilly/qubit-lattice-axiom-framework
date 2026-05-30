@@ -1117,6 +1117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -11150,6 +11151,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No combination of finite-order PT truncation, tadpole improvement, and Pade resummation tested in the runner brings <P>_analytic within 5% of the MC value.  _(class `D`)_
 - **chain closes:** False — The finite arithmetic over the supplied coefficients closes conditionally, but the retained chain does not close because the NSPT coefficient packet, MC comparator, and F2 scale are imported external inputs with no supplied retained authority. The source also contains a precision overstatement in the tadpole-improved Pade family.
 - **rationale:** The runner genuinely computes the truncations, fixed points, and Pade grids from its hard-coded coefficient list; it is not merely printing PASS constants. However, the load-bearing coefficient packet, <P>_MC=0.5934 comparator, and F2_SCALE_PERCENT are external imported values, so the result is a comparator-bound arithmetic check rather than a class C derivation from the framework baseline. The source also overstates the T4 tadpole-improved Pade precision: runner output gives [1/2]_TI=0.910668 and [2/1]_TI=0.910645, which are more than 1e-5 away from 0.910550, although the broad >5% obstruction still holds. The no-go rhetoric is otherwise scoped to the tested finite weak-coupling/tadpole/Pade route and leaves non-perturbative routes open.
+- **auditor confidence:** high
+
+### `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic consequences of the supplied SU(3) strong-coupling coefficient table and leading u=beta/18 substitution: Padé[3/3]=3/5 at u=1/3, conformal checks, c6 sensitivity, Padé[4/4] value, and the Borel-Padé positive-pole witness.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-235949-8500e614-plaquette_beta6_strong_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied coefficients c_1=1, c_4=4, c_6=24 with c_2=c_3=c_5=0, the Padé[3/3] linear system gives P(u)=u-6u^3 and Q(u)=1-6u^2-4u^3, hence Padé[3/3](1/3)=3/5.  _(class `A`)_
+- **chain closes:** False — The finite Padé algebra closes over the supplied coefficient dictionary, and independent recomputation matches the displayed Padé, conformal, sensitivity, Padé[4/4], and Borel-pole formulas. The full chain does not close because the restricted packet supplies no retained derivation or accepted axiom-premise for the Münster-Drouffe-Zuber coefficients or the leading u(beta)=beta/(2N^2) setup.
+- **rationale:** The runner genuinely solves the Padé systems in exact rational arithmetic rather than merely printing PASS, and the displayed finite algebra checks out under the stated coefficient inputs. However, the runner hard-codes the strong-coupling coefficient table, the leading beta-to-u normalization, and the MC comparison value; no one-hop retained authority for the first two appears in the packet. The MC checks are comparator measurements only and are not load-bearing for closure. Therefore the result is a sound conditional algebra lemma, not a closed derivation from retained inputs.
 - **auditor confidence:** high
 
 ### `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10`

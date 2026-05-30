@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""P2 determinant-realization bridge, conditional on the fermionic frame.
+"""P2 determinant-realization bridge, conditional on supplied frame data.
 
 In-repo verification companion for
 docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md.
 
 This runner does NOT introduce new derivations; it re-exhibits, on finite
-carriers, the three retained algebraic facts that the note ASSEMBLES, and
-verifies the SEPARABILITY crux (relabeling-invariance) that re-attributes the
-P2 realization residual from AC_phi_lambda (wrong) to the substep-1
-fermionic-statistics selection FS (right).
+carriers, the retained finite algebraic facts that the note ASSEMBLES, and
+verifies the SEPARABILITY crux (relabeling-invariance). The repaired note is
+explicitly conditional on FS, on the supplied matter-operator identification
+D = M_KS, and on the supplied premise that AC_phi_lambda is only an S_3
+relabeling of the hw=1 triplet.
 
   BLOCK 1 -- BEREZIN GAUSSIAN-DETERMINANT IDENTITY.
     The fermion partition function is the finite Grassmann Gaussian
@@ -18,7 +19,8 @@ fermionic-statistics selection FS (right).
     Berezin formula and match sympy's exact det(M) for generic 1x1, 2x2, 3x3 M.
     (Method re-used from the retained Berezin runner
     scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py.)
-    Setting M = D + J, this is the bridge core: the readout IS det(D+J).
+    Setting the supplied M = D + J, this is the bridge core: the readout is
+    det(D+J) on that supplied frame.
 
   BLOCK 2 -- STAGGERED DETERMINANT POSITIVITY (zero-source surface).
     Build the free staggered Kogut-Susskind operator M_KS (clean temporal hop
@@ -37,8 +39,9 @@ fermionic-statistics selection FS (right).
         det(P X P^dag) = det(X),  spec(P X P^dag) = spec(X),  Z invariant,
     to machine precision. Hence the determinant readout is BLIND to AC_phi_lambda
     (which is exactly a species relabeling / delta mass-pattern of the hw=1
-    triplet). This is the concrete witness for the residual RE-ATTRIBUTION:
-    the realization bridge's residual is FS, NOT AC_phi_lambda.
+    triplet). This is the concrete witness for the residual re-attribution
+    under the supplied relabeling premise: the realization bridge's residual is
+    FS, not AC_phi_lambda.
     (Method re-used from
     scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py Task B.)
 
@@ -240,8 +243,7 @@ def check_relabeling_invariance() -> list[tuple[str, bool]]:
     """det(P X P^dag) = det(X), spec(P X P^dag) = spec(X), Z invariant, under
     EVERY S_3 relabeling of the hw=1 triplet (and embedded staggered-mode
     relabelings of det(M_KS + m I)). This is the witness that the determinant
-    readout is BLIND to AC_phi_lambda (a relabeling) -> residual = FS, NOT
-    AC_phi_lambda."""
+    readout is BLIND to AC_phi_lambda under the supplied relabeling premise."""
     out: list[tuple[str, bool]] = []
 
     # --- (i) all six S_3 permutations on the hw=1 triplet operator ---
@@ -324,8 +326,8 @@ def check_relabeling_invariance() -> list[tuple[str, bool]]:
 
 def main() -> int:
     print("=" * 78)
-    print("P2 DETERMINANT-REALIZATION BRIDGE, CONDITIONAL ON THE FERMIONIC FRAME")
-    print("assembly + separability + residual re-attribution (FS, not AC_phi_lambda)")
+    print("P2 DETERMINANT-REALIZATION BRIDGE, CONDITIONAL ON SUPPLIED FRAME DATA")
+    print("assembly + separability under supplied D=M_KS and AC relabeling premises")
     print("=" * 78)
 
     sections: list[tuple[str, list[tuple[str, bool]]]] = [
@@ -333,7 +335,7 @@ def main() -> int:
          check_berezin()),
         ("BLOCK 2  staggered determinant positivity (zero-source, phase-free)",
          check_det_positivity()),
-        ("BLOCK 3  relabeling-invariance SEPARABILITY  (residual = FS, NOT AC_phi_lambda)",
+        ("BLOCK 3  relabeling-invariance SEPARABILITY under supplied AC relabeling premise",
          check_relabeling_invariance()),
     ]
 
@@ -352,18 +354,15 @@ def main() -> int:
     print("\n" + "=" * 78)
     print("INTERPRETATION")
     print("-" * 78)
-    print("Block 1: the fermion partition function on the fermionic frame IS")
-    print("  det(D+J) (Berezin), so the readout W = log|det(D+J)| IS the generator.")
-    print("Block 2: on the zero-source staggered surface det(M_KS+mI) > 0, so")
+    print("Block 1: on the supplied fermionic frame, the finite Berezin")
+    print("  partition function is det(D+J), so W = log|det(D+J)| is the generator.")
+    print("Block 2: on the supplied zero-source staggered surface det(M_KS+mI) > 0, so")
     print("  log|det| = log det (no phase) -- the realization half of P2 there.")
     print("Block 3 (CRUX): det, spec(H_hat), Z are invariant under ALL S_3")
-    print("  relabelings of the hw=1 triplet and the delta mass-pattern. Since")
-    print("  AC_phi_lambda IS exactly such a relabeling, the determinant readout")
-    print("  is PROVABLY BLIND to it. The realization residual is therefore the")
-    print("  substep-1 FERMIONIC-STATISTICS selection FS (an admission; NOT forced")
-    print("  by the Axiom 1 / Axiom 2 baseline), NOT AC_phi_lambda. The")
-    print("  second-transcendental (Lindemann)")
-    print("  obstruction lives in substep-4 / AC_phi_lambda and is ORTHOGONAL.")
+    print("  relabelings of the hw=1 triplet and the delta mass-pattern. Given")
+    print("  the supplied premise that AC_phi_lambda is only such a relabeling,")
+    print("  the determinant readout is blind to it. The remaining realization")
+    print("  residual is FS plus the supplied D=M_KS and AC-relabeling premises.")
     print("=" * 78)
     print(f"SCORECARD: PASS={npass} FAIL={nfail}")
     return 0 if nfail == 0 else 1

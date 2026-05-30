@@ -1,0 +1,45 @@
+loop_slug: p2-det-realization-supplied-frame-20260530
+date: 2026-05-30
+mode: science-fix
+target_claim_id: observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28
+target_note: docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md
+target_runner: scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py
+goal: "Repair the audited conditional P2 determinant-realization bridge without adding axioms."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Conditional on FS, supplied D=M_KS matter-operator identification, and supplied AC_phi_lambda-as-S3-relabeling premise."
+proposal_allowed: false
+proposal_allowed_reason: "The branch does not prove D=M_KS as the actual framework matter operator or the AC relabeling premise."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Keep finite determinant/relabeling algebra; expose missing matter-operator and AC premises as supplied."
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md
+  - scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py
+  - logs/runner-cache/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+open_imports:
+  - "Actual framework matter-operator identification D=M_KS."
+  - "AC_phi_lambda is only an S3 relabeling of the hw=1 triplet."
+verification:
+  - "python3 -m py_compile scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py"
+  - "PYTHONPATH=scripts python3 scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py -> SCORECARD: PASS=27 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py --force --push-mode none --allow-non-main --concurrency 1"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+repo_status_after_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  audit_queue_ready: true
+  audit_queue_criticality: leaf
+next_exact_action: "Open draft review PR for supplied-frame P2 determinant realization."
+stop_condition: "PR opened and verified; then pivot to final uncovered conditional."

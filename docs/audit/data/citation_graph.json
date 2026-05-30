@@ -43691,11 +43691,13 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "dimensional_gravity_table"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "891be2013904ab0e485fd6ad4c426b82a0c81383939a52c80b351d3e90901493",
+      "note_hash": "244abd4871e51469680d9bc80b4d54e99b674a9a21e3ec4f8b4f939af9e2f30c",
       "path": "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
-      "runner_path": "scripts/bertrand_stable_orbit_green_kernel_bridge.py",
+      "runner_path": null,
       "title": "Bertrand Stable-Orbit Upper-Bound Support"
     },
     "beta6_plaquette_closure_note_2026-05-29": {

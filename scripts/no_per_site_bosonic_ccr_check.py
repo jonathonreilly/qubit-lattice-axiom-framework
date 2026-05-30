@@ -1,13 +1,41 @@
-"""No per-site bosonic CCR check on dim-2 Cl(3) site Hilbert space."""
+"""No exact bosonic CCR inside the Axiom 1 per-site qubit algebra M_2(C)."""
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md"
+OLD_DEP = "AXIOM_FIRST_" + "CL3_PER_SITE_UNIQUENESS"
+
+
+def note_firewall() -> bool:
+    text = NOTE.read_text()
+    checks = {
+        "cites minimal axioms Axiom 1": "minimal_axioms_2026-05-20" in text.lower()
+        or "MINIMAL_AXIOMS_2026-05-20.md" in text,
+        "uses Axiom 1 qubit algebra M_2(C)": "M_2(C)" in text and "Axiom 1" in text,
+        "no old uniqueness node in YAML": OLD_DEP not in text,
+        "classified as no_go": "claim_type_author_hint: no_go" in text,
+    }
+    for label, ok in checks.items():
+        print(f"  {label}: {'PASS' if ok else 'FAIL'}")
+    return all(checks.values())
 
 
 def main() -> None:
     print("=" * 72)
     print("NO PER-SITE BOSONIC CCR CHECK")
     print("=" * 72)
+    print()
+
+    print("-" * 72)
+    print("SOURCE FIREWALL: Axiom 1 local M_2(C), not old per-site uniqueness")
+    print("-" * 72)
+    t0_ok = note_firewall()
+    print(f"  STATUS: {'PASS' if t0_ok else 'FAIL'}")
     print()
 
     # ----- Test 1: trace obstruction -----
@@ -80,11 +108,12 @@ def main() -> None:
     print()
 
     print("=" * 72)
+    print(f"  Source firewall (Axiom 1 local algebra):           {'PASS' if t0_ok else 'FAIL'}")
     print(f"  Test 1 (trace obstruction tr([A,B])=0):       {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 (bosonic CCR ⇒ contradiction):         {'PASS' if t2_ok else 'FAIL'}")
     print(f"  Test 3 (Pauli ladder is not bosonic CCR):     {'PASS' if t3_ok else 'FAIL'}")
     print(f"  Test 4 (bosonic CCR works infinite-dim):      {'PASS' if t4_ok else 'FAIL'}")
-    all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok])
+    all_ok = all([t0_ok, t1_ok, t2_ok, t3_ok, t4_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:
         raise SystemExit(1)

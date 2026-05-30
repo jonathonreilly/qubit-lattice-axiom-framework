@@ -1,93 +1,147 @@
-# Koide Native Zero-Section Formal Algebra Packet
+# Koide Native Zero-Section Defined Route Algebra
 
-**Date:** 2026-04-24 (2026-05-29 scope repair).
-**Runner:** `scripts/frontier_koide_native_zero_section_closure_route.py`
-**Claim type:** bounded_theorem.
-**Status:** bounded-support formal algebra; not a retained Koide closure.
+**Date:** 2026-04-24 (defined-route repair: 2026-05-27)
+**Type:** bounded_theorem
+**Primary runner:** `scripts/frontier_koide_native_zero_section_closure_route.py`
 
-## 2026-05-29 Scope Repair
+## Source Boundary
 
-The conditional audit accepted the finite-dimensional algebra but found three
-physical/readout identifications still open:
+The binding claim is entirely inside the finite algebraic route object
+`(D1)-(D5)` below. This row may be cited only as bounded defined-route
+support. It is not a physical Koide `Q`/`delta` closure unless separate
+bridge theorems derive the physical source/readout identifications.
 
-1. the charged-lepton scalar readout as a zero-source coefficient;
-2. the physical Brannen endpoint as the whole real nontrivial `Z_3` primitive;
-3. the open determinant-line endpoint readout as unit-preserving and based.
+## Scope Repair (2026-05-27)
 
-This repair removes those physical identifications from the load-bearing
-surface. The current row is only a formal zero-section algebra packet. It
-proves what follows after the formal substitutions are supplied; it does not
-derive why those substitutions are the physical charged-lepton or Brannen
-readouts.
+Prior versions treated three physical/readout identifications as open
+inputs:
 
-No new axiom is introduced. No mass data, fitted Koide value, target endpoint,
-or observational selector is used.
+1. the charged-lepton scalar readout is the zero-source source-response
+   coefficient;
+2. the Brannen endpoint is the whole real nontrivial `Z_3` primitive;
+3. the open determinant-line endpoint readout is unit-preserving/based.
 
-## In-Scope Theorem
+This repair does **not** derive those physical identifications. Instead,
+it narrows the binding claim to a self-contained finite route algebra.
+The zero section, the real `Z_3` primitive endpoint, the based
+determinant-line unit, and the finite root-of-unity scalar are definitions
+of the route object. The theorem proves what follows inside that object.
 
-The runner verifies the following finite symbolic claims.
+Explicitly out of scope:
 
-1. For the formal source label `z`, define
+- physical Koide closure;
+- proof that the physical charged-lepton readout selects the zero source;
+- proof that the physical Brannen endpoint is the whole real nontrivial
+  `Z_3` primitive;
+- proof that a physical determinant-line readout is based;
+- any claim that the route algebra is selected by the current physical
+  carrier.
 
-   ```text
-   w_+ = (1 + z)/2,
-   r = (1 - w_+)/w_+,
-   Q = (1 + r)/3.
-   ```
+The old conditional route remains useful as science because it identifies
+which zero-section choices would close the algebra. This repair makes that
+object reviewable without smuggling the three physical bridges into the
+bounded theorem.
 
-   The formal zero section `z = 0` gives `w_+ = 1/2`, `K_TL = 0`, and
-   `Q = 2/3`. A nonzero source label remains a falsifier; for example
-   `z = -1/3` gives `Q = 1`.
+## Defined Route Algebra
 
-2. On the real nontrivial `Z_3` doublet with generator rotation by `2 pi/3`,
-   the equivariant real endomorphisms are exactly `a I + b J`, `J^2 = -I`.
-   Solving the equivariant idempotent equation gives only `0` and `I`.
-   Hence a rank-one selected/spectator line inside the real doublet is not
-   `Z_3`-equivariant data.
+All statements below are definitions of the bounded object under study,
+not framework axioms or physical bridge theorems.
 
-3. For a formal based endpoint map
+- **(D1) Source-label zero-section algebra.** Let `z` be a rational
+  source label and define
+  ```text
+  w_plus(z) = (1 + z) / 2,
+  Q(w)      = (1 + (1 - w) / w) / 3,
+  K_TL(w)   = (((1 - w) / w)^2 - 1) / (4 * ((1 - w) / w)).
+  ```
+  The zero section is the defined route choice `z = 0`.
 
-   ```text
-   F(phi) = phi + c,
-   ```
+- **(D2) Real nontrivial `Z_3` primitive algebra.** Let `R` be rotation
+  by `2pi/3` on `R^2` and let `J` be the standard complex structure.
+  The real equivariant endomorphism algebra is the commutant
+  ```text
+  {a I + b J : a,b in R},    J^2 = -I.
+  ```
 
-   the based-unit condition `F(0) = 0` forces `c = 0`. An unbased torsor
-   coordinate remains the exact falsifier; for example `c = 1/9` shifts the
-   same closed value to `1/3`.
+- **(D3) Rank-one boundary comparison.** A rank-one line projector inside
+  the real doublet is allowed as a comparison object, but it is not part
+  of the defined native real-primitive endpoint unless it commutes with
+  `R`.
 
-4. The APS fixed-point arithmetic in the runner gives
+- **(D4) Based determinant-line endpoint algebra.** For the open endpoint
+  coordinate
+  ```text
+  F(phi) = phi + c,
+  ```
+  the route imposes the based unit condition `F(0) = 0`.
 
-   ```text
-   eta_APS = 2/9.
-   ```
+- **(D5) Finite `Z_3` scalar and endpoint law.** Let
+  `omega = exp(2pi i / 3)` and define the finite route scalar
+  ```text
+  eta_Z3 = (1/3) * sum_{k=1,2} 1 / ((omega^k - 1) * (omega^(2k) - 1)).
+  ```
+  Define the route endpoint law
+  ```text
+  delta_open = selected * eta_Z3 + c.
+  ```
 
-   Under the formal substitutions `selected = 1`, `spectator = 0`, and
-   `c = 0`, the formal open endpoint equals `eta_APS = 2/9`.
+## Theorem
 
-These are algebraic implications on supplied formal variables. They are not a
-physical charged-lepton Koide closure theorem.
+Inside `(D1)-(D5)`, the following statements hold exactly.
 
-## Non-Claims
+1. The zero source gives `w_plus = 1/2`, `K_TL = 0`, and `Q = 2/3`.
+2. A nonzero source label remains a falsifier: for example
+   `z = -1/3` gives `w_plus = 1/3` and `Q = 1`.
+3. The real nontrivial `Z_3` primitive has only equivariant idempotents
+   `0` and `I`; hence no internal spectator projector is native to that
+   real primitive.
+4. No real rank-one line projector commutes with the defined rotation
+   `R`; a rank-one selected line is extra boundary data relative to the
+   real primitive.
+5. The finite root-of-unity scalar is `eta_Z3 = 2/9`.
+6. The based endpoint condition forces `c = 0`; an unbased torsor offset,
+   e.g. `c = 1/9`, is an exact falsifier giving `delta_open = 1/3`.
+7. With `selected = 1`, `spectator = 0`, and `c = 0`, the route endpoint
+   gives `delta_open = eta_Z3 = 2/9`.
 
-This row does not prove:
+## Proof Sketch
 
-- that the charged-lepton scalar readout is the zero-source coefficient;
-- that the physical Brannen endpoint is the whole real nontrivial `Z_3`
-  primitive;
-- that the physical open determinant-line readout is unit-preserving or based;
-- retained-only closure of `Q = 2/3`, `delta_open = 2/9`, or full
-  dimensionless Koide;
-- a replacement for any prior no-go against rank-one selected-line routes.
+The proof is finite-dimensional symbolic algebra, checked by the runner.
 
-Those physical/readout identifications remain separate frontier problems and
-are not load-bearing inputs for this narrowed row.
+- `(D1)` gives `w_plus(0) = 1/2`. Substitution into `Q(w)` and
+  `K_TL(w)` gives `Q = 2/3` and `K_TL = 0`. Substitution at
+  `z = -1/3` gives the stated falsifier.
+- Solving `X R = R X` gives the commutant `aI + bJ`. Solving
+  `(aI+bJ)^2 = aI+bJ` gives only `(a,b) = (0,0)` and `(1,0)`.
+- A rank-one projector `v(alpha)v(alpha)^T` has no real `alpha` solution
+  to the commutator equation with `R`.
+- The unit equation `F(0)=0` for `F(phi)=phi+c` gives `c=0`.
+- Direct simplification of the finite `Z_3` sum gives `eta_Z3 = 2/9`;
+  substituting the route endpoint values gives `delta_open = 2/9`.
 
-## Falsifiers
+## What This Claims
 
-- A counterexample to the real `Z_3` commutant/idempotent calculation.
-- A `Z_3`-equivariant real rank-one projector inside the nontrivial doublet.
-- A based endpoint map with `F(0) = 0` and nonzero additive offset `c`.
-- A mismatch in the APS arithmetic check for the supplied fixed-point formula.
+- Exact bounded route-algebra support for the zero-section pattern.
+- Exact representation-theoretic exclusion of a native spectator split
+  inside the defined real `Z_3` primitive.
+- Exact endpoint arithmetic for the based route object.
+
+## What This Does Not Claim
+
+- No physical Koide closure is asserted.
+- No physical charged-lepton zero-source readout is derived.
+- No physical Brannen endpoint identification is derived.
+- No physical determinant-line based readout is derived.
+- No observed mass data, fitted Koide value, `H_*` pin, or target endpoint
+  is consumed.
+
+## Relation To The Parent Koide Packet
+
+The parent Koide packet keeps the physical closure problem open. This row
+now supplies only a bounded algebraic route certificate: if future
+independent work derives the physical zero-section/readout bridges, this
+route algebra identifies the exact downstream substitutions they would
+need to support. Until then, it is not physical closure.
 
 ## Verification
 
@@ -100,13 +154,15 @@ python3 scripts/frontier_koide_native_zero_section_closure_route.py
 Expected closeout:
 
 ```text
-KOIDE_NATIVE_ZERO_SECTION_FORMAL_ALGEBRA=TRUE
-FORMAL_ZERO_SECTION_IMPLIES_Q=TRUE
-FORMAL_REAL_Z3_PRIMITIVE_HAS_NO_EQUIVARIANT_SPECTATOR=TRUE
-FORMAL_BASED_ENDPOINT_IMPLIES_DELTA=TRUE
+KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE
+DEFINED_ROUTE_ZERO_SECTION_IMPLIES_Q=TRUE
+DEFINED_ROUTE_REAL_Z3_PRIMITIVE_HAS_NO_SPECTATOR_IDEMPOTENT=TRUE
+DEFINED_ROUTE_UNIT_ENDPOINT_IMPLIES_C_ZERO=TRUE
+DEFINED_ROUTE_ENDPOINT_IMPLIES_DELTA=TRUE
 PHYSICAL_KOIDE_CLOSURE_CLAIMED=FALSE
-ACTUAL_CURRENT_SURFACE_STATUS=BOUNDED_SUPPORT
-OPEN_IDENTIFICATION_THEOREMS_LOAD_BEARING=FALSE
-AUDIT_REQUIRED_BEFORE_EFFECTIVE_RETAINED=TRUE
-BARE_RETAINED_ALLOWED=FALSE
+PHYSICAL_BRIDGE_IDENTIFICATIONS_CLAIMED=FALSE
 ```
+
+The older `frontier_koide_native_zero_section_nature_review.py` route
+review remains a historical physical-closure guard and is not promoted by
+this bounded algebraic repair.

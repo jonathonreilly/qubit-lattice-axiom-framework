@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-20
 **Status:** proposal — pre-audit bounded support / repair-route note
-**Type:** bounded_theorem
+**Type:** bounded support
 **Status authority:** independent audit lane only.
 **Repair route for:** the `audited_failed`
 `BORN_RULE_ANALYSIS_2026-04-11.md` lane (the gravitational Hartree
@@ -18,36 +18,26 @@ dim-2 extension), Lüders 1951 / Cassinelli-Lahti 1995 (composition-
 consistent update rule), the no-extra-structure premise on the
 pre-record reference (from the companion tracial-state note), and a
 record-as-Kraus identification of the framework's persistent-record
-lane (currently in-flight, not retained). Closure of any one of these
-imports would tighten the route; closure of all five would promote it
-to a retained derivation.
+lane (currently in-flight, not effective authority). Closure of any one of
+these imports would tighten the route; closure of all five would only justify a
+future audit proposal, not a status change from this note.
 
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+## 2026-05-28 Science-Fix Re-Audit Scope
 
-The 2026-05-28 audit verdict was `audited_conditional`:
+This note is narrowed to a repair-route map over explicitly imported
+Gleason-Busch, Luders/update, pre-record identification, and persistent-record
+premises. It does not derive the probability/readout rule from the current
+framework surface and does not close the Born-rule lane.
 
-> *"The retained tracial-state dependency now closes only the unique-tracial-state theorem, and explicitly does not identify that state with a pre-record physical reference. The source note still imports the no-extra-structure/pre-record identi"*
-
-with repair: *"missing_bridge_theorem: land and cite retained bridge theorems for pre-record identification, Lüders/update or resolved projective-measurement conditioning, and persistent-record-as-Kraus/readout mapping; then re-audit the Born derivation w"*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The Gleason-Busch uniqueness step (Steps 1 and 2 of the derivation) that determines the form `p(E) = Tr(σ·E)` from the one-qubit operator algebra on the `Z^3` spatial substrate plus standard probability axioms (P1)-(P3), verified by runner-referenced operator-algebraic argument on the finite qubit-lattice algebra; and the algebraic step tracing `σ` to the unique tracial state `ρ_ref = ⊗_x I/2` derived in the companion tracial-state note.
-- **NON-load-bearing (split off / admitted):** The identification of the unique tracial state with the physical pre-record reference (no-extra-structure premise), the Lüders/compositional-consistency update rule (U4), and the formal connection of the persistent-record lane to Kraus operators — all three are admitted, not-derived inputs recorded as explicit external premises; the Born-rule conclusion is conditional on these bridges being independently retained.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
-
-## What this note derives
+## What this route formalizes
 
 On the qubit-lattice framework (A1+A2 in qubit form per
 `MINIMAL_AXIOMS_2026-05-20.md`), with the pre-record reference state
 `ρ_ref = ⊗_x I/2` derived in
 `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`,
 the Born rule for measurement outcomes follows from operator-algebraic
-and probability-theoretic standard mathematics:
+and probability-theoretic standard mathematics, the repair route would have
+the following form if every imported premise below were supplied:
 
 > For any POVM `{E_i}` on the qubit-lattice operator algebra, the
 > probability of outcome `i` for the pre-record system is

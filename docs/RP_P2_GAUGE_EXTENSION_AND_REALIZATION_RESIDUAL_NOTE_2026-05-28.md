@@ -1,4 +1,4 @@
-# RP -> P2: Fixed-SU(3) Gauge Extension + Labeling-Indifference Tightening of the Realization Residual
+# Fixed-Gauge RP Transfer Positivity + Standalone Relabeling Invariance
 
 **Date:** 2026-05-28
 **Type:** bounded_theorem
@@ -10,17 +10,15 @@ pipeline after independent review.
 **Authority role:** standalone extension note. Result (A) extends the free
 two-step transfer-matrix positivity of the reflection-positivity row from the
 `U = 1` case to a fixed, arbitrary `SU(3)` (and `U(1)`) spatial gauge
-background in temporal gauge, config-by-config. Result (B) establishes that
-the reflection-positivity (RP) and the P2 phase-blindness bridge are invariant
-under relabeling of the `hw = 1` corner triplet, so their realization
-dependence is the substep-(1)+(2) bounded-closeable candidate and **not** the
-substep-(4) `AC_phi_lambda` species-labeling admission. This refines the
-conservative "modulo `AC_phi_lambda`" residual recorded in `P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md`.
+background in temporal gauge, config-by-config. Result (B) is only the finite
+permutation-invariance theorem that `det(M_KS + m I)`, `spec(H_hat)`, and
+`Z = Tr(e^{-beta H_hat})` are unchanged under relabeling of a chosen
+`hw = 1` triplet. Downstream P2 / `AC_phi_lambda` residual tightening is not
+claimed in this narrowed source note.
 
 ## Claim
 
-Two bounded results, each a strict extension/tightening of an existing row;
-neither closes a gate or removes an admission.
+Two bounded results; neither closes a gate or removes an admission.
 
 - **(A) Gauge extension of RP.** On the staggered-only action surface
   `S = S_G[U] + bar(chi)(M_KS[U] + m I) chi`, `m > 0`, in temporal gauge
@@ -35,20 +33,12 @@ neither closes a gate or removes an admission.
   factors (this per-config fermion factor, the retained determinant weight, the
   retained_bounded gauge-half norm-square).
 
-- **(B) Labeling-indifference tightening.** RP positivity and the P2
-  phase-blindness bridge depend only on `det(M_KS + m I)` and on `spec(H_hat)`
-  (equivalently `Z = Tr e^{-beta H_hat}`). These are basis/relabeling
-  invariants: under any permutation/relabeling of the `hw = 1` corner-triplet
-  staggered modes (conjugation by a permutation unitary), `det`, `spec`, and
-  `Z` are unchanged. Therefore RP and P2 **cannot** depend on substep-(4)
-  `AC_phi_lambda` (which `hw = 1` state is named `e`/`mu`/`tau`) at all. The
-  realization dependence of the RP/P2 bridges is the staggered-Dirac substeps
-  (1) Grassmann realization + (2) kinetic structure ONLY -- a bounded-closeable
-  candidate (the unaudited synthesis note `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`)
-  -- and is independent of `AC_phi_lambda`. This strictly improves the
-  `P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md`
-  residual from "modulo `AC_phi_lambda`" to "modulo bounded-closeable
-  substeps (1)+(2)".
+- **(B) Standalone relabeling invariance.** Under any permutation/relabeling
+  of the selected `hw = 1` corner-triplet staggered modes (conjugation by a
+  permutation unitary), `det(M_KS + m I)`, `spec(H_hat)`, and
+  `Z = Tr e^{-beta H_hat}` are unchanged. This is a finite determinant /
+  spectrum / trace theorem only. It does not assert any downstream P2
+  phase-blindness or `AC_phi_lambda` residual conclusion.
 
 Numbers (primary runner, expected `SCORECARD: PASS=7 FAIL=0` after the
 modal-formula check): SU(3) per-config positivity over 200 random fixed
@@ -56,8 +46,8 @@ backgrounds (`L_s = 4`, 3 colors), min
 decaying single-particle transfer eigenvalue `mu = 0.146`, `max |Im(mu)| =
 7.2e-16` (spectrum on the positive real axis), min single-particle
 `eig(H_hat[U]) = 0.481 >= 0`, many-body `||T_hat^2 - B^dag B|| = 2.8e-17`,
-`0/200` positivity failures; `U(1)` cross-check `0/200` failures. Labeling
-indifference: `det(M_KS + m I)`, `spec(H_hat)`, and `Z` invariant under all
+`0/200` positivity failures; `U(1)` cross-check `0/200` failures. Relabeling
+invariance: `det(M_KS + m I)`, `spec(H_hat)`, and `Z` invariant under all
 `S_3` `hw = 1` relabelings to `<= 2.2e-15`.
 
 ## Gauge Extension of Reflection Positivity
@@ -225,34 +215,27 @@ background. It does **not** re-derive the determinant weight or the gauge-half
 norm-square (cited deps), and it does **not** claim a from-scratch full
 interacting `SU(3)` RP proof beyond this explicitly scoped product reduction.
 
-## Labeling-Indifference of RP/P2
+## Standalone Relabeling Invariance
 
 ### Invariance Theorem (Positive, Not a No-Go)
 
-> **Theorem (labeling-indifference of RP/P2).** Let `P` be any permutation
-> unitary relabeling the three `hw = 1` corner-triplet staggered modes
+> **Theorem (det/spec/Z relabeling invariance).** Let `P` be any permutation
+> unitary relabeling the three selected `hw = 1` corner-triplet staggered modes
 > (extended by the identity on the rest of the mode space). Then
 > `det(M_KS + m I)`, `spec(H_hat)`, and `Z = Tr(e^{-beta H_hat})` are invariant
-> under conjugation `X -> P X P^dag`. Consequently every quantity on which RP
-> positivity and the P2 phase-blindness bridge depend is invariant under
-> `hw = 1` relabeling.
+> under conjugation `X -> P X P^dag`.
 
 This is a **positive invariance statement**, framed as permutation-invariance
-of `det`/`spec`/trace, not a no-go (see the No-Go Discipline scope check below for why
-the gate does not fire).
+of `det`/`spec`/trace, not a no-go.
 
 **Proof.** `det` and the spectrum (hence any symmetric function of eigenvalues,
 including the trace `Z = Tr(e^{-beta H_hat}) = sum_k e^{-beta E_k}`) are
 invariant under conjugation by any unitary, in particular by a permutation
 unitary `P`: `det(P X P^dag) = det(P) det(X) det(P^dag) = det(X)` since
 `det(P) det(P^dag) = |det(P)|^2 = 1`, and `spec(P X P^dag) = spec(X)` because
-conjugation is a similarity transform. A relabeling of the `hw = 1` triplet is
-exactly such a conjugation. RP positivity is the statement
-`H_hat = -log(T_hat^2) / (2 a_tau) >= 0`, i.e. a property of `spec(H_hat)`; the
-`U`-integrated RP weight uses `det(M_KS + m I)`; the P2 phase-blindness bridge
-(P2 phase-blindness bridge) is `det(M_KS + m I) = Z_vac . Tr(e^{-beta H_hat})` with `Z_vac > 0`,
-i.e. a statement about `det` and `Z`. All three are conjugation invariants,
-hence relabeling invariants. QED.
+conjugation is a similarity transform. A relabeling of the selected
+`hw = 1` triplet is exactly such a conjugation. Therefore these three readouts
+are relabeling invariants. QED.
 
 ### Finite-Carrier Exhibit (Runner)
 
@@ -270,66 +253,19 @@ generic Hermitian triplet operator; (ii) cyclic relabelings of three chosen
 staggered modes embedded in the full `M_KS + m I` mode space. Both leave the
 load-bearing quantities unchanged to machine precision.
 
-### Relation to the AC_phi_lambda Residual
+### Downstream Context Not Claimed Here
 
-The substep-4 labeling no-go note classifies `AC_phi_lambda` as **only** the
-species labeling: which `hw = 1` corner state is named `e`/`mu`/`tau`. Its own
-structural invariant (the orbit-equivariance invariant) states that every
-the minimal axiom surface-derivable property of the corner triplet is invariant under the cyclic
-relabeling `C : c_alpha -> c_{(alpha mod 3) + 1}`. The `AC_phi_lambda` residual
-is exactly the choice of one of the three `C_3`-equivariant bijections
-`{c_1, c_2, c_3} -> {e, mu, tau}` -- a relabeling.
-
-Labeling-indifference of RP/P2 is the statement that the RP/P2 load-bearing
-quantities are invariant under precisely those relabelings. So RP and P2 fall
-entirely inside the substep-4 invariant: they cannot see `AC_phi_lambda`. The
-permutation exhibit (determinant-invariance-trace-invariance) is the concrete witness on a finite carrier.
-
-## The residual tightening (refines P2 phase-blindness bridge)
-
-P2 phase-blindness bridge (the P2 phase-blindness bridge note) conservatively recorded the
-interacting realization residual as "modulo `AC_phi_lambda`". Result (B)
-tightens this:
-
-- RP positivity and P2 phase-blindness depend only on `det(M_KS + m I)` and
-  `spec(H_hat)` the invariance theorem, which are relabeling invariants the finite-carrier exhibit;
-- `AC_phi_lambda` is **only** the `hw = 1` species labeling (substep-4 no-go
-  note), i.e. a relabeling;
-- therefore the RP/P2 bridges' realization dependence is the staggered-Dirac
-  substeps **(1) Grassmann realization + (2) kinetic structure ONLY**, and is
-  **independent** of substep-(4) `AC_phi_lambda`.
-
-Substeps (1)+(2) have a bounded closure **candidate**: the unaudited synthesis
-note `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
-(packaging the substep-1 Grassmann-forcing candidate
-`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` and the
-substep-2 Kawamoto-Smit forcing candidate
-`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`). The
-tightened statement is therefore:
-
-```text
-    P2  reduces to  RP + det-positivity + bounded-closeable realization substeps (1)+(2),
-        NOT to the genuine AC_phi_lambda admission.
-```
-
-This is strictly better than "modulo `AC_phi_lambda`" because substeps (1)+(2)
-are bounded-closeable (a candidate exists, pending audit), whereas
-`AC_phi_lambda` is a genuine admitted-context residual requiring one of
-{labeling convention, `C_3`-breaking dynamics, PDG-empirical} -- and that
-admission is now shown to be irrelevant to RP/P2.
+The P2 phase-blindness bridge and the `AC_phi_lambda` species-labeling residual
+are downstream context only in this narrowed packet. This note does not claim
+to tighten, close, remove, or reroute those residuals. It supplies only the
+finite determinant/spectrum/trace invariance facts that a separate downstream
+row may cite after independent audit.
 
 ## What stays open
 
-- **Substeps (1)+(2) remain bounded-closeable CANDIDATES.** This note does
-  **not** close them. The synthesis note
-  `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md` is
-  unaudited; its bounded closure of the kinetic-and-algebra surface awaits the
-  independent audit lane. Result (B) only re-routes the RP/P2 residual onto
-  this candidate (away from `AC_phi_lambda`); it does not discharge it.
-- **`AC_phi_lambda` is unchanged and unclosed.** This note neither derives nor
-  removes `AC_phi_lambda`; it shows `AC_phi_lambda` is irrelevant to RP/P2. The
-  substep-4 surface remains `bounded_theorem` with `AC_phi_lambda` the
-  minimal-axiom-surface species-labeling residual.
+- **Downstream P2 / realization residuals remain untouched.** This note does
+  not claim any narrowing of P2 phase-blindness, substeps (1)+(2), or
+  `AC_phi_lambda`; those rows require their own retained authorities.
 - **Scalar additivity stays Tier-A.** Scalar additivity on independent subsystems is
   untouched; this note makes no claim about it and does not derive it.
 - **Full interacting `SU(3)` RP from scratch is not claimed.** Result (A) is a
@@ -348,23 +284,19 @@ admission is now shown to be irrelevant to RP/P2.
 | `det(M_KS + m I) >= m^n > 0` config-by-config | RP `U`-integrated weight | retained dep (Case A determinant note) |
 | Gauge-half Cauchy-Schwarz norm-square identity | RP `U`-integrated weight | retained_bounded dep (gauge-half note) |
 | Second quantization `Gamma(t1)` of a free quadratic transfer kernel | many-body two-step transfer | standard free-fermion functorial relation |
-| Substeps (1)+(2) bounded closure candidate | residual target of (B) | unaudited candidate (synthesis note); NOT closed here |
-| Substep (4) `AC_phi_lambda` species labeling | shown irrelevant to RP/P2 (B) | minimal-axiom-surface residual; unchanged, NOT removed |
 
 No fitted values, observed targets, empirical comparators, new unit
 conventions, new axioms, or new Tier-A admissions are introduced. No PDG
 values, lattice-MC measurements, or `g_bare` outputs are consumed.
-`AC_phi_lambda` is not claimed closed; scalar additivity is not derived.
+P2 phase-blindness, `AC_phi_lambda`, and scalar additivity are not derived or
+narrowed here.
 
 ## No-Go Discipline Scope Check
 
 This row is not a `no_go` claim and does not close, weaken, or remove
-`AC_phi_lambda`. Result (B) is a positive conjugation-invariance theorem for
-`det`, `spec(H_hat)`, and `Z`; the phrase "RP/P2 do not depend on
-`AC_phi_lambda`" is restricted to those three load-bearing quantities and is
-only the corollary that a relabeling-invariant construction cannot observe a
-pure species-label relabeling. The substep-4 labeling residual remains open in
-its own lane.
+`AC_phi_lambda`. Result (B) is only a positive conjugation-invariance theorem
+for `det`, `spec(H_hat)`, and `Z`. Any downstream statement about P2
+phase-blindness or `AC_phi_lambda` remains outside this source-note claim.
 
 ## Honest status
 
@@ -375,8 +307,7 @@ by the finite anti-Hermitian-hop modal reduction and checked by the runner
 (`0/200` positivity failures per sampled gauge group; min decaying transfer
 eigenvalue `0.146`; spectrum on the positive real axis to `7e-16`). Result
 (B) is a bounded permutation-invariance theorem with a machine-precision
-exhibit (`<= 2.2e-15`), tightening the P2 phase-blindness bridge residual from
-"modulo `AC_phi_lambda`" to "modulo bounded-closeable substeps (1)+(2)".
+exhibit (`<= 2.2e-15`) for `det`, `spec(H_hat)`, and `Z` only.
 This note does not set or predict an audit outcome; it is not an author-applied
 audit promotion, and independent audit is still required.
 
@@ -387,14 +318,14 @@ What this can support if audit passes:
   "reduction target" gauge text from `U = 1`-only to fixed-background
   config-by-config (the `U`-integrated reduction still rests on the two named
   retained/retained_bounded deps);
-- the P2 phase-blindness row can cite this note to record that its
-  realization residual is the bounded-closeable substeps (1)+(2), not
-  `AC_phi_lambda`.
+- downstream rows may cite this note only for the finite `det/spec/Z`
+  relabeling-invariance facts, not for a P2 or `AC_phi_lambda` conclusion.
 
 What this does not support:
 
-- closure of substeps (1)+(2) (they remain unaudited candidates);
-- any derivation, removal, or weakening of `AC_phi_lambda` itself;
+- closure or rerouting of substeps (1)+(2);
+- any derivation, removal, weakening, or irrelevance claim for `AC_phi_lambda`;
+- any P2 phase-blindness residual narrowing;
 - any derivation of scalar additivity;
 - a from-scratch full interacting `SU(3)` RP proof beyond the named three-factor
   reduction;
@@ -413,34 +344,30 @@ What this does not support:
 
 The two dependencies above are load-bearing and written as markdown links so
 the citation-graph builder records them as upstream edges. The
-realization-gate parent and the substep notes below are **downstream
-consequences / supporting attempts at closing that gate, not upstream
-load-bearing premises of this note**; following the realization-gate parent's
-own `## Citation-graph note` convention, they are
-written as plain-text backtick filenames so the citation-graph builder does
-not parse them as upstream dependency edges:
+realization-gate parent, substep notes, and P2 bridge note below are
+**downstream context, not upstream load-bearing premises of this narrowed
+note**; they are written as plain-text backtick filenames so the citation-graph
+builder does not parse them as upstream dependency edges:
 
 - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` -- context row
   whose free `U = 1` two-step transfer positivity motivated this fixed-gauge
   extension. This note restates the finite transfer construction it needs and
   does not assume the parent row's current audit status.
-- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` -- the open-gate parent
-  whose substep-(1)+(2) bounded candidate is the tightened RP/P2 residual and
-  whose substep-(4) `AC_phi_lambda` is shown irrelevant to RP/P2.
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` -- downstream
+  realization-gate context only; no realization residual is narrowed here.
 - `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md` -- the
-  unaudited bounded closure candidate for substeps (1)+(2)+(3); the residual of
-  the labeling-indifference result routes onto this, NOT closed here.
+  unaudited bounded closure candidate for substeps (1)+(2)+(3); not consumed
+  as an upstream premise here.
 - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` -- substep-(1)
   Grassmann-forcing candidate.
 - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` --
   substep-(2) kinetic-structure forcing candidate.
-- `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md` -- classifies
-  `AC_phi_lambda` as exactly the `hw = 1` species labeling (the relabeling that
-  the labeling-indifference result shows RP/P2 are invariant under).
+- `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md` -- downstream
+  `AC_phi_lambda` context only; no conclusion about this residual is claimed.
 - `P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md` -- the
-  P2 phase-blindness bridge whose "modulo `AC_phi_lambda`" residual
-  this note tightens. Referenced informationally; this note is a standalone
-  extension that does not modify it.
+  downstream P2 phase-blindness bridge. Referenced informationally; this
+  narrowed note is a standalone transfer/invariance extension that does not
+  modify it.
 - `MINIMAL_AXIOMS_2026-05-20.md` -- repo baseline surface, named as setup
   context only.
 

@@ -83,20 +83,34 @@ SU(3) single-link Haar integral.
 
 The prior cycle reduced `d_7` to the four cube shells' order-7 multiplicity sum
 but hit a per-link `3^(2k)` invariant-projector contraction wall (`> 30 min`):
-the 8-plaquette moments reach single links carrying up to four fundamental + four
-conjugate factors, and with the sympy engine a single such moment (summed over
-its `2^8` orientations) takes `~270 s`. This cycle removes the wall with **no
-change to the maths** by re-engineering only the contraction:
+with the sympy engine a single worst-case 8-plaquette moment (summed over its
+`2^8` orientations) takes `~270 s`. The wall is the **dense** `3^(2(p+q))` index
+scan per link, not the singlet dimension itself — the actual busiest
+color-balanced (nonzero-singlet) link reached by the cube-shell `d_7` moments is
+only `(2,2)`, an `N0 = 2` invariant basis (the balanced links that occur are
+`(1,1)`, `(3,0)`/`(0,3)`, `(2,2)`; `max p+q = 4`). The per-link projector is
+**cheap**; the cost is the dense scan plus the multiplicity/Moebius fan-out. This
+cycle removes the wall with **no change to the maths** by re-engineering only the
+contraction:
 
 1. **Sparse link-integral tensor.** The exact single-link integral
    `int dU prod U^{(x)p} (x) conj(U)^{(x)q}` is built **sparsely** from the
    invariant-basis supports — outer products
    `e_a (x) (G^{-1})_{ab} (x) e_b` over only the nonzero basis index-tuples —
-   instead of scanning the `3^(2(p+q))` dense index grid. For a `(4,4)` link the
-   dense grid is `3^16 ~ 4.3e7` slots, while the integral tensor has `<= 639^2 ~
-   4e5` nonzeros built from a 639-element support. The invariant basis and exact
-   Gram inverse are **reused** from the validated `projector(p, q)`; only the
-   contraction is new.
+   instead of scanning the `3^(2(p+q))` dense index grid. The engine's
+   theoretical **envelope** (the largest link `projector(p, q)` could be asked
+   for under 9th-copy diagonal stacking) is a `(4,4)` link, whose dense grid is
+   `3^16 ~ 4.3e7` slots; its sparse integral tensor instead has `<= 639^2 ~ 4e5`
+   nonzeros over a **639-element index-tuple support** (the union of nonzero
+   computational-basis tuples across the basis), and its **independent** invariant
+   basis after Gram-RREF is `N0 = 23` (from a raw, over-complete spanning set of
+   `40` delta/epsilon tensors). The `639` is this sparse-support tuple count, NOT
+   a basis dimension — the basis is `23`. A `(4,4)` link is the engine envelope
+   only: it requires incidence 8 on a single link, which **never occurs** for the
+   cube-shell moments (their busiest balanced link is `(2,2)` for `d_7` and
+   `(4,1)`/`(1,4)`, `N0 = 3`, for `d_8`; abstract 9th-copy stacking reaches at most
+   `(5,5)`, `N0 = 103`). The invariant basis and exact Gram inverse are **reused**
+   from the validated `projector(p, q)`; only the contraction is new.
 2. **Pure-int Fraction arithmetic + variable elimination.** The per-link tensors
    are contracted over the shared plaquette-corner indices by a min-degree
    variable-elimination order with `fractions.Fraction` values (no sympy object
@@ -109,6 +123,15 @@ Result: the worst 8-plaquette moment drops from `~270 s` to `~0.5 s`, and the
 exact `d_7` is a `~2 min` computation. This is the engine optimization the prior
 cycle's handoff anticipated; it advances the connected-coefficient frontier by
 one order without any new physics.
+
+The same optimizations also identify where the **next** order's cost actually
+sits. The per-link invariant-projector is cheap (the realized links stay at
+`(2,2)`/`(4,1)`, `N0 <= 3`); the dominant `d_8` cost is the **set-partition
+(Moebius) cumulant assembly** — each order-8 multiplicity vector is a
+9-plaquette joint connected cumulant whose Moebius sum runs over `Bell(9) =
+21147` set partitions, and `d_8` adds 56 such multiplicity vectors per shell
+across four shells (Section 6). The frontier cost is this combinatorial fan-out,
+not the per-link contraction.
 
 ## 3. Two-engine confirmation
 
@@ -213,13 +236,21 @@ not a result about `P(6)`.
 ## 6. Computational reach and the named wall
 
 The optimized engine moves the connected-coefficient frontier to `beta^7` exactly
-and keeps `beta^7` `~2 min`, but the two compounding costs the frontier map names
-remain. The number of leafless connected clusters grows like the lattice-animal
-constant `mu^n` (`mu ~ 8`), and `d_8` adds 56 multiplicity vectors per shell of
-9-plaquette cumulants (Bell(9) = 21147 set partitions each) reaching links with
-even higher factor counts; together with the distinct-support side reopening at
-larger area, `beta^8` is at/past the practical ceiling, and any depth approaching
-the ~15-40 exact coefficients a genuine resummation would need collides with the
+and keeps `beta^7` `~2 min`, but the dominant cost the frontier map names remains.
+The same GF(3) cube-shell certificate that places `d_7` settles the `d_8`
+distinct-support side: the 2-cycle weight spectrum through `p0` is
+`{6, 10, 11, 12}` (the four single-cube boundaries at weight 6, then nothing until
+weight 10), so weights 7, 8 **and 9 are empty** — `d_8` has **no new distinct
+support** either and is, like `d_6` and `d_7`, purely the four cube shells'
+order-8 multiplicity sum; the distinct-support side reopens only at **weight 10
+(`d_9`, not `d_8`)**. The real `d_8` obstruction is therefore the
+**set-partition (Moebius) cumulant-assembly fan-out**, not the per-link projector
+(whose realized links stay at `(2,2)`/`(4,1)`, `N0 <= 3`): `d_8` adds 56
+multiplicity vectors per shell of 9-plaquette cumulants, each a Moebius sum over
+`Bell(9) = 21147` set partitions, so the assembly fans out to
+`56 * 4 * 21147 ~ 4.7e6` partition-blocks across the four shells. That fan-out
+puts `beta^8` at/past the practical ceiling, and any depth approaching the
+~15-40 exact coefficients a genuine resummation would need collides with the
 retained treewidth-29 infeasibility
 (`su3_wigner_l3_treewidth_infeasible_2026-05-04`, `audited_conditional` on
 2026-05-29). With the geometric continuation now falsified and the d-log-Pade

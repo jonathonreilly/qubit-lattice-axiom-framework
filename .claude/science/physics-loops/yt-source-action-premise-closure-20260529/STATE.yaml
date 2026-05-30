@@ -1,0 +1,24 @@
+loop_slug: yt-source-action-premise-closure-20260529
+branch: physics-loop/yt-source-action-premise-closure-20260529
+base: origin/main
+current_goal: close the Y_T source/action lambda=1 premise on the honest current surface
+active_route: Tier-A source-measure / P-cal source-action closure
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+proposal_allowed: false
+bare_retained_allowed: false
+cycle_count: 1
+files_touched:
+  - docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md
+  - scripts/frontier_yt_tier_a_source_action_top_premise_closure.py
+  - outputs/yt_tier_a_source_action_top_premise_closure_2026-05-29.json
+  - .claude/science/physics-loops/yt-source-action-premise-closure-20260529/
+open_imports:
+  - P-cal/P1 derivation from A1+A2 for unbounded retained status
+  - strict same-source top/W pole-response evidence as independent bypass
+closed_on_tier_a_surface:
+  - lambda = 1 for normalized top source
+  - y_33 = 1/sqrt(6) under Tier-A source-measure premise
+next_exact_action: run review-loop/audit on the bounded theorem; for unbounded closure, retire P-cal/P1 or produce strict top/W response certificate
+stop_condition: scalar top-source unit premise closed only at bounded Tier-A status

@@ -97,10 +97,12 @@ def part0_source_firewall() -> None:
             phrase not in note,
         )
 
-    # parent text must contain the admission-(i) prose this bridge formalizes
+    # Historical parent routing marker: the parent still names the legacy
+    # admission-(i) slot for comparison, but its active ABJ route is now the
+    # standard-theorem bridge rather than this accepted-premise packet.
     parent = PARENT_NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "parent ANOMALY_FORCES_TIME_THEOREM names admission (i) as bare external admission",
+        "parent ANOMALY_FORCES_TIME_THEOREM names legacy admission (i) slot",
         "admission (i)" in parent and "ABJ" in parent,
     )
 

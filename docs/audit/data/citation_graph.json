@@ -449,6 +449,22 @@
       "to": "cpt_exact_note"
     },
     {
+      "from": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+      "to": "native_gauge_closure_note"
+    },
+    {
+      "from": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "from": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+      "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+    },
+    {
       "from": "accessible_prediction_note",
       "to": "action_normalization_note"
     },
@@ -926,7 +942,7 @@
     },
     {
       "from": "anomaly_forces_time_theorem",
-      "to": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
+      "to": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30"
     },
     {
       "from": "anomaly_forces_time_theorem",
@@ -935,6 +951,10 @@
     {
       "from": "anomaly_forces_time_theorem",
       "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "from": "anomaly_forces_time_theorem",
+      "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
     },
     {
       "from": "antigravity_sign_selector_boundary_note",
@@ -40488,6 +40508,23 @@
       "runner_path": "scripts/abj_residual_gw_not_necessary_runner.py",
       "title": "ABJ Residual Correction: Ginsparg-Wilson Is Not the Obstruction (eps-Gap + chi=0)"
     },
+    "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30": {
+      "claim_id": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "native_gauge_closure_note",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6a59e6e44b9a8345ad62071f493280502b6cd533f29a3ae08fae482051d6a5fc",
+      "path": "docs/ABJ_STANDARD_THEOREM_BRIDGE_FOR_ANOMALY_FORCES_TIME_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_abj_standard_theorem_bridge_for_anomaly_forces_time.py",
+      "title": "ABJ Standard-Theorem Bridge for Anomaly-Forces-Time"
+    },
     "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10": {
       "claim_id": "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10",
       "claim_type_author_hint": "no_go",
@@ -42341,7 +42378,7 @@
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6bf5e6e4cbafa9db1a1edfe9d9baf3ac69b41f7f84814514ba0f47624204dec8",
+      "note_hash": "4752d54b76988d4689f698f2c2ae268090f08f4fed59307d6265e4e55c20365c",
       "path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
       "title": "Anomaly-Forces-Time ABJ-Inconsistency Accepted-Premise Bridge"
@@ -42394,14 +42431,15 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
+        "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "29c40a06327bceaf2f9b329710ba7b5eb066e84119e90474d267c756da593e86",
+      "note_hash": "ead64a9e21a44244699f61985922d870a64a98287e9dc8f047c539f4d7139fa8",
       "path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
-      "runner_path": "scripts/frontier_anomaly_forces_time_accepted_premise_closure.py",
+      "runner_path": "scripts/frontier_anomaly_forces_time_standard_abj_closure.py",
       "title": "Anomaly-Cancellation Consistency Bridge for 3+1 Spacetime"
     },
     "anomaly_forces_time_theorem_note_2026-05-17": {
@@ -87942,7 +87980,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 705,
+      "bounded_theorem": 706,
       "decoration": 1,
       "meta": 199,
       "no_go": 87,
@@ -87951,7 +87989,7 @@
       "positive_theorem": 175
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1105,
+      "bounded_theorem": 1106,
       "decoration": 1,
       "meta": 199,
       "no_go": 191,
@@ -87959,10 +87997,10 @@
       "open_gate": 133,
       "positive_theorem": 584
     },
-    "edge_count": 10021,
-    "leaf_count": 829,
-    "node_count": 2635,
+    "edge_count": 10026,
+    "leaf_count": 828,
+    "node_count": 2636,
     "root_count": 876,
-    "runners_with_path": 2209
+    "runners_with_path": 2210
   }
 }

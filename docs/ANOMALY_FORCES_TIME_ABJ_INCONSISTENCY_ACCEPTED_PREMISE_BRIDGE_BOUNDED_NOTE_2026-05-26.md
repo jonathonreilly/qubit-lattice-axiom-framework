@@ -10,6 +10,17 @@ verdict.
 **Type:** bounded_theorem
 **Primary runner:** [`scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py`](../scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py)
 
+## Current Parent Routing Notice
+
+As of 2026-05-30, the parent `ANOMALY_FORCES_TIME_THEOREM.md` no longer uses
+this accepted-premise packet as its load-bearing ABJ route. The current parent
+route uses `ABJ_STANDARD_THEOREM_BRIDGE_FOR_ANOMALY_FORCES_TIME_NOTE_2026-05-30.md`,
+which treats ABJ/Wess-Zumino/Fujikawa as a cited standard theorem with in-repo
+hypothesis checks. This file is retained as the earlier bounded packet and as a
+historical audit surface; it should not be cited as the parent theorem's active
+ABJ authority unless the parent is intentionally downgraded back to an
+accepted-premise surface.
+
 ## Claim
 
 Given the supplied accepted-premise packet (P1) below — the standard

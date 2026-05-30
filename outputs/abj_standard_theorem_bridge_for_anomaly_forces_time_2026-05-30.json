@@ -1,0 +1,256 @@
+{
+  "claim": "ABJ standard-theorem bridge for anomaly-forces-time",
+  "pass": 38,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "bridge note contains: **Claim type:** bounded_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: standard ABJ/Wess-Zumino/Fujikawa theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: not make the Adler-Bell-Jackiw theorem a new framework axiom",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: not claim a full A1+A2-native lattice derivation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: accepted_premise_packet_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: framework_native_abj_derivation_closed: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: 10.1103/PhysRev.177.2426",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: 10.1007/BF02823296",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: 10.1103/PhysRev.184.1848",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: 10.1016/0370-2693(71)90582-X",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: 10.1103/PhysRevLett.42.1195",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note excludes overclaim: proposed_retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note excludes overclaim: audited_clean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note excludes overclaim: framework_native_abj_derivation_closed: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note excludes overclaim: accepted-premise packet entry",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains repaired standard-theorem phrase: standard-theorem bounded composition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains repaired standard-theorem phrase: ABJ standard-theorem bridge",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains repaired standard-theorem phrase: not an unbounded A1+A2 derivation of ABJ",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains repaired standard-theorem phrase: accepted_premise_packet_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes accepted-premise phrase: accepted-premise positive composition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes accepted-premise phrase: ABJ accepted premise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes accepted-premise phrase: assume the named accepted premise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes accepted-premise phrase: accepted_current_surface",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes accepted-premise phrase: bare external admission on current `main`",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note does not use PDG as input",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note does not use Monte Carlo as input",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note does not use alpha_LM as input",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note does not use plaquette as input",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note does not use top Yukawa as input",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LH Tr[Y] = 0",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "LH Tr[Y^3] = -16/9",
+      "status": "PASS",
+      "detail": "-16/9"
+    },
+    {
+      "name": "LH Tr[SU(3)^2 Y] = 1/3",
+      "status": "PASS",
+      "detail": "1/3"
+    },
+    {
+      "name": "LH Tr[SU(2)^2 Y] = 0",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "LH Tr[SU(3)^3] = 2",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "name": "standard ABJ theorem has nonzero-anomaly hypothesis",
+      "status": "PASS",
+      "detail": "[Fraction(-16, 9), Fraction(1, 3), Fraction(2, 1)]"
+    },
+    {
+      "name": "chirality parity with d_s=3 gives positive odd d_t",
+      "status": "PASS",
+      "detail": "[1, 3, 5, 7, 9, 11]"
+    },
+    {
+      "name": "single-clock surface leaves only d_t=1 in positive range",
+      "status": "PASS",
+      "detail": "[1]"
+    },
+    {
+      "name": "standard-theorem bridge composition yields d_t=1",
+      "status": "PASS",
+      "detail": "[1]"
+    }
+  ],
+  "source_firewall": {
+    "required_note_phrases": [
+      "**Claim type:** bounded_theorem",
+      "standard ABJ/Wess-Zumino/Fujikawa theorem",
+      "not make the Adler-Bell-Jackiw theorem a new framework axiom",
+      "not claim a full A1+A2-native lattice derivation",
+      "accepted_premise_packet_load_bearing: false",
+      "framework_native_abj_derivation_closed: false",
+      "10.1103/PhysRev.177.2426",
+      "10.1007/BF02823296",
+      "10.1103/PhysRev.184.1848",
+      "10.1016/0370-2693(71)90582-X",
+      "10.1103/PhysRevLett.42.1195"
+    ],
+    "forbidden_note_claims": [
+      "proposed_retained",
+      "audited_clean",
+      "framework_native_abj_derivation_closed: true",
+      "accepted-premise packet entry"
+    ],
+    "required_parent_phrases": [
+      "standard-theorem bounded composition",
+      "ABJ standard-theorem bridge",
+      "not an unbounded A1+A2 derivation of ABJ",
+      "accepted_premise_packet_load_bearing: false"
+    ],
+    "parent_forbidden": [
+      "accepted-premise positive composition",
+      "ABJ accepted premise",
+      "assume the named accepted premise",
+      "accepted_current_surface",
+      "bare external admission on current `main`"
+    ]
+  },
+  "anomaly_traces": {
+    "TrY": "0",
+    "TrY3": "-16/9",
+    "TrSU3Y": "1/3",
+    "TrSU2Y": "0",
+    "TrSU3cubic": "2"
+  },
+  "dimension_intersection": {
+    "d_s": 3,
+    "chirality_allowed_positive_d_t": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "single_clock_allowed_positive_d_t": [
+      1
+    ],
+    "intersection": [
+      1
+    ]
+  },
+  "verdict": "ABJ standard-theorem bridge passes as bounded theorem support; no accepted-premise packet is load-bearing for the repaired parent route. This remains bounded because ABJ is cited as a standard theorem, not derived from A1+A2 in this note."
+}

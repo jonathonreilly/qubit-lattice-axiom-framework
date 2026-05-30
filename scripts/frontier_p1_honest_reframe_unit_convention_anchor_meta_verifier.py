@@ -161,6 +161,8 @@ PRECEDENT_FILES = [
     "docs/CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md",
     "docs/RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md",
     "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
+    "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+    "docs/audit/data/tier_a_admissions.json",
 ]
 
 for relpath in PRECEDENT_FILES:
@@ -179,12 +181,34 @@ for relpath in PRECEDENT_FILES:
             "verified via git ls-tree",
         )
 
-# S4.summary: three meta-tier precedent files establish the
-# convention-adoption pipeline pattern
+# S4.summary: meta-tier precedent files establish the convention-adoption
+# pipeline pattern + the Tier-A registry already classifies S
 record(
-    "S4.summary: ≥ 2 meta-tier precedent files needed for pipeline pattern; 3 cited",
+    f"S4.summary: ≥ 2 meta-tier precedent files needed; {len(PRECEDENT_FILES)} cited (including Tier-A registry)",
     len(PRECEDENT_FILES) >= 2,
     f"{len(PRECEDENT_FILES)} precedent files cited",
+)
+
+# S4.tier_a: Tier-A registry already classifies S = absolute scale
+# as one of 4 genuine admitted inputs with "unit choice vacuous"
+# language. This PR is the EW-chain-side mapping to that classification.
+TIER_A_REGISTRY_PATH = "docs/audit/data/tier_a_admissions.json"
+tier_a_present = file_exists_on_origin_main(root, TIER_A_REGISTRY_PATH)
+record(
+    "S4.tier_a: Tier-A admissions JSON present on origin/main",
+    tier_a_present is True,
+    "registry already classifies S = absolute scale; this PR aligns EW-chain P1 with it",
+)
+
+# S4.naming: vocabulary disambiguation between EW-chain P1 (M_Pl anchor)
+# vs Tier-A registry P1 (extensivity principle). These are DIFFERENT objects.
+EW_CHAIN_P1_MEANING = "M_Pl anchor (HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10)"
+TIER_A_P1_MEANING = "extensivity / observable_principle_from_axiom_note"
+TIER_A_S_MEANING = "absolute scale (one empirical scale-setting number; unit choice vacuous)"
+record(
+    "S4.naming: EW-chain P1 ≠ Tier-A registry P1; EW-chain P1 maps to registry S",
+    EW_CHAIN_P1_MEANING != TIER_A_P1_MEANING,
+    f"EW-chain P1 = {EW_CHAIN_P1_MEANING}; registry P1 = {TIER_A_P1_MEANING}; EW-chain P1 → registry S = {TIER_A_S_MEANING}",
 )
 
 # =======================================================================

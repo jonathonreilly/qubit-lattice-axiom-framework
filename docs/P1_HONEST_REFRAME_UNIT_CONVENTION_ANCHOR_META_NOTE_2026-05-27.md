@@ -42,15 +42,40 @@ external scale anchor:
 Recent panel work (2026-05-27) on the lepton mass spectrum lane
 identified that the cross-chain consistency between the lepton chain
 (R-L1' + R-L2 sub-leading) and the EW hierarchy chain absorbs `P2`,
-`P3`, `P4`, leaving `P1` as the single remaining admission for an
-absolute m_W prediction. This raised the question: how should "P1"
-be categorized?
+`P3`, `P4`, leaving `P1` (= M_Pl anchor in the EW hierarchy chain
+vocabulary) as the single remaining admission for an absolute m_W
+prediction.
 
-This note proposes that **`P1` is structurally a unit-convention slot**,
-not a theorem-derivation gap, and that the right repo-semantics
-disposition is the convention-adoption pipeline established by
+**Crucial alignment with the existing Tier-A registry.** The framework
+already maintains `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+(meta, audit-lane sidecar) + `docs/audit/data/tier_a_admissions.json`
+listing exactly four genuine non-axiom admitted inputs. One of them
+is named **`S`** (= "absolute scale": one empirical scale-setting
+number). The registry already states, verbatim: *"the unit choice
+itself is vacuous and **not** an input; the genuine admission is the
+scale-setting."*
+
+This note's purpose is to align the EW hierarchy chain's reference to
+"P1" with the Tier-A registry's classification of S, and to make
+explicit a **vocabulary disambiguation** that has been latent:
+
+- **EW-chain "P1"** (per `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10`)
+  = the M_Pl anchor in `v = M_Pl · (7/8)^(1/4) · α_LM^16`.
+- **Tier-A registry "P1"** (per `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23`)
+  = the extensivity / observable-principle admission.
+- These are DIFFERENT objects sharing the same label. They MUST NOT
+  be conflated.
+
+The EW-chain's P1 maps cleanly to the registry's **S** (M_Pl is the
+particular observable chosen to set the scale). The registry already
+identifies S as "pervasive, not a single citeable parent row" and
+already classifies the unit-choice portion as vacuous. This note
+formalizes the EW-chain ↔ registry mapping and proposes that
+downstream lane references to "P1 = M_Pl anchor" route through the
+convention-adoption pipeline already established by
 `CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08` and
-`RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv`.
+`RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv`,
+consistent with the Tier-A registry's existing treatment of S.
 
 The note does not predict the audit-lane verdict on this proposal. It
 provides the structural argument and hands the question to the audit
@@ -92,19 +117,26 @@ theorem; all are repo-semantics statements.
   among them is convention.
 
 - **S4 (Right disposition pipeline: convention-adoption per
-  precedent).** The disposition of "M_Pl as conventional anchor"
-  should follow the same pipeline as the framework's prior
-  unit-convention adoptions, which are `claim_type=meta` and
-  audit-decided (source-note + paired-runner + independent
-  audit-review):
+  precedent; consistent with Tier-A registry).** The disposition of
+  "M_Pl as conventional anchor" should follow the same pipeline as
+  the framework's prior unit-convention adoptions, which are
+  `claim_type=meta` and audit-decided (source-note + paired-runner +
+  independent audit-review):
   - `CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md` — meter,
     second, kilogram, GeV unification companion (origin/main, meta).
   - `RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md`
     — radian unit reclassification (origin/main, meta).
-  
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — Tier-A
+    admitted-input registry (origin/main, meta); already lists S
+    (absolute scale) as one of four genuine admissions and explicitly
+    states the unit choice is vacuous.
+
   These precedents establish that unit-convention adoption in this
   repo is meta-tier and audit-decided, not user-ratified theorem
-  promotion.
+  promotion. Specifically, the Tier-A registry's existing treatment
+  of S as "pervasive, not a node, unit choice vacuous, scale-setting
+  is the genuine admission" is the operational pattern this note
+  asks downstream EW-chain references to "P1" to adopt.
 
 ## 2. Setup (retained / meta content cited honestly)
 
@@ -116,6 +148,8 @@ audit status, and does NOT promote any cited status.
 | `PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md` | meta (audit-decided) | Source of "conventional anchor: 1 pre-round, 0 conditionally post-round" framing |
 | `CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md` | meta (audit-decided) | Precedent for unit-convention adoption pipeline |
 | `RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md` | meta (audit-decided) | Second precedent for unit-convention adoption pipeline |
+| `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` | meta (audit-lane sidecar) | **Already names S as one of four Tier-A admitted inputs; explicitly states "unit choice is vacuous, scale-setting is the genuine admission." EW-chain "P1" (M_Pl anchor) maps to registry's S.** |
+| `docs/audit/data/tier_a_admissions.json` | machine registry | Tier-A admissions data file referenced by `compute_effective_status.py` |
 | Buckingham, E. (1914). *On Physically Similar Systems*. Phys. Rev. 4, 345. | textbook | Mathematical authority for S1 dimensional-analysis claim |
 | Standard physics literature on SM / LQG / Connes-Chamseddine anchors | textbook | Sidecar reference for S2 survey |
 

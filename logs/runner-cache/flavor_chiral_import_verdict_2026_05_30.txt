@@ -1,0 +1,28 @@
+
+========================================================================
+Escape (II): qubit-factor grading sigma3(x)I3 -- anticommutes, but wrong readout
+========================================================================
+  {D, sigma3(x)I3}=0 ? True (anticommutation NATIVE via qubit)
+  circulant A=aI+bC+bbar C^2, singular-value (Yukawa) Q:
+    r=0.5 th=0.0: Q=0.4317 sv=[0.293 0.293 2.414]
+    r=0.5 th=0.6: Q=0.3818 sv=[0.275 1.108 2.167]
+    r=1.0 th=0.0: Q=1.0000 sv=[0. 0. 3.]
+    r=1.0 th=0.6: Q=0.3558 sv=[0.803 1.153 2.651]
+  r=1/2 gives Q=0.43 (singular-value readout), NOT 2/3 -> escape (II) does not force 2/3.
+
+========================================================================
+Correction: i(C-C^2) is circulant (commutes with Gamma_chi), gives 3-distinct natively
+========================================================================
+  circulant H (complex b): eigenvalues [0.224 1.218 1.557] -> 3 DISTINCT
+  [H, Gamma_chi]=0 ? True  (commutes -> i(C-C^2) is NOT the chiral import)
+  => 3-distinctness comes from the circulant orientation (theta), NOT an anticommuting op.
+
+========================================================================
+VERDICT
+========================================================================
+  Single irreducible pin = the Koide VALUE r=|b|^2/a^2=1/2 (a CONTINUOUS modulus).
+  No native route forces it (measure->1, dynamics->1/3, criticality->inf, Cl(3) volume
+  central, anomaly discrete (can't reach a continuous modulus), time-arrow->orientation
+  not value, reflection->suppresses, qubit-factor escape->wrong singular-value readout).
+  n_gen=3 DERIVED; 3-distinct (orientation) possibly NATIVE (positivity selects C3);
+  Q=2/3 reproduced-not-derived = the one shared chiral/value pin = observed SM content.

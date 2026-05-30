@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-r"""FINITE-CARRIER SINGLE-TRANSFER ASSEMBLY FOR MIXED GAUGE+FERMION OBSERVABLES.
+r"""SUPPLIED-PREMISE W^dag W ASSEMBLY FOR MIXED GAUGE+FERMION OBSERVABLES.
 
 Audit-companion verification runner for the source note
 RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md,
-covering the U-integrated combined
-reflection positivity (RP) for the interacting staggered + SU(3)/U(1) lattice
-theory, for observables F that MIX gauge links AND staggered fermion fields in
-the positive-time half.
+covering the finite-carrier algebraic W^dag W assembly used by the mixed
+gauge+fermion reflection-positivity route. The repaired source note is
+conditional on supplied PSD gauge-transfer and fixed-gauge fermion two-step
+transfer premises, plus the supplied mixed OS transfer representation.
 
 ============================================================================
 WHAT IS ALREADY ESTABLISHED ON origin/main (NOT re-derived here)
@@ -33,11 +33,11 @@ bridge for gauge-COUPLED staggered fermion observables, because the fermion
 reflected inner product is M[U]^{-1}-weighted (gauge-background dependent) and is
 NOT a naive product of the three factors.
 
-  R1  Instantiate gauge-measure RP on the ACTUAL Wilson plaquette boundary
-      (temporal-gauge reflection-plane coupling), not just cite the abstract CS.
-  R2  Combined mixed-observable assembly: prove <Theta(F) F> >= 0 for observables
-      mixing gauge links AND staggered fermion fields in the positive-time half,
-      handling the entanglement.
+  R1  Diagnostic finite Wilson temporal-gauge transfer kernels (not retained
+      compact-group Wilson-boundary authority).
+  R2  Combined mixed-observable algebra: given the supplied transfer
+      representation, prove <Theta(F) F> >= 0 for represented observables
+      mixing gauge links AND staggered fermion fields.
 
 ============================================================================
 KEY FIRST-PRINCIPLES FINDING (the reason single-step Lagrangian RP fails)
@@ -61,9 +61,9 @@ NEGATIVE CONTROL  single-step naive Lagrangian Gram -> non-PSD (-0.80). Confirms
     artifacts of a trivially-positive construction).
 
 R1  Wilson temporal-gauge transfer kernel  K(U,U') = exp(-S_G[plaquette across
-    cut]) is checked as PSD on finite U(1)/SU(3) carriers. This supports the
-    Wilson-boundary input needed by the standard Osterwalder-Seiler gauge-half
-    theorem, beyond the abstract CS identity. We also verify S_G[Theta U]=S_G[U].
+    cut]) is checked as PSD on finite U(1)/SU(3) carriers. This is a diagnostic
+    for the supplied Wilson-boundary PSD premise, not a proof of the compact
+    group theorem. We also verify S_G[Theta U]=S_G[U].
 
 ROUTE T (PRIMARY -- the combined R2 object on H_gauge (x) H_ferm).
     <Omega| O^dag  T_full  O |Omega>,  T_full = Kg^{1/2} (x) I  .  T_ferm[U] .
@@ -92,9 +92,11 @@ ROUTE C (SAMPLED cross-check -- U-integrated ingredients, det, Haar).
 ============================================================================
 SCOPE / HONESTY
 ============================================================================
-Fixed-lattice-spacing transfer-matrix support only. NO continuum /
-OS-reconstruction claim. NO ledger edits. Settled Berezin sign convention
-enforced and checked against the documented -0.80 no-go.
+Pure finite-carrier W^dag W algebra under supplied PSD-transfer premises only.
+NO proof of Wilson-boundary compact-group positivity. NO proof of the mixed OS
+transfer representation. NO continuum / OS-reconstruction claim. NO ledger
+edits. Settled Berezin sign convention enforced and checked against the
+documented -0.80 no-go.
 """
 from __future__ import annotations
 
@@ -222,7 +224,7 @@ def negative_control_single_step(lat, n_cfg=1):
 
 
 # ===========================================================================
-# R1: actual Wilson temporal-gauge transfer kernel (instantiated, not abstract)
+# R1: finite Wilson temporal-gauge transfer-kernel diagnostics
 # ===========================================================================
 def wilson_u1_transfer_kernel(K_pts, beta):
     """Wilson temporal-gauge transfer between two slice link-configs on U(1):
@@ -515,8 +517,8 @@ def route_C(group, Ls, m, beta, n_cfg):
 # ===========================================================================
 def main() -> int:
     print("=" * 82)
-    print("FINITE-CARRIER SINGLE-TRANSFER ASSEMBLY FOR MIXED GAUGE+FERMION OBSERVABLES")
-    print("  (finite-carrier transfer assembly; scratch evidence only)")
+    print("SUPPLIED-PREMISE W^dag W ASSEMBLY FOR MIXED GAUGE+FERMION OBSERVABLES")
+    print("  (finite-carrier algebra under supplied PSD-transfer premises)")
     print("=" * 82)
     print(f"  mass m={MASS}, a_tau={A_TAU}.  Settled Berezin convention:")
     print("    <chi_b bar_chi_a>=+(M^-1)[b,a],  <bar_chi_a chi_b>=-(M^-1)[b,a].")
@@ -539,9 +541,9 @@ def main() -> int:
 
     # R1
     print("-" * 82)
-    print("R1: FINITE WILSON TEMPORAL-GAUGE TRANSFER KERNEL PSD CHECK")
+    print("R1: FINITE WILSON TEMPORAL-GAUGE TRANSFER KERNEL PSD DIAGNOSTIC")
     print("  K(U,U') = exp(-beta(1-Re Tr(U'U^dag)/nc)) on sampled plaquette carriers")
-    print("  (support for the Wilson-boundary gauge-half input)")
+    print("  (diagnostic for supplied Wilson-boundary PSD premise; not compact-group proof)")
     print("-" * 82)
     r1_ok = True
     for beta in (1.0, 2.0, 4.0):
@@ -554,7 +556,7 @@ def main() -> int:
         r1_ok = r1_ok and ok_b
         print(f"  beta={beta:4.1f}: U(1) kernel min eig={e1:+.3e}  "
               f"SU(3) kernel min eig={e3:+.3e}  PSD:{ok_b}")
-    print(f"  -> R1 (Wilson boundary gauge transfer PSD): {'PASS' if r1_ok else 'FAIL'}")
+    print(f"  -> R1 finite-kernel PSD diagnostic: {'PASS' if r1_ok else 'FAIL'}")
     P += r1_ok; F += (not r1_ok)
     print()
 

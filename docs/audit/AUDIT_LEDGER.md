@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 606 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1137 |
+| unaudited | 1136 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 940 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1373 |
+| `unaudited` | 1372 |
 
 | claim_type | count |
 |---|---:|
@@ -1121,6 +1121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -12612,6 +12613,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** "The frozen cone-shape proxy reproduces the full c-dependent causal phase curve to numerical precision on all three families."  _(class `A`)_
 - **chain closes:** True — The runner source defines _causal_field and _static_cone_field with the same support and strength formula for the same c, and then propagates those fields through the same baseline comparison. Equality of the causal and static-cone phase curves follows from the code-level identity, so the no-go witness does not depend on the timed-out stdout.
 - **rationale:** The scoped no-go closes because the supplied runner contains an explicit static-cone construction that is identical to the purported causal cone field for matching c, defeating uniqueness of the detector-line phase lag within this model. No cited upstream authority is needed for that equality. The timeout prevents validating the displayed numeric table and the static-scheduling near-flat values, but it is not needed for the static-cone mimic boundary that carries the no-go.
+- **auditor confidence:** high
+
+### `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28`
+
+- **Note:** [`SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md`](../../docs/SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional finite-route no-go over the five named F3 routes only: accepting the admitted route statuses and current-framework surface, none supplies an independent closed Σm_ν cross-bound on the current-bank surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-001319-8f1540fe-sigma_mnu_f3_stuck_fanou`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the five route statuses and the current-framework surface as admitted inputs, no orthogonal route supplies an independent numerical Σm_ν cross-bound on the current-bank surface.  _(class `A`)_
+- **chain closes:** False — The finite-route inference is internally consistent if the five route statuses and current-framework surface are accepted. Missing step: the restricted packet supplies no retained one-hop authorities for those admitted inputs, including T-4F-alpha-2, retained N_eff, current-bank Omega_DM, dark-matter gate status, and eta/leptogenesis status.
+- **rationale:** The source explicitly narrows the no-go to a conditional route-status synthesis and its N1-N8 gate avoids a theory-wide negative claim. The runner computes simple PDG/CMB arithmetic but otherwise hard-codes the route-status judgments rather than deriving the retained N_eff, current-bank Omega_DM interval, dark-matter gate, eta/leptogenesis status, or functional-form theorem from supplied authorities. The displayed oscillation and CMB peak-height arithmetic checks at the stated precision; the current-bank Omega_DM summary and N_eff scaling remain admitted or unsupported in the restricted packet.
+- **open / conditional deps cited:**
+  - `SIGMA_MNU_F3_DM_CROSS_BOUND_AUDIT_NOTE_2026-04-28.md`
+  - `NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md`
+  - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`

@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py
-runner_sha256: 9db312193949c234df5a655bd21c81d15fefdc3bdd8dd89a0472388cc8c30da1
+runner_sha256: dc4aea296e3309149e37d455d54994c68a4586dff8ab509eb20482c78ecbb87d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ========================================================================================
-Audit companion (exact-symbolic) for
+Exact-symbolic runner for
 DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16
 Goal: sympy verification of the bridge-selection algebra forcing
       sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2) on C^16
@@ -18,6 +18,7 @@ Part 0: canonical (γ_5, Γ_1) representation on C^16
 ----------------------------------------------------------------------------------------
   [PASS (A)] G0 is Hermitian (G0 = G0^†)
   [PASS (A)] G1 is Hermitian
+  [PASS (A)] G1 is real symmetric, hence in the X1 real-symmetric source class
   [PASS (A)] G1^2 = I_{16} (Hermitian involution)
   [PASS (A)] γ_5 Hermitian
   [PASS (A)] γ_5^2 = I_{16}
@@ -33,6 +34,7 @@ Part 0: canonical (γ_5, Γ_1) representation on C^16
 Part 1: bridge definition Y = P_R Γ_1 P_L and identities (X3.N), (X3.H)
 ----------------------------------------------------------------------------------------
   [PASS (A)] (X3.N) Y^2 = 0 on C^16
+  [PASS (A)] Y is not Hermitian, so the runner does not treat Y as an X1 source direction
   [PASS (A)] (X3.H) Y + Y^† = Γ_1 on C^16
   [PASS (A)] i(Y - Y^†) is Hermitian (pseudoscalar companion)
 
@@ -67,7 +69,7 @@ Part 5: (R) bridge ratio = 1/sqrt(2); (R1) active-space ratio = 1
 ----------------------------------------------------------------------------------------
   [PASS (A)] (R) sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2)  (ratio = sqrt(2)/2)
   [PASS (A)] (R1) active-space ratio Tr Y^† Y / Tr P_L = 1 (comparator)  (active = 1)
-  [PASS (A)] (R1) active-space comparator non-admissible because W[j Y] ≡ 0 in j  (Y is in kernel of the (X1) source-response on real-D blocks)
+  [PASS (A)] (R1) active-space ratio is comparator-only; Y is outside the X1 source-domain use  (W[jY] is nilpotent diagnostic; Γ_1 is the real-symmetric source direction)
 
 ----------------------------------------------------------------------------------------
 Part 6: (R2) pseudoscalar companion algebra and orthogonality
@@ -85,11 +87,11 @@ Part 7: counterfactual — non-anticommuting Γ̃_1 breaks (X3.H)
   [PASS (A)] (cf.d) Γ̃_1 = I_{16} (commutes with γ_5) ⇒ Y_tilde = 0
 
 ----------------------------------------------------------------------------------------
-Part 8: cross-check — (X1) source-derivative consistency on Γ_1
+Part 8: cross-check — source-derivative diagnostics on Γ_1 and Y
 ----------------------------------------------------------------------------------------
   [PASS (A)] ∂_j W[j Γ_1] at (m, j) = (1, 0) = 0 (parity)  (∂_j W = 0)
   [PASS (A)] ∂²_j W[j Γ_1] at (m, j) = (1, 0) = -16 (curvature consistent with (DG))  (∂²_j W = -16)
-  [PASS (A)] ∂²_j W[j Y] at j = 0 = 0 (Y is in kernel of source-response)  (follows from W[jY] ≡ 0 identically in j)
+  [PASS (A)] ∂²_j W[j Y] at j = 0 = 0 (nilpotent diagnostic; not an X1 source-domain claim)  (follows from W[jY] ≡ 0 identically in j)
 
 ----------------------------------------------------------------------------------------
 Summary
@@ -104,16 +106,16 @@ Summary
     (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals
     (WZ) W[j Y] = 0 at exact rationals
     (R)  sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2)
-    (R1) active-space comparator = 1 is non-admissible because
-         Y is in the kernel of the (X1) source-response on real-D blocks
-    (R2) pseudoscalar companion is anti-Hermitian-completion partner;
+    (R1) active-space comparator = 1 is comparator-only;
+         Γ_1, not Y or P_L, is the real-symmetric source direction
+    (R2) pseudoscalar companion is Hermitian and trace-orthogonal;
          trace-orthogonal to Γ_1 and same magnitude
     Counterfactual: candidate Γ̃_1 commuting with γ_5 forces Y_tilde = 0
                      and (X3.H) breaks — anticommutation is load-bearing
-    (X1) source-derivative consistency: ∂²_j W[j Γ_1]|_0 = -16, ∂²_j W[j Y]|_0 = 0
+    Source diagnostics: ∂²_j W[j Γ_1]|_0 = -16, ∂²_j W[j Y]|_0 = 0
 
 ========================================================================================
-TOTAL: PASS=42, FAIL=0
+TOTAL: PASS=44, FAIL=0
 ========================================================================================
 
 ----- stderr -----

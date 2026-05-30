@@ -209153,24 +209153,48 @@
       "verdict_rationale": null
     },
     "per_site_su2_spin_half_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T23:54:17.795941+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.0,
+        "runner_hash": "d9a1b678e2d3a50ff1c08caf620ff5598ce6695f4e9fde2c6d9ce2a127b0581a",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-235255-1de3e5ee-per_site_su2_spin_half_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli algebra supplied by the accepted Axiom 1 premise and the retained Pauli-irrep uniqueness input are sufficient for the displayed commutator, Casimir, spectrum, and scalar-commutant checks. The note explicitly keeps physical spin, spin-statistics, and composite/higher-spin sectors out of scope.",
       "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "On a single Axiom 1 qubit site, for an oriented Pauli triple satisfying the stated Pauli commutation and anticommutation relations, S_i = sigma_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T23:54:17.795941+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -209179,19 +209203,19 @@
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained",
       "load_bearing_score": 6.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "With S_i = sigma_i/2, the Pauli relations give [S_i,S_j] = i epsilon_ijk S_k, S^2 = (3/4)I, and the scalar commutant, hence the irreducible two-dimensional j = 1/2 su(2) module.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "cbc3b65d854de30136ea77b06438b730a737ef372fee5455aba3b9e7df6c704d",
       "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the audited scope remains explicitly limited to oriented Pauli triples satisfying the plus-sign epsilon convention in equation (1).",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -209349,18 +209373,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 7,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/per_site_su2_spin_half_check.py",
       "title": "Per-Site Pauli Action Carries the Unique j = 1/2 su(2) Module",
       "transitive_descendants": 7,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing mathematics is a direct algebraic closure from the stated Pauli relations: the factors of 1/2 give the su(2) commutator normalization, the three Pauli squares give S^2 = 3/4 I, and the generated full M_2(C) algebra gives scalar commutant. The accepted-premise carve-out applies to the Axiom 1 authority, while the Pauli-irrep authority is retained-grade for the algebraic representation-theory input used here. No external comparator, fitted scale, physical spin-statistics bridge, or hidden matter-sector identification is imported."
     },
     "periodic_2d_wraparound_fix_note_2026-04-11": {
       "audit_date": "2026-05-27T05:17:38.986001+00:00",

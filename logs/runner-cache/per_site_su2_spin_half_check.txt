@@ -1,14 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/per_site_su2_spin_half_check.py
-runner_sha256: 167bf97ecb99806bc2524798e9d6b589e828f8cb0b41707319bc7f75fac43dc3
+runner_sha256: d9a1b678e2d3a50ff1c08caf620ff5598ce6695f4e9fde2c6d9ce2a127b0581a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.17
 status: ok
 ----- stdout -----
 ========================================================================
-PER-SITE Cl(3) HILBERT CARRIES UNIQUE j=1/2 IRREP OF su(2)
+Axiom 1 PER-SITE PAULI ACTION CARRIES UNIQUE j=1/2 su(2) MODULE
 ========================================================================
+
+------------------------------------------------------------------------
+SOURCE FIREWALL: Axiom 1 Pauli action, not physical spin overclaim
+------------------------------------------------------------------------
+  cites minimal axioms Axiom 1: PASS
+  cites retained Pauli irrep uniqueness: PASS
+  declares Pauli spin-action convention: PASS
+  keeps physical spin out of scope: PASS
+  no old uniqueness node in YAML: PASS
+  classified as positive theorem: PASS
+  STATUS: PASS
 
 ------------------------------------------------------------------------
 TEST 1: σ_i are Hermitian (Cl(3) generators in Pauli rep)
@@ -51,12 +62,13 @@ TEST 6: Pauli rep is irreducible — commutant is only scalars
   STATUS: PASS
 
 ------------------------------------------------------------------------
-TEST 7: Per-site Hilbert dim = 2j + 1 = 2 for j = 1/2
+TEST 7: Axiom 1 qubit module dim = 2j + 1 = 2 for j = 1/2
 ------------------------------------------------------------------------
   per-site dim = 2, extracted j = (dim - 1)/2 = 0.5
   STATUS: PASS
 
 ========================================================================
+  Source firewall (Axiom 1 Pauli action):            PASS
   Test 1 (σ_i Hermitian):                       PASS
   Test 2 (Cl(3) anticommutation):               PASS
   Test 3 (su(2) Lie algebra):                   PASS

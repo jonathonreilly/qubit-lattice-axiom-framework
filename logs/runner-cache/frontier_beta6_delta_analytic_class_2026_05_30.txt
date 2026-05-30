@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_delta_analytic_class_2026_05_30.py
+runner_sha256: 4c01d56a251b22d3516dfacc91a0b884d0b922c0c49febdde9f262ee8c51a937
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 79.55
+status: ok
+----- stdout -----
+=== A. Exact connected coefficients and per-order ratios ===
+[PASS] d5 = 1/472392 = 4/18^5  -- d5=1/472392, 4/18^5=1/472392
+[PASS] per-shell d5 prefactor 1/18^5, four shells
+[PASS] d6/d5 = 7/12  -- d6/d5=7/12
+[PASS] d7/d6 = 5/21  -- d7/d6=5/21
+[PASS] ratio-of-ratios (d7/d6)/(d6/d5) = 20/49  -- ror=20/49
+[PASS] geometric d7 prediction = 49/68024448  -- d7_geo=49/68024448
+[PASS] geometric relative miss = 1.45 (>> 0.05 window) => tadpole FALSIFIED  -- rel miss=1.4500
+[PASS] bracket c1 = 7/12
+[PASS] bracket c2 = 5/36  -- c2=5/36
+[PASS] bracket NOT geometric: c2 != c1^2  -- c2=5/36, c1^2=49/144=49/144
+
+=== B. Z_1plaq positivity on the reals + P_1plaq(6) ===
+[PASS] recurrence a_2 = 1/36
+[PASS] P_1plaq(6) via recurrence Taylor = 0.4225317396  -- series=0.42253173965
+[PASS] P_1plaq(6) via Bars Bessel-determinant = 0.4225317396  -- bars=0.42253173965
+[PASS] recurrence and Bars agree on J(6)  -- |dJ|=6.797e-33
+[PASS] Z_1plaq(beta) > 0 for all sampled real beta in [-9,9]  -- min Z=1.0 at beta=0.0 (expect min=1 at 0); negatives=[]
+[PASS] Z_1plaq(0) = 1
+
+=== C. Lee-Yang localization (single-plaquette layer, rigorous) ===
+[PASS] nearest Z_1plaq zero |beta_c| = 8.205  -- beta_c=3.3174797+/-7.5046562i, |bc|=8.205214
+[PASS] nearest Z_1plaq zero is OFF the real axis (arg ~ 66 deg)  -- |arg|=66.1519 deg
+[PASS] Re(beta_c) > 0 and Im(beta_c) != 0 => complex-conjugate pair (real coeffs)
+[PASS] residual |Z_bars(root)| decreases with truncation degree (genuine zero, not artifact)  -- residuals D=30..60: 3.27e-11, 3.88e-18, 5.03e-26, 1.07e-34
+[PASS] beta=6 is INSIDE the single-plaquette analyticity radius (6/|beta_c|<1)  -- 6/|beta_c|=0.731242
+
+=== D. Series-asymptotic class discriminant from d5,d6,d7 ===
+[PASS] shape invariant u = c2/c1^2 = 20/49  -- u=20/49
+[PASS] divergent algebraic branch point: c2/c1^2 = (g+1)/(2g)  -- u_sym=(g + 1)/(2*g)
+[PASS] (g+1)/(2g) > 1/2 for ALL g>0 (so any positive-real divergent branch pt has u>1/2)
+[PASS] observed u = 20/49 < 1/2  => positive-real divergent algebraic branch point EXCLUDED on (0,6]  -- 20/49=0.4082 < 0.5
+[PASS] [0/2] Pade denominator b^2-coeff (c1^2 - c2) = 29/144  -- c1^2-c2=29/144
+[PASS] [0/2] Pade discriminant = -3 c1^2 + 4 c2 = -67/144 < 0 => COMPLEX-CONJUGATE PAIR  -- disc=-67/144
+[PASS] disc < 0 <=> u < 3/4 (and u=20/49<3/4): complex pair is the u<3/4 regime
+[PASS] [0/2] complex-pair |beta_c| = 2.2283 (under-converged TYPE discriminator, NOT physical 5.7)  -- |beta_c|_[0/2]=2.22834 (NOT to be read as ~5.7)
+[PASS] single-real-pole / geometric FALSIFIED (u != 1)  -- u=20/49 != 1
+
+=== E. d-log-Pade activation arithmetic (rank constraint) ===
+[PASS] H=(log h)' from 3 coeffs gives exactly 2 coeffs (H0,H1)  -- H0=c1=7/12, H1=2c2-c1^2=-1/16
+[PASS] [1/1] d-log-Pade needs 3 coeffs of H; only 2 available from d5..d7  -- need=3, have=2
+[PASS] => activation requires d5..d8 (= beta^8); proving the class adds NO coefficients  -- beta^8 is a class-INDEPENDENT rank floor (matches harness threshold)
+
+SUMMARY  PASS=33  FAIL=0
+
+----- stderr -----
+

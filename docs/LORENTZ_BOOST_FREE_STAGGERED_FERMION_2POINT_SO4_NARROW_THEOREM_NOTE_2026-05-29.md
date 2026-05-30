@@ -9,7 +9,7 @@ audit pipeline after independent review.
 audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py`](../scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py)
-(SCORECARD: PASS=40, FAIL=0)
+(SCORECARD: PASS=47, FAIL=0)
 **Cached runner output:** [`logs/runner-cache/frontier_lorentz_boost_free_staggered_fermion_2point_so4.txt`](../logs/runner-cache/frontier_lorentz_boost_free_staggered_fermion_2point_so4.txt)
 
 This note is the **matter-sector (fermion) analogue** of the existing
@@ -25,15 +25,22 @@ emergent-Lorentz claim for the interacting theory.
 
 On the free (`U = 1`) staggered (Kogut-Susskind) lattice `Cl(3)/Z³ × Z_τ`
 with the framework's canonical phases `η_0 = 1`,
-`η_μ(n) = (-1)^{n_0 + ... + n_{μ-1}}`, the momentum-space free staggered
-Dirac operator in the spin-diagonal (Kähler-Dirac) basis is
+`η_μ(n) = (-1)^{n_0 + ... + n_{μ-1}}`, the **continuum-limit** spin⊗taste
+form of the free staggered Dirac operator in the spin-diagonal
+(Kähler-Dirac) basis is
 
 ```text
     D~(p) = m (1_spin ⊗ 1_taste)
             + (i/a) Σ_μ (γ_μ ⊗ 1_taste) sin(p_μ a),
 ```
 
-with Euclidean `γ_μ` Hermitian, `{γ_μ, γ_ν} = 2 δ_{μν}`. Its inverse —
+with Euclidean `γ_μ` Hermitian, `{γ_μ, γ_ν} = 2 δ_{μν}`. The clean
+`1_taste` spin⊗taste factorisation written here is the `a → 0` form;
+what is exact at finite `a` is the **scalar spectrum**
+`Δ(p) = m² + (1/a²) Σ_μ sin²(p_μ a)`, with taste entering not the
+eigenvalue but as a **4-fold spectral multiplicity** (the genuine
+finite-`a` taste-breaking is the `O(a)` non-spectator mixing of standard
+staggered fermions, vanishing as `a → 0`; see Construction). Its inverse —
 the free 2-point Euclidean Schwinger function
 `G_E(τ, x⃗) = ⟨χ(τ,x) χ̄(0,0)⟩` in momentum space — is
 
@@ -52,8 +59,11 @@ continuum limit `a → 0` with physical separation held fixed,
 ```
 
 the standard SO(4)-covariant Euclidean Dirac/Kähler-Dirac propagator
-(the taste factor is a spectator identity `1_taste` in the free `U = 1`
-theory). In position space this is the SO(4)-rotation-invariant kernel
+(in this `a → 0` limit the taste factor is a spectator `1_taste`;
+equivalently, at finite `a` taste does not enter the scalar spectrum
+`Δ(p)` and appears only as a 4-fold spectral multiplicity, with `O(a)`
+taste-breaking corrections that vanish as `a → 0`). In position space
+this is the SO(4)-rotation-invariant kernel
 built from the scalar Euclidean propagator `m K_1(m R)/(4π² R)` and its
 derivative; equivalently (Wick rotation `t → -i τ`) the corresponding
 Wightman 2-point function is SO(3,1)-covariant in the continuum limit.
@@ -103,9 +113,25 @@ component per site of a `2×2×2×2` hypercube into a Dirac spinor index
 at `d = 4`. This `2^d = N_spinor · N_taste` Kähler-Dirac form-complex
 equivalence — `D_KD = d - δ`, `D_KD² = `Hodge Laplacian — is the
 load-bearing algebraic substrate supplied by the cited substep-2 narrow
-theorem (retained_bounded; see Dependencies). In the reduced Brillouin
-zone the free operator is exactly the momentum-space `D~(p)` above, with
-the taste index appearing only as the spectator factor `1_taste`.
+theorem (retained_bounded; see Dependencies). The clean spin⊗taste
+factorisation written as `D~(p)` above — with the taste index appearing
+only as the spectator factor `1_taste` — is the **continuum-limit**
+(`a → 0`) form of the operator, NOT an exact finite-`a` reduced-BZ
+lattice-operator identity. At finite `a` the honest hypercube spin⊗taste
+reconstruction (Kawamoto-Smit / Kluberg-Stern) carries `O(a)`
+non-spectator taste-mixing channels (e.g. `γ_S ⊗ ξ_5`) at generic
+momenta — the standard staggered taste-breaking — and a dimension count
+confirms the factorisation cannot be a single-spacing identity: the 16
+spin⊗taste components carrying one Grassmann dof per site live on the
+block lattice `(L/2)^4` at spacing `2a` (`16 · (L/2)^4 = L^4`), so a
+16-component operator over single-spacing momenta would carry 16× the
+degrees of freedom. What IS exact at finite `a` is the **scalar
+spectrum** `Δ(p) = m² + (1/a²) Σ_μ sin²(p_μ a)`: taste does not enter the
+eigenvalue but appears as a **4-fold spectral multiplicity** (every
+eigenvalue multiplicity is divisible by 4). The taste-spectator `1_taste`
+statement is therefore a continuum-limit / 4-fold-spectral-multiplicity
+statement; the genuine finite-`a` taste-breaking is `O(a)` and vanishes
+as `a → 0`, recovering the displayed spin⊗taste `D~(p)`.
 
 ### Closed-form inverse via the Clifford identity
 
@@ -226,16 +252,17 @@ position-space SO(4) scalar Schwinger kernel is the same
 
 ```bash
 python3 scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
-# SCORECARD: PASS=40  FAIL=0
+# SCORECARD: PASS=47  FAIL=0
 # Exit code: 0
 ```
 
-The 40 checks span 7 parts (self-contained: numpy + scipy.special +
+The 47 checks span 8 parts (self-contained: numpy + scipy.special +
 optional sympy):
 
 | Part | Coverage                                                            | PASS |
 |------|--------------------------------------------------------------------|------|
 | 1    | Euclidean Clifford algebra + staggered operator + closed-form inverse | 5  |
+| 1a   | Exact finite-a scalar spectrum Δ(p) + 4-fold taste multiplicity (position-space staggered operator) | 7 |
 | 2    | Continuum limit → SO(4) Euclidean Dirac propagator (O(a²))          | 5    |
 | 3    | SO(4) covariance: exact continuum bispinor + lattice O(a²) residual | 5    |
 | 4    | Leading anisotropy = dim-6 ℓ=4 cubic harmonic (4D; c₄=-1/3; no ℓ=2,6) | 8  |
@@ -243,7 +270,7 @@ optional sympy):
 | 6    | Position-space SO(4) isotropy of the lattice trace 2-point (even sublattice) | 4 |
 | 7    | Combined SO(4)/SO(3,1) statement + relation to the scalar note     | 9    |
 
-Total: 40/40 PASS.
+Total: 47/47 PASS.
 
 A noted structural feature (Part 6): the trace (taste-summed) 2-point
 `tr G~ = 4m/Δ(p)` is invariant under the staggered taste shift
@@ -267,10 +294,16 @@ statement, which is the load-bearing content.
   function is treated. No Osterwalder-Schrader reconstruction, no
   continuum-existence (Wightman) claim, and no emergent-Lorentz claim
   for the interacting theory are made.
-- **Taste-symmetry restoration at finite `a`.** The free propagator's
-  taste factor is an exact spectator `1_taste`; taste-breaking is an
-  interacting-theory effect (`O(a²)` taste-violating four-fermion
-  operators) and is out of scope.
+- **Taste-symmetry restoration at finite `a`.** The taste-spectator
+  `1_taste` factorisation holds in the continuum limit (`a → 0`); at
+  finite `a` the free theory already carries `O(a)` non-spectator
+  taste-breaking in the spin⊗taste reconstruction (standard staggered
+  taste-breaking), vanishing as `a → 0`. What is exact at finite `a` is
+  the scalar spectrum `Δ(p)` (taste enters only as a 4-fold multiplicity,
+  not the eigenvalue). The additional interacting-theory taste-breaking
+  (`O(a²)` taste-violating four-fermion operators) is a separate effect
+  and is out of scope; the magnitude and continuum extrapolation of free
+  finite-`a` taste-breaking are likewise out of scope here.
 - **Physical-unit conversion.** Any conversion of the O(a²) anisotropy
   to physical Lorentz-violation magnitude requires the Planck-pin /
   unit-map premise `a ~ 1/M_Pl`, which is NOT imported here (it is the
@@ -305,9 +338,12 @@ Load-bearing retained dependencies (markdown links):
   (retained_bounded) — the abstract Kähler-Dirac form-complex
   equivalence `D_KD = d - δ`, `2^d = N_spinor · N_taste`,
   Hamming-weight ↔ form-degree graded bijection. Supplies the
-  load-bearing algebraic spin/taste structure that makes the free
-  staggered operator the momentum-space `D~(p) = m 1 + (i/a) Σ γ_μ ⊗
-  1_taste sin(p_μ a)` used here.
+  load-bearing algebraic spin/taste structure whose continuum limit is
+  the spin⊗taste momentum-space operator `D~(p) = m 1 + (i/a) Σ γ_μ ⊗
+  1_taste sin(p_μ a)` used here (the clean `1_taste` factorisation is the
+  `a → 0` form; at finite `a` the reconstruction carries the standard
+  `O(a)` staggered taste-breaking, and what is exact is the scalar
+  spectrum `Δ(p)` with its 4-fold taste multiplicity).
 - [CPT_EXACT_NOTE.md](CPT_EXACT_NOTE.md) (retained) — exact CPT on the
   even periodic lattice. Supports the parity-even / CPT-even
   classification of the leading O(a²) correction (no dim-3 / dim-5

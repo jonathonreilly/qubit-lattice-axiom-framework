@@ -54883,22 +54883,6 @@
       "runner_path": "scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py",
       "title": "Fifth Family Radial Boundary Note"
     },
-    "fifth_family_radial_repaired_positive_packet_note_2026-05-29": {
-      "claim_id": "fifth_family_radial_repaired_positive_packet_note_2026-05-29",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
-      "helper_runner_paths": [
-        "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
-        "scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py",
-        "scripts/gate_b_no_restore_farfield.py"
-      ],
-      "note_hash": "f55e375f4a4121b33cbaac3431de26749d3350a9e0eccfd4ad46cd67794291b7",
-      "path": "docs/FIFTH_FAMILY_RADIAL_REPAIRED_POSITIVE_PACKET_NOTE_2026-05-29.md",
-      "runner_path": "scripts/FIFTH_FAMILY_RADIAL_BASIN.py",
-      "title": "Fifth Family Radial Repaired Positive Packet"
-    },
     "fine_h_family_universality_note": {
       "claim_id": "fine_h_family_universality_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -87372,7 +87356,6 @@
     "fermion_parity_z2_grading_theorem_note_2026-05-02",
     "fifth_family_complex_boundary_note",
     "fifth_family_radial_boundary_note",
-    "fifth_family_radial_repaired_positive_packet_note_2026-05-29",
     "fine_h_family_universality_note",
     "finite_rank_gravity_residual_helper_note_2026-04-14",
     "finite_rank_source_to_metric_theorem_note",

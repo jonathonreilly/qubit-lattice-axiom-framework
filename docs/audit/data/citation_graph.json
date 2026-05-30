@@ -70415,7 +70415,7 @@
       "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "96d138fb137baa6f6d08fc49bce9e5c90d10fc051b9e67532e7378f206ca10a9",
+      "note_hash": "ca3c0024fd19ea7c24e3d69131f18324724d087b9255b9ec2a9f9db345686fd4",
       "path": "docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md",
       "runner_path": "scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py",
       "title": "Plaquette beta=6 Perturbative-Derivation Bounded Obstruction"

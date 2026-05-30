@@ -5,7 +5,6 @@
 **Status:** bounded-support lattice IR-sum threshold; not a retained
 dimensional-minimality theorem.
 **Runner:** `scripts/axiom_first_coleman_mermin_wagner_check.py`
-**Status authority:** independent audit lane only.
 
 ## 2026-05-29 Scope Repair
 

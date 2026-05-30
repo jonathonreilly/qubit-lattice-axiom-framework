@@ -1,3 +1,10 @@
+---
+claim_id: free_dirac_poincare_representation_bounded_note_2026-05-30
+claim_type_author_hint: bounded_theorem
+status_authority: independent_audit_lane_only
+direct_effective_status_change_allowed_from_this_note: false
+---
+
 # Free Dirac Poincare Algebra and Positive-Energy Support (Bounded)
 
 **Date:** 2026-05-30

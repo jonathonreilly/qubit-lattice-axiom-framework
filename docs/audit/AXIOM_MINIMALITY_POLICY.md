@@ -50,3 +50,28 @@ Do not add the axiom and proceed.
 This policy applies until the full repo audit is complete. After the audit,
 axiom extension may be revisited as a separate decision. Until then, `A_min`
 is fixed.
+
+## 6. Recorded primitive decisions (owner science-level decisions)
+Per §1 (third bullet) and §4, accepting a specific primitive is permitted when
+it is recorded here as an explicit owner science-level decision. The framework
+owner sets the minimality norm and may make such a decision. Recorded:
+
+- **2026-05-30 — scale-reference primitive (the units import).** The single
+  dimensionful scale reference `a^{-1}` is accepted as a framework primitive,
+  registered in `docs/audit/data/axiom_premise_nodes.json` as
+  `scale_reference_primitive` (source `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md`).
+  - **Why it is admissible and not a carve-out for laundering.** It is a units
+    conversion, not a physics axiom. A dimensionful scale is irreducible by
+    dimensional analysis: `A_min = Cl(3)` on `Z^3` carries zero dimensionful
+    content, so exactly one dimensionful number must be supplied to fix the
+    unit. The declaration contains **no dimensionless content**, so the
+    axiom-premise carve-out cannot launder any dimensionless result — no mass
+    ratio, coupling, or mixing angle can be derived by citing a pure unit
+    declaration. `check_axiom_premise_clean.py` enforces that the doc stays
+    pure.
+  - **Scope.** This decision is narrow. It does **not** amend `A_min` (A1/A2
+    unchanged), does **not** reopen the A1/A2 minimality audit, and does **not**
+    assert `a/l_P = 1` — the self-consistency that the natural unit equals the
+    Planck length remains the separate open gravity derivation. The general
+    "`A_min` is fixed" rule of §5 is unchanged for all physics content; this
+    records only the one units-conversion primitive.

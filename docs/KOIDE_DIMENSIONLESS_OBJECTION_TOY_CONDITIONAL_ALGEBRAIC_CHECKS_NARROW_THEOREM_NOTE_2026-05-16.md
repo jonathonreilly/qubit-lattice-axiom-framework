@@ -27,24 +27,6 @@ is `IF [admitted carrier / admitted scalar] THEN [algebraic identity]`,
 where the antecedent is a stated admission, not a retained-framework
 derivation.
 **Primary runner:** [`scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py`](../scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py)
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The algebraic identities close on their own conditional terms from the stated admissions by exact rational arithmetic. The admissions (A1)-(A5) themselves are not derived or retained-grade in this packet."*
-
-with repair: *"missing_bridge_theorem: derive or cite retained-grade support for admissions (A1)-(A5) if retained-grade propagation is desired; otherwise keep this row explicitly conditional at algebraic-checks tier."*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The nine conditional algebraic identities (T1)-(T9) verified by the runner in exact rational arithmetic (`Python Fraction`), each of the form `(A_subset) ⊢ (T_k)`, which close by direct rational computation in Q under the explicitly named admissions (A1)-(A5).
-- **NON-load-bearing (split off / admitted):** The admissions (A1)-(A5) themselves — the two-channel source-response carrier, central Z label, selected-line endpoint algebra, based-endpoint section, and APS scalar `eta_APS = 2/9` — which are stated, not derived from retained framework authorities, and are recorded here as admitted, not-derived inputs.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
-
 **Authority role:** Pattern A narrow rescope of the in-toy algebraic core
 of the parent `koide_dimensionless_objection_closure_review_packet_2026-04-24`
 no-go packet. The parent packet bundles:

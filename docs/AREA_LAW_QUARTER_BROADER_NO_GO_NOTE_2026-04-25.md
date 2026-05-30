@@ -1,17 +1,17 @@
 # Area-Law Quarter Broader No-Go Note
 
 **Date:** 2026-04-25
-**Status:** audited_conditional no-go support theorem for Planck Target 2
+**Status:** unaudited no-go support theorem for Planck Target 2
 **Runner:** `scripts/frontier_area_law_quarter_broader_no_go.py`
 
 ## Cited authorities (one-hop deps)
 
-- [`BH_ENTROPY_DERIVED_NOTE.md`](BH_ENTROPY_DERIVED_NOTE.md) — `audited_conditional`.
+- [`BH_ENTROPY_DERIVED_NOTE.md`](BH_ENTROPY_DERIVED_NOTE.md) — `retained_bounded`.
   Records the bounded RT bond-dimension companion identification on the existing
   `Cl(3)/Z^3` free-fermion carrier; this no-go bounds the asymptotic Widom
   coefficient that companion approaches.
 - [`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)
-  — `audited_conditional`. The single-carrier no-go that this note generalizes
+  — `retained_bounded`. The single-carrier no-go that this note generalizes
   from one diamond / one cubic Fermi surface to the full simple-fiber Widom
   class.
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
@@ -265,10 +265,10 @@ This rigorization does **not**:
   remains an admitted universal physics input on the same footing as in the
   cited single-carrier no-go.
 - close the upstream `BH_ENTROPY_DERIVED_NOTE` / `BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE`
-  conditional statuses. Those remain `audited_conditional` and this note
-  inherits their conditional surface.
+  statuses. Those are `retained_bounded` and this note
+  inherits their bounded surface.
 - promote audit status. The audit ledger is not modified; status descriptor
-  alignment to `audited_conditional` matches the live audit ledger entry.
+  alignment to `unaudited` matches the live audit ledger entry.
 
 ## Literature anchor
 

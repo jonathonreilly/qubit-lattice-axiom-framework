@@ -1,20 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py
-runner_sha256: 1aedbb16f745ffbf1826e456805d81b6eda8117fa32061998e373148769d8cc5
+runner_sha256: 511c683859e8a7e8fa84bf8fb0d1e5610ffeb907085c6495378eebcbfaae5941
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================
  lattice_noether_carrier_independent_bilateral_identity_narrow
- Block 27 of filter-excluded-positive-closures-2026-05-17
 
- Theorem. Bilateral Noether identity holds on the axis-translation-
+ Bounded theorem. Bilateral Noether identity holds on the axis-translation-
  invariant carrier class { c_mu : c_mu(x + mu_hat) = c_mu(x) },
  with on-shell divergence vanishing for every c_mu in the class
- and every generator T with [T, M] = 0. Decouples the bilateral
- identity from the staggered-Dirac realization gate.
+ and every site-local/internal generator T with [T, M] = 0.
+ It does not claim a Ward theorem for lattice-index generators.
+ This decouples the bilateral identity from the staggered-Dirac
+ realization gate.
 ========================================================================
 
 --- Exhibit E1: axis-translation-invariant carrier sweep ---
@@ -72,3 +73,6 @@ status: ok
   E8: PASS
 
  Overall verdict: PASS
+
+----- stderr -----
+

@@ -1,66 +1,33 @@
-# Carrier-Independent Bilateral Lattice-Noether Identity — Narrow Theorem (Block 27)
+# Carrier-Independent Bilateral Lattice-Noether Identity — Narrow Theorem
 
 **Date:** 2026-05-17
 **Type:** bounded_theorem
-**Loop:** `filter-excluded-positive-closures-2026-05-17`, Block 27
-**Authority role:** source-note proposal; effective `effective_status`
-is set only by the independent audit lane.
-**Status authority:** independent audit lane only.
 **Primary runner:** `scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py`
 **Cache:** `logs/runner-cache/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.txt`
-**Parent (audited_conditional row this narrow closure targets):**
+**Parent context:**
   `docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
 
-## 2026-05-28 Audit Repair (conditional core; missing upstream admitted)
+## Source Boundary
 
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The AxisInv reindexing algebra closes once the finite Grassmann bilinear action and site-local/internal generator hypotheses are assumed. The restricted packet does not close the import of that Grassmann/action surface from the one-qubit operator algebra on the Z^3 spatial substrate, and [T,M]"*
-
-with repair: *"missing_dependency_edge: cite a retained finite-Grassmann bilinear/partition theorem as a one-hop dependency and narrow T2 to site-local/internal generators, or add a separate Ward theorem for lattice-index generators."*
-
-Supplying the named upstream authority is substantive new work, out of scope.
-This revision narrows via the **admission path**:
+This revision isolates the finite algebraic core from the broader lattice
+Noether parent surface:
 
 - **Load-bearing (in scope):** The AxisInv reindexing algebra — T1 anti-Hermiticity characterization, T2 bilateral conserved current derivation, T3 class-strictness certification, T4 sharpness, and T5 carrier-uniformity — all close algebraically and are verified numerically by the eight runner exhibits to machine precision, given the finite Grassmann bilinear action `S_F = chi_bar M chi` and site-local/internal generators `T` satisfying `[T, M] = 0` as supplied inputs.
-- **NON-load-bearing (admitted / unsupplied):** The finite Grassmann bilinear/partition theorem establishing that the variational derivation `delta S_F[alpha]` produces the bilateral form (5) — specifically the one-hop retained authority closing the import of the Grassmann/action surface from the one-qubit operator algebra on the `Z^3` spatial substrate — is admitted as an unsupplied input; additionally T2 as stated covers site-local/internal generators and no separate Ward theorem for lattice-index generators is supplied.
+- **Out of scope:** any Ward theorem for generators that shift lattice indices,
+  and any identification of this generic carrier `M` with the physical
+  staggered Kogut-Susskind carrier `M_KS`.
 
-No new axiom, import, or retained bridge is introduced. The conditional core is
-the load-bearing content; the named upstream stays admitted until a retained
-authority/runner for it lands.
-
-## Authority disclaimer
-
-This is a source-note proposal. The `claim_type`, scope, named
-admissions, and `positive_theorem` classification are author-proposed;
-the audit lane has full authority to retag, narrow, or reject the
-proposal. This note adds a narrow sub-theorem that **strictly extends**
-the parent note's content without modifying parent text. No parent
-dependency is added or removed; the parent's `audited_conditional`
-status is unaffected by this note.
+The one-hop finite-Grassmann/Berezin authority is cited below. No new axiom,
+import, or framework bridge is introduced.
 
 ## Why this note exists
 
 The 2026-04-29 axiom-first lattice Noether theorem note
-(`docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`) carries
-the audit verdict `audited_conditional` with the explicit verdict
-rationale:
-
-> "The internal Noether manipulation and runner exhibits are algebraic
-> checks on the admitted staggered carrier, so class A is appropriate.
-> However the restricted packet explicitly says the
-> staggered-Dirac/Grassmann carrier is an open gate and is imported as
-> an admitted context input rather than derived from the provided
-> axioms. Under the rubric, an explicit unclosed carrier import
-> requires audited_conditional even if the bounded identity closes on
-> that carrier."
-
-The named gap is the **carrier import**, not the algebraic Noether
-identity. The parent's proof of (5) -> (4) under the U(1) phase
-generator (parent Step 2 and Step 4a) is a finite-Grassmann variational
-argument whose only dependence on the staggered structure is that the
-matrix `M_KS` is anti-Hermitian off-diagonal with nearest-neighbour hop
-coefficients of the form `+-(1/2) eta_mu(x)`.
+(`docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`) is broader:
+it discusses the physical staggered carrier and the naming of `J` as a
+staggered Kogut-Susskind fermion-number current. This note does not try to
+close that physical carrier-identification question. It isolates the algebraic
+Noether identity for a precisely characterized nearest-neighbour carrier class.
 
 This note observes that the parent's bilateral algebraic content is
 **carrier-independent** within a precisely characterized class of
@@ -69,12 +36,12 @@ carrier class* defined below. The staggered carrier `eta_mu` is one
 member of this class; the naive Wilson-free carrier `c_mu = 1` is
 another; we exhibit a third explicit member to certify the class is
 strictly larger than {naive, staggered}. The bilateral Noether
-identity is then a positive theorem on every member of the class, with
+identity is then a bounded theorem on every member of the class, with
 **no dependence on the staggered-Dirac realization gate**.
 
-The narrow closure here is therefore a slice of the parent's
-audited_conditional gap: the *bilateral algebraic core* (parent Step 2
-plus the U(1)-phase Step 4a) is recovered as a positive theorem on the
+The narrow closure here is therefore a slice of the parent's carrier-gate
+problem: the *bilateral algebraic core* (parent Step 2 plus the U(1)-phase
+Step 4a) is recovered as a bounded theorem on the
 axis-inv class, independent of the carrier-import question. The
 remainder of the parent's content -- specifically the identification of
 the carrier with `M_KS` and the physical naming of `J` as the
@@ -111,7 +78,7 @@ to the `mu`-axis.
 - Identification of `M` with `M_KS` (the staggered Kogut-Susskind
   operator) or any specific physical operator. That identification
   re-introduces the staggered-Dirac realization gate of the parent
-  note's audited_conditional verdict.
+  note's carrier-identification dependency.
 - Wilson-sector contributions `M_W != 0`. The parent note is also
   silent on Wilson contributions outside its scope statement; we
   inherit that silence here.
@@ -139,8 +106,10 @@ Proof. By direct expansion:
 This vanishes for every `(x, mu)` iff `c_mu(x + mu_hat) = c_mu(x)` for
 every `x`, which is `(AxisInv)`. ∎
 
-**(T2) Carrier-independent bilateral conserved current.** For any
-`c_mu` in `AxisInv(Z^d)` and any field-index generator `T` satisfying
+**(T2) Carrier-independent bilateral conserved current for site-local/internal generators.** For any
+`c_mu` in `AxisInv(Z^d)` and any site-local/internal generator `T`
+(a generator acting on internal/field indices at each fixed lattice site,
+not a generator that shifts lattice indices) satisfying
 the symmetry condition
 
 ```text
@@ -262,11 +231,12 @@ mu_hat) = c_mu(x)` to match coefficients, so outside `AxisInv` the
 bilateral form `(5)` is no longer the form produced by the local-alpha
 expansion.
 
-For non-trivial generators `T` (those that don't commute with arbitrary
-operators), `(Sym)` itself constrains the relationship between `T`
-and `c_mu`, and the bilateral form `(5)` is the *only* form that the
-finite-Grassmann variational derivation produces, again requiring
-`(AxisInv)`.
+For non-trivial site-local/internal generators `T` (those that do not
+commute with arbitrary internal operators), `(Sym)` itself constrains
+the relationship between `T` and `c_mu`, and the bilateral form `(5)` is
+the *only* form that the finite-Grassmann variational derivation
+produces, again requiring `(AxisInv)`. Generators that shift lattice
+indices require a separate Ward theorem and are outside this row.
 
 ## Carrier inclusion: staggered and naive Wilson-free
 
@@ -306,23 +276,25 @@ runner's `E3` exhibit and by the present runner's `E1`-`E8` exhibits
 ## Carrier-independence is a quantitative statement
 
 **(T5) Uniformity in `c_mu`.** For every `c_mu` in `AxisInv(Z^d)` and
-every `T` satisfying `(Sym)`, the on-shell divergence of `(5)` vanishes
-*exactly* in the algebraic sense and to machine precision in numerical
-realization. Runner exhibit `E8` sweeps `K = 16` distinct
-axis-inv carriers and confirms `max |partial^L J^mu|_max < 1.2e-15`
+every site-local/internal `T` satisfying `(Sym)`, the on-shell
+divergence of `(5)` vanishes *exactly* in the algebraic sense and to
+machine precision in numerical realization. Runner exhibit `E8` sweeps
+`K = 16` distinct
+axis-inv carriers and confirms `max |partial^L J^mu|_max < 1.3e-15`
 across the full sweep, uniformly in the carrier.
 
 ## Hypothesis-set summary
 
-**Framework axioms (current).**
+**Framework and algebraic surface.**
 
-- **A1 - local algebra `Cl(3)`.** Used only via the existence of a
-  faithful local representation of the Cl(3) algebra on each site
-  (parent A1; this note carries A1 in the same minimal way as the
-  parent).
-- **A2 - substrate `Z^d`.** Used via the discrete nearest-neighbour
-  hop structure. The narrow theorem here is dimension-independent
-  in `d`; the runner exhibits use `d = 3`.
+- The lattice input used by the proof is a finite periodic `Z^d`
+  nearest-neighbour lattice. The runner exhibits use `d = 3`.
+- The local-alpha variational calculation is performed on the finite
+  Grassmann bilinear action `S_F = chi_bar M chi`, using the Berezin
+  determinant / bilinear partition source cited below.
+- The generator scope is site-local/internal: `T` acts on field/internal
+  indices at fixed lattice sites and satisfies `[T, M] = 0`. No
+  lattice-index-shifting Ward theorem is claimed here.
 
 **No admitted context inputs.** This narrow theorem does *not* admit
 the staggered-Dirac realization gate, because the bilateral identity
@@ -372,7 +344,7 @@ exhibits eight numerical checks:
   algebraic substitution identity for a generic carrier.
 - **E8.** Carrier-uniformity: `K = 16` distinct axis-inv carriers,
   each on its own M_k on-shell state, all give
-  `|partial^L J|_max < 1.2e-15`. Verifies `(T5)`.
+  `|partial^L J|_max < 1.3e-15`. Verifies `(T5)`.
 
 All eight exhibits report `PASS`. The runner exits 0 iff all exhibits
 pass.
@@ -398,28 +370,25 @@ distinguish between "naive" and "staggered" lattice fermions at the
 level of the local-alpha derivation, because both share the
 axis-translation-invariance property.
 
-## Honest status
+## Claim boundary
 
-**Positive narrow theorem on the explicit framework baseline.** The
-bilateral Noether identity is a positive theorem on the
+**Bounded narrow theorem on the explicit finite-Grassmann surface.** The
+bilateral Noether identity is a bounded theorem on the
 axis-translation-invariant carrier class, with `(T1)`-`(T5)`
 established algebraically and verified numerically by the eight runner
-exhibits to machine precision. The narrow theorem does *not* close
-the parent note's audited_conditional gap; rather, it closes a
-specific *slice* of that gap: the bilateral algebraic core is recovered
-without admitting the staggered-Dirac realization gate, leaving only
-the carrier-identification question (which is what the parent's
-`audited_conditional` rationale actually concerns).
+exhibits to machine precision.
 
-The parent note's `audited_conditional` status is unaffected by this
-note. The independent audit lane has full authority over the parent's
-effective status; this note adds a strictly-additive positive
-sub-theorem that does not modify the parent note's text or change
-its dependency graph.
+This note does not close the parent note's carrier-identification
+question. It recovers the bilateral algebraic core without admitting the
+staggered-Dirac realization gate, leaving the identification of the
+generic carrier `M` with the physical staggered Kogut-Susskind carrier
+`M_KS` outside this row.
 
-The narrow theorem here is dimension-independent and gate-independent;
-it depends only on `A1`, `A2`, and the elementary finite-Grassmann
-variational technique used by the parent in Step 2.
+The narrow theorem here is dimension-independent and staggered-gate
+independent. Its finite-Grassmann bilinear/partition surface is supplied
+by the Berezin determinant authority cited below, and its
+Noether-current claim is restricted to site-local/internal generators.
+It does not claim a Ward theorem for lattice-index-shifting generators.
 
 ## Not in scope
 
@@ -432,22 +401,22 @@ variational technique used by the parent in Step 2.
   Same as the parent.
 - Identification of `M` with the physical `M_KS` operator. That
   identification re-introduces the staggered-Dirac realization gate
-  of the parent's audited_conditional verdict.
+  of the parent note's carrier-identification dependency.
 
 ## Load-bearing dependencies
 
-- Current public framework memo:
-  `MINIMAL_AXIOMS_2026-05-03.md` (`A1`: Cl(3) per-site, `A2`: Z^d
-  spatial substrate).
+- [spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  supplies the finite-Grassmann Berezin determinant / bilinear
+  partition calculus used by the local-alpha bilinear convention.
 
 ## Citations
 
-- Parent (audited_conditional, this narrow closure targets a slice):
+- Parent context:
   `docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`.
 - For context (sister sub-theorems on the parent surface):
   - `docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`
-    (Block 25; same authority pattern: a strictly-additive narrow
-    sub-theorem on a parent note's slice).
+    (same source pattern: a strictly-additive narrow sub-theorem on a
+    parent note's slice).
 
 ## Admitted context inputs
 
@@ -455,19 +424,17 @@ variational technique used by the parent in Step 2.
 realization gate, because the bilateral identity is carrier-independent
 within the axis-translation-invariant class.
 
-`AxisInv(Z^d)` is defined directly from the substrate `Z^d` axiom and
+`AxisInv(Z^d)` is defined directly from the finite periodic lattice and
 makes no reference to staggered-specific structure. The staggered
 carrier `eta_mu` is one *member* of the class (verified by direct
 expansion); the naive carrier `c_mu = 1` is another. The runner
 exhibits a third explicit member (`phi_mu = 1 + 0.3 cos(...)`) to
 certify the class is genuinely larger than {naive, staggered}.
 
-## Audit dependency repair links
+## Source links
 
-- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md) - current
-  public framework memo; sole upstream framework dependency.
-- [axiom_first_lattice_noether_theorem_note_2026-04-29](AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) -
-  parent (audited_conditional). This narrow theorem is strictly
-  additive on the parent and does not modify the parent's text or
-  dependency graph.
-- [staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- [spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  supplies the finite-Grassmann Berezin determinant / bilinear
+  partition calculus.
+Contextual background, not a load-bearing dependency:
+`docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`.

@@ -266963,22 +266963,42 @@
       "verdict_rationale": null
     },
     "source_resolved_wavefield_green_pocket_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T23:36:23.906747+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_source_driven_field_probe_note": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs."
+        },
+        "dep_claim_type": {
+          "minimal_source_driven_field_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_source_driven_field_probe_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_source_driven_field_probe_note"
+        ],
+        "load_bearing_score": 7.687,
+        "runner_hash": "996b775edd1bf03bbac4d6eef9521a6a125766769127a428ec9458b1d40fcf78",
+        "transitive_descendants": 102
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-233454-f76946ef-source_resolved_wavefiel",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner and included helper source instantiate the lattice propagation, Green fields, same-site memory, wavefield update, detector metrics, and fitted exponents directly; the printed table and aggregate quantities are not imported from another note or hard-coded as expected values. The conclusion closes only as a declared finite runner computation, not as a continuum retarded-gravity theory or a derivation of the chosen wavefield parameters.",
       "claim_id": "source_resolved_wavefield_green_pocket_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded replay of scripts/source_resolved_wavefield_green_pocket.py at h=0.25, W=3, L=6, source_z=2.0, the stated source cluster/kernel/memory/wavefield parameters, and target max |f|=0.02, auditing only the finite-pocket zero-source reduction, sign, fitted exponents, phase-lag/overlap, and wave/same response readouts.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T23:36:23.906747+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -266986,21 +267006,21 @@
         "minimal_source_driven_field_probe_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.687,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the declared h=0.25 runner pocket, the finite-speed wavefield preserves zero-source reduction, TOWARD sign, and near-linear F~M scaling while producing finite detector phase lag and a much larger response than the same-site memory control.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "2981f9a759f3e64673d847e74fd48546caf9b225c3b3e59b9710da18f4e4d521",
       "note_path": "docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope bounded to the runner-defined packet and re-check that the target max |f|=0.02 normalization remains treated as a declared input, not a derived calibration.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -267113,20 +267133,20 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "relabel_date": "2026-05-06T17:45:26.977001+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/source_resolved_wavefield_green_pocket.py",
       "title": "Source-Resolved Wavefield Green Pocket",
       "transitive_descendants": 102,
-      "verdict_rationale": null
+      "verdict_rationale": "The cited authority is retained_bounded, and the current claim is scoped to a bounded declared-run computation rather than an unbounded field-theory derivation. The runner source contains real computation over the helper lattice machinery and asserts the qualitative packet conditions; the helper source needed for the load-bearing path is present. Independent consistency checks of the displayed aggregate formulas match the table, including mean absolute phase lag 1.457, mean overlap 0.827, mean |wave-same| centroid delta 2.939448e-01, and mean wave/same ratio 33.732. No external comparator, renaming step, missing helper, or non-retained dependency is needed for this scoped result."
     },
     "source_resolved_wavefield_mechanism_note": {
       "audit_date": null,

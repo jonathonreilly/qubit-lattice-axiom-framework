@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 169 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 611 |
+| **retained_bounded** | 612 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1214 |
+| unaudited | 1213 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 946 |
+| `audited_clean` | 947 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1452 |
+| `unaudited` | 1451 |
 
 | claim_type | count |
 |---|---:|
@@ -871,6 +871,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_self_consistent_generated_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `source_resolved_support_localization_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `source_resolved_wavefield_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `spectral_symmetry_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -12626,6 +12627,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md`
   - `SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`
   - `MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md`
+- **auditor confidence:** high
+
+### `source_resolved_wavefield_green_pocket_note`
+
+- **Note:** [`SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_WAVEFIELD_GREEN_POCKET_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded replay of scripts/source_resolved_wavefield_green_pocket.py at h=0.25, W=3, L=6, source_z=2.0, the stated source cluster/kernel/memory/wavefield parameters, and target max |f|=0.02, auditing only the finite-pocket zero-source reduction, sign, fitted exponents, phase-lag/overlap, and wave/same response readouts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-233454-f76946ef-source_resolved_wavefiel`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the declared h=0.25 runner pocket, the finite-speed wavefield preserves zero-source reduction, TOWARD sign, and near-linear F~M scaling while producing finite detector phase lag and a much larger response than the same-site memory control.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helper source instantiate the lattice propagation, Green fields, same-site memory, wavefield update, detector metrics, and fitted exponents directly; the printed table and aggregate quantities are not imported from another note or hard-coded as expected values. The conclusion closes only as a declared finite runner computation, not as a continuum retarded-gravity theory or a derivation of the chosen wavefield parameters.
+- **rationale:** The cited authority is retained_bounded, and the current claim is scoped to a bounded declared-run computation rather than an unbounded field-theory derivation. The runner source contains real computation over the helper lattice machinery and asserts the qualitative packet conditions; the helper source needed for the load-bearing path is present. Independent consistency checks of the displayed aggregate formulas match the table, including mean absolute phase lag 1.457, mean overlap 0.827, mean |wave-same| centroid delta 2.939448e-01, and mean wave/same ratio 33.732. No external comparator, renaming step, missing helper, or non-retained dependency is needed for this scoped result.
 - **auditor confidence:** high
 
 ### `source_resolved_wavefield_v2_note`

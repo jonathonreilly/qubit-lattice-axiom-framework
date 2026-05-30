@@ -3,7 +3,7 @@ runner: scripts/gluon_tree_level_massless_check.py
 runner_sha256: 941a654bb1d50ef0efd8cb91a07bc95293c2efc7836b71301563a8366ea7d826
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================

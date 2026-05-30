@@ -648,7 +648,39 @@ sole channel for landing the regenerated outputs. Framework PRs that ship
 these files force a destructive overwrite of ratified audit state at merge
 time and have been an active source of broken-row regressions.
 
-8. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
+8. **Repository-portable links PASS gate (hard).** Markdown link targets
+   on any branch-modified `.md` file must be repo-relative. Absolute paths
+   like `/Users/<name>/...`, `/home/<name>/...`, or `/private/tmp/...`
+   inside a link target are non-portable: they break for every other
+   developer, every CI runner, and every fresh clone. The autopilot
+   historically emitted these as `(/Users/<author>/Projects/.../scripts/X.py)`
+   even when the link text was already a relative path; the gate catches
+   any recurrence and auto-rewrites it.
+
+```bash
+# Must produce no output. Scans branch-modified markdown for link targets
+# starting with /Users/, /home/, /private/, or any other absolute path.
+git diff --name-only origin/main...HEAD -- '*.md' \
+  | xargs -I{} grep -nE '\]\((/Users/|/home/|/private/|/tmp/|/var/|/opt/|file://)' {} 2>/dev/null
+```
+
+If this command prints any lines, the review-loop must rewrite the
+offending links and commit the fix before issuing PASS. Mechanical fix:
+the link text is already the desired display path; rewrite the target to
+a `../`-chain relative to the source `.md` file's directory. Example:
+in `docs/SOURCE_RESOLVED_FOO_NOTE.md` (depth 1), rewrite
+`(/Users/me/Projects/Physics/scripts/foo.py)` to `(../scripts/foo.py)`.
+In `docs/work_history/repo/backlog/X.md` (depth 4), rewrite the same
+target to `(../../../../scripts/foo.py)`.
+
+Do not pass the branch with non-portable link targets in place; the
+reviewer's job is to land code that works on every machine, not just the
+author's. This gate exists because a manual sweep of `main` on
+2026-05-30 found 1259 such link targets across 276 files (the autopilot
+had been re-emitting the pattern for months); the next instance should
+not require another manual sweep.
+
+9. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
    identify any artifact on the branch that ships a negative claim:
 
 ```bash
@@ -678,7 +710,7 @@ re-review. Do not weaken the gate to PASS the branch.
 This gate is independent of the Pipeline-clean PASS gate above; both must
 pass for review-loop to issue PASS.
 
-9. **Math-runner independent-check PASS gate (hard).** Before issuing
+10. **Math-runner independent-check PASS gate (hard).** Before issuing
 review-loop PASS for any branch that changes a runner, proof script, numeric
 constant, matrix construction, optimizer, expected value, or note formula,
 record the independent math check used by `CodeRunnerReviewer`. At least one
@@ -690,7 +722,7 @@ formula is correct. If an issue was reopened because the runner's math was
 wrong, treat the whole formula family as suspect until the changed expression
 and any reused helpers are cross-checked.
 
-10. **Native-language PASS gate (hard).** Changed repo-facing text must use
+11. **Native-language PASS gate (hard).** Changed repo-facing text must use
 controlled, native repo vocabulary. Run `scripts/vocab_lint.py --fix` on all
 branch-modified files before landing, then inspect changed headings, metadata,
 runner banners, claim scopes, table labels, and review comments for

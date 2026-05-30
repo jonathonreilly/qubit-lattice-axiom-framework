@@ -1,41 +1,12 @@
 # Assumption / Derivation Ledger
 
 **Date:** 2026-04-15 (original); 2026-05-27 (scope narrowing + R_conn row
-repair); 2026-05-28 (reclassified `bounded_theorem → meta` per audit path (b)).
-**Type:** meta
+repair).
+**Type:** bounded_theorem
 **Status authority:** independent audit lane only.
 
 This file exists to stop the package from blurring axioms, computed
 inputs, derived quantitative rows, and still-open companion lanes.
-
-## 2026-05-28 Reclassification (bounded_theorem → meta)
-
-The 2026-05-28 audit verdict on this row (`audited_conditional`) offered two
-repair paths:
-
-> *"missing_dependency_edge: wire every non-R_conn ingredient row to its
-> retained-grade authority note **OR split the ledger into metadata plus
-> independently audited ingredient claims.**"*
-
-This file is, by its own explicit claim boundary (below), **not a
-load-bearing theorem**: it "does not promote or demote any row" and
-"summarises the package surface ... so that downstream readers can find the
-authorities." Authoritative status for each ingredient lives in the named
-authority note, never in this ledger's prose. The `bounded_theorem` type was
-therefore a misclassification — a roadmap typed as a theorem will always read
-as conditional because it asserts package-wide statuses it does not itself
-certify.
-
-This revision takes **path (b)**: the ledger is reclassified as `meta`
-(bookkeeping roadmap / index). The independently-audited ingredient claims
-already live in their own authority rows (e.g. the exact `F_adj = 8/9` row is
-wired one-hop to [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md); the
-hierarchy, strong-CP, CKM, `y_t`, and Higgs rows each have their own lane
-authorities listed in §"Follow-up wiring"). No ingredient claim is certified
-*here*; this note is a pointer surface. No new axiom, import, or retained
-bridge is introduced. The four science notes that reference this ledger cite
-it as a "related"/"recorded-in"/"admitted-context" roadmap pointer, not as a
-load-bearing derivation authority, so the reclassification breaks no chain.
 
 ## 2026-05-27 Scope narrowing
 

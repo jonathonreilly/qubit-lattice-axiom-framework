@@ -1,53 +1,52 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py
-runner_sha256: 4512d493e808d15b902e11f30780a1156f9cd932e1b37f290a1fe00ef2d09115
+runner_sha256: 9e3d3801ac6c1aa58af2b0cd4d84a21d67c398d4bc28303d59b6bbd98e08d57d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.03
+elapsed_sec: 10.00
 status: ok
 ----- stdout -----
 ================================================================================
  gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py
- Audit-driven repair runner: dense parameter-box gap certificate
+ Finite-grid repair runner: dense parameter-box gap certificate
 ================================================================================
 
- Audited parameter box:
+ Listed parameter box:
    tau_transfer ∈ [1e-04, 5e-02]
    tau_boundary ∈ [0.5, 4.0]
    asym_decay   ∈ [1e-08, 1e-04]
    linear_decay ∈ [0.05, 1.0]
 
- Stated boundary corner gap: 7.5785e-03
+ Reference boundary-face gap: 7.5785e-03
 
 --- Build recurrence-matrix infrastructure ---
 
 --- Dense 6x6x5x8 = 1440 grid sweep ---
-  swept 1440 grid points in 0.2 s
+  swept 1440 grid points in 0.3 s
   min gap                     = 7.791551e-03
   median gap                  = 2.039034e-01
   max gap                     = 2.856130e-01
-  fraction below stated gap   = 0.0000
+  fraction below reference gap = 0.0000
   argmin grid point:
     tau_transfer = 1.0000e-04
     tau_boundary = 4.0000
     asym_decay   = 1.0000e-08
     linear_decay = 0.3214
-  stated boundary corner: tau_transfer = 1e-04,
+  reference boundary faces: tau_transfer = 1e-04,
                           tau_boundary = 4.0,
                           asym_decay   = 1e-08
 
-  [PASS] Dense-grid argmin lies at the stated boundary corner (lower tau_transfer + upper tau_boundary + lower asym_decay)  (argmin: tau_t at lower edge, tau_b at upper edge, asym at lower edge)
+  [PASS] Dense-grid argmin lies on the reference boundary faces (lower tau_transfer + upper tau_boundary + lower asym_decay)  (argmin: tau_t at lower edge, tau_b at upper edge, asym at lower edge)
   [PASS] Dense-grid minimum gap is strictly positive (no exact realization in box)  (min gap = 7.791551e-03 >> 1e-6 (numerical zero threshold))
-  [PASS] Dense-grid minimum gap reproduces stated boundary-corner value within order of magnitude  (min gap = 7.7916e-03, stated = 7.5785e-03)
+  [PASS] Dense-grid minimum gap reproduces reference boundary-face value within order of magnitude  (min gap = 7.7916e-03, reference = 7.5785e-03)
 
  Honest scope of this certificate:
-   - With 1440 grid points covering 4 dimensions of the audited parameter
-     box, no point gives a smaller gap than the stated boundary corner
-     (within numerical noise).
+   - With 1440 grid points covering 4 dimensions of the listed parameter
+     box, every sampled point has a strictly positive gap.
    - The dense grid is NOT a symbolic / interval-arithmetic global
      certificate; that remains genuine open work.
-   - The empirical confidence is: dense-grid argmin coincides with the
-     stated boundary corner, and the minimum gap is strictly positive.
+   - The finite-grid result is: the sampled argmin lies on the reference
+     boundary faces, and the sampled minimum gap is strictly positive.
 
 ================================================================================
  SUMMARY: PASS=3, FAIL=0

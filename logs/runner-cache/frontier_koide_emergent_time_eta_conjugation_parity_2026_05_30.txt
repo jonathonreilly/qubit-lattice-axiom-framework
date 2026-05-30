@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30.py
-runner_sha256: dbf42f91da43417c02e6e8dc6f7eae164b7bf0ac56c8608773c3b47134f1c50b
+runner_sha256: a095e797dd6c9ddd84d9c36f6bbf72d1dd95881cc29a86f17f0a28afd769c4d0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 
@@ -37,12 +37,25 @@ Check 5 - positive control: detector is sensitive
 ========================================================================
 [PASS] retained anti-Hermitian coupling: spectral asymmetry eta = 0  (eta=0)
 [PASS] chiral c-independent deformation: spectral asymmetry eta != 0  (eta=4)
-[PASS] the chiral deformation genuinely breaks Hermiticity
+[PASS] the chiral deformation has coeff(C^2) != conj(coeff(C)) (non-Hermitian)
+
+========================================================================
+Check 6 - over-determination: reality forces even-ness even when P breaks
+========================================================================
+[PASS] W_mix explicitly breaks the transposition lift ([W_mix, I (x) P] != 0)  (norm=2.80)
+[PASS] spec(O(b)) = spec(O(conj b)) with P broken (reality: O(conj b) = O(b)^T)  (max=0.0e+00)
+
+========================================================================
+Check 7 - the odd generator i(C - C^2) is only the arg(b) tangent
+========================================================================
+[PASS] i(C - C^2) is Hermitian
+[PASS] i(C - C^2) is P-odd (P G P = -G)
+[PASS] M(b) + eps i(C - C^2) = M(b + i eps) (reparametrizes b; stays conjugate-symmetric)
 
 ========================================================================
 Summary
 ========================================================================
-PASS=12 FAIL=0
+PASS=17 FAIL=0
 Conjugation-odd Berry coefficient vanishes on the retained circulant
 (field-count 2, Q=1 default); Q=2/3 requires breaking the
 transposition similarity (the chiral import). Positive control eta_chi=4.

@@ -66,6 +66,32 @@ no continuous Berry winding. The conclusion therefore does not rest on the
 unaudited time-emergence content; the emergent-time Matsubara time operator
 `d_tau + D(b(tau))` only confirms it survives the full construction.
 
+**Reality, not just `P` (the sharper root).** The transposition `P` is a
+*sufficient but not necessary* witness. The deeper reason is that `b -> conj(b)`
+is the **transpose** on the circulant (`M(conj b) = M(b)^T`), and transpose
+preserves spectrum unconditionally. So for **any** real-symmetric structure added
+to the operator — even one that explicitly breaks the transposition lift
+(`[W_mix, I (x) P] != 0`) — one still has `D(a, conj b) = D(a, b)^T`, hence
+`spec D(b) = spec D(conj b)` and a conjugation-even `eta`. The runner confirms
+this: a generic real-symmetric `W_mix` fully coupling space and generations, with
+`[W_mix, I (x) P]` of order `1` (P broken), still gives matched spectra to
+`~1e-14`. **The conjugation-odd term is therefore unreachable by any real
+operator**; it requires a genuinely complex (imaginary-antisymmetric) generation
+coupling. This upgrades the no-go from a `C_3`/`P`-equivariance statement (which a
+clever import might dodge) to a **reality** statement enforced by the entire
+retained real anti-Hermitian Dirac substrate.
+
+**What the odd generator actually is.** The unique `C_3`-equivariant, `P`-odd,
+Hermitian generation generator is `i(C - C^2)` — but it is purely the **`arg b`
+tangent**: adding `eps * i(C - C^2)` sends `b -> b + i eps` within the same
+conjugate-symmetric family (`coeff(C^2)` stays `conj(coeff(C))`), an integer-
+winding reparametrization that does not pin `r`. A genuine conjugation-odd Berry
+term instead needs `coeff(C^2) != conj(coeff(C))` — the **two-complex-parameter
+chiral circulant** `M_chi = a I + b C + c C^2` with `c` independent of `conj(b)`
+(non-Hermitian, the holomorphic/Weyl polarization). The correct ban criterion is
+this `coeff(C^2) != conj(coeff(C))` chirality, not "non-Hermiticity" or
+"`C_3`-non-equivariance" per se.
+
 ## Mechanism attribution (corrected)
 
 Two attributions used in working drafts are imprecise and are corrected here:
@@ -98,12 +124,42 @@ structure," not "derived from the retained Dirac operator." The `anomaly_forces_
 content is cited as non-load-bearing context only (it is unaudited and the
 static circulant already forces the result).
 
-Open, non-banned routes that could still source a conjugation-odd `eta(b)` by
-breaking `P` externally (each a distinct downstream program, recorded as future
-review triggers): (1) an alternative emergent-time realization; (2) a Wilson /
-domain-wall term; (3) a gauge background that is not `P`-symmetric on the
-generation sector; (4) boundary geometry (an APS boundary `eta`). Whether any
-such structure is retained (rather than an import) is open.
+The three external `P`-breaking routes one would reach for are all **real**
+operators and so cannot touch the reality root, and none is retained as a
+`P`-breaker on the generation sector (each checked, not asserted):
+
+- **Gauge background.** The retained Wilson/plaquette weight is a Hamming-weight
+  class function (`W = 2r` on the whole `hw=1` orbit), so its background is
+  `2r * I_3` — it commutes with `C` and `P` and only renormalizes `a`. Native
+  gauge fields act as `G (x) I_gen` (tensor-trivial on generations). A
+  `C_3`-equivariant `U(1)_F` charge is forced equal on the three states
+  (commutant of `C_3` is scalar), hence `P`-symmetric; a `P`-breaking charge
+  breaks `C_3` and is an import.
+- **Boundary geometry.** Every retained boundary (emergent-time `S^1`/open chain,
+  spatial BC, growth frontier, BZ corner) tensors as `B (x) I_3`; the APS
+  open-vs-periodic `eta` mechanism is live but generation-blind, and the bulk
+  staggered `eta` vanishes by the spacetime `Gamma_5 = (-1)^{x+y+z+t}` pairing.
+- **Wilson / domain-wall.** The retained Wilson/`O_h` content is parity-even (its
+  `det`-odd slot is forced to zero — strong-CP `theta = 0`), and the staggered
+  `eps = (-1)^{sum x}` maps `hw=1 -> hw=2` (`3 <-> 3bar`), not within the triplet.
+  The framework has no Ginsparg-Wilson relation, so a generation-chiral
+  Wilson/DW/overlap term is import-only.
+
+This independently reproduces the framework's own retained scoping
+(`HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING`, gap table), which already marks
+the Wilson/DW-mass, non-trivial-gauge-background, and manifold-with-boundary
+routes as absent (closed flat torus / mean-field factorization / no Wilson mass)
+— each "a non-trivial extension of the substrate," i.e. an import. And by the
+reality argument above, even breaking `P` would not suffice.
+
+The one genuinely distinct open door (a future program, recorded as a review
+trigger, not claimed here): **is there a retained source for a complex /
+imaginary-antisymmetric generation coupling** (a complex `C`, or a complex
+anti-Hermitian generator on the generation `R^3` along `i(C - C^2)` whose
+coefficient deviates from `conj(coeff(C))`)? The gauge/boundary/Wilson routes,
+being real, leave this untouched; candidate retained substrates to probe are the
+qubit-factor symplectic/Berry phase and the signed-vs-singular-value (`sqrt m`
+sign) readout dimension.
 
 ## Relation to Koide
 

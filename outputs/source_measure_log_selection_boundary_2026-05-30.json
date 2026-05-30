@@ -1,0 +1,47 @@
+{
+  "connected_response_equivalence": {
+    "lesson": "connected-response locality is equivalent to selecting the log coordinate",
+    "mixed_log": "0",
+    "mixed_power_sample": "sinh(1/5)*sinh(1/3)"
+  },
+  "document_boundary": {
+    "claim_type_author_hint": "no_go",
+    "target": "finite record probability calculus alone selects unit log source"
+  },
+  "log_homomorphism_scale": {
+    "counterfamily": "F_p=x^p is multiplicative for all p",
+    "homomorphism_family": "c log x",
+    "unfixed_parameter": "c"
+  },
+  "physical_lattice_boundary": {
+    "physical_lattice_assumption": "accepted",
+    "result": "locality/product structure still admits all lambda source scales"
+  },
+  "planck_scale_boundary": {
+    "open_positive_route": "derive Planck/action unit = RN/Fisher source coordinate",
+    "result": "dimensionful scale setting does not select dimensionless source lambda",
+    "tier_a_scale_anchor": "a^{-1}=M_Pl"
+  },
+  "rn_scaled_family": {
+    "fisher_norm": "lambda^2",
+    "scaled_rn_family": "exp(lambda h O - log E exp(lambda h O))",
+    "score": "lambda O"
+  },
+  "summary": {
+    "claim_type_author_hint": "no_go",
+    "closure_claim_allowed_without_new_source_law": false,
+    "fail": 0,
+    "pass": 57,
+    "remaining_open_routes": [
+      "derive physical source-unit law independent of P1",
+      "strict same-source top/W response evidence",
+      "explicit source-unit axiom/premise"
+    ],
+    "target_blocker": "derive P-cal/log-selection from finite sharp-record source-measure alone",
+    "trace_class": "negative_route_pruning"
+  },
+  "yt_lambda_boundary": {
+    "remaining_selector": "physical source-unit/log-selection premise or strict same-source response evidence",
+    "yt_family": "y_33(lambda)=lambda/sqrt(6)"
+  }
+}

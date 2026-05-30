@@ -3,26 +3,6 @@
 **Date:** 2026-04-03
 **Status:** bounded - bounded or caveated result note
 an established theorem.
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The key effective-path-count and mixing-fraction scalings are asserted as heuristic, and the one retained-bounded dependency explicitly reports that the matched 2D-vs-4D replay does not support a clean dimension-only escape claim. Without a"*
-
-with repair: *"missing_bridge_theorem - derive the effective path-count/mixing scaling from the actual DAG path measure, or add a matched multi-dimensional runner that isolates dimension from topology/connectivity."*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The empirical tabulation of measured decoherence exponents `α` across spatial dimensions d = 1, 2, 3 from the simulation data, and the qualitative organizing heuristic that `|α| ~ 1/d_spatial` captures the right trend and order of magnitude; this is a descriptive summary of runner output with an approximate scaling ansatz, not a derived theorem.
-- **NON-load-bearing (split off / admitted):** The derivation of the effective-path-count scaling `n_eff ~ M^{(d−1)/d}` and mixing-fraction scaling `f_mix ~ (r/L)^d` from the actual DAG path measure — these are acknowledged hand-waving steps (Caveat 1), and the one cited retained-bounded dependency explicitly reports the matched 2D-vs-4D replay does not support a clean dimension-only escape claim; the dimensional scaling law cannot be treated as a retained mechanism until these steps are derived from the actual path measure with topology and connectivity isolated.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
 
 ## The observation
 

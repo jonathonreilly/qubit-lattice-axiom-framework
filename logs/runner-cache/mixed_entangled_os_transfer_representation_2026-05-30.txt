@@ -1,0 +1,108 @@
+===== runner cache v1 =====
+runner: scripts/mixed_entangled_os_transfer_representation_2026-05-30.py
+runner_sha256: 5c79d2398ebf5f212fe0b1cb65526be46abfdc3f03d213ea44c3218db99accac
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+==============================================================================
+GENUINE GAUGE-FERMION-ENTANGLED OS TRANSFER REPRESENTATION (3+1 carrier)
+==============================================================================
+Mixed observable: F = sum_b W_b(U) chibar_b (Wilson-line-transported
+staggered fermion creation; entangles gauge x fermion, U-dependent).
+mass=0.5  c_block=2.0 (a-priori)  beta=0.9  NT_bulk=14
+
+==============================================================================
+CARRIER: U(1)  2x2x1 spatial sheet (4 sites)   [Lt=2 block; transfer runs in time]
+==============================================================================
+  spatial 2x2x1, N_c=1, n_modes=4, U-quadrature K=16
+  P_block : block-metric pos eig vs C_BLOCK*e^-2E  worst = 2.55e-15
+  P1      : per-config Berezin == operator          worst = 2.38e-13
+  P0      : det-weighted finite-sample avg Berezin==operator worst = 2.23e-14
+  Pdet    : min det(M[U]) over quadrature           = 1.2742  (>0)
+  herm    : ||G - G^dag|| (reflection=adjoint)      = 2.78e-17
+  recon off-diagonal magnitude (mode-mixing)        = 0.2095  (MIXING)
+  C1 BREAK: per-mode-factorized Berezin gap         = 0.2278  (must be LARGE)
+  C2 BREAK: flat(no-det) U-average gap              = 0.1001  (must be LARGE)
+  C3 BREAK: single-step block-metric min eig        = -0.4555  (must be <0)
+  C4      : operator-Schmidt rank of T_full         = 6  (must be >1)
+
+==============================================================================
+CARRIER: U(1)  2x1x1 spatial (2 sites, minimal)   [Lt=2 block; transfer runs in time]
+==============================================================================
+  spatial 2x1x1, N_c=1, n_modes=2, U-quadrature K=16
+  P_block : block-metric pos eig vs C_BLOCK*e^-2E  worst = 1.11e-16
+  P1      : per-config Berezin == operator          worst = 6.74e-13
+  P0      : det-weighted finite-sample avg Berezin==operator worst = 3.61e-14
+  Pdet    : min det(M[U]) over quadrature           = 0.2850  (>0)
+  herm    : ||G - G^dag|| (reflection=adjoint)      = 2.84e-18
+  recon off-diagonal magnitude (mode-mixing)        = 0.0000  (DEGENERATE/no-mixing)
+  C1 n/a  : per-mode-factorized gap (degenerate)    = 3.62e-14  (must be ~0: prior-vacuity regime)
+  C2 BREAK: flat(no-det) U-average gap              = 0.0949  (must be LARGE)
+  C3 BREAK: single-step block-metric min eig        = -0.3017  (must be <0)
+  C4      : operator-Schmidt rank of T_full         = 3  (must be >1)
+
+==============================================================================
+CARRIER: SU(3) 2x1x1 spatial (2 sites, 6 modes)   [Lt=2 block; transfer runs in time]
+==============================================================================
+  spatial 2x1x1, N_c=3, n_modes=6, U-quadrature K=8
+  P_block : block-metric pos eig vs C_BLOCK*e^-2E  worst = 1.50e-12
+  P1      : per-config Berezin == operator          worst = 2.72e-12
+  P0      : det-weighted finite-sample avg Berezin==operator worst = 7.23e-13
+  Pdet    : min det(M[U]) over quadrature           = 0.2854  (>0)
+  herm    : ||G - G^dag|| (reflection=adjoint)      = 4.18e-17
+  recon off-diagonal magnitude (mode-mixing)        = 0.1847  (MIXING)
+  C1 BREAK: per-mode-factorized Berezin gap         = 0.1899  (must be LARGE)
+  C2 BREAK: flat(no-det) U-average gap              = 0.0553  (must be LARGE)
+  C3 BREAK: single-step block-metric min eig        = -0.5411  (must be <0)
+  C4      : operator-Schmidt rank of T_full         = 6  (must be >1)
+
+==============================================================================
+SUMMARY OF CHECKS
+==============================================================================
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): P_block  (2.55351295663786e-15)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): P1 per-config  (2.3769875119272565e-13)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): P0 det-weighted avg  (2.2259971780967143e-14)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): Pdet det>0  (1.2741697570350077)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): herm  (2.7755575615628914e-17)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): C1 per-mode BREAKS (mixing)  (0.22780626175029767)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): C2 flat-det BREAKS  (0.10009542710240404)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): C3 single-step indefinite  (-0.45554594689475625)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites): C4 Schmidt rank>1  (6)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): P_block  (1.1102230246251565e-16)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): P1 per-config  (6.7390537594747e-13)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): P0 det-weighted avg  (3.613775946255445e-14)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): Pdet det>0  (0.28501429061188915)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): herm  (2.8443269856614283e-18)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): C1 degenerate=>no-break (prior-vacuity regime)  (3.6193270642995304e-14)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): C2 flat-det BREAKS  (0.09486374801274189)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): C3 single-step indefinite  (-0.3016978778854122)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal): C4 Schmidt rank>1  (3)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block  (1.503464019947387e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P1 per-config  (2.7248203699029695e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P0 det-weighted avg  (7.233103005437317e-13)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): Pdet det>0  (0.28537830454027874)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): herm  (4.177767360805209e-17)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): C1 per-mode BREAKS (mixing)  (0.1899009094606544)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): C2 flat-det BREAKS  (0.05525179031898286)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): C3 single-step indefinite  (-0.5411414688224406)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): C4 Schmidt rank>1  (6)
+
+==============================================================================
+SCOPE
+==============================================================================
+This verifies the gauge-fermion-ENTANGLED det-weighted Berezin==operator
+equality on a FINITE 3+1 carrier (transfer matrix in time; spatial lattice
+the regulator), ILLUSTRATING the cited transfer-matrix construction
+(Luescher 1977; Osterwalder-Seiler 1978; STW 1981; Palumbo 2002; Smit;
+Montvay-Munster).  NO continuum claim either way (the continuum step is the
+transfer-matrix -> Wightman reconstruction + spatial-continuum/Lorentz
+restoration, OUT OF SCOPE).  The per-config fermion 2-step rung is the
+separate unresolved row; the Wilson-boundary (H1) positivity and
+any interacting-RP closure remain open.
+
+SCORECARD PASS=27 FAIL=0
+
+----- stderr -----
+

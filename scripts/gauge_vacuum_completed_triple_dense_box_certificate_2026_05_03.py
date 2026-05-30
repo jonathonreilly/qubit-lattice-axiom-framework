@@ -2,41 +2,31 @@
 """
 Gauge-vacuum completed-triple — dense parameter-box gap certificate (2026-05-03).
 
-Audit-driven repair runner for `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md`.
+Finite-grid repair runner for
+`docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md`.
 
-The 2026-05-03 audit (fresh-agent-gauge-triple-transfer-boundary)
-flagged that the original runner fixes the boundary corner
+Earlier versions fixed the boundary faces
 (`tau_transfer = 10^-4`, `tau_boundary = 4.0`, `asym_decay = 10^-8`)
-and only checks local inward perturbations: "a positive residual at
-one preselected boundary corner does not rule out an exact or
-smaller-gap realization elsewhere in the audited parameter box."
+and only checked local inward perturbations. A positive residual on those
+faces does not rule out an exact or smaller-gap realization elsewhere in the
+continuous parameter box.
 
-Repair target: "provide a proof-level global optimizer/certificate,
-interval bound, exhaustive deterministic search with certified lower
-bound, or an analytic theorem showing the stated corner is globally
-minimizing and the minimum gap is strictly positive."
-
-This certificate provides the **exhaustive deterministic search**
-route: a dense 4D structured grid across the full audited parameter
-box, evaluating the gap at every grid point and reporting the
-minimum. With ~1250-2500 points and ~1.6 ms per call, the full grid
-runs in ~2-4 seconds.
+This certificate provides a finite deterministic-search route: a dense 4D
+structured grid across the listed parameter box, evaluating the gap at every
+grid point and reporting the minimum.
 
 The dense grid is NOT a symbolic / interval-arithmetic global
-certificate (which would be a stronger guarantee), but at this seed
-density on each direction it provides much stronger empirical evidence
-for the global minimum than the original single-corner check, and it
-verifies the audit's specific complaint that "the corner might not be
-globally minimizing".
+certificate. It proves only the sampled-grid statement.
 
-Audited parameter box (per the source note):
+Listed parameter box:
   tau_transfer  ∈ [10^-4, 5e-2]  (log scale, ~2.7 decades)
   tau_boundary  ∈ [0.5, 4.0]      (linear scale, factor 8)
   asym_decay    ∈ [10^-8, 10^-4]  (log scale, 4 decades)
   linear_decay  ∈ [0.05, 1.0]     (golden-section optimized)
 
-Stated boundary corner: (10^-4, 4.0, 10^-8) with linear_decay best ≈ 0.5
-Stated gap at corner: 0.007578536496...
+Reference boundary faces: tau_transfer = 10^-4, tau_boundary = 4.0,
+asym_decay = 10^-8, with linear_decay best ≈ 0.5.
+Reference gap: 0.007578536496...
 """
 from __future__ import annotations
 
@@ -63,13 +53,13 @@ from frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_trans
 )
 
 
-# Audited parameter box (per the source note)
+# Listed parameter box (per the source note)
 TAU_TRANSFER_BOX = (1e-4, 5e-2)
 TAU_BOUNDARY_BOX = (0.5, 4.0)
 ASYM_DECAY_BOX = (1e-8, 1e-4)
 LINEAR_DECAY_BOX = (0.05, 1.0)
 
-# Stated boundary corner from the source note
+# Reference boundary faces from the source note
 STATED_CORNER = {
     "tau_transfer": 1e-4,
     "tau_boundary": 4.0,
@@ -105,16 +95,16 @@ def linspace(lo: float, hi: float, n: int) -> list[float]:
 def main() -> int:
     print("=" * 80)
     print(" gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py")
-    print(" Audit-driven repair runner: dense parameter-box gap certificate")
+    print(" Finite-grid repair runner: dense parameter-box gap certificate")
     print("=" * 80)
     print()
-    print(" Audited parameter box:")
+    print(" Listed parameter box:")
     print(f"   tau_transfer ∈ [{TAU_TRANSFER_BOX[0]:.0e}, {TAU_TRANSFER_BOX[1]:.0e}]")
     print(f"   tau_boundary ∈ [{TAU_BOUNDARY_BOX[0]}, {TAU_BOUNDARY_BOX[1]}]")
     print(f"   asym_decay   ∈ [{ASYM_DECAY_BOX[0]:.0e}, {ASYM_DECAY_BOX[1]:.0e}]")
     print(f"   linear_decay ∈ [{LINEAR_DECAY_BOX[0]}, {LINEAR_DECAY_BOX[1]}]")
     print()
-    print(f" Stated boundary corner gap: {STATED_GAP:.4e}")
+    print(f" Reference boundary-face gap: {STATED_GAP:.4e}")
 
     print("\n--- Build recurrence-matrix infrastructure ---")
     v_min, z_min = completed_sector_data()
@@ -154,24 +144,24 @@ def main() -> int:
     print(f"  min gap                     = {min_gap:.6e}")
     print(f"  median gap                  = {float(np.median(gaps)):.6e}")
     print(f"  max gap                     = {float(np.max(gaps)):.6e}")
-    print(f"  fraction below stated gap   = "
+    print(f"  fraction below reference gap = "
           f"{float(np.sum(gaps < STATED_GAP)) / total:.4f}")
     print(f"  argmin grid point:")
     print(f"    tau_transfer = {min_pt[0]:.4e}")
     print(f"    tau_boundary = {min_pt[1]:.4f}")
     print(f"    asym_decay   = {min_pt[2]:.4e}")
     print(f"    linear_decay = {min_pt[3]:.4f}")
-    print(f"  stated boundary corner: tau_transfer = {STATED_CORNER['tau_transfer']:.0e},")
+    print(f"  reference boundary faces: tau_transfer = {STATED_CORNER['tau_transfer']:.0e},")
     print(f"                          tau_boundary = {STATED_CORNER['tau_boundary']},")
     print(f"                          asym_decay   = {STATED_CORNER['asym_decay']:.0e}")
     print()
 
-    # Verify min gap is at or near the stated boundary corner
+    # Verify min gap is at or near the reference boundary faces.
     at_lower_tau_t = abs(math.log10(min_pt[0]) - math.log10(TAU_TRANSFER_BOX[0])) < 0.5
     at_upper_tau_b = abs(min_pt[1] - TAU_BOUNDARY_BOX[1]) < (TAU_BOUNDARY_BOX[1] - TAU_BOUNDARY_BOX[0]) * 0.2
     at_lower_asym = abs(math.log10(min_pt[2]) - math.log10(ASYM_DECAY_BOX[0])) < 0.5
     check(
-        "Dense-grid argmin lies at the stated boundary corner (lower tau_transfer + upper tau_boundary + lower asym_decay)",
+        "Dense-grid argmin lies on the reference boundary faces (lower tau_transfer + upper tau_boundary + lower asym_decay)",
         at_lower_tau_t and at_upper_tau_b and at_lower_asym,
         f"argmin: tau_t at {'lower' if at_lower_tau_t else 'interior'} edge,"
         f" tau_b at {'upper' if at_upper_tau_b else 'interior'} edge,"
@@ -183,22 +173,21 @@ def main() -> int:
         min_gap > 1e-6,
         f"min gap = {min_gap:.6e} >> 1e-6 (numerical zero threshold)",
     )
-    # Verify min gap is reasonably close to the stated corner value
+    # Verify min gap is reasonably close to the reference boundary-face value.
     check(
-        "Dense-grid minimum gap reproduces stated boundary-corner value within order of magnitude",
+        "Dense-grid minimum gap reproduces reference boundary-face value within order of magnitude",
         0.1 * STATED_GAP <= min_gap <= 10 * STATED_GAP,
-        f"min gap = {min_gap:.4e}, stated = {STATED_GAP:.4e}",
+        f"min gap = {min_gap:.4e}, reference = {STATED_GAP:.4e}",
     )
 
     print()
     print(" Honest scope of this certificate:")
-    print(f"   - With {total} grid points covering 4 dimensions of the audited parameter")
-    print(f"     box, no point gives a smaller gap than the stated boundary corner")
-    print(f"     (within numerical noise).")
+    print(f"   - With {total} grid points covering 4 dimensions of the listed parameter")
+    print(f"     box, every sampled point has a strictly positive gap.")
     print(f"   - The dense grid is NOT a symbolic / interval-arithmetic global")
     print(f"     certificate; that remains genuine open work.")
-    print(f"   - The empirical confidence is: dense-grid argmin coincides with the")
-    print(f"     stated boundary corner, and the minimum gap is strictly positive.")
+    print(f"   - The finite-grid result is: the sampled argmin lies on the reference")
+    print(f"     boundary faces, and the sampled minimum gap is strictly positive.")
     print()
 
     print("=" * 80)

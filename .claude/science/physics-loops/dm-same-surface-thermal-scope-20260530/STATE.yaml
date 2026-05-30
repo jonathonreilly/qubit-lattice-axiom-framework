@@ -1,0 +1,50 @@
+loop_slug: dm-same-surface-thermal-scope-20260530
+date: 2026-05-30
+mode: science-fix
+target_claim_id: dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17
+target_note: docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md
+target_runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
+goal: "Repair the audited conditional DM same-surface thermal-bounding row without adding axioms."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Rigorous interval composition conditional on supplied live-DM premise packet and helper certification outputs."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The branch does not derive the 64:1 channel-weight bridge, live-DM constants, or selector/packet-completeness premise."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Preserve interval theorem; make live-DM premise packet supplied rather than implicitly retained."
+files_touched:
+  - docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md
+  - scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
+  - logs/runner-cache/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+open_imports:
+  - "64:1 same-surface channel-weight bridge."
+  - "Live-DM plaquette / eta-omega constants."
+  - "Packet-completeness / selector premise."
+  - "Upstream helper certification routines."
+verification:
+  - "python3 -m py_compile scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py -> SUMMARY: PASS=9 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py --force --push-mode none --allow-non-main --concurrency 1"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+repo_status_after_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  audit_queue_ready: true
+  audit_queue_criticality: medium
+next_exact_action: "Open draft review PR for supplied-premise thermal interval repair."
+stop_condition: "PR opened and verified; then pivot to next uncovered conditional."

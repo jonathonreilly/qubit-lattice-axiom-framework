@@ -1,28 +1,18 @@
 #!/usr/bin/env python3
 """Verify the narrow Higgs lattice eigenvalue ratio theorem at mean-field.
 
-Claim scope: GIVEN the declared graph_first_su3 surface + retained Wilson
-canonical g_bare=1 convention, the lattice ratio R_lattice =
-4/(u_0² N_taste) = 1/(4 u_0²) at N_taste = 16, in the tadpole mean-field
-truncation. NO physical (m_H/v)² identification.
+Claim scope: GIVEN the declared graph_first_su3 surface + admitted Wilson
+canonical g_bare=1 convention + admitted Clifford identity D_taste² = d·I +
+admitted mean-field factorization, the lattice ratio R_lattice =
+4/(u_0² N_taste) = 1/(4 u_0²) at N_taste = 16. NO physical (m_H/v)²
+identification.
 
-No admissions:
-- the Clifford identity D_taste² = d·I (d=4) is DERIVED here by explicit
-  Euclidean Cl(4) matrix construction (Part 3), not asserted;
-- N_taste = 16 is DERIVED as the spin⊗taste hypercube dimension 2^d (Part 2);
-- the mean-link u_0 is supplied by the retained one-hop authority
-  u0_plaquette_quartic_derivation (u_0 = <P>^{1/4}); the mean-field
-  factorization U_ab → u_0 δ_ab is the explicit hypothesis of this formal
-  lemma (the tadpole mean-field truncation regime), not a fresh admission.
-
-Class (A) algebraic identity; the only hypothesis is the named truncation.
+Class (A) algebraic identity on admitted mean-field inputs.
 """
 
 from fractions import Fraction
 from pathlib import Path
 from sympy import symbols, simplify, log, diff, Rational, sqrt
-from sympy import I as sympy_I, eye, zeros, Matrix
-from sympy.physics.quantum import TensorProduct
 import sys
 import json
 
@@ -102,47 +92,16 @@ check("N_tot = N_c × N_sites = 48",
 
 
 # ============================================================================
-section("Part 3: DERIVE the Clifford identity D_taste² = d·I (Euclidean Cl(4))")
+section("Part 3: Clifford-identity eigenvalue magnitude")
 # ============================================================================
-# No admission: construct the d=4 Euclidean taste gamma matrices explicitly and
-# verify the Clifford algebra + the square identity by exact matrix algebra.
-# Euclidean signature (lattice staggered): γ_μ² = +I, {γ_μ,γ_ν} = 2 δ_μν I.
-# Framework Clifford generator structure: clifford_chirality_dimension_narrow_theorem_note_2026-05-10.
+# Clifford identity D_taste² = d · I  ⇒  |λ_taste| = sqrt(d) = 2 (lattice units)
 from sympy import sqrt as sym_sqrt, Rational as R
-s1 = Matrix([[0, 1], [1, 0]])
-s2 = Matrix([[0, -sympy_I], [sympy_I, 0]])
-s3 = Matrix([[1, 0], [0, -1]])
-I2 = eye(2)
-I4 = eye(4)
-# Explicit Euclidean Cl(4): γ_i = σ_1 ⊗ σ_i (i=1,2,3), γ_4 = σ_2 ⊗ I_2
-gammas = [TensorProduct(s1, s1), TensorProduct(s1, s2), TensorProduct(s1, s3), TensorProduct(s2, I2)]
-check("constructed d=4 Euclidean taste gamma matrices (4x4 each)",
-      len(gammas) == d and all(g.shape == (4, 4) for g in gammas))
-# Clifford relation {γ_μ, γ_ν} = 2 δ_μν I (Euclidean, all +)
-clifford_ok = all(
-    simplify(gammas[a] * gammas[b] + gammas[b] * gammas[a] - 2 * (1 if a == b else 0) * I4) == zeros(4)
-    for a in range(d) for b in range(d)
-)
-check("Euclidean Clifford algebra {γ_μ,γ_ν} = 2 δ_μν I verified by matrix algebra",
-      clifford_ok)
-# Sum of squares = d·I (each γ_μ² = I, d of them) — the taste-square identity, DERIVED
-sum_sq = zeros(4)
-for g in gammas:
-    sum_sq += g * g
-check("Σ_μ γ_μ² = d·I = 4·I (DERIVED by matrix construction, not admitted)",
-      simplify(sum_sq - d * I4) == zeros(4))
-# Symmetric taste-Dirac element D_taste = Σ_μ γ_μ has D_taste² = d·I (cross terms cancel)
-D_taste = zeros(4)
-for g in gammas:
-    D_taste += g
-D_taste_sq = simplify(D_taste * D_taste)
-check("D_taste = Σ_μ γ_μ satisfies D_taste² = d·I = 4·I (DERIVED)",
-      simplify(D_taste_sq - d * I4) == zeros(4))
-# Hence every taste eigenvalue has magnitude sqrt(d): |λ_taste| = sqrt(4) = 2
 lambda_taste_sq = R(d)
 lambda_taste_mag = sym_sqrt(lambda_taste_sq)
-check("⇒ |λ_taste| = sqrt(d) = 2 (lattice units), from the derived D_taste²=d·I",
-      lambda_taste_mag == R(2) and simplify(D_taste_sq - d * I4) == zeros(4))
+check("|λ_taste|² = d = 4 from Clifford identity",
+      lambda_taste_sq == R(4))
+check("|λ_taste| = sqrt(d) = 2 (lattice units)",
+      lambda_taste_mag == R(2))
 
 
 # ============================================================================
@@ -189,8 +148,6 @@ dep_ids = {
     "graph_first_su3_integration_note",
     "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
     "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-    "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
-    "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
 }
 for dep_id in sorted(dep_ids):
     dep_row = rows.get(dep_id)

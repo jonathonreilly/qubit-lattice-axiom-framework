@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py
-runner_sha256: cc129e130ef231974dbedf2d0e096deddac6348b9636644adb41378b144639d4
+runner_sha256: 91c94aab606c66870ffddf16840242af7fbb3e16bbf5105d225d11d1b98dd02c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 
@@ -36,13 +36,10 @@ Part 2: structural integers N_c, N_sites, N_taste, N_tot
   [PASS (A)] N_tot = N_c × N_sites = 48  ()
 
 ----------------------------------------------------------------------------------------
-Part 3: DERIVE the Clifford identity D_taste² = d·I (Euclidean Cl(4))
+Part 3: Clifford-identity eigenvalue magnitude
 ----------------------------------------------------------------------------------------
-  [PASS (A)] constructed d=4 Euclidean taste gamma matrices (4x4 each)  ()
-  [PASS (A)] Euclidean Clifford algebra {γ_μ,γ_ν} = 2 δ_μν I verified by matrix algebra  ()
-  [PASS (A)] Σ_μ γ_μ² = d·I = 4·I (DERIVED by matrix construction, not admitted)  ()
-  [PASS (A)] D_taste = Σ_μ γ_μ satisfies D_taste² = d·I = 4·I (DERIVED)  ()
-  [PASS (A)] ⇒ |λ_taste| = sqrt(d) = 2 (lattice units), from the derived D_taste²=d·I  ()
+  [PASS (A)] |λ_taste|² = d = 4 from Clifford identity  ()
+  [PASS (A)] |λ_taste| = sqrt(d) = 2 (lattice units)  ()
 
 ----------------------------------------------------------------------------------------
 Part 4: mean-field eigenvalue scaling and generating functional curvature
@@ -58,21 +55,17 @@ Part 5: R_lattice = 4 / (u_0² N_taste) = 1 / (4 u_0²)
 ----------------------------------------------------------------------------------------
 Part 6: declared authorities are graph-visible
 ----------------------------------------------------------------------------------------
-  [PASS (A)] clifford_chirality_dimension_narrow_theorem_note_2026-05-10 exists in audit ledger  (effective_status='retained_pending_chain')
   [PASS (A)] g_bare_constraint_vs_convention_theorem_note_2026-05-03 exists in audit ledger  (effective_status='retained_bounded')
   [PASS (A)] g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 exists in audit ledger  (effective_status='retained_bounded')
   [PASS (A)] graph_first_su3_integration_note exists in audit ledger  (effective_status='retained')
-  [PASS (A)] u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17 exists in audit ledger  (effective_status='retained_bounded')
   [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 seeded by audit pipeline  (run docs/audit/scripts/run_pipeline.sh after editing the note)
-  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records clifford_chirality_dimension_narrow_theorem_note_2026-05-10 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
-  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_constraint_vs_convention_theorem_note_2026-05-03 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
-  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
-  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records graph_first_su3_integration_note as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
-  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17 as declared dependency  (deps=['clifford_chirality_dimension_narrow_theorem_note_2026-05-10', 'g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note', 'u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17'])
-  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 is not effective-retained before independent audit  (effective_status='unaudited')
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_constraint_vs_convention_theorem_note_2026-05-03 as declared dependency  (deps=['g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note'])
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 as declared dependency  (deps=['g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note'])
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 records graph_first_su3_integration_note as declared dependency  (deps=['g_bare_constraint_vs_convention_theorem_note_2026-05-03', 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03', 'graph_first_su3_integration_note'])
+  [PASS (A)] higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02 is not effective-retained before independent audit  (effective_status='audited_conditional')
 
 ========================================================================================
-  TOTAL: PASS=40, FAIL=0
+  TOTAL: PASS=33, FAIL=0
 ========================================================================================
 
 ----- stderr -----

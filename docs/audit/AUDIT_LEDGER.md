@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 169 |
 | **retained_no_go** | 174 |
-| **retained_bounded** | 608 |
+| **retained_bounded** | 609 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
 | unaudited | 1221 |
-| audit_in_progress | 1 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 940 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 941 |
 | `audited_conditional` | 12 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | B | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
-| `lorentz_boost_covariance_3plus1d_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -634,6 +632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_boost_covariance_2d_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `lorentz_boost_covariance_3plus1d_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8915,6 +8914,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** In the continuum limit a -> 0, the lattice spectral integral with E_lat(p) converges to the continuum massive-scalar integral W_cont(Δt,Δx;m)=K_0(m sqrt(-s^2))/(2π) for spacelike s^2<0, which depends only on the SO(1,1) invariant s^2.  _(class `A`)_
 - **chain closes:** True — The note’s core theorem closes from standard algebraic properties of the continuum relativistic dispersion, invariant on-shell measure dp/E, and the spacelike K_0 form. The cited 3+1D dispersion note is contextual rather than load-bearing for this 1+1D free-scalar proof.
 - **rationale:** The runner source performs nontrivial numerical and algebraic checks of the lattice dispersion, continuum limit, invariant measure, K_0 spacelike form, and boost covariance; it is not a print-only or tuned numerical-match runner. Several final Part 7 checks are assertive summaries, but the load-bearing analytic and numerical checks occur earlier and support the restricted theorem surface. The only cited authority is retained_bounded and is not needed as a load-bearing premise for the 1+1D free-scalar covariance result, so no dependency downgrade is triggered.
+- **auditor confidence:** high
+
+### `lorentz_boost_covariance_3plus1d_theorem_note`
+
+- **Note:** [`LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md`](../../docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Continuum-limit SO(3,1) covariance of the spacelike free-scalar 3+1D Hamiltonian-lattice two-point function with bosonic Laplacian dispersion, plus the structural finite-a O(a^2 p^4) cubic-harmonic K4 anisotropy; no Planck pin, finite-a light-cone, interacting-theory, or experimental-readout claim audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-224138-eae3c754-lorentz_boost_covariance`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** In the continuum limit a -> 0, W_lat(Δt, Δx⃗; a, m) converges for spacelike separations to m K_1(m sqrt(-s^2))/(4π² sqrt(-s^2)), which depends only on the Lorentz invariant s^2.  _(class `C`)_
+- **chain closes:** True — The narrowed claim closes on the supplied free-scalar spectral integral, the retained/retained_bounded one-hop authorities, and standard invariant-measure and Bessel-form identities checked within the restricted packet. The previously open Planck-scale, finite-a causal, and physical-substrate identifications are explicitly excluded from the audited scope.
+- **rationale:** The runner source contains real lattice-dispersion, boost, quadrature, Euclidean convergence, and K4-normalization computations rather than only stdout assertions, although some final summary checks are narrative check(True) statements and are not load-bearing. Independent formula checks found the Taylor sign and coefficients, the axis/diagonal split -(a^2 p^4)/18, the normalized K4 coefficient 4√π/15, and the spacelike K1 form consistent with the note's conventions. All cited authorities used load-bearingly are retained-grade under the rubric, and the source has narrowed away the earlier non-retained Planck/readout/light-cone premises.
 - **auditor confidence:** high
 
 ### `lorentz_violation_derived_note`

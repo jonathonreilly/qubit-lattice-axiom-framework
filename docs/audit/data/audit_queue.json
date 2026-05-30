@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 258,
+    "critical": 257,
     "high": 303,
     "leaf": 353,
     "medium": 312
@@ -10,28 +10,29 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "lorentz_boost_covariance_3plus1d_theorem_note",
-      "claim_scope": "Free massive scalar on the supplied 3+1D Hamiltonian spatial lattice with bosonic Laplacian dispersion: spacelike two-point function has the SO(3,1)-covariant continuum limit mK_1(mr)/(4\u03c0\u00b2r), r=sqrt(-s\u00b2), and finite-a structural O(a\u00b2p\u2074) cubic-harmonic K4 anisotropy, with no Planck, light-cone, interacting-theory, or experimental readout claim.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "lorentz_kernel_positive_closure_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
+        "emergent_lorentz_invariance_note",
         "lorentz_boost_covariance_2d_theorem_note",
-        "emergent_lorentz_invariance_note"
+        "lorentz_boost_covariance_3plus1d_theorem_note"
       ],
-      "direct_in_degree": 10,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 13,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.833,
-      "note_path": "docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 16.331,
+      "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_lorentz_boost_3plus1d.py",
-      "transitive_descendants": 911
+      "runner_path": "scripts/frontier_lorentz_kernel_positive_closure.py",
+      "transitive_descendants": 910
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -254,32 +255,6 @@
       "ready": false,
       "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
       "transitive_descendants": 911
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lorentz_kernel_positive_closure_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_invariance_note",
-        "lorentz_boost_covariance_2d_theorem_note",
-        "lorentz_boost_covariance_3plus1d_theorem_note"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.331,
-      "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_lorentz_kernel_positive_closure.py",
-      "transitive_descendants": 910
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -36898,5 +36873,5 @@
     }
   ],
   "ready_count": 80,
-  "total_pending": 1226
+  "total_pending": 1225
 }

@@ -18012,18 +18012,6 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py"
     },
-    "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06": {
-      "assert_count": 1,
-      "counts": {
-        "A": 4,
-        "B": 0,
-        "C": 6,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py"
-    },
     "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
       "counts": {
@@ -49172,8 +49160,7 @@
     "scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py": {
       "assert_count": 1,
       "claims": [
-        "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09",
-        "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06"
+        "plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09"
       ],
       "counts": {
         "A": 4,

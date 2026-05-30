@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 611 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1215 |
+| unaudited | 1214 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 14 |
+| ~~audited_conditional~~ | 15 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 946 |
-| `audited_conditional` | 14 |
+| `audited_conditional` | 15 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1453 |
+| `unaudited` | 1452 |
 
 | claim_type | count |
 |---|---:|
@@ -1091,6 +1091,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -12344,6 +12345,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the declared exact 3D lattice family, the self-contained runner verifies the broad sweep and conservative pocket replay with explicit threshold gates, yielding RUNNER PASS=5 FAIL=0.  _(class `C`)_
 - **chain closes:** True — The restricted packet contains both completed stdout and source code showing the runner constructs the finite lattice, source-driven field evolution, propagation, centroid readout, exponent fits, and threshold gates inline rather than hard-coding the reported results. The claim is explicitly bounded to this declared runner family and excludes derivation of the telegraph rule, parameters, and calibration ladder from retained framework dynamics. Within that bounded scope, the target-max ladder is a fixed modeling input being swept, not an external tuned comparator or missing dependency, so the first tuple is the correct one under the hostile-review standard.
 - **rationale:** The restricted packet contains both completed stdout and source code showing the runner constructs the finite lattice, source-driven field evolution, propagation, centroid readout, exponent fits, and threshold gates inline rather than hard-coding the reported results. The claim is explicitly bounded to this declared runner family and excludes derivation of the telegraph rule, parameters, and calibration ladder from retained framework dynamics. Within that bounded scope, the target-max ladder is a fixed modeling input being swept, not an external tuned comparator or missing dependency, so the first tuple is the correct one under the hostile-review standard.
+- **auditor confidence:** high
+
+### `source_resolved_exact_green_pocket_note`
+
+- **Note:** [`SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the declared finite runner family, included helper implementation, cached output, hard-bar assertions, and displayed kernel/gain/table statements; no continuum, size-transfer, self-consistent dynamics, or derived Green-kernel claim was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-233018-ed2a8611-source_resolved_exact_gr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the declared h=0.5, W=3, L=20 lattice with the runner-selected Green-like kernel and calibrated gain, the runner asserts zero-source reduction, 4/4 TOWARD sign, green F~M exponent 1.00, and mean |green/inst| ratio 1.235.  _(class `C`)_
+- **chain closes:** False — The included helper and cache substantively compute and assert the five bounded bars, but the displayed Green-kernel formula is not the formula implemented by the runner: the note writes exp(-mu r)/(r+eps), while the code uses r=rho+eps inside both the exponent and denominator. The missing step is a reconciled kernel convention with refreshed gain/output if needed.
+- **rationale:** The prior packet-completeness defect is repaired: the helper source is included, the upstream authority is retained_bounded, and the primary runner performs nontrivial finite-lattice propagation rather than merely printing constants. However, the source packet fails the formula-inventory pass because the Green-kernel family stated in the note and runner banner does not match the executed code convention. The calibrated-gain pocket is also explicitly runner-selected rather than derived from retained framework dynamics, so the result remains a bounded tuned computation, not a closed Green-field theorem.
 - **auditor confidence:** high
 
 ### `source_resolved_exact_green_scaling_note`

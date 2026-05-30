@@ -21012,6 +21012,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_single_axiom_information.py"
     },
+    "single_clock_root_audit_unblock_packet_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 9,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_single_clock_root_audit_unblock_packet.py"
+    },
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -48124,6 +48136,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_single_clock_root_audit_unblock_packet.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_root_audit_unblock_packet_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 9,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_site_phase_cube_shift_intertwiner.py": {
       "assert_count": 1,
       "claims": [
@@ -58351,12 +58378,12 @@
     "dominant_class_distribution": {
       "A": 268,
       "B": 298,
-      "C": 778,
+      "C": 779,
       "D": 316,
       "none": 444
     },
-    "runners_classified": 2104,
-    "runners_with_C": 1025,
-    "runners_with_D": 630
+    "runners_classified": 2105,
+    "runners_with_C": 1026,
+    "runners_with_D": 631
   }
 }

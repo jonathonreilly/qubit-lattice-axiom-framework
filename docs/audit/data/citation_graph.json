@@ -1514,6 +1514,10 @@
     },
     {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+      "to": "single_clock_root_audit_unblock_packet_note_2026-05-30"
+    },
+    {
+      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
     {
@@ -43334,6 +43338,7 @@
       "claim_type_author_hint_raw": "positive_theorem (lattice form); bounded_theorem (continuum-limit",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
+        "single_clock_root_audit_unblock_packet_note_2026-05-30",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
@@ -43344,7 +43349,7 @@
         "minimal_axioms_2026-04-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "06f7c87849f6eeab4113d2b4f7ba43888011a3a359ec690ba0acdf35647610ab",
+      "note_hash": "abc56d93b0c7ff4721e9ac9da4ace095986454f85d07f63b378bf61d93cc0633",
       "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
       "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3"
@@ -78164,6 +78169,18 @@
       "runner_path": "scripts/frontier_single_axiom_information.py",
       "title": "Sparse Hermitian H + Hermitian-Exponentiation Readout + Locality Empirical Probe: Operational Reduction Note"
     },
+    "single_clock_root_audit_unblock_packet_note_2026-05-30": {
+      "claim_id": "single_clock_root_audit_unblock_packet_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "023dabce6dce9e1126908add4d95d52097f1eabd845d9101dfc3e2687e7ada42",
+      "path": "docs/SINGLE_CLOCK_ROOT_AUDIT_UNBLOCK_PACKET_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_single_clock_root_audit_unblock_packet.py",
+      "title": "Single-Clock Root Audit-Unblock Packet"
+    },
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -87810,6 +87827,7 @@
     "signed_gravity_chi_selector_theorem_or_nogo_note_2026-05-17",
     "signed_gravity_cl3z3_source_character_derivation_note_2026-05-17",
     "signed_gravity_response_lane_status_note_2026-04-26",
+    "single_clock_root_audit_unblock_packet_note_2026-05-30",
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
     "site_phase_cube_shift_intertwiner_note",
     "sixth_family_complex_boundary_note",
@@ -88018,7 +88036,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 705,
+      "bounded_theorem": 706,
       "decoration": 1,
       "meta": 199,
       "no_go": 87,
@@ -88027,7 +88045,7 @@
       "positive_theorem": 177
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1105,
+      "bounded_theorem": 1106,
       "decoration": 1,
       "meta": 199,
       "no_go": 191,
@@ -88035,10 +88053,10 @@
       "open_gate": 133,
       "positive_theorem": 586
     },
-    "edge_count": 10031,
+    "edge_count": 10032,
     "leaf_count": 828,
-    "node_count": 2637,
-    "root_count": 876,
-    "runners_with_path": 2211
+    "node_count": 2638,
+    "root_count": 877,
+    "runners_with_path": 2212
   }
 }

@@ -1,0 +1,276 @@
+{
+  "claim": "single-clock root audit unblock packet",
+  "pass": 35,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "packet contains source-boundary phrase: **Claim type:** bounded_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet contains source-boundary phrase: audit-unblock packet",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet contains source-boundary phrase: not independent blockers for the time-count use case",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet contains source-boundary phrase: remaining root is the action/temporal-transfer axis",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet contains source-boundary phrase: action_gate_still_open: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet contains source-boundary phrase: audit_required_before_effective_status_change: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet names old broad root: AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet names old broad root: AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet names old broad root: AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet names old broad root: EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet excludes overclaim/input phrase: audited_clean",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet excludes overclaim/input phrase: effective retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet excludes overclaim/input phrase: closes the staggered-Dirac/action realization gate",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet excludes overclaim/input phrase: observed spacetime",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet excludes overclaim/input phrase: PDG",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "packet excludes overclaim/input phrase: Monte Carlo",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "single-clock note points to unblock packet",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "single-clock note preserves audit authority boundary",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "positive transfer matrix has positive eigenvalues",
+      "status": "PASS",
+      "detail": "[1.  0.4 0.1]"
+    },
+    {
+      "name": "H = -log(T/||T||)/a_tau is self-adjoint",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "H is non-negative after top-eigenvalue subtraction",
+      "status": "PASS",
+      "detail": "[-0.          3.66516293  9.21034037]"
+    },
+    {
+      "name": "top transfer eigenvalue maps to zero energy",
+      "status": "PASS",
+      "detail": "-0.0"
+    },
+    {
+      "name": "exp(-a_tau H) reconstructs T/||T||",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "distinct-site tensor-factor commutator vanishes",
+      "status": "PASS",
+      "detail": "norm=0.000e+00"
+    },
+    {
+      "name": "finite-range LR velocity is finite",
+      "status": "PASS",
+      "detail": "v_LR=5.436564"
+    },
+    {
+      "name": "LR bound decreases with distance at fixed time",
+      "status": "PASS",
+      "detail": "b8=1.156e-03, b10=1.564e-04"
+    },
+    {
+      "name": "outside-cone LR bound is exponentially small in sample",
+      "status": "PASS",
+      "detail": "b10=1.564e-04"
+    },
+    {
+      "name": "time-count use case only needs d_t <= 1 from single-clock",
+      "status": "PASS",
+      "detail": "[1]"
+    },
+    {
+      "name": "with retained chirality parity and d_s=3, intersection is d_t=1",
+      "status": "PASS",
+      "detail": "[1]"
+    },
+    {
+      "name": "unaudited broad spectrum root",
+      "status": "PASS",
+      "detail": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
+      "name": "unaudited broad cluster root",
+      "status": "PASS",
+      "detail": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "name": "unaudited broad microcausality root",
+      "status": "PASS",
+      "detail": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
+    },
+    {
+      "name": "action gate remains open/renaming",
+      "status": "PASS",
+      "detail": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "name": "single-clock theorem row present",
+      "status": "PASS",
+      "detail": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "name": "remaining real root is still not hidden as closed",
+      "status": "PASS",
+      "detail": "audited_renaming"
+    }
+  ],
+  "source_firewall": {
+    "required": [
+      "**Claim type:** bounded_theorem",
+      "audit-unblock packet",
+      "not independent blockers for the time-count use case",
+      "remaining root is the action/temporal-transfer axis",
+      "action_gate_still_open: true",
+      "audit_required_before_effective_status_change: true"
+    ],
+    "old_roots": [
+      "AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
+      "AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
+      "AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
+      "EMERGENT_LORENTZ_INVARIANCE_NOTE.md"
+    ],
+    "forbidden": [
+      "audited_clean",
+      "effective retained",
+      "closes the staggered-Dirac/action realization gate",
+      "observed spacetime",
+      "PDG",
+      "Monte Carlo"
+    ]
+  },
+  "spectral_calculus": {
+    "transfer_eigenvalues": [
+      1.0,
+      0.4,
+      0.1
+    ],
+    "hamiltonian_eigenvalues": [
+      -0.0,
+      3.66516292749662,
+      9.210340371976182
+    ]
+  },
+  "tensor_locality": {
+    "commutator_norm": 0.0,
+    "v_lr": 5.43656365691809,
+    "sample_bounds": {
+      "d8": 0.0011555296672674349,
+      "d10": 0.00015638393480794726
+    }
+  },
+  "dimension_use_case": {
+    "d_s": 3,
+    "chirality_allowed": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "single_clock_allowed": [
+      1
+    ],
+    "intersection": [
+      1
+    ]
+  },
+  "ledger_rows": {
+    "axiom_first_spectrum_condition_theorem_note_2026-04-29": {
+      "claim_type": "positive_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+    },
+    "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
+      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md"
+    },
+    "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01": {
+      "claim_type": "positive_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md"
+    },
+    "staggered_dirac_realization_gate_note_2026-05-03": {
+      "claim_type": "open_gate",
+      "audit_status": "audited_renaming",
+      "effective_status": "audited_renaming",
+      "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+    },
+    "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": {
+      "claim_type": "positive_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
+    }
+  },
+  "verdict": "single-clock root audit unblock packet passes; old broad roots are not independent blockers for the time-count use case, and the remaining root is the action/temporal-transfer axis."
+}

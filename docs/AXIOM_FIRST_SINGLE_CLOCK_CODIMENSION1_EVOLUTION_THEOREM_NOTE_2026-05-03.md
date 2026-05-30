@@ -28,6 +28,42 @@ pipeline from `audit_status` + `claim_type` + dependency chain.
 **Branch:** `claude/single-clock-codimension1-evolution-theorem-2026-05-03`
 **Runner:** `scripts/axiom_first_single_clock_codimension1_evolution_check.py`
 
+## Audit-unblock dependency narrowing (2026-05-30)
+
+The active root-unblock packet
+[`SINGLE_CLOCK_ROOT_AUDIT_UNBLOCK_PACKET_NOTE_2026-05-30.md`](SINGLE_CLOCK_ROOT_AUDIT_UNBLOCK_PACKET_NOTE_2026-05-30.md)
+narrows the dependency set for the exact way this theorem is used by
+`ANOMALY_FORCES_TIME_THEOREM.md`.
+
+For the `d_t = 1` time-count proof, the load-bearing single-clock content is
+only:
+
+```text
+qubit tensor locality on Z^3
++ one physical temporal transfer axis from the action surface
++ finite-range Hamiltonian locality
+=> one Hamiltonian clock and one codimension-1 Cauchy slice.
+```
+
+Therefore the older broad roots listed in the 2026-05-09 status note are
+not all independent blockers for the parent time-count use case:
+
+- the broad spectrum-condition note is replaced, for this use case, by
+  finite-dimensional spectral calculus once the positive transfer matrix is
+  supplied;
+- the broad cluster-decomposition note is not load-bearing for excluding
+  `d_t > 1`;
+- the broad continuum microcausality note is reduced to equal-time tensor
+  locality plus the standard finite-range Lieb-Robinson estimate;
+- Lorentz-continuum refinements are not load-bearing for the lattice
+  single-clock exclusion.
+
+The real remaining root is narrower and explicit: the physical 3+1
+staggered/Wilson action surface must supply a unique temporal
+reflection-positive transfer axis and a finite-range Hamiltonian. This note
+does not claim audit retention before that narrowed root and this theorem are
+independently reviewed.
+
 ## Audit-status note (2026-05-09)
 
 The 2026-05-05 audit verdict (`audited_conditional`, chain_closes=false)

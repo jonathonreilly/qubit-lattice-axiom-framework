@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Current-surface closure repair for anomaly-forces-time via standard ABJ.
+"""Legacy fallback check for anomaly-forces-time via standard ABJ.
 
-This runner verifies the repaired parent chain:
+This runner verifies that the bounded standard-ABJ fallback route remains
+coherent:
 
     cited standard ABJ theorem bridge + anomaly arithmetic
     + Clifford chirality parity + single-clock exclusion => d_t = 1.
 
-It deliberately does not certify an unbounded A1+A2 derivation of ABJ.
+It deliberately does not certify the active parent route.  The active parent
+route now uses the framework-action ABJ derivation.
 """
 
 from __future__ import annotations
@@ -120,13 +122,12 @@ def source_firewall() -> dict[str, object]:
     parent = NOTE.read_text()
     bridge = BRIDGE.read_text()
     required_parent = [
-        "**Claim type:** bounded_theorem",
-        "standard-theorem bounded composition",
-        "ABJ standard-theorem bridge",
-        "not an unbounded A1+A2 derivation of ABJ",
+        "**Claim type:** positive_theorem",
+        "framework-action ABJ theorem",
+        "ABJ from framework action",
+        "standard_theorem_bridge_load_bearing: false",
         "accepted_premise_packet_load_bearing: false",
         "does not use PDG values",
-        "square-block no-go",
     ]
     forbidden_parent = [
         "accepted-premise positive composition",
@@ -166,10 +167,10 @@ def main() -> int:
     deps = ledger_checks(rows)
 
     verdict = (
-        "Standard-ABJ bounded composition verified: cited standard theorem "
-        "+ exact anomaly arithmetic + Clifford chirality parity + single-clock "
-        "exclusion gives d_t=1. This is bounded on the standard-theorem bridge, "
-        "not an unbounded A1+A2 derivation of ABJ."
+        "Standard-ABJ fallback composition remains coherent: cited standard "
+        "theorem + exact anomaly arithmetic + Clifford chirality parity + "
+        "single-clock exclusion gives d_t=1. The active parent route now uses "
+        "the framework-action ABJ derivation."
     )
     out = {
         "claim": "anomaly-forces-time standard-ABJ closure repair",

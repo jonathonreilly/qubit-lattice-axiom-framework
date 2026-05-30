@@ -7,6 +7,22 @@ bounded standard-theorem bridge; it does not set or predict an audit outcome.
 **Primary runner:**
 [`scripts/frontier_abj_standard_theorem_bridge_for_anomaly_forces_time.py`](../scripts/frontier_abj_standard_theorem_bridge_for_anomaly_forces_time.py)
 
+## Current Parent Routing Notice
+
+As of the 2026-05-30 action-surface repair, the parent
+[`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) no longer
+uses this bounded standard-theorem bridge as its active ABJ authority. The
+active parent route is now
+[`ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md`](ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md),
+which derives the needed U(1)^3 ABJ obstruction from the physical 3+1
+framework action surface.
+
+This file is kept as a fallback/reference bridge and as an audit-readable
+record of the intermediate repair from accepted-premise wording to cited
+standard-theorem support. It should not be cited as the parent theorem's
+load-bearing route unless the parent is intentionally downgraded back to a
+bounded standard-theorem surface.
+
 ## Purpose
 
 This note replaces the earlier source-side wording "ABJ accepted premise" with

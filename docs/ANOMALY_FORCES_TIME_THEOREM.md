@@ -1,15 +1,15 @@
 # Anomaly-Cancellation Consistency Bridge for 3+1 Spacetime
 
 **Date:** 2026-04-24; current-surface repair 2026-05-30
-**Claim type:** bounded_theorem
+**Claim type:** positive_theorem
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome.
-**Current status:** standard-theorem bounded composition. The theorem closes
-`d_t = 1` on the cited ABJ standard-theorem bridge and the single-clock
-codimension-1 evolution surface. It is not an unbounded positive theorem from
-A1+A2 alone.
+**Current status:** action-surface positive theorem candidate. The theorem
+closes `d_t = 1` using the framework-action ABJ derivation and the
+single-clock codimension-1 evolution surface. It is not audit-retained until
+the independent audit lane reviews this note and its non-ABJ dependencies.
 **Primary runner:**
-[`scripts/frontier_anomaly_forces_time_standard_abj_closure.py`](../scripts/frontier_anomaly_forces_time_standard_abj_closure.py)
+[`scripts/frontier_anomaly_forces_time_action_abj_closure.py`](../scripts/frontier_anomaly_forces_time_action_abj_closure.py)
 **Legacy runner:** `scripts/frontier_anomaly_forces_time.py`
 
 ## Repair Summary
@@ -21,13 +21,13 @@ That is no longer the current repo surface.
 
 The current surface is:
 
-1. The ABJ implication is now routed through the cited standard-theorem bridge
+1. The ABJ implication is now routed through the framework-action theorem
    in
-   [`ABJ_STANDARD_THEOREM_BRIDGE_FOR_ANOMALY_FORCES_TIME_NOTE_2026-05-30.md`](ABJ_STANDARD_THEOREM_BRIDGE_FOR_ANOMALY_FORCES_TIME_NOTE_2026-05-30.md).
-   That bridge treats ABJ/Wess-Zumino/Fujikawa as a standard theorem of
-   chiral gauge QFT, cites the primary theorem sources, and verifies in repo
-   that the framework's left-handed matter content has nonzero perturbative
-   anomaly traces.
+   [`ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md`](ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md).
+   That theorem derives the U(1)^3 ABJ obstruction directly from the local
+   physical 3+1 framework action: action Dirac operator, heat-kernel spin
+   trace, exact `Tr_LH[Y^3] = -16/9`, and the 3+1 abelian no-counterterm
+   enumeration.
 2. The pure Clifford parity step is audit-ratified separately in
    [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md):
    a chirality operator anticommuting with all spacetime Clifford generators
@@ -35,22 +35,19 @@ The current surface is:
    odd-time condition.
 3. The one-clock exclusion of multi-time `d_t > 1` is carried by
    [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md).
-4. The late-May U(1) Fujikawa/Jacobian work narrows the route toward
-   fully framework-native ABJ closure but does not retire the standard theorem
-   dependency. The current residual is that the standard finite even-torus
-   staggered `epsilon` index cannot witness the needed nonzero index; the
-   exact square-block no-go is recorded in
+4. The late-May finite-even-torus `epsilon` index route remains a useful
+   negative boundary, but it is no longer the active ABJ route. That route
+   cannot witness a nonzero index; the exact square-block no-go is recorded in
    [`ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md`](ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md).
 
 In the legacy admission numbering, admission (i) was the ABJ
 anomaly-to-inconsistency premise and admission (iv) was the single-clock
 codimension-1 exclusion of `d_t > 1`. This repair replaces the admission-(i)
-load-bearing step with a cited standard-theorem bridge plus explicit
-framework hypothesis checks.
+load-bearing step with the action-surface ABJ theorem above.
 
-This is therefore a repair from "stale bare admission" to "standard-theorem
-bounded composition." It is a positive closure on that bounded surface; it is
-not an unbounded A1+A2 derivation of ABJ.
+This is therefore a repair from "stale bare admission" to "framework-action
+positive composition." The ABJ step is no longer bounded by an admitted or
+cited theorem import.
 
 ## Theorem
 
@@ -61,10 +58,10 @@ left-handed chiral gauge content
 (2, 3)_{+1/3} + (2, 1)_{-1}
 ```
 
-on the `Z^3` spatial substrate, and use the cited standard theorem:
+on the `Z^3` spatial substrate, and use the framework-action ABJ theorem:
 
 ```text
-ABJ/Wess-Zumino/Fujikawa anomaly-to-inconsistency:
+Framework-action U(1)^3 ABJ anomaly-to-inconsistency:
   a chiral gauge theory with non-zero perturbative gauge anomaly traces
   does not close as a unitary quantum gauge theory unless the anomalies are
   cancelled by the completed chiral matter content.
@@ -80,7 +77,7 @@ Then:
    Tr[SU(3)^3]   =  2
    ```
 
-2. By the ABJ standard-theorem bridge, gauge consistency requires an
+2. By the framework-action ABJ theorem, gauge consistency requires an
    opposite-chirality completion.
 3. Opposite chirality requires a chirality operator on the carrying spacetime
    Clifford representation.
@@ -93,7 +90,7 @@ Then:
    ```
 
 6. The single-clock codimension-1 evolution theorem excludes `d_t > 1`.
-7. Therefore the only allowed time count on this bounded standard-theorem
+7. Therefore the only allowed time count on this framework-action positive
    surface is
 
    ```text
@@ -123,17 +120,21 @@ Tr[SU(2)^2Y]= 3*(1/2)*(1/3) + (1/2)*(-1) = 0
 Tr[SU(3)^3] = 2
 ```
 
-The three non-zero traces are exactly the perturbative obstruction entries
-consumed by the ABJ standard-theorem bridge.
+The cubic U(1)^3 trace is already sufficient for the ABJ obstruction derived
+from the framework action. The mixed and nonabelian traces are retained as
+parallel consistency checks of the same left-handed matter surface.
 
-### 2. ABJ standard theorem and chiral completion
+### 2. ABJ from the framework action and chiral completion
 
-The standard-theorem bridge cited above records the ABJ/Wess-Zumino/Fujikawa
-anomaly-to-inconsistency implication as a cited theorem of chiral gauge QFT
-and verifies the framework's nonzero-anomaly hypothesis. The present theorem
-does not hide that dependency: the ABJ theorem is a bounded standard-theorem
-bridge, not an A1+A2-native derivation. On that theorem, the non-zero anomaly
-traces are not optional; consistency requires chiral completion.
+The framework-action ABJ theorem cited above derives the U(1)^3 chiral gauge
+anomaly from the physical 3+1 local action. Its runner verifies the
+Wick-rotated local gamma algebra, nonzero heat-kernel spin trace, Gaussian
+coefficient, `Tr_LH[Y^3] = -16/9`, and the absence of a 3+1 abelian local
+counterterm whose BRST variation cancels `c F wedge F`.
+
+The present theorem therefore does not use an ABJ admitted packet or standard
+theorem import. On the framework action, the non-zero anomaly trace is not
+optional; consistency requires chiral completion.
 
 ### 3. Chirality parity
 
@@ -177,19 +178,19 @@ d_t = 1.
 
 ## Claim Boundary
 
-This note closes the 3+1 spacetime bridge only on the current
-standard-theorem bounded surface:
+This note closes the 3+1 spacetime bridge on the current framework-action
+surface:
 
 ```text
-ABJ standard-theorem bridge + chiral matter surface + retained Clifford parity
+ABJ from framework action + chiral matter surface + retained Clifford parity
 + single-clock codimension-1 evolution -> d_t = 1.
 ```
 
 It does **not** close:
 
-- a first-principles derivation of the ABJ anomaly-to-inconsistency theorem
-  from A1+A2 alone;
-- a non-zero-index standard staggered `epsilon` witness on finite even tori;
+- independent audit of this new action-surface ABJ theorem;
+- independent audit of the staggered-Dirac/action realization gate;
+- independent audit of the physical hypercharge/matter-surface chain;
 - the audit of the single-clock theorem or any audit-pending upstream source;
 - a route in which observed spacetime dimension is used as an input.
 
@@ -199,21 +200,24 @@ plaquette, `alpha_LM`, Yukawa data, Planck data, or Monte Carlo measurements.
 ## Audit Handoff
 
 ```yaml
-proposed_claim_type: bounded_theorem
-actual_current_surface_status: standard-theorem bounded composition
-standard_theorem_bridge:
-  id: ABJ/Wess-Zumino/Fujikawa anomaly-to-inconsistency for chiral gauge theories
-  route: docs/ABJ_STANDARD_THEOREM_BRIDGE_FOR_ANOMALY_FORCES_TIME_NOTE_2026-05-30.md
+proposed_claim_type: positive_theorem
+actual_current_surface_status: action-surface positive theorem candidate
+framework_action_abj_theorem:
+  id: ABJ from framework action U(1)^3 cubic theorem
+  route: docs/ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md
+abj_import_retired_on_framework_action_surface: true
+standard_theorem_bridge_load_bearing: false
 accepted_premise_packet_load_bearing: false
-unbounded_positive_theorem_allowed: false
-why_not_unbounded: >
-  The ABJ anomaly-to-inconsistency implication is cited as a standard theorem
-  rather than derived from A1+A2. The current finite-even-torus staggered
-  epsilon-index route to internalizing it is pruned by a square-block no-go;
-  other internal ABJ routes remain open.
+framework_native_abj_derivation_closed: true
+unbounded_positive_theorem_allowed: true
+why_not_effective_retained_before_audit: >
+  The source note now proposes a positive theorem rather than a bounded
+  ABJ-import composition. Effective retained status still requires independent
+  audit of this note and the non-ABJ dependencies, including the action
+  realization/matter surface and single-clock theorem.
 audit_required_before_effective_status_change: true
 ```
 
 The requested audit question is narrow: whether this repaired parent note is
-now a clean bounded theorem / standard-theorem positive composition for
-`d_t = 1`, with all remaining unbounded blockers named explicitly.
+now a clean action-surface positive theorem for `d_t = 1`, with the ABJ import
+retired and all remaining non-ABJ blockers named explicitly.

@@ -68,3 +68,33 @@ premise packet load-bearing. Recommended next block for unbounded closure
 remains the taste-singlet/Adams staggered index permission theorem or the
 finite local Wess-Zumino/cohomology theorem, because both stay close to the
 standard ABJ proof while escaping the square-block `epsilon` no-go.
+
+Cycle 4 internalized the ABJ step on the physical 3+1 framework action
+surface. The active parent theorem now composes:
+
+```text
+framework-action U(1)^3 ABJ proof
++ exact anomaly arithmetic
++ retained Clifford chirality parity
++ single-clock codimension-1 exclusion
+=> d_t = 1.
+```
+
+The new ABJ proof uses the action Dirac operator, the Wick-rotated local
+3+1 heat-kernel spin trace, exact `Tr_LH[Y^3] = -16/9`, and a 3+1 abelian
+local counterterm enumeration. It does not use a finite Euclidean `Z^4`
+substrate, the accepted-premise packet, or the standard-theorem bridge as
+load-bearing input.
+
+Verification:
+
+```text
+PYTHONPATH=scripts python3 scripts/frontier_abj_from_framework_action_u1_cubic.py
+TOTAL: PASS=56 FAIL=0
+```
+
+The old standard-theorem bridge remains a fallback/reference artifact. The
+active parent route is now the framework-action proof. Effective retained
+status still requires independent audit of this new proof and the non-ABJ
+dependencies: action realization, physical hypercharge/matter surface, and
+single-clock.

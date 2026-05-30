@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Verify the ABJ standard-theorem bridge for anomaly-forces-time.
 
-This runner checks the current-source claim movement:
+This runner checks the fallback/reference standard-theorem bridge:
 
     accepted-premise packet -> cited standard-theorem bridge
 
-It does not certify a fully framework-native ABJ derivation.
+It does not certify the active parent route.  The active parent route now uses
+the framework-action ABJ derivation.
 """
 
 from __future__ import annotations
@@ -84,6 +85,7 @@ def source_firewall() -> dict[str, object]:
 
     required_note_phrases = [
         "**Claim type:** bounded_theorem",
+        "fallback/reference bridge",
         "standard ABJ/Wess-Zumino/Fujikawa theorem",
         "not make the Adler-Bell-Jackiw theorem a new framework axiom",
         "not claim a full A1+A2-native lattice derivation",
@@ -108,13 +110,14 @@ def source_firewall() -> dict[str, object]:
         check(f"bridge note excludes overclaim: {phrase}", phrase not in note)
 
     required_parent_phrases = [
-        "standard-theorem bounded composition",
-        "ABJ standard-theorem bridge",
-        "not an unbounded A1+A2 derivation of ABJ",
+        "**Claim type:** positive_theorem",
+        "framework-action ABJ theorem",
+        "ABJ from framework action",
+        "standard_theorem_bridge_load_bearing: false",
         "accepted_premise_packet_load_bearing: false",
     ]
     for phrase in required_parent_phrases:
-        check(f"parent contains repaired standard-theorem phrase: {phrase}", phrase in parent)
+        check(f"parent contains active action-ABJ phrase: {phrase}", phrase in parent)
 
     parent_forbidden = [
         "accepted-premise positive composition",
@@ -149,10 +152,9 @@ def main() -> int:
     dims = dimension_intersection()
 
     verdict = (
-        "ABJ standard-theorem bridge passes as bounded theorem support; "
-        "no accepted-premise packet is load-bearing for the repaired parent route. "
-        "This remains bounded because ABJ is cited as a standard theorem, not "
-        "derived from A1+A2 in this note."
+        "ABJ standard-theorem fallback bridge passes as bounded support; "
+        "no accepted-premise packet is load-bearing, and the active parent "
+        "route now uses the framework-action ABJ derivation."
     )
 
     out = {

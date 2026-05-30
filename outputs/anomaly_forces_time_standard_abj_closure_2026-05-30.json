@@ -1,25 +1,25 @@
 {
   "claim": "anomaly-forces-time standard-ABJ closure repair",
-  "pass": 33,
+  "pass": 32,
   "fail": 0,
   "checks": [
     {
-      "name": "parent source contains boundary phrase: **Claim type:** bounded_theorem",
+      "name": "parent source contains boundary phrase: **Claim type:** positive_theorem",
       "status": "PASS",
       "detail": ""
     },
     {
-      "name": "parent source contains boundary phrase: standard-theorem bounded composition",
+      "name": "parent source contains boundary phrase: framework-action ABJ theorem",
       "status": "PASS",
       "detail": ""
     },
     {
-      "name": "parent source contains boundary phrase: ABJ standard-theorem bridge",
+      "name": "parent source contains boundary phrase: ABJ from framework action",
       "status": "PASS",
       "detail": ""
     },
     {
-      "name": "parent source contains boundary phrase: not an unbounded A1+A2 derivation of ABJ",
+      "name": "parent source contains boundary phrase: standard_theorem_bridge_load_bearing: false",
       "status": "PASS",
       "detail": ""
     },
@@ -30,11 +30,6 @@
     },
     {
       "name": "parent source contains boundary phrase: does not use PDG values",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
-      "name": "parent source contains boundary phrase: square-block no-go",
       "status": "PASS",
       "detail": ""
     },
@@ -171,13 +166,12 @@
   ],
   "source_firewall": {
     "required_parent_phrases": [
-      "**Claim type:** bounded_theorem",
-      "standard-theorem bounded composition",
-      "ABJ standard-theorem bridge",
-      "not an unbounded A1+A2 derivation of ABJ",
+      "**Claim type:** positive_theorem",
+      "framework-action ABJ theorem",
+      "ABJ from framework action",
+      "standard_theorem_bridge_load_bearing: false",
       "accepted_premise_packet_load_bearing: false",
-      "does not use PDG values",
-      "square-block no-go"
+      "does not use PDG values"
     ],
     "forbidden_parent_phrases": [
       "accepted-premise positive composition",
@@ -244,5 +238,5 @@
       "note_path": "docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md"
     }
   },
-  "verdict": "Standard-ABJ bounded composition verified: cited standard theorem + exact anomaly arithmetic + Clifford chirality parity + single-clock exclusion gives d_t=1. This is bounded on the standard-theorem bridge, not an unbounded A1+A2 derivation of ABJ."
+  "verdict": "Standard-ABJ fallback composition remains coherent: cited standard theorem + exact anomaly arithmetic + Clifford chirality parity + single-clock exclusion gives d_t=1. The active parent route now uses the framework-action ABJ derivation."
 }

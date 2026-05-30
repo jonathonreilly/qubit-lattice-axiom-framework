@@ -216,6 +216,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_abj_epsilon_index_square_block_no_go.py"
     },
+    "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_abj_from_framework_action_u1_cubic.py"
+    },
     "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": {
       "assert_count": 1,
       "counts": {
@@ -664,13 +676,13 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 2,
+        "B": 3,
         "C": 0,
-        "D": 1
+        "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
-      "runner": "scripts/frontier_anomaly_forces_time_standard_abj_closure.py"
+      "runner": "scripts/frontier_anomaly_forces_time_action_abj_closure.py"
     },
     "anomaly_forces_time_theorem_note_2026-05-17": {
       "assert_count": 0,
@@ -32518,6 +32530,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_abj_from_framework_action_u1_cubic.py": {
+      "assert_count": 1,
+      "claims": [
+        "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_abj_standard_theorem_bridge_for_anomaly_forces_time.py": {
       "assert_count": 1,
       "claims": [
@@ -32713,18 +32740,18 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/frontier_anomaly_forces_time_standard_abj_closure.py": {
+    "scripts/frontier_anomaly_forces_time_action_abj_closure.py": {
       "assert_count": 1,
       "claims": [
         "anomaly_forces_time_theorem"
       ],
       "counts": {
         "A": 0,
-        "B": 2,
+        "B": 3,
         "C": 0,
-        "D": 1
+        "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "exists": true
     },
@@ -58320,15 +58347,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 357,
+    "decoration_candidates": 358,
     "dominant_class_distribution": {
       "A": 268,
       "B": 298,
       "C": 778,
-      "D": 315,
+      "D": 316,
       "none": 444
     },
-    "runners_classified": 2103,
+    "runners_classified": 2104,
     "runners_with_C": 1025,
     "runners_with_D": 630
   }

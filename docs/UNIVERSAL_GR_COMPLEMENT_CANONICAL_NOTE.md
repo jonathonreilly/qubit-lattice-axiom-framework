@@ -1,30 +1,10 @@
 # Universal GR Complement Canonicalization Audit
 
 **Status:** bounded - bounded or caveated result note
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
 **Date:** 2026-04-14  
 **Branch:** `codex/review-active`  
 **Scope:** direct universal route / complement canonicalization only  
 **Ownership:** universal complement canonicalization only
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The note asserts that the available universal data do not define a canonical complement section, but the restricted packet contains no cited authority, proof of nonexistence, runner output, or runner source establishing that exhaustiveness "*
-
-with repair: *"missing_bridge_theorem: provide an axiom-native proof or executable runner source/output showing that all current universal invariants leave exactly SO(3) residual gauge and admit no canonical E \\oplus T1 section."*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The runner verifies the four universal-only structural facts — that `Pi_A1` is rank-2 and rotation-commuting, that the induced complement generators close as `so(3)`, that the `Pi_A1`-projected quotient-kernel data are frame-invariant, and that the curvature-localization probe is orbit-valued rather than section-valued — which together establish the exact `SO(3)` orbit bundle and exact invariant `A1` projector as the strongest universal-data outputs.
-- **NON-load-bearing (split off / admitted):** The conclusion that the full `SO(3)` is the exact residual gauge and that no canonical `E ⊕ T1` section exists under any current universal invariant requires an exhaustiveness argument (ruling out all possible invariants) that is not supplied as an axiom-native proof or executable runner; that exhaustiveness/nonexistence claim is admitted as a not-derived input.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
 
 ## Verdict
 

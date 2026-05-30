@@ -4,6 +4,15 @@
 **Claim type:** bridge-gap attack move 3 / native measure tie-breaker (a LEAN
 toward the value, NOT a forcing). Imports nothing.
 **Runner:** `scripts/flavor_matrix_field_measure_block_count_2026_05_30.py` (+ cache).
+
+> ⚠️ **CORRECTED by `FLAVOR_TWO_PATHS_VERDICT_NOTE_2026-05-30`.** This note's
+> "covariant `Tr(M²)` measure → block-count → 2/3" used **real `b`** (one doublet
+> dof). The full Hermitian operator has **complex `b`** = two doublet dof
+> (`Re b, Im b`); the same trace measure then gives `E[‖doublet‖²]:E[‖singlet‖²]
+> = 2:1` = **dimension → Q=1** (median 1.34). So the "block-count over dimension"
+> ranking is **inverted** for the full operator — A1's trace actually votes
+> dimension/Q=1, and block-count needs the `Im b=0` import. Retract the "lean
+> toward 2/3" reading.
 Resolves (partially) the move-2 3-way measure fork
 (`FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30`).
 

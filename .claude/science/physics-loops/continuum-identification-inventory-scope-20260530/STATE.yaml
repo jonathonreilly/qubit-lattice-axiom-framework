@@ -1,0 +1,49 @@
+loop_slug: continuum-identification-inventory-scope-20260530
+date: 2026-05-30
+mode: science-fix
+target_claim_id: continuum_identification_note
+target_note: docs/CONTINUUM_IDENTIFICATION_NOTE.md
+target_runner: scripts/frontier_continuum_identification_audit.py
+goal: "Repair the audited conditional continuum-identification capstone without adding axioms."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Inventory-complete at file/runner level; continuum theorem status remains conditional on retained content audits and a retained gauge universality/EFT bridge."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The branch does not prove the 19 gravity authority notes or the gauge universality/EFT bridge."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Narrow overclaiming continuum theorem language to an inventory and scope-firewall claim."
+files_touched:
+  - docs/CONTINUUM_IDENTIFICATION_NOTE.md
+  - scripts/frontier_continuum_identification_audit.py
+  - logs/runner-cache/frontier_continuum_identification_audit.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+open_imports:
+  - "Retained content audits for the 19 gravity authority notes."
+  - "Retained gauge universality/EFT-to-continuum-QCD bridge."
+  - "Exact retained Lorentz/Planck-unit readout if used by downstream prose."
+verification:
+  - "python3 -m py_compile scripts/frontier_continuum_identification_audit.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_continuum_identification_audit.py -> SUMMARY: PASS=60 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_continuum_identification_audit.py --force --push-mode none --allow-non-main --concurrency 1"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+repo_status_after_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  audit_queue_ready: true
+  audit_queue_criticality: high
+next_exact_action: "Open draft review PR for scoped inventory repair."
+stop_condition: "PR opened and verified; then pivot to the next uncovered audited conditional."

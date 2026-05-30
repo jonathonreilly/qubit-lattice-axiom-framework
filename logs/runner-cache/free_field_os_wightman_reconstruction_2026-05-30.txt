@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/free_field_os_wightman_reconstruction_2026-05-30.py
+runner_sha256: 775b7dc47780088f9f2ba96cd9cfd7144c3137a9d6eb2aa623bd364cc6b20025
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+[PASS] R1_statistics_blind_kernel_inverse
+[PASS] R2_os1_so4_bispinor_covariance
+[PASS] R3_os2_fermionic_reflection_positivity
+[PASS] R4_os4_cluster_mass_gap
+[PASS] R5_wick_rotation_mass_shell_so31
+[PASS] R6_positive_energy_spectrum
+[PASS] R7_gaussian_npoint_pfaffian_hierarchy
+[PASS] R8_uv_relative_sign_and_completeness
+SCORECARD PASS=8 FAIL=0
+
+----- stderr -----
+

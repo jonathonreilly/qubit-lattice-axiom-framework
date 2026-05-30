@@ -1,0 +1,17 @@
+[PASS] E1 2/9 NOT in Z[zeta_3] (minpoly 9x-2 non-monic) -> eta can never equal 2/9
+       eta_g(T) in Z[zeta_3]=algebraic integers; 2/9 is a Lefschetz denominator
+[PASS] E2 R multiplicity-free -> commutant circulant; comm(R)∩anticomm(Gamma)={0}
+       distinct eigs=True, anticommutant nullity=0
+[PASS] E3 Gamma-graded index_R=2 nonzero BUT both eigenspaces R-invariant -> forces nothing
+       index=2.000, [R,P±]=0: True (saturated by symmetric vacuum)
+[PASS] E4 tensor-coin dodge [D,g]=0 AND {D,grading}=0 but spectrum +/-sym -> eta=0
+       [D,g]=0:True, {D,grading}=0:True, eig=[-1. -1. -1.  1.  1.  1.], eta=0 (index silent)
+[PASS] E5 2/9=(N-1)/N^2=L_3(1,2) (rational-space family) but != Q=2/3 and not eta
+       (N-1)/N^2=0.2222, L_3(1,2)=0.2222, Q(r=1/2)=0.6667 != 2/9
+
+SCORECARD PASS=5 FAIL=0
+COMPLEMENTARITY: eta loud <-> breaking impossible (R^3, forced circulant);
+eta silent <-> breaking possible (R^3(x)C^2, +/- symmetric spectrum). The eta route
+REDUCES to the chirality gate. NEXT PATH (off-index): qubit-factor Berry holonomy of
+the delta:0->2pi loop -- nonzero where eta is blind, natively radian-valued (could
+bridge the dimensionless-2/9 -> radian-2/9 wall); test if it = 2/9 rad and r=1/2-selective.

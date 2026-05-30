@@ -11,17 +11,7 @@ surface or promoting any cited upstream row;
 generator step on the runner block, conditional on the P1 additivity and
 P2 phase-blind scalar-generator selection admissions**, per audit-lane
 verdict that unconditional axiom-to-observable closure is not supported.
-P1 and P2 stay unretired on this row until the cited upstream chain is
-independently audited; the Tier-A portfolio is not extended;
-2026-05-29 dependency-chain wiring: the P1 (additivity) and P2
-(phase-blindness) premises are wired to the in-repo derivation chain
-(qubit-trace P1/P2 note + RP transfer-trace bridge note + bounded
-gauge-extension note) via markdown-linked dependency edges, converting
-them from standalone inline admissions to **derived-pending-upstream-
-retention** (see §"Dependency-chain update"); this is a surgical
-upgrade of the admission status only — Theorems 1-4, the Tier-A registry
-framing for P1, the `c = 1` normalization discussion, and all out-of-scope
-caveats are unchanged, and no status is promoted.
+P1 and P2 stay admitted; the Tier-A portfolio is not extended.
 **Type:** bounded_theorem (finite-algebra `log|det(D+J)|` generator on
 the runner block, conditional on P1 scalar additivity and P2 continuous
 phase-blind scalar-generator selection; finite-block regularity,
@@ -106,89 +96,21 @@ and its machine-readable sidecar `docs/audit/data/tier_a_admissions.json`
   load-bearing theorem of this note is the finite-algebra
   `log|det(D+J)|` generator step on the runner block **given P1 and P2**, not
   the unconditional axiom-to-observable closure.
-- **P2 (phase-blindness; derived candidate on the qubit-trace surface):**
-  scalar bosonic generators are continuous functions of `|Z|` alone.
-  This is the phase-blindness/regularity premise needed to select the
-  logarithmic amplitude generator. As of the 2026-05-29
-  dependency-chain wiring it is **proposed as a derived theorem** on the
-  qubit-trace surface in
-  [OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md](OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md)
-  (`Z[J] = Tr(e^{-(H+J)})` is real-positive for self-adjoint `H + J`, so
-  there is no phase to be sensitive to) and bridged to the framework's
-  `log|det(D+J)|` form by the in-repo reflection-positivity chain (see
-  §"Dependency-chain update"). The runner still also verifies that the
-  selected candidate has the expected determinant/source symmetries on
-  the runner block.
-- **Runner-local consistency checks (not the P2 derivation):** determinant
+- **P2 (admitted scalar-generator selection premise):** scalar bosonic
+  generators are continuous functions of `|Z|` alone. This is the
+  phase-blindness/regularity premise needed to select the logarithmic
+  amplitude generator. The runner verifies that the selected candidate
+  has the expected determinant/source symmetries; it does not derive the
+  full P2 selection principle.
+- **Runner-local consistency checks (not premise retirement):** determinant
   evenness, finite-block analyticity near zero source, and normalization
   shift-invariance are checked in §"Runner-local consistency checks for
-  P2/P3/P4". They support the candidate algebra under P1+P2 on this row's
-  runner block; they are *consistency checks of the selected candidate*,
-  not themselves the P2 derivation. The P2 derivation is supplied on the
-  qubit-trace surface by the dependency chain below.
+  P2/P3/P4". They support the candidate algebra under P1+P2, but do not
+  remove P2 from the admitted conditional surface.
 
 This note does **not** extend the Tier-A portfolio; it only narrows
 its own theorem-grade content to the explicit P1+P2 conditional surface,
-per the audit-lane verdict, and (as of 2026-05-29) wires that surface to
-the in-repo P1/P2 derivation chain recorded in §"Dependency-chain update".
-
-## Dependency-chain update (2026-05-29)
-
-This subsection records the in-repo dependency chain that now supplies
-the P1 (scalar additivity) and P2 (phase-blindness) premises this row
-previously carried as standalone inline admissions. It is the P1 analog
-of the reflection-positivity parent wiring (PR #2182, RP analog). It
-does **not** promote any row and does **not** assert that P1 is lifted
-or retained; the audit lane owns the verdict.
-
-The flagged residual for this row was that *"P2 remains an inline
-admitted scalar-generator selection premise with no retained theorem or
-reviewed Tier-A registry entry"*, and the re-audit trigger named
-deriving and auditing the P2 phase-blind scalar-generator selection
-theorem (or a reviewed Tier-A registry update for P2). The supporting
-derivations now exist in-repo:
-
-- **P1 + P2 derivation candidate on the qubit-trace surface.** Both
-  premises are proposed as derived theorems on the qubit-trace
-  generating functional
-  `W_qubit = log Tr(e^{-(H+J)}) - log Tr(e^{-H})` in
-  [OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md](OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md)
-  (`unaudited`): P1 from trace-tensor factorization
-  `Tr(B_1 ⊗ B_2) = Tr B_1 · Tr B_2` on disjoint qubit regions, P2 from
-  real-positivity of `Tr(e^{-(H+J)})` for self-adjoint `H + J`.
-- **Bridge to the `log|det(D+J)|` form via reflection positivity.** The
-  transfer from the qubit-trace `W` to the framework's
-  `W = log|det(D+J)|` is supplied in-repo by
-  [P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md](P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md)
-  (`unaudited`), which factorizes the free zero-source staggered
-  determinant `det(M_KS + m I) = Z_vac · Tr(e^{-β Ĥ})` with `Z_vac > 0`
-  and self-adjoint `Ĥ ≥ 0`, so the determinant is phase-free on that
-  surface.
-- **Bridge is gauge-robust and labeling-indifferent.** The bounded
-  gauge-extension note
-  [RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
-  extends the two-step positivity to fixed arbitrary `SU(3)`/`U(1)`
-  spatial background (config-by-config, temporal gauge) and proves
-  `det(M_KS + m I)`, `spec(Ĥ)`, and `Z` invariant under `hw = 1`
-  triplet relabeling.
-- **Realization residual = bounded-closeable substeps (1)+(2), not
-  `AC_phi_lambda`.** Because RP/P2 depend only on relabeling-invariant
-  quantities, the remaining realization dependence of the bridge is the
-  **bounded-closeable staggered-Dirac substeps (1) Grassmann + (2)
-  kinetic structure** (unaudited candidates per the gauge-extension
-  note), and is explicitly **NOT** the `AC_phi_lambda` species-labeling
-  admission. `AC_phi_lambda` is neither closed nor weakened here; it is
-  shown irrelevant to RP/P2.
-
-**Honest residual after wiring.** P1 and P2 are derived on the
-qubit-trace surface and bridged to the `|det|` form via in-repo
-reflection positivity, so this row's residual is now a
-cascade-resolvable dependency-chain matter (the qubit-trace and
-P2-bridge notes are `unaudited`) rather than an un-theoremed inline
-admission. The full lift of this row is **cascade-pending on the
-qubit-trace and P2-bridge notes reaching retained-grade on independent
-audit**. This subsection does not change audit status and does not predict
-the next verdict; the audit lane remains the only status authority.
+per the audit-lane verdict.
 
 ## Question
 
@@ -479,16 +401,6 @@ This note implements the second branch; the audit row may now be
 re-evaluated against the conditional load-bearing statement above
 rather than the unconditional 2026-04-13 framing.
 
-As of the 2026-05-29 dependency-chain wiring, the **first branch** of
-the trigger (scalar additivity and phase-blindness accepted as
-upstream theorems) now also has in-repo derivation support: P1 and P2
-are derived on the qubit-trace surface and bridged to the `log|det(D+J)|`
-form via reflection positivity (see §"Dependency-chain update" and the
-three markdown-linked notes). That support is **cascade-pending** —
-the qubit-trace and P2-bridge notes are `unaudited` — so the first
-branch fires only once those upstream notes reach retained-grade on
-independent audit. This note does not assert that outcome.
-
 ## Runner-local consistency checks for P2/P3/P4 (2026-05-09; narrowed 2026-05-25)
 
 The 2026-05-07 conditional scope originally admitted four bridge premises
@@ -645,30 +557,15 @@ primitives, and whether absolute observable normalization is fixed
 elsewhere in the framework — is out-of-scope for this row and is
 recorded as an open question for the audit lane.
 
-### P1+P2 scalar-selection surface: derived candidate on the qubit-trace surface
+### What remains admitted: P1+P2 scalar-selection surface
 
 P1 — that `W` must satisfy `W[J_1 (+) J_2] = W[J_1] + W[J_2]` on
-independent subsystems — and P2 — that the scalar bosonic generator is a
-continuous function of `|Z|` alone — together select the additive
-phase-blind amplitude generator class. As of the 2026-05-29
-dependency-chain wiring, both are **proposed as derived theorems on the
-qubit-trace surface** in
-[OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md](OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md)
-(P1 from trace-tensor factorization, P2 from real-positivity of
-`Tr(e^{-(H+J)})`), and the bridge to the framework's `log|det(D+J)|`
-form is supplied in-repo via reflection positivity by
-[P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md](P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md)
-and shown gauge-robust and labeling-indifferent by
-[RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
-(bounded). So P2 is **no longer an unlinked inline admission**: it is
-linked to a qubit-trace derivation candidate and an in-repo bridge, with
-the residual now a cascade-resolvable dependency-chain matter (the
-qubit-trace and P2-bridge notes are `unaudited`) rather than an
-un-theoremed selection premise. See §"P1 + P2 derivation candidate on
-the qubit-trace surface" above and §"Dependency-chain update" below.
-This row still does not itself re-derive the selection surface from retained
-primitives; it cites the in-repo derivation chain, and the audit lane owns
-the verdict on whether the chain lifts the conditional.
+independent subsystems — remains an admitted physical-principle premise.
+P2 — that the scalar bosonic generator is a continuous function of `|Z|`
+alone — also remains an admitted scalar-selection premise. Together they
+select the additive phase-blind amplitude generator class. This row does
+not attempt to derive that selection surface from retained primitives; that
+route is explicitly out of scope.
 
 #### Admission asymmetry between P1 and P2
 
@@ -695,61 +592,27 @@ This asymmetry is not closed by this note. The audit lane is the
 authority on whether the inline-admitted P2 premise is acceptable for
 its dependents.
 
-#### P1 + P2 derivation candidate on the qubit-trace surface (in-repo derivation chain)
+#### Existing candidate retirement path for P1 + (phase-positive) P2
 
-P1 (scalar additivity) and P2 (phase-blindness) are **proposed as
-derived theorems** on the qubit-trace generating-functional surface in
-[OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md](OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md).
-That note works with the canonical qubit-trace generating functional
+A candidate derivation of P1 and the phase-positive side of P2 from a
+qubit-trace generating functional is recorded in (backticked to avoid
+load-bearing the parent on an `unaudited` row)
+`OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md`.
+That note proposes that
 
 ```
 W_qubit[J] := log Tr_A(e^{-(H + J)}) - log Tr_A(e^{-H})
 ```
 
-on the one-qubit-per-site operator algebra and establishes:
-
-- **P1 (additivity) is derived** from trace-tensor factorization on
-  disjoint qubit regions: for `A_Λ = A_{Λ_1} ⊗ A_{Λ_2}` and independent
-  sources, `Z[J_1 ⊕ J_2] = Z_1[J_1] · Z_2[J_2]` via
-  `Tr_{A_1 ⊗ A_2}(B_1 ⊗ B_2) = Tr_{A_1}(B_1) · Tr_{A_2}(B_2)`, so
-  `W_qubit[J_1 ⊕ J_2] = W_qubit[J_1] + W_qubit[J_2]` follows from the
-  trace structure rather than an admitted additivity premise.
-- **P2 (phase-blindness) is derived** because `Z[J] = Tr_A(e^{-(H + J)})`
-  is manifestly real-positive for self-adjoint `H + J` (functional
-  calculus on a positive operator), so there is no fermionic phase for
-  the generator to be sensitive to. The CPT-equivariance footnote of
-  that note uses the framework's CPT-lane row, but the core
-  phase-positivity is the self-adjoint-trace positivity itself, not a
-  CPT import.
-
-The **bridge** from this qubit-trace `W` to the framework's
-`W = log|det(D+J)|` form is supplied in-repo by
-[P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md](P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md),
-which factorizes the free zero-source staggered determinant as
-`det(M_KS + m I) = Z_vac · Tr(e^{-β Ĥ})` with `Z_vac > 0` and
-`Ĥ = Ĥ^† ≥ 0` the two-step transfer Hamiltonian, underwritten by
-reflection positivity; on that surface `log|det| = log det` with no
-phase, tying the modulus form to the positive-trace P2 support.
-
-That bridge is shown **gauge-robust and labeling-indifferent** by the
-bounded extension note
-[RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md):
-the two-step positivity holds config-by-config at fixed arbitrary
-`SU(3)` (and `U(1)`) spatial background in temporal gauge, and
-`det(M_KS + m I)`, `spec(Ĥ)`, and `Z = Tr(e^{-β Ĥ})` are invariant
-under any relabeling of the `hw = 1` corner triplet. Consequently the
-only remaining realization residual of the RP/P2 bridge is the
-**bounded-closeable staggered-Dirac substeps (1) Grassmann realization
-+ (2) kinetic structure**, and is explicitly **NOT** the genuine
-`AC_phi_lambda` species-labeling admission (substep 4), which is shown
-irrelevant to RP/P2.
-
-These three notes are markdown-linked so the citation graph records the
-derivation chain as upstream dependency edges. This wiring does **not**
-promote any of those rows or this row; the qubit-trace and P2-bridge
-notes are `unaudited`, and independent audit remains the sole status
-authority (see
-§"Dependency-chain update" below).
+automatically satisfies P1 (via trace-tensor factorization on disjoint
+qubit regions) and the phase-positive side of P2 (because `Z[J]` is
+manifestly real-positive for self-adjoint `H + J`). When that note
+becomes retained-grade, transferring the retirement back to this
+note's `W = log|det(D+J)|` formulation remains conditional on the
+admitted Grassmann / Berezin bridge between the qubit-trace and
+Grassmann-determinant surfaces, per the qubit-trace note's own scope.
+This cross-reference is informational only and does **not** promote
+either row.
 
 ### Updated conditional load-bearing statement
 

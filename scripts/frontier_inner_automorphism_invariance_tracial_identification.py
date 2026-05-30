@@ -117,7 +117,7 @@ def test_T5_source_boundary() -> None:
         "**Claim type:** bounded_theorem",
         "does not approve that",
         "does not add a new framework axiom or rule",
-        "derive PRR from A1+A2",
+        "derive PRR from Axiom 1 + Axiom 2",
         "conditional bridge theorem",
         "explicit approval",
         "Plain-text target row, not a load-bearing dependency",

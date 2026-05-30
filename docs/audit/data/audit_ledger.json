@@ -47319,13 +47319,15 @@
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [],
+      "deps": [
+        "dimensional_gravity_table"
+      ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
       "load_bearing_step": "For the scaled trial state, <H_d>_{psi_lambda} = lambda^2 T - lambda^(d-2) U, so for d >= 5 the attractive term dominates as lambda -> infinity and the Hamiltonian is unbounded below.",
       "load_bearing_step_class": "A",
@@ -47443,7 +47445,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -47451,7 +47453,7 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": "scripts/frontier_coulomb_stability_scaling_repair.py",
+      "runner_path": null,
       "title": "Coulomb Stability Upper-Bound Support",
       "transitive_descendants": 1,
       "verdict_rationale": "The load-bearing step is a class A algebraic dominance check over stated scaling inputs. However, the note itself identifies the general-d Coulomb Hamiltonian, d-dimensional continuum quantum mechanics scalings and spectrum, and Coulomb/scalar sector identification as admitted external premises. The only cited authority is retained_bounded for cache-backed d = 3 and d = 4 table rows and does not supply the missing general-d Coulomb/QM bridge. No runner source or stdout is available, but the verdict does not depend on compute noncompletion because the conditional algebra can be judged from the note text."
@@ -52748,13 +52750,13 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 9,
+      "direct_in_degree": 10,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.65,
+      "load_bearing_score": 14.17,
       "load_bearing_step": "The binding d=3 and d=4 table entries are exactly the cache-backed rows asserted by the certificate runner against registered cached artifacts.",
       "load_bearing_step_class": "B",
       "max_descendant_status": "retained_bounded",
@@ -53156,7 +53158,7 @@
       },
       "runner_path": "scripts/dimensional_gravity_table_certificate_runner_2026_05_03.py",
       "title": "Dimensional Gravity Table \u2014 Cache-Backed d=3 / d=4 Rows Only (Binding)",
-      "transitive_descendants": 70,
+      "transitive_descendants": 71,
       "verdict_rationale": "The repaired note has narrowed the claim to a bounded cache-backed inventory rather than a universal dimensional-gravity theorem. The runner source is not a first-principles compute runner; it performs structural algebraic checks plus cache/log verification, so the load-bearing step is class B. Because the binding claim is only that the cache-backed d=3/d=4 entries are registered and internally matched, and the d=2 plus asymptotic 4D distance-law claims are demoted out of scope, the narrowed chain closes on its own terms."
     },
     "dirac_core_card_note": {

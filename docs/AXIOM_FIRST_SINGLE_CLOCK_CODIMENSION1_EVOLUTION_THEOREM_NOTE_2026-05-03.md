@@ -4,7 +4,7 @@
 **Type:** positive_theorem (lattice form); bounded_theorem (continuum-limit
 identification with Wightman one-parameter group)
 **Claim scope:** From A_min plus the retained reflection-positivity
-support theorem, the retained spectrum-condition support theorem, the
+support theorem, the spectrum-condition support theorem, the
 retained cluster-decomposition support theorem, the retained
 Cl(3)-per-site-uniqueness support theorem, and the retained
 microcausality / Lieb-Robinson support theorem, the framework's lattice
@@ -130,7 +130,7 @@ No fitted parameters. No observed values used as proof inputs.
   H_phys` is positive Hermitian with `‖T‖_op ≤ 1` on the canonical
   surface, and `H = -(1/a_τ) log(T)` is self-adjoint and bounded
   below.
-- **(R-SC) Spectrum condition.** From the retained
+- **(R-SC) Spectrum condition.** From the
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md),
   `H ≥ 0` on `H_phys` after vacuum subtraction, and `H` is a bounded
   operator on the finite-dim block.
@@ -446,7 +446,7 @@ itself the remaining external admission in `ANOMALY_FORCES_TIME_THEOREM`.
 
 - A1, A2, A3, A4 (no fitted parameters, no observed values).
 - (R-RP) retained reflection-positivity support theorem.
-- (R-SC) retained spectrum-condition support theorem.
+- (R-SC) spectrum-condition support theorem.
 - (R-CD) retained cluster-decomposition support theorem.
 - (R-LR) retained microcausality / Lieb-Robinson support theorem.
 - (R-CL3) retained Cl(3)-per-site-uniqueness support theorem.
@@ -498,7 +498,7 @@ This is the lattice form of the Wightman framework for QFT on A_min.
 
 ## Honest status
 
-**Branch-local theorem on A_min plus retained / near-retained inputs.**
+**Source theorem on A_min plus retained / near-retained inputs.**
 The lattice form (S1)–(S3) is positive_theorem grade. The
 continuum-limit identification with the Wightman one-parameter group
 on a relativistic QFT is bounded_theorem grade because it inherits the
@@ -517,7 +517,7 @@ staggered-phase sign mismatch.
 ```yaml
 proposed_claim_type: positive_theorem
 proposed_claim_scope: |
-  Lattice form: from A_min + retained RP + retained spectrum condition
+  Lattice form: from A_min + retained RP + spectrum condition
   + retained cluster decomposition + retained microcausality / Lieb-
   Robinson + retained Cl(3) per-site uniqueness, the framework's
   dynamics is a single-clock codimension-1 unitary evolution: (S1) the
@@ -574,7 +574,7 @@ bare_retained_allowed: false
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
 - retained reflection-positivity:
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- retained spectrum condition:
+- spectrum condition:
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - retained cluster decomposition:
   [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)

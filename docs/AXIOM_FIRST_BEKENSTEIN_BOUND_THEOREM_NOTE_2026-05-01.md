@@ -13,7 +13,7 @@
 ## Scope
 
 This note proves, on the framework's retained discrete GR action surface
-plus retained BH 1/4 carrier composition plus retained axiom-first
+plus retained BH 1/4 carrier composition plus the axiom-first
 spectrum condition, the **Bekenstein universal bound**:
 
 ```text
@@ -32,7 +32,7 @@ and the holographic Bekenstein-Hawking entropy bounds the entropy of
 any sub-Schwarzschild matter system in the same region.
 
 After this note, the package's holographic / information-theoretic
-language can quote a branch-local Bekenstein bound theorem on the
+language can quote a source Bekenstein bound theorem on the
 framework's retained GR + BH 1/4 surface instead of treating it as a
 continuum-QFT-only result.
 
@@ -48,7 +48,7 @@ continuum-QFT-only result.
   `S_BH = A · c_cell = A / (4 G_Newton,lat)` where `c_cell = 1/4` is
   the framework's primitive coframe boundary carrier coefficient
   ([`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)).
-- **Spectrum condition.** From the retained
+- **Spectrum condition.** From the
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md), the
   reconstructed Hamiltonian on `H_phys` is bounded below
   (`H ≥ 0`), so the energy `E` of any normalizable matter state on
@@ -217,12 +217,12 @@ saturating (B1) at `2 G E = R`. ∎
 
 ## Hypothesis set used
 
-- A_min (only as inherited from upstream retained spectrum-condition
+- A_min (only as inherited from upstream spectrum-condition
   note via the spectrum-condition role in Step 2).
 - Retained framework GR action surface.
 - Retained canonical Einstein-Hilbert equivalence (smooth-limit).
 - Retained BH 1/4 carrier composition (Wald-Noether admitted).
-- Retained spectrum condition (`H ≥ 0` ⇒ `E ≥ 0`).
+- Spectrum condition (`H ≥ 0` ⇒ `E ≥ 0`).
 - Standard Schwarzschild family / asymptotic ADM mass identification
   (admitted-context, same as upstream Wald-Noether).
 - Universal second-law direction (`ΔS_total ≥ 0`); admitted at the
@@ -258,12 +258,12 @@ work; not derived in this note.
 
 ## Honest status
 
-**Branch-local theorem on retained framework GR + retained BH 1/4
-carrier + retained spectrum condition.** (B1)–(B4) are derived from:
+**Source theorem on retained framework GR + retained BH 1/4
+carrier + spectrum condition.** (B1)–(B4) are derived from:
 
 - the retained framework GR action surface;
 - the retained BH 1/4 carrier composition;
-- the retained spectrum condition (`E ≥ 0`);
+- the spectrum condition (`E ≥ 0`);
 - standard Schwarzschild geometry (admitted-context, same as upstream
   Wald-Noether);
 - the universal second-law direction (admitted-context).
@@ -276,7 +276,7 @@ boundary `2 G E = R`.
 
 ```yaml
 actual_current_surface_status: support
-conditional_surface_status: derived support theorem on retained framework GR + retained BH 1/4 carrier + retained spectrum condition
+conditional_surface_status: derived support theorem on retained framework GR + retained BH 1/4 carrier + spectrum condition
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
@@ -303,7 +303,7 @@ bare_retained_allowed: false
   [`BH_QUARTER_WALD_NOETHER_FRAMEWORK_CARRIER_THEOREM_NOTE_2026-04-29.md`](BH_QUARTER_WALD_NOETHER_FRAMEWORK_CARRIER_THEOREM_NOTE_2026-04-29.md)
 - retained primitive coframe carrier:
   [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
-- retained spectrum condition:
+- spectrum condition:
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - retained cluster decomposition (used implicitly):
   [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)

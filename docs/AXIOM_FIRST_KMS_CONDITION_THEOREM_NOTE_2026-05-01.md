@@ -24,7 +24,7 @@ and the spectrum-condition support note
 ([`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)).
 
 After this note, the package's thermal-state language can quote a
-branch-local KMS theorem on `A_min` instead of treating the
+source KMS theorem on `A_min` instead of treating the
 periodic-Euclidean ↔ thermal-state correspondence as a background
 convention. The result also opens the bridge to Hawking
 temperature, Unruh temperature, Stefan-Boltzmann, and the Generalized

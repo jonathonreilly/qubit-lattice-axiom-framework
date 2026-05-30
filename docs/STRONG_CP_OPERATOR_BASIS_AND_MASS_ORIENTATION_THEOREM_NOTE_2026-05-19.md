@@ -1,17 +1,16 @@
-# Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on a Bounded Wilson+Staggered Surface
+# Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface
 
 **Date:** 2026-05-19
-**Date of scope repair:** 2026-05-30
-**Status (source-side label):** bounded_theorem; supplied-premise action-surface support
+**Status (source-side label):** bounded_theorem
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py`](../scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py)
 **Cached output:** [`logs/runner-cache/frontier_strong_cp_operator_basis_real_2026_05_19.txt`](../logs/runner-cache/frontier_strong_cp_operator_basis_real_2026_05_19.txt)
-**Parent repair target:** the strong-CP theta-zero parent row (currently `audited_conditional`, high criticality, 124 transitive descendants; named here as parent context only, not a load-bearing dependency on this proof's chain).
+**Parent repair target:** `docs/STRONG_CP_THETA_ZERO_NOTE.md` (currently `audited_conditional`, high criticality, 124 transitive descendants; demoted to backtick — this note is the *repair candidate clearing* that parent row, so the citation is parent-context, not a load-bearing dep on this proof's chain).
 **Status authority:** independent audit lane only. The `bounded_theorem` label is a source-side claim-boundary declaration, not an audit verdict.
 
 ## §0. Honest framing — what this note adds, and what it does not
 
-The parent strong-CP theta-zero row (named here as parent context only; not a load-bearing dependency on this proof's chain) was returned `audited_conditional` because two load-bearing pieces in its retained-action-surface closure were treated as **action-class definitions** rather than **derived theorems**:
+The parent `STRONG_CP_THETA_ZERO_NOTE.md` (backticked — parent context being cleared by this note; not a load-bearing dep on this proof's chain) was returned `audited_conditional` (2026-04-28 verdict, lines 361-385) because two load-bearing pieces in its retained-action-surface closure were treated as **action-class definitions** rather than **derived theorems**:
 
 1. "No bare θ slot" / `θ_bare = 0` was taken from the action-class definition.
 2. The positive real quark-mass surface `arg det(M_u M_d) = 0` was selected by definition.
@@ -28,7 +27,7 @@ Composing those two bounded statements gives candidate support for `θ_eff = 0` 
 What this note does NOT claim:
 
 - It does **not** claim dynamical θ-selection beyond the canonical-normalization Wilson plaquette surface.
-- It does **not** claim axion-model exclusion beyond the supplied bounded surface.
+- It does **not** claim axion-model exclusion beyond the retained surface.
 - It does **not** exclude clover, multi-plaquette, or higher-trace topological discretizations outside the single-plaquette Wilson-slot surface reviewed here.
 - It does **not** promote the parent note's status; that is the audit lane's call.
 
@@ -39,7 +38,7 @@ derive the real-positive Wilson measure selector (P4/P5) or the scalar-mass
 action-class boundary from the minimal axiom surface alone. Those are explicit
 bounded premises of this source note.
 
-Downstream rows, including the strong-CP theta-zero parent row, may use this row
+Downstream rows, including `STRONG_CP_THETA_ZERO_NOTE.md`, may use this row
 only with those premises inherited:
 
 - **CP-odd slot rejection is conditional on** the canonical Wilson
@@ -61,65 +60,6 @@ not an unconditional proof that the one-qubit operator algebra on the `Z^3`
 spatial substrate forbids every CP-odd topological discretization or derives
 the scalar-mass-only action class.
 
-## §0.2. 2026-05-29 convention reconciliation (factor-of-½ bookkeeping)
-
-An audit flagged an internal factor-of-½ inconsistency between the displayed
-Lemma formulas and the runner. The single self-consistent convention now used
-identically in Lemma 2.2, Lemma 2.3, the §5 gate descriptions, and the runner
-(which is the executable ground truth) is:
-
-- Generators `T^a = λ^a/2` with `Tr(T^a T^b) = (1/2) δ^{ab}`, hence
-  `Tr((F^a_{μν} T^a)²) = (1/2) F^a_{μν} F^{μν,a}`, so the `(a^4/2)` expansion
-  prefactor already absorbs the trace-`1/2` to give
-  ```
-  Re Tr U_P = N_c − (a^4/4) F^a_{μν} F^{μν,a} + O(a^6)
-  ```
-  with **no second `1/2`**. (The earlier displayed `N_c − (a^4/4)·(1/2) F^a F^a`
-  double-counted the trace normalization and is corrected.)
-- The CP-odd slot is the pure-imaginary action term
-  `S_θ = i θ Q_lat = i θ Σ_P Im Tr U_P = (θ/2) Σ_P (Tr U_P − Tr U_P^†)`, with the
-  real topological-charge proxy `Q_lat = Σ_P (Tr U_P − Tr U_P^†)/(2i)`. The three
-  forms agree with **no spurious extra factor of `i`**; Lemma 2.3 no longer
-  switches between `(θ/2)(Tr U − Tr U^†)` and an extra-`i` form mid-proof.
-
-The runner now **asserts these coefficients explicitly** (gates V3.0a/b/c for the
-plaquette-expansion coefficient, V2.0a/b/c for the θ-term algebra), so the
-convention is executed ground truth, not prose-only bookkeeping. This
-reconciliation changes only the **displayed coefficient bookkeeping**: the two
-substantive conclusions — `θ_bare = 0` on the real-positive Wilson slot
-(Theorem 2.4) and `arg det(M_u M_d) = 0` on the scalar-mass surface
-(Theorem 3.4) — are unchanged, because they depend only on (i) any nonzero `θ`
-making the Boltzmann factor complex and (ii) the determinant phase of real vs.
-complex mass, neither of which references the kinetic-coefficient normalization.
-The source-side label remains `bounded_theorem`; the independent audit lane owns
-the verdict.
-
-## §0.3. 2026-05-30 audit scope repair
-
-The latest audit verdict was `audited_conditional`:
-
-```text
-missing_bridge_theorem: provide retained one-hop derivations or accepted
-bounded-premise records for the real-positive Wilson measure selector and
-scalar-mass-only action-class boundary, then re-audit the composition.
-```
-
-This repair does not introduce a new axiom and does not claim the current row
-derives those two action-surface boundaries from the minimal framework surface.
-Instead, it makes the honest branch-local claim explicit:
-
-- the CP-odd single-plaquette slot rejection is a theorem **conditional on** the
-  supplied canonical Wilson real-positive measure surface;
-- the mass-orientation result is a theorem **conditional on** the supplied
-  scalar-mass-only action-class boundary plus the retained staggered determinant
-  positivity input;
-- the row is support for the parent strong-CP theta-zero route, not a dependency
-  on that parent route.
-
-The stronger parent-level `theta_eff = 0` closure remains independent-audit work
-after the real-positive Wilson selector and scalar-mass action-class boundary
-receive retained one-hop authority.
-
 ---
 
 ## §1. Setting
@@ -130,7 +70,7 @@ The framework baseline and explicit bounded premises composed in this note are:
 - (A2) **Z³ spatial substrate** (axiom). Sites `x ∈ Z³` and oriented links `e = (x, μ)` for `μ ∈ {1, 2, 3}`. Lattice spacing `a > 0`.
 - (R1) **Canonical normalization β = 6** (retained on the axiom-first surface via [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) — the retained primitive for canonical-normalization rigidity. The narrower 2026-05-17 algebraic redo `G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md` is sibling-context only and is demoted to backtick here; it is not load-bearing on this proof).
 - (R2) **Staggered Dirac anti-Hermiticity / determinant positivity** from [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md), used here only for the staggered-only `D† = -D`, `det(D+mI)>0` structural input. This note does not claim the full staggered+Wilson reflection-positivity parent is retained.
-- (R3) **Real-positive measure boundary** as an explicit supplied bounded action-surface premise. The abstract norm-square ingredient is retained-bounded in [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md), but the broader reflection-positivity parent row is not cited as retained-grade authority here.
+- (R3) **Real-positive measure boundary** as an explicit bounded action-surface premise. The abstract norm-square ingredient is retained-bounded in [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md), but the full parent `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` remains unaudited and is not cited as retained-grade authority here.
 
 The SU(3) gauge group acts on each link by `U_e ∈ SU(3)` with link transformation `U_e → V_x U_e V_{x+μ}^†` for `V_x ∈ SU(3)`. The Wilson plaquette holonomy is `U_P = U_{e₁} U_{e₂} U_{e₃}^† U_{e₄}^†` for a spatial plaquette with oriented boundary links `e₁, e₂, e₃, e₄`.
 
@@ -143,7 +83,7 @@ The bounded **canonical-normalization Wilson / real-positive gauge surface** use
 - **(P1) Plaquette-locality.** The action is a sum over spatial plaquettes `P` (and time-link insertions in the 3+1 extension) of operator-local terms `f_P(U_P)`. No multi-plaquette nonlocality.
 - **(P2) Gauge invariance.** Each summand `f_P(U_P)` is invariant under `U_e → V_x U_e V_{x+μ}^†` for `V_x ∈ SU(3)`.
 - **(P3) Canonical normalization at β = 6.** The leading-order continuum-limit term reproduces the Yang-Mills `(1/(4 g²)) F^a_{μν} F^{μν,a}` kinetic term with `g² = 6 / (2 N_c) = 1` at β = 6 in the standard Wilson convention (`β = 2 N_c / g²` with `N_c = 3`).
-- **(P4) Supplied real-action surface (reflection-positive compatible).** The action `S[U]` is a real-valued functional `S : Conf(Λ) → R` whose Boltzmann weight is real-positive configuration-wise. Imaginary action-phase contributions are not admitted on the supplied reflection-positive-compatible surface.
+- **(P4) Real-action surface (reflection-positive compatible).** The action `S[U]` is a real-valued functional `S : Conf(Λ) → R` whose Boltzmann weight is real-positive configuration-wise. Imaginary action-phase contributions are not admitted on the retained reflection-positive surface.
 - **(P5) Bounded below.** The action satisfies `S[U] ≥ S_min > −∞` uniformly on `Conf(Λ)`, required for the Boltzmann factor `e^{−S}` to define a finite measure.
 
 ### Lemma 2.1 (Gauge-invariant plaquette-local operator basis on SU(3))
@@ -170,22 +110,12 @@ Tr U_P = N_c + i a² Tr(F_{μν}^a T^a) − (a^4/2) Tr((F_{μν}^a T^a)²) + O(a
         = N_c − (a^4/2) Tr((F_{μν}^a T^a)²)  [since Tr T^a = 0]
         + O(a^6).
 ```
-**Trace-normalization convention (used identically here, in Lemma 2.3, and in the runner V3).** With `Tr(T^a T^b) = (1/2) δ^{ab}` for fundamental SU(3), the quadratic trace evaluates to
-```
-Tr((F_{μν}^a T^a)²) = (1/2) F^a_{μν} F^{μν,a},
-```
-where `F^a_{μν} F^{μν,a}` denotes the raw sum over the colour index `a` (and the μν components) of the squared algebra coefficients. Substituting into the `(a^4/2)` prefactor gives
-```
-(a^4/2) · Tr((F_{μν}^a T^a)²) = (a^4/2) · (1/2) F^a_{μν} F^{μν,a} = (a^4/4) F^a_{μν} F^{μν,a},
-```
-so the trace-normalization `1/2` is already absorbed into the displayed `(a^4/4)` coefficient and must not be written a second time.
-
 Therefore:
 - **Re Tr U_P** at leading non-trivial order yields the kinetic piece
   ```
-  Re Tr U_P  =  N_c − (a^4/4) F^a_{μν} F^{μν,a}  +  O(a^6)
+  Re Tr U_P  =  N_c − (a^4/4) · (1/2) F^a_{μν} F^{μν,a}  +  O(a^6)
   ```
-  (the `1/2` from `Tr(T^a T^b) = (1/2) δ^{ab}` is already absorbed into the `(a^4/4)` coefficient as shown above), which under (P3) canonical normalization gives the YM kinetic term with `β = 2 N_c / g²` (Wilson convention). This is exactly the coefficient asserted by the runner gate V3 (`(N_c − Re Tr U_P)/(a^4/4) → F^a_{μν} F^{μν,a}`).
+  (using `Tr(T^a T^b) = (1/2) δ^{ab}` for fundamental SU(3)), which under (P3) canonical normalization gives the YM kinetic term with `β = 2 N_c / g²` (Wilson convention).
 - **Im Tr U_P** at leading order vanishes when `F_{μν}^a` is real-valued in `su(3)` (since `T^a` are Hermitian and `Tr T^a = 0`). It receives nontrivial single-plaquette contributions at order `a^6` and above:
   ```
   Im Tr U_P  =  O(a^6)
@@ -196,40 +126,42 @@ Therefore:
 
 ### Lemma 2.3 (The CP-odd single-plaquette slot violates the real-positive measure)
 
-Consider adding to the canonical Wilson action `S_W[U] = (β/N_c) Σ_P (N_c − Re Tr U_P)` a candidate CP-odd plaquette-local term. We fix the convention once and use it throughout: write the real lattice topological-charge proxy as
+Consider adding to the canonical Wilson action `S_W[U] = (β/N_c) Σ_P (N_c − Re Tr U_P)` a candidate CP-odd plaquette-local term
 ```
-Q_lat[U] := Σ_P (Tr U_P − Tr U_P^†)/(2i) = Σ_P Im Tr U_P   ∈ R
+S_θ[U] = i θ · Σ_P Im Tr U_P  ≡  (θ/2) · Σ_P (Tr U_P − Tr U_P^†)
 ```
-(`Q_lat` is real because `(z − z̄)/(2i) = Im z`). The candidate CP-odd action term is the **pure-imaginary** action contribution
-```
-S_θ[U] = i θ · Q_lat[U] = i θ · Σ_P Im Tr U_P = (θ/2) · Σ_P (Tr U_P − Tr U_P^†)
-```
-for some real coupling `θ ∈ R`. (The three forms agree: `i θ Im Tr U_P = i θ (Tr U_P − Tr U_P^†)/(2i) = (θ/2)(Tr U_P − Tr U_P^†)` — no extra factor of `i` is introduced.) The action term `S_θ` is therefore imaginary, contributing the phase `e^{−S_θ} = e^{−i θ Q_lat}` to the Boltzmann weight.
+for some real coupling `θ ∈ R`.
 
-**Claim.** For any `θ ≠ 0`, the candidate `exp(−S_W[U] − S_θ[U]) = exp(−S_W[U] − i θ Q_lat[U])` is not real-positive configuration-wise on generic SU(3) configurations.
+**Claim.** For any `θ ≠ 0`, the candidate `exp(-S_W[U] - i θ Q_lat[U])` is not real-positive configuration-wise on generic SU(3) configurations.
 
-**Proof from primitives.** By Lemma 2.1, the most general gauge-invariant plaquette-local term is `F(Tr U_P, Tr U_P^†)`. For the **action** to be real-valued (P4) on the configuration space, the term must satisfy `F(z, z̄)^* = F(z, z̄)`, i.e., `F(z, z̄) = G(z + z̄, Im z)` for `G` real on its (real-valued) two arguments. The proposed `S_θ = i θ Q_lat = i θ Im Tr U_P` is **not** of this real form: it is `i` times the real quantity `Im Tr U_P`, hence pure imaginary and not a real-action summand (for `θ ≠ 0`). Equivalently, the genuine obstruction is most transparent at the level of the **partition function**:
+**Proof from primitives.** By Lemma 2.1, the most general gauge-invariant plaquette-local term is `F(Tr U_P, Tr U_P^†)`. To be real-valued (P4) on the configuration space, the term must satisfy `F(z, z̄)^* = F(z, z̄)`, i.e., `F(z, z̄) = G(z + z̄, i(z − z̄))` for `G` real on its (real-valued) two arguments. The candidate `i θ · (z − z̄)/(2i) = θ · Im z` is a real function of `(z + z̄, Im z)`, but with the explicit factor of `i` in front, the candidate
+```
+i θ · (Tr U_P − Tr U_P^†) / 2 = i θ · i · Im Tr U_P = − θ · Im Tr U_P
+```
+is in fact **real** (because the explicit `i (z − z̄)/2 = − Im z`, which is real). So **a naive lattice "iθ × imaginary part" candidate IS real** when written carefully.
+
+We must therefore look more carefully. The genuine obstruction comes from the **partition function**:
 ```
 Z(θ) = ∫ DU exp(−S_W[U] − i θ · Q_lat[U])
 ```
-with `Q_lat[U] = Σ_P Im Tr U_P` the real lattice topological-charge proxy fixed above. The exponential's argument is `−S_W − i θ Q_lat`. The Boltzmann factor itself becomes **complex** (not real-positive) configuration-by-configuration:
+where `Q_lat[U] := Σ_P (Tr U_P − Tr U_P^†)/(2i) = Σ_P Im Tr U_P` is the lattice topological-charge proxy. The exponential's argument is now `−S_W − i θ Q_lat`. The Boltzmann factor itself becomes **complex** (not real-positive) configuration-by-configuration:
 ```
 exp(− S_W[U] − i θ Q_lat[U])  =  exp(−S_W[U]) · (cos(θ Q_lat[U]) − i sin(θ Q_lat[U])).
 ```
 
-This violates the **supplied reflection-positivity-compatible real-action surface (P4)** in the sense relevant to this bounded theorem: the supplied surface requires `e^{−S[U]} > 0` configuration-wise for the partition function to define a positive measure (this is the precondition represented by R3). The candidate `S_θ` adds a complex phase `exp(−i θ Q_lat[U])` to the Boltzmann factor, which is generically not real-positive and breaks `e^{−S} > 0`.
+This violates the **reflection-positivity-compatible real-action surface (P4)** in the stronger sense relevant to the framework: the action surface that the retained framework selects requires `e^{−S[U]} > 0` configuration-wise for the partition function to define a positive measure (this is the precondition for the retained reflection-positivity theorem (R3) to apply via the standard Osterwalder-Seiler construction). The candidate `S_θ` adds a complex phase `exp(−i θ Q_lat[U])` to the Boltzmann factor, which is generically not real-positive and breaks `e^{−S} > 0`.
 
-This is not a standalone P5 bounded-below theorem about arbitrary complex actions. The actual load-bearing statement is narrower: the supplied reflection-positive Wilson surface requires a real-positive measure, and a nonzero `i θ Q_lat[U]` phase breaks that requirement.
+This is not a standalone P5 bounded-below theorem about arbitrary complex actions. The actual load-bearing statement is narrower: the retained reflection-positive Wilson surface requires a real-positive measure, and a nonzero `i θ Q_lat[U]` phase breaks that requirement.
 
-**Combining (P4) and the (R3)-precondition:** the supplied bounded surface is real-positive and reflection-positivity compatible. Adding `i θ Q_lat[U]` to this single-plaquette Wilson slot with `θ ≠ 0` breaks that surface. Therefore the reviewed CP-odd single-plaquette slot is excluded from the supplied Wilson operator basis. QED.
+**Combining (P4) and the (R3)-precondition:** the retained framework selects the real-positive action surface compatible with the retained reflection-positivity theorem. Adding `i θ Q_lat[U]` to this single-plaquette Wilson slot with `θ ≠ 0` breaks that surface. Therefore the reviewed CP-odd single-plaquette slot is excluded from the retained operator basis. QED.
 
 ### Theorem 2.4 (Single-plaquette CP-odd Wilson-slot rejection)
 
-**Statement.** Under the supplied canonical-normalization Wilson / reflection-positive-compatible surface (P1)-(P5), the gauge-invariant CP-odd single-plaquette candidate `S_θ[U] = i θ · Σ_P Im Tr U_P` is not an admissible operator slot in the supplied Wilson plaquette-local action on the Cl(3)/Z^3 surface. Within this bounded slot family, the corresponding bare angle satisfies
+**Statement.** Under the canonical-normalization Wilson / reflection-positive surface (P1)-(P5), the gauge-invariant CP-odd single-plaquette candidate `S_θ[U] = i θ · Σ_P Im Tr U_P` is not an admissible operator slot in the retained Wilson plaquette-local action on the Cl(3)/Z³ surface. Within this bounded slot family, the corresponding bare angle satisfies
 ```
 θ_bare = 0
 ```
-on the supplied real-positive measure surface.
+on the retained real-positive measure surface.
 
 **Proof.** Lemma 2.1 reduces the reviewed single-plaquette gauge-invariant basis to functions of `Tr U_P` and `Tr U_P^†`. Lemma 2.2 identifies `Re Tr U_P` as the YM kinetic surface fixed by (P3) and `Im Tr U_P` as the CP-odd single-plaquette density tested here. Lemma 2.3 shows that adding any nonzero `θ` coupling to this slot generates a complex-phase Boltzmann factor, violating the real-positive measure required by (P4) and the reflection-positivity precondition (R3). Hence no nonzero `θ_bare` is admissible in this bounded slot family. QED.
 
@@ -244,14 +176,14 @@ The staggered Dirac operator on the Cl(3)⊗Z³ surface satisfies `D† = −D` 
 - **(M-pseudoscalar)** `M = m₅ · ε`,    `m₅ ∈ R`, `ε(x) = (−1)^{Σ x}` the sublattice generator.
 - **(M-mixed)**    `M = m · I + i m₅ · ε`,    `m, m₅ ∈ R`.
 
-We will show that under (R2) + (R3) plus the supplied scalar-mass action-class boundary, the only determinant-phase-safe scalar candidate is real. The sign `m > 0` is the repo's positive-mass convention inside that real scalar family.
+We will show that under (R2) + (R3) plus the explicit scalar-mass action-class boundary, the only determinant-phase-safe scalar candidate is real. The sign `m > 0` is the repo's positive-mass convention inside that real scalar family.
 
 ### Lemma 3.1 (Two-layered admissibility: determinant phase + scalar-mass action class)
 
-The supplied Wilson-plus-staggered action surface is specified by **two independent constraints** on the mass operator:
+The retained Wilson-plus-staggered action surface is specified by **two independent constraints** on the mass operator:
 
-- **(C-det)** The fermion determinant `det(D + M)` must be real-positive configuration-wise on the reviewed SU(3) configurations (precondition represented by R3 on the staggered surface).
-- **(C-class)** The mass operator must lie in the **supplied scalar-mass action class**: it must be a scalar (parity-even under the sublattice grading), not a pseudoscalar (parity-odd) nor a mixture. This is the action-class boundary supplied to this bounded theorem; it is not derived here from the minimal framework surface.
+- **(C-det)** The fermion determinant `det(D + M)` must be real-positive configuration-wise on retained SU(3) configurations (precondition for the retained reflection-positivity theorem R3 on the staggered surface).
+- **(C-class)** The mass operator must lie in the **scalar-mass action class**: it must be a scalar (parity-even under the sublattice grading), not a pseudoscalar (parity-odd) nor a mixture. This is the action-class specification fixed by the retained framework boundary (see parent note Leg C, lines 109-126: the retained action class is `S_W[U] + ψ̄(D[U] + m·I)ψ`, scalar-mass only).
 
 A candidate mass `M` is admissible iff it satisfies **both** (C-det) and (C-class).
 
@@ -270,16 +202,16 @@ The mass operator decomposes uniquely into scalar (I-component) and pseudoscalar
 ```
 M = M_S · I + M_P · ε,   M_S, M_P ∈ C
 ```
-(this uses `{I, ε}` as a basis of the diagonal mass-operator space on the supplied surface, with ε² = I making `{I, ε}` an orthogonal basis under the trace inner product). The supplied scalar-mass action class fixes `M_P = 0` and `M_S ∈ R_{>0}`.
+(this uses `{I, ε}` as a basis of the diagonal mass-operator space on the retained surface, with ε² = I making `{I, ε}` an orthogonal basis under the trace inner product). The retained scalar-mass action class fixes `M_P = 0` and `M_S ∈ R_{>0}`.
 
 - **(M-real)** `M = m · I`: `M_S = m ∈ R`, `M_P = 0`. **In scalar-class.** (C-class) ✓
 - **(M-complex)** `M = m e^{iα} · I`: `M_S = m e^{iα} ∈ C`, `M_P = 0`. In scalar-class only at α ∈ {0, π} where `M_S ∈ R`. (C-class) ✗ for general α.
 - **(M-pseudoscalar)** `M = m₅ · ε`: `M_S = 0`, `M_P = m₅ ≠ 0`. **Outside scalar-class.** (C-class) ✗
 - **(M-mixed)** `M = m·I + i m₅·ε`: `M_S = m`, `M_P = i m₅ ≠ 0`. **Outside scalar-class.** (C-class) ✗
 
-The (C-class) restriction is a supplied scalar-mass-only boundary, with no admissible pseudoscalar mass component. This note does not rederive scalar-mass-only from Cl(3)/Z^3 alone; it records the boundary and tests the determinant phase once that boundary is imposed.
+The (C-class) restriction is the retained action-class definition from the parent note (Leg C, lines 109-126): the retained surface is a scalar-mass-only surface, with no admissible pseudoscalar mass component. This note does not rederive scalar-mass-only from Cl(3)/Z³ alone; it records the boundary and tests the determinant phase once that boundary is imposed.
 
-Within the scalar-mass class, this lemma supplies the determinant-phase part of the repair: non-real scalar phases fail (C-det), while the real scalar line gives a real-positive determinant on the supplied staggered surface.
+Within the scalar-mass class, this lemma supplies the determinant-phase part of the repair: non-real scalar phases fail (C-det), while the real scalar line gives a real-positive determinant on the retained staggered surface.
 
 ### Lemma 3.2 (Positive-mass sign convention inside the real scalar line)
 
@@ -297,11 +229,11 @@ The factor `i^N` makes the determinant a fourth root of unity times a real numbe
 
 ### Theorem 3.4 (Quark-mass orientation theorem)
 
-**Statement.** Under (R2) staggered Dirac anti-Hermiticity + (R3) the supplied real-positive/reflection-positivity-compatible boundary (which requires `det(D + M) > 0` configuration-wise) + the supplied scalar-mass action-class specification, the determinant-phase-safe scalar mass operator is real:
+**Statement.** Under (R2) staggered Dirac anti-Hermiticity + (R3) retained reflection positivity (which requires `det(D + M) > 0` configuration-wise) + the retained-framework scalar-mass action-class specification (parent note Leg C), the determinant-phase-safe scalar mass operator is real:
 ```
 M = m · I,    m ∈ R \ {0}.
 ```
-With the repo's standard positive-mass convention this is written `m > 0`. Therefore, on the convention-aligned supplied surface:
+With the repo's standard positive-mass convention this is written `m > 0`. Therefore, on the convention-aligned retained surface:
 ```
 arg det(M_u M_d) = 0
 ```
@@ -313,7 +245,7 @@ for the up-quark and down-quark mass operators.
 
 The intersection of (C-det) and (C-class) is therefore: (M-real) at `m ∈ R \ {0}`. Lemma 3.3 then excludes the special case (M-complex, α=π/2), one representative of the non-real scalar phases. Lemma 3.2 records the positive-orientation `m > 0` as the standard Euclidean-fermion convention rather than as an additional theorem derived here.
 
-Therefore `M = m · I` on the supplied scalar-mass surface is the unique admissible zero-phase scalar orientation up to the real sign convention. With the positive-mass convention, the argument of the determinant satisfies
+Therefore `M = m · I` on the retained scalar-mass surface is the unique admissible zero-phase scalar orientation up to the real sign convention. With the positive-mass convention, the argument of the determinant satisfies
 ```
 arg det(D + m·I)  =  0  (mod 2π)
 ```
@@ -325,21 +257,21 @@ QED.
 
 ---
 
-## §4. Combined support for θ_eff = 0 on the supplied bounded surface
+## §4. Combined support for θ_eff = 0 on the bounded retained surface
 
-Composing Theorem 2.4 (`θ_bare = 0` inside the supplied single-plaquette Wilson / real-positive-measure slot family) and Theorem 3.4 (`arg det(M_u M_d) = 0` inside the supplied scalar-mass class with the positive-mass convention):
+Composing Theorem 2.4 (`θ_bare = 0` inside the single-plaquette Wilson / real-positive-measure slot family) and Theorem 3.4 (`arg det(M_u M_d) = 0` inside the retained scalar-mass class with the positive-mass convention):
 ```
 θ_eff = θ_bare + arg det(M_u M_d) = 0 + 0 = 0
 ```
-on the supplied bounded Cl(3)/Z^3 Wilson+staggered surface, with the inputs being:
+on the bounded retained Cl(3)/Z³ Wilson+staggered surface, with the inputs being:
 
 - (A1) Cl(3) local algebra,
 - (A2) Z³ spatial substrate,
 - (R1) canonical normalization β = 6,
 - (R2) staggered Dirac anti-Hermiticity (parent note Leg A),
-- (R3) supplied real-positive / reflection-positivity-compatible boundary (Case A staggered-only, or Case B symmetric-canonical Wilson).
+- (R3) retained reflection positivity (Case A staggered-only, or Case B symmetric-canonical Wilson).
 
-No repo-wide axiom is added by this note. The claim remains bounded to the named supplied action surface and does not use black-box imports of Vafa-Witten or Leutwyler-Smilga as proof inputs.
+No repo-wide axiom is added by this note. The claim remains bounded to the named retained action surface and does not use black-box imports of Vafa-Witten or Leutwyler-Smilga as proof inputs.
 
 The original parent note's closure was: 13 theorem passes + 30 retained-surface compute passes verified internal consistency of the **selected** θ-free surface. This note's contribution is narrower: it supplies bounded source-side support for the missing selection steps. Whether that is sufficient to close the parent audit boundary at parent-note lines 361-385 and 396-406 is an independent audit decision.
 
@@ -350,12 +282,12 @@ The original parent note's closure was: 13 theorem passes + 30 retained-surface 
 The companion runner [`scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py`](../scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py) exhibits the bounded construction-and-rejection at the operator-slot level rather than only evaluating a θ-free surface. Eight verification gates:
 
 - **V1 — Plaquette gauge-invariant operator enumeration.** Construct candidate scalar functionals `{Tr U_P, Tr U_P^†, Tr U_P², Tr(U_P U_P^†)}`. For each, sample `N = 20` random SU(3) plaquette configurations and verify gauge invariance under random `V ∈ SU(3)` transformations of all bounding link variables. PASS = all four candidates gauge-invariant; this verifies Lemma 2.1's framing.
-- **V2 — Real-action exclusion of imaginary-plaquette slot.** First (V2.0a/b/c) **assert the Lemma 2.3 θ-term algebra explicitly**: the `Q_lat` density `(Tr U_P − Tr U_P^†)/(2i)` is real and equals `Im Tr U_P`; the three displayed forms of the slot density agree with no spurious extra factor of `i` (`i θ · Im Tr U_P = i θ · (Tr U_P − Tr U_P^†)/(2i) = (θ/2)(Tr U_P − Tr U_P^†)`, all pure imaginary); and the spurious "extra-`i`" form `i θ · (Tr U_P − Tr U_P^†)/2 = −θ · Im Tr U_P` (real) is asserted to be a **different** quantity, guarding against the convention switch. Then build candidate `S_θ[U] = i θ · Σ_P Im Tr U_P` for `θ ∈ {0.01, 0.1, 1.0}` on small Λ, compute the Boltzmann factor `exp(−S_W − S_θ)` on `N = 10` configurations, and PASS if for `θ ≠ 0` the Boltzmann factor has nonzero imaginary part (verifying the Lemma 2.3 obstruction at the lattice level).
-- **V3 — Canonical-normalization continuum-limit check.** First (V3.0a/b/c) **assert the plaquette-expansion coefficient explicitly**: the trace normalization `Tr((F^a_{μν} T^a)²) = (1/2) F^a_{μν} F^{μν,a}` (from `Tr(T^a T^b) = (1/2) δ^{ab}`); the prefactor algebra `(a^4/2) · (1/2) = a^4/4`; and that the displayed Lemma 2.2 coefficient is `N_c − (a^4/4) F^a F^a` with **no spurious extra `1/2`** (the buggy `(a^4/4)·(1/2)` form is explicitly rejected because it would predict the wrong ratio by a factor of two). Then expand `U_P = exp(i a² F^a_{μν} T^a)` for small `a` and `random su(3)`-valued `F^a_{μν}` and verify (i) `Re Tr U_P → N_c − (a^4/4) F^a F^a + O(a^6)` matching the YM kinetic with β = 6 convention, and (ii) `Im Tr U_P` vanishes at order `a^4` (i.e., the CP-odd density first appears at `a^6` or higher). PASS = all checks hold within numerical tolerance on 5 expansion orders.
+- **V2 — Real-action exclusion of imaginary-plaquette slot.** Build candidate `S_θ[U] = i θ · Σ_P Im Tr U_P` for `θ ∈ {0.01, 0.1, 1.0}` on small Λ. Compute the Boltzmann factor `exp(−S_W − S_θ)` on `N = 20` configurations. PASS if for `θ ≠ 0`, the Boltzmann factor has nonzero imaginary part (verifying the Lemma 2.3 obstruction at the lattice level).
+- **V3 — Canonical-normalization continuum-limit check.** Expand `U_P = exp(i a² F^a_{μν} T^a)` for small `a` and `random su(3)`-valued `F^a_{μν}`. Verify (i) `Re Tr U_P → N_c − (a^4/4) F^a F^a + O(a^6)` matching the YM kinetic with β = 6 convention, and (ii) `Im Tr U_P` vanishes at order `a^4` (i.e., the CP-odd density first appears at `a^6` or higher). PASS = both checks hold within numerical tolerance on 5 expansion orders.
 - **V4 — Bounded-below check on real Wilson slot.** Compute `S_W = (β/N_c) Σ_P (N_c − Re Tr U_P)` on `N = 50` random SU(3) configurations. PASS = all `S_W ≥ 0` (verifies (P5) for the retained slot).
 - **V5 — Mass orientation: (C-det) + (C-class) split.** Build candidate masses (M-real with `m = 1.0`), (M-complex with `α = π/4`), (M-pseudoscalar with `m₅ = 1.0`), (M-mixed with `m = m₅ = 1.0`) on a small 2×2×2×2 staggered Λ with `N = 10` random SU(3) configurations. Compute `det(D + M)` and verify: (a) M-real gives real-positive det, satisfying (C-det); (b) M-complex (α=π/4) gives nonzero-phase det, failing (C-det); (c-d) M-pseudoscalar and M-mixed are characterized structurally by nonzero ε-component (`M_P ≠ 0`), failing (C-class) — verify by decomposing each into `(M_S · I + M_P · ε)`. PASS = M-real is the unique candidate satisfying both (C-det) AND (C-class).
 - **V6 — Mass orientation: reflection-positivity precondition.** Same small Λ, same configurations. For each candidate mass, check the determinant precondition for the retained RP construction: `det(D + M) > 0` real-positive. PASS = M-real passes on all; M-complex (α=π/4) fails (C-det). M-mixed empirically passes the RP determinant precondition but is excluded by (C-class), as recorded honestly.
-- **V7 — CP-odd single-plaquette slot construction + rejection.** Explicitly construct the CP-odd single-plaquette slot coupling `S_θ[U] = i θ · Q_lat[U] = i θ · Σ_P Im Tr U_P` (so the exponent `−S_θ = −i θ Q_lat[U]` enters the Boltzmann weight). Compute the Boltzmann factor `exp(−S_W − S_θ) = exp(−S_W − i θ Q_lat[U])` for `θ = 0.1` on a small Λ and `N = 5` configurations. Verify the Boltzmann factor has nonzero imaginary part for `θ ≠ 0` and zero imaginary part for `θ = 0`. PASS = rejection criterion triggers for `θ ≠ 0`, control passes for `θ = 0`.
+- **V7 — CP-odd single-plaquette slot construction + rejection.** Explicitly construct the CP-odd single-plaquette slot coupling `S_θ[U] = i θ · Σ_P Im Tr U_P` (which contributes `−i θ Q_lat[U]` to the action when written with the standard sign convention). Compute the Boltzmann factor `exp(−S_W − i θ Q_lat[U])` for `θ = 0.1` on a small Λ and `N = 5` configurations. Verify the Boltzmann factor has nonzero imaginary part for `θ ≠ 0` and zero imaginary part for `θ = 0`. PASS = rejection criterion triggers for `θ ≠ 0`, control passes for `θ = 0`.
 - **V8 — Composition with Leg A.** Sample `N = 30` SU(3) configurations on small Λ. Compute (i) `det(D + 1.0 · I)` and verify real-positive (Leg A retained behavior, parent note line 49); (ii) `det(D + 1.0 · e^{iπ/4} · I)` (M-complex at α=π/4) and verify nonzero-phase for all samples. PASS = Leg A real-positivity holds AND M-complex (α=π/4) is rejected. This composition exhibits Theorem 3.4 + Leg A on actual SU(3) configurations.
 
 Hard assertion gates, PASS/FAIL summary, target `PASS = 8, FAIL = 0`. Runtime < 5 minutes on a standard laptop using NumPy only.
@@ -367,15 +299,15 @@ Hard assertion gates, PASS/FAIL summary, target `PASS = 8, FAIL = 0`. Runtime < 
 This note does NOT claim:
 
 - **Dynamical θ-selection beyond canonical-normalization.** The CP-odd slot rejection uses (P1)-(P5) plus (R3); if any of those constraints is relaxed, the analysis must be redone.
-- **Axion-model exclusion beyond the supplied surface.** Whether continuum axion fields with explicit `(a/f_a) F̃F` couplings can be constructed in other formulations is a separate question.
+- **Axion-model exclusion beyond the retained surface.** Whether continuum axion fields with explicit `(a/f_a) F̃F` couplings can be constructed in other formulations is a separate question.
 - **Higher-order or multi-plaquette topological slots.** Clover, rectangle, extended-trace, or other multi-plaquette discretizations are outside this note. Their physics is not analyzed here.
 - **A first-principles derivation of the positive mass sign.** The determinant-phase result selects the real scalar line; the sign `m > 0` is the repo's positive-mass convention.
 - **Promotion of the parent note's status.** This note supplies bounded source-side support for the derivations the audit verdict requested; whether the parent note's effective status changes is the audit lane's call.
 
 What this note DOES claim:
 
-- The reviewed single-plaquette CP-odd Wilson slot is rejected by the supplied real-positive measure / reflection-positive-compatible surface.
-- Non-real scalar mass phases are rejected by the determinant phase condition; pseudoscalar and mixed masses are outside the supplied scalar-mass action class.
+- The reviewed single-plaquette CP-odd Wilson slot is rejected by the retained real-positive measure / reflection-positive surface.
+- Non-real scalar mass phases are rejected by the determinant phase condition; pseudoscalar and mixed masses are outside the retained scalar-mass action class.
 - The runner exhibits these bounded constructions and rejections on sampled SU(3) configurations.
 
 ### Review-loop no-go discipline gate
@@ -384,7 +316,7 @@ The broad claim "the physical Cl(3)/Z³ action forbids every `F̃F` term" fails 
 
 - **N1 alternative routes:** clover topological density, multi-plaquette improved density, extended-trace CP-odd density, axion-coupled continuum embedding, and non-reflection-positive complex-action formulation are not closed here.
 - **N2 wall independence:** the single-plaquette wall, real-positive-measure wall, scalar-mass-class wall, and positive-mass sign convention are independent and not collapsed into one derived theorem.
-- **N3 hidden-wall scan:** "canonical", "real-positive", and "scalar-mass" are treated as supplied surface boundaries unless separately cited; "positive mass" is explicitly conventional.
+- **N3 hidden-wall scan:** "canonical", "retained", and "scalar-mass" are treated as retained-surface boundaries; "positive mass" is explicitly conventional.
 - **N4 residual matching:** the parent residual asks for no admissible `F̃F` term and positive real mass orientation; this note only partially matches that residual.
 - **N5 rhetoric audit:** all "F̃F" wording is restricted to a CP-odd single-plaquette Wilson-slot proxy.
 - **N6 partial-closure path:** this is a bounded source repair, not a new axiom or retained-status promotion.
@@ -395,7 +327,7 @@ The broad claim "the physical Cl(3)/Z³ action forbids every `F̃F` term" fails 
 
 ## §7. Composition upstream
 
-If the independent audit retains this bounded repair and later determines that it closes the parent dependency, downstream rows that currently depend on the parent strong-CP theta-zero row's conditional status can revisit their dependencies. In particular:
+If the independent audit retains this bounded repair and later determines that it closes the parent dependency, downstream rows that currently depend on the parent `STRONG_CP_THETA_ZERO_NOTE.md`'s conditional status can revisit their dependencies. In particular:
 
 - The staggered+Wilson `T_full` extension in PR #1577's salvage commit `8369973af` cites Leg A `det(D[U] + m I) > 0` as a conditional input; promoting the parent note to retained-grade would lift that conditional.
 - The CKM neutron-EDM corollary (parent note §"Relation to CKM CP Violation") would inherit the parent note only if the audit lane accepts this repair as sufficient.
@@ -426,7 +358,7 @@ explicit bounded premises that this note composes:
 - (A2) Z³ spatial substrate — repository axiom.
 - (R1) Canonical normalization β = 6: [`docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) (retained primitive — load-bearing one-hop authority). Sibling `G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md` (backticked, sibling/context).
 - (R2) Staggered Dirac anti-Hermiticity / determinant positivity: [`docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md).
-- (R3) Real-positive measure boundary: explicit supplied bounded premise, with the abstract norm-square support in [`docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md). The broader reflection-positivity parent row is not treated as retained-grade authority here.
+- (R3) Real-positive measure boundary: explicit bounded premise, with the abstract norm-square support in [`docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md). Full parent `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` is not treated as retained-grade authority here.
 
 **No external citations** (Vafa-Witten, Leutwyler-Smilga, Osterwalder-Schrader, etc.) are used as proof inputs. The arguments above are bounded compositions of the listed retained primitives and retained action-surface constraints. External literature may be cited in downstream / paper-level write-ups but is not load-bearing here.
 
@@ -434,5 +366,5 @@ explicit bounded premises that this note composes:
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- The strong-CP theta-zero parent row is parent context only; this note is the repair candidate clearing that route, not a load-bearing dependency on it.
-- The broader reflection-positivity parent row is not cited as retained-grade authority; only the retained narrow half-Cauchy-Schwarz support row is used.
+- `STRONG_CP_THETA_ZERO_NOTE.md` (effective_status: audited_conditional — demoted to backtick per dep-hygiene rule; this is the parent row this note is the repair candidate clearing, not a load-bearing dep)
+- `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` (effective_status: audited_failed — demoted to backtick per dep-hygiene rule; cited only as parent context for the retained narrow `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`)

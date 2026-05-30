@@ -1097,6 +1097,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | G | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5972,6 +5973,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For arbitrary abstract finite-dimensional operators and data `(S, eta, K)`, defining `z_(p,q)=<chi_(p,q),S^(L_perp-1) eta>`, `rho=z/z_(0,0)`, `v=sum z chi`, and `Z(W)=<K(W),v>` makes the stated coefficient and evaluation relations follow by elementary linear algebra.  _(class `A`)_
 - **chain closes:** True — The narrowed in-scope claim closes because the displayed relations are definitions and immediate linear-algebra consequences of the abstract hypotheses. The physical beta=6 identification remains explicitly out of scope and is not used to close the audited claim.
 - **rationale:** After the 2026-05-28 narrowing, the load-bearing claim is only a formal if-premises-then-algebra lemma over arbitrary finite-dimensional `(S, eta, K)`. That claim is class A and does not require the four Wilson/Haar bridge authorities, which the note explicitly excludes from scope. The runner contains five theorem-style algebraic/finite structural checks and five cross-note support-string checks; it does not derive the physical Wilson/Haar identities, but the narrowed formal claim does not depend on those identities.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the formal scalar-insufficiency claim that one fixed plaquette scalar, treated as one scalar constraint on a retained positive class-sector vector, is not enough to recover v_6, rho_(p,q)(6), or the full compressed boundary function.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Fixing one scalar value L(v)=c does not determine a unique positive normalized class-sector vector v; distinct vectors can share that scalar while differing on other statistics and hence on boundary data.  _(class `A`)_
+- **chain closes:** False — The algebraic underdetermination point closes only as a formal finite-dimensional statement. The beta=6 PF-lane conclusion still imports an open physical bridge: the cited evaluation-seam authority explicitly scopes K_6^env, B_6(W), and compressed rim evaluation as formal/conditional pending unsupplied Wilson/Haar authorities, and the plaquette note does not certify the canonical P(6) readout.
+- **rationale:** The load-bearing step is an algebraic scalar-underdetermination argument, and the runner supports finite retained-sector sampling/inversion rather than a first-principles beta=6 physics closure. That is enough for a bounded formal warning that one scalar sample is insufficient to recover an N-dimensional retained coefficient vector. It is not enough for the broader beta=6 PF-seam claim because the main cited seam-reduction authority explicitly leaves the Wilson/Haar kernel, rim-lift, compression, and compressed evaluation identifications out of scope. Clean retention would therefore over-propagate a formal lemma through open physical identifications.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_bridge_support_note`

@@ -9161,12 +9161,12 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 3,
+        "C": 12,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/gauge_vacuum_plaquette_scalar_underdetermination_formal.py"
+      "runner": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py"
     },
     "gauge_vacuum_plaquette_bridge_support_note": {
       "assert_count": 1,
@@ -39943,6 +39943,7 @@
     "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py": {
       "assert_count": 1,
       "claims": [
+        "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
         "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
         "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
         "gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17"
@@ -53272,21 +53273,6 @@
         "A": 0,
         "B": 0,
         "C": 10,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true
-    },
-    "scripts/gauge_vacuum_plaquette_scalar_underdetermination_formal.py": {
-      "assert_count": 1,
-      "claims": [
-        "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,

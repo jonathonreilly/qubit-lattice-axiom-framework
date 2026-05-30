@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 249,
-    "high": 299,
+    "high": 298,
     "leaf": 353,
     "medium": 312
   },
@@ -7153,28 +7153,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "broad_gravity_derivation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.858,
-      "note_path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/broad_gravity_signature_algebra_scope_check.py",
-      "transitive_descendants": 57
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16714,6 +16692,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "broad_gravity_derivation_note",
+        "gravity_clean_derivation_note",
+        "minimal_axioms_2026-04-11"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_atomic_hydrogen_lattice_companion.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -23381,32 +23385,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "broad_gravity_derivation_note",
-        "gravity_clean_derivation_note",
-        "minimal_axioms_2026-04-11"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_atomic_hydrogen_lattice_companion.py",
       "transitive_descendants": 17
     },
     {
@@ -36578,5 +36556,5 @@
     }
   ],
   "ready_count": 72,
-  "total_pending": 1213
+  "total_pending": 1212
 }

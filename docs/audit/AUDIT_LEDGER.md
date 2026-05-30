@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 169 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 613 |
+| **retained_bounded** | 614 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1211 |
+| unaudited | 1210 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 948 |
+| `audited_clean` | 949 |
 | `audited_conditional` | 16 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1449 |
+| `unaudited` | 1448 |
 
 | claim_type | count |
 |---|---:|
@@ -196,6 +196,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bound_state_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -2221,6 +2222,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The one-hop dependencies are now retained-grade and support the bounded 2-body branch-entanglement interpretation and corrected 3-body W-type interpretation. The current source note and runner output close the scoped robustness claim without relying on full BMV witness status or an external comparator.
 - **rationale:** The clean verdict applies only to the bounded numerical protocol theorem stated in the note. The load-bearing runner output gives positive 2-body delta_S across all audited sweeps and confirms the corrected 3-body W-type, non-GHZ interpretation with tau_3 = 0 and positive bipartite entropies. The prior dependency block is resolved because both cited one-hop dependencies now have retained-grade status. Plot generation failed due to missing matplotlib, but that does not affect the load-bearing numerical checks.
 - **auditor confidence:** medium
+
+### `broad_gravity_derivation_note`
+
+- **Note:** [`BROAD_GRAVITY_DERIVATION_NOTE.md`](../../docs/BROAD_GRAVITY_DERIVATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic k-cancellation for stationary paths and phase-rate ratios from the supplied weak-field action/readout, with no physical gravity bridge audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-234250-c70145c5-broad_gravity_derivation`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given S = k F(path, phi), the variational equation delta S = k delta F = 0 is equivalent to delta F = 0 for k != 0, and the supplied omega = k(1 - phi) gives the displayed phase-rate ratio by cancelling k.  _(class `A`)_
+- **chain closes:** True — The scoped claim closes as elementary algebra once the action S = k L(1 - phi) and phase-rate readout omega = k(1 - phi) are supplied. It does not derive or claim the physical weak-field action, source readout, continuum bridge, WEP, or gravitational time dilation.
+- **rationale:** The load-bearing step is class A algebra on explicitly supplied inputs: k factors out of the stationary equation for k != 0, and cancels in the phase-rate ratio. The runner source performs symbolic checks for those cancellations and textual scope checks excluding the earlier physical overclaims. The audited scope is bounded and conditional, so no unsupported gravitational response, source, or null-geodesic bridge is being certified.
+- **auditor confidence:** high
 
 ### `broad_surrogate_point_source_compare_note`
 

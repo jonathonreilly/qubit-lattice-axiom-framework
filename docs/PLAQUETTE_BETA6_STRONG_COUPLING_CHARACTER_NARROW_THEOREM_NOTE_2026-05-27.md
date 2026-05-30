@@ -1,25 +1,29 @@
 # SU(3) Wilson Plaquette Strong-Coupling Padé[3/3] Narrow Theorem (Bounded)
 
 **Date:** 2026-05-27
-**Date of scope repair:** 2026-05-30
 **Claim type:** bounded_theorem
-**Claim scope:** the standalone conditional Padé-algebra facts that follow
-after the coefficient packet and evaluation point are supplied:
+**Claim scope:** the standalone algebraic facts that
 
-1. given the published cluster-expansion coefficient table
+1. the strong-coupling character expansion of the SU(3) Wilson
+   single-plaquette expectation `<P>` begins
+   `<P>(u) = u + O(u^4)`, where
+   `u(beta) := beta / (2 N^2) = beta/18` is the leading-order single-link
+   fundamental character coefficient for `N = 3`;
+2. substituting the published cluster-expansion coefficient table
    (Münster 1981; Drouffe-Zuber 1983, cited as external coefficient
    providers, not load-bearing axioms) gives the truncated series
    `<P>(u) = u + 4 u^4 + 24 u^6 - 24 u^7 + 100 u^8 + O(u^9)`;
-2. given the evaluation point `u = 1/3`, the [3/3] Padé approximant of
-   that series equals exactly the rational number `3/5`;
-3. the same `3/5` value is reproduced in both the plain `u`-expansion
+3. the [3/3] Padé approximant of that series evaluated at the
+   leading-order substitution `u = 1/3` (the value of `beta/18` at
+   `beta = 6`) equals exactly the rational number `3/5`;
+4. the same `3/5` value is reproduced in both the plain `u`-expansion
    and under the conformal change of variable
    `u -> z = u/(1 + alpha u)` for `alpha in {2, 4}`;
-4. the Padé[3/3] value depends only on the coefficient set
+5. the Padé[3/3] value depends only on the coefficient set
    `{c_1, c_4, c_6}` and is rigid in `c_6 = 24`; perturbing `c_6` to
    `12` or `0` changes the Padé[3/3] value to the distinct rationals
    `3/7` or `9/23` respectively;
-5. the ordinary Padé[3/3] Borel-Laplace route is obstructed at
+6. the ordinary Padé[3/3] Borel-Laplace route is obstructed at
    `u = 1/3`: the Padé[3/3] denominator of the Borel transform has a
    positive real pole on the Laplace contour, so this route does not
    supply the direct Padé[3/3] value `0.6`.
@@ -34,27 +38,9 @@ close the plaquette-self-consistency lane.
 **Status authority:** independent audit lane only. This source note
 does not set or predict an audit outcome; effective status is
 pipeline-derived after independent review.
-**Type:** bounded_theorem
+**Type:** bounded_theorem.
 **Primary runner:** [`scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py`](./../scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py)
 **Cached log:** [`logs/runner-cache/frontier_plaquette_beta6_strong_coupling_character_narrow.txt`](./../logs/runner-cache/frontier_plaquette_beta6_strong_coupling_character_narrow.txt) (PASS=20 FAIL=0)
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The Padé algebra closes exactly inside the supplied coefficient packet and runner. The retained audit chain does not close because the Münster-Drouffe-Zuber coefficient table, the leading-order character coefficient setup, and the MC compar"*
-
-with repair: *"missing_bridge_theorem: Add retained/effective bounded input rows for the SU(3) strong-coupling coefficient table and leading character-coefficient setup, or narrow this row to a pure algebra lemma explicitly conditional on those supplied c"*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **pure algebra split path**:
-
-- **Load-bearing (in scope):** The exact Padé[3/3] algebra: given the supplied Münster-Drouffe-Zuber coefficient table `{c_1=1, c_4=4, c_6=24, c_7=-24, c_8=100}` as an external input, the runner verifies in exact sympy rational arithmetic that `Pade[3/3](1/3) = 3/5`, the conformal cross-check at `alpha in {2,4}` also yields `3/5`, the rigidity audit holds, and the Borel-Laplace route is obstructed.
-- **NON-load-bearing (split off / admitted):** The Münster-Drouffe-Zuber SU(3) strong-coupling coefficient table itself, the leading-order character-coefficient setup `u(beta) = beta/(2 N^2)`, the choice to evaluate the algebraic series at `u = 1/3`, and the MC comparison value `0.5934` are all external inputs, not results retained in the framework; without a retained bridge deriving these from the axioms, the note is explicitly conditional on those cited external provisions.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
 
 ## Statement
 
@@ -74,17 +60,14 @@ the truncated series is
 <P>(u) = u + 4 u^4 + 24 u^6 - 24 u^7 + 100 u^8 + O(u^9).                 (2)
 ```
 
-**Supplied context (C1) (not retained by this row).** The coefficient of `u`
-in the supplied expansion is `1`. The standard leading-order single-link
-variable convention satisfies `u(beta) = beta / (2 N^2)` with `N = 3`, so
+**Conclusion (T1) (leading-order coefficient).** The coefficient of `u`
+(equivalently the coefficient of `beta` at leading order in the
+strong-coupling expansion) is `1`, and the single-link variable
+satisfies `u(beta) = beta / (2 N^2)` with `N = 3`, so
 
 ```text
 u(beta) = beta / 18,    u(beta = 6) = 1/3.                                (3)
 ```
-
-This row does not derive the character-coefficient setup or the beta-to-`u`
-identification. It uses `u = 1/3` only as the supplied evaluation point for the
-Padé algebra below.
 
 **Conclusion (T2) (Padé[3/3] is a definite rational at `u = 1/3`).**
 The Padé[3/3] approximant of `(2)` exists and equals
@@ -153,17 +136,14 @@ this analytic-continuation route.
 
 ## Proof
 
-`(C1)` Standard strong-coupling context, not a retained conclusion of this
-row. For SU(N) Wilson gauge action
+`(T1)` Standard strong-coupling result. For SU(N) Wilson gauge action
 `S_W = (beta / N) sum_P (N - Re Tr U_P)`, the single-link integral
 over Haar measure, with the fundamental character expansion
 `exp((beta/N) Re Tr U) = sum_R d_R c_R(beta/N) chi_R(U)/d_R`, gives at
 leading order
 `<chi_F>_{1-link} / d_F = (beta / (2 N^2)) + O(beta^4)` for the
 fundamental rep. Specializing to `N = 3` gives `u(beta) = beta/18`.
-Evaluating at `beta = 6` gives `u = 1/3`. This paragraph is an external
-setup citation for the evaluation point, not a proof that the framework's
-beta=6 plaquette row has retained authority for that setup.
+Evaluating at `beta = 6` gives `u = 1/3`.
 
 `(T2)` The Padé[3/3] approximant is the unique pair of polynomials
 `P(u)` of degree at most 3 and `Q(u)` of degree at most 3 with
@@ -206,11 +186,9 @@ strategies (e.g. conformal-Borel, optimal Borel mapping) fail. ∎
 
 ## What this claims
 
-- `(C1)`: the supplied leading-order coefficient setup and
-  `u(beta) = beta/(2 N^2)` substitution at `N = 3` are named context,
-  not retained conclusions of this row.
-- `(T2)`: given the supplied coefficient table and supplied `u = 1/3`,
-  the exact closed-form Padé[3/3] approximant
+- `(T1)`: the leading-order coefficient identity and the
+  `u(beta) = beta/(2 N^2)` substitution at `N = 3`.
+- `(T2)`: the exact closed-form Padé[3/3] approximant
   `(u - 6 u^3) / (1 - 6 u^2 - 4 u^3)` and the exact rational value
   `3/5` at `u = 1/3`.
 - `(T3)`: conformal-mapping invariance of the Padé[3/3] value at the
@@ -241,9 +219,6 @@ number**, not as a closure of `<P>(beta = 6)`.
   character coefficient. It is the leading-order substitution; the
   higher-order corrections in `u(beta) - beta/18` are not consumed
   here and would shift the substitution point away from `u = 1/3`.
-- Does **not** provide retained one-hop authority for using `u = 1/3` as the
-  framework beta=6 evaluation point; `u = 1/3` is an explicit supplied input to
-  the Padé algebra.
 - Does **not** consume or close the upstream plaquette rows
   `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`,
   `GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md`,

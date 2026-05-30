@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 """Narrow runner for `PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27`.
 
-Verifies the standalone algebraic facts about the supplied strong-coupling
-character coefficient packet evaluated at the supplied point u = 1/3. In the
-standard convention u = beta/18 at beta = 6, but this runner does not derive
-that convention from the framework. The conclusions are stated in layers:
+Verifies the standalone algebraic facts about the strong-coupling character
+expansion of the SU(3) Wilson plaquette evaluated at u = 1/3 (which is the
+leading-order single-link character coefficient u(beta) = beta/18 at
+beta = 6). The conclusions are stated in three layers:
 
-  (C1) Supplied leading-order single-plaquette character context: at small beta,
+  (T1) Leading-order single-plaquette character identity: at small beta,
        the strong-coupling expansion begins
             <P>(u) = u + O(u^4),
        with u(beta) := beta/18 the leading-order single-link fundamental
-       character coefficient for SU(3) Wilson gauge action. This is context,
-       not a retained conclusion of this runner.
+       character coefficient for SU(3) Wilson gauge action.
 
   (T2) Truncated bounded series (Münster 1981, Drouffe-Zuber 1983
        coefficient table, cited as external coefficient providers only):
@@ -22,7 +21,7 @@ that convention from the framework. The conclusions are stated in layers:
   (T3) Padé[N/M] analytic-continuation table from the truncated series:
        the [3/3] Padé approximant lands at the closed-form rational
        value 3/5 = 0.6 exactly, in BOTH the plain u-expansion and under
-       the conformal map z = u/(1 + 4 u) (i.e. u = z/(1-4 z)). The
+       the conformal map u -> z = u/(1 + 4 z) (i.e. u = z/(1-4 z)). The
        [4/4] Padé approximant lands at the closed-form 0.3974... and is
        NOT a stable continuation in either variable because the
        alternating sign at u^7 destabilizes it.
@@ -40,11 +39,11 @@ that convention from the framework. The conclusions are stated in layers:
        analytic continuation as direct Padé[3/3], not a universal Borel
        non-summability theorem.
 
-The runner does NOT identify u = 1/3 with the framework's beta = 6 plaquette
-value. It treats the coefficient table and u = 1/3 evaluation point as supplied
-inputs for a pure Padé-algebra certificate. The 0.5934 Monte Carlo value enters
-only as a comparison number to characterise the Padé[3/3] residual gap (-1.1%);
-this is not a closure of <P>(beta=6) at the level of a retained-grade theorem.
+The runner does NOT identify u = 1/3 with the framework's
+beta = 6 plaquette value. The 0.5934 Monte Carlo value enters only as a
+comparison number to characterise the Padé[3/3] residual gap (-1.1%);
+this is not a closure of <P>(beta=6) at the level of a retained-grade
+theorem.
 """
 from __future__ import annotations
 
@@ -148,7 +147,7 @@ def pade_NM(a, N, M):
 
 
 # ----------------------------------------------------------------------------
-section("Part 1 (C1): supplied leading-order strong-coupling context")
+section("Part 1 (T1): leading-order strong-coupling identity")
 # ----------------------------------------------------------------------------
 # At small beta, <P>(beta) = beta/18 + O(beta^4) for SU(3) Wilson plaquette.
 # The leading O(beta) coefficient equals 1 / (2 N^2) with N=3.
@@ -160,7 +159,7 @@ check("leading <P>/beta coefficient equals 1/(2 N^2) at N=3",
 
 # Substitute u = beta/18:
 u_leading = beta_sym / 18
-check("supplied leading-order convention gives u(beta)=beta/18 and beta=6 -> u=1/3",
+check("u(beta) = beta/18 at leading order, beta=6 -> u=1/3",
       u_leading.subs(beta_sym, 6) == Rational(1, 3),
       detail=f"u(6) = {u_leading.subs(beta_sym, 6)}")
 

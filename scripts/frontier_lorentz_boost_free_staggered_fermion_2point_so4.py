@@ -95,7 +95,7 @@ CONVENTIONS verified against the repo:
     STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE
     _2026-05-17.md.
 
-This runner verifies the theorem with >= 30 PASS checks across 7 parts.
+This runner verifies the theorem with >= 30 PASS checks across 8 parts.
 Self-contained: numpy + scipy.special (+ optional sympy).
 """
 from __future__ import annotations
@@ -187,6 +187,98 @@ def Delta_lat(p_vec, a, m):
     return m * m + np.sum(np.sin(p * a) ** 2) / (a * a)
 
 
+# =============================================================================
+# Canonical free staggered action -> reduced-BZ spin/taste bridge
+# =============================================================================
+
+def bits_from_index(i, d=4):
+    return tuple((i >> mu) & 1 for mu in range(d))
+
+
+def index_from_bits(bits):
+    out = 0
+    for mu, bit in enumerate(bits):
+        out |= (int(bit) & 1) << mu
+    return out
+
+
+BITS4 = [bits_from_index(i) for i in range(16)]
+
+
+def eta_phase(mu, bits):
+    """Framework canonical staggered phase eta_mu(b)=(-1)^{sum_{nu<mu} b_nu}."""
+    return -1.0 if (sum(bits[:mu]) % 2) else 1.0
+
+
+def alpha_matrices():
+    """The 16x16 hypercube flip matrices induced by the canonical eta phases."""
+    alphas = []
+    for mu in range(4):
+        A = np.zeros((16, 16), dtype=complex)
+        for col, bits in enumerate(BITS4):
+            flipped = list(bits)
+            flipped[mu] ^= 1
+            row = index_from_bits(flipped)
+            A[row, col] = eta_phase(mu, bits)
+        alphas.append(A)
+    return alphas
+
+
+ALPHAS = alpha_matrices()
+
+
+def blocked_direction_matrix(mu, p_mu, a):
+    """One-direction blocked free staggered difference before rephasing.
+
+    Sites are n = 2y + b with b in {0,1}^4 and coarse momentum K_mu = 2 p_mu a.
+    The forward/backward hop across a hypercube boundary contributes the
+    corresponding exp(+/- i K_mu) factor.
+    """
+    K = 2.0 * p_mu * a
+    M = np.zeros((16, 16), dtype=complex)
+    for row, bits in enumerate(BITS4):
+        flipped = list(bits)
+        flipped[mu] ^= 1
+        col = index_from_bits(flipped)
+        eta = eta_phase(mu, bits)
+        if bits[mu] == 0:
+            coeff = eta * (1.0 - np.exp(-1j * K)) / (2.0 * a)
+        else:
+            coeff = eta * (np.exp(1j * K) - 1.0) / (2.0 * a)
+        M[row, col] = coeff
+    return M
+
+
+def blocking_phase(p_vec, a):
+    """Momentum-local phase chi_b(p)=exp(i a p.b) zeta_b(p)."""
+    p = np.asarray(p_vec, dtype=float)
+    phases = [np.exp(1j * a * np.dot(p, np.asarray(bits, dtype=float))) for bits in BITS4]
+    return np.diag(phases)
+
+
+def generated_clifford_rank(mats):
+    basis = []
+    I = np.eye(mats[0].shape[0], dtype=complex)
+    for mask in range(1 << len(mats)):
+        M = I.copy()
+        for mu, A in enumerate(mats):
+            if mask & (1 << mu):
+                M = M @ A
+        basis.append(M.reshape(-1))
+    svals = np.linalg.svd(np.stack(basis, axis=1), compute_uv=False)
+    return int(np.sum(svals > 1e-10))
+
+
+def commutant_dimension(mats):
+    n = mats[0].shape[0]
+    I = np.eye(n, dtype=complex)
+    blocks = [np.kron(A.T, I) - np.kron(I, A) for A in mats]
+    system = np.vstack(blocks)
+    svals = np.linalg.svd(system, compute_uv=False)
+    rank = int(np.sum(svals > 1e-10))
+    return n * n - rank
+
+
 # --- SO(4) rotations -------------------------------------------------------
 
 def so4_rotation(plane, theta):
@@ -224,6 +316,96 @@ def rotation_from_spin(S):
         for nu in range(4):
             A[nu, mu] = np.real(0.25 * np.trace(GAMMAS[nu] @ Sg))
     return A
+
+
+# =============================================================================
+# Part 0: derive the displayed reduced-BZ spin/taste operator from the canonical
+#         free staggered action and phases
+# =============================================================================
+
+def test_part0_canonical_staggered_to_spin_taste():
+    print("\n=== Part 0: canonical staggered phases -> reduced-BZ spin/taste operator ===\n")
+
+    # 0.1 The eta-weighted hypercube flips are Hermitian Clifford generators.
+    max_herm = 0.0
+    max_square = 0.0
+    max_anticomm = 0.0
+    for mu, A in enumerate(ALPHAS):
+        max_herm = max(max_herm, np.max(np.abs(A - A.conj().T)))
+        max_square = max(max_square, np.max(np.abs(A @ A - np.eye(16))))
+        for nu, B in enumerate(ALPHAS):
+            anti = A @ B + B @ A
+            target = 2.0 * np.eye(16) if mu == nu else np.zeros((16, 16))
+            max_anticomm = max(max_anticomm, np.max(np.abs(anti - target)))
+    check("Canonical eta flip matrices alpha_mu obey Cl(4): {alpha_mu,alpha_nu}=2delta",
+          max_herm < 1e-13 and max_square < 1e-13 and max_anticomm < 1e-13,
+          f"herm={max_herm:.1e}, square={max_square:.1e}, anti={max_anticomm:.1e}")
+
+    # 0.2 Blocking n=2y+b gives boundary exp(+/-2ipa) phases. The local
+    #     rephasing chi_b(p)=exp(i a p.b) zeta_b(p) removes them and leaves the
+    #     exact reduced-BZ factor i sin(p_mu a)/a multiplying alpha_mu.
+    rng = np.random.default_rng(101)
+    max_bridge = 0.0
+    a = 0.37
+    for _ in range(25):
+        p = rng.uniform(-1.4, 1.4, 4)
+        P = blocking_phase(p, a)
+        Pinv = P.conj().T
+        for mu in range(4):
+            raw = blocked_direction_matrix(mu, p[mu], a)
+            reduced = Pinv @ raw @ P
+            expected = 1j * np.sin(p[mu] * a) / a * ALPHAS[mu]
+            max_bridge = max(max_bridge, np.max(np.abs(reduced - expected)))
+    check("Blocked free staggered difference reduces exactly to i sin(p_mu a)/a * alpha_mu",
+          max_bridge < 1e-12,
+          f"max residual after exp(iap.b) rephasing = {max_bridge:.1e}")
+
+    # 0.3 Summing all four directions plus mass gives the displayed free
+    #     reduced-BZ operator before choosing a particular spin/taste basis.
+    p = np.array([0.31, -0.27, 0.19, 0.42])
+    m = 0.8
+    P = blocking_phase(p, a)
+    raw_sum = m * np.eye(16, dtype=complex)
+    for mu in range(4):
+        raw_sum += blocked_direction_matrix(mu, p[mu], a)
+    reduced_sum = P.conj().T @ raw_sum @ P
+    s = np.sin(p * a) / a
+    expected_sum = m * np.eye(16, dtype=complex) + 1j * sum(s[mu] * ALPHAS[mu] for mu in range(4))
+    sum_resid = np.max(np.abs(reduced_sum - expected_sum))
+    check("Full blocked action is m I_16 + i sum_mu alpha_mu sin(p_mu a)/a",
+          sum_resid < 1e-12, f"max full-operator residual = {sum_resid:.1e}")
+
+    # 0.4 The generated algebra is Cl_4(C) ~= M_4(C), repeated with a
+    #     4-dimensional commutant. This is the finite taste spectator identity:
+    #     in a spin/taste basis alpha_mu = gamma_mu tensor 1_taste.
+    alg_rank = generated_clifford_rank(ALPHAS)
+    comm_dim = commutant_dimension(ALPHAS)
+    check("Alpha_mu generate a 16-dim Cl_4 algebra with 16-dim commutant (taste M_4)",
+          alg_rank == 16 and comm_dim == 16,
+          f"generated rank={alg_rank}, commutant dim={comm_dim}")
+
+    # 0.5 The 16x16 blocked operator has the Dirac spectrum with fourfold taste
+    #     degeneracy: eigenvalues m +/- i|s| with multiplicities 8 and 8
+    #     (versus 2 and 2 for a single 4-spinor block).
+    norm_s = float(np.sqrt(np.sum(s * s)))
+    eig = np.linalg.eigvals(expected_sum)
+    plus = np.sum(np.abs(eig - (m + 1j * norm_s)) < 1e-10)
+    minus = np.sum(np.abs(eig - (m - 1j * norm_s)) < 1e-10)
+    check("Taste spectator degeneracy: blocked spectrum is four copies of the 4-spinor block",
+          plus == 8 and minus == 8,
+          f"mult(m+i|s|)={plus}, mult(m-i|s|)={minus}, |s|={norm_s:.6f}")
+
+    # 0.6 The same Clifford identity gives the 16x16 inverse with the same scalar
+    #     denominator Delta(p), so the 4x4 D_tilde used below is not an extra
+    #     premise: it is one irreducible spin block of this derived operator.
+    D16 = expected_sum
+    G16_closed = (m * np.eye(16, dtype=complex)
+                  - 1j * sum(s[mu] * ALPHAS[mu] for mu in range(4))) / (m * m + np.sum(s * s))
+    inv_resid = np.max(np.abs(D16 @ G16_closed - np.eye(16)))
+    check("Derived 16x16 operator has closed inverse with Delta=m^2+sum sin^2/a^2",
+          inv_resid < 1e-12, f"max|D16 G16 - I| = {inv_resid:.1e}")
+
+    return True
 
 
 # =============================================================================
@@ -840,6 +1022,7 @@ def main():
     print("         leading lattice correction = dim-6 ell=4 cubic harmonic, O(a^2).")
     print()
 
+    test_part0_canonical_staggered_to_spin_taste()
     test_part1_algebra()
     test_part1a_finite_a_spectrum_taste_multiplicity()
     test_part2_continuum_limit()

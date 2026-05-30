@@ -3,9 +3,10 @@
 3+1D SO(3,1) Boost Covariance of the Path-Sum 2-Point Function
 ================================================================
 
-STATUS: retained exact theorem on the continuum-limit free-scalar
-        Hamiltonian-lattice surface, with explicit characterisation of
-        the finite-`a` cubic-harmonic LV correction.
+STATUS: bounded theorem candidate on the supplied continuum-limit
+        free-scalar Hamiltonian-lattice surface, with explicit
+        characterisation of the finite-`a` structural cubic-harmonic
+        K_4 correction. Independent audit owns any effective status.
 
 THEOREM (Phase 4, 3+1D SO(3,1) boost covariance):
   Let `W_lat(Δt, Δx⃗; a, m)` be the free-scalar Wightman 2-point function
@@ -29,10 +30,10 @@ THEOREM (Phase 4, 3+1D SO(3,1) boost covariance):
   in the continuum limit.
 
   At finite `a > 0`, the leading boost-covariance violation is the
-  cubic-harmonic dim-6 LV correction inherited from
-  EMERGENT_LORENTZ_INVARIANCE_NOTE: `W_lat` is not strictly SO(3,1)-
-  covariant but is `O_h`-covariant, with a Planck-suppressed correction
-  on the retained hierarchy surface `a ~ 1/M_Pl`.
+  structural O(a^2 p^4) cubic-harmonic K_4 correction: `W_lat` is not
+  strictly SO(3,1)-covariant but is `O_h`-covariant. This runner does
+  not certify a Planck-unit readout, an experimental-sensitivity claim,
+  or a strict finite-a light-cone theorem.
 
 MECHANISM:
   1.  Z^3 has only octahedral symmetry O_h (48 elements), not SO(3).
@@ -41,8 +42,8 @@ MECHANISM:
   2.  The lattice dispersion E_lat^2(p) = m^2 + sum_i (4/a^2) sin^2(p_i a/2)
       is invariant under O_h spatial permutations and reflections.
       Taylor-expanding gives E_lat^2 = m^2 + |p⃗|^2 - (a^2/12) sum_i p_i^4
-      + O(a^4 p^6).  The cubic-harmonic K_4 correction is the only
-      possible leading LV operator (CPT + P + O_h restrictions).
+      + O(a^4 p^6).  The cubic-harmonic K_4 correction is the first
+      structural anisotropy in this supplied free-scalar dispersion.
   3.  As a -> 0, E_lat -> sqrt(m^2 + |p⃗|^2) uniformly on compact subsets,
       and the 3D BZ extends to all of R^3.  The integral form converges
       to the continuum 3D spectral integral.
@@ -637,16 +638,15 @@ def test_part5_3d_boost_covariance():
 # =============================================================================
 
 def test_part6_cubic_lv_at_finite_a():
-    print("\n=== Part 6: Cubic-harmonic LV at finite a (dim-6 inheritance) ===\n")
+    print("\n=== Part 6: Cubic-harmonic K4 structure at finite a ===\n")
     print("    (Using Euclidean Schwinger function for clean numerics.)\n")
 
     m = 1.0
 
     # 6.1: at finite a, the Euclidean lattice 2-point function G_E is
     # anisotropic between [1,0,0] and [1,1,1]/√3 spatial directions
-    # (at the same |dx⃗|). This is the dim-6 cubic-harmonic K_4 LV
-    # correction at the 2-point function level, inherited from
-    # EMERGENT_LORENTZ_INVARIANCE_NOTE.
+    # (at the same |dx⃗|). This is the structural O(a^2 p^4)
+    # cubic-harmonic K_4 correction at the 2-point function level.
     tau = 1.0
     r = 1.5
     a = 0.3
@@ -672,13 +672,13 @@ def test_part6_cubic_lv_at_finite_a():
           anisos[-1] < anisos[0],
           f"anisotropy a=0.4 -> {anisos[0]:.2e}, a=0.2 -> {anisos[-1]:.2e}")
 
-    # 6.3: anisotropy scaling consistent with O(a^2) dim-6 LV operator
+    # 6.3: anisotropy scaling consistent with the O(a^2 p^4) K4 term
     if anisos[0] > 1e-7 and anisos[-1] > 1e-9:
         # Compare a=0.4 vs a=0.2 (factor 2 in a, expect factor 4 in anisotropy)
         ratio = anisos[0] / anisos[-1]
     else:
         ratio = 4.0
-    check("Anisotropy scaling: O(a^2) dim-6 (broad band for finite-N noise)",
+    check("Anisotropy scaling: O(a^2) K4 term (broad band for finite-N noise)",
           1.5 < ratio < 10.0,
           f"observed ratio anisotropy(a=0.4)/anisotropy(a=0.2) = {ratio:.3f} (expected ~4)")
 
@@ -804,9 +804,9 @@ def test_part7_combined():
           True,
           "3D extension of Phase 2 mechanism")
 
-    check("Finite-a LV: cubic-harmonic K_4 correction (dim-6, P-even, CPT-even)",
+    check("Finite-a structure: cubic-harmonic K_4 correction at O(a^2 p^4)",
           True,
-          "recovers dispersion-isotropy theorem at the 2-point function level")
+          "structural correction computed directly at the 2-point function level")
 
     check("Phase 4 directly extends Phase 2: 1+1D SO(1,1) → 3+1D SO(3,1)",
           True,
@@ -850,11 +850,10 @@ def test_part8_connection_to_dispersion_theorem():
           "same K_4 angular structure: factor-of-3 anisotropy axis vs diagonal")
 
     # 8.3: Combined corollary: 3+1D boost covariance is recovered in continuum,
-    # with explicit dim-6 LV bound on retained hierarchy a ~ 1/M_Pl
-    # (already retained from EMERGENT_LORENTZ_INVARIANCE_NOTE)
-    check("Planck-suppressed boost-covariance violation: |δW/W| ~ (E/M_Pl)²",
+    # with explicit structural O(a^2 p^4) K4 correction at finite a.
+    check("Finite-a correction is structural O(a^2 p^4) K4, with no Planck readout",
           True,
-          "via a ~ 1/M_Pl pin (current package pin per PLANCK_SCALE_LANE_STATUS)")
+          "unit conversion and experimental comparison are outside this row")
 
     # 8.4: This Phase 4 strictly extends the dispersion-theorem result
     # from on-shell relation E^2(p) to the off-shell 2-point function W(Δt, Δx⃗)

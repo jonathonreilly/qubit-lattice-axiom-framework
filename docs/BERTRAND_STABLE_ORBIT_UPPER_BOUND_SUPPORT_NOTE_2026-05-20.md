@@ -5,9 +5,12 @@
 **Type:** bounded_theorem
 **Status:** source-side proposal; independent audit lane only
 **Status authority:** independent audit lane only.
+**Primary runner:** [`scripts/bertrand_stable_orbit_green_kernel_bridge.py`](../scripts/bertrand_stable_orbit_green_kernel_bridge.py)
+(SCORECARD: PASS=8, FAIL=0)
+**Cached runner output:** [`logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge_2026_05_29.txt`](../logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge_2026_05_29.txt)
 **Related wrapper:** `DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`
 
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
+## 2026-05-29 Non-Narrowing Audit Repair (native Green-kernel bridge)
 
 The 2026-05-28 audit verdict was `audited_conditional`:
 
@@ -15,15 +18,25 @@ The 2026-05-28 audit verdict was `audited_conditional`:
 
 with repair: *"missing_bridge_theorem: provide a retained derivation or authority for the continuum V(r) = -k/r^(d-2) law across the integer d >= 5 cases used by the upper-bound argument."*.
 
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
+This revision takes the direct repair path rather than narrowing to only
+`d = 3,4`. The missing continuum law is derived in this packet from the
+radial Green kernel of the `d`-dimensional continuum Laplacian:
 
-- **Load-bearing (in scope):** The effective-potential stability algebra — equations (1)–(3) and the sign condition `(d-2)(4-d) > 0` — is exactly verified for the cache-backed `d = 3` and `d = 4` rows, giving stable circular orbits at `d = 3` and marginal at `d = 4`; this algebraic step closes under the assumed continuum form for those rows.
-- **NON-load-bearing (split off / admitted):** The extension of the same continuum law `V(r) = -k/r^(d-2)` to all integer `d >= 5` is an explicit bounded extrapolation beyond the cache-backed rows in `DIMENSIONAL_GRAVITY_TABLE` and is not backed by a retained derivation or authority; the `d >= 5` instability conclusion is an admitted, not-derived input to the upper-bound argument.
+- for `d >= 3`, the radial function `r^(2-d)` is harmonic away from
+  the source under the `d`-dimensional radial Laplacian;
+- the normalized Green kernel
+  `G_d(r)=1/((d-2)S_{d-1}) r^(2-d)` has unit outward `-grad` flux
+  through every sphere `S_r^{d-1}`;
+- multiplying by an attractive source strength and absorbing the
+  positive normalization into `k` gives exactly
+  `V(r) = -k/r^(d-2)`;
+- substituting this potential into the radial effective potential gives
+  the stability sign `k(d-2)(4-d)/r_c^d`.
 
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
+No new axiom, observed value, fitted selector, or external physics
+constant is introduced. The prior cache-backed `DIMENSIONAL_GRAVITY_TABLE`
+rows remain useful context, but the `d >= 5` potential law used here is no
+longer a load-bearing extrapolation from that table.
 
 ## Claim Boundary
 
@@ -31,12 +44,14 @@ This note records a bounded support argument for the stable-orbit half of the
 D=3 upper-bound route. It does not claim a repo-wide axiom change and it does
 not claim a complete framework-internal proof of Bertrand's theorem.
 
-The landable support claim is narrower:
+The landable support claim is:
 
 > Given a continuum central potential of the form `V(r) = -k/r^(d-2)` with
-> `k > 0`, the effective-potential stability calculation gives stable
-> circular orbits only for integer `d = 3`; `d = 4` is marginal and `d >= 5`
-> is unstable.
+> `k > 0`, where that form is derived in this packet as the attractive
+> Green-kernel shape of the `d`-dimensional continuum Laplacian for
+> `d >= 3`, the effective-potential stability calculation gives stable
+> circular orbits only for integer `d = 3`; `d = 4` is marginal and
+> `d >= 5` is unstable.
 
 This supports the existing named-import wrapper by making the elementary
 stability part explicit. The all-bounded-orbits-are-closed part of Bertrand's
@@ -45,16 +60,65 @@ audited.
 
 ## Inputs
 
-1. **Framework-connected potential form.** The source of the dimensional
-   potential pattern is [`DIMENSIONAL_GRAVITY_TABLE.md`](DIMENSIONAL_GRAVITY_TABLE.md).
-   Its audited binding scope is cache-backed `d = 3` and `d = 4` rows; use of
-   a general `d` continuum law is therefore an explicit bounded extrapolation,
-   not a retained universal theorem.
-2. **Standard classical mechanics.** The effective-potential reduction for a
-   central force is admitted background. This note writes out the stability
-   algebra but does not re-derive Hamiltonian mechanics.
-3. **Bertrand closure theorem.** The exact all-`L` closed-orbit theorem is a
-   standard classical-mechanics import. It is not retired by this note.
+1. **Continuum Laplacian Green-kernel bridge derived here.** The only
+   potential law used below is the in-packet radial solution of the
+   `d`-dimensional continuum Laplacian for `d >= 3`. The old
+   `DIMENSIONAL_GRAVITY_TABLE.md` table is context, not a load-bearing
+   dependency for the all-`d >= 5` shape.
+2. **Central-force effective potential.** The reduction to
+   `V_eff(r)=V(r)+L^2/(2mr^2)` is the standard fixed-angular-momentum
+   radial Hamiltonian for a central potential. The differentiations and
+   sign test are written out and runner-checked below.
+3. **Bertrand closure theorem.** The exact all-`L` closed-orbit theorem is
+   not consumed. This note only supplies the stable-circular-orbit
+   upper-bound support step.
+
+## Continuum Green-Kernel Derivation
+
+For a radial function `f(r)=r^q` in `d` spatial dimensions,
+
+```text
+    Δ_d f = f''(r) + ((d-1)/r) f'(r)
+          = q(q+d-2) r^(q-2).
+```
+
+Taking `q = 2-d` gives `Δ_d r^(2-d)=0` for `r > 0`.
+Let
+
+```text
+    S_{d-1} = 2π^(d/2)/Γ(d/2)
+```
+
+be the area of the unit `(d-1)`-sphere in `R^d`, and define
+
+```text
+    G_d(r) = 1 / ((d-2) S_{d-1}) · r^(2-d),     d >= 3.
+```
+
+Then
+
+```text
+    -∂_r G_d(r) = 1 / (S_{d-1} r^(d-1)),
+```
+
+so the outward flux of `-grad G_d` through any sphere of radius `r` is
+
+```text
+    S_{d-1} r^(d-1) · 1/(S_{d-1} r^(d-1)) = 1.
+```
+
+Thus `G_d` is the normalized radial Green kernel for the continuum
+Laplacian convention used in this support calculation. An attractive
+central source has the shape
+
+```text
+    V(r) = -K G_d(r) = -k / r^(d-2),     k > 0,
+```
+
+after absorbing the positive normalization `K/((d-2)S_{d-1})` into the
+single strength parameter `k`. This proves the all-`d >= 3` potential
+shape used by the effective-potential calculation below, including the
+integer cases `d >= 5`.
 
 ## Effective-Potential Calculation
 
@@ -112,8 +176,21 @@ gaps remain open as described in `D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`.
 ## What This Does Not Close
 
 - It does not retire the Bertrand theorem import completely.
-- It does not establish a retained universal dimensional-gravity law for all
-  integer `d`.
+- It does not claim an interacting framework gravity derivation or a
+  physical-dimensional substrate replacement; it proves the continuum
+  Green-kernel shape used by this support note.
 - It does not settle `d = 1` or `d = 2`; those belong to the separate
   lower-bound bridge.
 - It does not promote any parent row or audit status.
+
+## Validation
+
+```bash
+python3 scripts/bertrand_stable_orbit_green_kernel_bridge.py
+# SCORECARD: PASS=8  FAIL=0
+```
+
+The runner checks the radial harmonic identity, unit-flux normalization,
+potential shape, effective-potential second derivative, and the integer
+dimension sign classification (`d=3` stable, `d=4` marginal, all checked
+`d>=5` unstable).

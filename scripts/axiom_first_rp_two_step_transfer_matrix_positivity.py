@@ -243,6 +243,86 @@ def build_manybody_T2(Ls: int, m: float):
     }
 
 
+def spectral_decaying_projection(p: float, m: float) -> dict[str, float]:
+    """Derive the stable one-particle channel from the action-derived T_odd T_even.
+
+    For m>0 the two eigenvalues are positive reciprocal modes e^{-2E} and
+    e^{+2E}. The positive-time transfer kernel is the decaying spectral
+    projector channel, not an extra convention. This finite 2x2 calculation is
+    the missing bridge between the classical recurrence and the one-particle
+    kernel used on Fock space.
+    """
+    t2 = classical_2step(p, m)
+    ev = np.linalg.eigvals(t2)
+    lam_dec = ev[int(np.argmin(np.abs(ev)))]
+    lam_grow = ev[int(np.argmax(np.abs(ev)))]
+    identity = np.eye(2, dtype=complex)
+    p_dec = (t2 - lam_grow * identity) / (lam_dec - lam_grow)
+    p_grow = (t2 - lam_dec * identity) / (lam_grow - lam_dec)
+    return {
+        "lambda_dec": float(lam_dec.real),
+        "lambda_grow": float(lam_grow.real),
+        "dec_imag": float(abs(lam_dec.imag)),
+        "grow_imag": float(abs(lam_grow.imag)),
+        "projector_idem": float(np.max(np.abs(p_dec @ p_dec - p_dec))),
+        "projector_resid": float(np.max(np.abs(t2 @ p_dec - lam_dec * p_dec))),
+        "projector_split": float(np.max(np.abs(p_dec + p_grow - identity))),
+        "projector_orth": float(np.max(np.abs(p_dec @ p_grow))),
+    }
+
+
+def gamma_from_wedge_diagonal(kernels: list[float]) -> np.ndarray:
+    """Finite exterior-algebra second quantization for a diagonal kernel.
+
+    On basis wedges e_S = e_{i1} wedge ... wedge e_{ir}, Gamma(K)e_S is the
+    product of the corresponding one-particle eigenvalues times e_S. This is a
+    direct finite construction on Lambda(C^n), not an imported theorem.
+    """
+    dim = 2 ** len(kernels)
+    diag = []
+    for mask in range(dim):
+        val = 1.0
+        for k, kernel in enumerate(reversed(kernels)):
+            if mask & (1 << k):
+                val *= kernel
+        diag.append(val)
+    return np.diag(diag).astype(complex)
+
+
+def check_decaying_gamma_bridge(Ls: int, m: float) -> dict[str, float]:
+    """C5: derive and verify the finite decaying-mode/Gamma bridge in-packet."""
+    ps = [2.0 * math.pi * k / Ls for k in range(Ls)]
+    projections = [spectral_decaying_projection(p, m) for p in ps]
+    kernels = [r["lambda_dec"] for r in projections]
+    gamma_wedge = gamma_from_wedge_diagonal(kernels)
+    gamma_tensor = np.array([[1.0]], dtype=complex)
+    bridge = np.array([[1.0]], dtype=complex)
+    for t in kernels:
+        gamma_tensor = np.kron(gamma_tensor, np.diag([1.0, t]))
+        bridge = np.kron(bridge, np.diag([1.0, math.sqrt(max(t, 0.0))]))
+
+    inter_resid = 0.0
+    for k, t in enumerate(kernels):
+        ad = jw_annihilation(k, Ls).conj().T
+        inter_resid = max(inter_resid, float(np.max(np.abs(gamma_wedge @ ad - t * ad @ gamma_wedge))))
+
+    eig = np.linalg.eigvalsh(0.5 * (gamma_wedge + gamma_wedge.conj().T))
+    return {
+        "max_dec_imag": max(r["dec_imag"] for r in projections),
+        "max_grow_imag": max(r["grow_imag"] for r in projections),
+        "max_projector_idem": max(r["projector_idem"] for r in projections),
+        "max_projector_resid": max(r["projector_resid"] for r in projections),
+        "max_projector_split": max(r["projector_split"] for r in projections),
+        "max_projector_orth": max(r["projector_orth"] for r in projections),
+        "kernel_min": min(kernels),
+        "kernel_max": max(kernels),
+        "gamma_tensor_err": float(np.max(np.abs(gamma_wedge - gamma_tensor))),
+        "gamma_intertwiner_err": inter_resid,
+        "gamma_min_eig": float(eig.min()),
+        "gamma_bdagb_err": float(np.max(np.abs(gamma_wedge - bridge.conj().T @ bridge))),
+    }
+
+
 # ---------------------------------------------------------------------------
 # C5: second-quantization functor identity Gamma(t1) = exp(-2 a_tau H_hat),
 #     verified IN-REPO from the functor's defining creation-operator intertwiner

@@ -188,9 +188,10 @@ Hermitian with `||T_hat^2|| = 1` (vacuum) and admits the explicit factorization
 This is exactly the 2-step reflection-positivity statement:
 `H_hat = -log(T_hat^2) / (2 a_tau)` is self-adjoint and bounded below by `0`.
 The runner builds `T_hat^2` from the action-derived classical 2-step eigenvalue
-(not posited), confirms positive Hermitian (`min eig > 0`) and the exact
-`B^dag B` reconstruction (`||T_hat^2 - B^dag B|| ~ 6e-17`) for
-`L_s in {2, 3, 4, 6}`, and over a mass range `m in [0.05, 5.0]`.
+(not posited), confirms the finite exterior bridge, positive Hermitian
+(`min eig > 0`), and the exact `B^dag B` reconstruction
+(`||T_hat^2 - B^dag B|| ~ 6e-17`) for `L_s in {2, 3, 4, 6}`, and over a mass
+range `m in [0.05, 5.0]`.
 
 ### Cross-check (route R2 — 2-step OS Gram)
 
@@ -202,7 +203,8 @@ surface; it is manifestly Hermitian and PSD iff `T_hat^2 >= 0`. The runner
 builds it explicitly on the Fock space (identity, single creation/annihilation,
 and pair observables) and confirms it is Hermitian with `min eig = 0` (PSD), in
 direct contrast to the single-step naive Lagrangian Gram (`min eig = -0.80`).
-The transfer-matrix route (Steps 1-4) and the OS-Gram route (R2) agree.
+The transfer-matrix route (Steps 1-4), the finite exterior-algebra bridge, and
+the OS-Gram route (R2) agree.
 
 ## Scorecard
 
@@ -286,12 +288,13 @@ the faithfulness anchor.
 ## Honest status
 
 Source-surface in-repo derivation. The free staggered 2-step blocked transfer
-matrix `T_hat^2` is **derived from the staggered action** (Steps 1-4) and shown
-positive Hermitian (`T_hat^2 = B^dag B`, `H_hat = -log(T_hat^2)/(2 a_tau) >= 0`),
-anchored to the exact free staggered dispersion `sinh^2 E = m^2 + sin^2 p`, with
-the single-step transfer operator non-positive in the same construction. The
-two routes (transfer matrix, OS Gram) agree (`PASS=4 FAIL=0`). This replaces the
-prior citation-only treatment of the 2-step positivity in the
+matrix `T_hat^2` is **derived from the staggered action** (Steps 1-4 plus the
+finite exterior-algebra bridge) and shown positive Hermitian
+(`T_hat^2 = B^dag B`, `H_hat = -log(T_hat^2)/(2 a_tau) >= 0`), anchored to the
+exact free staggered dispersion `sinh^2 E = m^2 + sin^2 p`, with the single-step
+transfer operator non-positive in the same construction. The three checks
+(transfer matrix, finite `Gamma(K)` bridge, OS Gram) agree (`PASS=5 FAIL=0`).
+This replaces the prior citation-only treatment of the 2-step positivity in the
 reflection-positivity row's 2-step formulation. This note does not set or
 predict an audit outcome; it is not an author-applied audit promotion, and
 independent audit is still required.

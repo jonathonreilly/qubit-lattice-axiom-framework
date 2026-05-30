@@ -209563,13 +209563,16 @@
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [],
+      "deps": [
+        "persistent_record_overlap_kernel_note",
+        "minimal_axioms"
+      ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
       "load_bearing_step": "Given a normalized record-writing isometry W = sum_r K_r \\otimes |r>, W^dagger W = I is equivalent to sum_r K_r^dagger K_r = I, so the unconditional map sigma -> sum_r K_r sigma K_r^dagger is CPTP and selective states normalize by outcome probability.",
       "load_bearing_step_class": "A",
@@ -209806,16 +209809,16 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
         "total_pass": 5
       },
       "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
-      "title": "Finite Record Isometry to Kraus Instrument Algebra",
+      "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators",
       "transitive_descendants": 0,
       "verdict_rationale": "The runner genuinely constructs a finite random isometry, extracts blocks, and checks the standard algebraic consequences; it does not hard-code the advertised pass. However, it verifies only the conditional finite-instrument theorem and does not instantiate or derive the persistent-record overlap-kernel dynamics as a normalized linear isometry with the required record readout. The displayed Step 2 probability formula is not generally correct for the K_r map defined in Step 1, so the note is not clean as written even for the algebraic exposition."
     },
@@ -209983,10 +209986,10 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
+      "criticality": "medium",
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -209996,7 +209999,7 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 4.5,
+      "load_bearing_score": 5.585,
       "load_bearing_step": "The mesoscopic persistent-record overlap kernel produces the reported bounded N=8,12,18 purity and detector-weighted overlap table, showing a live residual branch-connection lane but not asymptotic closure.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -210017,7 +210020,7 @@
       },
       "runner_path": "scripts/persistent_record_overlap_kernel.py",
       "title": "Persistent Record Overlap Kernel Note",
-      "transitive_descendants": 1,
+      "transitive_descendants": 2,
       "verdict_rationale": "Clean within the note's bounded pilot scope. The note does not claim asymptotic solution or closure; it claims the persistent-record overlap-kernel lane is scientifically live on the N=8,12,18 probe while retaining nonzero branch overlap. The current runner reproduces the exact reported table and fit summary, including the N=18 rebound that prevents a stronger claim. Residual risk is the declared small-N bounded setup and the absence of broader seed or asymptotic stress testing."
     },
     "persistent_record_refinement_note": {

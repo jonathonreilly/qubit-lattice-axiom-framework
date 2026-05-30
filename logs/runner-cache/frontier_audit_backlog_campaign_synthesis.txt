@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_audit_backlog_campaign_synthesis.py
-runner_sha256: fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826
+runner_sha256: e4780220895f3e39aa5829403eafec8f17228ca8e931b751ccfae43c90f57788
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -10,7 +10,8 @@ status: ok
 ----------------------------------------------------------------------------------------
 Part 1: synthesis structure
 ----------------------------------------------------------------------------------------
-  [PASS (A)] contains: 'Audit-Backlog Retained Campaign — Progress Synthesis'  ()
+  [PASS (A)] contains: 'Audit-Backlog Campaign Progress Synthesis'  ()
+  [PASS (A)] contains: 'Re-Audit Scope'  ()
   [PASS (A)] contains: 'Cycles 1-19'  ()
   [PASS (A)] contains: 'audit-backlog-campaign-20260502'  ()
   [PASS (A)] contains: 'LHCM closure chain'  ()
@@ -79,7 +80,7 @@ Part 6: forbidden imports compliance
   [PASS (A)] compliance: No same-surface family arguments  ()
 
 ========================================================================================
-  TOTAL: PASS=47, FAIL=0
+  TOTAL: PASS=48, FAIL=0
 ========================================================================================
 
 ----- stderr -----

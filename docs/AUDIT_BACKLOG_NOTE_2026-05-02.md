@@ -1,4 +1,4 @@
-# Audit-Backlog Retained Campaign — Progress Synthesis (Cycles 1-19)
+# Audit-Backlog Campaign Progress Synthesis (Cycles 1-19)
 
 **Date:** 2026-05-02 (2026-05-28: narrowed to a purely textual campaign
 index per audit path (b)).
@@ -12,7 +12,7 @@ certify any aggregate claim-state.
 — checks internal consistency of this log (cycle/PR/section structure), not
 the science claims of any cycle.
 
-## 2026-05-28 Narrowing (purely textual campaign index)
+## 2026-05-28 Audit Repair / Re-Audit Scope (purely textual campaign index)
 
 The 2026-05-28 audit verdict on this row (`audited_conditional`) was:
 

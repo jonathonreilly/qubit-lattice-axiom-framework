@@ -308871,24 +308871,42 @@
       "verdict_rationale": null
     },
     "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T00:36:42.027755+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself."
+        },
+        "dep_claim_type": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c3143bdf8250c3951a82ff66c744d21bfd578f0af6549d9b90ac20dac3101600",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-003450-f1767f8c-wilson_action_surface_se",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The real-action exclusion of i theta sum_P Im Tr U_P closes algebraically under P4, but the standard Wilson coefficient beta=6 does not close from the cited authority. The one-hop G_BARE note explicitly treats Wilson matching beta=2 N_c/g_bare^2 and any g_bare^2=1/beta=6 normalization as scoped inputs rather than retained conclusions.",
       "claim_id": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
-      "claim_scope": null,
+      "claim_scope": "Audited only the explicitly bounded P1-P5 canonical leading-beta single-plaquette ansatz: P4 excludes the imaginary i theta sum_P Im Tr U_P action slot, while the beta=6 Wilson coefficient remains conditional on scoped Wilson matching/canonical normalization.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T00:36:42.027755+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -308896,20 +308914,22 @@
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Lemma 3/4: canonical normalization at beta=6 fixes u(x,y)=(beta/N_c)(N_c-x)+v(y), and P4 excludes the i theta y slot so v=0 within the canonical leading-beta ansatz.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "037eabeb377c2729eb8d4ad515cd944a2b751769cfc946b688c2d61b00bde1e5",
       "note_path": "docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained Wilson matching/canonical beta=6 authority or narrow the theorem to an explicitly conditional selector over scoped WM and beta=6; also fix the V7 extra-i displayed formula before re-audit.",
+      "open_dependency_paths": [
+        "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-26T14:07:42.893131+00:00",
@@ -309016,18 +309036,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 10,
+        "B": 4,
+        "C": 22,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 36
       },
       "runner_path": "scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py",
       "title": "Wilson Action-Surface Selector \u2014 Real-Positive Canonical Single-Plaquette Surface",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs substantive SU(3) and symbolic checks for the bounded real-positive selector, and those support the P4-level rejection of an i theta Q plaquette proxy within the declared ansatz. However, the cited beta authority is only a conditional rescaling algebra lemma over CN+WM; it does not supply retained Wilson matching or g_bare^2=1, despite the source note invoking it as the beta=6 anchor. The strict formula pass also finds source-runner drift in the displayed V7 proxy: i theta (Tr U_P-Tr U_P^dag)/2 is real-valued (-theta Im Tr U_P), not a non-real action, while the runner later switches to the correct i theta Q test."
     },
     "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": {
       "audit_date": "2026-05-29T03:36:19.727061+00:00",

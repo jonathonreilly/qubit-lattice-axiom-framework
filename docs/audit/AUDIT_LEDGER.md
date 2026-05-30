@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1131 |
+| unaudited | 1130 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 941 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1367 |
+| `unaudited` | 1366 |
 
 | claim_type | count |
 |---|---:|
@@ -1132,6 +1132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -15975,6 +15976,21 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The note's parent target is already retained-bounded, and the completed replay log supports the stated finite-lattice caution. The note adds no independent observable, runner evidence, or new physical theorem beyond the parent result's scoped interpretation.
 - **rationale:** Issue: this note is a skeptic/scope wrapper around the already retained-bounded wide_lattice_h2t_distance_law_note and uses the same replay/log rather than adding an independent theorem or comparator. Why this blocks separate retained status: giving it another retained-bounded row would double-count the same finite-lattice evidence as an additional claim. Repair target: keep the cautionary wording boxed under the parent distance-law note or add genuinely independent controls such as width/refinement/window/source-placement replays. Claim boundary until fixed: it is safe as a scope-management corollary saying the parent replay is finite-lattice evidence only, not a universal distance law.
 - **decoration parent:** `wide_lattice_h2t_distance_law_note`
+- **auditor confidence:** high
+
+### `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25`
+
+- **Note:** [`WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md`](../../docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the explicitly bounded P1-P5 canonical leading-beta single-plaquette ansatz: P4 excludes the imaginary i theta sum_P Im Tr U_P action slot, while the beta=6 Wilson coefficient remains conditional on scoped Wilson matching/canonical normalization.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-003450-f1767f8c-wilson_action_surface_se`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Lemma 3/4: canonical normalization at beta=6 fixes u(x,y)=(beta/N_c)(N_c-x)+v(y), and P4 excludes the i theta y slot so v=0 within the canonical leading-beta ansatz.  _(class `B`)_
+- **chain closes:** False — The real-action exclusion of i theta sum_P Im Tr U_P closes algebraically under P4, but the standard Wilson coefficient beta=6 does not close from the cited authority. The one-hop G_BARE note explicitly treats Wilson matching beta=2 N_c/g_bare^2 and any g_bare^2=1/beta=6 normalization as scoped inputs rather than retained conclusions.
+- **rationale:** The runner performs substantive SU(3) and symbolic checks for the bounded real-positive selector, and those support the P4-level rejection of an i theta Q plaquette proxy within the declared ansatz. However, the cited beta authority is only a conditional rescaling algebra lemma over CN+WM; it does not supply retained Wilson matching or g_bare^2=1, despite the source note invoking it as the beta=6 anchor. The strict formula pass also finds source-runner drift in the displayed V7 proxy: i theta (Tr U_P-Tr U_P^dag)/2 is real-valued (-theta Im Tr U_P), not a non-real action, while the runner later switches to the correct i theta Q test.
+- **open / conditional deps cited:**
+  - `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08`

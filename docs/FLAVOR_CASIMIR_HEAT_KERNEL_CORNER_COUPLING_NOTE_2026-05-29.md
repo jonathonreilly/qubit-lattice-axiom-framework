@@ -28,8 +28,11 @@ Q = 1/3 + (2/3) r ,   r = (b/a)² ,   b/a = tanh²(t)   ⟹   r = tanh⁴(t).
 ## Finding — first native structure where r=½ is a clean interior point
 - As `t` runs `0→∞`, `r = tanh⁴(t)` sweeps `(0,1)` — the **full Koide range** —
   from one clean native object. `r=½` (Q=2/3) appears at a specific interior
-  point: `tanh(t) = 2^{-1/4}`, i.e. `b/a = 2^{-1/4} = 0.8409`, `t = 1.2242`.
-  This contrasts sharply with the fermion vacuum, which drives `r→0`.
+  point: `b/a = tanh²(t) = 2^{-1/2} = 1/√2 = 0.7071` (equivalently
+  `tanh(t) = 2^{-1/4} = 0.8409`), at `t = 1.2242`. This contrasts sharply with
+  the fermion vacuum, which drives `r→0`. *(Correction, verified to 1e-15: `b/a`
+  is `1/√2`, matching the consolidation note; an earlier draft mislabeled it
+  `2^{-1/4}`, which is `tanh(t)`, not `b/a`. `r=½`, Q=2/3 unaffected.)*
 - **But it is not a derivation.** The heat-kernel time `t` is a free modulus;
   `r=½` just re-expresses the unforced ratio `b/a` as an unforced `t`. The naive
   `t=1` (Casimir time `∼ g_bare=1`) gives `Q=0.558`, **not** 2/3; no derived `t`

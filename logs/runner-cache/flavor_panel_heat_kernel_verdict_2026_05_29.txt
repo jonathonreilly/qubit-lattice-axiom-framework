@@ -1,0 +1,35 @@
+
+========================================================================
+(a) heat kernel is DIAGONAL in the physical (taste=momentum) basis
+========================================================================
+   off-diagonal max in character basis = 1.11e-16
+   => physical basis b=0 -> r=0 -> Q=1/3 (matches fermion-vacuum capstone).
+   b!=0 only in the DUAL position-cube basis (a free-strength taste-breaking).
+
+========================================================================
+(b) b/a label fix
+========================================================================
+   b/a = 0.7071 = tanh^2(t) = 1/sqrt2 = 0.7071
+   tanh(t) = 0.8409 = 2^(-1/4) = 0.8409  (this is what was mislabeled as b/a)
+
+========================================================================
+(c) isotype equipartition = r=1/2 = same unforced t
+========================================================================
+   singlet |c0|^2 = 0.0771   doublet = 0.0771   r=(b/a)^2 = 0.5000
+   equipartition <=> a/b = K(0)/K(2) = sqrt2, holds only at one t:
+     t=0.8: K(0)/K(2) = 2.2679  (target sqrt2=1.4142)
+     t=1.0: K(0)/K(2) = 1.7241  (target sqrt2=1.4142)
+     t=1.2242: K(0)/K(2) = 1.4142  (target sqrt2=1.4142)
+     t=1.5: K(0)/K(2) = 1.2206  (target sqrt2=1.4142)
+   => no cube symmetry forces a/b=sqrt2; equipartition is not forced either.
+
+========================================================================
+VERDICT
+========================================================================
+  Panel: 0/5 angles natively forced t/r=1/2. Heat-kernel route = real native
+  CHARACTERIZATION (r=tanh^4 t), genuinely chirality-INDEPENDENT (commutes with
+  Gamma_chi, the case the no-go leaves open), but in the PHYSICAL taste basis it
+  is diagonal (b=0, Q=1/3). The modulus persists as t. Lit-search caught the
+  Brannen-sqrt2 import trap. No forcing yet; not a wall -- the open question is
+  whether a native cube normalization (not Koide input) sets t / equalizes the
+  C3 isotype weights without working in the dual position basis.

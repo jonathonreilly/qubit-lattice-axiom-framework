@@ -263372,24 +263372,42 @@
       "verdict_rationale": "The note is clean as a bounded negative for broadband attraction under the tested source-defined spectral controls. The current artifacts reproduce the stated pattern: raw broad/flat spectra are AWAY, source-coupled and source-equalized controls do not rescue broadband TOWARD, and detector-equalized TOWARD behavior is explicitly framed as an output-dependent diagnostic rather than a source model. Residual risk is that this does not rule out a later physical k-selection mechanism, but the note lists that as open work."
     },
     "spectral_symmetry_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T00:19:22.364078+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higher_symmetry_joint_validation_note": "Bounded finite joint validation for the Z2 x Z2 higher-symmetry family only on the registered sparse default cache: N=25,40,60,80, z2z2-quarter=12, connect_radius=5.0, k=5.0, k-band=3,5,7, 16 seeds with 15 successful Z2 x Z2 rows per N; no N=120 or dense-extension retention is audited as binding."
+        },
+        "dep_claim_type": {
+          "higher_symmetry_joint_validation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higher_symmetry_joint_validation_note": "retained_bounded"
+        },
+        "deps": [
+          "higher_symmetry_joint_validation_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b127203f0c148119fcd06c20e20cfcfaeae42571c637e8cdccf5d0f30ffbd1ee",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-001743-939b9287-spectral_symmetry_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The inlined runner genuinely computes the random DAGs, transfer matrices, single-slit propagation observables, Lyapunov gaps, Lindeberg ratios, and log-log fits rather than printing imported constants. The cached stdout matches the source-note tables after rounding, and independent arithmetic checks reproduce the power-law fits and monotone Lindeberg trend.",
       "claim_id": "spectral_symmetry_note",
-      "claim_scope": null,
+      "claim_scope": "Finite cached measurements from scripts/ceiling_formal_proof.py for npl=25, connect_radius=2.5, k=5.0, 16 seeds, and N in {12,15,18,22,25,30,40,60,80}; no asymptotic CLT theorem or extrapolation beyond N=80 was audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T00:19:22.364078+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -263397,21 +263415,21 @@
         "higher_symmetry_joint_validation_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/generative_causal_dag_interference.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the cached configuration, the runner-printed finite table of d_TV, overlap, 1-pur_min, Lyapunov gap, and Lindeberg ratio is binding, together with the monotone Lindeberg-ratio decrease from 0.119 at N=12 to 0.017 at N=80.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "9c581edcabc7443d5705a71cb541e259d5d05e1bbdaaf56d73a19374de1d077a",
       "note_path": "docs/SPECTRAL_SYMMETRY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream summaries preserve the finite cached scope and do not promote the non-binding CLT/asymptotic mechanism language.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -263582,18 +263600,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/ceiling_formal_proof.py",
       "title": "Spectral Symmetry Note \u2014 CLT-Style Decoherence Evidence on Random Causal DAGs",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The narrowed finite measurement claim closes from the primary runner and helper source included in the packet. The displayed fit coefficients match an independent log-log regression on the cached table, the Lyapunov gaps decrease, and the Lindeberg ratios are strictly monotone with N*ratio approximately constant on the cached range. The broader CLT-mechanism and power-law-asymptotic readings are explicitly non-binding, so they are not retained by this verdict."
     },
     "spectral_trajectory_theorem_2026-04-11": {
       "audit_date": null,

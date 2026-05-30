@@ -17787,13 +17787,13 @@
     "planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26": {
       "assert_count": 1,
       "counts": {
-        "A": 7,
+        "A": 2,
         "B": 2,
         "C": 1,
         "D": 6
       },
       "decoration_candidate": false,
-      "dominant_class": "A",
+      "dominant_class": "D",
       "runner": "scripts/planck_target3_coframe_response_accepted_premise_runner.py"
     },
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25": {
@@ -55792,13 +55792,13 @@
         "planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26"
       ],
       "counts": {
-        "A": 7,
+        "A": 2,
         "B": 2,
         "C": 1,
         "D": 6
       },
       "decoration_candidate": false,
-      "dominant_class": "A",
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/plaquette_observable_uniqueness_runner.py": {

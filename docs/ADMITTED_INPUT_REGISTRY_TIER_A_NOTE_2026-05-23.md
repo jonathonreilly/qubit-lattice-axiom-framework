@@ -64,7 +64,16 @@ Notes:
   naming and like choosing meters vs Planck units); the genuine admission is the
   **scale-setting**: matching one observable to experiment to fix the physical
   value of `a`. That is a single empirical number, the *same type* as a
-  Standard-Model dimensionful parameter — not the vacuous unit choice.
+  Standard-Model dimensionful parameter — not the vacuous unit choice. (The
+  package currently carries this admission as the explicit Planck pin
+  `a^{-1} = M_Pl` per `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` §1,
+  conditional on the primitive Clifford-Majorana edge-statistics premise BP; the
+  natural-unit closure `a/l_P = 1` is the conditional algebraic theorem
+  `BP ⇒ a/l_P = 1` per `PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`,
+  `audited_conditional`. Naming the package-level pin here is a pointer, not a
+  redefinition of S — S remains the abstract one-empirical-number admission so
+  the registry does not lock to a derivation route whose forcing premise BP is
+  itself open.)
 - **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
   problem); not a framework-specific deficit.
 

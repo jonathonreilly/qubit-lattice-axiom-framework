@@ -1,0 +1,29 @@
+
+========================================================================
+(1) covariant measure CENTERS on 2/3 (median) but does NOT concentrate
+========================================================================
+   median Q = 0.6672  (2/3 = 0.6667)
+   equal expected block mass: <ev0^2>=0.999, <2 ev1^2>=0.998
+   fraction in [0.6,0.7] = 5.1%  (Cauchy-broad, no concentration)
+   P(|Q-2/3|<1e-2) = 1.0%  -> 1e-5 sharpness is measure-zero
+
+========================================================================
+(2) exact 2/3 = the chiral constraint; traceless correction
+========================================================================
+   eigenvector balance <v|Gamma_chi|v>=0 -> Q=2/3 (retained anticommuting theorem).
+   NOT the operator trace: Tr(I*Gx)=-1, Tr((J-I)*Gx)=4
+   -> Tr(M*Gx)=-a+4b=0 -> b/a=1/4 -> Q=0.3750 (NOT 2/3). Trace cond != cone cond.
+   Gamma_chi=(2/3)J-I is NON-native (retained_bounded no-go) = the generation-ID chiral import.
+
+========================================================================
+(3) data does not demand exactness
+========================================================================
+   Q_obs=0.66666051, |Q-2/3|=6.16e-06=0.91 sigma
+
+========================================================================
+VERDICT
+========================================================================
+  No native EXACT forcing. Native covariant measure CENTERS on 2/3 (median, import-free,
+  modulo the audit-open block-count weighting) -- and 'approx 2/3' is all the data needs.
+  EXACT 2/3 reduces to the chiral import (= generation-ID gate). NEXT: derive the block
+  weighting from the Cl(3)/OS measure (-> native rank forced); or find a saddle at b/a=1/sqrt2.

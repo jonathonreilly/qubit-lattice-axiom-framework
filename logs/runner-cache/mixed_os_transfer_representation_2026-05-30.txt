@@ -1,0 +1,107 @@
+===== runner cache v1 =====
+runner: scripts/mixed_os_transfer_representation_2026-05-30.py
+runner_sha256: cde3411fd2d22742356ef7be2b6e26b4f7947d3416e4e52e65f0b171a147b1e3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+====================================================================================
+DUAL-COMPUTATION: FERMION-SECTOR BEREZIN BLOCK METRIC == OPERATOR TRANSFER
+  2-step blocked staggered OS transfer representation (fermion sector)
+====================================================================================
+  mass m=0.5, temporal bulk half-extent NT_BULK=16 (2x16=32 slices), eq tol=1e-10
+  reflection theta(t,x)=(-1-t,x); staggered eta_1(t)=(-1)^t flips under theta
+  Berezin sign: <chi_b bar_a>=+(M^-1)[b,a], <bar_a chi_b>=-(M^-1)[b,a]
+
+------------------------------------------------------------------------------------
+CHECK 1  FREE (U=1): Berezin block metric  ==  c_block * operator e^{-2E}
+  cleanest instance of the representation equality (no gauge entanglement)
+------------------------------------------------------------------------------------
+  lambda=+1.0000  E=0.96242  Berezin=0.2917960675  operator(c_block*e^-2E)=0.2917960675  |diff|=5.55e-17
+  lambda=-1.0000  E=0.96242  Berezin=0.2917960675  operator(c_block*e^-2E)=0.2917960675  |diff|=5.55e-17
+  lambda=+1.0000  E=0.96242  Berezin=0.2917960675  operator(c_block*e^-2E)=0.2917960675  |diff|=5.55e-17
+  lambda=-1.0000  E=0.96242  Berezin=0.2917960675  operator(c_block*e^-2E)=0.2917960675  |diff|=5.55e-17
+  lambda=-0.0000  E=0.48121  Berezin=0.7639320225  operator(c_block*e^-2E)=0.7639320225  |diff|=7.21e-14
+  lambda=+0.0000  E=0.48121  Berezin=0.7639320225  operator(c_block*e^-2E)=0.7639320225  |diff|=7.21e-14
+  worst |Berezin - operator| (free, per-mode) = 7.205e-14
+  full POSITION-basis many-field Berezin Gram positive eigs = [0.34314575 0.34314575 0.76393202]
+     expected c_block*e^-2E (operator spectrum)             = [0.34314575 0.34314575 0.76393202]
+  worst |full-Berezin-Gram eig - operator| = 7.205e-14 (no per-mode reduction: every Grassmann cross-contraction included)
+  -> CHECK 1 representation equality (free): PASS
+
+------------------------------------------------------------------------------------
+CHECK 2  FIXED nontrivial background: per-config representation equality
+  reuses the anti-Hermitian-hop modal reduction h[U]=U_h(iL)U_h^dag
+------------------------------------------------------------------------------------
+  U(1)  fixed bkgd: 4 modes, worst |Berezin-operator| = 1.665e-16
+  SU(3) fixed bkgd: 6 modes, worst |Berezin-operator| = 1.110e-16
+  -> CHECK 2 representation equality (fixed bkgd): PASS
+
+------------------------------------------------------------------------------------
+CHECK 3  PER-CONFIG fermion equality assembled in a shared gauge/Fock wrapper
+  Top vs Tber are wrapped by the SAME Wilson kernel Kg, SAME flat Omega, SAME
+  observables/Fock ops -- they differ ONLY in the per-config fermion block, so
+  worst|G_ber-G_op| reduces to the per-block residual |Tber-Top|.  This is NOT
+  an independent gauge-fermion-mixing test (rank/dim/'mixed' are diagnostics).
+------------------------------------------------------------------------------------
+  [u1] dimH=32  observables=18 (diagnostic: nominally mixed=10)
+        diagnostics (context, not load-bearing): gauge transfer min eig=2.101e-04 (PSD),
+            min 2-step kernel norm=1.3180 (>0; NOT the det(M[U]) measure), op-Schmidt rank=3
+        GENUINE: worst per-block |Tber - Top| (per-config fermion equality) = 3.153e-14
+        (assembled wrapper residual |G_ber - G_op| = 1.510e-14, a pure function of the per-block residual above)
+        operator Gram Hermitian: ||G-G^dag||=1.14e-16
+  [su3] dimH=384  observables=84 (diagnostic: nominally mixed=54)
+        diagnostics (context, not load-bearing): gauge transfer min eig=9.251e-01 (PSD),
+            min 2-step kernel norm=2.6664 (>0; NOT the det(M[U]) measure), op-Schmidt rank=6
+        GENUINE: worst per-block |Tber - Top| (per-config fermion equality) = 1.549e-14
+        (assembled wrapper residual |G_ber - G_op| = 5.662e-15, a pure function of the per-block residual above)
+        operator Gram Hermitian: ||G-G^dag||=6.21e-17
+  -> CHECK 3 per-config fermion equality (in shared wrapper): PASS
+
+------------------------------------------------------------------------------------
+CHECK 4  REFLECTION = ADJOINT (cited OS property; Theta = (.)^dag)
+  consistency check: the reconstructed OS Gram is Hermitian to machine precision
+------------------------------------------------------------------------------------
+  U(1)  ||G - G^dag|| = 1.914e-16
+  SU(3) ||G - G^dag|| = 5.722e-17
+  -> CHECK 4 reflection=adjoint: PASS
+
+------------------------------------------------------------------------------------
+CHECK 5  BEREZIN DECAY ANCHOR: forward 2-pt decays as e^{-2E(p)} per 2-step
+  the transfer eigenvalue appears INSIDE the path integral (faithfulness)
+------------------------------------------------------------------------------------
+  worst |ratio - e^{-2E}| across modes/separations = 1.426e-09
+  -> CHECK 5 decay anchor: PASS
+
+------------------------------------------------------------------------------------
+CHECK 6  NEGATIVE CONTROL: SINGLE-STEP reflection BREAKS the equality
+  the staggered eta_1 flip is uncompensated single-step => the reflected
+  positive-cone metric is INDEFINITE (min eig < 0), so it is NOT equal to
+  any positive operator sandwich.  This MUST fail the PSD/equality test.
+------------------------------------------------------------------------------------
+  single-step per-mode block metric min eig = -0.5528 (indefinite => no positive operator sandwich)
+  full single-step naive Lagrangian Gram min eig = -0.8000 (documented no-go ~ -0.80)
+  -> CHECK 6 single-step equality is VIOLATED (control has teeth): PASS
+
+====================================================================================
+SCORECARD: PASS=6 FAIL=0
+  CHECK 1 free (U=1)            : Berezin block metric == c_block*e^-2E per mode
+                                 + FULL many-field position-basis Gram (fixes c_block=2)
+  CHECK 2 fixed SU(3)/U(1) bkgd : per-config Berezin == operator
+  CHECK 3 per-config in wrapper : Tber==Top inside a SHARED gauge/Fock wrapper
+                                 (NOT an independent gauge-fermion-mixing test)
+  CHECK 4 reflection = adjoint  : OS Gram Hermitian (cited OS property; consistency)
+  CHECK 5 decay anchor          : Berezin forward 2-pt ~ e^{-2E(p)} per 2-step
+  CHECK 6 single-step control   : single-step BREAKS the equality (indefinite)
+------------------------------------------------------------------------------------
+  DELIVERED: finite-carrier FERMION-SECTOR instance of the Luescher/Osterwalder-
+  Seiler/STW/Palumbo transfer-matrix REPRESENTATION (cited); the 2-step eta_1 sign
+  bookkeeping under theta(t,x)=(-1-t,x) is the in-repo derived content.
+  NOT established here: the full gauge-fermion-ENTANGLED (mixed-observable)
+  representation equality, the det(M[U]) weight / Haar U-average (RP_MIXED + gauge
+  measure), the continuum / OS-reconstruction (Wightman) limit, nor a full RP closure.
+====================================================================================
+
+----- stderr -----
+

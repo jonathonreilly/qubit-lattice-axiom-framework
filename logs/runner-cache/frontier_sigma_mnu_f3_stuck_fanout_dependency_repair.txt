@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/frontier_sigma_mnu_f3_stuck_fanout_dependency_repair.py
+runner_sha256: fd81a5aa414c2a152be32cb876720f716b4c5e33d490f38b9378dfdf9cf11344
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Sigma m_nu F3 stuck-fanout dependency repair
+========================================================================
+
+A. Source packet
+------------------------------------------------------------------------
+PASS: source note exists -- docs/SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md
+PASS: source note declares no_go
+PASS: source note has no branch-local status authority
+PASS: source note has no branch provenance
+PASS: cycle1 source exists -- docs/SIGMA_MNU_F3_DM_CROSS_BOUND_AUDIT_NOTE_2026-04-28.md
+PASS: cycle1 source is directly cited
+PASS: functional source exists -- docs/NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md
+PASS: functional source is directly cited
+PASS: omega_dm source exists -- docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md
+PASS: omega_dm source is directly cited
+PASS: lane5_firewall source exists -- docs/HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md
+PASS: lane5_firewall source is directly cited
+PASS: lane5_a1 source exists -- docs/HUBBLE_LANE5_C1_A1_GRASSMANN_NO_GO_NOTE_2026-04-28.md
+PASS: lane5_a1 source is directly cited
+PASS: lane5_a4 source exists -- docs/HUBBLE_LANE5_C1_A4_PARITY_GATE_CAR_BOUNDARY_NOTE_2026-04-29.md
+PASS: lane5_a4 source is directly cited
+PASS: lane5_a5 source exists -- docs/HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md
+PASS: lane5_a5 source is directly cited
+PASS: lane5_a6 source exists -- docs/HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md
+PASS: lane5_a6 source is directly cited
+PASS: lepto_status source exists -- docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md
+PASS: lepto_status source is directly cited
+PASS: eta188 source exists -- docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md
+PASS: eta188 source is directly cited
+
+B. Cross-bound arithmetic
+------------------------------------------------------------------------
+PASS: framework current-bank endpoints give negative Sigma m_nu at Planck-style pins -- [-0.1610, -0.0761] eV
+PASS: CMB h^2 alternate admission gives positive but below NO floor -- 0.0559 eV
+PASS: alternate admission bypasses framework current-bank Omega_DM
+
+C. Fan-out boundary
+------------------------------------------------------------------------
+PASS: route status phrase present: Comparator only
+PASS: route status phrase present: Structural only
+PASS: route status phrase present: Alt admission surface
+PASS: route status phrase present: Kinematic only
+PASS: route status phrase present: Speculative
+PASS: source note preserves no-retention boundary
+PASS: source note names research-level pivots
+PASS: no-go discipline N1-N8 present
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=35, FAIL=0
+VERDICT: source packet exposed; F3 no-go remains bounded and auditable.
+
+----- stderr -----
+

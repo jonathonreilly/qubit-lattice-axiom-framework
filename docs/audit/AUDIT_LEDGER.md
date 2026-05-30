@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1226 |
+| unaudited | 1225 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 9 |
+| ~~audited_conditional~~ | 10 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 939 |
-| `audited_conditional` | 9 |
+| `audited_conditional` | 10 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1464 |
+| `unaudited` | 1463 |
 
 | claim_type | count |
 |---|---:|
@@ -1073,6 +1073,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1854,6 +1855,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
 - **auditor confidence:** high
+
+### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
+
+- **Note:** [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`](../../docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 staggered-only 1+1d finite periodic lattice with m>0 and canonical phases; fermion-sector two-step transfer positivity only, not the fixed-gauge or interacting closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-221641-eac4fbc6-axiom_first_rp_two_step_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The single-particle two-step kernel is identified with the action-derived decaying eigenvalue t1^(2)(p)=e^{-2E(p)}, so T_hat^2=Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B.  _(class `C`)_
+- **chain closes:** False — The packet verifies the two-step classical eigenvalues and positivity of a constructed diagonal Fock-space Gamma(e^{-2E}) operator. It does not close the bridge that this decaying-mode projection is the canonical action-derived one-particle transfer kernel rather than an additional transfer-kernel selection/normalization premise.
+- **rationale:** The runner is substantive: it builds the staggered recurrence, computes the two-step spectrum, constructs the exterior-algebra/Fock operator, and checks B^dag B, OS-Gram PSD, and the diagonal Gamma functor identity. However, the load-bearing passage from the non-Hermitian second-order classical monodromy T_odd T_even to the asserted Fock-space transfer kernel t1^(2)(p)=e^{-2E(p)} is not derived inside the restricted packet; the runner builds Gamma only after selecting that decaying eigenvalue. The source also overstates C2 as complex single-step spectra for every p != 0, while the displayed formula has real spectra when sin(p)=0, for example p=pi on even lattices.
+- **auditor confidence:** medium
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`
 

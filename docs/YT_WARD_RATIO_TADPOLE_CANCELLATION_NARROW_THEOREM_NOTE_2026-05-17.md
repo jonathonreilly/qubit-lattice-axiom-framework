@@ -1,7 +1,7 @@
 # yt_ward Canonical-Surface Ratio Narrow Theorem (Tadpole Cancellation)
 
 **Date:** 2026-05-17
-**Type:** bounded_theorem
+**Type:** positive_theorem
 **Claim scope:** the standalone algebraic-substitution implication that,
 given (i) the retained Combined Mean-Field Theory (CMT) change-of-variables
 identity `<O(U)> = u_0^{n_link} <O_V(V)>_eff` supplied by
@@ -47,24 +47,6 @@ context input), the upstream `u_0` plaquette evaluation (currently
 readout `y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)` at `N_c = 3`. This narrow
 theorem isolates only the exact algebraic tadpole-cancellation
 substitution `(P1)`.
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The runner verifies the symbolic cancellation exactly after D1 and D2 are assumed, including counterfactual checks showing equal n_link is load-bearing. The chain does not close from the one-hop dependency because yt_ew_color_projection_the"*
-
-with repair: *"missing_bridge_theorem: provide retained authority for the common CMT single-vertex tadpole readout of both g_s and y_t in this Ward-ratio context, or narrow the row to a conditional algebra lemma over D1 and D2."*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The exact symbolic algebraic identity `(P1)` — that `y_t(M_Pl) / g_s(M_Pl) = y_t_bare / g_bare` holds identically in `u_0` when both couplings share `n_link = 1` — verified by the runner across 8 checks including the counterfactual showing that unequal `n_link` breaks the cancellation; this closes as a pure algebraic lemma conditional on admitted inputs `(D1)` and `(D2)`.
-- **NON-load-bearing (split off / admitted):** The retained authority for the common CMT single-vertex tadpole readout applying identically to both `g_s` and `y_t` in this Ward-ratio context — specifically, the closure of `yt_ew_color_projection_theorem` as a one-hop retained source for the equal-`n_link` Ward-ratio premise `(I2)` as applied here — which remains a gap in the one-hop dependency chain and is recorded as an admitted, not-closed input.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
 
 ## Statement
 

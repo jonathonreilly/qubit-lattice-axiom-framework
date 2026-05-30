@@ -126515,22 +126515,46 @@
       "verdict_rationale": "The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing."
     },
     "grav_decoherence_derived_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T23:46:41.172697+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`.",
+          "newton_law_derived_note": "Given the supplied scalar kernel G(r)=1/(4 pi r) and formal source-linearity phi=M G, the note proves the inverse-square scalar gradient magnitude |grad phi|=M/(4 pi r^2), while making no physical force-law claim."
+        },
+        "dep_claim_type": {
+          "gravity_full_self_consistency_note": "bounded_theorem",
+          "newton_law_derived_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_full_self_consistency_note": "retained_bounded",
+          "newton_law_derived_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_full_self_consistency_note",
+          "newton_law_derived_note"
+        ],
+        "load_bearing_score": 8.172,
+        "runner_hash": "ce7726e04cb894ff44ce9c0544d04c8bc252fc9ac4ba9afaa7f57550b3f3ba91",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-234455-f4806cb5-grav_decoherence_derived",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet does not close the bridge from the Cl(3)-on-Z^3 axiom to an unconditional physical Poisson field, gravitational coupling normalization, mass-source/readout rule, or Penrose-Diosi field-distinguishability-to-rate law. The cited Poisson authority is explicitly conditional on the stipulated identity L^{-1}=G_0, and the Newton authority supplies only formal potential-kernel algebra.",
       "claim_id": "grav_decoherence_derived_note",
-      "claim_scope": null,
+      "claim_scope": "Audited whether the note derives the Penrose-Diosi gravitational decoherence rate and quoted BMV/NV numerical predictions from the supplied conditional lattice-Poisson and potential-kernel authorities.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-30T23:46:41.172697+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -126539,20 +126563,23 @@
         "gravity_full_self_consistency_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 8.172,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The gravitational self-energy difference is asserted as E_G = G m^2 / delta_x * F(delta_x / a), giving gamma = E_G / hbar = (G m^2)/(hbar delta_x) * F(delta_x / a).",
+      "load_bearing_step_class": "D",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "92485310806de077874823e21493aab84e231dd55e5149495da253937492c81c",
       "note_path": "docs/GRAV_DECOHERENCE_DERIVED_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained derivations for L^{-1}=G_0 from the axiom, physical mass-source/readout and G-normalization, and the Penrose-Diosi field-distinguishability-to-rate bridge; then repair the lattice form-factor/self-energy normalization and convergence-table drift.",
+      "open_dependency_paths": [
+        "docs/NEWTON_LAW_DERIVED_NOTE.md",
+        "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-30T18:17:51.105848+00:00",
@@ -126618,18 +126645,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 4,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/frontier_grav_decoherence_derived.py",
       "title": "Gravitational Decoherence Rate -- Derived from Framework Axioms",
       "transitive_descendants": 50,
-      "verdict_rationale": null
+      "verdict_rationale": "The presented gamma formula is an imported Penrose-Diosi physical bridge, not a first-principles compute from the restricted packet. The upstream Poisson authority is explicitly conditional on stipulated L^{-1}=G_0, and the Newton authority disclaims the physical force/source coupling and gravitational normalization needed by the decoherence claim. The runner evaluates assumed formulas and lattice Green ratios, but it does not derive the closure identity, the mass-source/readout bridge, or gamma=E_G/hbar from the axiom. Formula inventory also finds form-factor/self-energy normalization drift: the displayed 2G_lat(0)-2G_lat(delta_x) definition would not yield F->1 with G_lat(0)~0.2527/a, and the source's <1% for r>=5 claim conflicts with its r=10 table entry."
     },
     "gravitational_entanglement_note": {
       "audit_date": "2026-04-30T19:29:34.224702+00:00",

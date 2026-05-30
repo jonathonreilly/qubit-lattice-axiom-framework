@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 614 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1210 |
+| unaudited | 1209 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 16 |
+| ~~audited_conditional~~ | 17 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 949 |
-| `audited_conditional` | 16 |
+| `audited_conditional` | 17 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1448 |
+| `unaudited` | 1447 |
 
 | claim_type | count |
 |---|---:|
@@ -1089,6 +1089,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6445,6 +6446,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** This is the decisive result. The free modal laws are not the same theory.  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 9 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `grav_decoherence_derived_note`
+
+- **Note:** [`GRAV_DECOHERENCE_DERIVED_NOTE.md`](../../docs/GRAV_DECOHERENCE_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the note derives the Penrose-Diosi gravitational decoherence rate and quoted BMV/NV numerical predictions from the supplied conditional lattice-Poisson and potential-kernel authorities.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-234455-f4806cb5-grav_decoherence_derived`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The gravitational self-energy difference is asserted as E_G = G m^2 / delta_x * F(delta_x / a), giving gamma = E_G / hbar = (G m^2)/(hbar delta_x) * F(delta_x / a).  _(class `D`)_
+- **chain closes:** False — The packet does not close the bridge from the Cl(3)-on-Z^3 axiom to an unconditional physical Poisson field, gravitational coupling normalization, mass-source/readout rule, or Penrose-Diosi field-distinguishability-to-rate law. The cited Poisson authority is explicitly conditional on the stipulated identity L^{-1}=G_0, and the Newton authority supplies only formal potential-kernel algebra.
+- **rationale:** The presented gamma formula is an imported Penrose-Diosi physical bridge, not a first-principles compute from the restricted packet. The upstream Poisson authority is explicitly conditional on stipulated L^{-1}=G_0, and the Newton authority disclaims the physical force/source coupling and gravitational normalization needed by the decoherence claim. The runner evaluates assumed formulas and lattice Green ratios, but it does not derive the closure identity, the mass-source/readout bridge, or gamma=E_G/hbar from the axiom. Formula inventory also finds form-factor/self-energy normalization drift: the displayed 2G_lat(0)-2G_lat(delta_x) definition would not yield F->1 with G_lat(0)~0.2527/a, and the source's <1% for r>=5 claim conflicts with its r=10 table entry.
+- **open / conditional deps cited:**
+  - `NEWTON_LAW_DERIVED_NOTE.md`
+  - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `gravitational_entanglement_note`

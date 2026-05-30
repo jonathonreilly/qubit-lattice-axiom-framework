@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 249,
-    "high": 297,
+    "high": 296,
     "leaf": 353,
     "medium": 312
   },
@@ -7153,30 +7153,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "continuum_identification_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_invariance_note"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.615,
-      "note_path": "docs/CONTINUUM_IDENTIFICATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_continuum_identification_audit.py",
-      "transitive_descendants": 48
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -36530,6 +36506,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 71,
-  "total_pending": 1211
+  "ready_count": 70,
+  "total_pending": 1210
 }

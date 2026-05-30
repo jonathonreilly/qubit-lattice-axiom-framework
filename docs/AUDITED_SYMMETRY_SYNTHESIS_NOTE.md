@@ -3,25 +3,9 @@
 **Date:** 2026-04-03 (scope narrowed 2026-05-26)
 **Status:** bounded synthesis candidate on registered finite authority
 surfaces only; no unified mirror or `Z₂ × Z₂` family theorem.
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-
-## 2026-05-28 Audit Repair (narrow to runner-verified measurement)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The one-hop retained-bounded dependencies close the listed finite registered surfaces and their explicit exclusions. They do not close the broader rank-1/CLT mechanism or exact sector-preservation explanation as a retained synthesis-level claim."*
-
-with repair: *"scope_too_broad: remove or explicitly mark the rank-1/CLT and sector-preservation mechanism language as non-binding interpretation, unless a retained one-hop mechanism theorem is supplied."*
-
-This revision narrows the claim to exactly what the runner proves:
-
-- **Load-bearing (in scope):** The conjunction of the five registered finite authority surfaces named in the 2026-05-26 scope narrowing — the strict-card exact mirror pocket at N=15 and N=25, the dense mirror boundary card through N=100, the mirror MI diagnostic, the exact 2D mirror validation packet, and the SHA-pinned 16-seed Z₂ × Z₂ coexistence cache for N=25,40,60,80.
-- **NON-load-bearing (non-binding interpretation):** The rank-1/CLT mechanism explanation and the exact sector-preservation story (that discrete symmetry "prevents" convergence via a specific algebraic mechanism). These are marked as non-binding interpretation, not a retained claim, unless a retained one-hop mechanism theorem is supplied.
-
-No new axiom, import, or retained bridge is introduced. Only the exact finite
-measurement is load-bearing; the broader mechanism reading is explicitly
-non-binding.
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only; effective status is
+pipeline-derived after independent review.
 
 This note consolidates the symmetry-program results after a direct audit of the
 current code and saved artifacts. The goal is to separate the claims that are

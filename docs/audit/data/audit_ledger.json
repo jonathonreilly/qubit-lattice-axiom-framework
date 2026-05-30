@@ -304014,24 +304014,34 @@
       "verdict_rationale": null
     },
     "uv_gauge_to_yukawa_bridge_sc_vs_pert_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T23:06:15.747547+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.069,
+        "runner_hash": "7daae00ac0a3cdc6043b8b07f3611f77b309c3f69480cda0b4d45c61929394de",
+        "transitive_descendants": 536
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-230442-72cfe21a-uv_gauge_to_yukawa_bridg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed SU(N_c) Fierz identity follows from the stated generator normalization, and the Haar two-point contraction plus singlet projection gives the stated 1/N_c^2 coefficient. The N_c=3 and N_iso=2 numerical values then follow by direct substitution.",
       "claim_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-      "claim_scope": "For N_c=3 and N_iso=2, the audit covers only the finite algebraic coefficient packet: C_pert=1/6, C_strong=1/9, their distinction, the checked Dirac channel facts, and the H_unit overlap 1/sqrt(6), with no expansion-selector claim.",
+      "claim_scope": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem.",
-      "claim_type_last_reviewed": "2026-05-30T23:03:12.917922+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-30T23:06:15.747547+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -304046,25 +304056,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-30T23:06:15.747547+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-230442-72cfe21a-uv_gauge_to_yukawa_bridg",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 12.069,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The SU(N_c) Fierz identity gives C_pert = 1/(2 N_c), while the leading one-link Haar contraction gives the color-singlet coefficient C_strong = 1/N_c^2, so at N_c = 3 they are 1/6 and 1/9.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "7d7c26477b45dcbd6ae2da5376ca9796c87886250191af6c61a4036af9ea8ab7",
       "note_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the Haar-contraction-to-color-singlet projection because the runner verifies the contraction and then records C_strong rather than making that projection an explicit executable assertion.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -304296,18 +304317,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 21,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 21
       },
       "runner_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
       "title": "UV Gauge-to-Yukawa Bridge: Perturbative vs Strong-Coupling Coefficients",
       "transitive_descendants": 536,
-      "verdict_rationale": null
+      "verdict_rationale": "The repaired note is scoped to finite algebraic coefficient support and explicitly removes the prior governing-coefficient selector claim. Independent formula inventory found the SU(3) normalization, Fierz coefficient, Haar contraction, singlet projection to 1/N_c^2, 1/6 versus 1/9 arithmetic, Dirac-channel nonzero/zero statements, and 1/sqrt(6) overlap consistent under the note's conventions. No cited support or open bridge is needed for the bounded algebraic comparison as stated."
     },
     "v_eff_total_njl_style_bounded_theorem_note_2026-05-10": {
       "audit_date": null,

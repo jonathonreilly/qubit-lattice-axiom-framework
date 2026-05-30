@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 169 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 609 |
+| **retained_bounded** | 610 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
 | unaudited | 1217 |
-| audit_in_progress | 1 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 942 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 943 |
 | `audited_conditional` | 13 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | B | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -1006,6 +1004,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `valley_linear_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `valley_linear_asymptotic_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14695,6 +14694,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.  _(class `C`)_
 - **chain closes:** True — The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.
 - **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
+- **auditor confidence:** high
+
+### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`
+
+- **Note:** [`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`](../../docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite bounded coefficient packet for N_c=3 and N_iso=2: SU(3) Fierz coefficient 1/6, one-link Haar color-singlet coefficient 1/9, their distinction, the stated Dirac-channel sanity checks, and the H_unit overlap 1/sqrt(6), with no expansion-domain selector claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-230442-72cfe21a-uv_gauge_to_yukawa_bridg`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The SU(N_c) Fierz identity gives C_pert = 1/(2 N_c), while the leading one-link Haar contraction gives the color-singlet coefficient C_strong = 1/N_c^2, so at N_c = 3 they are 1/6 and 1/9.  _(class `A`)_
+- **chain closes:** True — The displayed SU(N_c) Fierz identity follows from the stated generator normalization, and the Haar two-point contraction plus singlet projection gives the stated 1/N_c^2 coefficient. The N_c=3 and N_iso=2 numerical values then follow by direct substitution.
+- **rationale:** The repaired note is scoped to finite algebraic coefficient support and explicitly removes the prior governing-coefficient selector claim. Independent formula inventory found the SU(3) normalization, Fierz coefficient, Haar contraction, singlet projection to 1/N_c^2, 1/6 versus 1/9 arithmetic, Dirac-channel nonzero/zero statements, and 1/sqrt(6) overlap consistent under the note's conventions. No cited support or open bridge is needed for the bounded algebraic comparison as stated.
 - **auditor confidence:** high
 
 ### `valley_linear_action_note`

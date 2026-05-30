@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 254,
+    "critical": 253,
     "high": 303,
     "leaf": 353,
     "medium": 312
@@ -10,25 +10,31 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-      "claim_scope": "For N_c=3 and N_iso=2, the audit covers only the finite algebraic coefficient packet: C_pert=1/6, C_strong=1/9, their distinction, the checked Dirac channel facts, and the H_unit overlap 1/sqrt(6), with no expansion-selector claim.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
+      "cross_confirmation_status": null,
+      "deps": [
+        "plaquette_self_consistency_note",
+        "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
+        "yt_ward_identity_derivation_theorem"
+      ],
       "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.069,
-      "note_path": "docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 12.061,
+      "note_path": "docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py",
-      "transitive_descendants": 536
+      "runner_path": "scripts/frontier_yt_p1_i_s_lattice_pt_citation.py",
+      "transitive_descendants": 533
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1351,34 +1357,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_vertex_power.py",
       "transitive_descendants": 534
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_self_consistency_note",
-        "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-        "yt_ward_identity_derivation_theorem"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 12.061,
-      "note_path": "docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_p1_i_s_lattice_pt_citation.py",
-      "transitive_descendants": 533
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -36796,5 +36774,5 @@
     }
   ],
   "ready_count": 79,
-  "total_pending": 1222
+  "total_pending": 1221
 }

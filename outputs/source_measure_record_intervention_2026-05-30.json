@@ -1,0 +1,28 @@
+{
+  "boundary": {
+    "actual_status": "proposed_retained"
+  },
+  "composition": {
+    "composition": "RN densities multiply; log densities add"
+  },
+  "operational_equivalence": {
+    "atoms": 4,
+    "operational_state": "probability vector on sharp-record atoms"
+  },
+  "rn_representation": {
+    "history_atoms": 8,
+    "rn_score_dimension": 7
+  },
+  "status": {
+    "proposal_allowed": true,
+    "scope": "finite sharp-record source sector"
+  },
+  "summary": {
+    "actual_current_surface_status": "proposed_retained",
+    "audit_required_before_effective_retained": true,
+    "fail": 0,
+    "pass": 33,
+    "proposal_allowed": true,
+    "trace_class": "direct_blocker_closure"
+  }
+}

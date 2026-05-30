@@ -1,0 +1,51 @@
+loop_slug: plaquette-beta6-perturbative-scope-20260530
+date: 2026-05-30
+mode: science-fix
+target_claim_id: plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27
+target_note: docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md
+target_runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
+goal: "Convert the audited conditional beta=6 perturbative plaquette obstruction into a clean re-auditable runner-local diagnostic without adding axioms."
+target_status: no-go
+actual_current_surface_status: no-go
+conditional_surface_status: "Conditional on the supplied beta=6 normalization, supplied 16-term NSPT coefficient packet, supplied F2-scale convention, and supplied Monte Carlo comparator."
+hypothetical_axiom_status: null
+admitted_observation_status: "Supplied comparator only; not retained/effective authority."
+proposal_allowed: false
+proposal_allowed_reason: "The branch does not prove the NSPT packet, beta=6 normalization, F2 scale, or Monte Carlo comparator natively."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Scope the artifact to a deterministic obstruction over explicitly supplied inputs and correct the overstated tadpole-improved Pade precision."
+files_touched:
+  - docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md
+  - scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
+  - logs/runner-cache/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/runner_classification.json
+open_imports:
+  - "Sixteen NSPT plaquette coefficient packet."
+  - "Wilson-gauge beta=6 normalization and bare coupling map."
+  - "F2 scale convention."
+  - "Monte Carlo plaquette comparator 0.5934."
+no_go_routes:
+  - "Unbounded framework-native perturbative beta=6 plaquette prediction from the current artifact alone."
+verification:
+  - "python3 -m py_compile scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py -> TOTAL: PASS=24 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py --force --push-mode none --allow-non-main --concurrency 1"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+repo_status_after_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  audit_queue_ready: true
+next_exact_action: "Open draft review PR for the scoped diagnostic."
+stop_condition: "PR opened and verified; then pivot to the next uncovered audited conditional."

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: c77eb5816a56367d0bafc2bd6cd2626afe200b6e9d5f768622e22130c1f016ce
+runner_sha256: 11fd80b859715083b5d2faac04d4661858499b6b3691b7eb9ec917f2d128818f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation bounded-obstruction runner
@@ -11,9 +11,9 @@ Plaquette beta=6 perturbative-derivation bounded-obstruction runner
 
 
 ==============================================================================
-T1: framework-side constants at beta=6 (exact algebra)
+C1: supplied beta=6 Wilson-gauge constants (exact algebra)
 ==============================================================================
-  [PASS] beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1
+  [PASS] supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1
          beta = 6.0
   [PASS] g_bare^2 = 2 N_c / beta = 1 at beta=6
          g^2 = 1.0
@@ -242,7 +242,7 @@ T8: honest verdict on the perturbative-derivation question
 T9: scope (no new axioms / primitives / vocabulary)
 ==============================================================================
   [PASS] no new axiom introduced (Cl(3)/Z^3 baseline unchanged)
-         framework primitives unchanged; coefficients are bounded literature inputs
+         framework primitives unchanged; coefficients are supplied literature inputs
   [PASS] no new repo vocabulary introduced
          uses canonical: <P>, beta, w_n, alpha_bare, u_0, tadpole improvement, Pade
   [PASS] MC value 0.5934 enters only as comparator (not derivation input)
@@ -252,7 +252,7 @@ T9: scope (no new axioms / primitives / vocabulary)
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
   [PASS] note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-         length = 16277 chars
+         length = 18705 chars
   [PASS] note declares Status authority: independent audit lane only
          audit-lane authority pattern present
   [PASS] note declares no new axioms / no new primitives

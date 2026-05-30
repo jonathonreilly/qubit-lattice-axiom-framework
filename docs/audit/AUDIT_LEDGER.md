@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1140 |
+| unaudited | 1139 |
 | meta | 237 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 941 |
-| `audited_conditional` | 61 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1377 |
+| `unaudited` | 1376 |
 
 | claim_type | count |
 |---|---:|
@@ -1074,6 +1074,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1921,6 +1922,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.  _(class `A`)_
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
+- **auditor confidence:** high
+
+### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
+
+- **Note:** [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`](../../docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 staggered fermions in 1+1d with finite periodic L_s, m>0, eta_0=1, eta_1(t)=(-1)^t: the single-step action transfer matrices are non-positive, while the 2-step blocked free Fock transfer operator built from the decaying action eigenvalue is positive Hermitian.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-130752-9079b3a9-axiom_first_rp_two_step_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The 2-step kernel has eigenvalues e^{±2E(p)} with sinh^2 E(p)=m^2+sin^2 p, so the decaying single-particle kernel lambda_p=e^{-2E(p)} second-quantizes to T_hat^2=tensor_p diag(1,lambda_p)=B^dag B with H_hat=sum_p E(p)a_p^dag a_p>=0.  _(class `C`)_
+- **chain closes:** False — The core transfer-matrix derivation closes on its own restricted free-case terms: direct algebra gives trace(T_odd T_even)=2+4(m^2+sin^2 p)=2 cosh(2E) and determinant 1, hence eigenvalues e^{±2E}, and the diagonal Fock lift is positive. The packet nevertheless fails the binding formula-inventory clean standard because the source note's Honest status reports PASS=4 FAIL=0 while the runner, scorecard, and validation section report C1-C5 with PASS=5 FAIL=0.
+- **rationale:** The runner source is substantive rather than a print-only certificate: it constructs the action-derived single-step matrices, computes the 2-step spectrum, builds the diagonal Fock-space Gamma operator, and checks the B^dag B and OS-Gram consequences without importing external comparators or hard-coded contested values. Independent formula checks support the displayed transfer-matrix spectrum and positivity mechanism for the scoped free finite-volume case. However, the strict current-skill formula inventory exposes a source-packet quantitative drift in the validation prose: PASS=4 FAIL=0 is false as written after C5 was added. That stale displayed count prevents audited_clean until the note is corrected and re-audited.
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

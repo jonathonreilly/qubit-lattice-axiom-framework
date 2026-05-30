@@ -13923,6 +13923,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing tensor sign law is an exact finite-group/index identity, independently re-derived from the Levi-Civita determinant formula and rank-two transformation rule. The runner's random Wilson/F samples are only sanity checks, but the source proof states the analytic reason, and the all-48 epsilon enumeration supports the finite-group part. The no-go/admission-wall gate passes because the note does not assert strong-CP closure, full action-class O_h-invariance, topological-charge discretization covariance, continuum theta bridging, or exclusion of CP-odd slots outside the stated determinant-odd epsilon F F form.
 - **auditor confidence:** high
 
+### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`
+
+- **Note:** [`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`](../../docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded support for theta_eff = 0 only on the explicit canonical Wilson single-plaquette real-positive surface plus retained staggered determinant positivity and a scalar-mass-only action-class boundary.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-audit-ready-20260529-strong_cp_operator_basis`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A nonzero i theta Q_lat single-plaquette term is excluded because it makes the Boltzmann weight complex on the real-positive Wilson surface, and intersecting determinant positivity with the scalar-mass action class leaves only the real scalar mass line.  _(class `A`)_
+- **chain closes:** False — The algebra closes once the real-positive Wilson measure selector and scalar-mass-only boundary are admitted. The restricted packet does not derive or provide retained one-hop authority for those action-surface selectors from the Cl(3)/Z^3 baseline; R3 supplies only an abstract norm-square lemma.
+- **rationale:** The theta-slot rejection and mass-line selection are valid algebraic consequences of the stated bounded premises, and the runner performs substantive bounded checks rather than merely printing constants. However, the source note explicitly load-bears the real-positive Wilson action surface and the scalar-mass action-class boundary, and those are not closed by the cited retained authorities in this packet. The result is therefore conditional support on the named retained surface, not a clean derivation of that surface or of the parent strong-CP closure.
+- **open / conditional deps cited:**
+  - `STRONG_CP_THETA_ZERO_NOTE.md`
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
+- **auditor confidence:** high
+
 ### `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`
 
 - **Note:** [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](../../docs/STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)

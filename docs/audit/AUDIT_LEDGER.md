@@ -1112,7 +1112,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
-| `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10480,23 +10479,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The route's P1 derivation requires identifying the framework scalar generator W with Tr K and then using log(ρ_A ⊗ ρ_B) = log ρ_A ⊗ I + I ⊗ log ρ_B, so the Tomita-Gibbs route imports the additive-log/P1 content rather than deriving it.  _(class `A`)_
 - **chain closes:** True — The scoped no-go closes: the presented forward derivation of P1 explicitly depends on the underived W = Tr K identification plus the tensor-product log identity. The runner verifies the algebraic factorization, modular-Hamiltonian additivity, F_p contrast, and spectral Cauchy step; it does not establish a positive derivation of P1.
 - **rationale:** The load-bearing obstruction is an algebraic proof-dependency check, not a numerical match or external comparator. The runner source performs actual symbolic/numerical algebra checks and source/ledger bookkeeping checks; it does not merely print constants or import a contested value. The no-go discipline gate passes for the scoped boundary: the packet enumerates more than five attack routes, collapses the walls to the identification-plus-Cauchy residual, scans hidden assumptions, and keeps the claim narrower than global impossibility of P1.
-- **auditor confidence:** high
-
-### `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`
-
-- **Note:** [`OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md`](../../docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the conditional algebraic determinant-realization bridge on an assumed fermionic Grassmann/JW frame, together with zero-source staggered determinant positivity and conjugation/relabeling invariance of det/spec/Z.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260529-234807-3d50ae91-observable_principle_p2_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Set M = D + J; on the fermionic frame FS the matter partition function is the finite Grassmann Gaussian, so Z_matter[J] = integral exp(-chibar(D+J)chi) = det(D+J), and relabeling-invariant determinant/spectrum/trace readouts cannot see a pure AC_phi_lambda relabeling.  _(class `A`)_
-- **chain closes:** False — The Berezin determinant identity, positivity surface, and conjugation-invariance checks are valid finite algebraic closures. The full source conclusion does not close from the restricted packet because the cited Kähler-Dirac authority explicitly leaves the physical identification D = M_KS as open work, and the assertion that AC_phi_lambda is purely an S3 relabeling is imported from unaudited/unprovided sibling context rather than established here.
-- **rationale:** The runner source genuinely computes the stated finite algebraic identities and does not hard-code an external comparator or tuned value. Those checks support the narrow algebraic implication: given Grassmann generators and a specified matrix D+J, the partition readout is det(D+J), and determinant/spectrum/trace are invariant under conjugating relabelings. However, the note over-attributes closure to retained inputs: the actual framework kinetic-operator identification is not supplied by the cited substep-2 narrow theorem, and the AC_phi_lambda-as-pure-relabeling premise is not independently present in the one-hop packet. The result is therefore conditional on missing bridge content beyond FS.
-- **open / conditional deps cited:**
-  - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
-  - `RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`
-  - `P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md`
 - **auditor confidence:** high
 
 ### `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`

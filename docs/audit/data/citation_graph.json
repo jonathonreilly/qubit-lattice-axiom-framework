@@ -20154,10 +20154,6 @@
     },
     {
       "from": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
-      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
       "to": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
     },
     {
@@ -69047,12 +69043,11 @@
       "deps": [
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
         "staggered_only_det_positivity_case_a_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e82fa7195c3b52bce7711193c43ecc14c4e20507d813e809b7b21a10eeec1fda",
+      "note_hash": "d23c43485713fff31fabd575895b470aaea9af9f6986f8cde3d3b98d3e9ed233",
       "path": "docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md",
       "runner_path": "scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py",
       "title": "Observable-Principle P2 \u2014 Determinant-Realization Bridge, Conditional on the Fermionic Frame, and Residual Re-Attribution (FS, not AC_phi_lambda)"

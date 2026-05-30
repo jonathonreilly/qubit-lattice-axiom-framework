@@ -5,7 +5,7 @@ single-clock codimension-1 unitary evolution theorem (Block 12,
 2026-05-03):
 
   (S1) Stone's theorem unitarity on a finite-dim H_phys
-        T1: positive Hermitian transfer matrix T (RP)
+        T1: positive Hermitian temporal transfer matrix T
         T2: H = -(1/a_tau) log(T) self-adjoint and bounded below
         T3: U(t) := exp(-itH) is a strongly-continuous one-parameter
             unitary group: U(0) = I, U(s+t) = U(s) U(t), U^dag U = I
@@ -22,9 +22,9 @@ single-clock codimension-1 unitary evolution theorem (Block 12,
             holds for the temporal-link reflection
         T9: spatial reflection theta_1 fails the staggered-phase sign
             rule for the temporal hop term: eta_t(theta_1 x) = +eta_t(x)
-            (contradicts the (R-RP) factorisation requirement)
+            (contradicts the temporal transfer factorisation requirement)
         T10: the staggered-Dirac action does NOT factorise under
-            spatial reflection (no spatial RP)
+            spatial reflection (no spatial transfer clock)
 
 The runner uses a small qubit chain as an A_min-compatible toy: each
 site carries a 2-dim Hilbert space (matching the per-site uniqueness
@@ -88,7 +88,7 @@ def expm_hermitian(c: complex, A: np.ndarray) -> np.ndarray:
 
 def transfer_matrix_from_H(H: np.ndarray, a_tau: float) -> np.ndarray:
     """T = exp(-a_tau H). Positive Hermitian if H is Hermitian."""
-    # Subtract ground-state energy so T <= I (matches (R-RP) bound on canonical surface)
+    # Subtract ground-state energy so T <= I on the canonical transfer surface.
     H_shifted = H - np.eye(H.shape[0]) * float(np.linalg.eigvalsh(H).min())
     return expm_hermitian(-a_tau, H_shifted)
 
@@ -171,7 +171,7 @@ def test_S1_stone_unitarity(H: np.ndarray, a_tau: float) -> None:
         f"||H - H^dag||_op = {H_herm_resid:.3e}",
     )
     record(
-        "T2: H bounded below (spectrum condition)",
+        "T2: H bounded below after transfer normalization",
         min_H_eig > -1e-9,
         f"min E = {min_H_eig:.6f}",
     )
@@ -291,7 +291,7 @@ def test_S2_codimension1_cauchy(H: np.ndarray, L: int, a_tau: float, J: float) -
         O_xy_tensor = np.kron(O_xy_tensor, op)
     factorisation_resid = float(np.linalg.norm(O_xy_product - O_xy_tensor, ord=2))
     record(
-        "T5: equal-time local algebra factorises as tensor product (R-CL3 + M1)",
+        "T5: equal-time local algebra factorises as tensor product",
         factorisation_resid < 1e-12,
         f"||O_x O_y - tensor product|| = {factorisation_resid:.3e}",
     )
@@ -361,8 +361,7 @@ def test_S2_codimension1_cauchy(H: np.ndarray, L: int, a_tau: float, J: float) -
 
 
 def test_S3_unique_reflection_axis() -> None:
-    """T8-T10: staggered-phase sign rules — temporal RP holds, spatial
-    RP fails."""
+    """T8-T10: staggered-phase sign rules select the temporal transfer axis."""
     print()
     print("-" * 72)
     print("(S3) UNIQUENESS OF THE REFLECTION AXIS (no second clock)")
@@ -406,12 +405,12 @@ def test_S3_unique_reflection_axis() -> None:
                     for x2 in range(-1, 2) for x3 in range(-1, 2)]
     temporal_rule_holds = True
     for x in sample_sites:
-        # The temporal-link RP convention sign: eta_t flips sign under theta_t.
+        # The temporal-link transfer convention sign: eta_t flips under theta_t.
         # The Kogut-Susskind canonical eta_t(x) = 1, so the convention
         # forces -eta_t(x) = -1 on theta x.
         # i.e. when the staggered hop is rewritten as reflected,
         # the sign of the hop term picks up (-1).
-        # This convention sign is what makes the RP factorisation close.
+        # This convention sign is what makes the transfer factorisation close.
         rule_lhs = -eta_t(x)  # convention sign
         # For the temporal link reflection, rule_lhs = -1 (flipped from +1).
         if rule_lhs != -1:
@@ -426,23 +425,23 @@ def test_S3_unique_reflection_axis() -> None:
     # T9: spatial reflection fails the temporal-hop sign rule
     # Under theta_1: x = (t, x1, x2, x3) -> (t, -1-x1, x2, x3).
     # eta_t(x) = 1, eta_t(theta_1 x) = 1 — NO sign flip.
-    # The (R-RP) factorisation requires the temporal hop to pick up a sign
+    # The temporal transfer factorisation requires the temporal hop to pick up a sign
     # flip on the reflected image (this is what cancels the antilinear
     # involution contribution in the half-integration).
     # Since eta_t(theta_1 x) = +1 = +eta_t(x), the spatial reflection
-    # FAILS the (R-RP) sign convention.
+    # FAILS the temporal transfer sign convention.
     spatial_rule_fails = True
     for x in sample_sites:
         # Under spatial reflection, eta_t does NOT pick up a sign flip:
         rule_lhs = eta_t(theta_1(x))  # +1 always
-        rule_rhs = -eta_t(x)  # -1 always (this is what (R-RP) requires)
+        rule_rhs = -eta_t(x)  # -1 always (what temporal transfer requires)
         if rule_lhs == rule_rhs:
             spatial_rule_fails = False
             break
     record(
         "T9: spatial reflection theta_1 fails the temporal-hop sign rule",
         spatial_rule_fails,
-        f"eta_t(theta_1 x) = +eta_t(x), but (R-RP) requires -eta_t(x)",
+        f"eta_t(theta_1 x) = +eta_t(x), but temporal transfer requires -eta_t(x)",
     )
 
     # T10: the staggered-Dirac action does NOT factorise under spatial
@@ -494,11 +493,11 @@ def test_S3_unique_reflection_axis() -> None:
     M_reflected = M_KS[np.ix_(perm, perm)]
     # For the temporal-hop part of M_KS (eta_t = +1 always), spatial
     # reflection should act trivially on those entries (no sign flip).
-    # For RP, we'd need (R-RP)'s sign flip on temporal hops, which
+    # For a spatial transfer clock, we'd need the temporal-hop sign flip, which
     # requires (-eta_t) on the reflected image. Since the reflected
-    # matrix has +eta_t on temporal hops, the (R-RP) factorisation fails.
+    # matrix has +eta_t on temporal hops, the spatial transfer factorisation fails.
     # Concretely: the temporal-hop part of M_reflected equals the
-    # temporal-hop part of M_KS (no sign change), but the (R-RP) proof
+    # temporal-hop part of M_KS (no sign change), but the temporal-transfer proof
     # needs a sign change. This is a structural mismatch.
     M_KS_temporal_only = np.zeros_like(M_KS)
     for t in range(-1, Lt - 1):
@@ -511,16 +510,16 @@ def test_S3_unique_reflection_axis() -> None:
                 M_KS_temporal_only[i, j] = M_KS[i, j]
                 M_KS_temporal_only[j, i] = M_KS[j, i]
     M_reflected_temporal_only = M_KS_temporal_only[np.ix_(perm, perm)]
-    # If spatial reflection were RP, the temporal-hop part should pick up a sign:
-    # M_reflected_temporal == -M_KS_temporal (this would be the (R-RP) convention).
+    # If spatial reflection were a transfer clock, the temporal-hop part should pick up a sign:
+    # M_reflected_temporal == -M_KS_temporal.
     # Verify: the sum M_reflected_temporal + M_KS_temporal is NOT zero (no sign flip).
     sum_norm = float(np.linalg.norm(M_reflected_temporal_only + M_KS_temporal_only, ord="fro"))
-    # If this norm is large, the sign-flip rule fails (no spatial RP).
+    # If this norm is large, the sign-flip rule fails (no spatial transfer clock).
     spatial_RP_fails = sum_norm > 1e-6
     record(
         "T10: staggered-Dirac action does NOT factorise under spatial reflection",
         spatial_RP_fails,
-        f"||M_reflected_temp + M_temp||_F = {sum_norm:.4f} (would be 0 if spatial RP held)",
+        f"||M_reflected_temp + M_temp||_F = {sum_norm:.4f} (would be 0 if spatial transfer held)",
     )
 
 
@@ -542,13 +541,13 @@ def main() -> None:
     print("       hypersurface with mutually-commuting equal-time local")
     print("       algebra and finite Lieb-Robinson propagation.")
     print("  (S3) The staggered-Dirac action admits only the temporal")
-    print("       direction as an RP-admissible reflection axis (no")
-    print("       spatial RP), so the framework has exactly one clock.")
+    print("       direction as the transfer axis (no independent")
+    print("       spatial transfer clock), so the framework has exactly one clock.")
     print()
     print("Setup:")
-    print("  Toy A_min: L-site qubit chain (each site: 2-dim per (R-CL3))")
+    print("  Toy A_min: L-site qubit chain (one qubit algebra per site)")
     print("  H = sum_z h_z, range r = 1, ||h_z|| = J")
-    print("  T = exp(-a_tau H), positive Hermitian (per (R-RP))")
+    print("  T = exp(-a_tau H), positive Hermitian temporal transfer")
     print()
 
     L = 6  # spatial sites (toy 1+1d block; framework uses 1+3d)

@@ -45,7 +45,7 @@ def source_firewall() -> dict[str, object]:
     text = NOTE.read_text()
     single = SINGLE_CLOCK.read_text()
     required = [
-        "**Claim type:** bounded_theorem",
+        "**Claim type:** meta",
         "audit-unblock packet",
         "not independent blockers for the time-count use case",
         "remaining root is the action/temporal-transfer axis",

@@ -1,10 +1,10 @@
 loop_slug: 3plus1-spacetime-anomaly-forces-time-20260530
 branch: physics-loop/3plus1-spacetime-anomaly-forces-time-20260530
 target_status: best-honest-status
-current_surface_status: action-surface positive theorem candidate; ABJ import retired on framework action surface
-active_route: framework-action U(1)^3 ABJ proof for anomaly-forces-time
-hard_residual: "Can audit accept the action-surface ABJ proof and the non-ABJ dependencies as clean enough for effective retained 3+1 closure?"
-cycle_count: 4
+current_surface_status: unbounded positive-theorem chain candidate pending audit; no bounded hypercharge/alpha/standard-ABJ rows load-bearing
+active_route: framework-action U(1)^3 ABJ proof + scale-free U(1) cubic trace + narrowed single-clock lattice theorem
+hard_residual: "Independent audit must ratify the ready positive roots, then ABJ action and parent 3+1 can be audited without bounded-row or citation-cycle blockers."
+cycle_count: 5
 files_touched:
   - docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md
   - scripts/frontier_abj_epsilon_index_square_block_no_go.py
@@ -15,13 +15,21 @@ files_touched:
   - outputs/abj_standard_theorem_bridge_for_anomaly_forces_time_2026-05-30.json
   - outputs/anomaly_forces_time_standard_abj_closure_2026-05-30.json
   - docs/ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md
+  - docs/ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md
+  - scripts/frontier_abj_scale_free_chiral_u1_trace_surface.py
+  - outputs/abj_scale_free_chiral_u1_trace_surface_2026-05-30.json
   - scripts/frontier_abj_from_framework_action_u1_cubic.py
   - outputs/abj_from_framework_action_u1_cubic_2026-05-30.json
   - scripts/frontier_anomaly_forces_time_action_abj_closure.py
   - outputs/anomaly_forces_time_action_abj_closure_2026-05-30.json
+  - docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
+  - scripts/axiom_first_single_clock_codimension1_evolution_check.py
+  - docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md
+  - scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
 open_imports:
-  - "staggered-Dirac/action realization gate remains audit-pending for the parent 3+1 composition."
-  - "physical hypercharge/matter-surface chain remains audit-pending for the parent 3+1 composition."
-  - "single-clock codimension-1 theorem remains audit-pending for the parent 3+1 composition."
-next_exact_action: "Run audit pipeline, active action-ABJ parent gate, strict audit lint, then push PR #2260 with ABJ no longer bounded/imported."
-stop_condition: "Action-surface ABJ repair is complete after theorem note, runner, parent repair, audit pipeline, and PR update; effective retained status still waits on independent audit of the new proof and non-ABJ dependencies."
+  - "No bounded hypercharge/alpha/standard-ABJ row remains load-bearing for the parent 3+1 path."
+  - "Independent audit remains required for the ready positive roots: single-clock, scale-free trace, and free transfer positivity."
+  - "The full staggered-Dirac species/generation gate is outside the 3+1 proof boundary; the local action operator used by ABJ is carried inside the ABJ action theorem."
+  - "ABJ action and parent 3+1 become auditable after those ready roots ratify; the audit graph now has zero cycles."
+next_exact_action: "Push PR #2260 update; auditor should pull ready roots in queue order, then audit ABJ action and anomaly-forces-time parent."
+stop_condition: "Branch is prepared for unbounded retained closure pending independent audit: all active load-bearing rows are positive/no-go/meta, ready queue has no cycle blockers, and strict lint passes."

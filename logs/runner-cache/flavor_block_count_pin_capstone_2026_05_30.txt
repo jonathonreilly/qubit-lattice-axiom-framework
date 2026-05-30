@@ -1,0 +1,5 @@
+(A) weights: full-trace/Plancherel/Gram(3,6,6) -> (1,2) -> Q=1;  center trace -> (1,1) -> Q=2/3
+(B) partition: real circulant eigenvalues [1.8 0.6 0.6] -> 2 energy sectors (doublet degenerate). DERIVED.
+(C) 3-mode (doublet x2, physical): Q=0.6666=2/3 (observed);  2-sector (doublet x1): Q=0.8070 != 2/3
+    -> objectivity derives PARTITION not WEIGHT (mu,tau are 2 physical generations).
+VERDICT: no survivor; pin = center-trace vs full-trace; partition derived, weight not.

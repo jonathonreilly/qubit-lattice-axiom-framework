@@ -43,7 +43,7 @@ Live ledger `effective_status` (`docs/audit/data/audit_ledger.json`, verified
 
 | Input | Source | Live `effective_status` (2026-05-30) |
 |---|---|---|
-| The ten explicit free Dirac Poincare generators (`H`, `P^i`, `J^i`, `K^i`) in closed form on the one-particle space, **and** the verified closure of the full Poincare algebra `iso(3,1)` on the Schwartz core (incl. `[K^i,K^j]=-i eps^{ijk}J^k`); the boost preserves `H_m^+` and the invariant measure `d^3p/(2E)`; the spin-1/2 Wigner-rotation carrier `W^i` is the smooth `SU(2)`-valued little-group cocycle | `FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md` (plain text -- on a separate not-yet-merged branch; **not** a citation-graph edge) | not on main |
+| The ten explicit free Dirac Poincare generators (`H`, `P^i`, `J^i`, `K^i`) in closed form on the one-particle space, **and** the verified closure of the full Poincare algebra `iso(3,1)` on the Schwartz core (incl. `[K^i,K^j]=-i eps^{ijk}J^k`); the boost preserves `H_m^+` and the invariant measure `d^3p/(2E)`; the spin-1/2 Wigner-rotation carrier `W^i` is the smooth `SU(2)`-valued little-group cocycle | `FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md` (plain text -- on main, commit 72e4e7fa1, not yet in the audit ledger) | on main (audit-pending) |
 | Free Dirac mode facts: positive single-particle energy `E(p)=sqrt(\|p\|^2+m^2)>=m>0`, Dirac Hamiltonian spectrum `{+E,+E,-E,-E}`, `u/v` completeness, and the CAR-relabeled bounded-below many-body Hamiltonian | [FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md](FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) | `unaudited` |
 | Standard functional analysis: Nelson's analytic-vector theorem; the Kato-Rellich theorem (bounded/relatively-bounded symmetric perturbations); the essential self-adjointness of multiplication operators and of `-i d/dx` on `S(R)`; Stone's theorem; Wigner's induced-representation construction of the massive spin-`s` irrep | Nelson 1959; Reed-Simon v. I (1980) Ch. VIII; Reed-Simon v. II (1975) Ch. X; Wigner 1939; Simon | methodology |
 
@@ -58,15 +58,15 @@ no new repo vocabulary.
 
 **Relation to the companion Poincare-representation note (plain text, not a
 citation edge).** The companion note
-`FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md` (on a separate
-not-yet-merged branch) reported gap G2 as *"CLOSED at the level of the explicit
+`FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md` (on main,
+commit 72e4e7fa1; not yet in the audit ledger) reported gap G2 as *"CLOSED at the level of the explicit
 algebra-and-generators construction, and closed-modulo-one-named-self-adjointness-
 technicality (T1) at the level of the full unitary group representation."* Its T1
 is verbatim: *"essential self-adjointness / analytic-vector integrability of the
 unbounded generators on the Schwartz core -- the standard step that upgrades the
 verified Lie-algebra representation on a core to a unitary representation of the
-Poincare group."* This note discharges that T1. It is referenced in plain text only
-(a markdown link would create a dangling citation-graph edge to a note not on main).
+Poincare group."* This note discharges that T1 (which the on-main companion explicitly leaves open).
+It is referenced in plain text pending the companion's audit-ledger registration.
 
 ---
 
@@ -550,10 +550,10 @@ Load-bearing one-hop dependencies (markdown links for the audit citation graph):
 Plain-text references (NOT markdown-link dependency edges):
 
 - `FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md` -- the companion
-  note (on a separate not-yet-merged branch) supplying the explicit ten generators
-  and the verified Poincare algebra closure; this note discharges its residual T1.
-  Referenced in plain text only (a markdown link would create a dangling
-  citation-graph edge to a note not on main).
+  note (on main, commit 72e4e7fa1; not yet in the audit ledger) supplying the
+  explicit ten generators and the verified Poincare algebra closure; this note
+  discharges its residual T1. Referenced in plain text pending the companion's
+  audit-ledger registration.
 
 Non-load-bearing references (textbook methodology):
 

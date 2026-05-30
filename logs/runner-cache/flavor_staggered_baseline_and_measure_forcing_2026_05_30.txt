@@ -1,0 +1,31 @@
+
+========================================================================
+MOVE A: condensate on Wilson (r=1) vs chiral/staggered (r=0) -- does Q=1/3 survive?
+========================================================================
+   r  Gu Gs   a        b        r_K=(b/a)^2  Q
+   1  2  2   +0.9839  +0.0000   0.0000     0.3333
+   1  2  6   +0.9839  +0.0000   0.0000     0.3333
+   0  2  2   +1.6109  +0.0000   0.0000     0.3333
+   0  2  6   +1.6109  +0.0000   0.0000     0.3333
+   uniform wins (b=0, Q=1/3) on BOTH operators -> baseline NOT a Wilson artifact.
+   (off-diagonal condenses alone on Gu=0, but loses to uniform when both compete.)
+
+========================================================================
+MOVE B: covariant Tr(M^2) measure forces SECTOR (Q=2/3) over dimension (Q=1)
+========================================================================
+  M concrete 3x3, eigenvalues lambda0 (singlet x1), lambda1 (doublet x2).
+  (1) Tr(M^2)=lambda0^2+2 lambda1^2 (correct multiplicity): <l0^2>=1,<l1^2>=1/2
+      isotype weights <singlet>=1.0, <doublet>=1.0 -> EQUAL -> SECTOR -> Q=2/3
+  (2) dimension (doublet as 1 dof): <l0^2>=<l1^2>=1 -> 1:2 -> Q=1  [MIS-COUNTS doublet]
+  Tr(M^2) is unitarily invariant; the Q=1 form a^2+b^2 is basis-dependent.
+  => fork RESOLVED toward SECTOR/2/3 (the concrete mass matrix counts all 3 generations).
+
+========================================================================
+VERDICT
+========================================================================
+  A: Q=1/3 condensate baseline robust (Wilson AND staggered) -> value is the MEASURE,
+     not the VEV. B: the covariant standard matrix measure Tr(M^2), correctly counting
+     the doublet's 2-fold multiplicity, is forced over the dimension measure -> SECTOR
+     -> Q=2/3 IN EXPECTATION, resolving the campaign's trace-vs-sector fork toward 2/3.
+  HONEST GAP: expected 2/3, not the exact 1e-5 -- needs the operator to be the typical/
+  max-entropy draw, or a separate exactness mechanism. The fork is ranked; exactness open.

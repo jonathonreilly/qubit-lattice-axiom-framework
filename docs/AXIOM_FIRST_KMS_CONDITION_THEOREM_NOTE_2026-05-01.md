@@ -20,7 +20,7 @@ satisfies the **Kubo-Martin-Schwinger (KMS) condition** at inverse
 temperature `β_th = L_τ · a_τ`. The companion artifacts are the
 retained RP support note
 ([`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md))
-and the retained spectrum-condition support note
+and the spectrum-condition support note
 ([`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)).
 
 After this note, the package's thermal-state language can quote a
@@ -63,7 +63,7 @@ temperature.
   `T : H_phys → H_phys` is Hermitian, positive, and has operator norm
   `‖T‖ ≤ 1` on the canonical surface. Translation in Euclidean time
   by one lattice unit is implemented by `T`.
-- **Spectrum condition.** From the retained spectrum-condition support
+- **Spectrum condition.** From the spectrum-condition support
   note (SC1, SC2), `H := -(1/a_τ) log(T / M_T)` is self-adjoint and
   `H ≥ 0` on `H_phys`, with `M_T = ‖T‖_{op}`. Equivalently
   `T = M_T · e^{-a_τ H}` with `H ≥ 0`.
@@ -365,7 +365,7 @@ This completes the proof of (K1)–(K4) on `A_min`.
 
 - A1, A2, A3, A4 (only as in the RP note's hypothesis set).
 - Retained RP transfer-matrix structure (R3 of the RP note).
-- Retained spectrum condition (SC1, SC2) for `H ≥ 0`.
+- Spectrum condition (SC1, SC2) for `H ≥ 0`.
 - Standard cyclic-trace identity (basic linear algebra).
 
 No fitted parameters. No observed values used as proof inputs. No
@@ -409,7 +409,7 @@ retained RP + spectrum condition by Steps 1–5. The proof leans
 entirely on:
 
 - the retained RP transfer matrix `T` (already proved on `A_min`);
-- the retained spectrum condition `H ≥ 0` (already proved on
+- the spectrum condition `H ≥ 0` (already proved on
   `A_min`);
 - the cyclic-trace property of finite-dim traces (basic linear
   algebra);
@@ -426,7 +426,7 @@ cross-checks numerical equality of `F_{A,B}(t)` and
 
 ```yaml
 actual_current_surface_status: support
-conditional_surface_status: derived support theorem on A_min + retained RP + retained spectrum condition
+conditional_surface_status: derived support theorem on A_min + retained RP + spectrum condition
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
@@ -448,7 +448,7 @@ bare_retained_allowed: false
 
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
 - retained RP support note: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- retained spectrum-condition support note: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+- spectrum-condition support note: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - companion cluster-decomposition note: [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
 - companion CPT note: [`AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`](AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md)
 - standard external proofs (cited as theorem-grade references; we do

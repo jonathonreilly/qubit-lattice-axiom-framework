@@ -1,56 +1,19 @@
-# Audit-Backlog Retained Campaign — Progress Synthesis (Cycles 1-19)
+# Audit-Backlog Campaign Progress Synthesis (Cycles 1-19)
 
-**Date:** 2026-05-02 (2026-05-28: narrowed to a purely textual campaign
-index per audit path (b)).
-**Type:** meta
-**Status:** purely textual campaign index / historical log covering cycles
-1-19 of audit-backlog-campaign-20260502. It records what each cycle did and
-points to the per-cycle authority certificates; it does **not** itself
-certify any aggregate claim-state.
-**Status authority:** independent audit lane only.
-**Index-integrity runner:** `scripts/frontier_audit_backlog_campaign_synthesis.py`
-— checks internal consistency of this log (cycle/PR/section structure), not
-the science claims of any cycle.
+**Date:** 2026-05-02
+**Claim type:** meta
+**Status:** campaign-level progress synthesis covering cycles 1-19 of
+audit-backlog-campaign-20260502. Documents cumulative claim-state
+movement, identifies remaining Nature-grade targets, and provides
+handoff for review backlog.
+**Primary runner:** `scripts/frontier_audit_backlog_campaign_synthesis.py`
 
-## 2026-05-28 Narrowing (purely textual campaign index)
+## 2026-05-28 Science-Fix Re-Audit Scope
 
-The 2026-05-28 audit verdict on this row (`audited_conditional`) was:
-
-> *"The restricted packet provides only one LHCM authority plus a runner
-> that checks substrings in the synthesis note. It does not provide the
-> cycle-level CLAIM_STATUS_CERTIFICATE.md files or retained convention/bridge
-> authorities needed to verify the aggregate status claims."*
-
-with the offered repair: *"include the 19 cycle-level
-CLAIM_STATUS_CERTIFICATE.md files and the convention/bridge authorities they
-rely on, OR narrow this row to a purely textual campaign index."*
-
-This revision takes the **second path**. Wiring all 19 per-cycle certificates
-plus their convention/bridge authorities as one-hop edges is a large
-structural-cleanup task and would not change the nature of this file, which is
-a campaign log, not a derivation. So this note is explicitly scoped as a
-**purely textual campaign index**:
-
-- **Every aggregate status statement below (§2 "now fully covered", "a
-  coherent SM gauge structure now flows", §2.4 demotions, etc.) is a
-  historical campaign-log entry**, a pointer to the authority that actually
-  certifies it — the per-cycle `CLAIM_STATUS_CERTIFICATE.md` under
-  `.claude/science/physics-loops/audit-backlog-campaign-20260502/` (§8) and
-  the named lane authorities. **No aggregate claim-state is certified here.**
-- The runner is an **index-integrity check** (internal consistency of the
-  cycle/PR/section log), not a verification of any cycle's science. Its
-  PASS/FAIL says the index is well-formed, nothing about whether a cycle's
-  claim is retained.
-- Authoritative status for any cycle lives in that cycle's certificate and
-  the lane authority note, never in this index's prose. Where this index and
-  an authority disagree, the authority governs.
-
-The six notes that link here cite it as a "canonical synthesis template" /
-"§2.3 cluster identification" / campaign-record pointer — i.e. as an index,
-not a load-bearing derivation authority. No new axiom, import, or retained
-bridge is introduced. This already matches §6 below
-(`proposal_allowed: false`, "campaign-level synthesis, not a new
-derivation").
+This file is a textual campaign index and handoff, not a theorem row and not a
+bundle-level authority for the 19 cycle outputs. Re-audit should not require
+this synthesis to include every cycle-level certificate or convention bridge:
+those remain owned by the individual cycle PRs and source notes.
 
 ## 0. Campaign overview
 

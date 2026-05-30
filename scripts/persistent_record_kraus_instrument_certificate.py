@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Finite record-writing isometry certificate for Kraus instrument structure."""
+"""Finite isometry certificate for Kraus instrument algebra.
+
+The runner verifies the bounded linear-algebra theorem:
+if W: H_sys -> H_sys tensor H_record is a finite normalized isometry and
+W = sum_r K_r tensor |r>, then the extracted blocks K_r form a Kraus
+CPTP instrument. It does not construct W from persistent-record dynamics.
+"""
 
 from __future__ import annotations
 
@@ -96,7 +102,10 @@ def main() -> None:
             f"trace_error={trace_error:.3e} channel_min_eig={min_eig:.3e}"
         )
 
-    print("CERTIFICATE PASS: normalized finite record-writing map defines a Kraus CPTP instrument")
+    print("CERTIFICATE PASS: finite normalized isometry defines a Kraus CPTP instrument")
+    print("FINITE_ISOMETRY_TO_KRAUS_INSTRUMENT_ALGEBRA=TRUE")
+    print("PERSISTENT_RECORD_DYNAMICS_BRIDGE_CLAIMED=FALSE")
+    print("NORMALIZED_RECORD_WRITING_ISOMETRY_DERIVED_FROM_FRAMEWORK=FALSE")
 
 
 if __name__ == "__main__":

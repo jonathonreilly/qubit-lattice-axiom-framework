@@ -8,10 +8,10 @@ family.
 
 Artifacts:
 
-- [`scripts/lattice_weak_field_purity_scaling.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_weak_field_purity_scaling.py)
-- [`logs/2026-04-03-lattice-weak-field-purity-scaling.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-weak-field-purity-scaling.txt)
+- [`scripts/lattice_weak_field_purity_scaling.py`](../scripts/lattice_weak_field_purity_scaling.py)
+- [`logs/2026-04-03-lattice-weak-field-purity-scaling.txt`](../logs/2026-04-03-lattice-weak-field-purity-scaling.txt)
 - weak-field reopening note:
-  [`docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md)
+  [`docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md`](../docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md)
 
 ## Question
 

@@ -5,9 +5,9 @@
 
 ## Artifact chain
 
-- Script: [`scripts/directional_b_geometry_normalized_holdout_transfer.py`](/Users/jonreilly/Projects/Physics/scripts/directional_b_geometry_normalized_holdout_transfer.py)
-- Log: [`logs/2026-04-05-directional-b-geometry-normalized-holdout-transfer-mass5.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-directional-b-geometry-normalized-holdout-transfer-mass5.txt)
-- Prior bounded baseline: [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md)
+- Script: [`scripts/directional_b_geometry_normalized_holdout_transfer.py`](../scripts/directional_b_geometry_normalized_holdout_transfer.py)
+- Log: [`logs/2026-04-05-directional-b-geometry-normalized-holdout-transfer-mass5.txt`](../logs/2026-04-05-directional-b-geometry-normalized-holdout-transfer-mass5.txt)
+- Prior bounded baseline: [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md`](../docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md)
 
 This follow-on keeps the fixed directional-measure propagator and the same
 mass-side action observables, but widens the source window from `3` to `5`
@@ -86,10 +86,10 @@ In other words:
 
 Read this with:
 
-- [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md)
-- [`logs/2026-04-01-directional-b-mass-window-transfer.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-01-directional-b-mass-window-transfer.txt)
-- [`logs/2026-04-01-directional-b-overlap-margin-card.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-01-directional-b-overlap-margin-card.txt)
-- [`docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](/Users/jonreilly/Projects/Physics/docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md)
+- [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md`](../docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md)
+- [`logs/2026-04-01-directional-b-mass-window-transfer.txt`](../logs/2026-04-01-directional-b-mass-window-transfer.txt)
+- [`logs/2026-04-01-directional-b-overlap-margin-card.txt`](../logs/2026-04-01-directional-b-overlap-margin-card.txt)
+- [`docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](../docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md)
 
 Together they now say:
 

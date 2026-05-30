@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/persistent_object_green_scout.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_green_scout.py)
-- [`logs/2026-04-05-persistent-object-green-scout.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-persistent-object-green-scout.txt)
+- [`scripts/persistent_object_green_scout.py`](../scripts/persistent_object_green_scout.py)
+- [`logs/2026-04-05-persistent-object-green-scout.txt`](../logs/2026-04-05-persistent-object-green-scout.txt)
 
 ## Question
 

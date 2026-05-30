@@ -8,7 +8,7 @@ hard-geometry lane. It keeps the corrected Born harness fixed and sweeps only
 the dense central-band family.
 
 Script:
-[`scripts/central_band_dense_joint_highN.py`](/Users/jonreilly/Projects/Physics/scripts/central_band_dense_joint_highN.py)
+[`scripts/central_band_dense_joint_highN.py`](../scripts/central_band_dense_joint_highN.py)
 
 ## Setup
 

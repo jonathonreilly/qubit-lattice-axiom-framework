@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/persistent_object_adaptive_readout_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_adaptive_readout_probe.py)
-- [`logs/2026-04-05-persistent-object-adaptive-readout-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-persistent-object-adaptive-readout-probe.txt)
+- [`scripts/persistent_object_adaptive_readout_probe.py`](../scripts/persistent_object_adaptive_readout_probe.py)
+- [`logs/2026-04-05-persistent-object-adaptive-readout-probe.txt`](../logs/2026-04-05-persistent-object-adaptive-readout-probe.txt)
 
 ## Question
 

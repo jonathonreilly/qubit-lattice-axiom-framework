@@ -130,7 +130,7 @@ Newtonian closure.
 
 ## Artifact chain
 
-- [`scripts/action_power_canonical_harness.py`](/Users/jonreilly/Projects/Physics/scripts/action_power_canonical_harness.py)
-- [`logs/2026-04-04-action-power-canonical-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-action-power-canonical-harness.txt)
-- [`scripts/action_power_3d_gravity_sign_closure.py`](/Users/jonreilly/Projects/Physics/scripts/action_power_3d_gravity_sign_closure.py)
-- [`logs/2026-04-04-action-power-3d-gravity-sign-closure.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-action-power-3d-gravity-sign-closure.txt)
+- [`scripts/action_power_canonical_harness.py`](../scripts/action_power_canonical_harness.py)
+- [`logs/2026-04-04-action-power-canonical-harness.txt`](../logs/2026-04-04-action-power-canonical-harness.txt)
+- [`scripts/action_power_3d_gravity_sign_closure.py`](../scripts/action_power_3d_gravity_sign_closure.py)
+- [`logs/2026-04-04-action-power-3d-gravity-sign-closure.txt`](../logs/2026-04-04-action-power-3d-gravity-sign-closure.txt)

@@ -5,8 +5,8 @@
 
 ## Artifact Chain
 
-- [`scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py)
-- [`logs/2026-04-06-alt-connectivity-family-sign.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-alt-connectivity-family-sign.txt)
+- [`scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py`](../scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py)
+- [`logs/2026-04-06-alt-connectivity-family-sign.txt`](../logs/2026-04-06-alt-connectivity-family-sign.txt)
 
 ## Question
 

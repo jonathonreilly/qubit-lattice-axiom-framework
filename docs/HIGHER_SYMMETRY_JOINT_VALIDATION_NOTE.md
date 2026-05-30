@@ -39,22 +39,22 @@ SHA-pinned cache. Neither (a) nor (b) is supplied in this revision.
 This note records the first joint Born + gravity + decoherence validation for
 the higher-symmetry families introduced in:
 
-[`scripts/higher_symmetry_dag.py`](/Users/jonreilly/Projects/Physics/scripts/higher_symmetry_dag.py)
+[`scripts/higher_symmetry_dag.py`](../scripts/higher_symmetry_dag.py)
 
 The joint validator is:
 
-[`scripts/higher_symmetry_joint_validation.py`](/Users/jonreilly/Projects/Physics/scripts/higher_symmetry_joint_validation.py)
+[`scripts/higher_symmetry_joint_validation.py`](../scripts/higher_symmetry_joint_validation.py)
 
 Logs:
 
-[`logs/2026-04-03-higher-symmetry-joint-validation.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-higher-symmetry-joint-validation.txt)
-[`logs/2026-04-03-higher-symmetry-joint-validation-z2z2-dense-n80-n120.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-higher-symmetry-joint-validation-z2z2-dense-n80-n120.txt)
+[`logs/2026-04-03-higher-symmetry-joint-validation.txt`](../logs/2026-04-03-higher-symmetry-joint-validation.txt)
+[`logs/2026-04-03-higher-symmetry-joint-validation-z2z2-dense-n80-n120.txt`](../logs/2026-04-03-higher-symmetry-joint-validation-z2z2-dense-n80-n120.txt)
 
 ## Primary-runner source (load-bearing, inlined 2026-05-18)
 
 To restore restricted-packet visibility for the `audited_conditional`
 `runner_artifact_issue` repair, the full load-bearing source of the joint
-validator [`scripts/higher_symmetry_joint_validation.py`](/Users/jonreilly/Projects/Physics/scripts/higher_symmetry_joint_validation.py)
+validator [`scripts/higher_symmetry_joint_validation.py`](../scripts/higher_symmetry_joint_validation.py)
 (336 lines) is inlined below. This is the primary runner producing the
 sparse N=25,40,60,80 `Z₂ × Z₂` row that is the binding evidence of this note.
 
@@ -905,7 +905,7 @@ Readout:
 ```
 
 The dense N=80/100/120 log
-[`logs/2026-04-03-higher-symmetry-gravity-probe-z2z2-dense-n80-n120.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-higher-symmetry-gravity-probe-z2z2-dense-n80-n120.txt)
+[`logs/2026-04-03-higher-symmetry-gravity-probe-z2z2-dense-n80-n120.txt`](../logs/2026-04-03-higher-symmetry-gravity-probe-z2z2-dense-n80-n120.txt)
 exists but is produced by the **gravity-probe** runner
 (`scripts/higher_symmetry_gravity_probe.py`), not the joint-validator.
 Its registered cache is
@@ -1025,9 +1025,9 @@ but its exponent fit is too noisy to promote as a clean asymptotic law.
 This note does **not** replace the earlier exact-`Z2` story. The canonical
 exact mirror result remains the mirror/chokepoint lane in:
 
-[`docs/MIRROR_CHOKEPOINT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MIRROR_CHOKEPOINT_NOTE.md)
+[`docs/MIRROR_CHOKEPOINT_NOTE.md`](../docs/MIRROR_CHOKEPOINT_NOTE.md)
 
-The `Z2` branch inside [`scripts/higher_symmetry_dag.py`](/Users/jonreilly/Projects/Physics/scripts/higher_symmetry_dag.py)
+The `Z2` branch inside [`scripts/higher_symmetry_dag.py`](../scripts/higher_symmetry_dag.py)
 is only a node-placement symmetry check, not the exact edge-mirrored
 construction used in the retained mirror result.
 

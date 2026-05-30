@@ -8,7 +8,7 @@ purely local event-persistence rule could reproduce part of the hard-
 geometry benefit without the nonlocal path-count asymmetry machinery.
 
 Script:
-[`scripts/hard_geometry_local_support_pilot.py`](/Users/jonreilly/Projects/Physics/scripts/hard_geometry_local_support_pilot.py)
+[`scripts/hard_geometry_local_support_pilot.py`](../scripts/hard_geometry_local_support_pilot.py)
 
 ## Setup
 

@@ -7,8 +7,8 @@
 
 This note is the conservative readout for the dedicated sweep harness:
 
-- [scripts/valley_linear_robustness_sweep.py](/Users/jonreilly/Projects/Physics/scripts/valley_linear_robustness_sweep.py)
-- [logs/2026-04-04-valley-linear-robustness-sweep.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-robustness-sweep.txt)
+- [scripts/valley_linear_robustness_sweep.py](../scripts/valley_linear_robustness_sweep.py)
+- [logs/2026-04-04-valley-linear-robustness-sweep.txt](../logs/2026-04-04-valley-linear-robustness-sweep.txt)
 
 The replay uses:
 
@@ -79,6 +79,6 @@ What this note does **not** claim:
 
 For the broader action-law comparison, use:
 
-- [VALLEY_LINEAR_ACTION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/VALLEY_LINEAR_ACTION_NOTE.md)
-- [ACTION_CROSSOVER_NOTE.md](/Users/jonreilly/Projects/Physics/docs/ACTION_CROSSOVER_NOTE.md)
+- [VALLEY_LINEAR_ACTION_NOTE.md](../docs/VALLEY_LINEAR_ACTION_NOTE.md)
+- [ACTION_CROSSOVER_NOTE.md](../docs/ACTION_CROSSOVER_NOTE.md)
 

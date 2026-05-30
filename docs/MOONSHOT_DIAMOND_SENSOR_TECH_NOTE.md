@@ -106,10 +106,10 @@ That is the most realistic way to get a real experimental conversation going.
 
 The retained theory lanes that motivate this sensor-tech direction are:
 
-- [docs/DIAMOND_SENSOR_PREDICTION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
-- [docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md)
-- [docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md)
-- [docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md](/Users/jonreilly/Projects/Physics/docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md)
+- [docs/DIAMOND_SENSOR_PREDICTION_NOTE.md](../docs/DIAMOND_SENSOR_PREDICTION_NOTE.md)
+- [docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md](../docs/SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md)
+- [docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md](../docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md)
+- [docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md](../docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md)
 
 ## Bottom Line
 

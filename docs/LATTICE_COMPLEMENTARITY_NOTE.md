@@ -9,8 +9,8 @@ unification architecture.
 
 Artifacts:
 
-- [`scripts/lattice_complementarity_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_complementarity_sweep.py)
-- [`logs/2026-04-03-lattice-complementarity-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-complementarity-sweep.txt)
+- [`scripts/lattice_complementarity_sweep.py`](../scripts/lattice_complementarity_sweep.py)
+- [`logs/2026-04-03-lattice-complementarity-sweep.txt`](../logs/2026-04-03-lattice-complementarity-sweep.txt)
 
 ## Setup
 

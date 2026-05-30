@@ -5,9 +5,9 @@
 
 ## Artifact Chain
 
-- [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
-- [`docs/VECTOR_MAGNETIC_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/VECTOR_MAGNETIC_EXTENSION_NOTE.md)
-- [`logs/2026-04-06-moving-source-retarded-portability-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-moving-source-retarded-portability-probe.txt)
+- [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](../docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
+- [`docs/VECTOR_MAGNETIC_EXTENSION_NOTE.md`](../docs/VECTOR_MAGNETIC_EXTENSION_NOTE.md)
+- [`logs/2026-04-06-moving-source-retarded-portability-probe.txt`](../logs/2026-04-06-moving-source-retarded-portability-probe.txt)
 
 ## Question
 

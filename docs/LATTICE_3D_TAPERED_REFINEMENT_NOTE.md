@@ -28,8 +28,8 @@ The question is narrow:
 
 Primary artifact chain:
 
-- [`scripts/lattice_3d_tapered_refinement.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_tapered_refinement.py)
-- [`logs/2026-04-04-lattice-3d-tapered-refinement.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-lattice-3d-tapered-refinement.txt)
+- [`scripts/lattice_3d_tapered_refinement.py`](../scripts/lattice_3d_tapered_refinement.py)
+- [`logs/2026-04-04-lattice-3d-tapered-refinement.txt`](../logs/2026-04-04-lattice-3d-tapered-refinement.txt)
 
 ## Retained card
 

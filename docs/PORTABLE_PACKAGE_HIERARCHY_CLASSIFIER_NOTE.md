@@ -5,11 +5,11 @@
 
 ## Artifact Chain
 
-- [`scripts/portable_package_hierarchy_classifier.py`](/Users/jonreilly/Projects/Physics/scripts/portable_package_hierarchy_classifier.py)
-- [`logs/2026-04-06-portable-package-hierarchy-classifier.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-portable-package-hierarchy-classifier.txt)
-- broad portable package cards: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md), [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md), [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md)
-- distance-tail cards: [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_PORTABILITY_NOTE.md), [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
-- complex-action cards: [`docs/COMPLEX_ACTION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/COMPLEX_ACTION_NOTE.md), [`docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md)
+- [`scripts/portable_package_hierarchy_classifier.py`](../scripts/portable_package_hierarchy_classifier.py)
+- [`logs/2026-04-06-portable-package-hierarchy-classifier.txt`](../logs/2026-04-06-portable-package-hierarchy-classifier.txt)
+- broad portable package cards: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md), [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](../archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md), [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md`](../archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md)
+- distance-tail cards: [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](../docs/DISTANCE_LAW_PORTABILITY_NOTE.md), [`docs/DISTANCE_LAW_BREAKPOINT_NOTE.md`](../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
+- complex-action cards: [`docs/COMPLEX_ACTION_NOTE.md`](../docs/COMPLEX_ACTION_NOTE.md), [`docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md`](../docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md)
 
 ## Classifier
 

@@ -8,7 +8,7 @@ This note records the corrected scaling pilot for the stacked hard-geometry lane
 - `LN + |y|` removal
 - `LN + |y| + collapse`
 
-The run used the same 3D hard-geometry setup across `N = 25, 40, 60, 80, 100` with `8` seeds and `10` realizations per seed. The corresponding script is [`scripts/triple_stack_collapse_scaling.py`](/Users/jonreilly/Projects/Physics/scripts/triple_stack_collapse_scaling.py).
+The run used the same 3D hard-geometry setup across `N = 25, 40, 60, 80, 100` with `8` seeds and `10` realizations per seed. The corresponding script is [`scripts/triple_stack_collapse_scaling.py`](../scripts/triple_stack_collapse_scaling.py).
 
 ## What The Run Shows
 
@@ -55,4 +55,4 @@ That is the best triple-stack purity floor in the tested range, but it remains a
 
 The run output was captured in:
 
-- [`logs/2026-04-02-triple-stack-collapse-scaling.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-02-triple-stack-collapse-scaling.txt)
+- [`logs/2026-04-02-triple-stack-collapse-scaling.txt`](../logs/2026-04-02-triple-stack-collapse-scaling.txt)

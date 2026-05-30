@@ -49,7 +49,7 @@ Compared lanes:
 4. central-band removal `|y-center| < 2`
 
 Source log:
-[logs/2026-04-02-geometry-lane-head-to-head.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-02-geometry-lane-head-to-head.txt)
+[logs/2026-04-02-geometry-lane-head-to-head.txt](../logs/2026-04-02-geometry-lane-head-to-head.txt)
 
 ## Results
 

@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/broad_surrogate_point_source_compare.py`](/Users/jonreilly/Projects/Physics/scripts/broad_surrogate_point_source_compare.py)
-- Log: [`logs/2026-04-04-broad-surrogate-point-source-compare.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-broad-surrogate-point-source-compare.txt)
+- Script: [`scripts/broad_surrogate_point_source_compare.py`](../scripts/broad_surrogate_point_source_compare.py)
+- Log: [`logs/2026-04-04-broad-surrogate-point-source-compare.txt`](../logs/2026-04-04-broad-surrogate-point-source-compare.txt)
 
 This diagnostic asks a narrow interpretive question:
 
@@ -51,10 +51,10 @@ The bounded interpretive conclusion is:
 
 This note should be read together with:
 
-- [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
-- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
+- [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](../docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
+- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](../docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
 
 Together they now say:
 

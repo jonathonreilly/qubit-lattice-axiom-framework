@@ -27,7 +27,7 @@ That means a replay can look broken if it is launched with the wrong
 Retained numpy replay scripts on this machine should either:
 
 - be launched with `/usr/bin/python3`, or
-- call [`scripts/numpy_replay_bootstrap.py`](/Users/jonreilly/Projects/Physics/scripts/numpy_replay_bootstrap.py)
+- call [`scripts/numpy_replay_bootstrap.py`](../scripts/numpy_replay_bootstrap.py)
   before importing numpy-heavy modules.
 
 The bridge wrappers for the wide-family `h = 0.125` lane now follow that

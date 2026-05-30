@@ -9,8 +9,8 @@ one-family retained architecture on the **standard field-strength slice**.
 
 Artifacts:
 
-- [`scripts/lattice_symmetry_unification_decision.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_symmetry_unification_decision.py)
-- [`logs/2026-04-03-lattice-symmetry-unification-decision.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-symmetry-unification-decision.txt)
+- [`scripts/lattice_symmetry_unification_decision.py`](../scripts/lattice_symmetry_unification_decision.py)
+- [`logs/2026-04-03-lattice-symmetry-unification-decision.txt`](../logs/2026-04-03-lattice-symmetry-unification-decision.txt)
 
 ## Scope
 

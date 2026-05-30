@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/ordered_lattice_quasi_persistent_relaunch.py`](/Users/jonreilly/Projects/Physics/scripts/ordered_lattice_quasi_persistent_relaunch.py)
-- Log: [`logs/2026-04-04-ordered-lattice-quasi-persistent-relaunch.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-ordered-lattice-quasi-persistent-relaunch.txt)
+- Script: [`scripts/ordered_lattice_quasi_persistent_relaunch.py`](../scripts/ordered_lattice_quasi_persistent_relaunch.py)
+- Log: [`logs/2026-04-04-ordered-lattice-quasi-persistent-relaunch.txt`](../logs/2026-04-04-ordered-lattice-quasi-persistent-relaunch.txt)
 
 This probe asks a narrow question:
 
@@ -79,7 +79,7 @@ Together they narrow the blocker, but they do not close it.
 
 The 2D cross-family sanity note is:
 
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
 
 ## Best next move
 

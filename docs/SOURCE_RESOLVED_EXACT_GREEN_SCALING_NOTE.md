@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_exact_green_scaling.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_exact_green_scaling.py)
-- [`logs/2026-04-05-source-resolved-exact-green-scaling.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-exact-green-scaling.txt)
+- [`scripts/source_resolved_exact_green_scaling.py`](../scripts/source_resolved_exact_green_scaling.py)
+- [`logs/2026-04-05-source-resolved-exact-green-scaling.txt`](../logs/2026-04-05-source-resolved-exact-green-scaling.txt)
 - `docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md` (see-also cross-reference;
   backticked to break cycle-0014 in the citation graph. This scaling note is
   the larger-family size-transfer replay of the base pocket; the load-bearing

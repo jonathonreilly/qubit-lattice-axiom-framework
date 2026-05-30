@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_v6_nearfield_comparator.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_v6_nearfield_comparator.py)
-- [`logs/2026-04-05-gate-b-v6-nearfield-comparator.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-v6-nearfield-comparator.txt)
+- [`scripts/gate_b_v6_nearfield_comparator.py`](../scripts/gate_b_v6_nearfield_comparator.py)
+- [`logs/2026-04-05-gate-b-v6-nearfield-comparator.txt`](../logs/2026-04-05-gate-b-v6-nearfield-comparator.txt)
 
 ## Question
 

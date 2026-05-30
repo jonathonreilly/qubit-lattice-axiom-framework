@@ -16,8 +16,8 @@ more stable than geometry-recomputed connectivity.
 
 ## Primary artifact
 
-- Script: [`scripts/evolving_network_prototype_v4.py`](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v4.py)
-- Log: [`logs/2026-04-04-evolving-network-prototype-v4.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v4.txt)
+- Script: [`scripts/evolving_network_prototype_v4.py`](../scripts/evolving_network_prototype_v4.py)
+- Log: [`logs/2026-04-04-evolving-network-prototype-v4.txt`](../logs/2026-04-04-evolving-network-prototype-v4.txt)
 
 ## What v4 changes relative to v3
 

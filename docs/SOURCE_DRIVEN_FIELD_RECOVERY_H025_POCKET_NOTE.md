@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_driven_field_recovery_h025_pocket.py`](/Users/jonreilly/Projects/Physics/scripts/source_driven_field_recovery_h025_pocket.py)
-- [`logs/2026-04-05-source-driven-field-recovery-h025-pocket.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-driven-field-recovery-h025-pocket.txt)
+- [`scripts/source_driven_field_recovery_h025_pocket.py`](../scripts/source_driven_field_recovery_h025_pocket.py)
+- [`logs/2026-04-05-source-driven-field-recovery-h025-pocket.txt`](../logs/2026-04-05-source-driven-field-recovery-h025-pocket.txt)
 
 ## Question
 

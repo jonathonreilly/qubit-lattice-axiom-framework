@@ -57,60 +57,60 @@ overview.
 ## What is solid on `main`
 
 - **3D modular decoherence is materially better than the 2D ceiling lane.**
-  - [three_d_modular_asymptotic_decoherence.py](/Users/jonreilly/Projects/Physics/scripts/three_d_modular_asymptotic_decoherence.py)
-  - [2026-04-01-three-d-modular-asymptotic-decoherence.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-three-d-modular-asymptotic-decoherence.txt)
+  - [three_d_modular_asymptotic_decoherence.py](../scripts/three_d_modular_asymptotic_decoherence.py)
+  - [2026-04-01-three-d-modular-asymptotic-decoherence.txt](../logs/2026-04-01-three-d-modular-asymptotic-decoherence.txt)
   - The retained `gap=3` lane keeps `pur_cl` well below `1` through `N=100`.
 
 - **4D modular decoherence is currently the strongest large-`N` non-unitary lane in the repo.**
-  - [four_d_decoherence_large_n.py](/Users/jonreilly/Projects/Physics/scripts/four_d_decoherence_large_n.py)
-  - [2026-04-01-four-d-decoherence-large-n.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-four-d-decoherence-large-n.txt)
+  - [four_d_decoherence_large_n.py](../scripts/four_d_decoherence_large_n.py)
+  - [2026-04-01-four-d-decoherence-large-n.txt](../logs/2026-04-01-four-d-decoherence-large-n.txt)
   - Dense modular `gap=3` and `gap=5` both stay bounded away from `1` through `N=100`.
 
 - **The stricter 4D unification pass is positive but still partial.**
-  - [four_d_joint_strict.py](/Users/jonreilly/Projects/Physics/scripts/four_d_joint_strict.py)
-  - [2026-04-01-four-d-joint-strict.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-four-d-joint-strict.txt)
+  - [four_d_joint_strict.py](../scripts/four_d_joint_strict.py)
+  - [2026-04-01-four-d-joint-strict.txt](../logs/2026-04-01-four-d-joint-strict.txt)
   - The strongest current row is `gap=3, N=40`, where gravity, `pur_cl`, binned visibility, and the companion Born/chokepoint check all pass.
   - The safe wording is still partial coexistence overall, because the Born check is on a companion graph and the later rows do not all survive.
 
 - **Born rule is clean in higher dimensions when the barrier is a true chokepoint.**
-  - [four_d_born_rule_chokepoint.py](/Users/jonreilly/Projects/Physics/scripts/four_d_born_rule_chokepoint.py)
-  - [2026-04-01-four-d-born-rule.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-four-d-born-rule.txt)
+  - [four_d_born_rule_chokepoint.py](../scripts/four_d_born_rule_chokepoint.py)
+  - [2026-04-01-four-d-born-rule.txt](../logs/2026-04-01-four-d-born-rule.txt)
   - The same chokepoint logic also checks out in the verified 3D branch-side script.
   - A stricter same-family follow-up is now narrower but more internal:
-    - [four_d_same_family_born.py](/Users/jonreilly/Projects/Physics/scripts/four_d_same_family_born.py)
-    - [2026-04-01-four-d-same-family-born.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-four-d-same-family-born.txt)
+    - [four_d_same_family_born.py](../scripts/four_d_same_family_born.py)
+    - [2026-04-01-four-d-same-family-born.txt](../logs/2026-04-01-four-d-same-family-born.txt)
   - Safe wording: the same-family chokepoint-pruned view reaches machine-precision
     Sorkin `I_3` only on a restricted low-`N` modular subfamily, while the raw
     modular family still fails and the pass does not survive broadly at large `N`.
 
 - **4D distance scaling is still effectively flat/topological.**
-  - [four_d_distance_scaling.py](/Users/jonreilly/Projects/Physics/scripts/four_d_distance_scaling.py)
-  - [2026-04-01-four-d-distance-scaling.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-four-d-distance-scaling.txt)
+  - [four_d_distance_scaling.py](../scripts/four_d_distance_scaling.py)
+  - [2026-04-01-four-d-distance-scaling.txt](../logs/2026-04-01-four-d-distance-scaling.txt)
   - The retained 4D modular lane does not show a convincing `1/b` falloff.
 
 - **5D is currently connectivity-limited rather than decisively physics-limited.**
-  - [five_d_connectivity_diagnostic.py](/Users/jonreilly/Projects/Physics/scripts/five_d_connectivity_diagnostic.py)
-  - [2026-04-01-five-d-connectivity-diagnostic.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-five-d-connectivity-diagnostic.txt)
+  - [five_d_connectivity_diagnostic.py](../scripts/five_d_connectivity_diagnostic.py)
+  - [2026-04-01-five-d-connectivity-diagnostic.txt](../logs/2026-04-01-five-d-connectivity-diagnostic.txt)
   - Densifying the graph improves validity, but the first broad bounded sweep still does not recover a robust positive exponent.
   - A later dense pilot does recover a narrow positive window:
-    - [five_d_dense_pilot.py](/Users/jonreilly/Projects/Physics/scripts/five_d_dense_pilot.py)
-    - [2026-04-01-five-d-dense-pilot.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-five-d-dense-pilot.txt)
+    - [five_d_dense_pilot.py](../scripts/five_d_dense_pilot.py)
+    - [2026-04-01-five-d-dense-pilot.txt](../logs/2026-04-01-five-d-dense-pilot.txt)
   - A denser robustness map broadens that positive window around the pilot corner, but it still stays inside the dense modular neighborhood rather than becoming a stable generic regime:
-    - [five_d_dense_robustness_map.py](/Users/jonreilly/Projects/Physics/scripts/five_d_dense_robustness_map.py)
-    - [2026-04-01-five-d-dense-robustness-map.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-five-d-dense-robustness-map.txt)
+    - [five_d_dense_robustness_map.py](../scripts/five_d_dense_robustness_map.py)
+    - [2026-04-01-five-d-dense-robustness-map.txt](../logs/2026-04-01-five-d-dense-robustness-map.txt)
   - Best current read: 5D is not dead, but its positive mass-law signal remains density-sensitive and tied to a dense modular corner of parameter space.
 
 - **The first causal-field alternative is not yet a retained distance-law rescue.**
-  - [causal_field_fixed_mass_verify.py](/Users/jonreilly/Projects/Physics/scripts/causal_field_fixed_mass_verify.py)
-  - [2026-04-01-causal-field-fixed-mass-verify.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-causal-field-fixed-mass-verify.txt)
-  - [causal_field_mass_scaling.py](/Users/jonreilly/Projects/Physics/scripts/causal_field_mass_scaling.py)
-  - [2026-04-01-causal-field-mass-scaling.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-causal-field-mass-scaling.txt)
-  - [causal_field_unification.py](/Users/jonreilly/Projects/Physics/scripts/causal_field_unification.py)
-  - [2026-04-01-causal-field-unification.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-causal-field-unification.txt)
+  - [causal_field_fixed_mass_verify.py](../scripts/causal_field_fixed_mass_verify.py)
+  - [2026-04-01-causal-field-fixed-mass-verify.txt](../logs/2026-04-01-causal-field-fixed-mass-verify.txt)
+  - [causal_field_mass_scaling.py](../scripts/causal_field_mass_scaling.py)
+  - [2026-04-01-causal-field-mass-scaling.txt](../logs/2026-04-01-causal-field-mass-scaling.txt)
+  - [causal_field_unification.py](../scripts/causal_field_unification.py)
+  - [2026-04-01-causal-field-unification.txt](../logs/2026-04-01-causal-field-unification.txt)
   - Once the impact-parameter sweep is rerun with fixed mass count and fixed source geometry, the earlier apparent causal-field falloff does not survive as a clean `1/b` law, and the same forward-only field weakens mass scaling relative to the retained Laplacian lane.
   - A bounded hybrid interpolation check also stays negative:
-    - [hybrid_field_fixed_mass_pilot.py](/Users/jonreilly/Projects/Physics/scripts/hybrid_field_fixed_mass_pilot.py)
-    - [2026-04-01-hybrid-field-fixed-mass-pilot.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-hybrid-field-fixed-mass-pilot.txt)
+    - [hybrid_field_fixed_mass_pilot.py](../scripts/hybrid_field_fixed_mass_pilot.py)
+    - [2026-04-01-hybrid-field-fixed-mass-pilot.txt](../logs/2026-04-01-hybrid-field-fixed-mass-pilot.txt)
   - No tested hybrid mix beats the retained Laplacian endpoint on both distance trend
     and mass scaling at once; the interpolation only slides between the two endpoints.
 
@@ -128,16 +128,16 @@ overview.
 ## Metric cautions to keep explicit
 
 - **4D true visibility is still not a settled positive.**
-  - [four_d_true_visibility.py](/Users/jonreilly/Projects/Physics/scripts/four_d_true_visibility.py)
-  - [2026-04-01-four-d-true-visibility.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-four-d-true-visibility.txt)
-  - [four_d_true_visibility_binned.py](/Users/jonreilly/Projects/Physics/scripts/four_d_true_visibility_binned.py)
-  - [2026-04-01-four-d-true-visibility-binned.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-four-d-true-visibility-binned.txt)
-  - [2026-04-01-four-d-visibility-envelope.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-four-d-visibility-envelope.txt)
+  - [four_d_true_visibility.py](../scripts/four_d_true_visibility.py)
+  - [2026-04-01-four-d-true-visibility.txt](../logs/2026-04-01-four-d-true-visibility.txt)
+  - [four_d_true_visibility_binned.py](../scripts/four_d_true_visibility_binned.py)
+  - [2026-04-01-four-d-true-visibility-binned.txt](../logs/2026-04-01-four-d-true-visibility-binned.txt)
+  - [2026-04-01-four-d-visibility-envelope.txt](../logs/2026-04-01-four-d-visibility-envelope.txt)
   - The older exact-`y` profile metric was too brittle. The newer fixed-bin / envelope-smoothed checks are better, and they now support a slightly stronger but still narrow claim: strict 4D visibility is **weak and intermittent**, not strongly retained across the family. The visibility caveat therefore survives even after the metric cleanup.
 
 - **The original branch-local 3D joint script still uses an interference proxy, and the new strict 3D companion stays weak.**
-  - [three_d_joint_visibility_strict.py](/Users/jonreilly/Projects/Physics/scripts/three_d_joint_visibility_strict.py)
-  - [2026-04-01-three-d-joint-visibility-strict.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-01-three-d-joint-visibility-strict.txt)
+  - [three_d_joint_visibility_strict.py](../scripts/three_d_joint_visibility_strict.py)
+  - [2026-04-01-three-d-joint-visibility-strict.txt](../logs/2026-04-01-three-d-joint-visibility-strict.txt)
   - On the retained 3D modular `gap=3` lane, the strict same-family visibility gain is effectively flat at large `N` (`V_gain ≈ +0.0049` for `N>=40`), so the stronger 3D “all four pass” language remains safe only when its fourth clause is read as a proxy/interference-surrogate statement.
 
 - **The strict 4D pass is not literally same-graph on all four columns.**
@@ -149,13 +149,13 @@ overview.
   - Its distance sweep varies the mid-layer mass-node set with `b` instead of holding the source mass configuration fixed.
   - So the specific “continuum-limit `b`-independence is confirmed” wording should stay provisional until rerun with fixed mass count / geometry across `b`.
 - **The current distance-law closure is much stronger than the earlier 4D sweep alone.**
-  - [four_d_distance_scaling.py](/Users/jonreilly/Projects/Physics/scripts/four_d_distance_scaling.py)
-  - [propagator_power_sweep.py](/Users/jonreilly/Projects/Physics/scripts/propagator_power_sweep.py)
-  - [locality_shell_distance_law_fixed_mass.py](/Users/jonreilly/Projects/Physics/scripts/locality_shell_distance_law_fixed_mass.py)
-  - [nonlinear_propagation_distance_law.py](/Users/jonreilly/Projects/Physics/scripts/nonlinear_propagation_distance_law.py)
-  - [effective_metric_distance_law.py](/Users/jonreilly/Projects/Physics/scripts/effective_metric_distance_law.py)
-  - [causal_field_fixed_mass_verify.py](/Users/jonreilly/Projects/Physics/scripts/causal_field_fixed_mass_verify.py)
-  - [causal_field_unification.py](/Users/jonreilly/Projects/Physics/scripts/causal_field_unification.py)
+  - [four_d_distance_scaling.py](../scripts/four_d_distance_scaling.py)
+  - [propagator_power_sweep.py](../scripts/propagator_power_sweep.py)
+  - [locality_shell_distance_law_fixed_mass.py](../scripts/locality_shell_distance_law_fixed_mass.py)
+  - [nonlinear_propagation_distance_law.py](../scripts/nonlinear_propagation_distance_law.py)
+  - [effective_metric_distance_law.py](../scripts/effective_metric_distance_law.py)
+  - [causal_field_fixed_mass_verify.py](../scripts/causal_field_fixed_mass_verify.py)
+  - [causal_field_unification.py](../scripts/causal_field_unification.py)
   - Across those fixed-mass and rescue-variant tests, the same flat/topological distance law survives. The remaining live question is no longer “which weight or shell fixes `1/b`?” but whether the flat force law can be derived analytically or only escaped by a deeper architecture change.
 
 ## Current best claim

@@ -11,25 +11,25 @@ Can we grow (rather than impose) geometry that gives Newtonian gravity?
 
 Primary frozen replay for the current connectivity-vs-noise read:
 
-- [scripts/gate_b_connectivity_tolerance.py](/Users/jonreilly/Projects/Physics/scripts/gate_b_connectivity_tolerance.py)
-- [logs/2026-04-04-gate-b-connectivity-tolerance.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-gate-b-connectivity-tolerance.txt)
-- [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
+- [scripts/gate_b_connectivity_tolerance.py](../scripts/gate_b_connectivity_tolerance.py)
+- [logs/2026-04-04-gate-b-connectivity-tolerance.txt](../logs/2026-04-04-gate-b-connectivity-tolerance.txt)
+- [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md)
 
 Structured-connectivity follow-up:
 
-- [scripts/evolving_network_prototype_v4.py](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v4.py)
-- [logs/2026-04-04-evolving-network-prototype-v4.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v4.txt)
-- [docs/EVOLVING_NETWORK_PROTOTYPE_V4_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V4_NOTE.md)
+- [scripts/evolving_network_prototype_v4.py](../scripts/evolving_network_prototype_v4.py)
+- [logs/2026-04-04-evolving-network-prototype-v4.txt](../logs/2026-04-04-evolving-network-prototype-v4.txt)
+- [docs/EVOLVING_NETWORK_PROTOTYPE_V4_NOTE.md](../docs/EVOLVING_NETWORK_PROTOTYPE_V4_NOTE.md)
 
 Latest bounded follow-up:
 
-- [scripts/evolving_network_prototype_v5.py](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v5.py)
-- [logs/2026-04-04-evolving-network-prototype-v5.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v5.txt)
-- [docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md)
+- [scripts/evolving_network_prototype_v5.py](../scripts/evolving_network_prototype_v5.py)
+- [logs/2026-04-04-evolving-network-prototype-v5.txt](../logs/2026-04-04-evolving-network-prototype-v5.txt)
+- [docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md](../docs/EVOLVING_NETWORK_PROTOTYPE_V5_NOTE.md)
 
 The primary runner reports per-architecture TOWARD fractions and a local
 `F~M` response-slope probe (mean over the six frozen seeds). These match the
-retained companion [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md):
+retained companion [docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md](../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md):
 
 1. **Jittered NN lattice** (positions jittered, fixed connectivity):
    `75.0%` TOWARD at jitter `0.5`; across the jitter sweep `0.0-0.5` the
@@ -75,7 +75,7 @@ stable under connectivity changes than the gravity sign, but the local
 `F~M` values on this near-field harness are **not** universal constants and
 should not be read as a promoted `F∝M = 1.00` law. The clean retained
 `F∝M = 1.00` mass-scaling result lives on the far-field harness
-([docs/GATE_B_FARFIELD_NOTE.md](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)),
+([docs/GATE_B_FARFIELD_NOTE.md](../docs/GATE_B_FARFIELD_NOTE.md)),
 not on this connectivity-tolerance replay.
 
 ## Path forward
@@ -131,9 +131,9 @@ So the current safe Gate B read is:
 
 The newer h=0.5 structured-growth lane is now frozen on disk:
 
-- [scripts/evolving_network_prototype_v6.py](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v6.py)
-- [logs/2026-04-04-evolving-network-prototype-v6.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v6.txt)
-- [docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md](/Users/jonreilly/Projects/Physics/docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md)
+- [scripts/evolving_network_prototype_v6.py](../scripts/evolving_network_prototype_v6.py)
+- [logs/2026-04-04-evolving-network-prototype-v6.txt](../logs/2026-04-04-evolving-network-prototype-v6.txt)
+- [docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md](../docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md)
 
 It does **not** reproduce the branch headline of `100%` TOWARD across the full
 tested matrix. The frozen rows are:
@@ -173,9 +173,9 @@ characterization of the near-field regime.
 
 Dedicated far-field artifact chain:
 
-- [`scripts/gate_b_farfield_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_farfield_harness.py)
-- [`logs/2026-04-05-gate-b-farfield-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-farfield-harness.txt)
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`scripts/gate_b_farfield_harness.py`](../scripts/gate_b_farfield_harness.py)
+- [`logs/2026-04-05-gate-b-farfield-harness.txt`](../logs/2026-04-05-gate-b-farfield-harness.txt)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
 
 Results at h=0.5, 12 seeds × z=[3,4,5] = 36 tests per row:
 
@@ -196,9 +196,9 @@ This is a beam-optics effect, not a growth-rule or physics failure.
 
 Dedicated exact-vs-grown control:
 
-- [`scripts/gate_b_v6_nearfield_comparator.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_v6_nearfield_comparator.py)
-- [`logs/2026-04-05-gate-b-v6-nearfield-comparator.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-v6-nearfield-comparator.txt)
-- [`docs/GATE_B_V6_NEARFIELD_COMPARATOR_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_V6_NEARFIELD_COMPARATOR_NOTE.md)
+- [`scripts/gate_b_v6_nearfield_comparator.py`](../scripts/gate_b_v6_nearfield_comparator.py)
+- [`logs/2026-04-05-gate-b-v6-nearfield-comparator.txt`](../logs/2026-04-05-gate-b-v6-nearfield-comparator.txt)
+- [`docs/GATE_B_V6_NEARFIELD_COMPARATOR_NOTE.md`](../docs/GATE_B_V6_NEARFIELD_COMPARATOR_NOTE.md)
 
 Frozen bucket summary for the retained `drift = 0.3`, `restore = 0.5` row:
 
@@ -226,12 +226,12 @@ So the safe read is stronger than “near-field mixed” alone:
 The far-field Gate B lane now has dedicated companion replays for the retained
 moderate-drift row:
 
-- [`scripts/gate_b_grown_distance_law.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_distance_law.py)
-- [`logs/2026-04-05-gate-b-grown-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-distance-law.txt)
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
-- [`scripts/gate_b_grown_joint_package.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_joint_package.py)
-- [`logs/2026-04-05-gate-b-grown-joint-package.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-joint-package.txt)
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`scripts/gate_b_grown_distance_law.py`](../scripts/gate_b_grown_distance_law.py)
+- [`logs/2026-04-05-gate-b-grown-distance-law.txt`](../logs/2026-04-05-gate-b-grown-distance-law.txt)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`scripts/gate_b_grown_joint_package.py`](../scripts/gate_b_grown_joint_package.py)
+- [`logs/2026-04-05-gate-b-grown-joint-package.txt`](../logs/2026-04-05-gate-b-grown-joint-package.txt)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
 
 These companions sharpen the safe Gate B read:
 
@@ -253,9 +253,9 @@ So the honest status is now:
 
 The degree-balanced non-label forward candidate is now frozen too:
 
-- [`scripts/gate_b_nonlabel_connectivity_v3.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v3.py)
-- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v3.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-nonlabel-connectivity-v3.txt)
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md)
+- [`scripts/gate_b_nonlabel_connectivity_v3.py`](../scripts/gate_b_nonlabel_connectivity_v3.py)
+- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v3.txt`](../logs/2026-04-05-gate-b-nonlabel-connectivity-v3.txt)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md`](../docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md)
 
 Its bounded read is:
 
@@ -274,15 +274,15 @@ idea, not a replacement for the label-based far-field rule.
 The same moderate-drift generated-geometry family now also has bounded
 `h = 0.25` refinement companions:
 
-- [`scripts/gate_b_h025_farfield.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_farfield.py)
-- [`logs/2026-04-05-gate-b-h025-farfield.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-farfield.txt)
-- [`docs/GATE_B_H025_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_H025_FARFIELD_NOTE.md)
-- [`scripts/gate_b_h025_distance_law.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_distance_law.py)
-- [`logs/2026-04-05-gate-b-h025-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-distance-law.txt)
-- [`docs/GATE_B_H025_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_H025_DISTANCE_LAW_NOTE.md)
-- [`scripts/gate_b_h025_joint_package.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_h025_joint_package.py)
-- [`logs/2026-04-05-gate-b-h025-joint-package.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-h025-joint-package.txt)
-- [`docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md)
+- [`scripts/gate_b_h025_farfield.py`](../scripts/gate_b_h025_farfield.py)
+- [`logs/2026-04-05-gate-b-h025-farfield.txt`](../logs/2026-04-05-gate-b-h025-farfield.txt)
+- [`docs/GATE_B_H025_FARFIELD_NOTE.md`](../docs/GATE_B_H025_FARFIELD_NOTE.md)
+- [`scripts/gate_b_h025_distance_law.py`](../scripts/gate_b_h025_distance_law.py)
+- [`logs/2026-04-05-gate-b-h025-distance-law.txt`](../logs/2026-04-05-gate-b-h025-distance-law.txt)
+- [`docs/GATE_B_H025_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_H025_DISTANCE_LAW_NOTE.md)
+- [`scripts/gate_b_h025_joint_package.py`](../scripts/gate_b_h025_joint_package.py)
+- [`logs/2026-04-05-gate-b-h025-joint-package.txt`](../logs/2026-04-05-gate-b-h025-joint-package.txt)
+- [`docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md)
 
 Their bounded read is:
 
@@ -305,9 +305,9 @@ So the safe Gate B read is now:
 
 The no-restore weak-connectivity lane is now frozen separately:
 
-- [`scripts/gate_b_weak_connectivity_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_weak_connectivity_harness.py)
-- [`logs/2026-04-05-gate-b-weak-connectivity-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-weak-connectivity-harness.txt)
-- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
+- [`scripts/gate_b_weak_connectivity_harness.py`](../scripts/gate_b_weak_connectivity_harness.py)
+- [`logs/2026-04-05-gate-b-weak-connectivity-harness.txt`](../logs/2026-04-05-gate-b-weak-connectivity-harness.txt)
+- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](../docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
 
 Its bounded read is:
 
@@ -324,9 +324,9 @@ far-field package on this retained family.
 The no-restore grown-geometry lane now has a second bounded non-label
 candidate:
 
-- [`scripts/gate_b_nonlabel_connectivity_v2.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v2.py)
-- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt)
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md)
+- [`scripts/gate_b_nonlabel_connectivity_v2.py`](../scripts/gate_b_nonlabel_connectivity_v2.py)
+- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt`](../logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md`](../docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md)
 
 Its bounded read is:
 
@@ -340,12 +340,12 @@ sign rows, but it does **not** keep the Newtonian mass-scaling class cleanly.
 
 The no-restore lane is now bounded more sharply too:
 
-- [`scripts/gate_b_no_restore_farfield.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_no_restore_farfield.py)
-- [`logs/2026-04-05-gate-b-no-restore-farfield.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-no-restore-farfield.txt)
-- [`docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md)
-- [`scripts/gate_b_no_restore_joint_package.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_no_restore_joint_package.py)
-- [`logs/2026-04-05-gate-b-no-restore-joint-package.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-no-restore-joint-package.txt)
-- [`docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md)
+- [`scripts/gate_b_no_restore_farfield.py`](../scripts/gate_b_no_restore_farfield.py)
+- [`logs/2026-04-05-gate-b-no-restore-farfield.txt`](../logs/2026-04-05-gate-b-no-restore-farfield.txt)
+- [`docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md`](../docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md)
+- [`scripts/gate_b_no_restore_joint_package.py`](../scripts/gate_b_no_restore_joint_package.py)
+- [`logs/2026-04-05-gate-b-no-restore-joint-package.txt`](../logs/2026-04-05-gate-b-no-restore-joint-package.txt)
+- [`docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_NO_RESTORE_JOINT_PACKAGE_NOTE.md)
 
 Their bounded read is:
 

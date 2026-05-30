@@ -15,7 +15,7 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_transverse_propagating_green.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_transverse_propagating_green.py)
+- [`scripts/source_resolved_transverse_propagating_green.py`](../../scripts/source_resolved_transverse_propagating_green.py)
 
 ## Question
 

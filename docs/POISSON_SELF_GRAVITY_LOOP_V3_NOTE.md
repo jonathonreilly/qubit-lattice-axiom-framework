@@ -38,8 +38,8 @@ The following are **demoted to out-of-binding-scope** of this note:
 
 ## Artifact chain
 
-- [`scripts/poisson_self_gravity_loop_v3.py`](/Users/jonreilly/Projects/Physics/scripts/poisson_self_gravity_loop_v3.py)
-- [`logs/2026-04-05-poisson-self-gravity-loop-v3.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-poisson-self-gravity-loop-v3.txt)
+- [`scripts/poisson_self_gravity_loop_v3.py`](../scripts/poisson_self_gravity_loop_v3.py)
+- [`logs/2026-04-05-poisson-self-gravity-loop-v3.txt`](../logs/2026-04-05-poisson-self-gravity-loop-v3.txt)
 
 ## What this harness checks
 

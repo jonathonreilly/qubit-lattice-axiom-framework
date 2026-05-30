@@ -6,12 +6,12 @@
 
 ## Artifact Chain
 
-- [`scripts/FAMILY_COMPANION_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/FAMILY_COMPANION_COMPARE.py)
-- [`logs/2026-04-06-family-companion-compare.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-family-companion-compare.txt)
+- [`scripts/FAMILY_COMPANION_COMPARE.py`](../scripts/FAMILY_COMPANION_COMPARE.py)
+- [`logs/2026-04-06-family-companion-compare.txt`](../logs/2026-04-06-family-companion-compare.txt)
 - retained source notes:
-  - [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md)
-  - [`docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md)
-  - [`docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md)
+  - [`archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`](../archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md)
+  - [`docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md`](../docs/ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md)
+  - [`docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md`](../docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md)
 
 ## Question
 

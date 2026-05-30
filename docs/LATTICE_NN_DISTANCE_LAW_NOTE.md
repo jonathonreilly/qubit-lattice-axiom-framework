@@ -14,10 +14,10 @@ It answers a narrow question:
 
 Artifacts:
 
-- [`scripts/lattice_nn_distance_law.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_nn_distance_law.py)
-- [`logs/2026-04-03-lattice-nn-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-nn-distance-law.txt)
+- [`scripts/lattice_nn_distance_law.py`](../scripts/lattice_nn_distance_law.py)
+- [`logs/2026-04-03-lattice-nn-distance-law.txt`](../logs/2026-04-03-lattice-nn-distance-law.txt)
 - upstream refinement note:
-  [`docs/LATTICE_NN_CONTINUUM_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_NN_CONTINUUM_NOTE.md)
+  [`docs/LATTICE_NN_CONTINUUM_NOTE.md`](../docs/LATTICE_NN_CONTINUUM_NOTE.md)
 
 ## Scope
 

@@ -27,8 +27,8 @@ classifier-level interpretation.
 
 ## Artifact chain
 
-- [`scripts/source_resolved_generated_support_mass_scaling.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_generated_support_mass_scaling.py)
-- [`logs/2026-04-05-source-resolved-generated-support-mass-scaling.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-generated-support-mass-scaling.txt)
+- [`scripts/source_resolved_generated_support_mass_scaling.py`](../scripts/source_resolved_generated_support_mass_scaling.py)
+- [`logs/2026-04-05-source-resolved-generated-support-mass-scaling.txt`](../logs/2026-04-05-source-resolved-generated-support-mass-scaling.txt)
 
 ## Question
 

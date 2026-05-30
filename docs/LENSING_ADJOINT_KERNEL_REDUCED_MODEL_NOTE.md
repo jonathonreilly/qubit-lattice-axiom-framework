@@ -35,11 +35,11 @@ Run used for the retained check:
 
 Frozen artifact:
 
-- [2026-04-09-lensing-adjoint-kernel-reduced-model-h035.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-09-lensing-adjoint-kernel-reduced-model-h035.txt)
+- [2026-04-09-lensing-adjoint-kernel-reduced-model-h035.txt](../logs/2026-04-09-lensing-adjoint-kernel-reduced-model-h035.txt)
 
 Script:
 
-- [lensing_adjoint_kernel_reduced_model.py](/Users/jonreilly/Projects/Physics/scripts/lensing_adjoint_kernel_reduced_model.py)
+- [lensing_adjoint_kernel_reduced_model.py](../scripts/lensing_adjoint_kernel_reduced_model.py)
 
 ## Result
 

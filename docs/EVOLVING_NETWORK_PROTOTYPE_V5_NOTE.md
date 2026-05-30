@@ -16,8 +16,8 @@ Gate B lane beyond the mixed crystal-like v4 result.
 
 ## Primary artifact
 
-- Script: [`scripts/evolving_network_prototype_v5.py`](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v5.py)
-- Log: [`logs/2026-04-04-evolving-network-prototype-v5.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v5.txt)
+- Script: [`scripts/evolving_network_prototype_v5.py`](../scripts/evolving_network_prototype_v5.py)
+- Log: [`logs/2026-04-04-evolving-network-prototype-v5.txt`](../logs/2026-04-04-evolving-network-prototype-v5.txt)
 
 ## Frozen replay result
 

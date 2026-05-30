@@ -15,12 +15,12 @@
 
 ## Artifact Chain
 
-- [`scripts/FIFTH_FAMILY_RADIAL_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/FIFTH_FAMILY_RADIAL_SWEEP.py)
-- [`scripts/FIFTH_FAMILY_RADIAL_BASIN.py`](/Users/jonreilly/Projects/Physics/scripts/FIFTH_FAMILY_RADIAL_BASIN.py)
-- [`scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py`](/Users/jonreilly/Projects/Physics/scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py)
-- [`logs/2026-04-06-fifth-family-radial.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fifth-family-radial.txt)
-- [`logs/2026-04-06-fifth-family-radial-basin.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fifth-family-radial-basin.txt)
-- [`logs/2026-04-06-fifth-family-radial-fm-transfer.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fifth-family-radial-fm-transfer.txt)
+- [`scripts/FIFTH_FAMILY_RADIAL_SWEEP.py`](../../scripts/FIFTH_FAMILY_RADIAL_SWEEP.py)
+- [`scripts/FIFTH_FAMILY_RADIAL_BASIN.py`](../../scripts/FIFTH_FAMILY_RADIAL_BASIN.py)
+- [`scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py`](../../scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py)
+- [`logs/2026-04-06-fifth-family-radial.txt`](../../logs/2026-04-06-fifth-family-radial.txt)
+- [`logs/2026-04-06-fifth-family-radial-basin.txt`](../../logs/2026-04-06-fifth-family-radial-basin.txt)
+- [`logs/2026-04-06-fifth-family-radial-fm-transfer.txt`](../../logs/2026-04-06-fifth-family-radial-fm-transfer.txt)
 
 ## Question
 

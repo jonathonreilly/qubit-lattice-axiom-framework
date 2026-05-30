@@ -13,8 +13,8 @@ That is a strong finite-lattice replay, not a universal theorem by itself.
 
 ## Primary artifact
 
-- Script: [scripts/valley_linear_wide_tail_replay.py](/Users/jonreilly/Projects/Physics/scripts/valley_linear_wide_tail_replay.py)
-- Log: [logs/2026-04-04-valley-linear-wide-tail-replay.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-valley-linear-wide-tail-replay.txt)
+- Script: [scripts/valley_linear_wide_tail_replay.py](../scripts/valley_linear_wide_tail_replay.py)
+- Log: [logs/2026-04-04-valley-linear-wide-tail-replay.txt](../logs/2026-04-04-valley-linear-wide-tail-replay.txt)
 
 This replay keeps fixed:
 

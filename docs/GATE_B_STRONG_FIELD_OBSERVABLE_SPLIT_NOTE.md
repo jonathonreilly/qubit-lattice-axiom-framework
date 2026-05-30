@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md)
-- [`docs/GATE_B_GROWN_PROPAGATING_FIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_PROPAGATING_FIELD_NOTE.md)
+- [`docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md`](../docs/GATE_B_COMPLEX_ACTION_FALSIFIER_NOTE.md)
+- [`docs/GATE_B_GROWN_PROPAGATING_FIELD_NOTE.md`](../docs/GATE_B_GROWN_PROPAGATING_FIELD_NOTE.md)
 
 ## Question
 

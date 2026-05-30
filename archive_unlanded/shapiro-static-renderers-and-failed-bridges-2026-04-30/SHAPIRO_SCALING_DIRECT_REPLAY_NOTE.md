@@ -15,12 +15,12 @@
 
 ## Artifact Chain
 
-- [`scripts/shapiro_scaling_direct_replay.py`](/Users/jonreilly/Projects/Physics/scripts/shapiro_scaling_direct_replay.py)
-- [`scripts/shapiro_scaling_probe.py`](/Users/jonreilly/Projects/Physics/scripts/shapiro_scaling_probe.py)
-- [`logs/2026-04-08-shapiro-scaling-direct-replay.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-08-shapiro-scaling-direct-replay.txt)
-- [`docs/SHAPIRO_EXPERIMENTAL_CARD.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_EXPERIMENTAL_CARD.md)
-- [`logs/2026-04-06-shapiro-delay-portable.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-shapiro-delay-portable.txt)
-- [`docs/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md)
+- [`scripts/shapiro_scaling_direct_replay.py`](../../scripts/shapiro_scaling_direct_replay.py)
+- [`scripts/shapiro_scaling_probe.py`](../../scripts/shapiro_scaling_probe.py)
+- [`logs/2026-04-08-shapiro-scaling-direct-replay.txt`](../../logs/2026-04-08-shapiro-scaling-direct-replay.txt)
+- [`docs/SHAPIRO_EXPERIMENTAL_CARD.md`](../../docs/SHAPIRO_EXPERIMENTAL_CARD.md)
+- [`logs/2026-04-06-shapiro-delay-portable.txt`](../../logs/2026-04-06-shapiro-delay-portable.txt)
+- [`docs/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md`](../../docs/SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md)
 
 ## What Is Being Replayed
 

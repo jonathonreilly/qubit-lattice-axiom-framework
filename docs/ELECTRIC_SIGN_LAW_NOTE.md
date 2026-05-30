@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/electric_sign_law_harness.py`](/Users/jonreilly/Projects/Physics/scripts/electric_sign_law_harness.py)
-- Log: [`logs/2026-04-04-electric-sign-law-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-electric-sign-law-harness.txt)
+- Script: [`scripts/electric_sign_law_harness.py`](../scripts/electric_sign_law_harness.py)
+- Log: [`logs/2026-04-04-electric-sign-law-harness.txt`](../logs/2026-04-04-electric-sign-law-harness.txt)
 
 This is a minimal sign-law test on the same retained ordered-lattice family
 used by the derivation lane:

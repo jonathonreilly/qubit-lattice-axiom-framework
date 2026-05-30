@@ -43,12 +43,12 @@ placement confounds.
 
 Artifacts:
 
-- [`scripts/lattice_nn_mass_response.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_nn_mass_response.py)
-- [`logs/2026-04-03-lattice-nn-mass-response.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-nn-mass-response.txt)
+- [`scripts/lattice_nn_mass_response.py`](../scripts/lattice_nn_mass_response.py)
+- [`logs/2026-04-03-lattice-nn-mass-response.txt`](../logs/2026-04-03-lattice-nn-mass-response.txt)
 - upstream refinement notes:
-  - [`docs/LATTICE_NN_CONTINUUM_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_NN_CONTINUUM_NOTE.md)
-  - [`docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md)
-  - [`docs/LATTICE_NN_RG_GRAVITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_NN_RG_GRAVITY_NOTE.md)
+  - [`docs/LATTICE_NN_CONTINUUM_NOTE.md`](../docs/LATTICE_NN_CONTINUUM_NOTE.md)
+  - [`docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md`](../docs/LATTICE_NN_DETERMINISTIC_RESCALE_NOTE.md)
+  - [`docs/LATTICE_NN_RG_GRAVITY_NOTE.md`](../docs/LATTICE_NN_RG_GRAVITY_NOTE.md)
 
 ## Deterministic Refinement Path
 

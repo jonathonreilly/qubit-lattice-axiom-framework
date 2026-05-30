@@ -5,14 +5,14 @@ the same mutual-information measurement to the broader canonical 3D mirror
 families used elsewhere in the repo.
 
 Artifacts:
-- [`scripts/mirror_mutual_information_canonical_families.py`](/Users/jonreilly/Projects/Physics/scripts/mirror_mutual_information_canonical_families.py)
-- [`logs/2026-04-03-mirror-mutual-information-canonical-families.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-mirror-mutual-information-canonical-families.txt)
+- [`scripts/mirror_mutual_information_canonical_families.py`](../scripts/mirror_mutual_information_canonical_families.py)
+- [`logs/2026-04-03-mirror-mutual-information-canonical-families.txt`](../logs/2026-04-03-mirror-mutual-information-canonical-families.txt)
 
 Relationship to the retained exact harness:
 - The review-safe exact result still lives in:
-  [`scripts/mirror_mutual_information.py`](/Users/jonreilly/Projects/Physics/scripts/mirror_mutual_information.py)
+  [`scripts/mirror_mutual_information.py`](../scripts/mirror_mutual_information.py)
   and
-  [`scripts/mirror_mutual_information_chokepoint.py`](/Users/jonreilly/Projects/Physics/scripts/mirror_mutual_information_chokepoint.py)
+  [`scripts/mirror_mutual_information_chokepoint.py`](../scripts/mirror_mutual_information_chokepoint.py)
 - This extension is broader, not more canonical.
 - Its job is to answer the multi-family “mirror DAGs” version of the MI
   question without overwriting the retained exact chokepoint chain.

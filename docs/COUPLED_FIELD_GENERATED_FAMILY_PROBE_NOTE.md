@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/coupled_field_generated_family_probe.py`](/Users/jonreilly/Projects/Physics/scripts/coupled_field_generated_family_probe.py)
-- [`logs/2026-04-05-coupled-field-generated-family-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-coupled-field-generated-family-probe.txt)
+- [`scripts/coupled_field_generated_family_probe.py`](../scripts/coupled_field_generated_family_probe.py)
+- [`logs/2026-04-05-coupled-field-generated-family-probe.txt`](../logs/2026-04-05-coupled-field-generated-family-probe.txt)
 
 ## Question
 

@@ -18,10 +18,10 @@ field / harness choice?
 
 The committed joint validator for the structured-growth family is:
 
-[`scripts/structured_mirror_joint_validation.py`](/Users/jonreilly/Projects/Physics/scripts/structured_mirror_joint_validation.py)
+[`scripts/structured_mirror_joint_validation.py`](../scripts/structured_mirror_joint_validation.py)
 with saved output:
 
-[`logs/2026-04-03-structured-mirror-joint-validation.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-structured-mirror-joint-validation.txt)
+[`logs/2026-04-03-structured-mirror-joint-validation.txt`](../logs/2026-04-03-structured-mirror-joint-validation.txt)
 
 That validator reports a linear structured-growth lane that is physically
 interesting but not Born-clean:
@@ -38,7 +38,7 @@ So the canonical structured-growth validator is **not** Born-clean.
 
 The new dedicated comparison script is:
 
-[`scripts/structured_mirror_reconciliation.py`](/Users/jonreilly/Projects/Physics/scripts/structured_mirror_reconciliation.py)
+[`scripts/structured_mirror_reconciliation.py`](../scripts/structured_mirror_reconciliation.py)
 
 It compares four harnesses on the same structured-growth geometry:
 

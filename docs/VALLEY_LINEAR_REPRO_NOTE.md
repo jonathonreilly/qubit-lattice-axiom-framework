@@ -11,7 +11,7 @@ story.
 
 Run:
 
-[`scripts/reproduction_audit_harness.py`](/Users/jonreilly/Projects/Physics/scripts/reproduction_audit_harness.py)
+[`scripts/reproduction_audit_harness.py`](../scripts/reproduction_audit_harness.py)
 
 Use:
 

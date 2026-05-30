@@ -7,10 +7,10 @@ inward-source row still closed
 
 ## Artifact chain
 
-- Script: [`scripts/persistent_object_top4_multistage_outer_transfer_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_top4_multistage_outer_transfer_sweep.py)
-- Log: [`logs/2026-04-16-persistent-object-top4-multistage-outer-transfer-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-16-persistent-object-top4-multistage-outer-transfer-sweep.txt)
-- Prior widened-pocket note: [`docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_TRANSFER_SWEEP_NOTE_2026-04-16.md`](/Users/jonreilly/Projects/Physics/docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_TRANSFER_SWEEP_NOTE_2026-04-16.md)
-- Prior inward-boundary note: [`docs/PERSISTENT_OBJECT_INWARD_BOUNDARY_FLOOR_DIAGNOSIS_NOTE_2026-04-16.md`](/Users/jonreilly/Projects/Physics/docs/PERSISTENT_OBJECT_INWARD_BOUNDARY_FLOOR_DIAGNOSIS_NOTE_2026-04-16.md)
+- Script: [`scripts/persistent_object_top4_multistage_outer_transfer_sweep.py`](../scripts/persistent_object_top4_multistage_outer_transfer_sweep.py)
+- Log: [`logs/2026-04-16-persistent-object-top4-multistage-outer-transfer-sweep.txt`](../logs/2026-04-16-persistent-object-top4-multistage-outer-transfer-sweep.txt)
+- Prior widened-pocket note: [`docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_TRANSFER_SWEEP_NOTE_2026-04-16.md`](../docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_TRANSFER_SWEEP_NOTE_2026-04-16.md)
+- Prior inward-boundary note: [`docs/PERSISTENT_OBJECT_INWARD_BOUNDARY_FLOOR_DIAGNOSIS_NOTE_2026-04-16.md`](../docs/PERSISTENT_OBJECT_INWARD_BOUNDARY_FLOOR_DIAGNOSIS_NOTE_2026-04-16.md)
 
 ## Question
 

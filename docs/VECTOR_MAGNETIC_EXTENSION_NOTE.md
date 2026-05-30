@@ -5,14 +5,14 @@
 
 ## Artifact Chain
 
-- [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
-- [`archive_unlanded/source-resolved-green-stale-runners-2026-04-30/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/source-resolved-green-stale-runners-2026-04-30/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md)
-- [`docs/ELECTROSTATICS_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ELECTROSTATICS_CARD_NOTE.md)
-- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
-- [`scripts/vector_magnetic_extension_probe.py`](/Users/jonreilly/Projects/Physics/scripts/vector_magnetic_extension_probe.py)
-- [`logs/2026-04-06-vector-magnetic-extension-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-vector-magnetic-extension-probe.txt)
-- [`logs/2026-04-06-moving-source-retarded-portability-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-moving-source-retarded-portability-probe.txt)
-- [`logs/2026-04-05-source-resolved-transverse-propagating-green.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-transverse-propagating-green.txt)
+- [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](../docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
+- [`archive_unlanded/source-resolved-green-stale-runners-2026-04-30/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md`](../archive_unlanded/source-resolved-green-stale-runners-2026-04-30/SOURCE_RESOLVED_TRANSVERSE_PROPAGATING_GREEN_NOTE.md)
+- [`docs/ELECTROSTATICS_CARD_NOTE.md`](../docs/ELECTROSTATICS_CARD_NOTE.md)
+- [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](../docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
+- [`scripts/vector_magnetic_extension_probe.py`](../scripts/vector_magnetic_extension_probe.py)
+- [`logs/2026-04-06-vector-magnetic-extension-probe.txt`](../logs/2026-04-06-vector-magnetic-extension-probe.txt)
+- [`logs/2026-04-06-moving-source-retarded-portability-probe.txt`](../logs/2026-04-06-moving-source-retarded-portability-probe.txt)
+- [`logs/2026-04-05-source-resolved-transverse-propagating-green.txt`](../logs/2026-04-05-source-resolved-transverse-propagating-green.txt)
 
 ## Question
 

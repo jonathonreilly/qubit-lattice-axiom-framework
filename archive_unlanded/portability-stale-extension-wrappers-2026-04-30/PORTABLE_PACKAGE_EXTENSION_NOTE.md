@@ -17,12 +17,12 @@ Do NOT cite the numerical results, tables, or threshold values in the original c
 
 ## Artifact Chain
 
-- [`scripts/PORTABLE_PACKAGE_EXTENSION_COMPARE.py`](/Users/jonreilly/Projects/Physics/scripts/PORTABLE_PACKAGE_EXTENSION_COMPARE.py)
-- [`logs/2026-04-06-portable-package-extension-compare.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-portable-package-extension-compare.txt)
+- [`scripts/PORTABLE_PACKAGE_EXTENSION_COMPARE.py`](../../scripts/PORTABLE_PACKAGE_EXTENSION_COMPARE.py)
+- [`logs/2026-04-06-portable-package-extension-compare.txt`](../../logs/2026-04-06-portable-package-extension-compare.txt)
 - retained comparison sources:
-  - [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
-  - [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
-  - [`docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md)
+  - [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](../../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+  - [`docs/DISTANCE_LAW_PORTABILITY_NOTE.md`](../../docs/DISTANCE_LAW_PORTABILITY_NOTE.md)
+  - [`docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md`](../../docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md)
 
 ## Question
 

@@ -25,8 +25,8 @@ non-load-bearing input until a retained authority for it lands.
 
 ## Artifact chain
 
-- [`scripts/retarded_field_harness.py`](/Users/jonreilly/Projects/Physics/scripts/retarded_field_harness.py)
-- [`logs/2026-04-05-retarded-field-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-retarded-field-harness.txt)
+- [`scripts/retarded_field_harness.py`](../scripts/retarded_field_harness.py)
+- [`logs/2026-04-05-retarded-field-harness.txt`](../logs/2026-04-05-retarded-field-harness.txt)
 
 ## Question
 
@@ -82,9 +82,9 @@ This is still not a self-consistent gravitational-wave sector.
 - the frequency dependence is a retained fingerprint on this harness, not a
   promoted spectroscopy theorem
 - read this together with the more reduction-focused:
-  - [`docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md)
-  - [`docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md)
-  - [`docs/RETARDED_FIELD_COMPACT_REFINEMENT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/RETARDED_FIELD_COMPACT_REFINEMENT_NOTE.md)
+  - [`docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md`](../docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md)
+  - [`docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md`](../docs/RETARDED_FIELD_DELAY_PROXY_NOTE.md)
+  - [`docs/RETARDED_FIELD_COMPACT_REFINEMENT_NOTE.md`](../docs/RETARDED_FIELD_COMPACT_REFINEMENT_NOTE.md)
 
 ## Branch verdict
 

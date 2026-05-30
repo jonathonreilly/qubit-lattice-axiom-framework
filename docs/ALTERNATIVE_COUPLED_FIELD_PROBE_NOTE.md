@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/alternative_coupled_field_probe.py`](/Users/jonreilly/Projects/Physics/scripts/alternative_coupled_field_probe.py)
-- [`logs/2026-04-05-alternative-coupled-field-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-alternative-coupled-field-probe.txt)
+- [`scripts/alternative_coupled_field_probe.py`](../scripts/alternative_coupled_field_probe.py)
+- [`logs/2026-04-05-alternative-coupled-field-probe.txt`](../logs/2026-04-05-alternative-coupled-field-probe.txt)
 
 ## Question
 
@@ -93,7 +93,7 @@ from scripts.minimal_source_driven_field_probe import (
 
 For the restricted audit packet to be self-contained, the imported symbols
 are inlined verbatim below. Source of truth:
-[`scripts/minimal_source_driven_field_probe.py`](/Users/jonreilly/Projects/Physics/scripts/minimal_source_driven_field_probe.py).
+[`scripts/minimal_source_driven_field_probe.py`](../scripts/minimal_source_driven_field_probe.py).
 
 ```python
 # --- begin verbatim excerpt from scripts/minimal_source_driven_field_probe.py ---

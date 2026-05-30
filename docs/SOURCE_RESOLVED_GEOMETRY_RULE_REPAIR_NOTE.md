@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_geometry_rule_repair_probe.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_geometry_rule_repair_probe.py)
-- [`logs/2026-04-05-source-resolved-geometry-rule-repair-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-geometry-rule-repair-probe.txt)
+- [`scripts/source_resolved_geometry_rule_repair_probe.py`](../scripts/source_resolved_geometry_rule_repair_probe.py)
+- [`logs/2026-04-05-source-resolved-geometry-rule-repair-probe.txt`](../logs/2026-04-05-source-resolved-geometry-rule-repair-probe.txt)
 
 ## Question
 

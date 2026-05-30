@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/persistent_object_readout_taper_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_readout_taper_probe.py)
-- [`logs/2026-04-05-persistent-object-readout-taper-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-persistent-object-readout-taper-probe.txt)
+- [`scripts/persistent_object_readout_taper_probe.py`](../scripts/persistent_object_readout_taper_probe.py)
+- [`logs/2026-04-05-persistent-object-readout-taper-probe.txt`](../logs/2026-04-05-persistent-object-readout-taper-probe.txt)
 
 ## Question
 

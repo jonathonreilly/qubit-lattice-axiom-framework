@@ -33,7 +33,7 @@ Start here for the current mainline:
 
 Use the lane manifests in:
 
-- [`docs/lanes/README.md`](/Users/jonreilly/Projects/Physics/.claude/worktrees/sleepy-cerf/docs/lanes/README.md)
+- [`docs/lanes/README.md`](../.claude/worktrees/sleepy-cerf/docs/lanes/README.md)
 
 That is the fastest way to know:
 
@@ -45,7 +45,7 @@ That is the fastest way to know:
 
 - Do not assume a top-level script is canonical just because it exists.
 - Check:
-  - [`docs/CANONICAL_HARNESS_INDEX.md`](/Users/jonreilly/Projects/Physics/.claude/worktrees/sleepy-cerf/docs/CANONICAL_HARNESS_INDEX.md)
-  - [`docs/repo/LANE_STATUS_BOARD.md`](/Users/jonreilly/Projects/Physics/docs/work_history/repo/LANE_STATUS_BOARD.md)
+  - [`docs/CANONICAL_HARNESS_INDEX.md`](../.claude/worktrees/sleepy-cerf/docs/CANONICAL_HARNESS_INDEX.md)
+  - [`docs/repo/LANE_STATUS_BOARD.md`](../docs/work_history/repo/LANE_STATUS_BOARD.md)
 - If a bug affects semantics, use:
-  - [`docs/repo/RETEST_PLAYBOOK.md`](/Users/jonreilly/Projects/Physics/.claude/worktrees/sleepy-cerf/docs/repo/RETEST_PLAYBOOK.md)
+  - [`docs/repo/RETEST_PLAYBOOK.md`](../.claude/worktrees/sleepy-cerf/docs/repo/RETEST_PLAYBOOK.md)

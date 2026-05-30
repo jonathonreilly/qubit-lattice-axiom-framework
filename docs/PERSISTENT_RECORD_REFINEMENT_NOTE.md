@@ -28,12 +28,12 @@ The current persistent-record family now supports:
 
 Relevant scripts:
 
-- [persistent_record_overlap_kernel.py](/Users/jonreilly/Projects/Physics/scripts/persistent_record_overlap_kernel.py)
-- [persistent_record_matched_compare.py](/Users/jonreilly/Projects/Physics/scripts/persistent_record_matched_compare.py)
+- [persistent_record_overlap_kernel.py](../scripts/persistent_record_overlap_kernel.py)
+- [persistent_record_matched_compare.py](../scripts/persistent_record_matched_compare.py)
 
 Relevant corrected matched log:
 
-- [2026-04-03-persistent-record-side-packet-entry-matched-compare.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-03-persistent-record-side-packet-entry-matched-compare.txt)
+- [2026-04-03-persistent-record-side-packet-entry-matched-compare.txt](../logs/2026-04-03-persistent-record-side-packet-entry-matched-compare.txt)
 
 ## Corrected matched result (`2` seeds, `gamma = 1.0`)
 

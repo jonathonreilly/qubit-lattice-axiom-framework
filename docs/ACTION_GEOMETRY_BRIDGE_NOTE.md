@@ -20,8 +20,8 @@ whether the preference shifts smoothly as the geometry becomes more regular.
 
 ## Primary artifact
 
-- Script: [`scripts/action_geometry_bridge_probe.py`](/Users/jonreilly/Projects/Physics/scripts/action_geometry_bridge_probe.py)
-- Log: [`logs/2026-04-04-action-geometry-bridge-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-action-geometry-bridge-probe.txt)
+- Script: [`scripts/action_geometry_bridge_probe.py`](../scripts/action_geometry_bridge_probe.py)
+- Log: [`logs/2026-04-04-action-geometry-bridge-probe.txt`](../logs/2026-04-04-action-geometry-bridge-probe.txt)
 
 ## Frozen replay setup
 

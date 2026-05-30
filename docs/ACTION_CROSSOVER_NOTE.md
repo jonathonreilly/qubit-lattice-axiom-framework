@@ -7,8 +7,8 @@
 
 This note freezes the current regularity crossover replay:
 
-- script: [`scripts/action_regularity_crossover.py`](/Users/jonreilly/Projects/Physics/scripts/action_regularity_crossover.py)
-- log: [`logs/2026-04-04-action-regularity-crossover.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-action-regularity-crossover.txt)
+- script: [`scripts/action_regularity_crossover.py`](../scripts/action_regularity_crossover.py)
+- log: [`logs/2026-04-04-action-regularity-crossover.txt`](../logs/2026-04-04-action-regularity-crossover.txt)
 
 The tested DAG family shows that the better-performing action switches from
 spent-delay to valley-linear as graph geometry becomes more regular:

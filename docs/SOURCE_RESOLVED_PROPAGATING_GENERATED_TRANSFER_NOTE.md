@@ -5,8 +5,8 @@ This note freezes the generated-family test of the propagating Green pocket.
 
 ## Files
 
-- [`scripts/source_resolved_propagating_generated_transfer.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_propagating_generated_transfer.py)
-- [`logs/2026-04-05-source-resolved-propagating-generated-transfer.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-propagating-generated-transfer.txt)
+- [`scripts/source_resolved_propagating_generated_transfer.py`](../scripts/source_resolved_propagating_generated_transfer.py)
+- [`logs/2026-04-05-source-resolved-propagating-generated-transfer.txt`](../logs/2026-04-05-source-resolved-propagating-generated-transfer.txt)
 
 ## Question
 

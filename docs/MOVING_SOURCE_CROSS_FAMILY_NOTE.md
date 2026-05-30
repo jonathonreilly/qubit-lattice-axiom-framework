@@ -5,13 +5,13 @@
 
 ## Artifact Chain
 
-- [`scripts/moving_source_cross_family_probe.py`](/Users/jonreilly/Projects/Physics/scripts/moving_source_cross_family_probe.py)
-- [`logs/2026-04-06-moving-source-cross-family-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-moving-source-cross-family-probe.txt)
+- [`scripts/moving_source_cross_family_probe.py`](../scripts/moving_source_cross_family_probe.py)
+- [`logs/2026-04-06-moving-source-cross-family-probe.txt`](../logs/2026-04-06-moving-source-cross-family-probe.txt)
 - first portable moving-source lane:
-  - [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
+  - [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](../docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
 - second portable family context:
-  - [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md)
-  - [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md)
+  - [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md`](../archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_CARD_EXTENSION_NOTE.md)
+  - [`archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md`](../archive_unlanded/portability-stale-extension-wrappers-2026-04-30/PORTABLE_PACKAGE_EXTENSION_NOTE.md)
 
 ## Question
 

@@ -5,10 +5,10 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_exact_green_h025_pocket.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_exact_green_h025_pocket.py)
-- [`logs/2026-04-05-source-resolved-exact-green-h025-pocket.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-exact-green-h025-pocket.txt)
-- [`docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
-- [`docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md)
+- [`scripts/source_resolved_exact_green_h025_pocket.py`](../scripts/source_resolved_exact_green_h025_pocket.py)
+- [`logs/2026-04-05-source-resolved-exact-green-h025-pocket.txt`](../logs/2026-04-05-source-resolved-exact-green-h025-pocket.txt)
+- [`docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
+- [`docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`](../docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md)
 
 ## Question
 

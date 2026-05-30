@@ -26,8 +26,8 @@ proxy level:
 
 The retained replacement observable is the frontier-delay proxy frozen in:
 
-- [`scripts/growing_graph_frontier_expansion.py`](/Users/jonreilly/Projects/Physics/scripts/growing_graph_frontier_expansion.py)
-- [`docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md)
+- [`scripts/growing_graph_frontier_expansion.py`](../scripts/growing_graph_frontier_expansion.py)
+- [`docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md`](../docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md)
 
 Frozen replay from that proxy:
 

@@ -91,16 +91,16 @@ independently retained.
 
 ## References
 
-- [`docs/H0125_WIDER_W4_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/H0125_WIDER_W4_NOTE.md)
-- [`docs/H0125_WIDER_REPLAY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/H0125_WIDER_REPLAY_NOTE.md)
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
-- [`docs/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER_NOTE.md)
-- [`docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md)
-- [`docs/GROWING_GRAPH_FRONTIER_ARCHITECTURE_TRANSFER_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GROWING_GRAPH_FRONTIER_ARCHITECTURE_TRANSFER_NOTE.md)
-- [`docs/GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md)
-- [`scripts/persistent_object_localization_escalation.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_localization_escalation.py)
-- [`logs/2026-04-05-persistent-object-localization-escalation.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-persistent-object-localization-escalation.txt)
+- [`docs/H0125_WIDER_W4_NOTE.md`](../docs/H0125_WIDER_W4_NOTE.md)
+- [`docs/H0125_WIDER_REPLAY_NOTE.md`](../docs/H0125_WIDER_REPLAY_NOTE.md)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`docs/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER_NOTE.md`](../docs/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER_NOTE.md)
+- [`docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md`](../docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md)
+- [`docs/GROWING_GRAPH_FRONTIER_ARCHITECTURE_TRANSFER_NOTE.md`](../docs/GROWING_GRAPH_FRONTIER_ARCHITECTURE_TRANSFER_NOTE.md)
+- [`docs/GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md`](../docs/GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md)
+- [`scripts/persistent_object_localization_escalation.py`](../scripts/persistent_object_localization_escalation.py)
+- [`logs/2026-04-05-persistent-object-localization-escalation.txt`](../logs/2026-04-05-persistent-object-localization-escalation.txt)
 
 ## Audit boundary (2026-04-28)
 

@@ -5,13 +5,13 @@
 
 ## Artifact Chain
 
-- [`scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py)
-- [`scripts/CONNECTIVITY_FAMILY_V2_BASIN.py`](/Users/jonreilly/Projects/Physics/scripts/CONNECTIVITY_FAMILY_V2_BASIN.py)
-- [`scripts/CONNECTIVITY_FAMILY_V2_FM_TRANSFER.py`](/Users/jonreilly/Projects/Physics/scripts/CONNECTIVITY_FAMILY_V2_FM_TRANSFER.py)
-- [`scripts/CONNECTIVITY_FAMILY_V2_FAILURE_AUDIT.py`](/Users/jonreilly/Projects/Physics/scripts/CONNECTIVITY_FAMILY_V2_FAILURE_AUDIT.py)
-- [`logs/2026-04-06-connectivity-family-v2-elliptical-targeted.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-connectivity-family-v2-elliptical-targeted.txt)
-- retained invariant: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
-- out-of-band holdout: [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md)
+- [`scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py`](../scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py)
+- [`scripts/CONNECTIVITY_FAMILY_V2_BASIN.py`](../scripts/CONNECTIVITY_FAMILY_V2_BASIN.py)
+- [`scripts/CONNECTIVITY_FAMILY_V2_FM_TRANSFER.py`](../scripts/CONNECTIVITY_FAMILY_V2_FM_TRANSFER.py)
+- [`scripts/CONNECTIVITY_FAMILY_V2_FAILURE_AUDIT.py`](../scripts/CONNECTIVITY_FAMILY_V2_FAILURE_AUDIT.py)
+- [`logs/2026-04-06-connectivity-family-v2-elliptical-targeted.txt`](../logs/2026-04-06-connectivity-family-v2-elliptical-targeted.txt)
+- retained invariant: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+- out-of-band holdout: [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md`](../archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md)
 
 ## Question
 
@@ -63,7 +63,7 @@ independent structured family.
 ## Relation to the Retained Invariant
 
 The result sits inside the same control surface summarized in
-[`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md):
+[`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md):
 
 - exact zero-source cancellation
 - exact neutral cancellation

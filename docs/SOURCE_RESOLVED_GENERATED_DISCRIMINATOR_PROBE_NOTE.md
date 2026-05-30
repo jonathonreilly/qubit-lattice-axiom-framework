@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_generated_discriminator_probe.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_generated_discriminator_probe.py)
-- [`logs/2026-04-05-source-resolved-generated-discriminator-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-generated-discriminator-probe.txt)
+- [`scripts/source_resolved_generated_discriminator_probe.py`](../scripts/source_resolved_generated_discriminator_probe.py)
+- [`logs/2026-04-05-source-resolved-generated-discriminator-probe.txt`](../logs/2026-04-05-source-resolved-generated-discriminator-probe.txt)
 
 ## Question
 

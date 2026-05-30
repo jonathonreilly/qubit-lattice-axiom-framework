@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/quantum_horizon_k_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/quantum_horizon_k_sweep.py)
-- [`logs/2026-04-05-quantum-horizon-k-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-quantum-horizon-k-sweep.txt)
+- [`scripts/quantum_horizon_k_sweep.py`](../scripts/quantum_horizon_k_sweep.py)
+- [`logs/2026-04-05-quantum-horizon-k-sweep.txt`](../logs/2026-04-05-quantum-horizon-k-sweep.txt)
 
 ## Question
 

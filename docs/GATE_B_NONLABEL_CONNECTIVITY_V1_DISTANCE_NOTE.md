@@ -6,7 +6,7 @@
 with the no-restore geometry-sector stencil at `h = 0.5`, four seeds,
 `z = {3, 4, 5}`. Frozen on disk.
 **Status authority:** independent audit lane only.
-**Script:** [`scripts/gate_b_nonlabel_connectivity_v1_distance.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v1_distance.py) (PASS=1, C-class)
+**Script:** [`scripts/gate_b_nonlabel_connectivity_v1_distance.py`](../scripts/gate_b_nonlabel_connectivity_v1_distance.py) (PASS=1, C-class)
 
 ## Audit boundary (2026-05-10)
 
@@ -17,10 +17,10 @@ bounded numerical comparison itself is supported by that runner output.
 
 The conditional grade comes from non-retained one-hop dependencies:
 
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](../docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
   (`audit_status: audited_conditional`) — base geometry-sector candidate
   this row companions. Conditional.
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
   (`audit_status: audited_conditional`) — far-field Gate B reference;
   conditional.
 
@@ -31,8 +31,8 @@ cross-reference, conditional on the upstream rows.
 
 ## Artifact chain
 
-- [`scripts/gate_b_nonlabel_connectivity_v1_distance.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v1_distance.py)
-- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v1-distance.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-nonlabel-connectivity-v1-distance.txt)
+- [`scripts/gate_b_nonlabel_connectivity_v1_distance.py`](../scripts/gate_b_nonlabel_connectivity_v1_distance.py)
+- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v1-distance.txt`](../logs/2026-04-05-gate-b-nonlabel-connectivity-v1-distance.txt)
 
 ## Question
 
@@ -74,9 +74,9 @@ The safe statement after the frozen replay is:
 
 Read this together with:
 
-- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
+- [`docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md`](../docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md)
   (`audit_status: audited_conditional`) — base geometry-sector candidate; one-hop dep.
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
   (`audit_status: audited_conditional`) — far-field Gate B reference; one-hop dep.
 
 The bounded numerical observation: on the tested no-restore family, the

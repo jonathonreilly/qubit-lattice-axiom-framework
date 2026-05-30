@@ -5,9 +5,9 @@
 
 ## Artifact Chain
 
-- [`scripts/diamond_signal_budget_hardening.py`](/Users/jonreilly/Projects/Physics/scripts/diamond_signal_budget_hardening.py)
-- [`logs/2026-04-06-diamond-signal-budget-hardening.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-diamond-signal-budget-hardening.txt)
-- [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
+- [`scripts/diamond_signal_budget_hardening.py`](../scripts/diamond_signal_budget_hardening.py)
+- [`logs/2026-04-06-diamond-signal-budget-hardening.txt`](../logs/2026-04-06-diamond-signal-budget-hardening.txt)
+- [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](../docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
 
 ## Question
 

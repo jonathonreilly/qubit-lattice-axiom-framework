@@ -15,9 +15,9 @@
 
 ## Artifact Chain
 
-- [`scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py`](/Users/jonreilly/Projects/Physics/scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py)
-- [`logs/2026-04-06-fifth-family-radial-fm-transfer.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fifth-family-radial-fm-transfer.txt)
-- [`docs/FIFTH_FAMILY_RADIAL_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FIFTH_FAMILY_RADIAL_NOTE.md)
+- [`scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py`](../../scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py)
+- [`logs/2026-04-06-fifth-family-radial-fm-transfer.txt`](../../logs/2026-04-06-fifth-family-radial-fm-transfer.txt)
+- [`docs/FIFTH_FAMILY_RADIAL_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_NOTE.md)
 
 ## Sample Rows
 

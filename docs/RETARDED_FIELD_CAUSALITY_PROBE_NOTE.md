@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/retarded_field_causality_probe.py`](/Users/jonreilly/Projects/Physics/scripts/retarded_field_causality_probe.py)
-- [`logs/2026-04-05-retarded-field-causality-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-retarded-field-causality-probe.txt)
+- [`scripts/retarded_field_causality_probe.py`](../scripts/retarded_field_causality_probe.py)
+- [`logs/2026-04-05-retarded-field-causality-probe.txt`](../logs/2026-04-05-retarded-field-causality-probe.txt)
 
 ## Question
 
@@ -60,8 +60,8 @@ theory.
 
 Read this together with:
 
-- [`docs/PHYSICS_FIRST_ATTACK_PLAN.md`](/Users/jonreilly/Projects/Physics/docs/PHYSICS_FIRST_ATTACK_PLAN.md)
-- [`docs/work_history/repo/backlog/OVERNIGHT_WORK_BACKLOG.md`](/Users/jonreilly/Projects/Physics/docs/work_history/repo/backlog/OVERNIGHT_WORK_BACKLOG.md)
+- [`docs/PHYSICS_FIRST_ATTACK_PLAN.md`](../docs/PHYSICS_FIRST_ATTACK_PLAN.md)
+- [`docs/work_history/repo/backlog/OVERNIGHT_WORK_BACKLOG.md`](../docs/work_history/repo/backlog/OVERNIGHT_WORK_BACKLOG.md)
 
 The weak-field lane survives the `c = inf` limit, so this branch is viable as a
 moonshot extension.

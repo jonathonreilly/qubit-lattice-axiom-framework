@@ -6,9 +6,9 @@
 
 ## Artifact chain
 
-- [`docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md)
-- [`docs/SELF_GRAVITY_BACKREACTION_CLOSURE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SELF_GRAVITY_BACKREACTION_CLOSURE_NOTE.md)
-- [`scripts/poisson_self_gravity_loop_v3.py`](/Users/jonreilly/Projects/Physics/scripts/poisson_self_gravity_loop_v3.py)
+- [`docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md`](../docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md)
+- [`docs/SELF_GRAVITY_BACKREACTION_CLOSURE_NOTE.md`](../docs/SELF_GRAVITY_BACKREACTION_CLOSURE_NOTE.md)
+- [`scripts/poisson_self_gravity_loop_v3.py`](../scripts/poisson_self_gravity_loop_v3.py)
 
 ## Question
 

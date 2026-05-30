@@ -15,11 +15,11 @@
 
 ## Artifact Chain
 
-- [`scripts/shapiro_five_family_portability.py`](/Users/jonreilly/Projects/Physics/scripts/shapiro_five_family_portability.py)
-- [`logs/2026-04-06-shapiro-five-family-portability.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-shapiro-five-family-portability.txt)
-- three-family core: [`docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md)
-- structured-family context: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
-- additional sampled families: [`docs/FOURTH_FAMILY_QUADRANT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FOURTH_FAMILY_QUADRANT_NOTE.md), [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md)
+- [`scripts/shapiro_five_family_portability.py`](../../scripts/shapiro_five_family_portability.py)
+- [`logs/2026-04-06-shapiro-five-family-portability.txt`](../../logs/2026-04-06-shapiro-five-family-portability.txt)
+- three-family core: [`docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md`](../../docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md)
+- structured-family context: [`docs/SIGN_PORTABILITY_INVARIANT_NOTE.md`](../../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+- additional sampled families: [`docs/FOURTH_FAMILY_QUADRANT_NOTE.md`](../../docs/FOURTH_FAMILY_QUADRANT_NOTE.md), [`archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md`](../../archive_unlanded/fifth-family-stale-runners-2026-04-30/FIFTH_FAMILY_RADIAL_NOTE.md)
 
 ## Question
 

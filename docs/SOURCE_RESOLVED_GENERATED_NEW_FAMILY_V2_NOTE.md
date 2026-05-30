@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_generated_new_family_v2_probe.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_generated_new_family_v2_probe.py)
-- [`logs/2026-04-05-source-resolved-generated-new-family-v2-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-generated-new-family-v2-probe.txt)
+- [`scripts/source_resolved_generated_new_family_v2_probe.py`](../scripts/source_resolved_generated_new_family_v2_probe.py)
+- [`logs/2026-04-05-source-resolved-generated-new-family-v2-probe.txt`](../logs/2026-04-05-source-resolved-generated-new-family-v2-probe.txt)
 
 ## Question
 

@@ -6,7 +6,7 @@
 no-restore label-NN connectivity, and no-restore KNN+floor connectivity at
 `h = 0.5`, four seeds, `z = {3, 4, 5}`. Frozen on disk.
 **Status authority:** independent audit lane only.
-**Script:** [`scripts/gate_b_weak_connectivity_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_weak_connectivity_harness.py) (PASS=3, all C-class)
+**Script:** [`scripts/gate_b_weak_connectivity_harness.py`](../scripts/gate_b_weak_connectivity_harness.py) (PASS=3, all C-class)
 
 ## Audit boundary (2026-05-10)
 
@@ -18,13 +18,13 @@ supported by that runner output.
 
 The conditional grade comes from non-retained one-hop dependencies:
 
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
   (`audit_status: audited_conditional`) — cited as the upstream far-field
   Gate B reference. Conditional.
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
   (`effective_status: retained_bounded`) — cited for the bounded distance-law
   companion. Retained-bounded, cross-confirmed.
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
   (`audit_status: audited_conditional`) — cited for the joint Born / `d_TV`
   / MI / decoherence bounded comparison. Conditional.
 
@@ -35,8 +35,8 @@ cross-reference, conditional on the upstream rows.
 
 ## Artifact chain
 
-- [`scripts/gate_b_weak_connectivity_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_weak_connectivity_harness.py)
-- [`logs/2026-04-05-gate-b-weak-connectivity-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-weak-connectivity-harness.txt)
+- [`scripts/gate_b_weak_connectivity_harness.py`](../scripts/gate_b_weak_connectivity_harness.py)
+- [`logs/2026-04-05-gate-b-weak-connectivity-harness.txt`](../logs/2026-04-05-gate-b-weak-connectivity-harness.txt)
 
 ## Question
 
@@ -89,11 +89,11 @@ connectivity rule is.
 
 Read this together with:
 
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
   (`audit_status: audited_conditional`) — far-field Gate B reference; one-hop dep.
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
   (`effective_status: retained_bounded`) — bounded distance-law companion; one-hop dep.
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
   (`audit_status: audited_conditional`) — joint-package bounded comparison; one-hop dep.
 
 The bounded weak-connectivity boundary map this note frozen-replays:

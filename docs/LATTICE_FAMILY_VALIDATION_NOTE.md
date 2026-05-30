@@ -8,12 +8,12 @@ bridge result on the ordered 2D lattice family.
 
 Artifacts:
 
-- [`scripts/lattice_family_validation.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_family_validation.py)
-- [`logs/2026-04-03-lattice-family-validation.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-family-validation.txt)
+- [`scripts/lattice_family_validation.py`](../scripts/lattice_family_validation.py)
+- [`logs/2026-04-03-lattice-family-validation.txt`](../logs/2026-04-03-lattice-family-validation.txt)
 - companion distance-law note:
-  [`docs/LATTICE_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_DISTANCE_LAW_NOTE.md)
+  [`docs/LATTICE_DISTANCE_LAW_NOTE.md`](../docs/LATTICE_DISTANCE_LAW_NOTE.md)
 - weak-field reopening note:
-  [`docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md)
+  [`docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md`](../docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md)
 
 ## What is measured
 
@@ -85,7 +85,7 @@ on the far-field window `b >= 7`.
 
 That branch is frozen separately in:
 
-- [`docs/LATTICE_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_DISTANCE_LAW_NOTE.md)
+- [`docs/LATTICE_DISTANCE_LAW_NOTE.md`](../docs/LATTICE_DISTANCE_LAW_NOTE.md)
 
 ## Safe conclusion
 
@@ -101,7 +101,7 @@ same-family two-harness bridge:
 A later weak-field sweep reopens a **narrow one-card pocket** on the same
 ordered family:
 
-- [`docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md)
+- [`docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md`](../docs/LATTICE_FIELD_STRENGTH_UNIFICATION_NOTE.md)
 
 ## Important limits
 

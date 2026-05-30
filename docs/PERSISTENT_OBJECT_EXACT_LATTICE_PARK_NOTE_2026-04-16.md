@@ -63,7 +63,7 @@ lane is ever reopened, start from these earlier anchors rather than rediscover
 them from scratch:
 
 1. `7b1efec9` root toy substrate:
-   [toy_event_physics.py](/Users/jonreilly/Projects/Physics/toy_event_physics.py:1)
+   [toy_event_physics.py](../toy_event_physics.py:1)
 2. `b113cc0d` self-maintenance is not fixed-point stasis:
    [self_maintenance_rule_sweep.py](../scripts/self_maintenance_rule_sweep.py:1)
 3. `10acd98b` inertial analogue means identity surviving translation:

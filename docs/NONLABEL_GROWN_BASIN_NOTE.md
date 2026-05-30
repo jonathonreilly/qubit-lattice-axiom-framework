@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/NONLABEL_GROWN_BASIN_TARGETED.py`](/Users/jonreilly/Projects/Physics/scripts/NONLABEL_GROWN_BASIN_TARGETED.py)
-- [`logs/2026-04-06-nonlabel-grown-basin-targeted.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-nonlabel-grown-basin-targeted.txt)
+- [`scripts/NONLABEL_GROWN_BASIN_TARGETED.py`](../scripts/NONLABEL_GROWN_BASIN_TARGETED.py)
+- [`logs/2026-04-06-nonlabel-grown-basin-targeted.txt`](../logs/2026-04-06-nonlabel-grown-basin-targeted.txt)
 
 ## Question
 

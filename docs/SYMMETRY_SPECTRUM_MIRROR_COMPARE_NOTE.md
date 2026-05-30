@@ -7,7 +7,7 @@ This note records the detector-response singular-spectrum diagnostic for the
 mirror families against matched random baselines.
 
 Script:
-[`scripts/symmetry_spectrum_mirror_compare.py`](/Users/jonreilly/Projects/Physics/scripts/symmetry_spectrum_mirror_compare.py)
+[`scripts/symmetry_spectrum_mirror_compare.py`](../scripts/symmetry_spectrum_mirror_compare.py)
 
 ## Question
 

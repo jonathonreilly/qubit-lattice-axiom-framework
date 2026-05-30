@@ -20,7 +20,7 @@ The claim is intentionally narrow:
 
 ## Primary artifact
 
-- Script: [`scripts/growing_graph_frontier_expansion.py`](/Users/jonreilly/Projects/Physics/scripts/growing_graph_frontier_expansion.py)
+- Script: [`scripts/growing_graph_frontier_expansion.py`](../scripts/growing_graph_frontier_expansion.py)
 
 ## What was tested
 

@@ -1,12 +1,12 @@
 **Status:** bounded - bounded or caveated result note
 
 Artifacts:
-- [`scripts/structured_mirror_joint_validation.py`](/Users/jonreilly/Projects/Physics/scripts/structured_mirror_joint_validation.py)
-- [`logs/2026-04-03-structured-mirror-joint-validation.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-structured-mirror-joint-validation.txt)
+- [`scripts/structured_mirror_joint_validation.py`](../../scripts/structured_mirror_joint_validation.py)
+- [`logs/2026-04-03-structured-mirror-joint-validation.txt`](../../logs/2026-04-03-structured-mirror-joint-validation.txt)
 
 What this does:
 - keeps the structured mirror geometry from
-  [`scripts/structured_mirror_growth.py`](/Users/jonreilly/Projects/Physics/scripts/structured_mirror_growth.py)
+  [`scripts/structured_mirror_growth.py`](../../scripts/structured_mirror_growth.py)
 - replaces the old layer-normalized propagation with a fully linear propagator
 - measures the same core bounded observables on that geometry:
   - `d_TV`

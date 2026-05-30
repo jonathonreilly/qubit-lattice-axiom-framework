@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/SIXTH_FAMILY_DISTANCE_LAW_THIRD_VS_SIXTH_QUICK.py`](/Users/jonreilly/Projects/Physics/scripts/SIXTH_FAMILY_DISTANCE_LAW_THIRD_VS_SIXTH_QUICK.py)
-- [`logs/2026-04-06-sixth-family-distance-law-third-vs-sixth-quick.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-sixth-family-distance-law-third-vs-sixth-quick.txt)
+- [`scripts/SIXTH_FAMILY_DISTANCE_LAW_THIRD_VS_SIXTH_QUICK.py`](../scripts/SIXTH_FAMILY_DISTANCE_LAW_THIRD_VS_SIXTH_QUICK.py)
+- [`logs/2026-04-06-sixth-family-distance-law-third-vs-sixth-quick.txt`](../logs/2026-04-06-sixth-family-distance-law-third-vs-sixth-quick.txt)
 
 ## Question
 

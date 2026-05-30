@@ -6,10 +6,10 @@ current frozen log
 
 ## Artifact chain
 
-- [`scripts/lattice_3d_l2_numpy_h0125_bridge.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_numpy_h0125_bridge.py)
-- [`scripts/lattice_3d_l2_numpy_h0125_only.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_numpy_h0125_only.py)
-- [`logs/2026-04-05-lattice-3d-l2-numpy-h0125-bridge.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-lattice-3d-l2-numpy-h0125-bridge.txt)
-- [`logs/2026-04-05-lattice-3d-l2-numpy-h0125-only.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-lattice-3d-l2-numpy-h0125-only.txt)
+- [`scripts/lattice_3d_l2_numpy_h0125_bridge.py`](../scripts/lattice_3d_l2_numpy_h0125_bridge.py)
+- [`scripts/lattice_3d_l2_numpy_h0125_only.py`](../scripts/lattice_3d_l2_numpy_h0125_only.py)
+- [`logs/2026-04-05-lattice-3d-l2-numpy-h0125-bridge.txt`](../logs/2026-04-05-lattice-3d-l2-numpy-h0125-bridge.txt)
+- [`logs/2026-04-05-lattice-3d-l2-numpy-h0125-only.txt`](../logs/2026-04-05-lattice-3d-l2-numpy-h0125-only.txt)
 
 ## Question
 

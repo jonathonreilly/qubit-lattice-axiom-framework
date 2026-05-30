@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_complex_action_falsifier.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_complex_action_falsifier.py)
-- [`logs/2026-04-05-gate-b-complex-action-falsifier.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-complex-action-falsifier.txt)
+- [`scripts/gate_b_complex_action_falsifier.py`](../scripts/gate_b_complex_action_falsifier.py)
+- [`logs/2026-04-05-gate-b-complex-action-falsifier.txt`](../logs/2026-04-05-gate-b-complex-action-falsifier.txt)
 
 ## Question
 
@@ -55,7 +55,7 @@ The narrow, honest statement is:
 This probe does **not** re-freeze Born on the same row.
 That guardrail is inherited from the retained Gate B grown joint-package note:
 
-- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
+- [`docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md`](../docs/GATE_B_GROWN_JOINT_PACKAGE_NOTE.md)
 
 So the safe read is:
 

@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/moving_source_retarded_portability_probe.py`](/Users/jonreilly/Projects/Physics/scripts/moving_source_retarded_portability_probe.py)
-- [`logs/2026-04-06-moving-source-retarded-portability-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-moving-source-retarded-portability-probe.txt)
+- [`scripts/moving_source_retarded_portability_probe.py`](../scripts/moving_source_retarded_portability_probe.py)
+- [`logs/2026-04-06-moving-source-retarded-portability-probe.txt`](../logs/2026-04-06-moving-source-retarded-portability-probe.txt)
 
 ## Question
 

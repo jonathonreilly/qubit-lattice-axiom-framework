@@ -10,19 +10,19 @@ for the retained physics harnesses.
 
 Use these first:
 
-- [`docs/START_HERE.md`](/Users/jonreilly/Projects/Physics/docs/START_HERE.md)
-- [`docs/UNIFIED_PROGRAM_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/UNIFIED_PROGRAM_NOTE.md)
-- [`README.md`](/Users/jonreilly/Projects/Physics/README.md)
+- [`docs/START_HERE.md`](../docs/START_HERE.md)
+- [`docs/UNIFIED_PROGRAM_NOTE.md`](../docs/UNIFIED_PROGRAM_NOTE.md)
+- [`README.md`](../README.md)
 
 ## Legacy exploratory drivers
 
 These files are still useful as historical experiments, but they are not the
 canonical retained harnesses:
 
-- [`scripts/causal_field_full_test.py`](/Users/jonreilly/Projects/Physics/scripts/causal_field_full_test.py)
-- [`scripts/continuum_limit_test.py`](/Users/jonreilly/Projects/Physics/scripts/continuum_limit_test.py)
-- [`scripts/lorentz_symmetry_test.py`](/Users/jonreilly/Projects/Physics/scripts/lorentz_symmetry_test.py)
-- [`scripts/three_d_joint_test.py`](/Users/jonreilly/Projects/Physics/scripts/three_d_joint_test.py)
+- [`scripts/causal_field_full_test.py`](../scripts/causal_field_full_test.py)
+- [`scripts/continuum_limit_test.py`](../scripts/continuum_limit_test.py)
+- [`scripts/lorentz_symmetry_test.py`](../scripts/lorentz_symmetry_test.py)
+- [`scripts/three_d_joint_test.py`](../scripts/three_d_joint_test.py)
 
 ## Read this way
 

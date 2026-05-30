@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_grown_distance_law.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_distance_law.py)
-- [`logs/2026-04-05-gate-b-grown-distance-law.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-distance-law.txt)
+- [`scripts/gate_b_grown_distance_law.py`](../scripts/gate_b_grown_distance_law.py)
+- [`logs/2026-04-05-gate-b-grown-distance-law.txt`](../logs/2026-04-05-gate-b-grown-distance-law.txt)
 
 ## Question
 

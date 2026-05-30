@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/gate_b_nonlabel_connectivity_v2.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_nonlabel_connectivity_v2.py)
-- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt)
+- [`scripts/gate_b_nonlabel_connectivity_v2.py`](../scripts/gate_b_nonlabel_connectivity_v2.py)
+- [`logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt`](../logs/2026-04-05-gate-b-nonlabel-connectivity-v2.txt)
 
 ## Question
 
@@ -43,8 +43,8 @@ So the bounded conclusion is:
 
 Read this together with:
 
-- [`docs/GATE_B_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_FARFIELD_NOTE.md)
-- [`docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md)
-- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
+- [`docs/GATE_B_FARFIELD_NOTE.md`](../docs/GATE_B_FARFIELD_NOTE.md)
+- [`docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md`](../docs/GATE_B_NO_RESTORE_FARFIELD_NOTE.md)
+- [`docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md`](../docs/GATE_B_WEAK_CONNECTIVITY_NOTE.md)
 
 This note should be promoted only if the non-label candidate keeps the far-field sign and `F~M` close to the exact-grid or label-control rows. Otherwise it is a bounded negative for the non-label forward-connectivity idea.

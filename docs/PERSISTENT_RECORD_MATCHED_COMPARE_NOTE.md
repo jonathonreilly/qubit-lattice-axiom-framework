@@ -18,11 +18,11 @@ The comparison question is narrower than asymptotic closure:
 ## Artifacts
 
 - Harness:
-  [persistent_record_matched_compare.py](/Users/jonreilly/Projects/Physics/scripts/persistent_record_matched_compare.py)
+  [persistent_record_matched_compare.py](../scripts/persistent_record_matched_compare.py)
 - Full-method matched log on `N = 8, 12`:
-  [2026-04-03-persistent-record-matched-compare-full-n8-n12.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-03-persistent-record-matched-compare-full-n8-n12.txt)
+  [2026-04-03-persistent-record-matched-compare-full-n8-n12.txt](../logs/2026-04-03-persistent-record-matched-compare-full-n8-n12.txt)
 - Fast matched log on `N = 8, 12, 18` without the expensive scar lane:
-  [2026-04-03-persistent-record-matched-compare-fast-n8-n18.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-03-persistent-record-matched-compare-fast-n8-n18.txt)
+  [2026-04-03-persistent-record-matched-compare-fast-n8-n18.txt](../logs/2026-04-03-persistent-record-matched-compare-fast-n8-n18.txt)
 
 ## Matched results
 

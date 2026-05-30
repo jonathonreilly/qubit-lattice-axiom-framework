@@ -20,11 +20,11 @@ promoted Gate B result.
 
 Script:
 
-- [`scripts/evolving_network_prototype_v2.py`](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v2.py)
+- [`scripts/evolving_network_prototype_v2.py`](../scripts/evolving_network_prototype_v2.py)
 
 Log:
 
-- [`logs/2026-04-04-evolving-network-prototype-v2.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v2.txt)
+- [`logs/2026-04-04-evolving-network-prototype-v2.txt`](../logs/2026-04-04-evolving-network-prototype-v2.txt)
 
 ## What it is testing
 

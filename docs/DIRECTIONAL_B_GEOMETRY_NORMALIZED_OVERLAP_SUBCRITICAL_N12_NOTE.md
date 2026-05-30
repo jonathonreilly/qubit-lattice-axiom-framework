@@ -6,11 +6,11 @@
 ## Artifact chain
 
 - Script:
-  [`scripts/directional_b_geometry_normalized_overlap_map.py`](/Users/jonreilly/Projects/Physics/scripts/directional_b_geometry_normalized_overlap_map.py)
+  [`scripts/directional_b_geometry_normalized_overlap_map.py`](../scripts/directional_b_geometry_normalized_overlap_map.py)
 - Log:
-  [`logs/2026-04-05-directional-b-geometry-normalized-overlap-map-n12.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-directional-b-geometry-normalized-overlap-map-n12.txt)
+  [`logs/2026-04-05-directional-b-geometry-normalized-overlap-map-n12.txt`](../logs/2026-04-05-directional-b-geometry-normalized-overlap-map-n12.txt)
 - Prior deeper-slice baseline:
-  [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_OVERLAP_MAP_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_OVERLAP_MAP_NOTE.md)
+  [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_OVERLAP_MAP_NOTE.md`](../docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_OVERLAP_MAP_NOTE.md)
 
 ## Question
 
@@ -96,9 +96,9 @@ In plain language:
 
 Read this with:
 
-- [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_OVERLAP_MAP_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_OVERLAP_MAP_NOTE.md)
-- [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_MASS5_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_MASS5_NOTE.md)
-- [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md)
+- [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_OVERLAP_MAP_NOTE.md`](../docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_OVERLAP_MAP_NOTE.md)
+- [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_MASS5_NOTE.md`](../docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_MASS5_NOTE.md)
+- [`docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md`](../docs/DIRECTIONAL_B_GEOMETRY_NORMALIZED_HOLDOUT_TRANSFER_NOTE.md)
 
 Together they now say:
 

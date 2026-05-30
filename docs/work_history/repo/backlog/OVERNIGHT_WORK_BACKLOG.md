@@ -56,8 +56,8 @@ When the current batch reaches a real local maximum, do one full repo cleanup:
 
 Program-level calibration now lives in:
 
-- [`docs/INTEREST_MAP.md`](/Users/jonreilly/Projects/Physics/docs/INTEREST_MAP.md)
-- [`docs/PHYSICS_FIRST_ATTACK_PLAN.md`](/Users/jonreilly/Projects/Physics/docs/PHYSICS_FIRST_ATTACK_PLAN.md)
+- [`docs/INTEREST_MAP.md`](../../../../docs/INTEREST_MAP.md)
+- [`docs/PHYSICS_FIRST_ATTACK_PLAN.md`](../../../../docs/PHYSICS_FIRST_ATTACK_PLAN.md)
 
 That map should govern priority: prefer work that raises real program
 confidence, not just internal excitement.
@@ -302,7 +302,7 @@ and move on.
 Run one explicit failure-audit pass first.
 
 The current canonical audit pass is recorded in
-[`docs/MOONSHOT_FAILURE_AUDIT_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MOONSHOT_FAILURE_AUDIT_NOTE.md).
+[`docs/MOONSHOT_FAILURE_AUDIT_NOTE.md`](../../../../docs/MOONSHOT_FAILURE_AUDIT_NOTE.md).
 
 That audit should ask:
 

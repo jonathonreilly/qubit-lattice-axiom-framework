@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py`](/Users/jonreilly/Projects/Physics/scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py)
-- [`logs/2026-04-06-third-grown-family-sign.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-third-grown-family-sign.txt)
+- [`scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py`](../scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py)
+- [`logs/2026-04-06-third-grown-family-sign.txt`](../logs/2026-04-06-third-grown-family-sign.txt)
 - `docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md` (sibling artifact in same lane;
   cross-reference only — not a one-hop dep of this note)
 

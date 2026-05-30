@@ -15,9 +15,9 @@
 
 ## Artifact Chain
 
-- [`scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py`](/Users/jonreilly/Projects/Physics/scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py)
-- [`logs/2026-04-06-fifth-family-complex-targeted.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-fifth-family-complex-targeted.txt)
-- [`docs/FIFTH_FAMILY_RADIAL_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/FIFTH_FAMILY_RADIAL_NOTE.md)
+- [`scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py`](../../scripts/FIFTH_FAMILY_COMPLEX_TARGETED.py)
+- [`logs/2026-04-06-fifth-family-complex-targeted.txt`](../../logs/2026-04-06-fifth-family-complex-targeted.txt)
+- [`docs/FIFTH_FAMILY_RADIAL_NOTE.md`](../../docs/FIFTH_FAMILY_RADIAL_NOTE.md)
 
 ## Question
 

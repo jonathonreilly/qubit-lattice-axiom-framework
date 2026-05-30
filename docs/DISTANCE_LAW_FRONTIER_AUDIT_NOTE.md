@@ -42,8 +42,8 @@ This audit originally compared:
 
 The retained mainline distance-law companions already say:
 
-- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
-- [`docs/GATE_B_H025_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GATE_B_H025_DISTANCE_LAW_NOTE.md)
+- [`docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
+- [`docs/GATE_B_H025_DISTANCE_LAW_NOTE.md`](../docs/GATE_B_H025_DISTANCE_LAW_NOTE.md)
 
 Frozen compact-family readout:
 
@@ -64,7 +64,7 @@ Safe read from the retained family:
 ## Status update
 The later independent replay has now landed on `main`:
 
-- [`docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
+- [`docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md`](../docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md)
 
 That means the frontier has moved.
 

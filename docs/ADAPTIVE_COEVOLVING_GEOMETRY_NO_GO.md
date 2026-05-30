@@ -14,7 +14,7 @@ this lane is not yet a clear positive.
 ## What was tested
 
 The probe reused the current generated-geometry machinery in
-[`scripts/node_placement_emergence.py`](/Users/jonreilly/Projects/Physics/scripts/node_placement_emergence.py):
+[`scripts/node_placement_emergence.py`](../scripts/node_placement_emergence.py):
 
 - geometry evolves via distinguishability-weighted post-barrier placement
 - weak-field observable only: far-field mass-induced centroid shift

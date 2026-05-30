@@ -33,8 +33,8 @@ supplied here.
 
 ## Artifact chain
 
-- [`scripts/gate_b_grown_propagating_field_radical.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_grown_propagating_field_radical.py)
-- [`logs/2026-04-05-gate-b-grown-propagating-field-radical.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-gate-b-grown-propagating-field-radical.txt)
+- [`scripts/gate_b_grown_propagating_field_radical.py`](../scripts/gate_b_grown_propagating_field_radical.py)
+- [`logs/2026-04-05-gate-b-grown-propagating-field-radical.txt`](../logs/2026-04-05-gate-b-grown-propagating-field-radical.txt)
 
 ## Question
 

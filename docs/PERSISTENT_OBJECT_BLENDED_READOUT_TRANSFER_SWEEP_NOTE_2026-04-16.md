@@ -15,10 +15,10 @@ load-bearing claim of this sliced certificate.
 
 ## Artifact chain
 
-- Supporting boundary script: [`scripts/persistent_object_blended_readout_boundary_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_blended_readout_boundary_probe.py)
-- Boundary log: [`logs/2026-04-16-persistent-object-blended-readout-boundary-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-16-persistent-object-blended-readout-boundary-probe.txt)
-- Transfer script: [`scripts/persistent_object_blended_readout_transfer_sweep.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_blended_readout_transfer_sweep.py)
-- Transfer log: [`logs/2026-04-16-persistent-object-blended-readout-transfer-sweep.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-16-persistent-object-blended-readout-transfer-sweep.txt)
+- Supporting boundary script: [`scripts/persistent_object_blended_readout_boundary_probe.py`](../scripts/persistent_object_blended_readout_boundary_probe.py)
+- Boundary log: [`logs/2026-04-16-persistent-object-blended-readout-boundary-probe.txt`](../logs/2026-04-16-persistent-object-blended-readout-boundary-probe.txt)
+- Transfer script: [`scripts/persistent_object_blended_readout_transfer_sweep.py`](../scripts/persistent_object_blended_readout_transfer_sweep.py)
+- Transfer log: [`logs/2026-04-16-persistent-object-blended-readout-transfer-sweep.txt`](../logs/2026-04-16-persistent-object-blended-readout-transfer-sweep.txt)
 
 ## Question
 

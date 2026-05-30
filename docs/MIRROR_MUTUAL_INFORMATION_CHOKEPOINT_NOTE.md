@@ -13,10 +13,10 @@ diagnostic at the named parameter card; the canonical retained line has been
 narrowed to match.
 
 Script:
-[`scripts/mirror_mutual_information_chokepoint.py`](/Users/jonreilly/Projects/Physics/scripts/mirror_mutual_information_chokepoint.py)
+[`scripts/mirror_mutual_information_chokepoint.py`](../scripts/mirror_mutual_information_chokepoint.py)
 
 Log:
-[`logs/2026-04-03-mirror-mutual-information-chokepoint-n60-r5p0.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-mirror-mutual-information-chokepoint-n60-r5p0.txt)
+[`logs/2026-04-03-mirror-mutual-information-chokepoint-n60-r5p0.txt`](../logs/2026-04-03-mirror-mutual-information-chokepoint-n60-r5p0.txt)
 
 ## Question
 

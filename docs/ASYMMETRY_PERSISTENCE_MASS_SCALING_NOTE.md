@@ -16,10 +16,10 @@ The next gravity-side question was narrower:
 ## Setup
 
 Script:
-[scripts/asymmetry_persistence_mass_scaling.py](/Users/jonreilly/Projects/Physics/scripts/asymmetry_persistence_mass_scaling.py)
+[scripts/asymmetry_persistence_mass_scaling.py](../scripts/asymmetry_persistence_mass_scaling.py)
 
 Log:
-[logs/2026-04-02-asymmetry-persistence-mass-scaling.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-02-asymmetry-persistence-mass-scaling.txt)
+[logs/2026-04-02-asymmetry-persistence-mass-scaling.txt](../logs/2026-04-02-asymmetry-persistence-mass-scaling.txt)
 
 Protocol:
 

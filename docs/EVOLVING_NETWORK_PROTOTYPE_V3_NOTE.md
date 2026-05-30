@@ -18,11 +18,11 @@ preserved.
 
 Script:
 
-- [`scripts/evolving_network_prototype_v3.py`](/Users/jonreilly/Projects/Physics/scripts/evolving_network_prototype_v3.py)
+- [`scripts/evolving_network_prototype_v3.py`](../scripts/evolving_network_prototype_v3.py)
 
 Log:
 
-- [`logs/2026-04-04-evolving-network-prototype-v3.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-evolving-network-prototype-v3.txt)
+- [`logs/2026-04-04-evolving-network-prototype-v3.txt`](../logs/2026-04-04-evolving-network-prototype-v3.txt)
 
 ## What v3 changes relative to v2
 

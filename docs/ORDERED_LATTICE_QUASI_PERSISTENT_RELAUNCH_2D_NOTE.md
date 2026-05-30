@@ -10,8 +10,8 @@ is not promoted to a family-generic claim.
 
 ## Artifact chain
 
-- Script: [`scripts/ordered_lattice_quasi_persistent_relaunch_2d.py`](/Users/jonreilly/Projects/Physics/scripts/ordered_lattice_quasi_persistent_relaunch_2d.py)
-- Log: [`logs/2026-04-04-ordered-lattice-quasi-persistent-relaunch-2d.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-ordered-lattice-quasi-persistent-relaunch-2d.txt)
+- Script: [`scripts/ordered_lattice_quasi_persistent_relaunch_2d.py`](../scripts/ordered_lattice_quasi_persistent_relaunch_2d.py)
+- Log: [`logs/2026-04-04-ordered-lattice-quasi-persistent-relaunch-2d.txt`](../logs/2026-04-04-ordered-lattice-quasi-persistent-relaunch-2d.txt)
 
 This is the cheapest cross-family check I could build for the relaunch-packet
 idea. It mirrors the retained 3D quasi-persistent relaunch control, but on the

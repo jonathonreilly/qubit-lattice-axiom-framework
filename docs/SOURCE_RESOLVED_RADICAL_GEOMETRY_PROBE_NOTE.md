@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- [`scripts/source_resolved_radical_geometry_probe.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_radical_geometry_probe.py)
-- [`logs/2026-04-05-source-resolved-radical-geometry-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-radical-geometry-probe.txt)
+- [`scripts/source_resolved_radical_geometry_probe.py`](../scripts/source_resolved_radical_geometry_probe.py)
+- [`logs/2026-04-05-source-resolved-radical-geometry-probe.txt`](../logs/2026-04-05-source-resolved-radical-geometry-probe.txt)
 
 ## Question
 

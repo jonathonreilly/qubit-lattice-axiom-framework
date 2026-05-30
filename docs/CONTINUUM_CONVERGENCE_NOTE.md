@@ -57,11 +57,11 @@ On the tested ordered-lattice family:
 
 Primary branch artifacts:
 
-- [`scripts/lattice_3d_l2_fast.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_fast.py)
-- [`scripts/lattice_3d_l2_canonical_card.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_canonical_card.py)
-- [`scripts/lattice_3d_inverse_square_kernel.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_inverse_square_kernel.py)
-- [`scripts/lattice_3d_l2_tail_stats.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_tail_stats.py)
-- [`docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md)
+- [`scripts/lattice_3d_l2_fast.py`](../scripts/lattice_3d_l2_fast.py)
+- [`scripts/lattice_3d_l2_canonical_card.py`](../scripts/lattice_3d_l2_canonical_card.py)
+- [`scripts/lattice_3d_inverse_square_kernel.py`](../scripts/lattice_3d_inverse_square_kernel.py)
+- [`scripts/lattice_3d_l2_tail_stats.py`](../scripts/lattice_3d_l2_tail_stats.py)
+- [`docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md`](../docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md)
 
 ### 4. 4D ordered lattice with `1/L^3`
 
@@ -87,11 +87,11 @@ Current branch evidence does **not** yet support:
 There are currently two different transfer-style reads on `main`:
 
 1. the bounded local probe:
-   - [`docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md)
+   - [`docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md`](../docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md)
    - this local measure-corrected discriminator leaned closer to `p = 1.5`
      than `p = 2.0` in 3D
 2. the imported branch transfer story:
-   - [`scripts/transfer_norm_and_born.py`](/Users/jonreilly/Projects/Physics/scripts/transfer_norm_and_born.py)
+   - [`scripts/transfer_norm_and_born.py`](../scripts/transfer_norm_and_born.py)
    - this is a different observable and should not be read as already
      superseding the bounded local probe
 

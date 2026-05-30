@@ -43,7 +43,7 @@ All families are evaluated against the same stage-1 sourced profile, then relaun
 
 The full sweep log is here:
 
-- [logs/2026-04-04-mesoscopic-surrogate-localization-family-sweep.txt](/Users/jonreilly/Projects/Physics/logs/2026-04-04-mesoscopic-surrogate-localization-family-sweep.txt)
+- [logs/2026-04-04-mesoscopic-surrogate-localization-family-sweep.txt](../logs/2026-04-04-mesoscopic-surrogate-localization-family-sweep.txt)
 
 ## Benchmark rule
 

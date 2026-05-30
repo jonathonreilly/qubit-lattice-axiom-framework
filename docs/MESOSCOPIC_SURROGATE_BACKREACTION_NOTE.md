@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/mesoscopic_surrogate_backreaction_harness.py`](/Users/jonreilly/Projects/Physics/scripts/mesoscopic_surrogate_backreaction_harness.py)
-- Log: [`logs/2026-04-04-mesoscopic-surrogate-backreaction.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-mesoscopic-surrogate-backreaction.txt)
+- Script: [`scripts/mesoscopic_surrogate_backreaction_harness.py`](../scripts/mesoscopic_surrogate_backreaction_harness.py)
+- Log: [`logs/2026-04-04-mesoscopic-surrogate-backreaction.txt`](../logs/2026-04-04-mesoscopic-surrogate-backreaction.txt)
 
 This is the next honest step after the relaunch/compression controls:
 
@@ -61,10 +61,10 @@ But the limit remains just as important:
 
 This note should be read with:
 
-- [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
-- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
-- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
+- [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](../docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_NOTE.md)
+- [`QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md`](../docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
+- [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
 
 Together they now say:
 
@@ -80,9 +80,9 @@ Together they now say:
 The next honest step is:
 
 - read this note together with
-  [`BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md)
+  [`BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md`](../docs/BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md)
   and
-  [`MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md)
+  [`MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md`](../docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md)
   to bound how point-like the surrogate-source picture really is
 - then ask whether the surrogate can survive *another* sourced response stage
   without collapsing into an ordinary broad packet

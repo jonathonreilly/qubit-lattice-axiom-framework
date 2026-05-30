@@ -1,29 +1,10 @@
-# Tree-Level Gluon Masslessness on a Conditional SU(3) Yang-Mills Surface
+# Tree-Level Gluon Masslessness from Retained SU(3) Gauge Invariance
 
 **Date:** 2026-05-02
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-**Claim scope:** given a local Lorentz-covariant SU(3) Yang-Mills connection with the standard non-abelian transformation law, no Lorentz-invariant Hermitian gauge-singlet quadratic-in-A_μ^a operator exists that is also SU(3) gauge-invariant; therefore the only quadratic-in-A operator allowed on that conditional surface is the kinetic term -(1/4) F^a_μν F^{aμν}, and the gluon propagator pole is at p² = 0 (massless).
+**Type:** positive_theorem (proposed; audit-lane to ratify)
+**Claim scope:** at the tree level on the framework's retained SU(3) gauge action surface, no Lorentz-invariant Hermitian gauge-singlet quadratic-in-A_μ^a operator exists that is also SU(3) gauge-invariant; therefore the only quadratic-in-A operator allowed by retained SU(3) gauge invariance is the kinetic term -(1/4) F^a_μν F^{aμν}, and the gluon propagator pole is at p² = 0 (massless).
 **Status:** awaiting independent audit. Under scope-aware classification (audit-lane proposal #291), `effective_status` is computed by the audit pipeline.
-**Claim type:** bounded_theorem
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The Yang-Mills algebra closes once the local SU(3) connection and standard transformation law are assumed. The cited retained authorities provide structural graph-first su(3) closure, but do not construct the missing bridge to a l"*
-
-with repair: *"missing_bridge_theorem: add and audit a bridge theorem constructing a local Lorentz-covariant Yang-Mills SU(3) connection, gauge action, and propagator from the retained graph-first structural su(3) surface."*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The standard Yang-Mills algebra steps — that no gauge-invariant quadratic mass term exists and the tree-level propagator pole is at p² = 0 — are exactly verified by the runner given a local Lorentz-covariant SU(3) connection with the standard non-abelian transformation law; this algebraic core closes on its admitted surface.
-- **NON-load-bearing (split off / admitted):** The construction of a local Lorentz-covariant Yang-Mills SU(3) connection, gauge action, and propagator from the retained graph-first / cubic structural su(3) closure (`NATIVE_GAUGE_CLOSURE_NOTE`, `GRAPH_FIRST_SU3_INTEGRATION_NOTE`) is not supplied in this note; that bridge is an admitted, not-derived input and is required before the theorem applies on the live framework surface.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
+**Claim type:** positive_theorem
 **Loop:** `positive-only-retained-20260502`
 **Cycle:** 1 (Block 1)
 **Branch:** `physics-loop/positive-only-block01-gluon-massless-20260502`

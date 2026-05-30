@@ -49165,7 +49165,7 @@
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "note_hash": "f6272196d372877c2bd414db6ea468fa3db554b4f45f47029aea9550634390a8",
+      "note_hash": "59aa999199be85161f5297b2aa5952ac03bc92829d56def3192d59a6a175b170",
       "path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Bounding Theorem"

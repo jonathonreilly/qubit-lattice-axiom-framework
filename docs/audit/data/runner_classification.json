@@ -4913,11 +4913,11 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 1
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "D",
       "runner": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py"
     },
     "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": {
@@ -35602,11 +35602,11 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 1
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_dm_full_closure_same_surface_thermal_integral_representation_theorem.py": {

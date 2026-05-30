@@ -1,6 +1,6 @@
 ====================================================================================
-DUAL-COMPUTATION: BEREZIN PATH-INTEGRAL == OPERATOR TRANSFER SANDWICH
-  (H2) mixed OS transfer representation on the 2-step blocked staggered surface
+DUAL-COMPUTATION: FERMION-SECTOR BEREZIN BLOCK METRIC == OPERATOR TRANSFER
+  2-step blocked staggered OS transfer representation (fermion sector)
 ====================================================================================
   mass m=0.5, temporal bulk half-extent NT_BULK=16 (2x16=32 slices), eq tol=1e-10
   reflection theta(t,x)=(-1-t,x); staggered eta_1(t)=(-1)^t flips under theta
@@ -31,28 +31,29 @@ CHECK 2  FIXED nontrivial background: per-config representation equality
   -> CHECK 2 representation equality (fixed bkgd): PASS
 
 ------------------------------------------------------------------------------------
-CHECK 3  U-INTEGRATED MIXED Gram on H_gauge (x) H_ferm  (the full (H2) object)
-  Berezin: det-weighted Grassmann reflected correlator of MIXED observables
-  Operator: <Omega|O^dag T_full O|Omega>, T_full=(Kg^1/2(x)I)(oplus_U B^dag B)(...)
-  assert the two Gram matrices are EQUAL (gauge-fermion entanglement carried both ways)
+CHECK 3  PER-CONFIG fermion equality assembled in a shared gauge/Fock wrapper
+  Top vs Tber are wrapped by the SAME Wilson kernel Kg, SAME flat Omega, SAME
+  observables/Fock ops -- they differ ONLY in the per-config fermion block, so
+  worst|G_ber-G_op| reduces to the per-block residual |Tber-Top|.  This is NOT
+  an independent gauge-fermion-mixing test (rank/dim/'mixed' are diagnostics).
 ------------------------------------------------------------------------------------
-  [u1] dimH=32  observables=18 (genuinely mixed=10)
-        gauge transfer min eig=2.101e-04 (PSD), min det weight=1.3180 (>0)
-        operator-Schmidt rank=3 (>1 => ENTANGLED: True)
-        worst per-block |Berezin-operator| = 3.153e-14
-        worst |G_Berezin - G_operator|      = 1.532e-14  (equality tol 1e-10)
-        operator Gram: ||G-G^dag||=1.11e-16  min eig=-1.780e-16 (PSD by construction)
-  [su3] dimH=384  observables=84 (genuinely mixed=54)
-        gauge transfer min eig=9.251e-01 (PSD), min det weight=2.6664 (>0)
-        operator-Schmidt rank=6 (>1 => ENTANGLED: True)
-        worst per-block |Berezin-operator| = 1.549e-14
-        worst |G_Berezin - G_operator|      = 5.662e-15  (equality tol 1e-10)
-        operator Gram: ||G-G^dag||=6.21e-17  min eig=-2.916e-16 (PSD by construction)
-  -> CHECK 3 U-integrated mixed representation equality: PASS
+  [u1] dimH=32  observables=18 (diagnostic: nominally mixed=10)
+        diagnostics (context, not load-bearing): gauge transfer min eig=2.101e-04 (PSD),
+            min 2-step kernel norm=1.3180 (>0; NOT the det(M[U]) measure), op-Schmidt rank=3
+        GENUINE: worst per-block |Tber - Top| (per-config fermion equality) = 3.153e-14
+        (assembled wrapper residual |G_ber - G_op| = 1.532e-14, a pure function of the per-block residual above)
+        operator Gram Hermitian: ||G-G^dag||=1.11e-16
+  [su3] dimH=384  observables=84 (diagnostic: nominally mixed=54)
+        diagnostics (context, not load-bearing): gauge transfer min eig=9.251e-01 (PSD),
+            min 2-step kernel norm=2.6664 (>0; NOT the det(M[U]) measure), op-Schmidt rank=6
+        GENUINE: worst per-block |Tber - Top| (per-config fermion equality) = 1.549e-14
+        (assembled wrapper residual |G_ber - G_op| = 5.662e-15, a pure function of the per-block residual above)
+        operator Gram Hermitian: ||G-G^dag||=6.21e-17
+  -> CHECK 3 per-config fermion equality (in shared wrapper): PASS
 
 ------------------------------------------------------------------------------------
-CHECK 4  REFLECTION = ADJOINT on mixed observables (Theta = (.)^dag)
-  the reconstructed OS Gram is Hermitian to machine precision
+CHECK 4  REFLECTION = ADJOINT (cited OS property; Theta = (.)^dag)
+  consistency check: the reconstructed OS Gram is Hermitian to machine precision
 ------------------------------------------------------------------------------------
   U(1)  ||G - G^dag|| = 1.110e-16
   SU(3) ||G - G^dag|| = 5.722e-17
@@ -77,15 +78,19 @@ CHECK 6  NEGATIVE CONTROL: SINGLE-STEP reflection BREAKS the equality
 
 ====================================================================================
 SCORECARD: PASS=6 FAIL=0
-  CHECK 1 free (U=1)            : Berezin == operator per mode (representation eq.)
+  CHECK 1 free (U=1)            : Berezin block metric == c_block*e^-2E per mode
+                                 + FULL many-field position-basis Gram (fixes c_block=2)
   CHECK 2 fixed SU(3)/U(1) bkgd : per-config Berezin == operator
-  CHECK 3 U-integrated MIXED    : entangled H_gauge(x)H_ferm Gram, Berezin == operator
-  CHECK 4 reflection = adjoint  : OS Gram Hermitian to machine precision
+  CHECK 3 per-config in wrapper : Tber==Top inside a SHARED gauge/Fock wrapper
+                                 (NOT an independent gauge-fermion-mixing test)
+  CHECK 4 reflection = adjoint  : OS Gram Hermitian (cited OS property; consistency)
   CHECK 5 decay anchor          : Berezin forward 2-pt ~ e^{-2E(p)} per 2-step
   CHECK 6 single-step control   : single-step BREAKS the equality (indefinite)
 ------------------------------------------------------------------------------------
-  Finite-carrier verification of the Luescher/Osterwalder-Seiler/STW/Palumbo
-  transfer-matrix REPRESENTATION (cited); the 2-step eta_1 sign bookkeeping under
-  theta(t,x)=(-1-t,x) is the in-repo derived content.  NOT a continuum / OS-
-  reconstruction (Wightman) claim; NOT a full interacting-RP closure.
+  DELIVERED: finite-carrier FERMION-SECTOR instance of the Luescher/Osterwalder-
+  Seiler/STW/Palumbo transfer-matrix REPRESENTATION (cited); the 2-step eta_1 sign
+  bookkeeping under theta(t,x)=(-1-t,x) is the in-repo derived content.
+  NOT established here: the full gauge-fermion-ENTANGLED (mixed-observable)
+  representation equality, the det(M[U]) weight / Haar U-average (RP_MIXED + gauge
+  measure), the continuum / OS-reconstruction (Wightman) limit, nor a full RP closure.
 ====================================================================================

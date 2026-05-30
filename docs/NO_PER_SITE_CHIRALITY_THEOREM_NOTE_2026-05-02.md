@@ -1,28 +1,25 @@
-# No γ_5 Chirality Operator in the Supplied Cl(3) Pauli M_2(C) Rep
+# No Per-Site γ_5 Chirality Operator on Cl(3) Pauli Rep
 
 **Date:** 2026-05-02
 **Type:** no_go
-**Claim scope:** in the supplied complex Pauli representation
-`rho: Cl(3) -> M_2(C)`, `gamma_i -> sigma_i`, the Cl(3) volume element
-`omega = gamma_1 gamma_2 gamma_3` acts as the central scalar `i I_2`.
-Therefore there is **no element of `M_2(C)` that
+**Claim scope:** on the framework's per-site Hilbert H_x ≅ C² (Pauli rep by
+the cited per-site uniqueness theorem), the Cl(3) volume element ω = γ_1 γ_2 γ_3 acts
+as the central scalar i·I_2. Therefore there is **no element of M_2(C) that
 anticommutes with all three Cl(3) generators σ_i**, and in particular no
 γ_5 candidate satisfying γ_5² = +I_2 with {γ_5, σ_i} = 0. Per-site chirality
-operators do not exist inside this supplied Pauli carrier. This narrowed note
-does not identify the physical framework carrier `H_x` with that supplied
-representation.
+operators do not exist in the framework's odd-spatial Cl(3) algebra.
 **Status:** independent audit required.
 **Runner:** `scripts/no_per_site_chirality_check.py`
 **Log:** `outputs/no_per_site_chirality_check_2026-05-02.txt`
 
-## Framework-carrier bridge not claimed
+## Cited authorities (one hop)
 
-The earlier source wording cited
-`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` for a
-framework-level identification of `H_x ~= C^2`. Independent audit correctly
-held that bridge conditional. This narrowed note does **not** consume that
-bridge as load-bearing authority. It proves only the supplied-Pauli
-`M_2(C)` algebraic no-go.
+- [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
+  provides:
+  - **(U2)** Per-site Hilbert H_x ≅ C² with γ_i ↦ σ_i (Pauli) is the unique
+    faithful 2-dim Cl(3) representation up to unitary equivalence.
+
+This is the only load-bearing one-hop dependency.
 
 ## Admitted-context inputs
 
@@ -37,9 +34,9 @@ Both are pure mathematical facts; no admitted physics conventions.
 
 ## Statement
 
-Fix the supplied complex Pauli representation of `Cl(3)` on `C^2`, with
-generators acting as Pauli matrices `gamma_i -> sigma_i`. Define the Cl(3)
-volume element
+Let H_x ≅ C² be the per-site Hilbert space at any site x ∈ Z^3 of the
+framework, with Cl(3) generators acting as Pauli matrices `γ_i ↦ σ_i`
+(cited per-site uniqueness). Define the Cl(3) volume element
 
 ```text
     ω  :=  γ_1 γ_2 γ_3.                                                     (1)
@@ -67,10 +64,10 @@ internal Z_2 grading, hence no chirality projector P_± = (1 ± γ_5)/2.
 
 ## Proof
 
-### Step 1 — Supplied Pauli representation
+### Step 1 — Pauli rep is the per-site Hilbert (cited)
 
-We assume only the supplied representation `gamma_i -> sigma_i` inside
-`M_2(C)`. No framework-level physical carrier identification is used.
+By the cited per-site uniqueness theorem (U2), H_x ≅ C² with
+γ_i ↦ σ_i.
 
 ### Step 2 — Volume element computation (N1, N2)
 
@@ -124,46 +121,47 @@ In Pauli rep:
 Both subalgebras span all of M_2(C) when extended to C-coefficients.
 The Z_2 grading, real and nontrivial in Cl(3) over R, becomes invisible
 in the complex Pauli rep — the rep "doesn't see" the chirality split.
-Hence there is no projector P_± = (1 ± γ_5)/2 internal to the supplied
-Pauli `M_2(C)` carrier — establishing (N4). ∎
+Hence there is no projector P_± = (1 ± γ_5)/2 internal to the per-site
+Hilbert — establishing (N4). ∎
 
 ## Hypothesis set used
 
-- Supplied complex Pauli representation `gamma_i -> sigma_i` inside `M_2(C)`.
+- `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`:
+  provides Pauli rep on per-site Hilbert.
 - Standard Clifford volume-element identity (mathematical, admitted-context).
 - Pauli matrices span M_2(C) (mathematical, admitted-context).
 
 No fitted parameters. No observed values. No physics conventions admitted
-beyond the supplied Pauli representation.
+beyond the retained per-site uniqueness theorem.
 
 ## Corollaries
 
-C1. **No Pauli-carrier chirality projector.** A "left/right" projection cannot
-be defined by an operator internal to the supplied `M_2(C)` Pauli carrier that
-anticommutes with all three `sigma_i`.
+C1. **No per-site chirality projector.** A "left/right" projection of
+elementary fermions cannot be defined intrinsically at the per-site
+Cl(3) level by an operator internal to M_2(C).
 
 ## Out of scope
 
-This note does not derive a temporal direction, 3+1 signature, Standard Model
-left/right gauge assignments, a physical chirality mechanism, or the
-framework-level identification `H_x ~= C^2`. It only proves the supplied
-`M_2(C)` no-go above. Any claim that a larger Clifford algebra supplies
-physical γ_5 structure belongs to a separate theorem and runner.
+This note does not derive a temporal direction, 3+1 signature, Standard
+Model left/right gauge assignments, or a physical chirality mechanism.
+It only proves the per-site M_2(C) no-go above. Any claim that a
+larger Clifford algebra supplies physical γ_5 structure belongs to a
+separate theorem and runner.
 
 ## Honest status
 
-No-go theorem inside the supplied complex Pauli `M_2(C)` representation,
-derived by elementary matrix algebra in the Pauli basis. The volume element
-identity is standard Clifford theory; the no-γ_5 conclusion follows by
-exhausting the Pauli basis decomposition. The framework-H_x carrier bridge is
-out of scope.
+No-go theorem on the framework's per-site Hilbert space, derived from a
+single one-hop dependency by elementary
+matrix algebra in the Pauli basis. The volume element identity is
+standard Clifford theory; the no-γ_5 conclusion follows by exhausting
+the Pauli basis decomposition.
 
 ```yaml
 claim_type_author_hint: no_go
-claim_scope: "Supplied Cl(3) Pauli M_2(C) representation: volume element omega = i I; no gamma5/chirality operator exists inside M_2(C)."
-upstream_dependencies: []
+claim_scope: "Cl(3) volume element ω = i·I in Pauli rep; no per-site γ_5 chirality operator exists in M_2(C)."
+upstream_dependencies:
+  - axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29
 admitted_context_inputs:
   - Clifford volume-element commutation identity (Lawson–Michelsohn)
   - Pauli matrices span M_2(C) (basic linear algebra)
-  - supplied Pauli representation gamma_i -> sigma_i
 ```

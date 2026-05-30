@@ -246784,24 +246784,46 @@
       "verdict_rationale": null
     },
     "s3_time_primitive_chain_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T00:12:08.498904+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-000956-dbbbb05e-s3_time_primitive_chain_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited readout authority supports the restricted P_R reduction and the endpoint-ratio algebra, but it explicitly says the exact triple is not derived and that the reduction to a single E-channel entry holds only if the two T-side candidates are granted. The missing step is a retained derivation of beta_T / alpha_T = -1 and alpha_T / alpha_E = -2, or an explicit narrowing that treats them as conditional inputs.",
       "claim_id": "s3_time_primitive_chain_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the open-gate status update that Route-2 readout/time-coupling has an exact carrier and conditional slice family, with the remaining readout obstruction claimed to collapse to the E-channel ratio beta_E / alpha_E = 21/4.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T00:12:08.498904+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -246810,19 +246832,19 @@
         "quark_route2_exact_time_coupling_note_2026-04-19"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note's load-bearing core says the cited stack algebraically reduces the readout problem to the endpoint ratios and already determines the T-side candidates, leaving only beta_E / alpha_E as the remaining obstruction.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "c4a9f1876289ba0ebbc8e5174684c756a5a30ac929ccd1a5da9f0a7509cdab93",
       "note_path": "docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: either narrow the note so the single E-channel obstruction is explicitly conditional on granted T-side ratios, or provide a retained bridge deriving beta_T / alpha_T = -1 and alpha_T / alpha_E = -2 from the current stack.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -246975,7 +246997,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -246986,7 +247008,7 @@
       "runner_path": null,
       "title": "Primitive Chain Readout and Time-Coupling Update",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The supplied authorities are retained-grade, but the source note overstates what they close: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md says the exact dimensionless readout triple is not derived on the current stack and only conditionally collapses the remaining obstruction to beta_E / alpha_E after granting the T-side ratios. The time-coupling authority likewise gives an exact conditional family, not a unique theorem. No primary runner source or stdout was provided, but the conditional gap is visible directly in the restricted text and does not depend on missing compute."
     },
     "s3_time_spacetime_observable_route_note": {
       "audit_date": null,

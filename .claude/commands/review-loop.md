@@ -120,5 +120,10 @@ Run the repo-native physics review loop from:
   audit/status diff can be evidence of a real repo defect; land the underlying
   source/tooling/pipeline repair when it strengthens auditability, but never
   treat hand-authored generated status as the authority.
+- On closing/rejecting a PR, delete its head branch
+  (`gh pr close <N> --delete-branch`). review-loop closes rather than merges, so
+  GitHub's auto-delete-on-merge never fires; deleting on close keeps `origin`
+  clean. The closed PR preserves its commits, so nothing is lost. Never delete a
+  head that still backs another open PR, nor `main`.
 - Live unresolved review findings belong in `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
 - Long historical packets belong in `docs/work_history/repo/review_feedback/`.

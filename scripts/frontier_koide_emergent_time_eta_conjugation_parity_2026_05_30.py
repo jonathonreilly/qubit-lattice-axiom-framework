@@ -133,7 +133,32 @@ def main() -> int:
     check("chiral c-independent deformation: spectral asymmetry eta != 0", e_chi != 0, f"eta={e_chi}")
     chi_is_nonherm = not np.allclose(M_chi(1.0, 0.5 + 0.3j, 0.3 + 0.7j),
                                      M_chi(1.0, 0.5 + 0.3j, 0.3 + 0.7j).conj().T)
-    check("the chiral deformation genuinely breaks Hermiticity", chi_is_nonherm)
+    check("the chiral deformation has coeff(C^2) != conj(coeff(C)) (non-Hermitian)", chi_is_nonherm)
+
+    section("Check 6 - over-determination: reality forces even-ness even when P breaks")
+    bb = 0.5 + 0.3j
+    # deterministic O(1) real-symmetric structure that fully couples space (x) generation
+    Wbase = np.cos(np.arange(144.0)).reshape(12, 12)
+    Wmix = Wbase + Wbase.T  # real symmetric
+    I4P = np.kron(np.eye(4), P)
+    pbreak = float(np.max(np.abs(Wmix @ I4P - I4P @ Wmix)))
+    check("W_mix explicitly breaks the transposition lift ([W_mix, I (x) P] != 0)", pbreak > 0.1,
+          f"norm={pbreak:.2f}")
+
+    def Oop(b: complex) -> np.ndarray:
+        return np.kron(np.eye(4), M(1.0, b)) + Wmix  # M(conj b) = M(b)^T, Wmix^T = Wmix
+
+    o_diff = float(np.max(np.abs(spec(Oop(bb)) - spec(Oop(np.conj(bb))))))
+    check("spec(O(b)) = spec(O(conj b)) with P broken (reality: O(conj b) = O(b)^T)", o_diff < 1e-6,
+          f"max={o_diff:.1e}")
+
+    section("Check 7 - the odd generator i(C - C^2) is only the arg(b) tangent")
+    G = 1j * (C - C2)
+    check("i(C - C^2) is Hermitian", np.allclose(G, G.conj().T))
+    check("i(C - C^2) is P-odd (P G P = -G)", np.allclose(P @ G @ P, -G))
+    eps = 0.07
+    check("M(b) + eps i(C - C^2) = M(b + i eps) (reparametrizes b; stays conjugate-symmetric)",
+          np.allclose(M(1.0, bb) + eps * G, M(1.0, bb + 1j * eps)))
 
     section("Summary")
     print(f"PASS={PASS} FAIL={FAIL}")

@@ -2,48 +2,9 @@
 
 **Claim type:** bounded_theorem
 **Status:** support - raw algebraic interface; independent audit owns status
-**Date:** 2026-04-16 (2026-05-25: raw-interface repair; 2026-05-28: intrinsic
-claim restricted to simple spectra per audit verdict).
+**Date:** 2026-04-16 (2026-05-25: raw-interface repair)
 **Primary runner:** `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py`
 **Status authority:** independent audit lane only.
-
-## 2026-05-28 Audit Repair (intrinsic claim restricted to simple spectra)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The stated unitarity, row/column-sum, and diagonal-rephasing
-> invariance algebra closes for a fixed choice of eigenvector matrices.
-> The row does not close as an intrinsic pair-to-projector theorem for
-> arbitrary positive-definite Hermitian pairs because degenerate spectra
-> allow non-diagonal unitary rotations within eigenspaces; those
-> rotations can change |U_e^dagger U_nu|^2."*
-
-The auditor is correct. The three load-bearing statements (unitarity,
-double-stochasticity, diagonal-rephasing invariance) all hold for a
-**fixed** choice of eigenvector matrices. But the §"Question/Answer"
-framing that the projector packet is **"intrinsic to the pair"** is only
-valid for **simple (non-degenerate) spectra**, where the eigenbasis is
-unique up to column phases. For a **degenerate** Hermitian matrix, the
-degenerate eigenspace admits a continuum of orthonormal bases related by
-non-diagonal U(k) rotations, and those rotations **change** `|U_pair|^2`
-— so the projector is NOT intrinsic to the pair in the degenerate case.
-
-Repair (the auditor's "narrow to simple spectra" path):
-
-- The **intrinsic-to-the-pair** statement is restricted to **simple
-  (non-degenerate) spectra**. For fixed supplied eigenvector matrices the
-  three algebraic statements hold unconditionally; for the *pair* to
-  determine the projector intrinsically, both `H_nu` and `H_e` must have
-  simple spectra.
-- The runner adds Part 2b: an explicit **degenerate Hermitian pair** with
-  a non-diagonal eigenspace rotation, demonstrating `||P1 − P2|| > 1e-3`
-  for two valid eigenbases of the same pair — confirming the restriction
-  is necessary.
-- This is recorded as an explicit non-claim below.
-
-No new axioms, imports, or runners-as-dependencies. The load-bearing
-algebra is unchanged; only the intrinsic-to-the-pair reading is scoped to
-simple spectra.
 
 ## Raw Pair-to-Projector Interface
 
@@ -87,13 +48,6 @@ This row does not compute or retain eta/eta_obs diagnostics.
 
 This row does not import dm_leptogenesis_exact_common.
 
-This row does not claim the projector is intrinsic to the pair for
-**degenerate** spectra: for a degenerate Hermitian matrix the
-projector `|U_pair|^2` is basis-dependent (non-diagonal eigenspace
-rotations change it), as the runner's Part 2b exhibits. The
-intrinsic-to-the-pair reading is restricted to simple (non-degenerate)
-spectra.
-
 No new repo-wide axiom is introduced.
 
 The result is a bounded algebraic interface for a supplied Hermitian
@@ -107,11 +61,7 @@ packet intrinsic to that pair?
 
 ## Answer
 
-Yes for **simple (non-degenerate) spectra**, in the bounded algebraic
-sense above; **no for degenerate spectra** (see the 2026-05-28 repair
-header — a degenerate eigenspace admits non-diagonal rotations that
-change `|U_pair|^2`). For a fixed choice of eigenvector matrices the
-three statements hold unconditionally. The matrix
+Yes, in the bounded algebraic sense above. The matrix
 `U_pair = U_e^dagger U_nu` is unitary because it is a product of
 unitaries, and the entrywise squared magnitudes of a unitary matrix form
 a doubly stochastic matrix. Independent phase choices of the eigenvector

@@ -22503,42 +22503,67 @@
       "verdict_rationale": null
     },
     "broad_gravity_derivation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T04:50:28.063346+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units.",
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
+        },
+        "dep_claim_type": {
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "gravity_full_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_clean_derivation_note": "retained_bounded",
+          "gravity_full_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_clean_derivation_note",
+          "gravity_full_self_consistency_note"
+        ],
+        "load_bearing_score": 9.858,
+        "runner_hash": null,
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-fresh-broad-gravity-a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic substeps close if the stipulated inputs are granted: k cancels in stationary-phase paths, phase-rate ratios are (1 - phi1)/(1 - phi2), and phi = M/(4*pi*r) gives a 1/r^2 gradient. The audit chain does not close from retained-grade or Tier-A registered inputs because L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), the continuum bridge, and the null-geodesic bridge remain independent unretained admissions.",
       "claim_id": "broad_gravity_derivation_note",
-      "claim_scope": null,
+      "claim_scope": "Conditional broad weak-field gravity signature bundle over stipulated closure, source, and weak-field response inputs, with geodesic/conformal/light-bending claims additionally conditional on continuum and null-geodesic bridges.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem.",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T04:50:28.063346+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [],
+      "deps": [
+        "gravity_clean_derivation_note",
+        "gravity_full_self_consistency_note"
+      ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "fresh_context",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 9.858,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given the admitted inputs, WEP and time dilation follow from S = kL(1 - phi), while conformal metric, geodesic equation, and light-bending factor 2 follow only with the additional continuum-limit and null-geodesic identifications.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "403bca397aef232ebd7f5fe81a3bc22b8aa49684ea9b6a79d4168f117919bd51",
+      "note_hash": "386d34d5c0a874ab1f9b596a1c4898ca8817fd6d176ea17b7e2cbf2b49698777",
       "note_path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: re-audit after retained bridge theorems derive L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the continuum/null-geodesic identifications, or after those admissions are explicitly Tier-A registered.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -22631,64 +22656,10 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the source's promotion of WEP and time dilation rests on the assertion that the weak-field action S = kL(1-phi) is derived, but its one-hop dependencies have since been narrowed to conditional statements where that response, the source readout, and the closure identity are stipulated inputs. Why this blocks: the promoted signatures are algebraic consequences once S and the Poisson/readout premises are supplied; the restricted packet does not derive those premises, and one dependency explicitly says the stronger physical-gravity closure is out of scope. Repair target: rewrite this row as a bounded conditional bundle matching the current dependency scopes, or add retained bridge theorems deriving L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the clock/readout map. Claim boundary until fixed: conditional WEP/time-dilation algebra may be cited only under the explicitly supplied weak-field action/readout assumptions; no broad gravity-signature promotion is retained from this row."
-        },
-        {
-          "archived_at": "2026-05-29T13:11:56.799854+00:00",
-          "archived_for_note_hash": "386d34d5c0a874ab1f9b596a1c4898ca8817fd6d176ea17b7e2cbf2b49698777",
-          "audit_date": "2026-05-29T04:50:28.063346+00:00",
-          "audit_state_snapshot": {
-            "criticality": "high",
-            "dep_axiom_premise_note_hash": {},
-            "dep_claim_scope": {
-              "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units.",
-              "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
-            },
-            "dep_claim_type": {
-              "gravity_clean_derivation_note": "bounded_theorem",
-              "gravity_full_self_consistency_note": "bounded_theorem"
-            },
-            "dep_effective_status": {
-              "gravity_clean_derivation_note": "retained_bounded",
-              "gravity_full_self_consistency_note": "retained_bounded"
-            },
-            "deps": [
-              "gravity_clean_derivation_note",
-              "gravity_full_self_consistency_note"
-            ],
-            "load_bearing_score": 9.858,
-            "runner_hash": null,
-            "transitive_descendants": 57
-          },
-          "audit_status": "audited_conditional",
-          "auditor": "codex-audit-loop-fresh-broad-gravity-a",
-          "auditor_confidence": "high",
-          "auditor_family": "codex-gpt-5.5",
-          "blocker": null,
-          "chain_closes": false,
-          "chain_closure_explanation": "The algebraic substeps close if the stipulated inputs are granted: k cancels in stationary-phase paths, phase-rate ratios are (1 - phi1)/(1 - phi2), and phi = M/(4*pi*r) gives a 1/r^2 gradient. The audit chain does not close from retained-grade or Tier-A registered inputs because L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), the continuum bridge, and the null-geodesic bridge remain independent unretained admissions.",
-          "claim_scope": "Conditional broad weak-field gravity signature bundle over stipulated closure, source, and weak-field response inputs, with geodesic/conformal/light-bending claims additionally conditional on continuum and null-geodesic bridges.",
-          "claim_type": "bounded_theorem",
-          "claim_type_last_reviewed": "2026-05-29T04:50:28.063346+00:00",
-          "claim_type_provenance": "audited",
-          "cross_confirmation": null,
-          "decoration_parent_claim_id": null,
-          "independence": "fresh_context",
-          "load_bearing_step": "Given the admitted inputs, WEP and time dilation follow from S = kL(1 - phi), while conformal metric, geodesic equation, and light-bending factor 2 follow only with the additional continuum-limit and null-geodesic identifications.",
-          "load_bearing_step_class": "A",
-          "notes_for_re_audit_if_any": "missing_bridge_theorem: re-audit after retained bridge theorems derive L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the continuum/null-geodesic identifications, or after those admissions are explicitly Tier-A registered.",
-          "open_dependency_paths": [],
-          "runner_check_breakdown": {
-            "A": 0,
-            "B": 0,
-            "C": 0,
-            "D": 0,
-            "total_pass": 0
-          },
-          "verdict_rationale": "Issue: the bounded IF-chain is explicit and the algebraic consequences check out, but the physical response, source readout, closure, continuum, and null-geodesic bridges are load-bearing admissions. Why this blocks: the Tier-A registry does not list these gravity admissions as accepted non-axiom premises, and the one-hop retained-bounded notes do not derive them. Repair target: provide retained bridge theorems or a reviewed Tier-A registration for the admitted closure/source/response inputs and the continuum/null identifications. Claim boundary until fixed: the note is usable as a bounded explanatory IF-chain over named assumptions, but the audit row should remain audited_conditional, not audited_clean."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -22696,10 +22667,10 @@
         "D": 0,
         "total_pass": 0
       },
-      "runner_path": "scripts/broad_gravity_signature_algebra_scope_check.py",
-      "title": "Broad Gravity Signature Algebra Packet",
+      "runner_path": null,
+      "title": "Broad Gravity Bundle: Per-Signature Bounded IF-Chains",
       "transitive_descendants": 57,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the bounded IF-chain is explicit and the algebraic consequences check out, but the physical response, source readout, closure, continuum, and null-geodesic bridges are load-bearing admissions. Why this blocks: the Tier-A registry does not list these gravity admissions as accepted non-axiom premises, and the one-hop retained-bounded notes do not derive them. Repair target: provide retained bridge theorems or a reviewed Tier-A registration for the admitted closure/source/response inputs and the continuum/null identifications. Claim boundary until fixed: the note is usable as a bounded explanatory IF-chain over named assumptions, but the audit row should remain audited_conditional, not audited_clean."
     },
     "broad_surrogate_point_source_compare_note": {
       "audit_date": "2026-05-22T23:53:07.556206+00:00",
@@ -126435,7 +126406,7 @@
         "gravity_full_self_consistency_note",
         "staggered_fermion_card_2026-04-11"
       ],
-      "direct_in_degree": 18,
+      "direct_in_degree": 19,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
@@ -126857,7 +126828,7 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 9,
+      "direct_in_degree": 10,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],

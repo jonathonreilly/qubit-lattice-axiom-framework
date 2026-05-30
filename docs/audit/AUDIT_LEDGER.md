@@ -2293,6 +2293,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The clean verdict applies only to the bounded numerical protocol theorem stated in the note. The load-bearing runner output gives positive 2-body delta_S across all audited sweeps and confirms the corrected 3-body W-type, non-GHZ interpretation with tau_3 = 0 and positive bipartite entropies. The prior dependency block is resolved because both cited one-hop dependencies now have retained-grade status. Plot generation failed due to missing matplotlib, but that does not affect the load-bearing numerical checks.
 - **auditor confidence:** medium
 
+### `broad_gravity_derivation_note`
+
+- **Note:** [`BROAD_GRAVITY_DERIVATION_NOTE.md`](../../docs/BROAD_GRAVITY_DERIVATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional broad weak-field gravity signature bundle over stipulated closure, source, and weak-field response inputs, with geodesic/conformal/light-bending claims additionally conditional on continuum and null-geodesic bridges.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-fresh-broad-gravity-a`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given the admitted inputs, WEP and time dilation follow from S = kL(1 - phi), while conformal metric, geodesic equation, and light-bending factor 2 follow only with the additional continuum-limit and null-geodesic identifications.  _(class `A`)_
+- **chain closes:** False — The algebraic substeps close if the stipulated inputs are granted: k cancels in stationary-phase paths, phase-rate ratios are (1 - phi1)/(1 - phi2), and phi = M/(4*pi*r) gives a 1/r^2 gradient. The audit chain does not close from retained-grade or Tier-A registered inputs because L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), the continuum bridge, and the null-geodesic bridge remain independent unretained admissions.
+- **rationale:** Issue: the bounded IF-chain is explicit and the algebraic consequences check out, but the physical response, source readout, closure, continuum, and null-geodesic bridges are load-bearing admissions. Why this blocks: the Tier-A registry does not list these gravity admissions as accepted non-axiom premises, and the one-hop retained-bounded notes do not derive them. Repair target: provide retained bridge theorems or a reviewed Tier-A registration for the admitted closure/source/response inputs and the continuum/null identifications. Claim boundary until fixed: the note is usable as a bounded explanatory IF-chain over named assumptions, but the audit row should remain audited_conditional, not audited_clean.
+- **auditor confidence:** high
+
 ### `broad_surrogate_point_source_compare_note`
 
 - **Note:** [`BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md`](../../docs/BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md)

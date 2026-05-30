@@ -1,14 +1,41 @@
 # 3+1D SO(3,1) Boost Covariance of the Path-Sum 2-Point Function
 
 **Date:** 2026-04-25
-**Status:** proposed_retained exact theorem on the continuum-limit free-scalar
-Hamiltonian-lattice surface, with explicit dim-6 cubic-harmonic LV bound
-at finite `a`
+**Date of scope repair:** 2026-05-29
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only.
+**Status:** bounded theorem candidate on the supplied continuum-limit
+free-scalar Hamiltonian-lattice surface, with a structural finite-`a`
+cubic-harmonic `K_4` correction statement. This row does not claim a
+Planck-unit phenomenological readout or a finite-`a` strict light-cone
+theorem.
 **Script:** `scripts/frontier_lorentz_boost_3plus1d.py` (PASS=57, FAIL=0)
 **Companions:**
 [LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md](LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md),
 `ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`,
 [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
+
+## 2026-05-29 Audit Repair
+
+The audit verdict was `audited_conditional` because the previous packet mixed
+the supported free-scalar continuum-covariance theorem with physical-readout
+sentences that required unretained Planck-pin and light-cone authorities. The
+repair takes the narrow route requested by audit:
+
+```text
+dependency_not_retained:
+narrow the audited row to the free-scalar continuum covariance plus structural
+K4 statement, or supply retained-grade Planck-pin and light-cone framing
+authorities for the broader physical-readout sentences.
+```
+
+This revision binds only the supplied free-scalar Hamiltonian-lattice theorem:
+continuum `SO(3,1)` covariance of the spacelike two-point function and the
+finite-`a` structural `O(a^2 p^4)` cubic-harmonic `K_4` anisotropy. The
+Planck-scale unit conversion, strict finite-`a` light-cone readout,
+experimental sensitivity comparison, and physical framework-substrate
+identification are explicit non-claims here.
 
 ## Audit-status note (2026-05-09)
 
@@ -21,27 +48,18 @@ that were not yet independently closed. Specifically:
 - [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
   is `audited_conditional` (now narrowed to bounded conditional
   structural-dispersion support per the PR #803 salvage).
-- [LIGHT_CONE_FRAMING_NOTE.md](LIGHT_CONE_FRAMING_NOTE.md) is
-  `audited_conditional` (Lieb-Robinson framing only; finite-`a` cone
-  diagnostic now bounded via the PR #816 Crank-Nicolson companion).
+- the light-cone framing row is context only here. It is not a
+  load-bearing authority for the narrowed free-scalar covariance theorem.
 - [LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md](LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md)
   is `audited_conditional` (blocked on the same emergent-Lorentz cite).
-- `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` (see-also; converted
-  from markdown link to backticked form 2026-05-10 to break citation
-  cycle-0014, the 13-node anomaly_forces_time ring, and cycle-0015,
-  the 14-node ring that adds the angular-kernel companion — the Planck
-  pin status note is a status-tracking external lane reference, not a
-  load-bearing input to Steps 1–8 of the proof below; the theorem
-  itself operates on the free-scalar Hamiltonian-lattice continuum
-  limit and does not import Planck-scale claims) is
-  `audited_conditional` (current package pin, not yet a theorem).
+- the Planck-scale lane status row is context only here. It is not a
+  load-bearing authority for the narrowed free-scalar covariance theorem.
 
-Audit boundary: the free-scalar Hamiltonian-lattice continuum core
-(Steps 1–6 below, plus Step 8 combined SO(3,1) statement at the
-free-scalar level) is unaffected by this status note. Edge-bearing
-dependencies remain for the proof-side inheritance and protection
-claims; the Planck-scale lane status is a physical-unit conversion
-caveat, not a load-bearing premise of the free-scalar covariance proof.
+Audit boundary: only the free-scalar Hamiltonian-lattice continuum core and
+the structural finite-`a` `K_4` anisotropy are binding in this row. Physical
+unit conversion, strict finite-`a` causal-cone claims, and SME/experimental
+readout language must be supplied by separate retained rows before they can be
+used downstream.
 
 ## Theorem
 
@@ -73,13 +91,11 @@ limit `W_cont` depends on `(Δt, Δx⃗)` only through the SO(3,1) invariant
 `s^2`, hence the path-sum 2-point function is fully SO(3,1) boost-
 covariant in the continuum limit.
 
-At finite `a > 0`, the leading boost-covariance violation is the
-cubic-harmonic dim-6 LV correction inherited from
-[EMERGENT_LORENTZ_INVARIANCE_NOTE.md](EMERGENT_LORENTZ_INVARIANCE_NOTE.md):
-`W_lat` is `O_h`-covariant but not strictly SO(3,1)-covariant, with
-finite-`a` violation suppressed as `(a^2 p^4)/E^2`. On the retained
-hierarchy surface `a ~ 1/M_Pl` this is `(E/M_Pl)^2`, well below all
-current experimental sensitivity.
+At finite `a > 0`, the leading boost-covariance violation is the structural
+cubic-harmonic `K_4` correction computed below: `W_lat` is `O_h`-covariant but
+not strictly SO(3,1)-covariant, with finite-`a` violation scaling as
+`O(a^2 p^4)` in the supplied free-scalar model. This row does not convert
+`a` into `M_Pl^-1` and does not make an experimental-sensitivity claim.
 
 This is the 3+1D analogue of
 [LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md](LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md)
@@ -92,13 +108,14 @@ the **off-shell 2-point function** itself.
 The dispersion-isotropy theorem
 [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
 (37/37 PASS) shows the leading dispersion is `E^2 = p^2` plus a
-Planck-suppressed dim-6 cubic-harmonic correction. That is a statement
+structural `O(a^2 p^4)` cubic-harmonic correction. That is a statement
 about the *on-shell relation* `E(p)`, not about the **two-point function**
 `W(Δt, Δx⃗)`.
 
 The Phase 4 theorem lifts the claim from on-shell to off-shell:
 
-> The continuum-limit 2-point Wightman function on `Cl(3)/Z^3 x R` is
+> The continuum-limit 2-point Wightman function on the supplied
+> free-scalar `Z^3 x R` Hamiltonian-lattice model is
 > exactly SO(3,1)-covariant, depends only on `s^2`, and has the closed
 > form `m K_1(m sqrt(-s^2))/(4π² sqrt(-s^2))` for spacelike separations.
 
@@ -133,14 +150,10 @@ Direct verification (runner Part 1):
 - `E_lat(p)` invariant under per-axis sign flips `p_i -> -p_i`;
 - All 48 `O_h` group elements are exact symmetries.
 
-Together with `CPT` and `P` exactness on even periodic `Z^3`
-(`CPT_EXACT_NOTE`, retained), this forbids:
-
-- dim-3 LV operators (CPT-odd, mass-like);
-- dim-5 LV operators (P-odd);
-- all CPT-odd SME coefficients.
-
-The leading allowed lattice LV operator is therefore dim-6.
+No SME operator-classification or phenomenological protection theorem is
+load-bearing in this narrowed row. The runner directly computes the
+parity-even Taylor expansion and the first structural anisotropy
+`sum_i p_i^4`, i.e. the `O(a^2 p^4)` cubic-harmonic correction.
 
 ### Step 3 -- Continuum dispersion is the unique relativistic limit
 
@@ -285,11 +298,12 @@ The Lorentzian `W_lat(Δt = 0, ·)` is also tested directly (no Minkowski
 oscillation in the spacelike `Δt = 0` slice) and converges with the
 same `O(a^2)` rate.
 
-### Step 7 -- Cubic-harmonic LV at finite `a` (inherited from dispersion theorem)
+### Step 7 -- Cubic-harmonic `K_4` structure at finite `a`
 
 At finite `a > 0`, the lattice 2-point function is *not* strictly
-SO(3,1)-covariant: it inherits the dim-6 cubic-harmonic LV operator from
-the lattice dispersion. Direct verification (runner Part 6, Euclidean):
+SO(3,1)-covariant: the lattice dispersion induces a structural
+`O(a^2 p^4)` cubic-harmonic correction. Direct verification (runner Part 6,
+Euclidean):
 
 | `a` | `|G_E([100]) - G_E([111])|` at `r = 1.5`, `τ = 1` |
 |-----|---------------------------------------------------|
@@ -304,8 +318,8 @@ between axis `[1,0,0]` and diagonal `[1,1,1]/sqrt(3)` directions
 (`f_4 = sum_i n_i^4 = 1` along axis, `1/3` along diagonal -- exact
 ratio 3, verified to machine precision).
 
-This is exactly the LV signature predicted by EMERGENT_LORENTZ_INVARIANCE,
-now manifest at the 2-point function level.
+This is the same structural `K_4` signature used by the dispersion row, now
+computed directly at the 2-point function level.
 
 ### Step 8 -- Combined SO(3,1) statement
 
@@ -317,8 +331,8 @@ Steps 1-7 together prove the Phase 4 theorem:
 > path-sum 2-point function is fully SO(3,1) boost-covariant, depending
 > only on the invariant interval `s^2`, with closed form
 > `m K_1(m sqrt(-s^2))/(4π² sqrt(-s^2))` for spacelike separations and
-> finite-`a` LV correction at the dim-6 cubic-harmonic K_4 angular
-> structure.
+> finite-`a` structural `O(a^2 p^4)` correction with cubic-harmonic `K_4`
+> angular structure.
 
 ## What is and is not claimed
 
@@ -336,10 +350,9 @@ Steps 1-7 together prove the Phase 4 theorem:
       dispersion,
   (c) SO(3,1) invariance of the on-shell Liouville measure `d^3p/(2 E_p)`,
   (d) standard Källén-Lehmann reduction in the continuum.
-- **Finite-`a` LV correction.** Directly inherited from the dispersion
-  theorem: dim-6, cubic harmonic `K_4` angular structure, factor-of-3
-  anisotropy between `[100]` and `[111]/sqrt(3)`, Planck-suppressed on
-  the retained `a ~ 1/M_Pl` hierarchy surface.
+- **Finite-`a` structural correction.** The runner directly verifies the
+  `O(a^2 p^4)` cubic-harmonic `K_4` angular structure and factor-of-3
+  anisotropy between `[100]` and `[111]/sqrt(3)`.
 - **Decoupling from angular kernel.** Phase 4 lives entirely on the
   staggered/Laplacian Hamiltonian construction, which has no angular-
   kernel parameter. The directional-measure walk
@@ -350,7 +363,7 @@ Steps 1-7 together prove the Phase 4 theorem:
 
 - **Finite-`a` boost covariance.** The lattice 2-point function at any
   finite `a > 0` is NOT strictly SO(3,1)-covariant: it has explicit
-  cubic-harmonic LV at the dim-6 level. Only the strict continuum limit
+  cubic-harmonic anisotropy at `O(a^2 p^4)`. Only the strict continuum limit
   is fully covariant.
 - **Interacting theory.** The proof is for the free scalar; interactions
   may introduce loop-level lattice corrections that need separate
@@ -359,21 +372,15 @@ Steps 1-7 together prove the Phase 4 theorem:
   form. The timelike `s^2 > 0` form requires the standard `iε`
   prescription and gives Hankel functions, related to the spacelike
   result by analytic continuation.
-- **Strict v=1 light cone at finite `a`.** Standard lattice-QFT result
-  ([LIGHT_CONE_FRAMING_NOTE.md](LIGHT_CONE_FRAMING_NOTE.md)): the
-  Lieb-Robinson cone at finite `a` differs from the strict cone by an
-  exponentially small tail. Only the continuum limit recovers a strict
-  cone, via the on-shell maximal velocity `v_max = 1` of the relativistic
-  dispersion.
-- **Promotion of Planck-pin to a theorem.** The current
-  `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` (see-also; converted
-  from markdown link to backticked form 2026-05-10 to break citation
-  cycle-0014 / cycle-0015 — this is a caveat / future-work reference
-  about the Planck pin status, not a load-bearing premise of the Phase
-  4 theorem)
-  posture is that `a^(-1) = M_Pl` is a current package pin, not yet a
-  theorem. Phase 4 inherits this caveat for any phenomenological
-  conversion to physical units.
+- **Strict v=1 light cone at finite `a`.** This row does not prove a strict
+  finite-`a` causal cone or use a light-cone framing authority. It proves only
+  continuum covariance of the supplied free-scalar two-point function.
+- **Planck pin or experimental readout.** This row does not promote any
+  Planck-scale unit map, does not identify `a^-1` with `M_Pl`, and does not
+  compare finite-`a` corrections with experimental sensitivity.
+- **Framework substrate identification.** This row does not identify the
+  supplied free-scalar Hamiltonian-lattice model with the full physical
+  framework substrate.
 
 ## Relation to existing notes
 
@@ -382,9 +389,9 @@ Steps 1-7 together prove the Phase 4 theorem:
 | `EMERGENT_LORENTZ_INVARIANCE_NOTE`        | 3+1D      | dispersion isotropy          | strict extension            |
 | `LORENTZ_BOOST_COVARIANCE_2D_THEOREM`     | 1+1D      | full SO(1,1) on 2-pt         | 3+1D analogue               |
 | `ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO` | -         | Phase 3 decoupling           | applies (kernel irrelevant) |
-| `LORENTZ_VIOLATION_DERIVED_NOTE`          | 3+1D      | bounded dim-6 LV companion   | unchanged (companion only)  |
-| `LIGHT_CONE_FRAMING_NOTE`                 | -         | Lieb-Robinson framing        | unchanged                   |
-| `LATTICE_NN_LIGHT_CONE_NOTE`              | -         | retired (topological only)   | unchanged                   |
+| Lorentz-violation companion row           | 3+1D      | bounded finite-`a` companion | context only                |
+| light-cone framing row                    | -         | Lieb-Robinson framing        | context only                |
+| lattice nearest-neighbor light-cone row   | -         | retired topological row      | context only                |
 
 This note **strictly extends** the dispersion theorem: every PASS check
 in `frontier_emergent_lorentz_invariance.py` remains valid; this note
@@ -397,38 +404,38 @@ any retained note.
   (causal sets): SO(3,1) Lorentz invariance achieved at the lattice
   scale by Poisson sprinkling. Phase 4 instead proves the standard
   lattice-QFT continuum-limit version: full SO(3,1) on a regular `Z^3`
-  lattice in the continuum limit, with explicit dim-6 LV at finite `a`.
+  lattice in the continuum limit, with explicit structural `K_4` anisotropy
+  at finite `a`.
 - **Wiese; Rothe; Montvay-Münster** (lattice QFT references): the
   underlying lattice-QFT continuum-limit machinery is standard. This
   note is the rigorous statement of "continuum-limit Lorentz invariance"
   for the framework's path-sum 2-point function, with explicit closed
   form `m K_1/(4π²r)` and explicit characterisation of the leading
   finite-`a` LV correction.
-- The combined statement -- exact SO(3,1) covariance of the continuum
-  2-point function on `Cl(3)/Z^3` -- is the publication-grade upgrade
-  from "isotropic dispersion" to "Lorentz-covariant correlators" that
-  the boost-covariance Phase 4 program was designed to deliver.
+- The combined statement is exact SO(3,1) covariance of the continuum
+  two-point function on the supplied free-scalar Hamiltonian-lattice model.
+  A separate retained bridge is still required before this can be used as a
+  physical framework-substrate claim.
 
 ## What this changes in the program
 
-This theorem upgrades the "Lorentz from discrete" claim in `Cl(3)/Z^3`
+This theorem upgrades the supplied free-scalar "Lorentz from discrete" claim
 from
 
 > "the leading on-shell dispersion is isotropic, and the first LV
-> correction is dim-6 Planck-suppressed" (dispersion-level, on-shell)
+> correction is structurally `O(a^2 p^4)`" (dispersion-level, on-shell)
 
 to
 
 > "the continuum-limit 2-point function transforms as a Lorentz scalar
 > under the full SO(3,1) group, with closed form
 > `m K_1(m sqrt(-s^2))/(4π² sqrt(-s^2))` for spacelike separations and
-> dim-6 cubic-harmonic K_4 LV at finite `a`" (correlator-level,
+> structural cubic-harmonic K_4 anisotropy at finite `a`" (correlator-level,
 > off-shell)
 
-The 1+1D and 3+1D statements together close the boost-covariance Phase
-2/4 program. The Phase 3 angular-kernel question is closed as a no-go
-plus decoupling. The full four-phase program lands the boost-covariance
-upgrade for the emergent-Lorentz lane.
+The 1+1D and 3+1D statements provide bounded support for the
+boost-covariance Phase 2/4 program. They do not by themselves close the
+physical emergent-Lorentz lane.
 
 ## Verification
 
@@ -447,7 +454,7 @@ The 57 checks span 8 parts:
 | 3    | Continuum 2-point function (analytic K_1 form, cluster, asymptotic) | 7   |
 | 4    | Lattice -> continuum convergence (Euclidean + spacelike Lorentzian) | 4   |
 | 5    | SO(3,1) boost covariance: 5 rapidities along [100] + [110] + [111] + arbitrary + composition | 13 |
-| 6    | Cubic-harmonic LV at finite `a` (dim-6 K_4 + normalized-K_4 identity) | 7   |
+| 6    | Cubic-harmonic `K_4` structure at finite `a` plus normalized identity | 7   |
 | 7    | Combined SO(3,1) theorem statement                                 | 10   |
 | 8    | Connection to existing dispersion theorem (strict extension)       | 5    |
 

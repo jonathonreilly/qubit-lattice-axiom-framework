@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-"""Gravitational wave propagation and post-Newtonian correction probe.
+"""Bounded gravitational-wave / action-form sensitivity probe.
 
-Goes beyond weak-field Newtonian gravity with three independent tests:
+This runner compares internally defined toy-model variants on the finite
+20^3 lattice. It does not derive physical gravitational waves, a 1PN
+observable, a retarded-source law, or a GR action bridge from retained
+framework primitives.
+
+It keeps four scoped checks:
 
 A. GRAVITATIONAL WAVE PROPAGATION
    On a 3D lattice, set up a static Poisson field from a point source.
@@ -10,24 +15,25 @@ A. GRAVITATIONAL WAVE PROPAGATION
    waves. Measure the field perturbation delta_f(r,t) = f(r,t) - f_static(r)
    as a function of distance and time.
 
-   Expected honest result: Poisson is elliptic (instantaneous). But the
-   self-consistent iteration (propagator <-> field) may introduce
-   retardation naturally through finite propagation speed of the
-   quantum amplitude.
+   Expected honest result: Poisson is elliptic (instantaneous). The
+   ordered propagator has finite layer ordering, but that is not itself a
+   dynamical gravitational-wave field equation.
 
-B. POST-NEWTONIAN FROM MOVING SOURCE
-   Place a source moving at velocity v. The time-dependent density profile
-   produces velocity-dependent forces. Compare force on a test particle to:
-     Static: F = GM/r^2
-     Moving: F should get velocity-dependent correction F ~ (1 + alpha*v^2)
-   The 1PN correction in GR has specific coefficients depending on direction.
+B. IMPOSED RETARDED SOURCE SAMPLING
+   Compare instantaneous Poisson solves against a hand-implemented retarded
+   source-position rule. This tests sensitivity to that imposed rule, not a
+   derived 1PN observable.
 
-C. WAVE EQUATION FROM FIELD DYNAMICS
-   Linearize self-consistent equations around a static solution. Check
-   whether perturbations satisfy a wave equation (finite propagation speed)
-   or Laplace equation (instantaneous).
+C. LAYER-ORDER PERTURBATION SENSITIVITY
+   Add local field perturbations at different layers and measure detector
+   response. This tests ordered-propagator sensitivity, not a derived wave
+   equation for the gravitational field.
 
-Uses 3D ordered cubic lattice, side 20-24. Honest about negative results.
+D. IMPOSED ACTION-FORM COMPARISON
+   Compare S=L(1-f) against S=L(1-f-f^2/2). This tests distinguishability of
+   an added quadratic field term, not a derived GR post-Newtonian coefficient.
+
+Uses a 3D ordered cubic lattice, side 20. Honest about negative results.
 
 PStack experiment: grav-wave-post-newtonian
 """
@@ -348,7 +354,7 @@ def test_gravitational_waves(N: int = 20):
 # ============================================================================
 
 def test_post_newtonian_moving_source(N: int = 20):
-    """Test velocity-dependent force from a moving gravitational source.
+    """Test sensitivity to an imposed retarded moving-source rule.
 
     Cleaner design than naive z-shift: the source moves in the y-direction
     (perpendicular to beam axis x and deflection axis z). This keeps the
@@ -357,16 +363,16 @@ def test_post_newtonian_moving_source(N: int = 20):
 
     The key comparison: deflection from a source moving at velocity v
     vs. the static source at the time-averaged y-position (y=center).
-    Any difference is a velocity-dependent correction.
+    Any difference is a toy-model velocity-dependent sensitivity.
 
     Additionally: compare "instantaneous" field (Poisson at current source
     position) vs "retarded" field (Poisson at source position from earlier
-    layer, mimicking finite propagation speed). The difference between
-    these IS a post-Newtonian effect.
+    layer, mimicking finite propagation speed). The difference between these
+    is not a derived post-Newtonian observable without a separate bridge.
     """
     print()
     print("=" * 72)
-    print("TEST B: POST-NEWTONIAN FORCE FROM MOVING SOURCE")
+    print("TEST B: IMPOSED RETARDED SOURCE SAMPLING")
     print("=" * 72)
     print()
 
@@ -534,9 +540,9 @@ def test_post_newtonian_moving_source(N: int = 20):
                 print()
 
                 if abs(alpha) > 1e-6 and r2 > 0.3:
-                    print("  RESULT: Retardation correction grows with velocity.")
-                    print("  The framework distinguishes instantaneous from retarded potentials")
-                    print("  when the source moves. This is a genuine post-Newtonian effect.")
+                    print("  RESULT: Retarded-vs-instantaneous difference grows with velocity.")
+                    print("  The finite toy model distinguishes the imposed retarded")
+                    print("  source rule from instantaneous Poisson sampling.")
                 else:
                     print("  RESULT: Retardation correction does not grow cleanly with v.")
                     print("  The instantaneous and retarded fields give similar deflections.")
@@ -547,27 +553,23 @@ def test_post_newtonian_moving_source(N: int = 20):
 
 
 # ============================================================================
-# TEST C: Wave equation vs Laplace from field perturbation modes
+# TEST C: Layer-order sensitivity from field perturbation modes
 # ============================================================================
 
 def test_wave_vs_laplace(N: int = 20):
-    """Test whether linearized perturbations satisfy wave or Laplace equation.
+    """Test layer-order sensitivity to local field perturbations.
 
     Set up a static field. Add a small perturbation at one point.
     Propagate the beam through (field + perturbation) vs (field alone).
     The deflection difference tells us the sensitivity to local field changes.
 
-    If the sensitivity propagates outward layer by layer (causal), the
-    framework has finite-speed propagation. If the sensitivity is
-    instantaneous everywhere, it's Laplace-like.
-
     Key test: perturb the field at layer L, measure effect on detector.
-    If the perturbation at layer L > beam_layer has NO effect (because
-    the beam hasn't reached there yet), that's causal propagation.
+    Later perturbations have less remaining path to influence the detector;
+    this is not a gravitational wave equation or physical causal proof.
     """
     print()
     print("=" * 72)
-    print("TEST C: CAUSAL STRUCTURE OF FIELD-AMPLITUDE COUPLING")
+    print("TEST C: LAYER-ORDER SENSITIVITY OF FIELD-AMPLITUDE COUPLING")
     print("=" * 72)
     print()
 
@@ -608,16 +610,15 @@ def test_wave_vs_laplace(N: int = 20):
     print()
 
     # Analysis: does the sensitivity depend on layer position?
-    # In a causal theory, perturbations at later layers should have different
-    # (typically weaker) effects because the beam has less time to respond.
-    # In an instantaneous theory, all layers should contribute equally
-    # (modulated only by the beam intensity at that point).
+    # Perturbations at later layers can have different effects because the
+    # beam has less remaining path to respond. This is an internal ordered-layer
+    # sensitivity diagnostic, not a physical wave-speed derivation.
 
     if len(sensitivities) >= 3:
         layers = np.array([s[0] for s in sensitivities])
         sens = np.array([abs(s[1]) for s in sensitivities])
 
-        # Check if sensitivity profile shows causal structure
+        # Check whether the sensitivity profile changes with layer index.
         # The beam propagates left to right. Perturbations ahead of the beam
         # are traversed; perturbations behind are already passed.
         # For ordered propagation (x-forward), EVERY layer is traversed.
@@ -636,14 +637,14 @@ def test_wave_vs_laplace(N: int = 20):
             slope = cov / var if var > 1e-12 else 0.0
 
             print(f"  Sensitivity profile slope: {slope:+.6f} per layer")
-            print(f"  (negative slope = later layers have less effect = causal)")
+            print(f"  (negative slope = later layers have less remaining path)")
             print()
 
             if slope < -0.01:
                 print("  RESULT: Sensitivity DECREASES for later layers.")
-                print("  This is consistent with causal (finite-speed) propagation:")
+                print("  This is an ordered-layer sensitivity result:")
                 print("  perturbations at later layers have less remaining path to")
-                print("  accumulate deflection, mimicking a light-cone structure.")
+                print("  accumulate deflection. No dynamical wave equation is derived.")
             elif abs(slope) < 0.01:
                 print("  RESULT: Sensitivity approximately UNIFORM across layers.")
                 print("  No evidence for causal propagation structure.")
@@ -701,13 +702,13 @@ def test_wave_vs_laplace(N: int = 20):
 def test_action_forms(N: int = 20):
     """Compare S = L(1-f) vs S = L(1-f-f^2/2) at different field strengths.
 
-    The f^2 term is the leading post-Newtonian correction from GR.
-    At weak field, both give the same result. At stronger fields,
-    the difference grows as f^2.
+    The f^2 term is imposed by the runner. At weak field, both action forms
+    give similar results. At stronger fields, the difference grows, but this
+    runner does not derive the coefficient from a physical PN bridge.
     """
     print()
     print("=" * 72)
-    print("TEST D: VALLEY-LINEAR vs POST-NEWTONIAN ACTION")
+    print("TEST D: VALLEY-LINEAR vs IMPOSED f^2 ACTION")
     print("=" * 72)
     print()
 
@@ -765,7 +766,7 @@ def test_action_forms(N: int = 20):
         if np.sum(mf_arr**2) > 1e-20:
             slope = float(np.sum(mf_arr * pct_arr) / np.sum(mf_arr**2))
             print(f"  diff% vs max_f slope: {slope:.2f}%/unit-field")
-            print(f"  (should be ~O(1) if f^2 correction is genuine)")
+            print(f"  (diagnostic only; no physical PN coefficient is derived)")
 
     return results
 
@@ -776,8 +777,8 @@ def test_action_forms(N: int = 20):
 
 def main():
     print("=" * 72)
-    print("GRAVITATIONAL WAVE / POST-NEWTONIAN PROBE")
-    print("Two-axiom framework: beyond weak-field Newtonian gravity")
+    print("GRAVITATIONAL WAVE / ACTION-FORM SENSITIVITY PROBE")
+    print("Bounded finite-lattice toy-model comparisons")
     print("=" * 72)
     print()
 
@@ -794,7 +795,7 @@ def main():
     trunc_results, delta_full = test_gravitational_waves(N)
     print(f"  [Test A time: {time.time()-t0:.1f}s]")
 
-    # Test B: Post-Newtonian moving source
+    # Test B: imposed retarded moving source
     t0 = time.time()
     moving_results = test_post_newtonian_moving_source(N)
     print(f"  [Test B time: {time.time()-t0:.1f}s]")
@@ -804,7 +805,7 @@ def main():
     sensitivities = test_wave_vs_laplace(N)
     print(f"  [Test C time: {time.time()-t0:.1f}s]")
 
-    # Test D: Action form comparison
+    # Test D: imposed action-form comparison
     t0 = time.time()
     action_results = test_action_forms(N)
     print(f"  [Test D time: {time.time()-t0:.1f}s]")
@@ -856,7 +857,7 @@ def main():
     # ========================================================================
     print()
     print("=" * 72)
-    print("SYNTHESIS: BEYOND NEWTONIAN GRAVITY")
+    print("SYNTHESIS: BOUNDED TOY-MODEL SENSITIVITY")
     print("=" * 72)
     print()
 
@@ -878,14 +879,14 @@ def main():
             print("   of its path. The Poisson equation is elliptic (instantaneous),")
             print("   so the field itself does NOT propagate as a wave.")
             print("   HONEST NEGATIVE: no gravitational waves from the field equation.")
-            print("   However, the beam propagates at finite speed (layer by layer),")
-            print("   so information about field changes is carried at the beam speed.")
+            print("   The ordered beam update is layer-local, but no dynamical")
+            print("   gravitational field propagation law is derived here.")
         else:
             print("   Deflection requires field at large distances from source.")
             print("   This may indicate sensitivity to non-local field structure.")
     print()
 
-    # 2. Post-Newtonian from moving source
+    # 2. Imposed retarded source sampling
     print("2. RETARDED vs INSTANTANEOUS POTENTIAL:")
     if moving_results and len(moving_results) >= 3:
         # Check if retardation correction grows with v
@@ -893,16 +894,16 @@ def main():
         max_rel = max(r for _, _, _, _, r in moving_results)
         if nonzero and max_rel > 0.1:
             print(f"   Retardation effect DETECTED (up to {max_rel:.1f}% at highest v).")
-            print("   The instantaneous Poisson field and retarded field give")
-            print("   different deflections when the source moves. This shows the")
-            print("   framework CAN distinguish retarded from instantaneous potentials.")
+            print("   The instantaneous Poisson field and imposed retarded field give")
+            print("   different deflections when the source moves. This is a")
+            print("   finite-runner sensitivity result, not a derived PN observable.")
         else:
             print("   Retardation effect SMALL or absent.")
             print("   Instantaneous and retarded fields give similar deflections.")
     print()
 
     # 3. Causal structure
-    print("3. CAUSAL STRUCTURE:")
+    print("3. LAYER-ORDER SENSITIVITY:")
     if sensitivities and len(sensitivities) >= 3:
         layers = np.array([s[0] for s in sensitivities])
         sens = np.array([abs(s[1]) for s in sensitivities])
@@ -913,16 +914,15 @@ def main():
             var = np.sum((layers - mx)**2)
             slope = float(np.sum((layers - mx) * (norm_sens - ms)) / var) if var > 1e-12 else 0.0
             if slope < -0.01:
-                print("   Sensitivity profile shows CAUSAL structure:")
+                print("   Sensitivity profile shows ordered-layer structure:")
                 print("   later-layer perturbations have less effect (less remaining path).")
-                print("   The ordered propagation introduces a LIGHT-CONE-LIKE structure.")
-                print("   This is the seed of gravitational wave propagation.")
+                print("   This is not a derived dynamical wave equation.")
             else:
                 print("   Sensitivity profile does not show clear causal structure.")
     print()
 
     # 4. Action form
-    print("4. POST-NEWTONIAN ACTION f^2 CORRECTION:")
+    print("4. IMPOSED f^2 ACTION DIFFERENCE:")
     if action_results:
         threshold = None
         for s, mf, dvl, dpn, ratio, pct in action_results:
@@ -931,8 +931,8 @@ def main():
                 break
         if threshold is not None:
             print(f"   f^2 correction DETECTABLE above strength s = {threshold:.4f}.")
-            print("   The framework can distinguish S=L(1-f) from S=L(1-f-f^2/2).")
-            print("   This means post-Newtonian physics is accessible in principle.")
+            print("   The finite runner distinguishes S=L(1-f) from S=L(1-f-f^2/2).")
+            print("   No physical post-Newtonian coefficient is derived.")
         else:
             print("   f^2 correction below detection threshold in tested range.")
             print("   Framework operates in deep weak-field regime.")
@@ -943,21 +943,16 @@ def main():
     print("VERDICT")
     print("=" * 72)
     print()
-    print("The two-axiom framework produces:")
+    print("The finite toy runner shows:")
     print()
-    print("  - Newtonian gravity: YES (confirmed by previous work)")
-    print("  - Gravitational waves: The Poisson field is instantaneous (no waves")
-    print("    from the field equation alone). However, the ordered propagation")
-    print("    introduces causal structure: the beam samples the field at finite")
-    print("    speed, creating an effective light cone for information propagation.")
-    print("  - Post-Newtonian corrections: Two sources of beyond-Newton physics:")
-    print("    (a) velocity-dependent forces from time-dependent field sampling")
-    print("    (b) the f^2 action correction distinguishable at strong fields")
-    print("  - GR derivation: The action S=L(1-f) matches the weak-field GR metric")
-    print("    g_00 = 1-2f to leading order. The propagator's causal structure")
-    print("    (ordered layer-by-layer evolution) provides the finite-speed")
-    print("    information propagation that is the prerequisite for gravitational")
-    print("    waves in any future dynamical field extension.")
+    print("  - Poisson-field gravitational waves: NEGATIVE.")
+    print("  - Imposed retarded-source sampling differs from instantaneous sampling.")
+    print("  - Ordered-layer perturbations have layer-dependent sensitivity.")
+    print("  - The imposed f^2 action is distinguishable in the tested range.")
+    print()
+    print("This runner does not derive GR, physical gravitational waves, a")
+    print("post-Newtonian observable, c_lattice normalization, or an f^2")
+    print("coefficient from retained framework primitives.")
     print()
     print(f"Total runtime: {time.time()-t_total:.1f}s")
 

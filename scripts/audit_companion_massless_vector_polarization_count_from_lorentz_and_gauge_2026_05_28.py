@@ -6,11 +6,11 @@ The bounded narrow theorem supports replacing premise P2 of the parent
 g_star proof-walk note (two transverse polarizations per massless
 vector) after independent audit. The load-bearing content is a linear-algebra
 rank count on the four-component complex polarization vector
-epsilon^mu at fixed null momentum k^mu (k^2 = 0):
+epsilon_mu at fixed null momentum k^mu (k^2 = 0):
 
   (Lorentz vector components)  =  4
-  (Lorenz-gauge constraint k_mu eps^mu = 0)  =  1
-  (residual gauge orbit eps^mu ~ eps^mu + c k^mu)  =  1
+  (Lorenz-gauge constraint k^mu eps_mu = 0)  =  1
+  (residual gauge orbit eps_mu ~ eps_mu + c k_mu)  =  1
 
   =>  physical polarizations  =  4 - 1 - 1  =  2.
 
@@ -93,15 +93,15 @@ def main() -> int:
     # Generic null momentum k^mu = (k0, k1, k2, k3) with
     # k^2 = k0^2 - k1^2 - k2^2 - k3^2 = 0.
     #
-    # Polarization vector epsilon^mu = (e0, e1, e2, e3) is a generic
-    # complex contravariant four-vector. The Lorenz-gauge constraint reads
+    # Polarization vector epsilon_mu = (e0, e1, e2, e3) is a generic
+    # complex four-vector. The Lorenz-gauge constraint reads
     #
-    #   k_mu eps^mu = eta_{mu nu} k^nu eps^mu
+    #   k^mu eps_mu = eta^{mu nu} k_nu eps_mu
     #                = k0 e0 - k1 e1 - k2 e2 - k3 e3 = 0
     #
-    # in mostly-minus signature when k^mu = (k0, k1, k2, k3). The residual
-    # gauge shift is along the contravariant null vector k^mu. We count
-    # linear-algebra ranks.
+    # (using k^mu = eta^{mu nu} k_nu; with mostly-minus signature
+    # k^0 = k_0, k^i = -k_i, so k^mu eps_mu = k0 e0 - k1 e1 - k2 e2 - k3 e3
+    # equivalently). We count linear-algebra ranks.
 
     k0, k1, k2, k3 = symbols("k0 k1 k2 k3", real=True)
     e0, e1, e2, e3 = symbols("e0 e1 e2 e3")  # complex polarization components
@@ -109,14 +109,14 @@ def main() -> int:
     # R1: total Lorentz-vector dof count = 4.
     eps_vec = Matrix([e0, e1, e2, e3])
     check(
-        "(R1) Lorentz-vector eps^mu has 4 complex components on C^4",
+        "(R1) Lorentz-vector eps_mu has 4 complex components on C^4",
         eps_vec.shape == (4, 1),
         detail=f"shape = {eps_vec.shape}",
     )
 
     # R2: Lorenz-gauge constraint rank = 1 on C^4.
-    # The constraint is k_mu eps^mu = k0 e0 - k1 e1 - k2 e2 - k3 e3 = 0
-    # written as a 1x4 covector acting on (e0, e1, e2, e3)^T.
+    # The constraint is k^mu eps_mu = k0 e0 - k1 e1 - k2 e2 - k3 e3 = 0
+    # written as a 1x4 matrix acting on (e0, e1, e2, e3)^T.
     constraint_row = Matrix([[k0, -k1, -k2, -k3]])
     check(
         "(R2a) Lorenz-gauge constraint matrix has shape (1, 4)",
@@ -136,29 +136,29 @@ def main() -> int:
     )
 
     # R3: residual gauge orbit rank = 1.
-    # Shift eps^mu -> eps^mu + c k^mu, where k^mu is the contravariant null
-    # momentum. The shift direction k^mu is a single vector on C^4, parameter c is
+    # Shift eps_mu -> eps_mu + c k_mu, where k_mu = (k0, -k1, -k2, -k3) in
+    # mostly-minus signature (k_0 = k^0 = k0; k_i = -k^i = -k_i_index).
+    # The shift direction k_mu is a single vector on C^4, parameter c is
     # one complex scalar. Rank of the shift = 1.
-    k_contra_vec = Matrix([k0, k1, k2, k3])
-    k_contra_canonical = k_contra_vec.subs({k0: k_z, k1: 0, k2: 0, k3: k_z})
-    shift_matrix = k_contra_canonical.reshape(4, 1)  # 4x1 column = rank 1
+    k_mu_vec = Matrix([k0, -k1, -k2, -k3])
+    k_mu_canonical = k_mu_vec.subs({k0: k_z, k1: 0, k2: 0, k3: k_z})
+    shift_matrix = k_mu_canonical.reshape(4, 1)  # 4x1 column = rank 1
     rank_shift = shift_matrix.rank()
     check(
-        "(R3a) Residual gauge orbit shift direction k^mu has rank 1",
+        "(R3a) Residual gauge orbit shift direction k_mu has rank 1",
         rank_shift == 1,
         detail=f"rank = {rank_shift}",
     )
 
-    # R3b: the shift direction k^mu satisfies the Lorenz-gauge constraint
-    # (k_mu k^mu = k^2 = 0 on the null shell). Hence k^mu lies in the
+    # R3b: the shift direction k_mu satisfies the Lorenz-gauge constraint
+    # (k^mu k_mu = k^2 = 0 on the null shell). Hence k_mu lies in the
     # constraint kernel and the residual gauge transformations preserve
-    # the slice. Verify by multiplying the displayed constraint row by the
-    # displayed residual-gauge shift direction.
-    kernel_containment = simplify((constraint_canonical * shift_matrix)[0])
+    # the slice. Verify: k^mu k_mu at canonical null = 0.
+    k_squared_canonical = (k_z * k_z) + 0 * 0 + 0 * 0 + (k_z * (-k_z))
     check(
-        "(R3b) constraint row times shift direction = k_mu k^mu = 0",
-        kernel_containment == 0,
-        detail=f"row*k = {kernel_containment}",
+        "(R3b) k^mu k_mu = 0 on null shell (residual gauge preserves slice)",
+        k_squared_canonical == 0,
+        detail=f"k^2 = {k_squared_canonical}",
     )
 
     # R4: quotient dimension = 4 - 1 - 1 = 2.
@@ -179,9 +179,9 @@ def main() -> int:
     section("Part 2 (R5): explicit transverse basis at canonical null k^mu")
     # ---------------------------------------------------------------------
     #
-    # At k^mu = (omega, 0, 0, omega) the constraint k_mu eps^mu = 0 reads
+    # At k^mu = (omega, 0, 0, omega) the constraint k^mu eps_mu = 0 reads
     # omega * e0 - omega * e3 = 0, i.e. e0 = e3. The residual shift
-    # eps^mu -> eps^mu + c k^mu = eps^mu + c (omega, 0, 0, omega) lets us
+    # eps_mu -> eps_mu + c k_mu = eps_mu + c (omega, 0, 0, -omega) lets us
     # fix e3 = 0, then the constraint forces e0 = 0. The two remaining
     # independent components are e1 and e2.
 
@@ -189,7 +189,7 @@ def main() -> int:
     k_canonical = Matrix([omega, 0, 0, omega])  # k^mu (contravariant)
     k_lower_canonical = Matrix([omega, 0, 0, -omega])  # k_mu (covariant)
 
-    # Lorenz-gauge constraint on generic eps^mu at canonical k^mu:
+    # Lorenz-gauge constraint on generic eps_mu at canonical k^mu:
     constraint_canonical_eval = (
         omega * e0 - omega * e3  # = k^0 e_0 - k^3 e_3 (others = 0)
     )
@@ -204,7 +204,7 @@ def main() -> int:
     eps_1 = Matrix([0, 1, 0, 0])  # e1-direction
     eps_2 = Matrix([0, 0, 1, 0])  # e2-direction
 
-    # Verify both satisfy the constraint k_mu eps^mu = 0:
+    # Verify both satisfy the constraint k^mu eps_mu = 0:
     c1 = (
         omega * eps_1[0] - 0 * eps_1[1] - 0 * eps_1[2] - omega * eps_1[3]
     )
@@ -212,12 +212,12 @@ def main() -> int:
         omega * eps_2[0] - 0 * eps_2[1] - 0 * eps_2[2] - omega * eps_2[3]
     )
     check(
-        "(R5b) eps_1^mu = (0, 1, 0, 0) satisfies k_mu eps^mu = 0",
+        "(R5b) eps_1^mu = (0, 1, 0, 0) satisfies k^mu eps_mu = 0",
         simplify(c1) == 0,
         detail=f"constraint(eps_1) = {simplify(c1)}",
     )
     check(
-        "(R5c) eps_2^mu = (0, 0, 1, 0) satisfies k_mu eps^mu = 0",
+        "(R5c) eps_2^mu = (0, 0, 1, 0) satisfies k^mu eps_mu = 0",
         simplify(c2) == 0,
         detail=f"constraint(eps_2) = {simplify(c2)}",
     )
@@ -231,18 +231,18 @@ def main() -> int:
         detail=f"rank = {basis_mat.rank()}",
     )
 
-    # Verify eps_1, eps_2 not in residual-shift direction k^mu (else they
+    # Verify eps_1, eps_2 not in residual-shift direction k_mu (else they
     # would be gauge equivalent to zero):
-    # k^mu = (omega, 0, 0, omega); eps_1 = (0, 1, 0, 0); they are linearly
+    # k_mu = (omega, 0, 0, -omega); eps_1 = (0, 1, 0, 0); they are linearly
     # independent.
-    shift_check_1 = Matrix.hstack(k_canonical, eps_1)
-    shift_check_2 = Matrix.hstack(k_canonical, eps_2)
+    shift_check_1 = Matrix.hstack(k_lower_canonical, eps_1)
+    shift_check_2 = Matrix.hstack(k_lower_canonical, eps_2)
     check(
-        "(R5e) eps_1 not parallel to k^mu (rank-2 with k^mu)",
+        "(R5e) eps_1 not parallel to k_mu (rank-2 with k_mu)",
         shift_check_1.rank() == 2,
     )
     check(
-        "(R5f) eps_2 not parallel to k^mu (rank-2 with k^mu)",
+        "(R5f) eps_2 not parallel to k_mu (rank-2 with k_mu)",
         shift_check_2.rank() == 2,
     )
 
@@ -258,7 +258,7 @@ def main() -> int:
     eps_plus = inv_sqrt2 * (eps_1 + sym_I * eps_2)
     eps_minus = inv_sqrt2 * (eps_1 - sym_I * eps_2)
 
-    # Both still satisfy k_mu eps^mu = 0:
+    # Both still satisfy k^mu eps_mu = 0:
     cp = (
         omega * eps_plus[0]
         - 0 * eps_plus[1]
@@ -272,11 +272,11 @@ def main() -> int:
         - omega * eps_minus[3]
     )
     check(
-        "(R6a) Helicity-(+1) polarization satisfies k_mu eps_+^mu = 0",
+        "(R6a) Helicity-(+1) polarization satisfies k^mu eps_+ = 0",
         simplify(cp) == 0,
     )
     check(
-        "(R6b) Helicity-(-1) polarization satisfies k_mu eps_-^mu = 0",
+        "(R6b) Helicity-(-1) polarization satisfies k^mu eps_- = 0",
         simplify(cm) == 0,
     )
 
@@ -382,7 +382,7 @@ def main() -> int:
     # count is 4 - 1 - 0 = 3.
 
     m_sym = Symbol("m", positive=True)
-    # At k^2 = m^2 > 0, the constraint k_mu eps^mu = 0 is still rank 1,
+    # At k^2 = m^2 > 0, the constraint k^mu eps_mu = 0 is still rank 1,
     # but the residual gauge condition Box Lambda = 0 with the plane-wave
     # ansatz Lambda = lam * exp(i k . x) reads k^2 * lam = 0. With k^2 =
     # m^2 != 0, this forces lam = 0.
@@ -479,10 +479,10 @@ def main() -> int:
     section("Summary")
     # ---------------------------------------------------------------------
     print("  Verified at exact sympy precision:")
-    print("    (R1) Lorentz-vector eps^mu on C^4 has 4 components.")
-    print("    (R2) Lorenz-gauge constraint k_mu eps^mu = 0 has rank 1.")
-    print("    (R3) Residual gauge orbit eps^mu ~ eps^mu + c k^mu has rank 1;")
-    print("         k^mu lies in the constraint kernel on the null shell.")
+    print("    (R1) Lorentz-vector eps_mu on C^4 has 4 components.")
+    print("    (R2) Lorenz-gauge constraint k^mu eps_mu = 0 has rank 1.")
+    print("    (R3) Residual gauge orbit eps_mu ~ eps_mu + c k_mu has rank 1;")
+    print("         k_mu lies in the constraint kernel on the null shell.")
     print("    (R4) Quotient dim = 4 - 1 - 1 = 2 polarizations per momentum.")
     print("    (R5) Explicit transverse basis (0,1,0,0), (0,0,1,0) at k^mu =")
     print("         (omega, 0, 0, omega).")

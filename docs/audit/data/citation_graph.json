@@ -27913,6 +27913,14 @@
       "to": "down_type_mass_ratio_ckm_dual_note"
     },
     {
+      "from": "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
+      "to": "yt_ward_identity_derivation_theorem"
+    },
+    {
       "from": "yt_boundary_theorem",
       "to": "yt_zero_import_authority_note"
     },
@@ -85047,7 +85055,7 @@
       "note_hash": "4afc63f993b8134be22a096d0e5d234b327c650c7992683410ebfc65482e0815",
       "path": "docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_yt_boundary_bc_transfer_uniqueness.py",
-      "title": "yt Boundary BC-Transfer Finite-Grid Diagnostic (Backward-RGE)"
+      "title": "yt Boundary BC-Transfer Uniqueness Narrow Theorem (Backward-RGE Monotonicity)"
     },
     "yt_boundary_theorem": {
       "claim_id": "yt_boundary_theorem",

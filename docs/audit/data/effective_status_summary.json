@@ -1,37 +1,20 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1101,
-    "decoration": 50,
-    "meta": 234,
-    "no_go": 259,
-    "open_gate": 111,
-    "positive_theorem": 708
+    "bounded_theorem": 1146,
+    "decoration": 52,
+    "meta": 241,
+    "no_go": 260,
+    "open_gate": 117,
+    "positive_theorem": 704
   },
-  "cycle_examples": [
-    [
-      "wave_direct_dm_h025_fam2_seed1_followup_note",
-      "wave_direct_dm_portability_batch_note"
-    ],
-    [
-      "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
-    ],
-    [
-      "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
-    ],
-    [
-      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-      "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
-    ]
-  ],
-  "cycles_detected": 4,
+  "cycle_examples": [],
+  "cycles_detected": 0,
   "effective_status_counts": {
-    "audited_conditional": 39,
-    "audited_numerical_match": 14,
-    "audited_renaming": 18,
-    "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
+    "audited_conditional": 65,
+    "audited_failed": 3,
+    "audited_numerical_match": 18,
+    "audited_renaming": 25,
+    "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_color_automorphism_theorem": 6,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 5,
@@ -44,6 +27,7 @@
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 1,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
     "decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": 1,
+    "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_lattice_nn_deterministic_rescale_note": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_moving_source_retarded_portability_note": 1,
@@ -54,24 +38,28 @@
     "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 4,
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
+    "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 230,
-    "open_gate": 20,
-    "retained": 147,
-    "retained_bounded": 531,
-    "retained_no_go": 168,
-    "retained_pending_chain": 8,
-    "unaudited": 1242
+    "meta": 237,
+    "open_gate": 30,
+    "retained": 169,
+    "retained_bounded": 607,
+    "retained_no_go": 175,
+    "retained_pending_chain": 11,
+    "unaudited": 1132
   },
-  "retained_pending_chain_count": 8,
+  "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [
+    "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
     "complex_selectivity_compare_note",
     "complex_selectivity_predictor_note",
+    "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
     "lattice_3d_nyquist_diffraction_note",
     "linear_response_second_order_kubo_note",
+    "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
   ]
 }

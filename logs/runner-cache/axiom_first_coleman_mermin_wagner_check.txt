@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_coleman_mermin_wagner_check.py
-runner_sha256: 7f10102009669e04a1b6a0d5469a1f6d32310d00e139c41b061da0e39606bbcf
+runner_sha256: 1d4670601306b16b5396ee9f295bd0ad582832ec4b6649e86af6c387a55913ca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.90
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 ========================================================================
  axiom_first_coleman_mermin_wagner_check.py
- Loop: axiom-first-foundations-block02, Cycle 2 / R10
+ bounded IR-sum threshold packet
  IR integral I_d(L) = (1/V) Σ_{k ≠ 0} 1/E_k vs lattice size L,
- exhibiting Mermin–Wagner: divergence for d ≤ 2, finite for d ≥ 3.
+ checking divergence for d ≤ 2 and finite IR behavior for d ≥ 3.
 ========================================================================
 
   Table: I_d(L)
@@ -19,6 +19,13 @@ status: ok
       2     |      0.3793      0.4899      0.6003      0.7107
       3     |      0.2246      0.2386      0.2457      0.2492
       4     |      0.1528      0.1544      (skip)      (skip)
+
+--- E0: formal continuum threshold of int r^(d-3) dr ---
+  d = 1: linear divergence
+  d = 2: log divergence
+  d = 3: finite
+  d = 4: finite
+  E0 verdict: PASS
 
 --- E1: IR integral computed for d ∈ {1, 2, 3, 4}, L ∈ {8, 16, 32, 64} ---
   All values finite and non-negative? True
@@ -40,24 +47,25 @@ status: ok
   minimal d with finite I_d (data) = 3
   E3 verdict: PASS
 
---- E4: combined with D9 (kernel stability requires d ≥ 2, d = 2 only marginal) ---
-  Long-range-force requirement: d ≥ 2 (non-divergent kernel),
-                                 d ≥ 3 for genuine 1/r^(d-1) power-law
-                                 (d = 2 gives only logarithmic potential).
-  Continuous-SSB requirement (this theorem): d ≥ 3.
-  Intersection: d ≥ 3.  Minimal integer = 3.  Matches A_min's Z^3? PASS
-
 ========================================================================
  SUMMARY
 ========================================================================
+   E0 (formal continuum threshold): PASS
    E1 (IR integral well-defined): PASS
    E2 (scaling: d≤2 div, d≥3 finite): PASS
-   E3 (minimal converging d = 3): PASS
-   E4 (combined → A_min substrate): PASS
+   E3 (minimal finite IR d = 3): PASS
 
    PASSED: 4/4
 
- verdict: Mermin–Wagner (MW1)–(MW4) exhibited; d = 3 confirmed minimal.
+ verdict: bounded IR-sum threshold packet passed.
+IR_SUM_THRESHOLD_PACKET=TRUE
+FORMAL_IR_THRESHOLD_D_LE_2_DIVERGES=TRUE
+FORMAL_IR_THRESHOLD_D_GE_3_FINITE=TRUE
+FINITE_LATTICE_SCALING_CHECKS_PASS=TRUE
+D3_MINIMALITY_CLAIMED=FALSE
+ORDER_PARAMETER_WARD_NORMALIZATION_PROVEN=FALSE
+D9_KERNEL_AUTHORITY_LOAD_BEARING=FALSE
+ACTUAL_CURRENT_SURFACE_STATUS=BOUNDED_SUPPORT
 
 ----- stderr -----
 

@@ -1,0 +1,14 @@
+native heat-kernel flow r(t)=tanh^4(t): beta_r = dr/dt
+  t=0.5000: r=0.0456, beta_r=+0.3104
+  t=1.2242: r=0.5000, beta_r=+0.6966  <- r=1/2, beta_r!=0 (transit, not fixed)
+  t=2.5000: r=0.9475, beta_r=+0.1022
+  t=5.0000: r=0.9996, beta_r=+0.0007
+  fixed points: r=0 (t=0, UV) and r=1 (t=inf, IR).
+
+symmetry of spectrum (a+2b,a-b,a-b): r=0 -> all-equal (full S3, enhanced);
+  r=1 -> rank-1 (enhanced); r=1/2 -> 2 distinct = GENERIC C3 (NOT enhanced).
+  => RG fixed points (= enhanced couplings) are r=0,1; r=1/2 is not a fixed point.
+
+VERDICT: NO native 1/2-attractor. r=1/2 = continuous non-enhanced modulus = the
+generation chiral grading (Gamma_chi-null) = the one irreducible chiral pin.
+Framework reduces all charged-lepton flavor to that ONE chiral input + Planck.

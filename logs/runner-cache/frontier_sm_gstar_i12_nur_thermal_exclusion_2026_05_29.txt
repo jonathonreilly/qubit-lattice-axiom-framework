@@ -1,0 +1,117 @@
+===== runner cache v1 =====
+runner: scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
+runner_sha256: 48434c1bce18b817ec326a2f71aa543cf74f36e08d2cca499232022ba4861021
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+1. I12 fork dof arithmetic (106.75 vs 112)
+----------------------------------------------------------------------------------------
+  [PASS] nu_R excluded: gauge-charged Weyl/gen = 15
+  [PASS] nu_R excluded: 15 Weyl * 2 = 30 dof/gen (30)
+  [PASS] nu_R excluded: N_fermions = 3 * 30 = 90 (90)
+  [PASS] nu_R excluded: g_* = 28 + (7/8)*90 = 427/4 = 106.75 (427/4 = 106.75)
+  [PASS] full framework matter = 15 gauge-charged + 1 nu_R = 16 Weyl (16)
+  [PASS] nu_R thermalized Dirac: 16 Weyl * 2 = 32 dof/gen (32)
+  [PASS] nu_R thermalized Dirac: N_fermions = 3 * 32 = 96 (96)
+  [PASS] nu_R thermalized Dirac: g_* = 28 + (7/8)*96 = 112 (112 = 112.0)
+  [PASS] I12 fork is load-bearing: 106.75 (excluded) != 112 (thermalized) (106.75 vs 112.0)
+  [PASS] fork delta = n_gen * (nu_R Weyl) * 2 * 7/8 = 3*1*2*7/8 = 21/4 = 5.25 (21/4 = 5.25)
+  [PASS] fork is exactly one extra Weyl/gen (16 - 15 = 1)
+
+----------------------------------------------------------------------------------------
+2. Yukawa implied by empirical small m_nu (admitted observation)
+----------------------------------------------------------------------------------------
+  [PASS] implied y_nu(m_nu=0.05 eV) ~ 2.9e-13 (matches no-go 'order 1e-13') (2.874e-13)
+  [PASS] implied y_nu(m_nu=0.1 eV) ~ 5.7e-13 (order 1e-12) (5.747e-13)
+  [PASS] implied y_nu(m_nu=0.6 eV, generous) ~ 3.4e-12 (still << any thermal threshold) (3.448e-12)
+  [PASS] implied y at atmospheric scale is within an order of magnitude of 1e-13 (2.874e-13)
+
+----------------------------------------------------------------------------------------
+3. Yukawa threshold for nu_R thermalization (Gamma ~ H)
+----------------------------------------------------------------------------------------
+  [PASS] threshold y_thr(T=100 GeV) ~ 1e-8 (most lenient, lowest T) (1.186e-08)
+  [PASS] threshold y_thr(T=1e9 GeV, leptogenesis) ~ 4e-5 (3.749e-05)
+  [PASS] threshold y_thr(T=1e12 GeV, leptogenesis) ~ 1e-3 (1.186e-03)
+  [PASS] threshold rises with T (T=100 < 1e9 < 1e12)
+
+----------------------------------------------------------------------------------------
+4. Incompatibility (implied small-m_nu Yukawa << thermalization threshold)
+----------------------------------------------------------------------------------------
+  [PASS] at the MOST LENIENT T=100 GeV: y_threshold > y_implied (thr 1.19e-08 > implied 5.75e-13)
+  [PASS] incompatibility margin at T=100 GeV is >= 4 orders of magnitude (4.3 decades (ratio 2.06e+04))
+  [PASS] incompatibility margin at leptogenesis T=1e9 GeV is >= 7 orders (7.8 decades (ratio 6.52e+07))
+  [PASS] Gamma/H << 1 at T=100 GeV for implied y (nu_R decoupled) (Gamma/H = 2.35e-09)
+  [PASS] Gamma/H << 1 at T=1e9 GeV for implied y (nu_R decoupled) (Gamma/H = 2.35e-16)
+  [PASS] a thermalizing y (>= y_thr at T=100 GeV) implies m_nu >> 1 eV (excluded by data) (m_nu(thermalizing) >~ 2.06e+03 eV)
+  [PASS] small-m_nu Yukawa and thermalization Yukawa are mutually exclusive
+
+----------------------------------------------------------------------------------------
+5. Branch table (light-Dirac / heavy-Majorana / large-Yukawa-Dirac)
+----------------------------------------------------------------------------------------
+  [PASS] Branch A light-Dirac: nu_R does NOT thermalize -> g_* = 106.75 (thermalizes=False, g_*=106.75)
+  [PASS] Branch B heavy-Majorana: M_R >> T_census so nu_R is NOT a light dof -> g_* = 106.75 (M_R=1e+14 GeV >> T; light_at_census=False)
+  [PASS] Branch C large-Yukawa-Dirac: nu_R thermalizes -> g_* = 112 (thermalizes=True, g_*=112.0)
+  [PASS] Branch C is EXCLUDED by data: y~O(1) implies m_nu ~ 174 GeV >> sub-eV bound (m_nu(branch C) ~ 1.74e+11 eV)
+  [PASS] g_* = 106.75 is ROBUST across BOTH admitted branches (light-Dirac, heavy-Majorana) ([106.75])
+  [PASS] g_* = 112 arises ONLY in the empirically-excluded large-Yukawa branch
+  [PASS] resolution is branch-independent (framework retained no-go does not pick a branch)
+
+----------------------------------------------------------------------------------------
+6. Note / authority cross-checks
+----------------------------------------------------------------------------------------
+  [PASS] load-bearing authority file exists: NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md
+  [PASS] load-bearing authority file exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  [PASS] load-bearing authority cited as markdown link: NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md
+  [PASS] load-bearing authority cited as markdown link: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  [PASS] plain-text pointer is non-load-bearing (no markdown-link edge): SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md
+  [PASS] plain-text pointer is non-load-bearing (no markdown-link edge): SM_GSTAR_FROM_FRAMEWORK_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-05-29.md
+  [PASS] note names I12 nu_R thermal exclusion as the load-bearing fork
+  [PASS] note carries the 106.75 vs 112 fork explicitly
+  [PASS] note engages the retained Dirac/seesaw no-go
+  [PASS] note states branch-independence (both branches -> exclusion)
+  [PASS] note names small m_nu as an ADMITTED EMPIRICAL observation (not derived)
+  [PASS] note records the steelman (N7) FOR g_* = 112 and its rebuttal
+  [PASS] note states the honest ceiling: I12 partially-resolved (conditioned on small m_nu)
+  [PASS] note states it does NOT fully derive I12 from first principles
+
+----------------------------------------------------------------------------------------
+7. Ledger status cross-check (optional)
+----------------------------------------------------------------------------------------
+  [PASS] Dirac/seesaw fork no-go is retained_no_go (the load-bearing engine) (ledger = retained_no_go)
+  [PASS] relativistic dof count import is retained_bounded (ledger = retained_bounded)
+  [PASS] Sum m_nu functional-form theorem is retained (named for context, not a derivation of small m_nu) (ledger = retained)
+
+----------------------------------------------------------------------------------------
+8. No-overclaim / forbidden-import / vocabulary scan
+----------------------------------------------------------------------------------------
+  [PASS] no bare '**Status:** retained/promoted' line
+  [PASS] claim type is bounded_theorem
+  [PASS] status authority is independent audit lane only
+  [PASS] note does NOT claim to derive the small neutrino mass
+  [PASS] no load-bearing forbidden import 'wilson plaquette' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'staggered phase' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'brillouin' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'link unitar' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'monte carlo' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'best-fit' (0 occurrence(s))
+  [PASS] no load-bearing forbidden import 'chi-squared fit' (0 occurrence(s))
+  [PASS] no load-bearing forbidden import 'fitted to data' (0 occurrence(s))
+  [PASS] no new-vocabulary string 'algebraic universality'
+  [PASS] no new-vocabulary string 'two-class framing'
+  [PASS] no new-vocabulary string 'lattice-realization-invariant by definition'
+  [PASS] no new-vocabulary string '(ckn)'
+
+----------------------------------------------------------------------------------------
+SCORECARD
+----------------------------------------------------------------------------------------
+  PASS = 66
+  FAIL = 0
+
+RESULT: PASS=66 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/born_rule_framework_bridge_check.py
+runner_sha256: 1c66abf1fe1bd29b111c04d0332ec0180a6aa678037b98f96431cda308e143ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+# Born-rule finite framework bridge check
+# Source note: docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md
+
+==============================================================================
+T1: pre-record tracial probability on a finite qubit region
+==============================================================================
+  [PASS] rho_ref = I/d is normalized
+         Tr rho_ref=(1+0j)
+  [PASS] rank-2 projector has pre-record probability rank/d
+         p=0.5
+  [PASS] effect is positive and bounded by identity
+
+==============================================================================
+T2: single-site POVM effect uses density trace form
+==============================================================================
+  [PASS] single-site POVM probability is Tr(rho E)
+         p=0.400000000000, expected=0.400000000000
+  [PASS] effect is a valid POVM effect
+  [PASS] probability lies in [0,1]
+         p=0.400000000000
+
+==============================================================================
+T3: canonical projective record conditions tracial state to a pure state
+==============================================================================
+  [PASS] projector has nonzero pre-record probability
+         p(P)=0.500000000000
+  [PASS] Lueders update from I/2 through rank-one P gives P
+  [PASS] post-record state remains normalized
+         Tr=(1+0j)
+
+==============================================================================
+T4: rank-one Born form
+==============================================================================
+  [PASS] Tr(|psi><psi| |phi><phi|) = |<phi|psi>|^2
+         trace=0.500000000000, inner=0.500000000000
+
+==============================================================================
+T5: sequential projective effect P E P
+==============================================================================
+  [PASS] sequential joint effect is positive probability
+         joint=0.434617139682, prior=0.500000000000
+  [PASS] conditional sequential probability equals Born form
+         conditional=0.869234279365, born=0.869234279365
+
+==============================================================================
+T6: projective record Kraus family is trace preserving
+==============================================================================
+  [PASS] sum_r K_r^dagger K_r = I for projective record
+
+==============================================================================
+T7: source-note dependency and firewall wording
+==============================================================================
+  [PASS] source contains required phrase: Framework-Dependency Repair
+  [PASS] source contains required phrase: GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  [PASS] source contains required phrase: BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  [PASS] source contains required phrase: PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
+  [PASS] source contains required phrase: KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  [PASS] source contains required phrase: LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md
+  [PASS] source contains required phrase: LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md
+  [PASS] source contains required phrase: LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md
+  [PASS] source contains required phrase: durable/native persistent-record formation
+  [PASS] source contains required phrase: arbitrary unsharp-instrument uniqueness
+  [PASS] source omits forbidden phrase: Status:
+  [PASS] source omits forbidden phrase: effective status
+  [PASS] source omits forbidden phrase: audited_
+  [PASS] source omits forbidden phrase: retained-grade
+  [PASS] source omits forbidden phrase: durable/native persistent-record formation theorem
+  [PASS] source omits forbidden phrase: arbitrary unsharp-instrument uniqueness theorem.
+
+=== TOTAL: PASS=29, FAIL=0 ===
+
+----- stderr -----
+

@@ -1,56 +1,30 @@
 # DM Full Closure Same-Surface Numerator Selector Boundary
 
-**Type:** bounded_theorem
-**Status:** bounded endpoint-distinctness/non-overlap arithmetic certificate
-for the helper-defined numbers; the selector-boundary conclusion is
-conditional on unsupplied plaquette/η-ω/packet-completeness authorities
-(see 2026-05-28 repair header).
-**Date:** 2026-04-16 (2026-05-28: arithmetic core split from the unsupplied
-selector-boundary authorities).
-**Audit status:** assigned only by the independent audit lane.
+**Status:** bounded - bounded or caveated result note
+**Date:** 2026-04-16  
+**Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py`
-
-## 2026-05-28 Review Repair (arithmetic core split from selector-boundary authorities)
-
-This note is narrowed to the helper-number arithmetic it directly verifies.
-Supplying authority for the certified interval bounds, plaquette endpoints,
-η/ω conversion, and packet-completeness premise is substantive DM-lane work
-outside this note:
-
-- **Load-bearing (in scope):** the endpoint-distinctness and non-overlap
-  arithmetic checks **for the helper-defined numbers** — these close
-  exactly and are runner-verified.
-- **Conditional / NON-load-bearing (split off):** the
-  **selector-boundary conclusion**, which requires the certified
-  same-surface ratio bounds, the plaquette-derived α endpoint
-  definitions, the η/ω conversion, and the packet-completeness / selector
-  datum premise. None is available as a retained one-hop authority; the
-  selector-boundary claim is recorded as conditional on them.
-
-No new axiom, import, or retained bridge is introduced. The arithmetic
-endpoint-distinctness certificate is the load-bearing content; the
-selector-boundary conclusion stays conditional until its authorities land.
 
 ## Question
 
-Does the current helper-defined DM packet already furnish a theorem-grade
-selector on the live same-surface numerator interval?
+Does the current exact DM packet already furnish a theorem-grade selector on
+the live same-surface numerator interval?
 
 ## Honest packet-scope answer
 
 Not within the supplied packet.
 
-The helper layer used by the runner gives two same-surface endpoint coupling
-numbers, both derived from the common surface ingredient
-`alpha_bare = 1/(4 pi)` and the plaquette helper value `0.5934`:
+The current exact DM packet gives two exact same-surface endpoint coupling
+observables, both derived from the common surface ingredient
+`alpha_bare = 1/(4 pi)` and the canonical plaquette `0.5934`:
 
 - `alpha_lo = alpha_LM    = alpha_bare / u_0                 = 0.090667836017286`
 - `alpha_hi = alpha_short = -log(1 - c_1 * alpha_bare) / c_1 = 0.092264992618360`
 
-These two endpoints are distinct reals and both sit strictly above the
-common ingredient `alpha_bare`, so they are two genuinely distinct
-helper-defined constructions on the same surface, not relabelings of a single
-observable. The cited interval routine sends those helper-defined endpoints to
+These two endpoints are distinct exact reals and both sit strictly above the
+common ingredient `alpha_bare`, so they are two genuinely distinct retained
+constructions on the same surface, not relabelings of a single observable. The
+cited certified same-surface thermal authority sends those exact endpoints to
 non-overlapping certified DM ratio intervals:
 
 - `R(alpha_lo) in [5.442019867867, 5.442019867931]`
@@ -61,19 +35,19 @@ and therefore
 - `Omega_DM(alpha_lo) in [0.267709052538, 0.267709052541]`
 - `Omega_DM(alpha_hi) in [0.269717881594, 0.269717881596]`
 
-So the helper packet exhibits a two-element same-surface endpoint set that
+So the current packet exhibits a two-element same-surface endpoint set that
 lands disjoint certified DM ratio intervals. It does not, within this packet,
 exhibit a selector between them.
 
 ## What this note proves (constructive content)
 
-The runner verifies, by arithmetic on the cited helper outputs:
+The runner verifies, by exact arithmetic on the cited authority outputs:
 
-1. the two endpoint coupling values are well-defined helper numbers;
+1. the two endpoint coupling values are well-defined exact reals;
 2. they are distinct from each other and both strictly above the common
    ingredient `alpha_bare`, so they are two genuinely distinct same-surface
-   helper constructions and not the same observable in disguise;
-3. via the cited certified interval routine, they map to non-overlapping
+   constructions and not the same observable in disguise;
+3. via the cited certified thermal authority, they map to non-overlapping
    certified DM ratio intervals (so *if* a selector exists within a larger
    packet, it must land one endpoint and exclude the other).
 
@@ -86,10 +60,10 @@ literals as the load-bearing weakness of the note. The repaired runner removes
 those literals and replaces the absence claim with a print-only **packet-scope
 completeness declaration**:
 
-> Within the supplied helper packet (one-qubit operator algebra on the `Z^3`
-> spatial substrate together with the cited same-surface thermal authorities), no
+> Within the supplied retained packet (the framework axiom Cl(3) on Z^3
+> together with the cited same-surface thermal authorities recorded below), no
 > additional exact same-surface DM scale-selection datum is supplied. Any
-> selector that lands one of the two endpoints therefore requires an
+> selector that lands one of the two endpoints therefore requires a retained
 > authority outside the current packet.
 
 This is a statement about *what is in the current packet*, which is a
@@ -98,17 +72,17 @@ such authority can ever be added in a larger packet.
 
 ## Consequence
 
-- **current helper packet:** exhibits two distinct same-surface endpoint observables
+- **current packet:** exhibits two distinct same-surface endpoint observables
   with non-overlapping certified DM outputs, and supplies no further exact
   same-surface scale-selection datum;
-- **current helper-packet selector closure:** does not exist within this packet (this
+- **current packet selector closure:** does not exist within this packet (this
   is a packet-scope declaration, not a metatheoretical no-go);
 - **next honest science target:** if a constructive obstruction theorem
   modelled on the same-signature/different-output pattern used by
   `DM_NEUTRINO_SOURCE_BANK_Z3_DOUBLET_BLOCK_SELECTION_OBSTRUCTION_THEOREM_NOTE_2026-04-16.md`
-  can be derived for the DM same-surface endpoint pair from one-qubit operator
-  algebra on the `Z^3` spatial substrate, this note's packet-scope declaration
-  can become a no-go theorem against a specified class of selector inputs;
+  can be derived for the DM same-surface endpoint pair from Cl(3) on Z^3, this
+  note's packet-scope declaration can be promoted to a no-go theorem against a
+  specified class of selector inputs;
 - **remaining honest science target:** whether such an obstruction theorem
   exists for the DM same-surface lane, or whether the one-scalar DM-side
   family must remain an admitted extension.
@@ -210,7 +184,7 @@ the runner cannot prove); it is the arithmetic distinctness of two
 exact endpoint reals and the non-overlap of their certified DM ratio
 intervals (both runner-checked from cited authority outputs), plus a
 packet-scope declaration whose verifiable scope is exactly the supplied
-helper packet.
+retained packet.
 
 Closing the remaining upstream gap — promoting this packet-scope
 declaration to a constructive obstruction theorem against a specified

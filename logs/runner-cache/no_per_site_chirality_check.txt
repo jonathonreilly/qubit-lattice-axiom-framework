@@ -1,14 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/no_per_site_chirality_check.py
-runner_sha256: fbc431d065e69419706f6e9e79104c50dc154274b298f37687f080b300205336
+runner_sha256: ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================
-NO PER-SITE γ_5 CHIRALITY ON Cl(3) PAULI REP
+NO γ_5 CHIRALITY INSIDE ONE-SITE M_2(C) PAULI ALGEBRA
 ========================================================================
+
+------------------------------------------------------------------------
+SOURCE FIREWALL: one-site M_2(C) no-go, no imported odd-D theorem
+------------------------------------------------------------------------
+  cites minimal axioms Axiom 1: PASS
+  cites retained Pauli irrep uniqueness: PASS
+  states single-site matrix no-go: PASS
+  keeps larger chirality out of scope: PASS
+  no old uniqueness node in YAML: PASS
+  classified as no_go: PASS
+  STATUS: PASS
 
   ω = σ_1 σ_2 σ_3 =
   [[1j, 0j], [0j, 1j]]
@@ -43,11 +54,11 @@ TEST 4: No nonzero M ∈ M_2(C) anticommutes with all three σ_i
 
 ------------------------------------------------------------------------
 TEST 5: No γ_5 candidate exists — no M satisfies (γ_5² = +I_2)
-        AND {γ_5, σ_i} = 0 for all i, on Pauli per-site Hilbert.
+        AND {γ_5, σ_i} = 0 for all i, inside one M_2(C) site.
 ------------------------------------------------------------------------
   Test 4 proved: only zero anticommutes with all three σ_i.
   Zero matrix doesn't satisfy γ_5² = +I_2 (since 0² = 0 ≠ I).
-  Therefore no γ_5 exists on per-site Cl(3) Hilbert.
+  Therefore no γ_5 exists inside the one-site M_2(C) Pauli algebra.
   STATUS: PASS
 
 ------------------------------------------------------------------------
@@ -61,6 +72,7 @@ TEST 6: Cl(3) has 4-dim even subalgebra (span{I, σ_1σ_2, σ_2σ_3, σ_3σ_1})
   STATUS: PASS
 
 ========================================================================
+  Source firewall (one-site Axiom 1 M_2(C) no-go):        PASS
   Test 1 (ω = i·I_2):                                PASS
   Test 2 ([ω, σ_i] = 0 — ω is central):              PASS
   Test 3 (ω² = -I_2):                                PASS

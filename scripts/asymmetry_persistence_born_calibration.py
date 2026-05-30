@@ -23,17 +23,10 @@ import os
 import random
 import sys
 
-# Heavy compute / sweep runner. The registered audit-lane invocation uses
-# this module's argparse defaults, which are set to the narrow dense
-# `N=100, npl=60, thresholds=[0.1, 0.2], 2 seeds, 4 realizations`
-# configuration that completes deterministically in well under a minute and
-# reproduces the source-note table. The broader `N=[80, 100]`, 8-seed,
-# 12-realization sweep is still available as an opt-in (pass the wider
-# `--n-layers 80 100 --thresholds 0.0 0.1 0.2 --n-seeds 8 --n-realizations 12`
-# flags); that broad sweep is what previously timed out at the 1800 s
-# ceiling, so it is no longer the default. `AUDIT_TIMEOUT_SEC = 1800` is
-# retained as a generous ceiling for any opt-in broad rerun. See
-# `docs/audit/RUNNER_CACHE_POLICY.md`.
+# Heavy compute / sweep runner — `AUDIT_TIMEOUT_SEC = 1800` means the
+# audit-lane precompute and live audit runner allow up to 30 min of wall
+# time before recording a timeout. The 120 s default ceiling is too tight
+# under concurrency contention. See `docs/audit/RUNNER_CACHE_POLICY.md`.
 AUDIT_TIMEOUT_SEC = 1800
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -165,14 +158,10 @@ def born_rows_for_graph(graph, *, use_ln: bool, p_collapse: float, n_realization
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    # Defaults are the narrow dense completable configuration that the audit
-    # lane invokes and that reproduces the source-note table in-timeout. The
-    # broad sweep that previously timed out is opt-in: pass
-    # `--n-layers 80 100 --thresholds 0.0 0.1 0.2 --n-seeds 8 --n-realizations 12`.
-    parser.add_argument("--n-layers", nargs="+", type=int, default=[100])
-    parser.add_argument("--thresholds", nargs="+", type=float, default=[0.1, 0.2])
-    parser.add_argument("--n-seeds", type=int, default=2)
-    parser.add_argument("--n-realizations", type=int, default=4)
+    parser.add_argument("--n-layers", nargs="+", type=int, default=[80, 100])
+    parser.add_argument("--thresholds", nargs="+", type=float, default=[0.0, 0.1, 0.2])
+    parser.add_argument("--n-seeds", type=int, default=8)
+    parser.add_argument("--n-realizations", type=int, default=12)
     parser.add_argument("--npl", type=int, default=None)
     parser.add_argument("--xyz-range", type=float, default=12.0)
     parser.add_argument("--connect-radius", type=float, default=4.0)

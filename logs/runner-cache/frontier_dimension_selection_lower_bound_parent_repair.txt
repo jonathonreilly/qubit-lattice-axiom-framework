@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
+runner_sha256: 97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+# Dimension-selection parent lower-bound repair
+[PASS] parent note contains boundary phrase: finite-runner lower-bound support only
+[PASS] parent note contains boundary phrase: does not claim
+[PASS] parent note contains boundary phrase: not a unique-dimension theorem
+[PASS] parent note contains boundary phrase: DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md
+[PASS] parent note contains boundary phrase: does not authorize any framework-baseline rewrite
+[PASS] parent note contains boundary phrase: This row does not claim:
+[PASS] parent note contains boundary phrase: framework-internal upper-bound derivation
+[PASS] bridge note contains support phrase: Exact Finite-k Derivative
+[PASS] bridge note contains support phrase: d <= 2  ->  negative centroid response
+[PASS] bridge note contains support phrase: d >= 3  ->  positive centroid response
+[PASS] bridge note contains support phrase: does not close the upper-bound side
+[PASS] d=1 exact finite-k derivative has lower-bound sign: -6178.064177806486
+[PASS] d=1 parent finite-M replay has lower-bound sign: -3.867217535256593
+[PASS] d=2 exact finite-k derivative has lower-bound sign: -693.5367985302938
+[PASS] d=2 parent finite-M replay has lower-bound sign: -2.151826032696981
+[PASS] d=3 exact finite-k derivative has lower-bound sign: 137.43355955069325
+[PASS] d=3 parent finite-M replay has lower-bound sign: 0.727197696589517
+[PASS] d=4 exact finite-k derivative has lower-bound sign: 119.62276629484603
+[PASS] d=4 parent finite-M replay has lower-bound sign: 0.6596476486924026
+[PASS] d=5 exact finite-k derivative has lower-bound sign: 145.12754503252833
+[PASS] d=5 parent finite-M replay has lower-bound sign: 0.8307846749345735
+[PASS] finite-k lower-bound pass set is d=3,4,5: [3, 4, 5]
+[PASS] finite-k lower-bound fail set is d=1,2: [1, 2]
+[PASS] forbidden overclaim absent: self-consistency uniquely selects d = 3
+[PASS] forbidden overclaim absent: the Z^3 spatial substrate has been derived
+[PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized
+SUMMARY: PASS=26 FAIL=0
+
+----- stderr -----
+

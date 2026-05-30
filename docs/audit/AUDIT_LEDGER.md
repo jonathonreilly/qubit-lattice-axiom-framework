@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 944 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 945 |
 | `audited_conditional` | 14 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
@@ -132,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_cl3_selector_gap_note_2026-04-19` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | B | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -545,6 +544,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_clean~~ | open_gate | judicial_review | codex-gpt-5.5 | B | - |
 | `koide_cone_completing_root_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_cone_three_form_equivalence_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_cyclic_projector_block_democracy_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7530,6 +7530,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — For the bounded structural claim, the chain closes from the retained cited algebraic bridge plus direct linear-algebra checks of the commutant and adjacent-chain containment. It does not close a microscopic Wilson law, selector mechanism, or charged-lepton readout, but those are explicitly excluded from the audited scope.
 - **rationale:** The load-bearing reduction is an algebraic identity applied to a directly verified 3-real cyclic Hermitian subspace, with retained one-hop authority for the character/operator bridge. The runner source performs symbolic commutant, basis, path-algebra, and bridge checks rather than merely printing constants. Its observed charged-lepton portion is an external numerical comparator, but it is not needed for the bounded target-size theorem and does not carry the claimed structural conclusion.
 - **auditor confidence:** high
+
+### `koide_cl3_selector_gap_note_2026-04-19`
+
+- **Note:** [`KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md`](../../docs/KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open selector-gap inventory for candidate Cl(3)->SM embedding routes: only the retained parent V_eff coefficient-assignment/gap context is load-bearing, while route exhaustions and global Cl(3)-alone non-derivability remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-gpt-5.5-five-judge-panel-majority-20260530-koide-selector-gap`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The note is graph-visible only as inventory: the parent supports only the V_eff coefficient assignment, while all Kramers, doublet-A, baryon-Schur, SU(3), degeneracy, H_*, transport, and kappa_* route closures require separate retained authorities or runners.  _(class `B`)_
+- **chain closes:** True — Five-judge panel majority was 5-0 for the first audit tuple. The audited row is an open-gate inventory, not a closed selector-gap theorem, route-exhaustion theorem, or global Cl(3)-alone no-go. Under that narrowed scope, the retained parent supplies the only load-bearing V_eff coefficient-assignment/gap context, and the source explicitly keeps every listed route closure open rather than importing it as a conclusion. The missing per-route authorities are therefore the boundary of the open gate, not a blocker to the current inventory-only claim.
+- **rationale:** Five-judge panel majority was 5-0 for the first audit tuple. The audited row is an open-gate inventory, not a closed selector-gap theorem, route-exhaustion theorem, or global Cl(3)-alone no-go. Under that narrowed scope, the retained parent supplies the only load-bearing V_eff coefficient-assignment/gap context, and the source explicitly keeps every listed route closure open rather than importing it as a conclusion. The missing per-route authorities are therefore the boundary of the open gate, not a blocker to the current inventory-only claim.
+- **auditor confidence:** judicial
 
 ### `koide_cone_completing_root_narrow_theorem_note_2026-05-02`
 

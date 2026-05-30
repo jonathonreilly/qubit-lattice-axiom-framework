@@ -152379,9 +152379,9 @@
       "verdict_rationale": "The load-bearing reduction is an algebraic identity applied to a directly verified 3-real cyclic Hermitian subspace, with retained one-hop authority for the character/operator bridge. The runner source performs symbolic commutant, basis, path-algebra, and bridge checks rather than merely printing constants. Its observed charged-lepton portion is an external numerical comparator, but it is not needed for the bounded target-size theorem and does not carry the claimed structural conclusion."
     },
     "koide_cl3_selector_gap_note_2026-04-19": {
-      "audit_date": "2026-05-28T02:41:49.429982+00:00",
+      "audit_date": "2026-05-30T23:26:48.901012+00:00",
       "audit_state_snapshot": {
-        "criticality": "high",
+        "criticality": "critical",
         "dep_axiom_premise_note_hash": {},
         "dep_claim_scope": {
           "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited."
@@ -152395,26 +152395,26 @@
         "deps": [
           "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
         ],
-        "load_bearing_score": 9.395,
+        "load_bearing_score": 9.494,
         "runner_hash": null,
-        "transitive_descendants": 237
+        "transitive_descendants": 254
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-audit-loop-koide-selector-gap-20260528-r1",
-      "auditor_confidence": "high",
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260530-koide-selector-gap",
+      "auditor_confidence": "judicial",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The source now consistently marks the global Cl(3)-alone selector non-derivability statement and every listed route-exhaustion claim as open inventory, not as a closed theorem. The direct retained parent supports only the V_eff coefficient assignment/gap context, which is all this open gate uses as load-bearing input.",
+      "chain_closure_explanation": "Five-judge panel majority was 5-0 for the first audit tuple. The audited row is an open-gate inventory, not a closed selector-gap theorem, route-exhaustion theorem, or global Cl(3)-alone no-go. Under that narrowed scope, the retained parent supplies the only load-bearing V_eff coefficient-assignment/gap context, and the source explicitly keeps every listed route closure open rather than importing it as a conclusion. The missing per-route authorities are therefore the boundary of the open gate, not a blocker to the current inventory-only claim.",
       "claim_id": "koide_cl3_selector_gap_note_2026-04-19",
-      "claim_scope": "Open selector-gap inventory for the Koide Cl(3)->SM embedding routes: the retained parent supplies only the V_eff coefficient-assignment/gap context, while Kramers-doublet, baryon-Schur, SU(3)-coupling, degeneracy, full-4x4, transport, and kappa_* route closures remain unaudited open gates.",
+      "claim_scope": "Open selector-gap inventory for candidate Cl(3)->SM embedding routes: only the retained parent V_eff coefficient-assignment/gap context is load-bearing, while route exhaustions and global Cl(3)-alone non-derivability remain open.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": "2026-05-30T22:12:45.378026+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-30T23:26:48.901012+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -152429,8 +152429,43 @@
           "load_bearing_step_class": "B",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-30T23:18:39.312365+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-231705-3e9479f1-koide_cl3_selector_gap_n",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Open-gate inventory of candidate Cl(3) selector-gap routes, with the retained parent supporting only the V_eff coefficient assignment/gap and not any route exhaustion or global Cl(3)-alone non-derivability theorem.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-30T23:26:48.901012+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260530-koide-selector-gap",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Open selector-gap inventory for candidate Cl(3)->SM embedding routes: only the retained parent V_eff coefficient-assignment/gap context is load-bearing, while route exhaustions and global Cl(3)-alone non-derivability remain open.",
+          "claim_type": "open_gate",
+          "first_auditor_error": "No material error.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority was 5-0 for the first audit tuple. The audited row is an open-gate inventory, not a closed selector-gap theorem, route-exhaustion theorem, or global Cl(3)-alone no-go. Under that narrowed scope, the retained parent supplies the only load-bearing V_eff coefficient-assignment/gap context, and the source explicitly keeps every listed route closure open rather than importing it as a conclusion. The missing per-route authorities are therefore the boundary of the open gate, not a blocker to the current inventory-only claim.",
+          "load_bearing_step_class": "B",
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "second_auditor_error": "The second audit treated missing per-route retained authorities as a blocker for the current row, but those authorities would only be required to promote route exhaustion or a global Cl(3)-alone no-go. The source packet explicitly disclaims those promotions and makes the route list inventory only.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -152438,18 +152473,18 @@
       ],
       "direct_in_degree": 3,
       "effective_status": "open_gate",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:audited_open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "judicial_review",
       "intrinsic_status": "open_gate",
       "load_bearing_score": 9.494,
-      "load_bearing_step": "The note is graph-visible only as an inventory of candidate Cl(3) selector-gap routes; only the parent V_eff coefficient assignment is supported, and all route-exhaustion or global non-derivability claims remain open pending per-route retained authorities.",
+      "load_bearing_step": "The note is graph-visible only as inventory: the parent supports only the V_eff coefficient assignment, while all Kramers, doublet-A, baryon-Schur, SU(3), degeneracy, H_*, transport, and kappa_* route closures require separate retained authorities or runners.",
       "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "141d829d4a7fba9c6a13d26f953ccfb2ad20fc9d2027a4cb8662974f03a69f4d",
       "note_path": "docs/KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:high->critical: first-pass audit (auditor=codex-audit-loop-koide-selector-gap-20260528-r1, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "Recheck if a future source revision promotes any listed route or the global Cl(3)-alone non-derivability statement from open inventory to a retained theorem.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -152700,7 +152735,7 @@
       "runner_path": null,
       "title": "Koide Cl(3) \u2192 SM Embedding \u2014 Selector Gap Note",
       "transitive_descendants": 254,
-      "verdict_rationale": "The scoped open-gate claim closes: the note does not assert a retained no-go, does not exhaust the listed Cl(3) routes, and explicitly prevents downstream consumers from citing its route numerics or route failures as bounded theorem values. Its only retained input is the parent V_eff coefficient-assignment/gap context, and all selector-closure routes are left pending direct retained dependencies or runners. Residual risk is future source broadening; if any listed route is promoted from inventory to conclusion, it needs its own audit."
+      "verdict_rationale": "Five-judge panel majority was 5-0 for the first audit tuple. The audited row is an open-gate inventory, not a closed selector-gap theorem, route-exhaustion theorem, or global Cl(3)-alone no-go. Under that narrowed scope, the retained parent supplies the only load-bearing V_eff coefficient-assignment/gap context, and the source explicitly keeps every listed route closure open rather than importing it as a conclusion. The missing per-route authorities are therefore the boundary of the open gate, not a blocker to the current inventory-only claim."
     },
     "koide_cone_completing_root_narrow_theorem_note_2026-05-02": {
       "audit_date": "2026-05-05T11:38:02.248823+00:00",

@@ -1,68 +1,71 @@
 # Handoff — β=6 Plaquette Closure Loop
 
-## Where this loop stands (after cycle 1, 2026-05-30)
+## Where this loop stands (after cycle 2, 2026-05-30)
 
-- **d₆ = 7/5668704 computed EXACTLY** and shipped as a bounded note +
-  audit-companion runner (cycle-1 PR). Reproduces the retained anchor
-  d₅ = 1/472392. Per-shell d₆ = 7/(12·18⁵); per-shell ratio d₆/d₅ = 7/12.
-- **New exact finite-geometry fact:** zero order-β⁶ distinct connected supports
-  are GF(3)-closable (of 5966 leaf-free size-6 supports over the radius-1
-  patch); d₆ is the four cube shells' order-6 multiplicity contribution.
-- **Engine (single self-contained artifact for resumption):**
-  `scripts/frontier_beta6_connected_coefficient_2026_05_30.py` — exact SU(3)
-  link integrals via invariant-tensor projector → moments → set-partition
-  cumulants → support+multiplicity sum + GF(3) pre-filter, plus the GF(3)
-  cycle-space certificate (5b) that settles which distinct supports can
-  contribute without the cluster-growth enumeration. Validated end-to-end. To
-  resume, extend `compute_dn` / `cube_shells_size5` in that file; no other
-  module is needed.
+- **d₆ = 7/5668704 (cycle 1) and d₇ = 5/17006112 (cycle 2) computed EXACTLY**,
+  shipped as bounded notes + audit-companion runner. Reproduce the retained
+  anchor d₅ = 1/472392. Per-shell d₇ = 5/68024448 (four identical shells).
+  Per-order ratios: **d₆/d₅ = 7/12, d₇/d₆ = 5/21 — NOT constant.**
+- **Tadpole/geometric ansatz FALSIFIED (cycle 2).** Harness #2255 with
+  `EXACT_HIGHER = {6: 7/5668704, 7: 5/17006112}` reads `[FALSIFY]
+  tadpole/geometric`: the single-pole geometric prediction (7/12)·d₆ =
+  49/68024448 misses the exact d₇ = 5/17006112 by ~59% (rel 1.45 vs exact) ≫ 5%
+  window. The resummation route does NOT reduce to a geometric tail; no closed
+  boosting form supported. Forward truncation `<P>(6)_trunc ≈ 0.5789` (gap
+  0.0151) is a TRUNCATED partial sum, not a closure.
+- **Engine wall BEATEN (cycle 2).** The cycle-1 sympy engine hit a >30min
+  3^(2k) wall (one 8-plaquette moment ~270s). Cycle 2's optimized engine
+  (`link_tensor_frac` + `_contract_frac` + `_integrate_word_frac` in the same
+  runner): (1) per-link integral built SPARSELY from invariant-basis supports
+  (not the 3^(2(p+q)) dense grid), (2) pure-int Fraction arithmetic + min-degree
+  variable elimination, (3) early-zero on unbalanced links. Worst moment ~0.5s;
+  exact d₇ in ~2min. Two-engine agreement (V4b: Fraction reproduces sympy d₅,
+  d₆ exactly).
+- **Engine (single self-contained artifact):**
+  `scripts/frontier_beta6_connected_coefficient_2026_05_30.py` — both the sympy
+  reference engine (V0–V4 validation) and the optimized Fraction engine (V4b,
+  V5, V5b). To compute d₈, extend `compute_dn_frac` / the multiplicity sum; but
+  see the checkpoint below before doing so.
 
-## Resumable next action (CYCLE 2)
+## Resumable next action (CYCLE 3) — CHECKPOINT at the wall
 
-**Run the landed resummation harness #2255 to a tadpole verdict, and forward-test
-the d-log-Padé route.**
+**Do NOT run another coefficient cycle.** The exact-coefficient route has
+delivered its decisive in-runway verdict:
 
-1. Edit `scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py` drop-in:
-   ```python
-   EXACT_HIGHER = {6: Fraction(7, 5668704)}          # + 7: <exact d_7> once available
-   ```
-2. Rerun. With {d₅, d₆} the tadpole/geometric ansatz predicts
-   d₇^pred = (d₆/d₅)·d₆ = (7/12)·(7/5668704) = 49/68024448 ≈ 7.20e-07.
-   - If exact d₇ is supplied, the harness prints SUPPORT/FALSIFY (5% window) —
-     the clean predictive verdict on the tadpole route.
-   - The d-log-Padé PREDICTIVE verdict needs {d₅..d₈} (= β⁸). β⁸ is at/past the
-     treewidth wall, so **only the d-log-Padé FORWARD <P>(6) sensitivity test is
-     in-runway**; do not claim a d-log-Padé predictive verdict in-runway.
-3. Ship a bounded note recording the tadpole predictive verdict + the forward
-   <P>(6) band. Audit-shippable either outcome (SUPPORT or FALSIFY is a result).
+- tadpole/geometric ansatz **FALSIFIED** (cycle 2, above);
+- d-log-Padé **predictive** test is **out of runway** (it needs {d₅..d₈} = β⁸,
+  and β⁸ is at/past the treewidth-29 wall — see below).
 
-## d₇ status (the stretch goal of cycle 1)
+So both candidate analytic continuations the harness can test are resolved as
+far as exact coefficients can resolve them. β=6 closure now requires a genuinely
+NEW dynamical input for ρ_{p,q}(6), which is a `/first-principles` / `/frontier`
+research item, NOT a brute extension. Candidate directions (each its own
+multi-session item, none a coefficient cycle):
 
-- d₇ contributions: (i) the four cube shells via order-7 multiplicity; (ii) any
-  GF(3)-closable size-6 distinct support — **none** (established at order 6);
-  (iii) any GF(3)-closable size-7 distinct support — **probed in cycle 1**
-  (see `_dev_closable7.py` / the cycle-1 PR body for the result).
-- **Named computational wall:** the cube-shell order-7 multiplicity cumulants
-  reach single links with up to four fundamental factors, whose exact SU(3)
-  invariant-projector contraction is a 3^(2k) sum (3^8 per such link); combined
-  with the μ≈8 cluster growth and Bell(8)=4140 partition sums per 8-slot
-  cumulant, this is the practical edge. If cycle 1 did not land an exact d₇,
-  resume here: the remaining work is purely the cube-shell order-7 multiplicity
-  cumulants (the distinct-support side is settled), so an optimized contraction
-  (sparse einsum over the per-link invariant tensors, or pure-int Fraction
-  arithmetic replacing sympy in the hot loop) should bring d₇ in reach without
-  any new physics.
+1. **A Münster-style graphical strong-coupling organizer** that sums connected
+   SU(3) contributions analytically (avoiding brute cluster enumeration + 3nj
+   contraction). This could in principle reach the resummation depth the d-log-
+   Padé route needs, but it is a new analytic technique, not an extension of
+   this engine.
+2. **A rank-aware / tree-decomposition contractor** that defeats the treewidth-29
+   wall for the unmarked 3D spatial Wilson environment (the doubly-walled object).
+3. **An independent proof of the analytic-continuation class of Δ(β) on (0,6].**
+   The geometric/single-pole class is now FALSIFIED, so the surviving hypothesis
+   is a complex-pair dominant singularity with no real branch point at β_r < 6.
+   If proven, even a short exact series could be d-log-Padé-continued; but the
+   analyticity is the unproven premise, not a computation.
 
-## CHECKPOINT (after cycle 2) — the treewidth-29 wall
+## Why β⁸ is past the wall (if anyone is tempted)
 
-A genuine resummation closing <P>(6) needs ~15–40 exact coefficients; the
-exact-coefficient engine collides with the treewidth-29 infeasibility well
-before that. **At the wall, STOP brute extension.** Closure then needs a
-genuinely new dynamical input (Münster-style graphical organizer / rank-aware
-contractor / proof of complex-pair analyticity of Δ on (0,6]) — each a separate
-first-principles research item, not a brute extension. This is where the loop
-hands back to `/first-principles` / `/frontier` work, NOT another coefficient
-cycle.
+d₈ adds 56 multiplicity vectors per shell of 9-plaquette cumulants (Bell(9) =
+21147 set partitions each) reaching links with even higher factor counts, and
+the distinct-support side reopens at larger area (the GF(3) cycle-space weights
+through p₀ resume at 10, 11, 12). Even with cycle 2's optimized engine this is
+at/past the practical ceiling, and the depth a genuine resummation needs
+(~15–40 coeffs) collides squarely with the retained treewidth-29 infeasibility
+(`su3_wigner_l3_treewidth_infeasible_2026-05-04`, audited_conditional 2026-05-29).
+The optimized contraction bought exactly one more order (β⁷), which was enough to
+deliver the tadpole verdict; it does not change the asymptotic wall.
 
 ## Discipline reminders for the next agent
 

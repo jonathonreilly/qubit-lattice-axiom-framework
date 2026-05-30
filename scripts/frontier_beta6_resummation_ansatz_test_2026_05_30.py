@@ -219,7 +219,13 @@ class ConnectedSeries:
     lowest_order: int = 5
 
     def set_coeff(self, n: int, value) -> None:
-        self.coeffs[n] = mp.mpf(value) if not isinstance(value, mp.mpf) else value
+        if isinstance(value, mp.mpf):
+            self.coeffs[n] = value
+        elif isinstance(value, Fraction):
+            # exact rational -> high-precision mpf (the drop-in supplies Fractions)
+            self.coeffs[n] = mp.mpf(value.numerator) / mp.mpf(value.denominator)
+        else:
+            self.coeffs[n] = mp.mpf(value)
 
     def contiguous(self) -> list[tuple[int, mp.mpf]]:
         """Contiguous (n, d_n) starting at lowest_order, stopping at first gap."""
@@ -637,10 +643,14 @@ def main() -> int:
 
     # >>> PARALLEL-CYCLE DROP-IN POINT >>> ----------------------------------
     #   Map order n -> exact connected coefficient d_n (rational str or value).
-    #   Example once d_6 lands:  EXACT_HIGHER = {6: Fraction(<num>, <den>)}
+    #   Supplied by the exact-coefficient cycle (frontier_beta6_connected_coefficient
+    #   _2026_05_30.py, two-engine sympy+Fraction agreement):
+    #     d_6 = 7/5668704   (cycle 1),
+    #     d_7 = 5/17006112  (cycle 2, optimized engine; per-shell 5/68024448).
+    #   These are INDEPENDENT exact computations, NOT fitted to any prediction.
     EXACT_HIGHER: dict[int, object] = {
-        # 6: Fraction(1, 0),   # <-- exact order-beta^6 connected coefficient (uncomment + fill)
-        # 7: Fraction(1, 0),   # <-- exact order-beta^7 connected coefficient (later)
+        6: Fraction(7, 5668704),    # exact order-beta^6 connected coefficient
+        7: Fraction(5, 17006112),   # exact order-beta^7 connected coefficient
     }
     # <<< END DROP-IN POINT <<< ---------------------------------------------
 
@@ -747,15 +757,34 @@ def main() -> int:
     print("  * The d-log-Pade METHOD is sound on a controlled complex-pair proxy: it localizes")
     print("    the singularity (|beta_c|->5.70, off-axis) and reconstructs Delta(6) to <1e-3 by")
     print("    [10/10], and its predictive next-coefficient call is exact to ~1e-11 on the proxy.")
-    print("  * On the PHYSICAL series, only ONE exact connected coefficient (d_5) is known. That")
-    print("    is too few for EITHER ansatz to make a falsifiable prediction, and a single term")
-    print("    reaches ~10% of the comparator gap. Neither ansatz can be said to reach 0.594 yet;")
-    print("    claiming so would be fitting to the comparator (forbidden).")
+    if n_known >= 2:
+        # Live verdict: exact d_6 (and possibly d_7) supplied via the drop-in.
+        P6_live = P1_AT_6 + exact_series.eval_truncated(BETA)
+        print(f"  * EXACT connected coefficients supplied: d_5 .. d_{highest} ({n_known} total).")
+        print("    The tadpole/geometric ansatz (a single boosting pole) predicts a CONSTANT")
+        print("    per-order ratio; the exact coefficients give d_6/d_5 = 7/12 = 0.5833 but")
+        print("    d_7/d_6 = 5/21 = 0.2381 -- the ratio is NOT constant, so the tadpole/geometric")
+        print("    predictive test FALSIFIES (Section 4a: predicted d_7 misses the exact value by")
+        print("    far more than the 5% support window). A single nearest boosting pole does NOT")
+        print("    organize the connected series; the resummation route does not reduce to a")
+        print("    geometric tail. This is an INDEPENDENT exact d_7, compared after the fact --")
+        print("    nothing here is fitted to the comparator.")
+        print(f"  * FORWARD truncation with the exact d_5..d_{highest}: <P>(6)_trunc = "
+              f"{mp.nstr(P6_live, 8)} (comparator 0.594, gap {mp.nstr(MC_COMPARATOR - P6_live, 4)}).")
+        print("    This is a TRUNCATED partial sum toward a comparator, NOT a closure: with the")
+        print("    geometric continuation falsified, no proven analytic continuation of Delta to")
+        print("    beta=6 remains in-runway.")
+    else:
+        print("  * On the PHYSICAL series, only ONE exact connected coefficient (d_5) is known. That")
+        print("    is too few for EITHER ansatz to make a falsifiable prediction, and a single term")
+        print("    reaches ~10% of the comparator gap. Neither ansatz can be said to reach 0.594 yet;")
+        print("    claiming so would be fitting to the comparator (forbidden).")
     print("  * Tadpole/boosted-PT of the BARE single-plaquette series does NOT reach 0.594: it")
     print("    collapses to 0 or, convention-dependent, lands on the blocked 0.611 / 0.8740.")
-    print("  * TEST STATUS: PENDING the exact d_6 (and d_7). The predictive falsification is")
-    print("    wired as a one-line drop-in (Section 4). This harness evaluates the route; it does")
-    print("    NOT close beta=6. 0.594 is a Monte-Carlo comparator, never a derivation input.")
+    print("  * The d-log-Pade PREDICTIVE test still needs d_5..d_8 (= beta^8, at/past the")
+    print("    treewidth wall); only its forward <P>(6) sensitivity test is in-runway. This")
+    print("    harness evaluates the route; it does NOT close beta=6. 0.594 is a Monte-Carlo")
+    print("    comparator, never a derivation input.")
 
     section(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

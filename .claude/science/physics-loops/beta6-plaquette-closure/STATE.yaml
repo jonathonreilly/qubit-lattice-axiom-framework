@@ -1,6 +1,6 @@
 loop: beta6-plaquette-closure
 created: 2026-05-30
-last_cycle: 1
+last_cycle: 2
 last_updated: 2026-05-30
 
 north_star: >
@@ -33,8 +33,7 @@ cycle1_results:
     zero order-beta^6 distinct connected supports are GF(3) color-closable (of
     5966 leaf-free size-6 supports over the radius-1 patch); d_6 comes only from
     the four cube shells via order-6 multiplicity (one face doubled or p0 doubled).
-  d7: PENDING               # see handoff: per-link 3^(2k) contraction cost at
-                            # doubled/tripled-face clusters approaches the wall
+  d7: "(reduced to four cube shells' order-7 multiplicity; computed exact in cycle 2)"
   method: >
     exact connected-cumulant linked-cluster expansion; exact SU(3) single-link
     Haar integrals via invariant-tensor projector (delta-caps + epsilon sector,
@@ -43,10 +42,40 @@ cycle1_results:
   runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
   note: docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md
 
+cycle2_results:
+  d7: "5/17006112"          # EXACT, NEW (this loop); per-shell 5/68024448, 4 identical shells
+  d7_d6_ratio: "5/21"       # != d6/d5 = 7/12, so per-order ratio is NOT constant
+  optimized_engine: >
+    BEAT the order-7 3^(2k) contraction wall (sympy: ~270s per 8-plaquette moment
+    => >30min; optimized: ~0.5s => exact d7 in ~2min). Three exact changes, no
+    new maths: (1) per-link integral built SPARSELY from invariant-basis supports
+    (outer products, not the 3^(2(p+q)) dense grid; (4,4) link 3^16 dense vs
+    <=639^2 nnz); (2) pure-int Fraction arithmetic + min-degree variable-elimination
+    contraction; (3) early-zero on unbalanced (no-singlet) links to prune the 2^n
+    orientations. Same invariant basis + Gram inverse reused from projector().
+  two_engine: >
+    optimized Fraction engine reproduces sympy d5=1/472392 AND d6=7/5668704 EXACTLY
+    (V4b) + matches sympy moment on a spread of multisets up to size 8 (incl the
+    worst 8-plaquette moment 1/11337408). Engines AGREE; d7=5/17006112 confirmed.
+  tadpole_verdict: FALSIFIED
+  tadpole_verdict_detail: >
+    tadpole/geometric (single boosting pole) predicts constant ratio =>
+    d7^pred = (7/12)*d6 = 49/68024448 ~= 7.20e-07; exact d7 = 5/17006112 ~= 2.94e-07
+    misses by ~59% vs prediction (1.45 relative to exact) >> 5% harness window.
+    Harness (#2255) reads [FALSIFY] tadpole/geometric. Resummation route does NOT
+    reduce to a geometric tail; no closed boosting form supported.
+  forward_P6: >
+    forward truncation with exact {d5,d6,d7}: <P>(6)_trunc ~= 0.5789 (comparator
+    0.594, gap ~0.0151). TRUNCATED partial sum, NOT a closure; with geometric
+    continuation falsified, no proven analytic continuation of Delta to beta=6
+    is in-runway. dlog-Pade predictive needs {d5..d8} (=beta^8, past wall).
+  runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
+  note: docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md
+
 feeds_harness:
   harness: scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py   # PR #2255
-  drop_in: "EXACT_HIGHER = {6: Fraction(7, 5668704)}"
-  activates: tadpole/geometric predictive verdict (predicts d_7 = (d6/d5)*d6 = (7/12)*d6)
+  drop_in: "EXACT_HIGHER = {6: Fraction(7, 5668704), 7: Fraction(5, 17006112)}"
+  verdict: "[FALSIFY] tadpole/geometric (d7/d6=5/21 != d6/d5=7/12; rel miss 1.45 >> 0.05)"
   dlog_pade: needs {d5..d8} (=beta^8, at/past wall) for predictive; forward test only in-runway
 
 trace_gate: frontier_discovery / upstream_support   # NOT closure
@@ -54,4 +83,6 @@ status_authority: >
   independent audit lane only; cite effective_status from
   docs/audit/data/audit_ledger.json; framework PRs land science/fixes only.
 
-next_action: see HANDOFF.md
+next_action: see HANDOFF.md   # CHECKPOINT at the wall: beta=6 needs new dynamical
+                              # input for rho_{p,q}(6); exact-coeff route done its
+                              # in-runway job (tadpole FALSIFIED, dlog-Pade out of runway)

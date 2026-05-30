@@ -1,222 +1,137 @@
-# UV Gauge-to-Yukawa Bridge: Subordinate Support Note
+# UV Gauge-to-Yukawa Bridge: Perturbative vs Strong-Coupling Coefficients
 
-**Date:** 2026-04-16
-**Status:** subordinate support for the proposed_retained Ward-identity theorem
-[YT_WARD_IDENTITY_DERIVATION_THEOREM.md](YT_WARD_IDENTITY_DERIVATION_THEOREM.md).
-This note compares the perturbative and strong-coupling leading-order
-4-fermion coefficients and documents why the perturbative coefficient
-governs the retained result on the tadpole-improved canonical surface.
-**Script:** `scripts/frontier_yt_ward_identity_derivation.py` (Blocks 7, 7a,
-8, 8a, 9)
+**Date:** 2026-04-16 (2026-05-29 scope repair).
+**Type:** bounded_theorem.
+**Primary runner:** `scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py`.
 
----
+## 2026-05-29 Scope Repair
 
-## Role
+The audit blocker was not the finite coefficient algebra. It was the stronger
+selection claim that the tadpole-improved canonical surface proves the
+perturbative coefficient governs and excludes the strong-coupling coefficient.
+The audit found that the packet does not supply a retained expansion-domain
+or selector theorem for that step.
 
-The main theorem (`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`) derives
-the RATIO `y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6)` via explicit 1PI 4-point
-function matching between the UV Cl(3) × Z³ lattice theory and the
-composite-Higgs EFT at `q² = M_Pl²`:
+This repair removes the governing-coefficient selection claim from the
+load-bearing surface. The row now preserves only the exact bounded algebraic
+support:
 
-1. **D16** (retained): bare Cl(3) × Z³ action contains only Wilson
-   plaquette + staggered Dirac; at O(α_LM), single-gluon-exchange
-   is the only tree diagram in the color-singlet scalar-scalar
-   4-fermion channel.
-2. **D17** (retained, Block 5 verified): `H_unit` is the unique
-   unit-norm (1,1) composite scalar with `Z² = N_c · N_iso = 6`.
-3. **1PI matching**: at `q² = M_Pl² ≫ m_H² ~ v²`, the UV and EFT
-   1PI amplitudes equal each other operator-by-operator. Matching
-   the `O_S = (ψ̄ψ)²` channel gives `y_t_bare² = g_bare²/(2 N_c)`.
-4. **Tadpole cancellation** (D15, `n_link = 1`): `1/sqrt(u_0)`
-   tadpole factor cancels in the ratio `y_t/g_s`, yielding
-   `y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6)`.
+- `C_pert = 1/(2 N_c)` from the SU(`N_c`) Fierz identity.
+- `C_strong = 1/N_c^2` from the leading one-link strong-coupling Haar
+  contraction.
+- The coefficients are distinct at `N_c = 3`: `1/6` versus `1/9`.
+- The Dirac Fierz scalar and pseudoscalar channels are nonzero and the tensor
+  channel vanishes in the checked vector-vector decomposition.
+- The unit scalar-singlet matrix element gives the exact `H_unit` overlap
+  `1/sqrt(6)` on the `Q_L = (2,3)` block.
 
-The derivation uses only retained Cl(3) × Z³ content (D1-D17) plus
-exact group-theoretic identities (S1 = SU(N_c) Casimir, S2 = Lorentz
-Clifford Fierz). No 't Hooft limit, no Jouvet-Salam Z=0, no HS
-auxiliary-mass freedom.
+The row does **not** claim that the canonical tadpole-improved surface selects
+the perturbative expansion, proves convergence, closes plaquette or `u_0`
+authority, closes `g_bare`, closes staggered-Dirac realization, or supplies
+shared tadpole transport. Those are future bridge/selector problems.
 
-This note is a **subordinate support** documenting why the PERTURBATIVE
-1/(2 N_c) coefficient (not the strong-coupling 1/N_c^2 coefficient)
-is the correct leading-order 4-fermion input on the canonical surface:
+No new axiom is introduced. No observed value or fitted selector is
+load-bearing.
 
-1. One-gluon-exchange at tadpole-improved PT gives the color-singlet
-   coefficient `C_pert = 1/(2 N_c) = 1/6` at N_c = 3 via SU(N_c) Fierz.
-2. The strong-coupling character-expansion route gives a **different**
-   leading coefficient `C_strong = 1/N_c^2 = 1/9`, which does NOT
-   govern on the tadpole-improved canonical surface.
-3. On the canonical surface (`alpha_LM = 0.091 << 1`, `n_opt ~ 35`
-   loops), the perturbative expansion is convergent, so `C_pert` is
-   the correct input to the main theorem's Step 3 UV side (3.8).
-4. The Haar-sampled SU(N_c) one-link integral provides machine-
-   precision cross-verification of the strong-coupling coefficient
-   (Block 7a).
+## Claim Scope
 
-This note is SUBORDINATE: it supports the retained theorem's choice
-of `C_pert` over `C_strong` as the Step-3B coefficient; it does NOT
-attempt the full 1PI matching closure (which lives in the main theorem
-Steps 3A-3E).
+Let `N_c = 3` and `N_iso = 2` be the retained bounded representation inputs
+used by the runner. The in-scope theorem is the finite coefficient packet:
 
----
+1. The SU(`N_c`) generator normalization
 
-## Perturbative derivation (retained, matches main theorem)
+   ```text
+   Tr(T^A T^B) = (1/2) delta_AB
+   ```
 
-Starting from one-gluon exchange at the lattice cutoff (main theorem
-Step 2):
+   implies the Fierz identity
 
-```
-    L_exchange = -(g_s^2 / M_Pl^2) * J^{mu A} J_mu^A                  (A.1)
-```
+   ```text
+   sum_A T^A_ab T^A_cd
+     = (1/2)(delta_ad delta_bc - (1/N_c) delta_ab delta_cd).
+   ```
 
-Apply the retained SU(N_c) Fierz identity ([YCP_EW:169-172](YT_EW_COLOR_PROJECTION_THEOREM.md)):
+   Hence the color-singlet perturbative coefficient magnitude is
 
-```
-    sum_A (T^A)_{ab} (T^A)_{cd} = (1/2)[delta_{ad} delta_{bc}
-                                       - (1/N_c) delta_{ab} delta_{cd}]   (A.2)
-```
+   ```text
+   C_pert = 1/(2 N_c).
+   ```
 
-Project onto color-singlet channel (delta_{ab} delta_{cd}):
+2. The leading one-link Haar contraction
 
-```
-    C_pert = g_s^2 / (2 N_c)                                          (A.3)
-```
+   ```text
+   integral dU U_ab U^dag_cd = (1/N_c) delta_ad delta_bc
+   ```
 
-For N_c = 3: `C_pert = g_s^2 / 6`.
+   gives the corresponding leading strong-coupling color-singlet coefficient
 
-## Strong-coupling derivation (independent cross-check)
+   ```text
+   C_strong = 1/N_c^2.
+   ```
 
-The exact SU(N_c) one-link integral under Haar measure:
+3. At `N_c = 3`, these are exactly
 
-```
-    integral dU U_{ab} U^dag_{cd} = (1/N_c) delta_{ad} delta_{bc}      (B.1)
-```
+   ```text
+   C_pert = 1/6,
+   C_strong = 1/9.
+   ```
 
-This is an exact algebraic identity, verified numerically in Block 7a of
-the runner (Haar-sample SU(3), 100,000 samples, max Monte Carlo error
-< 2%).
+   Their difference records that the two expansions are different finite
+   coefficient calculations. It does not decide which expansion governs a
+   physical surface.
 
-Applying (B.1) to the fermion bilinears at the same link in the strong-
-coupling leading-order character expansion:
+4. On the `Q_L = (2,3)` scalar-singlet block, the unit-normalized singlet has
+   uniform component overlap
 
-```
-    integral dU_mu [psi-bar U psi at x, x+mu] * [psi-bar U^dag psi at x+mu, x]
-        = (1/N_c) * (psi-bar psi)(x) * (psi-bar psi)(x+mu)            (B.2)
-```
+   ```text
+   1/sqrt(N_c N_iso) = 1/sqrt(6).
+   ```
 
-Fierz the resulting delta structure into color channels (same Fierz
-(A.2)):
+5. Historical NLO and canonical-surface arithmetic from the shared Ward runner
+   are context only. They do not certify an expansion-domain theorem or a
+   precision claim for this row.
 
-```
-    C_strong = 1 / N_c^2                                              (B.3)
-```
+## Explicit Non-Claims
 
-For N_c = 3: `C_strong = 1/9`.
+This row does not select `C_pert` over `C_strong` as the governing coefficient
+on the canonical tadpole-improved surface.
 
-## Why perturbative governs at the canonical surface
+This row does not prove perturbative convergence or strong-coupling
+non-convergence for the framework surface.
 
-The two coefficients differ:
-- `C_pert = 1/(2 N_c) = 1/6` at N_c = 3
-- `C_strong = 1/N_c^2 = 1/9` at N_c = 3
+This row does not derive the plaquette value, `u_0`, `alpha_LM`, `g_bare`,
+staggered-Dirac realization, shared tadpole transport, or the full top-Yukawa
+readout.
 
-Both are leading-order results in DIFFERENT expansions:
-- Perturbative expansion: in `alpha_LM`
-- Strong-coupling expansion: in the character coefficients of the
-  UNIMPROVED Wilson action
+This row does not promote `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`; it is a
+bounded coefficient support/comparison note.
 
-On the **tadpole-improved canonical surface**
-([MINIMAL_AXIOMS_2026-04-11.md:18-20](MINIMAL_AXIOMS_2026-04-11.md)):
+## Proof Sketch
 
-```
-    alpha_LM = alpha_bare / u_0 = 0.0907                              (C.1)
+The perturbative coefficient is an immediate component of the SU(`N_c`) Fierz
+identity. The primary runner constructs the Gell-Mann generators for `N_c=3`,
+verifies the normalization and all index entries of the Fierz identity, and
+extracts the color-singlet coefficient `1/(2 N_c)`.
+
+The strong-coupling coefficient is the leading one-link Haar contraction. The
+primary runner samples SU(3) Haar matrices as a numerical witness for the
+exact contraction and records the algebraic result `1/N_c^2`.
+
+The `H_unit` overlap is finite-dimensional Hilbert-space algebra. The
+unit-norm singlet on a six-dimensional `Q_L` block has each diagonal basis
+component equal to `1/sqrt(6)`, and the runner checks all six components.
+
+## Command
+
+```bash
+python3 scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py
 ```
 
-This is small (`<< 1`), so the perturbative expansion is convergent.
-Optimal truncation of the asymptotic series is at
-`n_opt ~ pi / alpha_LM ~ 35` loops — far beyond the 1-loop and 2-loop
-truncations used in the main theorem.
+## Future Bridge Needed
 
-The unimproved Wilson action at `beta = 6` has character-expansion
-coefficient ratios `c_1/c_0 ~ O(0.4)` (from Bessel function ratios at
-SU(3) moderate beta). This is NOT small, so the strong-coupling
-expansion does NOT converge rapidly at beta = 6.
-
-The tadpole improvement `U = u_0 V` is precisely the re-organization of
-the lattice partition function that moves the dominant nonperturbative
-contribution (mean-field tadpole) into `u_0`, leaving a convergent
-perturbative series at the vertex level. On this surface, the
-perturbative leading-order coefficient `1/(2 N_c) = 1/6` is the
-dominant 4-fermion structure; the strong-coupling `1/N_c^2 = 1/9` is
-NOT the correct coefficient because its expansion does not converge on
-the canonical surface.
-
-**Conclusion**: on the framework's retained canonical plaquette/u_0
-surface, the UV 4-fermion coefficient is `g_s^2 / (2 N_c)` (the
-tadpole-improved perturbative value), with 1-loop correction
-`alpha_LM/pi = 2.9%` and 2-loop `(alpha_LM/pi)^2 = 0.08%`.
-
-The strong-coupling `1/N_c^2` value is documented here as an
-INDEPENDENT CROSS-CHECK calculation. Its numerical discrepancy with
-`1/(2 N_c)` is NOT a contradiction — it is a confirmation that
-different expansions give different results away from their respective
-domains of validity. The canonical surface selects the perturbative
-expansion.
-
-## Numerical values on the canonical surface
-
-Inputs (all retained):
-```
-    <P>       = 0.5934         (retained MC, YT_VERTEX_POWER_DERIVATION)
-    u_0       = <P>^(1/4)       = 0.87768138
-    alpha_bare = 1/(4 pi)        = 0.07957747
-    alpha_LM  = alpha_bare / u_0 = 0.09066784
-    g_s(M_Pl) = sqrt(4 pi alpha_LM) = 1.06741071
-```
-
-Derived:
-```
-    C_pert  (perturbative)      = g_s^2 / (2 N_c) = g_s^2 / 6
-    y_t/g_s = 1 / sqrt(2 N_c)   = 1 / sqrt(6) = 0.40824829
-    y_t(M_Pl)                   = g_s(M_Pl) / sqrt(6) = 0.43576860
-```
-
-## NLO corrections (OPEN; support-only; not part of authority theorem)
-
-The authority theorem in `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`
-states ONLY the exact tree-level 1PI matching identity
-`y_t_bare = g_bare / sqrt(6)`. It makes no precision claim.
-
-This section documents perturbative corrections for reference; the
-status of these is SUPPORT-ONLY and the corrections remain OPEN for
-any downstream quantitative use. In particular:
-
-**Perturbative 1-loop vertex correction (derived):**
-```
-    C_F = (N_c^2 - 1) / (2 N_c) = 4/3 for SU(3)
-    delta_PT = alpha_LM * C_F / (2 pi) = 1.92%
-```
-This is the magnitude of the 1-loop vertex correction on the tadpole-
-improved PT surface (standard vertex-correction formula, retained in
-Block 9 of the runner).
-
-**Higher-order and topology-dependent corrections (OPEN):**
-- NNLO perturbative `(alpha_LM * C_F / pi)^2` enters at ~0.15%
-- Non-planar topology corrections at NNLO `(alpha_LM*C_F/pi)^2 / N_c^2`
-  at ~0.017%
-- Further higher-order corrections not worked out here
-
-These NLO and higher-order statements are NOT part of the authority
-theorem's certification. Any downstream package that reuses the
-theorem's exact algebraic identity `y_t_bare = g_bare / sqrt(6)` and
-wants a quantitative precision claim must carry its own systematic
-(e.g., by citing the 3% Yukawa-lane budget at
-[MINIMAL_AXIOMS_2026-04-11.md:68]) or leave the systematic OPEN.
-
-The exact subtheorem can be unbounded even if the full Yukawa / top
-lane carries a quantitative systematic elsewhere.
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [plaquette_self_consistency_note](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-- [minimal_axioms](MINIMAL_AXIOMS_2026-05-20.md)
+To recover the stronger governing-coefficient statement, a separate theorem
+would need to prove the expansion-domain/selector surface: why the retained
+framework inputs put the relevant coefficient in the tadpole-improved
+perturbative domain rather than the strong-coupling character domain, with the
+plaquette/`u_0`, `g_bare`, staggered-Dirac, and shared tadpole-transport
+dependencies explicitly closed or admitted.

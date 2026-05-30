@@ -1,10 +1,47 @@
-# Flavor — no native latitude-quantizer (4 mechanisms), and a positive lead: r=1/2 as the reflection-positivity self-dual point
+# Flavor — no native latitude-quantizer (4 mechanisms); the RP "self-dual" lead is REFUTED (circular); reframed to the operator-algebra trace-vs-center question
 
 **Date:** 2026-05-30
-**Claim type:** bounded negative (4 refuted mechanisms) + one positive frontier lead (not a claim).
+**Claim type:** bounded negative (4 refuted mechanisms) + one frontier lead **subsequently REFUTED by a 20-physicist panel** + the surviving reframe.
 **Status authority:** independent audit lane only; this note sets source metadata only.
-**Runner:** `scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py` (SCORECARD PASS=5).
-**Source:** 11-agent build `wf_39571698` (map → 4 mechanisms → adversarial verify → synthesis).
+**Runner:** `scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py`.
+**Source:** 11-agent build `wf_39571698`; refutation by 20-physicist panel + 4 meta-exercises `wf_9e9b766e`.
+
+> ## ⚠️ CORRECTION (2026-05-30, panel `wf_9e9b766e`) — the RP "self-dual" lead below is REFUTED as CIRCULAR.
+> A 20-physicist panel (20/20 circular, 0 substantive; all 4 meta-exercises refute) found three
+> independent disqualifiers:
+> 1. **Underdetermined.** The involutions swapping the two positivity edges form a one-parameter
+>    Möbius family whose fixed points sweep a continuum (r = 1/4, **1/2**, 9/16, 1, …). r=1/2 is
+>    selected *only* by the multiplicative inversion — i.e. by choosing `log|b|` as coordinate, which
+>    **is** re-importing the block-count measure. No canonical structure forces the multiplicative law.
+> 2. **Sign error.** The two RP edges sit at **opposite signs of `b`** (singlet-null at `b=−a/2`,
+>    doublet-null at `b=+a`), not at `|b|=a/2` and `|b|=a`. The `|b|`-inversion only "swaps" them by
+>    discarding the sign of `b` — which is the physical parity / conjugation order parameter (δ=arg b).
+>    On the signed line the multiplicative involution has no real fixed point in the window.
+> 3. **Arithmetic bug.** This note's original claim "arithmetic midpoint → r=1/16" is wrong: the
+>    arithmetic midpoint of the edge *magnitudes* (3a/4) gives **r=9/16**; r=1/16 is the signed-affine
+>    fixed point (b=a/4), a different object. (A mis-derived load-bearing number is itself a tell.)
+> 4. **No native generator (Q2: 17/20 no).** A singlet↔doublet swap must intertwine a dim-1 with a
+>    dim-2 irrep — Schur forbids it; every native involution is C₃-equivariant hence sector-preserving.
+>    The Tomita-Takesaki modular self-dual point is `Δ=1 ⇒ a+2b=a−b ⇒ b=0 ⇒ r=0` (the democratic
+>    point, not 1/2). Charge conjugation fixes the singlet and acts only on δ=arg(b), not on r.
+> 5. **Wrong-escape-via-citation** (lit-disambiguator): genuine self-dual points (Kramers-Wannier
+>    `sinh2K·sinh2K*=1`; Montonen-Olive `τ→−1/τ`) are inversion fixed points of a true duality of ONE
+>    theory — never the geometric mean of two stability edges of a single spectrum. The names were
+>    borrowed without the mechanism.
+>
+> **SURVIVING REFRAME (operator-algebra, panel #2, the genuine next path).** The real dichotomy is
+> not "self-dual vs not" but *which functional on `A=ℝ[Z₃]=ℝ⊕ℂ`*: **r=1 is the unique faithful TRACE
+> on the full algebra** (Plancherel/dimension, weights 1:2); **r=1/2 is the symmetric STATE on the
+> abelian CENTER `Z(A)`** (equal weight per minimal central idempotent, 1:1), which is provably
+> **non-tracial**. So the physics question is decidable, not tautological: do A1+A2 localize mass
+> generation to the C₃-isotypic *labels* (the center → r=1/2) or to the *matrix* d.o.f. (the full
+> algebra trace → r=1)? See the companion build for the traciality + Jeffreys/Fisher tests.
+> A genuinely new structural fact also recorded (panel #17): `H=aI+b(J−I)` is HS-orthogonal
+> (`Tr(I(J−I))=0`), so `Tr(H²)=3a²+6b²` with no cross term, and the equal split `3a²=6b² ⟺ r=1/2`
+> exactly — a conjugation-invariant Frobenius/heat-trace statement (the "why balance scalar vs
+> traceless parts" Seeley-DeWitt question), sitting *between* the two measures.
+> Two special-point escapes were closed: the moduli cross-ratio at r=1/2 is `4+3√2` (generic, non-CM);
+> the genuine Z₃-Potts self-dual coupling lands at `r≈0.134`, not 1/2.
 
 ## Question
 Does any **native** structure quantize the coin/operator latitude to `cos²θ=2/3`, i.e. force

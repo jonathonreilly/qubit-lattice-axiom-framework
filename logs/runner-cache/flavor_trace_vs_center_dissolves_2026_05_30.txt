@@ -1,0 +1,16 @@
+[PASS] D1 signed/Hermitian (doublet mult 2 = trace): Q=1/3+(2/3)r exact; Q=2/3<=>r=1/2
+       Q=(a**2 + 2*b**2)/(3*a**2); root r=[1/2]
+[PASS] D2 eigenvalue-as-mass readout: Q=2/3 at r~0.916 (clean 1/2 needs signed readout)
+       r=0.9161
+[PASS] D3 center/block-count w1=1: Q=1/3+(1/3)r -> Q=2/3 at r=1 (panel MAP inverted)
+       center reading gives r=1, not 1/2
+[PASS] D4 principled tests miss r=1/2: Fisher->0.0147, APS gap->1, heat-extremize->0/1
+       classical Fisher r=0.0147=17/2-6sqrt2; APS doublet gap closes at r=1; r=1/2 only via imposed 3a^2=6b^2
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: trace-vs-center fork INVERTED & largely DISSOLVED. The empirical Koide observable
+is TRACIAL (doublet counted with its real multiplicity 2); on it Q=1/3+(2/3)r is exact and
+Q=2/3 <=> r=1/2 (standard). No non-tracial center-state is needed or physical. NO principled
+native test forces r=1/2 (Fisher 0.0147, APS 1, heat-extremize 0/1); r=1/2 = FREE Fourier
+modulus matched to data. Sharpened residual: the SIGNED/Hermitian (H=iD Dirac) readout class
+makes Q=1/3+(2/3)r exact (native); the MODULUS r=|b|^2/a^2 itself stays unforced.

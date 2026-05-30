@@ -1,0 +1,7 @@
+S3-commutant (native operator space) dimension = 2  (Schur expects 2)
+  commutant basis 0: [M,Gamma_chi]=0 -> True;  {M,Gamma_chi}=0 -> False
+  commutant basis 1: [M,Gamma_chi]=0 -> True;  {M,Gamma_chi}=0 -> False
+
+  any native operator anticommutes with Gamma_chi? False
+  => the gap (native C3-non-equivariant anticommutant) is EMPTY; no-go AIRTIGHT.
+  THREAD 1 CLOSED: no native OPERATOR escape to the chiral import.

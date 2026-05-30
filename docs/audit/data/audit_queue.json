@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 249,
-    "high": 300,
+    "high": 299,
     "leaf": 353,
     "medium": 312
   },
@@ -7158,28 +7158,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "newton_law_derived_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.022,
-      "note_path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/newton_law_potential_kernel_scope_check.py",
-      "transitive_descendants": 64
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "broad_gravity_derivation_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -7197,6 +7175,31 @@
       "ready": true,
       "runner_path": "scripts/broad_gravity_signature_algebra_scope_check.py",
       "transitive_descendants": 57
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "grav_decoherence_derived_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "newton_law_derived_note",
+        "gravity_full_self_consistency_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.172,
+      "note_path": "docs/GRAV_DECOHERENCE_DERIVED_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_grav_decoherence_derived.py",
+      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -15239,31 +15242,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py",
-      "transitive_descendants": 50
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "grav_decoherence_derived_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "newton_law_derived_note",
-        "gravity_full_self_consistency_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.172,
-      "note_path": "docs/GRAV_DECOHERENCE_DERIVED_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_grav_decoherence_derived.py",
       "transitive_descendants": 50
     },
     {
@@ -36600,5 +36578,5 @@
     }
   ],
   "ready_count": 72,
-  "total_pending": 1214
+  "total_pending": 1213
 }

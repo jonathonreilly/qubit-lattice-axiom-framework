@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 169 |
 | **retained_no_go** | 175 |
-| **retained_bounded** | 612 |
+| **retained_bounded** | 613 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1212 |
+| unaudited | 1211 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 947 |
+| `audited_clean` | 948 |
 | `audited_conditional` | 16 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1450 |
+| `unaudited` | 1449 |
 
 | claim_type | count |
 |---|---:|
@@ -682,6 +682,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `newton_law_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
@@ -9690,6 +9691,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md`
   - `MATTER_INERTIAL_CLOSURE_NOTE.md`
+- **auditor confidence:** high
+
+### `newton_law_derived_note`
+
+- **Note:** [`NEWTON_LAW_DERIVED_NOTE.md`](../../docs/NEWTON_LAW_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the supplied scalar kernel G(r)=1/(4 pi r) and formal source-linearity phi=M G, the note proves the inverse-square scalar gradient magnitude |grad phi|=M/(4 pi r^2), while making no physical force-law claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-234109-85550c9b-newton_law_derived_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For phi(r)=M/(4 pi r), the radial derivative is d phi/dr = -M/(4 pi r^2), so |grad phi| = M/(4 pi r^2).  _(class `A`)_
+- **chain closes:** True — The restricted claim closes as algebra/calculus from the explicitly supplied kernel and formal source-linearity. The runner source independently differentiates the stated expression with SymPy and also checks that the note excludes the physical force-law bridge.
+- **rationale:** The load-bearing step is a direct algebraic derivative of the supplied 1/r kernel, not a numerical match, external comparison, or physical response bridge. The source note explicitly narrows the claim away from deriving the Z^3 Green-kernel asymptotic, test-mass coupling, product law, and Newton force law. The runner source performs the same symbolic checks rather than merely printing constants.
 - **auditor confidence:** high
 
 ### `newton_persistent_pattern_control_note_2026-04-11`

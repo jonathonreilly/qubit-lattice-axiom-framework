@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-Exact order-beta^6 connected coefficient of the SU(3) Wilson single-plaquette
-strong-coupling series, by extending the cited mixed-cumulant connected-cluster
-enumeration one order. The optional maxorder=7 path checks the order-beta^7
-support certificate and attempts the heavier four-shell multiplicity sum.
+Exact order-beta^6 and order-beta^7 connected coefficients of the SU(3) Wilson
+single-plaquette strong-coupling series, by extending the mixed-cumulant
+connected-cluster enumeration.
 
 Series object (cited anchor, gauge_vacuum_plaquette_mixed_cumulant_audit_note):
     P_full(beta) = P_1plaq(beta) + Delta(beta),   Delta(beta) = sum_{n>=5} d_n beta^n,
     d_5 = 4/18^5 = 1/472392     (four closed cube shells through the marked plaquette).
-This runner computes d_6 EXACTLY and reproduces d_5.
+This runner computes d_6 (and d_7) EXACTLY and reproduces d_5.
 
 METHOD (exact connected-cumulant linked-cluster expansion)
 ----------------------------------------------------------
@@ -41,6 +40,26 @@ each is covered by >=1 distinct action face), with a cheap GF(3) link-balance
 pre-filter (necessary condition: chi_{p0} in the GF(3) span of the action-face
 charge vectors). Final coefficients are exact rationals.
 
+BEATING THE ORDER-7 WALL (optimized Fraction engine, Section 4b)
+----------------------------------------------------------------
+The order-7 cube-shell multiplicity cumulants are 8-plaquette objects whose
+moments reach single links with up to four fundamental + four conjugate
+factors; with the sympy engine a single such moment (2^8 orientations) takes
+~270 s -- the >30 min wall cycle 1 hit. The optimized engine removes it with NO
+change to the maths (it reproduces the sympy d_5 AND d_6 EXACTLY, V4b): the
+per-link integral is built SPARSELY from the invariant-basis supports (not the
+3^(2(p+q)) dense grid -- 3^16 ~ 4.3e7 vs <= 639^2 nonzeros for a (4,4) link),
+the contraction uses pure-int Fraction arithmetic with a min-degree variable-
+elimination order, and an unbalanced (no-singlet) link zeroes the word early.
+The worst 8-plaquette moment drops to ~0.5 s; exact d_7 is a ~2 min computation.
+
+RESULT d_7 = 5/17006112 (exact), so d_7/d_6 = 5/21 -- not 7/12 = d_6/d_5. The
+specific single-ratio tadpole/geometric ansatz is falsified at this order: the
+exact d_7 misses the geometric prediction (7/12)*d_6 = 49/68024448 by ~59%
+against the prediction, far outside the harness' 5% support window. This is an
+independent computation of d_7, compared after the fact -- never fitted toward
+the prediction.
+
 VALIDATION (executed asserts, PASS/FAIL scorecard at the bottom)
   V0  single-link integrator reproduces closed forms:
       int U Ubar = delta delta / 3 ;  int U U U = eps eps / 6 ;
@@ -51,17 +70,19 @@ VALIDATION (executed asserts, PASS/FAIL scorecard at the bottom)
   V3  order-6 distinct supports: zero size-6 distinct supports are GF(3)-closable
       => d_6 comes ONLY from the four cube shells via order-6 multiplicity.
   V4  d_6 exact value, and the clean per-shell rational ratio d_6/d_5.
-  V5  (if reached) order-beta^7 support certificate plus optional exact d_7.
-  V6  high-precision SU(3) Haar Monte-Carlo cross-check of O(1) single-link
-      quantities (a CHECK, not a derivation input).
+  V4b two-engine agreement: the optimized Fraction engine reproduces the sympy
+      d_5 and d_6 EXACTLY (validates the SU(3) link-integral formulas).
+  V5  d_7 = 5/17006112 exact (optimized engine), four identical cube shells.
+  V5b tadpole/geometric verdict: d_7/d_6 = 5/21 != 7/12 => ansatz falsified.
+  V6  high-precision SU(3) Haar Monte-Carlo cross-check of the single-link
+      integrator + Fraction-vs-sympy O(1) moment agreement (CHECKS, not inputs).
 
-This is a bounded result: an exact strong-coupling series coefficient. It does
-NOT close beta=6. The double obstruction (rho_{p,q}(6) under-determined by
-local data + treewidth-29 infeasible) is recorded in
-docs/BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md.
+This is a bounded result: exact strong-coupling series coefficients plus a
+bounded falsification of one geometric-ratio ansatz. It does NOT close beta=6.
 
 Run:  python3 scripts/frontier_beta6_connected_coefficient_2026_05_30.py [maxorder]
-      (maxorder defaults to 6; pass 7 to also compute d_7 -- heavier.)
+      (maxorder defaults to 6; pass 7 to also compute the exact d_7 -- ~2 min
+       with the optimized engine.)
 """
 from __future__ import annotations
 
@@ -71,6 +92,7 @@ import math
 import sys
 import time
 from collections import Counter
+from fractions import Fraction
 
 import numpy as np
 import sympy as sp
@@ -329,6 +351,226 @@ def joint_cumulant(plaqs):
                 break
         total += coeff * prod
     return total
+
+# ===========================================================================
+# 4b. OPTIMIZED engine (Fraction): the same exact moment/cumulant maths as the
+#     sympy engine above, rewritten to BEAT the order-7 contraction wall.
+# ---------------------------------------------------------------------------
+# The order-7 cube-shell multiplicity cumulants are 8-plaquette objects whose
+# moments reach single links carrying up to four fundamental + four conjugate
+# factors. With the sympy engine, a single such 8-plaquette moment (summed over
+# its 2^8 orientations) takes ~270 s -- the >30 min wall cycle 1 hit. Three exact
+# optimizations remove it, with NO change to the maths (validated below by
+# reproducing the sympy d_5 and d_6 EXACTLY before using the optimized engine at
+# order 7):
+#   (1) the per-link integral tensor is built SPARSELY from the invariant-basis
+#       supports (outer products e_a (x) G^{-1}_{ab} (x) e_b over only the
+#       nonzero basis index-tuples), NOT by scanning the 3^(2(p+q)) dense index
+#       grid -- e.g. for a (4,4) link the dense grid is 3^16 ~ 4.3e7 slots while
+#       the tensor has <= 639^2 ~ 4e5 nonzeros, built from a 639-tuple support;
+#   (2) the inner contraction uses pure-int Fraction arithmetic (no sympy object
+#       churn in the hot loop) and a min-degree VARIABLE-ELIMINATION order over
+#       the plaquette-corner indices, keeping every intermediate sparse;
+#   (3) an UNBALANCED link (no SU(3) singlet, projector basis empty) zeroes the
+#       whole word immediately, pruning most of the 2^n orientation terms.
+# The invariant basis + exact Gram inverse are REUSED from the validated
+# projector() above; only the contraction is re-engineered. Result: the worst
+# 8-plaquette moment drops from ~270 s to ~0.5 s, so the full exact d_7 is a
+# ~2 min computation instead of an >30 min wall.
+
+@functools.lru_cache(maxsize=None)
+def link_tensor_frac(p, q):
+    """Exact SU(3) single-link integral as a SPARSE Fraction dict
+    {(rowtuple, coltuple): Fraction}, rowtuple/coltuple each length p+q (the U
+    indices then the Ubar indices). Built from the same invariant basis + Gram
+    inverse as projector(p, q), but only over the basis' nonzero supports."""
+    basis, Ginv = projector(p, q)
+    if not basis:
+        return {}
+    nb = len(basis)
+    G = [[Fraction(int(Ginv[a, b].p), int(Ginv[a, b].q)) for b in range(nb)]
+         for a in range(nb)]
+    B = [{k: Fraction(int(v)) for k, v in t.items()} for t in basis]
+    T = {}
+    for a in range(nb):
+        Ba = B[a]
+        for b in range(nb):
+            g = G[a][b]
+            if g == 0:
+                continue
+            Bb = B[b]
+            for ri, va in Ba.items():
+                vag = va * g
+                if vag == 0:
+                    continue
+                for ci, vb in Bb.items():
+                    key = (ri, ci)
+                    cur = T.get(key)
+                    T[key] = (cur + vag * vb) if cur is not None else (vag * vb)
+    return {k: v for k, v in T.items() if v != 0}
+
+def _join_factors(va, da, vb, db):
+    """Sparse join of two Fraction factors (var-lists va,vb; value dicts da,db),
+    summing the product over shared variables' matching assignments."""
+    a_pos = {v: k for k, v in enumerate(va)}
+    b_pos = {v: k for k, v in enumerate(vb)}
+    shared = [v for v in vb if v in a_pos]
+    new_only = [v for v in vb if v not in a_pos]
+    sa = [a_pos[v] for v in shared]
+    sb = [b_pos[v] for v in shared]
+    no = [b_pos[v] for v in new_only]
+    buckets = {}
+    for kb, vbval in db.items():
+        skey = tuple(kb[j] for j in sb)
+        buckets.setdefault(skey, []).append((tuple(kb[j] for j in no), vbval))
+    out = {}
+    for ka, vaval in da.items():
+        lst = buckets.get(tuple(ka[j] for j in sa))
+        if not lst:
+            continue
+        for nk, vbval in lst:
+            key = ka + nk
+            cur = out.get(key)
+            out[key] = (cur + vaval * vbval) if cur is not None else (vaval * vbval)
+    return list(va) + list(new_only), out
+
+def _contract_frac(factors):
+    """Variable-elimination contraction of sparse Fraction factors. Eliminates
+    corner indices in increasing factor-degree order to keep intermediates
+    small. Closed traces => every index is summed; returns the scalar Fraction."""
+    if not factors:
+        return Fraction(1)
+    var_factors = {}
+    active = {}
+    for i, (vs, d) in enumerate(factors):
+        active[i] = (tuple(vs), d)
+        for v in vs:
+            var_factors.setdefault(v, set()).add(i)
+    nextid = len(factors)
+    remaining = set(var_factors)
+    while remaining:
+        v = min(remaining, key=lambda x: len(var_factors.get(x, ())))
+        fids = [i for i in var_factors.get(v, ()) if i in active]
+        if not fids:
+            remaining.discard(v); continue
+        acc_vars, acc = [], {(): Fraction(1)}
+        for i in fids:
+            fv, fd = active[i]
+            acc_vars, acc = _join_factors(acc_vars, acc, list(fv), fd)
+            del active[i]
+        vp = acc_vars.index(v)
+        new_vars = tuple(acc_vars[:vp] + acc_vars[vp + 1:])
+        res = {}
+        for key, val in acc.items():
+            nk = key[:vp] + key[vp + 1:]
+            cur = res.get(nk)
+            res[nk] = (cur + val) if cur is not None else val
+        res = {k: x for k, x in res.items() if x != 0}
+        nid = nextid; nextid += 1
+        active[nid] = (new_vars, res)
+        for w in new_vars:
+            var_factors.setdefault(w, set()).add(nid)
+        remaining.discard(v)
+    total = Fraction(1)
+    for _, (vs, d) in active.items():
+        total *= (sum(d.values()) if vs else d.get((), Fraction(0)))
+    return total
+
+def _integrate_word_frac(plaqs, orients):
+    """Fraction-valued exact integral of prod_p (oriented trace); same semantics
+    as the sympy _integrate_word, sparse + variable-elimination + early zero on
+    any unbalanced (no-singlet) link."""
+    counter = [0]
+    def new_idx():
+        counter[0] += 1; return counter[0] - 1
+    link_facts = {}
+    for p, o in zip(plaqs, orients):
+        dl = directed_links(p)
+        if o == -1:
+            dl = [(L, -s) for (L, s) in reversed(dl)]
+        vs = [new_idx() for _ in range(4)]
+        for k in range(4):
+            (L, s) = dl[k]
+            rowv, colv = vs[k], vs[(k + 1) % 4]
+            if s == +1:
+                link_facts.setdefault(L, []).append(('U', rowv, colv))
+            else:
+                link_facts.setdefault(L, []).append(('Ub', colv, rowv))
+    factors = []
+    for L, facts in link_facts.items():
+        Uf = [f for f in facts if f[0] == 'U']
+        Ubf = [f for f in facts if f[0] == 'Ub']
+        T = link_tensor_frac(len(Uf), len(Ubf))
+        if not T:
+            return Fraction(0)                      # unbalanced link -> integral 0
+        allvars = (tuple(f[1] for f in Uf) + tuple(f[1] for f in Ubf)
+                   + tuple(f[2] for f in Uf) + tuple(f[2] for f in Ubf))
+        d = {ri + ci: v for (ri, ci), v in T.items()}
+        factors.append((allvars, d))
+    return _contract_frac(factors)
+
+@functools.lru_cache(maxsize=None)
+def _moment_frac_key(key):
+    multiset = list(key)
+    nplaq = len(multiset)
+    total = Fraction(0)
+    for orients in itertools.product((+1, -1), repeat=nplaq):
+        total += _integrate_word_frac(multiset, orients)
+    return total * Fraction(1, 6) ** nplaq
+
+def moment_frac(multiset):
+    """Exact <prod_p X_p>_0 as a Fraction (optimized engine)."""
+    return _moment_frac_key(tuple(sorted(multiset)))
+
+def joint_cumulant_frac(plaqs):
+    """Exact joint connected cumulant (Fraction) via set-partition Moebius."""
+    m = len(plaqs)
+    total = Fraction(0)
+    for pi in _set_partitions(m):
+        k = len(pi)
+        coeff = Fraction((-1) ** (k - 1) * math.factorial(k - 1))
+        prod = Fraction(1)
+        ok = True
+        for B in pi:
+            mm = moment_frac([plaqs[i] for i in B])
+            if mm == 0:
+                ok = False; break
+            prod *= mm
+        if ok:
+            total += coeff * prod
+    return total
+
+def support_contrib_frac(S, n):
+    """Optimized (Fraction) support+multiplicity contribution to d_n."""
+    Slist = list(S)
+    a = len(Slist)
+    total = Fraction(0)
+    for m_p0, m_action in _multiplicity_vectors(a, n):
+        plaqs = [P0] + [P0] * m_p0
+        for s, ms in zip(Slist, m_action):
+            plaqs += [s] * ms
+        kap = joint_cumulant_frac(plaqs)
+        if kap == 0:
+            continue
+        denom = math.factorial(m_p0)
+        for ms in m_action:
+            denom *= math.factorial(ms)
+        total += kap / denom
+    return total
+
+def compute_dn_frac(n, contributing_by_size):
+    """d_n via the optimized Fraction engine; returns (sympy.Rational, per_support)."""
+    total = Fraction(0)
+    per_support = []
+    for size in sorted(contributing_by_size):
+        if size > n:
+            continue
+        for S in contributing_by_size[size]:
+            c = support_contrib_frac(tuple(sorted(S)), n)
+            if c != 0:
+                total += c
+                per_support.append((tuple(sorted(S)), c))
+    return sp.Rational(total.numerator, total.denominator), per_support
 
 # ===========================================================================
 # 5. Connected leaf-free support enumeration + GF(3) closability pre-filter.
@@ -774,9 +1016,20 @@ def main():
               sp.nsimplify(d6 / d5) == sp.Rational(7, 12),
               f"d_6/d_5 = {sp.nsimplify(d6/d5)}")
 
-    # ----- V5: d_7 (extra order) -----
+        # ----- V4b: two-engine agreement on d_5, d_6 (validates the optimized
+        #            Fraction engine against the sympy engine before d_7) -----
+        print("\nV4b. two-engine agreement: optimized Fraction engine vs sympy engine")
+        d5f, _ = compute_dn_frac(5, found)
+        d6f, _ = compute_dn_frac(6, found)
+        check("Fraction engine reproduces sympy d_5 = 1/472392 EXACTLY",
+              d5f == d5 == sp.Rational(1, 472392), f"Fraction d_5 = {d5f}")
+        check("Fraction engine reproduces sympy d_6 = 7/5668704 EXACTLY "
+              "(SU(3) link-integral formulas validated against the order-6 value)",
+              d6f == d6 == sp.Rational(7, 5668704), f"Fraction d_6 = {d6f}")
+
+    # ----- V5: d_7 (extra order) -- the optimized exact computation -----
     if maxorder >= 7:
-        print("\nV5. order-beta^7 coefficient (extra order)")
+        print("\nV5. order-beta^7 coefficient (NEW exact result, optimized engine)")
         # 5b. GF(3) cycle-space certificate: no size-6/7 distinct support is closable.
         cdim, ncubes, span, ncubes_p0, weights = cycle_space_certificate(2)
         print(f"  GF(3) cycle-space (dist<=2 patch): dim={cdim}, elementary cubes={ncubes}, "
@@ -789,14 +1042,45 @@ def main():
               f"min 2-cycle weight through p0 = {min(weights) if weights else None}; "
               f"=> only the four cube shells contribute through order 7")
         # d_7 = the four cube shells via order-7 multiplicity (distinct-support side
-        # certified empty above). Computed from the size-5 closable supports.
-        print("  computing d_7 from the four cube shells (order-7 multiplicity) ...")
-        d7, c7 = compute_dn(7, cube_shells_size5(found))
+        # certified empty above). Computed with the OPTIMIZED Fraction engine that
+        # beats the 3^(2k) contraction wall (worst 8-plaquette moment ~0.5s vs the
+        # sympy engine's ~270s). NOT fitted to any prediction -- computed from the
+        # shell multiplicity + exact SU(3) link integrals, THEN compared (V5b).
+        print("  computing d_7 from the four cube shells (order-7 multiplicity), "
+              "optimized Fraction engine ...")
+        td7 = time.time()
+        d7, c7 = compute_dn_frac(7, cube_shells_size5(found))
         results[7] = d7
         check("d_7 is an exact rational, four cube shells (per-shell identical)",
               d7.is_Rational and len(c7) == 4 and len(set(v for _, v in c7)) == 1,
-              f"d_7 = {d7} = {float(d7):.6e}; d_7/d_6 = {sp.nsimplify(d7/results[6])}; "
-              f"per-shell = {c7[0][1] if c7 else None}")
+              f"d_7 = {d7} = {float(d7):.6e} (computed in {time.time()-td7:.1f}s); "
+              f"per-shell = {c7[0][1] if c7 else None} (4 identical shells)")
+        ratio76 = sp.nsimplify(d7 / results[6])
+        check("d_7 exact value = 5/17006112",
+              d7 == sp.Rational(5, 17006112),
+              f"d_7 = {d7}; d_7/d_6 = {ratio76} = {float(ratio76):.6f} "
+              f"(per-shell d_7 = 5/68024448)")
+
+        # ----- V5b: TADPOLE / geometric SUPPORT-or-FALSIFY verdict -----
+        # The tadpole/geometric ansatz (a single nearest boosting pole) predicts a
+        # CONSTANT per-order ratio: d_7^pred = (d_6/d_5) * d_6 = (7/12) * d_6.
+        # We computed d_7 INDEPENDENTLY above; now compare.
+        print("\nV5b. tadpole / geometric ansatz verdict (independent d_7 vs prediction)")
+        d7_pred = sp.Rational(7, 12) * results[6]      # = 49/68024448
+        rel = abs((d7 - d7_pred) / d7_pred)
+        ratio65 = sp.nsimplify(results[6] / results[5])
+        print(f"  d_6/d_5 = {ratio65} ~ {float(ratio65):.6f}   (the ansatz's assumed ratio)")
+        print(f"  d_7/d_6 = {ratio76} ~ {float(ratio76):.6f}   (the ACTUAL next ratio)")
+        print(f"  d_7^pred = (7/12)*d_6 = {d7_pred} ~ {float(d7_pred):.6e}")
+        print(f"  d_7^exact            = {d7} ~ {float(d7):.6e}")
+        print(f"  relative miss = {float(rel):.4f} (harness support window = 0.05)")
+        supported = rel <= sp.Rational(1, 20)
+        check("bounded verdict: tadpole/geometric ansatz falsified at order 7 "
+              "(exact d_7 != (7/12)*d_6; per-order ratio is NOT constant)",
+              not supported,
+              f"d_7/d_6 = {ratio76} != d_6/d_5 = {ratio65}; the geometric prediction "
+              f"misses the exact d_7 by {float(rel)*100:.1f}% (>> 5%): this rejects "
+              f"the single-ratio geometric continuation pattern")
 
     # ----- V6: SU(3) Haar Monte-Carlo validation of the link integrator -----
     print("\nV6. SU(3) Haar Monte-Carlo validation of the exact integrator (CHECK, not input)")
@@ -822,22 +1106,34 @@ def main():
           abs(tr3 - 1) < 0.03, f"MC={complex(tr3)}")
     check("MC <|TrU|^4> = 2 (two singlets in 3^2 x 3bar^2)",
           abs(tr4 - 2) < 0.05, f"MC={tr4.real:.4f}")
-    # also: the exact integrator must reproduce these O(1) values EXACTLY.
+    # also: BOTH integrators must reproduce these O(1) values EXACTLY.
     check("exact integrator: <X_p0^2>*36 = 2 (= <|TrU|^2> + <(TrU)^2>conj-cross)",
           moment([P0, P0]) * 36 == 2, f"36*<X_p0^2> = {moment([P0,P0])*36}")
+    check("optimized Fraction integrator agrees with sympy on <X_p0^2>, <X_p0^3>",
+          moment_frac([P0, P0]) == Fraction(1, 18)
+          and moment_frac([P0, P0, P0]) == Fraction(1, 108),
+          f"Fraction <X_p0^2> = {moment_frac([P0,P0])}, <X_p0^3> = {moment_frac([P0,P0,P0])}")
 
     # ----- summary -----
     print("\n" + "=" * 78)
     print("EXACT CONNECTED COEFFICIENTS OF Delta(beta) = P_full - P_1plaq:")
     for n in sorted(results):
         print(f"   d_{n} = {results[n]} = {float(results[n]):.8e}")
+    if 7 in results:
+        r65 = sp.nsimplify(results[6] / results[5])
+        r76 = sp.nsimplify(results[7] / results[6])
+        print(f"   per-order ratios: d_6/d_5 = {r65}, d_7/d_6 = {r76}  "
+              f"(NOT constant => no single geometric tail)")
     print("=" * 78)
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}   ({time.time()-t0:.1f}s)")
     print("=" * 78)
     print("This is an exact strong-coupling series coefficient (bounded result).")
-    print("It does NOT close beta=6. d_6 supplies the next tadpole/geometric")
-    print("predictive-test input; an independently reviewed exact d_7 is still")
-    print("needed to complete the SUPPORT/FALSIFY read-off.")
+    print("It does NOT close beta=6. The exact d_7 (optimized engine) falsifies")
+    print("the single-ratio tadpole/geometric ansatz")
+    print("(d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop")
+    print("{6:7/5668704, 7:5/17006112} into the harness")
+    print("scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py for the")
+    print("SUPPORT/FALSIFY scorecard line.")
     return 0 if FAIL == 0 else 1
 
 if __name__ == "__main__":

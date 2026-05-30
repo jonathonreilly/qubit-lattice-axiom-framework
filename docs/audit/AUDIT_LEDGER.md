@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1132 |
+| unaudited | 1131 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 941 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1368 |
+| `unaudited` | 1367 |
 
 | claim_type | count |
 |---|---:|
@@ -1130,6 +1130,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -15229,6 +15230,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Block normalization canonically fixes the invariant A1 core and scalar shift/shear block ratios, but it does not canonically section the E \oplus T1 complement; the residual ambiguity is the connected SO(3) complement orbit.  _(class `A`)_
 - **chain closes:** True — The note's limited support claim is a no-go about normalization data: invariant block norms, ratios, and sign choices do not select a canonical complement section. The runner corroborates this by showing A1 invariance, nontrivial complement SO(3) action, invariant shift/shear ratios, and nonzero normalized-orbit spread.
 - **rationale:** The claim is not that direct universal localization is finished, but that block normalization alone leaves a connected SO(3) complement ambiguity. That conclusion follows as exact algebra over the block decomposition and is supported by the current runner output: PASS=12, FAIL=0. No hidden physical comparator, numerical tuning, or symbol renaming is needed for this limited support/no-go statement.
+- **auditor confidence:** high
+
+### `universal_gr_complement_canonical_note`
+
+- **Note:** [`UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md`](../../docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audit of whether the restricted packet establishes that universal data canonically fix Pi_A1 and only an SO(3) complement orbit, not a canonical E plus T1 section.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-003214-f5dd7b51-universal_gr_complement_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note asserts that runner-verified universal-only structural facts establish the exact SO(3) orbit bundle and Pi_A1 as the strongest universal-data outputs, while no canonical E plus T1 section exists from current universal invariants.  _(class `A`)_
+- **chain closes:** False — The packet provides no cited authority, runner stdout, or runner source for the four structural checks. More importantly, the source note itself admits that the exhaustiveness/nonexistence step ruling out all current universal invariants as canonical section selectors is not supplied.
+- **rationale:** The bounded core may be algebraic in character, but the restricted packet does not contain the runner artifacts or independent derivation needed to verify it. The broader statement that SO(3) is the exact residual gauge surviving every current universal invariant still depends on an admitted missing bridge theorem. No cited retained authority closes that exhaustiveness step, and the displayed projector/candidate formulas are not independently checked within the packet.
 - **auditor confidence:** high
 
 ### `universal_gr_invariant_frame_obstruction_note`

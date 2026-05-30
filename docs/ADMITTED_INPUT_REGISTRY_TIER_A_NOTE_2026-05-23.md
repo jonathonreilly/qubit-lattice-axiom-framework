@@ -37,7 +37,7 @@ inputs (see "Rigor-pass refinement" below).
 |---|---|---|---|
 | **P1** | scalar observables are additive over independent subsystems ⇒ `W = log\|det(D+J)\|` | ~88 | `observable_principle_p1_bridge_{connes_nc_spectral, extensivity_primitive, jones_index_subfactor, locality_of_source_derivatives, tomita_gibbs_modular, structural_reframing}_..._2026-05-21` (6) |
 | **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
-| **S** | the single **unit reference** — `UNIT ≡ Planck` (`a^{-1} = M_Pl`): one dimensionful number fixing the lattice scale. Irreducible by dimensional analysis (a scale cannot come from the dimensionless `A_min`). *Whether this counts as an admitted empirical import or a framework-native unit declaration is deferred — see note below.* | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
+| **Scale** (was `S`) | the single **scale reference** — `a^{-1} = M_Pl` (the Planck scale): one dimensionful number that sets the physical scale, and thereby the units. Irreducible by dimensional analysis (a scale cannot come from the dimensionless `A_min`). *Whether this counts as an admitted empirical import or a framework-native unit declaration is deferred — see note below.* | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
 
 Notes:
@@ -60,7 +60,7 @@ Notes:
   attempts (`unaudited`, not retained no-gos, listed as *attempts*) target the
   **pattern**, not the names. Net: AC_φλ is *not* a discrete 6-way labeling
   choice; the irreducible content is "the δ-pattern + the species bridge."
-- **S — the single unit reference: `UNIT ≡ Planck` (`a^{-1} = M_Pl`).** Two
+- **Scale (was `S`, for "scale-setting") — the single scale reference: `a^{-1} = M_Pl` (the Planck scale).** Two
   things are distinct. (i) The *unit choice* (meters vs Planck units vs natural
   units) is vacuous — a pure convention, like the AC_φλ naming. (ii) The genuine
   content is the *one dimensionful number* fixing the physical scale of the
@@ -114,12 +114,12 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
 
 - **P1, θ, AC_φλ:** stand as genuine admitted inputs (P1 principle-grade; θ
   shared with the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
-- **S:** restated above as the single **unit reference** `UNIT ≡ Planck`
-  (`a^{-1} = M_Pl`) — irreducible by dimensional analysis, *taken not derived*,
-  with its classification (admitted empirical import vs framework-native unit
-  declaration) explicitly **deferred**. So the genuine-admitted-input count below
-  is "three dimensionless admissions (P1, θ, AC_φλ) **plus** one unit reference
-  (S, import-vs-native deferred)."
+- **Scale (was `S`):** restated above as the single **scale reference**
+  `a^{-1} = M_Pl` (the Planck scale) — irreducible by dimensional analysis,
+  *taken not derived*, with its classification (admitted empirical import vs
+  framework-native unit declaration) explicitly **deferred**. So the
+  genuine-admitted-input count below is "three dimensionless admissions (P1, θ,
+  AC_φλ) **plus** one scale reference (Scale, import-vs-native deferred)."
 - **Y₀, g₀:** vacuous rescaling conventions — **dropped** from the
   admitted-input count (a convention is not an input, just as a name is not).
 - **θ rigor check:** verified NOT derivable from the retained
@@ -130,11 +130,11 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
 
 Net stratified by character: **three dimensionless admissions** — AC_φλ
 (framework-specific physics), P1 (a mild principle), θ (an SM-shared problem) —
-**plus one dimensionful unit reference**, S = `UNIT ≡ Planck`, whose status as a
-counted import vs a framework-native unit declaration is **deferred**. The
-dimensionless three are the genuine open derivation work; S is the single
-scale-setting every physical theory takes, orthogonal to all of them (the Planck
-unit cannot supply any dimensionless number).
+**plus one dimensionful scale reference**, Scale = `a^{-1} = M_Pl` (the Planck
+scale), whose status as a counted import vs a framework-native unit declaration
+is **deferred**. The dimensionless three are the genuine open derivation work;
+Scale is the single scale-setting every physical theory takes, orthogonal to all
+of them (the Planck scale cannot supply any dimensionless number).
 
 ## Propagation wiring (audit-lane sidecar)
 

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1139 |
+| unaudited | 1140 |
 | meta | 237 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -65,11 +65,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1376 |
+| `unaudited` | 1377 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1145 |
+| `bounded_theorem` | 1146 |
 | `decoration` | 52 |
 | `meta` | 241 |
 | `no_go` | 260 |
@@ -81,15 +81,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 386 |
 | `high` | 506 |
 | `medium` | 607 |
-| `leaf` | 1020 |
+| `leaf` | 1021 |
 
 - **Retained pending chain closure:** 10
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2100
-- runners with (C) first-principles compute hits: 1023
+- runners classified: 2101
+- runners with (C) first-principles compute hits: 1024
 - runners with (D) external comparator hits: 628
 - decoration candidates (no C, no D): 357
 
@@ -114,7 +114,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 778 | 34.60 | `audited_clean` | **retained_bounded** |
 | 14 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 188 | 33.56 | `unaudited` | unaudited |
 | 15 | `three_generation_structure_note` | bounded_theorem | critical | 714 | 33.48 | `audited_clean` | **retained_bounded** |
-| 16 | `cpt_exact_note` | positive_theorem | critical | 932 | 33.37 | `audited_clean` | **retained** |
+| 16 | `cpt_exact_note` | positive_theorem | critical | 933 | 33.37 | `audited_clean` | **retained** |
 | 17 | `minimal_axioms_2026-04-11` | meta | critical | 985 | 32.95 | `unaudited` | meta |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 579 | 32.18 | `unaudited` | unaudited |
 | 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 937 | 31.87 | `audited_renaming` | ~~audited_renaming~~ |

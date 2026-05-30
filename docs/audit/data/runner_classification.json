@@ -8208,6 +8208,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py"
     },
+    "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py"
+    },
     "frontier_extension_lane_b_protects_lane_a_joint_composition_narrow_note_2026-05-17": {
       "assert_count": 1,
       "counts": {
@@ -32345,6 +32357,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_3d_correction_master_note_meta_narrowing_check.py": {
@@ -58243,12 +58270,12 @@
     "dominant_class_distribution": {
       "A": 268,
       "B": 296,
-      "C": 777,
+      "C": 778,
       "D": 315,
       "none": 444
     },
-    "runners_classified": 2100,
-    "runners_with_C": 1023,
+    "runners_classified": 2101,
+    "runners_with_C": 1024,
     "runners_with_D": 628
   }
 }

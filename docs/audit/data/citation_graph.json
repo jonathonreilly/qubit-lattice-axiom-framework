@@ -9913,6 +9913,10 @@
       "to": "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
     },
     {
+      "from": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+      "to": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+    },
+    {
       "from": "frontier_extension_lane_b_protects_lane_a_joint_composition_narrow_note_2026-05-17",
       "to": "frontier_extension_lane_opening_note_2026-04-25"
     },
@@ -55116,6 +55120,20 @@
       "runner_path": "scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py",
       "title": "Framework Bare Alpha Ratio Assumed-Input Identity Support Note"
     },
+    "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": {
+      "claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "31fe02c036b0851c45c0e8ac948fc8d5445b2434d54388e37e3e9a0b74017767",
+      "path": "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md",
+      "runner_path": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py",
+      "title": "Free Dirac Antiparticle Mode Algebra (Bounded Support)"
+    },
     "frontier_extension_lane_b_protects_lane_a_joint_composition_narrow_note_2026-05-17": {
       "claim_id": "frontier_extension_lane_b_protects_lane_a_joint_composition_narrow_note_2026-05-17",
       "claim_type_author_hint": null,
@@ -87916,7 +87934,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 704,
+      "bounded_theorem": 705,
       "decoration": 1,
       "meta": 199,
       "no_go": 87,
@@ -87925,7 +87943,7 @@
       "positive_theorem": 175
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1104,
+      "bounded_theorem": 1105,
       "decoration": 1,
       "meta": 199,
       "no_go": 190,
@@ -87933,10 +87951,10 @@
       "open_gate": 133,
       "positive_theorem": 584
     },
-    "edge_count": 10021,
+    "edge_count": 10022,
     "leaf_count": 828,
-    "node_count": 2633,
+    "node_count": 2634,
     "root_count": 875,
-    "runners_with_path": 2207
+    "runners_with_path": 2208
   }
 }

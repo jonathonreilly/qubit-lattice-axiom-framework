@@ -60369,10 +60369,10 @@
         "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "08704c62f0c1e3ce8244fc351b4fd649c29b2f446dc7bcd88778790946f8467a",
+      "note_hash": "73f24885070cd2cb2242c4f1a8679200448f8f98798bf1ebe411d8febccf3812",
       "path": "docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py",
-      "title": "4D Instanton Action `8\u03c0\u00b2/g\u00b2` \u2014 Bounded Normalization Certificate"
+      "title": "4D Instanton Minimal Action `8\u03c0\u00b2/g\u00b2` \u2014 External Narrow Theorem"
     },
     "interest_map": {
       "claim_id": "interest_map",

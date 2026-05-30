@@ -1101,6 +1101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -7644,6 +7645,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For a finite-dimensional matrix algebra M_d(C), the only density matrix fixed by rho -> U rho U^dagger for every unitary U in U(d) is rho = I_d/d.  _(class `A`)_
 - **chain closes:** False — The finite-dimensional algebraic implication closes once PRR is granted: diagonal sign/phase invariance kills off-diagonal entries, permutations equalize the diagonal, and trace normalization fixes I_d/d. The missing step is a retained derivation or explicit framework approval that the pre-record reference state satisfies PRR on every finite region.
 - **rationale:** The runner source performs real finite-dimensional algebra checks and source-boundary checks; it does not merely print constants, and it does not smuggle in a numerical comparator. The displayed finite-region formulas and normalizations used in the source note are consistent under the stated M_d(C) and qubit-region definitions. However, the note explicitly imports PRR as an admitted external premise, and neither cited retained authority derives or approves that premise. Therefore the row is a valid conditional algebraic bridge, not a clean derivation of the pre-record reference state's tracial form from the restricted packet.
+- **auditor confidence:** high
+
+### `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic/arithmetic certificate for the 4D instanton action normalization S_inst = 8π²/g² and its sample numerical evaluations, excluding global Atiyah-Singer, BPST existence, and Lüscher lattice-topology preservation as retained theorem imports.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-231632-05545871-instanton_4d_action_8pi2`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At |Q|=1, the Bogomolny bound saturated by F=*F gives S_inst = 8π²/g², with the runner only adding finite algebraic/numerical evaluations of that formula.  _(class `A`)_
+- **chain closes:** False — The narrow finite action-normalization calculation closes from the retained_bounded upstream certificate. The broader source Statement and upstream-authority prose still import global Atiyah-Singer integrality, BPST existence, and Lüscher lattice preservation, while the cited authority explicitly leaves those as parallel literature context rather than retained load-bearing inputs.
+- **rationale:** The load-bearing action formula is a class A algebraic specialization of the Bogomolny bound at |Q|=1, supported at the bounded level by the cited retained_bounded certificate. However, the packet as written still presents the larger external theorem/lattice package and says the upstream authority covers it, even though that authority explicitly does not retain the global Atiyah-Singer, BPST existence, or Lüscher inputs. The runner also contains a metadata/text-check drift: it reports a positive_theorem declaration while the provided source header is bounded_theorem. Thus the bounded arithmetic is credible, but the claim packet is not clean as written.
 - **auditor confidence:** high
 
 ### `inverse_problem_note`

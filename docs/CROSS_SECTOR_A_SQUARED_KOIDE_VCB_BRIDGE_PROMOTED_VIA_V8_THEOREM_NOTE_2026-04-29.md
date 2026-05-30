@@ -1,40 +1,27 @@
-# Cross-Sector A²-Q_l-|V_cb| Bridge Support from Conditional Koide Input
+# Cross-Sector A²-Q_l-|V_cb| Bridge Support via V8 Composition (V1)
 
 **Date:** 2026-04-29
-**Status:** support: cross-sector identity Q_l × α_s(v)² = 4|V_cb|² composition, conditional on the Koide Q_l = 2/3 closure-attempt row.
+**Claim type:** bounded_theorem
+**Status:** support: cross-sector identity Q_l × α_s(v)² = 4|V_cb|² composition, conditional on V8 (Block 1) ratification.
 This note records the cross-sector A²-Q_l-|V_cb| bridge from
 "conditional support on Q_l = 2/3 charged-lepton target"
 (CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25)
-as a support-tier structural identity on the minimal framework surface, by
-composing the Koide Q_l closure-attempt row with the retained CKM atlas.
+as a support-tier structural identity on the A_min surface, by composing
+V8 (Block 1, Koide Q closure attempt) with the retained CKM atlas.
 Stronger headline tier language is NOT used.
 **Primary runner:** `scripts/frontier_cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8.py`
 
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
+## 2026-05-28 Science-Fix Re-Audit Scope
 
-## 2026-05-28 Audit Repair (conditional arithmetic; premise packet admitted)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"No. One-hop dependencies are not all retained (koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29=audited_conditional, cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25=audited_conditional, wolfenstein_lambda_a_..."*
-
-with repair: *"dependency_not_retained: audit or repair the listed dependency rows to retained/equivalent closure, then re-audit this claim."*.
-
-Deriving or registering the named premise packet as retained authority is
-substantive new work, out of scope. This revision narrows via the **admission
-path**:
-
-- **Load-bearing (in scope):** Given Q_l = 2/3 from the Koide Q_l closure-attempt row and the CKM atlas identities A² = 2/3, |V_cb|² = α_s(v)²/6, the algebraic composition `Q_l × α_s(v)² = 4|V_cb|²` closes exactly by substitution, which the runner verifies to machine precision.
-- **NON-load-bearing (admitted / not retained):** The dependency packet comprising `koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29` (Koide Q_l = 2/3 closure attempt, still conditional), `cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25` (still conditional), and the Wolfenstein/CKM atlas rows that are not yet all retained-grade. It is recorded as an admitted, not-retained input; the physical higher-tier reading stays conditional on all listed dependency rows reaching retained-grade authority.
-
-No new axiom, import, or retained bridge is introduced. The conditional
-arithmetic is the load-bearing content; the premise packet stays admitted
-until a retained authority for it lands.
+Despite the historical filename, this row is only a conditional algebraic
+composition over the explicitly cited inputs. It does not promote V8, the
+Koide Q row, alpha_s, or the CKM atlas dependencies, and it should not be read
+as a positive cross-sector prediction unless those dependencies are separately
+effective.
 
 **Cited authorities (one-hop deps):**
 - [KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md](KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md)
-  — Koide Q_l = 2/3 closure-attempt row;
+  — V8 (Block 1, support/audit-pending Q_l = 2/3 closure attempt);
   load-bearing
   input.
 - [CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25.md](CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25.md)

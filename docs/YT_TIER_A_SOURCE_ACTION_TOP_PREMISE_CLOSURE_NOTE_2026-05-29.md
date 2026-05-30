@@ -12,6 +12,9 @@ direct_effective_status_change_allowed_from_this_note: false
 on the accepted Tier-A source-measure surface.
 **Status:** bounded-support / Tier-A-dependent closure candidate; not
 unbounded retained Y_T closure by this note alone.
+**Source-measure input:** physical scalar source coordinates are canonical
+normalized trace Gibbs/RN/Fisher coordinates, with `<1> = 1`.  In this
+framework, this input is tracked as the Tier-A P1/P-cal premise.
 **Primary runner:** `scripts/frontier_yt_tier_a_source_action_top_premise_closure.py`
 **Generated output:** `outputs/yt_tier_a_source_action_top_premise_closure_2026-05-29.json`
 
@@ -32,14 +35,15 @@ y_33(lambda) = lambda / sqrt(6)
 and the desired top row is the special case `lambda = 1`.
 
 This note asks whether that last scalar source-unit premise is closed once the
-framework explicitly accepts the Tier-A source-measure surface already used by
-the observable-principle lane:
+framework explicitly accepts the following source-measure input:
 
 ```text
-P1/P-cal source measure:
-  physical scalar generator is the potential for the canonical normalized
-  trace Gibbs/RN expectation field, with <1> = 1.
+physical scalar source coordinates are canonical normalized
+trace Gibbs/RN/Fisher coordinates, with <1> = 1.
 ```
+
+In this framework, that input is tracked as the Tier-A P1/P-cal premise already
+used by the observable-principle lane.
 
 ## Answer
 
@@ -67,9 +71,13 @@ lambda = 1,
 y_33 = 1 / sqrt(6).
 ```
 
-This closes the last scalar top-source normalization premise only at the
-bounded/Tier-A level.  It does **not** derive P-cal/P1 from the two axioms, and
-therefore it does not by itself promote Y_T to unbounded retained status.
+This closes the last scalar top-source normalization premise on the accepted
+source-measure input.  In repo bookkeeping that input is a Tier-A premise, so
+the result is bounded at the Tier-A level.  The bound is narrow: it is not a
+measured target value, fitted selector, Ward matrix-element definition,
+Planck-scale input, plaquette input, or running bridge.  This note does **not**
+derive P-cal/P1 from the two axioms, and therefore it does not by itself promote
+Y_T to unbounded retained status.
 
 ## Inputs
 

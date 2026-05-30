@@ -1,0 +1,41 @@
+
+========================================================================
+(1) a single pi-shift S_mu projects to ZERO on the triplet (label correction)
+========================================================================
+   P S_x P^T =
+ [[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]
+   => the literal single '(pi,pi,0) shift' is NOT within-triplet.
+
+========================================================================
+(2) the S3-symmetric SUM of double-shifts projects to J-I (native b)
+========================================================================
+   P (S_yz + S_zx + S_xy) P^T =
+ [[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+   = J - I : True   (the three transpositions; momentum transfer (pi,pi,0)-type)
+
+========================================================================
+(3) symmetric b sets Q via r=b^2/a^2; Q=2/3 <=> b/a=1/sqrt2 (only the native b)
+========================================================================
+   r=0.0: sqrt-masses [1. 1. 1.] (2 distinct, S3-sym)  Q=0.3333
+   r=0.5: sqrt-masses [2.414 0.293 0.293] (2 distinct, S3-sym)  Q=0.6667
+   r=1.0: sqrt-masses [3. 0. 0.] (2 distinct, S3-sym)  Q=1.0000
+
+========================================================================
+(4) 3-distinct (e!=mu) needs orientation real shifts cannot supply (chiral import)
+========================================================================
+   a real shift difference projects to: SYMMETRIC -> real shift-products cannot make i(C-C^2).
+   => the oriented/complex b (3 distinct masses) = chiral import (Q-ORTHOGONAL).
+
+========================================================================
+VERDICT
+========================================================================
+  CORRECTED capstone: the generation off-diagonal b is NATIVE -- the S3-symmetric
+  sum of double pi-shifts projected to hw=1 = b(J-I) (retained cube-shift kinematics),
+  NOT a single (pi,pi,0) shift (which projects to 0). The symmetric b alone sets Q,
+  so Q=2/3 reduces to ONE magnitude ratio of concrete native operators: (double-shift
+  coupling b)/(diagonal a) = 1/sqrt2. OPEN: the coefficient ratio b/a from the derived
+  g_bare=1 action. SEPARATE + Q-ORTHOGONAL: the chiral orientation for the e-mu split.

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Runner for the Kroschinsky-Marchetti-Salmhofer fermionic Brydges majorant external theorem note.
+"""Runner for the scalar quadratic majorant lemma.
 
-The note records the structural form of the published KMS arXiv:2404.06099 majorant bound
-for the fermionic Polchinski equation. The runner verifies the algebraic content of the
-scalar majorant ODE, its small-data integrability, composition across scales, and the
-source-note boundary disclaimers excluding framework-bridge / status overclaims.
+The note no longer claims the KMS BBF/Polchinski inequality as a
+load-bearing external theorem. This runner verifies only the scalar majorant
+ODE algebra, its small-data integrability, composition across scales, and
+source-note boundary strings excluding the external theorem and framework
+bridge overclaims.
 """
 
 from __future__ import annotations
@@ -164,16 +165,16 @@ def test_sharpness_at_threshold() -> None:
 
 
 def test_bbf_norm_positivity_structural() -> None:
-    section("T8: BBF polymer norm positivity (structural)")
-    # BBF norm is a sum of non-negative Gram norms over polymers; verify that any finite
-    # sum of |coefficients| with non-negative weights is non-negative.
+    section("T8: finite weighted absolute-value norm surrogate is non-negative")
+    # The repaired note claims only a finite weighted |.| surrogate; it does
+    # not derive the BBF polymer norm or its Gram covariance hypotheses.
     coeffs = [Fraction(1, 3), Fraction(0, 1), Fraction(-2, 5), Fraction(7, 11)]
     weights = [Fraction(1, 1), Fraction(2, 1), Fraction(3, 1), Fraction(1, 5)]
-    bbf_surrogate = sum(w * abs(c) for w, c in zip(weights, coeffs))
+    norm_surrogate = sum(w * abs(c) for w, c in zip(weights, coeffs))
     check(
-        "BBF-norm surrogate sum_j w_j |c_j| is non-negative for non-negative w_j",
-        bbf_surrogate >= 0,
-        f"bbf_surrogate={bbf_surrogate}",
+        "surrogate sum_j w_j |c_j| is non-negative for non-negative w_j",
+        norm_surrogate >= 0,
+        f"norm_surrogate={norm_surrogate}",
     )
 
 
@@ -181,24 +182,35 @@ def test_note_boundary() -> None:
     section("T9: source-note boundary")
     text = NOTE.read_text(encoding="utf-8")
     lower = text.lower()
+    required = [
+        "**Claim type:** bounded_theorem",
+        "This row proves only scalar ODE consequences",
+        "This repair removes the KMS theorem from the binding claim",
+        "KMS remains context only",
+        "does not derive the KMS BBF polymer-norm inequality",
+        "does not identify any framework effective action with a KMS",
+    ]
     forbidden = [
         "closure of the (a1)/(a2)",
         "framework substitution is closed",
         "hierarchy formula is closed",
         "pipeline-derived status: retained",
         "alpha_lm^16 is closed",
+        "kms theorem supplies",
+        "derive the bbf polymer-norm inequality",
     ]
     check("note declares bounded_theorem", "**Claim type:** bounded_theorem" in text)
-    check("note declares external scope", "external" in lower)
+    for item in required:
+        check(f"required boundary string present: {item}", item in text)
     check(
-        "note avoids framework bridge and status overclaims",
+        "note avoids external theorem/framework bridge overclaims",
         not any(item in lower for item in forbidden),
         "boundary disclaimers intact",
     )
 
 
 def main() -> int:
-    print("# KMS fermionic Brydges majorant external theorem runner")
+    print("# Scalar quadratic majorant lemma runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
     test_scalar_majorant_ode_closed_form()
     test_small_data_integrability()

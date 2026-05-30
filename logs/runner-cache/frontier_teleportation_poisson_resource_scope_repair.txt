@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_teleportation_poisson_resource_scope_repair.py
+runner_sha256: 79dc7c85b47dba7c90a1ff9da6bc7350085bf8167a75bee89fb8fcf77fd8855b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+Teleportation Poisson resource scope repair
+========================================================================
+
+A. Boundary wording
+------------------------------------------------------------------------
+PASS: note declares open_gate type
+PASS: note declares open_gate claim type
+PASS: note has no branch-local status authority
+PASS: note says this is not a deterministic-resource theorem
+PASS: note preserves small-surface diagnostic value
+PASS: note leaves native carrier derivation open
+PASS: note does not claim matter or FTL teleportation
+
+B. Dependency hygiene
+------------------------------------------------------------------------
+PASS: stale minimal axiom link removed
+PASS: current canonical axiom premise cited
+PASS: adjacent notes are source references, not status imports
+
+C. Original bounded diagnostic
+------------------------------------------------------------------------
+PASS: original runner exits cleanly -- returncode=0
+PASS: original runner covers null control
+PASS: original runner covers 1d Poisson case
+PASS: original runner covers 2d Poisson case
+PASS: original runner reports diagnostic-only postselection
+PASS: original runner does not promote the result
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=16, FAIL=0
+VERDICT: row is ready for re-audit as an open_gate bounded diagnostic.
+
+----- stderr -----
+

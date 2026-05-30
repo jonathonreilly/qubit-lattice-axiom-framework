@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/persistent_record_kraus_instrument_certificate.py
+runner_sha256: 08fca11ee1c5c97a2b4ee08e1debb9159bc327e7aae53ebe2fec36e6a5680c72
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+isometry_error=5.901e-16
+kraus_resolution_error=5.253e-16
+choi_min_eigenvalue=-2.966e-16
+sample=0 prob_sum_error=0.000e+00 trace_error=3.036e-18 channel_min_eig=4.791e-02
+sample=1 prob_sum_error=2.220e-16 trace_error=2.221e-16 channel_min_eig=3.568e-02
+sample=2 prob_sum_error=0.000e+00 trace_error=2.240e-16 channel_min_eig=2.125e-02
+sample=3 prob_sum_error=0.000e+00 trace_error=1.041e-17 channel_min_eig=3.718e-02
+sample=4 prob_sum_error=0.000e+00 trace_error=6.939e-18 channel_min_eig=4.338e-02
+sample=5 prob_sum_error=2.220e-16 trace_error=2.221e-16 channel_min_eig=5.369e-02
+sample=6 prob_sum_error=2.220e-16 trace_error=2.221e-16 channel_min_eig=3.781e-02
+sample=7 prob_sum_error=2.220e-16 trace_error=3.307e-18 channel_min_eig=1.305e-02
+CERTIFICATE PASS: normalized finite record-writing map defines a Kraus CPTP instrument
+
+----- stderr -----
+

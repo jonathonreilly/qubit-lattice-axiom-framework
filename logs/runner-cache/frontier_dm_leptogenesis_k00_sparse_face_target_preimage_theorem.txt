@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py
+runner_sha256: 1699cf75c8fb13ffbb1f9ec18601ae246e25f1b9e20ff27e6acaeb02b39598f2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+================================================================================================
+DM LEPTOGENESIS K00-SPARSE-FACE TARGET-PREIMAGE THEOREM
+================================================================================================
+
+Question:
+  Does the observed live point admit an exact constructive preimage on a
+  minimal low-support face once the target-independent K00 = 0 section is used?
+
+================================================================================================
+PART 1: THE SPARSE FACE IS AN EXACT MINIMAL RIGHT-SENSITIVE SUPPORT
+================================================================================================
+  [PASS] On the face y2 = 0 the active Hermitian carrier has exact 23-sparse support  (H23=0j)
+  [PASS] The projected Hermitian response pack collapses exactly to (R11,R22,R33,S12,0,S13,A13,0,0)  (err=1.11e-16)
+  [PASS] Equivalently on the breaking-triplet coordinates this face has d = 0 and only A13 remains odd  ((gamma,E1,E2)=(0.094767484231,0.496578169145,0.693721830855))
+
+================================================================================================
+PART 2: THE OBSERVED LIVE POINT HAS AN EXACT SPARSE-FACE PREIMAGE
+================================================================================================
+  [PASS] The solved preimage stays on the exact fixed native seed surface  ((xbar,ybar)=(0.563333333333,0.306666666667))
+  [PASS] It lies on the exact sparse face y2 = 0 and therefore on d = 0  (y=[0.711249269398 0.             0.208750730602])
+  [PASS] It remains inside the constructive sign chamber gamma > 0, E1 > 0, E2 > 0  ((gamma,E1,E2)=(0.021123548624,0.496411432686,0.686723396045))
+  [PASS] After the target-independent K00 = 0 section the sparse-face point hits the observed live target  ((m,delta,q)=(0.657061000000,0.933806000000,0.715042000000), dist=0.000e+00)
+
+  sparse target-preimage x = [0.58340552417  0.732110059871 0.374484415959]
+  sparse target-preimage y = [0.711249269398 0.             0.208750730602]
+  sparse target-preimage delta = 2.967263379332
+  K00-section shift alpha = -0.789194250961
+
+================================================================================================
+PART 3: BOTTOM LINE
+================================================================================================
+  [PASS] The constructive-live mismatch is no longer an existence problem once the K00 section is adopted  (the observed live point already has an exact sparse-face constructive preimage)
+  [PASS] The remaining unresolved law is therefore a selector on the exact sparse face y2 = 0  (not a generic five-real search on the full fixed-seed surface)
+  [PASS] So the open microscopic object has collapsed to a low-support right-sensitive face law  (the only odd source channel left there is A13 = 2 gamma)
+
+================================================================================================
+RESULT
+================================================================================================
+  Exact answer:
+    - yes, the observed live point has an exact K00-section preimage on the
+      sparse constructive face y2 = 0
+    - on that face d = 0 and only the A13 odd channel survives
+    - the remaining blocker is the selector law on that sparse face
+
+PASS=10 FAIL=0
+
+----- stderr -----
+

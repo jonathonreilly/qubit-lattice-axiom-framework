@@ -1,0 +1,16 @@
+==============================================================================
+AUDIT-PREP VERIFIER — publication.ci3_z3.claims_table
+==============================================================================
+  [PASS] [A] Parent exists  (CLAIMS_TABLE.md)
+
+PART 1 — cited deps (>=1 hit):
+
+PART 2 — not-cited deps (0 hits):
+  [PASS] [A]   publication.ci3_z3.derivation_atlas NOT cited  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.derivation_validation_map NOT cited  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.gravity_publication_package_summary_2026-04-15 NOT cited  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.publication_matrix NOT cited  (hits = 0)
+
+==============================================================================
+SUMMARY: 5 PASS / 0 FAIL  (Class-A: 5)
+==============================================================================

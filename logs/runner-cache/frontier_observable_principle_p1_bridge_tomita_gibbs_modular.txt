@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_tomita_gibbs_modular.py
+runner_sha256: d7ee1ed77a8c05580e6b18553cf649e482348c9583aec268c56ed0265417205d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.30
+status: ok
+----- stdout -----
+
+==============================================================================
+T1: Gibbs state factorization on block-diagonal Hermitian H (symbolic SymPy verification of e^{-beta H} = e^{-beta H_A} (x) e^{-beta H_B})
+==============================================================================
+  [PASS] exp(-beta H_full) = exp(-beta H_A) (x) exp(-beta H_B) on block-additive H (symbolic, diagonal H_A, H_B)
+         Gibbs factorization on commuting block-additive H verified exactly
+  [PASS] Z_full = Z_A * Z_B for block-additive H (symbolic)
+         Z_full = (exp(beta*(a1 + b1)) + exp(beta*(a1 + b2)) + exp(beta*(a2 + b1)) + exp(beta*(a2 + b2)))*exp(-beta*(a1 + a2 + b1 + b2)); Z_A * Z_B = (exp(a1*beta) + exp(a2*beta))*(exp(b1*beta) + exp(b2*beta))*exp(-beta*(a1 + a2 + b1 + b2)); diff = 0
+
+==============================================================================
+T2: Modular Hamiltonian additivity K = K_A (x) I + I (x) K_B on tensor-product Gibbs density matrices (numerical, small examples)
+==============================================================================
+  [PASS] rho_beta(H_full) = rho_beta(H_A) (x) rho_beta(H_B) numerically
+         Frobenius error = 2.58e-16
+  [PASS] K = -log rho_full = K_A (x) I + I (x) K_B (modular-Hamiltonian additivity)
+         Frobenius error of K - (K_A (x) I + I (x) K_B) = 7.26e-15
+
+==============================================================================
+T3: Tr K = dim(B) * Tr K_A + dim(A) * Tr K_B (weighted trace additivity)
+==============================================================================
+  [PASS] Tr K_full = dim(B) * Tr K_A + dim(A) * Tr K_B (weighted additivity)
+         Tr K_full = 13.654807; predicted = 13.654807; err = 1.78e-15
+
+==============================================================================
+T4: 3-line P1 derivation under (G.b.1) W = Tr K on Gibbs density matrices (numerical end-to-end verification)
+==============================================================================
+  [PASS] W_full[J_A (+) J_B] = dim(B) W[J_A] + dim(A) W[J_B] under (G.b.1)
+         W_full = 6.301988; predicted = 6.301988; err = 3.55e-15
+
+==============================================================================
+T5: F_p comparison — Tr rho^p is multiplicatively but not additively factorizing on tensor-product rho; only p -> 0 (log) gives additivity
+==============================================================================
+  [PASS] F_p[rho] := Tr rho^p is multiplicatively factorizing for p in {0.5, 2, 3}
+         All p values satisfy Tr(rho_full^p) = Tr(rho_A^p) * Tr(rho_B^p)
+  [PASS] F_p[rho] is NOT additively factorizing for p != 0 (confirms log is the additive representative)
+         F_p fails additivity for all tested p != 0; only log (p->0) is additive
+  [PASS] von Neumann entropy S = -Tr(rho log rho) IS additive on tensor product (positive demonstration of the log-additivity branch)
+         S_full = 1.563776; S_A + S_B = 1.563776; err = 2.22e-16
+
+==============================================================================
+T6: F_p alternative is NOT a modular Hamiltonian — positive demonstration that K = -log rho is the structural modular form, not K = rho^p
+==============================================================================
+  [PASS] rho = exp(-K) for K = -log rho (consistency check of modular Hamiltonian)
+         ||rho - exp(-(-log rho))|| = 5.02e-16
+  [PASS] K_alt = rho^p (p != 1) is NOT a modular Hamiltonian (rho != exp(-rho^p))
+         All p != 1 alternatives violate rho = exp(-K_alt); K = -log rho is structurally unique
+
+==============================================================================
+T7: Cauchy classifier in spectral form — log(p q) = log p + log q at eigenvalue level IS the Cauchy multiplicative-to-additive identity
+==============================================================================
+  [PASS] log(p q) = log p + log q at eigenvalue level (Cauchy classifier)
+         max additivity error = 4.44e-16
+  [PASS] (.)^p (p = 1/2) is NOT additive at eigenvalue level (confirms log is the additive representative)
+         max non-additivity = 1.71e+00
+
+==============================================================================
+T8: Tracial reference state gives trivial modular automorphism (sigma_t = id, K = const); Tomita-Takesaki adds nothing on tracial state
+==============================================================================
+  [PASS] K = -log(I/n) = log(n) I on tracial state (constant scalar matrix)
+         ||K - log(n) I|| = 0.00e+00; K is a scalar multiple of identity
+  [PASS] sigma_t(A) = A on tracial state (trivial modular automorphism)
+         ||sigma_t(A) - A|| = 4.18e-16; modular flow is trivial on tracial state
+
+==============================================================================
+T9: live ledger presence checks for context rows
+==============================================================================
+  [PASS] target/context rows are present without status-gating the claim
+         Target/context rows are present; no dependency status is consumed
+
+==============================================================================
+T10: note string contains honest-scope admission strings
+==============================================================================
+  [PASS] required honest-scope strings present in note
+         All required strings present
+  [PASS] forbidden status-promotion strings absent from note
+         No forbidden strings found
+
+==============================================================================
+T11: source-note boundary declarations present
+==============================================================================
+  [PASS] source-note boundary declarations present
+         All boundary declarations present
+
+==============================================================================
+PASS=19 FAIL=0
+==============================================================================
+
+----- stderr -----
+

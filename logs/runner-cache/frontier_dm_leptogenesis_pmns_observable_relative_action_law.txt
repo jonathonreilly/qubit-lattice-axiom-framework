@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py
+runner_sha256: 07acea39348a86a2d10b76e231ca02b3f55afe1ab508ba488f16e5b0524eb4c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.67
+status: ok
+----- stdout -----
+========================================================================================
+DM LEPTOGENESIS PMNS OBSERVABLE-RELATIVE-ACTION LAW
+========================================================================================
+
+Framework convention:
+  "axiom" means only Cl(3) on Z^3.
+
+Law:
+  On the fixed native N_e seed surface, minimize
+    S_rel(H_e||H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3
+  subject to exact closure on the transport-favored column.
+
+Derivation chain (carried into Part 0 of this runner):
+  S_rel(Y) = sup_K [ log det(I+K) - Tr(K Y) ]  (Legendre dual)
+  => the minimization rule is the native effective-action selector
+     attached to the baseline-framework observable generator W(K)=log det(I+K)
+  (full theorem: DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16)
+
+========================================================================================
+PART 0: THE RELATIVE BOSONIC ACTION IS THE LEGENDRE DUAL EFFECTIVE ACTION
+========================================================================================
+  [PASS] S_rel equals the Legendre dual of the baseline-framework log|det| generator at K_* = Y^{-1} - I  (S_rel=0.240906702296, dual=0.240906702296)
+  [PASS] K_* = Y^{-1} - I is the dual stationary point (directional gradient vanishes)  (max directional gradient=1.388e-09)
+  [PASS] The dual is strictly concave at K_*, so S_rel is uniquely defined on the positive cone  (worst sampled Hessian quadratic=-1.710596e+00)
+
+  Effective-action identity (Legendre dual of W(K) = log det(I+K)):
+    S_rel(Y) = sup_K [ log det(I+K) - Tr(K Y) ],   K_* = Y^{-1} - I
+  Y = H_seed^(-1/2) H_e H_seed^(-1/2),  S_rel = 0.240906702296
+  Full proof + bounded-uniqueness: see
+    docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md
+
+========================================================================================
+PART 1: TRANSPORT EXTREMALITY FIXES THE FAVORED COLUMN
+========================================================================================
+  [PASS] The transport-extremal class stays on the exact fixed native seed surface  ((xbar,ybar)=(0.563333,0.306667))
+  [PASS] The favored closure column is fixed by the exact extremal class  (etas=[1.051004 0.662176 0.61936 ])
+
+  extremal packet:
+[[9.25175e-01 3.45930e-02 4.02320e-02]
+ [3.91410e-02 1.11500e-03 9.59744e-01]
+ [3.56840e-02 9.64293e-01 2.40000e-05]]
+  extremal eta/eta_obs = [1.051004 0.662176 0.61936 ]
+
+========================================================================================
+PART 2: THE OBSERVABLE-RELATIVE-ACTION LAW
+========================================================================================
+  [PASS] The relative-action source stays on the exact fixed seed surface  ((xbar,ybar)=(0.563333,0.306667))
+  [PASS] The law closes eta exactly on the favored column  (etas=[1.         0.75917896 0.4845884 ])
+  [PASS] The observable-relative-action selector remains genuinely off-seed  (xi=[-0.091658, -0.009523,  0.101181], eta=[-0.098604,  0.157716, -0.059112])
+  [PASS] The selected source is simpler than the earlier canonical near-closing sample  (delta=-1.228940466232e-06)
+  [PASS] The favored column remains the best column at the selected source  (best idx=0, etas=[1.       0.759179 0.484588])
+
+  x_rel     = [0.471675, 0.553811, 0.664514]
+  y_rel     = [0.208063, 0.464383, 0.247554]
+  xi_rel    = [-0.091658, -0.009523,  0.101181]
+  eta_rel   = [-0.098604,  0.157716, -0.059112]
+  delta_rel = -1.228940466232e-06
+  S_rel     = 0.240906701369
+  packet_rel:
+[[0.035659 0.417918 0.546423]
+ [0.894898 0.103524 0.001578]
+ [0.069443 0.478558 0.451999]]
+  eta/eta_obs(rel-law) = [1.         0.75917896 0.4845884 ]
+
+========================================================================================
+PART 3: BOTTOM LINE
+========================================================================================
+  [PASS] The off-seed selector is the native effective-action selector of the exact observable principle  (S_rel is the Legendre dual of W(K)=log det(I+K) [Part 0]; minimization is its native rule)
+  [PASS] The operational law inherits the sister theorem's bounded uniqueness on the current closure patch  (see DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16)
+  [PASS] What remains beyond this support note is only a future branch-global analytic uniqueness proof  (the selector principle itself is no longer an external import on the current branch)
+
+========================================================================================
+RESULT
+========================================================================================
+  Observable-principle selector:
+    - selector objective derived: S_rel is the Legendre-dual effective
+      action of W(K)=log det(I+K)  [Part 0]
+    - favored column fixed by exact transport extremality  [Part 1]
+    - off-seed source fixed by minimum relative bosonic action  [Part 2]
+    - exact eta/eta_obs = 1 on the current PMNS-assisted N_e branch
+
+PASS=13  FAIL=0
+
+----- stderr -----
+

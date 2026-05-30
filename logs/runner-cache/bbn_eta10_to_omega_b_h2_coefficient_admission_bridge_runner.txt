@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
+runner_sha256: 8b986b46d4c5a58a1352987d36950346693a1a268471f97577fce5e5e9a4570d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+BBN COEFFICIENT 3.6515e-3 ADMISSION BRIDGE
+
+== Part 0: source firewall ==
+PASS: source contains boundary phrase: Supplied premise packet (not axioms)
+PASS: source contains boundary phrase: P1 proton rest mass
+PASS: source contains boundary phrase: P2 present-day CMB temperature
+PASS: source contains boundary phrase: P3 critical-density unit
+PASS: source contains boundary phrase: P4 Cyburt conversion convention
+PASS: source contains boundary phrase: does not derive P1-P4
+PASS: source contains boundary phrase: not registry accepted premises
+PASS: source contains boundary phrase: new repo-wide axiom
+PASS: source contains boundary phrase: Cyburt
+PASS: source contains boundary phrase: 2 zeta(3)
+PASS: source contains boundary phrase: Planck distribution
+PASS: source contains boundary phrase: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
+PASS: source excludes forbidden phrase: Tier-B partial-derivation
+PASS: source excludes forbidden phrase: Tier B partial derivation
+PASS: source excludes forbidden phrase: framework derives m_p
+PASS: source excludes forbidden phrase: framework derives T_CMB
+PASS: source excludes forbidden phrase: **Status:** retained
+PASS: source excludes forbidden phrase: audited_clean
+
+== Part 1: analytic factor 2 zeta(3) / pi^2 ==
+PASS: factor reduces to 2 zeta(3)/pi^2 with photon polarization count g_gamma = 2 (factor = 0.243587656467)
+PASS: factor numerically equals 0.24359... (standard) (factor = 0.243588)
+
+== Part 2: present-day photon number density from P2 import ==
+PASS: present-day n_gamma is approximately 410 photons / cm^3 (standard textbook) (n_gamma = 410.5008 per cm^3)
+
+== Part 3: recover Cyburt+ 2016 coefficient by deterministic arithmetic ==
+PASS: coefficient within 0.2% of published Cyburt+ 2016 value 3.6515e-3 (coeff = 3.656085e-03 vs Cyburt+2016 = 3.651500e-03)
+
+== Part 4: named premise packet remains imported on this row ==
+PASS: P1 proton rest mass admitted as textbook import (not derived here) (m_p = 1.6726219236e-24 g)
+PASS: P2 CMB temperature admitted as textbook import (not derived here) (T_CMB = 2.725 K)
+PASS: P3 critical-density unit admitted as textbook import (not derived here) (rho_crit/h^2 = 1.878e-29 g/cm^3)
+PASS: P4 Cyburt convention / residual normalization admitted as combined import (S_Cyburt = 1.0 for the raw unit-conversion baseline)
+
+== Part 5: retention scorecard ==
+PASS: source says one factor out of five is analytic rather than empirical
+PASS: source keeps the remaining four components imported as P1-P4
+PASS: bridge does not promote the parent cosmology cascade row
+
+TOTAL: PASS=29 FAIL=0
+VERDICT: bounded admission bridge passes; the textbook coefficient 3.6515e-3 decomposes into one analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and four imported premises (P1 m_p, P2 T_CMB, P3 rho_crit/h^2, P4 Cyburt convention / residual normalization), recovered to within 0.13% of the Cyburt+ 2016 published value.
+
+----- stderr -----
+

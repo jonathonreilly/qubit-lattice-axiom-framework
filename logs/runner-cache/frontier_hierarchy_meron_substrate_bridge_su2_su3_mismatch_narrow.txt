@@ -1,0 +1,221 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py
+runner_sha256: e9a7a557f0791369ab32b5a2864fef659d8dce0802a0449ee292af2383a30e74
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+
+========================================================================
+Hierarchy meron substrate bridge SU(2)/SU(3) mismatch narrow no-go
+Authority: HIERARCHY_MERON_SUBSTRATE_BRIDGE_SU2_SU3_MISMATCH_NARROW_NO_GO_NOTE_2026-05-16
+========================================================================
+
+========================================================================
+T1: framework canonical Wilson surface inputs
+========================================================================
+  N_c                = 3
+  beta = 2 N_c / g_bare^2 = 6
+  g_bare^2 (exact)   = 1 (1.0)
+  <P>                = 0.5934
+  u_0 = <P>^(1/4)    = 0.877681381199
+  alpha_bare = 1/(4 pi) = 0.079577471546
+  alpha_LM = alpha_bare/u_0 = 0.090667836017
+  M_Pl               = 1.220900e+19 GeV (P1 import)
+  v_obs              = 246.220000 GeV (P4 EWSB identification)
+[PASS] T1a: g_bare^2 = 2 N_c / beta = 1 exactly
+      a = 1.0  b = 1.0  |a - b|/|b| = 0.00e+00  rtol = 1e-12
+[PASS] T1b: alpha_bare = 1/(4 pi)
+      a = 0.5933999999999999  b = 0.5934  |a - b|/|b| = 1.87e-16  rtol = 1e-12
+[PASS] T1c: u_0^4 = <P>
+
+========================================================================
+T2: meron action at canonical g^2 = 1
+========================================================================
+  S_meron = 4 pi^2 / g^2 (de Alfaro-Fubini-Furlan)
+  4 pi^2 (numerical)  = 39.478418
+  at g^2 = g_bare^2 = 1: S_meron = 39.478418
+  symbolic: S_meron|_(g=1) - 4 pi^2 = 0
+      a = 39.47841760435743  b = 39.47841760435743  |a - b|/|b| = 0.00e+00  rtol = 1e-12
+[PASS] T2a: S_meron at g^2 = 1 evaluates to 4 pi^2
+[PASS] T2b: symbolic 4 pi^2 / g^2 |_(g=1) = 4 pi^2
+
+========================================================================
+T3: numerical co-incidence 4 pi^2 ~ ln(M_Pl/v_obs)
+========================================================================
+  4 pi^2             = 39.478418
+  ln(M_Pl / v_obs)   = 38.442480
+  diff               = 1.035938
+  rel diff           = 2.6241%
+[PASS] T3a: numerical co-incidence within 5% (true: ~2.69%)
+[PASS] T3b: co-incidence NOT within 1% (consistent with bounded numerical match)
+
+========================================================================
+T4: naive bridge prediction (identification rejected by M1-M5)
+========================================================================
+  v_predicted = M_Pl * exp(-4 pi^2) = 87.3818 GeV
+  v_obs                              = 246.2200 GeV
+  ratio v_obs / v_predicted          = 2.817748
+  with (7/8)^(1/4) = 0.967168:
+  v_predicted_apbc                   = 84.5129 GeV
+  ratio v_obs / v_predicted_apbc     = 2.913400
+[PASS] T4a: v_predicted = M_Pl * exp(-4 pi^2) ~ 87 GeV
+[PASS] T4b: v_obs / v_predicted ~ 2.82
+[PASS] T4c: (7/8)^(1/4) makes the prediction worse (wrong direction)
+
+========================================================================
+T5: obstruction (M1) — gauge-group mismatch SU(2)/SU(3)
+========================================================================
+  Meron lives on Euclidean SU(2):
+    A_mu^a(x) = (1/g) eta^a_{mu nu} d_nu ln(x^2/rho^2), a = 1,2,3
+    S_meron(SU(2)) = 4 pi^2 / g^2
+
+  Framework canonical Wilson surface is SU(3):
+    N_c = 3, beta = 6, <P> = 0.5934
+
+  S_meron(SU(2), g=1)        = 4 pi^2     = 39.4784
+  S_frac(SU(3), k=1, g=1)   = 8 pi^2 / 3 = 26.3189
+  ratio: SU(3) k=1 / SU(2) meron = 0.666667
+  exact ratio (8 pi^2/3) / (4 pi^2) = 2/3 = 0.666667
+
+  No published SU(3) configuration with classical action exactly
+  4 pi^2 / g^2 exists in the gauge-theory literature.
+      a = 0.6666666666666667  b = 0.6666666666666666  |a - b|/|b| = 1.67e-16  rtol = 1e-12
+[PASS] T5a: SU(3) k=1 / SU(2) meron action ratio = 2/3
+[PASS] T5b: SU(2) meron action != SU(3) k=1 fractional instanton action
+
+========================================================================
+T6: obstruction (M2) — Wick rotation Z^3 -> Z^4 (same P2 primitive)
+========================================================================
+  Framework spatial substrate: Z^3 (MINIMAL_AXIOMS_2026-05-03)
+  Itou-Iritani lattice meron:  Z^4 (4D torus T^4 with twisted BC)
+
+  L = 4 canonical box:
+    Z^3 sites = L^3 = 64
+    Z^4 sites = L^4 = 256
+    ratio Z^4/Z^3 = L = 4
+
+  Brillouin-zone corners:
+    2^3 = 8 (Z^3 spatial)
+    2^4 = 16 (Z^4 spacetime, Wick-rotated)
+
+  The same open primitive P2 of HIERARCHY_FORMULA_HONEST_STATUS_NOTE
+  blocks both the alpha_LM^16 route and the meron route here.
+[PASS] T6a: Z^3 BZ corners (8) != Z^4 BZ corners (16)
+[PASS] T6b: framework Z^3 spatial substrate is not the meron Z^4 T^4 lattice
+
+========================================================================
+T7: obstruction (M3) — coupling identification by hand
+========================================================================
+  (M3a) g_bare^2 = 1 (SU(3) framework bare):
+        S_meron = 39.4784, v_pred = 8.7382e+01 GeV
+  (M3b) g_2^2(v) = 0.42 (SU(2)_L weak at v):
+        S_meron = 93.9962, v_pred = 1.8392e-22 GeV
+  (M3c) g_s^2(v) = 1.55 (SU(3) strong at v):
+        S_meron = 25.4699, v_pred = 1.0598e+08 GeV
+
+  v_obs = 246.2200 GeV
+  Only M3a gives ~3% fit, but pairs SU(3) bare coupling with
+  SU(2) meron configuration — a category error.
+
+  M3b (SU(2)_L at EW scale) gives 94, off by factor 2.4.
+  v_pred(M3b) / v_obs ~= 1e-25 — off by 25 orders.
+[PASS] T7a: (M3a) g_bare^2 = 1 gives v_pred ~ 87 GeV
+[PASS] T7b: (M3b) g_2^2(v) gives v_pred << 1 GeV (wrong by ~25 orders)
+[PASS] T7c: (M3c) g_s^2(v) gives v_pred >> 1e6 GeV (wrong by ~6 orders)
+
+========================================================================
+T8: obstruction (M4) — scale identification (Lambda_QCD vs v_EW)
+========================================================================
+  Standard meron condensate produces colour-confinement scale:
+    Lambda_QCD          ~ 0.2000 GeV
+  Standard Model EW VEV:
+    v_EW                = 246.2200 GeV
+  ratio v_EW / Lambda_QCD = 1231.1  (~3 orders of magnitude)
+
+  Meron / fractional-instanton dilute-gas mechanism (Cox-Pisarski
+  2310.16289; Anber-Poppitz 1811.05882) produces a confinement
+  Lambda, not the electroweak VEV. Identifying them is the same
+  open primitive P4 (EWSB observable identification) of
+  HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.
+[PASS] T8a: v_EW / Lambda_QCD > 100 (scales are not identified)
+
+========================================================================
+T9: obstruction (M5) — residual 2.82x correction not closeable
+========================================================================
+  4 pi^2 - ln(M_Pl/v_obs)  = 1.035938
+  multiplicative correction = exp(gap) = 2.817748
+
+  Candidate correction factors:
+    (7/8)^(1/4) = 0.967168 (retained, but wrong direction)
+      v_predicted * (7/8)^(1/4) = 84.5129 GeV (MORE off)
+
+    One-loop g_s^2(v) from g_s^2(M_Pl)=1 running:
+      b_0 = (11 N_c - 2 N_f)/(12 pi) = 0.557042
+      1/g_s^2(v) = 1 + (b_0/4 pi^2) * ln(M_Pl/v) = 1.542425
+      g_s^2(v) = 0.648330
+      S_meron(g_s^2(v)) = 60.8925
+      v_pred_running = 4.3793e-08 GeV  (off by orders)
+
+  No substrate-natural correction factor evaluates to exactly 2.82.
+  The (7/8)^(1/4) selector goes the wrong way.
+  One-loop coupling running gives O(1e4) wrong-direction correction.
+  Volume / determinant / modulus factors lack framework derivation.
+[PASS] T9a: required multiplicative correction is ~2.82
+[PASS] T9b: (7/8)^(1/4) < 1 goes wrong direction (reduces v_pred)
+[PASS] T9c: one-loop running gives v_pred way off (worse than naive)
+
+========================================================================
+T10: source-note boundary check
+========================================================================
+
+  This packet:
+    - records a narrow no-go on the meron substrate bridge
+    - cites retained framework authority (PLAQUETTE_SELF_CONSISTENCY,
+      HIERARCHY_FORMULA_HONEST_STATUS, MINIMAL_AXIOMS, CL3_SM_EMBEDDING,
+      HIGGS_MASS_FROM_AXIOM, etc.) one-hop as markdown links
+    - references external scaffolds PR #1268, #1269, #1270, #1271
+      backtick-relational only (unaudited, deps=[])
+    - external literature (DAFF, CDG, Itou-Iritani, etc.) cited in
+      note prose only, no markdown links, no framework authority
+
+  Boundary invariants:
+    - no canonical chain note modified
+    - no honest-status note modified
+    - no audit ledger row directly altered
+    - no retained authority promoted
+    - no new substrate primitive introduced
+    - no closure of P1-P4 from honest-status note
+    - external scaffolds remain unaudited deps=[] external Layer-1
+[PASS] T10: source-note boundary preserved (narrow no-go only)
+
+========================================================================
+TOTAL: PASS=10 FAIL=0
+========================================================================
+
+VERDICT (source-side):
+  The bridge v = M_Pl * exp(-4 pi^2) on the framework's canonical
+  SU(3) Wilson surface (g_bare^2 = 1) is structurally blocked by
+  FIVE independent obstructions:
+    (M1) gauge-group mismatch SU(2) meron vs SU(3) framework Wilson
+    (M2) Z^3 -> Z^4 Wick rotation (same P2 primitive)
+    (M3) coupling identification by hand (g_bare vs g_2 vs g_s)
+    (M4) scale identification: Lambda_QCD vs v_EW (same P4 primitive)
+    (M5) residual 2.82x correction not substrate-closeable
+
+  The 4 pi^2 ~ ln(M_Pl/v_obs) numerical co-incidence (relative 2.69%)
+  is real on the canonical inputs and is recorded as bounded honest
+  context, NOT as evidence of a derived mechanism.
+
+  Re-audit if any of M1-M5 close to retained status via independent
+  derivation, or if a different substrate-natural mechanism produces
+  v = M_Pl * exp(-c) with c derived from substrate primitives without
+  consuming any of M1-M5 by hand.
+
+  See docs/HIERARCHY_MERON_SUBSTRATE_BRIDGE_SU2_SU3_MISMATCH_NARROW_NO_GO_NOTE_2026-05-16.md
+  for the full source-side statement.
+
+
+----- stderr -----
+

@@ -1,0 +1,118 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_operator_algebraic_qubit_reattempt.py
+runner_sha256: c90093c6584f3491f025f5990a1e0dacefc098761f78eaafa97d09d16e154ae6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge operator-algebraic qubit re-attempt runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_QUBIT_REATTEMPT_NARROW_NOTE_2026-05-21.md
+
+==============================================================================
+T1: UHF dim factorization on disjoint sub-registers
+==============================================================================
+  [PASS] dim(M_2(C)^(x)|A|) * dim(M_2(C)^(x)|B|) = dim(M_2(C)^(x)|A u B|) on per-site qubit
+         cases=[(1, 1, 4, 4), (1, 2, 8, 8), (2, 2, 16, 16), (2, 3, 32, 32), (3, 3, 64, 64), (3, 4, 128, 128)]
+
+==============================================================================
+T2: Grassmann determinant block factorization (R1) -- symbolic
+==============================================================================
+  [PASS] det(D_A (+) D_B + J_A (+) J_B) = det(D_A+J_A) det(D_B+J_B) symbolically
+         sympy.simplify(lhs - rhs) = 0
+  [PASS] Rational instance: det factorization holds at exact precision
+         lhs=793483/9823275, rhs=793483/9823275
+
+==============================================================================
+T3: Tracial state factorization Tr(A (x) B) = Tr(A) Tr(B)
+==============================================================================
+  [PASS] Tr(A (x) B) = Tr(A) Tr(B) on rational test pairs
+         cases=[(56/135, 56/135), (11/4, 11/4)]
+  [PASS] Normalized tau_{A u B}(A (x) B) = tau_A(A) * tau_B(B) on M_2 (x) M_2
+         tau_normalized=14/135, tau_factored=14/135
+
+==============================================================================
+T4: F_p multiplicative factorization (R3) -- F_p[A+B] = F_p[A] F_p[B]
+==============================================================================
+  [PASS] F_p[A+B] = F_p[A] * F_p[B] for p in {-2, -1, 1/2, 1, 2, 3} on (r_A, r_B) = (2, 3)
+         (p, F_total - F_prod): [(-2.0, '0'), (-1.0, '0'), (0.5, '0'), (1.0, '0'), (2.0, '0'), (3.0, '0')]
+
+==============================================================================
+T5: F_p existential non-additivity (R4) -- audit-named quantifier repair
+==============================================================================
+  [PASS] F_p existential non-additivity: for each p in {-2,-1,1/2,1,2,3}, EXISTS (r_A, r_B) with F_p[A+B] != F_p[A] + F_p[B]
+         (p, r_A, r_B, defect): [(-2.0, 2.0, 3.0, '-1/3'), (-1.0, 2.0, 3.0, '-2/3'), (0.5, 4.0, 9.0, '1'), (2.0, 2.0, 3.0, '23'), (3.0, 2.0, 3.0, '181'), (1.0, 2.0, 3.0, '1'), (1.0, 5.0, 7.0, '23'), (2.0, 3.0, 5.0, '191')]
+
+==============================================================================
+T6: Audit-flagged accidental solution (R5) -- repair confirmation
+==============================================================================
+  [PASS] Audit-flagged accidental case (r_A=2, r_B=2, p=1): F_p[A+B] = F_p[A] + F_p[B] = 4
+         F_total = (2*2)^1 = 4; F_sum = 2^1 + 2^1 = 4
+  [PASS] Additional accidental locus: x=3, y=3/2, p=1: xy = x+y = 9/2
+         xy = 9/2; x+y = 9/2
+  [PASS] Complement of accidental locus is non-empty: (r_A=2, r_B=3, p=1): F_p[A+B] = 6, F_p[A] + F_p[B] = 5, defect = 1
+         F_total = 6; F_sum = 5; defect = 1
+
+==============================================================================
+T7: Qubit-reframe vs C*-tensor scope comparison (R6) -- F_p admissibility unchanged
+==============================================================================
+  [PASS] F_p = r^p is well-defined / continuous on R_+ for p in test set (continuity criterion)
+         r=2, p in [-2.0, -1.0, 0.5, 1.0, 2.0, 3.0]
+  [PASS] F_p depends only on r = |Z| (CPT-even by construction)
+         F_p[J] := r(J)^p is by definition a function of r > 0 only
+  [PASS] F_p multiplicatively closed on disjoint UHF sub-registers (R3, T4)
+         from T4 PASS
+  [PASS] F_p > 0 on r > 0 for any p (positivity criterion)
+         r=2, p in [-2.0, -1.0, 0.5, 1.0, 2.0, 3.0]
+  [PASS] Net: qubit-reframe (UHF) adds no new exclusion to F_p admissibility vs prior C*-tensor setting
+         F_p satisfies (continuity, CPT-even, mult-closed, positivity) for any p in R on both UHF and general C* settings
+
+==============================================================================
+T8: Live-ledger context rows use current retained-grade rules
+==============================================================================
+  [PASS] cl3_complexification_split_narrow_theorem_note_2026-05-10.effective_status is current retained-grade
+         actual = retained
+  [PASS] cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10.effective_status is current retained-grade
+         actual = retained_bounded
+  [PASS] cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10.effective_status is current retained-grade
+         actual = retained_bounded
+  [PASS] cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10 is present as retained context or boxed decoration
+         actual = decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10
+  [PASS] observable_principle_from_axiom_note context row exists; status is not load-bearing here
+         effective_status = audited_conditional
+  [PASS] observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17 context row exists; status is not load-bearing here
+         effective_status = audited_failed
+  [PASS] observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17 context row exists; status is not load-bearing here
+         effective_status = unaudited
+
+==============================================================================
+T9: Scope boundary -- admission and non-promotion language
+==============================================================================
+  [PASS] note contains admission string: "does not address the structural P1 blocker"
+         present=True
+  [PASS] note contains admission string: "P1 is **not** closed positively"
+         present=True
+  [PASS] note contains admission string: "honestly weaker than positive closure"
+         present=True
+  [PASS] note contains admission string: "qubit-reframe constraint **does not** address the"
+         present=True
+  [PASS] note contains admission string: "existential"
+         present=True
+  [PASS] note contains admission string: "audit-flagged"
+         present=True
+  [PASS] note avoids forbidden status-promotion strings
+         forbidden_hits=[]
+
+==============================================================================
+T10: Source-note boundary
+==============================================================================
+  [PASS] Claim type declared bounded_theorem
+  [PASS] Status authority declares independent audit lane only
+  [PASS] Source-note proposal disclaimer present
+  [PASS] no forbidden overclaim strings present
+         hits=[]
+
+=== TOTAL: PASS=33, FAIL=0 ===
+
+----- stderr -----
+

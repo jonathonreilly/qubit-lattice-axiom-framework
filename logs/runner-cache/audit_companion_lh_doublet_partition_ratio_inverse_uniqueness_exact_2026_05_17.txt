@@ -1,0 +1,122 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py
+runner_sha256: 5a82b417b13b4841a9331a6d471b2184546239c7b8c2b9d05693cce5a913b764
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Part 1: note structure and scope discipline
+----------------------------------------------------------------------------------------
+  [PASS (A)] contains: 'LH-Doublet Trace-Surface Partition / Ratio Inverse Uniqueness'  ()
+  [PASS (A)] contains: 'Type:** bounded_theorem'  ()
+  [PASS (A)] contains: 'n  =  N / (k + 1)'  ()
+  [PASS (A)] contains: 'm  =  k * N / (k + 1)'  ()
+  [PASS (A)] contains: '(k + 1) divides N'  ()
+  [PASS (A)] contains: '(N, k) = (8, 3)'  ()
+  [PASS (A)] contains: '(m, n) = (6, 2)'  ()
+  [PASS (A)] contains: 'Does **not** derive `N = 8`'  ()
+  [PASS (A)] contains: 'Does **not** derive `k = 3`'  ()
+  [PASS (A)] contains: 'Does **not** identify the partition `(6, 2)`'  ()
+  [PASS (A)] contains: 'Does **not** consume any PDG observed quark charges'  ()
+  [PASS (A)] narrow scope avoids forbidden load-bearing claim: 'Q = T_3 + Y/2 then matches'  (SM identification out of scope)
+  [PASS (A)] narrow scope avoids forbidden load-bearing claim: 'identifies the structural 3+1 abelian eigenspaces with the Standard Model'  (SM identification out of scope)
+
+----------------------------------------------------------------------------------------
+Part 2: (ratio identity) parametric ratio identity beta/alpha = -m/n
+----------------------------------------------------------------------------------------
+  [PASS (A)] (ratio identity) parametric beta/alpha = -m/n via sympy symbolic solve  (beta = -alpha*m/n, ratio = -m/n)
+  [PASS (A)] (ratio identity) explicit Fraction sweep across (m, n, alpha) tests  (6 triples, all confirm beta/alpha = -m/n)
+
+----------------------------------------------------------------------------------------
+Part 3: (closed-form partition) closed-form (m, n) from (N, k) given divisibility
+----------------------------------------------------------------------------------------
+  [PASS (A)] (closed-form partition) at (N, k) = (8, 3): (m, n) = (6, 2), m+n=N, m/n=k  (m+n=8=8, m/n=3.0, expected k=3)
+  [PASS (A)] (closed-form partition) at (N, k) = (8, 1): (m, n) = (4, 4), m+n=N, m/n=k  (m+n=8=8, m/n=1.0, expected k=1)
+  [PASS (A)] (closed-form partition) at (N, k) = (8, 7): (m, n) = (7, 1), m+n=N, m/n=k  (m+n=8=8, m/n=7.0, expected k=7)
+  [PASS (A)] (closed-form partition) at (N, k) = (10, 4): (m, n) = (8, 2), m+n=N, m/n=k  (m+n=10=10, m/n=4.0, expected k=4)
+  [PASS (A)] (closed-form partition) at (N, k) = (12, 5): (m, n) = (10, 2), m+n=N, m/n=k  (m+n=12=12, m/n=5.0, expected k=5)
+  [PASS (A)] (closed-form partition) at (N, k) = (12, 2): (m, n) = (8, 4), m+n=N, m/n=k  (m+n=12=12, m/n=2.0, expected k=2)
+  [PASS (A)] (closed-form partition) at (N, k) = (12, 3): (m, n) = (9, 3), m+n=N, m/n=k  (m+n=12=12, m/n=3.0, expected k=3)
+  [PASS (A)] (closed-form partition) at (N, k) = (14, 6): (m, n) = (12, 2), m+n=N, m/n=k  (m+n=14=14, m/n=6.0, expected k=6)
+  [PASS (A)] (closed-form partition) at (N, k) = (16, 7): (m, n) = (14, 2), m+n=N, m/n=k  (m+n=16=16, m/n=7.0, expected k=7)
+  [PASS (A)] (closed-form partition) at (N, k) = (16, 3): (m, n) = (12, 4), m+n=N, m/n=k  (m+n=16=16, m/n=3.0, expected k=3)
+  [PASS (A)] (closed-form partition) at (N, k) = (24, 7): (m, n) = (21, 3), m+n=N, m/n=k  (m+n=24=24, m/n=7.0, expected k=7)
+
+----------------------------------------------------------------------------------------
+Part 4: (admissibility criterion) admissibility iff (k+1) | N and N >= k+1
+----------------------------------------------------------------------------------------
+  [PASS (A)] (admissibility criterion) admissibility prediction matches exhaustive enumeration  (swept 465 (N, k) pairs, fail = 0)
+  [PASS (A)] (admissibility criterion) spot check at (N, k) = (8, 3)  (predicted=True, expected=True)
+  [PASS (A)] (admissibility criterion) spot check at (N, k) = (8, 1)  (predicted=True, expected=True)
+  [PASS (A)] (admissibility criterion) spot check at (N, k) = (8, 7)  (predicted=True, expected=True)
+  [PASS (A)] (admissibility criterion) spot check at (N, k) = (8, 2)  (predicted=False, expected=False)
+  [PASS (A)] (admissibility criterion) spot check at (N, k) = (8, 4)  (predicted=False, expected=False)
+  [PASS (A)] (admissibility criterion) spot check at (N, k) = (8, 5)  (predicted=False, expected=False)
+  [PASS (A)] (admissibility criterion) spot check at (N, k) = (8, 6)  (predicted=False, expected=False)
+
+----------------------------------------------------------------------------------------
+Part 5: (uniqueness criterion) uniqueness within P(N=8); enumerate all ratios
+----------------------------------------------------------------------------------------
+  [PASS (A)] (uniqueness criterion) all 7 ordered partitions of N=8 give expected ratios  (ratios = [('(1, 7)', Fraction(-1, 7)), ('(2, 6)', Fraction(-1, 3)), ('(3, 5)', Fraction(-3, 5)), ('(4, 4)', Fraction(-1, 1)), ('(5, 3)', Fraction(-5, 3)), ('(6, 2)', Fraction(-3, 1)), ('(7, 1)', Fraction(-7, 1))])
+  [PASS (A)] (uniqueness criterion) each ratio in P(8) corresponds to exactly one partition  (7 distinct ratios from 7 partitions, all unique)
+  [PASS (A)] (uniqueness criterion) integer-ratio partitions of N=8 are exactly {(4,4), (6,2), (7,1)}  (found = [(4, 4), (6, 2), (7, 1)])
+  [PASS (A)] (uniqueness criterion) framework instance: (6, 2) is the unique partition of N=8 with ratio -3  (ratio_to_partitions[-3] = [(6, 2)])
+
+----------------------------------------------------------------------------------------
+Part 6: framework readout (N, k) = (8, 3) -> (m, n) = (6, 2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] framework: divisibility (k+1)=4 divides N=8  (8 mod 4 = 0)
+  [PASS (A)] framework: closed-form n = N/(k+1) = 2  (n = 2)
+  [PASS (A)] framework: closed-form m = k*N/(k+1) = 6  (m = 6)
+  [PASS (A)] framework: (m, n) = (6, 2) and m + n = 8 (LH-doublet state count)  ((m, n) = (6, 2))
+
+----------------------------------------------------------------------------------------
+Part 7: counterfactuals — non-admissible (N, k) and corollaries
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C4) (N, k) = (8, 2) is non-admissible  (8 mod 3 = 2)
+  [PASS (A)] (C4) no partition of N=8 has ratio -2  (exhaustive over P(8))
+  [PASS (A)] (C5) (N, k) = (8, 4) is non-admissible  (8 mod 5 = 3)
+  [PASS (A)] (C5) no partition of N=8 has ratio -4  (exhaustive over P(8))
+  [PASS (A)] (C6) (N, k) = (8, 5) is non-admissible  (8 mod 6 = 2)
+  [PASS (A)] (C6) no partition of N=8 has ratio -5  (exhaustive over P(8))
+  [PASS (A)] (C7) (N, k) = (8, 6) is non-admissible  (8 mod 7 = 1)
+  [PASS (A)] (C7) no partition of N=8 has ratio -6  (exhaustive over P(8))
+  [PASS (A)] (C2) (N, k) = (8, 1) -> (m, n) = (4, 4)  ((m, n) = (4, 4))
+  [PASS (A)] (C3) (N, k) = (8, 7) -> (m, n) = (7, 1)  ((m, n) = (7, 1))
+
+----------------------------------------------------------------------------------------
+Part 8: forward/inverse pair consistency check
+----------------------------------------------------------------------------------------
+  [PASS (A)] forward: (m, n) = (6, 2), alpha = 1/3 -> beta = -1, ratio = -3  (beta = -1, ratio = -3)
+  [PASS (A)] inverse: (N, k) = (8, 3) -> (m, n) = (6, 2)  ((m, n) = (6, 2))
+  [PASS (A)] forward(inverse(8, 3)) recovers ratio -3  ((m, n) = (6, 2), ratio = -3)
+  [PASS (A)] inverse(8, forward(6, 2)) recovers partition (6, 2)  (forward ratio = -3, k = 3, recovered (m, n) = (6, 2))
+
+----------------------------------------------------------------------------------------
+Part 9: cited authorities are retained-grade (cross-references only)
+----------------------------------------------------------------------------------------
+  [PASS (A)] cross-reference lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02 is retained-grade  (observed = 'retained_bounded')
+  [PASS (A)] cross-reference graph_first_su3_integration_note is retained-grade  (observed = 'retained_bounded')
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy/Fraction precision:
+    (ratio identity) parametric ratio identity beta/alpha = -m/n
+    (closed-form partition) closed-form (m, n) = (k*N/(k+1), N/(k+1)) under divisibility
+    (admissibility criterion) admissibility iff (k+1) | N and N >= k+1 across (N, k) sweep
+    (uniqueness criterion) uniqueness within P(N=8); only (6, 2) has ratio -3
+    Framework readout (N, k) = (8, 3) -> (m, n) = (6, 2)
+    Counterfactuals (C4)-(C7): no partition of N=8 with ratio in {-2,-4,-5,-6}
+    Forward/inverse pair consistency: round-trips recover both halves
+    Cross-referenced authorities all retained-grade
+
+========================================================================================
+  TOTAL: PASS=58, FAIL=0
+========================================================================================
+
+----- stderr -----
+

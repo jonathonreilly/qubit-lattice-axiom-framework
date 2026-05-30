@@ -1,0 +1,120 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_jones_index_subfactor.py
+runner_sha256: cd7db2414d6653be8c92ebfb57589c603195e81716bd10d56ec002196868666d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge Jones-index / subfactor runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md
+
+==============================================================================
+T1: Type I Jones index formula [M_{nk}(C) : M_n(C)] = k**2
+==============================================================================
+  [PASS] Type I Jones index [M_{nk}(C) : M_n(C)] = k**2 = (dim M_{nk} / dim M_n)
+         (n, k, index, ratio): [(1, 2, 4, 4), (2, 3, 9, 9), (3, 5, 25, 25), (4, 7, 49, 49), (5, 11, 121, 121), (2, 4, 16, 16)]
+
+==============================================================================
+T2: Jones index multiplicativity under tensor product (Pimsner-Popa 1986)
+==============================================================================
+  [PASS] [M_{n_1 k_1} (x) M_{n_2 k_2} : M_{n_1} (x) M_{n_2}] = [M_{n_1 k_1} : M_{n_1}] * [M_{n_2 k_2} : M_{n_2}] = k_1^2 * k_2^2 = (k_1 k_2)^2
+         ((n1,k1,n2,k2), idx_1, idx_2, idx_tensor, product, dim_ratio): [((2, 3, 2, 5), 9, 25, 225, 225, 225), ((1, 2, 1, 3), 4, 9, 36, 36, 36), ((3, 4, 5, 7), 16, 49, 784, 784, 784), ((2, 2, 2, 2), 4, 4, 16, 16, 16), ((5, 11, 7, 13), 121, 169, 20449, 20449, 20449)]
+  [PASS] Prompt-specified case: n_1=2, k_1=3, n_2=2, k_2=5: [M_6 : M_2] = 9, [M_10 : M_2] = 25, [M_60 : M_4] = 225 = 9 * 25
+         idx_1=[M_6 : M_2]=9, idx_2=[M_10 : M_2]=25, idx_tensor=[M_60 : M_4]=225
+
+==============================================================================
+T3: Log-additivity of Jones-index-log under tensor product
+==============================================================================
+  [PASS] log(a*b) = log(a) + log(b) symbolically (universal log-of-product identity)
+         sympy.simplify(log(a*b) - log(a) - log(b)) = 0
+  [PASS] log[M_{n_1 k_1} (x) M_{n_2 k_2} : M_{n_1} (x) M_{n_2}] = log[M_{n_1 k_1} : M_{n_1}] + log[M_{n_2 k_2} : M_{n_2}] at exact sympy precision
+         (k_1, k_2, log_diff): [(3, 5, '0'), (2, 7, '0'), (11, 13, '0')]
+
+==============================================================================
+T4: UHF Hilbert dim factorization on disjoint sub-registers
+==============================================================================
+  [PASS] dim(H_A) * dim(H_B) = dim(H_{A u B}); trivial register-extension Jones index = 2^|extra| on UHF (per-site M_2(C))
+         (m_A, m_B, dim_A*dim_B, dim_AuB, trivial_extension_index): [(1, 1, 4, 4, 2), (1, 2, 8, 8, 4), (2, 2, 16, 16, 4), (2, 3, 32, 32, 8), (3, 3, 64, 64, 8), (3, 4, 128, 128, 16)]
+
+==============================================================================
+T5: F_p counterexample family does NOT arise from any natural Jones-index quantity
+==============================================================================
+  [PASS] F_p[J] distinguishes different J-values for p != 0 (p in {-2, -1, 1/2, 1, 2, 3} on r_1=2 vs r_2=3)
+         (p, F_p(r_1), F_p(r_2)): [(-2.0, '1/4', '1/9'), (-1.0, '1/2', '1/3'), (0.5, 'sqrt(2)', 'sqrt(3)'), (1.0, '2', '3'), (2.0, '4', '9'), (3.0, '8', '27')]
+  [PASS] Trivial register-extension Jones index 2^|extra| is J-INDEPENDENT (does not distinguish r_1 from r_2)
+         trivial_jones_index = 2^2 = 4, log = log(4)
+  [PASS] Net: no natural J-independent Jones-index quantity recovers W[J] or F_p[J]; identification requires admitted J-dependent inclusion (Pattern-L subfactor-identification vocabulary)
+         Trivial register-extension Jones index = 2^|extra| (J-indep) cannot equal W[J] (J-dep); J-dependent inclusion = selection step = P1
+
+==============================================================================
+T6: Pimsner-Popa entropy-of-inclusion formula S(tau|_M || tau|_N) = log[M:N] for tracial state on type I inclusion
+==============================================================================
+  [PASS] Pimsner-Popa entropy log[M_{nk}:M_n] = log(k^2) = 2 log k at exact sympy precision
+         (n, k, log_idx, 2_log_k): [(1, 2, 'log(4)', '2*log(2)'), (2, 3, 'log(9)', '2*log(3)'), (3, 5, 'log(25)', '2*log(5)')]
+
+==============================================================================
+T7: Identification W[J] = log[A(D+J):A(D)] requires J-dependent inclusion
+==============================================================================
+  [PASS] W[j=0] = 0 at a=2 (W is J-dependent; vanishes at zero source)
+         W[0] = 0
+  [PASS] W[j=1] != W[j=2] at a=2 (W is non-trivially J-dependent)
+         W[j=1] = log(5/4), W[j=2] = log(2)
+  [PASS] Trivial Jones-index log = log(4) = 2 log 2 is J-INDEPENDENT (constant for any j); cannot equal W[J]
+         trivial_log = log(4), 2 log 2 = 2*log(2)
+  [PASS] Net: identification W[J] = log[A(D+J):A(D)] requires J-DEPENDENT inclusion; selection of J-dependent inclusion IS P1 selection step in Pattern-L subfactor-identification vocabulary
+         No canonical J-dependent inclusion identified; admission of J-dependent inclusion = P1 selection
+
+==============================================================================
+T8: Live-ledger context rows use current retained-grade rules
+==============================================================================
+  [PASS] cl3_complexification_split_narrow_theorem_note_2026-05-10.effective_status is current retained-grade
+         actual = retained
+  [PASS] cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10 is present as retained context or boxed decoration
+         actual = decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10
+  [PASS] observable_principle_from_axiom_note context row exists; status is not load-bearing here
+         effective_status = audited_conditional
+  [PASS] observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17 context row exists; status is not load-bearing here
+         effective_status = unaudited
+  [PASS] observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21 context row exists; status is not load-bearing here
+         effective_status = unaudited
+  [PASS] observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21 context row exists; status is not load-bearing here
+         effective_status = unaudited
+  [PASS] staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16 context row exists; status is not load-bearing here
+         effective_status = audited_conditional
+
+==============================================================================
+T9: Scope boundary -- admission and non-promotion language
+==============================================================================
+  [PASS] note contains admission string: "honest negative finding"
+         present=True
+  [PASS] note contains admission string: "P1 is not closed positively"
+         present=True
+  [PASS] note contains admission string: "Pattern-L"
+         present=True
+  [PASS] note contains admission string: "Jones-index identification circularity"
+         present=True
+  [PASS] note contains admission string: "selection step"
+         present=True
+  [PASS] note contains admission string: "identification step"
+         present=True
+  [PASS] note contains admission string: "J-dependent inclusion"
+         present=True
+  [PASS] note contains admission string: "J-independent"
+         present=True
+  [PASS] note avoids forbidden status-promotion strings
+         forbidden_hits=[]
+
+==============================================================================
+T10: Source-note boundary
+==============================================================================
+  [PASS] Claim type declared no_go
+  [PASS] Status authority declares independent audit lane only
+  [PASS] Source-note proposal disclaimer present
+  [PASS] no forbidden overclaim strings present
+         hits=[]
+
+=== TOTAL: PASS=34, FAIL=0 ===
+
+----- stderr -----
+

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/pmns_oriented_cycle_two_prong_composition_runner.py
+runner_sha256: 588db9634774572a559a83e0203ac41f3eecf25c5d998e743881bf82ada21c99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+PASS (B1): for 4 (c_1, c_2, c_3) tuples, P_23 A_fwd^dagger P_23 = bar{c_3} E_12 + bar{c_2} E_23 + bar{c_1} E_31.
+PASS (B1 sat): antiunitary condition satisfied for 3 (c_1, c_3 conjugate-pair, c_2 real) test points.
+PASS (B2): A_act at sole-axiom free point (x=1, y=0, delta=0) equals I_3.
+PASS (B3a): I_3 satisfies cyclic covariance C I_3 C^{-1} = I_3 (trivially).
+PASS (B3b): I_3 has zero coefficients on the forward-cycle channel E_12, E_23, E_31.
+PASS (B3c): swap-conjugation P_23 I_3 P_23 = I_3 (I_3 is in the P_23-fixed family).
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: bounded bridge passes; both auditor-flagged premises (antiunitary + free-point I_3) close via cited sibling narrow theorems, satisfying the parent's two-prong missing_bridge_theorem hint.
+
+----- stderr -----
+

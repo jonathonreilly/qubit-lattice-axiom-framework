@@ -1,0 +1,55 @@
+========================================================================
+FINITE TENSOR-PRODUCT TRANSLATION GROUP COMPOSITION
+========================================================================
+
+------------------------------------------------------------------------
+TEST 0: load-bearing tensor-product bridge is retained-grade
+------------------------------------------------------------------------
+  tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25
+  bridge ledger effective-status field: retained
+  STATUS: PASS
+
+  finite block: 2x2x2, sites = 8, dim(H) = 256
+
+------------------------------------------------------------------------
+TEST 1: identity and unitarity
+------------------------------------------------------------------------
+  ||T_0 - I|| = 0.000e+00
+  max unitarity deviation = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 2: closure T_a T_b = T_(a+b)
+------------------------------------------------------------------------
+  checked 64 ordered pairs
+  max ||T_a T_b - T_(a+b)|| = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 3: commutativity [T_a,T_b] = 0
+------------------------------------------------------------------------
+  max ||[T_a,T_b]|| = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 4: inverse T_-a = T_a^dag
+------------------------------------------------------------------------
+  max inverse deviation = 0.000e+00
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 5: finite quotient faithfulness
+------------------------------------------------------------------------
+  kernel = [(0, 0, 0)]
+  distinct translations = 8
+  expected distinct translations = 8
+  STATUS: PASS
+
+========================================================================
+  Test 0 (bridge retained-grade):                    PASS
+  Test 1 (identity/unitarity):                       PASS
+  Test 2 (closure):                                  PASS
+  Test 3 (commutativity):                            PASS
+  Test 4 (inverse):                                  PASS
+  Test 5 (finite quotient faithfulness):             PASS
+  OVERALL: PASS

@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_su2_witten_z2_anomaly.py
+runner_sha256: 413853ecebfaf3287c328da64f0f143a4fbd78ac2540446b788917871cc80f17
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+SU(2) Witten Z_2 global anomaly retained-count audit
+========================================================================
+[PASS] Q_L contributes one SU(2) Weyl doublet per color: Q_L count=3
+[PASS] L_L contributes one SU(2) Weyl doublet: L_L count=1
+[PASS] right-handed retained fields are SU(2) singlets in this count: RH count=0
+[PASS] one-generation retained Witten count is N_c + 1: 4 = 3+1
+[PASS] per-generation retained count is four: N_D(one gen)=4
+[PASS] per-generation Witten anomaly cancels: 4 mod 2 = 0
+[PASS] three-generation retained count is twelve: N_D(three gen)=12
+[PASS] three-generation Witten anomaly cancels: 12 mod 2 = 0
+[PASS] extension scenario: retained total: N_D=12, mod2=0
+[PASS] extension scenario: one extra lepton-like chiral doublet: N_D=13, mod2=1
+[PASS] extension scenario: one quark-like chiral doublet with three colors: N_D=15, mod2=1
+[PASS] extension scenario: one full retained-style generation: N_D=16, mod2=0
+[PASS] extension scenario: one vectorlike weak-doublet pair: N_D=14, mod2=0
+[PASS] extension scenario: one full mirror retained-style generation: N_D=16, mod2=0
+[PASS] extension scenario: remove one Q_L color copy: N_D=11, mod2=1
+[PASS] extension scenario: remove one complete retained-style generation: N_D=8, mod2=0
+[PASS] per-generation N_c=1 parity rule: N_D/gen=2
+[PASS] per-generation N_c=2 parity rule: N_D/gen=3
+[PASS] per-generation N_c=3 parity rule: N_D/gen=4
+[PASS] per-generation N_c=4 parity rule: N_D/gen=5
+[PASS] per-generation N_c=5 parity rule: N_D/gen=6
+[PASS] per-generation N_c=6 parity rule: N_D/gen=7
+[PASS] per-generation N_c=7 parity rule: N_D/gen=8
+[PASS] retained N_c=3 is safe for any number of retained-style generations: n_gen*(3+1) is always even
+[PASS] global rule is total N_D parity, not N_c parity alone: example: N_c=4,n_gen=2 gives N_D=10 even
+[PASS] retained N_c=3,n_gen=3 gives total N_D=12: N_D=12
+[PASS] hypothetical N_c=4,n_gen=3 would be anomalous: N_D=15
+[PASS] 0 bosonic Higgs doublets do not change the Witten count: N_D(one gen)=4
+[PASS] 1 bosonic Higgs doublets do not change the Witten count: N_D(one gen)=4
+[PASS] 2 bosonic Higgs doublets do not change the Witten count: N_D(one gen)=4
+[PASS] 5 bosonic Higgs doublets do not change the Witten count: N_D(one gen)=4
+[PASS] bosonic SU(2) scalar doublet contributes zero: H count=0
+[PASS] scope is fundamental SU(2) Weyl-doublet Witten count: higher-isospin representations are outside this retained-content audit
+[PASS] perturbative anomaly equations remain separate: handled by ANOMALY_FORCES_TIME and hypercharge uniqueness runners
+[PASS] B-L gauging remains a separate theorem: handled by frontier_bminusl_anomaly_freedom.py
+
+TOTAL: PASS=35, FAIL=0
+
+----- stderr -----
+

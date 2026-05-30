@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py
+runner_sha256: 521fcca893c56dad5ecbdbb27ace2928a1afc5c12164255aedd02fe5a68b764d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification of (P1) linearity, (P2) parity,
+(P3) same-point cancellation under explicit inputs (I1)-(I2)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  symbolic node count N = 5
+  symbolic kernel values g_i = (g1, g2, g3, g4, g5)
+  abstract charge symbol n (positive integer) = n
+  abstract charge symbol q (real) = q
+
+----------------------------------------------------------------------------------------
+Part 1: pointwise (P1) F({(z_0, +n)}) = n * F({(z_0, +1)})
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) F({(z_0, +n)})[i] - n * F({(z_0, +1)})[i] reduces to 0 pointwise  (componentwise diffs = (0, 0, 0, 0, 0))
+  [PASS (A)] (P1) F({(z_0, +n)})[i] free symbols equal {n, g_i} pointwise  (sample free_symbols of F[0] = {n, g1})
+
+----------------------------------------------------------------------------------------
+Part 2: pointwise (P2) F({(z_0, -1)}) = - F({(z_0, +1)})
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P2) F({(z_0, -1)})[i] + F({(z_0, +1)})[i] reduces to 0 pointwise  (componentwise diffs = (0, 0, 0, 0, 0))
+
+----------------------------------------------------------------------------------------
+Part 3: pointwise (P3) F({(z_0, +1), (z_0, -1)}) = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P3) F({(z_0, +1), (z_0, -1)})[i] reduces to 0 pointwise  (componentwise components = (0, 0, 0, 0, 0))
+
+----------------------------------------------------------------------------------------
+Part 4: algebraic delta_z = 0 corollary (C1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) delta_z(same-point +1/-1, q_test) reduces to 0 algebraically  (got 0)
+  [PASS (A)] (C1) delta_z expression has empty free symbols after simplify  (free_symbols = set())
+
+----------------------------------------------------------------------------------------
+Part 5: derivable corollaries (C2)-(C5)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) F({(z_0, q), (z_0, -q)})[i] = 0 pointwise for abstract q  (sample comp[0] = 0)
+  [PASS (A)] (C3) F({(z_0, q_a), (z_0, q_b)})[i] = (q_a + q_b) * g_i pointwise  (sample comp[0] = g1*q_a + g1*q_b vs target g1*(q_a + q_b))
+  [PASS (A)] (C4) F({(z_a, q), (z_b, q)})[i] = q * (g_a[i] + g_b[i]) pointwise  (sample comp[0] = ga1*q + gb1*q vs target q*(ga1 + gb1))
+  [PASS (A)] (C5) F({(z_0, c*q)})[i] = c * F({(z_0, q)})[i] pointwise  (sample comp[0] diff = 0)
+
+----------------------------------------------------------------------------------------
+Part 6: numerical FP cross-check at one independent random sample
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) FP sanity at sample (n=3, g_i in {0.123,0.456,0.789,0.234,0.567}): pointwise LHS = n * RHS  (max |diff| = 2.220e-16)
+  [PASS (A)] (P3) FP sanity at same sample: pointwise neutral pair = 0  (max |F_neutral[i]| = 0.000e+00)
+
+----------------------------------------------------------------------------------------
+Part 7: counterfactual probes (charge slot is load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual: q-dependent kernel (charge^2 * g) breaks (P1) n-linearity  (sample comp[0] diff = g1*n*(n - 1) (nonzero confirms (I1)'s pointwise linearity in charge is load-bearing))
+  [PASS (A)] counterfactual: parity-blind kernel (abs(q) * g) breaks (P2) parity  (sample comp[0] sum = 2*g1 (nonzero confirms (I1)'s signed-q slot is load-bearing))
+  [PASS (A)] counterfactual: nonlinear pointwise rule (q + q^2 * g) breaks (P3) cancellation  (sample comp[0] = 2*g1 (nonzero confirms (I1)'s linear-superposition form is load-bearing))
+
+----------------------------------------------------------------------------------------
+Part 8: parent runner correspondence check
+----------------------------------------------------------------------------------------
+  [PASS (A)] parent-runner correspondence: (I1) summation matches `field[i] += charge * SOURCE_STRENGTH / r^FIELD_POWER`  (verified by inspection of scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py:_field_from_sources)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (P1) F({(z_0, +n)}) = n * F({(z_0, +1)}) pointwise in g_i
+    (P2) F({(z_0, -1)}) = - F({(z_0, +1)}) pointwise in g_i
+    (P3) F({(z_0, +1), (z_0, -1)}) = 0 pointwise in g_i
+    (C1) delta_z(same-point +1/-1, q_test) = 0 by Phi(0, q_test) = centroid_free
+    Four corollary identities (C2)-(C5) all reduce to 0 pointwise
+    FP numerical cross-check passes at one independent random sample
+    Counterfactual: q-dependent kernel breaks (P1) n-linearity
+    Counterfactual: parity-blind kernel breaks (P2)
+    Counterfactual: nonlinear pointwise rule breaks (P3)
+    Parent-runner correspondence: (I1) matches verbatim _field_from_sources
+
+========================================================================================
+TOTAL: PASS=16, FAIL=0
+========================================================================================

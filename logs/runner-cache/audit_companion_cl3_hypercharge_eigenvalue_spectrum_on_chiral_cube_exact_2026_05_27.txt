@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py
+runner_sha256: eb2886b8804ceb8e771073a42f6a4b55c65159a85e97597c153183804c3076ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.33
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27
+Goal: sympy verification of the operator Y eigenvalue spectrum
+      {+1/3 (mult 6), -1 (mult 2)} on the chiral cube (C^2)^{otimes 3}.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: P_swap structural sanity
+----------------------------------------------------------------------------------------
+  [PASS (A)] P_swap is real symmetric (P_swap^T = P_swap)
+  [PASS (A)] P_swap^2 = I_8
+
+----------------------------------------------------------------------------------------
+Part 2: (S1) Projector identities for P_symm, P_antisymm
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1) P_symm * P_symm = P_symm
+  [PASS (A)] (S1) P_antisymm * P_antisymm = P_antisymm
+  [PASS (A)] (S1) P_symm + P_antisymm = I_8
+  [PASS (A)] (S1) P_symm * P_antisymm = 0_8 (orthogonality)
+  [PASS (A)] (S1) P_symm Hermitian (P_symm^T = P_symm; real)
+
+----------------------------------------------------------------------------------------
+Part 3: (S2) Rank counts via trace of orthogonal projectors
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S2) Tr(P_symm) = 6  (got 6)
+  [PASS (A)] (S2) Tr(P_antisymm) = 2  (got 2)
+
+----------------------------------------------------------------------------------------
+Part 4: (S3) Tracelessness Tr(Y) = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S3) Tr(Y) = 0 (exact rational)  (got 0)
+
+----------------------------------------------------------------------------------------
+Part 5: (S4) Eigenvalue spectrum {+1/3 (mult 6), -1 (mult 2)}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4) Y * P_symm = (+1/3) P_symm
+  [PASS (A)] (S4) Y * P_antisymm = (-1) P_antisymm
+  [PASS (A)] (S4) Y has exactly 2 distinct eigenvalues  (got 2: [1/3, -1])
+  [PASS (A)] (S4) Eigenvalue +1/3 has algebraic multiplicity exactly 6  (got mult(1/3) = 6)
+  [PASS (A)] (S4) Eigenvalue -1 has algebraic multiplicity exactly 2  (got mult(-1) = 2)
+
+----------------------------------------------------------------------------------------
+Part 6: (S5) Burnside dark-state |111> placement
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S5) <111|P_symm|111> = 1  (got 1)
+  [PASS (A)] (S5) <111|P_antisymm|111> = 0  (got 0)
+  [PASS (A)] (S5) Y |111> = (+1/3) |111>  (max nonzero residual cell 0)
+
+----------------------------------------------------------------------------------------
+Part 7: (S6) Antisymmetric block spans the Y = -1 eigenspace
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S6) P_symm @ v_{ant, 0} = 0
+  [PASS (A)] (S6) P_symm @ v_{ant, 1} = 0
+  [PASS (A)] (S6) P_antisymm @ v_{ant, 0} = v_{ant, 0}
+  [PASS (A)] (S6) P_antisymm @ v_{ant, 1} = v_{ant, 1}
+  [PASS (A)] (S6) Y @ v_{ant, 0} = (-1) v_{ant, 0}
+  [PASS (A)] (S6) Y @ v_{ant, 1} = (-1) v_{ant, 1}
+
+----------------------------------------------------------------------------------------
+Part 8: Burnside hw=3 sanity
+----------------------------------------------------------------------------------------
+  [PASS (A)] Burnside hw=3 subspace is 1-dim (only |111>)  (got 1 hw=3 basis vectors)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 25
+  FAIL = 0
+  TOTAL = 25
+
+  Note: CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md
+  Claim ID: cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27
+
+VERDICT: companion audit-friendly exact-symbolic verification of
+         (S1)-(S6) PASSES. The operator Y on (C^2)^{otimes 3}
+         has spectrum {+1/3 (mult 6), -1 (mult 2)} at exact
+         rational precision; the dark hw=3 Burnside singlet
+         |111> carries Y = +1/3.
+
+----- stderr -----
+

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_coarse_grained_exterior_law.py
+runner_sha256: 5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.51
+status: ok
+----- stdout -----
+Coarse-grained exterior point-source law
+========================================================================
+
+exact local O_h family:
+  R_match=3.0  a=0.094658  shell_rms=0.126  shell_max_rel=0.841  direct=2.978e-02  coarse=4.123e-05
+  R_match=3.5  a=0.083700  shell_rms=0.125  shell_max_rel=0.628  direct=1.947e-02  coarse=1.804e-05
+  R_match=4.0  a=0.078805  shell_rms=0.125  shell_max_rel=0.533  direct=8.590e-03  coarse=9.039e-06
+  R_match=4.5  a=0.068913  shell_rms=0.111  shell_max_rel=0.340  direct=7.171e-04  coarse=4.560e-06
+  R_match=5.0  a=0.063383  shell_rms=0.094  shell_max_rel=0.233  direct=9.083e-04  coarse=2.535e-06
+
+exact finite-rank family:
+  R_match=3.0  a=0.357088  shell_rms=0.126  shell_max_rel=0.841  direct=9.851e-02  coarse=7.393e-05
+  R_match=3.5  a=0.315750  shell_rms=0.125  shell_max_rel=0.628  direct=9.650e-02  coarse=3.848e-05
+  R_match=4.0  a=0.297284  shell_rms=0.125  shell_max_rel=0.533  direct=9.638e-03  coarse=2.125e-05
+  R_match=4.5  a=0.259967  shell_rms=0.111  shell_max_rel=0.340  direct=2.793e-02  coarse=1.188e-05
+  R_match=5.0  a=0.239107  shell_rms=0.094  shell_max_rel=0.233  direct=1.039e-02  coarse=7.028e-06
+[BOUNDED] PASS: local O_h source admits a vacuum-close coarse-grained point-source exterior law
+    at R_match=4.5: direct=7.171e-04, coarse=4.560e-06, shell RMS=0.111
+[BOUNDED] PASS: finite-rank source also admits a vacuum-close harmonic projection after coarse-graining
+    at R_match=4.5: direct=2.793e-02, coarse=1.188e-05, shell RMS=0.111
+[BOUNDED] PASS: remaining gravity gap is localized to matching, not the exterior harmonic law
+    O_h improvement=157.3x, finite-rank improvement=2351.7x
+
+========================================================================
+SUMMARY
+========================================================================
+PASS=3 FAIL=0 TOTAL=3
+All checks passed.
+
+----- stderr -----
+

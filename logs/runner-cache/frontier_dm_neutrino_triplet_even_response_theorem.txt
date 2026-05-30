@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_neutrino_triplet_even_response_theorem.py
+runner_sha256: 6c41a00ff5d05d19adb6e7ea434633abf4f95566106f36884b6ba3504bbbfa11
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+========================================================================================
+DM NEUTRINO TRIPLET EVEN-RESPONSE THEOREM
+========================================================================================
+
+========================================================================================
+PART 1: THE CP TENSOR FACTORIZES INTO ODD SOURCE TIMES EVEN RESPONSE
+========================================================================================
+  [PASS] cp1 matches the exact odd-times-even response law  (cp1=-0.030280, E1=0.087150)
+  [PASS] cp2 matches the exact odd-times-even response law  (cp2=0.096122, E2=0.276650)
+  [PASS] So the remaining even response sector is exactly E1=delta+rho and E2=A+b-c-d  (E1=0.087150, E2=0.276650)
+
+========================================================================================
+PART 2: THE EVEN RESPONSE CHANNELS ARE INVARIANT UNDER CHARACTER CONJUGATION
+========================================================================================
+  [PASS] E1 and E2 are even while gamma is odd under phi -> -phi  (E1=0.087150, E2=0.276650, gamma=0.521174)
+  [PASS] The intrinsic CP tensor flips sign with gamma at fixed even response  (cp+=( -0.030280, 0.096122 ))
+
+========================================================================================
+PART 3: THE BRANCH RECORDS THE EVEN RESPONSE FORM CLEANLY
+========================================================================================
+  [PASS] The CP theorem note records E1 and E2 explicitly
+  [PASS] The response theorem note links the breaking-triplet CP theorem dependency
+
+========================================================================================
+PART 4: SYMBOLIC-PARAMETER PROOF OF THE UNIVERSAL TWO-CHANNEL FACTORIZATION
+========================================================================================
+  [PASS] Symbolic H is Hermitian over the seven real parameters
+  [PASS] cp1 reduces identically to -2 gamma (delta + rho) / 3 over symbolic parameters  (cp1 - target = 0)
+  [PASS] cp2 reduces identically to  2 gamma (A + b - c - d) / 3 over symbolic parameters  (cp2 - target = 0)
+  [PASS] cp1 even-channel exclusivity: only the (delta + rho) combination enters  (d/dA=0, d/db=0, d/dc=0, d/dd=0, d/ddelta=-2*gamma/3, d/drho=-2*gamma/3)
+  [PASS] cp2 even-channel exclusivity: only the (A + b - c - d) combination enters  (d/dA=2*gamma/3, d/db=2*gamma/3, d/dc=-2*gamma/3, d/dd=-2*gamma/3, d/ddelta=0, d/drho=0)
+  [PASS] Combined: cp1 and cp2 each depend on a single even channel (no further even channel enters)
+
+========================================================================================
+SUMMARY: PASS=13 FAIL=0
+========================================================================================
+
+----- stderr -----
+

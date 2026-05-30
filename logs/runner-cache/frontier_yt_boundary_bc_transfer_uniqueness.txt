@@ -1,0 +1,229 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
+runner_sha256: 01580e906465246e9681e2e31a9aed7c2be8545b93525909f22091f25f1cf018
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.49
+status: ok
+----- stdout -----
+==============================================================================
+BOUNDARY BC-TRANSFER UNIQUENESS THEOREM
+==============================================================================
+
+==============================================================================
+SECTION 1: Canonical-surface inputs
+==============================================================================
+
+  alpha_LM             = 0.090668     (retained, alpha_bare/u_0)
+  alpha_s(v) = CMT     = 0.103304     (block 10 narrow, alpha_bare/u_0^2)
+  g_lattice(M_Pl)      = 1.067411     (sqrt(4 pi alpha_LM))
+  Ward target y_t(M_Pl) = g_lattice/sqrt(6)  = 0.435769
+  v_derived             = 2.4628e+02 GeV (hierarchy theorem)
+  ln(M_Pl / v_derived)  = 38.442   (17-decade segment)
+
+  Scan interval X = y_t(v) in [0.5, 1.2]
+  Chosen below Yukawa-Landau-like onset at X_pole ~ 1.27 (see (T5))
+
+  [PASS (D)] section1_v_derived_matches_canonical
+         v_derived = 246.28 GeV matches canonical 246.28 GeV
+  [PASS (D)] section1_ward_target_value
+         WARD_TARGET = 0.435769 matches 0.43577 to 5e-4
+  [PASS (D)] section1_gv_ordering
+         g3(v)=1.1394 > g2(v)=0.6463 > g1(v)=0.4640  (expected SM ordering)
+
+==============================================================================
+SECTION 2: (T1) Globalness / max|y_t| bounded on [0.5, 1.2]
+==============================================================================
+
+  Sample max|y_t| on trajectory across X grid; verify bounded.
+
+    X = 0.500:  max|y_t on trajectory| = 0.5000
+    X = 0.600:  max|y_t on trajectory| = 0.6000
+    X = 0.700:  max|y_t on trajectory| = 0.7000
+    X = 0.800:  max|y_t on trajectory| = 0.8000
+    X = 0.900:  max|y_t on trajectory| = 0.9000
+    X = 1.000:  max|y_t on trajectory| = 1.0000
+    X = 1.100:  max|y_t on trajectory| = 1.1000
+    X = 1.200:  max|y_t on trajectory| = 1.2000
+
+  Max-of-max|y_t| across grid: 1.2000
+
+  [PASS (D)] T1_all_trajectories_finite
+         All trajectories finite (no integrator blow-up) across the scan grid
+  [PASS (D)] T1_max_yt_bounded_by_X_HIGH_plus_eps
+         max|y_t| = 1.2000 < 1.25 across [0.5, 1.2] (no upward amplification)
+  [PASS (D)] T1_max_yt_no_amplification
+         max|y_t| on trajectory <= X + 0.03 across the grid (trajectory does NOT exceed initial value within tolerance)
+  [PASS (D)] T1_max_yt_starts_at_X
+         max|y_t| at endpoints tracks X (no spurious amplification at low X)
+
+==============================================================================
+SECTION 3: (T2) Strict monotonicity on 33-point grid
+==============================================================================
+
+  Compute Phi on a fine X-grid; verify strict monotonicity by finite differences.
+
+  Sample of (X, Phi(X)):
+    X = 0.5000  ->  Phi = 0.156803
+    X = 0.5875  ->  Phi = 0.191064
+    X = 0.6750  ->  Phi = 0.229783
+    X = 0.7625  ->  Phi = 0.274942
+    X = 0.8500  ->  Phi = 0.329828
+    X = 0.9375  ->  Phi = 0.400472
+    X = 1.0250  ->  Phi = 0.499649
+    X = 1.1125  ->  Phi = 0.661491
+    X = 1.2000  ->  Phi = 1.033817
+    X = 1.2000  ->  Phi = 1.033817
+
+  Of 32 forward differences:
+    32 strictly increasing
+    0 non-increasing
+
+  [PASS (D)] T2_strict_monotonicity
+         All 32 forward differences > 0 (strictly increasing on 33-point grid)
+  [PASS (D)] T2_endpoint_ordering
+         Phi(0.5) = 0.156803 < Phi(1.2) = 1.033817
+  [PASS (D)] T2_min_forward_diff_positive
+         min forward diff = 8.225962e-03 > 0
+
+==============================================================================
+SECTION 4: (T3) Lipschitz constant L from finite differences
+==============================================================================
+
+  L_observed = max |Phi(X1) - Phi(X2)| / |X1 - X2| over the working grid.
+
+  Global samples on [0.5, 1.2]:
+    max local L  = 6.2692
+    min local L  = 0.3760
+    mean local L = 1.2529
+
+  Near-root samples on [0.9, 1.0]:
+    max local L  = 1.2071
+    min local L  = 0.8254
+    mean local L = 0.9943
+
+  Interpretation: near the root, a 1% perturbation in y_t(M_Pl)
+                  corresponds to ~ 1/L_observed_near = 0.828
+                  sensitivity in y_t(v).
+
+  [PASS (D)] T3_lipschitz_finite_global
+         L_observed_global = 6.2692 (finite, positive)
+  [PASS (D)] T3_lipschitz_global_below_bound
+         L_observed_global = 6.2692 < 10.0 (claimed bound)
+  [PASS (D)] T3_lipschitz_lower_bound_positive
+         min local L = 0.3760 > 0 (no zero-derivative points)
+  [PASS (D)] T3_lipschitz_near_root_below_bound
+         L_observed_near = 1.2071 < 1.5 (claimed near-root bound)
+
+==============================================================================
+SECTION 5: (T4) Unique-root via sign-change + brentq + monotonicity
+==============================================================================
+
+  Sign change: verify Phi(X_LOW) < WARD_TARGET < Phi(X_HIGH)
+
+    Phi(0.5) = 0.156803
+    WARD_TARGET = 0.435769
+    Phi(1.2) = 1.033817
+
+  [PASS (D)] T4_sign_change_in_interval
+         Sign change Phi(X_LOW)=0.1568 < 0.4358 < Phi(X_HIGH)=1.0338
+  brentq on [0.5, 1.2]:  X* = 0.9726721479
+                                  Phi(X*) = 0.4357685988
+                                  residual = -5.55e-17
+
+  Independence-of-subinterval check:
+    [0.5, 1.1]:  X* = 0.9726721479
+    [0.7, 1.2]:  X* = 0.9726721479
+    [0.85, 1.1]:  X* = 0.9726721479
+
+  Max spread across subinterval roots: 5.31e-13
+
+  [PASS (D)] T4_all_subintervals_with_signchange_agree
+         All 3 sub-roots agree to 5.31e-13
+  [PASS (D)] T4_unique_root_from_T2_plus_signchange
+         Monotonicity (T2) + sign change on [X_LOW, X_HIGH] => unique root
+  [PASS (D)] T4_X_star_value_near_0p973
+         X* = 0.972672 matches parent runner value 0.973 (to 5e-3)
+
+==============================================================================
+SECTION 6: (T5) Yukawa-Landau onset at X_pole ~ 1.27
+==============================================================================
+
+  Extend the scan into [1.20, 1.30] and locate the Yukawa-Landau-like
+  onset to verify that the chosen scan interval [0.5, 1.2] is the maximal
+  well-defined range below the pole.
+
+  Extension scan in [1.2, 1.3]:
+    X = 1.200:  Phi =    1.034    max|y_t| =     1.200
+    X = 1.210:  Phi =    1.117    max|y_t| =     1.210
+    X = 1.220:  Phi =    1.222    max|y_t| =     1.222
+    X = 1.230:  Phi =    1.358    max|y_t| =     1.358
+    X = 1.240:  Phi =    1.546    max|y_t| =     1.546
+    X = 1.250:  Phi =    1.829    max|y_t| =     1.829
+    X = 1.260:  Phi =    2.333    max|y_t| =     2.333
+    X = 1.270:  Phi =    3.625    max|y_t| =     3.625
+    X = 1.280:  Phi =   13.127    max|y_t| =    13.127
+    X = 1.290:  Phi =   14.952    max|y_t| =    14.952
+    X = 1.300:  Phi =   14.951    max|y_t| =    14.955
+
+  First X in extension with Phi > 5:  X_pole ~ 1.280
+  Phi(X_pole)                          = 13.127
+
+  [PASS (D)] T5_phi_at_X12_bounded
+         Phi(1.2) = 1.0338 < 2.0 (chosen scan boundary still well-behaved)
+  [PASS (D)] T5_yukawa_landau_pole_exists_in_extension
+         Yukawa-Landau onset detected at X_pole = 1.280 > X_HIGH = 1.2 (extension shows blow-up)
+  [PASS (D)] T5_scan_interval_strictly_below_pole
+         Scan interval [0.5, 1.2] strictly below X_pole = 1.280
+  [PASS (D)] T5_root_well_inside_well_defined_region
+         X_pole - X* = 0.307 > 0.25 (root sits well inside well-defined region)
+
+==============================================================================
+SECTION 7: Stability of X* under integrator step size
+==============================================================================
+
+  Refine integrator max_step; X* should be stable to <= 1e-5.
+
+    max_step = 2.00:  X* = 0.9726721479
+    max_step = 1.00:  X* = 0.9726721479
+    max_step = 0.50:  X* = 0.9726721479
+    max_step = 0.20:  X* = 0.9726721479
+
+  Spread across step sizes: 2.28e-11
+
+  [PASS (D)] step_size_stability
+         X* stable to 2.28e-11 across integrator step sizes
+
+==============================================================================
+SECTION 8: SCORECARD
+==============================================================================
+
+  Backward-RGE map Phi : X = y_t(v) -> y_t(M_Pl)
+  on segment [ln v_derived, ln M_Pl] (Delta t = 38.442 natural-log units, ~17 decades).
+
+  Verified properties on scan interval X in [0.5, 1.2]:
+
+    (T1) Globalness:        YES  (max|y_t| <= 1.2000)
+    (T2) Monotonicity:      YES  (strict on 33-point grid; min diff > 0)
+    (T3) Lipschitz global:  L_observed = 6.2692
+    (T3) Lipschitz near root: L_observed_near = 1.2071
+    (T4) Unique root:       X* = 0.972672
+                             Phi(X*) = 0.435769
+    (T5) Yukawa-Landau:     X_pole ~ 1.280 (extension scan)
+
+  This positively closes the WELL-DEFINEDNESS prerequisite for claim (iv)
+  of YT_BOUNDARY_THEOREM.md (BC-transfer selects a unique trajectory).
+
+  Does NOT touch:
+    - parent claim (i)  domain separation        (interpretive)
+    - parent claim (iii) Ward-identity domain     (interpretive)
+    - parent claim (v)  non-perturbative bridge  (interpretive)
+
+  Elapsed: 0.8s
+
+  Counts: 23 PASS, 0 FAIL
+
+  All 23 checks passed.
+
+----- stderr -----
+

@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_cap_uniqueness.py
+runner_sha256: a7d5e017199ff21ece96fe07aa0089c8904fbfa3551b6a70cf93ade785baa606
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+[PASS] [A] note boundary contains: bounded finite construction certificate
+[PASS] [A] note boundary contains: The legacy row name contains "uniqueness"
+[PASS] [A] note boundary contains: For the explicit cubical-ball family constructed by the runner
+[PASS] [A] note boundary contains: No proof that closure is physically mandatory.
+[PASS] [A] note boundary contains: No proof that every admissible cap is PL-homeomorphic to the cone cap.
+[PASS] [A] note boundary contains: No proof that the compactified lattice is `PL S^3`.
+[PASS] [A] note boundary contains: No retained verdict, no direct ledger retag
+[PASS] [A] note omits forbidden overclaim: CLOSED at the paper bar
+[PASS] [A] note omits forbidden overclaim: The answer: cone-capping is the UNIQUE closure
+[PASS] [A] note omits forbidden overclaim: accepted named non-derivation imports usable as one-hop authorities
+[PASS] [A] note omits forbidden overclaim: Kawamoto-Smit homogeneity premise as accepted
+[PASS] [A] note omits forbidden overclaim: Perelman and Moise, the result is PL S^3
+
+=== R=2 finite cone-cap certificate ===
+[PASS] [A] R2: nonempty cubical ball (cubes=8)
+[PASS] [A] R2: nonempty boundary (quads=24)
+[PASS] [A] R2: boundary edge degree two (edges=72)
+[PASS] [A] R2: boundary connected
+[PASS] [A] R2: boundary vertex links are cycles
+[PASS] [A] R2: boundary chi equals two (chi=2)
+[PASS] [A] R2: cone boundary equals base triangulation (base=48 tris=48)
+[PASS] [A] R2: all non-base cone faces are paired (paired=72 stray=0)
+[PASS] [A] R2: apex link is boundary triangulation (link_tris=48)
+[PASS] [A] R2: cone cap chi equals one (chi=1)
+
+=== R=3 finite cone-cap certificate ===
+[PASS] [A] R3: nonempty cubical ball (cubes=56)
+[PASS] [A] R3: nonempty boundary (quads=96)
+[PASS] [A] R3: boundary edge degree two (edges=288)
+[PASS] [A] R3: boundary connected
+[PASS] [A] R3: boundary vertex links are cycles
+[PASS] [A] R3: boundary chi equals two (chi=2)
+[PASS] [A] R3: cone boundary equals base triangulation (base=192 tris=192)
+[PASS] [A] R3: all non-base cone faces are paired (paired=288 stray=0)
+[PASS] [A] R3: apex link is boundary triangulation (link_tris=192)
+[PASS] [A] R3: cone cap chi equals one (chi=1)
+
+=== R=4 finite cone-cap certificate ===
+[PASS] [A] R4: nonempty cubical ball (cubes=136)
+[PASS] [A] R4: nonempty boundary (quads=192)
+[PASS] [A] R4: boundary edge degree two (edges=576)
+[PASS] [A] R4: boundary connected
+[PASS] [A] R4: boundary vertex links are cycles
+[PASS] [A] R4: boundary chi equals two (chi=2)
+[PASS] [A] R4: cone boundary equals base triangulation (base=384 tris=384)
+[PASS] [A] R4: all non-base cone faces are paired (paired=576 stray=0)
+[PASS] [A] R4: apex link is boundary triangulation (link_tris=384)
+[PASS] [A] R4: cone cap chi equals one (chi=1)
+
+=== R=5 finite cone-cap certificate ===
+[PASS] [A] R5: nonempty cubical ball (cubes=304)
+[PASS] [A] R5: nonempty boundary (quads=312)
+[PASS] [A] R5: boundary edge degree two (edges=936)
+[PASS] [A] R5: boundary connected
+[PASS] [A] R5: boundary vertex links are cycles
+[PASS] [A] R5: boundary chi equals two (chi=2)
+[PASS] [A] R5: cone boundary equals base triangulation (base=624 tris=624)
+[PASS] [A] R5: all non-base cone faces are paired (paired=936 stray=0)
+[PASS] [A] R5: apex link is boundary triangulation (link_tris=624)
+[PASS] [A] R5: cone cap chi equals one (chi=1)
+
+S3 finite cone-cap construction certificate: PASS
+PASS=52 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,124 @@
+# /review-loop — Physics Review Loop
+
+Run the repo-native physics review loop from:
+
+`docs/ai_methodology/skills/review-loop/SKILL.md`
+
+## Invocation
+
+`/review-loop [focus] [--max-iterations N] [--no-fix] [--no-commit]`
+
+## Required Behavior
+
+1. Read the skill file above before acting.
+2. Review only branch/local changes against `origin/main` or `main`.
+3. Fan out the physics reviewers in parallel when the agent environment allows:
+   `CodeRunnerReviewer`, `PhysicsClaimReviewer`, `ImportSupportReviewer`,
+   `NatureRetentionReviewer`, `RepoGovernanceReviewer`, and optionally
+   `MethodologySkillReviewer`.
+4. Fix only verified, narrow findings. Demote overclaims instead of patching
+   missing science with prose.
+5. Enforce audit-system compatibility without running the independent audit:
+   no bare `retained` / `promoted` status lines, seed changed claims through
+   `docs/audit/scripts/run_pipeline.sh`, and require
+   `python3 docs/audit/scripts/audit_lint.py --strict` to pass.
+6. Treat review as the canonical science gate: the independent audit should be
+   mostly confirmatory. Block PASS when a changed claim has missing graph
+   dependencies, author-prewritten audit verdicts, stale retained-status
+   assumptions, or a runner that does not test the load-bearing bridge.
+7. For math-bearing runner/proof changes, do not trust PASS output alone:
+   independently cross-check load-bearing formulas, signs, factors,
+   normalizations, expected values, and edge cases before landing.
+8. Re-review only files changed by the fix pass, plus interacting files that
+   were already in the original changed-file set.
+9. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
+   preserve any durable, runner-backed lemma in the same requested landing path
+   with a canonical claim type, and explicitly reject only the pieces that
+   cannot be salvaged without new science.
+   Non-science audit/status or hygiene PRs still need a utility review:
+   salvage durable audit-graph, cache, queue, normalization, dependency-chain,
+   or audit-readiness repairs into source/tooling/pipeline changes and
+   regenerate generated surfaces instead of rejecting them just because they
+   are not theorem science.
+10. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
+   never land them unless the user explicitly asks for draft inspection without
+   landing.
+11. End with a concise report covering imports/support status, retained/bounded
+   disposition, salvage disposition, audit-readiness, commits, checks, and
+   remaining manual science.
+
+## Non-Negotiables
+
+- Every imported or measured value must be identified.
+- Support-only results must not be promoted to retained claims.
+- Source-note `Status:` lines may not contain bare `retained` or `promoted`;
+  use `proposed_retained`, `proposed_promoted`, `support`, `bounded`, or
+  `open`. The audit lane alone grants effective retained status.
+- Authors and review packets must not prefill audit verdicts such as
+  `target_audit_status: audited_clean`, `audit_status = audited_clean`, or
+  `effective_status = retained`; say that audit status is set only by the
+  independent audit lane and effective status is pipeline-derived.
+- Load-bearing dependencies in changed claim notes must be markdown links that
+  seed the citation graph. After the audit pipeline, changed claim rows must
+  show the intended deps in `docs/audit/data/audit_ledger.json`.
+- New landed science must use explicit repo naming from
+  `docs/repo/CONTROLLED_VOCABULARY.md`. Do not approve bare overloaded labels
+  such as `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` as theorem/lane
+  names, table labels, claim scopes, runner headlines, or review findings.
+  Use names such as `one-qubit operator algebra` (the local algebra
+  fixed by the canonical A1 "Reality is a qubit at every lattice site"
+  per `MINIMAL_AXIOMS_2026-05-20.md`,
+  equivalently `physical Cl(3,0) ≅ M_2(ℂ)`), `Z^3 spatial substrate`,
+  `Koide Frobenius-equipartition condition`, or `Lie type A_1`; the
+  `M_2(ℂ)` / `Cl(3,0)` / qubit names are co-equal labels for the
+  same retained algebra-isomorphism class. Keep shorthand only as a
+  parenthetical legacy alias.
+- `retained`, `retained_bounded`, and `retained_no_go` are the retained-grade
+  dependency statuses. Reviewers must reject stale exact-status checks that
+  require only `effective_status = retained` when bounded/no-go retained
+  grades are valid.
+- `/review-loop` must not apply audit verdicts. It prepares
+  audit-compatible review surfaces and reports which proposed claims require
+  the independent audit worker.
+- `/review-loop` is review, not audit. It may run the compatibility pipeline
+  and strict lint, but it must not claim an audit verdict, apply auditor
+  results, or describe its review as an audit.
+- `/review-loop` must not create or open pull requests. If science is
+  salvageable, land the source-only salvage and dependency-chain/audit-queue
+  repairs as part of the current landing path; otherwise close or reject the
+  existing PR with a clear reason.
+- `/review-loop` must ignore draft-status PRs. Drafts are not candidates for
+  landing, review-loop comments, or salvage unless the user explicitly asks for
+  draft inspection without landing.
+- When integrating PRs, `/review-loop` must not checkout whole files from a
+  stale PR head over current `main`. Compute the PR merge base, detect overlap
+  between files changed on current `main` and files changed by the PR, and use
+  three-way patch/rebase/merge/cherry-pick integration for overlapping paths.
+  Whole-file checkout is allowed only for new paths or paths proven unchanged
+  on current `main` since the PR base.
+- The repo baseline is "Reality is a qubit at every lattice site" on
+  the cubic lattice `Z^3` (equivalently, one-qubit operator algebra
+  `M_2(ℂ) ≅ Cl(3,0)` plus the `Z^3` substrate). Name it explicitly;
+  do not compress it to bare `A1` / `A2` labels. Do not classify that
+  baseline as a new axiom, new admitted premise, regulator
+  interpretation, or optional theory language. Do not let that baseline
+  silently promote separate species identifications, selectors, readout
+  bridges, empirical matches, or parent theorem/status surfaces.
+- Nature-grade retention requires derived or explicitly admitted inputs,
+  decisive artifact support, clear falsifiers, and no hidden semantic bridge.
+- Math-bearing runners require independent formula review: PASS lines do not
+  establish that the runner's expression, sign, factor, normalization, or
+  expected value is correct.
+- Branch-local or draft-PR vocabulary, including language leaked from PR230 or
+  similar long-lived drafts, must be translated to native repo language before
+  landing.
+- Closing a PR must not discard durable science. Salvage narrow
+  theorem/no-go/open-gate lemmas into canonical source-only landing commits
+  when the runner directly supports the narrowed claim and no audit
+  verdict/status language is carried over.
+- Closing a PR must not discard durable audit-process value either. A generated
+  audit/status diff can be evidence of a real repo defect; land the underlying
+  source/tooling/pipeline repair when it strengthens auditability, but never
+  treat hand-authored generated status as the authority.
+- Live unresolved review findings belong in `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
+- Long historical packets belong in `docs/work_history/repo/review_feedback/`.

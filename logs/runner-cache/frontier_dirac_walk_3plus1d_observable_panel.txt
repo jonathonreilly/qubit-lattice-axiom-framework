@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dirac_walk_3plus1d_observable_panel.py
+runner_sha256: a83db713cce4556d432e324314a578e555c744898cc7b5dc56028d80e0ce834e
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.41
+status: ok
+----- stdout -----
+==============================================================================
+DIRAC WALK 3+1D OBSERVABLE PANEL
+==============================================================================
+n=21, center=10, mass=0.3, strength=0.0005, offset=3
+Observables: centroid, peak, first-arrival, early shell accumulation, current, shell
+
+   N      centroid          peak  first+   early_shell       current         shell   sig  cons
+--------------------------------------------------------------------------------------------
+  10   -5.6732e-05   +0.0000e+00       6   -3.2937e-06   -1.3245e-06   -3.0502e-07  A0AA   ALL
+  12   -3.5467e-05   +0.0000e+00       6   -1.3506e-06   -2.3064e-06   -4.0074e-07  A0AA   ALL
+  14   -2.2252e-06   +0.0000e+00       6   +3.9628e-07   -2.6985e-06   -2.0704e-07  A0AA   ALL
+  16   +1.2310e-05   +0.0000e+00       6   +1.2553e-06   -1.4828e-06   -9.4977e-08  T0AA   MIX
+  18   +2.9339e-05   +0.0000e+00       6   +2.2711e-06   -2.2882e-06   +4.7059e-07  T0TA   MIX
+  20   +2.9436e-05   -3.0000e+00       6   +1.9661e-06   -4.7811e-06   +1.7158e-06  TATA   MIX
+==============================================================================
+AGREEMENT SUMMARY
+==============================================================================
+centroid vs peak:   0/6
+centroid vs shell:   5/6
+centroid vs current: 3/6
+peak vs shell:       0/6
+all-four agree:      3/6
+mixed-sign cases:    3/6
+
+Interpretation:
+  - If centroid, peak, current, and shell all agree, the sign is likely geometric.
+  - If peak disagrees but centroid/current/shell agree, the issue is readout-specific.
+  - If the panel flips only near large N, recurrence / boundary effects are still active.

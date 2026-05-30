@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_source_coupled_local_action_admission.py
+runner_sha256: 95d550598bece0e9075de04d0507eeab702fb2ad270387ae0232a1f8f9303121
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+Runner: frontier_observable_principle_source_coupled_local_action_admission.py
+Note: OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md
+
+[PASS] T1 action decomposition S[J_A⊕J_B] = S_A[j_A] + S_B[j_B] on block-diagonal D — S_full - (S_A + S_B) = 0
+[PASS] T1 no cross-block bilinears in S on block-diagonal D — cross_terms = 0
+[PASS] T2 Berezin integration formula gives det(M) on n=2 symbolic example — berezin - det = 0
+[PASS] T2 block-diagonal det(M_A ⊕ M_B) = det(M_A)·det(M_B) (4x4 symbolic) — diff_block = 0
+[PASS] T3 Z[J_A⊕J_B] = Z_A[j_A] · Z_B[j_B] on block-diagonal D (symbolic) — diff = 0
+[PASS] T4 log|Z_A · Z_B| = log|Z_A| + log|Z_B| on 4 rational samples
+[PASS] T5 W[J_A⊕J_B] = W_A[J_A] + W_B[J_B] via S.1+S.2+log algebra (3-line corollary) — W_full - (W_A + W_B) = 0
+[PASS] T6 ∂S/∂j_A = ψ̄_A ψ_A (single-site local operator) — diff_A = 0
+[PASS] T6 ∂S/∂j_B = ψ̄_B ψ_B (single-site local operator) — diff_B = 0
+[PASS] T7 ∂²W/∂j_A ∂j_B = 0 on block-diagonal D (cross-block locality) — cross-derivative at sample = 0
+[PASS] T8 F_p for p ∈ {-2, -1, 1/2, 2, 3} does NOT equal W = log|Z| in source-coupled local-action
+[PASS] T9 audit ledger loaded — rows count = 2367
+[PASS] T9 parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE row present
+[PASS] T9 parent note status = audited_conditional (unchanged by this proposal) — effective_status = audited_conditional
+[PASS] T9 Route D consolidated no_go row present in ledger
+[PASS] T9 structural-reframing route row present in ledger
+[PASS] T9 one-qubit local-algebra authority cl3_complexification_split present
+[PASS] T10 honest-scope string present: 'Status authority:** independent audit lane only...'
+[PASS] T10 honest-scope string present: 'source-coupled local-action admission candidate...'
+[PASS] T10 honest-scope string present: 'open_gate...'
+[PASS] T10 honest-scope string present: 'P1 additivity premise is no
+longer a foundational selection ...'
+[PASS] T10 honest-scope string present: 'source-coupling convention...'
+[PASS] T10 honest-scope string present: 'does NOT promote or alter the status...'
+[PASS] T10 honest-scope string present: 'reduces
+but does not fully eliminate...'
+[PASS] T10 forbidden promotion string absent: '**Status:** retained'
+[PASS] T10 forbidden promotion string absent: '**Status:** promoted'
+[PASS] T10 forbidden promotion string absent: '**Status:** retained_no_go'
+[PASS] T10 forbidden promotion string absent: 'audit verdict: retained'
+[PASS] T10 forbidden promotion string absent: 'promotes'
+[PASS] T11 source-note boundary string present: 'Source-note proposal disclaimer...'
+[PASS] T11 source-note boundary string present: 'audit verdict and downstream status are set only b...'
+[PASS] T11 source-note boundary string present: 'Claim type:** open_gate...'
+[PASS] T11 source-note boundary string present: '**Date:** 2026-05-21...'
+[PASS] T12 cross-reference to OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md present
+[PASS] T12 cross-reference to OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md present
+[PASS] T12 cross-reference to OBSERVABLE_PRINCIPLE_P1_BRIDGE_STRUCTURAL_REFRAMING_NARROW_NOTE_2026-05-21.md present
+[PASS] T12 cross-reference to MINIMAL_AXIOMS_2026-05-20.md present
+[PASS] T12 cross-reference to STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md present
+
+PASS=38 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+runner_sha256: a1c030f9024835a455b1771b52306de02be5279726d226d37040a08a4d266fdf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.80
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of g_2(v) bounded interval from u_0 in [0.96, 0.98]
+Inputs (cited):
+  (X1) u_0(SU(2)) in [96/100, 98/100]   ... NAMED EXTERNAL ADMISSION
+  (X2) b_2 = 19/6                        ... retained_bounded
+  (X3) Cl(3) bivector -> SU(2)           ... retained_bounded
+  (X4) g_2^2 |_lattice = 1/4 -> beta=16  ... retained_bounded
+  (X5) alpha_2^tadpole = alpha_bare/u_0^2 ... retained
+  (X6) ln(M_Pl/v) = 38.44                ... NAMED EXTERNAL ADMISSION
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup (positive real symbols)
+----------------------------------------------------------------------------------------
+  symbolic u_0 = u_0
+  symbolic b_2 = b_2
+  symbolic L = ln(M_Pl/v) = L
+
+----------------------------------------------------------------------------------------
+Part 1: lattice-scale bare alpha and tadpole-improved 1/alpha
+----------------------------------------------------------------------------------------
+  [PASS (A)] (X4) 1/alpha_bare |_lattice = 16 pi   (from g_2^2|_lattice = 1/4)  (1/alpha_bare = 16*pi)
+  [PASS (A)] (X4+X5 conv) beta = 2N/g_bare^2 = 16 at N=2, g_bare^2=1/4  (beta = 16)
+  [PASS (A)] (X5) 1/alpha_2^tadpole |_lattice = 16 pi u_0^2  (vertex-power identity alpha_tadpole = alpha_bare/u_0^2)
+
+----------------------------------------------------------------------------------------
+Part 2: 1-loop running from M_Pl to v (Peskin-Schroeder, b>0 = asymptotic freedom)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) 1/alpha_2(v) = 16 pi u_0^2 - (b_2/(2 pi)) * L (1-loop RGE substitution)  (symbolic identity)
+  [PASS (A)] (P2) g_2(v) = sqrt(4 pi / (16 pi u_0^2 - (b_2/(2 pi)) L)) symbolic closed form  (square root of inverse 1/alpha_2(v))
+
+----------------------------------------------------------------------------------------
+Part 3: monotonicity of g_2(v) in u_0 over the input interval
+----------------------------------------------------------------------------------------
+  [PASS (A)] (M1) d/du_0 [1/alpha_2(v)] = 32 pi u_0 (positive for u_0 > 0)  (d/du_0 = 32*pi*u_0)
+
+----------------------------------------------------------------------------------------
+Part 4: framework instance: u_0 in [96/100, 98/100], b_2 = 19/6, L = 3844/100
+----------------------------------------------------------------------------------------
+  u_lo = 24/25 = 0.96
+  u_hi = 49/50 = 0.98
+  b_2  = 19/6 = 3.1666666666666665
+  L    = 961/25 = 38.44
+  1/alpha_2(v) at u_lo = 0.96: (-456475 + 110592*pi**2)/(7500*pi)
+  1/alpha_2(v) at u_hi = 0.98: (-456475 + 115248*pi**2)/(7500*pi)
+  [PASS (A)] (M2) 1/alpha_2(v) at u_hi > 1/alpha_2(v) at u_lo (strict monotonicity)  (diff = 388*pi/625 = 1.950301)
+  g_2(v) at u_0 = 0.96 (HIGHER bound of g_2): 0.682834304553706874431549150259
+  g_2(v) at u_0 = 0.98 (LOWER bound of g_2):  0.659392836186702251623371336239
+
+----------------------------------------------------------------------------------------
+Part 5: explicit bounded interval g_2(v) in [g_lo, g_hi]
+----------------------------------------------------------------------------------------
+  RESULT: g_2(v=246 GeV) in [g_lo, g_hi]
+          g_lo = 0.659392836186702251623371336239
+          g_hi = 0.682834304553706874431549150259
+          width = 0.0234414683670046228081778140197
+  [PASS (A)] (I1) interval lower endpoint g_lo = g_2(v) at u_0 = 0.98  (g_lo = 0.659392836187)
+  [PASS (A)] (I2) interval upper endpoint g_hi = g_2(v) at u_0 = 0.96  (g_hi = 0.682834304554)
+  [PASS (A)] (I3) g_lo < g_hi (interval is non-empty)  (g_lo - g_hi = -0.0234414683670)
+  [PASS (A)] (I4) g_lo > 0.6 (loose physical sanity bound)  (g_lo = 0.6593928362)
+  [PASS (A)] (I5) g_hi < 0.75 (loose physical sanity bound)  (g_hi = 0.6828343046)
+
+----------------------------------------------------------------------------------------
+Part 6: corollaries
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) interval width is finite and positive (well-formed bounded interval)  (width = 0.0234414683670046228081778140197)
+  arithmetic midpoint (NOT a prediction): 0.671113570370204563027460243249
+  [PASS (A)] (C2) midpoint of g_2 interval is between g_lo and g_hi  (midpoint = 0.671113570370)
+  [PASS (A)] (C3) g_2|_lattice = sqrt(1/4) = 1/2 (retained-bounded primitive)  (g_2|_lattice = 1/2)
+  [PASS (A)] (C3) interval lies STRICTLY ABOVE the bare lattice value 1/2  (g_lo - 0.5 = 0.159392836187)
+  counterfactual unimproved g_2(v) at u_0 = 1: 0.637795343668374110474143570554
+  [PASS (A)] (C4) counterfactual u_0=1 g_2(v) differs from improved interval (distinct)  (unimproved g_2 = 0.6377953437)
+
+----------------------------------------------------------------------------------------
+Part 7: forbidden-import audit
+----------------------------------------------------------------------------------------
+  context-only (NOT consumed): PDG g_2(v) obs = 0.646000000000000
+  [PASS (A)] (F1) interval brackets observed g_2(v)=0.646 within < 6% deviation of g_lo  (|g_lo - 0.646|/0.646 = 0.0207)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  PASS = 18
+  FAIL = 0
+  g_2(v=246 GeV) in [0.659392836186702, 0.682834304553707]
+  interval width = 0.0234414683670046
+  PASS=18 FAIL=0
+
+----- stderr -----
+

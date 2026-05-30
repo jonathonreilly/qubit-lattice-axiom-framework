@@ -1,0 +1,38 @@
+{
+  "boundary": {
+    "physical_intervention_premise_accepted": false,
+    "proposal_allowed": false,
+    "remaining_paths": [
+      "derive/audit physical top deformation as primitive RN/Fisher O_top source",
+      "measure strict same-source top/W pole response ratio directly"
+    ],
+    "strict_same_source_response_measurement_present": false,
+    "upstream_statuses": {
+      "ew_higgs_mass": "retained",
+      "physical_top_intervention": "open_gate_candidate",
+      "source_action_gate": "unaudited",
+      "yt_source_action_support": "retained_bounded"
+    }
+  },
+  "claim": "If the physical top Yukawa deformation is the primitive RN/Fisher source intervention for normalized O_top, then the FH top/W pole response readout returns y_33=1/sqrt(6).",
+  "fail_count": 0,
+  "normalized_source": {
+    "primitive_branch_lambda": "1",
+    "top_component": "1/sqrt(6)"
+  },
+  "pass_count": 52,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Blocked on physical-intervention acceptance or direct strict same-source top/W pole-response measurement; this bridge is exact support only.",
+  "response_contract": {
+    "predicted_response_ratio": "sqrt(2)/(g_2 sqrt(6))",
+    "primitive_readout": "y_33=1/sqrt(6)",
+    "scaled_family_readout": "y_33(lambda)=lambda/sqrt(6)"
+  },
+  "review_surface": [
+    "docs/YT_FH_TOP_MASS_RESPONSE_PHYSICAL_INTERVENTION_BRIDGE_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_fh_top_mass_response_physical_intervention_bridge.py",
+    "outputs/yt_fh_top_mass_response_physical_intervention_bridge_2026-05-25.json"
+  ],
+  "route_algebra_closed": true,
+  "status": "conditional exact support / open-gate FH observable-response bridge"
+}

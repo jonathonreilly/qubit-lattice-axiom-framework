@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py
+runner_sha256: 88f4bf367040aa290800c61bd3416864f29e3a4a7c717e04e12924a46d89c71b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+DM FULL CLOSURE SAME-SURFACE THERMAL MONOTONICITY THEOREM
+========================================================================================
+
+========================================================================================
+PART 1: EXACT DERIVATIVE IDENTITIES
+========================================================================================
+  [PASS] The attractive and repulsive Sommerfeld derivatives share the same exact shifted numerator h(y)  (f_att'(y)-1/2 = f_rep'(y)+1/2 = h(y)/(2(e^y-1)^2))
+  [PASS] The exact derivative identities are numerically stable on representative y>0 samples
+
+========================================================================================
+PART 2: EXACT SIGN BOUNDS
+========================================================================================
+  [PASS] For every y>0, h(y)>0 because h(0)=0 and h'(y)=2 e^y (e^y-1-y)>0  (so f_att'(y) >= 1/2 and f_rep'(y) >= -1/2)
+
+========================================================================================
+PART 3: CONDITIONAL 64:1 CHANNEL-WEIGHT EXHIBIT
+========================================================================================
+  [SUPPORT] If the 64:1 same-surface channel-weight formula is supplied, its derivative integrand is positive  (64 f_att'(8y) + f_rep'(y) > 63/2)
+
+  Conditional consequence:
+    - the kernel-level derivative/sign bounds are exact
+    - under a supplied 64:1 channel-weight authority, the weighted
+      derivative lower bound is at least 5.169657065141 on x_f=25
+    - without that authority, live-DM ratio monotonicity is not a
+      closed theorem of this runner
+
+========================================================================================
+SUMMARY: PASS=3 SUPPORT=1 FAIL=0
+========================================================================================
+
+----- stderr -----
+

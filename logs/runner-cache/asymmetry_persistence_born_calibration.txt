@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/asymmetry_persistence_born_calibration.py
+runner_sha256: c93597a2cd0760302d5d6303fae24f6476ba4889863f0f8a6f4849188fc829c1
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 41.45
+status: ok
+----- stdout -----
+====================================================================================================================================
+ASYMMETRY PERSISTENCE CORRECTED BORN CALIBRATION
+  Same dense graphs / corrected Sorkin I3 with -P(empty)
+  N=[100], thresholds=[0.1, 0.2], seeds=2, n_realizations=4, collapse_p=0.2
+====================================================================================================================================
+
+N = 100  (npl = 60)
+   thr   keep%          linear         persist      persist+LN     persist+LN+coll   ok
+  ----------------------------------------------------------------------------------------------------------------------
+  0.10   98.0%  6.54e-16±9.9e-17  8.49e-16±1.7e-16  2.78e-16±7.2e-17    2.78e-16±5.8e-17    2
+  0.20   97.8%  6.54e-16±9.9e-17  1.12e-15±2.5e-16  2.59e-16±3.9e-17    3.33e-16±5.0e-17    2
+
+Thresholds:
+  max |I3|/P < 1e-10 : machine precision
+  max |I3|/P < 1e-2  : practically Born-clean
+  max |I3|/P < 1e-1  : marginal
+  max |I3|/P >= 1e-1 : clear Born violation
+
+----- stderr -----

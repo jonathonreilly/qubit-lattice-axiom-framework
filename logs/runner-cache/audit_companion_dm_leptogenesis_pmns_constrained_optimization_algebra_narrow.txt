@@ -1,0 +1,105 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py
+runner_sha256: 8730772886b8d9ecc261e9e9daf130c5fbd250cc1f7bd3b99d49c0289f9d0f34
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.94
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+DM_LEPTOGENESIS_PMNS_CONSTRAINED_OPTIMIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification of (T1) uniqueness, (T2) Lagrange
+stationarity, (T3) multiplier formula under admitted (H1)-(H4) + (H1')
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  J(z) = (1/2) (z - a)^T A (z - a)
+  A = [[A11, A12], [A12, A22]]
+  a = [[a1], [a2]]
+  C(z) = c1 z1 + c2 z2 - d
+  grad J(z) = [[-A11*a1 + A11*z1 - A12*a2 + A12*z2], [-A12*a1 + A12*z1 - A22*a2 + A22*z2]]
+  grad C(z) = [[c1], [c2]]
+  [PASS (A)] A SPD discriminant det(A) = A11 A22 - A12^2 (admitted positive under (H1))  (det_A = A11*A22 - A12**2)
+  [PASS (A)] grad C has explicit nonvanishing-norm form c1^2 + c2^2 (admitted (H2))  (|| grad C ||^2 = c1**2 + c2**2)
+
+----------------------------------------------------------------------------------------
+Part 1: closed-form constrained minimizer via Lagrange system
+----------------------------------------------------------------------------------------
+  [PASS (A)] Lagrange system has a unique symbolic solution (z1, z2, lam)  (|solutions| = 1)
+  z_*[0] = (A11*a1*c2**2 - A12*a1*c1*c2 + A12*a2*c2**2 - A12*c2*d - A22*a2*c1*c2 + A22*c1*d)/(A11*c2**2 - 2*A12*c1*c2 + A22*c1**2)
+  z_*[1] = (-A11*a1*c1*c2 + A11*c2*d + A12*a1*c1**2 - A12*a2*c1*c2 - A12*c1*d + A22*a2*c1**2)/(A11*c2**2 - 2*A12*c1*c2 + A22*c1**2)
+  lambda_* = (-A11*A22*a1*c1 - A11*A22*a2*c2 + A11*A22*d + A12**2*a1*c1 + A12**2*a2*c2 - A12**2*d)/(A11*c2**2 - 2*A12*c1*c2 + A22*c1**2)
+
+----------------------------------------------------------------------------------------
+Part 2: (T2) Lagrange stationarity at z_*
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T2) grad J(z_*) - lambda_* grad C(z_*) = 0 parametrically (component 0)  (diff[0] = 0)
+  [PASS (A)] (T2) grad J(z_*) - lambda_* grad C(z_*) = 0 parametrically (component 1)  (diff[1] = 0)
+
+----------------------------------------------------------------------------------------
+Part 3: (T3) multiplier formula lambda_* = <gJ, gC>/||gC||^2
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T3) lambda_* = <grad J(z_*), grad C(z_*)> / || grad C(z_*) ||^2  (formula = (-A11*A22*a1*c1 - A11*A22*a2*c2 + A11*A22*d + A12**2*a1*c1 + A12**2*a2*c2 - A12**2*d)/(A11*c2**2 - 2*A12*c1*c2 + A22*c1**2), lam_star = (-A11*A22*a1*c1 - A11*A22*a2*c2 + A11*A22*d + A12**2*a1*c1 + A12**2*a2*c2 - A12**2*d)/(A11*c2**2 - 2*A12*c1*c2 + A22*c1**2))
+
+----------------------------------------------------------------------------------------
+Part 4: derivable corollaries (C1)-(C3)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) grad J(z_*) - lambda_* grad C(z_*) = 0  (rearranged Lagrange)  (diff = [[0, 0]])
+  [PASS (A)] (C2) projection of grad J(z_*) onto T_{z_*}F is zero (component 0)  (proj[0] = 0)
+  [PASS (A)] (C2) projection of grad J(z_*) onto T_{z_*}F is zero (component 1)  (proj[1] = 0)
+  [PASS (A)] (C3) at a=(1,0), A=I, c=(1,1), d=0: grad J(z_*) =/= 0 forces lambda_* =/= 0  (grad J(z_*) = [[-1/2, -1/2]], lambda_* = -1/2)
+
+----------------------------------------------------------------------------------------
+Part 5: free-symbol bookkeeping after multiplier substitution
+----------------------------------------------------------------------------------------
+  [PASS (A)] Lagrange diff with lambda substituted by (L-formula) is zero (component 0)  (diff[0] = 0)
+  [PASS (A)] Lagrange diff with lambda substituted by (L-formula) is zero (component 1)  (diff[1] = 0)
+
+----------------------------------------------------------------------------------------
+Part 6: numerical FP cross-check at one independent random sample
+----------------------------------------------------------------------------------------
+  [PASS (A)] (numerical) C(z_*) = 0 at random SPD/affine sample  (|C(z_*)| = 6.939e-18)
+  [PASS (A)] (numerical) Lagrange (L) holds at z_* component-wise (random sample)  (|diff| = (0.000e+00, 0.000e+00))
+
+----------------------------------------------------------------------------------------
+Part 7: counterfactual probe -- necessity of (H1) (strict convexity)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H1) counterfactual: linear J on affine constraint is constant on F (no unique min)  (J_lin - d on F = 0 (zero means J constant))
+
+----------------------------------------------------------------------------------------
+Part 8: counterfactual probe -- necessity of (H2) (constraint regularity)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (H2) counterfactual: || grad C_cf ||^2 at (0,0) is 0 (regularity fails)  (|| grad C_cf(0,0) ||^2 = 0)
+
+----------------------------------------------------------------------------------------
+Part 9: (T1) midpoint strict-convexity probe
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T1) midpoint strict-convexity inequality at sample (z_a=(1,0), z_b=(0,1))  (J((z_a+z_b)/2) = 1/4, (J(z_a)+J(z_b))/2 = 1/2, diff = 1/4)
+
+----------------------------------------------------------------------------------------
+Part 10: A SPD reality check (sanity)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Hessian of J equals A symbolically (strict convexity ↔ A SPD)  (H_J - A = [[0, 0], [0, 0]])
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (T2) Lagrange stationarity grad J(z_*) = lambda_* grad C(z_*)
+    (T3) multiplier formula lambda_* = <gJ, gC>/||gC||^2
+    (C1)-(C3) corollaries all reduce to 0 / hold parametrically
+    Numerical FP cross-check at random SPD/affine sample (constraint and (L))
+    (H1) counterfactual: linear J on affine F is constant -> no unique min
+    (H2) counterfactual: vanishing-grad C breaks (L-formula) denominator
+    (T1) midpoint strict-convexity inequality at one sample
+    Hessian of J equals A (strict convexity <=> A SPD)
+
+========================================================================================
+TOTAL: PASS=18, FAIL=0
+========================================================================================
+
+----- stderr -----
+

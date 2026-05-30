@@ -1,0 +1,172 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+runner_sha256: 51d18716a8e82f52fe9046a70d9bbd4b3d6f50ac69729d2e99ea7e5ebb4f318d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
+
+==============================================================================
+0. Baseline (retained primitives, recomputed for self-consistency)
+==============================================================================
+  [PASS] P_1plaq(6) = 0.4225317396 (retained single-plaquette value)
+         P_1plaq(6) = 0.42253173965
+  [PASS] P_1plaq Taylor c_1 = 1/18 (recurrence self-check)
+         c_1 = 1/18
+  [PASS] d_5 = 1/472392 (retained exact connected coefficient)
+         d_5 = 2.116886e-6
+  [PASS] Delta(6) target from comparator = 0.594 - P_1plaq(6) ~ 0.1715 (comparator, NOT fitted)
+         Delta_target = 0.17146826 = 0.594(MC comparator) - 0.42253174
+  [PASS] beta_eff^can = P_1plaq^{-1}(0.5934) = 9.32617 (research map Section 7; read-off, not derivation)
+         beta_eff^can = 9.3261679 (reproduces the research map's recomputed constant; NOT a derivation of the value)
+
+==============================================================================
+1. PROXY validation: the method is sound when the structure cooperates
+==============================================================================
+  Controlled complex-pair branch point at |beta_c| ~ 5.7, amplitude tuned
+  so the proxy's Delta(6) = 0.171 (matches the physical Delta(6) ~ 0.1715).
+  This reproduces the research-map claim that d-log-Pade converges to ~1e-3
+  by ~[10/10] -- and proves the predictive next-coefficient call works.
+
+    [ 4/ 4] nearest singularity |beta_c| = 5.6814267, arg = -0.54534
+    [ 6/ 6] nearest singularity |beta_c| = 5.6947418, arg = 0.54853
+    [ 8/ 8] nearest singularity |beta_c| = 5.6978259, arg = 0.54936
+    [10/10] nearest singularity |beta_c| = 5.6988992, arg = 0.54966
+  [PASS] proxy d-log-Pade localizes the complex-pair singularity near |beta_c| = 5.70
+         [10/10] |beta_c| = 5.6988992 (true 5.7)
+  [PASS] proxy singularity is OFF the real axis (arg != 0), i.e. a genuine complex pair
+         [10/10] arg = 0.54966 (true 0.55)
+    [ 4/ 4] recon Delta(6) = 0.1792186618  abs err = 0.008219
+    [ 6/ 6] recon Delta(6) = 0.1743880732  abs err = 0.003388
+    [ 8/ 8] recon Delta(6) = 0.1724072477  abs err = 0.001407
+    [10/10] recon Delta(6) = 0.171582128  abs err = 0.0005821
+    [11/11] recon Delta(6) = 0.170587345  abs err = 0.0004127
+  [PASS] proxy d-log-Pade FORWARD converges to <= 1e-3 by [10/10] (research-map claim)
+         [10/10] abs err = 0.0005821 (true Delta(6) = 0.171)
+  [PASS] proxy d-log-Pade FORWARD is monotone-improving 6->8->10
+         err[6]=0.00339 err[8]=0.00141 err[10]=0.000582
+    given d_1..d_6: predicted d_7 = -4.384435893e-7, true = -4.398106064e-7, rel = 0.003108
+    given d_1..d_8: predicted d_9 = -3.542376059e-9, true = -3.540248246e-9, rel = 0.000601
+    given d_1..d_11: predicted d_12 = 5.633787246e-11, true = 5.633790433e-11, rel = 5.657e-7
+  [PASS] proxy PREDICTIVE d-log-Pade recovers held-out next coefficient and SHARPENS with order
+         rel at K=6,8,11 = 0.00311, 0.000601, 5.66e-7 (the more contiguous coeffs, the sharper the next-coeff prediction)
+
+==============================================================================
+2. PHYSICAL series -- currently known: ONLY d_5 = 1/472392
+==============================================================================
+  Connected series Delta(beta) = d_5 beta^5 + d_6 beta^6 + d_7 beta^7 + ...
+  Known: d_5 = 1/472392 = 2.116886e-6
+  Unknown: d_6, d_7 (to be supplied by the parallel exact-coefficient cycle).
+
+  FORWARD (truncated at d_5 only):
+    Delta(6) ~ d_5 * 6^5 = 0.016460905
+    <P>(6)   ~ P_1plaq(6) + Delta(6) = 0.43899264
+    comparator 0.594 ; gap = 0.155007
+  [PASS] one connected term reaches only ~10% of the comparator gap (NOT a closure)
+         d_5*6^5 / Delta_target = 0.096 (a single low-order term cannot reach 0.594 -- expected)
+
+  PREDICTIVE test for d_6 from {d_5} alone:
+    d-log-Pade : under-determined: a non-trivial [>=1/>=1] d-log Pade re-expansion needs >= 4 contiguous connected coeffs (d_m..d_{m+3}); fewer fix only a constant or empty d-log. The d-log-Pade predictive test activates once d_5..d_8 are all supplied (then it predicts d_9).
+    tadpole    : under-determined: a geometric ratio needs >= 2 contiguous connected coeffs
+  [PASS] d-log-Pade honestly declines to predict d_6 from one coefficient
+         one connected coefficient cannot fix a non-trivial continuation -- correct null
+  [PASS] tadpole honestly declines to predict d_6 from one coefficient
+         a geometric ratio needs >= 2 contiguous coefficients -- correct null
+
+  => FINDING: d_5 alone is NOT enough to evaluate the route by the predictive test.
+     Activation thresholds (contiguous exact coeffs needed before a falsifiable
+     next-coefficient prediction exists):
+       * tadpole/geometric : 2 coeffs -> {d_5,d_6} predicts d_7  (activates at the FIRST
+         new exact coefficient d_6 -- the cheapest decisive falsifier).
+       * d-log-Pade        : 4 coeffs -> {d_5..d_8} predicts d_9 (needs the resummation
+         to see a [>=1/>=1] approximant; activates only after three more orders).
+     Both tests are wired below as one-line drop-ins (Section 4).
+
+==============================================================================
+3. TADPOLE / boosted-PT self-consistency fixed points (forward test)
+==============================================================================
+  u_0 = <P>^{1/4} self-consistency. Several boosting conventions; report each.
+
+    beta_eff = beta * u_0^4 = beta*<P>: P = 3.4947562e-31, beta_eff = 2.09685e-30  (converged=True)
+    beta_eff = beta / <P> (over-boost): P = 0.61152284, beta_eff = 9.81157  (converged=True)
+    P_1plaq(31.5) = 0.87418441  (reproduces blocked Drouffe-Itzykson M4 value 0.8740)
+
+  [PASS] tadpole self-consistency of the BARE single-plaquette series collapses to P=0 (trivial)
+         u_0^4 = P_1plaq(beta*u_0^4) has only the trivial fixed point -- boosting the bare series alone does NOT reach 0.594
+  [PASS] over-boost convention beta/<P> lands in the crossover, NOT at the comparator
+         P = 0.611523 (convention-dependent; not a derivation of 0.594)
+  [PASS] the z=6 mean-field/Drouffe-Itzykson self-consistent branch is the blocked 0.8740
+         P_1plaq(31.5) = 0.87418441 (research map: blocked)
+  => FINDING (tadpole): boosting the single-plaquette series alone either collapses
+     (P=0) or, convention-dependent, lands at the blocked 0.611/0.874 -- it does NOT
+     independently reach 0.594. A tadpole test therefore lives in the connected-
+     coefficient PATTERN it implies (geometric tail), tested predictively in Section 4.
+
+==============================================================================
+4. PREDICTIVE-FALSIFICATION SCAFFOLD (one-line drop-in for the exact coefficients)
+==============================================================================
+  The decisive test. The MOMENT the parallel exact-coefficient cycle delivers d_6
+  (and later d_7, d_8, ...), add them to EXACT_HIGHER below, rerun, and read the
+  SUPPORT / FALSIFY comparison. Nothing else changes -- this is the whole drop-in.
+
+  Exact contiguous connected coefficients supplied: d_5 .. d_5 (1 total).
+
+  4a. tadpole/geometric test (activates at 2 contiguous coeffs -> predicts the next):
+      [PENDING] need >= 2 contiguous exact coeffs (supply d_6) to activate.
+  [PENDING] tadpole/geometric: exact d_6 not supplied yet (predicted = n/a)
+
+  4b. d-log-Pade test (activates at 4 contiguous coeffs d_5..d_8 -> predicts d_9):
+      [PENDING] need 4 contiguous exact coeffs d_5..d_8 (have d_5..d_5); d-log-Pade predictive test inactive.
+  [PENDING] d-log-Pade: exact d_9 not supplied yet (predicted = n/a)
+
+  4c. SELF-TEST of the comparison machinery on SYNTHETIC coefficients (CI guard).
+      Proves the drop-in fires SUPPORT for a consistent next coeff and FALSIFY for an
+      inconsistent one -- so the moment the EXACT coefficients land, the test is real.
+  [SUPPORT] self-test SUPPORT (geometric d_7): d_7 predicted = 6.5155001e-8, exact = 6.5155001e-8, rel = 1.423e-61 (window 0.05)
+  [PASS] comparison machinery returns SUPPORT for a geometric-consistent next coefficient
+         tadpole predictor reproduces the exact next coeff of a pure single-pole series
+  [FALSIFY] self-test FALSIFY (off-pattern d_7): d_7 predicted = 6.5155001e-8, exact = 9.7732501e-8, rel = 0.3333 (window 0.05)
+  [PASS] comparison machinery returns FALSIFY when the next coefficient breaks the ansatz pattern
+         a 50% deviation from the predicted coeff exceeds the 5% support window -> FALSIFY
+
+==============================================================================
+5. SENSITIVITY band: forward <P>(6) vs a hypothetical d_6 (NOT a prediction)
+==============================================================================
+  Pure sensitivity sweep: how the truncated forward <P>(6) MOVES with a trial d_6.
+  This is NOT a claim about d_6's value; it bounds how much the next coefficient
+  matters and shows that no single low-order term reaches 0.594.
+
+    (illustrative geometric magnitude d_5/5.7 = 3.71384e-7)
+    d_6 = 0.0 (=0.0x guess)  ->  <P>(6)_trunc = 0.43899264  gap to 0.594 = 0.155007
+    d_6 = 1.85692e-7 (=0.5x guess)  ->  <P>(6)_trunc = 0.44765628  gap to 0.594 = 0.146344
+    d_6 = 3.71384e-7 (=1.0x guess)  ->  <P>(6)_trunc = 0.45631991  gap to 0.594 = 0.13768
+    d_6 = 7.42767e-7 (=2.0x guess)  ->  <P>(6)_trunc = 0.47364718  gap to 0.594 = 0.120353
+    d_6 = 1.48553e-6 (=4.0x guess)  ->  <P>(6)_trunc = 0.50830172  gap to 0.594 = 0.0856983
+  [PASS] forward <P>(6) through beta^6 stays below the 0.594 comparator across the trial band (NOT closure)
+         max <P>(6)_trunc over band = 0.508302 < 0.594 (no single low-order truncation reaches the comparator; resummation is required)
+  [PASS] the next coefficient d_6 measurably moves <P>(6) (sensitivity is real, resummation matters)
+         <P>(6) span across the d_6 trial band = 0.06931
+
+==============================================================================
+6. Honest test summary
+==============================================================================
+  * The d-log-Pade METHOD is sound on a controlled complex-pair proxy: it localizes
+    the singularity (|beta_c|->5.70, off-axis) and reconstructs Delta(6) to <1e-3 by
+    [10/10], and its predictive next-coefficient call is exact to ~1e-11 on the proxy.
+  * On the PHYSICAL series, only ONE exact connected coefficient (d_5) is known. That
+    is too few for EITHER ansatz to make a falsifiable prediction, and a single term
+    reaches ~10% of the comparator gap. Neither ansatz can be said to reach 0.594 yet;
+    claiming so would be fitting to the comparator (forbidden).
+  * Tadpole/boosted-PT of the BARE single-plaquette series does NOT reach 0.594: it
+    collapses to 0 or, convention-dependent, lands on the blocked 0.611 / 0.8740.
+  * TEST STATUS: PENDING the exact d_6 (and d_7). The predictive falsification is
+    wired as a one-line drop-in (Section 4). This harness evaluates the route; it does
+    NOT close beta=6. 0.594 is a Monte-Carlo comparator, never a derivation input.
+
+==============================================================================
+SCORECARD: PASS=20 FAIL=0
+==============================================================================
+
+----- stderr -----
+

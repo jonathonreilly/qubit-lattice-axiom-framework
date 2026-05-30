@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_pmns_he_parity_repair.py
+runner_sha256: 9728235dabe25cd95ad9ce32fa51d615553a89e448c1cf815d2bb8163ea17ba5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+DM/PMNS fixed-chart Hermitian-block parity repair
+
+========================================================================================
+Source-note boundary
+========================================================================================
+  [PASS] note contains required boundary: 'bounded-support formal matrix algebra'
+  [PASS] note contains required boundary: 'That fixed-chart Hermitian-block formula and conjugation parity are the entire repaired theorem.'
+  [PASS] note contains required boundary: 'This repair withdraws that selector conclusion from the binding claim.'
+  [PASS] note contains required boundary: 'The bridge from this fixed-chart parity algebra to the full PMNS-assisted leptogenesis selector remains a separate open science problem.'
+  [PASS] note avoids overclaim phrase: 'relative-action selector is derived'
+  [PASS] note avoids overclaim phrase: 'KKT branch classification is derived'
+  [PASS] note avoids overclaim phrase: 'favored-column closure is derived'
+  [PASS] note avoids overclaim phrase: 'eta normalization is derived'
+  [PASS] note avoids overclaim phrase: 'stationary-branch minimality is proved'
+
+========================================================================================
+Symbolic formula and parity
+========================================================================================
+  [PASS] direct multiplication gives displayed H_e entries
+  [PASS] H_e is Hermitian
+  [PASS] H_e(-delta) is entrywise conjugate of H_e(delta)
+  [PASS] trace is even in delta
+  [PASS] trace square is even in delta
+  [PASS] determinant is even in delta
+  [PASS] characteristic coefficient 0 is even in delta
+  [PASS] characteristic coefficient 1 is even in delta
+  [PASS] characteristic coefficient 2 is even in delta
+  [PASS] characteristic coefficient 3 is even in delta
+
+========================================================================================
+Numeric parity samples
+========================================================================================
+  [PASS] sample 0: H(-delta) equals conjugate H(delta)
+  [PASS] sample 0: trace parity
+  [PASS] sample 0: determinant parity
+  [PASS] sample 0: Frobenius norm parity
+  [PASS] sample 1: H(-delta) equals conjugate H(delta)
+  [PASS] sample 1: trace parity
+  [PASS] sample 1: determinant parity
+  [PASS] sample 1: Frobenius norm parity
+  [PASS] sample 2: H(-delta) equals conjugate H(delta)
+  [PASS] sample 2: trace parity
+  [PASS] sample 2: determinant parity
+  [PASS] sample 2: Frobenius norm parity
+
+========================================================================================
+Negative controls
+========================================================================================
+  [PASS] phase-sensitive entry is not even by itself
+  [PASS] phase-sensitive entry is odd under sign flip
+
+========================================================================================
+TOTAL: PASS=33 FAIL=0
+========================================================================================
+
+----- stderr -----
+

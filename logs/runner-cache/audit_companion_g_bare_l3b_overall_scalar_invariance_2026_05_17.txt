@@ -1,0 +1,134 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_g_bare_l3b_overall_scalar_invariance_2026_05_17.py
+runner_sha256: c3dedf8bf63da3bd7640bf4e77794f3f2234841fb77085677cd9c32f3fa11b84
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.99
+status: ok
+----- stdout -----
+================================================================================
+Audit companion: G_BARE_L3B_OVERALL_SCALAR_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17
+================================================================================
+
+================================================================================
+SECTION A — (T1) L3b orbit identity Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab
+================================================================================
+  [PASS (A)] N_F = 0.125: Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab  (max |Gram - N_F*I| = 2.78e-17)
+  [PASS (A)] N_F = 0.25: Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab  (max |Gram - N_F*I| = 5.55e-17)
+  [PASS (A)] N_F = 0.5: Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab  (max |Gram - N_F*I| = 1.11e-16)
+  [PASS (A)] N_F = 1: Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab  (max |Gram - N_F*I| = 2.22e-16)
+  [PASS (A)] N_F = 2: Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab  (max |Gram - N_F*I| = 4.44e-16)
+  [PASS (A)] N_F = 4: Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab  (max |Gram - N_F*I| = 8.88e-16)
+  [PASS (A)] N_F = 8: Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab  (max |Gram - N_F*I| = 1.78e-15)
+  [PASS (A)] N_F = 3.14159: Tr(T_a^{(N_F)} T_b^{(N_F)}) = N_F * delta_ab  (max |Gram - N_F*I| = 4.44e-16)
+  [PASS (A)] Canonical N_F = 1/2: Tr(T_a T_b) = (1/2) delta_ab (Gell-Mann reference)  (max |Gram - (1/2)I| = 1.11e-16)
+
+================================================================================
+SECTION B — (T2) Tr_{V_3}((F^{(N_F)})^2) inflation linear in N_F
+================================================================================
+  [PASS (A)] N_F = 0.125: Tr((F^{(N_F)})^2) = (2 N_F)^2 * Tr((F^{(1/2)})^2)  (observed = 3.047552e+00, predicted = 3.047552e+00, rel_err = 0.00e+00)
+  [PASS (A)] N_F = 0.25: Tr((F^{(N_F)})^2) = (2 N_F)^2 * Tr((F^{(1/2)})^2)  (observed = 1.219021e+01, predicted = 1.219021e+01, rel_err = 4.37e-16)
+  [PASS (A)] N_F = 0.5: Tr((F^{(N_F)})^2) = (2 N_F)^2 * Tr((F^{(1/2)})^2)  (observed = 4.876084e+01, predicted = 4.876084e+01, rel_err = 0.00e+00)
+  [PASS (A)] N_F = 1: Tr((F^{(N_F)})^2) = (2 N_F)^2 * Tr((F^{(1/2)})^2)  (observed = 1.950434e+02, predicted = 1.950434e+02, rel_err = 4.37e-16)
+  [PASS (A)] N_F = 2: Tr((F^{(N_F)})^2) = (2 N_F)^2 * Tr((F^{(1/2)})^2)  (observed = 7.801734e+02, predicted = 7.801734e+02, rel_err = 0.00e+00)
+  [PASS (A)] N_F = 4: Tr((F^{(N_F)})^2) = (2 N_F)^2 * Tr((F^{(1/2)})^2)  (observed = 3.120694e+03, predicted = 3.120694e+03, rel_err = 4.37e-16)
+  [PASS (A)] N_F = 8: Tr((F^{(N_F)})^2) = (2 N_F)^2 * Tr((F^{(1/2)})^2)  (observed = 1.248277e+04, predicted = 1.248277e+04, rel_err = 0.00e+00)
+  [PASS (A)] N_F = 3.14159: Tr((F^{(N_F)})^2) = (2 N_F)^2 * Tr((F^{(1/2)})^2)  (observed = 1.925001e+03, predicted = 1.925001e+03, rel_err = 0.00e+00)
+
+  Symbolic verification of c^4 inflation:
+  [PASS (A)] Symbolic: c^4 = (sqrt(2 N_F))^4 = 4 N_F^2  (c^4 = 4*N_F**2)
+  [PASS (A)] At N_F = 1/2: c^4 = 1 (canonical reference)  (c^4(1/2) = 1)
+
+================================================================================
+SECTION C — (T3) Continuum-side invariance under L3b orbit
+================================================================================
+  [PASS (A)] Continuum (1/(2g^2)) * (1/N_F) * Tr_{V_3}((F^{(N_F)})^2) = (1/(2g^2)) * Fsq  (expression = Fsq/(2*g**2))
+  [PASS (A)] At N_F = 1/8: continuum reduces to (1/(2g^2)) * Fsq (convention-independent)  (expression at N_F = 1/8: Fsq/(2*g**2))
+  [PASS (A)] At N_F = 1/4: continuum reduces to (1/(2g^2)) * Fsq (convention-independent)  (expression at N_F = 1/4: Fsq/(2*g**2))
+  [PASS (A)] At N_F = 1/2: continuum reduces to (1/(2g^2)) * Fsq (convention-independent)  (expression at N_F = 1/2: Fsq/(2*g**2))
+  [PASS (A)] At N_F = 1: continuum reduces to (1/(2g^2)) * Fsq (convention-independent)  (expression at N_F = 1: Fsq/(2*g**2))
+  [PASS (A)] At N_F = 2: continuum reduces to (1/(2g^2)) * Fsq (convention-independent)  (expression at N_F = 2: Fsq/(2*g**2))
+  [PASS (A)] At N_F = 4: continuum reduces to (1/(2g^2)) * Fsq (convention-independent)  (expression at N_F = 4: Fsq/(2*g**2))
+  [PASS (A)] At N_F = 8: continuum reduces to (1/(2g^2)) * Fsq (convention-independent)  (expression at N_F = 8: Fsq/(2*g**2))
+  [PASS (A)] Equivalent form (1/(4g^2)) * F_{mn} F^{mn} matches (T3)  ((1/(4g^2)) * 2*Fsq = Fsq/(2*g**2))
+
+================================================================================
+SECTION D — (T4) L3b orbit Wilson matching beta * N_F * g_bare^2 = N_c
+================================================================================
+  [PASS (A)] Orbit identity: beta * N_F * g_bare^2 = N_c (exact symbolic)  (beta * N_F * g_bare^2 = 3)
+  [PASS (A)] At canonical N_F = 1/2: beta = 2 N_c / g^2 (recovers standard QCD)  (beta at N_F = 1/2: 6/g_bare**2)
+
+  Canonical-matching beta_canonical(N_F) = N_c / N_F at g_bare = 1:
+  [PASS (A)] N_F = 1/8: beta_canonical = N_c / N_F = 24  (beta_canonical(1/8) = 24)
+  [PASS (A)] N_F = 1/4: beta_canonical = N_c / N_F = 12  (beta_canonical(1/4) = 12)
+  [PASS (A)] N_F = 1/2: beta_canonical = N_c / N_F = 6  (beta_canonical(1/2) = 6)
+  [PASS (A)] N_F = 1: beta_canonical = N_c / N_F = 3  (beta_canonical(1) = 3)
+  [PASS (A)] N_F = 2: beta_canonical = N_c / N_F = 3/2  (beta_canonical(2) = 3/2)
+  [PASS (A)] N_F = 4: beta_canonical = N_c / N_F = 3/4  (beta_canonical(4) = 3/4)
+  [PASS (A)] N_F = 8: beta_canonical = N_c / N_F = 3/8  (beta_canonical(8) = 3/8)
+
+  Orbit invariant along canonical-matching surface:
+  [PASS (A)] N_F = 1/8: invariant beta * N_F * g_bare^2 = N_c (held)  (invariant = 3)
+  [PASS (A)] N_F = 1/4: invariant beta * N_F * g_bare^2 = N_c (held)  (invariant = 3)
+  [PASS (A)] N_F = 1/2: invariant beta * N_F * g_bare^2 = N_c (held)  (invariant = 3)
+  [PASS (A)] N_F = 1: invariant beta * N_F * g_bare^2 = N_c (held)  (invariant = 3)
+  [PASS (A)] N_F = 2: invariant beta * N_F * g_bare^2 = N_c (held)  (invariant = 3)
+  [PASS (A)] N_F = 4: invariant beta * N_F * g_bare^2 = N_c (held)  (invariant = 3)
+  [PASS (A)] N_F = 8: invariant beta * N_F * g_bare^2 = N_c (held)  (invariant = 3)
+
+================================================================================
+SECTION E — (T5) L3b orbit invariance: g_bare = 1 for all N_F > 0
+================================================================================
+  [PASS (A)] Symbolic: g_bare^2(N_F) = N_c / (N_F * beta_canonical(N_F)) = 1  (g_bare^2(N_F) = 1)
+
+  Numerical g_bare^2 = 1 sweep over N_F:
+  [PASS (A)] N_F = 1/8: g_bare^2 recovered = 1  (beta = 24, g_bare^2 = 1)
+  [PASS (A)] N_F = 1/4: g_bare^2 recovered = 1  (beta = 12, g_bare^2 = 1)
+  [PASS (A)] N_F = 1/2: g_bare^2 recovered = 1  (beta = 6, g_bare^2 = 1)
+  [PASS (A)] N_F = 1: g_bare^2 recovered = 1  (beta = 3, g_bare^2 = 1)
+  [PASS (A)] N_F = 2: g_bare^2 recovered = 1  (beta = 3/2, g_bare^2 = 1)
+  [PASS (A)] N_F = 4: g_bare^2 recovered = 1  (beta = 3/4, g_bare^2 = 1)
+  [PASS (A)] N_F = 8: g_bare^2 recovered = 1  (beta = 3/8, g_bare^2 = 1)
+
+  Irrational N_F (pi, sqrt(2), Euler-like):
+  [PASS (A)] N_F = pi: g_bare^2 = 1  (beta_canon = 3/pi, g_bare^2 = 1)
+  [PASS (A)] N_F = sqrt(2): g_bare^2 = 1  (beta_canon = 3*sqrt(2)/2, g_bare^2 = 1)
+  [PASS (A)] N_F = 7/11: g_bare^2 = 1  (beta_canon = 33/7, g_bare^2 = 1)
+
+================================================================================
+SECTION F — (T6) L3b orbit derivative d(g_bare^2)/d(N_F) = 0
+================================================================================
+  [PASS (A)] g_bare^2(N_F) = 1 (identically constant in N_F)  (g_bare^2(N_F) = 1)
+  [PASS (A)] d(g_bare^2)/d(N_F) = 0 (exact symbolic derivative)  (d(g_bare^2)/d(N_F) = 0)
+  [PASS (A)] d(g_bare^2)/d(N_F) = 0 with explicit beta(N_F) substituted first  (d(g_bare^2)/d(N_F) [explicit] = 0)
+
+================================================================================
+SECTION G — L3a / L3b / 2026-05-03 cross-consistency
+================================================================================
+  [PASS (A)] L3b at N_F = 1/2 recovers L3a V_3 canonical-matching beta = 6  (L3b(N_F=1/2) = 6, L3a V_3 = 6)
+  [PASS (A)] 2026-05-03 rescaling consistency: beta ratio = c^2 (canonical N_F=1/2 -> N_F=1)  (beta(1/2) / beta(1) = 2; (c^2)_rel = 2)
+  [PASS (A)] L3a binary {V_3, V} embeds as L3b N_F ∈ {1/2, 1} (2-point subset)  (L3a binary is a structural-Cl(3)+Z^3-specialization of the L3b orbit)
+
+================================================================================
+SECTION H — Parent-row consistency checks
+================================================================================
+  [PASS (A)] Parent runner: beta = 2 N_c / g_bare^2 = 6 at canonical (N_F=1/2, g_bare=1)  (beta_canonical_parent = 6)
+  [PASS (A)] L3b at canonical (N_F=1/2, g_bare=1) matches parent: beta = 6  (beta_l3b(N_F=1/2, g_bare=1) = 6)
+  [PASS (A)] L3b at (N_F=1, g_bare=1): beta_canonical = N_c / N_F = 3  (beta(N_F=1) = 3)
+  [PASS (A)] L3b orbit invariant N_c = dim(V_3) = 3 (structural, NOT fitted)  (N_c = 3, dim(V_3) = 3)
+
+================================================================================
+SCORECARD
+================================================================================
+PASS = 65
+FAIL = 0
+TOTAL = 65
+
+VERDICT: all class (A) algebraic + numerical checks PASS.
+  The L3b continuous overall-scalar admission N_F in R_{>0} is
+  physically inert for g_bare: every N_F yields g_bare = 1 at the
+  canonical-matching surface, differing only in the conventional
+  beta value (beta_canonical(N_F) = N_c / N_F).
+
+----- stderr -----
+

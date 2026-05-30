@@ -1,0 +1,108 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17.py
+runner_sha256: 34fc22e66a4ae87d6c374a94b69fd66f186b2109a603acb83bf5dc8479deb1e8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of the finite-dimensional algebraic identities
+      (S1)-(S3), (E1)-(E3), (Herm), (Trace), (DG4)-(DG2), (W), (R1)
+      at exact precision
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: explicit generators S_cls (C^4), T_gamma (C^3), Z_odd (C^2)
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+Part 1: (Herm) Hermiticity and (Trace) traces
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Herm) S_cls = S_cls^H on C^4
+  [PASS (A)] (Herm) T_gamma = T_gamma^H on C^3
+  [PASS (A)] (Herm) Z_odd = Z_odd^H on C^2
+  [PASS (A)] (Trace) Tr S_cls = 0  (Tr S_cls = 0)
+  [PASS (A)] (Trace) Tr T_gamma = 0  (Tr T_gamma = 0)
+  [PASS (A)] (Trace) Tr Z_odd = 0  (Tr Z_odd = 0)
+
+----------------------------------------------------------------------------------------
+Part 2: (S1)-(S3) spectra of the three generators
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1) spec(S_cls) = {+1, -1, 0, 0} (multiplicities (1, 1, 2))  (eigs S_cls = {0: 2, 1: 1, -1: 1})
+  [PASS (A)] (S2) spec(T_gamma) = {+1, -1, 0} (multiplicities (1, 1, 1))  (eigs T_gamma = {-1: 1, 1: 1, 0: 1})
+  [PASS (A)] (S3) spec(Z_odd) = {+1, -1} (multiplicities (1, 1))  (eigs Z_odd = {1: 1, -1: 1})
+  [PASS (A)] (C1) char poly S_cls = λ^4 - λ^2 = λ^2 (λ-1)(λ+1)  (char S_cls = lam**4 - lam**2)
+  [PASS (A)] (C2) char poly T_gamma = -λ^3 + λ = -λ (λ-1)(λ+1)  (char T_gamma = -lam**3 + lam)
+  [PASS (A)] (C3) char poly Z_odd = λ^2 - 1 = (λ-1)(λ+1)  (char Z_odd = lam**2 - 1)
+
+----------------------------------------------------------------------------------------
+Part 3: (E1)-(E3) cubic involution identities M^3 = M
+----------------------------------------------------------------------------------------
+  [PASS (A)] (E1) S_cls^3 = S_cls on C^4
+  [PASS (A)] (E2) T_gamma^3 = T_gamma on C^3
+  [PASS (A)] (E3) Z_odd^3 = Z_odd on C^2
+  [PASS (A)] (aux) T_gamma^2 = diag(1, 0, 1) on C^3
+
+----------------------------------------------------------------------------------------
+Part 4: (DG4), (DG3), (DG2) determinant identities at exact symbolic (m, j)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (DG4) det(m I_4 + j S_cls) = m^2 (m^2 - j^2) = m^4 (1 - j^2/m^2)  (det = m**2*(-j**2 + m**2))
+  [PASS (A)] (DG3) det(m I_3 + j T_gamma) = m (m^2 - j^2) = m^3 (1 - j^2/m^2)  (det = m*(-j**2 + m**2))
+  [PASS (A)] (DG2) det(m I_2 + j Z_odd) = m^2 - j^2 = m^2 (1 - j^2/m^2)  (det = -j**2 + m**2)
+
+----------------------------------------------------------------------------------------
+Part 5: (W) equal-baseline-subtracted triple-match response identity
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W.symb) det(m I_4 + j S_cls)/m^4 = 1 - j^2/m^2 at exact symbolic (m, j)  (ratio_S = -j**2/m**2 + 1)
+  [PASS (A)] (W.symb) det(m I_3 + j T_gamma)/m^3 = 1 - j^2/m^2 at exact symbolic (m, j)  (ratio_T = -j**2/m**2 + 1)
+  [PASS (A)] (W.symb) det(m I_2 + j Z_odd)/m^2 = 1 - j^2/m^2 at exact symbolic (m, j)  (ratio_Z = -j**2/m**2 + 1)
+  [PASS (A)] (W.symb) triple baseline match: ratio_S = ratio_T = ratio_Z  (all three ratios = 1 - j^2/m^2)
+  [PASS (A)] (W) S_cls, T_gamma, Z_odd have identical response at (m,j) = (1, 1/5)  (W_S = log(24/25), W_T = log(24/25), W_Z = log(24/25), target = log(24/25))
+  [PASS (A)] (W) S_cls, T_gamma, Z_odd have identical response at (m,j) = (2, 3/10)  (W_S = log(391/400), W_T = log(391/400), W_Z = log(391/400), target = log(391/400))
+  [PASS (A)] (W) S_cls, T_gamma, Z_odd have identical response at (m,j) = (3, 7/10)  (W_S = log(851/900), W_T = log(851/900), W_Z = log(851/900), target = log(851/900))
+
+----------------------------------------------------------------------------------------
+Part 6: (R1) small-source bosonic curvature ∂^2 W / ∂j^2 |_{j=0} = -2/m^2
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R1) ∂^2 W / ∂j^2 |_{j=0} = -2/m^2 for S_cls on scalar baseline  (curv_S = -2/m**2)
+  [PASS (A)] (R1) ∂^2 W / ∂j^2 |_{j=0} = -2/m^2 for T_gamma on scalar baseline  (curv_T = -2/m**2)
+  [PASS (A)] (R1) ∂^2 W / ∂j^2 |_{j=0} = -2/m^2 for Z_odd on scalar baseline  (curv_Z = -2/m**2)
+  [PASS (A)] (R1) curvatures match across the three odd generators on m I baseline  (all three curvatures = -2/m^2)
+
+----------------------------------------------------------------------------------------
+Part 7: counterfactual — non-scalar baseline breaks (W)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (cf) non-scalar baseline diag(2,3,5,7) vs diag(2,3,5) breaks (W) for S_cls vs T_gamma  (W_S = log(81/80), W_T = log(159/160), diff = log(54/53))
+  [PASS (A)] (cf) non-scalar baseline diag(2,3,5) vs diag(2,3) breaks (W) for T_gamma vs Z_odd  (W_T = log(159/160), W_Z = log(33/32), diff = log(53/55))
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision on C^4, C^3, and C^2:
+    (Herm)  S_cls, T_gamma, Z_odd all Hermitian
+    (Trace) Tr S_cls = Tr T_gamma = Tr Z_odd = 0
+    (S1)    spec(S_cls)   = {+1, -1, 0, 0}
+    (S2)    spec(T_gamma) = {+1, -1, 0}
+    (S3)    spec(Z_odd)   = {+1, -1}
+    (C1)    char poly S_cls   = λ^4 - λ^2
+    (C2)    char poly T_gamma = -λ^3 + λ
+    (C3)    char poly Z_odd   = λ^2 - 1
+    (E1)    S_cls^3   = S_cls   (cubic involution)
+    (E2)    T_gamma^3 = T_gamma (cubic involution)
+    (E3)    Z_odd^3   = Z_odd   (cubic involution)
+    (DG4)   det(m I_4 + j S_cls)   = m^2 (m^2 - j^2)
+    (DG3)   det(m I_3 + j T_gamma) = m (m^2 - j^2)
+    (DG2)   det(m I_2 + j Z_odd)   = m^2 - j^2
+    (W)     Triple baseline match: log|...| - log|m^n| = log|1 - j^2/m^2|
+    (R1)    Small-source curvature ∂^2 W / ∂j^2 |_{j=0} = -2/m^2 (all 3)
+    Counterfactual: non-scalar baseline diag(2,3,5,7)/diag(2,3,5)/diag(2,3) breaks (W)
+
+========================================================================================
+TOTAL: PASS=32, FAIL=0
+========================================================================================
+
+----- stderr -----
+

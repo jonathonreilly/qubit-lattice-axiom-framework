@@ -1,0 +1,118 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py
+runner_sha256: 33853187c3347a81d1fe2ea8a19f96d0cfeab3935ec2189e13e40accc2f993a4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of (CP)^2 = epsilon * I on explicit
+      framework Cl(3) x Z^3 C, P representations.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: Cl(3) Pauli-irrep relations on V_int = C^2
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1.11) anticommutator: {sigma_1, sigma_1} = 2 I
+  [PASS (A)] (P1.12) anticommutator: {sigma_1, sigma_2} = 0 I
+  [PASS (A)] (P1.13) anticommutator: {sigma_1, sigma_3} = 0 I
+  [PASS (A)] (P1.21) anticommutator: {sigma_2, sigma_1} = 0 I
+  [PASS (A)] (P1.22) anticommutator: {sigma_2, sigma_2} = 2 I
+  [PASS (A)] (P1.23) anticommutator: {sigma_2, sigma_3} = 0 I
+  [PASS (A)] (P1.31) anticommutator: {sigma_3, sigma_1} = 0 I
+  [PASS (A)] (P1.32) anticommutator: {sigma_3, sigma_2} = 0 I
+  [PASS (A)] (P1.33) anticommutator: {sigma_3, sigma_3} = 2 I
+  [PASS (A)] (P2) Pauli omega = sigma_1 sigma_2 sigma_3 == i I_2
+
+----------------------------------------------------------------------------------------
+Part 2: Cl(3) grading automorphism G_C = sigma_3
+----------------------------------------------------------------------------------------
+  [PASS (A)] (G.0a) G_C = sigma_3 is involutory: G_C^2 = I_2
+  [PASS (A)] (G.0b) G_C is real: G_C^* == G_C
+  [PASS (A)] (G.1) G_C sigma_1 G_C^{-1} == -sigma_1
+  [PASS (A)] (G.2) G_C sigma_2 G_C^{-1} == -sigma_2
+  [PASS (A)] (G.3) G_C sigma_3 G_C^{-1} == +sigma_3
+
+----------------------------------------------------------------------------------------
+Part 3: (S1) (G_C G_P)^2 = +I_int on internal factor
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1.a) G_P = +sigma_3: (G_C G_P)^2 == +I_int  ((G_C G_P)^2 = [[1, 0], [0, 1]])
+  [PASS (A)] (S1.b) G_P = -sigma_3: (G_C G_P)^2 == +I_int  ((G_C G_P)^2 = [[1, 0], [0, 1]])
+
+----------------------------------------------------------------------------------------
+Part 4: (S2) modular convention 1-d slice, L in {4, 6, 8}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S2.mod.4.a) C_lat^2 == I_lat (L = 4)
+  [PASS (A)] (S2.mod.4.b) P_lat^2 == I_lat (L = 4)
+  [PASS (A)] (S2.mod.4.c) (C_lat P_lat)^2 == +I_lat (modular, L = 4)  (epsilon_lat^mod = +1)
+  [PASS (A)] (S2.mod.6.a) C_lat^2 == I_lat (L = 6)
+  [PASS (A)] (S2.mod.6.b) P_lat^2 == I_lat (L = 6)
+  [PASS (A)] (S2.mod.6.c) (C_lat P_lat)^2 == +I_lat (modular, L = 6)  (epsilon_lat^mod = +1)
+  [PASS (A)] (S2.mod.8.a) C_lat^2 == I_lat (L = 8)
+  [PASS (A)] (S2.mod.8.b) P_lat^2 == I_lat (L = 8)
+  [PASS (A)] (S2.mod.8.c) (C_lat P_lat)^2 == +I_lat (modular, L = 8)  (epsilon_lat^mod = +1)
+
+----------------------------------------------------------------------------------------
+Part 5: (S2) mirror convention 1-d slice, L in {4, 6, 8}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S2.mir.4.a) P_lat^2 == I_lat (mirror, L = 4)
+  [PASS (A)] (S2.mir.4.b) (C_lat P_lat)^2 == -I_lat (mirror, L = 4)  (epsilon_lat^mir = -1 (= (-1)^(L-1) for even L))
+  [PASS (A)] (S2.mir.6.a) P_lat^2 == I_lat (mirror, L = 6)
+  [PASS (A)] (S2.mir.6.b) (C_lat P_lat)^2 == -I_lat (mirror, L = 6)  (epsilon_lat^mir = -1 (= (-1)^(L-1) for even L))
+  [PASS (A)] (S2.mir.8.a) P_lat^2 == I_lat (mirror, L = 8)
+  [PASS (A)] (S2.mir.8.b) (C_lat P_lat)^2 == -I_lat (mirror, L = 8)  (epsilon_lat^mir = -1 (= (-1)^(L-1) for even L))
+
+----------------------------------------------------------------------------------------
+Part 6: (S2) full 3-d modular convention, L = 4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S2.3d.mod.4.a) C_lat^2 == I_lat (3-d, L = 4)
+  [PASS (A)] (S2.3d.mod.4.b) P_lat^2 == I_lat (3-d modular, L = 4)
+  [PASS (A)] (S2.3d.mod.4.c) (C_lat P_lat)^2 == +I_lat (3-d modular, L = 4)  (3-d modular epsilon_lat = +1)
+
+----------------------------------------------------------------------------------------
+Part 7: (S3) full V = V_lat tensor V_int, 1-d slice L = 4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S3.mod.4.a) C^2 == I_V (full V, 1-d slice, L = 4)
+  [PASS (A)] (S3.mod.4.b) P^2 == I_V (full V, 1-d slice, L = 4)
+  [PASS (A)] (S3.mod.4.c) (C P)^2 == +I_V (full V, modular, L = 4)  (epsilon = epsilon_lat * (G_C G_P)^2 sign = (+1)(+1) = +1)
+  [PASS (A)] (S3.mir.4.c) (C P)^2 == -I_V (full V, mirror, L = 4)  (epsilon = epsilon_lat * (G_C G_P)^2 sign = (-1)(+1) = -1)
+
+----------------------------------------------------------------------------------------
+Part 8: (S3) full V on 3-d L = 4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S3.3d.mod.4) (C P)^2 == +I_V (full V, 3-d modular, L = 4)  (matches parent CPT_EXACT_NOTE item 7: (CP)^2 = I)
+
+----------------------------------------------------------------------------------------
+Part 9: counterfactual probe — non-grading G_C
+----------------------------------------------------------------------------------------
+  [PASS (A)] (cf.1) counterfactual G_C = sigma_1, G_P = sigma_3: (G_C G_P)^2 == -I_int (scalar, but sign differs)  (confirms scalar-square is convention-dependent in sign)
+  [PASS (A)] (cf.2) for all Pauli pairs (sigma_a, sigma_b): (sigma_a sigma_b)^2 in {+I, -I} (always scalar)  (every Cl(3) grading automorphism gives scalar (G_C G_P)^2)
+
+----------------------------------------------------------------------------------------
+Part 10: (R1) substitution into parent narrow theorem's C3
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R1.4.a) Theta^2 == (CP)^2 from parent premises (real C, P)  (parent's Theta^2 = (CP)^2 algebra confirmed on framework C, P)
+  [PASS (A)] (R1.4.b) Theta^2 == +I_V (closes C3 with epsilon = +1, modular)  (parent's missing C3 step now backed by explicit framework C, P)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    Pauli-irrep relations {sigma_i, sigma_j} = 2 delta_{ij} I_2
+    G_C = sigma_3 grading automorphism: G_C sigma_i G_C^{-1} = +/- sigma_i
+    (S1) (G_C G_P)^2 = +I_int for G_P = +/- sigma_3
+    (S2) (C_lat P_lat)^2 = +I_lat (modular, L in {4, 6, 8}, 1-d and 3-d)
+    (S2) (C_lat P_lat)^2 = -I_lat (mirror, L in {4, 6, 8}, 1-d)
+    (S3) (C P)^2 = epsilon * I_V on full V (1-d L=4, 3-d L=4)
+    (cf) convention-dependent scalar sign; all Cl(3)-grading choices give scalar
+    (R1) Theta^2 = +I_V closes C3 with explicit epsilon in modular convention
+
+========================================================================================
+TOTAL: PASS=44, FAIL=0
+========================================================================================
+
+----- stderr -----
+

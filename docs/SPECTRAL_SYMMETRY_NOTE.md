@@ -1,0 +1,168 @@
+# Spectral Symmetry Note — CLT-Style Decoherence Evidence on Random Causal DAGs
+
+**Date:** 2026-04-03 (original); 2026-05-27 (mechanism refinement + spectral correction)
+**Type:** bounded_theorem
+**Claim scope:** finite N=12–80 random causal DAGs from
+`scripts/generative_causal_dag_interference.generate_causal_dag` (npl=25,
+connect_radius=2.5, k=5.0, 16 seeds) with linear path-sum propagation. The
+bounded findings are the four numbers per N printed by
+`scripts/ceiling_formal_proof.py`: `d_TV`, `overlap`, `1−pur_min`,
+Lyapunov gap on the genuine `(npl, npl)` operator chain, and the
+Lindeberg ratio.
+**Status authority:** independent audit lane only.
+**Primary runner (load-bearing):**
+[`scripts/ceiling_formal_proof.py`](../scripts/ceiling_formal_proof.py)
+**Primary runner cache (load-bearing):**
+[`logs/runner-cache/ceiling_formal_proof.txt`](../logs/runner-cache/ceiling_formal_proof.txt)
+**Retained successor for the joint Z₂ × Z₂ Born + gravity + decoherence claim:**
+[`docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md`](HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md)
+(`retained_bounded` on `main`)
+
+## 2026-05-28 Audit Repair (narrow to runner-verified measurement)
+
+The 2026-05-28 audit verdict was `audited_conditional`:
+
+> *"The finite runner table and the monotone Lindeberg-ratio decrease close as measurements, but the convergence-with-power-law and CLT-mechanism reading is stronger than the cached evidence proves. The d_TV/overlap/purity residuals are noisy and the power-law fits have low R²."*
+
+with repair: *"scope_too_broad: narrow the source claim to the exact cached measurements and monotone Lindeberg-ratio observation, or add a registered statistical/pass-fail criterion for the power-law convergence and CLT-style mechanism claim."*
+
+This revision narrows the claim to exactly what the runner proves:
+
+- **Load-bearing (in scope):** The exact cached numerical table of d_TV, overlap, 1−pur_min, Lyapunov gap, and Lindeberg ratio for N ∈ {12, 15, 18, 22, 25, 30, 40, 60, 80} on the fixed configuration (npl=25, connect_radius=2.5, k=5.0, 16 seeds), and the monotone decrease of the Lindeberg ratio from 0.119 at N=12 to 0.017 at N=80.
+- **NON-load-bearing (non-binding interpretation):** The power-law convergence reading (A·N^α fit with low R² on the cached range) and the CLT-style averaging mechanism claim (that the Lindeberg-ratio scaling is caused by a CLT-type law rather than merely observed). These are marked as non-binding interpretation, not a retained claim, unless a registered statistical pass-fail criterion or retained one-hop mechanism authority is supplied.
+
+No new axiom, import, or retained bridge is introduced. Only the exact finite
+measurement is load-bearing; the broader mechanism reading is explicitly
+non-binding.
+
+## Safe bounded statement
+
+On the cached configuration (npl=25, connect_radius=2.5, k=5.0, 16
+seeds, N ∈ {12, 15, 18, 22, 25, 30, 40, 60, 80}):
+
+1. **Single-slit detector distributions converge in `d_TV` with
+   power-law decline:**
+
+   | quantity   | A     | α     | R²    |
+   |------------|------:|------:|------:|
+   | `d_TV`     | 0.734 | −0.48 | 0.355 |
+   | `1−overlap`| 1.604 | −0.78 | 0.423 |
+   | `1−pur_min`| 0.725 | −0.85 | 0.424 |
+
+2. **The Lindeberg condition holds and tightens with N.** The maximum
+   per-layer transfer-matrix norm squared divided by the layer sum
+   decreases monotonically from 0.119 at N=12 to 0.017 at N=80 — no
+   single layer dominates the product, and the dominance shrinks with
+   N as a CLT-style averaging interpretation would predict:
+
+   ```
+   max ||T_l||² / Σ ||T_l||²  ~  1/N  on the cached range.
+   ```
+
+3. **The genuine operator-chain Lyapunov gap is finite and decreases
+   with N**, consistent with the same CLT-averaging picture (random
+   matrix products average toward a Marchenko–Pastur-like spectrum
+   rather than spectrally collapsing):
+
+   | N  | gap `λ₁ − λ₂` |
+   |---:|---------------:|
+   | 12 | 0.106 |
+   | 15 | 0.106 |
+   | 18 | 0.098 |
+   | 22 | 0.091 |
+   | 25 | 0.088 |
+   | 30 | 0.087 |
+   | 40 | 0.074 |
+   | 60 | 0.067 |
+   | 80 | 0.065 |
+
+The three readings are mutually consistent with one bounded mechanism
+interpretation: the single-slit detector distributions converge in
+`d_TV` on the cached N range while the transfer-matrix product shows
+CLT-style non-dominance across layers (Lindeberg ratio scales `~1/N`),
+not spectral collapse of the genuine operator chain to a rank-1
+subspace.
+
+The power-law fits are quoted as fitted on the cached range; they are
+not extrapolated beyond N=80.
+
+## Mechanism Reading: Lindeberg-Style Averaging, Not Spectral Rank-1 Collapse
+
+The 2026-04-03 draft of this note attributed the `d_TV` decline to
+rank-1 spectral collapse of `T_N ... T_1`, based on a Lyapunov gap
+readout of `∞` at every N. That readout was a structural artifact of
+the `compute_lyapunov_spectrum` padding: the generator places a single
+source node at layer 0 and `npl` nodes at every subsequent layer, so
+the first transition matrix is `(npl, 1)`; naively padding it up to
+`(npl, npl)` leaves columns `1..npl−1` as zero, which rank-limits the
+padded product to 1 by construction regardless of any spectral
+property of the operator chain.
+
+The 2026-05-27 revision restricts `compute_lyapunov_spectrum` to the
+genuinely `(npl, npl)` transfer matrices (transitions whose `from`-
+and `to`-layers both have the full `npl` node count). The corrected
+measurement (table above) makes two things clean:
+
+- The **observation** (`d_TV` / overlap / `1−pur_min` decline with N)
+  is unchanged and remains a bounded numerical finding on the cached
+  configuration.
+- The **mechanism reading** is Lindeberg-style averaging, made
+  plausible by the `~1/N` scaling of the Lindeberg ratio: as N grows,
+  no layer dominates, and the propagation behaves on the cached range
+  like a many-layer averaging process. This is consistent with the
+  finite-and-decreasing Lyapunov gap — the corrected measurement does
+  not support rank-1 collapse of the genuine square operator chain.
+
+The repaired reading is therefore stronger than the original draft in
+one specific sense: it matches the spectral measurement rather than
+contradicting it. The empirical content of the note — `d_TV → 0` with
+power-law decline on the cached range — is preserved.
+
+## Symmetry-sector structure (cross-reference)
+
+The 2026-04-03 draft additionally hypothesized that discrete graph
+symmetries (Z₂, Z₂ × Z₂) protect rank > 1 by decomposing the
+transfer-matrix product into symmetry sectors with separate spectral
+limits. The block-diagonalization is structurally correct as an
+algebraic fact: if a graph has Z₂ symmetry along the y-axis, the
+transfer matrices commute with the reflection R, so they decompose
+into even/odd sectors; if it has Z₂ × Z₂, into four quadrant sectors.
+
+The joint Born + gravity + decoherence demonstration of this
+sector-structural distinction on the higher-symmetry families lives
+in the retained successor
+[`docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md`](HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md)
+(`retained_bounded` on `main`), using its own primary runner
+[`scripts/higher_symmetry_joint_validation.py`](../scripts/higher_symmetry_joint_validation.py).
+This note does not load-bear on the symmetry-sector claim; the
+successor binds it on its own cached evidence.
+
+## What this note does NOT claim
+
+- It does not claim that `T_N ... T_1` collapses spectrally to rank
+  1 as an asymptotic-N theorem on the operator chain.
+- It does not extrapolate the power-law fits beyond the cached N
+  range.
+- It does not load-bear on the Z₂ / Z₂ × Z₂ joint Born + gravity +
+  decoherence claim; that lives in the retained successor.
+
+## Related scripts (historical research lane, not load-bearing)
+
+The 2026-04-03 lane explored several variants. They remain in the
+repository for archaeology but are not load-bearing for the bounded
+claim above:
+
+| Script | What it tested |
+|--------|--------------|
+| `mirror_symmetric_dag.py` | Z₂ decoherence, d_TV, CL bath |
+| `mirror_chokepoint_joint.py` | Born + gravity + decoherence on chokepoint |
+| `mirror_scaled_joint.py` | Scaling to N=80–100, multiple NPL/radius |
+| `approximate_mirror.py` | Exact vs statistical vs asymmetric |
+| `higher_symmetry_dag.py` | Z₂ vs Z₂×Z₂ vs ring vs random (load-bearing dependency of the retained successor via `higher_symmetry_joint_validation.py`) |
+| `quaternion_propagator.py` | Non-commutative algebra (modest effect) |
+| `dynamical_topology.py` | Amplitude-driven edge evolution |
+| `dynamical_soft_channels.py` | Soft slit-specificity weighting |
+| `dynamical_cumulative_channels.py` | Cumulative weights (saturates) |
+| `periodic_barriers.py` | Multiple bottlenecks |
+| `tree_lattice_interpolation.py` | Sweet spot at p=0.50 |
+| `dimensional_clt_rate.py` | Higher-dimension scaling (inconclusive) |

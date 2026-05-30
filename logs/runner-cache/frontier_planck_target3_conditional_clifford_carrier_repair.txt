@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
+runner_sha256: a70077b76006e86e9b8f9bbbaefbae9e822ada0b092fa0e43f6e6b1f17db82a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+Planck Target 3 conditional Clifford/algebraic-CAR carrier repair
+Claim: planck_target3_clifford_phase_bridge_theorem_note_2026-04-25
+Runner: scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
+
+========================================================================================
+PART 0: SOURCE FIREWALL
+========================================================================================
+  [PASS] source note contains boundary phrase: algebraic CAR rescope
+  [PASS] source note contains boundary phrase: conditional-support - finite Clifford/algebraic-CAR carrier algebra
+  [PASS] source note contains boundary phrase: This row does not derive the metric-compatible coframe response on `K`
+  [PASS] source note contains boundary phrase: This row does not prove substrate forcing of the active block
+  [PASS] source note contains boundary phrase: This row does not claim that bare Hilbert-flow semantics alone force CAR
+  [PASS] source note contains boundary phrase: This row does not use ambient-adjoint CAR relations
+  [PASS] source note contains boundary phrase: This row does not add a new axiom
+  [PASS] source note contains boundary phrase: scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py
+  [PASS] source note excludes overbroad phrase: G_Newton
+  [PASS] source note excludes overbroad phrase: a/l_P
+  [PASS] source note excludes overbroad phrase: source-unit normalization support theorem
+  [PASS] source note excludes overbroad phrase: PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md
+  [PASS] source note excludes overbroad phrase: Current output:
+  [PASS] source note excludes overbroad phrase: PASS=34
+  [PASS] source note excludes overbroad phrase: c_Widom
+  [PASS] source note excludes overbroad phrase: c_j^dagger
+  [PASS] runner source excludes overbroad phrase: G_Newton
+  [PASS] runner source excludes overbroad phrase: a/l_P
+  [PASS] runner source excludes overbroad phrase: c_Widom
+  [PASS] runner source excludes overbroad phrase: frontier_planck_target3_clifford_phase_bridge
+
+========================================================================================
+PART 1: FINITE CLIFFORD/ALGEBRAIC-CAR ALGEBRA
+========================================================================================
+  [PASS] coframe generators square to the metric norm  (max err=0.00e+00)
+  [PASS] coframe generators satisfy Cl_4 anticommutators  (max err=0.00e+00)
+  [PASS] linear coframe response preserves the quadratic form  (max err=1.84e-16)
+  [PASS] Clifford words span M_4(C)  (rank=16)
+  [PASS] commutant is only scalar  (dim=1)
+  [PASS] rank-four module is minimal for Cl_4(C)
+  [PASS] oriented Clifford pairs give two algebraic CAR pairs  (cc=0.00e+00, cct=0.00e+00)
+  [PASS] two algebraic CAR pairs have dimension four
+  [PASS] algebraic CAR pairs reconstruct the Clifford generators  (max err=0.00e+00)
+  [PASS] nonunitary-similar coframe still squares to the metric norm  (max err=0.00e+00)
+  [PASS] nonunitary-similar coframe still satisfies Cl_4 anticommutators  (max err=2.22e-16)
+  [PASS] formal Clifford-# CAR survives nonunitary similarity  (cc=0.00e+00, cct=2.22e-16)
+  [PASS] ambient-adjoint CAR is not inferred from metric compatibility  (ambient cct=1.73e+00)
+  [PASS] Clifford bivector squares to -I  (err=0.00e+00)
+  [PASS] spin lift has 2pi -> -I and 4pi -> I
+  [PASS] rank-four packet in dimension sixteen has primitive trace 1/4  (1/4)
+
+========================================================================================
+SUMMARY
+========================================================================================
+PASS=36 FAIL=0
+RESULT: PASS
+
+----- stderr -----
+

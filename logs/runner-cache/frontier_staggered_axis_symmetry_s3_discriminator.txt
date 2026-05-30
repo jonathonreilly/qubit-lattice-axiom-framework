@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_axis_symmetry_s3_discriminator.py
+runner_sha256: 53b73b9ecca7d126da05f25643a5e0c31cccc3188d79f3db763539249e4853b7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+============================================================================
+PHYSICAL STAGGERED AXIS-SYMMETRY ON hw=1 TRIPLET IS FULL S_3
+============================================================================
+
+----------------------------------------------------------------------------
+Gauge-invariant 1: plaquette phases (Z_2 field strength)
+----------------------------------------------------------------------------
+  [PASS] all (0,1)-plaquettes = -1  (values={-1})
+  [PASS] all (0,2)-plaquettes = -1  (values={-1})
+  [PASS] all (1,2)-plaquettes = -1  (values={-1})
+  [PASS] plaquette field strength is permutation-symmetric (all planes equal -1)
+
+----------------------------------------------------------------------------
+Gauge-invariant 2: Polyakov holonomies around periodic cycles
+----------------------------------------------------------------------------
+  [PASS] all Polyakov loops in direction 0 trivial (+1)  ({1})
+  [PASS] all Polyakov loops in direction 1 trivial (+1)  ({1})
+  [PASS] all Polyakov loops in direction 2 trivial (+1)  ({1})
+
+----------------------------------------------------------------------------
+Every axis ordering (S_3) is a physical symmetry (explicit gauge)
+----------------------------------------------------------------------------
+  [PASS] ordering (0, 1, 2) (identity): explicit Z_2 gauge to identity found
+  [PASS] ordering (0, 2, 1) (transposition): explicit Z_2 gauge to identity found
+  [PASS] ordering (1, 0, 2) (transposition): explicit Z_2 gauge to identity found
+  [PASS] ordering (1, 2, 0) (3-cycle): explicit Z_2 gauge to identity found
+  [PASS] ordering (2, 0, 1) (3-cycle): explicit Z_2 gauge to identity found
+  [PASS] ordering (2, 1, 0) (transposition): explicit Z_2 gauge to identity found
+  [PASS] all 6 S_3 axis orderings gauge-equivalent => full S_3 is physical symmetry  (6/6)
+
+============================================================================
+VERDICT
+============================================================================
+  PHYSICAL AXIS-SYMMETRY = FULL S_3 (falsifier RETIRED).
+  The staggered eta-convention's axis asymmetry is pure gauge: the
+  complete gauge-invariant content (plaquette field strength all -1;
+  Polyakov holonomies all +1) is permutation-symmetric, and every one
+  of the 6 S_3 axis orderings is related to the identity ordering by
+  an explicit site-local Z_2 gauge transformation.
+
+  Consequences for the positivity -> C_3 program:
+   * the staggered kinematics does NOT break S_3 (not to C_3, not to
+     Z_2) -- the physical axis-symmetry is the full S_3;
+   * therefore the staggered eta structure does not itself supply or
+     preempt an S_3 -> C_3 breaking;
+   * any positivity/orientation mechanism selecting an orientation-
+     preserving C_3 subgroup remains a separate physical bridge.
+
+============================================================================
+PASS=14 FAIL=0
+
+----- stderr -----
+

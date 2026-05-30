@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_kubo_continuum_limit_families_note_hostile_audit_findings.py
+runner_sha256: 42382cbe43e5eb250cf977ee5bbeee06b3b1ca9984b018a0f014a9788ef96cb7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — kubo_continuum_limit_families_note
+==============================================================================
+  [PASS] [A] Parent note exists  (KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md, 14994 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   kubo_fam2_refinement_note IS cited (>=1 hit)  (hits = 4)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 2 PASS / 0 FAIL
+Class-A pattern hits: 2
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

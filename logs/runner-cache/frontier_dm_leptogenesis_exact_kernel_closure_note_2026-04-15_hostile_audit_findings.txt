@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_exact_kernel_closure_note_2026-04-15_hostile_audit_findings.py
+runner_sha256: b303dcd9d10aecaf5664b928465ec0faabdaa77996b23761874bd24b2d22fc48
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — dm_leptogenesis_exact_kernel_closure_note_2026-04-15
+==============================================================================
+  [PASS] [A] Parent note exists  (DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md, 9242 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15 IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   dm_leptogenesis_ne_active_column_axiom_boundary_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_pmns_cp_bridge_boundary_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_transport_status_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_to_dweh_hermitian_source_family_target_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_to_dweh_local_chain_path_algebra_target_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   lepton_shared_higgs_universality_collapse_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   lepton_single_higgs_pmns_triviality_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   neutrino_dirac_two_higgs_canonical_reduction_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   neutrino_mass_reduction_to_dirac_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   neutrino_two_amplitude_last_mile_reduction_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_active_four_real_source_from_transport_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_c3_character_mode_reduction_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_c3_nontrivial_current_boundary_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_corner_transport_active_block_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_current_bank_value_selection_nogo_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_oriented_cycle_reduced_channel_nonselection_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_selector_class_space_uniqueness_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_selector_nonuniversal_support_reduction_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_selector_sign_to_branch_reduction_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_selector_unique_amplitude_slot_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.publication_matrix NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 28 PASS / 0 FAIL
+Class-A pattern hits: 28
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

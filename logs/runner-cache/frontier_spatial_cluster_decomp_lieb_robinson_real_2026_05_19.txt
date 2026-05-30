@@ -1,0 +1,151 @@
+===== runner cache v1 =====
+runner: scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py
+runner_sha256: f51114820540c6fafe71c0c5a957613233146f262d75ca9d6ee1fd58c2c5ca99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+================================================================================
+Finite-Volume Lieb-Robinson Bound plus Bounded Cluster-Decomposition Support
+Companion to docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md
+================================================================================
+
+Running V1 — Locality of nested commutators ...
+  PASS: All n=0..4 nested commutators have support within the predicted thickening.
+
+Running V2 — Triangle-inequality bound on nested commutator norms ...
+  PASS: All n=1..4 bounds hold. Ratios actual/bound: [0.222, 0.064, 0.021, 0.007]
+
+Running V3 — Lieb-Robinson bound on spin chain ...
+  PASS: LR bound holds at t = [0.05, 0.1, 0.2, 0.4]. Ratios actual/bound: [0.0, 0.0, 0.0, 0.0]
+
+Running V4 — LR velocity / correlation-length extraction ...
+  PASS: Slope = -3.352 → xi_extracted = 0.298 (theory loose: 1.443). Exponential decay structure confirmed.
+
+Running V5 — Finite-N cluster-support fit on spin chain ...
+  PASS: Δ=0.4916, slope=-0.184 → ξ_cluster_num=5.437. Loose theory upper ξ ≤ 49.77. Finite-N decay-fit support only.
+
+Running V6 — Composition with PR #1577 SU(3) T_W (Δ_T > 0 + LR) ...
+  PASS: λ_0=1.000000, λ_1=0.800737 (predicted 0.800737), Δ_T=0.1993, Δ_H=0.2222, v_LR^SU3=99.95, ξ_cluster^SU3=899.55.
+
+Running V7 — Structural SU(3) transfer-spectrum exponential sequence ...
+  PASS: Δ_H=0.2222, slope=-0.1571 → ξ_cluster=6.3640 (expected ξ=R_0/Δ_H=6.3640, rel_err=2.79e-16). Structural exponential sequence confirmed.
+
+Running V8 — Anti-overclaim: finite-Λ scope verification ...
+  PASS: Δ(N=4)=0.6589, Δ(N=6)=0.4916, rel_diff=0.254. ξ depends on Λ — finite-Λ scope confirmed (no uniform-in-Λ claim).
+
+================================================================================
+Verification summary
+================================================================================
+  [PASS] V1 — Locality of nested commutators
+  [PASS] V2 — Triangle-inequality bound on nested commutator norms
+  [PASS] V3 — Lieb-Robinson bound on spin chain
+  [PASS] V4 — Lieb-Robinson velocity / correlation-length extraction
+  [PASS] V5 — Finite-N cluster-support fit on spin chain
+  [PASS] V6 — Composition with PR #1577 SU(3) T_W (Δ_T > 0 + LR velocity)
+  [PASS] V7 — Structural SU(3) transfer-spectrum exponential sequence
+  [PASS] V8 — Anti-overclaim: finite-Λ scope verification
+
+Total: PASS = 8, FAIL = 0
+Runtime: 0.03 seconds
+================================================================================
+
+Detailed metrics
+--------------------------------------------------------------------------------
+[V1 — Locality of nested commutators]
+  supp_C0: [0]
+  supp_C1: [0, 1]
+  supp_C2: [0, 1, 2]
+  supp_C3: [0, 1, 2, 3]
+  supp_C4: [0, 1, 2, 3, 4]
+
+[V2 — Triangle-inequality bound on nested commutator norms]
+  n_1_actual: 0.5
+  n_1_bound: 2.25
+  n_1_ratio: 0.2222222222222222
+  n_2_actual: 0.6504197829707891
+  n_2_bound: 10.125
+  n_2_ratio: 0.06423899091069521
+  n_3_actual: 0.93847642641877
+  n_3_bound: 45.5625
+  n_3_ratio: 0.020597562171056683
+  n_4_actual: 1.5046570619820254
+  n_4_bound: 205.03125
+  n_4_ratio: 0.007338671846277216
+
+[V3 — Lieb-Robinson bound on spin chain]
+  v_LR_theory: 12.232268228065703
+  xi: 1.4426950408889634
+  R: 5
+  t_0.05_actual: 4.806574099257839e-10
+  t_0.05_bound: 0.023874484806038595
+  t_0.1_actual: 1.5372061646999483e-08
+  t_0.1_bound: 0.03647942558424115
+  t_0.2_actual: 4.907587105573888e-07
+  t_0.2_bound: 0.08516790342119603
+  t_0.4_actual: 1.5558211727161373e-05
+  t_0.4_bound: 0.464228593482379
+
+[V4 — Lieb-Robinson velocity / correlation-length extraction]
+  t: 0.2
+  Rs: [1, 2, 3, 4, 5]
+  log_norms: [-2.3113226906213757, -5.268404986788422, -7.822912047673697, -11.344976018934336, -14.5273132544672]
+  actual_norms: [np.float64(0.09913004642417153), np.float64(0.0051518212461749415), np.float64(0.0004004538425447744), np.float64(1.1828768100244472e-05), np.float64(4.907587105573888e-07)]
+  slope_fit: -3.3522006033967506
+  xi_extracted: 0.29831150289356495
+  xi_theory_loose: 1.4426950408889634
+
+[V5 — Finite-N cluster-support fit on spin chain]
+  N: 6
+  E0: -2.4935771338879262
+  E1: -2.0019953568985316
+  Delta: 0.49158177698939465
+  Rs: [1, 2, 3, 4, 5]
+  correlators: [np.float64(-0.2224872074751867), np.float64(0.06450935603477922), np.float64(-0.0773713691648943), np.float64(0.03216907316275263), np.float64(-0.046819852557450956)]
+  log_abs_corr: [-1.5028856735222569, -2.7409450108970623, -2.5591384742493917, -3.4367497487538627, -3.0614479660603635]
+  slope_fit: -0.18391201399943707
+  xi_cluster_numerical: 5.437382682368216
+  v_LR_theory: 12.232268228065703
+  xi_cluster_theory_loose_upper: 49.76697184741086
+
+[V6 — Composition with PR #1577 SU(3) T_W (Δ_T > 0 + LR velocity)]
+  N_max: 4
+  tau: 1.0
+  lam0: 1.0
+  lam1: 0.8007374029168081
+  Delta_T: 0.19926259708319194
+  lam1_predicted: 0.8007374029168081
+  Delta_H: 0.2222222222222222
+  v_LR_SU3: 99.95000673213704
+  xi_cluster_SU3: 899.5500605892335
+  num_eigenvalues_used: 3136
+
+[V7 — Structural SU(3) transfer-spectrum exponential sequence]
+  N_max: 4
+  tau: 1.0
+  lam0: 1.0
+  lam1: 0.8007374029168081
+  Delta_H: 0.2222222222222222
+  R_0: 1.4142135623730951
+  Rs: [1, 2, 3, 4, 5, 6]
+  predicted_decay: [0.8545888180667494, 0.7303220479647237, 0.624125055778261, 0.5333702937433881, 0.455812288922077, 0.38953208525021743]
+  log_predicted: [-0.15713484026367722, -0.3142696805273544, -0.4714045207910315, -0.6285393610547089, -0.785674201318386, -0.9428090415820631]
+  slope_fit: -0.15713484026367724
+  xi_cluster_extracted: 6.363961030678927
+  xi_cluster_expected: 6.3639610306789285
+
+[V8 — Anti-overclaim: finite-Λ scope verification]
+  N4_E0: -1.616025403784439
+  N4_E1: -0.9571067811865477
+  N4_Delta: 0.6589186225978914
+  N4_xi_extracted: inf
+  N6_E0: -2.4935771338879262
+  N6_E1: -2.0019953568985334
+  N6_Delta: 0.49158177698939287
+  N6_xi_extracted: 5.437382682368216
+  rel_diff_gap_N4_vs_N6: 0.25395677079021745
+
+
+----- stderr -----
+

@@ -1,0 +1,264 @@
+# Qubit Axiom Hardening: Local-Algebra Equivalence
+
+**Date:** 2026-05-20
+**Status:** current framework hardening note
+**Type:** meta (companion to `MINIMAL_AXIOMS_2026-05-20.md` A1)
+**Defends:** `MINIMAL_AXIOMS_2026-05-20.md` A1 statement against the
+"vocabulary substitution" framing raised on PR #1604.
+
+## Purpose
+
+PR #1604 first-pass review raised the objection that A1's bare
+"a qubit at every site" form *"reduces axiomatic content to
+vocabulary substitution unless the canonical statement preserves
+the physical Cl(3) commitment explicitly."*
+
+This note rejects that framing for the local-algebra commitment. The
+bare-qubit Axiom 1 commits to the same retained local operator algebra
+as the "physical-Cl(3,0)" phrasing: both name the same
+algebra-isomorphism class. The bare form is preferred for readability
+and Maxwell-tight minimality, **not** because it weakens the algebraic
+commitment. Two further readings — that "qubit at every lattice site"
+means one qubit per site (not a multi-copy module carrying the same
+algebra), and that ideal unrefined sharp projective measurements use
+`K_P = P` — are **not** recorded here as ratifications; they are
+derived in named derivation lanes
+(`QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md`
+and
+`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`).
+
+## The local-algebra commitment of Axiom 1 under either phrasing
+
+The per-site operator algebra committed by Axiom 1 is one specific
+real-algebra-isomorphism class. That class has many co-equal
+names; here are the five most relevant:
+
+| Name | Form |
+|---|---|
+| Operator-algebraic | `M_2(ℂ)` (bounded operators on `ℂ²`) |
+| Geometric (real Clifford) | `Cl(3,0)` (real algebra over `ℝ³`) |
+| Generator-relation | algebra of three anticommuting self-adjoint `σ_a` with `σ_a² = I` |
+| Quantum-information | one qubit |
+| Pauli-group span | complex-linear span of `{±I, ±iI, ±σ_a, ±iσ_a}` |
+
+These are **the same object** under five co-equal labels. The
+equivalences are audit-ratified:
+
+- `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+  (`retained`, positive_theorem): `Cl(3,0) ⊗_ℝ ℂ ≅ M_2(ℂ) ⊕ M_2(ℂ)`
+- `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
+  (`retained`, positive_theorem): faithful complex irrep is 2-dim
+- `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
+  (`retained_bounded`, bounded_theorem): Pauli-irrep uniqueness
+
+## Rejecting the "vocabulary substitution" framing
+
+The objection implicitly assumes that "qubit" is a less precise
+term than "physical Cl(3,0)" — that the bare form loses
+commitment-strength or mathematical content.
+
+**That assumption is wrong on three counts.**
+
+### Count 1 — "qubit" has a precise, standard, retained-grade meaning
+
+"Qubit" is not a casual term. In contemporary physics and quantum
+information theory it has an exact mathematical definition: the
+operator algebra `M_2(ℂ)` acting on a 2-dim complex Hilbert space
+`ℂ²` (Nielsen-Chuang Ch.1; Wilde Ch.2; Watrous Ch.1). This is
+textbook content — no ambiguity, no informality.
+
+In the framework, "qubit" is bound to that exact mathematical
+object via the retained narrow theorems above. The bare-qubit
+form is not a casual rename of `Cl(3,0)` — it names the same
+algebra via its standard quantum-information-theoretic label.
+
+### Count 2 — every existing `Cl(3)`-language retained row reads cleanly under the qubit identification
+
+The framework's existing retained / retained_bounded / retained_no_go
+surface uses `Cl(3)` language pervasively. Examples:
+`cl3_color_automorphism_theorem` (`retained_bounded`),
+`cl3_complexification_split_narrow_theorem_note_2026-05-10`
+(`retained`),
+`cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
+(`retained`),
+`cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10`
+(`retained`), and the audited_conditional
+`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` at
+the narrowed U1-U3 scope.
+
+Every one of these rows, when stated under the qubit identification,
+reduces to a statement about `M_2(ℂ)` and its complex
+representations. Nothing in the existing retained surface is lost
+under the qubit reading; the equivalence is what makes the bare-qubit
+form valid.
+
+### Count 3 — local-algebra commitment of "reality is a qubit at every lattice site"
+
+The bare Axiom 1 says: at every site `x ∈ Z^3`, there is a qubit. By
+the standard algebraic meaning of "qubit" in this framework, its
+local-algebra commitment is:
+
+- per-site operator algebra `A_x = M_2(ℂ)`
+- equivalently as a real algebra, `A_x ≅ Cl(3,0)`
+- Pauli generators `σ_a^x` for `a ∈ {1, 2, 3}` per site
+- the central pseudoscalar maps to `i · 𝟙_{M_2(ℂ)}` under the
+  `Cl(3,0) ≅ M_2(ℂ)` identification
+
+That local-algebra commitment is exactly equal to the commitment of
+"the physical local algebra is `Cl(3,0)` at every site." The
+operator-algebra content is point-for-point the same. The separate
+representation-multiplicity question (per-site `k = 1`) is handled in
+the named k=1 derivation lane
+(`QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md`),
+not as axiom content here.
+
+All non-axiom structures enter only through their named derivation
+lanes.
+
+## What the objection would require to be sound
+
+The objection that the bare form is vocabulary substitution would
+require at least one of:
+
+1. **"Qubit" has ambiguous meaning.** False. Standard QI textbook
+   definition.
+2. **The qubit / `M_2(ℂ)` identification is not retained.** False.
+   Two retained positive_theorem narrow theorems certify it.
+3. **The bare form fails to commit to the same algebra as
+   `Cl(3,0)` framing.** False. Both name the same retained
+   isomorphism class.
+4. **Existing `Cl(3)`-language retained content silently breaks
+   under the qubit reading.** False. The equivalence is the
+   identity; no derivation pathway changes.
+
+None of these hold. The bare form is sound.
+
+## The disagreement reduces to a presentational choice
+
+For the local-algebra content, the disagreement reduces to:
+
+- **Form A (reviewer-preferred):** *"physical local algebra is
+  `Cl(3,0)`, equivalently `M_2(ℂ)` (the single-qubit operator
+  algebra)"* — 14 words, names the real-algebra side first
+- **Form B (canonical-as-adopted):** *"Reality is a qubit at every
+  lattice site"* — names the qubit/operator-algebra side first
+
+Both name the same retained mathematical object. Both have identical
+local-algebra commitment-strength. Neither is *more solid* than the
+other as a local-algebra statement.
+
+Form B is preferred for:
+1. **Readability** — direct physical wording
+2. **Maxwell-tight minimality** — matches the style of Newton I,
+   Galilean relativity, Maxwell's equations
+3. **Direct physical content** — "reality is a qubit at every
+   lattice site" is the actual physical claim; `Cl(3,0)` is the
+   real-algebra label for the operator algebra of that qubit
+4. **Derivation-lane clarity** — downstream structures keep their
+   named lanes rather than moving into the axiom
+
+Form A is preferred for:
+1. **Continuity** with existing repo `Cl(3)`-language notes —
+   but the equivalence resolves this automatically; no content
+   conflict exists
+2. **Explicit naming of the real-algebra structure** — but the
+   commentary block in `MINIMAL_AXIOMS_2026-05-20.md` already
+   provides this; the equivalence does not need to be in the
+   axiom statement itself
+
+The framework's choice: Form B in the axiom statement, full
+local-algebra content in the commentary block. Mathematically
+identical to Form A at the local-algebra level; preferred for
+minimality and readability.
+
+## Hardening: what the canonical statement of A1 commits to
+
+For maximum clarity, the bare A1 statement *"Reality is a qubit at
+every lattice site"* commits the framework to the following local
+algebraic content:
+
+1. Per-site operator algebra `A_x = M_2(ℂ)` (4-dim over `ℂ`,
+   8-dim over `ℝ`)
+2. Equivalently, per-site real Clifford algebra `A_x ≅ Cl(3,0)`
+3. Per-site Pauli-generator presentation `σ_1, σ_2, σ_3` with
+   `σ_a² = I, σ_a σ_b = -σ_b σ_a` for `a ≠ b`
+4. Per-site pseudoscalar `ω = σ_1 σ_2 σ_3` (the `Cl(3,0)` volume
+   element, distinct from the identity `𝟙`), satisfying `ω² = -𝟙`
+   and central in `Cl(3,0)`. Under the `Cl(3,0) ≅ M_2(ℂ)`
+   identification, `ω` maps to `i · 𝟙_{M_2(ℂ)}`, recovering the "i"
+   of quantum mechanics geometrically.
+5. The retained algebraic support carried by
+   `cl3_complexification_split_narrow_theorem_note_2026-05-10`,
+   `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`,
+   `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`,
+   and the bounded-retained `cl3_color_automorphism_theorem`
+
+That is the primitive local-algebra commitment of Axiom 1 in the
+bare-qubit form. It is identical to the local-algebra commitment of
+the "physical `Cl(3,0)`" form. The one-qubit-per-site (`k = 1`)
+reading and all other non-axiom structures enter only through their
+named derivation lanes.
+
+## Conclusion
+
+The bare-qubit Axiom 1 is sound as a local-algebra statement. The
+"vocabulary substitution" objection is not a solidity concern but a
+presentational preference for continuity with existing
+`Cl(3)`-language. Solidity of the local-algebra identification is
+established by:
+
+- Retained narrow theorems certifying the `M_2(ℂ) ≅ Cl(3,0)`
+  equivalence
+- Identical local-algebra commitment-strength to the alternative phrasing
+- Preserved downstream `Cl(3)`-language content under either local-algebra
+  reading
+- Explicit routing of non-axiom structures to named derivation lanes
+
+The canonical A1 statement stays:
+
+> **A1.** Reality is a qubit at every lattice site.
+
+Bundled with the binding commentary block in
+`MINIMAL_AXIOMS_2026-05-20.md`, this is the framework's
+foundational commitment. Mathematically identical to the
+`Cl(3,0)`-framing at the local-algebra level; preferred for minimality
+and readability.
+
+## What this file is not
+
+- Not a derivation. The retained narrow theorems are cited from
+  existing audit-ratified content.
+- Not a numerical-prediction change.
+- Not an additional axiom. The algebraic `M_2(ℂ) ≅ Cl(3,0)` content
+  is unchanged from `MINIMAL_AXIOMS_2026-05-03.md`.
+- Not a framework rule. The per-site k = 1 reading and the
+  LSP-projective instrument are **not** ratified here; they are
+  derived in their own named derivation lanes (see below).
+- Not a rejection of the `Cl(3)`-framing literature in the repo.
+  That literature reads cleanly under the qubit identification by
+  the retained equivalence.
+
+## Citation-graph note
+
+Upstream (all retained):
+- `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
+- `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
+- `cl3_color_automorphism_theorem` (retained_bounded)
+
+Plain-text pointer references (NOT load-bearing deps; recorded
+for navigation, not for citation-graph dep tracking):
+
+- `MINIMAL_AXIOMS_2026-05-20.md` — canonical axiom doc this note defends
+- `QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md`
+  — the named derivation lane for the per-site k = 1 reading (replaces
+  the former Hardening II ratification)
+- `LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`
+  — the named derivation lane for the projective instrument `K_P = P`
+  (replaces the former Hardening III ratification)
+
+This note does not modify any retained row. It records only the
+defense of the canonical A1 statement against the "vocabulary
+substitution" framing, using existing retained-grade content. The
+per-site k = 1 reading and the LSP-projective instrument are owned by
+their derivation lanes and the audit lane, not by this note.

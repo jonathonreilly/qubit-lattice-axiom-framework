@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py
+runner_sha256: 6a4f423ed33c2db96ecab741c936b4c70c12ba9112558aace81859e8aae42b16
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification of (P1)
+  y_t(M_Pl) / g_s(M_Pl) = y_t_bare / g_bare
+under retained CMT D14 + n_link = 1 per single-vertex (D15) inputs
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  symbolic g_bare    (positive real) = g_bare
+  symbolic y_t_bare  (positive real) = y_t_bare
+  symbolic u_0       (positive real) = u_0
+  cited n_link (single-vertex coupling) = 1
+  (D1) g_s(M_Pl)  = g_bare   / sqrt(u_0)  = g_bare/sqrt(u_0)
+  (D2) y_t(M_Pl)  = y_t_bare / sqrt(u_0)  = y_t_bare/sqrt(u_0)
+
+----------------------------------------------------------------------------------------
+Part 1: parametric (P1) y_t(M_Pl) / g_s(M_Pl) = y_t_bare / g_bare
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) y_t(M_Pl) / g_s(M_Pl) - y_t_bare / g_bare reduces to 0 parametrically  (diff = 0)
+  [PASS (A)] (P1) LHS simplifies to y_t_bare / g_bare  (got y_t_bare/g_bare)
+
+----------------------------------------------------------------------------------------
+Part 2: u_0-independence of the (P1) ratio
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) ratio is independent of u_0 (u_0 not in free_symbols of ratio)  (free_symbols of (P1) ratio = {g_bare, y_t_bare})
+  [PASS (A)] (P1) ratio retains free symbols {y_t_bare, g_bare} only  (free_symbols = {g_bare, y_t_bare})
+
+----------------------------------------------------------------------------------------
+Part 3: derivable corollaries
+----------------------------------------------------------------------------------------
+  [PASS (A)] corollary 1: y_t(M_Pl) * g_bare = y_t_bare * g_s(M_Pl) (cross-multiplied (P1))  (diff = 0)
+  [PASS (A)] corollary 2: y_t(M_Pl)^2 / g_s(M_Pl)^2 = y_t_bare^2 / g_bare^2  (got y_t_bare**2/g_bare**2)
+  [PASS (A)] corollary 3: y_t(M_Pl) * sqrt(u_0) = y_t_bare  (got y_t_bare)
+  [PASS (A)] corollary 4: g_s(M_Pl) * sqrt(u_0) = g_bare  (got g_bare)
+  [PASS (A)] cross-check: corr3 / corr4 = y_t_bare / g_bare  (got y_t_bare/g_bare)
+
+----------------------------------------------------------------------------------------
+Part 4: free-symbol bookkeeping after substitution
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) LHS - RHS difference has empty free symbols after simplify  (free_symbols = set())
+  pre-simplify (unevaluated) ratio = (y_t_bare/sqrt(u_0))/((g_bare/sqrt(u_0)))
+  pre-simplify ratio free_symbols = {g_bare, u_0, y_t_bare}
+  [PASS (A)] pre-simplify (D2)/(D1) contains u_0 syntactically  (u_0 in {g_bare, u_0, y_t_bare})
+  [PASS (A)] post-simplify ratio drops u_0 from free_symbols  (free_symbols of simplified ratio = {g_bare, y_t_bare})
+  [PASS (A)] post-simplify ratio equals y_t_bare / g_bare  (got y_t_bare/g_bare)
+
+----------------------------------------------------------------------------------------
+Part 5: numerical FP cross-check at one independent random sample
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) FP sanity at sample (g_bare=0.71, y_t_bare=0.41, u_0=0.876)  (|LHS - RHS| = 0.000e+00)
+  [PASS (A)] (P1) FP ratio independent of u_0: same ratio at u_0=0.876 and u_0=0.123  (|ratio(u_0=0.876) - ratio(u_0=0.123)| = 0.000e+00)
+
+----------------------------------------------------------------------------------------
+Part 6: counterfactual probes (equal-n_link is load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual: at n_link(y_t) = 2 != n_link(g_s) = 1, ratio carries 1/sqrt(u_0)  (counterfactual ratio = y_t_bare/(g_bare*sqrt(u_0)) (u_0 in free_symbols confirms equal-n_link load-bearing))
+  [PASS (A)] counterfactual: at n_link(g_s) = 0 (no CMT) vs n_link(y_t) = 1, ratio retains u_0  (counterfactual ratio = y_t_bare/(g_bare*sqrt(u_0)))
+
+----------------------------------------------------------------------------------------
+Part 7: parametric CMT form (general n_link, sanity)
+----------------------------------------------------------------------------------------
+  [PASS (A)] parametric CMT: ratio is u_0-independent iff n_link(g_s) = n_link(y_t)  (ratio = y_t_bare/g_bare (u_0 absent from free_symbols))
+  [PASS (A)] counterfactual: at n_g = 1, n_y = 2 (unequal), ratio retains u_0  (ratio at (n_g=1, n_y=2) = y_t_bare/(g_bare*sqrt(u_0)))
+  [PASS (A)] parametric CMT: at n_g = n_y = 1, ratio is u_0-independent  (ratio at (n_g=1, n_y=1) = y_t_bare/g_bare)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (P1) y_t(M_Pl) / g_s(M_Pl) = y_t_bare / g_bare parametric in
+         (g_bare, y_t_bare, u_0)
+    (P1) ratio is identically independent of u_0 after simplify
+    Four corollary identities all reduce to 0 parametrically
+    Pre/post simplify free-symbol bookkeeping confirms u_0 cancellation
+    FP numerical cross-check passes at two independent u_0 samples
+    (ratio is FP-identical at u_0=0.876 and u_0=0.123)
+    Counterfactual: unequal n_link collapses u_0-independence
+    Parametric CMT form: u_0-independence iff n_link(g_s) = n_link(y_t)
+
+========================================================================================
+TOTAL: PASS=20, FAIL=0
+========================================================================================
+
+----- stderr -----
+

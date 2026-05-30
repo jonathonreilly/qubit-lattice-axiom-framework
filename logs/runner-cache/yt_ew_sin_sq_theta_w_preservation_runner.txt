@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/yt_ew_sin_sq_theta_w_preservation_runner.py
+runner_sha256: ead0c1a5ae684ead207b618dbc9b789f02e749732e2f07d62d02704f8a4dd801
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+Audit companion: sin^2(theta_W) preservation under K_EW
+  symbolic diff = 0
+  identity holds universally: True
+  identity at kappa_EW = 0 (K_EW = 9/8): True
+  identity at kappa_EW = 1 (K_EW = 1): True
+TOTAL: PASS=1 FAIL=0
+VERDICT: bounded proof-walk passes; sin^2(theta_W) is invariant under the multiplicative-universality K_EW(kappa_EW) correction.
+
+----- stderr -----
+

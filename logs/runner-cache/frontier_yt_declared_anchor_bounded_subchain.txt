@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_declared_anchor_bounded_subchain.py
+runner_sha256: 814a20b1826ad9b2945d1749a39ad924687885663d08976f882caf17a0327bec
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Bounded declared-anchor y_t algebraic subchain
+No observed-value comparison; no canonical_plaquette_surface import.
+
+========================================================================================
+Part 1: declared premises
+========================================================================================
+  [PASS] declared N_c = 3
+  [PASS] declared plaquette is positive and bounded
+  [PASS] F_adj = (N_c^2 - 1)/N_c^2 = 8/9  (8/9)
+  [PASS] kappa_EW declared at connected-trace specialization 0
+  [PASS] Ward Clebsch is 1/sqrt(6)
+
+========================================================================================
+Part 2: plaquette algebra
+========================================================================================
+  [PASS] u_0 = <P>^(1/4)  (u0=0.877681381199)
+  [PASS] alpha_LM = alpha_bare/u_0  (alpha_LM=0.090667836017)
+  [PASS] alpha_s(v) = alpha_bare/u_0^2  (alpha_s(v)=0.103303816122)
+  [PASS] geometric-mean identity alpha_LM^2 = alpha_bare * alpha_s(v)  (diff=-1.735e-18)
+
+========================================================================================
+Part 3: connected-trace algebra
+========================================================================================
+  [PASS] K_EW(0) = 1/F_adj = 9/8  (9/8)
+  [PASS] sqrt(K_EW(0)) = sqrt(9/8)
+  [PASS] taste_weight = (7/8)*T_F*F_adj = 7/18  (7/18)
+
+========================================================================================
+Part 4: Ward-boundary algebra
+========================================================================================
+  [PASS] g_lattice = sqrt(4*pi*alpha_LM)
+  [PASS] y_t(M_Pl) = g_lattice/sqrt(6)  (y_t(M_Pl)=0.435768598799)
+  [PASS] bounded subchain uses no observed SM comparator
+
+========================================================================================
+TOTAL: PASS=15, FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_source_action_route_exhaustion_summary.py
+runner_sha256: 5441a58763c44c25eb0d05481108ddf632358326531bffb519bbf91a76e49e9f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: status_support_only
+PASS: backup_branch_named
+PASS: surviving_gate_named
+PASS: direct_compute_demoted
+PASS: fh_lsz_blocker_named
+PASS: wz_blocker_named
+PASS: schur_blocker_named
+PASS: lsp_firewall_named
+PASS: negative_scope_limited
+PASS: no_go_discipline_gate_present
+PASS: forbidden_import_firewall
+wrote outputs/yt_source_action_route_exhaustion_summary_2026-05-22.json
+SUMMARY: PASS=11 FAIL=0
+
+----- stderr -----
+

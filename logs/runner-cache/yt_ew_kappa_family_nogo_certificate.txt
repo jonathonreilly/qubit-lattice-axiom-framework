@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/yt_ew_kappa_family_nogo_certificate.py
+runner_sha256: 644d3156dc2f654c29222284d4b961334d78f69ab4ab70f28d9265a44cdb5679
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.23
+status: ok
+----- stdout -----
+============================================================================================
+EW COLOR PROJECTION KAPPA-FAMILY NO-GO CERTIFICATE
+  exact K_EW(kappa_EW) algebra; no selector derivation
+============================================================================================
+EW KAPPA-FAMILY PACKET
+  F_adj=8/9, K(0)=9/8, K(1/2)=18/17, K(1)=1
+
+FINITE READ
+  F_adj=8/9 is exact algebraic support.
+  K_EW=9/8 is only the kappa_EW=0 specialization.
+  Weak-angle preservation holds for any fixed kappa_EW.
+  The current packet does not derive kappa_EW=0.
+
+CHECK SUMMARY
+  PASS exact F_adj at Nc=3: F_adj=8/9
+  PASS connected selector value: K(0)=9/8
+  PASS half selector value: K(1/2)=18/17
+  PASS full-trace selector value: K(1)=1
+  PASS selector values differ: 9/8 > 18/17 > 1
+  PASS two-completion no-go witness: kappa=0 and kappa=1 share F_adj but produce different K_EW
+  PASS kappa-family identity kappa=0: K=9/8
+  PASS weak-angle preservation kappa=0: sin2=0.339306127781480
+  PASS coupling-ratio preservation kappa=0: g1/g2=0.716631199869046
+  PASS kappa-family identity kappa=1/2: K=18/17
+  PASS weak-angle preservation kappa=1/2: sin2=0.339306127781480
+  PASS coupling-ratio preservation kappa=1/2: g1/g2=0.716631199869046
+  PASS kappa-family identity kappa=1: K=1
+  PASS weak-angle preservation kappa=1: sin2=0.339306127781480
+  PASS coupling-ratio preservation kappa=1: g1/g2=0.716631199869046
+  PASS kappa-family identity kappa=2: K=9/10
+  PASS weak-angle preservation kappa=2: sin2=0.339306127781480
+  PASS coupling-ratio preservation kappa=2: g1/g2=0.716631199869046
+  PASS CMT common-scale invariance kappa=0: values=[Fraction(9, 8), Fraction(9, 8), Fraction(9, 8)]
+  PASS CMT common-scale invariance kappa=1/2: values=[Fraction(18, 17), Fraction(18, 17), Fraction(18, 17)]
+  PASS CMT common-scale invariance kappa=1: values=[Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)]
+  PASS note declares no_go: claim type marker present
+  PASS note names runner: runner path present
+  PASS note names kappa_EW: free readout coefficient present
+  PASS note states no new axiom: no-new-axiom sentence present
+  PASS note keeps selector conditional: selector disclaimer present
+
+RUNNER STATUS: PASS (PASS=26 FAIL=0)
+
+----- stderr -----
+

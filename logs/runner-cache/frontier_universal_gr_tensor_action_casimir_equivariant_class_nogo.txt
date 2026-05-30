@@ -1,0 +1,105 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_tensor_action_casimir_equivariant_class_nogo.py
+runner_sha256: 4ce011c35d1bd2416e03cf9666e19030653cccd0531e7326c47891f7c9cdd6e5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 9.00
+status: ok
+----- stdout -----
+UNIVERSAL GR TENSOR ACTION — Casimir-equivariant Class No-Go
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part A: build retained Casimir block projectors
+----------------------------------------------------------------------------------------
+[EXACT] PASS: (BA-3) retained: basis B is orthonormal under Frobenius
+    Gram(B) = I_10
+[EXACT] PASS: (BA-3) retained: projector ranks (1, 3, 1, 5)
+    ranks = {'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}
+[EXACT] PASS: (BA-3) retained: projectors mutually orthogonal, idempotent, complete
+    orthogonal=True idempotent=True complete=True
+[EXACT] PASS: (BA-3) retained: projectors SO(3)-equivariant ([P_a, G_b] = 0)
+    all twelve commutators vanish
+
+----------------------------------------------------------------------------------------
+Part B: (T1) Schur classification — dim count
+----------------------------------------------------------------------------------------
+[EXACT] PASS: (T1) Schur cross map (P_lapse <-> P_trace) is SO(3)-equivariant
+    P_LT_cross + P_TL_cross commutes with all G_a (both blocks are trivial irreps)
+[EXACT] PASS: (T1) Class CB(V) has dimension 5 (five generators linearly independent)
+    rank of generator coefficient matrix = 5 (expected 5)
+[EXACT] PASS: (T1) Schur classification: dim Class CB(V) = 5 matches symmetric Hom_SO(3) count
+    observed = 5, predicted = 5 (3 trivial-block-symmetric + 1 j=1 + 1 j=2)
+
+----------------------------------------------------------------------------------------
+Part C: (T2) orbit-flatness — symbolic single-axis rotations
+----------------------------------------------------------------------------------------
+[EXACT] PASS: (T2) orbit-flatness symbolic: S(rho(R_a(theta))h, rho(R_a(theta))k) - S(h, k) == 0 for each axis a
+    per-axis (single-axis rotations generate SO(3)): {'x': True, 'y': True, 'z': True}
+
+----------------------------------------------------------------------------------------
+Part D: (T3) section no-go — gradient is orbit-normal
+----------------------------------------------------------------------------------------
+[EXACT] PASS: (T3) section no-go: <nabla Q(h), G_a h>_B = 0 for every a in {x, y, z} and every (a_c, b_c, c_c, d_c, e_c)
+    per-axis: {'x': True, 'y': True, 'z': True}
+[EXACT] PASS: (T3) corollary: EL system nabla Q(h) = 0 is orbit-degenerate (constant on each SO(3) orbit, gradient orbit-normal)
+    every nontrivial Q in Class CB(V) inherits the orbit-flat section-no-go
+
+----------------------------------------------------------------------------------------
+Part E: (T4) exhaustiveness corollary — span dimension
+----------------------------------------------------------------------------------------
+[EXACT] PASS: (T4) bilinear span over (P_a, P_b) pairs has rank 4 (orthogonality kills cross terms in basis B)
+    rank = 4; cross terms <P_a h, P_b k> = 0 for a != b due to P_a P_b = 0
+[EXACT] PASS: (T4) Class CB(V) = bilinear span + Schur cross term has dim 5
+    adding p_cross_sym = e_0 e_4^T + e_4 e_0^T lifts rank from 4 to 5
+[EXACT] PASS: (T4) Schur exhaustiveness: dim Class CB(V) = 3 (trivial-block-sym) + 1 (j=1) + 1 (j=2) = 5
+    rank matches Schur multiplicity-block computation
+
+----------------------------------------------------------------------------------------
+Part F: anisotropic-control negative test
+----------------------------------------------------------------------------------------
+[EXACT] PASS: (BA-2) isotropic control: weighted Frobenius pairing IS orbit-flat when w1=w2=w3
+    delta_||h||^2 = 0 under isotropic weight
+[EXACT] PASS: (BA-2) anisotropic control: weighted Frobenius pairing is NOT orbit-flat when w1 != w2 != w3
+    delta_||h||^2 with w=(1,2,3) = -3*sin(phi_test)**2/4 (nonzero)
+
+----------------------------------------------------------------------------------------
+Part G: load-bearing-step inventory + scope discipline
+----------------------------------------------------------------------------------------
+[DOC] PASS: note contains 'claim type': '**Claim type:** no_go'
+    scope discipline / citation hygiene check
+[DOC] PASS: note contains 'class label': 'Class CB(V)'
+    scope discipline / citation hygiene check
+[DOC] PASS: note contains 'BA-4 named': "Schur's lemma in real-orthogonal form"
+    scope discipline / citation hygiene check
+[DOC] PASS: note contains 'load-bearing citation': 'UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md'
+    scope discipline / citation hygiene check
+[DOC] PASS: note contains 'blocker-sharpening citation': 'UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md'
+    scope discipline / citation hygiene check
+[DOC] PASS: note contains 'orbit-flat property cited': 'orbit-flat'
+    scope discipline / citation hygiene check
+[DOC] PASS: note contains 'section no-go statement': 'Section no-go'
+    scope discipline / citation hygiene check
+[DOC] PASS: note contains 'load-bearing class identifier': 'class-(A)'
+    scope discipline / citation hygiene check
+[DOC] PASS: note contains 'scope discipline marker': 'does **not** claim'
+    scope discipline / citation hygiene check
+[DOC] PASS: note avoids forbidden claim: 'closes the full universal-GR route'
+    narrow scope discipline
+[DOC] PASS: note avoids forbidden claim: 'derives the Einstein-Hilbert action'
+    narrow scope discipline
+[DOC] PASS: note avoids forbidden claim: 'uses fitted constants'
+    narrow scope discipline
+[DOC] PASS: note avoids forbidden claim: 'uses PDG values'
+    narrow scope discipline
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+PASS=28 FAIL=0 TOTAL=28
+
+Class CB(V) no-go confirmed: every Casimir-equivariant linear-projector tensor action on Sym^2(R^4) is SO(3)-orbit-flat and cannot canonically section the universal complement. The tensor-action blocker, on this named class, is now a structural no-go theorem.
+
+----- stderr -----
+

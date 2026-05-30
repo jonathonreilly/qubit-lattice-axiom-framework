@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py
+runner_sha256: 1d66979b5b68df11d6cb20901dd8dc4f7019265e4a0f5409741786f7bf969db4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+==============================================================================
+P2 PHASE-BLINDNESS FROM RP TRANSFER-MATRIX-TRACE BRIDGE (free staggered)
+==============================================================================
+det(M_KS+mI) = Z_vac * Tr(e^{-beta H_hat}),  H_hat=H_hat^dag>=0 (RP)
+=> zero-source Z real-positive => W = log|det| = log Z on this surface
+eta_0 = 1 (clean temporal hop), eta_1(t) = (-1)^t, antiperiodic in t.
+
+------------------------------------------------------------------------------
+C1  det(M_KS+mI) == Z_vac . Tr(e^{-beta H_hat}) == closed form
+    Tr(e^{-beta H_hat}) = prod_p (1+e^{-Lt a E_p}) > 0;  beta = Lt a
+    Z_vac = prod_p (1/2)^{Lt}(1+e^{+Lt a E_p}) > 0  (real-positive zero-point)
+------------------------------------------------------------------------------
+    L_t=4 L_s=2: max|det - Z_vac.Tr| over m = 7.11e-14  min Z_vac=7.0994e-02>0  min Tr(e^-bH)=1.0169>0
+    L_t=4 L_s=3: max|det - Z_vac.Tr| over m = 2.05e-12  min Z_vac=7.9815e-01>0  min Tr(e^-bH)=1.0188>0
+    L_t=6 L_s=2: max|det - Z_vac.Tr| over m = 8.53e-13  min Z_vac=1.1605e-02>0  min Tr(e^-bH)=1.0015>0
+    L_t=6 L_s=3: max|det - Z_vac.Tr| over m = 5.09e-11  min Z_vac=5.0745e-01>0  min Tr(e^-bH)=1.0015>0
+    overall max residual = 5.093e-11  (tol 1e-09)
+    C1 = PASS
+
+------------------------------------------------------------------------------
+C2  T_hat^2 == exp(-2 a H_hat),  H_hat self-adjoint, spec(H_hat) >= 0  (RP)
+------------------------------------------------------------------------------
+    L_s=2 m=0.3: spec(H_hat) min=0.000000e+00  H Herm-err=0.0e+00  ||T^2 - exp(-2aH)||=1.1e-16  max|Im kernel|=6.2e-33
+    L_s=3 m=0.3: spec(H_hat) min=0.000000e+00  H Herm-err=0.0e+00  ||T^2 - exp(-2aH)||=1.1e-16  max|Im kernel|=1.8e-16
+    min spec(H_hat) over all (lattice,m) = 0.000000e+00
+    C2 = PASS
+
+------------------------------------------------------------------------------
+C3  Z = det(M_KS+mI) is REAL-POSITIVE (|Im Z| ~ 0, Re Z > 0)
+------------------------------------------------------------------------------
+    max |Im Z| over all (L_t,L_s,m) = 0.000e+00
+    min  Re Z over all (L_t,L_s,m) = 1.587701e-02  (must be > 0)
+    C3 = PASS
+
+------------------------------------------------------------------------------
+C4  W = log|det(M_KS+mI)| == log Z  (zero-source modulus automatic)
+------------------------------------------------------------------------------
+    max | log|det| - log Z | over all (L_t,L_s,m) = 0.000e+00
+    (equality is exact because Z real-positive: no phase to blind to)
+    C4 = PASS
+
+------------------------------------------------------------------------------
+STAYS ADMITTED (NOT closed here): interacting/gauge realization
+------------------------------------------------------------------------------
+    The identification of the framework Dirac operator D with the
+    staggered KS operator on the interacting/gauge surface rides on the
+    ALREADY-registered Tier-A staggered-Dirac realization gate AC_phi_lambda
+    (staggered_dirac_realization_gate_note_2026-05-03, audited_renaming).
+    This runner checks the zero-source FREE staggered surface only;
+    AC_phi_lambda is NOT removed and P1/P2 parent conditions are not retagged.
+
+==============================================================================
+VERDICT
+==============================================================================
+  C1 det = Z_vac.Tr    : PASS  (max res 5.09e-11)
+  C2 T^2 = exp(-2aH)   : PASS  (min spec H 0.00e+00)
+  C3 Z real-positive   : PASS  (max |Im Z| 0.00e+00)
+  C4 zero-source W     : PASS  (max res 0.00e+00)
+
+PASS=4 FAIL=0
+
+  PASS -- on the free staggered surface det(M_KS+mI) =
+  Z_vac * Tr(e^{-beta H_hat}) with H_hat self-adjoint and >= 0 (RP). Hence Z is
+  manifestly real-positive, so the modulus in log|det| is automatic on
+  this zero-source free determinant surface. This gives bounded support
+  for the qubit-trace phase-positive route via RP; it does not retire
+  the full P2 scalar-generator premise or the interacting/gauge gate.
+
+----- stderr -----
+

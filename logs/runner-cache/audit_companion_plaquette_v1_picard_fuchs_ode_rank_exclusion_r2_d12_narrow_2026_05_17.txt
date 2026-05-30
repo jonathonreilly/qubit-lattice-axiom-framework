@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py
+runner_sha256: 9fbc1ea53a6d5e2b3dfc249b18b0777dc835d1fb70e6aa6bbf50fc1a3f9ebc40
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-rational) for
+PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17
+
+Goal: re-verify the (r=2, d=12) lower-order exclusion cell at bumped
+Taylor depth (ORDER=48 and ORDER=52) so that num_eqs >= num_unknowns
+for the matching matrix, closing the audit's arithmetic complaint
+about the original ORDER=40 cap of 36 < 39 unknowns at that cell.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: arithmetic bookkeeping at ORDER=40 reproduces the audit's complaint
+----------------------------------------------------------------------------------------
+  [PASS] [S1] num_unknowns at (r=2, d=12) is 39  (num_unknowns = (r+1)(d+1) = 3*13 = 39)
+  [PASS] [S1] At ORDER=40 the cap is 36, strictly less than num_unknowns=39  (min(num_unknowns + 8, ORDER - r - 2) = min(47, 36) = 36)
+    Per-cell cap at ORDER=40 for r=2:
+      (r=2, d=0): unknowns=3, cap=11 -> OK
+      (r=2, d=1): unknowns=6, cap=14 -> OK
+      (r=2, d=2): unknowns=9, cap=17 -> OK
+      (r=2, d=3): unknowns=12, cap=20 -> OK
+      (r=2, d=4): unknowns=15, cap=23 -> OK
+      (r=2, d=5): unknowns=18, cap=26 -> OK
+      (r=2, d=6): unknowns=21, cap=29 -> OK
+      (r=2, d=7): unknowns=24, cap=32 -> OK
+      (r=2, d=8): unknowns=27, cap=35 -> OK
+      (r=2, d=9): unknowns=30, cap=36 -> OK
+      (r=2, d=10): unknowns=33, cap=36 -> OK
+      (r=2, d=11): unknowns=36, cap=36 -> OK
+  [PASS] [S1] Cells (r=2, d in {0,...,11}) at ORDER=40 each have cap >= num_unknowns  (exactly d=12 is the cell short of equations at ORDER=40)
+
+----------------------------------------------------------------------------------------
+Part 1: bumped Taylor depth ORDER=48 — confirm num_eqs >= num_unknowns
+----------------------------------------------------------------------------------------
+  [PASS] [S2] At ORDER=48 the (r=2, d=12) cap is 44, which exceeds num_unknowns=39  (min(num_unknowns + 8, ORDER - r - 2) = min(47, 44) = 44)
+  [PASS] [S2] All cells (r in {1,2}, d in {0,...,12}) at ORDER=48 have num_eqs >= num_unknowns + 5  (uniform headroom of at least 5 across the narrow window of this note)
+
+----------------------------------------------------------------------------------------
+Part 2: build J(beta) Taylor coefficients to ORDER=48 (exact rationals)
+----------------------------------------------------------------------------------------
+    a_0 = 1
+    a_2 = 1/36
+    a_4 = 1/2592
+    a_10 = 23/145118822400
+  [PASS] [J0] a_0 == 1 (normalization J(0) = 1)  (a_0 = 1)
+  [PASS] [J2] a_2 == 1/36 (known SU(3) lowest-nontrivial Bessel-det coefficient)  (a_2 = 1/36)
+
+----------------------------------------------------------------------------------------
+Part 3: [R12] rank check at (r=2, d=12), ORDER=48
+----------------------------------------------------------------------------------------
+    matching matrix: 44 rows x 39 columns
+  [PASS] [R12] At ORDER=48 the (r=2, d=12) matching matrix has rank == num_unknowns  (rank = 39, num_unknowns = 39, kernel_dim = 0)
+  [PASS] [R12] At ORDER=48 the (r=2, d=12) ansatz kernel is empty (no annihilator)  (kernel_dim = 0)
+
+----------------------------------------------------------------------------------------
+Part 4: [R10] and [R11] re-confirm at the bumped depth
+----------------------------------------------------------------------------------------
+  [PASS] [R10] At ORDER=48 the (r=2, d=10) matching matrix has rank == num_unknowns  (rank = 33, num_unknowns = 33, kernel_dim = 0)
+  [PASS] [R11] At ORDER=48 the (r=2, d=11) matching matrix has rank == num_unknowns  (rank = 36, num_unknowns = 36, kernel_dim = 0, slack = 8)
+
+----------------------------------------------------------------------------------------
+Part 5: [R12B] cross-check at ORDER=52 (stability under depth)
+----------------------------------------------------------------------------------------
+  [PASS] [J0-52] a_0 == 1 (re-normalized at ORDER=52)  (a_0 = 1)
+  [PASS] [J2-52] a_2 == 1/36 (re-normalized at ORDER=52)  (a_2 = 1/36)
+  [PASS] [R12B] At ORDER=52 the (r=2, d=12) matching matrix has rank == num_unknowns  (rank = 39, num_unknowns = 39, kernel_dim = 0)
+  [PASS] [R12B] Conclusion is stable under increasing Taylor depth (ORDER=48 and ORDER=52 agree)  (both ORDER values yield kernel_dim = 0 at (r=2, d=12))
+
+----------------------------------------------------------------------------------------
+Part 6: bookkeeping write-out
+----------------------------------------------------------------------------------------
+    Output written: outputs/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.json
+
+========================================================================================
+TOTAL: PASS=15, FAIL=0
+========================================================================================
+
+----- stderr -----
+

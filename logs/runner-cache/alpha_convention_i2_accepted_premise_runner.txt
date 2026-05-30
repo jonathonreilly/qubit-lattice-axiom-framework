@@ -1,0 +1,113 @@
+===== runner cache v1 =====
+runner: scripts/alpha_convention_i2_accepted_premise_runner.py
+runner_sha256: 61db43e24166aec0c6a018757c31d74d4c990227740f81d6c68a286eca4d7452
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+==============================================================================
+Section 0: Source boundary firewall
+==============================================================================
+  PASS [EXACT]  source note file exists
+  PASS [EXACT]  source contains required phrase: Status authority
+  PASS [EXACT]  source contains required phrase: independent audit lane only
+  PASS [EXACT]  source contains required phrase: accepted-premise packet entry
+  PASS [EXACT]  source contains required phrase: not derived in this bridge
+  PASS [EXACT]  source contains required phrase: standard QFT dimensionless-coupling convention
+  PASS [EXACT]  source contains required phrase: no new repo-wide axiom
+  PASS [EXACT]  source contains required phrase: ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md
+  PASS [EXACT]  source contains required phrase: G_BARE_TWO_WARD_H_UNIT_RESIDUE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  PASS [EXACT]  source excludes forbidden authority/import phrase: audited_conditional
+  PASS [EXACT]  source excludes forbidden authority/import phrase: effective_status =
+  PASS [EXACT]  source excludes forbidden authority/import phrase: retained_bounded
+  PASS [EXACT]  source excludes forbidden authority/import phrase: No new admissions
+  PASS [EXACT]  source excludes forbidden authority/import phrase: PDG load-bearing value
+==============================================================================
+Section A: Exact symbolic substitution chain (B1)-(B4)
+==============================================================================
+  PASS [EXACT]  (B1) At g_bare = 1, (P1) gives alpha = 1^2/(4 pi) = 1/(4 pi) (sympy-exact)
+  PASS [EXACT]  (B1) alpha_bare = (P1) at g_bare = 1 = 1/(4 pi)
+  PASS [EXACT]  (B2) functional uniqueness: alpha_rescaled = (P1) iff k = 1 (sympy-exact)
+  PASS [EXACT]  (B2) counter-check: k = 2 gives alpha != (P1)
+  PASS [EXACT]  (B2) g_bare-dependence is exactly quadratic: deg_{g_bare}(alpha) = 2
+  PASS [EXACT]  (B2) dimensionless prefactor in (P1) is exactly (4 pi)^{-1}
+  PASS [EXACT]  (B3) alpha_LM^2 = alpha_bare * alpha_s(v) holds algebraically
+  PASS [EXACT]  (B3) substitute alpha_bare = (P1) into alpha_LM^2 = alpha_bare * alpha_s gives (g_bare^2/(4 pi)) * alpha_s
+  PASS [EXACT]  (B3) alpha_LM^2 / alpha_s = alpha_bare (canonical ratio identity from source note)
+  PASS [EXACT]  (B3) After (P1) substitution: alpha_LM^2 / alpha_s = g_bare^2 / (4 pi)
+  PASS [EXACT]  (B4) at g_bare = 1 on canonical Wilson surface: alpha = 1/(4 pi) (I2 readout)
+  PASS [EXACT]  (B4) (P1) at g_bare = 1 matches parent note's formula (D) value 1/(4 pi)
+
+==============================================================================
+Section B: Functional form audit on (P1)
+==============================================================================
+  PASS [EXACT]  (B-form) (P1) is exactly 1/(4 pi) * g_bare^2 (monomial coefficient sequence [1,0,0])
+  PASS [EXACT]  (B-form) (P1) has no constant term in g_bare (alpha(0) = 0)
+  PASS [EXACT]  (B-form) (P1) has no linear term: d alpha / d g_bare |_{g_bare=0} = 0
+  PASS [EXACT]  (B-form) (P1) second derivative at 0 is 1/(2 pi): d^2 alpha / d g_bare^2 = 1/(2 pi)
+
+==============================================================================
+Section C: numerical alpha at g_bare = 1 (parent note (D2) cross-check)
+==============================================================================
+  PASS [EXACT]  (C1) numerical alpha = 1/(4 pi) = 0.0795774... (matches parent note (D2))
+  PASS [EXACT]  (C2) numerical g_bare^2/(4 pi) at g_bare = 1 matches 1/(4 pi)
+  PASS [EXACT]  (C3) numerical alpha at g_bare = 2 is exactly 1/pi (functional form check)
+  PASS [BOUNDED] (C4) numerical: rescaled k=2 form gives 2/(4 pi) != 1/(4 pi) |2/(4pi) - 1/(4pi)| = 7.957747e-02
+
+==============================================================================
+Section D: alpha_LM geometric-mean identity composition (numerical)
+==============================================================================
+  PASS [EXACT]  (D1) alpha_LM^2 = alpha_bare * alpha_s for (alpha_bare=1/4, u_0=1)
+  PASS [EXACT]  (D2) alpha_LM^2 = alpha_bare * alpha_s for (alpha_bare=1/1256, u_0=2)
+  PASS [EXACT]  (D3) alpha_LM^2 = alpha_bare * alpha_s for (alpha_bare=1/(4*pi), u_0=99/100)
+  PASS [EXACT]  (D4) alpha_LM^2 = alpha_bare * alpha_s for (alpha_bare=1/(4*pi), u_0=3/2)
+  PASS [BOUNDED] (D-num) numerical alpha_LM^2 = alpha_bare * alpha_s at alpha_bare = 1/(4 pi), u_0 = 1.0 |lhs - rhs| = 0.000e+00
+  PASS [BOUNDED] (D-num) numerical alpha_LM^2 = alpha_bare * alpha_s at alpha_bare = 1/(4 pi), u_0 = 0.99 |lhs - rhs| = 8.674e-19
+  PASS [BOUNDED] (D-num) numerical alpha_LM^2 = alpha_bare * alpha_s at alpha_bare = 1/(4 pi), u_0 = 1.05 |lhs - rhs| = 8.674e-19
+  PASS [BOUNDED] (D-num) numerical alpha_LM^2 = alpha_bare * alpha_s at alpha_bare = 1/(4 pi), u_0 = 2.0 |lhs - rhs| = 0.000e+00
+
+==============================================================================
+Section E: isolation of I2 from I1 and I3 (no over-claim)
+==============================================================================
+  PASS [EXACT]  (E1) I1 (static-source readout) is separately formalized in sibling bridge, not re-derived here
+  PASS [EXACT]  (E2) I3 (canonical Cl(3) normalization + Wilson surface) consumed, not re-derived here
+  PASS [EXACT]  (E3) single accepted-premise (P1) registered; no additional admissions
+  PASS [EXACT]  (E4) (P1) is exactly the standard QFT dimensionless-coupling convention
+
+==============================================================================
+Section F: no-import audit on load-bearing chain
+==============================================================================
+  PASS [EXACT]  (F1) no continuum 4D-Fourier-measure d^4 k / (2 pi)^4 import used
+  PASS [EXACT]  (F2) no d^4 k / (2 pi)^4 string appears in load-bearing inputs
+  PASS [EXACT]  (F3) no Wick rotation Z^3 -> Z^4 in load-bearing chain
+  PASS [EXACT]  (F4) load-bearing inputs enumerable (4 items)
+  PASS [EXACT]  (F-forbid) no 'PDG' import in load-bearing inputs
+  PASS [EXACT]  (F-forbid) no 'fitted' import in load-bearing inputs
+  PASS [EXACT]  (F-forbid) no 'Monte Carlo' import in load-bearing inputs
+  PASS [EXACT]  (F-forbid) no 'running scheme' import in load-bearing inputs
+  PASS [EXACT]  (F-forbid) no 'MS-bar' import in load-bearing inputs
+
+==============================================================================
+Section G: vocabulary audit + no-go honor
+==============================================================================
+  PASS [EXACT]  (G1) no new repo vocabulary introduced
+  PASS [EXACT]  (G2) no multiplicative cross-row combination used (Cheeger-Simons R/Z no-go honored)
+  PASS [EXACT]  (G3) regulator-dependence no-go honored: only (4 pi) prefactor convention addressed; no `16` exponent claim
+  PASS [EXACT]  (G4) bridge addresses exactly parent note packet entry I2, not I1 or I3
+  PASS [EXACT]  (G5) no new repo-wide axiom introduced
+  PASS [EXACT]  (G6) (P1) is canonical QFT dimensionless-coupling convention, not a fitted parameter
+
+==============================================================================
+Summary
+==============================================================================
+EXACT   : PASS = 56, FAIL = 0
+BOUNDED : PASS = 5, FAIL = 0
+TOTAL   : PASS = 61, FAIL = 0
+
+VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from the
+  accepted-premise packet (P1) + g_bare bridge + alpha_LM
+  geometric-mean identity by exact symbolic substitution arithmetic.
+
+----- stderr -----
+

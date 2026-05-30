@@ -1,0 +1,25 @@
+{
+  "current_blockers": {
+    "coefficient_certified_top_response_rows_present": false,
+    "retained_closure_allowed": false,
+    "symbolic_top_response_row_present": true,
+    "top_coefficient_underdetermined_by_current_support": true,
+    "wz_denominator_response_closed": true
+  },
+  "fail_count": 0,
+  "pass_count": 43,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "This is a negative boundary. It proves the next missing input is a strict top response/coefficient theorem, not more W/Z or carrier algebra.",
+  "review_surface": [
+    "docs/YT_TOP_RESPONSE_COEFFICIENT_UNDERDETERMINATION_NO_GO_NOTE_2026-05-25.md",
+    "scripts/frontier_yt_top_response_coefficient_underdetermination_no_go.py",
+    "outputs/yt_top_response_coefficient_underdetermination_no_go_2026-05-25.json"
+  ],
+  "status": "narrow no-go: current carrier plus W/Z support does not determine top response coefficient",
+  "upstream_statuses": {
+    "color_projection_correction_status": "retained_no_go",
+    "one_higgs_yukawa_selection_status": "unaudited",
+    "source_action_status": "retained_bounded",
+    "yukawa_color_projection_status": "decoration_under_graph_first_su3_integration_note"
+  }
+}

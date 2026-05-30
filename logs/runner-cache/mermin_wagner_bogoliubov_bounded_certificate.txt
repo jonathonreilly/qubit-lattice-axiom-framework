@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/mermin_wagner_bogoliubov_bounded_certificate.py
+runner_sha256: 941d35c177e28acb7643820e20efbd6a2e06c3b40cfe21316bdd2321d313d206
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+BOUNDED BOGOLIUBOV / CMW INFRARED CERTIFICATE
+==============================================================================
+
+PART A: finite Gibbs-state Bogoliubov inequality
+  seed=0: lhs=3.816878e+00 rhs=1.781253e+01 margin=1.399566e+01 [PASS]
+  seed=1: lhs=9.562539e-01 rhs=1.614019e+01 margin=1.518393e+01 [PASS]
+  seed=2: lhs=1.298978e+00 rhs=3.810683e+01 margin=3.680785e+01 [PASS]
+  seed=3: lhs=3.206983e+00 rhs=5.372655e+01 margin=5.051957e+01 [PASS]
+  seed=4: lhs=8.737816e-01 rhs=3.127530e+01 margin=3.040152e+01 [PASS]
+  seed=5: lhs=2.686803e+00 rhs=2.820299e+01 margin=2.551618e+01 [PASS]
+
+PART B: one-dimensional IR sum exact identity
+  L=  8: direct=0.656250000 exact=0.656250000 I_1/L=0.082031250 [PASS]
+  L= 16: direct=1.328125000 exact=1.328125000 I_1/L=0.083007812 [PASS]
+  L= 32: direct=2.664062500 exact=2.664062500 I_1/L=0.083251953 [PASS]
+  L= 64: direct=5.332031250 exact=5.332031250 I_1/L=0.083312988 [PASS]
+  L=128: direct=10.666015625 exact=10.666015625 I_1/L=0.083328247 [PASS]
+
+PART C: two-dimensional logarithmic IR growth
+  L=  8: I_2=0.379294687 I_2/log(L)=0.182402188
+  L= 16: I_2=0.489924495 I_2/log(L)=0.176702910
+  L= 32: I_2=0.600326194 I_2/log(L)=0.173217525
+  L= 64: I_2=0.710665302 I_2/log(L)=0.170878884
+  L= 96: I_2=0.775201038 I_2/log(L)=0.169838278
+  L=128: I_2=0.820988449 I_2/log(L)=0.169205138
+  monotone growth: True
+  last-three ratio spread < 0.03: True
+
+PART D: three-dimensional finite IR window
+  L=  6: I_3=0.215365126
+  L=  8: I_3=0.224605625
+  L= 10: I_3=0.230199751
+  L= 12: I_3=0.233942124
+  L= 16: I_3=0.238630319
+  L= 20: I_3=0.241447253
+  bounded below 0.27 on tested window: True
+  final relative change < 0.04: True (1.180459e-02)
+
+PART E: IR surrogate consequence (conditional on Ward normalization)
+  d=1 sqrt(1/I_d) surrogate bounds: [1.234427, 0.867722, 0.612672, 0.433066, 0.306196]
+  d=2 sqrt(1/I_d) surrogate bounds: [1.623722, 1.428682, 1.290644, 1.186226, 1.135776, 1.10365]
+  d=1 surrogate decreasing: True
+  d=2 surrogate decreasing: True
+
+SUMMARY
+  [PASS (A)] finite Bogoliubov inequality
+  [PASS (A)] exact d=1 IR identity
+  [PASS (C)] d=2 logarithmic growth
+  [PASS (C)] d=3 finite window
+  [PASS (C)] sqrt(1/I_d) surrogate tightens in d<=2
+  PASS=5 FAIL=0
+
+----- stderr -----
+

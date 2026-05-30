@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "description": "Allowlist of canonical axiom-premise nodes. Each entry binds a STABLE un-dated claim_id to the current (possibly dated) source-doc path. build_citation_graph.py canonicalizes the claim_id of any listed path to the stable id, so inbound citation edges and the premise status survive re-dating of the source doc. PR3 attaches the axiom_premise meta-subtype + auditor carve-out to these ids; PR3's structural guard enforces that each listed doc contains only axiom content (no framework-rule / ratification clauses).",
+  "canonical_ids": [
+    "minimal_axioms"
+  ],
+  "nodes": {
+    "minimal_axioms": {
+      "current_path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
+      "aliased_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "legacy_claim_ids": [
+        "minimal_axioms_2026-05-20"
+      ],
+      "note": "Canonical A1+A2 axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id."
+    }
+  }
+}

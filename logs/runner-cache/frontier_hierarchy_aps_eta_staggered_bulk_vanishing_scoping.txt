@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py
+runner_sha256: 4e0140ba1321fd4919a7e676795157a86bc8b98b6cf897dec8bc6a15f380e439
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+Section 1: Bulk-vanishing lemma L1
+  PASS: L1: H_stag is Hermitian at L_t=2
+  PASS: L1: H_stag is Hermitian at L_t=4
+  PASS: L1: {Gamma_5, H_stag} = 0 at L_t=2
+  PASS: L1: {Gamma_5, H_stag} = 0 at L_t=4
+  PASS: L1: eigenvalues ± paired at L_t=2
+  PASS: L1: eigenvalues ± paired at L_t=4
+  PASS: L1: Σ sign(λ) = 0 at L_t=2
+  PASS: L1: Σ sign(λ) = 0 at L_t=4
+  PASS: L1: |λ|² = 4 uniform at L_t=2
+  PASS: L1: |λ|² = 7/2 uniform at L_t=4
+  PASS: L1: Σ sign(λ) = 0 stable under u_0 variation at L_t=4
+
+Section 2: Identity-collapse observation L2
+  PASS: L2: A(4) = 2^(1-4) = 1/8
+  PASS: L2: B(4) = 1/(2·4) = 1/8
+  PASS: L2: C(4) = 1 - η(4)/ζ(4) = 1/8
+  PASS: L2: A(s) = C(s) as Riemann-Dirichlet identity (multiple integer s)
+  PASS: L2: A(d) = B(d) = C(d) unique at d = 4 in {2,...,10}
+  PASS: L2: integer alignment 2^(d-2) = d unique at d=4 in {2,...,20}
+  PASS: L2: A=B collapses to the upstream anchor witness (iii)
+
+Section 3: bare-bulk η_APS/2 = 1/8 test on the bulk substrate
+  PASS: L3: η_APS/2 = 0 ≠ 1/8 on L_t=2 bulk substrate
+  PASS: L3: η_APS/2 = 0 ≠ 1/8 on L_t=4 bulk substrate
+  PASS: L3: 1/8 conjecture collapses into existing A=B=C witnesses (no new content)
+
+Section 4: Gap inventory consistency
+  PASS: Gap: nonzero staggered mass breaks the L1 anticommutation proof
+  PASS: Gap: uniform staggered mass still gives Σ sign(λ) = 0 (no wall = no eta)
+
+============================================================
+PASS=23 FAIL=0
+
+----- stderr -----
+

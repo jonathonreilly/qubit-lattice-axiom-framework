@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_locality_of_source_derivatives.py
+runner_sha256: be7addac37105cc5464e658ee906ec4fcde6dda123d05c16558b5f03a67e0e5c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+
+==============================================================================
+T1: Block-diagonal det factorization on a 4x4 real anti-Hermitian SymPy block
+==============================================================================
+  [PASS] det(D_A (+) D_B + J_A (+) J_B) = det(D_A + J_A) * det(D_B + J_B) exactly
+         sympy.simplify(det_total - det_A * det_B) = 0
+
+==============================================================================
+T2: Cross-block 2nd source-derivative of log|det(D+J)| is zero on block-diag D
+==============================================================================
+  [PASS] all cross-block 2nd derivatives of log(det(D+J)) vanish on block-diag D
+         All four (A,B)-cross 2nd derivatives = 0 exactly
+
+==============================================================================
+T3: Cross-block 2nd source-derivative of (det(D+J))^p is nonzero on block-diag D for p != 0
+==============================================================================
+  [PASS] all cross-block 2nd derivatives of (det)^p are nonzero for p != 0
+         All tested (p, A, B) pairs give nonzero cross 2nd derivative
+
+==============================================================================
+T4: Equivalence Lemma (A) <=> (B): polynomial ansatz with cross-block 2nd deriv = 0 has additive form f(j_A) + g(j_B)
+==============================================================================
+  [PASS] polynomial W with cross-2nd-derivs=0 reduces to additive form f(j_A) + g(j_B)
+         Equivalence Lemma verified: locality forces additive decomposition
+
+==============================================================================
+T5: Integration step W[J_A (+) J_B] - W[0 (+) J_B] = int dJ_a' recovers W[J_A] - W[0] for locality-satisfying W
+==============================================================================
+  [PASS] W[J_A + J_B] - W[0 + J_B] = W[J_A] - W[0] for locality-satisfying W
+         Integration step recovers additive structure exactly
+
+==============================================================================
+T6: live ledger presence checks for context rows
+==============================================================================
+  [PASS] target/context rows are present without status-gating the claim
+         Target/context rows are present; no dependency status is consumed
+
+==============================================================================
+T7: note string contains honest-scope admission strings
+==============================================================================
+  [PASS] required honest-scope strings present in note
+         All required strings present
+  [PASS] forbidden status-promotion strings absent from note
+         No forbidden strings found
+
+==============================================================================
+T8: source-note boundary declarations present
+==============================================================================
+  [PASS] source-note boundary declarations present
+         All boundary declarations present
+
+==============================================================================
+PASS=9 FAIL=0
+==============================================================================
+
+----- stderr -----
+

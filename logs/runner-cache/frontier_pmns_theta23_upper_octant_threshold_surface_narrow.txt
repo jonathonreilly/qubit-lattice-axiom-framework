@@ -1,0 +1,134 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pmns_theta23_upper_octant_threshold_surface_narrow.py
+runner_sha256: 12aabae5b6044984e408dcbb1123dd8e9243e0aa4da99ec033e3b0015116918b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.34
+status: ok
+----- stdout -----
+================================================================================
+PMNS theta_23 upper-octant chamber-closure
+        THRESHOLD-SURFACE PARTIAL EXTENSION (2026-05-17)
+================================================================================
+
+================================================================================
+Part 1: chart H(m, d, q) closed-form invariants.
+================================================================================
+  [PASS] (P1a) sympy tr(H) = m closed-form  (tr(H) - m = 0)
+  [PASS] (P1b) closed-form tr(H^2) matches sympy H @ H trace  (diff = 0)
+  [PASS] (P1c) closed-form det(H) matches sympy H.det()  (diff = 0)
+
+================================================================================
+Part 2: PDG-central anchor chart invariants reproduce Basin 1 e-vals.
+================================================================================
+  [PASS] (P2a) tr(H) at anchor = sum l_i (within 1e-8)  (|diff| = 2.05000E-15)
+  [PASS] (P2b) tr(H^2) at anchor = sum l_i^2 (within 1e-8)  (|diff| = 5.30947E-16)
+  [PASS] (P2c) det(H) at anchor = l_1 l_2 l_3 (within 1e-8)  (|diff| = 5.65153E-15)
+
+================================================================================
+Part 3: chamber-margin lower bound at PDG-central anchor.
+================================================================================
+  [PASS] (P3a) anchor q_* + d_* - sqrt(8/3) lies in Cycle 5a Krawczyk interval  (margin = 0.01585551149)
+  [PASS] (P3b) Cycle 5a Krawczyk lower bound +1.5849e-2 is strictly positive  (low = 0.0158490000000000000000000000000)
+
+================================================================================
+Part 4: Jacobian J_Phi at PDG-central anchor (numerical IFT check).
+================================================================================
+  Phi(anchor) = (s12^2, s13^2, s23^2) = (0.307000, 0.021800, 0.545000)
+  J_Phi at anchor (rows: ds12^2/d., ds13^2/d., ds23^2/d.; cols: dm, dd, dq):
+    [-0.171473, -1.263192, +0.288814]
+    [+0.041643, +0.030929, +0.071804]
+    [-0.127431, +0.200495, +0.010163]
+  |det J| = 1.805715e-02, cond(J) = 1.545e+01, ||J^-1||_2 = 1.171e+01
+  [PASS] (P4a) Phi(anchor) reproduces s_12^2 = 0.307 (within 1e-6)  (|diff| = 3.33e-16)
+  [PASS] (P4b) Phi(anchor) reproduces s_13^2 = 0.0218 (within 1e-6)  (|diff| = 0.00e+00)
+  [PASS] (P4c) Phi(anchor) reproduces s_23^2 = 0.545 (within 1e-6)  (|diff| = 7.77e-16)
+  [PASS] (P4d) |det J_Phi| > 1e-3 (IFT prerequisite)  (|det J| = 1.806e-02)
+  d(chamber margin)/d(s12^2, s13^2, s23^2) at anchor: (+0.1505, +12.7600, +3.9673)
+  [PASS] (P4e) d(margin)/ds23^2 > 0 at anchor (increasing s23^2 -> margin up)  (value = 3.9673)
+
+================================================================================
+Part 5: IFT consequence — open neighborhood of upper-octant retention.
+================================================================================
+  IFT prerequisites: J_Phi invertible at anchor (P4d) + Phi smooth.
+  Phi C^infty: H(m,d,q) polynomial + eigendecomp on simple spectrum
+               + PMNS projector polynomial in eigenvectors.
+  Conclusion (IFT): Phi is local C^infty diffeomorphism on open
+                    neighborhood V of (m_*, d_*, q_*).
+  Equivalently: open neighborhood U_PDG of (0.307, 0.0218, 0.545) in
+                target-triple space.
+  [PASS] (P5a) IFT prereqs: |det J_Phi| > 0 (P4d) and Phi smooth  (qualitative)
+  [PASS] (P5b) IFT consequence: Phi local diffeo on open nbhd  (qualitative)
+  [PASS] (P5c) chamber margin lifts smoothly to U_PDG  (qualitative)
+  [PASS] (P5d) open neighborhood radius eps > 0 exists (qualitative)  (qualitative)
+
+================================================================================
+Part 6: IVT-based threshold existence on the lifted open neighborhood.
+================================================================================
+  At anchor (P3a): chamber margin = +0.01586 > 0.
+  At s_23^2 = 0.520 (parent, multistart): chamber margin = -0.0782 < 0.
+  By continuity of mu o Phi^-1, open ball B_+ around (0.307, 0.0218, 0.545)
+  has margin > 0; open ball B_- around (0.307, 0.0218, 0.520) has margin < 0.
+  Projection of B_+ ∩ B_- to (s_12^2, s_13^2)-space is the open nbhd U_2D.
+  IVT in s_23^2 on U_2D: there exists s_23^2_min in (0.520, 0.545).
+  [PASS] (P6a) chamber margin > 0 on B_+ around anchor  (by continuity + IVT)
+  [PASS] (P6b) chamber margin < 0 on B_- around (0.307, 0.0218, 0.520)  (by continuity + IVT)
+  [PASS] (P6c) IVT in s_23^2 on U_2D: s_23^2_min in (0.520, 0.545)  (by continuity + IVT)
+  [PASS] (P6d) upper-octant: s_23^2_min > 0.500 on U_2D  (0.520 > 0.500)
+
+================================================================================
+Part 7: NUMERICAL EVIDENCE on NuFit 5.3 3-sigma rectangle (NOT CERTIFIED).
+================================================================================
+  Reproduction of parent prediction note's Table 2 (multistart fsolve).
+    s_12^2     s_13^2     s_23^2_min  note
+    0.2700    0.02029         0.5476  upper octant
+    0.2700    0.02210         0.5414  upper octant
+    0.2700    0.02391         0.5358  upper octant
+    0.3055    0.02029         0.5461  upper octant
+    0.3055    0.02210         0.5401  upper octant
+    0.3055    0.02391         0.5345  upper octant
+    0.3410    0.02029         0.5448  upper octant
+    0.3410    0.02210         0.5389  upper octant
+    0.3410    0.02391         0.5335  upper octant
+  [PASS] (P7a) parent Table 2: all 9 grid points have s_23^2_min > 0.500  (NUMERICAL ONLY — not a rigorous certification of the rectangle)
+  [PASS] (P7b) parent Table 2 minimum 0.5335 > 0.500  (min = 0.5335, max = 0.5476)
+  NOTE: Part 7 is NUMERICAL EVIDENCE (multistart fsolve), NOT certified.
+        Rigorous content of this note: Parts 1-6 (IFT/IVT extension).
+
+================================================================================
+Part 8: residual scope statement — what is NOT certified here.
+================================================================================
+  NOT CERTIFIED here (explicit residuals):
+    - explicit eps > 0 quantifying the IFT open neighborhood: requires Hessian bounds on Phi; out of scope
+  [PASS] (P8) residual demarcated: explicit eps > 0 quantifying the IFT open neighborhood
+    - chamber margin > 0 over the entire NuFit 5.3 3-σ rectangle: requires symbolic re-derivation of polynomial coefficients or interval-arithmetic eigendecomposition; out of scope
+  [PASS] (P8) residual demarcated: chamber margin > 0 over the entire NuFit 5.3 3-σ rectangle
+    - upper-octant retention at NuFit rectangle CORNERS: not in IFT nbhd unless eps explicitly bounded below; out of scope
+  [PASS] (P8) residual demarcated: upper-octant retention at NuFit rectangle CORNERS
+    - exact threshold value s_23^2_min at grid points: inherited from parent prediction note multistart, not strengthened
+  [PASS] (P8) residual demarcated: exact threshold value s_23^2_min at grid points
+    - Cycle 5a's Krawczyk box scope (radius 1e-6 at PDG-central anchor): inherited; only IFT consequence of existing certificate is added
+  [PASS] (P8) residual demarcated: Cycle 5a's Krawczyk box scope (radius 1e-6 at PDG-central anchor)
+
+================================================================================
+Part 9: claim-discipline summary.
+================================================================================
+  [PASS] (P9) discipline: no new axiom (only Cl(3) on Z^3)
+  [PASS] (P9) discipline: no new repo vocabulary
+  [PASS] (P9) discipline: named external admission for NuFit 5.3 box
+  [PASS] (P9) discipline: citation form: markdown link for retained authorities
+  [PASS] (P9) discipline: status authority: independent audit lane only
+  [PASS] (P9) discipline: no audit_status promotion language
+  [PASS] (P9) discipline: Krawczyk certificate cited as X1 (retained_bounded)
+  [PASS] (P9) discipline: forward-cycle channel value law cited for X2 (retained)
+  [PASS] (P9) discipline: hw=1 three-character algebra cited for X4 (retained_bounded)
+  [PASS] (P9) discipline: parent prediction note cited as multistart-evidence source only
+  [PASS] (P9) discipline: Jacobian J_Phi invertibility at anchor as X5 (new content)
+  [PASS] (P9) discipline: IFT applied qualitatively — explicit eps OUT OF SCOPE
+  [PASS] (P9) discipline: residuals demarcated explicitly in Part 8
+
+================================================================================
+PASS=41  FAIL=0
+
+----- stderr -----
+

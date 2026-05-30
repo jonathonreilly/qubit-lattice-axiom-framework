@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_g_bare_rescaling_conditional_algebra_check.py
+runner_sha256: d9933dd7a93558728bb9b6922d06396f69d73dd6dd1b715f691c0728d8ad301a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+[PASS] scoped WM gives beta_old = 2 N_c / g_bare^2 = 6 at the test point (beta_old = 6)
+[PASS] Gram scales by c^2 = 1/4 (new diagonal = 1/8)
+[PASS] nontrivial c^2 = 1/4 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
+[PASS] scoped WM routes rescaling into beta by c^2 = 1/4 (beta_new = 3/2; beta_new / beta_old = 1/4)
+[PASS] Gram scales by c^2 = 2 (new diagonal = 1)
+[PASS] nontrivial c^2 = 2 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
+[PASS] scoped WM routes rescaling into beta by c^2 = 2 (beta_new = 12; beta_new / beta_old = 2)
+[PASS] Gram scales by c^2 = 4 (new diagonal = 2)
+[PASS] nontrivial c^2 = 4 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
+[PASS] scoped WM routes rescaling into beta by c^2 = 4 (beta_new = 24; beta_new / beta_old = 4)
+[PASS] Gram scales by c^2 = 9 (new diagonal = 9/2)
+[PASS] nontrivial c^2 = 9 leaves canonical Gram only when c^2 = 1 (canonical diagonal is 1/2)
+[PASS] scoped WM routes rescaling into beta by c^2 = 9 (beta_new = 54; beta_new / beta_old = 9)
+SUMMARY: PASS = 13, FAIL = 0
+Conditional rescaling algebra check passed; no retained status is asserted.
+
+----- stderr -----
+

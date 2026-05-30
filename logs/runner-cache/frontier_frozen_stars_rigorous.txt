@@ -1,0 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_frozen_stars_rigorous.py
+runner_sha256: 87c755fda30e151b6de68afa028ba52b9caa33d58450d0116f60eda41c750b2c
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 399.90
+status: ok
+----- stdout -----
+
+----- stderr -----
+

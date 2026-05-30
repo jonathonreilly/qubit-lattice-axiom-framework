@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_plaquette_self_consistency_finite_mc_repair.py
+runner_sha256: 37344fb91b19020e08adbc1319a6f69aa451e1d9f1fc832dc9f16230677fca7e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+Plaquette self-consistency finite MC diagnostic repair
+
+========================================================================================
+Source-note boundary
+========================================================================================
+  [PASS] note contains required boundary: 'bounded-support finite Wilson-plaquette diagnostic'
+  [PASS] note contains required boundary: 'The canonical infinite-volume value `0.5934` is an admitted comparison/reuse number here'
+  [PASS] note contains required boundary: 'That is the entire repaired claim.'
+  [PASS] note contains required boundary: 'a short finite diagnostic run is not the same as an infinite-volume physical certificate'
+  [PASS] note contains required boundary: 'This row does not claim:'
+  [PASS] note contains required boundary: 'a completed same-surface MC certificate for `0.5934`'
+  [PASS] note avoids overclaim phrase: '`0.5934` is derived'
+  [PASS] note avoids overclaim phrase: 'canonical numerical value `0.5934` is derived'
+  [PASS] note avoids overclaim phrase: 'this note supplies a completed same-surface MC certificate'
+  [PASS] note avoids overclaim phrase: 'runner certifies the physical value'
+  [PASS] note avoids overclaim phrase: 'analytic beta=6 closure is supplied by this note'
+
+========================================================================================
+SU(3) construction
+========================================================================================
+  [PASS] random_su3 returns unitary matrices (max=1.43e-15)
+  [PASS] random_su3 returns determinant-one matrices (max=1.14e-15)
+
+========================================================================================
+Finite Wilson observable
+========================================================================================
+  [PASS] L=2: link count is L^4*4 (links=64)
+  [PASS] L=2: plaquette count is L^4*6 (plaquettes=96)
+  [PASS] L=2: average plaquette is finite and bounded (Pbar=-0.008512)
+  [PASS] L=2: Wilson action is finite and nonnegative (S=580.902998)
+  [PASS] L=3: link count is L^4*4 (links=324)
+  [PASS] L=3: plaquette count is L^4*6 (plaquettes=486)
+  [PASS] L=3: average plaquette is finite and bounded (Pbar=0.012732)
+  [PASS] L=3: Wilson action is finite and nonnegative (S=2878.873747)
+
+========================================================================================
+One-plaquette MC diagnostic
+========================================================================================
+  [PASS] beta=0 one-plaquette diagnostic stays near Haar mean (mean=-0.055337, acc=1.000)
+  [PASS] beta=6 one-plaquette diagnostic shifts toward ordered plaquettes (mean=0.315683, acc=0.841)
+  [PASS] diagnostic distinguishes beta=6 from beta=0 (delta=0.371019)
+
+========================================================================================
+TOTAL: PASS=24 FAIL=0
+========================================================================================
+
+----- stderr -----
+

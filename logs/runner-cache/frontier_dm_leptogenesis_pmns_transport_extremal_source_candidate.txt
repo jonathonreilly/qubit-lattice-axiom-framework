@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py
+runner_sha256: 8580fad1b55440c70f3900e679082cfec2ed294eab6a434db61b01db91ae8e21
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.78
+status: ok
+----- stdout -----
+========================================================================================
+DM LEPTOGENESIS PMNS TRANSPORT INTERVAL WITNESS
+========================================================================================
+
+Framework baseline:
+  one-qubit operator algebra M_2(C) ~= Cl(3,0) on Z^3.
+
+Question:
+  Does the imported PMNS-assisted transport functional contain a
+  seed-to-overshoot interval witness without claiming a selector law?
+
+========================================================================================
+PART 1: THE IMPORTED TRANSPORT OBJECTIVE IS EVALUABLE ON THE SEED SURFACE
+========================================================================================
+  [PASS] The aligned seed point lies on the imported fixed-seed surface  ((xbar,ybar)=(0.563333,0.306667))
+  [PASS] The imported flavored transport functional is evaluable directly on that surface  (etas=[0.433077 0.719083 0.719083])
+  [PASS] The aligned seed benchmark on the canonical N_e seed pair matches the prior direct-transport lift  (current functional replay=0.719082664368; prior direct benchmark=0.719082536061)
+
+  aligned seed packet:
+[[0.666667 0.166667 0.166667]
+ [0.       0.5      0.5     ]
+ [0.333333 0.333333 0.333333]]
+  aligned seed eta/eta_obs = [0.433077 0.719083 0.719083]
+
+========================================================================================
+PART 2: TRANSPORT SEARCH FINDS AN OFF-SEED OVERSHOOT WITNESS
+========================================================================================
+  [PASS] The sampled overshoot witness stays on the imported fixed seed surface  ((xbar,ybar)=(0.563333,0.306667))
+  [PASS] The sampled overshoot witness is genuinely off-seed  (xi=[-0.475675,  0.928114, -0.452439], eta=[-0.016497, -0.120682,  0.137179], delta=-2.232784)
+  [PASS] The sampled witness beats the canonical near-closing N_e sample  (etas=[1.05222  0.663861 0.622758], best column=0)
+
+  x_opt     = [0.087659, 1.491447, 0.110894]
+  y_opt     = [0.29017 , 0.185985, 0.443845]
+  delta_opt = -2.232783910770
+  eta/eta_obs(opt) = [1.05222  0.663861 0.622758]
+  packet_opt:
+[[9.28711e-01 3.45440e-02 3.67440e-02]
+ [3.56440e-02 1.16200e-03 9.63194e-01]
+ [3.56440e-02 9.64294e-01 6.20000e-05]]
+
+========================================================================================
+PART 3: CONTINUITY GIVES AN INTERPOLATED CLOSURE WITNESS
+========================================================================================
+  [PASS] The computed best-eta map crosses 1 on the interpolating seed-preserving family  ((seed,opt)=(0.719082664368,1.052220313050))
+  [PASS] The interpolated witness has eta/eta_obs = 1 on the same parameterized family  (etas=[1.         0.71842553 0.57229394], best column=0)
+  [PASS] That closure point is still genuinely off-seed  (x=[0.128516, 1.411729, 0.149755], y=[0.291587, 0.196351, 0.432063], delta=-2.041003068182)
+
+  lambda_*  = 0.914106850348
+  x_close   = [0.128516, 1.411729, 0.149755]
+  y_close   = [0.291587, 0.196351, 0.432063]
+  delta_*   = -2.041003068182
+  eta/eta_obs(close) = [1.         0.71842553 0.57229394]
+  packet_close:
+[[8.91492e-01 3.74600e-02 7.10480e-02]
+ [6.84440e-02 2.78600e-03 9.28770e-01]
+ [4.00640e-02 9.59753e-01 1.83000e-04]]
+
+========================================================================================
+PART 4: BOTTOM LINE
+========================================================================================
+  [PASS] The imported transport functional has a constructive interval witness  (seed endpoint below 1, sampled endpoint above 1)
+  [PASS] The witness does not select a physical off-seed source law  (selector status remains out of scope)
+  [PASS] The remaining issue is the unproven selector/authority bridge  (bounded interval witness only)
+
+========================================================================================
+RESULT
+========================================================================================
+  Bounded construction:
+    - the imported fixed seed endpoint is below eta/eta_obs = 1
+    - the sampled off-seed endpoint is above eta/eta_obs = 1
+    - interpolation gives an eta/eta_obs = 1 witness on that family
+
+  No physical selector law or full-stack closure is claimed.
+
+PASS=12  FAIL=0
+
+----- stderr -----
+

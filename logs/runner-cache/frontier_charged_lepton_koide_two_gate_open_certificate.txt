@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_charged_lepton_koide_two_gate_open_certificate.py
+runner_sha256: 36a07a2515ac79d90c24bab06ff7fd748fe2c75d54dc6912fac57a69fcc7ac6c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+[PASS] [A] note boundary contains: Claim type:** open_gate
+[PASS] [A] note boundary contains: Status:** open gate
+[PASS] [A] note boundary contains: two remaining charged-lepton Koide gates
+[PASS] [A] note boundary contains: Koide surface selection gate
+[PASS] [A] note boundary contains: Brannen phase identification gate
+[PASS] [A] note boundary contains: does not claim
+[PASS] [A] note boundary contains: any new axiom or audit verdict
+[PASS] [A] note boundary contains: open-gate map
+[PASS] [A] note omits stale package phrase: current support packet
+[PASS] [A] note omits stale package phrase: authoritative support surface
+[PASS] [A] note omits stale package phrase: clean enough for package use
+[PASS] [A] note omits stale package phrase: conditional closure
+[PASS] [A] note omits stale package phrase: promoted on the current package surface
+[PASS] [A] note omits stale package phrase: retained closure
+[PASS] [A] note omits stale package phrase: retained promotion
+
+=== charged-lepton Koide gate algebra ===
+[PASS] [A] Q target solves c^2=2 (2)
+[PASS] [A] Q target solves r^2/a^2=1/2 (1/2)
+[PASS] [A] c^2=2 implies Q=2/3
+[PASS] [A] delta=Q/3 sends Q=2/3 to 2/9
+[PASS] [A] delta=2/9 is equivalent to Q=2/3 under delta=Q/3
+[PASS] [B] Brannen phase bridge is a declared extra rule
+
+Charged-lepton Koide two-gate open certificate: PASS
+PASS=21 FAIL=0
+
+----- stderr -----
+

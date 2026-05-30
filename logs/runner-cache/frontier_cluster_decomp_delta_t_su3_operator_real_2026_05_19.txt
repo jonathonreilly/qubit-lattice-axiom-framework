@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py
+runner_sha256: 97fec1bc0f19549562ba73b3536ab4b2c4a75abd604098d9784eb4ceaf90b3b4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.35
+status: ok
+----- stdout -----
+==============================================================================
+Cluster-decomposition Δ_T > 0 on SU(3) integral operator (real)
+Runner companion to docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md
+Replaces toy 4×4 runner of closed PR #1531 with real character-series + Haar-quadrature checks.
+==============================================================================
+
+[V1] strict positivity of K_τ on the SU(3) torus ...
+    PASS — min K_τ = 1.287344e-03, max K_τ = 5.365438e+01 on a 16×16 torus mesh with N_max = 12, τ = 4.0; strict positive margin (> 0.0001): YES.
+
+[V2] character-series trace-norm convergence ...
+    PASS — τ=2.0: N=4 → 3.0524e+02; N=8 → 6.0642e+02; N=12 → 6.1511e+02; N=16 → 6.1512e+02; N=20 → 6.1512e+02; |S20−S16|/|S20| = 7.317e-10; τ=4.0: N=4 → 5.0248e+01; N=8 → 5.3654e+01; N=12 → 5.3654e+01; N=16 → 5.3654e+01; N=20 → 5.3654e+01; |S20−S16|/|S20| = 0.000e+00; τ=8.0: N=4 → 6.5303e+00; N=8 → 6.5315e+00; N=12 → 6.5315e+00; N=16 → 6.5315e+00; N=20 → 6.5315e+00; |S20−S16|/|S20| = 0.000e+00; HS norm² at τ=4.0 (N_max=20): 6.5315e+00.
+
+[V3] heat-kernel probability normalization ∫_{SU(3)} K_τ = 1 ...
+    PASS — ∫_{SU(3)} K_τ dg ≈ 1.000000 (error |val − 1| = 3.331e-16); τ = 4.0, N_max = 12, N_mesh = 16.
+
+[V4] single-link transfer-operator spectrum (top simple + strict gap) ...
+    PASS — top eigenvalue = 1.000000000000 (expected 1.0); next eigenvalue = 0.411112290507 (expected 0.411112290507); spectral gap = 5.888877094928e-01 (expected 5.888877094928e-01); multiplicity of top eigenvalue = 1 (expected 1, i.e. trivial irrep dim² = 1).
+
+[V5] heat equation consistency for K_τ on torus ...
+    PASS — heat-equation finite-difference check at 4 torus points: max relative error = 2.312e-09 (tol 1e-3).
+
+[V6] 2-site Λ truncated transfer-operator spectrum (strict gap) ...
+    PASS — truncated 2-site transfer spectrum: top = 1.000000000000 (expected 1.0), second = 0.411112290507 (expected 0.411112290507), gap = 5.888877e-01 (expected 5.888877e-01).
+
+[V7] conditional Leg A det(D + m I) > 0 on sampled SU(3) configurations ...
+    PASS — Sampled N=50 random SU(3) configs at m=0.1; min det(D+mI) = 1.757600e-02, max = 1.757600e-02; margin threshold = 1.000000e-08.
+
+[V8] conditional symmetrized composition > 0 sampled on (U,V) Haar pairs ...
+    PASS — Sampled N=30 (U, V) pairs at τ=4.0, m=0.1; min K_τ(UV†) = 1.661024e-03, min det_F(U) = 1.757600e-02, min det_F(V) = 1.757600e-02, min symmetrized product = 2.919417e-05. All strictly positive ⟹ conditional T_full > 0 pointwise on the sampled mesh.
+
+==============================================================================
+PASS=8  FAIL=0  (runtime: 1.24 s)
+==============================================================================
+  [PASS] V1 K_τ strictly positive on SU(3) torus
+  [PASS] V2 character-series trace-norm converges (trace-class evidence)
+  [PASS] V3 K_τ is probability kernel
+  [PASS] V4 single-link operator has simple top + strict gap
+  [PASS] V5 heat equation ∂_τ K_τ = (Δ/(2 N_c)) K_τ holds
+  [PASS] V6 two-site truncated transfer has strict gap
+  [PASS] V7 conditional Leg A: det(D + m I) > 0 sampled on SU(3)
+  [PASS] V8 conditional symmetrized composition > 0 pointwise on samples
+
+All verifications passed; runner exits cleanly.
+
+----- stderr -----
+

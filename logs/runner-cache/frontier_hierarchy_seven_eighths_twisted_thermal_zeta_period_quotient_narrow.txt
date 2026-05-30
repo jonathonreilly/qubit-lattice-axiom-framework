@@ -1,0 +1,113 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow.py
+runner_sha256: 66bb03f08c393349c04d5641922ad9895cd22da9763b9fe6d87063952288b928
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Part 0: Matsubara frequency rescaling (load-bearing trace step T0)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T0a: bosonic (2 pi n/beta)^(-s) * (2 pi/beta)^s = n^(-s) symbolic (beta-free)  (dimensionless bosonic Matsubara trace -> zeta(s), general symbolic beta)
+  [PASS (A)] T0b: fermionic ((2m+1) pi/beta)^(-s) * (pi/beta)^s = (2m+1)^(-s) symbolic (beta-free)  (dimensionless APBC Matsubara trace -> lambda(s), general symbolic beta)
+  [PASS (A)] T0c: as-written bosonic factor (beta/2pi)^s leaves residual beta-dependence (rejected)  (audit objection: reciprocal factor wrong-direction; corrected factor is unique)
+  [PASS (A)] T0d: as-written fermionic factor (beta/2pi)^s * 2^s leaves residual beta-dependence (rejected)  (audit objection: reciprocal factor wrong-direction; corrected factor (pi/beta)^s is unique)
+  [PASS (A)] T0e: rescaled bosonic trace at beta=3!=2pi reproduces zeta(4); as-written factor fails  (40-digit mpmath nsum (convergence-accelerated), dimensionless-trace check of eq (1))
+  [PASS (A)] T0f: rescaled fermionic trace at beta=3!=2pi reproduces lambda(4); as-written factor fails  (40-digit mpmath nsum (convergence-accelerated), dimensionless-trace check of eq (2))
+
+----------------------------------------------------------------------------------------
+Pattern A narrow theorem: 7/8 twisted thermal-zeta period quotient
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+Part 1: Riemann zeta odd-tail split (T1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T1: zeta(s) = lambda(s) + 2^(-s) zeta(s) symbolic  (odd/even partial-sum split of positive integers)
+  [PASS (A)] T1b: zeta(2) = lambda(2) + 2^(-2) zeta(2) (40-digit mpmath)  (odd-tail identity at integer s=2)
+  [PASS (A)] T1b: zeta(3) = lambda(3) + 2^(-3) zeta(3) (40-digit mpmath)  (odd-tail identity at integer s=3)
+  [PASS (A)] T1b: zeta(4) = lambda(4) + 2^(-4) zeta(4) (40-digit mpmath)  (odd-tail identity at integer s=4)
+  [PASS (A)] T1b: zeta(5) = lambda(5) + 2^(-5) zeta(5) (40-digit mpmath)  (odd-tail identity at integer s=5)
+
+----------------------------------------------------------------------------------------
+Part 2: Dirichlet lambda closed form (T2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T2: lambda(s) = (1 - 2^(-s)) zeta(s) symbolic  (closed form (B) in source note)
+
+----------------------------------------------------------------------------------------
+Part 3: Hurwitz zeta half-integer twist (T3)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T3: zeta(s, 1/2) = 2^s lambda(s) at s in {2..6} (40-digit mpmath)  (DLMF section 25.11.1, half-integer twist)
+
+----------------------------------------------------------------------------------------
+Part 4: Twisted thermal-zeta quotient closed form (T4)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T4: Q(s) = (2 lambda(s) - zeta(s)) / zeta(s) = 1 - 2^(1-s) symbolic  (central identity (F) in source note section 2.3)
+
+----------------------------------------------------------------------------------------
+Part 5: Bridge Q(s) = eta(s) / zeta(s) (T5)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T5: Q(s) = eta(s)/zeta(s) symbolic (bridge to W3, via eta.rewrite(zeta))  (explicit D2 collapse: W6 = W3 arithmetic)
+
+----------------------------------------------------------------------------------------
+Part 6: Q(4) = 7/8 exact rational (T6)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T6: Q(4) = 7/8 exact rational  (at s=4, twisted thermal-zeta quotient = 7/8)
+
+----------------------------------------------------------------------------------------
+Part 7: Negative scan — Q(d) != 7/8 at d != 4 (T7)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T7: Q(d) values across d in {2..6}, only d=4 gives 7/8  (Q(2)=1/2 | Q(3)=3/4 | Q(4)=7/8 | Q(5)=15/16 | Q(6)=31/32)
+
+----------------------------------------------------------------------------------------
+Part 8: eta(4)/zeta(4) = 7/8 (T8)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T8: eta(4)/zeta(4) = 7/8 exact (independent cross-check)  (sympy dirichlet_eta(4) / zeta(4) simplification)
+
+----------------------------------------------------------------------------------------
+Part 9: 40-digit mpmath numerical verification at s=4 (T9)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T9: Q(4) = 7/8 to 30+ digits (40-digit mpmath)  (high-precision numerical cross-check of T6)
+
+----------------------------------------------------------------------------------------
+Part 10: 40-digit mpmath numerical scan d != 4 (T10)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T10: Q(d) at d in {2,3,5,6} match expected; all != 7/8 (40-digit mpmath)  (negative scan, high precision)
+
+----------------------------------------------------------------------------------------
+Part 11: Partial-sum split check at s=4 (T11)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T11: partial-sum split at N=200, s=4: zeta_N - lambda_N - even_N ~ 0  (finite-N truncation of odd/even split (B))
+
+----------------------------------------------------------------------------------------
+Part 12: Sympy zeta(4, 1/2) cross-check (T12)
+----------------------------------------------------------------------------------------
+  [PASS (A)] T12: zeta(4, 1/2) = pi^4 / 6 (Hurwitz closed form, 40-digit mpmath)  (cross-check of T3 at s=4: 2^4 * lambda(4) = 16 * (15/16) * pi^4/90 = pi^4/6)
+
+----------------------------------------------------------------------------------------
+Part 13: Bridge to W3 (T13) — Q(d) = eta(d)/zeta(d) across d
+----------------------------------------------------------------------------------------
+  [PASS (A)] T13: Q(d) = eta(d)/zeta(d) at d in {2,3,4,5,6} (40-digit mpmath, D2 collapse)  (W6 = W3 arithmetic, different derivation route)
+
+----------------------------------------------------------------------------------------
+Part 14: D2 collapse honesty acknowledgement (T14)
+----------------------------------------------------------------------------------------
+
+    [D2 disclosure]: W6 = same arithmetic as W3 via different derivation route.
+    [D2 disclosure]: (2 lambda(4) - zeta(4)) / zeta(4) = eta(4)/zeta(4) = 7/8 exactly.
+  [PASS (A)] T14: D2 disclosure printed and W6/W3 arithmetic equality verified  (explicit honesty disclosure of section 0 of source note)
+
+========================================================================================
+TOTAL: PASS=24 FAIL=0
+========================================================================================
+
+VERDICT: 7/8 twisted thermal-zeta period quotient narrow theorem passes.
+Q(s) = (2 lambda(s) - zeta(s)) / zeta(s) = 1 - 2^(1-s) = eta(s)/zeta(s);
+at integer s=4, Q(4) = 7/8 exactly; at any other integer d >= 2, Q(d) != 7/8.
+W6 supplies a derivation-route witness to the parent bridge note; the
+underlying arithmetic collapses onto W3 (eta(4)/zeta(4) = 7/8) — D2 caveat
+explicitly acknowledged in source note section 0.
+
+----- stderr -----
+

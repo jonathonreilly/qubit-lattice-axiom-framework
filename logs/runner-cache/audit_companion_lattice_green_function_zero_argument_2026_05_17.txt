@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py
+runner_sha256: 27fa1503ed30b92ab4d1065c1230e9a0bb58b9877284205ed99675d83f099367
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.10
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (closed arithmetic) for
+LATTICE_GREEN_FUNCTION_ZERO_ARGUMENT_NARROW_THEOREM_NOTE_2026-05-17
+Goal: verify closed-arithmetic readouts G_lat(0; L) for L in
+{8, 16, 32, 64}, monotone-in-L ordering, cubic-symmetry invariance,
+positivity, and load-bearing role of the lattice-momentum kernel.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: kernel setup
+----------------------------------------------------------------------------------------
+  kernel:   hat{k}(m) = 2 sin(pi m / L) on Z/(L Z)
+  sum:      G_lat(0; L) = (1/L^3) sum_{n != 0} 1 / hat{k}^2
+
+----------------------------------------------------------------------------------------
+Part 1: closed-arithmetic readouts (T1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T1) G_lat(0; L= 8) = 0.224605625 to 1e-9  (got 0.224605625390, |diff| = 2.773e-13)
+  [PASS (A)] (T1) G_lat(0; L=16) = 0.238630319 to 1e-9  (got 0.238630318605, |diff| = 1.663e-14)
+  [PASS (A)] (T1) G_lat(0; L=32) = 0.245676551 to 1e-9  (got 0.245676551187, |diff| = 4.940e-13)
+  [PASS (A)] (T1) G_lat(0; L=64) = 0.249203284 to 1e-9  (got 0.249203283894, |diff| = 2.537e-13)
+
+----------------------------------------------------------------------------------------
+Part 2: strict monotone-in-L ordering (T2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T2) G_lat(0; 8) < G_lat(0; 16)  (0.224605625 < 0.238630319)
+  [PASS (A)] (T2) G_lat(0; 16) < G_lat(0; 32)  (0.238630319 < 0.245676551)
+  [PASS (A)] (T2) G_lat(0; 32) < G_lat(0; 64)  (0.245676551 < 0.249203284)
+
+----------------------------------------------------------------------------------------
+Part 3: infinite-volume diagnostic gap (T3)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T3a) G_lat(0; 64) < 0.2527 (literature BKM, quoted from parent note)  (0.249203284 < 0.2527)
+  [PASS (A)] (T3b) gap 0.2527 - G_lat(0; 64) < 0.005  (gap = 0.003497)
+  [PASS (A)] (T3c) gap is strictly positive (finite-L below BKM extrapolation)  (gap = 0.003497)
+
+----------------------------------------------------------------------------------------
+Part 4: cubic-symmetry invariance (T4) at L=8
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T4) identity permutation reproduces base (sanity)  (|identity - base| = 0.000e+00)
+  [PASS (A)] (T4) cubic symmetry under (x <-> y) at L=8: invariant  (|permuted - base| = 0.000e+00)
+  [PASS (A)] (T4) cubic symmetry under (x <-> z) at L=8: invariant  (|permuted - base| = 0.000e+00)
+  [PASS (A)] (T4) cubic symmetry under (y <-> z) at L=8: invariant  (|permuted - base| = 0.000e+00)
+
+----------------------------------------------------------------------------------------
+Part 5: positivity (C1) and summand positivity
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) G_lat(0; L= 8) > 0  (value = 0.224605625)
+  [PASS (A)] (C1) G_lat(0; L=16) > 0  (value = 0.238630319)
+  [PASS (A)] (C1) G_lat(0; L=32) > 0  (value = 0.245676551)
+  [PASS (A)] (C1) G_lat(0; L=64) > 0  (value = 0.249203284)
+  [PASS (A)] L=8 summand positivity: every k^2 > 0 (no zero-denominator term)  (min k^2 = 0.585786)
+  [PASS (A)] L=8 zero-mode exclusion: sum has exactly L^3 - 1 = 511 terms  (n_terms = 511, expected = 511)
+
+----------------------------------------------------------------------------------------
+Part 6: counterfactual probe (lattice-momentum kernel is load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual: naive-momentum kernel gives a different value at L=8  (lattice = 0.224606, naive = 0.064599, |diff| = 0.160007)
+  [PASS (A)] counterfactual: naive-momentum value < lattice-momentum value at L=8  (0.064599 < 0.224606)
+
+----------------------------------------------------------------------------------------
+Part 7: derivable corollary (C2) bounded by parent-cited BKM
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) G_lat(0; L= 8) < 0.2527 (parent-cited BKM literature)  (0.224605625 < 0.2527)
+  [PASS (A)] (C2) G_lat(0; L=16) < 0.2527 (parent-cited BKM literature)  (0.238630319 < 0.2527)
+  [PASS (A)] (C2) G_lat(0; L=32) < 0.2527 (parent-cited BKM literature)  (0.245676551 < 0.2527)
+  [PASS (A)] (C2) G_lat(0; L=64) < 0.2527 (parent-cited BKM literature)  (0.249203284 < 0.2527)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at 1e-9 precision (or exact float comparison):
+    (T1) four closed-arithmetic readouts G_lat(0; L) at L in
+         {8, 16, 32, 64}
+    (T2) strict monotone-in-L ordering across the four sample sizes
+    (T3) L=64 readout sits below 0.2527 with gap < 0.005
+    (T4) cubic-symmetry invariance under (x<->y), (x<->z), (y<->z)
+    (C1) positivity at every sample size; summand positivity at L=8
+    L=8 sum has exactly L^3 - 1 = 511 terms (zero-mode excluded)
+    counterfactual: naive-momentum kernel gives a different value
+    (C2) all four sample readouts below parent-cited BKM 0.2527
+
+========================================================================================
+TOTAL: PASS=26, FAIL=0
+========================================================================================

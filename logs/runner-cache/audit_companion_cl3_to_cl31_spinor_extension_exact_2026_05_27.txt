@@ -1,0 +1,134 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py
+runner_sha256: dd88e0efd1418e2e6a3c437666746d9fbe38c7a1e79b5424a0dc8617c898765e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27
+Goal: sympy verification of Cl(3, 0) -> Cl(3, 1) extension
+      uniqueness among single-M_k(R) real-matrix-algebra
+      Cartan-Bott cells at n = 4 reachable from Cl(3, 0).
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: (S1) Sign-`epsilon` rescaling exhausts the sign branch
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1) epsilon = 1: rescaled square = sign(eps) = 1  (eps/|eps| = 1)
+  [PASS (A)] (S1) epsilon = 2: rescaled square = sign(eps) = 1  (eps/|eps| = 1)
+  [PASS (A)] (S1) epsilon = -1: rescaled square = sign(eps) = -1  (eps/|eps| = -1)
+  [PASS (A)] (S1) epsilon = -3: rescaled square = sign(eps) = -1  (eps/|eps| = -1)
+  [PASS (A)] (S1) epsilon = 7/11: rescaled square = sign(eps) = 1  (eps/|eps| = 1)
+  [PASS (A)] (S1) epsilon = -11/13: rescaled square = sign(eps) = -1  (eps/|eps| = -1)
+  [PASS (A)] (S1) epsilon = 0 excluded (degenerate quadratic form, not Clifford extension)  (e_4^2 = 0 yields nilpotent e_4, not a Clifford algebra)
+
+----------------------------------------------------------------------------------------
+Part 2: (S2) Cl(4, 0) realization with all Gammas squaring to +I_8
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S2) σ_x^2 = I_2
+  [PASS (A)] (S2) σ_z^2 = I_2
+  [PASS (A)] (S2) ε^2 = -I_2
+  [PASS (A)] (S2) {σ_x, σ_z} = 0
+  [PASS (A)] (S2) {σ_x, ε} = 0
+  [PASS (A)] (S2) {σ_z, ε} = 0
+  [PASS (A)] (S2) Q_i^2 = -I_4 (quaternion i)
+  [PASS (A)] (S2) Q_j^2 = -I_4 (quaternion j)
+  [PASS (A)] (S2) Q_k^2 = -I_4 (quaternion k)
+  [PASS (A)] (S2) Q_i Q_j = Q_k
+  [PASS (A)] (S2) Q_j Q_i = -Q_k
+  [PASS (A)] (S2) Γ_1^2 = +I_8 (Cl(4, 0) signature)  (Cl(4, 0) generator 1)
+  [PASS (A)] (S2) Γ_2^2 = +I_8 (Cl(4, 0) signature)  (Cl(4, 0) generator 2)
+  [PASS (A)] (S2) Γ_3^2 = +I_8 (Cl(4, 0) signature)  (Cl(4, 0) generator 3)
+  [PASS (A)] (S2) Γ_4^2 = +I_8 (Cl(4, 0) signature)  (Cl(4, 0) generator 4)
+  [PASS (A)] (S2) {Γ_1, Γ_2} = 0 (Cl(4, 0) off-diagonal)  (anticommute)
+  [PASS (A)] (S2) {Γ_1, Γ_3} = 0 (Cl(4, 0) off-diagonal)  (anticommute)
+  [PASS (A)] (S2) {Γ_1, Γ_4} = 0 (Cl(4, 0) off-diagonal)  (anticommute)
+  [PASS (A)] (S2) {Γ_2, Γ_3} = 0 (Cl(4, 0) off-diagonal)  (anticommute)
+  [PASS (A)] (S2) {Γ_2, Γ_4} = 0 (Cl(4, 0) off-diagonal)  (anticommute)
+  [PASS (A)] (S2) {Γ_3, Γ_4} = 0 (Cl(4, 0) off-diagonal)  (anticommute)
+  [PASS (A)] (S2) 16 monomial indices enumerated for n = 4  (count = 16)
+  [PASS (A)] (S2) Cl(4, 0): 16 monomials have R-linear rank 16 in M_8(R)  (computed rank = 16; dim_R Cl(4, 0) = 16)
+
+----------------------------------------------------------------------------------------
+Part 3: (S3) Cl(3, 1) realization with η = diag(+1, +1, +1, -1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S3) Γ_1^2 = 1 · I_4 (Cl(3, 1) signature)  (η_{11} = 1)
+  [PASS (A)] (S3) Γ_2^2 = 1 · I_4 (Cl(3, 1) signature)  (η_{22} = 1)
+  [PASS (A)] (S3) Γ_3^2 = 1 · I_4 (Cl(3, 1) signature)  (η_{33} = 1)
+  [PASS (A)] (S3) Γ_4^2 = -1 · I_4 (Cl(3, 1) signature)  (η_{44} = -1)
+  [PASS (A)] (S3) {Γ_1, Γ_2} = 0 (Cl(3, 1) off-diagonal)  (anticommute)
+  [PASS (A)] (S3) {Γ_1, Γ_3} = 0 (Cl(3, 1) off-diagonal)  (anticommute)
+  [PASS (A)] (S3) {Γ_1, Γ_4} = 0 (Cl(3, 1) off-diagonal)  (anticommute)
+  [PASS (A)] (S3) {Γ_2, Γ_3} = 0 (Cl(3, 1) off-diagonal)  (anticommute)
+  [PASS (A)] (S3) {Γ_2, Γ_4} = 0 (Cl(3, 1) off-diagonal)  (anticommute)
+  [PASS (A)] (S3) {Γ_3, Γ_4} = 0 (Cl(3, 1) off-diagonal)  (anticommute)
+  [PASS (A)] (S3) Cl(3, 1): 16 monomials have R-linear rank 16 in M_4(R)  (computed rank = 16; dim_R M_4(R) = 16)
+  [PASS (A)] (S3) span(16 Cl(3, 1) monomials) = M_4(R) (rank = 16 = dim_R M_4(R))  (surjective onto M_4(R))
+
+----------------------------------------------------------------------------------------
+Part 4: (S2)-(S3) Side-by-side: only sign of Γ_4^2 differs
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4-side) Cl(3, 1): Γ_4^2 = -I (sign ε = -1)  (Cl(3, 1) timelike generator)
+  [PASS (A)] (S4-side) Cl(4, 0): Γ_4^2 = +I (sign ε = +1)  (Cl(4, 0) spacelike-extended generator)
+  [PASS (A)] (S4-side) Cl(3, 1) and Cl(4, 0) differ only in sign(Γ_4^2)  (ε = -1 vs ε = +1; this is the entire algebraic distinction)
+
+----------------------------------------------------------------------------------------
+Part 5: (S4) Cartan-Bott cells at n = 4 single-M_k(R) classification
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4) Cartan-Bott n = 4 cells enumerated (5 cells)  (cells: [(0, 4), (1, 3), (2, 2), (3, 1), (4, 0)])
+  [PASS (A)] (S4) Among n = 4 cells, exactly (3, 1) and (2, 2) land on single M_k(R)  (single-M_k(R) cells: [(2, 2), (3, 1)])
+  [PASS (A)] (S4) Both single-M_k(R) cells have k = 4 (real-dim 16 = 4 * 4)  ((3, 1) -> M_4(R), (2, 2) -> M_4(R))
+  [PASS (A)] (S4) dim_R Cl(4, 0) = 2^4 = 16  (universal-property)
+  [PASS (A)] (S4) dim_R Cl(3, 1) = 2^4 = 16  (universal-property)
+  [PASS (A)] (S4) dim_R Cl(2, 2) = 2^4 = 16  (universal-property)
+  [PASS (A)] (S4) dim_R Cl(1, 3) = 2^4 = 16  (universal-property)
+  [PASS (A)] (S4) dim_R Cl(0, 4) = 2^4 = 16  (universal-property)
+
+----------------------------------------------------------------------------------------
+Part 6: (S4) Restriction to Cl(3, 0)-extensions at n = 4
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S4) Cl(3, 0)-extensions at n = 4: exactly {(4, 0), (3, 1)} reachable  (reachable: [(3, 1), (4, 0)])
+  [PASS (A)] (S4) (2, 2) NOT reachable from Cl(3, 0) by single-generator extension  ((2, 2) needs two negative-square generators)
+  [PASS (A)] (S4) Among Cl(3, 0)-extensions at n = 4, only (3, 1) is single-M_k(R)  ((3, 1) → M_4(R) is the unique single-M_k(R) Cl(3, 0)-extension)
+
+----------------------------------------------------------------------------------------
+Part 7: (S5) Cl(3, 0) subalgebra preservation in both extensions
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S5) 8 Cl(3, 0) monomial indices enumerated  (count = 8 = 2^3)
+  [PASS (A)] (S5) Cl(3, 0) in Cl(3, 1): 8 monomials span 8-dim real subalgebra of M_4(R)  (computed rank = 8; dim_R Cl(3, 0) = 8)
+  [PASS (A)] (S5) Cl(3, 0) in Cl(4, 0): 8 monomials span 8-dim real subalgebra of M_8(R)  (computed rank = 8; dim_R Cl(3, 0) = 8)
+
+----------------------------------------------------------------------------------------
+Part 8: (S5) Structure constants of Cl(3, 0) subalgebra match
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S5) Γ_1 Γ_2 expansion in Cl(3, 0) basis (Cl(3, 1) realization)  (coeffs = [0, 0, 0, 0, 1, 0, 0, 0])
+  [PASS (A)] (S5) Γ_1 Γ_2 expansion in Cl(3, 0) basis (Cl(4, 0) realization)  (coeffs = [0, 0, 0, 0, 1, 0, 0, 0])
+  [PASS (A)] (S5) Cl(3, 0) volume element ω = Γ_1 Γ_2 Γ_3 satisfies ω^2 = -I (Cl(3, 1) realization)  (standard Cl(3, 0) pseudoscalar relation)
+  [PASS (A)] (S5) Cl(3, 0) volume element ω = Γ_1 Γ_2 Γ_3 satisfies ω^2 = -I (Cl(4, 0) realization)  (same Cl(3, 0) pseudoscalar relation)
+
+----------------------------------------------------------------------------------------
+Part 9: Final sign-extension classification summary
+----------------------------------------------------------------------------------------
+  Summary of the narrow theorem identities:
+    (S1) sign-ε branch:        ε ∈ {+1, -1} exhausts the rescaling
+    (S2) ε = +1 → Cl(4, 0):    M_2(H), real-dim 16, faithful on R^8
+    (S3) ε = -1 → Cl(3, 1):    M_4(R), real-dim 16, faithful on R^4
+    (S4) single-M_k(R) cell:   (3, 1) is the unique Cl(3, 0)-extension
+                                landing on a single M_k(R) at n = 4
+    (S5) Cl(3, 0) ⊂ A':        preserved in both extensions, dim 8
+
+----------------------------------------------------------------------------------------
+Final result
+----------------------------------------------------------------------------------------
+  Note path: /private/tmp/cl3-review-open-20260527-hnkyam/docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md
+  Claim id:  cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27
+  PASS = 63
+  FAIL = 0
+
+  RESULT: PASS (no failures detected)
+
+----- stderr -----
+

@@ -1,0 +1,179 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_projection_mc.py
+runner_sha256: 6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 373.90
+status: ok
+----- stdout -----
+Color-projection Monte Carlo: R_conn from SU(3) on Z^4
+Framework: Cl(3) on Z^3 lattice  |  Zero-import computation
+======================================================================
+
+======================================================================
+Color Projection Monte Carlo
+======================================================================
+Lattice:          4^4 = 256 sites
+Matrix size:      768 x 768
+Beta:             6.0
+Mass:             0.01
+Thermalization:   500 sweeps
+Measurements:     100 configs (every 10 sweeps)
+Update algorithm: Cabibbo-Marinari heat bath
+======================================================================
+
+Thermalization (500 sweeps)...
+  Sweep 100/500: plaq = 0.5471  [9.4s]
+  Sweep 200/500: plaq = 0.5766  [23.7s]
+  Sweep 300/500: plaq = 0.5809  [39.7s]
+  Sweep 400/500: plaq = 0.5847  [55.3s]
+  Sweep 500/500: plaq = 0.5686  [73.5s]
+Thermalization done in 73.5s
+Final thermalization plaquette: 0.5686
+
+Measurements (100 configurations)...
+  Config 1/100: plaq=0.5828, R_conn=0.904262 (t=2.1s)
+  Config 2/100: plaq=0.5849, R_conn=0.869707 (t=2.2s)
+  Config 3/100: plaq=0.5656, R_conn=0.875964 (t=2.9s)
+  Config 4/100: plaq=0.5869, R_conn=0.886404 (t=2.5s)
+  Config 5/100: plaq=0.5647, R_conn=0.871650 (t=2.5s)
+  Config 6/100: plaq=0.5808, R_conn=0.911976 (t=2.4s)
+  Config 7/100: plaq=0.5627, R_conn=0.885835 (t=2.5s)
+  Config 8/100: plaq=0.5640, R_conn=0.851297 (t=2.4s)
+  Config 9/100: plaq=0.5636, R_conn=0.883008 (t=2.4s)
+  Config 10/100: plaq=0.5457, R_conn=0.873488 (t=2.5s)
+  Config 11/100: plaq=0.5772, R_conn=0.918955 (t=2.2s)
+  Config 12/100: plaq=0.5591, R_conn=0.900790 (t=2.3s)
+  Config 13/100: plaq=0.5775, R_conn=0.872850 (t=2.1s)
+  Config 14/100: plaq=0.5846, R_conn=0.915340 (t=2.3s)
+  Config 15/100: plaq=0.5735, R_conn=0.880814 (t=3.5s)
+  Config 16/100: plaq=0.5783, R_conn=0.875490 (t=4.5s)
+  Config 17/100: plaq=0.5650, R_conn=0.885406 (t=5.7s)
+  Config 18/100: plaq=0.5717, R_conn=0.866525 (t=6.3s)
+  Config 19/100: plaq=0.5663, R_conn=0.901269 (t=6.1s)
+  Config 20/100: plaq=0.5691, R_conn=0.902622 (t=6.1s)
+  Config 21/100: plaq=0.5903, R_conn=0.909784 (t=5.8s)
+  Config 22/100: plaq=0.5739, R_conn=0.884728 (t=5.5s)
+  Config 23/100: plaq=0.5692, R_conn=0.865750 (t=5.6s)
+  Config 24/100: plaq=0.5648, R_conn=0.897878 (t=5.4s)
+  Config 25/100: plaq=0.5910, R_conn=0.895940 (t=5.4s)
+  Config 26/100: plaq=0.5689, R_conn=0.911229 (t=4.8s)
+  Config 27/100: plaq=0.5782, R_conn=0.873625 (t=5.8s)
+  Config 28/100: plaq=0.5568, R_conn=0.874537 (t=5.2s)
+  Config 29/100: plaq=0.5891, R_conn=0.912461 (t=4.8s)
+  Config 30/100: plaq=0.5889, R_conn=0.841182 (t=4.9s)
+  Config 31/100: plaq=0.5895, R_conn=0.900343 (t=4.9s)
+  Config 32/100: plaq=0.5706, R_conn=0.899580 (t=5.1s)
+  Config 33/100: plaq=0.5596, R_conn=0.857478 (t=5.1s)
+  Config 34/100: plaq=0.5687, R_conn=0.894765 (t=4.9s)
+  Config 35/100: plaq=0.5887, R_conn=0.823103 (t=4.4s)
+  Config 36/100: plaq=0.5516, R_conn=0.878001 (t=4.5s)
+  Config 37/100: plaq=0.5955, R_conn=0.887084 (t=4.3s)
+  Config 38/100: plaq=0.5630, R_conn=0.869291 (t=4.0s)
+  Config 39/100: plaq=0.5744, R_conn=0.911142 (t=3.5s)
+  Config 40/100: plaq=0.5519, R_conn=0.903569 (t=3.6s)
+  Config 41/100: plaq=0.5833, R_conn=0.874824 (t=3.7s)
+  Config 42/100: plaq=0.5725, R_conn=0.905641 (t=3.9s)
+  Config 43/100: plaq=0.5838, R_conn=0.907568 (t=3.6s)
+  Config 44/100: plaq=0.5713, R_conn=0.876755 (t=3.8s)
+  Config 45/100: plaq=0.5844, R_conn=0.876097 (t=3.7s)
+  Config 46/100: plaq=0.5933, R_conn=0.918328 (t=3.4s)
+  Config 47/100: plaq=0.5730, R_conn=0.847240 (t=3.8s)
+  Config 48/100: plaq=0.5832, R_conn=0.914186 (t=3.6s)
+  Config 49/100: plaq=0.5639, R_conn=0.902496 (t=4.1s)
+  Config 50/100: plaq=0.5941, R_conn=0.878989 (t=3.7s)
+  Config 51/100: plaq=0.5605, R_conn=0.868301 (t=3.3s)
+  Config 52/100: plaq=0.5874, R_conn=0.896096 (t=3.1s)
+  Config 53/100: plaq=0.5737, R_conn=0.891628 (t=3.0s)
+  Config 54/100: plaq=0.5845, R_conn=0.912871 (t=3.0s)
+  Config 55/100: plaq=0.5682, R_conn=0.914256 (t=2.9s)
+  Config 56/100: plaq=0.5674, R_conn=0.861299 (t=2.8s)
+  Config 57/100: plaq=0.5818, R_conn=0.892209 (t=2.5s)
+  Config 58/100: plaq=0.5422, R_conn=0.911301 (t=2.4s)
+  Config 59/100: plaq=0.5838, R_conn=0.879265 (t=2.2s)
+  Config 60/100: plaq=0.5755, R_conn=0.895704 (t=2.2s)
+  Config 61/100: plaq=0.5686, R_conn=0.894531 (t=2.0s)
+  Config 62/100: plaq=0.5669, R_conn=0.893294 (t=2.0s)
+  Config 63/100: plaq=0.5676, R_conn=0.910232 (t=1.9s)
+  Config 64/100: plaq=0.5612, R_conn=0.873943 (t=2.0s)
+  Config 65/100: plaq=0.5773, R_conn=0.883227 (t=1.9s)
+  Config 66/100: plaq=0.5726, R_conn=0.867535 (t=2.0s)
+  Config 67/100: plaq=0.5757, R_conn=0.863293 (t=2.0s)
+  Config 68/100: plaq=0.5504, R_conn=0.898850 (t=2.1s)
+  Config 69/100: plaq=0.5622, R_conn=0.891362 (t=1.9s)
+  Config 70/100: plaq=0.5769, R_conn=0.862232 (t=1.9s)
+  Config 71/100: plaq=0.5734, R_conn=0.895202 (t=2.1s)
+  Config 72/100: plaq=0.5775, R_conn=0.922952 (t=1.7s)
+  Config 73/100: plaq=0.5630, R_conn=0.921039 (t=2.0s)
+  Config 74/100: plaq=0.5554, R_conn=0.882035 (t=2.0s)
+  Config 75/100: plaq=0.5667, R_conn=0.923379 (t=2.0s)
+  Config 76/100: plaq=0.5679, R_conn=0.891558 (t=1.8s)
+  Config 77/100: plaq=0.5692, R_conn=0.881451 (t=1.7s)
+  Config 78/100: plaq=0.5636, R_conn=0.873955 (t=1.5s)
+  Config 79/100: plaq=0.5754, R_conn=0.888963 (t=1.6s)
+  Config 80/100: plaq=0.5586, R_conn=0.892678 (t=1.8s)
+  Config 81/100: plaq=0.5666, R_conn=0.908159 (t=1.5s)
+  Config 82/100: plaq=0.5661, R_conn=0.872978 (t=1.7s)
+  Config 83/100: plaq=0.5710, R_conn=0.892663 (t=1.7s)
+  Config 84/100: plaq=0.5767, R_conn=0.913937 (t=1.7s)
+  Config 85/100: plaq=0.5767, R_conn=0.871022 (t=1.6s)
+  Config 86/100: plaq=0.5716, R_conn=0.890033 (t=1.6s)
+  Config 87/100: plaq=0.5836, R_conn=0.849059 (t=1.8s)
+  Config 88/100: plaq=0.5898, R_conn=0.910264 (t=1.6s)
+  Config 89/100: plaq=0.5719, R_conn=0.910748 (t=1.7s)
+  Config 90/100: plaq=0.5691, R_conn=0.891149 (t=1.8s)
+  Config 91/100: plaq=0.5668, R_conn=0.890491 (t=1.7s)
+  Config 92/100: plaq=0.5744, R_conn=0.900610 (t=1.6s)
+  Config 93/100: plaq=0.5752, R_conn=0.897668 (t=2.0s)
+  Config 94/100: plaq=0.5529, R_conn=0.899767 (t=2.1s)
+  Config 95/100: plaq=0.5554, R_conn=0.876372 (t=1.9s)
+  Config 96/100: plaq=0.5804, R_conn=0.923430 (t=1.8s)
+  Config 97/100: plaq=0.5794, R_conn=0.875439 (t=1.7s)
+  Config 98/100: plaq=0.5862, R_conn=0.901189 (t=1.6s)
+  Config 99/100: plaq=0.5752, R_conn=0.870721 (t=1.7s)
+  Config 100/100: plaq=0.5895, R_conn=0.871537 (t=1.6s)
+
+======================================================================
+RESULTS
+======================================================================
+
+Plaquette <P>:
+  Measured:  0.5727 +/- 0.0011
+  Expected:  0.5934 (beta=6, thermodynamic limit)
+  Deviation: 3.5%
+
+Connected color trace ratio R_conn:
+  Measured:  0.888791 +/- 0.001977
+  Expected:  0.888889 = (N_c^2-1)/N_c^2 = 8/9
+  Deviation: 0.01%
+  1/N_c^2:   0.111111 (expected disconnected fraction)
+
+Per-distance R_conn:
+  |x| =  1.000: R = 0.888107 +/- 0.003983  (100 meas)
+  |x| =  1.414: R = 0.887920 +/- 0.002301  (100 meas)
+  |x| =  1.732: R = 0.887758 +/- 0.001839  (100 meas)
+  |x| =  2.000: R = 0.890715 +/- 0.002836  (100 meas)
+  |x| =  2.236: R = 0.888397 +/- 0.002369  (100 meas)
+  |x| =  2.450: R = 0.887830 +/- 0.001616  (100 meas)
+  |x| =  2.646: R = 0.890066 +/- 0.001749  (100 meas)
+  |x| =  2.828: R = 0.889400 +/- 0.003904  (100 meas)
+  |x| =  3.000: R = 0.889001 +/- 0.001947  (100 meas)
+  |x| =  3.162: R = 0.891469 +/- 0.002250  (100 meas)
+  |x| =  3.464: R = 0.886594 +/- 0.005143  (100 meas)
+  |x| =  3.606: R = 0.891562 +/- 0.003616  (100 meas)
+  |x| =  4.000: R = 0.885916 +/- 0.009696  (100 meas)
+
+======================================================================
+CHECKS
+======================================================================
+  [PASS] Plaquette within 10% of 0.5934
+  [PASS] R_conn within 5% of 8/9 = 0.888889
+  [PASS] R_conn error bar includes 8/9 (2-sigma)
+
+Total runtime: 373.6s
+
+======================================================================
+ALL CHECKS PASSED
+======================================================================
+----- stderr -----
+

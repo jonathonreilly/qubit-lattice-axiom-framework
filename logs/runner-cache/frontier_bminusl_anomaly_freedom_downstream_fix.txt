@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/frontier_bminusl_anomaly_freedom_downstream_fix.py
+runner_sha256: 87d698c8698aa40df445c785bb63ff056fc78343778986f5d55701cbc1d2e727
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — bminusl_anomaly_freedom_downstream_fix
+==============================================================================
+  [PASS] [A] Parent note exists  (path = docs/BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md)
+  [PASS] [A] Fix record exists  (path = docs/BMINUSL_ANOMALY_FREEDOM_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+
+PART F-A — retire stale `retained` wordings:
+  [PASS] [A] Stale phrase retired from live narrative: 'retained one-generation matter surface'
+  [PASS] [A] Stale phrase retired from live narrative: 'convention of the retained notes'
+  [PASS] [A] Stale phrase retired from live narrative: 'on the retained\n`SU(3) x SU(2) x U(1)_Y`'
+  [PASS] [A] Stale phrase retired from live narrative: 'gaugeable on the retained\n  one-generation content'
+  [PASS] [A] Stale phrase retired from live narrative: 'quantum-consistent on the retained matter spectrum'
+  [PASS] [A] Stale phrase retired from live narrative: 'The retained `nu_R` slot'
+  [PASS] [A] Stale phrase retired from live narrative: 'gaugeability of `U(1)_{B-L}` on the retained conte'...
+  [PASS] [A] Stale phrase retired from live narrative: 'part of the retained gauge group'
+  [PASS] [A] Stale phrase retired from live narrative: 'compatible with the retained\ncompanion story'
+  [PASS] [A] Replacement 'cited one-generation matter surface' present
+  [PASS] [A] Replacement 'cited `nu_R` slot' present
+
+PART F-A — §10 Upstream-tier accounting:
+  [PASS] [A] §10 header present
+  [PASS] [A] §10 lists one_generation_matter_closure_note as `unaudited`
+  [PASS] [A] §10 lists hypercharge uniqueness companion as `unaudited`
+  [PASS] [A] §10 lists anomaly_forces_time_theorem as `unaudited`
+  [PASS] [A] §10 acknowledges all three upstreams are `unaudited`
+  [PASS] [A] §10 states effective-tier-inherits-from-weakest
+  [PASS] [A] §10 records admission-inheritance from upstream is lower-stringency (no d_t = 1 imported)
+
+PART STRUCT — invariants preserved:
+  [PASS] [A] Matter-content table row for Q_L preserved
+  [PASS] [A] Matter-content table row for nu_R^c preserved
+  [PASS] [A] Tr[B-L] = 0 arithmetic preserved
+  [PASS] [A] Tr[(B-L)^3] = 0 arithmetic preserved
+  [PASS] [A] SU(3)^2 B-L cancellation arithmetic preserved
+  [PASS] [A] SU(2)^2 B-L cancellation arithmetic preserved
+  [PASS] [A] Runner expectation 'PASS=36, FAIL=0' preserved
+  [PASS] [A] §5 'This theorem claims:' header preserved
+  [PASS] [A] §5 'This theorem does not claim:' header preserved
+  [PASS] [A] §8 'Out of scope' header preserved
+  [PASS] [A] Fix-record meta-note linked from parent
+  [PASS] [A] Paired verifier referenced from parent
+
+PART FIX-RECORD — meta-note sanity:
+  [PASS] [A] Fix record mentions: 'F-A — Tier over-claim'
+  [PASS] [A] Fix record mentions: 'Admission-inheritance note (lower-stringency)'
+  [PASS] [A] Fix record mentions: 'What this fix does NOT do'
+  [PASS] [A] Fix record mentions: 'Suggested auditor verdict'
+  [PASS] [A] Fix record mentions: 'audited_conditional'
+  [PASS] [A] Fix record mentions: 'positive_theorem retained'
+
+==============================================================================
+SUMMARY: 38 PASS / 0 FAIL  (Class-A: 38)
+==============================================================================
+
+----- stderr -----
+

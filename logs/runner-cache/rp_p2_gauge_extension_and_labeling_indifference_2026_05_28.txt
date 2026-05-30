@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py
+runner_sha256: 77ec52a654dbeb674b684dc4396710cd8eb217c71bcef2213387af579060e725
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+==============================================================================
+RP -> P2: FIXED-SU(3) GAUGE EXTENSION + LABELING-INDIFFERENCE EXHIBIT
+==============================================================================
+Staggered KS, temporal gauge U_0=1, m=0.5, eta_0=1, eta_1(t)=(-1)^t.
+Free case (free two-step transfer-matrix positivity row) was U=1 momentum-diagonal; here: fixed SU(3)/U(1),
+position space, config-by-config.  Labeling-indifference: det/spec/Z
+invariant under hw=1 triplet relabeling.
+
+------------------------------------------------------------------------------
+MODAL TRANSFER FORMULA: anti-Hermitian spatial-hop eigenvalue i*lambda
+    gives transfer eigenvalues exp(+/-2 asinh(sqrt(m^2+lambda^2)))
+------------------------------------------------------------------------------
+    lambda samples=[-3.0, -1.25, -0.2, 0.0, 0.7, 2.5]
+    max eigenvalue residual=3.553e-15  max |Im|=8.979e-17
+    min transfer eigenvalue=2.565791e-02  -> PASS
+
+------------------------------------------------------------------------------
+FREE-CASE BRIDGE: position-space 2-step decaying eigenvalues at U=1
+    reproduce momentum-space free spectrum {e^{-2E(p)}}
+------------------------------------------------------------------------------
+    L_s=3: max|pos-mom residual|=2.220e-16  max|Im(decay)|=6.833e-42  -> ok
+    L_s=4: max|pos-mom residual|=6.106e-16  max|Im(decay)|=5.175e-28  -> ok
+    L_s=6: max|pos-mom residual|=4.163e-16  max|Im(decay)|=2.004e-16  -> ok
+    free-case bridge = PASS
+
+------------------------------------------------------------------------------
+SAMPLED SU(3) PER-CONFIG POSITIVITY: fixed random spatial backgrounds
+    spec(T2cl[U]) subset R_{>0}; T_hat^2[U]=B[U]^dag B[U]; H_hat[U]>=0
+------------------------------------------------------------------------------
+    configs=200  (SU(3), L_s=4, 3 colors -> 12 spatial modes)
+    max |Im(decay eig)| over configs   = 7.529e-16  (want ~0)
+    min decaying eigenvalue mu          = 1.458981e-01  (want >0)
+    max decaying eigenvalue mu          = 3.819653e-01  (<=1)
+    min single-particle eig(H_hat[U])   = 4.812127e-01  (>=0)
+    many-body T_hat^2 min eig           = 4.832304e-04  (>0)
+    many-body ||T_hat^2 - B^dag B||     = 2.78e-17
+    positivity failures (configs)       = 0 / 200
+    sampled SU(3) positivity = PASS
+
+------------------------------------------------------------------------------
+SAMPLED U(1) PER-CONFIG POSITIVITY (Abelian cross-check)
+------------------------------------------------------------------------------
+    configs=200  (U(1), L_s=6, 1 'color' -> 6 spatial modes)
+    max |Im(decay eig)| over configs   = 5.020e-16  (want ~0)
+    min decaying eigenvalue mu          = 1.458988e-01  (want >0)
+    min single-particle eig(H_hat[U])   = 4.812143e-01  (>=0)
+    many-body T_hat^2 min eig           = 1.097269e-04  (>0)
+    positivity failures (configs)       = 0 / 200
+    sampled U(1) positivity = PASS
+
+------------------------------------------------------------------------------
+B   LABELING-INDIFFERENCE: det(M_KS+mI), spec(H_hat), Z=Tr(e^{-beta H_hat})
+    invariant under hw=1 triplet relabeling (permutation conjugation)
+------------------------------------------------------------------------------
+    hw=1 triplet permutations tested    = 6 (all of S_3)
+    staggered-embedded relabelings      = 6
+    faithful-surface check: ||M_KS+M_KS^dag||=0.0e+00  ||{eps,M_KS}||=0.0e+00  (anti-Hermitian plus epsilon anticommutation)
+    baseline det(M_KS+mI)               = 0.77247620+0.0e+00j  (real-positive, matches det dep)
+    max |det(M) deviation| over relabels= 9.992e-16
+    max |det(H3) deviation| over S_3    = 2.776e-17
+    max |spec(H_hat) deviation| over S_3= 4.441e-16
+    baseline Z = Tr(e^{-beta H_hat})   = 1.36957843
+    max |Z(triplet) deviation| over S_3 = 1.776e-15
+    determinant invariance = PASS
+    spectrum invariance    = PASS
+    trace invariance       = PASS
+
+------------------------------------------------------------------------------
+U-INTEGRATED RP REDUCTION (named deps, not re-derived here)
+------------------------------------------------------------------------------
+    <Theta(F) F> = int dU (Haar . positive Wilson weight)
+        x (per-config fermion 2-step positivity -- modal proof + sampled exhibits)
+        x (det(M_KS+mI) >= m^n > 0 config-by-config -- retained dep
+           STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
+        x (gauge-half Cauchy-Schwarz norm-square -- retained_bounded dep
+           REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)
+      >= 0,  each factor non-negative.
+
+    RESIDUAL TIGHTENING (refines P2 phase-blindness bridge 'modulo AC_phi_lambda'):
+    RP positivity & P2 phase-blindness depend only on det(M_KS+mI) and
+    spec(H_hat) and Z, which are relabeling invariants. So they are
+    INDEPENDENT of substep-(4) AC_phi_lambda (hw=1 species LABELING).
+    Their realization dependence is substeps (1) Grassmann + (2) kinetic
+    structure ONLY -- bounded-closeable candidate (unaudited synthesis).
+
+==============================================================================
+SCORECARD: PASS=7 FAIL=0
+  modal transfer formula : anti-Hermitian-hop eigenmode gives positive transfer pair
+  free-case bridge       : position-space build faithful to free dispersion
+  sampled SU(3) positivity: fixed-background transfer positivity exhibit
+  sampled U(1) positivity : Abelian cross-check
+  determinant invariance  : det(M_KS+mI) relabeling-invariant
+  spectrum invariance     : spec(H_hat) relabeling-invariant
+  trace invariance        : Z=Tr(e^{-beta H_hat}) relabeling-invariant
+==============================================================================
+
+----- stderr -----
+

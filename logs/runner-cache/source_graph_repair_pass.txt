@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/source_graph_repair_pass.py
+runner_sha256: 1f63721c251319862ca15ea29a841358130728a2cd5058e7d5b46f8d18170d14
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==============================================================================
+SOURCE-GRAPH REPAIR PASS
+  Mode: DRY-RUN (no modifications)
+==============================================================================
+
+Cycles named in audit_queue.json: 247
+Unique source notes with strippable edges: 83
+Total (source, target) edges to process: 619
+
+
+==============================================================================
+SUMMARY
+==============================================================================
+
+  Source notes processed: 83
+  Source notes whose .md path resolved: 80
+  Source notes whose .md path NOT resolved: 3
+  Edges found in source markdown (planned move): 113
+  Edges NOT found in source markdown: 500
+
+  Notes with unresolved paths (first 10):
+    - publication.ci3_z3.claims_table
+    - lanes.open_science.03_quark_mass_retention_open_lane_2026-04-26
+    - repo.active_review_queue
+
+  Top 5 source notes by planned moves:
+    docs/KOIDE_A1_DERIVATION_STATUS_NOTE.md: 5 found, 0 missing
+    docs/A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_R5HR.md: 3 found, 28 missing
+    docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_R1.md: 3 found, 26 missing
+    docs/A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_R3.md: 3 found, 26 missing
+    docs/COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md: 3 found, 3 missing
+
+  DETAILED PLAN for top source (docs/KOIDE_A1_DERIVATION_STATUS_NOTE.md):
+    Found edges (5):
+      → koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5
+          context: - [`KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md`](KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_...
+      → koide_a1_probe_z2_c3_pairing_bounded_obstruction_note_2026-05-08_probe7
+          context: - [`KOIDE_A1_PROBE_Z2_C3_PAIRING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe7.md`](KOIDE_A1_PROBE_Z2_C3_PAIRING_BOUNDED_OB...
+      → koide_a1_route_a_koide_nishiura_bounded_obstruction_note_2026-05-08_routea
+          context: [`KOIDE_A1_ROUTE_A_KOIDE_NISHIURA_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routea.md`](KOIDE_A1_ROUTE_A_KOIDE_NISHIURA_BOUNDE...
+      → koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed
+          context: [`KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md`](KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_...
+      → koide_a1_route_e_kostant_weyl_bounded_obstruction_note_2026-05-08_routee
+          context: [`KOIDE_A1_ROUTE_E_KOSTANT_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routee.md`](KOIDE_A1_ROUTE_E_KOSTANT_WEYL_BOUNDED_OB...
+
+==============================================================================
+DRY-RUN COMPLETE — no files modified
+==============================================================================
+
+To actually apply the repair (modify source notes):
+  python3 scripts/source_graph_repair_pass.py --apply
+
+Recommended workflow:
+  1. Run in dry-run, review the planned changes (this output)
+  2. Branch from origin/main
+  3. Run --apply
+  4. Run bash docs/audit/scripts/run_pipeline.sh to regenerate
+     citation graph + cycle inventory + audit queue
+  5. Re-run scripts/audit_landscape_snapshot.py to see how many
+     cycles vanished and how many items became ready
+  6. Commit the source-note edits + the regenerated audit data
+  7. Open a single PR for the repair pass + pipeline regen
+
+----- stderr -----
+

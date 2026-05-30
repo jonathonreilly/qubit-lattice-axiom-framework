@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/planck_boundary_action_density_accepted_premise_runner.py
+runner_sha256: 089a47719b0ae0a7e5168c9f8aa0c0560387371a6b97c13c7f4fff2a050eec15
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+PLANCK BOUNDARY/ACTION-DENSITY PREMISE-PACKET BRIDGE
+
+== Part 0: source firewall ==
+PASS: source contains required phrase: Supplied Premise Packet (Not Axioms)
+PASS: source contains required phrase: (BP)
+PASS: source contains required phrase: Gravitational boundary/action-density identification
+PASS: source contains required phrase: supplied premise-packet entry
+PASS: source contains required phrase: does not derive BP
+PASS: source contains required phrase: promote BP to a repo-wide axiom
+PASS: source contains required phrase: BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md
+PASS: source contains required phrase: MINIMAL_AXIOMS_2026-05-20.md
+PASS: source contains required phrase: HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md
+PASS: source contains required phrase: scripts/planck_boundary_action_density_accepted_premise_runner.py
+PASS: source contains required phrase: bounded_theorem
+PASS: source contains required phrase: Status authority
+PASS: source contains required phrase: independent audit lane only
+PASS: source note excludes forbidden phrase: PDG load-bearing value
+PASS: source note excludes forbidden phrase: load-bearing fitted
+PASS: source note excludes forbidden phrase: Monte Carlo measurement consumed
+PASS: source note excludes forbidden phrase: load-bearing g_bare value
+
+== Part 1: (B1) primitive trace c_cell = 1/4 ==
+PASS: (B1) Boolean event-cell dim = 16 (16)
+PASS: (B1) Boolean event-cell subsets enumerated
+PASS: (B1) rank(P_A) = C(4,1) = 4 (4)
+PASS: (B1) Tr(P_A) = 4 (4)
+PASS: (B1) c_cell = Tr(rho_cell P_A) = 1/4 (1/4)
+PASS: (B1) Tr(rho_cell) = 1 (source-free normalization) (1)
+PASS: (B1) Hamming-weight counts on 2^E match binomials (1,4,6,4,1) ({0: 1, 1: 4, 2: 6, 3: 4, 4: 1})
+
+== Part 2: (B2) premise-packet registration check ==
+PASS: (B2) registration phrase present: (BP)
+PASS: (B2) registration phrase present: Gravitational boundary/action-density identification
+PASS: (B2) registration phrase present: leading coefficient of the gravitational boundary/action density
+PASS: (B2) registration phrase present: supplied premise-packet entry
+PASS: (B2) registration phrase present: does not derive BP
+PASS: (B2) registration phrase present: promote BP to a repo-wide axiom
+
+== Part 3: (B3) retained algebraic equivalence (T1) at c = 1/4 ==
+PASS: (B3) (T1) at c_cell = 1/4 has a unique positive-rational solution ([1])
+PASS: (B3) (T1) at c_cell = 1/4 forces G = 1 (framework lattice units) (1)
+PASS: (B3) verifies retained equivalence 4 G c_cell = 1 exactly (1)
+
+== Part 4: (B4) framework-lattice-unit readout ==
+PASS: (B4) G_Newton,lat = 1 in framework lattice units (1)
+PASS: (B4) G_kernel = 1/(4 pi) is distinct from G_Newton,lat = 1
+PASS: (B4) S_BH(G_Newton,lat = 1, A) = A/4 (A/4)
+
+== Part 5: dependency status check ==
+PASS: BH_QUARTER_WALD_NEWTON_COEFFICIENT note file exists (docs/BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
+PASS: Primitive-coframe boundary-carrier source-arithmetic note exists (docs/PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
+PASS: BH_QUARTER_WALD_NOETHER framework carrier parent note file exists (docs/BH_QUARTER_WALD_NOETHER_FRAMEWORK_CARRIER_THEOREM_NOTE_2026-04-29.md)
+PASS: Canonical narrow-bridge template file exists (docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+PASS: Source-unit normalization support theorem note exists (docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md)
+
+== Part 6: no forbidden imports ==
+PASS: source note excludes literature comparator: PDG obs value consumed
+PASS: source note excludes literature comparator: fitted selector consumed
+PASS: source note excludes literature comparator: observed Newton constant G_obs imported
+PASS: source note excludes literature comparator: observed Planck length l_P_obs imported
+PASS: source note excludes literature comparator: Bekenstein-Hawking entropy observed import
+PASS: source note excludes literature comparator: Wilson plaquette load-bearing input
+
+== Part 7: scope-boundary check (BP not derived) ==
+PASS: (scope) note records open scope phrase: This bridge does not close
+PASS: (scope) note records open scope phrase: derivation of the gravitational boundary/action-density
+PASS: (scope) note records open scope phrase: from the one-qubit operator algebra on the `Z^3`
+PASS: (scope) note records open scope phrase: derivation of the Wald-Noether charge formula
+PASS: (scope) note records open scope phrase: metric-compatible coframe response premise carried by the
+PASS: (scope) note records open scope phrase: Target-3 row
+PASS: (scope) note records open scope phrase: Hawking temperature
+PASS: (scope) note records open scope phrase: higher-curvature correction
+
+TOTAL: PASS=55 FAIL=0
+VERDICT: bounded premise-packet bridge passes; (B1)-(B4) follow from the retained BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM (T1) + Boolean event-cell linear algebra + supplied premise packet (BP) by exact sympy rational arithmetic.
+
+----- stderr -----
+

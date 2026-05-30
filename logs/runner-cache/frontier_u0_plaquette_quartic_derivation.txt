@@ -1,0 +1,166 @@
+===== runner cache v1 =====
+runner: scripts/frontier_u0_plaquette_quartic_derivation.py
+runner_sha256: 6581af88e8a3bee729424981be0341616f20de9905a4a9777607eb398114d719
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+========================================================================================
+Pattern A narrow runner for
+U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification that u_0 = <P>^{1/4} with the exponent 1/4
+      FORCED by L=4 (four-link plaquette) + (P2) unit-mean principle.
+
+Inputs (named):
+  (P1) elementary plaquette is ordered product of exactly four links
+  (P2) tree-level mean-field unit-normalization principle
+       (named external admission, Lepage-Mackenzie 1993)
+Hard rules: framework-baseline geometry only, no PDG, no fitted u_0, no lattice numerics.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: algebraic chain (S1)-(S5) and (Q1) at exact sympy precision
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1) Cubic-plaquette loop length L = 4 from (P1)  (L_cubic = 4)
+  [PASS (A)] (S2) Scalar rescaling factors out: (U_1/u_0)(U_2/u_0)(U_3/u_0)(U_4/u_0) = U_p / u_0^4  (symbolic 2x2 matrix product check on arbitrary U_i entries)
+  [PASS (A)] (S3) <P_dressed> = <P> / u_0^4 at L = 4  (<P_dressed> = P_avg/u_0**4)
+  [PASS (A)] (S4) Unit-mean condition <P>/u_0^4 = 1 reduces to u_0^4 = <P>  (algebraic rearrangement)
+  [PASS (A)] (S5) (P_avg^{1/4})^4 = P_avg (unique positive fourth root)  ((P_avg^(1/4))^4 - P_avg = 0)
+  [PASS (A)] (Q1) u_0 = <P>^{1/4} closed form  (u_0 = P_avg**(1/4))
+  [PASS (A)] (Q1) exponent = 1/4 = 1/L with L = 4  (1/L at L=4 -> 1/4)
+  [PASS (A)] EXPONENT IS FORCED: solving <P>/u_0^L = 1 at L = 4 gives unique exponent 1/4  (no algebraic slack: 1/4 is the only positive exponent satisfying (S4))
+
+----------------------------------------------------------------------------------------
+Part 2 (Q-C1): loop-length scaling u_0^(W) = <W>^{1/L} for any L
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Q-C1) u_0^(W) at L=3 equals <W>^{1/3}  (u_0^(W)|_{L=3} = W_avg**(1/3))
+  [PASS (A)] (Q-C1) u_0^(W) at L=4 equals <P>^{1/4} (reproduces (Q1))  (u_0^(W)|_{L=4} = W_avg**(1/4))
+
+----------------------------------------------------------------------------------------
+Part 3 (Q-C2), (Q-C3): counterfactual loop-length values 3, 5, 6
+----------------------------------------------------------------------------------------
+  [PASS (A)] (counterfactual L=3, triangular plaquette) exponent = 1/3 != 1/4  (1/L = 1/3 = 1/3; confirms 1/4 specific to cubic)
+  [PASS (A)] (counterfactual L=5, pentagonal hypothetical) exponent = 1/5 != 1/4  (1/L = 1/5 = 1/5; confirms 1/4 specific to cubic)
+  [PASS (A)] (counterfactual L=6, hexagonal plaquette) exponent = 1/6 != 1/4  (1/L = 1/6 = 1/6; confirms 1/4 specific to cubic)
+  [PASS (A)] (Q-C2) Triangular lattice: u_0 = <P_△>^{1/3} from same principle  (L=3 specialization)
+  [PASS (A)] (Q-C3) Hexagonal lattice: u_0 = <P_⬡>^{1/6} from same principle  (L=6 specialization)
+
+----------------------------------------------------------------------------------------
+Part 4 (Q-C4): free-action sanity boundary U_p = I implies u_0 = 1
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Q-C4) Free action U_p = I gives <P> = (1/N) * N = 1 (illustrative N=2)  (<P>_free = 1)
+  [PASS (A)] (Q-C4) u_0 = 1^{1/4} = 1 at free-action boundary (matches (T4) of vertex-power note)  (u_0_free = 1)
+
+----------------------------------------------------------------------------------------
+Part 5 (Q-C5): forward chain into vertex-power identity (T6)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Q-C5) Composing (Q1) into alpha_s(v) = alpha_bare/u_0^2 gives alpha_bare/<P>^{1/2}  (composed = alpha_bare/sqrt(P_avg), T6 = alpha_bare/sqrt(P_avg))
+
+----------------------------------------------------------------------------------------
+Part 6 (Q-C6): inverse algebra — dressed plaquette identity
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Q-C6) <P_dressed> = <P>/u_0^4 = 1 under (Q1) (inverse algebra)  (<P_dressed>|_{u_0=<P>^{1/4}} = 1)
+
+----------------------------------------------------------------------------------------
+Part 7 (Q-C7): monotone calibration of P -> P^{1/4}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Q-C7) d/d<P> (<P>^{1/4}) = (1/4) <P>^{-3/4} > 0 (monotone increasing)  (derivative = 1/(4*P_avg**(3/4)))
+  [PASS (A)] (Q-C7) Concrete: <P> = 1/2 (abstract test value) gives 0 < u_0 < 1  (u_0(<P>=1/2) = 0.840896)
+  [PASS (A)] (Q-C7) Concrete: <P> = 2 (abstract test value) gives u_0 > 1  (u_0(<P>=2) = 1.189207)
+
+----------------------------------------------------------------------------------------
+Part 8: roundtrip dressed-identity <-> closed-form (Q1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Roundtrip 1) Solving <P>/u_0^4 = 1 yields u_0 = <P>^{1/4} (unique positive root)  (solutions = [P_avg**(1/4)])
+  [PASS (A)] (Roundtrip 2) From u_0 = <P>^{1/4}, derive <P>/u_0^4 = 1  (<P>/u_0^4 = 1)
+
+----------------------------------------------------------------------------------------
+Part 9: numerical parametric scan over wide <P> range
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Numeric scan) All 10 test points satisfy u_0 = <P>^{1/4} <-> u_0^4 = <P>  (passed 10/10 (test values are abstract positives, not load-bearing))
+  [PASS (A)] (Numeric counterfactual L=3) u_0 = <P>^{1/3} satisfies u_0^3 = <P>  (u_0_L = 0.840329; exponent 0.333333 != 1/4 = 0.25)
+  [PASS (A)] (Numeric counterfactual L=5) u_0 = <P>^{1/5} satisfies u_0^5 = <P>  (u_0_L = 0.900885; exponent 0.200000 != 1/4 = 0.25)
+  [PASS (A)] (Numeric counterfactual L=6) u_0 = <P>^{1/6} satisfies u_0^6 = <P>  (u_0_L = 0.916694; exponent 0.166667 != 1/4 = 0.25)
+
+----------------------------------------------------------------------------------------
+Part 10: forbidden-imports check
+----------------------------------------------------------------------------------------
+  [PASS (A)] Runner does not consume any PDG observed value  (all checks symbolic / algebraic over abstract positive reals)
+  [PASS (A)] Runner does not consume any lattice Monte Carlo plaquette value  (0.5934 in scan is abstract test value, not load-bearing import)
+  [PASS (A)] Runner does not consume any fitted u_0  (u_0 enters as a symbolic abstract positive throughout)
+  [PASS (A)] Runner does not consume any specific gauge group (works for any N >= 1)  (N enters only as a normalization factor in (P2), not as a numerical value)
+  [PASS (A)] Runner does not consume the n_link = 2 vertex-power exponent  (1/4 and n_link = 2 are algebraically distinct quantities; no dependency on Block 08 / YT_VERTEX_POWER_DERIVATION)
+  [PASS (A)] Runner does not consume the tadpole coupling-rescaling map M (Block 10)  ((Q1) is on plaquette-space, M is on coupling-space; algebraically distinct)
+  [PASS (A)] Runner does not consume the SU(2) bivector trace-dimension N_SU(2) = 2  (N enters as abstract normalization in (P2); SU(2) specialization is a separate sister-note row)
+  [PASS (A)] framework-baseline geometry only: cubic-lattice geometry (P1) and named external admission (P2)  (no other inputs load-bearing)
+
+----------------------------------------------------------------------------------------
+Narrow theorem summary
+----------------------------------------------------------------------------------------
+
+  Narrow Pattern A theorem statement:
+
+  HYPOTHESIS:
+    (P1) elementary plaquette U_p = U_1 U_2 U_3 U_4 (four-link cubic loop).
+    (P2) tree-level mean-field unit-normalization principle:
+         u_0 is the unique positive real such that under U_mu -> U_mu/u_0
+         the dressed plaquette expectation equals 1.
+         (Named external admission, Lepage-Mackenzie 1993.)
+
+  CONCLUSION:
+    (Q1) u_0 = <P>^{1/4}, with <P> := ⟨(1/N) Re Tr U_p⟩.
+    The exponent 1/4 is FORCED by L = 4 of (P1) plus (P2); no algebraic slack.
+
+  CORROLLARIES:
+    (Q-C1) Loop-length scaling u_0^(W) = <W>^{1/L} for any closed loop length L.
+    (Q-C2) Triangular: u_0 = <P_△>^{1/3} (L=3 specialization).
+    (Q-C3) Hexagonal:  u_0 = <P_⬡>^{1/6} (L=6 specialization).
+    (Q-C4) Free-action boundary: U_p = I implies <P> = 1 implies u_0 = 1.
+    (Q-C5) Forward chain into (T6) of vertex-power note:
+           alpha_s(v) = alpha_bare/u_0^2 = alpha_bare/<P>^{1/2}.
+    (Q-C6) Inverse algebra: <P>/u_0^4 = 1 under (Q1).
+    (Q-C7) Monotone: d/d<P> (<P>^{1/4}) = (1/4)<P>^{-3/4} > 0.
+
+  Audit-lane class:
+    (A) — pure elementary algebra over R^+. The exponent 1/4 is the unique
+    rational forced by combining the cubic-lattice loop length L = 4 with
+    the unit-mean principle (P2). No Wilson-action numerics, no lattice
+    plaquette value <P>, no fitted u_0, no PDG, no specific gauge group
+    is consumed.
+
+  This narrow theorem closes the EXPONENT-FIXING step in the
+  u_0 = <P>^{1/4} Lepage-Mackenzie tadpole-improvement definition, which
+  was previously carried as the defining convention. It is independent
+  of and complementary to Block 08 (n_link = 2 vertex-power exponent)
+  and Block 10 (tadpole coupling-rescaling map M), and complementary to
+  the SU(2)-bivector trace-dimension closure
+  U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.
+
+  Open admissions remaining:
+    - The principle (P2) itself (named external admission).
+    - The numerical evaluation of <P> (separate bounded chain).
+
+
+========================================================================================
+FINAL SCORECARD
+========================================================================================
+
+  Block:                u0-plaquette-quartic-derivation-block11
+  Date:                 2026-05-17
+  Audit-lane class:     A (Pattern A narrow algebraic)
+  Theorem type:         bounded_theorem (positive closure)
+
+  Total checks:         36
+  Passed:               36
+  Failed:               0
+
+  STATUS:               ALL CHECKS PASS
+  Honest closure:       1/4 exponent in u_0 = <P>^{1/4}
+                        DERIVED from L=4 (cubic plaquette) + (P2).
+  External admission:   (P2) tree-level mean-field unit-norm principle.
+  Open downstream:      numerical <P> evaluation (separate chain).
+========================================================================================
+
+----- stderr -----
+

@@ -1,0 +1,105 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_bae_probe_cl3_bivector_block01_2026_05_17.py
+runner_sha256: 4cf7941d92a959015b99f6a2dbecf7ddcf4c98d7ee5a1d98e8c32d071c914d61
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17
+Goal: sympy-symbolic verification that the Cl(3) bivector route does
+NOT force F1 over F3 on the F1-vs-F3 selection question.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Retained inputs — sanity checks on Cl(3) Pauli realization
+----------------------------------------------------------------------------------------
+  [PASS] sigma_1^2 = I_2 (Pauli square identity)
+  [PASS] sigma_2^2 = I_2
+  [PASS] sigma_3^2 = I_2
+  [PASS] {sigma_1, sigma_2} = 0 (anticommutation off-diagonal)
+  [PASS] {sigma_1, sigma_3} = 0 (anticommutation off-diagonal)
+  [PASS] {sigma_2, sigma_1} = 0 (anticommutation off-diagonal)
+  [PASS] {sigma_2, sigma_3} = 0 (anticommutation off-diagonal)
+  [PASS] {sigma_3, sigma_1} = 0 (anticommutation off-diagonal)
+  [PASS] {sigma_3, sigma_2} = 0 (anticommutation off-diagonal)
+  [PASS] omega = sigma_1 sigma_2 sigma_3 = i I_2 (retained: cl3_pauli T(P1)/U2)  (omega = [[I, 0], [0, I]])
+  [PASS] omega^2 = -I_2 (retained: cl3_pauli U2 (P1))
+
+----------------------------------------------------------------------------------------
+Part 1: Cl(3) bivector subspace Lambda^2 V_3
+----------------------------------------------------------------------------------------
+  [PASS] e_1 e_2 = +i sigma_3 (Hodge dual of e_3 in Pauli realization)
+  [PASS] e_2 e_3 = +i sigma_1
+  [PASS] e_3 e_1 = +i sigma_2
+  [PASS] dim_R Lambda^2 V_3 = 3 (three independent bivectors)  (span_R{e_1 e_2, e_2 e_3, e_3 e_1} ~= i * (traceless 2x2 anti-Hermitian))
+  [PASS] {e_1 e_2, e_2 e_3} = 0 (bivectors anticommute pairwise)
+  [PASS] {e_1 e_2, e_3 e_1} = 0
+  [PASS] {e_2 e_3, e_3 e_1} = 0
+
+----------------------------------------------------------------------------------------
+Part 2: C_3-doublet basis (B_1, B_2) on Herm_circ(3)
+----------------------------------------------------------------------------------------
+  [PASS] C^3 = I (cyclic identity on M_3(C), retained: koide_circulant_character_bridge)
+  [PASS] B_1 = C + C^2 is Hermitian on M_3(C)
+  [PASS] B_2 = i(C - C^2) is Hermitian on M_3(C)
+
+----------------------------------------------------------------------------------------
+Part 3: ALGEBRAIC MISMATCH — (B_1, B_2) is NOT a Cl(3) 2-blade
+----------------------------------------------------------------------------------------
+  [PASS] [B_1, B_2] = 0 (B_1 and B_2 COMMUTE on Herm_circ(3))  (commuting pair — structurally incompatible with Cl(3) bivector pair)
+  [PASS] Cl(3) bivector pair (e_1 e_2, e_2 e_3) anticommutes, NOT commutes  (anticommutator zero, commutator nonzero (Lie bracket structure of so(3)))
+  [PASS] B_1^2 = 2 I_3 + B_1 (commutative quadratic identity)
+  [PASS] B_2^2 = 2 I_3 - B_1 (commutative quadratic identity)
+  [PASS] B_1 B_2 = -B_2 (commutative product identity)
+  [PASS] Structural conclusion: (B_1, B_2) is NOT a Cl(3) 2-blade  (commuting (B_1, B_2) cannot map to anticommuting Cl(3) bivector pair)
+
+----------------------------------------------------------------------------------------
+Part 4: Z_3 representation match on V_3 vs Herm_circ(3) doublet
+----------------------------------------------------------------------------------------
+  [PASS] Z_3 cyclic-action on Lambda^2 V_3: eigenvalues are {1, omega, omegabar} (cube roots of unity)  (eigenvals = [1, -1/2 - sqrt(3)*I/2, -1/2 + sqrt(3)*I/2])
+  [PASS] Z_3-invariant bivector (e_1 e_2 + e_2 e_3 + e_3 e_1) = i(sigma_1+sigma_2+sigma_3)
+  [PASS] Doublet sub-rep of Lambda^2 V_3 is 2-dim (orthogonal complement of Z_3-invariant)  (dim_R = 3 - 1 = 2, parametrized by two real coordinates)
+  [PASS] Z_3-equivariant linear injection R^2 -> Lambda^2 V_3 EXISTS (rep theory only)  ((B_1, B_2) and the bivector doublet are both Z_3 doublets => isomorphic as Z_3 reps)
+
+----------------------------------------------------------------------------------------
+Part 5: MEASURE analysis — bivector route returns F3, NOT F1
+----------------------------------------------------------------------------------------
+  [PASS] Doublet sub-plane in Lambda^2 V_3 has real dim 2 (matches doublet of Herm_circ(3))
+  [PASS] F1 extremum at E_+ = E_perp = E_tot/2 (=> kappa = 2 = BAE)  (multiplicity-weighted (1,1))
+  [PASS] F3 extremum at E_+ = E_tot/3, E_perp = 2 E_tot/3 (=> kappa = 1, NOT BAE)  (rank-weighted (1,2))
+  [PASS] Bivector route gives F3 weighting naturally (2-dim doublet, 2 log factors)  (Lebesgue on 2-plane = d(Re b) d(Im b) ~ 2 log|b| = F3-like)
+
+----------------------------------------------------------------------------------------
+Part 6: Counterfactual — 'flat bivector grade' projection probe
+----------------------------------------------------------------------------------------
+  [PASS] SO(3)-radial on full Lambda^2 V_3 sees 3 dof, NOT 2 (would double-count trivial)  (full 3-dim bivector subspace includes the Z_3-invariant mode already in E_+)
+  [PASS] Restriction to 2-dim doublet sub-plane requires U(1)_b convention pin  (returns to Probe 13/16 residue — no new closure mechanism)
+
+----------------------------------------------------------------------------------------
+Part 7: Verdict synthesis — AV8 outcome
+----------------------------------------------------------------------------------------
+  [PASS] AV8 outcome: bivector route returns F3 (or U(1)_b residue), does NOT close F1
+  [PASS] F1-vs-F3 ambiguity unchanged: same residue as Probes 12, 13, 16, 18
+  [PASS] No new admission proposed. BAE admission count UNCHANGED.
+
+----------------------------------------------------------------------------------------
+Part 8: Review hygiene
+----------------------------------------------------------------------------------------
+  [PASS] Note exists and is non-empty  (KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md: 36829 bytes)
+  [PASS] Note declares status authority as audit lane only
+  [PASS] Note declares claim_type bounded_theorem
+  [PASS] Note does NOT claim positive closure of F1
+  [PASS] Note does NOT add a new admission
+  [PASS] Note cites retained Cl(3) Pauli irrep authority
+  [PASS] Note cites retained koide_kappa Frobenius algebraic narrow
+  [PASS] Note cites Probe 18 (campaign-context AV5 closure)
+
+========================================================================================
+=== TOTAL: PASS=48, FAIL=0 ===
+========================================================================================
+
+----- stderr -----
+

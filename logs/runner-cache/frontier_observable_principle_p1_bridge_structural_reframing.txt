@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_structural_reframing.py
+runner_sha256: be706d26da79108d42bbc630174cff7df3462e9a605604ac154023d8295daa71
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.19
+status: ok
+----- stdout -----
+
+==============================================================================
+T1: Block-diagonal det factorization on 4x4 real anti-Hermitian SymPy block (Class A)
+==============================================================================
+  [PASS] det(D_A (+) D_B + J_A (+) J_B) = det(D_A + J_A) * det(D_B + J_B) exactly
+         Block-diag det factorization exact
+
+==============================================================================
+T2: 3-line derivation P1 from admission (II.b) W = log|det(D+J)| on symbolic block-diagonal Dirac operator (Class A)
+==============================================================================
+  [PASS] W[J_A (+) J_B] = W[J_A] + W[J_B] under (II.b) on block-diag D
+         3-line P1 derivation under cumulant-generating-functional admission verified
+
+==============================================================================
+T3: Cross-block 2nd source-derivative of log|det(D+J)| is zero on block-diag D (locality of log generator)
+==============================================================================
+  [PASS] all cross-block 2nd derivatives of log(det(D+J)) vanish on block-diag D
+         All four (A,B)-cross 2nd derivatives = 0 exactly
+
+==============================================================================
+T4: Bell/Mobius moment-cumulant inversion at n = 1, 2, 3, 4 at exact Fraction precision (combinatorial content II.a)
+==============================================================================
+  [PASS] Bell/Mobius moment-cumulant inversion is round-trip exact
+         Bell/Mobius round-trip exact at n=1,2,3,4 for 3 rational cumulant sets
+  [PASS] n=2 spot-check: M_1=kappa_1; M_2 = kappa_2 + kappa_1^2
+         M1=3/7 (expected 3/7); M2=344/539 (expected 344/539)
+  [PASS] n=3 spot-check: M_3 = kappa_3 + 3 kappa_1 kappa_2 + kappa_1^3
+         M3=40072/49049 (expected 40072/49049)
+
+==============================================================================
+T5: K = log Z is uniquely fixed by exp(K) = M as a formal-series identity, up to multiplicative-scale normalization
+==============================================================================
+  [PASS] exp(2K) != exp(K) generically (uniqueness up to scale-via-cumulant-rescaling)
+         Doubling K rescales the moment series; K = log Z is uniquely fixed by exp(K) = M.
+  [PASS] exp(log Z) = Z exactly to series order 4 (log Z is the unique cumulant generator)
+         Formal-series identity exp(log Z) = Z verified
+
+==============================================================================
+T6: F_p = Z^p for p != 0,1 does NOT satisfy the cumulant-generating identity exp(K) = M with K = F_p; positive demonstration that log specifically is the Bell/Mobius cumulant generator
+==============================================================================
+  [PASS] F_p (p in {2, 1/2, -1}) violates exp(K) = M; log Z is unique
+         F_p does NOT satisfy exp(K) = M for p in {2, 1/2, -1}; log Z is uniquely the cumulant generator at the formal-series level
+
+==============================================================================
+T7: P1 -> (II.b) via Cauchy classifier: continuous additive f(r_A * r_B) = f(r_A) + f(r_B) with f(1) = 0 forces f = c log r on rational sample grid
+==============================================================================
+  [PASS] f(r) = log r satisfies f(r_A r_B) = f(r_A) + f(r_B) on rational grid
+         max additivity error = 4.44e-16
+  [PASS] F_p (p = 1/2) is NOT additive on the same rational grid
+         max non-additivity = 1.71e+00 (confirms log is the additive representative)
+
+==============================================================================
+T8: live ledger presence checks for context rows
+==============================================================================
+  [PASS] target/context rows are present without status-gating the claim
+         Target/context rows are present; no dependency status is consumed
+
+==============================================================================
+T9: note string contains honest-scope admission strings
+==============================================================================
+  [PASS] required honest-scope strings present in note
+         All required strings present
+  [PASS] forbidden status-promotion strings absent from note
+         No forbidden strings found
+
+==============================================================================
+T10: source-note boundary declarations present
+==============================================================================
+  [PASS] source-note boundary declarations present
+         All boundary declarations present
+
+==============================================================================
+PASS=15 FAIL=0
+==============================================================================
+
+----- stderr -----
+

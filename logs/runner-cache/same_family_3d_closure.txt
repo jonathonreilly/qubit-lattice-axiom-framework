@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/same_family_3d_closure.py
+runner_sha256: 6267ce79c15765bcb436b4abf180a022a6b9bfb2047ac5aa35d24e8a5d46b6c7
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 149.30
+status: ok
+----- stdout -----
+==============================================================================
+SAME-FAMILY 3D CLOSURE: VALLEY-LINEAR
+  Action: S = L(1-f)
+  Kernel: 1/L^2 with h^2 measure
+  Core family: h=0.25, W=10, L=12, max_d=12
+  Nodes: 321,489, layers: 49
+  Honest status:
+    - properties 1-7 are live recomputed at h=0.25, W=10, L=12
+    - properties 8-9 are live recomputed at h=0.25, W=10, L=8,10,12
+    - property 10 recomputes W=10 and cites retained W=12 companion
+==============================================================================
+
+  Free propagation: 4.7s
+
+  1. Born |I3|/P = 4.20e-15  [PASS]  (31s)
+  2. d_TV = 0.8341  [PASS]  (9s)
+  3. k=0 = 0.000000  [PASS]
+  4. F~M alpha = 1.00  [PASS]  (28s)
+  5. Gravity z=3 = +0.000224 (TOWARD)  [PASS]
+  6. Decoherence = 49.9%  [PASS]
+  7. MI = 0.6376 bits  [PASS]
+
+  8-9. Same-h multi-L rows (h=0.25, W=10):
+       L=8: grav=+0.000157(T), 1-pur=0.4997  [12s]
+       L=10: grav=+0.000199(T), 1-pur=0.4994  [16s]
+       L=12: grav=+0.000224(T), 1-pur=0.4994  [core row]
+  8. Purity stable: mean=50.0%, spread=0.0003  [PASS]
+  9. Gravity grows: YES  [PASS]
+
+  10. Distance law at the core W=10 slice:
+      z=2: +0.000183 (T)
+      z=3: +0.000224 (T)
+      z=4: +0.000234 (T)
+      z=5: +0.000209 (T)
+      z=6: +0.000172 (T)
+      z=7: +0.000148 (T)
+      z=8: +0.000130 (T)
+      z=9: +0.000111 (T)
+      TOWARD: 8/8
+      Tail: b^(-0.93), R²=0.983
+      (37s)
+  CHECK Born value: PASS
+  CHECK d_TV value: PASS
+  CHECK k=0: PASS
+  CHECK F~M alpha value: PASS
+  CHECK gravity value: PASS
+  CHECK decoherence value: PASS
+  CHECK MI value: PASS
+  CHECK multi-L purity values: PASS
+  CHECK multi-L gravity values: PASS
+  CHECK distance sign: PASS
+  CHECK distance tail value: PASS
+
+  W=12 companion dependency:
+    retained note: docs/VALLEY_LINEAR_WIDE_TAIL_NOTE.md
+    retained runner: scripts/valley_linear_wide_tail_replay.py
+    companion tail: b^(-1.07) from z>=4; b^(-1.17) from z>=5
+
+==============================================================================
+SUMMARY
+  Core card: h=0.25, W=10, L=12
+  Core rows 1-7: live recomputed
+  Rows 8-9: live same-h multi-L recomputation
+  Row 10: live W=10 tail + retained W=12 width companion
+  PASS=11 FAIL=0
+  Total time:  149s
+==============================================================================
+
+----- stderr -----
+

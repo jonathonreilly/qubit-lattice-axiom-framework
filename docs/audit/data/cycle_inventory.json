@@ -1,0 +1,10 @@
+{
+  "cycle_count": 0,
+  "cycles": [],
+  "length_counts": {},
+  "sort": [
+    "max_transitive_descendants descending",
+    "length ascending",
+    "claim_id list ascending"
+  ]
+}

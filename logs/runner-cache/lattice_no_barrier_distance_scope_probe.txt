@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/lattice_no_barrier_distance_scope_probe.py
+runner_sha256: dc69261c578d309dd1ca13f5cad356258d54108529f9f79bff1d066d68817bf6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+==============================================================================
+LATTICE DISTANCE-LAW SCOPE PROBE
+  framework-derivable strength-scaling + N-dependence of tail exponent
+==============================================================================
+
+Part 1: STRENGTH-SCALING at fixed b=13, N=40, half_width=20
+  predicted: |delta| proportional to sqrt(strength)
+  (from Delta_act ~= -L * sqrt(2 * lf) non-analytic at lf=0)
+
+    strength     |delta|   |delta|/sqrt(s)
+  ------------------------------------------
+       0.010      0.4538            4.5381
+       0.020      0.6731            4.7597
+       0.050      1.1304            5.0555
+       0.100      1.6612            5.2533
+       0.200      2.4174            5.4054
+       0.500      3.8883            5.4989
+
+  fitted: |delta| ~= 5.8137 * strength^(0.551)
+  R^2 = 0.9997
+  prediction: exponent = 0.500 (sqrt-scaling)
+  match: |observed - 0.5| = 0.051
+  [PASS] [THEOREM] Strength-scaling exponent matches sqrt(strength) within bounded runner tolerance
+         observed=0.551, target=0.500, R^2=0.9997, tolerance=0.075
+
+Part 2: N-DEPENDENCE OF TAIL EXPONENT at fixed strength=0.1
+  source-note harness is N=40; check exponent on N in {30, 40, 60, 80}
+  predicted: exponent is NOT universal across N (rules out asymptotic theorem)
+
+     N   half_w   tail (b>=7) coeff     alpha     R^2
+  --------------------------------------------------------
+    30       20             24.7265    -1.260  0.9905
+    40       20             23.5071    -1.052  0.9850
+  [PASS] [SUPPORT] N=40 row reproduces the source note far-field fit
+         coeff=23.5071, alpha=-1.052, R^2=0.9850
+    60       25             21.9358    -0.793  0.9785
+    80       31             21.3532    -0.637  0.9754
+
+  exponent range across N: [-1.260, -0.637]
+  range width: 0.622
+  verdict: NOT universal across N (range exceeds 0.1)
+  bounded scope confirmed: source note's alpha = -1.05 is N=40 specific
+  [PASS] [THEOREM] b-tail exponent is N-dependent across the probed ordered-lattice sizes
+         alpha range=[-1.260, -0.637], width=0.622
+
+THEOREM PASS=2 SUPPORT=1 FAIL=0
+
+----- stderr -----
+

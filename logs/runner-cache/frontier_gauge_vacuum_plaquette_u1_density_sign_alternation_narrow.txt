@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_u1_density_sign_alternation_narrow.py
+runner_sha256: 10c10287f109a6e0a0f3196dd44abe2244e9dfa8f1c7f8acf3a5c2787c1fc3f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.57
+status: ok
+----- stdout -----
+==============================================================================
+GAUGE-VACUUM PLAQUETTE U(1) DENSITY + SIGN-ALTERNATION (NARROW)
+==============================================================================
+
+Order verified symbolically: t^0 .. t^40  (k = 1..20)
+
+First eight nonzero coefficients of K_1(t) = log I_0(t):
+  c_ 2 = 1/4
+  c_ 4 = -1/64
+  c_ 6 = 1/576
+  c_ 8 = -11/49152
+  c_10 = 19/614400
+  c_12 = -473/106168320
+  c_14 = 229/346816512
+  c_16 = -101369/1014686023680
+
+  [PASS] [THEOREM] (D1) every odd-order Taylor coefficient of K_1 vanishes for n = 1..39
+         checked 20 odd indices, all zero
+  [PASS] [THEOREM] (D2) every even-order Taylor coefficient of K_1 is strictly nonzero for k = 1..20
+         checked 20 even indices c_2..c_40, all nonzero
+  [PASS] [THEOREM] (D3) sign(c_{2k}) = (-1)^(k+1) for k = 1..20
+         mismatches: none
+  [PASS] [THEOREM] Riccati recurrence (rec*) reproduces sympy Taylor of r(t) = I_1(t)/I_0(t) for n = 0..19
+         a_0=1/2, a_1=-1/16, a_2=1/96, a_3=-11/6144, a_4=19/61440
+  [PASS] [THEOREM] a_n is nonzero and sign(a_n) = (-1)^n for n = 0..19 (induction conclusion)
+         verifies the load-bearing sign induction on the recurrence
+  [PASS] [THEOREM] c_{2k} = a_{k-1}/(2k) identity holds for k = 1..20
+         ties the recurrence sign pattern to the (D3) conclusion
+  [PASS] [THEOREM] alternative series log(1+g(t^2)) = sum_{m>=1} (-1)^(m+1) g^m / m matches c_{2k} for k = 1..10
+         independent computational route to the same exact rationals
+  [PASS] [SUPPORT] numerical sign-alternation persists at k = 25, 30, 40, 50
+         signs at k = [25, 30, 40, 50] are [1, -1, -1, -1]
+  [PASS] [SUPPORT] |c_{2k}| is strictly decreasing for k = 1..19 (qualitative decay)
+         confirms the alternation is paired with monotone-decreasing magnitudes (no resurgent gaps)
+  [PASS] [SUPPORT] consecutive even-order coefficients (c_{2k}, c_{2(k+1)}) have opposite signs for k = 1..19
+         strict adjacency-alternation property (rules out monotone-tail sparse truncation)
+  [PASS] [SUPPORT] c_2 = 1/4 and c_4 = -1/64 (closed-form sanity)
+         c_2 = 1/4, c_4 = -1/64
+  [PASS] [SUPPORT] a_0 = 1/2 (base of induction; from initial condition r'(0) = 1/2)
+         this is the base case of the sign induction proving (D2)-(D3)
+
+==============================================================================
+SUMMARY: THEOREM PASS=7 SUPPORT=5 FAIL=0
+==============================================================================
+
+----- stderr -----
+

@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py
+runner_sha256: efdf766f1ed91a79992f58fde89675f8893d3a2441ae816564bd321a0a544a03
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+PASS (B1): T_x, T_y, T_z are mutually distinct commuting involutions.
+PASS (B2): joint sign-projectors are 8 * diagonal rank-1 projectors P_{X_i}.
+PASS (B3): P_i identified with diagonal P_{X_i} (direct consequence of B2).
+PASS (B4): sigma^3 = I_3, sigma != I, sigma^2 != I (order-3 cyclic permutation).
+PASS (B5): all 9 matrix units E_{j,i} generated from {sigma, T_x, T_y, T_z} (Burnside).
+PASS (B6): <sigma, P_{X_i}>_alg = M_3(C) (P_i polynomial in T_a by B2; B5 generates).
+PASS (B7/B8): exhaustive check on 63 non-zero v ∈ {0,1,ω,ω²}^3 — no 1-dim invariant subspace.
+PASS (B8): no proper subspace V ⊂ C^3 is invariant under both {P_{X_i}} and sigma.
+
+TOTAL: PASS=8 FAIL=0
+VERDICT: bounded bridge passes; no-proper-quotient on C^3 follows from retained distinct-translation-characters narrow + retained M_3(C) Burnside narrow by abstract linear algebra.
+
+----- stderr -----
+

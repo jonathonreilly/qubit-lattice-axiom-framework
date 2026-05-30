@@ -1,0 +1,124 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py
+runner_sha256: 1d84a1894bd7f2647da6d001a8a7b2bec8cd156c9558ce8730ec68c3969fa62e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic + exact-numeric) for
+STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17
+Goal: derive H2 of staggered_fermion_card_2026-04-11:
+      rho >= 0  ==>  Phi := G * (L + mu^2 I)^{-1} rho >= 0  (entrywise)
+Proof shape: M = L + mu^2 I is a non-singular symmetric M-matrix
+             (Stieltjes); M^{-1} >= 0 entrywise; multiply by G*rho.
+Imported premises (NOT derived here):
+  H1: screened-Poisson bridge (L + mu^2 I) Phi = G * rho
+  H3: G > 0   (operating point)
+  H4: mu^2 > 0 (operating point)
+Inputs consumed:
+  (R1) graph Laplacian PSD
+  (R2) diagonal add: PSD + t I (t>0) = SPD
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: Symbolic Z-matrix / Stieltjes property of M = L + mu^2 I
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 1 -- L is symmetric (combinatorial Laplacian)
+  [PASS (A)] Part 1 -- M = L + mu^2 I is symmetric
+  [PASS (A)] Part 1 -- Z-matrix property: all off-diagonal entries <= 0  (off-diag in {-1, 0} for P4)
+  [PASS (A)] Part 1 -- diag entries = deg(i) + mu^2, strictly positive (mu^2 > 0)
+  [PASS (A)] Part 1 -- strict row diagonal dominance: M_ii - sum|M_ij| = mu^2 > 0 on every row  (diffs=[mu2, mu2, mu2, mu2])
+  [PASS (A)] Part 1 -- M satisfies Stieltjes criteria (Z-matrix + symmetric + diag-dominant + pos diag)  (Stieltjes => non-singular M-matrix => M^{-1} >= 0 entrywise)
+
+----------------------------------------------------------------------------------------
+Part 2: Exact symbolic inverse of M = L + mu^2 I (P3 path, mu^2 symbolic)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 2 -- M * M^{-1} = I exactly (sympy symbolic)
+    M^{-1} entries (sympy simplified):
+      M^-1[0,0] = (mu2**2 + 3*mu2 + 1)/(mu2*(mu2**2 + 4*mu2 + 3))
+      M^-1[0,1] = 1/(mu2*(mu2 + 3))
+      M^-1[0,2] = 1/(mu2*(mu2**2 + 4*mu2 + 3))
+      M^-1[1,0] = 1/(mu2*(mu2 + 3))
+      M^-1[1,1] = (mu2 + 1)/(mu2*(mu2 + 3))
+      M^-1[1,2] = 1/(mu2*(mu2 + 3))
+      M^-1[2,0] = 1/(mu2*(mu2**2 + 4*mu2 + 3))
+      M^-1[2,1] = 1/(mu2*(mu2 + 3))
+      M^-1[2,2] = (mu2**2 + 3*mu2 + 1)/(mu2*(mu2**2 + 4*mu2 + 3))
+  [PASS (A)] Part 2 -- every entry of M^{-1} stays > 0 for mu^2 in {0.01, 0.22, 1, 50}  (entrywise strict positivity on connected graph)
+
+----------------------------------------------------------------------------------------
+Part 3: Numerical positivity battery across card graph families
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 3 -- path n=10, mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=9.776e-01, min Phi=3.911e-01)
+  [PASS (A)] Part 3 -- path n=10, mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=4.195e-02, min Phi=1.678e-02)
+  [PASS (A)] Part 3 -- path n=10, mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=1.478e-04, min Phi=5.913e-05)
+  [PASS (A)] Part 3 -- cycle n=10, mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=1.632e+00, min Phi=6.526e-01)
+  [PASS (A)] Part 3 -- cycle n=10, mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=2.051e-01, min Phi=8.204e-02)
+  [PASS (A)] Part 3 -- cycle n=10, mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=7.273e-03, min Phi=2.909e-03)
+  [PASS (A)] Part 3 -- complete n=6, mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=3.306e+00, min Phi=1.322e+00)
+  [PASS (A)] Part 3 -- complete n=6, mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=7.308e-01, min Phi=2.923e-01)
+  [PASS (A)] Part 3 -- complete n=6, mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=1.429e-01, min Phi=5.714e-02)
+  [PASS (A)] Part 3 -- 3D cube n=3 (27), mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=7.186e-01, min Phi=2.874e-01)
+  [PASS (A)] Part 3 -- 3D cube n=3 (27), mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=1.477e-01, min Phi=5.908e-02)
+  [PASS (A)] Part 3 -- 3D cube n=3 (27), mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=2.143e-02, min Phi=8.571e-03)
+  [PASS (A)] Part 3 -- 3D cube n=4 (64), mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=2.941e-01, min Phi=1.176e-01)
+  [PASS (A)] Part 3 -- 3D cube n=4 (64), mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=5.471e-02, min Phi=2.188e-02)
+  [PASS (A)] Part 3 -- 3D cube n=4 (64), mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=5.328e-03, min Phi=2.131e-03)
+  [PASS (A)] Part 3 -- random_geo s10, mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=5.097e-01, min Phi=2.039e-01)
+  [PASS (A)] Part 3 -- random_geo s10, mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=8.806e-02, min Phi=3.522e-02)
+  [PASS (A)] Part 3 -- random_geo s10, mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=7.059e-03, min Phi=2.823e-03)
+  [PASS (A)] Part 3 -- random_geo s23, mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=5.041e-01, min Phi=2.016e-01)
+  [PASS (A)] Part 3 -- random_geo s23, mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=8.445e-02, min Phi=3.378e-02)
+  [PASS (A)] Part 3 -- random_geo s23, mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=6.284e-03, min Phi=2.514e-03)
+  [PASS (A)] Part 3 -- causal_dag 6x6, mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=3.830e-01, min Phi=1.532e-01)
+  [PASS (A)] Part 3 -- causal_dag 6x6, mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=3.043e-02, min Phi=1.217e-02)
+  [PASS (A)] Part 3 -- causal_dag 6x6, mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=2.895e-04, min Phi=1.158e-04)
+  [PASS (A)] Part 3 -- causal_dag 8x8, mu^2=0.05: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=5.000e-02, min M^-1=1.643e-01, min Phi=6.574e-02)
+  [PASS (A)] Part 3 -- causal_dag 8x8, mu^2=0.22: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=2.200e-01, min M^-1=7.026e-03, min Phi=2.810e-03)
+  [PASS (A)] Part 3 -- causal_dag 8x8, mu^2=1.0: L PSD, M SPD, M^-1 >= 0, Phi >= 0 on rho>=0  (eigM_min=1.000e+00, min M^-1=1.572e-05, min Phi=6.289e-06)
+  [PASS (A)] Part 3 -- ALL families: L symmetric PSD, M symmetric SPD
+  [PASS (A)] Part 3 -- ALL families: Z-matrix structure on L (and M)
+  [PASS (A)] Part 3 -- ALL families: M^{-1} entrywise >= 0 (Stieltjes inverse)
+  [PASS (A)] Part 3 -- ALL families: Phi = G * M^{-1} * rho >= 0 (rho >= 0)
+
+----------------------------------------------------------------------------------------
+Part 4: Boundary witness -- relaxing rho>=0 breaks Phi>=0
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 4 -- mixed-sign rho with NET negative on P20 produces at least one Phi_i < 0  (min Phi = -8.448e+01)
+  [PASS (A)] Part 4 -- strictly-negative rho on P20 produces Phi entrywise < 0  (max Phi = -2.273e+02)
+  [PASS (A)] Part 4 -- removing mu^2 leaves L singular (kernel = constants)  (min eig(L) = 3.217e-16)
+    (This certifies the H2 hypotheses are load-bearing AND tight:
+     drop rho>=0 -> Phi can flip sign;  drop mu^2>0 -> invertibility fails.)
+
+----------------------------------------------------------------------------------------
+Part 5: Independent route -- spectral expansion / Neumann series
+----------------------------------------------------------------------------------------
+    eigenvalues of M (numeric): 1.000000, 1.585786, 3.000000, 4.414214
+  [PASS (A)] Part 5 -- all eigenvalues of M are strictly positive (SPD)
+  [PASS (A)] Part 5 -- spectral expansion sum (1/lambda_i) v_i v_i^T = M^{-1}  (max abs diff = 5.551e-16)
+  [PASS (A)] Part 5 -- spectral M^{-1} is entrywise >= 0  (min entry = 4.762e-02)
+  [PASS (A)] Part 5 -- spectrum of (I + L/mu^2) lies in [1, 1 + lambda_max(L)/mu^2]  (min=1.000000, max=4.414214)
+
+----------------------------------------------------------------------------------------
+Part 6: Boundary guard -- what this theorem does NOT claim
+----------------------------------------------------------------------------------------
+    NOT-claim: Does NOT derive H1 (screened-Poisson bridge); H1 remains imported.
+    NOT-claim: Does NOT derive H3 (G > 0) or H4 (mu^2 > 0); both are card operating points.
+    NOT-claim: Does NOT touch H5 (static lattice), H6 (graph family enumeration),
+    NOT-claim:   H7 (eigensolve gate), or H9 (staggered-Dirac structure).
+    NOT-claim: Does NOT prove force-direction H8; H8 is the separate well/hill claim.
+    NOT-claim:   This note only certifies the unsigned chain rho >= 0 ==> Phi >= 0.
+    NOT-claim: Does NOT claim universality outside finite simple undirected graphs.
+    NOT-claim: Does NOT replace the staggered fermion card; it narrows the admitted
+    NOT-claim:   bundle from {H1,...,H9} to {H1,H3,H4,H5,H6,H7,H8,H9} for the
+    NOT-claim:   positivity sub-chain after independent audit ratifies this row.
+  [PASS (A)] Part 6 -- boundary guard printed (8 explicit NOT-claims)
+
+========================================================================================
+Audit-companion summary: 47 PASS, 0 FAIL
+========================================================================================
+
+----- stderr -----
+

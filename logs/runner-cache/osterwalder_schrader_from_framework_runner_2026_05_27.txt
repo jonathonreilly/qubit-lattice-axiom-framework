@@ -1,0 +1,141 @@
+===== runner cache v1 =====
+runner: scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py
+runner_sha256: d3cbdc9697d46cccba0c7a6d6e80fdbcdfc0e67e068b3044a8174502cf39f768
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27
+Goal: sympy verification of the composition
+      (C-RP) + (C-SC) + (C-Sc) -> framework-internal (P-OS)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: (OS1) Discrete spectral decomposition of positive Hermitian T
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS1) lambda_1 = 1/2 > 0 (positive Hermitian T from C-RP)
+  [PASS (A)] (OS1) lambda_2 = 3/5 > 0 (positive Hermitian T from C-RP)
+  [PASS (A)] (OS1) lambda_3 = 7/11 > 0 (positive Hermitian T from C-RP)
+  [PASS (A)] (OS1) lambda_4 = 13/17 > 0 (positive Hermitian T from C-RP)
+  [PASS (A)] (OS1) M_T = ||T||_op = max lambda_k = 13/17 > 0
+  [PASS (A)] (OS1) Projector P_1 = |1><1| is idempotent: P_k^2 = P_k
+  [PASS (A)] (OS1) Projector P_2 = |2><2| is idempotent: P_k^2 = P_k
+  [PASS (A)] (OS1) Projector P_3 = |3><3| is idempotent: P_k^2 = P_k
+  [PASS (A)] (OS1) Projector P_4 = |4><4| is idempotent: P_k^2 = P_k
+  [PASS (A)] (OS1) Projectors P_1 and P_2 orthogonal: P_k P_j = 0
+  [PASS (A)] (OS1) Projectors P_1 and P_3 orthogonal: P_k P_j = 0
+  [PASS (A)] (OS1) Projectors P_1 and P_4 orthogonal: P_k P_j = 0
+  [PASS (A)] (OS1) Projectors P_2 and P_3 orthogonal: P_k P_j = 0
+  [PASS (A)] (OS1) Projectors P_2 and P_4 orthogonal: P_k P_j = 0
+  [PASS (A)] (OS1) Projectors P_3 and P_4 orthogonal: P_k P_j = 0
+  [PASS (A)] (OS1) mu_1 = lambda_1/M_T = 17/26 lies in (0, 1]
+  [PASS (A)] (OS1) mu_2 = lambda_2/M_T = 51/65 lies in (0, 1]
+  [PASS (A)] (OS1) mu_3 = lambda_3/M_T = 119/143 lies in (0, 1]
+  [PASS (A)] (OS1) mu_4 = lambda_4/M_T = 1 lies in (0, 1]
+  [PASS (A)] (OS1) T_hat = Sum_k mu_k |k><k| (normalized spectral expansion holds exactly)
+
+----------------------------------------------------------------------------------------
+Part 2: (OS2) Discrete Euclidean semigroup T_hat^n = exp(-n a_tau H)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS2) E_1 = -(1/a_tau) log(mu_1) >= 0 (H >= 0 from C-SC)  (mu_1 = 17/26)
+  [PASS (A)] (OS2) E_2 = -(1/a_tau) log(mu_2) >= 0 (H >= 0 from C-SC)  (mu_2 = 51/65)
+  [PASS (A)] (OS2) E_3 = -(1/a_tau) log(mu_3) >= 0 (H >= 0 from C-SC)  (mu_3 = 119/143)
+  [PASS (A)] (OS2) E_4 = -(1/a_tau) log(mu_4) >= 0 (H >= 0 from C-SC)  (mu_4 = 1)
+  [PASS (A)] (OS2) H |1> = E_1 |1> (functional calculus from C-SC)
+  [PASS (A)] (OS2) H |2> = E_2 |2> (functional calculus from C-SC)
+  [PASS (A)] (OS2) H |3> = E_3 |3> (functional calculus from C-SC)
+  [PASS (A)] (OS2) H |4> = E_4 |4> (functional calculus from C-SC)
+  [PASS (A)] (OS2) mu_1^n = exp(-n a_tau E_1) (normalized Euclidean semigroup on eigenmode 1)  (mu^n = (17/26)**n, exp(-n a_tau E) = (17/26)**n)
+  [PASS (A)] (OS2) mu_2^n = exp(-n a_tau E_2) (normalized Euclidean semigroup on eigenmode 2)  (mu^n = (51/65)**n, exp(-n a_tau E) = (51/65)**n)
+  [PASS (A)] (OS2) mu_3^n = exp(-n a_tau E_3) (normalized Euclidean semigroup on eigenmode 3)  (mu^n = (119/143)**n, exp(-n a_tau E) = (119/143)**n)
+  [PASS (A)] (OS2) mu_4^n = exp(-n a_tau E_4) (normalized Euclidean semigroup on eigenmode 4)  (mu^n = 1, exp(-n a_tau E) = 1)
+
+----------------------------------------------------------------------------------------
+Part 3: (OS3) U(t) well-defined as bounded operator on H_phys
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS3) |U(t)_(1, 1)|^2 = |exp(-i t E_1)|^2 = 1 (bounded)  (product simplifies to 1)
+  [PASS (A)] (OS3) |U(t)_(2, 2)|^2 = |exp(-i t E_2)|^2 = 1 (bounded)  (product simplifies to 1)
+  [PASS (A)] (OS3) |U(t)_(3, 3)|^2 = |exp(-i t E_3)|^2 = 1 (bounded)  (product simplifies to 1)
+  [PASS (A)] (OS3) |U(t)_(4, 4)|^2 = |exp(-i t E_4)|^2 = 1 (bounded)  (product simplifies to 1)
+
+----------------------------------------------------------------------------------------
+Part 4: (OS4.a) Unitarity U(t)^dagger U(t) = I
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS4.a) U(t)^dagger U(t) = I (unitarity on finite-dim H_phys)
+  [PASS (A)] (OS4.a) U(t) U(t)^dagger = I (right inverse, finite-dim H_phys)
+
+----------------------------------------------------------------------------------------
+Part 5: (OS4.b) Group property U(s) U(t) = U(s+t)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS4.b) U(s) U(t) = U(s+t) on eigenmode 1
+  [PASS (A)] (OS4.b) U(s) U(t) = U(s+t) on eigenmode 2
+  [PASS (A)] (OS4.b) U(s) U(t) = U(s+t) on eigenmode 3
+  [PASS (A)] (OS4.b) U(s) U(t) = U(s+t) on eigenmode 4
+
+----------------------------------------------------------------------------------------
+Part 6: (OS4.c) Identity U(0) = I
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS4.c) U(0) = I (identity at zero parameter)
+
+----------------------------------------------------------------------------------------
+Part 7: (OS4.d) Strong continuity of t -> U(t)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS4.d) lim_{h->0} (U(t+h) - U(t))_{1,1} = 0 on eigenmode 1
+  [PASS (A)] (OS4.d) lim_{h->0} (U(t+h) - U(t))_{2,2} = 0 on eigenmode 2
+  [PASS (A)] (OS4.d) lim_{h->0} (U(t+h) - U(t))_{3,3} = 0 on eigenmode 3
+  [PASS (A)] (OS4.d) lim_{h->0} (U(t+h) - U(t))_{4,4} = 0 on eigenmode 4
+
+----------------------------------------------------------------------------------------
+Part 8: (OS4.e) Generator U(t) = exp(-itH) via spectral calculus
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS4.e) U(t)|1> = exp(-i t E_1) |1> (generator = H via spectral calculus)
+  [PASS (A)] (OS4.e) U(t)|2> = exp(-i t E_2) |2> (generator = H via spectral calculus)
+  [PASS (A)] (OS4.e) U(t)|3> = exp(-i t E_3) |3> (generator = H via spectral calculus)
+  [PASS (A)] (OS4.e) U(t)|4> = exp(-i t E_4) |4> (generator = H via spectral calculus)
+
+----------------------------------------------------------------------------------------
+Part 9: (OS5) Wick-rotation bridge T_hat^n <-> U(t)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (OS5) Euclidean side: exp(-(n a_tau) E_1) = mu_1^n on eigenmode 1
+  [PASS (A)] (OS5) Lorentzian side: exp(-(i t) E_1) = exp(-i t E_1) on eigenmode 1
+  [PASS (A)] (OS5) Bridge Euclidean: exp(-x E_1)|_{x = n a_tau} = T_hat^n eigenvalue on mode 1  (parameter rotation inside spectral functional calculus)
+  [PASS (A)] (OS5) Bridge Lorentzian: exp(-x E_1)|_{x = i t} = U(t) eigenvalue on mode 1  (parameter rotation inside spectral functional calculus)
+  [PASS (A)] (OS5) Euclidean side: exp(-(n a_tau) E_2) = mu_2^n on eigenmode 2
+  [PASS (A)] (OS5) Lorentzian side: exp(-(i t) E_2) = exp(-i t E_2) on eigenmode 2
+  [PASS (A)] (OS5) Bridge Euclidean: exp(-x E_2)|_{x = n a_tau} = T_hat^n eigenvalue on mode 2  (parameter rotation inside spectral functional calculus)
+  [PASS (A)] (OS5) Bridge Lorentzian: exp(-x E_2)|_{x = i t} = U(t) eigenvalue on mode 2  (parameter rotation inside spectral functional calculus)
+  [PASS (A)] (OS5) Euclidean side: exp(-(n a_tau) E_3) = mu_3^n on eigenmode 3
+  [PASS (A)] (OS5) Lorentzian side: exp(-(i t) E_3) = exp(-i t E_3) on eigenmode 3
+  [PASS (A)] (OS5) Bridge Euclidean: exp(-x E_3)|_{x = n a_tau} = T_hat^n eigenvalue on mode 3  (parameter rotation inside spectral functional calculus)
+  [PASS (A)] (OS5) Bridge Lorentzian: exp(-x E_3)|_{x = i t} = U(t) eigenvalue on mode 3  (parameter rotation inside spectral functional calculus)
+  [PASS (A)] (OS5) Euclidean side: exp(-(n a_tau) E_4) = mu_4^n on eigenmode 4
+  [PASS (A)] (OS5) Lorentzian side: exp(-(i t) E_4) = exp(-i t E_4) on eigenmode 4
+  [PASS (A)] (OS5) Bridge Euclidean: exp(-x E_4)|_{x = n a_tau} = T_hat^n eigenvalue on mode 4  (parameter rotation inside spectral functional calculus)
+  [PASS (A)] (OS5) Bridge Lorentzian: exp(-x E_4)|_{x = i t} = U(t) eigenvalue on mode 4  (parameter rotation inside spectral functional calculus)
+
+----------------------------------------------------------------------------------------
+Part 10: (Composition) Companion notes exist on the framework tree
+----------------------------------------------------------------------------------------
+  [PASS (A)] (Composition) (C-RP) companion exists: AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+  [PASS (A)] (Composition) (C-SC) companion exists: AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+  [PASS (A)] (Composition) (C-Sc) companion exists: AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md  (docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+  [PASS (A)] (Composition) (C-Sc) Step 1 contains the spectral-expansion Wick-rotation  (presence of phrase 'spectral expansion' and 'Wick-rotation' in (C-Sc))
+
+----------------------------------------------------------------------------------------
+Part 11: Note + claim metadata sanity
+----------------------------------------------------------------------------------------
+  [PASS (A)] Source note exists: docs/OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md
+  [PASS (A)] Note declares Type: bounded_theorem
+  [PASS (A)] Note declares Status authority: independent audit lane only
+  [PASS (A)] Note contains source-note proposal disclaimer
+  [PASS (A)] Note records the P2 sign-epsilon lane boundary
+
+========================================================================================
+PASS = 76    FAIL = 0
+========================================================================================
+
+----- stderr -----
+

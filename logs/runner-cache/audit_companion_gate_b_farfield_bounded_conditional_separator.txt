@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_gate_b_farfield_bounded_conditional_separator.py
+runner_sha256: f3dc767d2fcdda325019b449c34dcf980771d79988ad47b4b94d7291bcc57590
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+======================================================================
+Gate B far-field bounded-conditional separator — audit companion
+======================================================================
+(a) Cache header / status / sha256 recorded:
+  [OK] v1 header present
+  [OK] exit_code = 0
+  [OK] status = ok
+  [OK] runner path recorded as scripts/gate_b_farfield_harness.py
+  [OK] runner_sha256 recorded in cache
+(b) Runner SHA-256 cross-check:
+  [OK] runner_sha256 matches on-disk script (366ba73255b7...)
+(c) Cached stdout rows match Omega exactly:
+  [OK] row count = 4 (got 4)
+  [OK] row 1: drift=0.3,rest=0.5 -> 36/36 TOWARD (100%), F~M=1.00
+  [OK] row 2: drift=0.2,rest=0.7 -> 36/36 TOWARD (100%), F~M=1.00
+  [OK] row 3: drift=0.1,rest=0.9 -> 36/36 TOWARD (100%), F~M=1.00
+  [OK] row 4: exact grid -> 36/36 TOWARD (100%), F~M=1.00
+(d) Runner-source determinism markers:
+  [OK] random.Random(seed) used — gauss draws are seed-keyed
+  [OK] SEEDS = list(range(12)) matches DECLARED_SEEDS (len=12)
+  [OK] Z_MASSES = [3, 4, 5] declared
+  [OK] H = 0.5 declared
+  [OK] Lambda row (0.3, 0.5) declared in DRIFT_RESTORE_ROWS
+  [OK] Lambda row (0.2, 0.7) declared in DRIFT_RESTORE_ROWS
+  [OK] Lambda row (0.1, 0.9) declared in DRIFT_RESTORE_ROWS
+  [OK] Lambda row (0.0, 1.0) declared in DRIFT_RESTORE_ROWS
+(e) Narrow note review-hygiene:
+  [OK] Type: bounded_theorem declared
+  [OK] status-authority disclaimer present
+  [OK] claim scope is a GIVEN/THEN conditional (separator structure)
+  [OK] explicit reference to the physical-gravity reading (non-claim block)
+  [OK] explicit non-claim block present
+  [OK] source-only authority declared
+  [OK] explicit non-promotion language for the parent row
+  [OK] runner SHA-256 pin matches cache
+  [OK] explicit reference to audit ledger's missing_bridge_theorem notes
+(f) Parent note cross-reference:
+  [OK] narrow note references parent GATE_B_FARFIELD_NOTE.md
+
+PASS — bounded conditional (BC) is well-defined against the frozen
+cache and the separator structure is review-hygiene clean.
+
+Reminder: this audit-companion does NOT discharge the upstream
+primitive-to-observable bridge. That remains the open gap
+recorded by GATE_B_FARFIELD_NOTE.md and the audit ledger.
+
+----- stderr -----
+

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_order_one_circulant_diagnostic_2026_05_29.py
+runner_sha256: 9399b7212311856da95faa388115f4bd47618e2f30f458f3b9ae2bd71d47e05a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+
+========================================================================
+Symbolic C_3-circulant algebra
+========================================================================
+[PASS] M commutes with every C_3-circulant algebra element
+[PASS] [D, pi(A)] vanishes identically
+
+========================================================================
+Distinct-r witnesses
+========================================================================
+[PASS] r=0.05 satisfies order-one in this route  (max=0.00e+00)
+[PASS] r=0.2 satisfies order-one in this route  (max=0.00e+00)
+[PASS] r=0.5 satisfies order-one in this route  (max=0.00e+00)
+[PASS] r=1 satisfies order-one in this route  (max=0.00e+00)
+[PASS] r=2 satisfies order-one in this route  (max=1.11e-16)
+[PASS] r=5 satisfies order-one in this route  (max=0.00e+00)
+
+========================================================================
+Summary
+========================================================================
+PASS=8 FAIL=0
+C_3-circulant order-one is vacuous on this route, so it does not select r=1/2.
+
+----- stderr -----
+

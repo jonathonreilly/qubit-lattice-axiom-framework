@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/lattice_nn_high_precision_raw_certificate.py
+runner_sha256: 64f12abea5444b92565e12828a5bd0e35e9dad5a5e5290cb7893c865c7b0eea5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 30.05
+status: ok
+----- stdout -----
+===============================================================================================
+RAW-KERNEL HIGH-PRECISION CERTIFICATE AT h = 0.125
+  arbitrary-precision raw NN kernel (mpmath dps = 30)
+  physical: W=20.0, L=40.0, k=5.0, field_strength=0.0005, mass at y=8.0
+===============================================================================================
+
+--- 1. RAW-KERNEL h = 0.25 SANITY CHECK ---
+    (must reproduce the float64 raw row from scripts/lattice_nn_continuum.py)
+    nl = 161, nodes = 25921
+    gravity:  raw_mpmath = +0.077415    cached_float64 = +0.077415
+    MI:       raw_mpmath = 0.9470    cached_float64 = 0.9470
+    1-pur:    raw_mpmath = 0.4989    cached_float64 = 0.4989
+    d_TV:     raw_mpmath = 0.9878    cached_float64 = 0.9878
+    SANITY: PASS  (elapsed 5.7s)
+
+--- 2. RAW-KERNEL h = 0.125 CERTIFICATE (gate target) ---
+    (this is the row the float64 raw lane could not evaluate)
+    nl = 321, nodes = 103041
+    gravity:  raw_mpmath = +0.034466    cached_det_rescale = +0.034466
+    MI:       raw_mpmath = 0.9972    cached_det_rescale = 0.9972
+    1-pur:    raw_mpmath = 0.5000    cached_det_rescale = 0.5000
+    d_TV:     raw_mpmath = 0.9996    cached_det_rescale = 0.9996
+    Born:     raw_mpmath = 5.483e-31    cached_det_rescale = 7.860e-16
+    Born-clean (< 1e-10): YES
+    STEP-SCALE INVARIANCE AT h = 0.125: PASS  (elapsed 24.2s)
+
+--- VERDICT ---
+    raw-kernel h = 0.25  reproducibility:    PASS
+    raw-kernel h = 0.125 successful run:     PASS  (mpmath at dps=30)
+    raw-kernel h = 0.125 Born-clean:         YES
+    step-scale invariance at h = 0.125:      PASS
+
+    POSITIVE CERTIFICATE: the raw NN kernel at h = 0.125 is
+    numerically evaluable in arbitrary precision, the observables
+    extend the Born-clean refinement trend through h = 0.125, and
+    they match the deterministic-rescale lane within machine
+    precision (which directly verifies the step-scale invariance
+    theorem at the gate spacing where the float64 raw lane could
+    not previously be evaluated).
+
+    RUNNER STATUS: PASS
+
+----- stderr -----
+

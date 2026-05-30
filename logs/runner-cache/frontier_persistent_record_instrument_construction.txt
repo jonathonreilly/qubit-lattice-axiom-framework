@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_persistent_record_instrument_construction.py
+runner_sha256: 5c6664dc46368abafec67fa252359f783bf3045f3d500e708b457d71173a7c1b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+======================================================================
+Persistent-record instrument construction (Stinespring V) runner
+======================================================================
+
+Verifies the Stinespring isometry V: H_sys -> H_sys (x) H_record
+for multiple framework-side measurement-instrument families on the
+qubit-lattice substrate. Total probability preservation V^dagger V = 1
+is checked by explicit block-matrix algebra, NOT inherited from
+standard QM.
+
+
+[T1] Single qubit projective measurement in sigma_z eigenbasis
+  [PASS] T1.a: Sigma_r K_r^dagger K_r = 1_sys (symbolic)
+  [PASS] T1.b: V row-blocks match K_r (R=2 blocks of size 2x2)
+  [PASS] T1.c: V^dagger V = 1_sys (explicit block matrix)
+  [PASS] T1.d: V|0> = |0> (x) |0> (single record component)
+  [PASS] T1.e: V|1> = |1> (x) |1> (single record component)
+
+[T2] Single qubit projective measurement in rotated basis (symbolic t)
+  [PASS] T2.a: Sigma_r K_r^dagger K_r = 1_sys (symbolic)
+  [PASS] T2.b: V^dagger V = 1_sys (explicit block matrix)
+  [PASS] T2.c: P_+t is idempotent (P^2 = P)
+
+[T3] Single qubit 3-outcome planar POVM (K_r = sqrt(E_r))
+  [PASS] T3.a: Sigma_r K_r^dagger K_r = 1_sys (symbolic)
+  [PASS] T3.b: V^dagger V = 1_sys (explicit block matrix)
+  [PASS] T3.c: V row-blocks match K_r (R=3 blocks of size 2x2)
+
+[T4] Two-qubit Bell-basis projective measurement
+  [PASS] T4.a: Sigma_r K_r^dagger K_r = 1_sys (symbolic)
+  [PASS] T4.b: V row-blocks match K_r (R=4 blocks of size 4x4)
+  [PASS] T4.c: V^dagger V = 1_sys (explicit block matrix)
+  [PASS] T4.d: V shape (16, 4) for 4-outcome measurement on 2-qubit H_sys
+
+[T5] Biased 2-outcome POVM, K_r built from generalized measurement
+  [PASS] T5.a: Sigma_r K_r^dagger K_r = 1_sys (symbolic)
+  [PASS] T5.b: V^dagger V = 1_sys (explicit block matrix)
+
+[T6] Continuous parametric family lambda in [0, 1]
+  [PASS] T6.a (parametric in lambda, with mu = 1 - lam constraint): Sigma_r K_r^dagger K_r = 1_sys (symbolic)
+  [PASS] T6.b (parametric in lambda, with mu = 1 - lam constraint): V^dagger V = 1_sys (explicit block matrix)
+  [PASS] T6.c: K_1^dagger K_1 = lam * I (analytic check)
+
+[T7] Numerical isometry check on random states (5 trials, 3 instrument families)
+  [PASS] T7: 15 random states (3 instruments x 5 trials): ||V|psi>||^2 = |||psi>||^2
+
+[T8] Source-note boundary string checks
+  [PASS] T8.required: 'source-side proposal'
+  [PASS] T8.required: 'independent audit lane owns the verdict'
+  [PASS] T8.required: 'Status authority'
+  [PASS] T8.required: 'does not by itself'
+  [PASS] T8.forbidden-absent: 'Status: retained'
+  [PASS] T8.forbidden-absent: 'Status: promoted'
+  [PASS] T8.forbidden-absent: 'we have retained'
+  [PASS] T8.forbidden-absent: 'this PR retains'
+
+======================================================================
+PASS=29 FAIL=0
+======================================================================
+
+----- stderr -----
+

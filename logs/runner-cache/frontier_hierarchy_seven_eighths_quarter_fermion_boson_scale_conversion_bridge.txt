@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_seven_eighths_quarter_fermion_boson_scale_conversion_bridge.py
+runner_sha256: 69e555c9e1179bc5129ef95f4856d68f60e623c46926238ce64ee9e0b10fcb67
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+Section 1: Named support witnesses for 7/8 at d=4
+  PASS: W1: APBC Matsubara determinant per-mode = 7/8
+  PASS: W2: lattice per-mode (c+1/2)/(c+1) at c=3 = 7/8
+  PASS: W3: Riemann-Dirichlet eta(4)/zeta(4) = 7/8
+  PASS: W4: integer alignment 2^(d-2)=d only at d=4 for checked d=2..19
+  PASS: W5: fermion/boson per-d.o.f. radiation-energy ratio at d=4 = 7/8
+
+Section 2: named competitor spot checks
+  PASS: named competitor rationals do not satisfy both W2 and W3 support tests
+
+Section 3: Stefan-Boltzmann inversion at d=4 (B2)
+  PASS: (B1) at d=4, alpha = 1/4 (dimensional fourth-root compression)
+  PASS: (B4) ratio inversion: (7/8)^(1/4) ≈ 0.967168 (10⁻¹² precision)
+  PASS: d-dependence: (eta(d)/zeta(d))^(1/d) values for d in {2,3,4,5,6}
+
+Section 4: Numerical absorption witness (illustrative)
+  PASS: (illustrative) v_no_pref overshoot ≈ +3.42% vs v_obs
+  PASS: (illustrative) (7/8)^(1/4) absorbs overshoot to within 0.03%
+  PASS: (illustrative) 0.0255% residual exceeds PDG measurement uncertainty
+
+Section 5: Fermi-Dirac vs Bose-Einstein integrals at s=4
+  PASS: FD integral at s=4 (closed form) = 7 pi^4 / 120
+  PASS: BE integral at s=4 (closed form) = pi^4 / 15
+  PASS: FD/BE ratio at s=4 = 7/8 exact
+  PASS: FD integral at s=4 (30-digit mpmath) ≈ 7 pi^4 / 120
+
+Section 6: follow-up diagnostics
+  NOTE: F1 is a future-use consistency check, not a runner PASS item: future d=4 fermion-to-boson radiation-scale conversions should expose (7/8)^(1/4).
+  PASS: (F2 diagnostic) 0.0255% residual is within (alpha_LM/pi)^2 scale
+  PASS: (F3 diagnostic) d=4 is closest among checked d=3,4,5
+
+========================================================================
+TOTAL: PASS=18 FAIL=0
+VERDICT: bounded support bridge passes; the exact d=4 Stefan-Boltzmann conversion factor is (7/8)^(1/4), with named support witnesses for 7/8 and no fitted observational value used as a load-bearing input.
+
+----- stderr -----
+

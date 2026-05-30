@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_route_d_sharpened_no_go_narrow.py
+runner_sha256: 7b58c98cb461fb3157bf4a76a693f9e25072ebbf5125565a5cf8ebc915bd8745
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge Route D sharpened no_go runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md
+
+==============================================================================
+T1: No-go theorem stated precisely
+==============================================================================
+  [PASS] no_go theorem statement contains all required core elements
+         all required strings present
+
+==============================================================================
+T2: Five obstructions D1-D5 enumerated
+==============================================================================
+  [PASS] all five obstructions D1-D5 explicitly enumerated
+         all 5 obstructions present
+
+==============================================================================
+T3: F_p[J] = r(J)^p counterexample family
+==============================================================================
+  [PASS] F_p = r^p is differentiable (hence continuous) at r > 0 (symbolic)
+         d/dr (r^p) = p*r**p/r; matches p*r^(p-1) after simplify: True
+  [PASS] F_p[Z] = F_p[conj(Z)] (CPT-even via |Z| dependence)
+         sympy.simplify(F_p[Z] - F_p[conj(Z)]) = 0
+  [PASS] F_p[J_A ⊕ J_B] = F_p[J_A] * F_p[J_B] (multiplicative factorization, symbolic)
+         sympy.simplify((r_A r_B)^p - r_A^p r_B^p) = 0
+  [PASS] F_p fails block-additivity for all tested p ≠ 0 (rational grid)
+         examples=['p=-2, r_A=2, r_B=3: |LHS - RHS| = 3.333e-01', 'p=-2, r_A=3/2, r_B=5/7: |LHS - RHS| = 1.533e+00', 'p=-2, r_A=11/13, r_B=7/5: |LHS - RHS| = 1.194e+00']
+  [PASS] log r IS block-additive (the p -> 0 / Cauchy classifier limit)
+         sympy.simplify(log(r_A r_B) - log(r_A) - log(r_B)) = 0
+
+==============================================================================
+T4: Four routes' independent confirmations
+==============================================================================
+  [PASS] all four routes A/B/C/E referenced with PRs and outcomes
+         all four routes documented
+
+==============================================================================
+T5: Pattern L vs Pattern D structural enumeration
+==============================================================================
+  [PASS] Pattern L and Pattern D enumerated with candidates
+         all pattern enumeration present
+  [PASS] Pattern L: log additive verified symbolically
+         sympy.simplify diff = 0
+  [PASS] det(M1 ⊕ M2) = det(M1) * det(M2) (multiplicative, not additive)
+         sympy.simplify(det(block) - det(M1)*det(M2)) = 0
+  [PASS] det is NOT block-additive (would be P1 if it were) — sanity
+         sympy.simplify(det(block) - det(M1) - det(M2)) = -a**2 - b**2 - c**2 - d**2 + (a**2 + b**2)*(c**2 + d**2)
+
+==============================================================================
+T6: What WOULD close the gap
+==============================================================================
+  [PASS] the needed primitive description is precise and constrained
+         all primitive-description strings present
+
+==============================================================================
+T7: Forward paths (a) new primitive, (b) permanent admission
+==============================================================================
+  [PASS] both forward paths (a) and (b) explicitly enumerated
+         both paths present
+
+==============================================================================
+T8: No-go scope boundary — does NOT claim P1 is FALSE
+==============================================================================
+  [PASS] no_go scope boundary explicitly stated (not falsity claim)
+         all scope-bounding strings present
+  [PASS] no forbidden absolutist no_go strings present (outside safe-negation contexts)
+         no absolutist strings
+
+==============================================================================
+T9: Out-of-scope — doesn't promote/demote any upstream
+==============================================================================
+  [PASS] non-promotion language and out-of-scope list present
+         all non-promotion strings present
+  [PASS] no forbidden status-promotion strings present
+         clean
+
+==============================================================================
+T10: Source-note boundary check
+==============================================================================
+  [PASS] note declares Claim type: no_go
+  [PASS] note declares Status authority: source-note proposal only
+  [PASS] note avoids forbidden status-overclaim strings
+         clean
+  [PASS] note cites Routes A/B/C/E PRs as markdown links
+         all four PR links present
+
+=== TOTAL: PASS=22, FAIL=0 ===
+
+----- stderr -----
+

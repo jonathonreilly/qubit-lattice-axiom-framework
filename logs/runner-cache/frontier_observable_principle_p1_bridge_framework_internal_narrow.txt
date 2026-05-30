@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py
+runner_sha256: 2c80bfa85de23dddddfe0d972a77663e46a86fcdce8446f972e12fcc1591b527
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+
+==============================================================================
+T1: F_p[J] = r(J)^p is block-multiplicative for general real p (SymPy)
+==============================================================================
+  [PASS] (r_A r_B)^p = r_A^p * r_B^p symbolically (general real p)
+         sympy.simplify(lhs - rhs) = 0
+
+==============================================================================
+T2: F_p[J] = r(J)^p fails block-additivity for p != 1 (rational grid)
+==============================================================================
+  [PASS] F_p additive residual is nonzero for all p in {2, 1/2, 3, -1} on grid
+         All (p, r_A, r_B) tested produce a nonzero additive residual
+
+==============================================================================
+T3: W = log r is block-additive (SymPy)
+==============================================================================
+  [PASS] log(r_A * r_B) = log(r_A) + log(r_B) symbolically
+         sympy.simplify(diff) = 0
+
+==============================================================================
+T4: Block-diagonal det factorization on a finite real anti-H block (SymPy)
+==============================================================================
+  [PASS] det(D_A (+) D_B + J_A (+) J_B) = det(D_A + J_A) det(D_B + J_B) exactly
+         sympy.simplify(det_total - det_A * det_B) = 0
+
+==============================================================================
+T5: failed real-D candidate contains (A) block-additive criterion
+==============================================================================
+  [PASS] (A) "block-additive on independent direct sums" is part of (X2)
+         Substring 'block-additive on independent direct sums' present in cited markdown
+
+==============================================================================
+T6: failed real-D candidate explicitly admits P1 not retired
+==============================================================================
+  [PASS] cited narrow theorem contains explicit 'P1 not retired' admission
+         One of ['does not** retire P1', 'does not retire P1', 'scalar additivity remains a selection premise'] present in cited markdown
+
+==============================================================================
+T7: live ledger effective_status for each catalog candidate
+==============================================================================
+  [PASS] candidate ledger effective_status matches note descriptions
+         All candidate statuses match note descriptions
+
+==============================================================================
+T8: note string contains honest-scope admission strings
+==============================================================================
+  [PASS] required honest-scope strings present in note
+         All required strings present
+  [PASS] forbidden status-promotion strings absent from note
+         No forbidden strings found
+
+==============================================================================
+T9: source-note boundary declarations present
+==============================================================================
+  [PASS] source-note boundary declarations present
+         All boundary declarations present
+
+==============================================================================
+PASS=10 FAIL=0
+==============================================================================
+
+----- stderr -----
+

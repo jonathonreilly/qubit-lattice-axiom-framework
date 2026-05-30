@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/koide_q23_block_weight_frontier_2026_05_29.py
+runner_sha256: 7131a630687b8ec083a6e6b390c668a4139ab9b746870196b475c001fc70a7c6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+========================================================================
+C_3 generation surface
+========================================================================
+[PASS] cyclic generator has cube-root spectrum  (eig=[-0.5-0.866025j -0.5+0.866025j  1. +0.j      ])
+[PASS] body diagonal is the fixed direction
+[PASS] doublet plane carries a complex structure
+
+========================================================================
+Koide value from isotype power split
+========================================================================
+[PASS] |b|^2/a^2=0 gives expected Q  (Q=0.333333333333)
+[PASS] |b|^2/a^2=0.5 gives expected Q  (Q=0.666666666667)
+[PASS] |b|^2/a^2=1 gives expected Q  (Q=1.000000000000)
+[PASS] democratic endpoint  (p_plus=1.000000, Q=0.333333333333)
+[PASS] equal-block rule  (p_plus=0.500000, Q=0.666666666667)
+[PASS] dimension/Plancherel rule  (p_plus=0.333333, Q=1.000000000000)
+
+========================================================================
+Dimension-three localization
+========================================================================
+[PASS] R[Z_2] real block count  (B=2)
+[PASS] R[Z_3] real block count  (B=2)
+[PASS] R[Z_4] real block count  (B=3)
+[PASS] R[Z_5] real block count  (B=3)
+[PASS] R[Z_6] real block count  (B=4)
+[PASS] Q_equipartition and range midpoint cross transversally at d=3
+
+========================================================================
+Counting-vs-splitting localization
+========================================================================
+[PASS] C_3-equivariant example commutes with the C_3 generator  (comm=0.00e+00)
+[PASS] same example is not chiral for Gamma_chi  (anti=2.533)
+[PASS] orbit-splitting example anticommutes with Gamma_chi  (anti=1.41e-16)
+[PASS] orbit-splitting example breaks C_3 equivariance  (comm=1.633)
+
+========================================================================
+Summary
+========================================================================
+PASS=19 FAIL=0
+The equal-block rule gives Q=2/3 exactly, but this runner does not derive or approve that physical rule.
+
+----- stderr -----
+

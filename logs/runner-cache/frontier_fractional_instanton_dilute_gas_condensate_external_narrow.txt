@@ -1,0 +1,125 @@
+===== runner cache v1 =====
+runner: scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py
+runner_sha256: 4fdb1b6aa5dc0b1dbd6c5ae9cf283308b79887e4041d83eb4c9d6c1e38879acc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+# Fractional instanton dilute-gas hierarchy external gate runner
+# Source note: docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+
+==============================================================================
+T1: symbolic Q = k/N and S_frac = (8 pi^2 / g^2) |k/N|
+==============================================================================
+  [PASS] S_frac = S_inst * |k/N| simplifies symbolically
+         S_frac = 8*pi**2*k/(N*g**2), S_inst*|Q| = 8*pi**2*k/(N*g**2)
+  [PASS] note states Q = k/N fractional charge
+         Q = k/N or Q = k / N present in note
+  [PASS] note states S_frac = (8 pi^2 / g^2) |k/N| action formula
+         S_frac action formula stated
+
+==============================================================================
+T2: half-action cross-check at N=2, k=1: S_frac = 4 pi^2 / g^2
+==============================================================================
+  [PASS] S_frac(k=1, N=2) = 4 pi^2 / g^2 symbolically
+         S_frac(N=2,k=1) = 4*pi**2/g**2, S_meron = 4*pi**2/g**2
+  [PASS] note states the N=2 k=1 half-action cross-check
+         N=2 k=1 half-action cross-check present
+  [PASS] note does not promote the companion meron open gate to a theorem
+         singular meron theorem promotion explicitly denied
+
+==============================================================================
+T3: numerical S_frac at canonical g^2 = 1, varying N
+==============================================================================
+  [PASS] S_frac at g^2=1, k=1 for N in {2,3,4} matches {4, 8/3, 2} pi^2
+         N=2, k=1: S_frac=39.478418 (expected 39.478418); N=3, k=1: S_frac=26.318945 (expected 26.318945); N=4, k=1: S_frac=19.739209 (expected 19.739209)
+  [PASS] note records SU(3) S_frac = 8 pi^2 / 3 (~ 26.32)
+         SU(3) canonical entry recorded
+  [PASS] note records SU(2) S_frac = 4 pi^2 (~ 39.48) consistent with meron
+         SU(2) canonical entry recorded
+
+==============================================================================
+T4: dilute-gas free-energy structural form (symbolic only)
+==============================================================================
+  [PASS] note records dilute-gas approximation keyword
+         dilute-gas / dilute gas keyword present
+  [PASS] note records free-energy structural form (F_DG)
+         free-energy / F_DG present
+  [PASS] note records exp(-S_frac) Boltzmann factor in F_DG
+         exp(-S_frac) present in F_DG form
+  [PASS] note records one-loop determinant factor
+         one-loop determinant cited
+  [PASS] note records volume factor V in F_DG
+         V (4-volume) factor present
+  [PASS] symbolic F_DG = -V * n_eff * exp(-S_frac) * Det has the published structural form
+         F_DG = -Det*V*n_eff*exp(-S_frac)
+
+==============================================================================
+T5: open condensate/gas-density criterion exp(-S_frac) ~ O(1)
+==============================================================================
+  [PASS] note records condensate keyword
+         condensate present in text
+  [PASS] note records O(1) condition on exp(-S_frac)
+         O(1) on Boltzmann factor stated
+  [PASS] note records condensate/gas-density criterion language
+         condensate/gas-density criterion recorded
+  [PASS] note keeps the condensate criterion open, not theorem-grade
+         open target / not theorem-grade / must be supplied language present
+  [PASS] note names determinant, phase-space, and coupling-scale gaps
+         load-bearing model data left open
+
+==============================================================================
+T6: canonical SU(3), g^2=1, k=1: S_frac = 8 pi^2 / 3 ~ 26.32, exp(-S_frac) ~ 3.7e-12
+==============================================================================
+  [PASS] SU(3) canonical S_frac = 8 pi^2 / 3 ~ 26.319
+         S_frac = 26.3189450696
+  [PASS] SU(3) canonical exp(-S_frac) ~ 3.7e-12 (in 1e-13 .. 1e-11 band)
+         exp(-S_frac) = 3.714e-12
+  [PASS] note records SU(3) numerical canonical entry (~ 26.32 or 8 pi^2/3)
+         SU(3) numerical entry present
+  [PASS] note records SU(3) Boltzmann factor magnitude ~ 3.7e-12
+         ~10^-12 / 3.7 magnitude present
+
+==============================================================================
+T7: twisted boundary condition requirement (T^4 with Z_N twist)
+==============================================================================
+  [PASS] note records T^4 (4-torus) setting
+         T^4 / 4-torus present
+  [PASS] note records twist (Z_N or Z_2_N) requirement
+         twist + Z_N keyword present
+  [PASS] note records center-symmetry context
+         center keyword present
+  [PASS] note records 't Hooft twist tensor n_μν
+         n_μν / twist tensor present
+  [PASS] note records cocycle / transition-functions structure
+         cocycle / Ω transition functions present
+
+==============================================================================
+T8: boundary — note declares open_gate
+==============================================================================
+  [PASS] note declares Claim type: open_gate
+         Claim type line present
+
+==============================================================================
+T9: boundary — note does NOT claim substrate identification
+==============================================================================
+  [PASS] note does NOT assert substrate identification
+         no substrate-identification overclaim string present
+  [PASS] note explicitly disclaims framework substrate identification
+         boundary section names framework substrate explicitly under 'does not claim'
+
+==============================================================================
+T10: boundary — no alpha_LM^16 closure, no v/M_Pl, no hierarchy substitution
+==============================================================================
+  [PASS] note avoids any alpha_LM^16-closure / hierarchy-closure overclaim
+         boundary disclaimers intact
+  [PASS] boundary explicitly names alpha_LM^16 as out-of-scope
+         alpha_LM^16 explicitly listed in boundary
+  [PASS] boundary explicitly names v/M_Pl scale ratio as out-of-scope
+         v/M_Pl explicitly listed in boundary
+
+=== TOTAL: PASS=35, FAIL=0 ===
+
+----- stderr -----
+

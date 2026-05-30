@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
+runner_sha256: 283aae3b2446b7afc3df277e0ae22631fcf19274ab072c101ed2d897d1614f9f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.008
+status: ok
+----- stdout -----
+==============================================================================
+SO(4) Covariance of the FREE Staggered-Dirac 2-Point Schwinger Function
+==============================================================================
+
+THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
+         the SO(4)-covariant Euclidean Dirac/Kahler-Dirac propagator;
+         leading lattice correction = dim-6 ell=4 cubic harmonic, O(a^2).
+
+
+=== Part 1: Euclidean Clifford algebra + staggered operator ===
+
+  [PASS] Euclidean Clifford {g_mu,g_nu}=2 delta (Hermitian gammas)  (max|off|=0.0e+00, max|diag-2|=0.0e+00)
+  [PASS] All four Euclidean gamma_mu are Hermitian  (max|g - g^dag| = 0.0e+00)
+  [PASS] Clifford identity (gamma.s)^2 = (s.s) 1  (basis of D~ inverse)  (max residual = 1.8e-15)
+  [PASS] Closed form G~ = (m1 - (i/a)sum g sin)/Delta matches numpy inverse  (max|G_inv - G_closed| = 2.3e-16)
+  [PASS] D~(p) G~(p) = 1 (propagator inverts the operator)  (max|D G - 1| = 1.4e-17)
+
+=== Part 1a: exact finite-a scalar spectrum + 4-fold taste mult ===
+
+    (The clean spin(x)taste D~(p) with a 1_taste factor is the a->0
+     form, NOT a finite-a operator identity. The honest finite-a
+     statement is: the scalar spectrum Delta(p) is exact and taste
+     enters only as a 4-fold SPECTRAL multiplicity. Verified here on
+     the genuine 1-component-per-site position-space operator.)
+
+  [PASS] L=2: M^dag M Hermitian (free staggered, position space)  (max|MdM - MdM^dag| = 0.0e+00)
+  [PASS] L=2: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 0.0e+00 (taste NOT in eigenvalue))
+  [PASS] L=2: all spectral multiplicities divisible by 4 (4-fold taste)  (1 distinct eigenvalues, multiplicities [16])
+  [PASS] L=4: M^dag M Hermitian (free staggered, position space)  (max|MdM - MdM^dag| = 0.0e+00)
+  [PASS] L=4: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 8.4e-15 (taste NOT in eigenvalue))
+  [PASS] L=4: all spectral multiplicities divisible by 4 (4-fold taste)  (5 distinct eigenvalues, multiplicities [16, 64, 96, 64, 16])
+  [PASS] Finite-a dof count: 16*(L/2)^4 = L^4 (taste lives on block lattice 2a)  (16*(2)^4 = 256 = L^4 = 256 (so a single-spacing 16-comp taste-flat identity is forbidden))
+
+=== Part 2: continuum limit -> SO(4) Euclidean Dirac propagator ===
+
+  [PASS] G~_lat(p) -> G~_cont(p) (SO(4) Dirac propagator) as a -> 0  (a sweep [0.2, 0.1, 0.05]: max|G_lat - G_cont| = [5.50e-04, 1.37e-04, 3.44e-05])
+  [PASS] O(a^2) convergence of G~_lat to the SO(4) propagator  (err(a=0.2)/err(a=0.1) = 3.999 (expected ~4))
+  [PASS] (m + i gamma.p) G~_cont = 1 (continuum Dirac equation)  (max|(m+ig.p)G - 1| = 2.9e-17)
+  [PASS] tr G~_cont = 4m/(p^2+m^2); scalar part is the SO(4) scalar propagator  (tr = 2.597403, expect = 2.597403)
+  [PASS] G~_cont G~_cont^dag = 1/(p^2+m^2) (SO(4)-invariant denominator)  (max dev = 1.1e-16)
+
+=== Part 3: SO(4) covariance (continuum exact; lattice O(a^2)) ===
+
+  [PASS] EXACT: S G~_cont(p) S^-1 = G~_cont(Ap), A in SO(4) (bispinor covariance)  (max|S G S^-1 - G(Ap)| = 1.24e-16 over 20 SO(4) rotations (incl space-time planes))
+  [PASS] Continuum SO(4) scalar invariant tr(G G^dag) depends only on |p|^2  (spread over SO(4) orbit = 1.33e-15)
+  [PASS] LATTICE invariant SO(4) residual shrinks under a-refinement  (spread a=0.4 -> 7.44e-03, a=0.1 -> 4.67e-04)
+  [PASS] LATTICE invariant residual scales ~ O(a^2) (factor ~16 over 4x a)  (spread(a=0.4)/spread(a=0.1) = 15.94 (expected ~16 for O(a^2)))
+  [PASS] Body-diagonal [1,1,1,1]: G~_lat -> G~_cont at O(a^2)  (err(0.2)/err(0.1) = 4.000 (expected ~4))
+
+=== Part 4: leading anisotropy = dim-6 ell=4 cubic harmonic ===
+
+  [PASS] Delta(p): leading anisotropy coeff c4 = -1/3 (fermion staggered)  (c4_numeric = -0.33329, exact = -0.33333)
+  [PASS] Axis/body-diagonal anisotropy ratio of Delta = 4 (4D ell=4 cubic)  (ratio = 3.9871 (4D ell=4: axis 1 vs diag 1/4))
+  [PASS] Anisotropy matches -(a^2/3) p^4 sum n_mu^4 (axis & diag)  (axis -3.871e-03 vs -3.888e-03; diag -9.710e-04 vs -9.720e-04)
+  [PASS] 4D isotropic average <sum n_mu^4>_{S^3} = 1/2  (numeric = 0.50026, exact 3/(d+2) = 1/2 at d=4)
+  [PASS] No ell=2 contamination: <f * (n_a n_b - delta/4)>_{S^3} ~ 0  (max ell=2 projection = 1.81e-04 (pure ell=4))
+  [PASS] Sympy: H4 = sum x_mu^4 - (1/2) r^4 is harmonic (pure 4D ell=4)  (Laplacian(H4) = 0 (=> no ell=0,2,6 admixture))
+  [PASS] Leading LV operator is dimension-6 (O(a^2 p^4), two extra momenta)  (sum_mu p_mu^4 with coeff a^2/3; CPT-even, parity-even (even powers))
+  [PASS] Parity-even: Delta(-p) = Delta(p) (no dim-5 / CPT-odd dispersion term)  (max|Delta(-p)-Delta(p)| = 0.0e+00)
+
+=== Part 5: free-scalar bridge consistency ===
+
+  [PASS] Spatial-slice (p_tau=0) scalar denom = 3D free-scalar staggered combo  (max dev = 0.0e+00)
+  [PASS] Spatial 3-slice anisotropy = scalar note's 3D K_4 (iso 3/5, ratio 3)  (<sum n_i^4>_S2 = 0.60015 (3/5), axis/diag ratio = 3.0000)
+  [PASS] Coefficient bridge: fermion c4 (-1/3) = 4 x boson c4 (-1/12)  (full-period vs half-angle staggered/Laplacian dispersion)
+  [PASS] Scalar SO(4) Schwinger kernel m K_1(mR)/(4 pi^2 R) (matches scalar note)  (G_E_scalar(R=2) = 1.771422e-03 (same kernel as free-scalar Step 6))
+
+=== Part 6: position-space SO(4) rotation invariance (lattice) ===
+
+    (Build the trace (scalar/taste-summed) 2-point in position space
+     by BZ sum of tr G~_lat(p); check isotropy up to O(a^2).
+     Note: tr G~ = 4m/Delta(p) is invariant under the staggered taste
+     shift p_mu -> p_mu + pi/a, so the trace 2-point is supported only
+     on the EVEN sublattice (every displacement component even) -- the
+     standard single-taste/doubled-lattice fact for staggered fermions.)
+
+  [PASS] Trace 2-point supported only on EVEN sublattice (taste-shift symmetry)  (max|odd-sep| = 2.33e-15 (~0), min|even-sep| = 1.190e-02 (>0))
+  [PASS] Cubic-equivalent (2,0,0,0)=(0,2,0,0): exact lattice symmetry  (|G(2000) - G(0200)| = 2.26e-15)
+  [PASS] Axis vs body-diagonal (all-even, equal physical R=2.0) anisotropy shrinks with a  (rel anisotropy: a=0.5 -> 5.814e-01, a=0.25 -> 2.620e-01 (dim-6 ell=4, O(a^2)))
+  [PASS] Trace Euclidean Schwinger function real (Im~0) and positive (even sep)  (tr G_E(2,0,0,0) = 7.2004e-02, |Im| = 1.1e-15)
+
+=== Part 7: combined SO(4) statement + relation to scalar note ===
+
+  [PASS] Z^3 x Z_tau has hypercubic point symmetry, NOT SO(4)  (SO(4) is non-compact-completion of the cubic group; emergent only)
+  [PASS] Continuum-limit D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)  (phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; 1_taste spectator is the a->0 form, finite-a taste enters as 4-fold spectral mult (Part 1a))
+  [PASS] THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2+m^2)  (standard SO(4) Euclidean Dirac/Kahler-Dirac propagator)
+  [PASS] Leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)  (sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6)
+  [PASS] Parity-even + CPT-even: only even powers of p (no dim-3, dim-5)  (Delta(-p)=Delta(p); matches scalar/dispersion-note structure)
+  [PASS] Wick rotation: continuum Wightman 2-pt is SO(3,1)-covariant  (SO(4) Euclidean invariance <=> SO(3,1) boost covariance (t=-i tau))
+  [PASS] MATTER-SECTOR ANALOGUE of free-scalar boost note Step 6 (SO(4))  (same mechanism: cubic dispersion -> isotropic continuum limit)
+  [PASS] Free-scalar bridge: spatial 3-slice reduces to scalar note's 3D K_4  (iso 3/5, ratio 3 on the slice; full 4D is iso 1/2, ratio 4)
+  [PASS] Unconditional for the FREE 2-point function (free theory limit exists)  (NOT interacting, NOT n-point, NOT OS reconstruction, NOT FS)
+
+==============================================================================
+SCORECARD: PASS=47  FAIL=0
+==============================================================================
+
+All checks passed. The FREE staggered-Dirac 2-point Schwinger
+function becomes SO(4)-covariant in the continuum limit, with
+leading anisotropy a dim-6 ell=4 cubic harmonic at O(a^2).
+Matter-sector analogue of the free-scalar boost note.

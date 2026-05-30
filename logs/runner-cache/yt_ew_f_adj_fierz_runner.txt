@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/yt_ew_f_adj_fierz_runner.py
+runner_sha256: 9bbb9ada827b250ff518b9b1b85f0cc2f4a247b71bda401a5eae55493d57d2c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+TOTAL: PASS=2 FAIL=0
+VERDICT: bounded proof-walk passes; F_adj = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3 is exact rational arithmetic from the cited Fierz channel-count.
+
+----- stderr -----
+

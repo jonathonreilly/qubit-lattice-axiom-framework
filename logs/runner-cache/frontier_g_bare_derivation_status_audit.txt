@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_g_bare_derivation_status_audit.py
+runner_sha256: 7f601ea57809be3ea6e92a39b6e94afbafcd0415dd8c64b91933350b7f8a61d6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Part 1: audit-packet structure
+----------------------------------------------------------------------------------------
+  [PASS (A)] audit packet contains: 'g_bare Derivation Note — Status Correction Audit'  ()
+  [PASS (A)] audit packet contains: 'G_BARE_DERIVATION_NOTE.md'  ()
+  [PASS (A)] audit packet contains: 'constraint vs. convention'  ()
+  [PASS (A)] audit packet contains: 'A → A/g rescaling freedom'  ()
+  [PASS (A)] audit packet contains: 'frontier_g_bare_derivation.py'  ()
+  [PASS (A)] audit packet contains: 'status-correction packet'  ()
+  [PASS (A)] audit packet contains: 'proposal_allowed: false'  ()
+  [PASS (A)] audit packet contains: '2026-05-24'  ()
+
+----------------------------------------------------------------------------------------
+Part 2: confirm primary runner now present (superseded missing-runner finding)
+----------------------------------------------------------------------------------------
+  [PASS (A)] primary runner scripts/frontier_g_bare_derivation.py is present  (path = /private/tmp/cl3-audit-main.C75Ktt/repo/scripts/frontier_g_bare_derivation.py)
+  [PASS (A)] packet documents that the missing-runner finding is superseded  (2026-05-24 refresh language)
+
+----------------------------------------------------------------------------------------
+Part 3: constraint vs convention ambiguity discussion (refreshed)
+----------------------------------------------------------------------------------------
+  [PASS (A)] ambiguity point: (a) Structural constraint  (§3 refreshed ambiguity discussion)
+  [PASS (A)] ambiguity point: (b) Convention choice  (§3 refreshed ambiguity discussion)
+  [PASS (A)] ambiguity point: upstream  (§3 refreshed ambiguity discussion)
+  [PASS (A)] ambiguity point: derived  (§3 refreshed ambiguity discussion)
+
+----------------------------------------------------------------------------------------
+Part 4: A → A/g rescaling freedom analysis (refreshed)
+----------------------------------------------------------------------------------------
+  [PASS (A)] rescaling analysis: S_gauge[A; g]  (§4 refreshed rescaling discussion)
+  [PASS (A)] rescaling analysis: 1/4 g²  (§4 refreshed rescaling discussion)
+  [PASS (A)] rescaling analysis: rescaling-freedom-removal theorem  (§4 refreshed rescaling discussion)
+  [PASS (A)] rescaling analysis: Tr(T_a T_b) = δ_ab/2  (§4 refreshed rescaling discussion)
+
+----------------------------------------------------------------------------------------
+Part 5: 2026-05-03 repair-candidate notes declared as dependencies
+----------------------------------------------------------------------------------------
+  [PASS (A)] rescaling-freedom-removal theorem cited (markdown link)  (§2 declared deps table)
+  [PASS (A)] constraint-vs-convention theorem cited (markdown link)  (§2 declared deps table)
+  [PASS (A)] rescaling-freedom-removal note exists in docs/  (path = /private/tmp/cl3-audit-main.C75Ktt/repo/docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+  [PASS (A)] constraint-vs-convention note exists in docs/  (path = /private/tmp/cl3-audit-main.C75Ktt/repo/docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
+
+----------------------------------------------------------------------------------------
+Part 6: 7 cert criteria refreshed assessment
+----------------------------------------------------------------------------------------
+  [PASS (A)] audit packet explicitly assesses Criterion 1  ()
+  [PASS (A)] audit packet explicitly assesses Criterion 2  ()
+  [PASS (A)] audit packet explicitly assesses Criterion 3  ()
+  [PASS (A)] audit packet explicitly assesses Criterion 4  ()
+  [PASS (A)] audit packet explicitly assesses Criterion 5  ()
+  [PASS (A)] audit packet explicitly assesses Criterion 6  ()
+  [PASS (A)] audit packet explicitly assesses Criterion 7  ()
+  [PASS (A)] criteria table includes 2026-05-24 refresh column  (§5 refreshed table)
+
+----------------------------------------------------------------------------------------
+Part 7: G_BARE_* sister family enumerated
+----------------------------------------------------------------------------------------
+  [PASS (A)] G_BARE_* family member: G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18  (§9 cross-references)
+  [PASS (A)] G_BARE_* family member: G_BARE_RIGIDITY_THEOREM_NOTE  (§9 cross-references)
+  [PASS (A)] G_BARE_* family member: G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18  (§9 cross-references)
+  [PASS (A)] G_BARE_* family member: G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18  (§9 cross-references)
+  [PASS (A)] G_BARE_* family member: G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02  (§9 cross-references)
+
+========================================================================================
+  TOTAL: PASS=35, FAIL=0
+========================================================================================
+
+----- stderr -----
+

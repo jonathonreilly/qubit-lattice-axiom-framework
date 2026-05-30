@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_wolfenstein_lambda_a_structural_identities.py
+runner_sha256: 75cbc116b972a8fad8127158fb3884b6eb0e0bc8bc44d0e002e527be5de0744b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+================================================================================
+Wolfenstein lambda and A structural identities exact-symbolic audit
+================================================================================
+
+--------------------------------------------------------------------------------
+Imported CKM atlas inputs
+--------------------------------------------------------------------------------
+  n_pair       = 2
+  n_color      = 3
+  n_quark      = 6
+  alpha_s(v)   = 0.103303816122267
+  rho^2 + eta^2 = 1/6  (imported)
+  [PASS] n_pair = 2
+  [PASS] n_color = 3
+  [PASS] n_quark = n_pair*n_color = 6
+  [PASS] canonical alpha_s(v) is positive
+  [PASS] CP radius squared is exact rational 1/6
+
+--------------------------------------------------------------------------------
+Exact-symbolic verification via sympy
+--------------------------------------------------------------------------------
+  [PASS] (W1) lambda^2 = alpha_s(v)/n_pair  [sympy.simplify residual] (residual = 0)
+  [PASS] (W1) lambda^2 = alpha_s(v)/2 specialization at n_pair = 2 (residual = 0)
+  [PASS] (W2) A^2 = n_pair/n_color  [sympy.simplify residual] (residual = 0)
+  [PASS] (W2) A^2 = 2/3 exact rational at (n_pair, n_color) = (2, 3) (residual = 0; A^2 = 2/3)
+  [PASS] (W3) A^2 lambda^2 = alpha_s(v)/n_color  [n_pair cancels exactly] (product = alpha_s_v/3; residual = 0)
+  [PASS] (W3) A^2 lambda^2 = alpha_s(v)/3 specialization (residual = 0)
+  [PASS] (W3) rational cancellation: (n_pair/n_color)(1/n_pair) - 1/n_color = 0 (residual = 0)
+  [PASS] |V_us|_0 = lambda = sqrt(alpha_s(v)/2)  [sympy.simplify residual] (residual = 0)
+  [PASS] |V_cb| = A lambda^2 = alpha_s(v)/sqrt(n_quark)  [sympy residual] (residual = 0)
+  [PASS] |V_cb| = alpha_s(v)/sqrt(6) explicit specialization (residual = 0)
+  [PASS] |V_cb|^2 = alpha_s(v)^2/6  [squared identity, no radicals] (residual = 0)
+  [PASS] |V_ub|_0 = A lambda^3 sqrt(rho^2+eta^2) = alpha_s(v)^(3/2)/(6 sqrt(2)) (residual = 0)
+  [PASS] |V_ub|_0^2 = alpha_s(v)^3 / 72  [squared identity, no radicals] (residual = 0)
+  [PASS] atlas J_0 = lambda^6 A^2 eta = alpha_s(v)^3 sqrt(5)/72 (residual = 0)
+
+--------------------------------------------------------------------------------
+Canonical numerical sanity pin (alpha_s(v) imported)
+--------------------------------------------------------------------------------
+  lambda^2     = 0.051651908061134
+  A^2          = 0.666666666666667
+  A^2 lambda^2 = 0.034434605374089
+  |V_cb|       = 0.042173606330309
+  |V_ub|_0     = 0.003912986046799
+  [PASS] numerical: A^2 lambda^2 ~ alpha_s(v)/3
+  [PASS] numerical: |V_cb| atlas ~ alpha_s(v)/sqrt(6)
+  [PASS] numerical: |V_ub|_0 atlas ~ alpha_s(v)^(3/2)/(6 sqrt(2))
+
+--------------------------------------------------------------------------------
+Joint named surface regression (lambda, A, rho, eta, delta, J_0)
+--------------------------------------------------------------------------------
+  rho^2 + eta^2 = 1/6
+  J_0 surface    = 3.423746495301758e-05
+  J_0 clean      = 3.423746495301758e-05
+  [PASS] rho^2 + eta^2 = 1/6 (imported)
+  [PASS] J_0 numerical factorization equals alpha_s(v)^3 sqrt(5)/72
+
+================================================================================
+TOTAL: PASS=24, FAIL=0
+================================================================================
+
+----- stderr -----
+

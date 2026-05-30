@@ -1,0 +1,155 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_zero_import_ratio_authority.py
+runner_sha256: 1193e9de44b9a0d8b51d0b912ce03a5712bb46e4d8f2de5a30f4975fa144cfee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.10
+status: ok
+----- stdout -----
+========================================================================
+BLOCK 1: input enumeration & constants
+========================================================================
+  [PASS (A)] N_c = 3 (SU(3) color fundamental from Cl(3) spatial dim)  --  from AX1 Cl(3); LEFT_HANDED_CHARGE_MATCHING_NOTE.md:13
+  [PASS (A)] N_iso = 2 (SU(2)_L doublet)  --  from D5 Cl(3) ⊃ su(2); CKM_ATLAS:56 n_pair = 2
+  [PASS (A)] Q_L block dimension = 2 * 3 = 6  --  from D8 Q_L = (2,3); composite-Higgs scalar singlet Z^2 = 6
+  [PASS (A)] Predicted Ward ratio = 1/sqrt(2 N_c) = 1/sqrt(6)  --  WARD_RATIO_EXACT = 0.4082482904638631, 1/sqrt(6) = 0.4082482904638631
+
+========================================================================
+BLOCK 2: ratio identity on the canonical surface
+========================================================================
+  canonical u_0  = 0.877681381199
+  canonical α_LM = 0.090667836017
+  g_s(M_Pl) [canonical] = 1.067410712985
+  y_t(M_Pl) [canonical] = 0.435768598799
+  ratio              = 0.40824829046386
+  expected           = 0.40824829046386
+  [PASS (A)] y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6) on canonical surface (machine precision)  --  |diff| = 5.55e-17, tol = 1e-13
+
+========================================================================
+BLOCK 3: tadpole-independence sweep -- ratio invariance
+========================================================================
+  Sweeping u_0' over [1e-3, 1e3] on a log grid (61 points).
+  For each u_0', compute g_s(M_Pl) and y_t(M_Pl) and verify the
+  ratio is identically 1/sqrt(6) to machine precision.
+
+  worst u_0' on sweep    = 0.001259
+  worst ratio deviation  = 5.551e-17
+  predicted ratio        = 0.40824829046386
+  [PASS (A)] Ratio is invariant across u_0' in [1e-3, 1e3] (61 log-spaced points)  --  max |ratio - 1/sqrt(6)| = 5.551e-17, tol = 1e-13
+
+  Magnitude scaling cross-check (individual couplings DO depend on u_0'):
+    u_0'= 0.10: g_s=3.162278 (expect 3.162278), y_t=1.290994 (expect 1.290994)
+  [PASS (C)] g_s magnitude scales as 1/sqrt(u_0'=0.1)  --  |g_s - expected| = 0.00e+00
+  [PASS (C)] y_t magnitude scales as 1/sqrt(u_0'=0.1) / sqrt(6)  --  |y_t - expected| = 0.00e+00
+    u_0'= 1.00: g_s=1.000000 (expect 1.000000), y_t=0.408248 (expect 0.408248)
+  [PASS (C)] g_s magnitude scales as 1/sqrt(u_0'=1.0)  --  |g_s - expected| = 0.00e+00
+  [PASS (C)] y_t magnitude scales as 1/sqrt(u_0'=1.0) / sqrt(6)  --  |y_t - expected| = 0.00e+00
+    u_0'=10.00: g_s=0.316228 (expect 0.316228), y_t=0.129099 (expect 0.129099)
+  [PASS (C)] g_s magnitude scales as 1/sqrt(u_0'=10.0)  --  |g_s - expected| = 0.00e+00
+  [PASS (C)] y_t magnitude scales as 1/sqrt(u_0'=10.0) / sqrt(6)  --  |y_t - expected| = 0.00e+00
+
+========================================================================
+BLOCK 4: Ward homogeneity (common-rescaling invariance)
+========================================================================
+  Rescale (g_s, y_t) -> (lambda g_s, lambda y_t) for lambda in
+  {0.001, 0.01, 0.1, 1, 10, 100, 1000} and verify ratio unchanged.
+  worst homogeneity deviation = 5.551e-17
+  [PASS (A)] Ratio invariant under common rescaling (Ward homogeneity)  --  max |ratio - 1/sqrt(6)| = 5.551e-17
+
+========================================================================
+BLOCK 5: external-observable independence diagnostic
+========================================================================
+  [PASS (A)] boundary_couplings source contains no PDG/SM observable string  --  clean
+  boundary_couplings depends ONLY on (N_c, alpha_bare, u_0')
+  -- no PDG observable, no SM measured value, no comparator constant
+
+========================================================================
+BLOCK 6: minimal load-bearing input set for the ratio
+========================================================================
+  The ratio y_t(M_Pl)/g_s(M_Pl) depends on:
+    (a) N_c (color rank)              -- enters via 1/sqrt(2 N_c)
+    (b) Ward identity structure       -- T1: y_t_bare = g_bare/sqrt(2 N_c)
+    (c) Common n_link power on both   -- D15: n_link = 1 per single vertex
+  The ratio does NOT depend on:
+    - alpha_bare (cancels in the ratio)
+    - u_0' (canonical-surface tadpole; verified in Block 3)
+    - N_iso (enters Z^2 = N_c N_iso but cancels in the ratio definition,
+      since Ward T1 already absorbs the N_iso factor into 1/sqrt(2 N_c) = 1/sqrt(6).
+      Block 6b below sanity-checks this.)
+
+    N_c = 2 -> ratio = 1/sqrt(2 * 2) = 0.500000000000
+    N_c = 3 -> ratio = 1/sqrt(2 * 3) = 0.408248290464
+    N_c = 4 -> ratio = 1/sqrt(2 * 4) = 0.353553390593
+    N_c = 5 -> ratio = 1/sqrt(2 * 5) = 0.316227766017
+  [PASS (B)] Ratio depends nontrivially on N_c (sensitivity to single load-bearing input)  --  the ratio differs by ~16% between N_c=2 and N_c=3
+
+  Counterfactual: vary alpha_bare (ratio should be unchanged):
+    alpha_bare =  0.001 -> ratio = 0.40824829046386
+    alpha_bare =  0.010 -> ratio = 0.40824829046386
+    alpha_bare =  0.100 -> ratio = 0.40824829046386
+    alpha_bare =  1.000 -> ratio = 0.40824829046386
+    alpha_bare = 10.000 -> ratio = 0.40824829046386
+  [PASS (A)] Ratio invariant under alpha_bare rescaling (cancellation cross-check)  --  max deviation = 5.551e-17
+
+========================================================================
+BLOCK 7: magnitude reproduction on canonical surface
+========================================================================
+  canonical g_s(M_Pl) = 1.067411
+  canonical y_t(M_Pl) = 0.435769
+  authority target     = 0.435800
+  |y_t - target|       = 0.000031
+  [PASS (C)] y_t(M_Pl) on canonical surface matches authority-note target to <1e-3  --  y_t = 0.435769, target = 0.435800
+
+========================================================================
+BLOCK 8: random-tadpole robustness sample (10000 draws)
+========================================================================
+  N = 10000
+  u_0' range = [1.001e-04, 9.984e+03]
+  max |ratio - 1/sqrt(6)| = 5.551e-17
+  mean |ratio - 1/sqrt(6)| = 2.106e-17
+  [PASS (A)] Random-tadpole sample (10000) has max ratio deviation < tol  --  max deviation = 5.551e-17
+
+========================================================================
+BLOCK 9: cross-check vs YT_ZERO_IMPORT_AUTHORITY_NOTE central values
+========================================================================
+  Authority note (docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) central
+  values (zero external SM observables, framework-side):
+    y_t(v)            = 0.9176
+    m_t(pole) 2-loop  = 172.57 GeV
+
+  This block does NOT re-derive y_t(v) or m_t(pole). It records
+  the load-bearing relation:
+      y_t_phys(v) = (Ward ratio at M_Pl) * g_s_phys(v) * sqrt(8/9) * (running)
+  and verifies the Ward-ratio piece is exactly 1/sqrt(6), which is
+  the only piece this note carries.
+
+  [PASS (A)] Color projection factor sqrt(8/9) reproduces (N_c^2 - 1)/N_c^2 = 8/9  --  sqrt(8/9) = 0.942809041582, sqrt((N_c^2-1)/N_c^2) = 0.942809041582
+
+  Symbolic chain (downstream pieces NOT recomputed here):
+    Ward piece (this note)        : y_t(M_Pl)/g_s(M_Pl)   = 0.408248
+    Color projection              : sqrt(8/9)              = 0.942809
+    => y_t_phys(v) = Ward * sqrt(8/9) * g_s_phys(v) * (running)
+
+  The Ward piece (1/sqrt(6)) is the ONLY piece this note's
+  ratio theorem covers; the color projection, running, and matching
+  pieces are downstream and live in their own notes.
+
+========================================================================
+SUMMARY
+========================================================================
+  PASS: 19
+  FAIL: 0
+
+  Zero-Import Boundary-Ratio Authority Theorem verified:
+    y_t(M_Pl) / g_s(M_Pl) = 1/sqrt(2 N_c) = 1/sqrt(6)
+    invariant under all u_0' > 0 (verified on log grid + 10000 random)
+    invariant under common (y_t, g_s) rescaling (Ward homogeneity)
+    invariant under alpha_bare rescaling (cancellation)
+
+  No PDG observable consumed in load-bearing computation (Block 5).
+  Minimal load-bearing input set: {N_c} + Ward identity structure.
+
+  Out of scope: y_t(v), m_t, color projection, running, matching.
+  See docs/YT_ZERO_IMPORT_BOUNDARY_RATIO_AUTHORITY_THEOREM_NOTE_2026-05-17.md
+  for the source theorem note.
+----- stderr -----

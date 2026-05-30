@@ -1,0 +1,117 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_free_cumulant_route.py
+runner_sha256: e8be01af0d5da3e9e73b2778420b348c96cfc8f07873fba880719ac284243800
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge free-cumulant-route runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FREE_CUMULANT_ROUTE_NARROW_NOTE_2026-05-21.md
+
+==============================================================================
+T1: det(D_A (+) D_B + J_A (+) J_B) = det(D_A + J_A) det(D_B + J_B) — symbolic 4x4
+==============================================================================
+  [PASS] det((D_A (+) D_B) + (J_A (+) J_B)) = det(D_A + J_A) det(D_B + J_B) (symbolic)
+         sympy.simplify(lhs - rhs) = 0
+
+==============================================================================
+T2: Block-diagonal determinant factorization (exact rational instance)
+==============================================================================
+  [PASS] rational-Fraction instance: det(D+J) = det(D_A+J_A) det(D_B+J_B)
+         lhs=41/450, rhs=41/450
+
+==============================================================================
+T3: log|det(D+J)| = log|det(D_A+J_A)| + log|det(D_B+J_B)| on the runner block
+==============================================================================
+  [PASS] rational instance: det(D_A + J_A) > 0 and det(D_B + J_B) > 0
+         det_A = 11/18, det_B = 41/275
+  [PASS] log|det(D+J)| - log|det(D_A+J_A)| - log|det(D_B+J_B)| = 0 (symbolic)
+         diff = 0
+
+==============================================================================
+T4: Spectral measure on direct sum = convex combination, NOT free convolution
+==============================================================================
+  [PASS] direct-sum spectral measure second moment = 15/2 (empirical, equally weighted)
+         m2_direct_sum = 15/2, expected = 15/2
+  [PASS] free convolution second moment = 27 != 15/2; direct-sum != free convolution
+         m2_direct_sum = 15/2 != m2_free_conv = 27
+  [PASS] direct-sum first moment = 5/2 != free convolution first moment = 5
+         m1_direct_sum = 5/2, m1_free_conv = 5
+
+==============================================================================
+T5: Classical cumulants — log E[e^{t(X+Y)}] = log E[e^{tX}] + log E[e^{tY}] on independent X, Y
+==============================================================================
+  [PASS] classical CGF additivity (truncated): log E[e^{t(X+Y)}] = log E[e^{tX}] + log E[e^{tY}]
+         K_joint - K_X - K_Y = 0
+  [PASS] kappa_2(X+Y) = kappa_2(X) + kappa_2(Y) on independent X, Y (variance additivity)
+         var_joint = -a**2 + b - c**2 + d, var_expected = -a**2 + b - c**2 + d, diff = 0
+
+==============================================================================
+T6: Voiculescu free-cumulant additivity — semicircular free convolution
+==============================================================================
+  [PASS] Voiculescu: kappa_2^free(s_1 + s_2) = kappa_2^free(s_1) + kappa_2^free(s_2) for free standard semicirculars
+         kappa_2^free(s_1+s_2) = 2, expected = 2
+  [PASS] R-transform additivity: R_{s_1+s_2}(z) = R_{s_1}(z) + R_{s_2}(z) = 2 z
+         R_sum = 2*z, expected = 2*z, diff = 0
+
+==============================================================================
+T7: Free-cumulant additivity does NOT apply to direct-sum spectra
+==============================================================================
+  [PASS] spectral kappa_2 of M_A's empirical = 1 and M_B's empirical = 4
+         kappa_2_A = 1, kappa_2_B = 4
+  [PASS] direct-sum kappa_2 = 5/2, NOT kappa_2_A + kappa_2_B = 5; direct-sum is not free convolution
+         kappa_2_direct_sum = 5/2, kappa_2_A + kappa_2_B = 5
+
+==============================================================================
+T8: F_p[J] = r(J)^p multiplicative factorization is unaffected by this route
+==============================================================================
+  [PASS] F_p[J_A (+) J_B] = F_p[J_A] F_p[J_B] for p in {1, 2, 3, 1/2, -1}
+         (p, diff): [('1', '0'), ('2', '0'), ('3', '0'), ('1/2', '0'), ('-1', '0')]
+
+==============================================================================
+T9: Source-note Exercise 4 elementary determinant identity echo
+==============================================================================
+  [PASS] note contains source-text string: "det([[A, 0], [0, B]]) = det(A) · det(B)"
+         present=True
+  [PASS] note contains source-text string: "elementary linear algebra"
+         present=True
+  [PASS] note contains source-text string: "no probability theory"
+         present=True
+  [PASS] note contains source-text string: "Exercise 4"
+         present=True
+
+==============================================================================
+T10: Source-note boundary
+==============================================================================
+  [PASS] note contains admission string: "**Claim type:** bounded_theorem"
+         present=True
+  [PASS] note contains admission string: "**Status authority:** independent audit lane only"
+         present=True
+  [PASS] note contains admission string: "Source-note proposal disclaimer"
+         present=True
+  [PASS] note contains admission string: "P1 is NOT closed positively"
+         present=True
+  [PASS] note contains admission string: "wrong tool for direct-sum independence"
+         present=True
+  [PASS] note contains admission string: "wrong notion of independence"
+         present=True
+  [PASS] note contains admission string: "Muraki five universal"
+         present=True
+  [PASS] note contains admission string: "Voiculescu"
+         present=True
+  [PASS] note contains admission string: "Speicher"
+         present=True
+  [PASS] note contains admission string: "Muraki"
+         present=True
+  [PASS] note contains admission string: "7-class convergent obstruction"
+         present=True
+  [PASS] note contains admission string: "P1 in its strong sense"
+         present=True
+  [PASS] note avoids forbidden status-promotion / overclaim strings
+         forbidden_hits=[]
+
+=== TOTAL: PASS=31, FAIL=0 ===
+
+----- stderr -----
+

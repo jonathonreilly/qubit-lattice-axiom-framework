@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_transport_status_terminal_synthesis.py
+runner_sha256: 5385fe1593d74dc012d416dd8f04b722f472d50f1cb9725d8c1c85941e3a316c
+timeout_sec: 120
+exit_code: 1
+elapsed_sec: 0.08
+status: nonzero_exit
+----- stdout -----
+DM leptogenesis transport status terminal synthesis check
+note: docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md
+
+PASS: synthesis note is meta
+PASS: does not declare pipeline status (no effective_status, no audited_clean)
+PASS: synthesis carries authority disclaimer
+PASS: synthesis explicitly disclaims new derivation / new vocabulary
+PASS: synthesis cites the leaf by markdown link
+PASS: leaf row exists in ledger
+PASS: leaf criticality=critical | got critical
+PASS: leaf registers dep: dm_leptogenesis_exact_kernel_closure_note_2026-04-15
+PASS: leaf registers dep: dm_leptogenesis_hrad_theorem_note_2026-04-16
+PASS: leaf registers dep: dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16
+PASS: leaf registers dep: dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16
+PASS: leaf registers dep: dm_leptogenesis_transport_integral_theorem_note_2026-04-16
+PASS: leaf registers dep: dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16
+PASS: leaf registers dep: dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16
+PASS: leaf registers dep: dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16
+FAIL: dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16 audit_status == audited_renaming | got unaudited
+FAIL: dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16 effective_status_reason == terminal_audit | got awaiting_audit
+PASS: synthesis links upstream: dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16
+FAIL: dm_leptogenesis_transport_integral_theorem_note_2026-04-16 audit_status == audited_numerical_match | got unaudited
+FAIL: dm_leptogenesis_transport_integral_theorem_note_2026-04-16 effective_status_reason == terminal_audit | got awaiting_audit
+PASS: synthesis links upstream: dm_leptogenesis_transport_integral_theorem_note_2026-04-16
+FAIL: dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16 audit_status == audited_numerical_match | got unaudited
+FAIL: dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16 effective_status_reason == terminal_audit | got awaiting_audit
+PASS: synthesis links upstream: dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16
+FAIL: dm_leptogenesis_hrad_theorem_note_2026-04-16 audit_status == audited_conditional | got unaudited
+FAIL: dm_leptogenesis_hrad_theorem_note_2026-04-16 effective_status_reason == terminal_audit | got awaiting_audit
+PASS: synthesis links upstream: dm_leptogenesis_hrad_theorem_note_2026-04-16
+FAIL: dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16 audit_status == audited_conditional | got unaudited
+FAIL: dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16 effective_status_reason == terminal_audit | got awaiting_audit
+PASS: synthesis links upstream: dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16
+PASS: synthesis uses repo-canonical 'audited_renaming'
+PASS: synthesis uses repo-canonical 'audited_numerical_match'
+PASS: synthesis uses repo-canonical 'audited_conditional'
+PASS: synthesis uses repo-canonical 'terminal_audit' reason
+PASS: status block: proposal_allowed: false
+PASS: status block: proposal_allowed_reason cites synthesis-not-derivation
+PASS: recommendation: do not run audit-backlog campaigns on this leaf
+PASS: recommendation: do not run retained-promotion campaigns on this leaf
+FAIL: synthesis cross-references BAE terminal-synthesis template
+PASS: BAE template file exists on disk
+PASS: review-loop rule for future campaigns present
+PASS: review-loop rule notes block is terminal at audit-lane layer
+FAIL: five terminal-flagged upstreams confirmed in ledger | counted 0/5
+PASS: synthesis cites 'five of eight' load-bearing deps as terminal
+
+TOTAL: PASS=32 FAIL=12
+
+----- stderr -----
+

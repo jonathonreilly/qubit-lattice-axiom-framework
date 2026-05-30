@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/guard_reconciliation_n100_q003_certificate.py
+runner_sha256: cb608fed283a57de24b0beaebfad58b8f2faa1861c6ecf26ade96380cbf1eb35
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.43
+status: ok
+----- stdout -----
+======================================================================================================================
+DENSE + PRUNE CHANNEL-COUNT GUARD
+  Same dense 3D same-graph setup; guard protects eff_ch instead of coarse reach/core
+======================================================================================================================
+
+  seeds: 16
+  n_layers: (100,)
+  nodes/layer: 60
+  connect_radius: 2.7
+  prune iterations: 1
+  k-band: (3.0, 5.0, 7.0)
+  guard floor: max(2.50, eff_ch * (1 - 0.15))
+
+   N      mode     q  valid     pur_b     pur_p     d_pur    grav_b    grav_p    d_grav   pur_SE  grav_SE    eff_b    eff_p  removed   flip  corr_eff
+----------------------------------------------------------------------------------------------------------------------
+ 100     plain  0.03      4    0.9080    0.9174   +0.0094   +1.5462   -1.6894   -3.2356   0.1372   2.4066    5.005    2.447    115.0      3  -0.464
+ 100   guarded  0.03      6    0.9138    0.9098   -0.0039   +1.5963   +1.4691   -0.1272   0.0026   0.3132    5.159    5.056     14.5      0  -0.231
+
+======================================================================================================================
+KEY
+  guarded = channel-count floor enforced on eff_ch
+  corr_eff = corr(delta_grav, delta_eff_ch) within each row
+  The guard is only meaningful if it lowers flips without killing pur_cl gains
+======================================================================================================================
+
+CERTIFICATE PASS: N=100 q=0.03 aggregate guard check passed
+BOUNDARY: gravity flips are removed at a small bounded purity cost
+
+----- stderr -----
+

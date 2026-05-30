@@ -1,0 +1,150 @@
+# Active Review Queue
+
+**Status:** canonical live queue for current-main review feedback  
+**Purpose:** single place to record reviewer findings that still need a decision,
+fix, or explicit rejection on `main`
+
+## Rule
+
+Use this file for **active** review feedback only.
+
+- add new reviewer findings here first
+- keep each item short and decision-oriented
+- link any long-form packet in
+  [`docs/work_history/repo/review_feedback/`](../work_history/repo/review_feedback/README.md)
+- when an item is resolved, remove it from the open list and record it in the
+  queue history section or the linked detailed packet
+
+Do not use scattered backlog notes or branch-local memos as the live review
+truth surface.
+
+## Current State
+
+As of `2026-04-18`, there are **no live repo-governance or claim-surface
+blockers** waiting in the review queue. The remaining items are science-facing
+open lanes rather than review-hygiene debt.
+
+Current science/open-lane follow-ups:
+
+- irregular off-lattice sign lane: portability beyond the bounded centered
+  core-packet surface remains open
+- periodic 2D torus diagnostics: nearby torus probes still need code audit
+  before reuse outside the corrected retained notes
+- Wilson two-body lane: full both-masses law and action-reaction remain open
+- boundary-law / holographic lane: keep the effect bounded and do not overread
+  it as a holography derivation
+- `2026-05-03-gbare-parent-retention-gate`
+  Scope: `G_BARE_DERIVATION_NOTE.md` and downstream `g_bare = 1` status
+  surfaces.
+  Finding: the salvaged rescaling-freedom and constraint-vs-convention
+  candidate rows must be independently audited and retained, with retained
+  dependency closure, before the parent theorem or status surfaces cite them
+  as closing repair targets.
+  Disposition: `science-needed`.
+- `2026-05-03-pr463-axiom-first-weave-gate`
+  Scope: PR #463, `CANONICAL_HARNESS_INDEX.md`,
+  `docs/publication/ci3_z3/DERIVATION_ATLAS.md`, and the `AXIOM_FIRST_*`
+  package.
+  Finding: do not weave grouped axiom-first foundational blocks onto retained
+  core or publication authority surfaces while member rows are mixed
+  `audited_failed`, `audited_conditional`, and `unaudited`; that would
+  authority-promote non-clean claims.
+  Disposition: `science-needed`.
+  Detail:
+  [`PR463_AXIOM_FIRST_WEAVE_REVIEW_2026-05-03.md`](../work_history/repo/review_feedback/PR463_AXIOM_FIRST_WEAVE_REVIEW_2026-05-03.md)
+- `2026-05-03-pr484-kz-external-lift-gate`
+  Scope: PR #484,
+  `GAUGE_SCALAR_BRIDGE_KZ_EXTERNAL_LIFT_THEOREM_NOTE_2026-05-03.md`,
+  `scripts/frontier_gauge_scalar_bridge_kz_external_lift.py`, and the
+  gauge-scalar temporal bridge parent chain.
+  Finding: do not land the K-Z / SU(3) external-lift package as a bounded
+  theorem or parent status promotion while the runner fails without optional
+  CVXPY and the load-bearing `W_lift = 0.05` is not extracted from an
+  explicit SU(3), beta=6 primary-source bracket; this is an open
+  external-lift candidate, not retained authority.
+  Disposition: `science-needed`.
+  Detail:
+  [`PR484_KZ_EXTERNAL_LIFT_REVIEW_2026-05-03.md`](../work_history/repo/review_feedback/PR484_KZ_EXTERNAL_LIFT_REVIEW_2026-05-03.md)
+- Planck Target 2 / area-law carrier: the simple-fiber Widom class is now
+  closed negatively; any positive `1/4` entropy carrier needs a physical
+  multi-pocket/multi-interval law or a gapped horizon-sector primitive-boundary
+  theorem
+- memory lane: protocol- and geometry-stable observable remains open
+- emergent-geometry growth: multi-size, multi-seed stability remains open
+- `2026-05-20-d3-lower-bound-bridge-sign`
+  Scope: PR #1603,
+  `DIMENSION_SELECTION_NOTE.md`, and the attempted
+  `DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_NOTE_2026-05-20.md`.
+  Finding: the submitted analytic lower-bound bridge was not landed because
+  its Green-function/force-sign argument does not consistently match the
+  existing runner's phase-coupling observable, especially around the
+  two-dimensional logarithmic case.
+  Disposition: `science-needed`.
+- `2026-05-20-single-clock-uniqueness-negative-gate`
+  Scope: PR #1603 and
+  `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`.
+  Finding: the submitted no-spatial-reflection-positivity / no-second-clock
+  uniqueness proof was not landed because it is a broad negative claim with
+  unaudited dependencies and no no-go-discipline N1-N8 checklist.
+  Disposition: `science-needed`.
+- `2026-05-22-prr-framework-rule-approval-gate`
+  Scope: PR #1658, pre-record reference state invariance, and the downstream
+  Born-rule audit chain.
+  Finding: LSP-projective was explicitly approved and ratified on 2026-05-22
+  in `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening III"; the
+  independent audit lane still owns all downstream verdicts. Do not ratify PRR
+  as a load-bearing framework rule from review-loop alone. The submitted branch
+  identified plausible conditional bridges and dispatch targets, but PRR remains
+  a new framework-rule commitment rather than a derivation from Axiom 1 /
+  Axiom 2, so it requires explicit user approval before any ratification or
+  audit-dispatch sidecar can land.
+  Disposition: `science-needed`.
+- `2026-05-29-pr2203-so4-power-counting-marginal-anisotropy-gate`
+  Scope: PR #2203,
+  `EMERGENT_SO4_CONDITIONAL_ON_CONTINUUM_LIMIT_POWER_COUNTING_NARROW_THEOREM_NOTE_2026-05-29.md`,
+  and its companion power-counting runner.
+  Finding: the exact spatial `O_h` / cubic-harmonic power-counting checks are
+  useful, but the submitted theorem over-promotes them to a full SO(4)
+  all-`n`-point continuum implication; on a `Z^3 x Z_tau` surface with only
+  spatial cubic symmetry, a marginal time-vs-space kinetic anisotropy is not
+  excluded by the runner. Salvage should either add an explicit retained or
+  admitted Euclidean kinetic-normalization / 4D-hypercubic premise, or narrow
+  the theorem to spatial cubic artifact power counting.
+  Disposition: `science-needed`.
+- `2026-05-29-pr2207-eta-holonomy-braid-invariant-gap`
+  Scope: PR #2207,
+  `ETA_PHASE_HOLONOMY_AREA_FLUX_NOT_BRAID_INVARIANT_NARROW_NO_GO_NOTE_2026-05-29.md`,
+  and its companion runner.
+  Finding: the exact `eta`-phase spin-diagonalization and `Z_2` area-flux
+  computation are valuable, but the no-go conclusion is not yet supported:
+  the runner asserts rather than proves that the compared detour swaps are the
+  same element of `B_2(Z^3)` and that a one-token plaquette loop is
+  null-homotopic in `UD_2(Z^3)`. A graph treated as a 1-complex does not
+  automatically include geometric plaquette faces. Salvage should either
+  compute/establish the relevant `UD_2` homotopy or land only the narrower
+  base-connection area-flux theorem.
+  Disposition: `science-needed`.
+
+## Intake Format
+
+Record each new finding as one bullet:
+
+- `ID`
+  short label; date if needed
+- `Scope`
+  affected lane, note, script, or package surface
+- `Finding`
+  one-sentence statement of the issue
+- `Disposition`
+  one of: `triage`, `fix on main`, `support-only demotion`, `science-needed`,
+  `reject`
+- `Detail`
+  optional link to a longer packet in work history
+
+## Queue History
+
+- `2026-04-18`
+  repo-wide review/backlog cleanup completed; the old operational review
+  packets and planning backlogs were moved out of the front-door `docs/`
+  surface into [`docs/work_history/repo/review_feedback/`](../work_history/repo/review_feedback/README.md)
+  and [`docs/work_history/repo/backlog/`](../work_history/repo/backlog/README.md)

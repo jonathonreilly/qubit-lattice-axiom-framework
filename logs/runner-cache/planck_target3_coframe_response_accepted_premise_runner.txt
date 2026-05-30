@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/planck_target3_coframe_response_accepted_premise_runner.py
+runner_sha256: 14b78a34cf0a5b5b0ba2f28308f82e82e3c18b986fc1276f94b7e25c45c5352e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+PLANCK TARGET-3 COFRAME-RESPONSE ACCEPTED-PREMISE BRIDGE
+
+== Part 0: source firewall ==
+PASS: source contains required phrase: Accepted Premises Registration
+PASS: source contains required phrase: (P1)
+PASS: source contains required phrase: metric-compatible coframe response
+PASS: source contains required phrase: accepted-premise packet entry
+PASS: source contains required phrase: not derived in this bridge
+PASS: source contains required phrase: MINIMAL_AXIOMS_2026-05-20.md
+PASS: source contains required phrase: scripts/planck_target3_coframe_response_accepted_premise_runner.py
+PASS: source contains required phrase: CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md
+PASS: source contains required phrase: bounded_theorem
+PASS: source contains required phrase: Status authority
+PASS: source contains required phrase: independent audit lane only
+PASS: source note excludes forbidden phrase: PDG load-bearing value
+PASS: source note excludes forbidden phrase: load-bearing fitted
+PASS: source note excludes forbidden phrase: Monte Carlo measurement consumed
+PASS: source note excludes forbidden phrase: load-bearing g_bare value
+
+== Part 1: (B1) polarization identity ==
+PASS: (B1) D(e_t)^2 = ||e_t||^2 I (metric-compatibility specialised)
+PASS: (B1) D(e_n)^2 = ||e_n||^2 I (metric-compatibility specialised)
+PASS: (B1) D(e_1)^2 = ||e_1||^2 I (metric-compatibility specialised)
+PASS: (B1) D(e_2)^2 = ||e_2||^2 I (metric-compatibility specialised)
+PASS: (B1) polarization at a=n, b=t: D(e_a)D(e_b)+D(e_b)D(e_a) = 0
+PASS: (B1) polarization at a=1, b=t: D(e_a)D(e_b)+D(e_b)D(e_a) = 0
+PASS: (B1) polarization at a=1, b=n: D(e_a)D(e_b)+D(e_b)D(e_a) = 0
+PASS: (B1) polarization at a=1, b=2: D(e_a)D(e_b)+D(e_b)D(e_a) = 0
+PASS: (B1) polarization at a=2, b=t: D(e_a)D(e_b)+D(e_b)D(e_a) = 0
+PASS: (B1) polarization at a=2, b=n: D(e_a)D(e_b)+D(e_b)D(e_a) = 0
+PASS: (B1) general polarization u = e_t + e_n: D(u)^2 = 2 I
+
+== Part 2: (B2) Clifford relations ==
+PASS: (B2) Gamma_0^2 = I (square one)
+PASS: (B2) Gamma_1^2 = I (square one)
+PASS: (B2) Gamma_2^2 = I (square one)
+PASS: (B2) Gamma_3^2 = I (square one)
+PASS: (B2) anticommutator Gamma_0 Gamma_1 + Gamma_1 Gamma_0 = 0
+PASS: (B2) anticommutator Gamma_0 Gamma_2 + Gamma_2 Gamma_0 = 0
+PASS: (B2) anticommutator Gamma_0 Gamma_3 + Gamma_3 Gamma_0 = 0
+PASS: (B2) anticommutator Gamma_1 Gamma_0 + Gamma_0 Gamma_1 = 0
+PASS: (B2) anticommutator Gamma_1 Gamma_2 + Gamma_2 Gamma_1 = 0
+PASS: (B2) anticommutator Gamma_1 Gamma_3 + Gamma_3 Gamma_1 = 0
+PASS: (B2) anticommutator Gamma_2 Gamma_0 + Gamma_0 Gamma_2 = 0
+PASS: (B2) anticommutator Gamma_2 Gamma_1 + Gamma_1 Gamma_2 = 0
+PASS: (B2) anticommutator Gamma_2 Gamma_3 + Gamma_3 Gamma_2 = 0
+PASS: (B2) anticommutator Gamma_3 Gamma_0 + Gamma_0 Gamma_3 = 0
+PASS: (B2) anticommutator Gamma_3 Gamma_1 + Gamma_1 Gamma_3 = 0
+PASS: (B2) anticommutator Gamma_3 Gamma_2 + Gamma_2 Gamma_3 = 0
+
+== Part 3: (B3) 16 Clifford words span End(K) = M_4(C) ==
+PASS: (B3a) sixteen Clifford words enumerated (16)
+PASS: (B3a) Gram matrix of 16 Clifford words has rank 16 (=> linearly independent) (rank=16)
+PASS: (B3a) dim_C End(K) = 16 matches the count of Clifford words
+PASS: (B3b) dim_C Cl(4, C) = 2^4 = 16 (Wedderburn)
+PASS: (B3b) dim_C V_irrep = 2^{d/2} = 4 at d = 4 (Schur on simple summand)
+PASS: (B3) volume element omega = Gamma_t Gamma_n Gamma_1 Gamma_2 is well-defined; omega^2 in {I, -I}
+
+== Part 4: (B4) oriented CAR modes ==
+PASS: (B4) anticommutator of c_i and c_j vanishes for cN cN
+PASS: (B4) anticommutator of c_i and c_j vanishes for cT cT
+PASS: (B4) anticommutator of c_i and c_j vanishes for cN cT
+PASS: (B4) anticommutator {'cN cN^dag'} = I
+PASS: (B4) anticommutator {'cT cT^dag'} = I
+PASS: (B4) anticommutator {'cN cT^dag'} = 0
+PASS: (B4) anticommutator {'cT cN^dag'} = 0
+
+== Part 5: dependency status check ==
+PASS: CL3_COMPLEXIFICATION_SPLIT note file exists (docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+PASS: Parent Target-3 row file exists (docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
+PASS: Canonical narrow-bridge template file exists (docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+
+== Part 6: no forbidden imports ==
+PASS: source note excludes literature comparator: PDG obs value
+PASS: source note excludes literature comparator: fitted selector consumed
+PASS: source note excludes literature comparator: Newton constant G_obs imported
+PASS: source note excludes literature comparator: Planck length l_P_obs imported
+PASS: source note excludes literature comparator: Bekenstein-Hawking entropy observed import
+PASS: source note excludes literature comparator: Wilson plaquette load-bearing input
+
+TOTAL: PASS=64 FAIL=0
+VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from the retained Cl(3) complexification split + accepted-premise packet (P1) by polarization and finite-dim sympy linear algebra.
+
+----- stderr -----
+

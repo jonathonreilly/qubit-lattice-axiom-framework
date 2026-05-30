@@ -180278,24 +180278,46 @@
       "verdict_rationale": "The runner performs substantive checks of lattice dispersion symmetries, continuum-form invariance, Euclidean convergence, and the corrected normalized K4 decomposition, but several combined-theorem and dependency-link checks are narrative assertions rather than independent derivations. The one-hop LIGHT_CONE_FRAMING_NOTE.md authority is marked unaudited, and the Planck-pin/unit-map needed for the (E/M_Pl)^2 and experimental-sensitivity readout is explicitly not retained in the restricted packet. Thus the continuum free-scalar core is plausibly closed, but the source note's broader stated package remains conditional."
     },
     "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T13:14:07.220062+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "283aae3b2446b7afc3df277e0ae22631fcf19274ab072c101ed2d897d1614f9f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-131110-e4645442-lorentz_boost_free_stagg",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic limit and scalar-spectrum harmonic checks close for the displayed D~ sector. The stated free-staggered 2-point claim still relies on an open finite-a hypercube spin-taste reconstruction boundary: the packet itself admits O(a) non-spectator taste-mixing terms, so O(a^2) is not established as the leading correction of the full free staggered spin-taste propagator.",
       "claim_id": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-      "claim_scope": null,
+      "claim_scope": "Audited the algebraic continuum SO(4) covariance of the explicitly displayed free taste-spectator Dirac propagator and the taste-singlet scalar-spectrum ell=4 O(a^2) anisotropy.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T13:14:07.220062+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -180304,20 +180326,22 @@
         "cpt_exact_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "As a -> 0 with p fixed, sin(p_mu a)/a -> p_mu and Delta(p) -> m^2+p^2, so the displayed taste-spectator propagator tends to (m 1 - i gamma.p)/(p^2+m^2) with an O(a^2) Sigma_mu p_mu^4 anisotropy.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "7c8c76c1558ca37bacd692ccd12bfa6e014eab32247c248192dcf10daffa4992",
       "note_path": "docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow the O(a^2) leading-correction statement to the taste-singlet scalar spectrum/displayed taste-spectator D~ sector, or add a retained finite-a spin-taste reconstruction proving the admitted O(a) non-spectator taste terms are outside the audited observable.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-30T12:51:03.723661+00:00",
@@ -180377,18 +180401,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 36,
         "B": 0,
-        "C": 0,
+        "C": 11,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 47
       },
       "runner_path": "scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py",
       "title": "Free Staggered-Dirac 2-Point Schwinger Function: SO(4) Covariance in the Continuum Limit (Narrow)",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely checks the Clifford inverse, continuum covariance, scalar-spectrum Delta, finite lattice spectrum, and ell=4 harmonic identities; it is not a trivial PASS printer and contains no external comparator. However, the source note\u2019s formula inventory is broader than what those checks establish: it simultaneously admits honest finite-a O(a) non-spectator taste mixing while presenting the O(a^2) dimension-6 ell=4 term as the leading lattice correction for the free staggered-Dirac 2-point. The cited K\u00e4hler-Dirac authority is retained-bounded but explicitly leaves the physical dynamical staggered/K\u00e4hler-Dirac operator identification open, so retained status does not close this bridge for the full stated propagator."
     },
     "lorentz_kernel_positive_closure_note": {
       "audit_date": null,

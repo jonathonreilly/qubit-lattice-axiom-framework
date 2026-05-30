@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1139 |
+| unaudited | 1138 |
 | meta | 237 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 941 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1376 |
+| `unaudited` | 1375 |
 
 | claim_type | count |
 |---|---:|
@@ -1105,6 +1105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_boost_covariance_3plus1d_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -9326,6 +9327,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **open / conditional deps cited:**
   - `LIGHT_CONE_FRAMING_NOTE.md`
   - `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md`
+- **auditor confidence:** high
+
+### `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic continuum SO(4) covariance of the explicitly displayed free taste-spectator Dirac propagator and the taste-singlet scalar-spectrum ell=4 O(a^2) anisotropy.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-131110-e4645442-lorentz_boost_free_stagg`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** As a -> 0 with p fixed, sin(p_mu a)/a -> p_mu and Delta(p) -> m^2+p^2, so the displayed taste-spectator propagator tends to (m 1 - i gamma.p)/(p^2+m^2) with an O(a^2) Sigma_mu p_mu^4 anisotropy.  _(class `A`)_
+- **chain closes:** False — The algebraic limit and scalar-spectrum harmonic checks close for the displayed D~ sector. The stated free-staggered 2-point claim still relies on an open finite-a hypercube spin-taste reconstruction boundary: the packet itself admits O(a) non-spectator taste-mixing terms, so O(a^2) is not established as the leading correction of the full free staggered spin-taste propagator.
+- **rationale:** The runner genuinely checks the Clifford inverse, continuum covariance, scalar-spectrum Delta, finite lattice spectrum, and ell=4 harmonic identities; it is not a trivial PASS printer and contains no external comparator. However, the source note’s formula inventory is broader than what those checks establish: it simultaneously admits honest finite-a O(a) non-spectator taste mixing while presenting the O(a^2) dimension-6 ell=4 term as the leading lattice correction for the free staggered-Dirac 2-point. The cited Kähler-Dirac authority is retained-bounded but explicitly leaves the physical dynamical staggered/Kähler-Dirac operator identification open, so retained status does not close this bridge for the full stated propagator.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `lorentz_violation_derived_note`

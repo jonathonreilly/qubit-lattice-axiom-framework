@@ -19421,6 +19421,14 @@
       "to": "matter_inertial_closure_note"
     },
     {
+      "from": "newton_law_derived_note",
+      "to": "gravity_full_self_consistency_note"
+    },
+    {
+      "from": "newton_law_derived_note",
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+    },
+    {
       "from": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
       "to": "gravity_clean_derivation_note"
     },
@@ -68204,14 +68212,17 @@
     "newton_law_derived_note": {
       "claim_id": "newton_law_derived_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem.",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "gravity_full_self_consistency_note",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "2dd00603a4db9e54970f4df52be19923a35a959af47bd4fbc283846df69f11b1",
+      "note_hash": "fae94c8edc985c93899c55a59631cb405bcb642a42ac00e91894d1127887f355",
       "path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
-      "runner_path": "scripts/newton_law_potential_kernel_scope_check.py",
-      "title": "Newton Potential-Kernel Algebra Packet on Z^3"
+      "runner_path": "scripts/frontier_distance_law_definitive.py",
+      "title": "Newton's Law Conditional Worked Example on the Z^3 Spatial Substrate"
     },
     "newton_persistent_pattern_control_note_2026-04-11": {
       "claim_id": "newton_persistent_pattern_control_note_2026-04-11",
@@ -87586,7 +87597,6 @@
     "neutrino_majorana_retained_lane_packet_2026-04-16_note_2026-05-17",
     "neutrino_mass_reduction_to_dirac_note_2026-05-17",
     "newton_derivation_note_2026-05-17",
-    "newton_law_derived_note",
     "newton_persistent_pattern_control_note_2026-04-11",
     "next_chunk_recommendation",
     "nn_lattice_rescaled_c2_derivation_note_2026-05-10_note_2026-05-17",

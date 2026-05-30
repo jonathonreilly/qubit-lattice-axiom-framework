@@ -1,0 +1,23 @@
+
+========================================================================
+TRACK 1: full complex-b covariant measure -> DIMENSION (Q=1), not block-count
+========================================================================
+  COMPLEX b (2 dof, FULL operator)  : median Q=1.337
+  REAL b   (Im b=0, 1 dof)          : median Q=0.667
+  isotype HS-weight ratio doublet/singlet: complex=2.00 (DIM)  real=1.00 (block)
+  => A1 trace forces DIMENSION (2:1, Q=1). 2/3 needs Im b=0 import. Corrects moves 3/B/closure.
+
+========================================================================
+TRACK 2: entropy saddle at b/a=1/sqrt2 exists but is block-weight-conditional
+========================================================================
+  2-sector entropy of {3a^2,6b^2} stationary at b/a=sqrt2/2, S''<0 (genuine max).
+  but weighted-log saddle r*=nu/(2mu); r=1/2 iff nu=mu = equal BLOCK weight (Track-1 choice).
+  unconstrained native saddle = b=0 (Q=1/3). Minimum AT r=1/2 unconditionally = F=(r-1/2)^2 (circular).
+
+========================================================================
+NET (corrected)
+========================================================================
+  A1 canonical measure -> Q=1 (dim);  dynamics -> Q=1/3 (b=0);  data -> Q=2/3 needs an IMPORT.
+  Block-count/2/3 = the Im b=0 (doublet-phase-not-a-dof) restriction, in tension w/ theta!=0
+  (the 3-distinct spectrum). Exact 2/3 = chiral {M,Gamma_chi}=0 import. The session's 'native
+  lean toward 2/3' is RETRACTED: it used real b; A1's full-operator measure votes Q=1.

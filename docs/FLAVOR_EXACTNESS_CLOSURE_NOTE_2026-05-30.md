@@ -7,6 +7,14 @@ Imports nothing.
 **Source:** 7-angle exactness press (`wf_53b417b9`, 0/7 native exact-forcings survived) +
 independent verification.
 
+> ⚠️ **CORRECTED by `FLAVOR_TWO_PATHS_VERDICT_NOTE_2026-05-30`.** The claim here that
+> "the native covariant measure *centers* on 2/3" used **real `b`** (`Im b=0`)
+> implicitly. With the **full complex-`b`** Hermitian operator (the physical case,
+> `θ=arg(b)≠0` for 3 distinct masses), the *same* covariant trace measure gives the
+> **dimension weighting → median Q≈1.34**, not 2/3. So A1's canonical full-operator
+> measure votes **Q=1**, not 2/3; block-count/2/3 needs the `Im b=0` import. The
+> "native median 2/3" reading below is retracted accordingly.
+
 ## The question and the answer
 The observed charged-lepton operator sits at `Q=2/3` to ~1e-5. **What forces it
 exactly?** Answer: **no native mechanism forces exact 2/3.** The native covariant

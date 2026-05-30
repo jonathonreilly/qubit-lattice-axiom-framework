@@ -39,7 +39,7 @@ microcausality (Block 04).
 
 ## Retained inputs
 
-- **RP transfer matrix and `H_phys`.** From the retained
+- **RP transfer matrix and `H_phys`.** From the
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md).
   Defines the global cyclic vector `|Ω⟩` (the GNS vector for the
   RP-positive form).
@@ -201,7 +201,7 @@ Hence `B` annihilates `A(O) |Ω⟩`, which is dense in `H_phys` by
 
 - A1 (local-algebra tensor structure).
 - A2 (Z^3 substrate).
-- Retained RP (`H_phys`, cyclic vacuum, transfer matrix).
+- RP (`H_phys`, cyclic vacuum, transfer matrix).
 - Spectrum condition (H ≥ 0; analytic continuation to upper
   half-plane).
 - Retained cluster decomposition (vacuum uniqueness).
@@ -235,7 +235,7 @@ vacuum's entanglement spans all scales.
 
 ## Honest status
 
-**Source theorem on A_min + retained RP + spectrum condition +
+**Source theorem on A_min + RP + spectrum condition +
 cluster decomposition + Block 04 microcausality.** (R1)–(R3) follow
 by the standard Streater-Wightman 1964 argument adapted to the
 framework's lattice setting.
@@ -252,11 +252,11 @@ equal to dim(H_phys)).
 
 ```yaml
 actual_current_surface_status: support
-conditional_surface_status: derived support theorem on A_min + retained RP + spectrum condition + cluster decomposition + Block 04 microcausality
+conditional_surface_status: derived support theorem on A_min + RP + spectrum condition + cluster decomposition + Block 04 microcausality
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Depends on retained-but-audit-pending RP, spectrum-condition, and cluster-decomposition support notes plus Block 04 microcausality which is itself audit-pending. Per physics-loop SKILL retained-proposal certificate item 4."
+proposal_allowed_reason: "Depends on audit-pending RP, spectrum-condition, and cluster-decomposition support notes plus Block 04 microcausality which is itself audit-pending. A chain of support cannot be marked retained-grade until all dependencies are ratified on the current authority surface."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -269,7 +269,7 @@ bare_retained_allowed: false
 ## Citations
 
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
-- retained RP: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- RP: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - spectrum condition: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - retained cluster decomposition: [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
 - Block 04 microcausality: [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)

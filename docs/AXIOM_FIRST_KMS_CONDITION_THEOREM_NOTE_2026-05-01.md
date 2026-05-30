@@ -430,7 +430,7 @@ conditional_surface_status: derived support theorem on A_min + RP + spectrum con
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "depends on RP + spectrum condition support notes that are themselves audit-pending; promotion to proposed_retained requires those upstream notes ratified first."
+proposal_allowed_reason: "depends on RP + spectrum condition support notes that are themselves audit-pending; retained-grade status requires those upstream notes ratified first."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```

@@ -12,7 +12,7 @@
 
 ## Scope
 
-This note proves, on `A_min` plus the retained RP + spectrum condition
+This note proves, on `A_min` plus the RP + spectrum condition
 support theorems, the **lattice microcausality theorem** for the
 framework's reconstructed Hamiltonian `H` on `H_phys`. The result has
 two parts:
@@ -65,7 +65,7 @@ cluster-decomposition theorem (which is the *spatial* decay theorem).
 
 ## Retained inputs
 
-- **RP transfer matrix.** From the retained [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
+- **RP transfer matrix.** From the [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
   `T : H_phys → H_phys` is Hermitian, positive, and bounded. The
   Hamiltonian `H = -log(T) / a_τ` is well-defined and bounded below.
 - **Spectrum condition.** From the [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md),
@@ -294,7 +294,7 @@ statement. ∎
 - A2 (Z^3 graph metric).
 - A3 (NN staggered hop range r_h = 1).
 - A4 (plaquette gauge range r_g = 1).
-- Retained RP transfer matrix (defines H_phys).
+- RP transfer matrix (defines H_phys).
 - Spectrum condition (H bounded operator with finite J).
 - Standard Lieb-Robinson 1972 / Nachtergaele-Sims 2010 lattice
   estimation (admitted-context, theorem-grade lattice statistics
@@ -328,12 +328,12 @@ for any nonempty open region.
 
 ## Honest status
 
-**Source theorem on A_min + retained RP + spectrum
+**Source theorem on A_min + RP + spectrum
 condition.** (M1)–(M3) are derived from:
 
 - A1 (equal-time tensor product structure);
 - A3, A4 (finite-range hopping/gauge);
-- retained RP (defines H, H_phys);
+- RP (defines H, H_phys);
 - spectrum condition (H bounded);
 - standard Lieb-Robinson lattice estimation (admitted-context).
 
@@ -347,11 +347,11 @@ exponential decay of `‖[α_t(O_0), O_d]‖` outside the lightcone
 
 ```yaml
 actual_current_surface_status: support
-conditional_surface_status: derived support theorem on A_min + retained RP + spectrum condition
+conditional_surface_status: derived support theorem on A_min + RP + spectrum condition
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Depends on retained-but-audit-pending RP and spectrum-condition support notes. Per physics-loop SKILL retained-proposal certificate item 4, a chain of support cannot promote to proposed_retained until all dependencies are ratified retained on the current authority surface."
+proposal_allowed_reason: "Depends on audit-pending RP and spectrum-condition support notes. A chain of support cannot be marked retained-grade until all dependencies are ratified on the current authority surface."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -367,7 +367,7 @@ bare_retained_allowed: false
 ## Citations
 
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
-- retained RP support note:
+- RP support note:
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - spectrum-condition support note:
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)

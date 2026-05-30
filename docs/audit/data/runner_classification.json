@@ -2448,18 +2448,6 @@
       "dominant_class": "C",
       "runner": "scripts/audit_companion_chsh_structural_bound_narrow_exact_2026_05_17.py"
     },
-    "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 7,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py"
-    },
     "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -27738,21 +27726,6 @@
         "B": 0,
         "C": 6,
         "D": 3
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true
-    },
-    "scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py": {
-      "assert_count": 1,
-      "claims": [
-        "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 7,
-        "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1135 |
+| unaudited | 1134 |
 | meta | 237 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 943 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1372 |
+| `unaudited` | 1371 |
 
 | claim_type | count |
 |---|---:|
@@ -1126,6 +1126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_wigner_l3_treewidth_infeasible_2026-05-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -12824,6 +12825,25 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The parity-sheared shell sweep passes 12/21 sampled rows, with exact zero-source and neutral controls, sign orientation on the passing subset, drift coverage [0.0, 0.05, 0.1, 0.15, 0.2, 0.3], and mean exponent 0.999895, so the construction is a narrow sixth-family basin rather than a generic theorem.  _(class `B`)_
 - **chain closes:** True — SIXTH_FAMILY_SHEARED_SWEEP.py currently reproduces the note's pass count, drift coverage, exact zero/neutral controls, and mean weak-field exponent. The note's conclusion is bounded and selective, matching the data rather than claiming family-wide closure.
 - **rationale:** The sheared basin note closes at bounded tier: the runner verifies the exact pass/fail structure and the note states the correct narrow interpretation. It neither expands the result into a universal connectivity theorem nor hides the failed rows. Residual risk is only missing ledger runner attachment; the local sweep script is the direct evidence surface.
+- **auditor confidence:** high
+
+### `sm_gstar_higgs_sector_count_stretch_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the restricted-packet claim that the Higgs-sector contribution to the framework-native high-T g_* census is one thermalized EWSB doublet, so g_* = 106.75 rather than 110.75, with flavor-sector two-offset/two-Higgs textures adding no Fock-space degrees of freedom.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-132806-49d234e7-sm_gstar_higgs_sector_co`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** D9/D16/D17 are used to identify the framework-native EWSB census object as exactly one composite SU(2)_L doublet H_unit with 4 real scalar dof, while the retained two-Higgs result is only a Yukawa-texture statement adding no thermalized dof.  _(class `A`)_
+- **chain closes:** False — The arithmetic and the displayed Yukawa-texture matrix identities check out, but the cited Ward authority only establishes a unique scalar-singlet bilinear H_unit on Q_L, not that this object is a complex SU(2)_L EWSB doublet with four thermalized scalar modes. The EW Higgs note assumes one doublet, and the packet lacks a retained bridge identifying that assumed doublet with the Ward H_unit field content and excluding all second-doublet census carriers.
+- **rationale:** The runner successfully verifies the finite g_* arithmetic, the monomial versus two-offset Yukawa algebra, and several file/token checks, but its decisive 2HDM-exclusion and framework-native one-doublet conclusions are asserted rather than derived. The source note overuses D17: uniqueness of a unit-normalized scalar singlet on Q_L is not the same as derivation of one complex SU(2)_L EWSB doublet in the thermal census. The flavor-sector distinction is plausible within the packet, but the claim still depends on an unprovided retained bridge from composite scalar-singlet structure to EWSB doublet field content and on unaudited one-Higgs/Z3/2HDM support notes for parts of the non-dof argument.
+- **open / conditional deps cited:**
+  - `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`
+  - `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`
+  - `YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md`
+  - `HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md`
+  - `SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md`
 - **auditor confidence:** high
 
 ### `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10`

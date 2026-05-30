@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 """Pattern A narrow runner for `PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27`.
 
-The runner exercises the algebraic content of the supplied SU(3)
-Wilson-plaquette perturbative expansion at beta=6 GIVEN named-coefficient
-inputs from the literature, and tests whether tadpole-improvement plus a
-finite-order truncation plus a Pade [m/n] resummation reaches the supplied MC
-comparator <P>_MC = 0.5934 to any controlled accuracy.
+The runner exercises the algebraic content of the SU(3) Wilson-plaquette
+perturbative expansion at beta=6 GIVEN named-coefficient inputs from the
+literature, and tests whether tadpole-improvement plus a finite-order
+truncation plus a Pade [m/n] resummation analytically reaches the MC
+value <P>_MC = 0.5934 to any controlled accuracy.
 
 This is a BOUNDED OBSTRUCTION computation: the named perturbative
-coefficients are a supplied literature coefficient packet for this finite
-route (Di Renzo et al., Horsley-Perlt-Rakow-Schierholz et al.,
-Bali-Bauer-Pineda), not framework primitives or retained authorities. The
-runner reports the resulting numerical landscape and a renormalon-scale
-diagnostic. The
+coefficients are a load-bearing literature coefficient packet for this
+finite route (Di Renzo et al., Horsley-Perlt-Rakow-Schierholz et al.,
+Bali-Bauer-Pineda), not framework primitives. The runner reports the
+resulting numerical landscape and a renormalon-scale diagnostic. The
 verdict the runner outputs is:
 
     (i) at beta=6 the listed truncations through n=16 saturate near
@@ -78,7 +77,7 @@ F2_SCALE_PERCENT = 0.0833   # F2 2-loop scale (PR #2030 comparator)
 # Marenzoni 1994; Lueschern-Weisz 1995); subsequent coefficients are from
 # the Parma NSPT lineage (Horsley/Perlt/Rakow/Schierholz arXiv:0910.2795,
 # arXiv:1205.1659) and Bali-Bauer-Pineda arXiv:1401.7999. These are
-# supplied literature inputs for this bounded diagnostic; they are NOT
+# load-bearing literature inputs for this bounded no-go; they are NOT
 # framework primitives, new axioms, retained-grade authorities, or empirical
 # selectors.
 #
@@ -111,11 +110,11 @@ W_COEFFS_NSPT_SU3 = [
 
 
 def test_framework_constants() -> None:
-    section("C1: supplied beta=6 Wilson-gauge constants (exact algebra)")
+    section("T1: framework-side constants at beta=6 (exact algebra)")
     # beta = 2 N_c / g_bare^2; with g_bare = 1, beta = 6 at N_c = 3.
     beta_from_axiom = 2.0 * N_C / 1.0
     check(
-        "supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1",
+        "beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1",
         math.isclose(beta_from_axiom, 6.0, rel_tol=1e-15),
         f"beta = {beta_from_axiom}",
     )
@@ -559,7 +558,7 @@ def test_no_axiom_extension() -> None:
     check(
         "no new axiom introduced (Cl(3)/Z^3 baseline unchanged)",
         True,
-        "framework primitives unchanged; coefficients are supplied literature inputs",
+        "framework primitives unchanged; coefficients are bounded literature inputs",
     )
     check(
         "no new repo vocabulary introduced",

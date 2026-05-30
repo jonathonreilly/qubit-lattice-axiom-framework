@@ -204,6 +204,18 @@
       "dominant_class": "C",
       "runner": "scripts/abj_anomaly_framework_internal_u1_jacobian_runner.py"
     },
+    "abj_epsilon_index_square_block_no_go_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_abj_epsilon_index_square_block_no_go.py"
+    },
     "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": {
       "assert_count": 1,
       "counts": {
@@ -32479,6 +32491,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_abj_epsilon_index_square_block_no_go.py": {
+      "assert_count": 1,
+      "claims": [
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_accessible_prediction.py": {
       "assert_count": 0,
       "claims": [
@@ -58270,12 +58297,12 @@
     "dominant_class_distribution": {
       "A": 268,
       "B": 296,
-      "C": 778,
+      "C": 779,
       "D": 315,
       "none": 444
     },
-    "runners_classified": 2101,
-    "runners_with_C": 1024,
+    "runners_classified": 2102,
+    "runners_with_C": 1025,
     "runners_with_D": 628
   }
 }

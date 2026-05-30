@@ -32,13 +32,17 @@ branch, review-loop either fixes/narrows that existing landing path and lands it
 when requested, or rejects/closes it with a clear reason. Salvage, dependency
 chain repair, audit queue regeneration, and parent re-audit gates are part of
 that same landing path, not follow-up PRs.
-On closing or rejecting a PR (salvaged or non-landable), delete its head branch
-(`gh pr close <N> --delete-branch`, or `git push origin --delete <head>` after a
-manual close). Because review-loop closes rather than merges, GitHub's
-auto-delete-on-merge never fires, so stale heads otherwise accumulate on
-`origin`; deleting on close keeps the remote clean. The closed PR retains its
-commits and diff, so no history is lost. Never delete a head that still backs
-another open PR, nor `main` or a protected branch.
+Delete a closed PR's head branch **only when its science actually landed** --
+its durable content was salvaged to `main`, or it was merged. In that case run
+`gh pr close <N> --delete-branch` (or `git push origin --delete <head>` after a
+manual close) so stale heads do not accumulate on `origin` (review-loop closes
+rather than merges, so GitHub's auto-delete-on-merge never fires). **Do NOT
+delete the head branch when a PR is closed without landing its science** --
+rejected as non-landable with nothing salvaged, or with salvage deferred to a
+later pass: keep that branch as the working handle on the un-landed work. Never
+delete a head that still backs another open PR, nor `main` or a protected
+branch. (Closed PRs retain their commits either way; the live branch matters as
+the recovery handle precisely when the science did not land.)
 It auto-corrects status vocabulary and terminology so a PR follows repo
 conventions by running `scripts/vocab_lint.py --fix` on all
 branch-modified files before any landing gate. Vocabulary is canonical

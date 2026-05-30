@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
-runner_sha256: b74df2ba8f3e6211211ff40bb014ac36f2bd7d70f837030c2cf83fb16b9e23bf
+runner_sha256: 563fa74307f829d7cb673e7a6497a76aad85a5d78c378ddc1dc7b877651fd31f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -21,6 +21,8 @@ PART 0: SOURCE FIREWALL
   [PASS] source note states boundary phrase: does not import dm_leptogenesis_exact_common
   [PASS] source note states boundary phrase: No new repo-wide axiom is introduced
   [PASS] source note states boundary phrase: simple (non-degenerate) spectra
+  [PASS] source note states boundary phrase: ascending-eigenvalue labels
+  [PASS] source note states boundary phrase: only up to independent row and column permutations
   [PASS] source note states boundary phrase: scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
   [PASS] runner source excludes transport helper phrase: from dm_leptogenesis_exact_common import
   [PASS] runner source excludes transport helper phrase: solve_multisource_flavored_transport
@@ -44,7 +46,24 @@ PART 2: EIGENVECTOR REPHASING INVARIANCE
   [PASS] |U_pair|^2 is invariant under independent eigenvector rephasings  (max err=7.06e-16, samples=72)
 
 ========================================================================================
-PART 2b: DEGENERATE-SPECTRUM NON-INVARIANCE (scope boundary)
+PART 2b: SIMPLE-SPECTRUM ORDERED-LABEL CONVENTION
+========================================================================================
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] canonical diagonalizer labels eigenvectors by ascending eigenvalue  (min gaps so far=7.363e-01)
+  [PASS] same ascending labels: phase freedom leaves the ordered packet fixed  (||P - P_phase||=3.05e-16)
+  [PASS] dropping the neutrino eigenvalue labels permits column permutations  (||P - P_col_perm||=0.711)
+  [PASS] dropping the charged-lepton eigenvalue labels permits row permutations  (||P - P_row_perm||=0.711)
+  [PASS] without labels the intrinsic object is a row/column permutation class  (||P - P_both_perm||=0.557)
+
+========================================================================================
+PART 2c: DEGENERATE-SPECTRUM NON-INVARIANCE (scope boundary)
 ========================================================================================
   [PASS] rotated eigenbasis is still unitary  (||UU^dag - I|| = 3.64e-16)
   [PASS] rotated eigenbasis still diagonalizes the degenerate H_nu  (off-diag = 1.15e-15)
@@ -63,7 +82,7 @@ RESULT
   Carrier authority, physical N1 column selection, and eta diagnostics remain outside this repaired row.
 
 ========================================================================================
-SUMMARY: PASS=20 FAIL=0
+SUMMARY: PASS=35 FAIL=0
 ========================================================================================
 
 ----- stderr -----

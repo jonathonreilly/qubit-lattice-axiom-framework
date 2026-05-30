@@ -6,6 +6,9 @@ This runner verifies only finite linear algebra:
   * U_pair = U_e^dagger U_nu is unitary;
   * |U_pair|^2 is doubly stochastic;
   * |U_pair|^2 is invariant under independent eigenvector rephasings.
+  * with simple spectra and ascending-eigenvalue labels, the ordered packet
+    is intrinsic; without those labels it is defined only up to row/column
+    permutations.
 
 It intentionally does not compute leptogenesis transport diagnostics or import
 the DM transport helper module.
@@ -78,6 +81,7 @@ def monomial_h(masses: np.ndarray) -> np.ndarray:
 
 
 def canonical_left_diagonalizer(h: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Return a Hermitian diagonalizer labeled by ascending eigenvalue order."""
     evals, u = np.linalg.eigh(h)
     order = np.argsort(np.real(evals))
     evals = np.real(evals[order])
@@ -157,6 +161,10 @@ def part0_source_firewall() -> None:
         # 2026-05-28 audit repair: intrinsic-projector claim restricted to
         # simple spectra; note must carry the degenerate-spectrum caveat.
         "simple (non-degenerate) spectra",
+        # 2026-05-29 audit repair: simple spectra still need ordered labels
+        # to remove row/column permutation freedom.
+        "ascending-eigenvalue labels",
+        "only up to independent row and column permutations",
         RUNNER_PATH,
     ]
     for phrase in required_note_phrases:
@@ -225,6 +233,77 @@ def part2_rephasing_invariance() -> None:
     )
 
 
+def part2b_simple_spectrum_ordered_label_convention() -> None:
+    """Verify the explicit label convention required for the intrinsic claim.
+
+    Simple spectra make eigenspaces one-dimensional, but they do not name the
+    rows and columns of the ordered packet until an eigenvalue order convention
+    is chosen. This exhibit checks that the runner's convention is ascending
+    eigenvalue order and that dropping it leaves only a permutation class.
+    """
+    print("\n" + "=" * 88)
+    print("PART 2b: SIMPLE-SPECTRUM ORDERED-LABEL CONVENTION")
+    print("=" * 88)
+
+    min_gap = float("inf")
+    for _name, h_nu, h_e in deterministic_pairs():
+        eval_nu, _ = canonical_left_diagonalizer(h_nu)
+        eval_e, _ = canonical_left_diagonalizer(h_e)
+        min_gap = min(
+            min_gap,
+            float(np.min(np.diff(eval_nu))),
+            float(np.min(np.diff(eval_e))),
+        )
+        check(
+            "canonical diagonalizer labels eigenvectors by ascending eigenvalue",
+            bool(np.all(np.diff(eval_nu) > 0.0) and np.all(np.diff(eval_e) > 0.0)),
+            f"min gaps so far={min_gap:.3e}",
+        )
+
+    # Use the canonical random pair rather than a symmetric special case so
+    # that row and column relabelings visibly change the ordered packet.
+    _name, h_nu, h_e = deterministic_pairs()[1]
+    _, u_nu = canonical_left_diagonalizer(h_nu)
+    _, u_e = canonical_left_diagonalizer(h_e)
+    base = np.abs(u_e.conj().T @ u_nu) ** 2
+
+    rng = np.random.default_rng(seed=20260529)
+    phase_nu = np.diag(np.exp(1j * rng.uniform(-np.pi, np.pi, size=3)))
+    phase_e = np.diag(np.exp(1j * rng.uniform(-np.pi, np.pi, size=3)))
+    same_labels_rephased = np.abs((u_e @ phase_e).conj().T @ (u_nu @ phase_nu)) ** 2
+    same_label_err = float(np.linalg.norm(base - same_labels_rephased))
+
+    col_perm = np.array([1, 2, 0])
+    row_perm = np.array([2, 0, 1])
+    column_relabel = np.abs(u_e.conj().T @ u_nu[:, col_perm]) ** 2
+    row_relabel = np.abs(u_e[:, row_perm].conj().T @ u_nu) ** 2
+    independent_relabel = np.abs(u_e[:, row_perm].conj().T @ u_nu[:, col_perm]) ** 2
+    col_perm_change = float(np.linalg.norm(base - column_relabel))
+    row_perm_change = float(np.linalg.norm(base - row_relabel))
+    both_perm_change = float(np.linalg.norm(base - independent_relabel))
+
+    check(
+        "same ascending labels: phase freedom leaves the ordered packet fixed",
+        same_label_err < 1e-10,
+        f"||P - P_phase||={same_label_err:.2e}",
+    )
+    check(
+        "dropping the neutrino eigenvalue labels permits column permutations",
+        col_perm_change > 1e-3,
+        f"||P - P_col_perm||={col_perm_change:.3f}",
+    )
+    check(
+        "dropping the charged-lepton eigenvalue labels permits row permutations",
+        row_perm_change > 1e-3,
+        f"||P - P_row_perm||={row_perm_change:.3f}",
+    )
+    check(
+        "without labels the intrinsic object is a row/column permutation class",
+        both_perm_change > 1e-3,
+        f"||P - P_both_perm||={both_perm_change:.3f}",
+    )
+
+
 def part2b_degenerate_spectrum_noninvariance() -> None:
     """Demonstrate that for a DEGENERATE Hermitian pair the projector is
     NOT intrinsic: a non-diagonal unitary rotation within a degenerate
@@ -235,7 +314,7 @@ def part2b_degenerate_spectrum_noninvariance() -> None:
     spectra, where the eigenbasis is unique up to column phases.
     """
     print("\n" + "=" * 88)
-    print("PART 2b: DEGENERATE-SPECTRUM NON-INVARIANCE (scope boundary)")
+    print("PART 2c: DEGENERATE-SPECTRUM NON-INVARIANCE (scope boundary)")
     print("=" * 88)
 
     # H_nu degenerate: eigenvalues (2, 2, 5). The 2-fold eigenspace admits
@@ -307,6 +386,7 @@ def main() -> int:
     part0_source_firewall()
     part1_unitary_and_doubly_stochastic()
     part2_rephasing_invariance()
+    part2b_simple_spectrum_ordered_label_convention()
     part2b_degenerate_spectrum_noninvariance()
     part3_result()
 

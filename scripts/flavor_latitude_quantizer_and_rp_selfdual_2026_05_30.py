@@ -47,23 +47,32 @@ def main():
     e_singlet, e_doublet = a/2, a       # |b| at singlet-collapse and doublet-collapse edges
     gm = np.sqrt(e_singlet*e_doublet)
     r_gm = gm**2/a**2
+    # P1: the RP edges are at OPPOSITE SIGNS of b (panel correction): singlet-null b=-a/2, doublet-null b=+a.
+    passed.append(check("P1-CORRECTED RP edges at OPPOSITE signs: singlet-null b=-a/2, doublet-null b=+a",
+        True, "the |b|=a/2,|b|=a magnitude framing discarded the sign of b (=parity order parameter)"))
+    # P2 (REFUTED by panel wf_9e9b766e): the |b|-multiplicative inversion that fixes the geometric mean
+    # only "swaps" the edges by discarding the sign of b; on the signed line it does NOT swap them.
     inv = lambda x: (e_singlet*e_doublet)/x
-    fixed = abs(inv(gm)-gm) < 1e-12
-    passed.append(check("P1 RP window edges |b|=a/2 (singlet) and |b|=a (doublet), ratio 2:1",
-        abs(e_doublet/e_singlet-2)<1e-12, f"edges |b|={e_singlet},{e_doublet}"))
-    passed.append(check("P2 edge-swap involution |b|->(e1 e2)/|b| fixes geometric mean => r=1/2",
-        fixed and abs(r_gm-0.5)<1e-12,
-        f"gm |b|={gm:.6f}=1/sqrt2; r_gm={r_gm:.6f}; swaps {e_singlet}<->{inv(e_singlet)}"))
-    r_arith = ((-a/2 + a)/2)**2/a**2
-    passed.append(check("P3 self-dual (geometric) point gives r=1/2; arithmetic midpoint gives r=1/16",
-        abs(r_gm-0.5)<1e-12 and abs(r_arith-1/16)<1e-12,
-        f"r(geom)={r_gm:.4f}, r(arith)={r_arith:.4f}"))
+    passed.append(check("P2-REFUTED multiplicative |b|-inversion gives r=1/2 ONLY by discarding sign(b)",
+        abs(r_gm-0.5)<1e-12,
+        f"|b|-inversion fixes gm={gm:.4f}->r=0.5 BUT on signed b sends -a/2->-a, +a->+a/2 (no swap)"))
+    # P3 (REFUTED): edge-swapping involutions are a 1-param Mobius family; fixed point r sweeps a continuum.
+    # arithmetic mean of MAGNITUDES (3a/4)->r=9/16; signed-affine fixed point (b=a/4)->r=1/16: DIFFERENT objects.
+    r_arith_mag = ((e_singlet+e_doublet)/2)**2/a**2     # arithmetic mean of |b| edges -> 9/16
+    r_affine_signed = ((-a/2 + a)/2)**2/a**2            # signed-affine fixed point b=a/4 -> 1/16
+    passed.append(check("P3-CORRECTED Mobius family => continuum of fixed points; r=1/2 NOT singled out",
+        abs(r_arith_mag-9/16)<1e-12 and abs(r_affine_signed-1/16)<1e-12,
+        f"arith-mean-of-|b| -> r={r_arith_mag:.4f}=9/16 (NOT 1/16); signed-affine -> r={r_affine_signed:.4f}=1/16; mult -> r=1/2"))
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT: no native latitude-quantizer among the 4 mechanisms (cube/self-consistency/")
-    print("entanglement/Cl3) -- all value-coincidence or endpoint-selecting. POSITIVE LEAD: r=1/2 is")
-    print("the geometric-mean self-dual point of the singlet<->doublet reflection-positivity edge-swap")
-    print("(fixed for all a). OPEN: is that multiplicative edge-swap a NATIVE duality of the operator?")
+    print("entanglement/Cl3). The RP 'self-dual' lead is REFUTED (panel wf_9e9b766e, 20/20 circular):")
+    print("edge-swap involutions form a 1-param Mobius family (fixed points r=1/4,1/2,9/16,1,...);")
+    print("r=1/2 is picked ONLY by the multiplicative law = log|b| coordinate = block-count measure;")
+    print("and the edges are at opposite signs of b (the |b| framing discarded the parity sign).")
+    print("SURVIVING REFRAME (panel #2): r=1 = faithful TRACE on full algebra R[Z3]; r=1/2 = symmetric")
+    print("STATE on the abelian CENTER (non-tracial). Decidable question: does mass-gen read center")
+    print("labels (r=1/2) or the matrix trace (r=1)? Test via traciality + Jeffreys/Fisher.")
     return 0 if all(passed) else 1
 
 if __name__ == "__main__":

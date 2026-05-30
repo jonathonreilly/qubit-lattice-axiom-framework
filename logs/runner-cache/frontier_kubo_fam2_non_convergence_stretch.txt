@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_kubo_fam2_non_convergence_stretch.py
-runner_sha256: 8a84e8733986dd992bac2c22b914728db400152b6c8c85cac77f36ccd84c2975
+runner_sha256: 87db7a7dd6d0051d3bd94b22db1f47cf44453dbc036fd6239b6111327a8bb8f3
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -8,27 +8,31 @@ status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
-Part 1: stretch note structure
+Part 1: open-gate inventory structure
 ----------------------------------------------------------------------------------------
-  [PASS (A)] contains: 'Kubo Fam2 Non-Convergence Stretch Attempt'  ()
-  [PASS (A)] contains: 'named obstruction packet'  ()
-  [PASS (A)] contains: 'A_min'  ()
-  [PASS (A)] contains: 'Forbidden imports'  ()
+  [PASS (A)] contains: 'Kubo Fam2 Non-Convergence Possible-Obstruction Inventory'  ()
+  [PASS (A)] contains: 'open-gate inventory'  ()
+  [PASS (A)] contains: 'Source Boundary'  ()
+  [PASS (A)] contains: 'Recorded Finite Data'  ()
+  [PASS (A)] contains: 'Minimal Local Premises'  ()
+  [PASS (A)] contains: 'Forbidden Imports'  ()
+  [PASS (A)] contains: 'Claim Boundary'  ()
   [PASS (A)] contains: 'Fam2'  ()
   [PASS (A)] contains: 'Fam1'  ()
   [PASS (A)] contains: 'Fam3'  ()
   [PASS (A)] contains: '(O1)'  ()
   [PASS (A)] contains: '(O2)'  ()
   [PASS (A)] contains: '(O3)'  ()
-  [PASS (A)] contains: 'non-perturbative'  ()
-  [PASS (A)] contains: 'proposal_allowed: false'  ()
+  [PASS (A)] contains: 'not exhaustive'  ()
+  [PASS (A)] contains: 'not a positive convergence theorem'  ()
+  [PASS (A)] contains: 'not a no-go theorem'  ()
 
 ----------------------------------------------------------------------------------------
-Part 2: 3 obstruction routes documented
+Part 2: 3 possible obstruction routes documented
 ----------------------------------------------------------------------------------------
-  [PASS (A)] obstruction: Microscopic dynamics depend on (drift, restore) no  ()
-  [PASS (A)] obstruction: Phase transition or critical regime  ()
-  [PASS (A)] obstruction: Discretization artifact  ()
+  [PASS (A)] obstruction: Parameter-dependent microscopic dynamics  ()
+  [PASS (A)] obstruction: Critical or near-critical parameter regime  ()
+  [PASS (A)] obstruction: Fam2-specific discretization interaction  ()
 
 ----------------------------------------------------------------------------------------
 Part 3: Fam parameters enumerated
@@ -38,15 +42,28 @@ Part 3: Fam parameters enumerated
   [PASS (A)] family parameter: drift=0.50, restore=0.90  ()
 
 ----------------------------------------------------------------------------------------
-Part 4: explicit non-closure
+Part 4: explicit non-closure and non-exhaustiveness
 ----------------------------------------------------------------------------------------
-  [PASS (A)] non-closure: Fam2 non-convergence itself  ()
-  [PASS (A)] non-closure: kubo_continuum_limit_families_note  ()
-  [PASS (A)] non-closure: honest tier  ()
+  [PASS (A)] non-closure: does not resolve Fam2 non-convergence  ()
+  [PASS (A)] non-closure: does not prove an exhaustive obstruction trichotomy  ()
+  [PASS (A)] non-closure: does not prove a continuum limit for Fam2  ()
+  [PASS (A)] non-closure: does not alter the status of any parent Kubo-family evidence  ()
+
+----------------------------------------------------------------------------------------
+Part 5: open-gate closeout labels
+----------------------------------------------------------------------------------------
+  [PASS (A)] status label: **Type:** open_gate  ()
+  [PASS (A)] status label: This is an open gate for future Kubo Fam2 work  ()
+  [PASS (A)] status label: unique Fam2 mechanism  ()
 
 ========================================================================================
-  TOTAL: PASS=21, FAIL=0
+  TOTAL: PASS=29, FAIL=0
 ========================================================================================
+KUBO_FAM2_POSSIBLE_OBSTRUCTION_INVENTORY=TRUE
+OPEN_GATE_DOCUMENTED=TRUE
+EXHAUSTIVE_TRICHOTOMY_CLAIMED=FALSE
+FAM2_NON_CONVERGENCE_RESOLVED=FALSE
+OBSERVED_OR_FITTED_TARGET_CONSUMED=FALSE
 
 ----- stderr -----
 

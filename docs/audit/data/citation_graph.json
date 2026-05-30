@@ -25794,10 +25794,6 @@
     },
     {
       "from": "teleportation_resource_from_poisson_note",
-      "to": "minimal_axioms"
-    },
-    {
-      "from": "teleportation_resource_from_poisson_note",
       "to": "teleportation_poisson_resource_sweep_note"
     },
     {
@@ -25811,6 +25807,10 @@
     {
       "from": "teleportation_resource_from_poisson_note",
       "to": "teleportation_apparatus_dynamics_closure_note"
+    },
+    {
+      "from": "teleportation_resource_from_poisson_note",
+      "to": "minimal_axioms_2026-05-03"
     },
     {
       "from": "teleportation_retention_theorem_attack_note",
@@ -81301,11 +81301,11 @@
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
       "deps": [
-        "minimal_axioms",
         "teleportation_poisson_resource_sweep_note",
         "teleportation_resource_fidelity_note",
         "teleportation_measurement_record_note",
-        "teleportation_apparatus_dynamics_closure_note"
+        "teleportation_apparatus_dynamics_closure_note",
+        "minimal_axioms_2026-05-03"
       ],
       "helper_runner_paths": [
         "scripts/frontier_bell_inequality.py"

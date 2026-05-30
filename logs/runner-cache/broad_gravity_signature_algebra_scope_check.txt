@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/broad_gravity_signature_algebra_scope_check.py
+runner_sha256: c4fb58612eb401d90a9feea6c41222c30efa816e39fd7ef4bf102c557f95faab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+==============================================================================
+Broad gravity signature algebra scope check
+==============================================================================
+[PASS] source note contains scope phrase: bounded-support algebra over a supplied weak-field action
+[PASS] source note contains scope phrase: not a retained broad gravity derivation
+[PASS] source note contains scope phrase: No gravitational response, source readout
+[PASS] source note contains scope phrase: PHYSICAL_WEP_OR_TIME_DILATION_CLAIMED=FALSE
+[PASS] source note contains scope phrase: CONTINUUM_OR_NULL_GEODESIC_BRIDGE_CLAIMED=FALSE
+[PASS] source note excludes overclaim phrase: WEP and gravitational time dilation follow as corollaries
+[PASS] source note excludes overclaim phrase: This IS the weak equivalence principle
+[PASS] source note excludes overclaim phrase: light-bending factor of 2 follow
+[PASS] source note excludes overclaim phrase: retained broad gravity theorem
+[PASS] delta S = k delta F
+[PASS] k cancels from stationary equation for k != 0
+[PASS] phase-rate ratio cancels k
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASSED: 12/12
+BROAD_GRAVITY_SIGNATURE_ALGEBRA=TRUE
+K_INDEPENDENT_STATIONARY_PATH_ALGEBRA=TRUE
+PHASE_RATE_RATIO_ALGEBRA=TRUE
+PHYSICAL_WEP_OR_TIME_DILATION_CLAIMED=FALSE
+CONTINUUM_OR_NULL_GEODESIC_BRIDGE_CLAIMED=FALSE
+ACTUAL_CURRENT_SURFACE_STATUS=BOUNDED_SUPPORT
+
+----- stderr -----
+

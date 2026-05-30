@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/signed_gravity_aps_source_action_boundary_repair.py
+runner_sha256: 0ea75e063cd87667d882b0124c079603c344f612ba2c26037f9e760671d5dd60
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+Signed gravity APS source-action boundary repair
+========================================================================
+
+A. Boundary wording
+------------------------------------------------------------------------
+PASS: note declares open_gate type
+PASS: note declares open_gate claim type
+PASS: note has no branch-local status authority
+PASS: note states unadmitted proposed-extension boundary
+PASS: note says cross term is not derived
+PASS: note says no physical signed-gravity claim
+PASS: note does not admit a new axiom
+
+B. Original algebra harness
+------------------------------------------------------------------------
+PASS: original harness exits cleanly -- returncode=0
+PASS: original harness remains conditional
+PASS: original harness states new source-action premise
+PASS: original harness does not derive origin
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=11, FAIL=0
+VERDICT: APS source-action row is an unadmitted open_gate proposed-extension boundary.
+
+----- stderr -----
+

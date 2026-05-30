@@ -70427,7 +70427,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5f2ad96011168c3cabd39a894551019367135134e7c48515c39854001ca74cd3",
+      "note_hash": "5a3bc91a43e4f04c82682b60d11b33d3c6894536d2a8f16a22be5b36e4e3653b",
       "path": "docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md",
       "runner_path": "scripts/frontier_plaquette_beta6_strong_coupling_character_narrow.py",
       "title": "SU(3) Wilson Plaquette Strong-Coupling Pad\u00e9[3/3] Narrow Theorem (Bounded)"

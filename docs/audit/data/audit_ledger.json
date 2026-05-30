@@ -259196,22 +259196,46 @@
       "verdict_rationale": "The runner successfully verifies the finite g_* arithmetic, the monomial versus two-offset Yukawa algebra, and several file/token checks, but its decisive 2HDM-exclusion and framework-native one-doublet conclusions are asserted rather than derived. The source note overuses D17: uniqueness of a unit-normalized scalar singlet on Q_L is not the same as derivation of one complex SU(2)_L EWSB doublet in the thermal census. The flavor-sector distinction is plausible within the packet, but the claim still depends on an unprovided retained bridge from composite scalar-singlet structure to EWSB doublet field content and on unaudited one-Higgs/Z3/2HDM support notes for parts of the non-dof argument."
     },
     "sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T13:33:52.607623+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27": "Narrow no-go that current-stack mu_current=0, the diagonal seesaw atmospheric benchmark, and y_nu^eff=g_weak^2/64 cannot be silently combined into one global Lane 4 quantitative neutrino-mass closure without an added Majorana/seesaw activation law or tiny-Dirac activation law; it does not close Lane 4 or rule out Majorana or Dirac routes.",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited."
+        },
+        "dep_claim_type": {
+          "neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27": "no_go",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27": "retained_no_go",
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27",
+          "sm_relativistic_dof_count_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "48434c1bce18b817ec326a2f71aa543cf74f36e08d2cca499232022ba4861021",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-133157-8f179572-sm_gstar_i12_nur_thermal",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite g_* arithmetic and the displayed Yukawa/threshold estimates mostly check out, but the conclusion depends on imports not closed by the cited authorities: empirical small m_nu, the standard Gamma/H thermalization criterion, and M_R >> T_census for the Majorana branch. The source also has minor quantitative drift: the 0.1 eV, T=100 GeV margin is about 4.3 decades, not 4.6, and y_nu >= y_thr rather than O(1) is the minimal thermalizing route.",
       "claim_id": "sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded claim that the SM g_* census remains 106.75 rather than 112 across the light-Dirac and heavy-Majorana/seesaw branches, conditioned on empirical small m_nu and the stated thermalization and heavy-mass assumptions.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T13:33:52.607623+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -259220,34 +259244,34 @@
         "sm_relativistic_dof_count_import_note_2026-05-17"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The empirically implied light-Dirac Yukawa y_nu ~ 10^-13 to 10^-12 lies many orders below the Gamma ~ y_nu^2 T versus H thermalization threshold, while the heavy-Majorana branch excludes nu_R by assuming M_R >> T_census, so nu_R is not a light thermalized degree of freedom in either admitted branch.",
+      "load_bearing_step_class": "D",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b95ef26f39269c08dc018589f2b91047c682df9d0277847c97b0d1c31743eb54",
       "note_path": "docs/SM_GSTAR_I12_NUR_THERMAL_EXCLUSION_BOUNDED_NOTE_2026-05-29.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained or explicitly accepted bridges for the empirical small-m_nu premise, the Gamma/H thermalization criterion, and the M_R >> T_census Majorana-branch condition, or narrow the note to those assumptions; also correct the 100 GeV margin and replace the O(1)-only phrasing with y_nu >= y_thr.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 11,
+        "B": 33,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 22,
+        "total_pass": 66
       },
       "runner_path": "scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py",
       "title": "`g_*` Census Import I12: `nu_R` Thermal Exclusion Robust Across the Framework's Dirac/Majorana Branches (conditioned on the empirical small `m_nu`) \u2014 Bounded Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The cited authorities are retained-grade and the runner performs real arithmetic checks rather than merely printing a PASS line. However, the load-bearing step is an external-observation/standard-cosmology comparator, not a first-principles framework computation or a pure algebraic closure over retained inputs. The heavy-Majorana branch also relies on M_R >> T_census, which is asserted in the source note and hard-coded in the runner but not established by the one-hop no-go authority. Therefore the honest result is conditional, even though the scoped exclusion is plausible under the stated assumptions."
     },
     "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29": {
       "audit_date": null,

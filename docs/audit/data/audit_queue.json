@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 245,
     "high": 311,
-    "leaf": 286,
+    "leaf": 285,
     "medium": 294
   },
   "cycle_break_target_count": 0,
@@ -26128,31 +26128,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27",
-        "sm_relativistic_dof_count_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SM_GSTAR_I12_NUR_THERMAL_EXCLUSION_BOUNDED_NOTE_2026-05-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34674,6 +34649,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 2,
-  "total_pending": 1136
+  "ready_count": 1,
+  "total_pending": 1135
 }

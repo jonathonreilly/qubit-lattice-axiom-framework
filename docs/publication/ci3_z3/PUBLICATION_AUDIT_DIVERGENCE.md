@@ -18,7 +18,7 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | high | `unaudited` | 176 |
-| critical | `unaudited` | 157 |
+| critical | `unaudited` | 156 |
 | medium | `unaudited` | 97 |
 | high | `audited_numerical_match` | 4 |
 | critical | `open_gate` | 3 |
@@ -28,7 +28,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 446
+**Total non-retained-grade rows in publication tables:** 445
 
 ## Per-row breakdown
 
@@ -108,7 +108,6 @@ publication tables phrase it.
 | critical | `lepton_shared_higgs_universality_collapse_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `lepton_shared_higgs_universality_underdetermination_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `lepton_single_higgs_pmns_triviality_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
-| critical | `lorentz_kernel_positive_closure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `matter_radiation_equality_structural_identity_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `n_eff_from_three_generations_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `neutrino_dirac_two_higgs_canonical_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

@@ -1,0 +1,31 @@
+
+========================================================================
+ANALYTIC: e^{-Tr(M^2)/2} on M=aI+b(J-I) -> equal expected isotype weights
+========================================================================
+  Tr(M^2)=3a^2+6b^2 -> <a^2>=1/3, <b^2>=1/6, <ab>=0.
+  eigenvalues lambda0=a+2b (singlet x1), lambda1=a-b (doublet x2).
+  <singlet weight>=<lambda0^2>    = <a^2>+4<b^2> = 1.0000
+  <doublet weight>=<2 lambda1^2>  = 2(<a^2>+<b^2>) = 1.0000
+  EQUAL -> block-count measure -> r=1/2 -> Q=2/3 (NOT dimension's 2:1 -> Q=1).
+
+========================================================================
+MONTE CARLO confirmation (N=4e5)
+========================================================================
+  <singlet weight>=1.0034  <doublet weight>=0.9998  ratio=0.9964
+  ratio ~ 1 -> block-count (Q=2/3); the dimension measure would give 2 (Q=1).
+
+========================================================================
+WHY: the dimension factor cancels
+========================================================================
+  dim(doublet)=2 states, but Tr((J-I)^2)/Tr(I^2)=6/3=2 -> doublet stiffer ->
+  variance 1/2 per state -> 2 x 1/2 = 1 = singlet weight. Net equal = block-count.
+
+========================================================================
+VERDICT (native lean toward Q=2/3 -- NOT a forcing)
+========================================================================
+  The covariant matrix-field action Tr(M^2), native to A1's operator algebra
+  (unique tracial state), realizes the BLOCK-COUNT measure -> Q=2/3, ranking the
+  two canonical measures the campaign called 'rep theory ranks neither'. Caveats:
+  (1) expectation not per-operator; (2) BARE measure -- fermion dynamics drives
+  b->0 (Q=1/3); (3) background mean unmodeled. Open: does the g_bare=1 matter loop
+  preserve the covariant block-count measure or collapse it? (the move-2 tension).

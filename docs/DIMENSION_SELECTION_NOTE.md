@@ -1,57 +1,9 @@
 # Dimension Selection: Does Self-Consistency Require d = 3?
 
-**Date:** 2026-04 (2026-05-28: scoped to the numerical lower-bound experiment;
-the d≤3 upper bound and the analytic d-dim potential/sign bridge registered as
-admitted inputs per audit path (b)).
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-**Status:** bounded **numerical lower-bound experiment** — self-consistency on
-the tested lattice excludes `d ≤ 2` (requires `d ≥ 3` for attractive gravity
-with linear mass dependence), GIVEN the analytic d-dimensional potentials as
-admitted inputs. The **`d ≤ 3` upper bound** (orbital/atomic stability) and the
-**axiom → analytic-potential / sign-criterion bridge** are admitted inputs, not
-derived here; the unique-`d = 3` conclusion is conditional on them.
+## Question
 
-## 2026-05-28 Audit Repair (lower-bound experiment; upper bound + potential bridge admitted)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The numerical lower-bound experiment is present, but the broader d = 3
-> conclusion also imports an upper bound from stable orbits/atoms that is not
-> provided as a cited retained authority in this packet. The runner
-> additionally measures gravity using hand-coded analytic d-dimensional
-> potentials in 2D propagation, so the bridge from the stated axiom to those
-> potentials and sign criterion is not closed inside the packet."*
-
-with the offered repair: provide retained authorities or a self-contained
-derivation for the `d ≤ 3` upper bound and for the analytic d-dimensional
-potential/sign bridge.
-
-This revision takes the **split/admission path** (a retained derivation of the
-upper bound and of the analytic potentials from the axiom is substantive new
-work, out of scope):
-
-- **Load-bearing (in scope):** the **numerical lower-bound experiment**. On
-  the tested lattice, self-consistent propagate→density→Poisson iteration plus
-  the phase-coupling sign analysis shows attractive gravity with linear mass
-  dependence requires `d ≥ 3` (i.e. self-consistency **excludes `d ≤ 2`**).
-  This is the runner-verified content, **conditional on the analytic
-  d-dimensional potentials supplied as inputs**.
-- **Admitted / NON-load-bearing (split off):**
-  1. **Analytic d-dimensional potential + sign bridge.** The runner uses
-     hand-coded potentials (`φ ~ −M·r`, `−M·log r`, `−M/r`, `−M/r²`, …) and the
-     phase-coupling sign criterion. The derivation of these from the framework
-     axiom is **not closed here**; they are admitted inputs.
-  2. **`d ≤ 3` upper bound.** Bertrand's stable-orbit theorem (`d = 3` is the
-     only dimension with stable closed orbits under the `1/r^{d−1}` force) and
-     hydrogen-like atomic stability (`d ≥ 5` unstable) are **admitted
-     classical/quantum stability inputs**, not retained one-hop authorities in
-     this packet.
-
-The unique `d = 3` selection is therefore the **lower bound (numerical) ∧ the
-two admitted inputs**. The note already states (§"Bounded Conclusion") that
-"the script does not claim that self-consistency alone selects d = 3." No new
-axiom, import, or retained bridge is introduced by this repair.
+Do the three properties (attractive gravity, beta = 1 mass law, I_3 = 0
+Born rule) coexist only at spatial dimension d = 3?
 
 ## Method
 

@@ -64408,18 +64408,6 @@
       "runner_path": null,
       "title": "3D Dense Spent-Delay `z=2..5` Support Note"
     },
-    "lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29": {
-      "claim_id": "lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
-      "helper_runner_paths": [],
-      "note_hash": "19c477f6c16f016177813ce20bd3e360c63d348f167b213f8da4b67285cbb2e7",
-      "path": "docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md",
-      "runner_path": "scripts/lattice_3d_dense_z2_z6_endpoint_check.py",
-      "title": "3D Dense Spent-Delay `z=2..6` Endpoint Packet"
-    },
     "lattice_3d_dense_window_extension_note": {
       "claim_id": "lattice_3d_dense_window_extension_note",
       "claim_type_author_hint": null,
@@ -87535,7 +87523,6 @@
     "kubo_continuum_limit_families_note_2026-05-17",
     "lanes_open_science_03_quark_mass_retention_open_lane_2026-04-26_note_2026-05-17",
     "lattice_3d_dense_spent_delay_z2_z5_support_note_2026-04-30",
-    "lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29",
     "lattice_3d_dense_window_extension_note",
     "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
     "lattice_3d_l2_numpy_h0125_audit_note",

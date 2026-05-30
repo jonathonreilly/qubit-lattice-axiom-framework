@@ -1,41 +1,31 @@
-"""Per-site charge density Q̂_x has eigenvalues {0, 1}; total Q̂ has integer spectrum.
+"""Axiom 1 qubit occupation-count operator has integer spectrum.
 
-By axiom_first_cl3_per_site_uniqueness (cited), per-site Hilbert ≅ C² with
-basis {|0⟩, |1⟩} (eigenvectors of σ_3). The single-mode fermionic
-creation/annihilation operators are
-
-    a   = σ_- = (σ_1 + i σ_2) / 2  =  [[0, 0], [1, 0]]    (lowering)
-    a^† = σ_+ = (σ_1 - i σ_2) / 2  =  [[0, 1], [0, 0]]    (raising)
-
-The per-site number operator is n_x := a_x^† a_x. By direct computation:
-
-    n_x · |0⟩ = 0,      n_x · |1⟩ = |1⟩
-
-so n_x has eigenvalues exactly {0, 1}.
-
-The total charge operator on the framework's N-site Fock space is
-
-    Q̂_total = Σ_{x=1}^N n_x    (mutually commuting on the tensor product)
-
-with spectrum {0, 1, ..., N}, multiplicity C(N, k) for each k.
-
-This proves charge quantization on the framework: any framework state
-carries an integer-valued total charge in the range [0, N_sites].
+The repaired theorem is not a physical electric-charge derivation.  It
+works directly in the Axiom 1 local algebra M_2(C): choose any rank-one local
+readout projection n.  In a representative Pauli basis, n = diag(0, 1).
+On an N-site finite tensor block, Q_total = sum_x n_x has spectrum
+{0, 1, ..., N}, multiplicity C(N, k).
 
 Tests:
-  (T1) σ_- σ_+ + σ_+ σ_- = I on Pauli C² (canonical anticommutation single-mode)
-  (T2) n = σ_+ σ_- has eigenvalues exactly {0, 1}
+  (T0) source note uses Axiom 1/M_2(C) and no old per-site uniqueness dependency
+  (T1) representative ladder has canonical single-qubit anticommutation
+  (T2) n = a^† a has eigenvalues exactly {0, 1}
   (T3) Multi-site n_x are pairwise commuting (tensor product structure)
-  (T4) Q̂_total = Σ_x n_x has integer spectrum {0, 1, ..., N}
-  (T5) Multiplicity at charge k is C(N, k) (binomial counting)
-  (T6) Q̂_total = N·I/2 + Σ_x σ_3,x / 2 (alternative formula via σ_3 = 2 n - I)
+  (T4) Q_total = Σ_x n_x has integer spectrum {0, 1, ..., N}
+  (T5) Multiplicity at occupation count k is C(N, k)
+  (T6) Q_total = N*I/2 - Σ_x σ_3,x/2 for the representative readout basis
 """
 from __future__ import annotations
 
 import math
-from itertools import product as iproduct
+from pathlib import Path
 
 import numpy as np
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md"
+OLD_DEP = "AXIOM_FIRST_" + "CL3_PER_SITE_UNIQUENESS"
 
 
 def kron_chain(matrices: list[np.ndarray]) -> np.ndarray:
@@ -48,21 +38,8 @@ def kron_chain(matrices: list[np.ndarray]) -> np.ndarray:
 
 def n_at_site(N: int, x: int) -> np.ndarray:
     """n_x = I ⊗ ... ⊗ n ⊗ ... ⊗ I  with n at position x (0-indexed)."""
-    sigma_plus = np.array([[0, 1], [0, 0]], dtype=complex)  # raising
-    sigma_minus = np.array([[0, 0], [1, 0]], dtype=complex)  # lowering
-    n = sigma_plus @ sigma_minus  # = diag(1, 0): a^† a annihilates |0⟩, gives |1⟩ on |1⟩
-    # Wait: with basis {|0⟩, |1⟩} and σ_- = [[0,0],[1,0]] (lowering: σ_- |0⟩ = |1⟩? No)
-    # Convention check: with |0⟩ = (1, 0)^T and |1⟩ = (0, 1)^T,
-    # σ_- = (σ_1 - i σ_2) / 2 = [[0, 0], [1, 0]] sends |0⟩ ↦ (0, 1)^T = |1⟩ — that's RAISING in occupation.
-    # So actually σ_- in the standard Pauli convention raises occupation.
-    # Recompute: with |0⟩ = empty (no fermion), |1⟩ = occupied,
-    #   a |0⟩ = 0,  a |1⟩ = |0⟩  →  a = ?
-    # a as 2x2 matrix in basis {|0⟩, |1⟩}: rows/cols indexed by output/input
-    # a = ⟨out|a|in⟩: a_{0,1} = ⟨0|a|1⟩ = 1, a_{0,0} = a_{1,0} = a_{1,1} = 0
-    # So a = [[0, 1], [0, 0]] = σ_+ in our convention.
-    # And a^† = [[0, 0], [1, 0]] = σ_-
-    # Then n = a^† a = [[0,0],[1,0]] · [[0,1],[0,0]] = [[0, 0], [0, 1]] = diag(0, 1)
-    # which has eigenvalue 0 on |0⟩ and 1 on |1⟩. Good.
+    # Representative rank-one qubit readout projection in the basis
+    # |0>=(1,0)^T, |1>=(0,1)^T.
     a_op = np.array([[0, 1], [0, 0]], dtype=complex)
     a_dag = a_op.conj().T
     n_local = a_dag @ a_op  # = diag(0, 1)
@@ -71,10 +48,34 @@ def n_at_site(N: int, x: int) -> np.ndarray:
     return kron_chain(factors)
 
 
+def note_firewall() -> bool:
+    text = NOTE.read_text()
+    lowered = text.lower()
+    checks = {
+        "cites minimal axioms Axiom 1": "minimal_axioms_2026-05-20" in lowered
+        or "MINIMAL_AXIOMS_2026-05-20.md" in text,
+        "uses rank-one qubit projection": "rank-one" in lowered and "projection" in lowered,
+        "rules out physical charge identification": "does not identify" in lowered
+        and "physical electric charge" in lowered,
+        "no old uniqueness node in YAML": OLD_DEP not in text,
+        "classified as positive theorem": "claim_type_author_hint: positive_theorem" in text,
+    }
+    for label, ok in checks.items():
+        print(f"  {label}: {'PASS' if ok else 'FAIL'}")
+    return all(checks.values())
+
+
 def main() -> None:
     print("=" * 72)
-    print("Q̂ INTEGER SPECTRUM ON FRAMEWORK FOCK SPACE")
+    print("Axiom 1 QUBIT OCCUPATION-COUNT INTEGER SPECTRUM")
     print("=" * 72)
+    print()
+
+    print("-" * 72)
+    print("SOURCE FIREWALL: Axiom 1-local occupation count, not physical charge")
+    print("-" * 72)
+    t0_ok = note_firewall()
+    print(f"  STATUS: {'PASS' if t0_ok else 'FAIL'}")
     print()
 
     # First verify single-site structure
@@ -85,7 +86,7 @@ def main() -> None:
 
     # ----- Test 1: Single-mode CCR-fermion: {a, a^†} = I -----
     print("-" * 72)
-    print("TEST 1: {a, a^†} = I on per-site Pauli C² (single-mode fermion)")
+    print("TEST 1: {a, a^†} = I for a representative single-qubit ladder")
     print("-" * 72)
     anti = a_op @ a_dag + a_dag @ a_op
     dev1 = np.linalg.norm(anti - I2)
@@ -135,11 +136,11 @@ def main() -> None:
 
     # ----- Test 4: Q̂_total = Σ n_x has integer spectrum {0, 1, ..., N} -----
     print("-" * 72)
-    print(f"TEST 4: Q̂_total = Σ_x n_x has integer spectrum {{0, 1, ..., {N}}}")
+    print(f"TEST 4: Q_total = Σ_x n_x has integer spectrum {{0, 1, ..., {N}}}")
     print("-" * 72)
     Q_total = sum(n_ops)
     eigs_Q = sorted(np.linalg.eigvalsh(Q_total).tolist())
-    print(f"  Q̂ eigenvalues (sorted): {eigs_Q}")
+    print(f"  Q_total eigenvalues (sorted): {eigs_Q}")
     distinct = sorted(set(round(e, 10) for e in eigs_Q))
     print(f"  Distinct values: {distinct}")
     expected = list(range(N + 1))
@@ -148,9 +149,9 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t4_ok else 'FAIL'}")
     print()
 
-    # ----- Test 5: Multiplicity at charge k is C(N, k) -----
+    # ----- Test 5: Multiplicity at occupation count k is C(N, k) -----
     print("-" * 72)
-    print(f"TEST 5: Multiplicity at charge k is C({N}, k) = binomial(N, k)")
+    print(f"TEST 5: Multiplicity at occupation count k is C({N}, k) = binomial(N, k)")
     print("-" * 72)
     multiplicities = {}
     for e in eigs_Q:
@@ -165,7 +166,7 @@ def main() -> None:
 
     # ----- Test 6: Equivalent formula via σ_3 -----
     print("-" * 72)
-    print(f"TEST 6: Q̂_total = N/2 · I + (1/2) Σ_x (-σ_{{3,x}})  (since n = (I - σ_3)/2)")
+    print(f"TEST 6: Q_total = N/2 · I + (1/2) Σ_x (-σ_{{3,x}})  (since n = (I - σ_3)/2)")
     print(f"        Note: with |0⟩ being eigenvector of +1 of σ_3 and |1⟩ being -1,")
     print(f"        n = a^† a has eigenvalue 0 on |0⟩ and 1 on |1⟩, so n = (I - σ_3)/2.")
     print("-" * 72)
@@ -178,19 +179,20 @@ def main() -> None:
     # n = (I - σ_3) / 2 ⇒ Σ n_x = N/2 · I - (1/2) Σ σ_3,x
     Q_alt = (N / 2) * np.eye(dim, dtype=complex) - 0.5 * sum(sigma_3_at_site(N, x) for x in range(N))
     dev6 = np.linalg.norm(Q_total - Q_alt)
-    print(f"  ||Q̂_total - (N/2 I - (1/2)Σ σ_3,x)|| = {dev6:.3e}")
+    print(f"  ||Q_total - (N/2 I - (1/2)Σ σ_3,x)|| = {dev6:.3e}")
     t6_ok = dev6 < 1e-12
     print(f"  STATUS: {'PASS' if t6_ok else 'FAIL'}")
     print()
 
     print("=" * 72)
+    print(f"  Source firewall (Axiom 1 occupation count):              {'PASS' if t0_ok else 'FAIL'}")
     print(f"  Test 1 ({{a, a^†}} = I and Grassmann nilpotency):    {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 (n eigenvalues = {{0, 1}}):                    {'PASS' if t2_ok else 'FAIL'}")
     print(f"  Test 3 (multi-site n_x commute):                    {'PASS' if t3_ok else 'FAIL'}")
-    print(f"  Test 4 (Q̂_total integer spectrum {{0,...,N}}):       {'PASS' if t4_ok else 'FAIL'}")
+    print(f"  Test 4 (Q_total integer spectrum {{0,...,N}}):       {'PASS' if t4_ok else 'FAIL'}")
     print(f"  Test 5 (multiplicity = binomial(N,k)):              {'PASS' if t5_ok else 'FAIL'}")
-    print(f"  Test 6 (Q̂_total = N/2·I - (1/2)Σ σ_3 formula):       {'PASS' if t6_ok else 'FAIL'}")
-    all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok])
+    print(f"  Test 6 (Q_total = N/2*I - (1/2)Σ σ_3 formula):       {'PASS' if t6_ok else 'FAIL'}")
+    all_ok = all([t0_ok, t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     if not all_ok:
         raise SystemExit(1)

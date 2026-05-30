@@ -81,7 +81,9 @@ the Gaussian theory with covariance `S`. It has three sub-pieces. The headline
 result of this note is the per-sub-piece status, established conditional on the
 cited rungs A-C:
 
-**Theorem (conditional free-field reconstruction).** *Conditional on rungs A-C at
+**Theorem (conditional free-field reconstruction: OS hypotheses with OS2 derived,
+and the Gaussian n-point hierarchy, ESTABLISHED conditional on rungs A-C; the
+bounded-energy Poincare representation PARTIAL).** *Conditional on rungs A-C at
 their cited audit statuses (rung A `audited_conditional`, rung B
 `audited_conditional`, rung C `unaudited`), and on the on-main bounded mode-algebra
 fragment:*
@@ -173,10 +175,13 @@ positive-semidefinite spinor weight
 `W = gamma_4 (m 1 - i gamma.k)(1/2E) + (1/2) 1`. The exponential-separation
 factorization is exactly the positivity-preserving structure (a Gram matrix of an
 outer product of a positive-definite weight with the positive rank-1 kernel
-`e^{-E tau_i} e^{-E tau_j}`). Positivity of `W` is the on-shell statement
-`gamma_4(m 1 - i gamma.k) + E 1 = ...` reducing to the positive on-shell projector;
-this is the spinor-space content of `sign(ubar u) = -sign(vbar v)` and the positive
-Hilbert norms `udag u = vdag v = 2E` of the mode-algebra fragment.
+`e^{-E tau_i} e^{-E tau_j}`). Positivity of `W` is the on-shell statement that
+`2E W = gamma_4(m 1 - i gamma.k) + E 1` is positive semidefinite with eigenvalues
+`{2E, 2E, 0, 0}`: it is `2E` times the rank-2 positive on-shell energy projector
+`P_+ = (gamma_4(m 1 - i gamma.k)/E + 1)/2` (`P_+^2 = P_+`, `P_+ >= 0`), so
+`W = P_+ >= 0`. This is the spinor-space content of
+`sign(ubar u) = -sign(vbar v)` and the positive Hilbert norms `udag u = vdag v = 2E`
+of the mode-algebra fragment.
 
 **Numerical certificate (runner `R3`).** Over a 300-config random sweep
 (`m in [0.2, 3.0]`, random spatial `k`, `2..5` positive Euclidean times), the

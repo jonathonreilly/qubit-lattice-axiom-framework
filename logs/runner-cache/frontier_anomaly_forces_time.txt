@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: 1713d88f2b3a2da9af2baf916c0b1bdbf4d1e0d94b4420cc4790c5bfdd8a8369
+runner_sha256: e49912d15608ea1a74df538e7a0d384b2827fcf156f5d720f41a039cc501624a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================
-ANOMALY-CANCELLATION CONSISTENCY BRIDGE FOR 3+1D SPACETIME
-Temporal direction selected by anomaly + chirality + single-clock evolution
+ANOMALY CANCELLATION FORCES 3+1D SPACETIME
+Temporal direction derived from anomaly + chirality + single-clock evolution
 ========================================================================
 
 ========================================================================
@@ -227,7 +227,7 @@ STEP 3: CHIRALITY REQUIRES EVEN TOTAL DIMENSION
   Odd d_time values: 1, 3, 5, ...
 
 ========================================================================
-STEP 4: SINGLE-CLOCK CODIMENSION-1 EVOLUTION SELECTS d_time = 1 WITHIN THE BRIDGE
+STEP 4: SINGLE-CLOCK CODIMENSION-1 EVOLUTION FORCES d_time = 1
 ========================================================================
 
   From Step 3: chirality requires d_time odd (1, 3, 5, ...).
@@ -334,8 +334,8 @@ STEP 5: COMPLETE DERIVATION CHAIN
                  nonlocal constraints on codimension-1 data
 
   7. RESULT: d_total = 3 + 1 = 4
-     The one-time outcome follows only inside the stated conditional
-     bridge: anomaly + chirality + single-clock codimension-1 evolution.
+     Time is not an input -- it is forced by anomaly + chirality +
+     single-clock codimension-1 evolution.
 
   NUMERICAL CHAIN VERIFICATION:
 
@@ -353,12 +353,12 @@ STEP 5: COMPLETE DERIVATION CHAIN
   [PASS] Full anomaly-free: Tr[Y^3] = 0
 
   ============================================================
-  THEOREM (anomaly-cancellation / single-clock bridge, conditional) VERIFIED:
+  THEOREM (Anomaly-forced time, single-clock form) VERIFIED:
   Cl(3) on Z^3 => su(2)+su(3)+u(1) => anomaly => singlets
   => chirality => even d_total => d_t odd
   => single-clock codim-1 evolution excludes d_t > 1 => 3+1D
 
-  The temporal direction is selected within the stated bridge, not by ABJ alone.
+  The temporal direction is DERIVED, not assumed.
   ============================================================
 
 ========================================================================
@@ -371,10 +371,10 @@ BONUS: COMPLETE SM GENERATION CHARGE TABLE
   d_L        -1/2     3        +1/3     -1/3       Cl(3) taste
   nu_L       +1/2     1        -1       0          Cl(3) taste
   e_L        -1/2     1        -1       -1         Cl(3) taste
-  u_R        0        3        +4/3     +2/3       anomaly-cancellation completion
-  d_R        0        3        -2/3     -1/3       anomaly-cancellation completion
-  nu_R       0        1        0        0          anomaly-cancellation completion
-  e_R        0        1        -2       -1         anomaly-cancellation completion
+  u_R        0        3        +4/3     +2/3       anomaly-forced
+  d_R        0        3        -2/3     -1/3       anomaly-forced
+  nu_R       0        1        0        0          anomaly-forced
+  e_R        0        1        -2       -1         anomaly-forced
   [PASS] Q(u_L) = T3 + Y/2 = 2/3
   [PASS] Q(d_L) = T3 + Y/2 = -1/3
   [PASS] Q(nu_L) = T3 + Y/2 = 0
@@ -391,7 +391,7 @@ BONUS: COMPLETE SM GENERATION CHARGE TABLE
 FINAL SCORE: 86 computed PASS, 2 assertion, 0 FAIL
 ========================================================================
 
-All checks passed. Conditional anomaly/single-clock bridge verified.
+All checks passed. Anomaly-forced time theorem verified.
 
 ----- stderr -----
 

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/assumption_derivation_ledger_meta_check.py
+runner_sha256: 4d2e6202e1bb6c68c93ca261f028e25b1b7ec0153f32bdedf5a38fbe641320a9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================
+ASSUMPTION DERIVATION LEDGER META FIREWALL
+========================================================================
+  source type is meta: PASS
+  source claim scope is metadata: PASS
+  YAML author hint is meta: PASS
+  not a bounded theorem: PASS
+  declares non-authoritative roadmap: PASS
+  sets no audit status: PASS
+  uses roadmap-label table: PASS
+  no current-status table remains: PASS
+  says labels are non-load-bearing: PASS
+  keeps authority in audit ledger/source notes: PASS
+========================================================================
+  TOTAL: PASS=10 FAIL=0
+  OVERALL: PASS
+
+----- stderr -----
+

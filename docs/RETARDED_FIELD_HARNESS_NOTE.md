@@ -2,26 +2,6 @@
 
 **Date:** 2026-04-05  
 **Status:** bounded retarded-field harness with sudden-turn-on and oscillating-source companions
-**Type:** bounded_theorem
-**Status authority:** independent audit lane only.
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The runner output matches the note and the companion dependencies are retained_bounded for related finite retarded-field probes. The chain does not close as a retained theorem because this row synthesizes a frequency-fingerprint/branch-wort"*
-
-with repair: *"missing_bridge_theorem: Add a registered assertion criterion for the frequency-fingerprint claim over this harness and companion probes, or narrow the row to a pure bounded runner-table certificate without branch-worth/fingerprint synthesis"*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The runner-verified frozen table — instantaneous vs. retarded deflection values, oscillating-source readouts at `T = 4/8/16`, and tail-decay percentages — is exactly computed and cache-matched on the retained `h=0.5, W=6, L=30` harness; these numerical certificates are the bounded, runner-backed core.
-- **NON-load-bearing (split off / admitted):** The synthesis claim that the frequency-dependent tail-decay pattern constitutes a "compact frequency fingerprint" worth retaining as a branch-worthiness judgment is not backed by a registered assertion criterion over the harness and companion probes; that fingerprint/branch-worth characterization is admitted as an editorial synthesis, not a derived or audited result.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
 
 ## Artifact chain
 

@@ -37,7 +37,7 @@ inputs (see "Rigor-pass refinement" below).
 |---|---|---|---|
 | **P1** | scalar observables are additive over independent subsystems ⇒ `W = log\|det(D+J)\|` | ~88 | `observable_principle_p1_bridge_{connes_nc_spectral, extensivity_primitive, jones_index_subfactor, locality_of_source_derivatives, tomita_gibbs_modular, structural_reframing}_..._2026-05-21` (6) |
 | **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
-| **Scale** (was `S`) | the single **scale reference** — `a^{-1} = M_Pl` (the Planck scale): one dimensionful number that sets the physical scale, and thereby the units. Irreducible by dimensional analysis (a scale cannot come from the dimensionless `A_min`). *Whether this counts as an admitted empirical import or a framework-native unit declaration is deferred — see note below.* | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
+| **Scale** (was `S`) | the single **scale reference** — `a^{-1} = M_Pl` (the Planck scale): one dimensionful number that sets the physical scale, and thereby the units. Irreducible by dimensional analysis (a scale cannot come from the dimensionless `A_min`). **It is the units import** — full-retained-chain-satisfying, not a physics admission; it never caps a dependent at bounded (see note below). | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
 
 Notes:
@@ -81,13 +81,20 @@ Notes:
     extension, source-unit normalization, and the BP carrier premise itself) is
     currently `unaudited` per the 2026-05-30 chain audit. So `UNIT = Planck` is
     *taken*, not yet derived.
-  - **Deferred classification.** Whether this single unit reference is counted as
-    an *admitted empirical import* (one number taken from the world) or recast as
-    a *framework-native unit declaration* (the trivial scale-fixing every
-    physical theory makes, carrying no dimensionless physics) is left **open and
-    to be decided later**. Either way it is the *only* dimensionful thing the
-    structural core takes; the remaining open work is entirely on the
-    dimensionless side (P1, θ, AC_φλ-δ).
+  - **Classification (resolved 2026-05-30): the units import.** Scale is the one
+    dimensionful number converting the framework's *natural* units (lattice,
+    `a=1`) to *physical* units — neither an axiom nor a physics admission. It
+    carries **zero dimensionless physics** (every theory makes exactly this one
+    conversion), so it is its own category, distinct from the dimensionless
+    physics admissions (P1, θ, AC_φλ) and from the vacuous rescaling conventions
+    (Y₀, g₀, which need no empirical number at all). **It chain-satisfies at full
+    retained:** a lane's status reflects only whether its *dimensionless* content
+    derives from `A_min`; the units conversion never caps a dependent at bounded.
+    (Owner decision: the no-new-axioms norm is the owner's to set and does not
+    bear here — this is a units conversion, not an axiom.) Elevating the units
+    import does **not** promote any lane whose dimensionless content is still
+    bounded/unaudited — the remaining open work is entirely on the dimensionless
+    side (P1, θ, AC_φλ-δ).
 - **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
   problem); not a framework-specific deficit.
 
@@ -116,10 +123,10 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   shared with the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
 - **Scale (was `S`):** restated above as the single **scale reference**
   `a^{-1} = M_Pl` (the Planck scale) — irreducible by dimensional analysis,
-  *taken not derived*, with its classification (admitted empirical import vs
-  framework-native unit declaration) explicitly **deferred**. So the
-  genuine-admitted-input count below is "three dimensionless admissions (P1, θ,
-  AC_φλ) **plus** one scale reference (Scale, import-vs-native deferred)."
+  *taken not derived*, and classified (2026-05-30) as **the units import**:
+  full-retained-chain-satisfying, not a physics admission. So the count below is
+  "three dimensionless physics admissions (P1, θ, AC_φλ) **plus** the units
+  import (Scale), which does not cap dependents at bounded."
 - **Y₀, g₀:** vacuous rescaling conventions — **dropped** from the
   admitted-input count (a convention is not an input, just as a name is not).
 - **θ rigor check:** verified NOT derivable from the retained
@@ -130,11 +137,12 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
 
 Net stratified by character: **three dimensionless admissions** — AC_φλ
 (framework-specific physics), P1 (a mild principle), θ (an SM-shared problem) —
-**plus one dimensionful scale reference**, Scale = `a^{-1} = M_Pl` (the Planck
-scale), whose status as a counted import vs a framework-native unit declaration
-is **deferred**. The dimensionless three are the genuine open derivation work;
-Scale is the single scale-setting every physical theory takes, orthogonal to all
-of them (the Planck scale cannot supply any dimensionless number).
+**plus the units import**, Scale = `a^{-1} = M_Pl` (the Planck scale): the one
+dimensionful number converting natural units to physical units —
+full-retained-chain-satisfying, so it never caps a dependent at bounded. The
+dimensionless three are the genuine open derivation work; Scale is the units
+conversion every physical theory takes, orthogonal to all of them (it cannot
+supply any dimensionless number).
 
 ## Propagation wiring (audit-lane sidecar)
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 257,
+    "critical": 256,
     "high": 303,
     "leaf": 353,
     "medium": 312
@@ -8,32 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lorentz_kernel_positive_closure_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_invariance_note",
-        "lorentz_boost_covariance_2d_theorem_note",
-        "lorentz_boost_covariance_3plus1d_theorem_note"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.331,
-      "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lorentz_kernel_positive_closure.py",
-      "transitive_descendants": 910
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36872,6 +36846,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 80,
-  "total_pending": 1225
+  "ready_count": 79,
+  "total_pending": 1224
 }

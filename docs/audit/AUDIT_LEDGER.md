@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 609 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1221 |
+| unaudited | 1220 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -34,6 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cpt_exact_note` | 4 |
+| `decoration_under_emergent_lorentz_invariance_note` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
@@ -61,20 +62,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 4 |
 | `audited_clean` | 941 |
 | `audited_conditional` | 12 |
-| `audited_decoration` | 51 |
+| `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1459 |
+| `unaudited` | 1458 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1175 |
-| `decoration` | 52 |
+| `decoration` | 53 |
 | `meta` | 242 |
 | `no_go` | 266 |
 | `open_gate` | 118 |
-| `positive_theorem` | 702 |
+| `positive_theorem` | 701 |
 
 | criticality | count |
 |---|---:|
@@ -1115,6 +1116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `lorentz_kernel_positive_closure_note` | decoration | ~~audited_decoration~~ | `decoration_under_emergent_lorentz_invariance_note` | cross_family | codex-gpt-5.5 | A | `emergent_lorentz_invariance_note` |
 | `momentum_charge_commute_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
@@ -8927,6 +8929,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** In the continuum limit a -> 0, W_lat(Δt, Δx⃗; a, m) converges for spacelike separations to m K_1(m sqrt(-s^2))/(4π² sqrt(-s^2)), which depends only on the Lorentz invariant s^2.  _(class `C`)_
 - **chain closes:** True — The narrowed claim closes on the supplied free-scalar spectral integral, the retained/retained_bounded one-hop authorities, and standard invariant-measure and Bessel-form identities checked within the restricted packet. The previously open Planck-scale, finite-a causal, and physical-substrate identifications are explicitly excluded from the audited scope.
 - **rationale:** The runner source contains real lattice-dispersion, boost, quadrature, Euclidean convergence, and K4-normalization computations rather than only stdout assertions, although some final summary checks are narrative check(True) statements and are not load-bearing. Independent formula checks found the Taylor sign and coefficients, the axis/diagonal split -(a^2 p^4)/18, the normalized K4 coefficient 4√π/15, and the spacelike K1 form consistent with the note's conventions. All cited authorities used load-bearingly are retained-grade under the rubric, and the source has narrowed away the earlier non-retained Planck/readout/light-cone premises.
+- **auditor confidence:** high
+
+### `lorentz_kernel_positive_closure_note`
+
+- **Note:** [`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](../../docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** On the fixed self-adjoint H_lat boost-covariance surface, the canonical per-step unitary propagator is U(a)=exp(-i a H_lat); the gravity-card directional-measure kernel and any global no-go over all kernels are outside the audited scope.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_emergent_lorentz_invariance_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-224626-8ff6d23d-lorentz_kernel_positive_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying Stone's theorem to the retained self-adjoint H_lat gives the unique strongly continuous unitary group U(t)=exp(-i t H_lat), hence the per-step propagator U(a)=exp(-i a H_lat).  _(class `A`)_
+- **chain closes:** True — The scoped conclusion follows from the cited retained/retained_bounded H_lat surface plus standard Stone-theorem functional calculus. The directional-family optimization is only a diagnostic lane-separation check and is not needed for the Stone closure.
+- **rationale:** The load-bearing step is a standard mathematical corollary: once H_lat is fixed and self-adjoint, Stone's theorem fixes U(t)=exp(-i t H_lat). The runner source genuinely constructs finite-lattice H_lat and U, checks self-adjointness, unitarity, group law, dispersion recovery, and finite diagnostic non-match claims, with no external comparator checks. Because the audited theorem reduces to one upstream fixed-H_lat parent plus standard mathematics rather than an independent new framework derivation, the appropriate terminal status is decoration rather than audited_clean positive theorem.
+- **decoration parent:** `emergent_lorentz_invariance_note`
 - **auditor confidence:** high
 
 ### `lorentz_violation_derived_note`

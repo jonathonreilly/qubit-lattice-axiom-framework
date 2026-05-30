@@ -37,14 +37,14 @@ Both Lorentz notes are cited as retained authority for the bound `v_LR · a_s/a_
 
 The parent proves three statements:
 - **(M1)** Equal-time strict locality on the Cl(3) tensor structure — from the physical `Cl(3)` local algebra
-- **(M2)** Lattice Lieb-Robinson bound — from the finite-range staggered-Dirac/canonical-normalization surfaces + retained RP transfer matrix + retained spectrum condition + standard Lieb-Robinson 1972 / Nachtergaele-Sims 2010 (admitted-context)
+- **(M2)** Lattice Lieb-Robinson bound — from the finite-range staggered-Dirac/canonical-normalization surfaces + retained RP transfer matrix + spectrum condition + standard Lieb-Robinson 1972 / Nachtergaele-Sims 2010 (admitted-context)
 - **(M3)** Continuum spacelike microcausality — conditional on Lorentz kernel retained surface
 
 The chain genuinely splits: M1+M2 close without ANY of the 42 co-cycle deps. M3 closes only with the 2 Lorentz notes as retained authority. The auditor has two clean options (see §5 below).
 
 ## 2. Source note summary
 
-Parent: `docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`. Proves M1+M2+M3 with the load-bearing input chain: the physical `Cl(3)` local algebra, the `Z^3` spatial substrate, the finite-range staggered-Dirac/canonical-normalization surfaces, retained `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29`, retained `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29`, bridge `MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09` (bounded action support / J-bound bridge); plus for M3 only, `EMERGENT_LORENTZ_INVARIANCE_NOTE` + `LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE`.
+Parent: `docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`. Proves M1+M2+M3 with the load-bearing input chain: the physical `Cl(3)` local algebra, the `Z^3` spatial substrate, the finite-range staggered-Dirac/canonical-normalization surfaces, retained `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29`, `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29`, bridge `MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09` (bounded action support / J-bound bridge); plus for M3 only, `EMERGENT_LORENTZ_INVARIANCE_NOTE` + `LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE`.
 
 ## 3. Per-dep classification (42 deps)
 

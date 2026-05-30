@@ -1214,6 +1214,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -9464,6 +9465,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The newly promoted open-cubic staggered subset is scientifically consistent on main, supporting only the bounded external-source d^-2 reproduction, blocking-sensitivity, and 3D sign-split surfaces stated in the note.  _(class `C`)_
 - **chain closes:** True — The current outputs of the three listed scripts reproduce the note's exact-force, blocked-trajectory, blocking-sensitivity, and 3D contraction/sign-split summaries within print precision. The note explicitly excludes broader staggered both-masses or self-consistent two-body closure.
 - **rationale:** The validation claim closes for its bounded scope: all three referenced reruns match the frozen note summaries, including the global exponents, per-side blocked fits, blocking-scheme sensitivity, width ratios, core excess values, and 20/20 vs 0/20 field-side sign split. The note does not overstate these checks into broader Newton closure or two-body closure. Residual risk is limited to the promoted upstream notes' own scopes, not to stale validation output here.
+- **auditor confidence:** high
+
+### `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28`
+
+- **Note:** [`MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md`](../../docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the stated fixed-null-momentum linear-algebra quotient for a massless vector polarization vector under the note's mostly-minus metric and residual-gauge convention.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260529-234148-10732857-massless_vector_polariza`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** dim_C[{epsilon_mu in C^4 : k^mu epsilon_mu = 0} / {epsilon_mu ~ epsilon_mu + c k_mu}] = 4 - 1 - 1 = 2 at nonzero null k.  _(class `A`)_
+- **chain closes:** False — The source note mixes covariant and contravariant conventions in the canonical check: with its displayed constraint omega*(epsilon_0 - epsilon_3)=0 and its displayed residual shift by c k_mu = (c omega,0,0,-c omega), the shift direction is not in the constraint kernel. Thus the quotient by that displayed residual orbit inside the Lorenz-gauge slice is not well-defined as written.
+- **rationale:** The headline rank count is a class-A algebraic claim, but the displayed formulas do not close under the note's own index conventions. In the explicit k^mu=(omega,0,0,omega), k_mu=(omega,0,0,-omega) frame, the runner and note use the same signed vector for both the constraint row and the gauge-shift direction, so row*shift = 2 omega^2 rather than 0. The runner reports PASS=52 but does not assert the actual kernel-containment condition needed for the quotient; it hard-codes the rank subtraction after a non-equivalent null-shell check.
 - **auditor confidence:** high
 
 ### `matched_2d_4d_decoherence_note`

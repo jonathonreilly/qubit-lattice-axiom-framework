@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py
+runner_sha256: 7daae00ac0a3cdc6043b8b07f3611f77b309c3f69480cda0b4d45c61929394de
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+
+==============================================================================
+PART 0: SOURCE NOTE SCOPE FIREWALL
+==============================================================================
+  [PASS] source note carries repaired-scope phrase: This repair removes the governing-coefficient selection claim
+  [PASS] source note carries repaired-scope phrase: This row does not select `C_pert` over `C_strong`
+  [PASS] source note carries repaired-scope phrase: This row does not prove perturbative convergence
+  [PASS] source note carries repaired-scope phrase: No new axiom is introduced
+  [PASS] source note carries repaired-scope phrase: bounded coefficient support/comparison note
+  [PASS] source note excludes old selector phrase: the perturbative expansion is convergent
+  [PASS] source note excludes old selector phrase: the correct input to the main theorem
+  [PASS] source note excludes old selector phrase: The canonical surface selects the perturbative expansion
+  [PASS] source note excludes old selector phrase: governs the retained result
+
+==============================================================================
+PART 1: SU(3) FIERZ AND PERTURBATIVE COEFFICIENT
+==============================================================================
+  [PASS] Tr(T^A T^B) = 1/2 delta_AB  (max err=1.11e-16)
+  [PASS] SU(3) Fierz identity holds entrywise  (max err=5.55e-17)
+  [PASS] C_pert = 1/(2*N_c) = 1/6
+
+==============================================================================
+PART 2: ONE-LINK HAAR CONTRACTION AND STRONG COEFFICIENT
+==============================================================================
+  [PASS] Haar witness for integral dU U_ab U^dag_cd  (max err=0.004)
+  [PASS] C_strong = 1/N_c^2 = 1/9
+  [PASS] C_pert and C_strong are distinct coefficients  (delta=0.0556; selector out of scope)
+
+==============================================================================
+PART 3: DIRAC FIERZ CHANNEL SANITY
+==============================================================================
+  [PASS] Clifford algebra holds for the gamma basis
+  [PASS] scalar Fierz channel is nonzero with |c_S| = 1
+  [PASS] pseudoscalar Fierz channel is nonzero with |c_P| = 1
+  [PASS] tensor channel vanishes in the vector-vector Fierz  (c_T=0.00e+00)
+
+==============================================================================
+PART 4: H_UNIT SINGLET OVERLAP
+==============================================================================
+  [PASS] unit singlet has norm one
+  [PASS] all six diagonal overlaps are 1/sqrt(6)
+
+==============================================================================
+SUMMARY: PASS=21 FAIL=0
+==============================================================================
+
+----- stderr -----
+

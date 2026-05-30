@@ -7,7 +7,6 @@
 **Primary runner:** [`scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py`](../scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py)
 **Cached output:** [`logs/runner-cache/frontier_wilson_action_surface_selector_real_positive_2026_05_25.txt`](../logs/runner-cache/frontier_wilson_action_surface_selector_real_positive_2026_05_25.txt)
 **Parent context (cleared row):** `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (currently `audited_conditional`; backticked — this note is the *repair candidate* for one of two missing bridges named by the judicial-panel audit verdict, not a load-bearing dep on this proof's chain).
-**Status authority:** independent audit lane only. The `bounded_theorem` label is a source-side claim-boundary declaration, not an audit verdict.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -33,7 +32,7 @@ The judicial-panel audit verdict on `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATI
 
 > *"missing_bridge_theorem: provide retained derivations of the real-positive Wilson action-surface selector and scalar-mass-only/positive-orientation boundary, or keep downstream use explicitly conditional on those premises."*
 
-This note supplies bounded support for the **first** of those two missing bridges — the **real-positive Wilson action-surface selector**. It proves that on the framework baseline one-qubit operator algebra over the `Z^3` spatial substrate, using the canonical-normalization retained primitive `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03`, and under the explicitly named real-positive path-integral conventions, the canonical leading-`β` single-trace plaquette surface selects the standard Wilson form
+This note supplies bounded support for the **first** of those two missing bridges — the **real-positive Wilson action-surface selector**. It proves that on the framework baseline one-qubit operator algebra over the `Z^3` spatial substrate, under the explicitly scoped canonical Wilson matching premise `β = 6` (equivalently `g_bare² = 1` for `N_c = 3` inside the standard leading-small-`a` Wilson relation), and under the explicitly named real-positive path-integral conventions, the canonical leading-`β` single-trace plaquette surface selects the standard Wilson form
 ```
 S_W[U] = (β/N_c) Σ_P (N_c − Re Tr U_P).
 ```
@@ -43,7 +42,7 @@ The second missing bridge (scalar-mass-only / positive-orientation boundary) is 
 
 What this note does NOT claim:
 
-- It does **not** derive canonical normalization `β = 6` from primitives. That is the retained primitive `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` (used here as input).
+- It does **not** derive canonical normalization `β = 6` from primitives. `β = 6` and the standard Wilson small-`a` matching are scoped premises of this bounded selector packet, not authority imported from `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03`.
 - It does **not** derive the path-integral well-definedness conventions (P4) and (P5) from the framework baseline. Those are standard QFT path-integral conventions on the Boltzmann measure, named explicitly as conventions and **not** as new axioms.
 - It does **not** extend to higher-loop functionals (1×2 plaquette, clover, Wilson loops, etc.); (P1) plaquette-locality bounds the scope.
 - It does **not** prove uniqueness over all real-valued class functions of a plaquette holonomy. Higher-order or improvement terms are outside the canonical leading-`β` single-trace surface tested here.
@@ -52,7 +51,7 @@ What this note does NOT claim:
 
 What this note DOES claim:
 
-- Within the enumerated canonical leading-`β` single-trace plaquette ansatz satisfying (P1)-(P5), the standard real-positive Wilson form is the only surviving slot, with the overall normalization fixed by `β = 6` via the retained canonical-normalization primitive.
+- Within the enumerated canonical leading-`β` single-trace plaquette ansatz satisfying (P1)-(P5), the standard real-positive Wilson form is the only surviving slot, with the overall normalization fixed by the scoped `β = 6` premise.
 - Imaginary single-plaquette slots `iθ · Im Tr U_P` are **excluded by (P4) at the action-functional level**, not merely "by convention" or "by phenomenology".
 
 ---
@@ -63,7 +62,7 @@ The framework baseline and explicit bounded premises composed in this note are:
 
 - **Framework local algebra baseline.** The live framework uses the one-qubit operator algebra, equivalently `M_2(C) ~= Cl(3,0)`, at each lattice site. The complexified color surface carries the SU(3) gauge action used below.
 - **Framework spatial substrate baseline.** Sites lie on the `Z^3` spatial substrate (plus a discrete time direction in the 3+1 lift) with oriented links `e = (x, mu)` for `mu in {0, 1, 2, 3}`. Lattice spacing `a > 0`.
-- **Canonical-normalization authority `β = 6`** (retained on the axiom-first surface via [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)). This is the load-bearing one-hop authority anchoring the `β = 2 N_c / g_bare^2 = 6` relation that fixes the real-Wilson-slot coefficient.
+- **Scoped canonical-normalization premise `β = 6`.** This packet assumes the standard Wilson leading-small-`a` matching `β = 2 N_c / g_bare^2` with `N_c = 3` and `g_bare^2 = 1`; it does not claim that `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` supplies a retained derivation of that matching or of the value `β = 6`.
 
 The SU(3) gauge group acts on each link by `U_e ∈ SU(3)` with link transformation `U_e → V_x U_e V_{x+μ}^†` for `V_x ∈ SU(3)`. The Wilson plaquette holonomy is `U_P = U_{e₁} U_{e₂} U_{e₃}^† U_{e₄}^†` for the four oriented boundary links of a plaquette `P = (x, μ, ν)`.
 
@@ -77,11 +76,11 @@ where `f : SU(3) → C` is a fixed function satisfying gauge invariance on each 
 
 - **(P1) Plaquette-locality.** `S[U] = Σ_P f_P(U_P)` for a fixed single-plaquette functional `f_P`. (Translation invariance further reduces to a single `f` independent of `P`, but we do not need this stronger form.)
 - **(P2) Gauge invariance.** Each summand `f(U_P)` is invariant under `U_e → V_x U_e V_{x+μ}^†` for `V_x ∈ SU(3)`.
-- **(P3) Canonical normalization at `β = 6`.** The leading-order continuum-limit term reproduces the YM kinetic `(1/(4 g²)) F^a_{μν} F^{μν,a}` with `g² = 6 / (2 N_c) = 1` at `β = 6` per the retained canonical-normalization authority and the standard Wilson small-`a` matching `β = 2 N_c / g_bare²` with `N_c = 3`.
+- **(P3) Canonical normalization at `β = 6`.** The leading-order continuum-limit term reproduces the YM kinetic `(1/(4 g²)) F^a_{μν} F^{μν,a}` with `g² = 6 / (2 N_c) = 1` at `β = 6` under the scoped standard Wilson small-`a` matching `β = 2 N_c / g_bare²` with `N_c = 3`.
 - **(P4) Real-action surface.** The action `S[U]` is a real-valued functional `S : Conf(Λ) → R`. Equivalently: the Boltzmann factor `exp(−S[U])` is real-positive configuration-wise. This is a **standard QFT path-integral convention** for a real-positive Boltzmann measure (not a new axiom).
 - **(P5) Bounded below.** The action satisfies `S[U] ≥ S_min > −∞` uniformly on `Conf(Λ)`. This is also a **standard QFT path-integral convention** required for `e^{−S}` to define a finite measure on `Conf(Λ)` (not a new axiom).
 
-**Conventional-vs-derived status discipline.** (P1), (P2), and (P3) are the bounded canonical Wilson surface being tested, with the `β = 6` coefficient supplied by the retained canonical-normalization authority above. (P4) and (P5) are **standard path-integral well-definedness conventions** on the Boltzmann measure, named explicitly here as such. They are NOT new axioms; they are the standard QFT-measure conventions assumed by the real-positive Euclidean path-integral surface. The load-bearing selection work in §5 is done by (P4)+(P3) on the surface fixed by (P1)+(P2), with (P5) entering only as a downstream consistency check on the resulting real-positive slot.
+**Conventional-vs-derived status discipline.** (P1), (P2), and (P3) are the bounded canonical Wilson surface being tested, with the `β = 6` coefficient treated as a scoped premise of that surface. (P4) and (P5) are **standard path-integral well-definedness conventions** on the Boltzmann measure, named explicitly here as such. They are NOT new axioms; they are the standard QFT-measure conventions assumed by the real-positive Euclidean path-integral surface. The load-bearing selection work in §5 is done by (P4)+(P3) on the surface fixed by (P1)+(P2), with (P5) entering only as a downstream consistency check on the resulting real-positive slot.
 
 ---
 
@@ -127,11 +126,11 @@ with `u : R × R → R`. QED.
 
 ## §4. Lemma 3 — Canonical normalization fixes the real-part coefficient
 
-**Statement.** Under (P1)+(P2)+(P3)+(P4), and using the retained canonical-normalization primitive, the function `u(x, y)` of Lemma 2 has the form
+**Statement.** Under (P1)+(P2)+(P3)+(P4), with `β = 6` held as the scoped canonical Wilson matching premise, the function `u(x, y)` of Lemma 2 has the form
 ```
 u(x, y) = c · (N_c − x) + v(y) + h(x),
 ```
-where `c = β/N_c = 2` (since `β = 6` and `N_c = 3` per the retained canonical-normalization authority), `v : R → R` collects the imaginary-part dependence (constrained by (P4)+(P5) in Lemma 4), and `h : R → R` is a residual real-`Re z`-only piece. Imposing the canonical leading-`β` ansatz eliminates `h`; outside that ansatz, `h` would represent higher-order/improved-action structure that this note does not classify.
+where `c = β/N_c = 2` (since `β = 6` and `N_c = 3` by scoped premise), `v : R → R` collects the imaginary-part dependence (constrained by (P4)+(P5) in Lemma 4), and `h : R → R` is a residual real-`Re z`-only piece. Imposing the canonical leading-`β` ansatz eliminates `h`; outside that ansatz, `h` would represent higher-order/improved-action structure that this note does not classify.
 
 **Proof.** Expand `U_P = exp(i a² F^a_{μν} T^a + O(a³))` in the lattice spacing `a`, with `T^a` the standard `su(3)` generators (`T^a = λ^a / 2`, `Tr(T^a T^b) = (1/2) δ^{ab}`). The lowest-order expansion of `Tr U_P` is
 ```
@@ -158,7 +157,7 @@ Converting the plaquette sum to a continuum integral `Σ_P → (1/(2 a^4)) ∫ d
 ```
 S_kin = − u_x(N_c, 0) · (1/8) · ∫ d^4x F^a_{μν} F^{μν,a}.
 ```
-(P3) demands this match the canonical YM kinetic `(1/(4 g²)) ∫ d^4x F^a_{μν} F^{μν,a}` with `g² = 6/(2 N_c) = 1` per the retained canonical-normalization authority. Therefore
+(P3) demands this match the canonical YM kinetic `(1/(4 g²)) ∫ d^4x F^a_{μν} F^{μν,a}` with `g² = 6/(2 N_c) = 1` under the scoped `β = 6`, `N_c = 3` matching premise. Therefore
 ```
 − u_x(N_c, 0) · (1/8) = + 1/(4 · 1) = 1/4
 ```
@@ -214,13 +213,13 @@ which is at most `O(a^6)`. This is **subleading** to the YM kinetic term, which 
 
 However, two further constraints exclude all such `v(y) ≠ 0`:
 
-  (i) **Subleading-in-`β` improvement vs. canonical Wilson.** (P3) canonical normalization at *leading* `β` admits the leading kinetic, but any `v(y) ≠ 0` adds an improvement term beyond the canonical Wilson action. On the **canonical Wilson leading-`β` ansatz stipulated by this note**, higher-order improvement terms are outside scope; the retained `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` anchors the `β = 6` coefficient of the canonical real-Wilson slot.
+  (i) **Subleading-in-`β` improvement vs. canonical Wilson.** (P3) canonical normalization at *leading* `β` admits the leading kinetic, but any `v(y) ≠ 0` adds an improvement term beyond the canonical Wilson action. On the **canonical Wilson leading-`β` ansatz stipulated by this note**, higher-order improvement terms are outside scope; the scoped `β = 6` premise fixes the coefficient of the canonical real-Wilson slot.
 
-(ii) **Bounded-below (P5) does not exclude all real `v(y)`.** A real-valued analytic `v(y)` may be bounded below (e.g., `v(y) = c_2 y²` with `c_2 > 0` is bounded below by 0). So (P5) alone does **not** rule out all real-valued `v(y)`. The selection comes from (i) — the canonical-Wilson-leading-β rigidity of the retained canonical-normalization authority plus (P3).
+(ii) **Bounded-below (P5) does not exclude all real `v(y)`.** A real-valued analytic `v(y)` may be bounded below (e.g., `v(y) = c_2 y²` with `c_2 > 0` is bounded below by 0). So (P5) alone does **not** rule out all real-valued `v(y)`. The selection comes from (i) — the canonical-Wilson-leading-β rigidity of the scoped ansatz plus (P3).
 
-**Honest narrowing on (ii).** The canonical Wilson selector is unique only within the canonical leading-`β` ansatz. Subleading-in-`a` improvement terms such as `v(y) = c_2 y^2 + ...` are excluded from this ansatz, not from every well-defined path integral. This is the bounded selection done by the canonical-normalization condition plus the retained `β = 6` authority.
+**Honest narrowing on (ii).** The canonical Wilson selector is unique only within the canonical leading-`β` ansatz. Subleading-in-`a` improvement terms such as `v(y) = c_2 y^2 + ...` are excluded from this ansatz, not from every well-defined path integral. This is the bounded selection done by the canonical-normalization condition plus the scoped `β = 6` premise.
 
-**Step 3 (synthesis).** Combining Steps 1 and 2: the imaginary `iθ` slot is excluded by (P4) at the action-functional level (Step 1); real-valued `v(y) ≠ 0` is excluded by canonical-Wilson leading-`β` rigidity via the retained canonical-normalization authority plus (P3) (Step 2). Therefore `v(y) = 0` on the bounded canonical surface, and the action functional reduces to
+**Step 3 (synthesis).** Combining Steps 1 and 2: the imaginary `iθ` slot is excluded by (P4) at the action-functional level (Step 1); real-valued `v(y) ≠ 0` is excluded by canonical-Wilson leading-`β` rigidity via the scoped ansatz plus (P3) (Step 2). Therefore `v(y) = 0` on the bounded canonical surface, and the action functional reduces to
 ```
 S[U] = (β/N_c) Σ_P (N_c − Re Tr U_P).
 ```
@@ -228,19 +227,19 @@ QED.
 
 **Remark on Step 1 vs. dynamical exclusion.** Step 1 is the **strong** action-functional-level exclusion: `iθ Σ_P Im Tr U_P` produces a non-real action on **every** SU(3) configuration where `Σ_P Im Tr U_P ≠ 0` (generic). This is independent of any partition-function or measure argument. It is a direct algebraic violation of (P4) `S[U] ∈ R`. The earlier (`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19`) Lemma 2.3 made the slightly more delicate "complex Boltzmann factor" argument, which is the same physics but invokes the measure. The present Lemma 4 / Step 1 is stronger: violation at `S[U] ∈ R` directly.
 
-**Honest scope check (anti-overclaim, per memory `feedback_hostile_review_semantics`):** Step 1 *does* assume (P4) "action is real-valued". A hostile reviewer might object that the standard QFT topological-term construction `i θ Q[U]` IS written with `i θ`, with the understanding that the imaginary-action contribution is acceptable on the framework that admits topological θ-angles. The present note's response: this framework is the **retained real-positive measure surface** declared by (P4). Frameworks that admit `iθ Q` live OUTSIDE the (P4) surface and are NOT in this theorem's scope. The narrowing of scope to the (P4) surface is the operational meaning of "real-positive Wilson action-surface selector".
+**Honest scope check (anti-overclaim, per memory `feedback_hostile_review_semantics`):** Step 1 *does* assume (P4) "action is real-valued". A hostile reviewer might object that the standard QFT topological-term construction `i θ Q[U]` IS written with `i θ`, with the understanding that the imaginary-action contribution is acceptable on the framework that admits topological θ-angles. The present note's response: this packet is scoped to the **real-positive measure surface** declared by (P4). Frameworks that admit `iθ Q` live OUTSIDE the (P4) surface and are NOT in this theorem's scope. The narrowing of scope to the (P4) surface is the operational meaning of "real-positive Wilson action-surface selector".
 
 ---
 
 ## §6. Theorem (Wilson action-surface selector)
 
-**Statement.** On the framework baseline one-qubit operator algebra over the `Z^3` spatial substrate, with canonical normalization `β = 6` per the retained primitive `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03`, and under the standard path-integral well-definedness conventions (P4) real-action surface + (P5) bounded below, the canonical leading-`β` single-trace plaquette ansatz satisfying constraints (P1)-(P5) selects the standard Wilson form
+**Statement.** On the framework baseline one-qubit operator algebra over the `Z^3` spatial substrate, with canonical normalization `β = 6` held as a scoped premise of the standard Wilson leading-small-`a` matching surface, and under the standard path-integral well-definedness conventions (P4) real-action surface + (P5) bounded below, the canonical leading-`β` single-trace plaquette ansatz satisfying constraints (P1)-(P5) selects the standard Wilson form
 ```
 S_W[U] = (β/N_c) Σ_P (N_c − Re Tr U_P),    β = 6,    N_c = 3.
 ```
 **The CP-odd imaginary-plaquette term `iθ Σ_P Im Tr U_P` is excluded by (P4) at the action-functional level for any `θ ≠ 0`.**
 
-**Proof.** Lemma 1 reduces the single-plaquette gauge-invariant scalar functional space to `f(U_P) = G(Tr U_P, Tr U_P^†)`. Lemma 2 imposes (P4) to give `f(U_P) = u(Re Tr U_P, Im Tr U_P)` with `u : R × R → R` real-valued. Lemma 3 imposes canonical normalization at leading `β` via the retained primitive to fix the real-Wilson coefficient in `u(x, y) = (β/N_c)(N_c − x) + v(y)` with `β = 6` and `v : R → R` a residual real-valued function of `y = Im Tr U_P` inside the canonical ansatz. Lemma 4 excludes the imaginary candidate `v(y) = i θ y` by (P4) at the action-functional level (`i θ Im Tr U_P` is not real-valued), and the remaining real-valued `v(y) != 0` terms are outside this canonical leading-`β` ansatz. Therefore, within this bounded surface, `v(y) = 0` and
+**Proof.** Lemma 1 reduces the single-plaquette gauge-invariant scalar functional space to `f(U_P) = G(Tr U_P, Tr U_P^†)`. Lemma 2 imposes (P4) to give `f(U_P) = u(Re Tr U_P, Im Tr U_P)` with `u : R × R → R` real-valued. Lemma 3 imposes canonical normalization at leading `β` under the scoped `β = 6` matching premise to fix the real-Wilson coefficient in `u(x, y) = (β/N_c)(N_c − x) + v(y)` with `β = 6` and `v : R → R` a residual real-valued function of `y = Im Tr U_P` inside the canonical ansatz. Lemma 4 excludes the imaginary candidate `v(y) = i θ y` by (P4) at the action-functional level (`i θ Im Tr U_P` is not real-valued), and the remaining real-valued `v(y) != 0` terms are outside this canonical leading-`β` ansatz. Therefore, within this bounded surface, `v(y) = 0` and
 ```
 u(x, y) = (β/N_c)(N_c − x)
 ```
@@ -266,7 +265,7 @@ The honest composition statement after this note lands and (independently) is re
 
 This note does NOT claim:
 
-- **First-principles derivation of canonical normalization `β = 6`.** That is the retained primitive `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03`, used here as input.
+- **First-principles derivation of canonical normalization `β = 6`.** `β = 6` and the Wilson small-`a` matching are scoped premises here. The `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` row is not cited as a retained authority for that stronger matching claim.
 - **First-principles derivation of (P4) real-action convention from the framework baseline.** (P4) is a standard QFT path-integral well-definedness convention on the Boltzmann measure, named explicitly as such here.
 - **First-principles derivation of (P5) bounded-below convention.** Same status as (P4): standard QFT convention.
 - **Exclusion of higher-loop, higher-order, or improved action terms.** Clover, rectangle, extended-trace, arbitrary real class functions, or multi-plaquette CP-odd densities live outside this canonical leading-`β` ansatz.
@@ -276,19 +275,19 @@ This note does NOT claim:
 
 What this note DOES claim:
 
-- The canonical leading-`β` single-trace plaquette ansatz is narrowed to the standard real-positive Wilson form on the surface specified by the framework baseline, retained `β = 6` authority, and (P1)-(P5).
+- The canonical leading-`β` single-trace plaquette ansatz is narrowed to the standard real-positive Wilson form on the surface specified by the framework baseline, scoped `β = 6` premise, and (P1)-(P5).
 - The CP-odd imaginary-plaquette term `iθ Σ_P Im Tr U_P` is **excluded at the action-functional level** by (P4), not merely dynamically.
 - The runner exhibits the construction-and-rejection on actual SU(3) configurations + the symbolic continuum-limit check for the real-Wilson-coefficient anchor `β = 6`.
 
 ### Review-loop no-go discipline gate
 
 - **N1 alternative routes:** clover topological density, multi-plaquette improved density, extended-trace CP-odd density, arbitrary real class-function improvements, axion-coupled continuum embedding, and non-real-positive measure formulations (complex Langevin, etc.) are explicitly **outside** this theorem's scope.
-- **N2 wall independence:** (P1) single-plaquette wall, (P2) gauge-invariance wall, (P3) canonical-normalization wall (load-bearing via the retained canonical-normalization authority), (P4) real-action wall (load-bearing for excluding `iθ` slot), (P5) bounded-below wall are all named independently and not collapsed.
-- **N3 hidden-wall scan:** "canonical", "retained", "standard path-integral" are treated as named surface boundaries. (P4) and (P5) are named explicitly as path-integral well-definedness conventions, not as derived theorems from the framework baseline.
+- **N2 wall independence:** (P1) single-plaquette wall, (P2) gauge-invariance wall, (P3) canonical-normalization wall (load-bearing as a scoped `β = 6` matching premise), (P4) real-action wall (load-bearing for excluding `iθ` slot), (P5) bounded-below wall are all named independently and not collapsed.
+- **N3 hidden-wall scan:** "canonical", scoped `β = 6`, and "standard path-integral" are treated as named surface boundaries. (P4) and (P5) are named explicitly as path-integral well-definedness conventions, not as derived theorems from the framework baseline.
 - **N4 residual matching:** the first of two missing bridges named by the Leg A judicial-panel verdict is matched; the second is explicitly out of scope.
 - **N5 rhetoric audit:** all "CP-odd" / "topological-density" / "F̃F" wording is restricted to the single-plaquette `Im Tr U_P` slot; broader topological discretizations are out of scope.
 - **N6 partial-closure path:** this is a bounded source repair of one named missing bridge, not a new axiom or unconditional retained-status promotion.
-- **N7 steelman:** a hostile reviewer can argue that frameworks with `iθ Q` (e.g., the strong-CP continuum action) live outside the (P4) real-positive surface and are not ruled out by this note. The reply: that is correct, and (P4) is the named surface boundary that excludes them; this note's scope is the (P4)-retained surface, not all conceivable path integrals.
+- **N7 steelman:** a hostile reviewer can argue that frameworks with `iθ Q` (e.g., the strong-CP continuum action) live outside the (P4) real-positive surface and are not ruled out by this note. The reply: that is correct, and (P4) is the named surface boundary that excludes them; this note's scope is the scoped (P4) real-positive surface, not all conceivable path integrals.
 - **N8 cross-cycle echo:** prior action-surface notes consistently distinguish (a) "real-positive Wilson surface" from (b) "the full continuum theory including imaginary topological terms"; this note preserves that distinction and selects (a) on the bounded canonical surface.
 
 ---
@@ -300,11 +299,11 @@ The companion runner [`scripts/frontier_wilson_action_surface_selector_real_posi
 - **V1 — Gauge-invariant scalar enumeration.** For `N = 20` random SU(3) plaquette configurations, verify that candidate functionals `{Tr U_P, Tr U_P^†, Tr U_P^2, Tr(U_P U_P^†)}` are gauge-invariant under random conjugations `U_P → V U_P V^†`. PASS = all four invariant within numerical tolerance, verifying Lemma 1's framing.
 - **V2 — Real-action exclusion of imaginary-plaquette term.** Build the candidate action `S[U] = S_W[U] + iθ Σ_P Im Tr U_P` for `θ ∈ {0.0, 0.1, 1.0}` on a small 2×2×2×2 Λ. Compute `Im S` and `Im exp(−S)` on `N = 10` random configurations. PASS = `θ ≠ 0` gives nonzero `Im S` and nonzero `Im exp(−S)`, verifying Lemma 4 / Step 1 directly.
 - **V3 — Canonical-normalization continuum-limit check.** Symbolically (sympy) expand `U_P = exp(i a² F^a_{μν} T^a)` to second order in `a`; compute leading orders of `Re Tr U_P` and `Im Tr U_P`. PASS = `Re Tr U_P → N_c − (a^4/4) F^a F^a + O(a^6)` matching the YM kinetic with `β = 6`, and `Im Tr U_P = O(a^6)`. (Also exhibited numerically by computing the leading-`a` expansion of `Tr U_P` and verifying the leading-order coefficient `(N_c − Re Tr U_P)/(a^4/4) → F^a F^a` as `a → 0`.)
-- **V4 — Bounded-below check on real Wilson slot.** Compute `S_W = (β/N_c) Σ_P (N_c − Re Tr U_P)` on `N = 50` random SU(3) configurations. PASS = all `S_W ≥ 0` with margin (verifies (P5) on the retained Wilson slot).
+- **V4 — Bounded-below check on real Wilson slot.** Compute `S_W = (β/N_c) Σ_P (N_c − Re Tr U_P)` on `N = 50` random SU(3) configurations. PASS = all `S_W ≥ 0` with margin (verifies (P5) on the scoped Wilson slot).
 - **V5 — Sign-changing imaginary-plaquette proxy check.** Compute the real proxy `θ · Σ_P Im Tr U_P` on `N = 50` random configurations. PASS = the proxy samples both signs, showing it is not the positive Wilson kinetic slot. This is not used as a global bounded-below proof; finite compact-lattice real candidates can be bounded below.
 - **V6 — Canonical ansatz enumeration.** Build candidate single-plaquette functionals `{Re Tr U_P, Im Tr U_P, (Re Tr U_P)², |Tr U_P|², (Tr U_P)², Re((Tr U_P)²), Im((Tr U_P)²)}` and check (P1)-(P5) systematically for each. PASS = only `Re Tr U_P` satisfies canonical normalization (P3) while remaining real-valued and bounded in the enumerated leading-`β` surface; the higher-order real candidates are outside this bounded ansatz rather than impossible action terms.
 - **V7 — Explicit forbidden-slot construction + rejection.** Construct the F̃F-proxy term `S_F̃F = i θ · Σ_P (Tr U_P − Tr U_P^†)/2` for `θ = 0.5`. Verify it violates (P4) on `N = 20` random configurations (nonzero `Im S`). PASS = rejection criterion (`Im S ≠ 0`) triggers on at least 95% of configurations (allowing for the measure-zero coincidence where `Σ_P Im Tr U_P = 0`).
-- **V8 — Compose with retained canonical-normalization primitive.** Compute `β` from the leading-`a` continuum limit of the canonical Wilson action using the retained `g_bare² = 2 N_c / β = 1` from the canonical-normalization authority. PASS = `β = 6` emerges as the unique value consistent with that authority and the leading-order `F^a F^a / (4 g²)` matching.
+- **V8 — Scoped beta-matching consistency.** Compute the leading-`a` continuum-limit relation for the canonical Wilson action under the scoped premises `N_c = 3`, `β = 6`, and `g_bare² = 2 N_c / β = 1`. PASS = `β = 6` is internally consistent with the leading-order `F^a F^a / (4 g²)` matching on this bounded surface; no retained authority for Wilson matching is imported.
 
 Hard assertion gates. Target: PASS = 8 FAIL = 0. NumPy + sympy. Runtime < 5 min.
 
@@ -325,14 +324,14 @@ Cached log: [`logs/runner-cache/frontier_wilson_action_surface_selector_real_pos
 
 ## References and explicit premises
 
-The following are the framework baseline, retained one-hop authorities, and explicit bounded premises that this note composes:
+The following are the framework baseline and explicit bounded premises that this note composes:
 
 - Framework local algebra baseline: one-qubit operator algebra, equivalently `M_2(C) ~= Cl(3,0)`.
 - Framework spatial substrate baseline: `Z^3` spatial substrate.
-- Canonical normalization `β = 6`: [`docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) (retained primitive — load-bearing one-hop authority).
+- Canonical normalization `β = 6`: scoped premise of this bounded selector packet under the standard Wilson leading-small-`a` matching `β = 2 N_c / g_bare²` with `N_c = 3`; not imported as a retained derivation from `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03`.
 - (P4) real-action surface, (P5) bounded below: standard QFT path-integral well-definedness conventions on the Boltzmann measure (not new axioms; not derived from the framework baseline alone).
 
-**No external citations** (Wilson 1974, Vafa-Witten, Leutwyler-Smilga, etc.) are used as proof inputs. The arguments above are bounded compositions of the framework baseline, retained `β = 6` authority, and the named path-integral conventions. External literature may be cited in downstream / paper-level write-ups but is not load-bearing here.
+**No external citations** (Wilson 1974, Vafa-Witten, Leutwyler-Smilga, etc.) are used as proof inputs. The arguments above are bounded compositions of the framework baseline, the scoped `β = 6` matching premise, and the named path-integral conventions. External literature may be cited in downstream / paper-level write-ups but is not load-bearing here.
 
 ## Audit dependency repair links
 

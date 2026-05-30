@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py
-runner_sha256: c3143bdf8250c3951a82ff66c744d21bfd578f0af6549d9b90ac20dac3101600
-timeout_sec: 300
+runner_sha256: 33d92cae0758ab951c3e7dd6602fb5f5c8d8baee73b718cca130b382e5edd1fa
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.21
+elapsed_sec: 1.17
 status: ok
 ----- stdout -----
 ================================================================================
@@ -78,12 +78,12 @@ status: ok
   [PASS] V7.3  Control: theta = 0 gives real Boltzmann factor on ALL configs  (20/20 configs have Im BF = 0 at theta = 0)
   [PASS] V7   F~F-proxy term iθQ rejected at action-functional + Boltzmann-factor levels  (Triple confirmation: Im S != 0, Im BF != 0, theta=0 control)
 
-=== V8: Compose with retained canonical-normalization primitive ===
+=== V8: Scoped beta-matching consistency ===
 
   [PASS] V8.1  Canonical generator normalization Tr(T^a T^b) = (1/2) delta^{ab} holds on T_GEN basis  (max |Tr(T^a T^b) - target| = 1.11e-16)
-  [PASS] V8.2  Retained-primitive relation: g_bare^2 = 2 N_c / beta = 1 at beta = 6, N_c = 3  (g_bare^2 = 1.000000)
+  [PASS] V8.2  Scoped relation: g_bare^2 = 2 N_c / beta = 1 at beta = 6, N_c = 3  (g_bare^2 = 1.000000)
   [PASS] V8.3  Inverse: beta = 2 N_c / g_bare^2 = 6 at g_bare^2 = 1 (canonical), N_c = 3  (beta = 6.000000)
-  [PASS] V8   Composition with retained canonical-normalization authority: beta = 6 from N_c = 3  (Canonical Wilson coefficient anchored by retained primitive G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03)
+  [PASS] V8   Scoped beta-matching consistency: beta = 6 from N_c = 3  (Canonical Wilson coefficient checked as a scoped premise, not imported retained authority)
 
 ================================================================================
 GATE SUMMARY (8 verification gates):

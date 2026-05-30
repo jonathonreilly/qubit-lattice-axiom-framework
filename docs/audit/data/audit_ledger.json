@@ -203729,24 +203729,42 @@
       "verdict_rationale": null
     },
     "observable_principle_from_axiom_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-30T23:00:10.331860+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23"
+        ],
+        "load_bearing_score": 54.529,
+        "runner_hash": "5aff6ed06b57dfe74eadb42bf80357b8f90ff835c468443d6230dcc0ea15bc08",
+        "transitive_descendants": 738
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-225750-4ca1b81d-observable_principle_fro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite log-det/source-response identities close after P1 and P2 are assumed. The restricted packet does not derive P2 or provide a retained/accepted upstream authority for it, and P1 remains an unretired Tier-A bounded admission.",
       "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": null,
+      "claim_scope": "Conditional finite-algebra audit of W=log|det(D+J)| on the runner APBC hierarchy block, assuming P1 scalar additivity and P2 continuous phase-blind scalar-generator selection; the v readout and derivation of P1/P2 were out of scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (finite-algebra `log|det(D+J)|` generator on",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-30T23:00:10.331860+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -203754,22 +203772,24 @@
         "admitted_input_registry_tier_a_note_2026-05-23"
       ],
       "direct_in_degree": 90,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 54.529,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given P1 and P2, factorization of |Z| forces W(r1 r2)=W(r1)+W(r2), so continuity selects the log-amplitude generator W=c log|det(D+J)| plus the chosen baseline convention.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "7dabc0f172f9f77c5ecf4439417205e1f05815786ca4b423cb14628df64bfaff",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained or accepted P2 scalar-generator selection theorem, and repair the functional-equation wording so the additive constant is treated as zero or as an extensive baseline convention rather than a solution of W(r1 r2)=W(r1)+W(r2).",
+      "open_dependency_paths": [
+        "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -204125,18 +204145,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 25,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 25
       },
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note",
       "transitive_descendants": 738,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source is substantive: it constructs the finite staggered APBC Dirac blocks and checks direct-sum determinant/log additivity, source curvature, the Matsubara formula, and Klein-four orbit enumeration; the out-of-scope v comparator is not counted. However, the derivation imports P1 and especially P2 as admitted scalar-selection premises, and the packet supplies no retained or accepted authority for P2. The formula inventory also finds the displayed Cauchy-solution family W(r)=c log r + const overstated: exact W(r1 r2)=W(r1)+W(r2) permits no universal additive constant, though the later zero-source baseline can be repaired as an extensive baseline convention."
     },
     "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

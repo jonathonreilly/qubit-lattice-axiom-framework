@@ -154,11 +154,8 @@ def reflect_monomial(F):
 
 # ---------- Wick contraction ----------
 # For Grassmann action S = bar(chi) M chi (Berezin convention),
-# <chi_b bar(chi)_a>_S =  (M^{-1})_{b, a},
-# <bar(chi)_a chi_b>_S = -(M^{-1})_{b, a}.
-# The sign in the second line is the Grassmann reordering sign. This runner's
-# Wick implementation accounts for it through pairing_sign; the contraction
-# value below is the chi-before-bar propagator.
+# <bar(chi)_a chi_b>_S = (M^{-1})_{b, a} (propagator from b to a),
+# i.e., the Grassmann two-point function picks up M^{-1}.
 #
 # For a product F = product of chi / bar(chi) operators, <F>_S = sum over
 # Wick pairings of products of (M^{-1})_{b, a} with sign from permutation parity.
@@ -167,8 +164,7 @@ def reflect_monomial(F):
 
 def wick_value(monomial, Minv):
     """Compute <F>_S for F = list of (kind, idx) under quadratic action with
-    Berezin propagator <chi_b bar(chi)_a>_S = (M^{-1})_{b,a},
-    with <bar(chi)_a chi_b>_S = -(M^{-1})_{b,a}.
+    Berezin propagator <bar(chi)_a chi_b>_S = (M^{-1})_{b,a}.
 
     Returns a complex number. Uses Wick's theorem with sign from pairing parity.
     """

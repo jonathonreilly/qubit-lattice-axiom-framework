@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 168 |
+| **retained** | 169 |
 | **retained_no_go** | 175 |
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1137 |
+| unaudited | 1136 |
 | meta | 237 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 942 |
+| `audited_clean` | 943 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1374 |
+| `unaudited` | 1373 |
 
 | claim_type | count |
 |---|---:|
@@ -537,6 +537,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7810,6 +7811,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given p = 3, tangent weights (1,2), and ABSS fixed-point applicability on the stipulated PL S^3 x R route, the block-by-block APS arithmetic gives eta = (1/3)(1/3 + 1/3) = 2/9.  _(class `A`)_
 - **chain closes:** True — The scoped algebra closes exactly: the C3 cyclic permutation has eigenvalues 1, omega, omega^2, the transverse weights are (1,2) up to order, (omega-1)(omega^2-1)=3, and the two ABSS summands are both 1/3, yielding 2/9 after division by p=3. The no-go/admission gate passes only for this narrowed boundary because the note explicitly keeps the global topology route, ABSS route derivation, and physical-observable bridge outside the retained claim.
 - **rationale:** The runner completed with 29 PASS and 0 FAIL, and an independent recomputation that did not import the runner reproduced the characteristic polynomial, weights, core product, ABSS sum, and nearby alternatives. Alternative p=3 weights (1,1) and (2,2) give 1/9, while (1,2) and (2,1) give 2/9; nearby body-diagonal-like p values do not reproduce 2/9 except p=3. The clean result is strictly bounded to the conditional algebraic APS certificate and does not promote the unretained global topology/ABSS/physical bridges.
+- **auditor confidence:** high
+
+### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional algebraic obstruction to realizing a continuous `b`-phase symmetry by scalar rephasing of the order-three cyclic generator `C`; only cube-root phases preserve `C^3 = I`, while centralizer and gauge actions leave `b` unchanged and diagonal corner phases either exit the circulant class or reduce to the same discrete case.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-132002-6080b0c0-koide_c3_generator_repha`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the scalar-rephased generator, `(exp(i alpha) C)^3 = exp(3 i alpha) I`, so preserving `C^3 = I` requires `exp(3 i alpha) = 1`.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the stated `3 x 3` cyclic-shift algebra and the retained order-three generation surface by direct matrix identities. The negative scope is properly narrow: it closes only the scalar generator-rephasing route and explicitly leaves non-circulant or tensor-factor routes open.
+- **rationale:** The load-bearing step is a genuine algebraic identity, not a definition, numerical fit, or external comparator check. The displayed rotation formulas for `B1,B2`, the cube-root quantization, the commuting-centralizer claim, and the diagonal phase proportionality criterion all check under the note's conventions. The runner source performs the relevant finite-dimensional matrix computations rather than merely printing constants, and its extra Koide-context checks are not needed for the audited obstruction. The no-go discipline gate is satisfied at the narrow route level because the note does not claim a global absence of continuous doublet actions.
 - **auditor confidence:** high
 
 ### `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`

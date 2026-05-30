@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 245,
     "high": 311,
-    "leaf": 289,
+    "leaf": 288,
     "medium": 294
   },
   "cycle_break_target_count": 0,
@@ -26128,31 +26128,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "three_generation_observable_theorem_note",
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_c3_generator_rephasing_obstruction.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -34748,6 +34723,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 5,
-  "total_pending": 1139
+  "ready_count": 4,
+  "total_pending": 1138
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 10 |
+| ~~audited_conditional~~ | 11 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 939 |
-| `audited_conditional` | 10 |
+| `audited_conditional` | 11 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1463 |
+| `unaudited` | 1462 |
 
 | claim_type | count |
 |---|---:|
@@ -1080,6 +1080,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11466,6 +11467,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting T^a_Rbar := -(T^a_R)^* into Tr_R[T^a_R {T^b_R, T^c_R}] gives one overall minus sign for the cubic trace, hence A(Rbar) = -A(R); with A(3)=1 this gives A(3bar)=-1 and two copies give -2.  _(class `A`)_
 - **chain closes:** True — Both one-hop dependencies are retained-grade: cl3_color_automorphism_theorem supplies the Gell-Mann SU(3) carrier and su3_dabc_symmetric_theorem_note_2026-05-02 supplies the d^{abc} decomposition. The proof is finite-dimensional trace algebra, and the exact-symbolic runner reports PASS=26 FAIL=0 for the carrier, d/f tables, conjugate representation, anomaly-index sign flip, A(3bar)=-1, two-fermion -2 contribution, and consistency probes.
 - **rationale:** The narrow theorem closes on its stated algebraic scope. The load-bearing sign flip is the odd-generator parity of the cubic anomaly trace under the complex-conjugate representation, using retained SU(3) carrier and d^{abc} inputs plus standard finite-dimensional trace algebra. The runner checks the contested algebra symbolically and does not import PDG data, fitted constants, matter-content existence, SM hypercharge, Lorentz/CPT, or continuum physics. The no-go discipline gate is satisfied as a scope guard: the source names the parent existence-side residual but does not claim that residual is impossible or closed. Residual risk is downstream overuse; this verdict cannot be cited as retained existence of u_R,d_R, physical SM color, uniqueness of the completion, or full SU(3)^3 anomaly cancellation.
+- **auditor confidence:** high
+
+### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`
+
+- **Note:** [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](../../docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed-background staggered two-step transfer positivity from the anti-Hermitian spatial-hop modal reduction, plus finite det/spec/Z invariance under hw=1 permutation conjugation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-222034-9a96a2ed-rp_p2_gauge_extension_an`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the fixed-background spatial hop h[U] is anti-Hermitian, it diagonalizes with eigenvalues i lambda_j, so the two-step transfer reduces to 2 x 2 blocks with positive eigenvalues exp(+/-2 asinh(sqrt(m^2+lambda_j^2))); relabeling invariance is then ordinary unitary-conjugation invariance of determinant, spectrum, and trace.  _(class `A`)_
+- **chain closes:** False — The finite linear-algebra parts close for the static fixed-background transfer construction and for permutation relabeling. The U-integrated RP reduction does not close from the packet because the cited gauge-half authority is only an abstract symmetric-involution norm-square lemma and explicitly does not establish the Wilson-plaquette gauge-half application or temporal-gauge boundary bridge.
+- **rationale:** The runner source performs real finite computations rather than merely printing constants: it builds the spatial hop, transfer blocks, random SU(3)/U(1) backgrounds, many-body diagonal Gamma exhibits, and permutation conjugations, with SCORECARD PASS=7 FAIL=0. The displayed modal 2 x 2 formula, determinant-one/positive-eigenvalue calculation, determinant lower bound from the cited Case A note, and unitary-conjugation invariance checks are algebraically sound within their finite fixed-background scope. However, the source also states a U-integrated RP reduction with a Wilson gauge-half factor, while the retained_bounded gauge-half citation only proves an abstract Cauchy-Schwarz identity under explicit symmetry hypotheses and says it does not establish the generic Wilson plaquette half-action theorem. That missing application bridge prevents a clean verdict for the source claim as written.
+- **open / conditional deps cited:**
+  - `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`

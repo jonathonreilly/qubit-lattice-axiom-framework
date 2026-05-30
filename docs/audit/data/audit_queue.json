@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 261,
+    "critical": 260,
     "high": 303,
     "leaf": 353,
     "medium": 312
@@ -8,31 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.852,
-      "note_path": "docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py",
-      "transitive_descendants": 923
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36970,6 +36945,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 81,
-  "total_pending": 1229
+  "ready_count": 80,
+  "total_pending": 1228
 }

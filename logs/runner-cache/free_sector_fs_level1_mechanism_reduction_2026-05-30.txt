@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/free_sector_fs_level1_mechanism_reduction_2026-05-30.py
+runner_sha256: d9ae4c08892c11da72e39c41adeabbae555a9adbad0eadd4ed7eae1f406a971b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+[PASS] statistics_blind_kernel_is_inverse
+[PASS] kernel_pole_continuation_pm_E
+[PASS] given_dirac_mode_structure_pm_E
+[PASS] given_uv_relative_sign_and_completeness
+[PASS] mechanism_bounded_energy_CAR_fock
+[PASS] mechanism_microcausality_pauli_jordan
+[PASS] mechanism_microcausality_CAR_vs_Bose
+[PASS] mechanism_commuting_quantization_excluded
+SCORECARD PASS=8 FAIL=0
+
+----- stderr -----
+

@@ -3,7 +3,7 @@
 **Date:** 2026-04-25 (2026-05-28: Origin obligation sharpened to a single
 derivation target — the generation-chirality grading — see panel section).
 **Type:** open_gate
-**Status authority:** independent audit lane only.
+**Claim type:** open_gate
 **Status:** **open gate, sharpened** — the proposed `χ_η M_phys ⟨ρ,Φ⟩`
 source-action cross term is not supplied by the current retained inventory. The
 7-angle panel localizes the known route to a generation/orientation-factor
@@ -139,6 +139,27 @@ propulsion, reactionless-force, or physical signed-gravity claim. It is a
 conditional action ansatz: if accepted or later derived, it supplies the
 missing `chi_eta` variation by construction. Until then it is a proposal and a
 test harness, not a retained theorem.
+
+## Permanent Boundary Repair (2026-05-27)
+
+The audit blocker offered two repair routes:
+
+1. derive the `chi_eta M_phys rho Phi` source-action cross term from retained
+   APS/Wald/Gauss structure; or
+2. mark the row as an unadmitted proposed-extension boundary.
+
+This repair takes route (2). The source-action term is classified as an
+`open_gate` proposed-extension boundary, not as an admitted axiom and not as a
+retained theorem. A future, separately reviewed theorem could derive it from
+retained structure; until then the interaction is not available as a
+load-bearing premise over the current APS/Wald/Gauss stack.
+
+The related lane-status context is
+[`SIGNED_GRAVITY_RESPONSE_LANE_STATUS_NOTE_2026-04-26.md`](SIGNED_GRAVITY_RESPONSE_LANE_STATUS_NOTE_2026-04-26.md),
+which keeps the signed-response lane in no-go/open status rather than a
+physical signed-gravity closure. The downstream extension follow-up remains a
+controlled candidate only; it is not an admitted axiom, not a retained theorem,
+and not a physical signed-gravity claim.
 
 ## Proposed Action
 

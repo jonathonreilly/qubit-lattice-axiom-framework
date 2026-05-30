@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1136 |
+| unaudited | 1135 |
 | meta | 237 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
 | ~~audited_conditional~~ | 63 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -62,10 +62,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 943 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
-| `audited_failed` | 46 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1373 |
+| `unaudited` | 1372 |
 
 | claim_type | count |
 |---|---:|
@@ -1210,6 +1210,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -8386,6 +8387,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every local gauge-invariant scalar built from the selected-line packet is constant along the branch, while delta(m) is nonconstant and strict-monotone.  _(class `A`)_
 - **chain closes:** True — Within the restricted packet, the no-go follows from the constancy of the local packet and rho_delta together with strict variation of delta(m). The runner checks the relevant local-geometry identities, target placement, branch constancy, and two-point indistinguishability.
 - **rationale:** The load-bearing inference is an algebraic obstruction: a local packet that is constant on the branch cannot distinguish one interior point from another. The runner does more than print constants; it computes the Berry connection, FS density, curvature proxy, branch endpoints, rho_delta constancy, monotonicity, and same-packet/different-holonomy witness. No cited open authority is imported in the audit packet, and the conclusion is scoped to the stated local no-go rather than to a positive derivation of the physical value.
+- **auditor confidence:** high
+
+### `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure algebraic audit of the signed-eigenvalue versus singular-value Koide readouts for the C3-circulant Hermitian spectrum, including the stated equality/sign-window corollaries at r=1/2.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-132412-f7818da1-koide_signed_eigenvalue_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The triangle inequality gives Σ_k|λ_k| ≥ |Σ_kλ_k| = 3a, so Q(V) ≤ Q(S), with equality exactly on the sign-homogeneous readout region; exact r=1/2 evaluations then show Q(V) is θ-dependent while Q(S)=2/3.  _(class `A`)_
+- **chain closes:** False — The main inequality and non-constancy calculation close algebraically. However the displayed equality/sign-window statement is not correct as written: at r=1/2 and θ=π/12 one eigenvalue is exactly zero, Σ|λ|=3a, and Q(V)=2/3, so the Q(V)=2/3 equality set is closed at the boundary, not the strict open window stated in C1 if that parenthetical is read as the equality region.
+- **rationale:** The runner source performs genuine symbolic algebra and its checked PASS items support the headline signed-versus-singular non-constancy result. The strict formula inventory nevertheless exposes a boundary defect in the displayed C1/equality-region family: the runner checks that θ=π/12 has a zero eigenvalue but never checks Q(V) at that boundary, where equality still holds. The note should repair this by distinguishing the strict positive sign-homogeneous window |θ mod 2π/3|<π/12 from the Q(V)=2/3 equality set |θ mod 2π/3|≤π/12, or by explicitly defining zero as included in the common-sign condition and updating C1 accordingly.
 - **auditor confidence:** high
 
 ### `koide_transport_gap_constant_no_go_note_2026-04-20`

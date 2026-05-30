@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py
-runner_sha256: 965e6240a041be0a95a9894a62be581fa06b5c1fd76228ce077454afca402f2e
+runner_sha256: ae405068345967ef0d8a5ad43c22f5c4d57be015e9758876318d6c6024bcd757
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
-# KMS fermionic Brydges majorant external theorem runner
+# Scalar quadratic majorant lemma runner
 # Source note: docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md
 
 ==============================================================================
@@ -58,20 +58,25 @@ T7: sharpness at small-data threshold
          1 - a l y0 = -1/8
 
 ==============================================================================
-T8: BBF polymer norm positivity (structural)
+T8: finite weighted absolute-value norm surrogate is non-negative
 ==============================================================================
-  [PASS] BBF-norm surrogate sum_j w_j |c_j| is non-negative for non-negative w_j
-         bbf_surrogate=274/165
+  [PASS] surrogate sum_j w_j |c_j| is non-negative for non-negative w_j
+         norm_surrogate=274/165
 
 ==============================================================================
 T9: source-note boundary
 ==============================================================================
   [PASS] note declares bounded_theorem
-  [PASS] note declares external scope
-  [PASS] note avoids framework bridge and status overclaims
+  [PASS] required boundary string present: **Claim type:** bounded_theorem
+  [PASS] required boundary string present: This row proves only scalar ODE consequences
+  [PASS] required boundary string present: This repair removes the KMS theorem from the binding claim
+  [PASS] required boundary string present: KMS remains context only
+  [PASS] required boundary string present: does not derive the KMS BBF polymer-norm inequality
+  [PASS] required boundary string present: does not identify any framework effective action with a KMS
+  [PASS] note avoids external theorem/framework bridge overclaims
          boundary disclaimers intact
 
-=== TOTAL: PASS=14, FAIL=0 ===
+=== TOTAL: PASS=19, FAIL=0 ===
 
 ----- stderr -----
 

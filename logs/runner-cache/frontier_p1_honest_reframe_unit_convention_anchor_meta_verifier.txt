@@ -1,0 +1,29 @@
+
+=== P1 honest-reframe unit-convention-anchor meta verifier ===
+
+Scope: META-TIER semantic reclassification of P1 (M_Pl as anchor) via
+       convention-adoption pipeline. NO new physics theorem.
+       NO new numerical claim. NO retained promotion.
+
+[PASS] S1.a: Buckingham-π is a standard textbook mathematical fact (1914)  (documented reference; no audit imports added)
+[PASS] S1.b: dimensionless inputs cannot yield dimensional outputs (theorem of Buckingham-π)  (documentary; no computation performed; standard math fact)
+[PASS] S2: literature survey — 7 frameworks each take ≥ 1 anchor  (7 surveyed, 0 with zero anchors)
+[PASS] S3.a: anchor takes ≥ 5 equivalent forms  (all interconvertible via standard dimensional conversions)
+[PASS] S3.b: the equivalence class carries exactly 1 piece of independent info  (framework needs one anchor, not many)
+[PASS] S4.CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.: precedent file present on origin/main  (verified via git ls-tree)
+[PASS] S4.RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-: precedent file present on origin/main  (verified via git ls-tree)
+[PASS] S4.PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-: precedent file present on origin/main  (verified via git ls-tree)
+[PASS] S4.summary: ≥ 2 meta-tier precedent files needed for pipeline pattern; 3 cited  (3 precedent files cited)
+[PASS] H1: no new numerical M_Pl, m_W, v_EW, or α_LM claim made by this note  (load-bearing scope is semantic (S1-S4); no dimensional value derived)
+[PASS] H2: no retained-row promotion; only meta-tier precedents cited  (S2 lit survey is sidecar; S1 is textbook math; S4 is meta precedent)
+[PASS] H3: HIERARCHY_FORMULA_HONEST_STATUS not cited as a retained precedent  (the unaudited honest-status row is correctly excluded from S4 precedents)
+[PASS] H4: α_LM-defined-at-Landau-pole-equals-M_Pl claim explicitly disclaimed  (retained ALPHA_LM_GEOMETRIC_MEAN warning is respected)
+[PASS] H5: PDG values are sidecar only; not derivation input to S1-S4  (S1 is textbook math; S2 is lit survey; S3 is equivalence statement; S4 is file existence)
+[PASS] H6: A1 + A2 axioms not modified or extended  (note is purely semantic; no axiom-level content)
+[PASS] H7: audit-lane verdict accepted either direction (clean or routed back)  (§4 'Significance (modest)' and §8 'Origin and what comes next' cover both outcomes)
+[PASS] H8: Buckingham-π citation does NOT enable any retained-row promotion  (S1 is a universal impossibility, not a framework-specific positive claim)
+
+PASS=17  FAIL=0
+
+All meta-tier semantic checks PASSED.
+Audit lane decides whether disposition applies.

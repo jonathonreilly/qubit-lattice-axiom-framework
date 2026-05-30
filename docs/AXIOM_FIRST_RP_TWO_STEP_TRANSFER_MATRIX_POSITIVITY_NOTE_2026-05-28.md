@@ -47,14 +47,16 @@ treats the free case explicitly and decisively. The fixed-`SU(3)` gauge
 extension is the separate retained_bounded note named above; it is not
 re-derived here.
 
-Numbers (primary runner, `PASS=4 FAIL=0` at `m = 0.5`): 2-step decaying
+Numbers (primary runner, `PASS=5 FAIL=0` at `m = 0.5`): 2-step decaying
 eigenvalue matches `e^{-2 E(p)}` over the Brillouin zone to max residual
 `3.4e-16` (C1, faithfulness); single-step `max |Im eig(T_even/T_odd)| = 1.62`
 (C2, non-positive); `T_hat^2` positive Hermitian with `min eig > 0` and exact
 `B^dag B` reconstruction `||T_hat^2 - B^dag B|| ~ 6e-17` for
 `L_s in {2, 3, 4, 6}` (C3); operator-picture 2-step Osterwalder-Schrader Gram
 Hermitian and PSD (`min eig = 0`) where the single-step naive Lagrangian Gram
-was `-0.80` (C4, cross-check). Faithfulness and 2-step positivity persist over
+was `-0.80` (C4, cross-check); and the second-quantization functor verified
+in-repo from its defining creation-operator intertwiner, with
+`Gamma(t1^(2)) = exp(-2 a_tau H_hat)` to `~1e-16` (C5, functor check). Faithfulness and 2-step positivity persist over
 the mass range `m in {0.05, 0.1, 0.5, 1.0, 2.0, 5.0}` (max dispersion residual
 `4.1e-16`; `min eig(T_hat^2) > 0` throughout).
 
@@ -124,12 +126,52 @@ is the staggered energy.
 ### Step 4 — many-body 2-step positivity
 
 For a free (quadratic) fermion theory the many-body transfer operator is the
-second quantization `Gamma(t1)` of the single-particle transfer kernel `t1`
-(the standard free-fermion relation between a lattice fermion transfer matrix
-and its single-particle kernel; used here as a functorial relation, not as a
-positivity citation). The single-particle 2-step kernel is the action-derived
-decaying eigenvalue `t1^(2)(p) = e^{-2 E(p)}` from Step 3, real and positive, so
-on the Fock space `H = tensor_p {|0>, |1>}` (dimension `2^{L_s}`)
+second quantization `Gamma(t1)` of the single-particle transfer kernel `t1`.
+This is the standard free-fermion second-quantization functor for a quasi-free
+map (`Luscher 1977`; `Creutz 1977`; `Montvay-Munster Sec.4`; the underlying
+functor is `Shale-Stinespring` / `Berezin`); it is used here as a functorial
+relation, not as a positivity citation. For the diagonal free kernel of this
+construction the functor is elementary finite-dimensional linear algebra,
+recorded explicitly below and verified in-repo by the runner (C5), so the
+relation `Gamma(t1) = B^dag B` is **derived/checked in-repo, not asserted**.
+
+**The functor for a diagonal kernel (explicit, finite-dimensional).** The free
+theory factorizes across spatial momenta `p`, and the single-particle 2-step
+kernel `t1^(2)` is diagonal in those modes with eigenvalues
+`lambda_p = t1^(2)(p) = e^{-2 E(p)}` (real, positive, from Step 3). The defining
+property of the second-quantization functor `Gamma` is that it carries a
+one-particle operator `K` (here diagonal, `K e_p = lambda_p e_p`) to the
+many-body operator `Gamma(K)` on the Fock space `H = tensor_p {|0>, |1>}` that
+fixes the vacuum and intertwines the creation operators,
+
+```text
+    Gamma(K) |vac> = |vac>,    Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K).
+```
+
+For a diagonal kernel these two requirements have a unique, explicit
+finite-dimensional solution: the per-mode tensor product, because each occupied
+mode `p` contributes a factor `lambda_p` and each empty mode contributes `1`,
+
+```text
+    Gamma(t1^(2)) = tensor_p diag( 1, lambda_p )
+                  = exp( -2 a_tau H_hat ),    H_hat = sum_p E(p) a_p^dag a_p,
+```
+
+an exact identity of finite matrices (`lambda_p = e^{-2 E(p)}` gives the second
+equality, so `Gamma` agrees with the number-operator exponential `exp(-2 a_tau
+H_hat)`; this is the relation `Gamma(e^{-h}) = e^{-d Gamma(h)}` specialized to
+the diagonal `h`). The runner builds `Gamma(t1^(2))` from its defining action on
+occupation-basis states, confirms it satisfies the creation-operator
+intertwiner `Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K)` mode-by-mode
+(`intertwiner err ~ 1e-18`), and checks it equals the matrix exponential
+`exp(-2 a_tau H_hat)` of the second-quantized `H_hat` assembled from
+Jordan-Wigner number operators (C5, `||Gamma - exp(-2 a_tau H_hat)|| ~ 1e-15`).
+So the functor relation `Gamma(t1) = B^dag B` is verified in-repo from the
+functor's defining intertwiner, not imported as a theorem.
+
+The single-particle 2-step kernel is the action-derived decaying eigenvalue
+`t1^(2)(p) = e^{-2 E(p)}` from Step 3, real and positive, so on the Fock space
+`H = tensor_p {|0>, |1>}` (dimension `2^{L_s}`)
 
 ```text
     T_hat^2 = Gamma( t1^(2) ) = tensor_p diag( 1, e^{-2 E(p)} )
@@ -172,8 +214,9 @@ The runner reports a PASS/FAIL scorecard; PASS overall requires (free case):
 | C2 single-step non-PSD | `spec(T_even/T_odd)` for `p != 0` | `max |Im eig| > 1e-3` | `1.62` |
 | C3 2-step positivity | `T_hat^2` positive Hermitian `= B^dag B`, `L_s in {2,3,4,6}` | `min eig > 0`, `||T_hat^2 - B^dag B|| < 1e-10` | `min eig > 0`, `~6e-17` |
 | C4 R2 OS Gram PSD | operator-picture 2-step OS Gram | Hermitian, `min eig >= -1e-10` | `min eig = 0`, PSD |
+| C5 functor identity | `Gamma(t1^(2))` from the defining intertwiner `= exp(-2 a_tau H_hat)`, `L_s in {2,3,4,6}` | intertwiner err `< 1e-12`, `||Gamma - exp(-2 a_tau H_hat)|| < 1e-10` | intertwiner `~1e-17`, `~1e-16` |
 
-Overall: `PASS=4 FAIL=0`. The free 2-step blocked transfer matrix `T_hat^2` is
+Overall: `PASS=5 FAIL=0`. The free 2-step blocked transfer matrix `T_hat^2` is
 positive Hermitian; the single-step `T_hat` is non-positive; both are derived
 from the staggered action.
 
@@ -219,7 +262,7 @@ gauge-half norm-square.
 |---|---|---|
 | One-qubit operator algebra / physical `Cl(3,0)` local algebra + `Z^3` spatial substrate | repo baseline (setup) | repo baseline surface (see `MINIMAL_AXIOMS_2026-05-20.md`) |
 | Free staggered KS action `U = 1`, phases `eta_0 = 1`, `eta_1(t) = (-1)^t`, `m > 0` | construction surface | definitional (parent reflection-positivity conventions) |
-| Second quantization `Gamma(t1)` of a free quadratic transfer kernel | many-body two-step transfer | standard free-fermion functorial relation |
+| Second quantization `Gamma(t1)` of a free quadratic transfer kernel | many-body two-step transfer | standard free-fermion functorial relation (`Luscher 1977` / `Creutz 1977` / `Montvay-Munster Sec.4`; `Shale-Stinespring` / `Berezin` functor); for the diagonal free kernel here it is finite-dimensional linear algebra, derived and verified in-repo (runner C5), not load-bearing as a citation |
 
 No fitted values, observed targets, empirical comparators, new unit
 conventions, new axioms, or new Tier-A admissions are introduced. No PDG
@@ -313,7 +356,14 @@ verifies, with `numpy` linear algebra on finite carriers:
   exact `B^dag B` reconstruction for `L_s in {2, 3, 4, 6}`;
 - **C4 R2 OS-Gram cross-check** — the operator-picture 2-step OS Gram
   `G(F_I, F_J) = <vac| F_I^dag T_hat^2 F_J |vac>` is Hermitian and PSD
-  (`min eig = 0`) where the single-step naive Lagrangian Gram was `-0.80`.
+  (`min eig = 0`) where the single-step naive Lagrangian Gram was `-0.80`;
+- **C5 second-quantization functor** — the many-body `Gamma(t1^(2))` built from
+  its defining action on occupation states satisfies the creation-operator
+  intertwiner `Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K)` mode-by-mode and
+  equals the matrix exponential `exp(-2 a_tau H_hat)` of the second-quantized
+  `H_hat = sum_p E(p) a_p^dag a_p` (Jordan-Wigner number operators), for
+  `L_s in {2, 3, 4, 6}` — the free-fermion functor relation `Gamma(t1) = B^dag B`
+  verified in-repo from the functor's defining property, not asserted.
 
 Reproduction:
 
@@ -321,4 +371,4 @@ Reproduction:
 python3 scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
 ```
 
-Expected scorecard: `PASS=4 FAIL=0`.
+Expected scorecard: `PASS=5 FAIL=0`.

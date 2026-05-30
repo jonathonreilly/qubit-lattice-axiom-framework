@@ -24333,6 +24333,14 @@
       "to": "minimal_source_driven_field_probe_note"
     },
     {
+      "from": "source_resolved_exact_green_pocket_note",
+      "to": "source_resolved_exact_green_scaling_note"
+    },
+    {
+      "from": "source_resolved_exact_green_pocket_note",
+      "to": "source_resolved_exact_green_self_consistent_note"
+    },
+    {
       "from": "source_resolved_generated_bridge_failure_audit",
       "to": "source_resolved_generated_discriminator_probe_note"
     },
@@ -24371,6 +24379,10 @@
     {
       "from": "source_resolved_propagating_green_pocket_note",
       "to": "minimal_source_driven_field_probe_note"
+    },
+    {
+      "from": "source_resolved_propagating_green_pocket_note",
+      "to": "source_resolved_exact_green_pocket_note"
     },
     {
       "from": "source_resolved_wavefield_escalation_note",
@@ -78441,12 +78453,14 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_source_driven_field_probe_note"
+        "minimal_source_driven_field_probe_note",
+        "source_resolved_exact_green_scaling_note",
+        "source_resolved_exact_green_self_consistent_note"
       ],
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "note_hash": "8f021392a3837759c4b21fc27db0a5882079e66f94e504632a589897ebac0776",
+      "note_hash": "84803a86863e50aeec623f19d92be8cd0d11581c45ebb6808cb17b3eba48a57b",
       "path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "title": "Source-Resolved Exact Green Pocket"
@@ -78693,14 +78707,15 @@
       "claim_id": "source_resolved_propagating_green_pocket_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "minimal_source_driven_field_probe_note"
+        "minimal_source_driven_field_probe_note",
+        "source_resolved_exact_green_pocket_note"
       ],
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "note_hash": "e68ce71baef17150a0dfdea1c5d02b388564fc59303d072dd0a57632462bb290",
+      "note_hash": "49298dd00283933e8d44e750c987a4761d2d550d6c7b22430fd5a6fa437e4acc",
       "path": "docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md",
       "runner_path": "scripts/source_resolved_propagating_green_pocket.py",
       "title": "Source-Resolved Propagating Green Pocket"

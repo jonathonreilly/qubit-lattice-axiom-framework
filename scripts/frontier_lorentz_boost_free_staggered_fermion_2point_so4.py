@@ -16,13 +16,27 @@ boost note:
 THEOREM (free staggered-Dirac 2-point SO(4) covariance):
   On the free (U=1) staggered (Kogut-Susskind) lattice with the framework's
   canonical phases eta_0 = 1, eta_mu(n) = (-1)^{n_0 + ... + n_{mu-1}}, the
-  momentum-space free staggered Dirac operator in the spin-diagonal
-  (Kahler-Dirac) basis is
+  CONTINUUM-LIMIT (a -> 0) spin(x)taste form of the free staggered Dirac
+  operator in the spin-diagonal (Kahler-Dirac) basis is
 
       D~(p) = m * (1_spin (x) 1_taste)
               + (i/a) * sum_mu (gamma_mu (x) 1_taste) sin(p_mu a),
 
   with Euclidean gamma_mu Hermitian, {gamma_mu, gamma_nu} = 2 delta_mu_nu.
+  The clean 1_taste spin(x)taste factorisation is the a -> 0 form, NOT an
+  exact finite-a reduced-BZ lattice-operator identity: at finite a the honest
+  hypercube spin(x)taste reconstruction (Kawamoto-Smit / Kluberg-Stern) carries
+  O(a) non-spectator taste-mixing channels (e.g. gamma_S (x) xi_5), the standard
+  staggered taste-breaking, and a dimension count forbids the factorisation as
+  a single-spacing identity (16 spin(x)taste components carrying one dof/site
+  live on the block lattice (L/2)^4 at spacing 2a: 16*(L/2)^4 = L^4). What IS
+  exact at finite a is the SCALAR SPECTRUM Delta(p) = m^2 + (1/a^2) sum_mu
+  sin^2(p_mu a): taste does not enter the eigenvalue but appears as a 4-FOLD
+  SPECTRAL MULTIPLICITY (every eigenvalue multiplicity divisible by 4). The
+  taste-spectator statement is therefore a continuum-limit / 4-fold-spectral-
+  multiplicity statement; finite-a taste-breaking is O(a) and vanishes as a->0.
+  (Part 1a verifies the exact spectrum + 4-fold multiplicity on the genuine
+  position-space staggered operator.)
   Its inverse (the 2-point Schwinger function in momentum space) is
 
       G~_E(p) = D~(p)^{-1}
@@ -38,8 +52,10 @@ THEOREM (free staggered-Dirac 2-point SO(4) covariance):
       G~_E(p) -> ( m * 1 - i gamma.p ) / ( p^2 + m^2 ),
 
   the STANDARD SO(4)-COVARIANT Euclidean Dirac/Kahler-Dirac propagator
-  (taste is a spectator identity in the free U=1 theory). In position space
-  this is the SO(4)-rotation-invariant kernel built from the scalar
+  (in this a -> 0 limit taste is a spectator 1_taste; at finite a taste does
+  not enter the scalar spectrum Delta(p) and appears only as a 4-fold spectral
+  multiplicity, with O(a) taste-breaking that vanishes as a -> 0). In position
+  space this is the SO(4)-rotation-invariant kernel built from the scalar
   Euclidean propagator G_E^scal(R) = m K_1(m R)/(4 pi^2 R) and its
   derivative; equivalently (Wick rotation t -> -i tau) the Wightman
   2-point function is SO(3,1)-covariant in the continuum limit.
@@ -265,6 +281,117 @@ def test_part1_algebra():
     resid = np.max(np.abs(D_tilde(p, a, m) @ G_tilde_lat(p, a, m) - np.eye(4)))
     check("D~(p) G~(p) = 1 (propagator inverts the operator)", resid < 1e-10,
           f"max|D G - 1| = {resid:.1e}")
+
+    return True
+
+
+# =============================================================================
+# Part 1a: exact finite-a scalar spectrum + 4-fold taste multiplicity on the
+#          GENUINE position-space staggered operator (the honest finite-a
+#          statement that replaces the false "taste-flat operator identity").
+# =============================================================================
+
+def _eta(n, mu):
+    """Staggered phase eta_0 = 1, eta_mu(n) = (-1)^{n_0 + ... + n_{mu-1}}."""
+    if mu == 0:
+        return 1
+    s = sum(n[nu] for nu in range(mu))
+    return -1 if (s % 2) else 1
+
+
+def staggered_M_position(L, m, d=4):
+    """Free (U=1) staggered first-order operator M on a periodic L^d lattice
+    (lattice units a=1), built DIRECTLY from the framework's action
+
+        S = sum_n chibar(n)[ m chi(n)
+              + (1/2) sum_mu eta_mu(n) (chi(n+e_mu) - chi(n-e_mu)) ].
+
+    One Grassmann component per site (no spin/taste indices imposed by hand):
+    M is N x N with N = L^d. This is the honest finite-a object; its taste
+    structure is EMERGENT (4-fold spectral multiplicity), not a 1_taste factor.
+    """
+    N = L ** d
+    def idx(n):
+        i = 0
+        for c in n:
+            i = i * L + (c % L)
+        return i
+    M = np.zeros((N, N), dtype=complex)
+    import itertools as _it
+    for n in _it.product(range(L), repeat=d):
+        i = idx(n)
+        M[i, i] += m
+        for mu in range(d):
+            e = [0] * d
+            e[mu] = 1
+            n_plus = tuple(n[k] + e[k] for k in range(d))
+            n_minus = tuple(n[k] - e[k] for k in range(d))
+            ph = 0.5 * _eta(n, mu)
+            M[i, idx(n_plus)] += ph
+            M[i, idx(n_minus)] += -ph
+    return M
+
+
+def _expected_scalar_spectrum(L, m, d=4):
+    """Sorted Delta(p) = m^2 + sum_mu sin^2(p_mu), p_mu = 2 pi k_mu / L."""
+    import itertools as _it
+    vals = []
+    for k in _it.product(range(L), repeat=d):
+        p = [2.0 * np.pi * kk / L for kk in k]
+        vals.append(m * m + sum(np.sin(pi) ** 2 for pi in p))
+    return np.array(sorted(vals))
+
+
+def test_part1a_finite_a_spectrum_taste_multiplicity():
+    print("\n=== Part 1a: exact finite-a scalar spectrum + 4-fold taste mult ===\n")
+    print("    (The clean spin(x)taste D~(p) with a 1_taste factor is the a->0")
+    print("     form, NOT a finite-a operator identity. The honest finite-a")
+    print("     statement is: the scalar spectrum Delta(p) is exact and taste")
+    print("     enters only as a 4-fold SPECTRAL multiplicity. Verified here on")
+    print("     the genuine 1-component-per-site position-space operator.)\n")
+
+    for L in (2, 4):
+        m = 0.7
+        M = staggered_M_position(L, m)
+        MdM = M.conj().T @ M
+
+        # 1a.1 M^dag M is Hermitian (well-posed spectral problem)
+        herm = np.max(np.abs(MdM - MdM.conj().T))
+        check(f"L={L}: M^dag M Hermitian (free staggered, position space)",
+              herm < 1e-12, f"max|MdM - MdM^dag| = {herm:.1e}")
+
+        # 1a.2 eigenvalues of M^dag M = exact scalar spectrum Delta(p)
+        ev = np.sort(np.linalg.eigvalsh(MdM).real)
+        exp = _expected_scalar_spectrum(L, m)
+        spec_err = np.max(np.abs(ev - exp))
+        check(f"L={L}: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)",
+              spec_err < 1e-10,
+              f"max|eig - Delta(p)| = {spec_err:.1e} (taste NOT in eigenvalue)")
+
+        # 1a.3 every eigenvalue multiplicity divisible by 4 (4-fold taste mult)
+        counts = []
+        uniq = []
+        tol = 1e-7
+        for e in ev:
+            if uniq and abs(e - uniq[-1]) < tol:
+                counts[-1] += 1
+            else:
+                uniq.append(e)
+                counts.append(1)
+        all_div4 = all(c % 4 == 0 for c in counts)
+        check(f"L={L}: all spectral multiplicities divisible by 4 (4-fold taste)",
+              all_div4,
+              f"{len(uniq)} distinct eigenvalues, multiplicities {counts}")
+
+    # 1a.4 the finite-a operator is NOT taste-flat: it does not equal a clean
+    #      gamma(x)1_taste single-spacing tensor (dimension count). 16 spin(x)taste
+    #      components per Grassmann dof require the block lattice (L/2)^4 at 2a.
+    L = 4
+    N = L ** 4
+    check("Finite-a dof count: 16*(L/2)^4 = L^4 (taste lives on block lattice 2a)",
+          16 * (L // 2) ** 4 == N,
+          f"16*({L//2})^4 = {16 * (L // 2) ** 4} = L^4 = {N} "
+          "(so a single-spacing 16-comp taste-flat identity is forbidden)")
 
     return True
 
@@ -652,8 +779,9 @@ def test_part7_combined():
     check("Z^3 x Z_tau has hypercubic point symmetry, NOT SO(4)",
           True, "SO(4) is non-compact-completion of the cubic group; emergent only")
 
-    check("Free staggered D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)",
-          True, "phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; taste spectator")
+    check("Continuum-limit D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)",
+          True, "phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; 1_taste spectator "
+          "is the a->0 form, finite-a taste enters as 4-fold spectral mult (Part 1a)")
 
     check("THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2+m^2)",
           True, "standard SO(4) Euclidean Dirac/Kahler-Dirac propagator")
@@ -713,6 +841,7 @@ def main():
     print()
 
     test_part1_algebra()
+    test_part1a_finite_a_spectrum_taste_multiplicity()
     test_part2_continuum_limit()
     test_part3_so4_covariance()
     test_part4_l4_cubic_harmonic()

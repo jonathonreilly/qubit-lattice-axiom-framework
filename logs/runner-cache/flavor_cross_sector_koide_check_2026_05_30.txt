@@ -1,0 +1,28 @@
+
+========================================================================
+observed Koide Q by sector (MeV)
+========================================================================
+  charged leptons (pole):  Q = 0.666660   (2/3 = 0.666667)  -> block-count point
+  up (m_t pole)   :        Q = 0.8489   -> ABOVE 2/3 (contradicts VEV-dilution)
+  up (m_t scale)  :        Q = 0.8879   -> ABOVE 2/3 (contradicts VEV-dilution)
+  down (2 GeV)    :        Q = 0.7314   -> ABOVE 2/3 (contradicts VEV-dilution)
+
+========================================================================
+the prediction direction vs the data
+========================================================================
+  positive VEV a_VEV: b/a = b_f/(a_VEV+a_f) DECREASES -> r DOWN -> Q DOWN (toward 1/3).
+  so the mechanism can only put sectors BELOW 2/3. Quarks are ABOVE -> NOT explained.
+  (illustration: pure block-count b/a_f=1/sqrt2, add uniform VEV v:)
+    v=0.0: Q=0.6667  (<= 2/3 always for v>=0)
+    v=0.5: Q=0.4815  (<= 2/3 always for v>=0)
+    v=2.0: Q=0.3704  (<= 2/3 always for v>=0)
+
+========================================================================
+VERDICT (correction)
+========================================================================
+  Move-4 quark claim RETRACTED. The mechanism is LEPTON-SPECIFIC: it explains
+  leptons sitting at the block-count point Q=2/3 (pure fluctuation, a_VEV~0). It does
+  NOT predict the quarks (Q>2/3, b/a>1/sqrt2), which positive VEV-dilution cannot
+  reach. The lepton result (moves 1-4) stands; the quark extrapolation was wrong.
+  Consistent with retained_no_go quark_c3_circulant_source_law_boundary: A1's grading
+  does not propagate to quarks -- they are a separate, harder problem.

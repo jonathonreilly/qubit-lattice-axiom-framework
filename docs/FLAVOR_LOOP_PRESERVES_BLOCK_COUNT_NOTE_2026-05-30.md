@@ -36,10 +36,19 @@ condensate `a_VEV` (with `b_VEV→0`). The physical operator is
 (Verified: with a fixed block-count fluctuation `b/a_f=1/√2`, Q rises 0.347 → 0.417
 → 0.565 → **0.667** as the uniform VEV `v` shrinks 4 → 1 → 0.2 → 0.)
 
-Charged leptons are **light** (near-critical, small uniform VEV) → fluctuation-
-dominated → the covariant block-count measure sets the spectrum → **Q ≈ 2/3**.
-Heavier sectors (up quarks) are more VEV-dominated — consistent with their weaker
-Koide adherence.
+Charged leptons sit at the block-count point (**Q ≈ 2/3**) iff their mass operator
+is the pure covariant-measure fluctuation (uniform `a_VEV` component ≈ 0).
+
+> **Correction (see `FLAVOR_CROSS_SECTOR_KOIDE_CHECK_NOTE_2026-05-30`):** an
+> earlier version of this note claimed "heavier up-quarks are more VEV-dominated →
+> weaker Koide, consistent." **That cross-sector claim is WRONG and is retracted.**
+> (i) A positive uniform VEV *dilutes* `b/a` and can only push `Q` *below* 2/3
+> (toward 1/3); but the quark sectors are observed *above* 2/3 (up ≈ 0.85, down ≈
+> 0.73). (ii) It also conflated "heavy sector" with "VEV-dominated/degenerate" — the
+> quarks are extremely *hierarchical* (the opposite of degenerate). So the mechanism
+> is **lepton-specific**: it explains why the leptons *can* sit exactly at the
+> block-count point; it does **not** predict the quark values, which deviate
+> *upward* and need enhanced off-diagonal structure VEV-dilution cannot supply.
 
 ## Honest caveats
 1. The VEV-vs-fluctuation **crossover is qualitative** here; the quantitative

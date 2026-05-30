@@ -78749,21 +78749,6 @@
       "runner_path": "scripts/source_resolved_support_localization_split_probe.py",
       "title": "Source-Resolved Support Localization Split"
     },
-    "source_resolved_transverse_green_corrected_boundary_note_2026-05-29": {
-      "claim_id": "source_resolved_transverse_green_corrected_boundary_note_2026-05-29",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
-      "helper_runner_paths": [
-        "scripts/minimal_source_driven_field_probe.py",
-        "scripts/source_resolved_transverse_propagating_green.py"
-      ],
-      "note_hash": "657a9d480afe11287e12bb8861cad4a5ea05d636a29cb7f8bb4df929344830ca",
-      "path": "docs/SOURCE_RESOLVED_TRANSVERSE_GREEN_CORRECTED_BOUNDARY_NOTE_2026-05-29.md",
-      "runner_path": "scripts/source_resolved_transverse_green_corrected_boundary_check.py",
-      "title": "Source-Resolved Transverse Green Corrected Boundary Packet"
-    },
     "source_resolved_wavefield_escalation_note": {
       "claim_id": "source_resolved_wavefield_escalation_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -87769,7 +87754,6 @@
     "source_resolved_radical_geometry_probe_note",
     "source_resolved_self_consistent_generated_transfer_note",
     "source_resolved_support_localization_split_note",
-    "source_resolved_transverse_green_corrected_boundary_note_2026-05-29",
     "source_resolved_wavefield_v2_note",
     "spectral_closure_2026-04-09",
     "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",

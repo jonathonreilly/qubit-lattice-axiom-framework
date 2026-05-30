@@ -238791,7 +238791,7 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 2,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [
@@ -238803,7 +238803,7 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 7.65,
+      "load_bearing_score": 7.129,
       "load_bearing_step": "For P(rho_E) with E-shell=(1,0,0,0) and E-center=(1,0,1/6,0), shell normalization gives (1,0) for every rho_E while the center lift is 1+rho_E/6, so rho_E remains free unless an extra E-center endpoint/readout primitive is supplied.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -238852,7 +238852,7 @@
       },
       "runner_path": "scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py",
       "title": "Quark Route-2 E-Channel Readout Naturality No-Go",
-      "transitive_descendants": 70,
+      "transitive_descendants": 69,
       "verdict_rationale": "The load-bearing step is class A algebra over the explicitly stated reduced map and endpoint columns, and it establishes non-uniqueness rather than deriving a positive fitted value. The runner source does real matrix and Fraction checks for the reduced family, the equivalence to -8/9, and multiple admissible non-target choices. Its live endpoint use is quarantined as comparator/firewall evidence and is not needed for the no-go conclusion. The clean scope does not certify a first-principles derivation of the restricted carrier class or the granted T-side candidates; it certifies the no-go once those scoped premises are in place."
     },
     "quark_route2_exact_readout_map_note_2026-04-19": {
@@ -247343,22 +247343,15 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
         "quark_route2_exact_readout_map_note_2026-04-19",
         "quark_route2_exact_time_coupling_note_2026-04-19"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py",
-        "scripts/frontier_quark_endpoint_readout_constraints.py",
-        "scripts/frontier_quark_route2_exact_readout_map.py",
-        "scripts/frontier_same_source_metric_ansatz_scan.py",
-        "scripts/frontier_tensor_support_center_excess_law.py"
-      ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
+      "helper_runner_paths": [],
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
       "load_bearing_step": "The note's load-bearing core says the cited stack algebraically reduces the readout problem to the endpoint ratios and already determines the T-side candidates, leaving only beta_E / alpha_E as the remaining obstruction.",
       "load_bearing_step_class": "A",

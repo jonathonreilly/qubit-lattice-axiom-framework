@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py
+runner_sha256: 1cdb6cd004b5b5c2dcb958a6321214f3fef47f8c0508764a95246d0ee13becea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+
+========================================================================
+Check 1 - C_3-rotation invariance fixes Gram to diag(g00,g11,g11)
+========================================================================
+[PASS] rotation-invariant Gram = diag(g00, g11, g11), ratio g00:g11 free  (sol={g01: 0, g02: 0, g12: 0, g22: g11})
+
+========================================================================
+Check 2 - antilinear Theta = diag(1,1,-1) imposes ZERO extra constraint
+========================================================================
+[PASS] Theta isometry residual = 0 on the whole cone
+[PASS] Theta self-adjointness residual = 0 on the whole cone
+
+========================================================================
+Check 3 - Hermitian doublet eigenvalues are two independent reals
+========================================================================
+[PASS] all three Hermitian-circulant eigenvalues are real
+[PASS] the two doublet eigenvalues are independent reals (not a conjugate pair)  (doublet=['a - sqrt(3)*b_im - b_re', 'a + sqrt(3)*b_im - b_re'])
+[PASS] a NON-Hermitian real circulant DOES give a complex-conjugate pair  (max|Im|=0.17)
+
+========================================================================
+Check 4 - signed/Brannen Q = (1+2r)/3 is (1,2)-compatible (Q=1 at r=1)
+========================================================================
+[PASS] r=0.5, theta=0: Q=(1+2r)/3=0.6667, real spectrum  (Q=0.666667)
+[PASS] r=1, theta=0: Q=(1+2r)/3=1.0000, real spectrum  (Q=1.000000)
+[PASS] r=1, theta=0.7: Q=(1+2r)/3=1.0000, real spectrum  (Q=1.000000)
+[PASS] r=1, theta=1.3: Q=(1+2r)/3=1.0000, real spectrum  (Q=1.000000)
+
+========================================================================
+Check 5 - det_R(alpha P_s + beta P_d) = alpha*beta^2; witness diag(3,6,6)
+========================================================================
+[PASS] P_singlet rank 1, P_doublet rank 2
+[PASS] det_R(alpha=2.0, beta=3.0) = alpha*beta^2 = 18.000  (det=18.000)
+[PASS] det_R(alpha=1.0, beta=0.5) = alpha*beta^2 = 0.250  (det=0.250)
+[PASS] det_R(alpha=4.0, beta=1.5) = alpha*beta^2 = 9.000  (det=9.000)
+[PASS] WITNESS diag(3,6,6) [the (1,2) weighting] is PD, C_3- and Theta-invariant
+
+========================================================================
+Summary
+========================================================================
+PASS=15 FAIL=0
+The retained real structure does NOT forbid (1,2); (1,1) is permitted-not-forced.
+The Koide-value pin is the continuous SO(2)/U(1)_b doublet-frame quotient.
+
+----- stderr -----
+

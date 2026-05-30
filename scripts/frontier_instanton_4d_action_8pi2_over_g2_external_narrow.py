@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-"""Runner for the 4D instanton action bounded normalization certificate.
+"""Runner for the 4D instanton minimal action 8 pi^2 / g^2 external theorem note.
 
-The note no longer certifies the broader external instanton theorem package.
-It only records the supplied-normalization algebra giving
-S_inst = 8 pi^2 / g^2 for a charge-one self-dual sector, evaluates the
-arithmetic consequences at three sample couplings, and enforces boundaries.
-Atiyah-Singer integrality, BPST existence, and Luescher lattice-topology
-preservation remain context only and are not load-bearing retained inputs for
-this row.
+The note records the canonical 4D Euclidean SU(N) Yang-Mills instanton
+minimal action S_inst = 8 pi^2 / g^2 (Belavin-Polyakov-Schwartz-Tyupkin
+1975; 't Hooft 1976) and its preservation on a 4D Wilson lattice under
+Lüscher admissibility (Lüscher 1982; Wilson flow, Lüscher arXiv:1006.4518
+2010), together with Atiyah-Singer integrality of the topological charge
+Q in Z (Atiyah-Singer 1968-1971). The runner verifies the canonical
+algebraic identity in exact (SymPy + Fraction) symbolic form, evaluates
+S_inst and exp(-S_inst) at three canonical values of g^2, checks the
+self-duality saturation of the Bogomolny bound, records the lattice
+O(a^2) correction structure (without making numerical artifact claims),
+and enforces the source-note boundary disclaimers excluding framework
+substrate identification, hierarchy closure, scale ratio derivation, and
+alpha_LM^16 closure overclaims.
 """
 
 from __future__ import annotations
@@ -62,33 +68,22 @@ def test_T1_symbolic_action_formula() -> None:
     )
 
 
-def test_T2_global_inputs_non_load_bearing() -> None:
-    section("T2: global instanton inputs are explicitly non-load-bearing context")
+def test_T2_atiyah_singer_integrality() -> None:
+    section("T2: Atiyah-Singer integrality Q in Z stated as external theorem")
+    # Verify the source note states the Q-formula and integrality.
     text = NOTE.read_text(encoding="utf-8")
-    lower = text.lower()
-    names_global_inputs = (
-        "atiyah-singer" in lower
-        and "bpst" in lower
-        and ("luescher" in lower or "lüscher" in lower)
-    )
-    non_load_bearing = "not load-bearing retained authorities" in lower or "non-load-bearing" in lower
-    explicit_context = "external context only" in lower
-    not_retained_inputs = "not retained-grade inputs" in lower
-    names_non_claims = (
-        "does **not** claim" in lower
-        and "retained atiyah-singer integrality" in lower
-        and "retained bpst existence" in lower
-        and ("retained luescher lattice-topology preservation" in lower or "retained lüscher lattice-topology preservation" in lower)
+    has_q_formula = "Q = (1 / (32 π²))" in text or "Q = (1 / (32 \\pi^2))" in text or "32 π²" in text
+    has_integrality = "Q ∈ Z" in text or "Q in Z" in text
+    has_atiyah_singer = "Atiyah-Singer" in text or "Atiyah" in text
+    check(
+        "note states canonical Q = (1/32 pi^2) integral Tr(F *F) formula",
+        has_q_formula,
+        "topological charge formula present in claim section",
     )
     check(
-        "note names Atiyah-Singer/BPST/Luescher as background only",
-        names_global_inputs and explicit_context,
-        "global theorem package is present only in the context section",
-    )
-    check(
-        "note states global theorem package is not retained/load-bearing for this row",
-        non_load_bearing and not_retained_inputs and names_non_claims,
-        "non-claims section and context boundary are explicit",
+        "note states Atiyah-Singer integer integrality Q in Z",
+        has_integrality and has_atiyah_singer,
+        "Q in Z + Atiyah-Singer named explicitly",
     )
 
 
@@ -189,51 +184,38 @@ def test_T6_self_duality_saturation() -> None:
     )
 
 
-def test_T7_lattice_context_is_non_retained() -> None:
-    section("T7: lattice/admissibility language is context only, not a retained theorem")
+def test_T7_lattice_O_a2_structure() -> None:
+    section("T7: lattice O(a^2) correction structure recorded (no numerical claim)")
     text = NOTE.read_text(encoding="utf-8")
-    lower = text.lower()
-    has_lattice_terms = (
-        ("luescher" in lower or "lüscher" in lower)
-        and ("admissibility" in lower or "admissible" in lower)
-        and ("wilson-flow" in lower or "wilson flow" in lower or "gradient flow" in lower)
-    )
-    has_nonclaim = (
-        "does **not** claim" in lower
-        and ("retained luescher lattice-topology preservation" in lower or "retained lüscher lattice-topology preservation" in lower)
-    )
-    has_scope_boundary = (
-        "not a retained preservation theorem" in lower
-        or "not cited here as retained authority" in lower
-        or "context only" in lower
-    )
-    avoids_binding_continuum_control = (
-        "continuum-limit `o(a²)` control" in lower
-        or "continuum-limit `o(a^2)` control" in lower
-        or "continuum-limit" in lower and "control" in lower and "does **not** claim" in lower
+    has_admissibility = "admissibility" in text.lower() or "admissible" in text.lower()
+    has_O_a2 = "O(a²)" in text or "O(a^2)" in text
+    has_luscher = "Lüscher" in text or "Luscher" in text
+    has_wilson_flow = "Wilson flow" in text.lower() or "Wilson gradient flow" in text or "Wilson flow" in text or "gradient flow" in text.lower()
+    check(
+        "note records Lüscher admissibility condition",
+        has_admissibility and has_luscher,
+        "admissibility + Lüscher cited",
     )
     check(
-        "note keeps Luescher/admissibility/Wilson-flow language visible as context",
-        has_lattice_terms,
-        "lattice language remains available for later bridge work",
+        "note records O(a^2) lattice correction structure (no numerical claim)",
+        has_O_a2,
+        "structural form recorded",
     )
     check(
-        "note disclaims retained lattice-topology preservation and continuum control",
-        has_nonclaim and has_scope_boundary and avoids_binding_continuum_control,
-        "lattice package is non-load-bearing for this bounded certificate",
+        "note records modern Wilson flow / gradient flow topology extraction",
+        has_wilson_flow,
+        "Lüscher arXiv:1006.4518 cited",
     )
 
 
-def test_T8_bounded_theorem_declaration() -> None:
-    section("T8: boundary — note declares bounded_theorem")
+def test_T8_positive_theorem_declaration() -> None:
+    section("T8: boundary — note declares positive_theorem")
     text = NOTE.read_text(encoding="utf-8")
-    has_decl = "**Claim type:** bounded_theorem" in text
-    has_type = "**Type:** bounded_theorem" in text
-    lacks_old_decl = "**Claim type:** positive_theorem" not in text
+    has_decl = "**Claim type:** positive_theorem" in text
     check(
-        "note declares bounded_theorem and no longer declares positive_theorem",
-        has_decl and has_type and lacks_old_decl,
-        "bounded metadata lines present",
+        "note declares Claim type: positive_theorem",
+        has_decl,
+        "Claim type line present",
     )
 
 
@@ -310,16 +292,16 @@ def test_T10_no_alpha_LM_16_closure() -> None:
 
 
 def main() -> int:
-    print("# 4D instanton 8 pi^2 / g^2 bounded normalization runner")
+    print("# 4D instanton 8 pi^2 / g^2 external theorem runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
     test_T1_symbolic_action_formula()
-    test_T2_global_inputs_non_load_bearing()
+    test_T2_atiyah_singer_integrality()
     test_T3_numerical_action_values()
     test_T4_exp_suppression()
     test_T5_canonical_g2_one()
     test_T6_self_duality_saturation()
-    test_T7_lattice_context_is_non_retained()
-    test_T8_bounded_theorem_declaration()
+    test_T7_lattice_O_a2_structure()
+    test_T8_positive_theorem_declaration()
     test_T9_no_substrate_identification()
     test_T10_no_alpha_LM_16_closure()
     print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")

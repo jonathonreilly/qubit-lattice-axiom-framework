@@ -1,14 +1,14 @@
 # Trace Gate
 
 ```yaml
-trace_class: negative_route_pruning
+trace_class: direct_blocker_closure
 target_claim_id: anomaly_forces_time_theorem
-target_blocker_text: "admission (i), ABJ anomaly-to-inconsistency on the lattice"
-source_of_blocker_text: docs/ANOMALY_FORCES_TIME_THEOREM.md and late-May ABJ residual notes
-reachability_to_target: prunes
-artifact_role: no_go
-next_trace_action: "Replace the standard epsilon-index residual with taste-singlet/Adams/overlap/cohomology route, or keep ABJ as accepted premise for bounded status."
+target_blocker_text: "stale admission (i) wording and missing current-surface accepted-premise composition"
+source_of_blocker_text: docs/ANOMALY_FORCES_TIME_THEOREM.md
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "Audit the bounded accepted-premise composition, or pursue taste-singlet/Adams/cohomology route for unbounded ABJ internalization."
 ```
 
-If true, this artifact does not close 3+1.  It prevents the current residual
-from being mistakenly pursued as a same-surface positive proof.
+The current block closes the stale-parent repair and the accepted-premise
+composition route. The remaining unbounded blocker is ABJ internalization.

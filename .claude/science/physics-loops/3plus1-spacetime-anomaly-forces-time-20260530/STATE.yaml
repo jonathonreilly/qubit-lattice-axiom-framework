@@ -1,10 +1,10 @@
 loop_slug: 3plus1-spacetime-anomaly-forces-time-20260530
 branch: physics-loop/3plus1-spacetime-anomaly-forces-time-20260530
 target_status: best-honest-status
-current_surface_status: exact route-pruning no-go
-active_route: standard staggered epsilon-index residual P1'
-hard_residual: "Can the current finite even-torus staggered epsilon index witness nonzero A_t[U]?"
-cycle_count: 1
+current_surface_status: goal-mode repair in progress
+active_route: accepted-premise composition repair for anomaly-forces-time
+hard_residual: "Can the parent 3+1 theorem be upgraded from stale bare-ABJ wording to current accepted-premise positive bounded closure?"
+cycle_count: 2
 files_touched:
   - docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md
   - scripts/frontier_abj_epsilon_index_square_block_no_go.py
@@ -13,4 +13,4 @@ open_imports:
   - "ABJ anomaly-to-inconsistency remains open unless routed through an accepted premise or a different internal index/cohomology proof."
   - "single-clock codimension-1 theorem remains audit-pending for the parent 3+1 composition."
 next_exact_action: "Attack the positive replacement route: taste-singlet/Adams staggered index as a framework-allowed chiral measure, or explicit accepted-premise composition cleanup if staying bounded."
-stop_condition: "Cycle 1 reached an exact no-go for the current residual; continue with positive replacement route in a follow-up block."
+stop_condition: "Stop only after a current-surface theorem note, runner, parent repair, audit pipeline, and PR update are complete or after a true unbounded blocker is isolated."

@@ -7,3 +7,7 @@
 
 This no-go does not prune taste-singlet/Adams/overlap index operators,
 non-flat/imbalanced complexes, or accepting ABJ as a named physics premise.
+
+Cycle 2 used the last option: the parent theorem is now repaired as an
+accepted-premise composition. The no-go still blocks using the standard
+finite-even-torus `epsilon` index as the internal ABJ witness.

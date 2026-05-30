@@ -19,3 +19,13 @@
     `audit_status = unaudited`, `effective_status = unaudited`, `deps = []`.
   - Audit compatibility: PASS after `run_pipeline.sh`, strict lint, and
     `git diff --check`.
+
+- 2026-05-30: Goal-mode repair review.
+  - Parent theorem no longer contains stale "no successor after PR 402"
+    wording.
+  - New accepted-premise closure runner verifies the exact composition and
+    source firewall (`PASS=26 FAIL=0`).
+  - Existing ABJ bridge runner still passes (`PASS=63 FAIL=0`).
+  - Single-clock runner still passes (`PASS=18 FAIL=0`).
+  - Disposition: bounded-support / accepted-premise positive composition,
+    not unbounded positive theorem.

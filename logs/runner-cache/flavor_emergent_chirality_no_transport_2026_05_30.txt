@@ -1,0 +1,14 @@
+[PASS] V1 native chirality eps|hw1=-I3: commutes R, does NOT anticommute Gamma_chi
+       ||{eps,Gchi}||=3.4641
+[PASS] V2 Connes-Lott grading I3(x)sigma3 INERT: {G(x)s1, I3(x)s3}=0 for every G
+       grading imposes ZERO constraint on the generation factor
+[PASS] V3 C3->S2 anticommuting op: spectrum {-lam,0,+lam}, singular-value Q=1/2 (not 2/3)
+       eig=[-7.07106781e-01 -2.19544277e-16  7.07106781e-01], ||[H,R]||=1.732, Q_sv=0.5000
+[PASS] V4 emergent-time carrier Xi=Theta(x)V factorizes; identity on R^3_gen
+       no generation index in s3_time stack -> transports no chirality
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: spacetime(x)generation FACTORIZES; emergent time generation-blind;
+tensor-product loophole open but uncrossed by any NATIVE filling; the single
+unsupplied import = C3-orbit-splitting chiral grading on R^3_gen. Next path off the
+circulant wall: equivariant-eta / Z_N spectral-asymmetry operator-realization bridge.

@@ -57808,8 +57808,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "native_gauge_closure_note",
-        "graph_first_su3_integration_note",
-        "g_bare_structural_normalization_theorem_note_2026-04-18"
+        "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
       "note_hash": "4f977cbd301b925215d6fa7a87cf7632c134f4e9c3c9bb0293207d602f523bc1",

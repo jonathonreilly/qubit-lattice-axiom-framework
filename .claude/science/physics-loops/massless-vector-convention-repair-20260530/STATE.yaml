@@ -1,0 +1,23 @@
+loop_slug: massless-vector-convention-repair-20260530
+branch: physics-loop/massless-vector-convention-repair-20260530
+base: origin/main
+target_claim_id: massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+cycle_count: 1
+active_route: repair covariant/contravariant convention and assert residual gauge direction lies in Lorenz kernel
+hard_residual: physical QFT context remains admitted; no framework bridge is claimed
+files_touched:
+  - docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md
+  - scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py
+  - logs/runner-cache/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.txt
+trace_gate_classification: direct_blocker_closure
+review_findings: independent review loop not run; PR is queued for reviewer extraction
+pr_status: draft_pending
+next_exact_action: independent audit should decide whether the repaired bounded theorem can be retained_bounded
+stop_condition: draft PR opened with target row ready for independent audit

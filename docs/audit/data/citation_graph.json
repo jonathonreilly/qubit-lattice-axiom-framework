@@ -65862,7 +65862,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "ad5073ac9caff9087491222c5d3f98bee570678ed3952b123e7f2b132d1ad0de",
+      "note_hash": "9808de11f768449199784d59fe926884b5231a84439b87eb39b8bc63d4d751a1",
       "path": "docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md",
       "runner_path": "scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py",
       "title": "Massless Vector Polarization Count from Lorentzian Signature and Gauge Redundancy \u2014 Bounded Narrow Theorem"

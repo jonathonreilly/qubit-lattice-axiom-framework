@@ -1,0 +1,22 @@
+goal: "Package Y_T retained-bounded source-measure chain"
+target_status: "exact-support"
+active_route: "Tier-A source-measure retained-bounded audit package"
+current_status: "implementation in progress"
+branch: "physics-loop/yt-retained-bounded-audit-package-20260530"
+files_touched:
+  - "docs/YT_RETAINED_BOUNDED_SOURCE_MEASURE_AUDIT_PACKAGE_NOTE_2026-05-30.md"
+  - "scripts/frontier_yt_retained_bounded_source_measure_audit_package.py"
+  - "outputs/yt_retained_bounded_source_measure_audit_package_2026-05-30.json"
+  - "docs/YT_STRICT_SAME_SOURCE_TOP_W_POLE_ROW_CONTRACT_NOTE_2026-05-30.md"
+  - "scripts/frontier_yt_strict_same_source_top_w_pole_row_contract.py"
+  - "outputs/yt_strict_same_source_top_w_pole_row_contract_2026-05-30.json"
+  - "scripts/frontier_sm_one_higgs_yukawa_gauge_selection.py"
+  - "docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
+open_imports:
+  - "Tier-A P-cal/source-measure premise"
+  - "physical-scale g_2 and matching/running"
+  - "strict same-source top/W pole response if unbounded bypass is desired"
+trace_gate_classification: "direct_blocker_closure"
+proposal_allowed: false
+bare_retained_allowed: false
+next_exact_action: "Run final verification, commit, push, and open PR."

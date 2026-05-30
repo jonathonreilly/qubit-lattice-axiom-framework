@@ -32,7 +32,7 @@
     "conditional_y33": "1/sqrt(6)"
   },
   "upstream_statuses": {
-    "lsp_source": "unaudited",
+    "lsp_source": "retained_bounded",
     "source_action_gate": "unaudited",
     "yt_source_action_support": "retained_bounded"
   }

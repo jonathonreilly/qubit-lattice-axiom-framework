@@ -13,7 +13,7 @@ normalization, time-travel, teleportation, or antigravity claim.
 
 ## 1. Claim
 
-Use the doubled-hypercharge convention of the retained anomaly notes:
+Use the doubled-hypercharge convention of the hypercharge/anomaly notes:
 
 ```text
 Q_em = T_3 + Y/2.
@@ -96,8 +96,8 @@ matrices.
 
 ## 2. Why This Adds Value
 
-The retained hypercharge theorem fixes the one-generation charge table, and
-the retained EW Higgs gauge-mass theorem fixes the one-doublet Higgs
+The hypercharge theorem fixes the one-generation charge table, and the retained
+EW Higgs gauge-mass theorem fixes the one-doublet Higgs
 bookkeeping. What remains useful as a separate proof is the exact bridge from
 those charges to the allowed Dirac mass operators.
 

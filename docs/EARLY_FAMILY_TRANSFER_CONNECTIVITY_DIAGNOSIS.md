@@ -1,31 +1,7 @@
 # Early Family Transfer Connectivity Diagnosis
 
 **Date:** 2026-04-06  
-**Type:** meta
-**Status authority:** independent audit lane only.
-**Status:** metadata/support summary of the origin architecture connectivity; no registered runner; not a retained transfer theorem.
-
-## 2026-05-28 Audit Repair (reframed as metadata/support index)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The one-hop artifact rows mostly support the finite grown-row diagnosis, but the synthesis itself has no registered runner, one cited synthesis dependency is metadata-only, and the source still frames a proposed retained diagnosis rather th"*
-
-with repair: *"runner_artifact_issue: register a synthesis runner or explicit bounded artifact over the cited retained grown-row inputs, or reframe this note as metadata/support rather than a retained transfer theorem."*.
-
-The auditor's repair allows reframing this row as metadata/support rather than a
-retained theorem. This revision takes that path:
-
-- This note is a **metadata / support index** over the cited retained-bounded
-  inputs. Its summary direction / frontier-ranking / synthesis rows are
-  **non-load-bearing pointers**, not an independently certified result.
-- It does **not** register a runner-backed retained theorem. Any stale
-  "proposed retained" / "unaudited-input" status wording is superseded by this
-  metadata framing; authoritative status for each cited input lives in that
-  input's own retained row.
-
-No new axiom, import, or retained bridge is introduced. The note is a pointer
-surface; nothing here is load-bearing beyond the cited inputs' own authorities.
+**Status:** proposed_retained narrow diagnosis of the origin architecture
 
 ## Artifact chain
 

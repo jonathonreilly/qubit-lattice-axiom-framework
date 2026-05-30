@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
-runner_sha256: b847d04c8088525cc3fd6639bd929cd069106e2f119671b9e1a35889cb38fe37
+runner_sha256: 49b8d2a6b32450efaf194c481fb29c78b1f899699bfcb8591671dfd868391808
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -60,6 +60,18 @@ C4  R2 CROSS-CHECK: operator-picture 2-step OS Gram PSD
     C4 = PASS  (Hermitian PSD where single-step was -0.80)
 
 ------------------------------------------------------------------------------
+C5  SECOND-QUANTIZATION FUNCTOR (in-repo): Gamma(t1^(2)) from its defining
+    intertwiner Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K), == exp(-2 a_tau H_hat)
+    => the free-fermion functor relation Gamma = B^dag B verified, not asserted
+    (Luscher/Creutz; Shale-Stinespring/Berezin)
+------------------------------------------------------------------------------
+    L_s=2 dim=  4: intertwiner err=0.0e+00  vac-fix err=0.0e+00  H off-diag=0.0e+00  ||Gamma - exp(-2 a_tau H_hat)||=2.8e-17
+    L_s=3 dim=  8: intertwiner err=0.0e+00  vac-fix err=0.0e+00  H off-diag=0.0e+00  ||Gamma - exp(-2 a_tau H_hat)||=2.8e-17
+    L_s=4 dim= 16: intertwiner err=0.0e+00  vac-fix err=0.0e+00  H off-diag=0.0e+00  ||Gamma - exp(-2 a_tau H_hat)||=2.8e-17
+    L_s=6 dim= 64: intertwiner err=3.5e-18  vac-fix err=0.0e+00  H off-diag=0.0e+00  ||Gamma - exp(-2 a_tau H_hat)||=2.8e-17
+    C5 = PASS  (functor relation Gamma=B^dag B verified in-repo)
+
+------------------------------------------------------------------------------
 GAUGE CASE REDUCTION TARGET (NOT re-derived here)
 ------------------------------------------------------------------------------
     intended SU(3)-gauged staggered 2-step RP closure target =
@@ -72,14 +84,15 @@ GAUGE CASE REDUCTION TARGET (NOT re-derived here)
     Interacting gauge closure is scoped to this reduction target.
 
 ==============================================================================
-VERDICT
+SUMMARY
 ==============================================================================
   C1 dispersion anchor   : PASS  (max residual 3.38e-16)
   C2 single-step non-PSD : PASS  (max |Im eig| 1.625)
   C3 2-step positivity   : PASS  (T_hat^2 positive Hermitian = B^dag B)
   C4 R2 OS Gram PSD      : PASS  (2-step OS Gram Hermitian PSD)
+  C5 functor identity    : PASS  (Gamma=B^dag B verified in-repo)
 
-PASS=4 FAIL=0
+PASS=5 FAIL=0
 
   PASS -- the free staggered 2-step blocked transfer matrix T_hat^2 is
   POSITIVE HERMITIAN (T_hat^2 = B^dag B, H_hat = -log(T_hat^2)/(2 a_tau) >= 0),

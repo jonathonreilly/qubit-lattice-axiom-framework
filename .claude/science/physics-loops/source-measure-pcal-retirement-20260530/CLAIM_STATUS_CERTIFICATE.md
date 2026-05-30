@@ -1,17 +1,19 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: exact-support
-conditional_surface_status: pcal_retired_if_rn_cocycle_source_measure_is_audited_native
+actual_current_surface_status: proposed_retained_for_finite_sharp_record_source_sector
+conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-proposal_allowed: false
+proposal_allowed: true
 proposal_allowed_reason: >
-  The algebra closes P-cal once physical source interventions are RN cocycles
-  over sharp records.  This block does not itself settle whether that semantic
-  identification is already native to A1+A2+LSP.
+  Cycle 5 supplies the missing representation theorem: on the finite
+  sharp-record history algebra, record-facing physical sources are exactly
+  smooth probability-law interventions, hence RN score tangents on full-support
+  sectors.  Independent audit is still required before any effective retained
+  status.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -30,10 +32,8 @@ Banked:
 
 Open:
 
-- Whether physical source interventions are RN cocycles over sharp records as
-  native source-measure structure, or whether that is a Tier-A/P-cal premise.
 - Whether physical scalar responses in this lane are connected source
   responses as native source-measure structure, or whether that is another
   expression of P-cal.
-- Whether physical source interventions are, by framework semantics, smooth
-  interventions on sharp-record probabilities.
+- Generic non-record dynamics, non-smooth interventions, and support-changing
+  interventions remain out of scope.

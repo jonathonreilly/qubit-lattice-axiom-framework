@@ -1,0 +1,110 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py
+runner_sha256: f797c058681fb27188b7e9d9e4cf23e3e4087e86764882fd9bb36126bb9e34e1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.991
+status: ok
+----- stdout -----
+========================================================================================
+Narrow theorem (exact-symbolic):
+KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29
+Signed-eigenvalue (det_R) vs singular-value (Yukawa) Koide readout at r = 1/2
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: circulant -> real spectrum sanity (lambda_k real, theta = arg b)
+----------------------------------------------------------------------------------------
+  [PASS (A)] H = aI + bC + bbar C^2 is Hermitian (H^dagger = H)  (circulant Hermitian family)
+  [PASS (A)] character vectors v_k = (1, w^k, w^{2k}) are eigenvectors, eigenvalue a + b w^k + bbar w^{-k}  (C_3 circulant spectrum)
+  [PASS (A)] lambda_k = a + 2|b| cos(theta + 2 pi k/3) with theta = arg(b) (real spectrum)  (polar form of the C_3 character eigenvalues)
+
+----------------------------------------------------------------------------------------
+Part 1 (Lemma A): SIGNED readout Q_signed = (1 + 2 r)/3, theta-INDEPENDENT
+----------------------------------------------------------------------------------------
+  [PASS (A)] sum_k lambda_k = 3 a  (theta-independent; uses sum_k cos = 0)  (sum lambda = 3*a)
+  [PASS (A)] sum_k lambda_k^2 = 3 a^2 + 6 |b|^2  (theta-independent; uses sum cos^2 = 3/2)  (sum lambda^2 = 3*a**2 + 6*bmod**2)
+  [PASS (A)] Q_signed = (a^2 + 2|b|^2)/(3 a^2) = (1 + 2 r)/3, exact & theta-independent  (Q_signed = (a**2 + 2*bmod**2)/(3*a**2))
+  [PASS (A)] d Q_signed / d theta == 0 identically (no theta dependence)  (dQ_signed/dtheta = 0)
+  [PASS (A)] at r = 1/2 (|b| = a/sqrt 2): Q_signed = 2/3 EXACTLY, theta-independent  (Q_signed(r=1/2) = 2/3)
+
+----------------------------------------------------------------------------------------
+Part 2 (Lemma B): numerator invariance  sum |lambda|^2 = sum lambda^2
+----------------------------------------------------------------------------------------
+  [PASS (A)] sum_k |lambda_k|^2 = sum_k lambda_k^2  (numerator shared; masses identical)  (m_k = lambda_k^2 = |lambda_k|^2; only sqrt(m) signs can differ)
+
+----------------------------------------------------------------------------------------
+Part 3 (Theorem core): Q_sv = sum lambda^2 / (sum |lambda|)^2 <= Q_signed
+----------------------------------------------------------------------------------------
+  [PASS (A)] theta = 0: all lambda_k > 0 (sign-homogeneous) -> Q_sv = Q_signed = 2/3  (lambda(0) = [1 + sqrt(2), 1 - sqrt(2)/2, 1 - sqrt(2)/2])
+  [PASS (A)] theta = pi/3: one lambda_k < 0 (sign-flip) -> Q_sv < Q_signed (strict)  (lambda(pi/3) = [sqrt(2)/2 + 1, 1 - sqrt(2), sqrt(2)/2 + 1],  Q_sv = 54/49 - 24*sqrt(2)/49 = 0.40936479)
+
+----------------------------------------------------------------------------------------
+Part 4 (non-constancy): three DISTINCT exact-radical Q_sv values at r = 1/2
+----------------------------------------------------------------------------------------
+  Q_sv(0)    = 2/3            = 0.66666667
+  Q_sv(pi/3) = 54/49 - 24*sqrt(2)/49  = 0.40936479
+  Q_sv(pi/2) = 42/25 - 12*sqrt(6)/25  = 0.50424492
+  [PASS (A)] Q_sv(pi/3) = 6/(9 + 4 sqrt 2) exactly  (Q_sv(pi/3) = 54/49 - 24*sqrt(2)/49)
+  [PASS (A)] Q_sv(pi/2) = 6/(7 + 2 sqrt 6) exactly  (Q_sv(pi/2) = 42/25 - 12*sqrt(6)/25)
+  [PASS (A)] Q_sv takes >= 3 DISTINCT exact values over theta -> Q_sv is NON-CONSTANT in theta  ({2/3, 6/(9+4 sqrt2), 6/(7+2 sqrt6)} pairwise distinct)
+  [PASS (A)] Q_signed = 2/3 at all three angles (constant) -> readouts are inequivalent  (Q_signed constant while Q_sv varies)
+
+----------------------------------------------------------------------------------------
+Part 5: note's stated float samples theta = 0.4 -> 0.566, 0.9 -> 0.416
+----------------------------------------------------------------------------------------
+  theta = 0.4: signs = [1, -1, 1]  Q_signed = 0.666667  Q_sv = 0.565798  (stated ~0.566)
+  [PASS (A)] theta = 0.4: Q_sv = 0.566 matches stated ~0.566 and != 2/3  (Q_sv = 0.565798)
+  [PASS (A)] theta = 0.4: Q_signed = 2/3 (unchanged by the sign flip)  (Q_signed = 0.666667)
+  theta = 0.9: signs = [1, -1, 1]  Q_signed = 0.666667  Q_sv = 0.415985  (stated ~0.416)
+  [PASS (A)] theta = 0.9: Q_sv = 0.416 matches stated ~0.416 and != 2/3  (Q_sv = 0.415985)
+  [PASS (A)] theta = 0.9: Q_signed = 2/3 (unchanged by the sign flip)  (Q_signed = 0.666667)
+
+----------------------------------------------------------------------------------------
+Part 6: sign-flip boundary at theta = pi/12 (one eigenvalue exactly 0)
+----------------------------------------------------------------------------------------
+  [PASS (A)] theta = pi/12: lambda spectrum contains an EXACT zero (sign-flip boundary)  (lambda(pi/12) = [sqrt(3)/2 + 3/2, 0, 3/2 - sqrt(3)/2])
+  [PASS (A)] theta = pi/20 (inside window): all lambda > 0 and Q_sv = 2/3 exactly  (Q_sv equals signed value throughout the sign-homogeneous window)
+  [PASS (A)] theta = pi/8 (outside window): a sign flip occurs and Q_sv < 2/3  (Q_sv(pi/8) = 0.57017092)
+
+----------------------------------------------------------------------------------------
+Part 7: mass-spectrum invariance - both readouts give identical m_k
+----------------------------------------------------------------------------------------
+  [PASS (A)] theta = 0.9: mass triple m_k = lambda_k^2 identical for both readouts  (readouts share the spectrum; they differ only in sqrt(m) signs)
+  [PASS (A)] theta = 0.9: sqrt(m) sign vectors DIFFER (>=1 component flips sign)  (signed sqrt(m) has a negative entry; |.| does not)
+
+----------------------------------------------------------------------------------------
+Part 8 (corollary): one-negative closed form Q_sv = N / (3a - 2 lambda_min)^2
+----------------------------------------------------------------------------------------
+  [PASS (A)] theta = pi/3: Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2 (one-flip form)  (closed = 54/49 - 24*sqrt(2)/49, direct = 54/49 - 24*sqrt(2)/49)
+  [PASS (A)] theta = pi/2: Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2 (one-flip form)  (closed = 6/(1 + sqrt(6))**2, direct = 42/25 - 12*sqrt(6)/25)
+
+----------------------------------------------------------------------------------------
+Part 9: forbidden-imports / comparator-only sanity
+----------------------------------------------------------------------------------------
+  [PASS (A)] no PDG value enters the proof: all inputs are abstract (a>0, |b|>0, theta real)  (2/3 is comparator-only; r=1/2 is a stated hypothesis)
+  [PASS (A)] Q_signed = (1+2r)/3 is a function of r alone (no selector fixes r here)  (r = |b|^2/a^2 is a free parameter; r=1/2 not derived)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (Lemma A) signed readout Q_signed = (1+2r)/3, theta-independent; 2/3 at r=1/2
+    (Lemma B) numerator invariance sum|lambda|^2 = sum lambda^2 (masses shared)
+    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= 2/3, equality iff sign-homogeneous
+    (Non-const) Q_sv in {2/3, 6/(9+4 sqrt2), 6/(7+2 sqrt6)} at theta in {0, pi/3, pi/2}
+    (Samples)  theta=0.4 -> 0.566, theta=0.9 -> 0.416 (both < 2/3); Q_signed stays 2/3
+    (Boundary) sign-flip at theta = pi/12; same-sign window |theta mod 2pi/3| < pi/12
+    (Masses)   both readouts give identical m_k = lambda_k^2; only sqrt(m) signs differ
+    (Corollary) one-negative closed form Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2
+
+  CONSEQUENCE: the retained Brannen Q = 2/3 closure relies on sqrt(m_k) being a
+  SIGNED real vector. Singular values (>= 0) destroy that sign structure, so reading
+  the charged-lepton mass operator as singular values of a (non-Hermitian) Yukawa
+  does NOT reproduce 2/3 at the r=1/2 operator. The signed (Hermitian / det_R) readout
+  is the phenomenology-compatible one; the singular-value relaxation CHANGES the value.
+
+========================================================================================
+TOTAL: PASS=28, FAIL=0
+========================================================================================
+PASS=28 FAIL=0

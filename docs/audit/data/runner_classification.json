@@ -1440,6 +1440,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_bell_inequality.py"
     },
+    "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 18
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py"
+    },
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -12336,6 +12348,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_c3_constant_singlet_reparametrization_theorem.py"
     },
+    "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_koide_c3_generator_rephasing_obstruction.py"
+    },
     "koide_c3_singlet_extension_reduction_theorem_note_2026-04-20": {
       "assert_count": 1,
       "counts": {
@@ -13391,6 +13415,18 @@
       "decoration_candidate": false,
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_selected_slice_spectral_completion_and_minimal_local_spectral_law_no_go.py"
+    },
+    "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py"
     },
     "koide_sqrtm_amplitude_principle_note_2026-04-18": {
       "assert_count": 1,
@@ -14873,7 +14909,7 @@
       "counts": {
         "A": 2,
         "B": 1,
-        "C": 11,
+        "C": 13,
         "D": 0
       },
       "decoration_candidate": false,
@@ -20964,6 +21000,66 @@
       "dominant_class": null,
       "runner": "scripts/SIXTH_FAMILY_DISTANCE_LAW_THIRD_VS_SIXTH_QUICK.py"
     },
+    "sm_gstar_from_framework_structure_bounded_theorem_note_2026-05-29": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_sm_gstar_from_framework_structure_2026_05_29.py"
+    },
+    "sm_gstar_higgs_sector_count_stretch_note_2026-05-29": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py"
+    },
+    "sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py"
+    },
+    "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py"
+    },
+    "sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 1,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py"
+    },
     "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -26315,6 +26411,18 @@
       "decoration_candidate": false,
       "dominant_class": "A",
       "runner": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py"
+    },
+    "yt_tier_a_source_action_top_premise_closure_note_2026-05-29": {
+      "assert_count": 1,
+      "counts": {
+        "A": 8,
+        "B": 1,
+        "C": 1,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_yt_tier_a_source_action_top_premise_closure.py"
     },
     "yt_top_coefficient_full_court_press_note_2026-05-25": {
       "assert_count": 1,
@@ -32957,6 +33065,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 18
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_beta_gbare_rescaling_abstract_identity_narrow.py": {
@@ -41861,6 +41984,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_c3_generator_rephasing_obstruction.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_koide_c3_singlet_extension_reduction_theorem.py": {
       "assert_count": 1,
       "claims": [
@@ -43005,6 +43143,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py": {
+      "assert_count": 2,
+      "claims": [
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_koide_sqrtm_amplitude_principle.py": {
       "assert_count": 1,
       "claims": [
@@ -43570,7 +43723,7 @@
       "counts": {
         "A": 2,
         "B": 1,
-        "C": 11,
+        "C": 13,
         "D": 0
       },
       "decoration_candidate": false,
@@ -47891,6 +48044,81 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_sm_gstar_from_framework_structure_2026_05_29.py": {
+      "assert_count": 1,
+      "claims": [
+        "sm_gstar_from_framework_structure_bounded_theorem_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py": {
+      "assert_count": 1,
+      "claims": [
+        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py": {
+      "assert_count": 2,
+      "claims": [
+        "sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py": {
+      "assert_count": 2,
+      "claims": [
+        "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py": {
+      "assert_count": 2,
+      "claims": [
+        "sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 1,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_sm_hypercharge_no_nu_r_derivation.py": {
@@ -52264,6 +52492,21 @@
         "A": 4,
         "B": 2,
         "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_yt_tier_a_source_action_top_premise_closure.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_tier_a_source_action_top_premise_closure_note_2026-05-29"
+      ],
+      "counts": {
+        "A": 8,
+        "B": 1,
+        "C": 1,
         "D": 2
       },
       "decoration_candidate": false,
@@ -57998,14 +58241,14 @@
   "stats": {
     "decoration_candidates": 357,
     "dominant_class_distribution": {
-      "A": 267,
-      "B": 295,
-      "C": 776,
-      "D": 309,
+      "A": 268,
+      "B": 296,
+      "C": 777,
+      "D": 315,
       "none": 444
     },
-    "runners_classified": 2091,
-    "runners_with_C": 1019,
-    "runners_with_D": 620
+    "runners_classified": 2100,
+    "runners_with_C": 1023,
+    "runners_with_D": 628
   }
 }

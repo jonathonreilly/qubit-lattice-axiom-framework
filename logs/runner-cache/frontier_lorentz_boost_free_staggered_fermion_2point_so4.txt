@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
-runner_sha256: 69c5495a1d7d48b7993e503f7039f85feef9a19146f589e1553ff3b50b56d3d4
+runner_sha256: 283aae3b2446b7afc3df277e0ae22631fcf19274ab072c101ed2d897d1614f9f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 22.49
+elapsed_sec: 23.008
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -22,6 +22,22 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] Clifford identity (gamma.s)^2 = (s.s) 1  (basis of D~ inverse)  (max residual = 1.8e-15)
   [PASS] Closed form G~ = (m1 - (i/a)sum g sin)/Delta matches numpy inverse  (max|G_inv - G_closed| = 2.3e-16)
   [PASS] D~(p) G~(p) = 1 (propagator inverts the operator)  (max|D G - 1| = 1.4e-17)
+
+=== Part 1a: exact finite-a scalar spectrum + 4-fold taste mult ===
+
+    (The clean spin(x)taste D~(p) with a 1_taste factor is the a->0
+     form, NOT a finite-a operator identity. The honest finite-a
+     statement is: the scalar spectrum Delta(p) is exact and taste
+     enters only as a 4-fold SPECTRAL multiplicity. Verified here on
+     the genuine 1-component-per-site position-space operator.)
+
+  [PASS] L=2: M^dag M Hermitian (free staggered, position space)  (max|MdM - MdM^dag| = 0.0e+00)
+  [PASS] L=2: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 0.0e+00 (taste NOT in eigenvalue))
+  [PASS] L=2: all spectral multiplicities divisible by 4 (4-fold taste)  (1 distinct eigenvalues, multiplicities [16])
+  [PASS] L=4: M^dag M Hermitian (free staggered, position space)  (max|MdM - MdM^dag| = 0.0e+00)
+  [PASS] L=4: eig(M^dag M) = Delta(p) = m^2 + sum sin^2(p_mu) (EXACT)  (max|eig - Delta(p)| = 8.4e-15 (taste NOT in eigenvalue))
+  [PASS] L=4: all spectral multiplicities divisible by 4 (4-fold taste)  (5 distinct eigenvalues, multiplicities [16, 64, 96, 64, 16])
+  [PASS] Finite-a dof count: 16*(L/2)^4 = L^4 (taste lives on block lattice 2a)  (16*(2)^4 = 256 = L^4 = 256 (so a single-spacing 16-comp taste-flat identity is forbidden))
 
 === Part 2: continuum limit -> SO(4) Euclidean Dirac propagator ===
 
@@ -74,7 +90,7 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
 === Part 7: combined SO(4) statement + relation to scalar note ===
 
   [PASS] Z^3 x Z_tau has hypercubic point symmetry, NOT SO(4)  (SO(4) is non-compact-completion of the cubic group; emergent only)
-  [PASS] Free staggered D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)  (phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; taste spectator)
+  [PASS] Continuum-limit D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)  (phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; 1_taste spectator is the a->0 form, finite-a taste enters as 4-fold spectral mult (Part 1a))
   [PASS] THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2+m^2)  (standard SO(4) Euclidean Dirac/Kahler-Dirac propagator)
   [PASS] Leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)  (sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6)
   [PASS] Parity-even + CPT-even: only even powers of p (no dim-3, dim-5)  (Delta(-p)=Delta(p); matches scalar/dispersion-note structure)
@@ -84,11 +100,10 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] Unconditional for the FREE 2-point function (free theory limit exists)  (NOT interacting, NOT n-point, NOT OS reconstruction, NOT FS)
 
 ==============================================================================
-SCORECARD: PASS=40  FAIL=0
+SCORECARD: PASS=47  FAIL=0
 ==============================================================================
 
 All checks passed. The FREE staggered-Dirac 2-point Schwinger
 function becomes SO(4)-covariant in the continuum limit, with
 leading anisotropy a dim-6 ell=4 cubic harmonic at O(a^2).
 Matter-sector analogue of the free-scalar boost note.
------ stderr -----

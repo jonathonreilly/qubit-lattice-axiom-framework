@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_c3_generator_rephasing_obstruction.py
+runner_sha256: 65895b8bcd7bbfbb3114c9a4090a38c8a539684b95bb4073d0859a17344f65d5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.161
+status: ok
+----- stdout -----
+========================================================================
+Koide: C^3=I obstructs continuous scalar rephasing of the cyclic generator
+Note: KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md
+========================================================================
+[PASS] C^3 = I (retained order-3 generation relabeling)
+[PASS] (A) doublet rotation (B1,B2) by alpha == rephasing C -> e^{i alpha} C  verified for alpha in {0.3,1.0,2.1,2.7}
+[PASS] (B) the 3 cube-root rephasings preserve C^3=I (discrete C_3)
+[PASS] (B) every generic continuous scalar rephasing of C BREAKS C^3=I  e^{3 i alpha} != 1 for alpha not in (2pi/3)Z
+[PASS] (B) conjugation preserves order: (g C g^dag)^3 = I  so g C g^dag = e^{ia}C would still require e^{3ia}=1
+[PASS] (B') continuous centralizer exists but acts trivially on C and b  commuting U(1) is not the generator-rephasing route
+[PASS] (C) gauge U(1) (generation-blind scalar) acts trivially on the doublet  g H g^dag = H -> b unchanged
+[PASS] (D) generic translation maps C OUT of the C_3-circulant class  P C P^dag not proportional to C -> not a mass-structure symmetry
+[PASS] (D) off-grid linear translation (slope 0.4) also leaves the class
+[PASS] (D) only slope 2pi k/3 stays in class = the discrete C_3 character
+[PASS] (E) <C_3 shift, K reflection> on doublet = finite group of order 6  |G| = 6; rotation angles = [0, 120, 240] (discrete, not U(1))
+[PASS] (F) C_3-invariant quadratic weight is forced ∝ I (auto rotation-symmetric)  so the open datum is the COUNTING (det_C vs det_R), not a broken weight-symmetry
+[PASS] (G) r=|b|^2/a^2=1/2 => E_+ = E_perp (equal block) => Q = 2/3 (det_C)  E_+=3.000, E_perp=3.000, Q=0.666667
+========================================================================
+TOTAL: PASS=13 FAIL=0
+SUMMARY: bounded obstruction. The route that realizes the missing b-phase as a scalar rephasing C -> exp(i alpha) C is incompatible with C^3=I except at cube roots. Continuous state-space centralizers exist but commute with C and do not rotate b, so they do not supply that route.
+========================================================================

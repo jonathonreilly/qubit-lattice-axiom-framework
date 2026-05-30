@@ -1,0 +1,38 @@
+
+========================================================================
+(1) NOT forced: native-candidate t all miss b/a=0.7071
+========================================================================
+   naive t=g^2=1     : b/a=0.5800  Q=0.5576  |Δ to 0.7071|=0.1271
+   Casimir 4/3       : b/a=0.7570  Q=0.7154  |Δ to 0.7071|=0.0499
+   Casimir 3/4       : b/a=0.4034  Q=0.4418  |Δ to 0.7071|=0.3037
+   t=1/2             : b/a=0.2136  Q=0.3637  |Δ to 0.7071|=0.4936
+   t*=atanh(2^-1/4)  : b/a=0.7071  Q=0.6667  |Δ to 0.7071|=0.0000
+
+========================================================================
+(2) reflection-positivity bound: b/a in [-1/2, 1], 1/sqrt2 interior
+========================================================================
+   eigenvalues a+2b (singlet), a-b (doublet) >=0  =>  b/a in [-0.5, 1.0]
+   1/sqrt2=0.7071 interior; 0.2929 below upper edge (b/a=1 -> Q=1).
+
+========================================================================
+(3) Hilbert-Schmidt equipartition -> r=1/2 (the clean characterization)
+========================================================================
+   Tr(I^2)=3, Tr((J-I)^2)=6; equal HS weight 3a^2=6b^2
+   <=> b/a=sqrt(3/6)=0.7071=1/sqrt2; factor 2 = 6/3 = dim(doublet)/dim(singlet).
+   HS measure e^-Tr(M^2)/2: <b^2>/<a^2> = (1/6)/(1/3) = 0.500 -> Q=0.6667
+
+========================================================================
+(4) the 3-way measure fork (the crux)
+========================================================================
+   HS/trace      -> r=1/2 -> Q=0.6667   (equipartition)
+   dimension     -> r=1   -> Q=1.0000   (Plancherel)
+   fermion dyn.  -> r=0   -> Q=0.3333   (uniform condensate wins, 3 computations)
+   observed Q=2/3 = HS-equipartition; the framework's vacuum selects Q=1/3. NOT forced.
+
+========================================================================
+VERDICT
+========================================================================
+  b/a=1/sqrt2 NOT forced; RP-bounded to [-1/2,1] (contains it); = HS-equipartition /
+  max-entropy point. The fermion dynamics gives Q=1/3 (tension with observed 2/3).
+  Decidable next: which inner product does the matter-sector OS measure use on
+  span{I, J-I} -- HS/trace (->2/3), dimension (->1), or does dynamics (->1/3) win?

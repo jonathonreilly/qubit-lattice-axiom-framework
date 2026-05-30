@@ -18558,7 +18558,7 @@
         "total_pass": 0
       },
       "runner_path": null,
-      "title": "Beta=6 SU(3) Wilson Single-Plaquette Closure Research Map - Note",
+      "title": "Bertrand Stable-Orbit Upper-Bound Support",
       "transitive_descendants": 1,
       "verdict_rationale": "The load-bearing differentiation and substitution are a genuine class A algebraic check, and they correctly produce the stated sign condition. However, the only cited authority is retained_bounded for cache-backed d = 3 and d = 4 rows and explicitly does not retain a universal continuum V(r) = -k/r^(d-2) law across all integer dimensions. Because the source note still uses the d >= 5 continuum law as part of the stated upper-bound support while admitting that bridge is not supplied, the full bounded claim is conditional rather than clean."
     },

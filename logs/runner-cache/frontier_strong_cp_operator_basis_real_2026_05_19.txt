@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py
-runner_sha256: 9b09f3f1caf95ad21236b4008f656f5198cc3261526b9d149e68bb23ccda7060
+runner_sha256: 381a140a88ca18ee29ad27eb6fbeaafa90a0eee00a1b5061627a18c92165e796
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ================================================================================
@@ -11,7 +11,7 @@ status: ok
 ================================================================================
  Companion runner to:
    docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
- Parent target: docs/STRONG_CP_THETA_ZERO_NOTE.md (audited_conditional)
+ Parent context: strong-CP theta-zero row (not a load-bearing dependency)
 
  8 verification gates exhibiting slot-construction + rejection on SU(3).
 

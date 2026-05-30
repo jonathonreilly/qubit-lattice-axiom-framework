@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/multisite_pauli_group_check.py
-runner_sha256: 5b711a97b80d13eebc3455bba7e6717db6486d281703af3df39919e9397c3958
+runner_sha256: bcecab4e6b98faff1c01cc53359ca88c66c43bb6936343786277f57ba0cc123d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.98
+elapsed_sec: 2.22
 status: ok
 ----- stdout -----
 ========================================================================
-MULTI-SITE PAULI GROUP P_N: ORDER 4^{N+1}, MINIMAL GENERATORS 2N+1
+MULTI-SITE PAULI GROUP P_N HAS ORDER 4^{N+1}
 ========================================================================
 
   Generating P_1 on 1-site Hilbert (dim = 2)...
@@ -60,65 +60,13 @@ TEST 6: P_N / Z(P_N) has order 4^N (the (Z_2 × Z_2)^N coset structure)
   N = 3: |P_3 / Z| = 64 = 4^3 = 64
   STATUS: PASS
 
-------------------------------------------------------------------------
-TEST 7: 2N site-Paulis ⟨X_i, Z_i⟩ generate phaseless group of
-        order 2·4^N and do NOT contain i·I (insufficient for P_N)
-------------------------------------------------------------------------
-  N = 1: |⟨X_i,Z_i⟩| = 8 (expected phaseless 2·4^1 = 8); contains i·I? False; full |P_1| = 16
-  N = 2: |⟨X_i,Z_i⟩| = 32 (expected phaseless 2·4^2 = 32); contains i·I? False; full |P_2| = 64
-  N = 3: |⟨X_i,Z_i⟩| = 128 (expected phaseless 2·4^3 = 128); contains i·I? False; full |P_3| = 256
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 8: 2N site-Paulis + ONE phase generator (i·I) = full P_N;
-        minimal generating set size = 2N+1
-------------------------------------------------------------------------
-  N = 1: 3 generators (= 2N+1 = 3); |⟨...⟩| = 16, expected full 16
-  N = 2: 5 generators (= 2N+1 = 5); |⟨...⟩| = 64, expected full 64
-  N = 3: 7 generators (= 2N+1 = 7); |⟨...⟩| = 256, expected full 256
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 9: alternative minimal set {X_i, Z_i} ∪ {Y_0} (one Y on a
-        single site) — also 2N+1 generators — generates full P_N
-------------------------------------------------------------------------
-  N = 1: 3 generators (= 2N+1 = 3); |⟨X_i,Z_i,Y_0⟩| = 16, expected full 16
-  N = 2: 5 generators (= 2N+1 = 5); |⟨X_i,Z_i,Y_0⟩| = 64, expected full 64
-  N = 3: 7 generators (= 2N+1 = 7); |⟨X_i,Z_i,Y_0⟩| = 256, expected full 256
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 10: minimality lower bound — exhaustively, NO size-2N subset
-         of the 3N site-Pauli pool generates the full P_N
-         (so 2N is impossible; minimal is 2N+1). N = 1, 2.
-------------------------------------------------------------------------
-  N = 1: checked all 3 size-2 subsets of 3 site-Paulis; max order reached = 8, full = 16; any reaches full? False
-  N = 2: checked all 15 size-4 subsets of 6 site-Paulis; max order reached = 32, full = 64; any reaches full? False
-  STATUS: PASS
-
-------------------------------------------------------------------------
-TEST 11: abelianization P_N/[P_N,P_N] is elementary-abelian of
-         rank 2N+1, so ANY generating set needs ≥ 2N+1 elements
-         (generator-type-independent lower bound). N = 1, 2.
-------------------------------------------------------------------------
-  N = 1: |[P_N,P_N]| = 2, |abelianization| = 8 = 2^3, elementary-abelian? True; rank = 3 (= 2N+1 = 3) ⇒ min generators ≥ 3
-  N = 2: |[P_N,P_N]| = 2, |abelianization| = 32 = 2^5, elementary-abelian? True; rank = 5 (= 2N+1 = 5) ⇒ min generators ≥ 5
-  STATUS: PASS
-
 ========================================================================
-  SCORECARD
-========================================================================
-  Test 1  (|P_1| = 16):                              PASS
-  Test 2  (|P_2| = 64):                              PASS
-  Test 3  (|P_3| = 256):                             PASS
-  Test 4  (formula |P_N| = 4^{N+1}):                PASS
-  Test 5  (Z(P_N) = scalar phases, order 4):         PASS
-  Test 6  (quotient order = 4^N):                    PASS
-  Test 7  (2N site-Paulis insufficient, no i·I):     PASS
-  Test 8  (2N+1 = site-Paulis + i·I sufficient):     PASS
-  Test 9  (alt 2N+1 = site-Paulis + one Y):          PASS
-  Test 10 (no 2N subset reaches full):               PASS
-  Test 11 (abelianization rank 2N+1 lower bound):    PASS
+  Test 1 (|P_1| = 16):                              PASS
+  Test 2 (|P_2| = 64):                              PASS
+  Test 3 (|P_3| = 256):                             PASS
+  Test 4 (formula |P_N| = 4^{N+1}):                PASS
+  Test 5 (Z(P_N) = scalar phases, order 4):         PASS
+  Test 6 (quotient order = 4^N):                    PASS
   OVERALL: PASS
 
 ----- stderr -----

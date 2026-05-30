@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_propagating_green_pocket.py
-runner_sha256: e556912e6ed3bbdcce0f025bd3ce5f70da33c6438facf527a68b3bb505526d79
+runner_sha256: 39c7457652a9f2e92c93832f781c319d28a28be1b6497693c6884c423df84391
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.31
+elapsed_sec: 3.14
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -36,6 +36,8 @@ SAFE READ
   mean |prop/green| ratio: 1.149
   causal memory observable (prop - green): +1.197212e-03
   this is a bounded propagating-field pocket, not a full self-consistent GR sector
+  [PASS (C)] asserted propagating Green packet
+ASSERTIONS: PASS
 
 ----- stderr -----
 

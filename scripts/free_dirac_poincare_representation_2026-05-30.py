@@ -443,18 +443,19 @@ def check_oneparticle_boost_generators(rng):
                 worst = max(worst, err); ok &= err < TOL
 
     # NON-TRIVIALITY control: a wrong-sign orbital boost K -> +i E d_i misses
-    # [H,K^i] = +iP^i by O(p) (NOT a tautology that holds for any sign).
-    p = rng.normal(size=3) * 1.3
-    c = rng.normal(size=3) * 0.7
+    # [H,K^i] = +iP^i by 2i p^i psi (NOT a tautology that holds for any sign).
+    # Take the worst miss over the same Gaussian sample so the control is robust:
+    # a single random draw can land where p~0 / psi~0 and the miss is spuriously
+    # small (the genuine miss vanishes only on a measure-zero set).
     bad_err = 0.0
-    for i in range(3):
-        # comm with the flipped sign: [H, +iE d_i] = +i p^i, target is +i p^i but
-        # the algebra fixes K = -iE d_i, so this flipped operator gives -i P^i,
-        # i.e. it misses the required +iP^i by 2i p^i.
-        HKbad = E(p) * (+1j * E(p) * dpsi(p, c, i))
-        KHbad = +1j * E(p) * (dE(p, i) * psi(p, c) + E(p) * dpsi(p, c, i))
-        bad = (HKbad - KHbad) - 1j * P_val(p, c, i)
-        bad_err = max(bad_err, abs(bad))
+    for _ in range(40):
+        p = rng.normal(size=3) * 1.3
+        c = rng.normal(size=3) * 0.7
+        for i in range(3):
+            HKbad = E(p) * (+1j * E(p) * dpsi(p, c, i))
+            KHbad = +1j * E(p) * (dE(p, i) * psi(p, c) + E(p) * dpsi(p, c, i))
+            bad = (HKbad - KHbad) - 1j * P_val(p, c, i)
+            bad_err = max(bad_err, abs(bad))
     control_fails = bad_err > 1e-3
     ok &= control_fails
 

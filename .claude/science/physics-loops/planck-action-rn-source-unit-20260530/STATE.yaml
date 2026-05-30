@@ -1,0 +1,28 @@
+loop: planck-action-rn-source-unit-20260530
+mode: focused_block
+target_status: best-honest-status
+branch: physics-loop/planck-action-rn-source-unit-20260530
+base: physics-loop/log-selection-source-boundary-20260530
+cycle: 1
+active_route: planck_action_unit_to_rn_fisher_source_coordinate
+hard_residual: "Can the Tier-A Planck/action unit identify the RN/Fisher source coordinate and remove the lambda source-unit ambiguity?"
+files_touched:
+  - docs/SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md
+  - scripts/frontier_source_measure_planck_action_rn_source_unit_bridge.py
+  - outputs/source_measure_planck_action_rn_source_unit_bridge_2026-05-30.json
+  - .claude/science/physics-loops/planck-action-rn-source-unit-20260530/
+open_imports:
+  - "physical top source equals one-Planck-action unit deformation along normalized O_top"
+  - "canonical neutral Higgs/source surface and scalar LSZ/pole-row gates"
+  - "matching/running bridges"
+forbidden_imports:
+  - H_unit
+  - yt_ward_identity
+  - y_t_bare
+  - observed top/W/Z masses or PDG targets
+  - alpha_LM
+  - plaquette/u0
+  - fitted selector
+claim_state_movement: "bounded-support: Planck/action unit equals RN/Fisher source coordinate on the accepted source-coupled action surface"
+next_exact_action: "Attack the remaining physical-top-source identification: prove O_top is the one-Planck-action unit deformation or demote to exact support."
+stop_condition: "Block complete after note/runner/output/PR record the positive bridge and remaining hinge."

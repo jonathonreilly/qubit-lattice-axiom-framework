@@ -1,16 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_audit_backlog_campaign_synthesis.py
-runner_sha256: fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826
+runner_sha256: 653711e7a77b8d14226a963227c9163f927fbaf79b52bf86a3c8ff76815e015c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
 Part 1: synthesis structure
 ----------------------------------------------------------------------------------------
-  [PASS (A)] contains: 'Audit-Backlog Retained Campaign — Progress Synthesis'  ()
+  [PASS (A)] contains: 'Audit-Backlog Campaign Progress Synthesis'  ()
+  [PASS (A)] contains: '2026-05-28 Science-Fix Re-Audit Scope'  ()
   [PASS (A)] contains: 'Cycles 1-19'  ()
   [PASS (A)] contains: 'audit-backlog-campaign-20260502'  ()
   [PASS (A)] contains: 'LHCM closure chain'  ()
@@ -79,7 +80,7 @@ Part 6: forbidden imports compliance
   [PASS (A)] compliance: No same-surface family arguments  ()
 
 ========================================================================================
-  TOTAL: PASS=47, FAIL=0
+  TOTAL: PASS=48, FAIL=0
 ========================================================================================
 
 ----- stderr -----

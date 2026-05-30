@@ -18,9 +18,9 @@ dim-2 extension), Lüders 1951 / Cassinelli-Lahti 1995 (composition-
 consistent update rule), the no-extra-structure premise on the
 pre-record reference (from the companion tracial-state note), and a
 record-as-Kraus identification of the framework's persistent-record
-lane (currently in-flight, not retained). Closure of any one of these
-imports would tighten the route; closure of all five would promote it
-to a retained derivation.
+lane (currently in-flight, not effective authority). Closure of any one
+of these imports would tighten the route; closure of all five would only
+justify a future audit proposal, not a status change from this note.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
@@ -40,14 +40,15 @@ No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
 non-load-bearing input until a retained authority for it lands.
 
-## What this note derives
+## What this route formalizes
 
 On the qubit-lattice framework (A1+A2 in qubit form per
 `MINIMAL_AXIOMS_2026-05-20.md`), with the pre-record reference state
 `ρ_ref = ⊗_x I/2` derived in
 `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`,
 the Born rule for measurement outcomes follows from operator-algebraic
-and probability-theoretic standard mathematics:
+and probability-theoretic standard mathematics only after every imported
+premise below is supplied:
 
 > For any POVM `{E_i}` on the qubit-lattice operator algebra, the
 > probability of outcome `i` for the pre-record system is
@@ -184,10 +185,10 @@ For rank-1 projectors `E_j = |φ_j⟩⟨φ_j|`:
 
 > `p(j | i) = |⟨φ_j | ψ_i⟩|²`
 
-**That is Born's rule** — derived from A1+A2 plus operator-algebraic
-standard theorems (Gleason–Busch, Lüders rule, finite-dim tracial
-uniqueness, Powers' UHF), with the no-extra-structure identification
-and Lüders' (U4) compositional consistency as admitted inputs.
+This is the Born-rule form conditional on the admitted inputs. It is not
+a current retained derivation from A1+A2 alone; the no-extra-structure
+identification, Lüders' (U4) compositional consistency, and the
+persistent-record-as-Kraus bridge remain separate promotion targets.
 
 ## Caveats (real)
 

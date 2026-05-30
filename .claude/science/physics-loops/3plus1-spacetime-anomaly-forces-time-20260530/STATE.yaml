@@ -1,10 +1,10 @@
 loop_slug: 3plus1-spacetime-anomaly-forces-time-20260530
 branch: physics-loop/3plus1-spacetime-anomaly-forces-time-20260530
 target_status: best-honest-status
-current_surface_status: standard-theorem bounded composition complete; unbounded ABJ internalization open
-active_route: standard-theorem bridge repair for anomaly-forces-time
-hard_residual: "Can the parent 3+1 theorem route ABJ through a cited standard theorem with in-repo hypothesis checks instead of an accepted-premise packet?"
-cycle_count: 3
+current_surface_status: action-surface positive theorem candidate; ABJ import retired on framework action surface
+active_route: framework-action U(1)^3 ABJ proof for anomaly-forces-time
+hard_residual: "Can audit accept the action-surface ABJ proof and the non-ABJ dependencies as clean enough for effective retained 3+1 closure?"
+cycle_count: 4
 files_touched:
   - docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md
   - scripts/frontier_abj_epsilon_index_square_block_no_go.py
@@ -14,8 +14,14 @@ files_touched:
   - scripts/frontier_anomaly_forces_time_standard_abj_closure.py
   - outputs/abj_standard_theorem_bridge_for_anomaly_forces_time_2026-05-30.json
   - outputs/anomaly_forces_time_standard_abj_closure_2026-05-30.json
+  - docs/ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md
+  - scripts/frontier_abj_from_framework_action_u1_cubic.py
+  - outputs/abj_from_framework_action_u1_cubic_2026-05-30.json
+  - scripts/frontier_anomaly_forces_time_action_abj_closure.py
+  - outputs/anomaly_forces_time_action_abj_closure_2026-05-30.json
 open_imports:
-  - "ABJ anomaly-to-inconsistency remains open for unbounded A1+A2 closure unless routed through a framework-native index/cohomology proof."
+  - "staggered-Dirac/action realization gate remains audit-pending for the parent 3+1 composition."
+  - "physical hypercharge/matter-surface chain remains audit-pending for the parent 3+1 composition."
   - "single-clock codimension-1 theorem remains audit-pending for the parent 3+1 composition."
-next_exact_action: "If pursuing unbounded closure, attack taste-singlet/Adams staggered index as a framework-allowed chiral measure, or the finite local Wess-Zumino/cohomology theorem."
-stop_condition: "Current bounded repair is complete after theorem note, runner, parent repair, audit pipeline, and PR update; unbounded ABJ internalization remains a separate science block."
+next_exact_action: "Run audit pipeline, active action-ABJ parent gate, strict audit lint, then push PR #2260 with ABJ no longer bounded/imported."
+stop_condition: "Action-surface ABJ repair is complete after theorem note, runner, parent repair, audit pipeline, and PR update; effective retained status still waits on independent audit of the new proof and non-ABJ dependencies."

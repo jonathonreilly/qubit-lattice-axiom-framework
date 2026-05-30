@@ -1,7 +1,98 @@
 {
-  "cycle_count": 0,
-  "cycles": [],
-  "length_counts": {},
+  "cycle_count": 2,
+  "cycles": [
+    {
+      "cycle_id": "cycle-0001",
+      "decision": null,
+      "edges": [
+        {
+          "from": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30",
+          "to": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30"
+        },
+        {
+          "from": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+          "to": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 874,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md",
+          "title": "ABJ From Framework Action: U(1)^3 Cubic Anomaly Theorem",
+          "transitive_descendants": 874
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ABJ_STANDARD_THEOREM_BRIDGE_FOR_ANOMALY_FORCES_TIME_NOTE_2026-05-30.md",
+          "title": "ABJ Standard-Theorem Bridge for Anomaly-Forces-Time",
+          "transitive_descendants": 874
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0002",
+      "decision": null,
+      "edges": [
+        {
+          "from": "anomaly_forces_time_theorem",
+          "to": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30"
+        },
+        {
+          "from": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30",
+          "to": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30"
+        },
+        {
+          "from": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+          "to": "anomaly_forces_time_theorem"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 874,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "anomaly_forces_time_theorem",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+          "title": "Anomaly-Cancellation Consistency Bridge for 3+1 Spacetime",
+          "transitive_descendants": 874
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md",
+          "title": "ABJ From Framework Action: U(1)^3 Cubic Anomaly Theorem",
+          "transitive_descendants": 874
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/ABJ_STANDARD_THEOREM_BRIDGE_FOR_ANOMALY_FORCES_TIME_NOTE_2026-05-30.md",
+          "title": "ABJ Standard-Theorem Bridge for Anomaly-Forces-Time",
+          "transitive_descendants": 874
+        }
+      ],
+      "requires_lemma_extraction": false
+    }
+  ],
+  "length_counts": {
+    "2": 1,
+    "3": 1
+  },
   "sort": [
     "max_transitive_descendants descending",
     "length ascending",

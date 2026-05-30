@@ -1,0 +1,243 @@
+{
+  "claim": "anomaly-forces-time action-ABJ closure",
+  "pass": 33,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "parent contains action-ABJ phrase: **Claim type:** positive_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains action-ABJ phrase: framework-action ABJ theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains action-ABJ phrase: ABJ from framework action",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains action-ABJ phrase: abj_import_retired_on_framework_action_surface: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains action-ABJ phrase: standard_theorem_bridge_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains action-ABJ phrase: accepted_premise_packet_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains action-ABJ phrase: unbounded_positive_theorem_allowed: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes bounded/import phrase: **Claim type:** bounded_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes bounded/import phrase: standard-theorem bounded composition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes bounded/import phrase: ABJ standard-theorem bridge + chiral matter surface",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes bounded/import phrase: ABJ accepted premise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes bounded/import phrase: assume the named accepted premise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent excludes bounded/import phrase: bare external admission on current `main`",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ABJ action theorem contains firewall phrase: **Claim type:** positive_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ABJ action theorem contains firewall phrase: framework_native_abj_derivation_closed: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ABJ action theorem contains firewall phrase: standard_theorem_bridge_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ABJ action theorem contains firewall phrase: accepted_premise_packet_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ABJ action theorem contains firewall phrase: No 3+1 abelian local counterterm",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LH Tr[Y] vanishes",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "LH Tr[Y^3] = -16/9",
+      "status": "PASS",
+      "detail": "-16/9"
+    },
+    {
+      "name": "LH Tr[SU(3)^2Y] = 1/3",
+      "status": "PASS",
+      "detail": "1/3"
+    },
+    {
+      "name": "LH Tr[SU(2)^2Y] vanishes",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "LH Tr[SU(3)^3] = 2",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "name": "U(1)^3 branch alone gives nonzero ABJ obstruction",
+      "status": "PASS",
+      "detail": "-16/9"
+    },
+    {
+      "name": "ABJ plus chirality parity gives positive odd d_t",
+      "status": "PASS",
+      "detail": "[1, 3, 5, 7, 9, 11]"
+    },
+    {
+      "name": "single-clock exclusion leaves only d_t=1 in positive range",
+      "status": "PASS",
+      "detail": "[1]"
+    },
+    {
+      "name": "intersection is exactly d_t = 1",
+      "status": "PASS",
+      "detail": "[1]"
+    },
+    {
+      "name": "ABJ action theorem row present",
+      "status": "PASS",
+      "detail": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30"
+    },
+    {
+      "name": "Clifford chirality parity retained",
+      "status": "PASS",
+      "detail": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "name": "single-clock theorem present",
+      "status": "PASS",
+      "detail": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "name": "ABJ action theorem seeds as positive_theorem",
+      "status": "PASS",
+      "detail": "positive_theorem"
+    },
+    {
+      "name": "Clifford parity theorem is retained",
+      "status": "PASS",
+      "detail": "retained"
+    },
+    {
+      "name": "single-clock source row remains positive_theorem",
+      "status": "PASS",
+      "detail": "positive_theorem"
+    }
+  ],
+  "source_firewall": {
+    "required_parent": [
+      "**Claim type:** positive_theorem",
+      "framework-action ABJ theorem",
+      "ABJ from framework action",
+      "abj_import_retired_on_framework_action_surface: true",
+      "standard_theorem_bridge_load_bearing: false",
+      "accepted_premise_packet_load_bearing: false",
+      "unbounded_positive_theorem_allowed: true"
+    ],
+    "forbidden_parent": [
+      "**Claim type:** bounded_theorem",
+      "standard-theorem bounded composition",
+      "ABJ standard-theorem bridge + chiral matter surface",
+      "ABJ accepted premise",
+      "assume the named accepted premise",
+      "bare external admission on current `main`"
+    ],
+    "required_abj": [
+      "**Claim type:** positive_theorem",
+      "framework_native_abj_derivation_closed: true",
+      "standard_theorem_bridge_load_bearing: false",
+      "accepted_premise_packet_load_bearing: false",
+      "No 3+1 abelian local counterterm"
+    ]
+  },
+  "anomaly_traces": {
+    "TrY": "0",
+    "TrY3": "-16/9",
+    "TrSU3Y": "1/3",
+    "TrSU2Y": "0",
+    "TrSU3cubic": "2"
+  },
+  "dimension_intersection": {
+    "d_s": 3,
+    "chirality_allowed_positive_d_t": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "single_clock_allowed_positive_d_t": [
+      1
+    ],
+    "intersection": [
+      1
+    ]
+  },
+  "ledger_rows": {
+    "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30": {
+      "claim_type": "positive_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md"
+    },
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {
+      "claim_type": "positive_theorem",
+      "audit_status": "audited_clean",
+      "effective_status": "retained",
+      "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+    },
+    "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": {
+      "claim_type": "positive_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
+    }
+  },
+  "verdict": "Action-ABJ positive composition verified: ABJ is derived from the framework action surface, the U(1)^3 anomaly trace is nonzero, chirality parity gives odd d_t, and single-clock exclusion leaves d_t=1."
+}

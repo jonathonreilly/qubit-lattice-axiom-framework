@@ -1,10 +1,15 @@
 {
   "claim": "ABJ standard-theorem bridge for anomaly-forces-time",
-  "pass": 38,
+  "pass": 40,
   "fail": 0,
   "checks": [
     {
       "name": "bridge note contains: **Claim type:** bounded_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "bridge note contains: fallback/reference bridge",
       "status": "PASS",
       "detail": ""
     },
@@ -79,22 +84,27 @@
       "detail": ""
     },
     {
-      "name": "parent contains repaired standard-theorem phrase: standard-theorem bounded composition",
+      "name": "parent contains active action-ABJ phrase: **Claim type:** positive_theorem",
       "status": "PASS",
       "detail": ""
     },
     {
-      "name": "parent contains repaired standard-theorem phrase: ABJ standard-theorem bridge",
+      "name": "parent contains active action-ABJ phrase: framework-action ABJ theorem",
       "status": "PASS",
       "detail": ""
     },
     {
-      "name": "parent contains repaired standard-theorem phrase: not an unbounded A1+A2 derivation of ABJ",
+      "name": "parent contains active action-ABJ phrase: ABJ from framework action",
       "status": "PASS",
       "detail": ""
     },
     {
-      "name": "parent contains repaired standard-theorem phrase: accepted_premise_packet_load_bearing: false",
+      "name": "parent contains active action-ABJ phrase: standard_theorem_bridge_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains active action-ABJ phrase: accepted_premise_packet_load_bearing: false",
       "status": "PASS",
       "detail": ""
     },
@@ -197,6 +207,7 @@
   "source_firewall": {
     "required_note_phrases": [
       "**Claim type:** bounded_theorem",
+      "fallback/reference bridge",
       "standard ABJ/Wess-Zumino/Fujikawa theorem",
       "not make the Adler-Bell-Jackiw theorem a new framework axiom",
       "not claim a full A1+A2-native lattice derivation",
@@ -215,9 +226,10 @@
       "accepted-premise packet entry"
     ],
     "required_parent_phrases": [
-      "standard-theorem bounded composition",
-      "ABJ standard-theorem bridge",
-      "not an unbounded A1+A2 derivation of ABJ",
+      "**Claim type:** positive_theorem",
+      "framework-action ABJ theorem",
+      "ABJ from framework action",
+      "standard_theorem_bridge_load_bearing: false",
       "accepted_premise_packet_load_bearing: false"
     ],
     "parent_forbidden": [
@@ -252,5 +264,5 @@
       1
     ]
   },
-  "verdict": "ABJ standard-theorem bridge passes as bounded theorem support; no accepted-premise packet is load-bearing for the repaired parent route. This remains bounded because ABJ is cited as a standard theorem, not derived from A1+A2 in this note."
+  "verdict": "ABJ standard-theorem fallback bridge passes as bounded support; no accepted-premise packet is load-bearing, and the active parent route now uses the framework-action ABJ derivation."
 }

@@ -1,0 +1,337 @@
+{
+  "claim": "ABJ from framework action: U(1)^3 cubic anomaly",
+  "pass": 56,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "source note contains firewall phrase: **Claim type:** positive_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains firewall phrase: ABJ anomaly-to-inconsistency step as an admitted or",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains firewall phrase: standard-theorem import",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains firewall phrase: Tr_LH[Y^3] = -16/9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains firewall phrase: abj_import_retired_on_framework_action_surface: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains firewall phrase: standard_theorem_bridge_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains firewall phrase: accepted_premise_packet_load_bearing: false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains firewall phrase: framework_native_abj_derivation_closed: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes forbidden import/overclaim phrase: accepted premise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes forbidden import/overclaim phrase: accepted-premise packet entry",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes forbidden import/overclaim phrase: standard theorem of chiral gauge QFT, and therefore",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes forbidden import/overclaim phrase: PDG",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes forbidden import/overclaim phrase: Monte Carlo",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes forbidden import/overclaim phrase: observed spacetime",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "framework LH Tr[Y] = 0",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "framework LH Tr[Y^3] = -16/9",
+      "status": "PASS",
+      "detail": "-16/9"
+    },
+    {
+      "name": "framework LH U(1)^3 anomaly coefficient is nonzero",
+      "status": "PASS",
+      "detail": "-16/9"
+    },
+    {
+      "name": "gamma_0 Hermitian",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma_0 squares to I",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma_1 Hermitian",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma_1 squares to I",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma_2 Hermitian",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma_2 squares to I",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma_3 Hermitian",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma_3 squares to I",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_0,gamma_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_0,gamma_1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_0,gamma_2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_0,gamma_3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_1,gamma_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_1,gamma_1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_1,gamma_2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_1,gamma_3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_2,gamma_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_2,gamma_1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_2,gamma_2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_2,gamma_3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_3,gamma_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_3,gamma_1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_3,gamma_2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Clifford anticommutator gamma_3,gamma_3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma5 squares to I",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma5 anticommutes with gamma_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma5 anticommutes with gamma_1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma5 anticommutes with gamma_2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma5 anticommutes with gamma_3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "gamma5 sigma sigma trace vanishes when epsilon tensor vanishes",
+      "status": "PASS",
+      "detail": "max=0.000e+00"
+    },
+    {
+      "name": "gamma5 sigma sigma trace proportional to epsilon tensor",
+      "status": "PASS",
+      "detail": "ratio=(4+0j)"
+    },
+    {
+      "name": "gamma5 sigma sigma trace coefficient is nonzero",
+      "status": "PASS",
+      "detail": "ratio=(4+0j)"
+    },
+    {
+      "name": "3+1 Wick-rotated Gaussian heat-kernel integral = 1/(16*pi^2)",
+      "status": "PASS",
+      "detail": "1/(16*pi**2)"
+    },
+    {
+      "name": "heat-kernel density nonzero for F_01=F_23=1",
+      "status": "PASS",
+      "detail": "spin_trace=(4+0j)"
+    },
+    {
+      "name": "3+1 candidate F^2 has zero BRST variation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "abelian A^2 F vanishes because A wedge A = 0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "abelian A^4 vanishes because A wedge A = 0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "c F^2 representative nonzero for F_01=F_23=1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "no 3+1 abelian local counterterm variation equals c F^2",
+      "status": "PASS",
+      "detail": "{'F^2': '0', 'A^2 F': '0', 'A^4': '0'}"
+    }
+  ],
+  "source_firewall": {
+    "required": [
+      "**Claim type:** positive_theorem",
+      "ABJ anomaly-to-inconsistency step as an admitted or",
+      "standard-theorem import",
+      "Tr_LH[Y^3] = -16/9",
+      "abj_import_retired_on_framework_action_surface: true",
+      "standard_theorem_bridge_load_bearing: false",
+      "accepted_premise_packet_load_bearing: false",
+      "framework_native_abj_derivation_closed: true"
+    ],
+    "forbidden": [
+      "accepted premise",
+      "accepted-premise packet entry",
+      "standard theorem of chiral gauge QFT, and therefore",
+      "PDG",
+      "Monte Carlo",
+      "observed spacetime"
+    ]
+  },
+  "framework_traces": {
+    "TrY": "0",
+    "TrY3": "-16/9"
+  },
+  "heat_kernel": {
+    "spin_trace_ratio_to_epsilon": "(4+0j)",
+    "gaussian_integral": "1/(16*pi**2)"
+  },
+  "counterterm_enumeration": {
+    "candidates": {
+      "F^2": {
+        "degree": 4,
+        "vanishes_abelian": false,
+        "brst_variation": "0"
+      },
+      "A^2 F": {
+        "degree": 4,
+        "vanishes_abelian": true,
+        "brst_variation": "0"
+      },
+      "A^4": {
+        "degree": 4,
+        "vanishes_abelian": true,
+        "brst_variation": "0"
+      }
+    },
+    "anomaly_representative": "c F^2",
+    "no_counterterm": true
+  },
+  "verdict": "framework-action U(1)^3 ABJ obstruction derived; ABJ import retired for the anomaly-forces-time parent route on the action surface."
+}

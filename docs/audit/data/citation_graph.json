@@ -43685,7 +43685,7 @@
       "helper_runner_paths": [],
       "note_hash": "244abd4871e51469680d9bc80b4d54e99b674a9a21e3ec4f8b4f939af9e2f30c",
       "path": "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
-      "runner_path": "scripts/frontier_bertrand_stable_orbit_upper_bound_repair.py",
+      "runner_path": null,
       "title": "Bertrand Stable-Orbit Upper-Bound Support"
     },
     "beta6_plaquette_closure_note_2026-05-29": {

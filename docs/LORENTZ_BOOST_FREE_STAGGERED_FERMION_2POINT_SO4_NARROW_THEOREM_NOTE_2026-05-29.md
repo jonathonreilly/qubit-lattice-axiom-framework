@@ -9,7 +9,7 @@ audit pipeline after independent review.
 audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py`](../scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py)
-(SCORECARD: PASS=47, FAIL=0)
+(SCORECARD: PASS=53, FAIL=0)
 **Cached runner output:** [`logs/runner-cache/frontier_lorentz_boost_free_staggered_fermion_2point_so4.txt`](../logs/runner-cache/frontier_lorentz_boost_free_staggered_fermion_2point_so4.txt)
 
 This note is the **matter-sector (fermion) analogue** of the existing
@@ -68,9 +68,26 @@ built from the scalar Euclidean propagator `m K_1(m R)/(4π² R)` and its
 derivative; equivalently (Wick rotation `t → -i τ`) the corresponding
 Wightman 2-point function is SO(3,1)-covariant in the continuum limit.
 
-The leading lattice correction is a **dimension-6, parity-even,
-CPT-even, ℓ = 4 cubic-harmonic anisotropy at O(a²)**, with the same
-angular family `Σ_μ p_μ⁴` as the free-scalar result. As a 4D Euclidean
+**Leading correction — scope.** The O(a²) leading-correction statement
+below is made for the **taste-singlet scalar spectrum `Δ(p)` / displayed
+taste-spectator `D~` sector** (the taste-spectral-multiplicity sector
+verified in Part 1a), NOT for the full free staggered spin⊗taste
+propagator. For the FULL free staggered spin⊗taste propagator the leading
+finite-`a` correction is the **`O(a)` non-spectator taste-mixing** of the
+hypercube spin⊗taste reconstruction (standard staggered taste-breaking;
+e.g. `γ_S ⊗ ξ_5` channels), as the Construction admits; that `O(a)`
+taste-mixing vanishes as `a → 0`, recovering the displayed `D~(p)`. The
+two statements are consistent: the taste-singlet scalar spectrum `Δ(p)`
+is exactly the sector in which taste does not enter the eigenvalue (it
+appears only as a 4-fold spectral multiplicity), so its leading
+anisotropy is the `O(a²)` cubic harmonic, while the genuine `O(a)`
+taste-breaking lives in the non-spectator taste channels that `Δ(p)`
+does not resolve.
+
+Within the taste-singlet scalar spectrum `Δ(p)`, the leading lattice
+correction is a **dimension-6, parity-even, CPT-even, ℓ = 4
+cubic-harmonic anisotropy at O(a²)**, with the same angular family
+`Σ_μ p_μ⁴` as the free-scalar result. As a 4D Euclidean
 hyperspherical decomposition on `S³`,
 
 ```text
@@ -83,9 +100,9 @@ body-diagonal `[1,1,1,1]/2` value `1/4` (ratio `4`), and **no ℓ = 0/2/6
 contamination** (`H_4` is exactly Laplacian-annihilated). The 4D
 fermion coefficient is `c_4 = -1/3` (i.e.
 `Δ(p) = m² + p² - (a²/3) Σ_μ p_μ⁴ + O(a⁴)`). Restricted to a
-fixed-direction spatial 3-slice (`p_0 = 0`) the same operator reduces
-to the free-scalar boost note's 3D `K_4` (isotropic part `3/5`,
-axis/diagonal ratio `3`) — the explicit free-scalar bridge.
+fixed-direction spatial 3-slice (`p_0 = 0`) the same scalar-spectrum
+operator reduces to the free-scalar boost note's 3D `K_4` (isotropic
+part `3/5`, axis/diagonal ratio `3`) — the explicit free-scalar bridge.
 
 Because the free theory is exactly solvable, the continuum limit of the
 free 2-point function is well-defined and the SO(4) statement is
@@ -238,25 +255,36 @@ continuum Dirac equation `(m + i γ·p) G~_cont = 1`, the Dirac-trace
 identity `tr G~_cont = 4m/(p² + m²)`, and the SO(4)-scalar denominator
 `G~_cont G~_cont^† = 1/(p² + m²) · 1` (Part 2).
 
-Convergence is O(a²): the runner measures `err(a)/err(a/2) = 3.999`
-(expected `4`) for `|G~_lat - G~_cont|` along a generic direction, and
-`4.000` along the body diagonal `[1,1,1,1]` (Part 2 check 2.2, Part 3
-check 3.4). The SO(4)-scalar invariant `tr(G~ G~^†)` of the lattice
-propagator, which is exactly orbit-constant in the continuum, has a
-finite-`a` spread over an SO(4) orbit that scales as `O(a²)`:
-`spread(a=0.4)/spread(a=0.1) = 15.94` (expected `16`) (Part 3, check
-3.3).
+Convergence of the displayed taste-spectator `D~` propagator (the
+explicit `1_taste`-factored spin block) is O(a²): the runner measures
+`err(a)/err(a/2) = 3.999` (expected `4`) for `|G~_lat - G~_cont|` along a
+generic direction, and `4.000` along the body diagonal `[1,1,1,1]` (Part
+2 check 2.2, Part 3 check 3.4). The SO(4)-scalar invariant `tr(G~ G~^†)`
+of this lattice propagator, which is exactly orbit-constant in the
+continuum, has a finite-`a` spread over an SO(4) orbit that scales as
+`O(a²)`: `spread(a=0.4)/spread(a=0.1) = 15.94` (expected `16`) (Part 3,
+check 3.3). This O(a²) rate is the convergence of the displayed
+taste-spectator block / scalar spectrum, not of the full spin⊗taste
+propagator (whose leading finite-`a` correction is the `O(a)`
+non-spectator taste-mixing).
 
-## The ℓ = 4 anisotropy
+## The ℓ = 4 anisotropy (taste-singlet scalar spectrum / D~ sector)
 
-The leading lattice correction enters through both Lorentz structures,
+Within the taste-singlet scalar spectrum `Δ(p)` / displayed
+taste-spectator `D~` sector (the sector in which taste enters only as a
+4-fold spectral multiplicity, Part 1a), the leading lattice correction
+enters through both Lorentz structures,
 
 ```text
     sin(p_μ a)/a = p_μ - (a²/6) p_μ³ + O(a⁴)           (numerator),
     Δ(p)         = m² + p² - (a²/3) Σ_μ p_μ⁴ + O(a⁴)    (denominator),
 ```
 
-and the unique anisotropic operator at O(a²) is `Σ_μ p_μ⁴`. The runner
+and the unique anisotropic operator at O(a²) is `Σ_μ p_μ⁴`. (For the
+full free staggered spin⊗taste propagator the leading finite-`a`
+correction is instead the `O(a)` non-spectator taste-mixing, admitted in
+the Construction; the `O(a²)` cubic-harmonic statement here is confined
+to the taste-singlet scalar sector.) The runner
 extracts the denominator coefficient `c_4 = -1/3` numerically
 (`-0.33329` vs `-1/3`; Part 4 check 4.1), matching the staggered-fermion
 value of the framework's dispersion note.
@@ -314,11 +342,11 @@ position-space SO(4) scalar Schwinger kernel is the same
 
 ```bash
 python3 scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
-# SCORECARD: PASS=47  FAIL=0
+# SCORECARD: PASS=53  FAIL=0
 # Exit code: 0
 ```
 
-The 47 checks span 8 parts (self-contained: numpy + scipy.special +
+The 53 checks span 9 parts (self-contained: numpy + scipy.special +
 optional sympy):
 
 | Part | Coverage                                                            | PASS |
@@ -328,12 +356,12 @@ optional sympy):
 | 1a   | Exact finite-a scalar spectrum Δ(p) + 4-fold taste multiplicity (position-space staggered operator) | 7 |
 | 2    | Continuum limit → SO(4) Euclidean Dirac propagator (O(a²))          | 5    |
 | 3    | SO(4) covariance: exact continuum bispinor + lattice O(a²) residual | 5    |
-| 4    | Leading anisotropy = dim-6 ℓ=4 cubic harmonic (4D; c₄=-1/3; no ℓ=2,6) | 8  |
+| 4    | Scalar-spectrum leading anisotropy = dim-6 ℓ=4 cubic harmonic (4D; c₄=-1/3; no ℓ=2,6) | 8  |
 | 5    | Free-scalar bridge consistency (3-slice, coefficient, kernel)      | 4    |
 | 6    | Position-space SO(4) isotropy of the lattice trace 2-point (even sublattice) | 4 |
 | 7    | Combined SO(4)/SO(3,1) statement + relation to the scalar note     | 9    |
 
-Total: 47/47 PASS.
+Total: 53/53 PASS.
 
 A noted structural feature (Part 6): the trace (taste-summed) 2-point
 `tr G~ = 4m/Δ(p)` is invariant under the staggered taste shift
@@ -367,13 +395,13 @@ statement, which is the load-bearing content.
   (`O(a²)` taste-violating four-fermion operators) is a separate effect
   and is out of scope; the magnitude and continuum extrapolation of free
   finite-`a` taste-breaking are likewise out of scope here.
-- **Physical-unit conversion.** Any conversion of the O(a²) anisotropy
-  to physical Lorentz-violation magnitude requires the Planck-pin /
-  unit-map premise `a ~ 1/M_Pl`, which is NOT imported here (it is the
-  conditional, non-load-bearing piece split off in the dispersion note's
-  2026-05-28 repair). The present note's claim is the structural
-  continuum-limit covariance and the ℓ = 4 angular structure, with no
-  physical-unit readout.
+- **Physical-unit conversion.** Any conversion of the O(a²)
+  scalar-spectrum anisotropy to physical Lorentz-violation magnitude
+  requires the Planck-pin / unit-map premise `a ~ 1/M_Pl`, which is NOT
+  imported here (it is the conditional, non-load-bearing piece split off
+  in the dispersion note's 2026-05-28 repair). The present note's claim
+  is the structural continuum-limit covariance and the taste-singlet
+  scalar-sector ℓ = 4 angular structure, with no physical-unit readout.
 
 ## Honest status
 
@@ -381,17 +409,25 @@ The continuum limit of the FREE staggered-Dirac 2-point Schwinger
 function is well-defined (the free theory is exactly solvable, the
 momentum-space propagator is the explicit closed form above), so the
 SO(4)-covariance statement and the dim-6 ℓ = 4 cubic-harmonic
-characterisation of the leading O(a²) correction are **unconditional for
-the free 2-point function**. They are exact algebraic / continuum-limit
-facts, verified by the registered runner at machine precision (exact
-SO(4) bispinor covariance of the continuum propagator; closed-form
-inverse; `c_4 = -1/3`; pure 4D ℓ = 4 with no ℓ = 0/2/6) and at the
-expected O(a²) rate (lattice → continuum convergence; SO(4)-orbit
+characterisation of the leading O(a²) correction **of the taste-singlet
+scalar spectrum `Δ(p)` / displayed taste-spectator `D~` sector** are
+**unconditional for the free 2-point function**. The O(a²)
+leading-correction statement is confined to that taste-singlet scalar
+sector; for the FULL free staggered spin⊗taste propagator the leading
+finite-`a` correction is the `O(a)` non-spectator taste-mixing admitted
+in the Construction (vanishing as `a → 0`), so no O(a²) leading-correction
+claim is made for the full spin⊗taste propagator. The scalar-sector
+statements are exact algebraic / continuum-limit facts, verified by the
+registered runner at machine precision (exact SO(4) bispinor covariance
+of the continuum propagator; closed-form inverse; `c_4 = -1/3`; pure 4D
+ℓ = 4 with no ℓ = 0/2/6) and at the expected O(a²) rate for the displayed
+taste-spectator block (lattice → continuum convergence; SO(4)-orbit
 residual scaling). This note makes no interacting-theory, n-point,
-OS-reconstruction, continuum-existence, or physical-unit claim, and
-introduces no new vocabulary: it is one concrete sub-step, the
-matter-sector analogue of the free-scalar SO(4)/boost result. Status
-authority for this row is the independent audit lane.
+OS-reconstruction, continuum-existence, full-spin⊗taste-propagator
+leading-order, or physical-unit claim, and introduces no new vocabulary:
+it is one concrete sub-step, the matter-sector analogue of the
+free-scalar SO(4)/boost result. Status authority for this row is the
+independent audit lane.
 
 ## Dependencies
 
@@ -409,9 +445,10 @@ Load-bearing retained dependencies (markdown links):
   spectrum `Δ(p)` with its 4-fold taste multiplicity).
 - [CPT_EXACT_NOTE.md](CPT_EXACT_NOTE.md) (retained) — exact CPT on the
   even periodic lattice. Supports the parity-even / CPT-even
-  classification of the leading O(a²) correction (no dim-3 / dim-5
-  operators); the present note verifies `Δ(-p) = Δ(p)` directly on its
-  own operator family in the runner (Part 4 check 4.7).
+  classification of the leading O(a²) correction **of the taste-singlet
+  scalar spectrum `Δ(p)`** (no dim-3 / dim-5 operators); the present note
+  verifies `Δ(-p) = Δ(p)` directly on its own scalar-spectrum operator
+  family in the runner (Part 4 check 4.7).
 
 Context notes (plain-text / backticked per the citation-graph
 convention; not load-bearing one-hop dependencies of this row, cited for

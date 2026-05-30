@@ -19581,6 +19581,10 @@
       "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
     },
     {
+      "from": "no_per_site_chirality_theorem_note_2026-05-02",
+      "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+    },
+    {
       "from": "n_eff_from_three_generations_theorem_note_2026-04-24",
       "to": "three_generation_structure_note"
     },
@@ -68519,12 +68523,14 @@
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
-      "deps": [],
+      "deps": [
+        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "c3a335bfc62c48882dee596496483c205d723298ed5a703f556fa1355adcfc37",
+      "note_hash": "ff529bb3e0ab5ee86bd5e039fe4e9721268464fdf866bb1e9e9626093266c5eb",
       "path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/no_per_site_chirality_check.py",
-      "title": "No \u03b3_5 Chirality Operator in the Supplied Cl(3) Pauli M_2(C) Rep"
+      "title": "No Per-Site \u03b3_5 Chirality Operator on Cl(3) Pauli Rep"
     },
     "nonlabel_grown_basin_note": {
       "claim_id": "nonlabel_grown_basin_note",
@@ -87610,7 +87616,6 @@
     "nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10_note_2026-05-17",
     "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10_note_2026-05-17",
     "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
-    "no_per_site_chirality_theorem_note_2026-05-02",
     "nonlabel_grown_basin_note",
     "nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16",
     "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",

@@ -10311,6 +10311,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
+### `no_per_site_chirality_theorem_note_2026-05-02`
+
+- **Note:** [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Framework per-site no-gamma5 claim conditional on identifying H_x with a single 2D Pauli Cl(3) module; the supplied-Pauli M_2(C) algebraic no-go itself is verified.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-fresh-restricted-input-audit-agent`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** By the cited per-site uniqueness theorem (U2), H_x ~= C^2 with gamma_i mapped to sigma_i.  _(class `B`)_
+- **chain closes:** False — The Pauli-representation algebra closes, but the framework-per-site conclusion does not close from the wired dependency because that dependency supplies only pure Cl(3) irrep classification and explicitly excludes the physical H_x identification and chirality-selection bridge.
+- **rationale:** Issue: the source imports the framework per-site Hilbert space identification H_x ~= C^2 with gamma_i -> sigma_i from a dependency whose audited scope excludes physical per-site Hilbert-space identification and chirality selection. Why this blocks: the runner and independent algebra prove the narrower supplied-Pauli M_2(C) no-gamma5 fact, but they do not close the framework-level carrier bridge or rule out larger/mixed representation routes without that bridge. Repair target: cite a retained bridge theorem identifying the framework H_x with a single 2D Pauli Cl(3) module, or narrow the source claim to the supplied-Pauli-representation M_2(C) no-go. Claim boundary until fixed: within the supplied 2x2 Pauli representation, sigma1 sigma2 sigma3 = iI, no nonzero 2x2 matrix anticommutes with all three sigma_i, and there is no per-site gamma5/chirality projector of that form.
+- **auditor confidence:** high
+
 ### `nonlabel_grown_basin_note`
 
 - **Note:** [`NONLABEL_GROWN_BASIN_NOTE.md`](../../docs/NONLABEL_GROWN_BASIN_NOTE.md)

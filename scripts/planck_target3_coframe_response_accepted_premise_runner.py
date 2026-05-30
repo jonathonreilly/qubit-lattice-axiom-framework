@@ -11,11 +11,15 @@ PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.
   =>  (B2) Clifford relations { Gamma_a, Gamma_b } = 2 delta_{ab} I
   =>  (B3) 16 Clifford words span End(K) = M_4(C); rank-4 K
             realises the unique irreducible Cl_4(C) module
-  =>  (B4) oriented CAR-mode pairs satisfy { c_i, c_j } = 0,
+  =>  (B4') in a Pauli-realized compatible Hermitian model, oriented
+            CAR-mode pairs satisfy { c_i, c_j } = 0,
             { c_i, c_j^dag } = delta_{ij} I
 
 All identities are verified by exact sympy symbolic arithmetic on
 finite-dim complex matrices. No PDG / fitted / observed value enters.
+The runner also checks that fixed-inner-product daggered CAR is not
+invariant under arbitrary nonunitary similarity transforms, so B4' is
+kept as a chosen-compatible-realization existence statement.
 """
 
 from __future__ import annotations
@@ -68,6 +72,9 @@ def part0_source_firewall() -> None:
         "bounded_theorem",
         "Status authority",
         "independent audit lane only",
+        "Pauli-realized compatible Hermitian",
+        "claim that every similarity-equivalent Clifford representation",
+        "nonunitary-similarity boundary check",
     ]
     for phrase in required:
         check(f"source contains required phrase: {phrase}", phrase in note)
@@ -275,7 +282,7 @@ def part3_clifford_words_span() -> None:
 
 
 def part4_car_modes() -> None:
-    print("\n== Part 4: (B4) oriented CAR modes ==")
+    print("\n== Part 4: (B4') oriented CAR modes in Pauli-realized inner product ==")
     Gt, Gn, G1, G2 = build_cl4_representation()
     I4 = sp.eye(4)
     Z = sp.zeros(4, 4)
@@ -297,7 +304,7 @@ def part4_car_modes() -> None:
     for label, A in anti.items():
         ok = A == Z
         check(
-            f"(B4) anticommutator of c_i and c_j vanishes for {label}",
+            f"(B4') anticommutator of c_i and c_j vanishes for {label}",
             ok,
         )
 
@@ -312,9 +319,46 @@ def part4_car_modes() -> None:
         anti = a * b + b * a
         ok = anti == expected
         check(
-            f"(B4) anticommutator { {label} } = {'I' if expected == I4 else '0'}",
+            f"(B4') anticommutator {label} = {'I' if expected == I4 else '0'}",
             ok,
         )
+
+
+def part4b_similarity_boundary() -> None:
+    print("\n== Part 4b: fixed-inner-product similarity boundary ==")
+    Gt, Gn, G1, G2 = build_cl4_representation()
+    I4 = sp.eye(4)
+    Z = sp.zeros(4, 4)
+    S = sp.diag(2, 1, 1, 1)
+    Sinv = S.inv()
+    Gs = [S * G * Sinv for G in [Gt, Gn, G1, G2]]
+
+    for idx, G in enumerate(Gs):
+        check(
+            f"(boundary) nonunitary similarity preserves Gamma_{idx}^2 = I",
+            sp.simplify(G * G) == I4,
+        )
+    check(
+        "(boundary) nonunitary similarity preserves one off-diagonal Clifford anticommutator",
+        sp.simplify(Gs[0] * Gs[1] + Gs[1] * Gs[0]) == Z,
+    )
+
+    cN = sp.Rational(1, 2) * (Gs[0] + sp.I * Gs[1])
+    cT = sp.Rational(1, 2) * (Gs[2] + sp.I * Gs[3])
+    check(
+        "(boundary) no-dagger CAR nilpotence survives similarity for c_N",
+        sp.simplify(cN * cN + cN * cN) == Z,
+    )
+    check(
+        "(boundary) no-dagger CAR cross anticommutator survives similarity",
+        sp.simplify(cN * cT + cT * cN) == Z,
+    )
+    fixed_inner_product_diag = sp.simplify(cN * cN.H + cN.H * cN)
+    check(
+        "(boundary) fixed standard daggered CAR is not similarity-invariant",
+        fixed_inner_product_diag != I4,
+        f"{{c_N,c_N^dag}}-I has rank {(fixed_inner_product_diag - I4).rank()}",
+    )
 
 
 def part5_dependency_status() -> None:
@@ -367,12 +411,13 @@ def main() -> int:
     part2_clifford_relations()
     part3_clifford_words_span()
     part4_car_modes()
+    part4b_similarity_boundary()
     part5_dependency_status()
     part6_no_forbidden_imports()
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow "
+            "VERDICT: bounded accepted-premise bridge passes; (B1)-(B4') follow "
             "from the retained Cl(3) complexification split + accepted-premise "
             "packet (P1) by polarization and finite-dim sympy linear algebra."
         )

@@ -2,29 +2,10 @@
 
 **Date:** 2026-05-11
 **Claim type:** bounded_theorem
-**Type:** bounded_theorem
 **Scope:** external fermionic-RG majorant theorem from Kroschinsky-Marchetti-Salmhofer arXiv:2404.06099 (2024), cited as rigorous-RG context for the fermionic Polchinski equation. No framework substitution, hierarchy formula, or physical scale closure is claimed.
-**Status authority:** independent audit lane only.
-**Runner:** `scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py`
-**Cache:** `logs/runner-cache/frontier_kms_fermionic_brydges_majorant_external_narrow.txt`
-
-## 2026-05-28 Audit Repair (conditional core; missing upstream admitted)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The scalar ODE consequences close algebraically once the KMS majorant inequality is assumed. The restricted packet does not provide the KMS paper or any retained-grade upstream authority proving that inequality, so the load-bearing external"*
-
-with repair: *"missing_dependency_edge: include the KMS arXiv:2404.06099 theorem statement/proof excerpt or a retained upstream authority row establishing the BBF majorant inequality and hypotheses."*
-
-Supplying the named upstream authority is substantive new work, out of scope.
-This revision narrows via the **admission path**:
-
-- **Load-bearing (in scope):** The scalar majorant ODE `dy/dl = a y^2 + b y` closes algebraically and numerically — small-data integrability, monotonicity, scale-chaining, and the fixed-point structure are all verified by the runner GIVEN the KMS per-scale bound as input.
-- **NON-load-bearing (admitted / unsupplied):** The KMS arXiv:2404.06099 Theorem 1 majorant inequality itself — specifically, that the BBF polymer norm satisfies `d/dl ||V_l||_h <= a(l) ||V_l||_h^2 + b(l) ||V_l||_h` with `a(l), b(l)` non-negative and integrable — is admitted as an unsupplied external input; the row does not certify it and no retained upstream authority row for it is present in the restricted packet.
-
-No new axiom, import, or retained bridge is introduced. The conditional core is
-the load-bearing content; the named upstream stays admitted until a retained
-authority/runner for it lands.
+**Status authority:** source-note proposal only; independent audit sets any audit result and pipeline-derived status.
+**Runner:** [`scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py`](../scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py)
+**Cache:** [`logs/runner-cache/frontier_kms_fermionic_brydges_majorant_external_narrow.txt`](../logs/runner-cache/frontier_kms_fermionic_brydges_majorant_external_narrow.txt)
 
 ## Claim
 

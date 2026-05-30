@@ -926,15 +926,11 @@
     },
     {
       "from": "anomaly_forces_time_theorem",
-      "to": "native_gauge_closure_note"
+      "to": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
     },
     {
       "from": "anomaly_forces_time_theorem",
-      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
-    },
-    {
-      "from": "anomaly_forces_time_theorem",
-      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "anomaly_forces_time_theorem",
@@ -42395,18 +42391,17 @@
     "anomaly_forces_time_theorem": {
       "claim_id": "anomaly_forces_time_theorem",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem proposal. The earlier \"moving toward",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "native_gauge_closure_note",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "no_per_site_chirality_theorem_note_2026-05-02",
+        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c0d5f6e293eb50dcd0ed2d1a43aa310ac3cda1d51b580d8d24e99129012a4748",
+      "note_hash": "29c40a06327bceaf2f9b329710ba7b5eb066e84119e90474d267c756da593e86",
       "path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
-      "runner_path": "scripts/frontier_anomaly_forces_time.py",
+      "runner_path": "scripts/frontier_anomaly_forces_time_accepted_premise_closure.py",
       "title": "Anomaly-Cancellation Consistency Bridge for 3+1 Spacetime"
     },
     "anomaly_forces_time_theorem_note_2026-05-17": {
@@ -87964,7 +87959,7 @@
       "open_gate": 133,
       "positive_theorem": 584
     },
-    "edge_count": 10022,
+    "edge_count": 10021,
     "leaf_count": 829,
     "node_count": 2635,
     "root_count": 876,

@@ -1,9 +1,9 @@
 {
   "criticality_counts": {
-    "critical": 388,
+    "critical": 390,
     "high": 509,
-    "leaf": 1093,
-    "medium": 645
+    "leaf": 1092,
+    "medium": 644
   },
   "flagship_signal_used": false,
   "node_count": 2635,
@@ -79,7 +79,7 @@
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 37.578,
+      "load_bearing_score": 37.078,
       "transitive_descendants": 1080
     },
     {

@@ -6,10 +6,9 @@
      measure; nonzero index construction.
    - Runner path: build from current staggered Dirac matrix tools.
 
-2. Parent theorem reconciliation to current ABJ residual map.
-   - Positive probability: high for bounded cleanup, low for full retained
-     closure.
-   - Missing imports: ABJ accepted premise remains.
+2. Parent theorem reconciliation to current ABJ residual map. DONE in cycle 2.
+   - Result: accepted-premise bounded closure repair.
+   - Missing imports: ABJ accepted premise remains for unbounded closure.
    - Role: makes the 3+1 lane honest and current.
 
 3. Wess-Zumino cohomology finite-lattice route.

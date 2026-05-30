@@ -1,462 +1,212 @@
 # Anomaly-Cancellation Consistency Bridge for 3+1 Spacetime
 
-**Date:** 2026-04-24 (scope tightened 2026-05-02; citation chain partially
-internalized 2026-05-03; audit-prep stale-citation correction 2026-05-07)
-**Type:** bounded_theorem proposal. The earlier "moving toward
-positive_theorem" framing was withdrawn during 2026-05-07 audit-prep
-because admission (i) (ABJ anomaly-to-inconsistency on the lattice) is
-not currently routed to an internal companion note on `main`: the
-proposed companion (PR 402) was closed without merge.
-Audit status is assigned only by the independent audit lane; this note
-does not set or predict a verdict, and the source author does not
-propose a retained / positive_theorem promotion at this time.
-**Primary runner:** `scripts/frontier_anomaly_forces_time.py`
-**Claim scope:** conditional 3+1 derivation. Three of four previously
-bare external admissions are now routed to named companion notes; the
-fourth (admission (i), ABJ anomaly-to-inconsistency on the lattice)
-remains a bare external admission on current `main`:
-  (i) the Adler--Bell--Jackiw anomaly-to-inconsistency implication for
-  chiral gauge theories with gauge content `su(2) + su(3) + u(1)` and
-  left-handed content `(2,3)_{+1/3} + (2,1)_{-1}` is **NOT currently
-  internalized**. A proposed lattice Wess-Zumino / Fujikawa `Z^4`
-  companion note (filename `AXIOM_FIRST_LATTICE_WESS_ZUMINO_FUJIKAWA_Z4_THEOREM_NOTE_2026-05-02.md`,
-  proposed in PR 402) was **closed without merge**; the file does not
-  exist on `main`. Until a successor companion note lands, admission (i)
-  is treated as a bare external admission to the standard ABJ result
-  [1,2] for chiral gauge theories. This is the single open admission
-  that keeps this row's load-bearing class at B;
-  (ii) the opposite-chirality SU(2)-singlet right-handed completion is
-  internalized by the gauge-closure aggregator
-  [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md), which
-  carries the proposed_retained (audit-pending) graph-first
-  SU(2)/SU(3)/U(1) closure to which the singlet completion is matched.
-  Citation status on `main`: present (proposed_retained, audit-pending);
-  (iii) the chirality grading needed for ABJ anomaly evaluation is
-  internalized by the staggered sublattice parity
-  `epsilon(x) := (-1)^{x_1+x_2+x_3}` deriving its anticommutation with the
-  staggered Dirac operator `{epsilon, D_staggered} = 0` from
-  [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
-  Step 4 (chirality anticommutation forced by site-chirality assignment +
-  retained no-rooting irreducibility). The companion `CPT_EXACT_NOTE.md`
-  uses the same `epsilon(x)` function in the orthogonal role of charge
-  conjugation (`C H C = -H` spectral flip) and does NOT establish the
-  chirality grading — that role lives in the Kawamoto-Smit substep 2
-  derivation. Per-site `gamma_5` is ruled out by
-  [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md);
-  the chirality grading here lives on the staggered lattice (taste-
-  reconstructed Dirac), not on the per-site Cl(3) algebra. Citation
-  status on `main`: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE
-  present as an audit-pending source note;
-  (iv) the ultrahyperbolic / multi-time Cauchy-problem obstruction is no
-  longer load-bearing for this row: the single-clock codimension-1
-  evolution theorem in
-  [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-  derives the single-clock codimension-1 hypothesis from retained primitives
-  (RP positivity, microcausality, Lieb-Robinson, cluster decomposition,
-  Cl(3)/Z^3), which directly excludes `d_t > 1` without needing the
-  classical-PDE ultrahyperbolic obstruction. The Craig--Weinstein /
-  Tegmark literature is now a corroborating cross-reference, not an
-  external load-bearing admission. PR 418 merged 2026-05-03; citation
-  status on `main`: present (proposed_retained, audit-pending).
-Under these citations plus the open ABJ admission (i), spacetime
-signature `(3,1)` is selected within the stated conditional bridge.
-The load-bearing chain has one remaining bare external admission
-(admission (i)).
-**Load-bearing class:** B (conditional bridge) on current `main`. Any
-promotion toward A (positive theorem) is conditional on a successor
-companion note for admission (i) landing on `main` AND on independent
-audit ratification — neither condition is currently met.
+**Date:** 2026-04-24; current-surface repair 2026-05-30
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does
+not set or predict an audit outcome.
+**Current status:** accepted-premise positive composition. The theorem closes
+`d_t = 1` on the explicitly registered ABJ anomaly-to-inconsistency premise
+and the single-clock codimension-1 evolution surface. It is not an unbounded
+positive theorem from A1+A2 alone.
+**Primary runner:**
+[`scripts/frontier_anomaly_forces_time_accepted_premise_closure.py`](../scripts/frontier_anomaly_forces_time_accepted_premise_closure.py)
+**Legacy runner:** `scripts/frontier_anomaly_forces_time.py`
 
-## Boundary update (2026-05-07 audit-prep pass)
+## Repair Summary
 
-The 2026-05-02 version listed four external admissions as bare imports.
-The 2026-05-03 citation pass routed all four to companion notes.
-Audit-prep on 2026-05-07 corrected stale citations:
+The older version of this note said that admission (i), the
+Adler-Bell-Jackiw anomaly-to-inconsistency implication, had no successor route
+after the earlier lattice Wess-Zumino/Fujikawa attempt closed without merge.
+That is no longer the current repo surface.
 
-- Admission (iv) (single-clock codimension-1 evolution): companion
-  PR 418 merged on 2026-05-03; the cited note is now present on `main`
-  as proposed_retained (audit-pending).
-- Admission (i) (ABJ anomaly-to-inconsistency on the lattice): the
-  proposed companion note (PR 402, filename
-  `AXIOM_FIRST_LATTICE_WESS_ZUMINO_FUJIKAWA_Z4_THEOREM_NOTE_2026-05-02.md`)
-  was **closed without merge**; the cited file does not exist on `main`.
-  Admission (i) is therefore reverted to a bare external admission to
-  the standard ABJ result for chiral gauge theories.
-- Admission (ii) remains routed to `NATIVE_GAUGE_CLOSURE_NOTE.md`,
-  present on `main` as proposed_retained (audit-pending).
-- Admission (iii) was previously routed to `CPT_EXACT_NOTE.md`, but
-  that note establishes `epsilon(x)` only in its charge-conjugation
-  role. The chirality grading role (the role admission (iii) is
-  actually about) is established by
-  `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
-  Step 4 (`{epsilon, D_staggered} = 0`). Routing corrected 2026-05-17
-  per hostile audit F-C finding (PR #1262). The new routing target is
-  present on `main` as an audit-pending source note.
+The current surface is:
 
-This row remains a conditional bridge (bounded_theorem) on `main`. The
-"positive_theorem" promotion previously conditioned on two pending PRs
-landing is now conditioned on a successor companion note for admission
-(i) PLUS independent audit ratification — neither condition is currently
-met. Source-note authority does not assign or propose retained /
-positive_theorem status; only the independent audit lane does.
+1. The ABJ implication is registered explicitly as a named accepted premise in
+   [`ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md).
+   That bridge proves, by exact rational anomaly arithmetic plus the accepted
+   ABJ premise, that the framework matter content requires chiral completion
+   and hence forces `d_t` to be a positive odd integer.
+2. The pure Clifford parity step is audit-ratified separately in
+   [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md):
+   a chirality operator anticommuting with all spacetime Clifford generators
+   exists only in even total dimension. With `d_s = 3`, this is exactly the
+   odd-time condition.
+3. The one-clock exclusion of multi-time `d_t > 1` is carried by
+   [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md).
+4. The late-May U(1) Fujikawa/Jacobian work narrows the route toward
+   internal ABJ closure but does not retire the accepted premise. The current
+   residual is that the standard finite even-torus staggered `epsilon` index
+   cannot witness the needed non-zero index; the exact square-block no-go is
+   recorded in `docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md`.
 
-## Theorem (anomaly-cancellation / single-clock form, conditional)
+In the legacy admission numbering, admission (i) is the ABJ
+anomaly-to-inconsistency premise and admission (iv) is the single-clock
+codimension-1 exclusion of `d_t > 1`. This repair preserves that split while
+replacing stale admission-(i) prose with the current accepted-premise bridge.
 
-Let the Cl(3) Clifford algebra acting on Z^3 produce the gauge algebra
-su(2) + su(3) + u(1) with left-handed fermion content
+This is therefore a repair from "stale bare admission" to "explicit
+accepted-premise bounded composition." It is a positive closure on that
+accepted-premise surface, not an unbounded A1+A2 derivation of ABJ.
 
-    (2, 3)_{+1/3}  +  (2, 1)_{-1}
+## Theorem
 
-(one generation of quarks and leptons), per
-[`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md).
-The single-clock codimension-1 evolution structure (one strongly
-continuous unitary `U(t) = exp(-itH)`, one initial codimension-1 surface,
-arbitrary admissible local data, deterministic evolution) is supplied by
-[`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-(present on `main` as proposed_retained, audit-pending; PR 418 merged
-2026-05-03), which derives that structure from RP positivity,
-microcausality, Lieb-Robinson velocity, and cluster decomposition. The
-ABJ anomaly-to-inconsistency implication is **assumed as a bare external
-admission** to the standard ABJ result [1,2] for chiral gauge theories
-(no internal companion note on `main`; PR 402 was closed without merge).
-The chirality grading is the staggered sublattice parity
-`epsilon(x) := (-1)^{x_1+x_2+x_3}` whose anticommutation with the staggered
-Dirac operator `{epsilon, D_staggered} = 0` is established by
-[`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
-Step 4. The same `epsilon(x)` plays the orthogonal charge-conjugation
-role in `CPT_EXACT_NOTE.md`; the two roles do
-not collide because they act on different operator structures (chirality
-anticommutes with `D_staggered`; charge conjugation flips its sign).
-Per-site `gamma_5` is excluded by
-[`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) —
-the chirality grading lives on the staggered taste-reconstructed Dirac, not on the
-per-site Cl(3) algebra.
+Assume the framework's retained/bounded matter-content surface supplies the
+left-handed chiral gauge content
 
-Then consistency of the quantum gauge theory selects exactly one
-temporal dimension within the stated premises, giving spacetime
-signature `(3,1)`.
-
-## Audit-lane handoff
-
-```yaml
-proposed_claim_type: bounded_theorem
-audit_required_before_effective_retained: true
-audit_handoff_status: |
-  Source author submits this row for audit as a bounded_theorem
-  (conditional 3+1 derivation). Three of four previously bare external
-  admissions are routed to internal companion notes that are present on
-  main as proposed_retained, audit-pending. The fourth (admission (i),
-  ABJ anomaly-to-inconsistency on the lattice) remains a bare external
-  admission because PR 402 was closed without merge. The author does
-  NOT propose positive_theorem / retained promotion at this time.
-  Independent audit lane decides verdict.
-admission_routing_status:
-  - admission_id: i
-    description: ABJ anomaly-to-inconsistency for chiral gauge theory
-    routing_state: bare external admission (NOT internalized on main)
-    proposed_companion_filename: docs/AXIOM_FIRST_LATTICE_WESS_ZUMINO_FUJIKAWA_Z4_THEOREM_NOTE_2026-05-02.md
-    proposed_companion_pr: 402
-    proposed_companion_pr_state: CLOSED without merge
-    cited_reference: ABJ result [1,2] for chiral gauge theories
-    blocks_positive_theorem_promotion: true
-  - admission_id: ii
-    description: opposite-chirality SU(2)-singlet right-handed completion
-    routed_to: docs/NATIVE_GAUGE_CLOSURE_NOTE.md
-    landing_state: present on main (proposed_retained, audit-pending aggregator)
-  - admission_id: iii
-    description: chirality grading for ABJ anomaly evaluation
-    routed_to: docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
-    landing_state: present on main (audit-pending source note; Step 4 derives {epsilon, D_staggered} = 0 — the chirality anticommutation role)
-    routing_history:
-      prior_routed_to: docs/CPT_EXACT_NOTE.md
-      prior_routed_to_role: charge conjugation (C H C = -H), NOT chirality
-      corrected_2026-05-17: per hostile audit F-C finding (PR #1262);
-        CPT_EXACT_NOTE has zero gamma_5 occurrences and does not
-        establish chirality. The chirality role lives in the staggered
-        Kawamoto-Smit substep 2 derivation.
-    per_site_no_go: docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md
-      (rules out per-site gamma_5 in Cl(3); not contradicted here because
-      the chirality grading lives on the staggered lattice / taste-reconstructed
-      Dirac, not on the per-site algebra)
-  - admission_id: iv
-    description: ultrahyperbolic / multi-time codimension-1 obstruction
-    routed_to: docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
-    landing_state: present on main (proposed_retained, audit-pending; PR 418 merged 2026-05-03)
-    note: |
-      Single-clock codimension-1 evolution is now derived from retained
-      primitives (RP positivity, microcausality, Lieb-Robinson, cluster
-      decomposition, Cl(3)/Z^3); this directly excludes d_t > 1 without
-      invoking the classical-PDE ultrahyperbolic obstruction.
-      Craig-Weinstein 2009 and Tegmark 1997 reduce to corroborating
-      cross-references, not load-bearing imports.
-proposed_claim_scope: |
-  Cl(3)/Z^3 gauge content plus three internalized companion theorems
-  (admissions (ii), (iii), (iv)) plus a bare external admission to ABJ
-  for chiral gauge theories (admission (i)) force spacetime signature
-  (3,1). On current main this is a bounded_theorem (B-class conditional
-  bridge). A future positive_theorem (A-class) promotion path requires
-  (a) a successor companion note for admission (i) landing on main, AND
-  (b) independent audit ratification of admissions (ii), (iii), (iv).
-proposed_load_bearing_step_class: B (bounded conditional bridge) on current main
-status_authority: independent audit lane only
-companion_pr_status:
-  - PR 402 (lattice Wess-Zumino / Fujikawa Z^4 theorem): CLOSED without merge
-  - PR 418 (single-clock codimension-1 evolution theorem): MERGED 2026-05-03
+```text
+(2, 3)_{+1/3} + (2, 1)_{-1}
 ```
 
-This source note does not set or predict an audit outcome. It submits
-the partially citation-internalized 3+1 derivation as a bounded_theorem.
-Three previously-bare admissions are routed to companion notes on `main`
-(themselves audit-pending); admission (i) remains a bare external
-admission because the proposed companion (PR 402) was closed without
-merge. The author does not propose retained / positive_theorem
-promotion at this time.
+on the `Z^3` spatial substrate, and assume the named accepted premise:
+
+```text
+ABJ anomaly-to-inconsistency:
+  a chiral gauge theory with non-zero perturbative gauge anomaly traces
+  does not close as a unitary quantum gauge theory unless the anomalies are
+  cancelled by the completed chiral matter content.
+```
+
+Then:
+
+1. The left-handed content has non-zero anomaly traces:
+
+   ```text
+   Tr[Y^3]       = -16/9
+   Tr[SU(3)^2 Y] =  1/3
+   Tr[SU(3)^3]   =  2
+   ```
+
+2. By the accepted ABJ premise, gauge consistency requires an
+   opposite-chirality completion.
+3. Opposite chirality requires a chirality operator on the carrying spacetime
+   Clifford representation.
+4. The retained Clifford volume theorem forces total spacetime dimension
+   `d = d_s + d_t` to be even when such chirality exists.
+5. Since the spatial substrate is `d_s = 3`, chirality forces
+
+   ```text
+   d_t in {1, 3, 5, ...}.
+   ```
+
+6. The single-clock codimension-1 evolution theorem excludes `d_t > 1`.
+7. Therefore the only allowed time count on this accepted-premise surface is
+
+   ```text
+   d_t = 1,
+   ```
+
+   so the spacetime signature is `(3,1)`.
 
 ## Proof
 
-The argument proceeds in five steps.
+### 1. Anomaly arithmetic
 
-### Step 1. The left-handed content is anomalous
+For the left-handed matter content, the multiplicities are:
 
-The left-handed fermions carry hypercharges Y = +1/3 (with multiplicity
-2 x 3 = 6 from SU(2) x SU(3)) and Y = -1 (with multiplicity 2 x 1 = 2).
-Evaluating the standard anomaly traces:
+```text
+Q_L: 2 weak states x 3 colours = 6 states with Y = +1/3
+L_L: 2 weak states x 1 colour  = 2 states with Y = -1
+```
 
-| Anomaly coefficient     | Value   | Status    |
-|--------------------------|---------|-----------|
-| Tr[Y]                   | 0       | OK        |
-| Tr[Y^3]                 | -16/9   | Nonzero   |
-| Tr[SU(3)^2 Y]           | 1/3     | Nonzero   |
-| Tr[SU(2)^2 Y]           | 0       | OK        |
-| SU(3)^3                 | +2      | Nonzero   |
-| Witten SU(2) (doublets) | 4 (even)| OK        |
+The exact rational traces are:
 
-The Witten row is the nonperturbative global `SU(2)` anomaly count; its
-standalone theorem packaging is `SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md`
-(cross-reference, not a load-bearing upstream dep — the anomaly traces above
-are computed inline in this note).
-The pure color `SU(3)^3` row is the nontrivial cubic gauge anomaly; its
-standalone theorem packaging is `SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md`
-(cross-reference).
-The four perturbative left-handed traces and the LH-only Witten count are
-also packaged as the standalone subtheorem
-`LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md` (cross-reference).
+```text
+Tr[Y]       = 6*(1/3) + 2*(-1)       = 0
+Tr[Y^3]     = 6*(1/3)^3 + 2*(-1)^3   = -16/9
+Tr[SU(3)^2Y]= 2*(1/2)*(1/3)          = 1/3
+Tr[SU(2)^2Y]= 3*(1/2)*(1/3) + (1/2)*(-1) = 0
+Tr[SU(3)^3] = 2
+```
 
-Three anomaly coefficients are nonzero. By the Adler--Bell--Jackiw theorem
-[1,2] (admission (i), bare external admission on current `main`), the
-gauge theory violates unitarity: Ward identities break and longitudinal
-gauge boson modes fail to decouple. The theory is inconsistent as a
-quantum field theory.
+The three non-zero traces are exactly the perturbative obstruction entries
+consumed by the accepted ABJ premise bridge.
 
-*Remark (quantization).* The framework is quantum by assumption (Hilbert
-space axiom). A gauge symmetry that is not consistently quantizable
-contradicts this axiom, so anomaly cancellation is mandatory.
+### 2. ABJ premise and chiral completion
 
-### Step 2. Anomaly cancellation requires a right-handed singlet completion
+The accepted-premise bridge cited above registers the standard ABJ
+anomaly-to-inconsistency implication as `(P1)`. The present theorem does not
+hide that import: `(P1)` is the bounded premise of this closure. On `(P1)`,
+the non-zero anomaly traces are not optional; consistency requires chiral
+completion.
 
-Anomaly cancellation requires adding right-handed fermions. Since
-chirality distinguishes SU(2) doublets (left) from singlets (right),
-the new fermions must be SU(2) singlets. Parametrize them as:
+### 3. Chirality parity
 
-    u_R = (1, 3)_{y_1},  d_R = (1, 3)_{y_2},  e_R = (1, 1)_{y_3},  nu_R = (1, 1)_{y_4}
+The Clifford volume theorem proves the algebraic parity statement:
 
-The anomaly cancellation conditions Tr[Y] = 0, Tr[Y^3] = 0, and
-Tr[SU(3)^2 Y] = 0 for the full (left + right) content yield three
-equations in four unknowns. The cubic equation factors into two branches
-related by relabeling `e_R <-> nu_R`. Imposing the neutral-singlet
-identification `nu_R = 0` selects the Standard Model branch:
+```text
+gamma_5 exists with gamma_5^2 = I and {gamma_5, gamma_mu} = 0 for all mu
+  iff total spacetime dimension d is even.
+```
 
-    y_1 = 4/3,   y_2 = -2/3,   y_3 = -2,   y_4 = 0
+With `d = d_s + d_t` and `d_s = 3`, this means `d_t` is odd.
 
-These are exactly the Standard Model hypercharge assignments. The
-hypercharge anomaly traces, the `SU(3)^3` cubic anomaly, and the Witten
-`SU(2)` count vanish for the completed spectrum. The time theorem only needs
-the existence of an SU(2)-singlet opposite-chirality completion; it does not
-rely on uniqueness from anomaly arithmetic alone.
+### 4. Single-clock exclusion
 
-*Remark (where chirality comes from in this framework).* Per
-[`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md),
-no per-site `gamma_5` exists in Cl(3) (odd-dim Clifford has a central
-volume element, not an anti-commuting chirality). The chirality grading
-used below lives on the staggered lattice — the sublattice parity
-`epsilon(x) := (-1)^{x_1+x_2+x_3}` anticommutes with the staggered Dirac
-operator `{epsilon, D_staggered} = 0` per Step 4 of
-[`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md).
-This is the framework's internal realization of the `gamma_5` chirality
-grading needed for the ABJ trace evaluation, not a bare admission. The
-charge-conjugation role of the same `epsilon(x)` function is established
-separately in `CPT_EXACT_NOTE.md` (`C H C = -H`
-spectral flip); the two roles act on different operator structures and
-do not collide.
+The single-clock codimension-1 theorem supplies one Hamiltonian clock and one
+codimension-1 initial surface for arbitrary admissible local data. Multi-time
+continuum theories with `d_t > 1` require nonlocal compatibility constraints
+on such data. Those constraints are incompatible with the graph-local
+arbitrary-data surface. Therefore `d_t > 1` is excluded on the single-clock
+surface.
 
-### Step 3. Chirality requires even total spacetime dimension
+### 5. Intersection
 
-The right-handed fermions are SU(2) singlets distinguished from
-left-handed doublets by a chirality operator gamma_5. This operator must
-satisfy:
+The ABJ/chirality half gives:
 
-  (a) gamma_5^2 = +I  (involution),
-  (b) {gamma_5, gamma_mu} = 0 for all Dirac matrices gamma_mu.
+```text
+d_t in {1, 3, 5, ...}.
+```
 
-By the classification of Clifford algebras [3]: in Cl(p,q) with
-n = p + q generators, the volume element omega = gamma_1 ... gamma_n
-satisfies
+The single-clock half gives:
 
-    omega gamma_mu = (-1)^{n-1} gamma_mu omega
+```text
+d_t <= 1.
+```
 
-Therefore:
-- **n even:** omega anticommutes with all generators. With appropriate
-  phase normalization, gamma_5 = (phase) * omega satisfies (a) and (b).
-  The spinor representation splits S = S_+ + S_- (Weyl spinors exist).
-- **n odd:** omega commutes with all generators (it is central in the
-  algebra). No element of the Clifford algebra can simultaneously
-  anticommute with all generators. Chirality does not exist.
+Physical time evolution requires `d_t >= 1`. The intersection is exactly:
 
-For d_s = 3 spatial dimensions, chirality requires d_s + d_t even,
-hence d_t must be **odd**: d_t in {1, 3, 5, ...}.
+```text
+d_t = 1.
+```
 
-### Step 4. Single-clock codimension-1 evolution excludes `d_t > 1`
+## Claim Boundary
 
-From Step 3, chirality allows odd `d_t in {1, 3, 5, ...}`. To finish the
-derivation, one uses the framework's single-clock codimension-1 evolution
-structure as derived in
-[`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-(present on `main` as proposed_retained, audit-pending; PR 418 merged
-2026-05-03), which itself follows from retained primitives (RP
-positivity, microcausality, Lieb-Robinson velocity bound, cluster
-decomposition, Cl(3)/Z^3). That theorem fixes:
+This note closes the 3+1 spacetime bridge only on the current accepted-premise
+surface:
 
-- one evolution parameter,
-- one codimension-1 initial surface,
-- arbitrary admissible initial states on that surface,
-- unique deterministic evolution.
+```text
+ABJ accepted premise + chiral matter surface + retained Clifford parity
++ single-clock codimension-1 evolution -> d_t = 1.
+```
 
-For `d_t = 1`, relativistic fields admit the standard hyperbolic Cauchy
-problem on codimension-1 slices, compatible with the single-clock
-structure.
+It does **not** close:
 
-For `d_t > 1`, the existence of multiple inequivalent timelike directions
-contradicts the *single* generator of the unitary one-parameter group
-fixed by the single-clock theorem above: arbitrary local data on a
-codimension-1 slice cannot be propagated by a unique `U(t)` if there is
-more than one independent time direction. So `d_t > 1` is excluded
-*directly* by the single-clock codimension-1 evolution theorem, without
-needing the external classical-PDE ultrahyperbolic obstruction.
+- a first-principles derivation of the ABJ anomaly-to-inconsistency theorem
+  from A1+A2 alone;
+- a non-zero-index standard staggered `epsilon` witness on finite even tori;
+- the audit of the single-clock theorem or any audit-pending upstream source;
+- a route in which observed spacetime dimension is used as an input.
 
-*Remark (what is derived vs. what is inherited — F-B framing, 2026-05-17).*
-Per the hostile audit F-B finding (PR #1262), this proof should make
-explicit which dimensional content comes from ABJ + chirality vs. which
-is inherited from admission (iv). The honest decomposition is:
+It also does not use PDG values, continuum dimensional fitting, the Wilson
+plaquette, `alpha_LM`, Yukawa data, Planck data, or Monte Carlo measurements.
 
-- **Derived from Step 3 (ABJ + chirality):** `d_s + d_t` is even.
-  Combined with `d_s = 3` and the chirality requirement that
-  `gamma_5` exists (`{gamma_5, gamma_mu} = 0`), this forces `d_t` to
-  be a **positive odd integer**: `d_t in {1, 3, 5, ...}`. Step 3 alone
-  does **not** select `d_t = 1` over `d_t = 3, 5, ...`.
+## Audit Handoff
 
-- **Inherited from admission (iv) (the single-clock evolution theorem):**
-  a one-parameter unitary group `U(t) = exp(-itH)` with real parameter
-  `t` and a single codimension-1 initial-data surface. This structure
-  already presupposes a Lorentzian-style real-time evolution (not a
-  Euclidean contraction semigroup, not a multi-time ultrahyperbolic
-  flow). Within that presupposed structure, `d_t > 1` is genuinely
-  excluded by uniqueness of the generator.
+```yaml
+proposed_claim_type: bounded_theorem
+actual_current_surface_status: accepted-premise positive composition
+accepted_premise:
+  id: ABJ anomaly-to-inconsistency for chiral gauge theories
+  route: docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+unbounded_positive_theorem_allowed: false
+why_not_unbounded: >
+  The ABJ anomaly-to-inconsistency implication is registered as an accepted
+  premise rather than derived from A1+A2. The current finite-even-torus
+  staggered epsilon-index route to internalizing it is pruned by a square-block
+  no-go; other internal ABJ routes remain open.
+audit_required_before_effective_status_change: true
+```
 
-- **Net effect:** `d_t = 1` follows by combining the two — Step 3
-  forces `d_t in {odd positives}` and admission (iv) excludes `d_t > 1`.
-  Neither step alone forces `d_t = 1`. The former title "Anomaly
-  forces 3+1 spacetime" was only shorthand for the compound conditional
-  chain; the literal content is "ABJ + chirality + single-clock
-  real-time evolution select `d_t = 1` and hence signature (3,1)"
-  within the stated premises.
-
-Why this matters for audit framing: admission (iv)'s real-time Lorentzian
-presupposition is itself derived in the single-clock theorem from
-retained primitives (reflection positivity, microcausality,
-Lieb-Robinson, cluster decomposition, the physical Cl(3) local algebra,
-and the Z^3 spatial substrate). The chain is
-therefore not circular — but the Lorentzian-signature inheritance
-must be acknowledged at this step rather than hidden inside the
-chain. This Remark surfaces it.
-
-The classical-PDE ultrahyperbolic / multi-time results
-(Craig--Weinstein 2009 [4], Tegmark 1997 [5]) corroborate the same
-exclusion from a complementary continuum-PDE angle: codimension-1
-well-posedness for `d_t > 1` requires extra nonlocal Fourier-space
-support constraints incompatible with arbitrary local data. They are
-retained here as cross-references, not as load-bearing external
-admissions.
-
-Closed timelike curves, Wick-rotation pathologies, and multi-Hamiltonian
-objections remain useful supporting remarks, but they are not the
-load-bearing theorem step.
-
-### Step 5. Conclusion
-
-Combining Steps 1--4, with three previously-bare admissions routed to
-cited companion theorems and admission (i) retained as a bare external
-ABJ admission:
-
-    Cl(3) on Z^3
-      => [NATIVE_GAUGE_CLOSURE_NOTE]
-      => SU(2) x SU(3) x U(1) with left-handed (2,3)_{+1/3} + (2,1)_{-1}
-      => gauge anomaly (Tr[Y^3] != 0)
-      => [bare external admission to ABJ result [1,2]; PR 402 closed without merge]
-      => anomaly cancellation required
-      => [opposite-chirality SU(2)-singlet completion via NATIVE_GAUGE_CLOSURE_NOTE]
-      => chirality operator (gamma_5 role) required
-      => [STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07: sublattice parity epsilon(x) := (-1)^{x_1+x_2+x_3} with {epsilon, D_staggered} = 0]
-      => [NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02: per-site gamma_5 ruled out; chirality lives on staggered lattice instead]
-      => d_total = d_s + d_t must be even
-      => d_t odd, with d_s = 3
-      => [AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03 (on main; PR 418 merged 2026-05-03)]
-      => single-clock codimension-1 evolution excludes d_t > 1
-      => d_t = 1 uniquely
-      => within the stated bridge, spacetime signature is (3,1).  QED.
-
-On current `main`, three of the four bridge premises above are citations
-to companion notes (NATIVE_GAUGE_CLOSURE_NOTE [proposed_retained],
-STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07
-[audit-pending source note] for the chirality grading, single-clock codimension-1
-evolution [proposed_retained]); the fourth (ABJ anomaly-to-inconsistency
-on the lattice) is a bare external admission to references [1,2]. The
-chain has one remaining bare external admission, so the row submits as a
-bounded_theorem (B-class conditional bridge), not as a positive theorem.
-
-**Citation correction 2026-05-17 (per hostile audit F-C finding in PR #1262):**
-The chirality grading premise was previously routed to CPT_EXACT_NOTE.md,
-which only establishes `epsilon(x)` in its charge-conjugation role
-(`C H C = -H`), not as a chirality grading. The correct routing is to
-STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07 Step 4,
-which derives `{epsilon, D_staggered} = 0` from site-chirality assignment
-plus retained no-rooting irreducibility. This correction does not change
-the proof structure or the bounded-theorem submission status; it only
-fixes the citation target for premise (iii).
-
-## Numerical verification
-
-The script `scripts/frontier_anomaly_forces_time.py` verifies the algebraic
-claims computationally: anomaly traces, Clifford algebra relations,
-chirality operator properties in even/odd dimensions, the codimension-1
-constraint witness, and the complete SM charge table. The theorem authority
-is the proof above plus the exact anomaly arithmetic in the runner. The raw
-runner score should not be cited by itself, because a small number of output
-items are explicitly marked as assertions rather than numerical checks.
-
-## References
-
-[1] S. L. Adler, "Axial-vector vertex in spinor electrodynamics,"
-    Phys. Rev. 177, 2426 (1969).
-
-[2] J. S. Bell and R. Jackiw, "A PCAC puzzle: pi0 -> gamma gamma
-    in the sigma model," Nuovo Cim. A 60, 47 (1969).
-
-[3] H. B. Lawson and M.-L. Michelsohn, *Spin Geometry*,
-    Princeton University Press (1989), Ch. I.
-
-[4] W. Craig and S. Weinstein, "On determinism and well-posedness in
-    multiple time dimensions," Proc. Roy. Soc. A 465, 3023 (2009).
-    arXiv:0812.0210.
-
-[5] M. Tegmark, "On the dimensionality of spacetime,"
-    Class. Quant. Grav. 14, L69 (1997). arXiv:gr-qc/9702052.
+The requested audit question is narrow: whether this repaired parent note is
+now a clean bounded theorem / accepted-premise positive composition for
+`d_t = 1`, with all remaining unbounded blockers named explicitly.

@@ -1,0 +1,204 @@
+{
+  "claim": "anomaly-forces-time accepted-premise closure repair",
+  "pass": 26,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "source note contains boundary phrase: **Claim type:** bounded_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains boundary phrase: accepted-premise positive composition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains boundary phrase: unbounded A1+A2 derivation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains boundary phrase: not an unbounded",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains boundary phrase: does not use PDG values",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note contains boundary phrase: square-block no-go",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes stale phrase: no successor companion note lands",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes stale phrase: PR 402 was closed without merge",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes stale phrase: bare external admission on current `main`",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source note excludes stale phrase: propose a retained / positive_theorem promotion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LH Tr[Y] vanishes",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "LH Tr[Y^3] = -16/9",
+      "status": "PASS",
+      "detail": "-16/9"
+    },
+    {
+      "name": "LH Tr[SU(3)^2 Y] = 1/3",
+      "status": "PASS",
+      "detail": "1/3"
+    },
+    {
+      "name": "LH Tr[SU(2)^2 Y] vanishes",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "LH Tr[SU(3)^3] = 2",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "name": "exactly three perturbative obstruction traces are nonzero",
+      "status": "PASS",
+      "detail": "[Fraction(-16, 9), Fraction(1, 3), Fraction(2, 1)]"
+    },
+    {
+      "name": "chirality parity gives positive odd d_t values for d_s=3",
+      "status": "PASS",
+      "detail": "[1, 3, 5, 7, 9, 11]"
+    },
+    {
+      "name": "single-clock exclusion leaves only d_t <= 1 in positive range",
+      "status": "PASS",
+      "detail": "[1]"
+    },
+    {
+      "name": "intersection is exactly d_t = 1",
+      "status": "PASS",
+      "detail": "[1]"
+    },
+    {
+      "name": "ABJ accepted-premise bridge present",
+      "status": "PASS",
+      "detail": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
+    },
+    {
+      "name": "Clifford chirality parity retained",
+      "status": "PASS",
+      "detail": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "name": "single-clock theorem present",
+      "status": "PASS",
+      "detail": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "name": "epsilon-index no-go registered",
+      "status": "PASS",
+      "detail": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+    },
+    {
+      "name": "Clifford parity theorem is currently retained",
+      "status": "PASS",
+      "detail": "retained"
+    },
+    {
+      "name": "ABJ bridge remains bounded_theorem, not hidden positive_theorem",
+      "status": "PASS",
+      "detail": "bounded_theorem"
+    },
+    {
+      "name": "single-clock theorem is present as positive_theorem source row",
+      "status": "PASS",
+      "detail": "positive_theorem"
+    }
+  ],
+  "source_firewall": {
+    "required_phrases": [
+      "**Claim type:** bounded_theorem",
+      "accepted-premise positive composition",
+      "unbounded A1+A2 derivation",
+      "not an unbounded",
+      "does not use PDG values",
+      "square-block no-go"
+    ],
+    "forbidden_phrases": [
+      "no successor companion note lands",
+      "PR 402 was closed without merge",
+      "bare external admission on current `main`",
+      "propose a retained / positive_theorem promotion"
+    ]
+  },
+  "anomaly_traces": {
+    "TrY": "0",
+    "TrY3": "-16/9",
+    "TrSU3Y": "1/3",
+    "TrSU2Y": "0",
+    "TrSU3cubic": "2"
+  },
+  "dimension_intersection": {
+    "d_s": 3,
+    "chirality_allowed_positive_d_t": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "single_clock_allowed_positive_d_t": [
+      1
+    ],
+    "intersection": [
+      1
+    ]
+  },
+  "ledger_rows": {
+    "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26": {
+      "claim_type": "bounded_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md"
+    },
+    "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": {
+      "claim_type": "positive_theorem",
+      "audit_status": "audited_clean",
+      "effective_status": "retained",
+      "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+    },
+    "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": {
+      "claim_type": "positive_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
+    },
+    "abj_epsilon_index_square_block_no_go_note_2026-05-30": {
+      "claim_type": "no_go",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md"
+    }
+  },
+  "verdict": "Accepted-premise positive composition verified: ABJ accepted premise + exact anomaly arithmetic + Clifford chirality parity + single-clock exclusion gives d_t=1. This is bounded on the ABJ accepted premise, not an unbounded A1+A2 derivation of ABJ."
+}

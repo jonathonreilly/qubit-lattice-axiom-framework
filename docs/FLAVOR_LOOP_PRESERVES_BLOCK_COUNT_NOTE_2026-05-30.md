@@ -7,6 +7,13 @@ forcing). Imports nothing.
 Answers the move-3 open question: does the dynamics preserve or collapse the
 covariant block-count measure?
 
+> ⚠️ **RETRACTED in part (see `FLAVOR_ROUTE2_VERDICT_AND_CORRECTIONS_NOTE_2026-05-30`).**
+> The "leptons are **light** → fluctuation-dominated → Q→2/3" mechanism (part B
+> below) is **wrong**: Koide `Q` is **scale-invariant** (`Q(c·m)=Q(m)`), so lepton
+> lightness (an overall-scale fact) cannot move `Q`. What survives: part (A) — the
+> one-loop bubble **preserves** the covariant block-count *measure* (`Π_X ∝ Tr(X²)`),
+> a measure/RG statement independent of the lightness framing.
+
 ## The question
 Move 3: the covariant matrix-field action `Tr(M²)` realizes the **block-count**
 measure → Q=2/3. But the fermion dynamics (3 computations this session) drives the

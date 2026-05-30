@@ -252,6 +252,7 @@ def _run_case(
         "wave": wave_delta,
         "same_ratio": abs(same_delta / inst_delta) if abs(inst_delta) > 1e-30 else 0.0,
         "wave_ratio": abs(wave_delta / inst_delta) if abs(inst_delta) > 1e-30 else 0.0,
+        "wave_same_ratio": abs(wave_delta / same_delta) if abs(same_delta) > 1e-30 else 0.0,
         "wave_minus_same": wave_delta - same_delta,
         "same_eff": same_eff,
         "wave_eff": wave_eff,
@@ -266,7 +267,7 @@ def _run_case(
     }
 
 
-def main() -> None:
+def main() -> int:
     lat = m.Lattice3D.build(NL_PHYS, PW, H)
     source_nodes = _source_cluster_nodes(lat)
     zero_field = [[0.0 for _ in range(lat.npl)] for _ in range(lat.nl)]
@@ -319,7 +320,7 @@ def main() -> None:
         overlaps.append(row["overlap"])
         print(
             f"{s:8.4f} {row['inst']:+12.6e} {row['same']:+12.6e} {row['wave']:+12.6e}"
-            f" {row['phase_lag']:10.3f} {row['overlap']:9.3f} {row['wave_ratio']:10.3f}"
+            f" {row['phase_lag']:10.3f} {row['overlap']:9.3f} {row['wave_same_ratio']:10.3f}"
         )
 
     inst_alpha = _fit_power(SOURCE_STRENGTHS, inst_vals)
@@ -327,8 +328,27 @@ def main() -> None:
     wave_alpha = _fit_power(SOURCE_STRENGTHS, wave_vals)
     toward = sum(1 for v in wave_vals if v > 0)
     mean_phase = sum(phase_lags) / len(phase_lags)
+    mean_abs_phase = sum(abs(v) for v in phase_lags) / len(phase_lags)
     mean_overlap = sum(overlaps) / len(overlaps)
     mean_wave_same = sum(abs(w - s) for w, s in zip(wave_vals, same_vals)) / len(wave_vals)
+    wave_same_ratios = [abs(w / s) for w, s in zip(wave_vals, same_vals) if abs(s) > 1e-30]
+    mean_wave_same_ratio = sum(wave_same_ratios) / len(wave_same_ratios)
+    assertions_ok = (
+        abs(same_zero) < 1e-14
+        and abs(wave_zero) < 1e-14
+        and toward == len(wave_vals)
+        and all(w > s > i > 0.0 for w, s, i in zip(wave_vals, same_vals, inst_vals))
+        and inst_alpha is not None
+        and same_alpha is not None
+        and wave_alpha is not None
+        and abs(inst_alpha - 1.0) < 0.01
+        and abs(same_alpha - 1.0) < 0.01
+        and abs(wave_alpha - 1.0) < 0.02
+        and mean_abs_phase > 1.0
+        and 0.45 < mean_overlap < 0.90
+        and mean_wave_same > 0.25
+        and 33.0 < mean_wave_same_ratio < 34.5
+    )
 
     print()
     print("SAFE READ")
@@ -337,10 +357,15 @@ def main() -> None:
     print(f"  wavefield F~M exponent: {wave_alpha:.2f}" if wave_alpha is not None else "  wavefield F~M exponent: n/a")
     print(f"  TOWARD rows: {toward}/{len(wave_vals)}")
     print(f"  mean detector phase lag at same-site peak: {mean_phase:+.3f} rad")
+    print(f"  mean absolute detector phase lag: {mean_abs_phase:.3f} rad")
     print(f"  mean detector overlap with same-site baseline: {mean_overlap:.3f}")
     print(f"  mean |wave-same| centroid delta: {mean_wave_same:+.6e}")
+    print(f"  mean |wave/same| ratio: {mean_wave_same_ratio:.3f}")
     print("  this is a wavefield pocket, not yet a full self-consistent field theory")
+    print(f"  [{'PASS' if assertions_ok else 'FAIL'} (C)] asserted wavefield Green packet")
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    return 0 if assertions_ok else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

@@ -1,11 +1,12 @@
 # Source-Resolved Wavefield Green Pocket
 
 **Date:** 2026-04-05  
-**Status:** exact-lattice finite-speed wavefield pocket, frozen on the proposed_retained compact family
+**Status:** bounded-support exact-lattice wavefield packet; proposed for independent audit, not audit-ratified.
+**Claim type:** bounded_theorem
 
 ## Artifact chain
 
-- [`scripts/source_resolved_wavefield_green_pocket.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_wavefield_green_pocket.py)
+- [`scripts/source_resolved_wavefield_green_pocket.py`](../scripts/source_resolved_wavefield_green_pocket.py)
 
 ## Question
 
@@ -25,7 +26,7 @@ This probe stays narrow:
 
 ## Frozen result
 
-The frozen pocket uses:
+The asserted pocket uses:
 
 - exact lattice with `h = 0.25`, `W = 3`, `L = 6`
 - interior source placement `source_z = 2.0`
@@ -48,16 +49,16 @@ Frozen readout:
 
 | `s` | instantaneous deflection | same-site deflection | wavefield deflection | phase lag (rad) | overlap | wave/same |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `0.0010` | `+2.050891e-03` | `+2.412419e-03` | `+8.170763e-02` | `-0.484` | `0.991` | `39.840` |
-| `0.0020` | `+4.105409e-03` | `+4.824993e-03` | `+1.639086e-01` | `-0.974` | `0.964` | `39.925` |
-| `0.0040` | `+8.225500e-03` | `+9.650581e-03` | `+3.286071e-01` | `-1.953` | `0.856` | `39.950` |
-| `0.0080` | `+1.651142e-02` | `+1.930336e-02` | `+6.377471e-01` | `+2.417` | `0.496` | `38.625` |
+| `0.0010` | `+2.050891e-03` | `+2.412419e-03` | `+8.170763e-02` | `-0.484` | `0.991` | `33.870` |
+| `0.0020` | `+4.105409e-03` | `+4.824993e-03` | `+1.639086e-01` | `-0.974` | `0.964` | `33.971` |
+| `0.0040` | `+8.225500e-03` | `+9.650581e-03` | `+3.286071e-01` | `-1.953` | `0.856` | `34.050` |
+| `0.0080` | `+1.651142e-02` | `+1.930336e-02` | `+6.377471e-01` | `+2.417` | `0.496` | `33.038` |
 
 Fitted exponents:
 
 - instantaneous `F~M`: `1.00`
 - same-site memory `F~M`: `1.00`
-- wavefield `F~M`: `1.00`
+- wavefield `F~M`: `0.99`
 
 ## Safe read
 
@@ -69,6 +70,8 @@ The strongest bounded statement is:
 - the mass-scaling class stays essentially linear
 - the wavefield produces a measurable phase lag relative to the same-site
   memory control
+- the wavefield response is much larger than the same-site response on this
+  runner-defined finite pocket
 
 ## Honest limitation
 
@@ -78,8 +81,9 @@ This is still a minimal pocket, not a full propagating field theory.
     continuum retarded gravity
   - the detector response is much larger than the same-site baseline, so the
     wavefield is no longer just a tiny centroid/support nudge
-  - the phase lag is real and order `10^-1` rad on average, which is a much
-    more wave-like signal than the previous memory pockets
+  - the signed mean phase lag is order `10^-1` rad, while the mean absolute
+    phase lag is order `1` rad, which is a much more wave-like signal than the
+    previous memory pockets
   - the overlap with same-site memory drops well below 1 on the harder rows,
     so this is a genuine architecture step beyond the earlier exact-lattice
     memory controls
@@ -94,11 +98,37 @@ Treat this as a real bounded positive:
 - the wavefield is distinguishable from the same-site control by a finite
   phase lag and a much larger detector response, making it the strongest
   exact-lattice propagating-field step yet
+- no audit-ratified status is claimed before independent audit
+
+## Current assertion readout
+
+The registered runner now asserts the finite packet:
+
+```text
+zero-source same-site shift: +0.000000e+00
+zero-source wavefield shift: +0.000000e+00
+instantaneous F~M exponent: 1.00
+same-site-memory F~M exponent: 1.00
+wavefield F~M exponent: 0.99
+TOWARD rows: 4/4
+mean absolute detector phase lag: 1.457 rad
+mean detector overlap with same-site baseline: 0.827
+mean |wave-same| centroid delta: +2.939448e-01
+mean |wave/same| ratio: 33.732
+ASSERTIONS: PASS
+```
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This graph-bookkeeping section records the one load-bearing upstream authority
+used by the runner. It does not promote this note or change the audited claim
+scope.
 
-- [source_resolved_propagating_green_pocket_note](SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md)
-- [source_resolved_exact_green_pocket_note](SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
 - [minimal_source_driven_field_probe_note](MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)
+
+The exact-Green and propagating-Green siblings
+`SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md` and
+`SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md` are useful context, but they
+are not load-bearing authorities for this packet: the registered runner
+constructs its own same-site memory and wavefield controls before comparing
+them.

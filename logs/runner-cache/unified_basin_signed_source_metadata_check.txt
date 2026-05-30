@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/unified_basin_signed_source_metadata_check.py
+runner_sha256: c45635b671536d35322255a8eac350d435bcc09e8873bfd8402fbf32d8ded182
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Unified basin signed-source metadata repair
+========================================================================
+
+A. Metadata boundary
+------------------------------------------------------------------------
+PASS: note declares claim_type meta
+PASS: note declares this metadata checker
+PASS: note no longer declares bounded_theorem
+PASS: note does not carry branch-local status authority
+PASS: note says it carries no independent evidence
+PASS: note says archive pointer is not load-bearing
+PASS: note keeps future runner as separate science
+PASS: note explicitly says this metadata row is not numerical support
+
+B. Archive link hygiene
+------------------------------------------------------------------------
+PASS: archive path is plain provenance text, not markdown authority link
+PASS: archive path remains recorded
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=10, FAIL=0
+VERDICT: row is ready to leave the conditional backlog as metadata.
+
+----- stderr -----
+

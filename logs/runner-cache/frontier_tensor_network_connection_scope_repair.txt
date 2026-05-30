@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_tensor_network_connection_scope_repair.py
+runner_sha256: d44fb54c50808d82808abf13946eeb5bb4fe8cf09cf83e46d8b505df2e00b22e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+Tensor network connection scope repair
+========================================================================
+
+A. Note scope
+------------------------------------------------------------------------
+PASS: note declares bounded_theorem
+PASS: note has no branch-local status authority
+PASS: note has primary runner
+PASS: note rejects holographic promotion
+PASS: note states RT fit failure
+PASS: note keeps finite theorem target
+
+B. Runner wording
+------------------------------------------------------------------------
+PASS: runner removes RT pass label
+PASS: runner reports RT formula not derived
+PASS: runner keeps inverse fit as negative diagnostic
+PASS: runner no longer claims holographic dictionary
+
+C. Runner replay
+------------------------------------------------------------------------
+PASS: runner exits cleanly -- returncode=0
+PASS: runner preserves four gates
+PASS: runner prints entropy sweep label
+PASS: runner states RT formula not derived
+PASS: runner reports direct fit beats inverse fit
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=15, FAIL=0
+VERDICT: tensor-network row is ready for bounded re-audit.
+
+----- stderr -----
+

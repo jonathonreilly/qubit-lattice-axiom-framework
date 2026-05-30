@@ -1,0 +1,22 @@
+{
+  "boundary": {
+    "actual_status": "exact-support"
+  },
+  "exponential_chart": {
+    "exponential_chart": "R_h=exp(h epsilon - log E exp(h epsilon))"
+  },
+  "summary": {
+    "actual_current_surface_status": "exact-support",
+    "fail": 0,
+    "pass": 38,
+    "proposal_allowed": false,
+    "trace_class": "direct_blocker_closure_candidate"
+  },
+  "tangent_space": {
+    "primitive_fisher_norm": "1",
+    "primitive_score": "(+1,-1)"
+  },
+  "yt_source": {
+    "yt_component": "1/sqrt(6)"
+  }
+}

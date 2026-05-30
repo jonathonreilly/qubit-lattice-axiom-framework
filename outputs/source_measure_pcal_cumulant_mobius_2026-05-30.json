@@ -1,0 +1,24 @@
+{
+  "boundary": {
+    "actual_status": "exact-support"
+  },
+  "log_connected": {
+    "connected_mixed": "0 under independence",
+    "raw_mixed": "a*b",
+    "second_connected": "variance"
+  },
+  "mobius": {
+    "B3": 5,
+    "kappa3": "2*m1*m2*m3 - m1*m23 - m12*m3 + m123 - m13*m2"
+  },
+  "scale": {
+    "scale_residual": "unit connected two-point normalization selects p=1"
+  },
+  "summary": {
+    "actual_current_surface_status": "exact-support",
+    "fail": 0,
+    "pass": 33,
+    "proposal_allowed": false,
+    "trace_class": "direct_blocker_closure_candidate"
+  }
+}

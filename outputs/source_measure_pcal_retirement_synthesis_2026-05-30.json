@@ -1,0 +1,41 @@
+{
+  "artifacts": {},
+  "runner_outputs": {
+    "cumulant": {
+      "actual_current_surface_status": "exact-support",
+      "fail": 0,
+      "pass": 33,
+      "proposal_allowed": false,
+      "trace_class": "direct_blocker_closure_candidate"
+    },
+    "rn": {
+      "actual_current_surface_status": "exact-support",
+      "bare_retained_allowed": false,
+      "fail": 0,
+      "pass": 56,
+      "proposal_allowed": false,
+      "target_blocker": "P-cal / primitive source-action unit",
+      "trace_class": "direct_blocker_closure_candidate"
+    },
+    "tangent": {
+      "actual_current_surface_status": "exact-support",
+      "fail": 0,
+      "pass": 38,
+      "proposal_allowed": false,
+      "trace_class": "direct_blocker_closure_candidate"
+    }
+  },
+  "summary": {
+    "actual_current_surface_status": "exact-support",
+    "fail": 0,
+    "pass": 36,
+    "proposal_allowed": false,
+    "remaining_residual": "physical source is a smooth sharp-record probability intervention",
+    "trace_class": "direct_blocker_closure_candidate",
+    "yt_lambda_closed_if_single_residual_accepted": true
+  },
+  "synthesis": {
+    "actual_status": "exact-support",
+    "single_residual": "physical source is a smooth sharp-record probability intervention"
+  }
+}

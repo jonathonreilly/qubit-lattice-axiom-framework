@@ -1,0 +1,16 @@
+[PASS] N1 cube angle 2/3 real but value-coincidence (single crossing at r=1/2)
+       cos^2 face=0.6667 edge=0.3333; latitude=Q roots=[-2.   0.5]
+[PASS] N4 M_2(C) idempotent trace/dim ratios are {0,1/2,1}; no 2/3 hostable
+       the only native 2/3 = R[Z3] doublet/total dimension -> Q=1, wrong direction
+[PASS] P1 RP window edges |b|=a/2 (singlet) and |b|=a (doublet), ratio 2:1
+       edges |b|=0.5,1.0
+[PASS] P2 edge-swap involution |b|->(e1 e2)/|b| fixes geometric mean => r=1/2
+       gm |b|=0.707107=1/sqrt2; r_gm=0.500000; swaps 0.5<->1.0
+[PASS] P3 self-dual (geometric) point gives r=1/2; arithmetic midpoint gives r=1/16
+       r(geom)=0.5000, r(arith)=0.0625
+
+SCORECARD PASS=5 FAIL=0
+VERDICT: no native latitude-quantizer among the 4 mechanisms (cube/self-consistency/
+entanglement/Cl3) -- all value-coincidence or endpoint-selecting. POSITIVE LEAD: r=1/2 is
+the geometric-mean self-dual point of the singlet<->doublet reflection-positivity edge-swap
+(fixed for all a). OPEN: is that multiplicative edge-swap a NATIVE duality of the operator?

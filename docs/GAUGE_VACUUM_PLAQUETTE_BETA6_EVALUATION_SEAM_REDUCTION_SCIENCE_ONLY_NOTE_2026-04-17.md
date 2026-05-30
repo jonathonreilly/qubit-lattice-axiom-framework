@@ -1,72 +1,14 @@
-# Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction (Formal Algebraic Lemma)
+# Gauge-Vacuum Plaquette Beta=6 Evaluation-Seam Reduction
 
-**Date:** 2026-04-17 (original); 2026-05-27 (conditional-reduction
-narrowing); 2026-05-28 (further narrowed to a purely formal
-if-premises-then-algebra lemma per audit path (b)).
+**Date:** 2026-04-17 (original); 2026-05-27 (conditional-reduction narrowing).
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome.
-**Status:** purely formal finite-dimensional linear-algebra lemma —
-GIVEN abstract operators `(S, η, K)` on the class-sector space with the
-stated abstract hypotheses, the coefficient relations `z`, `ρ`, `Z(W)`
-follow by linear algebra. The note makes **no claim** that these abstract
-objects ARE the physical β=6 Wilson/Haar kernel/rim; that physical
-identification depends on four unsupplied authorities and is explicitly
-out of scope.
+**Status:** conditional reduction of the beta=6 plaquette PF seam to
+matrix-element evaluation of the cited integral objects, **conditional
+on the full Wilson/Haar one-slab kernel, full-slice rim-lift, and
+untruncated boundary-amplitude theorems being retained inputs**.
 **Runner:** `scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py`
-
-## 2026-05-28 Further narrowing (purely formal algebraic lemma)
-
-The 2026-05-28 audit verdict on the prior (2026-05-27) conditional-reduction
-form was still `audited_conditional`:
-
-> *"The retained one-hop deps cover only the finite transfer witness
-> packet and the finite structural-surface underdetermination no-go. The
-> four authorities that make this an actual β=6 matrix-element reduction
-> remain required-but-unsupplied retained inputs, so the row cannot be
-> retained as closed."*
-
-with the offered repair: re-audit after retained authorities exist for the
-four Wilson/Haar identities, **OR narrow the note further to a purely formal
-if-premises-then-algebra lemma**.
-
-This revision takes the **second path** and completes the reframe the prior
-narrowing only began. The load-bearing content is hereby scoped as a
-**purely formal, finite-dimensional linear-algebra lemma**:
-
-- **In scope (formal lemma, unconditional on any physics):** Let `H` be the
-  finite-dimensional class-sector inner-product space with orthonormal
-  class basis `{χ_(p,q)}`. Let `S` be **any** linear operator on `H`, `η ∈ H`
-  **any** vector, and `K(·)` **any** linear evaluation functional. Define
-  `z_(p,q) = ⟨χ_(p,q), S^{L⊥−1} η⟩`, `ρ_(p,q) = z_(p,q)/z_(0,0)`,
-  `v = Σ z_(p,q) χ_(p,q)`, `Z(W) = ⟨K(W), v⟩`. Then the relations in
-  Theorem 1 / Corollaries 1–2 below hold **by elementary linear algebra**.
-  This is true for arbitrary abstract `(S, η, K)`; it carries **no**
-  Wilson/Haar, β=6, or plaquette content and is conditional on nothing
-  beyond the abstract hypotheses just stated.
-- **Out of scope (the physical identification — NOT claimed here):** that the
-  abstract `S` equals the compressed β=6 Wilson/Haar environment kernel
-  `S_6^env = P_cls K_6^env P_cls`, that `η` equals the β=6 rim lift
-  `η_6 = P_cls B_6`, and that `K(·)` is the canonical Peter–Weyl evaluation
-  vector. Each of those identifications requires the four
-  required-but-unsupplied retained authorities enumerated below
-  (full Wilson/Haar one-slab kernel, full-slice rim-lift, exact kernel/rim
-  compression, exact compressed rim-evaluation). They remain **unsupplied**;
-  the β=6 application is therefore **not** part of this note's load-bearing
-  claim.
-- The runner is a **finite-block structural check of the formal algebra**
-  (it verifies the coefficient relations on small explicit `(S, η, K)`
-  instances); it does **not** derive the four physical Wilson/Haar
-  identities.
-
-Net effect: where the prior form said "conditional reduction of the β=6
-PF seam," this form says "a linear-algebra identity about abstract operators,
-plus an explicitly out-of-scope physical bridge awaiting four authorities."
-The β=6 references throughout the body below are retained only as the
-**intended application** of the formal lemma, and are governed by this
-out-of-scope boundary. No new axiom, import, or retained bridge is
-introduced. Downstream plaquette-lane siblings that cite "the reduction"
-inherit the same formal-lemma + out-of-scope-bridge scope.
 
 ## 2026-05-27 Audit Repair (conditional-reduction narrowing)
 

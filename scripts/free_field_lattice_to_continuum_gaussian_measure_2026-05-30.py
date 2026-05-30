@@ -53,7 +53,7 @@ Checks:
   G6  Honest-residual probe: rung A delivers POINTWISE-in-p (and SO(4)-orbit
       scalar) O(a^2) convergence. The runner shows the smeared (test-function)
       pairing inherits convergence GIVEN a dominating tail bound, and exhibits
-      the dominating envelope |S_a(p)| <= C/(|p_lat|^2 + m^2) used to pass from
+      the dominating envelope ||S_a(p)||_F = 2/sqrt(Delta_a(p)) <= 2/sqrt(m^2 + (2/pi)^2 |p|^2) used to pass from
       pointwise to smeared convergence by dominated convergence -- this is the
       one extra ingredient beyond rung A's bare pointwise statement, recorded
       as the residual the dissolution is conditional on.

@@ -76,6 +76,32 @@ gate). This is the **lattice / transfer-matrix** representation, exhibited on a
 finite carrier and **illustrating** the cited general transfer-matrix construction;
 **no continuum claim is made either way**.
 
+## Scope (honest — three explicit limitations)
+
+- **Operator side is the classically-U-averaged fermion-Fock Gram, not a quantum
+  `H_gauge ⊗ H_ferm` sandwich.** On a finite lattice the gauge field is a c-number
+  integration variable, so the verified equality (checks P0/P1) is between the
+  Berezin path and the **per-configuration fermion-Fock vacuum correlator**
+  `<Ω| c_b e^{-2 Hhat[U]} c_{b'}^† |Ω>`, **identically classically U-averaged** on
+  both sides with the weight `e^{-S_G[U]} det(M[U])` and the Wilson amplitudes
+  `W_b(U)`. The genuine tensor-product `T_full` on `H_gauge ⊗ H_ferm` (with `What_b`
+  a quantum multiplication operator) is exhibited **separately** as the
+  operator-Schmidt-rank diagnostic (C4, rank 6); it is **not** the object the P0
+  equality numerically evaluates, and no literal `H_gauge ⊗ H_ferm`
+  operator-sandwich claim is made.
+- **SU(3) color-mixing is 1-spatial-dimensional only.** Genuine SU(3) color-mixing
+  is exhibited **only on the 1-spatial-dimensional `2×1×1` carrier** (6 modes,
+  rank 3). The multi-spatial-dimensional `2×2×1` sheet runs at **N_c=1 (U(1),
+  abelian)** for Fock-tractability. **No full multi-dimensional SU(3) entangled
+  result is claimed.**
+- **Single-creation observable, not the four-fermion bilinear.**
+  `F = Σ_b W_b(U) χ̄_b` is a Wilson-line-transported **single-creation** staggered
+  bilinear (`Ô|Ω>` is a one-particle state, `<N>=1`). It is **not** the
+  number-conserving four-fermion `χ̄(x) U(x,y) χ(y)`, which annihilates the OS
+  vacuum (a genuine convention obstruction, diagnosed not papered over). The
+  "mixed gauge-fermion-entangled observable" claim is scoped to the single-creation
+  transported bilinear.
+
 ## Why this is NOT the per-mode restatement that sank the prior headline
 
 The prior note `MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`
@@ -309,7 +335,13 @@ What this does not support:
   (Lorentz) restoration (out of scope; no claim either way);
 - the compact-group Wilson-boundary positivity (H1; separate branch);
 - any full interacting staggered + Wilson-fermion RP closure;
-- closure of the per-config fermion 2-step rung (separate audited_conditional row).
+- closure of the per-config fermion 2-step rung (separate audited_conditional row);
+- a literal `H_gauge ⊗ H_ferm` quantum operator-sandwich (the verified P0 object is
+  the classically-U-averaged fermion-Fock Gram; see **Scope** above);
+- multi-spatial-dimensional SU(3) entanglement (SU(3) color-mixing is exhibited on
+  the 1d `2×1×1` carrier only; the `2×2×1` sheet is N_c=1 abelian);
+- the number-conserving four-fermion `χ̄ U χ` observable (which annihilates the OS
+  vacuum; `F` here is a single-creation transported bilinear).
 
 ## Dependencies (load-bearing markdown-link edges)
 

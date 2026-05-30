@@ -1,0 +1,19 @@
+loop_slug: su3-wigner-treewidth-scope-repair-20260530
+status: review_pr_ready
+base: origin/main
+branch: physics-loop/su3-wigner-treewidth-scope-repair-20260530
+target_claim_id: su3_wigner_l3_treewidth_infeasible_2026-05-04
+target_note: docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md
+target_runner: scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py
+audit_blocker_closed: "narrow to the implemented min-degree/min-fill heuristics and repair the 8^30 exponent display"
+repo_effective_status_after_pipeline: unaudited
+audit_queue_ready: true
+actual_current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py --force --push-mode none --allow-non-main --concurrency 1"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+next_exact_action: "Open draft review PR for independent audit extraction."

@@ -80451,10 +80451,10 @@
         "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c1d383e1594f0280d2988cfeb402427daca1565d6ee5c99545401bb28fb7b7a9",
+      "note_hash": "38852c309b7ba446205c277acb69e4b69ba616fa4f3212a5592806606b542c14",
       "path": "docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md",
       "runner_path": "scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py",
-      "title": "SU(3) L_s=3 Cube Exact TN: Treewidth Analysis Shows Naive Contraction Infeasible"
+      "title": "SU(3) L_s=3 Cube Exact TN: Min-Degree/Min-Fill Treewidth Diagnostic"
     },
     "su3_wilson_closed_form_fanout_theorem_note_2026-05-04": {
       "claim_id": "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",

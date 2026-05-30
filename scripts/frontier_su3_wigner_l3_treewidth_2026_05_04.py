@@ -1,4 +1,4 @@
-"""SU(3) Wigner engine — L_s=3 PBC cube treewidth-based contractor.
+"""SU(3) Wigner engine — L_s=3 PBC cube treewidth heuristic diagnostic.
 
 Engineering item #2 from PR #507/#509: implement treewidth-based
 contraction ordering for the L_s=3 PBC cube exact tensor network.
@@ -13,7 +13,9 @@ Approach:
      size in contraction.
   4. Report whether the earlier 8^9 estimate survives the link-graph
      analysis. In this runner it does not: the observed upper bound is
-     29, which makes naive node-elimination infeasible.
+     29, which makes the two tested naive node-elimination heuristics exceed
+     the 4 GB memory budget by a large margin. This is not a certified
+     treewidth lower bound and does not rule out all path optimizers.
 
 Forbidden imports: none (numpy + scipy.special only).
 
@@ -378,7 +380,7 @@ def driver() -> int:
         print(f"  branch-and-bound on small subnetworks).")
         support_count += 1
     else:
-        print(f"  INFEASIBLE: best heuristic gives "
+        print(f"  TESTED HEURISTICS EXCEED BUDGET: best tested heuristic gives "
               f"{best_intermediate_bytes / 1024**3:.1f} GB intermediate, "
               f"exceeds 4 GB budget by "
               f"{best_intermediate_bytes / MEMORY_LIMIT_BYTES:.0f}×.")
@@ -410,7 +412,7 @@ def driver() -> int:
     if best_intermediate_bytes <= MEMORY_LIMIT_BYTES:
         print(f"  Verdict: FEASIBLE — implement contractor next")
     else:
-        print(f"  Verdict: NEEDS BETTER ORDERING or alternative method")
+        print(f"  Verdict: TESTED HEURISTICS NEED BETTER ORDERING or alternative method")
 
     return 0 if fail_count == 0 else 1
 

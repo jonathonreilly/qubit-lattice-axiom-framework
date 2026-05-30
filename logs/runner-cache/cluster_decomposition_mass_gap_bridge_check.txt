@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/cluster_decomposition_mass_gap_bridge_check.py
-runner_sha256: 0f2696b53fb45094c656a77540dea95d7c5e8cc02b33ee14ef5cf55900660d10
+runner_sha256: 370ae4055c497df85870e36357f136e8c3e63b056efb40f9c73b50c9d15517a0
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.18
@@ -11,6 +11,18 @@ status: ok
  Closed-form bridge: gap input → temporal transfer-matrix decay
  Loop: axiom-first-foundations rigorization repair
 ========================================================================
+
+--- E0: B.14 adjoint-placement firewall ---
+  Verify the audited counterexample to the old intermediate line
+  and the corrected Cauchy-Schwarz placement.
+  T = diag(1,0.5), A=|0><1|, B=|1><0|
+  term_abs = |<0|A|1><1|B|0>| = 1.000
+  old wrong ||A|0>|| ||B^†|0>|| = 0.000
+  corrected ||A^†|0>|| ||B|0>|| = 1.000
+  final ||A|| ||B|| bound = 1.000
+  old placement falsified: PASS
+  corrected placement holds: PASS
+  corrected path reaches op-norm bound: PASS
 
 --- E1: spectral identity (B.6) ---
   Verify: <0|A T̃^n B|0> = <0|A|0><0|B|0> + Σ_{k≥1} (λ_k/M_T)^n <0|A|k><k|B|0>
@@ -44,12 +56,13 @@ status: ok
 ========================================================================
  SUMMARY
 ========================================================================
+   E0 (B.14 adjoint-placement firewall): PASS
    E1 (spectral identity B.6): PASS
    E2 (ground-state clustering B.7): PASS
    E3 (thermal trace-distance B.8): PASS
    E4 (no-gap counter-example): PASS
 
-   PASSED: 4/4
+   PASSED: 5/5
 
  verdict: bridge (B.1)–(B.2) verified as closed-form finite-block identity;
           no-gap counter-example confirms gap is required.

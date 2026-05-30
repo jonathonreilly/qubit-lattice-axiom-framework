@@ -125,6 +125,31 @@ Allowed science-branch output:
 - branch-local loop state under `.claude/science/physics-loops/`;
 - review history and handoff notes for later integration.
 
+Forbidden science-branch output (the audit lane is sole authority over
+these; a framework PR that ships them overwrites ratified audit state at
+merge):
+
+- `docs/audit/data/` (any file);
+- `docs/audit/AUDIT_LEDGER.md`, `docs/audit/AUDIT_QUEUE.md`,
+  `docs/audit/MISSING_DERIVATION_PROMPTS.md`;
+- `docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` and
+  `docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`.
+
+`bash docs/audit/scripts/run_pipeline.sh` may be invoked for validation
+(to confirm the source repair is ingested and the runner row queued or
+re-queued as intended), but the regenerated outputs above must be dropped
+before commit:
+
+```bash
+git checkout origin/main -- docs/audit/data/ \
+                            docs/audit/AUDIT_LEDGER.md \
+                            docs/audit/AUDIT_QUEUE.md \
+                            docs/audit/MISSING_DERIVATION_PROMPTS.md \
+                            'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
+                            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+git clean -fd -- docs/audit/data/
+```
+
 Do not weave science results through `README`, `docs/repo/LANE_REGISTRY.yaml`,
 `docs/work_history/repo/LANE_STATUS_BOARD.md`, publication matrices,
 canonical-harness indexes, active review queues, or methodology docs during the

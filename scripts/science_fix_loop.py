@@ -554,6 +554,42 @@ def diff_summary(worktree: Path) -> str:
 
 def commit_and_push(claim_id: str, worktree: Path, branch: str,
                     summary: str) -> tuple[bool, str]:
+    # Framework PRs are forbidden from landing audit-lane outputs (rationale:
+    # the audit lane on main is the sole authority over these surfaces; PRs
+    # that ship them overwrite ratified state at merge). The codex run may
+    # have invoked `bash docs/audit/scripts/run_pipeline.sh` for validation
+    # and left regenerated outputs in the worktree; restore them from
+    # origin/main before staging.
+    audit_lane_paths = [
+        "docs/audit/data/",
+        "docs/audit/AUDIT_LEDGER.md",
+        "docs/audit/AUDIT_QUEUE.md",
+        "docs/audit/MISSING_DERIVATION_PROMPTS.md",
+        "docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md",
+    ]
+    git("checkout", "origin/main", "--", *audit_lane_paths,
+        cwd=worktree, check=False)
+    git("clean", "-fd", "--", "docs/audit/data/",
+        cwd=worktree, check=False)
+    # Glob the effective-status surfaces separately so a missing file does
+    # not abort the multi-path checkout above. Also remove untracked generated
+    # effective-status files that a checkout cannot restore.
+    eff_status_dir = worktree / "docs" / "publication" / "ci3_z3"
+    if eff_status_dir.is_dir():
+        eff_status_files = [
+            str(p.relative_to(worktree))
+            for p in eff_status_dir.glob("*_EFFECTIVE_STATUS.md")
+        ]
+        if eff_status_files:
+            git("checkout", "origin/main", "--", *eff_status_files,
+                cwd=worktree, check=False)
+        for p in eff_status_dir.glob("*_EFFECTIVE_STATUS.md"):
+            rel = str(p.relative_to(worktree))
+            tracked = git("ls-files", "--error-unmatch", rel,
+                          cwd=worktree, check=False)
+            if tracked.returncode != 0:
+                p.unlink()
+
     add = git("add", "-A", cwd=worktree, check=False)
     if add.returncode != 0:
         return False, f"git add failed: {(add.stderr or '').strip()[:200]}"

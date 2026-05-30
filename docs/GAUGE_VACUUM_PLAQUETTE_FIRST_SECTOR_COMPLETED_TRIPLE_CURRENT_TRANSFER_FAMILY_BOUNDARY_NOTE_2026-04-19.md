@@ -1,58 +1,11 @@
 # Gauge-Vacuum Plaquette First-Sector Completed Triple Current Transfer-Family Boundary
 
 **Date:** 2026-04-19 (originally); 2026-05-03 (dense-grid certificate added); 2026-05-10 (scope-narrowed per audit verdict); 2026-05-16 (continuous-box Lipschitz certificate added)
-**Type:** no_go
 **Claim type:** no_go
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py`](../scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py) (dense-grid sampled certificate, PASS=3, FAIL=0)
 **Continuous-box runner:** [`scripts/gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16.py`](../scripts/gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16.py) (adaptive subdivision under empirically validated Lipschitz constants; supports `g(p) > 5e-3` on the continuous box under that stated empirical-Lipschitz assumption, PASS=7, FAIL=0)
 **Companion runner:** [`scripts/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.py`](../scripts/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.py) (original local-perturbation check)
-
-## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The finite sampled-grid statement closes against the provided runner output. The continuous-family no-go does not close because the global Lipschitz constants are empirical finite-difference bounds rather than analytic or interval-certified"*
-
-with repair: *"missing_bridge_theorem: certify the Lipschitz constants analytically or by interval arithmetic, then rerun the continuous-box certificate with those certified bounds."*.
-
-Supplying the named retained authority/bridge is substantive new work, out of
-scope for this repair. This revision takes the **split path**:
-
-- **Load-bearing (in scope):** The runner-certified sampled-grid no-go over the explicit 1440-point dense grid (PASS=3, FAIL=0), establishing that no point in the listed grid realizes the completed first-sector triple with gap below `7.79e-3`; the continuous-box Lipschitz subdivision runner provides conditional support for the continuous-box statement under the empirically validated 2.5x safety-cushion Lipschitz constants.
-- **NON-load-bearing (split off / admitted):** The unconditional continuous-family no-go claim, which requires analytic or interval-arithmetic certification of the Lipschitz constants rather than the empirical finite-difference sup-gradient bounds currently recorded; that certification is the named missing bridge and stays an admitted, not-yet-closed derivation target.
-
-No new axiom, import, or retained bridge is introduced. The runner-verified
-core is the load-bearing content; the named bridge stays an admitted,
-non-load-bearing input until a retained authority for it lands.
-
-## No-Go Discipline Gate (review-loop 2026-05-29)
-
-This gate passes only for the finite sampled-grid no-go. It does **not** pass
-the unconditional continuous-family no-go.
-
-- **N1 alternative routes:** direct 1440-point enumeration is tested; the
-  empirical-Lipschitz subdivision route is conditional support only; analytic
-  Lipschitz or interval-arithmetic certification is the named missing bridge;
-  off-grid continuous minimizers are outside the retained claim; alternate
-  transfer-family parameterizations outside the audited box are outside scope.
-- **N2 wall independence:** the sampled-grid enumeration and the certified
-  continuous-box bridge are independent; closing one does not close the other.
-- **N3 hidden-wall scan:** "continuous", "canonical", and "box" language is
-  non-load-bearing unless tied to the explicit grid or the stated empirical
-  Lipschitz assumption.
-- **N4 residual matching:** the residual retained here is only "no point on
-  the explicit 1440-point grid"; the continuous-box residual is split off.
-- **N5 rhetoric audit:** the negative statement is sampled-grid resolution
-  only, not lattice-wide or continuum-family resolution.
-- **N6 partial-closure path:** analytic derivative bounds or interval
-  arithmetic can retire the continuous-family bridge without a new axiom.
-- **N7 steelman:** a hostile reviewer can correctly object that a finite grid
-  does not exclude an off-grid exact zero; this is accepted and is why the
-  continuous-family no-go is non-load-bearing here.
-- **N8 cross-cycle echo:** the earlier audit already identified the same
-  finite-grid versus continuous-box gap; this repair keeps only the finite
-  runner-backed no-go in scope.
 
 ## Claim
 

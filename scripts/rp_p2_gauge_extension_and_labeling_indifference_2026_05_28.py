@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""RP -> P2: fixed-SU(3) gauge extension + labeling-indifference exhibit.
+"""Fixed-gauge RP transfer positivity + standalone relabeling-invariance exhibit.
 
 In-repo verification companion for
 docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md.
@@ -19,16 +19,12 @@ This runner does TWO independent things, both extending prior work:
     The free case (prior runner) is the U = 1 specialization; this is the
     genuine nontrivial-background extension.
 
-  TASK B -- LABELING-INDIFFERENCE (permutation invariance of det/spec).
-    The RP positivity and the P2 phase-blindness bridge both depend ONLY on
-    det(M_KS + m I) and spec(H_hat) [and Z = Tr e^{-beta H_hat}]. det and
-    spectrum are basis/relabeling invariants. We exhibit this directly:
-    permute / relabel the hw=1 corner-triplet staggered modes by an arbitrary
-    permutation unitary P and verify det(M_KS + m I), spec(H_hat), and
-    Z = Tr(e^{-beta H_hat}) are UNCHANGED to machine precision. Hence RP and
-    P2 cannot depend on substep-(4) AC_phi_lambda (the species LABELING of the
-    hw=1 triplet) at all -- it is a relabeling, and these are relabeling
-    invariants.
+  TASK B -- STANDALONE RELABELING INVARIANCE (permutation invariance of det/spec/Z).
+    We exhibit the finite algebraic fact directly: permute / relabel the
+    hw=1 corner-triplet staggered modes by an arbitrary permutation unitary P
+    and verify det(M_KS + m I), spec(H_hat), and Z = Tr(e^{-beta H_hat}) are
+    UNCHANGED to machine precision. This is only a standalone invariance result;
+    downstream P2 / AC_phi_lambda residual claims are not asserted here.
 
 ----------------------------------------------------------------------------
 PHYSICS OF TASK A (fixed gauge background, temporal gauge, position space)
@@ -111,7 +107,8 @@ SCORECARD
   spectrum invariance     : spec(H_hat) unchanged under hw=1 label permutation
   trace invariance        : Z = Tr(e^{-beta H_hat}) unchanged under hw=1 label perm
 This runner verifies the modal proof, the sampled fixed-gauge exhibits, and the
-labeling-indifference exhibit. Independent audit owns any status verdict.
+standalone relabeling-invariance exhibit. Independent audit owns any status
+verdict.
 """
 from __future__ import annotations
 
@@ -344,7 +341,7 @@ def positivity_over_configs(link_factory, nc: int, Ls: int, m: float, n_cfg: int
 
 
 # ===========================================================================
-# TASK B: labeling-indifference (permutation invariance of det/spec/Z)
+# TASK B: standalone relabeling invariance (permutation invariance of det/spec/Z)
 # ===========================================================================
 
 def permutation_unitary(perm: list[int], block: int = 1) -> np.ndarray:
@@ -380,7 +377,7 @@ def check_labeling_indifference():
     The hw=1 triplet sits inside the staggered mode space; relabeling its three
     states is a conjugation by a permutation unitary P (extended by identity on
     the rest). det, spectrum, and trace are conjugation invariants, so this is
-    an exact identity, exhibited numerically.
+    an exact standalone identity, exhibited numerically.
     """
     import itertools
 
@@ -479,11 +476,11 @@ def check_labeling_indifference():
 
 def main() -> int:
     print("=" * 78)
-    print("RP -> P2: FIXED-SU(3) GAUGE EXTENSION + LABELING-INDIFFERENCE EXHIBIT")
+    print("FIXED-GAUGE RP TRANSFER + STANDALONE RELABELING-INVARIANCE EXHIBIT")
     print("=" * 78)
     print(f"Staggered KS, temporal gauge U_0=1, m={MASS}, eta_0=1, eta_1(t)=(-1)^t.")
     print("Free case (free two-step transfer-matrix positivity row) was U=1 momentum-diagonal; here: fixed SU(3)/U(1),")
-    print("position space, config-by-config.  Labeling-indifference: det/spec/Z")
+    print("position space, config-by-config.  Relabeling invariance: det/spec/Z")
     print("invariant under hw=1 triplet relabeling.")
     print()
 
@@ -561,7 +558,7 @@ def main() -> int:
 
     # ---- Labeling-indifference ----
     print("-" * 78)
-    print("B   LABELING-INDIFFERENCE: det(M_KS+mI), spec(H_hat), Z=Tr(e^{-beta H_hat})")
+    print("B   STANDALONE RELABELING INVARIANCE: det(M_KS+mI), spec(H_hat), Z=Tr(e^{-beta H_hat})")
     print("    invariant under hw=1 triplet relabeling (permutation conjugation)")
     print("-" * 78)
     lab = check_labeling_indifference()
@@ -602,12 +599,10 @@ def main() -> int:
     print("           REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)")
     print("      >= 0,  each factor non-negative.")
     print()
-    print("    RESIDUAL TIGHTENING (refines P2 phase-blindness bridge 'modulo AC_phi_lambda'):")
-    print("    RP positivity & P2 phase-blindness depend only on det(M_KS+mI) and")
-    print("    spec(H_hat) and Z, which are relabeling invariants. So they are")
-    print("    INDEPENDENT of substep-(4) AC_phi_lambda (hw=1 species LABELING).")
-    print("    Their realization dependence is substeps (1) Grassmann + (2) kinetic")
-    print("    structure ONLY -- bounded-closeable candidate (unaudited synthesis).")
+    print("    DOWNSTREAM CONTEXT NOT CLAIMED HERE:")
+    print("    This runner does not close any P2/AC_phi_lambda residual. It only")
+    print("    supplies the finite det/spec/Z relabeling-invariance facts that")
+    print("    downstream rows may cite after separate audit.")
     print()
 
     # ---- Scorecard ----

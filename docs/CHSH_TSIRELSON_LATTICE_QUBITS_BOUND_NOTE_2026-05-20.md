@@ -1,8 +1,12 @@
 # Tsirelson Bound on Lattice Qubit Pairs
 
 **Date:** 2026-05-20
-**Type:** bounded_theorem candidate
+**Date of scope repair:** 2026-05-30
+**Claim type:** bounded_theorem
+**Type:** bounded_theorem
 **Status:** source-side proposal — independent audit lane owns the verdict
+**Primary runner:** [`scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py`](../scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py)
+**Cached runner output:** [`logs/runner-cache/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.txt`](../logs/runner-cache/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.txt)
 **Companion to:** retained
 [`CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md`](CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md)
 (`retained`, positive_theorem). The existing retained note establishes
@@ -60,42 +64,42 @@ of dichotomic self-adjoint single-qubit observables on each site.
 
 ## Step 1 — Tsirelson's algebraic argument
 
-Define
-`C^2 = C · C` where `C` is from (1). Direct expansion using
-`A_i ⊗ B_j` notation:
+Define `C^2 = C · C` where `C` is from (1), and write
+`X = B_1 + B_2`, `Y = B_1 - B_2`, so `C = A_1 ⊗ X + A_2 ⊗ Y`.
+The two site factors commute by tensor locality, but `A_1` need not commute
+with `A_2` and `B_1` need not commute with `B_2`. Direct expansion gives
 
 ```text
-C^2 = (A_1 ⊗ B_1 + A_1 ⊗ B_2 + A_2 ⊗ B_1 − A_2 ⊗ B_2)²                  (3)
+C^2 = A_1^2 ⊗ X^2 + A_2^2 ⊗ Y^2
+      + A_1 A_2 ⊗ X Y + A_2 A_1 ⊗ Y X.                                  (3)
 ```
 
-Expanding and using `[A_i ⊗ 𝟙, 𝟙 ⊗ B_j] = 0` (tensor locality
-splits site factors into commuting factors):
+For dichotomic observables, `A_i^2 = B_j^2 = 𝟙`, hence
 
 ```text
-C^2 = (A_1² + A_2²) ⊗ (B_1² + B_2²) + [A_1, A_2] ⊗ [B_1, B_2]            (4)
+X^2 + Y^2 = (B_1 + B_2)^2 + (B_1 - B_2)^2 = 4𝟙,
+X Y = -[B_1, B_2],       Y X = [B_1, B_2].
 ```
 
-(Tsirelson's 1980 expansion.) For dichotomic observables, `A_i² = 𝟙`
-and `B_j² = 𝟙`. Therefore
+Substitution yields the Landau/Tsirelson square identity for this
+plus/plus/plus/minus CHSH convention:
 
 ```text
-‖A_1² + A_2²‖ ≤ 2,   ‖B_1² + B_2²‖ ≤ 2                                  (5)
+C^2 = 4𝟙 − [A_1, A_2] ⊗ [B_1, B_2].                                      (4)
 ```
 
-For the commutator terms `[A_1, A_2]` and `[B_1, B_2]`, the elementary
-operator-norm bound is:
+For self-adjoint involutions, `‖A_i‖ = ‖B_j‖ = 1`, so the elementary
+submultiplicative norm bound gives
 
 ```text
-‖[A_1, A_2]‖ ≤ 2,   ‖[B_1, B_2]‖ ≤ 2                                    (6)
+‖[A_1, A_2]‖ ≤ ‖A_1 A_2‖ + ‖A_2 A_1‖ ≤ 2,
+‖[B_1, B_2]‖ ≤ ‖B_1 B_2‖ + ‖B_2 B_1‖ ≤ 2.                                (5)
 ```
 
-(Pauli-algebra fact: for `A_1 = σ_1`, `A_2 = σ_2`, the commutator
-`[σ_1, σ_2] = 2iσ_3` has norm 2.)
-
-Combining (4), (5), (6):
+Since `C` is self-adjoint, `‖C‖^2 = ‖C^2‖`. Combining (4) and (5),
 
 ```text
-‖C^2‖ ≤ 2 · 2 + 2 · 2 = 8                                                (7)
+‖C‖^2 = ‖C^2‖ ≤ 4 + ‖[A_1, A_2]‖ ‖[B_1, B_2]‖ ≤ 8.                       (6)
 ```
 
 Therefore `‖C‖ ≤ √8 = 2√2`. ✓
@@ -166,20 +170,23 @@ Tsirelson bound**.
 
 1. **Tensor locality on the qubit lattice** — retained via
    `LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10`.
-2. **Tsirelson 1980 algebraic argument** — standard quantum-information
-   result; the framework cites the standard derivation.
-3. **Standard operator-norm bounds on Pauli commutators** — textbook
-   matrix algebra.
+2. **Landau/Tsirelson square identity and commutator norm bound** — derived
+   above as finite-dimensional operator algebra on the framework two-site
+   tensor surface; Tsirelson 1980 and standard QI texts are cited in parallel,
+   not imported as load-bearing authority.
+3. **Pauli/Bell saturation witness** — verified directly by the companion
+   runner on `M_2(C) ⊗ M_2(C)`.
 
 ## Risk classification
 
-This is a `bounded_theorem` candidate. The argument is textbook
-quantum-information theory (Tsirelson 1980; Nielsen-Chuang Ch.2;
-Watrous Ch.11). The narrow contribution is the explicit
-identification that the framework's qubit-lattice substrate has
-Tsirelson-saturating state-space witnesses while obeying the
-Tsirelson upper bound, situating this CHSH surface between classical
-Bell and super-quantum PR.
+This is a `bounded_theorem` candidate. The proof is finite-dimensional
+operator algebra over the retained two-site tensor surface, with the
+Landau/Tsirelson identity derived explicitly above and checked by the
+companion runner. Tsirelson 1980 and standard quantum-information texts are
+parallel citations. The narrow contribution is the explicit identification
+that the framework's qubit-lattice substrate has Tsirelson-saturating
+state-space witnesses while obeying the Tsirelson upper bound, situating this
+CHSH surface between classical Bell and super-quantum PR.
 
 ## Citation-graph note
 
@@ -192,6 +199,7 @@ Bell and super-quantum PR.
 **Upstream standard-math imports** (named non-derivation):
 
 - Tsirelson 1980 *Lett. Math. Phys.* 4, 93 — original Tsirelson bound proof
+  (parallel citation; the identity is derived in this note)
 - Bell 1964 *Physics* 1, 195 — classical Bell bound (comparison only)
 - Popescu-Rohrlich 1994 *Found. Phys.* 24, 379 — super-quantum PR-box bound (comparison only)
 
@@ -201,7 +209,9 @@ Bell and super-quantum PR.
 
 ## What this file is not
 
-- Not a derivation of Tsirelson's theorem from A1+A2 (the theorem itself is standard QI; the framework cites it)
+- Not a new axiom or imported theorem gate; the pair-wise Tsirelson bound is
+  derived here as finite-dimensional two-site operator algebra, with standard
+  literature cited in parallel
 - Not a multi-party Bell extension
 - Not an experimental claim
 - Not a numerical-prediction change

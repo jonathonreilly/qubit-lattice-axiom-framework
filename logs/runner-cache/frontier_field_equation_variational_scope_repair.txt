@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/frontier_field_equation_variational_scope_repair.py
+runner_sha256: 05c498150d8f18e46fc4829d21e015e6fe08a04133d9f16fbff8149e24af7176
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Field-equation variational scope-repair certificate
+========================================================================
+[PASS] weighted graph Laplacian is symmetric
+[PASS] weighted graph Laplacian has constant-mode row sums zero
+[PASS] graph-gradient quadratic form is nonnegative on test vector (phi^T L phi=366033/134750)
+[PASS] central finite difference equals analytic gradient
+[PASS] constructed source makes chosen phi stationary
+[PASS] mu2=0 Laplacian kills constant mode
+[PASS] mu2>0 removes constant-mode kernel
+[PASS] positive mu2 gives positive quadratic form on constant mode
+[PASS] witness 1: L+mu2 I positive (q=59/12)
+[PASS] witness 2: L+mu2 I positive (q=863/60)
+[PASS] witness 3: L+mu2 I positive (q=12841/20)
+[PASS] witness 4: L+mu2 I positive (q=752603/529200)
+[PASS] source note contains required firewall: not derive or uniquely select that action
+[PASS] source note contains required firewall: does not derive the quadratic action from axioms
+[PASS] source note contains required firewall: does not prove that the mass term is selected rather than supplied
+[PASS] source note contains required firewall: does not prove uniqueness among all local, nonlocal, higher-derivative
+[PASS] source note contains required firewall: Selecting that action remains a separate science target.
+[PASS] source note omits old overclaim: The field equation is NOT purely "chosen by convention."
+[PASS] source note omits old overclaim: Within this restricted class, the screened Poisson equation is the unique
+[PASS] source note omits old overclaim: Einstein's equation reduces
+[PASS] source note omits old overclaim: massive gravity
+SUMMARY: PASS=21 FAIL=0
+
+----- stderr -----
+

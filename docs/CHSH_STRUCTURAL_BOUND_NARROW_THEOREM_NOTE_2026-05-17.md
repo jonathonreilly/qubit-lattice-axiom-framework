@@ -33,8 +33,13 @@ Specifically it proves two separate algebraic facts:
    satisfies `‖S_op‖ ≤ 2√2`, hence `|⟨ψ| S_op |ψ⟩| ≤ 2√2`.
 
 Both bounds are *upper bounds on the maximum |S|*. The classical bound
-is the inequality that local realism enforces; the Tsirelson bound is
-the inequality that any tensor-product Hilbert quantum model enforces.
+is the inequality enforced by Bell-local hidden-variable / deterministic
+classical outcome-assignment models; the Tsirelson bound is the
+inequality that any tensor-product Hilbert quantum model enforces.
+This note deliberately uses "local hidden-variable" for the classical
+CHSH line. It does not use "local-realistic" in the broader
+no-signalling-with-invertible-dynamics model sense discussed by
+Raymond-Robichaud (arXiv:1710.01380).
 
 ## Why this is a G→C **partial** reduction
 
@@ -296,7 +301,8 @@ performs the following exact-precision checks:
 
 - The classical bound (Part 1) is pure combinatorics on `{-1,+1}^4`,
   16-case verifiable, requires zero physics. Including it here is for
-  framework completeness — local-realist models cannot exceed 2.
+  framework completeness — Bell-local hidden-variable models cannot
+  exceed 2.
 - The Tsirelson bound (Part 2) requires only: self-adjoint involutions
   with `‖X‖=1`, tensor-product bipartition giving `[Ã_i, B̃_j]=0`,
   and Born expectation `⟨O⟩=⟨ψ|O|ψ⟩`. All three are retained primitives.
@@ -328,7 +334,8 @@ A2 (Cl(3))               -- retained: cl3_per_site_hilbert_dim_two
                               + saturating witness gives S = 2√2 (Part 3)
 
 Independent classical line:
-{-1,+1}^4 local realism + linearity-of-expectation
+{-1,+1}^4 deterministic local hidden-variable assignments
+    + linearity-of-expectation
                               |
                               v
                          Classical |S| ≤ 2 (Part 1)

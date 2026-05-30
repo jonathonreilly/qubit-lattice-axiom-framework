@@ -15,7 +15,7 @@ Casimir heat kernel on the corner cube Q3 -> generation r = tanh(t)^4
 ========================================================================
 r=1/2 point and the natural-t check
 ========================================================================
-  r=1/2 (Q=2/3) at t=1.2242: tanh(t)=2^(-1/4)=0.8409, b/a=2^(-1/4)=0.7071
+  r=1/2 (Q=2/3) at t=1.2242: b/a=tanh^2(t)=1/sqrt2=0.7071 (tanh t=2^-1/4=0.8409)
   naive t=1 (if Casimir time ~ g_bare=1): Q=0.5576  (NOT 2/3)
   => r=1/2 re-expressed as an unforced heat-kernel time t; no derived t lands here.
 

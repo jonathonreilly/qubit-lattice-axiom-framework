@@ -101970,7 +101970,7 @@
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
-      "direct_in_degree": 12,
+      "direct_in_degree": 13,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
@@ -309812,13 +309812,15 @@
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [],
+      "deps": [
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
       "load_bearing_step": "Lemma 3/4: canonical normalization at beta=6 fixes u(x,y)=(beta/N_c)(N_c-x)+v(y), and P4 excludes the i theta y slot so v=0 within the canonical leading-beta ansatz.",
       "load_bearing_step_class": "B",
@@ -309936,7 +309938,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 10,
         "B": 4,

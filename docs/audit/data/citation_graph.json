@@ -27613,6 +27613,10 @@
       "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
+      "from": "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+    },
+    {
       "from": "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
       "to": "three_generation_structure_note"
     },
@@ -84105,7 +84109,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      ],
       "helper_runner_paths": [],
       "note_hash": "037eabeb377c2729eb8d4ad515cd944a2b751769cfc946b688c2d61b00bde1e5",
       "path": "docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md",
@@ -87878,7 +87884,6 @@
     "weak_coupling_retention_note_2026-04-11",
     "weak_coupling_sign_sensitivity_note_2026-04-11",
     "wide_lattice_h2t_distance_law_note",
-    "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25",
     "wilson_normalization_reconciliation_note_2026-04-11",
     "wilson_two_body_open_note_2026-04-11",
     "wilson_two_body_open_refined_note_2026-04-11",

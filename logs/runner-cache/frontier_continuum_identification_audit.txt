@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_continuum_identification_audit.py
-runner_sha256: 579127ef95faf10db6b5597751ae43a3432d7b678a020d4e47a584f8c287bef8
+runner_sha256: 9ae4b1029d9e91b885530363f9c94bfaaaececa4b2dadd2ee806e9897488fc4c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
-Continuum Identification Audit
+Continuum Identification Inventory Audit
 ========================================================================
 
 === Gravity continuum chain (19 steps) ===
@@ -54,6 +54,8 @@ Continuum Identification Audit
   Gravity chain: 19/19 notes, 19/19 runners
   [PASS] All 19 gravity chain notes present  (19/19)
   [PASS] All 19 gravity chain runners present  (19/19)
+  [PASS] [BOUNDED] Gravity ledger status inventory parsed  (counts={'unaudited': 18, 'retained_bounded': 1}; missing=[])
+  [PASS] [BOUNDED] Gravity content-audit closure is not yet complete on this surface  (retained-like 1/19; counts={'unaudited': 18, 'retained_bounded': 1})
 
 === Gauge continuum chain (8 notes, 5 runners) ===
 
@@ -72,18 +74,20 @@ Continuum Identification Audit
   [PASS] runner: frontier_cpt_exact
   [PASS] All gauge chain notes present  (8/8)
   [PASS] All gauge chain runners present  (5/5)
+  [PASS] [BOUNDED] Gauge ledger status inventory parsed  (counts={'retained': 4, 'decoration_under_graph_first_su3_integration_note': 1, 'unaudited': 2, 'retained_bounded': 1}; missing=[])
+  [PASS] [BOUNDED] Gauge universality/EFT bridge remains a reported obligation  (candidate retained bridges=none found by inventory scan)
 
 === Capstone: continuum identification positioning note ===
 
   [PASS] note: CONTINUUM_IDENTIFICATION_NOTE
 
 ========================================================================
-SUMMARY: PASS=56  FAIL=0
+SUMMARY: PASS=60  FAIL=0
 ========================================================================
 
-All chain notes and runners present.
-Gravity: 19/19 exact steps, no theorem gap.
-Gauge: structural SU(3) + α_s + universality/EFT positioning chain present.
+All inventory notes and runners present.
+Gravity: 19/19 candidate steps present; retained content audit is separate.
+Gauge: structural inventory present; universality/EFT bridge is separate.
 
 ----- stderr -----
 

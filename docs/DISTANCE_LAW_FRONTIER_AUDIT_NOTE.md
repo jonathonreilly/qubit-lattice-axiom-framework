@@ -1,31 +1,7 @@
 # Distance Law Frontier Audit
 
 **Date:** 2026-04-05 (status line rephrased 2026-04-28 per audit-lane verdict)
-**Type:** meta
-**Status authority:** independent audit lane only.
-**Status:** metadata/support index over cited retained-bounded distance-law inputs; no runner registered; not a tier-ratifiable summary on its own.
-
-## 2026-05-28 Audit Repair (reframed as metadata/support index)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The cited distance-law inputs are now retained_bounded, so the summary direction is plausible as metadata. The source itself remains support-level, contains stale unaudited-input status wording, and has no registered runner or explicit rank"*
-
-with repair: *"runner_artifact_issue: if a retained frontier summary is desired, update the stale support note and register a runner or explicit artifact that reproduces the frontier-ranking criteria over the retained bounded distance-law inputs."*.
-
-The auditor's repair allows reframing this row as metadata/support rather than a
-retained theorem. This revision takes that path:
-
-- This note is a **metadata / support index** over the cited retained-bounded
-  inputs. Its summary direction / frontier-ranking / synthesis rows are
-  **non-load-bearing pointers**, not an independently certified result.
-- It does **not** register a runner-backed retained theorem. Any stale
-  "proposed retained" / "unaudited-input" status wording is superseded by this
-  metadata framing; authoritative status for each cited input lives in that
-  input's own retained row.
-
-No new axiom, import, or retained bridge is introduced. The note is a pointer
-surface; nothing here is load-bearing beyond the cited inputs' own authorities.
+**Status:** support / frontier-summary note, no runner registered, depends on three unaudited upstream distance-law notes; not a tier-ratifiable summary on its own.
 
 ## Question
 

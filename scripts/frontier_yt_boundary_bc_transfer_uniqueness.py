@@ -1,42 +1,38 @@
 #!/usr/bin/env python3
-"""Pattern A narrow runner for
+"""Bounded finite-grid diagnostic runner for
 `YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17`.
 
-Verifies the standalone numerical-mathematical statement that the
-backward-RGE map `Phi : y_t(v) -> y_t(M_Pl)` used in claim (iv) of
-`YT_BOUNDARY_THEOREM.md` is well-defined, smooth, strictly monotone,
-locally Lipschitz with a finite numerical constant, free of Landau-pole
-obstruction on `[ln v, ln M_Pl]` for SM-physical initial data in the
-scan interval `X in [0.5, 1.2]`, and therefore admits a UNIQUE root of
-the Ward boundary condition
+Verifies the bounded numerical diagnostic that the backward-RGE map
+`Phi : y_t(v) -> y_t(M_Pl)` used in claim (iv) of `YT_BOUNDARY_THEOREM.md`
+is finite on sampled trajectories, increasing on the runner's finite X-grid,
+has finite observed grid slopes, and has a stable bracketed root of the
+runner's imported Ward boundary target
 
     Phi(X*) = g_lattice / sqrt(6) = 0.43577
 
-in that interval at `X* = 0.97267 +/- 1e-10`.
+near `X* = 0.97267`.
 
-The scan interval is chosen physically: it is strictly below the SM-EFT
-Yukawa Landau-pole-like onset at X_pole ~ 1.27, verified empirically
-in Section 6 (T5).
+The scan interval is below the empirically observed Yukawa blow-up-like onset
+at X_pole ~ 1.27 in Section 6 (T5).
 
-This is a numerical well-definedness theorem about the *mathematical
-device* asserted in claim (iv) of the parent. It does NOT claim that the
-SM EFT is physical at M_Pl. It does NOT claim that the lattice Ward
-identity holds in the SM. It does NOT close the parent yt_boundary_theorem
-row; it slices ONE rigorous well-definedness step out of claim (iv).
+This is not a continuum strict-monotonicity proof and not an exact unique-root
+theorem over every point in [0.5, 1.2]. It does NOT claim that the SM EFT is
+physical at M_Pl. It does NOT claim that the lattice Ward identity holds in
+the SM. It does NOT close the parent yt_boundary_theorem row.
 
 The runner uses the SAME 2-loop SM RGE (`beta_2loop`) and threshold
 machinery (`run_with_thresholds`) as `frontier_yt_boundary_consistency.py`.
 The two runners are independent: the parent runner finds the root and
-exhibits Options A / B / C; this runner verifies that the root is unique
-and that the mapping is well-behaved (monotone, finite-Lipschitz,
-no-blow-up) on the SM-physical scan interval.
+exhibits Options A / B / C; this runner verifies finite-grid root stability
+and sampled well-behavior (grid monotonicity, finite-difference slopes,
+no-blow-up) on the working scan interval.
 
 CHECKS:
-  Section 1: setup + canonical-surface inputs
+  Section 1: setup + imported numeric inputs
   Section 2: (T1) globalness / max|y_t| bounded on [0.5, 1.2]
-  Section 3: (T2) strict monotonicity on 33-point grid
+  Section 3: (T2) finite-grid monotonicity on 33-point grid
   Section 4: (T3) Lipschitz constant L from finite differences
-  Section 5: (T4) unique-root via sign-change + brentq + monotonicity
+  Section 5: (T4) bracketed root stability via sign-change + brentq
   Section 6: (T5) Yukawa-Landau onset at X_pole ~ 1.27
   Section 7: stability of X* under integrator step size
   Section 8: SCORECARD
@@ -78,7 +74,7 @@ M_T_POLE = 172.69           # GeV (PDG 2024); used ONLY as threshold scale, not 
 M_B_MSBAR = 4.18            # GeV
 M_C_MSBAR = 1.27            # GeV
 
-# Framework-derived values (retained canonical surface)
+# Imported implementation constants for the bounded diagnostic.
 PLAQ = CANONICAL_PLAQUETTE
 U0 = CANONICAL_U0
 ALPHA_BARE = CANONICAL_ALPHA_BARE
@@ -110,7 +106,7 @@ G1_V = np.sqrt(4 * PI / inv_a1_v)
 G2_V = np.sqrt(4 * PI / inv_a2_v)
 LAMBDA_V = 0.129
 
-# Scan interval (SM-physical scan range; strictly below Yukawa-Landau-like onset)
+# Working scan interval, below the sampled Yukawa blow-up-like onset.
 X_LOW = 0.5
 X_HIGH = 1.2
 
@@ -299,17 +295,17 @@ def max_yt_on_trajectory(X, max_step=1.0):
 
 # =====================================================================
 print("=" * 78)
-print("BOUNDARY BC-TRANSFER UNIQUENESS THEOREM")
+print("BOUNDARY BC-TRANSFER FINITE-GRID DIAGNOSTIC")
 print("=" * 78)
 print()
 t0 = time.time()
 
 # =====================================================================
 log("=" * 78)
-log("SECTION 1: Canonical-surface inputs")
+log("SECTION 1: Imported numeric inputs")
 log("=" * 78)
 log()
-log(f"  alpha_LM             = {ALPHA_LM:.6f}     (retained, alpha_bare/u_0)")
+log(f"  alpha_LM             = {ALPHA_LM:.6f}     (imported from canonical_plaquette_surface)")
 log(f"  alpha_s(v) = CMT     = {ALPHA_S_V:.6f}     (block 10 narrow, alpha_bare/u_0^2)")
 log(f"  g_lattice(M_Pl)      = {G_LATTICE:.6f}     (sqrt(4 pi alpha_LM))")
 log(f"  Ward target y_t(M_Pl) = g_lattice/sqrt(6)  = {WARD_TARGET:.6f}")
@@ -383,10 +379,10 @@ log()
 
 # =====================================================================
 log("=" * 78)
-log("SECTION 3: (T2) Strict monotonicity on 33-point grid")
+log("SECTION 3: (T2) Finite-grid monotonicity on 33-point grid")
 log("=" * 78)
 log()
-log("  Compute Phi on a fine X-grid; verify strict monotonicity by finite differences.")
+log("  Compute Phi on a finite X-grid; verify all sampled forward differences are positive.")
 log()
 
 X_grid_fine = np.linspace(X_LOW, X_HIGH, 33)
@@ -403,14 +399,14 @@ n_increasing = int(np.sum(diffs > 0))
 n_decreasing = int(np.sum(diffs <= 0))
 
 log(f"  Of {len(diffs)} forward differences:")
-log(f"    {n_increasing} strictly increasing")
+log(f"    {n_increasing} positive forward differences")
 log(f"    {n_decreasing} non-increasing")
 log()
 
 check(
-    "T2_strict_monotonicity",
+    "T2_grid_monotonicity",
     n_decreasing == 0 and n_increasing == len(diffs),
-    f"All {len(diffs)} forward differences > 0 (strictly increasing on 33-point grid)",
+    f"All {len(diffs)} sampled forward differences > 0 on the 33-point grid",
 )
 check(
     "T2_endpoint_ordering",
@@ -470,7 +466,7 @@ check(
 check(
     "T3_lipschitz_global_below_bound",
     L_observed_global < L_BOUND_GLOBAL,
-    f"L_observed_global = {L_observed_global:.4f} < {L_BOUND_GLOBAL} (claimed bound)",
+    f"L_observed_global = {L_observed_global:.4f} < {L_BOUND_GLOBAL} (declared diagnostic bound)",
 )
 check(
     "T3_lipschitz_lower_bound_positive",
@@ -480,14 +476,14 @@ check(
 check(
     "T3_lipschitz_near_root_below_bound",
     L_observed_near < L_BOUND_NEAR_ROOT,
-    f"L_observed_near = {L_observed_near:.4f} < {L_BOUND_NEAR_ROOT} (claimed near-root bound)",
+    f"L_observed_near = {L_observed_near:.4f} < {L_BOUND_NEAR_ROOT} (declared near-root diagnostic bound)",
 )
 log()
 
 
 # =====================================================================
 log("=" * 78)
-log("SECTION 5: (T4) Unique-root via sign-change + brentq + monotonicity")
+log("SECTION 5: (T4) Bracketed root stability via sign-change + brentq")
 log("=" * 78)
 log()
 log("  Sign change: verify Phi(X_LOW) < WARD_TARGET < Phi(X_HIGH)")
@@ -514,8 +510,8 @@ log(f"                                  Phi(X*) = {Phi(X_star_full):.10f}")
 log(f"                                  residual = {Phi(X_star_full) - WARD_TARGET:.2e}")
 log()
 
-# Verify uniqueness by also finding root on three different subintervals
-# that each contain X*:
+# Check root stability by also finding the bracketed root on three different
+# sign-changing subintervals that each contain X*:
 subintervals = [
     (X_LOW, 1.1),
     (0.7, X_HIGH),
@@ -545,11 +541,11 @@ check(
     f"All {len(sub_roots)} sub-roots agree to {max_root_spread:.2e}",
 )
 
-unique_root_claim = (n_decreasing == 0) and sign_change
+root_stability_claim = (n_decreasing == 0) and sign_change and max_root_spread < 1e-7
 check(
-    "T4_unique_root_from_T2_plus_signchange",
-    unique_root_claim,
-    "Monotonicity (T2) + sign change on [X_LOW, X_HIGH] => unique root",
+    "T4_grid_root_bracketed_by_sampled_monotonicity",
+    root_stability_claim,
+    "Sampled monotonicity + sign change + subinterval agreement support a stable bracketed root; not a continuum uniqueness proof",
 )
 
 # Numerical value of X*
@@ -567,8 +563,8 @@ log("SECTION 6: (T5) Yukawa-Landau onset at X_pole ~ 1.27")
 log("=" * 78)
 log()
 log("  Extend the scan into [1.20, 1.30] and locate the Yukawa-Landau-like")
-log("  onset to verify that the chosen scan interval [0.5, 1.2] is the maximal")
-log("  well-defined range below the pole.")
+log("  onset to verify that the chosen scan interval [0.5, 1.2] lies below")
+log("  the sampled blow-up-like region.")
 log()
 
 X_ext = np.arange(X_EXT_LOW, X_EXT_HIGH + 0.001, 0.01)
@@ -656,15 +652,15 @@ log()
 log(f"  Verified properties on scan interval X in [{X_LOW}, {X_HIGH}]:")
 log()
 log(f"    (T1) Globalness:        YES  (max|y_t| <= {max_yt_arr.max():.4f})")
-log(f"    (T2) Monotonicity:      YES  (strict on 33-point grid; min diff > 0)")
+log(f"    (T2) Grid monotonicity: YES  (positive on 33-point grid; min diff > 0)")
 log(f"    (T3) Lipschitz global:  L_observed = {L_observed_global:.4f}")
 log(f"    (T3) Lipschitz near root: L_observed_near = {L_observed_near:.4f}")
-log(f"    (T4) Unique root:       X* = {X_star_full:.6f}")
+log(f"    (T4) Root diagnostic:   X* = {X_star_full:.6f}")
 log(f"                             Phi(X*) = {Phi(X_star_full):.6f}")
 log(f"    (T5) Yukawa-Landau:     X_pole ~ {X_pole:.3f} (extension scan)")
 log()
-log(f"  This positively closes the WELL-DEFINEDNESS prerequisite for claim (iv)")
-log(f"  of YT_BOUNDARY_THEOREM.md (BC-transfer selects a unique trajectory).")
+log(f"  This supports the bounded finite-grid diagnostic for the BC-transfer map.")
+log(f"  It does NOT prove continuum uniqueness or close YT_BOUNDARY_THEOREM.md.")
 log()
 log(f"  Does NOT touch:")
 log(f"    - parent claim (i)  domain separation        (interpretive)")

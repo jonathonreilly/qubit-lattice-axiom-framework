@@ -1,20 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
-runner_sha256: 01580e906465246e9681e2e31a9aed7c2be8545b93525909f22091f25f1cf018
+runner_sha256: f0b5a83183264529a34c2935a585b2c620eb0ec8ef8455da6c70ba27cb190370
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.49
+elapsed_sec: 1.01
 status: ok
 ----- stdout -----
 ==============================================================================
-BOUNDARY BC-TRANSFER UNIQUENESS THEOREM
+BOUNDARY BC-TRANSFER FINITE-GRID DIAGNOSTIC
 ==============================================================================
 
 ==============================================================================
-SECTION 1: Canonical-surface inputs
+SECTION 1: Imported numeric inputs
 ==============================================================================
 
-  alpha_LM             = 0.090668     (retained, alpha_bare/u_0)
+  alpha_LM             = 0.090668     (imported from canonical_plaquette_surface)
   alpha_s(v) = CMT     = 0.103304     (block 10 narrow, alpha_bare/u_0^2)
   g_lattice(M_Pl)      = 1.067411     (sqrt(4 pi alpha_LM))
   Ward target y_t(M_Pl) = g_lattice/sqrt(6)  = 0.435769
@@ -58,10 +58,10 @@ SECTION 2: (T1) Globalness / max|y_t| bounded on [0.5, 1.2]
          max|y_t| at endpoints tracks X (no spurious amplification at low X)
 
 ==============================================================================
-SECTION 3: (T2) Strict monotonicity on 33-point grid
+SECTION 3: (T2) Finite-grid monotonicity on 33-point grid
 ==============================================================================
 
-  Compute Phi on a fine X-grid; verify strict monotonicity by finite differences.
+  Compute Phi on a finite X-grid; verify all sampled forward differences are positive.
 
   Sample of (X, Phi(X)):
     X = 0.5000  ->  Phi = 0.156803
@@ -76,11 +76,11 @@ SECTION 3: (T2) Strict monotonicity on 33-point grid
     X = 1.2000  ->  Phi = 1.033817
 
   Of 32 forward differences:
-    32 strictly increasing
+    32 positive forward differences
     0 non-increasing
 
-  [PASS (D)] T2_strict_monotonicity
-         All 32 forward differences > 0 (strictly increasing on 33-point grid)
+  [PASS (D)] T2_grid_monotonicity
+         All 32 sampled forward differences > 0 on the 33-point grid
   [PASS (D)] T2_endpoint_ordering
          Phi(0.5) = 0.156803 < Phi(1.2) = 1.033817
   [PASS (D)] T2_min_forward_diff_positive
@@ -109,14 +109,14 @@ SECTION 4: (T3) Lipschitz constant L from finite differences
   [PASS (D)] T3_lipschitz_finite_global
          L_observed_global = 6.2692 (finite, positive)
   [PASS (D)] T3_lipschitz_global_below_bound
-         L_observed_global = 6.2692 < 10.0 (claimed bound)
+         L_observed_global = 6.2692 < 10.0 (declared diagnostic bound)
   [PASS (D)] T3_lipschitz_lower_bound_positive
          min local L = 0.3760 > 0 (no zero-derivative points)
   [PASS (D)] T3_lipschitz_near_root_below_bound
-         L_observed_near = 1.2071 < 1.5 (claimed near-root bound)
+         L_observed_near = 1.2071 < 1.5 (declared near-root diagnostic bound)
 
 ==============================================================================
-SECTION 5: (T4) Unique-root via sign-change + brentq + monotonicity
+SECTION 5: (T4) Bracketed root stability via sign-change + brentq
 ==============================================================================
 
   Sign change: verify Phi(X_LOW) < WARD_TARGET < Phi(X_HIGH)
@@ -140,8 +140,8 @@ SECTION 5: (T4) Unique-root via sign-change + brentq + monotonicity
 
   [PASS (D)] T4_all_subintervals_with_signchange_agree
          All 3 sub-roots agree to 5.31e-13
-  [PASS (D)] T4_unique_root_from_T2_plus_signchange
-         Monotonicity (T2) + sign change on [X_LOW, X_HIGH] => unique root
+  [PASS (D)] T4_grid_root_bracketed_by_sampled_monotonicity
+         Sampled monotonicity + sign change + subinterval agreement support a stable bracketed root; not a continuum uniqueness proof
   [PASS (D)] T4_X_star_value_near_0p973
          X* = 0.972672 matches parent runner value 0.973 (to 5e-3)
 
@@ -150,8 +150,8 @@ SECTION 6: (T5) Yukawa-Landau onset at X_pole ~ 1.27
 ==============================================================================
 
   Extend the scan into [1.20, 1.30] and locate the Yukawa-Landau-like
-  onset to verify that the chosen scan interval [0.5, 1.2] is the maximal
-  well-defined range below the pole.
+  onset to verify that the chosen scan interval [0.5, 1.2] lies below
+  the sampled blow-up-like region.
 
   Extension scan in [1.2, 1.3]:
     X = 1.200:  Phi =    1.034    max|y_t| =     1.200
@@ -204,22 +204,22 @@ SECTION 8: SCORECARD
   Verified properties on scan interval X in [0.5, 1.2]:
 
     (T1) Globalness:        YES  (max|y_t| <= 1.2000)
-    (T2) Monotonicity:      YES  (strict on 33-point grid; min diff > 0)
+    (T2) Grid monotonicity: YES  (positive on 33-point grid; min diff > 0)
     (T3) Lipschitz global:  L_observed = 6.2692
     (T3) Lipschitz near root: L_observed_near = 1.2071
-    (T4) Unique root:       X* = 0.972672
+    (T4) Root diagnostic:   X* = 0.972672
                              Phi(X*) = 0.435769
     (T5) Yukawa-Landau:     X_pole ~ 1.280 (extension scan)
 
-  This positively closes the WELL-DEFINEDNESS prerequisite for claim (iv)
-  of YT_BOUNDARY_THEOREM.md (BC-transfer selects a unique trajectory).
+  This supports the bounded finite-grid diagnostic for the BC-transfer map.
+  It does NOT prove continuum uniqueness or close YT_BOUNDARY_THEOREM.md.
 
   Does NOT touch:
     - parent claim (i)  domain separation        (interpretive)
     - parent claim (iii) Ward-identity domain     (interpretive)
     - parent claim (v)  non-perturbative bridge  (interpretive)
 
-  Elapsed: 0.8s
+  Elapsed: 0.5s
 
   Counts: 23 PASS, 0 FAIL
 

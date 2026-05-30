@@ -1,4 +1,4 @@
-# yt Boundary BC-Transfer Uniqueness Narrow Theorem (Backward-RGE Monotonicity)
+# yt Boundary BC-Transfer Finite-Grid Diagnostic (Backward-RGE)
 
 **Date:** 2026-05-17
 **Type:** bounded_theorem
@@ -54,245 +54,87 @@ non-binding.
 
 ## Authority role
 
-Pattern A numerical narrow rescope of the load-bearing well-definedness step
-inside the parent `yt_boundary_theorem` row (currently `unaudited`, score
-16.268, in_degree 13). The broad parent additionally bundles the
-interpretive **domain-separation** claim (i), the **Ward-identity-domain**
-claim (iii), and the **non-perturbative-bridge** claim (v). This narrow
-theorem isolates only the BC-transfer well-definedness piece of claim (iv).
-Claims (i), (iii), and (v) remain in the parent's scope; they are not
-re-derived here.
+The 2026-05-27 audit recorded that the previous packet overstated two things:
 
-## Statement
+- it elevated finite-grid monotonicity plus `brentq` checks to exact continuum strict monotonicity and exactly one root on the whole interval;
+- it treated imported canonical plaquette/coupling values and the Ward boundary target as retained physical BC-transfer authority beyond the audited scopes of the cited rows.
 
-Let the 5-channel 2-loop SM RGE be the standard `(g1, g2, g3, y_t, lambda)`
-system with the 1-loop and 2-loop beta coefficients reproduced verbatim from
-`scripts/frontier_yt_boundary_consistency.py` (the existing canonical-surface
-runner; see its `beta_2loop` block for the full coefficients). Let the
-initial-condition surface at `t_v = ln v_derived` be:
+This repair keeps the useful science and removes the overclaim. The row is now a bounded finite-grid numerical diagnostic for the coded 5-channel two-loop SM RGE setup. It is explicitly conditional on imported implementation constants and on the Ward target used by the runner. It does not assert a retained physical boundary-transfer theorem.
+
+## Bounded Claim
+
+For the runner implementation in `scripts/frontier_yt_boundary_bc_transfer_uniqueness.py`, define
 
 ```text
-g1(v) = g1_v   (from M_Z 1-loop EW running, fixed)                       (I1)
-g2(v) = g2_v   (from M_Z 1-loop EW running, fixed)                       (I2)
-g3(v) = sqrt(4 pi * alpha_bare / u_0^2)   (Coupling Map Theorem)         (I3)
-lambda(v) = 0.129  (Higgs quartic at v, fixed)                           (I4)
-y_t(v) = X       (the scan variable, X in [0.5, 1.2])                    (I5)
+Phi(X) := y_t(M_Pl)
 ```
 
-with `v_derived = M_Pl * C * alpha_LM^16` from the hierarchy theorem and
-the threshold matching at `M_T_POLE, M_B_MSBAR, M_C_MSBAR` exactly as in the
-parent runner. Let `Phi : [0.5, 1.2] -> R` be the backward-RGE map
+by integrating the coded `(g1, g2, g3, y_t, lambda)` two-loop SM RGE from `t_v = ln(v_derived)` to `t_Pl = ln(M_Pl)` with initial condition `y_t(v) = X`.
+
+On the sampled interval `X in [0.5, 1.2]`, using the runner's imported constants from `scripts/canonical_plaquette_surface.py` and the runner's Ward target
 
 ```text
-Phi(X)  :=  y_t(M_Pl) achieved by integrating the SM RGE from t_v to t_Pl   (M)
-            with initial condition (I1)-(I5) at X.
+WARD_TARGET = g_lattice / sqrt(6),
 ```
 
-Then the four numerical-mathematical properties
+the companion runner verifies the following finite diagnostics:
 
 ```text
-(T1)  globalness:    Phi is well-defined on [0.5, 1.2];                 (T1)
-                     the trajectory remains bounded with no integrator
-                     blow-up on [ln v_derived, ln M_Pl] for any X in the
-                     range, with empirical max|y_t| <= X + 0.03 on the
-                     trajectory across the working grid (no upward
-                     amplification).
-
-(T2)  monotonicity:  Phi is strictly monotone increasing on [0.5, 1.2]. (T2)
-
-(T3)  lipschitz:     |Phi(X1) - Phi(X2)| <= L * |X1 - X2|                (T3)
-                     for some finite L on [0.5, 1.2], with L numerically
-                     measured at L_observed <= 10 on the working grid,
-                     and L_observed_near_root ~ 1 in a tight
-                     neighborhood of X*.
-
-(T4)  unique-root:   the Ward boundary condition                         (T4)
-                          Phi(X*) = g_lattice / sqrt(6) = 0.43577
-                     has EXACTLY ONE solution X* in [0.5, 1.2], with
-                     X* = 0.97267 (verified to 1e-10).
-
-(T5)  scan-boundary  the Yukawa-RGE Landau-pole-like onset under         (T5)
-      well-defined: backward extrapolation occurs at X_pole ~ 1.27
-                     (verified empirically); the scan interval [0.5, 1.2]
-                     stays strictly below this onset.
+(T1) sampled globalness: every sampled trajectory is finite on the integration segment.
+(T2) finite-grid monotonicity: Phi is increasing on the 33-point X grid used by the runner.
+(T3) finite-difference Lipschitz diagnostics: observed grid slopes are finite and bounded by the declared numerical thresholds.
+(T4) bracketed root stability: brentq finds the same root near X = 0.97267 on the full interval and on three sign-changing subintervals.
+(T5) extension-scan boundary: the sampled extension to X in [1.20, 1.30] shows a Yukawa-Landau-like onset above the working scan interval.
 ```
 
-hold for the 5-channel 2-loop SM beta system with the threshold structure
-specified above.
+This is the whole source-side claim. The branch intentionally does not promote `(T2)` to continuum strict monotonicity and does not promote `(T4)` to exact uniqueness for all real `X` in `[0.5, 1.2]`.
 
-## Proof
+## Imported Inputs
 
-**(T1) Globalness / no integrator blow-up.** The SM 1-loop gauge beta
-coefficients on the segment `[ln v, ln M_Pl]` are
-`(b1_1, b2_1, b3_1) = (41/10, -19/6, -7)` (for `n_f = 6` above `M_T_POLE`).
-With the initial conditions at `t_v`:
+The following are implementation inputs for this bounded diagnostic, not retained proof authorities supplied by this note:
+
+- `CANONICAL_PLAQUETTE`, `CANONICAL_U0`, `CANONICAL_ALPHA_BARE`, `CANONICAL_ALPHA_LM`, and `CANONICAL_ALPHA_S_V` from `scripts/canonical_plaquette_surface.py`.
+- `WARD_TARGET = g_lattice / sqrt(6)` as the target boundary value used by the runner.
+- The two-loop SM RGE coefficients and threshold procedure copied into the runner from the existing YT consistency implementation.
+- The fixed threshold scales used by the runner (`M_T_POLE`, `M_B_MSBAR`, `M_C_MSBAR`) as numerical RGE seeds, not fitted proof targets.
+
+No PDG observable value is consumed by the load-bearing pass/fail checks. The runner may print familiar scales for context, but the checks evaluate only the coded diagnostic.
+
+## What This Row Does Not Claim
+
+- It does not prove continuum strict monotonicity of `Phi` on every point of `[0.5, 1.2]`.
+- It does not prove an exact unique root theorem on the continuum interval.
+- It does not prove that the SM EFT is physical at `M_Pl`.
+- It does not prove that the lattice Ward identity holds in the SM.
+- It does not prove or import retained canonical plaquette/coupling-surface authority for the numerical constants used by the runner.
+- It does not close the parent `yt_boundary_theorem` row.
+
+## Runner Evidence
+
+The runner performs 23 pass/fail checks:
+
+- setup and imported-input consistency checks;
+- finite trajectory checks on a coarse `X` grid;
+- finite-grid monotonicity checks on a 33-point `X` grid;
+- finite-difference slope / Lipschitz diagnostics;
+- `brentq` root agreement across the full interval and three sign-changing subintervals;
+- extension scan locating a blow-up-like onset above the working interval;
+- root stability under multiple integrator `max_step` choices.
+
+Expected result:
 
 ```text
-g1(v) ~ 0.36,   g2(v) ~ 0.65,   g3(v) ~ 1.14,   y_t(v) in [0.5, 1.2],   lambda(v) ~ 0.13.
+Counts: 23 PASS, 0 FAIL
 ```
 
-`g_3` and `g_2` are asymptotically free under upward running and DECREASE
-toward `M_Pl`. `g_1` is NOT asymptotically free, but its initial value is
-small (`g1(v) ~ 0.36`) and the 17-decade run is well within the
-lattice-perturbative domain; the SM `g_1` Landau pole (`mu_Landau ~ 10^41
-GeV`) lies well above `M_Pl ~ 10^19 GeV`. The dominant amplification channel
-in the upward direction is the Yukawa self-coupling `9/2 * y_t^2` on the
-right-hand side, which can drive `y_t` toward a Landau-pole-like blow-up at
-sufficiently large initial `X`. The runner empirically locates this
-Yukawa-Landau onset at `X_pole ~ 1.27` (see (T5)). On the scan interval
-`[0.5, 1.2]` strictly below `X_pole`, the trajectory is bounded with max
-`|y_t|` <= `X + 0.03` on the trajectory across the working grid -- i.e. no
-upward amplification beyond the initial value within ~3% tolerance
-(verified in runner Section 2).
+## Audit Graph Hygiene
 
-**(T2) Monotonicity.** Define `Psi(t, X) := y_t(t)` as the integrated
-trajectory with initial condition `y_t(v) = X`. The 1-loop Yukawa beta on
-the leading direction is
+This repaired note intentionally has no markdown links to source-note authority rows for the imported plaquette or Ward values. The constants remain visible as imported implementation inputs, and the Python helper import remains visible through the registered runner path. The audit lane can decide whether this bounded finite-grid diagnostic is useful, but the source graph should not treat upstream YT/plaquette rows as load-bearing retained authorities for a stronger theorem.
 
-```text
-beta_y_t = y_t * (9/2 * y_t^2 - 8 g_3^2 + subleading EW).               (B1)
-```
+## Cross-References
 
-The Jacobian `d Psi / d X` at fixed `t` satisfies the linearized RGE
+Non-load-bearing context only:
 
-```text
-d/dt (d Psi/dX) = (d beta_y_t / d y_t) * (d Psi/dX) + couplings to gauge.
-```
-
-For the SM near the working point, `(d beta_y_t / d y_t)` evaluated at the
-working trajectory is dominated by the `13.5 * y_t^2 - 8 g_3^2` linearization
-plus 2-loop terms. Sign and magnitude of this evolution are sampled
-numerically (in the runner) on a 33-point grid; the sample shows the
-linearization preserves sign of the initial perturbation `d Psi/dX > 0`
-throughout the integration: any positive perturbation in `y_t(v)` yields a
-positive perturbation in `y_t(t)` for all `t in [t_v, t_Pl]`. Hence
-`Phi(X) = y_t(t_Pl; X)` is strictly increasing on `[0.5, 1.2]`.
-
-This is verified empirically in the runner by computing `Phi` on a 33-point
-grid and checking strict monotonicity by finite differences (all 32 forward
-differences positive).
-
-**(T3) Lipschitz.** The Lipschitz constant `L` of `Phi` is the worst-case
-linearization gain over the integration. From the runner sample on the
-working grid, the finite-difference estimate gives `L_observed` < 10 over
-`[0.5, 1.2]`, growing as `X` approaches the Yukawa-pole onset. In a tight
-neighborhood of the root (`X in [0.9, 1.0]`) the local Lipschitz constant
-narrows to `L_near_root ~ 1`, with `min L > 0`. This is a *narrow* finite-L
-claim: it says the backward-RGE map is **stable** in the operational sense
-that no exponential amplification of small input perturbations occurs over
-the 17-decade run on the working interval.
-
-This finite-Lipschitz fact is the rigorous statement behind the parent's
-informal "numerically stable to better than 10^{-6} across the full 17
-decades" remark (Part 4 of `YT_BOUNDARY_THEOREM.md`).
-
-**(T4) Unique-root.** From (T2) `Phi` is strictly monotone on `[0.5, 1.2]`.
-A continuous strictly monotone function on a closed interval has at most one
-solution to any equation `Phi(X) = c`. The runner verifies (a) that
-`Phi(0.5) < 0.43577 < Phi(1.2)` (sign change in the interval), (b) that
-`Phi` is strictly increasing on the 33-point grid covering `[0.5, 1.2]`,
-and (c) that the bisection / brentq root in three independent subintervals
-each containing `X*` returns the same `X* = 0.97267` to within 1e-10.
-Combined with monotonicity, this is uniqueness: the Ward BC selects exactly
-one SM-trajectory representative in the searched interval.
-
-This is what makes claim (iv) of the parent (BC transfer selects a unique
-trajectory) a defensible mathematical claim rather than a presupposition.
-
-**(T5) Scan-boundary well-definedness.** The scan interval `[0.5, 1.2]` is
-not chosen ad hoc but is the maximal interval below the Yukawa-RGE
-Landau-pole-like onset under backward extrapolation. The runner samples
-`Phi(X)` for `X in {1.20, 1.21, 1.22, ..., 1.30}` and observes a sharp
-transition: `Phi(1.20) ~ 1.03`, `Phi(1.27) ~ 3.63`, `Phi(1.28) ~ 13.1`. The
-onset of Yukawa-Landau-like behavior is at `X_pole ~ 1.275 +/- 0.01`, well
-above the unique-root location `X* = 0.973`. The Ward root sits comfortably
-in the well-defined region; the scan interval `[0.5, 1.2]` is the
-operationally maximal range over which all of (T1)-(T4) hold.
-
-## What this theorem does NOT claim
-
-- **Does NOT claim** the SM EFT is physical at `M_Pl`. That is the
-  interpretive claim (iv) of the parent and is outside this note's scope.
-- **Does NOT claim** that the lattice Ward identity `y_t / g_s = 1/sqrt(6)`
-  holds in the SM. That is claim (iii) of the parent.
-- **Does NOT claim** that the taste-staircase mechanism (claim v) is the
-  physical bridge. This note treats the 17-decade RGE as a mathematical
-  ODE only.
-- **Does NOT claim** uniqueness OUTSIDE `[0.5, 1.2]`. The interval is
-  maximal: at `X > 1.27` the trajectory hits the Yukawa-Landau-like onset
-  and `Phi` blows up; the unique-root claim is restricted to the well-defined
-  scan interval. Whether additional roots exist below `X = 0.5` is also not
-  claimed.
-- **Does NOT close** the parent `yt_boundary_theorem` row. The interpretive
-  claims (i), (iii), (v) of the parent remain. This is one rigorous slice
-  of claim (iv) only.
-
-## Inputs (named, all retained / canonical-surface)
-
-```text
-(I1)  v_derived = M_Pl * C * alpha_LM^16        (hierarchy theorem, retained)
-(I2)  alpha_s(v) = alpha_bare / u_0^2           (coupling map theorem,
-                                                  block 10 narrow positive,
-                                                  retained canonical surface)
-(I3)  Ward target: y_t(M_Pl) = g_lattice / sqrt(6)
-                                                  (lattice Ward identity,
-                                                  retained on Cl(3) algebra)
-(I4)  SM 2-loop beta coefficients on (g1, g2, g3, y_t, lambda)
-                                                  (standard SM RGE, used
-                                                  verbatim from existing
-                                                  canonical-surface runner)
-(I5)  Threshold matching at (M_T_POLE, M_B_MSBAR, M_C_MSBAR)
-                                                  (standard SM threshold
-                                                  procedure, used verbatim)
-```
-
-No PDG observables enter the *load-bearing* part of the proof. The runner
-DOES print `m_t (obs) = 172.69 GeV` and `alpha_s(M_Z)_obs = 0.1179` in its
-context section for human readability, but neither value is consumed by any
-of `(T1)`-`(T4)` checks. The Lipschitz value `L_observed` is a numerical
-output of the runner, not a fitted parameter.
-
-## Distinctness from related blocks
-
-| Block | Target | Scope distinction |
-|---|---|---|
-| 08 | `yt_vertex_power_derivation_theorem` | n_link = 2 operator-counting at the **vacuum-polarization vertex level**. This block 15 takes n_link = 2 as a cited input via `alpha_s(v)` and operates on the **RGE trajectory level**. |
-| 10 | `alpha_s_derived` | derivation of the CMT-tadpole map `alpha_eff = alpha_bare / u_0^{n_link}` as an **algebraic-substitution identity**. This block 15 consumes the n_link = 2 specialization at `v` and operates on the **17-decade SM RGE backward extrapolation**. |
-| 11 | `u_0_plaquette_quartic_derivation` | 1/4 exponent in `u_0 = <P>^{1/4}` from L = 4 cubic-plaquette length. This block 15 does not touch `u_0` exponent; it consumes `alpha_s(v)` as a cited input. |
-| 14 | `yt_ward_identity_derivation` | contact-4-fermion-vanishing on `Q_L = (2, 3)` block (Lagrangian-level **operator content**). This block 15 operates one level up: it takes the Ward identity as a cited boundary condition and asks about **uniqueness of the backward-extrapolation root**. |
-| **15 (this)** | `yt_boundary_theorem` (sliced) | uniqueness / monotonicity / no-Landau-pole / Lipschitz of the **BC-transfer map** `Phi : y_t(v) -> y_t(M_Pl)` used in claim (iv) of the parent. No prior block touches the **mathematical well-definedness of the backward-RGE root-finder**. |
-
-## V1-V5 self-grounding (block artifacts)
-
-- V1 (definitions clear): all symbols `(g1, g2, g3, y_t, lambda, Phi, X, L)`
-  are SM RGE outputs of the standard 5-channel 2-loop system with the
-  initial-condition surface (I1)-(I5).
-- V2 (inputs explicit): inputs are listed in the "Inputs" section; (I1),
-  (I2) are retained canonical-surface theorems, (I3) is the retained lattice
-  Ward identity, (I4) and (I5) are the standard 2-loop SM RGE with standard
-  threshold matching.
-- V3 (each step verifiable): (T1) by max-coupling sweep across the working
-  grid; (T2) by strict-monotonicity check on a 33-point X-grid; (T3) by
-  finite-difference Lipschitz sample on the same grid plus near-root
-  refinement; (T4) by sign-change-then-brentq across three subintervals
-  plus monotonicity-from-(T2); (T5) by an extension-scan of `Phi(X)` for
-  `X in [1.20, 1.30]` that locates the Yukawa-Landau onset.
-- V4 (no hidden imports): no PDG observable enters any load-bearing check.
-  The runner does print observed values for human readability only.
-- V5 (distinct from prior blocks): see "Distinctness" table above. Blocks
-  08, 10, 11, 14 each operate on a different surface (vertex operator
-  counting, algebraic CMT, plaquette exponent, contact 4-fermion). This
-  block uniquely operates on the **mathematical well-definedness of the
-  backward-RGE BC-transfer map**.
-
-## Upstream authorities
-
-- [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — canonical plaquette / coupling-input authority (supplies the `<P>` self-consistent value used downstream in `alpha_LM`, `u_0`, and `g_lattice`).
-- [YT_WARD_IDENTITY_DERIVATION_THEOREM.md](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) — Ward identity / `y_t(M_Pl) = g_lattice / sqrt(6)` target.
-
-## Cross-references (non-load-bearing)
-
-- `docs/YT_BOUNDARY_THEOREM.md` (parent; claim iv specifically)
-- `docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md` (canonical authority surface)
-- `scripts/frontier_yt_boundary_consistency.py` (parent runner; this block's
-  runner re-uses its `beta_2loop` and `run_with_thresholds` building blocks)
+- `docs/YT_BOUNDARY_THEOREM.md`
+- `docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md`
+- `scripts/frontier_yt_boundary_consistency.py`

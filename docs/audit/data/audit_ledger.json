@@ -145184,11 +145184,11 @@
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 2.085,
       "load_bearing_step": "Given the KMS per-scale bound, the scalar majorant ODE dy/dl = a y^2 + b y yields small-data boundedness, monotonicity, scale chaining, and fixed-point consequences.",
       "load_bearing_step_class": "A",
@@ -145196,8 +145196,10 @@
       "max_descendant_status_rank": 30,
       "note_hash": "38cf0b410b218f721efad2ff17a889c66ebe2675876593b2e185a949b34c59a4",
       "note_path": "docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the KMS arXiv:2404.06099 theorem statement/proof excerpt or a retained upstream authority row establishing the BBF majorant inequality and hypotheses.",
+      "open_dependency_paths": [
+        "docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-18T11:31:37.037522+00:00",
@@ -145289,14 +145291,14 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 14,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 14
       },
       "runner_path": "scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py",
-      "title": "Scalar Quadratic Majorant Lemma For KMS-Style Context",
+      "title": "Kroschinsky-Marchetti-Salmhofer Fermionic Brydges Majorant \u2014 External Narrow Theorem",
       "transitive_descendants": 2,
       "verdict_rationale": "The runner source performs real Fraction arithmetic and boundary-text checks, but all scientific closure depends on accepting the KMS per-scale BBF majorant inequality as an external input. The source note explicitly admits that this upstream theorem is unsupplied and that no retained authority row for it is present. Therefore the conditional scalar ODE core closes algebraically, but the claimed external theorem chain does not close from the restricted packet alone."
     },

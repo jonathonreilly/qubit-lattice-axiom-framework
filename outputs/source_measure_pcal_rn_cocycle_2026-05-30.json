@@ -1,0 +1,33 @@
+{
+  "document_boundary": {
+    "actual_status": "exact-support",
+    "pcal_residual": "physical source intervention is an RN cocycle over sharp records"
+  },
+  "projective_record": {
+    "outcomes": [
+      -1,
+      1
+    ],
+    "signed_operator": "sigma_z = P_+ - P_-"
+  },
+  "rn_cocycle": {
+    "W": "log E_0 exp(h epsilon)",
+    "fisher_unit": "I(0)=1",
+    "normalization": "E_0 R_h = 1",
+    "scaled_family": "I_lambda(0)=lambda^2"
+  },
+  "summary": {
+    "actual_current_surface_status": "exact-support",
+    "bare_retained_allowed": false,
+    "fail": 0,
+    "pass": 56,
+    "proposal_allowed": false,
+    "target_blocker": "P-cal / primitive source-action unit",
+    "trace_class": "direct_blocker_closure_candidate"
+  },
+  "yt_application": {
+    "component": "1/sqrt(6)",
+    "remaining_if_rn_cocycle_accepted": "none for lambda",
+    "top_source_vector": "(1,1,1,1,1,1)/sqrt(6)"
+  }
+}

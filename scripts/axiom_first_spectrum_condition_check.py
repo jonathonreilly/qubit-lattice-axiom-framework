@@ -10,8 +10,10 @@ Cycle 1 / Route R7).
 Theorem note:
   docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md
 
-What this runner exhibits, on a small free-staggered lattice
-(representative of the canonical pure-staggered surface):
+What this runner exhibits, on a small free-staggered lattice (the
+staggered-only surface; representative finite carrier of the two-step
+blocked transfer matrix T := T_hat^2 whose positivity the note imports
+from the staggered-only sector authorities):
 
   E1.  Construct T = exp(-a_τ H_lat) on a small spatial slice;
        verify spectrum of T is real and positive with M_T = max
@@ -24,7 +26,14 @@ What this runner exhibits, on a small free-staggered lattice
        with non-negative spectrum (E_0 = 0, all E_n ≥ 0).
 
   E4.  Compute the mass gap m_gap = E_1 - E_0 = -log(λ_1 / M_T) /
-       a_τ; report it as a positive number.
+       a_τ; report it as a positive number on this finite carrier.
+
+E1-E4 exhibit the content of (SC1)-(SC3) of the note. (SC4) is a
+*conditional* temporal-decay corollary (given the gap, via the
+temporal bridge note) and is NOT exhibited by this
+runner; the verdict line therefore does not claim it. The exhibited gap in
+E4 is non-degeneracy on this finite carrier, not a closed-form gap claim
+for every canonical configuration.
 """
 
 from __future__ import annotations
@@ -37,7 +46,7 @@ from scipy.linalg import expm, logm
 
 
 def free_staggered_1d_hamiltonian(L_s, mass=0.3):
-    """1D free staggered Hamiltonian (no Wilson term, canonical A_min)."""
+    """1D free staggered Hamiltonian (no Wilson term, minimal axiom setup)."""
     h = np.zeros((L_s, L_s), dtype=complex)
     for x in range(L_s):
         eps = (-1) ** x
@@ -152,12 +161,23 @@ def main():
                "E4 (m_gap > 0)": e4}
     n_pass = sum(1 for v in results.values() if v)
     n_total = len(results)
+    n_fail = n_total - n_pass
     for k, v in results.items():
         print(f"   {k}: {'PASS' if v else 'FAIL'}")
     print(f"\n   PASSED: {n_pass}/{n_total}")
+    print(f"\nSCORECARD: PASS={n_pass} FAIL={n_fail}")
     print()
     if n_pass == n_total:
-        print(" verdict: spectrum condition (SC1)–(SC4) exhibited on Cl(3) on Z^d.")
+        # E1-E4 exhibit the content of SC1-SC3 (T positive Hermitian, H
+        # self-adjoint and >= 0, and a positive gap on this finite carrier)
+        # on the free-staggered surface. SC4 (the conditional temporal-decay
+        # corollary on the gap) is NOT exhibited by this runner; it is a
+        # downstream corollary in the note conditioned on the temporal bridge
+        # note, so the verdict deliberately does not claim it.
+        print(" verdict: SC1-SC3 content (T positive Hermitian; H self-adjoint,")
+        print("          H >= 0, E_0 = 0; positive gap on this finite carrier)")
+        print("          exhibited on the finite free-staggered surface.")
+        print("          SC4 is a conditional corollary in the note, not exhibited here.")
         return 0
     else:
         print(" verdict: at least one structural exhibit failed.")

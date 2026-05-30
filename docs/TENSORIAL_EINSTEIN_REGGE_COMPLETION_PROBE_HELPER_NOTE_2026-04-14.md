@@ -8,27 +8,7 @@ traceless `G_{ij}` Einstein-residual computation used by the
 scalar-trace-tensor no-go witness.
 **Status authority:** independent audit lane only. This wrapper note
 is audit-lane infrastructure for the corresponding helper module.
-**Primary runner:** `scripts/frontier_tensorial_einstein_regge_completion.py`
-
-## 2026-05-29 Audit Packet Repair
-
-The 2026-05 audit blocker was a runner artifact issue: the primary runner
-loaded `frontier_same_source_metric_ansatz_scan.py` and
-`frontier_microscopic_dirichlet_bridge_principle.py` through
-`_frontier_loader.load_frontier(...)`, so those dynamic helper scripts were
-not fully represented in `helper_runner_paths`.
-
-This repair converts the primary runner to static imports of the helper
-modules:
-
-- `scripts/frontier_same_source_metric_ansatz_scan.py`
-- `scripts/frontier_coarse_grained_exterior_law.py`
-- `scripts/frontier_oh_schur_boundary_action.py`
-- `scripts/frontier_microscopic_dirichlet_bridge_principle.py`
-
-No science scope is changed. The purpose is only to make the restricted
-audit packet include the same helper source chain that the runner actually
-uses.
+**Primary runner / module:** `scripts/frontier_tensorial_einstein_regge_completion.py`
 
 ## Purpose
 

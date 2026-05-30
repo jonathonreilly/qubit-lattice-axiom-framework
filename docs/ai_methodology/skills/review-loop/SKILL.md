@@ -661,7 +661,33 @@ sole channel for landing the regenerated outputs. Framework PRs that ship
 these files force a destructive overwrite of ratified audit state at merge
 time and have been an active source of broken-row regressions.
 
-8. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
+8. **Repository-portable links PASS gate (hard).** Markdown link targets on
+   branch-modified `.md` files must be repo-relative or web URLs. Absolute
+   local paths such as `/Users/<name>/...`, `/home/<name>/...`,
+   `/private/tmp/...`, `/tmp/...`, `/var/...`, `/opt/...`, or `file://...`
+   inside a markdown link target are non-portable: they break for other
+   developers, CI runners, fresh clones, and independent reviewers.
+
+```bash
+# Must produce no output. Scans branch-modified markdown for local absolute
+# paths inside markdown link targets.
+git diff --name-only origin/main...HEAD -- '*.md' \
+  | xargs -I{} grep -nE '\]\((/Users/|/home/|/private/|/tmp/|/var/|/opt/|file://)' {} 2>/dev/null
+```
+
+If this command prints lines for files the branch is already modifying for
+source, runner, methodology, or review reasons, rewrite the offending link
+targets before PASS. The usual mechanical fix is to preserve the display text
+and replace the target with a `../` chain relative to the source file's
+directory, e.g. in `docs/SOURCE_RESOLVED_FOO_NOTE.md` rewrite
+`(/Users/me/Projects/Physics/scripts/foo.py)` to `(../scripts/foo.py)`.
+
+This gate prevents new non-portable links from landing; it is not a license for
+large standalone cosmetic sweeps over audited claim notes. If the PR's only
+purpose is to rewrite existing local-path links across many audited source
+notes, apply the audit-hash churn guard above before landing any broad cleanup.
+
+9. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
    identify any artifact on the branch that ships a negative claim:
 
 ```bash
@@ -691,7 +717,7 @@ re-review. Do not weaken the gate to PASS the branch.
 This gate is independent of the Pipeline-clean PASS gate above; both must
 pass for review-loop to issue PASS.
 
-9. **Math-runner independent-check PASS gate (hard).** Before issuing
+10. **Math-runner independent-check PASS gate (hard).** Before issuing
 review-loop PASS for any branch that changes a runner, proof script, numeric
 constant, matrix construction, optimizer, expected value, or note formula,
 record the independent math check used by `CodeRunnerReviewer`. At least one
@@ -703,7 +729,7 @@ formula is correct. If an issue was reopened because the runner's math was
 wrong, treat the whole formula family as suspect until the changed expression
 and any reused helpers are cross-checked.
 
-10. **Native-language PASS gate (hard).** Changed repo-facing text must use
+11. **Native-language PASS gate (hard).** Changed repo-facing text must use
 controlled, native repo vocabulary. Run `scripts/vocab_lint.py --fix` on all
 branch-modified files before landing, then inspect changed headings, metadata,
 runner banners, claim scopes, table labels, and review comments for

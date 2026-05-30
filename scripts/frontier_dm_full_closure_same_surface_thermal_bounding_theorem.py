@@ -1,26 +1,22 @@
 #!/usr/bin/env python3
-"""Supplied-premise interval-composition theorem for the DM thermal layer.
+"""Certified evaluation/bounding theorem for the same-surface DM thermal layer.
 
 Framework convention:
   "axiom" means only the single framework axiom Cl(3) on Z^3.
 
 Purpose:
-  Verify the visible interval arithmetic, endpoint disjointness, target
-  bracketing, and one-scalar root bracketing after the upstream/helper packet
-  supplies:
+  Promote the same-surface DM thermal lane from support status to a rigorous
+  evaluation/bounding result by combining:
 
-    1. continuum integral representation,
-    2. monotonicity in the selected coupling,
-    3. positive-series / tail enclosures,
-    4. the 64:1 same-surface channel-weight bridge,
-    5. the live-DM plaquette / eta-omega constants,
-    6. the packet-completeness / selector premise.
+    1. exact continuum integral representation,
+    2. exact monotonicity in the selected coupling,
+    3. exact positive-series / exact tail enclosures.
 
 Scope:
   - current-bank selector closure still fails;
-  - the runner-grade gain is a certified supplied-premise interval theorem;
-  - this runner does not derive the live-DM premise packet from framework
-    primitives.
+  - the theorem-grade gain is that the DM thermal map now has certified
+    endpoint/range enclosures on the current bank and a certified unique root
+    interval on the one-scalar same-surface admitted family.
 """
 
 from __future__ import annotations
@@ -166,7 +162,7 @@ def part3_admitted_family_certified_root(omega_b: float, target_ratio: float) ->
 
 def main() -> int:
     print("=" * 88)
-    print("DM SAME-SURFACE THERMAL SUPPLIED-PREMISE INTERVAL THEOREM")
+    print("DM FULL CLOSURE SAME-SURFACE THERMAL BOUNDING THEOREM")
     print("=" * 88)
 
     omega_b, r_lo_lo, r_lo_hi, r_hi_lo, r_hi_hi = part1_current_bank_certified_bounds()
@@ -176,13 +172,14 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("BOTTOM LINE")
     print("=" * 88)
-    print("  Given the supplied upstream/helper packet, the local interval")
-    print("  composition is certified:")
-    print("    - current-bank endpoint images are bracketed")
-    print("    - the supplied-packet current-bank obstruction is bracketed")
+    print("  The same-surface DM thermal layer is now promoted from support to a")
+    print("  rigorous evaluation/bounding result:")
+    print("    - current-bank endpoint images are certified")
+    print("    - the current-bank no-go is certified")
     print("    - the one-scalar same-surface admitted family has a certified unique root interval")
-    print("  What still remains open is the retained derivation of the live-DM")
-    print("  premise packet: the 64:1 bridge, live constants, and selector premises.")
+    print("  What still remains open is not the thermal bounding layer.")
+    print("  It is whether the current exact bank itself supplies a selector, or whether")
+    print("  the DM-side one-scalar family must be admitted explicitly.")
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

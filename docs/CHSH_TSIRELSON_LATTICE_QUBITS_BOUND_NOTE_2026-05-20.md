@@ -136,6 +136,11 @@ and contains state-space witnesses that saturate it (Step 2). It has
 the standard qubit-quantum CHSH surface and does not contain
 super-quantum PR-box correlations.
 
+Terminology boundary: the comparison above uses "local hidden-variable"
+in the Bell/CHSH deterministic-outcome sense. It is not a claim about the
+broader local-realistic model notion in which no-signalling theories with
+invertible dynamics can admit a local-realistic reconstruction.
+
 ## Step 4 — Lattice extension and multi-site Tsirelson chains
 
 For pairs of distinct sites `x, y ∈ Z^3`, the Tsirelson bound `2√2`

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_exponent_derivation_scope_repair.py
+runner_sha256: 75b68fcd68009a341ce4e67d3170d660fce961f558de50a5f528ca5e7d9a16fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Exponent derivation scope-repair certificate
+========================================================================
+[PASS] matched replay has five pinned N rows
+[PASS] matched 4D alpha is not flatter than matched 2D alpha (alpha_4d=-2.704, alpha_2d=-0.158)
+[PASS] delta alpha matches matched-replay dependency (delta=-2.5460000000000003)
+[PASS] matched replay is inconsistent with old alpha~1/d prediction (matched=-2.704, old_prediction=-0.5)
+[PASS] N=25: 2D and 4D degrees are approximately matched (2D<k>=9.76, 4D<k>=9.52)
+[PASS] N=25: pur_min values are valid probabilities (pur2=0.9341, pur4=0.9647, r4=4.75)
+[PASS] N=40: 2D and 4D degrees are approximately matched (2D<k>=9.98, 4D<k>=9.69)
+[PASS] N=40: pur_min values are valid probabilities (pur2=0.9577, pur4=0.9559, r4=4.75)
+[PASS] N=60: 2D and 4D degrees are approximately matched (2D<k>=10.11, 4D<k>=9.78)
+[PASS] N=60: pur_min values are valid probabilities (pur2=0.9555, pur4=0.9378, r4=4.75)
+[PASS] N=80: 2D and 4D degrees are approximately matched (2D<k>=10.24, 4D<k>=9.89)
+[PASS] N=80: pur_min values are valid probabilities (pur2=0.9667, pur4=0.9812, r4=4.75)
+[PASS] N=100: 2D and 4D degrees are approximately matched (2D<k>=10.25, 4D<k>=9.89)
+[PASS] N=100: pur_min values are valid probabilities (pur2=0.9428, pur4=0.9991, r4=4.75)
+[PASS] source note contains required firewall: does not claim a dimensional exponent
+[PASS] source note contains required firewall: does not prove `alpha ~ 1/d_spatial`
+[PASS] source note contains required firewall: does not assert the old 5D/6D exponent predictions as binding results
+[PASS] source note contains required firewall: MATCHED_2D_4D_DECOHERENCE_NOTE.md
+[PASS] source note omits old prediction overclaim: If this argument is correct:
+[PASS] source note omits old prediction overclaim: **5D (d_spatial=4):** alpha
+[PASS] source note omits old prediction overclaim: **6D (d_spatial=5):** alpha
+[PASS] source note omits old prediction overclaim: the exponent approaches zero
+SUMMARY: PASS=22 FAIL=0
+
+----- stderr -----
+

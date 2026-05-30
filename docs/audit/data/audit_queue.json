@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 256,
+    "critical": 255,
     "high": 303,
     "leaf": 353,
     "medium": 312
@@ -8,31 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "no_per_site_chirality_theorem_note_2026-05-02",
-      "claim_scope": "Inside one Axiom-1 site A_x ~= M_2(C) with the Pauli Cl(3) generators, omega = sigma_1 sigma_2 sigma_3 is scalar and no nonzero matrix anticommutes with all three generators; hence no internal gamma_5 projector exists at one site.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.796,
-      "note_path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/no_per_site_chirality_check.py",
-      "transitive_descendants": 888
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -26736,6 +26711,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "cpt_exact_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -27580,6 +27581,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/backreaction_poisson_live_threshold_check.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "no_per_site_chirality_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
       "transitive_descendants": 0
     },
     {
@@ -29070,32 +29097,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_first_law_bh_mechanics_check.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "no_per_site_chirality_theorem_note_2026-05-02",
-        "cpt_exact_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py",
       "transitive_descendants": 1
     },
     {
@@ -34782,32 +34783,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-        "no_per_site_chirality_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "primitive_p_heavyq_casimir_closure_note_2026-05-10_ppheavyq_closure",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -36846,6 +36821,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 79,
-  "total_pending": 1224
+  "ready_count": 80,
+  "total_pending": 1223
 }

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/newton_law_potential_kernel_scope_check.py
+runner_sha256: 7ee59c9cc2a282fd4523243e6203d03bb90a78af4307b30ec3fbca0c85989638
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+==============================================================================
+Newton potential-kernel algebra scope check
+==============================================================================
+[PASS] source note contains scope phrase: bounded-support potential-kernel algebra
+[PASS] source note contains scope phrase: not a retained Newton force-law derivation
+[PASS] source note contains scope phrase: not yet a physical Newton force law
+[PASS] source note contains scope phrase: test-mass force/source response rule
+[PASS] source note contains scope phrase: BA3_TEST_MASS_COUPLING_DERIVED=FALSE
+[PASS] source note excludes overclaim phrase: No additional physics is imported beyond
+[PASS] source note excludes overclaim phrase: unconditional closure from the framework baseline
+[PASS] source note excludes overclaim phrase: retained Newton-law closure
+[PASS] supplied kernel is 1/(4*pi*r)
+[PASS] source-linearity gives phi=M/(4*pi*r)
+[PASS] radial derivative is -M/(4*pi*r^2)
+[PASS] gradient magnitude is M/(4*pi*r^2)
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASSED: 12/12
+NEWTON_POTENTIAL_KERNEL_ALGEBRA=TRUE
+POTENTIAL_GRADIENT_INVERSE_SQUARE=TRUE
+PHYSICAL_FORCE_LAW_CLAIMED=FALSE
+BA3_TEST_MASS_COUPLING_DERIVED=FALSE
+ACTUAL_CURRENT_SURFACE_STATUS=BOUNDED_SUPPORT
+
+----- stderr -----
+

@@ -52,7 +52,7 @@ State file (`logs/science-fix-state.json`):
       "attempts": {
         "<claim_id>": {
           "attempted_at": "<utc iso>",
-          "outcome": "in_progress" | "stale_in_progress" | "pr_opened" | "no_edits" | "declined_too_hard" | "stalled_no_edits" | "thinking_only" | "timeout_no_edits" | "pr_opened_partial_stalled" | "pr_opened_partial_thinking_only" | "pr_opened_partial_timeout" | "codex_failed" | "run_error" | "error" | "push_failed" | "pr_failed",
+          "outcome": "in_progress" | "stale_in_progress" | "pr_opened" | "no_edits" | "declined_too_hard" | "stalled_no_edits" | "thinking_only" | "timeout_no_edits" | "pr_opened_partial_stalled" | "pr_opened_partial_thinking_only" | "pr_opened_partial_timeout" | "codex_failed" | "run_error" | "error" | "push_failed" | "pr_failed" | "skipped_ratified_on_main",
           "worker_id": "<pid-run_id>",
           "branch": "<branch>",
           "pr_url": "<url>",
@@ -552,6 +552,49 @@ def diff_summary(worktree: Path) -> str:
     return (res.stdout or "").strip()
 
 
+# Audit verdicts that mean "settled clean — no further action needed". A row
+# that has reached one of these is done: audited_clean (theorem/no_go/open_gate
+# the auditor passed as-is) or audited_decoration (algebra correct but covered
+# by a retained parent). The actionable verdicts the loop is meant to work
+# (audited_conditional, audited_failed, audited_numerical_match,
+# audited_renaming, unaudited) are deliberately NOT in this set.
+SETTLED_CLEAN_AUDIT_STATUSES = {"audited_clean", "audited_decoration"}
+
+
+def target_settled_on_main(claim_id: str) -> tuple[bool, str]:
+    """Re-fetch origin/main and report whether `claim_id` has reached a
+    settled-clean audit verdict since this attempt forked.
+
+    A worktree is created off origin/main at the start of an attempt, but main
+    keeps advancing while codex works. The independent audit lane frequently
+    ratifies the very row this loop is repairing — to audited_clean or
+    audited_decoration — in that window. Editing the note then resets that
+    ratified verdict, and the repair tends to re-assert theorem/proposed_retained
+    status for content the auditor already ruled a decoration. That is the loop
+    fighting a verdict that landed after it forked.
+
+    Returning True here means: defer to main. The rare legitimate re-open of a
+    ratified row (e.g. the note itself admits an open overclaim an audit
+    mandated narrowing) is a human / review-loop judgment, not an autonomous
+    one. Fails open (returns False) on any read/parse error so a transient git
+    problem never silently drops real work.
+    """
+    git("fetch", "origin", "main", check=False)
+    res = git("show", "origin/main:docs/audit/data/audit_ledger.json", check=False)
+    if res.returncode != 0 or not (res.stdout or "").strip():
+        return False, "ledger_unavailable"
+    try:
+        led = json.loads(res.stdout)
+    except (json.JSONDecodeError, ValueError):
+        return False, "ledger_unparseable"
+    rows = led.get("rows", led)
+    row = rows.get(claim_id) if isinstance(rows, dict) else None
+    if not isinstance(row, dict):
+        return False, "row_absent"
+    status = row.get("audit_status", "") or ""
+    return status in SETTLED_CLEAN_AUDIT_STATUSES, status
+
+
 def commit_and_push(claim_id: str, worktree: Path, branch: str,
                     summary: str) -> tuple[bool, str]:
     # Framework PRs are forbidden from landing audit-lane outputs (rationale:
@@ -943,6 +986,22 @@ def main() -> int:
                     punted += 1
                 else:
                     promote_edits = True
+
+            if promote_edits:
+                # Guard: main may have ratified this row clean while codex
+                # worked. Re-opening a settled-clean row resets that verdict
+                # and tends to re-promote a decoration back to a theorem —
+                # the loop fighting a verdict that landed after it forked.
+                # Defer to main; route the rare legitimate re-open to humans.
+                settled, main_status = target_settled_on_main(cid)
+                if settled:
+                    print(f"  SKIP: target is '{main_status}' on current "
+                          f"origin/main — audit lane ratified it clean since "
+                          f"this attempt forked; not re-opening a settled row.")
+                    outcome["outcome"] = "skipped_ratified_on_main"
+                    outcome["main_audit_status"] = main_status
+                    punted += 1
+                    promote_edits = False
 
             if promote_edits:
                 summary = diff_summary(worktree)

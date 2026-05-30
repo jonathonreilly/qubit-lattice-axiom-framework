@@ -1,0 +1,30 @@
+
+========================================================================
+Casimir heat kernel on the corner cube Q3 -> generation r = tanh(t)^4
+========================================================================
+   t       b/a       r        Q
+  0.3000   0.0849   0.0072   0.3381
+  0.5000   0.2136   0.0456   0.3637
+  0.8000   0.4409   0.1944   0.4630
+  1.0000   0.5800   0.3364   0.5576
+  1.2242   0.7071   0.5000   0.6667  <-- Q=2/3
+  1.5000   0.8193   0.6712   0.7808
+  2.0000   0.9293   0.8637   0.9091
+  3.0000   0.9901   0.9804   0.9869
+
+========================================================================
+r=1/2 point and the natural-t check
+========================================================================
+  r=1/2 (Q=2/3) at t=1.2242: b/a=tanh^2(t)=1/sqrt2=0.7071 (tanh t=2^-1/4=0.8409)
+  naive t=1 (if Casimir time ~ g_bare=1): Q=0.5576  (NOT 2/3)
+  => r=1/2 re-expressed as an unforced heat-kernel time t; no derived t lands here.
+
+========================================================================
+VERDICT
+========================================================================
+  First native (import-free) structure giving the full r in (0,1) as r=tanh^4(t),
+  with r=1/2 a clean interior point (b/a=1/sqrt2). NOT a derivation: the modulus
+  moves from b/a to the Casimir time t (naive t=1 -> Q=0.558, not 2/3). Open
+  question for the bridge-gap action: what fixes t (the Casimir proper time)?
+  CAVEAT: cube-heat-kernel <-> generation mass-matrix identification is a
+  candidate, not established. A lead on the action, not a lepton result.

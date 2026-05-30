@@ -1,0 +1,41 @@
+{
+  "certificate_schema": {
+    "production_certificate_present": false,
+    "required_fields": [
+      "same_source_id",
+      "same_transfer_action_surface",
+      "lambda_top_pole",
+      "lambda_w_pole",
+      "lambda_vacuum_pole",
+      "contact_subtraction",
+      "finite_volume_ir_controls",
+      "model_class_checks",
+      "shared_covariance",
+      "g2_authority_or_ratio_scope",
+      "dM_t_dh",
+      "dM_W_dh"
+    ]
+  },
+  "documents": {
+    "fh_ratio": "unaudited",
+    "source_coordinate": "retained_bounded",
+    "symbolic_top": "unaudited",
+    "top_nogo": "unaudited",
+    "wz_packet": "retained_bounded"
+  },
+  "response_ratio_algebra": {
+    "readout": "y_33=(g_2/sqrt(2)) (dM_t/dh)/(dM_W/dh)",
+    "target_ratio": "sqrt(2)/(g_2 sqrt(6))"
+  },
+  "summary": {
+    "contract_role": "evidence schema for non-P-cal top/W response route",
+    "fail": 0,
+    "pass": 59,
+    "production_certificate_present": false,
+    "source_boundary": "evidence contract only"
+  },
+  "transfer_pole_derivative": {
+    "derivative": "dM_X/dh=-a_t^{-1}(Lambda_X'/Lambda_X-Lambda_0'/Lambda_0)",
+    "mass_definition": "M_X=-a_t^{-1} log(Lambda_X/Lambda_0)"
+  }
+}

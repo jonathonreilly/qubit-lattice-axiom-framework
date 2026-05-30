@@ -2,10 +2,10 @@
 
 **Date:** 2026-04-26
 
-**Status:** proposed_retained - explicit strong derivation claim pending audit
-the exact gauge-selection rule for renormalizable Dirac Yukawa monomials in
-the one-Higgs-doublet Standard Model matter surface carried by the retained
-hypercharge and EW notes. It does not derive any Yukawa eigenvalue, mixing
+**Status authority:** independent audit lane only. This source note states the
+exact gauge-selection rule for renormalizable Dirac Yukawa monomials in
+the one-Higgs-doublet Standard Model matter surface carried by the hypercharge
+and EW notes. It does not derive any Yukawa eigenvalue, mixing
 angle, CKM/PMNS entry, neutrino Majorana scale, Higgs mass, top-Yukawa
 normalization, time-travel, teleportation, or antigravity claim.
 
@@ -13,13 +13,13 @@ normalization, time-travel, teleportation, or antigravity claim.
 
 ## 1. Claim
 
-Use the doubled-hypercharge convention of the retained anomaly notes:
+Use the doubled-hypercharge convention of the hypercharge/anomaly notes:
 
 ```text
 Q_em = T_3 + Y/2.
 ```
 
-The retained EW Higgs gauge-mass note uses the SM-normalized convention
+The EW Higgs gauge-mass note uses the SM-normalized convention
 `Q_em = T_3 + Y_EW`. The dictionary is
 
 ```text
@@ -37,7 +37,7 @@ L_L   : (1, 2)_{-1},
 u_R   : (3, 1)_{+4/3},
 d_R   : (3, 1)_{-2/3},
 e_R   : (1, 1)_{-2},
-nu_R  : (1, 1)_0       [if the retained neutral singlet is included],
+nu_R  : (1, 1)_0       [if the neutral singlet is included],
 H     : (1, 2)_{+1}.
 ```
 
@@ -96,8 +96,8 @@ matrices.
 
 ## 2. Why This Adds Value
 
-The retained hypercharge theorem fixes the one-generation charge table, and
-the retained EW Higgs gauge-mass theorem fixes the one-doublet Higgs
+The hypercharge theorem fixes the one-generation charge table, and the EW Higgs
+gauge-mass theorem fixes the one-doublet Higgs
 bookkeeping. What remains useful as a separate proof is the exact bridge from
 those charges to the allowed Dirac mass operators.
 
@@ -151,7 +151,7 @@ This proves the Higgs-conjugation transformation rule.
 
 ## 4. General Form of a Dirac Yukawa Monomial
 
-A renormalizable Dirac Yukawa monomial with the retained fields has the form
+A renormalizable Dirac Yukawa monomial with the listed fields has the form
 
 ```text
 bar F_L S f_R,

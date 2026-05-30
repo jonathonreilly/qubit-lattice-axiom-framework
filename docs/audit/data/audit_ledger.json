@@ -45720,24 +45720,42 @@
       "verdict_rationale": null
     },
     "continuum_identification_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-29T21:06:22.681182+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note"
+        ],
+        "load_bearing_score": 9.615,
+        "runner_hash": "579127ef95faf10db6b5597751ae43a3432d7b678a020d4e47a584f8c287bef8",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-continuum_identification",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner verifies only that named notes and runner files exist; it does not verify the theorem content of the 19 gravity steps, the gauge universality/EFT bridge, alpha_s/string-tension/CKM claims, or the asserted continuum-QCD identification. The source note also explicitly leaves the gauge RG proof and exact Lorentz-invariance promotion open.",
       "claim_id": "continuum_identification_note",
-      "claim_scope": null,
+      "claim_scope": "Audited only the restricted packet's continuum-identification capstone: existence of named gravity/gauge notes and runners, plus the source note's bounded gauge/EFT and approximate Lorentz-scope statements.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-29T21:06:22.681182+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -45745,20 +45763,22 @@
         "emergent_lorentz_invariance_note"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 9.615,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The combined continuum identification rests on the assertion that the gravity result is closed by a 19-step exact chain and that the gauge sector is positioned on continuum QCD by Wilson SU(3) at beta=6.0 plus the standard universality/EFT bridge.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "cf5598eab461e371a4d9c46a88e87718d92976479edbcfeba64528300ae31236",
+      "note_hash": "b7f9ee3cd1cef07dbfe6c9a626ece236ca345b8266825a4369c8464af5eaa296",
       "note_path": "docs/CONTINUUM_IDENTIFICATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained-grade content audits for the 19 gravity authority notes and a retained bridge theorem for the gauge universality/EFT-to-continuum-QCD identification, rather than an existence-only runner.",
+      "open_dependency_paths": [
+        "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.367961+00:00",
@@ -45824,73 +45844,21 @@
             "total_pass": 56
           },
           "verdict_rationale": "Issue: the claim imports a large continuum-identification authority stack and a gauge EFT bridge, but the audit packet registers only a bounded Lorentz dependency and the runner performs file-existence checks rather than theorem replay. Why this blocks: a hostile auditor cannot ratify the claimed continuum closure from this packet because the load-bearing chain status is summarized, not derived or provided as one-hop retained authorities. Repair target: register the actual 19 gravity authorities and gauge bridge authorities as ledger dependencies, require their effective statuses to be retained, and replace the audit runner with a replay/status check that verifies the load-bearing outputs rather than merely their files. Claim boundary until fixed: the note can serve as a continuum-identification index and bounded positioning statement, not as an audit-clean retained continuum theorem."
-        },
-        {
-          "archived_at": "2026-05-30T11:15:50.571594+00:00",
-          "archived_for_note_hash": "b7f9ee3cd1cef07dbfe6c9a626ece236ca345b8266825a4369c8464af5eaa296",
-          "audit_date": "2026-05-29T21:06:22.681182+00:00",
-          "audit_state_snapshot": {
-            "criticality": "high",
-            "dep_axiom_premise_note_hash": {},
-            "dep_claim_scope": {
-              "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded."
-            },
-            "dep_claim_type": {
-              "emergent_lorentz_invariance_note": "bounded_theorem"
-            },
-            "dep_effective_status": {
-              "emergent_lorentz_invariance_note": "retained_bounded"
-            },
-            "deps": [
-              "emergent_lorentz_invariance_note"
-            ],
-            "load_bearing_score": 9.615,
-            "runner_hash": "579127ef95faf10db6b5597751ae43a3432d7b678a020d4e47a584f8c287bef8",
-            "transitive_descendants": 48
-          },
-          "audit_status": "audited_conditional",
-          "auditor": "codex-cli-audit-ready-20260529-continuum_identification",
-          "auditor_confidence": "high",
-          "auditor_family": "codex-gpt-5.5",
-          "blocker": null,
-          "chain_closes": false,
-          "chain_closure_explanation": "The primary runner verifies only that named notes and runner files exist; it does not verify the theorem content of the 19 gravity steps, the gauge universality/EFT bridge, alpha_s/string-tension/CKM claims, or the asserted continuum-QCD identification. The source note also explicitly leaves the gauge RG proof and exact Lorentz-invariance promotion open.",
-          "claim_scope": "Audited only the restricted packet's continuum-identification capstone: existence of named gravity/gauge notes and runners, plus the source note's bounded gauge/EFT and approximate Lorentz-scope statements.",
-          "claim_type": "bounded_theorem",
-          "claim_type_last_reviewed": "2026-05-29T21:06:22.681182+00:00",
-          "claim_type_provenance": "audited",
-          "cross_confirmation": null,
-          "decoration_parent_claim_id": null,
-          "independence": "cross_family",
-          "load_bearing_step": "The combined continuum identification rests on the assertion that the gravity result is closed by a 19-step exact chain and that the gauge sector is positioned on continuum QCD by Wilson SU(3) at beta=6.0 plus the standard universality/EFT bridge.",
-          "load_bearing_step_class": "B",
-          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained-grade content audits for the 19 gravity authority notes and a retained bridge theorem for the gauge universality/EFT-to-continuum-QCD identification, rather than an existence-only runner.",
-          "open_dependency_paths": [
-            "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md"
-          ],
-          "runner_check_breakdown": {
-            "A": 0,
-            "B": 56,
-            "C": 0,
-            "D": 0,
-            "total_pass": 56
-          },
-          "verdict_rationale": "The runner source is explicitly a structural integrity check and only tests path existence, so the PASS=56 result cannot establish first-principles continuum identification. The gauge conclusion imports a standard universality/EFT bridge and finite-spacing low-energy continuum-QCD identification that are not closed within the restricted packet, and the note itself names the formal RG flow proof as open. The included Lorentz authority is retained_bounded and explicitly says exact retained Lorentz invariance and Planck-suppressed numerical readout remain conditional, which further bounds the continuum claim rather than making it clean."
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 56,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 56
       },
       "runner_path": "scripts/frontier_continuum_identification_audit.py",
-      "title": "Continuum Identification: Gravity and Gauge Inventory",
+      "title": "Continuum Identification: Gravity and Gauge",
       "transitive_descendants": 48,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source is explicitly a structural integrity check and only tests path existence, so the PASS=56 result cannot establish first-principles continuum identification. The gauge conclusion imports a standard universality/EFT bridge and finite-spacing low-energy continuum-QCD identification that are not closed within the restricted packet, and the note itself names the formal RG flow proof as open. The included Lorentz authority is retained_bounded and explicitly says exact retained Lorentz invariance and Planck-suppressed numerical readout remain conditional, which further bounds the continuum claim rather than making it clean."
     },
     "continuum_limit_note": {
       "audit_date": "2026-05-23T18:13:56.019683+00:00",

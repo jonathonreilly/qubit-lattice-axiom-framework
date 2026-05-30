@@ -3712,12 +3712,12 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": null,
       "runner": "scripts/frontier_continuum_identification_audit.py"
     },
     "continuum_limit_note": {
@@ -34727,12 +34727,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/frontier_conventions_unification.py": {
@@ -58266,7 +58266,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 358,
+    "decoration_candidates": 357,
     "dominant_class_distribution": {
       "A": 268,
       "B": 296,

@@ -47431,15 +47431,15 @@
       "claim_id": "continuum_identification_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "emergent_lorentz_invariance_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cf5598eab461e371a4d9c46a88e87718d92976479edbcfeba64528300ae31236",
+      "note_hash": "b7f9ee3cd1cef07dbfe6c9a626ece236ca345b8266825a4369c8464af5eaa296",
       "path": "docs/CONTINUUM_IDENTIFICATION_NOTE.md",
       "runner_path": "scripts/frontier_continuum_identification_audit.py",
-      "title": "Continuum Identification: Gravity and Gauge Inventory"
+      "title": "Continuum Identification: Gravity and Gauge"
     },
     "continuum_limit_note": {
       "claim_id": "continuum_limit_note",

@@ -1090,7 +1090,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4105,23 +4104,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The endpoint-distinctness and non-overlap arithmetic checks for the helper-defined numbers close exactly and are runner-verified.  _(class `A`)_
 - **chain closes:** True — For the narrowed arithmetic core, direct recomputation gives alpha_bare=0.07957747154594767, alpha_lo=0.09066783601728631, alpha_hi=0.09226499261836020, with alpha_bare < alpha_lo < alpha_hi; the non-overlap check is arithmetic over helper-returned intervals with R_lo_hi < R_hi_lo.
 - **rationale:** The runner no longer uses literal True checks for selector absence; its eight checks are endpoint definition/order, distinctness from alpha_bare, and interval non-overlap inequalities. The clean verdict applies only to this bounded arithmetic core over helper-defined quantities and helper-returned intervals. No selector-boundary or no-selector/no-go conclusion is ratified; N1-N8 was not passed for such a conclusion and it remains outside clean scope.
-- **auditor confidence:** high
-
-### `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`
-
-- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded thermal-layer endpoint enclosures, Omega_DM interval conversion, and one-scalar admitted-family root interval as composition over the supplied one-hop thermal integral, monotonicity, series/tail, and selector-boundary authorities plus the runner/helper sources.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-audit-ready-20260529-dm_full_closure_same_sur`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The theorem claims that exact monotonicity plus certified endpoint/series-tail enclosures close the current-bank image and force a unique one-scalar root interval on the same-surface thermal layer.  _(class `B`)_
-- **chain closes:** False — The local runner verifies arithmetic/bracketing over imported helper outputs, but the supplied authorities explicitly leave the live-DM 64:1 channel-weight bridge, live-DM slice constants, and selector/completeness premise conditional or pending. Those missing bridges are load-bearing for promoting the runner's imported thermal bounds and monotonicity to the claimed same-surface DM theorem.
-- **rationale:** The runner source does perform nontrivial interval-width, disjointness, target-bracketing, and root-bracketing checks, and its stdout matches those checks. However, the primary runner imports ALPHA_LO/ALPHA_HI, OMEGA_DM_OBS, certified_same_surface_ratio_bounds, and certified_sigma_interval from helper/common modules rather than deriving the contested live-DM premises from framework primitives. The cited monotonicity and series/tail authorities are retained_bounded but explicitly conditional on unsupplied channel-weight and live-DM-slice authorities, so retained status does not propagate to the full claimed same-surface DM closure.
-- **open / conditional deps cited:**
-  - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md`
-  - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md`
-  - `DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`

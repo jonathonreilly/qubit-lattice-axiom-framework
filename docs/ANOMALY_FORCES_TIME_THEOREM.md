@@ -26,8 +26,12 @@ The current surface is:
    [`ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md`](ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md).
    That theorem derives the U(1)^3 ABJ obstruction directly from the local
    physical 3+1 framework action: action Dirac operator, heat-kernel spin
-   trace, exact `Tr_LH[Y^3] = -16/9`, and the 3+1 abelian no-counterterm
+   trace, exact scale-free `Tr_LH[(lambda Y0)^3] = -48 lambda^3`, and the 3+1 abelian no-counterterm
    enumeration.
+   The scale-free cubic trace itself is isolated in
+   [`ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md`](ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md);
+   bounded physical-hypercharge normalization/readout rows are not
+   load-bearing for this 3+1 route.
 2. The pure Clifford parity step is audit-ratified separately in
    [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md):
    a chirality operator anticommuting with all spacetime Clifford generators
@@ -51,14 +55,15 @@ cited theorem import.
 
 ## Theorem
 
-Assume the framework's retained/bounded matter-content surface supplies the
-left-handed chiral gauge content
+The framework's retained graph-first selected-axis surface supplies the
+primitive traceless abelian generator
 
 ```text
-(2, 3)_{+1/3} + (2, 1)_{-1}
+Y0 = P_+ - 3 P_-
 ```
 
-on the `Z^3` spatial substrate, and use the framework-action ABJ theorem:
+on the `Z^3` spatial substrate, with `Tr[(lambda Y0)^3] != 0` for
+`lambda != 0`. Use the framework-action ABJ theorem:
 
 ```text
 Framework-action U(1)^3 ABJ anomaly-to-inconsistency:
@@ -69,12 +74,10 @@ Framework-action U(1)^3 ABJ anomaly-to-inconsistency:
 
 Then:
 
-1. The left-handed content has non-zero anomaly traces:
+1. The chiral selected-axis U(1) trace is non-zero:
 
    ```text
-   Tr[Y^3]       = -16/9
-   Tr[SU(3)^2 Y] =  1/3
-   Tr[SU(3)^3]   =  2
+   Tr[(lambda Y0)^3] = -48 lambda^3 != 0.
    ```
 
 2. By the framework-action ABJ theorem, gauge consistency requires an
@@ -103,34 +106,33 @@ Then:
 
 ### 1. Anomaly arithmetic
 
-For the left-handed matter content, the multiplicities are:
+For the selected-axis primitive U(1) surface, the multiplicities are:
 
 ```text
-Q_L: 2 weak states x 3 colours = 6 states with Y = +1/3
-L_L: 2 weak states x 1 colour  = 2 states with Y = -1
+P_+ block: 6 states with Y0 = +1
+P_- block: 2 states with Y0 = -3
 ```
 
 The exact rational traces are:
 
 ```text
-Tr[Y]       = 6*(1/3) + 2*(-1)       = 0
-Tr[Y^3]     = 6*(1/3)^3 + 2*(-1)^3   = -16/9
-Tr[SU(3)^2Y]= 2*(1/2)*(1/3)          = 1/3
-Tr[SU(2)^2Y]= 3*(1/2)*(1/3) + (1/2)*(-1) = 0
-Tr[SU(3)^3] = 2
+Tr[Y0]                 = 6*1 + 2*(-3) = 0
+Tr[Y0^3]               = 6*1^3 + 2*(-3)^3 = -48
+Tr[(lambda Y0)^3]      = -48 lambda^3
 ```
 
 The cubic U(1)^3 trace is already sufficient for the ABJ obstruction derived
-from the framework action. The mixed and nonabelian traces are retained as
-parallel consistency checks of the same left-handed matter surface.
+from the framework action.  Physical-SM hypercharge normalization
+(`alpha = 1/3`), GMN, electric-charge readout, and quark/lepton naming are
+not consumed by this theorem.
 
 ### 2. ABJ from the framework action and chiral completion
 
 The framework-action ABJ theorem cited above derives the U(1)^3 chiral gauge
 anomaly from the physical 3+1 local action. Its runner verifies the
 Wick-rotated local gamma algebra, nonzero heat-kernel spin trace, Gaussian
-coefficient, `Tr_LH[Y^3] = -16/9`, and the absence of a 3+1 abelian local
-counterterm whose BRST variation cancels `c F wedge F`.
+coefficient, the scale-free nonzero cubic trace, and the absence of a 3+1
+abelian local counterterm whose BRST variation cancels `c F wedge F`.
 
 The present theorem therefore does not use an ABJ admitted packet or standard
 theorem import. On the framework action, the non-zero anomaly trace is not
@@ -189,8 +191,10 @@ ABJ from framework action + chiral matter surface + retained Clifford parity
 It does **not** close:
 
 - independent audit of this new action-surface ABJ theorem;
-- independent audit of the staggered-Dirac/action realization gate;
-- independent audit of the physical hypercharge/matter-surface chain;
+- the full staggered-Dirac species/generation realization gate beyond the
+  local action operator used by the ABJ theorem;
+- physical-SM hypercharge normalization/readout; those bounded rows are not
+  load-bearing for this theorem;
 - the audit of the single-clock theorem or any audit-pending upstream source;
 - a route in which observed spacetime dimension is used as an input.
 
@@ -205,6 +209,10 @@ actual_current_surface_status: action-surface positive theorem candidate
 framework_action_abj_theorem:
   id: ABJ from framework action U(1)^3 cubic theorem
   route: docs/ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md
+scale_free_trace_surface:
+  id: ABJ scale-free chiral U(1) trace surface theorem
+  route: docs/ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md
+  bounded_hypercharge_or_alpha_rows_load_bearing: false
 abj_import_retired_on_framework_action_surface: true
 standard_theorem_bridge_load_bearing: false
 accepted_premise_packet_load_bearing: false

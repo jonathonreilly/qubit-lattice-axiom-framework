@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1136 |
-| meta | 237 |
+| unaudited | 1137 |
+| meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,37 +60,37 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 943 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1373 |
+| `unaudited` | 1375 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1147 |
+| `bounded_theorem` | 1145 |
 | `decoration` | 52 |
-| `meta` | 241 |
+| `meta` | 242 |
 | `no_go` | 261 |
 | `open_gate` | 117 |
-| `positive_theorem` | 706 |
+| `positive_theorem` | 708 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 392 |
-| `high` | 506 |
+| `critical` | 387 |
+| `high` | 510 |
 | `medium` | 606 |
-| `leaf` | 1020 |
+| `leaf` | 1022 |
 
 - **Retained pending chain closure:** 11
-- **Citation cycles detected:** 2
+- **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2105
+- runners classified: 2106
 - runners with (C) first-principles compute hits: 1026
-- runners with (D) external comparator hits: 631
+- runners with (D) external comparator hits: 632
 - decoration candidates (no C, no D): 358
 
 ## Top 25 by load-bearing score (topology only)
@@ -99,31 +99,31 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `three_generation_observable_theorem_note` | positive_theorem | critical | 977 | 54.93 | `audited_clean` | **retained** |
+| 1 | `three_generation_observable_theorem_note` | positive_theorem | critical | 814 | 54.67 | `audited_clean` | **retained** |
 | 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 729 | 54.51 | `unaudited` | unaudited |
-| 3 | `minimal_axioms_2026-05-03` | meta | critical | 970 | 50.92 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1111 | 48.12 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms` | meta | critical | 1094 | 41.60 | `unaudited` | meta |
-| 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 993 | 41.46 | `audited_clean` | **retained_bounded** |
-| 7 | `anomaly_forces_time_theorem` | positive_theorem | critical | 874 | 40.27 | `unaudited` | unaudited |
+| 3 | `minimal_axioms_2026-05-03` | meta | critical | 821 | 50.68 | `unaudited` | meta |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1112 | 48.62 | `audited_clean` | **retained** |
+| 5 | `minimal_axioms` | meta | critical | 978 | 41.44 | `unaudited` | meta |
+| 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 852 | 41.24 | `audited_clean` | **retained_bounded** |
+| 7 | `anomaly_forces_time_theorem` | positive_theorem | critical | 873 | 40.27 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 190 | 39.08 | `unaudited` | unaudited |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 725 | 38.00 | `unaudited` | unaudited |
 | 10 | `yt_ew_color_projection_theorem` | no_go | critical | 567 | 37.65 | `audited_clean` | **retained_no_go** |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1082 | 37.58 | `audited_clean` | **retained** |
-| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 998 | 36.96 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1033 | 37.51 | `audited_clean` | **retained** |
+| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 842 | 36.72 | `audited_clean` | **retained** |
 | 13 | `plaquette_self_consistency_note` | bounded_theorem | critical | 778 | 34.60 | `audited_clean` | **retained_bounded** |
 | 14 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 188 | 33.56 | `unaudited` | unaudited |
 | 15 | `three_generation_structure_note` | bounded_theorem | critical | 714 | 33.48 | `audited_clean` | **retained_bounded** |
-| 16 | `cpt_exact_note` | positive_theorem | critical | 935 | 33.37 | `audited_clean` | **retained** |
-| 17 | `minimal_axioms_2026-04-11` | meta | critical | 987 | 32.95 | `unaudited` | meta |
-| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 579 | 32.18 | `unaudited` | unaudited |
-| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 939 | 31.88 | `audited_renaming` | ~~audited_renaming~~ |
+| 16 | `minimal_axioms_2026-04-11` | meta | critical | 861 | 32.25 | `unaudited` | meta |
+| 17 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 579 | 32.18 | `unaudited` | unaudited |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 390 | 32.11 | `audited_clean` | **retained** |
+| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 622 | 31.28 | `audited_renaming` | ~~audited_renaming~~ |
 | 20 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 577 | 31.18 | `unaudited` | unaudited |
 | 21 | `left_handed_charge_matching_note` | decoration | critical | 698 | 30.95 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 233 | 29.87 | `unaudited` | unaudited |
 | 23 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 199 | 29.14 | `unaudited` | unaudited |
 | 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 634 | 28.31 | `unaudited` | unaudited |
-| 25 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 952 | 27.90 | `unaudited` | unaudited |
+| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 612 | 27.76 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -1076,7 +1076,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1929,19 +1928,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.  _(class `A`)_
 - **chain closes:** True — At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.
 - **rationale:** The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes.
-- **auditor confidence:** high
-
-### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
-
-- **Note:** [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`](../../docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Free U=1 staggered fermions in 1+1d with finite periodic L_s, m>0, eta_0=1, eta_1(t)=(-1)^t: the single-step action transfer matrices are non-positive, while the 2-step blocked free Fock transfer operator built from the decaying action eigenvalue is positive Hermitian.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260530-130752-9079b3a9-axiom_first_rp_two_step_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The 2-step kernel has eigenvalues e^{±2E(p)} with sinh^2 E(p)=m^2+sin^2 p, so the decaying single-particle kernel lambda_p=e^{-2E(p)} second-quantizes to T_hat^2=tensor_p diag(1,lambda_p)=B^dag B with H_hat=sum_p E(p)a_p^dag a_p>=0.  _(class `C`)_
-- **chain closes:** False — The core transfer-matrix derivation closes on its own restricted free-case terms: direct algebra gives trace(T_odd T_even)=2+4(m^2+sin^2 p)=2 cosh(2E) and determinant 1, hence eigenvalues e^{±2E}, and the diagonal Fock lift is positive. The packet nevertheless fails the binding formula-inventory clean standard because the source note's Honest status reports PASS=4 FAIL=0 while the runner, scorecard, and validation section report C1-C5 with PASS=5 FAIL=0.
-- **rationale:** The runner source is substantive rather than a print-only certificate: it constructs the action-derived single-step matrices, computes the 2-step spectrum, builds the diagonal Fock-space Gamma operator, and checks the B^dag B and OS-Gram consequences without importing external comparators or hard-coded contested values. Independent formula checks support the displayed transfer-matrix spectrum and positivity mechanism for the scoped free finite-volume case. However, the strict current-skill formula inventory exposes a source-packet quantitative drift in the validation prose: PASS=4 FAIL=0 is false as written after C5 was added. That stale displayed count prevents audited_clean until the note is corrected and re-audited.
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

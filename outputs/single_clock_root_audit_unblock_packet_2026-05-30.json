@@ -4,7 +4,7 @@
   "fail": 0,
   "checks": [
     {
-      "name": "packet contains source-boundary phrase: **Claim type:** bounded_theorem",
+      "name": "packet contains source-boundary phrase: **Claim type:** meta",
       "status": "PASS",
       "detail": ""
     },
@@ -181,7 +181,7 @@
   ],
   "source_firewall": {
     "required": [
-      "**Claim type:** bounded_theorem",
+      "**Claim type:** meta",
       "audit-unblock packet",
       "not independent blockers for the time-count use case",
       "remaining root is the action/temporal-transfer axis",

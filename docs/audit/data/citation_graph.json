@@ -446,19 +446,19 @@
     },
     {
       "from": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30",
-      "to": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30"
-    },
-    {
-      "from": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30",
-      "to": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26"
-    },
-    {
-      "from": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30",
-      "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+      "to": "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30"
     },
     {
       "from": "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
       "to": "cpt_exact_note"
+    },
+    {
+      "from": "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30",
+      "to": "graph_first_selector_derivation_note"
+    },
+    {
+      "from": "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30",
+      "to": "graph_first_su3_integration_note"
     },
     {
       "from": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
@@ -963,6 +963,10 @@
     {
       "from": "anomaly_forces_time_theorem",
       "to": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30"
+    },
+    {
+      "from": "anomaly_forces_time_theorem",
+      "to": "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30"
     },
     {
       "from": "anomaly_forces_time_theorem",
@@ -1515,38 +1519,6 @@
     {
       "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "to": "single_clock_root_audit_unblock_packet_note_2026-05-30"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "emergent_lorentz_invariance_note"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "lorentz_kernel_positive_closure_note"
-    },
-    {
-      "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "to": "minimal_axioms_2026-04-11"
     },
     {
       "from": "axiom_first_sm_anomaly_cancellation_complete_note_2026-05-17",
@@ -40524,12 +40496,10 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
-        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
-        "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+        "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "28800a861c4dc520c1a31efce243b8c02d0fd3e9830f22bd4caee9317df9cb5d",
+      "note_hash": "675a953a869576c3d83e3b7241883462b18a4c6bf9b30ad3541c50f541e84c5e",
       "path": "docs/ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md",
       "runner_path": "scripts/frontier_abj_from_framework_action_u1_cubic.py",
       "title": "ABJ From Framework Action: U(1)^3 Cubic Anomaly Theorem"
@@ -40547,6 +40517,21 @@
       "path": "docs/ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28.md",
       "runner_path": "scripts/abj_residual_gw_not_necessary_runner.py",
       "title": "ABJ Residual Correction: Ginsparg-Wilson Is Not the Obstruction (eps-Gap + chi=0)"
+    },
+    "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30": {
+      "claim_id": "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "graph_first_selector_derivation_note",
+        "graph_first_su3_integration_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "31a8f666c592b247d22d9aa25ae3b3b83f4468a728b995e01254214026a7d3ce",
+      "path": "docs/ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_abj_scale_free_chiral_u1_trace_surface.py",
+      "title": "ABJ Scale-Free Chiral U(1) Trace Surface Theorem"
     },
     "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30": {
       "claim_id": "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30",
@@ -42474,12 +42459,13 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30",
+        "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "45df958a6081958525c4907d863692e41b6853285e03c09d35347fe8cb50c46c",
+      "note_hash": "c46348c8eee361d6a67d27efe39364a58ae364d6414a616bc3b4613149c47bf6",
       "path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
       "runner_path": "scripts/frontier_anomaly_forces_time_action_abj_closure.py",
       "title": "Anomaly-Cancellation Consistency Bridge for 3+1 Spacetime"
@@ -43322,12 +43308,12 @@
     },
     "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": {
       "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0804ac7d6d48ab464b5abb789c8dade65dce49ccff84b09b46f3d824f6a304bd",
+      "note_hash": "71c9f151478073916e26d7409a05611fff89e9909f6a571c930cf940120c5e0b",
       "path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
       "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
       "title": "Free Staggered 2-Step Blocked Transfer-Matrix Positivity (In-Repo Derivation)"
@@ -43335,24 +43321,16 @@
     "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": {
       "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem (lattice form); bounded_theorem (continuum-limit",
+      "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "single_clock_root_audit_unblock_packet_note_2026-05-30",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "emergent_lorentz_invariance_note",
-        "lorentz_kernel_positive_closure_note",
-        "minimal_axioms_2026-04-11"
+        "single_clock_root_audit_unblock_packet_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "abc56d93b0c7ff4721e9ac9da4ace095986454f85d07f63b378bf61d93cc0633",
+      "note_hash": "793347bdddbbbb48db5afa6088194136c5602a69586d7d67464e33cd4d7cc311",
       "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
-      "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3"
+      "title": "Axiom-First Single-Clock Codimension-1 Evolution Theorem"
     },
     "axiom_first_sm_anomaly_cancellation_complete_note_2026-05-17": {
       "claim_id": "axiom_first_sm_anomaly_cancellation_complete_note_2026-05-17",
@@ -78171,12 +78149,12 @@
     },
     "single_clock_root_audit_unblock_packet_note_2026-05-30": {
       "claim_id": "single_clock_root_audit_unblock_packet_note_2026-05-30",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "023dabce6dce9e1126908add4d95d52097f1eabd845d9101dfc3e2687e7ada42",
+      "note_hash": "5b52b719e0a483e01452462ecb677b124fe800e70f94b4799ca056c5654938d0",
       "path": "docs/SINGLE_CLOCK_ROOT_AUDIT_UNBLOCK_PACKET_NOTE_2026-05-30.md",
       "runner_path": "scripts/frontier_single_clock_root_audit_unblock_packet.py",
       "title": "Single-Clock Root Audit-Unblock Packet"
@@ -88036,27 +88014,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 706,
+      "bounded_theorem": 704,
       "decoration": 1,
-      "meta": 199,
+      "meta": 200,
       "no_go": 87,
       "none": 1410,
       "open_gate": 58,
-      "positive_theorem": 177
+      "positive_theorem": 179
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1106,
+      "bounded_theorem": 1104,
       "decoration": 1,
-      "meta": 199,
+      "meta": 200,
       "no_go": 191,
       "none": 422,
       "open_gate": 133,
-      "positive_theorem": 586
+      "positive_theorem": 588
     },
-    "edge_count": 10032,
-    "leaf_count": 828,
-    "node_count": 2638,
+    "edge_count": 10025,
+    "leaf_count": 829,
+    "node_count": 2639,
     "root_count": 877,
-    "runners_with_path": 2212
+    "runners_with_path": 2213
   }
 }

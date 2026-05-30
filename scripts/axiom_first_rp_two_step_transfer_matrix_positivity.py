@@ -109,7 +109,7 @@ The intended SU(3)-gauged staggered closure is recorded as the reduction target
  x (positive determinant weight det(M_KS + m I) >= m^n > 0 config-by-config,
     retained dep STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
  x (gauge/bosonic-half Cauchy-Schwarz norm-square,
-    retained_bounded dep
+    separate gauge-half row
     REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10).
 The piece newly supplied in-repo is the fermion-sector 2-step transfer-matrix
 positivity (P1)-(P3) + R2 above. The interacting gauge case is not re-derived
@@ -500,7 +500,7 @@ def main() -> int:
     print("      (fermion-sector 2-step transfer positivity -- THIS runner, C1-C4, NEW)")
     print("    x (det(M_KS + m I) >= m^n > 0 config-by-config -- retained dep:")
     print("       STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)")
-    print("    x (gauge-half Cauchy-Schwarz norm-square -- retained_bounded dep:")
+    print("    x (gauge-half Cauchy-Schwarz norm-square -- separate gauge-half row:")
     print("       REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)")
     print("    Newly supplied in-repo: the free fermion-sector 2-step transfer positivity.")
     print("    Interacting gauge closure is scoped to this reduction target.")

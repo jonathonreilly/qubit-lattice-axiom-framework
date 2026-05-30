@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ANOMALY_FORCES_TIME_THEOREM.md"
 ABJ_NOTE = ROOT / "docs" / "ABJ_FROM_FRAMEWORK_ACTION_U1_CUBIC_THEOREM_NOTE_2026-05-30.md"
+TRACE_NOTE = ROOT / "docs" / "ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 OUTPUT = ROOT / "outputs" / "anomaly_forces_time_action_abj_closure_2026-05-30.json"
 
@@ -35,25 +36,20 @@ def load_rows() -> dict[str, dict[str, object]]:
 
 
 def anomaly_arithmetic() -> dict[str, str]:
-    y_q = Fraction(1, 3)
-    y_l = Fraction(-1, 1)
-    tr_y = 6 * y_q + 2 * y_l
-    tr_y3 = 6 * y_q**3 + 2 * y_l**3
-    tr_su3_y = 2 * Fraction(1, 2) * y_q
-    tr_su2_y = 3 * Fraction(1, 2) * y_q + Fraction(1, 2) * y_l
-    tr_su3_3 = Fraction(2, 1)
-    check("LH Tr[Y] vanishes", tr_y == 0, str(tr_y))
-    check("LH Tr[Y^3] = -16/9", tr_y3 == Fraction(-16, 9), str(tr_y3))
-    check("LH Tr[SU(3)^2Y] = 1/3", tr_su3_y == Fraction(1, 3), str(tr_su3_y))
-    check("LH Tr[SU(2)^2Y] vanishes", tr_su2_y == 0, str(tr_su2_y))
-    check("LH Tr[SU(3)^3] = 2", tr_su3_3 == 2, str(tr_su3_3))
-    check("U(1)^3 branch alone gives nonzero ABJ obstruction", tr_y3 != 0, str(tr_y3))
+    y_plus = Fraction(1, 1)
+    y_minus = Fraction(-3, 1)
+    tr_y0 = 6 * y_plus + 2 * y_minus
+    tr_y0_3 = 6 * y_plus**3 + 2 * y_minus**3
+    optional_scaled = tr_y0_3 * Fraction(1, 27)
+    check("scale-free Tr[Y0] vanishes", tr_y0 == 0, str(tr_y0))
+    check("scale-free Tr[Y0^3] = -48", tr_y0_3 == Fraction(-48, 1), str(tr_y0_3))
+    check("U(1)^3 branch alone gives nonzero ABJ obstruction for lambda != 0", tr_y0_3 != 0, str(tr_y0_3))
+    check("optional lambda=1/3 rescale gives -16/9 but is not load-bearing", optional_scaled == Fraction(-16, 9), str(optional_scaled))
     return {
-        "TrY": str(tr_y),
-        "TrY3": str(tr_y3),
-        "TrSU3Y": str(tr_su3_y),
-        "TrSU2Y": str(tr_su2_y),
-        "TrSU3cubic": str(tr_su3_3),
+        "TrY0": str(tr_y0),
+        "TrY0_3": str(tr_y0_3),
+        "TrLambdaY0_3": "-48*lambda^3",
+        "optional_lambda_one_third_trace": str(optional_scaled),
     }
 
 
@@ -76,11 +72,14 @@ def dimension_intersection() -> dict[str, object]:
 def source_firewall() -> dict[str, object]:
     parent = NOTE.read_text()
     abj = ABJ_NOTE.read_text()
+    trace = TRACE_NOTE.read_text()
     required_parent = [
         "**Claim type:** positive_theorem",
         "framework-action ABJ theorem",
         "ABJ from framework action",
+        "ABJ scale-free chiral U(1) trace surface theorem",
         "abj_import_retired_on_framework_action_surface: true",
+        "bounded_hypercharge_or_alpha_rows_load_bearing: false",
         "standard_theorem_bridge_load_bearing: false",
         "accepted_premise_packet_load_bearing: false",
         "unbounded_positive_theorem_allowed: true",
@@ -92,6 +91,7 @@ def source_firewall() -> dict[str, object]:
         "ABJ accepted premise",
         "assume the named accepted premise",
         "bare external admission on current `main`",
+        "Assume the framework's retained/bounded matter-content surface",
     ]
     for phrase in required_parent:
         check(f"parent contains action-ABJ phrase: {phrase}", phrase in parent)
@@ -101,17 +101,34 @@ def source_firewall() -> dict[str, object]:
     required_abj = [
         "**Claim type:** positive_theorem",
         "framework_native_abj_derivation_closed: true",
+        "bounded_alpha_or_hypercharge_row_load_bearing: false",
         "standard_theorem_bridge_load_bearing: false",
         "accepted_premise_packet_load_bearing: false",
         "No 3+1 abelian local counterterm",
     ]
     for phrase in required_abj:
         check(f"ABJ action theorem contains firewall phrase: {phrase}", phrase in abj)
-    return {"required_parent": required_parent, "forbidden_parent": forbidden_parent, "required_abj": required_abj}
+    required_trace = [
+        "**Claim type:** positive_theorem",
+        "Tr[Y0^3] = -48",
+        "No `alpha = 1/3`",
+        "No GMN",
+        "No electron-charge",
+        "No physical-SM hypercharge",
+    ]
+    for phrase in required_trace:
+        check(f"scale-free trace theorem contains firewall phrase: {phrase}", phrase in trace)
+    return {
+        "required_parent": required_parent,
+        "forbidden_parent": forbidden_parent,
+        "required_abj": required_abj,
+        "required_trace": required_trace,
+    }
 
 
 def ledger_checks(rows: dict[str, dict[str, object]]) -> dict[str, dict[str, object]]:
     required = {
+        "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30": "scale-free trace theorem row present",
         "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30": "ABJ action theorem row present",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10": "Clifford chirality parity retained",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": "single-clock theorem present",
@@ -127,6 +144,8 @@ def ledger_checks(rows: dict[str, dict[str, object]]) -> dict[str, dict[str, obj
                 "effective_status": row.get("effective_status"),
                 "note_path": row.get("note_path"),
             }
+    trace_row = rows.get("abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30", {})
+    check("scale-free trace theorem seeds as positive_theorem", trace_row.get("claim_type") == "positive_theorem", str(trace_row.get("claim_type")))
     abj = rows.get("abj_from_framework_action_u1_cubic_theorem_note_2026-05-30", {})
     check("ABJ action theorem seeds as positive_theorem", abj.get("claim_type") == "positive_theorem", str(abj.get("claim_type")))
     cliff = rows.get("clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10", {})

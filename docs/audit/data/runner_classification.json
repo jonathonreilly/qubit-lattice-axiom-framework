@@ -219,13 +219,13 @@
     "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30": {
       "assert_count": 1,
       "counts": {
-        "A": 1,
+        "A": 2,
         "B": 1,
         "C": 0,
         "D": 2
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "A",
       "runner": "scripts/frontier_abj_from_framework_action_u1_cubic.py"
     },
     "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": {
@@ -239,6 +239,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/abj_residual_gw_not_necessary_runner.py"
+    },
+    "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 9,
+        "B": 2,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_abj_scale_free_chiral_u1_trace_surface.py"
     },
     "abj_standard_theorem_bridge_for_anomaly_forces_time_note_2026-05-30": {
       "assert_count": 1,
@@ -676,7 +688,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 3,
+        "B": 4,
         "C": 0,
         "D": 0
       },
@@ -32548,13 +32560,28 @@
         "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30"
       ],
       "counts": {
-        "A": 1,
+        "A": 2,
         "B": 1,
         "C": 0,
         "D": 2
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_abj_scale_free_chiral_u1_trace_surface.py": {
+      "assert_count": 1,
+      "claims": [
+        "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 2,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_abj_standard_theorem_bridge_for_anomaly_forces_time.py": {
@@ -32759,7 +32786,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 3,
+        "B": 4,
         "C": 0,
         "D": 0
       },
@@ -58376,14 +58403,14 @@
   "stats": {
     "decoration_candidates": 358,
     "dominant_class_distribution": {
-      "A": 268,
+      "A": 270,
       "B": 298,
       "C": 779,
-      "D": 316,
+      "D": 315,
       "none": 444
     },
-    "runners_classified": 2105,
+    "runners_classified": 2106,
     "runners_with_C": 1026,
-    "runners_with_D": 631
+    "runners_with_D": 632
   }
 }

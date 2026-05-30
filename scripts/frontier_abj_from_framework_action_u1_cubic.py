@@ -3,7 +3,7 @@
 
 This runner checks the algebraic core of the action-surface theorem:
 
-1. framework left-handed cubic trace Tr[Y^3] = -16/9;
+1. framework scale-free cubic trace Tr[(lambda Y0)^3] = -48 lambda^3;
 2. Wick-rotated 3+1 gamma/heat-kernel spin trace is nonzero and epsilon-shaped;
 3. Gaussian integral supplies the local 3+1 heat-kernel denominator;
 4. the 3+1 abelian local counterterm space cannot produce c F^2.
@@ -128,14 +128,24 @@ def verify_gamma_heat_kernel() -> dict[str, object]:
 
 
 def verify_framework_trace() -> dict[str, str]:
-    yq = Fraction(1, 3)
-    yl = Fraction(-1, 1)
-    tr_y = 6 * yq + 2 * yl
-    tr_y3 = 6 * yq**3 + 2 * yl**3
-    check("framework LH Tr[Y] = 0", tr_y == 0, str(tr_y))
-    check("framework LH Tr[Y^3] = -16/9", tr_y3 == Fraction(-16, 9), str(tr_y3))
-    check("framework LH U(1)^3 anomaly coefficient is nonzero", tr_y3 != 0, str(tr_y3))
-    return {"TrY": str(tr_y), "TrY3": str(tr_y3)}
+    y_plus = Fraction(1, 1)
+    y_minus = Fraction(-3, 1)
+    tr_y0 = 6 * y_plus + 2 * y_minus
+    tr_y0_3 = 6 * y_plus**3 + 2 * y_minus**3
+    lam = sp.symbols("lambda")
+    tr_scaled = sp.simplify(tr_y0_3 * lam**3)
+    optional_sm_scale = sp.Rational(1, 27) * tr_y0_3
+    check("framework primitive Tr[Y0] = 0", tr_y0 == 0, str(tr_y0))
+    check("framework primitive Tr[Y0^3] = -48", tr_y0_3 == Fraction(-48, 1), str(tr_y0_3))
+    check("framework scale-free Tr[(lambda Y0)^3] = -48 lambda^3", tr_scaled == -48 * lam**3, str(tr_scaled))
+    check("framework U(1)^3 anomaly coefficient is nonzero for lambda != 0", tr_y0_3 != 0, str(tr_y0_3))
+    check("optional non-load-bearing lambda=1/3 rescale gives -16/9", optional_sm_scale == sp.Rational(-16, 9), str(optional_sm_scale))
+    return {
+        "TrY0": str(tr_y0),
+        "TrY0_3": str(tr_y0_3),
+        "Tr_lambda_Y0_3": str(tr_scaled),
+        "optional_lambda_one_third_trace": str(optional_sm_scale),
+    }
 
 
 def wedge_degree_zero_counterterm_check() -> dict[str, object]:
@@ -171,7 +181,8 @@ def source_firewall() -> dict[str, object]:
         "**Claim type:** positive_theorem",
         "ABJ anomaly-to-inconsistency step as an admitted or",
         "standard-theorem import",
-        "Tr_LH[Y^3] = -16/9",
+        "Tr_LH[(lambda Y0)^3] = -48 lambda^3 != 0",
+        "ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md",
         "abj_import_retired_on_framework_action_surface: true",
         "standard_theorem_bridge_load_bearing: false",
         "accepted_premise_packet_load_bearing: false",
@@ -182,8 +193,9 @@ def source_firewall() -> dict[str, object]:
         "accepted-premise packet entry",
         "standard theorem of chiral gauge QFT, and therefore",
         "PDG",
-        "Monte Carlo",
+        "Monte Carlo measurement input",
         "observed spacetime",
+        "physical-SM hypercharge identification chain",
     ]
     for phrase in required:
         check(f"source note contains firewall phrase: {phrase}", phrase in text)

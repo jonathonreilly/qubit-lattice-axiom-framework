@@ -1,6 +1,6 @@
 {
   "claim": "anomaly-forces-time action-ABJ closure",
-  "pass": 33,
+  "pass": 43,
   "fail": 0,
   "checks": [
     {
@@ -19,7 +19,17 @@
       "detail": ""
     },
     {
+      "name": "parent contains action-ABJ phrase: ABJ scale-free chiral U(1) trace surface theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
       "name": "parent contains action-ABJ phrase: abj_import_retired_on_framework_action_surface: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parent contains action-ABJ phrase: bounded_hypercharge_or_alpha_rows_load_bearing: false",
       "status": "PASS",
       "detail": ""
     },
@@ -69,12 +79,22 @@
       "detail": ""
     },
     {
+      "name": "parent excludes bounded/import phrase: Assume the framework's retained/bounded matter-content surface",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
       "name": "ABJ action theorem contains firewall phrase: **Claim type:** positive_theorem",
       "status": "PASS",
       "detail": ""
     },
     {
       "name": "ABJ action theorem contains firewall phrase: framework_native_abj_derivation_closed: true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ABJ action theorem contains firewall phrase: bounded_alpha_or_hypercharge_row_load_bearing: false",
       "status": "PASS",
       "detail": ""
     },
@@ -94,32 +114,52 @@
       "detail": ""
     },
     {
-      "name": "LH Tr[Y] vanishes",
+      "name": "scale-free trace theorem contains firewall phrase: **Claim type:** positive_theorem",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "scale-free trace theorem contains firewall phrase: Tr[Y0^3] = -48",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "scale-free trace theorem contains firewall phrase: No `alpha = 1/3`",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "scale-free trace theorem contains firewall phrase: No GMN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "scale-free trace theorem contains firewall phrase: No electron-charge",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "scale-free trace theorem contains firewall phrase: No physical-SM hypercharge",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "scale-free Tr[Y0] vanishes",
       "status": "PASS",
       "detail": "0"
     },
     {
-      "name": "LH Tr[Y^3] = -16/9",
+      "name": "scale-free Tr[Y0^3] = -48",
       "status": "PASS",
-      "detail": "-16/9"
+      "detail": "-48"
     },
     {
-      "name": "LH Tr[SU(3)^2Y] = 1/3",
+      "name": "U(1)^3 branch alone gives nonzero ABJ obstruction for lambda != 0",
       "status": "PASS",
-      "detail": "1/3"
+      "detail": "-48"
     },
     {
-      "name": "LH Tr[SU(2)^2Y] vanishes",
-      "status": "PASS",
-      "detail": "0"
-    },
-    {
-      "name": "LH Tr[SU(3)^3] = 2",
-      "status": "PASS",
-      "detail": "2"
-    },
-    {
-      "name": "U(1)^3 branch alone gives nonzero ABJ obstruction",
+      "name": "optional lambda=1/3 rescale gives -16/9 but is not load-bearing",
       "status": "PASS",
       "detail": "-16/9"
     },
@@ -139,6 +179,11 @@
       "detail": "[1]"
     },
     {
+      "name": "scale-free trace theorem row present",
+      "status": "PASS",
+      "detail": "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30"
+    },
+    {
       "name": "ABJ action theorem row present",
       "status": "PASS",
       "detail": "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30"
@@ -152,6 +197,11 @@
       "name": "single-clock theorem present",
       "status": "PASS",
       "detail": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "name": "scale-free trace theorem seeds as positive_theorem",
+      "status": "PASS",
+      "detail": "positive_theorem"
     },
     {
       "name": "ABJ action theorem seeds as positive_theorem",
@@ -174,7 +224,9 @@
       "**Claim type:** positive_theorem",
       "framework-action ABJ theorem",
       "ABJ from framework action",
+      "ABJ scale-free chiral U(1) trace surface theorem",
       "abj_import_retired_on_framework_action_surface: true",
+      "bounded_hypercharge_or_alpha_rows_load_bearing: false",
       "standard_theorem_bridge_load_bearing: false",
       "accepted_premise_packet_load_bearing: false",
       "unbounded_positive_theorem_allowed: true"
@@ -185,22 +237,31 @@
       "ABJ standard-theorem bridge + chiral matter surface",
       "ABJ accepted premise",
       "assume the named accepted premise",
-      "bare external admission on current `main`"
+      "bare external admission on current `main`",
+      "Assume the framework's retained/bounded matter-content surface"
     ],
     "required_abj": [
       "**Claim type:** positive_theorem",
       "framework_native_abj_derivation_closed: true",
+      "bounded_alpha_or_hypercharge_row_load_bearing: false",
       "standard_theorem_bridge_load_bearing: false",
       "accepted_premise_packet_load_bearing: false",
       "No 3+1 abelian local counterterm"
+    ],
+    "required_trace": [
+      "**Claim type:** positive_theorem",
+      "Tr[Y0^3] = -48",
+      "No `alpha = 1/3`",
+      "No GMN",
+      "No electron-charge",
+      "No physical-SM hypercharge"
     ]
   },
   "anomaly_traces": {
-    "TrY": "0",
-    "TrY3": "-16/9",
-    "TrSU3Y": "1/3",
-    "TrSU2Y": "0",
-    "TrSU3cubic": "2"
+    "TrY0": "0",
+    "TrY0_3": "-48",
+    "TrLambdaY0_3": "-48*lambda^3",
+    "optional_lambda_one_third_trace": "-16/9"
   },
   "dimension_intersection": {
     "d_s": 3,
@@ -220,6 +281,12 @@
     ]
   },
   "ledger_rows": {
+    "abj_scale_free_chiral_u1_trace_surface_theorem_note_2026-05-30": {
+      "claim_type": "positive_theorem",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "note_path": "docs/ABJ_SCALE_FREE_CHIRAL_U1_TRACE_SURFACE_THEOREM_NOTE_2026-05-30.md"
+    },
     "abj_from_framework_action_u1_cubic_theorem_note_2026-05-30": {
       "claim_type": "positive_theorem",
       "audit_status": "unaudited",

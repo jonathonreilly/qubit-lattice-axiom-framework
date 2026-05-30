@@ -1,7 +1,7 @@
 # Single-Clock Root Audit-Unblock Packet
 
 **Date:** 2026-05-30
-**Claim type:** bounded_theorem
+**Claim type:** meta
 **Status authority:** independent audit lane only. This note is an
 audit-unblock packet; it does not set or predict an audit verdict.
 **Primary runner:**
@@ -136,7 +136,7 @@ It does **not** close:
 ## Audit Handoff
 
 ```yaml
-proposed_claim_type: bounded_theorem
+proposed_claim_type: meta
 actual_current_surface_status: root-audit-unblock packet
 target_claim_id: axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03
 trace_class: direct_dependency_narrowing

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1129 |
+| unaudited | 1128 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 941 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1365 |
+| `unaudited` | 1364 |
 
 | claim_type | count |
 |---|---:|
@@ -1135,6 +1135,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -16427,6 +16428,21 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **chain closes:** True — Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict.
 - **rationale:** Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict.
 - **auditor confidence:** judicial_panel_majority
+
+### `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The conditional algebraic cancellation y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare given the two readouts D1 and D2 with equal single-vertex tadpole power.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-004148-d4a120ac-yt_ward_ratio_tadpole_ca`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From D1 and D2, (y_t_bare / sqrt(u_0)) / (g_bare / sqrt(u_0)) simplifies to y_t_bare / g_bare, so the common tadpole factor cancels.  _(class `A`)_
+- **chain closes:** False — The D1/D2-to-P1 algebra closes exactly. The restricted packet does not close the antecedent that the cited YT_EW_COLOR_PROJECTION_THEOREM supplies the common CMT single-vertex tadpole readout for both g_s and y_t; the provided authority is a kappa-family no-go and does not contain the cited D14/D15 CMT content.
+- **rationale:** The runner genuinely performs exact symbolic class-A checks of the cancellation and corollaries after hardwiring D1 and D2, and those algebraic formulas are correct. However, the source note still imports the common readout normalization and equal-n_link bridge as an admitted premise rather than closing it from the one-hop authority in the packet. The cited authority as provided does not supply the claimed CMT D14/D15 material, so the chain is only conditional on D1 and D2.
+- **open / conditional deps cited:**
+  - `YT_EW_COLOR_PROJECTION_THEOREM.md`
+- **auditor confidence:** high
 
 ### `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`
 

@@ -1106,6 +1106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lorentz_boost_covariance_3plus1d_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -9355,6 +9356,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** In the continuum limit a -> 0, the lattice spectral integral with E_lat(p) converges to the continuum massive-scalar integral W_cont(Δt,Δx;m)=K_0(m sqrt(-s^2))/(2π) for spacelike s^2<0, which depends only on the SO(1,1) invariant s^2.  _(class `A`)_
 - **chain closes:** True — The note’s core theorem closes from standard algebraic properties of the continuum relativistic dispersion, invariant on-shell measure dp/E, and the spacelike K_0 form. The cited 3+1D dispersion note is contextual rather than load-bearing for this 1+1D free-scalar proof.
 - **rationale:** The runner source performs nontrivial numerical and algebraic checks of the lattice dispersion, continuum limit, invariant measure, K_0 spacelike form, and boost covariance; it is not a print-only or tuned numerical-match runner. Several final Part 7 checks are assertive summaries, but the load-bearing analytic and numerical checks occur earlier and support the restricted theorem surface. The only cited authority is retained_bounded and is not needed as a load-bearing premise for the 1+1D free-scalar covariance result, so no dependency downgrade is triggered.
+- **auditor confidence:** high
+
+### `lorentz_boost_covariance_3plus1d_theorem_note`
+
+- **Note:** [`LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md`](../../docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Free-scalar Hamiltonian-lattice continuum-limit 3+1D two-point covariance and structural finite-a cubic-harmonic LV characterization, not an unconditional Planck-scale phenomenological readout.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-detailed-lorentz-20260529-lorentz_boost_covariance`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the strict continuum limit, the lattice spectral integral converges to the continuum on-shell integral with E^2=m^2+|p|^2 and invariant measure d^3p/(2E_p), so W_cont depends only on s^2.  _(class `A`)_
+- **chain closes:** False — The narrow free-scalar continuum covariance core is supported by the stated lattice dispersion, invariant on-shell measure, and spacelike K1 form. The full note as written still imports open or not-retained framing for the Planck-scale physical readout and finite-a light-cone/Lieb-Robinson caveat.
+- **rationale:** The runner performs substantive checks of lattice dispersion symmetries, continuum-form invariance, Euclidean convergence, and the corrected normalized K4 decomposition, but several combined-theorem and dependency-link checks are narrative assertions rather than independent derivations. The one-hop LIGHT_CONE_FRAMING_NOTE.md authority is marked unaudited, and the Planck-pin/unit-map needed for the (E/M_Pl)^2 and experimental-sensitivity readout is explicitly not retained in the restricted packet. Thus the continuum free-scalar core is plausibly closed, but the source note's broader stated package remains conditional.
+- **open / conditional deps cited:**
+  - `LIGHT_CONE_FRAMING_NOTE.md`
+  - `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md`
 - **auditor confidence:** high
 
 ### `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`

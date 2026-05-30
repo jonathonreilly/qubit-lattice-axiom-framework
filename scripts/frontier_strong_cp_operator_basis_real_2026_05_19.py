@@ -6,15 +6,17 @@ Single-Plaquette CP-Odd Slot Rejection + Quark-Mass Orientation Runner
 Companion to:
   docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
 
-PARENT TARGET:
-  docs/STRONG_CP_THETA_ZERO_NOTE.md (audited_conditional, 124 transitive
-  descendants). The audit verdict identified that the two load-bearing
-  pieces (no admissible CP-odd slot, real positive quark-mass orientation)
-  were taken as action-class definitions rather than derivations.
+PARENT CONTEXT:
+  The strong-CP theta-zero parent row is audited_conditional with many
+  descendants. The audit verdict identified that the two load-bearing pieces
+  (no admissible CP-odd slot, real positive quark-mass orientation) were taken
+  as action-class definitions rather than derivations. This runner is support
+  for that route, not a load-bearing dependency on the parent row.
 
 WHAT THIS RUNNER DOES:
   Eight verification gates that EXHIBIT the bounded operator-slot rejection and
-  the mass-orientation selection by constructing the candidate forbidden
+  the mass-orientation selection under supplied real-positive Wilson and
+  scalar-mass action-class premises by constructing the candidate forbidden
   slots on actual SU(3) configurations and rejecting them.
 
   V1 — Gauge-invariant plaquette-local operator enumeration
@@ -45,7 +47,7 @@ WHAT THIS RUNNER DOES:
 ANTI-OVERCLAIM:
   - Does NOT claim dynamical theta-selection in non-canonical-normalization.
   - Does NOT claim axion-model exclusion beyond the retained surface.
-  - Operator-theoretic content is bounded to the retained single-plaquette
+  - Operator-theoretic content is bounded to the supplied single-plaquette
     Wilson / real-positive-measure surface; no black-box
     Vafa-Witten / Leutwyler-Smilga / Osterwalder-Schrader citations as proof
     inputs.
@@ -925,7 +927,7 @@ def main() -> int:
         "\n"
         " Companion runner to:\n"
         "   docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md\n"
-        " Parent target: docs/STRONG_CP_THETA_ZERO_NOTE.md (audited_conditional)\n"
+        " Parent context: strong-CP theta-zero row (not a load-bearing dependency)\n"
         "\n"
         " 8 verification gates exhibiting slot-construction + rejection on SU(3).\n"
     )

@@ -1,0 +1,47 @@
+loop_slug: strong-cp-operator-basis-scope-20260530
+date: 2026-05-30
+mode: science-fix
+target_claim_id: strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19
+target_note: docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
+target_runner: scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py
+goal: "Repair the audited conditional strong-CP operator-basis support row without adding axioms."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: "Conditional on supplied real-positive Wilson measure selector and supplied scalar-mass-only action-class boundary."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The branch does not derive the real-positive Wilson selector or scalar-mass action-class boundary."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: "Keep the operator-slot and mass-orientation algebra; remove hidden parent dependencies and expose supplied premises."
+files_touched:
+  - docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
+  - scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py
+  - logs/runner-cache/frontier_strong_cp_operator_basis_real_2026_05_19.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/effective_status_summary.json
+open_imports:
+  - "Real-positive Wilson measure selector."
+  - "Scalar-mass-only action-class boundary."
+verification:
+  - "python3 -m py_compile scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py -> GATES: PASS=8 FAIL=0; SUB-CHECK PASS=39 FAIL=0"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py --force --push-mode none --allow-non-main --concurrency 1"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "git diff --check"
+repo_status_after_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  audit_queue_ready: true
+  audit_queue_criticality: leaf
+next_exact_action: "Open draft review PR for strong-CP supplied-premise support repair."
+stop_condition: "PR opened and verified; then pivot to next uncovered conditional."

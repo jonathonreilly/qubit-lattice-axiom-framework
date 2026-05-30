@@ -79915,10 +79915,10 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4595e5276b49683d1e24ff79600f99076bda4eff96c4267637b69227a2bd10c6",
+      "note_hash": "c4d4eb540e41fbc8fe5d866fd3780b75964de0d9e74235dc91a4e7d31979fca2",
       "path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
       "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
-      "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface"
+      "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on a Bounded Wilson+Staggered Surface"
     },
     "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": {
       "claim_id": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",

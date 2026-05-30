@@ -23621,46 +23621,6 @@
       "to": "hubble_lane5_c1_gate_residual_premise_attack_audit_note_2026-04-28"
     },
     {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "sigma_mnu_f3_dm_cross_bound_audit_note_2026-04-28"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "hubble_lane5_two_gate_dependency_firewall_note_2026-04-27"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "dm_leptogenesis_transport_status_note_2026-05-10"
-    },
-    {
-      "from": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "to": "eta_188_structural_origin_partial_note_2026-05-03"
-    },
-    {
       "from": "signed_gravity_aps_action_origin_superselection_stability_note",
       "to": "signed_gravity_aps_locked_source_action_proposal_note"
     },
@@ -87758,6 +87718,7 @@
     "seventh_family_diagonal_boundary_note",
     "seventh_family_diagonal_note",
     "shapiro_static_discriminator_note",
+    "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
     "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
     "signed_gravity_aps_action_origin_superselection_stability_note_2026-05-17",
     "signed_gravity_aps_locked_source_action_proposal_note",

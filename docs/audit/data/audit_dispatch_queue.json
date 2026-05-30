@@ -1217,9 +1217,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_conditional",
       "actual_claim_type": "no_go",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_conditional",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1230,18 +1230,7 @@
       "audit_question": "Fresh-context provenance re-audit: the current clean no-go verdict has independence=weak. Re-audit the no-go boundary under current independence and no-go-discipline requirements.",
       "blocked_by_group_ids": [],
       "claim_id": "sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28",
-      "deps": [
-        "sigma_mnu_f3_dm_cross_bound_audit_note_2026-04-28",
-        "neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28",
-        "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
-        "hubble_lane5_two_gate_dependency_firewall_note_2026-04-27",
-        "hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28",
-        "hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29",
-        "hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29",
-        "hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29",
-        "dm_leptogenesis_transport_status_note_2026-05-10",
-        "eta_188_structural_origin_partial_note_2026-05-03"
-      ],
+      "deps": [],
       "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
       "dispatch_kind": "promotion_reaudit",
       "expected_current_audit_status": "audited_clean",
@@ -1262,7 +1251,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md",
-      "runner_path": "scripts/frontier_sigma_mnu_f3_stuck_fanout_dependency_repair.py",
+      "runner_path": "scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py",
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"

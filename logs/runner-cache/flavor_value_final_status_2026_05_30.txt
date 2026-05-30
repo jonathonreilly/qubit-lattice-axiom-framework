@@ -1,0 +1,10 @@
+flat sqrt-mass prior: the Q=2/3 balance is codim-1 / tuned, not generic:
+  mean Q = 0.460  (NOT 2/3)
+  frac within 1% of 2/3   = 0.71%
+  frac within 1% of 1/3   = 1.99%  (democratic basin)
+
+2/N vs (N-1)/N^2 at N=3: 2/N=0.6667, (N-1)/N^2=0.2222 (distinct; coincide only at... they don't)
+1/sqrt2 = 0.70711 = cos(pi/4) (Z4/Z8); genuine Z3 values: 1/2, sqrt3/2 = 0.866 -- never 1/sqrt2
+
+FINAL: Q=2/3 = block-count fixed point = the one chiral pin; reproduced-not-derived.
+Threads 1 (no native operator escape) + 2 (no non-operator derivation) both close on it.

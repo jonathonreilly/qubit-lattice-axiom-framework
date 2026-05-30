@@ -1,0 +1,150 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_connected_source_selector_scalar_lift_no_go.py
+runner_sha256: 405430a791ce005c7d629a3d82c4ae3cd281f55845a6c10176b6777a19b264ab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+Y_T CONNECTED-SOURCE SELECTOR SCALAR-LIFT NO-GO
+========================================================================================
+
+Part 1: current source surfaces and open gates
+[PASS] docs/YT_CONNECTED_SOURCE_SELECTOR_SCALAR_LIFT_NO_GO_NOTE_2026-05-29.md exists
+[PASS] docs/YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
+[PASS] docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md exists
+[PASS] docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md exists
+[PASS] docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md exists
+[PASS] docs/YT_EW_COLOR_PROJECTION_THEOREM.md exists
+[PASS] docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md exists
+[PASS] docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md exists
+[PASS] new note contains boundary phrase: exact negative boundary
+[PASS] new note contains boundary phrase: source coordinate is a color matrix `J`
+[PASS] new note contains boundary phrase: source coordinate is a scalar signed-record parameter `h`
+[PASS] new note contains boundary phrase: fixed color identity factor
+[PASS] new note contains boundary phrase: not enough to move the current scalar signed-record / one-Higgs source packet
+[PASS] new note contains boundary phrase: No-Go Discipline Gate
+[PASS] new note contains boundary phrase: N1 - Alternative route enumeration: PASS
+[PASS] new note contains boundary phrase: N2 - Wall-independence audit: PASS
+[PASS] new note contains boundary phrase: N3 - Hidden-wall scan: PASS
+[PASS] new note contains boundary phrase: N4 - Residual matching: PASS
+[PASS] new note contains boundary phrase: N5 - Rhetoric audit: PASS
+[PASS] new note contains boundary phrase: N6 - Partial-closure path scan: PASS
+[PASS] new note contains boundary phrase: N7 - Steelman: PASS
+[PASS] new note contains boundary phrase: N8 - Cross-cycle echo: PASS
+[PASS] connected selector note is explicitly conditional on source surface
+[PASS] connected selector note preserves physical source-action blocker
+[PASS] source-action note says same-surface neutral EW/Higgs authority remains open
+[PASS] signed-readout note does not select kappa
+
+Part 2: color-matrix connected source quotient
+[PASS] N=2 identity source lambda=-2 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=2 identity source lambda=0 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=2 identity source lambda=3/5 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=2 identity source lambda=7 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=2 quotient score equals full score modulo identity: {'quotient': '0', 'full_mod_identity': '0'}
+[PASS] N=2 quotient score equals full score modulo identity: {'quotient': '-1/2', 'full_mod_identity': '-1/2'}
+[PASS] N=2 quotient score equals full score modulo identity: {'quotient': '1/6', 'full_mod_identity': '1/6'}
+[PASS] N=3 identity source lambda=-2 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=3 identity source lambda=0 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=3 identity source lambda=3/5 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=3 identity source lambda=7 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=3 quotient score equals full score modulo identity: {'quotient': '0', 'full_mod_identity': '0'}
+[PASS] N=3 quotient score equals full score modulo identity: {'quotient': '-1', 'full_mod_identity': '-1'}
+[PASS] N=3 quotient score equals full score modulo identity: {'quotient': '1/3', 'full_mod_identity': '1/3'}
+[PASS] N=4 identity source lambda=-2 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=4 identity source lambda=0 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=4 identity source lambda=3/5 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=4 identity source lambda=7 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=4 quotient score equals full score modulo identity: {'quotient': '0', 'full_mod_identity': '0'}
+[PASS] N=4 quotient score equals full score modulo identity: {'quotient': '-3/2', 'full_mod_identity': '-3/2'}
+[PASS] N=4 quotient score equals full score modulo identity: {'quotient': '1/2', 'full_mod_identity': '1/2'}
+[PASS] N=5 identity source lambda=-2 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=5 identity source lambda=0 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=5 identity source lambda=3/5 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=5 identity source lambda=7 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=5 quotient score equals full score modulo identity: {'quotient': '0', 'full_mod_identity': '0'}
+[PASS] N=5 quotient score equals full score modulo identity: {'quotient': '-2', 'full_mod_identity': '-2'}
+[PASS] N=5 quotient score equals full score modulo identity: {'quotient': '2/3', 'full_mod_identity': '2/3'}
+[PASS] N=6 identity source lambda=-2 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=6 identity source lambda=0 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=6 identity source lambda=3/5 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=6 identity source lambda=7 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=6 quotient score equals full score modulo identity: {'quotient': '0', 'full_mod_identity': '0'}
+[PASS] N=6 quotient score equals full score modulo identity: {'quotient': '-5/2', 'full_mod_identity': '-5/2'}
+[PASS] N=6 quotient score equals full score modulo identity: {'quotient': '5/6', 'full_mod_identity': '5/6'}
+[PASS] N=7 identity source lambda=-2 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=7 identity source lambda=0 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=7 identity source lambda=3/5 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=7 identity source lambda=7 has zero connected score: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] N=7 quotient score equals full score modulo identity: {'quotient': '0', 'full_mod_identity': '0'}
+[PASS] N=7 quotient score equals full score modulo identity: {'quotient': '-3', 'full_mod_identity': '-3'}
+[PASS] N=7 quotient score equals full score modulo identity: {'quotient': '1', 'full_mod_identity': '1'}
+[PASS] N=3 color-source quotient gives 8/9: {'source_surface': 'color-matrix connected source', 'quotient': 'End(C^N)/C I', 'dimension_fraction': '8/9', 'kappa_selected_on_this_surface': '0'}
+
+Part 3: scalar signed-record source keeps fixed color identity
+[PASS] N=2 scalar signed source has nonzero signed-record score: [Fraction(1, 1), Fraction(-1, 1)]
+[PASS] N=2 scalar source color factor has singlet fraction one: 1
+[PASS] N=2 scalar source color factor has zero traceless projection: 0
+[PASS] N=2 direct scalar color projection gives full-trace K_Y=1: 1
+[PASS] N=2 connected color-source value differs from scalar direct projection
+[PASS] N=3 scalar signed source has nonzero signed-record score: [Fraction(1, 1), Fraction(-1, 1)]
+[PASS] N=3 scalar source color factor has singlet fraction one: 1
+[PASS] N=3 scalar source color factor has zero traceless projection: 0
+[PASS] N=3 direct scalar color projection gives full-trace K_Y=1: 1
+[PASS] N=3 connected color-source value differs from scalar direct projection
+[PASS] N=4 scalar signed source has nonzero signed-record score: [Fraction(1, 1), Fraction(-1, 1)]
+[PASS] N=4 scalar source color factor has singlet fraction one: 1
+[PASS] N=4 scalar source color factor has zero traceless projection: 0
+[PASS] N=4 direct scalar color projection gives full-trace K_Y=1: 1
+[PASS] N=4 connected color-source value differs from scalar direct projection
+[PASS] N=5 scalar signed source has nonzero signed-record score: [Fraction(1, 1), Fraction(-1, 1)]
+[PASS] N=5 scalar source color factor has singlet fraction one: 1
+[PASS] N=5 scalar source color factor has zero traceless projection: 0
+[PASS] N=5 direct scalar color projection gives full-trace K_Y=1: 1
+[PASS] N=5 connected color-source value differs from scalar direct projection
+[PASS] N=6 scalar signed source has nonzero signed-record score: [Fraction(1, 1), Fraction(-1, 1)]
+[PASS] N=6 scalar source color factor has singlet fraction one: 1
+[PASS] N=6 scalar source color factor has zero traceless projection: 0
+[PASS] N=6 direct scalar color projection gives full-trace K_Y=1: 1
+[PASS] N=6 connected color-source value differs from scalar direct projection
+[PASS] N=7 scalar signed source has nonzero signed-record score: [Fraction(1, 1), Fraction(-1, 1)]
+[PASS] N=7 scalar source color factor has singlet fraction one: 1
+[PASS] N=7 scalar source color factor has zero traceless projection: 0
+[PASS] N=7 direct scalar color projection gives full-trace K_Y=1: 1
+[PASS] N=7 connected color-source value differs from scalar direct projection
+[PASS] N=3 scalar direct projection differs from connected-source selector: {'source_surface': 'scalar signed-record source with fixed I_color', 'singlet_fraction_of_color_factor': '1', 'direct_scalar_kappa': '1', 'direct_scalar_K_Y': '1', 'connected_color_source_K_Y': '8/9'}
+
+Part 4: lift obstruction witness
+[PASS] N=2 scalar source has no color-matrix identity direction to quotient
+[PASS] N=2 added color-source premise contains data absent from scalar source: {'extra_source_directions': 4, 'quotient_directions': 3, 'identity_line_removed': True}
+[PASS] N=3 scalar source has no color-matrix identity direction to quotient
+[PASS] N=3 added color-source premise contains data absent from scalar source: {'extra_source_directions': 9, 'quotient_directions': 8, 'identity_line_removed': True}
+[PASS] N=4 scalar source has no color-matrix identity direction to quotient
+[PASS] N=4 added color-source premise contains data absent from scalar source: {'extra_source_directions': 16, 'quotient_directions': 15, 'identity_line_removed': True}
+
+Part 5: dependency and overclaim firewalls
+[PASS] scalar no-go records identity color insertion gives singlet weight one
+[PASS] Y_T color projection remains a kappa family
+[PASS] EW kappa family remains open without selector
+[PASS] EW matching note keeps kappa as separate matching premise
+[PASS] EW traceless-generator no-go distinguishes wrong disconnected object
+[PASS] new note preserves future route: does not introduce a new axiom
+[PASS] new note preserves future route: does not rule out:
+[PASS] new note preserves future route: deriving a physical color-matrix connected-source authority
+[PASS] new note preserves future route: bypassing `kappa_Y` through a strict same-source top/W response theorem
+[PASS] forbidden overclaim absent: framework-native unbounded selector is derived
+[PASS] forbidden overclaim absent: kappa_Y = 0 is now derived
+[PASS] forbidden overclaim absent: kappa_EW = 0 is now derived
+[PASS] forbidden overclaim absent: full Y_T closure
+[PASS] forbidden overclaim absent: EW 9/8 closure
+[PASS] forbidden overclaim absent: proposed_retained
+
+wrote outputs/yt_connected_source_selector_scalar_lift_no_go_2026-05-29.json
+SUMMARY: PASS=123 FAIL=0
+
+----- stderr -----
+

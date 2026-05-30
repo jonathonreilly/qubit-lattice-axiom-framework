@@ -557,11 +557,10 @@ def meson_correlator_from_propagator(V, Gf):
     the forward 2-step block propagator Gf (position-color basis).
 
     The reflected meson 2-pt across the OS plane, with the staggered gamma_0-type sign
-    Theta(chi)=-bar(chi), decomposes (full 4-field Wick, BOTH pairings) into
-
-        <Theta(F) F> = Tc - Td_offdiag   (after using Sm10 = -S0m1^dag, Sm1m1 = S00^dag),
-
-    realized here on the 2-step block.  The CONNECTED (particle-hole) loop
+    Theta(chi)=-bar(chi).  Only the CONNECTED loop Tc is the OS-positive channel and is
+    computed here; the disconnected bubble Td is NOT part of that channel and is NOT
+    computed.  Tc is the free quark-antiquark one-loop (both legs forward-propagating
+    after the reflection sends the chibar leg to the image half):
 
         Tc = Tr[ V^dag Gf V Gf ] = || Gf^{1/2} V Gf^{1/2} ||_F^2  >= 0
 

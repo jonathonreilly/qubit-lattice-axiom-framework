@@ -14,9 +14,9 @@ On explicit finite **3+1** carriers it records the equality between the runner's
 det-weighted finite Haar-sample/quadrature average of the time-reflected Berezin
 **meson two-point correlator** `<Theta(F) F>` (a connected 4-fermion correlator) and
 the matching operator-side transfer-matrix meson two-point (the particle-hole
-intermediate-state sum). It **handles, rather than dodges, the vacuum-annihilation
+connected quark-line loop). It **handles, rather than dodges, the vacuum-annihilation
 obstruction** that the base note left open: `Ohat_meson|Omega> = 0`, yet
-`<Theta(F) F>` is nonzero and equals the operator intermediate-state sum. This note
+`<Theta(F) F>` is nonzero and equals the operator connected quark-line loop. This note
 does **not** establish the continuum / OS-reconstruction (Wightman) limit, Euclidean
 rotational (Lorentz) restoration, the compact-group Wilson-boundary positivity (H1),
 or a full interacting-RP closure; and it does not close the per-config fermion 2-step
@@ -66,9 +66,11 @@ exact full Haar integral.
      Tc(F) = Tr[ V^dag G_f V G_f ] = || G_f^{1/2} V G_f^{1/2} ||_F^2  >= 0 ,
   ```
 
-  **manifestly a Gram** — the meson intermediate-state sum
-  `sum_n e^{-2 E_n} |<n| Ohat_meson |0>|^2 >= 0` over particle-hole (meson) states. This
-  is **not** the trivially-zero `<Omega| Ohat_meson^dag T Ohat_meson |Omega>`.
+  **manifestly a Gram** — the free connected quark-line loop, both legs
+  forward-propagating after the OS reflection sends the `chibar` leg to the image half.
+  This is **not** the trivially-zero `<Omega| Ohat_meson^dag T Ohat_meson |Omega>`, and
+  **not** a vacuum sum `sum_n |<n| Ohat_meson |0>|^2` (which vanishes since
+  `Ohat_meson|0> = 0`).
 
 The two paths share **only the lattice action** (the spatial-hop spectrum
 `{lambda_j(U), E_j(U)}` and the hop-eigenbasis `Q`, properties of `S[U]`, not of either
@@ -101,10 +103,12 @@ is therefore trivially zero.
 
 The **correct OS object is the meson two-point correlator** `<Theta(F) F>`, a connected
 4-fermion correlator. By OS positivity
-`<Theta(F) F> = || P_+ F ||^2 = sum_n e^{-2 E_n} |<n| Ohat_meson |0>|^2 >= 0`,
-the sum running over particle-hole (meson) intermediate states. The runner confirms
+`<Theta(F) F>_connected = Tr[V^dag G_f V G_f] = sum_{j,k} |(Q^dag V Q)_{jk}|^2 (C_BLOCK e^{-2 E_j})(C_BLOCK e^{-2 E_k}) >= 0`
+-- the free connected quark-antiquark one-loop, both legs forward-propagating after the
+OS reflection sends the `chibar` leg to the image half. (It is **not** a vacuum sum
+`sum_n |<n| Ohat_meson |0>|^2`, which vanishes since `Ohat_meson|0> = 0`.) The runner confirms
 `<Theta(F) F>` is **nonzero** (minimum over the meson basis `0.06`–`0.87` depending on
-carrier) and equals the operator intermediate-state sum `Tc = Tr[V^dag G_f V G_f]`. This
+carrier) and equals the operator connected quark-line loop `Tc = Tr[V^dag G_f V G_f]`. This
 is the standard lattice meson spectroscopy via the transfer matrix (Lüscher 1977;
 Osterwalder–Seiler 1978; Montvay–Münster Ch. 3; Smit §6).
 
@@ -121,7 +125,7 @@ reports the averaged meson Gram as positive-semidefinite and the connected loop 
   gauge-invariant, number-conserving meson bilinear `F = chibar(x) U(x,y) chi(y)` is the
   observable here. The vacuum-annihilation obstruction is handled (control **K1**):
   `Ohat_meson|Omega> = 0` exactly, yet the meson two-point `<Theta(F) F>` is nonzero and
-  equals the operator particle-hole intermediate-state sum. This is the scope limitation
+  equals the operator particle-hole connected quark-line loop. This is the scope limitation
   the base note left open, now closed on the finite carrier.
 - **Multi-spatial-dimensional SU(3) — closed (finite carrier).** The meson equality is
   verified on a genuine **multi-spatial-dimensional SU(3)** carrier: the `2 x 2 x 1`
@@ -146,7 +150,7 @@ The runner reports, for every carrier:
 - **K1 — vacuum-annihilation handled (decisive).** `Ohat_meson|Omega> = 0` exactly
   (`||F|Omega>|| = 0`, via genuine Jordan-Wigner occupation action) **and** the meson
   two-point `<Theta(F) F>` is nonetheless **NONZERO** (min over the meson basis `0.06`–`0.87`)
-  and equals the operator particle-hole intermediate-state sum. Proves the obstruction is
+  and equals the operator particle-hole connected quark-line loop. Proves the obstruction is
   handled, not papered over.
 - **K2 — per-mode-factorized Berezin BREAKS.** On a mode-mixing carrier (non-uniform
   links lifting the spatial-mode degeneracy), replacing the genuine (non-diagonal)
@@ -231,13 +235,13 @@ the transfer matrix is cited.
 - the explicit dual computation that the **det-weighted finite-sample/quadrature**
   reflected Berezin **meson two-point correlator** `<Theta(F) F>` of the gauge-invariant,
   **number-conserving** meson bilinear `F = chibar(x) U(x,y) chi(y)` **equals** the
-  operator transfer-matrix meson two-point (the particle-hole intermediate-state sum) on a
+  operator transfer-matrix meson two-point (the particle-hole connected quark-line loop) on a
   finite 3+1 carrier, with the staggered `eta_1(t) = (-1)^t` 2-step bookkeeping under
   `theta(t, x_vec) = (-1 - t, x_vec)`, via two completely separate code paths
   (Grassmann/Wick connected 4-fermion contraction with `M[U]^{-1}` vs Fock `e^{-2 Hhat}`
   block propagator), with `det(M[U])` **actually applied** to the `U`-average;
 - the **correct handling of the vacuum-annihilation obstruction**: `Ohat_meson|Omega> = 0`
-  (verified exactly) yet `<Theta(F) F>` nonzero and equal to the intermediate-state sum;
+  (verified exactly) yet `<Theta(F) F>` nonzero and equal to the connected quark-line loop;
 - the five controls K1–K5 establishing the test is non-vacuous and the observable is a
   genuine gauge singlet (vacuum-annihilation handled; per-mode-factorized **breaks**; flat
   no-det **breaks**; single-step **breaks**; gauge invariance verified).
@@ -278,7 +282,7 @@ eigenvalues), `Hhat[U] = sum_{pq} (Q diag(E_j(U)) Q^dag)_{pq} c_p^dag c_q` is th
 second-quantized one-body staggered Hamiltonian in the position-color basis, and
 `V_{(x,a),(y,c)} = U(x,y)_{ac}` is the meson one-body matrix (a genuine color singlet).
 Although `Ohat_meson|Omega> = 0`, the connected meson two-point is the manifestly-positive
-Gram `|| G_f^{1/2} V G_f^{1/2} ||_F^2` = the particle-hole intermediate-state sum. The
+Gram `|| G_f^{1/2} V G_f^{1/2} ||_F^2` = the particle-hole connected quark-line loop. The
 runner verifies this on explicit carriers (`Lt = 2*14` bulk slices for the block-metric
 decay; `N_c = 1` on the `2 x 2 x 1` sheet and the minimal `2 x 1 x 1`, and `N_c = 3` on
 both the `2 x 2 x 1` sheet and the `2 x 1 x 1` carrier; `m = 0.5`), per configuration and
@@ -316,9 +320,13 @@ The runner handles it explicitly:
 Source-surface bounded theorem. The new load-bearing content is the explicit **dual
 computation** in the **gauge-invariant, number-conserving meson** sector — the det-weighted
 finite-sample/quadrature reflected Berezin meson two-point correlator versus the matching
-operator transfer-matrix meson two-point (the particle-hole intermediate-state sum),
-computed by separate code paths and asserted equal (worst `5.1e-12`, gate `1e-9`) on finite
-3+1 carriers — together with the correct vacuum-annihilation handling and the five controls
+operator transfer-matrix meson two-point (the free connected quark-line loop
+`Tr[V^dag G_f V G_f]`), computed by separate code paths and asserted equal (worst `5.1e-12`,
+gate `1e-9`) on finite 3+1 carriers. For the meson observable the two paths feed the
+identical connected contraction `Tr[V^dag G_f V G_f]`; the load-bearing **independent**
+content is the forward block-propagator identity `G_f^Berezin == G_f^operator`, verified
+three independent ways (per-mode temporal-chain `M^{-1}`, Fock `e^{-2 Hhat}`, and a
+full-spacetime `M[U]^{-1}` block-metric spectrum), from which the meson equality follows — together with the correct vacuum-annihilation handling and the five controls
 (vacuum-annihilation handled; per-mode-factorized **breaks**; flat no-det **breaks**;
 single-step **breaks**; gauge invariance verified). The general form of the equality is the
 cited Lüscher/Osterwalder–Seiler/STW/Palumbo transfer-matrix meson-spectroscopy
@@ -405,7 +413,7 @@ verifies, with `numpy` linear algebra on finite 3+1 carriers (single-seed determ
   full-spacetime `M[U]^{-1}` block-metric spectrum;
 - **K1 — vacuum-annihilation handled:** `||Ohat_meson|Omega>|| = 0` exactly (genuine
   Jordan-Wigner occupation action) **and** the meson two-point `<Theta(F) F>` is nonzero
-  (min over basis `0.06`–`0.87`) and equals the operator intermediate-state sum;
+  (min over basis `0.06`–`0.87`) and equals the operator connected quark-line loop;
 - **P1 — per-config genuine meson dual:** Berezin (connected 4-fermion Grassmann/Wick with
   `M^{-1}`) == operator (Fock `e^{-2 Hhat}` block loop) for the gauge-invariant meson basis,
   worst `~1e-12`;

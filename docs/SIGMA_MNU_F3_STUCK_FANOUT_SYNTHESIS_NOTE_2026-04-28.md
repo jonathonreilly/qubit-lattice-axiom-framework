@@ -2,11 +2,10 @@
 
 **Date:** 2026-04-28
 **Type:** no_go
+**Claim type:** no_go
 **Status:** conditional route-status synthesis over five admitted orthogonal
 Σm_ν route attempts; not a theory-wide no-go.
-**Status authority:** independent audit lane only.
 **Topic:** Neutrino quantitative closure.
-**Provenance:** `physics-loop/sigma-mnu-f3-dm-cluster-20260428`
 **Runner:** `scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py`
 **Log:** `outputs/frontier_sigma_mnu_f3_stuck_fanout_synthesis_2026-04-28.txt`
 
@@ -67,6 +66,38 @@ cluster cross-bound: the framework's current-bank `Ω_DM ∈ [0.2677,
 room for positive Σm_ν at standard `(L, Ω_b, h)` admissions. This
 Cycle-2 fan-out generates 5 orthogonal Σm_ν cross-bound routes and
 audits each for current-framework usability.
+
+## 0.1 Dependency-Edge Repair (2026-05-27)
+
+The prior audit accepted the broad no-go shape but required the restricted
+packet to expose the source rows used by the route-status conclusions. This
+repair adds the direct source packet and a runner that verifies the edge
+inventory and recomputes the decisive arithmetic.
+
+Direct source packet:
+
+- F3 Cycle-1 DM cross-bound:
+  [`SIGMA_MNU_F3_DM_CROSS_BOUND_AUDIT_NOTE_2026-04-28.md`](SIGMA_MNU_F3_DM_CROSS_BOUND_AUDIT_NOTE_2026-04-28.md).
+- T-4F-alpha-2 functional form:
+  [`NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md`](NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md).
+- Current-bank `Omega_DM` interval and no-selector boundary:
+  [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md).
+- Lane 5 `(C1)` gate status:
+  [`HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md`](HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md),
+  with attack-frame support from
+  [`HUBBLE_LANE5_C1_A1_GRASSMANN_NO_GO_NOTE_2026-04-28.md`](HUBBLE_LANE5_C1_A1_GRASSMANN_NO_GO_NOTE_2026-04-28.md),
+  [`HUBBLE_LANE5_C1_A4_PARITY_GATE_CAR_BOUNDARY_NOTE_2026-04-29.md`](HUBBLE_LANE5_C1_A4_PARITY_GATE_CAR_BOUNDARY_NOTE_2026-04-29.md),
+  [`HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md`](HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md),
+  and
+  [`HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md`](HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md).
+- Eta/leptogenesis status:
+  [`DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md`](DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md)
+  and bounded support
+  [`ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md`](ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md).
+
+This repair does not claim numerical `Sigma m_nu` retention. It makes the
+no-go packet auditable by separating source support, status inventory, and
+still-open current-bank or cosmology admissions.
 
 ## 1. Five orthogonal routes
 

@@ -76297,10 +76297,10 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "15308af74f9d4bbb76cb36142106b960eed0a1e5ff147a24ff51780b9b7d02cc",
+      "note_hash": "a254d6c2096c0a045954daaca57d578864e0a5fac20391ea1ce4991135c28066",
       "path": "docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
       "runner_path": "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py",
-      "title": "Fixed-Gauge RP Transfer Positivity + Standalone Relabeling Invariance"
+      "title": "RP -> P2: Fixed-SU(3) Gauge Extension + Labeling-Indifference Tightening of the Realization Residual"
     },
     "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20": {
       "claim_id": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",

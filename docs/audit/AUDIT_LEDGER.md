@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 609 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1218 |
+| unaudited | 1217 |
+| audit_in_progress | 1 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -59,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
+| `audit_in_progress` | 5 |
 | `audited_clean` | 942 |
 | `audited_conditional` | 13 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1456 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -135,6 +136,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | B | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |

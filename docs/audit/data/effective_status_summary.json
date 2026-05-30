@@ -45,11 +45,12 @@
     "retained": 168,
     "retained_bounded": 607,
     "retained_no_go": 175,
-    "retained_pending_chain": 10,
-    "unaudited": 1138
+    "retained_pending_chain": 11,
+    "unaudited": 1137
   },
-  "retained_pending_chain_count": 10,
+  "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [
+    "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
     "complex_selectivity_compare_note",

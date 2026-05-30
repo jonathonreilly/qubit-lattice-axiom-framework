@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 168 |
 | **retained_no_go** | 175 |
 | **retained_bounded** | 607 |
-| _retained_pending_chain_ | 10 |
+| _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1138 |
+| unaudited | 1137 |
 | meta | 237 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 941 |
+| `audited_clean` | 942 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1375 |
+| `unaudited` | 1374 |
 
 | claim_type | count |
 |---|---:|
@@ -83,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 607 |
 | `leaf` | 1021 |
 
-- **Retained pending chain closure:** 10
+- **Retained pending chain closure:** 11
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
@@ -179,6 +179,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2034,6 +2035,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing differentiation and substitution are a genuine class A algebraic check, and they correctly produce the stated sign condition. However, the only cited authority is retained_bounded for cache-backed d = 3 and d = 4 rows and explicitly does not retain a universal continuum V(r) = -k/r^(d-2) law across all integer dimensions. Because the source note still uses the d >= 5 continuum law as part of the stated upper-bound support while admitting that bridge is not supplied, the full bounded claim is conditional rather than clean.
 - **open / conditional deps cited:**
   - `DIMENSIONAL_GRAVITY_TABLE.md`
+- **auditor confidence:** high
+
+### `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded methodology audit of the resummation-ansatz test harness: retained constants are recomputed/checked, proxy and synthetic tests validate the predictor machinery, and the physical beta=6 ansatz status is correctly reported as pending higher exact connected coefficients.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:beta6_plaquette_closure_note_2026-05-29`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-131550-143379f0-beta6_resummation_ansatz`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With only d_5=1/472392 known, neither ansatz makes a falsifiable physical prediction; the runner instead verifies the d-log-Pade/geometric prediction machinery, activation thresholds, proxy behavior, and SUPPORT/FALSIFY drop-in path for future exact coefficients.  _(class `A`)_
+- **chain closes:** True — The scoped harness claim closes: the algorithmic thresholds, null result from d_5 alone, proxy checks, and synthetic SUPPORT/FALSIFY checks follow from the supplied formulas and runner logic. This does not close the physical beta=6 plaquette value or prove the ansaetze; exact d_6 and later coefficients remain outside the audited scope.
+- **rationale:** The note is carefully scoped as a test harness, not a beta=6 closure, and the load-bearing claims are algorithmic/algebraic checks over retained inputs. The Monte-Carlo value 0.594 is used only as a comparator for gap reporting, not as a fitted derivation input. The runner source shown implements real recurrence, Pade/geometric, fixed-point, proxy, and synthetic-coefficient checks rather than merely printing PASS; no helper imports are missing. The broader treewidth and physical-analyticity obstructions are context and are not promoted as a new closure theorem in this row.
 - **auditor confidence:** high
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`

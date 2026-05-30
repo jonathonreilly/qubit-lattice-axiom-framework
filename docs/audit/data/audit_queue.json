@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 245,
     "high": 311,
-    "leaf": 290,
+    "leaf": 289,
     "medium": 294
   },
   "cycle_break_target_count": 0,
@@ -26128,37 +26128,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "beta6_plaquette_closure_note_2026-05-29",
-        "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-        "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
-        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
-        "su3_wilson_closed_form_fanout_theorem_note_2026-05-04"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -34779,6 +34748,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 6,
-  "total_pending": 1140
+  "ready_count": 5,
+  "total_pending": 1139
 }

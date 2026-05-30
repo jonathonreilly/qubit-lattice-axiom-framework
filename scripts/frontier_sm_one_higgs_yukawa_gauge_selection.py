@@ -11,12 +11,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from fractions import Fraction
+import json
 from pathlib import Path
 import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 
 PASS_COUNT = 0
@@ -40,6 +42,15 @@ def status_line(path: Path) -> str:
         if line.startswith("**Status:**"):
             return line
     return ""
+
+
+def ledger_row(claim_id: str) -> dict | None:
+    rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+    iterable = rows.values() if isinstance(rows, dict) else rows
+    for row in iterable:
+        if isinstance(row, dict) and row.get("claim_id") == claim_id:
+            return row
+    return None
 
 
 @dataclass(frozen=True)
@@ -101,17 +112,29 @@ def main() -> int:
     check("retained hypercharge authority exists", hypercharge_note.exists(), str(hypercharge_note.relative_to(ROOT)))
     check("EW Higgs authority exists", ew_higgs_note.exists(), str(ew_higgs_note.relative_to(ROOT)))
 
-    hypercharge_status = status_line(hypercharge_note)
-    ew_higgs_status = status_line(ew_higgs_note)
+    hypercharge_row = ledger_row("standard_model_hypercharge_uniqueness_theorem_note_2026-04-24")
+    ew_higgs_row = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
     check(
-        "hypercharge authority status is retained",
-        "retained" in hypercharge_status.lower(),
-        hypercharge_status,
+        "hypercharge authority row is present and pending audit",
+        hypercharge_row is not None and hypercharge_row.get("effective_status") != "retained",
+        "" if hypercharge_row is None else str(
+            {
+                "effective_status": hypercharge_row.get("effective_status"),
+                "audit_status": hypercharge_row.get("audit_status"),
+            }
+        ),
     )
     check(
-        "EW Higgs authority status is standalone positive",
-        "standalone positive" in ew_higgs_status.lower(),
-        ew_higgs_status,
+        "EW Higgs authority is retained/audited_clean in ledger",
+        ew_higgs_row is not None
+        and ew_higgs_row.get("effective_status") == "retained"
+        and ew_higgs_row.get("audit_status") == "audited_clean",
+        "" if ew_higgs_row is None else str(
+            {
+                "effective_status": ew_higgs_row.get("effective_status"),
+                "audit_status": ew_higgs_row.get("audit_status"),
+            }
+        ),
     )
 
     hypercharge_text = hypercharge_note.read_text(encoding="utf-8")

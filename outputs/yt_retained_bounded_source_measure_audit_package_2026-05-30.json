@@ -1,0 +1,92 @@
+{
+  "algebra": {
+    "fisher_scaled": "lambda^2",
+    "source_side_result": "y_33=1/sqrt(6)",
+    "tier_a_selected": "lambda=1",
+    "unit_vector": "(1,1,1,1,1,1)/sqrt(6)"
+  },
+  "documents": {
+    "actual_current_surface_status": "exact-support",
+    "conditional_status": "retained_bounded after audit of roots"
+  },
+  "ledger": {
+    "root_statuses": {
+      "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26": {
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
+      },
+      "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24": {
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
+      },
+      "yt_fh_top_w_response_ratio_gate_note_2026-05-25": {
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
+      },
+      "yt_operational_source_action_bridge_theorem_attempt_note_2026-05-25": {
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
+      },
+      "yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25": {
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
+      },
+      "yt_strict_symbolic_top_response_row_packet_note_2026-05-25": {
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
+      },
+      "yt_tier_a_source_action_top_premise_closure_note_2026-05-29": {
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
+      }
+    },
+    "support_statuses": {
+      "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25": {
+        "audit_status": "audited_clean",
+        "effective_status": "retained_bounded"
+      },
+      "yt_lsp_signed_record_source_readout_support_note_2026-05-24": {
+        "audit_status": "audited_clean",
+        "effective_status": "retained_bounded"
+      },
+      "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25": {
+        "audit_status": "audited_clean",
+        "effective_status": "retained_bounded"
+      },
+      "yt_source_action_support_packet_note_2026-05-22": {
+        "audit_status": "audited_clean",
+        "effective_status": "retained_bounded"
+      },
+      "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": {
+        "audit_status": "audited_clean",
+        "effective_status": "retained_bounded"
+      },
+      "yt_source_covariance_normalization_support_note_2026-05-24": {
+        "audit_status": "audited_clean",
+        "effective_status": "retained_bounded"
+      },
+      "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25": {
+        "audit_status": "audited_clean",
+        "effective_status": "retained_bounded"
+      }
+    }
+  },
+  "summary": {
+    "actual_current_surface_status": "exact-support",
+    "bare_retained_allowed": false,
+    "closed_on_tier_a_surface": [
+      "lambda=1",
+      "y_33=1/sqrt(6)"
+    ],
+    "conditional_surface_status": "retained_bounded if named unaudited roots audit clean at stated scope",
+    "fail": 0,
+    "not_closed_unbounded": [
+      "P-cal/P1 derivation or native RN/Fisher source-measure acceptance",
+      "strict same-source top/W pole-response evidence",
+      "physical-scale g_2 and matching/running"
+    ],
+    "pass": 73,
+    "proposal_allowed": false,
+    "tier_a_input": "P-cal/source-measure primitive normalized RN/Fisher coordinate"
+  }
+}

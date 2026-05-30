@@ -11444,6 +11444,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The row is a class-A conditional matrix-algebra lemma with no empirical PMNS inputs or upstream residual authority consumed. The cached runner reports PASS=41, FAIL=0 under SHA 1303ee82698e1952d1afe55566c105569a3682c27899c3117c75923c725fc164, checking exact rational samples, row/column sums, trimaximality, mu-tau equality, and nonnegativity. The clean verdict is bounded to the conditional assumptions and does not promote any PMNS residual or angle prediction.
 - **auditor confidence:** high
 
+### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional PMNS residual algebra note: the trimaximal second-column and mu-tau modulus assumptions imply sin^2(theta_23)=1/2 and 3 sin^2(theta_12) cos^2(theta_13)=1, but the advertised maximal-CP conclusion requires the additional nonsingular condition c12*s12*s13 != 0, equivalently excluding the endpoint where the phase term vanishes independently of delta_CP.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note derives the TM2 sum rule and theta_23=pi/4 from trimaximal and mu-tau modulus residuals, then divides by 2 c12 s12 s13 to conclude cos(delta_CP)=0.  _(class `A`)_
+- **chain closes:** False — The first two algebraic consequences close. The CP step is overbroad as stated: at sin^2(theta_13)=2/3, the TM2 sum rule gives sin^2(theta_12)=1 and c12=0, so equation (3) is satisfied for any delta_CP and cos(delta_CP) is not forced.
+- **rationale:** The exact algebra supports the TM2 sum rule and mu-tau maximal theta_23 statement, and the cached runner reports PASS=15, FAIL=0 under SHA 2337f4d05c57d6fc03bca7a785f7c5e1256be88bf99f233f042b3f8e5e3009cc. However, the runner only samples nonsingular nonzero s13 values for the CP conclusion and misses the allowed endpoint sin^2(theta_13)=2/3. At that endpoint c12=0, so the factor multiplying cos(delta_CP) is zero and the residual equations do not force maximal CP. Repair target: add the explicit condition c12*s12*s13 != 0, or state the CP conclusion only on the nonsingular physical chamber such as 0 < sin^2(theta_13) < 2/3.
+- **auditor confidence:** high
+
 ### `pmns_uniform_scalar_deformation_boundary_note`
 
 - **Note:** [`PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md`](../../docs/PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md)

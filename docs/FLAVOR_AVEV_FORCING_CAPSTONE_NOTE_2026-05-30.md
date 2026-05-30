@@ -5,6 +5,14 @@
 nothing; identifies precisely what input is required.
 **Runner:** `scripts/flavor_avev_forcing_capstone_2026_05_30.py` (+ cache).
 
+> ⚠️ **RETRACTED in part (see `FLAVOR_ROUTE2_VERDICT_AND_CORRECTIONS_NOTE_2026-05-30`).**
+> The central claim "`a_VEV=0 ⇒ exact Q=2/3`" **conflates two decompositions** and is
+> wrong as stated. It holds only where `a` is the zero-*mean* chiral order parameter
+> (`a=(1/3)Tr M`); in the physical eigenvalue/√-mass readout, `a→0` gives `Q→∞`, not
+> 2/3 (`Q=2/3` is the *finite interior* ratio `b/a=1/√2`). So "a_VEV=0 reduces the
+> value to the chiral input" does not stand. What survives: the uniform mass `a·I` is
+> not forbidden by any native symmetry (S₃ + generation-blind reflections allow it).
+
 ## The question
 Moves 1–5 left one open quantitative piece: is the uniform generation-mass
 component `a_VEV ≈ 0` (which puts the charged leptons exactly at the block-count

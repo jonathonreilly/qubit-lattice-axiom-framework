@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 253,
+    "critical": 252,
     "high": 303,
     "leaf": 353,
     "medium": 312
@@ -8,34 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_p1_i_s_lattice_pt_citation_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_self_consistency_note",
-        "uv_gauge_to_yukawa_bridge_sc_vs_pert_note",
-        "yt_ward_identity_derivation_theorem"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 12.061,
-      "note_path": "docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_p1_i_s_lattice_pt_citation.py",
-      "transitive_descendants": 533
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36773,6 +36745,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 79,
-  "total_pending": 1221
+  "ready_count": 78,
+  "total_pending": 1220
 }

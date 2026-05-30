@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 610 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1217 |
+| unaudited | 1216 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 13 |
+| ~~audited_conditional~~ | 14 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 943 |
-| `audited_conditional` | 13 |
+| `audited_conditional` | 14 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1455 |
+| `unaudited` | 1454 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1175 |
+| `bounded_theorem` | 1176 |
 | `decoration` | 53 |
 | `meta` | 242 |
 | `no_go` | 266 |
 | `open_gate` | 118 |
-| `positive_theorem` | 701 |
+| `positive_theorem` | 700 |
 
 | criticality | count |
 |---|---:|
@@ -1090,6 +1090,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -15592,6 +15593,22 @@ Claim boundary until fixed: sin^2(theta_W) preservation under any common nonzero
 - **load-bearing step:** E_x = (+1)P_+(x) + (-1)P_-(x) = sigma_z(x), and d log R_h / d h_x |_{h=0} = epsilon_x, so the source score is the signed local projective readout.  _(class `A`)_
 - **chain closes:** True — The finite Pauli projector algebra, the retained bounded LSP projective measurement rule, and the retained bounded product-RN source-action support packet are sufficient to identify the signed source record with a native projective readout and to prove the stated RN-family uniqueness under the given source semantics.
 - **rationale:** The bounded support identity closes without importing physical Y_T closure. Independent check: P_+ and P_- are orthogonal idempotents summing to I, P_+ - P_- = sigma_z, and sigma_z has spectrum {-1,+1}; tensor-product site readouts commute and have outcome set {-1,+1}^Lambda. For R_h(epsilon)=exp(sum h_x epsilon_x)/Z(h), the h=0 uniform signed-record reference has zero mean, so d log R_h / d h_x at h=0 equals epsilon_x. The source-family uniqueness corollary is valid under the stated assumptions because normalized multiplication makes log-odds additive, smooth additive log-odds are linear, and the origin-score condition fixes the coefficients. The runner checks these algebraic/RN facts and the boundary firewalls with PASS=50 FAIL=0. Residual risk is downstream scope creep: this result does not select a physical Pauli axis or close Higgs/Yukawa/source-action authority.
+- **auditor confidence:** high
+
+### `yt_p1_i_s_lattice_pt_citation_note_2026-04-17`
+
+- **Note:** [`YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`](../../docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the citation-and-bound claim that, assuming the stated external I_S bracket and alpha_LM=0.0907, the P1 contribution is revised upward from the packaged 1.92% to a cited range of about 3.85%-9.62% with central estimate about 5.77%.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-230747-21156b4a-yt_p1_i_s_lattice_pt_cit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The published lattice-QCD literature for the closest tadpole-improved staggered scalar-density analogue brackets I_S in [4,10] with central estimate near 6, which is then mapped by P1=(alpha_LM/(4*pi))*C_F*I_S to [3.85%,9.62%].  _(class `D`)_
+- **chain closes:** False — The arithmetic propagation from an assumed I_S bracket closes, but the load-bearing lattice-QCD bracket I_S in [4,10] is asserted and hard-coded rather than verified from supplied authority excerpts or computed natively. The packet also imports alpha_LM through a plaquette authority that explicitly withholds a same-surface derivation of the canonical 0.5934 readout.
+- **rationale:** The runner verifies SU(3) algebra, normalization arithmetic, ratio arithmetic, and scope flags, but it does not derive or independently check the contested I_S bracket; the bracket is embedded as constants. The source note correctly disclaims a framework-native BZ integration, so the result is a conditional citation/bound rather than retained closure. No first-principles class-C computation of I_S, and no supplied per-reference coefficient table, appears in the restricted packet.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `external_lattice_qcd_I_S_coefficient_sources_not_provided`
 - **auditor confidence:** high
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`

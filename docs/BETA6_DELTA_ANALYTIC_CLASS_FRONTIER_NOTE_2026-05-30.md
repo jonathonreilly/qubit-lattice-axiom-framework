@@ -1,0 +1,470 @@
+# Beta=6 SU(3) Wilson Delta(beta) — Analytic-Continuation Class Frontier Note
+
+**Date:** 2026-05-30
+**Type:** bounded_theorem (frontier-map / analytic-class characterization; the
+load-bearing content is the finite-volume positivity theorem, the Lee-Yang
+localization, the exact-coefficient class discriminant, and the d-log-Pade
+applicability verdict — this note does **not** close beta=6 and asserts no
+value of `<P>(6)`)
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome for any cited claim_id; all statuses quoted
+below are read-offs from `docs/audit/data/audit_ledger.json`
+(`rows[<claim_id>]['effective_status']`) on the dates stated.
+**Primary runner:** [`scripts/frontier_beta6_delta_analytic_class_2026_05_30.py`](../scripts/frontier_beta6_delta_analytic_class_2026_05_30.py)
+
+```yaml
+trace_class: frontier_discovery|upstream_support
+reachability_to_target: characterizes_analytic_class_only
+proposal_allowed: false
+```
+
+## 0. Scope and what this note is for
+
+The thermodynamic SU(3) Wilson single-plaquette expectation at the framework
+point beta=6,
+
+```text
+<P>(beta=6, L->infinity) ~= 0.594   (canonical lattice-QCD comparator),
+<P> := <(1/N_c) Re Tr U_p>,  N_c = 3,
+```
+
+is the most-cited open quantitative gate in the framework (it feeds
+`u_0 = <P>^(1/4)`, then `alpha_s`, then the v / y_t / m_t / m_H chain). The
+attack-surface frontier map
+[`BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md)
+ranked the **one** non-ruled-out (long-shot) analytic route as **d-log-Pade
+resummation of the connected-shell series** `Delta(beta) = P_full - P_1plaq`,
+and isolated its single uncertified premise (Section 4b, obstruction iii):
+
+> the dominant singularity of `Delta(beta)` is a complex-conjugate pair off the
+> real axis, no real branch point at `beta_r < 6`.
+
+This note **characterizes that analytic class** and states what it does — and
+does not — buy for the d-log-Pade route. It is **not** a closure. `0.594` is a
+Monte-Carlo comparator only (`plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05`,
+`P_inf = 0.59400 +/- 0.00037`), never a derivation input here.
+
+**Engagement with the no-go ledger.** The frontier map (Section 3b, ruled-out
+item 5) foreclosed **Lee-Yang / Frobenius zero localization as a standalone
+closure route** — it yields only the single-plaquette-in-isolation value
+0.4225 (the wrong observable). This note honors that foreclosure: Lee-Yang
+localization is used here **only to characterize the analyticity class** (to
+validate whether d-log-Pade is the applicable tool), not to produce `<P>(6)`.
+The doubly-walled lane-killer is unchanged — the boundary character measure
+`rho_{p,q}(6)` is under-determined by local character + intertwiner data
+(`gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` Theorem 3,
+retained_bounded) **and** its exact `L_s>=3` evaluation is treewidth-29
+infeasible (`su3_wigner_l3_treewidth_infeasible_2026-05-04`, audited_conditional
+on 2026-05-29).
+
+## 1. The analyticity framework: Delta singularities = finite-Z Lee-Yang zeros
+
+The retained reduction-existence theorem
+(`gauge_vacuum_plaquette_reduction_existence_theorem_note`, **retained** on
+2026-05-29) gives, for the finite periodic SU(3) Wilson `L^4` surface,
+
+```text
+Z_L(beta) = integral DU exp[(beta/3) sum_p Re Tr U_p],
+P_L(beta) = (1/N_plaq) d/dbeta log Z_L(beta) = (1/N_plaq) Z_L'(beta)/Z_L(beta).
+```
+
+Theorems 1-2 of that note prove `Z_L(beta)` is **entire** in beta: the
+integration domain `SU(3)^#links` is compact and the integrand
+`exp[(beta/3) sum_p Re Tr U_p]` is entire, so the finite character
+sum/integral is entire. Consequently:
+
+> `P_L` (and `Delta_L = P_full - P_1plaq`) is **meromorphic** in beta, analytic
+> everywhere except at the **complex zeros of `Z_L`** — i.e. the Lee-Yang zeros
+> of the finite-environment partition function — where the logarithmic
+> derivative has simple poles.
+
+This is the precise sense of "Delta's singularities = finite-Z Lee-Yang
+zeros." The analytic-continuation class of `Delta` is therefore set by **where
+the Lee-Yang zeros of `Z_L` sit**, and (in the thermodynamic limit) whether
+they accumulate onto the real axis.
+
+The single-plaquette layer is fully explicit and computable. With
+`J(beta) = Z_1plaq(beta) = integral_{SU(3)} exp[(beta/3) Re Tr U] dU`:
+
+- **Closed form (Bars 1980 [external import]):** `J(beta) = sum_{k in Z}
+  det[I_{i-j+k}(beta/3)]_{i,j in {0,1,2}}`, an absolutely-convergent sum of
+  products of modified Bessel functions `I_n`. Each `I_n` is entire, so `J` is
+  entire (`plaquette_v1_picard_fuchs_ode_all_order_proof_note_2026-05-09` [T1],
+  unaudited author-tier — cited as the computational identity, not as audit
+  authority).
+- **Order-3 power-series recurrence:** `6(N+1)(N+4)(N+5) a_{N+1} = N(N+1) a_N +
+  2(2N+3) a_{N-1} + a_{N-2}`, `a_0=1, a_1=0, a_2=1/36`
+  (`gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`,
+  retained; `plaquette_v1_picard_fuchs_ode_note_2026-05-05`, retained_bounded).
+
+Both reproduce `P_1plaq(6) = J'(6)/J(6) = 0.4225317396` exactly (Section 5,
+runner checks). The order-3 Picard-Fuchs indicial roots `{0,-3,-4}` are
+**Frobenius exponents at the origin** (only `s=0` is the analytic branch), not
+branch points on `(0,6]`.
+
+## 2. The Z>0-on-reals analysis (finite-volume positivity theorem)
+
+**Theorem (finite-volume real-analyticity; a one-line strengthening of the
+retained reduction-existence theorem).** For any finite periodic SU(3) Wilson
+`L^4` surface and all real beta (including `beta < 0`):
+
+```text
+0 < Z_L(beta) <= exp(beta * N_plaq).
+```
+
+*Proof.* The integrand `exp[(beta/3) sum_p Re Tr U_p]` is a strictly positive
+real exponential pointwise; Haar is a positive finite measure on the compact
+group; and `S_L = sum_p (1/3) Re Tr U_p` is bounded by `N_plaq`. Hence the
+integral is strictly positive and bounded by `exp(beta N_plaq)`. QED.
+
+**Consequences.** `Z_L` is entire (Section 1) with **no real zeros anywhere**.
+Therefore `P_L = (1/N_plaq) Z_L'/Z_L` is **real-analytic on all of R** (a
+fortiori on `[0,6]`), with **no real branch point**, and — because the Taylor
+coefficients of `Z_L` are real, so complex zeros occur in conjugate pairs — its
+nearest singularity is necessarily a **complex-conjugate pair off the real
+axis**.
+
+This is verified for the single-plaquette instance: `Z_1plaq(beta) > 0` across
+a `[-9,9]` real-axis sample (minimum `Z=1` at `beta=0`), so `P_1plaq` has no
+real Lee-Yang zero and is analytic on all of R (Section 5, runner check B). This
+matches the reduction-existence theorem's own positivity argument
+(`Var_beta(X) > 0` because `X = (1/3)Re Tr U` is non-constant, e.g. `X(I)=1`,
+`X(e^{2pi i/3} I) = -1/2`).
+
+**How strong is this, and the finite-volume caveat.** The positivity argument
+is **rigorous but is a finite-volume statement and is, on inspection, the
+textbook Yang-Lee finite-volume template** — it uses nothing about SU(3) /
+beta=6 / `Delta` beyond compactness + positivity, and the retained
+reduction-existence theorem already asserts finite-volume analyticity from
+compactness. The campaign's coefficients `d_5, d_6, d_7` and the object
+d-log-Pade would continue are **thermodynamic (L->infinity)**. Finite-volume
+positivity is uniform in beta but **does not commute with `L->infinity`**: a
+real bulk transition at `beta* <= 6` would appear exactly as complex Lee-Yang
+zeros pinching the real axis in the limit, while every finite-L `Z_L` stays
+strictly positive (the Yang-Lee mechanism). So the rigorous content covers
+`P_1plaq` and every finite-L truncation; the **infinite-volume** real-analyticity
+of `Delta` at beta=6 is **not** established by positivity alone.
+
+There is a second, finer mismatch worth stating: finite-L `P_L` is meromorphic
+with simple **pole** pairs, whereas d-log-Pade applicability concerns
+**branch-point** pairs (the square-root structure generic to
+asymptotically-free strong-coupling series — see Section 4). The branch
+structure emerges only in the `L->infinity` limit as poles condense onto a cut.
+So the finite-L theorem does not by itself exemplify the analytic class it is
+being asked to validate.
+
+## 3. Lee-Yang localization (where the complex zeros sit)
+
+### 3a. Single-plaquette layer (RIGOROUS, exact, this note)
+
+The nearest complex zero of the entire `Z_1plaq` is located by `mpmath.polyroots`
+on the exact-rational Taylor series at truncation degree `D = 30, 40, 50, 60`,
+each verified against the true Bars `Z` by residual:
+
+```text
+nearest zero:  beta_c = 3.3174797 +/- 7.5046562 i,
+               |beta_c| = 8.2052,  arg = 66.15 deg.
+residual |Z_bars(root)| at D = 30/40/50/60:
+               3.27e-11 -> 3.88e-18 -> 5.03e-26 -> 1.07e-34
+               (decreasing -> genuine zero of the entire function, NOT a
+                truncation artifact; a spurious root would carry an O(1)
+                residual against the true Z).
+```
+
+So at the single-plaquette layer the nearest singularity of `P_1plaq` is a
+**simple-pole pair at a complex-conjugate zero pair of the entire `Z_1plaq`**,
+`|beta_c| = 8.205`, off-axis by 66 degrees. Crucially `beta = 6` sits at
+`6/|beta_c| = 0.73` — **inside** the single-plaquette disk of convergence.
+The next zeros (`~13.1`, `~17.9`, ...) form the order-1 entire-function complex
+ladder, all off-axis conjugate pairs.
+
+### 3b. Thermodynamic layer (location uncertified; literature import only)
+
+Explicit Lee-Yang zero **locations** for the full thermodynamic SU(3) Wilson
+environment are **not computed anywhere in-repo**, and computing them is the
+treewidth-29-infeasible object. The only external anchor is the lattice
+literature (methodology/comparator **import**, never a derivation input):
+
+- **SU(3) Fisher zeros** (partition-function zeros in the complex
+  `beta = 2N/g^2` plane), `4^4` lattice: `beta = 5.54(2) +/- i 0.10(2)` and
+  `5.54(2) +/- i 0.16(2)` — a complex-conjugate pair **off** the real axis
+  (Denbleyker-Du-Meurice-Velytsky, arXiv:0710.5771). This corroborates the
+  off-axis-pair class.
+- **Infinite-volume corroboration:** SU(2) pure-gauge Fisher zeros stabilize at
+  distance `> 0.1` from the real axis as volume grows (Meurice group,
+  arXiv:0810.1792 / 1112.2734) — the pair does **not** pinch the real axis,
+  consistent with a smooth crossover and no real branch point on `[0,6]`. The
+  Wilson SU(N) bulk transition is a rapid **crossover** for `N <= 4` (genuine
+  first-order only for `N >= 5`), so SU(3) has no real bulk transition.
+
+**Caveat (location is genuinely uncertified).** The repo harness's
+`|beta_c| ~ 5.7` is a **tuned proxy constant** (Section 4), not measured or
+derived, and is distinct from the literature Fisher value `5.54`. Every
+available estimate of the location disagrees: `8.205` (rigorous, single-plaquette
+`Z_1plaq`), `5.54` (literature Fisher, thermodynamic), `5.7` (tuned proxy),
+`2.23` (severely under-converged 3-coefficient `[0/2]`, Section 4). Only the
+**type** (complex-conjugate pair, off-axis, no real zero) is robust across all
+of them; the **location** for the thermodynamic `Delta` is exactly the open
+`rho_{p,q}(6)` object restated in the beta-plane. The rigorous `8.205` is the
+nearest zero of the `P_1plaq` component only; since `Delta` inherits zeros of
+**both** `Z_1plaq` and the thermodynamic `Z_L`, it is **not** a lower bound on
+`Delta`'s nearest singularity.
+
+## 4. Series-asymptotic consistency from the exact d5, d6, d7
+
+The exact connected coefficients (retained anchor `d_5 = 4/18^5`;
+`d_6 = 7/5668704` cycle 1; `d_7 = 5/17006112` cycle 2, two-engine verified)
+give per-order ratios `d_6/d_5 = 7/12 ~ 0.583`, `d_7/d_6 = 5/21 ~ 0.238`
+(decreasing, non-geometric -> tadpole/geometric single-pole continuation
+**falsified**, `BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`).
+Writing the per-shell bracket `Delta = (4/18^5) beta^5 [1 + c1 beta + c2 beta^2
++ ...]` with `c1 = 7/12`, `c2 = 5/36`, the **single** dimensionless shape
+invariant available from three coefficients is `u = c2/c1^2 = 20/49 ~ 0.408`.
+
+Two **exponent-independent, exact-rational** facts follow (Section 5, runner D):
+
+1. **No positive-real divergent algebraic branch point on `(0,6]`.** For any
+   such singularity `A(1 - beta/B)^{-g}` (`B > 0, g > 0`), one has
+   `c2/c1^2 = (g+1)/(2g) = 1/2 + 1/(2g) > 1/2` for **all** `g > 0`. Since the
+   observed `u = 20/49 < 1/2`, a positive-real divergent algebraic branch point
+   is **excluded, exponent-independently**.
+2. **Minimal `[0/2]` Pade of the bracket gives a complex-conjugate pair.** The
+   denominator `1 - c1 beta + (c1^2 - c2) beta^2` has exact discriminant
+   `disc = -3 c1^2 + 4 c2 = -67/144 < 0`. Equivalently `disc = c1^2 (4u - 3)`,
+   so `disc < 0 <=> u < 3/4`.
+
+**Honesty about independence and the location.** Facts (1) and (2) are **not
+two independent corroborations**: both are deterministic functions of the same
+scalar `u = 20/49`, which crosses the threshold `1/2` (branch-point exclusion)
+and the threshold `3/4` (complex-pair). Equivalently, `u < 1/2` is exactly the
+statement that a leading complex pair has argument `> 45 deg`. Three
+coefficients constrain only this **type-discriminating** quantity; the **radius
+`|beta_c|` is a one-parameter family** `R(g)` spanning `~0.6` to `~8.8` as the
+assumed exponent `g` sweeps `[0.25, 5]` (`g=1 -> R=2.23`; `g=3 -> R=5.84`, only
+then matching the physical/Fisher `~5.5-5.7`). The `[0/2]` value `|beta_c| =
+2.23` is severely under-converged and **must not** be read as the physical
+`~5.7`. A near-real Fisher pair (arg `~1 deg`) would force `u in [1/2, 3/4)`,
+**not** `0.408`; so the 3-coefficient data is consistent with the Fisher pair in
+**radius** but in mild **tension in argument** — a reminder that three
+coefficients do not probe the nearest singularity's geometry. Net: the
+exact-coefficient data **independently corroborates the analytic CLASS**
+(complex-pair-favored, no positive-real divergent branch point on `(0,6]`,
+single-real-pole/geometric falsified) but **measures no location**.
+
+## 5. The d-log-Pade convergence verdict
+
+**The method is the right tool for the conjectured class.** The landed harness
+(`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`) certifies
+that `[n/n]` d-log-Pade localizes a complex-conjugate-pair branch point and
+reconstructs the continued value on a controlled Gegenbauer (ultraspherical
+generating-function) proxy (`R = 5.7, theta = 0.55`): `[10/10]` localizes
+`|beta_c| = 5.6989, arg = 0.5497` and reconstructs `Delta(6)` to `~5.8e-4`.
+This is consistent with the convergence theory: a complex pair = two simple
+poles of the d-log series `H = (log h)'`, captured by a degree-2 d-log
+denominator (de Montessus de Ballore column convergence); for a genuine
+square-root branch pair, `(log f)'` converts the branch point into a simple
+pole with residue equal to the exponent (Stahl convergence-in-capacity for the
+multivalued case).
+
+**But proving the analytic class does NOT make d-log-Pade a controlled closure
+route with the three known coefficients, and does NOT remove the beta^8
+requirement.** Three independent reasons, in order of decisiveness:
+
+1. **The beta^8 floor is a class-INDEPENDENT rank constraint, not an artifact
+   of the predictive test.** A complex-conjugate pair is a **degree-2** d-log
+   denominator. Three coefficients of `Delta` (`= h0, h1, h2` of the bracket)
+   yield only **two** coefficients of `H = (log h)'` (`H0 = 7/12`,
+   `H1 = 2c2 - c1^2 = -1/16`), one short of the **three** needed to form even an
+   `[1/1]`. So the minimal balanced d-log-Pade that resolves the pair and makes
+   a falsifiable next-coefficient prediction needs **>= 4 contiguous
+   coefficients `d_5..d_8` (= beta^8)** — exactly the harness's own stated
+   threshold. **Proving the analytic class adds zero coefficients and therefore
+   cannot relax this floor** (Section 5, runner E).
+
+2. **No rigorous bound on `Delta(6)` from three coefficients.** The three known
+   coefficients are **pre-asymptotic**: a constant-amplitude single-pair fit to
+   `(1, 7/12, 5/36)` yields `R ~ 1.16` (not `~5.7`), and the inverse-ratios
+   `12/7 = 1.71`, `21/5 = 4.2` do not pin the radius. If the conjectured
+   `|beta_c| ~ 5.5-5.7` holds, then `beta = 6` lies **past** the disk of
+   convergence (`6/5.54 ~ 1.08`), so the bare three-term sum carries **no
+   Cauchy bound** at 6. There is no Stieltjes bracketing either: `H1 < 0` and a
+   complex pair is not a real cut, so the bracket is not a Stieltjes series even
+   though `Z_1plaq > 0` on the reals (positivity buys `P_1plaq` monotonicity,
+   not a Stieltjes property of the connected bracket).
+
+3. **The convergence evidence is from the favorable end of the class, and the
+   premise is unproven for the thermodynamic object.** The proxy's reconstruction
+   is on the subtracted Gegenbauer model whose d-log is exactly rational
+   (constant-amplitude pure pair) — the easiest representative of the conjectured
+   class. The literature precedent for the genuinely-realistic regime is sobering:
+   even at 21st order, 2D O(N=3) sigma-model d-log-Pade tracked Monte-Carlo only
+   up to (not far past) the convergence radius and **failed beyond it**
+   (Campostrini-Pelissetto-Rossi-Vicari, arXiv:hep-lat/9602011 — a methodology
+   import, not SU(3)). And the analyticity premise itself is rigorous only at
+   **finite L** (Section 2); the thermodynamic real-analyticity that controls
+   `Delta(6)` rests on the unproven (standard) no-bulk-transition import.
+
+**Verdict.** d-log-Pade is **supported as the correct CLASS of tool** (no
+positive-real branch point on `(0,6]` -> analytic continuation is the right
+framework), but it is **not a controlled closure route with `d_5..d_7`**, it
+**still requires beta^8 (d_5..d_8) to even ACTIVATE** a falsifiable predictive
+test, and reliable continuation **past** the radius to `beta = 6` is not
+demonstrated even at 14-21 orders in the closest literature precedent. There is
+**no achievable error bound on `Delta(6)` / `<P>(6)` from three coefficients.**
+The next exact coefficient `d_8` is at/past the treewidth-29 wall (56
+multiplicity vectors/shell of 9-plaquette cumulants, Bell(9) = 21147), so even
+the beta^8 activation minimum is out of runway.
+
+## 6. Honest status: PROVEN / CONDITIONAL / OPEN
+
+**PROVEN (rigorous, this note + retained primitives):**
+
+- `Z_L(beta)` is entire and **strictly positive on all of R** at every finite
+  L (`0 < Z_L <= exp(beta N_plaq)`); hence `Delta_L` is meromorphic with **no
+  real Lee-Yang zero**, real-analytic on `[0,6]`, nearest singularity a
+  complex-conjugate pair. **This is a finite-volume statement** (textbook
+  Yang-Lee template; the finer half of the retained reduction-existence
+  theorem).
+- The single-plaquette `P_1plaq` is analytic on all of R; nearest singularity a
+  complex-conjugate **pole** pair at `beta_c = 3.3175 +/- 7.5047 i`,
+  `|beta_c| = 8.205`, residual `-> 1e-34` (genuine entire-function zero). `beta
+  = 6` is inside its disk of convergence.
+- From the exact `d_5, d_6, d_7`: the **single-real-pole / geometric
+  continuation is falsified** (`u = 20/49 != 1`), and **no positive-real
+  divergent algebraic branch point lies on `(0,6]`** (`u = 20/49 < 1/2`,
+  exponent-independent). The minimal `[0/2]` Pade gives a complex pair
+  (`disc = -67/144 < 0`).
+- The **beta^8 (d_5..d_8) requirement** for d-log-Pade is a **class-independent
+  rank constraint** (degree-2 d-log denominator needs 3 coeffs of `H`; three
+  `Delta` coeffs give 2). Proving the class supplies no coefficients.
+
+**CONDITIONAL (corroborated, not derived):**
+
+- The thermodynamic `Delta(beta)` is of the **complex-conjugate-pair, no-real-
+  branch-point-on-[0,6]** class. Conditional on the standard physics import
+  that SU(3) pure-gauge has **no real bulk transition below beta=6** (smooth
+  crossover; Fisher zeros `5.54 +/- i0.10` off-axis; SU(N<=4) crossover-only).
+  The finite-volume positivity theorem does **not** transfer across
+  `L->infinity` (the Yang-Lee pinch), so this remains an unproven (though
+  physically near-certain) premise.
+- IF that class holds, d-log-Pade is the methodologically correct continuation
+  — but only as a **high-order** method; three (or four) coefficients give no
+  convergent estimate and no provable error bar.
+
+**OPEN (unchanged lane-killer):**
+
+- The **location** `|beta_c|` of the thermodynamic `Delta`'s nearest
+  singularity (surrogate estimates span `~2.2` to `~8.2`). This is the open
+  `rho_{p,q}(6)` object restated in the beta-plane.
+- The boundary character measure `rho_{p,q}(6)` itself: under-determined by
+  local character + intertwiner data **and** treewidth-29 infeasible at
+  `L_s >= 3`. No analytic-class result supplies it.
+- A **from-primitives** proof of no-real-bulk-transition for SU(3) on `[0,6]`
+  (the `L->infinity` clause), and exact coefficients `d_8` and beyond (past the
+  treewidth wall).
+
+## 7. The single decisive next step
+
+**Compute the exact order-beta^8 connected coefficient `d_8` of `Delta(beta)`**
+(56 multiplicity vectors/shell of 9-plaquette cumulants, Bell(9) = 21147 set
+partitions per cumulant), via a contraction engine that defeats the per-link
+invariant-projector wall the cycle-2 engine optimization already pushed to
+`beta^7`.
+
+This is decisive because `d_8` is the **single** quantity that simultaneously
+(a) is the beta^8 **activation** coefficient for the d-log-Pade predictive
+verdict (the first falsifiable next-coefficient test of the complex-pair class
+against exact data, predicting `d_9`), and (b) directly tests the
+constant-amplitude single-pair hypothesis whose fit to `d_5, d_6, d_7` predicts
+`d_8 ~ -3.26e-7` (a clean sign-and-magnitude falsifier). Either outcome is an
+audit-shippable bounded result on retained primitives.
+
+**Named obstruction on the step (honest).** `d_8` is at/past the practical
+contraction ceiling: 9-plaquette cumulants reach single links carrying up to
+five fundamental + four conjugate factors, and the combinatorial count grows
+like the lattice-animal constant `mu^n` (`mu ~ 8`). Reaching it requires either
+(i) a Munster-style graphical strong-coupling bookkeeping that organizes
+connected SU(3) contributions analytically, or (ii) a rank-aware contractor
+that defeats the treewidth wall — both open multi-session items. **And even if
+`d_8` lands, it only ACTIVATES the predictive verdict; it does not close
+beta=6**: reliable continuation past the radius to `beta = 6` needs far more
+than four coefficients (the literature precedent failed past the radius even at
+14-21 orders), and closing `<P>(6)` still requires a genuinely new dynamical
+input for `rho_{p,q}(6)`, not another brute coefficient.
+
+## 8. What this note claims / does not claim
+
+Claims:
+- the finite-volume positivity theorem `0 < Z_L(beta) <= exp(beta N_plaq)` and
+  its consequence (no real Lee-Yang zero -> `Delta_L` real-analytic on `[0,6]`,
+  nearest singularity a complex-conjugate pair) — rigorous **at finite L**;
+- the rigorous single-plaquette Lee-Yang localization `|beta_c| = 8.205`,
+  `arg = 66.15 deg`, residual `-> 1e-34`;
+- the exact-coefficient class discriminants: single-real-pole/geometric
+  falsified, no positive-real divergent algebraic branch point on `(0,6]`,
+  minimal `[0/2]` complex pair (all from the single invariant `u = 20/49`);
+- the d-log-Pade verdict: applicable CLASS yes, controlled closure with three
+  coefficients NO, beta^8 (`d_5..d_8`) still required to activate, no
+  three-coefficient error bound.
+
+Does NOT claim:
+- any value of `P(beta=6)`, `beta_eff(6)`, `u_0`, or `alpha_s` (the forward
+  three-term truncation `<P>(6)_trunc ~ 0.5789` is a partial sum toward a
+  comparator, recorded only as a sensitivity datum, not a derivation);
+- the **thermodynamic** real-analyticity of `Delta` at beta=6 (that rests on an
+  unproven no-bulk-transition import; finite-L positivity does not transfer);
+- the **location** of `Delta`'s thermodynamic nearest singularity;
+- closure or repinning of the canonical same-surface plaquette value;
+- any audit status (independent audit lane only);
+- any new axiom, tag, vocabulary, or meta-framing. Lee-Yang localization is used
+  only to characterize the analytic class, never as a closure route (honoring
+  the no-go ledger).
+
+## 9. Validation (runner scorecard)
+
+Runner `python3 scripts/frontier_beta6_delta_analytic_class_2026_05_30.py`
+(**PASS=33 / FAIL=0**):
+- **A.** exact `d_5 = 1/472392 = 4/18^5`, `d_6 = 7/5668704`,
+  `d_7 = 5/17006112`; ratios `7/12`, `5/21`; ratio-of-ratios `20/49`; geometric
+  miss `1.45` (tadpole falsified); bracket `c2 = 5/36 != c1^2 = 49/144`.
+- **B.** recurrence `a_2 = 1/36`; `P_1plaq(6) = 0.4225317396` via both the
+  order-3 recurrence and the Bars Bessel-determinant (agree on `J(6)` to
+  `~1e-33`); `Z_1plaq(beta) > 0` across `[-9,9]` (min `Z=1` at `beta=0`,
+  no negatives) -> no real Lee-Yang zero.
+- **C.** nearest `Z_1plaq` zero `beta_c = 3.3174797 +/- 7.5046562 i`,
+  `|beta_c| = 8.2052`, `arg = 66.15 deg`; residual against the true Bars `Z`
+  `3.27e-11 -> 3.88e-18 -> 5.03e-26 -> 1.07e-34` at `D = 30/40/50/60` (genuine
+  zero); `beta = 6` inside the disk (`6/|beta_c| = 0.73`).
+- **D.** `u = c2/c1^2 = 20/49`; `(g+1)/(2g) > 1/2` for all `g > 0` (symbolic) so
+  `u = 20/49 < 1/2` excludes a positive-real divergent algebraic branch point;
+  `[0/2]` discriminant `-67/144 < 0` (complex pair); `disc = c1^2 (4u-3)`
+  (independence-flagging identity); `[0/2]` `|beta_c| = 2.2283`
+  (under-converged TYPE discriminator, not physical 5.7); geometric falsified.
+- **E.** `H = (log h)'` from three coeffs gives two coeffs (`H0 = 7/12`,
+  `H1 = -1/16`); an `[1/1]` needs three coeffs of `H` -> `d_5..d_8` (= beta^8)
+  is a class-independent rank floor matching the harness threshold.
+
+## 10. Key files / cross-references
+
+- [`scripts/frontier_beta6_delta_analytic_class_2026_05_30.py`](../scripts/frontier_beta6_delta_analytic_class_2026_05_30.py) (this note's verification runner)
+- [`BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_ATTACK_SURFACE_FRONTIER_NOTE_2026-05-29.md) (the 20-route ruled-out ledger; obstruction iii; `rho_{p,q}(6)` lane-killer)
+- [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md) (exact `d_7`; tadpole falsified; two-engine)
+- [`BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md) (exact `d_6`; GF(3) cube-shell certificate)
+- [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md) (d-log-Pade complex-pair proxy; activation thresholds)
+- [`GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md) (entire `Z_L`; `P_L = Z'/Z`; bijection/monotonicity)
+- [`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md) (`Z_L = Tr[T^Lt]`; six-neighbour recurrence)
+- [`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) (`T_src(6) = exp(3J) D_6 exp(3J)`; `kappa_{p,q}(6)`)
+- [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md) (retained `d_5 = 4/18^5`; four cube shells)
+- [`PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_ALL_ORDER_PROOF_NOTE_2026-05-09.md) (Bars Bessel-determinant closed form; indicial roots `{0,-3,-4}`)
+- [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md) (`<P>_{V=1}(6) = 0.422531739650`, retained_bounded)
+- [`PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md`](PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05.md) (`P_inf = 0.59400 +/- 0.00037`, Monte-Carlo comparator only)
+
+**External imports (methodology/comparator only, never derivation inputs):**
+Denbleyker-Du-Meurice-Velytsky arXiv:0710.5771 (SU(3) Fisher zeros
+`5.54 +/- i0.10`); Meurice group arXiv:0810.1792 / 1112.2734 (infinite-volume
+off-axis stabilization); Campostrini-Pelissetto-Rossi-Vicari
+arXiv:hep-lat/9602011 (2D O(N) sqrt-branch-point d-log-Pade-vs-MC caveat); Bars
+1980 (Bessel-determinant identity for SU(N) Wilson character integrals).
+
+This note is a frontier map / analytic-class characterization and asserts no
+closure of the beta=6 lane.

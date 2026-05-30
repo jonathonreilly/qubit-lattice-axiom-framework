@@ -17109,6 +17109,10 @@
       "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
+      "from": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
       "to": "yt_ew_matching_rule_m_note_2026-05-02"
     },
@@ -64529,10 +64533,11 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms_2026-05-03",
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "955807287ad47195d459cb22bf824448b49dfc33b79e37d090c87f7f1da9bb8f",
+      "note_hash": "121f96de89e9c9eea8d6538611d437c885dc5d90862492a9d1cd0242e2d8f06a",
       "path": "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
       "title": "Carrier-Independent Bilateral Lattice-Noether Identity \u2014 Narrow Theorem (Block 27)"
@@ -87553,7 +87558,7 @@
       "open_gate": 133,
       "positive_theorem": 582
     },
-    "edge_count": 9971,
+    "edge_count": 9972,
     "leaf_count": 821,
     "node_count": 2623,
     "root_count": 873,

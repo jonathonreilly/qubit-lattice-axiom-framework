@@ -470,3 +470,4 @@ certify the class is genuinely larger than {naive, staggered}.
   parent (audited_conditional). This narrow theorem is strictly
   additive on the parent and does not modify the parent's text or
   dependency graph.
+- [staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)

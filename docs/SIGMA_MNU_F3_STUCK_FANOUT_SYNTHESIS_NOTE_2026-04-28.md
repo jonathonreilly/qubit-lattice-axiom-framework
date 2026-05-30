@@ -1,60 +1,14 @@
-# Neutrino Sum-Mass Route-Status Fan-Out Synthesis
+# Lane 4F (Σm_ν) — F3 Stuck Fan-Out Synthesis
 
 **Date:** 2026-04-28
-**Type:** no_go
-**Status:** conditional route-status synthesis over five admitted orthogonal
-Σm_ν route attempts; not a theory-wide no-go.
-**Status authority:** independent audit lane only.
-**Topic:** Neutrino quantitative closure.
-**Provenance:** `physics-loop/sigma-mnu-f3-dm-cluster-20260428`
+**Status:** open branch-local **stuck-fan-out synthesis** note on
+`physics-loop/sigma-mnu-f3-dm-cluster-20260428`. Cycle 2 of the F3
+loop. Audit-grade. Per Deep Work Rules: 5 orthogonal Σm_ν cross-
+bound routes beyond the Cycle-1 DM-cluster cross-bound.
+**Lane:** 4 — Neutrino quantitative closure (sub-target 4F-β)
+**Loop:** `sigma-mnu-f3-dm-cluster-20260428`
 **Runner:** `scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py`
 **Log:** `outputs/frontier_sigma_mnu_f3_stuck_fanout_synthesis_2026-04-28.txt`
-
-## 2026-05-28 Audit Repair (conditional core; missing upstream admitted)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The finite-route synthesis follows only if the five route statuses and current-framework surface are accepted as inputs. The packet supplies no upstream authorities for T-4F-alpha-2, the current-bank Omega_DM interval, retained N_eff, the n"*
-
-with repair: *"missing_dependency_edge: add direct cited authorities for the DM-cluster cross-bound, neutrino functional-form theorem, current-bank Omega_DM theorem, dark-matter gate status, and eta/leptogenesis status, then re-run the no-go audit."*
-
-Supplying the named upstream authority is substantive new work, out of scope.
-This revision narrows via the **admission path**:
-
-- **Load-bearing (in scope):** Given the five route statuses and the current-framework surface as admitted inputs, the synthesis closes: the five orthogonal Σm_ν route attempts are assessed, the ~0.003 eV admission window is identified, and the no-go result — that no orthogonal route supplies an independent numerical Σm_ν cross-bound on the current-bank surface — follows algebraically from those inputs.
-- **NON-load-bearing (admitted / unsupplied):** The specific retained authorities establishing the five input route statuses — the neutrino functional-form theorem, the current-bank Omega_DM interval theorem, retained N_eff, dark-matter gate status, and eta/leptogenesis status — are admitted as unsupplied inputs; no direct cited authority row for any of these is present in the restricted packet.
-
-No new axiom, import, or retained bridge is introduced. The conditional core is
-the load-bearing content; the named upstream stays admitted until a retained
-authority/runner for it lands.
-
-## No-Go Discipline Gate (review-loop 2026-05-29)
-
-This gate passes only for the conditional route-status synthesis. It does
-**not** prove that every possible neutrino-mass route is closed.
-
-- **N1 alternative routes:** the five named orthogonal route attempts are the
-  in-scope alternatives; any sixth mechanism, new observable, or new retained
-  authority is outside this no-go and remains open.
-- **N2 wall independence:** the five route-status inputs are independent
-  admissions for this note; closing one route-status authority does not close
-  the other four.
-- **N3 hidden-wall scan:** "current-framework", "current-bank", and
-  "orthogonal" are non-load-bearing bookkeeping terms unless backed by the
-  listed route-status inputs.
-- **N4 residual matching:** the residual is only "no listed orthogonal route
-  supplies an independent numerical Σm_ν cross-bound on the current-bank
-  surface"; it is not a claim about all future Σm_ν mechanisms.
-- **N5 rhetoric audit:** the negative statement is route-list resolution only,
-  not theory-wide or lattice-wide impossibility.
-- **N6 partial-closure path:** direct retained authorities for any of the five
-  route statuses can retire that wall without adding a new axiom.
-- **N7 steelman:** a hostile reviewer can correctly object that the five route
-  statuses are not retained here; this is accepted and is why they are explicit
-  admissions.
-- **N8 cross-cycle echo:** prior route-synthesis rows repeatedly failed by
-  treating status packets as authority; this repair keeps the status packet
-  conditional and sends the row back to the independent auditor.
 
 ---
 

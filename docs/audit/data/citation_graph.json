@@ -6078,10 +6078,6 @@
     },
     {
       "from": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
-      "to": "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
-    },
-    {
-      "from": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
       "to": "dimensional_gravity_table"
     },
     {
@@ -48243,11 +48239,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
         "dimensional_gravity_table"
       ],
       "helper_runner_paths": [],
-      "note_hash": "03d89885766fa79a11d55cf0234b5916f1d354e3e857869ce024a5fe03874e8a",
+      "note_hash": "908f504baff04df061b7d01ab12a687d3664a2729c67216647165e39aeb6e589",
       "path": "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
       "runner_path": "scripts/frontier_dimension_selection.py",
       "title": "Dimension-Selection Lower-Bound Bridge V2 (Runner-Faithful)"

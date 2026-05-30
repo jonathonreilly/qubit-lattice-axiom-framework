@@ -50,20 +50,21 @@ supports are cited here as narrowing structure, not as a closure of `(BP)`.
 ## Cited authorities (one-hop deps)
 
 This note records explicit one-hop authority citations for the conditional
-completion packet. The audit verdict `audited_conditional` correctly flags the
-gravitational boundary/action density bridge as the named open premise; the
-citations below sharpen the conditional structure on the live authority chain
-without claiming to derive that bridge.
+completion packet. On the live ledger (`docs/audit/data/audit_ledger.json`)
+this packet is `unaudited`; the gravitational boundary/action density bridge
+remains the named open premise, and the citations below sharpen the
+conditional structure on the live authority chain without claiming to derive
+that bridge.
 
 - [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
-  (`audited_conditional`) — the unique additive finite-boundary density
+  (`unaudited` on the live ledger) — the unique additive finite-boundary density
   extension `N_A(P) = c_cell A(P) / a^2`, conditional on the gravitational
   boundary/action density bridge premise (BP). PR #812 sharpened this note
   with an explicit conditional carrier-share derivation matching `c_cell =
   1/4` to `1/(4 G_Newton,lat)` via Wald-Noether on the cited authority
   chain.
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
-  (`audited_conditional`) — the upstream first-order coframe carrier
+  (`unaudited` on the live ledger) — the upstream first-order coframe carrier
   theorem selecting `P_A` as the unique first-order boundary carrier on the
   primitive event cell. PR #829 sharpened this note's premise provenance:
   first-order locality is sourced to the link-local first-variation route,
@@ -99,8 +100,8 @@ without claiming to derive that bridge.
 The above one-hop citations make the conditional completion packet's
 authority chain explicit. The named open premise (BP) — gravitational
 boundary/action density identified with the first-order coframe carrier — is
-unchanged: this note does not claim to derive (BP) and the audit verdict
-remains `audited_conditional`.
+unchanged: this note does not claim to derive (BP), and on the live ledger
+(`docs/audit/data/audit_ledger.json`) the packet is `unaudited`.
 
 ## Bounded support narrowing the bridge premise (post-2026-05-10)
 

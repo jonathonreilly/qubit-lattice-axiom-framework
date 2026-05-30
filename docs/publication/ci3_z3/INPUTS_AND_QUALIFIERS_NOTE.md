@@ -89,8 +89,16 @@ current canonical same-surface evaluated constants on `main`.
 
 Current absolute-scale package rule:
 
-- on the accepted physical-lattice reading, the package currently carries
-  `a^(-1) = M_Pl` as an explicit Planck-scale fallback pin
+- on the accepted physical-lattice reading, the package carries the single
+  primitive unit reference `a^(-1) = M_Pl`: the units import that converts the
+  framework's natural (lattice) units to physical units. It is irreducible by
+  dimensional analysis — `A_min = Cl(3)` on `Z^3` carries zero dimensionful
+  content — so it is a foundational primitive, not a derivation gap. See
+  [SCALE_REFERENCE_PRIMITIVE_NOTE.md](../../SCALE_REFERENCE_PRIMITIVE_NOTE.md).
+  This unit reference does not assert `a/l_P = 1`; whether the framework's
+  natural unit self-consistently equals the Planck length is the separate open
+  gravity derivation tracked in the `c_cell = 1/4` / boundary-carrier bullets
+  below
 - the attempted same-surface structural derivation from the 2026-04-30
   primitive Clifford-Majorana note was audited as `audited_renaming`: it
   verifies the candidate `Cl_4(C)` / `F(C^2)` carrier algebra, but does not
@@ -132,10 +140,11 @@ Current absolute-scale package rule:
   the Hodge-dual `P_1` / `P_3` tie; it is a proposed no-go audit target, not a
   positive Planck pin
 - the 2026-04-30 link-local first-variation theorem proposes the missing
-  action-native `P_A` selector, but it remains a proposed-retained audit target
-  with effective conditional status until fresh audit accepts both the local
+  action-native `P_A` selector, but it remains `unaudited` on the live ledger
+  (`docs/audit/data/audit_ledger.json`) pending fresh audit of both the local
   theorem and its upstream action/time/CPT authority rows
 - authority:
+  [SCALE_REFERENCE_PRIMITIVE_NOTE.md](../../SCALE_REFERENCE_PRIMITIVE_NOTE.md),
   [PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md](../../PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md),
   [PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md](../../PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md),
   [PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md](../../PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md),

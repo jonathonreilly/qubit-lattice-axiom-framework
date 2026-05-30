@@ -7,19 +7,22 @@
 ## 1. Current package stance
 
 The accepted package already treats `Cl(3)` on `Z^3` as a **physical lattice**,
-not a disposable regulator family. The primitive Clifford-Majorana edge
-derivation was audited as `audited_renaming`, so the public surface still
-tracks the absolute lattice scale by one explicit package pin:
+not a disposable regulator family. The public surface tracks the absolute
+lattice scale by the single primitive unit reference:
 
 > `a^(-1) = M_Pl`
 
-This is the cleanest honest package statement for the current tree.
+This is the **units import**: the one dimensionful number that converts the
+framework's natural (lattice) units to physical units. It is irreducible by
+dimensional analysis — `A_min = Cl(3)` on `Z^3` carries zero dimensionful
+content — so it is a foundational primitive, **not a derivation gap**. See
+[SCALE_REFERENCE_PRIMITIVE_NOTE.md](./SCALE_REFERENCE_PRIMITIVE_NOTE.md).
 
-That fallback pin means:
+That primitive unit reference means:
 
 - the physical-lattice reading is accepted on the package boundary;
-- the absolute lattice spacing is still carried by one explicit Planck scale
-  pin;
+- the absolute lattice spacing is carried by this one explicit Planck-scale
+  unit reference, which supplies zero dimensionless content;
 - the 2026-04-30 construction verifies the candidate Clifford-Majorana
   carrier algebra, but audit did not ratify it as a derivation of the missing
   edge-statistics premise.
@@ -27,9 +30,11 @@ That fallback pin means:
 So the current lane status is:
 
 - **physical lattice:** accepted package posture
-- **absolute scale `a^(-1) = M_Pl`:** fallback package pin remains active
+- **absolute scale `a^(-1) = M_Pl`:** the single primitive unit reference (the
+  units import), a foundational primitive rather than a derivation gap
 - **natural-unit structural derivation `G_Newton,lat=1`, `a/l_P=1`:**
-  conditional on the primitive Clifford-Majorana edge carrier premise
+  the separate open gravity self-consistency derivation, conditional on the
+  primitive Clifford-Majorana edge carrier premise
 
 The 2026-04-24 Planck conditional packet sharpened this posture. It is retained
 in
@@ -66,19 +71,21 @@ in
   scalar equality still needs an extra law `delta = 0`.
 
 This improves the derivation program, but it does not make the older minimal
-finite stack alone derive the SI Planck length. The public package pin remains
-the correct manuscript fallback because the 2026-04-30 primitive
-Clifford-Majorana edge derivation was not audit-ratified as part of the
-accepted Planck package.
+finite stack alone derive the SI Planck length. The single primitive unit
+reference `a^(-1) = M_Pl` remains the correct manuscript posture for the
+units import; separately, the 2026-04-30 primitive Clifford-Majorana edge
+derivation was not audit-ratified as part of the open gravity self-consistency
+derivation.
 
 The 2026-04-30 update is
 [PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md](./PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md).
 It proposes to derive the metric-compatible primitive Clifford/CAR edge
 statistics from retained `Cl(3)` bivectors plus the anomaly-forced time axis.
 Audit returned `audited_renaming`: the construction verifies an assigned
-carrier but does not derive the substrate-to-`P_A` forcing step. The Planck
-pin therefore remains the active fallback, and the natural-unit closure remains
-conditional on the Clifford/CAR carrier premise.
+carrier but does not derive the substrate-to-`P_A` forcing step. The single
+primitive unit reference `a^(-1) = M_Pl` therefore remains the units import,
+and the natural-unit self-consistency closure remains the separate open
+gravity derivation, conditional on the Clifford/CAR carrier premise.
 
 ## 2. Why this lane exists
 
@@ -100,10 +107,10 @@ The main load-bearing boundary notes are:
 - [ACTION_NORMALIZATION_NOTE.md](./ACTION_NORMALIZATION_NOTE.md)
 - [BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md](./BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)
 
-## 3. What the Planck-scale pin cleans up now
+## 3. What the primitive unit reference cleans up now
 
-Once this pin is carried explicitly as a package lane, the following repo-wide
-semantics become cleaner and more uniform:
+Once this primitive unit reference is carried explicitly as a package lane, the
+following repo-wide semantics become cleaner and more uniform:
 
 - hierarchy / electroweak absolute-scale bookkeeping;
 - the literal UV meaning of the lattice endpoint `M_Pl` in the YT / Higgs
@@ -145,8 +152,10 @@ with `G_Newton,lat = 1` on the conditional source-unit support surface, while
 `G_kernel = 1/(4π)` remains the bare Green coefficient on the retained Poisson
 surface.
 
-Until that map is derived internally, the package still needs one explicit
-absolute-scale pin.
+That internal map is the open gravity self-consistency derivation. Independently
+of it, the absolute scale is supplied by the single primitive unit reference
+`a^(-1) = M_Pl` (the units import) — one dimensionful unit is irreducible by
+dimensional analysis and is not removed by closing the map.
 
 ## 5. Active derivation program
 
@@ -372,9 +381,11 @@ Former blocker:
 After audit of the 2026-04-30 primitive Clifford-Majorana edge derivation, the
 correct package statement is:
 
-- `a^(-1) = M_Pl` remains the explicit package pin; `a/l_P=1` in natural
-  phase/action units remains conditional on the primitive Clifford-Majorana
-  edge-statistics carrier
+- `a^(-1) = M_Pl` is the single primitive unit reference (the units import), a
+  foundational primitive rather than a derivation gap; separately, `a/l_P=1` in
+  natural phase/action units remains the open gravity self-consistency
+  derivation, conditional on the primitive Clifford-Majorana edge-statistics
+  carrier
 - it is **not** a derivation of the SI decimal value of `hbar` or a
   Hilbert-only theorem with the Clifford coframe stripped away
 - the primitive boundary count is identified with the microscopic

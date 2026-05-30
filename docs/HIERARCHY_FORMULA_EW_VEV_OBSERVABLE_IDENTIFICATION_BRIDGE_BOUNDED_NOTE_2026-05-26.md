@@ -50,15 +50,23 @@ The following four context inputs are supplied to this bridge. They are
 the four hierarchy-formula primitives, named explicitly as
 admitted-context so that the bridge's *conditional* content is auditable.
 
-- **C1 (= hierarchy P1) — `M_Pl` import.** Identification of the
-  framework UV scale with the Planck mass `M_Pl = 1.2209 × 10^19 GeV`
-  (non-reduced) via Wald-Noether matching. The algebraic skeleton
-  `S_Wald(c, A) = A · c ⇔ S_BH(G, A) = A/(4G) ⇔ c = 1/(4G)` is
-  retained as
-  [`BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md);
-  the metric-compatible coframe response and gravitational boundary
-  density bridge premises are open. C1 is the **scale-setting** input
-  to the dimension-one bridge.
+- **C1 (= hierarchy P1) — the single primitive scale reference
+  `a^(-1) = M_Pl`.** The framework takes one dimensionful unit, the
+  units import that converts natural (lattice) units to physical units,
+  by convention the Planck mass `M_Pl = 1.2209 × 10^19 GeV`
+  (non-reduced). This units-import facet is a foundational primitive,
+  not a derivation gap, since `A_min = Cl(3)` on `Z^3` carries zero
+  dimensionful content (see
+  [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)).
+  Separately, whether that natural unit self-consistently equals `l_P`
+  is the open gravity derivation via Wald-Noether matching: the
+  algebraic skeleton
+  `S_Wald(c, A) = A · c ⇔ S_BH(G, A) = A/(4G) ⇔ c = 1/(4G)` is retained
+  as
+  [`BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md),
+  while the metric-compatible coframe response and gravitational
+  boundary density bridge premises are open. C1 is the
+  **scale-setting** input to the dimension-one bridge.
 - **C2 (= hierarchy P2) — Wick-rotated Z³ → Z⁴ taste count.** The
   framework's spatial substrate is `Z^3`; the `16 = 2^4` species count
   requires `d = 4` Brillouin-zone enumeration. Six retained substep
@@ -137,12 +145,12 @@ arithmetic given C1-C4. Independent numerical agreement with `v_obs` is a
 This bridge is the **observable-identification step** only (= hierarchy
 P4). The package-level claim that
 `v = M_Pl × (7/8)^(1/4) × α_LM^16` is a **derived theorem** of the
-framework is **not** closed by this bridge. The other three hierarchy
-primitives remain admitted-context:
+framework is **not** closed by this bridge. The status of the other
+three hierarchy primitives:
 
 | Primitive | Bridge slot | Open work |
 |---|---|---|
-| P1 (M_Pl import) | C1 | Wald-Noether algebraic skeleton retained; metric-compatible coframe response + gravitational boundary density bridge premises unaudited/conditional |
+| P1 (single primitive scale reference `a^(-1) = M_Pl`) | C1 | Units-import facet is a foundational primitive — not a derivation gap, since `A_min = Cl(3)` on `Z^3` carries zero dimensionful content (see [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)). Separately, the self-consistency that this natural unit equals `l_P` is the open gravity derivation: Wald-Noether algebraic skeleton plus metric-compatible coframe response + gravitational boundary density bridge premises; the carrier theorem `bh_quarter_wald_noether_framework_carrier_theorem_note_2026-04-29` is `unaudited` on the live ledger |
 | P2 (Wick `Z^3 → Z^4`) | C2 | Six retained substep theorems; staggered-Dirac realization gate `audited_renaming` (open) |
 | P3 (`u_0^16 → α_LM^16`) | C3 | Regulator-dependence no-go row records the substrate-regulator boundary; bare-coupling `(4π)^(-16)` prefactor is continuum Fourier-measure inheritance, not Cl(3) derived |
 | P4 (observable identification, **this bridge**) | bounded_theorem here | The retained EW diagonalization + retained dimensional compression + retained triple-coincidence + retained `α_LM` identity make the assignment internally consistent GIVEN C1-C4 |
@@ -256,7 +264,11 @@ and from the independent audit lane.
   supplies C4 scalar-additivity / phase-blind scalar-generator
   admission.
 - `BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`
-  (retained) — algebraic skeleton for C1 (M_Pl import via Wald-Noether).
+  (retained) — algebraic skeleton for C1's gravity self-consistency lane
+  (whether the primitive scale reference `a^(-1) = M_Pl` equals `l_P`,
+  via Wald-Noether); the carrier theorem
+  `bh_quarter_wald_noether_framework_carrier_theorem_note_2026-04-29`
+  remains `unaudited`.
 - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — the canonical
   Tier-A registry; this bridge does **not** extend the Tier-A registry.
 

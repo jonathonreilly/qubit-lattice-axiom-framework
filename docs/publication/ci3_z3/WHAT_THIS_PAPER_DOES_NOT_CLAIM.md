@@ -282,9 +282,15 @@ If a reviewer wants the negative boundary, use this note.
 
 ## 7. Planck / entropy-carrier boundary
 
-- The package does not derive `a = l_P` from the minimal stack. It carries the
-  Planck scale as the current physical-lattice package pin, with conditional
-  completion once the gravitational boundary/action carrier is accepted.
+- The package does not derive `a = l_P` from the minimal stack. The absolute
+  scale enters as the single primitive unit reference `a^(-1) = M_Pl` on the
+  physical-lattice reading: the units import, irreducible by dimensional
+  analysis since `A_min = Cl(3)` on `Z^3` carries zero dimensionful content
+  (a foundational primitive, not a derivation gap; see
+  [SCALE_REFERENCE_PRIMITIVE_NOTE.md](../../SCALE_REFERENCE_PRIMITIVE_NOTE.md)).
+  Whether the framework's natural unit self-consistently equals `l_P` is the
+  separate open gravity derivation, with conditional completion once the
+  gravitational boundary/action carrier is accepted.
 - The primitive coframe boundary-carrier support theorem identifies `P_A` as
   the unique first-order coframe-slot carrier under stated hypotheses and
   recovers `c_cell=1/4`; it does not prove that physical gravitational

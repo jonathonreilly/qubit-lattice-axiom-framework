@@ -18,11 +18,13 @@ the primitive two-orbital Gaussian/CAR edge carrier
   evades by leaving the simple-fiber class with a self-dual primitive
   half-zone selector (average crossing count exactly 3, not 2).
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
-  — `audited_conditional`. Source of the action-side primitive coefficient
+  — `unaudited` on the live ledger (`docs/audit/data/audit_ledger.json`).
+  Source of the action-side primitive coefficient
   `c_cell = Tr((I_16/16) P_A) = 4/16 = 1/4` and the rank-four primitive
   boundary block `P_A H_cell` with which this carrier identifies.
 - [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
-  — `audited_conditional`. Records the additive finite-boundary extension of
+  — `unaudited` on the live ledger (`docs/audit/data/audit_ledger.json`).
+  Records the additive finite-boundary extension of
   the action-side `c_cell = 1/4` and the conditional carrier-share matching
   with `A/(4 G_Newton,lat)`. This is the action-side counterpart that this
   carrier theorem matches on the entanglement side under the carrier

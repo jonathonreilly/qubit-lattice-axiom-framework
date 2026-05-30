@@ -1,8 +1,10 @@
 # Planck Link-Local First-Variation P_A Forcing Theorem
 
 **Date:** 2026-04-30
-**Status:** intrinsic proposed_retained candidate; current audit graph effective
-status is conditional until upstream action/time/CPT authority rows are clean
+**Status:** intrinsic proposed_retained candidate; current effective status on
+the live ledger (`docs/audit/data/audit_ledger.json`) is `unaudited`, pending
+audit of this theorem and its upstream action/time/CPT authority rows. Status
+authority is the independent audit lane.
 **Runner:** `scripts/frontier_planck_link_local_first_variation_p_a_forcing.py`
 **Loop:** `physics-loop/planck-pa-retention-block01-20260430`
 
@@ -319,11 +321,12 @@ This theorem does not claim:
 
 The theorem is intended to repair the PR #228 renaming failure at the
 substrate-to-active-packet step. Audit ratification is still required before
-any downstream Planck cascade can be promoted. On the current audit graph, the
-intrinsic theorem is a `proposed_retained` candidate but the effective lane
-remains conditional until the upstream action/time/CPT authority rows are
-clean or the auditor accepts those facts as base substrate content for this
-restricted theorem.
+any downstream Planck cascade can be promoted. The intrinsic theorem is a
+`proposed_retained` candidate, but its current effective status on the live
+ledger (`docs/audit/data/audit_ledger.json`) is `unaudited`, pending audit of
+this theorem and the upstream action/time/CPT authority rows (or auditor
+acceptance of those facts as base substrate content for this restricted
+theorem).
 
 ## Verification
 

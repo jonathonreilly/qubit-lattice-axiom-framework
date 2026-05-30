@@ -15,12 +15,14 @@
   from one diamond / one cubic Fermi surface to the full simple-fiber Widom
   class.
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
-  — `audited_conditional`. Derives the action-side primitive coefficient
+  — `unaudited` on the live ledger (`docs/audit/data/audit_ledger.json`).
+  Derives the action-side primitive coefficient
   `c_cell = Tr((I_16/16) P_A) = 1/4` on the primitive event cell. This is the
   Planck-side `1/4` that this no-go shows the simple-fiber Widom class cannot
   match by entanglement.
 - [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
-  — `audited_conditional`. Records the additive finite-boundary extension of
+  — `unaudited` on the live ledger (`docs/audit/data/audit_ledger.json`).
+  Records the additive finite-boundary extension of
   the action-side `c_cell = 1/4` carrier and the conditional carrier-share
   identity matching `S_BH = A/(4 G_Newton,lat)` at `G_Newton,lat = 1`.
 

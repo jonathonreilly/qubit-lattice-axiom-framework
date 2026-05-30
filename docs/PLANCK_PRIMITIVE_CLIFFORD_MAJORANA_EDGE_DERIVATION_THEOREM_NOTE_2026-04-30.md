@@ -56,8 +56,9 @@ audit lane).
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
   — companion conditional carrier note that selects `P_A` from the
   first-order coframe boundary variation under the same link-local
-  first-variation provenance. Its closure status is `audited_conditional`;
-  it is the upstream surface on which the present `Cl_4(C)` carrier acts.
+  first-variation provenance. Its effective status on the live ledger
+  (`docs/audit/data/audit_ledger.json`) is `unaudited`; it is the upstream
+  surface on which the present `Cl_4(C)` carrier acts.
 - [`SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md`](SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
   (`retained_no_go`) — exact negative boundary clarifying that
   symmetry-only substrate content does *not* uniquely force `P_A`. This is

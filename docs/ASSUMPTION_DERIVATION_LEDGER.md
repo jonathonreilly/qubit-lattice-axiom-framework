@@ -77,7 +77,7 @@ find the authorities.
 | ingredient | current status | what is actually true now |
 |---|---|---|
 | `Cl(3)` on `Z^3` as physical theory | assumed framework axiom | This is the starting physical postulate of the package. |
-| `M_Pl` as UV cutoff | assumed framework scale | Treated as the framework cutoff, not fitted from the SM. |
+| `a^(-1) = M_Pl` scale reference | primitive unit reference (units import) | The single dimensionful unit that converts framework natural units to physical units; irreducible by dimensional analysis since `A_min = Cl(3)` on `Z^3` carries zero dimensionful content, so a foundational primitive rather than a derivation gap. Not fitted from the SM. Does not assert `a/l_P = 1` (separate open gravity derivation). Authority: [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md). |
 | SU(3) plaquette `<P> = 0.5934` at `beta = 6` | same-surface evaluated / derived | The complete prediction chain uses the canonical plaquette evaluation of the retained partition function, not an experimental import or a free parameter. |
 | exact structural gauge/matter backbone | derived | `SU(3) x SU(2) x U(1)`, three generations, anomaly-forced `3+1`, and the retained matter structure are package-grade. |
 | `SU(3)` confinement / `\sqrt{\sigma}` | retained support + bounded companion | `T = 0` confinement is structural on the graph-first `SU(3)` gauge sector at canonical `g_bare^2 = 1`; the bounded `\sqrt{\sigma} \approx 465 MeV` readout uses the retained `\alpha_s` lane plus the standard low-energy EFT bridge. |

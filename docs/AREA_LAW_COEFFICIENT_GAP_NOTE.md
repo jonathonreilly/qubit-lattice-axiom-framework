@@ -11,12 +11,14 @@ authorities. Citations are made explicit per cluster:
 ### Action-side `c_cell = 1/4` chain
 
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
-  — `audited_conditional`. Derives the action-side primitive coefficient
+  — `unaudited` on the live ledger (`docs/audit/data/audit_ledger.json`).
+  Derives the action-side primitive coefficient
   `c_cell = Tr((I_16/16) P_A) = 4/16 = 1/4` from first-order coframe locality
   and unit primitive response normalization (both cited there, derived from
   link-local first variation).
 - [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
-  — `audited_conditional`. Extends `c_cell = 1/4` additively to finite
+  — `unaudited` on the live ledger (`docs/audit/data/audit_ledger.json`).
+  Extends `c_cell = 1/4` additively to finite
   boundary patches and records the conditional carrier-share matching
   `n · c_cell = A/(4 G_Newton,lat)` at `G_Newton,lat = 1`.
 
@@ -231,8 +233,8 @@ The coefficient-gap structure on the live authority chain is now:
 
 | Side          | Coefficient    | Authority                                                                                       | Status              |
 | ------------- | -------------- | ----------------------------------------------------------------------------------------------- | ------------------- |
-| Action        | `c_cell = 1/4` | [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md) | audited_conditional |
-| Action (ext.) | `n · c_cell = A/(4 G_N)` | [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md) | audited_conditional |
+| Action        | `c_cell = 1/4` | [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md) | unaudited (live ledger) |
+| Action (ext.) | `n · c_cell = A/(4 G_N)` | [`PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM`](PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md) | unaudited (live ledger) |
 | Entangle. (-)  | `c_Widom <= 1/6` (simple-fiber class) | [`AREA_LAW_QUARTER_BROADER_NO_GO_NOTE`](AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md) | audited_conditional |
 | Entangle. (+) | `c_Widom = 1/4` (CIP)             | [`AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM`](AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md) | audited_conditional |
 | Bridge        | (CIP) ← local complex-CAR        | [`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM`](AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md) | support/conditional |

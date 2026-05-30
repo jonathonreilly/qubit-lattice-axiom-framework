@@ -85,10 +85,16 @@ The hierarchy formula carries the same-surface plaquette/coupling-chain
 match between `M_Pl × (7/8)^{1/4} × α_LM^{16}` and PDG `v_obs = 246.22 GeV`
 at relative deviation `+0.0255 %`. The match is real and robust on the
 canonical surface, but the underlying formula carries four named
-load-bearing primitives (M_Pl import; Wick rotation Z³ → Z⁴ for the 4D
+load-bearing primitives (the single primitive scale reference
+`a^(-1) = M_Pl`, whose units-import facet is a foundational primitive
+— not a derivation gap, since `A_min = Cl(3)` on `Z^3` carries zero
+dimensionful content; see
+[SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+— while whether that natural unit equals `l_P` is the separate open
+gravity self-consistency derivation; Wick rotation Z³ → Z⁴ for the 4D
 taste count `2^4 = 16`; the algebraic substitution `u_0^{16} → α_LM^{16}`;
-EWSB observable identification) that have not been derived from the
-physical Cl(3) local algebra plus Z^3 spatial substrate.
+EWSB observable identification), of which the latter three have not been
+derived from the physical Cl(3) local algebra plus Z^3 spatial substrate.
 Per-route hierarchy notes
 ([HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md),
 [HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md),
@@ -425,10 +431,18 @@ running from v to M_Z, not the core predictions.
 `v = M_Pl × (7/8)^{1/4} × α_LM^{16} = 246.28 GeV` is a **bounded
 numerical match** on the canonical surface (per
 [HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md);
-see §11.6 below). It rides on `M_Pl` from the Planck lane (admitted UV
-import; the framework anchors `M_Pl` via Wald-Noether matching, itself
-`audited_conditional`), on a Wick rotation `Z^3 → Z^4` for the 4D
-taste count `2^4 = 16` not derived from the Z^3 spatial substrate, on
+see §11.6 below). It uses the single primitive unit reference
+`a^(-1) = M_Pl` (the units import — a foundational primitive, not a
+derivation gap, since `A_min = Cl(3)` on `Z^3` carries zero dimensionful
+content; see
+[SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md));
+separately, whether that natural unit self-consistently equals `l_P` via
+the framework's Wald-Noether matching is the open gravity derivation,
+whose carrier theorem
+`bh_quarter_wald_noether_framework_carrier_theorem_note_2026-04-29` is
+`unaudited` on the live ledger. It also rides on a Wick rotation
+`Z^3 → Z^4` for the 4D taste count `2^4 = 16` not derived from the Z^3
+spatial substrate, on
 the algebraic substitution `u_0^{16} → α_LM^{16}` not derived as a
 determinant identity, and on the lattice → SM-Higgs-VEV observable
 identification. Within those qualifiers, the +0.0255 % match is real and
@@ -572,11 +586,19 @@ is not expected to change any prediction by more than 1%.
 The hierarchy formula `v = M_Pl × (7/8)^{1/4} × α_LM^{16} = 246.28 GeV`
 matches PDG `v_obs = 246.22 GeV` to `+0.0255 %` on the same-surface
 plaquette / coupling chain, but rides on four named load-bearing
-primitives that have not been derived from the physical Cl(3) local
-algebra plus Z^3 spatial substrate:
+primitives; of these, P1's units-import facet is a foundational
+primitive, while P2-P4 (and P1's gravity self-consistency facet) have
+not been derived from the physical Cl(3) local algebra plus Z^3 spatial
+substrate:
 
-- **P1.** `M_Pl` import as the UV scale (Planck lane authority,
-  itself `audited_conditional`).
+- **P1.** the single primitive scale reference `a^(-1) = M_Pl` — the
+  units import (a foundational primitive, not a derivation gap, since
+  `A_min = Cl(3)` on `Z^3` carries zero dimensionful content; see
+  [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md)).
+  Whether that natural unit self-consistently equals `l_P` is the
+  separate open gravity derivation (Planck lane authority); its carrier
+  theorem `bh_quarter_wald_noether_framework_carrier_theorem_note_2026-04-29`
+  is `unaudited` on the live ledger.
 - **P2.** Wick rotation `Z³ → Z⁴` to obtain the 4D taste count
   `2^4 = 16`. The framework's spatial substrate is `Z^3`, where the
   taste count is `2^3 = 8`. The 4D extension is borrowed from
@@ -592,7 +614,8 @@ algebra plus Z^3 spatial substrate:
 
 This package does not supply a framework derivation of
 `v = Λ × α^N` for integer `N` from the baseline. Closure path: derive at
-least one of P1-P4 from primitives. Most defensible route is per-step
+least one of P2-P4 from primitives (or close the P1 gravity
+self-consistency lane). Most defensible route is per-step
 Wilsonian transport on the 16-step taste staircase (C3 in
 HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10), which the framework's
 YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE records as non-perturbative at
@@ -625,10 +648,13 @@ computed number (<P> = 0.5934):
 
 [^v-status]: Bounded numerical match on the same-surface
 plaquette/coupling chain at `+0.0255 %`. The hierarchy formula
-`v = M_Pl × (7/8)^{1/4} × α_LM^{16}` rides on four open primitives
-P1-P4 (M_Pl import; Wick rotation `Z^3 → Z^4` for 4D taste count;
+`v = M_Pl × (7/8)^{1/4} × α_LM^{16}` carries four named primitives
+P1-P4 (the single primitive scale reference `a^(-1) = M_Pl`, a
+foundational primitive whose self-consistency with `l_P` is the open
+gravity derivation; Wick rotation `Z^3 → Z^4` for 4D taste count;
 `u_0^{16} → α_LM^{16}` algebraic substitution; EWSB observable
-identification); see §11.6 above and
+identification), of which the latter three remain open; see §11.6 above
+and
 [HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md).
 
 Seven independent observables (v, alpha_s, sin^2(theta_W), 1/alpha_EM,

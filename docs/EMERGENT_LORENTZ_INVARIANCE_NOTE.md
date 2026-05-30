@@ -8,8 +8,11 @@ audit verdict).
 **Status:** bounded structural-dispersion theorem on the cubic Z³ lattice.
 The **load-bearing content is the structural-dispersion core only**
 (see binding-scope header); the Planck-suppressed physical estimate and
-broad SME interpretation are **non-load-bearing**, conditional on an
-upstream Planck-pin / unit-map authority not retained here.
+broad SME interpretation are **non-load-bearing**. Their units map
+`a^(-1) = M_Pl` is the retained primitive unit reference
+`scale_reference_primitive`, but they additionally assume the lattice
+spacing equals the Planck length (`a/l_P = 1`), which is the separate
+open gravity self-consistency derivation, not retained here.
 **Script:** `scripts/frontier_emergent_lorentz_invariance.py`
 
 ## 2026-05-28 Audit Repair (structural core split from Planck estimate)
@@ -21,18 +24,21 @@ The 2026-05-28 audit verdict was `audited_conditional`:
 > Planck-pin/unit-map premise from an upstream package lane that is not
 > a retained one-hop dependency for this row."*
 
-Repair instruction offered two paths: (a) add a retained dependency edge
-to `planck_scale_lane_status_note_2026-04-23` and audit that Planck-pin
-lane to retained grade, or (b) split the structural dispersion core from
-the Planck-suppressed physical estimate.
+Repair instruction offered two paths: (a) supply a retained authority for
+the units map `a^(-1) = M_Pl`, or (b) split the structural dispersion core
+from the Planck-suppressed physical estimate.
 
-Path (a) is unavailable as a citation fix: `planck_scale_lane_status_note_2026-04-23`
-is currently `unaudited`, and the retained `planck_target3_*` notes are a
-different carrier-algebra / unit-edge surface, not the Planck-pin/unit-map
-authority the physical readout needs. Auditing the Planck-pin lane to
-retained is substantive new work, out of scope here.
-
-This repair therefore takes **path (b)**:
+The **units-map role** is now supplied by a retained-grade authority: the
+single primitive unit reference `a^(-1) = M_Pl` is registered as
+`scale_reference_primitive` (source `SCALE_REFERENCE_PRIMITIVE_NOTE.md`) —
+the units import that converts the framework's natural (lattice) units to
+physical units, a foundational primitive rather than a derivation gap. The
+Planck-suppressed numerical estimate, however, further assumes that the
+framework's natural unit self-consistently equals the Planck **length**
+(`a = ℓ_Planck`, i.e. `a/l_P = 1`), which is the separate open gravity
+derivation (the `c_cell = 1/4` / boundary-carrier lane), not the units
+role. So this row still records the Planck-suppressed readout
+conditionally, and takes **path (b)** to keep the structural core clean:
 
 **Load-bearing (the structural-dispersion core):** on the free cubic
 `Cl(3)/Z³` staggered lattice, the runner + math close
@@ -49,18 +55,20 @@ These are exact finite-lattice structural facts and are the binding claim.
 
 **NON-load-bearing (split off):** Step 3's Planck-suppressed physical
 estimate `|δE²/E²| ≈ (1/5)(E/M_Planck)²` and the broad SME
-Lorentz-invariance interpretation. These **import the Planck-pin / unit-map
-premise** `a = ℓ_Planck = 1/M_Planck` from an upstream package lane
-(`planck_scale_lane_status_note_2026-04-23`, currently `unaudited`) that is
-**not a retained one-hop dependency** of this row. They are recorded as a
-conditional estimate only — valid IF that Planck-pin authority is later
-retained — and are explicitly not part of the load-bearing claim.
+Lorentz-invariance interpretation. The units map `a^(-1) = M_Pl` they use
+is now the retained primitive unit reference `scale_reference_primitive`;
+but the estimate additionally assumes the lattice spacing equals the
+Planck **length** (`a = ℓ_Planck`, i.e. `a/l_P = 1`), which is the
+**separate open gravity self-consistency derivation**, not the units
+role. They are therefore recorded as a conditional estimate only — valid
+IF that gravity self-consistency lane (`a/l_P = 1`) later closes — and are
+explicitly not part of the load-bearing claim.
 
 No new axioms, imports, or retained bridges are introduced. Downstream
 consumers that need the Planck-suppressed numerical estimate or the broad
-SME interpretation must wait for the Planck-pin lane to reach retained
-grade; consumers that need only the structural dispersion / dimension-6 /
-cubic-harmonic facts can cite this row directly.
+SME interpretation must wait for the gravity self-consistency lane
+(`a/l_P = 1`) to close; consumers that need only the structural dispersion
+/ dimension-6 / cubic-harmonic facts can cite this row directly.
 
 ## Conditional Support Claim
 
@@ -68,11 +76,12 @@ cubic-harmonic facts can cite this row directly.
 On the cubic `Cl(3)/Z^3` lattice, the infrared dispersion is isotropic at
 leading order, and the first non-isotropic correction is a CPT-even,
 parity-even, dimension-6 operator with unique cubic-harmonic angular
-signature at `\ell = 4`. If the hierarchy-scale pin
-`a \sim 1/M_{Planck}` is supplied, the correction is suppressed by
-`(E/M_{Planck})^2`. This is a bounded low-energy
-Lorentz-violation estimate, not an unconditional retained theorem of
-Lorentz invariance.
+signature at `\ell = 4`. Using the single primitive unit reference
+`a^{-1} = M_Pl` (the units import; `scale_reference_primitive`), the
+correction is suppressed by `(E/M_{Planck})^2`. Read as a bound against
+the Planck **length** this further rides on the open `a/l_P = 1` gravity
+self-consistency lane. This is a bounded low-energy Lorentz-violation
+estimate, not an unconditional retained theorem of Lorentz invariance.
 
 ## The Problem
 
@@ -125,12 +134,15 @@ Lorentz-violating correction on the checked symmetry surface.
 
 ### Step 3: Planck suppression (NON-load-bearing — see 2026-05-28 header)
 
-**This step is NOT part of the load-bearing claim.** It imports the
-Planck-pin / unit-map premise `a = ℓ_Planck = 1/M_Planck` from the
-upstream `planck_scale_lane_status_note_2026-04-23` lane (currently
-`unaudited`, not a retained one-hop dependency of this row). The numbers
-below are a conditional estimate, valid only IF that Planck-pin authority
-is later retained.
+**This step is NOT part of the load-bearing claim.** The units map
+`a^(-1) = M_Pl` it uses is the retained primitive unit reference
+`scale_reference_primitive` (source `SCALE_REFERENCE_PRIMITIVE_NOTE.md`);
+but the estimate additionally assumes the lattice spacing equals the
+Planck **length** (`a = ℓ_Planck`, i.e. `a/l_P = 1`), which is the
+separate open gravity self-consistency derivation (the
+`planck_scale_lane_status_note_2026-04-23` carrier lane), not the units
+role. The numbers below are a conditional estimate, valid only IF that
+gravity self-consistency lane (`a/l_P = 1`) later closes.
 
 Under the package-surface Planck-pin premise `a = ℓ_Planck = 1/M_Planck`:
 
@@ -402,17 +414,21 @@ parity-protection bridge instead of asserting it.
 
 ### Bridge 3: hierarchy-scale identification `a ~ 1/M_Planck` (citation)
 
-**Claim.** The lattice spacing identification `a^{-1} = M_Pl` is
-carried as an explicit package-surface pin documented in
-`PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md`
-Section 6, with the natural-unit closure `a/l_P = 1` conditional on
-the primitive Clifford-Majorana edge-statistics carrier per
-`PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`.
+**Claim.** The scale identification `a^{-1} = M_Pl` is the single
+primitive unit reference (the units import), registered as
+`scale_reference_primitive` (source `SCALE_REFERENCE_PRIMITIVE_NOTE.md`)
+— a foundational primitive, not a derivation gap, since `A_min = Cl(3)`
+on `Z^3` carries zero dimensionful content. Separately, the natural-unit
+self-consistency closure `a/l_P = 1` is the open gravity derivation,
+conditional on the primitive Clifford-Majorana edge-statistics carrier
+per `PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`
+(documented in `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` Section 6).
 
 The Planck-suppression formulas in Part 5 (`|delta E^2/E^2| ~ (E/M_Pl)^2`)
-and the experimental-context table follow from the pin as written; the
-present note does not derive the pin; its authority follows the upstream
-package lane, not this note's runner.
+and the experimental-context table use the primitive unit reference, but
+their interpretation as a bound against `l_P` additionally rides on the
+open `a/l_P = 1` gravity self-consistency lane; the present note does not
+derive that closure.
 
 ### Summary of bridges
 
@@ -420,7 +436,8 @@ package lane, not this note's runner.
 |---|---|---|---|
 | CPT exactness | bounded check on the runner's free `H` | Part 6b: `[CPT, H] = 0` to machine precision on `L = 8` | [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md), [`PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md`](PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md) |
 | parity protection | bounded check on the runner's dispersion | Part 6c: `E^2(-p) = E^2(p)`, dim-5 SME basis P-weight `-1` | [`PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md`](PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md) |
-| `a ~ 1/M_Planck` | context citation to upstream package lane | Part 6d: cite-only, not promoted; graph edge deferred to avoid the known Planck/Lorentz back-edge | `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` |
+| `a^{-1} = M_Pl` (units role) | retained primitive unit reference | Part 6d: the units import, a foundational primitive (not a derivation gap) | [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md) |
+| `a/l_P = 1` (self-consistency) | open gravity derivation, cite-only | Part 6d: cite-only, not promoted; graph edge deferred to avoid the known Planck/Lorentz back-edge | `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` |
 
 Status authority for this update remains the independent audit lane.
 This source note does not set or predict an audit outcome; later
@@ -457,5 +474,6 @@ decisions on the upstream notes themselves.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- `planck_scale_lane_status_note_2026-04-23` (see-also; converted from markdown link to backticked form 2026-05-22 to break citation cycle-0060/0070 — the Planck-pin identification `a ~ 1/M_Planck` is cited as upstream package-lane context per Part 6d, not as a load-bearing premise of the dispersion/parity/CPT bridges proved in Parts 6a-6c; the same hierarchy-scale citation already appears explicitly backticked at the Part 6d bridge table to keep this note's runner authority on the assumed surface)
+- `scale_reference_primitive` (see-also; the units-map role `a^(-1) = M_Pl` is the single primitive unit reference, source `SCALE_REFERENCE_PRIMITIVE_NOTE.md` — a foundational primitive, not a derivation gap, and the retained authority for the units-import facet used by the Part 5 / Part 6d Planck-suppressed readout; backticked to mirror the neighboring lane-status entry and avoid graph churn)
+- `planck_scale_lane_status_note_2026-04-23` (see-also; converted from markdown link to backticked form 2026-05-22 to break citation cycle-0060/0070 — the `a ~ 1/M_Planck` identification is cited as upstream package-lane context per Part 6d for the open `a/l_P = 1` gravity self-consistency lane, not as a load-bearing premise of the dispersion/parity/CPT bridges proved in Parts 6a-6c; the same hierarchy-scale citation already appears explicitly backticked at the Part 6d bridge table to keep this note's runner authority on the assumed surface)
 - `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` (see-also; non-load-bearing unit-map context for the conditional Planck readout, not a dependency of the structural dispersion theorem)

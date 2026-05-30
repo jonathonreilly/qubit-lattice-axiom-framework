@@ -156,9 +156,13 @@ Validate with:
   W-boson same-surface probe, taste-scalar near-degeneracy,
   vacuum critical stability
 - absolute-scale scoping:
-  the current package carries `a^(-1) = M_Pl` as a Planck-scale package pin on
-  the accepted physical-lattice reading; the 2026-04-24 conditional-completion
-  packet derives `c_cell = 1/4`, closes the unique finite-boundary density
+  the package carries the single primitive unit reference `a^(-1) = M_Pl` on
+  the accepted physical-lattice reading — the units import, irreducible by
+  dimensional analysis since `A_min = Cl(3)` on `Z^3` carries zero dimensionful
+  content (a foundational primitive, not a derivation gap; see
+  [SCALE_REFERENCE_PRIMITIVE_NOTE.md](../../SCALE_REFERENCE_PRIMITIVE_NOTE.md));
+  separately, the still-open gravity self-consistency derivation: the 2026-04-24
+  conditional-completion packet derives `c_cell = 1/4`, closes the unique finite-boundary density
   extension positively, and gives `a/l_P = 1` once the primitive boundary count
   is accepted as the gravitational boundary/action carrier; the 2026-04-25
   source-unit normalization support theorem on that same carrier surface

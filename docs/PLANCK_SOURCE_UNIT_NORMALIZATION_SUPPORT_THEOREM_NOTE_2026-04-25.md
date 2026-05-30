@@ -2,7 +2,9 @@
 
 **Date:** 2026-04-25
 **Status:** proposed_retained support theorem on the conditional Planck packet;
-not a standalone minimal-stack closure of `a^(-1) = M_Pl`
+not a standalone minimal-stack closure of `a^(-1) = M_Pl`. Current effective
+status on the live ledger (`docs/audit/data/audit_ledger.json`) is `unaudited`;
+status authority is the independent audit lane.
 **Runner:**
 `scripts/frontier_planck_source_unit_normalization_support_theorem.py`
 

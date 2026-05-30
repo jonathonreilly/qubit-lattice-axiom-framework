@@ -76,9 +76,9 @@ determinant) is DERIVED" in `COMPLETE_PREDICTION_CHAIN_2026_04_15.md`:
 | # | Criterion | Pass? | Notes |
 |---|---|---|---|
 | 1 | `proposal_allowed: true` for "DERIVED hierarchy theorem" | **NO** | This honest-status review recommends `false` until a substantive theorem closes at least one of the four open primitives enumerated in §3 below. |
-| 2 | No open imports for the claimed target | **NO** | `M_Pl = 1.2209 × 10¹⁹ GeV` enters as the framework's UV scale via the Wald-Noether matching `c_cell = 1/4 ↔ S_BH = A/(4G)` (PLANCK_TARGET3 lane); the EW lane consumes `M_Pl` as fixed external input. |
+| 2 | No open imports for the claimed target | **NO** | `M_Pl = 1.2209 × 10¹⁹ GeV` enters as the single primitive unit reference `a^(-1) = M_Pl` (the units import — a foundational primitive, not an open import; see [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)); separately, whether that natural unit self-consistently equals `l_P` via the Wald-Noether matching `c_cell = 1/4 ↔ S_BH = A/(4G)` (PLANCK_TARGET3 lane) is the open gravity self-consistency derivation. The EW lane consumes the supplied scale as fixed. |
 | 3 | No observed values, fitted selectors, admitted unit conventions, or literature values are load-bearing proof inputs | **NO** | (a) The exponent `N = 16` is identified with `2^4 = 16` four-dimensional Brillouin-zone corners (textbook lattice taste counting, requires Wick rotation Z³ → Z⁴ that is not framework-derived). (b) The substitution `u_0^{16} → α_LM^{16}` in the determinant-to-`v` map equates a tadpole-improvement factor to a 16-th power of a coupling, which is an **algebraic substitution** not a determinant identity. (c) `(7/8)^{1/4}` selector at `L_t = 4` is the "minimal Klein-four-resolved orbit" — admitted selection premise, not derived from the physical Cl(3) local algebra plus Z^3 spatial substrate. (d) Identification of the formula's output with the observed Higgs VEV is admitted (Higgs = taste condensate identification), not framework-proven. |
-| 4 | Every dependency is retained, retained corollary, or explicitly allowed exact support | **PARTIAL** | The Matsubara determinant identity at `L_s = 2`, `L_t = 4` is exact algebra (proven in [`HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md`](HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md), conditional on admitted standard staggered fermion algebra plus mean-field factorization). The bosonic-bilinear selector at `L_t = 4` is bounded (cf. [`HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md)). The dimensional-compression `(R)^{-1/4}` route is bounded ([`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)). The `M_Pl` import is conditional on the Planck lane. The `g_bare = 1` chain is `audited_conditional` (per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)). The composite combination is therefore at most as strong as the weakest link, which sits at `bounded` / `audited_conditional`. |
+| 4 | Every dependency is retained, retained corollary, or explicitly allowed exact support | **PARTIAL** | The Matsubara determinant identity at `L_s = 2`, `L_t = 4` is exact algebra (proven in [`HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md`](HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md), conditional on admitted standard staggered fermion algebra plus mean-field factorization). The bosonic-bilinear selector at `L_t = 4` is bounded (cf. [`HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md)). The dimensional-compression `(R)^{-1/4}` route is bounded ([`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)). The `a^(-1) = M_Pl` units import is a foundational primitive (not a derivation gap); its separate self-consistency with `l_P` is conditional on the open Planck-lane gravity derivation. The `g_bare = 1` chain is `audited_conditional` (per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)). The composite combination is therefore at most as strong as the weakest link, which sits at `bounded` / `audited_conditional`. |
 | 5 | Runner or proof artifact checks dependency classes, not only numerical output | **PARTIAL** | The runner [`scripts/frontier_complete_prediction_chain.py`](../scripts/frontier_complete_prediction_chain.py) verifies the numerical evaluation of `(H)` against the canonical plaquette surface but does **not** verify that `α_LM^{16}` arises from a determinant-to-coupling mechanism on the framework's own physical surface — it treats `(H)` as algebraic input. |
 | 6 | Review-loop disposition is `pass` | **PENDING** | This honest-status review packet is the branch-local self-review against the seven criteria. Independent audit recommended. |
 | 7 | PR body explicitly says independent audit is still required | **YES** | This note carries the standard "Status authority: independent audit lane only" header. |
@@ -102,8 +102,16 @@ conditional_surface_status: |
   checks; but the underlying formula carries four named load-bearing
   imports/substitutions that have not been derived from the physical
   Cl(3) local algebra plus Z^3 spatial substrate:
-    P1. `M_Pl` import — UV-scale identification with Newton's G
-        via Wald-Noether matching (Planck lane authority).
+    P1. the single primitive scale reference `a^(-1) = M_Pl` — the
+        units import (one dimensionful unit converting framework
+        natural units to physical units), a foundational primitive
+        rather than a derivation gap, since `A_min = Cl(3)` on `Z^3`
+        carries zero dimensionful content (see
+        `SCALE_REFERENCE_PRIMITIVE_NOTE.md`). The separate, still-open
+        gravity self-consistency claim that this natural unit equals
+        the Planck scale (`a/l_P = 1`, UV-scale identification with
+        Newton's G via Wald-Noether matching) remains the Planck lane
+        authority's open derivation.
     P2. Wick rotation Z³ → Z⁴ — converts framework spatial-3
         substrate to the 4D taste-counting context used by `2^4 = 16`.
     P3. `u_0^{16} → α_LM^{16}` algebraic substitution — equates a
@@ -116,8 +124,12 @@ conditional_surface_status: |
         scale, not some other dimension-1 quantity).
 hypothetical_added_premise_status: null
 admitted_observation_status: |
-  P1 is the framework's own Planck-lane authority, retained-grade
-  conditional pending audit closure on the Wald-Noether route.
+  P1's units-import facet (the single primitive scale reference
+  `a^(-1) = M_Pl`) is a foundational primitive, not an admitted
+  observation. Its separate self-consistency facet (that this natural
+  unit equals the Planck scale via the Wald-Noether route) is the
+  framework's open Planck-lane derivation; the underlying carrier
+  theorems are `unaudited` on the live ledger.
   P2 is admitted Wick-rotation convention; the framework's spatial
   substrate is `Z^3` (cf. MINIMAL_AXIOMS_2026-05-03), so the 4D count
   `2^D = 16` is borrowed from textbook 4D lattice fermion-doubling
@@ -168,19 +180,32 @@ Each primitive is a load-bearing import or substitution that the
 formula carries but the framework has not derived from the physical
 Cl(3) local algebra plus Z^3 spatial substrate.
 
-### P1. `M_Pl` import as the UV scale
+### P1. the single primitive scale reference `a^(-1) = M_Pl`
 
-The formula uses `M_Pl = 1.2209 × 10^{19} GeV` as the UV cutoff. The
-framework anchors `M_Pl` via the Planck lane's Wald-Noether matching
-(`c_cell = 1/4 ↔ S_BH = A/(4G)`), which is itself
-`audited_conditional` and rides on the gravity-side derivation chain
+The formula uses `M_Pl = 1.2209 × 10^{19} GeV` as the absolute scale.
+This is the **units import**: the single dimensionful unit that converts
+the framework's natural (lattice) units to physical units. It is
+irreducible by dimensional analysis — `A_min = Cl(3)` on `Z^3` carries
+zero dimensionful content — so it is a foundational primitive, **not a
+derivation gap** (see
+[`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)).
+
+Separately, whether the framework's natural unit self-consistently
+equals the Planck scale (`a/l_P = 1`) is the **still-open gravity
+self-consistency derivation**: the Planck lane's Wald-Noether matching
+(`c_cell = 1/4 ↔ S_BH = A/(4G)`) rides on the gravity-side derivation
+chain
 ([`PLANCK_TARGET3_*`](PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)
-authority family). The EW lane treats `M_Pl` as fixed external input.
+authority family); its carrier theorem
+`bh_quarter_wald_noether_framework_carrier_theorem_note_2026-04-29` is
+`unaudited` on the live ledger. The EW lane treats the supplied scale as
+fixed.
 
-**Sensitivity:** the 0.0255 % match is fragile against `M_Pl` shifts.
-A 1 % change in `M_Pl` produces a 1 % change in the predicted `v` —
-the entire match would be lost. The match's significance is therefore
-tied to the Planck lane closure.
+**Sensitivity:** the 0.0255 % match scales linearly with the chosen
+scale. A 1 % change in `M_Pl` produces a 1 % change in the predicted
+`v`. The unit reference itself is a definitional choice; the match's
+significance against `l_P` is tied to the open gravity self-consistency
+closure.
 
 ### P2. Wick rotation Z³ → Z⁴ (4D taste counting)
 
@@ -517,12 +542,15 @@ statement of this status correction is:
 > 246.28 GeV` claim is a **bounded numerical match** on the
 > same-surface plaquette/coupling chain at relative deviation
 > `+0.0255 %` against PDG `v_obs`; the underlying formula carries
-> four named load-bearing primitives P1-P4 (M_Pl import; Wick rotation
-> for 4D taste counting; `u_0^{16} → α_LM^{16}` algebraic
-> substitution; EWSB observable identification) that have not been
-> derived from the physical Cl(3) local algebra plus Z^3 spatial
-> substrate; closure to a retained "hierarchy theorem"
-> requires deriving at least one of P1-P4 from primitives, and the
+> four named load-bearing primitives P1-P4 (the single primitive scale
+> reference `a^(-1) = M_Pl`, whose units-import facet is a foundational
+> primitive while its self-consistency with `l_P` is the open gravity
+> derivation; Wick rotation for 4D taste counting; `u_0^{16} →
+> α_LM^{16}` algebraic substitution; EWSB observable identification)
+> — P2-P4 have not been derived from the physical Cl(3) local algebra
+> plus Z^3 spatial substrate; closure to a retained "hierarchy theorem"
+> requires deriving at least one of P2-P4 from primitives (or closing
+> the P1 gravity self-consistency lane), and the
 > framework's most defensible route (C3, taste-staircase transport)
 > is non-perturbative at canonical coupling per the YT-P2 standing
 > no-go.

@@ -38,4 +38,9 @@
 
    PASSED: 4/4
 
- verdict: spectrum condition (SC1)–(SC4) exhibited on Cl(3) on Z^d.
+SCORECARD: PASS=4 FAIL=0
+
+ verdict: SC1-SC3 content (T positive Hermitian; H self-adjoint,
+          H >= 0, E_0 = 0; positive gap on this finite carrier)
+          exhibited on the free-staggered surface of Cl(3) (x) Z^d.
+          SC4 is a conditional corollary in the note, not exhibited here.

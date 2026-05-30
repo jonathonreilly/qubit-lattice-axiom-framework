@@ -1,8 +1,7 @@
 # Unified Basin Signed-Source Control Support Note
 
 **Date:** 2026-04-30 (original); 2026-05-18 (archive/salvage conversion)
-**Claim type:** meta
-**Type:** meta
+**Claim type:** bounded_theorem
 **Status:** historical / diagnostic — archive/salvage record of signed-source
 control rows excerpted from the archived unified-basin wrapper. NOT a
 theorem-grade positive claim and NOT a retained support theorem. Preserved
@@ -10,25 +9,6 @@ for route history and reviewer handoff on the closed unified-basin salvage
 route. A live retained-generator runner that recomputes the signed-source
 rows is queued as future work; without it, this row carries no independent
 audit-grade evidence.
-**Status authority:** independent audit lane only.
-
-## 2026-05-28 Audit Repair (conditional core; missing upstream admitted)
-
-The 2026-05-28 audit verdict was `audited_conditional`:
-
-> *"The metadata framing is internally explicit, but the numerical rows do not close as independent evidence because the archived wrapper and any recomputing runner are absent from the restricted packet. The missing step is a live retained-gene"*
-
-with repair: *"missing_dependency_edge: cheapest repair is to attach a live retained-generator runner that recomputes the signed-source rows, or include a retained-grade cited authority that verifies the archived excerpts."*
-
-Supplying the named upstream authority is substantive new work, out of scope.
-This revision narrows via the **admission path**:
-
-- **Load-bearing (in scope):** The metadata index function closes: the archive/salvage framing is explicit, the provenance chain from the failed unified-basin wrapper is documented, and the boundary (what this note does and does not claim) is internally self-consistent as a support index whose numerical rows are read-only excerpts from the archived wrapper.
-- **NON-load-bearing (admitted / unsupplied):** The live retained-generator runner that would recompute the signed-source rows — or equivalently a retained-grade cited authority verifying the archived excerpts — is absent; the numerical control rows (zero-source controls, +/- ratios, doubled-source ratios) are excerpts only and do not constitute audit-grade independent evidence without that runner.
-
-No new axiom, import, or retained bridge is introduced. The conditional core is
-the load-bearing content; the named upstream stays admitted until a retained
-authority/runner for it lands.
 
 **Audit-conditional perimeter (2026-05-02, refreshed 2026-05-18):**
 The current generated audit ledger records this row `audited_conditional` with

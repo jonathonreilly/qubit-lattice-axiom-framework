@@ -6081,10 +6081,6 @@
       "to": "dimensional_gravity_table"
     },
     {
-      "from": "dimension_selection_note",
-      "to": "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
-    },
-    {
       "from": "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
       "to": "dimension_selection_note"
     },
@@ -87275,6 +87271,7 @@
     "decoherence_failure_analysis",
     "dense_prune_guard_seed_note",
     "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+    "dimension_selection_note",
     "dimensional_gravity_table",
     "dirac_core_card_note",
     "dirac_decoherence_probe_note",

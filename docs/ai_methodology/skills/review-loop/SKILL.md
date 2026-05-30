@@ -548,6 +548,19 @@ claim tables, lane stubs, or publication/control-plane files.
 The review loop must enforce the audit lane's propose/ratify split without
 performing the independent audit:
 
+**Audit-hash churn guard.** Non-semantic hygiene sweeps on audited source notes
+can be scientifically harmless while still invalidating large parts of the
+audit ledger, because note hashes are source-content hashes. Before landing any
+branch that touches many existing claim-note files for formatting, link-target,
+path, vocabulary, or other non-science cleanup, run the pipeline in validation
+mode and inspect the `seed_audit_ledger.py` / `invalidate_stale_audits.py`
+counts. If the change would reset or requeue already-audited rows solely due to
+non-semantic churn, do not land the broad source sweep. Either narrow the PR to
+non-ledger/non-claim surfaces, land a reviewed hash/canonicalization tooling
+repair first, or ask for explicit user approval to spend the audit capacity.
+Never trade a clean audit graph for cosmetic source-note churn without making
+that cost explicit.
+
 0. Before applying a PR, inventory any audit-status surface it touches:
 
 ```bash

@@ -43,7 +43,7 @@ microcausality (Block 04).
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md).
   Defines the global cyclic vector `|Ω⟩` (the GNS vector for the
   RP-positive form).
-- **Spectrum condition.** From the retained
+- **Spectrum condition.** From the
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md). The
   reconstructed Hamiltonian `H` is bounded below (`H ≥ 0`), with
   `|Ω⟩` the (unique on the canonical surface) ground state with
@@ -202,7 +202,7 @@ Hence `B` annihilates `A(O) |Ω⟩`, which is dense in `H_phys` by
 - A1 (local-algebra tensor structure).
 - A2 (Z^3 substrate).
 - Retained RP (`H_phys`, cyclic vacuum, transfer matrix).
-- Retained spectrum condition (H ≥ 0; analytic continuation to upper
+- Spectrum condition (H ≥ 0; analytic continuation to upper
   half-plane).
 - Retained cluster decomposition (vacuum uniqueness).
 - Block 04 microcausality (locality of time-translated operators).
@@ -235,7 +235,7 @@ vacuum's entanglement spans all scales.
 
 ## Honest status
 
-**Branch-local theorem on A_min + retained RP + spectrum condition +
+**Source theorem on A_min + retained RP + spectrum condition +
 cluster decomposition + Block 04 microcausality.** (R1)–(R3) follow
 by the standard Streater-Wightman 1964 argument adapted to the
 framework's lattice setting.
@@ -270,7 +270,7 @@ bare_retained_allowed: false
 
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
 - retained RP: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- retained spectrum condition: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+- spectrum condition: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - retained cluster decomposition: [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
 - Block 04 microcausality: [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
 - standard external references (theorem-grade, no numerical input):

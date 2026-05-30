@@ -68,7 +68,7 @@ cluster-decomposition theorem (which is the *spatial* decay theorem).
 - **RP transfer matrix.** From the retained [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
   `T : H_phys → H_phys` is Hermitian, positive, and bounded. The
   Hamiltonian `H = -log(T) / a_τ` is well-defined and bounded below.
-- **Spectrum condition.** From the retained [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md),
+- **Spectrum condition.** From the [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md),
   `H` on `H_phys` is bounded operator with finite spectral norm
   (since `H_phys` has finite dimension on any finite block, by RP
   reconstruction).
@@ -295,7 +295,7 @@ statement. ∎
 - A3 (NN staggered hop range r_h = 1).
 - A4 (plaquette gauge range r_g = 1).
 - Retained RP transfer matrix (defines H_phys).
-- Retained spectrum condition (H bounded operator with finite J).
+- Spectrum condition (H bounded operator with finite J).
 - Standard Lieb-Robinson 1972 / Nachtergaele-Sims 2010 lattice
   estimation (admitted-context, theorem-grade lattice statistics
   reference).
@@ -328,13 +328,13 @@ for any nonempty open region.
 
 ## Honest status
 
-**Branch-local theorem on A_min + retained RP + retained spectrum
+**Source theorem on A_min + retained RP + spectrum
 condition.** (M1)–(M3) are derived from:
 
 - A1 (equal-time tensor product structure);
 - A3, A4 (finite-range hopping/gauge);
 - retained RP (defines H, H_phys);
-- retained spectrum condition (H bounded);
+- spectrum condition (H bounded);
 - standard Lieb-Robinson lattice estimation (admitted-context).
 
 The runner verifies the lattice Lieb-Robinson bound numerically on a
@@ -347,7 +347,7 @@ exponential decay of `‖[α_t(O_0), O_d]‖` outside the lightcone
 
 ```yaml
 actual_current_surface_status: support
-conditional_surface_status: derived support theorem on A_min + retained RP + retained spectrum condition
+conditional_surface_status: derived support theorem on A_min + retained RP + spectrum condition
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
@@ -369,7 +369,7 @@ bare_retained_allowed: false
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
 - retained RP support note:
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- retained spectrum-condition support note:
+- spectrum-condition support note:
   [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
 - retained cluster-decomposition note:
   [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)

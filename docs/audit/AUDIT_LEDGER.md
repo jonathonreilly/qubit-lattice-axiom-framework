@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 607 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 30 |
-| unaudited | 1129 |
+| unaudited | 1128 |
 | meta | 236 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 941 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1365 |
+| `unaudited` | 1364 |
 
 | claim_type | count |
 |---|---:|
@@ -1103,6 +1103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_boost_covariance_3plus1d_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -8897,6 +8898,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The canonical artifact-backed statement is that the raw nearest-neighbor lattice is Born-clean through h = 0.125 by the high-precision raw-kernel certificate, while the RG-style schedule and alpha-sweep evidence remains only suggestive and does not establish a continuum/RG result.  _(class `B`)_
 - **chain closes:** True — The cited retained-grade notes and included runner output support the bounded reconciliation exactly: the high-precision runner computes the raw h = 0.125 row, while the RG gravity and alpha-sweep notes preserve the open RG/continuum caveats. No unsupported alpha = 2.0 or continuum-complete claim is imported.
 - **rationale:** All cited authorities are retained-grade or retained-bounded, and the primary runner source genuinely computes the raw NN observables at h = 0.125 rather than merely printing constants. The note itself is a bounded cross-note reconciliation rather than a new first-principles theorem, but its conclusion follows from the provided retained inputs and the included successful raw-kernel certificate. The RG caveat is also supported by the cited RG gravity and alpha-sweep notes.
+- **auditor confidence:** high
+
+### `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic AxisInv bilateral-current identity for a nearest-neighbour finite Grassmann bilinear action, with site-local/internal T satisfying [T,M]=0.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-112800-fe1ce76e-lattice_noether_carrier_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The backward hop reindex uses AxisInv, c_mu(x' + mu_hat) = c_mu(x'), so the forward and backward coefficients combine into the bilateral current (5).  _(class `A`)_
+- **chain closes:** False — The reindexing algebra closes for an already-given finite Grassmann bilinear action and site-local/internal generator. The restricted packet does not close the import of that Grassmann/action surface from A1+A2, and T2 remains worded broader than the proof for nonlocal field-index generators.
+- **rationale:** The AxisInv anti-Hermiticity characterization and the (7b) to (7b') reindexing are algebraically correct, and the runner performs real finite-matrix checks rather than printing constants. But the note itself admits the finite-Grassmann bilinear/action surface as unsupplied while later claiming no admitted inputs; the supplied substep-1 authority remains bounded and explicitly leaves the physical Z^3 Grassmann bridge open. Also, the local-alpha proof only supports site-local/internal generators, while T2 is still stated for any field-index generator satisfying [T,M]=0. The audited core is therefore conditional, not clean.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-03.md`
+  - `STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
 - **auditor confidence:** high
 
 ### `lattice_symmetry_unification_decision_note`

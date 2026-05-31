@@ -82,14 +82,24 @@ Notes:
     extension, source-unit normalization, and the BP carrier premise itself) is
     currently `unaudited` per the 2026-05-30 chain audit. So the Planck-mass
     anchor is *taken*, not yet derived.
-  - **Deferred classification.** Whether this Planck-mass conventional anchor is
-    counted as an *admitted empirical import* (one number taken from the world)
-    or recast as a *framework-native unit declaration* (the trivial scale-fixing
-    every physical theory makes, carrying no dimensionless physics) is left
-    **open and to be decided later**. Either way it is the *only* dimensionful
-    thing the structural core takes; the remaining open work is entirely on the
-    dimensionless side (P1, θ, AC_φλ-δ). This wording is aligned with
-    `PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE_2026-05-27`.
+  - **Proposed resolution (owner science-level decision, 2026-05-30 — pending
+    reviewer discussion).** The owner has decided to register this single
+    dimensionful anchor as a **framework primitive** (`scale_reference_primitive`,
+    source `SCALE_REFERENCE_PRIMITIVE_NOTE.md`, recorded in
+    `AXIOM_MINIMALITY_POLICY.md` §6), so that a clean row whose *only* non-retained
+    dependency is the unit anchor resolves to **full retained** rather than
+    `retained_bounded`. Rationale: a dimensionful scale is irreducible by
+    dimensional analysis — it is the one unit every physical theory takes, not a
+    derivation gap — so depending on it should not cap a lane at bounded. Under
+    this resolution the anchor is **no longer counted among the Tier-A admitted
+    inputs** (P1, AC_φλ, θ remain the three). It carries no dimensionless content,
+    so the axiom-premise carve-out cannot launder any dimensionless result (the
+    declaration note is CI-guarded pure), and it does **not** assert `a/l_P = 1`
+    (that self-consistency stays the separate open gravity derivation). This is an
+    owner decision under `AXIOM_MINIMALITY_POLICY.md` §4/§6; it supersedes the
+    earlier "deferred" framing (aligned with
+    `PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE_2026-05-27`) **pending the
+    reviewer's engagement with the owner** on this governance decision.
 - **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
   problem); not a framework-specific deficit.
 

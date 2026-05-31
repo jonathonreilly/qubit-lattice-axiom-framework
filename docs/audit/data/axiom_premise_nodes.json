@@ -2,7 +2,8 @@
   "schema_version": 1,
   "description": "Allowlist of canonical axiom-premise nodes. Each entry binds a STABLE un-dated claim_id to the current (possibly dated) source-doc path. build_citation_graph.py canonicalizes the claim_id of any listed path to the stable id, so inbound citation edges and the premise status survive re-dating of the source doc. PR3 attaches the axiom_premise meta-subtype + auditor carve-out to these ids; PR3's structural guard enforces that each listed doc contains only axiom content (no framework-rule / ratification clauses).",
   "canonical_ids": [
-    "minimal_axioms"
+    "minimal_axioms",
+    "scale_reference_primitive"
   ],
   "nodes": {
     "minimal_axioms": {
@@ -14,6 +15,14 @@
         "minimal_axioms_2026-05-20"
       ],
       "note": "Canonical A1+A2 axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id."
+    },
+    "scale_reference_primitive": {
+      "current_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "aliased_paths": [
+        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "The single dimensionful scale reference a^{-1} (the units import), accepted as a framework primitive per AXIOM_MINIMALITY_POLICY.md section 6 (2026-05-30 owner science-level decision). Units conversion only, irreducible by dimensional analysis; carries no dimensionless content, so its auditor carve-out cannot launder a dimensionless result. Does NOT assert a/l_P=1 (that self-consistency stays a separate open gravity derivation). A clean row whose only non-retained dependency is this node resolves to full retained, not retained_bounded."
     }
   }
 }

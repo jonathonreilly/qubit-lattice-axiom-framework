@@ -1,25 +1,20 @@
 #!/usr/bin/env python3
 """
-Gravitational Decoherence Rate -- Derived from Framework Axioms
-===============================================================
+Gravitational Decoherence Rate -- Conditional Penrose-Diosi/BMV Companion
+=========================================================================
 
-Derives the gravitational decoherence rate gamma_grav from the discrete-graph
-framework, step by step:
+Evaluates a bounded companion packet for a supplied Penrose-Diosi/BMV model:
 
-  1. Superposed mass m at positions x_1, x_2 (separation delta_x) sources
-     two distinct gravitational field configurations via Poisson on Z^3.
-  2. The distinguishability of these configurations (inner product of field
-     states) sets the decoherence rate via the Penrose-Diosi mechanism.
-  3. On the lattice: gamma = (G m^2)/(hbar delta_x) * F(delta_x / a)
-     where F is the lattice form factor from the lattice Green's function.
-  4. The form factor F -> 1 in the continuum limit (delta_x >> a),
-     recovering the standard Penrose-Diosi rate.
-  5. At BMV parameters (delta_x = 250 um): gamma = 0.25 Hz, Phi = 12.4 rad
-     (strongly detectable).
-  6. Born rule connection: a measured rate differing from this prediction
-     constrains |beta - 1| through the cross-constraint.
+  1. The Poisson/Newton kernel, physical mass-source/readout, G-normalization,
+     and Penrose-Diosi field-distinguishability-to-rate law are supplied.
+  2. On that conditional surface:
+       gamma = (G m^2)/(hbar delta_x) * F(delta_x / a)
+     where F is read as a lattice Green form-factor diagnostic.
+  3. The runner checks finite-grid form-factor diagnostics, BMV/NV numerical
+     rates, the Planck-pin extrapolation, and source-note claim firewalls.
 
-All quantities derived from Cl(3) on Z^3, the single framework axiom.
+This runner does not certify an axioms-only derivation of gravitational
+decoherence.
 
 PStack experiment: frontier-grav-decoherence-derived
 """
@@ -29,6 +24,7 @@ from __future__ import annotations
 import math
 import sys
 import time
+from pathlib import Path
 
 import numpy as np
 
@@ -44,6 +40,23 @@ PI       = np.pi
 
 np.set_printoptions(precision=8, linewidth=120)
 LOG_FILE = "logs/" + time.strftime("%Y-%m-%d") + "-grav_decoherence_derived.txt"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SOURCE_NOTE = REPO_ROOT / "docs/GRAV_DECOHERENCE_DERIVED_NOTE.md"
+SOURCE_REQUIRED = [
+    "**Claim type:** bounded support note",
+    "**Type:** conditional / support",
+    "actual_current_surface_status: conditional-support",
+    "proposal_allowed: false",
+    "bare_retained_allowed: false",
+    "not an axioms-only derivation",
+    "supplied Penrose-Diosi/BMV numerics",
+    "Open Imports That Remain Load-Bearing",
+]
+SOURCE_BANNED = [
+    ("old title overclaim", "Derived" + " from Framework Axioms"),
+    ("old single-axiom overclaim", "follows from the " + "single axiom"),
+    ("old beta prediction overclaim", "Framework prediction: " + "beta = 1 exactly"),
+]
 results_log = []
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -67,6 +80,30 @@ def check(name, val, ref, tol, note=""):
     log(f"  [{tag}] {name}: computed={val:.6e}, ref={ref:.6e}, "
         f"err={err:.2e} (tol={tol:.0e}) {note}")
     return ok
+
+
+def check_bool(name, ok, note=""):
+    """Boolean firewall check for source-note scope claims."""
+    global PASS_COUNT, FAIL_COUNT
+    tag = "PASS" if ok else "FAIL"
+    if ok:
+        PASS_COUNT += 1
+    else:
+        FAIL_COUNT += 1
+    log(f"  [{tag}] {name}: {note}")
+    return ok
+
+
+def check_source_boundary():
+    text = SOURCE_NOTE.read_text(encoding="utf-8")
+    log("=" * 78)
+    log("SOURCE BOUNDARY CHECKS")
+    log("=" * 78)
+    for needle in SOURCE_REQUIRED:
+        check_bool(f"source requires: {needle}", needle in text)
+    for label, needle in SOURCE_BANNED:
+        check_bool(f"source excludes {label}", needle not in text)
+    log()
 
 
 # =====================================================================
@@ -241,33 +278,33 @@ def lattice_form_factor_3d(delta_n, N_k=128):
 
 
 # =====================================================================
-# MAIN DERIVATION
+# MAIN CONDITIONAL SUPPORT PACKET
 # =====================================================================
 
 def main():
     t_start = time.time()
 
     log("=" * 78)
-    log("GRAVITATIONAL DECOHERENCE RATE -- DERIVED FROM FRAMEWORK AXIOMS")
+    log("GRAVITATIONAL DECOHERENCE RATE -- CONDITIONAL PENROSE-DIOSI/BMV COMPANION")
     log("=" * 78)
     log()
+    check_source_boundary()
 
     # -----------------------------------------------------------------
-    # Section 1: Axiom -> Poisson equation -> Green's function
+    # Section 1: Supplied Poisson kernel -> Green's function diagnostic
     # -----------------------------------------------------------------
     log("=" * 78)
-    log("SECTION 1: AXIOM -> POISSON EQUATION -> GREEN'S FUNCTION")
+    log("SECTION 1: SUPPLIED POISSON KERNEL -> GREEN'S FUNCTION DIAGNOSTIC")
     log("=" * 78)
     log()
-    log("  Axiom: Cl(3) algebra on Z^3 lattice.")
-    log("  => Staggered scalar field phi with equation of motion:")
+    log("  Conditional input: formal lattice-Poisson equation")
     log("       (-Delta_lat) phi = rho")
-    log("  This IS the Poisson equation on the lattice.")
+    log("  This runner treats that equation as supplied for the companion packet.")
     log()
     log("  The lattice Green's function G_lat(r) satisfies:")
     log("    G_lat(r) = 1/(4 pi |r|) + Delta(r)")
     log("  where Delta(r) -> 0 as |r| -> infinity.")
-    log("  [Maradudin et al. 1971; confirmed in frontier_newton_derived.py]")
+    log("  This is checked here as a finite-grid form-factor diagnostic.")
     log()
 
     # Verify Green's function at several radii
@@ -294,7 +331,7 @@ def main():
     log("SECTION 2: SUPERPOSED MASS -> FIELD DISTINGUISHABILITY")
     log("=" * 78)
     log()
-    log("  A mass m at position x sources phi(r) = -G_N m G_lat(r - x).")
+    log("  Supplied mass-source/readout: phi(r) = -G_N m G_lat(r - x).")
     log("  In superposition of x_1, x_2 (separation delta_x):")
     log("    Branch 1: phi_1(r) = -G_N m G_lat(r - x_1)")
     log("    Branch 2: phi_2(r) = -G_N m G_lat(r - x_2)")
@@ -305,7 +342,7 @@ def main():
     log()
     log("  The decoherence rate:")
     log("    gamma = E_G / hbar = G_N m^2 / (hbar delta_x)")
-    log("  This is the Penrose-Diosi rate.")
+    log("  This is a supplied Penrose-Diosi bridge, not proven by this runner.")
     log()
 
     # -----------------------------------------------------------------
@@ -374,10 +411,10 @@ def main():
     log()
 
     # -----------------------------------------------------------------
-    # Section 4: Physical parameters -- BMV experiment
+    # Section 4: Conditional physical parameters -- BMV experiment
     # -----------------------------------------------------------------
     log("=" * 78)
-    log("SECTION 4: PHYSICAL DECOHERENCE RATES")
+    log("SECTION 4: CONDITIONAL PHYSICAL DECOHERENCE RATES")
     log("=" * 78)
     log()
 
@@ -413,7 +450,7 @@ def main():
         gamma_g = gaussian_smeared_rate(mi, dxi, sigi)
         f_geom = sphere_geometry_factor(dxi, Ri)
 
-        # Physical rate: use Gaussian for sigma >> R, else geometry-corrected
+        # Companion-model rate: use Gaussian for sigma >> R, else geometry-corrected.
         if sigi < Ri:
             gamma_phys = gamma_pd * f_geom
         else:
@@ -445,10 +482,10 @@ def main():
     log()
 
     # -----------------------------------------------------------------
-    # Section 5: The claimed 52.6 Hz -- verify
+    # Section 5: The legacy 52.6 Hz readout -- verify
     # -----------------------------------------------------------------
     log("=" * 78)
-    log("SECTION 5: VERIFICATION OF gamma = 52.6 Hz (m=10pg, dx=1um)")
+    log("SECTION 5: CONDITIONAL READOUT gamma = 52.6 Hz (m=10pg, dx=1um)")
     log("=" * 78)
     log()
 
@@ -479,9 +516,8 @@ def main():
     log(f"    f_geom = {f_geom_ref:.6f}")
     log()
 
-    # Physical rate: sigma_ref > R_ref, so use Gaussian rate
-    # But the existing script uses geometry-corrected PD when sigma < R,
-    # and Gaussian when sigma > R. Let's check:
+    # Companion-model rate: sigma_ref > R_ref uses Gaussian; sigma_ref < R_ref
+    # uses geometry-corrected PD.
     log(f"  sigma = {sigma_ref*1e6:.1f} um, R = {R_ref*1e6:.2f} um")
     if sigma_ref < R_ref:
         gamma_phys_ref = gamma_pd_ref * f_geom_ref
@@ -512,7 +548,8 @@ def main():
     log("SECTION 6: LATTICE FORM FACTOR AT PHYSICAL SEPARATIONS")
     log("=" * 78)
     log()
-    log("  The form factor F(delta_x / a) deviates from 1 only when")
+    log("  Conditional on the supplied physical lattice pin,")
+    log("  the form factor F(delta_x / a) deviates from 1 only when")
     log("  delta_x is comparable to the lattice spacing a.")
     log()
     log("  For a = l_Planck = 1.616e-35 m:")
@@ -525,7 +562,7 @@ def main():
     log("  The lattice correction to gamma at delta_x = 1 um:")
     log(f"    |F - 1| ~ (a / delta_x)^2 = ({L_PL:.2e} / {1e-6:.0e})^2")
     log(f"            = {(L_PL / 1e-6)**2:.2e}")
-    log("  This is entirely undetectable.")
+    log("  This is undetectable within the supplied companion model.")
     log()
 
     # Use form factor data from Section 3 to extrapolate
@@ -555,10 +592,10 @@ def main():
     log()
 
     # -----------------------------------------------------------------
-    # Section 7: BMV parameters -- the detectable prediction
+    # Section 7: BMV parameters -- conditional readout
     # -----------------------------------------------------------------
     log("=" * 78)
-    log("SECTION 7: BMV PARAMETERS -- THE DETECTABLE PREDICTION")
+    log("SECTION 7: BMV PARAMETERS -- CONDITIONAL READOUT")
     log("=" * 78)
     log()
 
@@ -592,16 +629,16 @@ def main():
     gamma_sat = G_N * m_bmv**2 / (math.sqrt(PI) * sigma_bmv * HBAR)
     log(f"  Saturated Gaussian rate (dx >> sigma):")
     log(f"    gamma_sat = G m^2 / (sqrt(pi) sigma hbar) = {gamma_sat:.6e} Hz")
-    log(f"    (but we use the PD rate for the physical prediction since it gives")
-    log(f"     the rate due to distinguishability at the actual separation dx)")
+    log(f"    (within this companion model, use the PD rate because it gives")
+    log(f"     the supplied rate due to distinguishability at separation dx)")
     log()
 
-    # The physical rate for BMV is the PD rate (large separation regime)
-    # since dx >> R and dx >> sigma
+    # Within the supplied companion model, use the PD rate in the large
+    # separation regime since dx >> R and dx >> sigma.
     gamma_bmv = gamma_pd_bmv
     tau_bmv = 1.0 / gamma_bmv
 
-    log(f"  Physical decoherence rate (BMV): gamma = {gamma_bmv:.4e} Hz")
+    log(f"  Conditional decoherence rate (BMV): gamma = {gamma_bmv:.4e} Hz")
     log(f"  Decoherence time: tau = {tau_bmv:.4e} s")
     log()
 
@@ -630,7 +667,7 @@ def main():
 
     # Feasibility
     gamma_budget = 1.0 / T_bmv
-    log(f"  Feasibility:")
+    log(f"  Conditional feasibility:")
     log(f"    Decoherence budget: gamma_total < 1/T = {gamma_budget:.2f} Hz")
     log(f"    Gravitational rate: gamma_grav = {gamma_bmv:.4f} Hz")
     log(f"    Ratio gamma_grav / gamma_budget = {gamma_bmv/gamma_budget:.4f}")
@@ -639,14 +676,14 @@ def main():
     log()
 
     # -----------------------------------------------------------------
-    # Section 8: Born rule connection
+    # Section 8: Born-rule cross-constraint status
     # -----------------------------------------------------------------
     log("=" * 78)
-    log("SECTION 8: BORN RULE CONNECTION")
+    log("SECTION 8: BORN-RULE CROSS-CONSTRAINT STATUS")
     log("=" * 78)
     log()
-    log("  The lattice form factor F is derived from the same linear propagator")
-    log("  that guarantees the Born rule (I_3 = 0).")
+    log("  The beta-to-gamma relation is preserved as conditional")
+    log("  phenomenology. This runner does not derive that bridge.")
     log()
     log("  If the propagator has a nonlinear perturbation (beta != 1):")
     log("    gamma(beta) = gamma_0 * [1 + (beta - 1) + O((beta-1)^2)]")
@@ -659,11 +696,11 @@ def main():
     log("    |beta - 1| < 10^{-5} (Eot-Wash, gravity sector)")
     log("    => delta_gamma / gamma < 10^{-5}")
     log()
-    log("  A measurement of gamma_grav that disagrees with the Penrose-Diosi")
-    log("  prediction by more than 10^{-5} would:")
+    log("  In the supplied model, a measurement of gamma_grav that disagrees")
+    log("  with the Penrose-Diosi readout by more than 10^{-5} would:")
     log("    (a) Constrain the lattice form factor (new physics at short distances)")
     log("    (b) Constrain the Born rule parameter (propagator nonlinearity)")
-    log("    (c) Potentially falsify the framework")
+    log("    (c) Flag an open framework/bridge consistency problem")
     log()
 
     # -----------------------------------------------------------------
@@ -671,34 +708,33 @@ def main():
     # -----------------------------------------------------------------
     log()
     log("=" * 78)
-    log("DERIVATION SUMMARY")
+    log("CONDITIONAL SUPPORT SUMMARY")
     log("=" * 78)
     log()
-    log("  Chain of derivation:")
-    log("    Cl(3) on Z^3")
-    log("      -> Poisson equation (-Delta_lat) phi = rho")
-    log("      -> Lattice Green's function G_lat(r) = 1/(4 pi r) + Delta(r)")
-    log("      -> Two branches of superposed mass source distinguishable fields")
-    log("      -> E_G = G m^2 / delta_x * F(delta_x / a)")
-    log("      -> gamma = E_G / hbar = (G m^2)/(hbar delta_x) * F")
+    log("  Conditional chain:")
+    log("    supplied lattice-Poisson kernel")
+    log("      -> finite-grid lattice Green diagnostic")
+    log("      -> supplied superposed-mass source/readout")
+    log("      -> supplied E_G = G m^2 / delta_x * F(delta_x / a)")
+    log("      -> supplied gamma = E_G / hbar = (G m^2)/(hbar delta_x) * F")
     log()
     log("  Form factor F:")
     log("    F -> 1 for delta_x >> a (continuum limit)")
     log(f"    |F - 1| ~ (a/delta_x)^2 ~ 10^{{-58}} at delta_x = 1 um")
     log("    Undetectable lattice correction.")
     log()
-    log("  Key predictions:")
+    log("  Key conditional readouts:")
     log(f"    Conservative NV (m=10pg, dx=1um): gamma = {gamma_geom:.1f} Hz")
     log(f"    BMV original (m=10pg, dx=250um):  gamma = {gamma_bmv:.4f} Hz")
     log(f"    BMV entanglement phase:           Phi = {Phi_bmv:.1f} rad")
     log()
-    log("  The BMV experiment is strongly feasible:")
+    log("  The supplied BMV model is feasible by these diagnostics:")
     log(f"    gamma_grav = {gamma_bmv:.2f} Hz < 0.5 Hz decoherence budget")
     log(f"    Phi_ent = {Phi_bmv:.1f} rad >> 1 (strong signal)")
     log()
-    log("  Born rule connection:")
-    log("    delta_gamma / gamma = (beta - 1) links decoherence to I_3 test.")
-    log("    A disagreement constrains the framework.")
+    log("  Born-rule cross-constraint:")
+    log("    delta_gamma / gamma = (beta - 1) is retained here only as supplied")
+    log("    companion phenomenology.")
     log()
 
     # PASS/FAIL

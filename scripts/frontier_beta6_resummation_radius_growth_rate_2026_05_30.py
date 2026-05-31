@@ -302,7 +302,8 @@ print(f"    Fisher/Lee-Yang thermodynamic comparator       ~ 5.54 (CITED, lattic
 print(f"\n    rho_crit (Euler-regime radius hits 6 here)     = {mp.nstr(rho_crit,6)}")
 check("VERDICT: Euler-18 sector radius > 6 for all rho_comb < rho_crit (~{:.3g})".format(float(rho_crit)),
       R_euler(1) > 6 and rho_crit > 1,
-      "wall dissolves in the K-built sector unless rho_comb >= rho_crit OR the baryon-channel sector dominates")
+      "K-built sector radius > 6 unless rho_comb >= rho_crit (a LOWER bound on the K-built sector ONLY; "
+      "the full radius is min(K-built, >=3-face baryon channel), and the baryon channel is open)")
 
 print(f"\nSCORECARD: PASS={PASS} FAIL={FAIL}")
 if FAIL:

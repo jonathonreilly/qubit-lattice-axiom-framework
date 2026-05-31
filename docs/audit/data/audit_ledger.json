@@ -314205,22 +314205,46 @@
       "verdict_rationale": "Issue: this note is a skeptic/scope wrapper around the already retained-bounded wide_lattice_h2t_distance_law_note and uses the same replay/log rather than adding an independent theorem or comparator. Why this blocks separate retained status: giving it another retained-bounded row would double-count the same finite-lattice evidence as an additional claim. Repair target: keep the cautionary wording boxed under the parent distance-law note or add genuinely independent controls such as width/refinement/window/source-placement replays. Claim boundary until fixed: it is safe as a scope-management corollary saying the parent replay is finite-lattice evidence only, not a universal distance law."
     },
     "wigner_mode_low_d_sublattice_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T13:19:09.979258+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}.",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "e0d5c64040e1116068b17d2863ac64c9d2d853d9c67293f00b876fa50568155a",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-131655-8e85e00e-wigner_mode_low_d_sublat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited CMW authority only proves the IR-sum threshold and explicitly says it does not prove no spontaneous breaking of continuous symmetries in d <= 2. The Noether authority is also bounded to its admitted staggered/Grassmann carrier and infinitesimal-action-symmetry scope, so the stated general H_d formulation is broader than the provided theorem.",
       "claim_id": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Attempted composition of low-dimensional finite-temperature no-SSB with lattice Noether current conservation for the same continuous action symmetry on 1D/2D coordinate sublattices of Z^3.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T13:19:09.979258+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -314229,34 +314253,37 @@
         "axiom_first_lattice_noether_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By the cited CMW MW1, for d <= 2 and finite T continuous symmetry breaking is absent, and by Noether N3 the same action symmetry has \u2202^L_\u03bc J^\u03bc_x = 0 on shell.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "f320855379529305ba69244dacacf5b787e4d2e0de7ee66b802c181504152ce9",
       "note_path": "docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply or cite a retained Ward/commutator-normalized no-continuous-SSB theorem for d <= 2 finite temperature, then narrow the Noether branch to the admitted carrier/infinitesimal-action-symmetry scope or cite a retained general lattice Noether theorem.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 2,
+        "B": 1,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 4
       },
       "runner_path": "scripts/wigner_mode_low_d_sublattice_check.py",
       "title": "Wigner Mode Realization on 1D/2D Sublattices of Z\u00b3 (CMW + Noether)",
       "transitive_descendants": 47,
-      "verdict_rationale": null
+      "verdict_rationale": "The displayed W1 formula family, namely that no continuous-symmetry order parameter condenses at d <= 2 and T > 0, is not supplied by the cited CMW note; that authority explicitly narrows itself to IR-sum divergence and lists the no-SSB bridge as a non-claim. The runner's IR-growth check supports only the narrowed IR threshold, while the finite commutator/Gibbs checks do not establish thermodynamic no-SSB. W2 can only inherit the bounded Noether scope of the admitted carrier, not the source note's arbitrary Hamiltonian/action wording."
     },
     "wilson_action_surface_selector_real_positive_theorem_note_2026-05-25": {
       "audit_date": null,

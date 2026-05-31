@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 617 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1198 |
+| unaudited | 1197 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 20 |
+| ~~audited_conditional~~ | 21 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 956 |
-| `audited_conditional` | 20 |
+| `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1436 |
+| `unaudited` | 1435 |
 
 | claim_type | count |
 |---|---:|
@@ -1108,6 +1108,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_propagating_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | fresh_context | codex-gpt-5.5 | A | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` |
@@ -15611,6 +15612,22 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The note's parent target is already retained-bounded, and the completed replay log supports the stated finite-lattice caution. The note adds no independent observable, runner evidence, or new physical theorem beyond the parent result's scoped interpretation.
 - **rationale:** Issue: this note is a skeptic/scope wrapper around the already retained-bounded wide_lattice_h2t_distance_law_note and uses the same replay/log rather than adding an independent theorem or comparator. Why this blocks separate retained status: giving it another retained-bounded row would double-count the same finite-lattice evidence as an additional claim. Repair target: keep the cautionary wording boxed under the parent distance-law note or add genuinely independent controls such as width/refinement/window/source-placement replays. Claim boundary until fixed: it is safe as a scope-management corollary saying the parent replay is finite-lattice evidence only, not a universal distance law.
 - **decoration parent:** `wide_lattice_h2t_distance_law_note`
+- **auditor confidence:** high
+
+### `wigner_mode_low_d_sublattice_theorem_note_2026-05-02`
+
+- **Note:** [`WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md`](../../docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Attempted composition of low-dimensional finite-temperature no-SSB with lattice Noether current conservation for the same continuous action symmetry on 1D/2D coordinate sublattices of Z^3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-131655-8e85e00e-wigner_mode_low_d_sublat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the cited CMW MW1, for d <= 2 and finite T continuous symmetry breaking is absent, and by Noether N3 the same action symmetry has ∂^L_μ J^μ_x = 0 on shell.  _(class `B`)_
+- **chain closes:** False — The cited CMW authority only proves the IR-sum threshold and explicitly says it does not prove no spontaneous breaking of continuous symmetries in d <= 2. The Noether authority is also bounded to its admitted staggered/Grassmann carrier and infinitesimal-action-symmetry scope, so the stated general H_d formulation is broader than the provided theorem.
+- **rationale:** The displayed W1 formula family, namely that no continuous-symmetry order parameter condenses at d <= 2 and T > 0, is not supplied by the cited CMW note; that authority explicitly narrows itself to IR-sum divergence and lists the no-SSB bridge as a non-claim. The runner's IR-growth check supports only the narrowed IR threshold, while the finite commutator/Gibbs checks do not establish thermodynamic no-SSB. W2 can only inherit the bounded Noether scope of the admitted carrier, not the source note's arbitrary Hamiltonian/action wording.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`
+  - `AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08`

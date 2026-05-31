@@ -29,8 +29,17 @@ The new coefficient bridge sharpens this:
 coeff_nonid(S_Q1) = -eta_APS.
 ```
 
-The remaining open piece is the signed selected-line readout/orientation law
-that would turn this coefficient identity into physical Brannen phase closure.
+The signed selected-line readout from Q1 alone is now blocked: Q1 is
+transposition-even and `delta` is transposition-odd.  The remaining positive
+route would need an independent signed orientation/basepoint primitive.
+
+## Route C2: signed selected-line readout from Q1 alone
+
+Status: no-go.
+
+Any transposition-equivariant readout from the transposition-fixed Q1
+coefficient data to the odd `delta` line must vanish.  Q1 gives magnitude
+support only.
 
 ## Route D: future charge-two Majorana texture
 

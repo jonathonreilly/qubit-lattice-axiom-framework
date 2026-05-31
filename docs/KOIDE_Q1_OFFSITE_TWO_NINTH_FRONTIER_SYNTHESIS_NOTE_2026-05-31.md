@@ -11,6 +11,7 @@ pipeline after independent review.
 - [`scripts/frontier_koide_two_ninth_provenance_classifier.py`](../scripts/frontier_koide_two_ninth_provenance_classifier.py)
 - [`scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py`](../scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py)
 - [`scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py`](../scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py)
+- [`scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py`](../scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py)
 
 ## Question
 
@@ -174,29 +175,48 @@ coeff_g(S_Q1) = coeff_g2(S_Q1) = -eta_APS.
 ```
 
 This builds the exact `Q = 1` offsite coefficient to APS eta bridge.  It also
-composes with the Brannen conjugate-pair magnitude `n_eff/d^2 = 2/9`.  It does
-not supply the parity-odd sign/readout law, because `S_Q1` is transposition-even
-while the circulant phase `delta` is transposition-odd.
+composes with the Brannen conjugate-pair magnitude `n_eff/d^2 = 2/9`.
+
+### 6. Signed selected-line readout is blocked from Q1 alone
+
+The next theorem target was:
+
+```text
+signed_selected_line_readout_delta_equals_minus_q1_offsite_coeff_or_no_go
+```
+
+The result is a no-go for `Q = 1` alone.  `S_Q1` is fixed by the transposition
+that swaps `g` and `g^2`, because its nonidentity coefficients are equal.  But
+the selected-line circulant phase is transposition-odd:
+
+```text
+delta -> -delta.
+```
+
+Any equivariant readout from a transposition-fixed input to an odd target line
+must vanish.  Thus `Q = 1` supplies `|delta| = eta_APS` support, but not the
+sign of `delta`.
+
+The minimal conditional escape is an extra odd orientation/basepoint primitive
+`epsilon`, with `delta = epsilon * eta_APS`.
 
 ## Bridge target isolated by this packet
 
 The next theorem target is now narrower than "derive `2/9`":
 
 ```text
-derive_whether_projected_offsite_2_over_d2_is_physical_APS_Brannen_readout
-or only an excluded source-domain shadow
+derive_signed_selected_line_orientation_from_retained_source_domain
 ```
 
-A positive theorem would now need to provide a signed selected-line readout map
+A positive theorem would now need to derive the extra signed orientation law
 
 ```text
-delta = -coeff_nonid(S_Q1) = eta_APS
+epsilon in {+1, -1}, tau epsilon = -epsilon
 ```
 
-without importing a fitted radian convention, PDG phase, or same-surface
-selector.  A negative theorem would show that the exact coefficient bridge is
-only a projected source-domain shadow whose erasure explains why physical
-onsite readout selects `Q = 2/3`.
+from retained source-domain or selected-line data, without importing a fitted
+radian convention, PDG phase, or same-surface selector.  Without that primitive,
+the exact coefficient bridge remains magnitude support only.
 
 Either outcome helps the `Q = 2/3` hunt.
 
@@ -209,6 +229,7 @@ Either outcome helps the `Q = 2/3` hunt.
 - APS eta remains a distinct typed object, but at forced `d = 3` it exactly
   equals `2/9`.
 - The exact group-algebra bridge gives `coeff_nonid(S_Q1) = -eta_APS`.
+- `Q = 1` alone cannot supply the signed selected-line `delta` readout.
 - Under strict onsite descent, the `Q = 1` reduced coordinate is erased and the
   normalized readout returns `Q = 2/3`.
 - The packet isolates a concrete next bridge/no-go target for other workers.
@@ -233,6 +254,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_alternative_interpre
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_unphysical_background_probe.py
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_two_ninth_provenance_classifier.py
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py
 python3 -m py_compile \
   scripts/frontier_dm_rhn_koide_q1_axis_abundance_compatibility.py \
   scripts/frontier_koide_q1_alternative_interpretation_classifier.py \
@@ -240,7 +262,8 @@ python3 -m py_compile \
   scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py \
   scripts/frontier_koide_q1_unphysical_background_probe.py \
   scripts/frontier_koide_two_ninth_provenance_classifier.py \
-  scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
+  scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py \
+  scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py
 ```
 
 Expected closeout flags:
@@ -256,6 +279,9 @@ KOIDE_Q1_APS_COEFFICIENT_BRIDGE=TRUE
 Q1_NONIDENTITY_COEFF_EQUALS_MINUS_ETA_APS=TRUE
 Q1_BRANNEN_MAGNITUDE_EXACT_SUPPORT=TRUE
 Q1_SUPPLIES_PARITY_ODD_SIGN=FALSE
+KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO=TRUE
+SIGNED_DELTA_FROM_Q1_ALONE=FALSE
+NEW_PRIMITIVE_REQUIRED=signed_selected_line_orientation_or_based_endpoint
 TWO_NINTH_TYPED_UNIFICATION=FALSE
 Q1_DARK_MATTER_CLOSURE=FALSE
 ```
@@ -272,6 +298,8 @@ Q1_DARK_MATTER_CLOSURE=FALSE
   - APS eta value and remaining `delta = eta_APS` gap.
 - [`KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md`](KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md)
   - exact `coeff_nonid(S_Q1) = -eta_APS` coefficient bridge.
+- [`KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md`](KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md)
+  - no-go for signed `delta` readout from `Q = 1` alone.
 - [`KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md`](KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md)
   - shared Koide/DM `C3` projector skeleton.
 - [`NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md`](NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md)

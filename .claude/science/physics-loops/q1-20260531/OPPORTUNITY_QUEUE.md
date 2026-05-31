@@ -1,13 +1,13 @@
 # Opportunity Queue
 
-1. Prove or refute the signed readout theorem:
+1. Derive a new signed orientation/basepoint primitive:
 
    ```text
-   delta = -coeff_nonid(S_Q1) = eta_APS
+   epsilon in {+1,-1}, tau epsilon = -epsilon
    ```
 
-   The coefficient bridge is now exact; the open issue is the signed physical
-   selected-line readout/orientation law.
+   The Q1-alone signed readout is no-go.  A positive phase closure now needs
+   this extra odd primitive from retained source-domain or selected-line data.
 
 2. Prove physical source-domain selection:
 

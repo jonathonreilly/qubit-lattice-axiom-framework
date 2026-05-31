@@ -254,7 +254,7 @@ def main() -> int:
         print("Q1_SUPPLIES_PARITY_ODD_SIGN=FALSE")
         print("DELTA_ETA_APS_PHYSICAL_READOUT_CLOSED=FALSE")
         print("Q1_DARK_MATTER_CLOSURE=FALSE")
-        print("NEXT_THEOREM=signed_selected_line_readout_delta_equals_minus_q1_offsite_coeff_or_no_go")
+        print("NEXT_THEOREM=derive_signed_selected_line_orientation_from_retained_source_domain_or_accept_no_go")
         return 0
 
     print("VERDICT: Q1 -> APS coefficient bridge has failing checks.")

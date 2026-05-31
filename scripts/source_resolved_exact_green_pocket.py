@@ -57,7 +57,7 @@ def _source_resolved_green_field(
     source_strength: float,
     source_nodes: list[int],
 ) -> list[list[float]]:
-    """Static source-resolved Green-like field on the exact lattice."""
+    """Static source-resolved softened Green-like field on the exact lattice."""
     if not source_nodes:
         return [[0.0 for _ in range(lat.npl)] for _ in range(lat.nl)]
 
@@ -69,8 +69,9 @@ def _source_resolved_green_field(
             x, y, z = lat.pos[ls + i]
             val = 0.0
             for mx, my, mz in source_pos:
-                r = math.sqrt((x - mx) ** 2 + (y - my) ** 2 + (z - mz) ** 2) + GREEN_EPS
-                val += source_strength * math.exp(-GREEN_MU * r) / r
+                rho = math.sqrt((x - mx) ** 2 + (y - my) ** 2 + (z - mz) ** 2)
+                r_eps = rho + GREEN_EPS
+                val += source_strength * math.exp(-GREEN_MU * r_eps) / r_eps
             field[layer][i] = val / len(source_pos)
     return field
 
@@ -92,7 +93,7 @@ def main() -> None:
     print("  comparison: source-resolved field vs instantaneous 1/r field")
     print("=" * 84)
     print(f"h={H}, W={PW}, L={NL_PHYS}, source_cluster={len(source_nodes)} nodes")
-    print(f"field kernel: exp(-mu r)/(r+eps), mu={GREEN_MU}, eps={GREEN_EPS}")
+    print(f"field kernel: r_eps=rho+eps, exp(-mu*r_eps)/r_eps, mu={GREEN_MU}, eps={GREEN_EPS}")
     print(f"source strengths: {m.SOURCE_STRENGTHS}")
     print(f"target max |f|: {FIELD_TARGET_MAX}")
     print()

@@ -18,6 +18,10 @@ the instantaneous `1/r` comparator.
 - exact 3D lattice: `h = 0.5`, `W = 3`, `L = 20`
 - source cluster: clipped cross5 local cluster, leaving 4 in-bounds nodes
 - source ladder: `s = {0.001, 0.002, 0.004, 0.008}`
+- static Green control convention: for node-source separation
+  `rho = sqrt((x-mx)^2 + (y-my)^2 + (z-mz)^2)`, the runner uses
+  `r_eps = rho + eps` and `exp(-mu r_eps)/r_eps`, with
+  `mu = 0.08`, `eps = 0.5`
 - same-site memory field: Green-like layer recurrence with `mix = 0.9`
 - control comparison: instantaneous `1/r` field and static source-resolved Green field
 
@@ -53,6 +57,24 @@ That is the smallest checked layer-memory observable in this pocket. It is
 nontrivial, but it remains bounded and does not claim transverse transport, a
 finite-speed field equation, or a full self-consistent GR sector.
 
+## Kernel and scope repair
+
+The registered runner builds both the static control and the propagating
+field from the same runner-defined softened Green convention:
+
+- for each source node, compute
+  `rho = sqrt((x-mx)^2 + (y-my)^2 + (z-mz)^2)`
+- set `r_eps = rho + eps`
+- evaluate `exp(-mu r_eps) / r_eps` with `mu = 0.08`, `eps = 0.5`
+- average over the clipped four-node source cluster
+- for the propagating field, apply the same-site recurrence
+  `field[layer] = mix * field[layer-1] + (1-mix) * green[layer]`
+  for `mix = 0.9`
+
+These are finite runner conventions. The packet does not derive the
+softened kernel, its parameters, the gain normalization, or the
+same-site memory recurrence from retained framework dynamics.
+
 ## Safe read
 
 This is a bounded exact-lattice positive:
@@ -66,6 +88,7 @@ This is a bounded exact-lattice positive:
 What it is **not**:
 
 - a full self-consistent propagating-field theory
+- a derived Green-kernel theorem
 - a genuine transverse transport or finite-speed field model
 - a horizon / black-hole result
 - a claim that the generated geometry sector is closed

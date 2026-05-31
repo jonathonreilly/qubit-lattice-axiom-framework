@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py
+runner_sha256: 721e1b51ad927eeeea1a602fe74a92bd4f274c0197a44c554efffa242d68fe5d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+[PASS] eigenvalues are a+2b and a-b doublet
+       eig=[1.4 1.4 2.3], expected=[1.4 1.4 2.3]
+[PASS] PSD with a>0 iff -1/2 <= b/a <= 1
+[PASS] HS equipartition gives b/a=1/sqrt(2)
+       Tr(I^2)=3.0, Tr((J-I)^2)=6.0, ratio=0.7071067811865476
+[PASS] formal HS Gaussian variance ratio gives Q=2/3
+       <b^2>/<a^2>=0.5, Q=0.6666666666666667
+SCORECARD PASS=4 FAIL=0
+
+----- stderr -----
+

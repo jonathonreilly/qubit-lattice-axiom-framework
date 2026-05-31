@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 627 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1172 |
+| unaudited | 1171 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 967 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1410 |
+| `unaudited` | 1409 |
 
 | claim_type | count |
 |---|---:|
@@ -1115,6 +1115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5169,6 +5170,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The retained grown row preserves a bounded signed-source response in the fixed-field scout while zero-source and neutral same-point controls reduce to printed zero and the +2 source is approximately linear in the +1 source.  _(class `C`)_
 - **chain closes:** True — The supplied runner actually constructs fields from sources, propagates amplitudes on the grown graph, computes detector centroids, and reproduces the frozen sign, zero-control, and linearity outputs. The cited grown-geometry companion is retained_bounded and is used only to support the narrow retained-row context, not to broaden the result.
 - **rationale:** The load-bearing result is a live numerical computation over the runner-defined grown row, not a printed constant, renaming, or imported external comparator. The zero-source and neutral same-point cancellations are algebraic/numerical controls, while the signed single-source, pair, dipole, and double-source cases are computed by the propagation code. The claim is narrow enough to match the evidence: it does not assert geometry-generic electromagnetism or continuum closure.
+- **auditor confidence:** high
+
+### `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30`
+
+- **Note:** [`FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md`](../../docs/FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** PSD of Y=aI+b(J-I), Hilbert-Schmidt equipartition of I and J-I, and the stated conversion to Q=2/3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-155310-9fa2dd48-flavor_ba_ratio_bound_hs`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Equal Hilbert-Schmidt contribution from aI and b(J-I) gives 3a^2 = 6b^2, hence (b/a)^2 = 1/2; the later Q step uses Q = 1/3 + (2/3)(b/a)^2.  _(class `A`)_
+- **chain closes:** False — The eigenvalue bound, Hilbert-Schmidt norms, equipartition ratio, and formal Gaussian variance ratio close by finite matrix algebra. The displayed Q = 1/3 + (2/3)(b/a)^2 identity is not defined or derived in the restricted packet, and the runner only re-encodes that formula.
+- **rationale:** The finite matrix calculations are correct: eigenvalues are a+2b and a-b, PSD with a>0 gives -1/2 <= b/a <= 1, Tr(I^2)=3, Tr((J-I)^2)=6, and HS equipartition gives (b/a)^2=1/2. The source also claims the symmetric-form identity Q = 1/3 + (2/3)(b/a)^2 and Q=2/3, but the restricted packet gives no definition or derivation of Q from the symmetric form. The runner's koide_q_from_ratio function hard-codes the displayed Q formula, so it does not independently close that displayed identity.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

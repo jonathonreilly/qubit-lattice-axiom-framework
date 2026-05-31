@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 616 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1201 |
+| unaudited | 1200 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 20 |
+| ~~audited_conditional~~ | 21 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 953 |
-| `audited_conditional` | 20 |
+| `audited_conditional` | 21 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1439 |
+| `unaudited` | 1438 |
 
 | claim_type | count |
 |---|---:|
@@ -1095,6 +1095,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `continuum_identification_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -4023,6 +4024,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The endpoint-distinctness and non-overlap arithmetic checks for the helper-defined numbers close exactly and are runner-verified.  _(class `A`)_
 - **chain closes:** True — For the narrowed arithmetic core, direct recomputation gives alpha_bare=0.07957747154594767, alpha_lo=0.09066783601728631, alpha_hi=0.09226499261836020, with alpha_bare < alpha_lo < alpha_hi; the non-overlap check is arithmetic over helper-returned intervals with R_lo_hi < R_hi_lo.
 - **rationale:** The runner no longer uses literal True checks for selector absence; its eight checks are endpoint definition/order, distinctness from alpha_bare, and interval non-overlap inequalities. The clean verdict applies only to this bounded arithmetic core over helper-defined quantities and helper-returned intervals. No selector-boundary or no-selector/no-go conclusion is ratified; N1-N8 was not passed for such a conclusion and it remains outside clean scope.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Supplied-premise interval composition over the provided alpha endpoints, certified ratio enclosures, omega/target constants, and cited monotonicity/tail inputs; not a derivation of the live-DM premise packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-001816-5d8735d2-dm_full_closure_same_sur`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the endpoint constants and certified helper enclosures, the interval arithmetic, disjointness, target bracketing, and one-scalar root bracketing all close in the visible runner.  _(class `A`)_
+- **chain closes:** False — The local arithmetic/bracketing checks close over imported helper outputs. The restricted packet does not close the 64:1 bridge, live plaquette/eta-omega constants, or packet-completeness/selector premise that supply those outputs and the uniqueness inference.
+- **rationale:** The primary runner performs real interval arithmetic and bracketing checks, but its theorem-grade content is explicitly over supplied helper values and supplied monotonicity. The helper chain hard-codes live plaquette and observational conversion constants, and the cited authorities themselves mark the 64:1 bridge, live-DM constants, and selector/packet-completeness premise as outside their closed content. The runner also contains a literal-True uniqueness pass whose force comes only from the supplied monotonicity/bridge premise. A formula-inventory pass additionally flags the monotonicity authority's derivative bridge wording as needing chain-rule/normalization reconciliation before it can serve as a retained bridge theorem.
+- **open / conditional deps cited:**
+  - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md`
+  - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md`
+  - `DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`

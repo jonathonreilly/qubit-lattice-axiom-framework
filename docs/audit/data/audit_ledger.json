@@ -61103,24 +61103,54 @@
       "verdict_rationale": "The runner no longer uses literal True checks for selector absence; its eight checks are endpoint definition/order, distinctness from alpha_bare, and interval non-overlap inequalities. The clean verdict applies only to this bounded arithmetic core over helper-defined quantities and helper-returned intervals. No selector-boundary or no-selector/no-go conclusion is ratified; N1-N8 was not passed for such a conclusion and it remains outside clean scope."
     },
     "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T00:21:22.584284+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16": "Bounded arithmetic certificate that the helper-defined same-surface endpoints are distinct and that the helper-returned DM ratio/density intervals are non-overlapping; selector-boundary and no-selector/no-go closure are excluded.",
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited.",
+          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "Bounded same-surface thermal-kernel algebra: the attractive and repulsive Sommerfeld kernel derivative identities and sign bounds for y>0; excludes 64:1 channel-weighted live-DM monotonicity, root uniqueness, and integral evaluation.",
+          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "Pure x_f=25 thermal-kernel series/tail certificate: positive Coulomb series identities, exact J1/J2 term-integral representations, and exact tail bounds; excludes live-DM slice constants, alpha/eta/omega selector samples, and current-bank selector closure."
+        },
+        "dep_claim_type": {
+          "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16": "bounded_theorem",
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "bounded_theorem",
+          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16": "retained_bounded",
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17": "retained_bounded",
+          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17": "retained_bounded"
+        },
+        "deps": [
+          "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
+          "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+          "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
+          "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.644,
+        "runner_hash": "0729d820e6fdd306e9b9679ae892c030d7812ea8fafb080a07b8308e8ac80292",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-001816-5d8735d2-dm_full_closure_same_sur",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local arithmetic/bracketing checks close over imported helper outputs. The restricted packet does not close the 64:1 bridge, live plaquette/eta-omega constants, or packet-completeness/selector premise that supply those outputs and the uniqueness inference.",
       "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Supplied-premise interval composition over the provided alpha endpoints, certified ratio enclosures, omega/target constants, and cited monotonicity/tail inputs; not a derivation of the live-DM premise packet.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-31T00:21:22.584284+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -61131,25 +61161,30 @@
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 7.644,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given the endpoint constants and certified helper enclosures, the interval arithmetic, disjointness, target bracketing, and one-scalar root bracketing all close in the visible runner.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "f6272196d372877c2bd414db6ea468fa3db554b4f45f47029aea9550634390a8",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained one-hop authorities for the 64:1 bridge, live plaquette/eta-omega constants, and packet-completeness/selector premise, then rerun the same interval-composition audit; also reconcile the monotonicity bridge chain-rule normalization.",
+      "open_dependency_paths": [
+        "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md",
+        "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md",
+        "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
+        "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -61386,18 +61421,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 4,
+        "B": 2,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 3,
+        "total_pass": 9
       },
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
       "title": "DM Full Closure Same-Surface Thermal Bounding Theorem",
       "transitive_descendants": 49,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner performs real interval arithmetic and bracketing checks, but its theorem-grade content is explicitly over supplied helper values and supplied monotonicity. The helper chain hard-codes live plaquette and observational conversion constants, and the cited authorities themselves mark the 64:1 bridge, live-DM constants, and selector/packet-completeness premise as outside their closed content. The runner also contains a literal-True uniqueness pass whose force comes only from the supplied monotonicity/bridge premise. A formula-inventory pass additionally flags the monotonicity authority's derivative bridge wording as needing chain-rule/normalization reconciliation before it can serve as a retained bridge theorem."
     },
     "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": {
       "audit_date": "2026-05-28T03:50:47.795466+00:00",

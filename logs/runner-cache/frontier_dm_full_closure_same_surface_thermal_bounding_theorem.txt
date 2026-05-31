@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
-runner_sha256: a8381ebd8cd71fc329464620bbb4f0c057ac056c8d4d3813c7cfc152b7f2717d
-timeout_sec: 600
+runner_sha256: 0729d820e6fdd306e9b9679ae892c030d7812ea8fafb080a07b8308e8ac80292
+timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 192.70
+elapsed_sec: 68.80
 status: ok
 ----- stdout -----
 ========================================================================================
-DM FULL CLOSURE SAME-SURFACE THERMAL BOUNDING THEOREM
+DM SAME-SURFACE THERMAL SUPPLIED-PREMISE INTERVAL THEOREM
 ========================================================================================
 
 ========================================================================================
@@ -51,17 +51,17 @@ PART 3: CERTIFIED UNIQUE ROOT ON THE ONE-SCALAR SAME-SURFACE FAMILY
 ========================================================================================
 BOTTOM LINE
 ========================================================================================
-  The same-surface DM thermal layer is now promoted from support to a
-  rigorous evaluation/bounding result:
-    - current-bank endpoint images are certified
-    - the current-bank no-go is certified
+  Given the supplied upstream/helper packet, the local interval
+  composition is certified:
+    - current-bank endpoint images are bracketed
+    - the supplied-packet current-bank obstruction is bracketed
     - the one-scalar same-surface admitted family has a certified unique root interval
-  What still remains open is not the thermal bounding layer.
-  It is whether the current exact bank itself supplies a selector, or whether
-  the DM-side one-scalar family must be admitted explicitly.
+  What still remains open is the retained derivation of the live-DM
+  premise packet: the 64:1 bridge, live constants, and selector premises.
 
 ========================================================================================
 SUMMARY: PASS=9 FAIL=0
 ========================================================================================
+
 ----- stderr -----
 

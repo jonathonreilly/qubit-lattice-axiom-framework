@@ -32,6 +32,24 @@ and turn the Q1 APS/Brannen magnitude into a signed selected-line input?
 No.  The gamma sheet does not supply the selected-line sign in the current
 readout.
 
+This does **not** say the selected-line sign is wrong.  In the already-admitted
+oriented selected-line frame, the target remains
+
+```text
+delta = +2/9
+```
+
+and the bridge still finds the same first-branch point
+
+```text
+m(+2/9) = -1.160443440065.
+```
+
+The result is only an underivation statement: `Q=1` and the source-oriented
+`gamma` sheet do not force the orientation.  If a later theorem derives the
+physical slot/Fourier orientation or based endpoint, the current `+2/9` branch
+is still the compatible branch.
+
 The reason is exact at the carrier/readout layer:
 
 ```text
@@ -124,6 +142,9 @@ KOIDE_Q1_GAMMA_SHEET_SIGN_PROBE=TRUE
 GAMMA_CONJUGATION_LEAVES_SELECTED_LINE_READOUT_INVARIANT=TRUE
 GAMMA_SIGN_SUPPLIES_DELTA_SIGN=FALSE
 SIGNED_DELTA_FROM_Q1_OR_GAMMA_ALONE=FALSE
+CURRENT_ORIENTED_SELECTED_LINE_SIGN_PLUS=TRUE
+SIGN_WRONG_PROVEN=FALSE
+SIGN_UNDERIVED_FROM_Q1_OR_GAMMA=TRUE
 ORIENTED_SLOT_FRAME_OR_BASED_ENDPOINT_REQUIRED=TRUE
 DELTA_PLUS_2_OVER_9_IF_ORIENTED_FRAME_ADMITTED=TRUE
 RETAINED_CHARGED_LEPTON_SIGN_CLOSURE=FALSE
@@ -144,6 +165,9 @@ KOIDE_Q1_GAMMA_SHEET_SIGN_PROBE=TRUE
 GAMMA_CONJUGATION_LEAVES_SELECTED_LINE_READOUT_INVARIANT=TRUE
 GAMMA_SIGN_SUPPLIES_DELTA_SIGN=FALSE
 SIGNED_DELTA_FROM_Q1_OR_GAMMA_ALONE=FALSE
+CURRENT_ORIENTED_SELECTED_LINE_SIGN_PLUS=TRUE
+SIGN_WRONG_PROVEN=FALSE
+SIGN_UNDERIVED_FROM_Q1_OR_GAMMA=TRUE
 ORIENTED_SLOT_FRAME_OR_BASED_ENDPOINT_REQUIRED=TRUE
 DELTA_PLUS_2_OVER_9_IF_ORIENTED_FRAME_ADMITTED=TRUE
 RETAINED_CHARGED_LEPTON_SIGN_CLOSURE=FALSE

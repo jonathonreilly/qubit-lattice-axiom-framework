@@ -6,7 +6,7 @@ target_status: best-honest-status
 cycle_count: 4
 active_route: q1_gamma_sheet_sign_probe
 current_surface_status: no-go
-claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS. If strict onsite source-domain selection is proved, the charged-lepton readout returns Q=2/3; if an independent odd orientation/basepoint is proved, the APS/Brannen magnitude can become a signed delta input. Bottom-up C3 algebra confirms Q1 generates only the even subalgebra span{e,g+g^2} and has zero component on the odd sign line i(g-g^2). The source-oriented gamma sheet is also pruned as a sign source because gamma conjugation leaves the selected-line diagonal-slot readout invariant. Q1 is not a retained physical phase, dark matter, or Q=2/3 closure."
+claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS. If strict onsite source-domain selection is proved, the charged-lepton readout returns Q=2/3; if an independent odd orientation/basepoint is proved, the APS/Brannen magnitude can become a signed delta input. Bottom-up C3 algebra confirms Q1 generates only the even subalgebra span{e,g+g^2} and has zero component on the odd sign line i(g-g^2). The source-oriented gamma sheet is also pruned as a sign source because gamma conjugation leaves the selected-line diagonal-slot readout invariant. The current oriented selected-line frame still gives delta=+2/9; the sign is underived from Q1/gamma, not contradicted. Q1 is not a retained physical phase, dark matter, or Q=2/3 closure."
 files_touched:
   - docs/KOIDE_Q1_OFFSITE_TWO_NINTH_FRONTIER_SYNTHESIS_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md

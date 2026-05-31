@@ -1,0 +1,128 @@
+loop: beta6-plaquette-closure
+created: 2026-05-30
+last_cycle: 3
+last_updated: 2026-05-30
+
+north_star: >
+  Derive <P>(beta=6, L->inf) ~= 0.5934 for SU(3) Wilson single-plaquette from
+  framework primitives (no PDG / Monte-Carlo import). Feeds u_0=<P>^(1/4) ->
+  alpha_s -> v/y_t/m_t/m_H chain.
+
+central_obstruction:
+  object: rho_{p,q}(6)  # boundary character measure / Perron eigenvector of the
+                        # unmarked 3D spatial Wilson environment at beta=6
+  doubly_walled:
+    - axis: algebraic_underdetermination
+      by: local character + intertwiner data + any 1-parameter rho-family
+      authorities: [gauge_vacuum_plaquette_tensor_transfer_perron_solve_note,
+                    gauge_vacuum_plaquette_framework_point_underdetermination_note]
+    - axis: computational_infeasibility
+      by: exact L_s>=3 SU(3) contraction (treewidth>=29, 8^30) + sign-problem MC
+      authorities: [su3_wigner_l3_treewidth_infeasible_2026-05-04,
+                    su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04]
+
+retained_anchor:
+  series: "Delta(beta) = P_full - P_1plaq = sum_{n>=5} d_n beta^n"
+  d5: "1/472392 = 4/18^5"   # four closed cube shells; gauge_vacuum_plaquette_mixed_cumulant_audit_note (retained)
+
+cycle1_results:
+  d6: "7/5668704"           # EXACT, NEW (this loop)
+  d6_per_shell: "7/22674816 = 7/(12*18^5)"
+  d6_d5_ratio: "7/12"       # clean rational
+  finite_geometry_finding: >
+    zero order-beta^6 distinct connected supports are GF(3) color-closable (of
+    5966 leaf-free size-6 supports over the radius-1 patch); d_6 comes only from
+    the four cube shells via order-6 multiplicity (one face doubled or p0 doubled).
+  method: >
+    exact connected-cumulant linked-cluster expansion; exact SU(3) single-link
+    Haar integrals via invariant-tensor projector (delta-caps + epsilon sector,
+    reduced to an independent basis); moments->cumulants by set-partition Moebius;
+    supports on the ">=1 face per p0 edge + extras" scaffold + GF(3) pre-filter.
+  runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
+  note: docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md
+
+cycle2_results:
+  d7: "5/17006112"          # EXACT, NEW (this loop); per-shell 5/68024448, 4 identical shells
+  d7_d6_ratio: "5/21"       # != d6/d5 = 7/12, so per-order ratio is NOT constant
+  optimized_engine: >
+    BEAT the order-7 3^(2k) contraction wall (sympy: ~270s per 8-plaquette moment
+    => >30min; optimized: ~0.5s => exact d7 in ~2min). Three exact changes, no
+    new maths: sparse invariant-basis per-link tensor; pure-int Fraction +
+    min-degree variable elimination; early-zero on unbalanced links.
+  two_engine: >
+    optimized Fraction engine reproduces sympy d5=1/472392 AND d6=7/5668704 EXACTLY
+    (V4b). Engines AGREE; d7=5/17006112 confirmed.
+  tadpole_verdict: FALSIFIED
+  tadpole_verdict_detail: >
+    tadpole/geometric (single boosting pole) predicts constant ratio =>
+    d7^pred = (7/12)*d6 = 49/68024448; exact d7 = 5/17006112 misses by ~59% vs
+    prediction (1.45 relative to exact) >> 5% harness window.
+  runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py
+  note: docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md
+
+cycle3_results:
+  d8: "5/272097792"         # EXACT, NEW (this loop); POSITIVE ~= +1.8376e-8
+  d8_per_shell: "5/1088391168"
+  d8_d7_ratio: "1/16"       # bracket ratios 7/12, 5/21, 1/16 decrease super-geometrically
+  bracket_c3: "5/576"       # Delta = (4/18^5) beta^5 [1 + (7/12) beta + (5/36) beta^2 + (5/576) beta^3 + ...]
+  wall_BEATEN: >
+    The cycle-2 HANDOFF said d_8 was "past the wall" (56 multiplicity vectors/shell
+    of 9-plaquette cumulants, Bell(9)=21147). It is NOT: the octahedral O_h symmetry
+    of the closed cube collapses the 56 distinct 9-plaquette cumulants to exactly 3
+    value-shapes (the joint cumulant depends only on the multiset of density
+    multiplicities). The shape-collapse engine computes d_8 in ~5 min single-thread.
+  shape_collapse: >
+    56 order-8 multiplicity vectors -> 3 value-shapes, each self-checked for
+    octahedral shape-invariance on a 2nd geometrically-distinct representative
+    (the routine raises if invariance ever fails). Shape cumulants match the
+    closed-form law kappa_5/6^k (kappa_5=1/18^5):
+      (1,1,1,2,2,2) = +kappa_5/6^3 = +1/408146688   (weight 15/4)
+      (1,1,1,1,2,3) = 0                              (weight 15/4)
+      (1,1,1,1,1,4) = -5 kappa_5/6^3 = -5/408146688  (weight 3/8; the -5 = single-plaq kappa_5(X)=-5/3888)
+    per-shell d_8 = 5/1088391168; d_8 = 4 x that = 5/272097792.
+  two_engine: >
+    (a) each shape cumulant matches the closed-form law kappa_5/6^k (engine-
+    independent); (b) sympy invariant-projector tensor reproduces the Fraction
+    link tensor at every order-8 per-link degree incl the busiest (4,1)/(1,4)
+    (V7, ~2s, exact); (c) Fraction-engine shape-invariance self-check at order 8.
+    A full sympy joint_cumulant on a 9-plaquette word hits the ~270s/word wall
+    (worse at 9-plaq) and is recorded as a one-time offline confirmation, not gated.
+  single_pair_verdict: FALSIFIED
+  single_pair_verdict_detail: >
+    constant-amplitude single dominant complex-conjugate pair (the d-log-Pade
+    premise) fixed by d5,d6,d7 predicts a SIGN CHANGE at d_8 ([0/2] bracket
+    discriminant 4c2-3c1^2 = -67/144 < 0 => complex pair; predicted d_8 < 0,
+    ~-7.7e-8 by the [0/2] recurrence, ~-3.26e-7 by a pure-oscillation fit). The
+    exact d_8 = +1.8376e-8 is POSITIVE (no sign change) => single-complex-pair
+    ansatz falsified; series is NOT controlled by a single dominant complex pair.
+  dlog_pade_activation: >
+    d5..d8 supply the 4 contiguous coeffs (= the beta^8 rank floor): H=(log h)'
+    has H0=7/12, H1=-1/16, H2=-1/54. The [1/1] d-log-Pade is now ACTIVATED but
+    returns a spurious REAL pole (beta_c~3.375, arg=0) and a non-physical
+    Delta(6)~1.19 (=> <P>(6)~1.62, far from the 0.594 comparator). The activation
+    coefficient CONTRADICTS the [1/1]'s single-pole premise; [1/1] is far too
+    low-order to localize the physical complex pair. NOT a closure.
+  runner: scripts/frontier_beta6_connected_coefficient_2026_05_30.py   # maxorder=8 -> V7/V7b/V7c
+  note: docs/BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md
+
+feeds_harness:
+  harness: scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py
+  drop_in: "EXACT_HIGHER = {6: Fraction(7, 5668704), 7: Fraction(5, 17006112), 8: Fraction(5, 272097792)}"
+  tadpole_verdict: "[FALSIFY] tadpole/geometric (d7/d6=5/21 != d6/d5=7/12)"
+  single_pair_verdict: "[FALSIFY] single-complex-pair (predicts sign change; exact d8 positive)"
+  dlog_pade: "ACTIVATED by d5..d8, but [1/1] self-contradicts (spurious real pole + garbage Delta(6))"
+
+scope_limit: >
+  d_8 ACTIVATES the predictive/resummation falsifier ONLY; per the retained no_go
+  gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note, no finite-order
+  truncation closes thermodynamic <P>(6). Delta=4*C_cube is exact only through
+  d_8: the distinct-support side reopens at 2-cycle weight 10 (d_9 acquires 80 new
+  non-cube supports), so this engine's shape-collapse does not continue past d_8
+  without enumerating the new support class. 0.594 is a Monte-Carlo comparator.
+
+trace_gate: frontier_discovery / upstream_support   # NOT closure
+status_authority: >
+  independent audit lane only; cite effective_status from
+  docs/audit/data/audit_ledger.json; framework PRs land science/fixes only.
+
+next_action: see HANDOFF.md

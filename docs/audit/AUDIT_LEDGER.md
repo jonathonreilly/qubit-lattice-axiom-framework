@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 636 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1149 |
+| unaudited | 1148 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 977 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1387 |
+| `unaudited` | 1386 |
 
 | claim_type | count |
 |---|---:|
@@ -1145,6 +1145,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11855,6 +11856,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Determinant-magnitude positivity for the retained staggered determinant is an `S_3`-invariant Boolean constraint and cannot break `S_3` to `C_3`; a one-dimensional representation-valued binary route selecting `C_3` must use the sign/orientation character.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-165643-00885310-positivity_bridge_requir`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `S_3` has exactly two one-dimensional representations, the trivial representation and `sgn`, with `{sigma : sgn(sigma)=+1}=A_3=C_3`, while determinant positivity is constant on `S_3`.  _(class `A`)_
+- **chain closes:** False — The narrowed one-dimensional representation argument closes from the retained determinant-positivity input, retained-bounded `S_3` axis-symmetry input, and finite `S_3` algebra. The source theorem also states the broader class-function lemma, which is false unless narrowed to one-dimensional characters or representation-valued sign/magnitude constraints.
+- **rationale:** The runner source performs real finite checks for the staggered determinant on representative axis orderings and for the sign character of `S_3`; it is not merely printing constants. The cited authorities are retained-grade for the determinant positivity, axis-symmetry, and no-per-site-chirality boundaries used by the narrowed claim. However, the theorem's broad sentence that an arbitrary binary class function on `S_3` can preserve only a union of `sgn`-level sets is not correct: binary class functions may select other conjugacy-class unions, such as the identity class alone. The clean repair is to narrow that sentence to one-dimensional representation-valued sign/magnitude constraints.
 - **auditor confidence:** high
 
 ### `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 631 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1159 |
+| unaudited | 1158 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 972 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1397 |
+| `unaudited` | 1396 |
 
 | claim_type | count |
 |---|---:|
@@ -1132,6 +1132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -9657,6 +9658,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The newly promoted open-cubic staggered subset is scientifically consistent on main, supporting only the bounded external-source d^-2 reproduction, blocking-sensitivity, and 3D sign-split surfaces stated in the note.  _(class `C`)_
 - **chain closes:** True — The current outputs of the three listed scripts reproduce the note's exact-force, blocked-trajectory, blocking-sensitivity, and 3D contraction/sign-split summaries within print precision. The note explicitly excludes broader staggered both-masses or self-consistent two-body closure.
 - **rationale:** The validation claim closes for its bounded scope: all three referenced reruns match the frozen note summaries, including the global exponents, per-side blocked fits, blocking-scheme sensitivity, width ratios, core excess values, and 20/20 vs 0/20 field-side sign split. The note does not overstate these checks into broader Newton closure or two-body closure. Residual risk is limited to the promoted upstream notes' own scopes, not to stale validation output here.
+- **auditor confidence:** high
+
+### `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28`
+
+- **Note:** [`MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md`](../../docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the fixed-null-momentum linear-algebra quotient count for a four-component complex polarization vector, conditional on the admitted Lorentzian free massless vector field, plane-wave, gauge-orbit, and Lorenz-gauge context AC1-AC5.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-162947-671f0e82-massless_vector_polariza`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For nonzero null k^mu, dim_C({epsilon^mu in C^4 : k_mu epsilon^mu = 0}/span{k^mu}) = 4 - 1 - 1 = 2.  _(class `A`)_
+- **chain closes:** False — The quotient calculation itself closes: the Lorenz covector has rank 1 for nonzero k, the null gauge-shift direction lies in its kernel, and quotienting removes one further dimension. The broader physical polarization-count theorem still imports AC1-AC5 as admitted standard QFT context without a retained or accepted one-hop bridge in the restricted packet.
+- **rationale:** The runner source does perform exact symbolic rank checks rather than merely printing constants, and the displayed core identity ker(k_mu epsilon^mu)/span{k^mu} has complex dimension 2. The massive contrast, transverse basis, helicity basis, and adjoint-count arithmetic are consistent with the note's stated conventions. However, the source note explicitly admits Lorentzian R^{3,1}, plane-wave decomposition, continuous gauge orbit, and Lorenz-gauge structure as AC1-AC5, and no cited retained-grade or accepted-premise authority is supplied for those inputs. Therefore the algebraic core is verified, but the audit chain remains conditional on admitted context rather than clean retained closure.
 - **auditor confidence:** high
 
 ### `matched_2d_4d_decoherence_note`

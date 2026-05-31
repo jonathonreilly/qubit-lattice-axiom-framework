@@ -206742,24 +206742,54 @@
       "verdict_rationale": null
     },
     "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T16:40:09.454384+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "A1/A2 qubits on Z^3 plus the tested ungraded operator-algebra, per-site dimension, and finite local-ordering facts do not force Grassmann/CAR statistics over the hard-core-boson reading.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "no_go",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25": "retained_no_go",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "dbeb59c168fc8edbac837e20f4ee05bb8cd0c04906ddf27b12c6f23f5a945c6d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-163744-c7844a83-observable_principle_p2_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic closure is valid under the stated supplied premises: Berezin gives the determinant and permutation conjugation preserves determinant, spectrum, and trace partition functions. The packet does not derive FS, the framework matter-operator identification D = M_KS, the determinant-to-trace bridge, or the AC_phi_lambda relabeling premise, so the closure is conditional only.",
       "claim_id": "observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28",
-      "claim_scope": null,
+      "claim_scope": "Conditional determinant-realization and residual re-attribution: assuming FS, D = M_KS, and AC_phi_lambda is only an S3 relabeling, the fermionic partition readout is det(D+J) and the determinant/spec/trace readouts are blind to that relabeling.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T16:40:09.454384+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -206770,20 +206800,22 @@
         "staggered_only_det_positivity_case_a_note_2026-05-17"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given the supplied fermionic frame, supplied D = M_KS, and supplied AC_phi_lambda-as-S3-relabeling premise, the Berezin identity gives Z_matter[J] = det(D+J), while det/spec/trace are invariant under the corresponding permutation conjugations.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d23c43485713fff31fabd575895b470aaea9af9f6986f8cde3d3b98d3e9ed233",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained one-hop support for FS selection, the actual D = M_KS matter-operator identification, the determinant-to-trace bridge if used load-bearing downstream, and AC_phi_lambda being only an S3 relabeling; otherwise keep downstream uses explicitly conditional on those supplied premises.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-30T22:12:27.083043+00:00",
@@ -206857,18 +206889,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 9,
         "B": 0,
-        "C": 0,
+        "C": 18,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 27
       },
       "runner_path": "scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py",
       "title": "Observable-Principle P2 \u2014 Determinant-Realization Bridge, Conditional on the Fermionic Frame, and Residual Re-Attribution (FS, not AC_phi_lambda)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing mathematics is class A algebra over retained Berezin and positivity inputs, and the runner source genuinely checks the determinant identity, staggered finite-lattice positivity examples, and relabeling invariance rather than merely printing constants. However the note explicitly imports unclosed premises: FS is an admitted statistics-frame selection, D = M_KS is supplied rather than derived, AC_phi_lambda being only an S3 relabeling is supplied, and the determinant-to-trace bridge is also supplied context. Under the rubric, those explicit unclosed premises prevent audited_clean even though the conditional algebraic statement closes on its own scope."
     },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-23T19:34:10.063087+00:00",

@@ -13,6 +13,7 @@ pipeline after independent review.
 - [`scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py`](../scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py)
 - [`scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py`](../scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py)
 - [`scripts/frontier_koide_q1_unlock_map_orientation_gate.py`](../scripts/frontier_koide_q1_unlock_map_orientation_gate.py)
+- [`scripts/frontier_koide_q1_bottom_up_sign_orientation_audit.py`](../scripts/frontier_koide_q1_bottom_up_sign_orientation_audit.py)
 
 ## Question
 
@@ -242,6 +243,40 @@ Only after that sign is closed can the existing selected-line scalar/point
 bridge run as a physical phase bridge.  Generation labeling still requires a
 based endpoint/source law.
 
+### 8. Bottom-up sign audit
+
+Rebuilding the sign from the C3 group algebra gives the same boundary without
+using the previous no-go as an input:
+
+```text
+Q1 source data:      S_Q1 = 10/9 e - 2/9(g + g^2)
+signed phase line:  J = i(g - g^2)
+```
+
+A transposition swaps `g` and `g^2`, so
+
+```text
+S_Q1 -> S_Q1,
+J -> -J.
+```
+
+The Q1-generated algebra is only
+
+```text
+span{e, g + g^2},
+```
+
+because `(g + g^2)^2 = 2e + (g + g^2)`.  Its projection onto the odd sign
+line is exactly zero:
+
+```text
+<S_Q1, i(g-g^2)> = 0.
+```
+
+The selected-line spectra at `+delta` and `-delta` are mirror-degenerate as
+unordered triples.  Thus the sign becomes visible only after an oriented
+Fourier/slot frame, based endpoint, or equivalent odd primitive is supplied.
+
 ## Bridge target isolated by this packet
 
 The next theorem target is now narrower than "derive `2/9`":
@@ -272,6 +307,8 @@ Either outcome helps the `Q = 2/3` hunt.
   equals `2/9`.
 - The exact group-algebra bridge gives `coeff_nonid(S_Q1) = -eta_APS`.
 - `Q = 1` alone cannot supply the signed selected-line `delta` readout.
+- The first-principles C3 algebra confirms that Q1 has zero odd component on
+  the signed phase line `i(g-g^2)`.
 - Under strict onsite descent, the `Q = 1` reduced coordinate is erased and the
   normalized readout returns `Q = 2/3`.
 - If the packet lands, it unlocks two conditional tracks: charged-lepton
@@ -301,6 +338,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_two_ninth_provenance_cl
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_unlock_map_orientation_gate.py
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_bottom_up_sign_orientation_audit.py
 python3 -m py_compile \
   scripts/frontier_dm_rhn_koide_q1_axis_abundance_compatibility.py \
   scripts/frontier_koide_q1_alternative_interpretation_classifier.py \
@@ -310,7 +348,8 @@ python3 -m py_compile \
   scripts/frontier_koide_two_ninth_provenance_classifier.py \
   scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py \
   scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py \
-  scripts/frontier_koide_q1_unlock_map_orientation_gate.py
+  scripts/frontier_koide_q1_unlock_map_orientation_gate.py \
+  scripts/frontier_koide_q1_bottom_up_sign_orientation_audit.py
 ```
 
 Expected closeout flags:
@@ -335,6 +374,12 @@ Q1_APS_BRANNEN_MAGNITUDE_UNLOCK=TRUE
 SIGNED_ORIENTATION_PRIMITIVE_REQUIRED=TRUE
 SELECTED_LINE_POINT_UNLOCKS_IF_DELTA_SIGNED=TRUE
 GENERATION_LABEL_STILL_REQUIRES_BASEPOINT=TRUE
+KOIDE_Q1_BOTTOM_UP_SIGN_ORIENTATION_AUDIT=TRUE
+Q1_GENERATED_ALGEBRA_ODD_COMPONENT_ZERO=TRUE
+SIGNED_DELTA_FROM_Q1_FIRST_PRINCIPLES=FALSE
+APS_SIGN_REQUIRES_ORIENTATION=TRUE
+SELECTED_LINE_MIRROR_SIGN_UNDERDETERMINED=TRUE
+ORIENTED_C3_GENERATOR_OR_BASED_ENDPOINT_REQUIRED=TRUE
 TWO_NINTH_TYPED_UNIFICATION=FALSE
 Q1_DARK_MATTER_CLOSURE=FALSE
 ```
@@ -355,6 +400,8 @@ Q1_DARK_MATTER_CLOSURE=FALSE
   - no-go for signed `delta` readout from `Q = 1` alone.
 - [`KOIDE_Q1_UNLOCK_MAP_ORIENTATION_GATE_NOTE_2026-05-31.md`](KOIDE_Q1_UNLOCK_MAP_ORIENTATION_GATE_NOTE_2026-05-31.md)
   - what the Q1 packet unlocks and what remains gated by orientation.
+- [`KOIDE_Q1_BOTTOM_UP_SIGN_ORIENTATION_AUDIT_NOTE_2026-05-31.md`](KOIDE_Q1_BOTTOM_UP_SIGN_ORIENTATION_AUDIT_NOTE_2026-05-31.md)
+  - first-principles sign audit from the C3 even/odd decomposition.
 - [`KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md`](KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md)
   - shared Koide/DM `C3` projector skeleton.
 - [`NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md`](NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md)

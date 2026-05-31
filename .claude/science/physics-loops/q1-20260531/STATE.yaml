@@ -3,15 +3,16 @@ branch: codex/q1-hunt-20260531
 date: 2026-05-31
 goal: "Package the Q=1 counterdomain/offsite-2/9 probes as a draft PR for Koide Q=2/3 workers."
 target_status: best-honest-status
-cycle_count: 2
-active_route: q1_unlock_map_orientation_gate
+cycle_count: 3
+active_route: q1_bottom_up_sign_orientation_audit
 current_surface_status: no-go
-claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS. If strict onsite source-domain selection is proved, the charged-lepton readout returns Q=2/3; if an independent odd orientation/basepoint is proved, the APS/Brannen magnitude can become a signed delta input. Q1 alone cannot supply the signed parity-odd delta readout; it is not a retained physical phase, dark matter, or Q=2/3 closure."
+claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS. If strict onsite source-domain selection is proved, the charged-lepton readout returns Q=2/3; if an independent odd orientation/basepoint is proved, the APS/Brannen magnitude can become a signed delta input. Bottom-up C3 algebra confirms Q1 generates only the even subalgebra span{e,g+g^2} and has zero component on the odd sign line i(g-g^2); it is not a retained physical phase, dark matter, or Q=2/3 closure."
 files_touched:
   - docs/KOIDE_Q1_OFFSITE_TWO_NINTH_FRONTIER_SYNTHESIS_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_UNLOCK_MAP_ORIENTATION_GATE_NOTE_2026-05-31.md
+  - docs/KOIDE_Q1_BOTTOM_UP_SIGN_ORIENTATION_AUDIT_NOTE_2026-05-31.md
   - scripts/frontier_koide_q1_neutrality_classifier.py
   - scripts/frontier_dm_rhn_koide_q1_axis_abundance_compatibility.py
   - scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py
@@ -21,6 +22,7 @@ files_touched:
   - scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
   - scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py
   - scripts/frontier_koide_q1_unlock_map_orientation_gate.py
+  - scripts/frontier_koide_q1_bottom_up_sign_orientation_audit.py
 open_imports:
   - "New signed selected-line orientation/basepoint primitive, if any positive phase closure is still desired."
   - "Physical source-domain theorem excluding projected Z as undeformed charged-lepton source data."
@@ -29,8 +31,9 @@ no_go_routes:
   - "Current U(1)-equivariant number-preserving direct Q1 -> RHN activation bridge."
   - "Q=1 as current dark-matter closure."
   - "Signed selected-line delta readout from Q1 data alone."
+  - "Hidden bottom-up Q1 sign primitive from the C3 group algebra."
 trace_class: negative_route_pruning
 reachability_to_target: prunes
-next_exact_action: "Derive an independent signed selected-line orientation/basepoint primitive, or prove the physical source-domain law that erases projected Z for undeformed charged leptons."
-pr_status: "Draft PR open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442; unlock-map update pending commit/push."
-stop_condition: "Draft PR updated with unlock map, honest claim boundary, and verification commands."
+next_exact_action: "Derive an oriented C3 generator as a physical selected-line endpoint/basepoint, or prove the physical source-domain law that erases projected Z for undeformed charged leptons."
+pr_status: "Draft PR open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442; bottom-up sign audit update pending commit/push."
+stop_condition: "Draft PR updated with bottom-up sign audit, honest claim boundary, and verification commands."

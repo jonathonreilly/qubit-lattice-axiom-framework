@@ -17,6 +17,8 @@
 - Unlock-map gate: strict onsite source-domain selection would give
   charged-lepton `Q=2/3`; an independent odd orientation/basepoint would turn
   the Q1 APS/Brannen magnitude into a signed-delta input.
+- Bottom-up sign audit: Q1 generates only `span{e,g+g^2}` and has zero
+  projection onto the signed phase line `i(g-g^2)`.
 
 ## Not Used
 

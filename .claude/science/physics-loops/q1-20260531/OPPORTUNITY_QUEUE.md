@@ -18,6 +18,8 @@
 
    The Q1-alone signed readout is no-go.  A positive phase closure now needs
    this extra odd primitive from retained source-domain or selected-line data.
+   The bottom-up sign audit narrows the target to an oriented C3 generator,
+   selected-line endpoint, or equivalent odd primitive.
 
 3. Sharpen the Q1/RHN no-go:
 

@@ -10,10 +10,10 @@ artifact_role: no_go
 next_trace_action: "Derive an independent signed selected-line orientation/basepoint primitive, or prove the physical source-domain law that erases projected Z for undeformed charged leptons."
 ```
 
-The coefficient bridge supports the existing phase blocker, but this no-go
-prunes the stronger route "Q1 alone supplies the signed selected-line phase."
-The blocker is now sharper: a positive closure must derive an independent odd
-orientation/basepoint primitive.
+The coefficient bridge supports the existing phase blocker, but the signed
+readout and bottom-up sign audits prune the stronger route "Q1 alone supplies
+the signed selected-line phase."  The blocker is now sharper: a positive
+closure must derive an independent odd orientation/basepoint primitive.
 
 The unlock map also marks the positive source-domain path: strict onsite
 descent erases the Q1 reduced `Z` coordinate and returns `Q=2/3`.  That path

@@ -18,6 +18,8 @@ What to use:
 - If a future odd orientation/basepoint primitive supplies
   `epsilon in {+1,-1}`, then `delta = epsilon * eta_APS` can feed the existing
   selected-line scalar/point bridge.
+- The bottom-up sign audit confirms Q1 generates only `span{e,g+g^2}` and has
+  zero projection onto the signed phase line `i(g-g^2)`.
 
 What not to use:
 
@@ -25,11 +27,12 @@ What not to use:
 - Do not cite this as retained `Q=2/3` closure.
 - Do not cite this as `delta = eta_APS`.
 - Do not cite Q1 as fixing the sign of `delta`.
+- Do not cite the named C3 generator convention as a physical sign theorem.
 - Do not merge the APS, anomaly, Brannen, and offsite matrix coefficient into
   full physical phase closure without a signed selected-line readout theorem.
 
 Best next theorem:
 
 ```text
-derive_signed_selected_line_orientation_or_source_domain_Z_erasure
+derive_oriented_C3_generator_as_physical_selected_line_endpoint_or_source_domain_Z_erasure
 ```

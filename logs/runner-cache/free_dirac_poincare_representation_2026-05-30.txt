@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/free_dirac_poincare_representation_2026-05-30.py
+runner_sha256: 39ef1b94d75d24dff2d2bb3f11d4ed5661b0c335c11c7c4bab0960ba4211f214
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+==============================================================================
+FREE DIRAC POINCARE ALGEBRA SUPPORT
+(bounded checks for the positive-energy free Dirac construction)
+==============================================================================
+  [PASS] P1 spin-1/2 Lorentz algebra so(3,1) closes, [K,K]=-i eps J
+  [PASS] P2 full Poincare algebra iso(3,1): all 10 brackets close
+  [PASS] P3 NON-TRIVIALITY: wrong-sign boost AND Euclidean [K,K]=+ieJ both FAIL the (Minkowski) Poincare algebra
+  [PASS] P4 one-particle mass-shell generators close algebra (analytic, worst=2.22e-16)
+  [PASS] P5 boost preserves H_m^+; SU(2) Wigner rotation correct (worst=6.00e-15)
+  [PASS] P6 invariant measure d^3p/2E boost-preserved (div_inv=2.78e-13, flat_div=8.87e-01)
+  [PASS] P7 positive-energy spectrum; CAR many-body H >= 0 (vacuum 0)
+  [PASS] P8 boosted bispinor numerator has Lorentz covariance (worst=1.05e-15)
+==============================================================================
+SCORECARD PASS=8 FAIL=0
+
+----- stderr -----
+

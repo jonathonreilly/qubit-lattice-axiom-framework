@@ -96741,24 +96741,42 @@
       "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the admitted finite-dimensional occupation basis and Pauli definitions. No cross-note authority, external comparator, fitted input, or physical fermion-statistics/superselection premise is imported. The proof appropriately keeps the dynamical conservation and physical selector claims conditional, so the audited algebraic scope follows."
     },
     "field_equation_derivation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T15:49:09.631827+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "05c498150d8f18e46fc4829d21e015e6fe08a04133d9f16fbff8149e24af7176",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-154712-084e17d2-field_equation_derivatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The result is direct quadratic-form calculus on the displayed action: the graph-gradient, mass, and source derivatives have the stated signs and factors. The cited self-consistency note is not load-bearing for this variational identity and is not used to select the action.",
       "claim_id": "field_equation_derivation_note",
-      "claim_scope": null,
+      "claim_scope": "For the stipulated finite undirected weighted-graph quadratic action, the audited result is the Euler-Lagrange identity grad_Phi S=(L+mu^2 I)Phi-G_c rho, with the stated stationary screened Poisson equation and positive-mu^2 uniqueness under the standard graph-Laplacian convention.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T15:49:09.631827+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -96766,19 +96784,19 @@
         "self_consistency_forces_poisson_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Because L is symmetric, d/dPhi[1/2 Phi^T L Phi]=L Phi, and adding the mass and source derivatives gives grad_Phi S=(L+mu^2 I)Phi-G_c rho.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "791cef4d5223f85df6d063db6c280c2ff35924f3c8df111145d4abb715cdadd3",
       "note_path": "docs/FIELD_EQUATION_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that repository-wide graph notation continues to use the standard unordered-edge, nonnegative-weight Laplacian convention.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -96988,18 +97006,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 21,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 21
       },
       "runner_path": "scripts/frontier_field_equation_variational_scope_repair.py",
       "title": "Field Equation Variational Identity For A Stipulated Quadratic Graph Action",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine class A algebraic closure over a stipulated action, not a definition substitution or numerical match. The runner source performs exact rational checks of the Laplacian construction, action gradient, stationary-source witness, constant-mode behavior, positive-mu2 witnesses, and scope firewalls rather than merely printing PASS. Independently, with the standard unordered-edge, nonnegative-weight Laplacian convention, Phi^T L Phi=sum_E w_ij(Phi_i-Phi_j)^2, so the factor 1/2 differentiates to L Phi; the mass and source terms then give the displayed equation. The repaired note explicitly disclaims action selection and operator uniqueness, so no hidden selection theorem is being imported."
     },
     "fifth_family_complex_boundary_note": {
       "audit_date": "2026-05-06T02:50:26.059050+00:00",

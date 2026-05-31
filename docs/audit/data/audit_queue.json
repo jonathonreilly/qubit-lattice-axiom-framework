@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 250,
     "high": 295,
-    "leaf": 333,
+    "leaf": 332,
     "medium": 297
   },
   "cycle_break_target_count": 0,
@@ -25940,30 +25940,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "field_equation_derivation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "self_consistency_forces_poisson_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FIELD_EQUATION_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_field_equation_variational_scope_repair.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "fifth_family_radial_repaired_positive_packet_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35656,6 +35632,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 43,
-  "total_pending": 1175
+  "ready_count": 42,
+  "total_pending": 1174
 }

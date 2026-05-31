@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py
+runner_sha256: 42f0812b166740ab2e318f1626e0f5dc0e50b9ec0deb50bfe0b005793276a387
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+
+========================================================================================
+Kahler-Dirac form-degree coupling i*D_KD is a Berry spectator on the Koide doublet
+========================================================================================
+
+========================================================================================
+F1 — native Fock substrate (CAR, d^2=delta^2=0, i*D_KD Hermitian)
+========================================================================================
+[PASS] F1.1 CAR {a_j,a_k^dag}=delta; d^2=delta^2=0; i*D_KD Hermitian
+       3-mode JW fermions on Lambda*(C^3), dim 8
+
+========================================================================================
+F2 — chiral grading is NATIVE: {i*D_KD, Gamma_F}=0 (form-parity, escape-hatch II)
+========================================================================================
+[PASS] F2.1 {i*D_KD, Gamma_F} = 0 with Gamma_F=(-1)^N (chiral grading on a factor DISTINCT from the generation R^3; C^3=I does not touch it)
+       max|{i D_KD, Gamma_F}| = 0.0e+00
+
+========================================================================================
+F3 — i*D_KD is a Berry spectator: the two b-derivatives COMMUTE
+========================================================================================
+[PASS] F3.1 [dH/dRe b, dH/dIm b] = 0 (C and C^2 commute) -> simultaneously diagonalizable -> zero abelian Berry curvature
+       max|[dH/dx, dH/dy]| = 0.0e+00
+
+========================================================================================
+F4 — native Berry monopole = 0 (Wilson loop); positive control nonzero
+========================================================================================
+[PASS] F4.1 native i*D_KD + Koide mass: Wilson-loop Berry phase = 0 for all kappa, all bands (-> Q=1 rigidity default)
+       Berry (kappa,band sweep) = ['0.0e+00', '0.0e+00', '0.0e+00', '0.0e+00', '0.0e+00', '0.0e+00']
+[PASS] F4.2 POSITIVE CONTROL: a chiral (non-commuting-coupling) 2-band gives a NONZERO monopole -> the Wilson-loop method detects curvature
+       Berry(chiral control) = -0.6871 (!=0)
+
+========================================================================================
+F5 — Gamma_F restricts to scalar -I on Lambda^1 (cannot impose Koide LCC)
+========================================================================================
+[PASS] F5.1 Gamma_F | Lambda^1 = -I (scalar) -> cannot impose <v|Gamma_chi|v>=0; the Koide grading Gamma_chi=(2/3)J-I is non-scalar on the generation R^3
+       Gamma_F|Lambda^1 = [-1.0, -1.0, -1.0] (= -I)
+
+========================================================================================
+SUMMARY
+========================================================================================
+  6/6 checks passed
+
+  NATIVE chiral grading EXISTS (form-parity Gamma_F, escape-hatch II) -- but
+  i*D_KD is a BERRY SPECTATOR on the generation doublet ([dH/dx,dH/dy]=0 by
+  C3-equivariance) -> zero monopole -> Q=1. Gamma_F is scalar on Lambda^1, so
+  it cannot read Koide. A nonzero off-generation monopole needs the relative-i
+  import (same as the qubit route, r-non-selective).
+  Next path (open): does emergent-time's i land on the form-parity factor and
+  make the inter-grade coupling carry arg(b) natively?
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

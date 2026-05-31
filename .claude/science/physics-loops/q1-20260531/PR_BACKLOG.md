@@ -16,5 +16,5 @@ Status:
 
 ```text
 Draft PR opened as https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442.
-Signed-readout no-go update pending commit/push.
+Unlock-map update pending commit/push.
 ```

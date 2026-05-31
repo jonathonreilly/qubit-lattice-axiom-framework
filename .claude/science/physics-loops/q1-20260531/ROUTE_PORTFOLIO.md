@@ -41,6 +41,15 @@ Any transposition-equivariant readout from the transposition-fixed Q1
 coefficient data to the odd `delta` line must vanish.  Q1 gives magnitude
 support only.
 
+## Route C3: Q1 unlock map
+
+Status: exact support / conditional gate map.
+
+If strict onsite source-domain selection is proved, projected `Z` is erased and
+the charged-lepton readout returns `Q=2/3`.  If an independent odd
+orientation/basepoint primitive is proved, the exact Q1 coefficient bridge
+supplies the `2/9` APS/Brannen magnitude for a signed-delta readout.
+
 ## Route D: future charge-two Majorana texture
 
 Status: hypothetical after activation.

@@ -8,6 +8,8 @@ Delivered artifacts:
 - One 2/9 provenance classifier.
 - One APS/Brannen coefficient bridge runner.
 - One signed selected-line readout no-go runner.
+- One unlock-map/orientation-gate runner.
+- Unlock-map note answering what lands if the Q1 packet lands.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

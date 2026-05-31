@@ -14,6 +14,9 @@ Delivered artifacts:
 - Bottom-up sign note proving Q1 has zero component on the odd sign line.
 - One gamma sheet sign probe runner.
 - Gamma sheet note pruning source-oriented `gamma` as the missing sign source.
+- One oriented sign compatibility closeout runner.
+- Oriented sign note recording that the admitted frame gives the right
+  `+2/9` sign by `delta_oriented=-coeff_g(S_Q1)`.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

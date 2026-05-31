@@ -22,6 +22,9 @@
 - Gamma sheet sign probe: `gamma -> -gamma` complex-conjugates the selected-line
   carrier but leaves the real diagonal-slot readout invariant, so it does not
   supply the selected-line sign.
+- Oriented sign compatibility closeout: in an admitted oriented C3 frame,
+  `delta_oriented=-coeff_g(S_Q1)=+2/9`; the physical orientation remains
+  load-bearing.
 
 ## Not Used
 

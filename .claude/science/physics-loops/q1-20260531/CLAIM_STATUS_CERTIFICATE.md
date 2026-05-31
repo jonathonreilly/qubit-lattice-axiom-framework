@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
 conditional_surface_status: "strict onsite source-domain selection gives charged-lepton Q=2/3; independent odd orientation/basepoint would turn the Q1 APS/Brannen magnitude into a signed delta input"
 hypothetical_axiom_status: "would close the Brannen sign only if an independent signed selected-line orientation/basepoint primitive is added"
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The packet proves an exact coefficient bridge, an unlock map, a no-go for Q1-alone signed readout, a bottom-up zero-odd-component audit, and a gamma-sheet sign-source no-go; it does not close physical phase retention or physical source-domain selection."
+proposal_allowed_reason: "The packet proves an exact coefficient bridge, an unlock map, a no-go for Q1-alone signed readout, a bottom-up zero-odd-component audit, a gamma-sheet sign-source no-go, and conditional oriented-frame sign compatibility; it does not derive the physical orientation or physical source-domain selection."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -26,6 +26,7 @@ Allowed wording:
 - "Bottom-up C3 algebra puts Q1 in `span{e,g+g^2}` with zero projection onto `i(g-g^2)`."
 - "The source-oriented gamma sheet is invisible to the real diagonal-slot selected-line readout."
 - "The current oriented selected-line frame still gives `delta=+2/9`; the sign is underived from Q1/gamma, not proved wrong."
+- "In an admitted oriented C3 frame, Q1's negative offsite coefficient gives `delta_oriented=-coeff_g(S_Q1)=+2/9`."
 - "This is not dark-matter closure."
 
 Forbidden wording:
@@ -37,4 +38,5 @@ Forbidden wording:
 - "Q1 alone proves the physical charged-lepton source-domain law."
 - "The named C3 generator convention by itself proves the physical sign."
 - "The source-oriented gamma sheet by itself proves the physical sign."
+- "The oriented-frame compatibility by itself derives the physical orientation."
 - "All 2/9 routes are the same object."

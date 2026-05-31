@@ -16,5 +16,5 @@ Status:
 
 ```text
 Draft PR opened as https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442.
-Gamma sheet sign probe packaged on codex/q1-hunt-20260531.
+Oriented sign compatibility closeout packaged on codex/q1-hunt-20260531.
 ```

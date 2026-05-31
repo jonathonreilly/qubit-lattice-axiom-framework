@@ -69,6 +69,20 @@ diagonal slots of `exp(H)`, so the branch endpoints, amplitude slots, and
 `delta=+2/9` point are unchanged by `gamma -> -gamma`.  Gamma is therefore not
 the missing selected-line sign primitive.
 
+## Route C6: oriented-frame sign compatibility
+
+Status: conditional support.
+
+In an admitted oriented C3 frame, Q1 gives the right sign:
+
+```text
+delta_oriented = -coeff_g(S_Q1) = +2/9.
+```
+
+This prunes the wrong-sign worry.  It does not derive the physical orientation;
+it records that the remaining problem is exactly the orientation/basepoint
+theorem.
+
 ## Route D: future charge-two Majorana texture
 
 Status: hypothetical after activation.

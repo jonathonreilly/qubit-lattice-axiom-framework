@@ -21,7 +21,9 @@
    The bottom-up sign audit narrows the target to an oriented C3 generator,
    selected-line endpoint, or equivalent odd primitive.  The source-oriented
    gamma sheet has now been tested and does not supply the sign because it is
-   invisible to the selected-line diagonal-slot readout.
+   invisible to the selected-line diagonal-slot readout.  The oriented-frame
+   compatibility closeout shows the current sign is right once that frame is
+   admitted: `delta_oriented=-coeff_g(S_Q1)=+2/9`.
 
 3. Sharpen the Q1/RHN no-go:
 

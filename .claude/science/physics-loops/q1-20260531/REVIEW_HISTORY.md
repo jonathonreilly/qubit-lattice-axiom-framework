@@ -10,4 +10,5 @@ Pre-review local verification:
 - The unlock-map/orientation-gate runner exits 0.
 - The bottom-up sign/orientation audit runner exits 0.
 - The gamma sheet sign probe runner exits 0.
-- `python3 -m py_compile` exits 0 on all eleven new scripts.
+- The oriented sign compatibility closeout runner exits 0.
+- `python3 -m py_compile` exits 0 on all twelve new scripts.

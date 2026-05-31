@@ -9,4 +9,5 @@ Pre-review local verification:
 - The signed selected-line readout no-go runner exits 0.
 - The unlock-map/orientation-gate runner exits 0.
 - The bottom-up sign/orientation audit runner exits 0.
-- `python3 -m py_compile` exits 0 on all ten new scripts.
+- The gamma sheet sign probe runner exits 0.
+- `python3 -m py_compile` exits 0 on all eleven new scripts.

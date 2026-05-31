@@ -12,6 +12,8 @@ Delivered artifacts:
 - Unlock-map note answering what lands if the Q1 packet lands.
 - One bottom-up sign/orientation audit runner.
 - Bottom-up sign note proving Q1 has zero component on the odd sign line.
+- One gamma sheet sign probe runner.
+- Gamma sheet note pruning source-oriented `gamma` as the missing sign source.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

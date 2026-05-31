@@ -20,6 +20,10 @@ What to use:
   selected-line scalar/point bridge.
 - The bottom-up sign audit confirms Q1 generates only `span{e,g+g^2}` and has
   zero projection onto the signed phase line `i(g-g^2)`.
+- The gamma sheet sign probe prunes the next tempting source-oriented route:
+  `gamma -> -gamma` complex-conjugates the carrier but leaves the real
+  diagonal-slot selected-line readout, branch endpoints, and `+2/9` point
+  unchanged.
 
 What not to use:
 
@@ -27,6 +31,7 @@ What not to use:
 - Do not cite this as retained `Q=2/3` closure.
 - Do not cite this as `delta = eta_APS`.
 - Do not cite Q1 as fixing the sign of `delta`.
+- Do not cite the source-oriented `gamma` sheet as fixing the sign of `delta`.
 - Do not cite the named C3 generator convention as a physical sign theorem.
 - Do not merge the APS, anomaly, Brannen, and offsite matrix coefficient into
   full physical phase closure without a signed selected-line readout theorem.
@@ -34,5 +39,5 @@ What not to use:
 Best next theorem:
 
 ```text
-derive_oriented_C3_generator_as_physical_selected_line_endpoint_or_source_domain_Z_erasure
+derive_physical_selected_line_slot_orientation_or_source_domain_Z_erasure
 ```

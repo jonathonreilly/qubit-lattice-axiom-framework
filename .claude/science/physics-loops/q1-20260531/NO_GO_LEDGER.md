@@ -65,3 +65,21 @@ Q1 generates only `span{e,g+g^2}`.  The selected-line sign lives on the odd
 line `span{J}`.  The projection is exactly zero, and the mirror selected-line
 spectra at `+delta` and `-delta` are degenerate unless a based orientation is
 supplied.
+
+## Source-oriented gamma sheet as selected-line sign
+
+Runner: `scripts/frontier_koide_q1_gamma_sheet_sign_probe.py`
+
+Status: exact candidate-pruning no-go.
+
+The fixed imaginary slot has real algebraic content, but it is not the missing
+selected-line sign for the current bridge.  Gamma reversal obeys
+
+```text
+H(m,-gamma) = conjugate(H(m,+gamma)),
+```
+
+and the selected-line bridge reads only real diagonal slots of `exp(H)`.
+Therefore the selected-line amplitude, branch endpoints, and `delta=+2/9`
+point are invariant under `gamma -> -gamma`.  The sign still lives in the
+oriented slot/Fourier frame or a based endpoint/source primitive.

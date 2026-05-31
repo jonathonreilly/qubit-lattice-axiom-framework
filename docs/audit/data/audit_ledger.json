@@ -43569,22 +43569,42 @@
       "verdict_rationale": "The load-bearing derivation is class A finite-dimensional algebra over an assumed positive Hermitian transfer operator with a nonzero spectral gap. The runner source genuinely samples finite positive Hermitian matrices and checks the stated identities, inequalities, thermal error term, and no-gap counterexample; it does not hard-code a contested physical gap. However, H1 and H2 are explicit open inputs not supplied by a retained one-hop authority, so the canonical-Hamiltonian spatial clustering bridge remains conditional."
     },
     "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T15:31:15.182256+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}."
+        },
+        "dep_claim_type": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2042403c3cd95bf6fd704a68a9ab6bd685a3ee68b6aa229953927a5e894ddf6c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-152932-18aeb0a5-cmw_2d_sublattice_no_ssb",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The provided cited authority no longer contains MW1 as a no-SSB theorem; it is only a retained_bounded IR-sum threshold packet. The missing step is the Ward/commutator-normalized Bogoliubov/CMW bridge from divergent I_d to vanishing continuous-symmetry order parameter.",
       "claim_id": "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "No finite-temperature continuous-symmetry SSB on coordinate-aligned Z^1 or Z^2 sublattices of the framework's Z^3, as derived from the one-hop CMW authority.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T15:31:15.182256+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -43592,34 +43612,36 @@
         "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By the cited CMW theorem MW1, any translation-invariant Hermitian Hamiltonian in d <= 2 with continuous global symmetry has vanishing order parameter at finite T; since the line and plane sublattices have d = 1 and d = 2, MW1 applies directly.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "2c9941c59706fed85ca658652a20ce88bec1df65599a972603b15793ff474848",
       "note_path": "docs/CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained or accepted one-hop theorem establishing the Ward/commutator-normalized Bogoliubov/CMW implication from divergent I_d to vanishing order parameter; also fix the runner's I3 Watson-normalization comment before re-audit.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/cmw_2d_sublattice_no_ssb_check.py",
       "title": "No SSB of Continuous Global Symmetry on Z\u00b2/Z\u00b9 Sublattices of Z\u00b3 at Finite T",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note's decisive citation to MW1 does not match the provided authority: the repaired authority explicitly lists no continuous SSB and the Ward/commutator normalization as non-claims. The runner genuinely computes the d=1,2,3 lattice IR-sum scaling, but Test 5 assumes the Bogoliubov inequality/order-parameter extraction instead of deriving or sourcing it. Formula inventory also finds runner-source normalization drift: under E_k = 2 sum_mu(1 - cos k_mu), the 3D Watson-limit convention is half of the commented approximately 0.505 value, though that comment is not the headline proof."
     },
     "coarse_grained_exterior_law_helper_note_2026-04-14": {
       "audit_date": "2026-05-25T11:09:01.163891+00:00",

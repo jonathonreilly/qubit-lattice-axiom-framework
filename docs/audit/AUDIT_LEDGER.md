@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 624 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1179 |
+| unaudited | 1178 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 964 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1417 |
+| `unaudited` | 1416 |
 
 | claim_type | count |
 |---|---:|
@@ -1105,6 +1105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3277,6 +3278,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The estimate (S.14) bounds the excited-eigenstate sum by (lambda_1/M_x)^d ||A_p|| ||B_q|| = exp(-d Delta_x) ||A_p|| ||B_q||, with the finite-temperature bound then following by trace-distance control.  _(class `A`)_
 - **chain closes:** True — Given H1 and H2, the spectral decomposition, Cauchy-Schwarz step, and trace-distance estimate close the stated finite-block bounds. The packet does not construct T_x from the canonical Hamiltonian or prove Delta_x > 0, so no unconditional spatial clustering claim closes.
 - **rationale:** The load-bearing derivation is class A finite-dimensional algebra over an assumed positive Hermitian transfer operator with a nonzero spectral gap. The runner source genuinely samples finite positive Hermitian matrices and checks the stated identities, inequalities, thermal error term, and no-gap counterexample; it does not hard-code a contested physical gap. However, H1 and H2 are explicit open inputs not supplied by a retained one-hop authority, so the canonical-Hamiltonian spatial clustering bridge remains conditional.
+- **auditor confidence:** high
+
+### `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02`
+
+- **Note:** [`CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md`](../../docs/CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** No finite-temperature continuous-symmetry SSB on coordinate-aligned Z^1 or Z^2 sublattices of the framework's Z^3, as derived from the one-hop CMW authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-152932-18aeb0a5-cmw_2d_sublattice_no_ssb`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the cited CMW theorem MW1, any translation-invariant Hermitian Hamiltonian in d <= 2 with continuous global symmetry has vanishing order parameter at finite T; since the line and plane sublattices have d = 1 and d = 2, MW1 applies directly.  _(class `B`)_
+- **chain closes:** False — The provided cited authority no longer contains MW1 as a no-SSB theorem; it is only a retained_bounded IR-sum threshold packet. The missing step is the Ward/commutator-normalized Bogoliubov/CMW bridge from divergent I_d to vanishing continuous-symmetry order parameter.
+- **rationale:** The source note's decisive citation to MW1 does not match the provided authority: the repaired authority explicitly lists no continuous SSB and the Ward/commutator normalization as non-claims. The runner genuinely computes the d=1,2,3 lattice IR-sum scaling, but Test 5 assumes the Bogoliubov inequality/order-parameter extraction instead of deriving or sourcing it. Formula inventory also finds runner-source normalization drift: under E_k = 2 sum_mu(1 - cos k_mu), the 3D Watson-limit convention is half of the commented approximately 0.505 value, though that comment is not the headline proof.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `coarse_grained_exterior_law_helper_note_2026-04-14`

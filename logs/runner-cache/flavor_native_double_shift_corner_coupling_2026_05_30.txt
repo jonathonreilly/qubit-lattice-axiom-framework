@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py
+runner_sha256: 0e454bbf2f2344cf196ae2000c5d0c45521e938b744337bca00e6a0653ed79e5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+[PASS] single shifts project to zero on hw=1
+[PASS] sum of double shifts projects to J-I
+       projection=
+[[0. 1. 1.]
+ [1. 0. 1.]
+ [1. 1. 0.]]
+[PASS] spectrum of aI+b(J-I) is {a+2b,a-b,a-b}
+       eig=[0.9 0.9 2.1], expected=[0.9 0.9 2.1]
+[PASS] Q formula and Q=2/3 iff (b/a)^2=1/2
+SCORECARD PASS=4 FAIL=0
+
+----- stderr -----
+

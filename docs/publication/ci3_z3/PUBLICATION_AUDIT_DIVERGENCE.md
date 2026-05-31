@@ -19,15 +19,15 @@ publication tables phrase it.
 |---|---|---:|
 | high | `unaudited` | 172 |
 | critical | `unaudited` | 155 |
-| medium | `unaudited` | 93 |
+| medium | `unaudited` | 92 |
 | high | `audited_numerical_match` | 4 |
 | critical | `open_gate` | 3 |
 | high | `audited_renaming` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 2 |
+| medium | `audited_conditional` | 2 |
 | critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
-| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
@@ -466,7 +466,7 @@ publication tables phrase it.
 | medium | `universal_gr_casimir_block_localization_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `universal_qg_continuum_bridge_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | medium | `up_sector_partition_revisit_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
-| medium | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `work_history.ckm.cabibbo_bound_note` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md |
 | medium | `work_history.ckm.jarlskog_phase_bound_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_axiom_first_microscopic_bridge_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

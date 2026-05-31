@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 629 |
+| **retained_bounded** | 630 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1165 |
+| unaudited | 1164 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 970 |
+| `audited_clean` | 971 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1403 |
+| `unaudited` | 1402 |
 
 | claim_type | count |
 |---|---:|
@@ -545,6 +545,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7801,6 +7802,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given the supplied Bogomolny/self-duality normalization, setting F = *F and Q = 1 saturates S[A] >= (8 pi^2/g^2)|Q|, hence S_inst = 8 pi^2/g^2.  _(class `A`)_
 - **chain closes:** True — The conclusion is a direct algebraic substitution into the supplied retained-bounded Bogomolny normalization. The displayed component normalization Q = (1/(32 pi^2)) int Tr(F_mu nu *F^mu nu) and S = (1/(4g^2)) int Tr(F_mu nu F^mu nu) give S = 8 pi^2 Q/g^2 under self-duality, so Q = 1 closes the claim.
 - **rationale:** The load-bearing step is class A algebra over fixed standard normalizations and the one-hop cited authority is retained_bounded. The note explicitly narrows away Atiyah-Singer integrality, BPST existence, Luescher lattice topology, framework substrate identification, and hierarchy/scale-ratio claims, so no hidden external bridge is needed for the audited scope. The runner source performs the symbolic specialization, arithmetic evaluations, saturation identity, and boundary text checks rather than merely printing a pass line.
+- **auditor confidence:** high
+
+### `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the repo-baseline one-qubit Pauli realization, the per-site Pauli su(2) generators S_i = sigma_i/2 and the Clifford/Spin(3) infinitesimal generator data coincide operator-level, with proper cubic rotations checked by SU(2) conjugation and improper cubic actions treated only as real Clifford signed-generator actions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-161414-ea58abfa-internal_external_su2_me`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the canonical Pauli realization gamma_i = sigma_i on H_x = C^2, the Clifford bivectors B_i = (1/2) gamma_j gamma_k equal i S_i with S_i = sigma_i/2, and the same S_i are the Hermitian infinitesimal generators of the checked Spin(3) conjugation action.  _(class `A`)_
+- **chain closes:** True — The accepted A1 qubit premise supplies the local M_2(C)/Cl(3,0) Pauli algebra, and retained inputs supply the Pauli realization and per-site S_i = sigma_i/2 action. Exact Pauli multiplication gives B_i = i S_i and the commutators, while the runner verifies the stated cubic Spin(3) lift and infinitesimal generator convention without importing external comparators.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade Pauli/qubit inputs, not a definition substitution or symbol renaming. The runner source constructs the Pauli matrices, signed-permutation rotations, cofactor action, and SU(2) lifts, then asserts exact sympy identities; it does not merely print constants or read a contested premise. The clean scope remains bounded to the canonical Pauli realization and standard Clifford/Spin conventions stated in the note.
 - **auditor confidence:** high
 
 ### `inverse_problem_note`

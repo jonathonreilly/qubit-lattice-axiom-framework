@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 178 |
-| **retained_bounded** | 624 |
+| **retained_bounded** | 625 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1175 |
+| unaudited | 1174 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 964 |
+| `audited_clean` | 965 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1413 |
+| `unaudited` | 1412 |
 
 | claim_type | count |
 |---|---:|
@@ -362,6 +362,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `evolving_network_prototype_v4_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v5_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v6_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_current_traceless_generator_selector_no_go_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -4881,6 +4882,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** Five-judge panel majority 4/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is exact class-A representation algebra over the retained SU(3)/N_c = 3 input, with no external comparator and no tuned numerical input. The runner checks real SU(N) generator normalization, Fierz completeness, dimension counting, and citation hygiene, but it does not turn the algebraic corollary into an independent physical theorem. Under the rubric's clean-vs-decoration tie-break, the closed content is decoration of the retained SU(3) parent, while the matching rule (M) remains explicitly outside the audit scope. | The scoped claim is exact class-A algebra: Fierz completeness and the 1 plus adjoint decomposition over the retained SU(3) color structure. There are no external comparators or tuned inputs, and the note explicitly excludes the matching rule (M), so the physical 9/8 EW correction is not closed here. Under the tie-break rule, because the closed content reduces to standard mathematics applied to a single retained SU(3) parent, the proper terminal tuple is decoration rather than an independent positive-theorem clean result. | The load-bearing step is a standard algebraic representation-dimension identity over the retained SU(3) parent, with no external comparator and no tuned numerical input. The runner checks real SU(N) algebra, Fierz completeness, and the exact Fraction(8,9), but it does not make this an independent physical theorem. Because the note explicitly excludes deriving matching rule (M) and the closed content is only the algebraic channel fraction, the decoration verdict is the applicable tuple. | Both audits correctly identify the load-bearing step as class A and agree that the scoped channel-fraction claim closes while matching rule (M) remains outside the result. Under the rubric's tie-breaker, a zero-comparator algebraic corollary that reduces to retained SU(3) structure plus standard Fierz/representation algebra is decoration rather than a new positive theorem. The runner supports the algebra and citation hygiene but does not turn the standard dimension-count corollary into an independent first-principles computation.
 - **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** judicial_panel_majority
+
+### `ew_current_matching_ozi_suppression_theorem_note_2026-04-27`
+
+- **Note:** [`EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md`](../../docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is the conditional EW-current family K_EW(kappa_EW)=1/(8/9+kappa_EW/9) and the O(1/N_c^2) disconnected/connected size class for bounded kappa_EW, not a derivation of kappa_EW=0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-154103-0879641e-ew_current_matching_ozi_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For bounded kappa_EW, the disconnected part relative to the connected part is kappa_EW S / C = kappa_EW / (N_c^2 - 1) = O(1/N_c^2), with K_EW(kappa_EW)=1/(C+kappa_EW S).  _(class `A`)_
+- **chain closes:** True — The channel fractions C=(N_c^2-1)/N_c^2 and S=1/N_c^2 give the stated ratio and N_c=3 specializations by direct algebra. The cited no-go authority supports leaving kappa_EW unfixed, so the source note's bounded scope closes without importing the connected-trace selector.
+- **rationale:** All displayed quantitative identities in the source packet check under the note's own definitions: C+S=1, S/C=1/(N_c^2-1), K_EW(0)=9/8, and K_EW(1)=1 at N_c=3. The runner source performs exact Fraction arithmetic plus source-hygiene guardrails; it is not a first-principles computation, but that is sufficient for this algebraic bounded claim. Both cited authorities are retained-grade for the restricted use made here, and the note explicitly does not claim an unconditional 9/8 coefficient.
+- **auditor confidence:** high
 
 ### `ew_current_matching_rule_open_gate_note_2026-05-03`
 

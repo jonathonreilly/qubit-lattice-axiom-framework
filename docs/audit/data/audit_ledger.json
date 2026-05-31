@@ -53258,24 +53258,42 @@
       "verdict_rationale": null
     },
     "dimension_selection_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T13:41:35.119358+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "Runner-specific finite-k centroid-sign bridge for k=6.0, L_x=40, L_y=60, source at y_mid, mass offset +7, dimensions d=1..5, including the M=0 derivative and parent M=0.005 probe replay."
+        },
+        "dep_claim_type": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-133746-c4e87d9e-dimension_selection_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The centroid-sign part is supported by the cited bridge note, but the source note's displayed lower-bound table and criteria also include beta~1 and I_3 entries that are not computed by the supplied primary runner. The primary runner also dynamically imports scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, whose source is absent from the packet, so stdout alone cannot verify the imported finite-k computations.",
       "claim_id": "dimension_selection_note",
-      "claim_scope": null,
+      "claim_scope": "Finite-runner lower-bound support for d=1,2 failing and d=3,4,5 passing the stated runner criteria, with no unique-d=3 theorem or framework-baseline rewrite.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T13:41:35.119358+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -53283,19 +53301,19 @@
         "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 2.585,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The finite-k derivative bridge independently certifies the same sign transition for the runner's baseline centroid observable: d <= 2 negative/away and d >= 3 positive/toward.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d94575bf12ee22bf89e8a7f73a3feb3b6157915bff4dbdd31352038980f0e15e",
       "note_path": "docs/DIMENSION_SELECTION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the dynamically imported bridge runner source and add or expose a runner check for the beta, alpha, and I_3 table entries, or narrow the audited parent claim to sign-only lower-bound support.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -53466,18 +53484,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 2,
+        "B": 14,
+        "C": 10,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 26
       },
       "runner_path": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
       "title": "Dimension Selection Lower-Bound Finite-k Repair",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "The note is correctly narrowed away from the prior unique-dimension overclaim, and the cited authority is retained_bounded for the runner-specific centroid-sign transition. However, strict formula inventory catches displayed beta and I_3 quantitative entries in the parent note that are not independently checked by the supplied runner source or cited bridge. The visible runner verifies prose boundaries and sign replay only, with an opaque dynamic import for the bridge computation. This is a packet/runner-artifact gap rather than evidence that the sign table is false."
     },
     "dimension_selection_upper_bound_textbook_import_note_2026-05-17": {
       "audit_date": null,

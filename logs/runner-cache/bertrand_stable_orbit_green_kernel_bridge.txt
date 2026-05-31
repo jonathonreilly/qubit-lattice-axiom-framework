@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/bertrand_stable_orbit_green_kernel_bridge.py
+runner_sha256: 24f2a5fae4caf44e449268415b475455891034aa47be9906a3638e34f5ff221c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Bertrand stable-orbit Green-kernel bridge
+====================================================
+[PASS] r^(2-d) is radial-harmonic away from the source for checked d>=3 (max coefficient q(q+d-2) = 0.0e+00)
+[PASS] G_d(r)=1/((d-2)S_{d-1}) r^(2-d) has unit outward -grad flux (max flux residual = 2.2e-16)
+[PASS] Attractive Green potential has shape V(r)=-k/r^(d-2) for all checked d (max shape residual = 1.1e-13)
+[PASS] Effective-potential second derivative reduces to k(d-2)(4-d)/r_c^d (max direct-vs-reduced residual = 1.3e-15)
+[PASS] d=3 circular orbit is stable (sign=1)
+[PASS] d=4 circular orbit is marginal (sign=0)
+[PASS] all checked integer d>=5 circular orbits are unstable (signs=5:-1,6:-1,7:-1,8:-1,9:-1,10:-1,11:-1,12:-1)
+[PASS] Bridge scope excludes d=1 and d=2 logarithmic/one-dimensional cases (checked dims=3..12)
+====================================================
+SCORECARD: PASS=8  FAIL=0
+
+----- stderr -----
+

@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py
-runner_sha256: 951d31aaa6f71d63507e6c1fa803af91e11db12b81f72c50afff4f569230e82a
+runner_sha256: 76cf947533da1c2da511c54d9aa31f52b02df5c5fe88e36ee9f97605ea711ae7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.27
+elapsed_sec: 2.69
 status: ok
 ----- stdout -----
 ================================================================================================================
-GAUGE-VACUUM PLAQUETTE FULL-SLICE RIM-LIFT INTEGRAL IDENTIFICATION (SU(2) toy)
+GAUGE-VACUUM PLAQUETTE DISJOINT-RIM FUBINI SUPPORT (SU(2) toy)
 ================================================================================================================
 
 Wilson coupling beta                = 6.0
@@ -28,18 +28,22 @@ sample        Re Tr U           B(U)           F(U)            B*F         psi(U
   1         +0.691420   2.388375e+01   4.868277e+00   1.162727e+02   1.170498e+02        6.639e-03
   2         -0.046920   2.376884e+01   4.867750e+00   1.157008e+02   1.148116e+02        7.744e-03
 
-  [PASS] [SUPPORT] Upstream transfer theorem defines eta_beta(W) as the rim-induced boundary state on the edge slice
+  [PASS] [SUPPORT] Upstream transfer note is scoped to a finite witness packet, not the physical Wilson environment
   [PASS] [SUPPORT] Rim-lift note records the load-bearing rim integral identification
   [PASS] [SUPPORT] Rim-lift note records the compressed descendant eta = P_cls B
+  [PASS] [SUPPORT] Rim-lift note demotes to bounded support note rather than positive theorem
+  [PASS] [SUPPORT] Rim-lift note states the finite toy does not certify the physical SU(3) full-slice rim lift
+  [PASS] [SUPPORT] Rim-lift note explicitly leaves marked-holonomy W dependence open
+  [PASS] [SUPPORT] Rim-lift note states no retained bridge is introduced for open physical dependencies
   [PASS] [SUPPORT] Compressed-rim-uniqueness note records that the full slice lift B_beta(W) is the remaining open object
   [PASS] [THEOREM] Joint slice marginal factorises as rim integral times beyond-rim slice factor on all U samples (Fubini)
          max |psi(U) - B(U)*F(U)| / psi(U) = 7.744e-03  (tol = 1.0e-02)
   [PASS] [SUPPORT] Toy single-link slice: B(U) and F(U) variances are at MC precision (slice-link absorbed by Haar)
          std(B)/mean(B) = 0.004156, std(F)/mean(F) = 0.001831  (MC 5 sigma = 0.006455)
-  [PASS] [THEOREM] Rim integrand uses local Wilson action coupling beta/3 on the rim plaquette holonomies
+  [PASS] [THEOREM] Toy rim integrand uses local Wilson action coupling beta/3 on finite rim plaquette holonomies
          rim weight constructed as exp[(beta/3) (Re Tr V_r1 + Re Tr V_r2)] per the note's A^rim
 
-THEOREM PASS=2 SUPPORT=5 FAIL=0
+THEOREM PASS=2 SUPPORT=9 FAIL=0
 
 ----- stderr -----
 

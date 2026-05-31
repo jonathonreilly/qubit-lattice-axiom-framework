@@ -14,6 +14,10 @@ conjugate of H(+gamma), and the selected-line readout used by the existing
 bridge depends only on real diagonal entries of exp(H).  Those slots are
 gamma-sign invariant.
 
+This does not show that the selected-line sign is wrong.  In the admitted
+oriented selected-line frame, the target remains delta = +2/9.  The result is
+only that Q1 and gamma do not derive that orientation.
+
 No PDG masses, observed phases, fitted selectors, or abundance inputs are used.
 """
 
@@ -313,6 +317,9 @@ def main() -> int:
         print("GAMMA_CONJUGATION_LEAVES_SELECTED_LINE_READOUT_INVARIANT=TRUE")
         print("GAMMA_SIGN_SUPPLIES_DELTA_SIGN=FALSE")
         print("SIGNED_DELTA_FROM_Q1_OR_GAMMA_ALONE=FALSE")
+        print("CURRENT_ORIENTED_SELECTED_LINE_SIGN_PLUS=TRUE")
+        print("SIGN_WRONG_PROVEN=FALSE")
+        print("SIGN_UNDERIVED_FROM_Q1_OR_GAMMA=TRUE")
         print("ORIENTED_SLOT_FRAME_OR_BASED_ENDPOINT_REQUIRED=TRUE")
         print("DELTA_PLUS_2_OVER_9_IF_ORIENTED_FRAME_ADMITTED=TRUE")
         print("RETAINED_CHARGED_LEPTON_SIGN_CLOSURE=FALSE")

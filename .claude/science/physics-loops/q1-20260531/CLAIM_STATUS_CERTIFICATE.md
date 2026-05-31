@@ -25,6 +25,7 @@ Allowed wording:
 - "If an independent odd orientation/basepoint is proved, Q1 supplies the `2/9` APS/Brannen magnitude for a signed-delta bridge."
 - "Bottom-up C3 algebra puts Q1 in `span{e,g+g^2}` with zero projection onto `i(g-g^2)`."
 - "The source-oriented gamma sheet is invisible to the real diagonal-slot selected-line readout."
+- "The current oriented selected-line frame still gives `delta=+2/9`; the sign is underived from Q1/gamma, not proved wrong."
 - "This is not dark-matter closure."
 
 Forbidden wording:

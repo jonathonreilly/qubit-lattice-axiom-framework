@@ -24,6 +24,9 @@ What to use:
   `gamma -> -gamma` complex-conjugates the carrier but leaves the real
   diagonal-slot selected-line readout, branch endpoints, and `+2/9` point
   unchanged.
+- This does not prove the sign is wrong.  The current oriented selected-line
+  frame still gives `delta=+2/9`; the sign remains underived from Q1/gamma,
+  not contradicted.
 
 What not to use:
 

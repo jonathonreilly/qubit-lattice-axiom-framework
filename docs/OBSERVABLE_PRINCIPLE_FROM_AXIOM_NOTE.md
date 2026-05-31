@@ -20,11 +20,12 @@ normalization are explicit conventions/checks, not new axioms).
 **Headline (post-2026-05-25 narrowing):** *Given P1 (scalar observables
 are additive over independent subsystems) and P2 (the scalar bosonic
 generator is a continuous function of `|Z|` alone), the additive
-finite-algebra scalar generator is fixed up to the conventional
-normalization `W = c log|Z| + const`; with canonical `c = 1` and
-zero-source baseline, the runner-block generator is
-`W = log|det(D+J)|`, and its exact local source-derivative algebra is
-the in-scope theorem-grade content of this note.* Unconditional
+finite-algebra scalar generator class is fixed to `W = c log|Z|`.
+With canonical `c = 1` and zero-source baseline subtraction, the
+runner-block representative is
+`W = log|det(D+J)| - log|det D|`, and its exact local
+source-derivative algebra is the in-scope theorem-grade content of
+this note.* Unconditional
 axiom-to-observable closure (i.e. derivation of P1 or P2 from retained
 primitives) is explicitly **out of scope** and is not asserted here.
 **Claim scope (post-2026-05-07 scope narrowing; further narrowed
@@ -38,8 +39,10 @@ conditional on the P1+P2 admitted scalar-selection surface:
 > `c = 1` generator normalization and zero-source baseline fixed
 > conventionally,
 > the following exact lattice-algebra identities hold on the exact minimal
-> hierarchy block: (1) the unique additive CPT-even scalar generator is
-> `W = log|det(D+J)|`; (2) local scalar observables are exact source
+> hierarchy block: (1) the unique continuous additive CPT-even scalar
+> generator class is `W_c = c log|det(D+J)|`, with canonical
+> zero-source-subtracted representative `W = log|det(D+J)| - log|det D|`;
+> (2) local scalar observables are exact source
 > derivatives of `W`; (3) the closed-form Matsubara identity matches
 > `W(j)` to the exact hierarchy curvature kernel; (4) that kernel is
 > Klein-four invariant and selects `L_t = 4` as the unique minimal
@@ -166,12 +169,19 @@ multiplicative-to-additive functional equation
 
 `W(r_1 r_2) = W(r_1) + W(r_2)`, with `r_i = |Z_i| > 0`.
 
-Using the continuity included in P2, the unique solution is
+Using the continuity included in P2, the unique solution class is
 
-`W = c log |Z| + const`.
+`W(r) = c log r`.
 
-After fixing normalization and subtracting the zero-source baseline, the
-framework-native scalar generator is therefore
+There is no independent universal additive constant in the exact
+multiplicative-to-additive equation: setting `r_1 = r_2 = 1` forces
+`W(1) = 0`, and inserting a global `+ C` gives
+`W(r_1 r_2) - W(r_1) - W(r_2) = -C`. The additive term used below is
+therefore not a new solution of the functional equation. It is the
+sector-relative zero-source baseline subtraction, which is additive
+because determinants factorize over direct sums. After fixing
+normalization and subtracting that baseline, the framework-native scalar
+generator representative is
 
 `W[J] = log |det(D+J)| - log |det D|`.
 
@@ -306,8 +316,9 @@ It is now:
 > source-response coefficients of the selected additive amplitude
 > generator.
 
-That generator is `log|det(D+J)|`, and its exact local curvature is the
-hierarchy normalization surface — under the conditional scope. P1 and P2
+That zero-source-subtracted generator is
+`log|det(D+J)| - log|det D|`, and its exact local curvature is the
+hierarchy normalization surface under the conditional scope. P1 and P2
 remain admitted; this note does not derive them.
 
 ## Honest status
@@ -476,7 +487,9 @@ of `D`. Therefore:
   neighborhood of the origin and the multiplicative-to-additive
   functional equation has a real-analytic (hence continuous) `W`
   satisfying it. Cauchy's functional-equation uniqueness theorem
-  then forces `W = c log r + const`.
+  then forces `W(r) = c log r` on `R_+`; any additive offset is a
+  separate baseline convention, not part of the exact functional-equation
+  solution.
 
 The runner's Part 7 verifies `D` is invertible on the staggered block and
 that the small-`j` Taylor ratio `W(j) / j^2` converges to the exact
@@ -489,16 +502,18 @@ the P2 scalar-generator selection premise into a theorem.
 ### P4 consistency check (canonical generator normalization and zero-source baseline)
 
 The functional equation `W(r_1 r_2) = W(r_1) + W(r_2)` with continuous
-`W: R_+ -> R` has solution `W(r) = c log r + const`. The two free
-parameters (overall scale `c` and additive constant) are not fixed by
-P1+P2 alone; they are fixed here by the source-generator convention:
+`W: R_+ -> R` has solution `W(r) = c log r`; a universal additive
+constant is not allowed by the exact equation. The overall scale `c`
+is not fixed by P1+P2 alone. The zero-source baseline offset below is
+a separate sector-relative convention, fixed here by the
+source-generator convention:
 
 - `c = 1` (canonical natural log, since `W` is consumed as a real
   scalar generator without dimensional rescaling on the runner block);
-- additive constant `= - log|det D|` (zero-source baseline subtraction),
+- zero-source baseline subtraction `= - log|det D|`,
   enforcing `W(0) = 0`.
 
-Both are conventional choices. The additive constant does **not**
+Both are conventional choices. The baseline subtraction does **not**
 propagate to local source-derivative observables: any additive shift
 `C` gives `W_alt = W + C` and `d/dj W_alt = d/dj W` exactly. The
 runner's Part 7 verifies this additive-shift invariance for the
@@ -514,8 +529,8 @@ algebraic-structural content is invariant under `W -> c W` rescaling:
 
 - **Theorem 1 (selected generator family).** Under P1+P2 the unique
   continuous additive phase-blind solution is a one-parameter family
-  `{W_c = c · log|det(D+J)| + const : c > 0}`. The choice `c = 1`
-  picks one representative of that family; any other `c > 0`
+  `{W_c = c · log|det(D+J)| : c > 0}` before baseline subtraction.
+  The choice `c = 1` picks one representative of that family; any other `c > 0`
   representative satisfies the same selection and the same `P1+P2`
   identities, modulo a global scale on source derivatives. Theorem 1
   in §"Claim scope" should therefore be read as fixing the
@@ -608,7 +623,8 @@ automatically satisfies P1 (via trace-tensor factorization on disjoint
 qubit regions) and the phase-positive side of P2 (because `Z[J]` is
 manifestly real-positive for self-adjoint `H + J`). When that note
 becomes retained-grade, transferring the retirement back to this
-note's `W = log|det(D+J)|` formulation remains conditional on the
+note's zero-source-subtracted `W = log|det(D+J)| - log|det D|`
+formulation remains conditional on the
 admitted Grassmann / Berezin bridge between the qubit-trace and
 Grassmann-determinant surfaces, per the qubit-trace note's own scope.
 This cross-reference is informational only and does **not** promote
@@ -664,8 +680,10 @@ enter this note only as admitted-context:
 
 Conditional in-scope content of this note is the axiom-to-observable
 map given the admitted scalar-selection premises: Grassmann
-factorization -> unique additive CPT-even `W = log|det(D+J)|` -> local
-source-derivative formulas -> Matsubara closed-form identity ->
+factorization -> unique additive CPT-even generator class with
+zero-source-subtracted representative
+`W_c[J] = c (log|det(D+J)| - log|det D|)` -> local source-derivative
+formulas -> Matsubara closed-form identity ->
 Klein-four invariance and `L_t = 4` selector. The hierarchy
 normalization surface match (Theorem 3) and the physical numerical `v`
 readout depend on the admitted upstreams named above.

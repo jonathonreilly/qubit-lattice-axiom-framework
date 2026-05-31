@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py
-runner_sha256: 46da5746b1f51a4dfc50808f94241f83e36acd8c1b14c38e25999489c889f778
+runner_sha256: f2241f25d80abc5e55b50377136d46b5e09be070f619a580d1939d3e6b333d8c
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.42
@@ -16,28 +16,28 @@ Goal: sympy verification of 4 - 1 - 1 = 2 rank arithmetic
 ----------------------------------------------------------------------------------------
 Part 1 (R1-R4): rank arithmetic on the polarization quotient
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (R1) Lorentz-vector eps_mu has 4 complex components on C^4  (shape = (4, 1))
+  [PASS (A)] (R1) Lorentz-vector eps^mu has 4 complex components on C^4  (shape = (4, 1))
   [PASS (A)] (R2a) Lorenz-gauge constraint matrix has shape (1, 4)
   [PASS (A)] (R2b) Constraint rank = 1 at canonical null k^mu = (k_z, 0, 0, k_z)  (rank = 1)
-  [PASS (A)] (R3a) Residual gauge orbit shift direction k_mu has rank 1  (rank = 1)
-  [PASS (A)] (R3b) k^mu k_mu = 0 on null shell (residual gauge preserves slice)  (k^2 = 0)
+  [PASS (A)] (R3a) Residual gauge orbit shift direction k^mu has rank 1  (rank = 1)
+  [PASS (A)] (R3b) constraint row times shift direction = k_mu k^mu = 0  (row*k = 0)
   [PASS (A)] (R4) Quotient dimension = 4 - 1 - 1 = 2  (4 - 1 - 1 = 2)
 
 ----------------------------------------------------------------------------------------
 Part 2 (R5): explicit transverse basis at canonical null k^mu
 ----------------------------------------------------------------------------------------
   [PASS (A)] (R5a) Constraint at canonical k^mu: omega*(e0 - e3) = 0 (i.e. e0 = e3)  (constraint = omega*(e0 - e3))
-  [PASS (A)] (R5b) eps_1^mu = (0, 1, 0, 0) satisfies k^mu eps_mu = 0  (constraint(eps_1) = 0)
-  [PASS (A)] (R5c) eps_2^mu = (0, 0, 1, 0) satisfies k^mu eps_mu = 0  (constraint(eps_2) = 0)
+  [PASS (A)] (R5b) eps_1^mu = (0, 1, 0, 0) satisfies k_mu eps^mu = 0  (constraint(eps_1) = 0)
+  [PASS (A)] (R5c) eps_2^mu = (0, 0, 1, 0) satisfies k_mu eps^mu = 0  (constraint(eps_2) = 0)
   [PASS (A)] (R5d) eps_1, eps_2 linearly independent (rank 2)  (rank = 2)
-  [PASS (A)] (R5e) eps_1 not parallel to k_mu (rank-2 with k_mu)
-  [PASS (A)] (R5f) eps_2 not parallel to k_mu (rank-2 with k_mu)
+  [PASS (A)] (R5e) eps_1 not parallel to k^mu (rank-2 with k^mu)
+  [PASS (A)] (R5f) eps_2 not parallel to k^mu (rank-2 with k^mu)
 
 ----------------------------------------------------------------------------------------
 Part 3 (R6): helicity basis epsilon_pm = (eps_1 +- i eps_2)/sqrt(2)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (R6a) Helicity-(+1) polarization satisfies k^mu eps_+ = 0
-  [PASS (A)] (R6b) Helicity-(-1) polarization satisfies k^mu eps_- = 0
+  [PASS (A)] (R6a) Helicity-(+1) polarization satisfies k_mu eps_+^mu = 0
+  [PASS (A)] (R6b) Helicity-(-1) polarization satisfies k_mu eps_-^mu = 0
   [PASS (A)] (R6c) Helicity-(+1) Hermitian norm-squared = 1  (|eps_+|^2 = 1)
   [PASS (A)] (R6d) R_z(theta) eps_+ acts as U(1) phase: e1 component (active rot)
   [PASS (A)] (R6e) R_z(theta) eps_+ acts as U(1) phase: e2 component (active rot)
@@ -93,10 +93,10 @@ Part 6 (R9): note structure and forbidden-import scan
 Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision:
-    (R1) Lorentz-vector eps_mu on C^4 has 4 components.
-    (R2) Lorenz-gauge constraint k^mu eps_mu = 0 has rank 1.
-    (R3) Residual gauge orbit eps_mu ~ eps_mu + c k_mu has rank 1;
-         k_mu lies in the constraint kernel on the null shell.
+    (R1) Lorentz-vector eps^mu on C^4 has 4 components.
+    (R2) Lorenz-gauge constraint k_mu eps^mu = 0 has rank 1.
+    (R3) Residual gauge orbit eps^mu ~ eps^mu + c k^mu has rank 1;
+         k^mu lies in the constraint kernel on the null shell.
     (R4) Quotient dim = 4 - 1 - 1 = 2 polarizations per momentum.
     (R5) Explicit transverse basis (0,1,0,0), (0,0,1,0) at k^mu =
          (omega, 0, 0, omega).

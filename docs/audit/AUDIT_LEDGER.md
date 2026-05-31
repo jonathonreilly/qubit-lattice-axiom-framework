@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 614 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1205 |
+| unaudited | 1204 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 18 |
+| ~~audited_conditional~~ | 19 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 951 |
-| `audited_conditional` | 18 |
+| `audited_conditional` | 19 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1443 |
+| `unaudited` | 1442 |
 
 | claim_type | count |
 |---|---:|
@@ -1093,6 +1093,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `continuum_identification_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6134,6 +6135,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner computes rho_(p,q)(6) = c_(p,q)(6)/(d_(p,q)c_(0,0)(6)) from the Schur-Weyl Bessel-determinant formula and inserts those computed values as the diagonal R_6^packet in exp(3J) D_6^loc R_6^packet exp(3J), replacing the prior witness.  _(class `C`)_
 - **chain closes:** True — For the narrowed finite packet, the runner source genuinely computes the coefficient table and then verifies the stated finite diagonal action, symmetry, positivity, and Perron-readout checks. The actual residual spatial-environment identification is not audited because the note explicitly excludes it from the claim scope.
 - **rationale:** Within the bounded scope, the load-bearing coefficient packet is computed in the runner rather than hard-coded or imported from the retired witness. The matrix checks then close over those computed coefficients and retained bounded upstream coefficient authority. The broader equality between the stripped residual source-sector operator and the compressed unmarked spatial Wilson environment remains open, but that equality is explicitly outside this narrowed claim.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a fixed finite retained marked class sector with known compressed boundary evaluations, N samples with invertible Peter-Weyl evaluation matrix recover the N retained coefficients exactly, while fewer unconstrained samples leave a kernel.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-000135-1705b885-gauge_vacuum_plaquette_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Whenever the chosen marked holonomies make the evaluation matrix E invertible, the retained coefficient vector is recovered exactly by c = E^(-1) Z.  _(class `A`)_
+- **chain closes:** True — The retained-bounded evaluation authority supplies Z(W)=sum_lambda d_lambda c_lambda chi_lambda(W), and the inversion/underdetermination claims follow by finite-dimensional linear algebra. The runner artifact issue affects the submitted verification certificate, not the mathematical implication.
+- **rationale:** The finite inversion theorem itself is an algebraic consequence of the retained compressed boundary law: full-rank E gives c=E^(-1)Z, and m<N leaves a nontrivial nullspace. The cited scientific authorities are retained-grade for the restricted retained-sector surface. However the runner certificate in the packet is stale or inconsistent: the runner source checks for the exact scalar-note phrase "one scalar framework-point value does not determine the class-sector vector", which is absent from the supplied repaired scalar-value note, so the displayed SUPPORT=3/FAIL=0 summary is not reproduced from the restricted packet.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09`

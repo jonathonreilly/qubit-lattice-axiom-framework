@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py
+runner_sha256: d6bb2ff59a32b869fab288101cf997d5a5ee3d19f2bfbd08b707798e6c3c3768
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+
+========================================================================================
+Koide Q=2/3 = the K0-real / real-Wedderburn-block reading of A1+A2
+========================================================================================
+
+========================================================================================
+F1 — Frobenius-Schur fork: K0(R[Z3])=Z^2 (2 blocks) vs K0(C[Z3])=Z^3
+========================================================================================
+[PASS] F1.1 FS indicators (triv, omega, omega2) = (+1, 0, 0)
+       FS = {triv:1, omega:-0, omega2:0}
+[PASS] F1.2 K0-real rank 2 (R[Z3]=R(+)C, doublet=ONE real block) vs K0-complex rank 3
+       #real-irreducible blocks = 2 (-> Q=2/3 candidate); #complex blocks = 3 (-> Q=1)
+
+========================================================================================
+F2 — qubit pseudoscalar = i*I_2; on generations a SCALAR i*I_3 (not doublet J)
+========================================================================================
+[PASS] F2.1 Cl(3) pseudoscalar s1 s2 s3 = i*I_2 (forced on the qubit factor)
+       s1 s2 s3 = [0.+1.j 0.+1.j]
+[PASS] F2.2 central i on generations = i*I_3 (eigs all +i) != doublet J=diag(0,+i,-i) (= eig(Jcs)); so the qubit complexification does NOT supply the doublet measure
+       eig(i*I_3) = [0.+1.j 0.+1.j 0.+1.j]; eig(Jcs) = [0.-1.j 0.+1.j 0.+0.j] (doublet structure det_C uses)
+
+========================================================================================
+F3 — a qubit is a coherent-state/Bargmann object (resolution of identity)
+========================================================================================
+[PASS] F3.1 (2/4pi) integral |n><n| dOmega = I_2 (Bloch coherent-state completeness) -> the holomorphic/Bargmann reading counts each block ONCE -> per-block -> Q=2/3
+       (2/4pi) int |n><n| = [[(1+0j), (-0-0j)], [(-0+0j), (1-0j)]]
+
+========================================================================================
+F4 — equivalence: equal-block (K0-real) -> Q=2/3; dimension (K0-complex) -> Q=1
+========================================================================================
+[PASS] F4.1 equal block energy E_+=E_perp -> r=1/2 -> Q=2/3 (per-block, K0-real)
+       3a^2=6b^2 -> r=1/2 -> Q=2/3
+[PASS] F4.2 real circulant H=aI+bC+bC^2 at r=1/2: sum lam=3, sum lam^2=6, Q=2/3
+       eig=[0.29289 0.29289 2.41421], sum=3.00000, sum^2=6.00000, Q=0.666667
+[PASS] F4.3 dimension-weighted (doublet x2) -> r=1 -> Q=1 (per-dim, K0-complex)
+       r=1 -> Q=1
+
+========================================================================================
+F5 — C^3=I forbids U(1)_b SYMMETRY but not the Schur J for the det_C MEASURE
+========================================================================================
+[PASS] F5.1 (e^{i a}C)^3=I only at a in {0,120,240} deg (U(1)_b-as-SYMMETRY -> discrete C3)
+       valid alpha (deg) = [0, 120, 240]
+[PASS] F5.2 BUT the Schur complex structure Jcs in End_R(doublet)=C EXISTS (Jcs^2=-P_doublet) -> the det_C MEASURE is available; neither measure forced
+       C^3=I bites the SYMMETRY, not the measure (corrects the over-stated 'det_R is the default')
+
+========================================================================================
+SUMMARY
+========================================================================================
+  10/10 checks passed
+
+  Q=2/3  <=>  K0-real / real-Wedderburn-block / coherent-state count (2 blocks, each once)
+  Q=1    <=>  K0-complex / complex-dimension / trace-default count (3 modes)
+  the central qubit i is a GENERATION SCALAR (i*I_3) -> does NOT fix the choice;
+  the doublet measure is a FREE convention slot in A1+A2. Q=2/3 is the native
+  coherent-state reading of the qubit (arguably more faithful than the trace-default).
+  NOT uniquely forced (Q=1 is the rival trace reading); committing to det_C = the 1 import.
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

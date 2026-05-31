@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/backreaction_poisson_live_threshold_check.py
+runner_sha256: 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 27.94
+status: ok
+----- stdout -----
+========================================================================================
+POISSON SELF-GRAVITY LIVE THRESHOLD CHECK
+  current backreaction_poisson harness; finite G-grid only
+========================================================================================
+baseline external-field delta = +1.073461e-02 TOWARD
+      G iters         delta     dir    escape  f_self_max  converged
+----------------------------------------------------------------------------------------
+  0.000     2 +1.073461e-02  TOWARD    1.0461    0.000000       True
+  0.001     5 +1.091395e-02  TOWARD    1.0470    0.010000       True
+  0.005     6 +1.149967e-02  TOWARD    1.0498    0.050000       True
+  0.010    15 +1.234071e-02  TOWARD    1.0502    0.100000      False
+  0.011    15 +1.254950e-02  TOWARD    1.0500    0.110000      False
+  0.012     9 +1.236590e-02  TOWARD    1.0497    0.120000       True
+  0.020     9 +1.364420e-02  TOWARD    1.0442    0.200000       True
+  0.050    12 +1.419413e-02  TOWARD    0.9631    0.500000       True
+  0.100    15 +2.723267e-02  TOWARD    0.7547    1.000000      False
+
+SAFE READ
+  old G_crit ~= 0.011 table is not reproduced by the live harness
+  first sub-unit escape on this grid: G=0.05
+  TOWARD deflection is preserved through G=0.100 on this grid
+  finite bounded packet only: no continuum horizon or smooth threshold law
+  [PASS (C)] live finite threshold surface
+ASSERTIONS: PASS
+
+----- stderr -----
+

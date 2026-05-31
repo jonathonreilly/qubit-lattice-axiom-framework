@@ -27,6 +27,10 @@ What to use:
 - This does not prove the sign is wrong.  The current oriented selected-line
   frame still gives `delta=+2/9`; the sign remains underived from Q1/gamma,
   not contradicted.
+- The oriented-sign compatibility closeout records the positive conditional
+  result: in an oriented C3 frame, `delta_oriented=-coeff_g(S_Q1)=+2/9`.
+  The sign is right once the frame is admitted; the frame itself remains the
+  missing physical theorem.
 
 What not to use:
 
@@ -36,6 +40,8 @@ What not to use:
 - Do not cite Q1 as fixing the sign of `delta`.
 - Do not cite the source-oriented `gamma` sheet as fixing the sign of `delta`.
 - Do not cite the named C3 generator convention as a physical sign theorem.
+- Do not cite the oriented-frame compatibility as a physical orientation
+  derivation.
 - Do not merge the APS, anomaly, Brannen, and offsite matrix coefficient into
   full physical phase closure without a signed selected-line readout theorem.
 

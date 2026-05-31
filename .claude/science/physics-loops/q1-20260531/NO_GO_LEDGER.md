@@ -83,3 +83,18 @@ and the selected-line bridge reads only real diagonal slots of `exp(H)`.
 Therefore the selected-line amplitude, branch endpoints, and `delta=+2/9`
 point are invariant under `gamma -> -gamma`.  The sign still lives in the
 oriented slot/Fourier frame or a based endpoint/source primitive.
+
+## Wrong-sign interpretation
+
+Runner: `scripts/frontier_koide_q1_oriented_sign_compatibility_closeout.py`
+
+Status: pruned.
+
+The sign is not proved wrong.  In an admitted oriented C3 frame,
+
+```text
+delta_oriented = -coeff_g(S_Q1) = +2/9.
+```
+
+The correct remaining obstruction is underivation of the physical orientation,
+not a contradiction of the current `+2/9` selected-line sign.

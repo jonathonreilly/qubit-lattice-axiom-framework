@@ -10,7 +10,7 @@ notes for the mesoscopic-surrogate lane and answers one narrow question:
 The scout is looking for a family where localization might matter more than on
 the retained 3D h=0.5 family, without re-running a large parameter sweep.
 
-The answer is purely a bounded recommendation, not a new physics claim.
+The answer is a support/meta planning recommendation, not a theorem.
 """
 
 from __future__ import annotations
@@ -20,6 +20,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
+PASS = 0
+FAIL = 0
 
 
 @dataclass(frozen=True)
@@ -38,7 +40,23 @@ def has_all(text: str, needles: tuple[str, ...]) -> bool:
     return all(needle in text for needle in needles)
 
 
-def main() -> None:
+def check(label: str, ok: bool, detail: str = "") -> None:
+    global PASS, FAIL
+    if ok:
+        PASS += 1
+        status = "PASS"
+    else:
+        FAIL += 1
+        status = "FAIL"
+    print(f"  [{status}] {label}")
+    if detail:
+        print(f"         {detail}")
+
+
+def main() -> int:
+    note = read_text("docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md")
+    note_lower = note.lower()
+    note_flat = " ".join(note_lower.split())
     frontier = read_text("docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md").lower()
     sweep_3d = read_text("docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md").lower()
     threshold_2d = read_text("docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md").lower()
@@ -81,12 +99,36 @@ def main() -> None:
     print("           on the retained 3D h=0.5 family.")
     print("=" * 92)
     print()
+    print("Scope check")
+    check(
+        "source note declares support/meta scope, not bounded_theorem",
+        "**Type:** meta" in note
+        and "**Claim type:** meta" in note
+        and "**Type:** bounded_theorem" not in note
+        and "**Claim type:** bounded_theorem" not in note,
+    )
+    check(
+        "source note says the h=0.25 recommendation is not theorem content",
+        "planning recommendation, not theorem content" in note_lower
+        and "must not be cited as theorem content" in note_lower,
+    )
+    check(
+        "source note keeps context references non-load-bearing",
+        "context references for a planning index" in note_flat
+        and "not one-hop theorem dependencies for a retained claim" in note_flat,
+    )
+    print()
     print("Frozen evidence check")
-    print(f"  h=0.5 frontier closed? {'yes' if 'degenerate point-like localizations' in sweep_3d else 'no'}")
-    print(f"  2D threshold closed? {'yes' if 'every scanned' in threshold_2d and 'stayed stable' in threshold_2d else 'no'}")
-    print(f"  3D h=0.25 same-family closure present? {'yes' if 'h=0.25, w=10, l=12' in same_family_3d else 'no'}")
-    print(f"  3D h=0.25 asymptotic bridge present? {'yes' if 'z>=5: -1.00' in asymptotic else 'no'}")
-    print(f"  Persistent-mass readiness still open? {'yes' if 'not yet' in readiness else 'no'}")
+    h05_closed = "degenerate point-like localizations" in sweep_3d
+    threshold_closed = "every scanned" in threshold_2d and "stayed stable" in threshold_2d
+    h025_closure = "h=0.25" in same_family_3d and "w=10" in same_family_3d and "l=12" in same_family_3d
+    h025_bridge = "z>=5: -1.00" in asymptotic
+    readiness_open = "support/meta index" in readiness and "remains open" in readiness
+    check("h=0.5 frontier closed marker present", h05_closed)
+    check("2D support-threshold closed marker present", threshold_closed)
+    check("3D h=0.25 same-family closure marker present", h025_closure)
+    check("3D h=0.25 asymptotic bridge marker present", h025_bridge)
+    check("persistent-mass readiness remains open", readiness_open)
     print()
     print("Candidate ranking")
     for idx, fam in enumerate(families, 1):
@@ -119,7 +161,10 @@ def main() -> None:
     print(
         "  - 3D h=0.25 ordered-lattice family: already has same-family closure and the strongest retained asymptotic bridge."
     )
+    print()
+    print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")
+    return 0 if FAIL == 0 else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

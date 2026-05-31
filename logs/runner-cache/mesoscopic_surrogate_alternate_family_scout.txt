@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/mesoscopic_surrogate_alternate_family_scout.py
-runner_sha256: d66fad14ddb2ec7c77a8bbade1d3196c4c6d16be6f7b325f022b956084b1e574
+runner_sha256: 2145c69846c523f1c6bc67ad882434897a48f3d268794d4b16a05a5344207b7b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -13,12 +13,17 @@ MESOSCOPIC SURROGATE ALTERNATE-FAMILY SCOUT
            on the retained 3D h=0.5 family.
 ============================================================================================
 
+Scope check
+  [PASS] source note declares support/meta scope, not bounded_theorem
+  [PASS] source note says the h=0.25 recommendation is not theorem content
+  [PASS] source note keeps context references non-load-bearing
+
 Frozen evidence check
-  h=0.5 frontier closed? yes
-  2D threshold closed? yes
-  3D h=0.25 same-family closure present? yes
-  3D h=0.25 asymptotic bridge present? yes
-  Persistent-mass readiness still open? yes
+  [PASS] h=0.5 frontier closed marker present
+  [PASS] 2D support-threshold closed marker present
+  [PASS] 3D h=0.25 same-family closure marker present
+  [PASS] 3D h=0.25 asymptotic bridge marker present
+  [PASS] persistent-mass readiness remains open
 
 Candidate ranking
 1. 3D ordered-lattice h=0.5 localization frontier [closed]
@@ -40,6 +45,8 @@ Useful frozen context
   - 3D h=0.5 localization frontier: only degenerate point-like winners; topN remains least-bad.
   - 2D threshold control: no sharp support threshold across topN=1..81.
   - 3D h=0.25 ordered-lattice family: already has same-family closure and the strongest retained asymptotic bridge.
+
+SUMMARY: PASS=8 FAIL=0
 
 ----- stderr -----
 

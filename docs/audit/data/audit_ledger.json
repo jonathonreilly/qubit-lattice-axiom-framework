@@ -202834,24 +202834,44 @@
       "verdict_rationale": "Clean only under the narrowed bounded scope. The source and runner support a harness-parameterized check over BETA, K_PHYS, and PHYS_L while holding the NN three-edge geometry fixed. The runner's secondary h->0 geodesic-limit C_arm fit comparison fails for Points A and C by just over 10%, but the note marks that comparison as tracked-only and not part of the primary acceptance; the load-bearing primary per-h coherent comparison closes at <=2.44%, and c2_inf closes at <=0.279%. The FANOUT language is acceptable only as the fixed FANOUT=3 normalization inside the current geometry, because no fanout-varying topology is tested."
     },
     "no_per_site_bosonic_ccr_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T12:15:05.314564+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-tuple-guard-20260531-no_per_site_bosonic_ccr_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Axiom 1 authority is explicitly flagged as an accepted axiom premise and supplies A_x \u2245 M_2(C). The finite-dimensional trace identity then gives an immediate contradiction with [a,a\u2020] = I_2, so the narrowed per-site no-go closes.",
       "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "No exact bosonic CCR [a,a\u2020] = I_2 is realizable by bounded operators inside the Axiom 1 per-site algebra A_x \u2245 M_2(C).",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T12:15:05.314564+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -202859,19 +202879,19 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 6.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For any a,a\u2020 in A_x \u2245 M_2(C), tr([a,a\u2020]) = 0 by trace cyclicity, while [a,a\u2020] = I_2 would imply tr([a,a\u2020]) = tr(I_2) = 2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "0cec50cf8003b8de17eb4413c0d6126245e27b897e3c2ed1235c78b2026b4251",
       "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -203029,18 +203049,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 4,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
       "title": "No Per-Site Bosonic CCR in the One-Qubit Operator Algebra",
       "transitive_descendants": 47,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure: trace cyclicity in a finite-dimensional matrix algebra contradicts the identity trace required by the exact CCR. The one-hop upstream note is an accepted axiom premise, so its meta status does not trigger a dependency downgrade under the rubric. The source is scoped narrowly to exact single-site operators in M_2(C) and explicitly leaves collective, approximate, truncated, and infinite-dimensional bosonic constructions out of scope. The runner source includes a text firewall plus illustrative finite-matrix checks; it is not the proof by itself, but it is consistent with the note's algebraic argument."
     },
     "no_per_site_chirality_theorem_note_2026-05-02": {
       "audit_date": "2026-05-30T22:56:24.945533+00:00",
@@ -333627,8 +333647,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2509,
-    "re_audit_required": 2,
+    "preserved_existing": 2511,
+    "re_audit_required": 0,
     "row_count": 2555,
     "seeded_new": 0
   }

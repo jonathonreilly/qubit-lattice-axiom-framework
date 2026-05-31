@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 171 |
-| **retained_no_go** | 176 |
+| **retained_no_go** | 177 |
 | **retained_bounded** | 617 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1200 |
+| unaudited | 1199 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 955 |
+| `audited_clean` | 956 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1438 |
+| `unaudited` | 1437 |
 
 | claim_type | count |
 |---|---:|
@@ -702,6 +702,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -10011,6 +10012,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Both direct dependencies are retained_bounded. The runner re-derives the closed forms from explicit harness parameters, builds and propagates the lattice at the three alternate parameter points, measures sigma_arm and c2 directly, and compares those measurements against the parameterized formulas without importing publication framing or fitted target constants as hidden premises.
 - **rationale:** Clean only under the narrowed bounded scope. The source and runner support a harness-parameterized check over BETA, K_PHYS, and PHYS_L while holding the NN three-edge geometry fixed. The runner's secondary h->0 geodesic-limit C_arm fit comparison fails for Points A and C by just over 10%, but the note marks that comparison as tracked-only and not part of the primary acceptance; the load-bearing primary per-h coherent comparison closes at <=2.44%, and c2_inf closes at <=0.279%. The FANOUT language is acceptable only as the fixed FANOUT=3 normalization inside the current geometry, because no fanout-varying topology is tested.
 - **auditor confidence:** medium_high
+
+### `no_per_site_bosonic_ccr_theorem_note_2026-05-02`
+
+- **Note:** [`NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** No exact bosonic CCR [a,a†] = I_2 is realizable by bounded operators inside the Axiom 1 per-site algebra A_x ≅ M_2(C).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-tuple-guard-20260531-no_per_site_bosonic_ccr_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any a,a† in A_x ≅ M_2(C), tr([a,a†]) = 0 by trace cyclicity, while [a,a†] = I_2 would imply tr([a,a†]) = tr(I_2) = 2.  _(class `A`)_
+- **chain closes:** True — The cited Axiom 1 authority is explicitly flagged as an accepted axiom premise and supplies A_x ≅ M_2(C). The finite-dimensional trace identity then gives an immediate contradiction with [a,a†] = I_2, so the narrowed per-site no-go closes.
+- **rationale:** The load-bearing step is a genuine algebraic closure: trace cyclicity in a finite-dimensional matrix algebra contradicts the identity trace required by the exact CCR. The one-hop upstream note is an accepted axiom premise, so its meta status does not trigger a dependency downgrade under the rubric. The source is scoped narrowly to exact single-site operators in M_2(C) and explicitly leaves collective, approximate, truncated, and infinite-dimensional bosonic constructions out of scope. The runner source includes a text firewall plus illustrative finite-matrix checks; it is not the proof by itself, but it is consistent with the note's algebraic argument.
+- **auditor confidence:** high
 
 ### `no_per_site_chirality_theorem_note_2026-05-02`
 

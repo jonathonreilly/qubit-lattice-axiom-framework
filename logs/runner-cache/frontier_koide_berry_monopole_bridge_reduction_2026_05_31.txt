@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py
+runner_sha256: 8c7aa5d82976083b9d2b3ffba21f7133ab7fd094dbd9312c3895bbaeccdcab93
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+========================================================================================
+Koide Berry-monopole bridge-reduction: chiral mass -> Q=2/3, non-chiral -> Q=1
+========================================================================================
+
+========================================================================================
+F1 — index-map native: b = the C3-doublet Fourier amplitude of H
+========================================================================================
+[PASS] F1.1 the C3 DFT diagonalizes the shift C (F^dag C F = diag(1,w,w^2))
+       max off-diag = 1.2e-16
+[PASS] F1.2 Fourier-grade projection (1/3)Tr(C^-1 H) = b (the doublet amplitude); grade-0 = a (singlet)
+       grade1 = 0.300+0.200j = b; grade0 = 0.700+0.000j = a
+
+========================================================================================
+F2 — native circulant mass: Berry curvature = 0 (eigenvector rigidity) -> Q=1
+========================================================================================
+[PASS] F2.1 eigenvectors of H_circ(b) are the b-INDEPENDENT Fourier modes (eigenvector rigidity)
+       |<Fourier_k | eigvec_j>| = ['1.0000', '1.0000', '1.0000'] (all 1)
+[PASS] F2.2 Berry curvature of the filled band on the b-plane = 0 -> no first-order Berry term -> SECOND-order GL -> per-dim -> Q=1 (DERIVED)
+       plaquette Berry = ['-4.9e-32', '-9.9e-32'] (= 0)
+
+========================================================================================
+F3 — criterion: Gamma_chi-ANTICOMMUTING coupling -> nonzero Berry monopole
+========================================================================================
+[PASS] F3.1 the b-coupling sigma_x, sigma_y ANTICOMMUTE with Gamma_chi=sigma_z; the mass m sigma_z COMMUTES
+       {sx,sz}={sy,sz}=0 (chiral coupling); [sz,sz]=0 (commuting mass)
+[PASS] F3.2 chiral (Gamma_chi-anticommuting) coupling -> NONZERO Berry monopole; non-chiral (commuting) -> ZERO
+       Berry(chiral) = -0.0024 (!=0, monopole); Berry(non-chiral) = 0.0e+00 (=0)
+
+========================================================================================
+F4 — native circulant mass COMMUTES with Gamma_chi -> non-chiral -> Q=1
+========================================================================================
+[PASS] F4.1 [H_circ, Gamma_chi] = 0 (both circulant) -> {H_circ, Gamma_chi} != 0 -> the native mass NEVER anticommutes -> non-chiral -> Berry=0 -> Q=1
+       |[H,Gamma_chi]| = 1.1e-16; |{H,Gamma_chi}| = 1.17 (!=0)
+[PASS] F4.2 r=1/2 (chiral/per-block) -> Q=2/3; r=1 (non-chiral/per-dim) -> Q=1
+       Q(r=1/2) = 0.666667; Q(r=1) = 1.000000
+
+========================================================================================
+SUMMARY
+========================================================================================
+  8/8 checks passed
+
+  THE WHOLE KOIDE VALUE = ONE COMPUTABLE CRITERION:
+    chiral generation mass (Gamma_chi-anticommuting, nonzero Berry monopole)
+       => first-order => per-block => det_C => equal-block => r=1/2 => Q=2/3
+    non-chiral circulant mass (Gamma_chi-commuting, zero Berry)
+       => second-order => per-dim => det_R => trace => r=1 => Q=1
+  The native circulant mass is NON-CHIRAL (commutes with Gamma_chi) -> Q=1.
+  Q=2/3 = the single CHIRAL import (shared with generation-ID); forbidden on
+  the generation R^3 by C^3=I. Next path: an OFF-generation factor supplying it.
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

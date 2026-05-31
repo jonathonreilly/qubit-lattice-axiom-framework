@@ -3,7 +3,7 @@
     "critical": 249,
     "high": 295,
     "leaf": 353,
-    "medium": 307
+    "medium": 306
   },
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
@@ -16441,28 +16441,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.172,
-      "note_path": "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
-      "transitive_descendants": 50
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -16559,6 +16537,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
+      "transitive_descendants": 47
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.085,
+      "note_path": "docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wigner_mode_low_d_sublattice_check.py",
       "transitive_descendants": 47
     },
     {
@@ -21773,31 +21776,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.085,
-      "note_path": "docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wigner_mode_low_d_sublattice_check.py",
-      "transitive_descendants": 47
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_axiom_first_microscopic_bridge_theorem",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -26483,6 +26461,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/cmw_2d_sublattice_no_ssb_check.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -31056,30 +31058,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_t2_df_physical_consequences_2026_05_10_t2df.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CMW_2D_SUBLATTICE_NO_SSB_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/cmw_2d_sublattice_no_ssb_check.py",
       "transitive_descendants": 0
     },
     {
@@ -36350,6 +36328,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 71,
-  "total_pending": 1204
+  "ready_count": 72,
+  "total_pending": 1203
 }

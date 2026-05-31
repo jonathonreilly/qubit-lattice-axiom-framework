@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 170 |
 | **retained_no_go** | 176 |
-| **retained_bounded** | 615 |
+| **retained_bounded** | 616 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1202 |
+| unaudited | 1201 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 952 |
+| `audited_clean` | 953 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1440 |
+| `unaudited` | 1439 |
 
 | claim_type | count |
 |---|---:|
@@ -177,6 +177,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | D | - |
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
+| `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1883,6 +1884,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
   - `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
   - `STRONG_CP_THETA_ZERO_NOTE.md`
+- **auditor confidence:** high
+
+### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-001401-d06e664a-axiom_first_coleman_merm`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.  _(class `A`)_
+- **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
+- **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`

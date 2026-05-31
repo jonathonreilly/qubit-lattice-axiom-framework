@@ -12,6 +12,12 @@ What to use:
 - The bridge `coeff_nonid(S_Q1) = -eta_APS` is now exact.
 - Q1-alone signed readout is no-go: the source is transposition-even, while
   `delta` is transposition-odd.
+- The unlock map splits the positive targets cleanly: strict onsite
+  source-domain selection gives charged-lepton `Q=2/3`, while the Q1 offsite
+  source shadow gives APS/Brannen magnitude `2/9`.
+- If a future odd orientation/basepoint primitive supplies
+  `epsilon in {+1,-1}`, then `delta = epsilon * eta_APS` can feed the existing
+  selected-line scalar/point bridge.
 
 What not to use:
 
@@ -25,5 +31,5 @@ What not to use:
 Best next theorem:
 
 ```text
-derive_signed_selected_line_orientation_from_retained_source_domain
+derive_signed_selected_line_orientation_or_source_domain_Z_erasure
 ```

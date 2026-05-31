@@ -12,6 +12,7 @@ pipeline after independent review.
 - [`scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py`](../scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py)
 - [`scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py`](../scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py)
 - [`scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py`](../scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py)
+- [`scripts/frontier_koide_q1_unlock_map_orientation_gate.py`](../scripts/frontier_koide_q1_unlock_map_orientation_gate.py)
 
 ## Question
 
@@ -200,6 +201,47 @@ sign of `delta`.
 The minimal conditional escape is an extra odd orientation/basepoint primitive
 `epsilon`, with `delta = epsilon * eta_APS`.
 
+### 7. Unlock map
+
+The packet now has a precise "what lands if this lands" map:
+
+```text
+strict onsite charged-lepton source-domain law
+  -> reduced Z erased
+  -> charged-lepton Q = 2/3
+```
+
+and
+
+```text
+projected/offsite Q1 source shadow
+  -> coeff_nonid(S_Q1) = -eta_APS
+  -> APS/Brannen magnitude |delta| = 2/9
+```
+
+These are two different gates.  The first is the physical charged-lepton source
+domain theorem.  The second is the exact offsite source-shadow coefficient
+bridge.  Their shared value does not identify the signed phase, because the Q1
+coefficient data are transposition-even while the selected-line `delta` is
+transposition-odd.
+
+If a future theorem supplies an independent odd orientation/basepoint
+
+```text
+epsilon in {+1, -1}, tau epsilon = -epsilon,
+```
+
+then the conditional readout
+
+```text
+delta = epsilon * eta_APS
+```
+
+selects `+2/9` for `epsilon = +1` and the mirror sign for `epsilon = -1`.
+Only after that sign is closed can the existing selected-line scalar/point
+bridge run as a physical phase bridge.  Generation labeling still requires a
+based endpoint/source law.
+
 ## Bridge target isolated by this packet
 
 The next theorem target is now narrower than "derive `2/9`":
@@ -232,6 +274,9 @@ Either outcome helps the `Q = 2/3` hunt.
 - `Q = 1` alone cannot supply the signed selected-line `delta` readout.
 - Under strict onsite descent, the `Q = 1` reduced coordinate is erased and the
   normalized readout returns `Q = 2/3`.
+- If the packet lands, it unlocks two conditional tracks: charged-lepton
+  `Q = 2/3` from strict onsite source-domain selection, and APS/Brannen
+  magnitude support from the Q1 offsite source shadow.
 - The packet isolates a concrete next bridge/no-go target for other workers.
 
 ## What this does NOT claim
@@ -255,6 +300,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_unphysical_backgroun
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_two_ninth_provenance_classifier.py
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_unlock_map_orientation_gate.py
 python3 -m py_compile \
   scripts/frontier_dm_rhn_koide_q1_axis_abundance_compatibility.py \
   scripts/frontier_koide_q1_alternative_interpretation_classifier.py \
@@ -263,7 +309,8 @@ python3 -m py_compile \
   scripts/frontier_koide_q1_unphysical_background_probe.py \
   scripts/frontier_koide_two_ninth_provenance_classifier.py \
   scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py \
-  scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py
+  scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py \
+  scripts/frontier_koide_q1_unlock_map_orientation_gate.py
 ```
 
 Expected closeout flags:
@@ -282,6 +329,12 @@ Q1_SUPPLIES_PARITY_ODD_SIGN=FALSE
 KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO=TRUE
 SIGNED_DELTA_FROM_Q1_ALONE=FALSE
 NEW_PRIMITIVE_REQUIRED=signed_selected_line_orientation_or_based_endpoint
+KOIDE_Q1_UNLOCK_MAP_ORIENTATION_GATE=TRUE
+LEPTON_Q23_IF_STRICT_ONSITE_DESCENT=TRUE
+Q1_APS_BRANNEN_MAGNITUDE_UNLOCK=TRUE
+SIGNED_ORIENTATION_PRIMITIVE_REQUIRED=TRUE
+SELECTED_LINE_POINT_UNLOCKS_IF_DELTA_SIGNED=TRUE
+GENERATION_LABEL_STILL_REQUIRES_BASEPOINT=TRUE
 TWO_NINTH_TYPED_UNIFICATION=FALSE
 Q1_DARK_MATTER_CLOSURE=FALSE
 ```
@@ -300,6 +353,8 @@ Q1_DARK_MATTER_CLOSURE=FALSE
   - exact `coeff_nonid(S_Q1) = -eta_APS` coefficient bridge.
 - [`KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md`](KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md)
   - no-go for signed `delta` readout from `Q = 1` alone.
+- [`KOIDE_Q1_UNLOCK_MAP_ORIENTATION_GATE_NOTE_2026-05-31.md`](KOIDE_Q1_UNLOCK_MAP_ORIENTATION_GATE_NOTE_2026-05-31.md)
+  - what the Q1 packet unlocks and what remains gated by orientation.
 - [`KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md`](KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md)
   - shared Koide/DM `C3` projector skeleton.
 - [`NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md`](NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md)

@@ -14,6 +14,9 @@
 - Exact Q1 coefficient bridge: `coeff_nonid(S_Q1) = -eta_APS`.
 - Signed-readout no-go: Q1 coefficient data are transposition-even, while
   `delta` is transposition-odd.
+- Unlock-map gate: strict onsite source-domain selection would give
+  charged-lepton `Q=2/3`; an independent odd orientation/basepoint would turn
+  the Q1 APS/Brannen magnitude into a signed-delta input.
 
 ## Not Used
 

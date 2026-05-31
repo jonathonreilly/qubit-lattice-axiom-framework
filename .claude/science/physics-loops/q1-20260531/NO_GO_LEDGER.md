@@ -37,3 +37,13 @@ coeff_nonid(S_Q1) = -eta_APS.
 
 The remaining no-go/firewall is that Q1 is transposition-even and does not by
 itself supply the parity-odd signed Brannen phase readout.
+
+## Signed selected-line readout from Q1 alone
+
+Runner: `scripts/frontier_koide_q1_signed_selected_line_readout_no_go.py`
+
+Status: exact no-go.
+
+Q1 is fixed under the transposition swapping `g` and `g^2`; `delta` is odd.
+Every equivariant map from a fixed input to an odd line gives zero.  Therefore
+Q1 alone cannot supply the signed phase.  It can supply only the magnitude.

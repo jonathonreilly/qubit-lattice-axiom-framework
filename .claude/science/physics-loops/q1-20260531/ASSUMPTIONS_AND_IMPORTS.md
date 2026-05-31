@@ -12,6 +12,8 @@
 - Existing Majorana notes: current stack has no nonzero Majorana activation
   primitive on this route.
 - Exact Q1 coefficient bridge: `coeff_nonid(S_Q1) = -eta_APS`.
+- Signed-readout no-go: Q1 coefficient data are transposition-even, while
+  `delta` is transposition-odd.
 
 ## Not Used
 
@@ -24,7 +26,7 @@
 
 - A retained physical source-domain theorem excluding projected `Z` as
   undeformed charged-lepton source data.
-- A signed selected-line readout theorem identifying the Brannen/parity phase
-  with `-coeff_nonid(S_Q1) = eta_APS`.
+- A new signed selected-line orientation/basepoint primitive if a positive
+  `delta = eta_APS` closure is still pursued.
 - A charge-two primitive if any future worker wants a Majorana/RHN texture
   route.

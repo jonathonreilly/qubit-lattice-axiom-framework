@@ -1,16 +1,16 @@
 # Trace Gate
 
 ```yaml
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: null
 target_blocker_text: "physical identification delta = eta_APS"
 source_of_blocker_text: user_goal
-reachability_to_target: supports
-artifact_role: theorem
-next_trace_action: "Derive signed selected-line readout delta = -coeff_nonid(S_Q1) = eta_APS, or prove the coefficient bridge is only an excluded source-domain shadow."
+reachability_to_target: prunes
+artifact_role: no_go
+next_trace_action: "Derive an independent signed selected-line orientation/basepoint primitive, or accept that Q1 gives magnitude support only."
 ```
 
-If the artifact is true, it supports the existing phase blocker by replacing a
-loose `2/9` recurrence with an exact coefficient identity
-`coeff_nonid(S_Q1) = -eta_APS`.  It does not close the blocker, because the
-signed selected-line physical readout remains open.
+The coefficient bridge supports the existing phase blocker, but this no-go
+prunes the stronger route "Q1 alone supplies the signed selected-line phase."
+The blocker is now sharper: a positive closure must derive an independent odd
+orientation/basepoint primitive.

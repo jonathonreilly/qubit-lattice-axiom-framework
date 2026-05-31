@@ -7,6 +7,7 @@ Delivered artifacts:
 - Five Q1 classifiers/no-go probes.
 - One 2/9 provenance classifier.
 - One APS/Brannen coefficient bridge runner.
+- One signed selected-line readout no-go runner.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

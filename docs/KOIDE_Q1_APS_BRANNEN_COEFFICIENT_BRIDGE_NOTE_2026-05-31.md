@@ -121,18 +121,17 @@ the circulant phase `delta` is transposition-odd.  Therefore `Q = 1` supplies
 the exact magnitude/coefficient bridge, but not the signed parity-order
 parameter by itself.
 
-The next theorem target is now:
+The next theorem target has now been tested:
 
 ```text
 signed_selected_line_readout_delta_equals_minus_q1_offsite_coeff_or_no_go
 ```
 
-That theorem must either:
-
-- derive a signed selected-line readout/orientation law sending
-  `delta` to `-coeff_nonid(S_Q1)`, or
-- prove that the `Q = 1` coefficient bridge remains only an excluded
-  source-domain shadow.
+The result is the no-go
+[`KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md`](KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md):
+`Q = 1` alone cannot supply the signed parity-odd phase.  It supplies the
+magnitude; a new signed selected-line orientation/basepoint primitive is
+required for the sign.
 
 ## What This Claims
 
@@ -146,6 +145,7 @@ That theorem must either:
 
 - Does not prove the physical Brannen phase is fixed.
 - Does not prove the signed identity `delta = eta_APS`.
+- Does not supply the signed selected-line orientation/basepoint primitive.
 - Does not prove `Q = 1` is physical source data.
 - Does not prove `Q = 1` is dark matter.
 - Does not close the `Q = 2/3` source-domain theorem.
@@ -178,3 +178,5 @@ DELTA_ETA_APS_PHYSICAL_READOUT_CLOSED=FALSE
   - `delta` as the transposition-odd circulant phase.
 - [`KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md`](KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md)
   - Brannen conjugate-pair magnitude `n_eff/d^2 = 2/9`.
+- [`KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md`](KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md)
+  - no-go for signed `delta` readout from `Q = 1` alone.

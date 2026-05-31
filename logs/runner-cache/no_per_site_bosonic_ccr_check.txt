@@ -1,14 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/no_per_site_bosonic_ccr_check.py
-runner_sha256: 83d2b22df1cd5450e6b4c9e9145e0121879283a5df9d25c948adee4802181699
+runner_sha256: 47139d75890099441d67851e29ff46c62213b66c168ca52dac036862562caecb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ========================================================================
 NO PER-SITE BOSONIC CCR CHECK
 ========================================================================
+
+------------------------------------------------------------------------
+SOURCE FIREWALL: Axiom 1 local M_2(C), not old per-site uniqueness
+------------------------------------------------------------------------
+  cites minimal axioms Axiom 1: PASS
+  uses Axiom 1 qubit algebra M_2(C): PASS
+  no old uniqueness node in YAML: PASS
+  classified as no_go: PASS
+  STATUS: PASS
 
 ------------------------------------------------------------------------
 TEST 1: tr([A, B]) = 0 for any bounded A, B on finite-dim H
@@ -43,6 +52,7 @@ TEST 4: bosonic CCR is satisfied on infinite-dim Fock space (truncated)
   STATUS: PASS (bulk is exactly identity)
 
 ========================================================================
+  Source firewall (Axiom 1 local algebra):           PASS
   Test 1 (trace obstruction tr([A,B])=0):       PASS
   Test 2 (bosonic CCR ⇒ contradiction):         PASS
   Test 3 (Pauli ladder is not bosonic CCR):     PASS

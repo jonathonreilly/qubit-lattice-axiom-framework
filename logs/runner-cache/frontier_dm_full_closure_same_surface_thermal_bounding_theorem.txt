@@ -1,14 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
-runner_sha256: 0729d820e6fdd306e9b9679ae892c030d7812ea8fafb080a07b8308e8ac80292
+runner_sha256: ca4d9c7b27c4d7727f5c5c820702bb1f0f62afbadfa45844a06e28831be09d73
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 68.80
+elapsed_sec: 46.53
 status: ok
 ----- stdout -----
 ========================================================================================
 DM SAME-SURFACE THERMAL SUPPLIED-PREMISE INTERVAL THEOREM
 ========================================================================================
+
+========================================================================================
+PART 0: SOURCE-NOTE SCOPE BOUNDARY
+========================================================================================
+  [PASS] source contains required boundary phrase: Claim type:** bounded support note
+  [PASS] source contains required boundary phrase: Type:** conditional / support
+  [PASS] source contains required boundary phrase: actual_current_surface_status: conditional-support
+  [PASS] source contains required boundary phrase: source-note proposal only
+  [PASS] source contains required boundary phrase: 64:1 bridge, live-DM constants, and selector/completeness premises remain supplied
+  [PASS] source contains required boundary phrase: bare_retained_allowed: false
+  [PASS] source omits forbidden status phrase: Claim type:** bounded_theorem
+  [PASS] source omits forbidden status phrase: Type:** bounded_theorem
+  [PASS] source omits forbidden status phrase: actual_current_surface_status: retained
 
 ========================================================================================
 PART 1: CERTIFIED CURRENT-BANK THERMAL ENVELOPES
@@ -60,7 +73,7 @@ BOTTOM LINE
   premise packet: the 64:1 bridge, live constants, and selector premises.
 
 ========================================================================================
-SUMMARY: PASS=9 FAIL=0
+SUMMARY: PASS=18 FAIL=0
 ========================================================================================
 
 ----- stderr -----

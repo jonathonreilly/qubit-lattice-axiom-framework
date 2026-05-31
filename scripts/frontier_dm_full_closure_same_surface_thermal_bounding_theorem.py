@@ -34,6 +34,7 @@ from __future__ import annotations
 AUDIT_TIMEOUT_SEC = 1800
 
 import sys
+from pathlib import Path
 
 from dm_full_closure_minimal_reduced_cycle_extension_map_common import omega_b_from_eta
 from dm_full_closure_same_surface_thermal_support_common import (
@@ -48,6 +49,8 @@ from dm_leptogenesis_exact_common import ETA_OBS
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md"
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -62,6 +65,30 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
         msg += f"  ({detail})"
     print(msg)
     return condition
+
+
+def part0_source_scope_boundary() -> None:
+    print("\n" + "=" * 88)
+    print("PART 0: SOURCE-NOTE SCOPE BOUNDARY")
+    print("=" * 88)
+    text = NOTE.read_text(encoding="utf-8")
+    required = [
+        "Claim type:** bounded support note",
+        "Type:** conditional / support",
+        "actual_current_surface_status: conditional-support",
+        "source-note proposal only",
+        "64:1 bridge, live-DM constants, and selector/completeness premises remain supplied",
+        "bare_retained_allowed: false",
+    ]
+    forbidden = [
+        "Claim type:** bounded_theorem",
+        "Type:** bounded_theorem",
+        "actual_current_surface_status: retained",
+    ]
+    for phrase in required:
+        check(f"source contains required boundary phrase: {phrase}", phrase in text)
+    for phrase in forbidden:
+        check(f"source omits forbidden status phrase: {phrase}", phrase not in text)
 
 
 def part1_current_bank_certified_bounds() -> tuple[float, float, float, float, float]:
@@ -169,6 +196,7 @@ def main() -> int:
     print("DM SAME-SURFACE THERMAL SUPPLIED-PREMISE INTERVAL THEOREM")
     print("=" * 88)
 
+    part0_source_scope_boundary()
     omega_b, r_lo_lo, r_lo_hi, r_hi_lo, r_hi_hi = part1_current_bank_certified_bounds()
     target_ratio = part2_current_bank_global_image(omega_b, r_lo_lo, r_lo_hi, r_hi_lo, r_hi_hi)
     part3_admitted_family_certified_root(omega_b, target_ratio)

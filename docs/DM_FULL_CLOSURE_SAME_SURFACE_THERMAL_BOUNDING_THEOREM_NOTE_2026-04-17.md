@@ -1,10 +1,25 @@
 # DM Full Closure Same-Surface Thermal Bounding Theorem
 
-**Status:** bounded-support supplied-premise interval theorem
+**Claim type:** bounded support note
+**Status:** conditional supplied-premise interval support
 **Date:** 2026-04-17  
 **Date of scope repair:** 2026-05-30
+**source-note proposal only:** this note is a source-note candidate; audit verdict and effective status are independent-audit outputs.
+**Type:** conditional / support
+**Status authority:** independent audit lane only.
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py`
+
+```yaml
+actual_current_surface_status: conditional-support
+conditional_surface_status: "supplied-premise interval composition over helper-returned live-DM constants and enclosures"
+hypothetical_axiom_status: null
+admitted_observation_status: "ETA_OBS / OMEGA_DM_OBS comparator inputs are supplied by helper packet"
+proposal_allowed: false
+proposal_allowed_reason: "The local interval arithmetic closes, but the 64:1 bridge, live-DM constants, and selector/completeness premises remain supplied rather than retained."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
 ## Question
 

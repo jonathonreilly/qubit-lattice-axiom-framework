@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py
-runner_sha256: 1bc614946d7c8d81da2acd68dadc4ad3f653fa9dfd54e9668dc2304446612597
+runner_sha256: 4226950083aa83a2b5dc569a8f017fdf79e7d1d7a4bd30132d72643e4816ba65
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 15.75
+elapsed_sec: 14.38
 status: ok
 ----- stdout -----
 ==================================================================================
-FINITE-CARRIER SINGLE-TRANSFER ASSEMBLY FOR MIXED GAUGE+FERMION OBSERVABLES
-  (finite-carrier transfer assembly; scratch evidence only)
+SUPPLIED-PREMISE W^dag W ASSEMBLY FOR MIXED GAUGE+FERMION OBSERVABLES
+  (finite-carrier algebra under supplied PSD-transfer premises)
 ==================================================================================
   mass m=0.5, a_tau=1.0.  Settled Berezin convention:
     <chi_b bar_chi_a>=+(M^-1)[b,a],  <bar_chi_a chi_b>=-(M^-1)[b,a].
@@ -21,14 +21,14 @@ NEGATIVE CONTROL: single-step NAIVE reflected fermion Gram non-PSD
   -> reproduces documented no-go: PASS
 
 ----------------------------------------------------------------------------------
-R1: FINITE WILSON TEMPORAL-GAUGE TRANSFER KERNEL PSD CHECK
+R1: FINITE WILSON TEMPORAL-GAUGE TRANSFER KERNEL PSD DIAGNOSTIC
   K(U,U') = exp(-beta(1-Re Tr(U'U^dag)/nc)) on sampled plaquette carriers
-  (support for the Wilson-boundary gauge-half input)
+  (diagnostic for supplied Wilson-boundary PSD premise; not compact-group proof)
 ----------------------------------------------------------------------------------
   beta= 1.0: U(1) kernel min eig=+9.175e-12  SU(3) kernel min eig=+1.134e-01  PSD:True
   beta= 2.0: U(1) kernel min eig=+1.464e-08  SU(3) kernel min eig=+2.567e-01  PSD:True
   beta= 4.0: U(1) kernel min eig=+1.019e-05  SU(3) kernel min eig=+5.787e-01  PSD:True
-  -> R1 (Wilson boundary gauge transfer PSD): PASS
+  -> R1 finite-kernel PSD diagnostic: PASS
 
 ----------------------------------------------------------------------------------
 ROUTE T [U(1)]: COMBINED TRANSFER-MATRIX GRAM on H_gauge (x) H_ferm

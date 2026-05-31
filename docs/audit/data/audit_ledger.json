@@ -248824,24 +248824,46 @@
       "verdict_rationale": null
     },
     "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T17:03:13.832138+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4226950083aa83a2b5dc569a8f017fdf79e7d1d7a4bd30132d72643e4816ba65",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-165952-df9275a1-rp_mixed_observable_sing",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed algebraic claim closes in finite-dimensional linear algebra: PSD T_gauge supplies a self-adjoint square root and the block fermion core is explicitly B^dag B, hence T_full is W^dag W and represented Gram matrices are PSD. This does not audit Wilson-boundary compact-group positivity or the mixed OS transfer representation, which remain scoped as hypotheses.",
       "claim_id": "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29",
-      "claim_scope": null,
+      "claim_scope": "Finite-carrier algebraic W^dag W assembly for represented mixed gauge+fermion two-step transfer observables, assuming PSD gauge transfer, PSD fixed-gauge fermion blocks, and a supplied mixed OS transfer representation.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T17:03:13.832138+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -248850,19 +248872,19 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given PSD T_gauge and block fermion core oplus_U B[U]^dag B[U], T_full = (T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I) = W^dag W, so <Omega|O_hat^dag T_full O_hat|Omega> = ||W(O_hat Omega)||^2 >= 0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4bbebac82088620418afea569ca67de2b27e8fc9992e5ac4eb635dc36917712f",
       "note_path": "docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue, update the source note's cached-run table to match the provided runner cache and state the U(1) Fourier coefficients as e^{-beta} I_n(beta) or explicitly say the positive constant is suppressed.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -248921,18 +248943,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 2,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py",
       "title": "Finite-Carrier Single-Transfer Assembly for Mixed Gauge+Fermion Reflection-Positivity Observables",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing W^dag W step is a valid class-A algebraic closure under the source note's explicit supplied-premise scope, and the runner source constructs finite T_full and mixed Grams rather than merely printing constants. However the packet is not clean as written under the formula-inventory rule: the note's cached-run table is stale relative to the supplied cache for several Route T/C eigenvalue and Hermiticity entries, and the U(1) Wilson-kernel Fourier coefficient omits the overall e^{-beta} factor. These defects do not refute the narrowed lemma, but they require source repair before a clean verdict."
     },
     "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": {
       "audit_date": "2026-05-30T22:22:54.689400+00:00",

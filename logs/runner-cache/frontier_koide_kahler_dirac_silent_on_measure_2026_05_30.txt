@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_kahler_dirac_silent_on_measure_2026_05_30.py
+runner_sha256: 1ffa4c60ba8d0d1b78d6a65f6aaefd9e0b1f38cd47c22d648c239abdcde70851
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+
+========================================================================================
+Kähler-Dirac is silent on the Koide measure; the one substep4 binary
+========================================================================================
+
+========================================================================================
+F1 — D_KD = d - delta is real-antisymmetric, i*D_KD Hermitian
+========================================================================================
+[PASS] F1.1 CAR algebra {a_i, a_j^dag} = delta_ij (Fock space = Lambda*(R^3))
+       3-mode Jordan-Wigner fermions; 8-dim form complex
+[PASS] F1.2 D_KD is real and antisymmetric; i*D_KD is Hermitian
+       |Im D_KD|=0.0e+00, |D_KD + D_KD^T|=0.0e+00
+
+========================================================================================
+F2 — D_KD is grade-off-diagonal: every Lambda^k -> Lambda^k block = 0
+========================================================================================
+[PASS] F2.1 every grade-diagonal block of D_KD vanishes (in particular Lambda^1 = the generation triplet)
+       max|Lambda^k -> Lambda^k block| = 0.0e+00; per-grade: {0: '0e+00', 1: '0e+00', 2: '0e+00', 3: '0e+00'}; dim Lambda^1 = 3
+[PASS] F2.2 => the retained Kähler-Dirac structure supplies NO within-generation kinetic operator (measure sourced by neither retained candidate)
+       the within-generation complex structure must come from elsewhere (substep4)
+
+========================================================================================
+F3 — det and Pfaffian both weight the doublet to dimension 2 (-> Q=1)
+========================================================================================
+[PASS] F3.1 det(aI + b(C+C^2)) = (a+2b)(a-b)^2  (doublet eigenvalue to power 2)
+       det(M) = (a - b)**2*(a + 2*b)  => doublet weighted by DIMENSION 2 => (1,2) => r=1 => Q=1
+[PASS] F3.2 Pf(M (x) eps)^2 = det(M (x) eps) = det(M)^2  => Pf = +-det(M) (same doublet-power-2; per-block (1,1) is NOT a determinant output)
+       det(M (x) eps) = det(M)^2 = (a - b)**4*(a + 2*b)**2
+
+========================================================================================
+F4 — central i*I (generation-blind, eigs {+i,+i,+i}) vs Jcs (det 0)
+========================================================================================
+[PASS] F4.1 central i*I_3 has eigenvalues {+i,+i,+i} (no -i eigenspace; ineligible as a conjugate-pair / first-order symplectic structure)
+       eig(i*I_3) = [0.+1.j 0.+1.j 0.+1.j]
+[PASS] F4.2 Jcs^2 = -P_doublet != -I_3 and det(Jcs) = 0 (not a full-space complex structure; counts the doublet ONCE)
+       |Jcs^2 + P_doublet| = 1.1e-16; det(Jcs) = 0.0e+00+0.0e+00j; eig(Jcs) = [0.-1.j 0.+1.j 0.+0.j]
+
+========================================================================================
+F5 — the measure binary: a real-antisymmetric generation bilinear?
+========================================================================================
+[PASS] F5.1 the only C3-equivariant real-antisymmetric operator on R^3 is span{Jcs} (1-dimensional)
+       dim(antisymmetric ∩ commute-with-C) = 1
+[PASS] F5.2 C3-equivariant SYMMETRIC operators commute with both Jcs and i*I (measure-blind) -> only the antisymmetric (Jcs) direction carries the measure
+       => the measure binary = 'is there a real-antisymmetric generation bilinear (-> Jcs -> Q=2/3) or not (-> central-i -> Q=1)?' = substep4 reality-type
+
+========================================================================================
+SUMMARY
+========================================================================================
+  10/10 checks passed
+
+  retained Kähler-Dirac D_KD: grade-off-diagonal => Lambda^1->Lambda^1 = 0
+    => SILENT on the within-generation complex structure (the measure).
+  det / Pfaffian: doublet-power-2 => Q=1 (per-block is NOT a det output).
+  central i*I (eigs {+i,+i,+i}) generation-blind => Q=1;
+    Jcs (det 0, doublet once) => Q=2/3; neither is a full-space J.
+  THE ONE BINARY: a within-generation real-antisymmetric (symplectic)
+    bilinear (uniquely Jcs -> Q=2/3) or not (central-i -> Q=1)?
+    = reality-type / kinetic-order of the generation field = open substep4.
+
+  => Q=1 is the retained default; Q=2/3 needs one discrete open input.
+     Sharpens frobenius_isotype_split_uniqueness (retained_no_go): the
+     retained dynamics is silent, so the deciding authority is substep4.
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

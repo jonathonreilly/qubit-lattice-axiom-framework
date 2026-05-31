@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 177 |
-| **retained_bounded** | 618 |
+| **retained_bounded** | 619 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1192 |
+| unaudited | 1191 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 957 |
+| `audited_clean` | 958 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1430 |
+| `unaudited` | 1429 |
 
 | claim_type | count |
 |---|---:|
@@ -864,6 +864,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `source_resolved_generated_architecture_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_generated_bridge_failure_audit` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
@@ -12603,6 +12604,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The standard exponential formula for set partitions says that the generating function for connected components is the logarithm: K[J] = log M[J].  _(class `A`)_
 - **chain closes:** True — The Mobius cumulant formula, the log moment-generating function identity, the n=3 cumulant formula, independence cancellation, and the p-scale two-point normalization all close algebraically. The downstream physical identification of the scalar P-cal response with connected source response is explicitly outside this scoped theorem.
 - **rationale:** The load-bearing step is a standard algebraic Mobius/exponential-formula identity, not a numerical fit, external comparator, or symbol renaming. The runner source materially computes the partition-lattice n=3 Mobius formula, verifies independence cancellation, differentiates log moment generators, and checks the p-scale normalization; it does not import a contested constant or hidden comparator. The displayed closed-form formulas in the packet are consistent under the note's finite-record cumulant conventions. The clean verdict applies only to the bounded exact-support theorem, not to unbounded retained Y_T closure or the physical connected-response identification.
+- **auditor confidence:** high
+
+### `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30`
+
+- **Note:** [`SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`](../../docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite sharp-record probability tangent-space algebra: RN scores have zero P0-mean, the signed two-outcome record is unit in the Fisher pairing, the exponential chart normalizes by W=log E0 exp(hO), and the stated six-component equal normalized top vector has coefficient 1/sqrt(6).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-134537-569bd619-source_measure_sharp_rec`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the sharp signed record epsilon in {-1,+1} under the uniform pre-source reference, E0[epsilon]=0 and E0[epsilon^2]=1, so epsilon is a unit Fisher score tangent and lambda epsilon has Fisher norm lambda^2.  _(class `A`)_
+- **chain closes:** True — The finite-space RN, zero-mean score, Fisher norm, exponential normalization, and lambda scaling identities follow by direct algebra from the provided definitions and the retained_bounded projective-record authority. The Y_T statement closes only as the stated normalized six-component tangent, not as a downstream physical-source acceptance claim.
+- **rationale:** The runner source performs symbolic finite-probability and vector-normalization checks rather than importing comparator values or fitted constants, and the displayed formula inventory matches the note's own conventions. The cited LSP authority is retained_bounded, which is retained-grade for this bounded theorem, and no non-retained cited dependency is needed for the audited finite sharp-record scope. The audit does not promote the separate physical-source semantics or same-source top/W response certificate; those are explicitly outside the note's claim scope.
 - **auditor confidence:** high
 
 ### `source_resolved_exact_green_pocket_note`

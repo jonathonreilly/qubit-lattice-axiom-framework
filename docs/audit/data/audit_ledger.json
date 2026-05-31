@@ -264325,22 +264325,42 @@
       "verdict_rationale": null
     },
     "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T13:47:47.227209+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "For a finite qubit-lattice region and an explicitly chosen canonical projective-measurement Naimark/L\u00fcders dilation, the outcome-r Kraus operator is P_r and sequential composition with a later effect is P_r E P_r; no uniqueness of all instruments implementing the same POVM is audited."
+        },
+        "dep_claim_type": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+        ],
+        "load_bearing_score": 2.822,
+        "runner_hash": "e00f26785e8da18bd9671bc4e7d42269374229640b611c3fa296e6af7c4d108e",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-134537-569bd619-source_measure_sharp_rec",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-space RN, zero-mean score, Fisher norm, exponential normalization, and lambda scaling identities follow by direct algebra from the provided definitions and the retained_bounded projective-record authority. The Y_T statement closes only as the stated normalized six-component tangent, not as a downstream physical-source acceptance claim.",
       "claim_id": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
-      "claim_scope": null,
+      "claim_scope": "Finite sharp-record probability tangent-space algebra: RN scores have zero P0-mean, the signed two-outcome record is unit in the Fisher pairing, the exponential chart normalizes by W=log E0 exp(hO), and the stated six-component equal normalized top vector has coefficient 1/sqrt(6).",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem / exact-support theorem.",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T13:47:47.227209+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -264348,34 +264368,34 @@
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 2.822,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For the sharp signed record epsilon in {-1,+1} under the uniform pre-source reference, E0[epsilon]=0 and E0[epsilon^2]=1, so epsilon is a unit Fisher score tangent and lambda epsilon has Fisher norm lambda^2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4ff88cb46c5c1b8aa8c31625092c12ab44e807d253717b35158bf4b2ffbf8daa",
       "note_path": "docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should keep the clean scope limited to the finite sharp-record/Fisher normalization result and not treat it as acceptance of the downstream physical-source bridge.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 38,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 38
       },
       "runner_path": "scripts/frontier_source_measure_sharp_record_tangent_space.py",
       "title": "Source/Measure Sharp-Record Tangent-Space Theorem",
       "transitive_descendants": 4,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source performs symbolic finite-probability and vector-normalization checks rather than importing comparator values or fitted constants, and the displayed formula inventory matches the note's own conventions. The cited LSP authority is retained_bounded, which is retained-grade for this bounded theorem, and no non-retained cited dependency is needed for the audited finite sharp-record scope. The audit does not promote the separate physical-source semantics or same-source top/W response certificate; those are explicitly outside the note's claim scope."
     },
     "source_resolved_exact_green_h025_pocket_note": {
       "audit_date": null,

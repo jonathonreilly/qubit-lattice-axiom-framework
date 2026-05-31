@@ -68,7 +68,8 @@ def beta_from_wm(n_c: Fraction, g_bare_sq: Fraction) -> Fraction:
 def check_note_structure() -> None:
     section("note structure and repaired scope")
     required = [
-        "Claim type:** bounded_theorem",
+        "Claim type:** bounded support note",
+        "Type:** conditional / support",
         "Proposal allowed:** false",
         "source-note proposal only",
         "explicitly conditional arithmetic lemma",
@@ -86,6 +87,8 @@ def check_note_structure() -> None:
         )
 
     forbidden = [
+        "Claim type:** bounded_theorem",
+        "Type:** bounded_theorem",
         "G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18",
         "carried by G_BARE_TWO_WARD_CLOSURE",
         "supplies the Wilson small-`a` matching relation",

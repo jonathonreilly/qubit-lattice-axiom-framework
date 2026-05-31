@@ -1,13 +1,14 @@
 # β·g_bare² = 2 N_c Conditional Wilson-Matching Arithmetic Lemma
 
 **Date:** 2026-05-08. Repair narrowing: 2026-05-27.
-**Claim type:** bounded_theorem
+**Claim type:** bounded support note
 **Proposal allowed:** false
 **Status authority:** independent audit lane only.
+**source-note proposal only:** this note is a source-note candidate; audit verdict and effective status are independent-audit outputs.
 **Primary runner:** [`scripts/frontier_beta_gbare_squared_rescaling_invariance.py`](../scripts/frontier_beta_gbare_squared_rescaling_invariance.py)
 **Runner cache:** [`logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt`](../logs/runner-cache/frontier_beta_gbare_squared_rescaling_invariance.txt)
 
-**Type:** bounded_theorem
+**Type:** conditional / support
 **Status authority:** independent audit lane only.
 
 ## 2026-05-28 Audit Repair (conditional arithmetic; premise packet admitted)

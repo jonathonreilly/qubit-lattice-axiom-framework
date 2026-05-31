@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta_gbare_squared_rescaling_invariance.py
-runner_sha256: ee5915affbf116af9fa11fd6bc002448d1c66f07c09333fe44fcb06a16695a0c
+runner_sha256: 5f1f78bc017f92db41f20f2205fec4ab2cf2c60a9c75dbf2aaa012bd9028ef0d
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -11,7 +11,8 @@ frontier_beta_gbare_squared_rescaling_invariance.py
 ----------------------------------------------------------------------------------------
 note structure and repaired scope
 ----------------------------------------------------------------------------------------
-  [PASS] contains marker: Claim type:** bounded_theorem
+  [PASS] contains marker: Claim type:** bounded support note
+  [PASS] contains marker: Type:** conditional / support
   [PASS] contains marker: Proposal allowed:** false
   [PASS] contains marker: source-note proposal only
   [PASS] contains marker: explicitly conditional arithmetic lemma
@@ -21,6 +22,8 @@ note structure and repaired scope
   [PASS] contains marker: G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03
   [PASS] contains marker: conditional bounded arithmetic lemma
   [PASS] contains marker: fractions.Fraction
+  [PASS] forbidden old authority/framing absent: Claim type:** bounded_theorem
+  [PASS] forbidden old authority/framing absent: Type:** bounded_theorem
   [PASS] forbidden old authority/framing absent: G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18
   [PASS] forbidden old authority/framing absent: carried by G_BARE_TWO_WARD_CLOSURE
   [PASS] forbidden old authority/framing absent: supplies the Wilson small-`a` matching relation
@@ -183,7 +186,7 @@ boundary clauses present
   [PASS] boundary clause present: canonical Cl(3) connection normalization
   [PASS] boundary clause present: parent theorem/status promotion
 
-TOTAL: PASS=151 FAIL=0
+TOTAL: PASS=154 FAIL=0
 VERDICT: conditional bounded arithmetic lemma passes; assuming WM,
 beta * g_bare^2 = 2 N_c is invariant under the scoped joint rescaling
 for c in {1/2, 1, 2, 3} at exact rational precision.

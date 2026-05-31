@@ -70708,24 +70708,46 @@
       "verdict_rationale": null
     },
     "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T15:40:30.837511+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "Block-family local uniqueness on a direct-sum-closed family B of invertible real anti-Hermitian blocks satisfying the strengthened universal continuous determinant-ratio admissibility class with dense realized ratios: every admissible F_D equals c W_D on U_0(D), with one shared real scale c."
+        },
+        "dep_claim_type": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "dc4aea296e3309149e37d455d54994c68a4586dff8ab509eb20482c78ecbb87d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-153735-c7590150-dm_neutrino_bosonic_norm",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite C^16 identities and Frobenius ratio close algebraically. The full W-source-response claim does not close because X1 applies to det(D+J) for an invertible real anti-Hermitian D, while the displayed C1/C2 determinant surfaces are computed for scalar baselines mI+jY and mI+j\u0393_1 without a supplied bridge showing the actual real-D block reduces to that scalar baseline or has the same determinant response.",
       "claim_id": "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
+      "claim_scope": "Audited the finite C^16 bridge algebra for Y=P_R\u0393_1P_L, the scalar-baseline determinant diagnostics, and the claimed observable-principle use of \u0393_1 as the Hermitian-completed source direction under the two retained-bounded upstream inputs.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T15:40:30.837511+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -70734,19 +70756,19 @@
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note identifies the Hermitian-completed direction \u0393_1 as the X1-admissible source direction and uses the scalar-baseline identity det(mI_{16}+j\u0393_1)=(m^2-j^2)^8 to state W[j\u0393_1]=8 log|1-j^2/m^2|, then forms sqrt(Tr(Y\u2020Y)/Tr(\u0393_1\u2020\u0393_1))=1/sqrt(2).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1c7f05698b12050e05a6b4703ae5c0d2d0f90e10282bef4f1d11a7579ecf9ec0",
       "note_path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the real-D block determinant response along \u0393_1, or narrow C1/C2 to scalar-baseline diagnostics and leave only the Frobenius raw-to-completion ratio as the theorem conclusion.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -70859,18 +70881,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 44,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 44
       },
       "runner_path": "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py",
       "title": "DM Neutrino Bosonic Normalization \u2014 Observable-Principle Bridge Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source genuinely instantiates the C^16 matrices and verifies the algebraic identities, determinant formulas on mI baselines, trace norms, and 1/sqrt(2) ratio at exact symbolic precision. Both cited authorities are retained-grade, and no external comparator or tuned numerical input is used. However, the source note also presents the \u0393_1 determinant surface as the X1-admissible W-response on the real-D block, and the restricted packet does not prove that replacing the X1 baseline D by mI is legitimate or that det(D+j\u0393_1)/det(D) equals the displayed scalar-baseline form. The theorem is therefore conditionally supported for the finite-block ratio, but not closed as written for the W-source-response claim."
     },
     "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15": {
       "audit_date": null,

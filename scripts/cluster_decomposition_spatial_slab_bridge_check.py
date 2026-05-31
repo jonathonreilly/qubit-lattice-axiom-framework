@@ -50,8 +50,13 @@ from __future__ import annotations
 
 import math
 import sys
+from pathlib import Path
 import numpy as np
 from numpy.linalg import eigh
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md"
 
 
 def random_slab_transfer_matrix(d, gap_target, rng):
@@ -328,6 +333,40 @@ def exhibit_S5(rng, d=8, n_trials=10):
     return n_pass == n_total
 
 
+def exhibit_S6_note_scope():
+    print("\n--- S6: source-note scope boundary ---")
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    checks = [
+        (
+            "source note is conditional / support, not bounded_theorem",
+            "**Type:** conditional / support" in text
+            and "**Claim type:** bounded support note" in text
+            and "**Type:** bounded_theorem" not in text,
+        ),
+        (
+            "source note names H1 and H2 as open inputs",
+            "H1" in text
+            and "H2" in text
+            and "explicitly listed open inputs" in text,
+        ),
+        (
+            "source note states no new retained bridge is introduced",
+            "No new axiom, import, or retained bridge is introduced" in text,
+        ),
+        (
+            "source note says retained-level closure is not supplied",
+            "is not satisfied at retained level by this note" in text
+            and "The unconditional version" in text
+            and "still requires deriving the gap" in text,
+        ),
+    ]
+    ok_all = True
+    for label, ok in checks:
+        ok_all = ok_all and ok
+        print(f"  {'PASS' if ok else 'FAIL'}: {label}")
+    return ok_all
+
+
 # ---------------------------------------------------------------------------
 # Driver
 # ---------------------------------------------------------------------------
@@ -347,6 +386,7 @@ def main():
     s3 = exhibit_S3(rng, d=8, n_trials=20)
     s4 = exhibit_S4(rng, d=8, n_trials=5)
     s5 = exhibit_S5(rng, d=8, n_trials=10)
+    s6 = exhibit_S6_note_scope()
 
     results = {
         "S1 (spatial spectral identity S.6)":   s1,
@@ -354,6 +394,7 @@ def main():
         "S3 (thermal spatial bound S.8)":       s3,
         "S4 (no-gap spatial counter-example)":  s4,
         "S5 (temporal/spatial parallelism)":    s5,
+        "S6 (source-note conditional scope)":    s6,
     }
     print()
     print("=" * 72)
@@ -367,7 +408,7 @@ def main():
     print()
     if n_pass == n_total:
         print(" verdict: spatial bridge (S.1)–(S.2) verified as closed-form finite-block")
-        print("          identity; no-gap counter-example confirms spatial gap is required;")
+        print("          conditional identity; no-gap counter-example confirms spatial gap is required;")
         print("          temporal/spatial parallelism confirms structural mirror of the")
         print("          2026-05-09 temporal bridge.")
         return 0

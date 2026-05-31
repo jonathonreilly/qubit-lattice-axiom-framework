@@ -1,9 +1,10 @@
-# Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3
+# Spatial-Slab Cluster-Decomposition Conditional Bridge on physical Cl(3) over Z^3
 
 **Date:** 2026-05-17
 **Status:** source-note proposal; final claim type, audit verdict, and
 effective status are set only by the independent audit lane.
-**Type:** bounded_theorem
+**Type:** conditional / support
+**Claim type:** bounded support note
 **Status authority:** independent audit lane only.
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
@@ -80,7 +81,7 @@ those derivations.
 
 ## Scope
 
-This is a **bounded narrow theorem** in the spirit of the 2026-05-09
+This is a **conditional support theorem** in the spirit of the 2026-05-09
 temporal bridge note. It mirrors that note's argument structure exactly:
 
 - finite-dim spectral decomposition of a positive Hermitian operator
@@ -353,7 +354,7 @@ spatial substrate for the canonical Hamiltonian.
 
 ## Hypothesis set used
 
-This bounded narrow theorem uses:
+This conditional support theorem uses:
 
 - the framework objects named above (only via the parent note's setup;
   no new premise is introduced here);
@@ -394,9 +395,10 @@ canonical action.
 - This note does **not** claim `Δ_x > 0` on the canonical surface.
 - This note does **not** prove the parent note's spatial L2 as stated
   unconditionally.
-- The chain "H1 ∧ H2 ⇒ (S.1) ∧ (S.2)" *is* now closed-form on the
-  framework baseline, putting the spatial direction at the same authority level the
-  temporal direction reached with the 2026-05-09 bridge.
+- The chain "H1 ∧ H2 ⇒ (S.1) ∧ (S.2)" is now closed-form finite-dimensional
+  spectral algebra, putting the spatial direction at the same conditional-
+  support authority level the temporal direction reached with the 2026-05-09
+  bridge.
 - The parent row's L2 claim therefore remains audited_conditional
   until *both* spatial open inputs (H1, H2) and the temporal open
   input (`Δ_T > 0`) are derived.
@@ -430,8 +432,9 @@ With this note, (b) is now satisfied in the same conditional form as
 The remaining gap is the three named open inputs `Δ_T > 0`, H1, H2
 on the canonical physical Cl(3) over Z^3 Hamiltonian. The auditor's repair target
 "add a retained spatial cluster-decomposition theorem with constants"
-is satisfied at the conditional-bounded-theorem authority level by
-this note; the unconditional version still requires deriving the gap
+is not satisfied at retained level by this note; it is sharpened at the
+conditional-support authority level by this note. The unconditional version
+still requires deriving the gap
 inputs.
 
 ## Citations
@@ -452,7 +455,7 @@ inputs.
 
 ## Audit dependency note
 
-This note is a bounded conditional theorem with explicit named open
+This note is a bounded conditional support theorem with explicit named open
 hypotheses H1, H2. It does **not** promote the parent row's audit
 status. The parent row's `verdict_rationale` repair target (b) is now
 addressed at the conditional-closed-form level; repair target (a)

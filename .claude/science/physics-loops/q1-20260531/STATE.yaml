@@ -3,10 +3,10 @@ branch: codex/q1-hunt-20260531
 date: 2026-05-31
 goal: "Package the Q=1 counterdomain/offsite-2/9 probes as a draft PR for Koide Q=2/3 workers."
 target_status: best-honest-status
-cycle_count: 5
-active_route: q1_oriented_sign_compatibility_closeout
+cycle_count: 6
+active_route: q1_last_mile_unlock_cascade
 current_surface_status: conditional-support
-claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS. If strict onsite source-domain selection is proved, the charged-lepton readout returns Q=2/3; if an independent odd orientation/basepoint is proved, the APS/Brannen magnitude can become a signed delta input. Bottom-up C3 algebra confirms Q1 generates only the even subalgebra span{e,g+g^2} and has zero component on the odd sign line i(g-g^2). The source-oriented gamma sheet is pruned as a sign source because gamma conjugation leaves the selected-line diagonal-slot readout invariant. The current oriented selected-line frame still gives delta=+2/9; in that oriented frame Q1's negative offsite coefficient maps to the right sign by delta_oriented=-coeff_g(S_Q1)=+2/9. The sign is compatible, not proved wrong, but the physical orientation remains underived from Q1/gamma. Q1 is not a retained physical phase, dark matter, or Q=2/3 closure."
+claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS. If strict onsite source-domain selection is proved, the charged-lepton readout returns Q=2/3; if an independent odd orientation/basepoint is proved, the APS/Brannen magnitude can become a signed delta input. Bottom-up C3 algebra confirms Q1 generates only the even subalgebra span{e,g+g^2} and has zero component on the odd sign line i(g-g^2). The source-oriented gamma sheet is pruned as a sign source because gamma conjugation leaves the selected-line diagonal-slot readout invariant. The current oriented selected-line frame still gives delta=+2/9; in that oriented frame Q1's negative offsite coefficient maps to the right sign by delta_oriented=-coeff_g(S_Q1)=+2/9. The last-mile unlock cascade is exact and conditional: P_ORIENT would close delta=+2/9, P_SOURCE would close Q=2/3, and both would make Koide Q/delta dimensionless closure audit-ready, but neither premise is derived here and generation labels, absolute masses, dark matter, and Y_T unbounded closure remain outside this package."
 files_touched:
   - docs/KOIDE_Q1_OFFSITE_TWO_NINTH_FRONTIER_SYNTHESIS_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md
@@ -15,6 +15,7 @@ files_touched:
   - docs/KOIDE_Q1_BOTTOM_UP_SIGN_ORIENTATION_AUDIT_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_GAMMA_SHEET_SIGN_PROBE_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_ORIENTED_SIGN_COMPATIBILITY_CLOSEOUT_NOTE_2026-05-31.md
+  - docs/KOIDE_Q1_LAST_MILE_UNLOCK_CASCADE_NOTE_2026-05-31.md
   - scripts/frontier_koide_q1_neutrality_classifier.py
   - scripts/frontier_dm_rhn_koide_q1_axis_abundance_compatibility.py
   - scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py
@@ -27,6 +28,7 @@ files_touched:
   - scripts/frontier_koide_q1_bottom_up_sign_orientation_audit.py
   - scripts/frontier_koide_q1_gamma_sheet_sign_probe.py
   - scripts/frontier_koide_q1_oriented_sign_compatibility_closeout.py
+  - scripts/frontier_koide_q1_last_mile_unlock_cascade.py
 open_imports:
   - "New signed selected-line orientation/basepoint primitive, if any positive phase closure is still desired."
   - "Physical source-domain theorem excluding projected Z as undeformed charged-lepton source data."
@@ -37,8 +39,9 @@ no_go_routes:
   - "Signed selected-line delta readout from Q1 data alone."
   - "Hidden bottom-up Q1 sign primitive from the C3 group algebra."
   - "Source-oriented gamma sheet as the missing selected-line sign."
+  - "Automatic retained/unbounded upgrade from Q/delta compatibility alone."
 trace_class: negative_route_pruning
 reachability_to_target: prunes
-next_exact_action: "Derive a physical selected-line slot orientation/basepoint, or prove the physical source-domain law that erases projected Z for undeformed charged leptons."
-pr_status: "Draft PR open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442; oriented sign compatibility closeout packaged on codex/q1-hunt-20260531."
-stop_condition: "Draft PR branch packaged with sign compatibility closeout, honest claim boundary, and verification commands."
+next_exact_action: "Derive P_ORIENT from retained charged-lepton selected-line physics, or derive P_SOURCE from retained charged-lepton source-domain physics."
+pr_status: "Draft PR open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442; last-mile unlock cascade packaged on codex/q1-hunt-20260531."
+stop_condition: "Draft PR branch packaged with last-mile unlock cascade, honest claim boundary, and verification commands."

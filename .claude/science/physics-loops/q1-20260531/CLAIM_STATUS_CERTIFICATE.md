@@ -4,11 +4,11 @@
 actual_current_surface_status: conditional-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: "strict onsite source-domain selection gives charged-lepton Q=2/3; independent odd orientation/basepoint would turn the Q1 APS/Brannen magnitude into a signed delta input"
-hypothetical_axiom_status: "would close the Brannen sign only if an independent signed selected-line orientation/basepoint primitive is added"
+conditional_surface_status: "P_SOURCE gives charged-lepton Q=2/3; P_ORIENT gives delta=+2/9; both together make Koide Q/delta dimensionless closure audit-ready"
+hypothetical_axiom_status: "would close the Q/delta dimensionless package only if P_SOURCE and P_ORIENT are derived from retained charged-lepton physics"
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The packet proves an exact coefficient bridge, an unlock map, a no-go for Q1-alone signed readout, a bottom-up zero-odd-component audit, a gamma-sheet sign-source no-go, and conditional oriented-frame sign compatibility; it does not derive the physical orientation or physical source-domain selection."
+proposal_allowed_reason: "The packet proves an exact coefficient bridge, an unlock map, a no-go for Q1-alone signed readout, a bottom-up zero-odd-component audit, a gamma-sheet sign-source no-go, conditional oriented-frame sign compatibility, and a conditional last-mile unlock cascade; it does not derive P_ORIENT or P_SOURCE."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -27,6 +27,8 @@ Allowed wording:
 - "The source-oriented gamma sheet is invisible to the real diagonal-slot selected-line readout."
 - "The current oriented selected-line frame still gives `delta=+2/9`; the sign is underived from Q1/gamma, not proved wrong."
 - "In an admitted oriented C3 frame, Q1's negative offsite coefficient gives `delta_oriented=-coeff_g(S_Q1)=+2/9`."
+- "If P_ORIENT lands, the delta side is audit-ready; if P_SOURCE lands, the Q side is audit-ready; if both land, Koide Q/delta dimensionless closure is audit-ready."
+- "Unbounded retained is not the Koide status target; this package does not affect Y_T unbounded closure."
 - "This is not dark-matter closure."
 
 Forbidden wording:
@@ -39,4 +41,6 @@ Forbidden wording:
 - "The named C3 generator convention by itself proves the physical sign."
 - "The source-oriented gamma sheet by itself proves the physical sign."
 - "The oriented-frame compatibility by itself derives the physical orientation."
+- "The last-mile unlock cascade by itself derives P_ORIENT or P_SOURCE."
+- "This package upgrades generation labels, absolute masses, or Y_T unbounded closure."
 - "All 2/9 routes are the same object."

@@ -17,6 +17,9 @@ Delivered artifacts:
 - One oriented sign compatibility closeout runner.
 - Oriented sign note recording that the admitted frame gives the right
   `+2/9` sign by `delta_oriented=-coeff_g(S_Q1)`.
+- One last-mile unlock cascade runner.
+- Last-mile unlock note mapping `P_ORIENT`, `P_SOURCE`, audit-ready Q/delta
+  closure, and non-upgrades.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

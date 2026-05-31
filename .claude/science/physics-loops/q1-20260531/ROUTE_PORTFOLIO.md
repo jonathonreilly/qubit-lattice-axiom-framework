@@ -83,6 +83,22 @@ This prunes the wrong-sign worry.  It does not derive the physical orientation;
 it records that the remaining problem is exactly the orientation/basepoint
 theorem.
 
+## Route C7: last-mile unlock cascade
+
+Status: conditional support / dependency certificate.
+
+The final Koide Q/delta last-mile premises split cleanly:
+
+```text
+P_ORIENT -> delta = +2/9
+P_SOURCE -> Q = 2/3
+P_ORIENT + P_SOURCE -> Koide Q/delta dimensionless closure audit-ready
+```
+
+No effective retained status follows before the premises are derived and
+independently audited.  The cascade does not reach generation labels, absolute
+masses, Q1 dark matter, or Y_T unbounded closure.
+
 ## Route D: future charge-two Majorana texture
 
 Status: hypothetical after activation.

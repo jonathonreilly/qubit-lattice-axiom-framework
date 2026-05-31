@@ -8,7 +8,7 @@
 
    Positive result would erase projected `Z` and give `Q = 2/3` on the
    charged-lepton source.  Negative result leaves `Q=1` as an allowed
-   projected counterdomain.
+   projected counterdomain.  In the last-mile cascade this is `P_SOURCE`.
 
 2. Derive a new signed orientation/basepoint primitive:
 
@@ -23,7 +23,8 @@
    gamma sheet has now been tested and does not supply the sign because it is
    invisible to the selected-line diagonal-slot readout.  The oriented-frame
    compatibility closeout shows the current sign is right once that frame is
-   admitted: `delta_oriented=-coeff_g(S_Q1)=+2/9`.
+   admitted: `delta_oriented=-coeff_g(S_Q1)=+2/9`.  In the last-mile cascade
+   this is `P_ORIENT`.
 
 3. Sharpen the Q1/RHN no-go:
 

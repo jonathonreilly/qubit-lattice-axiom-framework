@@ -31,6 +31,11 @@ What to use:
   result: in an oriented C3 frame, `delta_oriented=-coeff_g(S_Q1)=+2/9`.
   The sign is right once the frame is admitted; the frame itself remains the
   missing physical theorem.
+- The last-mile unlock cascade splits the final premises:
+  `P_ORIENT` gives `delta=+2/9`, `P_SOURCE` gives `Q=2/3`, and both together
+  make Koide Q/delta dimensionless closure audit-ready.  This still does not
+  imply generation-label retention, absolute masses, Q1 dark matter, or Y_T
+  unbounded closure.
 
 What not to use:
 
@@ -42,6 +47,8 @@ What not to use:
 - Do not cite the named C3 generator convention as a physical sign theorem.
 - Do not cite the oriented-frame compatibility as a physical orientation
   derivation.
+- Do not cite the last-mile cascade as effective retained status without an
+  independent audit of `P_ORIENT` and `P_SOURCE`.
 - Do not merge the APS, anomaly, Brannen, and offsite matrix coefficient into
   full physical phase closure without a signed selected-line readout theorem.
 

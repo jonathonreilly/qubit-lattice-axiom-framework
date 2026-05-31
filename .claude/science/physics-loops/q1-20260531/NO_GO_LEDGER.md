@@ -98,3 +98,15 @@ delta_oriented = -coeff_g(S_Q1) = +2/9.
 
 The correct remaining obstruction is underivation of the physical orientation,
 not a contradiction of the current `+2/9` selected-line sign.
+
+## Automatic retained/unbounded upgrade from Q/delta compatibility
+
+Runner: `scripts/frontier_koide_q1_last_mile_unlock_cascade.py`
+
+Status: pruned.
+
+The last-mile cascade is exact but conditional.  `P_ORIENT` would close
+`delta=+2/9`, `P_SOURCE` would close `Q=2/3`, and both would make the Koide
+Q/delta dimensionless package audit-ready.  It does not by itself derive either
+premise, does not bypass independent audit, and does not upgrade generation
+labels, absolute masses, Q1 dark matter, or Y_T unbounded closure.

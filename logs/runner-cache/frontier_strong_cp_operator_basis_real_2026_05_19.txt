@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py
-runner_sha256: 9b09f3f1caf95ad21236b4008f656f5198cc3261526b9d149e68bb23ccda7060
+runner_sha256: 381a140a88ca18ee29ad27eb6fbeaafa90a0eee00a1b5061627a18c92165e796
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 ================================================================================
@@ -11,7 +11,7 @@ status: ok
 ================================================================================
  Companion runner to:
    docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
- Parent target: docs/STRONG_CP_THETA_ZERO_NOTE.md (audited_conditional)
+ Parent context: strong-CP theta-zero row (not a load-bearing dependency)
 
  8 verification gates exhibiting slot-construction + rejection on SU(3).
 
@@ -53,12 +53,6 @@ status: ok
 
 === V5: Mass orientation — (C-det) + (C-class) two-constraint split ===
 
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
-  r = _umath_linalg.det(a, signature=signature)
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
-  r = _umath_linalg.det(a, signature=signature)
-/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
-  r = _umath_linalg.det(a, signature=signature)
   [PASS] V5.1  (C-det):  (M-real) det(D + m I) is real-positive (phase ~= 0)  (max|phase| = 1.14e-16)
   [PASS] V5.2  (C-det):  (M-complex, alpha=pi/4) det(D + m e^{i pi/4} I) has NONZERO phase  (max|phase| = 1.6103)
   [PASS] V5.3  (C-class):  (M-real) is pure scalar (M_S != 0, M_P = 0)  (M_S = 1.0000+0.0000j, M_P = 0.0000+0.0000j)
@@ -101,7 +95,7 @@ GATE SUMMARY (8 verification gates):
   GATES: PASS = 8, FAIL = 0
 
 SUB-CHECK SUMMARY:
-  PASS = 39, FAIL = 0, runtime = 0.2s
+  PASS = 39, FAIL = 0, runtime = 0.3s
 ================================================================================
 
 ----- stderr -----

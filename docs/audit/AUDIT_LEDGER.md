@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 614 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1206 |
+| unaudited | 1205 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -36,6 +36,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_emergent_lorentz_invariance_note` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
+| `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
@@ -62,20 +63,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 951 |
 | `audited_conditional` | 18 |
-| `audited_decoration` | 52 |
+| `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1444 |
+| `unaudited` | 1443 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1175 |
-| `decoration` | 53 |
+| `decoration` | 54 |
 | `meta` | 243 |
 | `no_go` | 266 |
 | `open_gate` | 118 |
-| `positive_theorem` | 700 |
+| `positive_theorem` | 699 |
 
 | criticality | count |
 |---|---:|
@@ -1115,6 +1116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` |
 | `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -5826,6 +5828,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** By the exact character expansion, Z_beta^env(W)=sum_(p,q) d_(p,q) z_(p,q)^env(beta) chi_(p,q)(W)=<K(W), v_beta>.  _(class `A`)_
 - **chain closes:** True — Read at the 2026-05-26 bounded scope, the claim is only the finite-sector algebraic identity converting a finite character coefficient vector into its Peter-Weyl evaluation functional. The retained-bounded dependencies supply enough finite packet context for that algebraic surface; the source explicitly excludes the full untruncated Wilson environment and physical coefficient vector.
 - **rationale:** The load-bearing step is a finite-dimensional Peter-Weyl evaluation identity, not a derivation of v_beta or of the actual Wilson environment. The source note's bounded rescope and exclusions keep the actual-env transfer language outside the audited claim boundary. The shared runner's uniqueness and scalar-insufficiency support checks are not load-bearing for this source row, and the remaining sampling/inversion checks do not expand the claim beyond finite-sector coefficient recovery.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Within a retained finite marked class sector, the Peter-Weyl vector K_Lambda(W) is the unique Riesz representative of the retained evaluation functional; no full slice lift B_beta(W) is derived.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260530-235810-6ecb1c3b-gauge_vacuum_plaquette_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For v = sum_(lambda in Lambda) c_lambda chi_lambda and K_Lambda(W) = sum_(lambda in Lambda) d_lambda conj(chi_lambda(W)) chi_lambda, the note asserts <K_Lambda(W), v> = sum_(lambda in Lambda) d_lambda c_lambda chi_lambda(W).  _(class `A`)_
+- **chain closes:** True — The displayed identity follows from orthonormality of the retained character basis with the same Peter-Weyl normalization used by the retained-bounded parent. Finite-dimensional coordinate uniqueness then gives uniqueness of K_Lambda(W) as the representing vector.
+- **rationale:** The mathematical work is finite-dimensional algebra over the compressed rim-evaluation parent: the parent already supplies the retained Peter-Weyl evaluation form, and this note records its Riesz uniqueness. No external comparator or first-principles physics computation is used. The runner's checks are finite sampling/inversion sanity checks plus cross-note phrase support, not an independent derivation of the full slice rim map.
+- **decoration parent:** `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`

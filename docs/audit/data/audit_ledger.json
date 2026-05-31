@@ -112834,43 +112834,67 @@
       "verdict_rationale": "The load-bearing step is a finite-dimensional Peter-Weyl evaluation identity, not a derivation of v_beta or of the actual Wilson environment. The source note's bounded rescope and exclusions keep the actual-env transfer language outside the audited claim boundary. The shared runner's uniqueness and scalar-insufficiency support checks are not load-bearing for this source row, and the remaining sampling/inversion checks do not expand the claim beyond finite-sector coefficient recovery."
     },
     "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T00:00:25.549724+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "A single scalar constraint L(v)=c does not determine a full positive normalized class-sector vector when the relevant level set contains distinct vectors; the displayed R^3 witnesses have equal L and unequal M.",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "Bounded finite marked class-sector Peter-Weyl evaluation-map identity: given the retained finite coefficient vector v_beta, the compressed boundary W-dependence is the canonical vector K(W), with no claim to full physical Wilson-environment coefficients or the full local rim functional."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "no_go",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17": "retained_no_go",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17"
+        ],
+        "load_bearing_score": 7.454,
+        "runner_hash": "47edfb6c99326fe19a417b43935227d32c2d6a135034092f9635894efa843b63",
+        "transitive_descendants": 61
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260530-235810-6ecb1c3b-gauge_vacuum_plaquette_c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed identity follows from orthonormality of the retained character basis with the same Peter-Weyl normalization used by the retained-bounded parent. Finite-dimensional coordinate uniqueness then gives uniqueness of K_Lambda(W) as the representing vector.",
       "claim_id": "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Within a retained finite marked class sector, the Peter-Weyl vector K_Lambda(W) is the unique Riesz representative of the retained evaluation functional; no full slice lift B_beta(W) is derived.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T00:00:25.549724+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
       "deps": [
         "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
         "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
       "load_bearing_score": 7.454,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For v = sum_(lambda in Lambda) c_lambda chi_lambda and K_Lambda(W) = sum_(lambda in Lambda) d_lambda conj(chi_lambda(W)) chi_lambda, the note asserts <K_Lambda(W), v> = sum_(lambda in Lambda) d_lambda c_lambda chi_lambda(W).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "cdc47959f7c68c4cba54779bb60b6af97848ec5e20115e01754f8ff669e1d218",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that the row remains scoped to the retained finite sector and uses the packet's conjugate-linear-first inner-product convention.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -112917,18 +112941,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 6,
+        "B": 3,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 9
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Compressed Rim-Functional Uniqueness",
       "transitive_descendants": 61,
-      "verdict_rationale": null
+      "verdict_rationale": "The mathematical work is finite-dimensional algebra over the compressed rim-evaluation parent: the parent already supplies the retained Peter-Weyl evaluation form, and this note records its Riesz uniqueness. No external comparator or first-principles physics computation is used. The runner's checks are finite sampling/inversion sanity checks plus cross-note phrase support, not an independent derivation of the full slice rim map."
     },
     "gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17": {
       "audit_date": null,

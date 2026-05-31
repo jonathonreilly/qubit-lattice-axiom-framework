@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 171 |
-| **retained_no_go** | 177 |
+| **retained_no_go** | 178 |
 | **retained_bounded** | 623 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1182 |
+| unaudited | 1181 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 962 |
+| `audited_clean` | 963 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1420 |
+| `unaudited` | 1419 |
 
 | claim_type | count |
 |---|---:|
@@ -134,6 +134,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -1270,6 +1271,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 
 ## Audit findings (full)
+
+### `abj_epsilon_index_square_block_no_go_note_2026-05-30`
+
+- **Note:** [`ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The standard massless nearest-neighbor staggered epsilon index A_t[U] vanishes on finite even-periodic Z^4 tori with equal epsilon sublattice sizes for arbitrary U(1) link phases.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-abj_epsilon_index_square`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because B is square, BB^dag and B^dag B have the same spectrum including zero multiplicity, so Tr(exp(-t BB^dag)) - Tr(exp(-t B^dag B)) = 0.  _(class `A`)_
+- **chain closes:** True — The proof reduces to finite-dimensional block matrix algebra: parity bipartition gives an off-diagonal anti-Hermitian D with square block B, and square singular-value pairing cancels the signed heat trace. No external physical premise or numerical comparator is needed for the scoped no-go.
+- **rationale:** The displayed block identities, sign in the lower block, D^dag D diagonalization, and heat-trace cancellation are algebraically consistent under the stated standard staggered nearest-neighbor setup. The runner source genuinely constructs the staggered operator and checks the relevant matrix identities and spectra; it does not import a contested premise or merely print constants. The no-go is narrowly scoped to the standard epsilon-index route on equal-sublattice finite even tori, and the note explicitly leaves taste-singlet, Adams, overlap, continuum, accepted-premise, and imbalanced/curved-complex routes open.
+- **auditor confidence:** high
 
 ### `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28`
 

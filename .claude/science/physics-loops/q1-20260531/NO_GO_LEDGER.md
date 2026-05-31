@@ -110,3 +110,15 @@ The last-mile cascade is exact but conditional.  `P_ORIENT` would close
 Q/delta dimensionless package audit-ready.  It does not by itself derive either
 premise, does not bypass independent audit, and does not upgrade generation
 labels, absolute masses, Q1 dark matter, or Y_T unbounded closure.
+
+## Full P_ORIENT from spatial/taste carrier alone
+
+Runner: `scripts/frontier_koide_q1_physical_orientation_basepoint_probe.py`
+
+Status: bounded support only.
+
+The oriented generator `g` is not a free convention: it is the proper spatial
+`C3[111]` rotation and the `T1` image of full taste-cube descent.  However,
+this still does not derive the microscopic source/endpoint/readout law needed
+to turn the oriented carrier into the physical selected-line basepoint.  The
+full `P_ORIENT` premise remains open.

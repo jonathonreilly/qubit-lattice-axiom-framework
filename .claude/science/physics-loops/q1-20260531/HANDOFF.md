@@ -36,6 +36,11 @@ What to use:
   make Koide Q/delta dimensionless closure audit-ready.  This still does not
   imply generation-label retention, absolute masses, Q1 dark matter, or Y_T
   unbounded closure.
+- The physical orientation/basepoint probe narrows `P_ORIENT`: the oriented
+  generator `g` is the proper spatial `C3[111]` rotation and the full taste-cube
+  descent image on `T1`.  Thus the orientation carrier is bounded support, not
+  a free convention.  Full `P_ORIENT` still needs the microscopic full-cube
+  source law and selected-line endpoint/basepoint/readout.
 
 What not to use:
 
@@ -47,6 +52,8 @@ What not to use:
 - Do not cite the named C3 generator convention as a physical sign theorem.
 - Do not cite the oriented-frame compatibility as a physical orientation
   derivation.
+- Do not cite the physical orientation/basepoint probe as full `P_ORIENT`
+  closure; it only lands the spatial/taste `g` carrier.
 - Do not cite the last-mile cascade as effective retained status without an
   independent audit of `P_ORIENT` and `P_SOURCE`.
 - Do not merge the APS, anomaly, Brannen, and offsite matrix coefficient into
@@ -55,5 +62,5 @@ What not to use:
 Best next theorem:
 
 ```text
-derive_physical_selected_line_slot_orientation_or_source_domain_Z_erasure
+derive_full_cube_source_law_selects_forward_oriented_channel_and_selected_line_endpoint
 ```

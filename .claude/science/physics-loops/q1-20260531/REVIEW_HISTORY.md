@@ -12,4 +12,5 @@ Pre-review local verification:
 - The gamma sheet sign probe runner exits 0.
 - The oriented sign compatibility closeout runner exits 0.
 - The last-mile unlock cascade runner exits 0.
-- `python3 -m py_compile` exits 0 on all thirteen new scripts.
+- The physical orientation/basepoint probe runner exits 0.
+- `python3 -m py_compile` exits 0 on all fourteen Q1 scripts.

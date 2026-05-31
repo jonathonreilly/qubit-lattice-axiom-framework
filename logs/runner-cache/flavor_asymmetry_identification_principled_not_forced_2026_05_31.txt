@@ -1,0 +1,16 @@
+[PASS] F1 single-fixed-point local density L_3(1,2)=2/9; global sum = L*(2/9) extensive
+       local=2/9; L=4 sum=8/9, L=6 sum=4/3
+[PASS] F1b global eta = sum sign(lambda) = 0 (Gamma5 +/- pairing) -> excluded (dimensionless != 0)
+[PASS] F2 type-filter (intensive/dimensionless) EXCLUDES global-eta(0) & extensive-sum(L*2/9); (c) only survivor
+       FORCED elimination of (a),(b); NOT a cherry-pick -- (c) is the sole type-consistent object
+[PASS] F3/F4 NOT fully forced: (c) is a SUMMAND of (b); promoting contribution->observable needs the (undischarged) generation-space bridge
+       gen space = C3[111] fixed locus reading its local density: load-bearing, undischarged on main
+[PASS] F5 dimensionless 2/9 != CP radian-delta (2/9 rad): (2/9)/(q*pi) irrational (retained radian-bridge separation)
+       not conflated; the radian-bridge no-go is a different surface
+
+SCORECARD PASS=5 FAIL=0
+VERDICT: PRINCIPLED-BUT-NOT-FORCED. Type-filter forces (c) among the three index objects (excludes
+eta=0 and the extensive sum) -- not a cherry-pick. But the single-locus density is a CONTRIBUTION,
+not an invariant; treating it as the observable needs the generation-space bridge (gen space =
+C3[111] fixed locus), UNDISCHARGED on main. So 2/9 = derived-modulo-the-generation-space-bridge:
+NOT a closed prediction, NOT a no-go -- ONE named, well-posed bridge remains.

@@ -25,6 +25,10 @@
 - Oriented sign compatibility closeout: in an admitted oriented C3 frame,
   `delta_oriented=-coeff_g(S_Q1)=+2/9`; the physical orientation remains
   load-bearing.
+- Last-mile unlock cascade: `P_ORIENT` and `P_SOURCE` are explicit open
+  premises; if both are derived, Koide Q/delta dimensionless closure becomes
+  audit-ready, while generation labels, absolute masses, Q1 dark matter, and
+  Y_T unbounded closure remain outside the package.
 
 ## Not Used
 

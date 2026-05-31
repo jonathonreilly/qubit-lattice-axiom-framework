@@ -12,13 +12,17 @@ next_trace_action: "Derive an independent signed selected-line orientation/basep
 
 The coefficient bridge supports the existing phase blocker, while the signed
 readout, bottom-up sign, and gamma-sheet audits prune the stronger routes
-"Q1 alone supplies the signed selected-line phase" and "the source-oriented
+  "Q1 alone supplies the signed selected-line phase" and "the source-oriented
 gamma sheet supplies the selected-line sign."  The oriented-sign compatibility
 closeout adds the positive conditional statement: once the oriented C3 /
 selected-line frame is admitted, Q1's negative offsite coefficient gives the
-current `+2/9` sign by `delta_oriented=-coeff_g(S_Q1)`.  The blocker is now
-sharper: a positive closure must derive that physical orientation/basepoint
-primitive, not repair a wrong sign.
+current `+2/9` sign by `delta_oriented=-coeff_g(S_Q1)`.
+
+The last-mile unlock cascade records the exact downstream consequence:
+`P_ORIENT` would close the delta side, `P_SOURCE` would close the Q side, and
+both would make Koide Q/delta dimensionless closure audit-ready.  The trace
+does not reach generation labels, absolute masses, Q1 dark matter, or Y_T
+unbounded closure.
 
 The unlock map also marks the positive source-domain path: strict onsite
 descent erases the Q1 reduced `Z` coordinate and returns `Q=2/3`.  That path

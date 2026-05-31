@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 632 |
+| **retained_bounded** | 633 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1157 |
+| unaudited | 1156 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 973 |
+| `audited_clean` | 974 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1395 |
+| `unaudited` | 1394 |
 
 | claim_type | count |
 |---|---:|
@@ -692,6 +692,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_mutual_information_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_vs_central_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `mixed_entangled_os_transfer_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `mixed_os_transfer_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -10104,6 +10105,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — Within the bounded finite-carrier scope, the supplied runner instantiates the lattice matrices and compares separate Berezin/Wick and operator/Fock code paths, including det-weighted averaging and non-vacuity controls. The only cited note needed for determinant positivity is marked retained in the restricted packet.
 - **rationale:** The load-bearing equality is a finite first-principles computation, not a renaming or tuned external comparison. The runner output reports PASS=27 FAIL=0, including P0/P1 equality, determinant positivity, Hermiticity, per-mode-factorized and flat-average controls, single-step indefiniteness, and Schmidt-rank entanglement checks. The source note keeps the conclusion bounded to the finite carrier and explicitly excludes continuum reconstruction, Wilson-boundary positivity, full interacting RP, and the four-fermion observable.
 - **auditor confidence:** medium
+
+### `mixed_os_transfer_representation_bounded_note_2026-05-30`
+
+- **Note:** [`MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`](../../docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-carrier fermion-sector representation equality on the explicit runner carriers: the Berezin block metric eigenvalues match independently computed operator two-step transfer eigenvalues, with the listed single-step negative control.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-163505-4c802892-mixed_os_transfer_repres`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The reflected Berezin/Wick 2-step block metric for each staggered fermion mode has its single positive eigenvalue equal to c_block * e^{-2E_j} with c_block = 2, and the same finite-carrier equality holds for the tested fixed U(1)/SU(3) backgrounds and position-basis Gram.  _(class `C`)_
+- **chain closes:** True — Within the bounded finite-carrier scope, the runner instantiates the staggered Dirac matrix, performs Wick contractions with M^{-1}, separately computes the spatial-hop energies and Fock/operator transfer blocks, and compares them to numerical precision. The source explicitly excludes the full mixed gauge-fermion representation, determinant/Haar measure, compact-group gauge positivity, and continuum OS reconstruction.
+- **rationale:** The load-bearing comparison is not a definition or external numerical match: the Berezin side is computed from the finite Grassmann propagator while the operator side is computed from the spatial-hop spectrum and Fock transfer construction. The runner output covers the displayed finite-carrier quantitative claims in scope, including c_block = 2, the e^{-2E} decay anchor, and the single-step indefinite negative control. CHECK 3 is correctly scoped as a shared-wrapper per-config fermion equality, not as an independent mixed-observable gauge-fermion test.
+- **auditor confidence:** high
 
 ### `momentum_charge_commute_theorem_note_2026-05-02`
 

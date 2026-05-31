@@ -32,6 +32,14 @@ remaining trace action is now the microscopic source/endpoint/readout theorem
 that chooses the forward oriented channel as the physical selected-line
 basepoint.
 
+The source-endpoint / record-measure no-go prunes the next shortcut.  The
+sharp record `S=C+C^2` forces two atoms with ranks `(1,2)`, but leaves
+count-vs-rank measure open; reflection fixes `S` while swapping `Qf <-> Qb`;
+and the endpoint orbit is unbased.  Thus the missing trace action cannot be
+an `S`-only algebra step.  It must be an orientation-odd source/boundary law,
+an independent records/objectivity measure principle, or the separate
+`P_SOURCE` source-domain theorem.
+
 The unlock map also marks the positive source-domain path: strict onsite
 descent erases the Q1 reduced `Z` coordinate and returns `Q=2/3`.  That path
 still needs a physical source-domain theorem before it can be cited as

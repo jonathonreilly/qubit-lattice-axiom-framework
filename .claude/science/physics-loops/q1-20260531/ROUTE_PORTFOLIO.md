@@ -126,6 +126,27 @@ selected-line endpoint/basepoint/readout are not derived.  The next theorem is
 therefore narrower: select the forward oriented channel and the selected-line
 endpoint from physical source data.
 
+## Route C9: S-record source-endpoint / measure shortcut
+
+Status: no-go for the restricted shortcut.
+
+The native sharp record
+
+```text
+S = C + C^2 = 2 P0 - P1
+```
+
+does force two record atoms with ranks `(1,2)`, but it does not choose their
+measure.  Equal atom weights give the block-count `Q=2/3` lane, while the
+rank/Born push-forward from `I/3` gives the trace/default `Q=1` lane.  Both
+are `C3`-invariant completions.
+
+The same shortcut also cannot select the forward channel: reflection fixes
+`S` while swapping `C <-> C^2` and full-cube `Qf <-> Qb`.  Nor can it select an
+endpoint, because the three coordinate endpoints form a free `C3` orbit.  A
+successful next theorem must therefore add an orientation-odd source/boundary
+law or an independent measure principle; it cannot be built from `S` alone.
+
 ## Route D: future charge-two Majorana texture
 
 Status: hypothetical after activation.

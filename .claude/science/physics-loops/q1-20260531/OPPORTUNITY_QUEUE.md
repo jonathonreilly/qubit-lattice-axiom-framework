@@ -26,6 +26,13 @@
    supplied: `delta_oriented=-coeff_g(S_Q1)=+2/9`.  In the last-mile cascade
    this is the unresolved part of `P_ORIENT`.
 
+   The new source-endpoint / record-measure no-go rules out the `S=C+C^2`
+   shortcut: the sharp record gives two atoms, but not the atom measure; it is
+   reflection-even and cannot choose `Qf` over `Qb`; and it has no unbased
+   endpoint selector.  The remaining positive handles are now explicit:
+   orientation-odd full-cube source/boundary law, records/objectivity measure
+   principle, or a separate source-domain theorem.
+
 3. Sharpen the Q1/RHN no-go:
 
    Extend the scoped U(1)-equivariant direct-bridge no-go to a larger class,

@@ -32,7 +32,7 @@ def main():
     w=sp.exp(2*sp.pi*sp.I/3); passed=[]
     L=lambda a:sp.nsimplify(sp.simplify((sp.Rational(1,3))*sum(1/((w**(k*a[0])-1)*(w**(k*a[1])-1)) for k in range(1,3))))
     passed.append(check("O1 local Atiyah-Bott density L_3(1,2)=2/9 (det(1-dg|transverse)=3); (1,1)->1/9",
-        L((1,2))==sp.Rational(2,9) and L((1,1))==sp.Rational(1,9) and sp.simplify((1-w)*(1-w**2))==3))
+        L((1,2))==sp.Rational(2,9) and L((1,1))==sp.Rational(1,9) and sp.nsimplify(sp.simplify((1-w)*(1-w**2)))==3))
     # O2 Gamma5-anticommuting H -> global eta=0
     np.random.seed(0); A=np.random.randn(3,3)+1j*np.random.randn(3,3)
     H=np.block([[np.zeros((3,3)),A],[A.conj().T,np.zeros((3,3))]]); G5=np.diag([1,1,1,-1,-1,-1.])

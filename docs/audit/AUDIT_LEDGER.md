@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 178 |
-| **retained_bounded** | 623 |
+| **retained_bounded** | 624 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1181 |
+| unaudited | 1180 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 963 |
+| `audited_clean` | 964 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1419 |
+| `unaudited` | 1418 |
 
 | claim_type | count |
 |---|---:|
@@ -186,6 +186,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_entropy_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -2107,6 +2108,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
   - `BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md::WM`
+- **auditor confidence:** high
+
+### `beyond_lattice_qcd_note`
+
+- **Note:** [`BEYOND_LATTICE_QCD_NOTE.md`](../../docs/BEYOND_LATTICE_QCD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner diagnostic only: on the specified graph models, the gravity-coupled propagator changes detector statistics, and the linear slit path-sum with quadratic readout yields vanishing Sorkin I_3 across the tested parameter sweeps.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-152219-25b3ea0f-beyond_lattice_qcd_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner-computed finite numerical results are exactly produced: gravity-coupled propagation changes detector centroid, shape, spread, and visibility on the 32^3 lattice, and the linear path-sum gives Sorkin I_3 = 0 to machine precision over the tested k and slit-spacing sweeps.  _(class `C`)_
+- **chain closes:** True — The included runner source constructs the sparse Poisson field, propagates the wavepacket, computes the detector statistics, and computes I_3 from the slit combinations; the source-note table matches the cached stdout to the stated precision. Closure is only for the finite diagnostic, because the probability/readout bridge and physical graph-gravity/lattice-QCD comparison are explicitly split off as non-load-bearing.
+- **rationale:** The runner does not hard-code the contested numerical outputs; it computes them from the stated finite lattice, Poisson solve, transfer matrix, slit geometry, and path-sum rules. The displayed quantitative table entries and I_3 formula are consistent with the runner output, and the I_3 cancellation also follows algebraically for linear amplitudes with the supplied quadratic readout. The clean verdict applies only to the bounded runner diagnostics, not to a derived Born rule or a physical theorem distinguishing the framework from lattice QCD.
 - **auditor confidence:** high
 
 ### `bh_entropy_derived_note`

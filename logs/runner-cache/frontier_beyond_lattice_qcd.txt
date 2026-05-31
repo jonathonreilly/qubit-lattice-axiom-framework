@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beyond_lattice_qcd.py
-runner_sha256: e747d61be70e5d09589deb86ef50e43ccb8b367e2496264b05e7df690a94ad89
+runner_sha256: 9753c95dd32859f334d4f049f619fc87c3cc33de0684c092830d600dc87c21ec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 13.00
+elapsed_sec: 4.91
 status: ok
 ----- stdout -----
 ========================================================================
@@ -18,15 +18,15 @@ it is these concrete, testable differences.
 RESULT 1: GRAVITY-QM INSEPARABILITY
 ========================================================================
 
-Lattice QCD: lattice is a fixed scaffold. Quantum fields live ON it.
-This framework: the graph IS gravity. Removing f changes QM correlations.
+Reference contrast: a regulator lattice is a fixed scaffold.
+Runner surface: coupling f changes quantum propagation diagnostics.
 
 Grid: 32^3,  k=6.0,  mass_strength=8.0
 Source: (1, 16, 16),  Mass: (16, 20, 16)
 
-  Case A (free, f=0):        0.5s
-  Case C (with gravity):     5.5s
-  Case D (self-consistent):  6.6s
+  Case A (free, f=0):        0.2s
+  Case C (with gravity):     2.1s
+  Case D (self-consistent):  2.1s
 
   Measure 1: Y-centroid at detector plane (deflection)
     Free:            15.9925
@@ -51,17 +51,16 @@ Source: (1, 16, 16),  Mass: (16, 20, 16)
 
   SUMMARY:
   [PASS] Gravity modifies the propagator's quantum structure.
-         The gravitational field is NOT an external add-on --
-         it changes deflection, coherence, and spread.
-         Lattice QCD has no analog: its lattice is inert.
+         The coupled field changes deflection, coherence, and spread.
+         Physical graph-gravity identification remains a separate bridge.
 
 ========================================================================
-RESULT 2: STRUCTURAL BORN RULE (Sorkin I_3 = 0)
+RESULT 2: SORKIN PAIRWISE-INTERFERENCE DIAGNOSTIC (I_3 = 0)
 ========================================================================
 
-Lattice QCD: Born rule (p = |amplitude|^2) is an axiom of QM.
-This framework: Born rule follows from linearity of path-sum.
-Test: Sorkin three-slit parameter I_3 must vanish identically.
+Reference contrast: the quadratic probability readout is an input.
+Runner surface: linear path-sum should give vanishing Sorkin I_3.
+Test: Sorkin three-slit parameter I_3 vanishes numerically.
 
   Three-slit geometry: 20 x 21 lattice, k = 4.0
   Slits at y = 7, 10, 13
@@ -91,9 +90,8 @@ Test: Sorkin three-slit parameter I_3 must vanish identically.
 
   SUMMARY:
   [PASS] I_3 = 0 to machine precision at all k and spacings.
-         The Born rule is a THEOREM of the linear path-sum,
-         not an additional axiom.
-         Lattice QCD assumes this; we derive it.
+         The linear path-sum satisfies the Sorkin diagnostic.
+         The probability/readout theorem remains a separate bridge.
          Control: nonlinear propagator gives I_3/P = 1.61e-01,
          confirming the test has discriminating power.
 
@@ -107,22 +105,22 @@ Result 1 (Gravity-QM inseparability):
     - Shape difference:   0.352322
     - Spread change:      -1.6697
     - Visibility change:  +0.688613
-  In lattice QCD, the lattice is inert. There is no analog
-  for the lattice itself lensing quantum matter.
+  This is a runner diagnostic on the coupled graph-field surface.
+  A framework-vs-lattice-QCD theorem is not claimed here.
 
-Result 2 (Structural Born rule):
+Result 2 (Sorkin pairwise-interference diagnostic):
   I_3/P < 1e-12 at all k and slit spacings tested.
   Nonlinear control: I_3/P = 1.61e-01 (>>0, test has power).
-  The Born rule is derived, not assumed.
-  Lattice QCD postulates the Born rule; this framework proves it.
+  The runner verifies pairwise-only interference on this surface.
+  It does not by itself derive the probability/readout rule.
 
 Concrete answer to 'how is this different from lattice QCD?':
-  1. The graph IS gravity -- removing it changes quantum correlations.
-     Lattice QCD's lattice is a regulator, not a gravitational field.
-  2. The Born rule is a theorem of the linear path-sum structure.
-     Lattice QCD assumes it as an axiom of quantum mechanics.
+  1. Coupling f changes quantum propagation diagnostics.
+     A physical graph-gravity theorem needs a separate bridge.
+  2. The linear path-sum satisfies the Sorkin I_3 diagnostic.
+     A full probability/readout theorem needs a separate bridge.
 
-Total runtime: 12.7s
+Total runtime: 4.4s
 
 ----- stderr -----
 

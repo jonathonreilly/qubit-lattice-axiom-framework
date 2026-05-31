@@ -11,9 +11,11 @@ next_trace_action: "Derive an independent signed selected-line orientation/basep
 ```
 
 The coefficient bridge supports the existing phase blocker, but the signed
-readout and bottom-up sign audits prune the stronger route "Q1 alone supplies
-the signed selected-line phase."  The blocker is now sharper: a positive
-closure must derive an independent odd orientation/basepoint primitive.
+readout, bottom-up sign, and gamma-sheet audits prune the stronger routes
+"Q1 alone supplies the signed selected-line phase" and "the source-oriented
+gamma sheet supplies the selected-line sign."  The blocker is now sharper: a
+positive closure must derive an independent odd orientation/basepoint primitive
+that is visible to the charged-lepton selected-line readout.
 
 The unlock map also marks the positive source-domain path: strict onsite
 descent erases the Q1 reduced `Z` coordinate and returns `Q=2/3`.  That path

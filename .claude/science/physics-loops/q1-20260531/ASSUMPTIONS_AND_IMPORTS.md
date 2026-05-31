@@ -19,6 +19,9 @@
   the Q1 APS/Brannen magnitude into a signed-delta input.
 - Bottom-up sign audit: Q1 generates only `span{e,g+g^2}` and has zero
   projection onto the signed phase line `i(g-g^2)`.
+- Gamma sheet sign probe: `gamma -> -gamma` complex-conjugates the selected-line
+  carrier but leaves the real diagonal-slot readout invariant, so it does not
+  supply the selected-line sign.
 
 ## Not Used
 

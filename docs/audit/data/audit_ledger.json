@@ -145987,24 +145987,48 @@
       "verdict_rationale": "Clean only as an open gate, not as a retained lattice plaquette value or nontrivial bracket theorem. The lower bound p1>=0.4225 is imported/admitted, not derived by the SDP. The runner hard-codes that lower bound and hard-codes MC/bridge comparators for reporting, but those constants are not needed for the scoped upper-bound non-improvement result."
     },
     "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T16:06:10.218996+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": "The qubit-lattice quasi-local C*-algebra \u2297_{x\u2208Z^3} M_2(C), formed as the norm closure of finite local tensor products, has a unique tracial state whose finite-region restrictions are normalized traces."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ae75c79257aaa6b4eed3d5ee11d21f7fe9593d6b5ef900461e600a81698bab62",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-160431-0fbefd8d-inner_automorphism_invar",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-dimensional implication closes: full unitary conjugation invariance makes rho commute with all unitaries, hence scalar, and trace normalization fixes I_d/d. The open part is not the algebraic step but the separately admitted PRR premise.",
       "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Conditional finite-region result: on each finite qubit region A_Lambda ~= M_{2^|Lambda|}(C), PRR/full inner-unitary invariance implies rho_ref|_Lambda = I_d/d; PRR itself is not audited or approved.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T16:06:10.218996+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -146013,19 +146037,19 @@
         "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For a finite-dimensional matrix algebra M_d(C), the only density matrix fixed by conjugation rho -> U rho U^dagger for every unitary U in U(d) is rho = I_d/d.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4653b4a309ded6dc81632a1cbfb3585905fcf7ac53e830261b28abd2550ea109",
       "note_path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive PRR from retained framework authority or record explicit approved admission before promoting this beyond a conditional bridge theorem.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -146256,18 +146280,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 24,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 24
       },
       "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
       "title": "Conditional Inner-Automorphism Invariance Identifies the Pre-Record State as Tracial",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing finite-dimensional algebra is correct, and the runner source performs genuine internal checks of the sign-unitary, permutation, trace-normalization, partial-trace, and boundary-string claims. The cited axiom premise is allowed by the rubric carve-out, and the retained UHF note is not a blocker. However the note explicitly imports PRR as an external admitted premise and repeatedly states that PRR is not derived or approved here. Under the rubric, that explicit unclosed premise makes the row conditional even though the scoped implication itself is sound."
     },
     "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "audit_date": null,
@@ -229924,8 +229948,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "Any tracial state on A restricts to the normalized trace on every finite-region matrix algebra, so it agrees with \u03c4\u221e on the dense local subalgebra and norm-continuity extends the equality to all of A.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_conditional",
+      "max_descendant_status_rank": 10,
       "note_hash": "4d8d4f1c7702ee4e0992508f8aec376d96497fa42378a5e49cb57612b68f484c",
       "note_path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check only the implicit use of the standard inductive-limit construction and norm-density of the local algebra, since no runner artifact is provided.",

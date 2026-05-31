@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_inner_automorphism_invariance_tracial_identification.py
-runner_sha256: 0b413dab9ad06e4d20af71a603376d34cd9ef1887bb8e226e1d938facff51096
+runner_sha256: ae75c79257aaa6b4eed3d5ee11d21f7fe9593d6b5ef900461e600a81698bab62
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 # Conditional inner-automorphism tracial-identification runner
@@ -65,7 +65,7 @@ T5: source note boundary strings
          present=True
   [PASS] required boundary string present: does not add a new framework axiom or rule
          present=True
-  [PASS] required boundary string present: derive PRR from A1+A2
+  [PASS] required boundary string present: derive PRR from Axiom 1 + Axiom 2
          present=True
   [PASS] required boundary string present: conditional bridge theorem
          present=True

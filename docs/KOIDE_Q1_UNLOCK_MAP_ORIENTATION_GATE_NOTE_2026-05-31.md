@@ -104,6 +104,17 @@ With `epsilon = +1`, the phase would be `delta = +2/9`.  With
 `epsilon = -1`, the mirror phase is selected.  The current packet does not
 derive `epsilon`.
 
+The bottom-up sign audit sharpens this further.  In the C3 group algebra:
+
+```text
+S_Q1 = 10/9 e - 2/9(g + g^2)
+J    = i(g - g^2).
+```
+
+`S_Q1` generates only the even subalgebra `span{e, g+g^2}`.  The signed
+selected-line phase lives on the odd line `span{J}`.  The projection of Q1
+onto that line is exactly zero.
+
 ### 4. Selected-line point
 
 Once a signed `delta` is genuinely closed, the existing selected-line cyclic
@@ -174,5 +185,7 @@ Q1_DARK_MATTER_CLOSURE=FALSE
   - exact coefficient bridge.
 - [`KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md`](KOIDE_Q1_SIGNED_SELECTED_LINE_READOUT_NO_GO_NOTE_2026-05-31.md)
   - no-go for signed readout from Q1 alone.
+- [`KOIDE_Q1_BOTTOM_UP_SIGN_ORIENTATION_AUDIT_NOTE_2026-05-31.md`](KOIDE_Q1_BOTTOM_UP_SIGN_ORIENTATION_AUDIT_NOTE_2026-05-31.md)
+  - first-principles audit of the sign from the C3 even/odd split.
 - [`KOIDE_SELECTED_LINE_CYCLIC_RESPONSE_BRIDGE_NOTE_2026-04-18.md`](KOIDE_SELECTED_LINE_CYCLIC_RESPONSE_BRIDGE_NOTE_2026-04-18.md)
   - selected-line point once a phase is closed.

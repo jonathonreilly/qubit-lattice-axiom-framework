@@ -10,6 +10,8 @@ Delivered artifacts:
 - One signed selected-line readout no-go runner.
 - One unlock-map/orientation-gate runner.
 - Unlock-map note answering what lands if the Q1 packet lands.
+- One bottom-up sign/orientation audit runner.
+- Bottom-up sign note proving Q1 has zero component on the odd sign line.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

@@ -47,3 +47,21 @@ Status: exact no-go.
 Q1 is fixed under the transposition swapping `g` and `g^2`; `delta` is odd.
 Every equivariant map from a fixed input to an odd line gives zero.  Therefore
 Q1 alone cannot supply the signed phase.  It can supply only the magnitude.
+
+## Hidden bottom-up sign primitive from Q1
+
+Runner: `scripts/frontier_koide_q1_bottom_up_sign_orientation_audit.py`
+
+Status: exact no-go.
+
+From the C3 group algebra alone,
+
+```text
+S_Q1 = 10/9 e - 2/9(g+g^2)
+J    = i(g-g^2).
+```
+
+Q1 generates only `span{e,g+g^2}`.  The selected-line sign lives on the odd
+line `span{J}`.  The projection is exactly zero, and the mirror selected-line
+spectra at `+delta` and `-delta` are degenerate unless a based orientation is
+supplied.

@@ -8,4 +8,5 @@ Pre-review local verification:
 - The added coefficient bridge runner exits 0.
 - The signed selected-line readout no-go runner exits 0.
 - The unlock-map/orientation-gate runner exits 0.
-- `python3 -m py_compile` exits 0 on all nine new scripts.
+- The bottom-up sign/orientation audit runner exits 0.
+- `python3 -m py_compile` exits 0 on all ten new scripts.

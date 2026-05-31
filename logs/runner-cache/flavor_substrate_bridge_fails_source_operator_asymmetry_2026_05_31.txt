@@ -1,0 +1,16 @@
+[PASS] B3 literal source-free S=I (z=0) -> degenerate {1,1,1} -> Q=1/3, NOT 2/3
+       eig=[1. 1. 1.], Q=0.3333; z=0<=>r=1/2 is a Mobius re-centering on the carrier
+[PASS] B4a split mass operator (r=1/2), signed readout -> Q=2/3
+       eig=[0.293 0.293 2.414], Q_signed=0.6667
+[PASS] B4b onsite descent of the OPERATOR H (Diag) -> degenerate -> Q=1/3 (locality destroys masses)
+       Diag(H) eig=[1. 1. 1.], Q=0.3333; Q=2/3 needs locality on SOURCE but NOT operator = unjustified asymmetry
+[PASS] B1 single_axiom_hilbert=audited_renaming, single_axiom_information=meta: ASSUME locality, NOT retained
+       their own headers + audit verdicts: do NOT derive locality/Born/Hamiltonian from A1; not near retained-grade
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: the substrate-necessity bridge CANNOT upgrade A2-PLUS -> A2. (B1) the vehicles assume not
+derive locality and are not retainable; (B2) even retained they give generic not source-specific
+locality; (B3) the centering re-centers on the answer (literal S=I -> degenerate Q=1/3); (B4, fatal)
+the onsite-source line needs locality on the SOURCE but not the OPERATOR -- applied consistently to
+the mass operator, onsite-locality gives degenerate Q=1/3, not Q=2/3. So locality does NOT select
+Q=2/3; it either destroys the masses or requires an unjustified source/operator asymmetry.

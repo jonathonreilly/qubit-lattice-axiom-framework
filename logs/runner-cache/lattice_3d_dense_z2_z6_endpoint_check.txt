@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/lattice_3d_dense_z2_z6_endpoint_check.py
+runner_sha256: bcc555d882ffe0f8363c32488738949624c6cd783789dc0dda7002f2a1349f7f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+============================================================================================
+3D DENSE SPENT-DELAY z=2..6 ENDPOINT CHECK
+  dedicated finite endpoint runner over the existing dense 10-property harness
+============================================================================================
+ z     centroid       P_near         bias         sign
+--------------------------------------------------------------------------------------------
+ 2 +3.101326e-03 +1.469137e-03 +1.070972e-01   ATTRACTIVE
+ 3 +1.941146e-03 +3.741160e-04 +1.763808e-01   ATTRACTIVE
+ 4 +1.157377e-03 +6.261414e-04 +1.136756e-01   ATTRACTIVE
+ 5 +6.932863e-04 +7.148235e-04 +4.860136e-02   ATTRACTIVE
+ 6 +5.723120e-04 +5.356147e-04 +1.115616e-04   ATTRACTIVE
+
+SAFE READ
+  hierarchy-aligned support: 5/5 points
+  centroid law over z=2..6: b^(-1.61), R^2=0.985
+  z=6 endpoint is positive but small; no asymptotic theorem is claimed
+  [PASS (C)] z=2..6 finite endpoint assertion surface
+ASSERTIONS: PASS
+
+----- stderr -----
+

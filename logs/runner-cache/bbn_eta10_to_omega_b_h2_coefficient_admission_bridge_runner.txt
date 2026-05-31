@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
-runner_sha256: 8b986b46d4c5a58a1352987d36950346693a1a268471f97577fce5e5e9a4570d
+runner_sha256: 4715711e683fdad3f6ec25462e4258d51d819e239e848cb0d49f2a512394fdf5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 BBN COEFFICIENT 3.6515e-3 ADMISSION BRIDGE
@@ -21,11 +21,16 @@ PASS: source contains boundary phrase: Cyburt
 PASS: source contains boundary phrase: 2 zeta(3)
 PASS: source contains boundary phrase: Planck distribution
 PASS: source contains boundary phrase: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
+PASS: source contains boundary phrase: **Claim type:** bounded support note
+PASS: source contains boundary phrase: **Type:** conditional / support
+PASS: source contains boundary phrase: source-side claim type is `bounded support note` / `conditional / support`
 PASS: source excludes forbidden phrase: Tier-B partial-derivation
 PASS: source excludes forbidden phrase: Tier B partial derivation
 PASS: source excludes forbidden phrase: framework derives m_p
 PASS: source excludes forbidden phrase: framework derives T_CMB
 PASS: source excludes forbidden phrase: **Status:** retained
+PASS: source excludes forbidden phrase: **Type:** bounded_theorem
+PASS: source excludes forbidden phrase: **Claim type:** bounded_theorem
 PASS: source excludes forbidden phrase: audited_clean
 
 == Part 1: analytic factor 2 zeta(3) / pi^2 ==
@@ -49,7 +54,7 @@ PASS: source says one factor out of five is analytic rather than empirical
 PASS: source keeps the remaining four components imported as P1-P4
 PASS: bridge does not promote the parent cosmology cascade row
 
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=34 FAIL=0
 VERDICT: bounded admission bridge passes; the textbook coefficient 3.6515e-3 decomposes into one analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and four imported premises (P1 m_p, P2 T_CMB, P3 rho_crit/h^2, P4 Cyburt convention / residual normalization), recovered to within 0.13% of the Cyburt+ 2016 published value.
 
 ----- stderr -----

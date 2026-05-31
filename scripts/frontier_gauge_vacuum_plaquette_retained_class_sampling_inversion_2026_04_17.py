@@ -156,7 +156,9 @@ def main() -> int:
     )
     check(
         "Scalar-value insufficiency note already records that one scalar sample does not determine the retained coefficient vector",
-        "one scalar framework-point value does not determine the class-sector vector" in scalar_note,
+        "one scalar value does not determine" in scalar_note
+        and "positive normalized class-sector vector" in scalar_note
+        and "a scalar plaquette value alone cannot be treated as full class-sector data" in scalar_note,
         bucket="SUPPORT",
     )
 

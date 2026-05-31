@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py
-runner_sha256: 47edfb6c99326fe19a417b43935227d32c2d6a135034092f9635894efa843b63
+runner_sha256: d4a229312e7dba03b8f7d918341873bebad64c24e8315fb6e8e134a3df9ab1ed
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ================================================================================================

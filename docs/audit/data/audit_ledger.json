@@ -175786,24 +175786,42 @@
       "verdict_rationale": "All cited authorities are retained-grade or retained-bounded, and the primary runner source genuinely computes the raw NN observables at h = 0.125 rather than merely printing constants. The note itself is a bounded cross-note reconciliation rather than a new first-principles theorem, but its conclusion follows from the provided retained inputs and the included successful raw-kernel certificate. The RG caveat is also supported by the cited RG gravity and alpha-sweep notes."
     },
     "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T16:29:17.063186+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "511c683859e8a7e8fa84bf8fb0d1e5610ffeb907085c6495378eebcbfaae5941",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-162519-f01dd57a-lattice_noether_carrier_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The AxisInv reindexing and anti-Hermiticity algebra close on the stated finite matrix surface. However the displayed Wick-contracted on-shell convention is not closed from the cited exp(-chi_bar M chi) Berezin determinant convention.",
       "claim_id": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Finite-Grassmann nearest-neighbour bilateral Noether identity for real axis-translation-invariant carriers and site-local/internal generators T with [T,M]=0, excluding M_KS identification and lattice-index-shifting Ward identities.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T16:29:17.063186+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -175811,19 +175829,19 @@
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By AxisInv, the reindexed backward coefficient satisfies c_mu(x' + mu_hat) = c_mu(x'), so the backward and forward hop terms combine into the bilateral current J^mu_x(T).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "fc40f7b0e3da3f2fb211c5ab0e2f804780be02bcf27da451a8e12f60c7cf50e2",
       "note_path": "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly define the Wick-contraction sign convention for <chi_bar_a chi_b> from the cited Berezin surface, then update the on-shell convention and runner comments/source consistently.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -176002,18 +176020,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 8,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
       "title": "Carrier-Independent Bilateral Lattice-Noether Identity \u2014 Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely computes finite lattice matrix checks and all eight exhibits pass; it is not just printing constants. The core AxisInv formula family checks algebraically, but the note states <chi_bar_a chi_b> = Minv_{b,a} under exp(-chi_bar M chi), while differentiating Z = det(M) gives the ordered bilinear with the opposite sign unless an extra expectation convention is introduced. The divergence test is insensitive to that overall sign, so the headline identity may survive, but strict formula inventory blocks audited_clean as written."
     },
     "lattice_physical_matching_cluster_obstruction_note_2026-05-02": {
       "audit_date": null,

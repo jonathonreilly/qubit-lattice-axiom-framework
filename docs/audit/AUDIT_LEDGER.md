@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 631 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1162 |
+| unaudited | 1161 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 972 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1400 |
+| `unaudited` | 1399 |
 
 | claim_type | count |
 |---|---:|
@@ -1128,6 +1128,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8687,6 +8688,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the specified Fam1 grown-DAG static 1/r-field harness, the runner computes kubo_true = 7.061910, 5.972756, 5.986043 at H = 0.50, 0.35, 0.25, so the medium-to-fine drift is 0.2% under the runner's 5% criterion.  _(class `C`)_
 - **chain closes:** True — The supplied runner source actually grows the lattice, propagates A and B, computes the centroid derivative, and prints the cached values without hard-coded expected results. This closes the bounded three-refinement numerical statement, but not a stronger general H to 0 continuum theorem.
 - **rationale:** The load-bearing bounded claim is a class C framework-internal computation: the runner instantiates the Fam1 grown-DAG harness and computes the Kubo coefficient values directly. The cached stdout matches the source note's table and the last-step drift calculation. The cited one-hop authorities are provided as retained_bounded, so there is no open dependency blocking this scoped result. This clean verdict is only for the bounded three-point Fam1 stabilization, not for a general asymptotic H to 0 theorem or family-portable continuum result.
+- **auditor confidence:** high
+
+### `kubo_fam2_non_convergence_note_2026-05-02`
+
+- **Note:** [`KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md`](../../docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate inventory asserting only that the displayed finite Fam2 samples are non-monotone, do not visibly settle to the Fam1/Fam3 sampled value, and motivate three non-exhaustive follow-up routes.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-162237-151c724a-kubo_fam2_non_convergenc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Fam2 values bounce rather than moving monotonically toward the Fam1 and Fam3 sampled value, so the simple 'Fam2 only needs finer H' reading is not supported by the sampled data.  _(class `A`)_
+- **chain closes:** False — The monotonicity conclusion follows arithmetically from the displayed Fam2 sequence, but the restricted packet does not independently support the displayed Kubo table values. The missing step is a data-producing computation, cached certificate, or retained cited source for those finite samples.
+- **rationale:** The runner source is a text-presence checker: it verifies labels, disclaimers, family parameters, and obstruction-route prose, but it does not recompute or independently check the displayed Fam1/Fam2/Fam3 Kubo sample values. The open-gate scope is appropriately non-exhaustive and does not claim a resolved mechanism, but the quantitative Recorded Finite Data table is load-bearing for the non-monotonicity conclusion. Because those table entries are imported without a closed computation or supplied retained authority, the chain is conditional rather than clean.
+- **open / conditional deps cited:**
+  - `KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md`
+  - `KUBO_FAM2_REFINEMENT_NOTE.md`
 - **auditor confidence:** high
 
 ### `kubo_fam2_refinement_note`

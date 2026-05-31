@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_three_measures_three_observables_2026_05_31.py
+runner_sha256: 523de48ae26b90c019b2dec6f94483fc58242535af9c2d13092a95d4c00a4980
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+
+========================================================================================
+The C3 doublet-count is two observables: mass ratio Q=2/3 + spectral asymmetry 2/9
+========================================================================================
+
+========================================================================================
+F1 — the three C3-block weights -> Q = 1/3, 2/3, 1
+========================================================================================
+[PASS] F1.1 democratic->Q=1/3, equal-block->Q=2/3, dimension->Q=1 (r*=nu/2mu)
+       democratic (1,0): r*=0, Q=1/3; equal-block (1,1): r*=1/2, Q=2/3; dimension/Plancherel (1,2): r*=1, Q=1
+
+========================================================================================
+F2 — dimension count -> spectral asymmetry L_3(1,2) = 2/9 = (N-1)/N^2
+========================================================================================
+[PASS] F2.1 L_3(1,2) = 2/9 exactly (retained_bounded Z_N spectral-asymmetry theorem)
+       L_3(1,2) = 2/9
+[PASS] F2.2 2/9 = (N-1)/N^2 = (doublet dimension 2)/N^2 (the per-DIMENSION count)
+       (N-1)/N^2 = 2/9; doublet dim = 2 counted over N^2 = 9
+
+========================================================================================
+F3 — one binary (count doublet once/twice) -> two observables
+========================================================================================
+[PASS] F3.1 count-ONCE (block) -> mass-ratio Q=2/3 ; count-TWICE (dimension) -> spectral-asymmetry 2/9 -- the SAME doublet binary distinguishes them
+       block(1): Q=2/3 (mass ratio); dimension(2): L_3=2/9 (spectral asymmetry)
+[PASS] F3.2 so Q=1 is NOT a competing wrong mass-ratio -- it is the dimension count whose SPECTRAL readout is the retained 2/9 (different OBSERVABLE)
+       dimension count: Koide-readout Q=1, spectral-readout L_3=2/9 -- same (1,2) weight
+
+========================================================================================
+F4 — both observables are realized
+========================================================================================
+[PASS] F4.1 mass-ratio observable: charged-lepton Koide Q = 2/3 at r=1/2 (block readout) -- the observed value
+       Q(physical r=1/2) = 0.666667
+[PASS] F4.2 spectral-asymmetry observable: L_3(1,2) = 2/9 (dimension readout, retained_bounded) -- a separately-realized C3 invariant
+       L_3(1,2) = 2/9 = 2/9
+
+========================================================================================
+SUMMARY
+========================================================================================
+  7/7 checks passed
+
+  The per-block-vs-per-dimension 'measure ambiguity' is NOT a selection problem.
+  The C3 doublet has two natural counts, computing two realized observables:
+    count-once (block)      -> the MASS RATIO       Q = 2/3   (charged leptons)
+    count-twice (dimension) -> the SPECTRAL ASYMMETRY 2/9 = (N-1)/N^2 (retained)
+  Asking 'is r=1/2 forced over r=1' conflates the two observables; both are
+  correct -- the ratio is 2/3, the asymmetry is 2/9. (Brannen delta=2/9 rad is
+  a third, Q-orthogonal datum.)
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

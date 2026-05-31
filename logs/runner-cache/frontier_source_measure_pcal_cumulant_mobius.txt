@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_source_measure_pcal_cumulant_mobius.py
+runner_sha256: 74b1b151205896c60fc475cf0bfc186b02bd811794c112ae295b2c1afc55e820
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+========================================================================================
+SOURCE/MEASURE P-CAL CUMULANT-MOBIUS THEOREM
+========================================================================================
+
+Part 1: document/status boundary
+[PASS] docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md exists
+[PASS] docs/OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md exists
+[PASS] docs/OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md exists
+[PASS] note contains required phrase: Theorem
+[PASS] note contains required phrase: Mobius proof
+[PASS] note contains required phrase: Scale test
+[PASS] note contains required phrase: Connection to P-cal
+[PASS] note contains required phrase: Status boundary
+[PASS] note contains required phrase: Non-claims
+[PASS] note marks exact-support status
+[PASS] note forbids retained overclaim
+
+Part 2: partition-lattice Mobius inversion
+[PASS] Bell number B3 is 5: 5
+[PASS] third cumulant Mobius formula is standard: 2*m1*m2*m3 - m1*m23 - m12*m3 + m123 - m13*m2
+[PASS] mixed cumulant vanishes under independence: 0
+
+Part 3: log moment generator gives connected responses
+[PASS] raw mixed moment includes disconnected product: a*b
+[PASS] log generator mixed connected response vanishes for independent records: 0
+[PASS] first log derivative is mean: a
+[PASS] second log derivative is variance: 1 - a**2
+
+Part 4: scale test against F_p
+[PASS] unit connected two-point response is one: 1
+[PASS] p-scaled connected two-point response is p: p
+[PASS] unit connected-response normalization selects p=1
+[PASS] raw M^p second derivative also carries p at origin: p
+
+Part 5: firewall
+[PASS] forbidden import named in firewall: H_unit
+[PASS] forbidden import named in firewall: yt_ward_identity
+[PASS] forbidden import named in firewall: y_t_bare
+[PASS] forbidden import named in firewall: PDG
+[PASS] forbidden import named in firewall: alpha_LM
+[PASS] forbidden import named in firewall: plaquette
+[PASS] forbidden import named in firewall: fitted selector
+[PASS] forbidden overclaim absent: Status: retained
+[PASS] forbidden overclaim absent: unbounded retained Y_T closure is claimed
+[PASS] forbidden overclaim absent: audit-clean retained
+
+========================================================================================
+SUMMARY: PASS=33 FAIL=0
+Wrote outputs/source_measure_pcal_cumulant_mobius_2026-05-30.json
+
+----- stderr -----
+

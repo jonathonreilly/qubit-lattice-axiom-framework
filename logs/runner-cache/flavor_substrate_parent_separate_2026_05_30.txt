@@ -1,0 +1,13 @@
+[PASS] D1 assembled parent K splits as forced super-direct-sum (decomposable, not indecomposable)
+       even slot=I2(x)G_U1, odd slot=sx(x)H_chi, forced/non-interchangeable; coin index = bookkeeping
+[PASS] D2 G_U1 commutes Gamma_chi & C (on-block); chiral grading anticommutes & breaks C (off-block)
+       orthogonal on R^3 -- comm(C) cap anticomm(Gchi)={0} inherited by the lift
+[PASS] D3 unification channel needs ORDER-3 complex qubit charge diag(1,w) = the det_C object
+       diag(1,w): order 3, det=w (not SU(2)), complex I/Z coeffs = same complex/det_C structure as value import
+
+SCORECARD PASS=3 FAIL=0
+VERDICT: genuinely SEPARATE (Correction 1 holds: value != chirality on R^3, and no native lift
+unifies them). BUT the single object that WOULD unify them = the imported order-3 complex (det_C)
+phase = the SAME root as the value import. So: not one GATE, but one common ROOT IMPORT (the
+complex/order-3/det_C structure the discrete Z_2-spin substrate lacks). Caveat: hinges on the
+Z_2-spin-factor reading of M_2(C) (no native order-3 charge) -- recommend audit row.

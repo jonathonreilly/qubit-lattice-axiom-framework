@@ -7,7 +7,7 @@ target_blocker_text: "physical identification delta = eta_APS"
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "Derive a physical rank-erasing record quotient/count-on-record-atoms principle, derive the microscopic full-cube source law selecting the forward oriented channel and selected-line endpoint/basepoint/readout, or prove the physical source-domain law that erases projected Z for undeformed charged leptons."
+next_trace_action: "Derive physical rank erasure before reference selection, derive the microscopic full-cube source law selecting the forward oriented channel and selected-line endpoint/basepoint/readout, or prove the physical source-domain law that erases projected Z for undeformed charged leptons."
 ```
 
 The coefficient bridge supports the existing phase blocker, while the signed
@@ -48,6 +48,14 @@ record-intervention machinery supports probability laws on the record algebra
 but keeps the reference law as an input.  Therefore the next measure trace
 action is not another record-probability theorem; it is a physical
 rank-erasing recordization / count-on-record-atoms principle.
+
+The Q-side objectivity premise audit narrows that principle again.  Bare
+quotient atom-anonymity is enough to force uniform `(1/2,1/2)` and `Q=2/3`,
+but only after rank erasure has already happened.  The `S`-labeled record has
+no atom-swap automorphism, max entropy gives different answers on the full
+Hilbert algebra versus the quotient algebra, and source-measure leaves `P0`
+as input.  The next measure trace action is therefore specifically
+rank-erasure-before-reference-selection, not generic objectivity or entropy.
 
 The unlock map also marks the positive source-domain path: strict onsite
 descent erases the Q1 reduced `Z` coordinate and returns `Q=2/3`.  That path

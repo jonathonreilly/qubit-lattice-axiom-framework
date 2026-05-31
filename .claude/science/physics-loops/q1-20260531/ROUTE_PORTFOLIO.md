@@ -172,6 +172,31 @@ probability laws on the record algebra but does not choose this second
 reference law.  The remaining positive route is a physical rank-erasing
 recordization / count-on-record-atoms principle.
 
+## Route C11: Q-side objectivity premise audit
+
+Status: exact support / negative route pruning.
+
+The closest positive statement is now isolated:
+
+```text
+bare quotient atom-anonymity -> (1/2,1/2) -> Q=2/3
+```
+
+But this works only after Hilbert rank has already been erased.  The physical
+`S`-labeled record has no atom-swap automorphism because the swap changes
+`S` values `(2,-1)`.  Full Hilbert trace / microstate naturality gives
+`(1/3,2/3)` and `Q=1`.  Max entropy gives different answers on the full
+Hilbert algebra and on the quotient algebra.
+
+Therefore generic objectivity or entropy does not close the Q-side premise.
+The positive target is specifically:
+
+```text
+physical rank erasure before reference selection
+```
+
+or the independent strict-onsite `P_SOURCE` theorem.
+
 ## Route D: future charge-two Majorana texture
 
 Status: hypothetical after activation.

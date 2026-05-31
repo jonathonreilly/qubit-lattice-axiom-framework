@@ -52,6 +52,12 @@ What to use:
 - Existing source-measure / record-intervention notes justify probability laws
   on the finite record algebra, but they keep the reference law as an input.
   They do not select quotient count over Hilbert rank.
+- The Q-side objectivity premise audit reduces the positive measure premise to
+  an exact minimal statement: rank must be erased before reference selection,
+  leaving a bare atom-anonymous two-record quotient.  Bare quotient
+  atom-anonymity then gives `Q=2/3`, but `S`-labeled record objectivity, max
+  entropy alone, and existing source-measure machinery do not derive that
+  rank-erasure step.
 
 What not to use:
 
@@ -70,6 +76,9 @@ What not to use:
 - Do not cite source-measure / record-intervention machinery as selecting the
   quotient record reference law.  It legitimizes the probability-law surface;
   it does not erase Hilbert rank.
+- Do not cite objectivity or max entropy alone as closing the Q-side premise.
+  They close only after the physical algebra has already been chosen as the
+  rank-erased quotient rather than the full Hilbert record.
 - Do not cite the last-mile cascade as effective retained status without an
   independent audit of `P_ORIENT` and `P_SOURCE`.
 - Do not merge the APS, anomaly, Brannen, and offsite matrix coefficient into
@@ -79,6 +88,6 @@ Best next theorem handles:
 
 ```text
 derive_orientation_odd_full_cube_source_boundary_law_selects_Qf_and_endpoint
-derive_physical_rank_erasing_record_quotient_or_count_on_record_atoms
+derive_physical_rank_erasure_before_reference_selection
 derive_P_SOURCE_strict_onsite_charged_lepton_source_domain
 ```

@@ -78,6 +78,9 @@ def part0_source_firewall() -> None:
         "2 zeta(3)",
         "Planck distribution",
         RUNNER_PATH,
+        "**Claim type:** bounded support note",
+        "**Type:** conditional / support",
+        "source-side claim type is `bounded support note` / `conditional / support`",
     ]
     for phrase in required:
         check(f"source contains boundary phrase: {phrase}", phrase in note)
@@ -88,6 +91,8 @@ def part0_source_firewall() -> None:
         "framework derives m_p",
         "framework derives T_CMB",
         "**Status:** retained",
+        "**Type:** bounded_theorem",
+        "**Claim type:** bounded_theorem",
         "audited_clean",
     ]
     for phrase in forbidden:

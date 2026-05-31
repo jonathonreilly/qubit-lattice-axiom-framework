@@ -1,7 +1,7 @@
 # BBN eta_10 -> Omega_b h^2 Coefficient Admission Bridge
 
 **Date:** 2026-05-28
-**Claim type:** bounded_theorem
+**Claim type:** bounded support note
 **Status authority:** independent audit lane only.
 **Source status:** source-note candidate for independent audit. This note does
 not apply an audit verdict and does not promote any downstream cosmology row.
@@ -9,7 +9,7 @@ not apply an audit verdict and does not promote any downstream cosmology row.
 
 proposal_allowed: false
 
-**Type:** bounded_theorem
+**Type:** conditional / support
 **Status authority:** independent audit lane only.
 
 ## 2026-05-28 Audit Repair (conditional arithmetic; premise packet admitted)
@@ -265,7 +265,7 @@ PYTHONPATH=scripts python3 scripts/bbn_eta10_to_omega_b_h2_coefficient_admission
 Expected:
 
 ```text
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=34 FAIL=0
 VERDICT: bounded admission bridge passes; the textbook coefficient
 3.6515e-3 decomposes into one analytic factor (2 zeta(3)/pi^2 from the
 Planck distribution) and four imported premises (P1 m_p, P2 T_CMB, P3
@@ -276,9 +276,9 @@ to within 0.13% of the Cyburt+ 2016 published value.
 ## 8. Audit Boundary
 
 Audit status is set only by the independent audit lane. The intended
-source-side claim type is `bounded_theorem`: assuming the supplied
-P1-P4 premise packet, deterministic arithmetic on the Planck-distribution photon
-number density gives the Cyburt+ 2016 coefficient to better than
-0.2%. This row does not derive P1-P4, does not promote the cosmology
-cascade row, and does not change the import status of `eta` on the
+source-side claim type is `bounded support note` / `conditional / support`:
+assuming the supplied P1-P4 premise packet, deterministic arithmetic on the
+Planck-distribution photon number density gives the Cyburt+ 2016 coefficient to
+better than 0.2%. This row does not derive P1-P4, does not promote the
+cosmology cascade row, and does not change the import status of `eta` on the
 parent cascade.

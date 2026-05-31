@@ -1,0 +1,17 @@
+[PASS] R1 Q=1/det_R (b=a real) -> eigenvalues {3,0,0} = rank-1 democratic
+       eig=[-0. -0.  3.] (one heavy + two massless)
+[PASS] R2 NEW: Q ordering monotone leptons<down<up<rank-1 (det_C 2/3 -> det_R 1 axis organizes sectors)
+       leptons=0.6667 < down=0.7314 < up=0.8490 < 1.0
+[PASS] R3 charge-selection mechanism FAILS: gauge U(1) generation-blind ([U(1),C]=0, scalar on triplet)
+       Probe 14: U(1)_Y/em/pseudoscalar/fermion-# all trivial on A^{C3}; doublet-U(1)_b breaks C^3=I
+[PASS] R4 quarks REFUTE naive 'charged->2/3': up 0.849, down 0.731 charged but NOT 2/3; CKM anti-correlates
+       leptons at 2/3 despite LARGE PMNS; quarks off despite SMALL CKM -> mixing cannot explain
+[PASS] R5 neutrino Q (NO, standard readout) in [1/3,0.585], NEVER 2/3 -> off det_C branch (corrects adjudicator)
+       max Q_nu=0.5850 < 2/3; adjudicator's 'crosses at 3.2meV' wrong (Q there=0.44)
+
+SCORECARD PASS=5 FAIL=0
+VERDICT (b) PRODUCTIVE REFRAME, not closure: Q=1=rank-1 democratic (confirmed); the det_C/det_R
+axis ORGANIZES the charged fermion sectors (leptons 2/3 < down < up < rank-1, NEW positive); but
+charge-selection is non-operative (gauge U(1)s generation-blind, same as the qubit central i) and
+quarks refute 'charged->2/3'. Pin relocates to a derived FLAVOR U(1) rephasing the doublet (vs
+C^3=I), now with a FALSIFICATION CONSTRAINT: any mechanism must explain the WHOLE ordering.

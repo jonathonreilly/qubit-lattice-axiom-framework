@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 177 |
-| **retained_bounded** | 619 |
+| **retained_bounded** | 620 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1190 |
+| unaudited | 1189 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 958 |
+| `audited_clean` | 959 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1428 |
+| `unaudited` | 1427 |
 
 | claim_type | count |
 |---|---:|
@@ -538,6 +538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_physical_bridge_attempt_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7570,6 +7571,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** V_4 x V_4 is (Z_2)^2 x (Z_2)^2 = (Z_2)^4, so an isomorphism (Z_2)^d ~= V_4 x V_4 forces d = 4 by rank/cardinality, and d = 4 has the explicit coordinate split.  _(class `A`)_
 - **chain closes:** True — The proof reduces to elementary abelian 2-group rank additivity and cardinality: V_4 x V_4 has rank 4 and order 16, while (Z_2)^d has rank d and order 2^d. The d=4 coordinate split gives the forward isomorphism, and rank/order excludes all other d >= 2.
 - **rationale:** The source note's load-bearing claim is a genuine class-A algebraic identity over elementary finite-group facts, not a physical bridge or imported framework premise. Independent rank and cardinality checks both force d=4, and the explicit d=4 coordinate map is a bijective homomorphism. The cached runner independently enumerates the group checks and reports PASS=75, FAIL=0 under SHA 6982bfb1572c56fd4310098e1b26b3cef5510d85421b2a5f4e4553beadf28263. The clean verdict covers only the finite-group theorem and excludes all BZ-physics, Wick, taste/doubler, substrate-realization, and physical dimension-selection readings.
+- **auditor confidence:** high
+
+### `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11`
+
+- **Note:** [`KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md`](../../docs/KMS_FERMIONIC_BRYDGES_MAJORANT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the scalar quadratic majorant ODE algebra, constant-coefficient b=0 threshold formula, linear-factor composition, zero fixed point, finite diagonal toy checks, and nonnegative finite weighted absolute-value norm surrogate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-135208-0d64c9b2-kms_fermionic_brydges_ma`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For dy/dl <= a(l)y(l)^2 + b(l)y(l), comparison with the scalar equality gives small-data control; in the constant-coefficient b=0 quadratic equality case y(l)=y0/(1-a l y0).  _(class `A`)_
+- **chain closes:** True — The restricted claim is elementary scalar ODE algebra and finite-dimensional nonnegativity; no KMS BBF polymer-norm theorem or framework bridge is used. The displayed quadratic formula is valid for the constant-a, b=0 equality model audited by the runner; the general variable-coefficient statement is only a comparison/small-data statement, not a displayed closed form.
+- **rationale:** The source note explicitly repairs the prior over-broad KMS use and confines the binding claim to scalar ODE consequences and finite toy checks. The runner source performs exact rational arithmetic checks of the quadratic closed form, threshold signs, multiplicative linear composition, zero fixed point, finite diagonal bounds, norm-surrogate nonnegativity, and boundary disclaimers; it does not import a contested external theorem or fitted numerical premise. Within that narrowed scope, the load-bearing step is class A algebraic closure and the chain closes from standard scalar ODE comparison algebra.
 - **auditor confidence:** high
 
 ### `koide_a1_loop_final_status_2026-04-22`

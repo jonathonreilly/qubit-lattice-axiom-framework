@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 619 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1191 |
+| unaudited | 1190 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 26 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 958 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 26 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1429 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -1107,6 +1107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10953,6 +10954,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner verifies at finite truncation order that the displayed third-order ODE annihilates the truncated Taylor series of J(beta), and numerically agrees with direct Weyl integration at beta in {2,4,6,8,10}.  _(class `C`)_
 - **chain closes:** True — The narrowed claim is exactly the finite computation performed by the included runner. The runner constructs a truncated series from the Bessel-determinant representation, checks the ODE residual to degree 21, integrates the ODE numerically, and independently compares the readout with Weyl quadrature at the stated sample points.
 - **rationale:** The note has been narrowed to a bounded finite-runner certificate and no longer asserts the all-order Picard-Fuchs or Frobenius-branch theorem. The included source is not a pure printout: it symbolically builds the truncated series, computes the residual, numerically evolves the ODE, and compares against direct Weyl integration at the specified points. Within that bounded scope, the runner output matches the note's stated PASS=4 FAIL=0 and the beta=6 value. This does not audit or imply the separate all-order companion claim.
+- **auditor confidence:** high
+
+### `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06`
+
+- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** V=1 SU(3) single-plaquette Wilson integral Picard-Fuchs ODE, analytic Frobenius branch at beta=0, and claimed order-3 degree-2 minimal-annihilator bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-134901-f1df5a64-plaquette_v1_picard_fuch`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The all-order runner certificate is claimed to prove that L·J=0 identically and that the effective minimal annihilator has order 3 and coefficient degree 2, excluding order-≤2 annihilators.  _(class `C`)_
+- **chain closes:** False — The runner verifies exact finite Taylor and finite ansatz windows, but the displayed T2 scan only excludes order ≤2 with coefficient degree ≤30 and does not provide a non-circular all-degree exclusion. The Bostan-Salvy-Schost threshold is then applied using R=3,D=2 from that same finite certificate, so the all-order minimality bridge is not closed in the restricted packet.
+- **rationale:** The finite algebraic checks reported by the runner are substantive and the displayed ODE, recurrence, initial coefficients, and indicial polynomial are internally consistent. However, the load-bearing minimal-annihilator claim needs an all-degree bridge from the finite Koutschan-style grid to exclusion of every order-≤2 polynomial-coefficient annihilator. The packet also withholds full untruncated primary/helper runner source in the shown sections, so the executable chain cannot be fully audited from the restricted inputs.
 - **auditor confidence:** high
 
 ### `plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17`

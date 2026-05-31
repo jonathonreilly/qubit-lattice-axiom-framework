@@ -251471,24 +251471,50 @@
       "verdict_rationale": null
     },
     "s3_time_primitive_chain_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T17:05:46.094787+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4.",
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go",
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go",
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "401c171565df7dbf033b94dabe67aa3b573a37ca7a3e6226c2a18746414af585",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-170358-6e669cfb-s3_time_primitive_chain_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The reduced family P(rho_E) fixes the shell normalization while sending the E-center lift to 1 + rho_E/6, so rho_E = 0 and rho_E = 21/4 are both admissible but distinct. The positive theorem remains open, but the open-gate/non-selection claim follows from the cited inputs.",
       "claim_id": "s3_time_primitive_chain_note",
-      "claim_scope": null,
+      "claim_scope": "Audited that the S3 primitive-chain note correctly records an open gate: the retained Route-2 readout, time-coupling, and E-channel no-go inputs reduce the remaining obstruction to beta_E / alpha_E and do not derive 21/4.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T17:05:46.094787+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -251498,8 +251524,8 @@
         "quark_route2_exact_time_coupling_note_2026-04-19"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
         "scripts/frontier_quark_endpoint_readout_constraints.py",
@@ -251507,16 +251533,16 @@
         "scripts/frontier_same_source_metric_ansatz_scan.py",
         "scripts/frontier_tensor_support_center_excess_law.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Within the current restricted Route-2 carrier/readout class, even after granting the two T-side candidates, beta_E / alpha_E remains a free parameter unless an additional E-center endpoint ratio, source-domain rule, or stronger readout primitive is supplied.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d62480eeae655385cfdcbfe2202529a1f08c0add0108af5112fb2befc66c3200",
       "note_path": "docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Future re-audit should check that any revised note still treats beta_E / alpha_E = 21/4 as open unless a new E-center/source/readout primitive is supplied.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -251723,18 +251749,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 6,
+        "B": 8,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 22
       },
       "runner_path": "scripts/frontier_s3_time_primitive_chain_reaudit.py",
       "title": "Primitive Chain Readout and Time-Coupling Update",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note does not claim to derive beta_E / alpha_E = 21/4; it explicitly identifies that entry as the remaining primitive. The displayed ratio algebra checks: rho_E = 21/4 gives q_E = 15/8, and with q_T = 5/6 and shell T/E = -2 gives center T/E = -8/9. All one-hop authorities are retained-grade for this open-gate scope, and the runner verifies the cited text, reduced-family algebra, and scope firewall rather than smuggling a positive derivation."
     },
     "s3_time_spacetime_observable_route_note": {
       "audit_date": null,

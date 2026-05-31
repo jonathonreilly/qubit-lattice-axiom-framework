@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py
+runner_sha256: aa271b270353df84b8a0a4064a9d170e637ca4af1ca8df10860ce78383432f10
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+
+========================================================================
+A. Same operator H carries BOTH: the weight L_3(1,2)=2/9 and the phase delta=arg(b)
+========================================================================
+[PASS] L_3(1,2) = (1/N) sum_k det[(C^k-I)^{-1}|doublet] = 2/9 (Lefschetz/Molien weight of H's doublet) -- 0.2222222222
+[PASS] Jcs=(C-C^2)/sqrt3: Jcs^2=-P_doublet, exp((2pi/3)Jcs)=C (delta=arg(b) is an SO(2) angle, period 2pi)
+[PASS] delta is Q-ORTHOGONAL: Q depends only on |b|/a, not arg(b)
+
+========================================================================
+B. Empirical Brannen delta (PDG) = bare 2/9 in radians
+========================================================================
+[PASS] PDG charged-lepton Koide Q = 2/3 -- Q = 0.666661
+[PASS] empirical Brannen delta = bare 2/9 = 0.2222 rad (to ~1e-4) -- delta_emp = 0.22223 rad,  2/9 = 0.22222,  diff = +0.00001
+
+========================================================================
+C. The gap is EXACTLY one factor of pi (period-1-rad vs 2pi-rad convention)
+========================================================================
+[PASS] native angle alpha_3 = (2/9)*pi = 0.698 rad (NOT the empirical 0.2222) -- alpha_3 = 0.698132
+[PASS] eta-holonomy angle 2pi*(2/9) = 1.396 rad (NOT the empirical 0.2222) -- 2pi*(2/9) = 1.396263
+[PASS] the gap is EXACTLY one factor of pi: alpha_3 = pi * delta_empirical -- alpha_3/delta_bare = 3.141593 = pi
+[PASS] => reaching bare 0.2222 rad requires the period-1-rad reading (retained_no_go radian bridge)
+
+========================================================================
+D. eta-as-phase FALSIFIED: delta is NOT the APS-eta holonomy
+========================================================================
+[PASS] spin-Dirac equivariant eta(Z_3;1,2) = 0 EXACTLY (the mod-Z phase object is zero, not 2/9) -- eta_APS = 0.000000+0.000000j
+[PASS] finite equivariant eta_C(H) is INTEGER-valued {0,2} (0 for r<1, 2 for r>1) -- not 2/9 -- eta_C(0.5)=-0.0, eta_C(1.5)=2.0
+[PASS] 2/9 not an algebraic integer (minpoly 9x-2) -> no eta/index/holonomy can equal it -- minpoly = 9*x - 2
+[PASS] the FIXED Fourier basis diagonalizes H(theta) for all theta -> eigenvectors theta-independent -- max off-diagonal in fixed basis over the loop = 4.71e-16
+[PASS] => Berry connection i<v_k|d_theta v_k> = 0 for each fixed mode -> arg(b)-loop Berry phase = 0 -- delta is a free SO(2) PARAMETER, not a geometric-phase OUTPUT
+
+========================================================================
+E. Family pun: the weight is (N^2-1)/(12N), NOT (N-1)/N^2 (coincide only at N=3)
+========================================================================
+[PASS] weight family (N^2-1)/(12N) and rank family (N-1)/N^2 are DIFFERENT functions
+[PASS] they coincide ONLY at N=3 (both = 2/9); diverge at N=2,4,5 -- N=5: (N^2-1)/12N=0.4000 vs (N-1)/N^2=0.1600
+
+========================================================================
+RESULT
+========================================================================
+
+16/16 checks passed.
+delta_Brannen=2/9 rad and L_3(1,2)=2/9 are the same 2/9 on the same native C_3 doublet
+operator H -- a real structural tie (NOT a bare coincidence). But delta=2/9 rad is
+CONVENTION-BOUND: the native angle is alpha_3=(2/9)*pi=0.698 rad, the gap to the empirical
+bare 0.2222 rad is EXACTLY one factor of pi (the period-1-rad vs 2pi-rad choice, a retained
+no-go). The eta-as-phase escape is FALSIFIED (spin-Dirac eta=0; eta_C integer; 2/9 not an
+algebraic integer; Berry phase 0). Advances open_gate lepton_brannen_bae_delta_two_ninths;
+adopts NO convention. Next path: audit-decided period-1-radian adoption, or a Fisher route.
+
+----- stderr -----
+

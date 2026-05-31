@@ -2418,30 +2418,88 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_1 rows in this category._
+_3 rows in this category._
 
 
-### `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`
+### `source_resolved_exact_green_pocket_note`
 
-**Note:** [docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md](docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md)  |  **Descendants:** 51  |  **Class:** C
+**Note:** [docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md](docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)  |  **Descendants:** 104  |  **Class:** C
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md.
+Use the physics-loop skill to close the conditional audit on docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md.
 
 Current audit state:
 - audit_status: audited_conditional
 - claim_type: bounded_theorem
 - load_bearing_step_class: C
-- claim_scope: Bounded tensorial-probe helper surface for the current runner: scalar boundary action blindness versus active vector/shear Einstein residual channels on the implemented local O_h and finite-rank scalar exterior fields; no full Einstein/Regge completion, nonlinear GR, all-source, or framework-level tensor matching theorem is audited.
+- claim_scope: Audited only the declared finite runner family, included helper implementation, cached output, hard-bar assertions, and displayed kernel/gain/table statements; no continuum, size-transfer, self-consistent dynamics, or derived Green-kernel claim was audited.
 
 Auditor's verdict_rationale:
-Issue: the load-bearing runner delegates scalar-field construction and microscopic bridge pieces through dynamic _frontier_loader imports that are not fully represented in helper_runner_paths or one-hop retained wrapper notes. Why this blocks: the top-level stdout confirms the four probe outcomes, but a clean audit must verify the imported same-source metric and microscopic Dirichlet bridge machinery rather than treating them as opaque runtime premises. Repair target: register the dynamic helper scripts as helper_runner_paths, or add retained one-hop wrapper notes/dependency edges for scripts/frontier_same_source_metric_ansatz_scan.py and scripts/frontier_microscopic_dirichlet_bridge_principle.py, then rerun the tensorial probe certificate. Claim boundary until fixed: the current packet is a reported finite tensorial-probe diagnostic, not a closed retained helper theorem for downstream no-go use.
+The prior packet-completeness defect is repaired: the helper source is included, the upstream authority is retained_bounded, and the primary runner performs nontrivial finite-lattice propagation rather than merely printing constants. However, the source packet fails the formula-inventory pass because the Green-kernel family stated in the note and runner banner does not match the executed code convention. The calibrated-gain pocket is also explicitly runner-selected rather than derived from retained framework dynamics, so the result remains a bounded tuned computation, not a closed Green-field theorem.
 
 Auditor-quoted load-bearing step:
-The registered runner reports that the scalar Schur boundary action is unchanged under vector-shift, traceless-shear, and mixed tensor perturbations, while the corresponding Einstein tensor channels are active.
+On the declared h=0.5, W=3, L=20 lattice with the runner-selected Green-like kernel and calibrated gain, the runner asserts zero-source reduction, 4/4 TOWARD sign, green F~M exponent 1.00, and mean |green/inst| ratio 1.235.
 
 Auditor's repair target (canonical class + action):
-runner_artifact_issue: include all dynamic _frontier_loader imports in helper_runner_paths or provide retained wrapper/dependency notes for the same-source metric and microscopic Dirichlet bridge helpers, then re-audit the current runner/cache.
+runner_artifact_issue: Reconcile the Green-kernel definition across the note, runner print string, and code (distance r versus softened rho+eps), refresh the frozen gain/output if the convention changes, then rerun and re-audit the bounded pocket.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `source_resolved_propagating_green_pocket_note`
+
+**Note:** [docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md](docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md)  |  **Descendants:** 102  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: The audited scope is the declared finite lattice packet at h = 0.5, W = 3, L = 20, four in-bounds clipped cross-source nodes, s in {0.001, 0.002, 0.004, 0.008}, mix = 0.9, and the executable runner's static/source-resolved and same-site-memory fields; it is not a finite-speed field theory or self-consistent GR sector.
+
+Auditor's verdict_rationale:
+The primary runner genuinely instantiates the lattice, builds field layers, propagates amplitudes, fits exponents, and checks the finite packet without importing the frozen table as expected values. The cited upstream authority is retained_bounded, so there is no automatic dependency downgrade. The blocking issue is runner/source-packet formula drift: the displayed Green-kernel formula is not the kernel executed by the code, so the finite result is clean only after the kernel convention is reconciled.
+
+Auditor-quoted load-bearing step:
+The asserted exact-lattice run passes the finite gates: zero-source reduction, 4/4 TOWARD rows, propagating F~M = 1.00, mean |prop/inst| = 1.420, mean |prop/green| = 1.149, and a positive prop - green memory offset.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: reconcile the displayed Green-kernel formula with the executable kernel, regenerate the runner cache, and re-audit the same finite packet.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17`
+
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md](docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md)  |  **Descendants:** 59  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: positive_theorem
+- load_bearing_step_class: A
+- claim_scope: For a fixed finite retained marked class sector with known compressed boundary evaluations, N samples with invertible Peter-Weyl evaluation matrix recover the N retained coefficients exactly, while fewer unconstrained samples leave a kernel.
+
+Auditor's verdict_rationale:
+The finite inversion theorem itself is an algebraic consequence of the retained compressed boundary law: full-rank E gives c=E^(-1)Z, and m<N leaves a nontrivial nullspace. The cited scientific authorities are retained-grade for the restricted retained-sector surface. However the runner certificate in the packet is stale or inconsistent: the runner source checks for the exact scalar-note phrase "one scalar framework-point value does not determine the class-sector vector", which is absent from the supplied repaired scalar-value note, so the displayed SUPPORT=3/FAIL=0 summary is not reproduced from the restricted packet.
+
+Auditor-quoted load-bearing step:
+Whenever the chosen marked holonomies make the evaluation matrix E invertible, the retained coefficient vector is recovered exactly by c = E^(-1) Z.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: update the scalar support check to match the repaired scalar-value note and refresh the runner cache, then re-audit the same finite-inversion claim.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -2454,193 +2512,19 @@ drive.
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_6 rows in this category._
-
-
-### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`
-
-**Note:** [docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md](docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md)  |  **Descendants:** 526  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Exact algebraic support for C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element; not a closed theorem selecting C_pert over C_strong on the canonical tadpole-improved surface.
-
-Auditor's verdict_rationale:
-Issue: the source's load-bearing selection step says the tadpole-improved canonical surface makes C_pert the governing coefficient and excludes C_strong, but the restricted packet only closes the finite algebraic coefficients and small-alpha arithmetic. Why this blocks: small alpha_LM and n_opt ~ pi/alpha_LM do not by themselves prove convergence or supply a retained expansion-domain/selector theorem, and the runner imports the canonical plaquette/u0 surface rather than deriving it. Repair target: supply a retained expansion-domain/selection theorem for the tadpole-improved canonical surface, plus retained closure or explicit bounded admissions for plaquette 0.5934/u0, g_bare, staggered-Dirac realization, and shared tadpole transport. Claim boundary until fixed: the exact algebraic support C_pert = 1/(2*N_c), C_strong = 1/N_c^2, the SU(3)/Dirac Fierz factors, and the H_unit 1/sqrt(6) matrix element are verified, but the governing-coefficient selection remains conditional.
-
-Auditor-quoted load-bearing step:
-On the canonical surface (alpha_LM = 0.091 << 1, n_opt ~ 35 loops), the perturbative expansion is convergent, so C_pert is the correct input to the main theorem's Step 3 UV side and C_strong is not.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: supply a retained expansion-domain/selection theorem for the tadpole-improved canonical surface, plus retained closure or explicit admissions for plaquette 0.5934/u0, g_bare, staggered-Dirac realization, and shared tadpole transport.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
-
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)  |  **Descendants:** 385  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Finite 3x3 Hermitian-pair projector algebra for fixed supplied eigenvector matrices, plus the claimed simple-spectrum intrinsic-to-pair reading.
-
-Auditor's verdict_rationale:
-Issue: The raw fixed-eigenvector algebra closes, but the note also claims a simple-spectrum intrinsic-to-the-pair projector packet without specifying the eigenvalue label/order convention needed to fix rows and columns. Why this blocks: simple non-degenerate spectra determine one-dimensional eigenspaces only up to phase after labels are fixed; without labels or an ordering rule, valid eigenvector matrix permutations change P as an ordered 3x3 packet. Repair target: add an explicit eigenvalue-order/label convention, such as ascending eigenvalues for both matrices, or weaken the intrinsic statement to P only up to independent row/column permutations. Claim boundary until fixed: for fixed supplied eigenvector matrices, U_pair is unitary, |U_pair|^2 is doubly stochastic, and diagonal eigenvector rephasings leave |U_pair|^2 unchanged; degenerate spectra remain explicitly excluded.
-
-Auditor-quoted load-bearing step:
-For fixed supplied eigenvector matrices U_pair=U_e^dagger U_nu is unitary, |U_pair|^2 is doubly stochastic and diagonal-rephasing invariant; the source further claims the packet is intrinsic to a supplied Hermitian pair for simple spectra.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: add an explicit eigenvalue-order/label convention, or state the intrinsic projector packet is determined only up to independent row/column permutations; then re-audit the simple-spectrum intrinsic clause.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06`
-
-**Note:** [docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md](docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md)  |  **Descendants:** 2  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Audit of the rank-bound citation note's narrowed finite-window/literature-gap claim for the V=1 SU(3) Picard-Fuchs ODE, excluding the admitted all-degree minimality bridge.
-
-Auditor's verdict_rationale:
-Runner stdout and source are unavailable, so the judgment falls back to the source note and cited authorities. The source note imports companion finite-window certificates, but overstates their scope: the retained companion excludes order-2 only through degree 11, not degree 12, and the ODE companion is finite-runner scoped rather than an analytic identity proof. The all-degree rank/order bridge remains explicitly admitted rather than closed.
-
-Auditor-quoted load-bearing step:
-The note relies on the finite runner certificate that no order-≤-2 polynomial-coefficient annihilator exists through coefficient degree ≤12, together with uniqueness of the order-3 degree-2 operator.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: narrow the note to the actually cited finite windows and remove analytic-identity/degree-12/all-degree language, or supply the missing all-order bridge plus a completed supporting certificate.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16`
-
-**Note:** [docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Bounded algebraic/arithmetic certificate for the 4D instanton action normalization S_inst = 8π²/g² and its sample numerical evaluations, excluding global Atiyah-Singer, BPST existence, and Lüscher lattice-topology preservation as retained theorem imports.
-
-Auditor's verdict_rationale:
-The load-bearing action formula is a class A algebraic specialization of the Bogomolny bound at |Q|=1, supported at the bounded level by the cited retained_bounded certificate. However, the packet as written still presents the larger external theorem/lattice package and says the upstream authority covers it, even though that authority explicitly does not retain the global Atiyah-Singer, BPST existence, or Lüscher inputs. The runner also contains a metadata/text-check drift: it reports a positive_theorem declaration while the provided source header is bounded_theorem. Thus the bounded arithmetic is credible, but the claim packet is not clean as written.
-
-Auditor-quoted load-bearing step:
-At |Q|=1, the Bogomolny bound saturated by F=*F gives S_inst = 8π²/g², with the runner only adding finite algebraic/numerical evaluations of that formula.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: narrow the binding Statement and Upstream authority paragraph to the finite Bogomolny/BPST-normalization certificate, or add a retained-grade authority packet for Atiyah-Singer integrality, BPST existence, and Lüscher lattice-topology preservation; refresh the runner metadata check to match bounded_theorem.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`
-
-**Note:** [docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md](docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PMNS_TM2_RESIDUAL_CONSEQUENCE_BOUNDED_NOTE_2026-05-26.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional PMNS residual algebra note: the trimaximal second-column and mu-tau modulus assumptions imply sin^2(theta_23)=1/2 and 3 sin^2(theta_12) cos^2(theta_13)=1, but the advertised maximal-CP conclusion requires the additional nonsingular condition c12*s12*s13 != 0, equivalently excluding the endpoint where the phase term vanishes independently of delta_CP.
-
-Auditor's verdict_rationale:
-The exact algebra supports the TM2 sum rule and mu-tau maximal theta_23 statement, and the cached runner reports PASS=15, FAIL=0 under SHA 2337f4d05c57d6fc03bca7a785f7c5e1256be88bf99f233f042b3f8e5e3009cc. However, the runner only samples nonsingular nonzero s13 values for the CP conclusion and misses the allowed endpoint sin^2(theta_13)=2/3. At that endpoint c12=0, so the factor multiplying cos(delta_CP) is zero and the residual equations do not force maximal CP. Repair target: add the explicit condition c12*s12*s13 != 0, or state the CP conclusion only on the nonsingular physical chamber such as 0 < sin^2(theta_13) < 2/3.
-
-Auditor-quoted load-bearing step:
-The note derives the TM2 sum rule and theta_23=pi/4 from trimaximal and mu-tau modulus residuals, then divides by 2 c12 s12 s13 to conclude cos(delta_CP)=0.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: add the missing nonsingular-angle condition c12*s12*s13 != 0, or restrict the CP conclusion to 0 < sin^2(theta_13) < 2/3; then re-run the boundary case s13^2=2/3.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `su3_wigner_l3_treewidth_infeasible_2026-05-04`
-
-**Note:** [docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md](docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md)  |  **Descendants:** 0  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Audited the runner-backed claim that the L_s=3 PBC cube link-adjacency graph has 81 nodes, 324 edges, degree 8, and that the two implemented heuristics, min-degree and min-fill, each produce max clique size 30/treewidth upper bound 29.
-
-Auditor's verdict_rationale:
-The runner source genuinely constructs the cube geometry, builds the link-adjacency graph, and computes the min-degree/min-fill elimination results without helper opacity or hard-coded contested outputs. However, the note overstates the consequence: phrases such as treewidth >= 29 and infeasible regardless of heuristic are not justified by heuristic upper bounds, and the note itself later admits no lower bound is proven. The strict formula inventory also flags the displayed table entry 8^30 ≈ 10^28 entries; 8^30 = 1.2379e27, so this should be repaired to about 1.2e27 or ~10^27.
-
-Auditor-quoted load-bearing step:
-Both min-degree and min-fill elimination heuristics return treewidth upper bound 29, giving a worst intermediate of 8^30 entries for those naive node-elimination orders.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: narrow the theorem to the two implemented heuristics and repair the upper-bound/lower-bound wording plus the 8^30 exponent display, or provide a certified treewidth lower bound/exhaustive ordering certificate supporting global naive node-elimination infeasibility.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
+_0 rows in this category._
 
 
 ## audited_conditional_missing_bridge_theorem
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_37 rows in this category._
+_10 rows in this category._
 
 
 ### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
 
-**Note:** [docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md](docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)  |  **Descendants:** 949  |  **Class:** C
+**Note:** [docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md](docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)  |  **Descendants:** 924  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md.
@@ -2649,16 +2533,16 @@ Current audit state:
 - audit_status: audited_conditional
 - claim_type: bounded_theorem
 - load_bearing_step_class: C
-- claim_scope: Free U=1 staggered-only 1+1d finite periodic lattice with m>0: the two-step classical dispersion/positive kernel and the constructed Gamma-Fock two-step positivity; gauge-background closure is out of scope.
+- claim_scope: Free U=1 staggered-only 1+1d finite periodic lattice with m>0 and canonical phases; fermion-sector two-step transfer positivity only, not the fixed-gauge or interacting closure.
 
 Auditor's verdict_rationale:
-The runner is substantive: it builds T_even/T_odd from the staggered recurrence, computes T_odd T_even spectra, and verifies the constructed Gamma(t) Fock operator and OS Gram are positive. It is not a hard-coded printout or an external-comparator numerical match. The remaining load-bearing bridge is asserted as a standard free-fermion functorial relation and then implemented, but it is not derived or supplied as a retained authority inside the restricted packet. Gauge-case statements are explicitly downstream and were not audited.
+The runner is substantive: it builds the staggered recurrence, computes the two-step spectrum, constructs the exterior-algebra/Fock operator, and checks B^dag B, OS-Gram PSD, and the diagonal Gamma functor identity. However, the load-bearing passage from the non-Hermitian second-order classical monodromy T_odd T_even to the asserted Fock-space transfer kernel t1^(2)(p)=e^{-2E(p)} is not derived inside the restricted packet; the runner builds Gamma only after selecting that decaying eigenvalue. The source also overstates C2 as complex single-step spectra for every p != 0, while the displayed formula has real spectra when sin(p)=0, for example p=pi on even lattices.
 
 Auditor-quoted load-bearing step:
-The action-derived two-step classical matrix has decaying eigenvalue t1^(2)(p)=e^{-2E(p)}, and the many-body transfer is T_hat^2=Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B.
+The single-particle two-step kernel is identified with the action-derived decaying eigenvalue t1^(2)(p)=e^{-2E(p)}, so T_hat^2=Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B.
 
 Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add an in-packet derivation or retained authority for the free-fermion second-quantization/coherent-state transfer bridge from the staggered action to Gamma(t1), including the decaying-mode projection.
+missing_bridge_theorem: add an in-packet finite derivation from the staggered Grassmann action/coherent-state transfer matrix to the canonical one-particle two-step kernel, and tighten the C2 p != 0 statement to sin(p) != 0 or separately prove the real-spectrum exceptional modes are still non-positive.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -2667,56 +2551,27 @@ drive.
 ```
 
 
-### `no_per_site_chirality_theorem_note_2026-05-02`
+### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`
 
-**Note:** [docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md](docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 876  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: no_go
-- load_bearing_step_class: B
-- claim_scope: Framework per-site no-gamma5 claim conditional on identifying H_x with a single 2D Pauli Cl(3) module; the supplied-Pauli M_2(C) algebraic no-go itself is verified.
-
-Auditor's verdict_rationale:
-Issue: the source imports the framework per-site Hilbert space identification H_x ~= C^2 with gamma_i -> sigma_i from a dependency whose audited scope excludes physical per-site Hilbert-space identification and chirality selection. Why this blocks: the runner and independent algebra prove the narrower supplied-Pauli M_2(C) no-gamma5 fact, but they do not close the framework-level carrier bridge or rule out larger/mixed representation routes without that bridge. Repair target: cite a retained bridge theorem identifying the framework H_x with a single 2D Pauli Cl(3) module, or narrow the source claim to the supplied-Pauli-representation M_2(C) no-go. Claim boundary until fixed: within the supplied 2x2 Pauli representation, sigma1 sigma2 sigma3 = iI, no nonzero 2x2 matrix anticommutes with all three sigma_i, and there is no per-site gamma5/chirality projector of that form.
-
-Auditor-quoted load-bearing step:
-By the cited per-site uniqueness theorem (U2), H_x ~= C^2 with gamma_i mapped to sigma_i.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: cite a retained bridge theorem identifying framework H_x with a single 2D Pauli chirality module, or narrow the claim to the supplied-Pauli-representation M_2(C) no-go.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `newton_law_derived_note`
-
-**Note:** [docs/NEWTON_LAW_DERIVED_NOTE.md](docs/NEWTON_LAW_DERIVED_NOTE.md)  |  **Descendants:** 64  |  **Class:** A
+**Note:** [docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md](docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)  |  **Descendants:** 924  |  **Class:** A
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/NEWTON_LAW_DERIVED_NOTE.md.
+Use the physics-loop skill to close the conditional audit on docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md.
 
 Current audit state:
 - audit_status: audited_conditional
 - claim_type: bounded_theorem
 - load_bearing_step_class: A
-- claim_scope: Conditional algebraic inverse-square force derivation on Z^3 from three named admissions: BA-1 lattice Poisson equation of motion, BA-2 Z^3 Green-kernel normalization, and BA-3 test-mass force/source coupling; no derivation of those admissions is audited.
+- claim_scope: Fixed-background staggered two-step transfer positivity from the anti-Hermitian spatial-hop modal reduction, plus finite det/spec/Z invariance under hw=1 permutation conjugation.
 
 Auditor's verdict_rationale:
-Issue: BA-3, the test-mass force/source coupling F=-M_test*grad(phi), is named locally but is neither registered in tier_a_admissions.json nor backed by a retained-grade dependency in the restricted packet. Why this blocks: the inverse-square force law, as opposed to the 1/r potential, requires exactly that physical response/readout bridge; without it the retained chain proves only the conditional potential algebra. Repair target: supply a retained-grade theorem deriving the test-mass response rule from retained primitives, or obtain an explicit reviewed admitted-premise registration and wire it as a dependency. Claim boundary until fixed: the source supports only the algebraic implication given BA-1/BA-2/BA-3; the runner is finite numerical support after assuming the Poisson/ray-deflection surface, not a derivation of the admissions, and it does not by itself support the note's broader Green-ratio, product-law, dimensionality, or 128^3 numerical-support language.
+The runner source performs real finite computations rather than merely printing constants: it builds the spatial hop, transfer blocks, random SU(3)/U(1) backgrounds, many-body diagonal Gamma exhibits, and permutation conjugations, with SCORECARD PASS=7 FAIL=0. The displayed modal 2 x 2 formula, determinant-one/positive-eigenvalue calculation, determinant lower bound from the cited Case A note, and unitary-conjugation invariance checks are algebraically sound within their finite fixed-background scope. However, the source also states a U-integrated RP reduction with a Wilson gauge-half factor, while the retained_bounded gauge-half citation only proves an abstract Cauchy-Schwarz identity under explicit symmetry hypotheses and says it does not establish the generic Wilson plaquette half-action theorem. That missing application bridge prevents a clean verdict for the source claim as written.
 
 Auditor-quoted load-bearing step:
-Given G(r)=1/(4*pi*r), Poisson linearity gives phi(r)=M/(4*pi*r), and the admitted BA-3 coupling F=-M_test*grad(phi) gives |F|=M*M_test/(4*pi*r^2).
+Because the fixed-background spatial hop h[U] is anti-Hermitian, it diagonalizes with eigenvalues i lambda_j, so the two-step transfer reduces to 2 x 2 blocks with positive eigenvalues exp(+/-2 asinh(sqrt(m^2+lambda_j^2))); relabeling invariance is then ordinary unitary-conjugation invariance of determinant, spectrum, and trace.
 
 Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide a retained-grade BA-3 test-mass force/source coupling theorem, or a reviewed admission-registry entry plus dependency wiring, then refresh the note/runner support language against the completed cached runner output.
+missing_bridge_theorem: add or cite a retained bridge applying the abstract gauge-half norm-square hypotheses to the Wilson plaquette gauge-half/temporal-gauge boundary setup, or narrow the note to only the fixed-background transfer positivity and finite relabeling theorem.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -2725,56 +2580,27 @@ drive.
 ```
 
 
-### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
+### `observable_principle_from_axiom_note`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md](docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md)  |  **Descendants:** 62  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/GAUGE_VACUUM_PLAQUETTE_BETA6_SCALAR_VALUE_INSUFFICIENCY_NOTE_2026-04-17.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: no_go
-- load_bearing_step_class: A
-- claim_scope: Audited the formal scalar-insufficiency claim that one fixed plaquette scalar, treated as one scalar constraint on a retained positive class-sector vector, is not enough to recover v_6, rho_(p,q)(6), or the full compressed boundary function.
-
-Auditor's verdict_rationale:
-The load-bearing step is an algebraic scalar-underdetermination argument, and the runner supports finite retained-sector sampling/inversion rather than a first-principles beta=6 physics closure. That is enough for a bounded formal warning that one scalar sample is insufficient to recover an N-dimensional retained coefficient vector. It is not enough for the broader beta=6 PF-seam claim because the main cited seam-reduction authority explicitly leaves the Wilson/Haar kernel, rim-lift, compression, and compressed evaluation identifications out of scope. Clean retention would therefore over-propagate a formal lemma through open physical identifications.
-
-Auditor-quoted load-bearing step:
-Fixing one scalar value L(v)=c does not determine a unique positive normalized class-sector vector v; distinct vectors can share that scalar while differing on other statistics and hence on boundary data.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: re-audit after retained one-hop authorities supply the beta=6 Wilson/Haar kernel, rim-lift, compression, and compressed rim-evaluation bridge, or narrow this note to the formal scalar-underdetermination lemma only.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `broad_gravity_derivation_note`
-
-**Note:** [docs/BROAD_GRAVITY_DERIVATION_NOTE.md](docs/BROAD_GRAVITY_DERIVATION_NOTE.md)  |  **Descendants:** 57  |  **Class:** A
+**Note:** [docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)  |  **Descendants:** 739  |  **Class:** A
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/BROAD_GRAVITY_DERIVATION_NOTE.md.
+Use the physics-loop skill to close the conditional audit on docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md.
 
 Current audit state:
 - audit_status: audited_conditional
 - claim_type: bounded_theorem
 - load_bearing_step_class: A
-- claim_scope: Conditional broad weak-field gravity signature bundle over stipulated closure, source, and weak-field response inputs, with geodesic/conformal/light-bending claims additionally conditional on continuum and null-geodesic bridges.
+- claim_scope: Conditional finite-algebra audit of W=log|det(D+J)| on the runner APBC hierarchy block, assuming P1 scalar additivity and P2 continuous phase-blind scalar-generator selection; the v readout and derivation of P1/P2 were out of scope.
 
 Auditor's verdict_rationale:
-Issue: the bounded IF-chain is explicit and the algebraic consequences check out, but the physical response, source readout, closure, continuum, and null-geodesic bridges are load-bearing admissions. Why this blocks: the Tier-A registry does not list these gravity admissions as accepted non-axiom premises, and the one-hop retained-bounded notes do not derive them. Repair target: provide retained bridge theorems or a reviewed Tier-A registration for the admitted closure/source/response inputs and the continuum/null identifications. Claim boundary until fixed: the note is usable as a bounded explanatory IF-chain over named assumptions, but the audit row should remain audited_conditional, not audited_clean.
+The runner source is substantive: it constructs the finite staggered APBC Dirac blocks and checks direct-sum determinant/log additivity, source curvature, the Matsubara formula, and Klein-four orbit enumeration; the out-of-scope v comparator is not counted. However, the derivation imports P1 and especially P2 as admitted scalar-selection premises, and the packet supplies no retained or accepted authority for P2. The formula inventory also finds the displayed Cauchy-solution family W(r)=c log r + const overstated: exact W(r1 r2)=W(r1)+W(r2) permits no universal additive constant, though the later zero-source baseline can be repaired as an extensive baseline convention.
 
 Auditor-quoted load-bearing step:
-Given the admitted inputs, WEP and time dilation follow from S = kL(1 - phi), while conformal metric, geodesic equation, and light-bending factor 2 follow only with the additional continuum-limit and null-geodesic identifications.
+Given P1 and P2, factorization of |Z| forces W(r1 r2)=W(r1)+W(r2), so continuity selects the log-amplitude generator W=c log|det(D+J)| plus the chosen baseline convention.
 
 Auditor's repair target (canonical class + action):
-missing_bridge_theorem: re-audit after retained bridge theorems derive L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the continuum/null-geodesic identifications, or after those admissions are explicitly Tier-A registered.
+missing_bridge_theorem: supply a retained or accepted P2 scalar-generator selection theorem, and repair the functional-equation wording so the additive constant is treated as zero or as an extensive baseline convention rather than a solution of W(r1 r2)=W(r1)+W(r2).
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -2783,230 +2609,27 @@ drive.
 ```
 
 
-### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
+### `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17`
 
-**Note:** [docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 50  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Bounded dimensional-minimality claim combining lattice IR-sum Mermin-Wagner scaling with the D9 long-range-force/kernel condition to argue d=3 is the minimal spatial dimension compatible with continuous SSB and a non-logarithmic long-range force.
-
-Auditor's verdict_rationale:
-Issue: the proof promotes the Bogoliubov+IR sum into a no-continuous-SSB conclusion and then combines it with D9, but the direct Mermin-Wagner dependency explicitly excludes the Ward/commutator-normalized order-parameter extraction, and AXIOM_REDUCTION_NOTE is a meta inventory rather than retained theorem authority for D9. Why this blocks: the runner's I_d(L) table independently checks the d=1 linear, d=2 logarithmic, and d>=3 finite IR behavior, but that does not by itself prove vanishing order parameter or the framework's long-range-force dimension condition. Repair target: supply a retained Ward/commutator normalization lemma for the finite-volume order parameter and a retained theorem-grade D9/kernel-stability authority, then re-run the dimensional-minimality audit. Claim boundary until fixed: the source may cite the checked IR-sum threshold as supporting evidence; it may not retain the full d_s=3 minimality theorem or the d_s=2 continuous-SSB exclusion as closed.
-
-Auditor-quoted load-bearing step:
-From AXIOM_REDUCTION_NOTE D9 and MW1/MW2, d ≥ 3 is required for continuous SSB and the long-range-force condition, so d = 3 is the unique minimal integer satisfying both.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add retained Ward/commutator normalization for order-parameter extraction and theorem-grade D9/kernel-stability authority, then re-audit the minimality claim.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `continuum_identification_note`
-
-**Note:** [docs/CONTINUUM_IDENTIFICATION_NOTE.md](docs/CONTINUUM_IDENTIFICATION_NOTE.md)  |  **Descendants:** 48  |  **Class:** B
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md](docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md)  |  **Descendants:** 54  |  **Class:** A
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/CONTINUUM_IDENTIFICATION_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Audited only the restricted packet's continuum-identification capstone: existence of named gravity/gauge notes and runners, plus the source note's bounded gauge/EFT and approximate Lorentz-scope statements.
-
-Auditor's verdict_rationale:
-The runner source is explicitly a structural integrity check and only tests path existence, so the PASS=56 result cannot establish first-principles continuum identification. The gauge conclusion imports a standard universality/EFT bridge and finite-spacing low-energy continuum-QCD identification that are not closed within the restricted packet, and the note itself names the formal RG flow proof as open. The included Lorentz authority is retained_bounded and explicitly says exact retained Lorentz invariance and Planck-suppressed numerical readout remain conditional, which further bounds the continuum claim rather than making it clean.
-
-Auditor-quoted load-bearing step:
-The combined continuum identification rests on the assertion that the gravity result is closed by a 19-step exact chain and that the gauge sector is positioned on continuum QCD by Wilson SU(3) at beta=6.0 plus the standard universality/EFT bridge.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide retained-grade content audits for the 19 gravity authority notes and a retained bridge theorem for the gauge universality/EFT-to-continuum-QCD identification, rather than an existence-only runner.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`
-
-**Note:** [docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md](docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)  |  **Descendants:** 48  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Audited the bounded thermal-layer endpoint enclosures, Omega_DM interval conversion, and one-scalar admitted-family root interval as composition over the supplied one-hop thermal integral, monotonicity, series/tail, and selector-boundary authorities plus the runner/helper sources.
-
-Auditor's verdict_rationale:
-The runner source does perform nontrivial interval-width, disjointness, target-bracketing, and root-bracketing checks, and its stdout matches those checks. However, the primary runner imports ALPHA_LO/ALPHA_HI, OMEGA_DM_OBS, certified_same_surface_ratio_bounds, and certified_sigma_interval from helper/common modules rather than deriving the contested live-DM premises from framework primitives. The cited monotonicity and series/tail authorities are retained_bounded but explicitly conditional on unsupplied channel-weight and live-DM-slice authorities, so retained status does not propagate to the full claimed same-surface DM closure.
-
-Auditor-quoted load-bearing step:
-The theorem claims that exact monotonicity plus certified endpoint/series-tail enclosures close the current-bank image and force a unique one-scalar root interval on the same-surface thermal layer.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply retained one-hop authorities for the 64:1 same-surface channel-weight bridge, the live-DM plaquette/eta-omega constants, and the packet-completeness/selector premise, then re-audit the same runner composition.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `koide_native_zero_section_closure_route_note_2026-04-24`
-
-**Note:** [docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md](docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)  |  **Descendants:** 48  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Class-A symbolic consequences of three explicit admitted zero-section/readout identifications: real Z3-primitive idempotents, rank-one non-equivariance, unit endpoint c=0, and Q=2/3 plus delta_open=2/9 under the native zero-section substitutions; excludes derivation of the identifications and excludes retained-only Koide closure.
-
-Auditor's verdict_rationale:
-Issue: The runner closes only symbolic algebra under three admitted identifications: charged-lepton zero-source readout, Brannen endpoint as the whole real Z3 primitive, and unit-preserving determinant-line readout. Why this blocks: those identifications are exactly the load-bearing physical/readout bridges needed for Q=2/3 and delta_open=2/9 to be retained current-surface outputs, and no retained dependency or theorem derives them in this row. Repair target: split or add retained upstream theorems deriving the three identifications, then re-audit the same algebraic runner as downstream support. Claim boundary until fixed: the row is conditional algebraic support for the native zero-section route only; it is not retained-only Koide Q/delta closure.
-
-Auditor-quoted load-bearing step:
-Under z=0, spectator=0, and c=0, the runner verifies Q=2/3 and delta_open=eta_APS=2/9, while stating that retained-only closure still requires the three native identification theorems.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem - Add retained upstream theorems for the zero-source charged-lepton readout, whole-real-Z3-primitive Brannen endpoint, and unit-preserving determinant-line readout, then re-audit the conditional algebra as downstream support.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `no_per_site_bosonic_ccr_theorem_note_2026-05-02`
-
-**Note:** [docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md](docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 47  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md.
+Use the physics-loop skill to close the conditional audit on docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md.
 
 Current audit state:
 - audit_status: audited_conditional
 - claim_type: positive_theorem
-- load_bearing_step_class: B
-- claim_scope: Finite-dimensional trace obstruction for an exact bosonic CCR on a supplied finite-dimensional per-site Hilbert space; the framework-specific identification dim_C H_x = 2 is not closed by the cited per-site Cl(3) uniqueness dependency.
-
-Auditor's verdict_rationale:
-Issue: Step 1 cites the per-site uniqueness note as providing physical dim_C H_x = 2, but that retained dependency explicitly excludes physical per-site Hilbert-space identification and realization. Why this blocks: the runner proves the trace obstruction only after a finite-dimensional H_x is supplied; it does not construct the framework-site Hilbert space from retained inputs. Repair target: cite and audit a retained per-site Hilbert/Fock realization bridge, or narrow this note to the pure finite-dimensional trace theorem. Claim boundary until fixed: no bounded operators on any supplied finite-dimensional Hilbert space can satisfy [a,a†]=I, but the framework-site H_x premise is not retained here.
-
-Auditor-quoted load-bearing step:
-By AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29, dim_C H_x = 2 for every site x; then tr([a,a†])=0 but tr(I_Hx)=2.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a retained direct authority that identifies the physical per-site Hilbert/Fock space and its finite dimension, or split the source to a pure finite-dimensional trace obstruction theorem.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `q_integer_spectrum_theorem_note_2026-05-02`
-
-**Note:** [docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md](docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 47  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: B
-- claim_scope: Framework-facing total charge spectrum theorem: per-site n_x=a_x^dagger a_x has eigenvalues {0,1} and Q_total=sum_x n_x has spectrum {0,...,N} with binomial multiplicities on the N-site Fock space.
-
-Auditor's verdict_rationale:
-Issue: the source uses axiom_first_cl3_per_site_uniqueness as authority for a framework per-site Hilbert H_x~=C^2 and one-mode Fock construction, but that dependency is retained only as a pure Cl(3,0) representation-classification theorem and explicitly excludes physical per-site Hilbert-space identification. Why this blocks: the runner correctly checks the algebra of n=a^dagger a on a stipulated C^2 tensor product, including spectrum {0,...,N}, binomial multiplicities, commutativity, and Q=N/2 I - (1/2)sum sigma_3,x; it does not supply the missing bridge from abstract Cl(3) chirality modules to the framework Fock space or charge operator. Repair target: cite/audit a retained per-site Fock-space realization theorem, or narrow this row to a purely stipulated N-qubit algebra theorem with H=(C^2)^N and a/a^dagger defined by convention. Claim boundary until fixed: the integer-spectrum algebra is valid for a supplied N-site qubit/Fock tensor product, but framework charge quantization is not retained from the current one-hop dependency.
-
-Auditor-quoted load-bearing step:
-By per-site uniqueness, H_x ~= C^2 with canonical fermion raising/lowering operators, so n_x=a_x^dagger a_x has spectrum {0,1} and Q_total has spectrum {0,...,N} on the tensor-product Fock space.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply retained per-site Fock-space/charge-operator realization authority, or narrow the row to a stipulated N-qubit algebra theorem and re-audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `per_site_su2_spin_half_theorem_note_2026-05-02`
-
-**Note:** [docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md](docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 5  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: B
-- claim_scope: The note attempts to prove that each physical per-site Hilbert space carries only the j=1/2 su(2) spin irrep by applying S_i=sigma_i/2 to the Pauli C^2 module.
-
-Auditor's verdict_rationale:
-Issue: the proof imports the physical per-site Hilbert identification H_x=C^2 and a specific Pauli/chirality spin-generator action from a dependency whose audited scope excludes that bridge. Why this blocks: the runner verifies the Pauli module calculation, but it does not establish that the physical site has exactly that one module/chirality or that S_i=sigma_i/2 is the physical spin action rather than an abstract su(2) action on a chosen Pauli irrep. Repair target: add a retained direct authority from the current qubit-per-site axiom surface, or a bridge theorem, that supplies the physical one-qubit H_x=C^2 module and the permitted spin-generator/chirality convention used here. Claim boundary until fixed: conditional on a physical per-site Pauli module with the stated spin-generator convention, the module is irreducible with Casimir 3/4 and j=1/2; the unrestricted per-site matter-content exclusion is not yet audited.
-
-Auditor-quoted load-bearing step:
-By the cited per-site uniqueness theorem, H_x is identified with C^2 carrying gamma_i -> sigma_i, then S_i=sigma_i/2 is treated as the physical per-site su(2) spin action.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply or cite retained authority tying the current qubit-at-every-site axiom surface to the physical one-copy H_x=C^2 Pauli module and to the spin-generator/chirality convention S_i=sigma_i/2.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `signed_gravity_aps_locked_source_action_proposal_note`
-
-**Note:** [docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md](docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md)  |  **Descendants:** 5  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: open_gate
 - load_bearing_step_class: A
-- claim_scope: Audited only the conditional APS-locked source-action ansatz: if the chi_eta M_phys <rho,Phi> term is admitted, the finite algebra gives locked signed source/response behavior while leaving its origin open.
+- claim_scope: Audited the asserted exact full-slice Wilson/Haar rim-lift identity for B_beta(W)(U) and the compressed descendant eta_beta(W)=P_cls B_beta(W), using only the one-hop authorities and the SU(2) toy Fubini runner.
 
 Auditor's verdict_rationale:
-The runner verifies consequences of the proposed action term by finite differentiation, sign-table checks, and unitary/Born controls; those are algebraic checks on an admitted ansatz, not an origin derivation. The source note is explicit that S_int is a new premise unless derived elsewhere, and the cited-authorities packet contains no retained upstream bridge. The helper boundary model supplies toy eta sectors but does not derive the scalar-gravity source coupling. Thus the note is a coherent conditional candidate/open gate, not a retained theorem.
+The displayed product formula psi_beta(W)(U)=B_beta(W)(U)F(U) is the correct kind of algebraic step only after disjoint rim/far variables and an already-defined physical slice marginal are granted. The cited authorities are retained-bounded/decorative and explicitly leave the actual untruncated Wilson environment transfer, mixed-kernel compression bridge, and full local rim functional open. The runner computes a Monte Carlo SU(2) toy with a deliberately disjoint far factor; its rim action contains no marked holonomy W and its beta/3 action check is hard-coded, so it cannot certify the exact SU(3) full-slice rim lift claimed by the note.
 
 Auditor-quoted load-bearing step:
-For the proposed interaction term, S_int = - sum_a chi_a M_a sum_x rho_a(x) Phi_x, the variation gives rho_active(x) = sum_a chi_a M_a rho_a(x).
+Because Xi^rim and the bulk-environment links are disjoint Haar variables, the Wilson density factorises over rim and bulk, so psi_beta(W)(U)=B_beta(W)(U)F(U) and eta_beta(W)=P_cls B_beta(W).
 
 Auditor's repair target (canonical class + action):
-missing_bridge_theorem: derive S_int = -chi_eta M_phys <rho,Phi> from retained APS/Wald/Gauss structure or from the proposed derived chiral grading, then rerun the same source/response controls.
+missing_bridge_theorem: provide a restricted-packet proof or runner for the actual SU(3) full-slice Wilson marginal factorization with marked W and the projection eta_beta(W)=P_cls B_beta(W), or narrow the source claim to the bounded SU(2) toy Fubini certificate.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -3015,27 +2638,27 @@ drive.
 ```
 
 
-### `bertrand_stable_orbit_upper_bound_support_note_2026-05-20`
+### `grav_decoherence_derived_note`
 
-**Note:** [docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md](docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)  |  **Descendants:** 1  |  **Class:** A
+**Note:** [docs/GRAV_DECOHERENCE_DERIVED_NOTE.md](docs/GRAV_DECOHERENCE_DERIVED_NOTE.md)  |  **Descendants:** 50  |  **Class:** D
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md.
+Use the physics-loop skill to close the conditional audit on docs/GRAV_DECOHERENCE_DERIVED_NOTE.md.
 
 Current audit state:
 - audit_status: audited_conditional
 - claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited the algebraic effective-potential stability calculation for the assumed continuum potential V(r) = -k/r^(d-2), with framework-connected support retained only for the cache-backed d = 3 and d = 4 rows.
+- load_bearing_step_class: D
+- claim_scope: Audited whether the note derives the Penrose-Diosi gravitational decoherence rate and quoted BMV/NV numerical predictions from the supplied conditional lattice-Poisson and potential-kernel authorities.
 
 Auditor's verdict_rationale:
-The load-bearing differentiation and substitution are a genuine class A algebraic check, and they correctly produce the stated sign condition. However, the only cited authority is retained_bounded for cache-backed d = 3 and d = 4 rows and explicitly does not retain a universal continuum V(r) = -k/r^(d-2) law across all integer dimensions. Because the source note still uses the d >= 5 continuum law as part of the stated upper-bound support while admitting that bridge is not supplied, the full bounded claim is conditional rather than clean.
+The presented gamma formula is an imported Penrose-Diosi physical bridge, not a first-principles compute from the restricted packet. The upstream Poisson authority is explicitly conditional on stipulated L^{-1}=G_0, and the Newton authority disclaims the physical force/source coupling and gravitational normalization needed by the decoherence claim. The runner evaluates assumed formulas and lattice Green ratios, but it does not derive the closure identity, the mass-source/readout bridge, or gamma=E_G/hbar from the axiom. Formula inventory also finds form-factor/self-energy normalization drift: the displayed 2G_lat(0)-2G_lat(delta_x) definition would not yield F->1 with G_lat(0)~0.2527/a, and the source's <1% for r>=5 claim conflicts with its r=10 table entry.
 
 Auditor-quoted load-bearing step:
-Using the circular-orbit condition to eliminate L^2 gives d^2V_eff/dr^2|_{r_c} = k(d-2)(4-d)/r_c^d, so stability requires (d-2)(4-d) > 0.
+The gravitational self-energy difference is asserted as E_G = G m^2 / delta_x * F(delta_x / a), giving gamma = E_G / hbar = (G m^2)/(hbar delta_x) * F(delta_x / a).
 
 Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide a retained derivation or retained authority for the continuum V(r) = -k/r^(d-2) law across the integer d >= 5 cases, or narrow the audited claim to the d = 3 and d = 4 algebraic rows only.
+missing_bridge_theorem: provide retained derivations for L^{-1}=G_0 from the axiom, physical mass-source/readout and G-normalization, and the Penrose-Diosi field-distinguishability-to-rate bridge; then repair the lattice form-factor/self-energy normalization and convergence-table drift.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -3046,7 +2669,7 @@ drive.
 
 ### `born_rule_from_gleason_busch_derivation_note_2026-05-20`
 
-**Note:** [docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md](docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)  |  **Descendants:** 1  |  **Class:** B
+**Note:** [docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md](docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)  |  **Descendants:** 1  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md.
@@ -3054,17 +2677,17 @@ Use the physics-loop skill to close the conditional audit on docs/BORN_RULE_FROM
 Current audit state:
 - audit_status: audited_conditional
 - claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Audited the conditional Born-rule route: Gleason-Busch fixes p(E)=Tr(σE) on the qubit-lattice effect algebra, then σ is identified with the tracial state and projective record conditioning is used to obtain the standard pure-state Born rule.
+- load_bearing_step_class: A
+- claim_scope: Finite qubit-lattice ideal-record bridge from trace-form probabilities, tracial reference I/d, and canonical projective Lüders update to the rank-one Born probability |<phi|psi>|^2.
 
 Auditor's verdict_rationale:
-The source note itself admits that the no-extra-structure/pre-record identification, Lüders/update premise, and persistent-record-as-Kraus mapping are not derived in the restricted packet. The cited tracial-state authority is retained for unique tracial-state characterization only and explicitly says the pre-record identification remains an open admission, so retained status cannot propagate through that identification. Even if the projective-measurement component is treated as resolved elsewhere, that authority is not included as a cited retained dependency here and the pre-record identification remains a blocker.
+The runner performs real finite-matrix checks for the tracial, Lüders, rank-one, sequential-effect, and projective-Kraus identities; those are algebraic checks, not an independent derivation of the physical reference state. The cited Gleason/Busch and direct projective/Lüders rows are retained-grade for the bounded ideal-projective surface. However, the pre-record reference authority explicitly says the identification of the unique tracial state with a pre-record reference remains an open admission, and this parent note uses that identification load-bearingly. The remaining blocker is therefore not the projective-measurement chain but the pre-record-reference bridge.
 
 Auditor-quoted load-bearing step:
-A1+A2 with the no-extra-structure identification pins σ = ρ_ref = ⊗_x I/2 for the pre-record system.
+For a rank-one projective record P = |psi><psi|, P rho_ref P / Tr(P rho_ref P) = P, so a later rank-one effect E = |phi><phi| has probability Tr(P E) = |<phi|psi>|^2.
 
 Auditor's repair target (canonical class + action):
-missing_bridge_theorem: cite retained bridge theorems for pre-record identification and persistent-record-as-Kraus/readout mapping, and wire any resolved projective-measurement/Lüders authority as a direct dependency before re-audit.
+missing_bridge_theorem: land and audit a direct bridge identifying the unique tracial state tau with the pre-record reference rho_ref=I/d, then re-audit this finite ideal-record Born bridge.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -3102,93 +2725,6 @@ drive.
 ```
 
 
-### `coulomb_stability_upper_bound_support_note_2026-05-20`
-
-**Note:** [docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md](docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)  |  **Descendants:** 1  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional algebraic scaling lemma: assuming the admitted general-d Coulomb Hamiltonian, scaled-trial-state expectations, and Coulomb/scalar sector identification, the trial-state scaling marks d = 4 as critical, d >= 5 as unbounded below, and d = 3 as admitted hydrogenic background.
-
-Auditor's verdict_rationale:
-The load-bearing step is a class A algebraic dominance check over stated scaling inputs. However, the note itself identifies the general-d Coulomb Hamiltonian, d-dimensional continuum quantum mechanics scalings and spectrum, and Coulomb/scalar sector identification as admitted external premises. The only cited authority is retained_bounded for cache-backed d = 3 and d = 4 table rows and does not supply the missing general-d Coulomb/QM bridge. No runner source or stdout is available, but the verdict does not depend on compute noncompletion because the conditional algebra can be judged from the note text.
-
-Auditor-quoted load-bearing step:
-For the scaled trial state, <H_d>_{psi_lambda} = lambda^2 T - lambda^(d-2) U, so for d >= 5 the attractive term dominates as lambda -> infinity and the Hamiltonian is unbounded below.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add retained bridge theorems or retained cited dependencies deriving P1, P2, and P3, or keep the claim explicitly conditional on those external admissions.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19`
-
-**Note:** [docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md](docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md)  |  **Descendants:** 1  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Bounded support for theta_eff = 0 only on the explicit canonical Wilson single-plaquette real-positive surface plus retained staggered determinant positivity and a scalar-mass-only action-class boundary.
-
-Auditor's verdict_rationale:
-The theta-slot rejection and mass-line selection are valid algebraic consequences of the stated bounded premises, and the runner performs substantive bounded checks rather than merely printing constants. However, the source note explicitly load-bears the real-positive Wilson action surface and the scalar-mass action-class boundary, and those are not closed by the cited retained authorities in this packet. The result is therefore conditional support on the named retained surface, not a clean derivation of that surface or of the parent strong-CP closure.
-
-Auditor-quoted load-bearing step:
-A nonzero i theta Q_lat single-plaquette term is excluded because it makes the Boltzmann weight complex on the real-positive Wilson surface, and intersecting determinant positivity with the scalar-mass action class leaves only the real scalar mass line.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide retained one-hop derivations or accepted bounded-premise records for the real-positive Wilson measure selector and scalar-mass-only action-class boundary, then re-audit the composition.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `teleportation_resource_from_poisson_note`
-
-**Note:** [docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md](docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)  |  **Descendants:** 1  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: open_gate
-- load_bearing_step_class: C
-- claim_scope: Bounded small-surface offline extraction diagnostics for the stipulated last-taste-bit logical resource from the 1D N=8 and 2D 4x4 Poisson/CHSH ground states, restricted to ordinary quantum-state teleportation.
-
-Auditor's verdict_rationale:
-The bounded diagnostic core is supported: the primary runner imports the Poisson/CHSH construction, diagonalizes the finite Hamiltonians, traces to the stipulated logical qubits, and computes the reported resource diagnostics. However, the note itself admits that the native preparation/readout theorem and last-taste-bit logical-carrier selection are not supplied, and the adjacent retained bounded teleportation notes do not close that bridge. The row therefore remains an open-gate conditional rather than a closed deterministic resource derivation.
-
-Auditor-quoted load-bearing step:
-Keep the last taste bit of each species as the logical qubit, trace over cells and spectator taste bits, and compute Bell overlap, negativity, CHSH, and standard teleportation fidelity of the resulting two-qubit density matrix.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: prove the native preparation/readout theorem and last-taste-bit logical-carrier selection, then rerun the small-surface checks with the Poisson/CHSH machinery source included in the restricted packet.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
 ### `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25`
 
 **Note:** [docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md](docs/YT_QUBIT_SIGNED_LINEAR_SOURCE_RESPONSE_BRIDGE_CANDIDATE_NOTE_2026-05-25.md)  |  **Descendants:** 1  |  **Class:** A
@@ -3218,27 +2754,27 @@ drive.
 ```
 
 
-### `dimension_selection_lower_bound_bridge_v2_2026-05-20`
+### `sm_gstar_higgs_sector_count_stretch_note_2026-05-29`
 
-**Note:** [docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md](docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md)  |  **Descendants:** 0  |  **Class:** A
+**Note:** [docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md](docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)  |  **Descendants:** 0  |  **Class:** A
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md.
+Use the physics-loop skill to close the conditional audit on docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md.
 
 Current audit state:
 - audit_status: audited_conditional
 - claim_type: bounded_theorem
 - load_bearing_step_class: A
-- claim_scope: Bounded audit of the eikonal derivative-sign bridge for scripts/frontier_dimension_selection.py's analytic potential family, with finite runner sign checks at d in {1,2,3,4,5}; beta/alpha, upper-bound, and wider D=3 claims are out of scope.
+- claim_scope: Audited the restricted-packet claim that the Higgs-sector contribution to the framework-native high-T g_* census is one thermalized EWSB doublet, so g_* = 106.75 rather than 110.75, with flavor-sector two-offset/two-Higgs textures adding no Fock-space degrees of freedom.
 
 Auditor's verdict_rationale:
-The displayed derivative identities for f_1, f_2, and f_d for d >= 3 are correct, and the supplied runner code/output contains actual finite centroid computations whose signs match the criterion for d=1..5. But the conclusion that this algebraic/eikonal sign governs the runner's normalized finite-k centroid observable still rests on an admitted WKB/discrete-to-eikonal bridge not closed inside the packet. The formula inventory also finds non-load-bearing source drift: the blanket statement that phi < 0 for M > 0 is false for d=2 when 0 < r < 1, including the runner's r=0.5 regularization, and the prose claiming the d>=3 alpha values match the Green-function falloff overstates the supplied table. Therefore the row is conditional rather than clean.
+The runner successfully verifies the finite g_* arithmetic, the monomial versus two-offset Yukawa algebra, and several file/token checks, but its decisive 2HDM-exclusion and framework-native one-doublet conclusions are asserted rather than derived. The source note overuses D17: uniqueness of a unit-normalized scalar singlet on Q_L is not the same as derivation of one complex SU(2)_L EWSB doublet in the thermal census. The flavor-sector distinction is plausible within the packet, but the claim still depends on an unprovided retained bridge from composite scalar-singlet structure to EWSB doublet field content and on unaudited one-Higgs/Z3/2HDM support notes for parts of the non-dof argument.
 
 Auditor-quoted load-bearing step:
-Given the admitted eikonal rule that the packet bends toward larger f_d(r), the runner sign is attractive iff df_d/dr < 0, which holds exactly for d >= 3 and not for d <= 2.
+D9/D16/D17 are used to identify the framework-native EWSB census object as exactly one composite SU(2)_L doublet H_unit with 4 real scalar dof, while the retained two-Higgs result is only a Yukawa-texture statement adding no thermalized dof.
 
 Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide a discrete-to-eikonal sign-preservation theorem or an independent finite-k sign proof for the runner's normalized centroid-shift observable, and correct the non-load-bearing phi-sign/alpha-match prose before seeking clean re-audit.
+missing_bridge_theorem: add a retained one-hop bridge proving that the Ward H_unit scalar-singlet object is the single complex SU(2)_L EWSB doublet contributing exactly four thermalized scalar dof, and that the flavor two-offset machinery introduces no independent thermalized scalar field.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -3247,462 +2783,27 @@ drive.
 ```
 
 
-### `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16`
+### `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29`
 
-**Note:** [docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md](docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)  |  **Descendants:** 0  |  **Class:** A
+**Note:** [docs/SM_GSTAR_I12_NUR_THERMAL_EXCLUSION_BOUNDED_NOTE_2026-05-29.md](docs/SM_GSTAR_I12_NUR_THERMAL_EXCLUSION_BOUNDED_NOTE_2026-05-29.md)  |  **Descendants:** 0  |  **Class:** D
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md.
+Use the physics-loop skill to close the conditional audit on docs/SM_GSTAR_I12_NUR_THERMAL_EXCLUSION_BOUNDED_NOTE_2026-05-29.md.
 
 Current audit state:
 - audit_status: audited_conditional
 - claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited the finite C^16 bridge identities for Y = P_R Gamma_1 P_L and the attempted observable-principle selection of 1/sqrt(2) over the active-space comparator 1 on the real-D block.
-
-Auditor's verdict_rationale:
-The runner source genuinely computes the finite C^16 algebra at exact symbolic precision, and the displayed trace and determinant identities are consistent as finite matrix algebra. The selection step still applies X1 outside its stated source domain and baseline: X1 covers real-symmetric J on real anti-Hermitian D, not the scalar-baseline raw chiral Y surface used here. The note also leaves the physical y_nu^(0)/g_weak Frobenius-ratio readout as an admitted bridge, and Step 5's first-derivative wording is not consistent with the nontrivial Gamma_1 response being second order at j = 0.
-
-Auditor-quoted load-bearing step:
-The note excludes the active-space ratio because W[jY]=0 and invokes X1 to say only the Hermitian-completed Gamma_1 direction carries the unique admissible response, making sqrt(Tr(Y^dagger Y)/Tr(Gamma_1^dagger Gamma_1)) = 1/sqrt(2) the normalization.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply a retained theorem extending or applying X1's real-symmetric real-D source domain to the raw chiral bridge Y on the actual block, and separately justify the y_nu^(0)/g_weak Frobenius-ratio readout.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `ew_current_matching_ozi_suppression_theorem_note_2026-04-27`
-
-**Note:** [docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md](docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md)  |  **Descendants:** 0  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Audited the bounded claim that EW disconnected-current vacuum-polarization contributions are parametrically O(1/N_c^2) relative to the connected color trace, excluding any exact 9/8 coefficient.
-
-Auditor's verdict_rationale:
-Both cited authorities explicitly leave the physical EW matching selector open: RCONN states kappa_EW is underdetermined, and the Fierz note names matching rule (M) as not derived. The source note admits the exact 9/8 bridge is non-load-bearing, but its displayed theorem still says the physical continuum-matched EW polarization is connected up to O(1/N_c^2), which requires that missing readout bridge. The displayed Wigner-Eckart/projector formula supplies at most a size-class argument and is not independently verified by the R_conn runner.
-
-Auditor-quoted load-bearing step:
-Each EW-current insertion is assigned a singlet-projector factor of 1/N_c, so Pi_EW^disc / Pi_EW^conn ~ (1/N_c^2) h(lambda), and the physical continuum readout is then taken to be connected up to O(1/N_c^2).
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide a retained-grade EW current selector/disconnected-topology theorem or a dedicated runner/derivation that computes the EW disconnected-current contribution rather than the sibling R_conn ratio.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `exponent_derivation`
-
-**Note:** [docs/EXPONENT_DERIVATION.md](docs/EXPONENT_DERIVATION.md)  |  **Descendants:** 0  |  **Class:** G
-
-```
-Use the physics-loop skill to close the conditional audit on docs/EXPONENT_DERIVATION.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: G
-- claim_scope: The audited scope is the bounded claim that the displayed d=1,2,3 simulation exponent table is roughly organized by |alpha| ~ 1/d_spatial, while the path-measure derivation is admitted as non-load-bearing open work.
-
-Auditor's verdict_rationale:
-The source itself splits the effective path-count and mixing-fraction derivation off as open work, so the dimensional mechanism is not closed by the restricted packet. The cited retained-bounded matched 2D-vs-4D authority explicitly says dimension alone is not isolated in the matched comparison. Strict formula inventory also flags the f_mix-to-alpha displayed scaling: alpha proportional to -d log(L/r) does not yield the claimed 1/d trend, and with N_eff ~ N the omitted N/log N dependence further prevents a closed exponent law. What remains is a tuned family-level numerical heuristic, not an audited theorem.
-
-Auditor-quoted load-bearing step:
-The note normalizes the d=1 measured exponent at -1.5 and asserts that the prediction alpha ~ 1/d_spatial gives d=2: -0.75 and d=3: -0.50, matching the displayed measurements in trend and order of magnitude.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem - derive n_eff and f_mix from the actual DAG path measure, repair or remove the inconsistent f_mix-to-alpha scaling, and provide a matched multi-dimensional runner that isolates dimension from topology and connectivity.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`
-
-**Note:** [docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md](docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional finite-region theorem: assuming PRR on A_Lambda ~= M_{2^|Lambda|}(C), full inner-unitary invariance forces rho_ref|_Lambda = I/2^|Lambda|; PRR itself is not derived or approved.
-
-Auditor's verdict_rationale:
-The runner source performs real finite-dimensional algebra checks and source-boundary checks; it does not merely print constants, and it does not smuggle in a numerical comparator. The displayed finite-region formulas and normalizations used in the source note are consistent under the stated M_d(C) and qubit-region definitions. However, the note explicitly imports PRR as an admitted external premise, and neither cited retained authority derives or approves that premise. Therefore the row is a valid conditional algebraic bridge, not a clean derivation of the pre-record reference state's tracial form from the restricted packet.
-
-Auditor-quoted load-bearing step:
-For a finite-dimensional matrix algebra M_d(C), the only density matrix fixed by rho -> U rho U^dagger for every unitary U in U(d) is rho = I_d/d.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply a retained-grade derivation of PRR from accepted inputs or explicit framework approval of PRR, then re-audit any promotion beyond this conditional finite-region implication.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`
-
-**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional exact rational identities (T1)-(T9) inside the admitted two-channel toy (A1)-(A5), excluding any retained-grade derivation of those admissions.
-
-Auditor's verdict_rationale:
-The formula inventory checks out: `Q(s,0)=2/3`, `Q(0,z)=2/(3(1-z))`, the two displayed Q values, `Z^2`, `<Z>`, `P_chi`, and all delta values follow from the stated definitions. The runner source performs exact `Fraction` computations for the quantitative checks and has no opaque helper imports. Because (A1)-(A5) are explicit non-retained admissions and no bridge authority is supplied, the result is conditional rather than `audited_clean`.
-
-Auditor-quoted load-bearing step:
-Each identity has the strict form `(A_subset) ⊢ (T_k)` and reduces, under that subset, to direct rational arithmetic in `Q`.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: derive or cite retained-grade support for admissions (A1)-(A5), especially the admitted carrier, endpoint selections, and `eta_APS = 2/9`, if retained-grade propagation is desired.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`
-
-**Note:** [docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md](docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited the free U=1 staggered-Dirac two-point SO(4) continuum-limit statement for the displayed spin/taste momentum-space operator, including the O(a^2) ell=4 anisotropy characterization; no interacting, n-point, OS-reconstruction, or physical-unit claim was audited.
-
-Auditor's verdict_rationale:
-The runner genuinely instantiates Euclidean gamma matrices and the displayed D~(p), checks the closed-form inverse, continuum SO(4) covariance, O(a^2) scaling, and the cubic-harmonic anisotropy; no external comparator or tuned numerical match is used. Several summary PASS lines are hard-coded narrative assertions and are not load-bearing evidence. The conditional blocker is upstream: the source note cites the Kähler-Dirac narrow theorem as supplying the spin/taste structure, but that authority expressly does not prove the dynamical staggered-operator/Kähler-Dirac identification or the Kawamoto-Smit phase forcing. Thus the theorem is clean only after taking the displayed free operator as an admitted premise, not as a closed consequence of the cited inputs.
-
-Auditor-quoted load-bearing step:
-For s_mu = sin(p_mu a)/a, the Clifford identity gives G~_E(p) = (m1 - i gamma.s)/(m^2+s.s), and as a -> 0 this tends to (m1 - i gamma.p)/(p^2+m^2).
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a retained derivation from the canonical free staggered action/phases to the displayed reduced-BZ spin/taste D~(p) with taste spectator identity, or narrow the claim explicitly to assume that operator.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`
-
-**Note:** [docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md](docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/OBSERVABLE_PRINCIPLE_P2_DET_REALIZATION_BRIDGE_CONDITIONAL_ON_FERMIONIC_FRAME_NARROW_THEOREM_NOTE_2026-05-28.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited the conditional algebraic determinant-realization bridge on an assumed fermionic Grassmann/JW frame, together with zero-source staggered determinant positivity and conjugation/relabeling invariance of det/spec/Z.
-
-Auditor's verdict_rationale:
-The runner source genuinely computes the stated finite algebraic identities and does not hard-code an external comparator or tuned value. Those checks support the narrow algebraic implication: given Grassmann generators and a specified matrix D+J, the partition readout is det(D+J), and determinant/spectrum/trace are invariant under conjugating relabelings. However, the note over-attributes closure to retained inputs: the actual framework kinetic-operator identification is not supplied by the cited substep-2 narrow theorem, and the AC_phi_lambda-as-pure-relabeling premise is not independently present in the one-hop packet. The result is therefore conditional on missing bridge content beyond FS.
-
-Auditor-quoted load-bearing step:
-Set M = D + J; on the fermionic frame FS the matter partition function is the finite Grassmann Gaussian, so Z_matter[J] = integral exp(-chibar(D+J)chi) = det(D+J), and relabeling-invariant determinant/spectrum/trace readouts cannot see a pure AC_phi_lambda relabeling.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide retained one-hop support, or inline proof within the packet, for the actual D = M_KS matter-operator identification and for AC_phi_lambda being only an S3 relabeling; alternatively narrow the claim scope to make those explicit assumptions.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `persistent_record_as_kraus_operator_note_2026-05-20`
-
-**Note:** [docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md](docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Finite-dimensional algebra only: assuming a normalized linear isometry W with an orthonormal record-block decomposition, the extracted blocks form a Kraus family with trace-preserving unconditional update and normalized selective updates.
-
-Auditor's verdict_rationale:
-The runner genuinely constructs a finite random isometry, extracts blocks, and checks the standard algebraic consequences; it does not hard-code the advertised pass. However, it verifies only the conditional finite-instrument theorem and does not instantiate or derive the persistent-record overlap-kernel dynamics as a normalized linear isometry with the required record readout. The displayed Step 2 probability formula is not generally correct for the K_r map defined in Step 1, so the note is not clean as written even for the algebraic exposition.
-
-Auditor-quoted load-bearing step:
-Given a normalized record-writing isometry W = sum_r K_r \otimes |r>, W^dagger W = I is equivalent to sum_r K_r^dagger K_r = I, so the unconditional map sigma -> sum_r K_r sigma K_r^dagger is CPTP and selective states normalize by outcome probability.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: derive or cite a retained finite normalized linear record-writing isometry/readout theorem from the persistent-record overlap-kernel lane, and repair Eq. (6) to use sum_r ||K_r psi||^2 or explicitly add the rank-one assumptions that would make the displayed formula valid.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26`
-
-**Note:** [docs/PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md](docs/PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Bounded accepted-premise bridge from the stated P1 coframe-response premise to B1-B4. B1-B3 are supported as finite-dimensional Clifford algebra consequences, but B4 as written is not audited clean because the dagger/CAR normalization requires a compatible Hermitian inner product or self-adjoint *-representation premise for D(e_a), which P1 does not state.
-
-Auditor's verdict_rationale:
-The no-go/bounded-wall gate exposes a hidden wall: the single registered premise P1 supplies a quadratic Clifford relation, but not the Hermitian structure needed for the daggered CAR claim in B4. A nonunitary similarity transform of the Pauli gamma matrices preserves B1-B3 while generally changing adjoints with respect to a fixed K inner product, so {c_i,c_j^dagger}=delta_ij I is not representation-invariant from P1 alone. The runner reports PASS=64, FAIL=0 under SHA 14b78a34cf0a5b5b0ba2f28308f82e82e3c18b986fc1276f94b7e25c45c5352e, but it verifies a chosen Hermitian Pauli realization rather than the general supplied-premise statement. Repair target: either add and audit a compatible Hermitian/*-representation premise for D on K, or narrow B4 to an existence statement in a chosen Pauli-realized inner product.
-
-Auditor-quoted load-bearing step:
-The note claims that the accepted coframe-response premise D(v)^2=||v||^2 I_K polarizes to Clifford relations and then yields both an irreducible Cl_4(C) action on K and CAR modes c_N,c_T satisfying dagger anticommutators.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add and audit the missing compatible Hermitian inner product/self-adjoint Clifford representation premise for D(e_a), or weaken B4 to a Pauli-realization existence statement; then re-check the daggered CAR anticommutators.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`
-
-**Note:** [docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md](docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md)  |  **Descendants:** 0  |  **Class:** D
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: no_go
 - load_bearing_step_class: D
-- claim_scope: Given the listed hard-coded SU(3) plaquette coefficient packet and the beta=6 MC comparator, the tested finite weak-coupling/tadpole/Pade grid remains near <P>~0.91 and does not reach <P>_MC=0.5934.
+- claim_scope: Audited the bounded claim that the SM g_* census remains 106.75 rather than 112 across the light-Dirac and heavy-Majorana/seesaw branches, conditioned on empirical small m_nu and the stated thermalization and heavy-mass assumptions.
 
 Auditor's verdict_rationale:
-The runner genuinely computes the truncations, fixed points, and Pade grids from its hard-coded coefficient list; it is not merely printing PASS constants. However, the load-bearing coefficient packet, <P>_MC=0.5934 comparator, and F2_SCALE_PERCENT are external imported values, so the result is a comparator-bound arithmetic check rather than a class C derivation from the framework baseline. The source also overstates the T4 tadpole-improved Pade precision: runner output gives [1/2]_TI=0.910668 and [2/1]_TI=0.910645, which are more than 1e-5 away from 0.910550, although the broad >5% obstruction still holds. The no-go rhetoric is otherwise scoped to the tested finite weak-coupling/tadpole/Pade route and leaves non-perturbative routes open.
+The cited authorities are retained-grade and the runner performs real arithmetic checks rather than merely printing a PASS line. However, the load-bearing step is an external-observation/standard-cosmology comparator, not a first-principles framework computation or a pure algebraic closure over retained inputs. The heavy-Majorana branch also relies on M_R >> T_census, which is asserted in the source note and hard-coded in the runner but not established by the one-hop no-go authority. Therefore the honest result is conditional, even though the scoped exclusion is plausible under the stated assumptions.
 
 Auditor-quoted load-bearing step:
-No combination of finite-order PT truncation, tadpole improvement, and Pade resummation tested in the runner brings <P>_analytic within 5% of the MC value.
+The empirically implied light-Dirac Yukawa y_nu ~ 10^-13 to 10^-12 lies many orders below the Gamma ~ y_nu^2 T versus H thermalization threshold, while the heavy-Majorana branch excludes nu_R by assuming M_R >> T_census, so nu_R is not a light thermalized degree of freedom in either admitted branch.
 
 Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add retained/effective bounded authority rows for the NSPT coefficient packet and beta=6 MC comparator, and correct the T4 TI-Pade precision statement before re-audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27`
-
-**Note:** [docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md](docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Conditional algebraic consequences of the supplied SU(3) strong-coupling coefficient table and leading u=beta/18 substitution: Padé[3/3]=3/5 at u=1/3, conformal checks, c6 sensitivity, Padé[4/4] value, and the Borel-Padé positive-pole witness.
-
-Auditor's verdict_rationale:
-The runner genuinely solves the Padé systems in exact rational arithmetic rather than merely printing PASS, and the displayed finite algebra checks out under the stated coefficient inputs. However, the runner hard-codes the strong-coupling coefficient table, the leading beta-to-u normalization, and the MC comparison value; no one-hop retained authority for the first two appears in the packet. The MC checks are comparator measurements only and are not load-bearing for closure. Therefore the result is a sound conditional algebra lemma, not a closed derivation from retained inputs.
-
-Auditor-quoted load-bearing step:
-Given the supplied coefficients c_1=1, c_4=4, c_6=24 with c_2=c_3=c_5=0, the Padé[3/3] linear system gives P(u)=u-6u^3 and Q(u)=1-6u^2-4u^3, hence Padé[3/3](1/3)=3/5.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add retained or accepted bounded input rows for the SU(3) coefficient table and leading character-coefficient normalization, or narrow the row to an explicitly conditional pure Padé algebra lemma; also fix the runner docstring typo `z = u/(1 + 4 z)` to the executable convention `z = u/(1 + 4 u)`.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29`
-
-**Note:** [docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md](docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Finite two-step transfer-carrier positivity for represented mixed gauge+fermion observables, conditional on a PSD Wilson gauge transfer kernel, PSD fixed-gauge fermion two-step blocks, and the stated mixed OS transfer representation.
-
-Auditor's verdict_rationale:
-The core finite-carrier algebra is sound: with T_gauge >= 0 and blockwise B[U]^dag B[U] >= 0, the displayed T_full is W^dag W and the represented Gram is non-negative. The cited retained determinant note and abstract gauge-half Cauchy-Schwarz note do not supply the Wilson plaquette boundary theorem, the fixed-gauge fermion transfer realization, or the mixed OS transfer representation as closed one-hop authorities. The runner genuinely computes finite matrix instances and the cached PASS=6 output is consistent with the code, but it constructs/samples the transfer object rather than proving the missing compact-group and representation bridges.
-
-Auditor-quoted load-bearing step:
-Given T_gauge >= 0 and the block-diagonal core oplus_U B[U]^dag B[U] >= 0, T_full = (T_gauge^{1/2} x I)(oplus_U B[U]^dag B[U])(T_gauge^{1/2} x I) = W^dag W, so <Omega|O_hat^dag T_full O_hat|Omega> = ||W(O_hat Omega)||^2 >= 0.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a retained one-hop authority proving the Wilson-boundary transfer-kernel positivity and the mixed staggered gauge+fermion OS two-step transfer representation, or narrow the row to the pure algebraic W^dag W lemma under explicit PSD-transfer premises.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `universal_gr_complement_canonical_note`
-
-**Note:** [docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md](docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Audit of whether the restricted packet establishes that universal data canonically fix Pi_A1 and only an SO(3) complement orbit, not a canonical E plus T1 section.
-
-Auditor's verdict_rationale:
-The bounded core may be algebraic in character, but the restricted packet does not contain the runner artifacts or independent derivation needed to verify it. The broader statement that SO(3) is the exact residual gauge surviving every current universal invariant still depends on an admitted missing bridge theorem. No cited retained authority closes that exhaustiveness step, and the displayed projector/candidate formulas are not independently checked within the packet.
-
-Auditor-quoted load-bearing step:
-The note asserts that runner-verified universal-only structural facts establish the exact SO(3) orbit bundle and Pi_A1 as the strongest universal-data outputs, while no canonical E plus T1 section exists from current universal invariants.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide an axiom-native proof or executable runner source/output establishing exhaustiveness of current universal invariants, or narrow the claim to only the verified Pi_A1/orbit facts with complete runner artifacts.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25`
-
-**Note:** [docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md](docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md)  |  **Descendants:** 0  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Audited only the explicitly bounded P1-P5 canonical leading-beta single-plaquette ansatz: P4 excludes the imaginary i theta sum_P Im Tr U_P action slot, while the beta=6 Wilson coefficient remains conditional on scoped Wilson matching/canonical normalization.
-
-Auditor's verdict_rationale:
-The runner performs substantive SU(3) and symbolic checks for the bounded real-positive selector, and those support the P4-level rejection of an i theta Q plaquette proxy within the declared ansatz. However, the cited beta authority is only a conditional rescaling algebra lemma over CN+WM; it does not supply retained Wilson matching or g_bare^2=1, despite the source note invoking it as the beta=6 anchor. The strict formula pass also finds source-runner drift in the displayed V7 proxy: i theta (Tr U_P-Tr U_P^dag)/2 is real-valued (-theta Im Tr U_P), not a non-real action, while the runner later switches to the correct i theta Q test.
-
-Auditor-quoted load-bearing step:
-Lemma 3/4: canonical normalization at beta=6 fixes u(x,y)=(beta/N_c)(N_c-x)+v(y), and P4 excludes the i theta y slot so v=0 within the canonical leading-beta ansatz.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: supply a retained Wilson matching/canonical beta=6 authority or narrow the theorem to an explicitly conditional selector over scoped WM and beta=6; also fix the V7 extra-i displayed formula before re-audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`
-
-**Note:** [docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md](docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md)  |  **Descendants:** 0  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Finite-grid numerical diagnostic of the specified 2-loop SM RGE map under imported canonical-surface and Ward-target inputs: bounded sampled trajectories, positive endpoint forward differences, finite observed Lipschitz constants, brentq root agreement, and extension-scan Landau-onset behavior.
-
-Auditor's verdict_rationale:
-The primary runner is not a trivial printout: it numerically integrates the stated 2-loop ODE, samples Phi, computes finite differences, brentq roots, and a step-size stability check; its own 23 assertions are all diagnostic class D. However the load-bearing target Phi(X)=g_lattice/sqrt(6) imports a Planck-surface Ward boundary condition that the provided Ward authority explicitly does not claim; it only supports a bare H_unit matrix element and says tadpole/SM transport is separate. The runner also hard-codes CANONICAL_PLAQUETTE=0.5934 through the helper even though the plaquette authority says that value is admitted/reused, not certified by that note. Finally, to the extent T2/T4 remain binding continuum claims, a 33-point grid and brentq agreement do not prove strict monotonicity or exact uniqueness on the whole interval.
-
-Auditor-quoted load-bearing step:
-From positive forward differences on a 33-point grid plus a sign change and brentq agreement, the note concludes that Phi(X)=g_lattice/sqrt(6) has a unique root X*=0.97267 on [0.5,1.2].
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide a retained Planck-surface tadpole-transport/Ward-target bridge and a retained same-surface plaquette/coupling certificate, or explicitly narrow the theorem to a finite-grid RGE diagnostic conditional on those imported constants and remove binding continuum uniqueness language.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17`
-
-**Note:** [docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md](docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: The conditional algebraic cancellation y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare given the two readouts D1 and D2 with equal single-vertex tadpole power.
-
-Auditor's verdict_rationale:
-The runner genuinely performs exact symbolic class-A checks of the cancellation and corollaries after hardwiring D1 and D2, and those algebraic formulas are correct. However, the source note still imports the common readout normalization and equal-n_link bridge as an admitted premise rather than closing it from the one-hop authority in the packet. The cited authority as provided does not supply the claimed CMT D14/D15 material, so the chain is only conditional on D1 and D2.
-
-Auditor-quoted load-bearing step:
-From D1 and D2, (y_t_bare / sqrt(u_0)) / (g_bare / sqrt(u_0)) simplifies to y_t_bare / g_bare, so the common tadpole factor cancels.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: provide a retained one-hop bridge that derives the common single-vertex CMT readouts D1 and D2 for both couplings in this Ward-ratio context, or retitle the row as a purely conditional algebra lemma over admitted D1/D2 premises.
+missing_bridge_theorem: add retained or explicitly accepted bridges for the empirical small-m_nu premise, the Gamma/H thermalization criterion, and the M_R >> T_census Majorana-branch condition, or narrow the note to those assumptions; also correct the 100 GeV margin and replace the O(1)-only phrasing with y_nu >= y_thr.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

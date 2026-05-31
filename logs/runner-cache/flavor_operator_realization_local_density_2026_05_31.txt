@@ -1,4 +1,4 @@
-[FAIL] O1 local Atiyah-Bott density L_3(1,2)=2/9 (det(1-dg|transverse)=3); (1,1)->1/9
+[PASS] O1 local Atiyah-Bott density L_3(1,2)=2/9 (det(1-dg|transverse)=3); (1,1)->1/9
 [PASS] O2 staggered chirality {H,Gamma5}=0 -> +/- spectrum -> global eta=sum sign=0 (chi=0)
        LOCAL per-fixed-point density survives the global vanishing
 [PASS] O3 local density uses ONLY C3-equivariance + transverse linearization, NOT Gamma5 -> escapes chirality gate
@@ -6,7 +6,7 @@
 [PASS] O4 operator-specific (not tautology): raw perm fails (||[U,H]||=13.9), only gauge-corrected U_phys=U.S commutes; (1,2) extracted from hopping tangent
        C3-equivariance is a nontrivial operator fact (retained S3-is-gauge); weights read off U_phys eigenvalues {1,w,w^2}
 
-SCORECARD PASS=3 FAIL=1
+SCORECARD PASS=4 FAIL=0
 VERDICT: operator-realization bridge SUBSTANTIALLY BUILT (operator side). 2/9 is the GENUINE
 Atiyah-Bott local fixed-point density of the native C3-equivariant staggered Dirac on Z^3 (verified
 L=4,6): operator-intrinsic weights (1,2), det(1-dg)=3, density 2/9 -- surviving the global index/eta

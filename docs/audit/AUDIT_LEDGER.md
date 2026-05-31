@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 635 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1152 |
+| unaudited | 1151 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 976 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1390 |
+| `unaudited` | 1389 |
 
 | claim_type | count |
 |---|---:|
@@ -1141,6 +1141,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11385,6 +11386,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given the supplied 16-term coefficient packet and MC comparator, all tested finite truncation, tadpole-improved, Pade, and tadpole-improved Pade values at beta=6 remain near 0.91 and far from <P>_MC = 0.5934.  _(class `D`)_
 - **chain closes:** False — The finite arithmetic over the supplied packet closes inside the runner, but the retained audit chain does not close because the NSPT coefficient packet, MC comparator, F2 comparator, and related external normalizations are supplied rather than derived or retained in the restricted packet.
 - **rationale:** The runner source performs real finite computations over hard-coded supplied coefficients and comparator constants; it is not merely printing PASS output. Those inputs are explicitly admitted as unclosed external premises, so the result is a conditional diagnostic rather than a retained no-go theorem. The no-go discipline scope is mostly narrow to the tested finite weak-coupling/tadpole/Pade envelope and leaves non-perturbative routes open. Formula inventory also finds a repair item: the prose claim that tadpole improvement reduces the 1-loop value by <1% is false if the 1-loop value is 0.925926 and the N=8 tadpole value is 0.910550, a 1.66% relative reduction.
+- **auditor confidence:** high
+
+### `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/PLAQUETTE_BETA6_STRONG_COUPLING_CHARACTER_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional Padé algebra for the supplied SU(3) strong-coupling coefficient packet at the supplied point u=1/3, including the [3/3] value, two conformal checks, c6 sensitivity, the [4/4] diagnostic, and the Padé[3/3] Borel-pole obstruction witness; not the derivation of the coefficient table, beta-to-u map, or MC value.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-164913-79fcf3e4-plaquette_beta6_strong_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied coefficients c1=1, c4=4, c6=24 with c2=c3=c5=0, solving the Padé[3/3] system gives P(u)=u-6u^3 and Q(u)=1-6u^2-4u^3, hence Pade[3/3](1/3)=3/5.  _(class `A`)_
+- **chain closes:** False — The displayed Padé, conformal, sensitivity, [4/4], and Borel-Padé algebra checks close from the supplied packet. The retained chain does not close because the coefficient packet and u=1/3 evaluation point are explicit external premises not derived or supplied by retained one-hop authority in the restricted packet.
+- **rationale:** The runner source actually solves the Padé systems with exact sympy rational arithmetic rather than merely printing constants, and independent formula checks match the main displayed rational identities. The runner also contains three external MC-comparator checks, but the note correctly marks the MC value as non-load-bearing. The load-bearing class is algebraic class A, not first-principles class C, because the coefficient table and u=1/3 are hard-coded supplied premises rather than derived from framework axioms or retained authorities.
 - **auditor confidence:** high
 
 ### `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10`

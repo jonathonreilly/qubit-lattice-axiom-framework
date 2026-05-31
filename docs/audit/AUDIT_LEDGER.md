@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 617 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1198 |
+| unaudited | 1200 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 21 |
+| ~~audited_conditional~~ | 19 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,26 +62,26 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 955 |
-| `audited_conditional` | 21 |
+| `audited_conditional` | 19 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1436 |
+| `unaudited` | 1438 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1175 |
+| `bounded_theorem` | 1176 |
 | `decoration` | 54 |
-| `meta` | 243 |
+| `meta` | 242 |
 | `no_go` | 266 |
 | `open_gate` | 118 |
 | `positive_theorem` | 699 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 400 |
-| `high` | 488 |
+| `critical` | 401 |
+| `high` | 487 |
 | `medium` | 617 |
 | `leaf` | 1050 |
 
@@ -101,25 +101,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `three_generation_observable_theorem_note` | positive_theorem | critical | 947 | 54.89 | `audited_clean` | **retained** |
-| 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 738 | 54.53 | `audited_conditional` | ~~audited_conditional~~ |
-| 3 | `minimal_axioms_2026-05-03` | meta | critical | 936 | 49.87 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1096 | 48.60 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms` | meta | critical | 1097 | 42.60 | `unaudited` | meta |
-| 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 977 | 40.43 | `audited_clean` | **retained_bounded** |
-| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 882 | 39.79 | `unaudited` | unaudited |
+| 1 | `three_generation_observable_theorem_note` | positive_theorem | critical | 948 | 54.89 | `audited_clean` | **retained** |
+| 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 739 | 54.53 | `audited_conditional` | ~~audited_conditional~~ |
+| 3 | `minimal_axioms_2026-05-03` | meta | critical | 937 | 49.87 | `unaudited` | meta |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1097 | 48.60 | `audited_clean` | **retained** |
+| 5 | `minimal_axioms` | meta | critical | 1098 | 42.60 | `unaudited` | meta |
+| 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 978 | 40.44 | `audited_clean` | **retained_bounded** |
+| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 883 | 39.79 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 198 | 39.14 | `unaudited` | unaudited |
 | 9 | `alpha_s_derived_note` | bounded_theorem | critical | 734 | 38.02 | `unaudited` | unaudited |
 | 10 | `yt_ew_color_projection_theorem` | no_go | critical | 571 | 37.66 | `audited_clean` | **retained_no_go** |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1067 | 37.56 | `audited_clean` | **retained** |
-| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 968 | 36.92 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1068 | 37.56 | `audited_clean` | **retained** |
+| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 969 | 36.92 | `audited_clean` | **retained** |
 | 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 196 | 33.62 | `unaudited` | unaudited |
-| 14 | `three_generation_structure_note` | bounded_theorem | critical | 724 | 33.50 | `audited_clean` | **retained_bounded** |
-| 15 | `cpt_exact_note` | positive_theorem | critical | 949 | 33.39 | `audited_clean` | **retained** |
-| 16 | `plaquette_self_consistency_note` | bounded_theorem | critical | 770 | 33.09 | `audited_clean` | **retained_bounded** |
-| 17 | `minimal_axioms_2026-04-11` | meta | critical | 960 | 32.41 | `unaudited` | meta |
+| 14 | `plaquette_self_consistency_note` | bounded_theorem | critical | 771 | 33.59 | `audited_clean` | **retained_bounded** |
+| 15 | `three_generation_structure_note` | bounded_theorem | critical | 724 | 33.50 | `audited_clean` | **retained_bounded** |
+| 16 | `cpt_exact_note` | positive_theorem | critical | 949 | 33.39 | `audited_clean` | **retained** |
+| 17 | `minimal_axioms_2026-04-11` | meta | critical | 961 | 32.41 | `unaudited` | meta |
 | 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 588 | 32.20 | `unaudited` | unaudited |
-| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 947 | 31.89 | `audited_renaming` | ~~audited_renaming~~ |
+| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 948 | 31.89 | `audited_renaming` | ~~audited_renaming~~ |
 | 20 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 586 | 31.20 | `unaudited` | unaudited |
 | 21 | `left_handed_charge_matching_note` | decoration | critical | 708 | 30.97 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 241 | 29.92 | `unaudited` | unaudited |
@@ -1095,9 +1095,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `continuum_identification_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -3285,40 +3283,6 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **rationale:** The scoped theorem is external algebra plus an explicit boundary statement, and the dependency is provided as retained. The runner's alpha_LM^16 check is hard-coded, but the note labels that as an imported character value and not a derivation, so it supports the boundary rather than inflating the claim.
 - **auditor confidence:** high
 
-### `continuum_identification_note`
-
-- **Note:** [`CONTINUUM_IDENTIFICATION_NOTE.md`](../../docs/CONTINUUM_IDENTIFICATION_NOTE.md)
-- **claim_type:** `meta`
-- **claim_scope:** Inventory-only verification that the named gravity and gauge files/runners are present and that retained continuum-identification theorem status remains open.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260530-234754-e5ed484d-continuum_identification`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note claims the named gravity and gauge authority notes/runners exist as an ordered inventory, while retained continuum-GR/QCD closure remains an explicit open audit/bridge obligation.  _(class `B`)_
-- **chain closes:** True — For the inventory scope, the chain closes: the runner source checks the enumerated file paths and parses ledger status counts, and the cached stdout reports PASS=60 FAIL=0. It does not close a retained continuum-identification theorem; that would require retained gravity content audits and a retained gauge universality/EFT bridge.
-- **rationale:** The runner is a structural repository/ledger inventory check, not a first-principles continuum-physics derivation. The source note correctly narrows its claim, but it explicitly records that most gravity content audits and the gauge universality/EFT-to-continuum-QCD bridge remain open. The provided Lorentz cited-authority formulas are internally consistent under their stated conventions, but that retained-bounded structural support does not close the continuum-identification bridge.
-- **open / conditional deps cited:**
-  - `UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md`
-  - `UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md`
-  - `UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md`
-  - `UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md`
-  - `UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md`
-  - `UNIVERSAL_QG_INVERSE_LIMIT_CLOSURE_NOTE.md`
-  - `UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md`
-  - `UNIVERSAL_QG_PL_FIELD_INTERFACE_NOTE.md`
-  - `UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md`
-  - `UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md`
-  - `UNIVERSAL_QG_EXTERNAL_FE_SMOOTH_EQUIVALENCE_NOTE.md`
-  - `UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md`
-  - `UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md`
-  - `UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md`
-  - `UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md`
-  - `UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md`
-  - `UNIVERSAL_QG_CANONICAL_SMOOTH_GEOMETRIC_ACTION_NOTE.md`
-  - `UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE_NOTE.md`
-  - `UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md`
-  - `EMERGENT_LORENTZ_INVARIANCE_NOTE.md`
-- **auditor confidence:** high
-
 ### `continuum_limit_note`
 
 - **Note:** [`CONTINUUM_LIMIT_NOTE.md`](../../docs/CONTINUUM_LIMIT_NOTE.md)
@@ -4026,24 +3990,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The endpoint-distinctness and non-overlap arithmetic checks for the helper-defined numbers close exactly and are runner-verified.  _(class `A`)_
 - **chain closes:** True — For the narrowed arithmetic core, direct recomputation gives alpha_bare=0.07957747154594767, alpha_lo=0.09066783601728631, alpha_hi=0.09226499261836020, with alpha_bare < alpha_lo < alpha_hi; the non-overlap check is arithmetic over helper-returned intervals with R_lo_hi < R_hi_lo.
 - **rationale:** The runner no longer uses literal True checks for selector absence; its eight checks are endpoint definition/order, distinctness from alpha_bare, and interval non-overlap inequalities. The clean verdict applies only to this bounded arithmetic core over helper-defined quantities and helper-returned intervals. No selector-boundary or no-selector/no-go conclusion is ratified; N1-N8 was not passed for such a conclusion and it remains outside clean scope.
-- **auditor confidence:** high
-
-### `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`
-
-- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Supplied-premise interval composition over the provided alpha endpoints, certified ratio enclosures, omega/target constants, and cited monotonicity/tail inputs; not a derivation of the live-DM premise packet.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260531-001816-5d8735d2-dm_full_closure_same_sur`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given the endpoint constants and certified helper enclosures, the interval arithmetic, disjointness, target bracketing, and one-scalar root bracketing all close in the visible runner.  _(class `A`)_
-- **chain closes:** False — The local arithmetic/bracketing checks close over imported helper outputs. The restricted packet does not close the 64:1 bridge, live plaquette/eta-omega constants, or packet-completeness/selector premise that supply those outputs and the uniqueness inference.
-- **rationale:** The primary runner performs real interval arithmetic and bracketing checks, but its theorem-grade content is explicitly over supplied helper values and supplied monotonicity. The helper chain hard-codes live plaquette and observational conversion constants, and the cited authorities themselves mark the 64:1 bridge, live-DM constants, and selector/packet-completeness premise as outside their closed content. The runner also contains a literal-True uniqueness pass whose force comes only from the supplied monotonicity/bridge premise. A formula-inventory pass additionally flags the monotonicity authority's derivative bridge wording as needing chain-rule/normalization reconciliation before it can serve as a retained bridge theorem.
-- **open / conditional deps cited:**
-  - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md`
-  - `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md`
-  - `DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`
-  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`

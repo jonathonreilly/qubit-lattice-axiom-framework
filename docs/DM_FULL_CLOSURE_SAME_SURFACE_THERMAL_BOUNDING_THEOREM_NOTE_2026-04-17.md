@@ -194,3 +194,9 @@ explicit upstream gap registration. It does not change the algebraic interval
 content or runner output. It prevents the bounded theorem from importing
 unretained live-DM premises as if they were already derived.
 - [dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16](DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md)
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [plaquette_self_consistency_note](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)

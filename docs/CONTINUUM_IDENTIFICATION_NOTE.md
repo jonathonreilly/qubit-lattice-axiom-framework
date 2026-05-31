@@ -166,3 +166,27 @@ python3 scripts/frontier_continuum_identification_audit.py
 The runner checks inventory presence and reports the current audit-ledger
 statuses for the listed authority rows. It is intentionally not a theorem
 runner for continuum identification.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [universal_gr_discrete_global_closure_note](UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md)
+- [universal_gr_lorentzian_global_atlas_closure_note](UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md)
+- [universal_gr_lorentzian_signature_extension_note](UNIVERSAL_GR_LORENTZIAN_SIGNATURE_EXTENSION_NOTE.md)
+- [universal_qg_uv_finite_partition_note](UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md)
+- [universal_qg_canonical_refinement_net_note](UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md)
+- [universal_qg_inverse_limit_closure_note](UNIVERSAL_QG_INVERSE_LIMIT_CLOSURE_NOTE.md)
+- [universal_qg_abstract_gaussian_completion_note](UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md)
+- [universal_qg_pl_field_interface_note](UNIVERSAL_QG_PL_FIELD_INTERFACE_NOTE.md)
+- [universal_qg_pl_weak_form_note](UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md)
+- [universal_qg_pl_sobolev_interface_note](UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md)
+- [universal_qg_external_fe_smooth_equivalence_note](UNIVERSAL_QG_EXTERNAL_FE_SMOOTH_EQUIVALENCE_NOTE.md)
+- [universal_qg_canonical_textbook_weak_measure_equivalence_note](UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md)
+- [universal_qg_smooth_gravitational_local_identification_note](UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md)
+- [universal_qg_smooth_gravitational_global_atlas_note](UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md)
+- [universal_qg_smooth_gravitational_global_solution_class_note](UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md)
+- [universal_qg_canonical_smooth_gravitational_weak_measure_note](UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md)
+- [universal_qg_canonical_smooth_geometric_action_note](UNIVERSAL_QG_CANONICAL_SMOOTH_GEOMETRIC_ACTION_NOTE.md)
+- [universal_qg_canonical_textbook_geometric_action_equivalence_note](UNIVERSAL_QG_CANONICAL_TEXTBOOK_GEOMETRIC_ACTION_EQUIVALENCE_NOTE.md)
+- [universal_qg_canonical_textbook_continuum_gr_closure_note](UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md)

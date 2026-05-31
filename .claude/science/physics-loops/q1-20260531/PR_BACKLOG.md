@@ -16,5 +16,5 @@ Status:
 
 ```text
 Draft PR opened as https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442.
-Record-quotient measure fork packaged on codex/q1-hunt-20260531.
+Q-side objectivity premise audit packaged on codex/q1-hunt-20260531.
 ```

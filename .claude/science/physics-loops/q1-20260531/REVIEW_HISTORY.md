@@ -15,4 +15,5 @@ Pre-review local verification:
 - The physical orientation/basepoint probe runner exits 0.
 - The source-endpoint / record-measure no-go runner exits 0.
 - The record-quotient measure fork runner exits 0.
-- `python3 -m py_compile` exits 0 on all sixteen Q1/provenance scripts.
+- The Q-side objectivity premise audit runner exits 0.
+- `python3 -m py_compile` exits 0 on all seventeen Q1/provenance scripts.

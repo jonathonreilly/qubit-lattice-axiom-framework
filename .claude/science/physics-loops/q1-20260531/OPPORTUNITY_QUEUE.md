@@ -10,10 +10,11 @@
    charged-lepton source.  Negative result leaves `Q=1` as an allowed
    projected counterdomain.  In the last-mile cascade this is `P_SOURCE`.
 
-2. Derive the physical rank-erasing record quotient:
+2. Derive physical rank erasure before reference selection:
 
    ```text
-   charged-lepton record readout counts quotient record atoms, not Hilbert rank
+   charged-lepton record readout erases Hilbert rank before choosing the
+   reference law
    ```
 
    The record-quotient measure fork makes this exact.  Full Hilbert trace /
@@ -21,8 +22,14 @@
    `Q=1`; rank-erased quotient record counting gives `(1/2,1/2)` and
    conditional `Q=2/3`.  Existing source-measure / record-intervention
    machinery supports probability laws on the record algebra but does not
-   choose the quotient reference.  A positive result must be a physical
-   recordization/objectivity principle that erases Hilbert rank at readout.
+   choose the quotient reference.
+
+   The Q-side objectivity premise audit sharpens the target: bare quotient
+   atom-anonymity is sufficient, but `S`-labeled record objectivity, max
+   entropy alone, and source-measure do not derive the rank-erasure step.  A
+   positive result must show why physical charged-lepton readout chooses the
+   rank-erased quotient before reference selection, not merely why a bare
+   quotient would be uniform.
 
 3. Derive the remaining selected-line endpoint/source law:
 

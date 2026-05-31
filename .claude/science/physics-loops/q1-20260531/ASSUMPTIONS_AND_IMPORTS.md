@@ -39,6 +39,10 @@
   the embedded `S` record gives `Q=1`, while rank-erased quotient record count
   gives conditional `Q=2/3`; the quotient reference is not selected by the
   existing source-measure theorems.
+- Q-side objectivity premise audit: bare quotient atom-anonymity is sufficient
+  for `Q=2/3`, but `S`-labeled objectivity, max entropy alone, and
+  source-measure machinery do not derive rank erasure before reference
+  selection.
 
 ## Not Used
 
@@ -51,8 +55,8 @@
 
 - A retained physical source-domain theorem excluding projected `Z` as
   undeformed charged-lepton source data.
-- A physical rank-erasing record quotient / count-on-record-atoms theorem
-  selecting quotient trace over Hilbert rank.
+- A physical rank-erasure-before-reference-selection theorem selecting the
+  atom-anonymous quotient record over Hilbert rank.
 - The microscopic full-cube source law selecting the forward oriented channel
   and selected-line endpoint/basepoint/readout if a positive `delta = eta_APS`
   closure is still pursued.

@@ -186,3 +186,35 @@ Existing source-measure / record-intervention theorems make record-facing
 states probability laws and expose a full-support reference `P0`, but do not
 derive the quotient counting reference.  The remaining positive theorem must
 be a physical rank-erasing recordization / count-on-record-atoms principle.
+
+## Objectivity or max entropy deriving the Q-side premise
+
+Runner: `scripts/frontier_koide_q1_q_side_objectivity_premise_audit.py`
+
+Status: exact support for the minimal premise / no closure from tested
+objectivity routes.
+
+Bare atom-anonymity on the rank-erased quotient algebra is sufficient:
+
+```text
+Aut(C^2 as bare two atoms) contains the swap
+swap-invariant probability = (1/2, 1/2)
+Q = 2/3
+```
+
+But the physical `S`-labeled record is not bare.  The atom swap changes the
+`S` eigenvalue pair `(2,-1)` to `(-1,2)`, so the automorphism group preserving
+the labeled record is only the identity.  The identity imposes no measure
+constraint; both `(1/3,2/3)` and `(1/2,1/2)` remain invariant.
+
+Max entropy also fails to choose the premise without first choosing the
+algebra:
+
+```text
+full Hilbert microstate count then erase rank -> (1/3,2/3) -> Q=1
+erase rank then count quotient atoms          -> (1/2,1/2) -> Q=2/3
+```
+
+The remaining positive Q-side theorem is therefore sharper: prove that
+physical charged-lepton readout erases Hilbert rank before reference selection,
+or derive the separate strict-onsite `P_SOURCE` law.

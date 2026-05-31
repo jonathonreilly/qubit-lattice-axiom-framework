@@ -33,6 +33,10 @@ Delivered artifacts:
   push-forward gives `Q=1`, quotient record counting gives conditional
   `Q=2/3`, and existing source-measure machinery does not select the quotient
   reference law.
+- One Q-side objectivity premise audit runner.
+- Q-side objectivity premise audit note proving bare quotient atom-anonymity is
+  sufficient for `Q=2/3`, but `S`-labeled objectivity, max entropy alone, and
+  source-measure do not derive rank erasure before reference selection.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

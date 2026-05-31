@@ -1,7 +1,7 @@
 # Area-Law Primitive Parity-Gate Carrier Theorem Note
 
 **Date:** 2026-04-25
-**Status:** audited_conditional positive Target 2 carrier theorem conditional on
+**Status:** unaudited positive Target 2 carrier theorem conditional on
 the primitive two-orbital Gaussian/CAR edge carrier
 **Runner:** `scripts/frontier_area_law_primitive_parity_gate_carrier.py`
 
@@ -14,7 +14,7 @@ the primitive two-orbital Gaussian/CAR edge carrier
   forced. This is the audited authority for the carrier identification used
   here.
 - [`AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`](AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md)
-  — `audited_conditional`. The simple-fiber-class Widom no-go this carrier
+  — `unaudited`. The simple-fiber-class Widom no-go this carrier
   evades by leaving the simple-fiber class with a self-dual primitive
   half-zone selector (average crossing count exactly 3, not 2).
 - [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
@@ -329,7 +329,7 @@ This rigorization does **not**:
   inherited here verbatim and the bridge premise (CIP) remains conditional on
   it.
 - promote audit status. The audit ledger is not modified; the status descriptor
-  alignment to `audited_conditional` matches the live audit ledger entry.
+  alignment to `unaudited` matches the live audit ledger entry.
 - duplicate the action-side `c_cell = 1/4` derivation; that derivation now
   lives in the cited primitive-coframe theorem and its boundary-density
   extension.

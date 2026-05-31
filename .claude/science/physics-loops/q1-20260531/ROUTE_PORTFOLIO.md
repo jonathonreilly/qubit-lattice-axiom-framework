@@ -147,6 +147,31 @@ endpoint, because the three coordinate endpoints form a free `C3` orbit.  A
 successful next theorem must therefore add an orientation-odd source/boundary
 law or an independent measure principle; it cannot be built from `S` alone.
 
+## Route C10: record-quotient measure fork
+
+Status: exact support / conditional bridge localization.
+
+The measure fork is now explicit.  For the embedded sharp record
+`iota(e0)=P0`, `iota(e1)=P1`, full Hilbert trace/Born push-forward gives
+
+```text
+(tau_H(P0), tau_H(P1)) = (1/3, 2/3)
+```
+
+and the trace/default `Q=1` lane.  The abstract rank-erased quotient record
+algebra has counting trace
+
+```text
+(tau_count(e0), tau_count(e1)) = (1/2, 1/2)
+```
+
+and the conditional `Q=2/3` lane.
+
+The existing source-measure / record-intervention machinery legitimizes
+probability laws on the record algebra but does not choose this second
+reference law.  The remaining positive route is a physical rank-erasing
+recordization / count-on-record-atoms principle.
+
 ## Route D: future charge-two Majorana texture
 
 Status: hypothetical after activation.

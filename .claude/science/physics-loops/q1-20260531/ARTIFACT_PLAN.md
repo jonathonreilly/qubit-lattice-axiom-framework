@@ -28,6 +28,11 @@ Delivered artifacts:
 - Source-endpoint / record-measure no-go note proving `C3 + S=C+C^2` forces
   the two record atoms but not the measure, forward channel, or unbased
   endpoint.
+- One record-quotient measure fork runner.
+- Record-quotient measure fork note proving full Hilbert trace/Born
+  push-forward gives `Q=1`, quotient record counting gives conditional
+  `Q=2/3`, and existing source-measure machinery does not select the quotient
+  reference law.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

@@ -8,7 +8,10 @@ The packet is intentionally internal/repo-grounded:
 - existing Koide source-domain notes;
 - existing APS eta route note;
 - existing Majorana/RHN nonactivation notes.
+- existing source-measure / record-intervention notes.
 
 Future literature work, if any, should focus narrowly on typed maps from
 equivariant eta defects or spectral asymmetry to physical parity/order
-parameters.  It should not be used to import a fitted `2/9` phase.
+parameters, or on a principled physical account of rank-erased record
+objectivity.  It should not be used to import a fitted `2/9` phase or a
+post-hoc count-over-rank rule.

@@ -16,5 +16,5 @@ Status:
 
 ```text
 Draft PR opened as https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442.
-Source-endpoint / record-measure no-go packaged on codex/q1-hunt-20260531.
+Record-quotient measure fork packaged on codex/q1-hunt-20260531.
 ```

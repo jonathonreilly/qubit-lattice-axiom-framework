@@ -146,3 +146,43 @@ reflection-even source law cannot select the forward channel.  The coordinate
 endpoints also form a free `C3` orbit, so no unbased endpoint selector exists.
 The next theorem must add an orientation-odd source/boundary law or an
 independent measure principle.
+
+## Automatic quotient measure from source-measure machinery
+
+Runner: `scripts/frontier_koide_q1_record_quotient_measure_fork.py`
+
+Status: exact fork / no closure of the selection principle.
+
+The embedded sharp record has two projectors:
+
+```text
+P0 = (I+C+C^2)/3, rank 1
+P1 = I-P0,        rank 2
+```
+
+Full Hilbert trace/Born push-forward gives
+
+```text
+(tau_H(P0), tau_H(P1)) = (1/3, 2/3)
+```
+
+and therefore the trace/default `Q=1` branch.  The abstract rank-erased
+quotient record algebra has two atoms with counting trace
+
+```text
+(tau_count(e0), tau_count(e1)) = (1/2, 1/2)
+```
+
+and therefore the conditional `Q=2/3` branch.
+
+These are different reference laws:
+
+```text
+(tau_H o iota)(x0,x1) = (x0+2*x1)/3
+tau_count(x0,x1)      = (x0+x1)/2
+```
+
+Existing source-measure / record-intervention theorems make record-facing
+states probability laws and expose a full-support reference `P0`, but do not
+derive the quotient counting reference.  The remaining positive theorem must
+be a physical rank-erasing recordization / count-on-record-atoms principle.

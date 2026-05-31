@@ -32,6 +32,13 @@
 - Physical orientation/basepoint probe: spatial `C3[111]` plus full
   taste-cube descent supplies the oriented generator `g` as bounded support;
   the selected-line endpoint/source/readout part of `P_ORIENT` remains open.
+- Existing source-measure / record-intervention machinery: record-facing
+  sources are probability laws on finite sharp-record histories, with a
+  full-support reference law as input.
+- Record-quotient measure fork: full Hilbert trace/Born push-forward through
+  the embedded `S` record gives `Q=1`, while rank-erased quotient record count
+  gives conditional `Q=2/3`; the quotient reference is not selected by the
+  existing source-measure theorems.
 
 ## Not Used
 
@@ -44,6 +51,8 @@
 
 - A retained physical source-domain theorem excluding projected `Z` as
   undeformed charged-lepton source data.
+- A physical rank-erasing record quotient / count-on-record-atoms theorem
+  selecting quotient trace over Hilbert rank.
 - The microscopic full-cube source law selecting the forward oriented channel
   and selected-line endpoint/basepoint/readout if a positive `delta = eta_APS`
   closure is still pursued.

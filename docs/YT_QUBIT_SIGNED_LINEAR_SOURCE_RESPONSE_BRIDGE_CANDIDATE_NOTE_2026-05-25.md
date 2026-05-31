@@ -1,19 +1,31 @@
 ---
 claim_id: yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25
-claim_type_author_hint: bounded_theorem
+claim_type_author_hint: bounded_support_note
 status_authority: independent_audit_lane_only
 direct_effective_status_change_allowed_from_this_note: false
 ---
 
 # Y_T Qubit Signed-Linear Source Response Bridge Candidate
 
-**Claim type:** bounded_theorem
-**Role:** exact support / bridge candidate.
+**Claim type:** bounded support note
+**Role:** conditional exact support / bridge candidate.
 **Status:** candidate support; no positive Y_T closure.
+**source-note proposal only:** this note is a source-note candidate; audit verdict and effective status are independent-audit outputs.
 **Primary runner:** `scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py`
 **Generated output:** `outputs/yt_qubit_signed_linear_source_response_bridge_candidate_2026-05-25.json`
-**Type:** bounded_theorem
+**Type:** conditional / support
 **Status authority:** independent audit lane only.
+
+```yaml
+actual_current_surface_status: conditional-support
+conditional_surface_status: "exact finite C^6 support under S_6-democratic source and signed-linear readout"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The finite-dimensional signed-linear source tangent is exact, but the physical bridge identifying y_33 with that tangent remains open."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 

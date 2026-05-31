@@ -10,6 +10,7 @@ pipeline after independent review.
 - [`scripts/frontier_koide_q1_unphysical_background_probe.py`](../scripts/frontier_koide_q1_unphysical_background_probe.py)
 - [`scripts/frontier_koide_two_ninth_provenance_classifier.py`](../scripts/frontier_koide_two_ninth_provenance_classifier.py)
 - [`scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py`](../scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py)
+- [`scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py`](../scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py)
 
 ## Question
 
@@ -58,9 +59,10 @@ The negative content is equally important:
   radian phase, anomaly, or APS eta invariant.
 
 So `Q = 1` is best treated as an exact counterdomain/source-shadow probe for
-the `Q = 2/3` hunt.  It may be the missing shadow that explains why the
-forbidden offsite source has the same `2/d^2` arithmetic as the phase lane, but
-the physical readout theorem is still missing.
+the `Q = 2/3` hunt.  The added coefficient bridge proves that the forbidden
+offsite source coefficient is exactly `-eta_APS`; this explains why the
+forbidden source has the same `2/d^2` arithmetic as the phase lane.  The
+physical signed selected-line readout theorem is still missing.
 
 ## Ingredients now available
 
@@ -149,6 +151,33 @@ The shared `C3` singlet/doublet projector skeleton is real, and the neutral
 
 Thus this PR should not be cited as `Q = 1` dark matter.
 
+### 5. The exact coefficient bridge now lands
+
+In the `C3` group algebra,
+
+```text
+Z    = -1/3 e + 2/3 g + 2/3 g^2
+S_Q1 = e - Z/3
+     = 10/9 e - 2/9 g - 2/9 g^2.
+```
+
+For the APS fixed-point route with weights `(1,2)`,
+
+```text
+eta_APS = (1/3) * (1/3 + 1/3) = 2/9.
+```
+
+Hence
+
+```text
+coeff_g(S_Q1) = coeff_g2(S_Q1) = -eta_APS.
+```
+
+This builds the exact `Q = 1` offsite coefficient to APS eta bridge.  It also
+composes with the Brannen conjugate-pair magnitude `n_eff/d^2 = 2/9`.  It does
+not supply the parity-odd sign/readout law, because `S_Q1` is transposition-even
+while the circulant phase `delta` is transposition-odd.
+
 ## Bridge target isolated by this packet
 
 The next theorem target is now narrower than "derive `2/9`":
@@ -158,18 +187,16 @@ derive_whether_projected_offsite_2_over_d2_is_physical_APS_Brannen_readout
 or only an excluded source-domain shadow
 ```
 
-A positive theorem would need to provide a typed map
+A positive theorem would now need to provide a signed selected-line readout map
 
 ```text
-offsite source residue -2/d^2
-    -> APS eta-defect eta(1,2;3)
-    -> Brannen/parity phase delta
+delta = -coeff_nonid(S_Q1) = eta_APS
 ```
 
 without importing a fitted radian convention, PDG phase, or same-surface
-selector.  A negative theorem would show that the offsite `2/d^2` is only a
-projected source-domain shadow whose erasure explains why physical onsite
-readout selects `Q = 2/3`.
+selector.  A negative theorem would show that the exact coefficient bridge is
+only a projected source-domain shadow whose erasure explains why physical
+onsite readout selects `Q = 2/3`.
 
 Either outcome helps the `Q = 2/3` hunt.
 
@@ -181,6 +208,7 @@ Either outcome helps the `Q = 2/3` hunt.
   footprint of the Brannen and anomaly routes.
 - APS eta remains a distinct typed object, but at forced `d = 3` it exactly
   equals `2/9`.
+- The exact group-algebra bridge gives `coeff_nonid(S_Q1) = -eta_APS`.
 - Under strict onsite descent, the `Q = 1` reduced coordinate is erased and the
   normalized readout returns `Q = 2/3`.
 - The packet isolates a concrete next bridge/no-go target for other workers.
@@ -204,13 +232,15 @@ PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_rhn_direct_bridge_no
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_alternative_interpretation_classifier.py
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_unphysical_background_probe.py
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_two_ninth_provenance_classifier.py
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
 python3 -m py_compile \
   scripts/frontier_dm_rhn_koide_q1_axis_abundance_compatibility.py \
   scripts/frontier_koide_q1_alternative_interpretation_classifier.py \
   scripts/frontier_koide_q1_neutrality_classifier.py \
   scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py \
   scripts/frontier_koide_q1_unphysical_background_probe.py \
-  scripts/frontier_koide_two_ninth_provenance_classifier.py
+  scripts/frontier_koide_two_ninth_provenance_classifier.py \
+  scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
 ```
 
 Expected closeout flags:
@@ -222,6 +252,10 @@ KOIDE_Q1_RHN_DIRECT_BRIDGE_NO_GO=TRUE
 Q1_CURRENT_PHYSICAL_SECTOR_CLOSURE=FALSE
 KOIDE_Q1_UNPHYSICAL_BACKGROUND_PROBE=TRUE
 KOIDE_TWO_NINTH_PROVENANCE_CLASSIFIER=TRUE
+KOIDE_Q1_APS_COEFFICIENT_BRIDGE=TRUE
+Q1_NONIDENTITY_COEFF_EQUALS_MINUS_ETA_APS=TRUE
+Q1_BRANNEN_MAGNITUDE_EXACT_SUPPORT=TRUE
+Q1_SUPPLIES_PARITY_ODD_SIGN=FALSE
 TWO_NINTH_TYPED_UNIFICATION=FALSE
 Q1_DARK_MATTER_CLOSURE=FALSE
 ```
@@ -236,6 +270,8 @@ Q1_DARK_MATTER_CLOSURE=FALSE
   - APS/anomaly route distinction.
 - [`KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md`](KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md)
   - APS eta value and remaining `delta = eta_APS` gap.
+- [`KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md`](KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md)
+  - exact `coeff_nonid(S_Q1) = -eta_APS` coefficient bridge.
 - [`KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md`](KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md)
   - shared Koide/DM `C3` projector skeleton.
 - [`NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md`](NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md)

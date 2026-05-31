@@ -26,7 +26,14 @@ abundance, stability, and transport closures are absent.
 
 Runner: `scripts/frontier_koide_two_ninth_provenance_classifier.py`
 
-Status: not closed.
+Status: partly repaired by coefficient bridge; not physically closed.
 
-The arithmetic footprint is shared, but matrix coefficient, Brannen phase,
-Callan-Harvey anomaly, and APS eta remain different typed objects.
+The arithmetic footprint is shared, and the Q1 nonidentity coefficient is now
+exactly typed against APS eta:
+
+```text
+coeff_nonid(S_Q1) = -eta_APS.
+```
+
+The remaining no-go/firewall is that Q1 is transposition-even and does not by
+itself supply the parity-odd signed Brannen phase readout.

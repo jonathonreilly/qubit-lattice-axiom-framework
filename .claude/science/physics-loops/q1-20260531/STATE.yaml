@@ -4,26 +4,28 @@ date: 2026-05-31
 goal: "Package the Q=1 counterdomain/offsite-2/9 probes as a draft PR for Koide Q=2/3 workers."
 target_status: best-honest-status
 cycle_count: 1
-active_route: q1_offsite_two_ninth_source_shadow
-current_surface_status: frontier_discovery
-claim_boundary: "Q=1 is an exact projected counterdomain and offsite 2/d^2 witness; it is not a retained physical phase, dark matter, or Q=2/3 closure."
+active_route: q1_aps_brannen_coefficient_bridge
+current_surface_status: exact-support
+claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS; it is not a retained physical phase, dark matter, or Q=2/3 closure."
 files_touched:
   - docs/KOIDE_Q1_OFFSITE_TWO_NINTH_FRONTIER_SYNTHESIS_NOTE_2026-05-31.md
+  - docs/KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md
   - scripts/frontier_koide_q1_neutrality_classifier.py
   - scripts/frontier_dm_rhn_koide_q1_axis_abundance_compatibility.py
   - scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py
   - scripts/frontier_koide_q1_alternative_interpretation_classifier.py
   - scripts/frontier_koide_q1_unphysical_background_probe.py
   - scripts/frontier_koide_two_ninth_provenance_classifier.py
+  - scripts/frontier_koide_q1_aps_brannen_coefficient_bridge.py
 open_imports:
-  - "Physical identification delta = eta_APS."
+  - "Signed selected-line readout theorem delta = -coeff_nonid(S_Q1) = eta_APS."
   - "Physical source-domain theorem excluding projected Z as undeformed charged-lepton source data."
   - "Any future charge-two primitive mapping Koide Z shape into nu_R Majorana activation."
 no_go_routes:
   - "Current U(1)-equivariant number-preserving direct Q1 -> RHN activation bridge."
   - "Q=1 as current dark-matter closure."
-trace_class: frontier_discovery
-reachability_to_target: unknown_frontier
-next_exact_action: "Review whether projected offsite 2/d^2 can be typed as APS/Brannen readout or must remain only an excluded source-domain shadow."
-pr_status: "Draft PR requested by user; open after commit and push."
-stop_condition: "Draft PR created with honest claim boundary and verification commands."
+trace_class: upstream_support
+reachability_to_target: supports
+next_exact_action: "Derive the signed selected-line readout/orientation law, or prove the exact coefficient bridge remains only an excluded source-domain shadow."
+pr_status: "Draft PR open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442; coefficient bridge update pending commit/push."
+stop_condition: "Draft PR updated with exact coefficient bridge, honest claim boundary, and verification commands."

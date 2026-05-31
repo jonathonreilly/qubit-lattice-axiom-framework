@@ -37,15 +37,18 @@ EXECUTED arithmetic (not prose):
    Yukawa is below the thermalization threshold by MANY orders of magnitude at
    every relevant temperature (>= 4 orders even at the most favourable T = 100
    GeV; ~7-9 orders at leptogenesis T). Gamma/H << 1 throughout: nu_R is
-   decoupled. The ONLY route to g_* = 112 is a large O(1e-7..1) Dirac Yukawa,
-   which is excluded by the small neutrino mass.
+   decoupled. The ONLY framework-native thermalized-Dirac route to g_* = 112
+   is y_nu >= y_thr(T_census), which is excluded by the small neutrino mass
+   because it already implies m_nu >= ~2 keV at T = 100 GeV. An O(1) Yukawa is
+   only a stronger special case.
 
 5. **Branch table.** Across the framework's RETAINED-no-go Dirac/seesaw fork:
    light Dirac (small y_nu) -> nu_R never thermalizes -> EXCLUDED -> 106.75;
    heavy Majorana/seesaw (M_R >> T) -> nu_R not a light dof at the census epoch
-   -> EXCLUDED -> 106.75; large-Yukawa Dirac (y_nu O(1)) -> thermalized -> 112
-   but EXCLUDED by the empirical small m_nu. So g_* = 106.75 is robust across
-   BOTH branches of the retained no-go, conditioned on the empirical small m_nu.
+   -> EXCLUDED -> 106.75; thermalizing Dirac (y_nu >= y_thr(T_census)) ->
+   thermalized -> 112 but EXCLUDED by the empirical small m_nu. So g_* =
+   106.75 is robust across BOTH branches of the retained no-go, conditioned on
+   the empirical small m_nu.
 
 6. **Note / authority cross-checks.** Reduction bookkeeping, authority-file
    existence, optional ledger-status cross-check (the no-go is retained_no_go;
@@ -53,7 +56,9 @@ EXECUTED arithmetic (not prose):
    forbidden-import / new-vocabulary scan.
 
 The smallness of m_nu is named as an ADMITTED EMPIRICAL OBSERVATION (comparator),
-not a framework derivation; the runner does NOT derive small neutrino mass. No
+not a framework derivation; the Gamma/H thermalization criterion and the
+M_R >> T_census heavy-branch condition are explicit scoped assumptions, not new
+retained bridges. The runner does NOT derive small neutrino mass. No
 lattice-action quantity or fitted selector is a load-bearing input. The Dirac
 vs Majorana branch is NOT picked by the framework (retained no-go); the result's
 strength is branch-independence.
@@ -336,12 +341,13 @@ check(
     f"Gamma/H = {GoH_lepto:.2e}",
 )
 
-# The ONLY route to g_* = 112 is a LARGE Yukawa that DOES equilibrate; the
-# minimum such y (at the most lenient T) is ~1e-8, i.e. >= 4 orders ABOVE the
-# small-m_nu value. A y_nu ~ O(1e-8..1) means m_nu = y_nu <H> >> 0.1 eV.
+# The ONLY framework-native thermalized-Dirac route to g_* = 112 is a Yukawa
+# that DOES equilibrate: y_nu >= y_thr(T_census). The minimum such y (at the
+# most lenient T) is ~1e-8, i.e. >= 4 orders ABOVE the small-m_nu value. A
+# y_nu >= y_thr means m_nu = y_nu <H> >> 0.1 eV.
 m_nu_for_thermalization_EW = y_thr_EW * H_VEV_EV  # eV
 check(
-    "a thermalizing y (>= y_thr at T=100 GeV) implies m_nu >> 1 eV (excluded by data)",
+    "a thermalizing y (>= y_thr at T=100 GeV) implies m_nu >= ~2 keV (excluded by data)",
     m_nu_for_thermalization_EW > 1e3,  # > 1 keV, vastly above sub-eV bound
     f"m_nu(thermalizing) >~ {m_nu_for_thermalization_EW:.2e} eV",
 )
@@ -357,7 +363,7 @@ check(
 # 5. Branch table across the retained Dirac/seesaw no-go
 # ===========================================================================
 
-section("5. Branch table (light-Dirac / heavy-Majorana / large-Yukawa-Dirac)")
+section("5. Branch table (light-Dirac / heavy-Majorana / thermalizing-Dirac)")
 
 # Each branch -> census disposition of nu_R -> g_*.
 # Branch A: LIGHT DIRAC (small y_nu, as required by small m_nu = y_nu <H>).
@@ -383,22 +389,30 @@ check(
     f"M_R={M_R_seesaw_GeV:.0e} GeV >> T; light_at_census={branchB_light_at_census}",
 )
 
-# Branch C: LARGE-YUKAWA DIRAC (y_nu ~ O(1)) — the ONLY route to 112.
-#   Thermalizes (y >> threshold) -> 112. But y_nu ~ O(1) => m_nu = y_nu <H> ~
-#   100 GeV, grotesquely excluded by the sub-eV empirical neutrino mass.
+# Branch C: THERMALIZING DIRAC (y_nu >= y_thr(T_census)) — the ONLY
+# framework-native route to 112. The minimum thermalizing y at the most lenient
+# census temperature already implies a keV-scale neutrino mass; y_nu ~ O(1) is
+# only a much stronger special case.
+y_thermalizing_min = y_thr_EW
+branchC_thermalizes = y_thermalizing_min >= y_thr_EW    # True by construction
+m_nu_branchC_min_eV = y_thermalizing_min * H_VEV_EV     # ~2.06 keV
 y_large = 1.0
-branchC_thermalizes = y_large >= y_thr_lepto_hi    # True
-m_nu_branchC_eV = y_large * H_VEV_EV               # ~1.74e11 eV = 174 GeV
+m_nu_branchC_O1_eV = y_large * H_VEV_EV                 # ~1.74e11 eV = 174 GeV
 branchC_gstar = Fraction(112) if branchC_thermalizes else Fraction(427, 4)
 check(
-    "Branch C large-Yukawa-Dirac: nu_R thermalizes -> g_* = 112",
+    "Branch C thermalizing-Dirac: y_nu >= y_thr(T_census) -> g_* = 112",
     branchC_thermalizes and branchC_gstar == Fraction(112),
     f"thermalizes={branchC_thermalizes}, g_*={float(branchC_gstar)}",
 )
 check(
-    "Branch C is EXCLUDED by data: y~O(1) implies m_nu ~ 174 GeV >> sub-eV bound",
-    m_nu_branchC_eV > 1e9,
-    f"m_nu(branch C) ~ {m_nu_branchC_eV:.2e} eV",
+    "Branch C is EXCLUDED by data: y>=y_thr at 100 GeV implies m_nu >= ~2 keV",
+    1e3 < m_nu_branchC_min_eV < 1e4,
+    f"m_nu(branch C min) ~ {m_nu_branchC_min_eV:.2e} eV",
+)
+check(
+    "O(1) Yukawa is only a stronger Branch C special case (m_nu ~ 174 GeV)",
+    m_nu_branchC_O1_eV > 1e9,
+    f"m_nu(O1 special case) ~ {m_nu_branchC_O1_eV:.2e} eV",
 )
 
 # ROBUSTNESS: both ADMITTED branches (A light-Dirac, B heavy-Majorana) give
@@ -410,7 +424,7 @@ check(
     f"{[float(x) for x in admitted_branches_gstar]}",
 )
 check(
-    "g_* = 112 arises ONLY in the empirically-excluded large-Yukawa branch",
+    "g_* = 112 arises ONLY in the empirically-excluded thermalizing-Dirac branch",
     branchC_gstar == Fraction(112) and branchA_gstar == branchB_gstar == Fraction(427, 4),
 )
 # The framework does NOT pick Dirac vs Majorana (retained no-go); the resolution
@@ -498,6 +512,34 @@ check(
 check(
     "note states it does NOT fully derive I12 from first principles",
     "does **not**" in NOTE_TEXT.lower() or "does not" in NOTE_TEXT.lower(),
+)
+check(
+    "note explicitly narrows to the empirical small-m_nu admission",
+    "Empirical small-`m_nu` premise" in NOTE_TEXT
+    and "admitted empirical observation/comparator" in NOTE_TEXT,
+)
+check(
+    "note explicitly narrows to the Gamma/H thermalization comparator",
+    "`Gamma/H` thermalization criterion" in NOTE_TEXT
+    and "Gamma_nu_R ~ y_nu^2 T" in NOTE_TEXT
+    and "H ~ 1.66 sqrt(g_*) T^2 / M_Pl" in NOTE_TEXT,
+)
+check(
+    "note explicitly narrows to the M_R >> T_census heavy-branch condition",
+    "Heavy-branch condition" in NOTE_TEXT
+    and "M_R >> T_census" in NOTE_TEXT,
+)
+check(
+    "note states no retained bridges are introduced by the repair",
+    "No retained bridges are introduced here" in NOTE_TEXT,
+)
+check(
+    "note uses the actual thermalizing route y_nu >= y_thr(T_census)",
+    "y_nu >= y_thr(T_census)" in NOTE_TEXT,
+)
+check(
+    "note records the 100 GeV reverse mass bound as ~2 keV",
+    "~2 keV" in NOTE_TEXT,
 )
 
 

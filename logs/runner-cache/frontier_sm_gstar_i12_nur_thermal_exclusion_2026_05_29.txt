@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py
-runner_sha256: 48434c1bce18b817ec326a2f71aa543cf74f36e08d2cca499232022ba4861021
+runner_sha256: 5bc54ad7faaedcda3ccffe172197b56b741ec8950975e2444c4e862ee8f6858d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -46,18 +46,19 @@ status: ok
   [PASS] incompatibility margin at leptogenesis T=1e9 GeV is >= 7 orders (7.8 decades (ratio 6.52e+07))
   [PASS] Gamma/H << 1 at T=100 GeV for implied y (nu_R decoupled) (Gamma/H = 2.35e-09)
   [PASS] Gamma/H << 1 at T=1e9 GeV for implied y (nu_R decoupled) (Gamma/H = 2.35e-16)
-  [PASS] a thermalizing y (>= y_thr at T=100 GeV) implies m_nu >> 1 eV (excluded by data) (m_nu(thermalizing) >~ 2.06e+03 eV)
+  [PASS] a thermalizing y (>= y_thr at T=100 GeV) implies m_nu >= ~2 keV (excluded by data) (m_nu(thermalizing) >~ 2.06e+03 eV)
   [PASS] small-m_nu Yukawa and thermalization Yukawa are mutually exclusive
 
 ----------------------------------------------------------------------------------------
-5. Branch table (light-Dirac / heavy-Majorana / large-Yukawa-Dirac)
+5. Branch table (light-Dirac / heavy-Majorana / thermalizing-Dirac)
 ----------------------------------------------------------------------------------------
   [PASS] Branch A light-Dirac: nu_R does NOT thermalize -> g_* = 106.75 (thermalizes=False, g_*=106.75)
   [PASS] Branch B heavy-Majorana: M_R >> T_census so nu_R is NOT a light dof -> g_* = 106.75 (M_R=1e+14 GeV >> T; light_at_census=False)
-  [PASS] Branch C large-Yukawa-Dirac: nu_R thermalizes -> g_* = 112 (thermalizes=True, g_*=112.0)
-  [PASS] Branch C is EXCLUDED by data: y~O(1) implies m_nu ~ 174 GeV >> sub-eV bound (m_nu(branch C) ~ 1.74e+11 eV)
+  [PASS] Branch C thermalizing-Dirac: y_nu >= y_thr(T_census) -> g_* = 112 (thermalizes=True, g_*=112.0)
+  [PASS] Branch C is EXCLUDED by data: y>=y_thr at 100 GeV implies m_nu >= ~2 keV (m_nu(branch C min) ~ 2.06e+03 eV)
+  [PASS] O(1) Yukawa is only a stronger Branch C special case (m_nu ~ 174 GeV) (m_nu(O1 special case) ~ 1.74e+11 eV)
   [PASS] g_* = 106.75 is ROBUST across BOTH admitted branches (light-Dirac, heavy-Majorana) ([106.75])
-  [PASS] g_* = 112 arises ONLY in the empirically-excluded large-Yukawa branch
+  [PASS] g_* = 112 arises ONLY in the empirically-excluded thermalizing-Dirac branch
   [PASS] resolution is branch-independent (framework retained no-go does not pick a branch)
 
 ----------------------------------------------------------------------------------------
@@ -77,6 +78,12 @@ status: ok
   [PASS] note records the steelman (N7) FOR g_* = 112 and its rebuttal
   [PASS] note states the honest ceiling: I12 partially-resolved (conditioned on small m_nu)
   [PASS] note states it does NOT fully derive I12 from first principles
+  [PASS] note explicitly narrows to the empirical small-m_nu admission
+  [PASS] note explicitly narrows to the Gamma/H thermalization comparator
+  [PASS] note explicitly narrows to the M_R >> T_census heavy-branch condition
+  [PASS] note states no retained bridges are introduced by the repair
+  [PASS] note uses the actual thermalizing route y_nu >= y_thr(T_census)
+  [PASS] note records the 100 GeV reverse mass bound as ~2 keV
 
 ----------------------------------------------------------------------------------------
 7. Ledger status cross-check (optional)
@@ -108,10 +115,10 @@ status: ok
 ----------------------------------------------------------------------------------------
 SCORECARD
 ----------------------------------------------------------------------------------------
-  PASS = 66
+  PASS = 73
   FAIL = 0
 
-RESULT: PASS=66 FAIL=0
+RESULT: PASS=73 FAIL=0
 
 ----- stderr -----
 

@@ -1,4 +1,4 @@
-# `g_*` Census Import I12: `nu_R` Thermal Exclusion Robust Across the Framework's Dirac/Majorana Branches (conditioned on the empirical small `m_nu`) — Bounded Note
+# `g_*` Census Import I12: `nu_R` Thermal Exclusion Robust Across the Framework's Dirac/Majorana Branches (conditional on small `m_nu`, `Gamma/H`, and heavy-branch scope) — Bounded Note
 
 **Date:** 2026-05-29
 **Claim type:** bounded_theorem
@@ -38,9 +38,11 @@ nu_R thermalized Dirac (16 Weyl/gen)       ->  32/gen  ->  N_fermions = 96  ->  
 The sibling note **carried** that fork explicitly but did **not** address it: it
 treated the `nu_R` exclusion as an admitted boundary condition.
 
-This note **sharpens** I12 from "an assumed boundary condition" to "a
-consequence of the empirical small neutrino mass that holds across **both**
-branches of the framework's retained Dirac/seesaw no-go." The framework does
+This note **sharpens** I12 from "an assumed boundary condition" to "a bounded
+conditional consequence of the empirical small neutrino mass, the standard
+`Gamma/H` thermalization comparator, and the heavy-branch
+`M_R >> T_census` scope that holds across **both** branches of the framework's
+retained Dirac/seesaw no-go." The framework does
 **not** pick the Dirac-vs-seesaw neutrino-mass branch — that fork is the
 **`retained_no_go`**
 [`NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md`](NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md)
@@ -51,15 +53,36 @@ strength.
 
 The honest result is: **`g_* = 106.75` (with `nu_R` excluded from the
 light-relativistic census) is robust across the framework's admitted
-neutrino-mass mechanisms (light Dirac and heavy Majorana/seesaw),
-CONDITIONED on the empirical small `m_nu`; the `g_* = 112` alternative requires
-a large Dirac Yukawa that the empirical small `m_nu` excludes.**
+neutrino-mass mechanisms (light Dirac and heavy Majorana/seesaw), CONDITIONED
+on the empirical small `m_nu`, the order-of-magnitude `Gamma/H`
+thermalization comparator, and the heavy-branch `M_R >> T_census` condition;
+the `g_* = 112` alternative requires a thermalizing Dirac Yukawa
+`y_nu >= y_thr(T_census)`, which the empirical small `m_nu` excludes.**
 
 The smallness of `m_nu` is an **admitted empirical observation** (a comparator),
 **not** a framework derivation. This note does **not** derive the small neutrino
 mass, and therefore does **not** fully derive I12 from first principles; it
 **partially resolves** I12, conditioned on that admitted observation. The
 overall `g_*` census stays a `bounded_theorem`.
+
+## 0. Audit-scope repair: no new bridges introduced
+
+This revision takes the narrowing route requested by audit. It does **not** add
+a retained or accepted bridge for any of the following inputs:
+
+1. **Empirical small-`m_nu` premise.** The sub-eV neutrino-mass scale remains an
+   admitted empirical observation/comparator, not a framework derivation.
+2. **`Gamma/H` thermalization criterion.** The estimate
+   `Gamma_nu_R ~ y_nu^2 T` versus
+   `H ~ 1.66 sqrt(g_*) T^2 / M_Pl` remains an order-of-magnitude comparator,
+   not an independently retained bridge.
+3. **Heavy-branch condition.** The Majorana/seesaw branch is scoped to
+   `M_R >> T_census`; outside that condition this note does not claim the
+   heavy singlet is absent from the light-relativistic census.
+
+No retained bridges are introduced here. The source-note claim is therefore a
+bounded conditional theorem whose load-bearing assumptions are named at the
+point of use.
 
 ## 1. The `nu_R` equilibration channel
 
@@ -167,7 +190,7 @@ magnitude**, even in the most favourable case for thermalization:
 ```text
 implied (m_nu = 0.1 eV)         :  y_nu  ~  5.7e-13,
 threshold at T = 100 GeV (best) :  y_thr ~  1.2e-8,
-margin                          :  ~ 4.6 decades  (>= 4 orders),
+margin                          :  ~ 4.3 decades  (>= 4 orders),
 threshold at T = 1e9 GeV        :  y_thr ~  3.7e-5,
 margin                          :  ~ 7.8 decades  (>= 7 orders).
 ```
@@ -175,7 +198,7 @@ margin                          :  ~ 7.8 decades  (>= 7 orders).
 Equivalently, for the empirically-implied Yukawa,
 
 ```text
-Gamma_nu_R / H  ~  5.9e-10   at T = 100 GeV,        (<< 1)
+Gamma_nu_R / H  ~  2.35e-9   at T = 100 GeV,        (<< 1)
 ```
 
 so `nu_R` falls out of (in fact never reaches) equilibrium at every census
@@ -197,7 +220,7 @@ does. Across the framework's admitted (unresolved) neutrino-mass mechanisms:
 |---|---|---|---|---:|
 | **A. light Dirac** (`small y_nu`, as required by `m_nu = y_nu <H>`) | `y_nu ~ 10^-12 << y_thr`; `Gamma << H` | never thermalizes (§4) | **excluded** | **`106.75`** |
 | **B. heavy Majorana / seesaw** (`M_R >> T_census`) | a heavy state, not a light relativistic dof; Boltzmann-suppressed / decayed | not a light dof at the census epoch | **excluded** | **`106.75`** |
-| **C. large-Yukawa Dirac** (`y_nu ~ O(1)`) | `y_nu >> y_thr`; thermalizes | `m_nu = y_nu <H> ~ 174 GeV` — **excluded by sub-eV `m_nu`** | (would be included) | (`112`, but excluded) |
+| **C. thermalizing Dirac** (`y_nu >= y_thr(T_census)`) | `y_nu` reaches the thermalization threshold | `m_nu = y_nu <H> >= ~2 keV` already at `T = 100 GeV`; `O(1)` is a much stronger special case giving `~174 GeV` — **excluded by sub-eV `m_nu`** | (would be included) | (`112`, but excluded) |
 
 - **Branch A (light Dirac).** The native **Dirac** lane
   (`neutrino_mass_reduction_to_dirac_note`, `neutrino_dirac_two_higgs_canonical_reduction_note`,
@@ -213,16 +236,19 @@ does. Across the framework's admitted (unresolved) neutrino-mass mechanisms:
   so it is **excluded** from the census -> `g_* = 106.75`. The light active
   neutrino remains the gauge-charged member of `L_L`, already counted in the
   `15` gauge-charged Weyl.
-- **Branch C (large-Yukawa Dirac).** The **only** route to `g_* = 112` is a
-  Dirac `nu_R` with a large `y_nu ~ O(1)` that brings it into equilibrium. But a
-  large Yukawa means `m_nu = y_nu <H> ~ 174 GeV`, grotesquely above the sub-eV
-  empirical neutrino mass. This branch is **excluded by the admitted empirical
+- **Branch C (thermalizing Dirac).** The **only** framework-native thermalized
+  Dirac route to `g_* = 112` is `y_nu >= y_thr(T_census)`. Already at the most
+  lenient `T = 100 GeV`, this implies
+  `m_nu = y_nu <H> >= ~2 keV`, far above the sub-eV empirical neutrino mass.
+  The often-invoked `O(1)` Yukawa is only a much stronger special case, giving
+  `m_nu ~ 174 GeV`. This branch is **excluded by the admitted empirical
   observation**, not by the framework.
 
 **Conclusion (branch-independent, conditioned on small `m_nu`).** Both
 **admitted** branches (A light-Dirac and B heavy-Majorana) give `g_* = 106.75`.
-The `g_* = 112` alternative arises **only** in branch C, which the empirical
-small neutrino mass excludes. Since the framework's retained no-go does **not**
+The `g_* = 112` alternative arises **only** in branch C, which requires
+`y_nu >= y_thr(T_census)` and is excluded by the empirical small neutrino mass.
+Since the framework's retained no-go does **not**
 pick the branch, the `nu_R` exclusion is robust **regardless** of the
 unresolved Dirac-vs-seesaw question — that branch-independence is the strength
 of the result.
@@ -238,10 +264,10 @@ that partially resolves one census fork. The no-go discipline boundary is:
   1. Light Dirac `nu_R` with the empirical small Yukawa: this keeps
      `Gamma_nu_R << H`, so `nu_R` never thermalizes; **ATTEMPTED** here by the
      explicit `Gamma/H` estimate.
-  2. Large-Yukawa Dirac `nu_R`: this would thermalize, but it forces
-     `m_nu = y_nu <H> >= 2 keV` even at the most lenient threshold and
-     `O(100 GeV)` for `y_nu ~ O(1)`, contradicting the admitted sub-eV
-     observation; **ATTEMPTED** here by the reverse mass bound.
+  2. Thermalizing Dirac `nu_R`: this requires `y_nu >= y_thr(T_census)` and
+     forces `m_nu = y_nu <H> >= ~2 keV` even at the most lenient threshold;
+     the `O(1)` special case gives `O(100 GeV)`, contradicting the admitted
+     sub-eV observation; **ATTEMPTED** here by the reverse mass bound.
   3. Heavy Majorana/seesaw `nu_R`: a heavy singlet with `M_R >> T_census` is not
      a light relativistic dof and is Boltzmann-suppressed or decayed; **RULED
      OUT BY PRIOR** branch structure plus the standard light-dof census
@@ -283,17 +309,20 @@ that partially resolves one census fork. The no-go discipline boundary is:
 - **N7 (steelman - the strongest case FOR `g_* = 112`).** The framework matter
   content **does** include `nu_R = (1,1)_0` as a genuine field (the 16th Weyl),
   and a Dirac realization is an admitted lane. If one reads the framework as
-  favouring a Dirac `nu_R` with an **unsuppressed** Yukawa - by analogy with the
+  favouring a thermalizing Dirac `nu_R` with `y_nu >= y_thr(T_census)` - or the
+  much stronger unsuppressed-Yukawa special case, by analogy with the
   charged-fermion Yukawas, several of which are `O(0.01)-O(1)` - then `nu_R`
   would thermalize and `g_* = 112`. **Rebuttal:** (a) the empirical neutrino
   mass is sub-eV, which forces `y_nu ~ 10^-12`, four-to-nine orders below the
-  thermalization threshold (§4); an `O(1)` neutrino Yukawa would give
-  `m_nu ~ 174 GeV`, excluded by every neutrino-mass measurement; (b) the native
+  thermalization threshold (§4); even the most lenient threshold forces
+  `m_nu >= ~2 keV`, while an `O(1)` neutrino Yukawa would give
+  `m_nu ~ 174 GeV`, both excluded by every neutrino-mass measurement; (b) the native
   **Majorana** lane is dominated by obstruction / no-go results, so the
   "natural large Yukawa" reading has no retained realization in the framework;
   (c) the Dirac/seesaw fork is `retained_no_go`, so the framework does not
-  assert the large-Yukawa Dirac branch - the steelman must **import** an
-  unsuppressed Yukawa, which the small-`m_nu` observation directly excludes. The
+  assert the thermalizing Dirac branch - the steelman must **import** a
+  threshold-sized or unsuppressed Yukawa, which the small-`m_nu` observation
+  directly excludes. The
   steelman establishes that `nu_R` is a real framework field; it does **not**
   establish that it is a **thermalized light** dof at the census epoch.
 - **N8 (cross-cycle echo and honest ceiling).** Similar residuals in the repo
@@ -347,9 +376,11 @@ mechanisms (light Dirac and heavy Majorana/seesaw — the two branches of the
 from the high-`T` light-relativistic census, because (a) in the light-Dirac
 branch the Yukawa implied by the empirical small `m_nu` (`y_nu ~ 10^-12`) keeps
 `Gamma_nu_R << H` by `>= 4` orders of magnitude at every census epoch, and
-(b) in the heavy-Majorana branch `nu_R` is not a light relativistic dof. The
-**only** route to `g_* = 112` is a large Dirac Yukawa (`y_nu ~ O(1)`), excluded
-by the sub-eV empirical neutrino mass. Therefore `g_* = 106.75` is **robust
+(b) in the heavy-Majorana branch `nu_R` is not a light relativistic dof under
+the `M_R >> T_census` condition. The **only** framework-native thermalized
+Dirac route to `g_* = 112` is `y_nu >= y_thr(T_census)` (with `O(1)` only a
+much stronger special case), excluded by the sub-eV empirical neutrino mass.
+Therefore `g_* = 106.75` is **robust
 across both admitted branches, conditioned on the empirical small `m_nu`**, and
 I12 is **partially resolved**. The honest ceiling: this converts "`nu_R`
 exclusion (assumed boundary condition)" into "`nu_R` exclusion follows from
@@ -363,9 +394,11 @@ exercised before authoring.
 
 1. **`nu_R` Yukawa size (small vs large).** Small (`y_nu ~ 10^-12`, forced by
    small `m_nu`): `Gamma << H`, never thermalizes -> excluded -> `106.75`.
-   Large (`y_nu ~ O(1)`): thermalizes -> `112`, but `m_nu ~ 174 GeV` excluded by
-   data. **RESOLVED conditional on empirical small `m_nu`** (the size is fixed
-   by the admitted observation, not a free choice).
+   Thermalizing (`y_nu >= y_thr(T_census)`): thermalizes -> `112`, but already
+   at `T = 100 GeV` it forces `m_nu >= ~2 keV`; the `O(1)` special case gives
+   `m_nu ~ 174 GeV`. Both are excluded by data. **RESOLVED conditional on
+   empirical small `m_nu`** (the size is fixed by the admitted observation, not
+   a free choice).
 2. **Dirac vs Majorana/seesaw branch.** Both give exclusion (light Dirac:
    never thermalizes; heavy Majorana: not a light dof). **BRANCH-INDEPENDENT;**
    the framework's `retained_no_go` does not pick the branch, and the
@@ -385,8 +418,8 @@ exercised before authoring.
 **Counterfactual conclusion.** The `nu_R` exclusion (`g_* = 106.75`) is robust
 across both admitted neutrino-mass branches and across the relevant census
 temperatures, conditioned on the empirical small `m_nu`. The only routes to
-`g_* = 112` are excluded by data (large Yukawa) or require an admitted extension
-(non-thermal production). This confirms the honest claim type is
+`g_* = 112` are excluded by data (`y_nu >= y_thr(T_census)`) or require an
+admitted extension (non-thermal production). This confirms the honest claim type is
 **bounded_theorem** and that I12 is **partially resolved**, not fully derived.
 
 ## 10. Verification
@@ -412,12 +445,14 @@ arithmetic and order-of-magnitude floats for the equilibration estimate:
    (`1e9 GeV`), `~ 1.2e-3` (`1e12 GeV`); rises with `T`.
 4. **Incompatibility (executed):** implied `y_nu` is below threshold by `>= 4`
    decades at the most lenient `T = 100 GeV` and `>= 7` decades at leptogenesis
-   `T`; `Gamma/H << 1`; a thermalizing Yukawa implies `m_nu >> 1 keV` (excluded
-   by data).
+   `T`; `Gamma/H << 1`; a thermalizing Yukawa implies `m_nu >= ~2 keV` already
+   at `T = 100 GeV` (excluded by data).
 5. **Branch table (executed):** light-Dirac `-> excluded -> 106.75`;
-   heavy-Majorana `-> excluded -> 106.75`; large-Yukawa-Dirac `-> 112` but
-   `m_nu ~ 174 GeV` excluded; `g_* = 106.75` robust across both admitted
-   branches; `112` only in the empirically-excluded branch.
+   heavy-Majorana `-> excluded -> 106.75`; thermalizing-Dirac
+   (`y_nu >= y_thr(T_census)`) `-> 112` but already implies
+   `m_nu >= ~2 keV` at `T = 100 GeV`, with `O(1)` as a stronger `~174 GeV`
+   special case; `g_* = 106.75` robust across both admitted branches; `112`
+   only in the empirically-excluded branch.
 6. **Note / authority cross-checks + ledger status:** the Dirac/seesaw no-go is
    `retained_no_go`, the relativistic-dof import is `retained_bounded`, the
    `Sum m_nu` functional-form theorem is `retained`; the note carries the fork,
@@ -441,6 +476,13 @@ Target: `PASS=N FAIL=0` with `N >= 45`.
 - The Planck mass `M_Pl` and the radiation-era Hubble prefactor `1.66` are
   standard physical constants used in an order-of-magnitude equilibration
   estimate, not fitted selectors.
+- The `Gamma/H` thermalization comparator is explicitly scoped as
+  `Gamma_nu_R ~ y_nu^2 T` versus
+  `H ~ 1.66 sqrt(g_*) T^2 / M_Pl`; no retained bridge for this comparator is
+  introduced in this note.
+- The heavy-Majorana branch conclusion is explicitly scoped to
+  `M_R >> T_census`; no retained bridge proving that branch condition is
+  introduced in this note.
 - No literature numerical bound is consumed as a derivation input; the
   right-handed-Dirac-neutrino decoupling parametrics are mentioned only as an
   order-of-magnitude comparator.
@@ -504,9 +546,10 @@ proposed_claim_scope: |
   y_thr ~ sqrt(1.66 sqrt(g*) T / M_Pl) ~ 1e-8 at T=100 GeV, rising with T), so
   nu_R never thermalizes and is excluded -> g_* = 106.75; in the heavy-Majorana
   branch nu_R has M_R >> T_census so it is not a light relativistic dof ->
-  excluded -> g_* = 106.75. The ONLY route to g_* = 112 is a large Dirac Yukawa
-  y_nu ~ O(1), which gives m_nu = y_nu <H> ~ 174 GeV, excluded by the sub-eV
-  empirical neutrino mass. Therefore g_* = 106.75 is robust across BOTH admitted
+  excluded -> g_* = 106.75. The ONLY framework-native thermalized-Dirac route
+  to g_* = 112 is y_nu >= y_thr(T_census); already at T=100 GeV this gives
+  m_nu >= ~2 keV, while the O(1) special case gives m_nu = y_nu <H> ~ 174 GeV.
+  Both are excluded by the sub-eV empirical neutrino mass. Therefore g_* = 106.75 is robust across BOTH admitted
   branches, conditioned on the empirical small m_nu. The smallness of m_nu is an
   ADMITTED EMPIRICAL OBSERVATION (comparator), NOT a framework derivation: this
   note does NOT derive small m_nu and does NOT fully derive I12 from first
@@ -533,7 +576,9 @@ notes_for_re_audit_if_any: |
   order-of-magnitude with >= 4-9 decades of margin, so it is insensitive to
   O(1)-O(100) prefactor choices. The Gamma ~ y^2 T form is the standard
   right-handed-Dirac-neutrino decoupling parametric, used as a comparator, not as
-  a derivation input.
+  a derivation input. This repaired source note introduces no retained or
+  accepted bridge for the empirical small-m_nu premise, the Gamma/H comparator,
+  or the M_R >> T_census branch condition.
 ```
 
 ## 14. Author tone and audit boundary
@@ -543,10 +588,13 @@ This note records one thing: the named import I12 of the framework-structure
 **partially resolved**, because the gauge-singlet `nu_R` equilibrates only via
 its Dirac Yukawa, and across **both** branches of the framework's
 `retained_no_go` Dirac/seesaw fork — light Dirac (small Yukawa keeps
-`Gamma << H`) and heavy Majorana (not a light dof) — `nu_R` is excluded from the
-high-`T` light-relativistic census, conditioned on the **admitted empirical**
-small neutrino mass. The only route to `g_* = 112` is a large Dirac Yukawa
-excluded by that empirical observation. It is not a synthesis, introduces no
+`Gamma << H`) and heavy Majorana (`M_R >> T_census`, not a light dof) —
+`nu_R` is excluded from the high-`T` light-relativistic census, conditioned on
+the **admitted empirical** small neutrino mass and the explicit `Gamma/H`
+comparator. The only framework-native thermalized-Dirac route to `g_* = 112`
+is `y_nu >= y_thr(T_census)`, which that empirical observation excludes
+already at the most lenient census temperature. It is not a synthesis,
+introduces no
 repo vocabulary, promotes no other note's status, does **not** derive the small
 neutrino mass, does **not** pick the Dirac/Majorana branch, and claims no full
 derivation of `g_*` or of I12. The audit lane is the authority on effective

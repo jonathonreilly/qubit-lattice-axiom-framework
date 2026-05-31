@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 624 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1180 |
+| unaudited | 1179 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 30 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 964 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 53 |
-| `audited_failed` | 45 |
+| `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1418 |
+| `unaudited` | 1417 |
 
 | claim_type | count |
 |---|---:|
@@ -1184,6 +1184,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `critical_exponents_topology_note_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2840,6 +2841,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
+- **auditor confidence:** high
+
+### `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`
+
+- **Note:** [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pairwise two-site qubit CHSH operator on distinct Z^3 lattice sites with self-adjoint involutive local observables, including the Tsirelson 2√2 upper bound and standard Bell-state saturation witness.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-152653-4fa4f8a1-chsh_tsirelson_lattice_q`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Landau identity C^2 = 4I - [A_1,A_2] ⊗ [B_1,B_2], together with ||[A_1,A_2]|| <= 2 and ||[B_1,B_2]|| <= 2, gives ||C||^2 <= 8 and hence ||C|| <= 2√2.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional Landau/Tsirelson derivation and Bell-state saturation computation close. However the source claim's quantitative comparison reverses the ordering language: since 2 < 2√2 < 4, the Tsirelson bound is looser than the classical Bell bound and tighter than the algebraic/PR bound, not the other way around.
+- **rationale:** The runner source genuinely computes the Pauli witness, repaired Landau identity, commutator norm checks, negative control, spectrum bound, Bell expectation, and random involution sweep; it is not merely printing constants. The cited dependencies are retained-grade or an explicitly accepted axiom premise, so dependency status is not the blocker. The source as written nevertheless contains a false quantitative comparison in the claim section: it says Tsirelson is tighter than classical and looser than algebraic, while the displayed numbers imply the reverse ordering.
 - **auditor confidence:** high
 
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`

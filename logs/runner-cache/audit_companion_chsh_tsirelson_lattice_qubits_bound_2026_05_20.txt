@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py
+runner_sha256: faaee5449f356f3198a5507d013d8f534017bea27153ab6dd0df5b3b2f1dfb24
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+CHSH Tsirelson lattice-qubit audit companion
+surface: finite two-site M_2(C) tensor M_2(C) operator algebra
+[PASS (A)] A_1 is self-adjoint
+[PASS (A)] A_1 is an involution
+[PASS (A)] A_2 is self-adjoint
+[PASS (A)] A_2 is an involution
+[PASS (A)] B_1 is self-adjoint
+[PASS (A)] B_1 is an involution
+[PASS (A)] B_2 is self-adjoint
+[PASS (A)] B_2 is an involution
+[PASS (A)] tensor locality [A_1 tensor I, I tensor B_1] = 0
+[PASS (A)] tensor locality [A_1 tensor I, I tensor B_2] = 0
+[PASS (A)] tensor locality [A_2 tensor I, I tensor B_1] = 0
+[PASS (A)] tensor locality [A_2 tensor I, I tensor B_2] = 0
+[PASS (A)] CHSH operator is self-adjoint
+[PASS (A)] repaired Landau identity C^2 = 4I - [A_1,A_2] tensor [B_1,B_2]
+[PASS (A)] negative control: old plus-sign identity is not the displayed square
+[PASS (A)] [sigma_z, sigma_x] = 2i sigma_y
+[PASS (A)] ||[A_1,A_2]|| <= 2 (2.000000000000000)
+[PASS (A)] ||[B_1,B_2]|| <= 2 (2.000000000000000)
+[PASS (A)] ||C|| = 2*sqrt(2) for the standard witness configuration (2.828427124746190)
+[PASS (A)] CHSH spectrum stays within [-2*sqrt(2), 2*sqrt(2)] (-2.828427124746, 0.000000000000, 0.000000000000, 2.828427124746)
+[PASS (A)] Bell state has unit norm
+[PASS (A)] <Phi+|C|Phi+> = 2*sqrt(2) (2*sqrt(2))
+[PASS (A)] random involution sweep preserves Landau identity (max residual 3.093e-15)
+[PASS (A)] random involution sweep obeys Tsirelson upper bound (max ||C|| 2.826156645011288)
+TOTAL: PASS=24, FAIL=0
+
+----- stderr -----
+

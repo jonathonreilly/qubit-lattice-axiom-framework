@@ -13,4 +13,5 @@ Pre-review local verification:
 - The oriented sign compatibility closeout runner exits 0.
 - The last-mile unlock cascade runner exits 0.
 - The physical orientation/basepoint probe runner exits 0.
-- `python3 -m py_compile` exits 0 on all fourteen Q1 scripts.
+- The source-endpoint / record-measure no-go runner exits 0.
+- `python3 -m py_compile` exits 0 on all fifteen Q1/provenance scripts.

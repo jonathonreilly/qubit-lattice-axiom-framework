@@ -3,10 +3,10 @@ branch: codex/q1-hunt-20260531
 date: 2026-05-31
 goal: "Package the Q=1 counterdomain/offsite-2/9 probes as a draft PR for Koide Q=2/3 workers."
 target_status: best-honest-status
-cycle_count: 7
-active_route: q1_physical_orientation_basepoint_probe
+cycle_count: 8
+active_route: q1_source_endpoint_record_measure_no_go
 current_surface_status: bounded-support
-claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS. If strict onsite source-domain selection is proved, the charged-lepton readout returns Q=2/3; if an independent odd orientation/basepoint is proved, the APS/Brannen magnitude can become a signed delta input. Bottom-up C3 algebra confirms Q1 generates only the even subalgebra span{e,g+g^2} and has zero component on the odd sign line i(g-g^2). The source-oriented gamma sheet is pruned as a sign source because gamma conjugation leaves the selected-line diagonal-slot readout invariant. The current oriented selected-line frame still gives delta=+2/9; in that oriented frame Q1's negative offsite coefficient maps to the right sign by delta_oriented=-coeff_g(S_Q1)=+2/9. The last-mile unlock cascade is exact and conditional. The physical orientation/basepoint probe now narrows P_ORIENT: the oriented generator g is the proper spatial C3[111] rotation and the T1 image of full taste-cube descent, so the orientation carrier is bounded support rather than a free convention. Full P_ORIENT still does not close because the microscopic full-cube source law and selected-line endpoint/basepoint/readout are not derived; P_SOURCE also remains open. Generation labels, absolute masses, dark matter, and Y_T unbounded closure remain outside this package."
+claim_boundary: "Q=1 is an exact projected counterdomain and its nonidentity/offsite coefficient equals -eta_APS. If strict onsite source-domain selection is proved, the charged-lepton readout returns Q=2/3; if an independent odd orientation/basepoint is proved, the APS/Brannen magnitude can become a signed delta input. Bottom-up C3 algebra confirms Q1 generates only the even subalgebra span{e,g+g^2} and has zero component on the odd sign line i(g-g^2). The source-oriented gamma sheet is pruned as a sign source because gamma conjugation leaves the selected-line diagonal-slot readout invariant. The current oriented selected-line frame still gives delta=+2/9; in that oriented frame Q1's negative offsite coefficient maps to the right sign by delta_oriented=-coeff_g(S_Q1)=+2/9. The last-mile unlock cascade is exact and conditional. The physical orientation/basepoint probe narrows P_ORIENT: the oriented generator g is the proper spatial C3[111] rotation and the T1 image of full taste-cube descent, so the orientation carrier is bounded support rather than a free convention. The source-endpoint / record-measure no-go proves the S=C+C^2 shortcut cannot close the rest: it forces two record atoms with ranks (1,2) but not count-vs-rank measure, is reflection-even and cannot select Qf over Qb, and has no unbased endpoint selector on the free C3 orbit. Full P_ORIENT still does not close because an orientation-odd microscopic full-cube source law and selected-line endpoint/basepoint/readout are not derived; P_SOURCE also remains open. Generation labels, absolute masses, dark matter, and Y_T unbounded closure remain outside this package."
 files_touched:
   - docs/KOIDE_Q1_OFFSITE_TWO_NINTH_FRONTIER_SYNTHESIS_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_APS_BRANNEN_COEFFICIENT_BRIDGE_NOTE_2026-05-31.md
@@ -17,6 +17,7 @@ files_touched:
   - docs/KOIDE_Q1_ORIENTED_SIGN_COMPATIBILITY_CLOSEOUT_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_LAST_MILE_UNLOCK_CASCADE_NOTE_2026-05-31.md
   - docs/KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md
+  - docs/KOIDE_Q1_SOURCE_ENDPOINT_RECORD_MEASURE_NO_GO_NOTE_2026-05-31.md
   - scripts/frontier_koide_q1_neutrality_classifier.py
   - scripts/frontier_dm_rhn_koide_q1_axis_abundance_compatibility.py
   - scripts/frontier_koide_q1_rhn_direct_bridge_no_go.py
@@ -31,8 +32,10 @@ files_touched:
   - scripts/frontier_koide_q1_oriented_sign_compatibility_closeout.py
   - scripts/frontier_koide_q1_last_mile_unlock_cascade.py
   - scripts/frontier_koide_q1_physical_orientation_basepoint_probe.py
+  - scripts/frontier_koide_q1_source_endpoint_record_measure_no_go.py
 open_imports:
-  - "Microscopic full-cube source law selecting the forward oriented channel and selected-line endpoint/basepoint/readout."
+  - "Orientation-odd microscopic full-cube source law selecting the forward channel and selected-line endpoint/basepoint/readout."
+  - "Records/objectivity or source-domain measure principle selecting count-on-atoms/per-block over rank/Born/per-dimension."
   - "Physical source-domain theorem excluding projected Z as undeformed charged-lepton source data."
   - "Any future charge-two primitive mapping Koide Z shape into nu_R Majorana activation."
 no_go_routes:
@@ -42,8 +45,9 @@ no_go_routes:
   - "Hidden bottom-up Q1 sign primitive from the C3 group algebra."
   - "Source-oriented gamma sheet as the missing selected-line sign."
   - "Automatic retained/unbounded upgrade from Q/delta compatibility alone."
+  - "S=C+C^2 sharp record alone deriving the measure, forward channel, or unbased endpoint."
 trace_class: upstream_support
 reachability_to_target: supports
-next_exact_action: "Derive the microscopic full-cube source law selecting the forward oriented channel and selected-line endpoint/basepoint/readout, or derive P_SOURCE from retained charged-lepton source-domain physics."
-pr_status: "Draft PR open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442; physical orientation/basepoint probe packaged on codex/q1-hunt-20260531."
-stop_condition: "Draft PR branch packaged with physical orientation/basepoint probe, honest claim boundary, and verification commands."
+next_exact_action: "Derive an orientation-odd microscopic full-cube source/boundary law selecting the forward channel and selected-line endpoint, derive a records/objectivity measure principle selecting count-on-atoms over rank/Born, or derive P_SOURCE from retained charged-lepton source-domain physics."
+pr_status: "Draft PR open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442; source-endpoint / record-measure no-go packaged on codex/q1-hunt-20260531."
+stop_condition: "Draft PR branch packaged with source-endpoint / record-measure no-go, honest claim boundary, and verification commands."

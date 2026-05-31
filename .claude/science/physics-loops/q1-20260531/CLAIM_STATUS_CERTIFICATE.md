@@ -8,7 +8,7 @@ conditional_surface_status: "P_SOURCE gives charged-lepton Q=2/3; the unresolved
 hypothetical_axiom_status: "would close the Q/delta dimensionless package only if P_SOURCE and the remaining selected-line source/endpoint/readout law are derived from retained charged-lepton physics"
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The packet proves an exact coefficient bridge, an unlock map, a no-go for Q1-alone signed readout, a bottom-up zero-odd-component audit, a gamma-sheet sign-source no-go, conditional oriented-frame sign compatibility, a conditional last-mile unlock cascade, and bounded support that the oriented generator g is the proper spatial/taste C3 carrier; it does not derive the microscopic selected-line endpoint/source/readout law or P_SOURCE."
+proposal_allowed_reason: "The packet proves an exact coefficient bridge, an unlock map, a no-go for Q1-alone signed readout, a bottom-up zero-odd-component audit, a gamma-sheet sign-source no-go, conditional oriented-frame sign compatibility, a conditional last-mile unlock cascade, bounded support that the oriented generator g is the proper spatial/taste C3 carrier, and a no-go that S=C+C^2 alone cannot derive the measure, forward channel, or endpoint; it does not derive the orientation-odd microscopic selected-line endpoint/source/readout law, the count-over-rank measure principle, or P_SOURCE."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -29,6 +29,8 @@ Allowed wording:
 - "In an admitted oriented C3 frame, Q1's negative offsite coefficient gives `delta_oriented=-coeff_g(S_Q1)=+2/9`."
 - "If P_ORIENT lands, the delta side is audit-ready; if P_SOURCE lands, the Q side is audit-ready; if both land, Koide Q/delta dimensionless closure is audit-ready."
 - "The oriented generator `g` is bounded support from spatial `C3[111]` plus taste-cube descent; full `P_ORIENT` still needs the selected-line endpoint/source/readout law."
+- "The sharp record `S=C+C^2` forces two atoms with ranks `(1,2)` but does not select count-over-rank measure, forward channel, or unbased endpoint."
+- "Rank/Born push-forward of the sharp record gives the trace/default `Q=1` lane; equal atom count gives the conditional `Q=2/3` lane."
 - "Unbounded retained is not the Koide status target; this package does not affect Y_T unbounded closure."
 - "This is not dark-matter closure."
 
@@ -44,5 +46,7 @@ Forbidden wording:
 - "The oriented-frame compatibility by itself derives the physical orientation."
 - "The last-mile unlock cascade by itself derives P_ORIENT or P_SOURCE."
 - "The physical orientation/basepoint probe by itself closes full P_ORIENT."
+- "The sharp record `S=C+C^2` by itself selects `Q=2/3`."
+- "The sharp record `S=C+C^2` selects the forward channel or selected-line endpoint."
 - "This package upgrades generation labels, absolute masses, or Y_T unbounded closure."
 - "All 2/9 routes are the same object."

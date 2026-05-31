@@ -24,6 +24,10 @@ Delivered artifacts:
 - Physical orientation/basepoint probe note splitting `P_ORIENT`: spatial/taste
   `g` carrier lands as bounded support, selected-line endpoint/source/readout
   remains open.
+- One source-endpoint / record-measure no-go runner.
+- Source-endpoint / record-measure no-go note proving `C3 + S=C+C^2` forces
+  the two record atoms but not the measure, forward channel, or unbased
+  endpoint.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

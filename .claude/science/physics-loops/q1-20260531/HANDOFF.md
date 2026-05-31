@@ -41,6 +41,10 @@ What to use:
   descent image on `T1`.  Thus the orientation carrier is bounded support, not
   a free convention.  Full `P_ORIENT` still needs the microscopic full-cube
   source law and selected-line endpoint/basepoint/readout.
+- The source-endpoint / record-measure no-go kills the `S=C+C^2` shortcut:
+  the sharp record forces two atoms with ranks `(1,2)`, but not the
+  count-vs-rank measure; it is reflection-even and cannot select `Qf` over
+  `Qb`; and the unbased endpoint orbit has no canonical first element.
 
 What not to use:
 
@@ -54,13 +58,17 @@ What not to use:
   derivation.
 - Do not cite the physical orientation/basepoint probe as full `P_ORIENT`
   closure; it only lands the spatial/taste `g` carrier.
+- Do not cite the `S=C+C^2` record as selecting `Q=2/3`, the forward channel,
+  or a selected-line endpoint; it only supplies the two-atom carrier.
 - Do not cite the last-mile cascade as effective retained status without an
   independent audit of `P_ORIENT` and `P_SOURCE`.
 - Do not merge the APS, anomaly, Brannen, and offsite matrix coefficient into
   full physical phase closure without a signed selected-line readout theorem.
 
-Best next theorem:
+Best next theorem handles:
 
 ```text
-derive_full_cube_source_law_selects_forward_oriented_channel_and_selected_line_endpoint
+derive_orientation_odd_full_cube_source_boundary_law_selects_Qf_and_endpoint
+derive_records_objectivity_measure_principle_selects_count_over_rank_Born
+derive_P_SOURCE_strict_onsite_charged_lepton_source_domain
 ```

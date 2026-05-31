@@ -122,3 +122,27 @@ The oriented generator `g` is not a free convention: it is the proper spatial
 this still does not derive the microscopic source/endpoint/readout law needed
 to turn the oriented carrier into the physical selected-line basepoint.  The
 full `P_ORIENT` premise remains open.
+
+## S-record source-endpoint / measure shortcut
+
+Runner: `scripts/frontier_koide_q1_source_endpoint_record_measure_no_go.py`
+
+Status: exact no-go for the restricted shortcut.
+
+The sharp record `S=C+C^2` forces two atoms,
+
+```text
+P0 = (I+C+C^2)/3, rank 1
+P1 = I-P0,        rank 2
+```
+
+but it does not force the atom measure.  Equal atom count gives the
+block-count `Q=2/3` lane; rank/Born push-forward from `I/3` gives the
+trace/default `Q=1` lane.  Both are `C3`-invariant completions.
+
+The same record is reflection-even: reflection fixes `S` while swapping
+`C <-> C^2` and full-cube `Qf <-> Qb`.  Therefore an `S`-only or
+reflection-even source law cannot select the forward channel.  The coordinate
+endpoints also form a free `C3` orbit, so no unbased endpoint selector exists.
+The next theorem must add an orientation-odd source/boundary law or an
+independent measure principle.

@@ -10,10 +10,12 @@ Goal:
 
   Given P1 (scalar additivity on independent subsystems) and P2 (continuous
   phase-blind scalar-generator selection), |Z| is multiplicative, so the
-  additive scalar generator is fixed up to W = c log|Z| + const. With the
-  canonical c=1 generator normalization and zero-source baseline, local scalar
-  observables are therefore the source-response coefficients of log|Z|
-  (equivalently Re log Z).
+  continuous additive scalar generator class is fixed to W = c log|Z|. The
+  exact multiplicative-to-additive equation permits no independent universal
+  additive constant; the zero-source subtraction is a sector-relative baseline
+  convention. With canonical c=1 and that baseline, local scalar observables
+  are therefore the source-response coefficients of log|Z| (equivalently
+  Re log Z).
 
   On the minimal hierarchy block this reproduces the exact dimension-4
   effective-potential coefficient A(L_t), and the resulting temporal kernel is
@@ -224,6 +226,50 @@ def test_additive_scalar_generator():
         "raw |Z| itself is not an additive scalar observable",
         raw_additivity_violation > 0.1,
         f"max raw additivity violation = {raw_additivity_violation:.6f}",
+    )
+
+
+def test_no_universal_additive_constant():
+    print("\n" + "=" * 78)
+    print("PART 1B: NO UNIVERSAL ADDITIVE CONSTANT IN THE LOG SOLUTION")
+    print("=" * 78)
+
+    c = 1.7
+    universal_c = 0.25
+    residuals = []
+    for r1, r2 in [(0.8, 1.3), (2.0, 5.0), (0.4, 9.0)]:
+        f12 = c * math.log(r1 * r2) + universal_c
+        f1 = c * math.log(r1) + universal_c
+        f2 = c * math.log(r2) + universal_c
+        residuals.append(abs(f12 - f1 - f2))
+        print(
+            f"  r1={r1:g}, r2={r2:g}: universal-constant residual="
+            f"{f12 - f1 - f2:+.6e}"
+        )
+
+    check(
+        "a universal additive constant violates W(r1*r2)=W(r1)+W(r2)",
+        min(residuals) > 0.99 * abs(universal_c),
+        f"min residual = {min(residuals):.2e}; |C| = {abs(universal_c):.2e}",
+    )
+
+    u0 = 0.9
+    d2 = build_dirac_4d_apbc(2, 2, u0)
+    d4 = build_dirac_4d_apbc(2, 4, u0)
+    d_tot = block_diag(d2, d4)
+    max_baseline_add_err = 0.0
+    for j in [1e-3, 1e-2, 5e-2]:
+        s2 = j * np.eye(d2.shape[0], dtype=complex)
+        s4 = j * np.eye(d4.shape[0], dtype=complex)
+        s_tot = j * np.eye(d_tot.shape[0], dtype=complex)
+        w_tot = observable_generator(d_tot, s_tot)
+        w_split = observable_generator(d2, s2) + observable_generator(d4, s4)
+        max_baseline_add_err = max(max_baseline_add_err, abs(w_tot - w_split))
+
+    check(
+        "zero-source baseline subtraction remains additive on direct sums",
+        max_baseline_add_err < 1e-12,
+        f"max baseline-subtracted additivity error = {max_baseline_add_err:.2e}",
     )
 
 
@@ -472,7 +518,7 @@ def test_conditional_scope_shape():
         raw_violation = max(raw_violation, abs(z_tot - (z2 + z4)) / z_tot)
 
     check(
-        "P1 (additivity) holds for the candidate generator W = log|det(D+J)|",
+        "P1 (additivity) holds for the zero-source-subtracted log-det candidate",
         p1_max_err < 1e-12,
         f"max additivity error = {p1_max_err:.2e}",
     )
@@ -716,6 +762,7 @@ def main():
     print("Hierarchy observable principle from the lattice axiom")
     print("=" * 78)
     test_additive_scalar_generator()
+    test_no_universal_additive_constant()
     test_local_source_response_and_block_locality()
     test_uniform_scalar_generator_from_axiom()
     test_orbit_kernel_and_selector()

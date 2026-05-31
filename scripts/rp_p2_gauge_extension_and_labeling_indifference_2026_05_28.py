@@ -80,16 +80,16 @@ We also confirm the temporal-gauge reduction is faithful: at U = 1 the
 position-space eigenvalues reproduce the momentum-space free dispersion
 e^{-2E(p)} of the prior free runner (sanity bridge to free two-step transfer-matrix positivity row).
 
-U-INTEGRATED RP then follows from
-    <Theta(F) F> = int dU (Haar . positive Wilson weight)
+U-INTEGRATED RP is NOT proved by this runner. The desired integrated theorem
+would reduce to separate factors:
+    <Theta(F) F> = int dU (Haar . Wilson weight)
                       x (per-config fermion 2-step positivity, THIS runner)
                       x (det(M_KS + m I) >= m^n > 0 config-by-config,
-                         retained dep STAGGERED_ONLY_DET_POSITIVITY_CASE_A)
-                      x (gauge-half Cauchy-Schwarz norm-square, retained_bounded
-                         dep REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ)
-                  >= 0,
-each factor non-negative. This runner supplies the per-config fermion factor at
-nontrivial fixed SU(3)/U(1) background; the other two factors are the cited deps.
+                         separate determinant authority)
+                      x (gauge-half Wilson norm-square / CS factor,
+                         separate gauge-half authority under its hypotheses).
+This runner supplies only the per-config fermion factor at nontrivial fixed
+SU(3)/U(1) background.
 
 ----------------------------------------------------------------------------
 SCORECARD
@@ -589,15 +589,16 @@ def main() -> int:
 
     # ---- Reductions named (not re-derived) ----
     print("-" * 78)
-    print("U-INTEGRATED RP REDUCTION (named deps, not re-derived here)")
+    print("CONDITIONAL U-INTEGRATED RP REDUCTION TARGET (not proved here)")
     print("-" * 78)
-    print("    <Theta(F) F> = int dU (Haar . positive Wilson weight)")
+    print("    <Theta(F) F> = int dU (Haar . Wilson weight)")
     print("        x (per-config fermion 2-step positivity -- modal proof + sampled exhibits)")
-    print("        x (det(M_KS+mI) >= m^n > 0 config-by-config -- retained dep")
+    print("        x (det(M_KS+mI) >= m^n > 0 config-by-config -- separate determinant dep")
     print("           STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)")
-    print("        x (gauge-half Cauchy-Schwarz norm-square -- retained_bounded dep")
+    print("        x (gauge-half Wilson norm-square / CS factor -- separate hypotheses")
     print("           REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)")
-    print("      >= 0,  each factor non-negative.")
+    print("    This runner proves only the fixed-background fermion factor.")
+    print("    It does not prove the generic Wilson gauge-half theorem.")
     print()
     print("    DOWNSTREAM CONTEXT NOT CLAIMED HERE:")
     print("    This runner does not close any P2/AC_phi_lambda residual. It only")

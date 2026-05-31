@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 250,
     "high": 295,
-    "leaf": 343,
+    "leaf": 342,
     "medium": 297
   },
   "cycle_break_target_count": 0,
@@ -25940,36 +25940,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "teleportation_resource_from_poisson_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "teleportation_poisson_resource_sweep_note",
-        "teleportation_resource_fidelity_note",
-        "teleportation_measurement_record_note",
-        "teleportation_apparatus_dynamics_closure_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_bell_inequality.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "abj_epsilon_index_square_block_no_go_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -35907,6 +35877,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 53,
-  "total_pending": 1185
+  "ready_count": 52,
+  "total_pending": 1184
 }

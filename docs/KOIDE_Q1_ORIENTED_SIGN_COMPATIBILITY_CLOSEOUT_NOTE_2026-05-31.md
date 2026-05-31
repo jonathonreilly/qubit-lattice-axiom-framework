@@ -76,6 +76,12 @@ delta = epsilon * eta_APS.
 The current selected-line frame is the `epsilon=+1` branch.  The missing theorem
 is still the physical derivation of that frame, not a numerical sign repair.
 
+Follow-up note
+[`KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md`](KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md)
+narrows this gap: the oriented generator `g` is bounded support from spatial
+`C_3[111]` plus taste-cube descent, but the selected-line
+endpoint/source/readout law still remains open.
+
 ## Relation To The Other Q1 Sign Artifacts
 
 - The APS/Brannen coefficient bridge proves

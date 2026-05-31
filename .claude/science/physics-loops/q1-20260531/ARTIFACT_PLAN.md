@@ -20,6 +20,10 @@ Delivered artifacts:
 - One last-mile unlock cascade runner.
 - Last-mile unlock note mapping `P_ORIENT`, `P_SOURCE`, audit-ready Q/delta
   closure, and non-upgrades.
+- One physical orientation/basepoint probe runner.
+- Physical orientation/basepoint probe note splitting `P_ORIENT`: spatial/taste
+  `g` carrier lands as bounded support, selected-line endpoint/source/readout
+  remains open.
 - Loop handoff files for follow-up workers.
 
 No publication index, retained-status matrix, or repo-wide authority surface is

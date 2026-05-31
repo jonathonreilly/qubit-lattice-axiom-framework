@@ -36,6 +36,12 @@ The current Q1/gamma package does not derive the physical orientation:
 SIGN_UNDERIVED_FROM_Q1_OR_GAMMA=TRUE.
 ```
 
+The follow-up physical orientation/basepoint probe narrows this statement:
+the oriented generator `g` itself has bounded support as the proper spatial
+`C_3[111]` rotation and the `T1` image of taste-cube descent, but the
+microscopic source law and selected-line endpoint/basepoint/readout are still
+not derived.  Thus full `P_ORIENT` remains open.
+
 The current Q criterion does not derive source-free selection:
 
 ```text
@@ -173,6 +179,9 @@ Y_T_UNBOUNDED_IMPACT=FALSE
 
 - [`KOIDE_Q1_ORIENTED_SIGN_COMPATIBILITY_CLOSEOUT_NOTE_2026-05-31.md`](KOIDE_Q1_ORIENTED_SIGN_COMPATIBILITY_CLOSEOUT_NOTE_2026-05-31.md)
   - Q1 gives the right sign once an oriented frame is admitted.
+- [`KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md`](KOIDE_Q1_PHYSICAL_ORIENTATION_BASEPOINT_PROBE_NOTE_2026-05-31.md)
+  - spatial/taste `g` carrier lands as bounded support; selected-line
+    endpoint/source/readout remains open.
 - [`KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md`](KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md)
   - source-free / Z-erasure criterion for `Q=2/3`.
 - [`KOIDE_POINTED_ORIGIN_EXHAUSTION_THEOREM_NOTE_2026-04-24.md`](KOIDE_POINTED_ORIGIN_EXHAUSTION_THEOREM_NOTE_2026-04-24.md)

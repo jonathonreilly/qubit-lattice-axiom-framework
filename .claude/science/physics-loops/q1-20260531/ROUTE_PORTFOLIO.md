@@ -99,6 +99,33 @@ No effective retained status follows before the premises are derived and
 independently audited.  The cascade does not reach generation labels, absolute
 masses, Q1 dark matter, or Y_T unbounded closure.
 
+## Route C8: physical orientation/basepoint probe
+
+Status: bounded support / partial bridge.
+
+The broad `P_ORIENT` blocker split.  The oriented generator itself is no
+longer just a convention: the same `g` used by the Q1 coefficient bridge is the
+proper spatial `C3[111]` rotation by `+2*pi/3` about the `Z^3` body diagonal,
+and full taste-cube descent restricts it to `T1`:
+
+```text
+U8|T1 = g
+P1 Qf P1 = g
+P1 Qb P1 = g^2
+P1 i(Qf-Qb) P1 = i(g-g^2)
+```
+
+So in the spatial/taste `g` frame, Q1 still gives the positive sign:
+
+```text
+delta_oriented = -coeff_g(S_Q1) = +2/9.
+```
+
+Full `P_ORIENT` remains open because the microscopic full-cube source law and
+selected-line endpoint/basepoint/readout are not derived.  The next theorem is
+therefore narrower: select the forward oriented channel and the selected-line
+endpoint from physical source data.
+
 ## Route D: future charge-two Majorana texture
 
 Status: hypothetical after activation.

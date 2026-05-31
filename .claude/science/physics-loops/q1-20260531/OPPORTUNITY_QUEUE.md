@@ -10,21 +10,21 @@
    charged-lepton source.  Negative result leaves `Q=1` as an allowed
    projected counterdomain.  In the last-mile cascade this is `P_SOURCE`.
 
-2. Derive a new signed orientation/basepoint primitive:
+2. Derive the remaining selected-line endpoint/source law:
 
    ```text
-   epsilon in {+1,-1}, tau epsilon = -epsilon
+   physical full-cube source law selects the forward oriented channel and the
+   selected-line endpoint/basepoint/readout
    ```
 
-   The Q1-alone signed readout is no-go.  A positive phase closure now needs
-   this extra odd primitive from retained source-domain or selected-line data.
-   The bottom-up sign audit narrows the target to an oriented C3 generator,
-   selected-line endpoint, or equivalent odd primitive.  The source-oriented
-   gamma sheet has now been tested and does not supply the sign because it is
-   invisible to the selected-line diagonal-slot readout.  The oriented-frame
-   compatibility closeout shows the current sign is right once that frame is
-   admitted: `delta_oriented=-coeff_g(S_Q1)=+2/9`.  In the last-mile cascade
-   this is `P_ORIENT`.
+   The Q1-alone signed readout is no-go, and the source-oriented gamma sheet
+   does not supply the sign.  The physical-orientation probe splits the
+   remaining target: the oriented generator `g` is now bounded support from the
+   proper spatial `C3[111]` rotation plus taste-cube descent, but the physical
+   source/endpoint/readout law is still not derived.  The oriented-frame
+   compatibility closeout shows the current sign is right once that last law is
+   supplied: `delta_oriented=-coeff_g(S_Q1)=+2/9`.  In the last-mile cascade
+   this is the unresolved part of `P_ORIENT`.
 
 3. Sharpen the Q1/RHN no-go:
 

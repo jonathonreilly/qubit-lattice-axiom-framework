@@ -29,6 +29,9 @@
   premises; if both are derived, Koide Q/delta dimensionless closure becomes
   audit-ready, while generation labels, absolute masses, Q1 dark matter, and
   Y_T unbounded closure remain outside the package.
+- Physical orientation/basepoint probe: spatial `C3[111]` plus full
+  taste-cube descent supplies the oriented generator `g` as bounded support;
+  the selected-line endpoint/source/readout part of `P_ORIENT` remains open.
 
 ## Not Used
 
@@ -41,7 +44,8 @@
 
 - A retained physical source-domain theorem excluding projected `Z` as
   undeformed charged-lepton source data.
-- A new signed selected-line orientation/basepoint primitive if a positive
-  `delta = eta_APS` closure is still pursued.
+- The microscopic full-cube source law selecting the forward oriented channel
+  and selected-line endpoint/basepoint/readout if a positive `delta = eta_APS`
+  closure is still pursued.
 - A charge-two primitive if any future worker wants a Majorana/RHN texture
   route.

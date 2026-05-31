@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_records_pointer_grounds_block_channel_2026_05_31.py
+runner_sha256: 2bb3be47bdf4d90b6e90dcc4dda8a23ad3e88487449acde8a36172bfb64eac2d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+
+========================================================================================
+The two records aspects are the two C3 channels (pointer=block, relaxation=trace)
+========================================================================================
+
+========================================================================================
+F1 — real-records pointer S=C+C^2 resolves 2 BLOCKS (omega,omega^2 record-degenerate)
+========================================================================================
+[PASS] F1.1 S = C + C^2 is real and C3-equivariant; spectrum {+2,-1,-1} = 2 eigenspaces
+       spec(S) = [np.float64(-1.0), np.float64(-1.0), np.float64(2.0)] (singlet +2, doublet -1,-1)
+[PASS] F1.2 omega, omega^2 are complex conjugates -> SAME pointer eigenvalue (record-INDISTINGUISHABLE) -> einselected as ONE doublet sector
+       <v_w|S|v_w>=-1.000, <v_w2|S|v_w2>=-1.000 (equal); v_w2 = conj(v_w)
+
+========================================================================================
+F2 — the block grading COMMUTES with Gamma_chi (sidesteps the chiral no-go)
+========================================================================================
+[PASS] F2.1 [S, Gamma_chi] = 0 (co-diagonalizes the 2 blocks; never anticommutes) -> the anticommuting no-go (forbids CHIRAL block ops) does not touch it
+       |[S,Gamma_chi]| = 0.0e+00; |{S,Gamma_chi}| = 2.67 (commutes)
+[PASS] F2.2 J=(C-C^2)/sqrt3 commutes with C, J^2=-P_doublet, a single FIXED tensor (not a continuous U(1)_b) -> C^3=I does not obstruct the per-block measure-J
+       fixed complex structure, not a one-parameter symmetry group
+
+========================================================================================
+F3 — records relaxation (dephasing) -> max-mixed I/3 -> trace (per-dim channel)
+========================================================================================
+[PASS] F3.1 dephasing fixed point = maximally-mixed I/3 (full-algebra trace) -> weights the doublet by its dimension 2 -> per-dimension / asymmetry channel
+       POINTER (einselection)=2-block=per-block=RATIO; RELAXATION=trace=per-dim=ASYMMETRY
+
+========================================================================================
+F4 — equal-weight functionals -> r=1/2; dimension-weighted -> r=1; trace flat
+========================================================================================
+[PASS] F4.1 equal-weight log-capacity extremum -> E_+=E_perp -> r=|b|^2/a^2=1/2 -> Q=2/3
+       r* (equal-weight) = 1/2
+[PASS] F4.2 dimension-weighted extremum -> r=1 -> Q=1; linear trace E_++E_perp=T flat
+       r* (dimension-weighted) = 1; trace = T (constant, ranks neither)
+
+========================================================================================
+SUMMARY
+========================================================================================
+  7/7 checks passed
+
+  The native records dynamics supplies BOTH C3 measures, one per channel:
+    POINTER (einselection, S=C+C^2, resolves 2 blocks)  -> per-block  -> RATIO (Q=2/3)
+    RELAXATION (dephasing -> max-mixed I/3 = trace)      -> per-dim    -> ASYMMETRY (2/9)
+  Per-block COUNTING is NATIVE: the pointer resolves 2 blocks because the
+  conjugate characters omega,omega^2 are record-degenerate. The block grading
+  COMMUTES with Gamma_chi (sidesteps the chiral no-go); the measure-J is a fixed
+  tensor (C^3=I irrelevant). Open: is the pointer's equal-energy r=1/2 FORCED by
+  a max-redundancy/objectivity principle (Stage 2)?
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

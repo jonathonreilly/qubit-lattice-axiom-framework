@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
-runner_sha256: 03d7dc7ec15f12c0772000bff73caed916a521e598a8db2ac481c11bdc6735be
+runner_sha256: 78696c9016758f2d37aa850bd4387ba26781eadd5cd251c9058a9437e0bc76d6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -13,7 +13,9 @@ DM eta bounded prediction from supplied N_sites · v premise
 Section 1: chain authority audits
 ------------------------------------------------------------------------
 [PASS] Note exists at expected path  --  DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md
-[PASS] Note claim type is bounded_theorem
+[PASS] Note claim type is bounded support note
+[PASS] Note type is conditional / support
+[PASS] Old bounded_theorem header is absent
 [PASS] Note status authority is independent audit lane only
 [PASS] Note proposal_allowed: false
 [PASS] R_base authority exists  --  R_BASE_GROUP_THEORY_DERIVATION authority
@@ -103,14 +105,15 @@ Section 9: note-text records audit-companion vs load-bearing classification
 
 Section 10: status discipline
 ------------------------------------------------------------------------
-[PASS] Note's YAML status declaration is narrow_bounded_theorem
+[PASS] Note's YAML current-surface status is conditional-support
+[PASS] Note records bounded support only under supplied P1-P7
 [PASS] Note declares bare_retained_allowed: false
 [PASS] Note declares audit_required_before_effective_retained: true
 [PASS] Note does NOT use bare 'proposed_retained' or 'retained:' status language
 
 ========================================================================
-TOTAL: PASS=68 FAIL=0
-VERDICT: bounded prediction passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
+TOTAL: PASS=71 FAIL=0
+VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside [5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; m_DM = 3.94 TeV is the supplied composed-product readout; (C2.eta) remains open.
 
 ----- stderr -----
 

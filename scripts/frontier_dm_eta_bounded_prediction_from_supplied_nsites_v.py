@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Runner: DM eta bounded prediction from supplied N_sites · v premise.
+"""Runner: DM eta conditional support from supplied N_sites · v premise.
 
-Audits the bounded prediction note
+Audits the conditional bounded-support prediction note
 `docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md`
 
 Verifies, with rational arithmetic where possible and floating-point
@@ -130,8 +130,17 @@ print("-" * 72)
 note_text = read_doc(NOTE_FNAME)
 audit("Note exists at expected path", len(note_text) > 0, NOTE_FNAME)
 audit(
-    "Note claim type is bounded_theorem",
-    "**Claim type:** bounded_theorem" in note_text,
+    "Note claim type is bounded support note",
+    "**Claim type:** bounded support note" in note_text,
+)
+audit(
+    "Note type is conditional / support",
+    "**Type:** conditional / support" in note_text,
+)
+audit(
+    "Old bounded_theorem header is absent",
+    "**Claim type:** bounded_theorem" not in note_text
+    and "**Type:** bounded_theorem" not in note_text,
 )
 audit(
     "Note status authority is independent audit lane only",
@@ -530,8 +539,13 @@ print("Section 10: status discipline")
 print("-" * 72)
 
 audit(
-    "Note's YAML status declaration is narrow_bounded_theorem",
-    "narrow_bounded_theorem" in note_text,
+    "Note's YAML current-surface status is conditional-support",
+    "actual_current_surface_status: conditional-support" in note_text,
+)
+audit(
+    "Note records bounded support only under supplied P1-P7",
+    'conditional_surface_status: "bounded-support under supplied P1-P7 premise packet"'
+    in note_text,
 )
 audit(
     "Note declares bare_retained_allowed: false",
@@ -556,13 +570,13 @@ print()
 print("=" * 72)
 print(f"TOTAL: PASS={AUDIT_PASSES} FAIL={len(AUDIT_FAILS)}")
 if AUDIT_FAILS:
-    print("VERDICT: bounded prediction runner FAILED at:")
+    print("VERDICT: conditional bounded-support runner FAILED at:")
     for fail in AUDIT_FAILS:
         print(f"  - {fail}")
     sys.exit(1)
 else:
     print(
-        "VERDICT: bounded prediction passes; eta_pred bracketed inside "
+        "VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside "
         "[5.25e-10, 8.11e-10] with central +4.22% vs eta_obs; "
         "m_DM = 3.94 TeV is the supplied composed-product readout; "
         "(C2.eta) remains open."

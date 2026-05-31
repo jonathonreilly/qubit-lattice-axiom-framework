@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_readout_channel_map_2026_05_31.py
+runner_sha256: 87d3ba77a6c81dbf61f41357b45d2d04a3229340e21851ece41e0156e1243329
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+
+========================================================================================
+Three C3 readouts of one generation operator -> three physical channels
+========================================================================================
+
+========================================================================================
+F1 — C3 Fourier: H = singlet a (uniform) + doublet b (differences)
+========================================================================================
+[PASS] F1.1 singlet a = Tr(H)/3 (uniform (1,1,1)); doublet b = (1/3)Tr(C^-1 H)
+       a = 1.000+0.000j (uniform scale); b = 0.310+0.210j (flavor splitting)
+[PASS] F1.2 the singlet axis is (1,1,1)/sqrt3 -- C3-fixed, generation-uniform
+       C(1,1,1)=(1,1,1): the generation-blind direction (what em/Y couple to equally)
+
+========================================================================================
+F2 — CHANNEL 'SCALE' (third r=0, democratic (1,0), Q=1/3)
+========================================================================================
+[PASS] F2.1 r=0 (b=0, pure singlet): masses DEGENERATE -> Q=1/3 (democratic floor); a = the overall flavor-UNIVERSAL mass SCALE (generation-blind)
+       eig(aI) = [1. 1. 1.] (degenerate); Q = 0.3333 = 1/3
+
+========================================================================================
+F3 — CHANNEL 'RATIO' (r=1/2, equal-block (1,1), Q=2/3)
+========================================================================================
+[PASS] F3.1 doublet MAGNITUDE |b| sets the flavor SPLITTING; equal-block r=1/2 -> Q=2/3 = the charged-lepton mass-ratio (Koide)
+       r=|b|^2/a^2=1/2 -> masses [0.2929 0.2929 2.4142] -> Q = 0.666667 = 2/3
+
+========================================================================================
+F4 — CHANNEL 'ASYMMETRY' (r=1, dimension (1,2)): spectral 2/9 + CP phase
+========================================================================================
+[PASS] F4.1 doublet SIGN / spectral content -> spectral asymmetry L_3(1,2) = 2/9 (the eta / Lefschetz weight, retained_bounded)
+       L_3(1,2) = 2/9 = 2/9
+[PASS] F4.2 doublet PHASE arg(b)=delta is the CP/orientation datum (Brannen delta=2/9 rad), Q-ORTHOGONAL: Q depends only on |b|
+       Q(theta) = ['0.6667', '0.6667', '0.6667', '0.6667'] (constant in theta -> phase is independent)
+
+========================================================================================
+F5 — one operator H, three complementary readouts (not competitors)
+========================================================================================
+[PASS] F5.1 SCALE (singlet, Q=1/3) + RATIO (doublet |b|, Q=2/3) + ASYMMETRY (doublet sign, 2/9) are projections of the SAME H onto its 3 natural readouts
+       magnitudes -> scale + ratio; signs/spectral-flow -> asymmetry; phase -> CP
+
+========================================================================================
+SUMMARY
+========================================================================================
+  7/7 checks passed
+
+  ONE generation operator H = aI + bC + b-bar C^2, THREE physical readouts:
+    r=0   SCALE     (singlet a, generation-uniform)   -> Q=1/3 (degenerate base)
+    r=1/2 RATIO     (doublet |b|, flavor splitting)    -> Q=2/3 (Koide mass ratio)
+    r=1   ASYMMETRY (doublet sign, spectral flow)      -> 2/9  (eta / L_3)
+    (+ doublet phase arg(b)=delta=2/9 rad = CP, Q-orthogonal)
+
+  THE THIRD r (r=0, Q=1/3): the flavor-UNIVERSAL overall mass SCALE -- the
+  generation-blind (1,1,1) piece common to all generations, the degenerate-
+  symmetric base that the doublet (ratio + asymmetry) then splits.
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

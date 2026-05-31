@@ -11,6 +11,7 @@
   projector skeleton, not same physical source matrix.
 - Existing Majorana notes: current stack has no nonzero Majorana activation
   primitive on this route.
+- Exact Q1 coefficient bridge: `coeff_nonid(S_Q1) = -eta_APS`.
 
 ## Not Used
 
@@ -23,6 +24,7 @@
 
 - A retained physical source-domain theorem excluding projected `Z` as
   undeformed charged-lepton source data.
-- A typed theorem identifying APS eta with the Brannen/parity phase.
+- A signed selected-line readout theorem identifying the Brannen/parity phase
+  with `-coeff_nonid(S_Q1) = eta_APS`.
 - A charge-two primitive if any future worker wants a Majorana/RHN texture
   route.

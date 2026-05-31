@@ -15,5 +15,5 @@ Q=1
 Status:
 
 ```text
-Draft PR pending push/create.
+Draft PR opened as https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2442.
 ```

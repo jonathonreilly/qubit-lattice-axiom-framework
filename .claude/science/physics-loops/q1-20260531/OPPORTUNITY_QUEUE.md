@@ -1,12 +1,13 @@
 # Opportunity Queue
 
-1. Prove or refute:
+1. Prove or refute the signed readout theorem:
 
    ```text
-   projected offsite 2/d^2 -> APS eta -> Brannen/parity phase
+   delta = -coeff_nonid(S_Q1) = eta_APS
    ```
 
-   This is the main route if the PR attracts follow-up work.
+   The coefficient bridge is now exact; the open issue is the signed physical
+   selected-line readout/orientation law.
 
 2. Prove physical source-domain selection:
 

@@ -17,8 +17,9 @@ The trap is conflating two distinct notions of "Higgs":
 
 This runner verifies, at exact rational precision via `fractions.Fraction`
 and with explicit linear algebra where a texture statement is load-bearing,
-that these are DIFFERENT objects and that the framework's retained / retained-
-bounded structure forces a single composite EWSB doublet for the census.
+that these are DIFFERENT objects and that, conditional on the named bridge from
+the Ward H_unit scalar-singlet structure to one complex EWSB doublet in the
+thermal census, the one-doublet count gives g_* = 106.75.
 
 It does two distinct jobs:
 
@@ -27,7 +28,7 @@ It does two distinct jobs:
    doublet -> +4 dof -> g_* = 110.75. This reproduces the counterfactual of
    the PR #2223 note exactly and shows R-HIGGS is the load-bearing choice.
 
-2. **EWSB-vs-flavor distinction as executed asserts (not prose).** The
+2. **EWSB-vs-flavor distinction as executed support (not prose).** The
    flavor-sector "two-Higgs" lane is a Yukawa-texture device: two distinct
    effective Z_3 offsets on a Yukawa operator make Y non-monomial so that
    Y^dag Y is non-diagonal and PMNS can be nontrivial. This is realized with
@@ -40,8 +41,10 @@ It does two distinct jobs:
    q_H is a right-basis relabeling for Y_e Y_e^dag, hence gauge-redundant for
    PMNS. None of these add a thermalized scalar dof to the census.
 
-3. **Authority cross-checks.** Each cited framework authority file exists in
-   docs/; a forbidden-import / new-vocabulary scan over the note text.
+3. **Bridge-boundary checks.** The runner checks that the note names the
+   missing H_unit -> EWSB-doublet bridge and does not present the D17
+   scalar-singlet uniqueness as a closed retained proof of thermal field
+   content.
 
 No lattice-action carrier, fitted comparator, or PDG observed value is a
 load-bearing input. The census values match conventional cosmology but are
@@ -212,7 +215,7 @@ def section_flavor_texture() -> None:
     )
     check(
         "these 7 are Yukawa-texture parameters, NOT relativistic thermalized dof",
-        True,
+        physical == 7,
         "flavor space (couplings) vs Fock space (particle content)",
     )
 
@@ -259,19 +262,16 @@ def section_flavor_texture() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Section 3: the genuine-2HDM scenario requires an independent fundamental
-# scalar -- the framework-native exclusion (D9/D16/D17, retained_bounded Ward).
+# Section 3: the 2HDM boundary and the missing EWSB-field-content bridge.
 # ---------------------------------------------------------------------------
 def section_2hdm_exclusion() -> None:
-    print("\n[3] genuine 2HDM (two thermalized doublets) requires a second field")
+    print("\n[3] 2HDM boundary and missing EWSB-field-content bridge")
 
     # A genuine 2HDM adds an INDEPENDENT complex doublet H_d with its own VEV v_d
     # (tan beta = v_u / v_d). That second doublet carries its own 4 scalar dof and
-    # would thermalize -> 8 dof. The framework Higgs is the composite H_unit; the
-    # unique (1,1) iso-singlet scalar on Q_L has Z^2 = 6, and the alternatives
-    # (1,8),(3,1),(8,3) have Z^2 = 8, 9/2, 24 -- all distinct from 6 -- so there is
-    # no second (1,1) composite scalar (D17). We assert the Z^2 uniqueness here as
-    # the structural fact that forecloses a framework-native second doublet.
+    # would thermalize -> 8 dof. D17 supplies a unique unit-normalized
+    # scalar-singlet candidate, but does not by itself prove the thermal EWSB
+    # doublet field-content bridge.
     z2 = {"(1,1)": Fraction(6), "(1,8)": Fraction(8), "(3,1)": Fraction(9, 2), "(8,3)": Fraction(24)}
     check("D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6", z2["(1,1)"] == 6)
     others_distinct = all(v != z2["(1,1)"] for k, v in z2.items() if k != "(1,1)")
@@ -280,19 +280,27 @@ def section_2hdm_exclusion() -> None:
         others_distinct,
         "(1,8)=8, (3,1)=9/2, (8,3)=24",
     )
-    check(
-        "genuine 2HDM needs an independent fundamental/second-composite scalar (admitted, not retained)",
-        True,
-        "absent from the bare action (D16); not framework-native",
-    )
 
-    # The census scenario count is therefore: the framework-native EWSB content is
-    # ONE composite doublet (4 dof). A second thermalized doublet would be an
-    # admitted extension; if imported, g_* = 110.75 (Section 1, scenario B).
+    text = NOTE_PATH.read_text(encoding="utf-8")
     check(
-        "framework-native EWSB scalar count for the census = 1 doublet (4 dof)",
-        True,
-        "outcome (a): g_* = 106.75 stands on framework-native content",
+        "note names the missing H_unit -> EWSB-doublet bridge instead of claiming closure",
+        "does **not** derive the bridge from the" in text
+        and "`H_unit` scalar-singlet structure" in text
+        and "Without that bridge, R-HIGGS" in text
+        and "remains conditional" in text,
+    )
+    check(
+        "note states no new retained bridge for H_unit, one-Higgs/Z3, or 2HDM support",
+        "This repair takes the narrowing route" in text
+        and "It introduces no new retained or" in text
+        and "H_unit" in text
+        and "one-Higgs/Z3" in text
+        and "2HDM/SUSY" in text,
+    )
+    check(
+        "note states g_* = 106.75 only under the named EWSB-field-content bridge",
+        "Under the bridge, `g_* = 106.75` follows" in text
+        and "remaining missing step" in text,
     )
 
 
@@ -333,7 +341,7 @@ def section_note_checks() -> None:
     text = NOTE_PATH.read_text(encoding="utf-8")
 
     # Honest-outcome and load-bearing strings present in the note.
-    for token in ["106.75", "110.75", "bounded_theorem", "R-HIGGS", "H_unit"]:
+    for token in ["106.75", "110.75", "conditional / support", "bounded support note", "R-HIGGS", "H_unit"]:
         check(f"note records load-bearing token: {token!r}", token in text)
 
     # Forbidden-import scan: these import strings are allowed ONLY inside the

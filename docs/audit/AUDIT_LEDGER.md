@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 171 |
-| **retained_no_go** | 178 |
+| **retained_no_go** | 179 |
 | **retained_bounded** | 628 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1169 |
+| unaudited | 1168 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 968 |
+| `audited_clean` | 969 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1407 |
+| `unaudited` | 1406 |
 
 | claim_type | count |
 |---|---:|
@@ -450,6 +450,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6185,6 +6186,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Construct tensor_word = diag_c · (N_f + N_fbar) · diag_c · (N_f + N_fbar)^T · diag_c on the NMAX=4 box and directly verify (P1) min entries >= 0, (P2) swap commutation, and (P3) nonnegative boundary0 readout.  _(class `A`)_
 - **chain closes:** True — The restricted claim closes as a finite algebraic/numerical check over retained_bounded Wilson coefficient input and admitted SU(3) fusion multiplicities. It does not claim the parent spatial-environment tensor-transfer identity or any untruncated result.
 - **rationale:** The runner source genuinely constructs the finite coefficient vector from the Schur-Weyl Bessel determinant, builds the SU(3) fundamental and anti-fundamental fusion matrices, forms tensor_word, and checks P1-P3 directly. The one-hop Wilson coefficient authority is marked retained_bounded, and the remaining fusion multiplicity input is explicitly admitted as bounded textbook input on the finite box. The note's boundaries exclude the open parent matrix-element identity and untruncated transfer construction, so no broader claim is imported.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite sampled-grid no-go only: no point on the explicit 1440-point parameter grid for the beta=6 spatial_pair witness family realizes the listed Z^min under the gap_at optimal-scalar fit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-gauge_vacuum_plaquette_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The primary runner exhaustively evaluates the stated 6 x 6 x 5 x 8 = 1440 sampled grid and finds a strictly positive minimum scaled-fit gap of 7.791551e-03 at the reported grid point.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the stated grids, computes the witness vector and optimal scalar gap at each sampled point, and the cached output matches the note's minimum and argmin. The conclusion is restricted to the finite grid; no continuous-box exclusion is used or audited.
+- **rationale:** The load-bearing result is a first-principles finite computation over the explicit sampled grid, not a definition, renaming, or external comparator match. The primary runner does not merely print the contested minimum: it sweeps all 1440 grid points and computes the gap through the supplied helper chain. Hard-coded reference values in the runner are used only for sanity checks and are not load-bearing for the sampled minimum. The no-go is clean only at the finite-grid resolution explicitly stated in the repaired note; off-grid continuous minimizers and other parameterizations remain outside scope.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19`

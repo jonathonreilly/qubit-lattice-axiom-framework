@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 617 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1195 |
+| unaudited | 1194 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 956 |
-| `audited_conditional` | 23 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1433 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
@@ -1105,6 +1105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -12330,6 +12331,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Block 2 reads the registered per-row outputs of each one-hop family runner and asserts G1 zero-source, G2 neutral, G3 antisymmetry, and G4 unit-slope thresholds, with rejected rows surfaced as basin/seed exclusions.  _(class `B`)_
 - **chain closes:** True — The bounded diagnostic closes because the runner source implements the stated two-block check, the cached run exits 0 with all reported G1-G4 gates passing, and the supplied direct dependencies are retained_bounded. The chain closes only for the finite registered-output comparison, not for the source note's broader corollary/proof wording if read as a cross-family theorem.
 - **rationale:** The B-class dependence is not a blocker under the narrowed claim scope because the row is explicitly a finite cached comparison over retained_bounded family outputs, not a first-principles portability proof. The primary runner does more than print constants: it recomputes a small second-grown subset and then parses registered/fallback family logs to enforce the four stated gates. The theorem/corollary language must be read as explanatory prose only; the audited claim excludes universal inheritance, row-wise lower-bound closure, and independent order-parameter status. This is not algebraic decoration because it is a multi-family computational diagnostic rather than a single-parent algebraic restatement.
+
+### `signed_gravity_aps_locked_source_action_proposal_note`
+
+- **Note:** [`SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md`](../../docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the APS-locked source-action proposal as a conditional ansatz whose internal variation and sign-locking checks pass, not as a retained derivation of signed gravity.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-132747-70eb861e-signed_gravity_aps_locke`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note inserts the new source-action premise S_int = - chi_eta M_phys <rho,Phi>, from which -delta S_int/delta Phi = chi_eta M_phys rho.  _(class `E`)_
+- **chain closes:** False — The algebra closes only after the chi_eta M_phys rho Phi action term is inserted. The missing step is a derivation of that term, or of the required chiral grading/source selector, from retained APS/Wald/Gauss structure.
+- **rationale:** The runner checks the finite-difference variation, sign table, source-unit bookkeeping, and control evolution, but it does not derive the contested source-action term. The cited retained_no_go authority keeps the signed-response lane conditional and explicitly leaves the source-action bridge open. The note is therefore correctly scoped as an open gate, not a retained theorem; additionally, the displayed Born-I3/norm-drift control values in the note are stale relative to the supplied runner output.
+- **auditor confidence:** high
 
 ### `signed_gravity_response_lane_status_note_2026-04-26`
 

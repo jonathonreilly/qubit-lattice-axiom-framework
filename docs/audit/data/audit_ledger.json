@@ -316422,24 +316422,50 @@
       "verdict_rationale": null
     },
     "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T13:22:59.287884+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "broad_gravity_derivation_note": "Conditional algebraic k-cancellation for stationary paths and phase-rate ratios from the supplied weak-field action/readout, with no physical gravity bridge audited.",
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units.",
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "broad_gravity_derivation_note": "bounded_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "broad_gravity_derivation_note": "retained_bounded",
+          "gravity_clean_derivation_note": "retained_bounded",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "broad_gravity_derivation_note",
+          "gravity_clean_derivation_note",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "e27bccd78558ce0b83140c8793a5f2a3b96d452b7cc8dba845dfaecf7afb3446",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-132018-f2aba6cc-work_history.atomic.hydr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The hydrogen primary runner source/cache genuinely computes a finite-box lattice eigenproblem, but the restricted packet does not close the upstream operator authority chain. The missing steps are a current retained axiom/lattice-kinetic authority, the cited Coulomb-kernel authority, and complete verifiable Hartree/Jastrow runner artifacts for the helium readouts.",
       "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-      "claim_scope": null,
+      "claim_scope": "Diagnostic work-history numerics for the finite-box hydrogen lattice spectrum and helium Hartree/Jastrow readouts at declared lattice parameters, not absolute spectroscopy, continuum closure, or a retained atomic derivation chain.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T13:22:59.287884+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -316449,20 +316475,24 @@
         "minimal_axioms_2026-04-11"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 5.17,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The companion runners instantiate H_g = -\u0394_Z^3 - g/|r|, reuse the same Coulomb kernel for helium, and report the finite-box hydrogen ratios plus Hartree/Jastrow helium readouts.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "eda4c9aad30a8e1dd237b79e1a7cd68aa6e8c34100a23101730223e5779934e4",
       "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: re-audit with the current axiom premise, a retained lattice-kinetic authority that actually derives -\u0394_Z\u00b3 from Cl(3)/Z\u00b3, the Coulomb-kernel authority source/cache, complete Hartree/Jastrow runner sources and SHA-pinned cached stdout, and either remove or justify the d=3 finite-Rydberg-series bound-state statement.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
+        "scripts/frontier_dm_coulomb_from_lattice.py"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -316629,18 +316659,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/frontier_atomic_hydrogen_lattice_companion.py",
       "title": "Hydrogen / Helium Atomic Companion Note",
       "transitive_descendants": 17,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary hydrogen runner is not a trivial printer: it builds the graph Laplacian, applies a regularized -g/r potential, diagonalizes the sparse Hamiltonian, and produces the quoted hydrogen ratios. However, the cited authorities supplied here do not themselves close the claimed Cl(3)/Z^3 -> -\u0394_Z^3 and Z^3 Green-function -> Coulomb-kernel chain: the axiom note is superseded/meta, the clean-gravity note is explicitly conditional, and the Coulomb runner authority is named but not provided. The helium Hartree and Jastrow claims are supported only by excerpts/stdout tails rather than full source/cache in the runner packet. The formula inventory also leaves the d=3 bound-state/finite-Rydberg-series assertion unsupported by the provided authority packet."
     },
     "work_history.cabibbo_jarlskog_route_note_2026-04-12": {
       "audit_date": null,

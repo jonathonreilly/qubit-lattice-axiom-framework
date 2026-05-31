@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cluster_decomposition_spatial_slab_bridge_check.py
-runner_sha256: cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27
+runner_sha256: 7442a96f5f576c466ee4a6b45a17b89f8c9c0946f09db0f0e7b0e5cfff2860bf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ========================================================================
@@ -48,6 +48,12 @@ status: ok
   Setup: random transfer matrix (d=8), Δ in [0.5, 2.0], sep in [1, 8]
   parallelism check: 80/80 (bounds identical at 1e-12)
 
+--- S6: source-note scope boundary ---
+  PASS: source note is conditional / support, not bounded_theorem
+  PASS: source note names H1 and H2 as open inputs
+  PASS: source note states no new retained bridge is introduced
+  PASS: source note says retained-level closure is not supplied
+
 ========================================================================
  SUMMARY
 ========================================================================
@@ -56,10 +62,14 @@ status: ok
    S3 (thermal spatial bound S.8): PASS
    S4 (no-gap spatial counter-example): PASS
    S5 (temporal/spatial parallelism): PASS
+   S6 (source-note conditional scope): PASS
 
-   PASSED: 5/5
+   PASSED: 6/6
 
  verdict: spatial bridge (S.1)–(S.2) verified as closed-form finite-block
-          identity; no-gap counter-example confirms spatial gap is required;
+          conditional identity; no-gap counter-example confirms spatial gap is required;
           temporal/spatial parallelism confirms structural mirror of the
           2026-05-09 temporal bridge.
+
+----- stderr -----
+

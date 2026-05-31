@@ -1,9 +1,24 @@
 # P1 I_S Lattice-PT Citation and Bound Note (Composite H_unit Scalar-Bilinear Matching)
 
 **Date:** 2026-04-17
-**Status:** proposed_retained citation-and-bound layer on top of the prior P1 symbolic decomposition. The framework-specific value of the 1-loop Brillouin-zone integral `I_S` for the composite scalar bilinear `H_unit = (1/sqrt(N_c N_iso)) Σ ψ̄ψ` on the tadpole-improved Wilson-plaquette + staggered-Dirac canonical surface is not re-derived here. Its published-literature range for the closest analogue (tadpole-improved staggered scalar density on Wilson plaquette action at `β ≃ 6`) is cited, the associated framework-specific P1 contribution is recomputed at `α_LM = 0.0907`, and the outcome is compared to the packaged `1.92%` nominal that the obstruction budget currently carries.
+**Claim type:** bounded support note
+**Status:** conditional citation/support layer on top of the prior P1 symbolic decomposition. The framework-specific value of the 1-loop Brillouin-zone integral `I_S` for the composite scalar bilinear `H_unit = (1/sqrt(N_c N_iso)) Σ ψ̄ψ` on the tadpole-improved Wilson-plaquette + staggered-Dirac canonical surface is not re-derived here. Its published-literature range for the closest analogue (tadpole-improved staggered scalar density on Wilson plaquette action at `β ≃ 6`) is cited, the associated framework-specific P1 contribution is recomputed at `α_LM = 0.0907`, and the outcome is compared to the packaged `1.92%` nominal that the obstruction budget currently carries.
+**source-note proposal only:** this note is a source-note candidate; audit verdict and effective status are independent-audit outputs.
 **Runner:** `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py`
 **Log:** `logs/retained/yt_p1_i_s_lattice_pt_citation_2026-04-17.log`
+**Type:** conditional / support
+**Status authority:** independent audit lane only.
+
+```yaml
+actual_current_surface_status: conditional-support
+conditional_surface_status: "citation arithmetic under external I_S bracket"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The arithmetic from an external I_S bracket closes, but the bracket is not framework-native and the canonical plaquette readout is retained only as bounded support."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
 ## Authority notice
 
@@ -228,7 +243,7 @@ between references by `O(1)` because of differing conventions on:
 - whether the plaquette `β = 6` or a slightly different value (`β = 6.0` vs `β = 6.2`, etc.)
   is used as the tadpole reference.
 
-**Citation confidence.** This note treats the range `I_S ∈ [4, 10]` as the **retained cited
+**Citation confidence.** This note treats the range `I_S ∈ [4, 10]` as the **conditional cited
 bracket** for the tadpole-improved surface closest to the framework canonical surface, with
 a **central estimate** `I_S ≃ 6`. The precise per-reference number is **not** claimed; what
 is claimed is the **bracket** and the qualitative fact that the composite-`H_unit` matching
@@ -421,8 +436,8 @@ P1 budget line; closing it requires a framework-native BZ integration.
 
 - A framework-native 1-loop BZ evaluation of `I_S` on the retained `Cl(3) × Z^3`
   canonical action with the exact composite-`H_unit` bilinear. Such a derivation would
-  pin the number below `O(1)` literature uncertainty and promote this citation note to
-  a retained sub-theorem.
+  pin the number below `O(1)` literature uncertainty and allow this citation note to be
+  re-audited beyond conditional support.
 - Closure of the `C_A` channel (`I_2`) and `T_F n_f` channel (`I_3`) of `Δ_R`. These
   remain OPEN P1 sub-gaps.
 - The revised P1 value's propagation into any publication-surface table. No publication-
@@ -460,7 +475,7 @@ P1 revision is upward, within the cited bracket.
 
 The runner `scripts/frontier_yt_p1_i_s_lattice_pt_citation.py` emits deterministic PASS/FAIL
 lines and is logged under `logs/retained/yt_p1_i_s_lattice_pt_citation_2026-04-17.log`. The
-runner must return PASS on every check to keep this note on the retained citation surface.
+runner must return PASS on every check to keep this note on the conditional citation-support surface.
 
 Specifically the runner verifies:
 

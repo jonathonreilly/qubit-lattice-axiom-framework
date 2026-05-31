@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_lattice_pt_citation.py
-runner_sha256: a56ad1f7afcd49926af060243e7bff9fb253464818df727ec9cf27de1f117cf1
+runner_sha256: 7a250b0319cc0435998e9a5cfd4ff57620d687bde8d77530e8e5c5d6bb0e32cb
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -11,6 +11,18 @@ P1 I_S lattice-PT citation-and-bound check -- runner
 Date: 2026-04-17
 Authority: docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
 ========================================================================
+
+========================================================================
+PART 0: Source-note status boundary
+========================================================================
+  [PASS] source note exists  (docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md)
+  [PASS] claim type is bounded support note
+  [PASS] type is conditional / support
+  [PASS] current-surface status is conditional-support
+  [PASS] source-note proposal marker is present
+  [PASS] bare retained is explicitly disallowed
+  [PASS] old proposed_retained status is absent
+  [PASS] external I_S bracket is not called retained
 
 ========================================================================
 PART A: Retained color tensor C_F at SU(3)
@@ -127,7 +139,7 @@ PART G: Scope boundary (master obstruction theorem not modified)
   [PASS] Cited I_S value explicitly NOT framework-native  (framework-native BZ integration remains the next retention level)
 
 ========================================================================
-SUMMARY: PASS=33  FAIL=0
+SUMMARY: PASS=41  FAIL=0
 ========================================================================
 
 Adopted I_S value (central cited estimate):

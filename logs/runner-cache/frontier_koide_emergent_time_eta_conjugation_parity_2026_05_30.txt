@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30.py
+runner_sha256: 56e6b8726cc420f84578dd4b7dfc431365ad47f91c9d279cd99541867cb335f7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+
+========================================================================
+Check 1 - multiset-even under b -> conj(b) (symbolic)
+========================================================================
+[PASS] det M is even in Im(b) (odd part = 0)  (odd=0)
+[PASS] eigenvalue multiset invariant under b -> conj(b) (k: 1<->2)
+
+========================================================================
+Check 2 - real-orthogonal transposition similarity (exact)
+========================================================================
+[PASS] P is a real orthogonal permutation
+[PASS] P C P = C^2 (P reflects the C_3 orbit)
+[PASS] P M(b) P = M(conj b) on the generation triplet  (max=0.0e+00)
+[PASS] (I_L (x) P) H(b) (I_L (x) P) = H(conj b)  (max=0.0e+00)
+[PASS] spectrum of H(b) equals spectrum of H(conj b) (round-then-sort)  (max=0.0e+00)
+
+========================================================================
+Check 3 - Berry curl = 0 for ANY kernel g (symbolic)
+========================================================================
+[PASS] curl( sum_k g(lam_k) d lam_k ) = 0 for arbitrary g  (curl=0)
+
+========================================================================
+Check 4 - det M real under arg(b) winding (no Berry winding)
+========================================================================
+[PASS] det M(|b| e^{i theta}) is real for all theta  (max|Im|/|det|=4.1e-16)
+
+========================================================================
+Check 5 - positive control: detector is sensitive
+========================================================================
+[PASS] conjugate-symmetric coupling: spectral asymmetry eta = 0  (eta=0)
+[PASS] c-independent deformation: spectral asymmetry eta != 0  (eta=4)
+[PASS] the control has coeff(C^2) != conj(coeff(C)) (non-Hermitian)
+
+========================================================================
+Check 6 - over-determination: reality forces even-ness even when P breaks
+========================================================================
+[PASS] W_mix explicitly breaks the transposition lift ([W_mix, I (x) P] != 0)  (norm=2.80)
+[PASS] spec(O(b)) = spec(O(conj b)) with P broken (reality: O(conj b) = O(b)^T)  (max=0.0e+00)
+
+========================================================================
+Check 7 - the odd generator i(C - C^2) is only the arg(b) tangent
+========================================================================
+[PASS] i(C - C^2) is Hermitian
+[PASS] i(C - C^2) is P-odd (P G P = -G)
+[PASS] M(b) + eps i(C - C^2) = M(b + i eps) (reparametrizes b; stays conjugate-symmetric)
+
+========================================================================
+Summary
+========================================================================
+PASS=17 FAIL=0
+Conjugation-odd Berry coefficient vanishes on the conjugate-symmetric
+C_3 circulant and transpose-preserving real extensions.
+Positive control eta_chi=4.
+
+----- stderr -----
+

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 178 |
-| **retained_bounded** | 625 |
+| **retained_bounded** | 626 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1174 |
+| unaudited | 1173 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 965 |
+| `audited_clean` | 966 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1412 |
+| `unaudited` | 1411 |
 
 | claim_type | count |
 |---|---:|
@@ -366,6 +366,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_current_traceless_generator_selector_no_go_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `exponent_derivation` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4933,6 +4934,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** From |D_mu H_0|^2, the charged term is g^2 v^2/4 W_mu^+ W^{-mu} and the neutral mass matrix is v^2/4 [[g^2, -g g_Y], [-g g_Y, g_Y^2]], whose eigenvalues are 0 and (g^2+g_Y^2)v^2/4.  _(class `A`)_
 - **chain closes:** True — Within the note's explicit assumptions, the Pauli-matrix action on the neutral doublet vacuum gives the charged mass term and the neutral 2x2 mass matrix directly. The zero and massive eigenvectors also give the photon/Z rotation and the photon coupling to T3+Y without importing numerical electroweak data.
 - **rationale:** The scoped theorem is an exact class-A algebraic closure over explicitly stated SM Higgs-sector assumptions, not a numerical match, renaming, or decoration of a single upstream parent. No experimental M_W, M_Z, sin^2(theta_W), or alpha_EM value is used to obtain the mass matrix or charge normalization. The cached runner exits nonzero with one failed status-string surface check, but all load-bearing algebraic checks pass; that failure is a non-load-bearing runner/documentation artifact rather than a defect in the theorem chain.
+- **auditor confidence:** high
+
+### `exponent_derivation`
+
+- **Note:** [`EXPONENT_DERIVATION.md`](../../docs/EXPONENT_DERIVATION.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded scope-repair claim that the old dimension-only exponent story remains heuristic and is blocked from theorem status by the retained matched 2D/4D replay.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-154443-f64a6d65-exponent_derivation`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The matched replay is a counterweight showing the old alpha ~ 1/d_spatial route is not isolated from topology/connectivity in the current harness.  _(class `A`)_
+- **chain closes:** True — The cited matched replay is retained_bounded and supplies the table and exponent fits. The arithmetic checks support the narrowed conclusion: alpha_4d = -2.704 is not flatter than alpha_2d = -0.158, delta alpha = -2.546 matches, and the source note explicitly firewalls the old dimension-only theorem claim.
+- **rationale:** The source note does not assert the old alpha ~ 1/d_spatial derivation as a closed result; it explicitly demotes it to a heuristic. The retained matched 2D/4D authority is enough for the bounded negative scope claim that this row cannot be used as a clean dimension-only exponent theorem. The runner is not a first-principles derivation, but it only needs to certify arithmetic consistency and the source-note firewalls for this scoped boundary claim.
 - **auditor confidence:** high
 
 ### `f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26`

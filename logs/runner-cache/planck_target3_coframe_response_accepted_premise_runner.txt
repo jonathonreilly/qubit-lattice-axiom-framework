@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/planck_target3_coframe_response_accepted_premise_runner.py
-runner_sha256: 14b78a34cf0a5b5b0ba2f28308f82e82e3c18b986fc1276f94b7e25c45c5352e
+runner_sha256: 584084249713928ddfaabaf3fa96f6f6106b9ac45d1eb6a23ac819186b4c2188
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 PLANCK TARGET-3 COFRAME-RESPONSE ACCEPTED-PREMISE BRIDGE
@@ -20,6 +20,9 @@ PASS: source contains required phrase: CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM
 PASS: source contains required phrase: bounded_theorem
 PASS: source contains required phrase: Status authority
 PASS: source contains required phrase: independent audit lane only
+PASS: source contains required phrase: Pauli-realized compatible Hermitian
+PASS: source contains required phrase: claim that every similarity-equivalent Clifford representation
+PASS: source contains required phrase: nonunitary-similarity boundary check
 PASS: source note excludes forbidden phrase: PDG load-bearing value
 PASS: source note excludes forbidden phrase: load-bearing fitted
 PASS: source note excludes forbidden phrase: Monte Carlo measurement consumed
@@ -64,14 +67,24 @@ PASS: (B3b) dim_C Cl(4, C) = 2^4 = 16 (Wedderburn)
 PASS: (B3b) dim_C V_irrep = 2^{d/2} = 4 at d = 4 (Schur on simple summand)
 PASS: (B3) volume element omega = Gamma_t Gamma_n Gamma_1 Gamma_2 is well-defined; omega^2 in {I, -I}
 
-== Part 4: (B4) oriented CAR modes ==
-PASS: (B4) anticommutator of c_i and c_j vanishes for cN cN
-PASS: (B4) anticommutator of c_i and c_j vanishes for cT cT
-PASS: (B4) anticommutator of c_i and c_j vanishes for cN cT
-PASS: (B4) anticommutator {'cN cN^dag'} = I
-PASS: (B4) anticommutator {'cT cT^dag'} = I
-PASS: (B4) anticommutator {'cN cT^dag'} = 0
-PASS: (B4) anticommutator {'cT cN^dag'} = 0
+== Part 4: (B4') oriented CAR modes in Pauli-realized inner product ==
+PASS: (B4') anticommutator of c_i and c_j vanishes for cN cN
+PASS: (B4') anticommutator of c_i and c_j vanishes for cT cT
+PASS: (B4') anticommutator of c_i and c_j vanishes for cN cT
+PASS: (B4') anticommutator cN cN^dag = I
+PASS: (B4') anticommutator cT cT^dag = I
+PASS: (B4') anticommutator cN cT^dag = 0
+PASS: (B4') anticommutator cT cN^dag = 0
+
+== Part 4b: fixed-inner-product similarity boundary ==
+PASS: (boundary) nonunitary similarity preserves Gamma_0^2 = I
+PASS: (boundary) nonunitary similarity preserves Gamma_1^2 = I
+PASS: (boundary) nonunitary similarity preserves Gamma_2^2 = I
+PASS: (boundary) nonunitary similarity preserves Gamma_3^2 = I
+PASS: (boundary) nonunitary similarity preserves one off-diagonal Clifford anticommutator
+PASS: (boundary) no-dagger CAR nilpotence survives similarity for c_N
+PASS: (boundary) no-dagger CAR cross anticommutator survives similarity
+PASS: (boundary) fixed standard daggered CAR is not similarity-invariant ({c_N,c_N^dag}-I has rank 2)
 
 == Part 5: dependency status check ==
 PASS: CL3_COMPLEXIFICATION_SPLIT note file exists (docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -86,8 +99,8 @@ PASS: source note excludes literature comparator: Planck length l_P_obs imported
 PASS: source note excludes literature comparator: Bekenstein-Hawking entropy observed import
 PASS: source note excludes literature comparator: Wilson plaquette load-bearing input
 
-TOTAL: PASS=64 FAIL=0
-VERDICT: bounded accepted-premise bridge passes; (B1)-(B4) follow from the retained Cl(3) complexification split + accepted-premise packet (P1) by polarization and finite-dim sympy linear algebra.
+TOTAL: PASS=75 FAIL=0
+VERDICT: bounded accepted-premise bridge passes; (B1)-(B4') follow from the retained Cl(3) complexification split + accepted-premise packet (P1) by polarization and finite-dim sympy linear algebra.
 
 ----- stderr -----
 

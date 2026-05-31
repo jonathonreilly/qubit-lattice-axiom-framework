@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 634 |
+| **retained_bounded** | 635 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1154 |
+| unaudited | 1153 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 975 |
+| `audited_clean` | 976 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1392 |
+| `unaudited` | 1391 |
 
 | claim_type | count |
 |---|---:|
@@ -775,6 +775,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `planck_finite_response_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_parent_source_hidden_character_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `plaquette_4d_mc_support_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11318,6 +11319,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The supplied coframe relation Gamma_a^2=I and {Gamma_a,Gamma_b}=0 for a != b gives {Gamma_a,Gamma_b}=2 delta_ab I, and the oriented pairs c=(Gamma_i+i Gamma_j)/2 with formal Clifford conjugates satisfy the two-mode CAR relations.  _(class `A`)_
 - **chain closes:** True — Independent fresh-context check: polarization of linear D(v)^2=q(v)I gives the Clifford anticommutator; complex Cl_4(C) is M_4(C), so a nonzero four-dimensional representation is irreducible; direct expansion gives {c_i,c_j}=0 and {c_i,c_j#}=delta_ij I; (Gamma_t Gamma_n)^2=-I gives 2pi -> -I and 4pi -> I; 4/16=1/4.
 - **rationale:** The bounded finite-algebra statement closes under the explicit supplied coframe-response premise. The fresh-context audit independently checked the polarization, Cl_4(C) representation, formal-# CAR anticommutators, spin phase, and trace arithmetic rather than relying only on runner PASS output. All broader physical conclusions remain outside scope.
+- **auditor confidence:** high
+
+### `planck_target3_coframe_response_accepted_premise_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PLANCK_TARGET3_COFRAME_RESPONSE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-dimensional algebra: assuming the registered metric-compatible coframe response P1 on a rank-4 complex block, the note proves the Clifford relations, End(K) word span/irreducibility, and existence of a compatible Pauli-Hermitian two-mode CAR realization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-164205-26782725-planck_target3_coframe_r`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the accepted premise D(v)^2 = ||v||^2 I_K for all v in E_C, polarization gives D(u)D(v) + D(v)D(u) = 2<u,v>I_K, hence the four basis responses obey the Cl_4(C) relations.  _(class `A`)_
+- **chain closes:** True — Interpreting ||v||^2 as the complex-bilinear Clifford quadratic form, P1 polarizes to the anticommutator relations; standard Cl_4(C) representation theory and dim End(K)=16 then give the rank-4 irreducible/span statement, and the Pauli Hermitian model gives the CAR identities. The derivation does not derive P1, but the audited claim is explicitly bounded to P1.
+- **rationale:** The load-bearing step is an algebraic closure from the accepted premise P1 plus retained/standard finite-dimensional Clifford representation theory, not an external comparator or fitted numerical match. The runner source genuinely constructs exact 4x4 Pauli Clifford generators and checks the anticommutators, Clifford-word Gram rank, CAR identities, and nonunitary-similarity boundary. The open derivation of P1 is explicitly outside the bounded claim scope, so it does not prevent clean audit of the conditional bridge.
 - **auditor confidence:** high
 
 ### `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`

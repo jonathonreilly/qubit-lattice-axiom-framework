@@ -56,18 +56,23 @@ THE PROOF (route R1 -- explicit transfer matrix, decisive)
      construction is faithful to the staggered action, not an artifact.
 
 (P2) SINGLE-STEP NON-POSITIVITY. spec(T_even(p)), spec(T_odd(p)) are GENUINELY
-     COMPLEX (off the positive real axis) for p != 0. Hence the single-step
-     transfer operator T_hat is NOT a positive operator -- consistent with the
-     single-step Lagrangian no-go runner (min eig -0.80).
+     COMPLEX (off the positive real axis) for sin(p) != 0. The sin(p)=0
+     sectors (p=0, and p=pi on even lattices) are real-axis exceptions. The
+     nonzero-sine sectors already prevent the single-step transfer object T_hat
+     from being positive -- consistent with the single-step Lagrangian no-go
+     runner (min eig -0.80).
 
 (P3) MANY-BODY 2-STEP POSITIVITY. For a free (quadratic) fermion theory the
      many-body transfer operator is the second quantization Gamma(t1) of the
      single-particle transfer kernel t1 (Luscher 1977; Creutz 1977;
      Montvay-Munster Sec.4; the underlying functor is Shale-Stinespring /
      Berezin -- standard free-fermion fact, used here as a functorial relation,
-     not as a positivity citation). For the DIAGONAL free kernel here the
+     not as a positivity citation). The Fock-space kernel is the stable decaying
+     spectral channel of the action-derived T_odd T_even monodromy, not the raw
+     non-Hermitian classical monodromy. For the DIAGONAL free kernel here the
      functor is elementary finite-dimensional linear algebra and is built and
-     verified IN-REPO from its defining creation-operator intertwiner
+     verified IN-REPO from the spectral projector and the defining
+     creation-operator intertwiner
      Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K) (see C5 below), so the relation
      Gamma(t1) = B^dag B is derived/checked, NOT asserted. The single-particle
      2-step kernel is the action-derived decaying eigenvalue
@@ -121,15 +126,17 @@ SCORECARD
 PASS overall requires (in the free case):
   C1 dispersion anchor   : 2-step decaying eigenvalue == e^{-2E(p)} over the BZ
                            (max residual < 1e-9)
-  C2 single-step non-PSD : max |Im eig(T_even)| > 1e-3 (T_hat not positive)
+  C2 single-step non-PSD : max |Im eig(T_even)| > 1e-3 on sin(p)!=0 sectors
+                           (sin(p)=0 real-axis exceptions disclosed)
   C3 2-step positivity   : T_hat^2 positive Hermitian (min eig > 0) for several
                            L_s, with exact B^dag B reconstruction
   C4 R2 OS Gram PSD      : operator-picture 2-step OS Gram is Hermitian and PSD
                            (min eig >= -1e-10) where single-step was -0.80
-  C5 functor identity    : Gamma(t1^(2)) built from its defining creation-operator
-                           intertwiner equals exp(-2 a_tau H_hat) (||.|| < 1e-10)
-                           -- the free-fermion functor Gamma = B^dag B verified
-                           in-repo, not asserted
+  C5 decaying/functor    : stable spectral projector of T_odd T_even, then
+                           Gamma(t1^(2)) built from its defining
+                           creation-operator intertwiner equals exp(-2 a_tau
+                           H_hat) (||.|| < 1e-10) -- the decaying-channel/Fock
+                           bridge is verified in-repo, not asserted
 This runner verifies dependency-class/structure (the gauge reduction names the
 two retained deps) and the free-case numerics; independent audit owns any
 status verdict.
@@ -199,18 +206,25 @@ def check_dispersion_anchor(m: float, n_bz: int = 16):
 
 def check_single_step_nonpositive(m: float, n_bz: int = 16):
     """C2: single-step T_even/T_odd have genuinely complex spectra (=> T_hat
-    not a positive operator)."""
+    not a positive operator) on the sin(p) != 0 sectors."""
     worst_imag = 0.0
     examples = []
+    real_exceptions = []
+    scanned_nonzero_sine = 0
     for k in range(1, n_bz):  # skip p=0 (degenerate)
         p = 2.0 * math.pi * k / n_bz
+        if abs(math.sin(p)) < 1e-12:
+            ev = np.linalg.eigvals(classical_step(p, m, 0))
+            real_exceptions.append((p, float(np.max(np.abs(ev.imag)))))
+            continue
+        scanned_nonzero_sine += 1
         for parity in (0, 1):
             ev = np.linalg.eigvals(classical_step(p, m, parity))
             mi = float(np.max(np.abs(ev.imag)))
             worst_imag = max(worst_imag, mi)
             if len(examples) < 3 and parity == 0:
                 examples.append((p, ev))
-    return worst_imag, examples
+    return worst_imag, examples, real_exceptions, scanned_nonzero_sine
 
 
 def build_manybody_T2(Ls: int, m: float):
@@ -250,7 +264,8 @@ def spectral_decaying_projection(p: float, m: float) -> dict[str, float]:
     e^{+2E}. The positive-time transfer kernel is the decaying spectral
     projector channel, not an extra convention. This finite 2x2 calculation is
     the missing bridge between the classical recurrence and the one-particle
-    kernel used on Fock space.
+    kernel used on Fock space. The full 2x2 classical monodromy is not itself
+    the diagonal positive Fock kernel; the stable spectral channel is.
     """
     t2 = classical_2step(p, m)
     ev = np.linalg.eigvals(t2)
@@ -324,8 +339,8 @@ def check_decaying_gamma_bridge(Ls: int, m: float) -> dict[str, float]:
 
 
 # ---------------------------------------------------------------------------
-# C5: second-quantization functor identity Gamma(t1) = exp(-2 a_tau H_hat),
-#     verified IN-REPO from the functor's defining creation-operator intertwiner
+# C5: decaying spectral channel plus Gamma(t1) = exp(-2 a_tau H_hat),
+#     verified IN-REPO from projectors and the creation-operator intertwiner
 # ---------------------------------------------------------------------------
 
 def check_second_quantization_functor(Ls: int, m: float):
@@ -499,12 +514,18 @@ def main() -> int:
     print("C2  SINGLE-STEP NON-POSITIVITY: spec(T_even), spec(T_odd) genuinely complex")
     print("    => single-step T_hat NOT a positive operator (consistent with the no-go)")
     print("-" * 78)
-    worst_imag, examples = check_single_step_nonpositive(MASS)
+    worst_imag, examples, real_exceptions, scanned_nonzero_sine = check_single_step_nonpositive(MASS)
     for p, ev in examples:
         print(f"    p={p:6.3f}: eig(T_even) = "
               f"[{ev[0].real:+.4f}{ev[0].imag:+.4f}j, {ev[1].real:+.4f}{ev[1].imag:+.4f}j]")
-    print(f"    max |Im eig(T_even/T_odd)| over p!=0 = {worst_imag:.4f}  (must exceed 1e-3)")
-    c2 = worst_imag > 1e-3
+    if real_exceptions:
+        formatted = ", ".join(f"p={p:.3f} max|Im|={im:.1e}" for p, im in real_exceptions)
+        print(f"    disclosed sin(p)=0 real-axis exceptions: {formatted}")
+    print(
+        f"    max |Im eig(T_even/T_odd)| over {scanned_nonzero_sine} nonzero-sine sectors = "
+        f"{worst_imag:.4f}  (must exceed 1e-3)"
+    )
+    c2 = scanned_nonzero_sine > 0 and worst_imag > 1e-3
     print(f"    C2 = {'PASS' if c2 else 'FAIL'}")
     passes += int(c2)
     fails += int(not c2)
@@ -547,27 +568,50 @@ def main() -> int:
     fails += int(not c4)
     print()
 
-    # ---- C5: second-quantization functor identity (in-repo, not asserted) ----
+    # ---- C5: decaying channel + second-quantization functor (in-repo) ----
     print("-" * 78)
-    print("C5  SECOND-QUANTIZATION FUNCTOR (in-repo): Gamma(t1^(2)) from its defining")
-    print("    intertwiner Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K), == exp(-2 a_tau H_hat)")
-    print("    => the free-fermion functor relation Gamma = B^dag B verified, not asserted")
+    print("C5  DECAYING CHANNEL + SECOND-QUANTIZATION FUNCTOR (in-repo)")
+    print("    stable spectral projector of T_odd T_even, then Gamma(t1^(2)) from")
+    print("    Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K), == exp(-2 a_tau H_hat)")
+    print("    => the decaying-channel/Fock bridge is verified, not asserted")
     print("    (Luscher/Creutz; Shale-Stinespring/Berezin)")
     print("-" * 78)
     c5 = True
     for Ls in (2, 3, 4, 6):
+        bridge = check_decaying_gamma_bridge(Ls, MASS)
+        bridge_ok = (
+            bridge["max_dec_imag"] < 1e-12
+            and bridge["max_grow_imag"] < 1e-12
+            and bridge["max_projector_idem"] < 1e-12
+            and bridge["max_projector_resid"] < 1e-12
+            and bridge["max_projector_split"] < 1e-12
+            and bridge["max_projector_orth"] < 1e-12
+            and bridge["gamma_tensor_err"] < 1e-12
+            and bridge["gamma_intertwiner_err"] < 1e-12
+            and bridge["gamma_min_eig"] > 0.0
+            and bridge["gamma_bdagb_err"] < 1e-12
+        )
         r = check_second_quantization_functor(Ls, MASS)
-        ok = (
+        functor_ok = (
             r["functor_err"] < 1e-10
             and r["intertwiner_err"] < 1e-12
             and r["vac_fix_err"] < 1e-12
             and r["H_offdiag"] < 1e-12
         )
+        ok = bridge_ok and functor_ok
         c5 = c5 and ok
-        print(f"    L_s={Ls} dim={r['dim']:3d}: intertwiner err={r['intertwiner_err']:.1e}  "
-              f"vac-fix err={r['vac_fix_err']:.1e}  H off-diag={r['H_offdiag']:.1e}  "
-              f"||Gamma - exp(-2 a_tau H_hat)||={r['functor_err']:.1e}")
-    print(f"    C5 = {'PASS' if c5 else 'FAIL'}  (functor relation Gamma=B^dag B verified in-repo)")
+        print(
+            f"    L_s={Ls} dim={r['dim']:3d}: proj idem={bridge['max_projector_idem']:.1e}  "
+            f"proj resid={bridge['max_projector_resid']:.1e}  split={bridge['max_projector_split']:.1e}  "
+            f"orth={bridge['max_projector_orth']:.1e}"
+        )
+        print(
+            f"      Gamma wedge/tensor err={bridge['gamma_tensor_err']:.1e}  "
+            f"Gamma BdagB err={bridge['gamma_bdagb_err']:.1e}  "
+            f"intertwiner err={r['intertwiner_err']:.1e}  "
+            f"||Gamma - exp(-2 a_tau H_hat)||={r['functor_err']:.1e}"
+        )
+    print(f"    C5 = {'PASS' if c5 else 'FAIL'}  (decaying-channel/Fock bridge verified in-repo)")
     passes += int(c5)
     fails += int(not c5)
     print()
@@ -592,11 +636,11 @@ def main() -> int:
     print("=" * 78)
     print(f"  C1 dispersion anchor   : {'PASS' if (max_res<TOL_DISP and max_imag<TOL_DISP) else 'FAIL'}"
           f"  (max residual {max_res:.2e})")
-    print(f"  C2 single-step non-PSD : {'PASS' if worst_imag>1e-3 else 'FAIL'}"
-          f"  (max |Im eig| {worst_imag:.3f})")
+    print(f"  C2 single-step non-PSD : {'PASS' if c2 else 'FAIL'}"
+          f"  (max |Im eig| {worst_imag:.3f} on nonzero-sine sectors)")
     print(f"  C3 2-step positivity   : {'PASS' if c3 else 'FAIL'}  (T_hat^2 positive Hermitian = B^dag B)")
     print(f"  C4 R2 OS Gram PSD      : {'PASS' if c4 else 'FAIL'}  (2-step OS Gram Hermitian PSD)")
-    print(f"  C5 functor identity    : {'PASS' if c5 else 'FAIL'}  (Gamma=B^dag B verified in-repo)")
+    print(f"  C5 decaying/functor    : {'PASS' if c5 else 'FAIL'}  (spectral channel and Gamma bridge verified)")
     print()
     all_ok = (fails == 0)
     print(f"PASS={passes} FAIL={fails}")

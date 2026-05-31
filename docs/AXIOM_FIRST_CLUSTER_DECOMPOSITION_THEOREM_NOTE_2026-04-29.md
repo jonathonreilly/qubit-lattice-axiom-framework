@@ -3,12 +3,16 @@
 **Date:** 2026-04-29 (originally); 2026-05-09 (mass-gap bridge repair);
 2026-05-18 (claim_type narrow to bounded_theorem matching the honest
 post-bridge L1/L3/L4 + conditional-L2 scope per audit verdict
-boundary instruction).
+boundary instruction); 2026-05-30 (remove the overstated
+commutator-to-static-correlator identity; add an explicit no-gap
+static connected-correlator counterexample and restate L2 as
+gap-conditioned support only).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing claims of
 this note are **L1 (Lieb-Robinson commutator bound)**, **L3 (lattice
-light cone)**, and **L4 (Cl(3)-specific constant bound on `J`)** as
-closed-form support theorems on `A_min`, plus **L2 only in its
+light cone)**, and **L4 (finite local Cl(3)-operator norm bound on a
+declared local-term parameter `J`)** as closed-form support theorems
+for explicitly finite-range Hamiltonians on `A_min`, plus **L2 only in its
 conditional form** — exponential clustering on the canonical thermal
 state holds **conditional on a transfer-matrix spectral gap
 `Δ_T > 0`** as supplied by the bridge note
@@ -180,16 +184,19 @@ site `x` and `B` at site `y`, with `d(x,y) > v_LR |t|`:
 
 with `ξ` an `O(R_int)` length scale fixed by the lattice geometry.
 
-**(L2) Cluster decomposition / exponential clustering.** For any two
-local Cl(3) operators `A_x, B_y` and the canonical thermal state
-`ρ = Z⁻¹ exp(-βH)` at any inverse temperature `β`,
+**(L2) Cluster decomposition / exponential clustering.** Conditional
+on a retained transfer-matrix spectral gap `Δ_T > 0` and a retained
+spatial gap/transfer bridge for the canonical Cl(3) `Z^3`
+staggered+Wilson Hamiltonian, two local Cl(3) operators `A_x, B_y`
+obey a connected-correlator envelope of the form
 
 ```text
     | ⟨ A_x B_y ⟩_ρ - ⟨A_x⟩_ρ ⟨B_y⟩_ρ |   ≤   C · ‖A_x‖ · ‖B_y‖ · exp(-d(x,y) / ξ_β) (3)
 ```
 
-with `ξ_β = max(ξ, 1/β·m_gap)` and `C` a constant independent of
-`A_x, B_y, x, y` (only depending on `J, R_int, Z_lat, β`).
+with constants determined by the retained gap/transfer bridge. This
+note does **not** prove (3) for arbitrary canonical thermal states from
+L1 alone.
 
 **(L3) Lattice light cone.** The information theoretic lattice
 "light cone" is the region `d(x,y) ≤ v_LR |t|`. Outside it, two
@@ -257,26 +264,29 @@ expanding around `n = d(x,y) / R_int` gives the Lieb–Robinson bound
 with `v_LR = 2 e J Z_lat R_int` and `ξ = R_int`. This is (L1) with
 the constants in (1).
 
-### Step 4 — Cluster decomposition (L2)
+### Step 4 — Why L1 does not by itself prove L2
 
-For any thermal expectation with finite `β`:
+The old draft used an overcompressed commutator-to-static-correlator
+identity to suggest that the LR commutator envelope directly bounds
+thermal connected correlators. That identity is not valid in this
+generality. The obstruction is already visible on a one-site finite
+system with `H = 0`, `rho = I/2`, and `A = B = sigma_z`:
 
 ```text
-    ⟨A_x B_y⟩_ρ - ⟨A_x⟩_ρ ⟨B_y⟩_ρ
-        =  -∫_0^β  dτ  ⟨ [A_x , B_y(iτ)] ⟩_ρ                            (8)
+    <AB>_rho - <A>_rho <B>_rho = 1,
+    [A, B(i tau)] = 0 for all tau.
 ```
 
-(Kubo identity for connected correlators in imaginary time). The
-Heisenberg-evolved operator `B_y(iτ)` is the analytic continuation
-of `B_y(t)` to imaginary time; the LR series of step 1 converges in
-a strip of imaginary time `|Im t| < 1/v_LR`, so for `β > 0` we can
-bound (8) by the LR bound (7) applied in the imaginary-time
-direction. Standard Hastings–Koma manipulation yields (3) with
-`ξ_β = max(R_int, 1/(β · m_gap))`. (For zero temperature in a gapped
-phase, `ξ_β` is determined by the spectral gap; for ungapped systems
-the cluster decay can be polynomial. The `A_min` package's gauge
-sector is gapped — `SU(3)` confinement — so `m_gap > 0` is the
-generic case here.)
+So an integral of the commutator vanishes while the static connected
+correlator is nonzero. LR bounds control real-time commutator leakage;
+they do not, alone, imply static connected-correlator clustering.
+
+The in-scope L2 statement therefore routes through the separate
+gap/transfer bridge: a retained `Delta_T > 0` transfer gap plus a
+retained temporal/spatial transfer decomposition can imply an
+exponential connected-correlator envelope. The runner now includes the
+`H=0`, `A=B` counterexample as a positive guardrail: passing the guard
+means the source no longer treats LR alone as a proof of L2.
 
 ### Step 5 — Lattice light cone (L3)
 
@@ -314,16 +324,17 @@ finite-lattice manipulations.
 
 ## Corollaries (downstream tools)
 
-C1. *Mass-gap exponential decay.* In any gapped phase on `A_min`
-(such as the canonical SU(3) confining phase at `g_bare = 1`),
-zero-temperature ground-state correlators decay exponentially
-in spatial separation, with decay length bounded by `1 / m_gap`.
+C1. *Mass-gap exponential decay.* Given a retained transfer/spatial
+gap theorem on the canonical `A_min` Hamiltonian, zero-temperature
+ground-state connected correlators may be bounded by an exponential
+envelope with decay length controlled by the gap. This note records
+that conditional shape; it does not prove the canonical gap.
 
 C2. *Confinement-area-law lane.* The connected Wilson-loop /
-plaquette correlators decay exponentially at spacelike separation,
-which is the structural assumption underlying the `T = 0`
-confinement / `√σ ≈ 465 MeV` row of
-`docs/ASSUMPTION_DERIVATION_LEDGER.md`.
+plaquette correlator decay used by confinement lanes remains a
+separate gap/confinement authority. This row can supply LR/light-cone
+support and the conditional gap-to-clustering shape, not an
+unconditional confinement-area-law proof.
 
 C3. *Microcausality on `A_min`.* The lattice light-cone (L3) is the
 substrate analogue of relativistic microcausality. Continuum
@@ -350,15 +361,20 @@ condition + clustering" sentence in the package.
 - **(L3) Lattice light cone.** Direct contrapositive of (L1).
   **Closed-form support, pending independent audit.**
 - **(L4) Cl(3)-specific constant.** Bound on `J` by spectral radius
-  of finite-dim Cl(3) Hermitian elements. **Closed-form
-  support, pending independent audit.**
+  of finite-dim Cl(3) Hermitian elements once the Hamiltonian is
+  written as finite-range local terms with declared finite coefficient
+  bound `J`. This is not a derivation of a universal numerical `J` for
+  every canonical interaction surface. **Closed-form support, pending
+  independent audit.**
 - **(L2) Exponential clustering.** Conditional on a transfer-matrix
   spectral gap `Δ_T > 0`, supplied by the bridge note
   [`CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md).
   The bridge is a closed finite-block temporal spectral lemma; the gap
-  input is still open. **The unconditional L2 form ("for any canonical
-  thermal state") is not proved, and the spatial clustering step is not
-  closed by the bridge alone.**
+  input is still open. The local runner also exhibits a no-gap
+  `H=0`, `A=B` counterexample, so LR alone is explicitly not treated as
+  a proof of static clustering. **The unconditional L2 form ("for any
+  canonical thermal state") is not proved, and the spatial clustering
+  step is not closed by the bridge alone.**
 
 **What this rules out.**
 

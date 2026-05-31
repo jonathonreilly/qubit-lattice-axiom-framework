@@ -21,9 +21,15 @@ combinatorial Lieb–Robinson structure):
             ‖[A_x(t), B_y]‖ ≤ 2 ‖A‖‖B‖ exp(-(d(x,y) - v_LR |t|)/ξ).
        Verified by measuring the operator norm at a grid of (d, t).
 
-  E2.  Connected two-point clustering at zero temperature:
+  E0.  No-gap static connected-correlator guardrail:
+       H=0, A=B demonstrates that a static connected correlator need not
+       equal an imaginary-time commutator integral. LR alone is not a
+       proof of L2.
+
+  E2.  Model connected two-point clustering at zero temperature:
        |⟨A_x B_y⟩_0 - ⟨A_x⟩_0⟨B_y⟩_0| decays exponentially in
-       d(x,y) for a gapped free-fermion ground state.
+       d(x,y) for a gapped free-fermion ground state. This is a proxy
+       exhibit, not a proof for arbitrary canonical thermal states.
 
   E3.  Lattice light cone: for d(x,y) > v_LR · |t|, the operator-
        norm commutator is below a small tolerance.
@@ -89,6 +95,28 @@ def commutator_norm_lattice_op(x, y, h, t, op_at_x="ann", op_at_y="cre"):
     """
     U = expm(-1j * h * t)
     return float(2 * abs(U[x, y]))
+
+
+# ---------------------------------------------------------------------------
+# Exhibit E0: no-gap static connected-correlator counterexample
+# ---------------------------------------------------------------------------
+
+def exhibit_no_gap_static_counterexample():
+    print("\n--- Exhibit E0: no-gap static connected-correlator guardrail ---")
+    a = np.array([[1.0, 0.0], [0.0, -1.0]], dtype=complex)
+    b = a.copy()
+    rho = np.eye(2, dtype=complex) / 2.0
+
+    connected = np.trace(rho @ a @ b) - np.trace(rho @ a) * np.trace(rho @ b)
+    # With H=0, B(i tau)=B. Since A=B, the commutator is identically zero.
+    commutator_integral = np.trace(rho @ (a @ b - b @ a))
+
+    print("  H=0, rho=I/2, A=B=sigma_z")
+    print(f"  static connected correlator = {connected.real:+.6e}")
+    print(f"  commutator integral proxy   = {commutator_integral.real:+.6e}")
+    pass_check = abs(connected.real - 1.0) < 1e-12 and abs(commutator_integral) < 1e-12
+    print(f"  E0 verdict: {'PASS' if pass_check else 'FAIL'}")
+    return pass_check
 
 
 # ---------------------------------------------------------------------------
@@ -264,14 +292,16 @@ def main():
     print("=" * 72)
     print(" axiom_first_cluster_decomposition_check.py")
     print(" Loop: axiom-first-foundations, Cycle 3 / Route R3")
-    print(" Exhibits Lieb–Robinson envelope and exponential clustering")
-    print(" on a free-fermion 1D lattice as representative of A_min.")
+    print(" Exhibits the Lieb–Robinson envelope, a no-gap L2 guardrail,")
+    print(" and a gapped free-fermion clustering proxy on a 1D lattice.")
     print("=" * 72)
 
+    e0_pass = exhibit_no_gap_static_counterexample()
     e1_pass, e3_pass, e4_pass, v_LR_pred = exhibit_LR_envelope(L=24)
     e2_pass = exhibit_E2_clustering(L=24)
 
-    results = {"E1 (LR envelope)": e1_pass,
+    results = {"E0 (no-gap static counterexample)": e0_pass,
+               "E1 (LR envelope)": e1_pass,
                "E2 (clustering)": e2_pass,
                "E3 (lattice light cone)": e3_pass,
                "E4 (front velocity)": e4_pass}
@@ -287,7 +317,7 @@ def main():
     print(f"   v_LR (predicted from LR-1972 constants) = {v_LR_pred:.3f}")
     print()
     if n_pass == n_total:
-        print(" verdict: cluster decomposition / LR (L1)–(L4) exhibited.")
+        print(" verdict: LR/light-cone support exhibited; L2 remains gap-conditioned.")
         return 0
     else:
         print(" verdict: at least one structural exhibit failed.")

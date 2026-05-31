@@ -283906,24 +283906,46 @@
       "verdict_rationale": "For the narrowed load-bearing claim, the chain closes as a bounded finite computation: the code does not merely print constants, and the cached run reports the advertised 81-plaquette geometry, seven character-normalization checks, nonsignificant nontrivial MC means, and P_cube=0.1075862340. The cited authorities are retained-grade, and the claim does not rely on them for an unclosed bridge promotion. The hard-coded bridge target and epsilon values are used only for comparator context, not to derive the audited finite Haar-MC negative result. The quantitative sample-complexity story remains non-binding and is not part of this clean verdict."
     },
     "su3_wigner_l3_treewidth_infeasible_2026-05-04": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T14:16:00.359411+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "Block 4 L_s=3 PBC cube partition-function staging only: Bessel-determinant coefficients, trivial-sector partition identity, rank-8 four-fold Haar singlet basis, stated plaquette-tensor encoding, and storage/intermediate-size scope arithmetic; no L_s=2 orientation diagnostics, bridge-gap claim, or full 81-link contraction.",
+          "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04": "Audited the finite runner-verified N_samples=5000 naive-Haar Monte Carlo negative result for the L_s=3 PBC cube, including 81-link/81-plaquette geometry, character normalization checks, non-significant nontrivial integrand averages, and the resulting noise-dominated source-sector Perron value; excluded the note's explicitly non-binding sample-complexity and signal-size interpretation."
+        },
+        "dep_claim_type": {
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "bounded_theorem",
+          "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": "retained_bounded",
+          "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04": "retained_bounded"
+        },
+        "deps": [
+          "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
+          "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "0168b60a598724753bf885d35266114cce7ed9194b4f8092e2a577bec71529c6",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-141227-48e02440-su3_wigner_l3_treewidth_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner-supported heuristic treewidth diagnostic itself closes from the supplied source and cache. The source note as written does not pass the strict quantitative inventory because the displayed truncation threshold `(4 \u00d7 10^9 / 16)^(1/30) \u2248 1.8` should be about 1.91, with associated GB/GiB labels needing consistency.",
       "claim_id": "su3_wigner_l3_treewidth_infeasible_2026-05-04",
-      "claim_scope": null,
+      "claim_scope": "Audited the finite L_s=3 PBC link-adjacency graph construction, its 81-node/324-edge/8-regular counts, and the two implemented min-degree/min-fill heuristic upper bounds; this does not audit a global treewidth lower bound or all possible contraction optimizers.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T14:16:00.359411+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -283932,19 +283954,19 @@
         "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner builds the L_s=3 PBC cube link adjacency graph and both min-degree and min-fill eliminations return max clique size 30, i.e. treewidth upper bound 29, giving a naive 8^30 intermediate far above the 4 GB budget.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "38852c309b7ba446205c277acb69e4b69ba616fa4f3212a5592806606b542c14",
       "note_path": "docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "other: repair the Section 2 truncation threshold to about 1.91 and make GB/GiB unit labels consistent, then re-audit the bounded min-degree/min-fill diagnostic.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -284003,18 +284025,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 1,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 2
       },
       "runner_path": "scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py",
       "title": "SU(3) L_s=3 Cube Exact TN: Min-Degree/Min-Fill Treewidth Diagnostic",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source genuinely constructs the L_s=3 geometry and link adjacency graph, then computes min-degree and min-fill eliminations rather than merely printing the contested value; an independent recomputation matches 81 nodes, 324 edges, degree 8, and max clique size 30 for both heuristics. The cited authorities in the packet are retained_bounded, and the negative rhetoric is mostly scoped to the two tested heuristics rather than an absolute no-go. However, the binding formula-inventory pass blocks audited_clean because the source note's displayed truncation-dimension arithmetic is numerically off as written, even though the qualitative integer conclusion remains unchanged."
     },
     "su3_wilson_closed_form_fanout_theorem_note_2026-05-04": {
       "audit_date": "2026-05-27T03:04:55.534726+00:00",

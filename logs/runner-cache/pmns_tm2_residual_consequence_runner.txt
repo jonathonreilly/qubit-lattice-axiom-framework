@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/pmns_tm2_residual_consequence_runner.py
-runner_sha256: 2337f4d05c57d6fc03bca7a785f7c5e1256be88bf99f233f042b3f8e5e3009cc
+runner_sha256: 8d991dc9b9aeab0e99b4cbf636f5600c71ea9977d405738ef7920667760d7f0c
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -21,11 +21,18 @@ PMNS TM2 RESIDUAL CONSEQUENCE -- BOUNDED ALGEBRA CHECK
   [PASS] phase-independent part equals 2/3 for sin^2(theta_13)=1/100
   [PASS] phase-independent part equals 2/3 for sin^2(theta_13)=223/10000
   [PASS] phase-independent part equals 2/3 for sin^2(theta_13)=1/20
+  [PASS] phase divisor is nonzero for sin^2(theta_13)=1/100
+  [PASS] phase divisor is nonzero for sin^2(theta_13)=223/10000
+  [PASS] phase divisor is nonzero for sin^2(theta_13)=1/20
   [PASS] cos(delta_CP)=0 follows for sin^2(theta_13)=0.01  (cos(delta_CP)=0.000e+00)
   [PASS] cos(delta_CP)=0 follows for sin^2(theta_13)=0.0223  (cos(delta_CP)=7.842e-16)
   [PASS] cos(delta_CP)=0 follows for sin^2(theta_13)=0.05  (cos(delta_CP)=5.202e-16)
+  [PASS] endpoint sin^2(theta_13)=2/3 has c12=0 under TM2
+  [PASS] endpoint phase equation does not force cos(delta_CP)=-1
+  [PASS] endpoint phase equation does not force cos(delta_CP)=0
+  [PASS] endpoint phase equation does not force cos(delta_CP)=1
 ========================================================================
-TOTAL: PASS=15 FAIL=0
+TOTAL: PASS=22 FAIL=0
 VERDICT: conditional TM2 algebraic consequence holds.
 
 ----- stderr -----

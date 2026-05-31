@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py
+runner_sha256: 7a4f530f4d5a22bc2ec9aa569bccceadb800d14d0521362195d2e3b220e5b960
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+
+========================================================================================
+Koide r=1/2 is a CONDITIONAL (equal-block metric + objectivity-max), not forced
+========================================================================================
+
+========================================================================================
+F1 — general 2-block capacity extremum r* = w_p/(2 w_s) (weight, not pointer)
+========================================================================================
+[PASS] F1.1 r* = w_p/(2 w_s) (continuous in the weight ratio; pointer fixes #terms=2, not the weight)
+       r* = w_p/(2*w_s)
+[PASS] F1.2 equal-weight (1,1) -> r=1/2 -> Q=2/3; dimension (1,2) -> r=1 -> Q=1 (BOTH are 2-term functionals)
+       r*(1,1)=1/2, r*(1,2)=1
+[PASS] F1.3 on the Hermitian H the doublet is TWO DISTINCT real masses (no conjugate pair to 'fuse' to one channel)
+       eig(H) = [0.167 1.033 1.8  ] (3 distinct reals)
+
+========================================================================================
+F2 — CONDITIONAL: (1,1) metric + objectivity-max -> r=1/2 -> Q=2/3 (output)
+========================================================================================
+[PASS] F2.1 max of log E_+ + log E_perp at r=1/2 (strict: d^2/dr^2 < 0)
+       dS/dr=0 at r=[1/2]; d2S/dr2(1/2) = -2
+[PASS] F2.2 binary objectivity H_2(p_+) also peaks at r=1/2 (= log 2 = 1 bit)
+       H_2(r=1/2) = 0.69315 = log2 = 0.69315
+[PASS] F2.3 Q = 2/3 at r=1/2 (the OUTPUT, never an input)
+       Q(r=1/2) = 0.666667
+
+========================================================================================
+F3 — non-circularity witness: the (1,2) counterfactual peaks at r=1 (different)
+========================================================================================
+[PASS] F3.1 dimension-weighted (1,2) capacity peaks at r=1 (Q=1), a DIFFERENT point -> r=1/2 is genuinely SELECTED by (1,1)+objectivity-max, not baked in
+       (1,2) capacity max at r=[1] (-> Q=1)
+
+========================================================================================
+F4 — native records RELAXATION -> max-mixed I/3 = trace = per-dim -> Q=1
+========================================================================================
+[PASS] F4.1 dephasing fixed point = maximally-mixed I/3 (trace, per-dimension) -> the native dynamics selects the Q=1 / asymmetry channel, NOT objectivity-max
+       objectivity-MAXIMIZATION (-> r=1/2) is a SEPARATE posited principle, not the native relaxation dynamics (-> trace -> Q=1)
+
+========================================================================================
+F5 — both conditional hypotheses are unforced
+========================================================================================
+[PASS] F5.1 (i) equal-block HS metric = the retained_no_go isotype-split freedom; (ii) objectivity-max = import -> Q=2/3 is conditional, not forced
+       koide_frobenius_isotype_split_uniqueness (retained_no_go): weight not forced; objectivity-max: 0 occurrences in corpus (import).
+
+========================================================================================
+SUMMARY
+========================================================================================
+  9/9 checks passed
+
+  THE HONEST RESULT: Q=2/3 is a CONDITIONAL, not a forced theorem.
+    GIVEN (i) equal-block (1,1) metric AND (ii) objectivity-MAXIMIZATION,
+    THEN r=1/2 -> Q=2/3 (non-circular; 2/3 is the output; (1,2) would give r=1).
+  The 2-block pointer fixes #channels=2, NOT the weight (r*=w_p/(2 w_s)).
+  Native records DYNAMICS (relaxation -> trace -> per-dim) points to Q=1.
+  Both hypotheses (i)+(ii) are UNFORCED (retained no-go freedom + import).
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

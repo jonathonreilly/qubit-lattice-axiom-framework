@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 624 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1178 |
+| unaudited | 1177 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -34,6 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
 | `decoration_under_cpt_exact_note` | 4 |
+| `decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | 1 |
 | `decoration_under_emergent_lorentz_invariance_note` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | 1 |
@@ -63,16 +64,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 964 |
 | `audited_conditional` | 31 |
-| `audited_decoration` | 53 |
+| `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1416 |
+| `unaudited` | 1415 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1176 |
-| `decoration` | 54 |
+| `bounded_theorem` | 1175 |
+| `decoration` | 55 |
 | `meta` | 242 |
 | `no_go` | 266 |
 | `open_gate` | 118 |
@@ -1140,6 +1141,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
+| `dimension_selection_lower_bound_bridge_v2_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` |
@@ -3730,6 +3732,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact finite-k tangent recursion for the layer-normalized propagator gives dC/dM at M=0 negative for d<=2 and positive for d>=3 on the stated runner geometry.  _(class `C`)_
 - **chain closes:** True — The runner source implements the finite lattice propagator, normalized tangent recursion, centroid derivative, finite-difference check, and parent finite-M replay rather than merely printing constants. The conclusion closes only for the explicitly fixed runner geometry and stated potential family.
 - **rationale:** The load-bearing step is a direct finite-dimensional computation of the derivative of the stated runner update, with no WKB, eikonal, external comparator, or cross-note numerical import doing the sign work. The source code computes the derivative from the specified potential profile and propagator and cross-checks it by finite difference; expected signs are used only as checks, not as substituted derivative values. The note's remaining-wall language passes the bounded-wall gate because it explicitly confines the result to finite runner support and names distinct open routes without promoting them into impossibility claims.
+- **auditor confidence:** high
+
+### `dimension_selection_lower_bound_bridge_v2_2026-05-20`
+
+- **Note:** [`DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md`](../../docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Bounded wrapper check that the retained finite-k centroid-sign bridge supplies the fixed-runner sign split d<=2 negative and d>=3 positive for scripts/frontier_dimension_selection.py; no uniform-in-M or full dimension-selection theorem is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-153148-e5108670-dimension_selection_lowe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained finite-k bridge's derivative and M=0.005 finite-probe sign table is negative for d=1,2 and positive for d=3,4,5, so the runner's centroid shift is attractive exactly for the audited d>=3 cases.  _(class `A`)_
+- **chain closes:** True — The included retained_bounded finite-k bridge is exactly the upstream sign result needed for the stated fixed-geometry runner claim, and the remaining df_d/dr statements are elementary monotonicity checks. The closure is only the bounded runner-sign wrapper, not the beta/alpha exponents, upper-bound side, or full D=3 chain.
+- **rationale:** The note does not add an independent first-principles computation; it imports the retained finite-k centroid-sign bridge and restates its sign partition in the lower-bound context. The displayed action/sign formulas and monotonicity derivatives are consistent with the runner conventions in the packet. Since the chain reduces to one upstream retained parent plus standard algebra, decoration is the conservative verdict rather than audited_clean.
+- **decoration parent:** `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25`
 - **auditor confidence:** high
 
 ### `dimension_selection_note`

@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_p2_det_realization_bridge_conditional_2026_05_28.py
-runner_sha256: a3e120d5547cfb4b43d227402240a964f2be9ad4cc7a461a90cdc22f22cc9a50
+runner_sha256: dbeb59c168fc8edbac837e20f4ee05bb8cd0c04906ddf27b12c6f23f5a945c6d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 ==============================================================================
-P2 DETERMINANT-REALIZATION BRIDGE, CONDITIONAL ON THE FERMIONIC FRAME
-assembly + separability + residual re-attribution (FS, not AC_phi_lambda)
+P2 DETERMINANT-REALIZATION BRIDGE, CONDITIONAL ON SUPPLIED FRAME DATA
+assembly + separability under supplied D=M_KS and AC relabeling premises
 ==============================================================================
 
 --- BLOCK 1  Berezin Gaussian-determinant identity  Z_F[M] = det(M) ---
@@ -37,7 +37,7 @@ assembly + separability + residual re-attribution (FS, not AC_phi_lambda)
   [PASS] det(M_KS+mI)=prod(m^2+sigma^2)>0  L=(6,2) m=1.5  det=410.062500
   [PASS] log|det| = log det  L=(6,2)  m=0.7
 
---- BLOCK 3  relabeling-invariance SEPARABILITY  (residual = FS, NOT AC_phi_lambda) ---
+--- BLOCK 3  relabeling-invariance SEPARABILITY under supplied AC relabeling premise ---
   [PASS] det(hw=1) invariant over all 6 S_3 relabelings  maxdev=2.8e-17
   [PASS] spec(hw=1) invariant over all S_3 relabelings  maxdev=4.4e-16
   [PASS] Z=Tr(e^-H) invariant over all S_3 relabelings  maxdev=1.8e-15
@@ -47,18 +47,15 @@ assembly + separability + residual re-attribution (FS, not AC_phi_lambda)
 ==============================================================================
 INTERPRETATION
 ------------------------------------------------------------------------------
-Block 1: the fermion partition function on the fermionic frame IS
-  det(D+J) (Berezin), so the readout W = log|det(D+J)| IS the generator.
-Block 2: on the zero-source staggered surface det(M_KS+mI) > 0, so
+Block 1: on the supplied fermionic frame, the finite Berezin
+  partition function is det(D+J), so W = log|det(D+J)| is the generator.
+Block 2: on the supplied zero-source staggered surface det(M_KS+mI) > 0, so
   log|det| = log det (no phase) -- the realization half of P2 there.
 Block 3 (CRUX): det, spec(H_hat), Z are invariant under ALL S_3
-  relabelings of the hw=1 triplet and the delta mass-pattern. Since
-  AC_phi_lambda IS exactly such a relabeling, the determinant readout
-  is PROVABLY BLIND to it. The realization residual is therefore the
-  substep-1 FERMIONIC-STATISTICS selection FS (an admission; NOT forced
-  by the Axiom 1 / Axiom 2 baseline), NOT AC_phi_lambda. The
-  second-transcendental (Lindemann)
-  obstruction lives in substep-4 / AC_phi_lambda and is ORTHOGONAL.
+  relabelings of the hw=1 triplet and the delta mass-pattern. Given
+  the supplied premise that AC_phi_lambda is only such a relabeling,
+  the determinant readout is blind to it. The remaining realization
+  residual is FS plus the supplied D=M_KS and AC-relabeling premises.
 ==============================================================================
 SCORECARD: PASS=27 FAIL=0
 

@@ -117366,22 +117366,54 @@
       "verdict_rationale": "Clean as a scoped no-go obstruction, not as analytic closure of canonical P(6). The runner confirms 5 theorem checks and 2 support checks with no failures; the load-bearing step is algebraic counterexample construction rather than support-class propagation. The safe conclusion is that the current onset jet plus analyticity/monotonicity does not force beta_eff(6) or analytic P(6)."
     },
     "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-31T00:06:48.783882+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "Bounded finite marked class-sector Peter-Weyl evaluation-map identity: given the retained finite coefficient vector v_beta, the compressed boundary W-dependence is the canonical vector K(W), with no claim to full physical Wilson-environment coefficients or the full local rim functional.",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "Within a retained finite marked class sector, the Peter-Weyl vector K_Lambda(W) is the unique Riesz representative of the retained evaluation functional; no full slice lift B_beta(W) is derived.",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks.",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17": "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17",
+          "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 6.281,
+        "runner_hash": "951d31aaa6f71d63507e6c1fa803af91e11db12b81f72c50afff4f569230e82a",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-000445-d780cfee-gauge_vacuum_plaquette_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet establishes at most an algebraic product-measure Fubini identity for a constructed disjoint SU(2) toy. It does not supply the missing bridge from the actual SU(3) full-slice Wilson environment and open upstream transfer/mixed-kernel identities to the claimed physical B_beta(W) and eta_beta(W).",
       "claim_id": "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
-      "claim_scope": null,
+      "claim_scope": "Audited the asserted exact full-slice Wilson/Haar rim-lift identity for B_beta(W)(U) and the compressed descendant eta_beta(W)=P_cls B_beta(W), using only the one-hop authorities and the SU(2) toy Fubini runner.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-31T00:06:48.783882+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -117392,20 +117424,25 @@
         "gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.281,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Because Xi^rim and the bulk-environment links are disjoint Haar variables, the Wilson density factorises over rim and bulk, so psi_beta(W)(U)=B_beta(W)(U)F(U) and eta_beta(W)=P_cls B_beta(W).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "c18a0efacde823d8808e2b156b42a0c0e96b5692c3be0ad20f39d31b0f102d3a",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a restricted-packet proof or runner for the actual SU(3) full-slice Wilson marginal factorization with marked W and the projection eta_beta(W)=P_cls B_beta(W), or narrow the source claim to the bounded SU(2) toy Fubini certificate.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-05T07:51:37.101713+00:00",
@@ -117487,18 +117524,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 3,
+        "B": 4,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Full-Slice Rim-Lift Integral Boundary",
       "transitive_descendants": 54,
-      "verdict_rationale": null
+      "verdict_rationale": "The displayed product formula psi_beta(W)(U)=B_beta(W)(U)F(U) is the correct kind of algebraic step only after disjoint rim/far variables and an already-defined physical slice marginal are granted. The cited authorities are retained-bounded/decorative and explicitly leave the actual untruncated Wilson environment transfer, mixed-kernel compression bridge, and full local rim functional open. The runner computes a Monte Carlo SU(2) toy with a deliberately disjoint far factor; its rim action contains no marked holonomy W and its beta/3 action check is hard-coded, so it cannot certify the exact SU(3) full-slice rim lift claimed by the note."
     },
     "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": {
       "audit_date": "2026-05-23T14:52:46.676764+00:00",

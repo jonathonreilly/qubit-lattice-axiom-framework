@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 614 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1204 |
+| unaudited | 1203 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 19 |
+| ~~audited_conditional~~ | 20 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 951 |
-| `audited_conditional` | 19 |
+| `audited_conditional` | 20 |
 | `audited_decoration` | 53 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1442 |
+| `unaudited` | 1441 |
 
 | claim_type | count |
 |---|---:|
@@ -1093,6 +1093,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `continuum_identification_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5991,6 +5992,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The two analytic strictly increasing witnesses share beta_eff(beta)=beta+beta^5/26244+O(beta^6) but differ at beta=6, hence give different P_1plaq values.  _(class `A`)_
 - **chain closes:** True — The explicit witness pair satisfies the scoped hypotheses and has exact delta beta_eff(6)=0.0046656 with positive delta P, so the stated inputs cannot force a unique framework-point value.
 - **rationale:** Clean as a scoped no-go obstruction, not as analytic closure of canonical P(6). The runner confirms 5 theorem checks and 2 support checks with no failures; the load-bearing step is algebraic counterexample construction rather than support-class propagation. The safe conclusion is that the current onset jet plus analyticity/monotonicity does not force beta_eff(6) or analytic P(6).
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the asserted exact full-slice Wilson/Haar rim-lift identity for B_beta(W)(U) and the compressed descendant eta_beta(W)=P_cls B_beta(W), using only the one-hop authorities and the SU(2) toy Fubini runner.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260531-000445-d780cfee-gauge_vacuum_plaquette_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because Xi^rim and the bulk-environment links are disjoint Haar variables, the Wilson density factorises over rim and bulk, so psi_beta(W)(U)=B_beta(W)(U)F(U) and eta_beta(W)=P_cls B_beta(W).  _(class `A`)_
+- **chain closes:** False — The packet establishes at most an algebraic product-measure Fubini identity for a constructed disjoint SU(2) toy. It does not supply the missing bridge from the actual SU(3) full-slice Wilson environment and open upstream transfer/mixed-kernel identities to the claimed physical B_beta(W) and eta_beta(W).
+- **rationale:** The displayed product formula psi_beta(W)(U)=B_beta(W)(U)F(U) is the correct kind of algebraic step only after disjoint rim/far variables and an already-defined physical slice marginal are granted. The cited authorities are retained-bounded/decorative and explicitly leave the actual untruncated Wilson environment transfer, mixed-kernel compression bridge, and full local rim functional open. The runner computes a Monte Carlo SU(2) toy with a deliberately disjoint far factor; its rim action contains no marked holonomy W and its beta/3 action check is hard-coded, so it cannot certify the exact SU(3) full-slice rim lift claimed by the note.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md`
+  - `GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md`
+  - `GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md`
+  - `GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_EVALUATION_THEOREM_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10`

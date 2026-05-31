@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_tensorial_einstein_regge_completion.py
-runner_sha256: d911f3655b3665a00c16047ab6107a3f7eaf7979c84f850253a2de6808ef100f
+runner_sha256: 14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.66
+elapsed_sec: 3.98
 status: ok
 ----- stdout -----
 Tensorial completion test for restricted Einstein/Regge lift

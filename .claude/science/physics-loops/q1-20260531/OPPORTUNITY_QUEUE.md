@@ -10,7 +10,21 @@
    charged-lepton source.  Negative result leaves `Q=1` as an allowed
    projected counterdomain.  In the last-mile cascade this is `P_SOURCE`.
 
-2. Derive the remaining selected-line endpoint/source law:
+2. Derive the physical rank-erasing record quotient:
+
+   ```text
+   charged-lepton record readout counts quotient record atoms, not Hilbert rank
+   ```
+
+   The record-quotient measure fork makes this exact.  Full Hilbert trace /
+   Born push-forward through the embedded `S` record gives `(1/3,2/3)` and
+   `Q=1`; rank-erased quotient record counting gives `(1/2,1/2)` and
+   conditional `Q=2/3`.  Existing source-measure / record-intervention
+   machinery supports probability laws on the record algebra but does not
+   choose the quotient reference.  A positive result must be a physical
+   recordization/objectivity principle that erases Hilbert rank at readout.
+
+3. Derive the remaining selected-line endpoint/source law:
 
    ```text
    physical full-cube source law selects the forward oriented channel and the
@@ -33,12 +47,12 @@
    orientation-odd full-cube source/boundary law, records/objectivity measure
    principle, or a separate source-domain theorem.
 
-3. Sharpen the Q1/RHN no-go:
+4. Sharpen the Q1/RHN no-go:
 
    Extend the scoped U(1)-equivariant direct-bridge no-go to a larger class,
    or find the exact charge-two primitive that evades it.
 
-4. Audit the synthesis packet:
+5. Audit the synthesis packet:
 
    Ensure other workers do not cite this as dark matter, retained Koide
    closure, or physical Brannen phase closure.

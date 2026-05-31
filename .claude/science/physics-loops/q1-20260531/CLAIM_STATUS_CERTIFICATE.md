@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: bounded-support
+actual_current_surface_status: exact-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: "P_SOURCE gives charged-lepton Q=2/3; the unresolved source/endpoint part of P_ORIENT gives delta=+2/9; both together make Koide Q/delta dimensionless closure audit-ready"
-hypothetical_axiom_status: "would close the Q/delta dimensionless package only if P_SOURCE and the remaining selected-line source/endpoint/readout law are derived from retained charged-lepton physics"
+conditional_surface_status: "rank-erased quotient record count gives Q=2/3; P_SOURCE gives charged-lepton Q=2/3; the unresolved source/endpoint part of P_ORIENT gives delta=+2/9; these together make Koide Q/delta dimensionless closure audit-ready"
+hypothetical_axiom_status: "would close the Q/delta dimensionless package only if the physical rank-erasing record quotient or P_SOURCE and the remaining selected-line source/endpoint/readout law are derived from retained charged-lepton physics"
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The packet proves an exact coefficient bridge, an unlock map, a no-go for Q1-alone signed readout, a bottom-up zero-odd-component audit, a gamma-sheet sign-source no-go, conditional oriented-frame sign compatibility, a conditional last-mile unlock cascade, bounded support that the oriented generator g is the proper spatial/taste C3 carrier, and a no-go that S=C+C^2 alone cannot derive the measure, forward channel, or endpoint; it does not derive the orientation-odd microscopic selected-line endpoint/source/readout law, the count-over-rank measure principle, or P_SOURCE."
+proposal_allowed_reason: "The packet proves an exact coefficient bridge, an unlock map, a no-go for Q1-alone signed readout, a bottom-up zero-odd-component audit, a gamma-sheet sign-source no-go, conditional oriented-frame sign compatibility, a conditional last-mile unlock cascade, bounded support that the oriented generator g is the proper spatial/taste C3 carrier, a no-go that S=C+C^2 alone cannot derive the measure, forward channel, or endpoint, and the exact record-quotient fork between Hilbert-rank Q=1 and quotient-count Q=2/3; it does not derive the orientation-odd microscopic selected-line endpoint/source/readout law, the physical rank-erasing record quotient/count-on-atoms principle, or P_SOURCE."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -31,6 +31,8 @@ Allowed wording:
 - "The oriented generator `g` is bounded support from spatial `C3[111]` plus taste-cube descent; full `P_ORIENT` still needs the selected-line endpoint/source/readout law."
 - "The sharp record `S=C+C^2` forces two atoms with ranks `(1,2)` but does not select count-over-rank measure, forward channel, or unbased endpoint."
 - "Rank/Born push-forward of the sharp record gives the trace/default `Q=1` lane; equal atom count gives the conditional `Q=2/3` lane."
+- "Full Hilbert trace/Born push-forward through the embedded record gives weights `(1/3,2/3)` and `Q=1`; rank-erased quotient record counting gives weights `(1/2,1/2)` and conditional `Q=2/3`."
+- "Existing source-measure / record-intervention machinery supports record probability laws but does not select the quotient reference law."
 - "Unbounded retained is not the Koide status target; this package does not affect Y_T unbounded closure."
 - "This is not dark-matter closure."
 
@@ -48,5 +50,6 @@ Forbidden wording:
 - "The physical orientation/basepoint probe by itself closes full P_ORIENT."
 - "The sharp record `S=C+C^2` by itself selects `Q=2/3`."
 - "The sharp record `S=C+C^2` selects the forward channel or selected-line endpoint."
+- "Source-measure / record-intervention machinery by itself derives quotient record count over Hilbert rank."
 - "This package upgrades generation labels, absolute masses, or Y_T unbounded closure."
 - "All 2/9 routes are the same object."

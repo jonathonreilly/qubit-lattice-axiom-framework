@@ -14,4 +14,5 @@ Pre-review local verification:
 - The last-mile unlock cascade runner exits 0.
 - The physical orientation/basepoint probe runner exits 0.
 - The source-endpoint / record-measure no-go runner exits 0.
-- `python3 -m py_compile` exits 0 on all fifteen Q1/provenance scripts.
+- The record-quotient measure fork runner exits 0.
+- `python3 -m py_compile` exits 0 on all sixteen Q1/provenance scripts.

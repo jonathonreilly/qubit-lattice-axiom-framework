@@ -45,6 +45,13 @@ What to use:
   the sharp record forces two atoms with ranks `(1,2)`, but not the
   count-vs-rank measure; it is reflection-even and cannot select `Qf` over
   `Qb`; and the unbased endpoint orbit has no canonical first element.
+- The record-quotient measure fork isolates the exact measure bridge:
+  full Hilbert trace/Born push-forward through the embedded `S` record gives
+  weights `(1/3,2/3)` and `Q=1`; rank-erased quotient record counting gives
+  weights `(1/2,1/2)` and conditional `Q=2/3`.
+- Existing source-measure / record-intervention notes justify probability laws
+  on the finite record algebra, but they keep the reference law as an input.
+  They do not select quotient count over Hilbert rank.
 
 What not to use:
 
@@ -60,6 +67,9 @@ What not to use:
   closure; it only lands the spatial/taste `g` carrier.
 - Do not cite the `S=C+C^2` record as selecting `Q=2/3`, the forward channel,
   or a selected-line endpoint; it only supplies the two-atom carrier.
+- Do not cite source-measure / record-intervention machinery as selecting the
+  quotient record reference law.  It legitimizes the probability-law surface;
+  it does not erase Hilbert rank.
 - Do not cite the last-mile cascade as effective retained status without an
   independent audit of `P_ORIENT` and `P_SOURCE`.
 - Do not merge the APS, anomaly, Brannen, and offsite matrix coefficient into
@@ -69,6 +79,6 @@ Best next theorem handles:
 
 ```text
 derive_orientation_odd_full_cube_source_boundary_law_selects_Qf_and_endpoint
-derive_records_objectivity_measure_principle_selects_count_over_rank_Born
+derive_physical_rank_erasing_record_quotient_or_count_on_record_atoms
 derive_P_SOURCE_strict_onsite_charged_lepton_source_domain
 ```

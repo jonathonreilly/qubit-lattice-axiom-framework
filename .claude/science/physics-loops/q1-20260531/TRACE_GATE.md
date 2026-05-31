@@ -7,7 +7,7 @@ target_blocker_text: "physical identification delta = eta_APS"
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "Derive the microscopic full-cube source law selecting the forward oriented channel and selected-line endpoint/basepoint/readout, or prove the physical source-domain law that erases projected Z for undeformed charged leptons."
+next_trace_action: "Derive a physical rank-erasing record quotient/count-on-record-atoms principle, derive the microscopic full-cube source law selecting the forward oriented channel and selected-line endpoint/basepoint/readout, or prove the physical source-domain law that erases projected Z for undeformed charged leptons."
 ```
 
 The coefficient bridge supports the existing phase blocker, while the signed
@@ -39,6 +39,15 @@ and the endpoint orbit is unbased.  Thus the missing trace action cannot be
 an `S`-only algebra step.  It must be an orientation-odd source/boundary law,
 an independent records/objectivity measure principle, or the separate
 `P_SOURCE` source-domain theorem.
+
+The record-quotient measure fork sharpens the measure side.  Full Hilbert
+trace/Born push-forward through the embedded `S` record gives weights
+`(1/3,2/3)` and `Q=1`; abstract quotient record counting gives weights
+`(1/2,1/2)` and conditional `Q=2/3`.  Existing source-measure /
+record-intervention machinery supports probability laws on the record algebra
+but keeps the reference law as an input.  Therefore the next measure trace
+action is not another record-probability theorem; it is a physical
+rank-erasing recordization / count-on-record-atoms principle.
 
 The unlock map also marks the positive source-domain path: strict onsite
 descent erases the Q1 reduced `Z` coordinate and returns `Q=2/3`.  That path

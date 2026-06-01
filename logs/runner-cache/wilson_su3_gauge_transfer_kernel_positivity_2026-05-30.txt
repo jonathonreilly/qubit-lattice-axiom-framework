@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py
+runner_sha256: df8b075198deb08a69b5ce42e9386baae875374f303eb747e4689093f0584fa3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 59.10
+status: ok
+----- stdout -----
+# WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY runner
+# MC seed=20260530 (np.random.default_rng)
+# C0 max |Weyl - tracepoly| over generic torus pts = 2.340e-13
+# C1 exact CG: min multiplicity = 0, max residual = 0.000e+00
+# C2 exact: min char-power coeff over n=1..6 = 1, max residual = 0.000e+00
+# C3 smallest MC c_lambda = -2.643781e-03 +/- 1.26e-03 (1-SEM) at irrep (2, 1) (dim 15), beta=0.5; pass band: c_lambda > -5*SEM = -6.32e-03
+#    smallest EXACT non-negative CG-series c_lambda over grid = 0.000e+00 (>= 0); worst |MC - exact|/SEM = 2.71
+# C4 worst relative Gram min-eig over beta grid = 5.686e-04
+# C5 control: c_8(w,beta=2) ~ 0.1500; deformed c_8(w~) = -0.4470 +/- 2.88e-03 (expect <0); deformed Gram min-eig = -16.9061 (max 136.83, expect <0)
+
+[PASS] C0_weyl_vs_tracepoly_characters
+[PASS] C1_cg_tensor_multiplicities_nonneg_integers
+[PASS] C2_positive_power_expansion_chi3_plus_chi3bar
+[PASS] C3_c_lambda_nonneg_over_beta_grid_MC
+[PASS] C4_wilson_transfer_kernel_gram_PSD
+[PASS] C5_nontriviality_control_negative_octet
+SCORECARD PASS=6 FAIL=0
+
+----- stderr -----
+

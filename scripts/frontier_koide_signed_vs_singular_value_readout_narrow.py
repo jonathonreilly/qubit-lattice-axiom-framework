@@ -313,16 +313,36 @@ def main() -> int:
     # =====================================================================
     section("Part 6: sign-flip boundary at theta = pi/12 (one eigenvalue exactly 0)")
     # =====================================================================
-    # Equality Q_sv = Q_signed holds exactly on the sign-homogeneous region.
-    # At r = 1/2 the region boundary is where an eigenvalue crosses 0:
+    # Equality Q_sv = Q_signed holds exactly when NO eigenvalue is negative
+    # (sum|lambda| = sum lambda = 3a). At r = 1/2 the boundary is where an
+    # eigenvalue crosses 0:
     #   lambda_k = a(1 + sqrt2 cos(...)) = 0  <=>  cos(...) = -1/sqrt2  <=>  angle = 3 pi/4.
     # The set {theta + 2 pi k/3} is invariant under theta -> theta + 2 pi/3, so the
-    # all-same-sign window is |theta mod (2 pi/3)| < pi/12.
+    # STRICT positive sign-homogeneous (all lambda_k > 0) window is the OPEN set
+    # |theta mod (2 pi/3)| < pi/12, while the Q_sv = 2/3 EQUALITY region is the
+    # CLOSED set |theta mod (2 pi/3)| <= pi/12 -- equality STILL holds at the
+    # boundary theta = pi/12 (one eigenvalue exactly 0, the other two positive).
     L_b = [simplify(x) for x in signed_eigs(a0, b0, pi / 12)]
     check(
         "theta = pi/12: lambda spectrum contains an EXACT zero (sign-flip boundary)",
         any(simplify(x) == 0 for x in L_b),
         detail=f"lambda(pi/12) = {L_b}",
+    )
+    # BOUNDARY COMPLETENESS (auditor repair): Q_sv = 2/3 equality STILL holds AT
+    # theta = pi/12, even though the spectrum is NOT strictly sign-homogeneous
+    # there (one eigenvalue is exactly 0). The vanishing eigenvalue contributes 0
+    # to BOTH sum|lambda| and sum lambda, and no eigenvalue is negative, so
+    # sum|lambda| = sum lambda = 3a and Q_sv = Q_signed = 2/3. Hence the equality
+    # region is the CLOSED set |theta mod 2pi/3| <= pi/12, not just the open window.
+    n_zero_b = sum(1 for x in L_b if simplify(x) == 0)
+    n_neg_b = sum(1 for x in L_b if N(x) < 0)
+    check(
+        "theta = pi/12 (boundary): Q_sv = 2/3 EQUALITY still holds (one zero eigenvalue, none negative)",
+        simplify(Q_sv_exact(pi / 12) - Rational(2, 3)) == 0
+        and simplify(Q_signed_exact(pi / 12) - Rational(2, 3)) == 0
+        and n_zero_b == 1
+        and n_neg_b == 0,
+        detail=f"Q_sv(pi/12) = {Q_sv_exact(pi / 12)} (= 2/3); zeros={n_zero_b}, negatives={n_neg_b} -> sum|lambda| = sum lambda = 3a",
     )
     # Just inside the window (theta = pi/20 < pi/12): all positive, Q_sv = 2/3.
     L_in = signed_eigs(a0, b0, pi / 20)
@@ -411,7 +431,9 @@ def main() -> int:
     print("    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= 2/3, equality iff sign-homogeneous")
     print("    (Non-const) Q_sv in {2/3, 6/(9+4 sqrt2), 6/(7+2 sqrt6)} at theta in {0, pi/3, pi/2}")
     print("    (Samples)  theta=0.4 -> 0.566, theta=0.9 -> 0.416 (both < 2/3); Q_signed stays 2/3")
-    print("    (Boundary) sign-flip at theta = pi/12; same-sign window |theta mod 2pi/3| < pi/12")
+    print("    (Boundary) one eigenvalue = 0 at theta = pi/12; Q_sv = 2/3 EQUALITY still holds there")
+    print("    (Regions)  strict all-positive OPEN window |theta mod 2pi/3| < pi/12;")
+    print("               Q_sv=2/3 equality region is the CLOSED set |theta mod 2pi/3| <= pi/12")
     print("    (Masses)   both readouts give identical m_k = lambda_k^2; only sqrt(m) signs differ")
     print("    (Corollary) one-negative closed form Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2")
     print()

@@ -19,7 +19,8 @@ at the operator-side Koide point `r := |b|²/a² = 1/2`:
 - the signed readout gives `Q(S) = 2/3` **exactly and independently of θ**;
 - the singular-value readout gives a **θ-dependent** `Q(V)` that is **not** `2/3`
   (e.g. `θ = 0.4 → 0.566`, `θ = 0.9 → 0.416`), equal to `2/3` **only** on the
-  sign-homogeneous sub-region where all `λ_k` share one sign.
+  sub-region where no `λ_k` is negative (all `λ_k ≥ 0`) — the closed window
+  `|θ mod 2π/3| ≤ π/12`, boundary included.
 
 This is purely a statement about two scalar functions of the eigenvalue triple of
 an abstract circulant Hermitian operator. No observed charged-lepton mass value,
@@ -81,8 +82,9 @@ spectrum** `m_k := w_k²` is identical for `S` and `V`:
 ```text
 (i)   Q(V)  =  (3a² + 6|b|²) / (Σ_k |λ_k|)².                                  (T-i)
 
-(ii)  Q(V)  ≤  Q(S)  =  (1 + 2r)/3,     with equality  ⇔  all λ_k share
-      one sign  (⇔  Σ_k |λ_k| = |Σ_k λ_k| = 3a).                             (T-ii)
+(ii)  Q(V)  ≤  Q(S)  =  (1 + 2r)/3,     with equality  ⇔  no λ_k is negative
+      (all λ_k ≥ 0, the vanishing case included)
+      (⇔  Σ_k |λ_k| = |Σ_k λ_k| = Σ_k λ_k = 3a).                             (T-ii)
 
 (iii) At r = 1/2, Q(V) is a NON-CONSTANT function of θ.  Exactly,
         Q(V)(0)    = 2/3,
@@ -96,9 +98,17 @@ spectrum** `m_k := w_k²` is identical for `S` and `V`:
       θ-independent value 2/3.                                               (T-iv)
 ```
 
-**Corollary C1 (sign-flip boundary at `r = 1/2`).** The same-sign region (where
-`Q(V) = 2/3`) is `|θ mod (2π/3)| < π/12`; at the boundary `θ = π/12` exactly one
-eigenvalue vanishes (`λ_k = a(1 + √2·(−1/√2)) = 0`).
+**Corollary C1 (sign-flip boundary at `r = 1/2`; open window vs closed equality
+region).** The **strict** positive sign-homogeneous region — where *all* `λ_k > 0`
+— is the **open** window `|θ mod (2π/3)| < π/12`. At the boundary `θ = π/12`
+exactly one eigenvalue vanishes (`λ_k = a(1 + √2·(−1/√2)) = 0`), so the spectrum is
+no longer strictly same-sign; **yet `Q(V) = 2/3` equality still holds there**,
+because the vanishing eigenvalue contributes `0` to *both* `Σ_k |λ_k|` and
+`Σ_k λ_k` and no eigenvalue is negative, leaving `Σ_k |λ_k| = Σ_k λ_k = 3a`.
+Hence the `Q(V) = 2/3` **equality region is the closed set**
+`|θ mod (2π/3)| ≤ π/12`, while the strict inequality `Q(V) < 2/3` holds only for
+`|θ mod (2π/3)| > π/12` (where some `λ_min < 0`). (The runner evaluates
+`Q(V)(π/12) = 2/3` exactly — Part 6.)
 
 **Corollary C2 (one-negative closed form).** On the region with exactly one
 negative eigenvalue `λ_min < 0`,
@@ -230,7 +240,9 @@ Q(S)               =  (1 + 2r)/3              (θ-independent; 2/3 at r = 1/2)
 Q(V)               =  (3a²+6|b|²)/(Σ_k|λ_k|)²
 Q(V)               ≤  Q(S),  equality ⇔ sign-homogeneous spectrum
 Q(V) at r=1/2      ∈  {2/3, 6/(9+4√2), 6/(7+2√6), …}   (non-constant in θ)
-same-sign window   =  |θ mod 2π/3| < π/12     (boundary λ_k = 0 at θ = π/12)
+strict +pos window =  |θ mod 2π/3| < π/12     (open; all λ_k > 0)
+Q(V)=2/3 equality  =  |θ mod 2π/3| ≤ π/12     (closed; equality holds at θ=π/12, one λ_k=0)
+Q(V) < 2/3 region  =  |θ mod 2π/3| > π/12     (some λ_min < 0)
 one-flip form      Q(V) = (3a²+6|b|²)/(3a − 2λ_min)²  <  2/3
 ```
 
@@ -287,7 +299,7 @@ Primary runner:
 [`scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py`](./../scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py)
 verifies, at exact sympy precision (cached at
 `logs/runner-cache/frontier_koide_signed_vs_singular_value_readout_narrow.txt`,
-`PASS=28, FAIL=0`):
+`PASS=29, FAIL=0`):
 
 1. `H` is Hermitian; the `C_3` character vectors are its eigenvectors with
    eigenvalue `a + bω^k + b̄ω^{-k}`; and the polar form
@@ -301,8 +313,10 @@ verifies, at exact sympy precision (cached at
    distinct exact-radical values proving non-constancy — while `Q(S) ≡ 2/3`
    (Part 4); the float samples `θ = 0.4 → 0.566`, `θ = 0.9 → 0.416` match to
    3 decimals and are `< 2/3` (Part 5).
-6. (C1) the exact zero eigenvalue at `θ = π/12`, with `Q(V) = 2/3` just inside
-   and `< 2/3` just outside the same-sign window (Part 6).
+6. (C1) the exact zero eigenvalue at `θ = π/12`; `Q(V) = 2/3` **at** that
+   boundary (equality still holds with one vanishing eigenvalue), `Q(V) = 2/3`
+   just inside the open window, and `Q(V) < 2/3` just outside it — so the
+   equality region is the closed set `|θ mod 2π/3| ≤ π/12` (Part 6).
 7. (C3) the mass triple `m_k = λ_k²` is identical for both readouts while the
    `√m` sign vectors differ (Part 7); (C2) the one-negative closed form matches
    the direct `Q(V)` at `θ = π/3, π/2` (Part 8).

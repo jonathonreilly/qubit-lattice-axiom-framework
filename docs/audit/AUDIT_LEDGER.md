@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 637 |
+| **retained_bounded** | 638 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1144 |
+| unaudited | 1143 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 979 |
+| `audited_clean` | 980 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1382 |
+| `unaudited` | 1381 |
 
 | claim_type | count |
 |---|---:|
@@ -904,6 +904,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_retarded_green_corrected_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_self_consistent_generated_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `source_resolved_support_localization_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `source_resolved_transverse_green_corrected_boundary_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -13531,6 +13532,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Treat this as a real mechanistic split: exact support is broad and stable under the clipping control, generated support is sharply localized, and the retained Green/self-consistent pocket likely depends on broad downstream connectivity support that the generated family does not provide.  _(class `C`)_
 - **chain closes:** True — The runner directly compares exact clipped, exact centered, and generated-family self-consistent Green cases using detector support metrics, and its current output matches the frozen table. The bounded mechanistic split closes because the exact controls have nearly identical broad support while the generated mean is sharply localized.
 - **rationale:** The note makes a bounded mechanism-discriminator claim rather than a full causal theorem. The current runner recomputes the exact clipped/interior controls and generated-family mean, matching the frozen centroid, N_eff, N_eff/N_det, top-10 fraction, 1% support, and peak-share values. Residual risk is that this identifies consistency with detector/connectivity localization rather than proving it as the only causal mechanism, and the note states that limitation.
+- **auditor confidence:** high
+
+### `source_resolved_transverse_green_corrected_boundary_note_2026-05-29`
+
+- **Note:** [`SOURCE_RESOLVED_TRANSVERSE_GREEN_CORRECTED_BOUNDARY_NOTE_2026-05-29.md`](../../docs/SOURCE_RESOLVED_TRANSVERSE_GREEN_CORRECTED_BOUNDARY_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Corrected finite boundary facts for the fixed h=0.25 source-resolved transverse Green runner; no positive same-site centroid correction, support-fraction broadening, full field equation, generated-family transfer, or physical gravitational closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260601-205652-b4c2f0c5-source_resolved_transver`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the fixed h=0.25 lattice pocket, the corrected runner finds mean trans/inst about 1.162, corrected mean trans/same about 0.990, negative trans-same centroid shift in every row, unchanged support fraction, slight N_eff broadening, linear exponents, and 4/4 TOWARD rows.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers build the fixed lattice fields, propagate amplitudes, compute centroid/support/N_eff observables, and assert the listed finite bounds. No cited authority or external comparator is imported, and the quantitative note claims match the completed runner output and independent arithmetic checks on the displayed table.
+- **rationale:** The runner source genuinely computes the finite rows from lattice propagation, Green fields, same-site memory, and transverse smoothing rather than printing constants or reading a contested premise. The displayed ratios, means, signs, support deltas, N_eff mean, and near-unit exponents are consistent with the runner cache and independent arithmetic over the table. The source note keeps the conclusion bounded to the finite corrected boundary packet and explicitly blocks the stale positive same-site correction headline.
 - **auditor confidence:** high
 
 ### `source_resolved_transverse_propagating_green_note`

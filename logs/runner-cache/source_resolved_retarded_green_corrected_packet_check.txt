@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/source_resolved_retarded_green_corrected_packet_check.py
+runner_sha256: 446157afde6da0e0403612ee549838caecf260df409b08f4064928f69b7f54b5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 125.63
+status: ok
+----- stdout -----
+================================================================================================
+SOURCE-RESOLVED RETARDED GREEN CORRECTED PACKET
+  corrected same-site comparison; finite-lag pocket only
+================================================================================================
+zero-source same-site shift: +0.000000e+00
+zero-source retarded shift:  +0.000000e+00
+
+       s         inst         same          ret   ret/inst   ret/same     ret-same
+------------------------------------------------------------------------------------------------
+  0.0010 +2.050891e-03 +2.412419e-03 +2.475657e-03      1.207      1.026 +6.323823e-05
+  0.0020 +4.105409e-03 +4.824993e-03 +4.951595e-03      1.206      1.026 +1.266013e-04
+  0.0040 +8.225500e-03 +9.650581e-03 +9.904265e-03      1.204      1.026 +2.536839e-04
+  0.0080 +1.651142e-02 +1.930336e-02 +1.981254e-02      1.200      1.026 +5.091792e-04
+
+SAFE READ
+  corrected mean ret/same ratio: 1.026
+  mean ret-same support delta: +0.000e+00
+  mean ret-same N_eff delta: +4.493e-02
+  exponents inst/same/ret: 1.00/1.00/1.00
+  TOWARD rows: 4/4
+  bounded live packet only: no full retarded field equation
+  old printed ret/same column is ret/inst and is not used
+  [PASS (C)] corrected retarded Green packet
+ASSERTIONS: PASS
+
+----- stderr -----
+

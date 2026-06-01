@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 636 |
+| **retained_bounded** | 637 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1145 |
+| unaudited | 1144 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 978 |
+| `audited_clean` | 979 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1383 |
+| `unaudited` | 1382 |
 
 | claim_type | count |
 |---|---:|
@@ -901,6 +901,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_propagating_generated_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `source_resolved_retarded_green_corrected_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_self_consistent_generated_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `source_resolved_support_localization_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_wavefield_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -13474,6 +13475,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Treat this as a bounded no-go for the tested geometry rule: exact zero-source reduction survives, support can move a little in the static case, but the wavefield update does not become more relevant on this family.  _(class `C`)_
 - **chain closes:** True — The runner constructs the baseline kNN-floor bridge and downstream-reach fan geometries, evaluates static and wavefield observables across the stated seeds and source strengths, and reproduces the note's frozen no-go table. With no cited dependencies, the bounded claim closes as a computed discriminator for this tested geometry rule only.
 - **rationale:** The source note makes a narrow bounded-negative claim, not a universal geometry theorem. The current runner recomputes the load-bearing observables and exactly matches the note's zero-source, sign-count, N_eff, F~M, and geometry-delta summaries. Residual risk is limited to implementation fidelity of the generated-family simulator, but the stated claim is only that this particular downstream-reach fan does not produce the hoped-for transfer.
+- **auditor confidence:** high
+
+### `source_resolved_retarded_green_corrected_packet_note_2026-05-29`
+
+- **Note:** [`SOURCE_RESOLVED_RETARDED_GREEN_CORRECTED_PACKET_NOTE_2026-05-29.md`](../../docs/SOURCE_RESOLVED_RETARDED_GREEN_CORRECTED_PACKET_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the fixed h=0.25 finite-lag source-resolved Green pocket with the stated source cluster, source strengths, same-site memory control, and retarded-like update; no full retarded field equation or support-fraction broadening claim is covered.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260601-205010-1b419cfb-source_resolved_retarded`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The corrected live runner directly computes same-site and finite-lag retarded-like centroid shifts on the fixed h=0.25 source-resolved lattice pocket and finds retarded-like shift larger than same-site memory for all four source strengths, with mean ret/same about 1.026.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers construct the lattice, fields, propagation, centroid shifts, support metrics, ratios, and exponents directly from code-path computations rather than importing a prior note value or external comparator. The corrected ret/same ratio is computed from ret and same values in the primary runner, so the old helper-main ret/inst label drift is not load-bearing.
+- **rationale:** The supplied runner source genuinely computes the bounded lattice pocket quantities and asserts the finite claims reported in the source note. The quantitative readout is consistent with the displayed rows: ret/same averages to about 1.026, ret-same is positive in all four rows, zero-source fields reduce to free propagation, and the fitted responses are near linear. No cited non-retained authority, external calibrated value, hard-coded contested numerical result, or definition-only substitution is used for the load-bearing step.
 - **auditor confidence:** high
 
 ### `source_resolved_retarded_green_pocket_note`

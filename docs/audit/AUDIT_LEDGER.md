@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 179 |
-| **retained_bounded** | 640 |
+| **retained_bounded** | 641 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1136 |
+| unaudited | 1135 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 982 |
+| `audited_clean` | 983 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1374 |
+| `unaudited` | 1373 |
 
 | claim_type | count |
 |---|---:|
@@ -1090,6 +1090,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -16516,6 +16517,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** As screening is reduced across the five-value mu^2 grid, the fitted clean-attractive distance exponent softens monotonically from about -3.315 to -1.871, approaching Newton-compatible d^-2 behavior while the mutual-attraction channel remains present.  _(class `C`)_
 - **chain closes:** True — The supplied primary runner and helper source instantiate the open Wilson lattice, Poisson solve, Wilson Hamiltonian evolution, mutual acceleration observable, clean/attract labeling, and log-log power-law fits rather than merely printing constants. The completed cache reports 12/12 clean attractive rows at each mu^2 and the quoted monotone exponent softening.
 - **rationale:** The load-bearing claim is bounded to a finite computed lattice surface and is directly supported by the supplied runner cache. The helper path used by the primary runner calls genuine computational routines; the hard-coded comparison table in the helper's own main is not on the primary runner's load-bearing path. The cited upstream authority is retained_bounded and consistent with the scoped companion calibration, while the note explicitly avoids promoting the result to full Newton closure.
+- **auditor confidence:** high
+
+### `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`
+
+- **Note:** [`WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`](../../docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Gauge-sector Wilson SU(3) one-link weight w(U)=exp((beta/3) Re Tr U): non-negative character coefficients for all irreps and beta>=0, hence PSD one-link convolution/transfer kernel; no full mixed gauge+fermion RP closure audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260601-211617-72324952-wilson_su3_gauge_transfe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Equation (13): c_lambda(beta)=sum_{n>=0} (1/n!)(beta/(2N_c))^n m_lambda^{(n)}, with every m_lambda^{(n)} a non-negative SU(3) tensor-product multiplicity, so c_lambda(beta)>=0 for beta>=0.  _(class `A`)_
+- **chain closes:** True — The algebraic expansion closes from SU(3) representation-ring non-negative multiplicities and Schur/Peter-Weyl convolution diagonalization. The explicitly open mixed OS transfer and fermion premises are outside the note's scoped gauge-only conclusion.
+- **rationale:** The load-bearing step is a genuine algebraic closure, not a definition or numerical match: powers of chi_3+chi_3bar decompose with non-negative integer multiplicities, and the beta>=0 exponential has non-negative scalar weights term by term. The c_lambda/d_lambda convolution normalization and exp(-beta) kernel scalar are consistent with the cited retained convolution/factorization authorities. The runner source performs exact character, CG, and power-expansion checks plus direct Haar/Gram and negative-control checks; it does not hard-code the contested premise or import external comparators.
 - **auditor confidence:** high
 
 ### `wilson_test_mass_continuum_note_2026-04-11`

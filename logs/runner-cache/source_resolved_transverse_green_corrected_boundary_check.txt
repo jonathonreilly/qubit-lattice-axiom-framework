@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/source_resolved_transverse_green_corrected_boundary_check.py
+runner_sha256: 920635531920ebb959112fcc3e97d1faab3c126da31d446e22cd53fbff0c2420
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 27.65
+status: ok
+----- stdout -----
+====================================================================================================
+SOURCE-RESOLVED TRANSVERSE GREEN CORRECTED BOUNDARY PACKET
+  true same-site comparison; stale positive transverse correction blocked
+====================================================================================================
+zero-source same-site shift:   +0.000000e+00
+zero-source transverse shift:  +0.000000e+00
+
+       s         inst         same        trans  trans/inst  trans/same   trans-same  d_support     d_Neff
+----------------------------------------------------------------------------------------------------
+  0.0010 +2.050891e-03 +2.412419e-03 +2.389431e-03       1.165       0.990 -2.298764e-05 +0.000e+00 +8.244e-04
+  0.0020 +4.105409e-03 +4.824993e-03 +4.778958e-03       1.164       0.990 -4.603542e-05 +0.000e+00 +1.716e-03
+  0.0040 +8.225500e-03 +9.650581e-03 +9.558260e-03       1.162       0.990 -9.232051e-05 +0.000e+00 +3.704e-03
+  0.0080 +1.651142e-02 +1.930336e-02 +1.911765e-02       1.158       0.990 -1.857153e-04 +0.000e+00 +8.544e-03
+
+SAFE READ
+  mean trans/inst ratio: 1.162
+  corrected mean trans/same ratio: 0.990
+  mean trans-same centroid shift: -8.676e-05
+  mean support-fraction delta: +0.000e+00
+  mean N_eff delta: +3.697e-03
+  exponents inst/same/trans: 1.00/1.00/1.00
+  TOWARD rows: 4/4
+  boundary: transverse smoothing is not a positive same-site centroid correction
+  old printed trans/same column is trans/inst and is not used as same-site evidence
+  [PASS (C)] corrected transverse Green boundary
+ASSERTIONS: PASS
+
+----- stderr -----
+

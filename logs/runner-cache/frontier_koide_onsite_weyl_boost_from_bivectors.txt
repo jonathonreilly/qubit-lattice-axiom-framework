@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py
+runner_sha256: 858b3a6671b1ccb9f5a0215a4168f3ac8a22acb369f48975df969756b4d1c4c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+========================================================================
+A. Derived single-site generators: J_i = sigma_i/2 (rotations), B_i = i sigma_i/2 (Cl(3,0) bivector)
+========================================================================
+[PASS] J_i = sigma_i/2 Hermitian (su(2) rotations, derived per_site_su2_spin_half)
+[PASS] B_i = i sigma_i/2 ANTI-Hermitian (Cl(3,0) bivector, internal_external_su2_merger)
+
+========================================================================
+B. so(3,1) closes EXACTLY on C^2 with (J, K=B): [J,J]=ieJ, [J,K]=ieK, [K,K]=-ieJ
+========================================================================
+[PASS] [J_i,J_j] = i eps J_k (rotations close su(2))
+[PASS] [J_i,K_j] = i eps K_k (boosts transform as a vector)
+[PASS] [K_i,K_j] = -i eps J_k  (the NON-COMPACT Lorentzian sign) -> so(3,1)
+
+========================================================================
+C. Anti-Hermiticity of K is FORCED: a Hermitian boost K=sigma/2 gives so(4) (+ sign)
+========================================================================
+[PASS] Hermitian K=sigma/2 -> [K,K] = +i eps J = so(4) (compact), NOT so(3,1) -- so the Lorentzian (3,1) sign FORCES K anti-Hermitian = the bivector i sigma/2
+
+========================================================================
+D. Faithful-Lorentz on C^2 = Weyl (rep-uniqueness); only non-faithful alt = trivial scalar
+========================================================================
+[PASS] {J_i} U {B_i} is genuinely 6-real-dimensional (real rank 6) -- a true so(3,1), not a 2-matrix relabel -- real rank = 6
+[PASS] all 6 generators traceless (perfect algebra -> faithful image is sl(2,C) = Weyl)
+[PASS] the ONLY non-faithful 2-dim Lorentz rep is the trivial scalar J=K=0 (Schur) -> faithful => boosts forced -- (1/2,0) vs (0,1/2) chirality is the remaining free binary, shared with the generation-ID gate
+
+========================================================================
+E. The dynamics lever FAILS to force faithful-over-scalar (H=iD is spin-blind)
+========================================================================
+[PASS] NO nonzero 2x2 G anticommutes with all three Paulis (no on-site gamma^0) -- least-squares {G,sigma_i}=0 has only G=0 -> no on-site boost-SPIN part
+[PASS] native H=iD (single-component, lattice factor) is SPIN-BLIND: [H (x) I_2, I (x) B_i] = 0 -- the dynamics generates only the spin-blind ORBITAL boost -> cannot select the faithful spinor rep
+
+========================================================================
+F. Grassmann-free + non-circular
+========================================================================
+[PASS] construction uses only Pauli/Clifford OPERATOR algebra (sigma_i); NO anticommuting fields / Berezin / staggered chi -- lifts the boost operators off the multi-site Grassmann crutch
+[PASS] non-circular: assumes NO statistics -> spin-statistics (P1) can force CAR downstream on a GIVEN faithful spinor
+
+========================================================================
+RESULT
+========================================================================
+
+13/13 checks passed.
+The emergent so(3,1) BOOSTS are carried on the single-site C^2 by the DERIVED Cl(3,0) bivector
+B_i=i sigma_i/2 (Grassmann-FREE): {J_i,B_i} close so(3,1) exactly (incl the non-compact [K,K]=-ieJ),
+anti-Hermiticity is forced by the Lorentzian sign, and faithful-Lorentz-on-C^2 = Weyl is unique. So
+the boost OPERATORS are forced and lifted off the multi-site Grassmann crutch -- a strict improvement.
+RESIDUAL (posited): the FAITHFUL (boost-acting) rep over the trivial scalar (the H=iD dynamics is
+spin-blind, cannot select it) + chirality + the (3,1) signature (delegated to UNAUDITED
+anomaly_forces_time). L1 PARTIALLY lifted, not closed. Next: microcausality/P1 selects faithful;
+KMS/reflection-positivity derives the signature sign.
+
+----- stderr -----
+

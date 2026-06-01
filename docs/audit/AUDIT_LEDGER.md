@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1137 |
+| unaudited | 1136 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 982 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1375 |
+| `unaudited` | 1374 |
 
 | claim_type | count |
 |---|---:|
@@ -1166,6 +1166,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_p1_i_s_lattice_pt_citation_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_signed_linear_source_response_bridge_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16476,6 +16477,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **open / conditional deps cited:**
   - `AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`
   - `AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
+- **auditor confidence:** high
+
+### `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25`
+
+- **Note:** [`WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md`](../../docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded canonical leading-β single-trace SU(3) plaquette selector assuming β=6 Wilson matching and the P4/P5 real-positive path-integral surface conventions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260601-211244-5e9f1d09-wilson_action_surface_se`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** P4 requires the action functional to be real, so the candidate iθΣ_P Im Tr U_P is rejected, while P3 with the scoped β=6 premise fixes the real Wilson coefficient within the canonical leading-β ansatz.  _(class `A`)_
+- **chain closes:** False — The selector closes only after importing β=6 Wilson matching and the P4/P5 real-positive measure surface as explicit premises; those are not derived or flagged as accepted premises in the restricted packet. The source also has a V7 formula drift: iθ(Tr U−Tr U†)/2 is real, not the imaginary P4-violating slot.
+- **rationale:** The core exclusion of iθΣ Im Tr U_P is an algebraic consequence of the stipulated real-action convention P4, not a first-principles derivation from the framework baseline. The runner performs nontrivial SU(3) and symbolic checks, but it treats β=6 as scoped input and hard-codes the canonical P3 survivor rather than deriving the missing Wilson-matching authority. Strict formula inventory also finds source-runner drift in §9/V7: the displayed iθ(Tr U_P−Tr U_P†)/2 expression simplifies to a real −θ Im Tr U_P term; the earlier (θ/2)(Tr U_P−Tr U_P†)=iθ Im Tr U_P expression is the P4-violating one.
 - **auditor confidence:** high
 
 ### `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08`

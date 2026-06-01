@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 171 |
-| **retained_no_go** | 179 |
+| **retained_no_go** | 180 |
 | **retained_bounded** | 641 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1134 |
+| unaudited | 1133 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 983 |
+| `audited_clean` | 984 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1372 |
+| `unaudited` | 1371 |
 
 | claim_type | count |
 |---|---:|
@@ -1099,6 +1099,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_higgs_source_intertwiner_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -16698,6 +16699,27 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** On trace-one color records, J = aI gives Tr(J rho) = a, so the centered connected score is zero; after quotienting by CI the connected tangent is sl_N with dimension N^2 - 1, selecting kappa_Y = 0 in the stated K_Y(kappa_Y) family.  _(class `A`)_
 - **chain closes:** True — For trace-one rho, scalar identity sources contribute only constants and are killed by centering. The quotient by the identity line has dimension N^2 - 1 inside the N^2-dimensional color matrix-source sector, so the connected-source fraction is (N^2 - 1)/N^2 and the singlet coefficient in the stated family is zero.
 - **rationale:** Within the bounded premise packet, the algebra closes: the identity source is constant on the trace-one surface, centering kills constants, and the traceless quotient has dimension N^2 - 1. The independent manual check matches the runner's exact rational projection and score calculations, including the N = 3 value 8/9 and the singlet gap 1/9. The runner also verifies that the source note preserves the open physical blockers rather than claiming full Y_T closure. Residual risk appears only if this row is broadened from the bounded selector to the physical neutral EW/Higgs source-action surface, canonical O_H, scalar LSZ normalization, strict pole rows, W/Z response bypass, or a physical top-Yukawa prediction.
+- **auditor confidence:** high
+
+### `yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29`
+
+- **Note:** [`YT_CONNECTED_SOURCE_SELECTOR_SCALAR_LIFT_NO_GO_NOTE_2026-05-29.md`](../../docs/YT_CONNECTED_SOURCE_SELECTOR_SCALAR_LIFT_NO_GO_NOTE_2026-05-29.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The audit covers only the attempted lift from the connected color-matrix source quotient to the current scalar signed-record / one-Higgs source packet as a derivation of `kappa_Y = 0` or `kappa_EW = 0`.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-yt_connected_source_sele`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the current scalar signed-record / one-Higgs packet, the source coordinate is the scalar parameter `h`; the color identity is a fixed degeneracy of that scalar source, not a varied color-matrix source direction `J` available for quotienting.  _(class `A`)_
+- **chain closes:** True — The cited connected-source theorem applies to a normalized color-matrix source tangent modulo the identity line, while the cited scalar/readout/carrier packets provide only a scalar signed-record source with fixed `I_color`. Applying the quotient to that scalar packet would add a new color-matrix source-authority premise, so the narrow no-go follows.
+- **rationale:** The load-bearing distinction is algebraic and closes from the restricted packet: a quotient of a varied matrix source direction is not available on a one-dimensional scalar source with fixed color degeneracy. The displayed identities check under the note's conventions: `J = lambda I` has zero connected score on trace-one color records, `End(C^N)/C I` gives `8/9` at `N=3`, and fixed `I_color` has Hilbert-Schmidt singlet fraction `1`. The no-go discipline gate is satisfied because the note keeps the negative result route-specific and explicitly preserves future routes requiring a physical color-matrix source theorem or an exact singlet/disconnected coefficient computation.
+- **open / conditional deps cited:**
+  - `YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md`
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
+  - `YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`
+  - `YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`
+  - `YT_COLOR_PROJECTION_CORRECTION_NOTE.md`
+  - `YT_EW_COLOR_PROJECTION_THEOREM.md`
+  - `EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26`

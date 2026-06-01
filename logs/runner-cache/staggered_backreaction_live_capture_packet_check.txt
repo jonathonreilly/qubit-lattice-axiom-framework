@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/staggered_backreaction_live_capture_packet_check.py
+runner_sha256: ba8c5c5d356f1557e419b69fbd709e14b6a151acd141c1896616779d1c9cf991
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
+================================================================================================
+STAGGERED BACKREACTION LIVE CAPTURE-CLOSURE PACKET
+  current runner surface; bounded positive read only
+================================================================================================
+closure=lap_selfmix50_capture3o2, map=lap1_b1p00, self_mix=0.50, capture_exp=1.50
+
+CAPTURE BATTERY: random_geometric (36 nodes)
+  [B1] Zero-source: F=0.0000e+00, |Phi|=0.0000e+00 PASS
+  [B2] Linearity: R^2=0.999635 PASS
+  [B3] Additivity: residual=1.2808e-16 PASS
+  [B4] Force: +6.4425e-01 TOWARD PASS
+  [B5] Iter stability: 15/15 TOWARD PASS
+  [B6] Norm: drift=4.4409e-16 PASS
+    gauss     : F=+6.4425e-01 TW
+    color-0   : F=+4.0545e-01 TW
+    color-1   : F=+8.6891e-01 TW
+  [B7] Families: 3/3 PASS
+  [B8] Gauge: J_range=1.5978e-02, sin_R^2=0.9999 PASS
+  [B9] Gap: baseline=98.3%, closed=41.5%, F_closed=+6.443e-01, F_ext=+1.101e+00, gain=15.221, capture=1.632e-01
+
+  SCORE: 9/9
+
+CAPTURE BATTERY: growing (48 nodes)
+  [B1] Zero-source: F=0.0000e+00, |Phi|=0.0000e+00 PASS
+  [B2] Linearity: R^2=0.992977 PASS
+  [B3] Additivity: residual=1.7022e-16 PASS
+  [B4] Force: +3.3040e-01 TOWARD PASS
+  [B5] Iter stability: 15/15 TOWARD PASS
+  [B6] Norm: drift=0.0000e+00 PASS
+    gauss     : F=+3.3040e-01 TW
+    color-0   : F=+1.6852e-01 TW
+    color-1   : F=+4.8992e-01 TW
+  [B7] Families: 3/3 PASS
+  [B8] Gauge: J_range=3.0799e-03, sin_R^2=0.9500 PASS
+  [B9] Gap: baseline=98.3%, closed=53.2%, F_closed=+3.304e-01, F_ext=+7.062e-01, gain=27.734, capture=1.091e-01
+
+  SCORE: 9/9
+
+HOLDOUT
+  layered_bipartite_dag_s29_n55: baseline gap=9.191e-01, closed gap=4.559e-01, improvement=2.02x, R2=0.999923, TOWARD=3/3
+
+SAFE READ
+  cycle battery scores: [9, 9]
+  cycle mean gap: 9.828e-01 -> 4.734e-01
+  cycle gap improvement factor: 2.08x
+  cycle mean R2: 0.996306; two-body max=1.702e-16
+  holdout gap: 9.191e-01 -> 4.559e-01 (2.02x)
+  bounded live packet only: no old stale table or continuum closure
+  [PASS (C)] live capture packet
+ASSERTIONS: PASS
+
+----- stderr -----
+

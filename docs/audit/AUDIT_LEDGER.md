@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1131 |
+| unaudited | 1130 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1369 |
+| `unaudited` | 1368 |
 
 | claim_type | count |
 |---|---:|
@@ -1124,6 +1124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2129,6 +2130,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Zero GF(3)-closable distinct supports occur at action size 6, so the order-beta^6 coefficient comes only from the four cube shells' order-6 multiplicity cumulants, whose exact SU(3) Haar cumulant sum is d_6 = 7/5668704.  _(class `C`)_
 - **chain closes:** True — The retained upstream notes supply the connected-cumulant expansion, the d_5 cube-shell anchor, and the finite shell geometry. The runner code instantiates exact SU(3) Haar projectors, set-partition cumulants, GF(3) support enumeration, and an independent Fraction cross-check; the displayed rational identities d_5, d_6, d_6/d_5, and d_7^pred are arithmetically consistent.
 - **rationale:** The load-bearing coefficient is not imported from a comparator or defined by renaming; it is computed from exact finite Haar integrals and finite connected-support enumeration. The cited authorities are retained-grade for this bounded use, and the note explicitly avoids claiming P(6), beta_eff(6), or a certified numerical d_7. The formula inventory does not expose a false normalization, sign, factor, ratio, or displayed coefficient in the audited scope.
+- **auditor confidence:** medium
+
+### `beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30`
+
+- **Note:** [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](../../docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact bounded d_7 coefficient for Delta(beta) on the four cube-shell support, plus the arithmetic falsification of the specific prediction d_7^pred = (d_6/d_5)d_6.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260601-213323-abc3f8a9-beta6_plaquette_d7_coeff`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact order-beta^7 connected coefficient is d_7 = 5/17006112, equivalently 5/68024448 per cube shell, so d_7/d_6 = 5/21 differs from d_6/d_5 = 7/12 and falsifies the specified single-ratio geometric/tadpole ansatz.  _(class `C`)_
+- **chain closes:** False — The upstream d_5, d_6, and support-reduction authority is retained_bounded, and the displayed ratio arithmetic checks. However, the provided completed runner cache stops at maxorder=6 with PASS=18 and does not execute the V5/maxorder=7 d_7 computation claimed by the note.
+- **rationale:** The displayed formulas following the asserted d_7 are arithmetically consistent: 4*(5/68024448)=5/17006112, d_7/d_6=5/21, and the relative miss against 49/68024448 is 29/49. The load-bearing exact d_7 value itself is not certified by the provided completed output: the cache reports only d_5 and d_6, while the source note claims a maxorder=7 PASS=22 run. The visible runner source also has the optimized Fraction-engine middle omitted in the packet, so the restricted packet cannot verify that the order-7 coefficient is computed rather than asserted.
 - **auditor confidence:** medium
 
 ### `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30`

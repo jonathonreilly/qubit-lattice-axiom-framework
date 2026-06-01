@@ -19007,22 +19007,42 @@
       "verdict_rationale": "The load-bearing coefficient is not imported from a comparator or defined by renaming; it is computed from exact finite Haar integrals and finite connected-support enumeration. The cited authorities are retained-grade for this bounded use, and the note explicitly avoids claiming P(6), beta_eff(6), or a certified numerical d_7. The formula inventory does not expose a false normalization, sign, factor, ratio, or displayed coefficient in the audited scope."
     },
     "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-06-01T21:35:56.041526+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "Exact bounded strong-coupling result d_6 = 7/5668704 for Delta(beta) = P_full - P_1plaq, plus finite GF(3) support reduction showing no size-6 or size-7 distinct action support contributes beyond cube-shell multiplicities."
+        },
+        "dep_claim_type": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "e536150e66fdd3d041cd023d8ed1d807484a65a65314994ee34b9f71b49d2f8f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260601-213323-abc3f8a9-beta6_plaquette_d7_coeff",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The upstream d_5, d_6, and support-reduction authority is retained_bounded, and the displayed ratio arithmetic checks. However, the provided completed runner cache stops at maxorder=6 with PASS=18 and does not execute the V5/maxorder=7 d_7 computation claimed by the note.",
       "claim_id": "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
-      "claim_scope": null,
+      "claim_scope": "Exact bounded d_7 coefficient for Delta(beta) on the four cube-shell support, plus the arithmetic falsification of the specific prediction d_7^pred = (d_6/d_5)d_6.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-06-01T21:35:56.041526+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -19030,34 +19050,34 @@
         "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The exact order-beta^7 connected coefficient is d_7 = 5/17006112, equivalently 5/68024448 per cube shell, so d_7/d_6 = 5/21 differs from d_6/d_5 = 7/12 and falsifies the specified single-ratio geometric/tadpole ansatz.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "6b22d443064b1589884f9f22a2f51fde4263b1de32d0d3bf5b985a0d8458d972",
       "note_path": "docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the full primary runner source and a completed cache for `python3 scripts/frontier_beta6_connected_coefficient_2026_05_30.py 7`, or an independent certificate of the four cube-shell order-7 multiplicity sum.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 8,
+        "B": 1,
+        "C": 9,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 18
       },
       "runner_path": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
       "title": "Beta=6 SU(3) Plaquette D7 Coefficient and Geometric-Ratio Verdict",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The displayed formulas following the asserted d_7 are arithmetically consistent: 4*(5/68024448)=5/17006112, d_7/d_6=5/21, and the relative miss against 49/68024448 is 29/49. The load-bearing exact d_7 value itself is not certified by the provided completed output: the cache reports only d_5 and d_6, while the source note claims a maxorder=7 PASS=22 run. The visible runner source also has the optimized Fraction-engine middle omitted in the packet, so the restricted packet cannot verify that the order-7 coefficient is computed rather than asserted."
     },
     "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30": {
       "audit_date": "2026-05-30T13:18:19.345362+00:00",

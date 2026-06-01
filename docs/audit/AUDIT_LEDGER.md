@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 638 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 30 |
-| unaudited | 1143 |
+| unaudited | 1142 |
 | meta | 238 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 49 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -65,10 +65,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 980 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 54 |
-| `audited_failed` | 46 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1381 |
+| `unaudited` | 1380 |
 
 | claim_type | count |
 |---|---:|
@@ -1253,6 +1253,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_scaling_direct_replay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `source_resolved_retarded_green_pocket_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_transverse_propagating_green_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_backreaction_capture_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_green_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_iterative_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -13588,6 +13589,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The Frozen Result reports zero-source same-site and wavefield shifts of +0.000000e+00, positive wavefield deflections for s=0.0005 through 0.0080, and fitted exponents 1.00, 1.00, 0.99, 1.02, and 1.01 for instantaneous, same-site, wavefield, phase-ramp slope, and phase-ramp span scaling.  _(class `C`)_
 - **chain closes:** True — The fresh cached run for runner SHA bb0f86c1bca9d547eba476212a3c43bd39192823a69c7919705c5a48a65bbebe exits 0 and its stdout matches the note's reductions, row table, TOWARD count, and fitted exponents. The visible runner computes the finite-lattice fields, propagation, centroid shifts, phase-ramp metrics, and power fits rather than printing the frozen table as constants; this closes only the bounded runner-output claim.
 - **rationale:** The scoped claim is exactly the finite computation printed by the current cache: both zero-source shifts are zero, all five wavefield centroid shifts are positive, and the fitted exponents are near unity for the centroid and detector phase-ramp observables. No external comparator, continuum limit, generated-geometry transfer, or experimental-amplitude bridge is needed for this bounded scope. The clean verdict should not be read as validating any broader continuum or physical-source theorem beyond the stated finite runner family.
+- **auditor confidence:** high
+
+### `spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19`
+
+- **Note:** [`SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md`](../../docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-Λ Lieb-Robinson bound for the stated local Hamiltonian with the displayed constants, plus only conditional spatial cluster-decomposition support from a gap and a future filter lemma.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260601-205851-c11b40c9-spatial_cluster_decompos`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The proof's key counting step is `N_paths(n, X) ≤ |X| · D · (D + Z_max)^{n-1} ≤ |X| · K^n`, which is then inserted into the Duhamel tail to obtain the finite-volume Lieb-Robinson exponential bound.  _(class `A`)_
+- **chain closes:** False — The path-counting bound does not follow from the note's own union-growth condition: after k steps the union can have O(k) available sites, so the stated constant-branching `K^n` bound is not justified. The displayed constants also drift: `R_0 = sqrt2` conflicts with the stated lattice l1 distance for plaquette supports, and (C.1) does not match the later tail bound (C.9).
+- **rationale:** The headline LR theorem is not closed as written because the load-bearing Lemma B counting estimate is unsupported and appears false under the stated sequence condition. The runner checks small finite examples and algebraic SU(3) sequences, but it does not verify the general 3D interaction-graph counting or repair the displayed constant/metric mismatches. The cluster-decomposition portion is explicitly conditional on a missing filter lemma and gap inputs, so it remains support-only even aside from the LR proof defect.
+- **open / conditional deps cited:**
+  - `CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`
+  - `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
 - **auditor confidence:** high
 
 ### `spectral_closure_2026-04-09`

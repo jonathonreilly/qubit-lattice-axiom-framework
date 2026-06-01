@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/staggered_backreaction_live_green_packet_check.py
+runner_sha256: 4c20010a749979ac43fc543f11d37a557eb011fbfa628401001c8e139336dec8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+================================================================================================
+STAGGERED BACKREACTION LIVE GRAPH-GREEN PACKET
+  current runner surface; bounded positive read only
+================================================================================================
+mapping                gain  raw_cycle  cal_cycle   raw_hold   cal_hold    balance
+------------------------------------------------------------------------------------------------
+resistance_yukawa     1.517  3.425e-01  1.059e-01  1.534e-02  5.371e-01  3.744e-01
+geodesic_yukawa       1.502  3.366e-01  1.281e-01  2.140e-02  5.309e-01  3.936e-01
+screened_poisson     26.109  9.618e-01  5.407e-01  8.822e-01  2.165e+00  1.623e+00
+
+BEST MAP CALIBRATED READOUT
+resistance_yukawa  bipartite_random_geometric gap=7.491e-02 R2=0.9986 2body=1.702e-15 self_gap=5.958e-01 norm=4.44e-16 TOWARD=3/3
+resistance_yukawa  bipartite_growing          gap=1.369e-01 R2=0.9980 2body=1.474e-15 self_gap=5.260e-01 norm=7.77e-16 TOWARD=3/3
+resistance_yukawa  layered_bipartite_dag      gap=5.371e-01 R2=1.0000 2body=9.365e-16 self_gap=2.048e-01 norm=0.00e+00 TOWARD=3/3
+
+SAFE READ
+  best map: resistance_yukawa
+  raw cycle-gap improvement over screened Poisson: 2.81x
+  raw holdout gap: 1.534e-02
+  calibrated holdout gap remains large: 5.371e-01
+  cycle-bearing self-gap remains open: 1.339e-01
+  bounded live packet only: no clean calibrated holdout closure
+  [PASS (C)] live graph-Green packet
+ASSERTIONS: PASS
+
+----- stderr -----
+

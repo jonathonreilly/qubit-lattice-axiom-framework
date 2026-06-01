@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_fisher_rao_spherical_reorganization.py
+runner_sha256: bac1522a7fc98304f5dc58a500dd9edb729bc3e25ad0a233154dd8d1751bf831
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+
+========================================================================
+A. sqrt(m) is a Fisher-Rao sphere point; polar angle = Q (exact identity)
+========================================================================
+[PASS] cos^2(theta_p) = 1/(3Q) EXACTLY (Fisher-Rao polar angle <-> Koide Q)
+[PASS] => theta_p = pi/4  <=>  Q = 2/3  (cos^2 = 1/2)
+[PASS] forward (PDG): theta_p = pi/4, Q = 2/3 -- theta_p=0.78539 (pi/4=0.78540), Q=0.666661
+
+========================================================================
+B. delta_Brannen = the Fisher-Rao azimuth (definitional); period-2pi, hits bare 2/9
+========================================================================
+[PASS] the Brannen ansatz's nearest-vertex FR azimuth = delta (delta IS the FR azimuth, definitional) -- recovered = [np.float64(0.1), np.float64(0.2), np.float64(0.3)]
+[PASS] forward (PDG): FR nearest-vertex azimuth lands on BARE 2/9 = 0.2222 rad, NOT alpha_3=(2/9)*pi=0.698 -- azimuth=0.222230, bare 2/9=0.222222, (2/9)*pi=0.6981
+[PASS] => Fisher carrier dissolves PR#2455's literal (2/9)*pi-vs-2/9 one-pi framing (genuine period-2pi angle)
+
+========================================================================
+C. VALUE NOT FORCED: the azimuth is a free Killing direction (Fisher metric isotropic in phi)
+========================================================================
+[PASS] g_phi_phi = sin^2(theta) is INDEPENDENT of phi -> d/dphi is a Killing vector (exact isometry)
+[PASS] => rotation about the democratic axis is a Fisher isometry; the azimuth is a FREE direction -- the Cencov metric assigns NO preferred azimuth -> the value is observed, not forced
+[PASS] azimuthal arc length sin(theta_p)*delta = 0.157 != 2/9; geodesic distance to singlet = pi/4 != 2/9 -- arc_len=0.1571, geodesic=pi/4=0.7854; only the BARE COORDINATE ~2/9
+
+========================================================================
+D. The azimuth is an INPUT (drifts with mass); exact 2/9 is a tuning
+========================================================================
+[PASS] azimuth DRIFTS smoothly with m_tau (an input read off data, not a structural output) -- azimuth at m_tau*[0.95,1.0,1.05] = [np.float64(0.2287), np.float64(0.2222), np.float64(0.2163)]
+[PASS] exact 2/9 needs m_tau = 1776.97 MeV (~0.9 sigma off PDG 1776.86 +/- 0.12) -- m_tau(delta=2/9) = 1776.97 MeV; PDG = 1776.86
+
+========================================================================
+E. Normalization relocated: C_3 reintroduces 2pi/3; polar adds nothing
+========================================================================
+[PASS] a generation relabel shifts the azimuth by exactly 2pi/3 -> physical period 2pi/3, not 2pi -- azimuth shift under cyclic perm = 4.18879 (2pi/3 = 2.09440)
+[PASS] 2/9 is clean only as a period-1-rad count (delta/1); not a clean fraction of 2pi or 2pi/3
+[PASS] Q = 2/3 for ALL delta at amplitude sqrt2 (signed reading) -> polar=pi/4 is Q restated, orthogonal to azimuth
+
+========================================================================
+RESULT
+========================================================================
+
+14/14 checks passed.
+(Q=2/3, delta) are the Fisher-Rao spherical coordinates (polar pi/4, azimuth) of the sqrt(m)
+point: cos^2(theta_p)=1/(3Q) EXACT. Fisher supplies a genuine period-2pi azimuth that hits the
+bare 0.2222 directly, dissolving PR#2455's literal (2/9)*pi framing. But the VALUE 2/9 is NOT
+forced: d/dphi is a Killing vector (azimuth a free isometry direction), 2/9 is the observed
+azimuth (drifts with mass; exact 2/9 = a tuned m_tau), and C_3 reintroduces a 2pi/3 period.
+delta=2/9 rad stays open_gate. Adopts no records-metric and no radian convention.
+Next path: a records/Born variational principle that BREAKS the O(2) isometry could pin the
+longitude -- the metric alone provably cannot.
+
+----- stderr -----
+

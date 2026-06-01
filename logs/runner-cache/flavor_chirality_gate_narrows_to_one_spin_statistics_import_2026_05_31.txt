@@ -1,0 +1,24 @@
+[PASS] P1a on-site creator is nilpotent (sigma_+^2 = 0) -- shared by qubit, hard-core boson, fermion mode
+       dim-2 site excludes only the FREE boson; nilpotency is statistics-BLIND
+[PASS] P1b bare qubit ladders COMMUTE across sites; JW-dressed fermions ANTICOMMUTE (two distinct frames)
+       [sp_x,sp_y]=0 (ungraded/bosonic native product) vs {c1,c2}=0 (graded/fermionic)
+[PASS] P1c qubit-ladder algebra and JW-fermion algebra span the IDENTICAL ungraded algebra M_4(C) (rank 16)
+       qubit-ladder rank=16, JW-fermion rank=16 -> the operator ALGEBRA cannot distinguish the frames
+[PASS] P1d => the fermionic frame is NOT forced by A1(qubit)+A2(locality): a minimal spin-statistics import is needed
+       installing cross-site CAR needs a non-local JW string (violates A2) or an external graded-locality principle
+[PASS] P2a Clifford-Dirac factorization at k=(0.3, 1.1, 2.0): (iD)^2 = (sum sin^2 k) I (square root of the hopping Laplacian)
+       (iD)^2 == 1.7084 * I
+[PASS] P2b epsilon=(-1)^(x+y+z) is the Z^3 bipartite parity and {epsilon, nearest-neighbour hopping}=0 (A2-forced grading)
+       the staggered chiral grading is forced by A2 locality + bipartite Z^3; P2 rides on P1's Grassmann frame
+[PASS] P2c a second-order (Laplacian/Wilson) operator also satisfies A2 -> first-order is canonical-given-P1, not forced alone
+       the 2nd-order Laplacian COMMUTES-sector with epsilon (not anticommute) and is A2-local -> an admissible non-chiral alternative
+
+SCORECARD PASS=7 FAIL=0
+VERDICT: the chirality gate NARROWS to ONE import. A1's single-site Clifford structure is intrinsic to the
+qubit (recoverable theorems, not smuggled), and GIVEN a fermionic frame the first-order chiral Dirac (P2),
+the A2-forced staggered grading epsilon, the hw=1 locus and count 3 all follow (Clifford-Dirac + Dirac-Kahler
+=staggered). BUT 'a qubit per site' (A1) is STATISTICS-AGNOSTIC: qubit ~= hard-core boson ~= fermion mode span
+the identical ungraded M_{2^N}(C); A2 forbids the non-local JW string. So the fermionic matter FRAME (P1) is
+the single irreducible import -- the minimal axiom-sharpening that closes carrier-locus + generation-ID +
+count 3 + Koide-Q=2/3 chiral structure at once. Separate continuous inputs: r=1/2 (Yukawa) + readout class.
+The natural source for the P1 sharpening: spin-statistics from the emergent Lorentz (3,1) structure.

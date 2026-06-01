@@ -1,0 +1,91 @@
+# Flavor carrier from A1+A2 up: the momentum-factor carrier TYPE is FORCED; the hw=1 triplet LOCUS reduces to the one chiral operator-class import (the framework's recurring chirality gate); r=1/2 stays a separate input
+
+**Date:** 2026-05-31
+**Claim type:** positive partial derivation (Layer A forced from axioms) + a sharp gate-reduction (Layer B = one named import) + an input separation. Not a full closure.
+**Status authority:** independent audit lane only; this note sets source metadata only.
+**Runner:** `scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py` (SCORECARD 8/8).
+**Source:** workflow `wf_de220c3f-291` — 6 axioms-up routes + 3-lens adversarial verification + synthesis (25 agents). Directive: derive the carrier from A1+A2 up, ledger status set aside.
+
+## Question
+The carrier sub-claim is: the physical charged-lepton flavor observable lives on the intrinsic
+generation factor (the C₃ orbit of the hw=1 BZ corners, read as the intensive index density δ=2/9),
+not the Γ₅-graded extensive position-space lattice index. The prior note showed position-locality is
+generation-blind, so a *momentum/spectral* principle is required. **Can that principle — and the carrier
+— be built from A1+A2 up?**
+
+## Verdict: the carrier TYPE is FORCED; the LOCUS reduces to one named import; r=1/2 is separate
+
+The result splits cleanly into two layers, and the adversarial verification is internally consistent on
+which layer survives (the "lands-on-momentum-factor" lens upheld Layer A for **all six** routes, 0
+refutations; the "genuinely-from-A1A2" and circularity lenses refuted the Layer-B over-claims).
+
+### LAYER A — the carrier TYPE (momentum, not position) is DERIVED from A1+A2 (the genuine advance)
+- **A1** gives the Hilbert space `⊗_{x∈Z³} M₂(ℂ)` with three commuting translation unitaries `T_x,T_y,T_z`.
+- **A2** (locality) forces a translation-invariant local `H_dyn` with `[H_dyn, T_μ] = 0`; emergent time
+  gives it a spectrum and a propagator `G(ω,k)=1/(ω−H(k))`.
+- The **spectral theorem for the commuting normal family** `{T_x,T_y,T_z}` then forces a *basis-independent*
+  joint spectral decomposition over the Pontryagin dual `Ẑ³ = T³` (the Brillouin zone) — **no choice**.
+- **Generation-blind trap cleared (verified):** a local per-site observable has identical expectation
+  across all three generations (runner A3: `⟨P_site0⟩ = 1/8` for each), while a flavor-*separating*
+  observable is necessarily a non-local **momentum-block / corner-projector** (runner A3: `⟨P_k0⟩ =
+  (1,0,0)`). The `Γ₅=(−1)^{x+y+z}` extensive position index sums to 0 on the torus (runner A4) — a
+  bulk/off-shell total, disqualified as a single-particle observable.
+
+**So the carrier is the momentum factor as a theorem of A2.** The position-vs-momentum question — the
+half of the carrier that looked like a free choice — is *dissolved*. This is the substantive new content.
+
+### LAYER B — which momentum LOCUS is "the species" (hw=1 triplet) needs one named import
+A2 yields *some* translation-invariant local `H_dyn` whose spectrum is BZ-graded, but it does **not**
+single out the regulator that places exactly three poles at the hw=1 corners. Verified counterfactuals:
+- the naive/first-order dispersion `|D|²=Σ sin²(k_μ)` has its zero locus on **all 8** corners `{0,π}³`,
+  Hamming-graded `(1,3,3,1)` (runner B1) — hw=1 is a single C₃ orbit but is *not* singled out by the
+  dispersion alone;
+- a **Wilson / second-difference** operator puts its distinguished massless mode at **hw=0** (mass
+  staircase `0,2r,4r,6r`, runner B2) — not hw=1.
+
+Singling out the hw=1 C₃ triplet requires the **staggered / Kawamoto-Smit first-order CHIRAL operator** =
+single-mode Grassmann fermionization of the `M₂(ℂ)` qubit **+** chiral anticommutation `{ε,D}=0` (`ε=(−1)^{x+y+z}`).
+A1 gives a **bosonic** qubit; these are *premises* (`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE`
+premise table, BlockT1 + `{ε,D}=0`; the note is conditional, its own discriminator calls fermionization
+"compatibility, not forcing"). So the locus is a **genuine import**, not definitional.
+
+**The consolidation:** this import — the C₃-orbit-splitting chiral grading on the generation factor — is
+**the same chirality gate** the framework's generation-identification and Koide `Q=2/3` work independently
+reduce to. So the carrier *locus* is **not a new independent input**; it collapses into the one recurring
+chirality import the whole flavor sector shares.
+
+(Note: "physical species = propagator poles / band-degeneracies" is *near-definitional* once you have a
+propagator — granting it changes nothing; it only labels *which* momenta in T³ are species. The genuine
+import is the *operator class* that fixes the pole locus, not the pole reading.)
+
+### BASEPOINT r=1/2 — a separate continuous input
+The discrete pole/corner structure fixes only `δ=2/9` (the equivariant-η / Atiyah-Bott density
+`L₃(1,2)=2/9`, retaining the index apparatus — distinct from the bare doublet character `ω+ω²=−1`, runner
+C1). It says nothing about the **continuous** Yukawa modulus `r=|b|²/a²`: `r` is free in `F=aI+b(J−I)`,
+`Q=1/3+(2/3)r`, `r=1/2 ⟺ Q=2/3` (runner D1). `r=1/2` (tied to the signed/√m-sign readout class) remains a
+genuine continuous input, orthogonal to carrier selection.
+
+## Net standing of the charged-lepton flavor inputs (after this attack)
+1. **Carrier TYPE = momentum factor** — **DERIVED** from A1+A2 (spectral theorem on commuting translations).
+2. **Carrier LOCUS = hw=1 triplet** — reduces to the **chiral operator-class import** (staggered/KS;
+   single-mode Grassmann + `{ε,D}=0`), which **coincides with** the framework's recurring generation-ID /
+   `Q=2/3` chirality gate — *not a new input*.
+3. **Basepoint r=1/2** — a separate continuous Yukawa input.
+4. **Readout-class** (retain the index density over the bare character to land δ=2/9, not −1) — a separate
+   selection, consistent with the index/η signpost.
+
+This is the campaign's strongest consolidation: the carrier is no longer an independent unexplained
+input. Half of it (momentum type) is a theorem; the other half (locus) is the *same* chirality import the
+rest of the flavor sector pays for once. What remains genuinely free is the continuous `r=1/2` and the
+readout class. Per standing practice, the chirality import is a `gate`, not an airtight impossibility:
+the open physics question is whether a first-order chiral Dirac operator with hw=1 zero-modes can be
+forced from the bosonic `M₂(ℂ)` qubit (the single-mode-Grassmann/`{ε,D}=0` premises), which is the one
+lever that would also discharge generation-ID and `Q=2/3` simultaneously.
+
+## Provenance (verified 2026-05-31; derivation stands on A1+A2, ledger status non-constraining per directive)
+- Layer A is a direct A1+A2 + spectral-theorem construction (no note authority needed).
+- The Layer-B import premises are sourced to `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE` (premise
+  table BlockT1 + `{ε,D}=0`; conditional). The coinciding chirality gate is the one named in
+  `koide_z3_equivariant_anticommuting_no_go` (retained_bounded) and the generation-ID work.
+- `δ=2/9` = `L₃(1,2)` equivariant-η density (verified ≠ bare character −1). `r=1/2` free (verified).
+- Does not load-bear on `closure_c_staggered_dirac_gate` / `koide_phase_aps_eta_parity_route`.

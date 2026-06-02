@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py
-runner_sha256: f797c058681fb27188b7e9d9e4cf23e3e4087e86764882fd9bb36126bb9e34e1
+runner_sha256: 8bd21b62210eec5003178934322b760d7512dccbafba367ad8cff57c2aa49e27
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.991
+elapsed_sec: 2.01
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -64,6 +64,7 @@ Part 5: note's stated float samples theta = 0.4 -> 0.566, 0.9 -> 0.416
 Part 6: sign-flip boundary at theta = pi/12 (one eigenvalue exactly 0)
 ----------------------------------------------------------------------------------------
   [PASS (A)] theta = pi/12: lambda spectrum contains an EXACT zero (sign-flip boundary)  (lambda(pi/12) = [sqrt(3)/2 + 3/2, 0, 3/2 - sqrt(3)/2])
+  [PASS (A)] theta = pi/12 (boundary): Q_sv = 2/3 EQUALITY still holds (one zero eigenvalue, none negative)  (Q_sv(pi/12) = 2/3 (= 2/3); zeros=1, negatives=0 -> sum|lambda| = sum lambda = 3a)
   [PASS (A)] theta = pi/20 (inside window): all lambda > 0 and Q_sv = 2/3 exactly  (Q_sv equals signed value throughout the sign-homogeneous window)
   [PASS (A)] theta = pi/8 (outside window): a sign flip occurs and Q_sv < 2/3  (Q_sv(pi/8) = 0.57017092)
 
@@ -94,17 +95,22 @@ Summary
     (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= 2/3, equality iff sign-homogeneous
     (Non-const) Q_sv in {2/3, 6/(9+4 sqrt2), 6/(7+2 sqrt6)} at theta in {0, pi/3, pi/2}
     (Samples)  theta=0.4 -> 0.566, theta=0.9 -> 0.416 (both < 2/3); Q_signed stays 2/3
-    (Boundary) sign-flip at theta = pi/12; same-sign window |theta mod 2pi/3| < pi/12
+    (Boundary) one eigenvalue = 0 at theta = pi/12; Q_sv = 2/3 EQUALITY still holds there
+    (Regions)  strict all-positive OPEN window |theta mod 2pi/3| < pi/12;
+               Q_sv=2/3 equality region is the CLOSED set |theta mod 2pi/3| <= pi/12
     (Masses)   both readouts give identical m_k = lambda_k^2; only sqrt(m) signs differ
     (Corollary) one-negative closed form Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2
 
-  CONSEQUENCE: the retained Brannen Q = 2/3 closure relies on sqrt(m_k) being a
+  CONSEQUENCE: the Brannen Q = 2/3 signed-readout claim relies on sqrt(m_k) being a
   SIGNED real vector. Singular values (>= 0) destroy that sign structure, so reading
   the charged-lepton mass operator as singular values of a (non-Hermitian) Yukawa
   does NOT reproduce 2/3 at the r=1/2 operator. The signed (Hermitian / det_R) readout
   is the phenomenology-compatible one; the singular-value relaxation CHANGES the value.
 
 ========================================================================================
-TOTAL: PASS=28, FAIL=0
+TOTAL: PASS=29, FAIL=0
 ========================================================================================
-PASS=28 FAIL=0
+PASS=29 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py
+runner_sha256: 5e76b501464d6c7f681017d24b84d2bcd5389226a06a953777b85984efcf659d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
+
+========================================================================
+A. Same finite C3 operator carries L_3(1,2)=2/9 and the angle parameter
+========================================================================
+[PASS] L_3(1,2) = (1/N) sum_k det[(C^k-I)^-1|doublet] = 2/9 -- L3 = 0.2222222222
+[PASS] Jcs=(C-C^2)/sqrt3: Jcs^2=-P_doublet and exp((2pi/3)Jcs)=C
+[PASS] delta is Q-ORTHOGONAL: Q depends only on |b|/a, not arg(b)
+
+========================================================================
+B. Empirical Brannen delta (PDG) = bare 2/9 in radians
+========================================================================
+[PASS] PDG charged-lepton Koide Q = 2/3 -- Q = 0.666661
+[PASS] empirical Brannen delta = bare 2/9 = 0.2222 rad (to ~1e-4) -- delta_emp = 0.22223 rad,  2/9 = 0.22222,  diff = +0.00001
+
+========================================================================
+C. The gap is EXACTLY one factor of pi (period-1-rad vs 2pi-rad convention)
+========================================================================
+[PASS] Plancherel-step angle alpha_3 = (2/9)*pi = 0.698 rad (NOT the empirical 0.2222) -- alpha_3 = 0.698132
+[PASS] eta-holonomy angle 2pi*(2/9) = 1.396 rad (NOT the empirical 0.2222) -- 2pi*(2/9) = 1.396263
+[PASS] the gap is EXACTLY one factor of pi: alpha_3 = pi * delta_empirical -- alpha_3/delta_bare = 3.141593 = pi
+[PASS] => reaching bare 0.2222 rad requires a period-normalization choice
+
+========================================================================
+D. eta-as-phase FALSIFIED: delta is NOT the APS-eta holonomy
+========================================================================
+[PASS] spin-Dirac equivariant eta(Z_3;1,2) = 0 EXACTLY (the mod-Z phase object is zero, not 2/9) -- eta_APS = 0.000000+0.000000j
+[PASS] finite equivariant eta_C(H) is INTEGER-valued {0,2} (0 for r<1, 2 for r>1) -- not 2/9 -- eta_C(0.5)=-0.0, eta_C(1.5)=2.0
+[PASS] 2/9 is not an algebraic integer (minpoly 9x-2); the tested finite eta values are integers -- minpoly = 9*x - 2
+[PASS] the FIXED Fourier basis diagonalizes H(theta) for all theta -> eigenvectors theta-independent -- max off-diagonal in fixed basis over the loop = 4.71e-16
+[PASS] => Berry connection i<v_k|d_theta v_k> = 0 for each fixed mode -> arg(b)-loop Berry phase = 0 -- delta is a free SO(2) PARAMETER, not a geometric-phase OUTPUT
+
+========================================================================
+E. Family pun: the weight is (N^2-1)/(12N), NOT (N-1)/N^2 (coincide only at N=3)
+========================================================================
+[PASS] weight family (N^2-1)/(12N) and rank family (N-1)/N^2 are DIFFERENT functions
+[PASS] they coincide ONLY at N=3 (both = 2/9); diverge at N=2,4,5 -- N=5: (N^2-1)/12N=0.4000 vs (N-1)/N^2=0.1600
+
+========================================================================
+RESULT
+========================================================================
+
+16/16 checks passed.
+The same rational 2/9 appears in the finite C3 doublet weight and in the PDG-derived
+Brannen-angle comparator. The runner does not derive the bare-radian assignment:
+the Plancherel-step angle is (2/9)*pi, the eta-holonomy angle is 2pi*(2/9),
+the tested eta/Berry routes do not output bare 2/9, and the family identity
+(N^2-1)/(12N)=(N-1)/N^2 holds at N=3 only. No convention is adopted.
+
+----- stderr -----
+

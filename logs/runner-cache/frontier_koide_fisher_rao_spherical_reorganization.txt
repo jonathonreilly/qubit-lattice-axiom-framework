@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_fisher_rao_spherical_reorganization.py
+runner_sha256: e2a405e267f0ad6d2cc2c05d3b50341ef085a1e2b074cb2e885c0716b87f1df7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+
+========================================================================
+A. sqrt(m) is a Fisher-Rao sphere point; polar angle = Q (exact identity)
+========================================================================
+[PASS] cos^2(theta_p) = 1/(3Q) EXACTLY (Fisher-Rao polar angle <-> Koide Q)
+[PASS] => theta_p = pi/4  <=>  Q = 2/3  (cos^2 = 1/2)
+[PASS] forward (PDG): theta_p = pi/4, Q = 2/3 -- theta_p=0.78539 (pi/4=0.78540), Q=0.666661
+
+========================================================================
+B. delta_Brannen = the Fisher-Rao azimuth (definitional); period-2pi, hits bare 2/9
+========================================================================
+[PASS] the Brannen ansatz's nearest-vertex FR azimuth = delta (delta IS the FR azimuth, definitional) -- recovered = [np.float64(0.1), np.float64(0.2), np.float64(0.3)]
+[PASS] forward (PDG): FR nearest-vertex azimuth lands on BARE 2/9 = 0.2222 rad, NOT alpha_3=(2/9)*pi=0.698 -- azimuth=0.222230, bare 2/9=0.222222, (2/9)*pi=0.6981
+[PASS] => Fisher carrier uses a period-2pi planar azimuth for this coordinate
+
+========================================================================
+C. VALUE NOT FORCED: the azimuth is a free Killing direction (Fisher metric isotropic in phi)
+========================================================================
+[PASS] g_phi_phi = sin^2(theta) is INDEPENDENT of phi -> d/dphi is a Killing vector (exact isometry)
+[PASS] => rotation about the democratic axis is a Fisher isometry; the azimuth is a FREE direction -- the Cencov metric assigns NO preferred azimuth
+[PASS] azimuthal arc length sin(theta_p)*delta = 0.157 != 2/9; geodesic distance to singlet = pi/4 != 2/9 -- arc_len=0.1571, geodesic=pi/4=0.7854; only the BARE COORDINATE ~2/9
+
+========================================================================
+D. The azimuth is an INPUT (drifts with mass); exact 2/9 is a tuning
+========================================================================
+[PASS] azimuth DRIFTS smoothly with m_tau (an input read off data, not a structural output) -- azimuth at m_tau*[0.95,1.0,1.05] = [np.float64(0.2287), np.float64(0.2222), np.float64(0.2163)]
+[PASS] exact 2/9 needs m_tau = 1776.97 MeV (~0.9 sigma off PDG 1776.86 +/- 0.12) -- m_tau(delta=2/9) = 1776.97 MeV; PDG = 1776.86
+
+========================================================================
+E. Normalization relocated: C_3 reintroduces 2pi/3; polar adds nothing
+========================================================================
+[PASS] a generation relabel shifts the azimuth by exactly 2pi/3 -- azimuth shift under cyclic perm = 4.18879 (2pi/3 = 2.09440)
+[PASS] 2/9 is clean only as a period-1-rad count (delta/1); not a clean fraction of 2pi or 2pi/3
+[PASS] Q = 2/3 for ALL delta at amplitude sqrt2 (signed reading) -> polar=pi/4 is Q restated, orthogonal to azimuth
+
+========================================================================
+RESULT
+========================================================================
+
+14/14 checks passed.
+The sqrt(m) point has Fisher-Rao coordinates with cos^2(theta_p)=1/(3Q).
+The Brannen phase is the corresponding azimuth coordinate, but the value is
+not selected by the metric: d/dphi is a Killing vector, the azimuth drifts
+with the mass comparator, and cyclic relabeling shifts it by 2pi/3.
+No Fisher records metric or radian convention is adopted.
+
+----- stderr -----
+

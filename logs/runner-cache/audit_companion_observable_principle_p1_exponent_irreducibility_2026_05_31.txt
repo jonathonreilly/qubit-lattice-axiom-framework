@@ -1,0 +1,94 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_observable_principle_p1_exponent_irreducibility_2026_05_31.py
+runner_sha256: c803f7325c50e77f800165ed5e47d2dd571328dccab21d67aed1609bbedbbe1e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.81
+status: ok
+----- stdout -----
+Observable-Principle P1 exponent-fixing irreducibility — companion runner
+Reproves from primitives (exact SymPy); no fitted or observed inputs.
+
+==============================================================================
+T1: Z[J] = det(D+J) factorizes over independent (block-diagonal) D
+==============================================================================
+  [PASS] det(D_A (+) D_B + J) = det(D_A+J_A) . det(D_B+J_B)  [Z = Z_A . Z_B]
+         Z = (a**2 + j_A**2)*(b**2 + j_B**2) ;  Z_A . Z_B = (a**2 + j_A**2)*(b**2 + j_B**2)
+
+==============================================================================
+T2: FORM axis (operator PRODUCT) — det is a character, tr is not
+==============================================================================
+  [PASS] det(A . S) = det(A) . det(S)  (det is a multiplicative character)
+         det(A.S) - det A . det S = 0
+  [PASS] tr(A . S) != tr(A) . tr(S)  AND  != tr(A) + tr(S)  (tr fails the character axis)
+         tr-mult defect = -a0*s3 + a1*s2 + a2*s1 - a3*s0;  tr-add defect = a0*s0 - a0 + a1*s2 + a2*s1 + a3*s3 - a3 - s0 - s3
+  [PASS] concrete witness: tr(A.S), tr A . tr S, tr A + tr S all distinct
+         tr(A.S)=15, tr A . tr S=28, tr A + tr S=11
+
+==============================================================================
+T3: EXPONENT is free on the product-character axis (|det|^c char for all c)
+==============================================================================
+  [PASS] |det|^c is a product character for EVERY real c  ((t1 t2)^c = t1^c t2^c)
+         character defect = 0  (=> exponent c not fixed by the axis)
+  [PASS] det^k are k-distinct characters (exponent k not fixed by character law alone)
+         det^1 and det^2 differ as functions of A
+
+==============================================================================
+T4: cross-block 2nd derivative — log|det| passes (Loc), F_p fails (p!=0)
+==============================================================================
+  [PASS] d^2 log|det(D+J)| / dj_A dj_B = 0 on block-diagonal D  (Loc holds for log)
+         d^2 log Z / dj_A dj_B = 0
+  [PASS] d^2 (det(D+J))^p / dj_A dj_B = 4 j_A j_B p^2 Z^p/(Z_A Z_B) != 0  (Loc fails for F_p)
+         d^2 Z^p / dj_A dj_B = 4*j_A*j_B*p**2*(a**2 + j_A**2)**(p - 1)*(b**2 + j_B**2)**(p - 1)
+
+==============================================================================
+T5: LEMMA — (Add) <=> (Loc) <=> (Pot) on smooth W with W(0,0)=0 [the irreducibility step]
+==============================================================================
+  [PASS] (Add) forces the SAME mixed-coeff vanishing set as (Loc)
+         (Add): ['c11', 'c12', 'c13', 'c21', 'c22', 'c31']
+  [PASS] (Pot) forces the SAME mixed-coeff vanishing set as (Loc)
+         (Pot): ['c11', 'c12', 'c13', 'c21', 'c22', 'c31']
+  [PASS] => (Add) <=> (Loc) <=> (Pot): the exponent-fixing selectors are all P1-equivalent
+         bare-gradient potential selector / locality / additivity coincide on smooth W with W(0)=0
+
+==============================================================================
+T6: NORMALIZED-gradient (Born) selector selects NOTHING; only the BARE-gradient (= Pot = P1) excludes p!=0
+==============================================================================
+  [PASS] (1/p) Z^-p d(Z^p)/dj_A = d(log Z)/dj_A for ALL p  (Born/normalized gradient is exponent-blind)
+         normalized grad = 2*j_A/(a**2 + j_A**2)  ==  d log Z/dj_A = 2*j_A/(a**2 + j_A**2)
+  [PASS] BARE selector d(Z^p)/dj = d(log Z)/dj forces p . Z^p = 1 (impossible for non-constant Z)
+         (dZ^p/dj)/(d log Z/dj) = p*(a**2 + j_A**2)**p*(b**2 + j_B**2)**p = p . Z^p  -> =1 only in the p->0 (log) limit
+
+==============================================================================
+T7: live-ledger context presence (no dependency status consumed)
+==============================================================================
+  [PASS] target/context rows present without status-gating the claim
+         context rows present; no dependency status consumed
+
+==============================================================================
+T8: note honest-scope strings present; forbidden strings absent
+==============================================================================
+  [PASS] required honest-scope strings present
+         missing: []
+  [PASS] forbidden status-promotion / overclaim strings absent
+         found: []
+
+==============================================================================
+T9: source-note boundary declarations present
+==============================================================================
+  [PASS] source-note boundary declarations present
+         missing: []
+
+==============================================================================
+SCORECARD: PASS=17 FAIL=0
+==============================================================================
+
+A passing run supports ONLY the bounded irreducibility finding: the
+det-vs-tr FORM is a theorem on the operator-composition axis, while the
+EXPONENT-FIXING step is P1-equivalent under every selector that fixes it
+((Add)/(Loc)/(Pot)), and the one exponent-blind selector (normalized
+Born gradient) is too weak. It does NOT close P1, does NOT promote any
+row, and consumes no fitted or observed numerical targets.
+
+----- stderr -----
+

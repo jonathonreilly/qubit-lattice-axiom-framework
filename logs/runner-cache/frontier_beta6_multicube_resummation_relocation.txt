@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_multicube_resummation_relocation.py
+runner_sha256: 1e1541f876aca1f6c83fbdec6f8f59e1cc3a198c9290f63f8da21677b4d3bb0b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+[PASS] kappa_2 = m![b^m]K = 1/18  |  got 1/18
+[PASS] kappa_3 = m![b^m]K = 1/108  |  got 1/108
+[PASS] kappa_4 = m![b^m]K = 0  |  got 0
+[PASS] kappa_5 = m![b^m]K = -5/3888  |  got -5/3888
+[PASS] K'(beta) leading coefficient [beta^1] = 1/18 (framework-derived convention)
+[PASS] Euler 18^{1-F}: cube F=6 -> 1/18^5
+[PASS] Euler 18^{1-F}: two-cube box F=10 -> 1/18^9
+[PASS] N0(3,0) = 1 (SU(3) epsilon/baryon: 3x3x3 = 1+8+8+10, one singlet)
+[PASS] T=3 multiplicity truncation -> nearest root witness ~5.74 (below 6)  |  5.7390
+[PASS] root witness migrates monotonically 5.74 -> 8.205 as multiplicity tower fills  |  T3=5.739 T5=6.357 T8=7.385 T12=8.133 T20=8.205
+[PASS] high-truncation witness reaches the J-zero scale 8.2052 (> 6)  |  T20=8.2052
+[PASS] OPEN GATE: local K-built support is checked; full beta9/beta10 sector classification remains a source-runner target (NOT a closure)
+
+SCORECARD: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,43 @@
+
+=== RP two-step transfer-matrix Grassmann/Berezin bridge ===
+
+Scope: bounded_theorem companion to AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX
+       POSITIVITY_NOTE_2026-05-28 (audited_conditional). Supplies the
+       missing in-packet Grassmann coherent-state derivation of
+       t_1^(2)(p) = e^(-2 E(p)) via finite Berezin Gaussian integration.
+       Plus C2 tightening at sin(p)=0 modes.
+
+[PASS] A.berezin.identity: Berezin Gaussian gives expected per-mode kernel coefficient  (per-mode coefficient at (α_e=1.0, α_o=0.5, m=1.0): 0.5)
+[PASS] A.eigenvalue.decaying: decaying eigenvalue λ_p = e^(-2E(p)) ∈ (0, 1)  (sample λ_p at p=[0.5, 1.0, 1.5, 2.0], m=0.5: [0.5017, 0.3554, 0.2598, 0.205])
+[PASS] A.vacuum.overlap: vacuum-overlap normalization selects decaying mode (Osterwalder-Seiler)  (boundary condition χ̄_{t→+∞} → 0 forces growing mode to unnormalizable; standard prescription)
+[PASS] A.consistency: per-mode Berezin kernel coincides with decaying classical eigenvalue under OS prescription  (identification verified by matching coefficient α_o·α_e/m to cosh(2E) - 1 identity)
+[PASS] B.eigenvalues.m=0.1: T_even eigenvalues at sin(p)=0 match closed form  (got [-1.104988, 0.904988], expected [-1.104988, 0.904988])
+[PASS] B.single_step.m=0.1: single-step T_even at sin(p)=0 has mixed-sign spectrum (non-positive)  (positive eigenvalue: 0.9050, negative: -1.1050)
+[PASS] B.two_step.m=0.1: 2-step T_even² has all non-negative eigenvalues  (T² eigenvalues: [0.819, 1.221])
+[PASS] B.eigenvalues.m=0.5: T_even eigenvalues at sin(p)=0 match closed form  (got [-1.618034, 0.618034], expected [-1.618034, 0.618034])
+[PASS] B.single_step.m=0.5: single-step T_even at sin(p)=0 has mixed-sign spectrum (non-positive)  (positive eigenvalue: 0.6180, negative: -1.6180)
+[PASS] B.two_step.m=0.5: 2-step T_even² has all non-negative eigenvalues  (T² eigenvalues: [0.382, 2.618])
+[PASS] B.eigenvalues.m=1.0: T_even eigenvalues at sin(p)=0 match closed form  (got [-2.414214, 0.414214], expected [-2.414214, 0.414214])
+[PASS] B.single_step.m=1.0: single-step T_even at sin(p)=0 has mixed-sign spectrum (non-positive)  (positive eigenvalue: 0.4142, negative: -2.4142)
+[PASS] B.two_step.m=1.0: 2-step T_even² has all non-negative eigenvalues  (T² eigenvalues: [0.1716, 5.8284])
+[PASS] B.eigenvalues.m=2.0: T_even eigenvalues at sin(p)=0 match closed form  (got [-4.236068, 0.236068], expected [-4.236068, 0.236068])
+[PASS] B.single_step.m=2.0: single-step T_even at sin(p)=0 has mixed-sign spectrum (non-positive)  (positive eigenvalue: 0.2361, negative: -4.2361)
+[PASS] B.two_step.m=2.0: 2-step T_even² has all non-negative eigenvalues  (T² eigenvalues: [0.0557, 17.9443])
+[PASS] C.AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSIT: audited_conditional parent (this PR is i present on origin/main  (verified via git ls-tree)
+[PASS] C.SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_TH: Berezin identity retained authority (loa present on origin/main  (verified via git ls-tree)
+[PASS] C.STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BR: per-site Fock structure retained authori present on origin/main  (verified via git ls-tree)
+[PASS] C.STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_202: det positivity sidecar guardrail present on origin/main  (verified via git ls-tree)
+[PASS] C.AREA_LAW_MAJORANA_CAR_FOCK_EQUIVALENCE_NARROW: CAR ↔ Fock equivalence sidecar present on origin/main  (verified via git ls-tree)
+[PASS] D.no_parent_mod: does NOT modify the parent AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE  (this is a companion narrow note; parent text unchanged)
+[PASS] D.no_new_admission: no new admission beyond cited retained authorities  (Berezin (retained), Fock module (retained), Osterwalder-Seiler (textbook sidecar))
+[PASS] D.no_no_go_weakening: no retained no_go retired or weakened  (C2 tightening confirms single-step non-positivity (consistent with parent))
+[PASS] D.no_lift_claim: does NOT claim parent audited_conditional now lifts  (that's an audit-lane re-audit decision after this companion lands)
+[PASS] D.free_u1_only: scope limited to free U=1 surface (parent's scope)  (Berezin Gaussian closed form requires bilinearity; gauge-non-trivial extension out of scope)
+[PASS] D.one_particle_only: scope limited to one-particle sector (parent's load-bearing target)  (multi-particle Fock extension uses standard Γ(t_1) = ⊗_p diag(1, λ_p) already in parent)
+[PASS] D.no_axiom_extension: no new axiom or theory-language extension  (uses A1, A2, retained Berezin + Fock structure only)
+[PASS] D.no_path_integral_import: path-integral content uses retained Berezin only  (OS vacuum-overlap is textbook prescription, sidecar; bilinear Berezin Gaussian is retained)
+
+PASS=29  FAIL=0
+
+All Grassmann/Berezin bridge checks PASSED.
+Audit lane decides effective_status (bounded_theorem proposed).

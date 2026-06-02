@@ -12840,6 +12840,18 @@
       "dominant_class": "D",
       "runner": "scripts/cl3_koide_a1_route_f_casimir_difference_2026_05_08_routef.py"
     },
+    "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py"
+    },
     "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": {
       "assert_count": 7,
       "counts": {
@@ -14207,6 +14219,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py"
+    },
+    "koide_reality_type_permitted_not_forced_note_2026-05-30": {
+      "assert_count": 0,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_koide_reality_type_permitted_not_forced_2026_05_30.py"
     },
     "koide_records_objectivity_conditional_note_2026-05-31": {
       "assert_count": 0,
@@ -44098,6 +44122,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_koide_anticommuting_operator_derivation.py": {
       "assert_count": 7,
       "claims": [
@@ -45461,6 +45500,21 @@
       ],
       "counts": {
         "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_koide_reality_type_permitted_not_forced_2026_05_30.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_reality_type_permitted_not_forced_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 1,
         "B": 0,
         "C": 5,
         "D": 0
@@ -61079,12 +61133,12 @@
     "dominant_class_distribution": {
       "A": 283,
       "B": 307,
-      "C": 836,
+      "C": 838,
       "D": 319,
       "none": 461
     },
-    "runners_classified": 2206,
-    "runners_with_C": 1091,
+    "runners_classified": 2208,
+    "runners_with_C": 1093,
     "runners_with_D": 646
   }
 }

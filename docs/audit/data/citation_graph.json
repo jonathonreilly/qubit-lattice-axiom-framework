@@ -14957,6 +14957,18 @@
       "to": "higher_order_structural_theorems_note"
     },
     {
+      "from": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+      "to": "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_aps_block_by_block_forcing_note_2026-04-21",
       "to": "s3_cap_uniqueness_note"
     },
@@ -16771,6 +16783,30 @@
     {
       "from": "koide_readout_lane_demarcation_note_2026-05-30",
       "to": "action_normalization_note"
+    },
+    {
+      "from": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
@@ -62754,6 +62790,22 @@
       "runner_path": "scripts/cl3_koide_a1_route_f_casimir_difference_2026_05_08_routef.py",
       "title": "Koide A1 Route F \u2014 Yukawa Casimir-Difference Bounded Obstruction"
     },
+    "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": {
+      "claim_id": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b82deec905f5bc3a1447c8609e03cbec99c75bd9965ba875e672338cc8c38ac5",
+      "path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
+      "runner_path": "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py",
+      "title": "Koide Anticommuting Eigenvector and Circulant Eigenvalue Readouts Are Consistent"
+    },
     "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": {
       "claim_id": "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -64823,6 +64875,25 @@
       "path": "docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md",
       "runner_path": "scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py",
       "title": "Koide Real-Rep Block-Count Route: Permitted-Not-Forced"
+    },
+    "koide_reality_type_permitted_not_forced_note_2026-05-30": {
+      "claim_id": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "98c8dbd609c69cc38d661dcadd0d9a9723802ddf772be6a3d07969b76cbdb904",
+      "path": "docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_koide_reality_type_permitted_not_forced_2026_05_30.py",
+      "title": "Koide Reality Type Is Permitted, Not Forced: Real D Does Not Select the Wick Face"
     },
     "koide_records_objectivity_conditional_note_2026-05-31": {
       "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
@@ -90137,7 +90208,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 792,
+      "bounded_theorem": 794,
       "decoration": 1,
       "meta": 201,
       "no_go": 93,
@@ -90146,7 +90217,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1193,
+      "bounded_theorem": 1195,
       "decoration": 1,
       "meta": 201,
       "no_go": 196,
@@ -90154,10 +90225,10 @@
       "open_gate": 134,
       "positive_theorem": 578
     },
-    "edge_count": 10218,
-    "leaf_count": 884,
-    "node_count": 2726,
+    "edge_count": 10227,
+    "leaf_count": 886,
+    "node_count": 2728,
     "root_count": 941,
-    "runners_with_path": 2311
+    "runners_with_path": 2313
   }
 }

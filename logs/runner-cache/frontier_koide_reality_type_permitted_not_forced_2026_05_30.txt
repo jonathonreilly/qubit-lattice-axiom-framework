@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_reality_type_permitted_not_forced_2026_05_30.py
+runner_sha256: 7e9706fa0ac1e7fdc01f9024e78ece4f33df6d3805dab2555ce8601107838ea5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+
+========================================================================================
+Koide reality-type permitted-not-forced; reduces to one Wick-face scalar
+========================================================================================
+
+========================================================================================
+F1 — one real anti-Hermitian D admits BOTH Wick faces (real-matrix != real-field)
+========================================================================================
+[PASS] F1.1 D is real and anti-Hermitian (D^T = -D, real entries)
+       |Im D| = 0.0e+00; |D + D^T| = 0.0e+00
+[PASS] F1.2 face (a): omega(u,v)=u^T D v is a nonzero ANTISYMMETRIC (symplectic) form (-> Majorana/Pfaffian -> per-block -> Q=2/3)
+       omega(u,v) = -1.0623, omega(v,u) = 1.0623 (antisymmetric: sum = 0.0e+00)
+[PASS] F1.3 face (b): h(u,v)=conj(u)^T (iD) v is a Hermitian form, iD Hermitian (-> Dirac/determinant -> per-dim -> Q=1)
+       |iD - (iD)^dag| = 0.0e+00
+[PASS] F1.4 KILL-SHOT: the SAME real anti-Hermitian D supports BOTH faces -> reality of the MATRIX selects neither; the FIELD-reality (chi-bar=chi^T s or independent) is the unsourced selector (cpt_exact = necessary-not-sufficient)
+       reality of D is real-matrix on a complex space; not real-field
+
+========================================================================================
+F2 — Jcs unique C3-equivariant real-antisym; (Jcs|doublet)^2 = -I_2
+========================================================================================
+[PASS] F2.1 only C3-equivariant real-antisymmetric operator on R^3 is span{Jcs}
+       dim(antisym ∩ commute-C) = 1
+[PASS] F2.2 (Jcs|doublet)^2 = -I_2 (doublet is a genuine complex line C^1; the '1' in per-block (1,1) is COMPUTED)
+       Jcs|doublet = [[0.0, -1.0], [1.0, 0.0]], (Jcs|doublet)^2 = [[-1.0, -0.0], [0.0, -1.0]]
+
+========================================================================================
+F3 — per-block vs per-dim is a counting theorem (Pf degree 1 vs det degree 2)
+========================================================================================
+[PASS] F3.1 Pf(lam*J2) has degree 1 in lam (doublet counted ONCE -> per-block (1,1))
+       Pf(lam*J2) = -lam (degree 1)
+[PASS] F3.2 det(lam*I2) = lam^2, degree 2 (doublet counted TWICE -> per-dim (1,2))
+       det(lam*I2) = lam**2 (degree 2)
+
+========================================================================================
+F4 — real/Jcs face is self-consistent with the Dirac-looking spectrum
+========================================================================================
+[PASS] F4.1 [H, Jcs] = 0 and H has 3 DISTINCT REAL eigenvalues (generic complex b) -> real measure-face compatible with 'Dirac-looking' charged leptons
+       |[H,Jcs]| = 6.3e-18; eig(H) = [0.3263 1.0537 1.62  ] (3 distinct real)
+
+========================================================================================
+F5 — the whole value reduces to b/a: per-block r=1/2 vs per-dim r=1
+========================================================================================
+[PASS] F5.1 Q=(1+2r)/3: per-block (1,1) -> r=1/2 -> Q=2/3; per-dim (1,2) -> r=1 -> Q=1
+       Q(1/2) = 2/3, Q(1) = 1; E_+=3a^2, E_perp=6|b|^2 -> r=|b|^2/a^2 the single unsourced scalar
+
+========================================================================================
+SUMMARY
+========================================================================================
+  10/10 checks passed
+
+  cpt_exact real-D = real MATRIX on a complex space: one D admits BOTH the
+    symplectic (Q=2/3) and Hermitian (Q=1) Wick faces -> necessary-not-sufficient.
+  cited complex/Dirac comparison gives the per-dim Q=1 side (substep1 independent
+    pair, substep2 central-i, cl3 complexified module). Q=2/3 is algebraically
+    coherent EXCEPT for the one field-reality / Wick-face selection.
+  => the whole charged-lepton Koide value = the single scalar b/a (r=1/2 vs r=1).
+  next path: a C3-invariant first-order Berry/WZ term B^T Jcs B-dot (writable
+    WITHOUT continuous U(1)_b, dodging C^3=I) -- is it source-generated?
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

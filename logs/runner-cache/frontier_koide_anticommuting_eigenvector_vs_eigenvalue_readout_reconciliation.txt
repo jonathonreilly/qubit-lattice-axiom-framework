@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py
+runner_sha256: e42b04c651df2cc1fe50a6c0ecddfe88702f3c0e7fa1d6ee5a875ef012dab7ac
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+
+========================================================================
+A. Gamma_chi = (2/3)J - I: chirality grading, eigenvalues {+1,-1,-1}, Gamma^2=I
+========================================================================
+[PASS] Gamma_chi eigenvalues = {+1 (singlet), -1,-1 (doublet)}
+[PASS] Gamma_chi^2 = I (Z_2 grading)
+
+========================================================================
+B. Anticommuting (CHIRAL) H: {H,Gamma_chi}=0 forces +/- symmetric spectrum {-lam,0,+lam}
+========================================================================
+[PASS] H_anti is real symmetric (Hermitian)
+[PASS] {H_anti, Gamma_chi} = 0 (anticommute)
+[PASS] spectrum is +/- symmetric with a zero: {-lam, 0, +lam} -> Sum lam = 0 -- eigenvalues = [-1.0, 0.0, 1.0], sum = 5.6e-16
+[PASS] general: {H,Gamma}=0 + Gamma^2=I => H ~ -H (conjugate) => spectrum(-lam)=spectrum(lam) -- odd 3-dim => one eigenvalue is its own negative = 0 => Sum lam = 0 for ANY anticommuting H
+
+========================================================================
+C. The THEOREM's readout = the eigenVECTOR: Q(v) = 2/3 via LCC <v|Gamma|v>=0
+========================================================================
+[PASS] LCC: <v|Gamma_chi|v> = 0 for every nonzero-eigenvalue eigenvector
+[PASS] eigenVECTOR readout Q(v) = (Sum v_g^2)/(Sum v_g)^2 = 2/3 (the anticommuting THEOREM) -- sqrt(m)_g = v_g (eigenvector components)
+
+========================================================================
+D. The FAN-OUT's number = the eigenVALUE readout of the SAME H: Q = INF (Sum lam = 0)
+========================================================================
+[PASS] eigenVALUE readout Q = (Sum lam^2)/(Sum lam)^2 = INF (since Sum lam = 0) -- (Sum lam^2)=2.00, (Sum lam)^2=3.1e-31 -> INF; this is Q of the SPECTRUM, not the eigenvector
+
+========================================================================
+E. The NON-CHIRAL circulant route: eigenVALUE readout Q=2/3 at r=1/2, [H,Gamma]=0
+========================================================================
+[PASS] circulant H=aI+bC+bbar C^2 at r=1/2: eigenVALUE readout Q=2/3 for every theta -- sqrt(m)_k = lam_k (eigenvalues)
+[PASS] circulant H COMMUTES with Gamma_chi ([H,Gamma]=0) -> NON-chiral
+
+========================================================================
+F. Reconciliation: no contradiction -- two readouts, both Q=2/3
+========================================================================
+[PASS] the two cited theorem routes use DIFFERENT sqrt(m) readouts (eigenvector vs eigenvalue)
+[PASS] the INF and the 2/3 are Q of DIFFERENT objects (spectrum vs eigenvector) of the SAME anticommuting H -- the fan-out applied the eigenVALUE readout to the eigenVECTOR-readout theorem = category error
+[PASS] NON-CIRCULAR: Q=2/3 emerges as output in both routes; the chirality/readout was never assumed
+
+========================================================================
+RESULT
+========================================================================
+
+14/14 checks passed.
+The anticommuting (CHIRAL) Q=2/3 [eigenVECTOR readout, Q(v) via LCC] and the circulant
+(NON-chiral) Q=2/3 [eigenVALUE readout, sqrt(m)=lam_k at r=1/2] are CONSISTENT. The fan-out's
+'anticommuting operator -> Q=INF' is the eigenVALUE readout of the chiral H (forced Sum lam=0 by
+{H,Gamma}=0), NOT the readout the anticommuting theorem uses. No contradiction. The genuine fork
+is the sqrt(m) READOUT CLASS (eigenvector components vs eigenvalues), not chiral-vs-non-chiral Q.
+
+----- stderr -----
+

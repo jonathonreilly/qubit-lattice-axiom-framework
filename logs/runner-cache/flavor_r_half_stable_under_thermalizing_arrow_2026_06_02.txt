@@ -1,0 +1,21 @@
+[PASS] 1 arrow-of-time flip: sharpening S'(1/2)=2 (REPELLER); thermalizing g'(1/2)=1/2 (STABLE); every seed -> r=1/2 (GLOBAL attractor)
+       thermalizing flow from {0.05..5.0} all -> [0.5, 0.5, 0.5, 0.5, 0.5, 0.5]; reversing the entropy arrow flips repeller<->attractor
+[PASS] 2 r=1/2 <=> HS 2-sector equipartition: ||aI||^2 = ||bC+conj(b)C^2||^2 (3a^2=6|b|^2), the unique 2-block entropy max
+       ||aI||^2=3.000 = ||doublet||^2=3.000
+[PASS] 3 endpoint exclusion: r=0 -> [1,1,1] (degenerate) and r=1 -> [0,0,3] (two massless) both EXCLUDED for distinct massive e,mu,tau -> leptons forced interior
+       r=0 eig=[1.0, 1.0, 1.0], r=1 eig=[-0.0, -0.0, 3.0] -> admissible set is the open interior (0,1)
+[PASS] 4 the 'sigma' involution |b|^2->a^2-|b|^2 IS r<->1-r and CHANGES Tr H^2 -> a relabeling, NOT a dynamical symmetry (stability rests on equipartition+endpoints+arrow, not symmetry-protection)
+       Tr H^2(0.2)=4.2 != Tr H^2(0.8)=7.800000000000001 -> not Casimir-preserving
+[PASS] 5 RESIDUAL: only the 2-SECTOR entropy peaks at r=1/2; the 3-eigenvalue spectral entropy peaks at r=0 -> r=1/2 stability requires the 2-sector coarse-graining (the det_C/einselected-partition gate)
+       argmax S2(2-sector)=0.501 (=1/2); argmax Sspec(3-eigenvalue)=0.010 (->0) -> the partition is the open posit
+
+SCORECARD PASS=5 FAIL=0
+VERDICT (assumptions brainstorm, wf_919df127): r=1/2 IS STABLE -- the 'unstable' verdict ran the WRONG
+ARROW OF TIME (the entropy-DECREASING observer/sharpening flow). Under the physical closed-system
+entropy-INCREASING thermalizing (second-law) flow, r=1/2 is the GLOBAL stable attractor (verified: every
+seed flows there; multiplier 1/2). GROUNDED: r=1/2 = HS 2-sector equipartition (exact algebra) + charged
+leptons forced INTERIOR (endpoint exclusion). RESIDUAL (the one gate, dynamical language): (a) the flow
+must coarse-grain by the 2 ISOTYPE SECTORS (only then is r=1/2 the max-entropy attractor; spectral->r=0,
+Plancherel->r=1) = the det_C/einselected-partition gate; (b) binding r to the thermalizing arrow is a
+posit. The user's conviction is vindicated: r=1/2 is the symmetry-... the EQUIPARTITION second-law
+equilibrium, stable -- modulo the same 2-sector-partition gate the whole campaign reduces to.

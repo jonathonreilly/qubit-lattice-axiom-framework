@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py
+runner_sha256: 2218bb7b4d4ce4198b72c6b9e8ed5b0fb99ed274e06124579c13c7ca67f6abb7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.92
+status: ok
+----- stdout -----
+=== [A] J Taylor coefficients from the retained Picard-Fuchs recurrence ===
+[PASS] recurrence seed a_2 = 1/36
+[PASS] P_1plaq(6)=J'/J = 0.4225317396 (recurrence)  ::  P1=0.42253173965
+[PASS] recurrence J(6) == Bars J(6) (comparator)
+
+=== [B] single-plaquette cumulant GF K = log J ===
+[PASS] kappa_2 = 1/18
+[PASS] kappa_3 = 1/108
+[PASS] kappa_4 = 0
+[PASS] kappa_5 = -5/3888
+
+=== [C] cube-sector closed form 72 K'' (K')^5 -> d5..d9 cube-part ===
+[PASS] 72 K''(K')^5 [b^5] = on-main d_5 = 1/472392  ::  got 1/472392
+[PASS] 72 K''(K')^5 [b^6] = on-main d_6 = 7/5668704  ::  got 7/5668704
+[PASS] 72 K''(K')^5 [b^7] = on-main d_7 = 5/17006112  ::  got 5/17006112
+[PASS] 72 K''(K')^5 [b^8] = on-main d_8 = 5/272097792  ::  got 5/272097792
+[PASS] 72 K''(K')^5 [b^9] = cube-part d9 = -235/29386561536  ::  got -235/29386561536
+
+=== [D] J-zero migration evidence: 5.74 (T=3) -> 8.205 (T>=20) ===
+    T= 3: nearest |J-zero| = 5.739049
+    T= 4: nearest |J-zero| = 6.049833
+    T= 6: nearest |J-zero| = 6.850383
+    T= 8: nearest |J-zero| = 7.384983
+    T=12: nearest |J-zero| = 8.133214
+    T=16: nearest |J-zero| = 8.195524
+    T=20: nearest |J-zero| = 8.205246
+    T=25: nearest |J-zero| = 8.205214
+    T=30: nearest |J-zero| = 8.205214
+[PASS] T=3 truncation nearest zero = 5.739 (unstable T=3 witness)  ::  |z|_{T=3}=5.73905
+[PASS] T>=20 nearest truncated zero stabilizes near 8.2052  ::  |z|_{T=20}=8.20525
+[PASS] selected truncation sequence migrates upward and crosses 6 by T=4  ::  5.74<...<8.205, crosses 6 by T=4
+[PASS] high-truncation cube-sector root witness is > 6
+
+=== [E] Euler-weighted proliferation balance -> growth-product threshold ===
+[PASS] single cube: F=6 -> Euler weight 18^(1-6)=18^-5 (matches d5 prefactor 1/18^5)
+[PASS] two-cube box: share 1 face -> F=10 -> 18^(1-10)=18^-9 (on-main beta^9 box term)
+[PASS] K-built regime per-cube increment dF = dn = 4 (tree/box gluing, links<=2-face)
+    g_K=1.0:  R_Euler = 18/g_K^(1/4) = 18.0
+    g_K=7.0:  R_Euler = 18/g_K^(1/4) = 11.0662
+    g_K=81.0:  R_Euler = 18/g_K^(1/4) = 6.0
+[PASS] critical growth product for R=6: g_crit = (18/6)^4 = 81  ::  g_crit = 81.0
+[PASS] illustrative self-avoiding-chain normalization g_K=7 gives R_Euler > 6  ::  R_Euler(7)=11.0662
+[PASS] if an external lambda_K <= 7 bound were supplied, rho_crit would be 81/7  ::  rho_crit(lambda_K=7) = 11.5714
+
+    cube-sector (single-cube) radius (J-zero)      = 8.2052
+    Euler-regime illustrative bound (g_K=7)         = 11.0662
+    Fisher/Lee-Yang thermodynamic comparator       ~ 5.54 (CITED, lattice-QCD)
+
+    g_crit (Euler-regime radius hits 6 here)       = 81.0
+[PASS] VERDICT: Euler-18 sector radius > 6 for all g_K < 81  ::  K-built sector radius > 6 only under the explicit growth-product condition g_K < 81; the full radius is min(K-built, >=3-face baryon channel), and the baryon channel is open)
+
+SCORECARD: PASS=23 FAIL=0
+
+----- stderr -----
+

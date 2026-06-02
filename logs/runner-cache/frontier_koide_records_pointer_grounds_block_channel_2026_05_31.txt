@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_records_pointer_grounds_block_channel_2026_05_31.py
+runner_sha256: 3eb0f5ca5a30b7de6de9bb4ebee8955e4280f339267662e7e072b97ab225668b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+
+========================================================================================
+Finite C3 pointer/trace channel bookkeeping
+========================================================================================
+
+========================================================================================
+F1 - pointer-style S=C+C^2 resolves 2 blocks
+========================================================================================
+[PASS] F1.1 S = C + C^2 is real and C3-equivariant; spectrum {+2,-1,-1} = 2 eigenspaces
+       spec(S) = [np.float64(-1.0), np.float64(-1.0), np.float64(2.0)] (singlet +2, doublet -1,-1)
+[PASS] F1.2 omega, omega^2 are complex conjugates -> SAME pointer eigenvalue with the same pointer-style eigenvalue
+       <v_w|S|v_w>=-1.000, <v_w2|S|v_w2>=-1.000 (equal); v_w2 = conj(v_w)
+
+========================================================================================
+F2 - the block grading commutes with Gamma_chi
+========================================================================================
+[PASS] F2.1 [S, Gamma_chi] = 0 (co-diagonalizes the 2 blocks; never anticommutes) -> the anticommuting no-go's target is not this commuting block grading
+       |[S,Gamma_chi]| = 0.0e+00; |{S,Gamma_chi}| = 2.67 (commutes)
+[PASS] F2.2 J=(C-C^2)/sqrt3 commutes with C, J^2=-P_doublet, a single FIXED tensor (not a continuous U(1)_b) -> C^3=I does not obstruct the per-block measure-J
+       fixed complex structure, not a one-parameter symmetry group
+
+========================================================================================
+F3 - trace-style dimension count
+========================================================================================
+[PASS] F3.1 full trace I/3 weights the doublet by dimension 2
+       two-block pointer-style count and dimension-weighted trace count are distinct
+
+========================================================================================
+F4 - equal-weight functional -> r=1/2; dimension-weighted -> r=1; trace flat
+========================================================================================
+[PASS] F4.1 equal-weight log-capacity extremum -> E_+=E_perp -> r=|b|^2/a^2=1/2 -> Q=2/3
+       r* (equal-weight) = 1/2
+[PASS] F4.2 dimension-weighted extremum -> r=1 -> Q=1; linear trace E_++E_perp=T flat
+       r* (dimension-weighted) = 1; trace = T (constant, ranks neither)
+
+========================================================================================
+SUMMARY
+========================================================================================
+  7/7 checks passed
+
+  Finite algebra supports two bookkeeping readouts:
+    pointer-style S=C+C^2 resolves singlet/doublet blocks
+    trace-style I/3 weights the doublet by dimension
+  Equal-weight and dimension-weighted functionals give different extrema.
+  Records/objectivity dynamics are not derived here.
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

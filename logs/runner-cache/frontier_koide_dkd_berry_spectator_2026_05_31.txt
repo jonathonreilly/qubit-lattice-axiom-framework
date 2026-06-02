@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py
+runner_sha256: 9e837b94219798da8d2b86c04dff62e08bdf0e59076bb276e9771819a1848f19
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+
+========================================================================================
+Kahler-Dirac form-degree coupling: corrected Berry boundary
+========================================================================================
+
+========================================================================================
+F1 - Fock substrate and Lambda^1 embedding
+========================================================================================
+[PASS] F1.1 CAR {a_j,a_k^dag}=delta; d^2=delta^2=0; i*D_KD Hermitian
+       3-mode JW fermions on Lambda*(C^3), dim 8
+[PASS] F1.2 corrected Lambda^1 embedding is nonzero and has C^3=I on Lambda^1
+       ||lift(C)||_F = 1.732; ||lift(C)^3-lift(I)||_max = 0.0e+00
+
+========================================================================================
+F2 - form-parity grading anticommutes with i*D_KD
+========================================================================================
+[PASS] F2.1 {i*D_KD, Gamma_F} = 0 with Gamma_F=(-1)^N on the form factor
+       max|{i D_KD, Gamma_F}| = 0.0e+00
+
+========================================================================================
+F3 - the two circulant b-derivatives commute
+========================================================================================
+[PASS] F3.1 [dH/dRe b, dH/dIm b] = 0 (C and C^2 commute) -> simultaneously diagonalizable -> zero abelian Berry curvature
+       max|[dH/dx, dH/dy]| = 0.0e+00
+
+========================================================================================
+F4 - corrected zero-Berry spectator check fails; positive control nonzero
+========================================================================================
+[PASS] F4.1 corrected i*D_KD + circulant mass: Wilson phases are NOT all zero, so the submitted spectator theorem is not certified
+       Berry (kappa,band sweep) = ['-3.1e-33', '5.0e-01', '0.0e+00', '2.5e+00', '0.0e+00', '-6.1e-02']
+[PASS] F4.2 POSITIVE CONTROL: a chiral (non-commuting-coupling) 2-band gives a NONZERO monopole -> the Wilson-loop method detects curvature
+       Berry(chiral control) = -0.6871 (!=0)
+
+========================================================================================
+F5 - Gamma_F restricts to scalar -I on Lambda^1
+========================================================================================
+[PASS] F5.1 Gamma_F | Lambda^1 = -I (scalar) -> cannot impose <v|Gamma_chi|v>=0; the Koide grading Gamma_chi=(2/3)J-I is non-scalar on the generation R^3
+       Gamma_F|Lambda^1 = [-1.0, -1.0, -1.0] (= -I)
+
+========================================================================================
+SUMMARY
+========================================================================================
+  7/7 checks passed
+
+  Form-parity anticommutes with i*D_KD, and Gamma_F is scalar on Lambda^1,
+  but the corrected Lambda^1 embedding does not support the zero-Berry
+  spectator theorem: the tested Wilson phases are not all zero.
+  The form-degree Berry role is therefore an open source question.
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

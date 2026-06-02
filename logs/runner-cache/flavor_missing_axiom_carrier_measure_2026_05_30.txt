@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py
-runner_sha256: 54854a8315041da62a092311e61fb5fdc0937be702205f372230624fe365cf97
+runner_sha256: 216f24dce62798607eb2f456fd29deb90a5c06afd251216a54a850fd8ab22294
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.55
 status: ok
 ----- stdout -----
 [PASS] C1 ||I||^2=3, ||J-I||^2=6, <I,J-I>_HS=0 (canonical trace-orthogonal split)

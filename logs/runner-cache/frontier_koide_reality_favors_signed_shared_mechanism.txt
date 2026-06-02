@@ -1,0 +1,49 @@
+
+==============================================================================
+A. H=iD Hermitian (cpt_exact reality) -> REAL, SIGNED spectrum
+==============================================================================
+[PASS] the circulant H=aI+bC+bbar C^2 is HERMITIAN for real a (cpt: D real anti-Herm -> H=iD Herm)
+[PASS] its spectrum is REAL and SIGNED (some eigenvalues negative) -- spec = [-0.399  1.52   1.879] (signs [-1, 1, 1])
+
+==============================================================================
+B. SIGNED readout (operator spectrum) -> Q=2/3 theta-independent; SINGULAR needs an extra |.|
+==============================================================================
+[PASS] SIGNED readout sqrt(m_k)=lambda_k gives Q=2/3 for ALL theta (theta-INDEPENDENT) at r=1/2 -- max|Q_signed-2/3| = 3.33e-16
+[PASS] SINGULAR-VALUE readout sqrt(m_k)=|lambda_k| is theta-DEPENDENT and <= 2/3 -- Q_singular in [0.409, 0.667] -> needs the extra modulus |.| not in H's spectrum
+[PASS] both readouts give the SAME masses m_k=lambda_k^2; they differ ONLY in the sqrt(m) SIGN
+
+==============================================================================
+C. SHARED MECHANISM: self-adjointness => real spectrum => eigen-phase collapses U(1) -> Z_2 sign
+==============================================================================
+[PASS] Hermitian H: every eigen-phase arg(lambda) is 0 or pi -> a Z_2 SIGN (not a continuous U(1) phase)
+[PASS] a NON-self-adjoint operator has COMPLEX spectrum with continuous eigen-phases (U(1), not Z_2) -- => reality (self-adjointness) is exactly what reduces the eigen-phase to a sign -- the shared mechanism
+
+==============================================================================
+D. DIFFERENT FACTORS: site-qubit sigma_z sign (C^2) vs generation sqrt(m) sign (C^3)
+==============================================================================
+[PASS] site record sigma_z: signed eigenvalues +-1 on C^2 (dim 2) -- same TYPE (signed eigenvalue of a Hermitian op)
+[PASS] generation sqrt(m) sign: signed lambda_k on C^3 (dim 3) -- DIFFERENT operator on a DIFFERENT factor -- same mechanism (reality->sign), NOT one shared object; the C^2(site)<->C^3(generation) bridge is the open generation-ID gate
+
+==============================================================================
+E. DISPOSITION
+==============================================================================
+[PASS] reality (cpt_exact retained_bounded) FAVORS the signed readout: singular reading needs an extra |.| not in the spectrum -- the signed VALUE Q=2/3 rests on retained koide_circulant_q_two_thirds_algebraic (T3)
+[PASS] convergence is a SHARED MECHANISM (reality=>real spectrum=>sign), NOT a single shared object across the two pins -- records-U and sqrt(m)-sign are the same TYPE on different factors (C^2 site vs C^3 generation)
+[PASS] residuals named (NOT adopted): records-are-of-H=iD IMPORT; readout last-step UNAUDITED internal (not import); C^2<->C^3 = open gen-ID gate -- the audited_failed signed-readout note is only a boundary-wording defect; core+value rest on retained ground
+
+==============================================================================
+RESULT
+==============================================================================
+
+12/12 checks passed.
+Reality of the emergent-time generator (cpt_exact: D real anti-Herm -> H=iD Hermitian, retained_bounded)
+places the native Koide mass operator on the SIGNED side: the signed readout sqrt(m)=lambda_k is the
+operator's own (real, signed) spectrum giving Q=2/3 theta-independently (retained value), while the
+singular-value reading needs an extra modulus |H|=sqrt(H^2) NOT in the spectrum. This same reality
+mechanism (self-adjointness => real spectrum => eigen-phase U(1)->Z_2 sign) is what would force the
+records-side U=I -- but on a DIFFERENT factor (site qubit C^2 sigma_z sign vs generation C^3 sqrt(m)
+sign). So ONE reality principle is a shared MECHANISM, not a single shared OBJECT; it favors the signed
+readout but does not collapse both pins into one discharge. Residuals (named): records-are-of-H=iD is an
+import; the readout last step is an unaudited internal identification (not an import); the C^2<->C^3
+bridge is the open generation-ID gate. NEXT: audit koide_readout_lane_demarcation (the signed-native
+claim), and probe the C^2<->C^3 factor bridge -- the same gate the generation-ID question already names.

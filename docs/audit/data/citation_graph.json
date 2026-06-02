@@ -613,6 +613,22 @@
       "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
     },
     {
+      "from": "admitted_input_registry_tier_a_note_2026-05-23",
+      "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+    },
+    {
+      "from": "admitted_input_registry_tier_a_note_2026-05-23",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "admitted_input_registry_tier_a_note_2026-05-23",
+      "to": "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24"
+    },
+    {
+      "from": "admitted_input_registry_tier_a_note_2026-05-23",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
       "from": "ai_methodology_note_2026-04-25",
       "to": "publication.ci3_z3.readme"
     },
@@ -3710,6 +3726,10 @@
     },
     {
       "from": "canonical_harness_index",
+      "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+    },
+    {
+      "from": "canonical_harness_index",
       "to": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
     },
     {
@@ -3895,6 +3915,106 @@
     {
       "from": "charged_lepton_koide_cone_algebraic_equivalence_note",
       "to": "structural_no_go_survey_note"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "three_generation_observable_theorem_note"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "three_generation_observable_count_corollary_note_2026-05-03"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "generation_axiom_boundary_note"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_aps_block_by_block_forcing_note_2026-04-21"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_brannen_phase_reduction_theorem_note_2026-04-20"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "koide_a1_brannen_plancherel_identity_support_note_2026-04-25"
+    },
+    {
+      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "to": "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09"
     },
     {
       "from": "charged_lepton_mass_hierarchy_review_note_2026-04-17",
@@ -41093,9 +41213,14 @@
       "claim_type_author_hint": "meta",
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
-      "deps": [],
+      "deps": [
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "0e6d683c80f8933dee080a0b7432a949a442ddfa05fdcff0c14caf7ce69bd272",
+      "note_hash": "19cb37f9eb132e484f2ac0a13fb7d1b49553048baf0d37b5ba2da53812240318",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": null,
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"
@@ -45221,6 +45346,7 @@
         "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
         "koide_a1_fractional_topology_no_go_synthesis_note_2026-04-24",
         "koide_a1_o13_cheeger_simons_rz_no_go_note_2026-04-24",
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
         "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
         "koide_q_so2_phase_erasure_support_note_2026-04-25",
         "koide_axiom_native_support_batch_note_2026-04-22",
@@ -45246,7 +45372,7 @@
         "neutrino_lane4_workstream_closeout_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "14312f2cad1a2a21417ab9d5254d9a1cf06f8c615ebe8f56f5d4c1ee029c4872",
+      "note_hash": "ca5f74750f88fdf43f3edb25bc22b6a6948ac2d9788ce96f52644c2cda5394fb",
       "path": "docs/CANONICAL_HARNESS_INDEX.md",
       "runner_path": null,
       "title": "Canonical Harness Index"
@@ -45652,6 +45778,44 @@
       "path": "docs/CHARGED_LEPTON_KOIDE_RATIO_SOURCE_SELECTOR_FIREWALL_NOTE_2026-04-27.md",
       "runner_path": "scripts/frontier_charged_lepton_koide_ratio_source_selector_firewall.py",
       "title": "Charged-Lepton Koide Ratio/Source Selector Firewall"
+    },
+    "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": {
+      "claim_id": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+        "three_generation_observable_theorem_note",
+        "three_generation_observable_count_corollary_note_2026-05-03",
+        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+        "generation_axiom_boundary_note",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
+        "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19",
+        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_brannen_phase_reduction_theorem_note_2026-04-20",
+        "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26",
+        "koide_a1_brannen_plancherel_identity_support_note_2026-04-25",
+        "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ab4d9e1434c3c96985f142c6d80f6b646fda3ac2266b2b1ccd00f8b2afffd130",
+      "path": "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
+      "runner_path": "scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py",
+      "title": "Charged-Lepton Koide Value \u2014 Full Chain of Custody (framework baseline -> Q=2/3): structure derived; value modulo one Tier-A admitted input"
     },
     "charged_lepton_lane6_theorem_plan_note_2026-04-28": {
       "claim_id": "charged_lepton_lane6_theorem_plan_note_2026-04-28",
@@ -55490,6 +55654,42 @@
       "runner_path": null,
       "title": "Flagship Paper Contribution Statement Note"
     },
+    "flavor_a1prime_debt_and_data_note_2026-05-30": {
+      "claim_id": "flavor_a1prime_debt_and_data_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "dfe3be4ff9380fe44c5de6175ab89701f315df501a6da00b3b2861f8343fa277",
+      "path": "docs/FLAVOR_A1PRIME_DEBT_AND_DATA_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_a1prime_debt_and_data_2026_05_30.py",
+      "title": "Flavor \u2014 the candidate revised Axiom 1 debt does NOT discharge, and the data falsifies universality: both close honestly on r=1/2 as a genuine minimal import"
+    },
+    "flavor_asymmetry_2over9_forced_weight_2026-05-31": {
+      "claim_id": "flavor_asymmetry_2over9_forced_weight_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "3f700e2825ba67748ece598b900278e6a414f91966bb1ff5b0c00a2dce5a1f69",
+      "path": "docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
+      "runner_path": "scripts/flavor_asymmetry_2over9_forced_weight_2026_05_31.py",
+      "title": "Flavor \u2014 last mile: the asymmetry channel's 2/9 is a FORCED cohomological weight-density at the framework-forced d=3 (derived modulo operator-realization)"
+    },
+    "flavor_asymmetry_identification_principled_not_forced_2026-05-31": {
+      "claim_id": "flavor_asymmetry_identification_principled_not_forced_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "887266878641d75f1eba8aee998bf4a89a72c5b0d8569d0b6e805d9b92a72733",
+      "path": "docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md",
+      "runner_path": "scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py",
+      "title": "Flavor \u2014 final step: the asymmetry-2/9 identification is PRINCIPLED-BUT-NOT-FORCED; closing it needs one named generation-space bridge"
+    },
     "flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30": {
       "claim_id": "flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30",
       "claim_type_author_hint": "bounded_theorem",
@@ -55501,6 +55701,222 @@
       "path": "docs/FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py",
       "title": "Flavor Corner-Coupling Ratio Bound and Hilbert-Schmidt Characterization"
+    },
+    "flavor_block_count_native_via_jcs_note_2026-05-30": {
+      "claim_id": "flavor_block_count_native_via_jcs_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "61b0193550157fe74f6e2ef1e020126dfc3e3aab9b1456b6466d8cb486d33aac",
+      "path": "docs/FLAVOR_BLOCK_COUNT_NATIVE_VIA_JCS_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_block_count_native_via_Jcs_2026_05_30.py",
+      "title": "Flavor \u2014 CORRECTION: the Q=2/3 block-count reading is natively AVAILABLE via J_cs (not forbidden by C\u00b3=I); cross-session reconciliation"
+    },
+    "flavor_both_readings_charge_selects_note_2026-05-30": {
+      "claim_id": "flavor_both_readings_charge_selects_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "c8cb0837f91097dbfb8706899ac93292f658c14c8e3115d3b1d836320e0b3b4b",
+      "path": "docs/FLAVOR_BOTH_READINGS_CHARGE_SELECTS_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_both_readings_charge_selects_2026_05_30.py",
+      "title": "Flavor \u2014 \"why not both?\" : Q=1 makes the rank-1 democratic sector; the det_C/det_R axis ORGANIZES the fermion spectrum; but charge-selection does NOT close the pin"
+    },
+    "flavor_carrier_delegation_terminus_local_blind_2026-05-31": {
+      "claim_id": "flavor_carrier_delegation_terminus_local_blind_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "35092a12ba268361dfb920c1b75a94007db81a0ae2c97c65eb0f9ac1cc1d3040",
+      "path": "docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md",
+      "runner_path": "scripts/flavor_carrier_delegation_terminus_local_blind_2026_05_31.py",
+      "title": "Flavor \u2014 the carrier-identification delegation chain terminates in non-retained notes; its one candidate mechanism (A2 = tensor-factorization carrier) is generation-blind \u2192 a structurally-isolated open input"
+    },
+    "flavor_carrier_from_axioms_momentum_forced_2026-05-31": {
+      "claim_id": "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "b71da6f240a7ee766f7a8814fe86a37280adc27abdae7286431588fcefaa44a6",
+      "path": "docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md",
+      "runner_path": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py",
+      "title": "Flavor carrier from framework baseline up: the momentum-factor carrier TYPE is FORCED; the hw=1 triplet LOCUS reduces to the one chiral operator-class import (the framework's recurring chirality gate); r=1/2 stays a separate input"
+    },
+    "flavor_carrier_not_derived_two_inputs_2026-05-31": {
+      "claim_id": "flavor_carrier_not_derived_two_inputs_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "6838d14c925059c9793548e9d5633f346d1e5f1205031c3fbab00766588a7e50",
+      "path": "docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md",
+      "runner_path": "scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py",
+      "title": "Flavor \u2014 carrier-derivation attempt FAILS: 2/9 is an index/eta object (not a finite-rep character), the retained theorems bracket species\u2192flavor as out-of-scope; TWO independent flavor inputs remain"
+    },
+    "flavor_center_trace_closed_capstone_note_2026-05-30": {
+      "claim_id": "flavor_center_trace_closed_capstone_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "c91a70633d40a53e7c11314f2f076ece158dffce81ad27e28ca21ff1e9e960db",
+      "path": "docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_center_trace_closed_2026_05_30.py",
+      "title": "Flavor \u2014 center-trace route closed by a retained theorem; value campaign capstone"
+    },
+    "flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31": {
+      "claim_id": "flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a4863963ad7205e1f6d98e126c3742ae96d48a332ee2602e1e7290cf20310877",
+      "path": "docs/FLAVOR_CHIRALITY_GATE_NARROWS_TO_ONE_SPIN_STATISTICS_IMPORT_2026-05-31.md",
+      "runner_path": "scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py",
+      "title": "Flavor \u2014 the chirality gate narrows to ONE import: the fermionic matter FRAME (spin-statistics) on the Z\u00b3 qubit lattice; everything else (P2, hw=1 locus, count 3, Q=2/3 chiral structure) follows"
+    },
+    "flavor_detr_default_full_exercise_note_2026-05-30": {
+      "claim_id": "flavor_detr_default_full_exercise_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "672b65eb5c4f1fcb93198b9d73197d562cefa3ba2a07855f5d293bfe75d6578d",
+      "path": "docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_detR_default_full_exercise_2026_05_30.py",
+      "title": "Flavor \u2014 full exercise on \"Q=1 default / r=1/2 import\": CONFIRMED in its load-bearing half, with two corrections and one open gap"
+    },
+    "flavor_doublet_metric_default_is_detr_2026-06-02": {
+      "claim_id": "flavor_doublet_metric_default_is_detr_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "c4ef81cb96e4cb1039c85913736700bfc55de5353b4ff2815cd50130aead055c",
+      "path": "docs/FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md",
+      "runner_path": "scripts/flavor_doublet_metric_default_is_detR_2026_06_02.py",
+      "title": "Flavor \u2014 the doublet field-space metric, computed: Axiom 1's coherent-state metric is reading-neutral diag(3,6,6); the A1 default is det_R \u2192 r=1 \u2192 Q=1 (maximal hierarchy); r=1/2 (Q=2/3) needs a complex structure J on b that A1 doesn't supply and whose continuous form is the forbidden U(1)_b"
+    },
+    "flavor_doublet_rotation_exhaustive_note_2026-05-30": {
+      "claim_id": "flavor_doublet_rotation_exhaustive_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "2462ba53557946b42b23af4947ff5a205608faadee754d01f451f6f6a91cd685",
+      "path": "docs/FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py",
+      "title": "Flavor \u2014 exhaustive enumeration of doublet rotations in the lattice: no new rotation, J_cs is FORCED (Schur), the free bit is now purely a measure choice"
+    },
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02": {
+      "claim_id": "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "caea92c62c97fe5534aedcf9d8b88b48284ca20c185a87496402624b45753b03",
+      "path": "docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md",
+      "runner_path": "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py",
+      "title": "Flavor \u2014 einselection reduces the *partition* half of the gate to K-reality (sound), but does NOT deliver r=1/2: H is already block-diagonal, and the genuine Born/thermalizing measure gives r=1, not r=1/2. Residual = two physical inputs (K-reality + the block-counting measure)."
+    },
+    "flavor_emergent_chirality_no_transport_note_2026-05-30": {
+      "claim_id": "flavor_emergent_chirality_no_transport_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "bdb12067c4f201603e12ab231732dfd04f2ce95ac39a118bb1a04492c9e0b1d5",
+      "path": "docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_emergent_chirality_no_transport_2026_05_30.py",
+      "title": "Flavor \u2014 emergent chirality \u00d7 emergent time does NOT transport an orbit-splitting chiral grading onto the generation triplet"
+    },
+    "flavor_equivariant_eta_complementarity_note_2026-05-30": {
+      "claim_id": "flavor_equivariant_eta_complementarity_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "0ff687252e057a2061ee03d258c33b66271894cd88448f99f70ed740a734540d",
+      "path": "docs/FLAVOR_EQUIVARIANT_ETA_COMPLEMENTARITY_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py",
+      "title": "Flavor \u2014 the equivariant-\u03b7 / spectral-asymmetry route reduces to the chirality gate via an exact complementarity (and 2/9 is not an \u03b7)"
+    },
+    "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02": {
+      "claim_id": "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "926179469fe272fd9b2221ad93c16a46fe3e8e006749fd4160a3518afc99bdcd",
+      "path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+      "runner_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+      "title": "Flavor \u2014 J-hunt consolidation (4 rounds): det_C / r=1/2 / Q=2/3 is not forcible from framework baseline+emergent-dynamics; it is the single named block-count *measure* input. The framework defaults to det_R / Q=1."
+    },
+    "flavor_find_j_round1_jcs_measure_neutral_2026-06-02": {
+      "claim_id": "flavor_find_j_round1_jcs_measure_neutral_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "9ffb2d43d4d3ab144e25cbb36d36cb0150058202edb94a5049b9a7477356ac15",
+      "path": "docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md",
+      "runner_path": "scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py",
+      "title": "Flavor \u2014 J-hunt round 1: a static complex structure cannot select det_C; J_cs is A1-native but measure-neutral, and the \"\u0393_\u03c7 = J_cs\" chiral bridge is a false identity. det_R/Q=1 default stands; the lever is a first-order action."
+    },
+    "flavor_find_j_round2_power_not_count_2026-06-02": {
+      "claim_id": "flavor_find_j_round2_power_not_count_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "6ac9580d66477c26674db99cc80df7cf773a193d68d9d13de1e6b901d389324d",
+      "path": "docs/FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md",
+      "runner_path": "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py",
+      "title": "Flavor \u2014 J-hunt round 2: the fermionic frame does NOT force det_C (power \u2260 count; the symplectic pairing J is unforced). det_R/Q=1 stands; the wall moves to Dirac-vs-Majorana reality structure."
+    },
+    "flavor_find_j_round3_dirac_generation_blind_2026-06-02": {
+      "claim_id": "flavor_find_j_round3_dirac_generation_blind_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a0766768b5390e77dcd24e8b99b38fb7201ef232523b7878310726316b140e22",
+      "path": "docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md",
+      "runner_path": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py",
+      "title": "Flavor \u2014 J-hunt round 3: charged-lepton Dirac reality structure is generation-blind (J_spin \u2297 I_gen); it does not supply the doublet J. det_C/r=1/2 not forced; wall pivots to the \u03ba block-count measure."
+    },
+    "flavor_find_j_round5_trace_vs_center_state_final_2026-06-02": {
+      "claim_id": "flavor_find_j_round5_trace_vs_center_state_final_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "cb42af336d9541da843f25b732cb1e897c6f84e7d747fa4afc5d5b122111aaaf",
+      "path": "docs/FLAVOR_FIND_J_ROUND5_TRACE_VS_CENTER_STATE_FINAL_2026-06-02.md",
+      "runner_path": "scripts/flavor_find_J_round5_trace_vs_center_state_2026_06_02.py",
+      "title": "Flavor \u2014 J-hunt round 5 (final): the residual is trace-vs-center-state, and it genuinely DODGES the C\u00b3=I wall (so it is NOT the U(1)_b obstruction) \u2014 but the center-symmetric state is admissible-not-forced. 5-round consolidation: r=1/2 is the single named, unobstructed, unforced input."
     },
     "flavor_frontier_map_form_vs_value_note_2026-05-29": {
       "claim_id": "flavor_frontier_map_form_vs_value_note_2026-05-29",
@@ -55526,6 +55942,102 @@
       "runner_path": "scripts/flavor_frontier_form_vs_value_2026_05_29.py",
       "title": "Flavor Frontier Map: Form Versus Value"
     },
+    "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31": {
+      "claim_id": "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "adef54acc4e3689b5fa8ee447fd49002c44496104a86020fea4d8565dce3d041",
+      "path": "docs/FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31.md",
+      "runner_path": "scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py",
+      "title": "Flavor \u2014 the generation-space bridge to \u03b4=2/9 reduces to a single named import (the intensive-summand-as-observable promotion), and the value-construction survives the anticommuting no-go"
+    },
+    "flavor_idempotent_u1_collapses_note_2026-05-30": {
+      "claim_id": "flavor_idempotent_u1_collapses_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "9249215c7e0240f0d52ca7e9170278ed266bd15b76083f4a9cd574b602ed570f",
+      "path": "docs/FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_idempotent_u1_collapses_2026_05_30.py",
+      "title": "Flavor \u2014 the flavor-U(1)-on-idempotents route collapses; C\u00b3=I no-go is narrower than stated; the ordering has no native indexing parameter"
+    },
+    "flavor_interacting_matter_build_note_2026-05-30": {
+      "claim_id": "flavor_interacting_matter_build_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "1dd2d103183dc3f03c4a2c8ce9c05a1922d6f175e2fb381ad23e12d2d416ac39",
+      "path": "docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_interacting_matter_build_2026_05_30.py",
+      "title": "Flavor \u2014 large build: interacting dynamics generates b\u22600 (wall moved), but r=\u00bd stays pinned to a chiral input"
+    },
+    "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31": {
+      "claim_id": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "eeba142c0a13a94b5f43458c42f39207a3e5e00de1624b5885e333fba4e0e01c",
+      "path": "docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md",
+      "runner_path": "scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py",
+      "title": "Flavor \u2014 20-physicist panel resolves channel-vs-lane: Q is one observable, {1/3,2/3,1} are LANES (corrects the four-channel note); the lane assignment reduces to ONE primitive \u2014 det_C vs det_R (doublet = one complex vs two real modes)"
+    },
+    "flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30": {
+      "claim_id": "flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "61c396548d1070fe88c4d6eb3cb0be1ad7e0609bee7282b1d643182ab6c27271",
+      "path": "docs/FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py",
+      "title": "Flavor \u2014 no native latitude-quantizer (4 mechanisms); the RP \"self-dual\" lead is REFUTED (circular); reframed to the operator-algebra trace-vs-center question"
+    },
+    "flavor_measure_positivity_agnostic_note_2026-05-31": {
+      "claim_id": "flavor_measure_positivity_agnostic_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "202068d1ce72d40a815efecc416a0148af5d0cd97a9d6dc296158a640ffe4969",
+      "path": "docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md",
+      "runner_path": "scripts/flavor_measure_positivity_agnostic_2026_05_31.py",
+      "title": "Flavor \u2014 the measure/positivity lever is AGNOSTIC; both symmetry-side and measure-side selectors for r=1/2 are exhausted"
+    },
+    "flavor_missing_axiom_carrier_measure_note_2026-05-30": {
+      "claim_id": "flavor_missing_axiom_carrier_measure_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "db87bed97de61a713e891ada5ccd451f9df347e2e9542211179c31d07a4bd080",
+      "path": "docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py",
+      "title": "Flavor \u2014 what axiom (not import) forces r=1/2? A measure axiom, best realized as a revision of A1 (carrier = \u211d[Z\u2083] in tracial standard form)"
+    },
+    "flavor_native_beta_no_half_attractor_note_2026-05-30": {
+      "claim_id": "flavor_native_beta_no_half_attractor_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "d69aff62d6c5e4e599b5e30f6205fb725b9ebabfa94937e31ec32c80ce4900b6",
+      "path": "docs/FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_native_beta_no_half_attractor_2026_05_30.py",
+      "title": "Flavor \u2014 native \u03b2-function has no \u00bd-attractor; the last route closes (structural reason)"
+    },
     "flavor_native_double_shift_corner_coupling_note_2026-05-30": {
       "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",
       "claim_type_author_hint": "bounded_theorem",
@@ -55537,6 +56049,186 @@
       "path": "docs/FLAVOR_NATIVE_DOUBLE_SHIFT_CORNER_COUPLING_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py",
       "title": "Flavor Native Double-Shift Corner Coupling (Bounded Support)"
+    },
+    "flavor_operator_realization_local_density_2026-05-31": {
+      "claim_id": "flavor_operator_realization_local_density_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "862f6f010fa4c28752645422508431ea0706d7d24c949a6519c0ba0204381394",
+      "path": "docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md",
+      "runner_path": "scripts/flavor_operator_realization_local_density_2026_05_31.py",
+      "title": "Flavor \u2014 operator-realization bridge substantially BUILT: 2/9 is the Atiyah-Bott local fixed-point density of the native C3-equivariant staggered Dirac (surviving global vanishing)"
+    },
+    "flavor_q1_default_rests_on_prr_note_2026-05-30": {
+      "claim_id": "flavor_q1_default_rests_on_prr_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "d30473e0cfd73674c7591d3b8ccd1f2fb81deb7a5151e20d9013513a653365f7",
+      "path": "docs/FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_Q1_default_rests_on_PRR_2026_05_30.py",
+      "title": "Flavor \u2014 CORRECTION: \"Q=1 is the framework default\" is NOT forced; it rests entirely on the unaudited PRR premise, and Q=2/3 is admissible under native C3"
+    },
+    "flavor_qubit_berry_holonomy_probe_note_2026-05-30": {
+      "claim_id": "flavor_qubit_berry_holonomy_probe_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "0239ddb7d6be0ce81ddcdde8cfb11c246b9bba9e515b24ae1b68065a47947aaf",
+      "path": "docs/FLAVOR_QUBIT_BERRY_HOLONOMY_PROBE_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_qubit_berry_holonomy_probe_2026_05_30.py",
+      "title": "Flavor \u2014 qubit-factor Berry holonomy probe: pins to a topological winding (\"w pin\"), does not derive 2/9 or r=1/2"
+    },
+    "flavor_r_half_assumptions_audit_note_2026-05-30": {
+      "claim_id": "flavor_r_half_assumptions_audit_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "b85405cdd13b563400d840e90005a51e9053f282da27e241097efd1f5545dbae",
+      "path": "docs/FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_r_half_assumptions_audit_2026_05_30.py",
+      "title": "Flavor \u2014 assumptions audit on r=\u00bd: a distinguished stationary point (see banner) (0/4 live assumptions fell)"
+    },
+    "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02": {
+      "claim_id": "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "91b708236784a0393aa6295fd54cca2ed6efc92d57b3a92925e01d224bfb9dcb",
+      "path": "docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
+      "runner_path": "scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py",
+      "title": "Flavor \u2014 reframe: r=1/2 need not be *forced*; it is a distinguished *stationary point* (max-sector-entropy / balance / swap-fixed-point). The three Q-lanes are distinguished points of the r-family, not competing answers \u2014 so the J-hunt's \"force det_C over det_R\" was the wrong target."
+    },
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": {
+      "claim_id": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "4b2480a63a1f673bfe71fafa1f9925735c4dc157d021e64724dc58daeacb060b",
+      "path": "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md",
+      "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py",
+      "title": "Flavor \u2014 which-vacuum dynamics: r=1/2 (Q=2/3) is the UNSTABLE SEPARATRIX of the emergent records flow `r\u21922r\u00b2`. The balanced lane is a saddle between the Q=1/3 (degenerate) and Q=1 (hierarchy) collapse basins \u2014 it needs a stabilizer."
+    },
+    "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": {
+      "claim_id": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "efa4cf7b4e21ab99713b4be112842cf5743f2b91bfde58058a5dcab741df2eba",
+      "path": "docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md",
+      "runner_path": "scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py",
+      "title": "Flavor \u2014 r=1/2 IS stable: the \"unstable\" verdict ran the wrong arrow of time. Under the closed-system entropy-increasing (second-law) flow, r=1/2 (the HS 2-sector equipartition point) is the GLOBAL stable attractor. + the three-lane retention picture."
+    },
+    "flavor_readout_gate_equals_carrier_identification_2026-05-31": {
+      "claim_id": "flavor_readout_gate_equals_carrier_identification_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "2580e8fcce0f6c8af2a8e1b57b84461106eddd658b52671d4fbe495a053fa1b6",
+      "path": "docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md",
+      "runner_path": "scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py",
+      "title": "Flavor \u2014 the Brannen-BAE 2/9 readout gate EQUALS the generation-carrier identification: three apparent gates collapse to one (and J_cs is silent on r)"
+    },
+    "flavor_retention_law_is_a2plus_note_2026-05-31": {
+      "claim_id": "flavor_retention_law_is_a2plus_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "b7e67ef6f6dd8a5d733a9638624856d5d76099c0274336cd89d56270e5c24a88",
+      "path": "docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md",
+      "runner_path": "scripts/flavor_retention_law_is_A2plus_2026_05_31.py",
+      "title": "Flavor \u2014 Q=2/3 closes modulo ONE named half-axiom (source-locality), which is Axiom 2-plus, not A2"
+    },
+    "flavor_so2_readout_false_binary_note_2026-05-30": {
+      "claim_id": "flavor_so2_readout_false_binary_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "9e3dd3e8630847dd6968168b3716fd466f18e6057d3c7f08344c865ca32cafb5",
+      "path": "docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_so2_readout_false_binary_2026_05_30.py",
+      "title": "Flavor \u2014 the SO(2)/U(1)_b readout crux: \"gauge vs physical\" is a false binary; the gate is a \u03b4-independent measure-counting, undetermined, both readings native"
+    },
+    "flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31": {
+      "claim_id": "flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "51b202bdff724ee953f55d2fbec3485da0632883162a94ca508620770471ce29",
+      "path": "docs/FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md",
+      "runner_path": "scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py",
+      "title": "Flavor \u2014 spin-statistics does NOT yet force the fermionic frame P1 from framework baseline+emergent-spacetime: the engine is genuine and Dirac\u2013K\u00e4hler is evaded, but P1 = forced-modulo the free-field reconstruction R (+ the L1 boost-spinor embedding is a compatible choice)"
+    },
+    "flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31": {
+      "claim_id": "flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "f752c4c7fd05b905cce7470aef315ebd1c1ceb7a09ddddf4112682162d0ff744",
+      "path": "docs/FLAVOR_SUBSTRATE_BRIDGE_FAILS_SOURCE_OPERATOR_ASYMMETRY_NOTE_2026-05-31.md",
+      "runner_path": "scripts/flavor_substrate_bridge_fails_source_operator_asymmetry_2026_05_31.py",
+      "title": "Flavor \u2014 the substrate-necessity bridge fails; the onsite-source line rests on an unjustified source/operator asymmetry (consistent onsite-locality gives Q=1/3, not Q=2/3)"
+    },
+    "flavor_substrate_parent_separate_note_2026-05-30": {
+      "claim_id": "flavor_substrate_parent_separate_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "7a81abb626844fdc543e574395ca61040241d1750f3aebe1b66709273c3bb8f3",
+      "path": "docs/FLAVOR_SUBSTRATE_PARENT_SEPARATE_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_substrate_parent_separate_2026_05_30.py",
+      "title": "Flavor \u2014 value and chirality are genuinely SEPARATE on the lift, but share one common ROOT import (the order-3 complex / det_C structure)"
+    },
+    "flavor_trace_vs_center_dissolves_note_2026-05-30": {
+      "claim_id": "flavor_trace_vs_center_dissolves_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "532ecf2963cc40a2ebd7ebe8f0e185fccb3b2525258be2e722f1dbb873d2d965",
+      "path": "docs/FLAVOR_TRACE_VS_CENTER_DISSOLVES_NOTE_2026-05-30.md",
+      "runner_path": "scripts/flavor_trace_vs_center_dissolves_2026_05_30.py",
+      "title": "Flavor \u2014 the trace-vs-center fork is INVERTED and largely DISSOLVES; r=1/2 is a free modulus, sharpened to the signed/Hermitian readout class"
+    },
+    "flavor_value_campaign_capstone_four_channel_2026-05-31": {
+      "claim_id": "flavor_value_campaign_capstone_four_channel_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "bc9a29403d6cd666d0264620c25efefd8c34c9eac558b7629c91d9da0f6b8dd3",
+      "path": "docs/FLAVOR_VALUE_CAMPAIGN_CAPSTONE_FOUR_CHANNEL_2026-05-31.md",
+      "runner_path": "scripts/flavor_four_channel_reframe_validated_2026_05_31.py",
+      "title": "Flavor value campaign \u2014 CAPSTONE: the four-channel reframe dissolves the \"selection\" problem (validated)"
     },
     "fm_transfer_note": {
       "claim_id": "fm_transfer_note",
@@ -69902,6 +70594,18 @@
       "path": "docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md",
       "runner_path": "scripts/frontier_one_parameter_reduced_shell_law.py",
       "title": "Exact One-Parameter Reduced Sewing-Shell Law"
+    },
+    "open_koide_flavor_cluster_consolidation_map_2026-06-02": {
+      "claim_id": "open_koide_flavor_cluster_consolidation_map_2026-06-02",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "dcbb0abf39a81ff9dff661fecdaa4a97174e4f9f371b5f9bd2e748579985a055",
+      "path": "docs/OPEN_KOIDE_FLAVOR_CLUSTER_CONSOLIDATION_MAP_2026-06-02.md",
+      "runner_path": "scripts/flavor_open_cluster_consolidation_map_2026_06_02.py",
+      "title": "Open Koide/Flavor PR Cluster \u2014 Consolidated Map (for the reviewer; anchor #2453)"
     },
     "ordered_lattice_packet_reidentification_note": {
       "claim_id": "ordered_lattice_packet_reidentification_note",
@@ -88017,7 +88721,6 @@
     "action_power_scaling_sweep_note",
     "action_uniqueness_audit_2026-04-11",
     "adaptive_coevolving_geometry_no_go",
-    "admitted_input_registry_tier_a_note_2026-05-23",
     "affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02",
     "ai_methodology.methodology_case_studies_2026-04-25",
     "ai_methodology.methodology_evidence_ledger_2026-04-25",
@@ -88310,8 +89013,52 @@
     "finite_rank_source_to_metric_theorem_note",
     "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30",
     "flagship_paper_contribution_statement_note",
+    "flavor_a1prime_debt_and_data_note_2026-05-30",
+    "flavor_asymmetry_2over9_forced_weight_2026-05-31",
+    "flavor_asymmetry_identification_principled_not_forced_2026-05-31",
     "flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30",
+    "flavor_block_count_native_via_jcs_note_2026-05-30",
+    "flavor_both_readings_charge_selects_note_2026-05-30",
+    "flavor_carrier_delegation_terminus_local_blind_2026-05-31",
+    "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+    "flavor_carrier_not_derived_two_inputs_2026-05-31",
+    "flavor_center_trace_closed_capstone_note_2026-05-30",
+    "flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31",
+    "flavor_detr_default_full_exercise_note_2026-05-30",
+    "flavor_doublet_metric_default_is_detr_2026-06-02",
+    "flavor_doublet_rotation_exhaustive_note_2026-05-30",
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+    "flavor_emergent_chirality_no_transport_note_2026-05-30",
+    "flavor_equivariant_eta_complementarity_note_2026-05-30",
+    "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+    "flavor_find_j_round1_jcs_measure_neutral_2026-06-02",
+    "flavor_find_j_round2_power_not_count_2026-06-02",
+    "flavor_find_j_round3_dirac_generation_blind_2026-06-02",
+    "flavor_find_j_round5_trace_vs_center_state_final_2026-06-02",
+    "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31",
+    "flavor_idempotent_u1_collapses_note_2026-05-30",
+    "flavor_interacting_matter_build_note_2026-05-30",
+    "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
+    "flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30",
+    "flavor_measure_positivity_agnostic_note_2026-05-31",
+    "flavor_missing_axiom_carrier_measure_note_2026-05-30",
+    "flavor_native_beta_no_half_attractor_note_2026-05-30",
     "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+    "flavor_operator_realization_local_density_2026-05-31",
+    "flavor_q1_default_rests_on_prr_note_2026-05-30",
+    "flavor_qubit_berry_holonomy_probe_note_2026-05-30",
+    "flavor_r_half_assumptions_audit_note_2026-05-30",
+    "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+    "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+    "flavor_readout_gate_equals_carrier_identification_2026-05-31",
+    "flavor_retention_law_is_a2plus_note_2026-05-31",
+    "flavor_so2_readout_false_binary_note_2026-05-30",
+    "flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31",
+    "flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31",
+    "flavor_substrate_parent_separate_note_2026-05-30",
+    "flavor_trace_vs_center_dissolves_note_2026-05-30",
+    "flavor_value_campaign_capstone_four_channel_2026-05-31",
     "fm_transfer_note",
     "fourth_family_complex_boundary_note",
     "fourth_family_quadrant_note",
@@ -88572,6 +89319,7 @@
     "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
     "oh_schur_boundary_action_note",
     "ollivier_einstein_proxy_note_2026-04-11",
+    "open_koide_flavor_cluster_consolidation_map_2026-06-02",
     "ordered_lattice_quasi_persistent_relaunch_2d_note",
     "packet_memory_note",
     "paper_outline_2026-04-12",
@@ -88901,27 +89649,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 736,
+      "bounded_theorem": 781,
       "decoration": 1,
-      "meta": 200,
+      "meta": 201,
       "no_go": 93,
       "none": 1404,
       "open_gate": 59,
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1137,
+      "bounded_theorem": 1182,
       "decoration": 1,
-      "meta": 200,
+      "meta": 201,
       "no_go": 196,
       "none": 423,
       "open_gate": 134,
       "positive_theorem": 578
     },
-    "edge_count": 10119,
-    "leaf_count": 841,
-    "node_count": 2669,
-    "root_count": 897,
-    "runners_with_path": 2254
+    "edge_count": 10149,
+    "leaf_count": 879,
+    "node_count": 2715,
+    "root_count": 941,
+    "runners_with_path": 2300
   }
 }

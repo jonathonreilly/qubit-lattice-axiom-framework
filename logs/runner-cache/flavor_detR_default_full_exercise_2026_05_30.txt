@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/flavor_detR_default_full_exercise_2026_05_30.py
+runner_sha256: a8276521425e54549faccf6b85b55be10900e668c95c93f163f7b0b8e137b3f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+[PASS] X1 substrate i generation-blind ([i*I3,C]=0) + <i*I3,G_U1>_HS=0 -> no descended U(1)
+[PASS] X2 C^3=I quantizes U(1)_b: (e^{ia}C)^3=I only at a in {0,2pi/3,4pi/3}
+[PASS] X3 (Z_2)^3 corner amplitudes are +/-1 (REAL) -> honestly real R[Z3]
+[PASS] CORR#1 G_U1 COMMUTES with Gamma_chi and C (NOT the chiral gate)
+       ||{G,Gchi}||=2.828 (chiral grading is off-block, anticommutes)
+[PASS] CORR#2 import = block(1,1)->Q=2/3 vs dimension(1,2)->Q=1 measure choice; trace ranks neither
+       det_C block-count r=1/2; det_R dimension r=1; Schur: no merge of 2 real->1 complex
+
+SCORECARD PASS=5 FAIL=0
+VERDICT: CONFIRMED -- Q=1 (det_R) substrate-forced default, Q=2/3 (det_C) a genuine import;
+crux (complex structure flips it) refuted 4 ways. CORRECTED: the import is NOT the chirality
+gate (G_U1 commutes with Gamma_chi) and NOT a U(1) symmetry or holomorphic measure -- it is the
+discrete block-vs-dimension counting-measure choice the trace permits but does not rank. OPEN:
+Link-1 Half B -- beta=0 tracial vacuum vs finite-beta Gibbs is an unaudited, user-approval premise.
+
+----- stderr -----
+

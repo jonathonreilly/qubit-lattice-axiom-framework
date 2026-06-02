@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py
+runner_sha256: 84b8c731f1358430fceed16d60e5bb8be8916eb2886ab376f0db29c0cdc0891a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[PASS] R3-1 ambient Dirac i*I_3 (generation block of charge conjugation = identity) leaves H fixed -> generation-blind
+       charge conjugation acts as I_3 on the generation index -> Dirac-ness factorizes J_spin (x) I_generation
+[PASS] R3-2 continuous centralizer diag(1,e^iphi,e^-iphi) leaves H fixed -> uniform ambient phase cancels in r, does NOT touch kappa
+       any generation-uniform complexification multiplies singlet & doublet weights equally -> cancels in r=|b|^2/a^2
+[PASS] R3-3 the only b-rotating map C->e^{i theta}C breaks C^3=I for generic theta (barred except at 3 cube roots)
+       (e^{i*0.7}C)^3 != I -> the continuous doublet rotation = forbidden U(1)_b
+[PASS] R3-4 no nonzero circulant anticommutes with Gamma_chi -> any det_C(kappa=2)-producing anticommutant is NON-circulant (C_3-breaking)
+       the two routes to the doublet J are exactly the C^3=I-forbidden rephasing OR the C_3-equivariance-breaking non-circulant (retained_bounded no-go)
+
+SCORECARD PASS=4 FAIL=0
+VERDICT (J-hunt round 3, wf_2d355f65): dirac_generation_blind_no_J. The charged-lepton Dirac reality
+structure factorizes J_spin (x) I_generation -- on the generation factor it is the central scalar i*I_3,
+generation-blind, leaves b fixed, cancels in r. It does NOT supply the doublet J and does NOT force
+det_C/r=1/2. Every CONTINUOUS lever (rounds 1-3: static J_cs, fermionic Berezin, Dirac/charge phase)
+leaves b fixed and cancels in r. The two maps that WOULD set kappa=2 are the C^3=I-forbidden rephasing
+or a C_3-breaking non-circulant. WALL PIVOTS (round 4): from 'what ROTATES b' (continuous symmetry,
+exhausted) to 'what COUNTS the doublet as one block vs two real modes' (the kappa block-count MEASURE,
+a discrete/measure question). Lane assignment reframed as pending a spinor-to-generation coupling.
+
+----- stderr -----
+

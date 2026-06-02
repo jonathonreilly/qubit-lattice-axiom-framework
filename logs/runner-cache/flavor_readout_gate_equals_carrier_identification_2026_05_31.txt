@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py
+runner_sha256: 10e7bace1fd61ce979bff78fac5f2c45f809c1f582f207f3e5f9d9cfda6c4497
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+[PASS] A1 eig(C|R^3) = {1, omega, omega^2} and det(I-C) = 0  =>  [111] is a FIXED LINE, not isolated
+       eig(C)=[-0.5-0.866j -0.5+0.866j  1. +0.j   ]; det(I-C)=0.00e+00
+[PASS] A2 isolated-fixed-point Atiyah-Bott lives on the TRANSVERSE doublet: det(1-dg|doublet)=(1-w)(1-w^2)=3
+       det(1-dg|doublet)=3.000000  => 2/9 is NOT the R^3 total; calling it 'the total' asserts the carrier
+[PASS] B1 J_cs=(C-C^2)/sqrt3 has eigs {0,+i,-i}; J_cs@singlet=0; J_cs^2 = -P_minus on the doublet
+       eig(J_cs) imag=[-1.  0.  1.] real~0; ||J_cs@singlet||=0.0e+00; ||J_cs^2+P_minus||=3.3e-16
+[PASS] B2 [J_cs, H] = 0 for the ENTIRE family H=aI+bC+conj(b)C^2  =>  J_cs is silent on r=|b|^2/a^2, hence on Q
+       max ||[J_cs,H]|| over 500 random (a in R, b in C) = 6.1e-16  => J_cs cannot select det_C vs det_R as Q-readout
+[PASS] B3 Q is set by r=|b|^2/a^2 (J_cs's kernel direction): r=1/2 -> Q=2/3 ; r=1 -> Q=1; J_cs annihilates this axis
+       r=0.5000 -> Q=0.6667; the z=0 zero-section pick (r=1/2 vs r=1) is what retained_no_go isolates
+[PASS] C1 L_3(1,2)=2/9 (holomorphic/det_C) and L_3(1,1)=1/9 (real/Euler): genuine C_3 fact, NOT a Q-selector
+       L_3(1,2)=0.222222, L_3(1,1)=0.111111; which determinant is the physical mass ratio is unforced
+[PASS] D1 A2 admits BOTH: extensive sum L*(2/9) (quasi-local, A2-compatible) AND intensive 2/9; A2 selects NEITHER
+       L=5: extensive=1.1111, intensive=0.2222; the carrier choice (R^3 vs lattice) IS the gate
+
+SCORECARD PASS=7 FAIL=0
+VERDICT: gate_is_identification_bridge_relabeled. No identification-independent forcing of 2/9
+as THE observable exists in framework baseline+retained. The readout gate = the generation-carrier
+identification (open_gate lepton_brannen_bae_delta_two_ninths) = the zero-section pick of
+retained_no_go koide_q_delta_residual_cohomology_obstruction. THREE apparent gates collapse to
+ONE, pinned precisely. New verified negative: J_cs is silent on r (the Q-setting parameter), so
+the Schur-forced complex structure does NOT select det_C over det_R as the Koide readout.
+Provenance (verified vs origin/main 2026-05-31): open_gate lepton_brannen_bae_delta_two_ninths;
+retained_no_go koide_q_delta_residual_cohomology_obstruction; retained_bounded koide_z3_
+equivariant_anticommuting_no_go. No load-bearing on unaudited closure_c_staggered_dirac_gate /
+koide_phase_aps_eta_parity_route.
+
+----- stderr -----
+

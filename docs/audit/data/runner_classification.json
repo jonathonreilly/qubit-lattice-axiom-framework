@@ -2280,6 +2280,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_charged_lepton_koide_ratio_source_selector_firewall.py"
     },
+    "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py"
+    },
     "charged_lepton_mass_hierarchy_review_note_2026-04-17": {
       "assert_count": 0,
       "counts": {
@@ -8244,6 +8256,42 @@
       "dominant_class": null,
       "runner": "scripts/fixed_field_grown_transfer_scout.py"
     },
+    "flavor_a1prime_debt_and_data_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_a1prime_debt_and_data_2026_05_30.py"
+    },
+    "flavor_asymmetry_2over9_forced_weight_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_asymmetry_2over9_forced_weight_2026_05_31.py"
+    },
+    "flavor_asymmetry_identification_principled_not_forced_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py"
+    },
     "flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30": {
       "assert_count": 1,
       "counts": {
@@ -8255,6 +8303,222 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py"
+    },
+    "flavor_block_count_native_via_jcs_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_block_count_native_via_Jcs_2026_05_30.py"
+    },
+    "flavor_both_readings_charge_selects_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_both_readings_charge_selects_2026_05_30.py"
+    },
+    "flavor_carrier_delegation_terminus_local_blind_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_carrier_delegation_terminus_local_blind_2026_05_31.py"
+    },
+    "flavor_carrier_from_axioms_momentum_forced_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py"
+    },
+    "flavor_carrier_not_derived_two_inputs_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py"
+    },
+    "flavor_center_trace_closed_capstone_note_2026-05-30": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_center_trace_closed_2026_05_30.py"
+    },
+    "flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py"
+    },
+    "flavor_detr_default_full_exercise_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_detR_default_full_exercise_2026_05_30.py"
+    },
+    "flavor_doublet_metric_default_is_detr_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/flavor_doublet_metric_default_is_detR_2026_06_02.py"
+    },
+    "flavor_doublet_rotation_exhaustive_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py"
+    },
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py"
+    },
+    "flavor_emergent_chirality_no_transport_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_emergent_chirality_no_transport_2026_05_30.py"
+    },
+    "flavor_equivariant_eta_complementarity_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py"
+    },
+    "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py"
+    },
+    "flavor_find_j_round1_jcs_measure_neutral_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py"
+    },
+    "flavor_find_j_round2_power_not_count_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py"
+    },
+    "flavor_find_j_round3_dirac_generation_blind_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py"
+    },
+    "flavor_find_j_round5_trace_vs_center_state_final_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/flavor_find_J_round5_trace_vs_center_state_2026_06_02.py"
     },
     "flavor_frontier_map_form_vs_value_note_2026-05-29": {
       "assert_count": 1,
@@ -8268,6 +8532,102 @@
       "dominant_class": "B",
       "runner": "scripts/flavor_frontier_form_vs_value_2026_05_29.py"
     },
+    "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py"
+    },
+    "flavor_idempotent_u1_collapses_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_idempotent_u1_collapses_2026_05_30.py"
+    },
+    "flavor_interacting_matter_build_note_2026-05-30": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_interacting_matter_build_2026_05_30.py"
+    },
+    "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py"
+    },
+    "flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py"
+    },
+    "flavor_measure_positivity_agnostic_note_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_measure_positivity_agnostic_2026_05_31.py"
+    },
+    "flavor_missing_axiom_carrier_measure_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py"
+    },
+    "flavor_native_beta_no_half_attractor_note_2026-05-30": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_native_beta_no_half_attractor_2026_05_30.py"
+    },
     "flavor_native_double_shift_corner_coupling_note_2026-05-30": {
       "assert_count": 1,
       "counts": {
@@ -8279,6 +8639,186 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py"
+    },
+    "flavor_operator_realization_local_density_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_operator_realization_local_density_2026_05_31.py"
+    },
+    "flavor_q1_default_rests_on_prr_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_Q1_default_rests_on_PRR_2026_05_30.py"
+    },
+    "flavor_qubit_berry_holonomy_probe_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_qubit_berry_holonomy_probe_2026_05_30.py"
+    },
+    "flavor_r_half_assumptions_audit_note_2026-05-30": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_r_half_assumptions_audit_2026_05_30.py"
+    },
+    "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py"
+    },
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py"
+    },
+    "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py"
+    },
+    "flavor_readout_gate_equals_carrier_identification_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 15,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py"
+    },
+    "flavor_retention_law_is_a2plus_note_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_retention_law_is_A2plus_2026_05_31.py"
+    },
+    "flavor_so2_readout_false_binary_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_so2_readout_false_binary_2026_05_30.py"
+    },
+    "flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py"
+    },
+    "flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_substrate_bridge_fails_source_operator_asymmetry_2026_05_31.py"
+    },
+    "flavor_substrate_parent_separate_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_substrate_parent_separate_2026_05_30.py"
+    },
+    "flavor_trace_vs_center_dissolves_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/flavor_trace_vs_center_dissolves_2026_05_30.py"
+    },
+    "flavor_value_campaign_capstone_four_channel_2026-05-31": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_four_channel_reframe_validated_2026_05_31.py"
     },
     "fm_transfer_note": {
       "assert_count": 0,
@@ -17387,6 +17927,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/frontier_one_parameter_reduced_shell_law.py"
+    },
+    "open_koide_flavor_cluster_consolidation_map_2026-06-02": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/flavor_open_cluster_consolidation_map_2026_06_02.py"
     },
     "ordered_lattice_packet_reidentification_note": {
       "assert_count": 0,
@@ -32956,6 +33508,66 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/flavor_Q1_default_rests_on_PRR_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_q1_default_rests_on_prr_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_a1prime_debt_and_data_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_a1prime_debt_and_data_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_asymmetry_2over9_forced_weight_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_asymmetry_2over9_forced_weight_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_asymmetry_identification_principled_not_forced_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py": {
       "assert_count": 1,
       "claims": [
@@ -32965,6 +33577,306 @@
         "A": 0,
         "B": 0,
         "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_block_count_native_via_Jcs_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_block_count_native_via_jcs_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_both_readings_charge_selects_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_both_readings_charge_selects_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_carrier_delegation_terminus_local_blind_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_carrier_delegation_terminus_local_blind_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_carrier_not_derived_two_inputs_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_center_trace_closed_2026_05_30.py": {
+      "assert_count": 0,
+      "claims": [
+        "flavor_center_trace_closed_capstone_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_detR_default_full_exercise_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_detr_default_full_exercise_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_doublet_metric_default_is_detR_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_doublet_metric_default_is_detr_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_doublet_rotation_exhaustive_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_einselection_2sector_modulo_kreality_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_emergent_chirality_no_transport_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_emergent_chirality_no_transport_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_equivariant_eta_complementarity_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_equivariant_eta_complementarity_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_find_j_round1_jcs_measure_neutral_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_find_J_round2_power_not_count_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_find_j_round2_power_not_count_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_find_j_round3_dirac_generation_blind_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/flavor_find_J_round5_trace_vs_center_state_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_find_j_round5_trace_vs_center_state_final_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/flavor_four_channel_reframe_validated_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_value_campaign_capstone_four_channel_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
@@ -32986,6 +33898,126 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/flavor_generation_space_bridge_reduces_to_open_gate_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_idempotent_u1_collapses_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_idempotent_u1_collapses_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_interacting_matter_build_2026_05_30.py": {
+      "assert_count": 0,
+      "claims": [
+        "flavor_interacting_matter_build_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_measure_positivity_agnostic_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_measure_positivity_agnostic_note_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_missing_axiom_carrier_measure_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/flavor_native_beta_no_half_attractor_2026_05_30.py": {
+      "assert_count": 0,
+      "claims": [
+        "flavor_native_beta_no_half_attractor_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/flavor_native_double_shift_corner_coupling_2026_05_30.py": {
       "assert_count": 1,
       "claims": [
@@ -32999,6 +34031,216 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_open_cluster_consolidation_map_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "open_koide_flavor_cluster_consolidation_map_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_operator_realization_local_density_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_operator_realization_local_density_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_qubit_berry_holonomy_probe_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_qubit_berry_holonomy_probe_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_r_half_assumptions_audit_2026_05_30.py": {
+      "assert_count": 0,
+      "claims": [
+        "flavor_r_half_assumptions_audit_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_readout_gate_equals_carrier_identification_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 15,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_retention_law_is_A2plus_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_retention_law_is_a2plus_note_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/flavor_so2_readout_false_binary_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_so2_readout_false_binary_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_substrate_bridge_fails_source_operator_asymmetry_2026_05_31.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_substrate_parent_separate_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_substrate_parent_separate_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/flavor_trace_vs_center_dissolves_2026_05_30.py": {
+      "assert_count": 1,
+      "claims": [
+        "flavor_trace_vs_center_dissolves_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/fm_transfer_grown_companion.py": {
@@ -59540,12 +60782,12 @@
     "dominant_class_distribution": {
       "A": 282,
       "B": 307,
-      "C": 797,
-      "D": 314,
-      "none": 449
+      "C": 827,
+      "D": 318,
+      "none": 461
     },
-    "runners_classified": 2149,
-    "runners_with_C": 1050,
-    "runners_with_D": 639
+    "runners_classified": 2195,
+    "runners_with_C": 1081,
+    "runners_with_D": 645
   }
 }

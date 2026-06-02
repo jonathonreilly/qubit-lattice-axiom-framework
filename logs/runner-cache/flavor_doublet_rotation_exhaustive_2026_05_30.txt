@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py
+runner_sha256: 552fa99933fa9d42c9283f583cc1e2361c8c23ac33195293b5f3216706a119dc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+[PASS] E5 doublet COMPLEX TYPE: exactly two C3-equivariant J (J^2=-I) = +/-J_cs (FORCED, unique up to sign)
+       solutions [(0, -1), (0, 1)]
+[PASS] E2 O_h: 0 of 12 order-4 (90deg/factor-of-i) elements preserve hw=1 (no native i within a doublet)
+       order-4 total=12, preserve-hw1=0
+[PASS] E3 magnetic/ordinary translations vanish on doublet (single bit-flip leaves hw=1); H^2(C3,U(1))=0
+       qubit cocycle descends as central i*I3 (gen-blind), NOT J_cs (non-central)
+[PASS] E3b qubit i = central i*I3 (singlet eig=i) != J_cs (singlet eig=0): projective structure gen-blind
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: enumeration COMPLETE at the symmetry/operator level (point group, full O_h, projective/
+magnetic via H^2=0, automorphisms, anti-unitary, coin, induced -- all collapse to discrete D3+Z2).
+NO new doublet rotation. UPGRADE: J_cs is FORCED (Schur, unique up to sign), not a chosen object.
+But no symmetry ORIENTS it or selects its Kahler measure -> r=1/2 is neither derived nor forbidden;
+the free bit is sharpened to a MEASURE question (Kahler det_C / Q=2/3 vs flat det_R / Q=1), which a
+symmetry enumeration cannot settle. Next: a measure/positivity principle selecting J_cs's Kahler measure.
+
+----- stderr -----
+

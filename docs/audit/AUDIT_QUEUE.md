@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1198
-**Ready (all deps already at retained-grade or metadata tiers):** 66
+**Total pending:** 1200
+**Ready (all deps already at retained-grade or metadata tiers):** 68
 
 By criticality:
 - `critical`: 316
 - `high`: 247
 - `medium`: 295
-- `leaf`: 340
+- `leaf`: 342
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -15,10 +15,10 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 754 | 17.56 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py` |
+| 1 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 756 | 18.56 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py` |
 | 2 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | critical | 753 | 17.56 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/per_site_su2_spin_half_check.py` |
-| 3 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 751 | 15.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_charged_lepton_koide_cone_algebraic.py` |
-| 4 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | critical | 749 | 15.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_z3_equivariant_anticommuting_no_go.py` |
+| 3 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 753 | 16.06 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_charged_lepton_koide_cone_algebraic.py` |
+| 4 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | critical | 751 | 15.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_z3_equivariant_anticommuting_no_go.py` |
 | 5 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 749 | 15.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_generation_observable_m3c_burnside_narrow.py` |
 | 6 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | critical | 748 | 13.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py` |
 | 7 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | critical | 747 | 13.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_parity_violation_vs_generation_triplet_discriminator.py` |

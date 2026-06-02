@@ -13824,6 +13824,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_pointed_origin_exhaustion_theorem.py"
     },
+    "koide_pointer_record_degeneracy_d3_note_2026-05-31": {
+      "assert_count": 0,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 13,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_koide_pointer_record_degeneracy_d3.py"
+    },
     "koide_positive_parent_axis_obstruction_note_2026-04-18": {
       "assert_count": 1,
       "counts": {
@@ -14195,6 +14207,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py"
+    },
+    "koide_records_objectivity_conditional_note_2026-05-31": {
+      "assert_count": 0,
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py"
     },
     "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16": {
       "assert_count": 4,
@@ -45038,6 +45062,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_pointer_record_degeneracy_d3.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_pointer_record_degeneracy_d3_note_2026-05-31"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 13,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_koide_positive_parent_axis_obstruction.py": {
       "assert_count": 1,
       "claims": [
@@ -45428,6 +45467,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_records_objectivity_conditional_note_2026-05-31"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow.py": {
@@ -61023,14 +61077,14 @@
   "stats": {
     "decoration_candidates": 372,
     "dominant_class_distribution": {
-      "A": 282,
+      "A": 283,
       "B": 307,
-      "C": 835,
+      "C": 836,
       "D": 319,
       "none": 461
     },
-    "runners_classified": 2204,
-    "runners_with_C": 1089,
+    "runners_classified": 2206,
+    "runners_with_C": 1091,
     "runners_with_D": 646
   }
 }

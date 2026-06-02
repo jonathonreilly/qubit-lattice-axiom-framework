@@ -16317,6 +16317,42 @@
       "to": "koide_q_delta_linking_relation_theorem_note_2026-04-20"
     },
     {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30"
+    },
+    {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "action_normalization_note"
+    },
+    {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "three_generation_observable_theorem_note"
+    },
+    {
+      "from": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "to": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_positive_parent_axis_obstruction_note_2026-04-18",
       "to": "koide_full_lattice_schur_inheritance_note_2026-04-18"
     },
@@ -16763,6 +16799,26 @@
     {
       "from": "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
       "to": "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
+    },
+    {
+      "from": "koide_records_objectivity_conditional_note_2026-05-31",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_records_objectivity_conditional_note_2026-05-31",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "koide_records_objectivity_conditional_note_2026-05-31",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_records_objectivity_conditional_note_2026-05-31",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
+      "from": "koide_records_objectivity_conditional_note_2026-05-31",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "koide_reviewer_stress_test_note_2026-04-21",
@@ -64231,6 +64287,28 @@
       "runner_path": "scripts/frontier_koide_pointed_origin_exhaustion_theorem.py",
       "title": "Koide Pointed-Origin Exhaustion Theorem"
     },
+    "koide_pointer_record_degeneracy_d3_note_2026-05-31": {
+      "claim_id": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "action_normalization_note",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "three_generation_observable_theorem_note",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8c24df159b3d2dca22890a20be418dd6a6d2adff3d47048b51620a348d9fd488",
+      "path": "docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_koide_pointer_record_degeneracy_d3.py",
+      "title": "Koide Pointer Record Degeneracy D3: Two-Outcome S Record, Weight Still Open"
+    },
     "koide_positive_parent_axis_obstruction_note_2026-04-18": {
       "claim_id": "koide_positive_parent_axis_obstruction_note_2026-04-18",
       "claim_type_author_hint": null,
@@ -64745,6 +64823,24 @@
       "path": "docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md",
       "runner_path": "scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py",
       "title": "Koide Real-Rep Block-Count Route: Permitted-Not-Forced"
+    },
+    "koide_records_objectivity_conditional_note_2026-05-31": {
+      "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4a4dafd1b64b9801ab32d3cebbca9435b7fa45a8256255005b2734eac8eb5d0e",
+      "path": "docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py",
+      "title": "Koide Records Objectivity Conditional: Equal-Block Metric Plus Objectivity Gives r=1/2"
     },
     "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16": {
       "claim_id": "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16",
@@ -90041,7 +90137,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 790,
+      "bounded_theorem": 792,
       "decoration": 1,
       "meta": 201,
       "no_go": 93,
@@ -90050,7 +90146,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1191,
+      "bounded_theorem": 1193,
       "decoration": 1,
       "meta": 201,
       "no_go": 196,
@@ -90058,10 +90154,10 @@
       "open_gate": 134,
       "positive_theorem": 578
     },
-    "edge_count": 10204,
-    "leaf_count": 882,
-    "node_count": 2724,
+    "edge_count": 10218,
+    "leaf_count": 884,
+    "node_count": 2726,
     "root_count": 941,
-    "runners_with_path": 2309
+    "runners_with_path": 2311
   }
 }

@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_pointer_record_degeneracy_d3.py
+runner_sha256: a1c1775bcd367cb10f45d9d1dd368a85a5714741c0691a611055a1e63823cee3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+
+========================================================================
+A. C_3 skeleton: Q=(1+2r)/3, non-circular (r free, theta-independent)
+========================================================================
+[PASS] C^3 = I
+[PASS] Q = (1+2r)/3 across scanned r (never assumed) -- max |Q - (1+2r)/3| = 8.88e-16
+[PASS] Q is theta-independent (signed readout) -- max theta spread = 4.00e-15
+[PASS] dQ/dr = 2/3 (no stationarity at r=1/2)
+[PASS] r=1/2 => Q=2/3 (solved output, not assumed)
+
+========================================================================
+B. D3: S=C+C^2 -> exactly 2 distinct eigenvalues; doublet record-degenerate
+========================================================================
+[PASS] S spectrum = {+2 (x1), -1 (x2)} -- eigs = [-1.0, -1.0, 2.0]
+[PASS] D3: S has EXACTLY 2 distinct eigenvalues -- distinct = [-1.0, 2.0]
+[PASS] singlet projector rank 1, doublet projector rank 2 (degenerate) -- ranks = (singlet 1, doublet 2)
+[PASS] sharp S-record returns ONE value (-1) on the rank-2 doublet -> record-degenerate -- tr P_doublet = 2.000; S acts as -1 on its whole range
+[PASS] D3 names no state: built from C (C^3=I) and S:=C+C^2 only
+
+========================================================================
+B'. The doublet record-degeneracy is RELATIVE to choosing S: conjugate pointer A resolves it
+========================================================================
+[PASS] A = i(C-C^2) is Hermitian
+[PASS] [S, A] = 0 (both functions of normal C)
+[PASS] A has 3 DISTINCT eigenvalues {0, +/-sqrt3} -> A resolves the doublet -- eig(A) = [-1.7321, 0.0, 1.7321]
+
+========================================================================
+C. The two candidate measures on the 2-atom S-algebra: (1,1) vs (1,2)
+========================================================================
+[PASS] counting-on-atoms: E_+ = E_perp  <=>  r = 1/2  (block-count (1,1)) -- 3a^2 = 6b^2 => b^2/a^2 = 1/2 -> Q=2/3
+[PASS] rank/dimension: E_+ = E_perp/2  <=>  r = 1  (dimension (1,2)) -- doublet weighted by rank 2 -> r=1 -> Q=1
+
+========================================================================
+D. D3 makes the (1,1) maximizer well-MOTIVATED (budget-free), but choosing it IS the bit
+========================================================================
+[PASS] F1=logE_+ + logE_perp is MONOTONE (argmax at boundary, NOT r=1/2) -- argmax_r F1 = 4.000 -- corrects prior 'log-capacity peaks at 1/2'
+[PASS] budget-free H2(atom-share) max at r=1/2 -> Q=2/3 (the count-on-atoms reading) -- argmax_r H2 = 0.5008 -> Q = 0.66717
+[PASS] per-fragment mutual info maximized at BALANCED atoms, fidelity-independent -- argmax priors = [0.499, 0.499, 0.499, 0.499, 0.499]
+[PASS] BUT counting-on-atoms = objectivity-weighting is a CHOICE of measure (the residual bit), not forced by D3
+
+========================================================================
+E. Why D3 does NOT force (1,1): 3 prongs (the rank/dimension reading stays available)
+========================================================================
+[PASS] P1: mass operator H resolves the doublet -> 3 DISTINCT H-eigenvalues (mu,tau split) -- eig(H) = [0.1304, 1.1696, 1.7] -> doublet enters Q as TWO masses (dimension reading baked into Q)
+[PASS] P1: [H, S] = 0 yet H is finer -> sharp-S coarse-grains the 2 doublet masses
+[PASS] P2: ensemble rho=I/3 -> (1/3, 2/3) = projector-rank/dimension (1,2) -> Q=1 -- (singlet, doublet) = (0.333, 0.667); doublet Born weight carries rank 2
+[PASS] P2: [H,C]=0 -> pointer basis is C_3 Fourier but r-independent (no weight selection)
+[PASS] P3: dim 3 is ODD -> S-split ranks (1,2) are UNEQUAL; balanced (1/2,1/2) not inherited -- sharp-record P0=(1/2,1/2) needs equal rank; (1,2) != (1/2,1/2) -> counting-on-atoms remains an input
+[PASS] RESIDUAL = one bit: count atoms (1:1 -> Q=2/3) vs Born/rank (1:2 -> Q=1); D3 fixes #atoms, not the weight
+
+========================================================================
+RESULT
+========================================================================
+
+25/25 checks passed.
+D3: S=C+C^2 has exactly 2 distinct eigenvalues; the doublet is
+record-degenerate under a sharp S-record (rank-2 eigenprojector), while the conjugate pointer
+A=i(C-C^2) resolves it. D3 converts the vague 'maximize objectivity' into the crisp bit
+'count each pointer atom once (1,1) vs weight by projector rank (1,2)' and supplies the
+outcome-merge half of (1,1). It does NOT force (1,1): Q is built from the mass operator H,
+whose doublet enters as two distinct masses (P1); the trace comparison rho->I/3 is rank-weighted
+to (1,2) (P2); and dim 3 odd blocks transport of the balanced reference (P3). Residual = the
+single counting-measure bit (= det_C-vs-det_R = koide_frobenius_isotype_split_uniqueness),
+now crisply stated. The next path: derive (not postulate) counting-on-atoms over rank-weighting.
+
+----- stderr -----
+

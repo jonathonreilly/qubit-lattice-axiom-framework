@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/koide_onsite_boost_reconstruction_2026_06_02.py
+runner_sha256: 5d8bdd725c903e23f55574f212d78db89ffae5c5e04bd00ad979e496e63a60ab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+[PASS] S1 bivectors B_i = (1/2)gamma_j gamma_k = (i/2)sigma_i (Grassmann-free)
+[PASS] S1 J_i Hermitian
+[PASS] S1 K_i anti-Hermitian (Lorentzian-forced)
+[PASS] S2 [J,J]=i eps J
+[PASS] S2 [J,K]=i eps K
+[PASS] S2 [K,K]=-i eps J (Lorentzian boost sign)
+[PASS] S2 CONTROL Euclidean [K,K]=+i eps J fails (so sign is non-trivial)
+[PASS] S3 left Casimir N^2 scalar (jL)  (jL=0.000)
+[PASS] S3 right Casimir Ntil^2 scalar (jR)  (jR=0.500)
+[PASS] S3 carrier is a DEFINITE chiral Weyl (1/2,0) or (0,1/2)  ((jL,jR)=(0.00,0.50))
+[PASS] S3 boost rep FAITHFUL (K_i != 0, not the scalar)
+[PASS] S3 mirror gamma-convention realizes the OPPOSITE chirality  (mirror (jL,jR)=(0.50,0.00))
+[PASS] S4 chiral kernel covariance S^dag (p.sigmabar) S = (Lp).sigmabar  (max err 1.78e-14)
+[PASS] S5 chiral C^2 little-group Casimir J^2 = 3/4 => hosts spin-1/2  (J^2=0.750 I)
+[PASS] S5 scalar carrier (J=K=0) Casimir = 0 => hosts ONLY spin-0 (excluded for spin-1/2 content)
+[PASS] S5 SELECTION: spin-1/2 numerator forces FAITHFUL chiral Weyl over scalar (little-group)
+[PASS] S6 scalar carrier fails covariance for the spin-1/2 kernel (witness > 0)  (min discrepancy over boosts 2.824e-01)
+[PASS] S7a omega^2 = -1 and omega central (pseudoscalar)  (omega = 0.00+1.00j I (= +i I on this qubit))
+[PASS] S7a single qubit realizes ONE chirality (e_+ = I, e_- = 0)
+[PASS] S7b Dirac H spectrum {-E,-E,+E,+E} (needs FULL 4-comp Dirac)  (E=1.5875)
+[PASS] S7b massive on-shell projector idempotent on Dirac C^4 (P^2=P)
+[PASS] S7b massive projector NOT idempotent on a single chirality C^2 (=(1/2)I2)  (single qubit hosts MASSLESS Weyl; mass needs the partner chirality)
+[PASS] S7c partner chirality via Cl(3,0)->Cl(3,1) doubling: e_4^2=-1, {e_4, spatial}=0  (the named residual = emergent-time/Wick doubling step)
+
+SCORECARD PASS=23 FAIL=0
+VERDICT (honest): REDUCES-TO-NAMED-RESIDUAL. The Grassmann-free so(3,1) boosts from
+Cl(3,0) bivectors + the qubit-is-faithful-chiral-Weyl + kernel covariance + the
+faithful-vs-scalar SELECTION (L1) via the rest-frame little group all CLOSE
+non-circularly (no CAR in the forcing). CAR is NOT unconditionally forced: the MASSIVE
+field satisfying T1's hypothesis reduces to ONE named residual -- the partner chirality
+via the emergent-time Cl(3,0)->Cl(3,1) doubling as a positive-energy massive field.
+
+----- stderr -----
+

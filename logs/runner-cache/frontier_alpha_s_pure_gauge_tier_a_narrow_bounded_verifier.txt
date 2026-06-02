@@ -1,0 +1,37 @@
+
+=== Pure-Gauge α_s(M_Z) Tier-A Narrow Bounded Theorem ===
+
+Scope: bounded_theorem on pure-gauge surface α_s(M_Z) extraction with
+       three of four imports discharged: g_0 vacuous, S Tier-A admitted,
+       textbook RG. Pure-gauge-to-full-QCD bridge explicitly named as
+       open residual; NOT closed by this note.
+
+[PASS] S1.parent: ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30 present on origin/main  (retained_bounded parent (Wilson-loop derivation on β=6 surface))
+[PASS] S2.rescaling: g_0 rescaling-identity authority present on origin/main  (retained positive_theorem proving g_bare is rescaling-invariant gauge choice)
+[PASS] S2.g_0_vacuous: g_0 is in Tier-A registry's vacuous conventions list  (registered as gauge-choice rescaling convention, not as admitted input)
+[PASS] S2.g_0_not_admission: g_0 is NOT in Tier-A admissions list  (explicitly NOT counted as admitted input per registry)
+[PASS] S3.S_in_registry: Tier-A registry classifies absolute scale as `S` admission  (S registered as not_a_node (pervasive, no single citeable parent row))
+[PASS] S3.sommer_value: Sommer scale r_0 ≈ 0.5 fm is standard QCD textbook value  (r_0 = 0.5 fm; convention used as instance of Tier-A S admission)
+[PASS] S3.convention_framing: PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE (S framing) present  (meta on origin/main; supplies convention-adoption framing for S)
+[PASS] S4.beta_0: β_0 numerator (33 - 2n_f) at n_f=5 is positive (asymptotic freedom)  (β_0_num = 23; AF holds at n_f=5)
+[PASS] S4.beta_1: β_1 numerator (153 - 19n_f) at n_f=5 is positive (2-loop AF persists)  (β_1_num = 58)
+[PASS] S4.thresholds: charm and bottom thresholds are well-separated from M_Z  (m_c=1.27 < m_b=4.18 < M_Z=91.1876 GeV)
+[PASS] S5.pdg_sanity: framework pure-gauge α_s(M_Z) within PDG window (sanity only, not load-bearing)  (framework = 0.1181, PDG = 0.118 ± 0.0009, deviation = 0.0001)
+[PASS] S5.comparator_only: PDG α_s(M_Z) is sanity comparator, not derivation input  (S1-S4 use only retained authorities + Tier-A admission + textbook content)
+[PASS] S5.bridge.residual_open: pure-gauge-to-full-QCD bridge has NO retained closure on origin/main  (searched 5 potential closure names; 0 matches; residual remains open)
+[PASS] S5.bridge.named: pure-gauge-to-full-QCD bridge explicitly named as residual  (the lane's remaining open gate; this note does not claim closure)
+[PASS] companion.open_gate: audited_clean open_gate parent present on origin/main  (companion to (not modified by) this note)
+[PASS] H1: does NOT derive full-QCD α_s(M_Z); pure-gauge surface only  (full closure requires pure-gauge-to-full-QCD bridge (named open residual))
+[PASS] H2: does NOT close pure-gauge-to-full-QCD bridge  (residual remains the lane's open gate)
+[PASS] H3: does NOT modify ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30  (companion source note pattern; parent unchanged)
+[PASS] H4: does NOT modify ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02  (open_gate retains its open status for the named residual)
+[PASS] H5: does NOT promote Tier-A S admission to retained  (S retains its not_a_node descriptive tracking in registry)
+[PASS] H6: does NOT consume PDG values as derivation input  (PDG α_s(M_Z) match is S5 sanity comparator only)
+[PASS] H7: does NOT propose new axiom or new theory-language extension  (uses A1, A2, retained authorities, Tier-A registry, textbook RG only)
+[PASS] H8: standard QCD β-function content cited as textbook (Peskin-Schroeder §17)  (analogous to Buckingham-π citation in PR #2375 PLANCK_MASS_CONVENTIONAL_ANCHOR meta note)
+
+PASS=23  FAIL=0
+
+All bounded-theorem checks PASSED. Tier-A-discharged on pure-gauge surface.
+Audit lane decides effective_status (retained_bounded proposed).
+Pure-gauge-to-full-QCD bridge remains the lane's open residual.

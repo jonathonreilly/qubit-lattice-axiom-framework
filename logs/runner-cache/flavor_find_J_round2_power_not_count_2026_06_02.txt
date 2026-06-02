@@ -1,0 +1,17 @@
+[PASS] R2-1 Berezin Z=det(H) = product of 3 REAL eigenvalue factors (det_R-type product), a FUNCTION of (a,b) -- never integrates over b
+       determinant-PRODUCT functional, structurally distinct from the Frobenius block-total that gives r=1/2
+[PASS] R2-2 C_3 leaves BOTH symmetric I (C^T I C=I) and antisymmetric J=C-C^2 (C^T J C=J) invariant -> does NOT select det_C(J) over det_R(I)
+       choosing A propto J (= det_C, pairing 2 reals into 1 complex) is an unforced posit = the U(1)_b that round 1 showed measure-neutral / C^3=I-forbidden-as-continuous
+[PASS] R2-3 on equal footing both are single-power: Pf(aJ)=a and det(sI)^{-1/2}=1/s; the '1-vs-2 factor' split is a Pfaffian-vs-unrooted-det artifact
+       Pf(aJ)=2.000=a (1 factor); det(sI)^(-1/2)=0.500=1/s (1 factor) -> fermion/boson fixes the det EXPONENT, not the doublet COUNT
+[PASS] R2-4 det_C (equal power per BLOCK 3a^2=6|b|^2) -> r=1/2 -> Q=2/3 (observed); det_R (per real dim 3a^2=3|b|^2) -> r=1 -> Q=1 (A1 default)
+       the wall: det_C/r=1/2 <=> DIRAC (complex/J-paired) generation doublet; det_R/r=1 <=> MAJORANA (real)
+
+SCORECARD PASS=4 FAIL=0
+VERDICT (J-hunt round 2, wf_d2438beb): det_R/Q=1 stands. The FERMIONIC frame does NOT force det_C:
+POWER (det exponent) != COUNT (doublet mode-count); Berezin gives a determinant-PRODUCT (3 real
+factors), not the block-total that gives r=1/2; and C_3 admits BOTH the symmetric I and the
+antisymmetric J as invariant bilinears, so det_C's J is an unforced extra posit = the measure-neutral,
+C^3=I-forbidden-as-continuous U(1)_b. The fermionic frame is the same static J in a Berezin costume.
+WALL NOW (round 3): can A1+A2+emergent-spacetime force a DIRAC (complex) vs MAJORANA (real) reality
+structure on the generation doublet? (Charged leptons ARE Dirac -- the round-3 lever.)

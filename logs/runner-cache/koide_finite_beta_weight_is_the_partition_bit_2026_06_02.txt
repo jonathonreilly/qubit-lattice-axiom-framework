@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/koide_finite_beta_weight_is_the_partition_bit_2026_06_02.py
+runner_sha256: 9093675302b5f852e4e8878ab320bea87f4d1654e48f5c9b2301011d88c7ed08
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+[PASS] Q(1/2)=2/3 (retained algebra anchor, used as target)
+[PASS] Q(1)=1 (direction-counting target)
+[PASS] cyclic vector e is NOT an eigenvector of H (b!=0)
+[PASS] H eigenline is democratic (1,1,1), distinct from vacuum e (overlap 1/sqrt3)
+[PASS] H eigen-gap = 3b (single energy scale)
+[PASS] beta=ln2/gap is the UNIQUE beta giving weight-ratio 1/2 (free posit, absorbs target)
+[PASS] t=1/2 (beta*gap=+ln2) -> r=1/2 -> Q=2/3
+[PASS] t=1 (beta=0, uniform/tracial) -> r=1 -> Q=1
+[PASS] identity beta*gap = -ln(t) collapses temperature onto the partition ratio
+[PASS] unconstrained MaxEnt state = I/3 (tracial) -> uniform per direction (r=1 side)
+[PASS] 2-outcome {P_id,P_perp} entropy maximized (=ln2) exactly at r=1/2 (genuine 1-bit reading)
+
+SCORECARD PASS=11/11
+SCORECARD PASS=11
+
+----- stderr -----
+

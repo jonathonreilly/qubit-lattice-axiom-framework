@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/interacting_transfer_matter_gap_2026-05-30.py
+runner_sha256: 4502530db3e98298871c1a2d0ee7b1df51a9cd9da74d967f1fd57b2afe058299
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+[PASS] anti_hermitian_staggered_hop
+[PASS] uniform_lower_bound_arcsinh_m
+[PASS] bound_uniform_in_U_and_volume
+[PASS] transfer_eig_below_one
+[PASS] nontriviality_m_to_0_and_antiherm_control
+SCORECARD PASS=5 FAIL=0
+
+----- stderr -----
+

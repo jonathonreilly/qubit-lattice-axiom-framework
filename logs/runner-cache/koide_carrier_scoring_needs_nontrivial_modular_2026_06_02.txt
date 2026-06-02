@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/koide_carrier_scoring_needs_nontrivial_modular_2026_06_02.py
+runner_sha256: 067156d407457936abfad8941e231718552bd6ecb97b06c856056066b548237c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+[PASS] 0 carrier state = group TRACE tau: <Omega, pi(g^k) Omega> = tau(g^k) = delta_{k,0} (GNS reproduces tau)
+       Omega=e is cyclic & separating; group ONB {e,g,g^2} => GNS inner product is standard
+[PASS] 1 TRIVIAL MODULAR FLOW: Tomita S(x.Omega)=x*.Omega has modular operator Delta=S^#S=IDENTITY; modular Hamiltonian K=-log Delta=0; sigma_t=id (trace = KMS at beta=0)
+       ||S(xOmega)-x*Omega||~0=True; Delta=I=True; spec(-logDelta)=[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[PASS] 2 the carrier's distinguished weight is DIRECTION-counting: rho_tau=I/N (max-entropy) + modular Gibbs exp(-K) UNIFORM per direction -> r=w0/w1=1 -> Q=1 (the tracial carrier weights toward Q=1, NOT 2/3)
+       rho_tau=I/3, Gibbs weight=[1.0, 1.0, 1.0] (uniform) -> r=1.000, Q=1.000
+[PASS] 3 CHANNEL-counting (r=1/2) <=> a FINITE-beta KMS/Gibbs density weight: needs w0/w1=1/2 i.e. beta*gap=ln2 != 0; EXPLICIT non-tracial faithful density rho=diag(1/5,2/5,2/5) (density gap=ln2) gives EXACTLY r=1/2, Q=2/3
+       direction target beta*gap=0.000 (=0, tracial); channel target needs beta*gap=ln(1/2)=-0.693; rho=diag(1/5,2/5,2/5): gap=ln2=0.6931, r=0.500, Q=0.6667; trace rho=I/3 (gap=0) CANNOT supply it
+[PASS] 4a REP-THEORY points to direction-counting: the {g,g^2}-plane is NOT a sub-representation of the left-regular rep (g maps it off itself); regular rep = 3 distinct 1-dim irreps -> 3 equal lines -> r=1
+       span{e1,e2} g-invariant? False (NOT) ; #distinct irreps=3 => 'one channel for the plane' has no rep-theoretic backing
+[PASS] 4b NUMBER-OPERATOR bifurcates: Z_3 CHARGE number diag(0,1,2) -> 3 singletons -> direction-counting (r=1); the 'level' number diag(0,1,1) giving channel-counting needs a spectrum-{0,1,1} Hamiltonian = CIRCULAR. Most-general invariant diagonal op diag(alpha,beta,beta) has a FREE ratio -> channel-count not pinned
+       intrinsic group-law charge -> 3 singletons (r=1); channel-count branch presupposes the answer
+[PASS] 4c KAHLER corroborator does NOT independently force r=1/2: its r=(q-p)/(4p-q) gives 1/2 ONLY for rank-prefactors (p,q)=(1,2) (=the (1,N-1) channel weight); equal prefactors (1,1) give r=0 -> it re-imposes the SAME channel weighting as an input, corroborating the VALUE given the weighting, not the weighting
+       r_kahler(1,2)=0.500 (channel) ; r_kahler(1,1)=0.000 (NOT 1/2)
+[PASS] 5 FALSIFIABLE: the channel-counting weight gives r=1/(N-1) at each N (Z_N), so r=1/2 is tied to the DERIVED n_gen=3 (N=2->1, N=3->1/2 Q=2/3, N=4->1/3, N=6->1/5); a wrong dynamics-supplied gap would break this
+       r(N)={2:1.000,3:0.500,4:0.333,6:0.200}, Q(N=3)=0.6667
+
+SCORECARD PASS=8 FAIL=0
+VERDICT: the channel-vs-direction SCORING residual is not supplied by the TRACIAL modular data. The carrier
+state is a trace tau, whose Tomita-Takesaki modular operator is EXACTLY Delta=1 (modular Hamiltonian 0,
+modular flow trivial; a trace is KMS at beta=0). The carrier's own distinguished weight (rho_tau=I/N +
+uniform modular Gibbs factor) is DIRECTION-counting -> r=1 -> Q=1; channel-counting (r=1/2 -> Q=2/3) is
+a finite-beta KMS/Gibbs density weight (explicit non-tracial density rho=diag(1/5,2/5,2/5), density gap=ln2),
+which the trace by construction LACKS. The tested non-import routes (rep-theory, charge-number,
+Kahler rank-prefactors) do not force channel-counting at the tracial level -- they give
+direction-counting or are circular.
+So the carrier-scoring residual REDUCES to the emergent-time DYNAMICS (which finite-beta density / 2-sector coarse-graining
+the dynamics realizes) -- EXPLAINING why the on-main flow notes (FLAVOR_R_HALF_*_2026-06-02) had to invoke
+a thermalizing arrow / einselection / records flow: the carrier's own modular flow is trivial. This
+RELOCATES the residual to a non-tracial dynamical object (linking the value lane with carrier/emergent-
+time lane); it does NOT close it -- the specific gap (-> r=1/2) is still dynamics-supplied. Non-circular:
+r=1/2 / Q=2/3 are OUTPUTS of an imposed weight, never assumed.
+
+----- stderr -----
+

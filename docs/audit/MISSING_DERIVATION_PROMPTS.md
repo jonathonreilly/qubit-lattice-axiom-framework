@@ -2418,7 +2418,7 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_7 rows in this category._
+_10 rows in this category._
 
 
 ### `source_resolved_exact_green_pocket_note`
@@ -2537,6 +2537,35 @@ drive.
 ```
 
 
+### `beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30`
+
+**Note:** [docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md](docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)  |  **Descendants:** 1  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Exact bounded d_7 coefficient for Delta(beta) on the four cube-shell support, plus the arithmetic falsification of the specific prediction d_7^pred = (d_6/d_5)d_6.
+
+Auditor's verdict_rationale:
+The displayed formulas following the asserted d_7 are arithmetically consistent: 4*(5/68024448)=5/17006112, d_7/d_6=5/21, and the relative miss against 49/68024448 is 29/49. The load-bearing exact d_7 value itself is not certified by the provided completed output: the cache reports only d_5 and d_6, while the source note claims a maxorder=7 PASS=22 run. The visible runner source also has the optimized Fraction-engine middle omitted in the packet, so the restricted packet cannot verify that the order-7 coefficient is computed rather than asserted.
+
+Auditor-quoted load-bearing step:
+The exact order-beta^7 connected coefficient is d_7 = 5/17006112, equivalently 5/68024448 per cube shell, so d_7/d_6 = 5/21 differs from d_6/d_5 = 7/12 and falsifies the specified single-ratio geometric/tadpole ansatz.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: provide the full primary runner source and a completed cache for `python3 scripts/frontier_beta6_connected_coefficient_2026_05_30.py 7`, or an independent certificate of the four cube-shell order-7 multiplicity sum.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ### `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29`
 
 **Note:** [docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md](docs/LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md)  |  **Descendants:** 0  |  **Class:** C
@@ -2624,6 +2653,64 @@ drive.
 ```
 
 
+### `staggered_backreaction_live_capture_packet_note_2026-05-29`
+
+**Note:** [docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md](docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md)  |  **Descendants:** 0  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Finite bounded comparison for the current staggered capture-closure runner on the two cycle-bearing graphs and the specified layered holdout.
+
+Auditor's verdict_rationale:
+The primary runner imports the capture-closure harness, constructs fixed graph families and a layered holdout, solves the graph-field/evolution problem, and asserts the bounded thresholds without hard-coded expected result constants. The formula inventory pass finds source-runner drift in the displayed live readout: the source note's two-body maximum is 2.478e-16, but the completed runner output and detailed B3 rows give a maximum of 1.702e-16. Because every displayed quantitative entry must be correct for a clean audit, the claim is conditional on reconciling that stale numerical entry.
+
+Auditor-quoted load-bearing step:
+The current live runner computes 9/9 cycle battery scores, improves the cycle mean gap from 9.828e-01 to 4.734e-01, improves the layered holdout gap from 9.191e-01 to 4.559e-01, and passes the stated guardrails.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: update or regenerate the source note's displayed live readout so the two-body max matches the current runner cache, then rerun the restricted formula inventory.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `staggered_backreaction_live_green_packet_note_2026-05-29`
+
+**Note:** [docs/STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md](docs/STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md)  |  **Descendants:** 0  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Finite bounded comparison on the current staggered graph-Green runner for three fixed maps and the current fixed graph-family battery.
+
+Auditor's verdict_rationale:
+The visible runner code performs a real finite computation rather than merely printing the contested readout, and the source note's displayed numerical claims match the cached runner output. The visible helper portions also instantiate graph operators, source densities, Hamiltonian evolution, and force readouts without an external comparator. But the helper source is not fully present in the packet, so stdout alone cannot establish that the transitive load-bearing path is free of hard-coded or hidden premises.
+
+Auditor-quoted load-bearing step:
+The live runner computes that `resistance_yukawa` is the best holdout-aware map in the frozen comparison, with 2.81x raw cycle-gap improvement, raw holdout gap 1.534e-02, and the calibrated holdout and self-refresh gaps still open.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: include the complete untruncated source for scripts/frontier_staggered_backreaction_prototype.py and rerun the restricted audit.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ## audited_conditional_scope_too_broad
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
@@ -2664,7 +2751,7 @@ drive.
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_28 rows in this category._
+_29 rows in this category._
 
 
 ### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
@@ -3471,6 +3558,35 @@ The empirically implied light-Dirac Yukawa y_nu ~ 10^-13 to 10^-12 lies many ord
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: add retained or explicitly accepted bridges for the empirical small-m_nu premise, the Gamma/H thermalization criterion, and the M_R >> T_census Majorana-branch condition, or narrow the note to those assumptions; also correct the 100 GeV margin and replace the O(1)-only phrasing with y_nu >= y_thr.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25`
+
+**Note:** [docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md](docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md)  |  **Descendants:** 0  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/WILSON_ACTION_SURFACE_SELECTOR_REAL_POSITIVE_THEOREM_NOTE_2026-05-25.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Bounded canonical leading-β single-trace SU(3) plaquette selector assuming β=6 Wilson matching and the P4/P5 real-positive path-integral surface conventions.
+
+Auditor's verdict_rationale:
+The core exclusion of iθΣ Im Tr U_P is an algebraic consequence of the stipulated real-action convention P4, not a first-principles derivation from the framework baseline. The runner performs nontrivial SU(3) and symbolic checks, but it treats β=6 as scoped input and hard-codes the canonical P3 survivor rather than deriving the missing Wilson-matching authority. Strict formula inventory also finds source-runner drift in §9/V7: the displayed iθ(Tr U_P−Tr U_P†)/2 expression simplifies to a real −θ Im Tr U_P term; the earlier (θ/2)(Tr U_P−Tr U_P†)=iθ Im Tr U_P expression is the P4-violating one.
+
+Auditor-quoted load-bearing step:
+P4 requires the action functional to be real, so the candidate iθΣ_P Im Tr U_P is rejected, while P3 with the scoped β=6 premise fixes the real Wilson coefficient within the canonical leading-β ansatz.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: provide retained or explicitly accepted-premise authority for β=6 Wilson matching and P4/P5 real-positive surface conventions, then correct the V7 i-factor source-runner drift before re-audit.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

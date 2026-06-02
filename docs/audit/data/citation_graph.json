@@ -15761,6 +15761,30 @@
       "to": "charged_lepton_koide_cone_algebraic_equivalence_note"
     },
     {
+      "from": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+      "to": "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_berry_phase_theorem_note_2026-04-19",
       "to": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16"
     },
@@ -62957,6 +62981,25 @@
       "runner_path": "scripts/frontier_koide_berry_bundle_obstruction_theorem.py",
       "title": "Koide Berry Bundle Obstruction / Uniqueness Theorem"
     },
+    "koide_berry_monopole_bridge_reduction_note_2026-05-31": {
+      "claim_id": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5001d7589aa8168f0974dbfcdf697f79651192e828f581adfa454939d4e63236",
+      "path": "docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py",
+      "title": "Koide Berry-Monopole Bridge Reduction: native circulant gives Q=1; Q=2/3 remains the chiral/nonzero-Berry criterion"
+    },
     "koide_berry_phase_theorem_note_2026-04-19": {
       "claim_id": "koide_berry_phase_theorem_note_2026-04-19",
       "claim_type_author_hint": null,
@@ -89702,7 +89745,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 782,
+      "bounded_theorem": 783,
       "decoration": 1,
       "meta": 201,
       "no_go": 93,
@@ -89711,7 +89754,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1183,
+      "bounded_theorem": 1184,
       "decoration": 1,
       "meta": 201,
       "no_go": 196,
@@ -89719,10 +89762,10 @@
       "open_gate": 134,
       "positive_theorem": 578
     },
-    "edge_count": 10157,
+    "edge_count": 10163,
     "leaf_count": 879,
-    "node_count": 2716,
+    "node_count": 2717,
     "root_count": 941,
-    "runners_with_path": 2301
+    "runners_with_path": 2302
   }
 }

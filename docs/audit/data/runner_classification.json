@@ -13056,6 +13056,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_koide_berry_bundle_obstruction_theorem.py"
     },
+    "koide_berry_monopole_bridge_reduction_note_2026-05-31": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 16,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py"
+    },
     "koide_berry_phase_theorem_note_2026-04-19": {
       "assert_count": 1,
       "counts": {
@@ -44023,6 +44035,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_berry_monopole_bridge_reduction_note_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 16,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_koide_berry_phase_theorem.py": {
       "assert_count": 1,
       "claims": [
@@ -60809,12 +60836,12 @@
     "dominant_class_distribution": {
       "A": 282,
       "B": 307,
-      "C": 827,
+      "C": 828,
       "D": 319,
       "none": 461
     },
-    "runners_classified": 2196,
-    "runners_with_C": 1081,
+    "runners_classified": 2197,
+    "runners_with_C": 1082,
     "runners_with_D": 646
   }
 }

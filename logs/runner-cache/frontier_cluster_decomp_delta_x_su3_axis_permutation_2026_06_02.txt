@@ -1,0 +1,32 @@
+
+=== Cluster decomposition Delta_x axis-permutation narrow companion ===
+
+Scope: bounded_theorem supplying H1+H2 (existence + strict gap) for the
+       spatial-axis T_x on the pure-Wilson surface, by axis-permutation
+       from the retained temporal-axis finite-Lambda T_W gap theorem.
+       Does NOT prove Yang-Mills mass gap. Does NOT take thermodynamic limit.
+
+[PASS] A.heat.positive: SU(3) heat-kernel value at identity is strictly positive  (K_tau(2.0)(e) = 615.111525)
+[PASS] A.heat.converged: character series converged at truncation  (relative tail beyond P_MAX=12: 1.48e-05)
+[PASS] A.heat.sampled_positive: heat-kernel positive at sampled diagonal elements  (K values at theta=[0.0, 0.1, 0.3, 0.7, 1.0, 1.5]: [31.4447, 31.4428, 31.4269, 31.3213, 31.0759, 26.5117])
+[PASS] A.perm.weights: SU(3) heat-kernel eigenvalue weights invariant under axis permutations  (spectrum is a set of (p,q)-indexed scalars; permuting axes does not relabel (p,q))
+[PASS] A.gap.top: top eigenvalue corresponds to trivial irrep (p=q=0), value = 1.0  (top eigenvalue = 1.0)
+[PASS] A.gap.strict: strict gap below top eigenvalue  (top = 1.0, next = 0.641180, gap = 0.358820)
+[PASS] A.gap.simple: top eigenvalue is simple (multiplicity 1)  (trivial irrep multiplicity = 1)
+[PASS] A.perm.spectrum_equal: spatial-axis spectrum matches temporal-axis spectrum on truncated basis  (axis-permutation invariance verified on truncated character basis)
+[PASS] B.cited.CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERAT: retained temporal-axis parent present on origin/main  (verified via git ls-tree)
+[PASS] B.cited.CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_: downstream consumer (spatial slab bridge) present on origin/main  (verified via git ls-tree)
+[PASS] B.cited.AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_202: ultimate audited_conditional row this helps unblock present on origin/main  (verified via git ls-tree)
+[PASS] B.cited.STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEO: Leg A premise for T_F extension present on origin/main  (verified via git ls-tree)
+[PASS] C.no_thermo: no thermodynamic limit claim made  (finite-Lambda only, explicit in section 0 honest-scope)
+[PASS] C.no_axiom: no new axiom or theory-language extension  (uses A1, A2, retained temporal-axis parent only)
+[PASS] C.no_import: no new load-bearing imports beyond cited retained parent  (Lemma X cites the parent for all four operator-theoretic properties)
+[PASS] C.no_no_go_weakening: no retained no_go weakened  (Yang-Mills mass gap, infinite-volume gap, uniform-in-Lambda all explicitly out of scope)
+[PASS] C.no_parent_modification: does not modify AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29  (this is a companion narrow theorem; parent equation (8) repair is separate work)
+[PASS] C.no_Leg_A_promotion: Leg A premise (STRONG_CP_OPERATOR_BASIS...) not promoted  (T_x . T_F extension explicitly conditional on existing Leg A audited_conditional status)
+[PASS] C.no_full_closure_claim: does not claim parent audited_conditional now lifts  (this note supplies H1+H2 only; parent eq (8) repair and composition re-audit are separate)
+
+PASS=19  FAIL=0
+
+All axis-permutation companion checks PASSED.
+Audit lane decides effective_status (bounded_theorem proposed).

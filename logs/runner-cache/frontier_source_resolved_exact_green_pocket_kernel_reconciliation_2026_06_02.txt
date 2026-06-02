@@ -1,0 +1,50 @@
+====================================================================================
+SOURCE-RESOLVED EXACT GREEN POCKET — KERNEL RECONCILIATION COMPANION
+  auditor target: runner_artifact_issue (kernel-convention mismatch)
+  parent: docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md (audited_conditional)
+====================================================================================
+mu = 0.08, eps = 0.5
+K_impl(rho) := exp(-mu (rho + eps)) / (rho + eps)   [as in parent code]
+K_doc(rho)  := exp(-mu rho) / (rho + eps)            [as in parent note]
+
+PART A. LEMMA R algebraic identity check
+  exp(-mu eps) = exp(-0.04) = 0.960789439152323
+  sampled rho values: [0.0, 0.01, 0.1, 0.5, 1.0, 1.4142135623730951, 3.0, 5.0, 10.0, 50.0, 100.0]
+  max |K_impl - exp(-mu eps) K_doc| over sample: 5.551e-17
+  PASS: algebraic identity (max diff 5.551e-17 < 1e-15)
+
+PART B. Calibration gain reconciliation
+  lattice: h=0.5, W=3, L=20; in-bounds source nodes: 4
+  max|f_ref(K_impl)| = 9.381856e-03   gain_impl = 2.131774e+00
+  max|f_ref(K_doc) | = 9.764737e-03   gain_doc  = 2.048186e+00
+  gain_doc / gain_impl = 0.960789439152323
+  exp(-mu eps)         = 0.960789439152323
+  PASS: gain_doc/gain_impl == exp(-mu eps) (diff 2.220e-16 < 1e-12)
+  PASS: gain_impl matches parent frozen gain (diff 3.900e-07 < 5e-07)
+
+PART C. Bit-for-bit reproduction of frozen observables
+  zero-source delta (doc convention): +0.000000e+00
+  PASS: zero-source reduction (doc) |delta|=0.000e+00 <= 1e-12
+         s           inst      green_doc     green_impl       diff
+  ----------------------------------------------------------------
+    0.0010  +1.713544e-03  +2.139974e-03  +2.139974e-03   9.76e-17
+    0.0020  +3.440703e-03  +4.279368e-03  +4.279368e-03   9.37e-17
+    0.0040  +6.936763e-03  +8.557987e-03  +8.557987e-03   1.79e-16
+    0.0080  +1.410179e-02  +1.712572e-02  +1.712572e-02   3.96e-16
+  PASS: doc vs impl deflection agreement max diff 3.955e-16 <= 1e-12
+  PASS: doc green deflections match parent cache to printed precision (max diff 1.014e-09)
+  PASS: instantaneous comparator unchanged to printed precision (max diff 4.902e-09)
+
+PART D. Parent hard-bar set under as-documented kernel
+  TOWARD rows: 4/4
+  instantaneous F~M exponent: 1.013
+  green-kernel  F~M exponent: 1.000
+  mean |green/inst| ratio: 1.235
+  PASS: TOWARD sign 4/4
+  PASS: green F~M exponent 1.000 in [0.95, 1.05]
+  PASS: mean |green/inst| ratio 1.235 in [1.10, 1.40]
+  PASS: gain_doc 2.048186e+00 in (0, 100)
+
+====================================================================================
+TOTAL: PASS=11, FAIL=0
+====================================================================================

@@ -1,5 +1,8 @@
 # Flavor — the measure/positivity lever is AGNOSTIC; both symmetry-side and measure-side selectors for r=1/2 are exhausted
 
+> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** its "both levers exhausted" / finite-enumeration framing is **superseded** by FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31 (the values are lanes, not a selection to exhaust) and the chain-of-custody `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. The current consolidated status: r=1/2 is a distinguished *stationary point* that reduces to the single Tier-A admitted input `AC_φλ` (K-reality + det_C) — not a closed/exhausted route. This note is retained for provenance; **cite the chain-of-custody note for current status.**
+> **Status authority:** independent audit lane only.
+
 **Date:** 2026-05-31
 **Claim type:** bounded negative (last non-symmetry lever) + one partial win (readout class) + campaign-capstone characterization.
 **Status authority:** independent audit lane only; this note sets source metadata only.

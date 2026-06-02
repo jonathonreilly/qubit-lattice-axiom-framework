@@ -1,5 +1,8 @@
 # Flavor — assumptions audit on r=½: robustly the irreducible pin (0/4 live assumptions fell)
 
+> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** its "robustly the irreducible pin / 0-of-4 assumptions fell" framing is **superseded** by FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02 (the arrow-of-time flip: r=1/2 IS the stable attractor of the entropy-increasing flow) and the chain-of-custody `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. The current consolidated status: r=1/2 is a distinguished *stationary point* that reduces to the single Tier-A admitted input `AC_φλ` (K-reality + det_C) — not a closed/exhausted route. This note is retained for provenance; **cite the chain-of-custody note for current status.**
+> **Status authority:** independent audit lane only.
+
 **Date:** 2026-05-30
 **Claim type:** assumptions audit / robustness capstone. Imports nothing.
 **Runner:** `scripts/flavor_r_half_assumptions_audit_2026_05_30.py` (+ cache).

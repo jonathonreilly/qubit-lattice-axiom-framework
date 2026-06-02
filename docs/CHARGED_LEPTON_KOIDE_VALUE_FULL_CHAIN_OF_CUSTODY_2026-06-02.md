@@ -55,6 +55,15 @@ Cite **this chain note** as the single chain-of-custody anchor, plus the endpoin
 charged-lepton mass ratios, the Brannen relations, and any Q=2/3-dependent result inherit exactly this
 tier: **derived-modulo-`AC_φλ`** (retained-bounded), with the full structural derivation behind them.
 
+**Named downstream consumers (the dependency graph this chain anchors):**
+- `KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM` — the Brannen circulant √m parametrization (the δ-phase reduction) reads off this chain's `H` and `Q=1/3+(2/3)r`.
+- `CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE` (retained) — the L10 endpoint biconditional `Q=2/3 ⟺ r=1/2`; this chain is its A1+A2 provenance.
+- `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE` — the δ=2/9 open gate; this chain supplies its structural L7 (topological `2/9`) and names its residual as the `AC_φλ` selection.
+- `lanes/open_science/06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE` — the charged-lepton mass-retention lane; this chain is its upstream value-anchor (the masses `m_k = λ_k²` follow once the scale `S` and the lane `r=1/2` are fixed).
+- `KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT`, `BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME` — the BAE/Plancherel support layer, consistent with this chain's L6/L9.
+
+Each of these inherits the **retained-bounded / derived-modulo-`AC_φλ`** tier from this chain; none should claim a stronger tier for Q=2/3 than the chain provides.
+
 ## The three Koide lanes (for completeness / sibling-sector retention)
 The same exact line `Q=1/3+(2/3)r` carries three distinguished points (this session's lane map): **Q=1/3**
 (r=0, S₃-degenerate / unbroken — neutrino-like), **Q=2/3** (r=1/2, balanced — charged leptons, this

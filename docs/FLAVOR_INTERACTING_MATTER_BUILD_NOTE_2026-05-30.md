@@ -1,5 +1,7 @@
 # Flavor — large build: interacting dynamics generates b≠0 (wall moved), but r=½ stays pinned to a chiral input
 
+> **Status authority:** independent audit lane only. (packaging fix 2026-06-02)
+
 **Date:** 2026-05-30
 **Claim type:** large build / honest partial advance. The matter-action vertex is an
 admitted bridge-gap input (user-authorized for this build, flagged); kinematics derived.

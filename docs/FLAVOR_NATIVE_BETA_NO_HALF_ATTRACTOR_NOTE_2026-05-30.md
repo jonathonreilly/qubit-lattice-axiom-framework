@@ -1,5 +1,8 @@
 # Flavor — native β-function has no ½-attractor; the last route closes (structural reason)
 
+> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** its "the last route closes" / no-attractor framing is **superseded** by FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02 (r=1/2 IS the stable attractor of the entropy-increasing thermalizing flow; the β-function was only one flow) and the chain-of-custody `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. The current consolidated status: r=1/2 is a distinguished *stationary point* that reduces to the single Tier-A admitted input `AC_φλ` (K-reality + det_C) — not a closed/exhausted route. This note is retained for provenance; **cite the chain-of-custody note for current status.**
+> **Status authority:** independent audit lane only.
+
 **Date:** 2026-05-30
 **Claim type:** completes the assumptions-audit decisive test. Imports nothing.
 **Runner:** `scripts/flavor_native_beta_no_half_attractor_2026_05_30.py` (+ cache).

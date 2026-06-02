@@ -1,5 +1,8 @@
 # Flavor — center-trace route closed by a retained theorem; value campaign capstone
 
+> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** its "decisive closure of the center-trace route" framing is **superseded** by FLAVOR_FIND_J_ROUND5_TRACE_VS_CENTER_STATE_FINAL_2026-06-02 (trace-vs-center-state is reduced, not closed; round 5 de-walled it via the discrete center-state) and the chain-of-custody `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. The current consolidated status: r=1/2 is a distinguished *stationary point* that reduces to the single Tier-A admitted input `AC_φλ` (K-reality + det_C) — not a closed/exhausted route. This note is retained for provenance; **cite the chain-of-custody note for current status.**
+> **Status authority:** independent audit lane only.
+
 **Date:** 2026-05-30
 **Claim type:** campaign final capstone / decisive closure of the center-trace route.
 Imports nothing.

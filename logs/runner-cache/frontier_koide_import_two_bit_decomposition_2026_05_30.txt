@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_import_two_bit_decomposition_2026_05_30.py
+runner_sha256: de35a66c5a87d76cf134a001ed593f68e0cef39009c9caccd16d44e36f5d6d77
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+
+========================================================================================
+Koide finite Kahler triple + two independent selection bits
+========================================================================================
+
+========================================================================================
+F1 - Jcs is the so(3) generator about (1,1,1)
+========================================================================================
+[PASS] F1.1 exp((2pi/3) Jcs) = C (Jcs generates the C3 rotation)
+       max|exp((2pi/3)Jcs) - C| = 9.99e-16
+[PASS] F1.2 (1,1,1)/sqrt3 is the rotation axis (Jcs annihilates it)
+       |Jcs (1,1,1)| = 5.10e-18
+[PASS] F1.3 Jcs is real-antisymmetric with Jcs^2 = -P_doublet (complex structure)
+       |Jcs + Jcs^T| = 0.00e+00; |Jcs^2 + P_doublet| = 1.11e-16
+
+========================================================================================
+F2 — Kahler 2-form omega = g.Jcs and holomorphic projector
+========================================================================================
+[PASS] F2.1 omega = g.Jcs is built from C and antisymmetric (a 2-form)
+       omega_{XY} = <X, Jcs Y>, Jcs antisymmetric
+[PASS] F2.2 P_weyl = (1/2)(P_doublet - i Jcs) is idempotent (holomorphic projector)
+       |P_weyl^2 - P_weyl| = 2.78e-17; rank = 1
+
+========================================================================================
+F3 — Frobenius-Schur indicator of the C3 doublet = 0 (complex-type)
+========================================================================================
+[PASS] F3.1 FS indicator = 0 => doublet is complex-type, End_R(doublet)=C
+       FS = (1/3) sum_g chi(g^2) = 0.000000
+
+========================================================================================
+F4 — orientation (bit i) and modulus r (bit ii) are independent
+========================================================================================
+[PASS] F4.1 [H, Jcs] = 0 for ALL circulant mass operators (holomorphy at all r)
+       max|[H,Jcs]| over (a,b) grid = 2.22e-16  => orienting Jcs never constrains r=|b|^2/a^2
+
+========================================================================================
+F5 — every anticommutant of Gamma_chi has a zero eigenvalue (massless gen)
+========================================================================================
+[PASS] F5.1 anticommutant of Gamma_chi over Sym(R^3) is 2-dimensional
+       dim = 2
+[PASS] F5.2 every anticommutant member has spectrum {-s,0,+s} (a massless generation)
+       min|eigenvalue| over 5 members = ['5.1e-16', '4.1e-16', '7.1e-16', '2.6e-16', '2.3e-16'] (all ~0 => one massless generation => excluded for charged leptons)
+
+========================================================================================
+F6 — modulus bit: r=1/2 <=> equal C3-block energy; the measure fork
+========================================================================================
+[PASS] F6.1 equal C3-block energy (E_+=E_perp) <=> r=1/2 <=> Q=2/3
+       E_+=3a^2, E_perp=6b^2; E_+=E_perp => r=1/2; Q(1/2)=2/3
+[PASS] F6.2 measure fork: per-block (1,1)->r=1/2->Q=2/3; per-dimension (1,2)->r=1->Q=1
+       r* = nu/(2 mu): (mu,nu)=(1,1) -> r=1/2 -> Q=2/3; (1,2) -> r=1 -> Q=1. Rep theory does not choose the measure in this runner.
+
+========================================================================================
+SUMMARY
+========================================================================================
+  11/11 checks passed
+
+  AVAILABLE FINITE GEOMETRY: g, J=Jcs (so(3) bivector about (1,1,1)),
+    omega=g.Jcs, P_weyl=(1/2)(P_doublet - i Jcs).
+  RESIDUAL = TWO PROVABLY-INDEPENDENT data:
+    bit(i)  orientation of Jcs (Z2; det_C vs det_R)         -- not chirality
+    bit(ii) modulus r=1/2 (per-block vs per-dimension measure) -- the load-bearer
+    independent: [H,Jcs]=0 at all r, so orienting Jcs never fixes r.
+  anticommuting-operator class EXCLUDED (massless generation {-s,0,+s}).
+
+  => the residual is a MEASURE choice plus an orientation sign,
+     not a missing symplectic form.
+  Next path: does emergent-time's quantization measure count the generation
+     factor per-complex-mode (->per-block->r=1/2->Q=2/3) or per-real-dim?
+
+ALL CHECKS PASSED
+
+----- stderr -----
+

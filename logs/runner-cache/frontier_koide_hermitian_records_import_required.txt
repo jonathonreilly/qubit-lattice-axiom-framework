@@ -1,0 +1,43 @@
+
+==============================================================================
+A. COUNTEREXAMPLE: phase-twisted channel persists a classical record but T is NON-Hermitian
+==============================================================================
+[PASS] channel is valid CPTP (Choi PSD) + trace-preserving + UNITAL (fixes the tracial rho=I/2)
+[PASS] it PERSISTS a classical record (Z-diagonal populations preserved)
+[PASS] but its Kraus are NON-Hermitian and the dissipator is NOT trace-symmetric (self-adjoint)
+[PASS] => T has COMPLEX eigenvalues -> NOT positive Hermitian -> persistence does NOT force Hermiticity -- T spec = [0.5-0.5j 0.5+0.5j 1. +0.j  1. +0.j ]
+
+==============================================================================
+B. FRAGMENT: U=I (Hermitian projectors, no relative phase) -> trace-symmetric -> T positive Hermitian
+==============================================================================
+[PASS] Hermitian projectors give a SELF-ADJOINT superoperator with real T spectrum in [0,1] -- T spec = [0. 0. 1. 1.] -> the cascade closes IFF the branch phase vanishes
+
+==============================================================================
+C. THE EXACT IMPORT: K = U.P is self-adjoint IFF U=I (named NO-RELATIVE-BRANCH-PHASE)
+==============================================================================
+[PASS] instrument K=U.P gives a self-adjoint superoperator ONLY at U=I (theta=0) -- (theta, self-adjoint) = [(0.0, True), (0.3, False), (1.0, False)]
+[PASS] U=I is a CONVENTION, not forced: lsp_projective_derivation (retained_bounded) admits the U-twist; framework decoherence carries phases e^(ikS) -- => NO-RELATIVE-BRANCH-PHASE is an IMPORT requiring user approval, NOT a derivation from A1+A2+retained
+
+==============================================================================
+D. BOUNDED ANSWER: closing it would NOT remove 'bounded' down the full charged-lepton chain
+==============================================================================
+[PASS] even if imported, the route lands at retained_bounded (rides persistent_record_as_kraus + decoherence + lsp + luders, all retained_bounded) -- a chain is bounded by its weakest input tier
+[PASS] the matter-attachment LEG would not even reach retained: siblings unaudited (spectrum_condition, RP, OS, microcausality) + retained_no_go (statistics_agnostic) -- Hermitian-records discharges only the rp_two_step audited_conditional blocker, not the leg
+[PASS] the VALUE chain is ORTHOGONAL: dominant pins are AC_phi_lambda (delta=2/9 + species, audited_renaming), r=1/2 (block weight, retained_bounded), signed-readout (audited_failed) -- records-Hermiticity cannot reach any of these -> the chain stays retained_bounded/open
+
+==============================================================================
+RESULT
+==============================================================================
+
+10/10 checks passed.
+The Hermitian-records target is IMPORT-REQUIRED, not importless: it reduces to NO-RELATIVE-BRANCH-PHASE
+(U=I). A phase-twisted diagonal channel is a valid CPTP map that PERSISTS a classical record yet has a
+non-Hermitian dissipator and COMPLEX T spectrum -- so persistence does not force Hermiticity. The exact
+residual is U=I, which lsp_projective_derivation proves is a frame CONVENTION (the U-twist is admitted)
+and which the framework's phase-carrying decoherence does not satisfy by default. So the RP/spectrum
+cascade TRADES the staggered/Wilson import for the U=I import -- import-traded, not importless. And
+closing it would NOT remove 'bounded' down the chain (it rides retained_bounded inputs; the value-side
+pins -- AC_phi_lambda delta=2/9 + species, r=1/2 block weight, the audited_failed signed readout -- are
+orthogonal to records). NEXT PATH: the relative branch phase blocking Hermiticity is plausibly the SAME
+phase whose sign carries the signed-vs-singular Koide readout -- one principle (e.g. a CPT/reality
+condition on the record-writing generator) could discharge both.

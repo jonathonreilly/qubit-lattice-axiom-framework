@@ -27887,6 +27887,30 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_z3_conjugate_support_trichotomy_narrow.py"
+    },
+    "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_z_n_asymmetry_finite_vs_continuum_separation.py"
+    },
+    "z_n_spectral_asymmetry_physical_identification_note_2026-05-31": {
+      "assert_count": 0,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_z_n_spectral_asymmetry_physical_identification.py"
     }
   },
   "per_runner": {
@@ -55390,6 +55414,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_z_n_asymmetry_finite_vs_continuum_separation.py": {
+      "assert_count": 0,
+      "claims": [
+        "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py": {
       "assert_count": 2,
       "claims": [
@@ -55403,6 +55442,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_z_n_spectral_asymmetry_physical_identification.py": {
+      "assert_count": 0,
+      "claims": [
+        "z_n_spectral_asymmetry_physical_identification_note_2026-05-31"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/g_bare_two_ward_h_unit_residue_accepted_premise_runner.py": {
@@ -61133,12 +61187,12 @@
     "dominant_class_distribution": {
       "A": 283,
       "B": 307,
-      "C": 838,
+      "C": 840,
       "D": 319,
       "none": 461
     },
-    "runners_classified": 2208,
-    "runners_with_C": 1093,
-    "runners_with_D": 646
+    "runners_classified": 2210,
+    "runners_with_C": 1095,
+    "runners_with_D": 647
   }
 }

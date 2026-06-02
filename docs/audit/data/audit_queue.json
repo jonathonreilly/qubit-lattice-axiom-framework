@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 316,
     "high": 247,
-    "leaf": 344,
+    "leaf": 346,
     "medium": 295
   },
   "cycle_break_target_count": 29,
@@ -925,15 +925,15 @@
       "criticality_rank": 3,
       "cross_confirmation_status": "awaiting_second",
       "deps": [],
-      "direct_in_degree": 14,
+      "direct_in_degree": 15,
       "effective_status": "retained",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.568,
+      "load_bearing_score": 20.072,
       "note_path": "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py",
-      "transitive_descendants": 758
+      "transitive_descendants": 760
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1008,6 +1008,31 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
+      "claim_id": "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
+      "claim_scope": "Finite-group representation-theoretic characterization of G-invariant Hermitian operators on V=C^3 under the permutation S3 action: only full S3 forces a generation mass degeneracy; every proper subgroup permits a generic three-way split.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "awaiting_second",
+      "deps": [
+        "s3_mass_matrix_no_go_note",
+        "z2_hw1_mass_matrix_parametrization_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "retained_bounded",
+      "helper_runner_paths": [],
+      "load_bearing_score": 13.553,
+      "note_path": "docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "queue_reason": "audit_in_progress",
+      "ready": true,
+      "runner_path": "scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py",
+      "transitive_descendants": 750
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
       "claim_scope": "Abstract finite-dimensional matrix-algebra theorem on C^3 only: for the cyclic permutation C and three diagonal involutions T_1,T_2,T_3 with distinct joint sign characters, the sign projectors P_i are rank-1 orthogonal projectors, E_ij=P_i C^{(i-j) mod 3} P_j gives all matrix units, the generated associative algebra equals M_3(C), no proper nonzero invariant subspace exists, and the Burnside rank-one/irreducibility hypotheses are exhibited. This excludes any identification with Cl(3), Z^3, BZ-corner hw=1 triplets, staggered-Dirac, taste-cube, generation physics, charged-lepton flavor, CKM, or PMNS content.",
       "claim_type": "positive_theorem",
@@ -1030,31 +1055,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
-      "claim_id": "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
-      "claim_scope": "Finite-group representation-theoretic characterization of G-invariant Hermitian operators on V=C^3 under the permutation S3 action: only full S3 forces a generation mass degeneracy; every proper subgroup permits a generic three-way split.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "s3_mass_matrix_no_go_note",
-        "z2_hw1_mass_matrix_parametrization_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.549,
-      "note_path": "docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py",
-      "transitive_descendants": 748
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
       "claim_id": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
       "claim_scope": "Finite-corner audit that the retained epsilon/chiral shift and spatial-inversion parity operations do not themselves supply a within-hw=1 `S_3`-breaking operator for the generation triplet.",
       "claim_type": "bounded_theorem",
@@ -1070,12 +1070,12 @@
       "direct_in_degree": 1,
       "effective_status": "retained_bounded",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.047,
+      "load_bearing_score": 13.051,
       "note_path": "docs/PARITY_VIOLATION_DOES_NOT_REACH_GENERATION_TRIPLET_NARROW_THEOREM_NOTE_2026-05-23.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_parity_violation_vs_generation_triplet_discriminator.py",
-      "transitive_descendants": 747
+      "transitive_descendants": 749
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1094,15 +1094,15 @@
         "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
         "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 4,
       "effective_status": "retained_bounded",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.545,
+      "load_bearing_score": 14.549,
       "note_path": "docs/NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_new_parity_is_circulant_phase_discriminator.py",
-      "transitive_descendants": 746
+      "transitive_descendants": 748
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1119,15 +1119,15 @@
         "s3_cap_uniqueness_note",
         "pl_topology_infrastructure_textbook_import_note_2026-05-17"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "retained_bounded",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.543,
+      "load_bearing_score": 13.045,
       "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
-      "transitive_descendants": 745
+      "transitive_descendants": 746
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1144,15 +1144,15 @@
         "minimal_axioms",
         "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 3,
       "effective_status": "retained_bounded",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.041,
+      "load_bearing_score": 11.045,
       "note_path": "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py",
-      "transitive_descendants": 744
+      "transitive_descendants": 746
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -28528,6 +28528,65 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/Z_N_ASYMMETRY_RESIDUAL_1_FINITE_VS_CONTINUUM_NOTE_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_z_n_asymmetry_finite_vs_continuum_separation.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_z_n_spectral_asymmetry_physical_identification.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37190,6 +37249,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 70,
-  "total_pending": 1202
+  "ready_count": 72,
+  "total_pending": 1204
 }

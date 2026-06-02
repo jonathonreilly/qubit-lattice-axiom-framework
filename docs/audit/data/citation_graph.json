@@ -30425,6 +30425,58 @@
       "to": "charged_lepton_y_tau_ward_combined_no_go_note_2026-05-10"
     },
     {
+      "from": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "to": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "to": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "to": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+    },
+    {
+      "from": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "to": "koide_aps_block_by_block_forcing_note_2026-04-21"
+    },
+    {
+      "from": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "to": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "to": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "to": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "to": "three_generation_observable_theorem_note"
+    },
+    {
       "from": "ai_methodology.abstract_algebraic_core_extraction_technique_2026-05-10",
       "to": "ai_methodology.skills.physics-loop.references.abstract-algebraic-core-extraction"
     },
@@ -89260,6 +89312,45 @@
       "path": "docs/Z3_CONJUGATE_SUPPORT_TRICHOTOMY_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_z3_conjugate_support_trichotomy_narrow.py",
       "title": "Z_3 Conjugate-Pair Support Trichotomy Narrow Theorem"
+    },
+    "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31": {
+      "claim_id": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "95fe31c902586c95d8ef7c72dfeacb99f57a8244196b3ed6e7eab3caf4053c16",
+      "path": "docs/Z_N_ASYMMETRY_RESIDUAL_1_FINITE_VS_CONTINUUM_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_z_n_asymmetry_finite_vs_continuum_separation.py",
+      "title": "Z_N Spectral Asymmetry: Finite/Continuum Separation for L3(1,2)=2/9"
+    },
+    "z_n_spectral_asymmetry_physical_identification_note_2026-05-31": {
+      "claim_id": "z_n_spectral_asymmetry_physical_identification_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+        "three_generation_observable_theorem_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c6ab6cc13e2a2b1ff3a408e36f8e454ba684383b375c56fcd65f88305c08886e",
+      "path": "docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_z_n_spectral_asymmetry_physical_identification.py",
+      "title": "Z_N Spectral Asymmetry: Finite Operator Identification of L3(1,2)=2/9"
     }
   },
   "roots": [
@@ -90208,7 +90299,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 794,
+      "bounded_theorem": 796,
       "decoration": 1,
       "meta": 201,
       "no_go": 93,
@@ -90217,7 +90308,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1195,
+      "bounded_theorem": 1197,
       "decoration": 1,
       "meta": 201,
       "no_go": 196,
@@ -90225,10 +90316,10 @@
       "open_gate": 134,
       "positive_theorem": 578
     },
-    "edge_count": 10227,
-    "leaf_count": 886,
-    "node_count": 2728,
+    "edge_count": 10240,
+    "leaf_count": 887,
+    "node_count": 2730,
     "root_count": 941,
-    "runners_with_path": 2313
+    "runners_with_path": 2315
   }
 }

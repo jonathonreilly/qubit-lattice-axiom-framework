@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 485,
     "high": 428,
-    "leaf": 1163,
+    "leaf": 1165,
     "medium": 652
   },
   "flagship_signal_used": false,
-  "node_count": 2728,
+  "node_count": 2730,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,8 +19,8 @@
     {
       "claim_id": "three_generation_observable_theorem_note",
       "criticality": "critical",
-      "load_bearing_score": 55.954,
-      "transitive_descendants": 991
+      "load_bearing_score": 56.456,
+      "transitive_descendants": 992
     },
     {
       "claim_id": "observable_principle_from_axiom_note",
@@ -43,8 +43,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 42.633,
-      "transitive_descendants": 1122
+      "load_bearing_score": 42.636,
+      "transitive_descendants": 1124
     },
     {
       "claim_id": "yt_ward_identity_derivation_theorem",
@@ -109,8 +109,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 33.459,
-      "transitive_descendants": 994
+      "load_bearing_score": 33.461,
+      "transitive_descendants": 996
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",

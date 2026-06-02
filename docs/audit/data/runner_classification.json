@@ -13848,6 +13848,18 @@
       "dominant_class": "C",
       "runner": "scripts/koide_q23_block_weight_frontier_2026_05_29.py"
     },
+    "koide_q23_k0_real_block_equivalence_note_2026-05-30": {
+      "assert_count": 0,
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 14,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py"
+    },
     "koide_q23_oh_covariance_nogo_note_2026-04-22": {
       "assert_count": 0,
       "counts": {
@@ -45041,6 +45053,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 14,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_koide_q23_oh_covariance_nogo.py": {
       "assert_count": 0,
       "claims": [
@@ -60998,12 +61025,12 @@
     "dominant_class_distribution": {
       "A": 282,
       "B": 307,
-      "C": 834,
+      "C": 835,
       "D": 319,
       "none": 461
     },
-    "runners_classified": 2203,
-    "runners_with_C": 1088,
+    "runners_classified": 2204,
+    "runners_with_C": 1089,
     "runners_with_D": 646
   }
 }

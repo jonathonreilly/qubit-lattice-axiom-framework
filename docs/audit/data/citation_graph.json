@@ -16461,6 +16461,30 @@
       "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
     },
     {
+      "from": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
       "from": "koide_qubit_lattice_dim_algebraic_closure_note_2026-04-20",
       "to": "anomaly_forces_time_theorem"
     },
@@ -64278,6 +64302,25 @@
       "runner_path": "scripts/koide_q23_block_weight_frontier_2026_05_29.py",
       "title": "Koide Q=2/3 Block-Weight Frontier"
     },
+    "koide_q23_k0_real_block_equivalence_note_2026-05-30": {
+      "claim_id": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "909d059f6bbb99a5530a617f28d7c0f52598d37df2fd7a8d241555cacc99c147",
+      "path": "docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py",
+      "title": "Koide Q=2/3 as Real-Wedderburn Block Count; Trace/Dimension Gives Q=1"
+    },
     "koide_q23_oh_covariance_nogo_note_2026-04-22": {
       "claim_id": "koide_q23_oh_covariance_nogo_note_2026-04-22",
       "claim_type_author_hint": null,
@@ -89998,7 +90041,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 789,
+      "bounded_theorem": 790,
       "decoration": 1,
       "meta": 201,
       "no_go": 93,
@@ -90007,7 +90050,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1190,
+      "bounded_theorem": 1191,
       "decoration": 1,
       "meta": 201,
       "no_go": 196,
@@ -90015,10 +90058,10 @@
       "open_gate": 134,
       "positive_theorem": 578
     },
-    "edge_count": 10198,
-    "leaf_count": 881,
-    "node_count": 2723,
+    "edge_count": 10204,
+    "leaf_count": 882,
+    "node_count": 2724,
     "root_count": 941,
-    "runners_with_path": 2308
+    "runners_with_path": 2309
   }
 }

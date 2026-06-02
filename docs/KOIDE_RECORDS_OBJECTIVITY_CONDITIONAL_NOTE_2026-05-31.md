@@ -1,0 +1,96 @@
+# Koide Records Objectivity Conditional: Equal-Block Metric Plus Objectivity Gives r=1/2
+
+**Date:** 2026-05-31
+**Claim type:** bounded_theorem
+**Claim boundary:** conditional algebraic selection of `r=1/2` from two named inputs:
+equal-block metric and records/objectivity maximization. The note does not derive those
+inputs from the framework baseline and does not set an audit verdict.
+**Primary runner:**
+`scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py`
+with cache
+`logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt`.
+
+## Result
+
+Given two inputs:
+
+1. equal-block `(1,1)` weighting for the singlet/doublet blocks, and
+2. a records/objectivity maximization principle,
+
+the Koide ratio is selected non-circularly: the maximizer is `r=1/2`, hence
+`Q=(1+2r)/3=2/3`. The value is an output of the conditional calculation. The same
+runner also shows why the pointer by itself does not force that result: for general
+weights `w_s log E_+ + w_p log E_perp`, the maximum occurs at
+`r*=w_p/(2 w_s)`. Equal weights give `r=1/2`, while rank/dimension weights give `r=1`.
+
+## Correction
+
+The two-block pointer fixes the number of block terms, not their weight ratio. On the
+Hermitian circulant mass operator `H=aI+bC+conj(b)C^2`, a generic doublet gives two
+distinct real masses, so a non-Hermitian "conjugate fusion" picture cannot be used to
+force one block weight in the physical signed readout.
+
+The dephasing/relaxation comparison points the other way: the maximally mixed
+state `I/3`, pushed through the singlet/doublet split, is rank-weighted `(1/3,2/3)`,
+corresponding to the trace/dimension `Q=1` channel. Objectivity maximization is therefore
+a separate input in this conditional theorem, not a result of the dephasing calculation.
+
+## Boundary
+
+This note is useful because it isolates a clean sufficient route to `Q=2/3` and names
+the two premises that would have to be derived or admitted. It is not an unconditional
+Koide derivation. It is also not a no-go against future source work: a later theorem may
+derive equal-block weighting, derive objectivity maximization, or select the rank/trace
+route instead.
+
+## Load-Bearing Authorities
+
+[KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+[KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
+[KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md](KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md)
+[PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+[KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+
+Non-load-bearing lane context: `KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30`.
+
+## No-Go Discipline Gate
+
+**N1 - Alternative routes.** Five routes were checked. Route 1: two block terms force
+equal block weights; attempted, fails because the general maximum is
+`r*=w_p/(2w_s)`. Route 2: the Hermitian doublet fuses to one mass slot; attempted, fails
+because generic `H` has three distinct real eigenvalues. Route 3: objectivity
+maximization is the same as dephasing dynamics; attempted, fails because dephasing gives
+the rank/trace channel. Route 4: equal-block metric follows from the stated positivity
+and invariance conditions; ruled out by the cited isotype-split note. Route 5: binary
+objectivity entropy alone fixes the physical convention; attempted, fails because it
+requires choosing atom-share weighting over the rank/Born alternative.
+
+**N2 - Wall independence.** The two sufficient inputs are independent. Equal-block metric
+does not imply objectivity maximization, and objectivity maximization does not by itself
+choose equal-block rather than rank weighting unless the atom-share measure is already
+chosen.
+
+**N3 - Hidden-wall scan.** The proof uses only the explicit capacity functional,
+`Q(r)`, the Hermitian circulant check, and the dephasing comparison. "Objectivity" is
+kept as a named input, not a hidden theorem.
+
+**N4 - Residual matching.** The residual matches the block-weight frontier: choosing
+`(1,1)` versus `(1,2)`. It also matches the D3 record-degeneracy residual: two atoms are
+available, but their measure is not selected here.
+
+**N5 - Rhetoric audit.** "Not forced" is scoped to this route: pointer structure plus
+dephasing does not derive equal-block weighting. The conditional route itself is
+positive and remains available if the two inputs are supplied.
+
+**N6 - Partial-closure path.** The natural closure path is to derive one or both inputs
+as source results, or explicitly admit a convention. This note does not call for a new
+axiom.
+
+**N7 - Steelman.** The strongest pro-conditional argument is that objectivity should be
+the physical selector in a records lane, making atom-counting the right measure.
+This note grants that route as a sufficient conditional and leaves the derivation of the
+selector as the missing work.
+
+**N8 - Cross-cycle echo.** The residual is the same one tracked by the block-weight
+frontier, readout demarcation, and D3 pointer-degeneracy notes. This note records a
+conditional route rather than duplicating that residual as a closure.

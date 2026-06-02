@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py
+runner_sha256: b83a34df5ed238d5ccf823fca88f99db4b5ae19c3d3852112b6495f058e56c5e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+[PASS] N1 cube angle 2/3 real but value-coincidence (single crossing at r=1/2)
+       cos^2 face=0.6667 edge=0.3333; latitude=Q roots=[-2.   0.5]
+[PASS] N4 M_2(C) idempotent trace/dim ratios are {0,1/2,1}; no 2/3 hostable
+       the only native 2/3 = R[Z3] doublet/total dimension -> Q=1, wrong direction
+[PASS] P1-CORRECTED RP edges at OPPOSITE signs: singlet-null b=-a/2, doublet-null b=+a
+       the |b|=a/2,|b|=a magnitude framing discarded the sign of b (=parity order parameter)
+[PASS] P2-REFUTED multiplicative |b|-inversion gives r=1/2 ONLY by discarding sign(b)
+       |b|-inversion fixes gm=0.7071->r=0.5 BUT on signed b sends -a/2->-a, +a->+a/2 (no swap)
+[PASS] P3-CORRECTED Mobius family => continuum of fixed points; r=1/2 NOT singled out
+       arith-mean-of-|b| -> r=0.5625=9/16 (NOT 1/16); signed-affine -> r=0.0625=1/16; mult -> r=1/2
+
+SCORECARD PASS=5 FAIL=0
+VERDICT: no native latitude-quantizer among the 4 mechanisms (cube/self-consistency/
+entanglement/Cl3). The RP 'self-dual' lead is REFUTED (panel wf_9e9b766e, 20/20 circular):
+edge-swap involutions form a 1-param Mobius family (fixed points r=1/4,1/2,9/16,1,...);
+r=1/2 is picked ONLY by the multiplicative law = log|b| coordinate = block-count measure;
+and the edges are at opposite signs of b (the |b| framing discarded the parity sign).
+SURVIVING REFRAME (panel #2): r=1 = faithful TRACE on full algebra R[Z3]; r=1/2 = symmetric
+STATE on the abelian CENTER (non-tracial). Decidable question: does mass-gen read center
+labels (r=1/2) or the matrix trace (r=1)? Test via traciality + Jeffreys/Fisher.
+
+----- stderr -----
+

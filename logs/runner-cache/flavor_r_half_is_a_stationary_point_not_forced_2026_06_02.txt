@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py
+runner_sha256: d411eb0cce8301286f0544ee99e308ef9057637295913b08d8bbfd8d76cd7e77
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[PASS] 1 sector-power entropy S(r) is MAXIMIZED at r=1/2 (peak); dS/dr=0 there; S(1/2)=log2
+       argmax r=0.499, dS/dr(1/2)=0.00e+00, S(1/2)=0.6931=log2 -> a genuine STATIONARY point, not arbitrary
+[PASS] 1b singlet-doublet power imbalance |3-6r| is at a TROUGH (=0) exactly at r=1/2; r=1/2 = fixed point of r->1-r
+       the balanced interior between the two enhanced-symmetry endpoints r=0, r=1
+[PASS] 2 three distinguished points: r=0->Q=1/3 (S_3 degenerate), r=1/2->Q=2/3 (balanced), r=1->Q=1 (maximal hierarchy)
+       three lanes = different physics (degenerate / balanced / hierarchical), NOT competing answers
+[PASS] 3 SECTOR functional extremizes at r=1/2; per-DOF functional at r=1 -> different extrema = different LANES (no forcing needed)
+       the residual is 'which extremum/lane each sector occupies' (a which-vacuum question), NOT 'force a measure'
+
+SCORECARD PASS=4 FAIL=0
+REFRAME (verified): r=1/2 is a distinguished STATIONARY POINT (max sector-entropy / imbalance trough /
+swap fixed-point) -- a NATURAL value (vacuum-at-extremum), NOT a forced/fine-tuned one. The three Q-lanes
+(1/3 degenerate, 2/3 balanced, 1 maximal-hierarchy) are distinguished points of the r-family = different
+physics, not competing answers. The 5-round J-hunt's 'force det_C over det_R' was the WRONG target -- they
+are different LANES. Residual reframed: 'which extremum/lane does each sector occupy' (lane assignment, a
+which-vacuum question), strictly more honest+physical than measure-forcing. (Caveat: r=1/2 is the SECTOR
+extremum; per-DOF peaks at r=1 -- but these are different lanes, not a selection to win.)
+
+----- stderr -----
+

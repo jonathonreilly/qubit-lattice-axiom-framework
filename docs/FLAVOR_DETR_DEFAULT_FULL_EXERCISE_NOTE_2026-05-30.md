@@ -60,5 +60,5 @@ The exercise found one genuine, un-closed assumption. Splitting Link 1:
 ## Stale-citation flags (verified vs origin/main ledger)
 - Retained: `koide_c3_generator_rephasing_obstruction` (retained), `koide_z3_equivariant_anticommuting_no_go`
   (retained_bounded), `powers_uhf_tracial_uniqueness` + `pre_record_reference_state` (retained, Half-A scope).
-- Unaudited (load-bearing for Half B): `inner_automorphism_invariance_tracial_identification`,
-  `axiom_first_kms_condition`, `koide_real_rep_block_count_permitted_not_forced` (no_go/unaudited).
+- Load-bearing for Half B (all NON-retained, so Half B is conditional): `inner_automorphism_invariance_tracial_identification` (audited_conditional),
+  `axiom_first_kms_condition` (unaudited), `koide_real_rep_block_count_permitted_not_forced` (unaudited).

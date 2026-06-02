@@ -1,4 +1,4 @@
-# Flavor — CORRECTION: "Q=1 is the framework default" is NOT forced; it rests entirely on the unaudited PRR premise, and Q=2/3 is admissible under native C3
+# Flavor — CORRECTION: "Q=1 is the framework default" is NOT forced; it rests entirely on the non-retained (audited_conditional) PRR premise, and Q=2/3 is admissible under native C3
 
 **Date:** 2026-05-30
 **Claim type:** bounded correction of a prior campaign statement + sharpened localization of the single unaudited premise.
@@ -62,5 +62,5 @@ native). The genuinely open, import-free question is the doublet-frame quotient 
 - Retained: `koide_circulant_q_two_thirds` (operator functional); `pre_record_reference_state` (retained
   but identification-half **excluded** from scope); `prr_local_derivation_from_jaynes` (retained_bounded,
   **spatial-qubit only**, does not act on the generation factor).
-- **Unaudited (the single load-bearing premise):** `inner_automorphism_invariance_tracial_identification`
+- **audited_conditional (NON-retained; the single load-bearing premise):** `inner_automorphism_invariance_tracial_identification`
   (full-U(3)/PRR); also `axiom_first_kms_condition`, `koide_real_rep_block_count_permitted_not_forced`.

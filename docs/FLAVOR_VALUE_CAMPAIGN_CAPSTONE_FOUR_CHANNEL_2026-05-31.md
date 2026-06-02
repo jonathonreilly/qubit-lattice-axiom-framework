@@ -1,5 +1,8 @@
 # Flavor value campaign — CAPSTONE: the four-channel reframe dissolves the "selection" problem (validated)
 
+> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** The 'complete account / r=1/2 is merely an empirical input / framing-error' framing is superseded: r=1/2 is a distinguished STATIONARY POINT reducing to the single Tier-A admitted input AC_φλ; and the three special Q's are LANES (not three channels of one operator) — the channel/lane distinction is corrected in the lane-panel note. Current consolidated status: `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`.
+> **Status authority:** independent audit lane only.
+
 **Date:** 2026-05-31
 **Claim type:** campaign capstone / validated reframe (with two honest caveats). Recontextualizes the entire charged-lepton value campaign.
 **Status authority:** independent audit lane only; this note sets source metadata only.

@@ -1,6 +1,6 @@
-# Flavor — assumptions audit on r=½: robustly the irreducible pin (0/4 live assumptions fell)
+# Flavor — assumptions audit on r=½: a distinguished stationary point (see banner) (0/4 live assumptions fell)
 
-> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** its "robustly the irreducible pin / 0-of-4 assumptions fell" framing is **superseded** by FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02 (the arrow-of-time flip: r=1/2 IS the stable attractor of the entropy-increasing flow) and the chain-of-custody `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. The current consolidated status: r=1/2 is a distinguished *stationary point* that reduces to the single Tier-A admitted input `AC_φλ` (K-reality + det_C) — not a closed/exhausted route. This note is retained for provenance; **cite the chain-of-custody note for current status.**
+> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** its "a distinguished stationary point (see banner) / 0-of-4 assumptions fell" framing is **superseded** by FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02 (the arrow-of-time flip: r=1/2 IS the stable attractor of the entropy-increasing flow) and the chain-of-custody `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`. The current consolidated status: r=1/2 is a distinguished *stationary point* that reduces to the single Tier-A admitted input `AC_φλ` (K-reality + det_C) — not a closed/exhausted route. This note is retained for provenance; **cite the chain-of-custody note for current status.**
 > **Status authority:** independent audit lane only.
 
 **Date:** 2026-05-30
@@ -49,14 +49,14 @@ robust.**
   staticity, sector-isolation, readout-freedom, or exact-targeting; each was challenged
   and the pin survived or was reinforced.
 
-## The deep structural reason (why the pin is robust, not contingent)
+## The deep structural reason (why r=1/2 survived all four dropped assumptions, not contingent)
 Across all four challenges, the *same* mechanism recurs: **the framework's canonical
 content reaches DISCRETE data** — counts (`N_gen=3`), anomaly invariants, rep content,
 signature `(3,1)` — **and FIXED-POINT ENDPOINTS** (`r=1` dimension, `r=0` democratic) —
 **but never the CONTINUOUS modulus `r`.** Dropping any assumption changes *which*
 mechanism is in play but always relocates the gap to a continuous-modulus selector not in
 retained content. This is a **category mismatch** (discrete-reaching framework vs a
-continuous-modulus target), not a contingent gap — which is *why* the pin is robust.
+continuous-modulus target), not a contingent gap — which is *why* r=1/2 survived all four dropped assumptions.
 
 ## The one unexplored route (next path, not a closed wall)
 The RG "no" above is against the **SM-borrowed** circulant RGE (an import-shaped
@@ -68,7 +68,7 @@ comparator). The genuinely untested object is the **native (A1+A2-derived) matte
 and locate its fixed points in `r`. Not yet constructed; not foreclosed.
 
 ## Status
-The assumptions audit **confirms** `r=½` is robustly the irreducible pin: not derivable
+The assumptions audit **confirms** `r=½` is a distinguished stationary point (see banner): not derivable
 via any of the four dropped assumptions, not softened by relaxing the target, with a
 structural (category-mismatch) reason. The single remaining derivation route is the
 native matter β-function's fixed-point structure — which requires the bridge-gap action.

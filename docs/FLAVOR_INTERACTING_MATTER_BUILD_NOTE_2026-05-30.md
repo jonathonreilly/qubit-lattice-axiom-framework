@@ -64,7 +64,7 @@ of the matter-action coupling ratio (an admitted bridge-gap input), the natural 
 `r=0` (Q=1/3), no dynamical symmetry forces exactly `½`, and the only orbit-splitting that gives
 Q=2/3 requires a **generation-specific chiral interaction** that the native structures
 (C₃-symmetric vertex, the `ε` phase) provably do not provide. So even the deepest dynamical
-build **converges on the one irreducible generation-specific chiral input** — now understood as
+build **converges on the same generation-specific chiral input** — now understood as
 "the matter interaction channel must itself be C₃-orbit-splitting (chiral)," which is not native.
 
 ## Status / next path (not a closed wall)

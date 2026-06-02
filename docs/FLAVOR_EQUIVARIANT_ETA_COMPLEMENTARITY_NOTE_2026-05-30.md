@@ -53,8 +53,7 @@ by the retained radian-bridge no-go (π transcendental).
 - Load-bearing & retained_bounded: `axiom_first_z_n_equivariant_spectral_asymmetry`,
   `new_parity_is_circulant_phase`, `koide_z3_equivariant_anticommuting_no_go`;
   `koide_a1_radian_bridge_irreducibility` = retained_no_go.
-- The downstream phenomenology routes `koide_phase_aps_eta_parity_route` and
-  `koide_emergent_time_eta_conjugation_parity` are **unaudited — not load-bearing.**
+- Downstream phenomenology, not load-bearing here: `koide_phase_aps_eta_parity_route` (unaudited) and `koide_emergent_time_eta_conjugation_parity` (retained_bounded).
 
 ## Sharpest next path (off the index/η axis — not a closing framing)
 The complementarity names exactly what is needed: a **non-index, native invariant that is nonzero

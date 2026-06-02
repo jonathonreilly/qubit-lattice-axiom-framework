@@ -64,7 +64,7 @@ collapse to these two inputs.
   CP-violation / the chirality grading is the candidate T-odd ingredient) that *does* select δ=0 — or
   show δ=0 follows from the charged-lepton (real-mass) reality datum.
 - **For input 2 (block-counting vs Born):** the genuine question — does anything make the *equal-power*
-  (block-counting) measure physical over the Born/dimension one? This is the irreducible det_C core; the
+  (block-counting) measure physical over the Born/dimension one? This is the as-yet-unreduced det_C core; the
   honest current status is that the Born measure gives r=1 and r=1/2 is the block-counting alternative.
 
 ## Provenance (verified 2026-06-02)

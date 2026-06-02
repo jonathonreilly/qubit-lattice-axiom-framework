@@ -39,15 +39,15 @@ physical force depends on (i) reading on the Brannen carrier (where z=0 is re-ce
 unjustified source/operator asymmetry. **Locality is therefore not a selector for Q=2/3** — it joins symmetry
 (generation-blind / forbidden) and positivity (agnostic) as a principle that does **not** natively pick the value.
 
-## Honest standing of the charged-lepton value (capstone-grade)
-Every native selector class has now been tested and none forces Q=2/3 over Q=1:
+## Honest standing of the charged-lepton value (consolidated standing)
+Every native selector class tested so far has not been shown to force Q=2/3 over Q=1:
 - **Symmetry** — exhausted (lattice point group, projective/magnetic via `H²=0`, full O_h, algebra
   automorphisms, gauge U(1)s, idempotent U(1)): all generation-blind, inert, or the blocked chiral grading.
 - **Measure/positivity** — agnostic (OS reflection positivity blind to complex-vs-real; Bargmann generation-blind).
 - **Locality / onsite-source** — does not select it (consistent application gives Q=1/3; Q=2/3 needs an
   unjustified asymmetry; the substrate-necessity bridge's vehicles assume rather than derive locality).
 
-So the campaign's defensible endpoint stands and is now exhaustively backed: **the framework derives all of
+So the campaign's defensible endpoint stands and is reinforced: **the framework derives all of
 charged-lepton flavor (3 generations, C₃, the circulant operator, emergent time, the signed/Hermitian readout,
 the exact identity `Q=1/3+(2/3)r`, and `J_cs` forced by Schur) EXCEPT one reality/statistics bit — the
 complex-vs-real (det_C/block vs det_R/dimension) counting of the doublet — and no native principle (symmetry,
@@ -56,10 +56,10 @@ the more faithful reading of "a qubit at each site," and requires no new axiom �
 the competing Q=1 reading is at least as motivated by the off-diagonal location of the mass operator itself.
 
 ## Next paths (live, not closed)
-The selector hunt is exhausted on the three native principle-classes; what remains genuinely open is upstream
+No native principle in the three classes tested selects the value; what remains genuinely open is upstream
 of them: (i) the statistics-selection gap `G3` (fermionic-vs-bosonic = real-vs-complex = the *same* bit) — but
 note this build shows locality does not resolve it; (ii) a genuinely new structural primitive, which would be
-an import requiring user approval + audit. Honest assessment: this is the natural consolidation point for the
+an import requiring user approval + audit. Honest assessment: this is the consolidation of the value campaign's current standing for the
 value campaign.
 
 ## Stale-citation flags

@@ -67,6 +67,6 @@ would close `r=1/2`; (ii) a derived **cross-factor coupling** giving each sector
 `r`-ladder (leptons 0.50 < down 0.60 < up 0.77), which has no *internal* flavor parameter.
 
 ## Stale-citation flags
-- Anchors: OS reflection positivity (`axiom_first_reflection_positivity`, audited_conditional;
+- Anchors: OS reflection positivity (`axiom_first_reflection_positivity`, unaudited — not load-bearing;
   `osterwalder_schrader_from_framework`), `free_field_os_wightman_reconstruction` (statistics-selection gap G3),
   `koide_real_rep_block_count_permitted_not_forced` (unaudited), `koide_z3_equivariant_anticommuting_no_go` (retained_bounded).

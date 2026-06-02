@@ -1,5 +1,8 @@
 # Flavor — Q=2/3 closes modulo ONE named half-axiom (source-locality), which is A2-PLUS, not A2
 
+> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** The single-input framing here (source-locality A2-PLUS half-axiom) is ONE equivalent presentation of the gate; the consolidated Tier-A admission is AC_φλ (K-reality + det_C), of which source-locality is an equivalent face. Current consolidated status: `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`.
+> **Status authority:** independent audit lane only.
+
 **Date:** 2026-05-31
 **Claim type:** bounded result — the charged-lepton value is a conditional positive, conditioned on a precisely-named source-locality half-axiom; decisive A2-vs-A2-plus determination.
 **Status authority:** independent audit lane only; this note sets source metadata only.

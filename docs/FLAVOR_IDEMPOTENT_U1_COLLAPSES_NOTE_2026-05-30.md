@@ -7,7 +7,7 @@
 **Source:** 6-agent build `wf_561034c7` (map → 4 tests → adjudication).
 
 ## Question
-The last open route: a derived continuous **flavor/horizontal U(1) on the singlet⊕doublet idempotent split**
+A candidate route tested here: a derived continuous **flavor/horizontal U(1) on the singlet⊕doublet idempotent split**
 (`P_s=J/3, P_d=I−J/3`) — *not* a rephasing of the generator `C`, so potentially dodging `C³=I` — that
 orients `J_cs` (→ det_C → Q=2/3) **and** reproduces the ordering `r = 0.50(lep) < 0.60(down) < 0.77(up)`.
 
@@ -43,7 +43,7 @@ charge/color/Yukawa structure lives on the spinor/color/Higgs factors, which are
 sharp, recurring reason: nothing internal to the generation factor can place the sectors on the ladder.
 
 ## Honest verdict
-The flavor-U(1)-on-idempotents route — the last symmetry-side candidate — **collapses** (inert-by-conjugation,
+The flavor-U(1)-on-idempotents route — this symmetry-side candidate — **collapses** (inert-by-conjugation,
 or the already-blocked chiral grading, or the `C³=I`-forbidden charge gluing). The `C³=I` no-go is *narrowed*
 (useful), and the ordering is *real but unindexed* (honest negative). The two gates are unchanged and now
 maximally sharp:

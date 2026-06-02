@@ -57,5 +57,5 @@ Per repo policy, a measure-selection primitive is an import requiring user appro
 though it is now the *unique* natural one. Cross-check against the `√m`-signed-vs-singular-value readout lever.
 
 ## Stale-citation flags
-- Confirms (from 4 fresh angles, no escape) the existing `generation-doublet-measure-detC-vs-detR-2026-05-29`
+- Confirms (from 4 fresh angles) the det_C-vs-det_R reading consolidated in this PR's `FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02` and the chain-of-custody capstone
   derivation. Anchors: `koide_real_rep_block_count_permitted_not_forced` (unaudited), `koide_c3_generator_rephasing_obstruction` (retained, the `C³=I` symmetry obstruction).

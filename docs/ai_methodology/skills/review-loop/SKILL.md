@@ -17,6 +17,22 @@ generic software review. Its job is to protect the live claim boundary:
 retained/Nature-grade claims must have artifact support, imported values must
 be explicit, and support-only results must not be promoted by prose.
 
+## Model And Tool Boundary
+
+Review-loop is a text/code/math review path. Run it with the user's configured
+highest-tier Codex reviewer model and maximum available reasoning for this
+repo (currently GPT-5.5 at extra-high/xhigh reasoning in the local Codex
+configuration). Do not switch to lower-reasoning models for convenience, and
+do not use image-generation, image-editing, presentation, document-rendering,
+or visual-generation tools unless the user explicitly asks for a separate
+visual artifact task.
+
+If a run surfaces an image-generation model/tool error such as a stale
+`gpt-image-*` tool configuration, treat it as a local Codex tooling/config
+problem, not as part of review-loop. Do not retry the review by invoking
+imagegen, changing the science-review model, or routing science review through
+visual tooling.
+
 This skill is **review only**. It may make branch/package hygiene changes that
 allow the independent audit system to parse and queue claims, but it must not
 apply audit verdicts, write `audited_clean`, or run the audit worker.

@@ -1,0 +1,53 @@
+========================================================================
+DM Full Closure 64:1 channel-weight bridge — narrow verifier
+Pair note: docs/DM_FULL_CLOSURE_64_TO_1_CHANNEL_WEIGHT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md
+========================================================================
+
+=== Part A: Casimir C_F (Lemma B.1) ===
+
+=== Part B: Octet projector + 1/(2 N_c) (Lemma B.1.b) ===
+
+=== Part C: Squared-coupling ratio = 64 (Lemma B.2) ===
+
+=== Part D: Multiplicity decomposition (Lemma B.3) ===
+
+=== Part E: Visible-channel folding (Lemma B.4) ===
+
+=== Part F: Retained cite-chain on origin/main ===
+
+=== Part G: Hostile-audit checks ===
+
+========================================================================
+[PASS] A.1 Tr(T^a T^b) = (1/2) delta^{ab}  (max_err=1.11e-16)
+[PASS] A.2 Sum_a T^a T^a = C_F * I_3  (C_F=4/3, diag=2.22e-16, off=0.00e+00)
+[PASS] A.3 C_F = (N_c^2-1)/(2 N_c) = 4/3 exactly  (C_F=4/3)
+[PASS] B.1 P_singlet + P_octet = I
+[PASS] B.2 Idempotency: P^2 = P (singlet, octet)
+[PASS] B.3 Tr(P_singlet) = 1  (tr=1.000000)
+[PASS] B.4 Tr(P_octet) = N_c^2-1 = 8  (tr=8.000000)
+[PASS] B.5 Singlet <T_q.T_qbar> = -C_F = -4/3 (attractive)  (got -1.333333)
+[PASS] B.6 Octet <T_q.T_qbar> = +1/(2 N_c) = +1/6 (repulsive)  (got 0.166667)
+[PASS] B.7 1/(2 N_c) = 1/6 exactly
+[PASS] C.1 (C_F)^2 / (1/(2 N_c))^2 = (N_c^2-1)^2 = 64
+[PASS] C.2 (4/3)^2 / (1/6)^2 = 64 exact
+[PASS] D.1 dim(1)+dim(8) = N_c^2 = 9
+[PASS] D.2 multiplicity fractions f_1=1/9, f_8=8/9
+[PASS] D.3 R_conn = 8/9 (matches retained cl3_color_automorphism_theorem)
+[PASS] E.1 w_1 = (1/9) C_F^2 = 16/81  (w_1=16/81)
+[PASS] E.2 w_8 = (8/9) (1/(2 N_c))^2 = 2/81  (w_8=2/81)
+[PASS] E.3 w_1 / w_8 = 8 (multiplicity-folded ratio)  (ratio=8)
+[PASS] E.4 w_1 + w_8 = 18/81 = 2/9  (sum=2/9)
+[PASS] E.5 (w_1 s_1 + w_8 s_8)/(w_1+w_8) = (8 s_1 + s_8)/9 on rationals  (lhs=365/561=rhs)
+[PASS] E.6 Parent R_DM formula = (8 s_1 + s_8)/9 at alpha_s median  (rel_err=0.00e+00 (helper=5.46241776, full=5.46241776))
+[PASS] F: present on origin/main: docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md
+[PASS] F: present on origin/main: docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md
+[PASS] F: present on origin/main: docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md
+[PASS] G.1 Parent note text unchanged (byte-identical to origin/main)
+[PASS] G.2 Items (ii) and (iii) explicitly registered as open  (has_ii=True, has_iii=True)
+[PASS] G.3 Does not claim to lift parent status
+[PASS] G.4 Physical-color identification deferral preserved
+[PASS] G.5 No retained no_go weakened (companion is positive bridge)
+[PASS] G.6 No new axiom/convention/import (only retained one-hops)
+------------------------------------------------------------------------
+PASS 30    FAIL 0
+========================================================================

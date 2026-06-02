@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/koide_graph_braid_exchange_eta_holonomy_decoupling_2026_06_02.py
+runner_sha256: 0e84a5cd2077470e5c51b17e53a2d2ddd0e3666dd33111888a1697eaab34c11b
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 223.30
+status: ok
+----- stdout -----
+==========================================================================
+GRAPH-BRAID EXCHANGE vs STAGGERED HOPPING SIGN (eta) HOLONOMY
+Note: KOIDE_GRAPH_BRAID_EXCHANGE_ETA_HOLONOMY_DECOUPLING_NARROW_NO_GO_NOTE_2026-06-02.md
+Builds ON retained graph_braid_z3_anyon_exclusion_dichotomy (H_1(UD_2(Z^3))=Z^b1(+)Z_2).
+Tests R1: can eta (= sign(beta) link connection) sign the exchange Z_2?
+==========================================================================
+--------------------------------------------------------------------------
+(A) Base-edge projection of the exchange class: P(t)=0 mod 2 =>
+    every base-graph Z_2 connection eta (staggered hopping sign included)
+    has Hol_eta(exchange)=+1.  The swap sign exists only as non-fibered
+    config-space (framing) data, NOT as a hopping connection.
+--------------------------------------------------------------------------
+[PASS] (A) K_{3,3}: d1.d2 = 0 (valid cube complex)  |V|=6 |E|=9 |c1|=36 |c2|=18
+[PASS] (A) K_{3,3}: H_1(UD_2) carries a Z_2 exchange-torsion summand  #Z_2 gens=1
+[PASS] (A) K_{3,3}: exchange generator t is a 1-cycle (d1 t = 0)
+[PASS] (A) K_{3,3}: t NOT integrally in im(d2)  (generates Z_2)
+[PASS] (A) K_{3,3}: 2t IS integrally in im(d2)  (order exactly 2)
+[PASS] (A) K_{3,3}: P(t) = 0 mod 2  (every base edge net-EVEN in the swap)  #odd-multiplicity base edges = 0
+[PASS] (A) K_{3,3}: EVERY base-edge eta gives Hol_eta(exchange)=+1 (400 random eta, incl. staggered-type sign)
+[PASS] (A) K_{3,3}: explicit uniform all-ones link sign -> Hol_eta(exchange) = +1
+[PASS] (A) K_{3,3}: explicit Kogut-Susskind-type staggered link sign (lower-endpoint parity) -> Hol_eta(exchange) = +1
+[PASS] (A) K_{3,3}: a UD_2 1-cocycle phi with phi(exchange) = -1 EXISTS (fermion swap sign is realizable config-space data)  dim Z^1(GF2)=19
+[PASS] (A) K_{3,3}: that swap-sign cocycle is NOT a base-edge (eta) lift (non-fibered = framing data, not a hopping connection)
+[PASS] (A) K_5: d1.d2 = 0 (valid cube complex)  |V|=5 |E|=10 |c1|=30 |c2|=15
+[PASS] (A) K_5: H_1(UD_2) carries a Z_2 exchange-torsion summand  #Z_2 gens=1
+[PASS] (A) K_5: exchange generator t is a 1-cycle (d1 t = 0)
+[PASS] (A) K_5: t NOT integrally in im(d2)  (generates Z_2)
+[PASS] (A) K_5: 2t IS integrally in im(d2)  (order exactly 2)
+[PASS] (A) K_5: P(t) = 0 mod 2  (every base edge net-EVEN in the swap)  #odd-multiplicity base edges = 0
+[PASS] (A) K_5: EVERY base-edge eta gives Hol_eta(exchange)=+1 (400 random eta, incl. staggered-type sign)
+[PASS] (A) K_5: explicit uniform all-ones link sign -> Hol_eta(exchange) = +1
+[PASS] (A) K_5: explicit Kogut-Susskind-type staggered link sign (lower-endpoint parity) -> Hol_eta(exchange) = +1
+[PASS] (A) K_5: a UD_2 1-cocycle phi with phi(exchange) = -1 EXISTS (fermion swap sign is realizable config-space data)  dim Z^1(GF2)=16
+[PASS] (A) K_5: that swap-sign cocycle is NOT a base-edge (eta) lift (non-fibered = framing data, not a hopping connection)
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): d1.d2 = 0 (valid cube complex)  |V|=15 |E|=18 |c1|=234 |c2|=126
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): H_1(UD_2) carries a Z_2 exchange-torsion summand  #Z_2 gens=1
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): exchange generator t is a 1-cycle (d1 t = 0)
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): t NOT integrally in im(d2)  (generates Z_2)
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): 2t IS integrally in im(d2)  (order exactly 2)
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): P(t) = 0 mod 2  (every base edge net-EVEN in the swap)  #odd-multiplicity base edges = 0
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): EVERY base-edge eta gives Hol_eta(exchange)=+1 (400 random eta, incl. staggered-type sign)
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): explicit uniform all-ones link sign -> Hol_eta(exchange) = +1
+[PASS] (A) K_{3,3} subdivided x1 (room to pass): explicit Kogut-Susskind-type staggered link sign (lower-endpoint parity) -> Hol_eta(exchange) = +1
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): d1.d2 = 0 (valid cube complex)  |V|=18 |E|=33 |c1|=528 |c2|=436
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): H_1(UD_2) carries a Z_2 exchange-torsion summand  #Z_2 gens=1
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): exchange generator t is a 1-cycle (d1 t = 0)
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): t NOT integrally in im(d2)  (generates Z_2)
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): 2t IS integrally in im(d2)  (order exactly 2)
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): P(t) = 0 mod 2  (every base edge net-EVEN in the swap)  #odd-multiplicity base edges = 0
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): EVERY base-edge eta gives Hol_eta(exchange)=+1 (400 random eta, incl. staggered-type sign)
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): explicit uniform all-ones link sign -> Hol_eta(exchange) = +1
+[PASS] (A) Z^3 cubic-lattice slab 3x3x2 (non-planar): explicit Kogut-Susskind-type staggered link sign (lower-endpoint parity) -> Hol_eta(exchange) = +1
+--------------------------------------------------------------------------
+(B) On-site discrete-rotation moves = 2-cells (im d2); the exchange
+    torsion survives them => no on-site 2O rotation loop is homotopic
+    to the swap (centrality obstruction, exact).
+--------------------------------------------------------------------------
+[PASS] (B) K_{3,3}: exchange t NOT reachable by simultaneous-move (2-cell) boundaries => no on-site rotation loop is homotopic to the swap
+[PASS] (B) K_{3,3}: a simultaneous-move (2-cell) boundary is in im(d2) (trivial in H_1) -- carries no exchange sign
+[PASS] (B) K_5: exchange t NOT reachable by simultaneous-move (2-cell) boundaries => no on-site rotation loop is homotopic to the swap
+[PASS] (B) K_5: a simultaneous-move (2-cell) boundary is in im(d2) (trivial in H_1) -- carries no exchange sign
+==========================================================================
+SCORECARD: PASS=44 FAIL=0
+VERDICT: R1's eta-weighted cross-site route does NOT discharge the records-Z_2 natively. The integral Z_2 exchange generator t of UD_2(Gamma) has base-edge projection P(t)=0 mod 2 (every base edge net-even in the swap), on K_{3,3}, K_5, a subdivided variant, AND a genuine non-planar cubic-lattice slab 3x3x2 of Z^3. So EVERY base-graph Z_2 link connection eta -- the staggered hopping sign / sign(beta) included -- gives Hol_eta(exchange)=+1: the graph-braid exchange Z_2 is DECOUPLED from sign(beta). The fermionic swap sign exists as a UD_2 config-space 1-cocycle (H^1(UD_2;Z_2)) but is NOT the lift of any hopping connection (non-fibered framing data). On-site discrete-rotation moves are the 2-cells, which the exchange survives, so no on-site 2O rotation loop is homotopic to the swap. NET: verdict (c)+(d) -- the route reduces to the (now exact, holonomy-level) centrality obstruction, with the precise residual = the non-fibered config-space FRAMING the next path must supply. Builds on the retained graph-braid theorem; assumes no CAR / sign(beta) / Q=2/3; imports nothing.
+==========================================================================
+
+----- stderr -----
+

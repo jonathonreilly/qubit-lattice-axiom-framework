@@ -5,9 +5,9 @@ inner product + which partition the substrate algebra canonically carries), best
 REVISION of A1 (carrier = R[Z3] in tracial standard form), NOT a bolted-on dynamical A3.
 
   C1 HS norms: ||I||^2=3, ||J-I||^2=6, <I,J-I>=0 (the channel split is canonical/trace-orthogonal).
-  C2 THREE-WAY FORK (the real gap): channel/generator equipartition 3a^2=6b^2 -> r=1/2;
-     eigenvalue/idempotent equipartition (a+2b)^2=2(a-b)^2 -> r=17/2-6sqrt2~0.0147;
-     per-mode (3 equal components) -> r=1. Rep theory ranks none; the axiom's job is to break the fork.
+  C2 THREE-WAY FORK (the real gap): channel/generator counting (equal HS energy per isotypic channel) 3a^2=6b^2 -> r=1/2;
+     eigenvalue/idempotent split (a+2b)^2=2(a-b)^2 -> r=17/2-6sqrt2~0.0147;
+     per-mode (3 equal components = genuine per-DOF equipartition) -> r=1. Rep theory ranks none; the axiom's job is to break the fork.
   C3 FALSIFIABLE FAMILY r=1/(N-1) for a Z_N carrier (||I_N||^2=N, ||J_N-I_N||^2=N(N-1)):
      N=2->1, N=3->1/2 (Q=2/3), N=4->1/3, N=6->1/5. r=1/2 is FORCED BY n_gen=3, not tuned.
   C4 Kahler/moment-map independent corroborator: rank-weighted phase-averaged moments

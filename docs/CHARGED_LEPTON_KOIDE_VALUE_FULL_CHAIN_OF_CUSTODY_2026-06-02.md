@@ -1,14 +1,14 @@
-# Charged-Lepton Koide Value — Full Chain of Custody (A1+A2 → Q=2/3), retained-bounded modulo one Tier-A admitted input
+# Charged-Lepton Koide Value — Full Chain of Custody (A1+A2 → Q=2/3): structure derived; value modulo one Tier-A admitted input
 
 **Date:** 2026-06-02
-**Claim type:** chain-of-custody / synthesis capstone (assembles an existing retained/retained_bounded chain into one citable anchor; sets no new audit status itself). The chain it documents is **retained-bounded**: structure derived, value reached modulo the single Tier-A admitted input `AC_φλ`.
+**Claim type:** chain-of-custody / synthesis capstone (assembles existing audited rows + this session's derived bridges into one citable anchor; **sets no new audit status itself**). The chain it documents is a complete derivation of the value **modulo the single Tier-A admitted input `AC_φλ`** — structure derived, value reached modulo that input. **Its audit grade is the independent audit lane's determination; this note asserts none.**
 **Status authority:** independent audit lane only.
 **Runner:** `scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py` (end-to-end, SCORECARD 9/9).
 **Purpose:** give the **downstream consumers of Q=2/3** one end-to-end-verified, honestly-tiered chain to cite — every link tied to its retained anchor, the one admitted input named, the value/structure split explicit.
 
 ## The chain (A1+A2 → Q=2/3), every link tiered
 
-| # | link | status | anchor |
+| # | link | ledger status (per current origin/main; the audit lane is authoritative) | anchor |
 |---|---|---|---|
 | L1 | A1: one qubit / site carries the unique j=½ su(2) module | **retained** | `per_site_su2_spin_half` |
 | L2 | A2: locality ⇒ emergent Lieb–Robinson lightcone / causality | **retained_bounded** | `lieb_robinson_equal_time_tensor_locality` |
@@ -42,18 +42,18 @@ All ten structural links verified end-to-end (runner 9/9).
   `koide_z3_equivariant_anticommuting_no_go` (retained_bounded). These match the literature: Koide's own
   Z₃ parametrization (arXiv:1301.4143) likewise leaves the per-sector ratio a free fit.
 
-## Honest tier
-The chain is **retained-bounded**: it is a complete, end-to-end-verified derivation of the charged-lepton
-Koide value **conditional on the single registered Tier-A admitted input `AC_φλ`** (and the universal
-scale `S`). It does **not** claim `Q=2/3` is derived from A1+A2 with no input; it claims the *structure*
-is derived and the *value* reduces to one named admission, which is the honest and downstream-stable
-status. (This supersedes scattered per-note framings; it does not over-claim closure.)
+## Honest standing (a claim description, not an audit grade)
+The chain is a complete, end-to-end-verified derivation of the charged-lepton Koide value **conditional
+on the single registered Tier-A admitted input `AC_φλ`** (and the universal scale `S`). It does **not**
+claim `Q=2/3` is derived from A1+A2 with no input; it claims the *structure* is derived and the *value*
+reduces to one named admission. **The audit grade for this chain is the independent audit lane's call —
+this note asserts none.** (This consolidates scattered per-note framings; it does not over-claim closure.)
 
 ## For downstream consumers of Q=2/3
 Cite **this chain note** as the single chain-of-custody anchor, plus the endpoint biconditional
 `charged_lepton_koide_cone_algebraic_equivalence` (retained) and the Tier-A admission `AC_φλ`. The
 charged-lepton mass ratios, the Brannen relations, and any Q=2/3-dependent result inherit exactly this
-tier: **derived-modulo-`AC_φλ`** (retained-bounded), with the full structural derivation behind them.
+standing: **derived-modulo-`AC_φλ`**, with the full structural derivation behind them (audit grade per the audit lane).
 
 **Named downstream consumers (the dependency graph this chain anchors):**
 - `KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM` — the Brannen circulant √m parametrization (the δ-phase reduction) reads off this chain's `H` and `Q=1/3+(2/3)r`.
@@ -62,13 +62,13 @@ tier: **derived-modulo-`AC_φλ`** (retained-bounded), with the full structural 
 - `lanes/open_science/06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE` — the charged-lepton mass-retention lane; this chain is its upstream value-anchor (the masses `m_k = λ_k²` follow once the scale `S` and the lane `r=1/2` are fixed).
 - `KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT`, `BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME` — the BAE/Plancherel support layer, consistent with this chain's L6/L9.
 
-Each of these inherits the **retained-bounded / derived-modulo-`AC_φλ`** tier from this chain; none should claim a stronger tier for Q=2/3 than the chain provides.
+Each of these inherits the **derived-modulo-`AC_φλ`** standing from this chain (audit grade per the audit lane); none should claim Q=2/3 is derived with no input.
 
 ## The three Koide lanes (for completeness / sibling-sector retention)
 The same exact line `Q=1/3+(2/3)r` carries three distinguished points (this session's lane map): **Q=1/3**
 (r=0, S₃-degenerate / unbroken — neutrino-like), **Q=2/3** (r=1/2, balanced — charged leptons, this
 chain), **Q=1** (r=1, maximal hierarchy — det_R/Born default). They are distinct physics on one structure,
-separately retainable; this note retains the **Q=2/3** lane.
+separately retainable; this note **documents** the **Q=2/3** lane (audit grade per the audit lane).
 
 ## Provenance (verified 2026-06-02)
 - End-to-end chain (L1–L10 + the AC selection) verified directly (runner 9/9).

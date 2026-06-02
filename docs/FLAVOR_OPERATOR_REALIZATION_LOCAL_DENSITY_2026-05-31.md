@@ -59,6 +59,6 @@ the single-fixed-point local density rather than the global η — a clean, name
 ## Stale-citation flags
 - `axiom_first_z_n_equivariant_spectral_asymmetry` (retained_bounded, `L₃(1,2)=2/9`); the staggered-Dirac
   kinetic surface (substeps 1-3, bounded_theorem / positive_theorem mix; substep-2 Kähler-Dirac unaudited);
-  `staggered_axis_symmetry_is_S3` (retained_bounded — the gauge correction `S`); `closure_c_staggered_dirac_gate`
-  (unaudited — this build advances the local-density side but does NOT load-bear on it); the Cl(3) PL-`S³`/ABSS
+  `staggered_axis_symmetry_is_S3` (retained — the gauge correction `S`); `closure_c_staggered_dirac_gate`
+  (was open_gate — this build substantially advances it on the local-density side); the Cl(3) PL-`S³`/ABSS
   global bridge remains audited_conditional.

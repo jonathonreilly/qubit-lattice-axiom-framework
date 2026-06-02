@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rp_two_step_transfer_matrix_singular_mode_c2_tightening_2026_06_02.py
+runner_sha256: 95117356ed78357c1d7ad107fb2809fe0b1b96faf3cbfbe57cd3931118835c1a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+=== RP singular-mode C2 tightening ===
+
+[PASS] closed_form_eigenvalues_m=0.05 (got=[-1.0512492197250394, 0.9512492197250392], expected=[-1.0512492197250394, 0.9512492197250393])
+[PASS] characteristic_polynomial_roots_m=0.05 (max_residual=2.220e-16)
+[PASS] one_step_indefinite_m=0.05 (lower=-1.05125, upper=0.951249)
+[PASS] two_step_square_nonnegative_m=0.05 (T2_eigs=[0.9048750780274961, 1.105124921972504])
+[PASS] closed_form_eigenvalues_m=0.1 (got=[-1.104987562112089, 0.904987562112089], expected=[-1.104987562112089, 0.904987562112089])
+[PASS] characteristic_polynomial_roots_m=0.1 (max_residual=1.110e-16)
+[PASS] one_step_indefinite_m=0.1 (lower=-1.10499, upper=0.904988)
+[PASS] two_step_square_nonnegative_m=0.1 (T2_eigs=[0.8190024875775821, 1.220997512422418])
+[PASS] closed_form_eigenvalues_m=0.5 (got=[-1.618033988749895, 0.6180339887498948], expected=[-1.618033988749895, 0.6180339887498949])
+[PASS] characteristic_polynomial_roots_m=0.5 (max_residual=0.000e+00)
+[PASS] one_step_indefinite_m=0.5 (lower=-1.61803, upper=0.618034)
+[PASS] two_step_square_nonnegative_m=0.5 (T2_eigs=[0.38196601125010515, 2.618033988749895])
+[PASS] closed_form_eigenvalues_m=1.0 (got=[-2.414213562373095, 0.4142135623730951], expected=[-2.414213562373095, 0.41421356237309515])
+[PASS] characteristic_polynomial_roots_m=1.0 (max_residual=2.220e-16)
+[PASS] one_step_indefinite_m=1.0 (lower=-2.41421, upper=0.414214)
+[PASS] two_step_square_nonnegative_m=1.0 (T2_eigs=[0.17157287525380993, 5.82842712474619])
+[PASS] closed_form_eigenvalues_m=2.0 (got=[-4.23606797749979, 0.2360679774997897], expected=[-4.23606797749979, 0.2360679774997898])
+[PASS] characteristic_polynomial_roots_m=2.0 (max_residual=4.441e-16)
+[PASS] one_step_indefinite_m=2.0 (lower=-4.23607, upper=0.236068)
+[PASS] two_step_square_nonnegative_m=2.0 (T2_eigs=[0.055728090000841224, 17.94427190999916])
+
+PASS=20  FAIL=0
+
+
+----- stderr -----
+

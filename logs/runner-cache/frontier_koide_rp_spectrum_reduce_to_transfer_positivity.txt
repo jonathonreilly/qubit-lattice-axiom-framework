@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_rp_spectrum_reduce_to_transfer_positivity.py
+runner_sha256: 97d92b923f9a3aa7b2cfbe4d98d4f672567e209207eb2f908f22bcaab91278af
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.28
+status: ok
+----- stdout -----
+
+============================================================================
+A. REDUCTION: Hhat>=0 <==> T positive Hermitian (retained single_clock_stone map)
+============================================================================
+[PASS] T positive Hermitian (spec in (0,1]) => Hhat=-(1/a)log(T/||T||) is self-adjoint, Hhat>=0, E0=0 -- the spectrum condition is a COROLLARY of T-positivity, not a postulate
+[PASS] a NON-positive-Hermitian T does not yield a self-adjoint Hhat -> Hhat>=0 IS the statement 'T positive Hermitian' -- so RP and the spectrum condition are the SAME statement: T positive Hermitian
+
+============================================================================
+B. RECORDS SCAFFOLD: Hermitian records + tracial rho=I/2 -> trace-symmetric D -> T positive Hermitian
+============================================================================
+[PASS] Hermitian record operators + tracial reference -> dissipator D is TRACE-SYMMETRIC (self-adjoint superop) -- ||D-D^dag||=0.0e+00
+[PASS] D is dissipative: spec(D) <= 0 -- spec(D)=[-3.7  -2.92 -1.78 -0.  ]
+[PASS] T=e^{aD} is positive Hermitian with spectrum in (0,1] -- spec(T)=[0.075  0.1295 0.2877 1.    ]
+[PASS] => Hhat=-(1/a)log(T) >= 0 (spectrum condition, via retained single_clock_stone), E0=0 -- with NO staggered/Wilson import
+[PASS] OS reflection positivity: reflected Gram matrix M_ij=<v|T^(i+j)|v> is PSD -- min eig=1.0e-17 -> RP follows from T positive Hermitian
+
+============================================================================
+C. the RETAINED tracial rho=I/2 is EXACTLY the detailed-balance reference
+============================================================================
+[PASS] trace-symmetry (detailed balance) holds w.r.t. the tracial state rho=I/2 = pre_record_reference (retained) -- the retained tracial reference is precisely the infinite-temperature detailed-balance reference; CP/Kraus structure is retained
+
+============================================================================
+D. CONTRAST: a generic (non-Hermitian) dissipator needs the 2-step staggered trick (the import route)
+============================================================================
+[PASS] generic non-Hermitian record ops -> D NOT trace-symmetric -> single-step T NOT Hermitian -- this is why the staggered route needs T^2 (the 2-step trick); trace-symmetry from Hermitian records avoids it
+[PASS] the 2-step T^dag T IS positive Hermitian (the staggered audited_conditional route) -- but rides the open KS/Wilson arena -- staggered KS + Wilson SU(3) rides open realization/g_bare gates = an IMPORT, named-not-adopted
+
+============================================================================
+DISPOSITION
+============================================================================
+[PASS] RP and the spectrum condition reduce to ONE statement: the emergent-time transfer operator T is positive Hermitian -- via retained single_clock_stone (T positive -> Hhat>=0) and OS reconstruction (T positive -> RP)
+[PASS] records-route scaffold exists: trace-symmetric records CP semigroup + tracial rho -> T positive Hermitian -> RP + Hhat>=0 -- reuses 5 retained rows: single_clock_stone, pre_record_tracial, kraus_choi, persistent_record_kraus, decoherence_action_independence
+[PASS] the unbuilt DERIVATION TARGET (not an assumption): records-growth Lindblad operators are Hermitian (self-adjoint) w.r.t. rho -- CP/Kraus structure is retained; Hermiticity of the record operators is the sharp checkable piece -- the next path, NOT a closure
+
+============================================================================
+RESULT
+============================================================================
+
+13/13 checks passed.
+RP + spectrum-condition cascade REDUCES to one statement: the emergent-time transfer operator T is
+positive Hermitian (RP <==> Hhat>=0 <==> T positive Hermitian; the SC half is the retained single_clock
+stone map). The staggered KS + Wilson SU(3) route to T-positivity is an IMPORT (open realization/g_bare
+gates), named-not-adopted. The records-route scaffold: Hermitian records + the retained tracial reference
+rho=I/2 give a TRACE-SYMMETRIC dissipator -> T=e^{aD} positive Hermitian (spec in (0,1]) -> Hhat>=0 AND
+OS reflection positivity, reusing 5 retained rows and bypassing the open KS/Wilson gates entirely. The
+next path (a derivation target, NOT an assumption): derive that the framework's records-growth Lindblad
+operators are Hermitian w.r.t. the tracial reference -- then RP, Hhat>=0, CAR, and the matter-attachment
+follow as corollaries via the dynamics arena.
+
+----- stderr -----
+

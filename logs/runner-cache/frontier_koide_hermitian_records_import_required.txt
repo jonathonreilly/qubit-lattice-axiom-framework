@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_hermitian_records_import_required.py
+runner_sha256: 8c98ddaa8d365363d453fff08f20002ae3cb91f53ada39fdac4345a78f29a0d6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+
+==============================================================================
+A. COUNTEREXAMPLE: phase-twisted channel persists a classical record but T is NON-Hermitian
+==============================================================================
+[PASS] channel is valid CPTP (Choi PSD) + trace-preserving + UNITAL (fixes the tracial rho=I/2)
+[PASS] it PERSISTS a classical record (Z-diagonal populations preserved)
+[PASS] but its Kraus are NON-Hermitian and the dissipator is NOT trace-symmetric (self-adjoint)
+[PASS] => T has COMPLEX eigenvalues -> NOT positive Hermitian -> persistence does NOT force Hermiticity -- T spec = [0.5-0.5j 0.5+0.5j 1. +0.j  1. +0.j ]
+
+==============================================================================
+B. FRAGMENT: U=I (Hermitian projectors, no relative phase) -> trace-symmetric -> T positive Hermitian
+==============================================================================
+[PASS] Hermitian projectors give a SELF-ADJOINT superoperator with real T spectrum in [0,1] -- T spec = [0. 0. 1. 1.] -> sufficient canonical closure of the branch phase
+
+==============================================================================
+C. IMPORT BOUNDARY: positive real branch coherence is required; U=I is sufficient, not forced
+==============================================================================
+[PASS] diagonal record transfer is Hermitian iff z is real, and positive Hermitian iff z>=0 -- (z, hermitian, positive) = [(1.0, True, True), (0.5, True, True), (-0.5, True, False), ((0.5+0.5j), False, False)]
+[PASS] a mixing post-measurement U.P family is self-adjoint at theta=0 but not at tested nonzero angles -- (theta, self-adjoint) = [(0.0, True), (0.3, False), (1.0, False)]
+[PASS] the positive-real coherence condition is a CONVENTION/import if adopted: lsp_projective_derivation admits U-twists; decoherence carries phases e^(ikS) -- => U=I is a sufficient canonical realization, not a derivation from the retained baseline
+
+==============================================================================
+D. BOUNDED ANSWER: closing it would NOT remove 'bounded' down the full charged-lepton chain
+==============================================================================
+[PASS] even if imported, the route lands at retained_bounded (rides persistent_record_as_kraus + decoherence + lsp + luders, all retained_bounded) -- a chain is bounded by its weakest input tier
+[PASS] the matter-attachment LEG would not even reach retained: siblings unaudited (spectrum_condition, RP, OS, microcausality) + retained_no_go (statistics_agnostic) -- Hermitian-records discharges only the rp_two_step audited_conditional blocker, not the leg
+[PASS] the VALUE chain is ORTHOGONAL: dominant pins are AC_phi_lambda (delta=2/9 + species), r=1/2 block weight, and signed-readout re-audit -- records-Hermiticity cannot reach any of these -> the chain stays retained_bounded/open
+
+==============================================================================
+RESULT
+==============================================================================
+
+11/11 checks passed.
+The Hermitian-records target is IMPORT-REQUIRED, not importless. A phase-twisted diagonal channel is a
+valid CPTP map that PERSISTS a classical record yet has a non-Hermitian transfer with COMPLEX spectrum --
+so persistence does not force transfer positivity. The finite residual is positive real branch coherence
+(z real and z>=0), with U=I as a sufficient canonical realization. lsp_projective_derivation admits
+U-twists and the framework's phase-carrying decoherence does not satisfy the condition by default. So
+the RP/spectrum cascade TRADES the staggered/Wilson import for a records-instrument import. And
+closing it would NOT remove 'bounded' down the chain (it rides retained_bounded inputs; the value-side
+pins -- AC_phi_lambda delta=2/9 + species, r=1/2 block weight, signed-readout re-audit -- are
+orthogonal to records). NEXT PATH: the branch phase blocking positive transfer is plausibly the SAME
+phase whose sign carries the signed-vs-singular Koide readout -- one principle (e.g. a CPT/reality
+condition on the record-writing generator) could discharge both.
+
+----- stderr -----
+

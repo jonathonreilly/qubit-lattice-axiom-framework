@@ -1,0 +1,18 @@
+[PASS] R1 J_cs anti-Hermitian, J_cs^2=-P_doublet, eigs {0,+-i}, [J_cs,C]=0 -> A1-native Schur-forced complex structure
+       eigs(J_cs)=[1j, -1j, (-0+0j)]; distinct from U(1)_b (does not rephase C)
+[PASS] R2 Gamma_chi=(2/3)Jall-I is a REAL involution (Gamma^2=I, eigs {+1,-1,-1}); J_cs != Gamma_chi (chiral glue FALSE)
+       Gamma_chi's J = all-ones (J^2=3J, real); J_cs anti-Hermitian -> distinct types, commute but not equal -> the 'Gamma_chi=J_cs' bridge is a non-identity
+[PASS] R3 exp(theta J_cs)=SO(2) preserves the HS block 6*I (R^T g R=g, det R=1) -> preserves BOTH det_R and det_C measures
+       a complex structure is an automorphism of its real-plane Lebesgue measure AND the holomorphic volume -> J_cs CANNOT select det_C (MEASURE-NEUTRAL)
+[PASS] R4 [J_cs,H]=0 for the circulant family (operator-silent): J_cs moves no eigenvalue -> no spectral lever to fix the mode-count
+       operator-silence is consistent with J_cs being a field-space complex structure, but a silent structure cannot DEFINE the counting measure
+
+SCORECARD PASS=4 FAIL=0
+VERDICT (J-hunt round 1, wf_719da018): no_J -- det_R/Q=1 default stands. A STATIC complex structure
+(even the Schur-forced A1-native J_cs) is MEASURE-NEUTRAL: SO(2)=exp(theta J_cs) preserves both the
+flat-real (det_R) and holomorphic (det_C) measures, so it cannot select det_C. The chiral-import
+bridge via 'Gamma_chi=J_cs' is a FALSE identity (Gamma_chi=real involution from all-ones; J_cs=anti-
+Hermitian) -- circular. NEXT LEVER (round 2): a first-order (Dirac/Berezin) ACTION for the generation
+coefficient b, built from the genuine anti-Hermitian J_cs, would count b as ONE complex/Grassmann mode
+(det_C -> r=1/2) where a static J and a second-order Gaussian cannot. That first-order/Berezin
+structure = the fermionic frame = the sector's one import. The hunt continues there.

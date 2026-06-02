@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/koide_massive_doubling_reduces_to_transfer_positivity_2026_06_02.py
+runner_sha256: 9b081e104541c229f1555c71075bbdbe078c2d6caa7c2c3403a54be34e9b4bc2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+==========================================================================
+BLOCK 1  Cl(3,0)->Cl(3,1) doubling: C^2 -> C^4 Dirac algebra (e_4^2=-1)
+==========================================================================
+  PASS  Cl(3,0) {g1,g1}=2d on C^2
+  PASS  Cl(3,0) {g1,g2}=2d on C^2
+  PASS  Cl(3,0) {g1,g3}=2d on C^2
+  PASS  Cl(3,0) {g2,g1}=2d on C^2
+  PASS  Cl(3,0) {g2,g2}=2d on C^2
+  PASS  Cl(3,0) {g2,g3}=2d on C^2
+  PASS  Cl(3,0) {g3,g1}=2d on C^2
+  PASS  Cl(3,0) {g3,g2}=2d on C^2
+  PASS  Cl(3,0) {g3,g3}=2d on C^2
+  PASS  e_4^2 = -I (the unique real-matrix cell, epsilon=-1)
+  PASS  {E1, e_4} = 0
+  PASS  {E2, e_4} = 0
+  PASS  {E3, e_4} = 0
+  PASS  the 4 Cl(3,1) generators mutually anticommute
+  PASS  signature (3,1): E1,E2,E3 square +I, E4 squares -I
+  PASS  {alpha1,alpha1}=2d
+  PASS  {alpha1,alpha2}=2d
+  PASS  {alpha1,alpha3}=2d
+  PASS  {alpha2,alpha1}=2d
+  PASS  {alpha2,alpha2}=2d
+  PASS  {alpha2,alpha3}=2d
+  PASS  {alpha3,alpha1}=2d
+  PASS  {alpha3,alpha2}=2d
+  PASS  {alpha3,alpha3}=2d
+  PASS  {alpha1,beta}=0
+  PASS  {alpha2,beta}=0
+  PASS  {alpha3,beta}=0
+  PASS  beta^2 = I (mass coupling block-reflection)
+  PASS  e_4 = i gamma^0 (Dirac time generator from e_4; cl3_to_cl31 S7c)
+==========================================================================
+BLOCK 2  mass term couples BOTH chiralities; single qubit carries ONE
+==========================================================================
+  PASS  gamma5^2 = I (chirality involution on C^4)
+  PASS  [gamma5, alpha_i] = 0 (kinetic term preserves chirality)
+  PASS  {gamma5, beta} = 0  => mass term flips chirality (couples (1/2,0)<->(0,1/2))
+  PASS  mass beta is OFF-DIAGONAL in chirality (diag blocks ~ 0)
+  PASS  mass beta couples chirality blocks (offdiag blocks != 0)
+  PASS  C^2 pseudoscalar sigma1 sigma2 sigma3 = i I  (single chirality, e_-=0)
+==========================================================================
+BLOCK 3  Dirac Hamiltonian H_D=alpha.p+beta m is SIGN-INDEFINITE
+         => positive energy is a QUANTIZATION/TRANSFER choice, not algebra
+==========================================================================
+  PASS  H_D Hermitian for all (p,m)
+  PASS  spec(H_D) = {+E,+E,-E,-E}, E=sqrt(p^2+m^2) (rel. dispersion)
+  PASS  H_D has NEGATIVE-energy modes (sign-indefinite) even for m>0
+  PASS  m>0 GAPS spectrum (|E|>=m) but min eig = -m < 0 (no positivity from mass)
+==========================================================================
+BLOCK 4  THE REDUCTION: massive emergent-time field positive-energy
+         <=>  transfer operator T positive Hermitian  (Stone map)
+==========================================================================
+  PASS  massive field H_field = |H_D| >= 0 (Dirac-sea / normal-order quantization)
+  PASS  CONTRAST: bare indefinite H_D -> T_bare=exp(-a H_D) has eigenvalue > 1 (NOT a contraction; the -E modes blow up) -> positivity is a CHOICE
+  PASS  T = exp(-a H_field) positive Hermitian, spec in (0,1], for all m
+  PASS  Stone map Hhat=-(1/a)log(T/||T||) self-adjoint, Hhat>=0, E0=0 (= spectrum cond.)
+  PASS  OS reflected Gram M_ij=<b_i|T^{i+j}|b_j> PSD for all m (=> RP from pos. Herm. T)
+  PASS  CONTROL: non-positive Hermitian T' -> log(T') complex -> Hhat NOT self-adjoint
+  PASS  CONTROL: non-positive T' -> OS reflected functional <v|T'|v> = lambda_- < 0 (RP fails for the negative-energy vector)
+==========================================================================
+BLOCK 5  mass HELPS the gate (det weight > 0, energy floor monotone in m)
+==========================================================================
+  PASS  det(M_KS + m I) real & > 0 & >= m^(2k) for m>0 (retained staggered det positivity)
+  PASS  mass term m>0 FLOORS the fermion measure det >= m^(2k) (positivity enabler)
+  PASS  one-particle energy floor sqrt(|p|^2+m^2) monotone NON-decreasing in m
+==========================================================================
+BLOCK 6  non-circularity + Euclidean-sign control
+==========================================================================
+  PASS  forcing objects are finite c-number matrices, not field-CAR operators
+  PASS  Euclidean control: a square-+1 e_4 (epsilon=+1) is the M_2(H) cell, excluded by retained cl3_to_cl31's epsilon=-1 binary (not by this note)
+  PASS  massive (m>0) positive-energy piece reduces to the same finite T-positivity gate
+==========================================================================
+SCORECARD PASS=52 FAIL=0
+==========================================================================
+
+----- stderr -----
+

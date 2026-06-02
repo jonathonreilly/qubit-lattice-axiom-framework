@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/frontier_z_n_asymmetry_finite_vs_continuum_separation.py
+runner_sha256: c57c1081b36322f07a44c558e7c299df91253a8599b429f84980c79e5a3028a5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+
+========================================================================
+A. CORE: L_3(1,2)=2/9 is the finite Molien/Lefschetz weight (regular point, source-internal)
+========================================================================
+[PASS] L_3(1,2) = (1/N) sum_k det[(C^k-I)^{-1}|doublet] = 2/9 -- 0.2222222222
+[PASS] Molien P_k(t=1) reached at a REGULAR point (no continuum spectrum / no analytic continuation) -- nearest pole to t=1 at distance 1.7321 (= sqrt3)
+[PASS] (1/N) sum_k Molien P_k(1) = 2/9 (metric-free, monomial-counting; matches resolvent det) -- 0.2222222222
+
+========================================================================
+B. NUMBER-CLASS: 2/9 (Molien) != continuum spin-Dirac lens eta (0) != signature defect (-2/9)
+========================================================================
+[PASS] Molien / holomorphic-Lefschetz weight = +2/9 (the finite object) -- 0.222222
+[PASS] G-signature defect (cot-product) = -2/9 (a DIFFERENT invariant) -- -0.222222
+[PASS] spin-Dirac-type lens eta (csc-product) = 0 for weights (1,2) (NOT 2/9) -- 0.000000+0.000000j
+[PASS] exact relation: (N-1)/(4N) - (1/4)*sig_defect = 2/9 (ties Molien to signature defect) -- 1/6 - (1/4)(-2/9) = 0.222222
+[PASS] => 2/9 is the metric-free Lefschetz/Molien number; the continuum spin-Dirac APS eta is a DISTINCT comparator
+
+========================================================================
+C. ALGEBRAIC-INTEGER WALL: 2/9 is no index/spectral-flow; suspension index = integer 2
+========================================================================
+[PASS] 2/9 minimal polynomial is 9x-2 (non-monic over Z) -> 2/9 NOT an algebraic integer -- minpoly = 9*x - 2
+[PASS] => no index / equivariant-spectral-flow value (all in Z or Z[omega]) can equal 2/9
+[PASS] suspension index = spectral flow of H(s) across r=1 = the INTEGER 2 (doublet multiplicity) -- spectral flow = 2 (singlet never crosses; doublet pair crosses at r=1)
+[PASS] => the genuine continuum-in-emergent-time index is the integer 2; 2/9 only via 1/N group-average (= external fixed-point-map content)
+
+========================================================================
+D. FLAT-SUBSTRATE WITNESS: {eps,D}=0 -> bulk eta=0, yet eps is TRIVIAL on the hw=1 sector
+========================================================================
+[PASS] staggered D is anti-Hermitian (D^dag = -D)
+[PASS] {eps, D} = 0 (eps anticommutes with the staggered Dirac)
+[PASS] H=iD spectrum is +/- symmetric -> bulk signed count = 0 (index-0 wall holds on actual op) -- sum sign(lambda) = 0
+[PASS] eps = (pi,pi,pi) shift maps every hw=1 corner to an hw=2 corner (eps TRIVIAL on generation triplet) -- hw1 [(0, 0, 1), (0, 1, 0), (1, 0, 0)] -> [(1, 1, 0), (1, 0, 1), (0, 1, 1)] (all hw=2)
+[PASS] => the +/- pairing that zeroes the bulk does NOT act within hw=1: finite equivariant eta_C(H)=2 is unobstructed (eta != index genuinely evades the index-0 wall)
+[PASS] finite equivariant eta_C(H) on the generation triplet = 2 (nonzero) while bulk = 0 -- eta_C(r=1.5) = 2.0000+0.0000j
+
+========================================================================
+E. Disposition / non-circularity
+========================================================================
+[PASS] non-circular: r scanned; 2/9, r=1, integer-2 flow are OUTPUTS (never assumed)
+[PASS] CORE (clause 3) met finitely; continuum APS eta stays open as an external bridge -- Atiyah-Bott/Donnelly = external context only; NOT claimed discharged
+
+========================================================================
+RESULT
+========================================================================
+
+20/20 checks passed.
+Residual (1) finite-vs-continuum separation: L_3(1,2)=2/9 is the FINITE
+Molien/holomorphic-Lefschetz weight (source-internal, regular point), a DIFFERENT number from
+the continuum spin-Dirac lens-space eta (0) and the signature defect (-2/9). 2/9 is not an
+algebraic integer, so no index/spectral-flow reaches it (the genuine suspension index is the
+integer 2). The flat staggered Dirac has bulk signed count 0, yet eps is trivial on the hw=1
+generation sector, so the finite equivariant eta_C(H)=2 evades the index-0 wall. The
+operator->denominator core is met finitely; the continuum APS eta stays open as an external bridge
+(external context only). NOT a closure -- the next path is a curved/boundary source operator.
+
+----- stderr -----
+

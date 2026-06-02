@@ -2220,6 +2220,18 @@
       "dominant_class": null,
       "runner": "scripts/central_band_mass_window_summary.py"
     },
+    "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 14
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py"
+    },
     "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26": {
       "assert_count": 1,
       "counts": {
@@ -35489,6 +35501,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py": {
+      "assert_count": 1,
+      "claims": [
+        "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 14
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_charged_lepton_direct_ward_free_yukawa_no_go.py": {
       "assert_count": 1,
       "claims": [
@@ -60783,11 +60810,11 @@
       "A": 282,
       "B": 307,
       "C": 827,
-      "D": 318,
+      "D": 319,
       "none": 461
     },
-    "runners_classified": 2195,
+    "runners_classified": 2196,
     "runners_with_C": 1081,
-    "runners_with_D": 645
+    "runners_with_D": 646
   }
 }

@@ -3893,6 +3893,38 @@
       "to": "geometry_lane_head_to_head_note"
     },
     {
+      "from": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+    },
+    {
+      "from": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "to": "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24"
+    },
+    {
+      "from": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "to": "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24"
+    },
+    {
+      "from": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "to": "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25"
+    },
+    {
       "from": "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26",
       "to": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
     },
@@ -45710,6 +45742,27 @@
       "path": "docs/CENTRAL_BAND_MASS_WINDOW_NOTE.md",
       "runner_path": "scripts/central_band_mass_window_summary.py",
       "title": "Central-Band Mass Window Note"
+    },
+    "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30": {
+      "claim_id": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f717c16691d2da78f67431792a027d47f05ac43f49947f92d78c7135ad117406",
+      "path": "docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py",
+      "title": "Charged-Lepton Brannen-BAE Delta Tier-A Admission Bounded Theorem"
     },
     "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26": {
       "claim_id": "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26",
@@ -89649,7 +89702,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 781,
+      "bounded_theorem": 782,
       "decoration": 1,
       "meta": 201,
       "no_go": 93,
@@ -89658,7 +89711,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1182,
+      "bounded_theorem": 1183,
       "decoration": 1,
       "meta": 201,
       "no_go": 196,
@@ -89666,10 +89719,10 @@
       "open_gate": 134,
       "positive_theorem": 578
     },
-    "edge_count": 10149,
+    "edge_count": 10157,
     "leaf_count": 879,
-    "node_count": 2715,
+    "node_count": 2716,
     "root_count": 941,
-    "runners_with_path": 2300
+    "runners_with_path": 2301
   }
 }

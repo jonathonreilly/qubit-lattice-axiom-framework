@@ -38,8 +38,12 @@ standard form** — acting on its GNS / `L²(ℝ[Z₃], τ)` space with the cano
 This singles out the group-element ONB `{e, g, g²}`; the mass operator is the C₃-unbiased
 `H = a·e + b·(g+g²)`; and the `(1,2)` weight (one identity direction vs two non-identity directions)
 is the **forced dimension count of the carrier's canonical basis**, not a postulated measure.
-Equipartition `a²·1 = b²·2 → r=1/2` is then **inherited from what H is built on**, not selected from a
-fixed H. Every layered selection proposal must first postulate *both* the HS form *and* a scoring
+Equal Hilbert-Schmidt energy per isotypic channel — `a²·1 = b²·2 → r=1/2`, the channel-counting /
+`(1, N−1)` carrier-basis partition — is then **inherited from what H is built on**, not selected from a
+fixed H. (This is **not** thermodynamic equipartition, which is per-degree-of-freedom: genuine
+equipartition over the `{e, g, g²}` basis is `a²=b² → r=1 → Q=1`, the dimension/Plancherel weighting. So
+the channel-counting posit is carried by the carrier's canonical metric, not granted as an "obvious"
+equipartition.) Every layered selection proposal must first postulate *both* the HS form *and* a scoring
 functional; candidate revised Axiom 1 discharges both into one structural choice of carrier + canonical metric.
 
 **Why revise A1 rather than add A3:** A1 currently says "a qubit `M₂(ℂ)=Cl(3)_even` per site" but is

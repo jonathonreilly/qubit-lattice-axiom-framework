@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_records_reality_shrinks_import_to_sign.py
+runner_sha256: c2899eea4bafde459de52109c3fe1df7b1ebc0603c2862e7434a5c78bfcebc7f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.99
+status: ok
+----- stdout -----
+==========================================================================
+1. Prior branch-phase counterexample reproduces (complex z).
+==========================================================================
+  [PASS] counterexample is CPTP
+  [PASS] counterexample is unital (fixes I/2)
+  [PASS] counterexample persists the Z-record
+  [PASS] counterexample transfer NOT positive-Hermitian
+  [PASS] counterexample transfer has complex spectrum (branch phase)
+==========================================================================
+2. In the phase-twisted branch family, pointer-basis reality FORCES
+   the off-diagonal record multiplier z REAL -> kills U(1) phase.
+==========================================================================
+  [PASS] complex-z counterexample is NOT pointer-reality-even (excluded by reality)
+  [PASS] reality-even phase-symmetric samples give Hermitian transfer (phase killed)
+==========================================================================
+3. The tested real record-writing model buys HERMITICITY, not POSITIVITY:
+   H_int=sigma_z (x) sigma_x gives Hermitian transfer with a negative
+   eigenvalue for generic tested couplings. Residual = Z_2 SIGN.
+==========================================================================
+  [PASS] record-writing H_int is real symmetric (reality condition holds)
+  [PASS] tested real H_int gives a Hermitian (self-dual) transfer at sampled times
+  [PASS] tested real H_int gives a NON-positive transfer for some coupling time
+  [PASS] real H_int record blocks are NOT individually Hermitian (sign survives)
+==========================================================================
+4. POSITIVE-Hermitian transfer is supplied by stronger
+   detailed-balance / Hermitian examples, not by mere branch reality.
+==========================================================================
+  [PASS] Hermitian-Kraus (sigma_i) channels are self-dual AND positive
+  [PASS] Hermitian POVM sqrt(E_r) gives positive-Hermitian transfer
+==========================================================================
+5. Genericity sampling: Hermitian-Kraus / positive-Hermitian transfer
+   did not occur among random two-Kraus qubit channels -> special import.
+==========================================================================
+  over 4000 random two-Kraus qubit channels: Hermitian-Kraus=0, positive-T=0, self-dual-T=0
+  [PASS] Hermitian-Kraus absent in this random sample (special import, count==0)
+  [PASS] positive-Hermitian transfer absent in this random sample (count==0)
+==========================================================================
+6. The emergent-time single-clock-Stone construction CONSUMES
+   T-positivity (cannot force it): non-positive T -> no real generator.
+==========================================================================
+  [PASS] positive-Hermitian T -> Hermitian generator H=-log(T/||T||)
+  [PASS] non-positive transfer has a NEGATIVE eigenvalue (Stone hypothesis fails)
+  [PASS] non-positive transfer -> generator NOT Hermitian (construction can't run)
+  -> single_clock_stone ASSUMES 0 < spec(T) <= ||T|| (its stated
+     hypothesis); it derives H from T-positivity, it does not deliver it.
+     Using it to 'force' T-positivity is circular.
+
+==========================================================================
+SCORECARD PASS=18/18
+==========================================================================
+
+----- stderr -----
+

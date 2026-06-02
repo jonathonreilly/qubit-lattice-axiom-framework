@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/koide_tracial_standard_form_carrier_2026_06_02.py
+runner_sha256: c55e40ddcc1ceaac65ae6323f44177ead5d9c126083b3e1efef7704a852781da
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+[PASS] C1 GNS standard form: <Omega,pi(g^k)Omega>=tau(g^k); {e,g,g^2} ONB; Omega cyclic+separating
+       tracial GNS triple reproduces tau; Omega=e is the distinguished vacuum vector
+[PASS] C2 CRUX: (1,N-1) split=C.Omega(+)Omega^perp is (Omega,metric) data (no diag); cyclic vector
+       idempotent singlet line = democratic (1,1,1)/sqrt(N) != Omega=e, so the cyclic vector selects the GROUP-ELEMENT (1,N-1) partition; idempotent split needs the extra Fourier resolution
+[PASS] C3 HS arithmetic: ||I||^2=N,||J-I||^2=N(N-1),<.,.>=0; equal-channel-energy -> r=1/(N-1)=1/2
+       3a^2=6b^2 -> r=1/2; Brannen Q=(a**2 + 2*b**2)/(3*a**2)=1/3+(2/3)r -> Q=2/3 at r=1/2
+[PASS] C4 Aut(Z_N) fixes e, permutes {g,..,g^{N-1}} -> {e} unique singleton orbit; (1,N-1) canonical
+       Aut(Z_3) g->g^u, u in [1, 2]; identity is the unique order-1 element
+[PASS] C5 HONEST RESIDUAL: idempotent-power->17/2-6sqrt2~0.0147, per-mode->1 still expressible
+       standard form distinguishes the (1,N-1) SPLIT via Omega, but the SCORING choice channel-count(->1/2) vs basis-direction-count(->1) remains carried by the carrier
+[PASS] C6 falsifiable: r=1/(N-1) ties r=1/2 to derived n_gen=3 (N=2->1,3->1/2,4->1/3,6->1/5)
+       r={ 2:1, 3:1/2, 4:1/3, 6:1/5 }; Q(N=3)=1/3+(2/3)(1/2)=2/3
+[PASS] C7 Kahler 1*(a^2+4b^2)=2*(a^2+b^2) -> r=1/2 (distinct); Q=2/3<=>complex b(Dirac), Majorana off
+       complex b (Dirac/U(1)-gauged) -> Q=2/3; real b (Majorana, frozen phase) -> departs from 2/3
+[PASS] C8 r=1/2 interior COMMUTING point [H,S]=0 -> decoupled from chirality no-go
+       value lane introduces no chiral/anticommuting operator; comm(S) cap anticomm(Gamma_chi)={0}
+
+SCORECARD PASS=8 FAIL=0
+==============================================================================
+VERDICT (honest): the tracial standard form PRIVILEGES the (1,N-1) group-element
+partition over the idempotent partition -- the cyclic vector Omega=e sits on the
+identity line, while the idempotent singlet is the democratic line (1,1,1)/sqrt(N)
+!= Omega. So the carrier candidate STRENGTHENS the unaudited note: the fork is no
+longer symmetric ('rep theory ranks none'); the cyclic vector ranks the (1,N-1)
+split first. RESIDUAL that REMAINS: the SCORING rule on that split -- equal energy
+per CHANNEL (2 channels -> r=1/2) vs per basis DIRECTION (3 directions -> r=1,
+Plancherel) -- is still carried by the carrier, not forced by GNS alone. F1 is thus
+SUBSTANTIALLY RELOCATED (channel/(1,N-1) now canonically distinguished), not closed.
+This is a Tier-A candidate source, not a Tier-A admission or axiom-surface change.
+It forces r=1/2 only GIVEN the carrier input plus channel-counting scoring,
+not from the current framework baseline plus retained inventory.
+
+----- stderr -----
+

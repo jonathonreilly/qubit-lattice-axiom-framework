@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_adjoint_map_quotients_spinor_z2.py
+runner_sha256: 26a64cffe733faaf6e971099085893c3f98c1db472e1a19dcac6ea7af264691e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+============================================================================
+A. adjoint(z) = adjoint(-1) = I_3  ->  the adjoint map QUOTIENTS the spinor Z_2
+============================================================================
+[PASS] adjoint(-1) = I_3 (the central spinor element z=-1 maps to the IDENTITY rotation) -- z is in the kernel of SU(2)->SO(3); it is quotiented, not transported
+
+============================================================================
+B. q and -q give the IDENTICAL SO(3) rotation (the Z_2 is the kernel {+1,-1})
+============================================================================
+[PASS] adjoint(q) = adjoint(-q) for all unit q (2-to-1 double cover)
+[PASS] kernel of the adjoint map is EXACTLY {+1, -1} = the spinor Z_2 -- so the spinor Z_2 is precisely what the map kills
+
+============================================================================
+C. Gamma_chi lifts to q_gc; adjoint(q_gc)=Gamma_chi, q_gc^2 = -1 = z
+============================================================================
+[PASS] q_gc = (0,1,1,1)/sqrt3 is a pure UNIT quaternion (the pi-rotation about [1,1,1])
+[PASS] adjoint(q_gc) = Gamma_chi = 2 v v^T - I (eigenvalues +1,-1,-1)
+[PASS] q_gc^2 = -1 = z  (the pi-rotation's SQUARE is the spinor central element z) -- so z lives in C^2 as q_gc^2, but adjoint(q_gc^2)=adjoint(z)=I_3 on R^3
+
+============================================================================
+D. z acts -1 on the spin-1/2 (pseudoreal, FS=-1) but +1 on the spin-1 vector R^3 (real, FS=+1)
+============================================================================
+[PASS] z acts as -1 on the spin-1/2 module C^2 (z = -I_2)
+[PASS] z acts as +1 on the spin-1 / vector module R^3 (adjoint(z) = +I_3)
+[PASS] FS reality types: spin-1/2 pseudoreal (FS=-1, z=-1) vs spin-1 real (FS=+1, z=+1) -- the Gamma_chi sign partition lives on the spin-1 (real) module where z = +1 -> z cannot be the Gamma_chi sign
+
+============================================================================
+E. The two Z_2 are NOT the same object under the adjoint map
+============================================================================
+[PASS] the value-side Z_2 = Gamma_chi adjoint-eigenvalue sign {+1,-1,-1} on R^3 (NOT z, which is +1 there) -- records-side Z_2 (z=-1 on C^2) and value-side Z_2 (Gamma_chi sign on C^3) are DIFFERENT objects under adjoint
+
+============================================================================
+F. Generalization: rotation-equivariant quaternion-to-vector candidates factor through SO(3), killing z
+============================================================================
+[PASS] rotation-equivariant quaternion-to-vector candidates factor through SO(3)=H*/{+-1} -> structurally kill z -- carrying z nontrivially onto R^3 needs a NON-equivariant frame-dependent axis<->[111] glue = a posited import
+
+============================================================================
+G. Consistency with BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN (z central, +1 on non-spinorial reps)
+============================================================================
+[PASS] z is central in SU(2) and acts +1 on every non-spinorial (integer-spin / vector) rep -- consistent with binary_octahedral (retained_bounded): the on-site spinor sign is decoupled from the rest
+
+============================================================================
+RESULT
+============================================================================
+
+12/12 checks passed.
+The natural (Bloch/Hopf/adjoint) spinor->vector map q|->q v q^{-1} QUOTIENTS the spinor Z_2: its
+kernel is exactly {+1,-1}, so adjoint(z)=adjoint(-1)=I_3. z acts -1 on the spin-1/2 (pseudoreal) C^2
+but +1 on the spin-1 (real) R^3 where the Gamma_chi sign partition lives -- so the records-side spinor
+Z_2 and the value-side Gamma_chi Z_2 are NOT the same object under the adjoint map. Gamma_chi lifts to
+q_gc=(0,1,1,1)/sqrt3 with q_gc^2=-1=z, so z appears in C^2 as q_gc^2 but is invisible (=I_3) on R^3.
+Generalization: rotation-equivariant quaternion-to-vector candidates factor through SO(3)=H*/{+-1}, killing z;
+carrying z requires a NON-equivariant frame-dependent axis<->[111] identification (a posited import).
+CLASSIFICATION: open import/residual. NEXT PATH: non-equivariant glues / left-multiplication on H stay
+C^2-internal (do not reach R^3) -- not a closure of the bridge.
+
+----- stderr -----
+

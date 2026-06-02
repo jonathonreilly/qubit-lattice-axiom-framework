@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_faithfulness_rotation_scalar_excluded.py
+runner_sha256: a0212c337b5fef3f088c6bb2cdb4831d1158ae4ba0bbb1330a8faf22d054311c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+
+========================================================================
+A. Merger gives the SPATIAL Spin(3) action: U(R)=exp(i th.S) conjugates sigma as R sigma
+========================================================================
+[PASS] U(R)=exp(i th S_z) conjugates sigma_1 as cos(th) sigma_1 - sin(th) sigma_2 (SPATIAL SO(3) action) -- merger: J_i = sigma_i/2 are the spatial-rotation generators on the OPERATOR FRAME
+
+========================================================================
+B. K=0 FORBIDDEN given J=sigma/2 -- in BOTH so(3,1) and so(4) (signature-INDEPENDENT)
+========================================================================
+[PASS] K=0 FAILS [K,K]=-i eps J (so(3,1)) given J=sigma/2 != 0
+[PASS] K=0 FAILS [K,K]=+i eps J (so(4)) given J=sigma/2 != 0 -- => the inert spatial-rotation scalar K=0 is excluded by J!=0 alone, INDEPENDENT of the signature
+
+========================================================================
+C. Completions of J=sigma/2: so(3,1) -> K=+/-i sigma/2 (Weyl); so(4) -> K=+/-sigma/2 (Herm); no K=0
+========================================================================
+[PASS] so(3,1): K=+i sigma/2 and K=-i sigma/2 both close (the two faithful Weyl chiralities)
+[PASS] so(4): K=+sigma/2 and K=-sigma/2 both close (Hermitian 4th rotation)
+[PASS] the {J,K=i sigma/2} image is 6-real-dim (faithful Weyl; K = the merger bivector B_i)
+
+========================================================================
+D. The signature selects only K-FLAVOR (boost vs 4th-rotation), NOT K=0-vs-K!=0
+========================================================================
+[PASS] eps=e_4^2=-1 -> anti-Hermitian K (boost); eps=+1 -> Hermitian K (so(4) 4th rotation); both K!=0 -- the K=0 exclusion is signature-FREE; the signature only picks the FLAVOR of the forced nonzero K
+
+========================================================================
+E. HONEST residual: excludes the SPATIAL-rotation scalar (J=0 on the algebra), NOT the matter scalar
+========================================================================
+[PASS] clean fragment = the inert SPATIAL-rotation scalar (J=0 on the on-site C^2 algebra) is EXCLUDED, signature-free -- via merger J=sigma/2 + per_site spin-half + the so-bracket K=0 failure
+[PASS] RESIDUAL is the MATTER-ATTACHMENT pin (upstream, signature-independent): merger is OPERATOR-FRAME only -- per_site_su2_spin_half disclaims attaching J=sigma/2 to the matter FIELD index -> matter could be J=0 at the field level
+[PASS] faithfulness does NOT collapse to the (3,1) signature alone: matter-attachment + signature + carrier-id stack -- the dominant residual is the matter-attachment pin, NOT the signature
+
+========================================================================
+RESULT
+========================================================================
+
+10/10 checks passed.
+CLEAN FRAGMENT (signature-free bounded algebra): the inert SPATIAL-rotation scalar (J=0 on the on-site
+C^2 algebra) is EXCLUDED -- merger J=sigma/2 (the spatial Spin(3) action) + the so-bracket fact that
+K=0 fails [K,K]=-i eps J in BOTH so(3,1) and so(4). The so(3,1) completions are exactly the two faithful
+Weyl chiralities K=+/-i sigma/2; the signature selects only the FLAVOR (boost vs 4th rotation), not
+K=0-vs-K!=0. BUT the full faithfulness VALUE does NOT collapse to the signature: the dominant residual
+is an UPSTREAM MATTER-ATTACHMENT pin (matter field index = the C^2 spinor under spatial rotations),
+which the merger -- operator-frame only -- does NOT supply (per_site disclaims it). NOT a closure.
+
+----- stderr -----
+

@@ -15861,6 +15861,38 @@
       "to": "koide_full_lattice_schur_inheritance_note_2026-04-18"
     },
     {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "gauge_wilson_isotropy_boundary_note_2026-05-04"
+    },
+    {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "q_integer_spectrum_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "to": "fermion_parity_z2_grading_theorem_note_2026-05-02"
+    },
+    {
       "from": "koide_circulant_character_bridge_note_2026-04-18",
       "to": "charged_lepton_koide_cone_algebraic_equivalence_note"
     },
@@ -15965,6 +15997,26 @@
       "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
     },
     {
+      "from": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+      "to": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+      "to": "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_full_lattice_schur_inheritance_note_2026-04-18",
       "to": "site_phase_cube_shift_intertwiner_note"
     },
@@ -16061,6 +16113,50 @@
       "to": "lattice_physical_matching_cluster_obstruction_note_2026-05-02"
     },
     {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "lorentz_boost_covariance_3plus1d_theorem_note"
+    },
+    {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28"
+    },
+    {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+    },
+    {
+      "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "to": "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "to": "fermion_parity_z2_grading_theorem_note_2026-05-02"
+    },
+    {
       "from": "koide_microscopic_scalar_selector_target_note_2026-04-18",
       "to": "koide_dweh_cyclic_compression_note_2026-04-18"
     },
@@ -16133,6 +16229,26 @@
       "to": "koide_circulant_character_derivation_note_2026-04-18"
     },
     {
+      "from": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
+      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
+      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
+      "to": "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_oplocality_brannen_plancherel_callan_harvey_honest_residual_composition_note_2026-05-25",
       "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
     },
@@ -16159,6 +16275,30 @@
     {
       "from": "koide_oplocality_brannen_plancherel_callan_harvey_honest_residual_composition_note_2026-05-25",
       "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+    },
+    {
+      "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "to": "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "to": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "to": "free_dirac_poincare_representation_bounded_note_2026-05-30"
+    },
+    {
+      "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
     },
     {
       "from": "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23",
@@ -63167,6 +63307,27 @@
       "runner_path": "scripts/frontier_koide_c3_singlet_extension_reduction_theorem.py",
       "title": "Koide `C_3` Singlet-Extension Reduction Theorem"
     },
+    "koide_carrier_locus_decomposition_note_2026-06-01": {
+      "claim_id": "koide_carrier_locus_decomposition_note_2026-06-01",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "gauge_wilson_isotropy_boundary_note_2026-05-04",
+        "q_integer_spectrum_theorem_note_2026-05-02",
+        "fermion_parity_z2_grading_theorem_note_2026-05-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5bbb070e0a20b93d85bc19e183002264b3ef8b0f2417890243f6cc2d0a042d42",
+      "path": "docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md",
+      "runner_path": "scripts/frontier_koide_carrier_locus_decomposition.py",
+      "title": "Carrier-Locus Decomposition: matter operator import localized; Hamming-weight-1 locus labels are native"
+    },
     "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": {
       "claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
       "claim_type_author_hint": "positive_theorem",
@@ -63480,6 +63641,24 @@
       "runner_path": "scripts/frontier_koide_eta_lefschetz_spectral_flow.py",
       "title": "Koide Lane Explicit Calculations"
     },
+    "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01": {
+      "claim_id": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "cd01f0ee9f0a0711c091d3b32f5d65386eaf20c037bd48abf7961c3cfec13b03",
+      "path": "docs/KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md",
+      "runner_path": "scripts/frontier_koide_faithfulness_rotation_scalar_excluded.py",
+      "title": "Faithfulness via Matter-Operator Spin Content: spatial-rotation scalar excluded; matter attachment remains open"
+    },
     "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": {
       "claim_id": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
       "claim_type_author_hint": "no_go",
@@ -63728,6 +63907,43 @@
       "runner_path": "scripts/frontier_koide_lightcone_primitive.py",
       "title": "Koide Lightcone Primitive \u2014 Operator-Level Equivalent of NSC"
     },
+    "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02": {
+      "claim_id": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "lorentz_boost_covariance_3plus1d_theorem_note",
+        "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ecd9ff5b7d1974cdbb9134dc0271659cc6f329d7a0710a526053a234feeb1bd5",
+      "path": "docs/KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_matter_attachment_graded_statistics_gate.py",
+      "title": "Matter-Attachment Reduces to the Cross-Site Graded-Statistics Gate"
+    },
+    "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02": {
+      "claim_id": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "fermion_parity_z2_grading_theorem_note_2026-05-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8237c13bdb3322ee63fca2ce3be4d996e08da96187e933c5714387bd0031f7c3",
+      "path": "docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_matter_attachment_reduces_to_ks.py",
+      "title": "Matter-Attachment Reduces to the Kawamoto-Smit Audit"
+    },
     "koide_microscopic_scalar_selector_target_note_2026-04-18": {
       "claim_id": "koide_microscopic_scalar_selector_target_note_2026-04-18",
       "claim_type_author_hint": null,
@@ -63874,6 +64090,24 @@
       "runner_path": "scripts/frontier_koide_one_scalar_obstruction_triangulation.py",
       "title": "Koide One-Scalar Obstruction Triangulation Theorem"
     },
+    "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01": {
+      "claim_id": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "fc4ac3641091bed9f8393e05cb547f8a2a30f41c4de12db8771069436094b95a",
+      "path": "docs/KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md",
+      "runner_path": "scripts/frontier_koide_onsite_weyl_boost_from_bivectors.py",
+      "title": "On-Site Weyl-Boost Generator Algebra From Single-Site Bivectors"
+    },
     "koide_oplocality_brannen_plancherel_callan_harvey_honest_residual_composition_note_2026-05-25": {
       "claim_id": "koide_oplocality_brannen_plancherel_callan_harvey_honest_residual_composition_note_2026-05-25",
       "claim_type_author_hint": "open_gate",
@@ -63905,6 +64139,25 @@
       "path": "docs/KOIDE_ORDER_ONE_CIRCULANT_DIAGNOSTIC_NOTE_2026-05-29.md",
       "runner_path": "scripts/frontier_koide_order_one_circulant_diagnostic_2026_05_29.py",
       "title": "Koide Order-One Circulant Diagnostic"
+    },
+    "koide_p1_collapses_frame_residuals_note_2026-06-01": {
+      "claim_id": "koide_p1_collapses_frame_residuals_note_2026-06-01",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "free_dirac_poincare_representation_bounded_note_2026-05-30",
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "3b083a1f0702425e3c05a67a3169cfa5c61be337efc67f543770f9be44317241",
+      "path": "docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md",
+      "runner_path": "scripts/frontier_koide_p1_collapses_frame_residuals.py",
+      "title": "Microcausality/Reflection-Positivity Localizes Carrier-Frame Residuals Without Forcing Faithfulness"
     },
     "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20": {
       "claim_id": "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20",
@@ -89745,7 +89998,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 783,
+      "bounded_theorem": 789,
       "decoration": 1,
       "meta": 201,
       "no_go": 93,
@@ -89754,7 +90007,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1184,
+      "bounded_theorem": 1190,
       "decoration": 1,
       "meta": 201,
       "no_go": 196,
@@ -89762,10 +90015,10 @@
       "open_gate": 134,
       "positive_theorem": 578
     },
-    "edge_count": 10163,
-    "leaf_count": 879,
-    "node_count": 2717,
+    "edge_count": 10198,
+    "leaf_count": 881,
+    "node_count": 2723,
     "root_count": 941,
-    "runners_with_path": 2302
+    "runners_with_path": 2308
   }
 }

@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_p1_collapses_frame_residuals.py
+runner_sha256: 0631d5da37de778a0a3e662d428693fc7a8926ad09fff74fcaa7b92af2be9a74
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+
+========================================================================
+A. CONDITIONAL COLLAPSE: faithful spin-1/2 + Bose = unbounded below; CAR bounded
+========================================================================
+[PASS] Bose-quantizing the spin-1/2 negative-energy mode is UNBOUNDED BELOW (min H -> -inf with occupation cap) -- min H_Bose at caps [1,10,100,1000] = [-1.0, -10.0, -100.0, -1000.0]
+[PASS] CAR (antiparticle) is BOUNDED: normal-ordered H >= 0, vacuum 0 -- => CAR is the unique positive-energy quantization of the faithful spin-1/2 rep
+[PASS] => statistics follows from a faithful spin-1/2 Weyl rep: two frame posits conditionally collapse to ONE -- statistics is the CONCLUSION, not an input -> non-circular
+
+========================================================================
+B. TIER: current retained inputs do NOT exclude the hard-core boson (cardinality is blind)
+========================================================================
+[PASS] single-site fermion c and hard-core boson b are the SAME 2x2 matrix (sigma_+); b^2 = c^2 = 0
+[PASS] FREE/soft CCR boson [a,a^dag]=I needs infinite dim: Tr[a,a^dag]=0 != Tr(I)=D (cardinality core) -- Tr[b,b^dag] = 0.0 != D = 2 -> [b,b^dag] != I -> hard-core boson EVADES the cardinality argument
+[PASS] on a single site c and b are indistinguishable -> the cardinality criterion is BLIND to the hard-core boson -- {c,c^dag}=I and [b,b^dag]=diag(1,-1) are BOTH true of sigma_+ -> the exchange sign is the cross-site POSIT
+
+========================================================================
+C. The scalar (J=K=0) is admitted (RP + microcausal + positive-energy)
+========================================================================
+[PASS] scalar positive-energy: omega_k = sqrt(k^2+m^2) > 0 for all k
+[PASS] scalar reflection-positivity: OS-reflected KG kernel M_ij = e^{-m(tau_i+tau_j)}/2m is PSD -- min eig = -4.51e-17
+[PASS] => the free scalar is the canonical RP theory; the constraint admits it -> faithfulness not forced -- faithful-Weyl-over-scalar survives as the lone irreducible frame posit
+
+========================================================================
+D. Honest relabel: NN bilinear SPECTRUM identical across frames (JW unitary) -- not an LR-byte claim
+========================================================================
+[PASS] NN bilinear has IDENTICAL spectrum in the fermion (JW-string) and hard-core-boson frames -- they differ only by the JW-string unitary -> bounded-local microcausality cannot reach the field-bracket exchange sign
+
+========================================================================
+RESULT
+========================================================================
+
+10/10 checks passed.
+The constraint conditionally reduces the two carrier-frame residuals (faithfulness + statistics) to ONE
+MODULO auditing the spin-statistics/OS step: faithful spin-1/2 + Bose =
+unbounded below; CAR unique), but the cardinality core is BLIND to the hard-core boson and the carrier
+forcing rides unaudited rows -> on retained-only tier TWO posits survive. It does NOT force faithfulness (the
+trivial scalar is RP + microcausal + positive-energy, admitted) -> NEVER zero. Single auditable
+frontier = faithful-Weyl-over-scalar, untouched by this constraint, to be pursued through M's own spin content.
+
+----- stderr -----
+

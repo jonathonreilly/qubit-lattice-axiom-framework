@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_matter_attachment_graded_statistics_gate.py
+runner_sha256: c2209344669ca0491374dca2f4a25570013ca7aac6f53a6203b9fe7ea78fa060
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+
+==========================================================================
+(1) SELECTION crux: spin-blind W(R) is an UNTWISTED octahedral rep; spin lift U(R) is PROJECTIVE
+==========================================================================
+[PASS] spin-blind sign-field compensator W(R) exists & V(R)=P_R W(R) commutes with D0 for ALL 24 rotations -- the native D's rotation symmetry is restored by a single-component +-1 field (no C^2 index)
+[PASS] V(R1)V(R2) = +V(R1 R2) for ALL 576 pairs -> spin-blind compensator is an UNTWISTED (honest linear) O-rep -- distinct global signs over 576 pairs = [1] (trivial Z_2 cocycle)
+[PASS] genuine spin lift U(R) is PROJECTIVE: a nonzero fraction of pairs need the 2pi=-1 sign (2O cocycle) -- 208/576 pairs close with -1 -> nontrivial double-cover cocycle (vs 0 for the W-rep)
+[PASS] D's covariance is SIGN-BLIND to the cover: U and -U give the SAME adjoint U sigma_i U^dag -- => rotation-rep closure does NOT force the spinor lift over the spin-blind spectator reading
+
+==========================================================================
+(2) BOOST lever: a single-component SCALAR 2-point function is SO(3,1)-covariant (no spinor)
+==========================================================================
+[PASS] scalar 2-point G(p)=1/(p^2+m^2) is invariant under 200 random SO(4) transforms (covariant, NO spinor) -- the spinor law S G(p) S^-1 = G(Lambda p) needs an ALREADY-spinor field; covariance does not create the index
+
+==========================================================================
+(3) STATISTICS: native qubit is HARD-CORE-BOSONIC (cross-site ladders COMMUTE)
+==========================================================================
+[PASS] cross-site qubit ladders sigma_+^(0), sigma_+^(1) COMMUTE (not anticommute) -> hard-core boson, not fermion -- the fermionic (CAR) frame is a Jordan-Wigner relabel = a frame CHOICE
+
+==========================================================================
+(4) CONVERGENCE: on-site 2pi=-1 spinor sign EXISTS on C^2 but is DECOUPLED from cross-site exchange
+==========================================================================
+[PASS] on-site: a 180-deg spin lift squares to -I on the qubit C^2 (the 2pi=-1 spinor sign lives natively) -- binary_octahedral_discrete_spinor_sign: 2O acts as -1 on the faithful 2-dim irrep
+[PASS] but D's spatial covariance factors through O (sees +1 on the cover) -> the -1 sign is decoupled from what D sees -- the discriminator privileging the spinor-ket reading is GRADED LOCALITY, not single-site covariance
+
+==========================================================================
+DISPOSITION
+==========================================================================
+[PASS] matter-attachment is admitted-not-forced by every single-site covariance/selection lever -- reduces to ONE cross-site gate: does the one-qubit operator algebra on Z^3 force graded/CAR statistics over the native hard-core boson?
+[PASS] that gate = the FS / staggered-statistics retained no-gos, and the same gate as generation-ID chirality -- Route-A localizes it as the identification Space2(matter field index)=Space1(qubit C^2), an OPEN GATE
+
+==========================================================================
+RESULT
+==========================================================================
+
+10/10 checks passed.
+Four independent levers on the matter-attachment converge: NONE forces the per-site C^2 STATE into the
+j=1/2 spinor rep. Common root -- D's spatial covariance factors through SO(3)~O and is blind to the
+SU(2) cover, so the native on-site 2pi=-1 spinor sign is decoupled from everything D's covariance
+sees. The spin-blind compensator W(R) is an HONEST untwisted O-rep (trivial cocycle); the spin lift
+U(R) is projective; both are D-covariant. So rotation/boost covariance and rep-closure cannot select
+the spinor. The matter-attachment reduces to the CROSS-SITE GRADED-STATISTICS gate (hard-core boson
+vs CAR), = the retained no-gos, = the open Space2=Space1 identification. Next: graded-locality /
+discrete graph-braid pi_1 coupling the on-site 2O sign to a cross-site exchange.
+
+----- stderr -----
+

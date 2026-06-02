@@ -1,0 +1,39 @@
+========================================================================
+PART A  Bogoliubov + IR-sum sanity exhibits
+========================================================================
+
+[PASS] A.1.bogoliubov.finite_inequality_holds  (|<[C,A]>|^2=0.0000 <= 1.9629)
+[PASS] A.2.IR_sum.d=1.diverges  (I_1(8)=0.6562, I_1(16)=1.3281)
+[PASS] A.2.IR_sum.d=2.diverges  (I_2(8)=0.3793, I_2(16)=0.4899)
+[PASS] A.2.IR_sum.d=3.finite  (I_3(8)=0.2246, I_3(16)=0.2386)
+
+========================================================================
+PART B  Scope-narrowing class-A inline lemmas
+========================================================================
+
+[PASS] B.NS-W1.1.ledger.bogoliubov_retained_bounded_excludes_no_SSB  (status='retained_bounded')
+[PASS] B.NS-W1.2.non_claim.cmw_disclaims_no_SSB  (Non-Claims block contains the d<=2 no-SSB disclaimer)
+[PASS] B.NS-W1.3.conditional_form.NS_W1_H_Ward_norm_clause  (present: True)
+[PASS] B.NS-W2.1.ledger_scope.noether_retained_bounded_with_bounded_scope  (status='retained_bounded')
+[PASS] B.NS-W2.2.text_scope_gap.parent_generic_exceeds_upstream_specific  (parent_generic + upstream_specific: True)
+[PASS] B.NS-W2.3.narrowed_form.NS_W2_generator_and_carrier_restriction  (all tokens present: True)
+
+========================================================================
+PART C  No-Go discipline gate
+========================================================================
+
+[PASS] C.no_go.N1.route1.Bogoliubov_import_bounded_not_no_SSB  (status='retained_bounded')
+[PASS] C.no_go.N1.route2.CMW_IR_sum_explicit_no_SSB_disclaimer  (Non-Claims contains the disclaimer)
+[PASS] C.no_go.N1.route3.no_retained_general_no_SSB_on_main  (ledger scan negative)
+[PASS] C.no_go.N1.route4.no_retained_general_lattice_noether_on_main  (ledger scan negative)
+[PASS] C.no_go.N3.honest_residual_label.H_Ward_norm_named_conditional  (present: True)
+[PASS] C.no_go.N4.no_substrate_overreach.d_in_1_2_and_conditional  (present: True)
+[PASS] C.no_go.N5.no_generator_overreach.NS_W2_a_b_only  (present: True)
+
+========================================================================
+SUMMARY
+========================================================================
+  PASS: 17
+  FAIL: 0
+
+WIGNER_MODE_LOW_D_NO_SSB_NARROW_SCOPE_COMPANION_VERIFIER=PASS

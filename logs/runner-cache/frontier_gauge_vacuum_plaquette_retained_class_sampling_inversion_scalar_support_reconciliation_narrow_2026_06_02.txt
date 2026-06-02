@@ -1,0 +1,46 @@
+========================================================================================
+GAUGE-VACUUM PLAQUETTE RETAINED CLASS-SAMPLING INVERSION
+   SCALAR-SUPPORT RECONCILIATION COMPANION (RUNNER ARTIFACT REPAIR)
+========================================================================================
+
+Retained witness sector weights = [(0, 0), (1, 0), (0, 1), (1, 1)]
+Witness coefficients            = [1.   0.37 0.37 0.16]
+|det E|=1.129386e+02  cond(E)=2.150197e+02  recovery err=5.786e-16
+rank(E_3)=3  null_resid=5.929e-15  3-sample gap=1.777e-15  4-sample gap=2.008e-02
+
+(A) Parent inversion algebra reproduction on the restricted packet
+  [PASS] (A1) Evaluation matrix shape matches retained sector size
+         shape(E)=(4, 4)
+  [PASS] (A2) Generic full sample set is invertible on the witness sector
+         |det E|=1.129e+02, cond(E)=2.150e+02
+  [PASS] (A3) Retained coefficient vector recovered exactly from full-rank samples
+         max recovery error=5.786e-16
+  [PASS] (A4) Too few retained samples leave the system underdetermined
+         rank(E_3)=3, null residual=5.929e-15
+  [PASS] (A5) A null direction invisible to three samples becomes visible at four
+         3-sample gap=1.777e-15, 4-sample gap=2.008e-02
+
+(B) Post-2026-05-29 repaired-phrase presence in the scalar-value note
+  [PASS] (B1, R1, Status) 'one scalar value does not determine' present
+  [PASS] (B2, R2, Formal No-Go) 'a single scalar constraint does not determine' present
+  [PASS] (B3, R3, What This Closes) 'a scalar plaquette value alone cannot be treated as full class-sector data' present
+
+(C) Stale parent-runner substring absence in repaired scalar-value note
+  [PASS] (C1) Stale substring S0 is absent from the repaired scalar-value note (reproduces the auditor's runner_artifact_issue under restricted packet)
+         substring: 'one scalar framework-point value does not determine the class-sector vector'
+
+(D) Sibling-authority phrases on origin/main
+  [PASS] (D1) Compressed rim-evaluation: Z_beta^env(W)=<K(W),v_beta> + beta-dependent v_beta
+  [PASS] (D2) Compressed rim-functional uniqueness: universal + unique on retained left boundary functional
+
+(E) Hostile-audit invariants
+  [PASS] (E1) Parent note header unchanged
+         sha256(parent note)=3e1022db32082337de6478fe897cdfce5f77be7b075e3aa166a481d5d56b2909
+  [PASS] (E2) Parent runner unchanged: stale S0 still in parent runner source
+         sha256(parent runner)=47edfb6c99326fe19a417b43935227d32c2d6a135034092f9635894efa843b63
+  [PASS] (E3) Repaired scalar-value note unchanged: 2026-05-29 repair marker present
+         sha256(scalar note)=3eb463aa278f5f6835aaf80c5ae412a5c3278d22ae777940b5a11ffd9c71ce6c
+
+Reconciliation: R2 ('a single scalar constraint does not determine an N>=3 positive normalized vector') is exactly the assertion the inversion runner consumes from S0 ('one scalar framework-point value does not determine the class-sector vector') on the retained restricted surface (N=4>=3 in the witness sector). R1 (Status-line form) and R3 (plaquette-language form) restate R2; companion-note Lemma proves the equivalence.
+
+PASS=14 FAIL=0

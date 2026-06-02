@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cluster_decomposition_parent_eq8_repair_narrow_verifier.py
+runner_sha256: 7d496ccac2305f9c69ab370f9f063170b6315a81f24e79dcbee2557cb4737c66
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+
+=== Cluster decomposition parent eq (8) repair + NS J* correction ===
+
+Scope: bounded_theorem shipping two narrow repairs for the
+       audited_conditional parent (eq (8) deletion + J* correction).
+       Does NOT modify parent text. Does NOT claim parent status lifts.
+
+[PASS] A.eq8.ex1.lhs_nonzero: connected variance <A^2> - <A>^2 = 1 (nonzero)  (LHS = 1.000000)
+[PASS] A.eq8.ex1.rhs_zero: RHS integral of commutator vanishes (H = 0, A = B)  (RHS = -0.00e+00)
+[PASS] A.eq8.ex1.gap: parent eq (8) FAILS — LHS != RHS by a finite gap  (|LHS - RHS| = 1.000000)
+[PASS] A.eq8.ex2.lhs_nonzero: nontrivial connected variance in thermal state  (LHS = 1.000000 (sigma_z variance under H = sigma_x at beta = 0.5))
+[PASS] A.eq8.ex2.equality_fails: parent's eq (8) prediction LHS = RHS fails (quantitative gap)  (LHS=1.0000, RHS=-0.2510, gap=1.2510)
+[PASS] B.case1.NN_chain.J_le_J_star: J_singular <= J_star always  (J_singular=1.0000, J_star=2.0000)
+[PASS] B.case1.NN_chain.strict: J_singular < J_star strictly (interior sites touched by 2 terms)  (gap = 1.0000)
+[PASS] B.case1.NN_chain.factor_2: J_star = 2 * J_singular on NN chain  (J_star / J_singular = 2.0000 (expected 2.0))
+[PASS] B.case2.isolated.equality: J_singular == J_star when each site touched by exactly 1 term  (J_singular=1.0000, J_star=1.0000, max_count=1)
+[PASS] B.case3.star4.center_touched_by_4: max per-site term count = 4 at center  (max_count = 4)
+[PASS] B.case3.star4.factor_4: J_star = 4 * J_singular on 4-link star  (J_star / J_singular = 4.0000 (expected 4.0))
+[PASS] B.case4.Z3_neighborhood.J_singular: max ||h_X|| = 1.5 (strongest link)  (J_singular = 1.5000)
+[PASS] B.case4.Z3_neighborhood.J_star_sum: J* sums over all 6 terms at site 0  (J_star = 6.5000 (expected 6.5 = 5*1.0 + 1*1.5))
+[PASS] B.case4.Z3_neighborhood.ratio: J_star / J_singular ~ Z_lat scaling  (J_star / J_singular = 4.3333 (parent's v_LR off by this factor))
+[PASS] B.case5.duhamel.NS_bound_correct: ||[H,A]|| <= 2 ||A|| * Sum_{X∋site} ||h_X||  (||[H,A]||=2.0000, NS bound=2.0000)
+[PASS] C.cited.AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_202: audited_conditional parent present on origin/main  (verified via git ls-tree)
+[PASS] C.cited.CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_: spatial slab bridge (L2 routing target) present on origin/main  (verified via git ls-tree)
+[PASS] C.cited.CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE: temporal mass-gap bridge (alt routing) present on origin/main  (verified via git ls-tree)
+[PASS] C.no_parent_modification  (narrow companion only; parent text untouched)
+[PASS] C.no_status_lift_claim  (lift requires (a-eq8)=this + axis-permutation companion + composition re-audit)
+[PASS] C.no_axiom  (uses the parent's baseline one-qubit/Z^3 setup; R-A is deletion, R-B is constant correction)
+[PASS] C.no_import  (Hastings-Koma 2006 + Nachtergaele-Sims 2010 are sidecar context only)
+[PASS] C.no_no_go_weakening  (neither repair touches any no_go row)
+[PASS] C.no_thermo_limit  (finite-Lambda only, inherits from parent)
+[PASS] C.no_yang_mills_claim  (Clay problem is continuum infinite-volume; this is finite-Lambda)
+[PASS] C.textbook_proved_inline  (Part B builds explicit Hamiltonians and verifies J <= J* strict)
+[PASS] C.eq8_falsified_numerically  (Part A: H=0, A=B=sigma_z, LHS=1 vs RHS=0, gap 1.0)
+
+PASS=27  FAIL=0
+
+All eq (8) repair + J* correction checks PASSED.
+Audit lane decides status; this runner proposes no effective status.
+
+----- stderr -----
+

@@ -329,12 +329,16 @@ response.
 The proposal keeps the basic controls clean in the finite harness:
 
 ```text
-Born I3, chi=+ sector: +1.794e-43
-Born I3, chi=- sector: +1.794e-43
-max norm drift: 2.887e-15
+Born I3, chi=+ sector: +5.381e-43
+Born I3, chi=- sector: +5.381e-43
+max norm drift: 3.331e-15
 same-point +/- q_bare sum: 0
 same-point +/- inertial mass sum: positive
 ```
+
+The 2026-06-03 cache refresh only synchronizes these displayed control
+numbers with the current runner. It does not change the open-gate status or
+derive the missing `S_int = - chi_eta M_phys <rho, Phi>` source term.
 
 The branch sign does not alter Born linearity, unitary norm preservation, or
 positive inertial mass in the fixed-sector harness.

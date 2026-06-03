@@ -81,6 +81,14 @@ def main() -> int:
     check("original harness remains conditional", "CONDITIONAL_CANDIDATE" in output)
     check("original harness states new source-action premise", "new source-action premise" in output)
     check("original harness does not derive origin", "derive this APS-locked source action" in output)
+    check(
+        "note displayed Born/norm controls match current harness",
+        "Born I3, chi=+ sector: +5.381e-43" in note
+        and "Born I3, chi=- sector: +5.381e-43" in note
+        and "max norm drift: 3.331e-15" in note
+        and "I3=+5.381e-43" in output
+        and "max drift=3.331e-15" in output,
+    )
 
     print()
     print("Summary")

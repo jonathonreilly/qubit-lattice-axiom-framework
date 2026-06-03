@@ -3,7 +3,7 @@ runner: scripts/signed_gravity_aps_locked_source_action_proposal.py
 runner_sha256: 6a1a5ce783cdd5f7074cbbf61ee495b4e83ba4d577958a5f41d6221ee5b88f12
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ================================================================================================

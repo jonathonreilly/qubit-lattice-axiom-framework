@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 641 |
+| **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1199 |
+| unaudited | 1198 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 984 |
+| `audited_clean` | 985 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1438 |
+| `unaudited` | 1437 |
 
 | claim_type | count |
 |---|---:|
@@ -385,6 +385,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -5535,6 +5536,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The emergent-time carrier is asserted to factorize as Xi_R(t;q)=Theta_R(q) tensor V_R(t), with no generation index, so it acts as identity on R^3_gen and cannot transport an orbit-splitting chiral grading.  _(class `B`)_
 - **chain closes:** False — The algebraic consequences checked by the runner close if the factorized carrier and eps|hw1=-I3 premises are accepted. The restricted packet does not include the upstream s3_time or chiral_3plus1d authorities, and the runner uses toy matrices rather than deriving the actual framework carrier or verifying all displayed numerics.
 - **rationale:** The matrix checks in the runner are internally correct: -I3 commutes with R and has nonzero anticommutator norm 2sqrt(3), the Connes-Lott tensor grading is inert on the generation factor, and a symmetric anticommutant of Gamma_chi has spectrum {-lambda,0,+lambda} with singular-value Q=1/2. But the decisive no-transport step is a cross-note structural premise about the s3_time and emergent-chirality stacks, and those inputs are not supplied in the packet. The displayed transport numerics Q=0.267 and ||{D,Gamma_chi}||=1.38, plus the next-path coefficient L3(1,2)=2/9, are not independently checkable from the provided definitions or runner.
+- **auditor confidence:** high
+
+### `flavor_equivariant_eta_complementarity_note_2026-05-30`
+
+- **Note:** [`FLAVOR_EQUIVARIANT_ETA_COMPLEMENTARITY_NOTE_2026-05-30.md`](../../docs/FLAVOR_EQUIVARIANT_ETA_COMPLEMENTARITY_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite native C3 operator-algebra complementarity for R, Γχ, and the tensor-coin chiral extension, plus the 2/9 Lefschetz/rational/algebraic-integer disambiguation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-025024-61a6db5d-flavor_equivariant_eta_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On R^3 the C3 commutant is forced to be circulant with comm(R)∩anticomm(Γχ)={0}, while on R^3⊗C^2 the chiral tensor-coin sector has ±-symmetric spectrum, so η vanishes where breaking is possible.  _(class `C`)_
+- **chain closes:** True — The restricted packet supplies the relevant finite matrices, and independent algebra confirms the commutant/anticommutant, graded index, tensor-coin commutation, and ± spectrum claims. The quantitative 2/9 entries also check within the stated finite cyclotomic/rational scope.
+- **rationale:** The load-bearing complementarity is a first-principles finite operator computation, not a renaming or tuned numerical match. The runner does instantiate the matrices and verifies the core algebraic facts; the independently checked formulas include L3(1,2)=2/9, (N−1)/N^2=2/9 at N=3, Q(r=1/2)=2/3, and 2/9 not being an algebraic integer. The clean verdict is bounded to the eta/index route in these native finite sectors and does not ratify the speculative Berry-holonomy next path or external literature survey language.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

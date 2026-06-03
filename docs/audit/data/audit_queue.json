@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 300,
     "high": 247,
-    "leaf": 370,
+    "leaf": 369,
     "medium": 300
   },
   "cycle_break_target_count": 29,
@@ -27030,30 +27030,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_cluster_decomp_delta_x_su3_axis_permutation_2026_06_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37725,6 +37701,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 65,
-  "total_pending": 1217
+  "ready_count": 64,
+  "total_pending": 1216
 }

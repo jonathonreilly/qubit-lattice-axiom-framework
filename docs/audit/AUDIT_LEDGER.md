@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 639 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1215 |
+| unaudited | 1214 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -33,6 +33,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 5 |
+| `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | 1 |
 | `decoration_under_emergent_lorentz_invariance_note` | 1 |
@@ -64,16 +65,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 982 |
 | `audited_conditional` | 66 |
-| `audited_decoration` | 54 |
+| `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1454 |
+| `unaudited` | 1453 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1262 |
-| `decoration` | 55 |
+| `bounded_theorem` | 1261 |
+| `decoration` | 56 |
 | `meta` | 243 |
 | `no_go` | 267 |
 | `open_gate` | 121 |
@@ -1190,6 +1191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | cross_family | codex-gpt-5.5 | A | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` |
 | `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | algebraic_corollary_of_parent | `cpt_exact_note` |
 | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
@@ -3373,6 +3375,20 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The five-judge panel unanimously sided with the second audit. The pure-Wilson finite-Lambda core closes by standard heat-kernel positivity and compact positive-operator theory: on compact SU(3)^E, heat-kernel positivity plus the positive Wilson factor gives a strictly positive smooth kernel; compactness/trace-class and positivity improvement let Perron-Jentzsch/Krein-Rutman produce a simple top eigenvalue and strict finite-volume spectral separation. The finite-Lambda, fixed-parameter, no-thermodynamic-limit, no-continuum, no-Yang-Mills, and no-spatial-clustering clauses are scope boundaries, not live admissions. Leg A appears only in the conditional T_full extension and is excluded from the ratified scope; runner PASS=8 supports the analytic checks but sampled Leg A/T_full checks are not load-bearing.
 - **rationale:** The five-judge panel unanimously sided with the second audit. The pure-Wilson finite-Lambda core closes by standard heat-kernel positivity and compact positive-operator theory: on compact SU(3)^E, heat-kernel positivity plus the positive Wilson factor gives a strictly positive smooth kernel; compactness/trace-class and positivity improvement let Perron-Jentzsch/Krein-Rutman produce a simple top eigenvalue and strict finite-volume spectral separation. The finite-Lambda, fixed-parameter, no-thermodynamic-limit, no-continuum, no-Yang-Mills, and no-spatial-clustering clauses are scope boundaries, not live admissions. Leg A appears only in the conditional T_full extension and is excluded from the ratified scope; runner PASS=8 supports the analytic checks but sampled Leg A/T_full checks are not load-bearing.
 - **auditor confidence:** high
+
+### `cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md`](../../docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite-Lambda pure-Wilson spatial-axis transfer-operator gap, audited only as an axis-permutation decoration under the retained finite-Lambda temporal-axis T_W gap theorem; no thermodynamic-limit, Yang-Mills mass-gap, fermion-factor, or downstream bridge-lift claim.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-020712-ca523a15-cluster_decomposition_de`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Relabeling the transfer coordinate as x_mu for any mu in {1,2,3} carries every load-bearing temporal-axis step through without modification on the finite Wilson kernel surface.  _(class `A`)_
+- **chain closes:** True — The one-hop upstream temporal-axis parent is marked retained, and the source note's load-bearing move only permutes finite product SU(3) link labels in the same Wilson heat-kernel construction. Within that narrowed finite-Lambda pure-Wilson scope, no additional open upstream premise is required.
+- **rationale:** The claimed spatial gap is not an independent first-principles computation; the SU(3) heat-kernel positivity, trace-class property, and Perron-Jentzsch gap are all imported from the retained temporal-axis parent. The new step is a finite-kernel axis-label permutation, which is a class-A algebraic decoration of that parent under the note's own pure-Wilson definitions. The runner reports 18 passes, but its sampled positivity check uses an approximate character surrogate, so the runner should be treated as non-load-bearing sanity support rather than a class-C proof.
+- **decoration parent:** `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
+- **auditor confidence:** medium
 
 ### `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`
 

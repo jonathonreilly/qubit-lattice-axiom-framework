@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 171 |
-| **retained_no_go** | 180 |
+| **retained_no_go** | 181 |
 | **retained_bounded** | 649 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1160 |
+| unaudited | 1159 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 993 |
+| `audited_clean` | 994 |
 | `audited_conditional` | 105 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1399 |
+| `unaudited` | 1398 |
 
 | claim_type | count |
 |---|---:|
@@ -746,6 +746,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -11696,6 +11697,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The route's P1 derivation requires identifying the framework scalar generator W with Tr K and then using log(ρ_A ⊗ ρ_B) = log ρ_A ⊗ I + I ⊗ log ρ_B, so the Tomita-Gibbs route imports the additive-log/P1 content rather than deriving it.  _(class `A`)_
 - **chain closes:** True — The scoped no-go closes: the presented forward derivation of P1 explicitly depends on the underived W = Tr K identification plus the tensor-product log identity. The runner verifies the algebraic factorization, modular-Hamiltonian additivity, F_p contrast, and spectral Cauchy step; it does not establish a positive derivation of P1.
 - **rationale:** The load-bearing obstruction is an algebraic proof-dependency check, not a numerical match or external comparator. The runner source performs actual symbolic/numerical algebra checks and source/ledger bookkeeping checks; it does not merely print constants or import a contested value. The no-go discipline gate passes for the scoped boundary: the packet enumerates more than five attack routes, collapses the walls to the identification-plus-Cauchy residual, scans hidden assumptions, and keeps the claim narrower than global impossibility of P1.
+- **auditor confidence:** high
+
+### `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite determinant/block-diagonal setting: exponent selection among Z^p by the enumerated Cauchy/additive, locality, bare Gibbs-potential, and cumulant selectors is P1-equivalent; the normalized gradient is p-blind.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-observable_principle_p1_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On smooth W with W(0)=0, Add, Loc, and Pot are logically equivalent, while the normalized-gradient selector equals d log Z/dj for every p and therefore cannot fix the exponent.  _(class `A`)_
+- **chain closes:** True — The Add⇔Loc⇔Pot equivalence closes by elementary calculus on a convex domain, and the normalized-gradient identity is an exact algebraic derivative computation. This proves the narrow enumerated-selector no-go, not a universal impossibility for future selectors outside that class.
+- **rationale:** The load-bearing step is class A elementary algebra/calculus, not a fitted comparator, status import, or renaming. The runner source actually computes the determinant factorization, det/tr product defects, exponent freedom, cross derivatives, Add/Loc/Pot coefficient equivalence for its ansatz, and normalized/bare gradient identities; the displayed derivative and ratio formulas check out independently. No-go discipline passes only under the bounded rhetoric already present in the note: the result pins the tested selector families and explicitly leaves genuinely new non-additive selectors open.
 - **auditor confidence:** high
 
 ### `observable_principle_p2_det_realization_bridge_conditional_on_fermionic_frame_narrow_theorem_note_2026-05-28`

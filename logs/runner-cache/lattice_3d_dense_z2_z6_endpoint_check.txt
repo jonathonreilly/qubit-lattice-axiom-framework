@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_3d_dense_z2_z6_endpoint_check.py
-runner_sha256: bcc555d882ffe0f8363c32488738949624c6cd783789dc0dda7002f2a1349f7f
+runner_sha256: acbf0244ccaa703611e6b993dcedce7c940dd6891ff64e6464e42e25dc8fd927
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -19,6 +19,7 @@ status: ok
  6 +5.723120e-04 +5.356147e-04 +1.115616e-04   ATTRACTIVE
 
 SAFE READ
+  [PASS (C)] helper source exposed: scripts/lattice_3d_dense_10prop.py
   hierarchy-aligned support: 5/5 points
   centroid law over z=2..6: b^(-1.61), R^2=0.985
   z=6 endpoint is positive but small; no asymptotic theorem is claimed

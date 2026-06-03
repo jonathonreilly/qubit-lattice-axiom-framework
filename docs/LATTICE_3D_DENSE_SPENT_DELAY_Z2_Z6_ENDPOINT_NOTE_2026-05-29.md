@@ -4,6 +4,7 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/lattice_3d_dense_z2_z6_endpoint_check.py`](../scripts/lattice_3d_dense_z2_z6_endpoint_check.py)
+**Load-bearing helper source:** [`scripts/lattice_3d_dense_10prop.py`](../scripts/lattice_3d_dense_10prop.py)
 
 ## Purpose
 
@@ -23,6 +24,8 @@ introduced. The scope is the finite dense spent-delay harness only.
 The runner computes detector-centroid shift, near-mass probability gain, and
 mass-side bias for `z = 2, 3, 4, 5, 6` in the existing dense `L=12`,
 `W=6`, `h=1.0`, 49-edge/node spent-delay harness.
+It also asserts that the load-bearing helper source
+`scripts/lattice_3d_dense_10prop.py` is present and untruncated for audit.
 
 Current live output:
 

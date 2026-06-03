@@ -8,6 +8,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "LATTICE_3D_DENSE_SPENT_DELAY_Z2_Z6_ENDPOINT_NOTE_2026-05-29.md"
+HELPER_PATH = ROOT / "scripts" / "lattice_3d_dense_10prop.py"
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
@@ -15,6 +17,17 @@ from scripts import lattice_3d_dense_10prop as dense
 
 
 def main() -> int:
+    helper_source = HELPER_PATH.read_text(encoding="utf-8")
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    helper_source_ok = (
+        HELPER_PATH.exists()
+        and len(helper_source.splitlines()) > 400
+        and "def generate(" in helper_source
+        and "def propagate(" in helper_source
+        and "def classify_sign(" in helper_source
+        and "lattice_3d_dense_10prop.py" in note_text
+    )
+
     phys_l = 12
     h = 1.0
     pos, adj, nl, hw, nmap = dense.generate(phys_l, h)
@@ -80,7 +93,8 @@ def main() -> int:
     r2 = 1.0 - ss_res / ss_tot if ss_tot > 0 else math.nan
 
     assertions_ok = (
-        len(attractive) == 5
+        helper_source_ok
+        and len(attractive) == 5
         and z6[0] == 6
         and z6[1] > 0.0
         and z6[2] > 0.0
@@ -90,6 +104,7 @@ def main() -> int:
 
     print()
     print("SAFE READ")
+    print(f"  [{'PASS' if helper_source_ok else 'FAIL'} (C)] helper source exposed: scripts/lattice_3d_dense_10prop.py")
     print(f"  hierarchy-aligned support: {len(attractive)}/5 points")
     print(f"  centroid law over z=2..6: b^({slope:.2f}), R^2={r2:.3f}")
     print("  z=6 endpoint is positive but small; no asymptotic theorem is claimed")

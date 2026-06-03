@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 635 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 975 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1468 |
+| `unaudited` | 1467 |
 
 | claim_type | count |
 |---|---:|
@@ -1127,6 +1127,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5225,6 +5226,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equal Hilbert-Schmidt contribution from aI and b(J-I) gives 3a^2 = 6b^2, hence (b/a)^2 = 1/2; the later Q step uses Q = 1/3 + (2/3)(b/a)^2.  _(class `A`)_
 - **chain closes:** False — The eigenvalue bound, Hilbert-Schmidt norms, equipartition ratio, and formal Gaussian variance ratio close by finite matrix algebra. The displayed Q = 1/3 + (2/3)(b/a)^2 identity is not defined or derived in the restricted packet, and the runner only re-encodes that formula.
 - **rationale:** The finite matrix calculations are correct: eigenvalues are a+2b and a-b, PSD with a>0 gives -1/2 <= b/a <= 1, Tr(I^2)=3, Tr((J-I)^2)=6, and HS equipartition gives (b/a)^2=1/2. The source also claims the symmetric-form identity Q = 1/3 + (2/3)(b/a)^2 and Q=2/3, but the restricted packet gives no definition or derivation of Q from the symmetric form. The runner's koide_q_from_ratio function hard-codes the displayed Q formula, so it does not independently close that displayed identity.
+- **auditor confidence:** high
+
+### `flavor_carrier_from_axioms_momentum_forced_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that A2 forces the charged-lepton flavor carrier type to be momentum rather than position, while the hw=1 locus depends on a separate chiral operator-class import and r=1/2 remains separate.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-010941-1c2c8459-flavor_carrier_from_axio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The spectral theorem for the commuting translation family forces a basis-independent Brillouin-zone momentum decomposition, while selecting the hw=1 locus requires the staggered/KS chiral operator-class import.  _(class `C`)_
+- **chain closes:** False — Layer A closes within the packet as a framework-baseline spectral decomposition plus finite corner-character checks. The full bounded claim does not close because the staggered/KS import, its asserted identity with the recurring chirality gate, and the Q(r) formula are not derived or supplied as one-hop authorities.
+- **rationale:** The runner does real finite computations for the corner characters, on-site blindness, momentum-projector separation, Gamma_5 sum, naive zero locus, Wilson staircase, and L_3(1,2)=2/9; these displayed arithmetic checks are internally consistent. However, the full source note explicitly relies on the staggered/Kawamoto-Smit single-mode Grassmann plus {epsilon,D}=0 operator class and on the claim that this is the same chirality gate used in generation-ID/Koide work, and those authorities are not present in the restricted packet. The D1 line only substitutes values into Q=1/3+(2/3)r; it does not derive that formula from F=aI+b(J-I) or from a supplied definition of Q. Thus the packet supports the momentum-carrier type and several counterfactual checks, but not the claimed locus consolidation as a closed derivation.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE.md`
 - **auditor confidence:** high
 
 ### `flavor_native_double_shift_corner_coupling_note_2026-05-30`

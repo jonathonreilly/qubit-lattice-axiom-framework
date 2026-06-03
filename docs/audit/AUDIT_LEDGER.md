@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 636 |
+| **retained_bounded** | 635 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
 | unaudited | 1231 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -61,9 +61,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 975 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -1133,6 +1132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7962,6 +7962,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The implication follows directly from Hermiticity, anti-commutation, and the nonzero eigenvalue hypothesis. The conversion from zero Γχ expectation to Q=2/3 is an explicit quadratic identity, with no external physics input needed.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the hypotheses stated in the note. The runner source performs symbolic matrix checks and explicit eigenvector checks rather than importing empirical masses, calibrated constants, or prior contested premises. No cited authority is needed for the main implication, and the note correctly limits the framework-realization question as open rather than claiming closure.
 - **auditor confidence:** high
+
+### `koide_aps_block_by_block_forcing_note_2026-04-21`
+
+- **Note:** [`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic certificate that stipulated p=3, weights (1,2), and ABSS fixed-point formula evaluate exactly to eta=2/9; the global topology route, ABSS bridge, and physical readout are not audited closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260603T010012Z-koide_aps_block_by_block`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Given stipulated p=3, tangent weights (1,2), and ABSS fixed-point formula, eta = (1/3)(1/3 + 1/3) = 2/9.  _(class `A`)_
+- **chain closes:** False — Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: Issue: the arithmetic is a valid class-A algebraic closure only after importing stipulated topological and ABSS applicability inputs. Why: the packet explicitly says the one-hop cone-cap authorities do not establish the Cl(3)/Z^3 -> PL S^3 x R bridge or global ABSS route, and the rubric downgrades imported open premises to audited_conditional. Repair: provide a retained bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate.
+- **rationale:** Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: Issue: the arithmetic is a valid class-A algebraic closure only after importing stipulated topological and ABSS applicability inputs. Why: the packet explicitly says the one-hop cone-cap authorities do not establish the Cl(3)/Z^3 -> PL S^3 x R bridge or global ABSS route, and the rubric downgrades imported open premises to audited_conditional. Repair: provide a retained bridge theorem for the route, fixed-locus weights, and ABSS applicability. Boundary: retain only the conditional eta=2/9 algebraic certificate.
+- **auditor confidence:** judicial
 
 ### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 307,
+    "critical": 306,
     "high": 249,
     "leaf": 377,
     "medium": 303
@@ -913,31 +913,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-      "claim_scope": "Conditional bounded algebraic certificate only: assuming p=3, C3 transverse weights (1,2), and the ABSS fixed-point formula/applicability on the stipulated PL S^3 x R route, the APS eta arithmetic closes to 2/9. This audit does not retain or derive the global Cl(3)/Z^3 -> PL S^3 x R topology route, the ABSS bridge, or the physical selected-line Brannen-phase identification.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "s3_cap_uniqueness_note",
-        "pl_topology_infrastructure_textbook_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.549,
-      "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
-      "transitive_descendants": 748
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -38203,6 +38178,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 73,
-  "total_pending": 1236
+  "ready_count": 72,
+  "total_pending": 1235
 }

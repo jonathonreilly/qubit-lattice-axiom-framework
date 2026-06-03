@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1209 |
+| unaudited | 1208 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 70 |
+| ~~audited_conditional~~ | 71 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 983 |
-| `audited_conditional` | 70 |
+| `audited_conditional` | 71 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1448 |
+| `unaudited` | 1447 |
 
 | claim_type | count |
 |---|---:|
@@ -1139,6 +1139,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_asymmetry_identification_principled_not_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -5371,6 +5372,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** J_cs=(C-C^2)/sqrt3 is built from the real C3 shift, commutes with C, has eigenvalues {0,+i,-i} with the doublet one complex line, so C^3=I quantizes the U(1)_b symmetry but does not forbid the J_cs block-count measure.  _(class `A`)_
 - **chain closes:** True — The Pauli pseudoscalar identity, generation-blind scalar action, J_cs commutation/eigenvalue facts, U(1)_b quantization check, and real/complex Z3 block-count arithmetic all close by direct algebra. The note explicitly leaves the stronger claim that J_cs is the uniquely forced mass-generation measure open, and the audited scope excludes that stronger claim.
 - **rationale:** The runner performs direct algebraic checks rather than merely printing constants: sigma_x sigma_y sigma_z=iI2, [iI3,C]=0, J_cs real antisymmetric and C3-equivariant with spectrum {0,+i,-i}, and the rephasing constraint (e^{ia}C)^3=I only at a=2pi k/3. Independent formula inventory also checks C[Z3] gives three complex one-dimensional blocks while R[Z3] factors as R plus C, giving one real singlet block and one complex-type real block, so the table weights (1:2) -> Q=1 and (1:1) -> Q=2/3 are consistent. No external comparator or non-retained cited authority is used for the bounded availability claim.
+- **auditor confidence:** high
+
+### `flavor_both_readings_charge_selects_note_2026-05-30`
+
+- **Note:** [`FLAVOR_BOTH_READINGS_CHARGE_SELECTS_NOTE_2026-05-30.md`](../../docs/FLAVOR_BOTH_READINGS_CHARGE_SELECTS_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded check that Q=1 gives the rank-1 democratic spectrum and that the runner's embedded mass/readout inputs order leptons < down < up < rank-1, while the charge-selection no-go depends on a generation-blind U(1) bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-022435-4c5e7d5b-flavor_both_readings_cha`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The framework's gauge U(1)s are generation-blind and act as scalars e^{iχ}I on the generation triplet, so electric charge cannot orient J_cs or select det_C.  _(class `A`)_
+- **chain closes:** False — The scalar commutator check closes only after assuming that the physical gauge U(1)s act as e^{iχ}I on the generation C3 triplet. That bridge is asserted but not derived or supplied in the restricted packet, and the sector ordering also depends on empirical mass/readout inputs hard-coded in the runner.
+- **rationale:** The displayed numerics checked in the packet are internally consistent: H(1,1) has eigenvalues {3,0,0}, the Q table values and corresponding r values match the runner's mass inputs, and the neutrino Q range stays below 2/3 for the stated scan. However, the central charge-selection failure imports the physical identification of gauge U(1)s with scalar generation action; the runner only verifies [iI,C]=0 after hard-coding iI. The charged-sector ladder is likewise an external-comparator observation from embedded fermion masses, not a first-principles framework derivation. The claim is therefore productive and plausible within its assumptions, but not closed from the restricted packet.
 - **auditor confidence:** high
 
 ### `flavor_carrier_from_axioms_momentum_forced_2026-05-31`

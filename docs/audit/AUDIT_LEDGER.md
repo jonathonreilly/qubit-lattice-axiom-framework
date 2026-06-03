@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 637 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 978 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1462 |
+| `unaudited` | 1461 |
 
 | claim_type | count |
 |---|---:|
@@ -1129,6 +1129,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5246,6 +5247,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner does real finite computations for the corner characters, on-site blindness, momentum-projector separation, Gamma_5 sum, naive zero locus, Wilson staircase, and L_3(1,2)=2/9; these displayed arithmetic checks are internally consistent. However, the full source note explicitly relies on the staggered/Kawamoto-Smit single-mode Grassmann plus {epsilon,D}=0 operator class and on the claim that this is the same chirality gate used in generation-ID/Koide work, and those authorities are not present in the restricted packet. The D1 line only substitutes values into Q=1/3+(2/3)r; it does not derive that formula from F=aI+b(J-I) or from a supplied definition of Q. Thus the packet supports the momentum-carrier type and several counterfactual checks, but not the claimed locus consolidation as a closed derivation.
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE.md`
+- **auditor confidence:** high
+
+### `flavor_missing_axiom_carrier_measure_note_2026-05-30`
+
+- **Note:** [`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`](../../docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that revising A1 to an R[Z3] tracial-standard-form carrier supplies the canonical measure and partition needed to force r=1/(N-1)=1/2 at N=3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-014135-19ce6fac-flavor_missing_axiom_car`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The candidate revised A1 makes the carrier R[Z3] in tracial standard form, so equal Hilbert-Schmidt energy per generator channel, a^2*1=b^2*2, is inherited and forces r=|b|^2/a^2=1/2.  _(class `A`)_
+- **chain closes:** False — The algebra after imposing equal generator-channel Hilbert-Schmidt energy is correct. The restricted packet does not derive that equal-channel-energy condition from the tracial standard form itself, nor does it prove that this partition is structurally preferred over the idempotent/eigenvalue or per-mode partitions.
+- **rationale:** The runner verifies algebraic consequences of asserted equations; it does not derive 3a^2=6b^2 or a^2*1=b^2*2 from the revised A1 carrier. The displayed closed-form arithmetic checks pass for the HS norms, three-way fork, N-family, Kahler equation, and commuting check, while the PDG/quark line is a class D comparator and not load-bearing. Because the source itself exhibits multiple viable partitions, the packet still needs a bridge theorem or explicit axiom showing why the generator-channel HS measure is forced rather than selected.
 - **auditor confidence:** high
 
 ### `flavor_native_double_shift_corner_coupling_note_2026-05-30`

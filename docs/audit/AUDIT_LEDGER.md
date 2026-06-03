@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1197 |
+| unaudited | 1196 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 81 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 81 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1436 |
+| `unaudited` | 1435 |
 
 | claim_type | count |
 |---|---:|
@@ -1152,6 +1152,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_emergent_chirality_no_transport_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5563,6 +5564,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** det_C/r=1/2/Q=2/3 is not forcible from framework baseline plus emergent dynamics by any of the four attacked levers; the remaining freedom is the per-irrep-block versus per-real-DOF counting measure on the C3 isotype split.  _(class `B`)_
 - **chain closes:** False — The packet independently supports only the stated Gaussian equipartition arithmetic and the r-to-Q substitutions. The broader exhaustion of the static complex-structure, Berezin, Dirac-reality, superselection, Plancherel, and K0 selector routes depends on unprovided prior authorities or runner checks hard-coded as true.
 - **rationale:** The displayed quantitative identities checked in the packet are internally consistent: the Gaussian weight gives <a^2>=<|b|^2>, Q(1/2)=2/3, Q(1)=1, and R[C3]=R+C supports a two-block K0 statement. But the runner hard-codes the Plancherel and K0 non-selector checks as True, and the packet omits the retained proofs for rounds 1-3 and the cited no-go anchors. The restricted packet therefore supports a narrowed measure-comparison statement, not the full bounded theorem that the four-route hunt has isolated a single residual.
+- **auditor confidence:** high
+
+### `flavor_find_j_round1_jcs_measure_neutral_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the round-1 static-J_cs algebra, Gamma_chi != J_cs identity check, and measure-neutrality; the det_R/Q readout default was not closed by the packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-025832-085d0068-flavor_find_j_round1_jcs`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because exp(theta J_cs) is an SO(2) rotation on the doublet plane preserving the HS block and determinant, the static J_cs is measure-neutral and cannot by itself select det_C.  _(class `A`)_
+- **chain closes:** False — The matrix identities close algebraically, including J_cs^2=-P_doublet, Gamma_chi^2=I, commutation, and the HS 6*I block from the provided C. The packet does not supply a derivation or cited retained authority for det_C -> r=1/2 -> Q=2/3 or the det_R/Q=1 default, which are displayed quantitative readout steps in the source note.
+- **rationale:** The runner source performs genuine algebraic checks rather than merely printing the PASS lines, and independent algebra supports the R1-R4 identities within the static-J_cs scope. However, the source note also imports quantitative mode-count/readout statements and the det_R/Q default while section 2 provides no cited authorities. Under the formula-inventory guard, those displayed ratios and defaults cannot be treated as audited from this restricted packet, so the full bounded theorem remains conditional.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

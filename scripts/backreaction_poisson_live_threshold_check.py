@@ -16,6 +16,8 @@ import sys
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md"
+HELPER_PATH = ROOT / "scripts" / "backreaction_poisson.py"
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
@@ -89,6 +91,24 @@ def _run_grid() -> tuple[float, list[Row]]:
 
 
 def main() -> int:
+    helper_source = HELPER_PATH.read_text(encoding="utf-8")
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    hidden_local_helper_import = (
+        "from scripts import" in helper_source
+        or "import scripts." in helper_source
+        or "from scripts." in helper_source
+    )
+    helper_source_ok = (
+        HELPER_PATH.exists()
+        and len(helper_source.splitlines()) > 200
+        and "def _build(" in helper_source
+        and "def _self_field_from_amplitude(" in helper_source
+        and "def _propagate(" in helper_source
+        and "if __name__" in helper_source
+        and "backreaction_poisson.py" in note_text
+        and not hidden_local_helper_import
+    )
+
     baseline_delta, rows = _run_grid()
     by_g = {row.G: row for row in rows}
     first_subunit = next((row.G for row in rows if row.escape < 1.0), None)
@@ -112,7 +132,8 @@ def main() -> int:
         )
 
     assertions_ok = (
-        baseline_delta > 0.0
+        helper_source_ok
+        and baseline_delta > 0.0
         and all(row.delta > 0.0 for row in rows)
         and by_g[0.011].escape > 1.0
         and by_g[0.012].escape > 1.0
@@ -124,6 +145,7 @@ def main() -> int:
 
     print()
     print("SAFE READ")
+    print(f"  [{'PASS' if helper_source_ok else 'FAIL'} (C)] helper source exposed: scripts/backreaction_poisson.py")
     print("  old G_crit ~= 0.011 table is not reproduced by the live harness")
     print(f"  first sub-unit escape on this grid: G={first_subunit}")
     print("  TOWARD deflection is preserved through G=0.100 on this grid")

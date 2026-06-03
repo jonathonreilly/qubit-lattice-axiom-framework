@@ -24,11 +24,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
 | unaudited | 1230 |
-| audit_in_progress | 1 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -62,9 +61,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 975 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
@@ -1129,6 +1127,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5239,6 +5238,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Direct finite enumeration of the eight cube corners shows that single flips leave the Hamming-weight-1 subspace, while the three double flips give the three off-diagonal edges and sum to J-I. The spectrum and Q formula then follow algebraically from the eigenvalues 2,-1,-1 of J-I.
 - **rationale:** The runner constructs the cube corners, shift matrices, and projection matrix directly, then checks the stated projection identities rather than importing another note or an external value. Independent formula inventory confirms the displayed projection, spectrum, and Koide-ratio identities under the note's definitions. The note stays within its bounded claim and explicitly does not claim to derive b/a=1/sqrt(2) or an observed-mass fit.
 - **auditor confidence:** high
+
+### `flavor_r_half_is_the_records_flow_separatrix_2026-06-02`
+
+- **Note:** [`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md`](../../docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic audit of the stipulated two-sector Lüders sharpening map: r maps to 2r^2, r=1/2 is repelling, and S2/S3 have the stated extrema.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260603T010644Z-flavor_r_half_is_the_rec`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** For the stipulated two-sector distribution, Lüders sharpening p -> p^2/Z induces r -> 2r^2, so r=1/2 is an unstable separatrix.  _(class `A`)_
+- **chain closes:** False — Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The algebraic checks close for the formulas actually provided, so class A is appropriate. The broader claim that this stipulated Lüders two-sector update is the physical emergent charged-lepton records flow is not derived in the restricted packet, and the note’s finite r=1 attractor wording is not a fixed point of r -> 2r^2.
+- **rationale:** Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The algebraic checks close for the formulas actually provided, so class A is appropriate. The broader claim that this stipulated Lüders two-sector update is the physical emergent charged-lepton records flow is not derived in the restricted packet, and the note’s finite r=1 attractor wording is not a fixed point of r -> 2r^2.
+- **auditor confidence:** judicial
 
 ### `fm_transfer_note`
 

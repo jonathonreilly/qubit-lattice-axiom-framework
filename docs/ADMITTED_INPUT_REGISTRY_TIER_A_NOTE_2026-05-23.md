@@ -62,7 +62,7 @@ Notes:
   choice; the irreducible content is "the δ-pattern + the species bridge."
 - **AC_φλ — charged-lepton sharpening (2026-06-02).** For the charged-lepton
   sector specifically, the "mass pattern" admission decomposes (verified, see
-  [CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)) into **two named,
+  `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`) into **two named,
   equivalent selectors**, both shown to be the operative inputs and neither
   derivable on the current surface: **(i) K-reality** (time-reversal-reality of
   the generation-monitored coupling / δ=0 / transpose-symmetry `b=c̄`) — selects
@@ -72,9 +72,12 @@ Notes:
   measure gives `r=1`. The *structure* (carrier, exact `Q=1/3+(2/3)r`, channels,
   topological `2/9`, endpoint exclusion, `r=1/2` as the 2-sector-equipartition
   stationary point) is derived; only this two-pronged selection is admitted.
-  No-go portfolio sharpened this session: [KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
-  (retained_no_go — singlet:doublet ratio free), [KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24.md](KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24.md)
-  (retained_no_go — no canonical zero-section), [KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
+  No-go portfolio sharpened this session:
+  `KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`
+  (retained_no_go — singlet:doublet ratio free),
+  `KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24.md`
+  (retained_no_go — no canonical zero-section),
+  `KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`
   (retained_bounded); and the records/decoherence flow makes `r=1/2` the *unstable
   separatrix* of the (entropy-decreasing) sharpening map `r→2r²` while the
   entropy-increasing thermalizing flow makes it the *stable* 2-sector-entropy

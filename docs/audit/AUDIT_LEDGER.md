@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 650 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1158 |
+| unaudited | 1157 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 105 |
+| ~~audited_conditional~~ | 106 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 995 |
-| `audited_conditional` | 105 |
+| `audited_conditional` | 106 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1397 |
+| `unaudited` | 1396 |
 
 | claim_type | count |
 |---|---:|
@@ -1221,6 +1221,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_propagating_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -14105,6 +14106,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The empirically implied light-Dirac Yukawa y_nu ~ 10^-13 to 10^-12 lies many orders below the Gamma ~ y_nu^2 T versus H thermalization threshold, while the heavy-Majorana branch excludes nu_R by assuming M_R >> T_census, so nu_R is not a light thermalized degree of freedom in either admitted branch.  _(class `D`)_
 - **chain closes:** False — The finite g_* arithmetic and the displayed Yukawa/threshold estimates mostly check out, but the conclusion depends on imports not closed by the cited authorities: empirical small m_nu, the standard Gamma/H thermalization criterion, and M_R >> T_census for the Majorana branch. The source also has minor quantitative drift: the 0.1 eV, T=100 GeV margin is about 4.3 decades, not 4.6, and y_nu >= y_thr rather than O(1) is the minimal thermalizing route.
 - **rationale:** The cited authorities are retained-grade and the runner performs real arithmetic checks rather than merely printing a PASS line. However, the load-bearing step is an external-observation/standard-cosmology comparator, not a first-principles framework computation or a pure algebraic closure over retained inputs. The heavy-Majorana branch also relies on M_R >> T_census, which is asserted in the source note and hard-coded in the runner but not established by the one-hop no-go authority. Therefore the honest result is conditional, even though the scoped exclusion is plausible under the stated assumptions.
+- **auditor confidence:** high
+
+### `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the R-MATTER reduction for the g_* census: the 15 gauge-charged Weyl multiplicity per generation and the 106.75 versus 112 nu_R fork, while leaving named residuals I12, R-SPIN, and the neutral-singlet branch convention.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-110301-2ee8b34e-sm_gstar_r_matter_residu`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The thermalized per-generation matter count is 30 = 15 gauge-charged Weyl fermions times a 2-dof-per-Weyl particle/antiparticle cardinality, with the 15 multiplicity sourced from retained or decoration-under-retained authorities.  _(class `A`)_
+- **chain closes:** False — The arithmetic 6+3+3+2+1=15, 15*2=30, 3*30=90, and g_*=427/4 is internally correct. The restricted packet does not close the bridge from the cited CAR/cardinality and local Pauli-spin notes to the high-temperature Weyl particle/antiparticle thermal dof factor and physical spin-1/2 matter identification.
+- **rationale:** The primary runner performs exact rational arithmetic and source/ledger bookkeeping, but it also reports a completed FAIL: the source expects the per-site spin-1/2 carrier to be audited_conditional while the restricted authority and ledger status in the packet read retained. More substantively, the cited spin-statistics cardinality theorem proves finite-dimensional CAR occupation/cardinality facts, not the relativistic Weyl particle/antiparticle thermal degree count used as the factor 2. The per-site spin-half authority is retained but explicitly does not identify the local Pauli action with the physical spin generator of every matter excitation, so R-SPIN remains a missing bridge rather than a closed retained input.
+- **open / conditional deps cited:**
+  - `SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`
 - **auditor confidence:** high
 
 ### `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29`

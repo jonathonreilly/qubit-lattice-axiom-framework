@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 648 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1164 |
+| unaudited | 1163 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 102 |
+| ~~audited_conditional~~ | 103 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 992 |
-| `audited_conditional` | 102 |
+| `audited_conditional` | 103 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1403 |
+| `unaudited` | 1402 |
 
 | claim_type | count |
 |---|---:|
@@ -1193,6 +1193,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9416,6 +9417,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The readout map is exactly L(u,v,w,z)=diag(u,v,w), with the z slot mapped to zero.  _(class `A`)_
 - **chain closes:** True — Given the stated single-slot images, the rank, kernel, image, fiber, and quotient claims follow by elementary linear algebra. The broader selector-admissibility factorization is explicitly excluded from the theorem under audit.
 - **rationale:** The bounded claim is a direct algebraic closure from the explicitly defined map and its computed matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]. The runner source does instantiate the relevant projectors and Γ_1 action to check the stated single-slot images, then verifies the kernel, quotient fibers, covariance, and invariant quadratic family. The note cleanly separates the unproved admissibility-implies-constancy statement as conditional, so that open extension does not contaminate the bounded theorem.
+- **auditor confidence:** high
+
+### `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Assuming the retained C3 circulant Fourier identities and the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, the signed ratio Q_alg(lambda) equals 2/3 whenever the denominator is nonzero; positive Koide interpretation is chamber-limited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-104231-f346fe34-koide_q_two_thirds_frobe`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, the Fourier identities give Q_alg(lambda) = (3a^2 + 6|b|^2)/(3a)^2 = 2/3.  _(class `A`)_
+- **chain closes:** True — From the cited C3 identities, sum lambda_k = 3a and sum lambda_k^2 = 3a^2 + 6|b|^2, so Q_alg = (3a^2 + 6|b|^2)/(9a^2). With the cited scoped extremum a^2 = 2|b|^2 and nonzero denominator, this reduces to 2/3.
+- **rationale:** The bounded algebraic bridge itself is a class-A substitution over retained inputs, and the primary runner checks the exact rational ratio plus positive/non-positive chamber boundaries without external comparators. However, the restricted packet is not clean under the formula-inventory guard: the cited kappa authority's validation section displays the Herm_circ(d) sign-irrep count as d mod 2, contradicting its own statement, proof, and table where the sign count is 1 for even d and 0 for odd d. That upstream displayed parity formula must be repaired before this packet can receive audited_clean.
 - **auditor confidence:** high
 
 ### `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`

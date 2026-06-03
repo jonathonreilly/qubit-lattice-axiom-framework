@@ -1,0 +1,16 @@
+[PASS] S=C+C^2 is K-even Hermitian, spectrum {2,-1,-1} (singlet isolated, doublet degenerate)
+       spec(S)=[-1. -1.  2.]
+[PASS] J=i(C-C^2) is K-ODD Hermitian, spectrum {-sqrt3,0,sqrt3} (resolves omega vs omega^2)
+       spec(J)=[-1.732  0.     1.732]
+[PASS] J is K-odd (conj(J) = -J): a conjugation-even (CPT) instrument cannot record the intra-doublet distinction
+[PASS] [S,J]=0: weight (K-even S) and phase (K-odd J) are simultaneously block-structured / orthogonal channels
+[PASS] H = aI + Re(b)S + Im(b)J  ==  aI + bC + conj(b)C^2 (pointer/weight = Re b, phase = Im b)
+[PASS] 2-letter alphabet drops exactly the doublet multiplicity bit: S_vN - H_Shannon = p_doublet*ln2
+       S_vN-H = 0.462098 = (2/3)ln2
+[PASS] weight map: Born/dimension (1/3,2/3) -> r=1 (Q=1) ; uniform/block-count (1/2,1/2) -> r=1/2 (Q=2/3)
+       the single remaining measure choice on the FORCED 2-sector partition
+
+SCORECARD PASS=7 FAIL=0
+FINDING: K-real instrument forces a 2-letter record alphabet (count) and the Brannen phase (K-odd J)
+is orthogonal to the weight (K-even S), [S,J]=0 -- so size and phase are DISCHARGED. The Koide value
+gap localizes to the single MEASURE choice on the 2-sector partition. Does not force r=1/2. No audit status.

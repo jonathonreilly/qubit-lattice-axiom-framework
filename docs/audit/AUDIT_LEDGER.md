@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1187 |
+| unaudited | 1186 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 87 |
+| ~~audited_conditional~~ | 88 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 87 |
+| `audited_conditional` | 88 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1426 |
+| `unaudited` | 1425 |
 
 | claim_type | count |
 |---|---:|
@@ -1160,6 +1160,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5718,6 +5719,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The candidate revised A1 makes the carrier R[Z3] in tracial standard form, so equal Hilbert-Schmidt energy per generator channel, a^2*1=b^2*2, is inherited and forces r=|b|^2/a^2=1/2.  _(class `A`)_
 - **chain closes:** False — The algebra after imposing equal generator-channel Hilbert-Schmidt energy is correct. The restricted packet does not derive that equal-channel-energy condition from the tracial standard form itself, nor does it prove that this partition is structurally preferred over the idempotent/eigenvalue or per-mode partitions.
 - **rationale:** The runner verifies algebraic consequences of asserted equations; it does not derive 3a^2=6b^2 or a^2*1=b^2*2 from the revised A1 carrier. The displayed closed-form arithmetic checks pass for the HS norms, three-way fork, N-family, Kahler equation, and commuting check, while the PDG/quark line is a class D comparator and not load-bearing. Because the source itself exhibits multiple viable partitions, the packet still needs a bridge theorem or explicit axiom showing why the generator-channel HS measure is forced rather than selected.
+- **auditor confidence:** high
+
+### `flavor_native_beta_no_half_attractor_note_2026-05-30`
+
+- **Note:** [`FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30.md`](../../docs/FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the broad no-half-attractor/last-route-closed claim for native C3-symmetric beta flows, including the displayed tanh^4 heat-kernel path and spectrum-symmetry argument.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-032739-5098fca2-flavor_native_beta_no_ha`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** RG fixed points sit at enhanced-symmetry couplings; since r=1/2 has the generic C3 doublet-plus-singlet spectrum rather than an enhanced-symmetry spectrum, no C3-symmetric beta-function fixes it.  _(class `A`)_
+- **chain closes:** False — The derivative check closes only for the displayed one-parameter heat-kernel path. The packet does not derive that path as the unique native matter beta-function or prove the bridge theorem that C3-symmetric beta functions can have fixed points only at enhanced-symmetry spectra.
+- **rationale:** The runner recomputes the tanh^4 sample values, but it hard-codes the flow and prints the general symmetry conclusion rather than deriving it. The decisive broad step is an unsupported bridge from non-enhancement to absence of any C3-symmetric fixed point; C3 invariance by itself does not exclude a beta function with a zero at generic r. The note's own supersession warning also says the no-attractor/last-route-closed framing has been superseded and should not be used as current closure. Additionally, the displayed r=1 -> rank-1 spectrum claim silently assumes b/a=+1 although r=|b|^2/a^2 alone does not fix the sign.
 - **auditor confidence:** high
 
 ### `flavor_native_double_shift_corner_coupling_note_2026-05-30`

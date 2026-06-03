@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1262,
-    "decoration": 55,
+    "bounded_theorem": 1261,
+    "decoration": 56,
     "meta": 243,
     "no_go": 267,
     "open_gate": 121,
@@ -106,6 +106,7 @@
     "decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_color_automorphism_theorem": 6,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 5,
+    "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": 1,
     "decoration_under_emergent_lorentz_invariance_note": 1,
@@ -137,7 +138,7 @@
     "retained_bounded": 639,
     "retained_no_go": 180,
     "retained_pending_chain": 12,
-    "unaudited": 1215
+    "unaudited": 1214
   },
   "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [

@@ -2,12 +2,30 @@
 
 **Date:** 2026-06-02
 **Angle:** variational forcing of r=|b|²/a²=1/2 on the C₃-circulant weight family of generation C³ = grade-1 of Cl(3).
-**Verdict:** **NO — r=1/2 is NOT forced by any A1+A2-native variational principle.** Every native operator-spectral functional lands at r=0 or r=1; the only functionals landing at r=1/2 are built on the 2-sector (block-fold / Frobenius β=0 / det_C) coarse-graining, which the retained no-go shows is unforced.
+**Verdict:** **r=1/2 is NOT a variational-extremization outcome — it is a sector label (chirality).** Every native operator-spectral functional lands at r=0 or r=1; the only functionals landing at r=1/2 are built on the 2-sector (block-fold / Frobenius β=0 / det_C) coarse-graining. This is the *expected* result, **not a wall and not evidence against Q=2/3**: the canonical metric correctly sits at the non-chiral r=1 (Q=1) endpoint — the *complement* of the charged-lepton sector — so r=1/2 (Q=2/3) is fixed by the chirality source, not by metric/measure optimization (see Framing correction).
 **Confidence:** HIGH (the obstruction is a clean category statement, reproduced symbolically + numerically; it coincides with the standing retained no-go from an independent direction).
 **Runner:** `/tmp/flavor_r_half_variational_forcing_2026_06_02.py` — SCORECARD PASS=17 FAIL=0 (venv `/private/tmp/cl3-review-venv/bin/python3`).
 **Imports:** NONE. Uses only A1 (site=C²=Cl(3) spinor) + A2 (Z³ lattice) + retained results below. No new axiom, no measure posited, no observed masses.
 
 ---
+
+## Framing correction (2026-06-02 — supersedes any "gap"/"fails to be forced" language below)
+
+`Q=1` and `Q=2/3` **coexist** as different operator classes on `Q = 1/3 + (2/3)·r`,
+`r ∈ [0,1]`. Per retained `koide_anticommuting_operator_derivation_theorem_note_2026-05-10`:
+the **non-chiral** (circulant / tracial-default) operator sits at `r=1` → `Q=1`; the
+**chiral** operator (mass anticommutes with `Γ_χ`) sits at `r=1/2` → `Q=2/3`. The charged
+leptons are the **chiral (Dirac) sector**.
+
+So `r=1/2` is a **sector label (chirality)**, not a variational-extremization outcome.
+The result below — every native operator-spectral functional lands at `r=0`/`r=1`, and
+only block-folded functionals reach `r=1/2` — is the *expected* and *useful* finding: it
+shows `r=1/2` is **not** a metric outcome (the canonical metric correctly sits at the
+non-chiral `Q=1` endpoint, the **complement** of the charged-lepton sector), so the
+selector must be the chirality source. Read "not forced by any native variational
+principle" as "**not a metric outcome — it is a chirality outcome**," NOT as evidence
+against `Q=2/3`. The "missing ingredient" in §5 is precisely the **sector label**
+(chirality), which the retained anticommuting-operator theorem then converts to `Q=2/3`.
 
 ## 0. Exact setup (matches the retained notes)
 

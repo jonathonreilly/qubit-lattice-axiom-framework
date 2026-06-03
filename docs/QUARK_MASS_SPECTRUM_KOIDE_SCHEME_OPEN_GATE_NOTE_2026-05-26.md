@@ -26,15 +26,15 @@ Q = (sum x_k^2) / (sum x_k)^2
 |b|^2 / a^2 = (3Q - 1) / 2.
 ```
 
-Using conventional central-value quark mass comparators, the apparent
-Koide/Brannen amplitude ratios for the up- and down-type quark sectors
-are not the charged-lepton BAE value `|b|^2/a^2 = 1/2`:
+Using the packet-local central-value comparator convention below, the
+apparent Koide/Brannen amplitude ratios for the up- and down-type quark
+sectors are not the charged-lepton BAE value `|b|^2/a^2 = 1/2`:
 
 ```text
 sector       Q comparator       apparent |b|^2/a^2
 charged l    0.666660...        0.499991...
-up quarks    0.848...           0.77...
-down quarks  0.731...           0.59...
+up quarks    0.849094...        0.773642...
+down quarks  0.731428...        0.597141...
 ```
 
 This is useful as a lane-opening warning: the charged-lepton BAE
@@ -53,10 +53,20 @@ quark Brannen phases, quark amplitude ratios, or quark mass scales.
   supplies the special `sqrt(2)` Brannen/Koide identity.
 
 The quark values in this note are observational comparators only. Quark
-masses are renormalization-scheme and scale dependent; the runner uses
-one conventional central-value mix only to show the lane boundary. A
-future quark-mass theorem must either derive a scheme-native framework
-mass definition or explicitly admit a scheme/scale convention.
+masses are renormalization-scheme and scale dependent. The runner uses
+the following packet-local central-value convention only to show the
+lane boundary:
+
+```text
+charged_leptons = [0.0005109989461, 0.1056583755, 1.77686] GeV
+up_quarks       = [0.00216, 1.27, 173.0] GeV
+down_quarks     = [0.00467, 0.0934, 4.18] GeV
+```
+
+This convention is not a retained framework mass definition and is not
+load-bearing outside this open-gate comparator. A future quark-mass
+theorem must either derive a scheme-native framework mass definition or
+explicitly admit a scheme/scale convention.
 
 ## Boundaries
 

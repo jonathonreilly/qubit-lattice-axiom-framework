@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1164 |
+| unaudited | 1163 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 103 |
+| ~~audited_conditional~~ | 104 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 991 |
-| `audited_conditional` | 103 |
+| `audited_conditional` | 104 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1403 |
+| `unaudited` | 1402 |
 
 | claim_type | count |
 |---|---:|
@@ -1193,6 +1193,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9305,6 +9306,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The spin-1/2 one-particle content of S(p) forces a faithful carrier containing j=1/2, the chiral Weyl C^2, and excludes the trivial scalar J=K=0.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the commutators, chirality Casimirs, kernel covariance, and scalar exclusion are algebraic representation-theory consequences of the Pauli/Cl(3,0) inputs. The massive positive-energy Dirac field and CAR application are explicitly left as the named partner-chirality/doubling residual.
 - **rationale:** The load-bearing content is finite Clifford/Pauli and SL(2,C) representation algebra, not a numerical fit or definition substitution. The cited one-hop authorities are retained or retained_bounded, and the note does not rely on context-only unaudited reconstruction siblings to assert unconditional closure. The runner performs substantive matrix checks for the scoped finite claims, while the note honestly excludes the field-theoretic massive doubling and CAR selection from its conclusion.
+- **auditor confidence:** high
+
+### `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01`
+
+- **Note:** [`KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md`](../../docs/KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Single-site Pauli/Cl(3,0) matrix construction of Lorentz-sign boost generators on C^2, with faithfulness, chirality, and the (3,1) sign treated as residual selections rather than derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-045336-040f74e5-koide_onsite_weyl_boost_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `J_i = sigma_i/2` and `K_i = B_i = i sigma_i/2` satisfy `[J_i,J_j]=i epsilon_ijk J_k`, `[J_i,K_j]=i epsilon_ijk K_k`, and `[K_i,K_j]=-i epsilon_ijk J_k` on `C^2`.  _(class `A`)_
+- **chain closes:** False — The central Pauli commutator algebra closes under the stated bounded assumptions. The restricted packet is not clean as written because its Hermitian-lift sign conventions drift (`D=iH` in the source note versus `H=iD` in the cited authority/runner), and the cited CPT authority's spectrum corollary sends `T v` to `-lambda^*` where direct conjugation gives `lambda^*`.
+- **rationale:** The main boost algebra is genuine finite-dimensional Pauli matrix algebra, not a numerical match or renaming, and the runner executes the central commutator checks. Strict formula inventory blocks a clean verdict because the source packet contains the `D`/`H` sign inconsistency and a non-load-bearing but false CPT eigenvalue-conjugation sign. The runner also records some representation/no-go items as assertions or limited probes, so those should be backed by the text/cited algebra after the sign repairs rather than by stdout alone.
+- **open / conditional deps cited:**
+  - `CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `koide_order_one_circulant_diagnostic_note_2026-05-29`

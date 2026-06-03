@@ -6,6 +6,7 @@
 input, and no audit verdict. The independent audit lane sets audit and
 effective status.
 **Primary runner:** [`frontier_beta6_connected_coefficient_2026_05_30.py`](../scripts/frontier_beta6_connected_coefficient_2026_05_30.py)
+**Order-7 cache wrapper:** [`frontier_beta6_connected_coefficient_2026_05_30_order7_cache.py`](../scripts/frontier_beta6_connected_coefficient_2026_05_30_order7_cache.py)
 
 ## Scope
 
@@ -84,6 +85,13 @@ d_6 = 7/5668704
 d_7 = 5/17006112
 PASS=22 FAIL=0
 ```
+
+Because `scripts/cached_runner_output.py` caches by runner path and not argv,
+the paired order-7 cache is generated through
+`scripts/frontier_beta6_connected_coefficient_2026_05_30_order7_cache.py`.
+That wrapper invokes the primary runner exactly as
+`python3 scripts/frontier_beta6_connected_coefficient_2026_05_30.py 7` and
+prints the SHA-256 of the full primary runner source before executing.
 
 ## Boundary
 

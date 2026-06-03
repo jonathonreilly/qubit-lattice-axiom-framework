@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 645 |
+| **retained_bounded** | 646 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1167 |
+| unaudited | 1166 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 989 |
+| `audited_clean` | 990 |
 | `audited_conditional` | 102 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1406 |
+| `unaudited` | 1405 |
 
 | claim_type | count |
 |---|---:|
@@ -587,6 +587,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9113,6 +9114,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Gamma_chi equals the body-diagonal proper rotation 2vv^T-I in the Cl(3,0) grade-1 vector representation, while explicit non-circulant Hermitian operators H=|v><w|+|w><v| with w perpendicular to v anticommute with Gamma_chi and therefore lie outside the cited circulant no-go scope.  _(class `A`)_
 - **chain closes:** True — The required matrix identities, spectrum/determinant checks, circulant decomposition, non-circulant anticommuting example, and Q=(1+2r)/3 specialization at r=1/2 close as direct algebra over the cited retained-grade inputs. The physical generation identification and value-selection steps are explicitly excluded from the audited scope rather than used.
 - **rationale:** The load-bearing content is class-A algebraic closure, not a definition, tuned numerical match, or external-comparator check. Independent formula inventory finds the displayed coefficients and signs consistent: Gamma_chi=(2/3)J-I=2vv^T-I=(-1/3)I+(2/3)R+(2/3)R^2, U^2=-I, det Gamma_chi=+1, and the Brannen-ratio identity gives Q=2/3 exactly at r=1/2. The runner contains some narrative true-by-assertion disposition checks, but the actual bounded theorem does not rely on those as computation and is supported by the provided algebra. No cited dependency used for the scoped result is below retained-grade.
+- **auditor confidence:** high
+
+### `koide_import_two_bit_decomposition_note_2026-05-30`
+
+- **Note:** [`KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md`](../../docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3 generation algebra supplies Jcs, omega=gJcs, and the holomorphic projector; separates Jcs orientation from the circulant modulus/measure fork; and excludes symmetric Gamma_chi-anticommuting eigenvalue mass operators for three nonzero masses by their {-s,0,+s} spectrum.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-044212-e6a459bd-koide_import_two_bit_dec`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Every circulant mass operator H=aI+bC+conj(b)C^2 commutes with Jcs for all r, so orienting Jcs does not choose the modulus r=|b|^2/a^2.  _(class `A`)_
+- **chain closes:** True — The audited result closes as finite 3x3 algebra: Jcs^2=-P_doublet, exp((2*pi/3)Jcs)=C, circulant H commutes with Jcs, the two stated r values give the stated Q values, and the symmetric anticommutant has a forced zero eigenvalue. The note explicitly leaves the measure/modulus selector open rather than deriving Q=2/3.
+- **rationale:** All one-hop authorities are retained-grade, and the audited conclusion is bounded to finite C3 linear algebra and residual localization. The load-bearing identities are algebraic: Jcs is a polynomial in C, circulant H is also a polynomial in C and therefore commutes with Jcs for any b, while the anticommutant block form gives eigenvalues {-s,0,+s}. The runner mostly verifies these identities directly; its measure-fork line is a restatement, but the r=1/2 and r=1 values independently follow from block versus per-dimension weighting and Q=(1+2r)/3.
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`

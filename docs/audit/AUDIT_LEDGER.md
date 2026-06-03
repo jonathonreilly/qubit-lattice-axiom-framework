@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1191 |
+| unaudited | 1190 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
-| ~~audited_renaming~~ | 25 |
+| ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -68,8 +68,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 55 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
-| `audited_renaming` | 25 |
-| `unaudited` | 1430 |
+| `audited_renaming` | 26 |
+| `unaudited` | 1429 |
 
 | claim_type | count |
 |---|---:|
@@ -1328,6 +1328,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `flavor_interacting_matter_build_note_2026-05-30` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -5649,6 +5650,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** [U,C]=0 implies U H U† = H exactly for any circulant H, so b and r are unchanged and the idempotent-U(1) route pins nothing.  _(class `A`)_
 - **chain closes:** False — The commute/inertness identity closes by direct matrix algebra from Ps=J/3, Pd=I-J/3, and circulant H. The full note does not close because the chiral-grading no-go, C-rephasing/charge-gluing obstruction, generation-blind sector-selector claim, and r-table provenance are imported or hard-coded rather than supplied or derived in the restricted packet.
 - **rationale:** Independent algebra verifies that the idempotent U(1) commutes with C and is inert under conjugation on circulant H, matching K1-K2. K3 verifies generic Hermiticity breaking for a one-sided action, but the claim that this is exactly the retained blocked chiral grading is not supported by a provided authority. K4 is stated in the note and runner comments but is not executed as a runner check, and K5 hard-codes the r, charge, and color table rather than deriving the mass-spectrum values inside the packet. Therefore the narrow algebraic part is sound, but the full bounded theorem remains conditional on missing dependency/bridge material.
+- **auditor confidence:** high
+
+### `flavor_interacting_matter_build_note_2026-05-30`
+
+- **Note:** [`FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md`](../../docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the restricted-packet claim that the interacting-matter build moves the b=0 wall but leaves exact r=1/2 dependent on an unsupplied generation-specific chiral interaction channel.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-031700-73f89983-flavor_interacting_matte`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Interacting dynamics allegedly generates b!=0 while the r values in the three contact builds are set by an unsupplied matter-action coupling ratio, with C3-symmetric and epsilon channels unable to supply the required generation-specific chiral splitting.  _(class `E`)_
+- **chain closes:** False — The runner independently checks only elementary epsilon-channel algebra and Q(r) conversions. It does not instantiate the interacting kernels, solve the self-consistent b!=0 branch, derive the r table, or prove the C3-symmetric anticommuting-operator no-go.
+- **rationale:** The displayed epsilon values, hw=1 to hw=2 shift, Q(0)=1/3, Q(2/5)=3/5, Q(0.535)≈0.69, Q(1/2)=2/3, and Tr(I^2)/Tr((J-I)^2)=3/6 check algebraically. But the load-bearing interacting-dynamics and no-go claims are printed as stipulated constants/prose: the runner does not compute the three builds, the critical coupling, the continuous r(g) dependence, or the asserted C3 operator obstruction. Under the runner-source rule, this is not class C first-principles computation; the submitted chain reduces to asserted summary definitions rather than a derivation.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

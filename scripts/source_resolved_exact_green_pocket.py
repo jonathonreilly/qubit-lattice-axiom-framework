@@ -25,6 +25,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
+NOTE_PATH = os.path.join(ROOT, "docs", "SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md")
 
 import scripts.minimal_source_driven_field_probe as m  # noqa: E402
 
@@ -69,8 +70,11 @@ def _source_resolved_green_field(
             x, y, z = lat.pos[ls + i]
             val = 0.0
             for mx, my, mz in source_pos:
-                r = math.sqrt((x - mx) ** 2 + (y - my) ** 2 + (z - mz) ** 2) + GREEN_EPS
-                val += source_strength * math.exp(-GREEN_MU * r) / r
+                rho_eps = (
+                    math.sqrt((x - mx) ** 2 + (y - my) ** 2 + (z - mz) ** 2)
+                    + GREEN_EPS
+                )
+                val += source_strength * math.exp(-GREEN_MU * rho_eps) / rho_eps
             field[layer][i] = val / len(source_pos)
     return field
 
@@ -92,7 +96,10 @@ def main() -> None:
     print("  comparison: source-resolved field vs instantaneous 1/r field")
     print("=" * 84)
     print(f"h={H}, W={PW}, L={NL_PHYS}, source_cluster={len(source_nodes)} nodes")
-    print(f"field kernel: exp(-mu r)/(r+eps), mu={GREEN_MU}, eps={GREEN_EPS}")
+    print(
+        "field kernel: exp(-mu rho_eps)/rho_eps, "
+        f"rho_eps=rho+eps, mu={GREEN_MU}, eps={GREEN_EPS}"
+    )
     print(f"source strengths: {m.SOURCE_STRENGTHS}")
     print(f"target max |f|: {FIELD_TARGET_MAX}")
     print()
@@ -154,6 +161,12 @@ def main() -> None:
     # Per docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md "Hard-bar runner assertions" table.
     print()
     print("HARD-BAR ASSERTIONS")
+    with open(NOTE_PATH, encoding="utf-8") as f:
+        note_text = f.read()
+    note_kernel_ok = (
+        "rho_eps = rho + eps" in note_text
+        and "exp(-mu rho_eps) / rho_eps" in note_text
+    )
     n_pass = 0
     n_fail = 0
 
@@ -197,6 +210,14 @@ def main() -> None:
         n_pass += 1
     else:
         print(f"  FAIL: calibration gain {gain:.6e} not in (0, 100)")
+        n_fail += 1
+
+    # Bar 6: note/runner kernel convention sync.
+    if note_kernel_ok:
+        print("  PASS: kernel convention sync uses rho_eps = rho + eps")
+        n_pass += 1
+    else:
+        print("  FAIL: kernel convention sync missing rho_eps statement")
         n_fail += 1
 
     print(f"  === TOTAL: PASS={n_pass}, FAIL={n_fail} ===")

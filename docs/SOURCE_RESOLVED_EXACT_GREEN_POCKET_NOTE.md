@@ -6,7 +6,8 @@
 lattice family (`h = 0.5`, `W = 3`, `L = 20`, boundary-clipped cross5
 source cluster with 4 in-bounds nodes, source strengths
 `s in {0.001, 0.002, 0.004, 0.008}`) with a hand-selected Green-like
-kernel `exp(-mu r)/(r + eps)` at `mu = 0.08`, `eps = 0.5`, and an
+kernel `exp(-mu rho_eps)/rho_eps` with `rho_eps = rho + eps`,
+`mu = 0.08`, `eps = 0.5`, and an
 explicitly calibrated gain `2.131774e+00`. Frozen on disk.
 **Status authority:** independent audit lane only.
 **Claim scope:** at the declared family the runner reproduces (i) exact
@@ -68,8 +69,9 @@ The following modeling inputs are runner-selected; they are NOT
 derived from the physical `Cl(3)` local algebra / `Z^3` spatial
 substrate baseline in this note:
 
-- **Green-like kernel form** `exp(-mu r) / (r + eps)` with parameters
-  `mu = 0.08`, `eps = 0.5`. There is no derivation of this kernel
+- **Green-like kernel form** `exp(-mu rho_eps) / rho_eps`, where
+  `rho_eps = rho + eps`, with parameters `mu = 0.08`, `eps = 0.5`.
+  There is no derivation of this kernel
   shape or its parameter values from accepted framework primitives.
 - **Calibration gain** `gain = FIELD_TARGET_MAX / max|f_ref|`
   evaluating to `2.131774e+00` on this family, which sets the absolute
@@ -138,6 +140,7 @@ exits non-zero (see `scripts/source_resolved_exact_green_pocket.py`):
 | Green `F~M` exponent | `0.95 <= alpha_green <= 1.05` | `1.00` |
 | Mean `|green/inst|` ratio | `1.10 <= mean_ratio <= 1.40` | `1.235` |
 | Calibration gain finiteness | `0 < gain < 100` | `2.131774e+00` |
+| Kernel convention sync | note and runner state `rho_eps = rho + eps` and `exp(-mu rho_eps)/rho_eps` | present |
 
 These assertions verify the load-bearing observables on the declared
 family. They do not assert anything about size transfer, continuum
@@ -173,7 +176,8 @@ The frozen pocket uses:
 - exact lattice with `h = 0.5`, `W = 3`, `L = 20`
 - fixed cross5 source cluster clipped at the boundary, leaving 4 in-bounds source nodes
 - source strengths `s = 0.001, 0.002, 0.004, 0.008`
-- kernel `exp(-mu r) / (r + eps)` with `mu = 0.08`, `eps = 0.5`
+- kernel `exp(-mu rho_eps) / rho_eps`, `rho_eps = rho + eps`, with
+  `mu = 0.08`, `eps = 0.5`
 - calibration gain `2.131774e+00`
 
 Reduction check:
@@ -218,8 +222,9 @@ the repo baseline.
 - the source cluster is boundary-clipped (4 in-bounds of cross5
   template) rather than fully symmetric, so this is a bounded pocket
   control, not a clean geometric refinement proof
-- the Green kernel form `exp(-mu r) / (r + eps)` and parameters
-  `mu = 0.08`, `eps = 0.5` are runner-selected, not derived
+- the Green kernel form `exp(-mu rho_eps) / rho_eps`,
+  `rho_eps = rho + eps`, and parameters `mu = 0.08`, `eps = 0.5`
+  are runner-selected, not derived
 - the calibration gain `2.131774e+00` is runner-tuned to a chosen
   `FIELD_TARGET_MAX = 0.02`, not a derived coupling
 - the foundational lattice/propagation infrastructure (`Lattice3D`,

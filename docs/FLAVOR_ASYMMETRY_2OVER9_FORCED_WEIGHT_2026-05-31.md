@@ -1,4 +1,4 @@
-# Flavor — last mile: the asymmetry channel's 2/9 is a FORCED cohomological weight-density at the framework-forced d=3 (derived modulo operator-realization)
+# Flavor — last mile: the asymmetry channel's 2/9 is a FORCED local density at the framework-forced d=3 (operator side repaired; physical readout open)
 
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
@@ -11,28 +11,35 @@ The capstone separated charged-lepton flavor into channels and identified the **
 genuinely *derivable* one (vs the empirical scale & ratio inputs). Last mile: at the framework-forced `d=3`,
 is the asymmetry value `2/9` a **topological prediction** — and do the `2/9` guises unify?
 
-## Verdict — 2/9 is a FORCED cohomological weight-density at the forced d=3 (derived-modulo-operator-realization)
+## Verdict — 2/9 is a FORCED local density at the forced d=3 (derived modulo physical readout)
 **What is now established (genuine):**
-1. **`d=3` is forced** on a retained chain (`three_generation_observable` + `M3C-Burnside` +
-   `no_proper_quotient`, audited_clean): `N=3` = the hw=1 corners of `(Z₂)³` under the C₃ regular rep.
-2. **`L₃(1,2) = 2/9` exactly** (retained_bounded), and it is the genuine **Atiyah-Bott / APS-Donnelly
-   equivariant fixed-point transverse-weight density** — a real cohomological/index density, *not* an
-   arbitrary normalization.
+1. **`d=3` is forced** on a retained chain
+   ([`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) +
+   [`THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md) +
+   [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)):
+   `N=3` = the hw=1 corners of `(Z₂)³` under the C₃ regular rep.
+2. **`L₃(1,2) = 2/9` exactly**, and
+   [`FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md`](FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md)
+   now supplies the packet-local executable finite-KS bridge: raw cyclic axis permutation fails, a
+   site-local `Z₂` gauge repairs it, the corrected `C₃` action has transverse weights `(1,2)`, and the
+   local density is `2/9` while global eta/equivariant readouts vanish.
 3. **NEW ADVANCE — the `(1,2)` weight is forced, not chosen.** It is the **unique trace-free pair**
    (`a₁+a₂ ≡ 0 mod 3`) = the regular-rep **complement of the C₃ singlet** (the trace-free 2-plane);
    `(1,1)`/`(2,2)` are not trace-free → `1/9`. So once the carrier is "generation space minus the diagonal
    singlet," the transverse weights are **pinned to `(1,2)` → `2/9`** by the retained C₃ character pattern.
    This *removes* the prior "weight-selection is structural input" caveat.
 
-So: **`d=3` forced + `(1,2)` weight forced ⟹ `2/9` is forced *as a cohomological weight-density*.** It is the
-closest the campaign has reached to a genuine topological prediction of a charged-lepton datum, and it is *not*
-a value-selection (that problem was dissolved by the channel reframe).
+So: **`d=3` forced + `(1,2)` weight forced + finite-KS operator realization ⟹ `2/9` is forced as a local
+fixed-point density on this bounded surface.** It is the closest the campaign has reached to a genuine
+topological prediction of a charged-lepton datum, and it is *not* a value-selection (that problem was
+dissolved by the channel reframe).
 
 ## Honest residuals (do not overclaim)
-- **Operator-realization is the one remaining gate.** No framework Dirac operator is *proved* to produce the
-  APS fixed-point denominator `∏_j(ζ^{k a_j}−1)⁻¹` (`closure_c_staggered_dirac_gate` = open_gate). Promotion
-  from "forced weight-density" to "closed topological prediction" needs exactly this bridge — the *same class*
-  as the chirality/operator-realization gates in this lane. A **live route, not a no-go.**
+- **Physical readout is the one remaining gate.** The finite-KS operator side is now separated into the local
+  density bridge linked above. Promotion from "forced local density" to "closed topological prediction" still
+  needs the physical identification that the charged-lepton asymmetry reads one fixed-point summand rather than
+  the vanishing global eta/equivariant invariant or the extensive sum over fixed sites. A **live route, not a
+  no-go.**
 - **`2/9` is the weight-density, not the index integer.** The equivariant `η_g(T) ∈ ℤ[ζ₃]`; `2/9` has minpoly
   `9x−2`, not an algebraic integer, so it is the *transverse-weight density*, not the `η` invariant itself.
 - **The four guises corroborate, they do not unify.** `(d−1)/d²`, `2/d²`, `(d²−1)/12d`, `L_d(1,2)` are
@@ -47,15 +54,22 @@ a value-selection (that problem was dissolved by the channel reframe).
   **`d=3` forced**; **the `(1,2)` transverse weight forced**; and **`2/9` as a forced cohomological
   weight-density** in the asymmetry channel.
 - **EMPIRICAL INPUT (read in their channels, not forced):** the scale `a` and the ratio `r=1/2` (Yukawa-like).
-- **ONE NAMED OPEN BRIDGE:** the operator-realization (framework Dirac op → APS fixed-point density), which
-  would promote the asymmetry `2/9` from forced-weight to closed-prediction — the single live derivable target.
+- **ONE NAMED OPEN BRIDGE:** the physical single-fixed-point readout identification, which would promote the
+  asymmetry `2/9` from forced local density to closed prediction — the single live derivable target.
 
-This completes the derivable arc: the framework's *predictive* charged-lepton content is the topological
-asymmetry `2/9` (forced as a weight-density at the forced `d=3`, with the weight forced), pending one named
-operator-realization bridge; the scale and ratio are correctly carried as channel inputs.
+This completes the derivable operator-side arc: the framework's *candidate predictive* charged-lepton content
+is the topological asymmetry `2/9` (forced as a local density at the forced `d=3`, with the weight forced),
+pending one named physical single-summand readout bridge; the scale and ratio are correctly carried as channel
+inputs.
 
-## Stale-citation flags
-- `axiom_first_z_n_equivariant_spectral_asymmetry` (retained_bounded, `L₃(1,2)=2/9`);
-  `three_generation_observable*` (retained, `d=3`); `new_parity_is_circulant_phase` (retained_bounded, C₃ pattern);
-  `koide_dimensionless_radian_native_unit_separation` (retained_bounded, radian separation);
-  `closure_c_staggered_dirac_gate` = open_gate (the operator-realization bridge).
+## Load-bearing dependencies repaired 2026-06-03
+
+- [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md),
+  [`THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md`](THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md),
+  and [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
+  supply the retained finite `d=3` generation-carrier algebra.
+- [`FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md`](FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md)
+  supplies the executable finite-KS local-density bridge for the `(1,2)` weight and `2/9` density.
+
+The broader `Z_N` spectral-asymmetry/global-ABSS packets and the charged-lepton physical single-summand
+readout remain outside the closed load-bearing chain here.

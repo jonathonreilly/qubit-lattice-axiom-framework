@@ -1,27 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_operator_realization_local_density_2026_05_31.py
-runner_sha256: fd0038f787d8b8334821dc9ddee09e26fc0113fb4bcb0dddfe36ebcfa0b09fbb
+runner_sha256: 032cad71347f71898f85f26c38d60df30ed6f7692d2155a95169215ba9efa127
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
-[PASS] O1 local Atiyah-Bott density L_3(1,2)=2/9 (det(1-dg|transverse)=3); (1,1)->1/9
-[PASS] O2 staggered chirality {H,Gamma5}=0 -> +/- spectrum -> global eta=sum sign=0 (chi=0)
-       LOCAL per-fixed-point density survives the global vanishing
-[PASS] O3 local density uses ONLY C3-equivariance + transverse linearization, NOT Gamma5 -> escapes chirality gate
-       Gamma5 KILLS the global; it is NOT needed for the local density -> distinct from the orbit-splitting no-go
-[PASS] O4 operator-specific (not tautology): raw perm fails (||[U,H]||=13.9), only gauge-corrected U_phys=U.S commutes; (1,2) extracted from hopping tangent
-       C3-equivariance is a nontrivial operator fact (retained S3-is-gauge); weights read off U_phys eigenvalues {1,w,w^2}
+FLAVOR OPERATOR-REALIZATION LOCAL DENSITY REPAIR
+[PASS] local Atiyah-Bott density: L_3(1,2)=2/9 and degenerate L_3(1,1)=1/9
+       L_3(1,2)=2/9; L_3(1,1)=1/9
+[PASS] transverse determinant is det(1-dg)=(1-omega)(1-omega^2)=3
+       det=3
+[PASS] C3 tangent splits as singlet plus faithful transverse weights (1,2)
+       charpoly=(lam - 1)*(lam**2 + lam + 1); transverse eigenweights are omega and omega^2
+[PASS] L=4: staggered operator is antisymmetric and gamma5-anticommuting
+       ||D+D^T||=0.0e+00; ||D gamma5 + gamma5 D||=0.0e+00
+[PASS] L=4: raw C3 axis permutation fails but a site-local Z2 gauge repairs it
+       raw ||PDP^T-D||=13.8564; gauge residual=0.0e+00; corrected comm=0.0e+00; ||U^3-I||=0.0e+00
+[PASS] L=4: global eta, equivariant eta, and graded Lefschetz traces vanish
+       zero_modes=8; eta=0.0e+00; |eta_U|=4.0e-15; |Tr(gamma5 U)|=0.0e+00
+[PASS] L=6: staggered operator is antisymmetric and gamma5-anticommuting
+       ||D+D^T||=0.0e+00; ||D gamma5 + gamma5 D||=0.0e+00
+[PASS] L=6: raw C3 axis permutation fails but a site-local Z2 gauge repairs it
+       raw ||PDP^T-D||=25.4558; gauge residual=0.0e+00; corrected comm=0.0e+00; ||U^3-I||=0.0e+00
+[PASS] L=6: global eta, equivariant eta, and graded Lefschetz traces vanish
+       zero_modes=8; eta=0.0e+00; |eta_U|=1.9e-15; |Tr(gamma5 U)|=0.0e+00
+[PASS] local/global split is explicit: the 2/9 local density survives only as a fixed-point summand
+       the runner does not promote the single summand to the physical observable
 
-SCORECARD PASS=4 FAIL=0
-VERDICT: operator-realization bridge SUBSTANTIALLY BUILT (operator side). 2/9 is the GENUINE
-Atiyah-Bott local fixed-point density of the native C3-equivariant staggered Dirac on Z^3 (verified
-L=4,6): operator-intrinsic weights (1,2), det(1-dg)=3, density 2/9 -- surviving the global index/eta
-vanishing (Gamma5/chi=0), distinct from the chirality gate, NOT a rep-weight tautology. The asymmetry
-2/9 is thus a derived LOCAL TOPOLOGICAL DENSITY of a real framework operator. REMAINING (sharper): the
-physical identification delta = single-fixed-point local density (not the vanishing global eta) +
-the audited_conditional Cl(3) PL-S^3/ABSS global bridge. Closest to a closed prediction the campaign has.
+SCORECARD PASS=10 FAIL=0
+VERDICT: operator side repaired. The native finite staggered operator has a nontrivial gauge-corrected C3 symmetry, its tangent weights give the local density 2/9, and the global eta/equivariant readouts vanish. Remaining open bridge: physical identification of the single fixed-point local density as the charged-lepton asymmetry observable.
 
 ----- stderr -----
 

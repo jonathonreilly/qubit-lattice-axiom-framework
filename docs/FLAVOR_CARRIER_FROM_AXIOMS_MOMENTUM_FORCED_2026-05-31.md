@@ -45,14 +45,19 @@ single out the regulator that places exactly three poles at the hw=1 corners. Ve
 
 Singling out the hw=1 C₃ triplet requires the **staggered / Kawamoto-Smit first-order CHIRAL operator** =
 single-mode Grassmann fermionization of the `M₂(ℂ)` qubit **+** chiral anticommutation `{ε,D}=0` (`ε=(−1)^{x+y+z}`).
-A1 gives a **bosonic** qubit; these are *premises* (`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE`
-premise table, BlockT1 + `{ε,D}=0`; the note is conditional, its own discriminator calls fermionization
+A1 gives a **bosonic** qubit; these are *premises*
+([`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md),
+premise table BlockT1 + `{ε,D}=0`; the note is conditional, its own discriminator calls fermionization
 "compatibility, not forcing"). So the locus is a **genuine import**, not definitional.
 
 **The consolidation:** this import — the C₃-orbit-splitting chiral grading on the generation factor — is
-**the same chirality gate** the framework's generation-identification and Koide `Q=2/3` work independently
-reduce to. So the carrier *locus* is **not a new independent input**; it collapses into the one recurring
-chirality import the whole flavor sector shares.
+the same named chirality-gate family tracked by
+[`KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md)
+and the scope-limited
+[`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md).
+So the carrier *locus* is **not a new independent input**; it collapses into the one recurring chirality
+import family the flavor sector already isolates. This consolidation is a gate alignment, not a proof
+that the physical generation bridge has closed.
 
 (Note: "physical species = propagator poles / band-degeneracies" is *near-definitional* once you have a
 propagator — granting it changes nothing; it only labels *which* momenta in T³ are species. The genuine
@@ -61,9 +66,11 @@ import is the *operator class* that fixes the pole locus, not the pole reading.)
 ### BASEPOINT r=1/2 — a separate continuous input
 The discrete pole/corner structure fixes only `δ=2/9` (the equivariant-η / Atiyah-Bott density
 `L₃(1,2)=2/9`, retaining the index apparatus — distinct from the bare doublet character `ω+ω²=−1`, runner
-C1). It says nothing about the **continuous** Yukawa modulus `r=|b|²/a²`: `r` is free in `F=aI+b(J−I)`,
-`Q=1/3+(2/3)r`, `r=1/2 ⟺ Q=2/3` (runner D1). `r=1/2` (tied to the signed/√m-sign readout class) remains a
-genuine continuous input, orthogonal to carrier selection.
+C1). It says nothing about the **continuous** Yukawa modulus `r=|b|²/a²`: for `F=aI+b(J−I)`, the runner
+derives `Tr F = 3a`, `Tr F² = 3a²+6b²`, hence
+`Q(F)=Tr(F²)/(Tr F)² = 1/3+(2/3)r` (runner D1). Thus `r=1/2 ⟺ Q=2/3` is a separate specialization
+(runner D2). `r=1/2` (tied to the signed/√m-sign readout class) remains a genuine continuous input,
+orthogonal to carrier selection.
 
 ## Net standing of the charged-lepton flavor inputs (after this attack)
 1. **Carrier TYPE = momentum factor** — **DERIVED** from framework baseline (spectral theorem on commuting translations).
@@ -84,8 +91,12 @@ lever that would also discharge generation-ID and `Q=2/3` simultaneously.
 
 ## Provenance (verified 2026-05-31; derivation stands on framework baseline, ledger status non-constraining per directive)
 - Layer A is a direct framework baseline + spectral-theorem construction (no note authority needed).
-- The Layer-B import premises are sourced to `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE` (premise
-  table BlockT1 + `{ε,D}=0`; conditional). The coinciding chirality gate is the one named in
-  `koide_z3_equivariant_anticommuting_no_go` (retained_bounded) and the generation-ID work.
-- `δ=2/9` = `L₃(1,2)` equivariant-η density (verified ≠ bare character −1). `r=1/2` free (verified).
+- The Layer-B import premises are sourced to
+  [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+  (premise table BlockT1 + `{ε,D}=0`; conditional). The coinciding chirality gate is the one named in
+  [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
+  (retained_bounded) and
+  [`KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md).
+- `δ=2/9` = `L₃(1,2)` equivariant-η density (verified ≠ bare character −1). `Q(F)=1/3+(2/3)r`
+  is derived from `F=aI+b(J-I)`, and `r=1/2` is free (verified).
 - Does not load-bear on `closure_c_staggered_dirac_gate` / `koide_phase_aps_eta_parity_route`.

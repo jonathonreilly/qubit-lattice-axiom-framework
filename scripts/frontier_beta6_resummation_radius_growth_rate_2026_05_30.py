@@ -260,6 +260,12 @@ dF_per_cube = 4
 dn_per_cube = 4
 check("K-built regime per-cube increment dF = dn = 4 (tree/box gluing, links<=2-face)",
       dF_per_cube == 4 and dn_per_cube == 4)
+k_sym = sp.symbols("k_sym", integer=True, positive=True)
+F_tree = 4 * k_sym + 2
+euler_exponent = sp.simplify(1 - F_tree)
+action_power = sp.simplify(F_tree - 1)
+check("K-built tree exponent: F=4k+2 -> 18^{-(4k+1)} beta^{4k+1}",
+      euler_exponent == -(4 * k_sym + 1) and action_power == 4 * k_sym + 1)
 
 def R_euler(growth_product):
     return mp.mpf(18) / mp.mpf(growth_product) ** (mp.mpf(1) / 4)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py
-runner_sha256: 2218bb7b4d4ce4198b72c6b9e8ed5b0fb99ed274e06124579c13c7ca67f6abb7
+runner_sha256: b1cd9ea3f8fbda93b93076ad131794e3ffd2cce2a0cd60ad2e0ad8c834b07e35
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.92
+elapsed_sec: 1.98
 status: ok
 ----- stdout -----
 === [A] J Taylor coefficients from the retained Picard-Fuchs recurrence ===
@@ -43,6 +43,7 @@ status: ok
 [PASS] single cube: F=6 -> Euler weight 18^(1-6)=18^-5 (matches d5 prefactor 1/18^5)
 [PASS] two-cube box: share 1 face -> F=10 -> 18^(1-10)=18^-9 (on-main beta^9 box term)
 [PASS] K-built regime per-cube increment dF = dn = 4 (tree/box gluing, links<=2-face)
+[PASS] K-built tree exponent: F=4k+2 -> 18^{-(4k+1)} beta^{4k+1}
     g_K=1.0:  R_Euler = 18/g_K^(1/4) = 18.0
     g_K=7.0:  R_Euler = 18/g_K^(1/4) = 11.0662
     g_K=81.0:  R_Euler = 18/g_K^(1/4) = 6.0
@@ -57,7 +58,7 @@ status: ok
     g_crit (Euler-regime radius hits 6 here)       = 81.0
 [PASS] VERDICT: Euler-18 sector radius > 6 for all g_K < 81  ::  K-built sector radius > 6 only under the explicit growth-product condition g_K < 81; the full radius is min(K-built, >=3-face baryon channel), and the baryon channel is open)
 
-SCORECARD: PASS=23 FAIL=0
+SCORECARD: PASS=24 FAIL=0
 
 ----- stderr -----
 

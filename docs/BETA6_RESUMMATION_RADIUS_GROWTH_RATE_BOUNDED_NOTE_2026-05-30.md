@@ -109,12 +109,14 @@ order-`(beta)` contribution of all `k`-cube K-built clusters is conditionally
 controlled by the product `g_K = lambda_K rho_comb`:
 
 ```text
-|.| <=  g_K^k  x  18^{-(4k+2)}  x  |beta|^{4k+1}.
+|.| <=  g_K^k  x  18^{-(4k+1)}  x  |beta|^{4k+1}.
 ```
 
-so the `k`-sum is a geometric series in `|beta|^4` that converges iff
-`g_K 18^{-4} |beta|^4 < 1`. This gives the closed-form **K-built radius
-bound**
+Here `F = 4k+2`, so the Euler factor is `18^(1-F) = 18^{-(4k+1)}`.
+This corrects an earlier off-by-one display exponent; it changes only the
+overall prefactor, not the per-cube ratio. The `k`-sum is a geometric series in
+`|beta|^4` that converges iff `g_K 18^{-4} |beta|^4 < 1`. This gives the
+closed-form **K-built radius bound**
 
 ```text
 R_Euler(g_K) = 18 / g_K^{1/4},

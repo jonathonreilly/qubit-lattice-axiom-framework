@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1185 |
+| unaudited | 1184 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 89 |
+| `audited_conditional` | 90 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1424 |
+| `unaudited` | 1423 |
 
 | claim_type | count |
 |---|---:|
@@ -1162,6 +1162,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5759,6 +5760,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The gauge-corrected C3 action U_phys is asserted to commute with the native staggered Dirac, have hopping-tangent eigenvalues {1, omega, omega^2}, and therefore give the local Atiyah-Bott density L_3(1,2)=2/9.  _(class `A`)_
 - **chain closes:** False — The algebraic fixed-point formula closes for assumed transverse weights (1,2), but the restricted packet does not establish the native staggered-Dirac operator facts needed to supply those weights. In the runner, the raw-permutation failure, gauge-corrected commutation, U_phys^3=I, L=4/L=6 verification, and tangent-weight extraction are printed or passed by unconditional True rather than computed.
 - **rationale:** The displayed identity L_3(1,2)=2/9 checks algebraically, as does det(1-dg|transverse)=3 and the stated L_3(1,1)=1/9 comparison. However, the operator-realization part is not verified by the supplied runner source: the load-bearing C3-equivariance and operator-intrinsic weight claims are not computed. The note also explicitly leaves the physical readout delta = single-fixed-point local Lefschetz density and the Cl(3) PL-S3/ABSS global bridge as remaining conditional work.
+- **auditor confidence:** high
+
+### `flavor_q1_default_rests_on_prr_note_2026-05-30`
+
+- **Note:** [`FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_NOTE_2026-05-30.md`](../../docs/FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic audit of the C3 reference-state cone and retained Koide readout: C3 admits the non-tracial 1:1 state and the Q functional is independent of rho; repo-baseline/PRR status was not verified.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-033342-e77f5195-flavor_q1_default_rests_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** C3 invariance alone leaves a two-block reference-state cone open, including both the tracial 1:2 block weighting and the admissible non-tracial 1:1 weighting, while the retained Koide readout is a spectral invariant of H and does not use rho.  _(class `A`)_
+- **chain closes:** False — The matrix and readout algebra closes conditional on C3 being the complete native generation-factor symmetry. The missing step is a retained or accepted authority proving that framework baseline supplies no stronger generation-factor symmetry and that full-U(3)/PRR is not part of baseline.
+- **rationale:** The runner source performs real algebraic checks rather than merely printing pass constants, and the displayed projector, block-mass, eigenvalue, determinant, and Koide formulas check out under the packet definitions. Those checks establish the conditional counterexample that C3 invariance alone does not force the trace and that the reference state does not enter the retained Q functional. The broader conclusion that this exhausts the framework baseline, and that PRR/full-U(3) is only an unaudited external premise, imports repo-level status not supplied by any cited authority in the restricted packet.
 - **auditor confidence:** high
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`

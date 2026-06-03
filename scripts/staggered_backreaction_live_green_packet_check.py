@@ -8,6 +8,9 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
+NOTE_PATH = ROOT / "docs" / "STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md"
+GREEN_HELPER = ROOT / "scripts" / "frontier_staggered_backreaction_green_closure.py"
+BASE_HELPER = ROOT / "scripts" / "frontier_staggered_backreaction_prototype.py"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 if str(ROOT) not in sys.path:
@@ -37,6 +40,20 @@ def _compute():
 
 
 def main() -> int:
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    green_source = GREEN_HELPER.read_text(encoding="utf-8")
+    base_source = BASE_HELPER.read_text(encoding="utf-8")
+    helper_source_ok = (
+        "frontier_staggered_backreaction_green_closure.py" in note_text
+        and "frontier_staggered_backreaction_prototype.py" in note_text
+        and len(green_source.splitlines()) > 300
+        and len(base_source.splitlines()) > 500
+        and "import frontier_staggered_backreaction_prototype as base" in green_source
+        and "def _make_graphs(" in base_source
+        and "def _build_hamiltonian(" in base_source
+        and "def _force_from_phi(" in base_source
+    )
+
     summaries, _raw_by_map, cal_by_map = _compute()
     best = summaries[0]
     baseline = next(summary for summary in summaries if summary.mapping == "screened_poisson")
@@ -70,7 +87,8 @@ def main() -> int:
         )
 
     assertions_ok = (
-        best.mapping == "resistance_yukawa"
+        helper_source_ok
+        and best.mapping == "resistance_yukawa"
         and improvement > 2.5
         and best.cycle_raw_gap < 0.35
         and best.holdout_raw_gap < 0.02
@@ -84,6 +102,7 @@ def main() -> int:
 
     print()
     print("SAFE READ")
+    print(f"  [{'PASS' if helper_source_ok else 'FAIL'} (C)] helper sources exposed and untruncated")
     print(f"  best map: {best.mapping}")
     print(f"  raw cycle-gap improvement over screened Poisson: {improvement:.2f}x")
     print(f"  raw holdout gap: {best.holdout_raw_gap:.3e}")

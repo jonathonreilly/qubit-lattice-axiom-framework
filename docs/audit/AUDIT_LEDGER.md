@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 641 |
+| **retained_bounded** | 640 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1224 |
+| unaudited | 1225 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,14 +61,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 11 |
+| `audit_in_progress` | 10 |
 | `audited_clean` | 974 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1463 |
+| `unaudited` | 1464 |
 
 | claim_type | count |
 |---|---:|
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
@@ -234,6 +233,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_dense_largen_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -597,7 +597,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -2693,6 +2692,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the densest slice N = 100, both pruned rows fit cleaner power laws than either plain mode, with pruned LN R^2 = 0.994 and pruned linear R^2 = 0.825 versus plain linear R^2 = 0.634 and plain LN R^2 = 0.248.  _(class `C`)_
 - **chain closes:** True — The provided runner and helper sources actually generate matched graphs, compute gravity deltas for the declared modes and mass counts, and fit the declared positive window without hard-coded target values. The cached stdout matches the note's numerical claims and supports the bounded, mixed conclusion.
 - **rationale:** The source note makes a narrow bounded claim about the runner's computed mass-window fits, not a full gravity-law rescue. The runner source and helper chain compute the graph, pruning, propagation, deltas, and log-log fits directly from the declared simulation setup, and the reported R^2 comparisons are reproduced in the provided stdout. No cited non-retained authority, external comparator, renaming, or tuned imported value is load-bearing in this packet.
+- **auditor confidence:** high
+
+### `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure algebraic equivalence on positive real 3-vectors under the stated unitary C_3 character decomposition: Q(v)=2/3 iff a_0^2=2|z|^2, with the displayed sigma and 45-degree corollaries.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-003755-3441b2ce-charged_lepton_koide_con`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Plancherel/Parseval gives |v|^2 = a_0^2 + 2|z|^2 and (v_1+v_2+v_3)^2 = 3a_0^2, hence Q(v) = (a_0^2 + 2|z|^2)/(3a_0^2).  _(class `A`)_
+- **chain closes:** True — The conclusion follows directly from the stated orthonormal C_3 Fourier basis and the definition of Q(v). Positivity ensures v_1+v_2+v_3>0, so the divisions and angle branch used in the corollaries are valid.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the definitions in the packet, not a definition substitution, external comparator, or tuned numerical match. The runner source constructs symbolic positive real variables, derives the Fourier coefficients, verifies the norm and sum identities parametrically, and checks both directions of the equivalence without helper imports or hard-coded contested premises. Independent formula inventory finds the displayed E1, E3, E4, sigma, angle, and unconstrained-product sanity statements consistent with the stated conventions.
 - **auditor confidence:** high
 
 ### `charged_lepton_koide_note_2026-04-18`
@@ -8482,19 +8494,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The readout map is exactly L(u,v,w,z)=diag(u,v,w), with the z slot mapped to zero.  _(class `A`)_
 - **chain closes:** True — Given the stated single-slot images, the rank, kernel, image, fiber, and quotient claims follow by elementary linear algebra. The broader selector-admissibility factorization is explicitly excluded from the theorem under audit.
 - **rationale:** The bounded claim is a direct algebraic closure from the explicitly defined map and its computed matrix L = [[1,0,0,0],[0,1,0,0],[0,0,1,0]]. The runner source does instantiate the relevant projectors and Γ_1 action to check the stated single-slot images, then verifies the kernel, quotient fibers, covariance, and invariant quadratic family. The note cleanly separates the unproved admissibility-implies-constancy statement as conditional, so that open extension does not contaminate the bounded theorem.
-- **auditor confidence:** high
-
-### `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25`
-
-- **Note:** [`KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded signed-algebra bridge only: assuming the retained C_3 circulant/character eigenvalue identities and the scoped equal-weight Frobenius extremum a^2 = 2|b|^2, the signed algebraic ratio Q_alg(lambda) = (sum_k lambda_k^2)/(sum_k lambda_k)^2 equals 2/3 when the denominator is nonzero. The positive-vector Koide interpretation is limited to positive eigenvalue chambers and no physical charged-lepton readout, phase selection, mass-square-root identification, or downstream Koide closure is audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-gpt-5.5-2026-05-27`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Using the retained Fourier identities sum(lambda_k)=3a and sum(lambda_k^2)=3a^2+6|b|^2, substitute the scoped Frobenius-extremum condition a^2=2|b|^2 to get Q_alg(lambda)=6a^2/9a^2=2/3.  _(class `A`)_
-- **chain closes:** True — All direct dependencies are retained-grade and supply exactly the algebraic surfaces used: circulant/character sums, the scoped equal-weight Frobenius extremum, and the positive-vector cone equivalence for chamber-limited interpretation. The runner verifies the exact 2/3 ratio, non-extremal controls, existence of a positive chamber, and non-positivity of some phases with PASS=9 FAIL=0.
-- **rationale:** No-go/admission gate: the row does not claim a no-go, a global positive-spectrum theorem, or a physical charged-lepton Koide derivation. Within the stated signed algebraic scope, the derivation closes by direct substitution from retained inputs and exact rational runner checks. Residual risk is explicitly outside scope: selecting the equal-weight Frobenius functional as physical, proving lambda_k=sqrt(m_k), choosing a phase chamber, or promoting any downstream Koide parent requires separate retained bridge work.
 - **auditor confidence:** high
 
 ### `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`

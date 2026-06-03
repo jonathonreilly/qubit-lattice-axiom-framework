@@ -1,0 +1,32 @@
+=== Part A. Cite-check on origin/main parent ===
+[PASS] parent_note_exists_on_origin_main (len=21594)
+[PASS] parent_runner_exists_on_origin_main (len=29320)
+[PASS] parent_cache_exists_on_origin_main (len=5807)
+[PASS] parent_ledger_row_loaded (rows=2647)
+[PASS] parent_ledger_row_present (key=rp_p2_gauge_extension_and_realization_residual_note_2026-05-28)
+[PASS] parent_effective_status_audited_conditional (got=audited_conditional)
+[PASS] parent_claim_type_bounded_theorem (got=bounded_theorem)
+[PASS] parent_dep_det_present (deps=['reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10', 'staggered_only_det_positivity_case_a_note_2026-05-17'])
+[PASS] parent_dep_gauge_half_present (deps=['reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10', 'staggered_only_det_positivity_case_a_note_2026-05-17'])
+[PASS] auditor_discharge_alternative_ii_present (phrase_found=True)
+=== Part B. Inline verification of narrowed claims ===
+[PASS] B1_h_anti_hermitian (max|h+h^dag|=0.000e+00)
+[PASS] B1_decaying_eigenvalue_count_equals_L (got_count=4, expected=4)
+[PASS] B1_decaying_eigenvalues_real_positive (max|Im|=5.175e-28, min Re=0.145898)
+[PASS] B1_H_hat_spectrum_nonneg (min eig(H_hat)=0.481212)
+[PASS] B1twist_h_anti_hermitian (max|h+h^dag|=0.000e+00)
+[PASS] B1twist_decaying_eigenvalue_count_equals_L (got_count=4, expected=4)
+[PASS] B1twist_decaying_eigenvalues_real_positive (max|Im|=2.909e-16, min Re=0.145898)
+[PASS] B2_finite_relabeling_at_theta_0 (theta=2.766263, S_+^Wilson=10.617127, S_+^abstract=10.617127)
+[PASS] B2_finite_relabeling_at_theta_1 (theta=-2.916717, S_+^Wilson=10.861521, S_+^abstract=10.861521)
+[PASS] B2_finite_relabeling_at_theta_2 (theta=-2.669632, S_+^Wilson=10.398732, S_+^abstract=10.398732)
+[PASS] B2_finite_relabeling_at_theta_3 (theta=2.336824, S_+^Wilson=9.313028, S_+^abstract=9.313028)
+[PASS] B2_finite_relabeling_at_theta_4 (theta=-3.013896, S_+^Wilson=10.955218, S_+^abstract=10.955218)
+[PASS] B3_companion_excludes_dynamical_gauge_integration (found=True)
+=== Part C. Hostile-audit invariants ===
+[PASS] C1_parent_text_unchanged_vs_origin_main (len_origin=21594, len_local=21594)
+[PASS] C2_companion_claim_type_bounded_theorem (front-matter claim_type=bounded_theorem)
+[PASS] C3_status_authority_audit_lane_only (front-matter status authority)
+[PASS] C4_no_status_lift_claim (scope discipline)
+
+SCORECARD: PASS=27 FAIL=0

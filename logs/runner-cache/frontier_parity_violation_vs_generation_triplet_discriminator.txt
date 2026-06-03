@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_parity_violation_vs_generation_triplet_discriminator.py
+runner_sha256: c7d201917b4b28fcc2a2bcdb7466611222078e81de2a89cba6aae1bab3de8774
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+============================================================================
+RETAINED PARITY/CHIRAL VIOLATION vs THE GENERATION TRIPLET
+============================================================================
+
+  hw=1 triplet (generations): [(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+  hw=2 triplet (3-bar):       [(0, 1, 1), (1, 0, 1), (1, 1, 0)]
+
+----------------------------------------------------------------------------
+(A) chiral eps (H -> -H operation): momentum flip by (pi,pi,pi)
+----------------------------------------------------------------------------
+  [PASS] eps maps the hw=1 triplet ENTIRELY into the hw=2 triplet  (image = [(0, 1, 1), (1, 0, 1), (1, 1, 0)])
+  [PASS] eps does NOT act within the hw=1 triplet (image disjoint from hw1)
+        -> eps relates generations (3) to anti-generations (3-bar),
+           NOT one generation to another. It cannot lift the hw=1
+           degeneracy (it is not an operator on the triplet).
+
+----------------------------------------------------------------------------
+(B) spatial inversion p -> -p (mod 2pi)
+----------------------------------------------------------------------------
+  [PASS] inversion fixes every hw=1 corner (acts as identity on the triplet)
+        -> identity on the triplet; commutes with every mass matrix;
+           cannot lift the degeneracy.
+
+----------------------------------------------------------------------------
+(C) axis permutation S_3 (the degeneracy-forcing group)
+----------------------------------------------------------------------------
+  [PASS] every axis permutation maps the hw=1 triplet onto itself (acts within)
+  [PASS] an axis transposition genuinely swaps two generations (moves 2, fixes 1)  (moved 2 corners)
+
+----------------------------------------------------------------------------
+The three operations are distinct
+----------------------------------------------------------------------------
+  [PASS] eps (hw1->hw2) != axis permutation (hw1->hw1)
+  [PASS] inversion (identity) != axis transposition (nontrivial on hw1)
+
+============================================================================
+VERDICT
+============================================================================
+  THE RETAINED PARITY/CHIRAL VIOLATION DOES NOT REACH THE GENERATION
+  TRIPLET.
+  * The chiral eps operation (the one behind H -> -H) maps the hw=1
+    triplet ENTIRELY onto the hw=2 (3-bar) triplet: it relates
+    generations to anti-generations, not one generation to another.
+    It is not even an operator on the triplet, so it cannot lift the
+    hw=1 S_3 mass degeneracy.
+  * Spatial inversion fixes every hw=1 corner -> identity on the
+    triplet -> cannot lift the degeneracy.
+  * The group that DOES act within the triplet, and whose breaking
+    lifts the degeneracy, is the axis-permutation S_3 -- a DISTINCT
+    operation from the framework's chiral/parity violation.
+
+  Honest consequence: the 'cancel the flip using the framework's
+  existing parity violation' route does NOT reach the generations.
+  The chiral/parity violation lives on the 3 <-> 3-bar
+  (particle/antiparticle-like) axis; the generation S_3 -> C_3
+  breaking is a SEPARATE input, in the flavor sector (the unaudited
+  a3_route1 / yt_class_6,7 C_3-breaking cluster), not supplied by the
+  retained CPT parity violation.
+
+============================================================================
+PASS=7 FAIL=0
+
+----- stderr -----
+

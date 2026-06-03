@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 635 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1230 |
+| unaudited | 1229 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 4 |
 | `audited_clean` | 975 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1469 |
+| `unaudited` | 1468 |
 
 | claim_type | count |
 |---|---:|
@@ -1128,6 +1128,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5251,6 +5252,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** False — Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The algebraic checks close for the formulas actually provided, so class A is appropriate. The broader claim that this stipulated Lüders two-sector update is the physical emergent charged-lepton records flow is not derived in the restricted packet, and the note’s finite r=1 attractor wording is not a fixed point of r -> 2r^2.
 - **rationale:** Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The algebraic checks close for the formulas actually provided, so class A is appropriate. The broader claim that this stipulated Lüders two-sector update is the physical emergent charged-lepton records flow is not derived in the restricted packet, and the note’s finite r=1 attractor wording is not a fixed point of r -> 2r^2.
 - **auditor confidence:** judicial
+
+### `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02`
+
+- **Note:** [`FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`](../../docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic stability of r=1/2 for the 2-isotype-sector entropy picture and the concrete reverse-sharpening map g(r)=sqrt(r/2), plus the displayed Z3-circulant identities.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-010717-7f0ab86c-flavor_r_half_stable_und`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Any entropy-increasing flow on the 2-sector power distribution drives toward its max-entropy uniform point p=1/2, equivalently r=1/2, with g(r)=sqrt(r/2) as a concrete stable instance.  _(class `A`)_
+- **chain closes:** False — The displayed algebra checks close for the concrete map, HS sector equipartition, Q relation, and endpoint spectra. The missing step is a bridge theorem deriving that charged-lepton r physically evolves by a strict thermalizing flow on the 2-isotype-sector simplex; the unrestricted claim about any entropy-increasing flow is also broader than what the runner proves.
+- **rationale:** The runner performs real finite algebra/calculus checks rather than merely printing constants: S'(1/2)=2, g'(1/2)=1/2, HS equipartition at r=1/2, endpoint spectra, the Q values, and the sigma/Casimir correction are consistent under the note's conventions. However, those checks establish stability only after selecting the 2-sector coarse-graining and a particular thermalizing arrow. The source note explicitly identifies both the partition choice and the physical arrow binding as posits, so the conclusion does not close from the restricted packet alone.
+- **auditor confidence:** high
 
 ### `fm_transfer_note`
 

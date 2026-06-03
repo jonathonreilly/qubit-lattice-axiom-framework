@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1188 |
+| unaudited | 1187 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1427 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
@@ -1158,6 +1158,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5691,6 +5692,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** All four named native mechanisms fail to force r=|b|^2/a^2=1/2, and the RP edge-swap only selects r=1/2 after discarding the signed b structure.  _(class `A`)_
 - **chain closes:** False — The RP sign and arithmetic corrections close algebraically, but the broad four-mechanism negative does not: the self-consistency and information-functional bullets are asserted without their equations or extrema derivations. The trace-vs-center reframe also does not close under the packet's own A=R[Z3]=R⊕C abelian-center description.
 - **rationale:** The runner has five PASS lines, all algebraic or asserted algebraic sanity checks, but it does not implement the N2 gap-equation claim or the N3 entanglement/Fisher-extremum claim. More importantly, the source's displayed operator-algebra reframe is false or at least convention-incomplete as written: for A=R[Z3]=R⊕C with abelian center, an equal-weight center state is tracial, and a unique faithful trace is not forced without specifying a canonical Plancherel/regular trace. Therefore the bounded theorem plus surviving reframe does not close from the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_measure_positivity_agnostic_note_2026-05-31`
+
+- **Note:** [`FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md`](../../docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The restricted packet audits the three algebraic positivity/readout checks, not the broader exhaustion of all symmetry-side and measure-side selectors for r=1/2.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-032533-d1a6de60-flavor_measure_positivit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** OS RP, the qubit Bargmann complex structure, and the Hermitian/unitary readout checks are claimed to be agnostic to the det_C versus det_R counting, so positivity does not select r=1/2.  _(class `A`)_
+- **chain closes:** False — The displayed algebra checked by the runner closes for the modeled OS Gram, J_cs comparison, and Q=(1+2r)/3 identity. The broader conclusion imports unstated bridge authority for Bargmann descent, unitarity/GNS agnosticism, det_C/det_R-to-r counting, and prior symmetry-side exhaustion; the note also explicitly says the finite-enumeration framing is superseded and not a closed route.
+- **rationale:** The runner performs real algebraic checks rather than merely printing constants, and the displayed quantitative identities it executes are consistent. Those checks are class A, not class C first-principles closure, and they do not establish the exhaustive negative claim. With no cited authorities supplied, the load-bearing bridge from three modeled checks to 'both levers exhausted' is missing, especially given the source note's own supersession warning.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

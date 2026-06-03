@@ -162,13 +162,15 @@ links of adjacent slices. The adjacent-slice transfer kernel is therefore
 ```
 
 a supplied positive-definite kernel on the gauge group for the algebraic lemma.
-The `U(1)` Fourier coefficients are the modified Bessel functions
-`I_n(beta) > 0`; for `SU(3)`, the Peter-Weyl/character-positivity statement
-remains a standard Wilson gauge-theory input for later audit. The runner's
-finite sampled kernels are diagnostics only, not a proof of the full
-compact-group theorem. The runner also verifies `S_G[Theta U] = S_G[U]` to
-machine precision (the spatial links are parallel to the reflection plane; only
-temporal links, equal to the identity in temporal gauge, would be conjugated).
+The exact `U(1)` Fourier coefficients for this normalized kernel are
+`e^{-beta} I_n(beta) > 0`; the omitted `e^{-beta}` is a positive common factor,
+so it does not affect PSD but it is part of the displayed coefficient. For
+`SU(3)`, the Peter-Weyl/character-positivity statement remains a standard
+Wilson gauge-theory input for later audit. The runner's finite sampled kernels
+are diagnostics only, not a proof of the full compact-group theorem. The runner
+also verifies `S_G[Theta U] = S_G[U]` to machine precision (the spatial links are
+parallel to the reflection plane; only temporal links, equal to the identity in
+temporal gauge, would be conjugated).
 
 ## The mixed-observable closure (runner evidence)
 
@@ -182,10 +184,10 @@ that gap in two routes plus controls. Numbers from the cached run
 |---|---|---|
 | Negative control | single-step naive Lagrangian Gram | min eig **-0.8000** (reproduces the documented single-step no-go; validates the Berezin/Wick machinery + settled sign convention) |
 | R1 | Wilson temporal-gauge transfer kernel, `beta in {1,2,4}` | PSD: `U(1)` min eig `9.2e-12 ... 1.0e-5`; `SU(3)` min eig `0.113 ... 0.579` |
-| Route T `U(1)` | combined `T_full` Gram, 24 observables (15 genuinely mixed), `dim H = 40` | mixed-Gram min eig **-5.3e-17** (PSD); `||G - G^dag|| = 1.3e-16`; operator-Schmidt rank 3 (entangled) |
-| Route T `SU(3)` | combined `T_full` Gram, 112 observables (81 genuinely mixed), `dim H = 512` | mixed-Gram min eig **-2.7e-16** (PSD); `||G - G^dag|| = 3.1e-17`; operator-Schmidt rank 8 (entangled) |
+| Route T `U(1)` | combined `T_full` Gram, 24 observables (15 genuinely mixed), `dim H = 40` | mixed-Gram min eig **-5.33e-17** (PSD); `||G - G^dag|| = 1.26e-16`; operator-Schmidt rank 3 (entangled) |
+| Route T `SU(3)` | combined `T_full` Gram, 112 observables (81 genuinely mixed), `dim H = 512` | mixed-Gram min eig **-2.74e-16** (PSD); `||G - G^dag|| = 3.10e-17`; operator-Schmidt rank 8 (entangled) |
 | Route C `U(1)` | sampled `U`-average of the same two-step transfer ingredients with positive determinant weight (4000 cfg) | mixed-Gram min eig **-8.0e-17** (PSD); min det weight 1.31 (0 non-positive) |
-| Route C `SU(3)` | sampled `U`-average of the same two-step transfer ingredients with Haar backgrounds (3000 cfg) | mixed-Gram min eig **-2.7e-16** (PSD); min det weight 2.62 (0 non-positive) |
+| Route C `SU(3)` | sampled `U`-average of the same two-step transfer ingredients with Haar backgrounds (3000 cfg) | mixed-Gram min eig **-2.74e-16** (PSD); min det weight 2.62 (0 non-positive) |
 
 Route T (operator picture) is the load-bearing finite-carrier algebra check: it
 builds the combined `T_full = W^dag W` from supplied PSD-transfer ingredients

@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 180 |
 | **retained_bounded** | 635 |
 | _retained_pending_chain_ | 11 |
-| open_gate | 29 |
+| open_gate | 28 |
 | unaudited | 1227 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -61,9 +61,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 976 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1141,6 +1140,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | D | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -9308,6 +9308,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The restricted packet supports the open-gate conclusion: the cited YT authority defines H_unit on the Q_L=(2,3) quark block, while no cited authority defines an analogous physical lepton scalar bridge. The formal hypercharge algebra therefore remains conditional rather than a closed lepton Yukawa identity.
 - **rationale:** The load-bearing step is an algebraic/source-surface absence check over the provided authorities, not a new physics derivation. The conclusion is deliberately limited to an open gate and does not overclaim a no-go, lepton mass prediction, or permanent exclusion of the lane. One caveat is that the included runner source appears to use brittle text searches and the quoted YUKAWA authority in this packet does not visibly contain the exact quark-bilinear string the runner checks, but the broader cited YT authority still only defines the scalar on Q_L and not on a lepton block.
 - **auditor confidence:** medium
+
+### `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26`
+
+- **Note:** [`LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md`](../../docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional Brannen/Koide sqrt(2) ansatz arithmetic at trial delta=2/9 and its PDG charged-lepton comparator; no derivation of the phase, coefficient, or scale is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260603T012642Z-lepton_brannen_bae_delta`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Given the assumed sqrt(2) Brannen/Koide form and trial phase delta=2/9, the sorted ratios are close to the PDG-extracted charged-lepton ratios, with delta_PDG close to 2/9.  _(class `D`)_
+- **chain closes:** False — Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'open_gate', 'D'). Representative rationale: The runner computes the conditional algebra and PDG comparator, but the load-bearing gate is still an external comparator at an assumed phase and coefficient, not a framework derivation. The source note also displays delta_PDG - 2/9 as 0.000047... while the provided masses and runner give 0.000048265..., so it is not clean as written. The appropriate status is conditional open-gate verification, not retained lepton-mass closure.
+- **rationale:** Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'open_gate', 'D'). Representative rationale: The runner computes the conditional algebra and PDG comparator, but the load-bearing gate is still an external comparator at an assumed phase and coefficient, not a framework derivation. The source note also displays delta_PDG - 2/9 as 0.000047... while the provided masses and runner give 0.000048265..., so it is not clean as written. The appropriate status is conditional open-gate verification, not retained lepton-mass closure.
+- **auditor confidence:** judicial
 
 ### `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26`
 

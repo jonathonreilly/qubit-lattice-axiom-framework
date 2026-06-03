@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1183 |
+| unaudited | 1182 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 986 |
-| `audited_conditional` | 90 |
+| `audited_conditional` | 91 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1422 |
+| `unaudited` | 1421 |
 
 | claim_type | count |
 |---|---:|
@@ -1164,6 +1164,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_r_half_assumptions_audit_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5787,6 +5788,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Wilson-loop Berry calculation gives -pi for the pure phase loop and |gamma| = pi(1 - 1/sqrt(1+r)) for the gapped loop, so at r=1/2 the value is about 0.5765 rad and misses the tested 2/9 normalizations.  _(class `C`)_
 - **chain closes:** True — The runner explicitly constructs the Pauli Hamiltonians and computes the Wilson-loop phase rather than importing the contested values. Independent checks of the displayed formulas agree for nonzero |b| and physical r>=0.
 - **rationale:** The source claim is bounded to this holonomy probe and does not assert a global no-go over all possible holonomies. The quantitative steps close from the displayed one-qubit Pauli loop: the equatorial loop gives the topological pi phase, the gapped latitude gives pi(1 - 1/sqrt(1+r)), and the Q crossing equation has the physical solution r=1/2 only. No cited upstream authority is needed for the scoped negative result.
+- **auditor confidence:** high
+
+### `flavor_r_half_assumptions_audit_note_2026-05-30`
+
+- **Note:** [`FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md`](../../docs/FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audit of whether the four named assumption-relaxation routes were shown, within the restricted packet, not to derive or soften the r=1/2 charged-lepton Koide pin while leaving the native beta-function route open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-033851-9d7159d1-flavor_r_half_assumption`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Across all four challenges, the framework reaches discrete data and fixed-point endpoints but never the continuous modulus r, so none of the four dropped assumptions opens a derivation and r=1/2 remains the irreducible pin.  _(class `B`)_
+- **chain closes:** False — The note relies on unprovided retained authorities and an assumptions-audit workflow for the algebra Q=(1+2r)/3, the native signed readout, the cubic-RGE behavior, and the exhaustive 0/4-assumption result. The runner independently computes only limited B3 and A5 checks, while A3 is absent and A7 is printed as hard-coded narrative rather than derived from supplied inputs.
+- **rationale:** The restricted packet contains no cited authorities even though the source note explicitly imports retained/proven claims and a workflow as the basis for the four-assumption exhaustion. The runner source validates the B3 variance identity and the A5 shortfall estimate, but it does not compute the A3 readout claim, the cubic-RGE drift number, or the A7 sigma/fraction numerics. The supersession banner also states that the current status is not a closed/exhausted route and depends on a Tier-A admitted input not provided in the packet. The result is therefore conditional on missing dependency and bridge material, not clean.
+- **open / conditional deps cited:**
+  - `FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`
+  - `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`
 - **auditor confidence:** high
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`

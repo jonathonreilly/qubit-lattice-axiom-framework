@@ -82,7 +82,11 @@ The primary runner source includes the full implementations of:
 - Test D: `test_action_forms`
 
 The runner exits successfully and performs assertion checks on the returned
-finite-runner data structures.
+finite-runner data structures. It also performs executable artifact-source
+checks that the Test B body, Test C body, and quantitative table-generation
+strings (`d_instant`, `d_retarded`, `diff%`, `VL delta_z`, `PN delta_z`) are
+present in the untruncated primary runner source before running the finite
+toy-model tests.
 
 Observed output includes:
 

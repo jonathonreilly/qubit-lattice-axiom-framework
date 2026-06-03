@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rp_two_step_discharge_via_c2_tightening_companion_link_verifier.py
+runner_sha256: 43daf8f1bcba3e88b610a083a3ed5f4ae74438b9cd7701926154c0a9e34769bc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+[PASS] A1 parent note exists on origin/main
+[PASS] A2 ledger exists on origin/main
+[PASS] A3 parent row present in ledger (id=axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28)
+[PASS] A4 parent effective_status = audited_conditional (audited_conditional)
+[PASS] A5 parent audit_status = audited_conditional (audited_conditional)
+[PASS] A6 parent re-audit instruction names C2 tightening (auditor names sin(p) != 0 tightening)
+[PASS] B1 companion note exists on origin/main
+[PASS] B2 companion runner exists on origin/main
+[PASS] B3 companion cache exists on origin/main
+[PASS] B4 companion cache exit_code: 0
+[PASS] B5 companion cache scorecard PASS=20 FAIL=0
+[PASS] B6 companion row present in ledger (id=rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02)
+[PASS] C1 companion claims sin(p)=0 singular-mode case
+[PASS] C2 companion proves one-step indefinite at singular modes
+[PASS] C3 companion proves two-step square non-negative
+[PASS] C4 companion declares itself conditional algebraic companion to parent
+[PASS] C5 this note quotes the auditor's discharge instruction
+[PASS] C6 this note names parent ledger id
+[PASS] C7 this note names companion ledger id
+[PASS] D1 note exists locally
+[PASS] D2 claim_type is meta
+[PASS] D3 explicitly authors no audit verdict
+[PASS] D4 explicitly does not modify parent text
+[PASS] D5 explicitly does not modify companion text
+[PASS] D6 explicitly does not lift status
+[PASS] D7 does not hand-author retained/clean status
+[PASS] D8 no PDG / external comparator import
+[PASS] D9 no new axiom or primitive
+[PASS] precedent on origin/main: PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE_2026-05-27.md
+[PASS] precedent on origin/main: CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md
+[PASS] precedent on origin/main: RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md
+PASS=31 FAIL=0
+
+----- stderr -----
+

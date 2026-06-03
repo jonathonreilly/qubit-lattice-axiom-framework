@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1203 |
+| unaudited | 1202 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 77 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 983 |
-| `audited_conditional` | 76 |
+| `audited_conditional` | 77 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1442 |
+| `unaudited` | 1441 |
 
 | claim_type | count |
 |---|---:|
@@ -1146,6 +1146,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5479,6 +5480,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The import is the choice of the (1,1) block/idempotent-count measure on R[Z3]=R⊕C over the (1,2) dimension/Plancherel count, with the native trace permitting both but not ranking them.  _(class `A`)_
 - **chain closes:** False — The runner closes five finite algebraic/arithmetic checks, but the packet does not close Link 1 Half B: that the physical generation reference state is the beta=0 tracial state tau=Tr/3 rather than a finite-beta Gibbs/KMS state. The CPT J_b -> -J_b carrier exclusion and the trace-ranks-neither/Schur bridge are also asserted rather than derived in the restricted packet.
 - **rationale:** The runner source is not a trivial PASS printer: it computes the displayed C3 matrix identities and the Q(r) arithmetic it reports. Those checks are class-A algebra over hard-coded finite operators, not a first-principles derivation of the physical reference state or of the native measure default. The source note itself marks the beta=0 tracial-vacuum identification as unaudited, and the restricted packet supplies no retained authority or derivation for that bridge. The chirality section's nonzero anticommutator check is numerically consistent, but the surrounding anticommutation/off-block wording needs convention repair before a clean audit.
+- **auditor confidence:** high
+
+### `flavor_doublet_metric_default_is_detr_2026-06-02`
+
+- **Note:** [`FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md`](../../docs/FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The restricted packet supports the C3/HS metric diag(3,6,6) and the conditional det_R/det_C arithmetic, but not the stronger claim that A1 uniquely defaults to det_R by excluding every admissible field-space J.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-023856-be75d0c2-flavor_doublet_metric_de`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A1's HS trace pairing presents the doublet as two independent real Hermitian directions, with no A1-supplied complex structure fusing them, so equal power per real dimension gives |b|^2 = a^2, r = 1, and Q = 1.  _(class `C`)_
+- **chain closes:** False — The metric computation and the conditional r calculations close. The missing step is a bridge theorem showing that A1+HS+Hermiticity rules out any admissible complex structure on the doublet field space, not just continuous rephasing of C or complex-linearity of H_lin into the complexified operator algebra.
+- **rationale:** The runner genuinely checks the HS metric and several algebraic consequences, and the displayed numeric identities in those checks are consistent. However, the load-bearing default-mode-count claim depends on an unproved exclusion of non-U(1) or discrete/field-space complex structures on the doublet. Runner M6 hard-codes the broad obstruction as True, and M2 tests a narrower operator-symbol complex-linearity condition that the note itself admits does not settle the kinetic-metric binary.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

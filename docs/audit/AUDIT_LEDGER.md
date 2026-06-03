@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1181 |
+| unaudited | 1180 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 91 |
+| ~~audited_conditional~~ | 92 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 986 |
-| `audited_conditional` | 91 |
+| `audited_conditional` | 92 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1420 |
+| `unaudited` | 1419 |
 
 | claim_type | count |
 |---|---:|
@@ -1167,6 +1167,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_assumptions_audit_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5857,6 +5858,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The note's operative step is that asserting the physical observable to be the intensive C3 Atiyah-Bott density on intrinsic R3 at the z=0 zero-section, rather than the Gamma5-graded extensive lattice index, is simultaneously the carrier identification and the zero-section pick.  _(class `F`)_
 - **chain closes:** False — The displayed C3, transverse determinant, J_cs, and L3 arithmetic checks close, but they do not derive the physical readout identification. The missing step is an independent bridge theorem forcing the intensive intrinsic-R3 z=0 readout as the physical observable rather than naming that choice as the carrier/basepoint gate.
 - **rationale:** The runner genuinely checks the finite C3 algebra and J_cs commutation facts, and an independent formula pass did not expose a sign, factor, or normalization error in those displayed identities. Those facts support the negative that J_cs does not select the r parameter and show that both intensive and extensive readouts remain available. The conclusion equating the readout gate, carrier identification, and zero-section pick is a symbol-identity assertion over existing choices, not a first-principles derivation from the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_retention_law_is_a2plus_note_2026-05-31`
+
+- **Note:** [`FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md`](../../docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A2-vs-Axiom-2-plus status of the charged-lepton source-domain retention law and its Q=2/3 readout, limited to the provided note, runner, and displayed algebra.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-034505-f340b2a4-flavor_retention_law_is_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A2 is structure-locality only, while the retention law that physical charged-lepton mass sources live in the onsite diagonal algebra is an additional source/observable-locality premise.  _(class `A`)_
+- **chain closes:** False — The algebra after adopting onsite source-locality closes, but A2 supplies only lattice structure-locality in the packet. The missing step is a retained bridge deriving physical charged-lepton mass-source onsite locality from A2 or another accepted baseline premise.
+- **rationale:** Independent formula inventory checks confirm the displayed C3 scalar-forcing, Q(z) values, Z/S_Q1 coefficients, and D∩circulant algebra under the packet's conventions. But the chain from A2 to the onsite source-domain retention law is not derived: the note itself names that bridge as the missing Axiom 2-plus half-axiom, and the runner's R1 pass is a hard-coded assertion rather than an executable proof from A2. Thus the charged-lepton Q=2/3 standing is correctly bounded/conditional, not cleanly entailed by A2.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

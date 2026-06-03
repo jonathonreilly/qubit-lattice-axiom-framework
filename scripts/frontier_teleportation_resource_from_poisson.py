@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import dataclasses
+import hashlib
 import math
 import sys
 from pathlib import Path
@@ -29,6 +30,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
+import frontier_bell_inequality as bell_lane  # noqa: E402
 from frontier_bell_inequality import (  # noqa: E402
     build_H1,
     build_H2_tensor,
@@ -54,6 +56,19 @@ OUTCOME_LABELS = {
     (0, 1): "Psi+",
     (1, 1): "Psi-",
 }
+SOURCE_REQUIRED_SYMBOLS = (
+    "build_H1",
+    "build_H2_tensor",
+    "build_pair_hop_X",
+    "build_poisson",
+    "build_sublattice_Z",
+    "build_cell_taste_operator",
+    "taste_identity_check",
+    "chsh_horodecki",
+    "lattice_1d",
+    "lattice_2d",
+    "lattice_3d",
+)
 
 
 @dataclasses.dataclass(frozen=True)
@@ -87,6 +102,87 @@ def lattice_for_case(case: AuditCase):
     if case.dim == 3:
         return lattice_3d(case.side)
     raise ValueError(f"unsupported dimension: {case.dim}")
+
+
+def helper_source_certificate() -> dict[str, object]:
+    helper_path = Path(bell_lane.__file__).resolve()
+    helper_text = helper_path.read_text(encoding="utf-8")
+    missing = [
+        symbol
+        for symbol in SOURCE_REQUIRED_SYMBOLS
+        if not hasattr(bell_lane, symbol) or f"def {symbol}" not in helper_text
+    ]
+    if missing:
+        raise RuntimeError(f"Poisson/CHSH helper source is incomplete: {missing}")
+    return {
+        "path": helper_path,
+        "sha256": hashlib.sha256(helper_text.encode("utf-8")).hexdigest(),
+        "line_count": len(helper_text.splitlines()),
+        "symbol_count": len(SOURCE_REQUIRED_SYMBOLS),
+    }
+
+
+def logical_carrier_certificate(case: AuditCase) -> dict[str, object]:
+    n, _adj, parity, _coords = lattice_for_case(case)
+    factors = factor_sites(case.dim, case.side)
+    if len(factors.env_labels) != n // 2:
+        raise RuntimeError(f"{case.label}: expected {n // 2} logical environments")
+
+    env_logical_counts: dict[int, set[int]] = {}
+    for site, env_index in enumerate(factors.env):
+        env_logical_counts.setdefault(int(env_index), set()).add(int(factors.logical[site]))
+    bad_envs = [
+        env_index
+        for env_index, logical_values in env_logical_counts.items()
+        if logical_values != {0, 1}
+    ]
+    if bad_envs:
+        raise RuntimeError(f"{case.label}: environments without both logical bits: {bad_envs}")
+
+    X = build_pair_hop_X(n)
+    Z_full = build_sublattice_Z(n, parity)
+    z_matches, x_matches, _xi5, _xi_last = bell_lane.taste_identity_check(
+        n, case.side, case.dim, Z_full, X
+    )
+    if not (z_matches and x_matches):
+        raise RuntimeError(f"{case.label}: helper KS taste identity check failed")
+
+    x_preserves_env_and_flips_logical = True
+    for site in range(n):
+        targets = np.flatnonzero(np.abs(X[:, site]) > 1e-12)
+        if len(targets) != 1:
+            x_preserves_env_and_flips_logical = False
+            break
+        target = int(targets[0])
+        same_env = factors.env[target] == factors.env[site]
+        flipped = factors.logical[target] == 1 - factors.logical[site]
+        if not (same_env and flipped):
+            x_preserves_env_and_flips_logical = False
+            break
+    if not x_preserves_env_and_flips_logical:
+        raise RuntimeError(f"{case.label}: pair-hop X is not logical-last-bit X")
+
+    Z_last = np.diag([1.0 if bit == 0 else -1.0 for bit in factors.logical]).astype(complex)
+    I_n = np.eye(n, dtype=complex)
+    last_pauli_ok = (
+        np.allclose(Z_last @ Z_last, I_n, atol=1e-12)
+        and np.allclose(X @ X, I_n, atol=1e-12)
+        and np.allclose(Z_last @ X + X @ Z_last, np.zeros_like(X), atol=1e-12)
+    )
+    if not last_pauli_ok:
+        raise RuntimeError(f"{case.label}: last-taste logical Pauli check failed")
+
+    return {
+        "case": case.label,
+        "n_sites": n,
+        "n_env": len(factors.env_labels),
+        "logical_axis": case.dim - 1,
+        "helper_z_xi5": z_matches,
+        "helper_x_xi_last": x_matches,
+        "x_is_last_logical_x": x_preserves_env_and_flips_logical,
+        "z_last_pauli": last_pauli_ok,
+        "sublattice_z_equals_z_last": bool(np.allclose(Z_full, Z_last, atol=1e-12)),
+    }
 
 
 def ground_state_resource(case: AuditCase) -> dict[str, object]:
@@ -188,13 +284,24 @@ def bell_projector(z_bit: int, x_bit: int) -> np.ndarray:
     return np.outer(state, state.conj())
 
 
-def best_bell_overlap(rho: np.ndarray) -> tuple[float, str]:
-    overlaps = []
+def bell_overlap_spectrum(rho: np.ndarray) -> tuple[tuple[float, str], ...]:
+    overlaps: list[tuple[float, str]] = []
     for z_bit, x_bit in OUTCOME_ORDER:
         state = bell_state(z_bit, x_bit)
         overlap = float(np.real(state.conj() @ rho @ state))
         overlaps.append((overlap, OUTCOME_LABELS[(z_bit, x_bit)]))
+    return tuple(overlaps)
+
+
+def best_bell_overlap(rho: np.ndarray) -> tuple[float, str]:
+    overlaps = bell_overlap_spectrum(rho)
     return max(overlaps, key=lambda item: item[0])
+
+
+def bell_overlap_ties(rho: np.ndarray, tolerance: float = 1e-12) -> tuple[str, ...]:
+    overlaps = bell_overlap_spectrum(rho)
+    best = max(overlap for overlap, _label in overlaps)
+    return tuple(label for overlap, label in overlaps if abs(overlap - best) <= tolerance)
 
 
 def two_qubit_chsh(rho: np.ndarray) -> float:
@@ -327,6 +434,7 @@ def audit_case(
         factors.env_labels,
         probability_floor=probability_floor,
     )
+    logical_bell_ties = bell_overlap_ties(rho)
 
     purity = float(np.real(np.trace(rho @ rho)))
     logical_chsh = two_qubit_chsh(rho)
@@ -340,6 +448,7 @@ def audit_case(
         "full_chsh": resource["full_chsh"],
         "logical_bell_fidelity": bell_fidelity,
         "logical_bell_label": bell_label,
+        "logical_bell_ties": logical_bell_ties,
         "logical_chsh": logical_chsh,
         "purity": purity,
         "negativity": neg,
@@ -373,6 +482,12 @@ def print_result(result: dict[str, object], high_fidelity_threshold: float) -> N
         f"purity={result['purity']:.6f}, "
         f"negativity={result['negativity']:.6f}"
     )
+    ties = result["logical_bell_ties"]
+    if isinstance(ties, tuple) and len(ties) > 1:
+        print(
+            "  traced Bell max-label tie: "
+            f"{', '.join(ties)} (deterministic report uses {result['logical_bell_label']})"
+        )
     print(
         "  standard teleportation with traced resource: "
         f"mean fidelity={tel['mean']:.6f}, min={tel['min']:.6f}, "
@@ -433,6 +548,30 @@ def main() -> int:
     print("POISSON/CHSH TELEPORTATION RESOURCE AUDIT")
     print("Status: planning / first artifact; quantum state teleportation resource only")
     print("Extraction: trace cells/spectator tastes, keep the last KS taste bit per species")
+    helper = helper_source_certificate()
+    helper_path = Path(helper["path"])
+    try:
+        helper_label = helper_path.relative_to(SCRIPT_DIR.parent)
+    except ValueError:
+        helper_label = helper_path
+    print(
+        "Source packet: "
+        f"{helper_label} sha256={helper['sha256']} "
+        f"lines={helper['line_count']} required_symbols={helper['symbol_count']} PASS"
+    )
+    print("Last-taste carrier checks:")
+    for certificate in (logical_carrier_certificate(case) for case in cases):
+        z_scope = (
+            "sublattice Z is last-bit Z"
+            if certificate["sublattice_z_equals_z_last"]
+            else "sublattice Z is xi5; last-bit Z is separate"
+        )
+        print(
+            f"  {certificate['case']}: envs={certificate['n_env']} "
+            f"logical_axis={certificate['logical_axis']} "
+            "X=xi_last/logical-flip PASS; "
+            f"Z_last Pauli PASS; {z_scope}"
+        )
     sanity = verify_teleportation_convention(args.seed - 1)
     print(
         "Protocol sanity: ideal Phi+ resource "

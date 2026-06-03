@@ -1,14 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_resource_from_poisson.py
-runner_sha256: 58372e79a50eaaa488f03eb81365bddab6e0b54c03c4808720aff2d825af5ace
+runner_sha256: 126b86801cb9a9e6edb3c9a91b197e5f66d3f707f1b85ddd93112a5e18aced22
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 POISSON/CHSH TELEPORTATION RESOURCE AUDIT
 Status: planning / first artifact; quantum state teleportation resource only
 Extraction: trace cells/spectator tastes, keep the last KS taste bit per species
+Source packet: scripts/frontier_bell_inequality.py sha256=1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689 lines=711 required_symbols=11 PASS
+Last-taste carrier checks:
+  1d_null: envs=4 logical_axis=0 X=xi_last/logical-flip PASS; Z_last Pauli PASS; sublattice Z is last-bit Z
+  1d_poisson_chsh: envs=4 logical_axis=0 X=xi_last/logical-flip PASS; Z_last Pauli PASS; sublattice Z is last-bit Z
+  2d_poisson_chsh: envs=8 logical_axis=1 X=xi_last/logical-flip PASS; Z_last Pauli PASS; sublattice Z is xi5; last-bit Z is separate
 Protocol sanity: ideal Phi+ resource mean fidelity=0.9999999999999996, min=0.9999999999999991, max trace error=5.551e-16
 
 Case: 1d_null
@@ -16,6 +21,7 @@ Case: 1d_null
   ground energy: -4
   full-state CHSH |S| from existing lane: 2.000000
   traced logical taste-qubit resource: best Bell overlap=0.500000 (Phi+), CHSH=2.000000, purity=1.000000, negativity=0.000000
+  traced Bell max-label tie: Phi+, Psi+ (deterministic report uses Phi+)
   standard teleportation with traced resource: mean fidelity=0.669817, min=0.500038, max=0.987949, max trace error=4.441e-16
   best fixed-env postselected branch: Bell overlap=0.500000 (Psi+), probability=6.250000e-02, CHSH=2.000000, negativity=0.000000
     env A=((3,), ()) env B=((3,), ())

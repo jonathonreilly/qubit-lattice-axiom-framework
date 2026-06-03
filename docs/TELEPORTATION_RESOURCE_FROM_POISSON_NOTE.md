@@ -3,6 +3,7 @@
 **Type:** open_gate
 **Claim type:** open_gate
 **Primary runner:** `scripts/frontier_teleportation_resource_from_poisson.py`
+**Load-bearing helper source:** `scripts/frontier_bell_inequality.py`
 
 Status: planning / first artifact. This note records a narrow audit of whether
 the existing Poisson-driven CHSH lane already yields an encoded two-qubit Bell
@@ -30,12 +31,43 @@ with repair: *"missing_bridge_theorem: prove the native preparation/readout and 
 Supplying the named retained authority/bridge is substantive new work, out of
 scope for this repair. This revision takes the **split path**:
 
-- **Load-bearing (in scope):** The runner's bounded extraction diagnostics on the two small surfaces (1D N=8 and 2D 4x4): traced Bell overlap, negativity, and standard teleportation fidelity under the last-taste-bit logical-qubit identification, confirming a positive first artifact for the Poisson/CHSH cases relative to the null case.
-- **NON-load-bearing (split off / admitted):** The native preparation/readout theorem selecting the last taste bit as a physical deterministic teleportation carrier (distinct from offline ground-state extraction), and the packet-completeness step including the Poisson/CHSH machinery source in the restricted packet; both are missing bridge theorems recorded here as admitted, not-derived inputs.
+- **Load-bearing (in scope):** The runner's bounded extraction diagnostics on the two small surfaces (1D N=8 and 2D 4x4): traced Bell overlap, negativity, and standard teleportation fidelity under the last-taste-bit logical-qubit identification, confirming a positive first artifact for the Poisson/CHSH cases relative to the null case. The 2026-06-03 repair below now exposes and checks the imported Poisson/CHSH helper source in the row runner.
+- **NON-load-bearing (split off / admitted):** The native preparation/readout theorem selecting the last taste bit as a physical deterministic teleportation carrier (distinct from offline ground-state extraction). This remains a missing bridge theorem recorded here as an admitted, not-derived input.
 
 No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
 non-load-bearing input until a retained authority for it lands.
+
+## 2026-06-03 Source-Packet And Carrier-Label Repair
+
+This repair discharges the restricted packet visibility part of the earlier
+repair text, without claiming the missing native preparation/readout theorem.
+The runner now:
+
+- reads and hashes the load-bearing Poisson/CHSH helper source
+  `scripts/frontier_bell_inequality.py`;
+- asserts the helper contains the source functions used by this row:
+  `build_H1`, `build_H2_tensor`, `build_pair_hop_X`, `build_poisson`,
+  `build_sublattice_Z`, `build_cell_taste_operator`,
+  `taste_identity_check`, `chsh_horodecki`, and the lattice builders;
+- verifies on every default audited surface that the site basis decomposes
+  into exactly one last-taste logical bit plus environment labels, each
+  environment has one logical `0` and one logical `1`, and the imported
+  pair-hop operator is exactly the last-taste logical flip;
+- constructs the separate last-taste `Z` operator and checks the logical
+  Pauli algebra used by the reduced Bell-resource calculation; and
+- reports Bell-label ties in the traced resource, so the null-control traced
+  label is no longer confused with the best fixed-environment postselected
+  branch label.
+
+On `1D N=8`, sublattice parity equals the last-taste `Z`. On `2D 4x4`,
+sublattice parity is the full `xi5` product while the reduced resource uses a
+separate last-taste `Z`; the runner prints this distinction rather than
+silently treating the full parity as a traced logical readout.
+
+The remaining open bridge is still the operational theorem: a native
+preparation/readout and apparatus path that realizes this offline
+last-taste-bit carrier as a physical deterministic teleportation resource.
 
 ## Script
 
@@ -76,7 +108,7 @@ Protocol sanity:
 
 | case | full CHSH | traced Bell overlap | traced CHSH | negativity | standard teleportation fidelity | deterministic high-fidelity resource |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| `1d_null`, `G=0` | `2.000000` | `0.500000` (`Psi+`) | `2.000000` | `0.000000` | mean `0.669817`, min `0.500038`, max `0.987949` | no |
+| `1d_null`, `G=0` | `2.000000` | `0.500000` (`Phi+`; tied with `Psi+`) | `2.000000` | `0.000000` | mean `0.669817`, min `0.500038`, max `0.987949` | no |
 | `1d_poisson_chsh`, `G=1000` | `2.822668` | `0.997963` (`Phi+`) | `2.822668` | `0.497963` | mean `0.998621`, min `0.997964`, max `0.999470` | yes |
 | `2d_poisson_chsh`, `G=1000` | `2.668376` | `0.970283` (`Phi+`) | `2.745662` | `0.470283` | mean `0.979360`, min `0.970287`, max `0.999810` | yes |
 
@@ -136,7 +168,8 @@ The source claim is therefore narrower than promotion:
 
 - The original runner remains the numerical source for the small-surface
   certificate.
-- The Poisson/CHSH source chain must be visible in the restricted packet.
+- The Poisson/CHSH source chain is visible in the runner packet: the runner
+  links, hashes, and checks `scripts/frontier_bell_inequality.py`.
 - The current A1+A2 premise is [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md);
   no new axiom is introduced here.
 - No sentence in this note asserts that the last taste bit has been derived as
@@ -159,15 +192,14 @@ The source chain on this row currently stands as follows.
 
 | Source | Note / file | Role | Conditional on |
 |---|---|---|---|
-| Poisson/CHSH small-surface ground states | `scripts/frontier_bell_inequality.py` (imported by this runner) | source script | packet inclusion of the Poisson/CHSH machinery source |
+| Poisson/CHSH small-surface ground states | `scripts/frontier_bell_inequality.py` (imported, linked, hashed, and source-checked by this runner) | source script | visible bounded helper source; not a native preparation/readout theorem |
 | This row's runner | `scripts/frontier_teleportation_resource_from_poisson.py` | quoted bounded certificate | bounded extraction on `1D N=8` and `2D 4x4` only |
 | Adjacent Poisson resource sweep | [`TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md`](TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md) | adjacent diagnostic | not a substitute for the missing native-carrier bridge theorem |
 | Adjacent resource fidelity note | [`TELEPORTATION_RESOURCE_FIDELITY_NOTE.md`](TELEPORTATION_RESOURCE_FIDELITY_NOTE.md) | bounded fidelity protocol | not a derivation of last-taste-bit selection |
 | Adjacent measurement-record / apparatus-dynamics-closure | [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](TELEPORTATION_MEASUREMENT_RECORD_NOTE.md), [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | adjacent bounded results | do not select the last taste bit as native carrier |
 | Current framework axiom premise | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | A1+A2 premise | the native preparation/readout theorem has not yet been derived from A1+A2 |
 
-The repair path is to prove the native preparation/readout and
-last-taste-bit logical-carrier selection, then rerun the small-surface checks
-with the Poisson/CHSH machinery source included in the restricted packet. Until
-both land, the small-surface positive numbers in the table are bounded
-diagnostics, not a deterministic resource derivation.
+The remaining repair path is to prove the native preparation/readout theorem
+for this last-taste-bit carrier. Until that lands, the small-surface positive
+numbers in the table are bounded diagnostics, not a deterministic resource
+derivation.

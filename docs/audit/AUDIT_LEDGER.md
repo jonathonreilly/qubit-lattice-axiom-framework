@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1204 |
+| unaudited | 1203 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 75 |
+| ~~audited_conditional~~ | 76 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 983 |
-| `audited_conditional` | 75 |
+| `audited_conditional` | 76 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1443 |
+| `unaudited` | 1442 |
 
 | claim_type | count |
 |---|---:|
@@ -1145,6 +1145,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5465,6 +5466,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The qubit/JW algebras are identical as ungraded operator algebras, so A1+A2 do not select fermions; given that fermionic-frame import, the note asserts P2, the hw=1/count-3 locus, and Koide Q=2/3 chiral structure follow.  _(class `A`)_
 - **chain closes:** False — The runner supports the local algebra checks for statistics-agnosticism and basic Clifford/epsilon identities. It does not close the asserted downstream bridge from P1 to Dirac-Kähler/staggered equivalence, hw=1 locus, count 3, carrier/generation identification, or Koide Q=2/3 within the restricted packet.
 - **rationale:** The substantive runner computations are algebraic checks, not a first-principles closure of the full flavor-sector claim. One PASS, P1d, is an interpretive hard-coded `True`, and the downstream statements that everything else follows given P1 rely on bridges not supplied as retained inputs in this packet. The P2c detail also overstates the epsilon/Laplacian relation: for `L = deg I - hop` with `{epsilon, hop}=0`, the Laplacian is A2-local and non-chiral, but it does not literally commute with epsilon.
+- **auditor confidence:** high
+
+### `flavor_detr_default_full_exercise_note_2026-05-30`
+
+- **Note:** [`FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md`](../../docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3/R[Z3] matrix checks support the generation-blind substrate i, quantized C rephasing, and G_U1 commuting with Gamma_chi; the physical Q=1 default remains conditional on the tracial-vacuum and measure-ranking premises.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-023551-b1617899-flavor_detr_default_full`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The import is the choice of the (1,1) block/idempotent-count measure on R[Z3]=R⊕C over the (1,2) dimension/Plancherel count, with the native trace permitting both but not ranking them.  _(class `A`)_
+- **chain closes:** False — The runner closes five finite algebraic/arithmetic checks, but the packet does not close Link 1 Half B: that the physical generation reference state is the beta=0 tracial state tau=Tr/3 rather than a finite-beta Gibbs/KMS state. The CPT J_b -> -J_b carrier exclusion and the trace-ranks-neither/Schur bridge are also asserted rather than derived in the restricted packet.
+- **rationale:** The runner source is not a trivial PASS printer: it computes the displayed C3 matrix identities and the Q(r) arithmetic it reports. Those checks are class-A algebra over hard-coded finite operators, not a first-principles derivation of the physical reference state or of the native measure default. The source note itself marks the beta=0 tracial-vacuum identification as unaudited, and the restricted packet supplies no retained authority or derivation for that bridge. The chirality section's nonzero anticommutator check is numerically consistent, but the surrounding anticommutation/off-block wording needs convention repair before a clean audit.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

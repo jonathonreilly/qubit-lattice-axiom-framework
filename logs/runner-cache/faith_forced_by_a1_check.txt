@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/faith_forced_by_a1_check.py
+runner_sha256: 3011112d1efdb08a15d189f7ac5f8de4947ab4cd90a93244766694b67c090470
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+=== (A) State-space: C^2 IS the faithful j=1/2 Cl(3,0) spinor; j=0 is a different module ===
+[PASS] A.1 Pauli sigma_i satisfy Cl(3,0): {sigma_i,sigma_j}=2 delta_ij (faithful gens)
+[PASS] A.2 Cl(3,0)->M_2(C) is faithful (8 basis elts -> rank-8 real image, injective)
+[PASS] A.3 sigma-rep irreducible on C^2 (commutant = scalars, complex dim 1)
+[PASS] A.4a j=1/2 Casimir J^2 = (3/4) I on C^2
+[PASS] A.4b j=0 carrier is 1-dimensional (a scalar), NOT a 2-dim qubit
+
+=== (B) IF boost acts via the operator-frame Pauli triple: scalar boost excluded, faithful Weyl forced ===
+[PASS] B.1 [J,J]=i eps J, [J,K]=i eps K, [K,K]=-i eps J (so(3,1) on C^2, Lorentzian sign)
+[PASS] B.2 K=0 scalar boost FAILS [K,K]=+- i eps J for J=sigma/2 (so(3,1) AND so(4)) -- signature-free
+[PASS] B.3 nonzero SCALAR boost K_i=c_i I fails [J_i,K_j]=i eps K_k (J=sigma/2) -> only c=0 works
+[PASS] B.4a K=+i sigma/2 is the definite chiral Weyl (0,1/2): N^2=0, Ntil^2=(3/4)I
+[PASS] B.4b K=-i sigma/2 is the mirror chiral Weyl (1/2,0): N^2=(3/4)I, Ntil^2=0
+[PASS] B.4c both completions are FAITHFUL (K != 0) -- no K=0 / scalar branch survives
+
+=== (C) THE GAP: A1 + native H=iD do NOT, by themselves, force the boost to be the faithful action vs a scalar ===
+[PASS] C.1 native H=iD is spin-blind: [H (x) I_2, I (x) B_i]=0 -> dynamics does NOT pick out the faithful boost
+[PASS] C.2a scalar boost S(eta)=e^{eta c} I_2 is a valid 1-param rep on the qubit vector space (S(a)S(b)=S(a+b))
+[PASS] C.2b that scalar boost is non-faithful (its generator c*I is the B.3-excluded scalar) -> A1 alone cannot pick faithful-vs-scalar
+[PASS] C.3a spin-1/2 numerator m I - i sigma.p has NONZERO traceless part (irreducibly spin-1/2, not a disguised scalar)
+[PASS] C.3b FAITHFUL boost S=exp(eta.sigma/2) covaries the spin-1/2 kernel: S^dag (p.sigmabar) S = (Lp).sigmabar
+[PASS] C.3c SCALAR boost S=I FAILS to covary the spin-1/2 kernel (so the kernel, not A1, is what excludes the scalar)
+[PASS] C.4 A1 forces state-space spinor (A) AND no-scalar-IF-operator-frame (B); but NOT boost-faithful from A1 alone (C)
+
+======================================================================
+SCORECARD: PASS=18 FAIL=0
+
+----- stderr -----
+

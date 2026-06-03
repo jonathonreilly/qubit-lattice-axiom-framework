@@ -1,0 +1,17 @@
+[PASS] Koide: additive(block-count) -> r=1/2, Q=2/3 ; multiplicative(dimension) -> r=1, Q=1
+       additive r=0.5,Q=0.6667 | multiplicative r=1.0,Q=1.0000
+[PASS] P1: additive log|det| ADDS over direct-sum (log|ZA ZB|=log|ZA|+log|ZB|); multiplicative |det|^p MULTIPLIES
+       add=3.5835=logZA+logZB ; mul=36.0=|ZA||ZB|
+[PASS] |det|^p is multiplicative over direct-sum for ALL p; only log|det| (p->0 image) is additive
+[PASS] det is multiplicative on the COMPOSITION axis (det(A.S)=det(A)det(S)); trace is not -> the two axes are orthogonal
+       det(A.S)=12.0=det(A)det(S)=12.0; tr(A.S)=12 != tr(A)tr(S)=15
+[PASS] the fork is the doublet multiplicity bit: S_vN - H_Shannon = p_doublet * ln2 (drop it = go additive = r=1/2)
+       S_vN-H = 0.462098 = (2/3)ln2 = 0.462098
+[PASS] ONE posit (observable=additive record) selects BOTH Q=2/3 (Koide) and log|det| (P1) from one code path
+
+SCORECARD PASS=6 FAIL=0
+UNIFICATION: Koide dimension-vs-block and P1 multiplicative-vs-additive are the SAME one-bit fork
+(add vs multiply over independent direct-sum sub-pieces). One posit 'observable = the additive
+record (post-record log ledger), not the pre-record multiplicative Born amplitude' selects BOTH
+Q=2/3 and log|det|. det rides the orthogonal composition axis (no contradiction). The framework's
+baseline Born/dimension ledger gives r=1 (Q=1); the posit -- NOT forced -- flips both. No audit status.

@@ -22,13 +22,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 180 |
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 11 |
-| open_gate | 30 |
-| unaudited | 1190 |
+| open_gate | 29 |
+| unaudited | 1223 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 56 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,39 +61,39 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 14 |
+| `audit_in_progress` | 13 |
 | `audited_clean` | 973 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 54 |
-| `audited_failed` | 47 |
+| `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1429 |
+| `unaudited` | 1462 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1235 |
+| `bounded_theorem` | 1262 |
 | `decoration` | 55 |
 | `meta` | 243 |
-| `no_go` | 266 |
-| `open_gate` | 118 |
+| `no_go` | 267 |
+| `open_gate` | 121 |
 | `positive_theorem` | 699 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 482 |
-| `high` | 426 |
-| `medium` | 614 |
-| `leaf` | 1094 |
+| `high` | 433 |
+| `medium` | 624 |
+| `leaf` | 1108 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 29
 
 ### Runner classification (static heuristic)
 
-- runners classified: 2210
-- runners with (C) first-principles compute hits: 1095
-- runners with (D) external comparator hits: 647
+- runners classified: 2241
+- runners with (C) first-principles compute hits: 1120
+- runners with (D) external comparator hits: 653
 - decoration candidates (no C, no D): 372
 
 ## Top 25 by load-bearing score (topology only)
@@ -102,31 +102,31 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `three_generation_observable_theorem_note` | positive_theorem | critical | 992 | 56.46 | `audited_clean` | **retained** |
-| 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 743 | 54.54 | `audited_conditional` | ~~audited_conditional~~ |
-| 3 | `minimal_axioms_2026-05-03` | meta | critical | 979 | 49.94 | `unaudited` | meta |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1122 | 48.63 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms` | meta | critical | 1124 | 42.64 | `unaudited` | meta |
-| 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1003 | 40.47 | `audited_clean` | **retained_bounded** |
-| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 927 | 39.86 | `unaudited` | unaudited |
+| 1 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1001 | 56.47 | `audited_clean` | **retained** |
+| 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 745 | 55.04 | `audited_conditional` | ~~audited_conditional~~ |
+| 3 | `minimal_axioms_2026-05-03` | meta | critical | 986 | 49.95 | `unaudited` | meta |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1129 | 49.14 | `audited_clean` | **retained** |
+| 5 | `minimal_axioms` | meta | critical | 1140 | 43.66 | `unaudited` | meta |
+| 6 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1009 | 40.48 | `audited_clean` | **retained_bounded** |
+| 7 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 929 | 39.86 | `unaudited` | unaudited |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 198 | 39.14 | `unaudited` | unaudited |
-| 9 | `alpha_s_derived_note` | bounded_theorem | critical | 867 | 38.26 | `unaudited` | unaudited |
-| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 779 | 38.11 | `audited_clean` | **retained_no_go** |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1093 | 37.59 | `audited_clean` | **retained** |
-| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1011 | 36.98 | `audited_clean` | **retained** |
-| 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 743 | 35.54 | `unaudited` | unaudited |
-| 14 | `plaquette_self_consistency_note` | bounded_theorem | critical | 901 | 33.82 | `audited_clean` | **retained_bounded** |
-| 15 | `three_generation_structure_note` | bounded_theorem | critical | 884 | 33.79 | `audited_clean` | **retained_bounded** |
-| 16 | `cpt_exact_note` | positive_theorem | critical | 996 | 33.46 | `audited_clean` | **retained** |
-| 17 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 780 | 32.61 | `unaudited` | unaudited |
-| 18 | `minimal_axioms_2026-04-11` | meta | critical | 995 | 32.46 | `unaudited` | meta |
-| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 982 | 31.94 | `audited_renaming` | ~~audited_renaming~~ |
-| 20 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 778 | 31.61 | `unaudited` | unaudited |
-| 21 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 743 | 31.54 | `unaudited` | unaudited |
-| 22 | `left_handed_charge_matching_note` | decoration | critical | 857 | 31.25 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 23 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 207 | 29.20 | `unaudited` | unaudited |
-| 24 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 832 | 28.70 | `unaudited` | unaudited |
-| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 800 | 28.15 | `unaudited` | unaudited |
+| 9 | `alpha_s_derived_note` | bounded_theorem | critical | 869 | 38.27 | `unaudited` | unaudited |
+| 10 | `yt_ew_color_projection_theorem` | no_go | critical | 781 | 38.11 | `audited_clean` | **retained_no_go** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1100 | 38.10 | `audited_clean` | **retained** |
+| 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1017 | 36.99 | `audited_clean` | **retained** |
+| 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 745 | 35.54 | `unaudited` | unaudited |
+| 14 | `plaquette_self_consistency_note` | bounded_theorem | critical | 903 | 33.82 | `audited_clean` | **retained_bounded** |
+| 15 | `three_generation_structure_note` | bounded_theorem | critical | 886 | 33.79 | `audited_clean` | **retained_bounded** |
+| 16 | `cpt_exact_note` | positive_theorem | critical | 1009 | 33.48 | `audited_clean` | **retained** |
+| 17 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 782 | 32.61 | `unaudited` | unaudited |
+| 18 | `minimal_axioms_2026-04-11` | meta | critical | 1002 | 32.47 | `unaudited` | meta |
+| 19 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 988 | 32.45 | `audited_renaming` | ~~audited_renaming~~ |
+| 20 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 780 | 31.61 | `unaudited` | unaudited |
+| 21 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 745 | 31.54 | `unaudited` | unaudited |
+| 22 | `left_handed_charge_matching_note` | decoration | critical | 859 | 31.25 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 23 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 970 | 29.92 | `unaudited` | unaudited |
+| 24 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 207 | 29.20 | `unaudited` | unaudited |
+| 25 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 834 | 28.71 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
@@ -568,6 +567,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_clean~~ | open_gate | judicial_review | codex-gpt-5.5 | B | - |
 | `koide_cone_completing_root_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -823,7 +823,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
-| `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_time_coupling_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1251,7 +1250,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -8006,6 +8004,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The proof is a genuine class-A algebraic closure over explicitly stated symbols and root-of-unity identities. The runner source performs exact symbolic checks of the same Fourier identities and includes no hidden physical bridge, tuned comparator, or imported dependency. The audited boundary is only the polynomial-algebra bridge, not any Koide, Wilson, charged-lepton, or selection-principle claim.
 - **auditor confidence:** high
 
+### `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260602-235746-d7df7131-koide_circulant_q_two_th`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Using T1 and T2, the note computes sum_k x_k = 3 v_0 and sum_k x_k^2 = 6 v_0^2, hence (sum_k x_k^2)/(sum_k x_k)^2 = 2/3.  _(class `A`)_
+- **chain closes:** True — The root-of-unity identity gives the cosine and squared-cosine sums directly. Substitution into the definition of x_k gives the stated sums and the denominator is nonzero because v_0 > 0.
+- **rationale:** The claim is a standalone algebraic identity with no cited upstream authorities or external comparators. The runner source genuinely performs symbolic SymPy checks of the root-of-unity, trigonometric, sum, ratio, and finite sanity identities rather than merely printing constants. Independent formula review finds the displayed factors, signs, and chamber restriction consistent: the corollary correctly requires x_k > 0 so that sqrt(x_k^2) = x_k.
+- **auditor confidence:** high
+
 ### `koide_circulant_wilson_target_note_2026-04-18`
 
 - **Note:** [`KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md`](../../docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md)
@@ -8537,19 +8548,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every local gauge-invariant scalar built from the selected-line packet is constant along the branch, while delta(m) is nonconstant and strict-monotone.  _(class `A`)_
 - **chain closes:** True — Within the restricted packet, the no-go follows from the constancy of the local packet and rho_delta together with strict variation of delta(m). The runner checks the relevant local-geometry identities, target placement, branch constancy, and two-point indistinguishability.
 - **rationale:** The load-bearing inference is an algebraic obstruction: a local packet that is constant on the branch cannot distinguish one interior point from another. The runner does more than print constants; it computes the Berry connection, FS density, curvature proxy, branch endpoints, rho_delta constancy, monotonicity, and same-packet/different-holonomy witness. No cited open authority is imported in the audit packet, and the conclusion is scoped to the stated local no-go rather than to a positive derivation of the physical value.
-- **auditor confidence:** high
-
-### `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29`
-
-- **Note:** [`KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Pure algebraic audit of the signed-eigenvalue versus singular-value Koide readouts for the C3-circulant Hermitian spectrum, including the stated equality/sign-window corollaries at r=1/2.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260530-132412-f7818da1-koide_signed_eigenvalue_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The triangle inequality gives Σ_k|λ_k| ≥ |Σ_kλ_k| = 3a, so Q(V) ≤ Q(S), with equality exactly on the sign-homogeneous readout region; exact r=1/2 evaluations then show Q(V) is θ-dependent while Q(S)=2/3.  _(class `A`)_
-- **chain closes:** False — The main inequality and non-constancy calculation close algebraically. However the displayed equality/sign-window statement is not correct as written: at r=1/2 and θ=π/12 one eigenvalue is exactly zero, Σ|λ|=3a, and Q(V)=2/3, so the Q(V)=2/3 equality set is closed at the boundary, not the strict open window stated in C1 if that parenthetical is read as the equality region.
-- **rationale:** The runner source performs genuine symbolic algebra and its checked PASS items support the headline signed-versus-singular non-constancy result. The strict formula inventory nevertheless exposes a boundary defect in the displayed C1/equality-region family: the runner checks that θ=π/12 has a zero eigenvalue but never checks Q(V) at that boundary, where equality still holds. The note should repair this by distinguishing the strict positive sign-homogeneous window |θ mod 2π/3|<π/12 from the Q(V)=2/3 equality set |θ mod 2π/3|≤π/12, or by explicitly defining zero as included in the common-sign condition and updating C1 accordingly.
 - **auditor confidence:** high
 
 ### `koide_transport_gap_constant_no_go_note_2026-04-20`
@@ -12030,19 +12028,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For arbitrary positive diagonal Yukawa singular-value matrices D_u and D_d and fixed CKM unitary V, the construction Y_u = D_u and Y_d = V D_d gives U_u^dag U_d = V while leaving the singular values equal to the freely chosen diagonal entries, so CKM mixing does not determine quark Yukawa eigenvalues.  _(class `A`)_
 - **chain closes:** True — The negative boundary closes as an exact linear-algebra obstruction: the allowed one-Higgs gauge skeleton admits arbitrary 3x3 Yukawa matrices, the top Ward normalization supplies no generation projector, and a fixed CKM matrix is compatible with independently varied Yukawa singular values. Therefore the listed support surface leaves the target non-top ratios unconstrained.
 - **rationale:** The proof is a clean no-go: it does not attempt to derive numerical masses, does not reuse the top Ward identity as a hidden species-uniform physical identification, and the runner checks the load-bearing CKM/singular-value witness plus the gauge-selection freedom and scope firewall.
-- **auditor confidence:** high
-
-### `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26`
-
-- **Note:** [`QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md`](../../docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Audited open gate: retained C3/Koide algebra supplies the coordinate identities, while conventional central-value quark masses are used only as scheme-dependent observational comparators showing that apparent up/down quark |b|^2/a^2 ratios differ from the charged-lepton BAE value. No quark mass, quark Brannen phase, quark amplitude ratio, mass scale, CKM-to-mass theorem, or scheme-native framework mass definition is derived.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** open_gate  (reason: `audited_open_gate`)
-- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Using conventional central-value quark mass comparators, the Koide Q values and reconstructed apparent |b|^2/a^2 ratios differ from the charged-lepton BAE value, so quark-sector mass work must not copy the lepton coefficient without a separate scheme-aware derivation.  _(class `D`)_
-- **chain closes:** True — The algebraic conversion between Q and |b|^2/a^2 follows from retained Koide/circulant identities, and the runner reproduces the stated central-value comparator separations. The row remains an open gate because the quark masses are external scheme-dependent inputs and no quark-sector dynamics are derived.
-- **rationale:** The note correctly treats the quark numbers as scheme-dependent comparators and uses them only to set a boundary on future quark-mass work. The cached runner reports PASS=14, FAIL=0 under SHA 3b495bc414c9b5e3d4d41b01c5af90bbf279bcbc55e124c5983fcd696e30ac1f, reproducing the charged-lepton, up-quark, and down-quark Q and apparent-amplitude ratios plus algebraic reconstruction checks. Because the claim_type is open_gate, this clean audit preserves open-gate status and does not retain any quark-mass theorem.
 - **auditor confidence:** high
 
 ### `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`

@@ -2085,6 +2085,14 @@
       "to": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
     },
     {
+      "from": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
+      "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+    },
+    {
+      "from": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
+      "to": "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+    },
+    {
       "from": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
       "to": "beta6_plaquette_closure_note_2026-05-29"
     },
@@ -2115,6 +2123,14 @@
     {
       "from": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
       "to": "su3_wilson_closed_form_fanout_theorem_note_2026-05-04"
+    },
+    {
+      "from": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
+      "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+    },
+    {
+      "from": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
+      "to": "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
     },
     {
       "from": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
@@ -2331,6 +2347,26 @@
     {
       "from": "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09",
       "to": "koide_circulant_character_derivation_note_2026-04-18"
+    },
+    {
+      "from": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
+      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
+      "to": "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25"
+    },
+    {
+      "from": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
+      "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+    },
+    {
+      "from": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
+      "to": "koide_q_readout_factorization_theorem_2026-04-22"
+    },
+    {
+      "from": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
+      "to": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
     },
     {
       "from": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
@@ -3949,6 +3985,70 @@
       "to": "structural_no_go_survey_note"
     },
     {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "charged_lepton_koide_note_2026-04-18"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_aps_block_by_block_forcing_note_2026-04-21"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "to": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30"
+    },
+    {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
       "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
     },
@@ -5503,6 +5603,26 @@
     {
       "from": "closure_t2_gnewton_reaudit_note_2026-05-10_t2gnewton",
       "to": "minimal_axioms_2026-05-03"
+    },
+    {
+      "from": "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+      "to": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+    },
+    {
+      "from": "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02",
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02",
+      "to": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
+    },
+    {
+      "from": "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02",
+      "to": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+    },
+    {
+      "from": "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02",
+      "to": "minimal_axioms"
     },
     {
       "from": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
@@ -10641,6 +10761,10 @@
       "to": "three_generation_structure_note"
     },
     {
+      "from": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+      "to": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03",
       "to": "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
     },
@@ -13685,6 +13809,22 @@
       "to": "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
     },
     {
+      "from": "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30",
+      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+    },
+    {
+      "from": "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30",
+      "to": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
+    },
+    {
+      "from": "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30",
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
       "from": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
       "to": "minimal_axioms"
     },
@@ -14957,6 +15097,34 @@
       "to": "higher_order_structural_theorems_note"
     },
     {
+      "from": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "to": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "to": "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28"
+    },
+    {
+      "from": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "to": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "to": "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
+    },
+    {
       "from": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
       "to": "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
     },
@@ -15905,6 +16073,34 @@
       "to": "fermion_parity_z2_grading_theorem_note_2026-05-02"
     },
     {
+      "from": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "to": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02"
+    },
+    {
+      "from": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "to": "flavor_missing_axiom_carrier_measure_note_2026-05-30"
+    },
+    {
+      "from": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+    },
+    {
+      "from": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "to": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
+    },
+    {
+      "from": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
       "from": "koide_circulant_character_bridge_note_2026-04-18",
       "to": "charged_lepton_koide_cone_algebraic_equivalence_note"
     },
@@ -15985,6 +16181,18 @@
       "to": "three_generation_observable_theorem_note"
     },
     {
+      "from": "koide_dkd_berry_spectator_note_2026-05-31",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "koide_dkd_berry_spectator_note_2026-05-31",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "koide_dkd_berry_spectator_note_2026-05-31",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_eigenvalue_q23_surface_theorem_note_2026-04-20",
       "to": "koide_selected_line_cyclic_response_bridge_note_2026-04-18"
     },
@@ -16027,6 +16235,66 @@
     {
       "from": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "luders_rule_from_composition_consistency_note_2026-05-20"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "flavor_r_half_is_the_records_flow_separatrix_2026-06-02"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "to": "flavor_missing_axiom_carrier_measure_note_2026-05-30"
+    },
+    {
+      "from": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+      "to": "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25"
+    },
+    {
+      "from": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+      "to": "koide_q_readout_factorization_theorem_2026-04-22"
+    },
+    {
+      "from": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+      "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
     },
     {
       "from": "koide_full_lattice_schur_inheritance_note_2026-04-18",
@@ -16093,12 +16361,128 @@
       "to": "koide_microscopic_scalar_selector_target_note_2026-04-18"
     },
     {
+      "from": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+      "to": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "luders_rule_from_composition_consistency_note_2026-05-20"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "persistent_record_overlap_kernel_note"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "persistent_record_as_kraus_operator_note_2026-05-20"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
       "from": "koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20",
       "to": "koide_closure_atlas_issues_flagged"
     },
     {
       "from": "koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20",
       "to": "koide_cl3_selector_gap_note_2026-04-19"
+    },
+    {
+      "from": "koide_import_two_bit_decomposition_note_2026-05-30",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "koide_import_two_bit_decomposition_note_2026-05-30",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "koide_import_two_bit_decomposition_note_2026-05-30",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_import_two_bit_decomposition_note_2026-05-30",
+      "to": "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_import_two_bit_decomposition_note_2026-05-30",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "koide_import_two_bit_decomposition_note_2026-05-30",
+      "to": "site_phase_cube_shift_intertwiner_note"
+    },
+    {
+      "from": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+      "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+    },
+    {
+      "from": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+      "to": "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29"
+    },
+    {
+      "from": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
@@ -16123,6 +16507,102 @@
     {
       "from": "koide_lane_audit_batch_note_2026-05-02",
       "to": "lattice_physical_matching_cluster_obstruction_note_2026-05-02"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
+      "from": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "no_per_site_bosonic_ccr_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "free_sector_spin_statistics_level1_mechanism_and_reconstruction_reduction_bounded_note_2026-05-30"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
     },
     {
       "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
@@ -16239,6 +16719,26 @@
     {
       "from": "koide_one_scalar_obstruction_triangulation_theorem_note_2026-04-18",
       "to": "koide_circulant_character_derivation_note_2026-04-18"
+    },
+    {
+      "from": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "to": "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "to": "free_dirac_poincare_representation_bounded_note_2026-05-30"
     },
     {
       "from": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
@@ -16765,6 +17265,18 @@
       "to": "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "koide_readout_channel_map_note_2026-05-31",
+      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "koide_readout_channel_map_note_2026-05-31",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_readout_channel_map_note_2026-05-31",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_readout_lane_demarcation_note_2026-05-30",
       "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
     },
@@ -16783,6 +17295,38 @@
     {
       "from": "koide_readout_lane_demarcation_note_2026-05-30",
       "to": "action_normalization_note"
+    },
+    {
+      "from": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "to": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "to": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+    },
+    {
+      "from": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "to": "koide_readout_lane_demarcation_note_2026-05-30"
+    },
+    {
+      "from": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "to": "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
     },
     {
       "from": "koide_reality_type_permitted_not_forced_note_2026-05-30",
@@ -16857,6 +17401,90 @@
       "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
+      "from": "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "persistent_record_as_kraus_operator_note_2026-05-20"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "luders_rule_from_composition_consistency_note_2026-05-20"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "to": "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
+    },
+    {
       "from": "koide_reviewer_stress_test_note_2026-04-21",
       "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
     },
@@ -16875,6 +17503,50 @@
     {
       "from": "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
       "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "persistent_record_as_kraus_operator_note_2026-05-20"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "decoherence_action_independence_note"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28"
+    },
+    {
+      "from": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
     },
     {
       "from": "koide_scale_selector_reparameterization_theorem_note_2026-04-20",
@@ -17023,6 +17695,30 @@
     {
       "from": "koide_theta_hierarchy_open_scalar_note_2026-04-19",
       "to": "koide_berry_phase_theorem_note_2026-04-19"
+    },
+    {
+      "from": "koide_three_measures_three_observables_note_2026-05-31",
+      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "koide_three_measures_three_observables_note_2026-05-31",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_three_measures_three_observables_note_2026-05-31",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+      "to": "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+    },
+    {
+      "from": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
     },
     {
       "from": "koide_two_29_routes_distinct_narrow_theorem_note_2026-05-23",
@@ -22793,6 +23489,22 @@
       "to": "staggered_dirac_realization_gate_note_2026-05-03"
     },
     {
+      "from": "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02",
+      "to": "native_gauge_closure_note"
+    },
+    {
+      "from": "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02",
+      "to": "three_generation_observable_count_corollary_note_2026-05-03"
+    },
+    {
+      "from": "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02",
+      "to": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "qnm_hardening_feasibility_note",
       "to": "poisson_self_gravity_loop_note"
     },
@@ -23707,6 +24419,10 @@
     {
       "from": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
       "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
+      "from": "rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02",
+      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
     },
     {
       "from": "r_base_group_theory_derivation_theorem_note_2026-04-24",
@@ -25111,6 +25827,14 @@
     {
       "from": "source_resolved_exact_green_h025_pocket_note",
       "to": "source_resolved_exact_green_scaling_note"
+    },
+    {
+      "from": "source_resolved_exact_green_pocket_kernel_reconciliation_narrow_note_2026-06-02",
+      "to": "source_resolved_exact_green_pocket_note"
+    },
+    {
+      "from": "source_resolved_exact_green_pocket_kernel_reconciliation_narrow_note_2026-06-02",
+      "to": "minimal_source_driven_field_probe_note"
     },
     {
       "from": "source_resolved_exact_green_pocket_note",
@@ -42795,7 +43519,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9921b7edb19432a535d9d9dfd354b44423032943ca249ba1c085d9b2205b0e67",
+      "note_hash": "01b295a986b4626e71311c6c36ec0dce550f3f612327696f6c15a27e649756c0",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -44643,6 +45367,21 @@
       "runner_path": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
       "title": "Beta=6 SU(3) Plaquette D7 Coefficient and Geometric-Ratio Verdict"
     },
+    "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31": {
+      "claim_id": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "1e758632855ac9e1f6791632864a46166934f4dad001ec45b99f6ee703ab5dc4",
+      "path": "docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_beta6_multicube_resummation_relocation.py",
+      "title": "Beta=6 SU(3) Plaquette \u2014 Multi-Cube K-Built Boundary Open Gate"
+    },
     "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30": {
       "claim_id": "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30",
       "claim_type_author_hint": "bounded_theorem",
@@ -44663,6 +45402,21 @@
       "path": "docs/BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md",
       "runner_path": "scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py",
       "title": "Beta=6 SU(3) Wilson Single-Plaquette Resummation-Ansatz Test Harness"
+    },
+    "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30": {
+      "claim_id": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (a conditional lower bound on the K-built resummed",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b21294bb8d2bd0f64bd89a5c97a845343354fa0a366d65d83e42009aa7613415",
+      "path": "docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
+      "title": "Beta=6 SU(3) Wilson Delta(beta) \u2014 Resummation-Radius Growth-Product Bound"
     },
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": {
       "claim_id": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
@@ -45092,6 +45846,24 @@
       "path": "docs/BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md",
       "runner_path": "scripts/frontier_bae_rename_meta.py",
       "title": "Brannen Amplitude Equipartition (BAE) Rename Meta Note"
+    },
+    "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31": {
+      "claim_id": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_q_readout_factorization_theorem_2026-04-22",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ae32ed3a0713b10074b8e4407c54af33391ffd5c2c5b533ff0f037498b4914aa",
+      "path": "docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py",
+      "title": "Brannen Delta and Spectral-Asymmetry Convention Boundary"
     },
     "breakthrough_direction_memo_2026-04-10": {
       "claim_id": "breakthrough_direction_memo_2026-04-10",
@@ -46163,6 +46935,35 @@
       "path": "docs/CHARGED_LEPTON_KOIDE_RATIO_SOURCE_SELECTOR_FIREWALL_NOTE_2026-04-27.md",
       "runner_path": "scripts/frontier_charged_lepton_koide_ratio_source_selector_firewall.py",
       "title": "Charged-Lepton Koide Ratio/Source Selector Firewall"
+    },
+    "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02": {
+      "claim_id": "charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "charged_lepton_koide_note_2026-04-18",
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e746de99e6f5d9551aadb49aad8384dd2e50ead9d4a372ef50d69a9caf0dc8d3",
+      "path": "docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_charged_lepton_koide_two_gate_tier_a_bounded_verifier.py",
+      "title": "Charged-lepton Koide two-gate companion over the existing AC_phi_lambda registry"
     },
     "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": {
       "claim_id": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
@@ -48102,6 +48903,20 @@
       "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
       "title": "Operator-Theoretic Delta_T > 0 Support on the Finite-Lambda SU(3) Transfer Operator"
     },
+    "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02": {
+      "claim_id": "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4f21abcf286f66b77112465996269957aa25ca986a9e533f99aa4408b89e0b92",
+      "path": "docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_cluster_decomp_delta_x_su3_axis_permutation_2026_06_02.py",
+      "title": "Operator-Theoretic Delta_x > 0 Support via Axis-Permutation from the Finite-Lambda SU(3) Temporal-Axis Theorem"
+    },
     "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": {
       "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
       "claim_type_author_hint": "bounded_theorem",
@@ -48113,6 +48928,23 @@
       "path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
       "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
       "title": "Mass-Gap Bridge for Cluster Decomposition on Cl(3) \u2297 Z^3"
+    },
+    "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02": {
+      "claim_id": "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "afae47d774f4faca6902f2e46557354f3deafe965e1a358004ac738aff7ad3f1",
+      "path": "docs/CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_cluster_decomposition_parent_eq8_repair_narrow_verifier.py",
+      "title": "Parent Equation (8) Repair + Nachtergaele-Sims J* Correction for AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29"
     },
     "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17": {
       "claim_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
@@ -56406,7 +57238,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "db87bed97de61a713e891ada5ccd451f9df347e2e9542211179c31d07a4bd080",
+      "note_hash": "73a7307fd5ad3afe0d5af5b227ef0723e1f7517aa2ba3ef89f8fb9c078f41290",
       "path": "docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py",
       "title": "Flavor \u2014 what axiom (not import) forces r=1/2? A measure axiom, best realized as a revision of A1 (carrier = \u211d[Z\u2083] in tracial standard form)"
@@ -57965,6 +58797,20 @@
       "path": "docs/GAUGE_MATTER_CLOSURE_GATES_2026-04-12.md",
       "runner_path": null,
       "title": "Gauge/Matter Closure Gates"
+    },
+    "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02": {
+      "claim_id": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "43a5eecb2e3af4c15216196b03faefbe1c49527de636e5d29ea0854207ef3220",
+      "path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py",
+      "title": "Gauge OS Step 1 \u2014 Wilson Plaquette Action Decomposition, \u0398-Invariance, and Reflection-Hermiticity (Narrow Companion Theorem)"
     },
     "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03": {
       "claim_id": "gauge_scalar_bridge_3plus1_native_tube_staging_gate_2026-05-03",
@@ -62035,6 +62881,23 @@
       "runner_path": "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py",
       "title": "4D Instanton Action `8\u03c0\u00b2/g\u00b2` \u2014 Bounded Normalization Certificate"
     },
+    "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30": {
+      "claim_id": "interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "staggered_only_det_positivity_case_a_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c3d7952f5ce51cc33624edb08982ad334ca6bc42ba52caa8e0f037f15af6f7ce",
+      "path": "docs/INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md",
+      "runner_path": "scripts/interacting_transfer_matter_gap_2026-05-30.py",
+      "title": "Interacting Transfer-Matrix Gap: Conditional Matter-Sector Bound and Pure-Gauge Open Gate"
+    },
     "interest_map": {
       "claim_id": "interest_map",
       "claim_type_author_hint": null,
@@ -62842,6 +63705,26 @@
       "runner_path": "scripts/cl3_koide_a1_route_f_casimir_difference_2026_05_08_routef.py",
       "title": "Koide A1 Route F \u2014 Yukawa Casimir-Difference Bounded Obstruction"
     },
+    "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02": {
+      "claim_id": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+        "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28",
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "448faf47e5a0124f50230c5aab9b3e878d22928fa7fe036d6d6fae7d437653b3",
+      "path": "docs/KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_adjoint_map_quotients_spinor_z2.py",
+      "title": "The Natural (Bloch/Hopf/Adjoint) Spinor->Vector Map Quotients the Spinor Z_2: It Does Not Identify the Records-Side and Value-Side Z_2"
+    },
     "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": {
       "claim_id": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
       "claim_type_author_hint": "bounded_theorem",
@@ -63512,6 +64395,26 @@
       "runner_path": "scripts/frontier_koide_carrier_locus_decomposition.py",
       "title": "Carrier-Locus Decomposition: matter operator import localized; Hamming-weight-1 locus labels are native"
     },
+    "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02": {
+      "claim_id": "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+        "flavor_missing_axiom_carrier_measure_note_2026-05-30",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f45aec7862e0191ffcbdfe47966bc771eeb34cab7ecbaf1c091d9445f189e392",
+      "path": "docs/KOIDE_CARRIER_SCORING_NEEDS_NONTRIVIAL_MODULAR_NOTE_2026-06-02.md",
+      "runner_path": "scripts/koide_carrier_scoring_needs_nontrivial_modular_2026_06_02.py",
+      "title": "Koide carrier scoring needs non-tracial modular input"
+    },
     "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": {
       "claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
       "claim_type_author_hint": "positive_theorem",
@@ -63763,6 +64666,22 @@
       "runner_path": "scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py",
       "title": "Koide Dimensionless `2/9` vs Radian `2/9` \u2014 Native-Unit Separation Narrow Theorem"
     },
+    "koide_dkd_berry_spectator_note_2026-05-31": {
+      "claim_id": "koide_dkd_berry_spectator_note_2026-05-31",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "bd2ae2e011f040eddc66a760f74881448a514923fcb3de7edb68c5438f037523",
+      "path": "docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py",
+      "title": "Koide Kahler-Dirac Form-Parity Berry Boundary"
+    },
     "koide_dweh_cyclic_compression_note_2026-04-18": {
       "claim_id": "koide_dweh_cyclic_compression_note_2026-04-18",
       "claim_type_author_hint": null,
@@ -63842,6 +64761,47 @@
       "path": "docs/KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md",
       "runner_path": "scripts/frontier_koide_faithfulness_rotation_scalar_excluded.py",
       "title": "Faithfulness via Matter-Operator Spin Content: spatial-rotation scalar excluded; matter attachment remains open"
+    },
+    "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02": {
+      "claim_id": "koide_finite_beta_weight_is_the_partition_bit_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "luders_rule_from_composition_consistency_note_2026-05-20",
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "flavor_missing_axiom_carrier_measure_note_2026-05-30"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "dfba3a64e33a8db95458c3a9464053eb0a37ed058c96d6943ac57fa2cbde9709",
+      "path": "docs/KOIDE_FINITE_BETA_WEIGHT_IS_THE_PARTITION_BIT_NOTE_2026-06-02.md",
+      "runner_path": "scripts/koide_finite_beta_weight_is_the_partition_bit_2026_06_02.py",
+      "title": "Koide finite-beta scoring is the partition-weight ratio, not an extra freedom"
+    },
+    "koide_fisher_rao_spherical_reorganization_note_2026-06-01": {
+      "claim_id": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+        "koide_q_readout_factorization_theorem_2026-04-22",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e619feac96b14de40383de84b46c3fedd6041f89e0d2c1a6ad98c94749c6ca81",
+      "path": "docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md",
+      "runner_path": "scripts/frontier_koide_fisher_rao_spherical_reorganization.py",
+      "title": "Koide Fisher-Rao Spherical Reorganization"
     },
     "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": {
       "claim_id": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
@@ -63982,6 +64942,49 @@
       "runner_path": "scripts/frontier_koide_gamma_orbit_selector_bridge.py",
       "title": "Koide `Gamma`-Orbit Selector Bridge Note"
     },
+    "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02": {
+      "claim_id": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "26fd89a923dae7b589012aba85baed2b99b87b94cfb06befe6a4a91e2da92415",
+      "path": "docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_generation_id_cl3_grade1_bridge.py",
+      "title": "Qubit Grade-1 Carrier Compatibility for the Generation Triplet: a Reality-Respecting Bridge Candidate Outside the Circulant No-Go Scope"
+    },
+    "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02": {
+      "claim_id": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+        "luders_rule_from_composition_consistency_note_2026-05-20",
+        "persistent_record_overlap_kernel_note",
+        "persistent_record_as_kraus_operator_note_2026-05-20",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "97560dd52fcb67797549ba541cbcbcb27d27760148e1c63111130f259267b79d",
+      "path": "docs/KOIDE_HERMITIAN_RECORDS_IMPORT_REQUIRED_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_hermitian_records_import_required.py",
+      "title": "The Hermitian-Records Target Is Import-Required, and Closing It Would Not Remove Bounded"
+    },
     "koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20": {
       "claim_id": "koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20",
       "claim_type_author_hint": null,
@@ -64010,6 +65013,44 @@
       "path": "docs/KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20_hostile_audit_findings.py",
       "title": "koide higgs dressed resolvent root theorem note (2026-04-20 \u2014 Hostile Audit Findings"
+    },
+    "koide_import_two_bit_decomposition_note_2026-05-30": {
+      "claim_id": "koide_import_two_bit_decomposition_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "site_phase_cube_shift_intertwiner_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6d97c6c34cf884aeb7e323c18864fd005da5adfbf2ea5b09681d424f127b1162",
+      "path": "docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_koide_import_two_bit_decomposition_2026_05_30.py",
+      "title": "Koide K\u00e4hler Triple and Two Independent Selection Bits"
+    },
+    "koide_kahler_dirac_silent_on_measure_note_2026-05-30": {
+      "claim_id": "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+        "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5e38c12775cd677aff3eb6ee38d3384faf4832f136fde188d45e42054a2120d9",
+      "path": "docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md",
+      "runner_path": "scripts/frontier_koide_kahler_dirac_silent_on_measure_2026_05_30.py",
+      "title": "Koide K\u00e4hler-Dirac Is Silent on the Measure"
     },
     "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": {
       "claim_id": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
@@ -64090,6 +65131,56 @@
       "path": "docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_koide_lightcone_primitive.py",
       "title": "Koide Lightcone Primitive \u2014 Operator-Level Equivalent of NSC"
+    },
+    "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02": {
+      "claim_id": "koide_massive_doubling_reduces_to_transfer_positivity_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (conditional; reduction, not closure)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+        "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "47d777c16d9adb59b8ad25c34ded68509e58c0c8f46c7b0a4d2e46498606c8e7",
+      "path": "docs/KOIDE_MASSIVE_DOUBLING_REDUCES_TO_TRANSFER_POSITIVITY_NOTE_2026-06-02.md",
+      "runner_path": "scripts/koide_massive_doubling_reduces_to_transfer_positivity_2026_06_02.py",
+      "title": "Massive Dirac Doubling Reduces the On-Site Boost Residual to Transfer-Operator Positivity"
+    },
+    "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02": {
+      "claim_id": "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+        "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+        "free_sector_spin_statistics_level1_mechanism_and_reconstruction_reduction_bounded_note_2026-05-30",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9eff376384074bdf400a8786280769132ca37897af3addb159d3b19c756ef368",
+      "path": "docs/KOIDE_MATTER_ATTACHMENT_GATE_EXTRA_ASSUMPTIONS_REVIEW_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_matter_attachment_gate_extra_assumptions_review.py",
+      "title": "Extra-Assumptions Review of the Matter-Attachment Gate No-Gos"
     },
     "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02": {
       "claim_id": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
@@ -64273,6 +65364,24 @@
       "path": "docs/KOIDE_ONE_SCALAR_OBSTRUCTION_TRIANGULATION_THEOREM_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_koide_one_scalar_obstruction_triangulation.py",
       "title": "Koide One-Scalar Obstruction Triangulation Theorem"
+    },
+    "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02": {
+      "claim_id": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "free_dirac_poincare_representation_bounded_note_2026-05-30"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "a5bca02125e92c2a914414c97f9e45a413ea08fe0a0a8421d29c495edc559dae",
+      "path": "docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md",
+      "runner_path": "scripts/koide_onsite_boost_reconstruction_2026_06_02.py",
+      "title": "On-Site Weyl Boost Reconstruction: the Grassmann-Free so(3,1) Carrier and the Faithful-vs-Scalar Selection in R (reduces-to-residual)"
     },
     "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01": {
       "claim_id": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
@@ -64890,6 +65999,22 @@
       "runner_path": "scripts/frontier_koide_qubit_lattice_dim_closure.py",
       "title": "Koide Qubit\u2013Lattice-Dimension Algebraic Closure"
     },
+    "koide_readout_channel_map_note_2026-05-31": {
+      "claim_id": "koide_readout_channel_map_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4a99f2afeff2a6b88b76b1cc86ed943bc43c8ed9c4fcc29194aca50af31a74b0",
+      "path": "docs/KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_koide_readout_channel_map_2026_05_31.py",
+      "title": "Koide Circulant Readout Bookkeeping Map"
+    },
     "koide_readout_lane_demarcation_note_2026-05-30": {
       "claim_id": "koide_readout_lane_demarcation_note_2026-05-30",
       "claim_type_author_hint": "no_go",
@@ -64928,6 +66053,27 @@
       "runner_path": "scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py",
       "title": "Koide Real-Rep Block-Count Route: Permitted-Not-Forced"
     },
+    "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02": {
+      "claim_id": "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "koide_readout_lane_demarcation_note_2026-05-30",
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "78a86cf0d91261c5b66d5259f6ca75820738d04068028f8945e90e142557e573",
+      "path": "docs/KOIDE_REALITY_FAVORS_SIGNED_READOUT_SHARED_MECHANISM_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_reality_favors_signed_shared_mechanism.py",
+      "title": "Reality Favors the Signed Readout, and Shares a Phase-Collapse Mechanism With the Records Side"
+    },
     "koide_reality_type_permitted_not_forced_note_2026-05-30": {
       "claim_id": "koide_reality_type_permitted_not_forced_note_2026-05-30",
       "claim_type_author_hint": "bounded_theorem",
@@ -64964,6 +66110,53 @@
       "path": "docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md",
       "runner_path": "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py",
       "title": "Koide Records Objectivity Conditional: Equal-Block Metric Plus Objectivity Gives r=1/2"
+    },
+    "koide_records_pointer_grounds_block_channel_note_2026-05-31": {
+      "claim_id": "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8896e000ac63e6c55774278bd85684039ff20bf4b6c663db2319251a7d44387f",
+      "path": "docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_koide_records_pointer_grounds_block_channel_2026_05_31.py",
+      "title": "Koide Finite Pointer-Trace Channel Bookkeeping"
+    },
+    "koide_records_reality_shrinks_import_to_sign_note_2026-06-02": {
+      "claim_id": "koide_records_reality_shrinks_import_to_sign_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+        "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
+        "koide_reality_favors_signed_readout_shared_mechanism_narrow_theorem_note_2026-06-02",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "persistent_record_as_kraus_operator_note_2026-05-20",
+        "luders_rule_from_composition_consistency_note_2026-05-20",
+        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+        "observable_principle_from_axiom_note",
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8540adc187503d8e6f7accad5a5ee77fb956a5ad41583ae21dbef4c5d4193003",
+      "path": "docs/KOIDE_RECORDS_REALITY_SHRINKS_IMPORT_TO_SIGN_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_records_reality_shrinks_import_to_sign.py",
+      "title": "Reality/CPT Discharges the Records Branch Phase but Not the Sign: the Terminal T-Positivity Import Shrinks From U(1) to a Z_2 Sign"
     },
     "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16": {
       "claim_id": "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16",
@@ -65019,6 +66212,30 @@
       "path": "docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
       "runner_path": "scripts/koide_rho_delta_dimensionless_dof_ratio_runner.py",
       "title": "Koide rho_delta = 2/9 C_3 DOF-Ratio Bridge"
+    },
+    "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02": {
+      "claim_id": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_matter_attachment_gate_extra_assumptions_review_note_2026-06-02",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "persistent_record_as_kraus_operator_note_2026-05-20",
+        "decoherence_action_independence_note",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "90fa3b4ce6911dbf2f3dd7b8491a41fc1fd48b40d2ba911c00f81bc9bc8f5e6a",
+      "path": "docs/KOIDE_RP_SPECTRUM_REDUCE_TO_TRANSFER_POSITIVITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_koide_rp_spectrum_reduce_to_transfer_positivity.py",
+      "title": "RP and the Spectrum Condition Reduce to Transfer-Operator Positivity, with a Records-Route Target"
     },
     "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological": {
       "claim_id": "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological",
@@ -65195,7 +66412,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "4ecd1778ce26f650171b9350e74a7176d466f43b8e3b4fdc5ba9695541eeb85f",
+      "note_hash": "32d9cfc4199ac31163c2116d239850c93b08fb076e1c4045e1b6406aec920eb5",
       "path": "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
       "runner_path": "scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py",
       "title": "Koide Signed-Eigenvalue vs Singular-Value Readout Narrow Theorem"
@@ -65278,6 +66495,38 @@
       "path": "docs/KOIDE_THETA_HIERARCHY_OPEN_SCALAR_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_berry_phase_theorem.py",
       "title": "Koide Theta Hierarchy Open Scalar -- Closed on the Actual Berry Route"
+    },
+    "koide_three_measures_three_observables_note_2026-05-31": {
+      "claim_id": "koide_three_measures_three_observables_note_2026-05-31",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "32fd5e24fe9e3ae16b70ae27dfae81c17da2b47fdd31146c2921c012d0edd8e8",
+      "path": "docs/KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md",
+      "runner_path": "scripts/frontier_koide_three_measures_three_observables_2026_05_31.py",
+      "title": "Koide Count Readouts and Spectral-Asymmetry Bookkeeping"
+    },
+    "koide_tracial_standard_form_carrier_narrow_note_2026-06-02": {
+      "claim_id": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8d93b10be4ab681d66aa41345b7bbb1ec07acd497e5fbf4d1508b3b5a801efd0",
+      "path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+      "runner_path": "scripts/koide_tracial_standard_form_carrier_2026_06_02.py",
+      "title": "Koide r=1/2 from a tracial-standard-form carrier: does GNS rank the (1,N-1) partition?"
     },
     "koide_transport_gap_constant_no_go_note_2026-04-20": {
       "claim_id": "koide_transport_gap_constant_no_go_note_2026-04-20",
@@ -70967,6 +72216,18 @@
       "path": "docs/OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md",
       "runner_path": "scripts/frontier_observable_principle_p1_campaign_closure_synthesis_2026_05_18.py",
       "title": "Observable-Principle P1 Bridge Campaign \u2014 Closure Synthesis"
+    },
+    "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31": {
+      "claim_id": "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "1f1c553ab83b120a3477c3f882bf6ce5d6947a63c6054bdcc923213e16a93188",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md",
+      "runner_path": "scripts/audit_companion_observable_principle_p1_exponent_irreducibility_2026_05_31.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Exponent-Fixing Irreducibility Narrow Note"
     },
     "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": {
       "claim_id": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
@@ -76662,6 +77923,23 @@
       "runner_path": "scripts/q_integer_spectrum_check.py",
       "title": "Per-Site Qubit Occupation Count Has Integer Spectrum"
     },
+    "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02": {
+      "claim_id": "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "graph_first_su3_integration_note",
+        "native_gauge_closure_note",
+        "three_generation_observable_count_corollary_note_2026-05-03",
+        "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ac2377aafe4ce03ac4b87bef583605076093c9c628ac0c26c7c35d514a2234a6",
+      "path": "docs/QCD_BETA_3_PURE_GAUGE_VS_FULL_SM_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_qcd_beta_3_pure_gauge_vs_full_sm_narrow_exact_2026_06_02.py",
+      "title": "SU(3)_c 1-Loop QCD \u03b2-Function Coefficient `b_3`: Pure-Gauge vs Full-SM Narrow Theorem"
+    },
     "qcd_low_energy_running_bridge_note_2026-05-01": {
       "claim_id": "qcd_low_energy_running_bridge_note_2026-05-01",
       "claim_type_author_hint": "bounded_theorem",
@@ -78327,6 +79605,20 @@
       "path": "docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Finite-Volume Gibbs State Relative to rho_ref: Conditional RP Compatibility Template"
+    },
+    "rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02": {
+      "claim_id": "rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "523383e5457aa6dd68ba1a774d9f7303baba1c573d2b467fbf5b89463815cbe4",
+      "path": "docs/RP_TWO_STEP_TRANSFER_MATRIX_SINGULAR_MODE_C2_TIGHTENING_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_rp_two_step_transfer_matrix_singular_mode_c2_tightening_2026_06_02.py",
+      "title": "RP Two-Step Transfer Matrix Singular-Mode C2 Tightening"
     },
     "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10": {
       "claim_id": "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10",
@@ -80571,6 +81863,23 @@
       "path": "docs/SOURCE_RESOLVED_EXACT_GREEN_H025_POCKET_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_source_resolved_exact_green_h025_pocket_note_hostile_audit_findings.py",
       "title": "source resolved exact green h025 pocket note \u2014 Hostile Audit Findings"
+    },
+    "source_resolved_exact_green_pocket_kernel_reconciliation_narrow_note_2026-06-02": {
+      "claim_id": "source_resolved_exact_green_pocket_kernel_reconciliation_narrow_note_2026-06-02",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (narrow companion; kernel-convention repair)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "source_resolved_exact_green_pocket_note",
+        "minimal_source_driven_field_probe_note"
+      ],
+      "helper_runner_paths": [
+        "scripts/minimal_source_driven_field_probe.py"
+      ],
+      "note_hash": "6ea953d1e885f25a30d92fc4b8e8fb7a3ba404af85e2e8a0a9267d1ef2a40095",
+      "path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_KERNEL_RECONCILIATION_NARROW_NOTE_2026-06-02.md",
+      "runner_path": "scripts/frontier_source_resolved_exact_green_pocket_kernel_reconciliation_2026_06_02.py",
+      "title": "Source-Resolved Exact Green Pocket \u2014 Kernel Reconciliation Companion"
     },
     "source_resolved_exact_green_pocket_note": {
       "claim_id": "source_resolved_exact_green_pocket_note",
@@ -89967,6 +91276,7 @@
     "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
     "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
     "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+    "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
     "oh_schur_boundary_action_note",
     "ollivier_einstein_proxy_note_2026-04-11",
     "open_koide_flavor_cluster_consolidation_map_2026-06-02",
@@ -90299,27 +91609,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 796,
+      "bounded_theorem": 823,
       "decoration": 1,
       "meta": 201,
-      "no_go": 93,
+      "no_go": 94,
       "none": 1404,
-      "open_gate": 59,
+      "open_gate": 62,
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1197,
+      "bounded_theorem": 1224,
       "decoration": 1,
       "meta": 201,
-      "no_go": 196,
+      "no_go": 197,
       "none": 423,
-      "open_gate": 134,
+      "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10240,
-    "leaf_count": 887,
-    "node_count": 2730,
-    "root_count": 941,
-    "runners_with_path": 2315
+    "edge_count": 10421,
+    "leaf_count": 900,
+    "node_count": 2761,
+    "root_count": 942,
+    "runners_with_path": 2346
   }
 }

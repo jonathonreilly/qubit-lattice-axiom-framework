@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1179 |
+| unaudited | 1178 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 93 |
+| ~~audited_conditional~~ | 94 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 986 |
-| `audited_conditional` | 93 |
+| `audited_conditional` | 94 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1418 |
+| `unaudited` | 1417 |
 
 | claim_type | count |
 |---|---:|
@@ -1169,6 +1169,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5885,6 +5886,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The real gate is the δ-independent choice between det_R(αP_s+βP_d)=αβ², counting the doublet as two real dimensions, and det_C=αβ, counting it as one complex slot, with neither counting fixed by the framework baseline+retained inputs.  _(class `A`)_
 - **chain closes:** False — The displayed algebraic identities check out under the note and runner definitions. The missing step is an explicit retained bridge theorem or axiom-level rule proving that the framework baseline has no readout/measure normalization selecting det_R or det_C.
 - **rationale:** The independent formula inventory verifies S1-S4 under the runner's C, Ps, Pd, and λ definitions: the C→e^{iα}C obstruction, δ-independent Q traces, det_R=αβ² versus block det_C=αβ, and degeneracy at every δ=mπ/3. The runner does compute these algebraic checks rather than merely printing constants. However, the central conclusion that the framework baseline+retained inputs leave the count undetermined and that neither native reading is forced is broader than those checks and depends on an absent admissibility/exhaustiveness bridge.
+- **auditor confidence:** high
+
+### `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`
+
+- **Note:** [`FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md`](../../docs/FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that the spin-statistics engine is real for a supplied spin-1/2 field, but P1 is not forced from baseline plus emergent spacetime until R and the bare-qubit boost-spinor embedding are supplied.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-035115-6eee5f15-flavor_spin_statistics_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** T1 excludes Bose statistics only for a given relativistic spin-1/2 field, and the statistics-blind kernel does not back-propagate that exclusion to the UV lattice without the missing reconstruction R.  _(class `A`)_
+- **chain closes:** False — The restricted packet does not derive the free-field OS-Wightman reconstruction R or the full Lorentz boost-spinor embedding on the bare qubit. Without those bridges, T1 remains an IR statement about an already supplied relativistic spinor field.
+- **rationale:** The runner does perform finite algebraic checks for the CAR/CACR spectra, the constructed spectator taste block, the statistics-blind kernel identity, two-site statistics agnosticism, and the Pauli Casimir. Those checks support the stated partial picture, but they do not derive R or the boost-sector Poincare representation from the framework baseline. The note explicitly says R is unaudited/partial and currently presupposes the antiparticle sign structure it must produce, so the forcing claim remains conditional rather than closed.
+- **open / conditional deps cited:**
+  - `FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION.md`
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

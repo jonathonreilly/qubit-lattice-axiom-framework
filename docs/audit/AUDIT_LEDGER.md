@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1195 |
+| unaudited | 1194 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 82 |
+| ~~audited_conditional~~ | 83 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 82 |
+| `audited_conditional` | 83 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1434 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
@@ -1154,6 +1154,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5591,6 +5592,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** C3 admits both invariant bilinears I and J=C-C^2, so choosing the antisymmetric J pairing that yields det_C is an unforced extra posit rather than a consequence of fermionic Berezin structure.  _(class `A`)_
 - **chain closes:** False — The packet closes the narrow algebraic non-selection of J, but the broader claim also imports the P1 carrier premise, Round-1 U(1)_b measure-neutrality, and the det_C/det_R-to-r/Q mapping without providing those authorities. R2-4 verifies only arithmetic after those mappings are assumed.
 - **rationale:** R2-1 through R2-3 are substantive algebraic checks: the determinant is a product functional, C3 preserves both I and J, and determinant exponent is separate from doublet count. The displayed eigenvalue and Frobenius block-total formulas are consistent under the runner's conventions. However, the full source-note conclusion that det_R/Q=1 stands and that the wall is Dirac-vs-Majorana relies on inherited mappings and prior U(1)_b/P1 authorities absent from the restricted packet, so the chain is not closed as written.
+- **auditor confidence:** high
+
+### `flavor_find_j_round3_dirac_generation_blind_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite 3x3 generation-algebra checks that iI3 and C-eigenbasis phase centralizers leave the circulant H fixed, generic rephasing e^{iθ}C violates C^3=I, and no nonzero circulant anticommutes with Γχ.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-030457-5c5ed2c9-flavor_find_j_round3_dir`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Charge conjugation acts as the identity on the generation index, so the charged-lepton Dirac reality structure restricts on generation space to the central scalar i·I3 rather than to a doublet complex structure.  _(class `A`)_
+- **chain closes:** False — The displayed matrix identities check out under the runner's definitions, including the no-circulant-anticommutant claim by diagonalizing circulants with Γχ. The full physics conclusion does not close because the packet does not derive or cite the bridge from charged-lepton Dirac charge conjugation to the generation operator iI3, and the runner assumes that bridge by setting U=iI3.
+- **rationale:** The runner performs real algebraic checks rather than merely printing constants, and the core finite-matrix formula family is consistent with the stated C3/circulant conventions. However, the load-bearing physical identification is imported: the source asserts that Dirac charge conjugation is generation-blind and therefore acts as iI3 on the generation factor, while the restricted packet contains no retained authority or derivation of that spinor-to-generation bridge. The broader statements that the two listed obstructions are exactly exhaustive routes to κ=2 and that continuous levers are exhausted are also not closed by the provided one-hop packet.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

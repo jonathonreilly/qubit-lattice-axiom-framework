@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py
-runner_sha256: 33d92cae0758ab951c3e7dd6602fb5f5c8d8baee73b718cca130b382e5edd1fa
+runner_sha256: 7a26d713fa459ff06da52baf258cb691a4c0062ed75f007167d96624c81fc56e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.17
+elapsed_sec: 0.89
 status: ok
 ----- stdout -----
 ================================================================================
@@ -99,7 +99,7 @@ GATE SUMMARY (8 verification gates):
   GATES: PASS = 8, FAIL = 0
 
 SUB-CHECK SUMMARY:
-  PASS = 36, FAIL = 0, runtime = 0.8s
+  PASS = 36, FAIL = 0, runtime = 0.6s
 ================================================================================
 
 ----- stderr -----

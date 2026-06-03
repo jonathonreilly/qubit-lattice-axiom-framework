@@ -149694,24 +149694,60 @@
       "verdict_rationale": null
     },
     "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-06-03T01:33:18.218571+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On a single Axiom 1 qubit site with an oriented Pauli triple satisfying relation (1), S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module; no physical spin-statistics, matter-sector, or multi-site claim is audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 6.67,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-013026-b566889b-internal_external_su2_me",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes within the A1 qubit/Cl(3,0) local algebra: retained inputs supply the Pauli realization and per-site S_i, and direct Pauli multiplication gives B_i = iS_i with the stated commutators. The Spin(3) lift convention is standard finite-dimensional Clifford/Spin mathematics and is checked in the runner by exact symbolic conjugation and infinitesimal commutator identities.",
       "claim_id": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
-      "claim_scope": null,
+      "claim_scope": "Operator-level identification, in the retained positive-chirality Pauli realization of the one-qubit Cl(3,0) local algebra, of the per-site Pauli su(2) generators S_i = sigma_i/2 with the Hermitian infinitesimal Spin(3) lift generator data.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-06-03T01:33:18.218571+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -149723,19 +149759,19 @@
         "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 6.67,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "In the canonical Pauli realization gamma_i = sigma_i on H_x = C^2, S_i = sigma_i/2 and B_i = (1/2)gamma_j gamma_k satisfy B_i = i S_i, so the Hermitian Spin(3) lift generators are the same S_i.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8ac6fa4f47253278c93f9d2b04e683615b879b5ce0f28fdee255a02855455414",
       "note_path": "docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the row-vector sign convention in the Spin(3) lift; the provided runner and manual Pauli products agree with the stated convention.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -149882,16 +149918,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 273,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 273
       },
       "runner_path": "scripts/internal_external_su2_merger_runner.py",
       "title": "Internal-External SU(2) Operator Identification",
       "transitive_descendants": 8,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source constructs the Pauli matrices, signed permutation matrices, cofactor actions, and SU(2) lifts with exact sympy checks; it is not merely printing constants and has no helper imports. Independent sign and factor checks give B_i = iS_i, [B_i,B_j] = -epsilon_ijk B_k, and [S_i,S_j] = i epsilon_ijk S_k under the stated row-vector convention. The only meta upstream is flagged as an axiom premise, all non-axiom cited authorities in the packet are retained-grade, and no external comparator, fitted scale, or open bridge is used."
     },
     "inverse_problem_graph_requirements_note": {
       "audit_date": null,
@@ -215694,11 +215730,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 15.57,
+      "load_bearing_score": 18.57,
       "load_bearing_step": "With S_i := sigma_i/2 and the displayed Pauli relations, the note computes [S_i,S_j]=i epsilon_ijk S_k, S^2=(3/4)I, the S_3 spectrum, and the scalar commutant inside M_2(C).",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "cbc3b65d854de30136ea77b06438b730a737ef372fee5455aba3b9e7df6c704d",
       "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
       "notes_for_re_audit_if_any": "Second auditor should re-check that \"Pauli generating triple\" is read with the displayed oriented commutator convention in relation (1); an orientation-reversed triple would flip the commutator sign.",

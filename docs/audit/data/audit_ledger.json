@@ -19128,22 +19128,46 @@
       "verdict_rationale": "The displayed formulas following the asserted d_7 are arithmetically consistent: 4*(5/68024448)=5/17006112, d_7/d_6=5/21, and the relative miss against 49/68024448 is 29/49. The load-bearing exact d_7 value itself is not certified by the provided completed output: the cache reports only d_5 and d_6, while the source note claims a maxorder=7 PASS=22 run. The visible runner source also has the optimized Fraction-engine middle omitted in the packet, so the restricted packet cannot verify that the order-7 coefficient is computed rather than asserted."
     },
     "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-06-03T02:03:16.817453+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1e1541f876aca1f6c83fbdec6f8f59e1cc3a198c9290f63f8da21677b4d3bb0b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-015912-97de285e-beta6_plaquette_multicub",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated open-gate scope, the finite algebraic checks close from the retained/retained_bounded inputs plus standard SU(3) tensor algebra. The full 48-support beta9 classification and beta10 marked-face sector weight are explicitly excluded, so they are not hidden requirements for this scoped claim.",
       "claim_id": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
-      "claim_scope": null,
+      "claim_scope": "Bounded open-gate support for the beta=6 resummation lane: finite K=log J cumulants through kappa_5, Euler cube/two-cube leading weights, the SU(3) epsilon identity, and finite J-truncation root migration; no full beta9/beta10 sector classification or beta=6 closure.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-06-03T02:03:16.817453+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -19152,34 +19176,34 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "open_gate",
+      "effective_status_reason": "audited_open_gate",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "open_gate",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The narrow open-gate support is that K = log J gives the checked single-plaquette cumulants, the Euler closed-surface law gives the cube and two-cube weights, the SU(3) epsilon channel exists at a >=3-face junction, and the finite J-truncation roots migrate while the full beta9/beta10 sector classification remains open.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1e758632855ac9e1f6791632864a46166934f4dad001ec45b99f6ee703ab5dc4",
       "note_path": "docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the beta10 marked-face wording remains scoped as an open residual rather than a retained sector-weight theorem.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 11,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 12
       },
       "runner_path": "scripts/frontier_beta6_multicube_resummation_relocation.py",
       "title": "Beta=6 SU(3) Plaquette \u2014 Multi-Cube K-Built Boundary Open Gate",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The displayed kappa values, K' leading coefficient, Euler weights, SU(3) tensor identity, and finite root table independently check out under the note's conventions. The runner source performs substantive finite recurrence, logarithm, arithmetic, and polynomial-root computations rather than merely printing the claimed results; its twelfth PASS is a non-load-bearing scope guard. Both cited authorities are retained-grade for the bounded inputs used here, and the note does not promote the uncomputed beta9/beta10 classification to a theorem."
     },
     "beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30": {
       "audit_date": "2026-05-30T13:18:19.345362+00:00",

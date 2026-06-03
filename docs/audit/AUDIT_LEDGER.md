@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 180 |
 | **retained_bounded** | 639 |
 | _retained_pending_chain_ | 12 |
-| open_gate | 28 |
-| unaudited | 1217 |
+| open_gate | 29 |
+| unaudited | 1216 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 981 |
+| `audited_clean` | 982 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1456 |
+| `unaudited` | 1455 |
 
 | claim_type | count |
 |---|---:|
@@ -185,6 +185,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2148,6 +2149,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The upstream d_5, d_6, and support-reduction authority is retained_bounded, and the displayed ratio arithmetic checks. However, the provided completed runner cache stops at maxorder=6 with PASS=18 and does not execute the V5/maxorder=7 d_7 computation claimed by the note.
 - **rationale:** The displayed formulas following the asserted d_7 are arithmetically consistent: 4*(5/68024448)=5/17006112, d_7/d_6=5/21, and the relative miss against 49/68024448 is 29/49. The load-bearing exact d_7 value itself is not certified by the provided completed output: the cache reports only d_5 and d_6, while the source note claims a maxorder=7 PASS=22 run. The visible runner source also has the optimized Fraction-engine middle omitted in the packet, so the restricted packet cannot verify that the order-7 coefficient is computed rather than asserted.
 - **auditor confidence:** medium
+
+### `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`
+
+- **Note:** [`BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md`](../../docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded open-gate support for the beta=6 resummation lane: finite K=log J cumulants through kappa_5, Euler cube/two-cube leading weights, the SU(3) epsilon identity, and finite J-truncation root migration; no full beta9/beta10 sector classification or beta=6 closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-015912-97de285e-beta6_plaquette_multicub`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The narrow open-gate support is that K = log J gives the checked single-plaquette cumulants, the Euler closed-surface law gives the cube and two-cube weights, the SU(3) epsilon channel exists at a >=3-face junction, and the finite J-truncation roots migrate while the full beta9/beta10 sector classification remains open.  _(class `A`)_
+- **chain closes:** True — Within the stated open-gate scope, the finite algebraic checks close from the retained/retained_bounded inputs plus standard SU(3) tensor algebra. The full 48-support beta9 classification and beta10 marked-face sector weight are explicitly excluded, so they are not hidden requirements for this scoped claim.
+- **rationale:** The displayed kappa values, K' leading coefficient, Euler weights, SU(3) tensor identity, and finite root table independently check out under the note's conventions. The runner source performs substantive finite recurrence, logarithm, arithmetic, and polynomial-root computations rather than merely printing the claimed results; its twelfth PASS is a non-load-bearing scope guard. Both cited authorities are retained-grade for the bounded inputs used here, and the note does not promote the uncomputed beta9/beta10 classification to a theorem.
+- **auditor confidence:** high
 
 ### `beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30`
 

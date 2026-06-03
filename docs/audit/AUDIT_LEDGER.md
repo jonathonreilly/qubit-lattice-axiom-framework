@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 637 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 978 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1464 |
+| `unaudited` | 1463 |
 
 | claim_type | count |
 |---|---:|
@@ -1139,6 +1139,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
+| `koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8385,6 +8386,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded localization that the directly tested octahedral compensator, scalar-covariance, hard-core-boson commutation, and on-site spinor-sign checks do not force matter-state spinor attachment and instead point to the graded-statistics gate.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-013353-b4c8feb3-koide_matter_attachment_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The native first-order operator D's spatial covariance factors through the octahedral rotation action and is blind to the SU(2) cover, so the discriminator is cross-site graded/CAR locality rather than any single-site rotation or boost covariance.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the core finite checks: the untwisted spin-blind O representation, the projective spin lift, scalar covariance without a spinor index, and commuting native qubit ladders. The full four-route claim does not close in the restricted packet because the Kawamoto-Smit antecedent analysis, the Space2-vs-Space1 state-level identification claim, and the generation-identification chirality equivalence are asserted or hard-coded rather than supplied by retained one-hop bridge authorities.
+- **rationale:** The completed runner is not a trivial printout for the octahedral/statistics core, but its final disposition checks are hard-coded summaries and do not verify the Route 1 and Route 2 prose claims. The retained no-go authorities support that CAR/graded statistics is not forced by the one-qubit Z^3 algebra, but they do not by themselves prove that every named lever in the source note reduces to that same gate. The side claim that this is the same gate as generation-identification chirality also lacks a retained bridge in the restricted packet.
+- **open / conditional deps cited:**
+  - `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md`
+  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
+  - `DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`
 - **auditor confidence:** high
 
 ### `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`

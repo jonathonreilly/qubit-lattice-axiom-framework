@@ -102,6 +102,7 @@ from __future__ import annotations
 
 import math
 from itertools import combinations, permutations
+from pathlib import Path
 
 import numpy as np
 
@@ -109,6 +110,8 @@ MASS = 0.5
 A_TAU = 1.0
 TOL_PSD = 1e-9
 RNG = np.random.default_rng(20260528)
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SOURCE_NOTE = REPO_ROOT / "docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md"
 
 
 # ===========================================================================
@@ -230,7 +233,7 @@ def wilson_u1_transfer_kernel(K_pts, beta):
     """Wilson temporal-gauge transfer between two slice link-configs on U(1):
        K(a,b) = exp( -beta (1 - cos(a-b)) ), the Boltzmann weight of the
        temporal-spatial plaquette P = U'(U)^dag in temporal gauge (U_0=1).
-       Positive-definite (Bochner: Fourier coeffs are I_n(beta)>0)."""
+       Positive-definite (Bochner: Fourier coeffs are e^{-beta} I_n(beta)>0)."""
     th = np.array([2.0 * math.pi * k / K_pts for k in range(K_pts)])
     Kk = np.zeros((K_pts, K_pts))
     for i in range(K_pts):
@@ -512,6 +515,35 @@ def route_C(group, Ls, m, beta, n_cfg):
     }
 
 
+def source_note_sync_check() -> bool:
+    """Check that the source note records the cache values and U(1) coefficient convention."""
+    text = SOURCE_NOTE.read_text(encoding="utf-8")
+    required = [
+        "`e^{-beta} I_n(beta) > 0`",
+        "mixed-Gram min eig **-5.33e-17**",
+        "mixed-Gram min eig **-2.74e-16**",
+        "`||G - G^dag|| = 1.26e-16`",
+    ]
+    banned = [
+        ("old omitted e^{-beta} coefficient", "`I_n(beta)" + " > 0`"),
+        ("old Route T U(1) cache value", "mixed-Gram min eig **-5.3" + "e-17**"),
+        ("old rounded SU(3) cache value", "mixed-Gram min eig **-2.7" + "e-16**"),
+    ]
+    ok_required = all(needle in text for needle in required)
+    ok_banned = all(needle not in text for _, needle in banned)
+    print("-" * 82)
+    print("SOURCE NOTE SYNC CHECK")
+    print("  requires repaired U(1) coefficient and cache-synchronized table values")
+    print("-" * 82)
+    for needle in required:
+        print(f"  [{'PASS' if needle in text else 'FAIL'}] source contains {needle}")
+    for label, needle in banned:
+        print(f"  [{'PASS' if needle not in text else 'FAIL'}] source excludes {label}")
+    print(f"  -> source-note sync: {'PASS' if ok_required and ok_banned else 'FAIL'}")
+    print()
+    return ok_required and ok_banned
+
+
 # ===========================================================================
 # MAIN
 # ===========================================================================
@@ -525,6 +557,9 @@ def main() -> int:
     print()
     P = 0
     F = 0
+
+    ok = source_note_sync_check()
+    P += ok; F += (not ok)
 
     # NEGATIVE CONTROL
     print("-" * 82)

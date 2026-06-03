@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 303,
+    "critical": 302,
     "high": 249,
     "leaf": 377,
     "medium": 303
@@ -913,28 +913,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
-      "claim_scope": "Given the note's stated sector fractions and affine Q(r)=1/3+(2/3)r, r=1/2 is the sector-entropy maximum and balance point mapping to Q=2/3, while r=0 and r=1 map to the listed endpoint Q values.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.045,
-      "note_path": "docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py",
-      "transitive_descendants": 746
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -38112,6 +38090,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 69,
-  "total_pending": 1232
+  "ready_count": 68,
+  "total_pending": 1231
 }

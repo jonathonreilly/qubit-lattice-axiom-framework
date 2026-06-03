@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 635 |
+| **retained_bounded** | 636 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
 | unaudited | 1227 |
-| audit_in_progress | 1 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,8 +61,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 975 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 976 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
@@ -385,6 +383,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
@@ -5256,6 +5255,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The symmetric sum of double bit flips on the Hamming-weight-1 triplet projects exactly to J-I, while single bit flips project to zero.  _(class `C`)_
 - **chain closes:** True — Direct finite enumeration of the eight cube corners shows that single flips leave the Hamming-weight-1 subspace, while the three double flips give the three off-diagonal edges and sum to J-I. The spectrum and Q formula then follow algebraically from the eigenvalues 2,-1,-1 of J-I.
 - **rationale:** The runner constructs the cube corners, shift matrices, and projection matrix directly, then checks the stated projection identities rather than importing another note or an external value. Independent formula inventory confirms the displayed projection, spectrum, and Koide-ratio identities under the note's definitions. The note stays within its bounded claim and explicitly does not claim to derive b/a=1/sqrt(2) or an observed-mass fit.
+- **auditor confidence:** high
+
+### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`
+
+- **Note:** [`FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md`](../../docs/FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the displayed r-family definitions and Q(r)=1/3+(2/3)r, r=1/2 is the sector-entropy maximum, imbalance trough, and r->1-r fixed point, with r=0,1/2,1 mapping to Q=1/3,2/3,1 respectively.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-011524-d1f74344-flavor_r_half_is_a_stati`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The sector-power entropy S(r) with p_singlet=1/(1+2r) and p_doublet=2r/(1+2r) is maximized at r=1/2, equivalently the singlet-doublet imbalance is zero there.  _(class `A`)_
+- **chain closes:** True — The entropy statement reduces to the binary entropy maximum at equal sector weights, which gives 1/(1+2r)=2r/(1+2r) and hence r=1/2. The Q-table entries and imbalance/fixed-point claims are direct algebraic substitutions; the broader lane-assignment dynamics is explicitly outside the audited scope.
+- **rationale:** The displayed closed-form identities check out under the note's own definitions: S(r) has its unique interior maximum at r=1/2, the imbalance |3-6r| vanishes there, and the listed Q values follow by substitution. The per-DOF caveat is also consistent with equal per-DOF weights giving r=1. This is a bounded algebraic/calculus closure, not a derivation of the physical lane assignment or charged-lepton sector selection.
 - **auditor confidence:** high
 
 ### `flavor_r_half_is_the_records_flow_separatrix_2026-06-02`

@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 180 |
 | **retained_bounded** | 644 |
 | _retained_pending_chain_ | 12 |
-| open_gate | 29 |
-| unaudited | 1169 |
+| open_gate | 30 |
+| unaudited | 1168 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 987 |
+| `audited_clean` | 988 |
 | `audited_conditional` | 102 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1408 |
+| `unaudited` | 1407 |
 
 | claim_type | count |
 |---|---:|
@@ -578,6 +578,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dkd_berry_spectator_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8981,6 +8982,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For each listed alpha_i = q_i*pi with q_i a nonzero rational, any rational c satisfying c*alpha_i = 2/9 would make pi = 2/(9*c*q_i) rational, so no such rational c exists; c=0 gives 0 != 2/9.  _(class `A`)_
 - **chain closes:** True — Within the bounded six-value scope, the proof needs only q_i != 0, rational arithmetic, and pi irrational/transcendental: a rational multiple of pi cannot equal the nonzero rational 2/9. The retained three-generation dependency supplies the d=3 positional value used in the listed coefficients, and the retained no-go is only positional for the bridge residual rather than a forcing input.
 - **rationale:** The audited result is a class-A separation theorem over six stated rational multiples of pi, and the independent calculation closes by the elementary fact Q*pi intersects Q only at 0. The cached runner computes the exact rational/pi forms and no-rational-solution checks with PASS=146, FAIL=0 under SHA 73b771123097bd553bbe36c466c12beb0cbc482341aa6c3eebad8beaf07a1275. No-go discipline is satisfied only because the verdict is bounded: it does not ratify an exhaustive native-unit list, a radian-bridge closure, or the broader Koide/Brannen programme. A non-load-bearing admitted-context sentence about arbitrary polynomials in pi is broader than needed; the clean audit relies only on the correct linear q*pi case.
+- **auditor confidence:** high
+
+### `koide_dkd_berry_spectator_note_2026-05-31`
+
+- **Note:** [`KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md`](../../docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the finite Fock-space repair: corrected Lambda^1 embedding, KD form-parity facts, commuting circulant b-derivatives, scalar Gamma_F on Lambda^1, and the sampled nonzero Wilson-loop boundary blocking reuse of the stale zero-Berry spectator claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-043652-0741ae84-koide_dkd_berry_spectato`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the corrected Lambda^1 embedding from the unique N=0 vacuum, the Wilson-loop check for the tested iD_KD plus circulant mass coupling is not identically zero across sampled kappa and band choices, so the zero-Berry spectator theorem is not certified.  _(class `C`)_
+- **chain closes:** True — The restricted packet closes the scoped open-gate repair: the runner source actually constructs the 3-mode JW/Kahler-Dirac matrices, corrects the Lambda^1 lift from the vacuum, and computes the stated Wilson-loop sweep. It does not close a positive Berry-spectator theorem, but the source note explicitly disclaims that stronger conclusion.
+- **rationale:** All one-hop cited authorities are retained-grade, and the target claim uses them only for bounded algebraic context rather than for an open physical staggered-Dirac identification. The primary runner is not a print-only certificate: it constructs the finite operators, verifies CAR/Hermiticity/parity/lift identities, computes the commuting b-derivatives, and performs the Wilson-loop sweep plus a positive-control curvature check. The source note is scoped as an open gate and bug repair, so the unresolved form-degree Berry theorem and band-isolation regime are preserved as boundaries rather than hidden premises.
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

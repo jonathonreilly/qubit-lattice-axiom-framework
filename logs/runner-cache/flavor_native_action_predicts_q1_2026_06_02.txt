@@ -1,0 +1,16 @@
+[PASS] HS block norms 3a^2 and 6b^2 (||C+C^2||_F^2 = 6)
+       ||mass||^2=3.0, ||hop||^2=1.5
+[PASS] equal-block 3a^2=6b^2  <=>  b/a=1/sqrt2  <=>  r=1/2
+       1/sqrt2 = 0.707107, r=1/2
+[PASS] spectral-action interior extremum |b|/a ~ 1 (r=1) for every cutoff, never near 1/sqrt2=0.707
+       exp(-x):1.000; exp(-x^2):1.000; (1+x)^-2:0.997; (1+x)^-4:1.000; (1+x)^-8:1.000
+[PASS] at b/a=1 the spectrum is [0,0,3a] (doublet -> 0), r=1, Q=1 (dimension/Plancherel default)
+       spectrum=[-3.33066907e-16 -2.37213427e-17  3.00000000e+00], Q=1.000000
+[PASS] mass grade (I) and hopping grade (C+C^2) are HS-orthogonal => one bi-invariant norm cannot fix the a:|b| ratio
+       <mass,hop>_HS = 0.00e+00
+
+SCORECARD PASS=5 FAIL=0
+FINDING: the native heat-kernel/Casimir/spectral action interior extremum is at r=1 (Q=1) for
+every cutoff; the action-form degeneracy is r-irrelevant (mass/hop HS-orthogonal, set at
+quadratic order). No native action delivers r=1/2; r=1/2 is the equal-block partition
+3a^2=6b^2 = AC_phi_lambda. Native action-sector prediction = Q=1. Asserts no audit status.

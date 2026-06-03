@@ -29,8 +29,11 @@ This note does not derive that physical positivity bridge.
 ## Theorem (representation-theoretic obstruction + selection)
 
 `S_3` has exactly two one-dimensional representations: the trivial rep and the
-sign rep `sgn`. A binary ("positive/negative") constraint that is a class
-function on `S_3` can preserve only a union of `sgn`-level sets.
+sign rep `sgn`. This note only classifies **one-dimensional character /
+sign-magnitude constraints** on the finite `S_3` axis-ordering surface. Such a
+constraint can either be trivial on all of `S_3` or couple to the sign
+character. It does not classify higher-dimensional selectors, arbitrary class
+functions, or non-character lattice observables.
 
 **(A) Determinant-magnitude positivity is the trivial rep.** The massless
 staggered Dirac operator `D` is anti-Hermitian, so `det(D + mI) = ∏_i(m² + σ_i²)
@@ -61,8 +64,8 @@ of such a handedness constraint remains a separate open bridge. ∎
   under identity, transposition, and 3-cycle orderings.
 - Therefore determinant-magnitude positivity cannot break `S_3 → C_3`.
 - The orientation sign is the sign rep, whose positive level set is exactly
-  `C_3`; any one-dimensional positivity route to `C_3` must be an
-  orientation-sign (handedness) route.
+  `C_3`; any one-dimensional character/sign-magnitude positivity route to
+  `C_3` must be an orientation-sign (handedness) route.
 
 ## What this does NOT claim
 

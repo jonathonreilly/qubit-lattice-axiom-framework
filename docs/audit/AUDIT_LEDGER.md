@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1173 |
+| unaudited | 1172 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 99 |
+| ~~audited_conditional~~ | 100 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 986 |
-| `audited_conditional` | 99 |
+| `audited_conditional` | 100 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1412 |
+| `unaudited` | 1411 |
 
 | claim_type | count |
 |---|---:|
@@ -1175,6 +1175,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_trace_vs_center_dissolves_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6750,6 +6751,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached runner completes and matches the source frozen result: exact grid and no-restore label-NN are 12/12 TOWARD with F~M=1.00, while no-restore KNN+floor is 0/12 with F~M=0.00. Current ledger deps are retained-bounded; older dependency-status prose in the source is historical and not status authority.
 - **rationale:** The row closes as a bounded finite-harness certificate. The runner constructs the three families, swaps the connectivity rule, propagates amplitudes, and computes the centroid/F~M readout rather than merely printing constants. The verdict is limited to sharpening the connectivity bottleneck on this declared comparison; it does not ratify primitive-to-gravity readout or full Gate-B package survival.
 - **auditor confidence:** medium
+
+### `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure-gauge Wilson plaquette temporal-gauge decomposition with S_+ reality, time-symmetric theta-invariance, and symmetrized observable reflection-Hermiticity, as checked on a 2^4 SU(3) lattice.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-041204-a986e1b1-gauge_os_step1_wilson_pl`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the disjoint partition P_+ ⊔ P_- ⊔ P_mixed = P and the theta-bijection P_+ to P_-, S_W[U] = S_+(U) + theta(S_+)(U) + S_mixed(U).  _(class `A`)_
+- **chain closes:** False — The algebraic decomposition would close after a boundary-condition repair, but as written the finite periodic Lambda=(Z/L)^4 setting is not reconciled with the stated P_mixed characterization. For even L>2, temporal plaquettes wrapping from t=L/2-1 to -L/2 also straddle the plus/minus endpoint partition, while the note says P_mixed consists only of the t=-1 to t=0 cross-slice plaquettes.
+- **rationale:** The D1-D3 proof is a genuine class-A algebraic argument over the Wilson-action definitions and the retained mixed-kernel authority, and the runner performs nontrivial finite SU(3) checks rather than only printing constants. However, the source defines a finite periodic lattice Lambda=(Z/L)^4 and then describes P_mixed as only the t=-1/t=0 reflection-plane plaquettes. Under the note's own endpoint-sign partition, periodic wraparound temporal plaquettes at the opposite time seam are also mixed for general even L, and the L=2 runner does not expose that missing boundary family. The theorem therefore needs a scope or boundary-convention repair before it can be clean as stated.
+- **auditor confidence:** high
 
 ### `gauge_scalar_temporal_completion_theorem_note`
 

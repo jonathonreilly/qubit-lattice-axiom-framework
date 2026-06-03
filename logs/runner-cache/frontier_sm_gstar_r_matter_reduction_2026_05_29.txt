@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py
-runner_sha256: c13160a3d4b3512a17d400ed98ab8408358239041026261ee276b03d7184dd6a
+runner_sha256: 33a7ee07f514c7b6907de04f279c07e8062ce6ff6d2372b367d093e4d34f04e3
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.13
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
@@ -83,6 +83,7 @@ status: nonzero_exit
   [PASS] note marks R-MATTER reduced for the thermalized dof count
   [PASS] note names I12 nu_R thermal exclusion as the load-bearing residual
   [PASS] note names R-SPIN as remaining residual
+  [PASS] note scopes R-SPIN as physical Weyl-spin bridge, not stale spin theorem status
   [PASS] note names the neutral-singlet branch convention as residual
   [PASS] note carries the 106.75 vs 112 fork explicitly
   [PASS] note states R-MATTER is NOT fully retired
@@ -96,10 +97,11 @@ status: nonzero_exit
   [PASS] retained source three_generation_observable_theorem_note is retained (ledger = retained)
   [PASS] retained source three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10 is retained (ledger = retained)
   [PASS] retained source spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10 is retained (ledger = retained)
+  [PASS] retained source per_site_su2_spin_half_theorem_note_2026-05-02 is retained (ledger = retained)
   [PASS] decoration source lhcm_matter_assignment_from_su3_representation_note_2026-05-02 is decoration_under_graph_first_su3_integration_note (ledger = decoration_under_graph_first_su3_integration_note)
   [PASS] decoration source left_handed_charge_matching_note is decoration_under_graph_first_su3_integration_note (ledger = decoration_under_graph_first_su3_integration_note)
   [PASS] anomaly singlet completion is retained_bounded (ledger = retained_bounded)
-  [FAIL] per-site spin-1/2 carrier (R-SPIN) is audited_conditional (stays residual) (ledger = retained)
+  [PASS] R-SPIN remains a physical bridge residual after retained per-site spin theorem
   [PASS] full one-generation closure stays unaudited (separated, not reduced by this note) (ledger = unaudited)
 
 ----------------------------------------------------------------------------------------
@@ -127,10 +129,10 @@ status: nonzero_exit
 ----------------------------------------------------------------------------------------
 SCORECARD
 ----------------------------------------------------------------------------------------
-  PASS = 88
-  FAIL = 1
+  PASS = 91
+  FAIL = 0
 
-RESULT: PASS=88 FAIL=1
+RESULT: PASS=91 FAIL=0
 
 ----- stderr -----
 

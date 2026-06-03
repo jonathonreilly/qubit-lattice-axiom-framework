@@ -49,8 +49,8 @@ The reduction is precisely scoped: only the thermalized gauge-charged dof
 **multiplicities** are moved to retained / decoration-under-retained sources.
 The overall `g_*` census stays a `bounded_theorem`; this note sharpens R-MATTER
 from "matter content sourced from the unaudited closure note" to "thermalized
-gauge-charged multiplicities retained-sourced; residual = I12 + R-SPIN +
-neutral-singlet branch convention".
+gauge-charged multiplicities retained-sourced; residual = I12 + the physical
+Weyl-spin identification bridge (R-SPIN) + neutral-singlet branch convention".
 
 ## 1. What `g_*` consumes from the matter sector
 
@@ -211,15 +211,16 @@ spin-statistics **cardinality** content of the **retained**
 fixes the Fermi-Dirac particle/antiparticle cardinality. The cardinality factor
 `2` is retained structural content.
 
-The **spin-`1/2` representation** itself (the half-integer spin carrier per
-site) is the separate residual **R-SPIN**, sourced from the
-**audited_conditional**
+The **per-site spin-`1/2` representation** itself (the half-integer spin carrier
+per site) is now sourced by the **retained**
 [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
-(ledger `effective_status: audited_conditional`, `claim_type: positive_theorem`).
-For the **count** `2` the census consumes, only the retained cardinality is
-load-bearing; but the identification of the matter as spin-`1/2` Weyl fermions
-(rather than some other spin) rests on the audited_conditional spin-`1/2`
-carrier, so R-SPIN remains a genuine residual of the thermalized count.
+(ledger `effective_status: retained`, `claim_type: positive_theorem`). For the
+**count** `2` the census consumes, only the retained cardinality is
+load-bearing; the retained per-site theorem supplies the local spin-`1/2`
+carrier. What this note still does **not** derive is the physical bridge that
+identifies the thermalized matter census specifically as Weyl-spin matter in
+the high-`T` `g_*` inventory. That physical Weyl-spin identification bridge is
+the remaining **R-SPIN** residual.
 
 ## 4. The genuine residual after the multiplicity reduction
 
@@ -246,12 +247,14 @@ nu_R thermalized Dirac (16 Weyl/gen)       ->  32/gen  ->  N_fermions = 96  ->  
 This note **carries** the fork explicitly and does **not** claim to retire it.
 I12 is an admitted import, not a framework derivation.
 
-### 4.2 R-SPIN — the per-site spin-`1/2` carrier
+### 4.2 R-SPIN — the physical Weyl-spin identification bridge
 
-The identification of the thermalized matter as spin-`1/2` Weyl fermions rests
-on the **audited_conditional** per-site spin-`1/2` theorem (§3.2). The
-particle/antiparticle cardinality factor `2` is retained, but the spin-`1/2`
-carrier itself stays a residual until its conditional dependency is retired.
+The per-site spin-`1/2` carrier itself is retained-sourced by
+[`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
+(§3.2). The particle/antiparticle cardinality factor `2` is also retained.
+R-SPIN remains only as the **physical Weyl-spin identification bridge**: this
+note does not derive that the retained per-site carrier is precisely the
+thermalized matter spin sector used by the high-`T` `g_*` inventory.
 
 ### 4.3 The neutral-singlet branch convention (a convention, not a derivation)
 
@@ -291,7 +294,7 @@ thermalized count does not require.
 | per-rep gauge-charged assignment | `Q_L:6, u_R:3, d_R:3, L_L:2, e_R:1 = 15` | (in the unaudited closure) | [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md) + [`ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md`](ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md) | decoration-under-retained + retained_bounded |
 | generation count `3` | `n_gen = 3` | (already retained-sourced) | [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) | retained |
 | Weyl-to-dof cardinality `2` | particle/antiparticle | (already retained-sourced) | [`SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md) | retained |
-| spin-`1/2` carrier (identifies matter as Weyl) | — | per-site spin-`1/2` | unchanged (residual R-SPIN) | audited_conditional |
+| physical Weyl-spin identification bridge (R-SPIN) | — | per-site spin-`1/2` theorem retained; bridge not derived here | unchanged residual bridge | retained theorem; bridge out of scope |
 | `nu_R` thermal exclusion (`15` vs `16` Weyl) | exclusion premise | sector import | unchanged (import I12) | not derived |
 | neutral-singlet branch convention (labelling) | not consumed by the count | matter-closure convention | unchanged (convention) | unaudited |
 
@@ -302,10 +305,10 @@ The thermalized per-generation count `30 = 15 * 2` has all its
 spin-statistics cardinality), retained_bounded (anomaly singlet completion), and
 decoration-under-retained (`lhcm_matter_assignment`, `left_handed_charge_matching`)
 authorities. The genuine residual sharpens to **I12** (`nu_R` thermal exclusion,
-the `106.75` vs `112` fork), **R-SPIN** (per-site spin-`1/2` carrier,
-audited_conditional), and the **neutral-singlet branch convention** (a
-convention selecting the SM labelling, not a derivation). R-MATTER is **not**
-fully retired.
+the `106.75` vs `112` fork), **R-SPIN** (the physical Weyl-spin identification
+bridge from the retained per-site spin-`1/2` carrier to the thermalized matter
+sector), and the **neutral-singlet branch convention** (a convention selecting
+the SM labelling, not a derivation). R-MATTER is **not** fully retired.
 
 ## 6. Effect on the `g_*` residual census
 
@@ -324,17 +327,19 @@ g_*
   =  28 + (7/8) * 90                                 =  427/4  =  106.75.
 ```
 
-Only the `nu_R` thermal exclusion (I12), the spin-`1/2` carrier (R-SPIN), and
-the neutral-singlet branch convention remain on the matter side; all
-gauge-charged dof multiplicities are retained / decoration-under-retained.
+Only the `nu_R` thermal exclusion (I12), the physical Weyl-spin identification
+bridge (R-SPIN), and the neutral-singlet branch convention remain on the matter
+side; all gauge-charged dof multiplicities are retained /
+decoration-under-retained.
 
 Remaining `g_*` residuals after this note: **R-POL** (massless-vector
-2-polarization, pending the emergent-Lorentz repair), **R-SPIN** (per-site
-spin-`1/2` carrier, audited_conditional), the **neutral-singlet branch
-convention** (matter labelling), and the honest sector import **I12** (`nu_R`
-thermal exclusion, the `106.75` vs `112` fork). The sibling note retired R-FSB
-and R-U1Y, and the Higgs-sector note sourced the single-EWSB-doublet census
-count; the high-`T` regime import I11 is unchanged.
+2-polarization, pending the emergent-Lorentz repair), **R-SPIN** (the physical
+Weyl-spin identification bridge; the per-site spin-`1/2` carrier itself is
+retained), the **neutral-singlet branch convention** (matter labelling), and the
+honest sector import **I12** (`nu_R` thermal exclusion, the `106.75` vs `112`
+fork). The sibling note retired R-FSB and R-U1Y, and the Higgs-sector note
+sourced the single-EWSB-doublet census count; the high-`T` regime import I11 is
+unchanged.
 
 ## 7. Honest status and scope
 
@@ -350,7 +355,8 @@ This note is a `bounded_theorem`. It does **not**:
   I12; if `nu_R` were thermalized Dirac, `g_* = 112` not `106.75`);
 - claim the neutral-singlet branch convention `Y(nu_R) = 0` is derived (it stays
   a convention selecting the SM labelling);
-- retire R-SPIN (the per-site spin-`1/2` carrier stays audited_conditional);
+- retire R-SPIN (the physical Weyl-spin identification bridge is out of scope
+  even though the per-site spin-`1/2` carrier is retained);
 - promote, demote, or set the audit status of any cited authority.
 
 The load-bearing new content is the recognition + proof that the `g_*`
@@ -393,8 +399,10 @@ exercised before authoring.
 
 6. **Spin of the matter (Weyl spin-`1/2` vs other).** A non-spin-`1/2` carrier
    changes the cardinality structure. The particle/antiparticle factor `2` is
-   retained (spin-statistics cardinality); the spin-`1/2` identification rests
-   on the **audited_conditional** per-site spin-`1/2` carrier. **OPEN (R-SPIN).**
+   retained (spin-statistics cardinality), and the per-site spin-`1/2` carrier
+   is retained; the remaining open point is the physical bridge identifying
+   that retained carrier with the thermalized Weyl matter sector. **OPEN
+   (R-SPIN).**
 
 7. **Neutral-singlet branch (`Y(nu_R) = 0` vs `e_R <-> nu_R` relabelling).**
    Both branches assign the same `(1,1)` singlet multiplicities, so the
@@ -407,10 +415,10 @@ exercised before authoring.
 isospin `2`, the per-rep assignment, generation `3`, cardinality `2`) are
 CLOSED by retained / decoration-under-retained framework results. The OPEN
 residuals of the thermalized matter count are I12 (`nu_R` exclusion, the
-load-bearing fork), R-SPIN (spin-`1/2` carrier), and the neutral-singlet branch
-convention (labelling, not load-bearing on the count). This confirms the honest
-claim type is **bounded_theorem** and that R-MATTER is **partially reduced**,
-not retired.
+load-bearing fork), R-SPIN (physical Weyl-spin identification bridge), and the
+neutral-singlet branch convention (labelling, not load-bearing on the count).
+This confirms the honest claim type is **bounded_theorem** and that R-MATTER is
+**partially reduced**, not retired.
 
 ## 9. Verification
 
@@ -448,7 +456,7 @@ The runner verifies, at exact rational precision via `fractions.Fraction`:
    is present) the retained sources read `retained`, the decoration sources read
    `decoration_under_graph_first_su3_integration_note`, the anomaly singlet
    completion reads `retained_bounded`, the spin-`1/2` carrier reads
-   `audited_conditional`, and the full closure reads `unaudited`.
+   `retained`, and the full closure reads `unaudited`.
 7. **No-overclaim / forbidden-import / vocabulary scan:** the note carries no
    bare `retained` / `promoted` status line, no lattice/fitted/PDG load-bearing
    import string, and no new repo vocabulary or meta-framing.
@@ -501,8 +509,9 @@ Load-bearing retained / decoration-under-retained sourcing authorities
   — particle/antiparticle cardinality `2` (retained). Sources the Weyl-to-dof
   factor.
 - [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
-  — per-site spin-`1/2` carrier (audited_conditional), cited to mark R-SPIN as
-  the separate residual identifying the matter as spin-`1/2` Weyl.
+  — per-site spin-`1/2` carrier (retained). Cited to source the local carrier;
+  R-SPIN remains only as the separate physical Weyl-spin identification bridge
+  from that carrier to the thermalized matter sector.
 
 Plain-text pointers (non-load-bearing; written without markdown links so the
 citation-graph builder does not record them as load-bearing retained edges):
@@ -541,8 +550,10 @@ proposed_claim_scope: |
   thermal exclusion: the matter is 16 Weyl including the gauge-singlet nu_R, but
   the thermalized count excludes nu_R -> 15 gauge-charged Weyl -> 30/gen ->
   g_* = 106.75; if nu_R were thermalized Dirac, 16*2 = 32/gen -> g_* = 112),
-  R-SPIN (per-site spin-1/2 carrier, audited_conditional, identifying the matter
-  as spin-1/2 Weyl), and the neutral-singlet branch convention Y(nu_R)=0 (a
+  R-SPIN (physical Weyl-spin identification bridge: the per-site spin-1/2
+  carrier is retained, but this note does not derive the bridge identifying it
+  with the thermalized Weyl matter sector), and the neutral-singlet branch
+  convention Y(nu_R)=0 (a
   labelling convention selecting the SM assignment, not load-bearing on the
   count). Does NOT claim the full 16-Weyl one-generation closure is derived
   (stays unaudited, separately blocked), does NOT claim the nu_R thermal
@@ -560,14 +571,15 @@ notes_for_re_audit_if_any: |
   native_gauge_closure_note, three_generation_observable_theorem_note,
   three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10,
   spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10)
-  read retained on the 2026-05-29 ledger; the matter-assignment sources
+  read retained on the current ledger; the matter-assignment sources
   (lhcm_matter_assignment_from_su3_representation_note_2026-05-02,
   left_handed_charge_matching_note) read
   decoration_under_graph_first_su3_integration_note; the anomaly singlet
   completion reads retained_bounded; the per-site spin-1/2 carrier reads
-  audited_conditional; the full one-generation closure reads unaudited. The
-  spin-1/2 carrier (R-SPIN) remains a residual; the nu_R thermal exclusion (I12)
-  is a sector import; the neutral-singlet branch convention is a convention.
+  retained; the full one-generation closure reads unaudited. The physical
+  Weyl-spin identification bridge (R-SPIN) remains a residual; the nu_R thermal
+  exclusion (I12) is a sector import; the neutral-singlet branch convention is a
+  convention.
   Any dependency-retention issue on R-SPIN / I12 belongs to independent audit
   bookkeeping. The full-closure pointer is deliberately plain-text
   (non-load-bearing edge) because it is the stronger separated statement, not a
@@ -582,8 +594,8 @@ purpose, because the thermalized per-generation count `30 = 15 * 2` has all its
 **multiplicities** sourced from retained / decoration-under-retained authorities
 (color `3`, isospin `2`, the per-rep assignment, generation `3`, cardinality
 `2`), while the genuine residual sharpens to I12 (`nu_R` thermal exclusion, the
-`106.75` vs `112` fork), R-SPIN (per-site spin-`1/2` carrier), and the
-neutral-singlet branch convention. It is not a synthesis, introduces no repo
+`106.75` vs `112` fork), R-SPIN (physical Weyl-spin identification bridge), and
+the neutral-singlet branch convention. It is not a synthesis, introduces no repo
 vocabulary, promotes no other note's status, and claims no full derivation of
 `g_*`, of the one-generation matter closure, of the `nu_R` thermal exclusion, or
 of the branch convention. The audit lane is the authority on effective status.

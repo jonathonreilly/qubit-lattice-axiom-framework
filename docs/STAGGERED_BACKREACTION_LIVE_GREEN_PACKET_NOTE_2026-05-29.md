@@ -4,6 +4,8 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/staggered_backreaction_live_green_packet_check.py`](../scripts/staggered_backreaction_live_green_packet_check.py)
+**Load-bearing helper sources:** [`scripts/frontier_staggered_backreaction_green_closure.py`](../scripts/frontier_staggered_backreaction_green_closure.py),
+[`scripts/frontier_staggered_backreaction_prototype.py`](../scripts/frontier_staggered_backreaction_prototype.py)
 
 ## Purpose
 
@@ -20,6 +22,10 @@ is introduced.
 The runner imports the current
 [`scripts/frontier_staggered_backreaction_green_closure.py`](../scripts/frontier_staggered_backreaction_green_closure.py)
 comparison and asserts the following bounded facts:
+the comparison itself imports
+[`scripts/frontier_staggered_backreaction_prototype.py`](../scripts/frontier_staggered_backreaction_prototype.py)
+as the transitive graph/state/Hamiltonian helper surface, and the packet runner
+asserts both helper sources are present and untruncated.
 
 - `resistance_yukawa` is the best holdout-aware map in the frozen comparison.
 - Raw cycle-bearing gap improves by more than `2.5x` over screened Poisson.

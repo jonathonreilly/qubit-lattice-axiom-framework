@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 644 |
+| **retained_bounded** | 645 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1168 |
+| unaudited | 1167 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 988 |
+| `audited_clean` | 989 |
 | `audited_conditional` | 102 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1407 |
+| `unaudited` | 1406 |
 
 | claim_type | count |
 |---|---:|
@@ -581,6 +581,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dkd_berry_spectator_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9021,6 +9022,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** P M(a,b) P = M(a,conj(b)), and for transpose-preserving extensions O(a,conj(b)) = O(a,b)^T so the spectrum is unchanged under b -> conj(b).  _(class `A`)_
 - **chain closes:** True — The identity follows by linearity from P C P = C^2 and P C^2 P = C. Similarity and transpose preserve the characteristic polynomial, and the displayed spectral one-form is exact as d sum_k G(lambda_k) with G' = g.
 - **rationale:** The load-bearing statement is a finite algebraic identity, not a renaming or a numerical fit. The runner source genuinely performs symbolic, eigenvalue, curl, and finite-matrix checks, with no opaque helper imports or hard-coded contested premise. The claim is explicitly bounded to spectrum-only functionals and transpose-preserving real extensions, so the open future routes listed in the note are outside the audited conclusion rather than hidden dependencies.
+- **auditor confidence:** high
+
+### `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01`
+
+- **Note:** [`KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md`](../../docs/KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded operator-frame statement that the on-site C^2 spatial-rotation scalar/trivial-K branch is excluded for both so(3,1) and so(4), not matter-field attachment, signature selection, or carrier identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-043829-4e442f81-koide_faithfulness_rotat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With J_i = sigma_i/2 nonzero, K_i = 0 makes [K_i,K_j] vanish while the so(3,1) or so(4) bracket requires +/- i epsilon_ijk J_k, so no K=0 completion exists once the operator-frame spatial Spin(3) action is applied.  _(class `A`)_
+- **chain closes:** True — The retained merger and per-site inputs supply J_i = sigma_i/2 on the operator-frame C^2 algebra, and the Lie-bracket substitution K=0 contradicts the required nonzero +/- i epsilon_ijk J_k term. The matter-attachment, signature, and carrier-identification residuals are explicitly outside the audited scope.
+- **rationale:** The audited conclusion is a narrow algebraic closure over retained-grade operator-frame inputs, not a full faithfulness theorem. The runner source computes the Pauli Spin(3) conjugation, the K=0 bracket failure in both signatures, the nonzero K completions, Hermitian versus anti-Hermitian flavor, and the 6-real-dimensional Weyl image; its final three PASS entries are hard-coded scope assertions, so they are treated as narrative support rather than independent computation. Because the note explicitly preserves the matter-attachment, signature, and carrier residuals, it does not overclaim an absolute no-go.
 - **auditor confidence:** high
 
 ### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`

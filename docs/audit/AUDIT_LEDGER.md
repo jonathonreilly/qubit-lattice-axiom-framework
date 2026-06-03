@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1177 |
+| unaudited | 1176 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 95 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 986 |
-| `audited_conditional` | 95 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1416 |
+| `unaudited` | 1415 |
 
 | claim_type | count |
 |---|---:|
@@ -1171,6 +1171,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5915,6 +5916,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Applying the same onsite-locality/diagonal projection to the mass operator H=aI+bC+bbar C^2 collapses it to a scalar, giving a degenerate spectrum and Q=1/3 rather than Q=2/3.  _(class `A`)_
 - **chain closes:** False — The operator-collapse algebra closes, but the full bridge-failure claim imports unsupported context. In particular, the source-side implication E_loc(I+zZ)->Q=2/3 and the B1 assertions about single-axiom notes require authorities or a carrier/readout bridge not present in the packet.
 - **rationale:** The runner genuinely computes the B3/B4 matrix checks: S=I gives degenerate Q=1/3, the split circulant H gives signed Q=2/3, and Diag(H)=I gives Q=1/3. But B1 is hard-coded as true rather than verified from supplied authorities, and the source-descent statement E_loc(X)=(Tr X/3)I on S=I+zZ needs an extra carrier/readout bridge to yield Q=2/3. Under the runner's displayed Z, E_loc(I+zZ)=(1-z/3)I is scalar, so the packet does not by itself close the broader source/operator-asymmetry and substrate-necessity conclusion.
+- **auditor confidence:** high
+
+### `flavor_substrate_parent_separate_note_2026-05-30`
+
+- **Note:** [`FLAVOR_SUBSTRATE_PARENT_SEPARATE_NOTE_2026-05-30.md`](../../docs/FLAVOR_SUBSTRATE_PARENT_SEPARATE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite matrix-algebra audit of the displayed lift decomposition, R3 commutation/anticommutation separation, and the order-3 det=ω qubit charge characterization.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-035616-e9ef5a76-flavor_substrate_parent_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The only way a C3-equivariant parent folds to a chiral on-block operator is if the qubit carries an order-3 charge diag(1,ω), which is the same complex/order-3 det_C structure as the value import.  _(class `A`)_
+- **chain closes:** False — The displayed matrix identities checked by the runner close as algebraic facts. The broader uniqueness/non-native/common-root conclusion requires an unprovided bridge proving that diag(1,ω) is the only C3-equivariant folding channel and is the same non-native det_C import under the Z2 spin-factor reading.
+- **rationale:** The runner genuinely computes the finite parity, commutator, anticommutator, and determinant/order identities, and the displayed closed-form formulas in that finite algebra are consistent. However, the runner does not prove the stated 'only way' folding theorem or the non-native status of diag(1,ω) inside complex M2(C); the source note itself flags that as the full det_C crux. With no cited authority supplied for that bridge, the bounded theorem is conditional rather than clean.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

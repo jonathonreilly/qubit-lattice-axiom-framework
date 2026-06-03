@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1189 |
+| unaudited | 1188 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 86 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -66,10 +66,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 985 |
 | `audited_conditional` | 86 |
 | `audited_decoration` | 55 |
-| `audited_failed` | 47 |
+| `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1428 |
+| `unaudited` | 1427 |
 
 | claim_type | count |
 |---|---:|
@@ -1275,6 +1275,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_fm_transfer_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -5677,6 +5678,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Q is a single observable Q=1/3+(2/3)r, and the open lane assignment is reduced to choosing whether the C3 doublet counts as one complex mode giving r=1/2 or two real modes giving r=1.  _(class `A`)_
 - **chain closes:** False — The displayed Q, Tr(H^2), and r=1/2 versus r=1 arithmetic close algebraically. The broader claim that every escape collapses to the sole det_C/det_R decider lacks the retained no-go or Axiom 1 bridge proof in the restricted packet.
 - **rationale:** The runner performs real algebraic checks rather than merely printing pass lines, and the checked identities are consistent with the note's definitions. It does not instantiate the framework baseline or derive the coherent-state field-space metric; it hard-codes the two counting alternatives and does not prove they exhaust the mechanisms. The panel synthesis, retained no-go anchors, topological 2/9 inventory, and Axiom 1 measure bridge are not supplied as authorities in this packet, so the bounded conclusion remains conditional.
+- **auditor confidence:** high
+
+### `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30`
+
+- **Note:** [`FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md`](../../docs/FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the four named latitude-quantizer mechanisms, the RP self-dual refutation, and the trace-vs-center reframe as written.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-032211-80a89b6e-flavor_latitude_quantize`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** All four named native mechanisms fail to force r=|b|^2/a^2=1/2, and the RP edge-swap only selects r=1/2 after discarding the signed b structure.  _(class `A`)_
+- **chain closes:** False — The RP sign and arithmetic corrections close algebraically, but the broad four-mechanism negative does not: the self-consistency and information-functional bullets are asserted without their equations or extrema derivations. The trace-vs-center reframe also does not close under the packet's own A=R[Z3]=R⊕C abelian-center description.
+- **rationale:** The runner has five PASS lines, all algebraic or asserted algebraic sanity checks, but it does not implement the N2 gap-equation claim or the N3 entanglement/Fisher-extremum claim. More importantly, the source's displayed operator-algebra reframe is false or at least convention-incomplete as written: for A=R[Z3]=R⊕C with abelian center, an equal-weight center state is tracial, and a unique faithful trace is not forced without specifying a canonical Plancherel/regular trace. Therefore the bounded theorem plus surviving reframe does not close from the restricted packet.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

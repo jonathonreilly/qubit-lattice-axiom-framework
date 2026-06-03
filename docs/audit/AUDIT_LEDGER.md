@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1208 |
+| unaudited | 1207 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 71 |
+| ~~audited_conditional~~ | 72 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 983 |
-| `audited_conditional` | 71 |
+| `audited_conditional` | 72 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1447 |
+| `unaudited` | 1446 |
 
 | claim_type | count |
 |---|---:|
@@ -1140,6 +1140,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_asymmetry_identification_principled_not_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_delegation_terminus_local_blind_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -5385,6 +5386,25 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The framework's gauge U(1)s are generation-blind and act as scalars e^{iχ}I on the generation triplet, so electric charge cannot orient J_cs or select det_C.  _(class `A`)_
 - **chain closes:** False — The scalar commutator check closes only after assuming that the physical gauge U(1)s act as e^{iχ}I on the generation C3 triplet. That bridge is asserted but not derived or supplied in the restricted packet, and the sector ordering also depends on empirical mass/readout inputs hard-coded in the runner.
 - **rationale:** The displayed numerics checked in the packet are internally consistent: H(1,1) has eigenvalues {3,0,0}, the Q table values and corresponding r values match the runner's mass inputs, and the neutrino Q range stays below 2/3 for the stated scan. However, the central charge-selection failure imports the physical identification of gauge U(1)s with scalar generation action; the runner only verifies [iI,C]=0 after hard-coding iI. The charged-sector ladder is likewise an external-comparator observation from embedded fermion masses, not a first-principles framework derivation. The claim is therefore productive and plausible within its assumptions, but not closed from the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_carrier_delegation_terminus_local_blind_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md`](../../docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the packet-local structural no-go that the A2/§9 position-local factorization does not distinguish the three hw=1 momentum-corner generations on (Z_2)^3; the separate ledger-status/delegation-chain assertions were not independently supported in the restricted packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-022707-81380af0-flavor_carrier_delegatio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A2's position/site tensor-factorization carrier is generation-blind because the hw=1 generation corner states are uniformly delocalized and local per-site observables have identical expectation across the three generations, so the flavor carrier is not reachable from A2/§9.  _(class `C`)_
+- **chain closes:** False — The finite (Z_2)^3 runner genuinely computes the generation-blindness checks it reports. The full conclusion also requires the asserted note-status/delegation-chain facts and the A2/§9 position-factor premise, but no cited authority text is supplied to verify those dependencies.
+- **rationale:** The runner source does real first-principles finite-lattice computation rather than merely printing constants: it builds the (Z_2)^3 character states, checks |amplitude|^2 = 1/8, identical P_site0 expectations, full-support generation projectors, and cyclic momentum permutation. Those checks support the narrow structural claim that a position-local factorization is generation-blind. However, the broader bounded theorem also depends on provenance claims about PHYSICAL_LATTICE_NECESSITY_NOTE, single_axiom_hilbert_note, single_axiom_information_note, and related generation notes, none of which are provided as cited authorities; the runner only prints those statuses without computing or verifying them.
+- **open / conditional deps cited:**
+  - `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
+  - `SINGLE_AXIOM_HILBERT_NOTE.md`
+  - `SINGLE_AXIOM_INFORMATION_NOTE.md`
+  - `THREE_GENERATION_CHIRALITY_BOUNDARY_NOTE.md`
+  - `CONTINUUM_IDENTIFICATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `flavor_carrier_from_axioms_momentum_forced_2026-05-31`

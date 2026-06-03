@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 639 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1214 |
+| unaudited | 1213 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 66 |
+| ~~audited_conditional~~ | 67 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 982 |
-| `audited_conditional` | 66 |
+| `audited_conditional` | 67 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1453 |
+| `unaudited` | 1452 |
 
 | claim_type | count |
 |---|---:|
@@ -1130,6 +1130,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3997,6 +3998,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "The weaker-coupling sweep does not show a strength-driven rescue of the remaining periodic Dirac gravity failures" because cross-strength sign-stability counts are unchanged and the signed delta-law fit never becomes available.  _(class `A`)_
 - **chain closes:** True — The note's numerical summaries match the supplied completed runner stdout, and the bounded negative conclusion follows directly from the unchanged 6/12 stable-row and 2/12 positive-stable counts across all strengths. The claim does not close as a general physics theorem beyond this scan grid, so the audited scope must remain bounded to the supplied harness and outputs.
 - **rationale:** The load-bearing claim is a bounded arithmetic summary of the completed runner output, not a first-principles derivation or external comparator. The stdout supports the stated cross-strength invariance, absence of signed delta-law fits, and lambda-dependent |bias| fit improvement. Clean status applies only to the reported scan-grid conclusion, not to any broader Dirac-gravity theorem or unsupplied v4 helper implementation.
+- **auditor confidence:** high
+
+### `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`
+
+- **Note:** [`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bridge that checks the Dirac dof = 4 and Weyl dof = 2 arithmetic from R1-R4 plus the explicitly admitted Q1 Cl(3,1) extension and Q2 on-shell counting convention.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-021012-b2d5bf05-dirac_weyl_fermion_dof_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given Q1-Q2, the Dirac on-shell thermal count is 2 spin states from R1 times 2 particle-antiparticle states from R3, hence 4, and the Weyl count is 4/2 = 2 by the R2 chirality projector.  _(class `A`)_
+- **chain closes:** False — The exact factor arithmetic closes once Q1-Q2 and the physical interpretations of R1 and R3 are granted. It does not close from the restricted retained authorities alone because Q1-Q2 are admitted inputs, and R1/R3 do not themselves establish the physical SM thermal spin and distinct particle-antiparticle state-count identifications.
+- **rationale:** The runner performs exact rational and Clifford/CAR algebra checks, plus structure scans, and its source does not support class (C) first-principles closure. The displayed Dirac/Weyl arithmetic is internally consistent as class (A), but the note explicitly imports Q1 and Q2 as non-framework-retained admissions. In addition, the cited R1 authority is scoped to a per-site Pauli su(2) action and explicitly does not identify that action with the physical spin generator of all matter excitations, while R3's retained CPT scope is a finite-lattice Hamiltonian identity rather than a retained particle-antiparticle thermal-state counting theorem.
+- **open / conditional deps cited:**
+  - `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md`
+  - `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`
+  - `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`
+  - `CPT_EXACT_NOTE.md`
 - **auditor confidence:** high
 
 ### `directional_b_density_stencil_note`

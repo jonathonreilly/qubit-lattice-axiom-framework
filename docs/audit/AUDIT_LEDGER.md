@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1190 |
+| unaudited | 1189 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 85 |
+| ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 85 |
+| `audited_conditional` | 86 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1429 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -1157,6 +1157,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5663,6 +5664,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Interacting dynamics allegedly generates b!=0 while the r values in the three contact builds are set by an unsupplied matter-action coupling ratio, with C3-symmetric and epsilon channels unable to supply the required generation-specific chiral splitting.  _(class `E`)_
 - **chain closes:** False — The runner independently checks only elementary epsilon-channel algebra and Q(r) conversions. It does not instantiate the interacting kernels, solve the self-consistent b!=0 branch, derive the r table, or prove the C3-symmetric anticommuting-operator no-go.
 - **rationale:** The displayed epsilon values, hw=1 to hw=2 shift, Q(0)=1/3, Q(2/5)=3/5, Q(0.535)≈0.69, Q(1/2)=2/3, and Tr(I^2)/Tr((J-I)^2)=3/6 check algebraically. But the load-bearing interacting-dynamics and no-go claims are printed as stipulated constants/prose: the runner does not compute the three builds, the critical coupling, the continuous r(g) dependence, or the asserted C3 operator obstruction. Under the runner-source rule, this is not class C first-principles computation; the submitted chain reduces to asserted summary definitions rather than a derivation.
+- **auditor confidence:** high
+
+### `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31`
+
+- **Note:** [`FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md`](../../docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic lane identity for Q and conditional det_C versus det_R mode-count arithmetic.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-031940-17524d33-flavor_lane_panel_reduce`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Q is a single observable Q=1/3+(2/3)r, and the open lane assignment is reduced to choosing whether the C3 doublet counts as one complex mode giving r=1/2 or two real modes giving r=1.  _(class `A`)_
+- **chain closes:** False — The displayed Q, Tr(H^2), and r=1/2 versus r=1 arithmetic close algebraically. The broader claim that every escape collapses to the sole det_C/det_R decider lacks the retained no-go or Axiom 1 bridge proof in the restricted packet.
+- **rationale:** The runner performs real algebraic checks rather than merely printing pass lines, and the checked identities are consistent with the note's definitions. It does not instantiate the framework baseline or derive the coherent-state field-space metric; it hard-codes the two counting alternatives and does not prove they exhaust the mechanisms. The panel synthesis, retained no-go anchors, topological 2/9 inventory, and Axiom 1 measure bridge are not supplied as authorities in this packet, so the bounded conclusion remains conditional.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

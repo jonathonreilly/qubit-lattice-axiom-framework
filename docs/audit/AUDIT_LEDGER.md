@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 642 |
+| **retained_bounded** | 641 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1223 |
+| unaudited | 1224 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,14 +61,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
+| `audit_in_progress` | 12 |
 | `audited_clean` | 973 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1462 |
+| `unaudited` | 1463 |
 
 | claim_type | count |
 |---|---:|
@@ -139,7 +139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
-| `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -593,7 +592,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
-| `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -607,6 +605,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_transport_gap_constant_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_y_l1_ratios_wilson_integer_diff_note_2026-05-08_probey_l1_ratios` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -8394,19 +8393,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The runner completed from cache with 15/15 PASS lines and checks symbolic algebraic invariance/countermodel facts for the three residual freedoms. It does not hard-code a positive Koide closure; it explicitly reports that the dimensionless lane is not closed and that a physical source/boundary-origin law remains the next theorem. No one-hop dependencies are listed, so there is no open dependency chain in the restricted packet. Residual risk is limited to the note's scoped atlas premise, not to the internal no-go once that atlas is taken as the audited object.
 - **auditor confidence:** high
 
-### `koide_q23_block_weight_frontier_bounded_note_2026-05-29`
-
-- **Note:** [`KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`](../../docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded audit of the C_3 isotype power-split algebra: equal block-count weighting gives Q=2/3, dimension/Plancherel weighting gives Q=1, and the physical selection of the equal-block rule remains unproved.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260529-233030-47d4ad0f-koide_q23_block_weight_f`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** With E_+ = 3a^2 and E_perp = 6|b|^2, Q = 1/3 + (2/3)|b|^2/a^2, so Q=2/3 iff |b|^2/a^2=1/2, equivalently E_+ = E_perp.  _(class `A`)_
-- **chain closes:** True — The formulas follow by translating the retained C_3 Fourier Koide equivalence into the note's unnormalized a,b convention, and the counting-vs-splitting localization follows from the retained bounded equivariant anti-commuting obstruction. No derivation of the physical equal-block selection is needed because the note explicitly excludes that from scope.
-- **rationale:** The load-bearing content is class-A algebra over retained or retained-bounded inputs. Independent checks confirm the displayed E_+, E_perp, Q formula, the Q=2/3 iff E_+=E_perp equivalence, and the three table entries. The runner performs finite matrix and power-split checks and does not import observed values, fitted selectors, or external comparators. The clean result is bounded only; it does not promote charged-lepton Koide or the equal-block physical rule to a derived theorem.
-- **auditor confidence:** high
-
 ### `koide_q23_oh_covariance_nogo_note_2026-04-22`
 
 - **Note:** [`KOIDE_Q23_OH_COVARIANCE_NOGO_NOTE_2026-04-22.md`](../../docs/KOIDE_Q23_OH_COVARIANCE_NOGO_NOTE_2026-04-22.md)
@@ -8587,6 +8573,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Perturbative SU(N_c)^2 U(1), SU(2)^2 U(1), gravitational-U(1), and U(1)^3 anomaly cancellation, together with SU(2) Witten parity, does not by itself select the full Standard Model carrier sector.  _(class `A`)_
 - **chain closes:** True — The load-bearing statements follow by direct rational anomaly-trace algebra and the standard Witten even-doublet parity condition stated in the note. The result is negative and bounded to anomaly-only selection, so it does not require a retained substrate-to-carrier bridge to close.
 - **rationale:** The note does not claim anomaly cancellation is useless or derive an alternate carrier sector; it only rules out anomaly cancellation alone as forcing the listed choices. The runner verifies the exact-rational traces, Witten parity boundary, generation additivity, hypercharge homogeneity, vectorlike cancellation, and category separation from operator coefficients. Residual risk is the usual dependence on standard anomaly-bookkeeping conventions, which are explicit bounded mathematical inputs rather than hidden framework premises.
+- **auditor confidence:** high
+
+### `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16`
+
+- **Note:** [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](../../docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited result is the narrow algebraic identity comm(R) ∩ anticomm(Γ_χ) = {0} inside real symmetric 3×3 operators, plus only the same-factor γ=Γ_χ observation under imposed Z_3-equivariance.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-002718-6d1474f1-koide_z3_equivariant_ant`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Since H and Γ_χ both lie in the commutative circulant algebra, {H, Γ_χ}=0 reduces to HΓ_χ=0, and the nonzero Fourier eigenvalues of Γ_χ force all circulant coefficients of H to vanish.  _(class `A`)_
+- **chain closes:** True — The proof closes from the displayed definitions of R, J, and Γ_χ using finite-dimensional linear algebra. Independently, Γ_χ is a polynomial in R and Γ_χ^2=I, so any H commuting with R also commutes with Γ_χ, and {H,Γ_χ}=0 implies HΓ_χ=0, hence H=0.
+- **rationale:** The runner source performs symbolic matrix checks and solves the relevant Fourier/circulant equations rather than merely printing pass counts. The displayed identities for R^3=I, J=I+R+R², Γ_χ=(-1/3)I+(2/3)R+(2/3)R², and the Fourier eigenvalue system are consistent with the stated definitions. The negative content is properly bounded: it closes only the simultaneous same-factor [H,R]=0 and {H,Γ_χ}=0 wall, while explicitly leaving standard multi-factor Connes-Lott and other escape routes open.
 - **auditor confidence:** high
 
 ### `koide_z3_joint_projector_identity_note_2026-04-19`

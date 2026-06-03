@@ -49,7 +49,9 @@ For each dimension `d = 1,2,3,4,5`, the original runner:
    - `d = 2`: `phi ~ -M log(r)`;
    - `d >= 3`: `phi ~ -M / r^(d-2)`;
 3. measures force sign, mass exponent `beta`, distance exponent `alpha`, and
-   a linear-propagator Sorkin `I_3` check.
+   a linear-propagator Sorkin `I_3` check. The repair runner replays these
+   table entries from the executable parent runner; the finite-k sign bridge
+   supplies the independent lower-bound sign certificate.
 
 The finite-k bridge supplies the direct runner-specific sign certificate for
 the detector-centroid response at the baseline geometry.
@@ -58,13 +60,13 @@ the detector-centroid response at the baseline geometry.
 
 The runner output reports:
 
-| d | attractive? | beta approx | `I_3` | lower-bound read |
-|---|---|---:|---|---|
-| 1 | no | 0.18 | `<1e-10` | fails |
-| 2 | no | 0.27 | `<1e-10` | fails |
-| 3 | yes | 1.01 | `<1e-10` | passes |
-| 4 | yes | 1.05 | `<1e-10` | passes |
-| 5 | yes | 1.03 | `<1e-10` | passes |
+| d | attractive? | beta approx | alpha approx | `I_3` | lower-bound read |
+|---|---|---:|---:|---|---|
+| 1 | no | 0.18 | 0.42 | `<1e-10` | fails |
+| 2 | no | 0.27 | -0.17 | `<1e-10` | fails |
+| 3 | yes | 1.01 | 1.32 | `<1e-10` | passes |
+| 4 | yes | 1.05 | 3.30 | `<1e-10` | passes |
+| 5 | yes | 1.03 | 5.01 | `<1e-10` | passes |
 
 The finite-k derivative bridge independently certifies the same sign
 transition for the runner's baseline centroid observable:
@@ -123,5 +125,5 @@ python3 scripts/frontier_dimension_selection_lower_bound_parent_repair.py
 Expected summary:
 
 ```text
-SUMMARY: PASS=26 FAIL=0
+SUMMARY: PASS=52 FAIL=0
 ```

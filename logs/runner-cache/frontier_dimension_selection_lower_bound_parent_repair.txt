@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection_lower_bound_parent_repair.py
-runner_sha256: 97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880
+runner_sha256: c033e396aef568d2bb1794de06579dd5b1f98c273f9fc3386f55c7f502c01ac7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 # Dimension-selection parent lower-bound repair
@@ -14,6 +14,10 @@ status: ok
 [PASS] parent note contains boundary phrase: does not authorize any framework-baseline rewrite
 [PASS] parent note contains boundary phrase: This row does not claim:
 [PASS] parent note contains boundary phrase: framework-internal upper-bound derivation
+[PASS] load-bearing runner source exists: scripts/frontier_dimension_selection.py
+[PASS] load-bearing runner source is untruncated: scripts/frontier_dimension_selection.py: 871 lines
+[PASS] load-bearing runner source exists: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
+[PASS] load-bearing runner source is untruncated: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py: 338 lines
 [PASS] bridge note contains support phrase: Exact Finite-k Derivative
 [PASS] bridge note contains support phrase: d <= 2  ->  negative centroid response
 [PASS] bridge note contains support phrase: d >= 3  ->  positive centroid response
@@ -30,10 +34,32 @@ status: ok
 [PASS] d=5 parent finite-M replay has lower-bound sign: 0.8307846749345735
 [PASS] finite-k lower-bound pass set is d=3,4,5: [3, 4, 5]
 [PASS] finite-k lower-bound fail set is d=1,2: [1, 2]
+[PASS] parent runner I_3 table value is <1e-10: 1.6199470430283267e-16
+[PASS] parent note table exposes alpha approx column
+[PASS] d=1 parent runner attractive table entry matches: False
+[PASS] d=1 parent runner beta table entry matches: 0.18
+[PASS] d=1 parent runner alpha table entry matches: 0.42
+[PASS] d=1 source note table row matches replayed values
+[PASS] d=2 parent runner attractive table entry matches: False
+[PASS] d=2 parent runner beta table entry matches: 0.27
+[PASS] d=2 parent runner alpha table entry matches: -0.17
+[PASS] d=2 source note table row matches replayed values
+[PASS] d=3 parent runner attractive table entry matches: True
+[PASS] d=3 parent runner beta table entry matches: 1.01
+[PASS] d=3 parent runner alpha table entry matches: 1.32
+[PASS] d=3 source note table row matches replayed values
+[PASS] d=4 parent runner attractive table entry matches: True
+[PASS] d=4 parent runner beta table entry matches: 1.05
+[PASS] d=4 parent runner alpha table entry matches: 3.3
+[PASS] d=4 source note table row matches replayed values
+[PASS] d=5 parent runner attractive table entry matches: True
+[PASS] d=5 parent runner beta table entry matches: 1.03
+[PASS] d=5 parent runner alpha table entry matches: 5.01
+[PASS] d=5 source note table row matches replayed values
 [PASS] forbidden overclaim absent: self-consistency uniquely selects d = 3
 [PASS] forbidden overclaim absent: the Z^3 spatial substrate has been derived
 [PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized
-SUMMARY: PASS=26 FAIL=0
+SUMMARY: PASS=52 FAIL=0
 
 ----- stderr -----
 

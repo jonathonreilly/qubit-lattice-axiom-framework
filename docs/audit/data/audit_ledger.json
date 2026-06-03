@@ -19314,22 +19314,46 @@
       "verdict_rationale": "The note is carefully scoped as a test harness, not a beta=6 closure, and the load-bearing claims are algorithmic/algebraic checks over retained inputs. The Monte-Carlo value 0.594 is used only as a comparator for gap reporting, not as a fitted derivation input. The runner source shown implements real recurrence, Pade/geometric, fixed-point, proxy, and synthetic-coefficient checks rather than merely printing PASS; no helper imports are missing. The broader treewidth and physical-analyticity obstructions are context and are not promoted as a new closure theorem in this row."
     },
     "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-06-03T02:06:41.674026+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2218bb7b4d4ce4198b72c6b9e8ed5b0fb99ed274e06124579c13c7ca67f6abb7",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-020347-3510d51d-beta6_resummation_radius",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The geometric threshold follows algebraically only after a structural bridge proves the asserted per-cube F,n scaling for all K-built clusters, and the restricted packet supplies only single-cube/two-cube anchors. Also, under the note's own Euler law 18^(1-F) with F=4k+2, the displayed factor should be 18^{-(4k+1)}, not 18^{-(4k+2)}, unless an extra constant suppression is supplied.",
       "claim_id": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
-      "claim_scope": null,
+      "claim_scope": "Conditional K-built Euler-sector radius threshold R_Euler(g_K)>6 iff g_K<81, not a full Delta(beta) convergence theorem.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (a conditional lower bound on the K-built resummed",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-06-03T02:06:41.674026+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -19338,34 +19362,34 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The k-cube K-built contribution is bounded by g_K^k 18^{-(4k+2)} |beta|^{4k+1}, so the k-sum is geometric with ratio g_K 18^{-4}|beta|^4 and gives R_Euler(g_K)=18/g_K^(1/4).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b21294bb8d2bd0f64bd89a5c97a845343354fa0a366d65d83e42009aa7613415",
       "note_path": "docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained proof or explicit narrowed definition showing the K-built sector has the required per-cube F,n scaling or an equivalent bound with the same radius ratio, and repair the Euler exponent in the displayed contribution bound.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 4,
+        "total_pass": 23
       },
       "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
       "title": "Beta=6 SU(3) Wilson Delta(beta) \u2014 Resummation-Radius Growth-Product Bound",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner correctly checks the low-order recurrence/cumulant/cube coefficients it actually computes and verifies the arithmetic threshold g_crit=(18/6)^4=81. It does not prove the load-bearing all-cluster K-built bridge that every contributing k-cube cluster has the fixed per-cube Euler/action increment used in the geometric series. The source also contains an off-by-one Euler exponent in the displayed contribution bound: F=4k+2 gives 18^{1-F}=18^{-(4k+1)}, not 18^{-(4k+2)}. The full claim remains conditional on a retained cluster-expansion/product bound for g_K and a separate baryon-channel bound."
     },
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T16:13:27.882836+00:00",

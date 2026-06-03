@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | unaudited | critical | 748 | 11.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py` |
+| 1 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | audit_in_progress | critical | 748 | 11.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py` |
 | 2 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | unaudited | critical | 748 | 11.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py` |
 | 3 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | unaudited | critical | 746 | 10.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py` |
 | 4 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | unaudited | critical | 746 | 10.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py` |

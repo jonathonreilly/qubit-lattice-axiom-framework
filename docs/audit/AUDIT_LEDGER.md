@@ -61,8 +61,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 8 |
-| `audited_clean` | 975 |
+| `audit_in_progress` | 7 |
+| `audited_clean` | 976 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
@@ -139,7 +139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -703,6 +702,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newton_poisson_flat_friedmann_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10200,6 +10200,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner reproduces the same-current-data witness: scalar two-point and normal source-response signatures are mu-blind, Pfaffian signatures vary with mu, and charge-sector checks show normal sources are charge zero while the pairing seed carries charge -2. That directly blocks the implication that scalar two-point closure alone forces mu = 0.
 - **rationale:** The note claims a negative boundary, not a Dirac-global or numerical neutrino result: SR-2 cannot close C2-X from free-scalar two-point data alone. The runner checks the relevant current surface by verifying the cited authority text and constructing nonzero-mu witnesses with identical scalar and normal signatures but distinct Pfaffian sectors. Residual risk is limited to future typed scalar-to-Pfaffian coupling theorems, which the note explicitly leaves open.
 - **auditor confidence:** high
+
+### `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-linear-algebra claim that for H(a,b)=aI+bC+conj(b)C^2, C3 is preserved for all delta, transpositions send delta to -delta, and generic sin(delta)!=0 breaks axis-exchange parity while preserving C3 and lifting the S3 degeneracy.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260603T004717Z-new_parity_is_circulant_`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** A transposition sends C to C^2 and therefore conjugates b, so tau H(delta) tau† = H(-delta), with transposition invariance iff sin(delta)=0.  _(class `A`)_
+- **chain closes:** True — Five-judge panel round 1 majority 5/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The scientific chain closes as a class-A finite matrix-algebra check over retained-grade inputs, and the runner source genuinely verifies the load-bearing statements without external comparators or fitted values. The PASS=14 expected-text versus PASS=16 cached/source runner count is a documentation drift, but it does not undermine the algebraic derivation or runner computation in this restricted packet.
+- **rationale:** Five-judge panel round 1 majority 5/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The scientific chain closes as a class-A finite matrix-algebra check over retained-grade inputs, and the runner source genuinely verifies the load-bearing statements without external comparators or fitted values. The PASS=14 expected-text versus PASS=16 cached/source runner count is a documentation drift, but it does not undermine the algebraic derivation or runner computation in this restricted packet.
+- **auditor confidence:** judicial
 
 ### `newton_derivation_top4_bridge_note`
 

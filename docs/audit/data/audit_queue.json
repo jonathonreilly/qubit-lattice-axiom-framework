@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 310,
+    "critical": 309,
     "high": 249,
     "leaf": 375,
     "medium": 303
@@ -913,33 +913,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
-      "claim_scope": "Audited the finite-linear-algebra claim that the phase delta in H(a,b)=aI+bC+conj(b)C^2 is the within-triplet axis-exchange reflection order parameter: C3 is preserved for all delta, transpositions send delta to -delta, and generic nonzero sin(delta) lifts the S3 degeneracy while preserving C3.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.06,
-      "note_path": "docs/NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_new_parity_is_circulant_phase_discriminator.py",
-      "transitive_descendants": 754
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -38224,6 +38197,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 78,
-  "total_pending": 1237
+  "ready_count": 77,
+  "total_pending": 1236
 }

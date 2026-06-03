@@ -61,8 +61,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 973 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 974 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
@@ -136,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
@@ -485,6 +484,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -6702,6 +6702,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the bounded scope, the runner constructs the stated 3x3 generators, computes the generated algebra dimension, and computes the commutant dimension. The conclusion follows for those supplied generators without using the out-of-scope physical bridges.
 - **rationale:** The runner performs actual finite-dimensional linear algebra rather than printing constants: it constructs the translation-sign matrices, the C3 permutation, projectors, algebra span, and commutant constraints. All four checks are algebraic identity/closure checks on the supplied local generators. Because the source note already bounds the claim to this local H_hw=1 M_3(C) reconstruction and explicitly excludes physical-species and substrate conclusions, no split is needed before audit; it should remain a bounded_theorem, not a positive_theorem.
 - **auditor confidence:** high
+
+### `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/GENERATION_DEGENERACY_MINIMAL_SYMMETRY_BREAKING_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Subgroup-lattice characterization of G-invariant Hermitian operators on V=C^3 under the natural S3 permutation action: only full S3 forces degeneracy; proper subgroups generically permit three distinct eigenvalues.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260603T003555Z-generation_degeneracy_mi`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The character formula and restriction decompositions for S3, C3, Z2, and the trivial subgroup give commutant dimensions 2,3,5,9 and generic distinct-eigenvalue counts 2,3,3,3.  _(class `A`)_
+- **chain closes:** True — Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
+- **rationale:** Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The audited claim closes as standard finite-group representation algebra over the retained S3 and Z2 anchors, with the C3 and trivial rows following directly from subgroup restrictions. The false S3-locus formula identified inside the cited Z2 authority is a real upstream defect, but it is not load-bearing for this note’s Z2 row or minimal-breaking conclusion. The current claim uses the Z2 authority for the five-parameter generically nondegenerate family, not for that displayed S3-locus identity.
+- **auditor confidence:** judicial
 
 ### `geometry_lane_head_to_head_note`
 

@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py
+runner_sha256: cff564f103e2e7d5e7395d1b6785e1bc51198c239f3f45299a5067ed7a21b109
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+============================================================================
+GENERATION MASS-DEGENERACY MINIMAL-SYMMETRY-BREAKING DISCRIMINATOR
+============================================================================
+
+----------------------------------------------------------------------------
+G = S3: full S_3 (all axis permutations)
+----------------------------------------------------------------------------
+  [PASS] commutant (mass-param) dim = 2  (got 2)
+  [PASS] generic invariant mass matrix has 2 distinct eigenvalues  (eigs=[7.167, 8.667])
+  [PASS] forces degeneracy = True
+
+----------------------------------------------------------------------------
+G = C3: C_3[111] (3-cycle only)
+----------------------------------------------------------------------------
+  [PASS] commutant (mass-param) dim = 3  (got 3)
+  [PASS] generic invariant mass matrix has 3 distinct eigenvalues  (eigs=[4.857, 8.667, 9.476])
+  [PASS] forces degeneracy = False
+
+----------------------------------------------------------------------------
+G = Z2: single transposition Z_2
+----------------------------------------------------------------------------
+  [PASS] commutant (mass-param) dim = 5  (got 5)
+  [PASS] generic invariant mass matrix has 3 distinct eigenvalues  (eigs=[4.0, 7.804, 11.196])
+  [PASS] forces degeneracy = False
+
+----------------------------------------------------------------------------
+G = triv: no symmetry
+----------------------------------------------------------------------------
+  [PASS] commutant (mass-param) dim = 9  (got 9)
+  [PASS] generic invariant mass matrix has 3 distinct eigenvalues  (eigs=[2.004, 8.369, 12.627])
+  [PASS] forces degeneracy = False
+
+----------------------------------------------------------------------------
+CHARACTERIZATION
+----------------------------------------------------------------------------
+  [PASS] forced generation degeneracy holds for the FULL S_3 only  (forcing set = ['S3'])
+  [PASS] every PROPER subgroup (C_3, Z_2, trivial) permits 3 distinct masses
+  [PASS] reproduces retained s3_mass_matrix_no_go: S_3 -> <=2 eigenvalues
+  [PASS] reproduces retained z2 parametrization: Z_2 commutant real-dim 5, nondegenerate
+
+----------------------------------------------------------------------------
+OBSTRUCTION CARRIER: the 2-dim irrep E
+----------------------------------------------------------------------------
+  [PASS] E (2-dim) irreducible under S_3 (commutant dim 2 = 1^2+1^2)
+  [PASS] E reducible under every proper subgroup (commutant dim > 2)
+
+============================================================================
+VERDICT
+============================================================================
+  MINIMAL-BREAKING CHARACTERIZATION PROVEN.
+  The forced generation mass-degeneracy on the hw=1 triplet is carried
+  entirely by the 2-dim S_3 irrep E, which is irreducible under the FULL
+  S_3 and reducible under every proper subgroup. Therefore:
+
+   * unbroken S_3        -> at most 2 distinct masses (forced degeneracy);
+   * any proper subgroup -> 3 distinct masses permitted (C_3, Z_2, triv);
+
+  So substep-4's required external input is EXACTLY an S_3 -> proper-
+  subgroup breaking; the framework's own C_3[111] is one sufficient
+  proper-subgroup route. This characterizes the residual
+  precisely; it does NOT derive the breaking, the mass values, or the
+  generation labeling -- those remain the admitted external input.
+
+============================================================================
+PASS=18 FAIL=0
+
+----- stderr -----
+

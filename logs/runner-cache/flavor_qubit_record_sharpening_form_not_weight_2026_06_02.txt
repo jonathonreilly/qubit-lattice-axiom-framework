@@ -1,0 +1,14 @@
+[PASS] P1 FORM closed by A1': additivity over independent subsystems forces log over the |Z|^p family
+[PASS] genuine log|det H| = log|lam_triv| + 2*log|lam_doublet|: the doublet is counted with MULTIPLICITY 2 (dimension/r=1 side)
+       log|det|=0.38662; doublet multiplicity = 2
+[PASS] the r=1/2 reading needs the multiplicity-stripped block determinant log|lam_triv*lam_doublet| -- a DIFFERENT functional
+       block-det=0.60977 != log|det|=0.38662 (differ by the doublet multiplicity term)
+[PASS] A1' fixes the FORM (log|det|, multiplicity 1:2 = dimension = r=1), NOT the WEIGHT; r=1/2 (block 1:1) stays unforced
+       multiplicity 1:2 -> r=1 ; block-count 1:1 -> r=1/2 (the unforced residual)
+[PASS] A1' coexists with retained Born: Born = pre-record normalized multiplicative ledger; record = post-record bare additive ledger
+
+SCORECARD PASS=5 FAIL=0
+FINDING: the qubit->record sharpening A1' is JUDICIOUS + multi-gate for P1 (closes the log|det|
+FORM via additivity, coexists with Born), but an EPICYCLE for the Koide VALUE: it fixes the FORM,
+not the within-C^3 WEIGHT, and genuine log|det| counts the doublet x2 (dimension -> r=1). r=1/2
+(block-count 1:1) needs the multiplicity-stripped determinant = the unforced residual. No audit status.

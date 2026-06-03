@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 639 |
+| **retained_bounded** | 640 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1210 |
+| unaudited | 1209 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 982 |
+| `audited_clean` | 983 |
 | `audited_conditional` | 70 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1449 |
+| `unaudited` | 1448 |
 
 | claim_type | count |
 |---|---:|
@@ -383,6 +383,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -5357,6 +5358,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equal Hilbert-Schmidt contribution from aI and b(J-I) gives 3a^2 = 6b^2, hence (b/a)^2 = 1/2; the later Q step uses Q = 1/3 + (2/3)(b/a)^2.  _(class `A`)_
 - **chain closes:** False — The eigenvalue bound, Hilbert-Schmidt norms, equipartition ratio, and formal Gaussian variance ratio close by finite matrix algebra. The displayed Q = 1/3 + (2/3)(b/a)^2 identity is not defined or derived in the restricted packet, and the runner only re-encodes that formula.
 - **rationale:** The finite matrix calculations are correct: eigenvalues are a+2b and a-b, PSD with a>0 gives -1/2 <= b/a <= 1, Tr(I^2)=3, Tr((J-I)^2)=6, and HS equipartition gives (b/a)^2=1/2. The source also claims the symmetric-form identity Q = 1/3 + (2/3)(b/a)^2 and Q=2/3, but the restricted packet gives no definition or derivation of Q from the symmetric form. The runner's koide_q_from_ratio function hard-codes the displayed Q formula, so it does not independently close that displayed identity.
+- **auditor confidence:** high
+
+### `flavor_block_count_native_via_jcs_note_2026-05-30`
+
+- **Note:** [`FLAVOR_BLOCK_COUNT_NATIVE_VIA_JCS_NOTE_2026-05-30.md`](../../docs/FLAVOR_BLOCK_COUNT_NATIVE_VIA_JCS_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded correction that the K0-real / real-Wedderburn-block Q=2/3 reading is algebraically native via J_cs and not excluded by C^3=I; uniqueness or forced selection over the trace/dimension Q=1 reading was not audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-022217-94f71e38-flavor_block_count_nativ`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** J_cs=(C-C^2)/sqrt3 is built from the real C3 shift, commutes with C, has eigenvalues {0,+i,-i} with the doublet one complex line, so C^3=I quantizes the U(1)_b symmetry but does not forbid the J_cs block-count measure.  _(class `A`)_
+- **chain closes:** True — The Pauli pseudoscalar identity, generation-blind scalar action, J_cs commutation/eigenvalue facts, U(1)_b quantization check, and real/complex Z3 block-count arithmetic all close by direct algebra. The note explicitly leaves the stronger claim that J_cs is the uniquely forced mass-generation measure open, and the audited scope excludes that stronger claim.
+- **rationale:** The runner performs direct algebraic checks rather than merely printing constants: sigma_x sigma_y sigma_z=iI2, [iI3,C]=0, J_cs real antisymmetric and C3-equivariant with spectrum {0,+i,-i}, and the rephasing constraint (e^{ia}C)^3=I only at a=2pi k/3. Independent formula inventory also checks C[Z3] gives three complex one-dimensional blocks while R[Z3] factors as R plus C, giving one real singlet block and one complex-type real block, so the table weights (1:2) -> Q=1 and (1:1) -> Q=2/3 are consistent. No external comparator or non-retained cited authority is used for the bounded availability claim.
 - **auditor confidence:** high
 
 ### `flavor_carrier_from_axioms_momentum_forced_2026-05-31`

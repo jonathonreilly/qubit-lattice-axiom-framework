@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 300,
     "high": 247,
-    "leaf": 365,
+    "leaf": 364,
     "medium": 300
   },
   "cycle_break_target_count": 29,
@@ -27056,28 +27056,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_block_count_native_via_jcs_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_BLOCK_COUNT_NATIVE_VIA_JCS_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_block_count_native_via_Jcs_2026_05_30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_both_readings_charge_selects_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37607,6 +37585,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 60,
-  "total_pending": 1212
+  "ready_count": 59,
+  "total_pending": 1211
 }

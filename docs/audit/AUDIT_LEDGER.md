@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 637 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1222 |
+| unaudited | 1221 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 978 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1461 |
+| `unaudited` | 1460 |
 
 | claim_type | count |
 |---|---:|
@@ -1142,6 +1142,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8665,6 +8666,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Because the eigenvalues are real, the signed and absolute-value readouts share numerator sum lambda_k^2, while the denominator changes from (sum lambda_k)^2=(3a)^2 to (sum |lambda_k|)^2, so triangle inequality gives Q(V) <= Q(S) with equality only when no eigenvalue is negative.  _(class `A`)_
 - **chain closes:** False — The core r=1/2 signed-versus-singular readout theorem closes from the trigonometric identities and triangle inequality. The full note does not close as written because Corollary C2 states the one-negative inequality Q(V)<2/3 without an explicit r=1/2 restriction; in general the same argument only gives Q(V)<Q(S).
 - **rationale:** The runner source genuinely computes the displayed r=1/2 values and the main inequivalence checks symbolically, with no external comparator import. However, the strict formula inventory finds an overbroad displayed inequality in the C2/one-negative formula family: for a=1 and b=19/20-i*sqrt(3)/20, the allowed spectrum is (2.9,0.2,-0.1), exactly one eigenvalue is negative, and Q(V)=423/512>2/3. Thus the theorem is clean only after restricting that '<2/3' one-flip claim to r=1/2 or replacing it by the general bound Q(V)<Q(S).
+- **auditor confidence:** high
+
+### `koide_tracial_standard_form_carrier_narrow_note_2026-06-02`
+
+- **Note:** [`KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md`](../../docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the proposed tracial-standard-form R[Z_3] carrier and the equal-energy per cyclic-vector-channel scoring rule, the cyclic vector distinguishes the identity/non-identity split from the idempotent split and the channel rule yields r=1/2.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-014431-da720f4f-koide_tracial_standard_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cyclic-vector split L^2 = C.Omega (+) Omega^perp = span{e} (+) span{g,g^2} is fixed by (Omega,<.,.>), and equal GNS channel energy a^2*1 = b^2*2 gives r = |b|^2/a^2 = 1/2.  _(class `A`)_
+- **chain closes:** False — The algebra from the proposed carrier plus channel-counting scoring closes, but the restricted retained inputs do not establish that carrier or scoring rule as admitted framework content. The missing step is a retained or explicitly admitted carrier/scoring bridge.
+- **rationale:** The runner/source verify algebraic facts: in the proposed tracial GNS standard form, Omega=e fixes the identity line, the idempotent singlet is the democratic line, and equal energy across the two cyclic-vector channels gives r=1/2. These checks are class A, not class C: the carrier and channel-counting rule are supplied as premises, and the note itself says GNS does not choose channel-counting over basis-direction counting. The cited Koide algebra and chirality no-go authorities are retained-grade, but they do not admit the proposed carrier, the scoring rule, or the Kahler/Dirac-to-Majorana readout bridge. A second pass should also restrict the overbroad Aut(R[Z_N]) prose to the actual Z3/group-basis/Hopf automorphism claim, since the runner only checks Aut(Z3) permutations.
+- **open / conditional deps cited:**
+  - `KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md`
 - **auditor confidence:** high
 
 ### `koide_transport_gap_constant_no_go_note_2026-04-20`

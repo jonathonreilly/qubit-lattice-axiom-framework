@@ -171404,22 +171404,50 @@
       "verdict_rationale": null
     },
     "koide_tracial_standard_form_carrier_narrow_note_2026-06-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-06-03T01:47:01.793991+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "c55e40ddcc1ceaac65ae6323f44177ead5d9c126083b3e1efef7704a852781da",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-014431-da720f4f-koide_tracial_standard_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from the proposed carrier plus channel-counting scoring closes, but the restricted retained inputs do not establish that carrier or scoring rule as admitted framework content. The missing step is a retained or explicitly admitted carrier/scoring bridge.",
       "claim_id": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
-      "claim_scope": null,
+      "claim_scope": "Given the proposed tracial-standard-form R[Z_3] carrier and the equal-energy per cyclic-vector-channel scoring rule, the cyclic vector distinguishes the identity/non-identity split from the idempotent split and the channel rule yields r=1/2.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-06-03T01:47:01.793991+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -171429,34 +171457,36 @@
         "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 2.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The cyclic-vector split L^2 = C.Omega (+) Omega^perp = span{e} (+) span{g,g^2} is fixed by (Omega,<.,.>), and equal GNS channel energy a^2*1 = b^2*2 gives r = |b|^2/a^2 = 1/2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8d93b10be4ab681d66aa41345b7bbb1ec07acd497e5fbf4d1508b3b5a801efd0",
       "note_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained or explicitly approved Tier-A carrier theorem plus an independent derivation/admission of channel-counting scoring on the cyclic-vector split; also narrow the Aut(R[Z_N]) wording before any clean re-audit.",
+      "open_dependency_paths": [
+        "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 8,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/koide_tracial_standard_form_carrier_2026_06_02.py",
       "title": "Koide r=1/2 from a tracial-standard-form carrier: does GNS rank the (1,N-1) partition?",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner/source verify algebraic facts: in the proposed tracial GNS standard form, Omega=e fixes the identity line, the idempotent singlet is the democratic line, and equal energy across the two cyclic-vector channels gives r=1/2. These checks are class A, not class C: the carrier and channel-counting rule are supplied as premises, and the note itself says GNS does not choose channel-counting over basis-direction counting. The cited Koide algebra and chirality no-go authorities are retained-grade, but they do not admit the proposed carrier, the scoring rule, or the Kahler/Dirac-to-Majorana readout bridge. A second pass should also restrict the overbroad Aut(R[Z_N]) prose to the actual Z3/group-basis/Hopf automorphism claim, since the runner only checks Aut(Z3) permutations."
     },
     "koide_transport_gap_constant_no_go_note_2026-04-20": {
       "audit_date": "2026-05-05T11:16:21.974128+00:00",

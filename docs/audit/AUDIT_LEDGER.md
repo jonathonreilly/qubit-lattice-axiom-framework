@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1196 |
+| unaudited | 1195 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 81 |
+| ~~audited_conditional~~ | 82 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 81 |
+| `audited_conditional` | 82 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1435 |
+| `unaudited` | 1434 |
 
 | claim_type | count |
 |---|---:|
@@ -1153,6 +1153,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_emergent_chirality_no_transport_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5577,6 +5578,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because exp(theta J_cs) is an SO(2) rotation on the doublet plane preserving the HS block and determinant, the static J_cs is measure-neutral and cannot by itself select det_C.  _(class `A`)_
 - **chain closes:** False — The matrix identities close algebraically, including J_cs^2=-P_doublet, Gamma_chi^2=I, commutation, and the HS 6*I block from the provided C. The packet does not supply a derivation or cited retained authority for det_C -> r=1/2 -> Q=2/3 or the det_R/Q=1 default, which are displayed quantitative readout steps in the source note.
 - **rationale:** The runner source performs genuine algebraic checks rather than merely printing the PASS lines, and independent algebra supports the R1-R4 identities within the static-J_cs scope. However, the source note also imports quantitative mode-count/readout statements and the det_R/Q default while section 2 provides no cited authorities. Under the formula-inventory guard, those displayed ratios and defaults cannot be treated as audited from this restricted packet, so the full bounded theorem remains conditional.
+- **auditor confidence:** high
+
+### `flavor_find_j_round2_power_not_count_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the round-2 algebraic obstruction that Berezin/fermionic determinant power and C3 invariance do not by themselves select det_C/J over det_R/I.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-030141-1cd3528d-flavor_find_j_round2_pow`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** C3 admits both invariant bilinears I and J=C-C^2, so choosing the antisymmetric J pairing that yields det_C is an unforced extra posit rather than a consequence of fermionic Berezin structure.  _(class `A`)_
+- **chain closes:** False — The packet closes the narrow algebraic non-selection of J, but the broader claim also imports the P1 carrier premise, Round-1 U(1)_b measure-neutrality, and the det_C/det_R-to-r/Q mapping without providing those authorities. R2-4 verifies only arithmetic after those mappings are assumed.
+- **rationale:** R2-1 through R2-3 are substantive algebraic checks: the determinant is a product functional, C3 preserves both I and J, and determinant exponent is separate from doublet count. The displayed eigenvalue and Frobenius block-total formulas are consistent under the runner's conventions. However, the full source-note conclusion that det_R/Q=1 stands and that the wall is Dirac-vs-Majorana relies on inherited mappings and prior U(1)_b/P1 authorities absent from the restricted packet, so the chain is not closed as written.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

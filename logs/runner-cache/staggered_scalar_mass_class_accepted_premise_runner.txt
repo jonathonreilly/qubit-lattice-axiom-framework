@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/staggered_scalar_mass_class_accepted_premise_runner.py
+runner_sha256: 62b5681b903db902d25c564f37f4c125476b64e1c3d35babf5d76fdcf3397519
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+STAGGERED SCALAR-MASS ACTION CLASS ACCEPTED-PREMISE BRIDGE
+==============================================================================
+
+== Source firewall ==
+
+  [PASS] source contains required phrase: accepted-premise packet entry
+  [PASS] source contains required phrase: no new repo-wide axiom
+  [PASS] source contains required phrase: scripts/staggered_scalar_mass_class_accepted_premise_runner.py
+  [PASS] source contains required phrase: STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md
+  [PASS] source contains required phrase: STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
+  [PASS] source contains required phrase: P1: Staggered scalar-mass action class
+  [PASS] source excludes overclaim phrase: retained_unbounded
+  [PASS] source excludes overclaim phrase: audited_clean
+  [PASS] source excludes overclaim phrase: audited_conditional
+  [PASS] source excludes overclaim phrase: adds a new repo-wide axiom
+  [PASS] source excludes overclaim phrase: derive P1 from A1/A2
+
+== B1: row-local accepted-premise registration ==
+
+  [PASS] single accepted-premise packet is registered
+  [PASS] registered packet is P1
+  [PASS] P1 explicitly fixes zero epsilon component
+
+== B2: scalar/epsilon decomposition checks ==
+
+  [PASS] real scalar: decomposes exactly into I and epsilon components  (M_S=1+0j, M_epsilon=0+0j, residual=0.00e+00)
+  [PASS] complex scalar: decomposes exactly into I and epsilon components  (M_S=0.7071+0.7071j, M_epsilon=0+0j, residual=1.09e-15)
+  [PASS] pseudoscalar: decomposes exactly into I and epsilon components  (M_S=0, M_epsilon=0.7, residual=7.69e-16)
+  [PASS] mixed: decomposes exactly into I and epsilon components  (M_S=1+0j, M_epsilon=0+0.7j, residual=0.00e+00)
+  [PASS] real scalar lies in P1
+  [PASS] complex scalar fails P1 real-scalar phase
+  [PASS] pseudoscalar fails P1 because epsilon component is nonzero
+  [PASS] mixed mass fails P1 because epsilon component is nonzero
+
+== B3/B4: determinant phase consequences on sampled staggered operators ==
+
+  [PASS] sampled staggered D is anti-Hermitian  (max||D^dag + D||=0.00e+00)
+  [PASS] sampled staggered D anticommutes with epsilon  (max||eps D + D eps||=0.00e+00)
+  [PASS] real scalar mass det(D+mI) is real-positive on all samples  (12/12 pass)
+  [PASS] complex scalar mass det(D+m exp(i*pi/4)I) has nonzero phase on all samples  (12/12 reject)
+  [PASS] two-flavor notation det(D+m_uI)*det(D+m_dI) has zero phase on P1  (12/12 pass)
+  [PASS] mixed mass can pass determinant positivity, so P1 scalar-class wall is independent  (mixed determinant positive on 12/12; excluded by epsilon component, not by this determinant gate)
+
+==============================================================================
+SUMMARY: PASS=28 FAIL=0 runtime=0.03s
+VERDICT: bounded accepted-premise bridge passes; P1 is explicit and row-local.
+
+----- stderr -----
+

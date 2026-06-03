@@ -14,7 +14,7 @@
 The parent strong-CP theta-zero row (named here as parent context only; not a load-bearing dependency on this proof's chain) was returned `audited_conditional` because two load-bearing pieces in its retained-action-surface closure were treated as **action-class definitions** rather than **derived theorems**:
 
 1. "No bare θ slot" / `θ_bare = 0` was taken from the action-class definition.
-2. The positive real quark-mass surface `arg det(M_u M_d) = 0` was selected by definition.
+2. The positive real quark-mass surface `arg[det(D + m_u I) det(D + m_d I)] = 0` was selected by definition.
 
 The 13 theorem passes and 30 retained-surface compute passes verified internal consistency of that θ-free Wilson-plus-staggered scalar-mass surface, but did not derive **from primitives** that the framework's physical Cl(3)/Z³ action forbids every CP-odd topological term or fixes the real-mass orientation.
 
@@ -87,7 +87,7 @@ plaquette-expansion coefficient, V2.0a/b/c for the θ-term algebra), so the
 convention is executed ground truth, not prose-only bookkeeping. This
 reconciliation changes only the **displayed coefficient bookkeeping**: the two
 substantive conclusions — `θ_bare = 0` on the real-positive Wilson slot
-(Theorem 2.4) and `arg det(M_u M_d) = 0` on the scalar-mass surface
+(Theorem 2.4) and `arg[det(D + m_u I) det(D + m_d I)] = 0` on the scalar-mass surface
 (Theorem 3.4) — are unchanged, because they depend only on (i) any nonzero `θ`
 making the Boltzmann factor complex and (ii) the determinant phase of real vs.
 complex mass, neither of which references the kinetic-coefficient normalization.
@@ -120,6 +120,25 @@ The stronger parent-level `theta_eff = 0` closure remains independent-audit work
 after the real-positive Wilson selector and scalar-mass action-class boundary
 receive retained one-hop authority.
 
+## §0.4. 2026-06-03 accepted-premise bridge repair
+
+This revision supplies the explicit accepted bounded-premise record route named
+by §0.3, without adding any new axiom:
+
+- [`WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md)
+  registers the row-local accepted-premise packet for the beta=6 Wilson
+  real-positive measure surface (P4/P5 branch included).
+- [`STAGGERED_SCALAR_MASS_CLASS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](STAGGERED_SCALAR_MASS_CLASS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md)
+  registers the row-local accepted-premise packet for the scalar-mass action
+  class `M = m I`, `m > 0`, with no epsilon/pseudoscalar component.
+
+The theorem remains a bounded composition on those explicit surfaces. This
+revision also fixes the displayed mass-phase shorthand: the load-bearing
+determinant object is the product of Dirac determinants
+`det(D + m_u I) det(D + m_d I)`, not a bare matrix product `M_u M_d` unless
+that shorthand is explicitly defined to mean this determinant product. Runner
+gate V8.3 now checks the two-flavor determinant-product phase directly.
+
 ---
 
 ## §1. Setting
@@ -128,9 +147,10 @@ The framework baseline and explicit bounded premises composed in this note are:
 
 - (A1) **Cl(3) local algebra** (axiom). Generators `{γ₁, γ₂, γ₃}` satisfy `γᵢ² = +I` and `{γᵢ, γⱼ} = 2δᵢⱼ I`. The complexification of Cl(3)⊗C carries an SU(3) action used as the gauge group below.
 - (A2) **Z³ spatial substrate** (axiom). Sites `x ∈ Z³` and oriented links `e = (x, μ)` for `μ ∈ {1, 2, 3}`. Lattice spacing `a > 0`.
-- (R1) **Canonical normalization β = 6** (retained on the axiom-first surface via [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) — the retained primitive for canonical-normalization rigidity. The narrower 2026-05-17 algebraic redo `G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md` is sibling-context only and is demoted to backtick here; it is not load-bearing on this proof).
+- (R1) **Canonical normalization β = 6** through the explicit accepted-premise bridge [`CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) and the Wilson real-positive measure bridge [`WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md). `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md` remains historical/sibling context here, not a stronger retained Wilson-matching authority than the accepted-premise packet supplies.
 - (R2) **Staggered Dirac anti-Hermiticity / determinant positivity** from [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md), used here only for the staggered-only `D† = -D`, `det(D+mI)>0` structural input. This note does not claim the full staggered+Wilson reflection-positivity parent is retained.
-- (R3) **Real-positive measure boundary** as an explicit supplied bounded action-surface premise. The abstract norm-square ingredient is retained-bounded in [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md), but the broader reflection-positivity parent row is not cited as retained-grade authority here.
+- (R3) **Real-positive Wilson measure boundary** as the explicit accepted-premise packet in [`WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md). The abstract norm-square ingredient is retained-bounded in [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md), but the broader reflection-positivity parent row is not cited as retained-grade authority here.
+- (R4) **Scalar-mass action-class boundary** as the explicit accepted-premise packet in [`STAGGERED_SCALAR_MASS_CLASS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](STAGGERED_SCALAR_MASS_CLASS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md).
 
 The SU(3) gauge group acts on each link by `U_e ∈ SU(3)` with link transformation `U_e → V_x U_e V_{x+μ}^†` for `V_x ∈ SU(3)`. The Wilson plaquette holonomy is `U_P = U_{e₁} U_{e₂} U_{e₃}^† U_{e₄}^†` for a spatial plaquette with oriented boundary links `e₁, e₂, e₃, e₄`.
 
@@ -303,9 +323,9 @@ M = m · I,    m ∈ R \ {0}.
 ```
 With the repo's standard positive-mass convention this is written `m > 0`. Therefore, on the convention-aligned supplied surface:
 ```
-arg det(M_u M_d) = 0
+arg[det(D + m_u I) det(D + m_d I)] = 0
 ```
-for the up-quark and down-quark mass operators.
+for the up-quark and down-quark Dirac determinant factors.
 
 **Proof.** Lemma 3.1 splits admissibility into two independent constraints (C-det) and (C-class):
 - (C-det): (M-real) and (M-pseudoscalar) **may** satisfy (C-det) but (M-pseudoscalar) does so only on a subset of configurations; (M-complex, α ∈ (0, 2π) \ {0, π}) fails (C-det); (M-mixed) empirically satisfies (C-det) via staggered chirality structure.
@@ -319,7 +339,9 @@ arg det(D + m·I)  =  0  (mod 2π)
 ```
 configuration-wise on retained SU(3) configurations. Composing two such mass operators (for u, d quarks):
 ```
-arg det(M_u M_d)  =  arg(det(D + m_u I)) + arg(det(D + m_d I))  =  0.
+arg[det(D + m_u I) det(D + m_d I)]
+  = arg(det(D + m_u I)) + arg(det(D + m_d I))
+  = 0.
 ```
 QED.
 
@@ -327,9 +349,9 @@ QED.
 
 ## §4. Combined support for θ_eff = 0 on the supplied bounded surface
 
-Composing Theorem 2.4 (`θ_bare = 0` inside the supplied single-plaquette Wilson / real-positive-measure slot family) and Theorem 3.4 (`arg det(M_u M_d) = 0` inside the supplied scalar-mass class with the positive-mass convention):
+Composing Theorem 2.4 (`θ_bare = 0` inside the supplied single-plaquette Wilson / real-positive-measure slot family) and Theorem 3.4 (`arg[det(D + m_u I) det(D + m_d I)] = 0` inside the supplied scalar-mass class with the positive-mass convention):
 ```
-θ_eff = θ_bare + arg det(M_u M_d) = 0 + 0 = 0
+θ_eff = θ_bare + arg[det(D + m_u I) det(D + m_d I)] = 0 + 0 = 0
 ```
 on the supplied bounded Cl(3)/Z^3 Wilson+staggered surface, with the inputs being:
 
@@ -337,7 +359,8 @@ on the supplied bounded Cl(3)/Z^3 Wilson+staggered surface, with the inputs bein
 - (A2) Z³ spatial substrate,
 - (R1) canonical normalization β = 6,
 - (R2) staggered Dirac anti-Hermiticity (parent note Leg A),
-- (R3) supplied real-positive / reflection-positivity-compatible boundary (Case A staggered-only, or Case B symmetric-canonical Wilson).
+- (R3) supplied real-positive / reflection-positivity-compatible boundary (Case A staggered-only, or Case B symmetric-canonical Wilson),
+- (R4) scalar-mass action-class boundary.
 
 No repo-wide axiom is added by this note. The claim remains bounded to the named supplied action surface and does not use black-box imports of Vafa-Witten or Leutwyler-Smilga as proof inputs.
 
@@ -356,7 +379,7 @@ The companion runner [`scripts/frontier_strong_cp_operator_basis_real_2026_05_19
 - **V5 — Mass orientation: (C-det) + (C-class) split.** Build candidate masses (M-real with `m = 1.0`), (M-complex with `α = π/4`), (M-pseudoscalar with `m₅ = 1.0`), (M-mixed with `m = m₅ = 1.0`) on a small 2×2×2×2 staggered Λ with `N = 10` random SU(3) configurations. Compute `det(D + M)` and verify: (a) M-real gives real-positive det, satisfying (C-det); (b) M-complex (α=π/4) gives nonzero-phase det, failing (C-det); (c-d) M-pseudoscalar and M-mixed are characterized structurally by nonzero ε-component (`M_P ≠ 0`), failing (C-class) — verify by decomposing each into `(M_S · I + M_P · ε)`. PASS = M-real is the unique candidate satisfying both (C-det) AND (C-class).
 - **V6 — Mass orientation: reflection-positivity precondition.** Same small Λ, same configurations. For each candidate mass, check the determinant precondition for the retained RP construction: `det(D + M) > 0` real-positive. PASS = M-real passes on all; M-complex (α=π/4) fails (C-det). M-mixed empirically passes the RP determinant precondition but is excluded by (C-class), as recorded honestly.
 - **V7 — CP-odd single-plaquette slot construction + rejection.** Explicitly construct the CP-odd single-plaquette slot coupling `S_θ[U] = i θ · Q_lat[U] = i θ · Σ_P Im Tr U_P` (so the exponent `−S_θ = −i θ Q_lat[U]` enters the Boltzmann weight). Compute the Boltzmann factor `exp(−S_W − S_θ) = exp(−S_W − i θ Q_lat[U])` for `θ = 0.1` on a small Λ and `N = 5` configurations. Verify the Boltzmann factor has nonzero imaginary part for `θ ≠ 0` and zero imaginary part for `θ = 0`. PASS = rejection criterion triggers for `θ ≠ 0`, control passes for `θ = 0`.
-- **V8 — Composition with Leg A.** Sample `N = 30` SU(3) configurations on small Λ. Compute (i) `det(D + 1.0 · I)` and verify real-positive (Leg A retained behavior, parent note line 49); (ii) `det(D + 1.0 · e^{iπ/4} · I)` (M-complex at α=π/4) and verify nonzero-phase for all samples. PASS = Leg A real-positivity holds AND M-complex (α=π/4) is rejected. This composition exhibits Theorem 3.4 + Leg A on actual SU(3) configurations.
+- **V8 — Composition with Leg A.** Sample `N = 30` SU(3) configurations on small Λ. Compute (i) `det(D + 1.0 · I)` and verify real-positive (Leg A retained behavior, parent note line 49); (ii) `det(D + 1.0 · e^{iπ/4} · I)` (M-complex at α=π/4) and verify nonzero-phase for all samples; (iii) compute `det(D + m_u I) det(D + m_d I)` for two positive real scalar masses and verify its argument is zero. PASS = Leg A real-positivity holds, M-complex (α=π/4) is rejected, and the two-flavor determinant-product phase is zero. This composition exhibits Theorem 3.4 + Leg A on actual SU(3) configurations.
 
 Hard assertion gates, PASS/FAIL summary, target `PASS = 8, FAIL = 0`. Runtime < 5 minutes on a standard laptop using NumPy only.
 
@@ -424,9 +447,10 @@ explicit bounded premises that this note composes:
 
 - (A1) Cl(3) local algebra — repository axiom.
 - (A2) Z³ spatial substrate — repository axiom.
-- (R1) Canonical normalization β = 6: [`docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) (retained primitive — load-bearing one-hop authority). Sibling `G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md` (backticked, sibling/context).
+- (R1) Canonical normalization beta=6 / Wilson real-positive surface: [`docs/CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](CL3_NORMALIZATION_I3_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) + [`docs/WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md).
 - (R2) Staggered Dirac anti-Hermiticity / determinant positivity: [`docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md).
-- (R3) Real-positive measure boundary: explicit supplied bounded premise, with the abstract norm-square support in [`docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md). The broader reflection-positivity parent row is not treated as retained-grade authority here.
+- (R3) Real-positive measure boundary: explicit accepted-premise packet in [`docs/WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md), with the abstract norm-square support in [`docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md). The broader reflection-positivity parent row is not treated as retained-grade authority here.
+- (R4) Scalar-mass action-class boundary: explicit accepted-premise packet in [`docs/STAGGERED_SCALAR_MASS_CLASS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](STAGGERED_SCALAR_MASS_CLASS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md).
 
 **No external citations** (Vafa-Witten, Leutwyler-Smilga, Osterwalder-Schrader, etc.) are used as proof inputs. The arguments above are bounded compositions of the listed retained primitives and retained action-surface constraints. External literature may be cited in downstream / paper-level write-ups but is not load-bearing here.
 

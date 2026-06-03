@@ -616,50 +616,39 @@ def test_V7_FFtilde_proxy_construction_rejection():
     N_cfgs = 20
     theta = 0.5
 
-    # Construct S_FFtilde = i theta * sum_P (Tr U_P - Tr U_P^dag) / 2 = -theta * sum_P Im Tr U_P * (-1)
-    # = theta * sum_P Im Tr U_P (taking the imaginary part directly: (z - z*)/(2i) = Im z, so (z - z*)/2 = i Im z;
-    #   then i * theta * (i Im z) = -theta Im z. Sign convention doesn't matter for the rejection test;
-    #   what matters is that Im S != 0.)
-    # We compute the candidate explicitly and check Im S.
+    # Correct convention, fixed here and in the note:
+    #   Q_lat = sum_P (Tr U_P - Tr U_P^dag)/(2i) = sum_P Im Tr U_P  (real)
+    #   S_theta = i * theta * Q_lat                                 (imaginary)
+    # The previous drift i*theta*(Tr U_P - Tr U_P^dag)/2 is the real term
+    # -theta*Im Tr U_P, so this gate explicitly guards against that mistake.
+    max_form_dev = 0.0
+    min_buggy_gap = np.inf
+    for _ in range(20):
+        z = np.trace(random_su3(rng))
+        q_density = (z - np.conj(z)) / (2j)
+        s_correct_a = 1j * theta * z.imag
+        s_correct_b = 1j * theta * q_density
+        s_correct_c = theta * (z - np.conj(z)) / 2.0
+        s_buggy = 1j * theta * (z - np.conj(z)) / 2.0
+        max_form_dev = max(
+            max_form_dev,
+            abs(q_density.imag),
+            abs(s_correct_a - s_correct_b),
+            abs(s_correct_a - s_correct_c),
+            abs(s_correct_a.real),
+        )
+        min_buggy_gap = min(min_buggy_gap, abs(s_correct_a - s_buggy))
 
-    rejected = 0
-    im_S_values = []
-    for cfg in range(N_cfgs):
-        U = random_gauge_config_4d(L_s, L_t, rng)
-        # Sum over plaquettes of (Tr U_P - Tr U_P^dag) / 2
-        S_FFtilde_complex = 0.0 + 0.0j
-        dims = (L_t, L_s, L_s, L_s)
-        for coords in np.ndindex(*dims):
-            for mu in range(4):
-                for nu in range(mu + 1, 4):
-                    P = plaquette_4d(U, dims, coords, mu, nu)
-                    tr_P = np.trace(P)
-                    tr_P_dag = np.trace(P.conj().T)
-                    S_FFtilde_complex += 1j * theta * (tr_P - tr_P_dag) / 2.0
-        im_S = abs(S_FFtilde_complex.imag)
-        im_S_values.append(im_S)
-        if im_S < 1e-9:
-            # Special note: (Tr U_P - Tr U_P^dag) / 2 = i Im Tr U_P (purely imaginary scalar),
-            # so i * theta * (i Im) = -theta Im (real). So S_FFtilde_complex is actually real (Im S = 0).
-            # The action-functional-level (P4) violation comes from rewriting as theta * Im Tr U_P NOT being
-            # the same as the topological-charge i theta Q_lat WITH the explicit i factor in front in the Boltzmann.
-            # We'll check the actual Boltzmann-factor-level violation in the second test below.
-            pass
-        rejected += 1
+    check(
+        "V7.0  convention guard: Q=(Tr U-Tr U^dag)/(2i), S_theta=i theta Q; extra-i drift differs",
+        max_form_dev < 1e-12 and min_buggy_gap > 1e-6,
+        f"max form deviation = {max_form_dev:.2e}; min gap to buggy extra-i form = {min_buggy_gap:.4e}",
+    )
 
-    # Actually the candidate i theta (Tr U_P - Tr U_P^dag)/2 simplifies to:
-    #   i theta * (2i Im Tr U_P) / 2 = -theta Im Tr U_P   (real-valued action contribution!)
-    # So at the *raw scalar* level this term is real. The (P4) violation comes when this term
-    # is added to the partition function as a CP-odd phase. The canonical "topological term"
-    # in the path integral is written iθQ where Q = (1/(16 pi^2)) sum F~F is real-valued —
-    # and "iθQ" added to S means Im S = θQ != 0.
-    # Let's check directly: the candidate action is S = S_W + iθQ where Q = sum_P Im Tr U_P (a real-valued lattice proxy).
-
-    rng2 = np.random.default_rng(2026052507)
     rejected_v2 = 0
     im_S_v2 = []
     for cfg in range(N_cfgs):
-        U = random_gauge_config_4d(L_s, L_t, rng2)
+        U = random_gauge_config_4d(L_s, L_t, rng)
         Q = sum_im_tr_plaquettes(U, L_s, L_t)  # real
         S_iThetaQ = 1j * theta * Q  # imaginary
         im_S = abs(S_iThetaQ.imag)
@@ -709,8 +698,12 @@ def test_V7_FFtilde_proxy_construction_rejection():
 
     check(
         "V7   F~F-proxy term iθQ rejected at action-functional + Boltzmann-factor levels",
-        rejected_v2 >= int(0.95 * N_cfgs) and bf_rejected >= int(0.95 * N_cfgs) and real_count == N_cfgs,
-        "Triple confirmation: Im S != 0, Im BF != 0, theta=0 control",
+        max_form_dev < 1e-12
+        and min_buggy_gap > 1e-6
+        and rejected_v2 >= int(0.95 * N_cfgs)
+        and bf_rejected >= int(0.95 * N_cfgs)
+        and real_count == N_cfgs,
+        "Convention guard plus triple confirmation: Im S != 0, Im BF != 0, theta=0 control",
     )
 
 

@@ -8,6 +8,36 @@
 **Cached output:** [`logs/runner-cache/frontier_wilson_action_surface_selector_real_positive_2026_05_25.txt`](../logs/runner-cache/frontier_wilson_action_surface_selector_real_positive_2026_05_25.txt)
 **Parent context (cleared row):** `docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md` (currently `audited_conditional`; backticked — this note is the *repair candidate* for one of two missing bridges named by the judicial-panel audit verdict, not a load-bearing dep on this proof's chain).
 
+## 2026-06-03 Accepted-Premise Bridge Repair
+
+The audit blocker named two premise-surface issues and one formula drift:
+
+```text
+missing_bridge_theorem: provide retained or explicitly accepted-premise
+authority for beta=6 Wilson matching and P4/P5 real-positive surface
+conventions, then correct the V7 i-factor source-runner drift before re-audit.
+```
+
+This revision supplies the accepted-premise route without adding a new axiom.
+The row-local bridge
+[`WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md)
+registers one accepted-premise packet entry for the Wilson real-positive
+measure surface: beta=6 canonical Wilson matching on the existing accepted
+normalization bridge, real-valued positive Boltzmann branch, and bounded-below
+finite-volume Wilson branch.
+
+The V7 drift is also corrected here. The real lattice proxy is
+```
+Q_lat[U] = sum_P (Tr U_P - Tr U_P^dag)/(2i) = sum_P Im Tr U_P,
+```
+and the excluded action term is
+```
+S_theta[U] = i theta Q_lat[U].
+```
+The stale expression `i theta (Tr U_P - Tr U_P^dag)/2` is a different real
+term, `-theta Im Tr U_P`, and is not the imaginary P4-violating slot. The
+runner now checks this convention explicitly.
+
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
 The 2026-05-28 audit verdict was `audited_conditional`:
@@ -20,7 +50,7 @@ Supplying the named retained authority/bridge is substantive new work, out of
 scope for this repair. This revision takes the **split path**:
 
 - **Load-bearing (in scope):** The eight runner verification gates (V1–V8) on actual SU(3) configurations — gauge-invariance of plaquette functionals, action-functional-level exclusion of the `iθ Im Tr U_P` imaginary slot by (P4), the sympy continuum-limit expansion, bounded-below check, and canonical-ansatz enumeration — all of which verify the Wilson-surface selection within the explicitly scoped `(P1)–(P5)` ansatz; these finite checks close under the stated conventions.
-- **NON-load-bearing (split off / admitted):** The canonical-normalization authority `β = 6` cited from `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` — the audit notes its scope is only a conditional algebraic rescaling lemma (given canonical trace normalization and scoped Wilson matching), not a fully retained Wilson-matching derivation; the real-positive Wilson surface selection is therefore conditional on that authority being promoted to a fully retained canonical-normalization and Wilson-matching theorem.
+- **NON-load-bearing (split off / admitted):** The canonical-normalization authority `β = 6` cited from `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` — the audit notes its scope is only a conditional algebraic rescaling lemma (given canonical trace normalization and scoped Wilson matching), not a fully retained Wilson-matching derivation. The 2026-06-03 bridge above now supplies the accepted-premise-packet route for this beta/P4/P5 surface without promoting it to an unbounded derivation.
 
 No new axiom, import, or retained bridge is introduced. The runner-verified
 core is the load-bearing content; the named bridge stays an admitted,
@@ -62,7 +92,7 @@ The framework baseline and explicit bounded premises composed in this note are:
 
 - **Framework local algebra baseline.** The live framework uses the one-qubit operator algebra, equivalently `M_2(C) ~= Cl(3,0)`, at each lattice site. The complexified color surface carries the SU(3) gauge action used below.
 - **Framework spatial substrate baseline.** Sites lie on the `Z^3` spatial substrate (plus a discrete time direction in the 3+1 lift) with oriented links `e = (x, mu)` for `mu in {0, 1, 2, 3}`. Lattice spacing `a > 0`.
-- **Scoped canonical-normalization premise `β = 6`.** This packet assumes the standard Wilson leading-small-`a` matching `β = 2 N_c / g_bare^2` with `N_c = 3` and `g_bare^2 = 1`; it does not claim that `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` supplies a retained derivation of that matching or of the value `β = 6`.
+- **Scoped canonical-normalization premise `β = 6`.** This packet assumes the standard Wilson leading-small-`a` matching `β = 2 N_c / g_bare^2` with `N_c = 3` and `g_bare^2 = 1`; the accepted-premise surface is now recorded in [`WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md). This note does not claim that `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03` supplies a retained derivation of that matching or of the value `β = 6`.
 
 The SU(3) gauge group acts on each link by `U_e ∈ SU(3)` with link transformation `U_e → V_x U_e V_{x+μ}^†` for `V_x ∈ SU(3)`. The Wilson plaquette holonomy is `U_P = U_{e₁} U_{e₂} U_{e₃}^† U_{e₄}^†` for the four oriented boundary links of a plaquette `P = (x, μ, ν)`.
 
@@ -302,7 +332,7 @@ The companion runner [`scripts/frontier_wilson_action_surface_selector_real_posi
 - **V4 — Bounded-below check on real Wilson slot.** Compute `S_W = (β/N_c) Σ_P (N_c − Re Tr U_P)` on `N = 50` random SU(3) configurations. PASS = all `S_W ≥ 0` with margin (verifies (P5) on the scoped Wilson slot).
 - **V5 — Sign-changing imaginary-plaquette proxy check.** Compute the real proxy `θ · Σ_P Im Tr U_P` on `N = 50` random configurations. PASS = the proxy samples both signs, showing it is not the positive Wilson kinetic slot. This is not used as a global bounded-below proof; finite compact-lattice real candidates can be bounded below.
 - **V6 — Canonical ansatz enumeration.** Build candidate single-plaquette functionals `{Re Tr U_P, Im Tr U_P, (Re Tr U_P)², |Tr U_P|², (Tr U_P)², Re((Tr U_P)²), Im((Tr U_P)²)}` and check (P1)-(P5) systematically for each. PASS = only `Re Tr U_P` satisfies canonical normalization (P3) while remaining real-valued and bounded in the enumerated leading-`β` surface; the higher-order real candidates are outside this bounded ansatz rather than impossible action terms.
-- **V7 — Explicit forbidden-slot construction + rejection.** Construct the F̃F-proxy term `S_F̃F = i θ · Σ_P (Tr U_P − Tr U_P^†)/2` for `θ = 0.5`. Verify it violates (P4) on `N = 20` random configurations (nonzero `Im S`). PASS = rejection criterion (`Im S ≠ 0`) triggers on at least 95% of configurations (allowing for the measure-zero coincidence where `Σ_P Im Tr U_P = 0`).
+- **V7 — Explicit forbidden-slot construction + rejection.** Construct the real proxy `Q_lat[U] = Σ_P (Tr U_P − Tr U_P^†)/(2i) = Σ_P Im Tr U_P` and the forbidden action term `S_θ[U] = i θ Q_lat[U]` for `θ = 0.5`. First verify that this convention differs from the stale extra-`i` drift `i θ (Tr U_P − Tr U_P^†)/2 = −θ Im Tr U_P` (a real term). Then verify `S_θ` violates (P4) on `N = 20` random configurations (nonzero `Im S`). PASS = the convention guard holds and the rejection criterion (`Im S ≠ 0`) triggers on at least 95% of configurations (allowing for the measure-zero coincidence where `Σ_P Im Tr U_P = 0`).
 - **V8 — Scoped beta-matching consistency.** Compute the leading-`a` continuum-limit relation for the canonical Wilson action under the scoped premises `N_c = 3`, `β = 6`, and `g_bare² = 2 N_c / β = 1`. PASS = `β = 6` is internally consistent with the leading-order `F^a F^a / (4 g²)` matching on this bounded surface; no retained authority for Wilson matching is imported.
 
 Hard assertion gates. Target: PASS = 8 FAIL = 0. NumPy + sympy. Runtime < 5 min.
@@ -330,6 +360,7 @@ The following are the framework baseline and explicit bounded premises that this
 - Framework spatial substrate baseline: `Z^3` spatial substrate.
 - Canonical normalization `β = 6`: scoped premise of this bounded selector packet under the standard Wilson leading-small-`a` matching `β = 2 N_c / g_bare²` with `N_c = 3`; not imported as a retained derivation from `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03`.
 - (P4) real-action surface, (P5) bounded below: standard QFT path-integral well-definedness conventions on the Boltzmann measure (not new axioms; not derived from the framework baseline alone).
+- Explicit accepted-premise record for the beta/P4/P5 surface: [`WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md`](WILSON_REAL_POSITIVE_MEASURE_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-06-03.md).
 
 **No external citations** (Wilson 1974, Vafa-Witten, Leutwyler-Smilga, etc.) are used as proof inputs. The arguments above are bounded compositions of the framework baseline, the scoped `β = 6` matching premise, and the named path-integral conventions. External literature may be cited in downstream / paper-level write-ups but is not load-bearing here.
 

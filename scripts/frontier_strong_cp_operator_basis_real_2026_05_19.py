@@ -57,9 +57,11 @@ from __future__ import annotations
 
 import sys
 import time
+import warnings
 import numpy as np
 
 np.set_printoptions(precision=8, linewidth=140, suppress=False)
+warnings.filterwarnings("ignore", category=RuntimeWarning, message=".*det")
 
 
 # ---------------------------------------------------------------------------
@@ -800,8 +802,9 @@ def test_V7_forbidden_slot_construction_rejection():
     N_cfgs = 5
 
     # Construct the bounded CP-odd single-plaquette candidate
-    # S_theta = -theta * sum_P Im Tr U_P.
-    # Then form the complex Boltzmann factor BF = exp(-S_W) * exp(-i theta Q_lat[U])
+    # Q_lat = sum_P Im Tr U_P and S_theta = i*theta*Q_lat.
+    # Then form the complex Boltzmann factor BF = exp(-S_W - S_theta)
+    # = exp(-S_W) * exp(-i theta Q_lat[U]).
     # Show BF.imag != 0 for theta != 0.
 
     rejected_count = 0
@@ -823,7 +826,7 @@ def test_V7_forbidden_slot_construction_rejection():
 
     max_rel_im = max(bf_im_samples)
     check(
-        "V7.1  CP-odd single-plaquette slot S_theta = -theta * sum_P Im Tr U_P generates complex Boltzmann factor",
+        "V7.1  CP-odd single-plaquette slot S_theta = i theta sum_P Im Tr U_P generates complex Boltzmann factor",
         rejected_count == N_cfgs,
         f"{rejected_count}/{N_cfgs} configs show |Im BF|/|BF| > 1e-12 (max rel Im = {max_rel_im:.4e})",
     )
@@ -868,12 +871,16 @@ def test_V8_composition_with_legA():
     L_s, L_t = 2, 2
     N_cfgs = 30
     m = 1.0
+    m_u = 1.0
+    m_d = 0.72
     alpha = np.pi / 4
 
     legA_realpos_count = 0
     complex_mass_fail_count = 0
+    two_flavor_mass_phase_count = 0
     legA_phases = []
     complex_phases = []
+    two_flavor_phases = []
 
     for cfg in range(N_cfgs):
         U = random_gauge_config_4d(L_s, L_t, rng)
@@ -894,6 +901,17 @@ def test_V8_composition_with_legA():
         if abs(np.angle(det_complex)) > 0.01:
             complex_mass_fail_count += 1
 
+        # Correct two-flavor mass-orientation object:
+        # arg[det(D + m_u I) det(D + m_d I)], not a free-standing
+        # arg det(M_u M_d) shorthand unless that shorthand is explicitly
+        # defined as this product of Dirac determinants.
+        det_u = np.linalg.det(D + m_u * I)
+        det_d = np.linalg.det(D + m_d * I)
+        det_ud = det_u * det_d
+        two_flavor_phases.append(abs(np.angle(det_ud)))
+        if abs(np.angle(det_ud)) < 1e-9 and det_ud.real > 0:
+            two_flavor_mass_phase_count += 1
+
     check(
         "V8.1  Leg A retained primitive: det(D + m I) > 0 real-positive on all sampled configs",
         legA_realpos_count == N_cfgs,
@@ -904,11 +922,16 @@ def test_V8_composition_with_legA():
         complex_mass_fail_count == N_cfgs,
         f"{complex_mass_fail_count}/{N_cfgs} configs reject.  max|phase| = {max(complex_phases):.4f}",
     )
+    check(
+        "V8.3  Two-flavor mass orientation: arg[det(D+m_u I) det(D+m_d I)] = 0 on real scalar masses",
+        two_flavor_mass_phase_count == N_cfgs,
+        f"{two_flavor_mass_phase_count}/{N_cfgs} configs pass.  max|phase| = {max(two_flavor_phases):.2e}",
+    )
 
     check(
         "V8   Composition Theorem 3.4 + Leg A: real-mass is admissible; complex-mass (alpha=pi/4) is excluded",
-        legA_realpos_count == N_cfgs and complex_mass_fail_count == N_cfgs,
-        "Leg A retained primitive holds AND M-complex (alpha=pi/4) is rejected on all 30 SU(3) configs",
+        legA_realpos_count == N_cfgs and complex_mass_fail_count == N_cfgs and two_flavor_mass_phase_count == N_cfgs,
+        "Leg A retained primitive holds, M-complex is rejected, and the two-flavor determinant-product phase is zero",
     )
 
 

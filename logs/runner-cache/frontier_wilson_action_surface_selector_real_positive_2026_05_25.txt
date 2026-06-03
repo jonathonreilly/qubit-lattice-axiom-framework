@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py
-runner_sha256: 33d92cae0758ab951c3e7dd6602fb5f5c8d8baee73b718cca130b382e5edd1fa
+runner_sha256: 9cf0e3aa2140d6a8bacfd3cbcb25f533d97ef1df78151e334624faee3099d1a8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.17
+elapsed_sec: 1.09
 status: ok
 ----- stdout -----
 ================================================================================
@@ -73,10 +73,11 @@ status: ok
 
 === V7: Explicit F~F-proxy term construction + rejection ===
 
+  [PASS] V7.0  convention guard: Q=(Tr U-Tr U^dag)/(2i), S_theta=i theta Q; extra-i drift differs  (max form deviation = 0.00e+00; min gap to buggy extra-i form = 4.6956e-02)
   [PASS] V7.1  S = i theta Q[U] with Q = Σ_P Im Tr U_P has Im S != 0 on generic SU(3) configs  (20/20 configs reject (Im S > 1e-9))
   [PASS] V7.2  Boltzmann factor exp(-S_W - i theta Q) has Im != 0 (rejection)  (20/20 configs reject (Im BF > 1e-12 * |BF|))
   [PASS] V7.3  Control: theta = 0 gives real Boltzmann factor on ALL configs  (20/20 configs have Im BF = 0 at theta = 0)
-  [PASS] V7   F~F-proxy term iθQ rejected at action-functional + Boltzmann-factor levels  (Triple confirmation: Im S != 0, Im BF != 0, theta=0 control)
+  [PASS] V7   F~F-proxy term iθQ rejected at action-functional + Boltzmann-factor levels  (Convention guard plus triple confirmation: Im S != 0, Im BF != 0, theta=0 control)
 
 === V8: Scoped beta-matching consistency ===
 
@@ -99,7 +100,7 @@ GATE SUMMARY (8 verification gates):
   GATES: PASS = 8, FAIL = 0
 
 SUB-CHECK SUMMARY:
-  PASS = 36, FAIL = 0, runtime = 0.8s
+  PASS = 37, FAIL = 0, runtime = 0.7s
 ================================================================================
 
 ----- stderr -----

@@ -16962,15 +16962,15 @@
       "verdict_rationale": null
     },
     "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26": {
-      "audit_date": "2026-05-28T06:54:26.398384+00:00",
+      "audit_date": "2026-06-03T00:51:45.044103+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_axiom_premise_note_hash": {
           "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
         },
         "dep_claim_scope": {
           "minimal_axioms": null,
-          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": "Audited the finite-linear-algebra claim that the phase delta in H(a,b)=aI+bC+conj(b)C^2 is the within-triplet axis-exchange reflection order parameter: C3 is preserved for all delta, transpositions send delta to -delta, and generic nonzero sin(delta) lifts the S3 degeneracy while preserving C3."
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": "Finite-linear-algebra claim that for H(a,b)=aI+bC+conj(b)C^2, C3 is preserved for all delta, transpositions send delta to -delta, and generic sin(delta)!=0 breaks axis-exchange parity while preserving C3 and lifting the S3 degeneracy."
         },
         "dep_claim_type": {
           "minimal_axioms": "meta",
@@ -16984,26 +16984,26 @@
           "minimal_axioms",
           "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
         ],
-        "load_bearing_score": 0.0,
+        "load_bearing_score": 13.557,
         "runner_hash": "63a27ba5f79c23f06ab1b2253206de11ecbc56462bd567a713d23341a93a0465",
-        "transitive_descendants": 0
+        "transitive_descendants": 752
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "beauvoir-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-z-n-equivariant-spectral-asymmetry",
-      "auditor_confidence": "high",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260603T005144Z-axiom_first_z_n_equivari",
+      "auditor_confidence": "judicial",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": true,
-      "chain_closure_explanation": "The bounded finite algebra closes from spectral decomposition of a finite cyclic unitary action plus exact C3 cyclotomic arithmetic. The one-hop C3 dependency supplies only bounded support for the weight pattern, not a physical identification.",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The finite eta trace and N=3 cyclotomic arithmetic close as class-A algebra. The source note also states a broader Z_N finiteness claim using only nonzero weights, but that condition is insufficient for composite N because zeta_N^(k a_j)-1 can vanish when a_j is a zero divisor modulo N. The cheapest repair is to add an admissibility condition requiring k a_j not congruent to 0 mod N for all 1 <= k < N, or restrict to prime N/unit weights.",
       "claim_id": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-      "claim_scope": "Finite-dimensional/cyclotomic theorem only: eta_g(T) for finite H, unitary g with g^N=1, self-adjoint T commuting with g; zero-free path invariance; and exact evaluation L_3(1,2)=2/9 with repeated C3 weights giving 1/9. No continuum APS eta theorem, fixed-point formula, framework Dirac-operator realization of the denominator, or phenomenology authority.",
+      "claim_scope": "Finite-dimensional equivariant eta well-definedness/path invariance and the N=3 cyclotomic evaluations, with the general L_N finiteness statement requiring admissible weights.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-06-02T17:34:37.711804+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-06-03T00:51:45.044103+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -17018,8 +17018,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-03T00:50:43.170227+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260603-004747-de0526ab-axiom_first_z_n_equivari",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional equivariant eta well-definedness/path invariance and the cyclotomic local sum evaluation, especially L_3(1,2)=2/9 and repeated-weight alternatives.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-03T00:51:45.044103+00:00",
+          "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260603T005144Z-axiom_first_z_n_equivari",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional equivariant eta well-definedness/path invariance and the N=3 cyclotomic evaluations, with the general L_N finiteness statement requiring admissible weights.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It accepted the general nonzero-weight finiteness argument without checking composite N zero-divisor cases.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The finite eta trace and N=3 cyclotomic arithmetic close as class-A algebra. The source note also states a broader Z_N finiteness claim using only nonzero weights, but that condition is insufficient for composite N because zeta_N^(k a_j)-1 can vanish when a_j is a zero divisor modulo N. The cheapest repair is to add an admissibility condition requiring k a_j not congruent to 0 mod N for all 1 <= k < N, or restrict to prime N/unit weights.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -17027,19 +17055,19 @@
         "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
       ],
       "direct_in_degree": 8,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": "judicial_review",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 13.557,
-      "load_bearing_step": "Decompose H into g-character subspaces, so eta_g is a Z[zeta_N]-valued signed character trace. Along a zero-free g-commuting Hermitian path, each character-sector signature is constant. For N=3, in Q[omega]/(omega^2+omega+1), (omega-1)(omega^2-1)=3 and omega^4=omega, hence L_3(1,2)=(1/3)(1/3+1/3)=2/9.",
+      "load_bearing_step": "For N=3, (omega-1)(omega^2-1)=3 and omega^4=omega, so L_3(1,2)=(1/3)(1/3+1/3)=2/9.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "6c1ef488ecfdf777c993024f1c02671ff9dbc69290d3bed43f1894bb809bcc9c",
       "note_path": "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=beauvoir-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-z-n-equivariant-spectral-asymmetry, family=codex-gpt-5.5, independence=fresh_context) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "scope_too_broad: add an admissible-weight condition or restrict the theorem to the N=3/unit-weight case, then re-audit.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -17055,7 +17083,7 @@
       "runner_path": "scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py",
       "title": "Finite Z_N Spectral-Asymmetry Weight-Sum Theorem (Bounded)",
       "transitive_descendants": 752,
-      "verdict_rationale": "Clean only at finite-dimensional/cyclotomic scope. Independent check: because g is unitary of finite order and commutes with T, each nonzero T-eigenspace is g-invariant and diagonalizes into Nth-root characters, so eta_g is a finite Z[zeta_N]-valued signed trace. Along a zero-free g-commuting Hermitian path, the weighted finite signature cannot change. For the C3 local weight sum, (omega-1)(omega^2-1)=3 and omega^4=omega in Q[omega]/(omega^2+omega+1), giving L_3(1,2)=2/9 and repeated weights (1,1),(2,2)=1/9. The runner cache is SHA-pinned and reports PASS=30 FAIL=0. This verdict does not grant continuum APS, fixed-point formula, framework Dirac-operator denominator realization, Brannen/Koide/mass/phenomenology, empirical/tuned selector, or downstream status-promotion authority."
+      "verdict_rationale": "Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'A'). Representative rationale: The finite eta trace and N=3 cyclotomic arithmetic close as class-A algebra. The source note also states a broader Z_N finiteness claim using only nonzero weights, but that condition is insufficient for composite N because zeta_N^(k a_j)-1 can vanish when a_j is a zero divisor modulo N. The cheapest repair is to add an admissibility condition requiring k a_j not congruent to 0 mod N for all 1 <= k < N, or restrict to prime N/unit weights."
     },
     "axiom_reduction_note": {
       "audit_date": null,
@@ -205920,11 +205948,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 15.06,
+      "load_bearing_score": 12.06,
       "load_bearing_step": "A transposition sends C to C^2 and therefore conjugates b, so tau H(delta) tau\u2020 = H(-delta), with transposition invariance iff sin(delta)=0.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "e69dad7ae966d059deed4fa6d36cf809a3b2c84efc0bd4c9b8674046c9dfdad8",
       "note_path": "docs/NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md",
       "notes_for_re_audit_if_any": "",

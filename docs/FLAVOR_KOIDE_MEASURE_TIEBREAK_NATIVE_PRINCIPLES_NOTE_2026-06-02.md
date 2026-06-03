@@ -5,6 +5,24 @@
 **Status authority:** independent audit lane only. This note adds no axiom and no import, and sets no audit outcome. It is a /tmp deliverable from a single-angle attack; not landed.
 **Runner:** `flavor_koide_measure_tiebreak_native_principles.py` (SCORECARD PASS=38 FAIL=0, venv-verified).
 
+## Framing correction (2026-06-02 — supersedes any exclusion language below)
+
+`Q=1` and `Q=2/3` are **not competitors**; they are different operator classes that
+**coexist** on the family `Q = 1/3 + (2/3)·r`, `r ∈ [0,1]`. Per retained
+`koide_anticommuting_operator_derivation_theorem_note_2026-05-10`: the **non-chiral**
+(circulant / tracial-default) mass operator sits at `r=1` → `Q=1`; the **chiral**
+operator (mass anticommutes with `Γ_χ`) sits at `r=1/2` → `Q=2/3`. The charged leptons
+are the **chiral (Dirac) sector**.
+
+Therefore `r=1/2` is fixed by a **sector label (chirality)**, not by a measure /
+positivity / modular extremum. This note's finding — that the derived **tracial**
+reference induces `(1,2)` → `Q=1` — characterizes the **non-chiral complement sector**;
+it is the *expected* result and is **NOT evidence against `Q=2/3`**. The task is
+sector-*identification* (source the chirality), not breaking the measure tie "in favor
+of" `Q=2/3`. The note's value is the precise statement that `Q=2/3`'s selector is **not**
+recoverable from any tested measure/positivity principle — so it must come from the
+chirality source, and the charged-lepton sector is correctly the *non-tracial* one.
+
 ## Question (the angle)
 
 The charged-lepton Koide value reduces (retained
@@ -98,11 +116,17 @@ note avoids **both**:
   contradicted — this note does not rank the measures either; it locates which
   one the *native reference state* induces, and shows it is the one giving Q=1.
 
-So the honest verdict is a **negative for the observed value**: the native
-positivity/normalization/modular structure does not deliver `Q=2/3`. If anything
-it is mildly evidence *against* `Q=2/3` being native-forced, since the framework's
-own derived reference lands on `Q=1`. The observed value sits on a *non-tracial*
-state that the tested principles neither forbid nor supply.
+So the honest verdict is a **sector-localization** (NOT a negative for the observed
+value): the native positivity/normalization/modular structure places the framework's
+*derived tracial reference* on `(1,2)` → `Q=1` — i.e. the **non-chiral / democratic
+complement sector**. This is **not** evidence against `Q=2/3`: by retained
+`koide_anticommuting_operator_derivation_theorem_note_2026-05-10`, `Q=2/3` is the
+value of the **chiral** operator class (mass anticommutes with `Γ_χ`), a *different,
+coexisting* sector on the same family `Q = 1/3 + (2/3)·r`. The charged leptons are
+that chiral sector, so they are *expected* to sit on a **non-tracial (chiral)** state
+rather than on the tracial reference. The tested measure/positivity principles neither
+forbid nor supply that state because its selector is **chirality**, not a measure
+extremum — which is exactly what this note establishes (see Framing correction at top).
 
 ## Derive-vs-posit ledger
 

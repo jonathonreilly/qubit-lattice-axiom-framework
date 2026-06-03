@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1172 |
+| unaudited | 1171 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 986 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 101 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1411 |
+| `unaudited` | 1410 |
 
 | claim_type | count |
 |---|---:|
@@ -1181,6 +1181,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
@@ -8713,6 +8714,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The exact wall is {q*pi : q in Q} cap Q = {0}, so a nonzero pure rational such as 2/9 is not supplied as a literal radian by the listed finite periodic phase sources; finite Wilson/root-of-unity escape routes remain q*pi as well.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope of the listed finite periodic phase sources and finite Wilson constructions, the chain closes by exact rational-pi arithmetic and the irrationality/transcendence wall for pi. The note explicitly does not claim Koide closure, P_A1 retention, or a no-go against future nonlisted bridge theorems.
 - **rationale:** The note's retained claim is negative and carefully bounded: periodic phase sources give rational multiples of pi, while the Brannen selected-line target is the pure rational 2/9 used as radians. The cached runner exits 0 with 36/36 PASS checks and verifies the finite-source, rational-witness, finite-Wilson, and A1-route-elimination arithmetic without promoting the missing Type-B-to-radian map. No one-hop dependencies are listed for the claim, and the source note's boundary language prevents the result from being overstated as charged-lepton Koide closure.
+- **auditor confidence:** high
+
+### `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01`
+
+- **Note:** [`KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md`](../../docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 3D C3 algebraic reconciliation of eigenvector vs eigenvalue Koide readouts for Gamma_chi=(2/3)J-I; no physical charged-lepton readout selector audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-041522-0b721aab-koide_anticommuting_eige`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The apparent conflict is a readout-category error: the anticommuting route reads Q=2/3 from nonzero-eigenvalue eigenvector components, while the eigenvalue readout of a nonzero 3D anticommuting H has zero spectral sum and the circulant route reads Q=2/3 from eigenvalues at r=1/2.  _(class `A`)_
+- **chain closes:** True — The core Koide reconciliation follows from the retained anticommuting eigenvector theorem, the retained circulant algebraic theorem, and finite 3D spectral algebra. The anticommuting eigenvalue readout and anticommuting eigenvector readout are different objects, so the stated contradiction does not follow.
+- **rationale:** The runner source performs actual finite matrix checks for Gamma_chi, a constructed anticommuting H, and the circulant eigenvalue ratio; those checks support the core readout-category reconciliation. However, the strict formula inventory catches a false sign in the cited CPT authority's R2 corollary: from T D T = D for real D, an eigenpair (lambda, v) maps under complex conjugation to eigenvalue lambda^*, not -lambda^*; for lambda = i mu this is -i mu, not the same mu. Because the source note names that authority as load-bearing, the packet cannot receive audited_clean until the cited authority is repaired or removed from this claim's load-bearing list.
+- **open / conditional deps cited:**
+  - `CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `koide_anticommuting_operator_derivation_theorem_note_2026-05-10`

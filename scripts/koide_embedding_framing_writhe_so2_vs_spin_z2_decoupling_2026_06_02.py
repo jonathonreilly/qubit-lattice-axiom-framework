@@ -70,34 +70,45 @@ def boundary2(c1,c2):
         for vert,edge,sgn in ((b,f,1),(a,f,-1),(d_,e,-1),(c_,e,1)): M[idx[(vert,edge)],j]+=sgn
     return M
 def smith(A):
-    A=A.copy().applyfunc(lambda x:sympy.Integer(int(x))); m,n=A.shape
-    U=sympy.eye(m); Vv=sympy.eye(n); t=0
+    # Fast integer Smith normal form (numpy int64 backend, identical min-abs-pivot
+    # algorithm to the sympy version it replaces). Tracks U^{-1} directly via the
+    # inverse elementary op on each step, avoiding a slow sympy U.inv() on a large
+    # unimodular matrix. Returns (D,U,Vv,Uinv) as sympy matrices so every downstream
+    # consumer (D[i,i], U*target, Uinv[:,i]) is byte-for-byte unchanged. Min-abs
+    # pivoting bounds intermediate growth; a passing run certifies no int64 overflow
+    # (any overflow would corrupt the invariant factors and fail the torsion checks).
+    M=np.array(A.tolist(),dtype=np.int64); m,n=M.shape
+    U=np.eye(m,dtype=np.int64); Vv=np.eye(n,dtype=np.int64); Ui=np.eye(m,dtype=np.int64)
+    t=0
     while t<min(m,n):
-        piv=None;best=None
-        for i in range(t,m):
-            for j in range(t,n):
-                if A[i,j]!=0:
-                    v=abs(A[i,j])
-                    if best is None or v<best: best=v;piv=(i,j)
-        if piv is None: break
-        pi,pj=piv
-        if pi!=t: A.row_swap(t,pi);U.row_swap(t,pi)
-        if pj!=t: A.col_swap(t,pj);Vv.col_swap(t,pj)
+        nz=np.argwhere(M[t:,t:]!=0)
+        if len(nz)==0: break
+        bi,bj=min(((int(i),int(j)) for i,j in nz),key=lambda ij:abs(int(M[t+ij[0],t+ij[1]])))
+        pi,pj=t+bi,t+bj
+        if pi!=t:
+            M[[t,pi]]=M[[pi,t]]; U[[t,pi]]=U[[pi,t]]; Ui[:,[t,pi]]=Ui[:,[pi,t]]
+        if pj!=t:
+            M[:,[t,pj]]=M[:,[pj,t]]; Vv[:,[t,pj]]=Vv[:,[pj,t]]
         ch=True
         while ch:
             ch=False
             for i in range(t+1,m):
-                if A[i,t]!=0:
-                    q=A[i,t]//A[t,t];A[i,:]=A[i,:]-q*A[t,:];U[i,:]=U[i,:]-q*U[t,:]
-                    if A[i,t]!=0:A.row_swap(t,i);U.row_swap(t,i);ch=True
+                if M[i,t]!=0:
+                    q=int(M[i,t])//int(M[t,t])
+                    M[i,:]-=q*M[t,:]; U[i,:]-=q*U[t,:]; Ui[:,t]+=q*Ui[:,i]
+                    if M[i,t]!=0:
+                        M[[t,i]]=M[[i,t]]; U[[t,i]]=U[[i,t]]; Ui[:,[t,i]]=Ui[:,[i,t]]; ch=True
             for j in range(t+1,n):
-                if A[t,j]!=0:
-                    q=A[t,j]//A[t,t];A[:,j]=A[:,j]-q*A[:,t];Vv[:,j]=Vv[:,j]-q*Vv[:,t]
-                    if A[t,j]!=0:A.col_swap(t,j);Vv.col_swap(t,j);ch=True
+                if M[t,j]!=0:
+                    q=int(M[t,j])//int(M[t,t])
+                    M[:,j]-=q*M[:,t]; Vv[:,j]-=q*Vv[:,t]
+                    if M[t,j]!=0:
+                        M[:,[t,j]]=M[:,[j,t]]; Vv[:,[t,j]]=Vv[:,[j,t]]; ch=True
         t+=1
-    return A,U,Vv
+    tos=lambda X:sympy.Matrix(X.tolist())
+    return tos(M),tos(U),tos(Vv),tos(Ui)
 def torsion_gen(d2,order=2):
-    D,U,Vv=smith(d2); Uinv=U.inv(); g=[]
+    D,U,Vv,Uinv=smith(d2); g=[]
     for i in range(min(D.shape)):
         if abs(int(D[i,i]))==order: g.append(Uinv[:,i])
     return g,D,U

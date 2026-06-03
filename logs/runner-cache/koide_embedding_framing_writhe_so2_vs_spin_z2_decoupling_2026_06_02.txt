@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py
-runner_sha256: 1ab309792aba99e5d9c47404d1644f8274ea005e044bf4eb0f98e819dc8da029
+runner_sha256: c2f22c2c6ca72380f9b32ef4d18f8ebc1f3af012e90b4e2404c8bc13bf9a8f29
 timeout_sec: 120
-exit_code: -9
-elapsed_sec: 120.01
-status: timeout
+exit_code: 0
+elapsed_sec: 4.42
+status: ok
 ----- stdout -----
 ========================================================================
 Obstruction I+II: writhe (Z-valued) framing vanishes on the 2-torsion swap
@@ -51,6 +51,9 @@ Obstruction IV: the SO(2)/U(1) framing CONNECTION route is closed too
 ========================================================================
 [PASS] K_{3,3}: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
 [PASS] K_5: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
+[PASS] Z^3 slab 3x3x2: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
+
+SCORECARD: PASS=24 FAIL=0
 
 ----- stderr -----
 

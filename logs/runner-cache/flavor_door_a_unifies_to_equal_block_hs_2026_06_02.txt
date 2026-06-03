@@ -1,0 +1,12 @@
+[PASS] mass-block HS norm = 3 a^2 and hopping-block HS norm = 6 |b|^2 (geometric trace-counts)
+       ||mass||^2=3.0000=3a^2, ||hop||^2=2.9400=6|b|^2
+[PASS] equal-block-HS-norm 3a^2=6|b|^2  <=>  r=1/2  <=>  Q=2/3
+       r=0.4999999999999999, Q=0.666667
+[PASS] dimension/Plancherel reading (equal HS power per coefficient) => r=1 => Q=1
+       r=1, Q=1.000000
+[PASS] the binary granularity choice lives on the one exact line Q=1/3+(2/3)r (r=0,1/2,1 -> 1/3,2/3,1)
+
+SCORECARD PASS=4 FAIL=0
+FINDING: every Door-A action condition reaching r=1/2 reduces to equal-block-HS-norm
+3a^2=6|b|^2 (= AC_phi_lambda, native, not Wilson-dependent); the dimension/Plancherel reading
+gives r=1. Door A = the measure axis, same wall, new direction. Asserts no audit status.

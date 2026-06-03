@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1178 |
+| unaudited | 1177 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 94 |
+| ~~audited_conditional~~ | 95 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 986 |
-| `audited_conditional` | 94 |
+| `audited_conditional` | 95 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1417 |
+| `unaudited` | 1416 |
 
 | claim_type | count |
 |---|---:|
@@ -1170,6 +1170,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `grav_decoherence_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5901,6 +5902,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner does perform finite algebraic checks for the CAR/CACR spectra, the constructed spectator taste block, the statistics-blind kernel identity, two-site statistics agnosticism, and the Pauli Casimir. Those checks support the stated partial picture, but they do not derive R or the boost-sector Poincare representation from the framework baseline. The note explicitly says R is unaudited/partial and currently presupposes the antiparticle sign structure it must produce, so the forcing claim remains conditional rather than closed.
 - **open / conditional deps cited:**
   - `FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION.md`
+- **auditor confidence:** high
+
+### `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31`
+
+- **Note:** [`FLAVOR_SUBSTRATE_BRIDGE_FAILS_SOURCE_OPERATOR_ASYMMETRY_NOTE_2026-05-31.md`](../../docs/FLAVOR_SUBSTRATE_BRIDGE_FAILS_SOURCE_OPERATOR_ASYMMETRY_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the supplied 3x3 source/operator-locality algebra showing that the split circulant operator has signed Q=2/3 but its onsite-local projection is degenerate with Q=1/3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-035320-258572b2-flavor_substrate_bridge_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying the same onsite-locality/diagonal projection to the mass operator H=aI+bC+bbar C^2 collapses it to a scalar, giving a degenerate spectrum and Q=1/3 rather than Q=2/3.  _(class `A`)_
+- **chain closes:** False — The operator-collapse algebra closes, but the full bridge-failure claim imports unsupported context. In particular, the source-side implication E_loc(I+zZ)->Q=2/3 and the B1 assertions about single-axiom notes require authorities or a carrier/readout bridge not present in the packet.
+- **rationale:** The runner genuinely computes the B3/B4 matrix checks: S=I gives degenerate Q=1/3, the split circulant H gives signed Q=2/3, and Diag(H)=I gives Q=1/3. But B1 is hard-coded as true rather than verified from supplied authorities, and the source-descent statement E_loc(X)=(Tr X/3)I on S=I+zZ needs an extra carrier/readout bridge to yield Q=2/3. Under the runner's displayed Z, E_loc(I+zZ)=(1-z/3)I is scalar, so the packet does not by itself close the broader source/operator-asymmetry and substrate-necessity conclusion.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

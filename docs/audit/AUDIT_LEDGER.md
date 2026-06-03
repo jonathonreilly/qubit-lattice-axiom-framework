@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 647 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1167 |
+| unaudited | 1166 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 991 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 101 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1406 |
+| `unaudited` | 1405 |
 
 | claim_type | count |
 |---|---:|
@@ -1149,6 +1149,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5441,6 +5442,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner does real finite computations for the corner characters, on-site blindness, momentum-projector separation, Gamma_5 sum, naive zero locus, Wilson staircase, and L_3(1,2)=2/9; these displayed arithmetic checks are internally consistent. However, the full source note explicitly relies on the staggered/Kawamoto-Smit single-mode Grassmann plus {epsilon,D}=0 operator class and on the claim that this is the same chirality gate used in generation-ID/Koide work, and those authorities are not present in the restricted packet. The D1 line only substitutes values into Q=1/3+(2/3)r; it does not derive that formula from F=aI+b(J-I) or from a supplied definition of Q. Thus the packet supports the momentum-carrier type and several counterfactual checks, but not the claimed locus consolidation as a closed derivation.
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE.md`
+- **auditor confidence:** high
+
+### `flavor_carrier_not_derived_two_inputs_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md`](../../docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded negative that the finite-corner character route does not derive the charged-lepton flavor carrier and that carrier/factor selection plus r=1/2/basepoint remain separate inputs.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-103307-8a22657c-flavor_carrier_not_deriv`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained three_generation_observable theorems prove an irreducible M3(C) algebra carrier but keep the physical species-to-flavor identification out of scope, while equivariance leaves r free, so carrier/factor selection and r=1/2 basepoint selection remain separate inputs.  _(class `B`)_
+- **chain closes:** False — The A1-A3 arithmetic closes within the packet: omega+omega^2 = -1 and L3(1,2) = 2/9 from the two-factor denominator. The broader two-input conclusion does not close because the species-to-flavor out-of-scope claim and the r=1/2 section-family authority are imported from statuses/notes not fully included in the restricted packet, and the only full cited authority explicitly delegates the species semantics.
+- **rationale:** The runner genuinely checks the finite-character arithmetic and C3-equivariant form freedom, but its D1 independence conclusion is asserted rather than derived from included authorities. The only full cited authority is retained_no_go, but it explicitly says triplet physical-species semantics are open/delegated, so retained status does not close the carrier identification. Formula inventory also finds the shorthand 1/(omega^k-1) = det(1-g)^-1 false as written; the determinant inverse is the product 1/((omega^k-1)(omega^(2k)-1)), even though the displayed L3 sum itself evaluates to 2/9. Thus the bare-character refutation is supported, but the broader two-input bounded theorem remains conditional.
+- **open / conditional deps cited:**
+  - `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
 - **auditor confidence:** high
 
 ### `flavor_center_trace_closed_capstone_note_2026-05-30`

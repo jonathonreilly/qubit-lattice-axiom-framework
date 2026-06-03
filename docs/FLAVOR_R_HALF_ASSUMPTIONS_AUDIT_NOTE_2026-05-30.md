@@ -74,3 +74,10 @@ structural (category-mismatch) reason. The single remaining derivation route is 
 native matter β-function's fixed-point structure — which requires the bridge-gap action.
 No false closure. (Stale-label note: `charged_lepton_direct_ward_free_yukawa` is
 *unaudited*, not retained-surface; B3 does not load-bear on it.)
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [flavor_r_half_stable_under_thermalizing_arrow_2026-06-02](FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md)
+- [charged_lepton_koide_value_full_chain_of_custody_2026-06-02](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)

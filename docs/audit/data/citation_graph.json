@@ -10289,6 +10289,18 @@
       "to": "claude_complex_action_grown_companion_note"
     },
     {
+      "from": "flavor_carrier_delegation_terminus_local_blind_2026-05-31",
+      "to": "three_generation_chirality_boundary_note"
+    },
+    {
+      "from": "flavor_carrier_delegation_terminus_local_blind_2026-05-31",
+      "to": "continuum_identification_note"
+    },
+    {
+      "from": "flavor_carrier_not_derived_two_inputs_2026-05-31",
+      "to": "physical_lattice_necessity_note"
+    },
+    {
       "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
       "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
     },
@@ -10331,6 +10343,14 @@
     {
       "from": "flavor_frontier_map_form_vs_value_note_2026-05-29",
       "to": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
+    },
+    {
+      "from": "flavor_r_half_assumptions_audit_note_2026-05-30",
+      "to": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
+    },
+    {
+      "from": "flavor_r_half_assumptions_audit_note_2026-05-30",
+      "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
     },
     {
       "from": "four_d_distance_width_probe_note",
@@ -16629,6 +16649,18 @@
       "to": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
     },
     {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
+      "to": "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
+    },
+    {
       "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
       "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
     },
@@ -16647,6 +16679,14 @@
     {
       "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
       "to": "fermion_parity_z2_grading_theorem_note_2026-05-02"
+    },
+    {
+      "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
     },
     {
       "from": "koide_microscopic_scalar_selector_target_note_2026-04-18",
@@ -56948,9 +56988,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "three_generation_chirality_boundary_note",
+        "continuum_identification_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "35092a12ba268361dfb920c1b75a94007db81a0ae2c97c65eb0f9ac1cc1d3040",
+      "note_hash": "9309b0c71f8b48d8ae30fa44554479d0200520376ecf22cc7cbfa8df67ef3c30",
       "path": "docs/FLAVOR_CARRIER_DELEGATION_TERMINUS_LOCAL_BLIND_2026-05-31.md",
       "runner_path": "scripts/flavor_carrier_delegation_terminus_local_blind_2026_05_31.py",
       "title": "Flavor \u2014 the carrier-identification delegation chain terminates in non-retained notes; its one candidate mechanism (A2 = tensor-factorization carrier) is generation-blind \u2192 a structurally-isolated open input"
@@ -56972,9 +57015,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "physical_lattice_necessity_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "6838d14c925059c9793548e9d5633f346d1e5f1205031c3fbab00766588a7e50",
+      "note_hash": "cfb3c316ae4a17ca7ceaa57039041c723f14aa2888e270808e94bd138d22d53d",
       "path": "docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md",
       "runner_path": "scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py",
       "title": "Flavor \u2014 carrier-derivation attempt FAILS: 2/9 is an index/eta object (not a finite-rep character), the retained theorems bracket species\u2192flavor as out-of-scope; TWO independent flavor inputs remain"
@@ -57308,9 +57353,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "b85405cdd13b563400d840e90005a51e9053f282da27e241097efd1f5545dbae",
+      "note_hash": "19fd7e0770fe040011067f3a6cfbe67d95cd017fcec0a1e50d5022c9ba1033d2",
       "path": "docs/FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_r_half_assumptions_audit_2026_05_30.py",
       "title": "Flavor \u2014 assumptions audit on r=\u00bd: a distinguished stationary point (see banner) (0/4 live assumptions fell)"
@@ -65193,10 +65241,13 @@
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+        "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
+        "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ecd9ff5b7d1974cdbb9134dc0271659cc6f329d7a0710a526053a234feeb1bd5",
+      "note_hash": "a89f23b14707fbc1fbea4227ceb47ec3f8ff05de846666499902d148707517ad",
       "path": "docs/KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md",
       "runner_path": "scripts/frontier_koide_matter_attachment_graded_statistics_gate.py",
       "title": "Matter-Attachment Reduces to the Cross-Site Graded-Statistics Gate"
@@ -65211,10 +65262,12 @@
         "per_site_su2_spin_half_theorem_note_2026-05-02",
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
         "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02"
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8237c13bdb3322ee63fca2ce3be4d996e08da96187e933c5714387bd0031f7c3",
+      "note_hash": "a2ac18aade137f71653a8aa420d90b41306131e1147dafcb0da939ba501efa7c",
       "path": "docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
       "runner_path": "scripts/frontier_koide_matter_attachment_reduces_to_ks.py",
       "title": "Matter-Attachment Reduces to the Kawamoto-Smit Audit"
@@ -90978,9 +91031,7 @@
     "flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30",
     "flavor_block_count_native_via_jcs_note_2026-05-30",
     "flavor_both_readings_charge_selects_note_2026-05-30",
-    "flavor_carrier_delegation_terminus_local_blind_2026-05-31",
     "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
-    "flavor_carrier_not_derived_two_inputs_2026-05-31",
     "flavor_center_trace_closed_capstone_note_2026-05-30",
     "flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31",
     "flavor_detr_default_full_exercise_note_2026-05-30",
@@ -91006,7 +91057,6 @@
     "flavor_operator_realization_local_density_2026-05-31",
     "flavor_q1_default_rests_on_prr_note_2026-05-30",
     "flavor_qubit_berry_holonomy_probe_note_2026-05-30",
-    "flavor_r_half_assumptions_audit_note_2026-05-30",
     "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
     "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
     "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
@@ -91626,10 +91676,10 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10421,
-    "leaf_count": 900,
+    "edge_count": 10431,
+    "leaf_count": 898,
     "node_count": 2761,
-    "root_count": 942,
+    "root_count": 939,
     "runners_with_path": 2346
   }
 }

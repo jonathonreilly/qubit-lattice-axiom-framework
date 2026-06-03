@@ -76,3 +76,10 @@ retained inventory. That is the precise shape of what a future carrier derivatio
 - `three_generation_observable_theorem` (+ `_m3c_burnside`) — **retained** (species→flavor explicitly out-of-scope).
 - `lepton_brannen_bae_delta_two_ninths` — **open_gate** (carrier input I); `koide_q_delta_residual_cohomology_obstruction` — **retained_no_go** (basepoint input II).
 - Does **NOT** load-bear on `closure_c_staggered_dirac_gate` or `koide_phase_aps_eta_parity_route` (both **unaudited**).
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [three_generation_chirality_boundary_note](THREE_GENERATION_CHIRALITY_BOUNDARY_NOTE.md)
+- [continuum_identification_note](CONTINUUM_IDENTIFICATION_NOTE.md)

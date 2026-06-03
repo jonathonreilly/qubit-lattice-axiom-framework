@@ -85,3 +85,9 @@ from upstream structure not exercised here (e.g. the substrate-necessity argumen
 - `koide_z3_equivariant_anticommuting_no_go`, `axiom_first_z_n_equivariant_spectral_asymmetry_narrow` — **retained_bounded**.
 - `PHYSICAL_LATTICE_NECESSITY_NOTE` — **retained_no_go** (where the species identification is delegated; untouched here).
 - Does **NOT** load-bear on `closure_c_staggered_dirac_gate` or `koide_phase_aps_eta_parity_route` (both **unaudited**).
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [physical_lattice_necessity_note](PHYSICAL_LATTICE_NECESSITY_NOTE.md)

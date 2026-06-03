@@ -61,8 +61,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 10 |
-| `audited_clean` | 974 |
+| `audit_in_progress` | 9 |
+| `audited_clean` | 975 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
@@ -140,7 +140,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -745,6 +744,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -10830,6 +10830,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Combining the formal Dirac parity table with the abstract derivative sign character gives total weight (-1)^N for every enumerated index assignment in the four named structures, with odd-N/even-N projection vanishings accordingly.  _(class `A`)_
 - **chain closes:** True — The chain closes for the bounded formal-sign scope because the derivative sign character is an explicit formal input and the remaining result is finite Dirac-matrix/index algebra. There are no one-hop dependencies, and the note explicitly excludes the stronger lattice-action and representative-level claims.
 - **rationale:** The runner hash matches the cache and the completed output reports PASS=164 FAIL=0; it computes the formal gamma^0 conjugation, derivative sign product, 144 enumerated structure weights, and odd/even projection vanishings rather than merely checking prose scope. The source firewall checks are not the load-bearing theorem, but they confirm the note excludes action-level LV, concrete lattice derivative representatives, CPT import, and new-axiom claims. No-go discipline N1-N8 passes only after this strict collapse of scope: the retained content is the finite formal sign identity, not a lattice-action no-go or exclusion theorem. No hidden dependency, stale runner number, external comparator, or definition-as-physical-derivation remains inside that bounded scope.
+- **auditor confidence:** high
+
+### `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`PARITY_VIOLATION_DOES_NOT_REACH_GENERATION_TRIPLET_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/PARITY_VIOLATION_DOES_NOT_REACH_GENERATION_TRIPLET_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite 8-corner support claim that the retained epsilon/parity operations do not supply a within-hw=1 generation-triplet S3-breaking operator.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-003928-dc5cbaf8-parity_violation_does_no`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The chiral epsilon shift flips every BZ-corner coordinate, so it maps the hw=1 triplet entirely to the disjoint hw=2 triplet, while spatial inversion fixes the hw=1 corners and only axis permutations act nontrivially within hw=1.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade inputs supply the relevant CPT C/P operations and the S3 generation-degeneracy constraint. The finite corner algebra then closes the route-local exclusion: epsilon leaves hw=1, inversion is trivial on hw=1, and axis-permutation S3 is distinct.
+- **rationale:** The load-bearing step is a direct algebraic check on the eight BZ corners, not a definition substitution or numerical comparator. The runner actually computes the corner images, inversion action, axis-permutation action, and operation distinctness, with PASS=7 FAIL=0. The conclusion is properly scoped as a route exclusion: it does not claim no generation breaking exists, only that the retained epsilon/parity operation does not provide the needed within-triplet breaking.
 - **auditor confidence:** high
 
 ### `pauli_group_order_theorem_note_2026-05-02`

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 312,
+    "critical": 311,
     "high": 248,
     "leaf": 372,
     "medium": 303
@@ -913,32 +913,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-      "claim_scope": "Finite-corner audit that the retained epsilon/chiral shift and spatial-inversion parity operations do not themselves supply a within-hw=1 `S_3`-breaking operator for the generation triplet.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "cpt_exact_note",
-        "generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23",
-        "s3_mass_matrix_no_go_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.576,
-      "note_path": "docs/PARITY_VIOLATION_DOES_NOT_REACH_GENERATION_TRIPLET_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_parity_violation_vs_generation_triplet_discriminator.py",
-      "transitive_descendants": 762
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -38154,6 +38128,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 82,
-  "total_pending": 1235
+  "ready_count": 81,
+  "total_pending": 1234
 }

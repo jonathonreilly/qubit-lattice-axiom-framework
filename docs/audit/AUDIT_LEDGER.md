@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 647 |
+| **retained_bounded** | 648 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1166 |
+| unaudited | 1165 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 991 |
+| `audited_clean` | 992 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1405 |
+| `unaudited` | 1404 |
 
 | claim_type | count |
 |---|---:|
@@ -599,6 +599,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `koide_pointer_record_degeneracy_d3_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -9292,6 +9293,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The retained unpointed tests are invariant along the source, CP1-line, and endpoint torsor fibres while the open charged-lepton readouts change, so origin-free retained data do not force the simultaneous closing representative.  _(class `A`)_
 - **chain closes:** True — The note scopes the result as an atlas no-go, not a positive Koide closure. The algebraic fibre checks exhibit invariant unpointed data together with changed readouts, so the claimed non-forcing result follows within that scoped atlas.
 - **rationale:** The runner completed from cache with 15/15 PASS lines and checks symbolic algebraic invariance/countermodel facts for the three residual freedoms. It does not hard-code a positive Koide closure; it explicitly reports that the dimensionless lane is not closed and that a physical source/boundary-origin law remains the next theorem. No one-hop dependencies are listed, so there is no open dependency chain in the restricted packet. Residual risk is limited to the note's scoped atlas premise, not to the internal no-go once that atlas is taken as the audited object.
+- **auditor confidence:** high
+
+### `koide_pointer_record_degeneracy_d3_note_2026-05-31`
+
+- **Note:** [`KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md`](../../docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C_3 regular-representation algebra for S=C+C^2, the conjugate pointer A=i(C-C^2), and the associated Koide block-weight comparison between atom-counting (1,1) and rank/Born weighting (1,2).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-103542-bcf4c585-koide_pointer_record_deg`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the C_3 regular representation, S=C+C^2=J-I has spectrum {+2,-1,-1} with rank split (1,2), so it defines exactly two sharp S-record atoms while leaving the measure on those atoms unselected.  _(class `A`)_
+- **chain closes:** True — The finite matrix identities close the two-outcome S-record degeneracy and pointer-relativity claims. The cited block-weight algebra then gives Q=2/3 for atom counting and Q=1 for rank weighting, while the note explicitly leaves the physical measure selector open.
+- **rationale:** The runner source actually constructs C, S, A, H, the projectors, and the two weighting comparisons rather than merely printing constants or importing a fitted premise. Independent formula checks confirm the displayed spectra, ranks, Q=(1+2r)/3, r=1/2 -> Q=2/3, r=1 -> Q=1, and the I/3 pushforward weights (1/3,2/3). The claim is correctly bounded: it proves the S-record degeneracy and the measure residual, not a physical derivation of atom-counting.
 - **auditor confidence:** high
 
 ### `koide_q23_block_weight_frontier_bounded_note_2026-05-29`

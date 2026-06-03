@@ -14,7 +14,7 @@ Approach:
   4. Report whether the earlier 8^9 estimate survives the link-graph
      analysis. In this runner it does not: the observed upper bound is
      29, which makes the two tested naive node-elimination heuristics exceed
-     the 4 GB memory budget by a large margin. This is not a certified
+     the 4 GiB memory budget by a large margin. This is not a certified
      treewidth lower bound and does not rule out all path optimizers.
 
 Forbidden imports: none (numpy + scipy.special only).
@@ -333,7 +333,7 @@ def driver() -> int:
     print(f"  Treewidth UPPER BOUND (min-degree): {max_clique_md - 1}")
     print(f"  Worst intermediate size: 8^{max_clique_md} = "
           f"{8**max_clique_md:,} entries = "
-          f"{8**max_clique_md * 16 / 1024**3:.2f} GB")
+          f"{8**max_clique_md * 16 / 1024**3:.2f} GiB")
     print()
 
     # ===== Section D: min-fill elimination order =====
@@ -345,25 +345,25 @@ def driver() -> int:
     print(f"  Treewidth UPPER BOUND (min-fill): {max_clique_mf - 1}")
     print(f"  Worst intermediate size: 8^{max_clique_mf} = "
           f"{8**max_clique_mf:,} entries = "
-          f"{8**max_clique_mf * 16 / 1024**3:.2f} GB")
+          f"{8**max_clique_mf * 16 / 1024**3:.2f} GiB")
     print()
 
     # ===== Section E: feasibility verdict =====
     print("--- Section E: feasibility verdict ---")
     print()
     print(f"  Memory budget:                   "
-          f"{MEMORY_LIMIT_BYTES / 1024**3:.1f} GB")
+          f"{MEMORY_LIMIT_BYTES / 1024**3:.1f} GiB")
     print(f"  Min-degree max intermediate:     "
-          f"{8**max_clique_md * 16 / 1024**3:.2f} GB")
+          f"{8**max_clique_md * 16 / 1024**3:.2f} GiB")
     print(f"  Min-fill max intermediate:       "
-          f"{8**max_clique_mf * 16 / 1024**3:.2f} GB")
+          f"{8**max_clique_mf * 16 / 1024**3:.2f} GiB")
     print()
     best_clique = min(max_clique_md, max_clique_mf)
     best_method = "min-degree" if max_clique_md <= max_clique_mf else "min-fill"
     best_intermediate_bytes = 8 ** best_clique * 16
     print(f"  Best heuristic: {best_method} with treewidth bound {best_clique - 1}")
     print(f"  Best max intermediate: 8^{best_clique} = "
-          f"{best_intermediate_bytes / 1024**3:.2f} GB")
+          f"{best_intermediate_bytes / 1024**3:.2f} GiB")
     print()
     if best_intermediate_bytes <= MEMORY_LIMIT_BYTES:
         print(f"  *** FEASIBLE *** Best heuristic gives intermediate "
@@ -373,16 +373,16 @@ def driver() -> int:
         pass_count += 1
     elif best_intermediate_bytes <= 16 * 1024**3:
         print(f"  MARGINAL: best heuristic gives "
-              f"{best_intermediate_bytes / 1024**3:.1f} GB intermediate, "
-              f"close to but exceeds 4 GB budget.")
+              f"{best_intermediate_bytes / 1024**3:.1f} GiB intermediate, "
+              f"close to but exceeds 4 GiB budget.")
         print(f"  Closure path: increase memory budget OR use better")
         print(f"  contraction-order algorithm (e.g., simulated annealing,")
         print(f"  branch-and-bound on small subnetworks).")
         support_count += 1
     else:
         print(f"  TESTED HEURISTICS EXCEED BUDGET: best tested heuristic gives "
-              f"{best_intermediate_bytes / 1024**3:.1f} GB intermediate, "
-              f"exceeds 4 GB budget by "
+              f"{best_intermediate_bytes / 1024**3:.1f} GiB intermediate, "
+              f"exceeds 4 GiB budget by "
               f"{best_intermediate_bytes / MEMORY_LIMIT_BYTES:.0f}×.")
         print(f"  Closure path: alternative methods needed:")
         print(f"    - tensor-train / matrix-product-state ansatz")
@@ -402,13 +402,13 @@ def driver() -> int:
           f"{n_edges} edges, degree stats {min(degrees)}-{max(degrees)}")
     print(f"  Min-degree treewidth bound: {max_clique_md - 1} "
           f"(intermediate 8^{max_clique_md} = "
-          f"{8**max_clique_md * 16 / 1024**3:.2f} GB)")
+          f"{8**max_clique_md * 16 / 1024**3:.2f} GiB)")
     print(f"  Min-fill treewidth bound:   {max_clique_mf - 1} "
           f"(intermediate 8^{max_clique_mf} = "
-          f"{8**max_clique_mf * 16 / 1024**3:.2f} GB)")
+          f"{8**max_clique_mf * 16 / 1024**3:.2f} GiB)")
     print(f"  Best heuristic intermediate: "
-          f"{best_intermediate_bytes / 1024**3:.2f} GB")
-    print(f"  Memory budget: 4.0 GB")
+          f"{best_intermediate_bytes / 1024**3:.2f} GiB")
+    print(f"  Memory budget: 4.0 GiB")
     if best_intermediate_bytes <= MEMORY_LIMIT_BYTES:
         print(f"  Verdict: FEASIBLE — implement contractor next")
     else:

@@ -11,8 +11,8 @@ effective status are set by the independent audit lane.
 ## 0. Headline
 
 PR #509 confirmed greedy contraction fails at step 82 with a 65 TB intermediate.
-PR #507 had estimated that **treewidth-based** ordering would give a 2 GB
-intermediate (`8^9`) for the L_s=3 PBC cube — fitting the 4 GB budget.
+PR #507 had estimated that **treewidth-based** ordering would give a 2 GiB
+intermediate (`8^9`) for the L_s=3 PBC cube -- fitting the 4 GiB budget.
 
 **This PR shows that estimate was wrong by roughly 19 orders of magnitude for
 the two implemented elimination heuristics.**
@@ -24,11 +24,11 @@ Computed elimination orders for the link adjacency graph (81 nodes,
 |---|---:|---:|
 | Min-degree | **29** | `8^30 = 1.2379 × 10^27` entries (`1.84 × 10^19` GiB) |
 | Min-fill | **29** | `8^30 = 1.2379 × 10^27` entries (`1.84 × 10^19` GiB) |
-| Memory budget | — | 4 GB |
+| Memory budget | — | 4 GiB |
 | Excess factor | — | `~ 4.6 × 10^18×` over budget |
 
 Both implemented standard heuristics return **treewidth upper bound 29**,
-giving intermediate sizes that exceed the 4 GB budget by roughly 19 orders of
+giving intermediate sizes that exceed the 4 GiB budget by roughly 19 orders of
 magnitude.
 
 ## 1. Why PR #507's estimate was wrong
@@ -44,14 +44,14 @@ The link adjacency graph is denser and has higher treewidth than the 3D lattice 
 
 ## 2. Why even truncation doesn't trivially help
 
-The `8^30 = 1.2 × 10^27` entries (~ `2 × 10^19` GB) figure is for **exact** contraction with full bond dimension 8. To make this fit the 4 GB budget would require:
+The `8^30 = 1.2 × 10^27` entries (~ `1.84 × 10^19` GiB) figure is for **exact** contraction with full bond dimension 8. To make this fit the 4 GiB budget would require:
 
 ```text
-truncation_dim^30 × 16 bytes ≤ 4 GB
-truncation_dim ≤ (4 × 10^9 / 16)^(1/30) ≈ 1.8
+truncation_dim^30 × 16 bytes ≤ 4 GiB = 4 × 2^30 bytes
+truncation_dim ≤ ((4 × 2^30) / 16)^(1/30) ≈ 1.91
 ```
 
-i.e., bond dimension ≤ 1, which is the trivial sector only. Even bond dimension 2 gives `2^30 × 16 = 16 GB`, still over budget.
+i.e., integer bond dimension ≤ 1, which is the trivial sector only. Even bond dimension 2 gives `2^30 × 16 bytes = 16 GiB`, still over budget.
 
 So truncation to small bond dimension would discard nearly all of the (1,1) sector content.
 
@@ -81,11 +81,11 @@ contraction (81 nodes, 324 edges, 8-regular). Both min-degree and
 min-fill elimination heuristics return treewidth upper bound **29**.
 
 The corresponding worst-case intermediate size for naive exact
-contraction is `8^30 ≈ 1.2 × 10^27` complex entries (~ `1.8 × 10^19` GB),
-exceeding the 4 GB budget by about `4.6 × 10^18`.
+contraction is `8^30 ≈ 1.2 × 10^27` complex entries (~ `1.84 × 10^19` GiB),
+exceeding the 4 GiB budget by about `4.6 × 10^18`.
 
 This empirically refutes PR #507's estimate that treewidth-based
-ordering would give a 2 GB intermediate for these two implemented standard
+ordering would give a 2 GiB intermediate for these two implemented standard
 heuristics. It does **not** prove a global treewidth lower bound or rule out
 all possible elimination/path-optimization strategies.
 
@@ -152,7 +152,7 @@ Claim type: `bounded_theorem`.
 Review boundary: the runner builds the L_s=3 PBC cube link adjacency
 graph and reports that min-degree and min-fill elimination heuristics
 both produce treewidth upper bound 29. That gives a naive exact
-node-elimination intermediate of order `8^30`, far beyond the 4 GB
+node-elimination intermediate of order `8^30`, far beyond the 4 GiB
 budget, and refutes the earlier `8^9` sizing estimate for those
 implemented heuristics. This note does not set an audit verdict, does not
 compute `<P>(beta=6)`, does not prove a treewidth lower bound, does not rule

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py
-runner_sha256: 0168b60a598724753bf885d35266114cce7ed9194b4f8092e2a577bec71529c6
+runner_sha256: 26b4581c932243e0555aaca8174471b366187be919b6561bf4b246f299cb22c3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -26,24 +26,24 @@ SU(3) Wigner Engine — L_s=3 PBC Cube Treewidth Analysis
   Elimination length: 81 (expected 81)
   Max clique size during elimination: 30
   Treewidth UPPER BOUND (min-degree): 29
-  Worst intermediate size: 8^30 = 1,237,940,039,285,380,274,899,124,224 entries = 18446744073709551616.00 GB
+  Worst intermediate size: 8^30 = 1,237,940,039,285,380,274,899,124,224 entries = 18446744073709551616.00 GiB
 
 --- Section D: min-fill elimination order ---
-  [0.03s] min-fill completed
+  [0.02s] min-fill completed
   Max clique size during elimination: 30
   Treewidth UPPER BOUND (min-fill): 29
-  Worst intermediate size: 8^30 = 1,237,940,039,285,380,274,899,124,224 entries = 18446744073709551616.00 GB
+  Worst intermediate size: 8^30 = 1,237,940,039,285,380,274,899,124,224 entries = 18446744073709551616.00 GiB
 
 --- Section E: feasibility verdict ---
 
-  Memory budget:                   4.0 GB
-  Min-degree max intermediate:     18446744073709551616.00 GB
-  Min-fill max intermediate:       18446744073709551616.00 GB
+  Memory budget:                   4.0 GiB
+  Min-degree max intermediate:     18446744073709551616.00 GiB
+  Min-fill max intermediate:       18446744073709551616.00 GiB
 
   Best heuristic: min-degree with treewidth bound 29
-  Best max intermediate: 8^30 = 18446744073709551616.00 GB
+  Best max intermediate: 8^30 = 18446744073709551616.00 GiB
 
-  TESTED HEURISTICS EXCEED BUDGET: best tested heuristic gives 18446744073709551616.0 GB intermediate, exceeds 4 GB budget by 4611686018427387904×.
+  TESTED HEURISTICS EXCEED BUDGET: best tested heuristic gives 18446744073709551616.0 GiB intermediate, exceeds 4 GiB budget by 4611686018427387904×.
   Closure path: alternative methods needed:
     - tensor-train / matrix-product-state ansatz
     - hierarchical tucker decomposition
@@ -55,10 +55,10 @@ SUMMARY: THEOREM PASS=2 SUPPORT=1 FAIL=0
 
 Headline:
   L_s=3 PBC cube link adjacency graph: 81 nodes, 324 edges, degree stats 8-8
-  Min-degree treewidth bound: 29 (intermediate 8^30 = 18446744073709551616.00 GB)
-  Min-fill treewidth bound:   29 (intermediate 8^30 = 18446744073709551616.00 GB)
-  Best heuristic intermediate: 18446744073709551616.00 GB
-  Memory budget: 4.0 GB
+  Min-degree treewidth bound: 29 (intermediate 8^30 = 18446744073709551616.00 GiB)
+  Min-fill treewidth bound:   29 (intermediate 8^30 = 18446744073709551616.00 GiB)
+  Best heuristic intermediate: 18446744073709551616.00 GiB
+  Memory budget: 4.0 GiB
   Verdict: TESTED HEURISTICS NEED BETTER ORDERING or alternative method
 
 ----- stderr -----

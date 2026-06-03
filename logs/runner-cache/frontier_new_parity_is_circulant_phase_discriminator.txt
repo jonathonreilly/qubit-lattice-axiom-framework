@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/frontier_new_parity_is_circulant_phase_discriminator.py
+runner_sha256: 3ec24b8c80f11bd546715d36fc37eadbe3b75e869e35ccf4eb92108ff6609716
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+============================================================================
+NEW (AXIS-EXCHANGE) PARITY VIOLATION = THE C_3-CIRCULANT PHASE delta
+============================================================================
+
+----------------------------------------------------------------------------
+C_3 (the 3-cycle) preserves H for every phase delta
+----------------------------------------------------------------------------
+  [PASS] C H C+ = H at delta=0.0
+  [PASS] C H C+ = H at delta=3.141592653589793
+  [PASS] C H C+ = H at delta=0.4
+  [PASS] C H C+ = H at delta=1.1
+
+----------------------------------------------------------------------------
+Transposition (reversal) conjugates b: delta -> -delta
+----------------------------------------------------------------------------
+  [PASS] tau H(delta) tau+ = H(-delta) at delta=0.0
+  [PASS] H transposition-invariant iff sin(delta)=0  (delta=0.0: inv=True)
+  [PASS] tau H(delta) tau+ = H(-delta) at delta=0.4
+  [PASS] H transposition-invariant iff sin(delta)=0  (delta=0.4: inv=False)
+  [PASS] tau H(delta) tau+ = H(-delta) at delta=1.1
+  [PASS] H transposition-invariant iff sin(delta)=0  (delta=1.1: inv=False)
+
+----------------------------------------------------------------------------
+Spectrum: sin(delta)=0 degenerate (full S_3); generic phase three distinct (C_3)
+----------------------------------------------------------------------------
+  [PASS] delta=0: at most two distinct eigenvalues (forced degeneracy)  (eigs=[3.7, 7.6])
+  [PASS] delta=pi: at most two distinct eigenvalues (the other reflection fixed locus)  (eigs=[2.4, 6.3])
+  [PASS] delta=0.4: three distinct eigenvalues  (eigs=[2.925781, 4.679461, 7.394759])
+  [PASS] eigenvalues match a + 2|b| cos(delta + 2pi k/3) (retained circulant form)
+
+----------------------------------------------------------------------------
+Parity (delta -> -delta) is a mirror: same masses, opposite orientation
+----------------------------------------------------------------------------
+  [PASS] delta and -delta give the same eigenvalue set
+  [PASS] but H(delta) != H(-delta) for delta != 0 (the parity is violated, not absent)
+
+============================================================================
+VERDICT
+============================================================================
+  A NEW PARITY VIOLATION HAS A PRECISE ORDER PARAMETER: the C_3-
+  circulant phase delta of the generation mass matrix.
+   * C_3 (the 3-cycle) is preserved for every delta -- the Koide
+     circulant structure is intact.
+   * A transposition (axis-exchange reflection) conjugates b, i.e.
+     delta -> -delta; H is transposition-invariant iff sin(delta)=0. So
+     a generic phase with sin(delta)!=0 IS an axis-exchange parity
+     violation acting WITHIN the generation triplet (unlike the
+     existing 3<->3-bar parity).
+   * sin(delta)=0 -> degenerate (full S_3); generic sin(delta)!=0 ->
+     three distinct masses, C_3 only -- the Koide-compatible regime,
+     landing on C_3 (not trivial).
+   * delta -> -delta (the transposition) is a mirror: same masses,
+     opposite orientation -- the same orientation/i flip seen before.
+
+  Honest scope: this identifies WHAT a new parity violation is (a
+  nonzero circulant phase) and shows it is C_3-preserving / Koide-
+  compatible. It does NOT derive that delta is nonzero or fixed by the
+  framework -- whether delta is forced is the open flavor-phase
+  question (the koide_bae / a3_route1 cluster).
+
+============================================================================
+PASS=16 FAIL=0
+
+----- stderr -----
+

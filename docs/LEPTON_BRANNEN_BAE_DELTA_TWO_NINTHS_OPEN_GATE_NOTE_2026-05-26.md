@@ -47,7 +47,7 @@ Equivalently, the PDG-extracted phase on the same Brannen-BAE chamber is
 
 ```text
 delta_PDG = 0.222270... radians,
-delta_PDG - 2/9 = 0.000047... radians.
+delta_PDG - 2/9 = 0.000048265... radians.
 ```
 
 This is useful downstream only if a future retained dynamics row derives

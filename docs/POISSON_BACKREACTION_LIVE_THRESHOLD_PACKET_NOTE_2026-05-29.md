@@ -4,6 +4,7 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/backreaction_poisson_live_threshold_check.py`](../scripts/backreaction_poisson_live_threshold_check.py)
+**Load-bearing helper source:** [`scripts/backreaction_poisson.py`](../scripts/backreaction_poisson.py)
 
 ## Purpose
 
@@ -14,6 +15,8 @@ but the current live runner does not reproduce that table.
 
 This packet starts from the live `scripts/backreaction_poisson.py` harness
 and asserts only the finite facts it currently supports.
+The live threshold runner asserts that this helper source is present,
+untruncated, and has no hidden local script-helper imports.
 
 No new axiom, observed target value, fitted selector, or external comparator
 is introduced.

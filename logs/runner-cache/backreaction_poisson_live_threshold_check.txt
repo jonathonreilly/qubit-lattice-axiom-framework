@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/backreaction_poisson_live_threshold_check.py
-runner_sha256: 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925
+runner_sha256: c45b9ac233803e24cf882a10a749e05c534bfeb7bbdfefbd3a6d3b1293aebd0a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 27.94
+elapsed_sec: 22.00
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -24,6 +24,7 @@ baseline external-field delta = +1.073461e-02 TOWARD
   0.100    15 +2.723267e-02  TOWARD    0.7547    1.000000      False
 
 SAFE READ
+  [PASS (C)] helper source exposed: scripts/backreaction_poisson.py
   old G_crit ~= 0.011 table is not reproduced by the live harness
   first sub-unit escape on this grid: G=0.05
   TOWARD deflection is preserved through G=0.100 on this grid

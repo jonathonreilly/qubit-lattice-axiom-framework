@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 639 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1213 |
+| unaudited | 1212 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 982 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1452 |
+| `unaudited` | 1451 |
 
 | claim_type | count |
 |---|---:|
@@ -1134,6 +1134,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_a1prime_debt_and_data_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5300,6 +5301,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The retained grown row preserves a bounded signed-source response in the fixed-field scout while zero-source and neutral same-point controls reduce to printed zero and the +2 source is approximately linear in the +1 source.  _(class `C`)_
 - **chain closes:** True — The supplied runner actually constructs fields from sources, propagates amplitudes on the grown graph, computes detector centroids, and reproduces the frozen sign, zero-control, and linearity outputs. The cited grown-geometry companion is retained_bounded and is used only to support the narrow retained-row context, not to broaden the result.
 - **rationale:** The load-bearing result is a live numerical computation over the runner-defined grown row, not a printed constant, renaming, or imported external comparator. The zero-source and neutral same-point cancellations are algebraic/numerical controls, while the signed single-source, pair, dipole, and double-source cases are computed by the propagation code. The claim is narrow enough to match the evidence: it does not assert geometry-generic electromagnetism or continuum closure.
+- **auditor confidence:** high
+
+### `flavor_a1prime_debt_and_data_note_2026-05-30`
+
+- **Note:** [`FLAVOR_A1PRIME_DEBT_AND_DATA_NOTE_2026-05-30.md`](../../docs/FLAVOR_A1PRIME_DEBT_AND_DATA_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded negative claim that inherited trace/equal-real-mode counting defaults to r=1 and that the supplied sector mass checks do not support universal Q=2/3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-021505-3a43cb6b-flavor_a1prime_debt_and_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the inherited tracial ONB on R[Z3], J-I = g+g^2 occupies two orthonormal directions, so equal real-mode weighting gives the dimension partition r=1, while r=1/2 requires regrouping those two directions as one det_C/U(1) complex slot.  _(class `A`)_
+- **chain closes:** False — The Gram/J-I algebra and the embedded mass-derived lepton, quark, cross-sector, and neutrino numbers mostly reproduce the quoted values. The decisive det_C/U(1) incompatibility with C^3=I is asserted rather than derived, and the phase/CKM escape claims are not closed by the restricted packet.
+- **rationale:** Runner stdout reports PASS=5, but the runner source hard-codes one Build-A pass as True for the contested det_C/U(1) incompatibility rather than deriving it. The data checks are external comparator checks from embedded mass/splitting constants, not framework-internal closure, and no cited authority supplies the det_C-vs-det_R bridge. Formula inventory also flags the CKM statement: 17-37 degrees versus Cabibbo 13 degrees does not support the displayed 5x-too-small factor, and dQ/ddelta=0 is not defined or checked in the packet.
 - **auditor confidence:** high
 
 ### `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30`

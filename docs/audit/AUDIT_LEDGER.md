@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 646 |
+| **retained_bounded** | 647 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1166 |
+| unaudited | 1165 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 990 |
+| `audited_clean` | 991 |
 | `audited_conditional` | 102 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1405 |
+| `unaudited` | 1404 |
 
 | claim_type | count |
 |---|---:|
@@ -588,6 +588,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_kahler_dirac_silent_on_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9127,6 +9128,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every circulant mass operator H=aI+bC+conj(b)C^2 commutes with Jcs for all r, so orienting Jcs does not choose the modulus r=|b|^2/a^2.  _(class `A`)_
 - **chain closes:** True — The audited result closes as finite 3x3 algebra: Jcs^2=-P_doublet, exp((2*pi/3)Jcs)=C, circulant H commutes with Jcs, the two stated r values give the stated Q values, and the symmetric anticommutant has a forced zero eigenvalue. The note explicitly leaves the measure/modulus selector open rather than deriving Q=2/3.
 - **rationale:** All one-hop authorities are retained-grade, and the audited conclusion is bounded to finite C3 linear algebra and residual localization. The load-bearing identities are algebraic: Jcs is a polynomial in C, circulant H is also a polynomial in C and therefore commutes with Jcs for any b, while the anticommutant block form gives eigenvalues {-s,0,+s}. The runner mostly verifies these identities directly; its measure-fork line is a restatement, but the r=1/2 and r=1 values independently follow from block versus per-dimension weighting and Q=(1+2r)/3.
+- **auditor confidence:** high
+
+### `koide_kahler_dirac_silent_on_measure_note_2026-05-30`
+
+- **Note:** [`KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md`](../../docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional audit of D_KD on Lambda*(R^3), determinant/Pfaffian counting for M=aI+b(C+C^2), and the C3-equivariant candidate complex-structure objects; no Koide mass-measure derivation is claimed or audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-044543-4a2cd327-koide_kahler_dirac_silen`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since d raises form degree and delta lowers form degree, D_KD=d-delta has zero Lambda^k -> Lambda^k blocks, including the Lambda^1 candidate generation block, while the determinant/Pfaffian and Jcs checks only localize the remaining measure binary.  _(class `A`)_
+- **chain closes:** True — The grade-off-diagonal statement follows directly from the form-degree shifts d: Lambda^p -> Lambda^{p+1} and delta: Lambda^p -> Lambda^{p-1}; the determinant/Pfaffian and Jcs identities are exact finite matrix algebra. The note explicitly leaves the matter-action real-antisymmetric bilinear as an open binary, so that bridge is not required for the bounded conclusion.
+- **rationale:** The load-bearing steps are class A algebraic closures over retained-grade inputs: zero grade-diagonal D_KD blocks, det(M)=(a+2b)(a-b)^2, det(M tensor eps)=det(M)^2, Jcs^2=-P_doublet, and the one-dimensional C3-equivariant antisymmetric direction. The runner source actually constructs the matrices and symbolic determinants rather than hard-coding the contested conclusions, and independent finite checks confirm the displayed target identities. No external comparator, tuned numerical input, or closed Koide-measure claim is imported; the no-go language is bounded to the checked routes and leaves the bilinear route open.
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`

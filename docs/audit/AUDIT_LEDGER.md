@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 648 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1165 |
+| unaudited | 1164 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 101 |
+| ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 992 |
-| `audited_conditional` | 101 |
+| `audited_conditional` | 102 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1404 |
+| `unaudited` | 1403 |
 
 | claim_type | count |
 |---|---:|
@@ -1192,6 +1192,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9319,6 +9320,24 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With E_+ = 3a^2 and E_perp = 6|b|^2, Q = 1/3 + (2/3)|b|^2/a^2, so equal-block power p_+ = 1/2 gives Q = 2/3 while dimension/Plancherel power p_+ = 1/3 gives Q = 1.  _(class `A`)_
 - **chain closes:** True — The audited bounded claim closes from retained algebraic Koide recastings plus the retained_bounded C_3-equivariant anticommuting disjointness result. The physical selection of the equal-block rule remains an explicitly open downstream bridge and is not claimed here.
 - **rationale:** The displayed Q formulas, energy ratios, and table entries check out under the unnormalized character convention E_+=3a^2 and E_perp=6|b|^2, equivalent to the cited normalized Fourier statements. The runner source performs finite matrix and scalar algebra checks and does not hard-code or import a contested physical Koide selection as a premise. Because the audited scope is only the bounded algebra/frontier localization and not charged-lepton Koide closure, the retained and retained_bounded inputs suffice.
+- **auditor confidence:** high
+
+### `koide_q23_k0_real_block_equivalence_note_2026-05-30`
+
+- **Note:** [`KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic comparison of K0-real equal-block versus K0-complex/trace weighting on the Z3 generation carrier, including the claim that the Cl(3) qubit pseudoscalar acts as a generation scalar and does not choose the measure convention.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-103836-555b7f17-koide_q23_k0_real_block_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Z3 has R[Z3]=R+C with two real Wedderburn blocks, so equal real-block energy gives 3a^2=6|b|^2 -> r=1/2 -> Q=2/3, while dimension/trace weighting gives r=1 -> Q=1.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the Wedderburn/FS block count and Koide-ratio algebra close from the provided inputs. The note does not claim to force the physical charged-lepton measure convention.
+- **rationale:** The primary runner source performs actual FS, Pauli/Jcs, coherent-state, circulant, and C3 checks; it is not a print-only PASS stub. The targeted Koide equivalence is a genuine class-A bounded algebraic characterization. Under the strict formula-inventory pass, however, the packet contains a sign error in the cited CPT authority's spectrum corollary: for real D with TDT=D, T v has eigenvalue lambda^*, not -lambda^*. That upstream formula is not load-bearing for the Koide block algebra, so this is a packet/authority repair issue rather than a failure of the targeted equivalence.
+- **open / conditional deps cited:**
+  - `CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
+  - `STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`
+  - `KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`
 - **auditor confidence:** high
 
 ### `koide_q23_oh_covariance_nogo_note_2026-04-22`

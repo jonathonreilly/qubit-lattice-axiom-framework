@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/car_from_positivity.py
+runner_sha256: 78dcb8b20d2e60b0920e0035341e1a9771d8d13494cf928719a5d71e15725d11
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+[PASS] onsite nilpotent b^2=c^2=0  (both frames: (creation_i)^2 = 0)
+[PASS] HCB cross-site COMMUTE [b1,b2]=0  (hard-core boson)
+[PASS] Fermion cross-site ANTICOMMUTE {c1,c2}=0  (JW fermion)
+[PASS] Fermion CAR {c_i,c_j^dag}=delta_ij I  (canonical anticommutation)
+[PASS] both ungraded algebras = full M_4(C) (rank 16)  (rank_HCB=16, rank_fermion=16)
+[PASS] grading F=(-1)^Q is Hermitian unitary involution  
+[PASS] F identical operator in HCB and fermion frames  (F = exp(i*pi*(n1+n2)); n_i shared between frames)
+[PASS] ladders F-odd in both frames {F,a}=0  
+[PASS] hopping bilinear F-even in both frames [F, a^dag a']=0  
+[PASS] H_b, H_c Hermitian  
+[PASS] T-positive (Hermitian, positive spectrum) in both frames  
+[PASS] emergent-time generator SPECTRUM identical in both frames  (max|dspec|=0.00e+00)
+[PASS] RP Gram PSD for HCB half-space observables  (min eig=0.000e+00)
+[PASS] RP Gram PSD for fermion half-space observables  (min eig=0.000e+00)
+[PASS] RP positivity VERDICT identical (HCB == fermion) on site-1 half-space  (both satisfy RP; cross-site sign invisible because obs share one site)
+[PASS] NO inner unitary sends commuting (b1,b2) -> anticommuting (c1,c2): intertwiner null dim = 0  (ordered=0, swapped=0)  [refutes 'sign is trivially gauge']
+[PASS] commute-vs-anticommute IS an isomorphism invariant (the generator-level distinction is REAL)  (so neutrality must come from positivity-blindness, NOT from gauge-triviality)
+[PASS] gauge-invariant density correlator <n1 n2> identical across frames  (<n1 n2>=0.0000)
+[PASS] bare bilinear value is STRING/ORDERING-dependent (not a frame-invariant; not a positivity witness)  (ordering A: HCB=-0.5000 ferm=-0.5000; ordering B: HCB=-0.5000 ferm=+0.5000)
+[PASS] single-step naive (no-eta) reflected form is non-PSD in HCB frame  (min eig=-1.000e+00)
+[PASS] single-step naive (no-eta) reflected form is non-PSD in fermion frame  (min eig=-1.000e+00)
+[PASS] single-step defect is the SAME in both frames (lives in reflection convention, not statistics)  (max|dspec|=0.00e+00)
+[PASS] (8a) chain Hamiltonians HCB and fermion have IDENTICAL spectra (unitarily equivalent)  (max|dspec|=0.00e+00)
+[PASS] (8b) transfer operator T=exp(-tau H) is POSITIVE in both frames (T-positivity holds for both)  (min eig HCB=0.3269, ferm=0.3269)
+[PASS] (8c) transfer-positivity SPECTRUM identical -> Stone/T-positivity CANNOT discriminate statistics  (|d min eig|=0.00e+00)
+[PASS] (8d) bare two-point <a0^dag a1> SIGN-FLIPS between frames (cross-site sign IS visible in correlator)  (HCB=+0.4472, ferm=-0.4472)
+[PASS] (8e) gauge-invariant density correlator <n0 n1> IDENTICAL across frames (physical content frame-blind)  (HCB=0.0500, ferm=0.0500)
+[PASS] (8f) JW string carries the sign: ferm string-completed == HCB naive (DHR string-convention)  (naive HCB=0.2000=comp ferm=0.2000; naive ferm=-0.0000=comp HCB=0.0000)
+[PASS] (9a) on a CLOSED LOOP the statistics IS physical: ring spectra DIFFER  (HCB gs=-2.8284, ferm gs=-2.0000)
+[PASS] (9b) BOTH ring theories are STILL Hermitian + bounded-below -> BOTH T-positive (no positivity selection)  (T min eig HCB=0.2431, ferm=0.3679)
+[PASS] (9c) the loop sign distinguishes TWO theories, it does NOT make one violate positivity  (=> closed-loop observable carries the statistics, but RP/T-positivity certifies BOTH)
+
+========================================================================
+SCORECARD: PASS=31 FAIL=0
+
+----- stderr -----
+

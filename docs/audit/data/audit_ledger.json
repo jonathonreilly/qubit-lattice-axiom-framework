@@ -248120,24 +248120,50 @@
       "verdict_rationale": null
     },
     "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-06-03T01:58:42.203130+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "Pure algebraic equivalence on positive real 3-vectors under the stated unitary C_3 character decomposition: Q(v)=2/3 iff a_0^2=2|z|^2, with the displayed sigma and 45-degree corollaries.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0."
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "3b495bc414c9b5e3d4d41b01c5af90bbf279bcbc55e124c5983fcd696e30ac1f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-015712-a6c6beaf-quark_mass_spectrum_koid",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained upstream notes close the C3/Koide algebra, and the runner arithmetic supports the comparator separation. The chain still imports external, scheme-dependent quark central values without a packet-closed scheme/scale authority, and the source table has source-runner drift for the up-quark Q entry.",
       "claim_id": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26",
-      "claim_scope": null,
+      "claim_scope": "Audited the algebraic Q <-> |b|^2/a^2 conversion and the limited comparator warning that the runner's chosen charged-lepton/up/down central mass values put quark apparent ratios away from 1/2; no quark mass, phase, amplitude, or scale derivation was audited.",
       "claim_type": "open_gate",
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-06-03T01:58:42.203130+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -248147,19 +248173,19 @@
         "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Using conventional central-value quark mass comparators, the apparent Koide/Brannen amplitude ratios for the up- and down-type quark sectors are not the charged-lepton BAE value |b|^2/a^2 = 1/2.",
+      "load_bearing_step_class": "D",
       "max_descendant_status": "meta",
       "max_descendant_status_rank": 25,
       "note_hash": "879896bb4efe37bbf3642774e19a336b2c6aa1e3e23c27af74d1470fdaf302ec",
       "note_path": "docs/QUARK_MASS_SPECTRUM_KOIDE_SCHEME_OPEN_GATE_NOTE_2026-05-26.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a cited scheme/scale-specific authority or packet-local convention for the quark mass comparators, and update the source table's up-quark Q entry to match the runner value before seeking a clean re-audit.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -248224,16 +248250,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 11,
+        "total_pass": 14
       },
       "runner_path": "scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py",
       "title": "Quark Mass Spectrum Koide-Scheme Open Gate",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an external comparator check, not a first-principles framework computation or a pure algebraic closure over retained inputs. The runner genuinely computes Q and |b|^2/a^2 from embedded mass constants and verifies the algebraic reconstruction, but those constants are conventional external comparators rather than cited retained authorities. The source note also displays up-quark Q as 0.848..., while the included runner computes 0.849094427, so the quantitative table is stale or convention-drifted as written. This supports the lane-opening warning only conditionally on the chosen comparator scheme and corrected displayed number."
     },
     "quark_projector_parameter_audit_note_2026-04-19": {
       "audit_date": null,

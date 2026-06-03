@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1206 |
+| unaudited | 1205 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 73 |
+| ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 983 |
-| `audited_conditional` | 73 |
+| `audited_conditional` | 74 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1445 |
+| `unaudited` | 1444 |
 
 | claim_type | count |
 |---|---:|
@@ -1143,6 +1143,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_delegation_terminus_local_blind_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5437,6 +5438,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **open / conditional deps cited:**
   - `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS.md`
   - `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
+- **auditor confidence:** high
+
+### `flavor_center_trace_closed_capstone_note_2026-05-30`
+
+- **Note:** [`FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md`](../../docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the restricted packet closes the claimed center-trace-route exclusion by deriving full-algebra/dimension weighting from the displayed projectors, C3 cycle, tracial state, and einselection calculation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-023046-fe4a0554-flavor_center_trace_clos`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's decisive step is that the projectors plus the C3 cycle generate full M3(C), so there is no proper invariant quotient and therefore C3 is physical rather than gauge, forcing the full/dimension trace and Q=1 instead of the center trace.  _(class `A`)_
+- **chain closes:** False — The runner supports the algebra dimension and tracial sector-population arithmetic, but the physical bridge from irreducibility/no proper quotient to 'not gauge' and the retained tracial/no-proper-quotient authorities are not provided in the packet. The source note also explicitly says the closure framing is superseded and the current trace-vs-center-state status is reduced, not closed.
+- **rationale:** The displayed algebraic checks are internally consistent: R[Z3]=R⊕C, the generated matrix algebra has dimension 9 over the complexified matrix-unit span, and I/3 gives singlet/doublet populations 1/3 and 2/3 with dephasing preserving populations. Those checks do not by themselves prove the load-bearing physical/gauge identification or the claimed route closure. The packet cites retained theorems and reference-state results in prose but supplies no cited authorities, so the closure depends on missing dependency edges and an unclosed bridge theorem. The supersession warning independently makes the audited closure scope too broad for a clean bounded theorem.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

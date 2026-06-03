@@ -91,13 +91,14 @@ The cyclic vector therefore acts as a **tie-breaker** the bare fork lacks:
 - the **idempotent split** needs the extra spectral structure and its distinguished line is
   misaligned with `Omega`.
 
-**Automorphism invariance** confirms the (1,N-1) split is basis-independent up to the
-carrier's symmetry: every trace-preserving `*`-automorphism of `R[Z_N]` is induced by
-`Aut(Z_N)` (`g -> g^u`, `gcd(u,N)=1`); each fixes `e` (the **unique order-1 element**) and
-permutes `{g, ..., g^{N-1}}` among themselves. So `{e}` is a singleton orbit and the (1,N-1)
-split is canonical. (Aut-invariance alone does **not** separate the two splits -- the
-democratic line is Aut-invariant too -- which is exactly why the **cyclic vector** is the
-load-bearing tie-breaker, not the symmetry.)
+**Group-basis/Hopf automorphism invariance** confirms the (1,N-1) split is basis-independent up to the
+carrier symmetry actually checked here: the `Z_3` group automorphisms `Aut(Z_3)` (`g -> g^u`,
+`u in {1,2}`) fix `e` (the **unique order-1 group element**) and permute `{g, g^2}` among themselves.
+So `{e}` is a singleton orbit and the (1,2) split is canonical under the checked group-basis/Hopf
+symmetry. This is intentionally narrower than a classification of every trace-preserving `*`-automorphism
+of the real algebra. Symmetry alone does **not** separate the two splits -- the democratic line is
+Aut-invariant too -- which is exactly why the **cyclic vector** is the load-bearing tie-breaker, not the
+symmetry.
 
 ### The honest residual (what the standard form does **not** force)
 
@@ -186,3 +187,9 @@ undetermined input, vs the unaudited note's full three-way fork).
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | `retained_bounded` | block-weight algebra anchor |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | `retained` | Brannen ratio `Q=1/3+(2/3)r` |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | `retained_bounded` | chirality decoupling |
+
+## 2026-06-03 wording repair
+
+The automorphism paragraph has been narrowed to the `Z_3` group-basis/Hopf automorphisms actually checked
+by the runner. It no longer claims a classification of all trace-preserving `*`-automorphisms of `R[Z_N]`.
+The missing carrier/scoring bridge remains open.

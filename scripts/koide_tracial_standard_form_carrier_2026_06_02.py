@@ -26,9 +26,10 @@ Checks (SCORECARD PASS=k):
       breaks the fork in favor of the group-element (1,N-1) partition.
   C3  HS arithmetic on the carrier: ||I||^2=N, ||J-I||^2=N(N-1), <I,J-I>_HS=0; equal
       channel energy a^2*1 = b^2*(N-1) -> r = 1/(N-1). At N=3 -> r=1/2 -> Q=2/3 (Brannen).
-  C4  AUT-INVARIANCE: every trace-preserving *-automorphism (Aut(Z_N)) fixes e and permutes
-      {g,...,g^{N-1}} among themselves -> {e} is the unique singleton orbit -> the (1,N-1)
-      split is canonical (basis-independent up to the carrier's symmetry).
+  C4  GROUP-BASIS/HOPF AUT-INVARIANCE: the checked Aut(Z_3) maps fix e and permute {g,g^2}
+      among themselves -> {e} is the unique singleton orbit -> the (1,2) split is canonical
+      under the carrier's checked group-basis symmetry. This is not a classification of all
+      trace-preserving *-automorphisms of R[Z_N].
   C5  HONEST RESIDUAL: the idempotent/per-mode partitions are NOT eliminated as ALGEBRA
       decompositions -- equal POWER per central idempotent of the SPECTRUM gives r=17/2-6sqrt(2)
       (~0.0147), per-mode equipartition a^2=b^2 gives r=1 (Plancherel). The standard form
@@ -127,7 +128,7 @@ def main():
         hs_norms and r_chan == sp.Rational(1, 2) and Q_form,
         f"3a^2=6b^2 -> r={r_chan}; Brannen Q={Q}=1/3+(2/3)r -> Q=2/3 at r=1/2"))
 
-    # ---- C4: Aut(Z_N)-invariance of the (1,N-1) split ----
+    # ---- C4: checked Aut(Z_3) group-basis invariance of the (1,2) split ----
     auts = [u for u in range(1, N) if sp.gcd(u, N) == 1]
     aut_ok = True
     for u in auts:
@@ -136,9 +137,9 @@ def main():
         if images[0] != 0 or sorted(images[1:]) != list(range(1, N)):
             aut_ok = False
     passed.append(check(
-        "C4 Aut(Z_N) fixes e, permutes {g,..,g^{N-1}} -> {e} unique singleton orbit; (1,N-1) canonical",
+        "C4 checked Aut(Z_3) fixes e and permutes {g,g^2} -> {e} unique singleton orbit; (1,2) canonical",
         aut_ok and len(auts) >= 1,
-        f"Aut(Z_{N}) g->g^u, u in {auts}; identity is the unique order-1 element"))
+        f"Aut(Z_{N}) group-basis maps g->g^u, u in {auts}; identity is the unique order-1 element"))
 
     # ---- C5: HONEST RESIDUAL -- idempotent/per-mode partitions are not eliminated ----
     # idempotent EQUAL-POWER of the SPECTRUM: (a+2b)^2 = 2(a-b)^2 -> r = 17/2 - 6 sqrt(2)

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1205 |
+| unaudited | 1204 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 74 |
+| ~~audited_conditional~~ | 75 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 983 |
-| `audited_conditional` | 74 |
+| `audited_conditional` | 75 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1444 |
+| `unaudited` | 1443 |
 
 | claim_type | count |
 |---|---:|
@@ -1144,6 +1144,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5451,6 +5452,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The note's decisive step is that the projectors plus the C3 cycle generate full M3(C), so there is no proper invariant quotient and therefore C3 is physical rather than gauge, forcing the full/dimension trace and Q=1 instead of the center trace.  _(class `A`)_
 - **chain closes:** False — The runner supports the algebra dimension and tracial sector-population arithmetic, but the physical bridge from irreducibility/no proper quotient to 'not gauge' and the retained tracial/no-proper-quotient authorities are not provided in the packet. The source note also explicitly says the closure framing is superseded and the current trace-vs-center-state status is reduced, not closed.
 - **rationale:** The displayed algebraic checks are internally consistent: R[Z3]=R⊕C, the generated matrix algebra has dimension 9 over the complexified matrix-unit span, and I/3 gives singlet/doublet populations 1/3 and 2/3 with dephasing preserving populations. Those checks do not by themselves prove the load-bearing physical/gauge identification or the claimed route closure. The packet cites retained theorems and reference-state results in prose but supplies no cited authorities, so the closure depends on missing dependency edges and an unclosed bridge theorem. The supersession warning independently makes the audited closure scope too broad for a clean bounded theorem.
+- **auditor confidence:** high
+
+### `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31`
+
+- **Note:** [`FLAVOR_CHIRALITY_GATE_NARROWS_TO_ONE_SPIN_STATISTICS_IMPORT_2026-05-31.md`](../../docs/FLAVOR_CHIRALITY_GATE_NARROWS_TO_ONE_SPIN_STATISTICS_IMPORT_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded narrowing that a Z^3 qubit lattice is statistics-agnostic and that the supplied Pauli/JW and staggered-parity algebraic identities hold.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-023317-71ba39bc-flavor_chirality_gate_na`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The qubit/JW algebras are identical as ungraded operator algebras, so A1+A2 do not select fermions; given that fermionic-frame import, the note asserts P2, the hw=1/count-3 locus, and Koide Q=2/3 chiral structure follow.  _(class `A`)_
+- **chain closes:** False — The runner supports the local algebra checks for statistics-agnosticism and basic Clifford/epsilon identities. It does not close the asserted downstream bridge from P1 to Dirac-Kähler/staggered equivalence, hw=1 locus, count 3, carrier/generation identification, or Koide Q=2/3 within the restricted packet.
+- **rationale:** The substantive runner computations are algebraic checks, not a first-principles closure of the full flavor-sector claim. One PASS, P1d, is an interpretive hard-coded `True`, and the downstream statements that everything else follows given P1 rely on bridges not supplied as retained inputs in this packet. The P2c detail also overstates the epsilon/Laplacian relation: for `L = deg I - hop` with `{epsilon, hop}=0`, the Laplacian is A2-local and non-chiral, but it does not literally commute with epsilon.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

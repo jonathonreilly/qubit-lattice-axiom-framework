@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 642 |
+| **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1184 |
+| unaudited | 1183 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 26 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 985 |
+| `audited_clean` | 986 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1423 |
+| `unaudited` | 1422 |
 
 | claim_type | count |
 |---|---:|
@@ -387,6 +387,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_equivariant_eta_complementarity_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5773,6 +5774,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** C3 invariance alone leaves a two-block reference-state cone open, including both the tracial 1:2 block weighting and the admissible non-tracial 1:1 weighting, while the retained Koide readout is a spectral invariant of H and does not use rho.  _(class `A`)_
 - **chain closes:** False — The matrix and readout algebra closes conditional on C3 being the complete native generation-factor symmetry. The missing step is a retained or accepted authority proving that framework baseline supplies no stronger generation-factor symmetry and that full-U(3)/PRR is not part of baseline.
 - **rationale:** The runner source performs real algebraic checks rather than merely printing pass constants, and the displayed projector, block-mass, eigenvalue, determinant, and Koide formulas check out under the packet definitions. Those checks establish the conditional counterexample that C3 invariance alone does not force the trace and that the reference state does not enter the retained Q functional. The broader conclusion that this exhausts the framework baseline, and that PRR/full-U(3) is only an unaudited external premise, imports repo-level status not supplied by any cited authority in the restricted packet.
+- **auditor confidence:** high
+
+### `flavor_qubit_berry_holonomy_probe_note_2026-05-30`
+
+- **Note:** [`FLAVOR_QUBIT_BERRY_HOLONOMY_PROBE_NOTE_2026-05-30.md`](../../docs/FLAVOR_QUBIT_BERRY_HOLONOMY_PROBE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The specific qubit-factor Berry/Wilson-loop construction for H(a, |b|e^{i delta}) does not derive 2/9 or select r=1/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-033642-33ad10db-flavor_qubit_berry_holon`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Wilson-loop Berry calculation gives -pi for the pure phase loop and |gamma| = pi(1 - 1/sqrt(1+r)) for the gapped loop, so at r=1/2 the value is about 0.5765 rad and misses the tested 2/9 normalizations.  _(class `C`)_
+- **chain closes:** True — The runner explicitly constructs the Pauli Hamiltonians and computes the Wilson-loop phase rather than importing the contested values. Independent checks of the displayed formulas agree for nonzero |b| and physical r>=0.
+- **rationale:** The source claim is bounded to this holonomy probe and does not assert a global no-go over all possible holonomies. The quantitative steps close from the displayed one-qubit Pauli loop: the equatorial loop gives the topological pi phase, the gapped latitude gives pi(1 - 1/sqrt(1+r)), and the Q crossing equation has the physical solution r=1/2 only. No cited upstream authority is needed for the scoped negative result.
 - **auditor confidence:** high
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`

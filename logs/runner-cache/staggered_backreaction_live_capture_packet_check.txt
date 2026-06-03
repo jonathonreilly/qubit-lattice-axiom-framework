@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_backreaction_live_capture_packet_check.py
-runner_sha256: ba8c5c5d356f1557e419b69fbd709e14b6a151acd141c1896616779d1c9cf991
+runner_sha256: 3b8ea5e38250cfdb574f5f21ba62480d527cc66b565e0616dae14b6175c42ee2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.74
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -31,10 +31,10 @@ CAPTURE BATTERY: random_geometric (36 nodes)
 CAPTURE BATTERY: growing (48 nodes)
   [B1] Zero-source: F=0.0000e+00, |Phi|=0.0000e+00 PASS
   [B2] Linearity: R^2=0.992977 PASS
-  [B3] Additivity: residual=1.7022e-16 PASS
+  [B3] Additivity: residual=2.4784e-16 PASS
   [B4] Force: +3.3040e-01 TOWARD PASS
   [B5] Iter stability: 15/15 TOWARD PASS
-  [B6] Norm: drift=0.0000e+00 PASS
+  [B6] Norm: drift=2.2204e-16 PASS
     gauss     : F=+3.3040e-01 TW
     color-0   : F=+1.6852e-01 TW
     color-1   : F=+4.8992e-01 TW
@@ -51,9 +51,10 @@ SAFE READ
   cycle battery scores: [9, 9]
   cycle mean gap: 9.828e-01 -> 4.734e-01
   cycle gap improvement factor: 2.08x
-  cycle mean R2: 0.996306; two-body max=1.702e-16
+  cycle mean R2: 0.996306; two-body max < 1.0e-12
   holdout gap: 9.191e-01 -> 4.559e-01 (2.02x)
   bounded live packet only: no old stale table or continuum closure
+  [PASS (C)] source note live readout matches computed SAFE READ
   [PASS (C)] live capture packet
 ASSERTIONS: PASS
 

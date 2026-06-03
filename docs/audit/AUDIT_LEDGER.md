@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 641 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1200 |
+| unaudited | 1199 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 78 |
+| ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 984 |
-| `audited_conditional` | 78 |
+| `audited_conditional` | 79 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1439 |
+| `unaudited` | 1438 |
 
 | claim_type | count |
 |---|---:|
@@ -1149,6 +1149,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_emergent_chirality_no_transport_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5521,6 +5522,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** A K-real C3-invariant Hermitian monitor lies in span_R{I,C+C^2}, so it resolves only the singlet/doublet blocks; H is already block-diagonal in those blocks and Born weighting gives dimension weights rather than r=1/2.  _(class `A`)_
 - **chain closes:** True — The finite C3 matrix algebra supports the two-sector partition, the K-odd splitter, the P0HP1=0 no-op statement, and the Born block trace weights. The claim is clean only in this bounded scope; it does not close the physical derivation of K-reality or the block-counting measure.
 - **rationale:** The runner source directly constructs C, P0, P1, H and checks the stated finite-dimensional algebra without helper imports, external comparators, or tuned numerical inputs. Independent formula inspection agrees with the displayed eigenvalue, K-oddness, block-diagonality, trace-weight, and conjugation-even identities. The residual inputs are openly named in the claim boundary, so they bound the theorem rather than being hidden closure premises.
+- **auditor confidence:** high
+
+### `flavor_emergent_chirality_no_transport_note_2026-05-30`
+
+- **Note:** [`FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md`](../../docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the narrow claim that the displayed factorized emergent-time carrier and native scalar chirality do not by themselves produce a C3-breaking anticommuting operator on the generation triplet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-024732-7225352c-flavor_emergent_chiralit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The emergent-time carrier is asserted to factorize as Xi_R(t;q)=Theta_R(q) tensor V_R(t), with no generation index, so it acts as identity on R^3_gen and cannot transport an orbit-splitting chiral grading.  _(class `B`)_
+- **chain closes:** False — The algebraic consequences checked by the runner close if the factorized carrier and eps|hw1=-I3 premises are accepted. The restricted packet does not include the upstream s3_time or chiral_3plus1d authorities, and the runner uses toy matrices rather than deriving the actual framework carrier or verifying all displayed numerics.
+- **rationale:** The matrix checks in the runner are internally correct: -I3 commutes with R and has nonzero anticommutator norm 2sqrt(3), the Connes-Lott tensor grading is inert on the generation factor, and a symmetric anticommutant of Gamma_chi has spectrum {-lambda,0,+lambda} with singular-value Q=1/2. But the decisive no-transport step is a cross-note structural premise about the s3_time and emergent-chirality stacks, and those inputs are not supplied in the packet. The displayed transport numerics Q=0.267 and ||{D,Gamma_chi}||=1.38, plus the next-path coefficient L3(1,2)=2/9, are not independently checkable from the provided definitions or runner.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

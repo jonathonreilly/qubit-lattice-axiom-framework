@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py
-runner_sha256: 8bd21b62210eec5003178934322b760d7512dccbafba367ad8cff57c2aa49e27
+runner_sha256: 20208aad450ea0e7a23a70d24572d95855eb32fa23bf13f2db76ef10838422fd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.01
+elapsed_sec: 1.52
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -79,6 +79,7 @@ Part 8 (corollary): one-negative closed form Q_sv = N / (3a - 2 lambda_min)^2
 ----------------------------------------------------------------------------------------
   [PASS (A)] theta = pi/3: Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2 (one-flip form)  (closed = 54/49 - 24*sqrt(2)/49, direct = 54/49 - 24*sqrt(2)/49)
   [PASS (A)] theta = pi/2: Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2 (one-flip form)  (closed = 6/(1 + sqrt(6))**2, direct = 42/25 - 12*sqrt(6)/25)
+  [PASS (A)] general one-negative counterexample: Q_sv can exceed 2/3 while still below Q_signed  (spectrum=[29/10, 1/5, -1/10], Q_sv=423/512, Q_signed=47/50)
 
 ----------------------------------------------------------------------------------------
 Part 9: forbidden-imports / comparator-only sanity
@@ -92,25 +93,27 @@ Summary
   Verified at exact sympy precision:
     (Lemma A) signed readout Q_signed = (1+2r)/3, theta-independent; 2/3 at r=1/2
     (Lemma B) numerator invariance sum|lambda|^2 = sum lambda^2 (masses shared)
-    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= 2/3, equality iff sign-homogeneous
+    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= Q_signed, equality iff sign-homogeneous
     (Non-const) Q_sv in {2/3, 6/(9+4 sqrt2), 6/(7+2 sqrt6)} at theta in {0, pi/3, pi/2}
     (Samples)  theta=0.4 -> 0.566, theta=0.9 -> 0.416 (both < 2/3); Q_signed stays 2/3
     (Boundary) one eigenvalue = 0 at theta = pi/12; Q_sv = 2/3 EQUALITY still holds there
     (Regions)  strict all-positive OPEN window |theta mod 2pi/3| < pi/12;
                Q_sv=2/3 equality region is the CLOSED set |theta mod 2pi/3| <= pi/12
     (Masses)   both readouts give identical m_k = lambda_k^2; only sqrt(m) signs differ
-    (Corollary) one-negative closed form Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2
+    (Corollary) one-negative closed form gives Q_sv < Q_signed; at r=1/2, Q_sv < 2/3
+                counterexample blocks the unqualified general claim: 423/512 > 2/3
 
   CONSEQUENCE: the Brannen Q = 2/3 signed-readout claim relies on sqrt(m_k) being a
   SIGNED real vector. Singular values (>= 0) destroy that sign structure, so reading
   the charged-lepton mass operator as singular values of a (non-Hermitian) Yukawa
-  does NOT reproduce 2/3 at the r=1/2 operator. The signed (Hermitian / det_R) readout
-  is the phenomenology-compatible one; the singular-value relaxation CHANGES the value.
+  does NOT reproduce a theta-independent 2/3 law at the r=1/2 operator. The signed
+  (Hermitian / det_R) readout is the phenomenology-compatible one; the singular-value
+  relaxation generally CHANGES the value.
 
 ========================================================================================
-TOTAL: PASS=29, FAIL=0
+TOTAL: PASS=30, FAIL=0
 ========================================================================================
-PASS=29 FAIL=0
+PASS=30 FAIL=0
 
 ----- stderr -----
 

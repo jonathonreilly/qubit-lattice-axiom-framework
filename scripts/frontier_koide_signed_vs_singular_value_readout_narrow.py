@@ -391,7 +391,9 @@ def main() -> int:
     # =====================================================================
     # On the region with exactly one negative eigenvalue lambda_min < 0:
     #   sum|lambda| = sum lambda - 2 lambda_min = 3a - 2 lambda_min,
-    # so Q_sv = (3 a^2 + 6|b|^2) / (3a - 2 lambda_min)^2 > [denominator] > 9 a^2 => < 2/3.
+    # so Q_sv = (3 a^2 + 6|b|^2) / (3a - 2 lambda_min)^2. The larger
+    # denominator gives the general strict bound Q_sv < Q_signed; it gives
+    # Q_sv < 2/3 only after the r = 1/2 specialization.
     for th_val in (pi / 3, pi / 2):
         L = signed_eigs(a0, b0, th_val)
         negs = [x for x in L if N(x) < 0]
@@ -403,6 +405,30 @@ def main() -> int:
             simplify(closed - direct) == 0 and len(negs) == 1,
             detail=f"closed = {closed}, direct = {direct}",
         )
+
+    # Guard against the overbroad general statement "one-negative => Q_sv < 2/3".
+    # The spectrum below is realized by the same C_3 Hermitian family with
+    # a = 1 and b = 19/20 - i sqrt(3)/20. It has exactly one negative eigenvalue
+    # and still obeys Q_sv < Q_signed, but Q_sv is above 2/3 because r != 1/2.
+    b_counter = Rational(19, 20) - I * sqrt(3) / 20
+    counter_eigs = [Rational(29, 10), Rational(1, 5), -Rational(1, 10)]
+    counter_from_c3 = [
+        simplify(sp.expand_complex(1 + b_counter * w**k + conjugate(b_counter) * w ** (-k)))
+        for k in (0, 1, 2)
+    ]
+    counter_num = simplify(sum(x**2 for x in counter_eigs))
+    qsv_counter = simplify(counter_num / (sum(abs(x) for x in counter_eigs)) ** 2)
+    qsigned_counter = simplify(counter_num / (sum(counter_eigs)) ** 2)
+    check(
+        "general one-negative counterexample: Q_sv can exceed 2/3 while still below Q_signed",
+        all(simplify(x - y) == 0 for x, y in zip(counter_from_c3, counter_eigs))
+        and sum(1 for x in counter_eigs if x < 0) == 1
+        and simplify(qsv_counter - Rational(423, 512)) == 0
+        and simplify(qsigned_counter - Rational(47, 50)) == 0
+        and qsv_counter > Rational(2, 3)
+        and qsv_counter < qsigned_counter,
+        detail=f"spectrum={counter_eigs}, Q_sv={qsv_counter}, Q_signed={qsigned_counter}",
+    )
 
     # =====================================================================
     section("Part 9: forbidden-imports / comparator-only sanity")
@@ -428,20 +454,22 @@ def main() -> int:
     print("  Verified at exact sympy precision:")
     print("    (Lemma A) signed readout Q_signed = (1+2r)/3, theta-independent; 2/3 at r=1/2")
     print("    (Lemma B) numerator invariance sum|lambda|^2 = sum lambda^2 (masses shared)")
-    print("    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= 2/3, equality iff sign-homogeneous")
+    print("    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= Q_signed, equality iff sign-homogeneous")
     print("    (Non-const) Q_sv in {2/3, 6/(9+4 sqrt2), 6/(7+2 sqrt6)} at theta in {0, pi/3, pi/2}")
     print("    (Samples)  theta=0.4 -> 0.566, theta=0.9 -> 0.416 (both < 2/3); Q_signed stays 2/3")
     print("    (Boundary) one eigenvalue = 0 at theta = pi/12; Q_sv = 2/3 EQUALITY still holds there")
     print("    (Regions)  strict all-positive OPEN window |theta mod 2pi/3| < pi/12;")
     print("               Q_sv=2/3 equality region is the CLOSED set |theta mod 2pi/3| <= pi/12")
     print("    (Masses)   both readouts give identical m_k = lambda_k^2; only sqrt(m) signs differ")
-    print("    (Corollary) one-negative closed form Q_sv = (3a^2+6|b|^2)/(3a - 2 lambda_min)^2")
+    print("    (Corollary) one-negative closed form gives Q_sv < Q_signed; at r=1/2, Q_sv < 2/3")
+    print("                counterexample blocks the unqualified general claim: 423/512 > 2/3")
     print()
     print("  CONSEQUENCE: the Brannen Q = 2/3 signed-readout claim relies on sqrt(m_k) being a")
     print("  SIGNED real vector. Singular values (>= 0) destroy that sign structure, so reading")
     print("  the charged-lepton mass operator as singular values of a (non-Hermitian) Yukawa")
-    print("  does NOT reproduce 2/3 at the r=1/2 operator. The signed (Hermitian / det_R) readout")
-    print("  is the phenomenology-compatible one; the singular-value relaxation CHANGES the value.")
+    print("  does NOT reproduce a theta-independent 2/3 law at the r=1/2 operator. The signed")
+    print("  (Hermitian / det_R) readout is the phenomenology-compatible one; the singular-value")
+    print("  relaxation generally CHANGES the value.")
 
     print()
     print("=" * 88)

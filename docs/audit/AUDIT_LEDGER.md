@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1192 |
+| unaudited | 1191 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 985 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1431 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
@@ -1156,6 +1156,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5635,6 +5636,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner computes the 2/9 local-density arithmetic and several consistency checks, but it deliberately does not discharge the observable-promotion step. The source note relies on named ledger rows and prior structures that are not supplied as cited authorities in the restricted packet, especially the open gate lepton_brannen_bae_delta_two_ninths. Under the formula inventory pass, the global-invariant family is not clean as written: the note says the global Lefschetz sum vanishes while also displaying global=L*(2/9), with L=3 -> 2/3 and L=8 -> 16/9; runner D2 checks a separate toy eta pairing, not that cancellation.
 - **open / conditional deps cited:**
   - `lepton_brannen_bae_delta_two_ninths`
+- **auditor confidence:** high
+
+### `flavor_idempotent_u1_collapses_note_2026-05-30`
+
+- **Note:** [`FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md`](../../docs/FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic idempotent-U(1) commute/inertness claim and the stated route-collapse refinements only from the supplied note, runner, and packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-031419-cac86108-flavor_idempotent_u1_col`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** [U,C]=0 implies U H U† = H exactly for any circulant H, so b and r are unchanged and the idempotent-U(1) route pins nothing.  _(class `A`)_
+- **chain closes:** False — The commute/inertness identity closes by direct matrix algebra from Ps=J/3, Pd=I-J/3, and circulant H. The full note does not close because the chiral-grading no-go, C-rephasing/charge-gluing obstruction, generation-blind sector-selector claim, and r-table provenance are imported or hard-coded rather than supplied or derived in the restricted packet.
+- **rationale:** Independent algebra verifies that the idempotent U(1) commutes with C and is inert under conjugation on circulant H, matching K1-K2. K3 verifies generic Hermiticity breaking for a one-sided action, but the claim that this is exactly the retained blocked chiral grading is not supported by a provided authority. K4 is stated in the note and runner comments but is not executed as a runner check, and K5 hard-codes the r, charge, and color table rather than deriving the mass-spectrum values inside the packet. Therefore the narrow algebraic part is sound, but the full bounded theorem remains conditional on missing dependency/bridge material.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

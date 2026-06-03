@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 638 |
+| **retained_bounded** | 639 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1219 |
+| unaudited | 1218 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 980 |
+| `audited_clean` | 981 |
 | `audited_conditional` | 64 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1458 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
@@ -585,6 +585,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8512,6 +8513,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Solving the defined real Z3 commutant/idempotent equations and substituting z=0, selected=1, c=0, and eta_Z3=2/9 into the route laws yields Q=2/3, no native spectator projector, and delta_open=2/9.  _(class `A`)_
 - **chain closes:** True — The displayed identities independently reduce to exact finite algebra under the note's own definitions. No cited authorities, fitted data, external comparators, or physical bridge identifications are used.
 - **rationale:** The source is explicitly scoped to a bounded defined route object, and the claimed consequences are algebraic identities inside that object. Independent formula checks confirm the zero-source Q calculation, the real Z3 commutant and idempotents, the absence of commuting real rank-one projectors, the based endpoint c=0, the finite sum eta_Z3=2/9, and delta_open=2/9. The runner source computes the load-bearing symbolic quantities directly with no helper imports, calibrated constants, or physical target import; its prose-only boundary checks do not carry the algebraic conclusion.
+- **auditor confidence:** high
+
+### `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02`
+
+- **Note:** [`KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md`](../../docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite on-site Cl(3,0) Pauli/bivector construction of so(3,1), chiral Weyl covariance of p0+p.sigma, little-group exclusion of a scalar carrier for spin-1/2 content, and identification of partner-chirality massive doubling as the remaining residual; not OS/Wightman reconstruction or CAR forcing.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-015327-88f88cce-koide_onsite_boost_recon`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The spin-1/2 one-particle content of S(p) forces a faithful carrier containing j=1/2, the chiral Weyl C^2, and excludes the trivial scalar J=K=0.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the commutators, chirality Casimirs, kernel covariance, and scalar exclusion are algebraic representation-theory consequences of the Pauli/Cl(3,0) inputs. The massive positive-energy Dirac field and CAR application are explicitly left as the named partner-chirality/doubling residual.
+- **rationale:** The load-bearing content is finite Clifford/Pauli and SL(2,C) representation algebra, not a numerical fit or definition substitution. The cited one-hop authorities are retained or retained_bounded, and the note does not rely on context-only unaudited reconstruction siblings to assert unconditional closure. The runner performs substantive matrix checks for the scoped finite claims, while the note honestly excludes the field-theoretic massive doubling and CAR selection from its conclusion.
 - **auditor confidence:** high
 
 ### `koide_order_one_circulant_diagnostic_note_2026-05-29`

@@ -1,0 +1,36 @@
+Cluster-decomposition discharge ledger-pairing verifier
+Repo: /private/tmp/cl3-ship-clusterdecomp-pairing-20260603/wt
+Pairing note: docs/CLUSTER_DECOMPOSITION_DISCHARGE_VIA_THREE_COMPANIONS_LEDGER_PAIRING_NOTE_2026-06-03.md
+
+=== Part A: on-main cite-check (5 rows) ===
+  PASS A.1 parent on main (docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
+  PASS A.2 mass-gap bridge on main (docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+  PASS A.3 spatial slab bridge on main (docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
+  PASS A.4 eq8 repair on main (docs/CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md)
+  PASS A.5 axis-permutation companion on main (docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md)
+
+=== Part B: content-match cite-check ===
+  PASS B.1 mass-gap bridge text addresses temporal-bridge slice (6/6 hits)
+  PASS B.2.b eq8 repair addresses Kubo-identity item (4/4 hits)
+  PASS B.2.c eq8 repair addresses J* constant item (4/4 hits)
+  PASS B.3.slab spatial slab bridge text addresses spatial slice (5/5 hits)
+  PASS B.3.axis axis-permutation companion text supplies H1+H2 (6/6 hits)
+  PASS B.4 parent text records the named conditional items (4/4 hits)
+
+=== Part C: hostile-audit invariants ===
+  PASS C.1 parent text untouched
+  PASS C.2.mass_gap mass-gap bridge untouched
+  PASS C.2.slab spatial slab bridge untouched
+  PASS C.2.eq8 eq8 repair companion untouched
+  PASS C.2.axis axis-permutation companion untouched
+  PASS C.3 no audit-ledger touch
+  PASS C.4 claim_type=meta declared
+  PASS C.5 status-lift disclaimer present
+  PASS C.6 no-new-science disclaimer present (2/4)
+  PASS C.7 all-rows cross-referenced (5/5)
+  PASS C.8 items (a)(b)(c) cited (3/3)
+  PASS C.9 no companion runner touched
+
+============================================================
+SUMMARY: 23 PASS / 0 FAIL  (23 total)
+============================================================

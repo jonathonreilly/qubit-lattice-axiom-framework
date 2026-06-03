@@ -1,0 +1,104 @@
+===== runner cache v1 =====
+runner: scripts/frontier_beta6_connected_coefficient_2026_05_30_order7_cache.py
+runner_sha256: cda22ce0f72422b9a7be82b8d996dc9d64e303a75387106772f5e636bbd76b48
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 189.06
+status: ok
+----- stdout -----
+ORDER-7 CACHE WRAPPER
+  executes: python3 scripts/frontier_beta6_connected_coefficient_2026_05_30.py 7
+  parent_sha256: e536150e66fdd3d041cd023d8ed1d807484a65a65314994ee34b9f71b49d2f8f
+
+==============================================================================
+EXACT ORDER-beta^6 (+beta^7) CONNECTED PLAQUETTE COEFFICIENT
+==============================================================================
+
+V0. exact SU(3) single-link Haar integrator
+  [PASS] int U Ubar = (1/3) delta_ik delta_jl
+  [PASS] int U U U = (1/6) eps_ijk eps_lmn
+  [PASS] singlet dimensions N0(p,q) match reference table
+         checked [(0, 3), (1, 1), (1, 4), (2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 3), (4, 0), (4, 1)]
+
+V1. exact free-Haar plaquette moments
+  [PASS] <X_p0> = 0
+  [PASS] <X_p0^2> = 1/18
+  [PASS] <X_p0^3> = 1/108
+
+Enumerating connected leaf-free GF(3)-closable supports (capped at size 6) ...
+  GF(3)-closable contributing supports by size: {5: 4}
+  (leaf-free supports by size, diagnostic):     {4: 28, 5: 452, 6: 5966}   (12.4s)
+
+V2. order-beta^5 coefficient (cited anchor)
+  [PASS] per-shell connected cumulant = 2*(1/6)^6*3^(V-E) = 1/18^5 (note Thm 4)
+         engine kappa = 1/1889568, closed form 2*(1/6)^6*3^-4 = 1/1889568
+  [PASS] d_5 = 1/472392 = 4/18^5 (four cube shells)
+         d_5 = 1/472392, contributing supports = 4 (each 1/1889568 = 1/18^5)
+
+V3. order-beta^6 distinct-support structure
+  [PASS] zero size-6 distinct supports are GF(3)-closable (=> d_6 from the four cube shells via order-6 multiplicity only)
+         GF(3)-closable size-6 supports = 0 (of 5966 leaf-free)
+
+V4. order-beta^6 coefficient (NEW exact result)
+  [PASS] d_6 = 7/5668704 (exact)
+         d_6 = 7/5668704 = 1.234850e-06; per shell 7/22674816 = 7/(12*18^5), 4 shells => 7/5668704
+  [PASS] per-shell ratio d_6/d_5 = 7/12 (clean rational)
+         d_6/d_5 = 7/12
+
+V4b. two-engine agreement: optimized Fraction engine vs sympy engine
+  [PASS] Fraction engine reproduces sympy d_5 = 1/472392 EXACTLY
+         Fraction d_5 = 1/472392
+  [PASS] Fraction engine reproduces sympy d_6 = 7/5668704 EXACTLY (SU(3) link-integral formulas validated against the order-6 value)
+         Fraction d_6 = 7/5668704
+
+V5. order-beta^7 coefficient (NEW exact result, optimized engine)
+  GF(3) cycle-space (dist<=2 patch): dim=28, elementary cubes=28, cubes span cycle space=True, cubes through p0=4
+  weights of 2-cycles through p0 (<=2 cube combos): {6: 8, 10: 80, 11: 92, 12: 224}
+  [PASS] no GF(3)-closable distinct support of size 6 or 7 exists (cube boundaries span the cycle space; min cycle weight through p0 = 6)
+         min 2-cycle weight through p0 = 6; => only the four cube shells contribute through order 7
+  computing d_7 from the four cube shells (order-7 multiplicity), optimized Fraction engine ...
+  [PASS] d_7 is an exact rational, four cube shells (per-shell identical)
+         d_7 = 5/17006112 = 2.940119e-07 (computed in 119.0s); per-shell = 5/68024448 (4 identical shells)
+  [PASS] d_7 exact value = 5/17006112
+         d_7 = 5/17006112; d_7/d_6 = 5/21 = 0.238095 (per-shell d_7 = 5/68024448)
+
+V5b. tadpole / geometric ansatz verdict (independent d_7 vs prediction)
+  d_6/d_5 = 7/12 ~ 0.583333   (the ansatz's assumed ratio)
+  d_7/d_6 = 5/21 ~ 0.238095   (the ACTUAL next ratio)
+  d_7^pred = (7/12)*d_6 = 49/68024448 ~ 7.203293e-07
+  d_7^exact            = 5/17006112 ~ 2.940119e-07
+  relative miss = 0.5918 (harness support window = 0.05)
+  [PASS] bounded verdict: tadpole/geometric ansatz falsified at order 7 (exact d_7 != (7/12)*d_6; per-order ratio is NOT constant)
+         d_7/d_6 = 5/21 != d_6/d_5 = 7/12; the geometric prediction misses the exact d_7 by 59.2% (>> 5%): this rejects the single-ratio geometric continuation pattern
+
+V6. SU(3) Haar Monte-Carlo validation of the exact integrator (CHECK, not input)
+  [PASS] MC <|TrU|^2> = 1 (fundamental character orthonormality)
+         MC=1.0004
+  [PASS] MC <(TrU)^3> = 1 (baryon singlet, epsilon sector)
+         MC=(0.9972938417009111+0.0008771456016019224j)
+  [PASS] MC <|TrU|^4> = 2 (two singlets in 3^2 x 3bar^2)
+         MC=1.9864
+  [PASS] exact integrator: <X_p0^2>*36 = 2 (= <|TrU|^2> + <(TrU)^2>conj-cross)
+         36*<X_p0^2> = 2
+  [PASS] optimized Fraction integrator agrees with sympy on <X_p0^2>, <X_p0^3>
+         Fraction <X_p0^2> = 1/18, <X_p0^3> = 1/108
+
+==============================================================================
+EXACT CONNECTED COEFFICIENTS OF Delta(beta) = P_full - P_1plaq:
+   d_5 = 1/472392 = 2.11688598e-06
+   d_6 = 7/5668704 = 1.23485015e-06
+   d_7 = 5/17006112 = 2.94011941e-07
+   per-order ratios: d_6/d_5 = 7/12, d_7/d_6 = 5/21  (NOT constant => no single geometric tail)
+==============================================================================
+SCORECARD: PASS=22 FAIL=0   (188.8s)
+==============================================================================
+This is an exact strong-coupling series coefficient (bounded result).
+It does NOT close beta=6. The exact d_7 (optimized engine) falsifies
+the single-ratio tadpole/geometric ansatz
+(d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop
+{6:7/5668704, 7:5/17006112} into the harness
+scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py for the
+SUPPORT/FALSIFY scorecard line.
+
+----- stderr -----
+

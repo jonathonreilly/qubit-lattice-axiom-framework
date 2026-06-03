@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 649 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1162 |
+| unaudited | 1161 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 103 |
+| ~~audited_conditional~~ | 104 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 993 |
-| `audited_conditional` | 103 |
+| `audited_conditional` | 104 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1401 |
+| `unaudited` | 1400 |
 
 | claim_type | count |
 |---|---:|
@@ -1195,6 +1195,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_records_objectivity_conditional_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9457,6 +9458,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** A single real anti-Hermitian D=Jcs supports both the antisymmetric bilinear/Pfaffian doublet count and the Hermitian iD/determinant doublet count, so real matrix D does not select the Wick face.  _(class `A`)_
 - **chain closes:** True — The finite construction directly exhibits both admissible faces on the same real anti-Hermitian operator. Therefore D-reality alone is insufficient; the remaining field-reality/measure selector is explicitly outside the claim rather than a hidden premise.
 - **rationale:** The load-bearing step is class-A finite linear algebra: real skew D gives both an antisymmetric bilinear and Hermitian iD, while Pfaffian versus determinant degrees distinguish the two counts. The runner source actually constructs C, Jcs, the doublet restriction, Pf/det degrees, and the generic Hermitian circulant check; it does not import PDG data, tuned values, or opaque helpers. The cited authorities are retained-grade and the note keeps the Wick-face selector as an explicit residual, not as a derived conclusion.
+- **auditor confidence:** high
+
+### `koide_records_objectivity_conditional_note_2026-05-31`
+
+- **Note:** [`KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional two-block algebra: assuming equal-block (1,1) weighting and a records/objectivity maximization principle, the capacity extremum is r=1/2 and Q=2/3; dephasing/trace comparison is separated as the dimension-weighted r=1 channel.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-104924-5993fa23-koide_records_objectivit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For general weights w_s log E_+ + w_p log E_perp, the maximum occurs at r*=w_p/(2 w_s), so equal weights give r=1/2 and Q=(1+2r)/3=2/3.  _(class `A`)_
+- **chain closes:** True — The optimizer algebra and Q conversion close on the stated assumptions. The packet does not derive the two assumptions, so the result closes only as a conditional bounded theorem, not as an unconditional Koide derivation.
+- **rationale:** The load-bearing calculation is class-A algebra: maximizing the weighted two-block log functional gives r*=w_p/(2 w_s), with equal weights yielding r=1/2 and Q=2/3. The same calculation distinguishes the dimension-weighted counterfactual at r=1, so the conditional is non-circular on its own terms. However, the source expressly imports the equal-block metric and objectivity maximization principle, and the cited Koide authorities identify equal-block/weight selection as open or bounded rather than retained as a physical selector. The runner's F5 unforced-premise check is a hard-coded citation/prose assertion rather than an independent computation, and a formula-inventory pass found a non-load-bearing parity typo in the kappa authority validation line: sign = d mod 2 should be 1 for even d and 0 for odd d.
+- **open / conditional deps cited:**
+  - `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
+  - `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16`

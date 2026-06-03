@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 643 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1182 |
+| unaudited | 1181 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
-| ~~audited_renaming~~ | 26 |
+| ~~audited_renaming~~ | 27 |
 | ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
@@ -68,8 +68,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
-| `audited_renaming` | 26 |
-| `unaudited` | 1421 |
+| `audited_renaming` | 27 |
+| `unaudited` | 1420 |
 
 | claim_type | count |
 |---|---:|
@@ -1337,6 +1337,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `flavor_readout_gate_equals_carrier_identification_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -5843,6 +5844,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Any entropy-increasing flow on the 2-sector power distribution drives toward its max-entropy uniform point p=1/2, equivalently r=1/2, with g(r)=sqrt(r/2) as a concrete stable instance.  _(class `A`)_
 - **chain closes:** False — The displayed algebra checks close for the concrete map, HS sector equipartition, Q relation, and endpoint spectra. The missing step is a bridge theorem deriving that charged-lepton r physically evolves by a strict thermalizing flow on the 2-isotype-sector simplex; the unrestricted claim about any entropy-increasing flow is also broader than what the runner proves.
 - **rationale:** The runner performs real finite algebra/calculus checks rather than merely printing constants: S'(1/2)=2, g'(1/2)=1/2, HS equipartition at r=1/2, endpoint spectra, the Q values, and the sigma/Casimir correction are consistent under the note's conventions. However, those checks establish stability only after selecting the 2-sector coarse-graining and a particular thermalizing arrow. The source note explicitly identifies both the partition choice and the physical arrow binding as posits, so the conclusion does not close from the restricted packet alone.
+- **auditor confidence:** high
+
+### `flavor_readout_gate_equals_carrier_identification_2026-05-31`
+
+- **Note:** [`FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audit of the finite C3 generation-space algebra and whether the intensive/extensive readout choice closes as a bounded theorem rather than a relabeling of the carrier/basepoint choice.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-034229-7878b18c-flavor_readout_gate_equa`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's operative step is that asserting the physical observable to be the intensive C3 Atiyah-Bott density on intrinsic R3 at the z=0 zero-section, rather than the Gamma5-graded extensive lattice index, is simultaneously the carrier identification and the zero-section pick.  _(class `F`)_
+- **chain closes:** False — The displayed C3, transverse determinant, J_cs, and L3 arithmetic checks close, but they do not derive the physical readout identification. The missing step is an independent bridge theorem forcing the intensive intrinsic-R3 z=0 readout as the physical observable rather than naming that choice as the carrier/basepoint gate.
+- **rationale:** The runner genuinely checks the finite C3 algebra and J_cs commutation facts, and an independent formula pass did not expose a sign, factor, or normalization error in those displayed identities. Those facts support the negative that J_cs does not select the r parameter and show that both intensive and extensive readouts remain available. The conclusion equating the readout gate, carrier identification, and zero-section pick is a symbol-identity assertion over existing choices, not a first-principles derivation from the restricted packet.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

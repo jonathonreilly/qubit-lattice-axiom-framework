@@ -1,0 +1,61 @@
+Kawamoto-Smit Conditional-Realization Rescoping Companion — Verifier
+Worktree root: /private/tmp/cl3-ship-ks-rescoping-20260603/wt
+
+========================================================================================
+PART A — cite-check + ledger status on origin/main
+========================================================================================
+[PASS] A.1 parent file exists on origin/main
+       parent path: docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md; bytes seen: 10015
+[PASS] A.2.pre ledger json fetchable + contains parent row key
+       fetched docs/audit/data/audit_ledger.json on origin/main
+[PASS] A.2 parent effective_status: unaudited
+       effective_status read from origin/main ledger: 'unaudited'
+[PASS] A.3 parent claim_type: bounded_theorem
+       claim_type read from origin/main ledger: 'bounded_theorem'
+[PASS] A.4 companion note exists in this worktree
+       path: /private/tmp/cl3-ship-ks-rescoping-20260603/wt/docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md
+[PASS] A.5 companion header claim_type: bounded_theorem
+       header claim_type: bounded_theorem
+[PASS] A.6 companion does not propose a status change for the parent
+       affirmative_hits=[]; explicit unaudited disclaimer present=True
+
+========================================================================================
+PART B — inline verification of rescoped claim
+========================================================================================
+[PASS] B.1.a parent contains Step 3 header (Sublattice-parity / chirality identification)
+[PASS] B.1.b parent uses 'natural identification' (ansatz signal)
+[PASS] B.1.c parent introduces ω(x) = ε(x) · ω_global
+       this is the staggered-chirality assignment isolated as H_staggered-chirality
+[PASS] B.2.a η_1 = 1 verified on sample sites (12 sites)
+       sample size 12; first mismatch: none
+[PASS] B.2.b η_2(x) = (-1)^{x_1} verified on sample sites (12 sites)
+       sample size 12
+[PASS] B.2.c η_3(x) = (-1)^{x_1+x_2} verified on sample sites (12 sites)
+       sample size 12
+[PASS] B.2.d Kawamoto-Smit phases invariant under global U(1) phase rotation
+       T(x) -> e^{i α} T(x): η_μ unchanged
+[PASS] B.3 ε(x) · ε(x+μ̂) = -1 on every n.n. link of Z^3 (bipartite property)
+       checked 15 n.n. links; all products = -1
+[PASS] B.3.b ω(x) γ_μ ω(x+μ̂)^{-1} = -γ_μ under H_staggered-chirality (Pauli irrep)
+       per-link sign flip yields the local anticommutation supporting parent Step 5
+
+========================================================================================
+PART C — hostile-audit invariants
+========================================================================================
+[PASS] C.1 parent file byte-for-byte unchanged vs origin/main
+       on-main bytes: 10015; local bytes: 10015
+[PASS] C.2 companion does not lift parent's unaudited status
+       no promotion / lift phrases found
+[PASS] C.3 companion claim_type strictly bounded_theorem (no retained/no_go overreach)
+       bad_phrases_absent=True; bounded_theorem header present=True
+[PASS] C.4 status authority disclaimer (audit lane only) present
+       looked for 'Status authority' + 'independent audit lane'
+[PASS] C.5 H_staggered-chirality is named explicitly as conditional premise (not derived)
+       found 'H_staggered-chirality' + 'named conditional' + 'ANSATZ' markers
+[PASS] C.6 companion does not introduce new axioms or imports (no-new-axiom rule respected)
+       affirmative_intro_hits=[]; no-new-axiom rule disclaimer present=True
+
+========================================================================================
+Summary
+========================================================================================
+PASS 22 / FAIL 0 / total 22

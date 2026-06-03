@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ac_phi_lambda_principle_reclassification_verifier.py
+runner_sha256: 496391cea153b24099d2348730cfba3b4c31dbba479412560f617e724a107bb1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AC_phi_lambda principle-grade reclassification check
+note: docs/AC_PHI_LAMBDA_PRINCIPLE_RECLASSIFICATION_NOTE_2026-06-03.md
+
+PASS: source note is meta (Type)
+PASS: source note is meta (Claim type)
+PASS: does not declare effective_status value
+PASS: does not declare audit-clean verdict token
+PASS: does not add a new mathematical axiom
+PASS: reclassification of AC_phi_lambda as framework principle stated explicitly
+PASS: principle-grade parallel to P1 cited
+PASS: Tier-A registry cited explicitly
+PASS: AC_phi_lambda canonical parent (staggered-Dirac gate) cited
+PASS: radian precedent reclassification cited
+PASS: P1 principle-grade analog (extensivity primitive) cited
+PASS: K-reality selector named
+PASS: det_C / equal-power-per-block selector named
+PASS: charged-lepton sharpening 2026-06-02 cited
+PASS: no-go portfolio row named: koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24
+PASS: no-go portfolio row named: koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24
+PASS: no-go portfolio row named: koide_delta_marked_relative_cobordism_no_go_note_2026-04-24
+PASS: charged-lepton sharpening anchor cited: KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21
+PASS: charged-lepton sharpening anchor cited: KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24
+PASS: charged-lepton sharpening anchor cited: KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16
+PASS: L6 exact Q(r) cited correctly
+PASS: L7 topological 2/9 cited
+PASS: L9 r=1/2 equipartition stationary-point characterization cited
+PASS: L10 Q=2/3 <=> r=1/2 biconditional cited
+PASS: reclassification stated conditionally
+PASS: SHARPENED framing explicitly stated
+PASS: three honest framings present
+PASS: no PDG numerical mass values inserted as derivation input
+PASS: explicitly disclaims PDG-input use
+PASS: forbidden promotion absent: Q=2/3 derivation claimed
+PASS: forbidden promotion absent: r=1/2 derivation claimed
+PASS: forbidden promotion absent: AC_phi_lambda closure by declaration
+PASS: forbidden promotion absent: specific theorem promoted to retained
+PASS: forbidden promotion absent: Tier-A registry row removed
+PASS: explicit statement that AC_phi_lambda stays in tier_a_admissions.json
+PASS: explicit statement that Tier-A registry note text is unchanged
+PASS: explicit statement that no claim_type / effective_status field is modified
+PASS: chain-of-custody derived-modulo-AC_phi_lambda standing preserved
+PASS: review-loop rule present
+PASS: audit-lane authority preserved
+PASS: meta-source-note + paired-verifier governance template explicitly cited (radian precedent)
+PASS: explicit distinction between P1 principle-grade and P unit-convention
+PASS: minimal axioms note has physical Cl(3) A1
+PASS: minimal axioms note has physical Z^3 A2
+PASS: note states A1+A2 still suffice (no axiom change)
+PASS: Tier-A registry data: AC_phi_lambda label present
+PASS: Tier-A registry data: AC_phi_lambda canonical id matches staggered-Dirac gate
+PASS: Tier-A registry confirms P1 principle-grade (mild)
+PASS: chain-of-custody confirms L6 exact Q(r) is retained
+PASS: chain-of-custody confirms L9 r=1/2 equipartition is bounded candidate
+PASS: radian precedent is itself meta
+PASS: radian precedent is a reclassification (per file name + body)
+PASS: P1 extensivity-primitive analog discusses extensivity premise
+PASS: bottom-line verdict present
+PASS: comparison table to P1 / P stratification present
+PASS: scope limit (charged-lepton sector only) stated
+PASS: explicit non-derivation of r=1/2 / Q=2/3 stated
+PASS: parent gate (staggered-Dirac realization) open_gate preserved
+PASS: staggered-Dirac parent gate file confirmed open_gate on disk
+
+TOTAL: PASS=59 FAIL=0
+AC_phi_lambda principle-grade reclassification check passed: AC_phi_lambda (charged-lepton sharpening) proposed as framework principle parallel to P1, conditional / SHARPENED, no retained theorem promoted, no new axiom, no PDG input, Tier-A registry unchanged, chain-of-custody standing preserved.
+
+----- stderr -----
+

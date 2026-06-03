@@ -1,8 +1,8 @@
 {
   "by_criticality": {
-    "critical": 308,
+    "critical": 307,
     "high": 249,
-    "leaf": 375,
+    "leaf": 377,
     "medium": 303
   },
   "cycle_break_target_count": 29,
@@ -913,28 +913,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Abstract finite-dimensional matrix-algebra theorem on C^3 only: for the cyclic permutation C and three diagonal involutions T_1,T_2,T_3 with distinct joint sign characters, the sign projectors P_i are rank-1 orthogonal projectors, E_ij=P_i C^{(i-j) mod 3} P_j gives all matrix units, the generated associative algebra equals M_3(C), no proper nonzero invariant subspace exists, and the Burnside rank-one/irreducibility hypotheses are exhibited. This excludes any identification with Cl(3), Z^3, BZ-corner hw=1 triplets, staggered-Dirac, taste-cube, generation physics, charged-lepton flavor, CKM, or PMNS content.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 6,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.555,
-      "note_path": "docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_three_generation_observable_m3c_burnside_narrow.py",
-      "transitive_descendants": 751
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -28745,6 +28723,59 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "sm_identity_triangulation_convergence_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+        "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly",
+        "graph_first_su3_integration_note",
+        "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SM_IDENTITY_TRIANGULATION_CONVERGENCE_NOTE_2026-05-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_sm_identity_triangulation_convergence.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38172,6 +38203,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 72,
-  "total_pending": 1235
+  "ready_count": 73,
+  "total_pending": 1236
 }

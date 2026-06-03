@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 638 |
+| **retained_bounded** | 636 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
-| unaudited | 1229 |
+| unaudited | 1231 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -61,14 +61,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 976 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 975 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1468 |
+| `unaudited` | 1470 |
 
 | claim_type | count |
 |---|---:|
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -876,7 +875,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -1012,8 +1010,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `third_grown_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_local_algebra_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `three_generation_observable_count_corollary_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_observable_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-26` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13032,19 +13030,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing result is an exact algebraic consequence of the equations stated inside the note. The runner independently checks the reductions, quadratic discriminant, full rational solution set, Q-labelling selection, charge arithmetic, and no-N counterfactual at exact symbolic precision. The note also keeps the upstream derivation of the anomaly coefficients and y_4 = 0 outside the claim boundary, so those are not blockers for this bounded theorem.
 - **auditor confidence:** high
 
-### `sm_identity_triangulation_convergence_note_2026-05-23`
-
-- **Note:** [`SM_IDENTITY_TRIANGULATION_CONVERGENCE_NOTE_2026-05-23.md`](../../docs/SM_IDENTITY_TRIANGULATION_CONVERGENCE_NOTE_2026-05-23.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional N_c=3 hypercharge convergence from the loose anomaly family to the retained hypercharge-enumeration tuple, excluding any physical generation-count claim.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260525T123424Z-9f7c652e-sm_identity_triangulatio-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Substituting N_c = 3 into the anomaly-allowed family yields the SM hypercharge tuple and left-Weyl charge spectrum {0, ±1/3, ±2/3, ±1}.  _(class `A`)_
-- **chain closes:** True — The narrowed hypercharge statement follows by exact rational substitution from retained-grade cited inputs. The source correctly demotes the Burnside generation-count import and does not use it load-bearing for the audited claim.
-- **rationale:** The load-bearing step is a straightforward algebraic closure: take the retained anomaly family, insert the independently retained graph-first N_c = 3 selector, and compare the resulting rational tuple to the retained hypercharge-enumeration tuple. The runner source performs exact rational arithmetic rather than merely printing constants, and its ledger checks are cross-note status checks rather than external numerical comparators. The two residuals are explicitly scoped as hypotheses/residual freedoms, and the generation-count bridge is excluded from the narrowed claim.
-- **auditor confidence:** high
-
 ### `sm_relativistic_dof_count_import_note_2026-05-17`
 
 - **Note:** [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](../../docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
@@ -15262,19 +15247,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** Within its stated boundary, the proof is complete: total cube vertices are counted by the product rule, weight-w vertices by choosing w coordinates, and the d=3 row gives 1,3,3,1. The runner independently checks the same algebraic surface by exact enumeration and binomial identities with PASS=55, FAIL=0. No hidden physical import is needed because the note expressly does not derive d=3 as a substrate fact or identify the cube with Brillouin-zone corners.
 - **auditor confidence:** high
 
-### `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26`
-
-- **Note:** [`THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded abstract-C^3 bridge: given the retained distinct translation-character projectors P_Xi and the retained M_3(C) Burnside/cyclic-generation theorem, no nonzero proper subspace of C^3 is invariant under both the three coordinate projectors and the order-3 cyclic permutation; equivalently there is no nontrivial proper quotient preserving both structures. No physical hw=1 carrier, species, or matter-content identification is included.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-gpt-5.5-xhigh-audit-loop-2026-05-29`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** If 0 != V is invariant under the coordinate projectors P_Xi and the cycle sigma, then some nonzero coordinate component of v in V gives e_i in V via P_Xi, and sigma cycles e_i to every basis vector, so V=C^3.  _(class `A`)_
-- **chain closes:** True — The retained dependencies supply the coordinate projectors and full M_3(C)/cycle generation on abstract C^3, and the no-nontrivial-quotient result follows by elementary linear algebra. The audited scope excludes the zero subspace identity quotient and excludes any physical carrier or species interpretation.
-- **rationale:** The clean proof does not need hidden staggered-Dirac or physical-generation input: projector invariance extracts coordinate lines and the cyclic permutation forces the whole three-dimensional space. The runner verifies the projectors, cycle, generated matrix units, and finite sanity checks, while the independent argument covers arbitrary complex subspaces including two-dimensional cases. The no-go gate passes under the nontrivial quotient reading; a literal exclusion of the zero subspace or any physical hw=1/species claim would be outside this audited scope.
-- **auditor confidence:** high
-
 ### `three_generation_observable_count_corollary_note_2026-05-03`
 
 - **Note:** [`THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md`](../../docs/THREE_GENERATION_OBSERVABLE_COUNT_COROLLARY_NOTE_2026-05-03.md)
@@ -15287,6 +15259,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Within the restricted packet, the runner explicitly enumerates the eight BZ corners, constructs the retained 3x3 generators, builds matrix units spanning M_3(C), and applies the standard kernel-invariance quotient argument. The conclusion follows as an algebraic closure of those finite checks and stated nonzero-quotient condition.
 - **rationale:** The load-bearing quotient step is a genuine finite-dimensional algebraic closure: algebra preservation makes ker(Q) invariant, and the constructed M_3(C) action has no proper invariant subspaces. The runner does not merely print constants; it enumerates corners and constructs projectors and matrix units from explicit matrices. The upstream retained authorities are not provided in full despite being named in the note, but the supplied runner independently checks the finite claims needed for this narrow corollary.
 - **auditor confidence:** medium
+
+### `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Abstract C^3 matrix-algebra theorem: the specified C and diagonal involutions generate all matrix units and hence M_3(C), with irreducibility and Burnside corollaries.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260603T005524Z-three_generation_observa`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** For k = (i - j) mod 3, E_ij = P_i C^k P_j produces every matrix unit, so the generated algebra equals M_3(C).  _(class `A`)_
+- **chain closes:** True — Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'positive_theorem', 'A'). Representative rationale: The algebraic claim closes from the stated matrices by direct projector and matrix-unit identities, and the runner source actually verifies those identities exactly. The displayed P_1 factor annotations for e_2 and e_3 contain repairable zero-factor typos, but the resulting projector actions are correct and those slips do not invalidate the load-bearing matrix-unit derivation.
+- **rationale:** Five-judge panel round 1 majority 4/5 selected ('first', 'audited_clean', 'positive_theorem', 'A'). Representative rationale: The algebraic claim closes from the stated matrices by direct projector and matrix-unit identities, and the runner source actually verifies those identities exactly. The displayed P_1 factor annotations for e_2 and e_3 contain repairable zero-factor typos, but the resulting projector actions are correct and those slips do not invalidate the load-bearing matrix-unit derivation.
+- **auditor confidence:** judicial
 
 ### `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02`
 

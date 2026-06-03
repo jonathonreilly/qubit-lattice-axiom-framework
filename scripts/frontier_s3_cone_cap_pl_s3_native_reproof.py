@@ -13,12 +13,22 @@ PURPOSE:
   M_R = B_R u cone(boundary B_R) instantiates, and VERIFY on the explicit glued
   complex that M_R is a combinatorial 3-sphere for R = 2..N:
 
-    (1) B_R is a PL 3-ball.  Reproven via: B_R is star-shaped from the origin
-        (the present-cube set is a downset under per-axis "step toward 0"), so
-        the Kuhn/Freudenthal-triangulated complex K(B_R) COLLAPSES to a point;
-        a collapsible PL 3-manifold-with-boundary is a PL 3-ball.  The
-        load-bearing collapsibility certificate is an EXPLICIT elementary
-        free-face collapse to a single vertex (verified by execution); the
+    (1) B_R is a PL 3-ball, for ALL R.  Reproven via: the present-cube set is a
+        toward-origin cubical DOWNSET (R-free, from the separable membership
+        predicate -- L1(a)), so the Kuhn/Freudenthal-triangulated complex
+        K(B_R) is COLLAPSIBLE; a collapsible PL 3-manifold-with-boundary is a
+        PL 3-ball.  The ALL-R collapsibility certificate is the R-FREE
+        single-critical discrete Morse field of L1(b) (Forman, in the CORRECT
+        direction: single critical cell => collapsible), proven in the
+        companion runner frontier_s3_partb_allr_lemmas.py -- the matching's
+        single-criticality is a LOCAL closed rule on the link of each cell's
+        minimum vertex, that link is determined by the present subset of the 8
+        incident cubes (LOCALITY), the descending-link types form a FINITE set
+        that FREEZES, and every non-origin type is collapsible while the origin
+        contributes the sole critical cell.  This does NOT use the open
+        "star-shaped => collapsible" (Goodrick) direction.  The EXPLICIT greedy
+        free-face collapse THIS runner exhibits at small R (R <= 4) is a
+        CROSS-CHECK of that general certificate, not its basis.  The
         PL-manifold-with-boundary property is verified by the existing
         analyze_2complex vertex-link recognizer (interior links S^2, boundary
         links disks).  This is the FORWARD direction; it never references
@@ -47,14 +57,23 @@ PURPOSE:
           (C-euler) chi(M_R) = V - E + F - T = 0  (the Euler characteristic of
                     S^3; cross-check, NOT sufficient alone -- a torus also has
                     chi = 0, so this is corroboration, not the manifold content).
-        A finite pure strongly-connected 3-pseudomanifold with every vertex link
-        a combinatorial 2-sphere is a closed combinatorial 3-MANIFOLD; combined
-        with the explicit BY-CONSTRUCTION decomposition into two PL 3-balls
-        glued along their common boundary PL 2-sphere [facts (1) and (2),
-        each carried here by its own executed collapse + link witness], it is a
-        combinatorial 3-SPHERE.  The S^3 conclusion comes from the union-of-two-
-        balls reading, NOT from "closed 3-manifold => S^3" (which would only
-        give a manifold).
+        For ALL R the S^3 conclusion is obtained from the EASY direction of
+        Newman doubling: the union of two combinatorial 3-balls along their
+        common combinatorial 2-sphere is a combinatorial 3-sphere.  The two
+        balls are K(B_R) (Fact 1, an R-free PL 3-ball by L1) and the cone-cap
+        (Fact 2, an R-free PL 3-ball by L2); their common boundary is the PL
+        2-sphere boundary(B_R) (Part A, all R).  The two-ball decomposition is
+        an R-free SET IDENTITY forced by the join (st(apex) = cone-cap,
+        lk(apex) = boundary(B_R), M - int st(apex) = K(B_R)); see the gluing
+        identities in frontier_s3_partb_allr_lemmas.py.  The criterion clauses
+        above [(C-pm) every 2-face degree 2; (C-link) every vertex link a
+        combinatorial 2-sphere; (C-sc) strong connectivity; (C-euler) chi = 0,
+        cross-check only -- a torus also has chi = 0] are STRUCTURAL
+        consequences of the two-ball/cone FORM and are verified here on the
+        EXPLICIT glued complex as a non-vacuity cross-check.  The S^3
+        conclusion comes from the union-of-two-balls reading (easy Newman
+        doubling), NOT from "closed 3-manifold => S^3" (PL Poincare), which is
+        structurally avoided.
 
 NATIVE, NOT IMPORTED (reprove-and-cite):
   This runner REPROVES the three facts from simplicial primitives.  Newman
@@ -692,8 +711,14 @@ def check_fact1_ball(R: int, do_collapse: bool) -> None:
               rem == 1 and surv is not None and len(surv) == 1,
               f"remaining_cells={rem} surviving_vertex={surv}")
     else:
-        print(f"  [SKIP] R{R}: (1d) explicit collapse "
-              f"(verified at smaller R; combinatorially identical mechanism)")
+        print(f"  [SKIP] R{R}: (1d) explicit greedy collapse at this radius "
+              f"(heavy). The ALL-R collapsibility of K(B_R) is NOT this "
+              f"finite greedy run: it is the R-free single-critical discrete "
+              f"Morse field of L1(b), proven in "
+              f"frontier_s3_partb_allr_lemmas.py (Forman, single critical cell "
+              f"=> collapsible; criticality LOCAL, descending-link types "
+              f"FROZEN + collapsible). This greedy collapse is a small-R "
+              f"cross-check of that general certificate.")
 
 
 # ===========================================================================
@@ -773,8 +798,12 @@ def check_fact2_cone(R: int, do_collapse: bool) -> None:
               remg == 1 and survg is not None and len(survg) == 1,
               f"remaining_cells={remg} surviving_vertex={survg}")
     else:
-        print(f"  [SKIP] R{R}: (2e) explicit cone collapse "
-              f"(verified at smaller R; combinatorially identical mechanism)")
+        print(f"  [SKIP] R{R}: (2e) explicit cone collapse at this radius "
+              f"(heavy). The cone collapses to its apex for ANY base by the "
+              f"R-free canonical join matching (L2; base-agnostic, verified on "
+              f"octahedron / icosahedron / tetra-boundary in "
+              f"frontier_s3_partb_allr_lemmas.py and this runner). This greedy "
+              f"collapse is a small-R cross-check of that general fact.")
 
 
 # ===========================================================================

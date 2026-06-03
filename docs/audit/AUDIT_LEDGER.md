@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 642 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1194 |
+| unaudited | 1193 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 83 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -66,10 +66,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 985 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 55 |
-| `audited_failed` | 46 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1433 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
@@ -1271,6 +1271,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_complex_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_fm_transfer_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fifth_family_radial_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -5605,6 +5606,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Charge conjugation acts as the identity on the generation index, so the charged-lepton Dirac reality structure restricts on generation space to the central scalar i·I3 rather than to a doublet complex structure.  _(class `A`)_
 - **chain closes:** False — The displayed matrix identities check out under the runner's definitions, including the no-circulant-anticommutant claim by diagonalizing circulants with Γχ. The full physics conclusion does not close because the packet does not derive or cite the bridge from charged-lepton Dirac charge conjugation to the generation operator iI3, and the runner assumes that bridge by setting U=iI3.
 - **rationale:** The runner performs real algebraic checks rather than merely printing constants, and the core finite-matrix formula family is consistent with the stated C3/circulant conventions. However, the load-bearing physical identification is imported: the source asserts that Dirac charge conjugation is generation-blind and therefore acts as iI3 on the generation factor, while the restricted packet contains no retained authority or derivation of that spinor-to-generation bridge. The broader statements that the two listed obstructions are exactly exhaustive routes to κ=2 and that continuous levers are exhausted are also not closed by the provided one-hop packet.
+- **auditor confidence:** high
+
+### `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND5_TRACE_VS_CENTER_STATE_FINAL_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND5_TRACE_VS_CENTER_STATE_FINAL_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the restricted-packet claim that the C3 central-idempotent decomposition supports trace 1:2 versus equal-block 1:1 states, and that the equal-block state is an admissible, C3-compatible but unforced residual rather than a U(1)_b wall.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-030657-3696f0d3-flavor_find_j_round5_tra`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The center-symmetric state is claimed to be reached by the discrete conditional expectation E(A)=e0Ae0+e1Ae1 onto the center, making the r=1/2 route C^3=I-compatible and not a U(1)_b obstruction.  _(class `A`)_
+- **chain closes:** False — The idempotent ranks and simple ratios check, but the displayed E(A)=e0Ae0+e1Ae1 map is only a block compression: for a general 3x3 input it need not land in the center/commutant, while on R[C3] it is just the identity. The packet also does not derive the trace-default, Frobenius beta-family, Q(r) normalization, or prior U(1)_b obstruction claims from supplied authorities.
+- **rationale:** The runner genuinely verifies the elementary central-idempotent arithmetic, but it does not compute the load-bearing framework conclusion. R5-5 is hard-coded as True, and the runner imports the trace-default and unforced-beta-family claims as narrative rather than deriving them. The strict formula inventory also blocks a clean verdict: E(A)=e0Ae0+e1Ae1 is not, as written, a conditional expectation onto the center that produces the equal central-block state. Therefore the presented derivation does not close on its own terms under the restricted packet.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py
-runner_sha256: 68d8d90af5cc3643b58b90875058346bc6624dd07395c8f4eaffe14d8bddecb7
+runner_sha256: d228995d9ea80a8d9453348ad7905aac69e9b6e946826c9f77c9f87b50ee4630
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 33.78
+elapsed_sec: 28.37
 status: ok
 ----- stdout -----
 Finite Z4 Staggered-Grading Trace Verifier
@@ -57,7 +57,7 @@ Status: bounded source theorem. No audit-lane wiring.
 === V6 [non-trivial U: machinery + observed index, L=4] ===
   L=4: A[1, U=I]    = 8.382184e-15  (observed integer: 0)
   L=4: A[1, U_wind] = -2.442491e-15  (observed integer: 0)
-  L=4: winding background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
+  L=4: non-identity / nonflat U(1) link background (mu=1 boundary twist) exists and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L; no plaquette-loop / flux-quantization invariant is computed or asserted; non-zero-index existence is bounded-scope per the note).
 [PASS] V6a/L=4: A[1, U_wind] integer-valued  A_wind = -2.442491e-15, nearest int = 0
 [PASS] V6b/L=4: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 2.50e-16
 [PASS] V6c/L=4: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 2.44e-15
@@ -107,7 +107,7 @@ Status: bounded source theorem. No audit-lane wiring.
 === V6 [non-trivial U: machinery + observed index, L=6] ===
   L=6: A[1, U=I]    = -1.593170e-14  (observed integer: 0)
   L=6: A[1, U_wind] = 6.661338e-15  (observed integer: 0)
-  L=6: winding background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
+  L=6: non-identity / nonflat U(1) link background (mu=1 boundary twist) exists and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L; no plaquette-loop / flux-quantization invariant is computed or asserted; non-zero-index existence is bounded-scope per the note).
 [PASS] V6a/L=6: A[1, U_wind] integer-valued  A_wind = 6.661338e-15, nearest int = 0
 [PASS] V6b/L=6: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 9.71e-16
 [PASS] V6c/L=6: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 6.66e-15

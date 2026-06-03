@@ -31,11 +31,15 @@ does not assert an ABJ import-retirement theorem:
             U_mu(x) -> G(x)^* U_mu(x) G(x+mu^),
             Tr[eps exp(-t D†D[U])] is unchanged.
 
-  V6 [non-trivial U]: Exhibit an explicit U(1) background with
-            non-zero winding around the (x0, x1) plane and verify
-            that the integer-index machinery runs on it. The observed
-            staggered index on the tested small even boxes is zero;
-            non-zero-index existence is not claimed.
+  V6 [non-trivial U]: Exhibit a non-identity / nonflat U(1) link
+            background (realized by a `mu=1` boundary twist on the
+            periodic Z4 torus; identifier "U_wind" is retained as a
+            tag only, NOT a quantized-flux / plaquette-winding
+            claim) and verify that the integer-index machinery runs
+            on it. The observed staggered index on the tested small
+            even boxes is zero; non-zero-index existence is not
+            claimed. No plaquette-loop or Polyakov-loop invariant is
+            computed here.
 
   V7 [size-independence of structural facts]: Repeat V2-V5 on L=4
             AND L=6 to confirm the lattice algebra does not depend
@@ -46,6 +50,17 @@ script exits 0 iff PASS_COUNT > 0 and FAIL_COUNT == 0.
 
 No local-counterterm cohomology claim. No ABJ import retirement. No
 audit-lane wiring. No retained-status claim. Source-only.
+
+Background-label honesty (2026-06-03): The `winding_u1_background`
+function and `U(1)-winding` / `U_wind` labels in the V2-V6 check
+strings are retained as identifiers only. They do NOT carry a
+plaquette-winding / constant-plaquette / quantized-flux claim. The
+literal background applied is an identity-link configuration with a
+`mu=1` boundary twist on the periodic Z4 torus, sufficient to give a
+non-identity / nonflat link configuration for V2/V5/V6 machinery
+checks. The paired source note's plaquette/Polyakov-loop invariant
+audit conditional is discharged by this label-honesty rename; the
+numerical content is unchanged.
 """
 
 from __future__ import annotations
@@ -179,27 +194,42 @@ def apply_u1_gauge_rotation(link_phases, gauge_phases, L):
 
 
 def winding_u1_background(L):
-    """Explicit U(1) link background with non-zero winding in the
-    (x_0, x_1) plane.
+    """Non-identity / nonflat U(1) link background on the periodic Z4
+    torus, realized by a `mu=1` boundary twist.
 
-    We choose a "constant magnetic flux" background quantized so the
-    holonomy around every (x_0, x_1) plaquette is exp(2*pi*i*n / L^2)
-    with n=1 (one flux quantum total through the (x_0, x_1) torus).
+    Background-label honesty (2026-06-03): the function name and the
+    `winding` tag in callers are retained as identifiers only. This
+    function does NOT compute or assert a plaquette-winding /
+    constant-magnetic-flux / quantized-flux / Polyakov-loop
+    invariant. The literal link configuration set below is:
+      - `mu = 0, 2, 3`: identity links everywhere.
+      - `mu = 1`: a position-dependent U(1) phase `exp(-i*c0*x[0])`
+        with `c0 = 2*pi/L^2`, plus a compensating boundary twist
+        `exp(+i*c1*x[0])` with `c1 = 2*pi/L` on the slice `x[1] = L-1`.
+    This is a non-identity, non-flat link configuration, which is all
+    that is needed for the V2/V5/V6 machinery checks (eps-D
+    anticommutation, gauge-invariance, integer-valuedness on a
+    non-trivial U). The plaquette / Polyakov-loop invariant of this
+    configuration is NOT computed or asserted by this runner; the
+    paired source note explicitly does not claim flux-winding.
     """
     N = L ** 4
     phases = np.ones((4, N), dtype=complex)
     flux_quanta = 1
-    # A_mu choice: A_1(x) = -(2 pi n / L^2) * x_0, A_0(x) = 0 except
-    # on the boundary x_1 = L-1 -> 0 where we add a compensating
-    # twist A_0(x) = (2 pi n / L) * x_1 to make the total holonomy
-    # consistent with periodic boundaries (Landau-gauge-like).
+    # Honest description of the actual link assignment:
+    # A_1(x) = -(2 pi / L^2) * x_0 with a compensating boundary twist
+    # on x_1 = L-1; mu = 0, 2, 3 stay at identity. This is a non-
+    # identity U(1) link configuration. It is NOT verified here that
+    # this is a constant-plaquette / flux-winding background; that
+    # would require an additional plaquette-loop computation, which
+    # the paired note explicitly does not claim.
     two_pi_n_over_L2 = 2.0 * np.pi * flux_quanta / (L * L)
     two_pi_n_over_L = 2.0 * np.pi * flux_quanta / L
     for x in product(range(L), repeat=4):
         ix = site_index(x, L)
-        # U_1(x) = exp(i A_1(x)) = exp(-i (2pi n / L^2) x_0)
+        # U_1(x) = exp(-i (2pi / L^2) x_0)
         phases[1, ix] = np.exp(-1j * two_pi_n_over_L2 * x[0])
-        # Compensating twist on the x_1 = L-1 -> 0 link
+        # Compensating boundary twist on the x_1 = L-1 -> 0 link
         if x[1] == L - 1:
             phases[1, ix] *= np.exp(1j * two_pi_n_over_L * x[0])
         # mu = 0, 2, 3 stay at identity
@@ -374,18 +404,19 @@ def check_V5_gauge_invariance(L, seed):
 
 
 def check_V6_winding_background(L):
-    """Exhibit a U(1) background with non-zero winding and report the
-    integer index the staggered-Dirac machinery observes on it.
+    """Exhibit a non-identity / nonflat U(1) link background (the
+    `mu=1` boundary-twist configuration returned by
+    `winding_u1_background`) and report the integer index the
+    staggered-Dirac machinery observes on it.
 
     Honest scope: this check is about the *machinery* (integer-
     valuedness, reproducibility, gauge-invariance, spectral
-    consistency) running correctly on a non-trivial U. On these
-    small even tori with quantized U(1) flux, staggered Dirac is
-    known in the literature (Adams 2002) to typically produce
-    paired chiralities so n_+ - n_- = 0; getting robust non-zero
-    indices on small lattices generally requires the overlap-Dirac
-    construction. The successor note explicitly flags
-    non-zero-index *existence* as bounded scope and NOT load-bearing.
+    consistency) running correctly on a non-trivial U. The
+    `winding` identifier is a background tag only; this function
+    does NOT compute or verify a plaquette-winding / constant-flux /
+    Polyakov-loop invariant, and the paired source note makes no
+    such claim. The successor note explicitly flags non-zero-index
+    *existence* as bounded scope and NOT load-bearing.
     """
     print(f"\n=== V6 [non-trivial U: machinery + observed index, L={L}] ===")
     eps = epsilon_diagonal(L)
@@ -398,10 +429,12 @@ def check_V6_winding_background(L):
     print(f"  L={L}: A[1, U=I]    = {A_free:.6e}  (observed integer: {int(round(A_free))})")
     print(f"  L={L}: A[1, U_wind] = {A_wind:.6e}  (observed integer: {int(round(A_wind))})")
     print(
-        f"  L={L}: winding background DOES exist and the machinery DOES run; "
+        f"  L={L}: non-identity / nonflat U(1) link background (mu=1 "
+        f"boundary twist) exists and the machinery DOES run; "
         f"observed staggered index on this small lattice is "
-        f"{int(round(A_wind))} (zero on these small L — "
-        "expected from Adams 2002; non-zero existence is bounded-scope per the note)."
+        f"{int(round(A_wind))} (zero on these small L; "
+        "no plaquette-loop / flux-quantization invariant is computed "
+        "or asserted; non-zero-index existence is bounded-scope per the note)."
     )
 
     # Both must be integer.

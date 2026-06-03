@@ -52,9 +52,10 @@ nearest-neighbor staggered Dirac matrix on `Lambda` coupled to U(1)
 link phases, and let `epsilon = diag(epsilon(x))`.
 
 For the finite boxes and backgrounds exercised by the runner
-(`L in {4,6}`, free links, random U(1) links, and the explicit
-flux-winding U(1) background), the following bounded facts hold to the
-printed tolerances:
+(`L in {4,6}`, free links, random U(1) links, and a non-identity /
+nonflat U(1) link background realized by a `mu=1` boundary twist on
+the periodic Z4 torus; no plaquette-winding / flux-quantization claim
+is made), the following bounded facts hold to the printed tolerances:
 
 1. The heat-kernel regularized Jacobian functional
    `alpha -> sum_x alpha(x) epsilon(x) <x|exp(-t D^\dagger D)|x>`
@@ -67,9 +68,14 @@ printed tolerances:
    chirality count `n_+ - n_-`, and is integer-valued within numerical
    tolerance.
 4. `A_t[U]` is invariant under tested U(1) gauge rotations.
-5. The explicit flux-winding U(1) background is non-trivial as a link
-   background, but the observed staggered index on the tested small
-   even boxes is zero. Non-zero-index existence is not claimed.
+5. The non-identity / nonflat U(1) link background (realized by a
+   `mu=1` boundary twist on the periodic Z4 torus) is non-trivial as
+   a link configuration, but the observed staggered index on the
+   tested small even boxes is zero. No plaquette-winding / flux-
+   quantization / Polyakov-loop invariant is computed or claimed; the
+   `winding`/`U_wind` labels in the runner are background tags only,
+   not assertions of a quantized topological invariant. Non-zero-
+   index existence is not claimed.
 
 The theorem-grade content is the finite matrix identity and its
 bounded numerical verification on the listed boxes. The note is not an
@@ -80,8 +86,8 @@ ABJ anomaly theorem.
 For each nearest-neighbor hop on an even periodic Z4 torus, changing a
 single coordinate flips `epsilon(x)`. Therefore the massless staggered
 Dirac matrix satisfies `epsilon D epsilon = -D`; the runner checks this
-directly for the tested free, random U(1), and flux-winding U(1)
-backgrounds.
+directly for the tested free, random U(1), and non-identity / nonflat
+U(1) (`mu=1` boundary-twist) backgrounds.
 
 Because `D` is finite-dimensional and anti-Hermitian in this staggered
 construction, `D^\dagger D` is Hermitian positive semidefinite and
@@ -119,6 +125,24 @@ regularizer has been fixed.
   `1/(16 pi^2) tr(F wedge F)` formula is proved here.
 - No non-abelian gauge-group generalization is proved here.
 - No physical (3,1) Lorentzian decomposition is proved here.
+- **Background-label honest-rename (2026-06-03; editorial, audit lane
+  to decide):** The previously used phrases "flux-winding U(1)
+  background" and "constant-plaquette" in this note and the paired
+  runner have been replaced by the literal description: "non-identity
+  / nonflat U(1) link background realized by a `mu=1` boundary twist
+  on the periodic Z4 torus". The runner does NOT compute a
+  plaquette-loop or Polyakov-loop invariant on this background, and
+  this note makes no plaquette-winding / flux-quantization claim.
+  The `winding` / `U_wind` identifiers in the runner are retained
+  only as background tags (no semantic claim), so cached numbers and
+  diffs are unchanged. The narrow bounded V1-V7 checks (eps-D
+  anticommutation, t-independence, integer-valuedness, gauge
+  invariance, machinery runs on a non-identity link configuration)
+  hold as stated; the rename is a label-honesty fix, not a science
+  change. This addresses the conditional flagged on the
+  `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`
+  audit row regarding background labeling vs. invariant-check
+  coverage.
 
 ## External Context
 

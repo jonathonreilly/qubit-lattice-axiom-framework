@@ -12,6 +12,27 @@ audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py`](../scripts/audit_companion_massless_vector_polarization_count_from_lorentz_and_gauge_2026_05_28.py)
 
+## 2026-06-03 Abstract quotient bridge
+
+The exact abstract quotient identity named by the audit repair target has now
+been split into a separate source note:
+[`MASSLESS_VECTOR_NULL_QUOTIENT_EXACT_LINEAR_ALGEBRA_THEOREM_NOTE_2026-06-03.md`](MASSLESS_VECTOR_NULL_QUOTIENT_EXACT_LINEAR_ALGEBRA_THEOREM_NOTE_2026-06-03.md).
+
+That note proves only the finite-dimensional complex-linear-algebra theorem
+
+```text
+dim_C(ker L_k / span_C{k}) = 2
+```
+
+for a nonzero null vector `k` in a four-dimensional complex vector space with a
+nondegenerate bilinear form. It does not assert Lorentzian spacetime,
+plane-wave decomposition, gauge redundancy, Lorenz gauge, or a physical
+photon/gluon/gauge-boson interpretation.
+
+Consequently, the new note can serve as one-hop exact support for the
+algebraic quotient core of this theorem after independent audit, but it does
+not by itself close this note's physical AC1-AC5 admissions.
+
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
 The 2026-05-28 audit verdict was `audited_conditional`:

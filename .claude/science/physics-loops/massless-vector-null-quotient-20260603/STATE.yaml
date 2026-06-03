@@ -1,0 +1,31 @@
+slug: massless-vector-null-quotient-20260603
+branch: physics-loop/massless-vector-null-quotient-20260603
+base: origin/main
+started: 2026-06-03
+target_status: exact-support
+active_route: abstract quotient split
+hard_residual: >
+  Audit accepts the algebraic quotient calculation, but the older physical
+  massless-vector note imports Lorentzian free-field/gauge/Lorenz-context
+  admissions. The tractable bridge is to split out the exact quotient theorem
+  with no physical QFT admission.
+files_touched:
+  - docs/MASSLESS_VECTOR_NULL_QUOTIENT_EXACT_LINEAR_ALGEBRA_THEOREM_NOTE_2026-06-03.md
+  - scripts/massless_vector_null_quotient_exact_linear_algebra_2026_06_03.py
+  - logs/runner-cache/massless_vector_null_quotient_exact_linear_algebra_2026_06_03.txt
+  - docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md
+  - .claude/science/physics-loops/massless-vector-null-quotient-20260603/
+trace_gate_classification: direct_blocker_closure
+current_surface_status: exact-support
+proposal_allowed: false
+proposal_allowed_reason: >
+  This branch intentionally uses exact-support wording. Independent audit must
+  decide whether the new abstract theorem becomes retained and whether/how the
+  older physical row should be narrowed or re-audited.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: >
+  Reviewer should inspect the theorem boundary, runner, and old-note bridge
+  wording; if accepted, queue the new exact theorem for audit and use it as
+  one-hop algebraic support for the older conditional row.
+stop_condition: PR opened for reviewer.

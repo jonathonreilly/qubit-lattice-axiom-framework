@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py
-runner_sha256: 216f24dce62798607eb2f456fd29deb90a5c06afd251216a54a850fd8ab22294
+runner_sha256: 8ed359be27a0275428f20e82cc3b3aacc1848f1ed5da0ac44c4393ee45c80553
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 [PASS] C1 ||I||^2=3, ||J-I||^2=6, <I,J-I>_HS=0 (canonical trace-orthogonal split)
 [PASS] C2 three-way fork: channel->1/2, idempotent->17/2-6sqrt2, mode->1
        channel r=1/2, idempotent r=17/2 - 6*sqrt(2)~0.0147, mode r=1
-[PASS] C3 family r=1/(N-1): N=3 -> r=1/2 (Q=2/3); r=1/2 forced BY n_gen=3
+[PASS] C3 conditional family r=1/(N-1): N=3 -> r=1/2 (Q=2/3) if generator-channel HS measure is selected
        {2: '1', 3: '1/2', 4: '1/3', 6: '1/5'}; Q(N=3)=1/3+2/3*(1/2)=2/3
 [PASS] C4 Kahler moment-map 1*(a^2+4b^2)=2*(a^2+b^2) -> r=1/2 (distinct derivation)
        predicts Q=2/3 <=> complex b (Dirac); Majorana (real b) departs
@@ -19,13 +19,15 @@ status: ok
        value lane is clean; not a chiral/anticommuting operator
 
 SCORECARD PASS=6 FAIL=0
-ANSWER: the missing ingredient is a MEASURE axiom (which invariant form + partition the
-substrate algebra carries), NOT a dynamical law. 13/14 traditions collapse to the one
-identity 3a^2=6b^2; the dynamical dressings add no content. Best realized as REVISING A1 ->
-candidate revised Axiom 1: on-site carrier = R[Z3] in tracial standard form, making the (1,2) isotypic weight a
-CARRIER property; then r=1/(N-1)=1/2 is INHERITED, not selected. Cost: re-derive the qubit
-on this carrier. Falsifiable: r=1/(N-1) ties 1/2 to n_gen=3; Kahler -> Majorana nu off 2/3;
-PT -> leptons at the reality edge. The VALUE lane is decoupled from the chirality gate.
+ANSWER: the algebraic route to r=1/2 is a MEASURE selection (which invariant form +
+partition the substrate algebra carries), NOT a dynamical law. The checks collapse to
+the identity 3a^2=6b^2 under generator-channel HS scoring, while the idempotent and
+per-mode partitions give different r. A candidate A1 revision could make on-site
+carrier = R[Z3] in tracial standard form and make the (1,2) isotypic weight a carrier
+property, but this runner does not add that axiom or prove the current framework
+selects it. Conditional handles: r=1/(N-1) if that measure is selected; Kahler ->
+Majorana nu off 2/3; PT -> leptons at the reality edge. The VALUE lane is decoupled
+from the chirality gate.
 
 ----- stderr -----
 

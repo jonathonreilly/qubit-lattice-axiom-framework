@@ -36,7 +36,7 @@ Current live readout:
 cycle battery scores: [9, 9]
 cycle mean gap: 9.828e-01 -> 4.734e-01
 cycle gap improvement factor: 2.08x
-cycle mean R2: 0.996306; two-body max=2.478e-16
+cycle mean R2: 0.996306; two-body max < 1.0e-12
 holdout gap: 9.191e-01 -> 4.559e-01 (2.02x)
 ASSERTIONS: PASS
 ```

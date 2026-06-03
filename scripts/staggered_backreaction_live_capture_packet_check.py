@@ -9,6 +9,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
+NOTE_PATH = ROOT / "docs" / "STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 if str(ROOT) not in sys.path:
@@ -53,6 +54,19 @@ def main() -> int:
     two_body_max = max(row.two_body_resid for row in cycle_results)
     norm_max = max(row.norm_drift for row in cycle_results + [holdout_result])
     min_score = min(row.score for row in cycle_results)
+    safe_read_lines = [
+        f"cycle battery scores: {[row.score for row in cycle_results]}",
+        f"cycle mean gap: {baseline_cycle_mean:.3e} -> {closed_cycle_mean:.3e}",
+        f"cycle gap improvement factor: {cycle_improvement:.2f}x",
+        "cycle mean R2: {:.6f}; two-body max < 1.0e-12".format(mean_r2),
+        (
+            f"holdout gap: {holdout_result.baseline_gap:.3e} -> "
+            f"{holdout_result.closed_gap:.3e} ({holdout_improvement:.2f}x)"
+        ),
+        "ASSERTIONS: PASS",
+    ]
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_sync_ok = all(line in note_text for line in safe_read_lines)
 
     print()
     print("HOLDOUT")
@@ -76,19 +90,15 @@ def main() -> int:
         and holdout_improvement > 1.9
         and holdout_result.linearity_r2 > 0.999
         and norm_max < 1e-12
+        and note_sync_ok
     )
 
     print()
     print("SAFE READ")
-    print(f"  cycle battery scores: {[row.score for row in cycle_results]}")
-    print(f"  cycle mean gap: {baseline_cycle_mean:.3e} -> {closed_cycle_mean:.3e}")
-    print(f"  cycle gap improvement factor: {cycle_improvement:.2f}x")
-    print(f"  cycle mean R2: {mean_r2:.6f}; two-body max={two_body_max:.3e}")
-    print(
-        f"  holdout gap: {holdout_result.baseline_gap:.3e} -> "
-        f"{holdout_result.closed_gap:.3e} ({holdout_improvement:.2f}x)"
-    )
+    for line in safe_read_lines[:-1]:
+        print(f"  {line}")
     print("  bounded live packet only: no old stale table or continuum closure")
+    print(f"  [{'PASS' if note_sync_ok else 'FAIL'} (C)] source note live readout matches computed SAFE READ")
     print(f"  [{'PASS' if assertions_ok else 'FAIL'} (C)] live capture packet")
     print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
     return 0 if assertions_ok else 1

@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_carrier_bridge_necessity_attack.py
+runner_sha256: 17adba52fdccf2e2195c27e7af1598c31c917910d7e7ff30d30ae533342ed575
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+
+========================================================================
+F1. The carrier is two DISJOINT tensor factors: value-on-C^3 (x) carrier-on-C^2
+========================================================================
+[PASS] D acts on SITE factor and is spin-blind on the on-site C^2: [H(x)I_2, I(x)sigma_i/2]=0 -- value(D) and carrier(sigma) live on disjoint commuting factors
+[PASS] site-factor operators commute with on-site-C^2 operators (disjoint tensor factors)
+
+========================================================================
+F2. The VALUE bit closes on C^3 by an O_h/Frobenius/Berry argument, with NO reference to C^2
+========================================================================
+[PASS] Jcs^2 = -P_doublet (finite Kahler structure on C^3)
+[PASS] every circulant generation mass commutes with Jcs for ALL moduli r (orientation Z_2 decoupled from r) -- value-internal independence: sign(beta)/orientation does not select the r=1/2 vs r=1 modulus
+[PASS] native circulant mass commutes with Gamma_chi ([H3,Gchi]=0); value residual is a C^3-only chirality question -- retained koide_z3_equivariant_anticommuting_no_go: comm(C3) cap anticomm(Gchi) = {0}
+
+========================================================================
+F3. The CARRIER bit closes on C^2 by a graded-locality/statistics argument, with NO reference to C^3
+========================================================================
+[PASS] on one site, sigma_+ is the SAME 2x2 matrix as boson and fermion: (sigma_+)^2 = 0 -- single-site invariants are blind to the carrier bit (statistics no-go)
+[PASS] native cross-site C^2 ladders COMMUTE (hard-core boson): [O0,O1]=0
+[PASS] JW-dressed ladders ANTICOMMUTE (fermion): {c0,c1}=0 -- carrier bit = a cross-site graded relabel on C^2 -- retained staggered_dirac_substep1 + fs_rotation_exchange: this is a SITE-factor statistics gate
+[PASS] the carrier (statistics) gate is stated entirely on the site C^2 ladders -- generation C^3 never appears -- graded locality on C^2 is orthogonal to the value chirality on C^3
+
+========================================================================
+F4. The two welding LINKS are posited, not proven (so 'two bits = one object' is ASSUMED)
+========================================================================
+[PASS] AUDIT: link(a) string '{records-pointer Z_2 = sign(beta)}' occurs ONLY in the carrier-locus note, labelled 'open, not a theorem' (front iii)
+[PASS] AUDIT: link(b) 'sign(beta) = sign(Pfaffian of doublet block) = Hodge-orientation bit' is asserted in the UNAUDITED carrier-locus note; the cited retained CPT note proves only C1 (Theta D Theta^-1 = D) and C2 ([Theta_H,H]=0) -- no Pfaffian/Hodge/beta identity
+[PASS] AUDIT: the capstone notes asserting the unification (carrier_locus, p1_collapses, matter_attachment_*) are ALL effective_status = unaudited
+[PASS] AUDIT: P1-collapses note states explicitly: 'on the retained-only tier, two posits remain' (value/faithfulness G1 and carrier/statistics L1 do NOT collapse without unaudited rows)
+
+========================================================================
+F5. No proven operator couples the two factors (the bridge is the welding, and it is open)
+========================================================================
+[PASS] value-axis operator (on C^3) and carrier-axis operator (on C^2(x)C^2) COMMUTE on the joint space -- they can be chosen independently -> no forced single object welds the two bits
+[PASS] => the two bits are INDEPENDENT residuals; the 'single C^2<->C^3 bridge' is a self-imposed coupling
+
+========================================================================
+VERDICT
+========================================================================
+
+The carrier = (VALUE bit on generation C^3) (x) (CARRIER bit on site C^2), two disjoint
+commuting tensor factors. Each bit has its OWN retained-backed residual attackable alone:
+  * VALUE residual (C^3): the Gamma_chi-anticommuting / nonzero-Berry chiral generation
+    mass -- an O_h/Frobenius/representation-theory question, blocked-so-far by
+    retained_bounded koide_z3_equivariant_anticommuting_no_go (comm(C3) cap anticomm(Gchi)={0}),
+    with the off-generation-factor route explicitly NOT foreclosed.
+  * CARRIER residual (C^2): graded (CAR) cross-site statistics over the native hard-core
+    boson -- a graded-locality / graph-braid-framing question on the site factor,
+    sitting on the retained_no_go statistics gate.
+The two posited links that would weld them into one object --
+  (a) records-Z_2 = sign(beta), and (b) sign(beta) = Hodge/value bit --
+are POSITED, not proven: (a) is the carrier-locus note's own OPEN front (iii); (b) is
+asserted in that UNAUDITED note and is NOT carried by the retained CPT authority it cites.
+The P1-collapses note independently confirms 'two posits remain on the retained tier'.
+
+CONCLUSION: the bits are INDEPENDENT; the 'single terminal bridge import' over-couples two
+separable residuals. There is no proven coupling forcing them to be one object.
+
+15/15 checks passed
+ALL CHECKS PASSED
+
+----- stderr -----
+

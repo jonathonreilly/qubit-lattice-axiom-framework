@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 636 |
+| **retained_bounded** | 635 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 29 |
 | unaudited | 1227 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -61,9 +61,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
+| `audit_in_progress` | 3 |
 | `audited_clean` | 976 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | audit_in_progress | open_gate | cross_family | codex-gpt-5.5 | D | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1138,6 +1137,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8345,6 +8345,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — Within the restricted scope H = aI + bC + bbar C^2 on Herm_circ(3), the Fourier coefficient relations are exact algebraic consequences. The theorem does not independently derive the spectrum-side Koide condition or the physical validity of the cyclic-compression/P1 identification.
 - **rationale:** The load-bearing bridge identity is a genuine symbolic algebraic closure, and the provided runner source verifies the Hermitian-circulant construction, Fourier coefficients, and identity without hard-coded True values. The PDG checks are external numerical illustrations, not needed for the algebraic theorem. The clean verdict applies only to the conditional mathematical statement on the stated Herm_circ(3) bridge, not to a derivation of Koide Q = 2/3 itself.
 - **auditor confidence:** high
+
+### `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19`
+
+- **Note:** [`KOIDE_KAPPA_TWO_ORBIT_DIMENSION_FACTORIZATION_NOTE_2026-04-19.md`](../../docs/KOIDE_KAPPA_TWO_ORBIT_DIMENSION_FACTORIZATION_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Factorization of kappa = 2 into the Z_3 circulant Gram/orbit ratio plus the MRU-selected cone normalization on Herm(3) circulants.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260603T012201Z-koide_kappa_two_orbit_di`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The MRU theorem selects alpha:beta = 2:-1, equivalently kappa = 2.  _(class `B`)_
+- **chain closes:** False — Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'B'). Representative rationale: The Z_3 Gram/orbit integer 2 is computed in the runner, but the full claim depends on the MRU theorem to choose the cone leaf. That MRU authority is not included in the restricted packet, and the runner itself marks the normalization as open rather than derived from Z_3 invariance. The note is therefore conditional, not clean.
+- **rationale:** Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'bounded_theorem', 'B'). Representative rationale: The Z_3 Gram/orbit integer 2 is computed in the runner, but the full claim depends on the MRU theorem to choose the cone leaf. That MRU authority is not included in the restricted packet, and the runner itself marks the normalization as open rather than derived from Z_3 invariance. The note is therefore conditional, not clean.
+- **auditor confidence:** judicial
 
 ### `koide_lightcone_primitive_theorem_note_2026-05-10`
 

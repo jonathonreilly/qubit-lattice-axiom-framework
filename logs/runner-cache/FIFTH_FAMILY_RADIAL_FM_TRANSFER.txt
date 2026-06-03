@@ -1,15 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py
-runner_sha256: 65774d76b3fbf0ed27d32a7cecab6046b341e2eb31d58bbcff95d8430165c8b9
+runner_sha256: 0d985aaae5709fc8163991fd7a542f329fcbbe309211d51dfe27337f0d76af71
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.05
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 18.40
+status: ok
 ----- stdout -----
+================================================================================================
+FIFTH FAMILY RADIAL F~M TRANSFER
+  weak-field mass scaling on the no-restore grown slice
+================================================================================================
+targets=[(0.05, 0), (0.3, 1)]
+
+drift seed      F~M   ok
+------------------------
+ 0.05    0    0.999  YES
+ 0.30    1    1.000  YES
+
+SAFE READ
+  passed rows: 2/2
+  mean F~M among passes: 0.999439
+  the fifth-family radial-shell slice preserves weak-field linearity on the sampled rows
+ASSERTIONS: PASS
 
 ----- stderr -----
-Traceback (most recent call last):
-  File "/private/tmp/gate-fix-worktree/scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py", line 17, in <module>
-    from CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP import (
-ImportError: cannot import name '_build_radial_shell_connectivity' from 'CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP' (/private/tmp/gate-fix-worktree/scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py)
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 171 |
 | **retained_no_go** | 180 |
-| **retained_bounded** | 640 |
+| **retained_bounded** | 641 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1201 |
+| unaudited | 1200 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 983 |
+| `audited_clean` | 984 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1440 |
+| `unaudited` | 1439 |
 
 | claim_type | count |
 |---|---:|
@@ -384,6 +384,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -5507,6 +5508,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The enumeration is complete at the operator level: no lattice symmetry rotates the doublet beyond discrete D3 plus a real charge-conjugation Z2.  _(class `C`)_
 - **chain closes:** False — The runner gives substantive finite checks for the O_h order-4 obstruction, bit-flip exit from hw=1, and the J_cs algebra, but it does not prove that the listed operator classes exhaust all possible doublet rotations. The missing step is a formal bridge reducing projective/magnetic cocycles, algebra automorphisms, anti-unitary/time-reversal, coin, and induced-representation cases to the checked D3/Z2 actions.
 - **rationale:** The checked finite group and matrix identities are plausible within their narrow scope, and no completed-run mismatch appears in the packet. However, several PASS labels include uncomputed or merely asserted facts, including H^2(C3,U(1))=0, central cocycle descent, and collapse of anti-unitary/coin/induced representations. The displayed det_C/det_R readout numbers are also not derived from definitions in the restricted packet, although the note marks measure selection as open. The broad exhaustive-completeness conclusion therefore needs an explicit classification bridge or a narrowed claim scope before it can be clean.
+- **auditor confidence:** high
+
+### `flavor_einselection_2sector_modulo_kreality_2026-06-02`
+
+- **Note:** [`FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md`](../../docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-024448-547c736a-flavor_einselection_2sec`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A K-real C3-invariant Hermitian monitor lies in span_R{I,C+C^2}, so it resolves only the singlet/doublet blocks; H is already block-diagonal in those blocks and Born weighting gives dimension weights rather than r=1/2.  _(class `A`)_
+- **chain closes:** True — The finite C3 matrix algebra supports the two-sector partition, the K-odd splitter, the P0HP1=0 no-op statement, and the Born block trace weights. The claim is clean only in this bounded scope; it does not close the physical derivation of K-reality or the block-counting measure.
+- **rationale:** The runner source directly constructs C, P0, P1, H and checks the stated finite-dimensional algebra without helper imports, external comparators, or tuned numerical inputs. Independent formula inspection agrees with the displayed eigenvalue, K-oddness, block-diagonality, trace-weight, and conjugation-even identities. The residual inputs are openly named in the claim boundary, so they bound the theorem rather than being hidden closure premises.
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

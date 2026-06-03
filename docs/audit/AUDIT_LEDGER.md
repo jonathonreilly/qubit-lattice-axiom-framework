@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 171 |
 | **retained_no_go** | 180 |
 | **retained_bounded** | 637 |
-| _retained_pending_chain_ | 11 |
+| _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1221 |
+| unaudited | 1220 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 978 |
+| `audited_clean` | 979 |
 | `audited_conditional` | 64 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1460 |
+| `unaudited` | 1459 |
 
 | claim_type | count |
 |---|---:|
@@ -86,7 +86,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 624 |
 | `leaf` | 1108 |
 
-- **Retained pending chain closure:** 11
+- **Retained pending chain closure:** 12
 - **Citation cycles detected:** 29
 
 ### Runner classification (static heuristic)
@@ -225,6 +225,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_dense_largen_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
@@ -2710,6 +2711,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The provided runner and helper sources actually generate matched graphs, compute gravity deltas for the declared modes and mass counts, and fit the declared positive window without hard-coded target values. The cached stdout matches the note's numerical claims and supports the bounded, mixed conclusion.
 - **rationale:** The source note makes a narrow bounded claim about the runner's computed mass-window fits, not a full gravity-law rescue. The runner source and helper chain compute the graph, pruning, propagation, deltas, and log-log fits directly from the declared simulation setup, and the reported R^2 comparisons are reproduced in the provided stdout. No cited non-retained authority, external comparator, renaming, or tuned imported value is load-bearing in this packet.
 - **auditor confidence:** high
+
+### `charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30`
+
+- **Note:** [`CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md`](../../docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the Brannen-BAE algebraic charged-lepton ratio calculation under explicit Tier-A admission of delta = 2/9 and sqrt(2), including the Q = 2/3 guardrail and non-load-bearing PDG sidecar.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:admitted_input_registry_tier_a_note_2026-05-23`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-014732-94db4388-charged_lepton_brannen_b`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Consuming the Tier-A AC_phi_lambda admission, set delta = 2/9 in x_k/a = 1 + sqrt(2) cos(delta + 2*pi*k/3) and sort the three positive algebraic outputs.  _(class `A`)_
+- **chain closes:** True — S1-S4 close algebraically once the Tier-A AC_phi_lambda inputs delta = 2/9 and sqrt(2) are accepted at the bounded tier. The PDG comparison is correctly separated as an external sidecar and is not needed for the algebraic conclusion.
+- **rationale:** The load-bearing calculation is a direct algebraic evaluation of the displayed Brannen-BAE ansatz at the explicitly admitted Tier-A phase, not a claimed derivation of that phase. The cited retained Koide algebra supports the Q = 2/3 guardrail, while the Tier-A registry supplies only bounded-tier admissibility for delta and the BAE coefficient. The numerical ratios and PDG sidecar values check out independently, and no no-go is weakened or promoted.
+- **auditor confidence:** medium
 
 ### `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10`
 

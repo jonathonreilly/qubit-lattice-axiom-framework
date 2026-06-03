@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 300,
     "high": 247,
-    "leaf": 376,
+    "leaf": 375,
     "medium": 300
   },
   "cycle_break_target_count": 29,
@@ -27030,37 +27030,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "admitted_input_registry_tier_a_note_2026-05-23",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
-        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37888,6 +37857,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 71,
-  "total_pending": 1223
+  "ready_count": 70,
+  "total_pending": 1222
 }

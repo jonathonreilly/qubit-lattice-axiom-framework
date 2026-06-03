@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 651 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 30 |
-| unaudited | 1156 |
+| unaudited | 1155 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 106 |
+| ~~audited_conditional~~ | 107 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 996 |
-| `audited_conditional` | 106 |
+| `audited_conditional` | 107 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1395 |
+| `unaudited` | 1394 |
 
 | claim_type | count |
 |---|---:|
@@ -1231,6 +1231,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_wigner_l3_treewidth_infeasible_2026-05-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wilson_action_surface_selector_real_positive_theorem_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -16381,6 +16382,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** A weight-w corner of {0,1}^d is determined exactly by choosing which w of the d coordinates are set to 1, giving binomial(d,w), and summing over w gives 2^d.  _(class `A`)_
 - **chain closes:** True — The scoped theorem is pure finite combinatorics and closes from the definition of {0,1}^d plus the binomial coefficient. The note explicitly excludes the physical and framework-selection bridges, so those open gates do not block this bounded claim.
 - **rationale:** Within its stated boundary, the proof is complete: total cube vertices are counted by the product rule, weight-w vertices by choosing w coordinates, and the d=3 row gives 1,3,3,1. The runner independently checks the same algebraic surface by exact enumeration and binomial identities with PASS=55, FAIL=0. No hidden physical import is needed because the note expressly does not derive d=3 as a substrate fact or identify the cube with Brillouin-zone corners.
+- **auditor confidence:** high
+
+### `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract C^3 algebraic bridge from retained diagonal translation-character projectors and a retained order-3 cycle to absence of nonzero proper invariant subspaces.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-110925-42abaacf-three_generation_no_prop`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The projectors P_{X_i} obtained from the retained translation characters together with the cyclic permutation sigma generate M_3(C), so any invariant subspace is only 0 or C^3.  _(class `A`)_
+- **chain closes:** False — The algebraic bridge closes for nonzero proper invariant subspaces, but the stated claim says no proper subspace, and {0} is a proper invariant subspace. The source note also displays an incorrect matrix-unit formula: conjugation sigma^k P_i sigma^{-k} only gives diagonal projectors, not arbitrary E_ij.
+- **rationale:** All cited authorities are retained-grade, and the intended linear-algebra composition is class A over those inputs. However the claim is too broad as written because the zero subspace is proper and invariant under both the projectors and sigma. The displayed matrix-unit generation sentence is also false/inconsistent with the retained Burnside formula; the correct family is of the form E_ij = P_i sigma^k P_j with k = i-j mod 3, up to the note's indexing convention. Runner PASS does not repair these source-text defects.
 - **auditor confidence:** high
 
 ### `three_generation_observable_count_corollary_note_2026-05-03`

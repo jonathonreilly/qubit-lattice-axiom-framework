@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 640 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1207 |
+| unaudited | 1206 |
 | meta | 239 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 73 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 983 |
-| `audited_conditional` | 72 |
+| `audited_conditional` | 73 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1446 |
+| `unaudited` | 1445 |
 
 | claim_type | count |
 |---|---:|
@@ -1142,6 +1142,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_delegation_terminus_local_blind_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_r_half_stable_under_thermalizing_arrow_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5420,6 +5421,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner does real finite computations for the corner characters, on-site blindness, momentum-projector separation, Gamma_5 sum, naive zero locus, Wilson staircase, and L_3(1,2)=2/9; these displayed arithmetic checks are internally consistent. However, the full source note explicitly relies on the staggered/Kawamoto-Smit single-mode Grassmann plus {epsilon,D}=0 operator class and on the claim that this is the same chirality gate used in generation-ID/Koide work, and those authorities are not present in the restricted packet. The D1 line only substitutes values into Q=1/3+(2/3)r; it does not derive that formula from F=aI+b(J-I) or from a supplied definition of Q. Thus the packet supports the momentum-carrier type and several counterfactual checks, but not the claimed locus consolidation as a closed derivation.
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE.md`
+- **auditor confidence:** high
+
+### `flavor_carrier_not_derived_two_inputs_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md`](../../docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded refutation of the momentum-corner finite-character derivation of 2/9 and the claimed two-input bookkeeping for carrier selection plus basepoint selection.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260603-022759-c93470c7-flavor_carrier_not_deriv`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The operative step is that 2/9 is the index/eta denominator sum rather than a bare C3 character, while the species-to-flavor carrier and the r=1/2 basepoint are left as cited open or no-go inputs, so two independent inputs remain.  _(class `B`)_
+- **chain closes:** False — The algebraic mismatch between the bare C3 character and 2/9 checks out, and the runner also checks elementary r-freedom examples. The full two-input conclusion does not close from this restricted packet because the species-to-flavor gate, retained theorem scope, and section-family/no-canonical-zero-section claims are imported from authorities not supplied here and are partly explicit open work.
+- **rationale:** The displayed character and denominator identities independently check: omega+omega^2=-1, 1+omega+omega^2=0, and L_3(1,2)=2/9 from the normal-bundle denominators. But the runner’s decisive provenance/input-count step is hard-coded in D1, and the note’s broader conclusion depends on unprovided or explicitly open cross-note claims about species-to-flavor identification and basepoint selection. Thus the finite-character shortcut is refuted, but the full carrier/basepoint irreducibility claim remains conditional rather than clean.
+- **open / conditional deps cited:**
+  - `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS.md`
+  - `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
 - **auditor confidence:** high
 
 ### `flavor_missing_axiom_carrier_measure_note_2026-05-30`

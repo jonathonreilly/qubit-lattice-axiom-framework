@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_carrier_bit_count_is_two_on_retained_one_modulo_audit.py
+runner_sha256: c9fb064799bf46816f17668e5a786b4363034a1e048c461f05427fe54973eb10
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.23
+status: ok
+----- stdout -----
+
+==========================================================================
+A. STAT side: single-site sigma_+ is blind to fermion-vs-hard-core-boson
+==========================================================================
+[PASS] fermion c and hard-core boson b are the SAME 2x2 matrix sigma_+, both nilpotent (b^2=c^2=0)
+[PASS] BOTH {c,c^dag}=I (CAR) and [b,b^dag]=diag(1,-1) (hard-core) hold for sigma_+ -> single site cannot tell them apart -- the exchange sign lives only in the CROSS-site bilinear -> STAT is a genuine cross-site posit
+
+==========================================================================
+B. STAT side: the retained cardinality core excludes ONLY the free/CCR boson
+==========================================================================
+[PASS] free/CCR boson [a,a^dag]=I is impossible in finite dim: Tr[a,a^dag]=0 != Tr(I)=D -- Tr[b,b^dag]=0.0 != D=2
+[PASS] the hard-core boson has traceless [b,b^dag] too -> it EVADES the cardinality obstruction (not excluded) -- => the retained cardinality core leaves STAT undetermined on the retained tier
+
+==========================================================================
+C. FAITH side: the scalar J=K=0 is admitted (RP + positive-energy) -> FAITH not forced
+==========================================================================
+[PASS] scalar positive-energy: omega_k = sqrt(k^2+m^2) > 0 for all k
+[PASS] scalar reflection-positivity: OS-reflected KG kernel e^{-m(ti+tj)}/2m is PSD -- min eig = -3.12e-17
+[PASS] => microcausality/RP/positive-energy admit the scalar -> FAITH never collapses INTO STAT; reduction is FAITH==>STAT only -- and never to zero: faithful-Weyl-over-scalar is the lone irreducible carrier posit
+
+==========================================================================
+D. COLLAPSE direction: faithful spin-1/2 + Bose = unbounded below; CAR bounded
+==========================================================================
+[PASS] Bose-quantizing the faithful spin-1/2 negative-energy mode is UNBOUNDED BELOW (min H -> -inf) -- min H_Bose at caps [1,10,100,1000] = [-1.0, -10.0, -100.0, -1000.0]
+[PASS] CAR is bounded (normal-ordered H>=0) -> CAR is the UNIQUE positive-energy quantization of a faithful spin-1/2 rep -- so FAITH ==> STAT is correct physics (the collapse direction)
+
+==========================================================================
+E. LEDGER TIER FACTS: what makes the count TWO on retained, ONE only modulo audit
+==========================================================================
+[PASS] [ledger:retained-but-blind-to-hard-core] spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10 == retained -- live effective_status = retained
+[PASS] [ledger:retained-no-forcing] staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25 == retained_no_go -- live effective_status = retained_no_go
+[PASS] [ledger:collapse-row-1] axiom_first_spin_statistics_theorem_note_2026-04-29 == unaudited -- live effective_status = unaudited
+[PASS] [ledger:collapse-row-2] free_field_os_wightman_reconstruction_conditional_theorem_note_2026-05-30 == unaudited -- live effective_status = unaudited
+[PASS] [ledger:collapse-row-3] free_sector_spin_statistics_level1_mechanism_and_reconstruction_reduction_bounded_note_2026-05-30 == unaudited -- live effective_status = unaudited
+[PASS] STRICT-RETAINED count = TWO: retained surface admits the hard-core boson AND the collapse rows are unaudited -- cardinality=retained, no_go=retained_no_go, collapse_rows_all_unaudited=True
+[PASS] OPTIMISTIC count = ONE *modulo audit*: it rides exactly the 3 unaudited collapse rows (so not retained-load-bearing) -- auditing those 3 rows is what would legitimately contract TWO -> ONE
+
+==========================================================================
+RESULT
+==========================================================================
+
+VERDICT: carrier import = TWO bits {STAT, FAITH} on strict-retained; ONE bit {FAITH} only MODULO auditing axiom_first_spin_statistics_theorem + free_field_os_wightman_reconstruction + free_sector_spin_statistics_level1.
+Reduction is FAITH==>STAT, never reverse, never to zero (scalar admitted).
+
+SCORECARD PASS=16
+
+----- stderr -----
+

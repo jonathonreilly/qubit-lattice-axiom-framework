@@ -164,3 +164,11 @@ commuting ladders), none of which uses the faithful representation or
 
 This is a localization of the matter-attachment pin to a single cross-site
 gate, not an enumeration of routes.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02](KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md)
+- [staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+- [dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28](DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md)

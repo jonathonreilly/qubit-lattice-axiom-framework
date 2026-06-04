@@ -1,0 +1,29 @@
+loop_slug: grav-wave-runner-source-completeness-repair-20260604
+branch: physics-loop/grav-wave-runner-source-completeness-repair-20260604
+base: origin/main
+base_commit: 9ef1cdd32
+mode: science_fix
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: gravitational_wave_probe_note
+blocker_source: audit_ledger
+blocker_text: "runner_artifact_issue: provide the untruncated scripts/frontier_grav_wave_post_newtonian.py source, especially the omitted Test B/Test C body and quantitative-table generation, then re-audit the bounded finite-runner sensitivity claim."
+summary: "Adds an executable source-completeness witness for Test B/Test C bodies and quantitative tables, refreshes the runner cache, and preserves the bounded finite toy-lattice scope."
+files_touched:
+  - docs/GRAVITATIONAL_WAVE_PROBE_NOTE.md
+  - scripts/frontier_grav_wave_post_newtonian.py
+  - logs/runner-cache/frontier_grav_wave_post_newtonian.txt
+checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_grav_wave_post_newtonian.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_grav_wave_post_newtonian.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_grav_wave_post_newtonian.py"
+  - "python3 -m py_compile scripts/frontier_grav_wave_post_newtonian.py"
+  - "git diff --check"
+check_result: pass
+review_loop_disposition: delegated_to_external_reviewer
+audit_required_before_effective_status_change: true
+audit_ledger_edits: false
+next_exact_action: "Reviewer/audit lane should inspect whether the source-completeness witness closes the restricted-packet runner artifact issue."
+stop_condition: "coherent repair block packaged for PR; campaign can pivot to next conditional row."

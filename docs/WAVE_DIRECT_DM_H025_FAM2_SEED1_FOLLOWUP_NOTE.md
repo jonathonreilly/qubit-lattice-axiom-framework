@@ -1,7 +1,10 @@
 # Wave Direct-dM H=0.25 Fam2 Seed1 Follow-Up Note
 
 **Date:** 2026-04-08
-**Status:** proposed_retained narrow family-pair follow-up on the second-family seed-`1` replay
+**Claim type:** bounded_theorem
+**Source boundary:** bounded target replay feeding the controlled `Fam2`
+fine-`H` pair surface; not an independent theorem-grade surface or
+portability promotion
 
 This note records the complementary second-family follow-up after the first
 extra-family `Fam2`, seed-`0` boundary on the direct-`dM` matched-history
@@ -9,7 +12,7 @@ lane:
 
 > Hold the direct-`dM` setup fixed, keep the first extra-family reserve
 > question as narrow as possible, and ask whether the complementary
-> `Fam2`, seed `1`, `S = 0.004`, `H = 0.25` replay reproduces the
+> `Fam2`, seed `1`, source strength `0.004`, `H = 0.25` replay reproduces the
 > `Fam1`-style cross-seed reordering or whether the second family only
 > carries the seed-`0` boundary.
 
@@ -33,7 +36,7 @@ Runtime / memory for the `H = 0.25` replay:
 - The matched-history effect survives cleanly on the complementary
   second-family seed-`1` replay:
   `delta_hist` stays negative and materially nonzero.
-- The key retained feature is the seed-`1` late-gain scale, not the old
+- The stable feature is the seed-`1` late-gain scale, not the old
   coarse normalized band.
   The `H = 0.25` late gain `+0.002037` sits almost exactly on the coarse
   `Fam2`, seed-`1` values `+0.001937` and `+0.002061`.
@@ -47,11 +50,13 @@ Runtime / memory for the `H = 0.25` replay:
 
 So the honest conclusion is:
 
-> The second-family seed-`1` replay is a **retained** family-pair follow-up:
-> on `Fam2`, the `H = 0.25` seed-conditioned late-gain asymmetry survives and
-> the cross-seed ordering flips the same way it did on `Fam1`. But the
-> normalized amplitude band is still not refinement-stable, so this is not an
-> `H = 0.25` portability or amplitude-law promotion.
+> The second-family seed-`1` replay is a bounded target datapoint for the
+> controlled `Fam2` fine-`H` pair: on `Fam2`, the `H = 0.25`
+> seed-conditioned late-gain asymmetry survives at the archived point and is
+> consistent with the controlled pair synthesis. But this selected
+> one-strength replay is not an independent theorem-grade surface, not a
+> cross-family theorem, and not an `H = 0.25` portability or amplitude-law
+> promotion.
 
 ## What this changes
 
@@ -61,12 +66,14 @@ So the honest conclusion is:
 - The same `Fam2`, seed `1`, `H = 0.25` replay now also has a same-resolution
   control ladder in
   [`WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md):
-  exact `S = 0` null, sign pattern `- - -`, and `|delta_hist / s|` spread
-  `4.25%` over `S = 0.002, 0.004, 0.008`.
+  exact zero-source-strength null, sign pattern `- - -`, and
+  `|delta_hist / source_strength|` spread `4.25%` over source strengths
+  `0.002, 0.004, 0.008`.
 - The complementary `Fam2`, seed `0`, `H = 0.25` replay now also has a
   same-resolution control ladder in
   [`WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md):
-  exact `S = 0` null, sign pattern `- - -`, and `|delta_hist / s|` spread
+  exact zero-source-strength null, sign pattern `- - -`, and
+  `|delta_hist / source_strength|` spread
   `6.67%`.
 - The direct-`dM` `H = 0.25` story is therefore no longer bounded to one
   strength on the second family, but it is still bounded to two families
@@ -76,12 +83,43 @@ So the honest conclusion is:
 - The narrow `Fam2` pair synthesis now exists in
   [`WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md).
 - The next honest move is to compare that controlled `Fam2` pair against the
-  retained `Fam1` pair before any `Fam3`, third-seed, or weaker-strength
+  controlled `Fam1` pair before any `Fam3`, third-seed, or weaker-strength
   widening.
+
+## 2026-06-04 target-specific runner repair
+
+The previous registered runner for this note was the reusable point runner,
+whose defaults are `Fam1`, seed `0`.  The row-specific repair now adds
+[`scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py`](../scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py),
+which fixes exactly the target invocation:
+
+- family: `Fam2`
+- seed: `1`
+- `H = 0.25`
+- source strength: `0.004`
+
+The runner recomputes the replay and checks the archived values:
+`dM(early)=+0.003777`, `dM(late)=+0.005814`,
+`delta_hist=-0.002037`, `R_hist=-35.03%`, and late gain `+0.002037`.
+It also records the dependency surface used for re-audit: the `Fam2`
+seed-`0`/seed-`1` control notes, the `Fam2` pair synthesis, the `Fam1`
+fine-pair synthesis, and the coarse portability batch.  This repair is a
+cache/scope repair only; audit retains authority over any effective status.
+
+```yaml
+target_claim_type: bounded_theorem
+proposed_claim_type: bounded_theorem
+runner_path: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py
+claim_boundary: "Exact Fam2 seed1 H=0.25 replay feeding controlled pair/batch surface; not an independent theorem-grade surface or portability law."
+audit_authority: independent audit lane only
+```
 
 ## Artifact chain
 
+- [`scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py`](../scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py)
 - [`scripts/wave_direct_dm_h025_point_runner.py`](../scripts/wave_direct_dm_h025_point_runner.py)
+- [`logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt`](../logs/runner-cache/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.txt)
+- [`outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json`](../outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json)
 - [`logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt`](../logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt)
 - [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md`](./WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)
 - `docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`

@@ -19,12 +19,14 @@ OPERATOR / MEASURE / SYMMETRY class. DEAD routes (do not re-run):
 - **Corner fermion determinant det(M)** on the hw=1 corners -> shape-stationary at r=1 (det=0) and r=4,
   boundaries; NOT r=1/2. Full one-loop CW V_ferm=-log det(M) same; scale-only scalar can't fix it.
   [Cycle 1+2, RULED OUT, shipped PR #2601 — was the ledger's #1 OPEN lead]
+- **Taste-breaking scalar normalization** -> in d=3 the 2^3 staggered taste matrices span M_2(C) = the
+  qubit (simple, unique 2-dim irrep, no multiplicity); the C3-doublet keeps real-dim 2 -> (1,2)/F3/κ=1.
+  Taste-breaking CANNOT manufacture the (1,1)/r=1/2 multiplicity. [Cycle 3, RULED OUT, shipped PR #2607]
 
 OPEN / UN-ATTACKED (the dynamical class — my campaign target):
 1. ~~Staggered corner fermion determinant~~ -> **RULED OUT, Cycle 1+2, PR #2601** (r=1, r=4, not 1/2).
-2. **Taste-breaking scalar action normalization** effect on the block-total Frobenius weighting when
-   integrated out. [OPEN — Cycle 3 NEXT: does Z_doublet/Z_singlet from the eta-phase staggering = 1/2?]
-3. **Multi-factor Connes-Lott** (Yukawa D on R^3, chirality on separate H_L⊕H_R). [open, escape hatch (II) — Cycle 4]
+2. ~~Taste-breaking scalar normalization~~ -> **RULED OUT, Cycle 3, PR #2607** (tastes = qubit, no multiplicity).
+3. **Multi-factor Connes-Lott** (Yukawa D on R^3, chirality on separate H_L⊕H_R). [OPEN, escape hatch (II) — Cycle 4 NEXT; note: would PURCHASE the (1,1) by ADDING a factor = structural admission, not clean]
 
 REFRAME (FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED, retained): r=1/2 is the max-sector-entropy
 STATIONARY point (dS/dr=0, S=log2), the "balanced lane"; r→0 (degenerate, Q=1/3) and r→1 (hierarchy, Q=1)

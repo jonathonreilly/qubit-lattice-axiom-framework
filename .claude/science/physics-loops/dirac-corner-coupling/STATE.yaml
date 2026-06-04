@@ -84,3 +84,36 @@ next_exact_action: >
   weight shifts singlet:doublet 3a^2 : 6|b|^2 -> the balanced 1:1 (r=1/2). Reprove from the eta-phases
   (Kawamoto-Smit comparator only). If it gives r=1/2 -> close (conditional); else prune route #2 and go
   to Cycle 4 (multi-factor Connes-Lott: Yukawa D on R^3, chirality on separate H_L+H_R). Same N1-N8 gate.
+
+# ---- checkpoint 3 (2026-06-04) ----
+cycle_count: 3
+block_count: 2
+grounding_cycle3: >
+  Explore agent confirmed: (a) Probe 25/29 ALREADY derived the F1/F3 multiplicity-vs-dimension
+  distinction (r=1/2 needs (1,1) multiplicity, NOT derivable from Gaussian dynamics) -> do NOT re-ship.
+  (b) 3D taste count = 2^{3/2} non-integer; textbook 4D count borrows non-framework Wick Z3->Z4.
+cycle3_result: >
+  NEW exact structural pruning of route #2: in d=3 the 2^3 staggered taste matrices
+  T(x)=s1^x1 s2^x2 s3^x3 SPAN M_2(C) = the on-site qubit (Cl(3,0)); M_2(C) simple, unique 2-dim irrep,
+  center=scalars -> NO separate taste multiplicity. So the C3-doublet keeps genuine real-dim 2 ->
+  (1,2)/F3/kappa=1; taste-breaking cannot manufacture the (1,1)/r=1/2 multiplicity. Bonus: resolves the
+  2^{3/2} subtlety (8 hypercube tastes collapse onto the 2-dim qubit carrier). Convergence: 4 of 5
+  dynamical routes ruled out; r=1/2 is the irreducible multiplicity admission; route #3 (multi-factor,
+  a SEPARATE algebra factor) is the only remaining hatch -- itself a structural addition, not clean.
+shipped_block_2:
+  pr: 2607
+  branch: physics-loop/dirac-corner-coupling-block02-20260604
+  runner: scripts/audit_companion_staggered_taste_is_qubit_no_koide_multiplicity_exact.py  # 6/6 exact
+  note: docs/STAGGERED_TASTE_IS_THE_QUBIT_NO_SEPARATE_KOIDE_MULTIPLICITY_NARROW_OBSTRUCTION_NOTE_2026-06-04.md
+no_go_ledger_update: "route #2 (taste-breaking normalization) MOVED OPEN -> RULED OUT. only route #3 (multi-factor) open."
+active_route: "C: multi-factor Connes-Lott (Cycle 4) -- Yukawa D on R^3, chirality on a separate H_L (+) H_R factor"
+next_exact_action: >
+  Cycle 4 (LAST open dynamical route #3): multi-factor Connes-Lott. Single-factor is barred
+  (Z3-equivariance + Gamma_chi forces D=0 on single R^3, NO_GO_LEDGER). Does a TWO-factor spectral triple
+  A = M_2(C) (+) A_2 with the Yukawa connecting them supply the (1,1) multiplicity (kappa=2, r=1/2)?
+  Compute: for the minimal 2-factor finite spectral triple compatible with the corner C3, what isotype
+  weighting does the fermion-doubling / KO-dimension multiplicity give -- (1,2) again, or genuinely (1,1)?
+  KEY honest test: is the (1,1) PURCHASED by ADDING the factor (a structural admission, not clean), or
+  does it emerge? If purchased -> the campaign's verdict is r=1/2 = irreducible admission across ALL clean
+  routes (ship the convergence as the campaign's terminal block, N1-N8). If emergent+clean -> close Koide
+  (conditional on gate). Then Cycle 5: campaign synthesis + HANDOFF.

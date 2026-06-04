@@ -28,6 +28,7 @@ OUTPUT = ROOT / "outputs" / "yt_tier_a_source_action_top_premise_closure_2026-05
 
 NOTE = DOCS / "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md"
 TIER_A_REGISTRY = DOCS / "audit" / "data" / "tier_a_admissions.json"
+AXIOM_PREMISE_REGISTRY = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
 TIER_A_NOTE = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 P1P2_SYNTHESIS = DOCS / "OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md"
 SOURCE_ACTION_CANDIDATE = DOCS / "OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md"
@@ -84,6 +85,7 @@ def part1_anchor_status() -> dict[str, Any]:
     required = (
         NOTE,
         TIER_A_REGISTRY,
+        AXIOM_PREMISE_REGISTRY,
         TIER_A_NOTE,
         P1P2_SYNTHESIS,
         SOURCE_ACTION_CANDIDATE,
@@ -114,12 +116,15 @@ def part1_anchor_status() -> dict[str, Any]:
         check(f"note contains section/phrase: {phrase}", phrase in note)
 
     registry = json.loads(read(TIER_A_REGISTRY))
+    axiom_registry = json.loads(read(AXIOM_PREMISE_REGISTRY))
     derivation_targets = registry.get("derivation_targets", {})
     conventions = registry.get("conventions", {})
-    not_a_node = registry.get("not_a_node", {})
+    reclassified_primitives = registry.get("reclassified_primitives", {})
     check("P1 is in Tier-A derivation targets", "observable_principle_from_axiom_note" in derivation_targets)
     check("Tier-A P1 is chain-satisfying only at bounded tier", "bounded tier" in registry.get("description", ""))
-    check("S is tracked as not_a_node scale setting", "S" in not_a_node)
+    check("scale reference is not a Tier-A derivation target", "scale_reference_primitive" not in derivation_targets)
+    check("scale reference moved to approved primitive registry", "scale_reference_primitive" in axiom_registry.get("canonical_ids", []))
+    check("Tier-A registry records scale primitive reclassification", "scale_reference_primitive" in reclassified_primitives)
     check("g0 convention is not an accepted derivation target", "g_bare_rigidity_theorem_note" in conventions)
 
     p1p2 = read(P1P2_SYNTHESIS)
@@ -132,7 +137,7 @@ def part1_anchor_status() -> dict[str, Any]:
     )
 
     source_candidate = read(SOURCE_ACTION_CANDIDATE)
-    check("source/action candidate states derivatives of S define insertions", "Local source derivatives of `S` define the local operator insertions" in source_candidate)
+    check("source/action candidate states action derivatives define insertions", "Local source derivatives of `S` define the local operator insertions" in source_candidate)
     check("source/action candidate is open_gate, not unilateral closure", "open_gate" in source_candidate and "not as a unilateral foundation change" in source_candidate)
 
     rows = {
@@ -156,7 +161,7 @@ def part1_anchor_status() -> dict[str, Any]:
     )
     return {
         "tier_a_p1": derivation_targets.get("observable_principle_from_axiom_note", {}),
-        "not_a_node_S": not_a_node.get("S", {}),
+        "scale_reference_primitive": axiom_registry.get("nodes", {}).get("scale_reference_primitive", {}),
         "ledger_statuses": {k: None if v is None else v.get("effective_status") for k, v in rows.items()},
     }
 

@@ -7,8 +7,9 @@ effective_status is not in a retained-grade bucket.
 
 There are two supported classes:
 
-* axiom premises from docs/audit/data/axiom_premise_nodes.json. These are
-  framework primitives, are not audited, and do not bound downstream status.
+* axiom/primitive premises from docs/audit/data/axiom_premise_nodes.json. These
+  are framework axioms or explicitly approved primitives, are not audited,
+  and do not bound downstream status.
 * Tier-A derivation-target admissions from docs/audit/data/tier_a_admissions.json.
   These are named non-axiom inputs accepted as chain-satisfying only at the
   bounded tier until a retained derivation lands and the entry is removed.
@@ -48,7 +49,11 @@ _TIER_A_CONVENTION_IDS: set[str] | None = None
 
 
 def axiom_premise_ids() -> set[str]:
-    """Canonical axiom-premise claim_ids (see axiom_premise_nodes.json)."""
+    """Canonical axiom/approved-primitive premise ids.
+
+    Historical function name retained for callers. Entries in
+    axiom_premise_nodes.json chain-satisfy without bounding downstream rows.
+    """
     global _AXIOM_PREMISE_IDS
     if _AXIOM_PREMISE_IDS is None:
         if not _AXIOM_PREMISE_NODES_PATH.exists():
@@ -133,8 +138,9 @@ def is_accepted_premise_dep(dep_id: str) -> bool:
 
     Such a dep satisfies chain closure even though its own effective_status is
     not retained-grade. The citing row must still pass its own independent
-    audit. `compute_effective_status` separately downgrades rows that depend
-    on Tier-A derivation targets to `retained_bounded`.
+    audit. Axiom/primitive premises do not bound downstream rows;
+    `compute_effective_status` separately downgrades rows that depend on Tier-A
+    derivation targets to `retained_bounded`.
     """
     return dep_id in accepted_premise_ids()
 

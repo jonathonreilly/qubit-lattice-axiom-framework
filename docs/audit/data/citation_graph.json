@@ -629,6 +629,10 @@
       "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
     },
     {
+      "from": "admitted_input_registry_tier_a_note_2026-05-23",
+      "to": "scale_reference_primitive"
+    },
+    {
       "from": "ai_methodology_note_2026-04-25",
       "to": "publication.ci3_z3.readme"
     },
@@ -42349,10 +42353,11 @@
         "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
         "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
         "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "scale_reference_primitive"
       ],
       "helper_runner_paths": [],
-      "note_hash": "19cb37f9eb132e484f2ac0a13fb7d1b49553048baf0d37b5ba2da53812240318",
+      "note_hash": "08fbdcf79a0a03ca2c9cada73221a7ba0c49b18141e86a4caee114fcd7a2b3ff",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": null,
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"
@@ -80323,6 +80328,18 @@
       "runner_path": "scripts/frontier_scalar_trace_tensor_nogo.py",
       "title": "Scalar-Trace-Only Tensor Completion No-Go"
     },
+    "scale_reference_primitive": {
+      "claim_id": "scale_reference_primitive",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "03d921920897c3e7e83604ca8b5a40c6e67d19ed1291a80a31dbe23aa8def5ea",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "runner_path": null,
+      "title": "Scale-Reference Primitive"
+    },
     "scaling_failure_mechanisms": {
       "claim_id": "scaling_failure_mechanisms",
       "claim_type_author_hint": "meta",
@@ -91426,6 +91443,7 @@
     "scalar_kg_rerun_note_2026-04-10",
     "scalar_selector_cycle13_meta_closure_status_note_2026-04-19",
     "scalar_selector_full_stack_recovery_note_2026-04-19",
+    "scale_reference_primitive",
     "scaling_failure_mechanisms",
     "scaling_targets",
     "second_grown_family_sign_note",
@@ -91666,7 +91684,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 823,
       "decoration": 1,
-      "meta": 201,
+      "meta": 202,
       "no_go": 94,
       "none": 1404,
       "open_gate": 62,
@@ -91675,16 +91693,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1224,
       "decoration": 1,
-      "meta": 201,
+      "meta": 202,
       "no_go": 197,
       "none": 423,
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10432,
+    "edge_count": 10433,
     "leaf_count": 898,
-    "node_count": 2761,
-    "root_count": 939,
+    "node_count": 2762,
+    "root_count": 940,
     "runners_with_path": 2346
   }
 }

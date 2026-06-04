@@ -6,7 +6,8 @@ Scope-aware rule:
     a clean audit may enter.
   - clean theorem/no-go/bounded rows become retained-grade only when every
     one-hop dependency is already retained-grade or an accepted premise.
-    Tier-A derivation-target premises bound otherwise clean dependents to
+    Axiom/approved-primitive premises satisfy without bounding. Tier-A
+    derivation-target premises bound otherwise clean dependents to
     retained_bounded until the target is retired.
   - open gates, decorations, metadata, and terminal non-clean audit verdicts
     have explicit effective statuses and never become retained by author tier.

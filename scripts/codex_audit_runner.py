@@ -555,8 +555,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         premise_line = ""
         if premise_nodes.is_axiom_premise(dep_cid):
             premise_line = (
-                "=== Cited authority axiom_premise: true "
-                "(accepted framework premise; see rubric §4 carve-out) ===\n"
+                "=== Cited authority axiom_or_approved_primitive_premise: true "
+                "(accepted framework premise; see rubric carve-out) ===\n"
             )
         cited_blocks.append(
             f"=== BEGIN CITED AUTHORITY: {dep_path} ===\n"

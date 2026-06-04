@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Structural guard: axiom-premise docs must stay pure axiom content.
+"""Structural guard: axiom/primitive premise docs must stay pure premise content.
 
-An axiom-premise node (see docs/audit/data/axiom_premise_nodes.json) is
-granted an auditor carve-out: citing it does not, by itself, block a clean
-verdict (AUDIT_AGENT_PROMPT_TEMPLATE.md §4). That carve-out is only safe
-while the axiom doc contains pure A1+A2 axiom content. If a framework-rule /
-ratification clause is ever re-introduced into the axiom doc, the carve-out
-becomes a laundering path: any rule dropped into the axiom doc could then be
-"cleanly derived" by citing the axiom.
+An axiom/approved-primitive premise node (see
+docs/audit/data/axiom_premise_nodes.json) is granted an auditor carve-out:
+citing it does not, by itself, block a clean verdict
+(AUDIT_AGENT_PROMPT_TEMPLATE.md). That carve-out is only safe while the source
+doc contains pure approved-premise content. If a framework-rule / ratification
+clause is ever introduced into one of these docs, the carve-out becomes a
+laundering path: any rule dropped into the premise doc could then be "cleanly
+derived" by citing the premise.
 
-This guard tripwires that. For each allowlisted axiom-premise doc, it fails
+This guard tripwires that. For each allowlisted premise doc, it fails
 if the doc contains a ratification / load-bearing-rule MARKER (a clause that
 *asserts* a framework rule), not the mere keywords — explicit "this is NOT a
 framework rule" disclaimers are fine.
@@ -45,7 +46,7 @@ FORBIDDEN_PATTERNS = [
 
 
 def load_axiom_premise_docs() -> list[tuple[str, str]]:
-    """Return (canonical_id, current_path) for each allowlisted axiom node."""
+    """Return (canonical_id, current_path) for each allowlisted premise node."""
     if not AXIOM_PREMISE_NODES_PATH.exists():
         return []
     try:
@@ -73,7 +74,7 @@ def scan_doc(path: Path) -> list[str]:
 def main() -> int:
     docs = load_axiom_premise_docs()
     if not docs:
-        print("check_axiom_premise_clean: no axiom-premise registry; nothing to check.")
+        print("check_axiom_premise_clean: no axiom/primitive premise registry; nothing to check.")
         return 0
 
     failed = False
@@ -86,18 +87,18 @@ def main() -> int:
         violations = scan_doc(path)
         if violations:
             failed = True
-            print(f"  FAIL {cid} ({rel_path}): axiom-premise doc carries framework-rule markers:")
+            print(f"  FAIL {cid} ({rel_path}): axiom/primitive premise doc carries framework-rule markers:")
             for v in violations:
                 print(f"        - {v}")
         else:
-            print(f"  OK   {cid} ({rel_path}): pure axiom content")
+            print(f"  OK   {cid} ({rel_path}): pure premise content")
 
     if failed:
         print(
-            "\ncheck_axiom_premise_clean: an axiom-premise doc contains a framework-rule\n"
-            "ratification clause. The axiom-premise auditor carve-out is only safe while\n"
-            "the axiom doc is pure A1+A2. Move the rule into a named derivation lane (see\n"
-            "the 'reduce axiom docs to pure A1+A2' cleanup), or remove the node from\n"
+            "\ncheck_axiom_premise_clean: an axiom/primitive premise doc contains a framework-rule\n"
+            "ratification clause. The premise auditor carve-out is only safe while\n"
+            "the source doc is pure premise content. Move the rule into a named derivation lane,\n"
+            "or remove the node from\n"
             "docs/audit/data/axiom_premise_nodes.json."
         )
         return 1

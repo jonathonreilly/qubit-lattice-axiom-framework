@@ -93,13 +93,14 @@ library is driven only by auditor-owned fields:
     claims.
 
 Accepted-premise dependencies are handled by
-`docs/audit/scripts/premise_nodes.py`. Axiom premises satisfy chain closure
-without bounding the row. Tier-A admitted derivation targets are different:
-they satisfy chain closure only at the bounded tier, so a clean row depending
-on one remains `retained_bounded` until the admission is retired by a retained
-derivation. Tier-A conventions are registry metadata only, not accepted
-premises; if a proof uses a convention parent row for more than the vacuous
-normalization choice, that row must still earn retained-grade normally.
+`docs/audit/scripts/premise_nodes.py`. Axioms and explicitly approved
+framework primitives in `docs/audit/data/axiom_premise_nodes.json` satisfy
+chain closure without bounding the row. Tier-A admitted derivation targets are
+different: they satisfy chain closure only at the bounded tier, so a clean row
+depending on one remains `retained_bounded` until the admission is retired by a
+retained derivation. Tier-A conventions are registry metadata only, not
+accepted premises; if a proof uses a convention parent row for more than the
+vacuous normalization choice, that row must still earn retained-grade normally.
 - `prose_status` — vocabulary-drift status, orthogonal to `audit_status`. See
   `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`. One of:
   - `clean` — no vocabulary drift detected by `vocab_lint`.

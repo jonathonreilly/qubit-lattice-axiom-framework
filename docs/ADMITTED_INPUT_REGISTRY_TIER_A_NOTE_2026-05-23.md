@@ -14,9 +14,11 @@ non-axiom inputs that (a) gate downstream work and (b) carry a *retained-no-go
 portfolio* (i.e. derivation has been attempted and proven hard, so closing them
 needs a yet-to-be-found mechanism). This is deliberately **separate** from:
 
-- **Framework primitives** (one-qubit operator algebra at every site plus the
-  `Z^3` spatial substrate): foundational, never to be derived; tracked in
-  `docs/audit/data/axiom_premise_nodes.json`.
+- **Framework axioms and approved primitives** (the one-qubit operator algebra
+  at every site plus the `Z^3` spatial substrate, and any explicitly approved
+  primitive such as the scale-reference primitive): foundational, never to be
+  derived; tracked in `docs/audit/data/axiom_premise_nodes.json`. These
+  dependencies chain-satisfy without bounding downstream status.
 - **The in-progress derivation backlog** (~110 `audited_conditional`/`unaudited`
   rows that gate downstream but have *no* no-go portfolio — they simply await
   auditing/re-grounding, not a new mechanism). That backlog is the
@@ -26,10 +28,13 @@ Survey basis (live ledger, 2026-05-23): of 720 retained-grade rows, 703 have
 all-retained dependencies; only 6 non-retained inputs touch retained rows
 directly. The genuine admitted inputs gating the *bounded* corpus number ~118;
 curated to those that are irreducible (no-go portfolio) **and not vacuous**, the
-genuine admitted inputs are the **four** derivation-targets below (P1, AC_φλ, S,
-θ). Two further rows (Y₀, g₀) are **vacuous rescaling conventions** — listed for
-completeness but, like the AC_φλ naming, explicitly **not** counted as admitted
-inputs (see "Rigor-pass refinement" below).
+genuine admitted inputs are the **three** derivation-targets below (P1, AC_φλ,
+θ). The scale-reference primitive is no longer counted here: it is the
+explicitly approved units primitive registered in
+`docs/audit/data/axiom_premise_nodes.json`. Two further rows (Y₀, g₀) are
+**vacuous rescaling conventions** — listed for completeness but, like the
+AC_φλ naming, explicitly **not** counted as admitted inputs (see
+"Rigor-pass refinement" below).
 
 ## Tier A-1 — Admitted derivation-targets (irreducible; have no-go portfolios)
 
@@ -37,7 +42,6 @@ inputs (see "Rigor-pass refinement" below).
 |---|---|---|---|
 | **P1** | scalar observables are additive over independent subsystems ⇒ `W = log\|det(D+J)\|` | ~88 | `observable_principle_p1_bridge_{connes_nc_spectral, extensivity_primitive, jones_index_subfactor, locality_of_source_derivatives, tomita_gibbs_modular, structural_reframing}_..._2026-05-21` (6) |
 | **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
-| **S** | the single **Planck-mass conventional anchor** (`a^{-1} = M_Pl`): one dimensionful number fixing the lattice scale. Irreducible by dimensional analysis (a scale cannot come from the dimensionless one-qubit-on-`Z^3` structural core). *Whether this counts as an admitted empirical import or a framework-native unit declaration is deferred — see note below.* | pervasive | `planck_finite_response_no_go`, `planck_parent_source_hidden_character_no_go`, `planck_boundary_orientation_incidence_no_go` (3) |
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
 
 Notes:
@@ -81,36 +85,19 @@ Notes:
   attractor — so the admission is precisely "which coarse-graining + which arrow."
   This matches Koide's own Z₃ parametrization (arXiv:1301.4143), which leaves the
   per-sector ratio a free fit.
-- **S — the Planck-mass conventional anchor (`a^{-1} = M_Pl`).** Two things are
-  distinct. (i) The *unit choice* (meters vs Planck units vs natural units) is
-  vacuous — a pure convention, like the AC_φλ naming. (ii) The genuine content
-  is the *one dimensionful number* fixing the physical scale of the lattice
-  spacing `a`, currently taken as the Planck-mass anchor (`a^{-1} = M_Pl`). This
-  single scale-setting is **irreducible by dimensional analysis**: the
-  one-qubit operator algebra on the `Z^3` spatial substrate carries zero
-  dimensionful content, so every derived quantity is dimensionless or carries
-  `[a]^n`, and exactly one dimensionful convention/anchor must be supplied to
-  fix `a`. The three `planck_*_no_go` rows are consistent with this: they show
-  the scale/carrier is not forced by symmetry alone, i.e. it behaves as the
-  scale anchor, not a theorem.
-  - **Status of the Planck anchor (taken, not derived).** The package carries
-    `a^{-1} = M_Pl` as the explicit pin
-    (`PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` §1). Whether the framework
-    *derives* that its natural unit self-consistently equals the Planck length —
-    the closure `a/l_P = 1` — is the open gravity lane: the conditional theorem
-    `BP ⇒ a/l_P = 1` (`PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`),
-    whose entire forward chain (P_A selection, `c_cell = 1/4`, boundary-density
-    extension, source-unit normalization, and the BP carrier premise itself) is
-    currently `unaudited` per the 2026-05-30 chain audit. So the Planck-mass
-    anchor is *taken*, not yet derived.
-  - **Deferred classification.** Whether this Planck-mass conventional anchor is
-    counted as an *admitted empirical import* (one number taken from the world)
-    or recast as a *framework-native unit declaration* (the trivial scale-fixing
-    every physical theory makes, carrying no dimensionless physics) is left
-    **open and to be decided later**. Either way it is the *only* dimensionful
-    thing the structural core takes; the remaining open work is entirely on the
-    dimensionless side (P1, θ, AC_φλ-δ). This wording is aligned with
-    `PLANCK_MASS_CONVENTIONAL_ANCHOR_META_NOTE_2026-05-27`.
+- **Scale-reference primitive (`a^{-1} = M_Pl`).** The single dimensionful
+  reference fixing the physical scale of the lattice spacing `a` is now an
+  explicitly approved framework primitive, registered as `scale_reference_primitive`
+  in `docs/audit/data/axiom_premise_nodes.json` with source
+  [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md). It is
+  irreducible by dimensional analysis: the one-qubit operator algebra on the
+  `Z^3` spatial substrate carries zero dimensionful content, so every derived
+  quantity is dimensionless or carries `[a]^n`, and exactly one dimensionful
+  reference must be supplied to fix units. A lane whose only otherwise
+  non-retained dependency is this primitive is **not** bounded merely for using
+  that unit reference. The primitive carries no dimensionless content and does
+  not assert `a/l_P = 1`; the self-consistency that the natural unit equals the
+  Planck length remains the separate open gravity derivation.
 - **θ** is admitted here exactly as the Standard Model admits it (the strong-CP
   problem); not a framework-specific deficit.
 
@@ -137,12 +124,9 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
 
 - **P1, θ, AC_φλ:** stand as genuine admitted inputs (P1 principle-grade; θ
   shared with the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
-- **S:** restated above as the single **Planck-mass conventional anchor**
-  (`a^{-1} = M_Pl`) — irreducible by dimensional analysis, *taken not derived*,
-  with its classification (admitted empirical import vs framework-native unit
-  declaration) explicitly **deferred**. So the genuine-admitted-input count
-  below is "three dimensionless admissions (P1, θ, AC_φλ) **plus** one
-  Planck-mass conventional anchor (S, import-vs-native deferred)."
+- **Scale reference:** removed from Tier A and registered as the
+  explicitly approved `scale_reference_primitive`. It is a units primitive, not a
+  derivation-target admission and not a status-bounding dependency.
 - **Y₀, g₀:** vacuous rescaling conventions — **dropped** from the
   admitted-input count (a convention is not an input, just as a name is not).
 - **θ rigor check:** verified NOT derivable from the retained
@@ -152,12 +136,10 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   θ=0 remains a genuine admission (shared with the SM).
 
 Net stratified by character: **three dimensionless admissions** — AC_φλ
-(framework-specific physics), P1 (a mild principle), θ (an SM-shared problem) —
-**plus one Planck-mass conventional anchor**, S, whose status as a counted
-import vs a framework-native unit declaration is **deferred**. The dimensionless
-three are the genuine open derivation work; S is the single scale-setting every
-physical theory takes, orthogonal to all of them (the Planck anchor cannot
-supply any dimensionless number).
+(framework-specific physics), P1 (a mild principle), θ (an SM-shared problem).
+The scale-reference primitive is the single scale-setting every physical
+theory takes, orthogonal to all of them, and cannot supply any dimensionless
+number.
 
 ## Propagation wiring (audit-lane sidecar)
 
@@ -171,9 +153,10 @@ chain-satisfying premises. The Tier-A sidecar adds:
 2. A new accepted-premise class for Tier-A derivation targets in
    `premise_nodes.py`: chain-satisfying **only at `retained_bounded`** (so
    dependents are cleanly *bounded*, not blocked), but explicitly distinct from
-   axioms (which are never-to-be-derived). Convention rows are not accepted
-   premises, because the existing convention parent notes carry more than the
-   vacuous normalization choice and must not be laundered as theorem inputs.
+   axioms and approved primitives (which chain-satisfy without bounding).
+   Convention rows are not accepted premises, because the existing convention
+   parent notes carry more than the vacuous normalization choice and must not
+   be laundered as theorem inputs.
 3. The convention that any lane consuming a Tier-A admission lists its id as a
    **real `deps` edge** (or a structured `admitted_context_inputs` field), not
    prose — otherwise auto-propagation cannot fire.
@@ -193,6 +176,8 @@ unretired Tier-A derivation target.
 
 - Does **not** set, promote, or change any row's `effective_status`.
 - Does **not** add Tier-A ids to `axiom_premise_nodes.json`.
+- Does **not** treat approved primitives as Tier-A admissions; primitives and
+  axioms chain-satisfy without imposing `retained_bounded`.
 - Does **not** promote Tier-A derivation-target dependents to unbounded retained
   status; the machine policy keeps those rows bounded until the relevant
   admission is retired.

@@ -263,7 +263,6 @@ def main() -> int:
             tier_a = {}
         derivation_targets = tier_a.get("derivation_targets") or {}
         conventions = tier_a.get("conventions") or {}
-        not_a_node = tier_a.get("not_a_node") or {}
         expected_ids = set(derivation_targets)
         listed_ids = set(tier_a.get("canonical_ids") or [])
         if listed_ids != expected_ids:
@@ -273,11 +272,11 @@ def main() -> int:
                 "accepted premises"
             )
         admitted_count = tier_a.get("genuine_admitted_input_count")
-        if admitted_count is not None and admitted_count != len(derivation_targets) + len(not_a_node):
+        if admitted_count is not None and admitted_count != len(derivation_targets):
             errors.append(
                 "tier_a_admissions.json genuine_admitted_input_count must equal "
-                "derivation_targets + not_a_node entries; conventions are not "
-                "admitted inputs"
+                "derivation_targets; conventions and reclassified primitives "
+                "are not admitted inputs"
             )
         for dep_id, entry in sorted(derivation_targets.items()):
             if dep_id not in rows:

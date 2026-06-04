@@ -2,7 +2,7 @@
   "claim_type_counts": {
     "bounded_theorem": 1261,
     "decoration": 56,
-    "meta": 243,
+    "meta": 244,
     "no_go": 267,
     "open_gate": 121,
     "positive_theorem": 699
@@ -132,7 +132,7 @@
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 239,
+    "meta": 240,
     "open_gate": 30,
     "retained": 171,
     "retained_bounded": 651,

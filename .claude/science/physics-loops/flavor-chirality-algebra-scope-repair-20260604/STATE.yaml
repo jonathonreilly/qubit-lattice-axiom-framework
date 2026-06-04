@@ -1,0 +1,24 @@
+loop: flavor-chirality-algebra-scope-repair-20260604
+date: 2026-06-04
+mode: run
+target_status: bounded-support
+cycle_count: 1
+active_route: narrow audited conditional row to algebraic P1/P2 checks
+hard_residual: downstream flavor bridges are not supplied in this packet
+files_touched:
+  - docs/FLAVOR_CHIRALITY_GATE_NARROWS_TO_ONE_SPIN_STATISTICS_IMPORT_2026-05-31.md
+  - scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py
+  - logs/runner-cache/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.txt
+open_imports:
+  - Dirac-Kahler/staggered physical matter-carrier bridge
+  - hw=1/count-three generation reading
+  - charged-lepton carrier/generation identification
+  - Koide Q=2/3 chiral readout bridge
+  - spin-statistics or emergent-Lorentz fermionic-frame derivation
+no_go_routes:
+  - Do not claim the full flavor sector follows from the finite P1/P2 algebra.
+trace_gate_classification: direct_blocker_closure
+review_findings: pending independent reviewer
+pr_status: pending
+next_exact_action: open review PR from this branch
+stop_condition: branch packaged with runner pass and cache refresh

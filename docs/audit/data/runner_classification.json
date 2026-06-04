@@ -8595,13 +8595,13 @@
     "flavor_find_j_round3_dirac_generation_blind_2026-06-02": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
-        "C": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "runner": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py"
     },
     "flavor_find_j_round5_trace_vs_center_state_final_2026-06-02": {
@@ -34498,13 +34498,13 @@
         "flavor_find_j_round3_dirac_generation_blind_2026-06-02"
       ],
       "counts": {
-        "A": 0,
+        "A": 3,
         "B": 0,
-        "C": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py": {
@@ -62182,16 +62182,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 373,
+    "decoration_candidates": 374,
     "dominant_class_distribution": {
-      "A": 288,
+      "A": 289,
       "B": 307,
-      "C": 863,
+      "C": 862,
       "D": 324,
       "none": 465
     },
     "runners_classified": 2247,
-    "runners_with_C": 1123,
+    "runners_with_C": 1122,
     "runners_with_D": 655
   }
 }

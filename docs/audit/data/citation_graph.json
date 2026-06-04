@@ -57253,10 +57253,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a0766768b5390e77dcd24e8b99b38fb7201ef232523b7878310726316b140e22",
+      "note_hash": "ef60620527073ccb5e9f9c7a2e6cf988f782edd94b0f4f5fce27699165328221",
       "path": "docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md",
       "runner_path": "scripts/flavor_find_J_round3_dirac_generation_blind_2026_06_02.py",
-      "title": "Flavor \u2014 J-hunt round 3: charged-lepton Dirac reality structure is generation-blind (J_spin \u2297 I_gen); it does not supply the doublet J. det_C/r=1/2 not forced; wall pivots to the \u03ba block-count measure."
+      "title": "Flavor \u2014 J-hunt round 3: conditional finite-generation algebra for `U_gen=iI3`; no doublet `J` is supplied."
     },
     "flavor_find_j_round5_trace_vs_center_state_final_2026-06-02": {
       "claim_id": "flavor_find_j_round5_trace_vs_center_state_final_2026-06-02",

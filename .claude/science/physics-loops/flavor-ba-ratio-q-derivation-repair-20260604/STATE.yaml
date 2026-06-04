@@ -1,0 +1,21 @@
+loop: flavor-ba-ratio-q-derivation-repair-20260604
+date: 2026-06-04
+mode: run
+target_status: bounded-support
+cycle_count: 1
+active_route: derive symmetric-form Q identity from eigenvalues
+hard_residual: physical choice of Hilbert-Schmidt measure remains open
+files_touched:
+  - docs/FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md
+  - scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py
+  - logs/runner-cache/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.txt
+open_imports:
+  - physical matter-sector measure selector
+  - derivation that framework chooses Hilbert-Schmidt equipartition
+no_go_routes:
+  - Do not claim physical Koide value from the characterization alone.
+trace_gate_classification: direct_blocker_closure
+review_findings: pending independent reviewer
+pr_status: pending
+next_exact_action: open review PR from this branch
+stop_condition: branch packaged with runner pass and cache refresh

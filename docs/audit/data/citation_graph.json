@@ -60106,7 +60106,7 @@
         "gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3e1022db32082337de6478fe897cdfce5f77be7b075e3aa166a481d5d56b2909",
+      "note_hash": "e8531281459fe5f58a194bfc0ce8810577abe06c652b5b3bd8da140f206d4fb4",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_RETAINED_CLASS_SAMPLING_INVERSION_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Retained Class-Sampling Inversion"

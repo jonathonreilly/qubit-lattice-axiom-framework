@@ -1,8 +1,8 @@
 # Gauge-Vacuum Plaquette Retained Class-Sampling Inversion
 
 **Date:** 2026-04-17
-**Status:** exact retained-sector constructive theorem on the plaquette PF lane;
-on every finite retained marked class sector, the truncated coefficient vector is
+**Status:** exact finite-sector constructive theorem on the plaquette PF lane;
+on every finite marked class sector, the truncated coefficient vector is
 exactly recoverable from finitely many generic marked-holonomy samples of the
 compressed boundary class function
 **Type:** positive_theorem
@@ -72,6 +72,24 @@ From
 
 So the next honest retained constructive target is finite inversion from enough
 independent samples.
+
+## 2026-06-04 Runner Support-Check Repair
+
+The paired runner's scalar-value support check now matches the repaired
+scalar-value insufficiency note's narrowed formal no-go wording:
+
+```text
+one scalar constraint does not determine an N >= 3 positive normalized vector
+```
+
+and
+
+```text
+a scalar plaquette value alone cannot be treated as full class-sector data
+```
+
+This is an artifact-consistency repair only. It does not broaden this source
+note, apply an audit verdict, or claim a new effective status.
 
 ## Theorem 1: exact retained finite-sampling law
 

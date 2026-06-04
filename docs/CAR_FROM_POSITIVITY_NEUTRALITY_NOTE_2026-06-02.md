@@ -211,6 +211,161 @@ lens that has now been ruled *neutral*, sharpening — not closing — the searc
 
 ---
 
+## No-go discipline gate (N1–N8)
+
+**Status:** PASS for the narrow positivity-neutrality claim only. The claim being
+gated is *not* a repo-wide "fermions are impossible" no-go and *not* a claim that the
+cross-site sign is unphysical. It is the single negative statement that **reflection
+positivity / emergent-time T-positivity / single-clock Stone reconstruction do not
+force CAR over the hard-core boson, nor force the HCB** — because the object these
+principles certify (the positive transfer operator `T = exp(-τH)` and its spectrum,
+equivalently `H_gen = -(1/τ) log T ≥ 0`) is **frame-identical** on the local
+structure (§8a–c), so positivity is **blind** to the bare exchange sign. The gate's
+"alternative routes" are therefore the *positivity-flavored* mechanisms that could
+attempt to **break the neutrality** by promoting the sign to a positivity witness, and
+why each is blind/neutral on the certified object.
+
+### N1 — Alternative route enumeration
+
+Each row is a candidate A1+A2-native **positivity** structure that could attempt to
+**force CAR** (or force the HCB) over the hard-core boson. The neutrality holds iff
+every such route is blind to the cross-site sign on the certified object. The marker
+records whether the route was actually exercised against the runner's L = 4 chain
+(§8) / ring (§9) construction.
+
+| route | what it would attempt | why it fails for this scoped claim | marker |
+|---|---|---|---|
+| Reflection positivity (RP) of the Euclidean measure | Demand RP of the reflected two-point structure and read off CAR as the unique RP-compatible statistics. | RP certifies `⟨θ(F) F⟩ ≥ 0` through the positive `T`; but `H_HCB = H_fermion` as **the same operator** on the open chain (§8a, bond-string diff cancels in the Hermitian hopping), so the reflected metric is **identical** in both frames — RP holds (or fails, §7) frame-independently. No RP datum separates `[b₁,b₂]=0` from `{c₁,c₂}=0`. | BLIND (§8a–c, §7) |
+| Emergent-time T-positivity (`T = e^{-τH} ⪰ 0`) | Use `T ⪰ 0` / `H_gen ≥ 0` as the selector: claim only the fermion frame yields a positive transfer operator. | Both frames give the **same** positive `T` (min eig `0.3269` both, §8b–c). There is *no difference in the certified object* to detect; T-positivity certifies **both** readings. | BLIND (§8b–c) |
+| Transfer-matrix spectrum / Stone generator | Read the statistics off the reconstructed generator spectrum `spec(H_gen)`. | The two Stone generators have **identical spectra** (`max|Δspec| = 0`, §3; open-chain `H_HCB = H_fermion`, §8a). The spectrum is a positivity-derived invariant and it coincides. | BLIND (§3, §8a) |
+| Closed-loop / area-law (Wilson-line) observable | Use the ring/loop ground-state datum (where the sign **is** physical, §9) as a positivity selector. | The wrap-around parity string `(-1)^Q` **does** split the spectra (HCB ground `-2.8284` vs fermion `-2.0`, §9) — but **both** ring theories stay Hermitian and bounded below, so **both** yield a positive `T` (min eig `0.2431` and `0.3679`). The loop distinguishes **two theories**; it does **not** make either *violate* positivity, so positivity still cannot *rank* them. | NEUTRAL-but-physical (§9) |
+| Bare one-particle loop correlator `⟨a_x† a_y⟩` | Treat the sign-carrying two-point function as the witness that picks CAR. | `⟨a_x† a_y⟩` is **string/ordering-dependent** (sign-flips `+0.4472`↔`−0.4472`, §8d, 8f) and is **not gauge-invariant / not parity-even** — a correlator *value* is not a positivity certificate. Its gauge-invariant, parity-even partner `⟨n_x n_y⟩` is **identical** across frames (§6, §8e). | BLIND on invariants (§6, §8d–f) |
+| DHR inner-gauge erasure (the *refuted* dual route) | Argue the **converse** — that the sign is a trivial inner-unitary gauge, dissolving the question so positivity is vacuously neutral. | **Refuted at the generator level** (§5): the intertwiner `{W : W b_i = c_i W}` has **null dimension 0**, because `[b₁,b₂]=0` vs `{c₁,c₂}=0` is `*`-iso-invariant. So the sign is a **genuine** distinction; neutrality is **positivity-blindness, not gauge-triviality** — closing this escape *strengthens* the gate. | REFUTED → blindness (§5) |
+
+The combinatorial space of future principles is not exhaustive in principle. Within
+the positivity lens exercised here, **every** route either certifies *both* readings
+(open chain) or distinguishes the two ring theories *without* ranking them by
+positivity (closed loop). None promotes the cross-site sign to a positivity witness.
+
+### N2 — Wall-independence audit
+
+The collapsed wall set for this neutrality claim is a **single** wall: *the baseline
+A1+A2 net supplies no graded locality / fermion-parity superselection, so the
+certified positive object is frame-identical.* The RP, T-positivity, Stone-spectrum,
+area-law, and bare-correlator entries of N1 are **not independent retained walls** —
+they are alternate positivity *probes* of the same single wall, each reducing to
+"`H_HCB = H_fermion` on the open chain ⇒ same `T`" (§8a–c). The only place the wall
+is even *touched* is the closed loop (§9), and there it remains intact for positivity
+(both rings T-positive). Closing a future graded-locality / parity-superselection
+principle (§5 open-path) would **breach this single wall** and is the named route to
+select CAR; it would not contradict the present frame-identity, it would *add* the
+grading the baseline lacks.
+
+### N3 — Hidden-wall scan
+
+The load-bearing inputs are explicit and finite-dimensional: one qubit per site (A1),
+the `Z`/`Z³` chain (A2), the on-site ladders `a† = σ_-`, the shared number operators
+`n_x`, the Jordan–Wigner string as standard methodology, the spectral theorem
+(`log`/`exp` of Hermitian matrices), and the open-vs-ring JW boundary fact. The
+appeals to "**neutral**", "**blind**", "**does not force**", "RP", and "T-positivity"
+are **not** smuggled retained inputs: the neutrality is *derived* from the explicit
+operator identity `H_HCB = H_fermion` (§8a) and the explicit equal spectra (§3, §8b),
+not asserted from a positivity theorem taken on faith. The grading `F = (-1)^Q`
+invoked from `fermion_parity_z2_grading_theorem` is used only to show it is the
+**same** operator in both frames (built from the shared `n_x`, §2) — i.e. as a *fact
+neutralized*, never as a hidden wall doing selection work. No claim leans on an
+un-exhibited positivity certificate.
+
+### N4 — Residual matching
+
+| cited witness | residual it attacks / supplies | residual here | match? |
+|---|---|---|---|
+| `staggered_dirac_substep1_statistics_agnostic_no_forcing` (retained_no_go) | Operator-algebra / dimension / locality routes do not force CAR. | Adds the **positivity** route (RP/T-positivity/Stone) to the same single "no graded locality" wall, witnessed from positivity. | yes (same wall, new probe) |
+| `single_clock_stone_finite_dim_uniqueness_narrow_theorem` (retained) | Stone reconstruction of `H_gen` from a single positive clock `T`. | Used to show the reconstructed generator is **frame-identical** (§3, §8b–c) — the certified object positivity sees. | yes |
+| `mixed_os_transfer_representation_bounded` (retained_bounded) | The load-bearing RP physics is the temporal **η-sign** reflection, *not* the cross-site sign; single-step metric is indefinite, 2-step η repairs it. | §7 reproduces the single-step indefiniteness **frame-independently** (defect identical in both frames). | yes |
+| `fs_rotation_exchange_discrete_insufficiency` (retained_no_go) | Discriminator is the **cross-site** graded relation, not the on-site rotation sign. | Positivity does not supply that cross-site grading either (§5, §8). | yes |
+| `area_law_majorana_car_fock_equivalence` (retained) | Dim-4 admits commuting two-Pauli pairs that are **not** a CAR pair (`T3`). | Same structural freedom: the HCB survives every positivity test the fermion passes. | yes |
+| `fermion_parity_z2_grading_theorem` (retained) | Existence of the `Z₂` parity grading `F`. | Shown to be the **same** operator in both frames (shared `n_x`, §2) — neutralized, not load-bearing for selection. | partial (fact reused, not as selector) |
+
+The `area_law` and `fermion_parity` rows are matched as *structural corroboration* of
+the freedom that makes positivity neutral, never as positive selectors of CAR. No
+non-matching witness is used as load-bearing support for the neutrality.
+
+### N5 — Rhetoric audit
+
+The scope words are bounded to the certified positive object on the *local* structure:
+
+- "**neutral**" / "**does not force**" — scoped to: positivity certifies *both* the
+  HCB and the fermion reading because `T` is frame-identical (§8b–c); it is **not** a
+  claim that CAR is impossible or that the two theories are the same theory (they
+  differ on the ring, §9).
+- "**blind**" — scoped to: no *positivity witness* (RP metric, `spec(T)`, `H_gen`)
+  separates the frames; explicitly **not** "the sign is invisible everywhere" (it is
+  visible in the bare correlator §8d and physical on the loop §9).
+- "**does not force … nor the reverse**" — the neutrality is *symmetric*: positivity
+  also fails to force the HCB. Stated, not just CAR-directional.
+- "**genuine generator-level invariant**" — scoped to §5's null-dimension-0
+  intertwiner result; it asserts the sign is a real `*`-iso-invariant, and is used to
+  *deny* the gauge-triviality escape, **not** to claim positivity sees it.
+
+The note does **not** claim that no graded-locality, parity-superselection,
+continuum-`π₁`, multi-loop, or alternative dynamical principle can ever select CAR;
+§5 explicitly keeps those open as derivation targets.
+
+### N6 — Partial-closure path scan
+
+Two non-axiom partial-closure paths remain explicitly open and are **not** called new
+axioms:
+
+1. **Graded-locality / fermion-parity-superselection on closed loops.** §9 isolates
+   *where* the sign is physical — the wrap-around parity string `(-1)^Q` and the
+   concrete witness it must fix: the **ring ground-state splitting** (HCB `-2.8284`
+   vs fermion `-2.0`). A retained principle forcing the `Z³` matter net to be
+   graded-local, or imposing a fermion-parity superselection rule on spatial loops,
+   would **select CAR** against exactly that witness. This is the parent no-go's
+   named `N6`/`N7` path, here equipped with an explicit closed-loop observable.
+2. **Spin-statistics on the *continuum-limit* configuration space.**
+   `fs_rotation_exchange` shows the Finkelstein–Rubinstein bridge dies on the bare
+   discrete set; whether the framework's **emergent** continuum supplies the missing
+   `π₁` is a derivation target, not an import.
+
+Neither is an A1+A2 consequence today. The gate does not pre-judge them; it only
+records that **positivity** is not the lens that closes them — it has been ruled
+neutral, which *relocates* (does not close) the search onto the closed-loop grading
+witness.
+
+### N7 — Steelman
+
+The strongest objection: *"Reflection positivity is a property of the full Euclidean
+measure with its boundary/reflection data, not merely of the bulk Hermitian
+Hamiltonian. On a reflected/closed geometry the fermion's wrap-around string changes
+the reflected two-point structure, so an RP analysis on the **ring** could
+discriminate the frames — and §9 itself admits the ring spectra differ."* This
+steelman correctly blocks any *broader* claim that no positivity-flavored datum ever
+distinguishes the two theories. It does **not** break the scoped neutrality, for the
+reason §9 makes explicit: although the ring spectra differ, **both** ring
+Hamiltonians remain Hermitian and bounded below, so **both** yield a positive
+transfer operator (min eig `0.2431`, `0.3679`). A *difference* between two theories is
+not the same as one theory *failing positivity*; RP/T-positivity certifies both and
+therefore still cannot **rank** them. The discriminating datum on the ring is the
+spectrum/ground-state splitting (a global boundary observable), which the gate hands
+to the §5/N6 graded-locality route — not to positivity.
+
+### N8 — Cross-cycle echo
+
+Prior negative-claim overclaims in this repo (and in this very lane — see the
+self-corrected staggered-RP single-step no-go) failed by **(a)** testing one
+representative expression and declaring the whole lane closed, or **(b)** mistaking a
+*convention/gauge* relabeling for a substantive equivalence. This note actively
+counters both: **(a)** it retains the claim boundary at the *certified positive
+object on the open chain* and explicitly carves out the closed-loop regime (§9) where
+the sign turns physical, leaving the graded-locality route open; **(b)** it **builds,
+tests, and refutes** the tempting "JW string is a trivial unitary gauge" relabeling in
+the same runner (§5, null dim 0), recording it as a falsified intermediate rather than
+support — so the neutrality rests on *positivity-blindness*, never on a gauge-triviality
+over-claim. The verdict is "neutral / sign relocated," explicitly **not** "search
+exhausted."
+
 ## Import / governance flags
 
 - **No new imports or axioms.** Only A1+A2 + retained inventory + standard

@@ -1,0 +1,154 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_dple_record_axiom_invariance_2026_06_04.py
+runner_sha256: aacb3f8225ca563aac5283f2f4b6c23a66548719ad1909dddbff6d818e539082
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+DM DPLE Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-dm-dple-invariance/wt
+Parent note: /private/tmp/cl3-dm-dple-invariance/wt/docs/DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_THEOREM_NOTE_2026-04-19.md
+Companion source note:
+  docs/DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing matrix-analysis chain
+      (Sections 1-4 and runner T1-T7 of the parent note) is
+      invariant under the 2026-06-04 Record-axiom adoption.
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: Polynomial-degree identity deg_t det(H_0 + t H_1) = d
+========================================================================
+  Reproduces parent T1 logic under a Record-axiom counterfactual scope.
+  Uses Jacobi / Faddeev-LeVerrier finite-dimensional content only.
+  PASS degree_identity_d=2 :: max |coeff(t^3)| = 1.36e-14 (< 1e-6)
+  PASS degree_identity_d=3 :: max |coeff(t^4)| = 1.10e-14 (< 1e-6)
+  PASS degree_identity_d=4 :: max |coeff(t^5)| = 7.47e-14 (< 1e-6)
+  PASS degree_identity_d=5 :: max |coeff(t^6)| = 1.62e-12 (< 1e-6)
+
+========================================================================
+BLOCK 2: Morse bound floor(d/2) on interior Morse-idx-0 CPs
+========================================================================
+  Reproduces parent T2 logic on 200 random Hermitian pairs per d.
+  PASS morse_bound_d=2 :: max interior Morse-idx-0 = 1 <= floor(2/2) = 1
+  PASS morse_bound_d=3 :: max interior Morse-idx-0 = 1 <= floor(3/2) = 1
+  PASS morse_bound_d=4 :: max interior Morse-idx-0 = 1 <= floor(4/2) = 2
+  PASS morse_bound_d=5 :: max interior Morse-idx-0 = 1 <= floor(5/2) = 2
+
+========================================================================
+BLOCK 3: F_3 = F4 on DM A-BCC basins (parent T3)
+========================================================================
+  Pure matrix analysis on the parent's fixed H_base, J_* chart.
+  PASS F3_basin_Basin_1 :: F_3 = True (expected True)
+  PASS F3_basin_Basin_N :: F_3 = False (expected False)
+  PASS F3_basin_Basin_P :: F_3 = False (expected False)
+  PASS F3_basin_Basin_X :: F_3 = False (expected False)
+
+========================================================================
+BLOCK 4: d = 3 quadratic discriminant Delta_ret signs on basins
+========================================================================
+  Delta_ret = c_2^2 - 3 c_1 c_3 (pure cubic-polynomial identity).
+  PASS Delta_ret_sign_Basin_1 :: Delta_ret = +7.804 (sign +, expected +)
+  PASS Delta_ret_sign_Basin_N :: Delta_ret = -10.107 (sign -, expected -)
+  PASS Delta_ret_sign_Basin_P :: Delta_ret = +458.736 (sign +, expected +)
+  PASS Delta_ret_sign_Basin_X :: Delta_ret = -4715189.966 (sign -, expected -)
+
+========================================================================
+BLOCK 5: d = 3 binary-selector histogram (parent T7)
+========================================================================
+  Over 500 random pairs, interior Morse-idx-0 count is in {0,1} for
+  >= 95% of samples (binary-selector property unique to d = 3).
+  PASS d3_binary_selector_histogram :: CP=0: 402, CP=1: 98, CP>=2: 0; binary fraction 500/500 >= 475
+
+========================================================================
+BLOCK 6: d = 2 vacuous-signature check (parent T5)
+========================================================================
+  Both c_2 > 0 and c_2 < 0 cases appear in random d = 2 pairs.
+  PASS d2_vacuous_signature :: c_2 > 0: 31, c_2 < 0: 169 (both present)
+
+========================================================================
+BLOCK 7: d = 4 fragmentation (parent T4)
+========================================================================
+  Random-search for a d = 4 Hermitian pair with >= 2 interior
+  Morse-idx-0 CPs in (0,1). Bounded search budget.
+  PASS d4_fragmentation_found :: found pair with 2 interior Morse-idx-0 CPs at t = [np.float64(0.5201397162669374), np.float64(0.009513402006580848)]
+
+========================================================================
+BLOCK 8: Sylvester signature consistency on basins
+========================================================================
+  Evaluating sign(p(t)) at t = 0, 0.5, 1.0 via pure det-evaluation.
+  No record functional appears; the criterion sign(p(t_*)) = sign(c_0)
+  is a purely matrix-analytic Sylvester signature statement.
+  PASS sylvester_signature_Basin_1 :: c_0 = +5.0283 == det H_base (+5.0283); sign(c_0)=+, sign(p(0.5))=+, sign(p(1.0))=+
+  PASS sylvester_signature_Basin_N :: c_0 = +5.0283 == det H_base (+5.0283); sign(c_0)=+, sign(p(0.5))=+, sign(p(1.0))=+
+  PASS sylvester_signature_Basin_P :: c_0 = +5.0283 == det H_base (+5.0283); sign(c_0)=+, sign(p(0.5))=-, sign(p(1.0))=-
+  PASS sylvester_signature_Basin_X :: c_0 = +5.0283 == det H_base (+5.0283); sign(c_0)=+, sign(p(0.5))=-, sign(p(1.0))=-
+
+========================================================================
+BLOCK 9: Parent note Record-axiom usage scan (load-bearing sections)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-dm-dple-invariance/wt/docs/DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_THEOREM_NOTE_2026-04-19.md
+  PASS structural_section_start_found :: start index = 1644
+  PASS structural_section_end_found :: end index = 7372
+  PASS zero_record_axiom_tokens_in_load_bearing_sections :: matches = []
+  PASS matrix_analysis_content_present_in_load_bearing_sections :: matches >= 5: ['det', 'Hermitian', 'Sylvester', 'Morse', 'Jacobi', 'Hellmann', 'p(t)', 'discriminant']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual: identical numeric output
+========================================================================
+  Two evaluation scopes: 'Record axiom asserted' and 'Record axiom
+  not asserted'. Both call the same matrix-analysis pipeline; the
+  Record axiom enters neither, so outputs are identical by construction.
+  PASS counterfactual_F3_identical_and_expected :: with == without == expected: True
+  PASS counterfactual_Delta_ret_identical :: max |with - without| = 0.000e+00
+  PASS counterfactual_c0_identical :: c_0 = +5.028315 == +5.028315
+
+========================================================================
+BLOCK 11: Quantum and Lattice content preserved; Record is additive
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-dm-dple-invariance/wt/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-dm-dple-invariance/wt/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_log_det_etc :: Record axiom's own scope statement excludes log-det / source / action / measurement / Born content
+
+========================================================================
+BLOCK 12: F_3 reduction sanity (Delta_ret > 0 = direct Morse count)
+========================================================================
+  On each basin, verify that the parent's quadratic-discriminant test
+  agrees with the direct interior-Morse-idx-0 count from interior_morse_idx0.
+  PASS F3_reduction_sanity_Basin_1 :: F4_path = True, F3_direct = True, Delta_ret = +7.804
+  PASS F3_reduction_sanity_Basin_N :: F4_path = False, F3_direct = False, Delta_ret = -10.107
+  PASS F3_reduction_sanity_Basin_P :: F4_path = False, F3_direct = False, Delta_ret = +458.736
+  PASS F3_reduction_sanity_Basin_X :: F4_path = False, F3_direct = False, Delta_ret = -4715189.966
+
+========================================================================
+TOTAL PASS: 43
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing chain of
+  DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_THEOREM_NOTE_2026-04-19.md
+  uses ONLY finite-dimensional matrix analysis (Jacobi /
+  Faddeev-LeVerrier, Sylvester signature, Morse counting) on the
+  retained DM A-BCC chart. The Record axiom (additive scalar
+  record-readout functional) is neither used nor invoked.
+  Numeric output is identical under both 'Record axiom asserted'
+  and 'Record axiom not asserted' outer scopes. This runner does
+  not re-apply any prior audit verdict; it records that the
+  arithmetic checked here is unchanged by the 2026-06-04 axiom-
+  set adoption.
+
+The audit lane decides whether to honor or test the prior judicial
+material on the new minimal_axioms premise hash.
+
+----- stderr -----
+

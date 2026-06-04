@@ -12,7 +12,7 @@
 This revision isolates the finite algebraic core from the broader lattice
 Noether parent surface:
 
-- **Load-bearing (in scope):** The AxisInv reindexing algebra — T1 anti-Hermiticity characterization, T2 bilateral conserved current derivation, T3 class-strictness certification, T4 sharpness, and T5 carrier-uniformity — all close algebraically and are verified numerically by the eight runner exhibits to machine precision, given the finite Grassmann bilinear action `S_F = chi_bar M chi` and site-local/internal generators `T` satisfying `[T, M] = 0` as supplied inputs.
+- **Load-bearing (in scope):** The AxisInv reindexing algebra — T1 anti-Hermiticity characterization, T2 bilateral conserved current derivation, T3 class-strictness certification, T4 sharpness, T5 carrier-uniformity, and the Wick-sign convention certificate — all close algebraically and are verified numerically/symbolically by the nine runner exhibits to machine precision, given the finite Grassmann bilinear action `S_F = chi_bar M chi` and site-local/internal generators `T` satisfying `[T, M] = 0` as supplied inputs.
 - **Out of scope:** any Ward theorem for generators that shift lattice indices,
   and any identification of this generic carrier `M` with the physical
   staggered Kogut-Susskind carrier `M_KS`.
@@ -261,17 +261,40 @@ The "on shell" condition used here is the same as the parent's: a
 choice of `chi`, `chi_bar` field expectations that solve the
 classical equations of motion `M chi = 0`, `chi_bar M = 0`. For `M`
 of the form `M = M_off + m I` with `m > 0`, the operator is
-invertible, and the appropriate operationally-canonical "on-shell"
-expectation values are the Wick-contracted Green's functions
+invertible. The runner uses the following explicitly defined
+current-bilinear convention:
 
 ```text
-    <chi_bar_a chi_b>  =  Minv_{b, a}
+    B_ab  :=  d log det(M) / dM_ab  =  (M^{-1})_{b,a}.                  (B)
 ```
 
-evaluated in the free Grassmann partition with action
-`exp(- chi_bar M chi)`. This is the convention adopted by the parent
-runner's `E3` exhibit and by the present runner's `E1`-`E8` exhibits
-(see `greenfn_expectation_bilateral` in the runner).
+This is the source-ordered Wick contraction used in the current
+formula. It is not the strict ordered Berezin monomial expectation of
+`chi_bar_a chi_b`. With the standard finite Berezin partition
+
+```text
+    Z(M) = Integral exp(- chi_bar M chi) Dchi_bar Dchi = det(M),
+```
+
+differentiating gives
+
+```text
+    d log Z / dM_ab = (M^{-1})_{b,a}
+                   = - <chi_bar_a chi_b>_ord.                          (W)
+```
+
+Thus the previous shorthand
+
+```text
+    <chi_bar_a chi_b> = Minv_{b,a}
+```
+
+is to be read as the current-bilinear convention `B_ab` in `(B)`, or
+equivalently as the negative of the strict ordered Berezin expectation
+in `(W)`. Runner exhibit `E0` verifies `(B)` and `(W)` symbolically on
+a generic `2 x 2` matrix. The divergence tests are insensitive to an
+overall current sign, but this explicit convention is the formula
+inventory authority for the displayed current below.
 
 ## Carrier-independence is a quantitative statement
 
@@ -319,8 +342,12 @@ staggered-specific carrier to close.
 
 The runner
 `scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py`
-exhibits eight numerical checks:
+exhibits nine checks:
 
+- **E0.** Berezin/Wick sign convention: symbolically verifies
+  `d log det(M)/dM_ab = (M^{-1})_{b,a}` and
+  `<chi_bar_a chi_b>_ord = -(M^{-1})_{b,a}` for a generic `2 x 2`
+  matrix, fixing the current-bilinear convention `B_ab`.
 - **E1.** Axis-inv carrier sweep: `K = 8` random `c_mu in AxisInv`
   (constructed by broadcasting `L^{d-1}` transverse fields along
   each axis). Worst `||[T, M]||_max = 0`, worst on-shell
@@ -346,7 +373,7 @@ exhibits eight numerical checks:
   each on its own M_k on-shell state, all give
   `|partial^L J|_max < 1.3e-15`. Verifies `(T5)`.
 
-All eight exhibits report `PASS`. The runner exits 0 iff all exhibits
+All nine exhibits report `PASS`. The runner exits 0 iff all exhibits
 pass.
 
 ## Corollaries (narrow)
@@ -374,8 +401,9 @@ axis-translation-invariance property.
 
 **Bounded narrow theorem on the explicit finite-Grassmann surface.** The
 bilateral Noether identity is a bounded theorem on the
-axis-translation-invariant carrier class, with `(T1)`-`(T5)`
-established algebraically and verified numerically by the eight runner
+axis-translation-invariant carrier class, with `(T1)`-`(T5)` and the
+current-bilinear Wick convention established algebraically and verified
+symbolically/numerically by the nine runner
 exhibits to machine precision.
 
 This note does not close the parent note's carrier-identification

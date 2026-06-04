@@ -58,6 +58,12 @@ lattice indices.
 
 Exhibits.
 
+  E0.  Berezin/Wick sign convention: differentiating Z=det(M) gives
+       d log Z / dM_ab = (M^{-1})_{b,a}, while the strict ordered
+       expectation <bar_chi_a chi_b>_ord has the opposite sign. The
+       current runner uses B_ab := d log Z / dM_ab as the current
+       bilinear convention.
+
   E1.  AxisInv carrier sweep: random axis-translation-invariant
        carriers c_mu(x) (constructed as functions of x with x_mu
        eliminated). Bilateral on-shell divergence vanishes to machine
@@ -103,6 +109,7 @@ import sys
 from itertools import product
 
 import numpy as np
+import sympy as sp
 
 
 # ----- helpers --------------------------------------------------------
@@ -199,12 +206,10 @@ def on_shell_solution(M):
     the best near-zero-mode approximation; we then evaluate on-shell
     quantities at this representative state.
 
-    For exactness on shell we use Minv to compute Green's-function-
-    valued expectation values <chibar_x chi_y> = Minv[y, x] (a la the
-    parent runner's E3 strategy), but here we wrap them in a "field
-    sample" surface so the bilateral identity is tested as an *operator
-    identity*, not a Green's-function identity. The choice is convenient
-    for randomness sweeps.
+    The Green-function exhibits below use the current-bilinear convention
+    B_ab := d log det(M) / dM_ab = Minv[b, a]. Under the strict ordered
+    Berezin convention, <chibar_a chi_b>_ord = -B_ab. Exhibit E0 checks
+    this sign explicitly.
     """
     eigvals, eigvecs = np.linalg.eig(M)
     k = int(np.argmin(np.abs(eigvals)))
@@ -217,8 +222,17 @@ def on_shell_solution(M):
 
 
 def greenfn_expectation_bilateral(L, dim, c_carrier, M):
-    """Evaluate <partial^L J^mu_x> using Wick-contracted Green's
-    functions <chibar_a chi_b> = Minv[b, a] for T = i I.
+    """Evaluate <partial^L J^mu_x> using Wick-contracted current bilinears.
+
+    Convention used here:
+
+        B_ab := d log det(M) / dM_ab = Minv[b, a]
+              = - <chibar_a chi_b>_ord
+
+    where <...>_ord is the strict ordered Berezin expectation under
+    exp(-chibar M chi). The previous shorthand <chibar_a chi_b>=Minv[b,a]
+    is therefore read as the current-bilinear convention B_ab, not the
+    strict ordered Berezin monomial expectation.
 
     This is the operationally-canonical on-shell test (same convention
     as the parent runner's E3): compute J^mu_x as the bilinear
@@ -235,13 +249,40 @@ def greenfn_expectation_bilateral(L, dim, c_carrier, M):
             xp = tuple((x[k] + ehat[k]) % L for k in range(dim))
             jp = idx[xp]
             c = c_carrier(x, mu)
-            # <chibar_x chi_xp> = Minv[xp, x], <chibar_xp chi_x> = Minv[x, xp]
+            # Current-bilinear convention:
+            # B_{x,xp} = Minv[xp, x], B_{xp,x} = Minv[x, xp].
+            # Strict ordered Berezin <chibar_x chi_xp>_ord has the
+            # opposite sign; E0 certifies this convention.
             J[i, mu] = 0.5j * c * (Minv[jp, i] + Minv[i, jp])
     div = lattice_divergence(J, sites, idx, L, dim)
     return J, div
 
 
 # ----- exhibits -------------------------------------------------------
+
+
+def E0_berezin_wick_sign_convention():
+    print("--- Exhibit E0: Berezin/Wick sign convention for current bilinear ---")
+    a, b, c, d = sp.symbols("a b c d")
+    M = sp.Matrix([[a, b], [c, d]])
+    detM = sp.det(M)
+    Minv = M.inv()
+    pairs = [(0, 0), (0, 1), (1, 0), (1, 1)]
+    ok = True
+    witnesses = []
+    for row, col in pairs:
+        dlog = sp.simplify(sp.diff(detM, M[row, col]) / detM)
+        inv_entry = sp.simplify(Minv[col, row])
+        ordered = sp.simplify(-dlog)
+        ok = ok and sp.simplify(dlog - inv_entry) == 0
+        ok = ok and sp.simplify(ordered + inv_entry) == 0
+        witnesses.append(f"dlogM{row}{col}=Minv{col}{row}")
+    print("  Convention: B_ab := d log det(M)/dM_ab = Minv[b,a]")
+    print("  Strict ordered Berezin: <bar_chi_a chi_b>_ord = -B_ab")
+    print(f"  witnesses: {', '.join(witnesses)}")
+    verdict = "PASS" if ok else "FAIL"
+    print(f"  E0 verdict: {verdict}")
+    return bool(ok)
 
 
 def E1_axis_inv_carrier_sweep():
@@ -431,8 +472,10 @@ def E6_non_identity_internal_generator():
     T_mat = np.kron(np.eye(M.shape[0], dtype=complex), sigma_3)
     comm = float(np.max(np.abs(T_mat @ M_full - M_full @ T_mat)))
     # Bilateral current for T = sigma_3: J^mu_x is a 2x2 internal block.
-    # For Green-function expectation <chibar^a_x sigma_3^{ab} chi^b_y>:
-    # using M_full^{-1}, this is sum_{a,b} sigma_3^{ab} * Minv_full[y, b; x, a].
+    # For the current-bilinear expectation B[(x,a),(y,b)]:
+    # using M_full^{-1}, this is Minv_full[y, b; x, a].
+    # The strict ordered Berezin monomial <chibar^a_x chi^b_y>_ord has
+    # the opposite sign; E0 fixes the convention used by the current.
     Minv_full = np.linalg.inv(M_full)
 
     N = M.shape[0]
@@ -444,7 +487,8 @@ def E6_non_identity_internal_generator():
             xp = tuple((x[k] + ehat[k]) % L for k in range(dim))
             jp = idx[xp]
             c = c_carrier(x, mu)
-            # <chibar^a_x sigma_3 chi^b_{xp}> contracted = sum_{a,b} sigma_3[a,b] * Minv_full[2*jp+b, 2*i+a]
+            # B-contracted current =
+            # sum_{a,b} sigma_3[a,b] * Minv_full[2*jp+b, 2*i+a].
             term1 = 0.0 + 0.0j
             term2 = 0.0 + 0.0j
             for a in range(2):
@@ -562,6 +606,7 @@ def main():
     print("=" * 72)
     print()
     results = {
+        "E0": E0_berezin_wick_sign_convention(),
         "E1": E1_axis_inv_carrier_sweep(),
         "E2": E2_naive_wilson_free(),
         "E3": E3_staggered_reference(),

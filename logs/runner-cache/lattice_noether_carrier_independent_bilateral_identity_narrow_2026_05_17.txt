@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py
-runner_sha256: 511c683859e8a7e8fa84bf8fb0d1e5610ffeb907085c6495378eebcbfaae5941
+runner_sha256: 3f8ba0dcafe3f046adf2cb9fbc8d1df0ad77a696fc8658276d55da2b139993a3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================
@@ -18,6 +18,11 @@ status: ok
  realization gate.
 ========================================================================
 
+--- Exhibit E0: Berezin/Wick sign convention for current bilinear ---
+  Convention: B_ab := d log det(M)/dM_ab = Minv[b,a]
+  Strict ordered Berezin: <bar_chi_a chi_b>_ord = -B_ab
+  witnesses: dlogM00=Minv00, dlogM01=Minv10, dlogM10=Minv01, dlogM11=Minv11
+  E0 verdict: PASS
 --- Exhibit E1: axis-translation-invariant carrier sweep ---
   K random axis-inv carriers = 8
   worst ||[T, M]||_max       = 0.000e+00
@@ -63,6 +68,7 @@ status: ok
 ========================================================================
  Summary
 ========================================================================
+  E0: PASS
   E1: PASS
   E2: PASS
   E3: PASS

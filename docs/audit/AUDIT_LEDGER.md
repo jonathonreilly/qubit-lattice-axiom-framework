@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 626 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1239 |
+| unaudited | 1240 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 954 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 79 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1480 |
+| `unaudited` | 1481 |
 
 | claim_type | count |
 |---|---:|
@@ -1141,7 +1141,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | D | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -9504,19 +9503,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The canonical artifact-backed statement is that the raw nearest-neighbor lattice is Born-clean through h = 0.125 by the high-precision raw-kernel certificate, while the RG-style schedule and alpha-sweep evidence remains only suggestive and does not establish a continuum/RG result.  _(class `B`)_
 - **chain closes:** True — The cited retained-grade notes and included runner output support the bounded reconciliation exactly: the high-precision runner computes the raw h = 0.125 row, while the RG gravity and alpha-sweep notes preserve the open RG/continuum caveats. No unsupported alpha = 2.0 or continuum-complete claim is imported.
 - **rationale:** All cited authorities are retained-grade or retained-bounded, and the primary runner source genuinely computes the raw NN observables at h = 0.125 rather than merely printing constants. The note itself is a bounded cross-note reconciliation rather than a new first-principles theorem, but its conclusion follows from the provided retained inputs and the included successful raw-kernel certificate. The RG caveat is also supported by the cited RG gravity and alpha-sweep notes.
-- **auditor confidence:** high
-
-### `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17`
-
-- **Note:** [`LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-Grassmann nearest-neighbour bilateral Noether identity for real axis-translation-invariant carriers and site-local/internal generators T with [T,M]=0, excluding M_KS identification and lattice-index-shifting Ward identities.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260531-162519-f01dd57a-lattice_noether_carrier_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** By AxisInv, the reindexed backward coefficient satisfies c_mu(x' + mu_hat) = c_mu(x'), so the backward and forward hop terms combine into the bilateral current J^mu_x(T).  _(class `A`)_
-- **chain closes:** False — The AxisInv reindexing and anti-Hermiticity algebra close on the stated finite matrix surface. However the displayed Wick-contracted on-shell convention is not closed from the cited exp(-chi_bar M chi) Berezin determinant convention.
-- **rationale:** The runner genuinely computes finite lattice matrix checks and all eight exhibits pass; it is not just printing constants. The core AxisInv formula family checks algebraically, but the note states <chi_bar_a chi_b> = Minv_{b,a} under exp(-chi_bar M chi), while differentiating Z = det(M) gives the ordered bilinear with the opposite sign unless an extra expectation convention is introduced. The divergence test is insensitive to that overall sign, so the headline identity may survive, but strict formula inventory blocks audited_clean as written.
 - **auditor confidence:** high
 
 ### `lattice_symmetry_unification_decision_note`

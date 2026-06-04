@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py
-runner_sha256: 511c683859e8a7e8fa84bf8fb0d1e5610ffeb907085c6495378eebcbfaae5941
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.14
-status: ok
------ stdout -----
 ========================================================================
  lattice_noether_carrier_independent_bilateral_identity_narrow
 
@@ -18,6 +10,11 @@ status: ok
  realization gate.
 ========================================================================
 
+--- Exhibit E0: Berezin/Wick sign convention for current bilinear ---
+  Convention: B_ab := d log det(M)/dM_ab = Minv[b,a]
+  Strict ordered Berezin: <bar_chi_a chi_b>_ord = -B_ab
+  witnesses: dlogM00=Minv00, dlogM01=Minv10, dlogM10=Minv01, dlogM11=Minv11
+  E0 verdict: PASS
 --- Exhibit E1: axis-translation-invariant carrier sweep ---
   K random axis-inv carriers = 8
   worst ||[T, M]||_max       = 0.000e+00
@@ -49,7 +46,7 @@ status: ok
 --- Exhibit E6: non-identity internal generator T = sigma_3 ---
   T = I_lattice (x) sigma_3  :  internal-2 doubled chi
   ||[T, M_full]||_max        = 0.000e+00
-  max |partial^L J|          = 5.621e-16
+  max |partial^L J|          = 4.443e-16
   E6 verdict: PASS
 --- Exhibit E7: algebraic Lie-substitution J4 = i * J5 (generic carrier) ---
   K random carriers checked  = 4
@@ -63,6 +60,7 @@ status: ok
 ========================================================================
  Summary
 ========================================================================
+  E0: PASS
   E1: PASS
   E2: PASS
   E3: PASS
@@ -73,6 +71,3 @@ status: ok
   E8: PASS
 
  Overall verdict: PASS
-
------ stderr -----
-

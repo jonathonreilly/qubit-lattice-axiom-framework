@@ -1,0 +1,18 @@
+loop_slug: lattice-noether-wick-sign-repair-20260604
+target_claim_id: lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17
+branch: physics-loop/lattice-noether-wick-sign-repair-20260604
+status: ready_for_review
+actual_current_surface_status: bounded-support
+target_blocker: "missing_bridge_theorem: derive or define Wick-contraction sign convention and update runner comments/source"
+repair_summary: "added explicit B_ab current-bilinear convention and symbolic E0 determinant-derivative sign check"
+files_touched:
+  - docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py
+  - logs/runner-cache/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.txt
+  - .claude/science/physics-loops/lattice-noether-wick-sign-repair-20260604/
+checks:
+  runner: "E0-E8 PASS"
+  py_compile: pass
+  diff_check: pass
+pr_status: pending
+next_exact_action: "commit, push, open PR"

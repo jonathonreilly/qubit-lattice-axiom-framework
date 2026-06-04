@@ -10409,6 +10409,22 @@
       "to": "quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26"
     },
     {
+      "from": "flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04",
+      "to": "flavor_logdet_generator_three_factor_provenance_2026-06-04"
+    },
+    {
+      "from": "flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04",
+      "to": "yt_source_action_support_packet_note_2026-05-22"
+    },
+    {
+      "from": "flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04",
+      "to": "charged_lepton_two_higgs_canonical_reduction_note"
+    },
+    {
+      "from": "flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04",
+      "to": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21"
+    },
+    {
       "from": "flavor_logdet_form_under_record_axiom_2026-06-04",
       "to": "minimal_axioms"
     },
@@ -57439,6 +57455,23 @@
       "runner_path": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py",
       "title": "Flavor \u2014 no native latitude-quantizer (4 mechanisms); the RP \"self-dual\" lead is REFUTED (circular); reframed to the operator-algebra trace-vs-center question"
     },
+    "flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04": {
+      "claim_id": "flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (narrow ledger-pairing companion). This note",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+        "yt_source_action_support_packet_note_2026-05-22",
+        "charged_lepton_two_higgs_canonical_reduction_note",
+        "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "44710f53d1d7271a29a2bcc275dcf7e24fcea3dfc42c70aebb36d584b6a6a1d6",
+      "path": "docs/FLAVOR_LOGDET_FACTOR_4A_SOURCE_ACTION_IDENTIFICATION_NARROW_COMPANION_NOTE_2026-06-04.md",
+      "runner_path": "scripts/flavor_logdet_factor_4a_source_action_identification_2026_06_04.py",
+      "title": "Flavor - log-det generator Factor 4a: physical source-action identification (narrow ledger-pairing companion)"
+    },
     "flavor_logdet_form_under_record_axiom_2026-06-04": {
       "claim_id": "flavor_logdet_form_under_record_axiom_2026-06-04",
       "claim_type_author_hint": null,
@@ -91937,7 +91970,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 826,
+      "bounded_theorem": 827,
       "decoration": 1,
       "meta": 203,
       "no_go": 97,
@@ -91946,7 +91979,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1227,
+      "bounded_theorem": 1228,
       "decoration": 1,
       "meta": 203,
       "no_go": 200,
@@ -91954,10 +91987,10 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10458,
+    "edge_count": 10462,
     "leaf_count": 902,
-    "node_count": 2772,
+    "node_count": 2773,
     "root_count": 942,
-    "runners_with_path": 2357
+    "runners_with_path": 2358
   }
 }

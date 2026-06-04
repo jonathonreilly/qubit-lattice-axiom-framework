@@ -80,8 +80,8 @@
         "same_severity": 28
       },
       "criticality_counts": {
-        "critical": 116,
-        "high": 148,
+        "critical": 118,
+        "high": 146,
         "leaf": 379,
         "medium": 252
       },

@@ -57548,10 +57548,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "f752c4c7fd05b905cce7470aef315ebd1c1ceb7a09ddddf4112682162d0ff744",
+      "note_hash": "456373e4e5b6ee3f5228f1cb18ae832e607cbd9bcb06fc5ea338ea432c990fcf",
       "path": "docs/FLAVOR_SUBSTRATE_BRIDGE_FAILS_SOURCE_OPERATOR_ASYMMETRY_NOTE_2026-05-31.md",
       "runner_path": "scripts/flavor_substrate_bridge_fails_source_operator_asymmetry_2026_05_31.py",
-      "title": "Flavor \u2014 the substrate-necessity bridge fails; the onsite-source line rests on an unjustified source/operator asymmetry (consistent onsite-locality gives Q=1/3, not Q=2/3)"
+      "title": "Flavor \u2014 Onsite Projection Collapses the Split Circulant Operator"
     },
     "flavor_substrate_parent_separate_note_2026-05-30": {
       "claim_id": "flavor_substrate_parent_separate_note_2026-05-30",

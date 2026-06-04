@@ -64788,7 +64788,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "51635577895d01790a522f2db6316356c13ed2f80817368db7eaa1eb4c6c431d",
+      "note_hash": "b0212cce6ce495376add49a913bb5acbb33bf0bff9c13bb81ecd6e0b8b94bd5e",
       "path": "docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py",
       "title": "Koide Dimensionless Objection \u2014 Toy Conditional Algebraic Checks Narrow Theorem"

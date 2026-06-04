@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
-runner_sha256: 3d85afb90da9457805cb6cc133bf6e1f53eada15f38eb43c6bfff62fefd058b3
+runner_sha256: 2d0a032bc3257f2dd536431f1798e160c98d295d7eba0ba8e0ab64e357449003
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -64,14 +64,14 @@ Koide dimensionless objection - toy conditional algebraic checks
   [PASS] shifted endpoint (s_chi=0, c=1/9) -> delta = 1/3  (delta=1/3)
 
 ----------------------------------------------------------------------------------------
-(T8) Q retained-only blocker in-toy under (A1)+(A2)
+(T8) Q admission-blocker in-toy under (A1)+(A2)
 ----------------------------------------------------------------------------------------
   [PASS] exists z != 0 with Q(0, z) != 2/3  (Q=8/9)
   [PASS] exists non-midpoint w with <Z>(w) != 0  (<Z>=1/3)
   [PASS] in-toy: '[observable completeness on (A1)+(A2)] => Q = 2/3' fails
 
 ----------------------------------------------------------------------------------------
-(T9) delta retained-only blocker in-toy under (A5)
+(T9) delta admission-blocker in-toy under (A5)
 ----------------------------------------------------------------------------------------
   [PASS] at least two distinct delta values reachable from (A5) alone  (|values|=4, values=[Fraction(0, 1), Fraction(1, 9), Fraction(2, 9), Fraction(1, 3)])
   [PASS] in-toy: '(A5) alone => delta = 2/9' fails
@@ -92,4 +92,3 @@ RETAINED_GRADE_CLOSURE_ASSERTED=FALSE
 RETAINED_GRADE_NO_GO_ASSERTED=FALSE
 
 ----- stderr -----
-

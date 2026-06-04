@@ -24,6 +24,7 @@ from __future__ import annotations
 import cmath
 import math
 from fractions import Fraction as Fr
+from math import gcd
 
 try:
     from sympy import I, Rational, exp, expand, nsimplify, pi, simplify, N as sN
@@ -77,6 +78,20 @@ def lefschetz_local_contrib(N, a_weights):
             term *= 1.0 / (zeta ** (k * a) - 1.0)
         total += term
     return total / N
+
+
+def admissible_weight_tuple(N, a_weights):
+    """Every local weight is a unit modulo N."""
+    return all(gcd(a % N, N) == 1 for a in a_weights)
+
+
+def has_vanishing_denominator(N, a_weights):
+    """Whether some zeta_N^(k*a_j)-1 denominator vanishes exactly."""
+    for k in range(1, N):
+        for a in a_weights:
+            if (k * a) % N == 0:
+                return True, k, a
+    return False, None, None
 
 
 def main() -> int:
@@ -183,19 +198,29 @@ def main() -> int:
     print()
     print("    Step 3: evaluate the specified cyclotomic local-weight expression.")
     print()
+    check("E2.c admissible/unit weights prevent denominator zeros: N=6, weights=(1,5)",
+          admissible_weight_tuple(6, (1, 5))
+          and not has_vanishing_denominator(6, (1, 5))[0])
+    bad_zero, bad_k, bad_a = has_vanishing_denominator(4, (2,))
+    check("E2.d nonzero nonunit weights are excluded: N=4, weight=2 has a zero denominator",
+          bad_zero and bad_k == 2 and bad_a == 2,
+          detail=f"k={bad_k}, a={bad_a}")
+    check("E2.e modulo N=3 every nonzero weight is admissible",
+          admissible_weight_tuple(3, (1, 2)) and admissible_weight_tuple(3, (1, 1))
+          and admissible_weight_tuple(3, (2, 2)))
     for N_test, weights, expected_close in [
         (3, (1, 2), Fr(2, 9)),
         (3, (1, 1), Fr(1, 9)),
         (3, (2, 2), Fr(1, 9)),
     ]:
         eta_val = lefschetz_local_contrib(N_test, weights)
-        check(f"E2.c local weight sum at N={N_test}, weights={weights} = {expected_close}",
+        check(f"E2.f local weight sum at N={N_test}, weights={weights} = {expected_close}",
               abs(eta_val.real - float(expected_close)) < 1e-12 and abs(eta_val.imag) < 1e-12,
               detail=f"eta = {eta_val.real:.10f} + {eta_val.imag:.2e}i")
 
     # Sanity check: the closed form is real-valued when the transverse weights are
     # closed under k -> N - k (i.e., the representation is self-conjugate).
-    check("E2.d closed form is real-valued for self-conjugate weight pairs at p=3 (1,2)",
+    check("E2.g closed form is real-valued for self-conjugate weight pairs at p=3 (1,2)",
           abs(lefschetz_local_contrib(3, (1, 2)).imag) < 1e-12,
           detail=f"Im(eta(1,2;3)) = {lefschetz_local_contrib(3, (1, 2)).imag:.2e}")
 

@@ -1,0 +1,23 @@
+slug: zn-spectral-asymmetry-scope-20260603
+branch: physics-loop/zn-spectral-asymmetry-scope-20260603
+base: origin/main
+started: 2026-06-03
+target_status: bounded-support
+active_route: admissible-weight scope repair
+hard_residual: >
+  Current audit conditional says the finite local L_N weight-sum scope is too
+  broad unless an admissible-weight condition is added or the theorem is
+  restricted to N=3/unit weights.
+files_touched:
+  - docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md
+  - scripts/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.py
+  - logs/runner-cache/frontier_z_n_equivariant_spectral_asymmetry_narrow_verifier.txt
+  - .claude/science/physics-loops/zn-spectral-asymmetry-scope-20260603/
+trace_gate_classification: direct_blocker_closure
+current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: >
+  Reviewer/auditor should re-audit the same row after this source-scope repair;
+  the general L_N statement now carries the exact unit-weight condition and
+  the N=3 load-bearing calculation remains unchanged.

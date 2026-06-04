@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_staggered_taste_is_qubit_no_koide_multiplicity_exact.py
+runner_sha256: 5271b904306886993d2edf742723bdf2b7ffc7a0f3f35e8521a5a804047a0c03
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.59
+status: ok
+----- stdout -----
+PASS - (1) the 8 staggered tastes have real rank 8 = span M_2(C) (= Cl(3,0) = on-site qubit)
+PASS - (2) tastes close projectively T(x)T(y)=phase*T(x+y), |phase|=1 (Z2^3 projective rep of M_2(C))
+PASS - (3) cyclic s1->s2->s3 is a C3 automorphism (preserves sigma_i sigma_j = i eps sigma_k) = the corner C3
+PASS - (4) M_2(C) is simple, unique 2-dim irrep, center = scalars only -> no separate taste multiplicity
+PASS - (5) isotype Frobenius split Tr(M^H M) = 3a^2 + 6|b|^2 -> singlet:doublet real-dim weight (1,2), legacy F3, kappa=1
+PASS - (6) legacy F1 balance (3a^2=6|b|^2) gives r=1/2 and legacy F3 balance (3a^2=3|b|^2) gives r=1; the gap is the factor 2 the qubit can't supply
+
+6 PASS, 0 FAIL
+
+PRUNED (taste-normalization route): in d=3 the staggered taste matrices SPAN M_2(C) = the on-site qubit, whose
+irreducible carrier is 2-dimensional with no separate multiplicity. So taste-breaking cannot
+manufacture the (1,1) multiplicity weighting r=1/2 needs; the doublet's real-dim 2 is qubit-genuine
+-> (1,2), legacy F3, kappa=1. The naive 3D taste count 2^{3/2}~2.83 vs the actual qubit dim 2 is exactly
+the 'borrowed Wick Z3->Z4' subtlety the repo flags. Remaining open handles include a SEPARATE factor,
+an explicit multiplicity-counting admission, or the eta-phase mass-weighting residual. CONDITIONAL on
+the open staggered-Dirac gate.
+
+----- stderr -----
+

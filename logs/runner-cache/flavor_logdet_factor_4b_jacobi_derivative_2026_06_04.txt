@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/flavor_logdet_factor_4b_jacobi_derivative_2026_06_04.py
+runner_sha256: 44db8189e5e63e1f44089dae183e6cf546710032ecc093e633277ec320b689fd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+[PASS] Step 1: Jacobi formula (J) for general complex parametric M(t) = A + t B
+       |FD - det*Tr| / max(|rhs|, 1) = 2.20e-11; |det M| ~ 4.41e+01
+[PASS] Step 2: log-derivative identity d log|f|/dt = Re(f'/f) for complex f
+       |finite-diff - Re(f'/f)| = 3.25e-11
+[PASS] Step 3a: (T1a) Re Tr[M^{-1} P_x] vs finite-diff, Hermitian D
+       max|T1a - finite-diff| = 3.10e-09 across n=7 sites
+[PASS] Step 3b: (T1b) Re[M^{-1}]_{xx} equals (T1a) Re Tr[M^{-1} P_x]
+       max|T1a - T1b| = 0.00e+00 (exact identity)
+[PASS] Schwarz symmetry: d/dj_y (T1a)_x = d/dj_x (T1a)_y for x != y
+       max|d_xy - d_yx| = 1.21e-12 across 21 off-diagonal pairs
+[PASS] Non-Hermitian D: (T1) holds when det M(j) is complex-valued
+       max|T1 - finite-diff| = 2.19e-09
+[PASS] Block-diagonal D: dW/dj_x for x in block A is block-local (unchanged by j_B perturbation)
+       perturbing j_B leaves dW/dj_x (x in A) invariant by block structure
+[PASS] Well-conditioned M(j): (T1) numerically stable
+       cond(M) = 1.18e+00; max|T1 - FD| = 8.87e-10
+[PASS] Independence: (T1) proof does not invoke the Record axiom
+       uses only Jacobi (J), log-derivative (LOG), and partial chain rule
+[PASS] Residual ledger: factor 4b is isolated as proposed positive_theorem; 4a and factor 2 remain residuals
+       1 (Record additivity): axiomatic (MINIMAL_AXIOMS_2026-06-04); 2 (record-readout realization): OPEN residual; 3 (det-character form): narrow bounded_theorem (unaudited, 2026-05-28); 4a (physical source-action identification): narrow retained_bounded (yt source-action packet); 4b (Jacobi derivative identity): proposed positive_theorem (this note)
+[PASS] Consistency with upstream provenance runner under matched seed
+       max|T1 - FD| = 7.11e-10 matches upstream finite-diff check
+[PASS] Sign convention: for det>0, Re[M^{-1}]_{xx} agrees with the signed form
+       det M_pd = 2049871.7770 > 0; max|signed - |.|| = 6.94e-18
+[PASS] Larger n = 20 stress test: (T1) holds across all 20 sites
+       max|T1 - FD| = 1.74e-08
+[PASS] Trace cyclicity: Tr[M^{-1} P_x] = Tr[P_x M^{-1}] = [M^{-1}]_{xx}
+       all three forms of (T1) agree at machine precision
+[PASS] At j=0: dW/dj_x = Re[D^{-1}]_{xx} (leading-order linear response)
+       max|T1b(j=0) - Re[D^{-1}]_{xx}| = 0.00e+00
+[PASS] Non-degeneracy: dW/dj_x at j != 0 differs from Re[D^{-1}]_{xx}
+       max|T1b(j_off) - Re[D^{-1}]_{xx}| = 6.72e-02 (nontrivial dependence)
+
+SCORECARD PASS=16 FAIL=0
+
+FACTOR 4b: proposed positive_theorem (finite-matrix calculus), awaiting independent audit.
+
+RESIDUAL LEDGER after this note:
+  factor 1: Record axiom (MINIMAL_AXIOMS_2026-06-04)
+  factor 2: record-readout realization -- separate residual
+  factor 3: det-character form -- bounded_theorem (unaudited, 2026-05-28)
+  factor 4a: physical source-action identification -- partial retained_bounded support
+  factor 4b: Jacobi derivative identity -- proposed positive_theorem (THIS NOTE)
+
+STATUS AUTHORITY: independent audit lane only. This runner does not set,
+predict, or promote audit status; no downstream row is re-cited, edited,
+or promoted. No new axiom or import is introduced.
+
+----- stderr -----
+

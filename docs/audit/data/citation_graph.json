@@ -19121,6 +19121,10 @@
       "to": "mesoscopic_surrogate_multistage_note"
     },
     {
+      "from": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "lorentz_boost_covariance_2d_theorem_note",
       "to": "emergent_lorentz_invariance_note"
     },
@@ -68998,6 +69002,20 @@
       "runner_path": null,
       "title": "Literature Positioning Note"
     },
+    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {
+      "claim_id": "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "fa5933b7ee6a4afda693776eefa6d8a17bd93d11cd941ce3a9b46e12f73c1c41",
+      "path": "docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md",
+      "runner_path": "scripts/audit_companion_local_tomography_from_complex_structure_exact.py",
+      "title": "Local Tomography From Complex Qubit Tensor Product - Conditional Narrow Theorem"
+    },
     "local_zsym_predictor_note": {
       "claim_id": "local_zsym_predictor_note",
       "claim_type_author_hint": "positive_theorem",
@@ -91827,7 +91845,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 824,
+      "bounded_theorem": 825,
       "decoration": 1,
       "meta": 203,
       "no_go": 95,
@@ -91836,7 +91854,7 @@
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1225,
+      "bounded_theorem": 1226,
       "decoration": 1,
       "meta": 203,
       "no_go": 198,
@@ -91844,10 +91862,10 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10449,
-    "leaf_count": 899,
-    "node_count": 2767,
+    "edge_count": 10450,
+    "leaf_count": 900,
+    "node_count": 2768,
     "root_count": 942,
-    "runners_with_path": 2352
+    "runners_with_path": 2353
   }
 }

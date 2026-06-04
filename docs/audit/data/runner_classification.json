@@ -16200,6 +16200,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_link_local_first_variation_selector_bridge_narrow.py"
     },
+    "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {
+      "assert_count": 0,
+      "counts": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_local_tomography_from_complex_structure_exact.py"
+    },
     "local_zsym_predictor_note": {
       "assert_count": 0,
       "counts": {
@@ -30177,6 +30189,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_local_tomography_from_complex_structure_exact.py": {
+      "assert_count": 0,
+      "claims": [
+        "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_m_dm_nsites_v_factorization_enumeration_2026_05_28.py": {
@@ -62182,15 +62209,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 374,
+    "decoration_candidates": 375,
     "dominant_class_distribution": {
-      "A": 289,
+      "A": 290,
       "B": 307,
       "C": 862,
       "D": 324,
       "none": 465
     },
-    "runners_classified": 2247,
+    "runners_classified": 2248,
     "runners_with_C": 1123,
     "runners_with_D": 655
   }

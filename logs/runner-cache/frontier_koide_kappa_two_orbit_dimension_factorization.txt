@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_two_orbit_dimension_factorization.py
-runner_sha256: a126e8aa4fc1ce05172325fca5958692d7e2e046da06f6e7718f1a22ed7c59ea
+runner_sha256: acbb0b4d7f54298f412a991ab35f5868f00485277596b9b467cfd097c741f405
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.82
+elapsed_sec: 0.71
 status: ok
 ----- stdout -----
 ========================================================================
@@ -65,7 +65,16 @@ Section 6 - Uniqueness of Z_3 among cyclic groups
 [PASS] Z_2 real irrep dims == [1, 1] (not Koide pattern)
 
 ========================================================================
-Section 7 - Observational PDG check (flagged; not axiom-native)
+Section 7 - MRU authority and Koide Q/CoV convention
+========================================================================
+[PASS] MRU one-hop authority note exists in restricted packet  (docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)
+[PASS] MRU note contains the formal reduced-carrier kappa definition  (formal two-slot scope only)
+[PASS] Standard Koide ratio K_std=(sum m)/(sum sqrt(m))^2 equals 2/3 at CoV=1  (K_std(CoV=1)=2/3)
+[PASS] Inverse normalized sum-square ratio equals 1/2 at CoV=1, not 2/3  (Q_inv(CoV=1)=1/2)
+[PASS] MRU leaf alpha:beta=2:-1 gives kappa=-4 beta/alpha = 2
+
+========================================================================
+Section 8 - Observational PDG check (flagged; not a derivation)
 ========================================================================
    PDG-derived (a, |b|) = (17.715562, 12.526678)
    kappa_observed = a^2 / |b|^2 = 2.000037
@@ -75,17 +84,18 @@ Section 7 - Observational PDG check (flagged; not axiom-native)
 kappa=2 Orbit-Dimension Factorization - certification summary
 ========================================================================
 
-Piece (i) AXIOM-NATIVE:  Tr(B_1^2)/Tr(B_0^2) = 6/3 = 2, forced by Z_3
-orbit-dimension ratio dim_R(non-triv)/dim_R(triv) = 2/1.
+Piece (i) FINITE-REPRESENTATION FACT:  Tr(B_1^2)/Tr(B_0^2) = 6/3 = 2,
+forced by Z_3 orbit-dimension ratio dim_R(non-triv)/dim_R(triv) = 2/1.
 
-Piece (ii) OPEN:  Koide cone normalization alpha:beta = 2:-1 not forced
-by Z_3-invariance alone. Surviving 1-parameter family:
+Piece (ii) MRU-SOURCED:  Koide cone normalization alpha:beta = 2:-1
+is not forced by Z_3-invariance alone. Surviving Z_3 family:
    Q(G) = alpha r_0^2 + beta (r_1^2 + r_2^2),  kappa = -4 beta/alpha.
 
-Residual open scalar: derive CoV(sqrt(m_k)) = 1 from A0-A3, equivalently
-Var(sqrt(m_k)) = <sqrt(m_k)>^2, equivalently alpha/beta = -2.
+The linked MRU reduced two-slot theorem supplies the formal leaf kappa=2.
+Residual open physics: the MRU theorem does not derive the physical SO(2)
+quotient/readout or operator-side charged-lepton closure.
 
-PASS=26 FAIL=0
+PASS=31 FAIL=0
 
 ----- stderr -----
 

@@ -4,6 +4,11 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/staggered_backreaction_live_green_packet_check.py`](../scripts/staggered_backreaction_live_green_packet_check.py)
+**Cached runner output:** [`logs/runner-cache/staggered_backreaction_live_green_packet_check.txt`](../logs/runner-cache/staggered_backreaction_live_green_packet_check.txt)
+**Source packet verifier:** [`scripts/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.py`](../scripts/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.py)
+(SUMMARY: STAGGERED GREEN SOURCE PACKET PASS=40 FAIL=0)
+**Source packet verifier cache:** [`logs/runner-cache/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.txt`](../logs/runner-cache/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.txt)
+**Source packet verifier JSON:** [`outputs/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.json`](../outputs/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.json)
 
 ## Purpose
 
@@ -14,6 +19,26 @@ the narrower positive surface that the current live runner supports.
 
 No new axiom, observed target value, fitted selector, or external comparator
 is introduced.
+
+## 2026-06-04 Source Packet Exposure Repair
+
+The current audit blocker asks for the complete untruncated source of
+`scripts/frontier_staggered_backreaction_prototype.py` and a rerun of the
+restricted packet. The source packet is now explicit:
+
+- Restricted packet checker: [`scripts/staggered_backreaction_live_green_packet_check.py`](../scripts/staggered_backreaction_live_green_packet_check.py)
+- Restricted packet cache: [`logs/runner-cache/staggered_backreaction_live_green_packet_check.txt`](../logs/runner-cache/staggered_backreaction_live_green_packet_check.txt)
+- Green-closure source: [`scripts/frontier_staggered_backreaction_green_closure.py`](../scripts/frontier_staggered_backreaction_green_closure.py)
+- Green-closure cache: [`logs/runner-cache/frontier_staggered_backreaction_green_closure.txt`](../logs/runner-cache/frontier_staggered_backreaction_green_closure.txt)
+- Prototype helper source: [`scripts/frontier_staggered_backreaction_prototype.py`](../scripts/frontier_staggered_backreaction_prototype.py)
+- Prototype helper cache: [`logs/runner-cache/frontier_staggered_backreaction_prototype.txt`](../logs/runner-cache/frontier_staggered_backreaction_prototype.txt)
+
+The source packet verifier above checks that every path is linked from this
+note, that the packet checker imports the Green-closure source, that the
+Green-closure source imports the prototype helper, that the load-bearing helper
+functions are present in the untruncated source files, and that the caches are
+SHA-fresh. This does not set an audit verdict; it makes the same bounded packet
+reauditable with the missing helper source exposed.
 
 ## Live Finite Result
 

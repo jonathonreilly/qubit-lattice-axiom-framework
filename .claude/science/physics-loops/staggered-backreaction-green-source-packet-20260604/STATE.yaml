@@ -1,0 +1,21 @@
+loop_slug: staggered-backreaction-green-source-packet-20260604
+branch: physics-loop/staggered-backreaction-green-source-packet-20260604
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2615
+base_ref: origin/main
+target_claim_id: staggered_backreaction_live_green_packet_note_2026-05-29
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+blocker_text: "runner_artifact_issue: include the complete untruncated source for scripts/frontier_staggered_backreaction_prototype.py and rerun the restricted audit."
+files_touched:
+  - docs/STAGGERED_BACKREACTION_LIVE_GREEN_PACKET_NOTE_2026-05-29.md
+  - scripts/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.py
+  - logs/runner-cache/staggered_backreaction_live_green_packet_check.txt
+  - logs/runner-cache/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.txt
+  - outputs/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.json
+review_findings:
+  local_disposition: exact-support_reaudit_ready
+  retained_grade_proposal_allowed: false
+next_exact_action: "Continue scanning conditional rows for uncovered source-artifact blockers."

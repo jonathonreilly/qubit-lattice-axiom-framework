@@ -256,10 +256,16 @@ For each subset:
 
 - **`P_(mixed)`**: mixed temporal/spatial plaquettes with one slice at
   `t = -1` and the other at `t = 0` — the **cross-slice** plaquettes
-  spanning the `t = -1/2` reflection plane. Spatial plaquettes never
-  appear in `P_(mixed)` (they live in one slice, so either `t ≥ 0` or
-  `t ≤ -1`). Mixed plaquettes with `t_(low) = -1`, `t_(high) = 0` are
-  in `P_(mixed)`.
+  spanning the `t = -1/2` reflection plane — together with, on finite
+  periodic `Λ = (Z/L)^4`, the temporal wraparound plaquettes with one
+  slice at `t = L/2 - 1` and the other at `t = -L/2`. Spatial
+  plaquettes never appear in `P_(mixed)` (they live in one slice, so
+  either `t ≥ 0` or `t ≤ -1`). Thus, for finite periodic even `L`,
+  `P_(mixed)` has two boundary families: (i) the reflection-plane
+  family `t_(low) = -1`, `t_(high) = 0`, and (ii) the
+  periodic-wraparound family `t_(low) = L/2 - 1`,
+  `t_(high) = -L/2`. In a nonperiodic or infinite-time half-space
+  setup only the first family is present.
 
 ### §2.3 Action decomposition
 
@@ -602,6 +608,9 @@ plaquettes, partitions them into `P_+ ⊔ P_- ⊔ P_(mixed)`, and checks:
 - **Part A — Plaquette enumeration & partition (D1):**
   - all `6 · 2^4 = 96` plaquettes enumerated;
   - `|P_+| + |P_-| + |P_(mixed)| = 96` (exhaustive);
+  - the two finite-periodic mixed boundary families are exposed
+    separately on `L = 2`: `24` reflection-plane temporal plaquettes
+    and `24` wraparound temporal plaquettes;
   - `P_+ ∩ P_- = ∅`, `P_+ ∩ P_(mixed) = ∅`, `P_- ∩ P_(mixed) = ∅` (disjoint);
   - `|P_+| = |P_-|` (Θ-bijection);
   - explicit `S_W[U] = S_+(U) + S_-(U) + S_(mixed)(U)` to machine

@@ -1,0 +1,29 @@
+loop_slug: gauge-os-step1-wraparound-repair-20260604
+branch: physics-loop/gauge-os-step1-wraparound-repair-20260604
+base: origin/main
+base_commit: 9ef1cdd32
+mode: science_fix
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02
+blocker_source: audit_ledger
+blocker_text: "scope_too_broad: restrict the theorem and runner to the tested L=2 or to a nonperiodic/infinite-time setting, or amend section 2.2 and the verifier to include the periodic wraparound mixed boundary for general even L."
+summary: "Amends the finite-periodic plaquette partition to include both reflection-plane and periodic-wraparound mixed temporal boundary families, then exposes both counts in the verifier."
+files_touched:
+  - docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md
+  - scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py
+  - logs/runner-cache/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.txt
+checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py"
+  - "python3 -m py_compile scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py"
+  - "git diff --check"
+check_result: pass
+review_loop_disposition: delegated_to_external_reviewer
+audit_required_before_effective_status_change: true
+audit_ledger_edits: false
+next_exact_action: "Reviewer/audit lane should inspect this PR as a direct repair of the finite-periodic mixed wraparound boundary blocker."
+stop_condition: "coherent block packaged for PR; campaign can pivot to the next audited conditional target."

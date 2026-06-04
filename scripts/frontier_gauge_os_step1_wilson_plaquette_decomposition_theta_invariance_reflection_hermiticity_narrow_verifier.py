@@ -11,6 +11,8 @@ SU(3) lattice with explicit random link variables:
   Part A — Plaquette enumeration and S_W decomposition (D1):
     - all 6 * 2^4 = 96 plaquettes enumerated and labeled by time-type;
     - partition P = P_+ ⊔ P_- ⊔ P_(mixed) is disjoint + exhaustive;
+    - the finite-periodic mixed set exposes both the reflection-plane
+      temporal plaquettes and the wraparound temporal plaquettes;
     - |P_+| = |P_-| (Θ-bijection);
     - S_W[U] = S_+(U) + S_-(U) + S_(mixed)(U) to machine precision;
     - S_-(U) = S_+(ΘU) to machine precision (identifying S_- as Θ(S_+)).
@@ -192,28 +194,16 @@ def _classify_plaquette(p: tuple[int, int, int, int, int, int]) -> str:
         t_min = t_phys_low
         t_max = t_phys_low
     else:
-        # mu = 0, so spans t_phys_low to t_phys_low + 1 (modulo periodicity)
-        # On a periodic lattice the +1 step wraps around; for the partition
-        # we use the "physical" representative range.
-        t_min = t_phys_low
-        # +1 mod L in array, but physically the next slice in cyclic order.
-        t_high_array = (t + 1) % L
-        t_max_phys = t_high_array - L // 2
-        # If the +1 wraps around, that wraps t_max_phys from L/2 - 1 to -L/2.
-        # On L = 2: t = 1 → next slice is 0 (wraps), t_max_phys = -1.
-        # For the partition we use the un-wrapped representative on the
-        # canonical fundamental domain. Simpler heuristic: a mixed
-        # plaquette has both endpoints distinct, so the classification
-        # uses min and max of {t_min, t_max_phys}.
-        t_max = max(t_min, t_max_phys) if abs(t_max_phys - t_min) == 1 else t_min
-        t_min = min(t_min, t_max_phys) if abs(t_max_phys - t_min) == 1 else t_min
-        # Special case: wraparound mixed plaquette (t_min = L/2 - 1,
-        # t_max_phys = -L/2). On L = 2 this is t_min = 0 wrapping to -1.
-        # That's the "cross-slice" plaquette spanning t = -1/2 — classify
-        # as 'mixed'.
-        if abs(t_max_phys - t_min) > 1:
-            # wraparound: spans across the t = -1/2 plane via periodicity
+        # Temporal plaquettes have endpoints at t and t + 1. On the finite
+        # periodic lattice, t = L - 1 wraps to t = 0 and is a second mixed
+        # boundary family distinct from the reflection-plane family.
+        if (t + 1) >= L:
             return 'mixed_wrap'
+        t_min = t_phys_low
+        t_high_array = t + 1
+        t_max_phys = t_high_array - L // 2
+        t_max = max(t_min, t_max_phys)
+        t_min = min(t_min, t_max_phys)
 
     # Now classify based on (t_min, t_max):
     if t_min >= 0 and t_max >= 0:
@@ -313,10 +303,11 @@ def part_A_decomposition() -> None:
     )
 
     parts = _partition_plaquettes(plaqs)
-    # P_mixed_wrap is a sub-class of mixed (wraparound across periodicity)
     P_plus = parts['plus']
     P_minus = parts['minus']
-    P_mixed = parts['mixed'] + parts['mixed_wrap']
+    P_mixed_plane = parts['mixed']
+    P_mixed_wrap = parts['mixed_wrap']
+    P_mixed = P_mixed_plane + P_mixed_wrap
     total_in_partition = len(P_plus) + len(P_minus) + len(P_mixed)
     record(
         "A.partition.exhaustive: P_+ ∪ P_- ∪ P_mixed = P",
@@ -338,6 +329,17 @@ def part_A_decomposition() -> None:
         "A.partition.disjoint_mixed: P_+ ∩ P_mixed = ∅, P_- ∩ P_mixed = ∅",
         len(set_plus & set_mixed) == 0 and len(set_minus & set_mixed) == 0,
         "explicit set intersection check",
+    )
+    expected_boundary_family = 3 * (L ** 3)
+    record(
+        "A.partition.mixed_reflection_plane_count: finite-periodic reflection-plane family exposed",
+        len(P_mixed_plane) == expected_boundary_family,
+        f"|P_mixed,reflection| = {len(P_mixed_plane)}, expected 3 * L^3 = {expected_boundary_family}",
+    )
+    record(
+        "A.partition.mixed_wraparound_count: finite-periodic wraparound family exposed",
+        len(P_mixed_wrap) == expected_boundary_family,
+        f"|P_mixed,wrap| = {len(P_mixed_wrap)}, expected 3 * L^3 = {expected_boundary_family}",
     )
 
     record(

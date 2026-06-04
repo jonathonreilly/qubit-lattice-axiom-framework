@@ -2,7 +2,11 @@
 
 **Date:** 2026-05-02 (scope repair: 2026-05-27)
 **Type:** open_gate
-**Primary runner:** `scripts/frontier_kubo_fam2_non_convergence_stretch.py`
+**Primary runner:** [`scripts/frontier_kubo_fam2_non_convergence_stretch.py`](../scripts/frontier_kubo_fam2_non_convergence_stretch.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_kubo_fam2_non_convergence_stretch.txt`](../logs/runner-cache/frontier_kubo_fam2_non_convergence_stretch.txt)
+**Data-producing runner:** [`scripts/kubo_fam2_refinement.py`](../scripts/kubo_fam2_refinement.py)
+**Data-producing runner cache:** [`logs/runner-cache/kubo_fam2_refinement.txt`](../logs/runner-cache/kubo_fam2_refinement.txt)
+**Legacy artifact log:** [`logs/2026-04-07-kubo-fam2-refinement.txt`](../logs/2026-04-07-kubo-fam2-refinement.txt)
 
 ## Source Boundary
 
@@ -106,5 +110,6 @@ This is an open gate for future Kubo Fam2 work. It is not evidence for a
 unique Fam2 mechanism, and it should not be cited as proving that the
 three possible obstruction routes above are complete.
 
-Context sources: `docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md` and
-`docs/KUBO_FAM2_REFINEMENT_NOTE.md`.
+Context sources:
+[`docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md`](KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md)
+and [`docs/KUBO_FAM2_REFINEMENT_NOTE.md`](KUBO_FAM2_REFINEMENT_NOTE.md).

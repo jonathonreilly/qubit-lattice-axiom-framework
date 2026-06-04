@@ -1,0 +1,19 @@
+loop_slug: kubo-fam2-data-runner-wire-20260604
+branch: physics-loop/kubo-fam2-data-runner-wire-20260604
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2618
+base_ref: origin/main
+target_claim_id: kubo_fam2_non_convergence_note_2026-05-02
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+blocker_text: "missing_dependency_edge: provide the data-producing runner output or cited refinement authority that independently supports the Recorded Finite Data table values, then re-audit the finite non-monotonicity step."
+files_touched:
+  - docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md
+  - scripts/frontier_kubo_fam2_non_convergence_stretch.py
+  - logs/runner-cache/frontier_kubo_fam2_non_convergence_stretch.txt
+review_findings:
+  local_disposition: exact-support_reaudit_ready
+  retained_grade_proposal_allowed: false
+next_exact_action: "Continue scanning for uncovered source-artifact blockers."

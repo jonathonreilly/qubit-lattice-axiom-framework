@@ -1,0 +1,30 @@
+loop_slug: koide-q23-k0-cpt-dep-repair-20260604
+branch: physics-loop/koide-q23-k0-cpt-dep-repair-20260604
+base: origin/main
+current_goal: "Remove the non-load-bearing CPT authority from the Koide Q=2/3 K0-real block-equivalence note."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: "Remove CPT authority from load-bearing list; keep finite FS/Wedderburn/circulant dependencies."
+hard_residual: "The physical generation-measure convention remains open."
+files_touched:
+  - docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md
+  - .claude/science/physics-loops/koide-q23-k0-cpt-dep-repair-20260604/
+open_imports:
+  - "Physical generation-measure selector remains open."
+no_go_routes:
+  - "Do not patch the separate CPT source packet incidentally."
+  - "Do not claim K0-real/per-block measure is physically selected."
+checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py"
+  - "python3 -m py_compile scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py"
+  - "git diff --check"
+pr_status: pending
+next_exact_action: "Commit, push, open the review PR, then continue scanning conditional rows."
+stop_condition: "Block complete after PR handoff."

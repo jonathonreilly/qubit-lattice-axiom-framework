@@ -1,0 +1,378 @@
+# Beta=6 SU(3) Plaquette D9 Coefficient and Distinct-Support Reopening
+
+**Date:** 2026-06-04
+**Claim type:** bounded_theorem
+**Status:** review-loop source proposal. This note adds no axiom, no fitted
+input, and no audit verdict. The independent audit lane sets audit and
+effective status.
+**Primary runner:** [`frontier_beta6_d9_coefficient_2026_06_04.py`](../scripts/frontier_beta6_d9_coefficient_2026_06_04.py)
+
+## Scope
+
+This note extends the exact strong-coupling coefficient calculation from
+[`BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+to order `beta^9`. Write
+
+```text
+Delta(beta) = P_full(beta) - P_1plaq(beta) = sum_{n>=5} d_n beta^n.
+```
+
+The prior notes established the exact values
+
+```text
+d_5 = 1/472392,
+d_6 = 7/5668704,
+d_7 = 5/17006112,
+d_8 = 5/272097792,
+```
+
+all POSITIVE, and certified (GF(3) cycle-space certificate) that through order 8
+the connected `Delta` is purely the four elementary cube shells through the marked
+plaquette (`Delta = 4 C_cube`): the 2-cycle weight spectrum through `p0` is
+`{6, 10, 11, 12}`, so weights `7, 8, 9` are empty. At order `beta^9` the FIRST new
+distinct-support class opens at 2-cycle weight 10, so the distinct-support side
+reopens and
+
+```text
+d_9 = [cube-shell part at order 9] + [new weight-10 distinct supports].
+```
+
+This note supplies the exact `d_9`, both pieces, and the resummation re-test it
+enables.
+
+## Result
+
+The exact order-`beta^9` connected coefficient is
+
+```text
+d_9 = -2035/264479053824   (NEGATIVE, ~= -7.6944e-9),
+```
+
+the FIRST sign change in the connected series (`d_5..d_8` are all positive). The
+two pieces are
+
+```text
+cube-shell part   = -235/29386561536   (NEGATIVE, ~= -7.9969e-9),
+new-support part  = +5/16529940864     (POSITIVE, ~= +3.0248e-10) = 60 * 1/198359290368.
+```
+
+The contiguous ratio is therefore
+
+```text
+d_9 / d_8 = -407/972   (~= -0.4187, NEGATIVE).
+```
+
+In the per-shell bracket `Delta = (4/18^5) beta^5 [1 + c1 beta + c2 beta^2 + ...]`
+the new coefficient is `c4 = d_9 / d_5 = -2035/559872` (with `c1 = 7/12`,
+`c2 = 5/36`, `c3 = 5/576`). The clean positive super-geometric pattern of
+`d_5..d_8` ends at `d_9`.
+
+## How The Runner Computes It
+
+### Cube-shell part (order 9) -- cube-sector closed form
+
+The four cube shells' order-9 multiplicity sum is the order-`beta^9` Taylor
+coefficient of the single-cube generating function
+
+```text
+Delta_cube(beta) = 72 * K''(beta) * (K'(beta))^5,   K = log J,
+```
+
+with `J(beta) = int_{SU(3)} exp[(beta/3) Re Tr U] dU` built from the SAME exact
+dominant-weight recurrence as `P_1plaq`
+(`a_0 = 1, a_1 = 0, a_2 = 1/36`;
+`6(N+1)(N+4)(N+5) a_{N+1} = N(N+1) a_N + 2(2N+3) a_{N-1} + a_{N-2}`,
+[`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)).
+The runner recomputes this closed form (sympy series) and verifies it reproduces
+the DIRECT cumulant engine's `d_5, d_6, d_7, d_8` EXACTLY (V8a), so its order-9
+coefficient is the cube-shell part of `d_9`:
+
+```text
+72 K''(K')^5 [beta^9] = -235/29386561536.
+```
+
+Expressed against the engine-anchored bare cube cumulant `kappa_5 = 1/18^5`
+([`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
+Theorem 4), the cube-part ratios are `d_n(cube)/kappa_5 = 4, 7/3, 5/9, 5/144,
+-235/15552` for `n = 5..9`: a rational-multiple-of-`kappa_5` law that continues
+but is NOT a single fixed `kappa_5/6^k` power (the order-8 shape law `kappa_5/6^3`
+does not extend to a clean `kappa_5/6^4` at order 9; `15552 = 2*6^5`).
+
+**Why the closed form, and not the direct shape-collapse.** The order-8 cube part
+was computed by the octahedral shape-collapse of the four cube shells' 9-plaquette
+cumulants. At order 9 the cube words are 10-plaquette, and the shape-collapse does
+NOT continue: the concentrated order-9 cube value-shapes
+(`(1,1,1,1,1,5)`, `(1,1,1,1,2,4)`, `(1,1,1,2,2,3)`) drive a single link to
+incidence 5-6, i.e. a `(5,5)`/`(6,6)` invariant-projector single-link integral
+(~`10^7`-`10^8` nonzero entries), which exceeds a ~1 GB memory budget (the
+documented `scope_limit`). The cube-sector closed form is the resummation that
+defeats this per-link-degree wall, and it is validated against the direct engine
+through `d_8`. The runner additionally exercises the shape-collapse engine at
+order 9 itself on the one reachable cube value-shape `(1,1,1,1,3,3)` (link
+incidence 4, a `(4,4)` integral with ~`4e5` nonzeros): its 10-plaquette cumulant
+is an exact rational and is octahedrally invariant on a second
+geometrically-distinct representative (V8b), confirming the machinery still holds
+at order 9. (`(1,1,1,1,3,3)` evaluates to `0`, matching the order-8 pattern in
+which the `(1,1,1,1,2,3)` "one-tripled-one-doubled" shape also vanished.)
+
+### New distinct-support part -- the weight-10 two-cube supports
+
+The new class at order 9 is the weight-10 2-cycles of the GF(3) face->edge
+boundary map through `p0` (a size-9 action support `+ p0 = 10` faces). At order 9
+such a support carries `m_p0 = 0` and every face exactly once (total densities =
+9), so it contributes a single 10-point connected free-Haar cumulant.
+
+The cube boundaries SPAN the 2-cycle space (certified in the runner by
+`crank == cycle_dim`), and `weight 6 + weight 6 - 2*(1 shared face) = weight 10`,
+so EVERY weight-10 2-cycle through `p0` is the GF(3)-combination of exactly TWO
+elementary 3-cube boundaries sharing exactly one face. The runner STREAMS over
+cube pairs (memory-bounded: each pair is an `O(1)` face-dictionary, the full
+support list is never materialized), applies the connected + leaf-free + GF(3)
+`mod3_closable` filters, and obtains
+
+```text
+60 distinct size-9 supports (radius 2),
+```
+
+each contributing the IDENTICAL exact 10-point cumulant `1/198359290368` (they
+are a single lattice-symmetry orbit of two-cube configurations), summing to
+`60/198359290368 = 5/16529940864`.
+
+**Patch-size and completeness (the key correctness step).** The `d_5..d_8`
+enumeration used radius-1 (single cube). The order-9 new supports require radius
+2: 12 of the 60 reach coordinate-extent 2, so a radius-1 enumeration MISSES them.
+The runner certifies completeness two ways (V8c):
+
+- The cube-pair set STABILIZES between patch radius 2 and radius 3 (identical
+  60-support set), so no further-out cube enlarges it.
+- An INDEPENDENT GF(3) cube-combination enumeration (combinations of up to three
+  cubes over the distance-bounded pool) reproduces the SAME 60 supports,
+  cross-validating the two-cubes-share-a-face characterization.
+
+(The GF(3) cycle-space certificate's `weights[10] = 80` is the combination COUNT
+with multiplicity and without the connected/leaf-free filters; the distinct
+connected leaf-free GF(3)-closable count is 60.)
+
+### Two-engine verification
+
+The new supports' 10-plaquette words reach only `(2,2)` per-link degree (two cubes
+sharing one face => every link is touched by at most two distinct faces), so the
+full sympy `joint_cumulant` on a new-support word is feasible. The runner
+cross-checks the cheapest new support (V8d):
+
+```text
+Fraction joint_cumulant_frac = sympy joint_cumulant = 1/198359290368.
+```
+
+The cube-part closed form is itself cross-validated against the direct cumulant
+engine at `d_5..d_8` (four orders) plus the direct order-9 cube-shape
+`(1,1,1,1,3,3)` check above. The optimized `Fraction` engine reproducing the
+sympy `d_5, d_6` (V4b) and `d_7` exactly is unchanged.
+
+The review-loop run reproduced the runner's `maxorder=9` path:
+
+```text
+d_5 = 1/472392
+d_6 = 7/5668704
+d_7 = 5/17006112
+d_8 = 5/272097792
+d_9 = -2035/264479053824
+```
+
+## Resummation Re-test (the scientific payoff)
+
+Dropping the exact `d_9` into the resummation/d-log-Pade harness
+([`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md))
+gives (V8f):
+
+- **Tadpole / geometric ansatz: FALSIFIED, and gets the SIGN wrong.** The
+  single-pole ratio predicts `d_9^pred = (d_8/d_7) d_8 = (1/16) d_8 > 0`; the
+  exact `d_9 < 0`. The geometric continuation pattern is broken not just in
+  magnitude but in sign.
+- **The activated `[1/1]` d-log-Pade now predicts the correct NEGATIVE sign of
+  `d_9`** (a change from the order-8 single-pair verdict, where the `[0/2]` pair
+  predicted the wrong sign for `d_8`), but the WRONG magnitude (`~ -1.05e-8`
+  predicted vs exact `~ -7.69e-9`, ~37% off, outside the 5% support window), and
+  it still rests on a spurious REAL pole at `beta_c ~ 3.375` (`arg = 0`). The
+  `[1/1]` is the lowest-order balanced d-log-Pade; `d_9` is the first coefficient
+  that would feed a `[2/2]` (which needs `d_5..d_10`), so the off-axis complex
+  pair remains unlocalized at this order.
+- **Forward truncated `<P>(6)`.** The negative `d_9 beta^9` term REDUCES the
+  truncated partial sum: `Delta(6)` from `d_5..d_8` drops when `d_9` is added, and
+  the truncated `<P>(6) ~ 0.532` (a divergent strong-coupling partial sum, not a
+  closure; the `0.594` Monte-Carlo comparator is never a derivation input).
+
+The `d_9` sign flip further CONSTRAINS the singularity picture. The
+constant-amplitude single dominant complex-conjugate pair was already excluded at
+order 8 (it requires a sign change at `d_8`, which is positive); the `d_9` sign
+flip, arriving one order later, is consistent with a multi-pair or
+amplitude-varying (entire-function-like) analytic structure rather than any single
+dominant pair. This SHARPENS the analytic-class picture; it does not close it.
+
+## Boundary
+
+This is not a `P(beta=6)` derivation, not an `alpha_s` derivation, and not a
+closed boosting form. It proves one exact coefficient (`d_9 =
+-2035/264479053824`), opens and exactly evaluates the first new distinct-support
+class (the weight-10 two-cube supports), and reports that `d_9` (i) breaks the
+geometric/tadpole continuation in sign, (ii) is the first sign change in the
+connected series, and (iii) leaves the `[1/1]` d-log-Pade self-contradicting (a
+spurious real pole) while supplying the first datum toward a `[2/2]`.
+
+Per the retained infinite-hierarchy obstruction
+([`GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md)),
+no finite-order truncation of the connected hierarchy closes the thermodynamic
+`<P>(6)`. With the cube side now requiring the cube-sector resummation past `d_8`
+and the distinct-support side reopening at every higher weight, beta=6 closure
+still requires a separate dynamical input for the boundary character measure
+`rho_{p,q}(6)` (under-determined by local data and treewidth-29 infeasible at
+`L_s >= 3`); this note does not supply one. `0.594` is a Monte-Carlo comparator,
+never a derivation input.
+
+## No-go discipline gate (N1-N8)
+
+This gate scopes the **negative/bounded components only**: (a) the
+tadpole/geometric continuation is **falsified at order 9** (predicts `d_9 > 0`;
+exact `d_9 < 0`), and (b) the `[1/1]` d-log-Pade, while now predicting the correct
+**sign** of `d_9`, remains **self-contradicting** (spurious real pole, wrong
+magnitude). The exact value `d_9 = -2035/264479053824` is a **positive** result (a
+cross-checked arithmetic identity), the *witness*, not a no-go.
+
+### N1 - Alternative route enumeration
+
+Routes by which a low-order continuation could *survive* at order 9, and why each
+fails for this scoped claim:
+
+| route | what it would attempt | why it fails | marker |
+|---|---|---|---|
+| Single-real-pole / geometric tail | `d_9^pred = (d_8/d_7) d_8 > 0` | exact `d_9 < 0` (sign change); already falsified at `d_7` by `d_7/d_6 != d_6/d_5`. | ATTEMPTED |
+| Constant-amplitude single dominant complex pair | extrapolate `d_5..d_8` to `d_9` | excluded already at order 8 (requires `d_8 < 0`); the `d_9` sign flip is one order later than a single-pair sign change. | ATTEMPTED |
+| `[1/1]` d-log-Pade localization | use `d_5..d_8` to predict `d_9` and localize the pair | predicts the correct NEGATIVE sign but wrong magnitude (~37% off) on a spurious REAL pole (`beta_c ~ 3.375`); does not localize the off-axis pair. | ATTEMPTED |
+| `[2/2]` d-log-Pade | a higher balanced approximant that could localize the pair | needs `d_5..d_10`; `d_9` supplies only the first new datum. Explicitly OUT OF SCOPE (a future computation). | OUT OF SCOPE |
+| Multi-pair / amplitude-varying | several pairs or a non-constant amplitude consistent with the `d_9` sign flip | NOT falsified -- explicitly left open; the `d_9` sign flip is consistent with this broader class. | OUT OF SCOPE |
+
+### N2 - Wall-independence audit
+
+The collapsed wall set for the scoped falsifier is **one wall**: the *sign* of the
+exact `d_9` (`< 0`) versus the *positive* sign the geometric/tadpole continuation
+predicts. The `[1/1]` self-contradiction (spurious real pole) is the same
+low-order-insufficiency fact viewed in the d-log-Pade representation, not an
+independent wall. What could change the verdict: a corrected exact `d_9` (ruled
+out by the closed-form validation through `d_8`, the direct order-9 cube-shape
+cross-check, the two-method new-support completeness, and the two-engine
+new-support cumulant), or a re-scoping to multi-pair models (which the claim does
+not touch).
+
+### N3 - Hidden-wall scan
+
+The EXPLICIT load-bearing inputs of the scoped negative claim are:
+
+1. the exact bracket coefficients `c1 = 7/12`, `c2 = 5/36`, `c3 = 5/576` (from
+   `d_5..d_8`, two-engine verified in the predecessor notes);
+2. the exact order-9 coefficient `d_9 = -2035/264479053824`, computed
+   INDEPENDENTLY of any continuation ansatz (cube-sector closed form validated
+   against the direct cumulant engine through `d_8` + the streamed weight-10
+   two-cube distinct supports with two-engine-verified cumulants);
+3. the elementary fact that a single-pole / single-pair continuation forces a
+   definite sign pattern in the coefficient sequence.
+The retained infinite-hierarchy obstruction and the GF(3) cycle-space certificate
+bound the validity window; they are not used to manufacture the negative verdict.
+`0.594` is consumed only to display the forward `<P>(6)`, never as a derivation
+input.
+
+### N4 - Residual matching
+
+| cited witness | residual attacked | residual here | match? |
+|---|---|---|---|
+| [`BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md) | `Delta = 4 C_cube` is exact only through `d_8`; the distinct-support side reopens at 2-cycle weight 10 (`d_9` acquires new non-cube supports). | Enumerates that new class exactly (60 weight-10 two-cube supports), supplies its contribution, and assembles `d_9`. | yes |
+| [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md) | `d_5..d_8` ACTIVATES the `[1/1]` d-log-Pade, which predicts `d_9`. | Supplies the exact `d_9`; the `[1/1]` prediction gets the sign right but the magnitude wrong (still FALSIFIED at the 5% window). | yes |
+| [`BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`](BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md) | The cube SECTOR `Delta_cube = 72 K''(K')^5` converges at `beta = 6` and reproduces `d_5..d_8` + the `d_9` cube-part. | Uses exactly that closed form for the order-9 cube part, validated against the direct engine through `d_8`. | yes |
+| [`GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md) | No finite truncation closes `<P>(6)`. | Boundary disclaimer: `d_9` does not close beta=6. Not load-bearing for the falsifier. | not load-bearing |
+| [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md) Theorem 4 | Engine-anchored `kappa_5 = 1/18^5`. | Positive arithmetic input (the cube ratios and the new-support value are quoted relative to `kappa_5`). Supports the witness, not the negative logic. | not load-bearing |
+
+### N5 - Rhetoric audit
+
+- **"falsified" / "sign change"** -- scoped to the *single-pole / geometric /
+  single-dominant-pair* continuation classes at order 9. It does NOT mean the
+  broader off-axis complex-pair *class* (multiple pairs, varying amplitude,
+  entire-function-like ratios) is falsified; the `d_9` sign flip is consistent
+  with that surviving broader class.
+- **"the distinct-support side reopens"** -- a structural statement about 2-cycle
+  weights (weight 10 first appears at order 9), not a claim that the series can
+  now be summed.
+- **"sharpens"** -- `d_9` adds one constraint; it does not localize the
+  singularity or close beta=6.
+- **"bounded"** -- the note asserts NO value of `P(beta=6)`, `u_0`, or `alpha_s`,
+  and NO audit status.
+
+Disclaimer against an over-broad reading: this note does NOT claim "no resummation
+can ever reach beta=6", does NOT claim the complex-pair class is wrong, and does
+NOT repin the canonical plaquette value.
+
+### N6 - Partial-closure path scan
+
+Open, non-axiom partial-closure paths after this result:
+
+1. **`[2/2]` (and higher) d-log-Pade** fed by `d_10` and beyond, which could
+   localize the off-axis pair the `[1/1]` cannot.
+2. **Higher-order coefficients** `d_10, d_11, ...`, where additional
+   distinct-support classes (weights 11, 12, multi-cube clusters) open; the
+   cube-sector closed form continues to supply the cube part, but each new weight
+   needs its own streamed enumeration.
+3. **Multi-pair / amplitude-varying continuation** consistent with the `d_9` sign
+   flip.
+4. **An independent dynamical input** for `rho_{p,q}(6)` (the retained
+   lane-killer), which no coefficient supplies.
+None is foreclosed and none is a new framework axiom.
+
+### N7 - Steelman
+
+**Strongest objection.** "The cube part at order 9 is taken from a closed form
+(`72 K''(K')^5`) rather than from the direct octahedral cumulant sum that produced
+`d_5..d_8`; a closed form used in place of the first-principles cumulant could
+hide an error, so `d_9` is less rigorous than its predecessors."
+
+**Why it does not break the claim.** The closed form is not asserted by name: the
+runner recomputes it from the SAME exact `J` recurrence (Haar primitive) and
+verifies it reproduces the direct cumulant engine's `d_5, d_6, d_7, d_8` EXACTLY
+-- four independent constraints -- before reading off its order-9 coefficient. It
+is additionally cross-checked at order 9 itself on the one reachable cube
+value-shape `(1,1,1,1,3,3)` (octahedral invariance verified on two
+representatives). The direct cumulant sum is used wherever it is feasible; it is
+infeasible only for the concentrated order-9 cube shapes, which hit a genuine
+`(5,5)`/`(6,6)` per-link-degree memory wall (this is the documented `scope_limit`,
+not a shortcut). The new-support part -- the genuinely NEW order-9 content -- is
+computed directly by the Fraction cumulant engine and confirmed by the sympy
+engine. So the closed form is a validated resummation of the cube side, not an
+unverified import.
+
+### N8 - Cross-cycle echo
+
+The repo's characteristic negative-claim failure mode is promoting one
+representative computation to a whole-lane closure. This note avoids that echo:
+(i) the negative claim is restricted to named low-order continuation classes
+(single-pole/geometric and the `[1/1]` d-log-Pade) at a single order (`beta^9`),
+with the multi-pair class and all higher-order routes explicitly left open; (ii)
+the falsifier's robust content is the convention-independent **sign** of `d_9`;
+(iii) the Boundary section states explicitly this is not a `P(beta=6)` derivation
+and that beta=6 still needs a separate dynamical input for `rho_{p,q}(6)`.
+
+## Literature comparator (not a derivation input)
+
+The exact strong-coupling character expansion of the SU(3) Wilson plaquette is a
+classical object (Munster, *Nucl. Phys. B* **190** (1981) 439; Drouffe-Zuber,
+*Phys. Rept.* **102** (1983) 1). Those series are quoted ONLY as an after-the-fact
+comparator; every coefficient here is reproven from the SU(3) Haar single-link
+integral and the `J` recurrence (a Haar primitive), never imported. No
+Monte-Carlo or PDG value enters the derivation path.
+
+## Key Files
+
+- [`scripts/frontier_beta6_d9_coefficient_2026_06_04.py`](../scripts/frontier_beta6_d9_coefficient_2026_06_04.py) (this note's runner; `maxorder=9` adds V8/V8a-f)
+- [`BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+- [`BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md`](BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md)
+- [`BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`](BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md)
+- [`BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md`](BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md)
+- [`GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md)
+- [`GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md)
+- [`BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`](BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md)

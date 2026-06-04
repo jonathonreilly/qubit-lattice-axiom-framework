@@ -1,0 +1,33 @@
+loop_slug: su3-wigner-treewidth-repair-20260604
+branch: physics-loop/su3-wigner-treewidth-repair-20260604
+base: origin/main
+current_goal: "Repair the SU3 Wigner L_s=3 treewidth diagnostic unit labels and truncation threshold without changing the claim's bounded-support scope."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: "Unit-consistent memory accounting and truncation threshold repair."
+hard_residual: "The diagnostic remains a bounded heuristic obstruction, not a global treewidth lower bound or bridge closure."
+files_touched:
+  - docs/SU3_WIGNER_L3_TREEWIDTH_INFEASIBLE_2026-05-04.md
+  - scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py
+  - logs/runner-cache/frontier_su3_wigner_l3_treewidth_2026_05_04.txt
+  - .claude/science/physics-loops/su3-wigner-treewidth-repair-20260604/
+open_imports:
+  - "No new imports. The runner remains a finite Python certificate over the implemented link-adjacency graph and two greedy elimination heuristics."
+no_go_routes:
+  - "Do not promote this to a global treewidth lower bound: max clique size 30 is an upper-bound certificate from min-degree/min-fill elimination orders."
+  - "Do not promote the gauge-scalar bridge: this block does not compute <P>(beta=6)."
+checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py"
+  - "python3 -m py_compile scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py"
+  - "git diff --check"
+pr_status: pending
+next_exact_action: "Commit, push, open the review PR, then pivot to the next conditional repair target."
+stop_condition: "Stop this block after PR handoff; continue campaign on the next independent audit-unlock repair."

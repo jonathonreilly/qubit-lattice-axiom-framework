@@ -3960,6 +3960,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_conventions_unification.py"
     },
+    "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04": {
+      "assert_count": 0,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_corner_fermion_determinant_not_r_half_exact.py"
+    },
     "cosmological_constant_result_2026-04-12": {
       "assert_count": 0,
       "counts": {
@@ -29715,6 +29727,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/audit_companion_corner_fermion_determinant_not_r_half_exact.py": {
+      "assert_count": 0,
+      "claims": [
+        "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py": {
@@ -62294,12 +62321,12 @@
     "dominant_class_distribution": {
       "A": 291,
       "B": 307,
-      "C": 863,
+      "C": 864,
       "D": 325,
       "none": 465
     },
-    "runners_classified": 2251,
-    "runners_with_C": 1125,
-    "runners_with_D": 657
+    "runners_classified": 2252,
+    "runners_with_C": 1126,
+    "runners_with_D": 658
   }
 }

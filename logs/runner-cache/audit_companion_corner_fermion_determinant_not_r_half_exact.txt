@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_corner_fermion_determinant_not_r_half_exact.py
+runner_sha256: 40e4c323469d4ff4f97288b5c9cf8df574c049baa9b4057d786f169b79c0c397
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+PASS - (1) delta-stationary at sin(3 delta)=0 -> cos(3 delta)=+/-1
+PASS - (2cos3d=+1) det stationary in shape at r in ['1'] (NOT 1/2)
+PASS - (3cos3d=+1) d(det)/dx != 0 at x=1/2 (r=1/2): r=1/2 is NOT a det stationary point
+PASS - (2cos3d=-1) det stationary in shape at r in ['4'] (NOT 1/2)
+PASS - (3cos3d=-1) d(det)/dx != 0 at x=1/2 (r=1/2): r=1/2 is NOT a det stationary point
+PASS - (4) at r=1 (x=1/3, cos3d=+1) the determinant VANISHES (two-fold mass degeneracy), not a balanced vacuum
+PASS - (5) max-sector-entropy at x=1/2 (r=1/2): dS/dx=0 there and S=log2
+PASS - (6) CW fermion potential V_ferm=-log|det(M)| branchwise: d/dx != 0 at x=1/2 on both branches
+PASS - (7) any scale-only scalar potential is x-flat on the fixed-scale slice -> cannot create an r=1/2 vacuum
+PASS - (7b) combined V_eff = scale-scalar + CW-fermion: d/dx != 0 at x=1/2 on both branches
+
+10 PASS, 0 FAIL
+
+PRUNED: the corner fermion-determinant det(M) does NOT select the balanced Koide r=1/2. Its
+stationary/special points at fixed Frobenius scale are r=1 (det=0, degenerate) and r=4, plus the
+boundaries -- the balanced max-sector-entropy point r=1/2 is NOT among them. With the measure routes
+(kappa=1) and the framework's own scalar-potential concession (V_eff min != physical point), the
+leading corner-sector dynamics do not rescue r=1/2. Residual (untested): taste-breaking scalar
+normalization; multi-factor Connes-Lott. CONDITIONAL on the open staggered-Dirac realization gate.
+
+----- stderr -----
+

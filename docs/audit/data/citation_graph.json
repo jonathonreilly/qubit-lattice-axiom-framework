@@ -6021,6 +6021,30 @@
       "to": "physical_lattice_necessity_note"
     },
     {
+      "from": "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "to": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
+    },
+    {
+      "from": "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "to": "koide_bae_30_probe_campaign_note_2026-05-09"
+    },
+    {
+      "from": "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "to": "koide_bae_probe_kappa_prediction_test_partial_falsification_note_2026-05-09_probe29"
+    },
+    {
+      "from": "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "to": "koide_bae_probe_physical_extremization_bounded_obstruction_note_2026-05-09_probe25"
+    },
+    {
+      "from": "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "to": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+    },
+    {
       "from": "cosmological_constant_result_2026-04-12",
       "to": "dark_energy_eos_note"
     },
@@ -49489,6 +49513,25 @@
       "runner_path": "scripts/frontier_conventions_unification.py",
       "title": "Conventions Unification Companion Note"
     },
+    "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04": {
+      "claim_id": "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
+        "koide_bae_30_probe_campaign_note_2026-05-09",
+        "koide_bae_probe_kappa_prediction_test_partial_falsification_note_2026-05-09_probe29",
+        "koide_bae_probe_physical_extremization_bounded_obstruction_note_2026-05-09_probe25",
+        "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "080a923351f502368e071adc5857ec43d6570542c2cbc05d798d0845c2c1a95c",
+      "path": "docs/CORNER_FERMION_DETERMINANT_DOES_NOT_SELECT_KOIDE_R_HALF_NARROW_OBSTRUCTION_NOTE_2026-06-04.md",
+      "runner_path": "scripts/audit_companion_corner_fermion_determinant_not_r_half_exact.py",
+      "title": "Corner Fermion Determinant Does Not Select Koide r=1/2 (Narrow Dynamical-Route Obstruction)"
+    },
     "cosmological_constant_result_2026-04-12": {
       "claim_id": "cosmological_constant_result_2026-04-12",
       "claim_type_author_hint": null,
@@ -91897,7 +91940,7 @@
       "bounded_theorem": 826,
       "decoration": 1,
       "meta": 203,
-      "no_go": 96,
+      "no_go": 97,
       "none": 1407,
       "open_gate": 62,
       "positive_theorem": 176
@@ -91906,15 +91949,15 @@
       "bounded_theorem": 1227,
       "decoration": 1,
       "meta": 203,
-      "no_go": 199,
+      "no_go": 200,
       "none": 426,
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10452,
+    "edge_count": 10458,
     "leaf_count": 902,
-    "node_count": 2771,
+    "node_count": 2772,
     "root_count": 942,
-    "runners_with_path": 2356
+    "runners_with_path": 2357
   }
 }

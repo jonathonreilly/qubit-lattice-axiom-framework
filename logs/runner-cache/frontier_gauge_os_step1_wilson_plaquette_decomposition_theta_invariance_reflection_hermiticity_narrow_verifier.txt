@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py
-runner_sha256: 87f7be5f947160dfb48e1209f06ae6465d089d268a288cdaab47117d892af729
+runner_sha256: 07034b2204117dd0dabcc26225a3fa55985c85beb54214071b75b2d40a5f730f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ======================================================================
@@ -35,6 +35,8 @@ Lattice: 2^4 (= 16 sites), SU(3), β = 6.0, seed = 20260602
 [PASS] A.partition.exhaustive: P_+ ∪ P_- ∪ P_mixed = P  (|P_+| + |P_-| + |P_mixed| = 24 + 24 + 48 = 96, total = 96)
 [PASS] A.partition.disjoint: P_+ ∩ P_- = ∅  (explicit set intersection check)
 [PASS] A.partition.disjoint_mixed: P_+ ∩ P_mixed = ∅, P_- ∩ P_mixed = ∅  (explicit set intersection check)
+[PASS] A.partition.mixed_reflection_plane_count: finite-periodic reflection-plane family exposed  (|P_mixed,reflection| = 24, expected 3 * L^3 = 24)
+[PASS] A.partition.mixed_wraparound_count: finite-periodic wraparound family exposed  (|P_mixed,wrap| = 24, expected 3 * L^3 = 24)
 [PASS] A.partition.bijection: |P_+| = |P_-| (Θ bijection on plaquette set)  (|P_+| = 24, |P_-| = 24)
 [PASS] A.action.decomposition: S_W[U] = S_+(U) + S_-(U) + S_mixed(U) exactly  (S_W = -16.890012, S_+ + S_- + S_mixed = -16.890012, diff = 0.00e+00)
 [PASS] A.action.theta_image: S_-(U) = S_+(ΘU) (identification S_- = Θ S_+)  (S_-(U) = -3.546046, S_+(ΘU) = -3.546046, diff = 0.00e+00)
@@ -63,7 +65,7 @@ Lattice: 2^4 (= 16 sites), SU(3), β = 6.0, seed = 20260602
 [PASS] E.no_axiom_extension: no new axiom or theory-language extension  (uses the pre-existing one-qubit/Z^3 baseline plus retained mixed-kernel context; no new premise)
 [PASS] E.no_continuum_claim: does NOT claim continuum / OS reconstruction RP  (lattice setup only; continuum-limit results out of scope)
 
-SCORECARD: PASS=31 FAIL=0
+SCORECARD: PASS=33 FAIL=0
 All OS Step 1 Wilson plaquette decomposition checks PASSED.
 Audit lane decides status; this runner proposes no effective status.
 

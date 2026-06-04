@@ -58982,7 +58982,7 @@
         "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "43a5eecb2e3af4c15216196b03faefbe1c49527de636e5d29ea0854207ef3220",
+      "note_hash": "7d47bf0043f133145cdfb40853175905aae3b7af2dc0b470a462e18decd97045",
       "path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
       "runner_path": "scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py",
       "title": "Gauge OS Step 1 \u2014 Wilson Plaquette Action Decomposition, \u0398-Invariance, and Reflection-Hermiticity (Narrow Companion Theorem)"

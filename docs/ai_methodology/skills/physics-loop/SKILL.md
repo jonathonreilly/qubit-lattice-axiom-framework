@@ -248,7 +248,8 @@ human judgment, the actual current surface status is **not** `retained`.
 
 **No-new-axiom/no-new-primitive rule.** The repo does NOT accept extensions to
 its axiom stack or primitive registry as part of physics-loop work. `A_min`
-means the minimum axiom set, NOT permission to enlarge it. A route or
+means the current minimum axiom set, Lattice + Quantum + Record, NOT permission
+to enlarge it. A route or
 counterfactual whose closure requires adopting a new axiom or new framework
 primitive is `infeasible`, regardless of how productive its consequences would
 be. The legitimate import-bearing shape is:
@@ -283,8 +284,12 @@ bounded imports. They must already be recorded in
 `docs/audit/data/axiom_premise_nodes.json`, where they chain-satisfy
 dependencies without bounding downstream rows. Tier-A admitted derivation
 targets live in `docs/audit/data/tier_a_admissions.json` and remain bounded
-until retired. The scale-reference primitive is the approved units primitive;
-do not describe it as a Tier-A admission or a bounded Planck import.
+until retired. Record/P1 scalar additivity is in the approved axiom baseline
+only in its narrow finite-readout form; it does not import P2/modulus, log-det,
+source/action, measurement, Born weights, dynamics, normalization, scale, or
+arbitrary observable identification. The scale-reference primitive is the
+approved units primitive; do not describe it as a Tier-A admission or a bounded
+Planck import.
 
 Required status fields for major artifacts:
 
@@ -575,7 +580,7 @@ routes are risky.
   a sharper obstruction, a falsified premise, or a worked failed derivation
   with the exact load-bearing wall named.
 - **First-principles reset:** before the stretch attempt, write the minimal
-  allowed premise set (`A_min`) and forbidden imports. The attempt must not
+  allowed premise set (`A_min`: Lattice, Quantum, Record) and forbidden imports. The attempt must not
   rely on observed target values, fitted selectors, or literature as hidden
   proof inputs. `A_min` is the minimum axiom set, NOT a license to add
   axioms or framework primitives — extending either governance surface is

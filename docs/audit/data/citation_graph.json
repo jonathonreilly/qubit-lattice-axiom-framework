@@ -42357,7 +42357,7 @@
         "scale_reference_primitive"
       ],
       "helper_runner_paths": [],
-      "note_hash": "08fbdcf79a0a03ca2c9cada73221a7ba0c49b18141e86a4caee114fcd7a2b3ff",
+      "note_hash": "9552a6982cf6f593dc5953b2502d9fb67ce758b1b4857da7aa683490efb4fe8b",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": null,
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"
@@ -43422,7 +43422,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "329a10c42eaf62b1dee83d6ac6393070bdc33cd221de136d282a329abde63c02",
+      "note_hash": "5294ace28d87c75e9b4f2a3c18854269b9aafb1f3b5a884d7ba2cb9187934d92",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -43446,7 +43446,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "35d3e9b6c6f0d81707324b786044259c60fa66a07960aedb694390f50d66dd29",
+      "note_hash": "49bfa67db45db956ebf0191508c6a8b1058138a5d29a4721b6a146914e1c873b",
       "path": "docs/ai_methodology/skills/no-go-discipline/references/case-studies.md",
       "runner_path": null,
       "title": "No-Go Discipline \u2014 Case Studies"
@@ -43553,7 +43553,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7b0e6e3dc74654708fd44297db4b26817a7a348d495dba23f3098388e43401a5",
+      "note_hash": "86d55f5443060903f0df3d96ab74746fe279a23b7cb0d76e8098d92564434b20",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -43568,7 +43568,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "46a5e9d9842c72e177027e5ab707ca02ee25c771bb79a5a6a81cf521140b00c0",
+      "note_hash": "924b9042cdd8afeff337c729a1c90725c89b694e47b08ad2c6b97974ce2d91d8",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -63069,7 +63069,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9d81e25fa58096827f994539f92f5cb59cf9092b26363ff22fe80d0d10753acb",
+      "note_hash": "57abeb139f5dc4e94889e5da22c15870ae9e1fdf8aef375017c79bb5a57c6750",
       "path": "docs/KEY_TERMINOLOGY.md",
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology"
@@ -69520,10 +69520,10 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d",
-      "path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
-      "runner_path": null,
-      "title": "Minimal Framework Axioms (Qubit Reframe)"
+      "note_hash": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-04.md",
+      "runner_path": "scripts/audit_companion_three_axiom_clean_base_exact.py",
+      "title": "Minimal Framework Axioms (Lattice, Quantum, Record)"
     },
     "minimal_axioms_2026-04-11": {
       "claim_id": "minimal_axioms_2026-04-11",
@@ -79309,7 +79309,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8fa3f9f33616168b73215bfba996693fb5b130ac6ba5c1b759c182a744abe0ed",
+      "note_hash": "57f44311998066b96dd22076d9eadd8a291ef1cbe0a34d96f7d3ca14fa9d563f",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -80335,7 +80335,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "03d921920897c3e7e83604ca8b5a40c6e67d19ed1291a80a31dbe23aa8def5ea",
+      "note_hash": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f",
       "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
       "runner_path": null,
       "title": "Scale-Reference Primitive"
@@ -91703,6 +91703,6 @@
     "leaf_count": 898,
     "node_count": 2762,
     "root_count": 940,
-    "runners_with_path": 2346
+    "runners_with_path": 2347
   }
 }

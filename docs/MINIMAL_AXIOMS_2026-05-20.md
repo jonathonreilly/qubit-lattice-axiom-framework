@@ -1,9 +1,11 @@
-# Minimal Framework Axioms (Qubit Reframe)
+# Minimal Framework Axioms (Qubit Reframe; Superseded)
 
 > **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`; each row points to the canonical source-of-truth doc.
 
 **Date:** 2026-05-20
-**Status:** current public framework memo for the qubit-on-`Z^3` (equivalently `Cl(3)`-on-`Z^3`) package
+**Status:** superseded historical memo. The current framework axiom memo is
+`MINIMAL_AXIOMS_2026-06-04.md`, which adds the narrow Record axiom to the
+Lattice + Quantum baseline.
 **Type:** meta
 **Supersedes:** `MINIMAL_AXIOMS_2026-05-03.md` (which restored the two-axiom set after backing out the April 15 rewrite). The qubit reframe makes the intended A1 ontology explicit while preserving the same local algebraic content; A3 and A4 (former axioms recategorized as open gates in the 2026-05-03 restoration) remain open gates.
 

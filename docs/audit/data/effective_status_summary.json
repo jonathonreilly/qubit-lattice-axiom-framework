@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1261,
-    "decoration": 56,
+    "bounded_theorem": 1263,
+    "decoration": 50,
     "meta": 244,
     "no_go": 267,
     "open_gate": 121,
-    "positive_theorem": 699
+    "positive_theorem": 703
   },
   "cycle_examples": [
     [
@@ -98,12 +98,11 @@
   ],
   "cycles_detected": 29,
   "effective_status_counts": {
-    "audited_conditional": 106,
-    "audited_failed": 4,
+    "audited_conditional": 90,
+    "audited_failed": 3,
     "audited_numerical_match": 18,
-    "audited_renaming": 27,
+    "audited_renaming": 22,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
-    "decoration_under_axiom_first_lattice_noether_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_color_automorphism_theorem": 6,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 5,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
@@ -118,7 +117,6 @@
     "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 1,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
-    "decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": 1,
     "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_lattice_nn_deterministic_rescale_note": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
@@ -127,18 +125,17 @@
     "decoration_under_pmns_hw1_source_transfer_boundary_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_strong_cp_theta_zero_note": 1,
-    "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 4,
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 240,
-    "open_gate": 30,
-    "retained": 171,
-    "retained_bounded": 651,
-    "retained_no_go": 181,
+    "open_gate": 29,
+    "retained": 162,
+    "retained_bounded": 626,
+    "retained_no_go": 174,
     "retained_pending_chain": 12,
-    "unaudited": 1156
+    "unaudited": 1226
   },
   "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [

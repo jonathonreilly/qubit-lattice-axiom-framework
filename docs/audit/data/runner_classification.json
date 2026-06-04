@@ -16596,6 +16596,18 @@
       "dominant_class": null,
       "runner": "scripts/minimal_absorbing_horizon_probe.py"
     },
+    "minimal_axioms": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_three_axiom_clean_base_exact.py"
+    },
     "minimal_axioms_2026-05-03": {
       "assert_count": 1,
       "counts": {
@@ -30645,6 +30657,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_three_axiom_clean_base_exact.py": {
+      "assert_count": 0,
+      "claims": [
+        "minimal_axioms"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/audit_companion_three_generation_hw1_distinct_characters_exact.py": {
@@ -62026,9 +62053,9 @@
       "B": 307,
       "C": 861,
       "D": 323,
-      "none": 464
+      "none": 465
     },
-    "runners_classified": 2241,
+    "runners_classified": 2242,
     "runners_with_C": 1120,
     "runners_with_D": 653
   }

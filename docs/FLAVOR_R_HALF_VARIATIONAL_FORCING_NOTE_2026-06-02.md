@@ -176,6 +176,172 @@ energy-functional side. Candidate next paths (NOT closures, and the two that are
 
 ---
 
+## No-go discipline gate (N1–N8)
+
+**Status:** PASS for the narrow scoped claim only. The claim under discipline is
+**not** "Q=2/3 is excluded" and **not** "the charged-lepton Koide relation fails."
+It is the single negative metric statement: *no native operator-spectral variational /
+measure functional on the C₃-circulant weight family makes `r=|b|²/a²=1/2` a forced
+extremum; every such functional lands at `r=0` or `r=1`, and the only functionals that
+reach `r=1/2` are built on the block-fold / Frobenius β=0 / det_C 2-sector grouping.*
+Per the **Framing correction** (and retained `koide_anticommuting_operator_derivation_theorem`),
+`r=1` (Q=1) and `r=1/2` (Q=2/3) **coexist** as distinct operator classes on
+`Q = 1/3 + (2/3)r`; the canonical metric correctly characterizes the **non-chiral Q=1
+complement**, and `r=1/2` is fixed by the chirality sector label, not by metric
+optimization. This gate audits only the *metric/variational* claim, never the
+existence of the chiral sector.
+
+### N1 — Alternative route enumeration
+
+Every native functional that could *attempt* to make `r=1/2` a forced extremum, and
+why each instead lands on an endpoint (`r=0` or `r=1`) of the operator-spectral line.
+"Forces r=1/2?" means: is `r=1/2` a stationary point with **no** coarse-graining /
+measure choice inserted?
+
+| route | what it would attempt | why it fails for this scoped claim | marker |
+|---|---|---|---|
+| Canonical HS-commutant metric | Extremize the forced Hilbert–Schmidt form on `M₃(ℂ)^{C₃}=span{I,C,C²}` against the r-family. | `{I,C,C²}` are mutually HS-orthogonal of equal norm² = 3 → isotropic → weights the **3 modes** equally → dimension count → `r=1` (Q=1), not `1/2` (runner 2a–2b). | ATTEMPTED → r=1 |
+| Cl(3) grade-1 qubit metric | Use the most native site-level metric to weight `I` vs `J−I`. | The grade-1 metric is isotropic `δ_ij` and **generation-blind**; it says nothing about the I-vs-(J−I) operator weighting (runner 2c). | ATTEMPTED → silent |
+| Spectral entropy of H² | Extremize Shannon entropy of the 3 eigenvalues of H². | Maximized at the degenerate spectrum → `r→0` (Q=1/3), not `1/2` (runner 1a). | ATTEMPTED → r=0 |
+| von Neumann entropy of ρ=H²/Tr H² | Most-mixed spectral state. | `r→0` (degenerate spectrum is the entropy max) (runner 1b). | ATTEMPTED → r=0 |
+| Thermal vN entropy ρ=e^{−H}/Z | Free-energy / thermal state extremum. | `r→0` (runner 1c). | ATTEMPTED → r=0 |
+| Relative entropy S(ρ_spec‖I/3) | Minimize distance to the maximally-mixed state. | `r→0` (runner 1d). | ATTEMPTED → r=0 |
+| Purity Tr ρ_spec² (min) | Most-mixed by purity. | `r→0` (runner 1e). | ATTEMPTED → r=0 |
+| Born / tracial dimension state I/3 | The dimension/Plancherel weight on the 3 modes. | Block weights 1:2 → `r=1` (Q=1) — the non-chiral complement endpoint, exactly as the Framing correction predicts. | ATTEMPTED → r=1 |
+| RP / T-positivity | Pin r by reflection positivity of e^{−tH}. | Holds for **every** real (a,b) (H real-symmetric) → a cone (inequality), bounds the family but pins **no** interior point (runner 5). | ATTEMPTED → no pin |
+| 2-sector power entropy S₂ / imbalance | Reach r=1/2 as the entropy max / imbalance min. | These **do** land at `r=1/2`, but only after folding `{C,C²}` into one real doublet channel — the block-fold/det_C grouping is the inserted choice, not a forced metric (runner 3a–3b; §2c). | ATTEMPTED → r=1/2 **via inserted fold** |
+
+No route reaches `r=1/2` as a *forced* (choice-free) extremum. The two that touch
+`r=1/2` (S₂, imbalance) do so only by pre-committing to the 2-sector partition; that
+partition is the unforced β=0 grouping audited in N2.
+
+### N2 — Wall-independence audit
+
+The collapsed wall set for this scoped claim has **one** wall: the **block-fold / β=0 /
+det_C 2-sector grouping is an unforced choice**. Concretely, the Ad-invariant PD bilinear
+forms on Herm(3) are the two-parameter family `B_{α,β}(A,B)=α·Tr(AB)+β·tr(A)tr(B)`,
+PD on the whole cone `α>0, α+3β>0` (retained `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`).
+The channel-balanced point moves along the free curve `α=3β`; the charged-lepton
+point `r=1/2 ⟺ β=0` is **one** unforced point of that cone (e.g. `α=β=1` is PD,
+Ad-invariant, and ≠ Frobenius; runner 4a–4c). The endpoint-landing functionals in N1
+are *not* independent retained walls — they are alternate native spectral functionals
+that each fail to pin `r=1/2` for the **same** reason (no native principle selects
+β=0). Selecting β=0 from a future native C₃-equivariant β-function attractor (N6) would
+change the *origin* of the grouping but would not alter the standing single-link-style
+fact that the canonical HS metric itself sits at `r=1`.
+
+### N3 — Hidden-wall scan
+
+The negative metric result does **not** smuggle a retained input through soft language.
+"Canonical," "native," "forced," and "metric" are used only with their explicit
+operational content: *forced* = "stationary with no coarse-graining/measure choice
+inserted"; *canonical metric* = the HS form on the C₃-commutant. The load-bearing
+inputs are all explicit and verified in the runner: (i) `Q(r)=1/3+(2/3)r` with HS
+norms 3 and 6; (ii) HS-orthogonality and equal norm² = 3 of `{I,C,C²}`; (iii) the
+two-parameter Ad-invariant PD cone and its `α=3β` free curve; (iv) RP-positivity of
+e^{−tH} on the whole real (a,b) plane. No chirality, no Γ_χ, no anticommutation
+property is consumed **as a premise of the negative result** — the chiral sector
+enters only in N6/the Framing correction as the *positive* converter that fixes
+`r=1/2`, never as a hidden wall against it.
+
+### N4 — Residual matching
+
+The residual this note attacks must be the *same* residual carried by the cited
+witnesses; non-matching witnesses are not load-bearing.
+
+| cited witness | residual it carries | residual here | match? |
+|---|---|---|---|
+| `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` (retained_bounded) | r=1/2 is a stationary point of the **2-sector** entropy whose coarse-graining is the unforced det_C/det_R choice. | The **same** "stationary-but-not-forced" residual, extended from one functional to the full native operator-spectral family + the canonical HS metric. | yes |
+| `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` (retained_no_go) | Nothing native forces β=0 in the Ad-invariant PD cone. | The energy-functional restatement: any functional landing at r=1/2 has implicitly set β=0 (runner 4). | yes |
+| `flavor_block_count_native_via_jcs_note_2026-05-30` (retained_bounded) | Block-count is *available* (via J_cs), explicitly **not forced**. | The block-fold grouping that lands at r=1/2 is exactly this *available-not-forced* choice. | yes |
+| `koide_anticommuting_operator_derivation_theorem` (retained) | Chiral mass (anticommutes with Γ_χ) ⟹ r=1/2 ⟹ Q=2/3. | **Complementary positive converter**, not a residual of the negative metric claim; it supplies the sector label this note declines to derive metrically. | no (positive, cited as the converter) |
+| `flavor_einselection_2sector_modulo_kreality_2026-06-02` (retained_bounded) | The genuine Born/tracial flow goes to **r=1**; r=1/2 needs the 2-sector partition as separate input. | Corroborates the r=1 endpoint of the tracial/Born route in N1. | yes |
+
+### N5 — Rhetoric audit
+
+This is the load-bearing scoping per the **Framing correction**. Phrases in §§1–5 such
+as "**not forced by any native variational principle**," "the gap," and "the missing
+ingredient" are scoped to mean **exactly one thing**:
+
+> `r=1/2` is **not a metric outcome — it is a chirality (sector) outcome.**
+
+They are **NOT** evidence against `Q=2/3`, and **NOT** a no-go on the charged-lepton
+Koide relation. `Q=1` and `Q=2/3` **coexist** on `Q=1/3+(2/3)r`: the canonical metric
+correctly lands on the **non-chiral Q=1 complement** (`r=1`), which is the *expected*
+and *useful* finding — it tells us the selector of the charged-lepton value lives in
+the **chirality source** (the retained anticommuting-operator theorem), not in
+metric/measure optimization. Any reading of this note as "the framework's metrics
+disfavor / argue against Q=2/3" is a misread: the metric was never the right
+instrument for a sector label, and its landing at `r=1` is a *consistency check on the
+complement sector*, not a verdict on the chiral sector. Words like "obstruction" and
+"wall" are scoped to the **β=0 grouping choice** (a measure-selection gap), never to
+the existence or value of the chiral operator class.
+
+### N6 — Partial-closure path scan
+
+Genuinely open, non-axiom partial-closure paths that could convert "available β=0
+grouping" into a *forced* `r=1/2` — none is called a new axiom, and the two genuine
+imports are flagged:
+
+- **(native, unobstructed):** the **native C₃-equivariant matter β-function** — does
+  its RG fixed-point structure in `r` have an attractor at exactly `1/2`? Untested;
+  requires the bridge-gap action. No import if built from A1+A2+retained. This is the
+  one route that could supply β=0 *from dynamics* rather than from a grouping posit.
+- **(positive converter, already retained):** the chirality source —
+  `koide_anticommuting_operator_derivation_theorem` already converts "chiral mass
+  ⟹ r=1/2 ⟹ Q=2/3." This is the path by which `r=1/2` IS fixed; the present note does
+  not derive the *chirality* itself, which is the shared open import with the
+  generation-identification gate.
+- **IMPORT FLAG — user approval required:** binding `r`'s physical evolution to a
+  specific arrow/flow (thermalizing vs sharpening) is a posit, not derived from
+  baseline. Positing the flow IS the import.
+- **IMPORT FLAG — user approval required:** declaring the coherent-state / Bargmann
+  (J_cs block-count) reading to be *the* mass-generation measure is a measure posit;
+  `flavor_block_count_native_via_jcs` establishes it is *available*, not forced.
+
+### N7 — Steelman
+
+The strongest objection to the scoped claim: *"r=1/2 is the unique maximum of the
+2-sector power entropy `S₂` (`S₂(1/2)=log2`) and the unique minimum of the sector
+imbalance — that is a clean, native-looking extremization, so r=1/2 **is** forced by a
+variational principle."* This steelman is correct that `r=1/2` is a *bona-fide
+stationary point* of those functionals — and the note concedes exactly that (§2c,
+§4). It does **not** break the scoped claim, because `S₂` and the imbalance are
+functionals of the **2-sector power fractions** `p_singlet=1/(1+2r)`,
+`p_doublet=2r/(1+2r)`, which exist only after one **folds** the two complex-conjugate
+modes `{C,C²}` into a single real doublet channel. That fold is the β=0 / det_C / K₀-real
+grouping — precisely the unforced choice of N2. The **per-DOF** (3-mode) version of the
+same entropy peaks at `r=1`, not `r=1/2` (the prior retained note's own caveat). So the
+steelman relocates the question from "is r=1/2 stationary?" (yes) to "is the 2-sector
+grouping forced?" (no) — which is the actual scoped claim, left intact. The steelman
+does, however, correctly block any *over*-broad reading that "r=1/2 is not a natural /
+distinguished value at all": it manifestly is the equipartition point of the 2-channel
+HS energy — a real *structural* characterization, just not a *choice-free forcing*.
+
+### N8 — Cross-cycle echo
+
+Prior negative-claim overclaims in this repo and this lane failed in two recurring
+ways, both explicitly avoided here:
+
+1. **Testing one functional and declaring the lane closed.** The companion dynamical
+   notes (`..._RECORDS_FLOW_SEPARATRIX`, `..._STABLE_UNDER_THERMALIZING_ARROW`, both
+   audited_conditional) each rode a *single* flow to a conclusion; the einselection
+   correction (`flavor_einselection_2sector_modulo_kreality`, retained_bounded) showed
+   the genuine Born/tracial flow instead goes to `r=1`. This note avoids that echo by
+   sweeping the **whole** native operator-spectral family (N1) plus the canonical HS
+   metric, and by leaving the C₃-equivariant β-function route explicitly **open** (N6),
+   not closed.
+2. **Drifting a "not forced" result into "evidence against."** The standing campaign
+   memory records a self-corrected OVERREACH where "framework predicts Q=1" was wrongly
+   asserted over the coexisting Q=2/3 sector. This gate hard-codes the correction in N5:
+   "not forced by a variational principle" is scoped to "**not a metric outcome — it is
+   a chirality outcome**," and the canonical metric's landing at `r=1` is read as a
+   **consistency check on the non-chiral complement**, never as a verdict against the
+   chiral Q=2/3 sector. The two operator classes coexist; this note adjudicates only the
+   metric/variational instrument, which was never the selector of the chiral value.
+
+---
+
 ## Provenance (verified 2026-06-02)
 
 - Q(r)=1/3+(2/3)r, HS-energy characterization, all functional argext locations, the canonical-metric/isotropy

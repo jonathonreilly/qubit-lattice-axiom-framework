@@ -164,19 +164,44 @@ cross-checks the cheapest new support (V8d):
 Fraction joint_cumulant_frac = sympy joint_cumulant = 1/198359290368.
 ```
 
-The cube-part closed form is itself cross-validated against the direct cumulant
-engine at `d_5..d_8` (four orders) plus the direct order-9 cube-shape
-`(1,1,1,1,3,3)` check above. The optimized `Fraction` engine reproducing the
-sympy `d_5, d_6` (V4b) and `d_7` exactly is unchanged.
+The cube-part closed form is cross-validated against the cited exact `d_5..d_8` at
+zero free parameters in **bounded subcheck (1)** of the default run; the direct
+first-principles cumulant re-derivation of `d_7`, `d_8` (and the direct order-9
+cube-shape `(1,1,1,1,3,3)` cross-check) are the slow paths, gated behind the `deep`
+flag, where they assert equality with the cited values.
 
-The review-loop run reproduced the runner's `maxorder=9` path:
+### Reviewer reproduction (bounded primary vs deep)
+
+The **default run is a bounded ~2-3 min verifier** with progress flushed
+line-by-line and a running `PASS/FAIL` printed after each of four subchecks
+(previously the order-9 path was a ~15-20 min monolith that emitted no incremental
+output, which is why the review pass could not reproduce it):
 
 ```text
-d_5 = 1/472392
-d_6 = 7/5668704
-d_7 = 5/17006112
-d_8 = 5/272097792
-d_9 = -2035/264479053824
+python3 scripts/frontier_beta6_d9_coefficient_2026_06_04.py          # bounded, ~2-3 min
+  (1) cube closed-form algebra + d_5..d_8 regression  (closed form == cited d_5..d_8, 0 free params)
+  (2) radius-2 / radius-3 distinct-support count = 60  (+ independent GF(3) cube-combo enumeration)
+  (3) one exact two-engine new-support cumulant        (sympy == Fraction, ~30 s)
+  (4) final d_9 assembly = -2035/264479053824
+=> SCORECARD: PASS=.. FAIL=0
+```
+
+The cited exact `d_5..d_8` are anchored by subcheck (1); the slow first-principles
+re-derivation that originally dominated the runtime is available under `deep`:
+
+```text
+python3 scripts/frontier_beta6_d9_coefficient_2026_06_04.py deep     # full first-principles, ~15-20 min
+  + direct Fraction re-derivation of d_7, d_8 (asserted == cited exact)
+  + sympy two-engine d_6 confirmation + order-8 link-tensor sweep + full-sympy 9-plaquette shape
+  + direct order-9 cube-shape octahedral-invariance cross-check ((4,4)-link 10-plaquette, ~4 min)
+```
+
+A cached transcript of the bounded run is committed under `logs/runner-cache/`. The
+exact coefficients reproduced are:
+
+```text
+d_5 = 1/472392        d_6 = 7/5668704       d_7 = 5/17006112
+d_8 = 5/272097792     d_9 = -2035/264479053824
 ```
 
 ## Resummation Re-test (the scientific payoff)

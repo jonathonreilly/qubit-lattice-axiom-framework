@@ -7617,14 +7617,6 @@
       "to": "neutrino_majorana_residual_sharing_split_theorem_note"
     },
     {
-      "from": "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
-      "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
-      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
-    },
-    {
       "from": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
       "to": "observable_principle_from_axiom_note"
     },
@@ -52291,12 +52283,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "1c7f05698b12050e05a6b4703ae5c0d2d0f90e10282bef4f1d11a7579ecf9ec0",
+      "note_hash": "2a2667ab5e4d9309bfd1b1b1d63e1cda1a923bcc2672fd820fa09a9c429f4fa4",
       "path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py",
       "title": "DM Neutrino Bosonic Normalization \u2014 Observable-Principle Bridge Narrow Theorem"
@@ -91110,6 +91099,7 @@
     "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
     "dm_lepton_synthesis_note_2026-04-19",
+    "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
     "dm_neutrino_cascade_geometry_note_2026-04-14",
     "dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17",
     "dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17",
@@ -91816,10 +91806,10 @@
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10446,
+    "edge_count": 10444,
     "leaf_count": 899,
     "node_count": 2766,
-    "root_count": 940,
+    "root_count": 941,
     "runners_with_path": 2351
   }
 }

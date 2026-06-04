@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py
-runner_sha256: dc4aea296e3309149e37d455d54994c68a4586dff8ab509eb20482c78ecbb87d
+runner_sha256: 2b24e96fca5107b7661d1601820e8314d54524eca28d862560e062c58689d127
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -18,7 +18,7 @@ Part 0: canonical (γ_5, Γ_1) representation on C^16
 ----------------------------------------------------------------------------------------
   [PASS (A)] G0 is Hermitian (G0 = G0^†)
   [PASS (A)] G1 is Hermitian
-  [PASS (A)] G1 is real symmetric, hence in the X1 real-symmetric source class
+  [PASS (A)] G1 is real symmetric (finite Hermitian-completion diagnostic)
   [PASS (A)] G1^2 = I_{16} (Hermitian involution)
   [PASS (A)] γ_5 Hermitian
   [PASS (A)] γ_5^2 = I_{16}
@@ -31,18 +31,18 @@ Part 0: canonical (γ_5, Γ_1) representation on C^16
   [PASS (A)] Tr P_R = 8
 
 ----------------------------------------------------------------------------------------
-Part 1: bridge definition Y = P_R Γ_1 P_L and identities (X3.N), (X3.H)
+Part 1: bridge definition Y = P_R Γ_1 P_L and identities (F.N), (F.H)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (X3.N) Y^2 = 0 on C^16
-  [PASS (A)] Y is not Hermitian, so the runner does not treat Y as an X1 source direction
-  [PASS (A)] (X3.H) Y + Y^† = Γ_1 on C^16
+  [PASS (A)] (F.N) Y^2 = 0 on C^16
+  [PASS (A)] Y is not Hermitian, so the runner treats it only as finite bridge data
+  [PASS (A)] (F.H) Y + Y^† = Γ_1 on C^16
   [PASS (A)] i(Y - Y^†) is Hermitian (pseudoscalar companion)
 
 ----------------------------------------------------------------------------------------
-Part 2: trace ratios (X3.T1), (X3.T2)
+Part 2: trace ratios (F.T1), (F.T2)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (X3.T1) Tr(Γ_1^† Γ_1) = 16  (Tr(Γ_1^† Γ_1) = 16)
-  [PASS (A)] (X3.T2) Tr(Y^† Y) = 8  (Tr(Y^† Y) = 8)
+  [PASS (A)] (F.T1) Tr(Γ_1^† Γ_1) = 16  (Tr(Γ_1^† Γ_1) = 16)
+  [PASS (A)] (F.T2) Tr(Y^† Y) = 8  (Tr(Y^† Y) = 8)
   [PASS (A)] Step 6: Y^† Y = P_L (chiral-projector identity)
 
 ----------------------------------------------------------------------------------------
@@ -55,21 +55,21 @@ Part 3: determinant identities (DZ), (DG) symbolic in (m, j)
   [PASS (A)] Γ_1 has eigenvalue -1 with multiplicity 8
 
 ----------------------------------------------------------------------------------------
-Part 4: (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals
+Part 4: scalar-baseline diagnostic for Γ_1 at exact rationals
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at (m, j) = (1, 1/10)  (W=log(9227446944279201/10000000000000000), target=log(9227446944279201/10000000000000000))
-  [PASS (A)] (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at (m, j) = (1, 1/4)  (W=log(2562890625/4294967296), target=log(2562890625/4294967296))
-  [PASS (A)] (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at (m, j) = (1, 1/3)  (W=log(16777216/43046721), target=log(16777216/43046721))
-  [PASS (A)] (WZ) W[j Y] = 0 at (m, j) = (1, 1/10)  (W[jY] = 0)
-  [PASS (A)] (WZ) W[j Y] = 0 at (m, j) = (1, 1/4)  (W[jY] = 0)
-  [PASS (A)] (WZ) W[j Y] = 0 at (m, j) = (1, 1/3)  (W[jY] = 0)
+  [PASS (A)] (WG) scalar-baseline W_scalar[j Γ_1] = 8 log|1 - j^2/m^2| at (m, j) = (1, 1/10)  (W=log(9227446944279201/10000000000000000), target=log(9227446944279201/10000000000000000))
+  [PASS (A)] (WG) scalar-baseline W_scalar[j Γ_1] = 8 log|1 - j^2/m^2| at (m, j) = (1, 1/4)  (W=log(2562890625/4294967296), target=log(2562890625/4294967296))
+  [PASS (A)] (WG) scalar-baseline W_scalar[j Γ_1] = 8 log|1 - j^2/m^2| at (m, j) = (1, 1/3)  (W=log(16777216/43046721), target=log(16777216/43046721))
+  [PASS (A)] (WZ) W_scalar[j Y] = 0 at (m, j) = (1, 1/10)  (W_scalar[jY] = 0)
+  [PASS (A)] (WZ) W_scalar[j Y] = 0 at (m, j) = (1, 1/4)  (W_scalar[jY] = 0)
+  [PASS (A)] (WZ) W_scalar[j Y] = 0 at (m, j) = (1, 1/3)  (W_scalar[jY] = 0)
 
 ----------------------------------------------------------------------------------------
 Part 5: (R) bridge ratio = 1/sqrt(2); (R1) active-space ratio = 1
 ----------------------------------------------------------------------------------------
   [PASS (A)] (R) sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2)  (ratio = sqrt(2)/2)
   [PASS (A)] (R1) active-space ratio Tr Y^† Y / Tr P_L = 1 (comparator)  (active = 1)
-  [PASS (A)] (R1) active-space ratio is comparator-only; Y is outside the X1 source-domain use  (W[jY] is nilpotent diagnostic; Γ_1 is the real-symmetric source direction)
+  [PASS (A)] (R1) active-space ratio is comparator-only; Y is outside the Hermitian-completion denominator  (W_scalar[jY] is scalar-baseline nilpotent diagnostic; Γ_1 is the Hermitian completion)
 
 ----------------------------------------------------------------------------------------
 Part 6: (R2) pseudoscalar companion algebra and orthogonality
@@ -79,40 +79,40 @@ Part 6: (R2) pseudoscalar companion algebra and orthogonality
   [PASS (A)] (R2.c) Tr((i(Y - Y^†))^† · i(Y - Y^†)) = 16 (same magnitude as Γ_1)  (Tr(pseudo^† pseudo) = 16)
 
 ----------------------------------------------------------------------------------------
-Part 7: counterfactual — non-anticommuting Γ̃_1 breaks (X3.H)
+Part 7: counterfactual — non-anticommuting Γ̃_1 breaks (F.H)
 ----------------------------------------------------------------------------------------
   [PASS (A)] (cf.a) Γ̃_1 = γ_5 commutes with γ_5 instead of anticommuting
   [PASS (A)] (cf.b) Y_tilde = P_R γ_5 P_L = 0 (chiral projector orthogonality)
-  [PASS (A)] (cf.c) (Y_tilde + Y_tilde^†) ≠ γ_5: (X3.H) breaks without anticommutation  (confirms {γ_5, Γ_1} = 0 is load-bearing for the bridge identity)
+  [PASS (A)] (cf.c) (Y_tilde + Y_tilde^†) ≠ γ_5: (F.H) breaks without anticommutation  (confirms {γ_5, Γ_1} = 0 is load-bearing for the bridge identity)
   [PASS (A)] (cf.d) Γ̃_1 = I_{16} (commutes with γ_5) ⇒ Y_tilde = 0
 
 ----------------------------------------------------------------------------------------
-Part 8: cross-check — source-derivative diagnostics on Γ_1 and Y
+Part 8: cross-check — scalar-baseline derivative diagnostics on Γ_1 and Y
 ----------------------------------------------------------------------------------------
-  [PASS (A)] ∂_j W[j Γ_1] at (m, j) = (1, 0) = 0 (parity)  (∂_j W = 0)
-  [PASS (A)] ∂²_j W[j Γ_1] at (m, j) = (1, 0) = -16 (curvature consistent with (DG))  (∂²_j W = -16)
-  [PASS (A)] ∂²_j W[j Y] at j = 0 = 0 (nilpotent diagnostic; not an X1 source-domain claim)  (follows from W[jY] ≡ 0 identically in j)
+  [PASS (A)] ∂_j W_scalar[j Γ_1] at (m, j) = (1, 0) = 0 (parity diagnostic)  (∂_j W = 0)
+  [PASS (A)] ∂²_j W_scalar[j Γ_1] at (m, j) = (1, 0) = -16 (scalar diagnostic)  (∂²_j W = -16)
+  [PASS (A)] ∂²_j W_scalar[j Y] at j = 0 = 0 (nilpotent scalar diagnostic)  (follows from W_scalar[jY] ≡ 0 identically in j)
 
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision on the canonical C^16 representation:
-    (X3.N) Y^2 = 0 (chiral nilpotency)
-    (X3.H) Y + Y^† = Γ_1 (Hermitian completion via anticommutation)
-    (X3.T1) Tr(Γ_1^† Γ_1) = 16
-    (X3.T2) Tr(Y^† Y) = 8 (= Tr P_L)
+    (F.N) Y^2 = 0 (chiral nilpotency)
+    (F.H) Y + Y^† = Γ_1 (Hermitian completion via anticommutation)
+    (F.T1) Tr(Γ_1^† Γ_1) = 16
+    (F.T2) Tr(Y^† Y) = 8 (= Tr P_L)
     (DZ) det(m I + j Y) = m^{16} identically in j (Y nilpotent)
     (DG) det(m I + j Γ_1) = (m^2 - j^2)^8 (Hermitian involution)
-    (WG) W[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals
-    (WZ) W[j Y] = 0 at exact rationals
+    (WG) scalar-baseline W_scalar[j Γ_1] = 8 log|1 - j^2/m^2| at exact rationals
+    (WZ) W_scalar[j Y] = 0 at exact rationals
     (R)  sqrt(Tr Y^† Y / Tr Γ_1^† Γ_1) = 1/sqrt(2)
     (R1) active-space comparator = 1 is comparator-only;
-         Γ_1, not Y or P_L, is the real-symmetric source direction
+         Γ_1, not Y or P_L, is the Hermitian-completion denominator
     (R2) pseudoscalar companion is Hermitian and trace-orthogonal;
          trace-orthogonal to Γ_1 and same magnitude
     Counterfactual: candidate Γ̃_1 commuting with γ_5 forces Y_tilde = 0
-                     and (X3.H) breaks — anticommutation is load-bearing
-    Source diagnostics: ∂²_j W[j Γ_1]|_0 = -16, ∂²_j W[j Y]|_0 = 0
+                     and (F.H) breaks — anticommutation is load-bearing
+    Scalar diagnostics: ∂²_j W_scalar[j Γ_1]|_0 = -16, ∂²_j W_scalar[j Y]|_0 = 0
 
 ========================================================================================
 TOTAL: PASS=44, FAIL=0

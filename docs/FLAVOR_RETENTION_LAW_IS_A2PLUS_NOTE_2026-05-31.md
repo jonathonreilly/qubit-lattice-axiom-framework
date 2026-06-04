@@ -1,73 +1,53 @@
-# Flavor — Q=2/3 closes modulo ONE named half-axiom (source-locality), which is Axiom 2-plus, not A2
+# Flavor Retention Law: Conditional Algebra Scope Repair
 
-> **⚠️ PACKAGING / SUPERSESSION (2026-06-02):** The single-input framing here (source-locality Axiom 2-plus half-axiom) is ONE equivalent presentation of the gate; the consolidated Tier-A admission is AC_φλ (K-reality + det_C), of which source-locality is an equivalent face. Current consolidated status: `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02`.
+> **Packaging / supersession note:** The earlier single-input framing around source-locality remains a
+> possible face of later charged-lepton chain-of-custody work. This repaired packet does not use that
+> broader surface as load-bearing authority.
 
 **Date:** 2026-05-31
+**Scope repair date:** 2026-06-04
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded result — the charged-lepton value is a conditional positive, conditioned on a precisely-named source-locality half-axiom; decisive A2-vs-Axiom 2-plus determination.
+**Actual current surface status:** bounded-support
 **Runner:** `scripts/flavor_retention_law_is_A2plus_2026_05_31.py` (SCORECARD PASS=4).
-**Source:** 6-agent build `wf_fa0f5e5f` (A2-entailment / locality-closure audit / projected-domain physicality / adversary → adjudication), cross-checked against PR #2442 and `koide_q_onsite_source_domain_no_go_synthesis` (retained_no_go).
+**Audit repair target:** remove the hard-coded R1 assertion and keep only the executable conditional
+algebra around onsite source-locality, projected-domain readout, and circulant descent.
 
-## Question
-Does A2 (locality) *force* the physical charged-lepton mass source to be the **onsite local scalar
-algebra** (which C₃-invariance forces scalar → `z=0` → **Q=2/3**), making the projected/commutant `−2/9`
-(Q=1) an unphysical off-site shadow? I.e. is the source-domain *retention law* = A2, or Axiom 2-plus?
+## Narrow Claim
 
-## Verdict — Axiom 2-plus (all four routes agree)
-**A2 does not entail the retention law; it is only consistent with it.**
-- **A2 is structure-locality only.** Verbatim (`MINIMAL_AXIOMS_2026-05-20`): "*the lattice sites form the
-  cubic lattice Z³ … with its standard cubic adjacency/translation structure.*" That fixes which sites
-  exist and which are adjacent — nothing about which sources/observables exist. The axiom doc explicitly
-  routes dynamics, instruments, measurement and **all observable-locality out of axiom content** into named
-  derivation lanes.
-- **The retention law is source/observable-locality** — the claim that physical mass-source data lives in
-  the onsite diagonal function algebra `D={diag(a,b,c)}` (domain 1), not the projected C₃-commutant
-  `span{I,Z}` (domain 2). Knowing the lattice geometry does **not** entail that mass-source data is diagonal
-  in the site basis. The two are logically independent. → **Axiom 2-plus.**
+This packet proves only the following finite algebra:
 
-## Verified numerics
-- C₃-invariance forces the onsite scalar source `J_site = s·I` (1-dim) → `z=0` → **Q=2/3**; `Q(z)=2/(3(1+z))`
-  gives `Q(0)=2/3`, `Q(−1/3)=1` exactly.
-- `Z = 2P₊−I` (diag `−1/3`, `Z²=I`); `S_Q1 = I−Z/3` has diagonal `10/9`, **off-diagonal `−2/9 = −2/d²` at d=3**.
-- Onsite descent (`E_loc`, diagonal compression) annihilates the `z` coordinate → `z=0`; the projected domain
-  admits `z=−1/3` → **Q=1**.
+1. In the onsite diagonal algebra `D=diag(a,b,c)`, imposing `C3` invariance forces `a=b=c`, so the
+   onsite invariant source is scalar.
+2. For the supplied formula `Q(z)=2/(3(1+z))`, the onsite scalar value gives `Q(0)=2/3`, while the
+   projected-domain value `z=-1/3` gives `Q=1`.
+3. With `Z=2P_+-I`, the runner verifies `Z^2=I` and `S_Q1=I-Z/3` has diagonal `10/9` and off-diagonal
+   `-2/9` at `d=3`.
+4. The intersection of the onsite diagonal algebra with the circulant algebra is only `span{I}`.
+   Therefore the sample circulant generation operator `H=I+bC+bC^T` has nonzero off-diagonal mass
+   splitting that diagonal compression removes.
 
-## The sharpening — it is NOT a neutral tie
-The framework's *actual* generation operator is the **circulant** `H = aI + bC + b̄C²`, whose mass splitting
-lives **entirely in the off-diagonal `b`** — i.e. in domain (2), the C₃-commutant. And `D(onsite) ∩
-circulant = span{I}` (scalars only). So **the physical operator demonstrably lives in domain (2)**, and the
-onsite descent that gives Q=2/3 **discards exactly the off-diagonal `b` that *is* the mass mechanism.** The
-missing half-axiom would have to *override where the mechanism's own operator resides* — so it is not a
-free tie-breaker; Q=1 (domain-2) is at least as physically motivated by the operator's structure.
+These checks support a conditional statement: if an additional physical source-locality/readout premise
+selects onsite diagonal sources, then the displayed onsite algebra yields the `Q=2/3` value. The packet
+also verifies that this premise is substantive because the sample circulant mass mechanism lives in
+off-diagonal data erased by onsite descent.
 
-## Honest, not circular
-The onsite descent is a **postulated readout**, honestly conditioned — the canonical-descent theorem itself
-states it "does not prove that physical law … remains open." The only bridge from structure-locality to
-source-locality (the V8 locality-closure theorem, unaudited) load-bears verbatim on
-`PHYSICAL_LATTICE_NECESSITY §9`, which was **narrowed out** of the load-bearing surface (2026-05-02) and is
-conditional on two non-retained siblings (`single_axiom_hilbert` = audited_renaming, `single_axiom_information`
-= meta). So source-locality has **no retained authority** on main.
+## Out Of Scope
 
-## Bottom line (charged-lepton value, honest standing)
-**Q=2/3 is a conditional positive: derived modulo exactly one named Axiom 2-plus half-axiom —**
-> *"physical charged-lepton mass sources are onsite-local (live in the onsite diagonal algebra), not the
-> projected C₃-commutant."*
+The following earlier conclusions are not asserted by this narrowed note:
 
-This half-axiom is **natural** (it is observable/source-locality, a standard physical principle) but is
-**(i) not A2** (which is structure-locality only), **(ii) currently unsupplied** (no retained bridge), and
-**(iii) in tension** with the off-diagonal circulant mass mechanism it would discard. It does **not** prove
-too much: quarks have their own retained source-domain no-gos, so the onsite law giving leptons Q=2/3 while
-quarks deviate is consistent.
+- A2 alone entails the source-domain retention law.
+- The source-domain retention law is accepted as a framework rule.
+- Charged-lepton `Q=2/3` has an actual effective status from this packet.
+- Axiom 2-plus has been upgraded to A2.
+- `single_axiom_hilbert`, `single_axiom_information`, or substrate-necessity bridges close the missing
+  source-locality theorem here.
 
-## Next path (live, not closed)
-Upgrade Axiom 2-plus → A2 by **deriving source-locality as a genuine framework baseline consequence** — i.e. retaining a
-substrate-necessity bridge (`single_axiom_hilbert` / `single_axiom_information` to retained-grade), which is
-the only route that would make "physical sources are onsite-local" a theorem rather than a postulate. The
-separate `δ = η_APS` `2/9`-phase identification (`lepton_brannen_bae_delta_two_ninths_open_gate`) remains its
-own open gate and must not be conflated with this readout-domain question.
+The auditor specifically found that the chain from A2 to source-locality was not derived and that the
+old runner's R1 pass was hard-coded. This branch removes that pass instead of trying to disguise the
+missing bridge.
 
-## Stale-citation flags
-- `koide_q_onsite_source_domain_no_go_synthesis` = retained_no_go (states "retention law is still missing");
-  `koide_q_op_locality_source_domain_closure` + `koide_q_source_domain_canonical_descent` = unaudited;
-  `single_axiom_hilbert` = audited_renaming, `single_axiom_information` = meta; `physical_lattice_necessity` =
-  retained_no_go only for the (β,u₀) rigidity, NOT §9 substrate-locality.
+## Audit Relevance
+
+The repaired source is reauditable as finite conditional algebra, not as a clean A2-to-source-locality
+derivation. It does not retag the audit ledger, does not propose an effective status change, and does
+not add a new axiom.

@@ -230,7 +230,8 @@ def wilson_u1_transfer_kernel(K_pts, beta):
     """Wilson temporal-gauge transfer between two slice link-configs on U(1):
        K(a,b) = exp( -beta (1 - cos(a-b)) ), the Boltzmann weight of the
        temporal-spatial plaquette P = U'(U)^dag in temporal gauge (U_0=1).
-       Positive-definite (Bochner: Fourier coeffs are I_n(beta)>0)."""
+       Positive-definite (Bochner: Fourier coeffs are
+       exp(-beta) I_n(beta)>0; the positive constant may be suppressed)."""
     th = np.array([2.0 * math.pi * k / K_pts for k in range(K_pts)])
     Kk = np.zeros((K_pts, K_pts))
     for i in range(K_pts):

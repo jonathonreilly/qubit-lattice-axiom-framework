@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py
-runner_sha256: 4226950083aa83a2b5dc569a8f017fdf79e7d1d7a4bd30132d72643e4816ba65
+runner_sha256: 35e97b1e015bae056630e92d6cbedfa0052661f3c3c9f720c04e66bd4033d600
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 14.38
+elapsed_sec: 11.19
 status: ok
 ----- stdout -----
 ==================================================================================
@@ -37,8 +37,8 @@ ROUTE T [U(1)]: COMBINED TRANSFER-MATRIX GRAM on H_gauge (x) H_ferm
   H dim=40  gauge transfer min eig=2.660e-02  (PSD bosonic)
   per-config fermion: max|Im decay|=2.16e-16, min decay=1.5472e-01
   combined T_full min eig=+1.033e-03  operator-Schmidt rank=3 (>1 => ENTANGLED: True)
-  observables=24 (genuinely mixed=15)  ||G-G^dag||=7.60e-17
-  MIXED Gram min eig=-6.569457e-17  max eig=3.0851e+00
+  observables=24 (genuinely mixed=15)  ||G-G^dag||=1.26e-16
+  MIXED Gram min eig=-5.330216e-17  max eig=3.0851e+00
   -> Route T [U(1)] PSD: PASS
 
 ----------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ ROUTE T [SU(3)]: COMBINED TRANSFER-MATRIX GRAM on H_gauge (x) H_ferm
   per-config fermion: max|Im decay|=8.60e-16, min decay=1.4590e-01
   combined T_full min eig=+4.410e-05  operator-Schmidt rank=8 (ENTANGLED: True)
   observables=112 (genuinely mixed=81)  ||G-G^dag||=3.10e-17
-  MIXED Gram min eig=-2.206172e-16  max eig=1.1723e+00
+  MIXED Gram min eig=-2.739590e-16  max eig=1.1723e+00
   -> Route T [SU(3)] PSD: PASS
 
 ----------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ ROUTE C [SU(3)]: SAMPLED U-INTEGRATED COMBINED GRAM (real det>0 weight, Haar)
 ----------------------------------------------------------------------------------
   observables=112 (genuinely mixed=81)  configs=3000
   min det weight=2.6180e+00 (nonpos=0)  max|Im decay|=9.15e-16
-  ||G-G^dag||=1.84e-18  MIXED Gram min eig=-1.889166e-16
+  ||G-G^dag||=1.84e-18  MIXED Gram min eig=-2.738899e-16
   -> Route C [SU(3)] PSD: PASS
 
 ==================================================================================

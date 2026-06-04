@@ -1,61 +1,93 @@
-# Flavor — exhaustive enumeration of doublet rotations in the lattice: no new rotation, J_cs is FORCED (Schur), the free bit is now purely a measure choice
+# Flavor — finite doublet-rotation checks: `O_h/hw=1`, bit-flip boundary, and `J_cs` uniqueness
 
 **Date:** 2026-05-30
 **Claim type:** bounded_theorem
-**Claim boundary:** bounded completeness result (exhausts the symmetry classes, with cohomology backstop) + one upgrade (J_cs forced) + relocation of the open bit.
-**Runner:** `scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py` (SCORECARD PASS=4).
+**Claim boundary:** bounded finite-operator support only; this note does not prove a broad exhaustive classification of all projective, anti-unitary, coin, induced, or cohomological routes.
+**Runner:** `scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py` (SCORECARD PASS=5).
 **Source:** 7-agent build `wf_5fb30a2e` (enumerate 4 classes → completeness auditor + adversary → adjudication).
 
-## Question
-"Have we explored ALL the ways the generation doublet can rotate in the lattice — not just convention,
-but all ways?" Enumerated exhaustively: ordinary point group, full O_h, projective/magnetic-translation
-reps, algebra automorphisms, complex structures, anti-unitary/time-reversal, coin factor, induced reps.
+## 2026-06-04 audit-scope repair
 
-## Answer — yes at the symmetry/operator level (complete), and no new rotation
+The conditional audit identified a missing bridge for the broad phrase
+"exhaustive at the operator level". This repair takes the auditor's narrowing
+route. The load-bearing claim is now restricted to the finite checks performed
+by the runner:
+
+- finite signed-permutation / `O_h` action on the `hw=1` generation set;
+- elementary bit-flip non-preservation of `hw=1`;
+- central scalar `iI3` is distinct from the non-central `J_cs`;
+- exact `C3`-equivariant uniqueness of `J_cs` up to sign in the real circulant
+  packet.
+
+Not load-bearing here: `H^2(C3,U(1))=0`, Schur multiplier claims,
+anti-unitary/time-reversal collapse, coin-factor collapse, induced-representation
+collapse, or the downstream `det_C/det_R` readout values. Those may be useful
+context, but they require separate retained or in-packet proofs before they can
+support a broader classification.
+
+## Question
+"What finite operator checks on the `hw=1` generation doublet can be verified
+inside this packet without importing a broad classification theorem?"
+
+## Finite checked answer
 | class | doublet action | continuous? |
 |---|---|---|
-| point group S₃ on hw=1 | dihedral D₃: rotations {0,±120°} + 3 reflections | discrete |
-| full O_h (48) | hw=1 stabilizer = S₃ (same D₃); **0 of the 12 order-4 (90°) elements preserve hw=1** | discrete |
-| charge conjugation `(1,1,1)−v` | real Z₂ swap hw1↔hw2 (to the *separate* doublet) | discrete |
-| projective / magnetic translations | **vanish on the doublet** (a bit-flip leaves hw=1); qubit cocycle descends as the **central scalar `i·I₃`** (generation-blind), not `J_cs` | finite |
-| algebra automorphisms `Aut(ℝ[Z₃])` | `Gal(ℂ/ℝ)=Z₂` = conjugation = reflection; no continuous auto | discrete |
-| anti-unitary / coin / induced reps | all collapse onto the same D₃ | discrete |
+| finite signed-permutation / `O_h` action on `hw=1` | exactly six induced actions, i.e. the `S3/D3` action on the three `hw=1` vertices | discrete |
+| order-4 elements of `O_h` | `0` of `12` preserve `hw=1`; no finite 90-degree intra-doublet action appears in this packet | none |
+| elementary bit-flips | each one-bit flip sends an `hw=1` vertex to Hamming weight `0` or `2`, so this route gives no intra-doublet rotation | none |
+| central scalar `iI3` | commutes with the `C3` shift but is central and distinct from `J_cs` | finite/context |
+| `C3`-equivariant real circulant complex structures | exactly `+J_cs` and `-J_cs` satisfy `J*1=0` and `J^2=-P_doublet` | discrete sign |
 
-**Cohomology backstop:** `H²(C₃,U(1))=0` and the Schur multiplier `M(S₃)=0`, so every projective rep within
-a doublet linearizes — there is **no nontrivial-cocycle escape**, and H² is the only classifying degree.
-**The enumeration is complete at the operator level: no lattice symmetry rotates the doublet beyond discrete
-D₃ + a real charge-conjugation Z₂.** The most-touted unexplored class (projective/magnetic, the qubit's own
-Heisenberg structure) does **not** complexify the generation doublet — it descends as the generation-blind
-central `i·I₃`, provably distinct from the non-central `J_cs`.
+This is a bounded finite-operator result. It does not assert that every named
+operator class has been reduced to this list.
 
-## The genuine upgrade (Schur)
-The C₃ doublet is of **complex type** (eigenvalues `ω, ω²`), so by Schur its C₃-equivariant endomorphism
-algebra is canonically `ℂ`. Hence **`J_cs` EXISTS and is UNIQUE up to sign** (exactly two `J` with `J²=−I`,
-`[J,C]=0`: `J=±J_cs`). The doublet's complex structure is therefore a **FORCED native structure, not a
-posited object** — stronger than the prior "native but a choice" framing.
+## The finite `J_cs` uniqueness check
 
-## What stays open — and it is now purely a *measure* question
-Possessing the canonical `J_cs` is **not** the same as the fluctuation measure being its holomorphic
-(Kähler, `det_C`) measure:
-- **Existence:** discharged — `J_cs` forced.
-- **Orientation:** not fixed — the dihedral reflections swap `J_cs ↔ −J_cs`; no lattice symmetry orients it.
-- **Measure:** **open and free** — `det_C` (holomorphic w.r.t. `J_cs` → r=1/2 → Q=2/3) vs `det_R` (flat real
-  → r=1 → Q=1) is a measure choice, not forced by symmetry. The lattice realizes only the discrete
-  `{I,C,C²}` of `exp(θJ_cs)`, never the continuous `U(1)` (consistent with the retained `C³=I` obstruction).
+The runner solves the real circulant packet directly. Let
 
-So `r=1/2` is **neither derived nor forbidden** by the lattice symmetry structure. The free bit is now
-sharper than before:
-- **Old (closed):** "find a continuous `U(1)_b` lattice symmetry rotating the doublet" — forbidden by `C³=I`.
-- **New (open):** "find a measure/positivity/holomorphicity *principle* selecting the Kähler measure of the
-  now-forced `J_cs`." The import shrinks from "posit a complex structure **and** its use" to *only* "posit the
-  measure is holomorphic w.r.t. the unique native `J_cs`" — a single, sharply-characterized, natural primitive.
+```text
+X = aI + bC + cC^2
+P_doublet = I - (1/3)11^T.
+```
+
+Solving
+
+```text
+X*1 = 0
+X^2 = -P_doublet
+```
+
+gives exactly
+
+```text
+X = +/- (C - C^2)/sqrt(3) = +/- J_cs.
+```
+
+This proves uniqueness up to sign for the stated real `C3`-circulant packet. It
+does not prove orientation of the sign, selection of a holomorphic/Kahler
+measure, or any `Q` readout value.
+
+## What stays open
+
+The finite checks keep the measure question open:
+
+- the sign of `J_cs` is not oriented by the finite `S3/D3` action checked here;
+- this note does not derive a principle selecting a `J_cs`-holomorphic measure;
+- this note does not derive the `det_C` or `det_R` readout numbers from
+  definitions in the restricted packet.
+
+So the branch-local safe statement is narrower: within the finite packet,
+`J_cs` is the unique `C3`-equivariant real circulant complex structure up to
+sign, and the checked finite lattice actions do not supply an additional
+continuous doublet rotation.
 
 ## Next step (sharpens, not closes)
-Attack whether a **measure/positivity** argument (not a symmetry) selects the orientation+use of `J_cs` — e.g.
-whether reflection-positivity or a holomorphicity requirement on the path-integral measure forces `det_C`.
-Per repo policy, a measure-selection primitive is an import requiring user approval + independent audit, even
-though it is now the *unique* natural one. Cross-check against the `√m`-signed-vs-singular-value readout lever.
+Attack whether a **measure/positivity** argument (not this finite symmetry packet)
+selects the orientation and use of `J_cs`. Any measure-selection primitive remains
+an import unless separately derived and audited.
 
 ## Stale-citation flags
-- Confirms (from 4 fresh angles) the det_C-vs-det_R reading consolidated in this PR's `FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02` and the chain-of-custody capstone
-  derivation. Anchors: `koide_real_rep_block_count_permitted_not_forced` (unaudited), `koide_c3_generator_rephasing_obstruction` (retained, the `C³=I` symmetry obstruction).
+- This note is finite support context for `FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02`; it
+  does not close that consolidation row by itself.
+- Anchors: `koide_real_rep_block_count_permitted_not_forced` (unaudited context),
+  `koide_c3_generator_rephasing_obstruction` (retained, the `C3` symmetry obstruction).

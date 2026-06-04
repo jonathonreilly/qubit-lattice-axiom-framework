@@ -1,0 +1,18 @@
+loop_slug: flavor-doublet-rotation-scope-repair-20260604
+target_claim_id: flavor_doublet_rotation_exhaustive_note_2026-05-30
+branch: physics-loop/flavor-doublet-rotation-scope-repair-20260604
+status: ready_for_review
+actual_current_surface_status: bounded-support
+target_blocker: "missing_bridge_theorem: prove every named operator class reduces to D3+Z2, or narrow to computed finite checks"
+repair_summary: "narrowed to finite O_h/hw1, bit-flip, central iI3-vs-Jcs, and exact +/-Jcs uniqueness checks"
+files_touched:
+  - docs/FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md
+  - scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py
+  - logs/runner-cache/flavor_doublet_rotation_exhaustive_2026_05_30.txt
+  - .claude/science/physics-loops/flavor-doublet-rotation-scope-repair-20260604/
+checks:
+  runner: "PASS=5 FAIL=0"
+  py_compile: pass
+  diff_check: pass
+pr_status: pending
+next_exact_action: "commit, push, open PR"

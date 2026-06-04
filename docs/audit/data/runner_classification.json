@@ -14436,6 +14436,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_qubit_lattice_dim_closure.py"
     },
+    "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py"
+    },
     "koide_readout_channel_map_note_2026-05-31": {
       "assert_count": 0,
       "counts": {
@@ -30027,6 +30039,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py": {
@@ -62047,15 +62074,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 372,
+    "decoration_candidates": 373,
     "dominant_class_distribution": {
-      "A": 286,
+      "A": 287,
       "B": 307,
       "C": 861,
       "D": 323,
       "none": 465
     },
-    "runners_classified": 2242,
+    "runners_classified": 2243,
     "runners_with_C": 1120,
     "runners_with_D": 653
   }

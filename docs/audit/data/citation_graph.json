@@ -17597,6 +17597,22 @@
       "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
     },
     {
+      "from": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
+      "to": "koide_bae_30_probe_campaign_note_2026-05-09"
+    },
+    {
+      "from": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
+      "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+    },
+    {
       "from": "koide_scale_selector_reparameterization_theorem_note_2026-04-20",
       "to": "koide_selected_line_cyclic_response_bridge_note_2026-04-18"
     },
@@ -66062,6 +66078,23 @@
       "runner_path": "scripts/frontier_koide_qubit_lattice_dim_closure.py",
       "title": "Koide Qubit\u2013Lattice-Dimension Algebraic Closure"
     },
+    "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04": {
+      "claim_id": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "koide_bae_30_probe_campaign_note_2026-05-09",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "af1ec7a38b3e24ae6ea868bb07915f952945da9c14fc1d333bacbcb452b5d28c",
+      "path": "docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md",
+      "runner_path": "scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py",
+      "title": "Koide r=1/2 Is Not Fixed By C3/S3 Symmetry Enhancement (Dynamical Norm-Balance) Narrow No-Go"
+    },
     "koide_readout_channel_map_note_2026-05-31": {
       "claim_id": "koide_readout_channel_map_note_2026-05-31",
       "claim_type_author_hint": "bounded_theorem",
@@ -91685,7 +91718,7 @@
       "bounded_theorem": 823,
       "decoration": 1,
       "meta": 202,
-      "no_go": 94,
+      "no_go": 95,
       "none": 1404,
       "open_gate": 62,
       "positive_theorem": 176
@@ -91694,15 +91727,15 @@
       "bounded_theorem": 1224,
       "decoration": 1,
       "meta": 202,
-      "no_go": 197,
+      "no_go": 198,
       "none": 423,
       "open_gate": 137,
       "positive_theorem": 578
     },
-    "edge_count": 10433,
-    "leaf_count": 898,
-    "node_count": 2762,
+    "edge_count": 10437,
+    "leaf_count": 899,
+    "node_count": 2763,
     "root_count": 940,
-    "runners_with_path": 2347
+    "runners_with_path": 2348
   }
 }

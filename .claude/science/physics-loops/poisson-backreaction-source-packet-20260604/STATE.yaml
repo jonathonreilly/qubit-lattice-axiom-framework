@@ -1,0 +1,27 @@
+loop: poisson-backreaction-source-packet-20260604
+target_claim_id: poisson_backreaction_live_threshold_packet_note_2026-05-29
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+current_block: block01
+files_touched:
+  - docs/POISSON_BACKREACTION_LIVE_THRESHOLD_PACKET_NOTE_2026-05-29.md
+  - scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py
+  - logs/runner-cache/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.txt
+  - outputs/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.json
+verification:
+  - "python3 -m py_compile scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py"
+  - "python3 scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py --force --push-mode=none --allow-non-main --concurrency 1"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py,scripts/backreaction_poisson_live_threshold_check.py,scripts/backreaction_poisson.py --check-only --push-mode=none --allow-non-main --concurrency 1"
+result_summary:
+  manifest: "SUMMARY: POISSON BACKREACTION SOURCE PACKET PASS=27 FAIL=0"
+  cache_status: fresh
+next_exact_action: "Submit review PR; independent auditor decides whether source-packet completeness closes the conditional blocker."
+stop_condition: "Review PR opened."
+

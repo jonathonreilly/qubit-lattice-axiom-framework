@@ -4,6 +4,11 @@
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/backreaction_poisson_live_threshold_check.py`](../scripts/backreaction_poisson_live_threshold_check.py)
+**Cached runner output:** [`logs/runner-cache/backreaction_poisson_live_threshold_check.txt`](../logs/runner-cache/backreaction_poisson_live_threshold_check.txt)
+**Source packet verifier:** [`scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py`](../scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py)
+(SUMMARY: POISSON BACKREACTION SOURCE PACKET PASS=27 FAIL=0)
+**Source packet verifier cache:** [`logs/runner-cache/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.txt`](../logs/runner-cache/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.txt)
+**Source packet verifier JSON:** [`outputs/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.json`](../outputs/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.json)
 
 ## Purpose
 
@@ -17,6 +22,23 @@ and asserts only the finite facts it currently supports.
 
 No new axiom, observed target value, fitted selector, or external comparator
 is introduced.
+
+## 2026-06-04 Source Packet Exposure Repair
+
+The current audit blocker asks for the load-bearing helper source imported by
+the primary runner. The source packet is now explicit:
+
+- Restricted packet checker: [`scripts/backreaction_poisson_live_threshold_check.py`](../scripts/backreaction_poisson_live_threshold_check.py)
+- Restricted packet cache: [`logs/runner-cache/backreaction_poisson_live_threshold_check.txt`](../logs/runner-cache/backreaction_poisson_live_threshold_check.txt)
+- Poisson helper source: [`scripts/backreaction_poisson.py`](../scripts/backreaction_poisson.py)
+- Poisson helper cache: [`logs/runner-cache/backreaction_poisson.txt`](../logs/runner-cache/backreaction_poisson.txt)
+
+The source packet verifier above checks that every path is linked from this
+note, that the packet checker imports `scripts/backreaction_poisson.py`, that
+the load-bearing build, field, self-field, and propagation functions are
+present in the untruncated helper source, and that both caches are SHA-fresh.
+This does not set an audit verdict; it makes the bounded packet reauditable
+with the missing helper source exposed.
 
 ## Live Finite Result
 

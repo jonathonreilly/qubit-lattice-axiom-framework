@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py
+runner_sha256: f69318219638c86b5c09c3c9833adb7a93f643aabce1d36e2a539fb2759ea5bd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+POISSON BACKREACTION LIVE THRESHOLD: SOURCE PACKET MANIFEST
+========================================================================================
+[PASS] manifest_path_exists:packet_checker: scripts/backreaction_poisson_live_threshold_check.py
+[PASS] note_links_manifest_path:packet_checker: scripts/backreaction_poisson_live_threshold_check.py
+[PASS] manifest_path_exists:poisson_helper_source: scripts/backreaction_poisson.py
+[PASS] note_links_manifest_path:poisson_helper_source: scripts/backreaction_poisson.py
+[PASS] manifest_path_exists:packet_cache: logs/runner-cache/backreaction_poisson_live_threshold_check.txt
+[PASS] note_links_manifest_path:packet_cache: logs/runner-cache/backreaction_poisson_live_threshold_check.txt
+[PASS] manifest_path_exists:poisson_helper_cache: logs/runner-cache/backreaction_poisson.txt
+[PASS] note_links_manifest_path:poisson_helper_cache: logs/runner-cache/backreaction_poisson.txt
+[PASS] source_untruncated:packet_checker: scripts/backreaction_poisson_live_threshold_check.py has 4397 bytes
+[PASS] source_marker:packet_checker:from scripts import backreaction_poisson as bp: from scripts import backreaction_poisson as bp present
+[PASS] source_marker:packet_checker:def _run_grid: def _run_grid present
+[PASS] source_marker:packet_checker:G_GRID =: G_GRID = present
+[PASS] source_marker:packet_checker:ASSERTIONS:: ASSERTIONS: present
+[PASS] source_untruncated:poisson_helper_source: scripts/backreaction_poisson.py has 7378 bytes
+[PASS] source_marker:poisson_helper_source:def _build: def _build present
+[PASS] source_marker:poisson_helper_source:def _ext_field: def _ext_field present
+[PASS] source_marker:poisson_helper_source:def _self_field_from_amplitude: def _self_field_from_amplitude present
+[PASS] source_marker:poisson_helper_source:def _propagate: def _propagate present
+[PASS] source_marker:poisson_helper_source:EXT_STRENGTH = 0.004: EXT_STRENGTH = 0.004 present
+[PASS] cache_runner_matches:packet_cache: scripts/backreaction_poisson_live_threshold_check.py == scripts/backreaction_poisson_live_threshold_check.py
+[PASS] cache_sha_fresh:packet_cache: 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925 == 6d731702d81ef146464cbb31df8287d75134b801e1e61a8ed673c11d4c90c925
+[PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS
+[PASS] cache_runner_matches:poisson_helper_cache: scripts/backreaction_poisson.py == scripts/backreaction_poisson.py
+[PASS] cache_sha_fresh:poisson_helper_cache: 17244ab7bd6fd3a37f01f805f4f63eb772ace7a3013e3b750772b13a242beb16 == 17244ab7bd6fd3a37f01f805f4f63eb772ace7a3013e3b750772b13a242beb16
+[PASS] cache_exit_ok:poisson_helper_cache: exit_code=0 status=ok
+[PASS] cache_snippet_present:poisson_helper_cache: POISSON SELF-GRAVITY: |psi|^2 generates 1/r field
+========================================================================================
+SUMMARY: POISSON BACKREACTION SOURCE PACKET PASS=27 FAIL=0
+========================================================================================
+Output written: outputs/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.json
+
+----- stderr -----
+

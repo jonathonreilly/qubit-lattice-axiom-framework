@@ -215,6 +215,161 @@ row above and does not lean on any `unaudited` row.
 
 ---
 
+## No-go discipline gate (N1–N8)
+
+**Status:** PASS for the narrow scoped claim only. The negative core being
+gated is *not* "FAITH is false" and *not* "boost-action faithfulness can never
+be derived." It is the single scoped statement: **A1 alone does not force the
+reconstructed boost/mass operator to act faithfully on C^2** — because the
+scalar boost `S(eta) = exp(eta·c) I_2` is a legitimate (non-faithful) rep on the
+*same* qubit C^2, and the operator that excludes it (the relativistic spin-1/2
+kinetic kernel) is matter-attachment content, not A1. The positive companion —
+*state-space* FAITH (j=0 is 1-dim, excluded by dimension) — IS an A1-consequence
+and is NOT being negated here.
+
+### N1 — Alternative route enumeration
+
+Routes by which A1 (or A1 + native dynamics) might be claimed to *force*
+boost-action FAITH directly, each evaluated against the scoped claim.
+
+| route | what it would attempt | why it fails for this scoped claim | marker |
+|---|---|---|---|
+| Dimension-collapse transfer | Reuse the state-space argument ("qubit is 2-dim, j=0 is 1-dim") to also fix the *boost operator* on that C^2. | A category slip: dimension fixes which *module* matter lives in (the spinor), not which *operator* on that fixed C^2 plays the boost generator. Both `K = i sigma/2` and `K = c·I` act on the same 2-dim space (runner C.2). | ATTEMPTED |
+| Native-dynamics lever | Let `H = iD` single out `B_i` as "the" boost generator, forcing faithfulness. | `H = iD` is provably spin-blind: `[H ⊗ I_2, I ⊗ B_i] = 0` (runner C.1; `koide_onsite_weyl_boost_from_bivectors` §E, `audited_conditional`). The dynamical lever cannot select the boost operator. | ATTEMPTED |
+| Operator-frame triple as forced | Assert the boost *must* act via the same Pauli triple as the rotations `J = sigma/2`, whence scalar excluded (B). | (B) is real and forced *conditional on that antecedent*, but the antecedent "boost = operator-frame triple, not c·I" is exactly the open matter-attachment pin; it is not delivered by A1. | ATTEMPTED |
+| Bracket-closure squeeze | Use `[K,K] = -i eps J` so(3,1) closure to forbid `K = 0`. | Excludes only the *inert* `K = 0` and the *nonzero scalar* `c·I` once `J = sigma/2 != 0` (runner B.2–B.3) — but this is again conditional on `J` being the operator-frame triple, the same open antecedent, and it lives on `koide_faithfulness_rotation_scalar_excluded` (`retained_bounded`), not on A1. | ATTEMPTED |
+| Kinetic-kernel route | Use `m I − i sigma·p` (nonzero traceless part) to force the faithful intertwiner. | This genuinely forces faithfulness (runner C.3a–c) — but it is the **relativistic spin-1/2 kernel + Poincaré covariance of the reconstructed massive field**, i.e. matter-attachment (R) content carried by `koide_onsite_boost_reconstruction_..._2026-06-02`, NOT a consequence of "the site is a qubit." | ATTEMPTED |
+| Signature-import route | Have the (3,1) signature / `anomaly_forces_time` supply the boost rep faithfully. | `anomaly_forces_time` is **`unaudited`** (INVALID as load-bearing); not used. Signature fixes the algebra `cl3_to_cl31` enters, not the faithful-vs-scalar *action* on C^2. | NOT INVOKED |
+
+### N2 — Wall-independence audit
+
+The negative core collapses to **one** wall: *A1 fixes the qubit state space but
+underdetermines which operator on that fixed C^2 is the boost generator.* The
+apparently distinct routes in N1 (dimension-transfer, native dynamics, bracket
+closure, operator-frame triple) are not independent walls — each one, when
+pushed, reduces to the *same* missing antecedent "boost acts via the
+operator-frame Pauli triple rather than a scalar `c·I`." Crucially, the gate does
+*not* lean on any forcing-failure of (B) or the kernel route: (B) and the kernel
+route both genuinely *succeed* at excluding the scalar — the wall is solely that
+their **antecedent** (the matter-attachment identification) is not A1-derived.
+Granting that single antecedent collapses the wall; nothing else in the cluster
+needs to move.
+
+### N3 — Hidden-wall scan (explicit load-bearing inputs)
+
+The load-bearing inputs for the negative core are stated explicitly and none is
+smuggled in as an unstated retained wall:
+
+- **A1** = "site = qubit = C^2 = Cl(3,0) spinor" — used only to deliver the
+  *state-space* spinor (positive side), `cl3_complexification_split` (`retained`)
+  + `cl3_faithful_irrep_dim_two` (`decoration`).
+- **Spin-blindness of `H = iD`** — `[H ⊗ I_2, I ⊗ B_i] = 0`, from
+  `cpt_exact_real_anti_hermitian_d` (`retained_bounded`) /
+  `koide_onsite_weyl_boost_from_bivectors` (`audited_conditional`). Load-bearing
+  for "the dynamical lever cannot force faithfulness."
+- **Legitimacy of the scalar boost rep** `S(eta) = exp(eta·c) I_2` —
+  `S(a)S(b) = S(a+b)` is an elementary 1-parameter-group fact (runner C.2), not a
+  retained import; it is the positive existence witness that A1 *permits* a
+  non-faithful action.
+- **The relativistic spin-1/2 kernel** is named as the *actual* selector and
+  explicitly attributed to the reconstruction (R) sibling
+  `koide_onsite_boost_reconstruction_..._2026-06-02` (`retained_bounded`), NOT to
+  A1. The note does not let "covariance" or "Lorentz" act as a hidden A1-level
+  wall.
+
+The words "spinor", "Lorentz", "covariance", "boost" are not used as
+load-bearing axiomatic content for the negative claim; their only forcing role is
+explicitly routed to the matter-attachment pin, not to A1.
+
+### N4 — Residual matching table
+
+The gated negative claim must attack the *same* residual the cited cluster rows
+leave open, not a softer or harder one.
+
+| cited witness | residual it leaves open | residual attacked here | match? |
+|---|---|---|---|
+| `koide_onsite_boost_reconstruction_..._2026-06-02` (`retained_bounded`) | The faithful boost holds at the massless-chiral level; the **massive-doubling delivery** is its named residual, and the selector that works is the relativistic kernel (R content), not A1. | Whether *A1 itself* (not R) forces the boost-action FAITH. Verdict: it does not; the kernel selector is R, not A1. | yes |
+| `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01` (`retained_bounded`) | Excludes the *spatial-rotation* scalar once `J != 0`, and flags the **matter-attachment pin** as the dominant, upstream, signature-independent open piece. | Same matter-attachment pin, now isolated for the *boost/mass* action: it is what "boost = operator-frame triple" needs and what A1 does not supply. | yes |
+| `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` (`audited_conditional`) | The native dynamics is spin-blind, so faithful boost = residual **posit** at the dynamical level. | The exact same spin-blindness (`[H ⊗ I_2, I ⊗ B_i] = 0`) is used to show the dynamical lever cannot upgrade the posit to A1-forced. | yes |
+| `per_site_su2_spin_half_theorem_note_2026-05-02` (`retained`) | Carries the **disclaimer**: the operator-frame C^2 action is *not* identified with "the physical spin generator of every matter excitation." | This disclaimer is precisely the gap: lifting it is the matter-attachment pin, which A1 does not close. | yes |
+| `anomaly_forces_time_theorem` (**`unaudited`**) | (Would-be (3,1)-signature delegate.) | Not attacked / not load-bearing — explicitly excluded as INVALID. | no (intentionally unused) |
+
+Non-matching / invalid-status rows are not used as load-bearing support for the
+negative claim.
+
+### N5 — Rhetoric audit
+
+Scope-controlling phrases used in this note and their guards:
+
+- **"A1 does not force [FAITH]"** — scoped to the *boost/mass dynamical action*
+  on C^2. It explicitly does NOT deny that A1 forces *state-space* FAITH (j=0
+  excluded by dimension); the note states the positive half in the same breath
+  ("What A1 DOES force"). The negative is about the operator, not the module.
+- **"reduces to the matter-attachment pin"** — a *reduction*, not a closure. The
+  note is explicit that the pin, *once granted*, forces faithfulness via (B) + the
+  kernel; the claim is that A1 does not grant it, not that it is unreachable.
+  "Reduces" never tightens to "refutes" or "closes."
+- **"spin-blind"** — scoped to the *single-component* `H = iD` and stated as the
+  precise commutator `[H ⊗ I_2, I ⊗ B_i] = 0`; it is not a global claim that the
+  framework can never see spin, only that *this* dynamical lever does not select
+  the boost generator.
+- **"VERDICT: NO" / "permitted, not forced"** — both carry the qualifier "*at the
+  A1-alone level*" / "*by itself*" throughout; no sentence claims faithfulness is
+  false, un-derivable, or that the carrier is "STAT-only."
+
+No phrase in the note silently widens the negative core beyond "A1 alone does not
+force the boost-action FAITH."
+
+### N6 — Partial-closure path scan
+
+Three partial-closure paths remain open and are *not* re-labeled as axioms or
+imports by this note:
+
+1. **State-space FAITH is already closed** (A1-consequence by dimension) — a
+   genuine partial win, not a residual.
+2. **Boost-action FAITH conditional on (B)'s antecedent is closed** — granting
+   "boost = operator-frame Pauli triple" forces faithfulness; the only open piece
+   is the antecedent itself.
+3. **The reflection-positivity / KMS / records route** (named in the bottom line)
+   is the open positive path to *derive* "matter field index = C^2 spinor under
+   the reconstructed Lorentz action" from A1+A2+retained — which would then
+   collapse the boost-action FAITH via (B)+(C). The note flags closing it *without*
+   such a derivation as an import requiring user approval (the latent IMPORT FLAG),
+   and does not itself take that step.
+
+### N7 — Steelman
+
+The strongest objection: *"Once you accept that matter lives in the qubit C^2,
+relativistic invariance of a massive field leaves no choice — the boost MUST be
+the faithful Weyl intertwiner, so calling boost-action FAITH 'not forced by A1' is
+pedantry; the spinor state space already entails it."* This is the best case for
+collapsing FAITH into A1, and it is partly right: the relativistic spin-1/2 kernel
+**does** force faithfulness (runner C.3). The steelman fails to break the *scoped*
+claim because the forcing rides on the **massive relativistic field + Poincaré
+covariance** (the kernel `m I − i sigma·p` and its nonzero traceless part), which
+is *matter-attachment content* — it presupposes that the qubit index transforms
+as the physical spin of a covariant massive excitation. That presupposition is
+exactly what `per_site_su2_spin_half` *disclaims* and what A1 ("the site is a
+qubit") does not state. So the steelman concedes the very pin the note isolates:
+faithfulness is forced *by the reconstruction (R)*, not *by A1*. It correctly
+blocks any claim that boost-action FAITH is *unreachable* — and the note makes no
+such claim.
+
+### N8 — Cross-cycle echo
+
+Prior carrier-residual cycles in this lane repeatedly failed by conflating the two
+things that both live on C^2 — the *state space* and the *dynamical action* — and
+then declaring the residual closed (or, conversely, declaring the whole carrier an
+unforced posit). Two specific echoes this note avoids: (i) the **over-collapse
+echo** — using the by-dimension exclusion of j=0 to claim the *boost operator* is
+also fixed (it is not; runner C.2 exhibits the scalar boost on the same C^2); and
+(ii) the **over-pessimism echo** — declaring the carrier "STAT-only" or
+boost-action FAITH unreachable, when in fact (B) + the kernel *do* force it once
+the single matter-attachment antecedent is granted. The note keeps the claim
+boundary exactly at "A1 alone does not bridge state-space FAITH to boost-action
+FAITH," leaving the reflection-positivity / KMS / records derivation of that bridge
+as live positive work rather than a closed wall.
+
 ## One-line bottom line
 
 A1 forces the **spinor state space** (scalar excluded by dimension) and uniquely

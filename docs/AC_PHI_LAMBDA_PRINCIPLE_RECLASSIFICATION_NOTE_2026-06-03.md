@@ -1,4 +1,4 @@
-# AC_φλ Principle-Grade Reclassification (Sharpened) — `AC_φλ` as a Framework Principle Under Tier-A Admitted-Input Governance
+# AC_φλ Principle-Grade Reclassification (Sharpened, **Provisional**) — `AC_φλ` as a Framework Principle Under Tier-A Admitted-Input Governance, Pending Possible Axiom Updates
 
 **Date:** 2026-06-03
 **Type:** meta
@@ -6,14 +6,32 @@
 **Status:** repo-semantics clarification; no theorem promotion. Source-note
 proposal; pipeline-derived status is set only after independent audit
 review.
+
+> **PROVISIONAL PENDING POSSIBLE AXIOM UPDATES (load-bearing).** This
+> reclassification is conditional on the framework's *current* axiom
+> baseline (`A1+A2` per `MINIMAL_AXIOMS_2026-05-20.md`). The framework
+> is under active investigation for possible axiom updates — additional
+> primitive content, an axiom clarification, or a derived primitive
+> being promoted to axiom-equivalent status (cf. the in-progress AFT
+> chain, where anomaly-cancellation may promote chirality from "import"
+> to "framework-internal" once retained). Under an *updated* axiom
+> baseline, `AC_φλ` (or its named selectors K-reality + det_C /
+> equal-power-per-block) **may become derivable** rather than admitted
+> as principle. The principle-grade classification proposed here is
+> therefore **explicitly provisional** — it honestly tiers the current
+> standing, but does not preclude future derivation under updated
+> axioms. If `AC_φλ` becomes derivable, this note's reclassification is
+> superseded and the row should be repromoted as a derived theorem.
 **Authority role:** records the audit-honest reframing of the
 generation-mass-pattern Tier-A admitted derivation-target `AC_φλ` (per
 [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
 and its parent
 [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md))
-as a **framework principle** — a foundational stance the framework
-*posits*, parallel to how the extensivity premise `(E)` underlying `P1`
-is principle-grade (mild) per
+as a **framework principle** *under the current `A1+A2` axiom surface*
+— a foundational stance the framework *posits* **provisionally pending
+possible axiom updates** (cf. the in-progress AFT chain), parallel to
+how the extensivity premise `(E)` underlying `P1` is principle-grade
+(mild) per
 [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md`](OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md).
 The reclassification is structurally analogous to the
 [`RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md`](RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md)
@@ -191,9 +209,15 @@ This is the move. Under audit-lane authority, the proposal is:
 
 > Adopt for `AC_φλ` the same principle-grade stratification the Tier-A
 > registry already applies to `P1`: a foundational stance the framework
-> *posits*, with the no-go portfolio recognized as evidence that
-> *seeking a derivation* of this stance from `A1+A2+retained` is a
-> structurally-doomed search, not a tractable open problem.
+> *posits* **under the current `A1+A2+retained` axiom surface**, with
+> the no-go portfolio recognized as evidence that *seeking a derivation*
+> of this stance from `A1+A2+retained` *as currently configured* is a
+> doomed search on the current surface, not a tractable open problem
+> *given today's axioms*. The classification is **provisional**: if
+> the framework's axiom baseline is updated (new primitive content,
+> axiom clarification, or a derived primitive promoted to axiom-
+> equivalent status), `AC_φλ` or its named selectors may become
+> derivable and this principle-grade classification is superseded.
 
 Concretely:
 
@@ -307,13 +331,17 @@ Mirroring the radian precedent's structure-awareness, this note is
 explicit that the reclassification is **partial** (sharpened, not full
 closure). The honest framings are:
 
-1. **CLOSURE framing** (strongest): the no-go portfolio + multi-attack
-   failed-derivation panel record + the principle-grade analog of `P1`
-   together establish that `AC_φλ` (charged-lepton sharpening) is best
-   classified as a **framework principle**. The "missing derivation"
-   framing is misleading because no derivation from `A1+A2+retained`
-   exists, by structural argument (cf. the retained no-go's). Admitted
-   inputs of this kind are *principles*.
+1. **CLOSURE framing** (strongest, but *conditional on current axioms*):
+   the no-go portfolio + multi-attack failed-derivation panel record +
+   the principle-grade analog of `P1` together establish that `AC_φλ`
+   (charged-lepton sharpening) is best classified as a **framework
+   principle** *under the current `A1+A2` axiom surface*. The "missing
+   derivation" framing is misleading *on today's surface* because no
+   derivation from current `A1+A2+retained` exists, by structural
+   argument (cf. the retained no-go's). Admitted inputs of this kind
+   are *principles* — until and unless the axiom baseline is updated, at
+   which point the no-go's may no longer bite and derivation may become
+   possible.
 
 2. **STRUCTURAL OBSTRUCTION framing** (weakest): the choice of
    K-reality + det_C/equal-power-per-block is itself an input that
@@ -425,14 +453,19 @@ admitted-input governance:
 
 ## Bottom line
 
-**Verdict: SHARPENED partial closure / principle-grade reclassification.**
+**Verdict: SHARPENED partial closure / principle-grade reclassification, PROVISIONAL pending possible axiom updates.**
 
 `AC_φλ` (charged-lepton sharpening: K-reality + det_C /
 equal-power-per-block) is structurally analogous to `P1` (extensivity
 premise (E)) under Tier-A admitted-input governance: a foundational
-stance the framework *posits*, with a retained no-go portfolio
-verifying that *seeking a derivation* from `A1+A2+retained` is a
-structurally-doomed search. The chain-of-custody note's L1–L10
+stance the framework *posits* **under the current `A1+A2` axiom
+surface**, with a retained no-go portfolio verifying that *seeking a
+derivation* from current `A1+A2+retained` is a doomed search on the
+current surface. **This is provisional**: if the framework's axiom
+baseline is updated (e.g., AFT chain retention promoting chirality
+from import to internal, or other new primitive content), `AC_φλ` may
+become derivable and this reclassification is superseded by a derived-
+theorem promotion. The chain-of-custody note's L1–L10
 structure remains derived; the *value* selection remains conditional on
 the named selectors. Reclassifying the selectors as a **framework
 principle** (parallel to `P1`'s principle-grade stratification) is a

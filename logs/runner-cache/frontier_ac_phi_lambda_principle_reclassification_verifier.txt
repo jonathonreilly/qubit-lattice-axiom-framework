@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_ac_phi_lambda_principle_reclassification_verifier.py
-runner_sha256: 496391cea153b24099d2348730cfba3b4c31dbba479412560f617e724a107bb1
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.04
-status: ok
------ stdout -----
 AC_phi_lambda principle-grade reclassification check
 note: docs/AC_PHI_LAMBDA_PRINCIPLE_RECLASSIFICATION_NOTE_2026-06-03.md
 
@@ -16,6 +8,9 @@ PASS: does not declare audit-clean verdict token
 PASS: does not add a new mathematical axiom
 PASS: reclassification of AC_phi_lambda as framework principle stated explicitly
 PASS: principle-grade parallel to P1 cited
+PASS: reclassification is explicitly PROVISIONAL pending possible axiom updates
+PASS: axiom-update path explicitly leaves derivability open
+PASS: current-axiom-surface qualifier present on closure framing
 PASS: Tier-A registry cited explicitly
 PASS: AC_phi_lambda canonical parent (staggered-Dirac gate) cited
 PASS: radian precedent reclassification cited
@@ -69,8 +64,5 @@ PASS: explicit non-derivation of r=1/2 / Q=2/3 stated
 PASS: parent gate (staggered-Dirac realization) open_gate preserved
 PASS: staggered-Dirac parent gate file confirmed open_gate on disk
 
-TOTAL: PASS=59 FAIL=0
+TOTAL: PASS=62 FAIL=0
 AC_phi_lambda principle-grade reclassification check passed: AC_phi_lambda (charged-lepton sharpening) proposed as framework principle parallel to P1, conditional / SHARPENED, no retained theorem promoted, no new axiom, no PDG input, Tier-A registry unchanged, chain-of-custody standing preserved.
-
------ stderr -----
-

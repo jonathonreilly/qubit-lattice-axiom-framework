@@ -23,5 +23,5 @@ result_summary:
   sweep_same_row_survivors: "9/9"
   cache_status: ok
 next_exact_action: "Submit review PR; independent auditor decides whether this repaired packet can replace or supersede the archived failed row."
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/2633"
 stop_condition: "Review PR opened."
-

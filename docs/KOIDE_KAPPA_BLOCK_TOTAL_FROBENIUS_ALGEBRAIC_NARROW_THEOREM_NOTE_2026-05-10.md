@@ -17,7 +17,7 @@ that
     equivalently `a^2 = 2 |b|^2`, equivalently `kappa := a^2 / |b|^2 = 2`,
     and
   * `(T4)` the real-irrep multiplicity pattern
-    `(trivial, doublets, sign) = (1, 1, 0)` on `Herm_circ(d)` is
+    `(trivial, doublets, sign) = (1, (1,), 0)` on `Herm_circ(d)` is
     uniquely realized at `d = 3` among `d in {2, 3, 4, 5, 6}`.
 
 All four statements are facts of pure linear algebra and discrete
@@ -294,7 +294,8 @@ verifies symbolically (PASS=N/0):
    (kappa = 2).
 7. The Hessian of `S` is strictly negative-definite at the critical point.
 8. The `Herm_circ(d)` real-irrep multiplicity count
-   `(trivial, doublets, sign) = (1, floor((d-1)/2), d mod 2)`
+   `(trivial, doublets, sign) =
+   (1, tuple([1] * floor((d - 1) / 2)), 1 if d even else 0)`
    enumerated explicitly for `d = 2, 3, 4, 5, 6`, with the table
    matching the statement.
 9. Among `d in {2, 3, 4, 5, 6}`, the pattern `(1, (1,), 0)` is realized

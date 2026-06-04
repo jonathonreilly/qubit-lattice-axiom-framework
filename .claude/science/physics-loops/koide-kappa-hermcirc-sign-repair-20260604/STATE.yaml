@@ -1,0 +1,25 @@
+loop_slug: koide-kappa-hermcirc-sign-repair-20260604
+branch: physics-loop/koide-kappa-hermcirc-sign-repair-20260604
+base: origin/main
+started_at: 2026-06-04
+target_claim_id: koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25
+additional_downstream_claims:
+  - koide_records_pointer_grounds_block_channel_note_2026-05-31
+  - koide_records_objectivity_conditional_note_2026-05-31
+actual_current_surface_status: bounded-support repair proposal
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "repair upstream kappa source-note Herm_circ(d) sign multiplicity typo"
+files_touched:
+  - docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md
+open_imports:
+  - "Independent audit must decide whether downstream conditional rows clean after this source-packet repair."
+checks:
+  - "if rg -n \"d mod 2|sign.*d mod\" docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt -S; then exit 1; else exit 0; fi"
+  - "PYTHONPATH=scripts python3 scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py"
+  - "python3 -m py_compile scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py"
+  - "git diff --check"
+pr_status: pending
+next_exact_action: "Commit, push, and open review PR."
+stop_condition: "PR opened and verified."

@@ -1,0 +1,14 @@
+[PASS] FACTOR 1 [Record axiom]: W = log|det| = sum_modes log|lambda| (additive over disjoint mode collection)
+       W=13.204763
+[PASS] FACTOR 1: on a disjoint-site (block-diagonal) domain, W adds over the blocks (the Record functional)
+[PASS] FACTOR 2 [det-character, separate note]: det(AB)=det(A)det(B) (multiplicative); Tr is not
+[PASS] FACTOR 3 [source-coupling, admission]: dW/dj_x = Re Tr[(D+J)^{-1} P_x] (verified vs numeric derivative)
+       max|analytic - numeric| = 7.11e-10; this factor is NOT from the Record axiom
+[PASS] RESIDUAL after Record axiom: the log-det blocker reduces to det-character (sep note) + source-coupling (admission)
+       Factor 1 axiom-closed; Factors 2+3 are the precise remaining targets to cascade the 59 log-det rows
+
+SCORECARD PASS=5 FAIL=0
+PROVENANCE: W=log|det(D+J)| = FACTOR1 additivity (Record axiom, CLOSED) + FACTOR2 det-character
+(separate note) + FACTOR3 source-coupling (admission). The Record axiom discharges Factor 1;
+the 59-row log-det blocker reduces to the precise residual {det-character, source-coupling}.
+No existing row is re-cited/edited; sets no audit status.

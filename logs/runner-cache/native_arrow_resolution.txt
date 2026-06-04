@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/native_arrow_resolution.py
+runner_sha256: a36b4296597ad185aea6efc4fb1e6476d20f43a4536b914ae5a78c7d96876148
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.99
+status: ok
+----- stdout -----
+==============================================================================
+Supplied heat-kernel Koide-arrow bounded route check
+Claim boundary: conditional on the displayed maps and r(t)=tanh(t)^4.
+No framework-native beta derivation is asserted by this runner.
+==============================================================================
+[PASS] Koide line Q = 1/3 + (2/3) r for the C3 circulant spectrum -- Q=(a**2 + 2*b**2)/(3*a**2)
+[PASS] Q=2/3 corresponds to r=1/2 on this line -- r-solutions=[1/2]
+[PASS] thermalize(sharpen(r)) = r on r>0
+[PASS] sharpen(thermalize(r)) = r on r>0
+[PASS] sharpen fixed points are {0, 1/2} -- [0, 1/2]
+[PASS] thermalize fixed points are {0, 1/2} -- [0, 1/2]
+[PASS] sharpen multiplier at r=1/2 is 2
+[PASS] thermalize multiplier at r=1/2 is 1/2
+[PASS] multiplier product is 1, as expected for inverse branches
+[PASS] sharpen seed below 1/2 moves toward 0 -- 0.000e+00
+[PASS] sharpen seed above 1/2 moves upward -- inf
+[PASS] thermalize positive seeds move toward 1/2 -- 0.500000, 0.500000
+[PASS] supplied path derivative is 4 tanh(t)^3 sech(t)^2
+[PASS] supplied path has beta_r > 0 for sampled finite t>0
+[PASS] supplied path starts at r=0
+[PASS] supplied path tends to r=1
+[PASS] r=1/2 is a transit value of the supplied path -- t=1.2242, beta=0.6966
+[PASS] C3 isotype block dimensions are 1 and 2
+==============================================================================
+BOUNDED RESULT: under the supplied heat-kernel path, r=1/2 is not an
+attractor; under the thermalizing inverse branch it is an attractor.
+This runner does not prove which branch is framework-native.
+==============================================================================
+SCORECARD: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -192,6 +192,164 @@ NOT register the `FS` admission. Does NOT foreclose a future graded-locality or
 lattice-native discrete-homotopy derivation of CAR — those remain open paths
 ("the next path this opens").
 
+## No-go discipline gate (N1–N8)
+
+**Status:** PASS for the narrow algebraic-horn no-go only. The claim being closed
+is *not* "fermions cannot live on Z^3" and *not* "the JW representation is wrong".
+It is the single statement that the staggered/KS construction (the `eta_mu(x)`
+Kawamoto-Smit phases) + matter-attachment locality + single-valuedness do not, by
+themselves, force the cross-site CAR sign `b_i b_j = - b_j b_i` over the hard-core
+boson. The decisive object is the C5 counterfactual pair on the 2x2x2 Z^3 patch:
+drop the string keep `eta` -> CAR fails; drop `eta` keep the string -> CAR holds.
+
+### N1 - Alternative route enumeration
+
+Each route below is a concrete way an opponent might try to force CAR *from the KS
+construction itself* (i.e. without admitting graded locality / `FS`). Each is
+exhibited and refuted on the 2x2x2 patch.
+
+| route | what it would attempt | why it fails for this scoped no-go | marker |
+|---|---|---|---|
+| `eta`-as-statistics route | Read the staggered `eta_mu(x)` sign as the cross-site anticommutation sign, so locality-of-`eta` would deliver CAR. | C1/C2/C5: `eta` is a per-link `+-1` c-number in the kinetic COEFFICIENT, identical in `H_hcb` and `H_jw`; `c_x` contains no `eta`. Dropping `eta` keeps CAR; keeping `eta` without the string loses CAR. `eta` neither supplies nor is needed for CAR. | ATTEMPTED |
+| Locality-generates-the-string route | Argue that requiring the matter operator to be local forces a Jordan-Wigner tail. | C3/C7: the MOST local matter operator (single-site `b_x = sigma_+^(x)`) carries NO string and is bosonic (`[b_x,b_y]=0`); the string is provably non-local (min grid-graph bandwidth over all orderings = 4 > 1). Locality points away from the string, not toward it. | ATTEMPTED |
+| Single-valuedness route | Claim "the field must be single-valued" selects the graded (fermionic) frame. | The hard-core boson `b_x` is single-valued, nilpotent (`b_x^2=0`), and single-occupancy and satisfies every stated KS premise (C3). Single-valuedness is satisfied by both frames and does not discriminate. | ATTEMPTED |
+| Per-site Grassmann-uplift route | Use substep-1 Grassmann forcing (`chi_x^2=0`) to upgrade per-site nilpotency into cross-site `{chi_x,chi_y}=0`. | The cited substep-1 note proves only single-site `chi_x^2=0` (dim-2 per site) and explicitly does not establish cross-site `{chi_x,chi_y}=0`; the hard-core boson already has `b_x^2=0` cross-site-commuting (C3). The uplift is exactly the gap, not a route across it. | ATTEMPTED |
+| Algebra-spanning route | Argue HCB and JW generate the same operator algebra, so CAR is "already there". | C6: both span the same ungraded `M_{2^N}(C)` (dim `4^N`); sameness of the ungraded algebra is precisely why statistics is an unfixed frame choice (the retained `statistics_agnostic` result). Spanning the algebra does not select the graded relation. | ATTEMPTED |
+| Choose-the-order route | Pick a total order `pi` on Z^3 that makes the JW string trivial (string-free) on every nearest-neighbour link, so the string "isn't really non-local". | C7: bandwidth horn — over ALL orderings the min grid-graph bandwidth is 4 > 1, so no order makes every NN link adjacent; some link always carries a non-trivial string. The order cannot be removed; it is an arbitrary admitted input. | ATTEMPTED |
+| Graded-locality / `FS` route | Admit fermion-parity superselection (odd operators anticommute at disjoint separation) to deliver CAR directly. | This is the genuine selector — and it is exactly the flagged import requiring user approval (it is NOT in A1+A2 and NOT supplied by KS). Admitting it does not refute the no-go; it confirms the no-go's own statement that CAR needs an external input. | ATTEMPTED (out of scope — confirms, not breaks) |
+
+### N2 - Wall-independence audit
+
+The collapsed wall set for this no-go is a SINGLE wall: the statistics frame
+(graded vs ungraded) is not fixed by any structure the KS construction provides;
+it lives in the cross-site (anti)commutation relation of the matter operator, not
+in the kinetic coefficient `eta` and not in per-site nilpotency. The three reasons
+listed in "Why locality + single-valuedness does not rescue forcing" (most-local
+operator is bosonic; string is non-local by the bandwidth horn; `eta` is orthogonal
+to the string) are not three independent walls — they are three views of the one
+wall (locality cannot reach the cross-site graded relation). The two retained
+ledger no-gos are *concordant external witnesses* to this same wall, not extra
+independent walls: `statistics_agnostic` states the algebra baseline does not
+select CAR (same wall, algebra view); `fs_rotation_exchange` states the
+discriminator is the cross-site graded-vs-ungraded relation and that retained
+Lieb-Robinson locality is ungraded (same wall, locality view). **What future work
+could change it:** a derivation of graded locality / `FS` from A1+A2, or a
+lattice-native discrete-homotopy / graph-braid `Z2` coupled to an on-site spinor
+sign, would move the wall — both are named as open in "Missing ingredient".
+
+### N3 - Hidden-wall scan
+
+The words "standard", "framework", "obviously", "must", and "canonical" are not
+used as hidden retained inputs for the negative result. ("standard" appears only to
+label the Kawamoto-Smit phases and finite linear algebra as ordinary methodology,
+not as a load-bearing premise.) The EXPLICIT load-bearing inputs of the no-go are
+exactly: (i) A1 = one qubit / Cl(3,0) spinor per site; (ii) A2 = the Z^3 lattice;
+(iii) the Kawamoto-Smit staggered phase definition
+`eta_mu(x) = (-1)^{x_1 + ... + x_{mu-1}}` and `T(x)^dag gamma_mu T(x+mu) = eta_mu(x) I`;
+(iv) the hard-core-boson ladder `b_x = sigma_+^(x)` and the JW-dressed
+`c_x = S_x sigma_+^(x)` with `S_x = prod_{y<x} sigma_3^(y)`; (v) exact finite linear
+algebra on the 2x2x2 patch (dim 256). No appeal to "what fermions usually do",
+"the standard lattice fermion", or any rhetorical authority carries weight; every
+sign in C1-C7 is an exhibited matrix identity. The only non-derived ingredient is
+the *absent* one (graded locality / `FS`), which is named as an import, not hidden.
+
+### N4 - Residual matching
+
+Each cited prior result is checked against the residual it actually attacks versus
+the residual at issue here (does the KS construction force cross-site CAR?).
+
+| cited witness | residual attacked | residual here | match? |
+|---|---|---|---|
+| `statistics_agnostic_no_forcing_note_2026-05-25` (retained_no_go) | A1/A2 operator-algebra + dimension baseline does not select CAR over hard-core boson (same ungraded `M_{2^N}(C)`); includes a locality horn. | KS-specific `eta`-vs-string sharpening of the same non-forcing of CAR. | yes |
+| `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` (retained_no_go) | The discriminator is the cross-site graded-vs-ungraded relation; retained Lieb-Robinson locality is ungraded. | Identifies the same graded relation as the missing selector the KS `eta` cannot supply. | yes |
+| `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` (unaudited) | Derives `eta_mu(x)` as the Dirac/taste (gamma-diagonalization) structure. | Used only to fix WHAT `eta` is (Dirac-structure c-number), the object shown statistics-neutral. Not invoked as forcing CAR. | yes (as definition, not as forcing) |
+| `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` (retained_pending_chain, decoration) | Constructs cross-site CAR via the JW string; disclaims uniqueness; records bare ladders commute on disjoint factors; admits total-order input. | Corroborates that CAR rides the string and needs an order; its own non-uniqueness disclaimer is what this no-go formalizes. | yes |
+| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` (retained_bounded) | Per-site Grassmann property `chi_x^2=0` via spin-statistics; single-site only. | Bounds the per-site horn; does NOT reach cross-site CAR — so it is not a witness that CAR is forced. | not load-bearing (per-site only; does not match the cross-site residual) |
+| `flavor_carrier_from_axioms_momentum_forced_2026-05-31` (audited_conditional) | The staggered/KS first-order operator is needed for chiral `{eps,D}=0` + corner locus; calls fermionization "compatibility, not forcing." | Concordant on "compatibility, not forcing", but it is about chirality/corner-locus, not the CAR sign. | not load-bearing (different residual; cited only for the concordant "compatibility" verdict) |
+
+Non-matching witnesses are explicitly marked "not load-bearing" and are not used as
+proof of the no-go; the no-go rests on the two `retained_no_go` rows plus the
+exhibited C1-C7 patch identities.
+
+### N5 - Rhetoric audit
+
+- **"orthogonal"** is scoped to: the staggered `eta` c-number (a kinetic-term
+  coefficient on the link endpoints) carries no operator/statistics content, and the
+  JW string operator (on the intermediate sites) carries no `eta`; the C5
+  counterfactuals make this exact. It does NOT claim Dirac structure and statistics
+  are orthogonal *in every formulation of lattice fermions* — only that in this KS
+  realization the two specific objects live on different tensor factors and neither
+  determines the other.
+- **"statistics-neutral"** is scoped to the `eta` factors specifically: they are
+  identical in `H_hcb` and `H_jw` (C2). It does NOT claim the whole KS construction
+  is statistics-neutral in some global sense; the *choice* of dressing (string or
+  none) is exactly what fixes statistics.
+- **"does not force"** is scoped to: KS + locality + single-valuedness do not, by
+  themselves, *entail* cross-site CAR. It does NOT claim CAR is unreachable, nor
+  that no axiom set forces it; with the flagged `FS` import (or a future
+  discrete-homotopy route) CAR is reachable.
+- **"non-local" (of the string)** is scoped to: on Z^3 no total order makes every
+  NN link string-free (bandwidth >= 4, C7). It does NOT claim the JW construction is
+  ill-defined or that fermions are non-local as physics — only that the string is
+  not an object locality can canonically generate.
+- **"no-go" / "OPEN"** denotes that the forcing question is open (CAR not forced),
+  i.e. a negative result on *forcing*, NOT a positive prohibition on CAR existing.
+  The over-broad reading "CAR is forbidden / fermions are excluded on Z^3" is
+  explicitly disclaimed.
+
+### N6 - Partial-closure path scan
+
+The following non-axiom partial-closure paths remain OPEN and none is called a new
+axiom by this note:
+- a derivation of **graded locality / fermion-parity superselection (`FS`)** from
+  A1+A2 (would close the gap from inside the axioms; currently an admission
+  candidate, NOT asserted as an axiom here);
+- a **lattice-native discrete-homotopy / graph-braid `Z2`** coupled to an on-site
+  spinor sign (the `fs_rotation_exchange` §7 path 1) — left open even though the two
+  companion geometric no-gos show the *currently available* graph-braid/writhe class
+  is the wrong `Z2`;
+- a sharper **cross-site Grassmann uplift** that would carry single-site `chi_x^2=0`
+  to `{chi_x,chi_y}=0` without an external statistics input (currently unestablished,
+  per substep-1).
+Each is described as a route to *future positive work*, not as a postulate; the note
+registers none of them and adds no axiom.
+
+### N7 - Steelman
+
+The strongest objection: in a *physical* lattice gauge theory the staggered field is
+declared Grassmann from the outset (spin-statistics is assumed at the path-integral
+level), so "the KS construction" — taken to include that declaration — *does* come
+with CAR, and treating `eta` and the string as separable is reading the construction
+too narrowly. **Why it does not break the SCOPED claim:** the objection smuggles in
+exactly the statistics declaration (Grassmann / fermion-parity) that this no-go
+isolates as the missing ingredient. The substep-1 Grassmann note sources that
+property only from spin-statistics S2 and proves only the per-site `chi_x^2=0`; it
+does not derive cross-site `{chi_x,chi_y}=0` from A1+A2+KS. So the steelman concedes
+the no-go's own claim (an external statistics input is required) rather than refuting
+it. **What broader claim the steelman does block:** any reading of this note as
+"staggered fermions are not really fermions" or "the standard KS fermionization is
+defective" — that broader claim is false and is not made here; standard KS *with* the
+assumed Grassmann/`FS` input is perfectly CAR, the note only denies that locality + the
+`eta` phases *alone* supply that input.
+
+### N8 - Cross-cycle echo
+
+The repo's recurrent overclaim failure mode is: *test one representative
+expression/operator, find it negative, then declare the whole lane closed*
+(the "tested-one-witness, declared-the-lane-dead" echo). This note avoids that echo
+in three concrete ways: (i) it tests BOTH directions of the decisive
+counterfactual (drop-string-keep-`eta` AND drop-`eta`-keep-string, C5), not a single
+operator; (ii) it fixes the claim boundary at *forcing from KS + locality* and
+explicitly leaves CAR reachable via the flagged `FS` import and via future
+discrete-homotopy / cross-site-Grassmann routes (N6), rather than declaring "no
+fermions on Z^3"; (iii) it cross-checks its verdict against two independently
+`retained_no_go` rows on the live ledger plus the non-uniqueness disclaimer of the
+JW-bridge decoration, so the negative result is corroborated, not extrapolated from
+the single 2x2x2 patch. The patch is finite (dim 256); the note treats the C1-C7
+identities as an existence-of-a-counterexample (the hard-core boson exists and
+carries every KS premise), which is logically sufficient for a *non-forcing* claim
+and does not over-reach to a universal prohibition.
+
 ## Command
 
 ```bash

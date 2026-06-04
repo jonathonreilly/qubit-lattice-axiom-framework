@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/cmw_ward_normalized_bogoliubov_bridge_2026_06_04.py
+runner_sha256: d5619cef8209eec250f5b3f917b04b333e1d033298b7cea0ceb5e8d9ae83a688
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+==============================================================================
+CMW WARD-NORMALIZED BOGOLIUBOV BRIDGE
+==============================================================================
+Constants for numerical bound witness: beta=0.8, C_A=3.0, C_H=2.0, c_W=0.5
+d=1 I_d(L): [0.65625, 1.328125, 2.664062, 5.332031, 10.666016, 21.333008]
+d=2 I_d(L): [0.379295, 0.489924, 0.600326, 0.710665, 0.775201, 0.820988]
+d=3 I_d(L): [0.215365, 0.224606, 0.2302, 0.233942, 0.23863, 0.241447]
+d=1 |m_L| bound: [3.824732, 2.688538, 1.898294, 1.341805, 0.948712, 0.670826]
+d=2 |m_L| bound: [5.030918, 4.426608, 3.998913, 3.675387, 3.519074, 3.419535]
+d=3 |m_L| bound: [6.676486, 6.537705, 6.457779, 6.405918, 6.34268, 6.305572]
+------------------------------------------------------------------------------
+[PASS] note_marker:W1. Ward/commutator lower bound: W1. Ward/commutator lower bound
+[PASS] note_marker:W2. Susceptibility/onsite anticommutator bound: W2. Susceptibility/onsite anticommutator bound
+[PASS] note_marker:W3. Local double-commutator bound: W3. Local double-commutator bound
+[PASS] note_marker:W4. Finite Gibbs-state Bogoliubov inequality: W4. Finite Gibbs-state Bogoliubov inequality
+[PASS] note_marker:|m_L|^2 <= (beta C_A C_H) / (2 c_W^2 I_d(L)): |m_L|^2 <= (beta C_A C_H) / (2 c_W^2 I_d(L))
+[PASS] note_marker:every Hamiltonian: every Hamiltonian
+[PASS] d1_exact_ir_identity: I_1(L) exact identity holds
+[PASS] d1_ir_sum_monotone: I_1 values [0.65625, 1.328125, 2.664062, 5.332031, 10.666016, 21.333008]
+[PASS] d1_linear_coefficient: I_1/L at L=256 is 0.08333206
+[PASS] d2_ir_sum_monotone: I_2 values [0.379295, 0.489924, 0.600326, 0.710665, 0.775201, 0.820988]
+[PASS] d2_log_ratio_stable: I_2/log(L) last ratios [0.170879, 0.169838, 0.169205]
+[PASS] d3_finite_window_under_watson_half_convention: I_3 max on window 0.241447253
+[PASS] d3_finite_window_converging: final relative change 1.180459e-02
+[PASS] d1_order_bound_decreases: d=1 |m_L| bounds [3.824732, 2.688538, 1.898294, 1.341805, 0.948712, 0.670826]
+[PASS] d2_order_bound_decreases: d=2 |m_L| bounds [5.030918, 4.426608, 3.998913, 3.675387, 3.519074, 3.419535]
+[PASS] d3_bound_not_forced_to_zero_on_window: d=3 final |m_L| bound 6.305572
+[PASS] symbolic_bound_rearrangement: C_A=3.000000000000; rearranged RHS=3.000000000000
+==============================================================================
+SUMMARY: CMW WARD BRIDGE PASS=17 FAIL=0
+==============================================================================
+STATUS_BOUNDARY: exact-support bridge under explicit W1-W4 hypotheses; audit owns status movement
+Output written: outputs/cmw_ward_normalized_bogoliubov_bridge_2026_06_04.json
+
+----- stderr -----
+

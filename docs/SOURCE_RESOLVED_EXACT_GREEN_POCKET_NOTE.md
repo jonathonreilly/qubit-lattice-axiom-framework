@@ -6,8 +6,9 @@
 lattice family (`h = 0.5`, `W = 3`, `L = 20`, boundary-clipped cross5
 source cluster with 4 in-bounds nodes, source strengths
 `s in {0.001, 0.002, 0.004, 0.008}`) with a hand-selected Green-like
-kernel `exp(-mu r)/(r + eps)` at `mu = 0.08`, `eps = 0.5`, and an
-explicitly calibrated gain `2.131774e+00`. Frozen on disk.
+kernel `exp(-mu rho_eps)/rho_eps`, where
+`rho_eps = sqrt(dx^2+dy^2+dz^2) + eps`, at `mu = 0.08`, `eps = 0.5`,
+and an explicitly calibrated gain `2.131774e+00`. Frozen on disk.
 **Status authority:** independent audit lane only.
 **Claim scope:** at the declared family the runner reproduces (i) exact
 zero-source reduction (`+0.000000e+00`), (ii) `4/4 TOWARD` sign on the
@@ -15,8 +16,8 @@ Green-kernel channel, (iii) Green-kernel `F~M` exponent `1.00`
 (near-linear), and (iv) mean `|green/inst|` ratio `1.235`. The claim
 is explicitly bounded to this declared parameter envelope; the
 Green-kernel choice and the calibration gain are runner-selected, not
-derived from the physical `Cl(3)` local algebra / `Z^3` spatial
-substrate baseline.
+derived from the Quantum one-site local algebra or the Lattice `Z^3`
+baseline.
 
 ## Audit boundary (2026-05-10)
 
@@ -59,18 +60,20 @@ This 2026-05-10 rigorize pass selects the audit's repair target by:
    derived from the repo baseline.
 
 PATH A (deriving the Green-kernel form and calibration gain from
-retained repo dynamics) is theorem-level work and is deferred
-to future work as a separate retained promotion.
+repo dynamics) is theorem-level work and is deferred
+to future work as a separate theorem-grade promotion attempt.
 
 ## Hand-selected modeling inputs (NOT derived in this packet)
 
 The following modeling inputs are runner-selected; they are NOT
-derived from the physical `Cl(3)` local algebra / `Z^3` spatial
-substrate baseline in this note:
+derived from the Quantum one-site local algebra or the Lattice `Z^3`
+baseline in this note:
 
-- **Green-like kernel form** `exp(-mu r) / (r + eps)` with parameters
-  `mu = 0.08`, `eps = 0.5`. There is no derivation of this kernel
-  shape or its parameter values from accepted framework primitives.
+- **Green-like kernel form** `exp(-mu rho_eps) / rho_eps`, where
+  `rho_eps = sqrt(dx^2+dy^2+dz^2) + eps`, with parameters `mu = 0.08`,
+  `eps = 0.5`. There is no derivation of this kernel shape or its
+  parameter values from accepted framework theorem or implementation
+  surfaces.
 - **Calibration gain** `gain = FIELD_TARGET_MAX / max|f_ref|`
   evaluating to `2.131774e+00` on this family, which sets the absolute
   amplitude of the Green-kernel field. The gain is a runner-tuned
@@ -87,7 +90,7 @@ The runner imports `Lattice3D`, `propagate`, `K`, `SOURCE_Z`,
 `SOURCE_STRENGTHS`, `_centroid_z`, `_instantaneous_field_layers`, and
 `_fit_power` from `scripts/minimal_source_driven_field_probe.py`
 (source note [`MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md`](MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)).
-The runner-imported lattice/propagation primitives constitute the
+The runner-imported lattice/propagation helpers constitute the
 foundational implementation surface for this bounded pocket; this
 note's load-bearing observables (zero-source reduction, TOWARD sign,
 `F~M` exponent) are computed via that imported infrastructure.
@@ -173,7 +176,8 @@ The frozen pocket uses:
 - exact lattice with `h = 0.5`, `W = 3`, `L = 20`
 - fixed cross5 source cluster clipped at the boundary, leaving 4 in-bounds source nodes
 - source strengths `s = 0.001, 0.002, 0.004, 0.008`
-- kernel `exp(-mu r) / (r + eps)` with `mu = 0.08`, `eps = 0.5`
+- kernel `exp(-mu rho_eps) / rho_eps`, with
+  `rho_eps = sqrt(dx^2+dy^2+dz^2) + eps`, `mu = 0.08`, `eps = 0.5`
 - calibration gain `2.131774e+00`
 
 Reduction check:
@@ -218,8 +222,9 @@ the repo baseline.
 - the source cluster is boundary-clipped (4 in-bounds of cross5
   template) rather than fully symmetric, so this is a bounded pocket
   control, not a clean geometric refinement proof
-- the Green kernel form `exp(-mu r) / (r + eps)` and parameters
-  `mu = 0.08`, `eps = 0.5` are runner-selected, not derived
+- the Green kernel form `exp(-mu rho_eps) / rho_eps` with
+  `rho_eps = sqrt(dx^2+dy^2+dz^2) + eps`, `mu = 0.08`, and `eps = 0.5`
+  is runner-selected, not derived
 - the calibration gain `2.131774e+00` is runner-tuned to a chosen
   `FIELD_TARGET_MAX = 0.02`, not a derived coupling
 - the foundational lattice/propagation infrastructure (`Lattice3D`,
@@ -240,8 +245,8 @@ on the declared parameter envelope:
 The broader "exact-lattice self-generated field candidate" reading is
 recorded only as a cross-reference; the Green kernel and the
 calibration gain are runner-selected, the foundational infrastructure
-import is currently `unaudited`, and the bounded observation does not
+import is currently `retained_bounded`, and the bounded observation does not
 promote the source-resolved Green channel to a retained field-theoretic
 theorem. PATH A (deriving the Green-kernel form, parameters, and
 calibration gain from retained framework dynamics) is deferred to
-future work as a separate retained promotion.
+future work as a separate theorem-grade promotion attempt.

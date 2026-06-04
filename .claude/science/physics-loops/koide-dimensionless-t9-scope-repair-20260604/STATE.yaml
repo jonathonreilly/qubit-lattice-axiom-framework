@@ -1,0 +1,18 @@
+loop_slug: koide-dimensionless-t9-scope-repair-20260604
+branch: physics-loop/koide-dimensionless-t9-scope-repair-20260604
+target_claim_id: koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16
+target_status: bounded-support
+cycle_count: 1
+active_route: T9 A5-alone wording repair
+hard_residual: "Admissions (A1)-(A5) remain unretained and explicitly conditional."
+files_touched:
+  - docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md
+  - scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py
+  - logs/runner-cache/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.txt
+open_imports:
+  - "Retained-grade derivation of admissions (A1)-(A5) remains separate."
+trace_gate_classification: direct_blocker_closure
+review_findings: []
+pr_status: pending
+next_exact_action: "Run py_compile, runner, diff check, commit, push, and open a ready PR."
+stop_condition: "PR opened and verified, then pivot to the next audited-conditional target."

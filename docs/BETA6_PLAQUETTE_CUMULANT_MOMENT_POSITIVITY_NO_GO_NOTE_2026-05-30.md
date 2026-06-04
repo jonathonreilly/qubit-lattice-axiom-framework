@@ -171,6 +171,145 @@ forbidden_imports_used: false
 audit_status_authority: independent audit lane only
 ```
 
+## No-go discipline gate (N1-N8)
+
+**Status:** PASS for the narrow positive-measure / real-axis-branch-cut
+foreclosure only. The claim being closed is **not** a closure of the
+beta=6 plaquette lane, **not** a refutation of the off-axis
+complex-conjugate-pair resummation premise, and **not** an assertion about
+`P(6)`. It is the single exact-rational statement that the framework's own
+window `{d_5, d_6, d_7}` is not a Hamburger (hence not a Stieltjes) moment
+sequence, so `Delta(beta)` is not the Laplace/Stieltjes transform of a
+positive measure on the real axis.
+
+### N1 - Alternative route enumeration
+
+| route | what it would attempt | why it fails for this scoped no-go | marker |
+|---|---|---|---|
+| Direct positive-measure fit | Exhibit a positive `mu >= 0` on the real axis with `d_k = integral t^k d mu(t)` reproducing `{d_5, d_6, d_7}`. | Hamburger's theorem makes Hankel-PSD necessary; the 2x2 minor `d_5 d_7 - d_6^2 = -29/32134205039616 < 0` falsifies PSD, so no such `mu` exists. | ATTEMPTED |
+| Rescale denominators to dodge the sign | Clear the `18^n` denominators (per-shell integers `m_n`) hoping the rescaled window is a moment sequence. | The weights `s_n = 18^n` are geometric (`s_5 s_7 = s_6^2 = 18^12`); a geometric diagonal congruence preserves the minor sign exactly: `m_5 m_7 - m_6^2 = -1044 < 0`. | ATTEMPTED |
+| Shift/recentre the window | Use a non-centred Hankel block (e.g. start at `d_5` vs a shifted origin) to obtain a PSD minor. | A genuine Hamburger sequence requires **every** principal minor `>= 0`; finding one negative 2x2 minor anywhere in `[c_{i+j}]` already falsifies positivity, and translation of the moment variable cannot repair a strictly negative determinant. | ATTEMPTED |
+| Stieltjes (half-line) instead of Hamburger | Argue the measure lives on `[0, infinity)` so a weaker condition applies. | Stieltjes positivity is **strictly stronger** than Hamburger; if the Hamburger condition already fails, the Stieltjes condition fails a fortiori. | ATTEMPTED |
+| Sign-flip / alternating reinterpretation | Read `Delta(-beta)` or `(-1)^n d_n` as the moment sequence to flip the offending sign. | The 2x2 minor is invariant under `d_n -> (-1)^n d_n` (it multiplies `d_5, d_7` by `(-1)` and `d_6` by `+1`, leaving `d_5 d_7 - d_6^2` unchanged); the negativity is sign-convention-robust. | ATTEMPTED |
+| Off-axis complex-conjugate-pair continuation | Continue `Delta(beta)` via a complex-pair singularity (d-log-Pade, research-map Route 1). | This class is **generically non-Stieltjes**: a negative Hankel minor is exactly what it predicts, so it is **consistent** with — not refuted by — this result; left open as the surviving candidate, not closed here. | NOT ATTEMPTED (out of scope) |
+
+### N2 - Wall-independence audit
+
+The collapsed wall set for this no-go has **one** wall: the strict
+negativity of the single 2x2 Hankel minor `d_5 d_7 - d_6^2 < 0` of the
+framework's own exact coefficients. The integer-witness restatement
+(`m_5 m_7 - m_6^2 = -1044`) is **not** an independent wall — it is the same
+determinant pushed through a sign-preserving geometric congruence, supplied
+as a floating-point-free witness of the identical fact. What could change
+the verdict: a corrected exact value for any of `d_5, d_6, d_7` on main that
+flipped the minor's sign. None of the three coefficient values is asserted
+here to be audit-final; this note quotes them as on-main inputs and the
+audit lane retains authority over their statuses. If a coefficient were
+revised, this no-go would have to be recomputed — but within the quoted
+values the wall is a single exact inequality, not a stack of independent
+walls.
+
+### N3 - Hidden-wall scan
+
+No rhetorical phrase ("foreclosed", "no-go", "positive measure",
+"branch cut") is used as a hidden retained input. The explicit
+load-bearing inputs are exactly three, and nothing else:
+
+1. The three exact rational coefficients `d_5 = 1/472392`,
+   `d_6 = 7/5668704`, `d_7 = 5/17006112` (quoted by **value** from their
+   on-main source notes; re-checked by exact rational arithmetic in the
+   runner).
+2. Hamburger's theorem: a real sequence is a moment sequence of a positive
+   measure **only if** every Hankel principal minor is `>= 0` (textbook
+   moment-problem fact, not a framework axiom).
+3. The elementary inclusion that Stieltjes positivity implies the Hamburger
+   condition (so Hamburger failure forecloses the half-line case too).
+
+The phrase "the framework's own coefficients" is descriptive of input
+provenance, not a load-bearing dynamical premise; the treewidth-29
+infeasibility wall is mentioned only to characterise the surviving branch's
+separate blocker and is **not** used to prove this no-go.
+
+### N4 - Residual matching
+
+| cited witness | residual attacked | residual here | match? |
+|---|---|---|---|
+| `BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md` (`d_7/d_6 = 5/21 != d_6/d_5 = 7/12`) | A single **real geometric** tail (one-ratio progression) for `Delta(beta)`. | The entire **positive-measure / real-axis branch-cut** class (all positive `mu` on the real axis, not just geometric tails). | partial — strictly broader here; the geometric-tail falsification is a special case, used as a **complementary** companion, not as a load-bearing premise of this Hankel result. |
+| `GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md` (`d_5`) | (positive coefficient source) | Supplies the exact `d_5` value only. | value-only input, not a refutation witness — not load-bearing as a no-go residual. |
+| `BETA6_RESUMMATION_ANSATZ_TEST_HARNESS_BOUNDED_NOTE_2026-05-30.md` (analyticity premise, two branches) | The premise's positive-measure / real-axis sibling branch. | Exactly that sibling branch (and **only** it). | yes — the foreclosed object is precisely one of the harness's two enumerated branches. |
+
+Non-matching or value-only witnesses are explicitly marked not load-bearing
+for the no-go.
+
+### N5 - Rhetoric audit
+
+The broad words in this note are scoped as follows. "Foreclosed" /
+"no-go" attach **only** to the positive-measure / real-axis-branch-cut
+continuation family — not to beta=6, not to the resummation route, not to
+the off-axis complex-pair class. "Not a moment sequence" / "positivity
+violated" refer to the **Hamburger Hankel-PSD** condition on the specific
+window `{d_5, d_6, d_7}`, not to any statement that `Delta(beta)` is
+ill-defined, non-analytic, or sign-indefinite as a series. An over-broad
+reading — "the beta=6 plaquette has no analytic continuation" or "the
+resummation program is dead" — is **disclaimed**: a complex-conjugate-pair
+continuation is generically non-Stieltjes and remains the live surviving
+candidate. The result says one branch of an unproven premise is retired,
+nothing more.
+
+### N6 - Partial-closure path scan
+
+Non-axiom partial-closure paths that remain open after this note (none is a
+new axiom or import):
+
+- Prove `Delta(beta)` is of the off-axis complex-conjugate-pair class
+  analytically (would re-route, not contradict, this result).
+- Extend the exact connected-coefficient window beyond `d_7` to drive the
+  predictive d-log-Pade test on the surviving branch (currently blocked by
+  the retained treewidth-29 infeasibility wall
+  `su3_wigner_l3_treewidth_infeasible_2026-05-04` — an existing wall, not a
+  new axiom).
+- Supply the independent dynamical input the lane already lacks for a
+  genuine beta=6 closure.
+
+Each path is a continuation of existing work within the lane's fixed
+`A_min` and forbidden-import list; none introduces a selector, mechanism,
+or axiom.
+
+### N7 - Steelman
+
+The strongest objection: "A finite three-coefficient window cannot
+foreclose an infinite-measure family — Hamburger's theorem characterises
+**full** infinite sequences, and any finite truncation `{c_0, ..., c_N}`
+that is Hankel-PSD extends to a genuine moment sequence (the truncated
+Hamburger moment problem is solvable iff the finite Hankel matrix is PSD).
+So a finite window cannot, in general, rule the measure out." The reply:
+the truncated-moment-problem solvability theorem is a **sufficiency**
+statement for PSD windows; the **necessity** direction is unconditional —
+**any** subsequence-minor of a true moment sequence must be `>= 0`, because
+the Hankel form of a positive measure is PSD on every finite coordinate
+subspace. A strictly **negative** centred 2x2 minor is therefore an
+unconditional certificate that **no** positive-measure extension exists,
+finite window or not. The steelman correctly blocks the converse
+over-reading (a PSD window would **not** prove a positive measure exists),
+but it does not touch the scoped negative claim, which rides only on
+necessity.
+
+### N8 - Cross-cycle echo
+
+The repo's recurrent negative-claim failure mode is to test **one
+representative object** (one expression, one ratio, one continuation
+ansatz) and then declare the **whole lane** closed. This note avoids that
+echo structurally: (i) it foreclosing exactly **one** of the two
+enumerated branches of the harness's analyticity premise and names the
+surviving branch explicitly in the theorem, the scope section, and the YAML
+(`surviving_class: off_axis_complex_conjugate_pair_continuation`); (ii) it
+states up front that the complex-pair class is *consistent* with a negative
+Hankel minor, pre-empting any slide from "real-axis branch foreclosed" to
+"resummation dead"; and (iii) it records `resummation_route_status:
+not_closed` and `beta6_status: not_closed` as machine-readable scope guards.
+The claim boundary is the positive-measure / real-axis branch-cut family,
+and nothing wider.
+
 ## 5. Runner
 
 Run:

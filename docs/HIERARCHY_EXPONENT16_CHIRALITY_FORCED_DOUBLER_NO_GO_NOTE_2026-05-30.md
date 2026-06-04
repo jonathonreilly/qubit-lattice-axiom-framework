@@ -226,6 +226,143 @@ substitution) is a separate open primitive of
 No framework lane is cited as a load-bearing input; the no-go is an
 exact-algebra statement about a single time-axis kernel.
 
+## No-go discipline gate (N1-N8)
+
+**Status:** PASS for the narrow chirality-forcing-route pruning only. The
+claim being closed is **not** that `16` is wrong, **not** that the
+hierarchy formula is invalid, and **not** that primitive P2 is closed in
+either direction. It is the single statement that the framework's
+**realized** chirality `epsilon = (-1)^{x1+x2+x3}` does not anticommute
+with the time-axis Wilson `b`-term, so anomaly-exact chirality does not
+ban that term, does not force pure `sin(k4)`, and therefore does not force
+the `k4 = pi` doubler that would supply `2^4 = 16`.
+
+### N1 - Alternative route enumeration
+
+| route | what it would attempt | why it fails for this scoped no-go | marker |
+|---|---|---|---|
+| Idealized anticommuting `gamma5` bans the Wilson term | Use a per-site `gamma5` with `{gamma5, gamma4} = 0` so that `{1, gamma5} = 2*gamma5 != 0` forces `b = 0`, killing the doubler-lift and forcing `sin(k4)`. | No such per-site `gamma5` exists in the framework: the `Cl(3)` pseudoscalar `omega = gamma1 gamma2 gamma3 = i*I_2` is **central** (`NO_PER_SITE_CHIRALITY_THEOREM`), so this branch is structurally unavailable. | ATTEMPTED |
+| Realized `epsilon`-chirality bans the Wilson term | Have the actual framework chirality `epsilon` (acting as `k4 -> k4 + pi`) anticommute with `b*(1 - cos k4)` to force `b = 0`. | `1 - cos(k4 + pi) = 1 + cos(k4) != -(1 - cos k4)`; residual `= 2`, a nonzero constant in `k4`, so `epsilon` **commutes** with the even Wilson structure (`epsilon * 1 * epsilon = +1`) and cannot force `b = 0`. | ATTEMPTED |
+| Anomaly-forces-time → forces a naive (doubled) time axis | Use `ANOMALY_FORCES_TIME` to argue the new Euclidean axis must carry a naive/doubled Dirac structure, importing `2^4 = 16` as a derived consequence. | `ANOMALY_FORCES_TIME` makes the axis **exist**; it does not dictate the kernel's regulator content. The hoped-for "doubled" consequence is precisely the chirality-forcing step this note prunes — the theorem itself is untouched. | ATTEMPTED |
+| Hermiticity alone forbids the Wilson term | Argue the most general hermitian NN kernel excludes the `b`-term, leaving only `sin(k4)`. | Hermiticity fixes only `a, b ∈ ℝ`; both `gamma4*sin(k4)` (anti-hermitian × `i` absorbed) and `1*(1 - cos k4)` are admissible, so `b` is free under hermiticity. | ATTEMPTED |
+| Regulator-choice supplies the count | Import a specific lattice regulator whose species count is `16` (naive) to fix the exponent. | Species count is regulator-dependent (naive 16, Wilson 1, staggered 4, ...); this is a **substrate-external** import, explicitly out of scope here and routed to `..._REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10`. | NOT ATTEMPTED (out of scope) |
+
+### N2 - Wall-independence audit
+
+The collapsed wall set for this no-go has **one** wall: the realized
+chirality `epsilon` does **not** anticommute with the time-axis Wilson
+`b`-term (`[1 - cos(k4+pi)] + [1 - cos(k4)] = 2 != 0`; equivalently
+`epsilon * 1 * epsilon = +1` in position space). The momentum-space
+statement and the position-space cross-check are **not** two independent
+walls — they are the same algebraic fact (the constant/`(1-cos)` piece is
+`epsilon`-even) expressed in two bases. The `NO_PER_SITE_CHIRALITY` input
+is not a second wall against the conclusion; it is what **removes** the only
+competing operator (the idealized `gamma5`) that could have banned `b`. What
+could change the verdict: a framework chirality operator that is genuinely
+anticommuting on the time axis (i.e. one that flips the sign of the even
+Wilson structure). The cited theorems establish no such operator exists; if
+a future result exhibited one, this no-go would have to be revisited.
+
+### N3 - Hidden-wall scan
+
+No rhetorical phrase ("no-go", "forced", "chirality-forced", "doubler") is
+used as a hidden retained input. The explicit load-bearing inputs are:
+
+1. The most general hermitian translation-invariant NN time-axis kernel
+   `D(k4) = a*gamma4*sin(k4) + b*1*(1 - cos k4)` with `a, b ∈ ℝ`
+   (textbook lattice-fermion building blocks).
+2. The textbook fact that `sin(k4)` carries a `k4 = pi` doubler and the
+   Wilson `b*(1 - cos k4)` term lifts it (`g(pi) = 2 != 0`).
+3. `NO_PER_SITE_CHIRALITY_THEOREM` — the anticommuting per-site `gamma5`
+   does not exist (`omega = i*I_2` central). **Cited as a fact, not
+   restated as a wall; it removes a competing route, it does not itself
+   prove the conclusion.**
+4. `STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM` — the realized chirality is
+   the vector-like sublattice parity `epsilon`, acting as `k4 -> k4 + pi`.
+
+The proof's one decisive step is the elementary identity
+`1 - cos(k4 + pi) = 1 + cos(k4)`; "Kähler-Dirac" and "vector-like" are
+descriptive labels for this fact, not additional premises. `ANOMALY_FORCES_TIME`
+is named only to identify the route being pruned (a hoped-for consequence of
+it), never as a load-bearing input to the negative result.
+
+### N4 - Residual matching
+
+| cited witness | residual attacked | residual here | match? |
+|---|---|---|---|
+| `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md` | The would-be anticommuting per-site `gamma5` (`omega = i*I_2` central). | Exactly the operator that **would** ban the Wilson `b`-term; its non-existence is what leaves `epsilon` as the only chirality. | yes — directly load-bearing (removes the only competing route). |
+| `STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM_NOTE_2026-05-02.md` | The realized vector-like `epsilon` with `{epsilon, H} = 0`, `k4 -> k4 + pi`. | The exact chirality operator tested against the Wilson term here. | yes — directly load-bearing (the operator whose action is computed). |
+| `ANOMALY_FORCES_TIME_THEOREM.md` | The existence of the derived Euclidean-time axis. | Only the **existence** of the axis (the premise of the pruned route); its consequences for the kernel are what this note prunes. | partial — the axis's existence is assumed, but no claimed *consequence* of it is used as a residual; marked not load-bearing for the negative step. |
+| `HIERARCHY_ALPHA_LM_EXPONENT_..._REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md` | Reaching `16` needs a substrate-external regulator choice. | Companion that *receives* the open count after this route is pruned. | not load-bearing here — consistency companion, not a premise of this no-go. |
+
+Non-matching / consistency-only witnesses are marked not load-bearing for
+the negative step.
+
+### N5 - Rhetoric audit
+
+The broad words are scoped as follows. "No-go" / "forced" attach **only**
+to the proposition "anomaly-exact chirality forces the time-axis doubler
+and hence `2^4 = 16`" — the negation of which is the entire content. "Cannot
+force `b = 0`" refers specifically to the realized `epsilon` acting on the
+even Wilson structure, **not** to a claim that no operator anywhere could
+lift or kill the doubler. An over-broad reading — "`16` is wrong", "the
+hierarchy formula is invalid", "P2 is closed", or "the staggered-Dirac
+realization gate is closed" — is **explicitly disclaimed** in the Boundary
+section: this note tightens the **route to** P2 without changing the status
+of P2, P3, or any cited authority, and the determinant-power/coupling-power
+mismatch (Section 4) shows even a count closure would leave P3 open by `~16`
+orders.
+
+### N6 - Partial-closure path scan
+
+Non-axiom partial-closure paths that remain open after this note (none is a
+new axiom or import):
+
+- Supply the count `16` via an explicitly **imported** substrate-external
+  regulator choice (routed to the regulator-dependence companion); this is
+  an admitted import, not a derivation, and is out of scope here.
+- Close P2 by a **different** (non-chirality) route to the doubler count
+  on the derived time axis.
+- Close P3 (the `u_0^16 -> alpha_LM^16` magnitude substitution), which this
+  note shows is independent of the count by `~16` orders.
+
+Each is a continuation of the existing hierarchy-formula program; none
+posits a new framework axiom or selector. The note explicitly states it
+"closes one **route to** the count; it does not supply the count."
+
+### N7 - Steelman
+
+The strongest objection: "Kähler-Dirac / staggered fermions **do** realize
+an exact chiral symmetry and **do** exhibit physical taste multiplicity —
+the continuum limit of the staggered time axis carries `2^{d/2}` (or `4` in
+4D) tastes — so a vector-like `epsilon` is perfectly compatible with a
+doubler count, and the count could re-enter through taste multiplicity even
+without an anticommuting `gamma5`." The reply: this is precisely why the
+note's claim is the **narrow** one it is. The note does **not** deny taste
+multiplicity or a doubler count; it denies only that **anomaly-exact
+chirality forces** the Wilson term off, which is the specific mechanism the
+hoped-for "anomaly → doubler → 16" route needed. A taste count that arises
+from staggered/regulator structure is exactly the **substrate-external
+regulator choice** the note hands to the regulator-dependence companion —
+it is an import, not a chirality-forced derivation. The steelman therefore
+reinforces, rather than breaks, the scoped claim: the count may well be
+`16`, but not *because chirality forces it*.
+
+### N8 - Cross-cycle echo
+
+The repo's recurrent negative-claim failure mode is to test **one
+representative operator** and then declare a whole structural identification
+(here, the entire exponent `16`) closed or refuted. This note avoids that
+echo structurally: (i) it prunes exactly **one route to** the count
+(anomaly-exact chirality forcing the doubler) and says so in the title,
+scope line, claim, and YAML (`reachability_to_target: prunes`); (ii) it
+states up front, repeatedly, that it does **not** prove `16` is wrong and
+does **not** close P2; (iii) it imports the **separate** P3 magnitude caveat
+(Section 4) to forestall any slide from "count route pruned" to "`v` no
+longer rides the gate" — `v` still rides **both** P2 and P3; and (iv) it
+keeps every cited authority marked "not retracted or modified." The claim
+boundary is the chirality-forcing route to the count, and nothing wider.
+
 ## 6. Verification
 
 The companion runner

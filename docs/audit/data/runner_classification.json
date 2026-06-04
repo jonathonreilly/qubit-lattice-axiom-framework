@@ -8725,7 +8725,7 @@
       "runner": "scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py"
     },
     "flavor_native_beta_no_half_attractor_note_2026-05-30": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
@@ -34691,7 +34691,7 @@
       "exists": true
     },
     "scripts/flavor_native_beta_no_half_attractor_2026_05_30.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "flavor_native_beta_no_half_attractor_note_2026-05-30"
       ],

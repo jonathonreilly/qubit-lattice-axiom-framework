@@ -57389,10 +57389,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "d69aff62d6c5e4e599b5e30f6205fb725b9ebabfa94937e31ec32c80ce4900b6",
+      "note_hash": "1c25df0b408af815b4ed7d0030986b183ed8cafdb8b2948daa799b24a0eae657",
       "path": "docs/FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_native_beta_no_half_attractor_2026_05_30.py",
-      "title": "Flavor \u2014 native \u03b2-function has no \u00bd-attractor; the last route closes (structural reason)"
+      "title": "Flavor \u2014 Supplied `tanh^4` Flow Has No `r=1/2` Fixed Point"
     },
     "flavor_native_double_shift_corner_coupling_note_2026-05-30": {
       "claim_id": "flavor_native_double_shift_corner_coupling_note_2026-05-30",

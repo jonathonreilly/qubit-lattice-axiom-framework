@@ -1,0 +1,20 @@
+slug: brannen-phase-gap-repair-20260604
+branch: physics-loop/brannen-phase-gap-repair-20260604
+base: origin/main
+started: 2026-06-04
+target_status: open
+active_route: PDG phase-gap arithmetic repair
+hard_residual: >
+  The audited conditional open-gate row requests correction of the displayed
+  PDG phase gap to delta_PDG - 2/9 = 0.000048265... while preserving the
+  open residuals for deriving delta=2/9 and the sqrt(2) coefficient.
+files_touched:
+  - docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md
+  - .claude/science/physics-loops/brannen-phase-gap-repair-20260604/
+trace_gate_classification: direct_blocker_closure
+current_surface_status: open
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: >
+  Independent reviewer/auditor should re-audit the same open-gate row after
+  the source note's displayed PDG phase-gap comparator is corrected.

@@ -1,0 +1,24 @@
+slug: koide-signed-singular-scope-20260604
+branch: physics-loop/koide-signed-singular-scope-20260604
+base: origin/main
+started: 2026-06-04
+target_status: exact-support
+active_route: one-negative inequality scope repair
+hard_residual: >
+  The audited conditional row says Corollary C2 and the one-flip summary used
+  an overbroad '< 2/3' inequality. The general theorem should state
+  Q(V) < Q(S) = (1+2r)/3, with '< 2/3' only at r=1/2, and the runner should
+  include a non-r=1/2 counterexample/regression.
+files_touched:
+  - docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md
+  - scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py
+  - logs/runner-cache/frontier_koide_signed_vs_singular_value_readout_narrow.txt
+  - .claude/science/physics-loops/koide-signed-singular-scope-20260604/
+trace_gate_classification: direct_blocker_closure
+current_surface_status: exact-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: >
+  Independent reviewer/auditor should re-audit the same algebraic row after
+  the one-negative inequality is corrected and the non-r=1/2 regression is
+  present in the runner/cache.

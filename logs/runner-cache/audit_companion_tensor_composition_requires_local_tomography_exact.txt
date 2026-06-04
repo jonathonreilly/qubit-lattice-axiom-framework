@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py
+runner_sha256: 3971d2ce6b8b114e5b64fd5711b9072901282ae0ead52f5f22c458fb6e8845ef
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
+PASS - N1 ordinary generated complex tensor product is locally tomographic: 16 = 4*4
+PASS - N2 local M2(C) embeddings are faithful: each local image has rank 4
+PASS - N3 operational locality holds: the two local images commute
+PASS - N4 local products span only diagonal M4(C): rank 16, full M4(C) oplus M4(C) rank 32
+PASS - N5 central sector observable I4 oplus -I4 commutes with local products but is outside their span
+PASS - N6 NO-GO: same local complex qubits plus locality do not force generation/local tomography
+PASS - N7 rebit comparator: real tensor product is not locally tomographic, 3*3 = 9 != 10
+PASS - N8 ordinary complex tensor product has shared scalar i
+
+8 PASS, 0 FAIL
+Narrow no-go verified: operational locality with faithful local M_2(C) copies does not by itself force the ordinary generated tensor product or local tomography. A local-tomography/no-extra-global generation premise is the exact residual.
+
+----- stderr -----
+

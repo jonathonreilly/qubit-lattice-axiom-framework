@@ -1,0 +1,46 @@
+/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[PASS] (S1) Λ is a finite subset of Z^3 — finite cardinality
+       |Λ| = 8; finite block of Z^3 substrate
+[PASS] (S3) empty-collection normalization: F(∅) = 1
+       F(∅) = (1+0j)
+[PASS] (S4a) F(Λ) is a finite complex scalar
+       F(Λ) = -3461.12-4875.39j
+[PASS] (S4b) Berezin integral identity: det M = Σ_σ sign(σ) Π_i M[i, σ(i)] on small principal block
+       Leibniz expansion matches det on |Λ'|=4 block
+[PASS] (S5) multiplicative block structure: F(Λ_1 ⊔ Λ_2) = F(Λ_1) · F(Λ_2) over random partitions
+       12 random partition trials; worst |F_disj - F_1·F_2| / |F_1·F_2| = 1.21e-15
+[PASS] (S6) F(∅) = 1 across multiple random (D, j) seeds
+       0x0 determinant convention is seed-independent
+[PASS] additive readout consistency: I[Λ_1 ⊔ Λ_2] = I[Λ_1] + I[Λ_2] with I = log|F|
+       10 random splits; worst |I_disj - (I_1+I_2)| = 8.88e-16
+[PASS] additive baseline: I[∅] = log|F(∅)| = log 1 = 0
+       I[∅] = 0.0
+[PASS] non-Hermitian D: (S5) multiplicative block structure still holds
+       ||D - D†||_F = 16.8 (manifestly non-Hermitian); rel err = 2.04e-16
+[PASS] Step 4.3.c: F(Λ') is invariant under perturbations of OFF-block entries of D
+       |F_before - F_after| = 0.00e+00
+[PASS] hostile-audit: trace-surface counterexample CORRECTLY FAILS multiplicativity
+       |Tr(M_ab) - Tr(M_a)·Tr(M_b)| = 8.68 >> 0; test discriminates
+[PASS] scale-invariance: (S5) holds at larger n = 12 with fresh seed
+       n=12, |Λ_1|=6, |Λ_2|=6; rel err = 1.50e-15
+[PASS] transitivity: I[Λ_a ⊔ Λ_b ⊔ Λ_c] = I[Λ_a] + I[Λ_b] + I[Λ_c] for tripartition
+       |Λ_a|=3, |Λ_b|=2, |Λ_c|=3; |I_tri - sum| = 0.00e+00
+[PASS] (S4a) single-site degenerate: F({x}) = D_xx + j_x
+       F({3}) = 0.60975-0.718977j, expected 0.60975-0.718977j
+[PASS] hostile-audit: (S4a) realization FAILS if D contains Inf, as it should
+       F_bad = (nan+nanj); realization correctly rejects non-finite operator
+[PASS] source-free J=0 also satisfies (S5): F = det(D) multiplies over blocks
+       J=0 sanity: rel err = 5.15e-16
+[PASS] real-D sanity: (S5) holds for real-valued D
+       rel err = 1.84e-15
+[PASS] F is well-defined on every sub-collection of size ≤ 4
+       163/163 sub-collections of size ≤ 4 give finite F
+[PASS] cite-check: all load-bearing authority docs reachable on origin/main
+       checked 5 paths; missing: none
+
+SCORECARD PASS=19 FAIL=0
+FACTOR 2 REALIZATION: finite-block KS Grassmann Z[J] = det(D+J) IS a
+multiplicative finite scalar record-readout surface satisfying (S1)–(S6).
+Record axiom's precondition is met. Does not promote downstream rows;
+does not discharge Factors 1, 3, 4a, or 4b; does not assign audit status.

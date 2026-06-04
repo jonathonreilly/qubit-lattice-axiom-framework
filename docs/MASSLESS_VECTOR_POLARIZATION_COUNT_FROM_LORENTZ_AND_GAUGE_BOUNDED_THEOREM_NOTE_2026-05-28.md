@@ -410,6 +410,116 @@ abstract massless abelian / non-abelian gauge boson.
   it does not promote the parent g_star note or its parent SM
   relativistic dof import note. Effective status remains pipeline-owned.
 
+## 9a. No-go discipline gate (N1-N8)
+
+**Status:** PASS for the bounded `4 - 1 - 1 = 2` scope only. This is a
+positive bounded identity, but it carries explicit foreclosure statements —
+the entire `9. What this theorem does NOT close` section, the massive/non-null
+contrast (`4 - 1 - 0 = 3`, R8), and the "does NOT derive" / "not in scope"
+phrasing — so the no-go discipline applies to those boundary claims. The claim
+being asserted is the per-momentum-mode polarization count `2` over
+admitted-context (AC1)-(AC5) plus (L1)-(L3); the foreclosures only deny that
+this count derives the physical context it admits, or that it is the massive
+count. Nothing here is a no-go against any physical derivation of signature,
+gauge invariance, the SM gauge group, or the massive-vector count.
+
+### N1 - Alternative route enumeration
+
+| route | what it would attempt | why it fails for this scoped claim | marker |
+|---|---|---|---|
+| Drop the residual orbit | Reach `2` from the Lorenz constraint alone (`4 - 1`). | The Lorenz constraint alone gives `3`; the second `-1` requires the residual gauge orbit `epsilon^mu ~ epsilon^mu + c k^mu`, which is non-trivial only because `k^2 = 0` makes `k^2 lambda = 0` hold for all `lambda` (the massless/null property). | ATTEMPTED |
+| Massive read | Apply the same arithmetic at `k^2 = m^2 != 0` and still get `2`. | At `k^2 != 0` the residual condition `k^2 lambda = 0` forces `lambda = 0`, so the orbit is trivial and the count is `4 - 1 - 0 = 3` (R8); the `2` is specific to the null shell. | ATTEMPTED |
+| Derive the admitted context | Source (AC1) signature / (AC4) gauge orbit / (AC5) Lorenz slice from the framework so the count is fully framework-derived. | The note explicitly admits AC1-AC5 as standard relativistic-QFT context; the framework's `Z^3` / Wilson authorities treat narrow lattice pieces, not the continuum-Minkowski signature or continuum gauge orbit, so they are non-load-bearing reader pointers (Counterfactual §12.5-12.6). | ATTEMPTED |
+| Gauge-slice dependence | Argue the count `2` is an artifact of choosing Lorenz gauge. | Coulomb, axial, and light-cone slices each give the same `2` by the same rank reduction (Counterfactual §12.2); the count is gauge-invariant, so no single-slice escape changes it. | ATTEMPTED |
+| Gauge-group dependence | Make the count depend on `U(1)` vs `SU(2)` vs `SU(3)`. | The per-momentum rank count is per generator-index value; each adjoint component contributes the same factor `2` from the identical linearized analysis (AC4, R7). | ATTEMPTED |
+| Real-dof read | Use the real component count `8` (or helicity-amplitude `4`) to change the answer. | The load-bearing object is `dim_C` of the equivalence-class space `C^4 / (Lorenz + residual)`; the real-dof and pre-gauge counts are bookkeeping conventions, not the asserted quotient dimension. | ATTEMPTED |
+
+### N2 - Wall-independence audit
+
+The collapsed wall set for the bounded count has a single wall: at a nonzero
+null `k^mu` (`k^2 = 0`), the Lorenz constraint `k_mu epsilon^mu = 0` is rank 1
+and the residual shift `epsilon^mu ~ epsilon^mu + c k^mu` is a non-trivial
+rank-1 orbit (non-trivial precisely because `k^2 = 0`), giving
+`4 - 1 - 1 = 2`. The two `-1`s are not independent retained walls; both are
+consequences of the single null-momentum hypothesis acting on the admitted
+(L1)-(L3) structure. The only thing that flips the count is leaving the null
+shell (`k^2 != 0` -> the orbit collapses, count `3`), which moves the claim to
+the explicitly out-of-scope massive case rather than refuting this one.
+
+### N3 - Hidden-wall scan
+
+The words "bounded", "standard", "textbook", "transverse", and "physical" are
+not used as hidden retained inputs. The explicit load-bearing inputs are the
+admitted context (AC1)-(AC5) — Lorentzian `R^{3,1}` signature, real vector
+field, plane-wave decomposition on `k^2 = 0`, continuous abelian gauge orbit,
+Lorenz-gauge constraint — plus the field structure (L1)-(L3), all enumerated in
+§3 and the Theorem box. No PDG comparator, no fitted constant, no lattice
+plaquette, no staggered-Dirac gate, and no Standard Model inventory is consumed
+(§7 forbidden-imports check); the framework `Z^3`/Wilson authorities are named
+only as non-load-bearing reader pointers (§9, §11, §12).
+
+### N4 - Residual matching
+
+| cited witness | residual attacked | residual here | match? |
+|---|---|---|---|
+| Parent g_star proof-walk premise P2 ("Two transverse polarizations per massless vector") | The per-massless-vector count `2` carried as an unattributed admission. | The same count `2`, supplied as a bounded rank-arithmetic identity over (AC1)-(AC5). | yes |
+| `MASSLESS_VECTOR_NULL_QUOTIENT_EXACT_LINEAR_ALGEBRA_THEOREM_NOTE_2026-06-03.md` | The abstract textbook quotient step `dim_C(ker L_k / span{k}) = 2`. | The same algebraic core, here embedded in the physical bounded theorem (the abstract note is the one-hop support for this step). | yes |
+| `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md` "transverse polarizations" column | The `2`-per-gauge-boson column label in the declared inventory. | This note supplies the algebraic identity behind that label; it does not re-derive the inventory itself. | yes |
+| AC1-AC5 physical admissions (signature, gauge orbit, Lorenz slice) and the parent's P1 SM gauge content | The physical derivation of the admitted relativistic-QFT context. | NOT attacked; the note admits these as context and disclaims deriving them (§9). | no |
+
+The non-matching witnesses are scope markers, not load-bearing support for the
+bounded count.
+
+### N5 - Rhetoric audit
+
+"Does NOT close" / "not in scope" / "does not derive" are scoped to the
+specific admitted contexts (Lorentzian signature, continuous gauge invariance,
+Lorenz-gauge selection, the SM gauge group) — they assert only that the count
+`2` does not by itself produce those, not that the framework can never derive
+them. "Exactly `2`" is scoped to the per-momentum-mode massless count under
+(L1)-(L3); the massive count is explicitly `3`. "Massless little group" /
+"helicity" appears only in the §11 Wigner cross-context, which is labeled
+non-load-bearing. Read over-broadly — as "this forecloses a framework
+derivation of gauge invariance" or "this is the only path to the count" — the
+claim would be wrong; both readings are disclaimed (the Wigner path is an
+independent route to the same `2`).
+
+### N6 - Partial-closure path scan
+
+Open non-axiom partial-closure paths remain for everything the note declines to
+derive: a retained framework bridge for AC1 (Lorentzian signature), AC4
+(continuum gauge orbit), and AC5 (Lorenz slice) is exactly the
+`missing_bridge_theorem` repair flagged by the 2026-05-28 audit, and is a live
+positive task. Supplying any of these would upgrade the row from
+bounded-with-admitted-context toward retained, not close it. This note calls
+none of these paths a new axiom; it takes the split path (load-bearing
+rank-arithmetic core, admitted physical context) precisely to keep them open.
+
+### N7 - Steelman
+
+The strongest objection is that the note "smuggles physics" by admitting
+AC1-AC5 and then presenting `2` as if derived. The honest framing answers it:
+the load-bearing class-A step is the pure rank count `4 - 1 - 1 = 2` with zero
+ledger dependencies, and AC1-AC5 are declared admitted context, not promoted to
+retained — the same admission posture as the parent's P1. A reviewer could
+still insist the whole construction is "just textbook QFT"; that is true and is
+the point — the bounded claim is only that, given the admitted setup, the count
+is `2` as an algebraic identity rather than an unattributed premise. The
+steelman blocks any claim that this note derives its physical context; it does
+not break the scoped bounded count.
+
+### N8 - Cross-cycle echo
+
+The repo's recurrent overclaim failure mode is to verify one representative
+configuration (here, the canonical null frame `k^mu = (omega, 0, 0, omega)`)
+and then declare a whole physical lane — Lorentz-signature, gauge-invariance,
+or SM-content — closed. This note avoids that echo by verifying the count at
+symbolic null momentum, across gauge-slice and gauge-group independence checks,
+and against the massive/non-null contrast (R8), while §9 and §12 pin the claim
+to the bounded count and explicitly refuse to close the signature, gauge,
+SM-group, massive-vector, and downstream-cosmology lanes. The bounded claim is
+the polarization count `2` only; no admitted-context derivation is foreclosed.
+
 ## 10. Verification
 
 ```bash

@@ -1,0 +1,26 @@
+loop_slug: three-gen-no-proper-quotient-scope-repair-20260604
+branch: physics-loop/three-gen-no-proper-quotient-scope-repair-20260604
+base: origin/main
+started_at: 2026-06-04
+target_claim_id: three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26
+target_status: bounded-support
+actual_current_surface_status: bounded-support repair proposal
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: "repair audited scope/formula defects without changing ledger status"
+files_touched:
+  - docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  - scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py
+  - logs/runner-cache/three_gen_no_proper_quotient_via_burnside_characters_runner.txt
+open_imports:
+  - "Independent audit must decide whether the repaired packet can move from audited_conditional."
+no_go_routes: []
+checks:
+  - "PYTHONPATH=scripts python3 scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py"
+  - "python3 -m py_compile scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py"
+  - "git diff --check"
+pr_status: pending
+next_exact_action: "Commit, push, and open review PR."
+stop_condition: "PR opened and verified."

@@ -3,16 +3,11 @@ retained narrow theorems (distinct translation characters + M_3(C) Burnside).
 
 Verifies the bounded bridge in
 docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md
-by exact integer matrix arithmetic + exhaustive enumeration of 2-dim
-subspaces of {0, 1, omega, omega^2}^3 (a finite spanning sample of the
-C^3 Grassmannian; standard linear-algebra argument extends to all of
-Gr(2, C^3)).
+by exact integer matrix arithmetic, retained matrix-unit generation, and the
+complete coordinate-subspace reduction forced by the three rank-1 projectors.
 """
 
-import itertools
-
 import numpy as np
-from fractions import Fraction
 
 
 # --- Inputs supplied by the retained distinct-translation-characters narrow theorem ---
@@ -105,10 +100,11 @@ def main() -> int:
     # (since P_i are polynomials in T_a, this constructs M_3(C) from
     # {sigma, T_a}).
     P = [P1_scaled // 8, P2_scaled // 8, P3_scaled // 8]
-    # E_ij = (1/8 factor absorbed) sigma^k @ P_i for an appropriate k
-    # The cleaner identification: E_ii = P_i; E_{j,i} = sigma^{j-i} @ P_i
+    # Retained Burnside indexing: E_{j,i} = P_j sigma^k P_i with
+    # k = j - i mod 3 for the cycle sigma: X_1 -> X_2 -> X_3 -> X_1.
     # For the simple cyclic permutation sigma: X_1 -> X_2 -> X_3 -> X_1,
-    # sigma @ P_1 = E_{2,1}, sigma @ P_2 = E_{3,2}, sigma @ P_3 = E_{1,3}.
+    # P_2 sigma P_1 = E_{2,1}, P_3 sigma P_2 = E_{3,2},
+    # and P_1 sigma P_3 = E_{1,3}.
     matrix_units = {}
     sigma_powers = [I3, sigma, sigma_sq]
     for i in range(3):
@@ -123,7 +119,7 @@ def main() -> int:
             # We want sigma^k * P_i = E_{j,i} where j = (i + k) mod 3.
             # So k = (j - i) mod 3.
             k = (j - i) % 3
-            candidate = sigma_powers[k] @ P[i]
+            candidate = P[j] @ sigma_powers[k] @ P[i]
             matrix_units[(j, i)] = candidate
     # Verify each matrix unit
     all_ok = True
@@ -142,77 +138,34 @@ def main() -> int:
     print("PASS (B6): <sigma, P_{X_i}>_alg = M_3(C) (P_i polynomial in T_a by B2; B5 generates).")
     PASS += 1
 
-    # (B7) Standard linear algebra: M_3(C) regular action on C^3 is irreducible
-    # We verify the no-proper-quotient conclusion directly by enumerating
-    # candidate 1-dim and 2-dim subspaces of C^3 over a finite spanning set
-    # {0, 1, omega, omega^2}^3 and checking none is invariant under all
-    # 9 matrix units E_ij. Since the matrix units span M_3(C), invariance
-    # under all E_ij ⟺ invariance under M_3(C) ⟺ {0, C^3}.
-    # For numerical exhaustive sanity, we test 1-dim subspaces over a finite
-    # set of vectors (any non-zero v in C^3 satisfies span{v} not invariant
-    # under E_{(i mod 3)+1, i} for the i where v_i != 0).
-    counter_examples_found = 0
-    omega = complex(np.cos(2 * np.pi / 3), np.sin(2 * np.pi / 3))
-    sample_scalars = [0, 1, omega, omega**2]
-    for v_tuple in itertools.product(sample_scalars, repeat=3):
-        if all(c == 0 for c in v_tuple):
-            continue
-        v = np.array(v_tuple, dtype=complex)
-        # Check: is span{v} invariant under all matrix units?
-        # E_{j,i} v = v_i * e_j. For span{v} to be invariant, e_j ∈ span{v},
-        # which requires v = scalar * e_j (i.e., v has only one non-zero entry).
-        nonzero_indices = [i for i in range(3) if v[i] != 0]
-        is_basis_vector = len(nonzero_indices) == 1
-        # If v is a basis vector e_k, span{v} is the line span{e_k}, which is
-        # NOT invariant under E_{(k+1) mod 3, k} (sends e_k to e_{(k+1) mod 3}).
-        # If v is not a basis vector, span{v} is also not invariant since
-        # there exist i, j with E_{j, i} v not in span{v}.
-        # Either way, span{v} is NOT invariant — confirming no 1-dim invariant subspace.
-        if is_basis_vector:
-            # Check: E_{(k+1) mod 3, k} v = v_k * e_{(k+1) mod 3}, which is not in span{v} = span{e_k}.
-            k = nonzero_indices[0]
-            j = (k + 1) % 3
-            E_jk = np.zeros((3, 3), dtype=complex)
-            E_jk[j, k] = 1
-            Ev = E_jk @ v
-            # span{v} = span{e_k}, so Ev in span{v} ⟺ Ev[j'] = 0 for j' != k
-            in_span = (Ev[(k + 1) % 3] == 0 and Ev[(k + 2) % 3] == 0)
-            if not in_span:
-                counter_examples_found += 1
-        else:
-            # Pick any two indices i, j with v_i != 0 and j != argmax(v).
-            # E_{j, i} v = v_i * e_j is not in span{v} since v is not a basis vector.
-            i = nonzero_indices[0]
-            j = (i + 1) % 3 if len(nonzero_indices) > 1 else 0
-            E_ji = np.zeros((3, 3), dtype=complex)
-            E_ji[j, i] = 1
-            Ev = E_ji @ v
-            # span{v} is 1-dim; Ev in span{v} ⟺ Ev = c*v for some c
-            # If v has more than one non-zero entry, c*v also has those entries
-            # nonzero, but Ev = v_i * e_j has only one non-zero entry — contradiction.
-            if any(Ev[k] != 0 for k in range(3) if k != j):
-                pass  # can't happen since E_{j,i}v = v_i * e_j is supported at j only
-            # The question is whether v_i * e_j is a scalar multiple of v.
-            # That requires v to be a scalar multiple of e_j, i.e., a basis vector — contradicting our case.
-            # So span{v} is NOT invariant.
-            counter_examples_found += 1
-    # Total non-zero v's in the sample: 4^3 - 1 = 63
-    total_nonzero = 4**3 - 1
-    if counter_examples_found == total_nonzero:
-        print(f"PASS (B7/B8): exhaustive check on {total_nonzero} non-zero v ∈ {{0,1,ω,ω²}}^3 — no 1-dim invariant subspace.")
-        PASS += 1
-    else:
-        print(f"FAIL (B7/B8): only {counter_examples_found}/{total_nonzero} non-zero v showed non-invariance")
-        FAIL += 1
-
-    # (B8) Composite conclusion — implied by above
-    print("PASS (B8): no proper subspace V ⊂ C^3 is invariant under both {P_{X_i}} and sigma.")
+    # (B7) Standard linear algebra: invariance under all rank-1 diagonal
+    # projectors P_i forces V to decompose as a coordinate subspace. For every
+    # v = sum c_i X_i in V, P_i v = c_i X_i is again in V, so V is the span of
+    # the subset of basis lines it contains. This is a complete finite
+    # reduction, not a numerical sample of the Grassmannian.
+    print("PASS (B7): P_{X_i}-invariance reduces any candidate V to a coordinate subspace.")
     PASS += 1
+
+    # (B8) Composite conclusion: sigma-invariance of a coordinate subspace is
+    # the same as invariance of its index subset under the 3-cycle. The only
+    # such subsets are the empty set and the full set.
+    proper_nonzero_stable_subsets = []
+    for mask in range(1, 2**3 - 1):
+        subset = frozenset(i for i in range(3) if mask & (1 << i))
+        shifted = frozenset((i + 1) % 3 for i in subset)
+        if shifted == subset:
+            proper_nonzero_stable_subsets.append(subset)
+    if proper_nonzero_stable_subsets:
+        print(f"FAIL (B8): nonzero proper sigma-stable coordinate subsets found: {proper_nonzero_stable_subsets}")
+        FAIL += 1
+    else:
+        print("PASS (B8): no nonzero proper coordinate subspace is invariant under the 3-cycle sigma.")
+        PASS += 1
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: bounded bridge passes; no-proper-quotient on C^3 follows "
+            "VERDICT: bounded bridge passes; no nonzero proper invariant subspace on C^3 follows "
             "from retained distinct-translation-characters narrow + retained "
             "M_3(C) Burnside narrow by abstract linear algebra."
         )

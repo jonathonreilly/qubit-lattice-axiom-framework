@@ -1,0 +1,150 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_yt_ward_record_axiom_invariance_2026_06_04.py
+runner_sha256: 464175f32add55711e9884f95d9162008b11082e78c7bec06a69e7162f5214ee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+YT Ward H_unit Record-Axiom Invariance Companion Runner
+========================================================================
+Repo root: /private/tmp/cl3-review-open-20260604
+Parent note: /private/tmp/cl3-review-open-20260604/docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+Companion source note: docs/YT_WARD_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing matrix-element value
+      y_t_bare = 1/sqrt(6) is invariant under the 2026-06-04
+      Record-axiom adoption (MINIMAL_AXIOMS_2026-06-04.md).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no status promotion, no Record-axiom content asserted.
+
+========================================================================
+BLOCK 1: Q_L = (2,3) block dimension N_c * N_iso = 6
+========================================================================
+  Inputs: N_c = 3 (Cl(3) color), N_iso = 2 (su(2) weak)
+  Both Lattice+Quantum-only content (D1-D8 of parent note).
+  PASS dim_QL_equals_6 :: computed dim(Q_L) = 6
+
+========================================================================
+BLOCK 2: Canonical kinetic Z^2 = N_c * N_iso = 6
+========================================================================
+  Free 2-point function:
+    <phi(x) phi(y)>_{free,conn} = (1/Z^2) * Sum_{alpha,a,beta,b}
+                                    <psi-bar_{alpha,a} psi_{alpha,a}
+                                     psi-bar_{beta,b} psi_{beta,b}>
+  Wick contraction yields a single (alpha=beta, a=b) singular term
+  carrying coefficient N_c * N_iso, after fermion-sign absorption.
+  PASS kinetic_index_total :: total index pairs = 36
+  PASS kinetic_index_nonzero :: diagonal pairs = 6 (= N_c * N_iso)
+  PASS Z_squared_equals_6 :: Z^2 = nonzero contractions = 6
+  PASS Z_equals_sqrt6 :: Z = sqrt(6) = 2.4494897428
+
+========================================================================
+BLOCK 3: Unit-norm singlet state |S>
+========================================================================
+  PASS singlet_state_unit_norm :: <S|S> = 1.000000000000000
+  PASS singlet_state_support_6 :: support cardinality = 6
+
+========================================================================
+BLOCK 4: Clebsch-Gordan overlap = 1/sqrt(6) on all 6 basis
+========================================================================
+  Each |alpha, a> tensor |alpha, a>* basis state has overlap with |S>:
+  PASS overlap_basis_0 :: <basis_0|S> = 0.4082482905 (target 0.4082482905)
+  PASS overlap_basis_1 :: <basis_1|S> = 0.4082482905 (target 0.4082482905)
+  PASS overlap_basis_2 :: <basis_2|S> = 0.4082482905 (target 0.4082482905)
+  PASS overlap_basis_3 :: <basis_3|S> = 0.4082482905 (target 0.4082482905)
+  PASS overlap_basis_4 :: <basis_4|S> = 0.4082482905 (target 0.4082482905)
+  PASS overlap_basis_5 :: <basis_5|S> = 0.4082482905 (target 0.4082482905)
+  PASS overlap_uniform_target :: all 6 components hit target = 0.4082482905; misses = 0
+
+========================================================================
+BLOCK 5: H_unit matrix element y_t_bare = 1/sqrt(6)
+========================================================================
+  H_unit(x) = (1/sqrt(N_c * N_iso)) * sum_{alpha,a} psi-bar_{alpha,a}(x)
+                                               psi_{alpha,a}(x)
+  y_t_bare := <0 | H_unit(0) | t-bar_{top,up} t_{top,up}>
+  PASS y_t_bare_equals_1_over_sqrt6 :: y_t_bare = 0.408248290463863 (expected 0.408248290463863)
+  PASS prefactor_clebsch :: H_unit Clebsch-Gordan weight = 0.408248290463863
+  PASS wick_amplitude_unit :: canonical fermion Wick amplitude = 1.000000000000000
+
+========================================================================
+BLOCK 6: SU(N_c=3) color-singlet Fierz coefficient = -1/(2 N_c)
+========================================================================
+  PASS fierz_identity_holds_machine_precision :: max|F - F_expected| = 5.551e-17
+  PASS singlet_channel_coeff_minus_1_over_2Nc :: F_{0,0,1,1} = -0.1666666667 (expected -0.1666666667)
+
+========================================================================
+BLOCK 7: Lorentz-Clifford scalar Fierz coefficient |c_S| = 1
+========================================================================
+  PASS trace_gamma_mu_gamma_mu_equals_16 :: tr(gamma^mu gamma_mu) = 16.000000
+  PASS gamma_mu_gamma_mu_eq_4I :: gamma^mu gamma_mu = 4*I within 1e-12
+  PASS c_S_magnitude_unit :: |c_S| = 1.0000000000 (expected 1.0)
+
+========================================================================
+BLOCK 8: Z^2 uniqueness on Q_L: (1,1) gives 6; others differ
+========================================================================
+  PASS singlet_z2_equals_6 :: (1,1) channel Z^2 = 6
+  PASS colorOctet_isoSinglet_z2_equals_8 :: (1,8) channel Z^2 = 8
+  PASS alt_(1,8)_colorOctet_isoSinglet_distinct_from_6 :: alternative (1,8)_colorOctet_isoSinglet: Z^2 = 8 != 6
+  PASS alt_(3,1)_isoTriplet_colorSinglet_quoted_9_over_2_distinct_from_6 :: alternative (3,1)_isoTriplet_colorSinglet_quoted_9_over_2: Z^2 = 4.5 != 6
+  PASS alt_(8,3)_octet_isotriplet_quoted_24_distinct_from_6 :: alternative (8,3)_octet_isotriplet_quoted_24: Z^2 = 24 != 6
+
+========================================================================
+BLOCK 9: Parent note Record-axiom usage scan (load-bearing section)
+========================================================================
+  PASS parent_note_present :: /private/tmp/cl3-review-open-20260604/docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+  PASS structural_section_start_found :: start index = 11171
+  PASS structural_section_end_found :: end index = 20232
+  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
+  PASS quantum_lattice_content_present_in_load_bearing_section :: matches >= 3: ['qubit-on-`Z^3`', 'Q_L', '1/sqrt(6)']
+
+========================================================================
+BLOCK 10: Record-axiom counterfactual: identical numeric output
+========================================================================
+  PASS with_record_axiom_y_t_bare_equals_1_over_sqrt6 :: = 0.408248290463863
+  PASS without_record_axiom_y_t_bare_equals_1_over_sqrt6 :: = 0.408248290463863
+  PASS counterfactual_outputs_identical :: |with - without| = 0.000e+00
+
+========================================================================
+BLOCK 11: Quantum and Lattice content preserved across memos
+========================================================================
+  PASS old_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-05-20.md
+  PASS new_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-06-04.md
+  PASS old_memo_has_qubit_content :: historical qubit local-algebra content present
+  PASS old_memo_has_Z3_lattice_content :: historical Z^3 lattice content present
+  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
+  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
+  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
+  PASS new_memo_Record_scope_excludes_log_det_etc :: Record axiom's own scope statement excludes the load-bearing bridges (log-det, source/action, etc.)
+
+========================================================================
+BLOCK 12: y_t_bare = 1/sqrt(6) computed four independent ways
+========================================================================
+  PASS route1_D17_prefactor :: route1 = 0.408248290463863
+  PASS route2_D11_Z_normalization :: route2 = 0.408248290463863
+  PASS route3_CG_overlap_basis0 :: route3 = 0.408248290463863
+  PASS route4_H_unit_random_basis :: route4 (basis 1) = 0.408248290463863
+  PASS all_four_routes_agree :: max pairwise diff < 1e-12
+
+========================================================================
+TOTAL PASS: 48
+TOTAL FAIL: 0
+========================================================================
+
+Companion conclusion (audit-friendly evidence only):
+  The load-bearing step of YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+  (y_t_bare = 1/sqrt(6)) uses ONLY Lattice + Quantum axiom content
+  plus standard finite-dimensional group/Clifford algebra.
+  The Record axiom (additive scalar record-readout functional) is
+  neither used nor invoked. Numeric output is identical under both
+  'Record axiom asserted' and 'Record axiom not asserted' outer
+  scopes. This runner does not re-apply the prior audit verdict;
+  it records that the arithmetic checked here is unchanged by
+  the 2026-06-04 axiom-set adoption.
+
+The audit lane decides whether to honor or re-test the prior
+verdict on the new minimal_axioms premise hash.
+
+----- stderr -----
+

@@ -44868,7 +44868,7 @@
         "cpt_exact_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9fc8e3464f27c690441d22f02c8b44cbffe426377680691c9ec85f627e95ac31",
+      "note_hash": "6818375a0424672b2dbde75064a57c3102f4a693fc6052699e9fa2616e0c392e",
       "path": "docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md",
       "runner_path": "scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py",
       "title": "Finite Z4 Staggered-Grading Trace Theorem (Bounded)"

@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py
-runner_sha256: 68d8d90af5cc3643b58b90875058346bc6624dd07395c8f4eaffe14d8bddecb7
+runner_sha256: a16baa8f6d39cc2959c71c8b69d5b683e6fd5f4953650cf20ef3571dc61c3f4b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 33.78
+elapsed_sec: 28.26
 status: ok
 ----- stdout -----
 Finite Z4 Staggered-Grading Trace Verifier
 ===========================================
 Theorem note: docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md
-Status: bounded source theorem. No audit-lane wiring.
+Current-surface: bounded-support source theorem. No audit-lane wiring.
 
 
 === V1 [W1, L=4]: heat-kernel log-Jacobian is R-linear in alpha ===
@@ -55,12 +55,19 @@ Status: bounded source theorem. No audit-lane wiring.
 [PASS] V5/L=4/t=1.0: chiral trace gauge-invariant  |A_pre - A_post| = 7.77e-15
 
 === V6 [non-trivial U: machinery + observed index, L=4] ===
+  L=4: principal (0,1)-plaquette flux quanta per (x2,x3) plane: min=1.000000, max=1.000000
+  L=4: non-(0,1) plaquette max |P-1| = 2.62e-17
+  L=4: Polyakov-loop max |P_mu-1| = 2.56e-16
   L=4: A[1, U=I]    = 8.382184e-15  (observed integer: 0)
   L=4: A[1, U_wind] = -2.442491e-15  (observed integer: 0)
-  L=4: winding background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
-[PASS] V6a/L=4: A[1, U_wind] integer-valued  A_wind = -2.442491e-15, nearest int = 0
-[PASS] V6b/L=4: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 2.50e-16
-[PASS] V6c/L=4: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 2.44e-15
+  L=4: one-quantum flux background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
+[PASS] V6a/L=4: U_wind has non-identity U(1) links  nonidentity links = 192
+[PASS] V6b/L=4: principal (0,1)-plaquette flux is one quantum  max |flux_quanta - 1| = 0.00e+00
+[PASS] V6c/L=4: all non-(0,1) plaquettes are flat  max non-(0,1) |P-1| = 2.62e-17
+[PASS] V6d/L=4: Polyakov loops close periodically  max |Polyakov-1| = 2.56e-16
+[PASS] V6e/L=4: A[1, U_wind] integer-valued  A_wind = -2.442491e-15, nearest int = 0
+[PASS] V6f/L=4: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 2.50e-16
+[PASS] V6g/L=4: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 2.44e-15
 
 === V1 [W1, L=6]: heat-kernel log-Jacobian is R-linear in alpha ===
 [PASS] V1/L=6/free/t=0.1: A[a1+a2] = A[a1] + A[a2]  residual = 0.00e+00
@@ -105,17 +112,24 @@ Status: bounded source theorem. No audit-lane wiring.
 [PASS] V5/L=6/t=1.0: chiral trace gauge-invariant  |A_pre - A_post| = 3.62e-14
 
 === V6 [non-trivial U: machinery + observed index, L=6] ===
+  L=6: principal (0,1)-plaquette flux quanta per (x2,x3) plane: min=1.000000, max=1.000000
+  L=6: non-(0,1) plaquette max |P-1| = 2.23e-16
+  L=6: Polyakov-loop max |P_mu-1| = 6.50e-16
   L=6: A[1, U=I]    = -1.593170e-14  (observed integer: 0)
   L=6: A[1, U_wind] = 6.661338e-15  (observed integer: 0)
-  L=6: winding background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
-[PASS] V6a/L=6: A[1, U_wind] integer-valued  A_wind = 6.661338e-15, nearest int = 0
-[PASS] V6b/L=6: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 9.71e-16
-[PASS] V6c/L=6: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 6.66e-15
+  L=6: one-quantum flux background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
+[PASS] V6a/L=6: U_wind has non-identity U(1) links  nonidentity links = 1080
+[PASS] V6b/L=6: principal (0,1)-plaquette flux is one quantum  max |flux_quanta - 1| = 0.00e+00
+[PASS] V6c/L=6: all non-(0,1) plaquettes are flat  max non-(0,1) |P-1| = 2.23e-16
+[PASS] V6d/L=6: Polyakov loops close periodically  max |Polyakov-1| = 6.50e-16
+[PASS] V6e/L=6: A[1, U_wind] integer-valued  A_wind = 6.661338e-15, nearest int = 0
+[PASS] V6f/L=6: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 9.71e-16
+[PASS] V6g/L=6: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 6.66e-15
 
 === V7 [size-independence of structural facts] ===
   V2-V5 are exercised at L=4 and L=6 in main().
 
-Summary: PASS=50 FAIL=0
+Summary: PASS=58 FAIL=0
 All narrow-claim checks passed.
 
 ----- stderr -----

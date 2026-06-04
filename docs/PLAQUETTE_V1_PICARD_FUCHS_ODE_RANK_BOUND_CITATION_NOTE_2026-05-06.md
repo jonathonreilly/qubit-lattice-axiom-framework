@@ -8,10 +8,41 @@
 (SUMMARY: ALL-ORDER CERTIFICATE PASS=5 FAIL=0)
 **Cached runner output:** [`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt)
 **Certificate JSON:** [`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`](../outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json)
-**Companion context notes:** `PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
-and `PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`.
+**Source packet verifier:** [`scripts/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.py`](../scripts/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.py)
+(SUMMARY: SOURCE PACKET MANIFEST PASS=52 FAIL=0)
+**Source packet verifier cache:** [`logs/runner-cache/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.txt)
+**Source packet verifier JSON:** [`outputs/su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.json`](../outputs/su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.json)
+**Companion context notes:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md)
+and [`PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`](PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md).
 The load-bearing all-order bridge for this row is the primary runner and
 certificate JSON above.
+
+## 2026-06-04 Source Packet Exposure Repair
+
+The current audit blocker asks for a non-circular all-degree
+creative-telescoping/minimal-annihilator certificate together with complete,
+untruncated primary and helper runner sources. This revision exposes the
+restricted packet as repo files instead of prose-only excerpts.
+
+**Complete source packet manifest:**
+
+- Primary all-order runner: [`scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py)
+- Finite-window helper runner: [`scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py`](../scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py)
+- Extended minimality helper runner: [`scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py`](../scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py)
+- Original ODE runner: [`scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py`](../scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py)
+- Primary all-order cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt)
+- Finite-window helper cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.txt)
+- Extended helper cache: [`logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt`](../logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt)
+- Primary all-order JSON: [`outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json`](../outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json)
+- Finite-window helper JSON: [`outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json`](../outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json)
+- Extended helper JSON: [`outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json`](../outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json)
+
+The verifier above checks that all manifest paths exist, the note names each
+path, the helper sources contain the load-bearing exact-rank functions
+`matrix_for_ansatz` and `_rank_via_numeric`, and the runner caches are
+SHA-pinned to the current untruncated source files. This does not set an audit
+verdict; it makes the existing all-order certificate packet independently
+reauditable.
 
 ## 2026-05-29 Audit Repair (all-order certificate wired)
 

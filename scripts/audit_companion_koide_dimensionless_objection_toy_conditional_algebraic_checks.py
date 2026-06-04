@@ -180,8 +180,8 @@ def part_t7_delta_countermodels() -> None:
         check(f"{name} -> delta = {expected}", value == expected, f"delta={value}")
 
 
-def part_t8_q_retained_only_blocker() -> None:
-    banner("(T8) Q retained-only blocker in-toy under (A1)+(A2)")
+def part_t8_q_admission_blocker() -> None:
+    banner("(T8) Q admission-blocker in-toy under (A1)+(A2)")
     # Counterexample: z = 1/4, w = 2/3 (non-midpoint).
     q = q_toy(Fraction(0), Fraction(1, 4))
     exp_z = z_expectation(Fraction(2, 3))
@@ -206,8 +206,8 @@ def part_t8_q_retained_only_blocker() -> None:
     )
 
 
-def part_t9_delta_retained_only_blocker() -> None:
-    banner("(T9) delta retained-only blocker in-toy under (A5)")
+def part_t9_delta_admission_blocker() -> None:
+    banner("(T9) delta admission-blocker in-toy under (A5)")
     values = {
         delta_open(Fraction(0), Fraction(0)),
         delta_open(Fraction(1), Fraction(0)),
@@ -241,8 +241,8 @@ def main() -> int:
     part_t5_endpoint_dimensions()
     part_t6_delta_selected_line()
     part_t7_delta_countermodels()
-    part_t8_q_retained_only_blocker()
-    part_t9_delta_retained_only_blocker()
+    part_t8_q_admission_blocker()
+    part_t9_delta_admission_blocker()
 
     print()
     print("=" * 88)

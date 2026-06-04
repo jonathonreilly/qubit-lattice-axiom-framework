@@ -200,10 +200,11 @@ under the named admissions; it is NOT a retained-tier blocker theorem.
 **(T9) delta in-toy admission-blocker.** Under `(A3) + (A4) + (A5)`,
 `delta = 2/9` requires the joint selection `(s_chi, c) = (0, 0)`. The
 ambient countermodels in `(T7)` show this is not the only value reachable
-inside `(A5)`; therefore `delta = 2/9` requires additional admissions
-beyond `(A1)-(A5)` to fix the selected-line + based subdomain. This is
-an in-toy admission-counting statement under the named admissions; it is
-NOT a retained-tier blocker theorem.
+inside `(A5)`; therefore `delta = 2/9` requires the additional
+selected-line and based-endpoint admissions `(A3)+(A4)` beyond `(A5)`
+alone to fix the selected-line + based subdomain. This is an in-toy
+admission-counting statement under the named admissions; it is NOT a
+retained-tier blocker theorem.
 
 ## Proof
 

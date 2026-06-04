@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 626 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1243 |
+| unaudited | 1244 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 77 |
+| ~~audited_conditional~~ | 76 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 954 |
-| `audited_conditional` | 77 |
+| `audited_conditional` | 76 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1484 |
+| `unaudited` | 1485 |
 
 | claim_type | count |
 |---|---:|
@@ -1106,7 +1106,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_emergent_chirality_no_transport_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5244,19 +5243,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** A1's HS trace pairing presents the doublet as two independent real Hermitian directions, with no A1-supplied complex structure fusing them, so equal power per real dimension gives |b|^2 = a^2, r = 1, and Q = 1.  _(class `C`)_
 - **chain closes:** False — The metric computation and the conditional r calculations close. The missing step is a bridge theorem showing that A1+HS+Hermiticity rules out any admissible complex structure on the doublet field space, not just continuous rephasing of C or complex-linearity of H_lin into the complexified operator algebra.
 - **rationale:** The runner genuinely checks the HS metric and several algebraic consequences, and the displayed numeric identities in those checks are consistent. However, the load-bearing default-mode-count claim depends on an unproved exclusion of non-U(1) or discrete/field-space complex structures on the doublet. Runner M6 hard-codes the broad obstruction as True, and M2 tests a narrower operator-symbol complex-linearity condition that the note itself admits does not settle the kinetic-metric binary.
-- **auditor confidence:** high
-
-### `flavor_doublet_rotation_exhaustive_note_2026-05-30`
-
-- **Note:** [`FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md`](../../docs/FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded audit of the operator-level claim that the hw=1 generation doublet has only discrete D3 lattice rotations plus charge-conjugation Z2, with J_cs unique up to sign and measure selection left open.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260603-024200-1afd9a35-flavor_doublet_rotation_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The enumeration is complete at the operator level: no lattice symmetry rotates the doublet beyond discrete D3 plus a real charge-conjugation Z2.  _(class `C`)_
-- **chain closes:** False — The runner gives substantive finite checks for the O_h order-4 obstruction, bit-flip exit from hw=1, and the J_cs algebra, but it does not prove that the listed operator classes exhaust all possible doublet rotations. The missing step is a formal bridge reducing projective/magnetic cocycles, algebra automorphisms, anti-unitary/time-reversal, coin, and induced-representation cases to the checked D3/Z2 actions.
-- **rationale:** The checked finite group and matrix identities are plausible within their narrow scope, and no completed-run mismatch appears in the packet. However, several PASS labels include uncomputed or merely asserted facts, including H^2(C3,U(1))=0, central cocycle descent, and collapse of anti-unitary/coin/induced representations. The displayed det_C/det_R readout numbers are also not derived from definitions in the restricted packet, although the note marks measure selection as open. The broad exhaustive-completeness conclusion therefore needs an explicit classification bridge or a narrowed claim scope before it can be clean.
 - **auditor confidence:** high
 
 ### `flavor_einselection_2sector_modulo_kreality_2026-06-02`

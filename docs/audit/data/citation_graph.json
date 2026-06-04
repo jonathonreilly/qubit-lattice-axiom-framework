@@ -57169,10 +57169,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "2462ba53557946b42b23af4947ff5a205608faadee754d01f451f6f6a91cd685",
+      "note_hash": "36b118da3e4869ec94d0cafe886372ed6a7a58ea4323744604c2193e127860b8",
       "path": "docs/FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md",
       "runner_path": "scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py",
-      "title": "Flavor \u2014 exhaustive enumeration of doublet rotations in the lattice: no new rotation, J_cs is FORCED (Schur), the free bit is now purely a measure choice"
+      "title": "Flavor \u2014 finite doublet-rotation checks: `O_h/hw=1`, bit-flip boundary, and `J_cs` uniqueness"
     },
     "flavor_einselection_2sector_modulo_kreality_2026-06-02": {
       "claim_id": "flavor_einselection_2sector_modulo_kreality_2026-06-02",

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 626 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 29 |
-| unaudited | 1235 |
+| unaudited | 1236 |
 | meta | 241 |
 | ~~audited_numerical_match~~ | 18 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 83 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 954 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 83 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 47 |
 | `audited_numerical_match` | 18 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1476 |
+| `unaudited` | 1477 |
 
 | claim_type | count |
 |---|---:|
@@ -1146,7 +1146,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | D | - |
-| `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -9944,19 +9943,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The narrowed claim closes on the supplied free-scalar spectral integral, the retained/retained_bounded one-hop authorities, and standard invariant-measure and Bessel-form identities checked within the restricted packet. The previously open Planck-scale, finite-a causal, and physical-substrate identifications are explicitly excluded from the audited scope.
 - **rationale:** The runner source contains real lattice-dispersion, boost, quadrature, Euclidean convergence, and K4-normalization computations rather than only stdout assertions, although some final summary checks are narrative check(True) statements and are not load-bearing. Independent formula checks found the Taylor sign and coefficients, the axis/diagonal split -(a^2 p^4)/18, the normalized K4 coefficient 4√π/15, and the spacelike K1 form consistent with the note's conventions. All cited authorities used load-bearingly are retained-grade under the rubric, and the source has narrowed away the earlier non-retained Planck/readout/light-cone premises.
 - **auditor confidence:** high
-
-### `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`
-
-- **Note:** [`LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Free U=1 staggered-Dirac two-point Schwinger function in the displayed taste-spectator/scalar-spectrum sector, including the a->0 SO(4) continuum propagator and O(a^2) ell=4 scalar-spectrum anisotropy.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260531-132406-9510409e-lorentz_boost_free_stagg`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The free staggered momentum operator is taken to be D~(p)=m+(i/a)Σ_mu gamma_mu sin(p_mu a), so its Clifford inverse tends as a->0 to (m-i gamma.p)/(p^2+m^2), giving SO(4)-covariant continuum Dirac/Kahler-Dirac 2-point covariance.  _(class `A`)_
-- **chain closes:** False — The algebra from the displayed D~(p) to the continuum SO(4)-covariant propagator closes. However, the displayed source action uses a kinetic normalization 1/2 rather than 1/(2a), while the derived momentum operator and runner use (i/a) sin(p_mu a); the restricted packet does not state the lattice-units rescaling/mass normalization bridge needed to make those displayed formulas identical.
-- **rationale:** The Clifford inverse, SO(4) covariance, c4=-1/3 expansion, S^3 average 1/2, axis/body-diagonal ratio 4, and H4 harmonic check are algebraically consistent within the displayed D~ sector. The source packet nevertheless has a normalization gap between the written staggered action and the momentum-space operator: without an explicit lattice-units convention or a 1/(2a) kinetic term, the claimed D~ does not follow from that displayed action as written. This is a repairable bridge/normalization defect, not a timeout or external-comparator issue.
-- **auditor confidence:** medium
 
 ### `lorentz_kernel_positive_closure_note`
 

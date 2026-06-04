@@ -14,8 +14,8 @@ their content here, and do not override their wording from here.
 {{VOCAB_HIERARCHY_TABLE}}
 
 For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
-framework primitives (layer 1), cite `MINIMAL_AXIOMS_2026-05-20.md` — do
-not redefine `Cl(3)`, `Z^3`, or `A_min` here. For external paper text
+framework primitives (layer 1), cite `MINIMAL_AXIOMS_2026-06-04.md` — do
+not redefine Lattice, Quantum, Record, `Cl(3)`, `Z^3`, or `A_min` here. For external paper text
 (layer 2), use the canonical framing paragraph and the accountability
 disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
 
@@ -76,7 +76,7 @@ Examples of ambiguous primary names to avoid on new landed surfaces:
 Use the scientific object as the name instead:
 
 - `physical Cl(3) local algebra`, not bare `A1`
-- `Z^3 spatial substrate`, not bare `A2`
+- `Lattice`, not bare `A2`
 - `Koide Frobenius-equipartition condition`, not bare `A1`
 - `Lie type A_1` or `SU(2) root-system check`, not bare `A1`
 - `DM-eta Coleman-Weinberg residual`, not bare `G1`
@@ -222,7 +222,7 @@ primitives**, not process vocabulary. Per
 is disjoint from physics. The canonical home for these names and the
 policy governing their use is:
 
-- `docs/MINIMAL_AXIOMS_2026-05-20.md` — the framework primitives themselves (Axiom 1, Axiom 2, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-05-03.md`
+- `docs/MINIMAL_AXIOMS_2026-06-04.md` — the framework primitives themselves (Lattice, Quantum, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-05-20.md`
 - [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
 
 Do not redefine, alias, or document these names here.

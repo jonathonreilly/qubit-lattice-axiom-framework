@@ -14,23 +14,27 @@ non-axiom inputs that (a) gate downstream work and (b) carry a *retained-no-go
 portfolio* (i.e. derivation has been attempted and proven hard, so closing them
 needs a yet-to-be-found mechanism). This is deliberately **separate** from:
 
-- **Framework axioms and approved primitives** (the one-qubit operator algebra
-  at every site plus the `Z^3` spatial substrate, and any explicitly approved
-  primitive such as the scale-reference primitive): foundational, never to be
-  derived; tracked in `docs/audit/data/axiom_premise_nodes.json`. These
-  dependencies chain-satisfy without bounding downstream status.
+- **Framework axioms and approved primitives** (the named Lattice, Quantum, and
+  Record axioms, and any explicitly approved primitive such as the
+  scale-reference primitive): foundational, never to be derived; tracked in
+  `docs/audit/data/axiom_premise_nodes.json`. These dependencies
+  chain-satisfy without bounding downstream status.
 - **The in-progress derivation backlog** (~110 `audited_conditional`/`unaudited`
   rows that gate downstream but have *no* no-go portfolio — they simply await
   auditing/re-grounding, not a new mechanism). That backlog is the
   conditional-dependency frontier (see Appendix), not an admission.
 
-Survey basis (live ledger, 2026-05-23): of 720 retained-grade rows, 703 have
-all-retained dependencies; only 6 non-retained inputs touch retained rows
-directly. The genuine admitted inputs gating the *bounded* corpus number ~118;
-curated to those that are irreducible (no-go portfolio) **and not vacuous**, the
-genuine admitted inputs are the **three** derivation-targets below (P1, AC_φλ,
-θ). The scale-reference primitive is no longer counted here: it is the
-explicitly approved units primitive registered in
+Current registry basis (2026-06-04): Record/P1 scalar additivity is no longer a
+Tier-A admission. It is included in the explicitly approved three-axiom
+`minimal_axioms` node, with the narrow Record boundary stated in
+`docs/MINIMAL_AXIOMS_2026-06-04.md`. The older
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not promoted: it remains a broader
+conditional parent carrying readout/log-det/modulus material beyond Record.
+
+Curated to inputs that are irreducible (no-go portfolio) **and not vacuous**,
+the genuine Tier-A admitted derivation targets are now the **two** rows below
+(AC_φλ and θ). The scale-reference primitive is likewise not counted here: it
+is the explicitly approved units primitive registered in
 `docs/audit/data/axiom_premise_nodes.json`. Two further rows (Y₀, g₀) are
 **vacuous rescaling conventions** — listed for completeness but, like the
 AC_φλ naming, explicitly **not** counted as admitted inputs (see
@@ -40,15 +44,20 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 
 | id | statement | leverage | no-go portfolio (verified `retained_no_go` rows) |
 |---|---|---|---|
-| **P1** | scalar observables are additive over independent subsystems ⇒ `W = log\|det(D+J)\|` | ~88 | `observable_principle_p1_bridge_{connes_nc_spectral, extensivity_primitive, jones_index_subfactor, locality_of_source_derivatives, tomita_gibbs_modular, structural_reframing}_..._2026-05-21` (6) |
 | **AC_φλ** | the generation **mass pattern** (the C₃-breaking phase δ) + the abstract-sector → physical-species identification. The *naming* (which sector is e/μ/τ) is a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 | **θ** | the QCD vacuum angle `θ = 0` (strong-CP) | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1); also unsolved in the Standard Model |
 
 Notes:
-- **P1** is *principle-grade* (mild): it is the extensivity/additivity that defines
-  an extensive observable; its no-go portfolio shows additivity⟺log is circular,
-  so it is a candidate to be **admitted as a stated principle** (not necessarily
-  ever "derived").
+- **Record/P1 scalar additivity retired from Tier A (2026-06-04).** The
+  owner-approved Record axiom states only that a finite scalar record
+  functional is additive over disjoint record collections, with an explicit
+  additive-baseline convention. It does not import P2/modulus, log-det,
+  source/action, measurement, Born weights, dynamics, normalization, scale, or
+  arbitrary observable identification. The old P1 parent note is therefore not
+  an axiom authority; rows that need only Record should cite
+  `MINIMAL_AXIOMS_2026-06-04.md`, while rows that need the older parent's
+  additional readout/log-det content must cite separate retained authorities or
+  remain bounded/pending.
 - **AC_φλ — de-named (the labeling itself is not an input).** The gate states
   this as a labeling bijection `π:{c₁,c₂,c₃}→L₃`, but a bijection between two
   *bare* 3-element sets is pure relabeling with **zero physical content** — the
@@ -90,9 +99,9 @@ Notes:
   explicitly approved framework primitive, registered as `scale_reference_primitive`
   in `docs/audit/data/axiom_premise_nodes.json` with source
   [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md). It is
-  irreducible by dimensional analysis: the one-qubit operator algebra on the
-  `Z^3` spatial substrate carries zero dimensionful content, so every derived
-  quantity is dimensionless or carries `[a]^n`, and exactly one dimensionful
+  irreducible by dimensional analysis: the named Lattice, Quantum, and Record
+  axioms carry zero dimensionful content, so every derived quantity is
+  dimensionless or carries `[a]^n`, and exactly one dimensionful
   reference must be supplied to fix units. A lane whose only otherwise
   non-retained dependency is this primitive is **not** bounded merely for using
   that unit reference. The primitive carries no dimensionless content and does
@@ -118,12 +127,16 @@ g₀ is the SU(3) color bare coupling (`β = 2N_c/g_bare²`, N_c=3) — differen
 gauge factors. (An earlier draft suggested merging them; that was wrong. The
 correct move is to drop *both* as vacuous conventions, not merge them.)
 
-## Rigor-pass refinement (2026-05-23)
+## Rigor-pass refinement (2026-06-04)
 
 Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
 
-- **P1, θ, AC_φλ:** stand as genuine admitted inputs (P1 principle-grade; θ
-  shared with the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
+- **Record/P1 scalar additivity:** retired from Tier A and included in the
+  approved `minimal_axioms` node as the narrow Record axiom. This retirement
+  does not promote the old `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent,
+  which contains additional non-axiom material.
+- **θ and AC_φλ:** stand as genuine admitted derivation targets (θ shared with
+  the SM; AC_φλ = δ-pattern + species bridge, naming excluded).
 - **Scale reference:** removed from Tier A and registered as the
   explicitly approved `scale_reference_primitive`. It is a units primitive, not a
   derivation-target admission and not a status-bounding dependency.
@@ -135,11 +148,11 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   explicitly shows the real/RP-half structure cannot forbid the CP-odd term, so
   θ=0 remains a genuine admission (shared with the SM).
 
-Net stratified by character: **three dimensionless admissions** — AC_φλ
-(framework-specific physics), P1 (a mild principle), θ (an SM-shared problem).
-The scale-reference primitive is the single scale-setting every physical
-theory takes, orthogonal to all of them, and cannot supply any dimensionless
-number.
+Net stratified by character: **two dimensionless Tier-A admissions** —
+AC_φλ (framework-specific physics) and θ (an SM-shared problem). Record/P1
+scalar additivity is axiom content only in its narrow finite-readout form. The
+scale-reference primitive is the single scale-setting every physical theory
+takes, orthogonal to all of them, and cannot supply any dimensionless number.
 
 ## Propagation wiring (audit-lane sidecar)
 
@@ -178,6 +191,8 @@ unretired Tier-A derivation target.
 - Does **not** add Tier-A ids to `axiom_premise_nodes.json`.
 - Does **not** treat approved primitives as Tier-A admissions; primitives and
   axioms chain-satisfy without imposing `retained_bounded`.
+- Does **not** promote `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` or any
+  readout/log-det/modulus parent wholesale into the axiom-premise registry.
 - Does **not** promote Tier-A derivation-target dependents to unbounded retained
   status; the machine policy keeps those rows bounded until the relevant
   admission is retired.
@@ -200,7 +215,9 @@ not irreducible admissions, and must not be conflated with the Tier-A registry.
 
 - `docs/audit/data/axiom_premise_nodes.json` — the existing axiom-premise
   registry this Tier-A registry parallels.
-- `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` (P1 parent),
-  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (AC_φλ parent),
+- `MINIMAL_AXIOMS_2026-06-04.md` (Lattice, Quantum, Record),
+  `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` (older conditional P1 parent, not
+  an axiom-premise node), `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  (AC_φλ parent),
   `HYPERCHARGE_IDENTIFICATION_NOTE.md` (Y₀), `G_BARE_RIGIDITY_THEOREM_NOTE.md`
   (g₀) — canonical parents / convention-reference rows for the listed items.

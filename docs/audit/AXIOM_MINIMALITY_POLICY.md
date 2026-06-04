@@ -5,17 +5,20 @@
 **Status:** binding rule for the audit lane through completion of the full
 repo audit.
 
-`A_min` is fixed for this audit: `Cl(3)` on `Z^3`, finite Grassmann /
-staggered-Dirac partition, and canonical `g_bare = 1` plaquette
-normalization. Lane closure must close from `A_min` by derivation,
-identification, bounded composition, or no-go boundary, not by amending it.
+`A_min` is fixed for ordinary audit work as the three named framework axioms
+in `docs/MINIMAL_AXIOMS_2026-06-04.md`: Lattice, Quantum, and Record. Approved
+framework primitives are tracked separately in
+`docs/audit/data/axiom_premise_nodes.json`. Lane closure must close from the
+current approved premise surface by derivation, identification, bounded
+composition, or no-go boundary, not by amending that surface inside the lane.
 
 ## 1. Disallowed moves
 - Adding `Axiom*` or an equivalent primitive, including a `Cl_4(C)`
   carrier on `P_A H_cell` or any irreducible module structure presented
   as a new axiom.
 - Rewording an existing `A_min` axiom to be more permissive or more
-  restrictive to close a lane, including PR #113's axiom-3 reading question.
+  restrictive to close a lane, including PR #113's former axiom-3 reading
+  question.
 - Framing a result as "if we just accept X as primitive, lane Y closes"
   without recording X as an unmade science-level decision.
 
@@ -32,7 +35,7 @@ identification, bounded composition, or no-go boundary, not by amending it.
 ## 3. Precedents
 - PR #186 / PR #196: `Axiom*` (`Cl_4(C)` on `P_A H_cell`) was declined as a
   forced extension; the proposed minimality theorem audit-failed at O2.
-- PR #113: the axiom-3 permissive-reading amendment is declined. The
+- PR #113: the former axiom-3 permissive-reading amendment is declined. The
   work lands only as bounded no-go inventory for `(C2-X)` and its attack
   frames.
 
@@ -47,9 +50,10 @@ this", the correct action is:
 Do not add the axiom and proceed.
 
 ## 5. Scope
-This policy applies until the full repo audit is complete. After the audit,
-axiom extension may be revisited as a separate decision. Until then, `A_min`
-is fixed.
+This policy applies until the full repo audit is complete. Owner-approved
+axiom or primitive changes are recorded below and in the machine registry.
+Until another explicit approval is recorded, the current premise surface is
+fixed.
 
 ## 6. Explicit Owner Approval For Axioms And Primitives
 
@@ -69,6 +73,26 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
   portfolios. They are tracked in `docs/audit/data/tier_a_admissions.json` and
   chain-satisfy only at `retained_bounded` until retired by a retained
   derivation.
+
+Recorded explicitly approved axiom update:
+
+- **2026-06-04 -- Record axiom.** The framework axiom set is updated to the
+  three named axioms Lattice, Quantum, and Record, with source
+  `docs/MINIMAL_AXIOMS_2026-06-04.md` and stable registry id
+  `minimal_axioms`.
+  - **Why it is admissible.** The Record axiom states only finite scalar
+    record-readout additivity over disjoint record collections. It is a narrow
+    premise about the readout surface, not a theorem about record production or
+    a route to log-det structure.
+  - **No laundering.** The older
+    `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` remains a broader conditional
+    parent and is not an axiom-premise node. Record does not import
+    P2/modulus, log-det, source/action, measurement, Born weights, time arrow,
+    normalization, scale, or arbitrary observable identification.
+  - **Scope.** Dependencies on the three framework axioms chain-satisfy without
+    bounding downstream rows. Record/P1 scalar additivity is retired from
+    Tier-A; the remaining Tier-A derivation targets are non-axiom admissions
+    and continue to bound dependents until retired by retained derivations.
 
 Recorded explicitly approved primitive:
 

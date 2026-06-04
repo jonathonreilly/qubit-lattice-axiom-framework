@@ -88,23 +88,27 @@ explicitly approved framework primitives are registered in
 without making downstream rows `retained_bounded`. Tier-A admitted derivation
 targets are registered in `docs/audit/data/tier_a_admissions.json` and
 chain-satisfy only at `retained_bounded` until retired by a retained
-derivation. The scale-reference primitive is the approved units primitive, not
-a Tier-A admission or a bounded Planck import. New axioms and new primitives
-both require explicit owner approval and a reviewed registry/policy update
-before review-loop may treat them as accepted premises.
+derivation. Record/P1 scalar additivity is now part of the approved
+`minimal_axioms` node in its narrow finite-readout form, not a Tier-A
+admission; the older `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent is not an
+axiom-premise node. The scale-reference primitive is the approved units
+primitive, not a Tier-A admission or a bounded Planck import. New axioms and new
+primitives both require explicit owner approval and a reviewed registry/policy
+update before review-loop may treat them as accepted premises.
 
-The framework baseline (per `MINIMAL_AXIOMS_2026-05-20.md`) is
-"Reality is a qubit at every lattice site" on the cubic lattice `Z^3`.
-The canonical local-algebra wording on live science surfaces is
-`one-qubit operator algebra` or equivalently `M_2(ℂ) ≅ Cl(3,0)` —
-these are co-equal labels for the same retained algebra-isomorphism
-class, supported by the retained narrow theorems
+The framework baseline (per `MINIMAL_AXIOMS_2026-06-04.md`) is the three named
+axioms Lattice, Quantum, and Record. Lattice is the cubic `Z^3` lattice with
+nearest-neighbor adjacency. Quantum is the one-qubit operator algebra at each
+site, equivalently `M_2(ℂ) ≅ Cl(3,0)` — these are co-equal labels for the same
+retained algebra-isomorphism class, supported by the retained narrow theorems
 `cl3_complexification_split_narrow_theorem_note_2026-05-10` and
 `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`. The older
 `physical Cl(3) local algebra` phrasing remains valid as the
-real-algebra reading and continues to read correctly in legacy content.
-The substrate is the `Z^3 spatial substrate`. Do not land new science
-under bare letter-number names such as `A1`, `A2`, `G1`,
+real-algebra reading and continues to read correctly in legacy content. Record
+is only finite scalar record additivity over disjoint record collections; it
+does not promote P2/modulus, log-det, source/action, measurement, Born weights,
+dynamics, normalization, scale, or arbitrary observable identification. Do not
+land new science under bare letter-number names such as `A1`, `A2`, `G1`,
 or `R3`; those labels are overloaded with axioms, assumptions, Lie
 types, lane stages, route codes, and branch blocks. Use the explicit
 scientific name on live science surfaces; archival aliases belong
@@ -557,7 +561,7 @@ Otherwise apply the narrowest honest fix:
    changing the claim boundary. Examples: write `one-qubit operator algebra`
    (or equivalently `M_2(ℂ) ≅ Cl(3,0)`, `physical Cl(3) local algebra` as
    the real-algebra reading — all co-equal labels for the same retained
-   algebra-isomorphism class), `Z^3 spatial substrate`,
+   algebra-isomorphism class), `Z^3 lattice`,
    `Koide Frobenius-equipartition condition`, or `Lie type A_1` instead of
    bare `A1` / `A2`.
 7. Update `docs/repo/ACTIVE_REVIEW_QUEUE.md` for live unresolved findings.

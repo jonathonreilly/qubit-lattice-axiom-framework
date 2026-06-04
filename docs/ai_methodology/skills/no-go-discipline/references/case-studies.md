@@ -60,7 +60,10 @@ EWSB" closes as `bounded_theorem` conditional on **three independent named
 walls**:
 
 - A-W-A: staggered-Dirac realization gate (`staggered_dirac_realization_gate_note_2026-05-03`, `open_gate`);
-- A-W-B: scalar-additivity P1 admission (`observable_principle_from_axiom_note`, `audited_conditional`);
+- A-W-B: older scalar-additivity P1/readout parent
+  (`observable_principle_from_axiom_note`, `audited_conditional`; under the
+  current framework, narrow Record additivity is an axiom, but this broader
+  parent still carries non-axiom readout content);
 - A-W-C: CPT-even phase blindness (`cpt_exact_note`, `unaudited`).
 
 **Why A-W-C is not independent of A-W-A:** the 2026-05-09 revision of
@@ -81,12 +84,15 @@ it to an explicit wall. But this identification is load-bearing for the
 proof: without it, the algebraic Klein-four orbit at L_t=4 has no claim
 on the PHYSICAL EWSB temporal block.
 
-**Honest decomposition:** the proof has **two real independent walls**
-(A-W-A staggered-Dirac realization gate, A-W-B P1 scalar additivity), plus
-**one downstream consequence** (A-W-C follows from A-W-A), plus **one
-hidden bilinear-identification admission** (the EWSB order-parameter
-identification from unaudited HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE).
-The right shape is 2 + 1 + 1, not "three independent walls."
+**Honest decomposition:** on the historical surface, the proof had **two real
+independent walls** (A-W-A staggered-Dirac realization gate, A-W-B broader
+P1/readout parent), plus **one downstream consequence** (A-W-C follows from
+A-W-A), plus **one hidden bilinear-identification admission** (the EWSB
+order-parameter identification from unaudited
+HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE). On the current surface, narrow
+Record additivity itself is no longer a wall; any P2/log-det/readout content
+from the older parent remains separate. The right shape is not "three
+independent walls."
 
 **Which N-checks would have caught this:**
 

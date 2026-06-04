@@ -1,0 +1,27 @@
+slug: source-resolved-green-kernel-repair-20260604
+branch: physics-loop/source-resolved-green-kernel-repair-20260604
+base: origin/main
+started: 2026-06-04
+target_status: bounded-support
+active_route: source-resolved Green kernel convention repair
+hard_residual: >
+  Two audited conditional source-resolved Green rows cite a runner-artifact
+  issue: the notes/runner strings phrase the Green kernel as distance r versus
+  softened rho+eps, while the executable code uses the softened radius in both
+  exponent and denominator.
+files_touched:
+  - docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md
+  - docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md
+  - scripts/source_resolved_exact_green_pocket.py
+  - scripts/source_resolved_propagating_green_pocket.py
+  - logs/runner-cache/source_resolved_exact_green_pocket.txt
+  - logs/runner-cache/source_resolved_propagating_green_pocket.txt
+  - .claude/science/physics-loops/source-resolved-green-kernel-repair-20260604/
+trace_gate_classification: direct_blocker_closure
+current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_exact_action: >
+  Independent reviewer/auditor should re-audit both finite packets after the
+  kernel convention is reconciled across notes, runner print strings, code, and
+  refreshed caches.

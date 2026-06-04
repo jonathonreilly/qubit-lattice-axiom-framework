@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_propagating_green_pocket.py
-runner_sha256: 39c7457652a9f2e92c93832f781c319d28a28be1b6497693c6884c423df84391
+runner_sha256: 7a0353f40f9d7c2b0e5699fa174e48cab3394ebcd093ca908de067b6d3faeddb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.14
+elapsed_sec: 1.99
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -12,7 +12,7 @@ SOURCE-RESOLVED PROPAGATING GREEN POCKET
   comparison: propagating Green vs static Green vs instantaneous 1/r
 ============================================================================================
 h=0.5, W=3, L=20, source_cluster=4 nodes, mix=0.9
-field kernel: exp(-mu r)/(r+eps), mu=0.08, eps=0.5
+field kernel: exp(-mu rho_eps)/rho_eps, rho_eps=rho+eps, mu=0.08, eps=0.5
 source strengths: (0.001, 0.002, 0.004, 0.008)
 target max |f|: 0.02
 

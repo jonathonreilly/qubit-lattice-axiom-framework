@@ -20,6 +20,9 @@ the instantaneous `1/r` comparator.
 - source ladder: `s = {0.001, 0.002, 0.004, 0.008}`
 - same-site memory field: Green-like layer recurrence with `mix = 0.9`
 - control comparison: instantaneous `1/r` field and static source-resolved Green field
+- static Green control kernel:
+  `exp(-mu rho_eps)/rho_eps`, where
+  `rho_eps = sqrt(dx^2+dy^2+dz^2) + eps`, `mu = 0.08`, and `eps = 0.5`
 
 ## Hard gates
 
@@ -70,6 +73,8 @@ What it is **not**:
 - a horizon / black-hole result
 - a claim that the generated geometry sector is closed
 - audit-ratified status before independent audit
+- a derivation of the softened static Green kernel or the same-site memory
+  recurrence from retained framework dynamics
 
 ## Current assertion readout
 

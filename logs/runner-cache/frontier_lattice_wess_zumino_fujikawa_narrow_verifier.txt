@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py
-runner_sha256: 68d8d90af5cc3643b58b90875058346bc6624dd07395c8f4eaffe14d8bddecb7
+runner_sha256: 5c4e0d3da61d257b325b43bafb266001365ea37bd6cbfd2c656764b9d61f8d02
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 33.78
+elapsed_sec: 20.99
 status: ok
 ----- stdout -----
 Finite Z4 Staggered-Grading Trace Verifier
@@ -14,11 +14,11 @@ Status: bounded source theorem. No audit-lane wiring.
 
 === V1 [W1, L=4]: heat-kernel log-Jacobian is R-linear in alpha ===
 [PASS] V1/L=4/free/t=0.1: A[a1+a2] = A[a1] + A[a2]  residual = 3.55e-15
-[PASS] V1/L=4/free/t=0.5: A[a1+a2] = A[a1] + A[a2]  residual = 1.78e-15
-[PASS] V1/L=4/free/t=1.0: A[a1+a2] = A[a1] + A[a2]  residual = 4.44e-16
+[PASS] V1/L=4/free/t=0.5: A[a1+a2] = A[a1] + A[a2]  residual = 3.55e-15
+[PASS] V1/L=4/free/t=1.0: A[a1+a2] = A[a1] + A[a2]  residual = 8.88e-16
 [PASS] V1/L=4/U(1)-random/t=0.1: A[a1+a2] = A[a1] + A[a2]  residual = 7.11e-15
-[PASS] V1/L=4/U(1)-random/t=0.5: A[a1+a2] = A[a1] + A[a2]  residual = 1.78e-15
-[PASS] V1/L=4/U(1)-random/t=1.0: A[a1+a2] = A[a1] + A[a2]  residual = 3.55e-15
+[PASS] V1/L=4/U(1)-random/t=0.5: A[a1+a2] = A[a1] + A[a2]  residual = 3.55e-15
+[PASS] V1/L=4/U(1)-random/t=1.0: A[a1+a2] = A[a1] + A[a2]  residual = 0.00e+00
 
 === V2 [eps-D anticommutation, L=4]: eps D[U] eps = -D[U] ===
 [PASS] V2/L=4/free: ||eps D eps + D|| = 0  residual = 0.00e+00
@@ -26,49 +26,56 @@ Status: bounded source theorem. No audit-lane wiring.
 [PASS] V2/L=4/U(1)-winding: ||eps D[U_wind] eps + D[U_wind]|| = 0  residual = 0.00e+00
 
 === V3/V4 [W3, L=4]: Tr[eps exp(-t D^dag D)] is t-independent and integer-valued ===
-  L=4/free/t=0.1: A[1, U] = -2.220446e-16
-  L=4/free/t=0.5: A[1, U] = 8.382184e-15
-  L=4/free/t=1.0: A[1, U] = -8.493206e-15
-  L=4/free/t=2.0: A[1, U] = -3.927414e-15
-[PASS] V3/L=4/free: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 8.60e-15
-[PASS] V3-cross/L=4/free: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 4.44e-16
-[PASS] V4/L=4/free: A[1, U] is integer-valued  A = -2.220446e-16, nearest int = 0
-  L=4/U(1)-random/t=0.1: A[1, U] = 4.329870e-15
-  L=4/U(1)-random/t=0.5: A[1, U] = 5.828671e-15
-  L=4/U(1)-random/t=1.0: A[1, U] = -4.163336e-15
-  L=4/U(1)-random/t=2.0: A[1, U] = -7.494005e-15
-[PASS] V3/L=4/U(1)-random: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 1.18e-14
-[PASS] V3-cross/L=4/U(1)-random: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 4.33e-15
-[PASS] V4/L=4/U(1)-random: A[1, U] is integer-valued  A = 4.329870e-15, nearest int = 0
-  L=4/U(1)-winding/t=0.1: A[1, U] = -1.554312e-14
-  L=4/U(1)-winding/t=0.5: A[1, U] = -2.442491e-15
-  L=4/U(1)-winding/t=1.0: A[1, U] = -2.692291e-15
-  L=4/U(1)-winding/t=2.0: A[1, U] = 6.869505e-15
-[PASS] V3/L=4/U(1)-winding: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 2.24e-14
-[PASS] V3-cross/L=4/U(1)-winding: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 1.55e-14
-[PASS] V4/L=4/U(1)-winding: A[1, U] is integer-valued  A = -1.554312e-14, nearest int = 0
+  L=4/free/t=0.1: A[1, U] = 3.774758e-15
+  L=4/free/t=0.5: A[1, U] = 3.774758e-15
+  L=4/free/t=1.0: A[1, U] = 4.607426e-15
+  L=4/free/t=2.0: A[1, U] = 3.622103e-15
+[PASS] V3/L=4/free: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 8.33e-16
+[PASS] V3-cross/L=4/free: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 1.33e-15
+[PASS] V4/L=4/free: A[1, U] is integer-valued  A = 3.774758e-15, nearest int = 0
+  L=4/U(1)-random/t=0.1: A[1, U] = 4.207745e-14
+  L=4/U(1)-random/t=0.5: A[1, U] = 1.659783e-14
+  L=4/U(1)-random/t=1.0: A[1, U] = 1.526557e-14
+  L=4/U(1)-random/t=2.0: A[1, U] = 1.360023e-14
+[PASS] V3/L=4/U(1)-random: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 2.85e-14
+[PASS] V3-cross/L=4/U(1)-random: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 4.21e-14
+[PASS] V4/L=4/U(1)-random: A[1, U] is integer-valued  A = 4.207745e-14, nearest int = 0
+  L=4/U(1)-winding/t=0.1: A[1, U] = 1.487699e-14
+  L=4/U(1)-winding/t=0.5: A[1, U] = 1.015854e-14
+  L=4/U(1)-winding/t=1.0: A[1, U] = 1.021405e-14
+  L=4/U(1)-winding/t=2.0: A[1, U] = 6.716849e-15
+[PASS] V3/L=4/U(1)-winding: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 8.16e-15
+[PASS] V3-cross/L=4/U(1)-winding: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 1.49e-14
+[PASS] V4/L=4/U(1)-winding: A[1, U] is integer-valued  A = 1.487699e-14, nearest int = 0
 
 === V5 [W3 gauge-inv, L=4]: chiral trace and spectrum are gauge-invariant ===
-[PASS] V5/L=4: sigma(D^dag D[U]) = sigma(D^dag D[G^* U G])  spectrum max diff = 1.33e-14
-[PASS] V5/L=4/t=0.1: chiral trace gauge-invariant  |A_pre - A_post| = 5.66e-15
-[PASS] V5/L=4/t=0.5: chiral trace gauge-invariant  |A_pre - A_post| = 1.07e-14
-[PASS] V5/L=4/t=1.0: chiral trace gauge-invariant  |A_pre - A_post| = 7.77e-15
+[PASS] V5/L=4: sigma(D^dag D[U]) = sigma(D^dag D[G^* U G])  spectrum max diff = 1.95e-14
+[PASS] V5/L=4/t=0.1: chiral trace gauge-invariant  |A_pre - A_post| = 2.28e-14
+[PASS] V5/L=4/t=0.5: chiral trace gauge-invariant  |A_pre - A_post| = 1.44e-15
+[PASS] V5/L=4/t=1.0: chiral trace gauge-invariant  |A_pre - A_post| = 5.16e-15
 
 === V6 [non-trivial U: machinery + observed index, L=4] ===
-  L=4: A[1, U=I]    = 8.382184e-15  (observed integer: 0)
-  L=4: A[1, U_wind] = -2.442491e-15  (observed integer: 0)
-  L=4: winding background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
-[PASS] V6a/L=4: A[1, U_wind] integer-valued  A_wind = -2.442491e-15, nearest int = 0
-[PASS] V6b/L=4: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 2.50e-16
-[PASS] V6c/L=4: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 2.44e-15
+  L=4: principal (0,1)-plaquette flux quanta per (x2,x3) plane: min=1.000000, max=1.000000
+  L=4: non-(0,1) plaquette max |P-1| = 2.62e-17
+  L=4: Polyakov-loop max |P_mu-1| = 2.56e-16
+  L=4: A[1, U=I]    = 3.774758e-15  (observed integer: 0)
+  L=4: A[1, U_wind] = 1.015854e-14  (observed integer: 0)
+  L=4: one-quantum flux background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
+[PASS] V6a/L=4: U_wind has non-identity U(1) links  nonidentity links = 192
+[PASS] V6b/L=4: principal (0,1)-plaquette flux is one quantum  max |flux_quanta - 1| = 0.00e+00
+[PASS] V6c/L=4: all non-(0,1) plaquettes are flat  max non-(0,1) |P-1| = 2.62e-17
+[PASS] V6d/L=4: Polyakov loops close periodically  max |Polyakov-1| = 2.56e-16
+[PASS] V6e/L=4: A[1, U_wind] integer-valued  A_wind = 1.015854e-14, nearest int = 0
+[PASS] V6f/L=4: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 5.55e-17
+[PASS] V6g/L=4: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 1.02e-14
 
 === V1 [W1, L=6]: heat-kernel log-Jacobian is R-linear in alpha ===
-[PASS] V1/L=6/free/t=0.1: A[a1+a2] = A[a1] + A[a2]  residual = 0.00e+00
-[PASS] V1/L=6/free/t=0.5: A[a1+a2] = A[a1] + A[a2]  residual = 2.66e-15
-[PASS] V1/L=6/free/t=1.0: A[a1+a2] = A[a1] + A[a2]  residual = 1.78e-15
-[PASS] V1/L=6/U(1)-random/t=0.1: A[a1+a2] = A[a1] + A[a2]  residual = 0.00e+00
-[PASS] V1/L=6/U(1)-random/t=0.5: A[a1+a2] = A[a1] + A[a2]  residual = 5.33e-15
-[PASS] V1/L=6/U(1)-random/t=1.0: A[a1+a2] = A[a1] + A[a2]  residual = 3.55e-15
+[PASS] V1/L=6/free/t=0.1: A[a1+a2] = A[a1] + A[a2]  residual = 7.11e-15
+[PASS] V1/L=6/free/t=0.5: A[a1+a2] = A[a1] + A[a2]  residual = 3.55e-15
+[PASS] V1/L=6/free/t=1.0: A[a1+a2] = A[a1] + A[a2]  residual = 0.00e+00
+[PASS] V1/L=6/U(1)-random/t=0.1: A[a1+a2] = A[a1] + A[a2]  residual = 3.55e-15
+[PASS] V1/L=6/U(1)-random/t=0.5: A[a1+a2] = A[a1] + A[a2]  residual = 1.78e-15
+[PASS] V1/L=6/U(1)-random/t=1.0: A[a1+a2] = A[a1] + A[a2]  residual = 8.88e-16
 
 === V2 [eps-D anticommutation, L=6]: eps D[U] eps = -D[U] ===
 [PASS] V2/L=6/free: ||eps D eps + D|| = 0  residual = 0.00e+00
@@ -76,46 +83,53 @@ Status: bounded source theorem. No audit-lane wiring.
 [PASS] V2/L=6/U(1)-winding: ||eps D[U_wind] eps + D[U_wind]|| = 0  residual = 0.00e+00
 
 === V3/V4 [W3, L=6]: Tr[eps exp(-t D^dag D)] is t-independent and integer-valued ===
-  L=6/free/t=0.1: A[1, U] = -3.008704e-14
-  L=6/free/t=0.5: A[1, U] = -1.593170e-14
-  L=6/free/t=1.0: A[1, U] = -2.714495e-14
-  L=6/free/t=2.0: A[1, U] = -9.131584e-15
-[PASS] V3/L=6/free: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 2.10e-14
-[PASS] V3-cross/L=6/free: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 3.63e-14
-[PASS] V4/L=6/free: A[1, U] is integer-valued  A = -3.008704e-14, nearest int = 0
-  L=6/U(1)-random/t=0.1: A[1, U] = -1.254552e-14
-  L=6/U(1)-random/t=0.5: A[1, U] = -4.701795e-14
-  L=6/U(1)-random/t=1.0: A[1, U] = -2.992051e-14
-  L=6/U(1)-random/t=2.0: A[1, U] = -6.655787e-14
-[PASS] V3/L=6/U(1)-random: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 5.40e-14
-[PASS] V3-cross/L=6/U(1)-random: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 1.25e-14
-[PASS] V4/L=6/U(1)-random: A[1, U] is integer-valued  A = -1.254552e-14, nearest int = 0
-  L=6/U(1)-winding/t=0.1: A[1, U] = 2.542411e-14
-  L=6/U(1)-winding/t=0.5: A[1, U] = 6.661338e-15
-  L=6/U(1)-winding/t=1.0: A[1, U] = 5.689893e-15
-  L=6/U(1)-winding/t=2.0: A[1, U] = -1.404432e-14
-[PASS] V3/L=6/U(1)-winding: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 3.95e-14
-[PASS] V3-cross/L=6/U(1)-winding: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 2.54e-14
-[PASS] V4/L=6/U(1)-winding: A[1, U] is integer-valued  A = 2.542411e-14, nearest int = 0
+  L=6/free/t=0.1: A[1, U] = 2.242651e-14
+  L=6/free/t=0.5: A[1, U] = 1.260103e-14
+  L=6/free/t=1.0: A[1, U] = 3.580469e-15
+  L=6/free/t=2.0: A[1, U] = 7.160939e-15
+[PASS] V3/L=6/free: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 1.88e-14
+[PASS] V3-cross/L=6/free: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 1.18e-14
+[PASS] V4/L=6/free: A[1, U] is integer-valued  A = 2.242651e-14, nearest int = 0
+  L=6/U(1)-random/t=0.1: A[1, U] = 7.716050e-14
+  L=6/U(1)-random/t=0.5: A[1, U] = 3.957945e-14
+  L=6/U(1)-random/t=1.0: A[1, U] = -1.193490e-14
+  L=6/U(1)-random/t=2.0: A[1, U] = -3.966272e-14
+[PASS] V3/L=6/U(1)-random: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 1.17e-13
+[PASS] V3-cross/L=6/U(1)-random: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 7.72e-14
+[PASS] V4/L=6/U(1)-random: A[1, U] is integer-valued  A = 7.716050e-14, nearest int = 0
+  L=6/U(1)-winding/t=0.1: A[1, U] = 2.364775e-14
+  L=6/U(1)-winding/t=0.5: A[1, U] = 7.271961e-15
+  L=6/U(1)-winding/t=1.0: A[1, U] = -6.994405e-15
+  L=6/U(1)-winding/t=2.0: A[1, U] = -7.466250e-15
+[PASS] V3/L=6/U(1)-winding: t-independent across t in (0.1, 0.5, 1.0, 2.0)  max deviation = 3.11e-14
+[PASS] V3-cross/L=6/U(1)-winding: A[1,U] = zero-mode chirality count  |A_heat_kernel - idx_spectral| = 2.36e-14
+[PASS] V4/L=6/U(1)-winding: A[1, U] is integer-valued  A = 2.364775e-14, nearest int = 0
 
 === V5 [W3 gauge-inv, L=6]: chiral trace and spectrum are gauge-invariant ===
-[PASS] V5/L=6: sigma(D^dag D[U]) = sigma(D^dag D[G^* U G])  spectrum max diff = 5.24e-14
-[PASS] V5/L=6/t=0.1: chiral trace gauge-invariant  |A_pre - A_post| = 4.36e-14
-[PASS] V5/L=6/t=0.5: chiral trace gauge-invariant  |A_pre - A_post| = 8.47e-14
-[PASS] V5/L=6/t=1.0: chiral trace gauge-invariant  |A_pre - A_post| = 3.62e-14
+[PASS] V5/L=6: sigma(D^dag D[U]) = sigma(D^dag D[G^* U G])  spectrum max diff = 6.66e-14
+[PASS] V5/L=6/t=0.1: chiral trace gauge-invariant  |A_pre - A_post| = 4.11e-15
+[PASS] V5/L=6/t=0.5: chiral trace gauge-invariant  |A_pre - A_post| = 4.27e-14
+[PASS] V5/L=6/t=1.0: chiral trace gauge-invariant  |A_pre - A_post| = 9.20e-14
 
 === V6 [non-trivial U: machinery + observed index, L=6] ===
-  L=6: A[1, U=I]    = -1.593170e-14  (observed integer: 0)
-  L=6: A[1, U_wind] = 6.661338e-15  (observed integer: 0)
-  L=6: winding background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
-[PASS] V6a/L=6: A[1, U_wind] integer-valued  A_wind = 6.661338e-15, nearest int = 0
-[PASS] V6b/L=6: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 9.71e-16
-[PASS] V6c/L=6: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 6.66e-15
+  L=6: principal (0,1)-plaquette flux quanta per (x2,x3) plane: min=1.000000, max=1.000000
+  L=6: non-(0,1) plaquette max |P-1| = 2.23e-16
+  L=6: Polyakov-loop max |P_mu-1| = 6.50e-16
+  L=6: A[1, U=I]    = 1.260103e-14  (observed integer: 0)
+  L=6: A[1, U_wind] = 7.271961e-15  (observed integer: 0)
+  L=6: one-quantum flux background DOES exist and the machinery DOES run; observed staggered index on this small lattice is 0 (zero on these small L — expected from Adams 2002; non-zero existence is bounded-scope per the note).
+[PASS] V6a/L=6: U_wind has non-identity U(1) links  nonidentity links = 1080
+[PASS] V6b/L=6: principal (0,1)-plaquette flux is one quantum  max |flux_quanta - 1| = 0.00e+00
+[PASS] V6c/L=6: all non-(0,1) plaquettes are flat  max non-(0,1) |P-1| = 2.23e-16
+[PASS] V6d/L=6: Polyakov loops close periodically  max |Polyakov-1| = 6.50e-16
+[PASS] V6e/L=6: A[1, U_wind] integer-valued  A_wind = 7.271961e-15, nearest int = 0
+[PASS] V6f/L=6: A[1, U_wind] reproducible across t  |A(t=0.5) - A(t=1.0)| = 1.43e-14
+[PASS] V6g/L=6: A[1, U_wind] matches zero-mode spectral count  |A - idx_spectral| = 7.27e-15
 
 === V7 [size-independence of structural facts] ===
   V2-V5 are exercised at L=4 and L=6 in main().
 
-Summary: PASS=50 FAIL=0
+Summary: PASS=58 FAIL=0
 All narrow-claim checks passed.
 
 ----- stderr -----

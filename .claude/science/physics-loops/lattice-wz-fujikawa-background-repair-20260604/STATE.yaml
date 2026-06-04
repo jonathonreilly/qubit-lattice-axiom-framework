@@ -1,0 +1,34 @@
+loop_slug: lattice-wz-fujikawa-background-repair-20260604
+branch: physics-loop/lattice-wz-fujikawa-background-repair-20260604
+base: origin/main
+current_goal: "Repair the finite Z4 staggered-grading trace packet by adding executable plaquette/Polyakov invariant checks for the special U(1) background."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: "Add direct one-quantum principal-plaquette-flux and Polyakov-loop assertions; narrow source wording away from constant local plaquette flux."
+hard_residual: "The note remains a finite Z4 staggered trace theorem. It does not prove nonzero anomaly, continuum ABJ, Wess-Zumino cohomology, or downstream anomaly-forces-time closure."
+files_touched:
+  - docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md
+  - scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py
+  - logs/runner-cache/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.txt
+  - .claude/science/physics-loops/lattice-wz-fujikawa-background-repair-20260604/
+open_imports:
+  - "External Fujikawa/Wess-Zumino/index literature remains motivational context only."
+  - "No nonzero-index background is exhibited."
+no_go_routes:
+  - "Do not claim constant local plaquette flux: the boundary-twist construction gives nonconstant local P_01 phases."
+  - "Do not claim ABJ import retirement or anomaly-forces-time promotion from this bounded finite packet."
+checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py"
+  - "python3 -m py_compile scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py"
+  - "git diff --check"
+pr_status: pending
+next_exact_action: "Commit, push, open the review PR, then continue to the next independent conditional repair."
+stop_condition: "Block complete after PR handoff."

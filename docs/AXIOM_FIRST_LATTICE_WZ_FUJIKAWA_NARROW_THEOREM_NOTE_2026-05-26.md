@@ -1,7 +1,10 @@
 # Finite Z4 Staggered-Grading Trace Theorem (Bounded)
 
 **Date:** 2026-05-26
+**Date of background-invariant repair:** 2026-06-04
 **Claim type:** bounded_theorem
+**Actual current-surface status:** bounded-support; effective status is set
+only by the independent audit lane.
 **Status authority:** independent audit lane only. This source note does
 not set, predict, or estimate any audit verdict. Effective status is
 pipeline-derived after independent audit and dependency closure.
@@ -9,7 +12,7 @@ pipeline-derived after independent audit and dependency closure.
 [`scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py`](../scripts/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.py)
 **Cached log:**
 [`logs/runner-cache/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.txt`](../logs/runner-cache/frontier_lattice_wess_zumino_fujikawa_narrow_verifier.txt)
-(PASS=50 FAIL=0)
+(PASS=58 FAIL=0)
 
 ## Review-Loop Boundary
 
@@ -53,8 +56,8 @@ link phases, and let `epsilon = diag(epsilon(x))`.
 
 For the finite boxes and backgrounds exercised by the runner
 (`L in {4,6}`, free links, random U(1) links, and the explicit
-flux-winding U(1) background), the following bounded facts hold to the
-printed tolerances:
+one-quantum principal-plaquette-flux U(1) background), the following
+bounded facts hold to the printed tolerances:
 
 1. The heat-kernel regularized Jacobian functional
    `alpha -> sum_x alpha(x) epsilon(x) <x|exp(-t D^\dagger D)|x>`
@@ -67,9 +70,14 @@ printed tolerances:
    chirality count `n_+ - n_-`, and is integer-valued within numerical
    tolerance.
 4. `A_t[U]` is invariant under tested U(1) gauge rotations.
-5. The explicit flux-winding U(1) background is non-trivial as a link
-   background, but the observed staggered index on the tested small
-   even boxes is zero. Non-zero-index existence is not claimed.
+5. The explicit U(1) background is non-trivial as a link background and
+   has one principal-branch `(x0,x1)` plaquette-flux quantum through each
+   fixed `(x2,x3)` plane. The runner also checks that all other plaquette
+   orientations are flat and that the Polyakov loops close periodically.
+   The local `(x0,x1)` plaquette phases are not constant; the finite
+   invariant asserted here is the principal plaquette-angle sum. The
+   observed staggered index on the tested small even boxes is zero.
+   Non-zero-index existence is not claimed.
 
 The theorem-grade content is the finite matrix identity and its
 bounded numerical verification on the listed boxes. The note is not an
@@ -80,7 +88,7 @@ ABJ anomaly theorem.
 For each nearest-neighbor hop on an even periodic Z4 torus, changing a
 single coordinate flips `epsilon(x)`. Therefore the massless staggered
 Dirac matrix satisfies `epsilon D epsilon = -D`; the runner checks this
-directly for the tested free, random U(1), and flux-winding U(1)
+directly for the tested free, random U(1), and one-quantum U(1)
 backgrounds.
 
 Because `D` is finite-dimensional and anti-Hermitian in this staggered
@@ -100,6 +108,21 @@ spectral invariance under the same transformations.
 The linearity of the regularized Jacobian functional in `alpha` is the
 finite-dimensional linearity of the displayed sum after the heat-kernel
 regularizer has been fixed.
+
+### Background-Invariant Repair
+
+The explicit U(1) background used by the runner leaves the `mu=0,2,3`
+links at identity and puts an `x0`-dependent phase plus a boundary twist
+on `mu=1` links. It is therefore not a constant-plaquette background.
+The repaired finite invariant is:
+
+```text
+sum_{x0,x1} Arg P_01(x0,x1,x2,x3) / (2 pi) = 1
+```
+
+for each fixed `(x2,x3)`, with `Arg` taken on the principal branch. The
+runner now checks this directly, checks flatness of all non-`(0,1)`
+plaquette orientations, and checks periodic Polyakov-loop closure.
 
 ## Honest Residuals
 

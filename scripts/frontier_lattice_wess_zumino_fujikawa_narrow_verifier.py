@@ -31,9 +31,11 @@ does not assert an ABJ import-retirement theorem:
             U_mu(x) -> G(x)^* U_mu(x) G(x+mu^),
             Tr[eps exp(-t D†D[U])] is unchanged.
 
-  V6 [non-trivial U]: Exhibit an explicit U(1) background with
-            non-zero winding around the (x0, x1) plane and verify
-            that the integer-index machinery runs on it. The observed
+  V6 [non-trivial U]: Exhibit an explicit U(1) background whose
+            principal-branch plaquette angles carry one flux quantum
+            through each (x0, x1) plane, with periodic Polyakov-loop
+            checks, and verify that the integer-index machinery runs on it.
+            The observed
             staggered index on the tested small even boxes is zero;
             non-zero-index existence is not claimed.
 
@@ -179,12 +181,12 @@ def apply_u1_gauge_rotation(link_phases, gauge_phases, L):
 
 
 def winding_u1_background(L):
-    """Explicit U(1) link background with non-zero winding in the
-    (x_0, x_1) plane.
+    """Explicit U(1) link background with one principal-branch flux quantum.
 
-    We choose a "constant magnetic flux" background quantized so the
-    holonomy around every (x_0, x_1) plaquette is exp(2*pi*i*n / L^2)
-    with n=1 (one flux quantum total through the (x_0, x_1) torus).
+    The local plaquette phases are not constant because the boundary twist is
+    carried on the mu=1 links. The gauge-invariant finite assertion used below
+    is that the principal plaquette-angle sum through each fixed (x_2, x_3)
+    plane is 2*pi, i.e. one flux quantum.
     """
     N = L ** 4
     phases = np.ones((4, N), dtype=complex)
@@ -204,6 +206,67 @@ def winding_u1_background(L):
             phases[1, ix] *= np.exp(1j * two_pi_n_over_L * x[0])
         # mu = 0, 2, 3 stay at identity
     return phases
+
+
+def plaquette(link_phases, L, mu, nu, x):
+    """Oriented U(1) plaquette U_mu(x) U_nu(x+mu) U_mu(x+nu)^* U_nu(x)^*."""
+    ix = site_index(x, L)
+    x_mu = list(x); x_mu[mu] = (x_mu[mu] + 1) % L
+    x_nu = list(x); x_nu[nu] = (x_nu[nu] + 1) % L
+    ix_mu = site_index(x_mu, L)
+    ix_nu = site_index(x_nu, L)
+    return (
+        link_phases[mu, ix]
+        * link_phases[nu, ix_mu]
+        * link_phases[mu, ix_nu].conj()
+        * link_phases[nu, ix].conj()
+    )
+
+
+def principal_flux_quanta_01(link_phases, L):
+    """Principal-branch flux quanta through each fixed (x_2, x_3) plane."""
+    out = []
+    for x2 in range(L):
+        for x3 in range(L):
+            angle_sum = 0.0
+            for x0 in range(L):
+                for x1 in range(L):
+                    angle_sum += np.angle(plaquette(link_phases, L, 0, 1, (x0, x1, x2, x3)))
+            out.append(angle_sum / (2.0 * np.pi))
+    return np.array(out, dtype=float)
+
+
+def max_non_01_plaquette_deviation(link_phases, L):
+    """Maximum |P_munu - 1| over plaquettes other than the flux (0,1) plane."""
+    max_dev = 0.0
+    for mu in range(4):
+        for nu in range(mu + 1, 4):
+            if (mu, nu) == (0, 1):
+                continue
+            for x in product(range(L), repeat=4):
+                max_dev = max(max_dev, abs(plaquette(link_phases, L, mu, nu, x) - 1.0))
+    return float(max_dev)
+
+
+def polyakov_loop(link_phases, L, mu, base_x):
+    """Product of U_mu links around the periodic mu-cycle through base_x."""
+    prod_loop = 1.0 + 0.0j
+    x = list(base_x)
+    for _ in range(L):
+        ix = site_index(tuple(x), L)
+        prod_loop *= link_phases[mu, ix]
+        x[mu] = (x[mu] + 1) % L
+    return prod_loop
+
+
+def max_polyakov_unit_deviation(link_phases, L):
+    """Maximum |Polyakov_mu - 1| over all coordinate cycles."""
+    max_dev = 0.0
+    for mu in range(4):
+        other_ranges = [range(L) if axis != mu else (0,) for axis in range(4)]
+        for base_x in product(*other_ranges):
+            max_dev = max(max_dev, abs(polyakov_loop(link_phases, L, mu, base_x) - 1.0))
+    return float(max_dev)
 
 
 # ---------------------------------------------------------------------------
@@ -374,12 +437,14 @@ def check_V5_gauge_invariance(L, seed):
 
 
 def check_V6_winding_background(L):
-    """Exhibit a U(1) background with non-zero winding and report the
+    """Exhibit a U(1) background with one flux quantum and report the
     integer index the staggered-Dirac machinery observes on it.
 
     Honest scope: this check is about the *machinery* (integer-
     valuedness, reproducibility, gauge-invariance, spectral
-    consistency) running correctly on a non-trivial U. On these
+    consistency) running correctly on a non-trivial U. It now also checks
+    the finite plaquette/Polyakov invariants of the displayed background.
+    On these
     small even tori with quantized U(1) flux, staggered Dirac is
     known in the literature (Adams 2002) to typically produce
     paired chiralities so n_+ - n_- = 0; getting robust non-zero
@@ -389,24 +454,56 @@ def check_V6_winding_background(L):
     """
     print(f"\n=== V6 [non-trivial U: machinery + observed index, L={L}] ===")
     eps = epsilon_diagonal(L)
+    link_phases_w = winding_u1_background(L)
     D_free = free_staggered_dirac_matrix(L)
-    D_wind = gauged_u1_staggered_dirac_matrix(L, winding_u1_background(L))
+    D_wind = gauged_u1_staggered_dirac_matrix(L, link_phases_w)
 
     t = 0.5
     A_free = chiral_anomaly_trace(D_free, eps, t)
     A_wind = chiral_anomaly_trace(D_wind, eps, t)
+    flux_quanta = principal_flux_quanta_01(link_phases_w, L)
+    max_flux_dev = float(np.max(np.abs(flux_quanta - 1.0)))
+    max_non01_dev = max_non_01_plaquette_deviation(link_phases_w, L)
+    max_poly_dev = max_polyakov_unit_deviation(link_phases_w, L)
+    nonidentity_link_count = int(np.count_nonzero(np.abs(link_phases_w - 1.0) > 1e-12))
+    print(
+        f"  L={L}: principal (0,1)-plaquette flux quanta per (x2,x3) plane: "
+        f"min={float(np.min(flux_quanta)):.6f}, max={float(np.max(flux_quanta)):.6f}"
+    )
+    print(f"  L={L}: non-(0,1) plaquette max |P-1| = {max_non01_dev:.2e}")
+    print(f"  L={L}: Polyakov-loop max |P_mu-1| = {max_poly_dev:.2e}")
     print(f"  L={L}: A[1, U=I]    = {A_free:.6e}  (observed integer: {int(round(A_free))})")
     print(f"  L={L}: A[1, U_wind] = {A_wind:.6e}  (observed integer: {int(round(A_wind))})")
     print(
-        f"  L={L}: winding background DOES exist and the machinery DOES run; "
+        f"  L={L}: one-quantum flux background DOES exist and the machinery DOES run; "
         f"observed staggered index on this small lattice is "
         f"{int(round(A_wind))} (zero on these small L — "
         "expected from Adams 2002; non-zero existence is bounded-scope per the note)."
     )
 
-    # Both must be integer.
     check(
-        f"V6a/L={L}: A[1, U_wind] integer-valued",
+        f"V6a/L={L}: U_wind has non-identity U(1) links",
+        nonidentity_link_count > 0 and np.allclose(np.abs(link_phases_w), 1.0, atol=1e-12),
+        f"nonidentity links = {nonidentity_link_count}",
+    )
+    check(
+        f"V6b/L={L}: principal (0,1)-plaquette flux is one quantum",
+        max_flux_dev < 1e-12,
+        f"max |flux_quanta - 1| = {max_flux_dev:.2e}",
+    )
+    check(
+        f"V6c/L={L}: all non-(0,1) plaquettes are flat",
+        max_non01_dev < 1e-12,
+        f"max non-(0,1) |P-1| = {max_non01_dev:.2e}",
+    )
+    check(
+        f"V6d/L={L}: Polyakov loops close periodically",
+        max_poly_dev < 1e-12,
+        f"max |Polyakov-1| = {max_poly_dev:.2e}",
+    )
+    # Both heat-kernel traces must be integer.
+    check(
+        f"V6e/L={L}: A[1, U_wind] integer-valued",
         abs(A_wind - round(A_wind)) < 1e-7,
         f"A_wind = {A_wind:.6e}, nearest int = {int(round(A_wind))}",
     )
@@ -417,14 +514,14 @@ def check_V6_winding_background(L):
     # for this note.
     A_wind_2 = chiral_anomaly_trace(D_wind, eps, 1.0)
     check(
-        f"V6b/L={L}: A[1, U_wind] reproducible across t",
+        f"V6f/L={L}: A[1, U_wind] reproducible across t",
         abs(A_wind - A_wind_2) < 1e-7,
         f"|A(t=0.5) - A(t=1.0)| = {abs(A_wind - A_wind_2):.2e}",
     )
     # Cross-check via direct zero-mode count
     idx_wind = chiral_zero_mode_index(D_wind, eps)
     check(
-        f"V6c/L={L}: A[1, U_wind] matches zero-mode spectral count",
+        f"V6g/L={L}: A[1, U_wind] matches zero-mode spectral count",
         abs(A_wind - idx_wind) < 1e-7,
         f"|A - idx_spectral| = {abs(A_wind - idx_wind):.2e}",
     )

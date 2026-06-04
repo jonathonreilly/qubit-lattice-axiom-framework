@@ -21,9 +21,9 @@ carrier follows by a single composition step:
 > Let `H ≅ C^3` be any 3-dimensional complex Hilbert space with a
 > chosen ordered basis `(X_1, X_2, X_3)`. Let `P_{X_i}` be the
 > diagonal projector onto `span{X_i}` and let `sigma` be the order-3
-> cyclic permutation `X_1 → X_2 → X_3 → X_1`. Then no proper subspace
-> `V ⊂ H` is simultaneously invariant under `{P_{X_1}, P_{X_2},
-> P_{X_3}}` and under `sigma`.
+> cyclic permutation `X_1 → X_2 → X_3 → X_1`. Then no nonzero proper
+> subspace `0 ≠ V ⊂ H` is simultaneously invariant under
+> `{P_{X_1}, P_{X_2}, P_{X_3}}` and under `sigma`.
 
 The proof-walk uses only:
 
@@ -33,8 +33,9 @@ The proof-walk uses only:
 2. The retained M_3(C) Burnside narrow theorem
    (`<sigma, T_1, T_2, T_3>_alg = M_3(C)` from rank-1 eigenline
    projectors + cyclic permutation).
-3. Standard linear algebra (a proper invariant subspace of the regular
-   M_n(C) action on C^n is either {0} or C^n).
+3. Standard linear algebra (invariance under all rank-1 diagonal
+   projectors forces a coordinate subspace, and the 3-cycle has no
+   nonempty proper invariant coordinate subset).
 
 The bridge is **independent of the open staggered-Dirac realization
 gate**: both retained narrow theorems are pure abstract-`C^3`
@@ -65,8 +66,8 @@ narrow theorems with no routing through the staggered-Dirac gate.
 | (B4) | The order-3 cyclic permutation `sigma: X_1 → X_2 → X_3 → X_1` is well-defined on `H = C^3` for any ordered basis | standard linear algebra |
 | (B5) | `<sigma, T_x, T_y, T_z>_alg = M_3(C)` (full matrix algebra generation) | Retained M_3(C) Burnside narrow theorem |
 | (B6) | `<sigma, P_{X_1}, P_{X_2}, P_{X_3}>_alg = M_3(C)` (since the P_i are polynomials in the T_a by (B2)) | (B3) + (B5) |
-| (B7) | Any proper non-trivial subspace `V ⊂ H` invariant under the entire algebra `M_3(C)` is {0} or H (regular representation has no proper invariant subspaces) | standard linear algebra |
-| (B8) | Therefore no proper subspace `V ⊂ H` is invariant under both `{P_{X_1}, P_{X_2}, P_{X_3}}` and `sigma` | (B6) + (B7) |
+| (B7) | Any subspace `V ⊂ H` invariant under all three rank-1 projectors `P_{X_i}` is a coordinate subspace `span{X_i : i ∈ S}` for some `S ⊆ {1,2,3}` | standard linear algebra |
+| (B8) | The order-3 cycle `sigma` has no nonempty proper invariant subset `S`, so no nonzero proper subspace `0 ≠ V ⊂ H` is invariant under both `{P_{X_1}, P_{X_2}, P_{X_3}}` and `sigma` | (B4) + (B7) |
 
 The proof-walk does not cite the Wilson plaquette action, staggered
 phases, Brillouin-zone labels, link unitaries, lattice scale `u_0`, a
@@ -99,17 +100,33 @@ sigma  =  [[0, 0, 1],
            [0, 1, 0]].
 ```
 
-Matrix-unit generation (per retained Burnside narrow T2):
-`E_ij = sigma^k * P_i * sigma^{-k}` for the appropriate `k`, then
-`E_ij = sigma^j * P_i` for off-diagonal positions. The retained
+Matrix-unit generation (per retained Burnside narrow T2, using
+1-indexed indices modulo 3): since `P_j = E_jj` and
+`sigma X_j = X_{j+1}`, for `k ≡ i - j (mod 3)` one has
+
+```text
+P_i sigma^k P_j = E_ij.
+```
+
+Equivalently, `sigma^k P_j = E_ij`; the left factor `P_i` records the
+target row and matches the retained Burnside formula. The retained
 Burnside narrow theorem proves this generation explicitly; this bridge
 just consumes the conclusion.
 
-No-proper-quotient: any subspace `V ⊂ C^3` invariant under all `E_ij`
-is invariant under all of `M_3(C)` (since the `E_ij` span `M_3(C)` as
-a vector space), and the regular `M_n(C)`-action on `C^n` has no
-proper non-trivial invariant subspaces (a standard fact: `M_n(C)` acts
-irreducibly on `C^n`). Therefore `V ∈ {0, C^3}`.
+No-proper-quotient, with the zero-subspace boundary explicit: any
+subspace `V ⊂ C^3` invariant under all `E_ij` is invariant under all of
+`M_3(C)` (since the `E_ij` span `M_3(C)` as a vector space), and the
+regular `M_n(C)`-action on `C^n` has no nonzero proper invariant
+subspaces (a standard fact: `M_n(C)` acts irreducibly on `C^n`).
+Therefore `V` is either `{0}` or `C^3`, so there is no nonzero proper
+invariant subspace.
+
+Equivalently, using only the displayed `P_i` and `sigma`: if `V` is
+invariant under all `P_i`, then every component `P_i v` of every
+`v ∈ V` also lies in `V`, so `V` is the span of the subset of basis
+lines it contains. Invariance under `sigma` forces that subset to be
+fixed by the 3-cycle, leaving only the empty subset and all three
+basis lines.
 
 ## Dependencies
 
@@ -156,7 +173,7 @@ Expected:
 
 ```text
 TOTAL: PASS=8 FAIL=0
-VERDICT: bounded bridge passes; no-proper-quotient on C^3 follows from
-retained distinct-translation-characters narrow + retained M_3(C)
-Burnside narrow by abstract linear algebra.
+VERDICT: bounded bridge passes; no nonzero proper invariant subspace on
+C^3 follows from retained distinct-translation-characters narrow +
+retained M_3(C) Burnside narrow by abstract linear algebra.
 ```

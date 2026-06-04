@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py
-runner_sha256: 4226950083aa83a2b5dc569a8f017fdf79e7d1d7a4bd30132d72643e4816ba65
+runner_sha256: 35e97b1e015bae056630e92d6cbedfa0052661f3c3c9f720c04e66bd4033d600
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 14.38
+elapsed_sec: 14.80
 status: ok
 ----- stdout -----
 ==================================================================================

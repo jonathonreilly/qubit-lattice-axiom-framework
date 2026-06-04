@@ -242,16 +242,16 @@ hypothetical status.
 
 Every theorem/support/no-go note and every loop `STATE.yaml` checkpoint must
 state the narrowest status using the controlled vocabulary. When a result
-depends on a new axiom, same-surface family, observational admission, fitted
-selector, admitted unit convention, or human judgment, the actual current
-surface status is **not** `retained`.
+depends on a new axiom, unapproved primitive, same-surface family,
+observational admission, fitted selector, Tier-A admitted derivation target, or
+human judgment, the actual current surface status is **not** `retained`.
 
-**No-new-axiom rule.** The repo does NOT accept extensions to its axiom
-stack as part of physics-loop work. `A_min` means the minimum axiom set,
-NOT permission to enlarge it. A route or counterfactual whose closure
-requires adopting a new axiom is `infeasible`, regardless of how
-productive its consequences would be. The legitimate import-bearing
-shape is:
+**No-new-axiom/no-new-primitive rule.** The repo does NOT accept extensions to
+its axiom stack or primitive registry as part of physics-loop work. `A_min`
+means the minimum axiom set, NOT permission to enlarge it. A route or
+counterfactual whose closure requires adopting a new axiom or new framework
+primitive is `infeasible`, regardless of how productive its consequences would
+be. The legitimate import-bearing shape is:
 
 1. take an explicit import (theorem, value, convention) with a narrow
    non-derivation role;
@@ -277,6 +277,14 @@ must say "conditional on accepted new axiom; not retained on the actual
 current surface." This labeling does not promote the axiom — only an
 external repo-wide governance decision does that, and physics-loop
 runs do NOT make such decisions.
+
+Approved framework primitives are a separate accepted-premise class, not
+bounded imports. They must already be recorded in
+`docs/audit/data/axiom_premise_nodes.json`, where they chain-satisfy
+dependencies without bounding downstream rows. Tier-A admitted derivation
+targets live in `docs/audit/data/tier_a_admissions.json` and remain bounded
+until retired. The scale-reference primitive is the approved units primitive;
+do not describe it as a Tier-A admission or a bounded Planck import.
 
 Required status fields for major artifacts:
 
@@ -570,8 +578,9 @@ routes are risky.
   allowed premise set (`A_min`) and forbidden imports. The attempt must not
   rely on observed target values, fitted selectors, or literature as hidden
   proof inputs. `A_min` is the minimum axiom set, NOT a license to add
-  axioms — extending the stack is forbidden in physics-loop work; see
-  the no-new-axiom rule above. Counterfactual-pass output (see
+  axioms or framework primitives — extending either governance surface is
+  forbidden in physics-loop work; see the no-new-axiom/no-new-primitive rule
+  above. Counterfactual-pass output (see
   references/assumption-import-audit.md) is a useful stretch input
   here.
 - **Stuck fan-out:** before declaring "no route passes the gate", generate

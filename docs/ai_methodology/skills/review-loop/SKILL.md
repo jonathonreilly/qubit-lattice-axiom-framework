@@ -76,10 +76,22 @@ mechanically rewrite are recorded as
 `prose_status: needs_human_vocab_decision` for the periodic
 vocab-extension review; they do not block the landing. Review-loop
 must not introduce new repo-wide axioms, new theory
-language, new retained-surface claims, or new foundational premises without
-explicit user approval. Imports are allowed for bounded theorem surfaces when
-they are scoped, labelled, and dependency-checked; repo-wide axiom additions
-are not review-loop fixes.
+language, new retained-surface claims, framework primitives, or new
+foundational premises without explicit user approval. Imports are allowed for
+bounded theorem surfaces when they are scoped, labelled, and
+dependency-checked; repo-wide axiom additions and primitive additions are not
+review-loop fixes.
+
+Review-loop must keep accepted premise classes distinct. Repo-wide axioms and
+explicitly approved framework primitives are registered in
+`docs/audit/data/axiom_premise_nodes.json` and chain-satisfy dependencies
+without making downstream rows `retained_bounded`. Tier-A admitted derivation
+targets are registered in `docs/audit/data/tier_a_admissions.json` and
+chain-satisfy only at `retained_bounded` until retired by a retained
+derivation. The scale-reference primitive is the approved units primitive, not
+a Tier-A admission or a bounded Planck import. New axioms and new primitives
+both require explicit owner approval and a reviewed registry/policy update
+before review-loop may treat them as accepted premises.
 
 The framework baseline (per `MINIMAL_AXIOMS_2026-05-20.md`) is
 "Reality is a qubit at every lattice site" on the cubic lattice `Z^3`.

@@ -88,7 +88,8 @@ framing in prose:
    labeling-vs-meta rule applies on the positive-claim side: a labeling
    convention shipped as `bounded_theorem` is overclassified, since
    `retained_bounded` grade is for algebraic claims with explicit named
-   premises, not for stipulations about names. See the
+   premises, not for stipulations about names or approved framework primitives
+   already registered in `docs/audit/data/axiom_premise_nodes.json`. See the
    `LabelingConventionReviewer` in
    `docs/ai_methodology/skills/review-loop/SKILL.md`
    for the symmetric check on bounded-theorem candidates.

@@ -43422,7 +43422,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "68a729768c0b166e7ad7725792e24b4cde2f8dc2e801f53a8e38ab7ba8a2e72a",
+      "note_hash": "329a10c42eaf62b1dee83d6ac6393070bdc33cd221de136d282a329abde63c02",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -43460,7 +43460,7 @@
         "ai_methodology.skills.no-go-discipline.references.case-studies"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0af2f586e2113d05e643b1c8751aa30c9a6d46bb02396459aca8a3de776c8f72",
+      "note_hash": "605ea82ec4e1b70bb4ec0ddf4ceaf784cd806e253ffa58cc6641514fb582bdaa",
       "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
       "runner_path": null,
       "title": "No-Go Discipline"
@@ -43472,7 +43472,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "cd6eaffa534dd76dfc9ddf57244b67877087dddf377ece4204a2194165a5f614",
+      "note_hash": "7e3216cd5f844d0bce941e75b702af3ed1f6f4121c0dc87ad35e1d8e0cc53b17",
       "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
       "runner_path": null,
       "title": "Physics Claim Reviewer"
@@ -43553,7 +43553,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2053c8805568f7d752678fa775bb2a61ea3ca9954fe64aea57aae0089ea89eb3",
+      "note_hash": "7b0e6e3dc74654708fd44297db4b26817a7a348d495dba23f3098388e43401a5",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -43568,7 +43568,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "01b295a986b4626e71311c6c36ec0dce550f3f612327696f6c15a27e649756c0",
+      "note_hash": "46a5e9d9842c72e177027e5ab707ca02ee25c771bb79a5a6a81cf521140b00c0",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"

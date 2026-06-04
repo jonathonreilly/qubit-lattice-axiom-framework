@@ -151,6 +151,12 @@ labeling convention, meta-ratification, or definition refactor that closes
 the wall WITHOUT new physics is NOT a new axiom — it is the import-retirement
 path.
 
+Also separate approved framework primitives from walls. A primitive already
+registered in `docs/audit/data/axiom_premise_nodes.json`, such as the
+scale-reference primitive, chain-satisfies dependencies without making the
+claim bounded. A proposed but unapproved primitive is an owner-governance
+question, not a silent Tier-A admission and not an automatic no-go wall.
+
 Before declaring "this requires a new axiom," scan for:
 
 - existing reframings that move the wall from "physics" to "convention";
@@ -273,7 +279,9 @@ The cases illustrate:
 - N7 steelman must be the strongest counter-argument, not a token paragraph.
 - N6 "convention reframe vs new axiom" distinction must respect
   `feedback_no_new_axioms.md` — bounded admission with named import-retirement
-  audit is the legitimate path, not "blocked because we cannot add an axiom."
+  audit is the legitimate path, approved primitives are not bounded walls, and
+  proposed new primitives require owner-governance approval rather than
+  silent use or automatic foreclosure.
 - Do not weaken the gate by lowering the failure thresholds. If a cycle
   cannot pass N1-N8, the negative claim is not yet ready to ship; that is
   the gate working correctly.

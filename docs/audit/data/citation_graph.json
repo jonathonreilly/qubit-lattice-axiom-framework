@@ -85476,7 +85476,7 @@
         "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "918f90ef71f58f416b9310adcc1f9b2dc998cfda7fdb16aaf9f61a2e5ebf40cf",
+      "note_hash": "0da0bb874d2e95b251e11685caa8756f91beae3eab673ff326a3641964e94dc9",
       "path": "docs/THREE_GENERATION_NO_PROPER_QUOTIENT_VIA_BURNSIDE_CHARACTERS_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "runner_path": "scripts/three_gen_no_proper_quotient_via_burnside_characters_runner.py",
       "title": "Three-Generation No-Proper-Quotient via Burnside + Characters Bridge"

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py
-runner_sha256: f3356daa9b1bcfc97e5ec3279a64d67c4b768da48315c9c9d0cf28696b58c85b
+runner_sha256: 38481a6d53f333537624ea0cae6e555fb575a049900a3763a0afac4ad3040e7c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -36,7 +36,7 @@ SAMPLED SU(3) PER-CONFIG POSITIVITY: fixed random spatial backgrounds
     spec(T2cl[U]) subset R_{>0}; T_hat^2[U]=B[U]^dag B[U]; H_hat[U]>=0
 ------------------------------------------------------------------------------
     configs=200  (SU(3), L_s=4, 3 colors -> 12 spatial modes)
-    max |Im(decay eig)| over configs   = 7.529e-16  (want ~0)
+    max |Im(decay eig)| over configs   = 7.234e-16  (want ~0)
     min decaying eigenvalue mu          = 1.458981e-01  (want >0)
     max decaying eigenvalue mu          = 3.819653e-01  (<=1)
     min single-particle eig(H_hat[U])   = 4.812127e-01  (>=0)
@@ -63,7 +63,7 @@ B   STANDALONE RELABELING INVARIANCE: det(M_KS+mI), spec(H_hat), Z=Tr(e^{-beta H
     hw=1 triplet permutations tested    = 6 (all of S_3)
     staggered-embedded relabelings      = 6
     faithful-surface check: ||M_KS+M_KS^dag||=0.0e+00  ||{eps,M_KS}||=0.0e+00  (anti-Hermitian plus epsilon anticommutation)
-    baseline det(M_KS+mI)               = 0.77247620+0.0e+00j  (real-positive, matches det dep)
+    baseline det(M_KS+mI)               = 0.77247620+0.0e+00j  (real-positive, matches determinant context row)
     max |det(M) deviation| over relabels= 9.992e-16
     max |det(H3) deviation| over S_3    = 2.776e-17
     max |spec(H_hat) deviation| over S_3= 4.441e-16
@@ -74,15 +74,12 @@ B   STANDALONE RELABELING INVARIANCE: det(M_KS+mI), spec(H_hat), Z=Tr(e^{-beta H
     trace invariance       = PASS
 
 ------------------------------------------------------------------------------
-U-INTEGRATED RP REDUCTION (named deps, not re-derived here)
+U-INTEGRATED RP BOUNDARY (not claimed by this runner)
 ------------------------------------------------------------------------------
-    <Theta(F) F> = int dU (Haar . positive Wilson weight)
-        x (per-config fermion 2-step positivity -- modal proof + sampled exhibits)
-        x (det(M_KS+mI) >= m^n > 0 config-by-config -- retained dep
-           STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
-        x (gauge-half Cauchy-Schwarz norm-square -- retained_bounded dep
-           REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)
-      >= 0,  each factor non-negative.
+    This runner supplies only the fixed-background fermion transfer factor.
+    It does not prove <Theta(F)F> >= 0 for the full dynamical-gauge theory,
+    and it does not apply the abstract gauge-half Cauchy-Schwarz identity
+    to Wilson plaquette half-actions or temporal-gauge boundary data.
 
     DOWNSTREAM CONTEXT NOT CLAIMED HERE:
     This runner does not close any P2/AC_phi_lambda residual. It only

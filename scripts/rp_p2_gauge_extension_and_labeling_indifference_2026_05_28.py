@@ -80,16 +80,12 @@ We also confirm the temporal-gauge reduction is faithful: at U = 1 the
 position-space eigenvalues reproduce the momentum-space free dispersion
 e^{-2E(p)} of the prior free runner (sanity bridge to free two-step transfer-matrix positivity row).
 
-U-INTEGRATED RP then follows from
-    <Theta(F) F> = int dU (Haar . positive Wilson weight)
-                      x (per-config fermion 2-step positivity, THIS runner)
-                      x (det(M_KS + m I) >= m^n > 0 config-by-config,
-                         retained dep STAGGERED_ONLY_DET_POSITIVITY_CASE_A)
-                      x (gauge-half Cauchy-Schwarz norm-square, retained_bounded
-                         dep REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ)
-                  >= 0,
-each factor non-negative. This runner supplies the per-config fermion factor at
-nontrivial fixed SU(3)/U(1) background; the other two factors are the cited deps.
+U-INTEGRATED RP is NOT claimed by this runner. A full dynamical-gauge route
+would need, in addition to this per-config fermion factor, a separate retained
+determinant-weight input and a separate bridge applying the abstract gauge-half
+Cauchy-Schwarz identity to the Wilson plaquette half-action / temporal-gauge
+boundary setup. This runner supplies only the fixed-background fermion factor
+and the standalone det/spec/Z relabeling invariance facts.
 
 ----------------------------------------------------------------------------
 SCORECARD
@@ -382,11 +378,11 @@ def check_labeling_indifference():
     import itertools
 
     # --- (i) staggered KS Dirac operator on a small lattice (free U=1) ---
-    # Conventions match the retained det-positivity note
+    # Conventions match the separate determinant-positivity context row
     # STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17: eta_t=+1,
     # eta_x(t)=(-1)^t, eps(t,x)=(-1)^(t+x), periodic, even/balanced lattice. On
     # this surface {eps, M_KS}=0 exactly and det(M_KS+mI) is real-positive, so
-    # the det baseline printed here is faithful to the cited dependency.
+    # the det baseline printed here is faithful to that context row.
     Lt, Ls, m = 4, 4, MASS
     Ls_total = Lt * Ls
     M = np.zeros((Ls_total, Ls_total), dtype=complex)
@@ -571,7 +567,7 @@ def main() -> int:
     print(f"    faithful-surface check: ||M_KS+M_KS^dag||={lab['antiherm_err']:.1e}"
           f"  ||{{eps,M_KS}}||={lab['anticomm_err']:.1e}  (anti-Hermitian plus epsilon anticommutation)")
     print(f"    baseline det(M_KS+mI)               = {lab['det_M_baseline'].real:.8f}"
-          f"{lab['det_M_baseline'].imag:+.1e}j  (real-positive, matches det dep)")
+          f"{lab['det_M_baseline'].imag:+.1e}j  (real-positive, matches determinant context row)")
     print(f"    max |det(M) deviation| over relabels= {max_det_M:.3e}")
     print(f"    max |det(H3) deviation| over S_3    = {max_det_H3:.3e}")
     print(f"    max |spec(H_hat) deviation| over S_3= {max_spec:.3e}")
@@ -589,15 +585,12 @@ def main() -> int:
 
     # ---- Reductions named (not re-derived) ----
     print("-" * 78)
-    print("U-INTEGRATED RP REDUCTION (named deps, not re-derived here)")
+    print("U-INTEGRATED RP BOUNDARY (not claimed by this runner)")
     print("-" * 78)
-    print("    <Theta(F) F> = int dU (Haar . positive Wilson weight)")
-    print("        x (per-config fermion 2-step positivity -- modal proof + sampled exhibits)")
-    print("        x (det(M_KS+mI) >= m^n > 0 config-by-config -- retained dep")
-    print("           STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)")
-    print("        x (gauge-half Cauchy-Schwarz norm-square -- retained_bounded dep")
-    print("           REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)")
-    print("      >= 0,  each factor non-negative.")
+    print("    This runner supplies only the fixed-background fermion transfer factor.")
+    print("    It does not prove <Theta(F)F> >= 0 for the full dynamical-gauge theory,")
+    print("    and it does not apply the abstract gauge-half Cauchy-Schwarz identity")
+    print("    to Wilson plaquette half-actions or temporal-gauge boundary data.")
     print()
     print("    DOWNSTREAM CONTEXT NOT CLAIMED HERE:")
     print("    This runner does not close any P2/AC_phi_lambda residual. It only")

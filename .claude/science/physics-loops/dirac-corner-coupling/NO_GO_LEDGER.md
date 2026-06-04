@@ -23,10 +23,24 @@ OPERATOR / MEASURE / SYMMETRY class. DEAD routes (do not re-run):
   qubit (simple, unique 2-dim irrep, no multiplicity); the C3-doublet keeps real-dim 2 -> (1,2)/F3/κ=1.
   Taste-breaking CANNOT manufacture the (1,1)/r=1/2 multiplicity. [Cycle 3, RULED OUT, shipped PR #2607]
 
-OPEN / UN-ATTACKED (the dynamical class — my campaign target):
+- **Multi-factor Connes-Lott** -> by Schur, any FLAVOR-BLIND factor scales both isotypes equally ->
+  PRESERVES (1,2)/κ=1; (1,1) needs a flavor-dependent W = admission. PURCHASES r=1/2, doesn't derive.
+  [Cycle 4, RULED OUT, shipped PR #2611]
+
+ALL FIVE TRACE/VECTOR DYNAMICAL ROUTES RULED OUT (free measure, fermion det, scalar potential,
+taste-breaking, multi-factor) -> all give (1,2)/κ=1/r=1. r=1/2 is the (1,1) multiplicity admission (=BAE)
+on the TRACE side. **CORRECTION (Cycle 5):** the "dynamical class exhausted" framing of #2611 was PREMATURE.
+
+OPEN LEAD (the one genuinely untested mechanism — the campaign HEADLINE):
 1. ~~Staggered corner fermion determinant~~ -> **RULED OUT, Cycle 1+2, PR #2601** (r=1, r=4, not 1/2).
 2. ~~Taste-breaking scalar normalization~~ -> **RULED OUT, Cycle 3, PR #2607** (tastes = qubit, no multiplicity).
-3. **Multi-factor Connes-Lott** (Yukawa D on R^3, chirality on separate H_L⊕H_R). [OPEN, escape hatch (II) — Cycle 4 NEXT; note: would PURCHASE the (1,1) by ADDING a factor = structural admission, not clean]
+3. ~~Multi-factor Connes-Lott~~ -> **RULED OUT, Cycle 4, PR #2611** (Schur: flavor-blind preserves (1,2)).
+4. **Supertrace / equivariant-index / HOLOMORPHIC count** [OPEN LEAD, Cycle 5, PR #2614]. Probe 25's 7
+   routes are ALL plain Tr; the chirality-graded supertrace was never tested. The (1,1)/r=1/2 weighting =
+   the holomorphic count (complex doublet param b counted ONCE; real trace counts (Re b,Im b) twice). eps
+   is FLAVOR-BLIND -> escapes block 3's analysis. FIRST route that could DERIVE r=1/2. **GATED** on the
+   staggered-Dirac mass: does the CHIRAL fluctuation determinant count b once? Sub-flag: the (1,1) is FS-
+   type-respecting (trivial=real-type FS=+1; doublet=complex-type FS=0), NOT a uniform rescaling.
 
 REFRAME (FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED, retained): r=1/2 is the max-sector-entropy
 STATIONARY point (dS/dr=0, S=log2), the "balanced lane"; r→0 (degenerate, Q=1/3) and r→1 (hierarchy, Q=1)

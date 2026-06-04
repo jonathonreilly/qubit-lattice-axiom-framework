@@ -117,3 +117,49 @@ next_exact_action: >
   does it emerge? If purchased -> the campaign's verdict is r=1/2 = irreducible admission across ALL clean
   routes (ship the convergence as the campaign's terminal block, N1-N8). If emergent+clean -> close Koide
   (conditional on gate). Then Cycle 5: campaign synthesis + HANDOFF.
+
+# ---- checkpoint 4 (2026-06-04) ----
+cycle_count: 5
+block_count: 4
+cycle4_result: >
+  Route #3 (multi-factor Connes-Lott) RULED OUT: by Schur, any FLAVOR-BLIND factor (chirality L/R, color,
+  KO/real-structure doubling) scales both isotypes equally -> PRESERVES (1,2)/kappa=1 (verified tensor
+  n=2,3,4 + direct sums). (1,1) needs a flavor-dependent W=P+ + (1/2)Pdoub = admission. So multi-factor
+  PURCHASES r=1/2, does not derive it. Shipped block 3 PR #2611 with "dynamical class exhausted" framing.
+cycle5_result: >
+  COMPLETENESS-CRITIC PASS found block 3's "exhausted" PREMATURE. Explore agent confirmed: Probe 25's
+  seven routes (PHYS-AV1..7) are ALL plain ungraded Tr; the chirality-graded SUPERTRACE / equivariant
+  INDEX was NEVER tested; the framework HAS eps=(-1)^{x+y+z} {eps,D}=0; Record axiom NEUTRAL trace-vs-
+  supertrace. NEW: the (1,1)/r=1/2 weighting = the equivariant-index / HOLOMORPHIC count -- counts the
+  COMPLEX doublet param b ONCE (chiral), where the real trace counts (Re b,Im b) twice -> (1,2). eps is
+  FLAVOR-BLIND -> changes real<->complex counting (NOT a flavor reweight) -> ESCAPES block 3's flavor-blind-
+  FACTOR analysis. THE FIRST ROUTE THAT COULD DERIVE r=1/2. Shipped block 4 PR #2614 as OPEN LEAD +
+  correction of block 3. SUBTLETY (validated, flag for next): (1,1) is rigorous because trivial irrep is
+  REAL-type (FS=+1 -> a is 1 real param) and doublet is COMPLEX-type (FS=0 -> b is 1 complex param); a
+  holomorphic count gives (1,1), NOT a uniform rescaling (which would preserve (1,2) as (1/2,1)).
+shipped_blocks:
+  - {pr: 2591, what: "r=1/2 not symmetry-protected (redirect to dynamical)"}
+  - {pr: 2601, block: 1, what: "corner fermion determinant -> r=1,4 not 1/2", runner_pass: "10/10"}
+  - {pr: 2607, block: 2, what: "3D staggered tastes span M_2(C)=qubit, no multiplicity", runner_pass: "6/6"}
+  - {pr: 2611, block: 3, what: "multi-factor purchases not derives (1,1); trace routes exhausted", runner_pass: "9/9"}
+  - {pr: 2614, block: 4, what: "OPEN LEAD: supertrace/index/holomorphic route to r=1/2; corrects #2611", runner_pass: "6/6"}
+campaign_verdict: >
+  Koide r=1/2 is NOT a theorem of the clean TRACE/VECTOR dynamics (all 5 trace routes -> (1,2)/kappa=1/r=1;
+  exhaustively established). It is the (1,1) multiplicity admission (=BAE), EXCEPT for one genuinely
+  untested promising route: the chirality-graded SUPERTRACE/INDEX/HOLOMORPHIC count, which is flavor-blind,
+  framework-present (eps), and would DERIVE r=1/2 if the generation fluctuation determinant is the chiral
+  (holomorphic) one. That last question is GATED (staggered-Dirac mass, substep 4). Best-honest-status
+  achieved: sharp partial falsification of the trace dynamics + a precisely-characterized open lead.
+campaign_status: "CORE RESOLVED at best-honest-status; clean (non-gated) science exhausted; open lead is GATED"
+active_route: "OPEN LEAD (gated): chiral/holomorphic fluctuation determinant -> does it count b once -> (1,1)/r=1/2?"
+next_exact_action: >
+  Clean science is exhausted; the headline open lead (chiral/holomorphic supertrace, block 4 #2614) is
+  GATED on the staggered-Dirac mass (substep 4). NEXT options for remaining budget, in priority order:
+  (A) STRENGTHEN block 4 with the Frobenius-Schur sharpening (trivial=real-type, doublet=complex-type ->
+  the (1,1) count is FS-type-respecting, resolving the uniform-rescaling objection) -- can fold into #2614
+  or ship as block 5. (B) Attempt the CONDITIONAL chiral-vs-vector determinant: show r=1/2 <=> chiral
+  Yukawa, r=1 <=> vector Yukawa (reduces the whole question to a sharp binary on the gate). (C) Monitor
+  reviewer landing of #2591/#2601/#2607/#2611/#2614; once on main, write the BACKWARD campaign-synthesis
+  (repo-canonical vocab, meta-framings-land-backward rule). (D) Pivot to the staggered-Dirac gate itself
+  (substep 4) -- the deeper problem everything is conditional on (major, likely a separate campaign).
+  Recommend (B) then (C); hold (D) for owner greenlight.

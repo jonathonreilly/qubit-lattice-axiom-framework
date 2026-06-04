@@ -83,7 +83,10 @@ def main() -> int:
     print(f"  cycle battery scores: {[row.score for row in cycle_results]}")
     print(f"  cycle mean gap: {baseline_cycle_mean:.3e} -> {closed_cycle_mean:.3e}")
     print(f"  cycle gap improvement factor: {cycle_improvement:.2f}x")
-    print(f"  cycle mean R2: {mean_r2:.6f}; two-body max={two_body_max:.3e}")
+    two_body_readout = (
+        "<1e-12" if two_body_max < 1e-12 else f"={two_body_max:.3e}"
+    )
+    print(f"  cycle mean R2: {mean_r2:.6f}; two-body max {two_body_readout}")
     print(
         f"  holdout gap: {holdout_result.baseline_gap:.3e} -> "
         f"{holdout_result.closed_gap:.3e} ({holdout_improvement:.2f}x)"

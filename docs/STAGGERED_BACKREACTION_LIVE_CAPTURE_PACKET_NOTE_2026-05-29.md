@@ -1,6 +1,7 @@
 # Staggered Backreaction Live Capture Packet
 
 **Date:** 2026-05-29
+**Date of live-readout repair:** 2026-06-04
 **Status:** bounded-support positive packet; proposed for independent audit, not effective retained.
 **Claim type:** bounded_theorem
 **Primary runner:** [`scripts/staggered_backreaction_live_capture_packet_check.py`](../scripts/staggered_backreaction_live_capture_packet_check.py)
@@ -36,7 +37,7 @@ Current live readout:
 cycle battery scores: [9, 9]
 cycle mean gap: 9.828e-01 -> 4.734e-01
 cycle gap improvement factor: 2.08x
-cycle mean R2: 0.996306; two-body max=2.478e-16
+cycle mean R2: 0.996306; two-body max <1e-12
 holdout gap: 9.191e-01 -> 4.559e-01 (2.02x)
 ASSERTIONS: PASS
 ```

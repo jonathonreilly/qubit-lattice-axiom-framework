@@ -1,0 +1,32 @@
+loop_slug: staggered-backreaction-live-readout-repair-20260604
+branch: physics-loop/staggered-backreaction-live-readout-repair-20260604
+base: origin/main
+current_goal: "Repair the staggered backreaction live capture packet's displayed two-body residual readout."
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+cycle_count: 1
+active_route: "Replace unstable roundoff-level two-body max display with the stable certified bound used by the runner assertion."
+hard_residual: "This packet remains a finite bounded live-capture comparison and does not claim continuum backreaction or physical gravitational closure."
+files_touched:
+  - docs/STAGGERED_BACKREACTION_LIVE_CAPTURE_PACKET_NOTE_2026-05-29.md
+  - scripts/staggered_backreaction_live_capture_packet_check.py
+  - logs/runner-cache/staggered_backreaction_live_capture_packet_check.txt
+  - .claude/science/physics-loops/staggered-backreaction-live-readout-repair-20260604/
+open_imports: []
+no_go_routes:
+  - "Do not display a roundoff-level max residual as a stable science datum."
+  - "Do not revive the archived stale force/gap/gain table."
+checks:
+  - "PYTHONPATH=scripts python3 scripts/staggered_backreaction_live_capture_packet_check.py"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/staggered_backreaction_live_capture_packet_check.py"
+  - "python3 scripts/cached_runner_output.py --check-only scripts/staggered_backreaction_live_capture_packet_check.py"
+  - "python3 -m py_compile scripts/staggered_backreaction_live_capture_packet_check.py"
+  - "git diff --check"
+pr_status: pending
+next_exact_action: "Commit, push, open the review PR, then continue the conditional repair loop."
+stop_condition: "Block complete after PR handoff."

@@ -27,6 +27,10 @@ characterized **headline open lead**.
   plain `Tr`). It is the (1,1)/r=1/2 source — it counts the **complex** doublet param `b` once
   (chiral), where the real trace counts `(Re b, Im b)` twice. `ε` is flavor-blind → escapes
   block 3's analysis. **First route that could DERIVE r=1/2.** Corrects #2611's "exhausted". (6/6)
+- **#2617 (block 5)** — Frobenius-Schur sharpening: `ν(trivial)=+1` (real → `a` real, 1 mode
+  either way), `ν(ω)=0` (complex → `b`, 2 real modes vector / 1 holomorphic chiral). Refutes the
+  "uniform complex rescaling preserves (1,2)" objection. **Reduces the whole Koide r on the clean
+  lepton lane to ONE gated bit:** `r=1/2 ⟺ chiral` Yukawa, `r=1 ⟺ vector`. (7/7)
 
 ## Verdict
 
@@ -50,6 +54,13 @@ on main; mass at the open **substep-4** gate). The sharp binary:
 
 > **r=1/2 ⟺ the generation Yukawa fluctuation determinant is chiral/holomorphic (counts `b`
 > once); r=1 ⟺ it is vector/real (counts `Re b, Im b` separately).**
+
+**Which way the bit likely falls (not proven):** all three arrows point to *chiral* → r=1/2 —
+(i) the framework already carries the chirality grading `ε` with `{ε,D}=0` (kinetic, on main);
+(ii) the generation triplet is forced by the *chiral* staggered/Kawamoto-Smit operator (per
+`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED`); (iii) the empirical charged leptons sit at r=1/2.
+So the chiral resolution is the natural one — but it is **gated**, not derived, until the
+substep-4 mass structure is shown to make the Yukawa fluctuation holomorphic.
 
 ## Next exact actions (priority order)
 

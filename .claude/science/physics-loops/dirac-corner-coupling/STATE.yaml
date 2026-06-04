@@ -163,3 +163,25 @@ next_exact_action: >
   (repo-canonical vocab, meta-framings-land-backward rule). (D) Pivot to the staggered-Dirac gate itself
   (substep 4) -- the deeper problem everything is conditional on (major, likely a separate campaign).
   Recommend (B) then (C); hold (D) for owner greenlight.
+
+# ---- checkpoint 5 (2026-06-04) ----
+cycle_count: 6
+block_count: 5
+cycle6_result: >
+  Did (A)+(B) together as block 5 (#2617): Frobenius-Schur sharpening REDUCES the whole Koide r on the
+  clean lepton lane to ONE GATED BIT. FS(trivial)=+1 (real -> a is 1 mode either way); FS(omega)=0
+  (complex -> b is 2 real modes vector / 1 holomorphic chiral). r=1/2 <=> CHIRAL Yukawa, r=1 <=> VECTOR.
+  Refutes the uniform-rescaling objection to block 4 ((1/2,1)~(1,2) -> r=1; (1,1) needs the FS asymmetry).
+  Closing observation (HANDOFF): all three arrows point CHIRAL -> r=1/2 (framework has eps {eps,D}=0; the
+  generation triplet is forced by the CHIRAL Kawamoto-Smit operator; empirical leptons sit at r=1/2) -- so
+  the chiral resolution is natural, but GATED (substep-4 mass must make the Yukawa fluctuation holomorphic).
+shipped_block_5: {pr: 2617, runner_pass: "7/7"}
+campaign_status: "COMPLETE at best-honest-status. 6 PRs (#2591,#2601,#2607,#2611,#2614,#2617). Clean science
+  exhausted; reduced to one GATED bit (chiral vs vector Yukawa). Remaining work is the substep-4 gate (major)."
+next_exact_action: >
+  Campaign at clean terminus -- the whole Koide r reduces to one gated bit (block 5 #2617). Remaining
+  budget plan: (C) MONITOR reviewer landing of the 6 PRs; once they land on main, write the BACKWARD
+  campaign-synthesis note (repo-canonical vocab; meta-framings-land-backward rule). (D) the staggered-Dirac
+  substep-4 mass gate (does it make the generation Yukawa fluctuation chiral -> r=1/2 derived?) is the
+  natural NEXT campaign -- MAJOR, hold for owner greenlight. Do NOT force-attack the gate overnight. Wake
+  periodically to check reviewer status; otherwise the campaign's clean-science arc is COMPLETE.

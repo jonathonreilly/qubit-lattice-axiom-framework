@@ -57217,10 +57217,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "926179469fe272fd9b2221ad93c16a46fe3e8e006749fd4160a3518afc99bdcd",
+      "note_hash": "e75d40809507c76e0226c1693745c0c96d74e4f7ae9799cab72804a72f586a89",
       "path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
       "runner_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
-      "title": "Flavor \u2014 J-hunt consolidation (4 rounds): det_C / r=1/2 / Q=2/3 is not forcible from framework baseline+emergent-dynamics; it is the single named block-count *measure* input. The framework defaults to det_R / Q=1."
+      "title": "Flavor \u2014 Find-J round 4 executable block-count measure check"
     },
     "flavor_find_j_round1_jcs_measure_neutral_2026-06-02": {
       "claim_id": "flavor_find_j_round1_jcs_measure_neutral_2026-06-02",

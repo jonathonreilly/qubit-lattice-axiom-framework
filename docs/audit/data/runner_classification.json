@@ -8561,8 +8561,8 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 0,
-        "D": 3
+        "C": 1,
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -34515,8 +34515,8 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 0,
-        "D": 3
+        "C": 1,
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -62191,7 +62191,7 @@
       "none": 465
     },
     "runners_classified": 2247,
-    "runners_with_C": 1122,
+    "runners_with_C": 1123,
     "runners_with_D": 655
   }
 }

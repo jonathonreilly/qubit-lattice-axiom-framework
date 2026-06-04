@@ -44935,7 +44935,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "ce838a924d233dfe35be32c7258b1a9bdf4550d9ce9064f1bdfa2ebc94953c6c",
+      "note_hash": "81df915014fdaa13fa975fcbac8d3e37f2640f798a2c6dabaa5d42b486d550b8",
       "path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
       "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
       "title": "Free Staggered 2-Step Blocked Transfer-Matrix Positivity (In-Repo Derivation)"

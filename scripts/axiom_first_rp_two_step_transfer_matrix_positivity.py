@@ -56,9 +56,12 @@ THE PROOF (route R1 -- explicit transfer matrix, decisive)
      construction is faithful to the staggered action, not an artifact.
 
 (P2) SINGLE-STEP NON-POSITIVITY. spec(T_even(p)), spec(T_odd(p)) are GENUINELY
-     COMPLEX (off the positive real axis) for p != 0. Hence the single-step
-     transfer operator T_hat is NOT a positive operator -- consistent with the
-     single-step Lagrangian no-go runner (min eig -0.80).
+     COMPLEX (off the positive real axis) when sin(p) != 0. At the exceptional
+     real-spectrum momenta sin(p)=0 (p=0 and, on even lattices, p=pi), the
+     one-step matrix is real symmetric but has one negative eigenvalue, so it
+     is still not a positive operator. Hence the single-step transfer operator
+     T_hat is NOT positive -- consistent with the single-step Lagrangian no-go
+     runner (min eig -0.80).
 
 (P3) MANY-BODY 2-STEP POSITIVITY. For a free (quadratic) fermion theory the
      many-body transfer operator is the second quantization Gamma(t1) of the
@@ -107,13 +110,13 @@ GAUGE CASE REDUCTION TARGET (NOT re-derived here)
 The intended SU(3)-gauged staggered closure is recorded as the reduction target
    (fermion-sector 2-step transfer positivity, THIS runner's new result)
  x (positive determinant weight det(M_KS + m I) >= m^n > 0 config-by-config,
-    retained dep STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
+    separate source row STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
  x (gauge/bosonic-half Cauchy-Schwarz norm-square,
-    retained_bounded dep
+    separate source row
     REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10).
 The piece newly supplied in-repo is the fermion-sector 2-step transfer-matrix
 positivity (P1)-(P3) + R2 above. The interacting gauge case is not re-derived
-by this runner; it remains scoped to the named reduction target for audit.
+by this runner, and full U-integrated RP is not claimed here.
 
 ----------------------------------------------------------------------------
 SCORECARD
@@ -121,7 +124,8 @@ SCORECARD
 PASS overall requires (in the free case):
   C1 dispersion anchor   : 2-step decaying eigenvalue == e^{-2E(p)} over the BZ
                            (max residual < 1e-9)
-  C2 single-step non-PSD : max |Im eig(T_even)| > 1e-3 (T_hat not positive)
+  C2 single-step non-PSD : min |Im eig(T_even)| > 1e-3 off sin(p)=0, plus
+                           a negative real eigenvalue at sin(p)=0
   C3 2-step positivity   : T_hat^2 positive Hermitian (min eig > 0) for several
                            L_s, with exact B^dag B reconstruction
   C4 R2 OS Gram PSD      : operator-picture 2-step OS Gram is Hermitian and PSD
@@ -130,8 +134,11 @@ PASS overall requires (in the free case):
                            intertwiner equals exp(-2 a_tau H_hat) (||.|| < 1e-10)
                            -- the free-fermion functor Gamma = B^dag B verified
                            in-repo, not asserted
-This runner verifies dependency-class/structure (the gauge reduction names the
-two retained deps) and the free-case numerics; independent audit owns any
+  C6 decaying bridge     : the action-derived T_odd T_even spectral projector
+                           selects the forward contraction channel and its finite
+                           exterior/Gamma image is positive = B^dag B
+This runner verifies the free-case numerics and records only downstream
+gauge-case context; independent audit owns any
 status verdict.
 """
 from __future__ import annotations
@@ -198,19 +205,37 @@ def check_dispersion_anchor(m: float, n_bz: int = 16):
 
 
 def check_single_step_nonpositive(m: float, n_bz: int = 16):
-    """C2: single-step T_even/T_odd have genuinely complex spectra (=> T_hat
-    not a positive operator)."""
-    worst_imag = 0.0
+    """C2: single-step T_even/T_odd are never positive.
+
+    For sin(p) != 0 the spectra are complex. For the exceptional real-spectrum
+    modes sin(p)=0, one eigenvalue is negative, so positivity still fails.
+    """
+    complex_min_imag = float("inf")
+    complex_worst_imag = 0.0
+    exceptional_ok = True
+    exceptional_rows = []
     examples = []
-    for k in range(1, n_bz):  # skip p=0 (degenerate)
+    for k in range(n_bz):
         p = 2.0 * math.pi * k / n_bz
+        s = math.sin(p)
         for parity in (0, 1):
             ev = np.linalg.eigvals(classical_step(p, m, parity))
-            mi = float(np.max(np.abs(ev.imag)))
-            worst_imag = max(worst_imag, mi)
-            if len(examples) < 3 and parity == 0:
-                examples.append((p, ev))
-    return worst_imag, examples
+            if abs(s) > 1e-12:
+                mi = float(np.max(np.abs(ev.imag)))
+                complex_min_imag = min(complex_min_imag, mi)
+                complex_worst_imag = max(complex_worst_imag, mi)
+                if len(examples) < 3 and parity == 0:
+                    examples.append((p, ev))
+            else:
+                real_err = float(np.max(np.abs(ev.imag)))
+                ev_real = sorted(float(x.real) for x in ev)
+                ok = real_err < 1e-10 and ev_real[0] < -1e-10
+                exceptional_ok = exceptional_ok and ok
+                if parity == 0:
+                    exceptional_rows.append((p, ev_real, real_err))
+    if complex_min_imag == float("inf"):
+        complex_min_imag = 0.0
+    return complex_min_imag, complex_worst_imag, exceptional_ok, exceptional_rows, examples
 
 
 def build_manybody_T2(Ls: int, m: float):
@@ -290,10 +315,11 @@ def gamma_from_wedge_diagonal(kernels: list[float]) -> np.ndarray:
 
 
 def check_decaying_gamma_bridge(Ls: int, m: float) -> dict[str, float]:
-    """C5: derive and verify the finite decaying-mode/Gamma bridge in-packet."""
+    """C6: derive and verify the finite decaying-mode/Gamma bridge in-packet."""
     ps = [2.0 * math.pi * k / Ls for k in range(Ls)]
     projections = [spectral_decaying_projection(p, m) for p in ps]
     kernels = [r["lambda_dec"] for r in projections]
+    growing = [r["lambda_grow"] for r in projections]
     gamma_wedge = gamma_from_wedge_diagonal(kernels)
     gamma_tensor = np.array([[1.0]], dtype=complex)
     bridge = np.array([[1.0]], dtype=complex)
@@ -316,6 +342,8 @@ def check_decaying_gamma_bridge(Ls: int, m: float) -> dict[str, float]:
         "max_projector_orth": max(r["projector_orth"] for r in projections),
         "kernel_min": min(kernels),
         "kernel_max": max(kernels),
+        "grow_min": min(growing),
+        "grow_max": max(growing),
         "gamma_tensor_err": float(np.max(np.abs(gamma_wedge - gamma_tensor))),
         "gamma_intertwiner_err": inter_resid,
         "gamma_min_eig": float(eig.min()),
@@ -496,15 +524,20 @@ def main() -> int:
 
     # ---- C2: single-step non-positivity ----
     print("-" * 78)
-    print("C2  SINGLE-STEP NON-POSITIVITY: spec(T_even), spec(T_odd) genuinely complex")
+    print("C2  SINGLE-STEP NON-POSITIVITY: complex when sin(p)!=0; negative mode when sin(p)=0")
     print("    => single-step T_hat NOT a positive operator (consistent with the no-go)")
     print("-" * 78)
-    worst_imag, examples = check_single_step_nonpositive(MASS)
+    complex_min_imag, complex_worst_imag, exceptional_ok, exceptional_rows, examples = check_single_step_nonpositive(MASS)
     for p, ev in examples:
         print(f"    p={p:6.3f}: eig(T_even) = "
               f"[{ev[0].real:+.4f}{ev[0].imag:+.4f}j, {ev[1].real:+.4f}{ev[1].imag:+.4f}j]")
-    print(f"    max |Im eig(T_even/T_odd)| over p!=0 = {worst_imag:.4f}  (must exceed 1e-3)")
-    c2 = worst_imag > 1e-3
+    for p, ev_real, real_err in exceptional_rows:
+        print(f"    sin(p)=0 mode p={p:6.3f}: eig(T_even) = "
+              f"[{ev_real[0]:+.4f}, {ev_real[1]:+.4f}], Im err={real_err:.1e} "
+              "(negative eigenvalue => non-positive)")
+    print(f"    min |Im eig(T_even/T_odd)| over sin(p)!=0 = {complex_min_imag:.4f}  (must exceed 1e-3)")
+    print(f"    max |Im eig(T_even/T_odd)| over sin(p)!=0 = {complex_worst_imag:.4f}")
+    c2 = complex_min_imag > 1e-3 and exceptional_ok
     print(f"    C2 = {'PASS' if c2 else 'FAIL'}")
     passes += int(c2)
     fails += int(not c2)
@@ -572,18 +605,52 @@ def main() -> int:
     fails += int(not c5)
     print()
 
+    # ---- C6: decaying-channel spectral projector + exterior/Gamma bridge ----
+    print("-" * 78)
+    print("C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even")
+    print("    selects the forward contraction kernel; finite exterior/Gamma image is positive = B^dag B")
+    print("-" * 78)
+    c6 = True
+    for Ls in (2, 3, 4, 6):
+        r = check_decaying_gamma_bridge(Ls, MASS)
+        ok = (
+            r["max_dec_imag"] < 1e-10
+            and r["max_grow_imag"] < 1e-10
+            and r["max_projector_idem"] < 1e-10
+            and r["max_projector_resid"] < 1e-10
+            and r["max_projector_split"] < 1e-10
+            and r["max_projector_orth"] < 1e-10
+            and 0.0 < r["kernel_min"] <= r["kernel_max"] <= 1.0
+            and r["grow_min"] >= 1.0
+            and r["gamma_tensor_err"] < 1e-12
+            and r["gamma_intertwiner_err"] < 1e-12
+            and r["gamma_min_eig"] > 0.0
+            and r["gamma_bdagb_err"] < 1e-10
+        )
+        c6 = c6 and ok
+        print(f"    L_s={Ls}: lambda_dec in [{r['kernel_min']:.6e}, {r['kernel_max']:.6e}], "
+              f"lambda_grow in [{r['grow_min']:.6e}, {r['grow_max']:.6e}], "
+              f"proj idem={r['max_projector_idem']:.1e}, "
+              f"T2P-lambdaP={r['max_projector_resid']:.1e}, split={r['max_projector_split']:.1e}, "
+              f"orth={r['max_projector_orth']:.1e}, Gamma tensor err={r['gamma_tensor_err']:.1e}, "
+              f"BdagB err={r['gamma_bdagb_err']:.1e}")
+    print(f"    C6 = {'PASS' if c6 else 'FAIL'}  (decaying spectral channel derives the Fock kernel)")
+    passes += int(c6)
+    fails += int(not c6)
+    print()
+
     # ---- Gauge-case reduction statement ----
     print("-" * 78)
     print("GAUGE CASE REDUCTION TARGET (NOT re-derived here)")
     print("-" * 78)
-    print("    intended SU(3)-gauged staggered 2-step RP closure target =")
-    print("      (fermion-sector 2-step transfer positivity -- THIS runner, C1-C4, NEW)")
-    print("    x (det(M_KS + m I) >= m^n > 0 config-by-config -- retained dep:")
+    print("    possible SU(3)-gauged staggered 2-step RP route would need")
+    print("      (fermion-sector 2-step transfer positivity -- THIS runner, C1-C6, NEW)")
+    print("    x (det(M_KS + m I) >= m^n > 0 config-by-config -- separate source row:")
     print("       STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)")
-    print("    x (gauge-half Cauchy-Schwarz norm-square -- retained_bounded dep:")
+    print("    x (gauge-half Cauchy-Schwarz norm-square -- separate source row:")
     print("       REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10)")
     print("    Newly supplied in-repo: the free fermion-sector 2-step transfer positivity.")
-    print("    Interacting gauge closure is scoped to this reduction target.")
+    print("    Interacting gauge closure and U-integrated RP are not claimed by this runner.")
     print()
 
     # ---- Verdict ----
@@ -592,11 +659,13 @@ def main() -> int:
     print("=" * 78)
     print(f"  C1 dispersion anchor   : {'PASS' if (max_res<TOL_DISP and max_imag<TOL_DISP) else 'FAIL'}"
           f"  (max residual {max_res:.2e})")
-    print(f"  C2 single-step non-PSD : {'PASS' if worst_imag>1e-3 else 'FAIL'}"
-          f"  (max |Im eig| {worst_imag:.3f})")
+    print(f"  C2 single-step non-PSD : {'PASS' if c2 else 'FAIL'}"
+          f"  (min |Im eig| for sin(p)!=0 {complex_min_imag:.3f}; "
+          f"sin(p)=0 negative mode {'YES' if exceptional_ok else 'NO'})")
     print(f"  C3 2-step positivity   : {'PASS' if c3 else 'FAIL'}  (T_hat^2 positive Hermitian = B^dag B)")
     print(f"  C4 R2 OS Gram PSD      : {'PASS' if c4 else 'FAIL'}  (2-step OS Gram Hermitian PSD)")
     print(f"  C5 functor identity    : {'PASS' if c5 else 'FAIL'}  (Gamma=B^dag B verified in-repo)")
+    print(f"  C6 decaying bridge     : {'PASS' if c6 else 'FAIL'}  (spectral projector -> Fock kernel)")
     print()
     all_ok = (fails == 0)
     print(f"PASS={passes} FAIL={fails}")
@@ -606,7 +675,7 @@ def main() -> int:
         print("  POSITIVE HERMITIAN (T_hat^2 = B^dag B, H_hat = -log(T_hat^2)/(2 a_tau) >= 0),")
         print("  derived from the staggered action and anchored to the exact free staggered")
         print("  dispersion sinh^2 E = m^2 + sin^2 p. The single-step T_hat is non-positive")
-        print("  (complex single-particle spectrum), consistent with the single-step no-go")
+        print("  (complex/negative one-step spectrum), consistent with the single-step no-go")
         print("  runner. The interacting gauge case is only recorded as the named")
         print("  reduction target; it is not re-derived by this free-case runner.")
     else:
